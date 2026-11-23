@@ -1,0 +1,112 @@
+{
+  "status": "GLOBAL THEOREM OPEN; provenance for finite exact research checkpoint",
+  "python_validated": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "original_source_scripts": [
+    {
+      "name": "analyze_dependencies.py",
+      "bytes": 9039,
+      "sha256": "f47441695a9833d084388176c95f65bf7917a1c3eab53fbbb1146a1f97f5ae9e"
+    },
+    {
+      "name": "witness_prefix_audit.py",
+      "bytes": 4505,
+      "sha256": "8d47285a041f1481b44b8436bbd84889aa3ae1e73e90747a6e089af676499065"
+    },
+    {
+      "name": "source_certificate_screen.py",
+      "bytes": 7101,
+      "sha256": "a54b3bedabf28dec5b23824b860811412b0748f9e4526ba00911942c18da7537"
+    },
+    {
+      "name": "source_frontier.py",
+      "bytes": 4879,
+      "sha256": "e4d48b9ef414a8a00c385a464cd91660de81395706e4c528835555c569a57cb0"
+    },
+    {
+      "name": "refine_source_clock.py",
+      "bytes": 4003,
+      "sha256": "377fd582eb6ac1e98af0f36ab17e24cf51b552bcd129c67abe3dc478caa92e35"
+    },
+    {
+      "name": "source_energy_frontier.py",
+      "bytes": 5075,
+      "sha256": "993ffbe86f8f1f9e9e29d530ea5288296b98e38d55656f632c44e0b2828fa58f"
+    },
+    {
+      "name": "refine_source_energy.py",
+      "bytes": 4714,
+      "sha256": "a4a7e99aa9ccaf5ae147b6d7531d5466f92d53adcb8b8e1edf6e0b51870401da"
+    }
+  ],
+  "original_process_results": [
+    {
+      "name": "source-certificate-screen.json",
+      "bytes": 795202,
+      "sha256": "fb73f2941affdcf4d402c5ff03c913c5935b255d320a93dc9ab3f00dedf90b44",
+      "semantic_sha256": "06798dbaf25cbb1d08d241467e072ff5a8e36b30c882643db7b48d981f8e19f8"
+    },
+    {
+      "name": "all-clock-frontier1440.json",
+      "bytes": 312957,
+      "sha256": "f229c3f798964cc5d56cec08c18d7a6b5c7feb38cc29422bde35b8c6456081ea",
+      "semantic_sha256": "1ceb6dff79098270f3513adcb7b525cc6e9777b8fce0617cc94733724de9ae3a"
+    },
+    {
+      "name": "energy-frontier1440.json",
+      "bytes": 956858,
+      "sha256": "6515d72675969bcdedb56dd03750de78feeb71a9743cdf69fb574a87d537d354",
+      "semantic_sha256": "af1175f6f90119710b75065c00197a8460bfdf6b767defb6cf0c3ca599620f4b"
+    },
+    {
+      "name": "adaptive-clock-with-mergers-20000.json",
+      "bytes": 3531804,
+      "sha256": "6143c79522ebda2ffbb909289e876dc0a756c49a152c76d912e52c1df1ac7fb0",
+      "semantic_sha256": "b0fcef1f2952cdb15bd837e09ea49979c50c3d8fac760445694a396254cc161d"
+    },
+    {
+      "name": "energy-adaptive-checkpoint.json",
+      "bytes": 5520655,
+      "sha256": "bda1c68117032d277ff133aada673e72345c42d943ae5c47a659805fa8ad52db",
+      "semantic_sha256": "de564e81fdc4c6db4865a234ff4b81b3bb3349cfe64e7516e7ee1126bcb9a622"
+    }
+  ],
+  "portable_file_sha256": {
+    "research/lean-exact-witness-global-20261121/search/REPRODUCING.md": "06c329b61692570b8d876d1b5ebaa64d112034c5c0b804405c581c09664322ec",
+    "reports/lean-exact-witness-global-20261121/search/adaptive-clock-receipt.json": "ec55f43fd1e6089c531c4fed8137a2e8b0298b3d839ca9678bb2bef6831cd6a5",
+    "reports/lean-exact-witness-global-20261121/search/adaptive-energy-receipt.json": "339c94f944ad74e5077c9320f532a2d2011be88c659343632f147f1ab08d3d9e",
+    "research/lean-exact-witness-global-20261121/search/check_source_certificates.py": "93b205f3314a1d396bcbc2cf36d90da7cf377a5f2426a1327cacc9db9dea8855",
+    "reports/lean-exact-witness-global-20261121/search/fixed-clock-receipt.json": "9d214eb1459890ae69e822f5639aeb2e89de897350e2506fe45345f3c471996d",
+    "reports/lean-exact-witness-global-20261121/search/fixed-energy-receipt.json": "171ef1bc68f268a42566ffdb10a397acfd1c1c768270d9cc252177df1e56689b",
+    "research/lean-exact-witness-global-20261121/search/refine_source_clock.py": "1b015b4f886fe53aca8060a2f663a7fa092d6c532536e28ef71f5ef31232c921",
+    "research/lean-exact-witness-global-20261121/search/refine_source_energy.py": "6c4f7a610f8c2224c8a6eae5617ad5c9cf9f7e7b56c4bc792b6976b4fc8ca637",
+    "reports/lean-exact-witness-global-20261121/search/source-prefix-receipt.json": "6420dc20cab7cde4952b2d93d67540fe5b14e1bd38ca97c295fbaa7d302ef822",
+    "research/lean-exact-witness-global-20261121/search/source-prefix-words.json": "ae1425c892cc4e1ab1c61509c0dd9c43ecad85c85350c89e9736dbc9a524486b",
+    "research/lean-exact-witness-global-20261121/search/source_energy_frontier.py": "c535922ffd4d7ce70af3c0ab0d958088f3a11740213b3ae911cbb98e7396a1f3",
+    "research/lean-exact-witness-global-20261121/search/source_frontier.py": "8632510afa15bd90f02114583416bfcfb49b64d32f4a60ecd094e7b77a5d311d"
+  },
+  "portability_changes": [
+    "Replace absolute /tmp imports with local modules.",
+    "Inline ordinary neighbor generation.",
+    "Use local code-file provenance paths.",
+    "Add independent exact prefix and adaptive partition replay."
+  ],
+  "historical_screen_scope": {
+    "input_candidates_reported": 20110,
+    "accepted_paths_frozen": 738,
+    "larger_heuristic_pool_not_archived_here": true
+  },
+  "original_adaptive_energy_limits": {
+    "processed_cells": 10000,
+    "wall_seconds_between_cells": 30
+  },
+  "deterministic_replay_adaptive_energy_limits": {
+    "processed_cells": 10000,
+    "wall_seconds_between_cells": 300
+  },
+  "semantic_hash_exclusions": [
+    "seconds",
+    "input_code_sha256",
+    "wall_seconds_between_cells"
+  ],
+  "repository_relocation": "Scientific scripts, compact words and reproduction notes are in research/lean-exact-witness-global-20261121/search; process receipts are in reports/lean-exact-witness-global-20261121/search. Reproduction-note hashes reflect the relocated receipt paths."
+}

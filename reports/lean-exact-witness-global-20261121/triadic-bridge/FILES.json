@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-checkpoint-file-manifest/v1",
+  "parent_sha": "db1ae7690d1d53aafe01c8a11d52e24754a3cfab",
+  "scope": "Post-publication triadic bridge follow-up; excludes this manifest itself and does not alter prior frozen files.",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/triadic-bridge/README.md",
+      "bytes": 6110,
+      "sha256": "17fcf329a96fe34e507249ac6a013cbeca25dd258c23fff64d5d8124731bb740"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/triadic-bridge/SOURCES.json",
+      "bytes": 1755,
+      "sha256": "b627b97f30f7a3717308bb92abe7cd857f0ce00fde6b89da0d0441954a14495b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/triadic-bridge/controls-normal.json",
+      "bytes": 2557,
+      "sha256": "0de31056ca1e7e425f41301222d679155a01ade654162256d236a2f27dc3ca02"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/triadic-bridge/controls-optimized.json",
+      "bytes": 2557,
+      "sha256": "0de31056ca1e7e425f41301222d679155a01ade654162256d236a2f27dc3ca02"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/triadic-bridge/replay.json",
+      "bytes": 1628,
+      "sha256": "0360aeef29cc8c595433169653d9cf4413255ffc6495b3aa902d4f39b1587875"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/TRIADIC_BRIDGE_TEST.md",
+      "bytes": 6862,
+      "sha256": "f51ba8f372ff2305d1878b1ca8e7ebf322decbc519d1ee15e607da3c8afa1bea"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/triadic_bridge_controls.py",
+      "bytes": 3756,
+      "sha256": "638c3c7462865268463306868c4c8e55adaddd5217182543dcf90e90fd3b84e8"
+    }
+  ]
+}

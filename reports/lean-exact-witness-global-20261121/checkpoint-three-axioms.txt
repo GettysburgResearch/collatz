@@ -1,0 +1,77 @@
+CollatzWitness.e_iff_odd_basin (n : ℕ) : CollatzWitness.E n ↔ n % 2 = 1 ∧ CollatzReverseBasin.Basin n
+CollatzWitness.original_iff_collatz : CollatzWitness.ResidueImplication ↔ ∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n
+'CollatzWitness.certificate_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.witness_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.schedule_exists' depends on axioms: [propext, Quot.sound]
+'CollatzWitness.e_iff_odd_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.original_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzPsiCompletion.normalize_adjacent_below (n u : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hup : 0 < u)
+  (hul : u < n) (hbad : ¬CollatzReverseBasin.Basin (2 * u + 1)) :
+  ∃ w, w % 2 = 1 ∧ w ≤ u ∧ CollatzReverseBasin.Basin w ∧ ¬CollatzReverseBasin.Basin (2 * w + 1)
+CollatzPsiCompletion.initial_basin_even_tail (n d u t : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hu : u < n)
+  (ht : t % 2 = 1) (h : 3 * u + 1 = 4 ^ (d + 1) * t) : CollatzReverseBasin.Basin (2 * u + 1)
+'CollatzPsiCompletion.normalize_adjacent_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_odd_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.initial_basin_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.least_missing_adjacent' depends on axioms: [propext, Quot.sound]
+CollatzResetFamily.reset_family (j : ℕ) :
+  CollatzWitness.Certificate (CollatzResetFamily.source j) [3, CollatzResetFamily.exponent j] ∧
+    CollatzResetFamily.source j < CollatzResetFamily.mersenne j ∧
+      CollatzResetFamily.mersenne j < CollatzResetFamily.target j ∧
+        (CollatzReverseBasin.Basin (CollatzResetFamily.target j) ↔
+            CollatzReverseBasin.Basin (CollatzResetFamily.reset j)) ∧
+          2 ^ j * CollatzResetFamily.target j < CollatzResetFamily.reset j
+'CollatzResetFamily.reset_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResetFamily.reset_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzClosure.OpenLemma : Prop :=
+∀ (k : ℕ), k % 4 ≠ 0 → CollatzReverseBasin.Basin (3 * (27 * k + 1) - 1) → CollatzReverseBasin.Basin (27 * k + 1)
+CollatzDirected.collatz_of_complete_deep {rank : CollatzDirected.Rank} {active : CollatzDirected.Active}
+  (h : CollatzDirected.Complete rank active)
+  (coverage : ∀ (n : ℕ), n % 18 = 9 → active (CollatzDirected.Kind.reverse 3) n) (n : ℕ) :
+  0 < n → CollatzReverseBasin.Basin n
+'CollatzDirected.oddCore_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDirected.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDirected.collatz_of_complete_deep' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzWitnessEnergy.prefixEnergy_dominated_lt {c : ℕ} {removed inserted : List ℕ} (hc : 0 < c)
+  (hlen : inserted.length < c) (hne : removed ≠ []) (hdom : ∀ (x : ℕ), x ∈ inserted → ∃ y, y ∈ removed ∧ x < y) :
+  CollatzWitnessEnergy.prefixEnergy c inserted < CollatzWitnessEnergy.prefixEnergy c removed
+'CollatzWitnessEnergy.prefixEnergy_replacement_lt_with_suffix' depends on axioms: [propext, Quot.sound]
+'CollatzWitnessEnergy.prefixEnergy_cancelled_replacement_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzSourceWitness.clock_replacement {parent child join clock : ℕ} {old new : List ℕ}
+  (oldTrace : CollatzSourceWitness.Trace parent join old) (newTrace : CollatzSourceWitness.Trace child join new)
+  (notOne : ∀ (x : ℕ), x ∈ old → x ≠ 1) (shorter : new.length < old.length)
+  (hit : CollatzReverseBasin.Hits parent clock) : ∃ next, next < clock ∧ CollatzReverseBasin.Hits child next
+CollatzSourceWitness.energy_replacement {c parent child join clock : ℕ} {old new : List ℕ}
+  (oldTrace : CollatzSourceWitness.Trace parent join old) (newTrace : CollatzSourceWitness.Trace child join new)
+  (notOne : ∀ (x : ℕ), x ∈ old → x ≠ 1)
+  (decrease : CollatzWitnessEnergy.prefixEnergy c new < CollatzWitnessEnergy.prefixEnergy c old)
+  (hit : CollatzReverseBasin.Hits parent clock) :
+  ∃ next,
+    CollatzSourceWitness.witnessEnergy c child next < CollatzSourceWitness.witnessEnergy c parent clock ∧
+      CollatzReverseBasin.Hits child next
+'CollatzSourceWitness.trace_peel' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.clock_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.energy_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.collatz_of_clock_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceWitness.collatz_of_energy_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzDirected.Complete : CollatzDirected.Rank → CollatzDirected.Active → Prop :=
+fun rank active =>
+  ∀ (k : CollatzDirected.Kind) (n : ℕ),
+    0 < n → n % 2 = 1 → active k n → CollatzDirected.LowerHyp rank active k n → CollatzDirected.Claim k n
+def CollatzSourceWitness.ClockComplete : CollatzDirected.Active → Prop :=
+fun active =>
+  ∀ (kind : CollatzDirected.Kind) (n clock : ℕ),
+    0 < n →
+      active kind (CollatzDirected.oddCore n) →
+        CollatzReverseBasin.Hits (CollatzSourceWitness.known kind n) clock →
+          CollatzSourceWitness.ClockHyp active clock → CollatzReverseBasin.Basin (CollatzSourceWitness.wanted kind n)
+def CollatzSourceWitness.EnergyComplete : ℕ → CollatzDirected.Active → Prop :=
+fun c active =>
+  ∀ (kind : CollatzDirected.Kind) (n clock : ℕ),
+    0 < n →
+      active kind (CollatzDirected.oddCore n) →
+        CollatzReverseBasin.Hits (CollatzSourceWitness.known kind n) clock →
+          CollatzSourceWitness.EnergyHyp c active
+              (CollatzSourceWitness.witnessEnergy c (CollatzSourceWitness.known kind n) clock) →
+            CollatzReverseBasin.Basin (CollatzSourceWitness.wanted kind n)

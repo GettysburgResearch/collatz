@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-exact-control-replay/v1",
+  "created_utc": "2026-11-23T02:29:24.659598+00:00",
+  "script": "research/lean-exact-witness-global-20261121/triadic_bridge_controls.py",
+  "script_sha256": "638c3c7462865268463306868c4c8e55adaddd5217182543dcf90e90fd3b84e8",
+  "records": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/triadic_bridge_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.054,
+      "output": "reports/lean-exact-witness-global-20261121/triadic-bridge/controls-normal.json",
+      "stdout_sha256": "0de31056ca1e7e425f41301222d679155a01ade654162256d236a2f27dc3ca02",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/triadic_bridge_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.094,
+      "output": "reports/lean-exact-witness-global-20261121/triadic-bridge/controls-optimized.json",
+      "stdout_sha256": "0de31056ca1e7e425f41301222d679155a01ade654162256d236a2f27dc3ca02",
+      "stderr": ""
+    }
+  ],
+  "normal_and_optimized_identical": true,
+  "scope": "Two specified family members and an explicit all-time fixed rational pair. No universal candidate search or convergence conclusion."
+}

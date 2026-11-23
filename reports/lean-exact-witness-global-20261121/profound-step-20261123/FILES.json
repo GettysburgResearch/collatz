@@ -1,0 +1,208 @@
+{
+  "schema": "collatz-changed-file-bindings/v1",
+  "scope": "Exact bytes of this checkpoint; excludes this manifest to avoid self-reference. Earlier manifests retain their historical commit meaning.",
+  "remote_parent_commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+  "parent_tree": "b23ab77af54e79914b25c7014bd3d1149ff56557",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/LATEST_PR_SNAPSHOT.json",
+      "bytes": 6355,
+      "sha256": "8eb8aa88635fd6a57cc3e110fb01d477158618153f16efe81dff57310ae2274f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/README.md",
+      "bytes": 7095,
+      "sha256": "5b5011aa504ce107d0516e1d176141348aa9680426df55b5c7d490d5267279b9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/ROOT_REPLAY.json",
+      "bytes": 18595,
+      "sha256": "1dfc1d4792b2655987f482f0dca1f814f1962b7ddd7f98c8225b7be43fae43c6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/SOURCES.json",
+      "bytes": 7634,
+      "sha256": "1c85525fdcf53b430d77a73cc41e022d48bf1fee75e54b0b2e0e77934b3b30e6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/EXECUTION.json",
+      "bytes": 3919,
+      "sha256": "af58c0f2fd92dcfa6c9f7fcc7a8b43bd916e9871a3789fa0b0fa11af1571904d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/README.md",
+      "bytes": 2984,
+      "sha256": "8a2d423e2df354c961cab9e58431521aa453d76585d4376c667969ec1c3f323f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/SOURCES.json",
+      "bytes": 3627,
+      "sha256": "7ce87d62710cb59d15c865755e7346eb5f7756e0e6eda69c2aa7ed519080bb3e"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/dependency-audit.log",
+      "bytes": 1857,
+      "sha256": "6e57df18c0df4ad6c470cb5ba95dbc132701fe838583a96cfeca0a260c335ed4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/lean-audit.log",
+      "bytes": 1288,
+      "sha256": "41368e53b46d65519cf2427460c7816a126d57598c6e0ad561790f81d84404a4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/normal.json",
+      "bytes": 790,
+      "sha256": "649d6ca033fd8b4d1d4f3823991035ee9131b0a0769c6313e981634e45f1f12f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/optimized.json",
+      "bytes": 790,
+      "sha256": "649d6ca033fd8b4d1d4f3823991035ee9131b0a0769c6313e981634e45f1f12f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/README.md",
+      "bytes": 3869,
+      "sha256": "bbed73415939a03a8f7bc8ec8a25431e6d81b7bb0a0d7f6d99e02c82e41e54d1"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/REPLAY.json",
+      "bytes": 2545,
+      "sha256": "50a1eca8f18138c809de0c916475ec39d68642bd1594809f024069ed56798875"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/SOURCES.json",
+      "bytes": 4799,
+      "sha256": "524b1755c202f5507e38ab8479c48a5efde8fce53dac0744358a5a3054ef749b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/lean-strict-audit.log",
+      "bytes": 791,
+      "sha256": "29351aee42731aab4264d11c5438e48ac87aa5c3e36e5a839d76d5a83f1f3400"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/normal.json",
+      "bytes": 3768,
+      "sha256": "a232944c6bb39f142847976009ad5677696bd7c9ad6d90524adb620a926487d9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/pressure/optimized.json",
+      "bytes": 3768,
+      "sha256": "a232944c6bb39f142847976009ad5677696bd7c9ad6d90524adb620a926487d9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/README.md",
+      "bytes": 2722,
+      "sha256": "fe9ef14c8c6bd64250865e0fa95723fb6c553b989d82af3e97bfd0d40cf59f82"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/REPLAY.json",
+      "bytes": 2582,
+      "sha256": "aae5d9ed3f219ed3ded45f3b5cc06112e11b0e69f91b94e37478ec8c17252e00"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/SOURCES.json",
+      "bytes": 4653,
+      "sha256": "3fc6368af15fa19a61685de6bdc3c08cb669527cb7cdbf8b9e8ae6bff8c28fd4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/lean-strict-audit.log",
+      "bytes": 514,
+      "sha256": "6599ce497f049f635d824cf1f440aedde409f6ce8206247f4d8bbdb4c5e98a1a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/normal.json",
+      "bytes": 1134,
+      "sha256": "17f7fd15498bdb7bd90b4a92148748a0b2920e57bec87af89314ff896efa37ce"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/repair/optimized.json",
+      "bytes": 1134,
+      "sha256": "17f7fd15498bdb7bd90b4a92148748a0b2920e57bec87af89314ff896efa37ce"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/reviews/REVIEW_ADAPTIVE_LATTICE.md",
+      "bytes": 5178,
+      "sha256": "60976d265dc906fc2f3806d868877ba5af8602cd22a487ed282715c99520d00c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/reviews/REVIEW_ADELIC_REPAIR.md",
+      "bytes": 6530,
+      "sha256": "90bca67be8d2defdd16272cda7bd343329a060065606ffe0326bf7bb1ecda2fe"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/reviews/REVIEW_COORDINATING_CONNECTION.md",
+      "bytes": 5343,
+      "sha256": "e953547e36437939663e12f366e313c5b42b37a68b7eac2a870c13c3e1a6e8af"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/reviews/REVIEW_FINITE_TRIAL_MASS.md",
+      "bytes": 4233,
+      "sha256": "0fcbbaf195f6a1d25fc18c53269a5357643cda44948c993aad8a77c7ed96d56a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/profound-step-20261123/reviews/REVIEW_ORDINARY_ENTRANCE_LAW.md",
+      "bytes": 5628,
+      "sha256": "665d1350a6922ddc9032c5b651f23000b5e75aee1f1dd57deb550f16aefe2bb1"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 61271,
+      "sha256": "cafa24706e832d187adcf1d6a95a5d530d4655beb798db779fe31fe1288c521a"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/COMMON_DISPLACEMENT_AND_FREE_ENERGY.md",
+      "bytes": 12719,
+      "sha256": "867cca98da500a7b1be5c24e9185ac877b56c508be2a7da12436e9f3b0046abb"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/README.md",
+      "bytes": 11167,
+      "sha256": "33254a1770d0a62c4bf1c9654b56513d188b4a33073c2f8bc2b4dd716728e546"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/ADAPTIVE_LATTICE_DESCENT.md",
+      "bytes": 13850,
+      "sha256": "c03c84c3288ea50eda3b2fa48d29734276eaf4ace59e286393b8af98fd7f09d4"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/AdaptiveLattice.lean",
+      "bytes": 11112,
+      "sha256": "fbfada80040f436a0cae32c3c9c7baf57c2280aa6fa8d0acd49e3627b4c33885"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/check_adaptive_lattice.py",
+      "bytes": 4460,
+      "sha256": "1993a37ce550c73feb32b407e938eea454059c84ff0b08b86188ef95485fd676"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/EntranceLaw.lean",
+      "bytes": 3879,
+      "sha256": "1db93cb36595a0823887fd520602edfc9294dc8693fb6d3bf4451a56dff03bab"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/ORDINARY_ENTRANCE_LAW.md",
+      "bytes": 17540,
+      "sha256": "e38a7749ca5b7290daf33838586751d46232ca27f414e83fefe847b6ce72f93b"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/check_entrance_law.py",
+      "bytes": 10599,
+      "sha256": "dea3282bf2fe3b0faab28ebb448402b42b379ed2e734eed20fcdb59f57d7cc21"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/repair/ADELIC_INTEGER_REPAIR.md",
+      "bytes": 10105,
+      "sha256": "cd2735741f0833f32f7707e31bb864452b9d2bead7cdaea7e35068a3922e5dc7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/repair/AdelicRepair.lean",
+      "bytes": 2100,
+      "sha256": "378edd7da50d235c4d80a96c70f17d079a9f1471e55dd759bae0180c3ccf324d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/repair/check_adelic_repair.py",
+      "bytes": 7316,
+      "sha256": "9019d940337598e57efe071a2c9b46b65ae53ab1368577c21c1235c1a93d46f4"
+    }
+  ]
+}

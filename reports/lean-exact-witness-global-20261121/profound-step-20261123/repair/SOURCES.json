@@ -1,0 +1,92 @@
+{
+  "schema": "collatz-adelic-repair-sources/v1",
+  "status": "Full Collatz and universal integer repair OPEN",
+  "parent_pr": 177,
+  "parent_commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+  "repository_sources": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/REPOSITORY_SYNTHESIS.md",
+      "sha256": "372c8d9f3ee183c710a27c310c718ba6719f5f19255e6898ad44eac7df0c5a09",
+      "use": "Pinned same-source rational pullback, sparse-minimum consumer, or ordinary transport interface; no old corpus revalidation claimed."
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md",
+      "sha256": "65f1a0698cb3a17a8eb52ddab42f6b548be5bb921872f71c4d9cb00369ccbeec",
+      "use": "Pinned same-source rational pullback, sparse-minimum consumer, or ordinary transport interface; no old corpus revalidation claimed."
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "sha256": "257443f6c0800ab42e9f08c79c1daebc4d97c894833add6941b46389778349d2",
+      "use": "Pinned same-source rational pullback, sparse-minimum consumer, or ordinary transport interface; no old corpus revalidation claimed."
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "sha256": "58f5af3b205fb1ac720593865ea2bcba60fa918c5432f0c1917a467edfa94b9b",
+      "use": "Pinned same-source rational pullback, sparse-minimum consumer, or ordinary transport interface; no old corpus revalidation claimed."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": [
+        "Boris Adamczewski",
+        "Yann Bugeaud"
+      ],
+      "title": "On the complexity of algebraic numbers I. Expansions in integer bases",
+      "url": "https://arxiv.org/pdf/math/0511674",
+      "version": "arXiv:math/0511674v1",
+      "locations": [
+        "Section 4, Theorem E, pp. 7-8",
+        "Section 4, periodic-completion construction, pp. 8-9"
+      ],
+      "inspection": "Primary paper text read, including local absolute values, height, independent-form hypotheses and normalized product inequality.",
+      "use": "Exact eligibility test for the displayed canonical approximants, and motivation for signed periodic completion. Theorem is not invoked with unproved algebraicity or a missing height gain."
+    },
+    {
+      "authors": [
+        "Ilia Krasikov",
+        "Jeffrey C. Lagarias"
+      ],
+      "title": "Bounds for the 3x+1 Problem using Difference Inequalities",
+      "url": "https://arxiv.org/abs/math/0205002",
+      "inspection": "Primary author-submitted abstract read.",
+      "use": "Contextual predecessor-count route only; no quantitative same-sibling repair theorem imported."
+    },
+    {
+      "authors": [
+        "Keenan Monks",
+        "Kenneth G. Monks",
+        "Kenneth M. Monks",
+        "Maria Monks"
+      ],
+      "title": "Strongly sufficient sets and the distribution of arithmetic sequences in the 3x+1 graph",
+      "url": "https://arxiv.org/pdf/1204.3904v2",
+      "inspection": "Primary abstract and stated sufficiency scope read.",
+      "use": "Contextual arithmetic-progression/back-tracing route only; no source-height-uniform estimate imported."
+    }
+  ],
+  "auxiliary_exposition": [
+    {
+      "author": "Jan-Hendrik Evertse",
+      "title": "The p-adic Subspace Theorem",
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+      "location": "Theorem 1.1 and primitive-pair normalization example",
+      "use": "Author lecture notes used as a normalization crosscheck; the final scientific citation is the primary Adamczewski-Bugeaud theorem statement."
+    }
+  ],
+  "discarded_retrievals": [
+    {
+      "url": "https://irma.math.unistra.fr/~bugeaud/travaux/AdBuAnn1.pdf",
+      "reason": "PDF text extraction was garbled; substituted the readable primary arXiv PDF."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/0022314X77900737",
+      "reason": "403 fetch failure; no claim of full-text inspection or reliance."
+    }
+  ],
+  "source_sha256": {
+    "ADELIC_INTEGER_REPAIR.md": "cd2735741f0833f32f7707e31bb864452b9d2bead7cdaea7e35068a3922e5dc7",
+    "AdelicRepair.lean": "378edd7da50d235c4d80a96c70f17d079a9f1471e55dd759bae0180c3ccf324d",
+    "check_adelic_repair.py": "9019d940337598e57efe071a2c9b46b65ae53ab1368577c21c1235c1a93d46f4"
+  },
+  "formal_scope": "Six cleared arithmetic identities; no analytic convergence, valuations, Subspace Theorem, or universal repair existence formalized."
+}

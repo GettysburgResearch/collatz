@@ -1,0 +1,103 @@
+{
+  "analytic_scope": "GLOBAL_GREEN_MERGER.md contains written real-series deductions; SourceGreenCoefficient.lean proves exact arithmetic identities, parity criteria, ascent, and all-k cubic certificate only",
+  "axiom_audit": {
+    "command": "lake env lean -DwarningAsError=true Audit.lean",
+    "declarations": 130,
+    "exit_code": 0,
+    "log": "checkpoint-eight-axioms.txt",
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": [],
+    "without_axioms": 2
+  },
+  "checkpoint": 8,
+  "created_at_utc": "2026-11-22T05:22:17.226752+00:00",
+  "fresh_build": {
+    "all_source_bytes_match_fresh_build": true,
+    "command": "lake build",
+    "directory_had_no_previous_lake_outputs": true,
+    "exit_code": 0,
+    "jobs": 31,
+    "log": "checkpoint-eight-build.txt",
+    "source_files": 31
+  },
+  "global_remaining_premise": "CollatzBoundedGapCofinal.LowIntervalStep; new rules discharge explicit additional families under the same original Interval induction hypothesis",
+  "latest_changed_external_heads": {
+    "175": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+    "176": "8aeb843bba254f065743b6fa277a70906b51d520",
+    "178": "be5696cc45a95ad1903802b08ba1dc3ebba66930",
+    "180": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+    "182": "45354128f890fb479f6c23b547368bcddd9cebe6",
+    "183": "907a540943090968bc683b1b9246208e9053c1f8",
+    "185": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "186": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+  },
+  "lean_dependencies": "Lean core only",
+  "lean_source_sha256": {
+    "Audit.lean": "1de57480ee2c4e05ba73d75078ad0aba9572e6f557bdc70a76ca44584a3e7772",
+    "AuditSourceGreenCoefficient.lean": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b",
+    "Collatz.lean": "2b80d10f42cc244e492e0968e0da895173ee10f90792a9556ea8315ca1981de2",
+    "Collatz/AsymmetricPsiReset.lean": "773af3bb312aa57cdbad9e530945ff5ee44fb642ebceea9f08549ea411a25615",
+    "Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "Collatz/ClockSynchronization.lean": "64238fb906e02c311c32042963527b57a3a66622a4d2502cee4ca0ec62dc606f",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "Collatz/GapHandoffs.lean": "fd4c4251ab270f803c88c66599dcd22a687a25f3f9a9f498018d93f050e2419b",
+    "Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "Collatz/LowGapGlobal.lean": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f",
+    "Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "Collatz/LowGapToPsi.lean": "8e0987e5ad506d3a9b8b764f7b35defb1cf03560450c994ebc3c2f48f913ca06",
+    "Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "Collatz/MergerDenominatorClear.lean": "cf54fed295d0869cefc1a5821481cefb7b9f3e174d7d8b7c1ef6776c7a1b429e",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/PsiSuffix.lean": "ed8bf9f6702ff2aeffefd08dfef02def97272750633e2b24e65c53b8025ddae7",
+    "Collatz/PsiValuationOne.lean": "46268f211e0bd0b0b27f13f7d1e30720ab77de994c934729a033787f91ed34c7",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/RetainedEvenBoundary.lean": "3518b36ef6394d41bd6664060157171fc42746db6178f02e09ef64a605237e3f",
+    "Collatz/RetainedEvenReset.lean": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/SourceGreenCoefficient.lean": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1",
+    "Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+  },
+  "lean_version": "4.34.1",
+  "new_artifact_sha256": {
+    "CLOCK_SYNCHRONIZATION.md": "7431deb1505d65216ef67f0f00db3d09831692f2001c75f32b48e84c01d22eb7",
+    "GLOBAL_GREEN_MERGER.md": "7c002f66a4c5e8b0e58b5645dbf8b6794d53f8ef83654ad2aa1cd3d0d8e9d6a2",
+    "LATEST_SOURCE_SYNTHESIS.md": "80df97c6d16d3941d8e778a3b5f22ccbd56ab6529386f0ed66960d8861d184f0",
+    "LOW_GAP_GLOBAL.md": "4a5c58b5f99d3293e43b17ce8a8a74f3c07727026d6da92b9d2dc5e4c5d86dda",
+    "PSI_VALUATION_ONE.md": "fef80b5b3f932f7f6d9c9df5a10e74723894b0979853002b238fbe8133cbf1fa",
+    "README.md": "ee03c55255cbb6f5edf6834c8d027d7be2352e051f0dab416e4ff18bddcadfe2",
+    "gap-search/high/clock_rank_cycle.py": "b62d57e8ab6e488aea48178d2116dd1dbc7fb2497b34e1c526f2b4e4a4de3923",
+    "gap-search/high/repayment_obstruction.py": "7dcf7beb8158ad1cd348712c8b94195ddde70559d43abb1fc7eca2293e1e1218"
+  },
+  "parent_published_head": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+  "parent_tree": "0266a9ed900bc5399a6c10ff31a2733159407b11",
+  "replays": {
+    "clock_rank_cycle": {
+      "command": "python [-O] -B gap-search/high/clock_rank_cycle.py",
+      "normal_optimized_identical": true,
+      "receipt": "clock-rank-cycle-replay.json",
+      "scope": "Exact fixed-target cycle for the unrestricted union of two rule families",
+      "stdout_sha256": "89984906feb64b68e95db4f5d682aec599855641cfb7c2b42c42b97aae3bfdd0"
+    },
+    "funded_repayment": {
+      "command": "python [-O] -B gap-search/high/repayment_obstruction.py",
+      "normal_optimized_identical": true,
+      "receipt": "repayment-obstruction-replay.json",
+      "scope": "Exact source34/target63 obstruction, all terminal padding lengths via invariant; not a divergent target",
+      "stdout_sha256": "39972495d7b0e33397963dcd7ada7134fe8e1f3c9224505895d8d3c190c84063"
+    }
+  },
+  "repository_gate": "A separate complete clean-checkout gate is run on the final committed tree before remote publication; its actual result and checked tree are recorded in PR177.",
+  "status": "Proved whole-prefix and affine-carry step rules; full Collatz and the original residue implication remain OPEN"
+}

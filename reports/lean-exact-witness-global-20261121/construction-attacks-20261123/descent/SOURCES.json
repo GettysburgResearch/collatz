@@ -1,0 +1,54 @@
+{
+  "schema": "collatz-template-selection-sources/v1",
+  "date": "2026-11-23",
+  "remote_parent": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+  "local_parent": "1f6c718ce598d83009c8295556b39342353ac8a8",
+  "scope": "Primary theorem interface, exact finite certificate, and inherited ordinary-word algebra; no claim of full Collatz or universal selector.",
+  "primary_sources": [
+    {
+      "author": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "publication": "Izvestiya: Mathematics 64:6 (2000), 1217-1269",
+      "url": "https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf",
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "inspected": "Section 2, equations (2.4), (2.6), Corollary 2.3, printed p.1219; original English text retrieved through two primary PDF parsers. Screenshot fetch failed and is not claimed as visual inspection.",
+      "used": "K=Q, n=2, alpha1=2, alpha2=3, A1=log2, A2=log3, B*=max(L,p). C1(2)<=2^32 and Omega<1 imply log|Lambda|>-5e9(1+log B*).",
+      "boundary": "Published theorem imported in a written mathematical argument; its proof is not re-proved here or inserted as a Lean axiom."
+    },
+    {
+      "author": "Nicolas Gouillon",
+      "title": "Explicit lower bounds for linear forms in two logarithms",
+      "publication": "Journal de Theorie des Nombres de Bordeaux 18:1 (2006), 125-146",
+      "url": "https://www.numdam.org/item/JTNB_2006__18_1_125_0.pdf",
+      "doi": "10.5802/jtnb.537",
+      "inspected": "Section 2, Corollaries 2.2-2.4 and their definitions",
+      "used": "Orientation only; final proof uses Matveev's simpler explicit second constant."
+    },
+    {
+      "author": "Mathlib contributors",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/DiophantineApproximation/Basic.lean",
+      "inspected": "Real.exists_rat_eq_convergent and its surrounding statement in the pinned local source",
+      "used": "Confirms the reduced-rational form of Legendre's criterion used in the written finite-range reduction.",
+      "boundary": "This source file was inspected, not compiled as part of the new module; the actual finite CF coverage is a written proof with an exact rational certificate."
+    }
+  ],
+  "retained_dependencies": [
+    "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/ADAPTIVE_LATTICE_DESCENT.md",
+    "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/AdaptiveLattice.lean",
+    "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean"
+  ],
+  "consulted_repository_orientation": [
+    "AGENTS.md",
+    "README.md",
+    "docs/RESEARCH_MAP.md",
+    "research/integrated/ERRATA.md",
+    "research/RESULTS_CATALOG.md"
+  ],
+  "new_deductions": [
+    "All-exponent two-power gap from a coarse explicit Matveev specialization and complete finite CF reduction, retaining multiples of reduced convergents.",
+    "Every nonintegral actual prefix-template displacement exceeds its positive integer source.",
+    "Complete finite evaluation and properness of the minimum nonzero rational-template rank.",
+    "Global elementary-rank collapse is equivalent to exclusion of nonstandard positive cycles.",
+    "Explicit paid-template compilation of a supplied complete ordinary termination word."
+  ]
+}

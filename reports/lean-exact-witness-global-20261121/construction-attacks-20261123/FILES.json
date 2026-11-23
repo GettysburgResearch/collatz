@@ -1,0 +1,258 @@
+{
+  "schema": "collatz-changed-file-bindings/v1",
+  "scope": "Exact bytes of this checkpoint; excludes this manifest to avoid self-reference. Earlier manifests retain their historical commit meaning.",
+  "remote_parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+  "parent_tree": "9e468ca108726fba529adf7a2d8611e62341274d",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/LATEST_PR_SNAPSHOT.json",
+      "bytes": 5163,
+      "sha256": "7179c630d3c66ba61bcce5b5a8d88410bca15653d11dc8b82774ff3f6ac83ba0"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/README.md",
+      "bytes": 8089,
+      "sha256": "73d968f262fc0b8e6f4402a111ecc8acd6d0d54298c11dcdf745f912967a0c00"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/ROOT_REPLAY.json",
+      "bytes": 56035,
+      "sha256": "74f30122b9c95091451d81d2e2375a3a55b7495d5cd6c260068b4e050a16c70c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/SOURCES.json",
+      "bytes": 3899,
+      "sha256": "f152f24ea7167ea139b56d359b9fa23f29d562a77e4f6f0f1de96e860f12a55d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/README.md",
+      "bytes": 3821,
+      "sha256": "f8a8b749728bdef30e6951fec67979deead31333b30eeac4d39552a15ba3def3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/REPLAY.json",
+      "bytes": 24114,
+      "sha256": "b4d6ac71de5bf9df9e5b7648b8a2888106802a853a3c2e3cd237ce4bebe71bd1"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/SOURCES.json",
+      "bytes": 3474,
+      "sha256": "4eb9f21f9e53876c939e3e5e6bacc4c6aaa06b66ac442a1c9d17b2992ed861b7"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/adaptive-dependency-audit.log",
+      "bytes": 1288,
+      "sha256": "41368e53b46d65519cf2427460c7816a126d57598c6e0ad561790f81d84404a4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/lattice-dependency-audit.log",
+      "bytes": 1857,
+      "sha256": "6e57df18c0df4ad6c470cb5ba95dbc132701fe838583a96cfeca0a260c335ed4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/new-lean-audit.log",
+      "bytes": 1380,
+      "sha256": "007cff66128ff0ce63b73ef8671eb8aada0742e94a6359b5f183cbe963a7ff7d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/normal.json",
+      "bytes": 6364,
+      "sha256": "c4797dfc400a9f7468f25eae163cd93ab945d89af7b99034a17c03005c9231e3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/optimized.json",
+      "bytes": 6364,
+      "sha256": "c4797dfc400a9f7468f25eae163cd93ab945d89af7b99034a17c03005c9231e3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/README.md",
+      "bytes": 3355,
+      "sha256": "ce1d0a56dccf4c5297b5080cf5df24387bc7e571cfd9bac8553e401a01fabf00"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/REPLAY.json",
+      "bytes": 5835,
+      "sha256": "bb2e5f3b6e99dfa91265e24114778ddfcc4b11b15ec76df73ff66e5a7f2a5acc"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/SOURCES.json",
+      "bytes": 2269,
+      "sha256": "f00daba52a93259fc52469e5482534c6e4144b96eee1dcbf50caceb09a86fe61"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/lean-strict-audit.log",
+      "bytes": 533,
+      "sha256": "4adab11d7f765e0129b0b2a159c0d1e3147fff9ec8c0aa48c538710015bed4c8"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/normal.json",
+      "bytes": 1031,
+      "sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/optimized.json",
+      "bytes": 1031,
+      "sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/REVIEW_DENSITY_FREE_GERM.md",
+      "bytes": 7506,
+      "sha256": "04e7e29a6bda756fc0684ea283fa0511a52b2458e506de327a82937b1054bef3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/REVIEW_TEMPLATE_SELECTION.md",
+      "bytes": 11287,
+      "sha256": "afd38c7480fa22c26ca91b72c5779332e1c7187a69a08c2ed968126a643511a2"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/REVIEW_UNIT_PROJECTION.md",
+      "bytes": 8618,
+      "sha256": "4153853eade824e703a8d10fc315d5e0b4947e42f51ac158c42dc87581d8154d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/REVIEW_WITNESS_CHARGE.md",
+      "bytes": 11054,
+      "sha256": "9df435d83154a000bf58ffc6eff5e219e0f449804dd81484eaf1d723d85744ce"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/review_template_cf.py",
+      "bytes": 5105,
+      "sha256": "a28ad268a1ae320ed7a3b0e48ea6e6240c88539610cbd1c3f058906638a39f7c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/reviews/template_cf_review.json",
+      "bytes": 4720,
+      "sha256": "42e38750ff0036da786cdefe5648cd4369b8c4440b1e6e7b0bc8798587f05aa1"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/README.md",
+      "bytes": 3940,
+      "sha256": "871453a49ef3e9cf682f0536efc191a9fe925bbacd5376d1f94e16ddcfe65805"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/REPLAY.json",
+      "bytes": 8298,
+      "sha256": "b3f6cdf157ad87f1b4249eefe3eeb416a0d71d06fa440cd3f920487bf7f23641"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/SOURCES.json",
+      "bytes": 2818,
+      "sha256": "bce9839e4a29b3b66d8842e061f90d7fba376104145ceb885393947459c10b5d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/lean-strict-audit.log",
+      "bytes": 541,
+      "sha256": "bfe04bf63b5434c9ed174cc20b10a23eaa8e885a25c9e9534e81e5879c25735c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/normal.json",
+      "bytes": 2301,
+      "sha256": "5578e5b6df0b015bcbb2ba147009b0227705f6121dec784009ecf0a5f3dd6a0c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/optimized.json",
+      "bytes": 2301,
+      "sha256": "5578e5b6df0b015bcbb2ba147009b0227705f6121dec784009ecf0a5f3dd6a0c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/README.md",
+      "bytes": 6422,
+      "sha256": "04a626e720490a2bd7b677d43529edda2bc9b43edfb8a5115c94dd702e7d215a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/REPLAY.json",
+      "bytes": 19248,
+      "sha256": "932a82edbb9555961d2099f1fbdfcc81f88d2a2ae3495191025614afba210fe5"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/SOURCES.json",
+      "bytes": 5401,
+      "sha256": "27e6631b6fde0ea9237f90fbcb24ccbc95e0970884ce2525db5804e7d8311dd4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/lean-strict-audit.log",
+      "bytes": 2117,
+      "sha256": "93f4bbe917c0ae088c0c86511f0e57de5727177396b7c6b13ff168981e5f0c3c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/normal.json",
+      "bytes": 6643,
+      "sha256": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/optimized.json",
+      "bytes": 6643,
+      "sha256": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 62858,
+      "sha256": "4af912d8e3edbe765d60adf27551aaf074b8270bfae3bc99381be1407e4f562c"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/README.md",
+      "bytes": 13223,
+      "sha256": "031dd4a5cc8c9c72522b6cd502b67f2fe7b208a7543414089c7a1e1e0b2e0960"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/TEMPLATE_SELECTION.md",
+      "bytes": 15775,
+      "sha256": "90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/TemplateSelection.lean",
+      "bytes": 8001,
+      "sha256": "1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/check_template_selection.py",
+      "bytes": 7851,
+      "sha256": "12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/DENSITY_FREE_DEFLATED_GERM.md",
+      "bytes": 10927,
+      "sha256": "dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/GermCapacity.lean",
+      "bytes": 3555,
+      "sha256": "8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/check_deflated_germ.py",
+      "bytes": 5652,
+      "sha256": "639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/FULL_SOURCE_FINITE_CERTIFICATE.md",
+      "bytes": 8705,
+      "sha256": "380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/UnitProjection.lean",
+      "bytes": 5688,
+      "sha256": "bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/check_unit_projection.py",
+      "bytes": 7926,
+      "sha256": "32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WITNESS_CHARGE_AND_POWER_INDUCTION.md",
+      "bytes": 14613,
+      "sha256": "c20dbdde1ebb7e1aa7d4a71e7e13091755f8a98b059bebc381d495c14767b591"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WitnessCharge.lean",
+      "bytes": 22892,
+      "sha256": "c0c9d658f0de0c344f77f0f4c0a8d11a4f8484695aa953d8d14ec5fb2acc115d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/check_witness_charge.py",
+      "bytes": 11888,
+      "sha256": "f8d239f4c397771a62e3cda0570536bf26034a28fc1986db8522be2cc75c6e7e"
+    }
+  ]
+}

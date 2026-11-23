@@ -1,0 +1,398 @@
+import Collatz
+
+#check CollatzWitness.e_iff_odd_basin
+#check CollatzWitness.original_iff_collatz
+#print axioms CollatzWitness.certificate_witness
+#print axioms CollatzWitness.witness_certificate
+#print axioms CollatzWitness.schedule_exists
+#print axioms CollatzWitness.e_iff_odd_basin
+#print axioms CollatzWitness.original_iff_collatz
+#check CollatzPsiCompletion.normalize_adjacent_below
+#check CollatzPsiCompletion.initial_basin_even_tail
+#print axioms CollatzPsiCompletion.normalize_adjacent_below
+#print axioms CollatzPsiCompletion.adjacent_even_tail
+#print axioms CollatzPsiCompletion.adjacent_odd_tail
+#print axioms CollatzPsiCompletion.initial_basin_even_tail
+#print axioms CollatzPsiCompletion.least_missing_adjacent
+#check CollatzResetFamily.reset_family
+#print axioms CollatzResetFamily.reset_family
+#print axioms CollatzResetFamily.reset_amplification
+
+-- Keep the actual remaining universal statement visible in audit output.
+#print CollatzClosure.OpenLemma
+
+#check CollatzDirected.collatz_of_complete_deep
+#print axioms CollatzDirected.oddCore_upper_bound
+#print axioms CollatzDirected.certificate_sound
+#print axioms CollatzDirected.collatz_of_complete_deep
+#check CollatzWitnessEnergy.prefixEnergy_dominated_lt
+#print axioms CollatzWitnessEnergy.prefixEnergy_replacement_lt_with_suffix
+#print axioms CollatzWitnessEnergy.prefixEnergy_cancelled_replacement_lt
+#check CollatzSourceWitness.clock_replacement
+#check CollatzSourceWitness.energy_replacement
+#print axioms CollatzSourceWitness.trace_peel
+#print axioms CollatzSourceWitness.clock_replacement
+#print axioms CollatzSourceWitness.energy_replacement
+#print axioms CollatzSourceWitness.collatz_of_clock_complete
+#print axioms CollatzSourceWitness.collatz_of_energy_complete
+-- These coverage obligations remain unproved in the current search packet.
+#print CollatzDirected.Complete
+#print CollatzSourceWitness.ClockComplete
+#print CollatzSourceWitness.EnergyComplete
+
+-- Unrestricted source-gap multisets and complete-certificate rewrites.
+#print axioms CollatzGapMultiset.less_wellFounded
+#print axioms CollatzGapMultiset.cancelled_replacement
+#print axioms CollatzGapMultiset.unbounded_high_gap_replacement
+#print axioms CollatzGapMultiset.ordinary_step
+#print axioms CollatzGapMultiset.collatz_of_complete
+#print axioms CollatzHighGapPump.prefix_basin
+#print axioms CollatzHighGapPump.whole_witness_rewrite
+#print axioms CollatzHighGapPump.rewritten_sizes
+#print axioms CollatzHighGapPump.exponential_expansion
+#print axioms CollatzHighGapPump.fixed_base_prefix_failure
+#print axioms CollatzLowGapLoops.whole_witness_rewrite
+#print axioms CollatzLowGapLoops.apply_reverse_rule
+#print axioms CollatzLowGapPump.whole_witness_rewrite
+#print axioms CollatzLowGapPump.rewritten_sizes
+#print axioms CollatzUnboundedGapReset.compiled_certificate_reset
+#print axioms CollatzUnboundedGapReset.low_depth_zero_reset
+#print axioms CollatzGapComparison.close
+#print axioms CollatzGapComparison.collatz_of_complete_psi
+#print axioms CollatzGapComparison.collatz_of_complete_deep
+#print axioms CollatzGapComparison.high_gap_rule
+#print axioms CollatzGapComparison.low_gap_rule
+#print axioms CollatzGapComparison.low_gap_pump_rule
+#print axioms CollatzGapComparison.ordinary_source
+#print axioms CollatzGapComparison.compiled_reset_rule
+#print axioms CollatzLowGapToPsi.forward_to_psi
+#print axioms CollatzLowGapToPsi.low_loop_to_psi
+#print axioms CollatzGapHandoffs.reverse_high_handoff
+#print axioms CollatzGapHandoffs.hplus_gap_one
+#print axioms CollatzGapHandoffs.hplus_gap_two
+#print axioms CollatzGapHandoffs.apply_reverse_high
+#print axioms CollatzGapHandoffs.hplus_one
+#print axioms CollatzAsymmetricPsiReset.whole_witness_reset
+#print axioms CollatzAsymmetricPsiReset.apply_psi_rule
+#print axioms CollatzAsymmetricPsiReset.parent_residue
+#print axioms CollatzAsymmetricPsiReset.exponential_expansion
+#print axioms CollatzAsymmetricPsiReset.depth_zero_guard
+-- These are hypotheses of the closing theorems, not established selectors.
+#print CollatzGapMultiset.Complete
+#print CollatzGapComparison.Complete
+
+-- Parallel attacks: all-bound predecessor construction and exact rewrites.
+#print axioms CollatzPsiSuffix.whole_witness_handoff
+#print axioms CollatzPsiSuffix.closes_without_twos
+#print axioms CollatzPsiSuffix.asymmetric_to_reverse_nine
+#print axioms CollatzPsiSuffix.asymmetric_small_partner
+#print axioms CollatzMergerDenominatorClear.denominator_clear_bounded
+#print axioms CollatzMergerDenominatorClear.clearing_endpoint_bound
+#print axioms CollatzMergerDenominatorClear.complete_witness_additive_rewrite
+#print axioms CollatzMergerDenominatorClear.uniform_reverse_power_template
+#print axioms CollatzMergerDenominatorClear.quadratic_clock_below_order_scale
+#print axioms CollatzMergerDenominatorClear.reverse_nine_low_handoff
+#print axioms CollatzBoundedGapCofinal.cofinal_predecessors
+#print axioms CollatzBoundedGapCofinal.gaps_at_most_three
+#print axioms CollatzBoundedGapCofinal.cofinal_alphabet_iff
+#print axioms CollatzBoundedGapCofinal.high_gap_replacement
+#print axioms CollatzBoundedGapCofinal.large_even_replacement
+#print axioms CollatzBoundedGapCofinal.high_gap_powered_interval_rule
+#print axioms CollatzBoundedGapCofinal.interval_complete_of_low
+#print axioms CollatzBoundedGapCofinal.collatz_of_low_interval
+#print axioms CollatzRetainedEvenReset.doubling_prefix
+#print axioms CollatzRetainedEvenReset.retained_even_rank
+#print axioms CollatzRetainedEvenReset.whole_witness_interval_reset
+#print axioms CollatzLowIntervalRefinement.scaled_prefix_rewrite
+#print axioms CollatzLowIntervalRefinement.coefficient_interval_rule
+#print axioms CollatzLowIntervalRefinement.first_gap_one_rule
+#print axioms CollatzLowIntervalRefinement.balanced_runs_rule
+#print axioms CollatzLowIntervalRefinement.compensated_gap_rule
+#print axioms CollatzLowIntervalRefinement.terminal_even_rule
+#print axioms CollatzLowIntervalRefinement.matched_gap_rule
+#print axioms CollatzLowIntervalRefinement.shortened_gap_rank
+#print axioms CollatzLowIntervalRefinement.shortened_gap_rule
+#print axioms CollatzLowIntervalRefinement.synchronized_gap_rule
+#print axioms CollatzRetainedEvenBoundary.sibling_certificate
+#print axioms CollatzRetainedEvenBoundary.boundary_prefix
+#print axioms CollatzRetainedEvenBoundary.leading_large_gap_interval_rule
+-- This residual step is a premise of the closing theorem, not a theorem.
+#print CollatzBoundedGapCofinal.LowIntervalStep
+
+-- Whole-prefix repayment and uniform affine carry returns.
+#print axioms CollatzLowGapGlobal.odd_source_cap
+#print axioms CollatzLowGapGlobal.nine_lattice_return
+#print axioms CollatzLowGapGlobal.negative_nine_return
+#print axioms CollatzLowGapGlobal.positive_nine_first_one
+#print axioms CollatzLowGapGlobal.positive_nine_two_one
+#print axioms CollatzClockSynchronization.paired_step
+#print axioms CollatzClockSynchronization.funded_prefix_interval
+#print axioms CollatzClockSynchronization.whole_prefix_rewrite
+#print axioms CollatzClockSynchronization.prefix_order_correction
+#print axioms CollatzClockSynchronization.funded_prefix_rank
+#print axioms CollatzClockSynchronization.funded_repayment_rule
+#print axioms CollatzClockSynchronization.first_repayment_rule
+#print axioms CollatzClockSynchronization.delayed_stats
+#print axioms CollatzClockSynchronization.delayed_repayment_rule
+#print axioms CollatzClockSynchronization.delayed_affine_rule
+#print axioms CollatzClockSynchronization.two_twos_residue_rule
+#print axioms CollatzClockSynchronization.psi_head_two_handoff
+#print axioms CollatzClockSynchronization.psi_head_two_rule
+#print axioms CollatzClockSynchronization.psi_four_twos_handoff
+#print axioms CollatzClockSynchronization.psi_four_twos_rule
+#print axioms CollatzPsiValuationOne.erase_initial_even
+#print axioms CollatzPsiValuationOne.lattice_rule
+#print axioms CollatzPsiValuationOne.psi_rule
+
+-- Exact arithmetic of retained original-source Green coefficients.
+#print axioms CollatzSourceGreenCoefficient.shifted_identity
+#print axioms CollatzSourceGreenCoefficient.evenDefect_pos_iff
+#print axioms CollatzSourceGreenCoefficient.evenDefect_zero_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_bound
+#print axioms CollatzSourceGreenCoefficient.coefficient_strict_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_eq_iff
+#print axioms CollatzSourceGreenCoefficient.allOdd_count
+#print axioms CollatzSourceGreenCoefficient.allOdd_shifted_identity
+#print axioms CollatzSourceGreenCoefficient.allOdd_divisibility
+#print axioms CollatzSourceGreenCoefficient.even_input_before_large_power
+#print axioms CollatzSourceGreenCoefficient.state_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.allOdd_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.initial_ascent
+#print axioms CollatzSourceGreenCoefficient.cubic_surplus
+#print axioms CollatzSourceGreenCoefficient.cubic_path_certificate
+
+-- These new step rules do not prove the remaining universal selector.
+#print CollatzBoundedGapCofinal.LowIntervalStep
+
+-- Continued whole-branch psi coverage in the original interval induction.
+#print axioms CollatzPsiOddValuations.two_step_diamond
+#print axioms CollatzPsiOddValuations.odd_valuation_target_merge
+#print axioms CollatzPsiOddValuations.odd_valuation_target_equivalence
+#print axioms CollatzPsiOddValuations.psi_odd_valuation_rule
+#print axioms CollatzPsiOddValuations.psi_valuation_three_rule
+#print axioms CollatzPsiEvenHeadTwo.target_prefix
+#print axioms CollatzPsiEvenHeadTwo.psi_rule
+#print axioms CollatzPsiEvenHeadFour.head_four_target_equivalence
+#print axioms CollatzPsiEvenHeadFour.replaced_four_rank
+#print axioms CollatzPsiEvenHeadFour.retained_four_rank
+#print axioms CollatzPsiEvenHeadFour.psi_even_head_four_rule
+
+-- Exact canonical language for the entire residual interval obligation.
+#print axioms CollatzBoundedFourNormalForm.certificate_normal_form
+#print axioms CollatzBoundedFourNormalForm.core_value_bound
+#print axioms CollatzBoundedFourNormalForm.above_core_passes_eleven
+#print axioms CollatzBoundedFourNormalForm.eleven_certificate
+#print axioms CollatzBoundedFourNormalForm.canonical_certificate
+#print axioms CollatzBoundedFourNormalForm.cofinal_eleven_prefixes
+#print axioms CollatzBoundedFourNormalForm.canonical_rank_cancel
+#print axioms CollatzBoundedFourNormalForm.terminal_padding_rank
+#print axioms CollatzBoundedFourNormalForm.terminal_padding_interval_rule
+#print axioms CollatzBoundedFourNormalForm.terminal_core_range
+#print axioms CollatzBoundedFourNormalForm.terminal_core_interval_rule
+#print axioms CollatzBoundedFourNormalForm.low_interval_of_eleven
+#print axioms CollatzBoundedFourNormalForm.eleven_interval_of_low
+#print axioms CollatzBoundedFourNormalForm.low_interval_iff_eleven
+#print axioms CollatzBoundedFourNormalForm.collatz_of_eleven_prefix
+#print CollatzBoundedFourNormalForm.ElevenIntervalStep
+
+-- Unrestricted signed shadows and actual positive ordinary endpoints.
+#print axioms CollatzSignedShadow.source_odd
+#print axioms CollatzSignedShadow.endpoint_odd
+#print axioms CollatzSignedShadow.positive_gaps
+#print axioms CollatzSignedShadow.affine_identity
+#print axioms CollatzSignedShadow.nat_odd_factor
+#print axioms CollatzSignedShadow.int_odd_factor
+#print axioms CollatzSignedShadow.next_signed_gap
+#print axioms CollatzSignedShadow.trace_exists
+#print axioms CollatzSignedShadow.cleared_magnitude
+#print axioms CollatzSignedShadow.clock_below_separation
+#print axioms CollatzSignedShadow.endpoint_below_separation
+#print axioms CollatzSignedShadow.prefix_orbit
+#print axioms CollatzSignedShadow.compile_signed_lift
+#print axioms CollatzSignedShadow.separated_shadow
+#print axioms CollatzSignedShadow.separated_shadow_certificate
+
+-- Every dyadic coset and the explicit alternating high-block patterns.
+#print axioms CollatzDyadicCoset.power_nine_exact
+#print axioms CollatzDyadicCoset.binary_lift
+#print axioms CollatzDyadicCoset.coset_reachable
+#print axioms CollatzDyadicCoset.three_even_coset_reachable
+#print axioms CollatzDyadicCoset.three_coset_reachable
+#print axioms CollatzDyadicCoset.two_pattern_cosets
+#print axioms CollatzDyadicCoset.alternating_identity
+#print axioms CollatzDyadicCoset.alternating_phase
+#print axioms CollatzDyadicCoset.alternating_bounds
+#print axioms CollatzDyadicCoset.alternating_residue_forcing
+
+-- Joined finite arithmetic on the same actual ordinary orbit.
+#print axioms CollatzBinaryRunForcing.ordinary_clock_budget
+#print axioms CollatzBinaryRunForcing.actual_pattern
+#print axioms CollatzBinaryRunForcing.actual_pattern_of_gap
+
+-- Every negative shadow supplies a finite noncontracting prefix and an
+-- actual growing positive source under its explicit separation condition.
+#print axioms CollatzNegativeShadow.negative_endpoint
+#print axioms CollatzNegativeShadow.negative_correction_bound
+#print axioms CollatzNegativeShadow.correction_prefix_floor
+#print axioms CollatzNegativeShadow.split_signed_trace
+#print axioms CollatzNegativeShadow.noncontracting_prefix
+#print axioms CollatzNegativeShadow.bounded_negative_prefix
+#print axioms CollatzNegativeShadow.noncontracting_clock_bound
+#print axioms CollatzNegativeShadow.source_above_two
+#print axioms CollatzNegativeShadow.physical_negative_return
+
+-- The actual path advances the supplied certificate in its ORIGINAL grade.
+#print axioms CollatzSourceOrbitProgress.cycle_stays_small
+#print axioms CollatzSourceOrbitProgress.advance_certificate
+#print axioms CollatzSourceOrbitProgress.odd_growth_interval_rule
+#print axioms CollatzSourceOrbitProgress.negative_block_interval_rule
+
+-- A globally selected literal source preserves the original target floor.
+#print axioms CollatzRootedSourceFloor.orbit_add
+#print axioms CollatzRootedSourceFloor.orbit_pow_two
+#print axioms CollatzRootedSourceFloor.orbit_gap
+#print axioms CollatzRootedSourceFloor.prefix_clock
+#print axioms CollatzRootedSourceFloor.safe_value
+#print axioms CollatzRootedSourceFloor.safe_step
+#print axioms CollatzRootedSourceFloor.safe_orbit
+#print axioms CollatzRootedSourceFloor.safe_prefix
+#print axioms CollatzRootedSourceFloor.safe_power
+#print axioms CollatzRootedSourceFloor.safe_remove_power
+#print axioms CollatzRootedSourceFloor.eleven_safe
+#print axioms CollatzRootedSourceFloor.power_crossing
+#print axioms CollatzRootedSourceFloor.cut_ordinary_clock
+#print axioms CollatzRootedSourceFloor.cut_clock_decomposition
+#print axioms CollatzRootedSourceFloor.cut_future_bound
+#print axioms CollatzRootedSourceFloor.safe_or_cut
+#print axioms CollatzRootedSourceFloor.rooted_floor_cut
+#print axioms CollatzRootedSourceFloor.canonical_floor_source
+#print axioms CollatzRootedSourceFloor.source_for_every_target
+#print axioms CollatzRootedSourceFloor.safe_strict
+#print axioms CollatzRootedSourceFloor.safe_odd_core
+#print axioms CollatzRootedSourceFloor.residual_source_for_target
+#print axioms CollatzRootedSourceFloor.safe_interval_cap
+#print axioms CollatzRootedSourceFloor.safe_odd_source_cap
+#print axioms CollatzRootedSourceFloor.original_target_cap_descent
+#print axioms CollatzRootedSourceFloor.consumed_gap_cap_descent
+#print axioms CollatzRootedSourceFloor.orbit_positive
+#print axioms CollatzRootedSourceFloor.target_prefix_cap_closes
+
+-- A single canonical counterquery carries BOTH original induction resources,
+-- the same-grade source tie, and its own original-target floor.
+#print axioms CollatzJointMinimalCounterexample.least_bad_target
+#print axioms CollatzJointMinimalCounterexample.minimum_capturing_source
+#print axioms CollatzJointMinimalCounterexample.original_interval_hyp
+#print axioms CollatzJointMinimalCounterexample.source_grade_bound
+#print axioms CollatzJointMinimalCounterexample.maximum_source_at_grade
+#print axioms CollatzJointMinimalCounterexample.minimum_maximum_source
+#print axioms CollatzJointMinimalCounterexample.original_same_grade_hyp
+#print axioms CollatzJointMinimalCounterexample.bad_query_floor
+#print axioms CollatzJointMinimalCounterexample.least_bad_shape
+#print axioms CollatzJointMinimalCounterexample.bad_query_low_shape
+#print axioms CollatzJointMinimalCounterexample.bad_query_canonical
+#print axioms CollatzJointMinimalCounterexample.bad_query_prefix_contracts
+#print axioms CollatzJointMinimalCounterexample.joint_counterexample
+#print axioms CollatzJointMinimalCounterexample.collatz_of_floor_interval
+#print axioms CollatzJointMinimalCounterexample.collatz_iff_floor_interval
+#print axioms CollatzJointMinimalCounterexample.original_residue_iff_floor_interval
+#print CollatzJointMinimalCounterexample.FloorIntervalStep
+
+-- Every ordinary clock retains the actual correction and exact odd core.
+#print axioms CollatzArithmeticPrecision.affine_identity
+#print axioms CollatzArithmeticPrecision.first_odd_contribution
+#print axioms CollatzArithmeticPrecision.state_add
+#print axioms CollatzArithmeticPrecision.state_pow_two
+#print axioms CollatzArithmeticPrecision.odd_core_at_later_clock
+#print axioms CollatzArithmeticPrecision.normalized_correction_bound
+#print axioms CollatzArithmeticPrecision.least_bad_odd_core
+#print axioms CollatzArithmeticPrecision.least_bad_precision_bound
+
+-- One arbitrary supplied block loses exact binary precision on repetition.
+#print axioms CollatzAffineBlockPrecision.block_affine
+#print axioms CollatzAffineBlockPrecision.block_orbit
+#print axioms CollatzAffineBlockPrecision.balance_transport
+#print axioms CollatzAffineBlockPrecision.balance_magnitude_transport
+#print axioms CollatzAffineBlockPrecision.repeated_actual_orbit
+#print axioms CollatzAffineBlockPrecision.repeated_balance
+#print axioms CollatzAffineBlockPrecision.repetition_precision
+#print axioms CollatzAffineBlockPrecision.repetition_clock_bound
+#print axioms CollatzAffineBlockPrecision.repetition_exact_precision
+#print axioms CollatzAffineBlockPrecision.no_infinite_repetition
+#print axioms CollatzAffineBlockPrecision.expanding_balance_positive
+#print axioms CollatzAffineBlockPrecision.expanding_no_infinite_repetition
+#print axioms CollatzAffineBlockPrecision.odd_even_odd_balance
+
+-- The finite floor return used by the written S-unit proof is actual.
+-- The S-unit finiteness theorem itself is NOT imported as a Lean axiom.
+#print axioms CollatzSegmentFloor.to_prefix
+#print axioms CollatzSegmentFloor.actual_orbit
+#print axioms CollatzSegmentFloor.of_bounded_orbit_floor
+#print axioms CollatzSegmentFloor.of_orbit_floor
+#print axioms CollatzSegmentFloor.product_bound
+#print axioms CollatzSegmentFloor.correction_product_bound
+#print axioms CollatzSegmentFloor.correction_bound
+#print axioms CollatzSegmentFloor.correction_sharp_bound
+#print axioms CollatzSegmentFloor.correction_forces_floor_failure
+#print axioms CollatzSegmentFloor.actual_return_below_floor
+#print axioms CollatzSegmentFloor.ratio_forces_return
+
+-- Checkpoint fourteen: BinaryRunClock; finite kernel-checked arithmetic.
+#print axioms CollatzBinaryRunClock.fromBit_zero
+#print axioms CollatzBinaryRunClock.fromBit_step
+#print axioms CollatzBinaryRunClock.runs_zero
+#print axioms CollatzBinaryRunClock.even_fromBit
+#print axioms CollatzBinaryRunClock.odd_fromBit
+#print axioms CollatzBinaryRunClock.runs_double
+#print axioms CollatzBinaryRunClock.runs_odd
+#print axioms CollatzBinaryRunClock.runs_four_one
+#print axioms CollatzBinaryRunClock.runs_mul_pow_two
+#print axioms CollatzBinaryRunClock.runs_positive_of_odd
+#print axioms CollatzBinaryRunClock.gap_bound
+#print axioms CollatzBinaryRunClock.triple_add_one_runs
+#print axioms CollatzBinaryRunClock.edge_runs
+#print axioms CollatzBinaryRunClock.prefix_clock_bound
+#print axioms CollatzBinaryRunClock.capped_prefix_clock
+#print axioms CollatzBinaryRunClock.prefix_runs_bound
+#print axioms CollatzBinaryRunClock.scaled_source_height_bound
+#print axioms CollatzBinaryRunClock.source_height_bound
+#print axioms CollatzBinaryRunClock.capped_endpoint_source_bound
+
+-- Checkpoint fourteen: ContextSurgery; finite kernel-checked arithmetic.
+#print axioms CollatzContextSurgery.carry_step_identity
+#print axioms CollatzContextSurgery.carry_word_length
+#print axioms CollatzContextSurgery.carry_word_clock
+#print axioms CollatzContextSurgery.carry_word_append
+#print axioms CollatzContextSurgery.carry_word_prefix
+#print axioms CollatzContextSurgery.carry_word_certificate
+#print axioms CollatzContextSurgery.carry_source_grows
+#print axioms CollatzContextSurgery.carry_interval_rule
+#print axioms CollatzContextSurgery.suffix_exit_rule
+#print axioms CollatzContextSurgery.dead_endpoint
+#print axioms CollatzContextSurgery.raise_gap_two
+#print axioms CollatzContextSurgery.raised_predecessor_residue
+#print axioms CollatzContextSurgery.four_one_seed
+#print axioms CollatzContextSurgery.unchanged_context_blocks_seed
+#print axioms CollatzContextSurgery.seventy_seven_predecessors
+#print axioms CollatzContextSurgery.all_length_seed_growth_failure
+
+-- Checkpoint fifteen: unrestricted complete certificates reduce to a finite boundary.
+#print axioms CollatzFiniteSourceBoundary.last_exit
+#print axioms CollatzFiniteSourceBoundary.trim_certificate
+#print axioms CollatzFiniteSourceBoundary.minimum_on_boundary
+#print axioms CollatzFiniteSourceBoundary.boundary_minimum_iff
+#print axioms CollatzFiniteSourceBoundary.boundary_maximum_iff
+
+-- Checkpoint sixteen: full-word cycle guards and unrestricted witness-length separation.
+#print axioms CollatzNegativeCycleExtension.extension_data
+#print axioms CollatzNegativeCycleExtension.extension_binary_guard
+#print axioms CollatzNegativeCycleExtension.extension_ternary_guard
+#print axioms CollatzWitnessLengthSeparation.four_step_input
+#print axioms CollatzWitnessLengthSeparation.exact_clocks
+#print axioms CollatzWitnessLengthSeparation.output_prefix_and_tail
+#print axioms CollatzWitnessLengthSeparation.output_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.tuple_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.no_input_length_bound
+
+-- Literature closure: necessary actual clocks for semigroup multiplier lifts.
+#print axioms CollatzMultiplierTransport.merger_clock_budget
+#print axioms CollatzMultiplierTransport.no_uniform_merger_clock

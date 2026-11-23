@@ -1,0 +1,41 @@
+✔ [2/34] Built Collatz.ReverseBasin146 (5.8s)
+✔ [3/34] Built Collatz.SourceGreenCoefficient (1.1s)
+✔ [4/34] Built Collatz.Closure (1.4s)
+✔ [5/34] Built Collatz.WitnessEnergy (574ms)
+✔ [6/34] Built Collatz.Shadow (1.1s)
+✔ [7/34] Built Collatz.Witness (1.3s)
+✔ [8/34] Built Collatz.DirectedInduction (1.3s)
+✔ [9/34] Built Collatz.SourceWitness (484ms)
+✔ [10/34] Built Collatz.PsiCompletion (1.0s)
+✔ [11/34] Built Collatz.GapMultiset (916ms)
+✔ [12/34] Built Collatz.ResetFamily (752ms)
+✔ [13/34] Built Collatz.HighGapPump (1.2s)
+✔ [14/34] Built Collatz.LowGapPump (1.2s)
+✔ [15/34] Built Collatz.LowGapLoops (1.3s)
+ℹ [16/34] Built Collatz.UnboundedGapReset (3.5s)
+info: Collatz/UnboundedGapReset.lean:410:0: 'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:411:0: 'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:412:0: 'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:413:0: 'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms
+info: Collatz/UnboundedGapReset.lean:414:0: 'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:415:0: 'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:416:0: 'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:417:0: 'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [17/34] Built Collatz.GapComparison (507ms)
+✔ [18/34] Built Collatz.LowGapToPsi (1.1s)
+✔ [19/34] Built Collatz.GapHandoffs (1.6s)
+✔ [20/34] Built Collatz.RetainedEvenReset (1.6s)
+✔ [21/34] Built Collatz.AsymmetricPsiReset (1.7s)
+✔ [22/34] Built Collatz.MergerDenominatorClear (2.4s)
+✔ [23/34] Built Collatz.BoundedGapCofinal (2.8s)
+✔ [24/34] Built Collatz.RetainedEvenBoundary (731ms)
+✔ [25/34] Built Collatz.LowIntervalRefinement (862ms)
+✔ [26/34] Built Collatz.LowGapGlobal (1.1s)
+✔ [27/34] Built Collatz.PsiValuationOne (958ms)
+✔ [28/34] Built Collatz.PsiOddValuations (1.3s)
+✔ [29/34] Built Collatz.PsiEvenHeadFour (3.2s)
+✔ [30/34] Built Collatz.ClockSynchronization (3.9s)
+✔ [31/34] Built Collatz.PsiEvenHeadTwo (2.1s)
+✔ [32/34] Built Collatz.PsiSuffix (12s)
+✔ [33/34] Built Collatz (209ms)
+Build completed successfully (34 jobs).

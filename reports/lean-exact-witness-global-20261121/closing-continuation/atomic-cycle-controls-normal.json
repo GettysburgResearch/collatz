@@ -1,0 +1,1129 @@
+{
+  "cases": [
+    {
+      "binary": 1,
+      "binary_depth": 1,
+      "crt_checks": [
+        {
+          "endpoint_bits": 11,
+          "precision": 1,
+          "start_bits": 11
+        },
+        {
+          "endpoint_bits": 16,
+          "precision": 3,
+          "start_bits": 15
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 5,
+          "start_bits": 21
+        }
+      ],
+      "denominator": 17,
+      "last": 2,
+      "numerator": -103,
+      "ones": 2,
+      "prefix": [
+        2
+      ],
+      "sign": -1,
+      "ternary": 1,
+      "ternary_depth": 1,
+      "total_gap": 6,
+      "word_length": 4
+    },
+    {
+      "binary": 1,
+      "binary_depth": 1,
+      "crt_checks": [
+        {
+          "endpoint_bits": 8,
+          "precision": 1,
+          "start_bits": 8
+        },
+        {
+          "endpoint_bits": 13,
+          "precision": 3,
+          "start_bits": 13
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 5,
+          "start_bits": 18
+        }
+      ],
+      "denominator": 1,
+      "last": 1,
+      "numerator": -7,
+      "ones": 0,
+      "prefix": [
+        2
+      ],
+      "sign": -1,
+      "ternary": 2,
+      "ternary_depth": 1,
+      "total_gap": 3,
+      "word_length": 2
+    },
+    {
+      "binary": 3,
+      "binary_depth": 2,
+      "crt_checks": [
+        {
+          "endpoint_bits": 11,
+          "precision": 1,
+          "start_bits": 10
+        },
+        {
+          "endpoint_bits": 16,
+          "precision": 3,
+          "start_bits": 15
+        },
+        {
+          "endpoint_bits": 22,
+          "precision": 5,
+          "start_bits": 20
+        }
+      ],
+      "denominator": 49,
+      "last": 2,
+      "numerator": -65,
+      "ones": 1,
+      "prefix": [
+        1,
+        1
+      ],
+      "sign": -1,
+      "ternary": 4,
+      "ternary_depth": 2,
+      "total_gap": 5,
+      "word_length": 4
+    },
+    {
+      "binary": 5,
+      "binary_depth": 3,
+      "crt_checks": [
+        {
+          "endpoint_bits": 14,
+          "precision": 1,
+          "start_bits": 14
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 3,
+          "start_bits": 19
+        },
+        {
+          "endpoint_bits": 24,
+          "precision": 5,
+          "start_bits": 24
+        }
+      ],
+      "denominator": 31,
+      "last": 1,
+      "numerator": -517,
+      "ones": 4,
+      "prefix": [
+        4
+      ],
+      "sign": -1,
+      "ternary": 8,
+      "ternary_depth": 2,
+      "total_gap": 9,
+      "word_length": 6
+    },
+    {
+      "binary": 7,
+      "binary_depth": 3,
+      "crt_checks": [
+        {
+          "endpoint_bits": 16,
+          "precision": 1,
+          "start_bits": 16
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 3,
+          "start_bits": 21
+        },
+        {
+          "endpoint_bits": 26,
+          "precision": 5,
+          "start_bits": 25
+        }
+      ],
+      "denominator": 139,
+      "last": 4,
+      "numerator": -2579,
+      "ones": 3,
+      "prefix": [
+        1,
+        1,
+        2
+      ],
+      "sign": -1,
+      "ternary": 10,
+      "ternary_depth": 3,
+      "total_gap": 11,
+      "word_length": 7
+    },
+    {
+      "binary": 9,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 16,
+          "precision": 1,
+          "start_bits": 16
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 3,
+          "start_bits": 21
+        },
+        {
+          "endpoint_bits": 26,
+          "precision": 5,
+          "start_bits": 26
+        }
+      ],
+      "denominator": 139,
+      "last": 2,
+      "numerator": -6509,
+      "ones": 3,
+      "prefix": [
+        2,
+        1,
+        3
+      ],
+      "sign": -1,
+      "ternary": 13,
+      "ternary_depth": 3,
+      "total_gap": 11,
+      "word_length": 7
+    },
+    {
+      "binary": 11,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 46,
+          "precision": 1,
+          "start_bits": 46
+        },
+        {
+          "endpoint_bits": 51,
+          "precision": 3,
+          "start_bits": 51
+        },
+        {
+          "endpoint_bits": 56,
+          "precision": 5,
+          "start_bits": 55
+        }
+      ],
+      "denominator": 342842572777,
+      "last": 13,
+      "numerator": -8189919687037,
+      "ones": 22,
+      "prefix": [
+        1,
+        2,
+        3
+      ],
+      "sign": -1,
+      "ternary": 17,
+      "ternary_depth": 3,
+      "total_gap": 41,
+      "word_length": 26
+    },
+    {
+      "binary": 13,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 62,
+          "precision": 1,
+          "start_bits": 62
+        },
+        {
+          "endpoint_bits": 66,
+          "precision": 3,
+          "start_bits": 66
+        },
+        {
+          "endpoint_bits": 71,
+          "precision": 5,
+          "start_bits": 71
+        }
+      ],
+      "denominator": 259975966136663,
+      "last": 17,
+      "numerator": -100788089444799893,
+      "ones": 33,
+      "prefix": [
+        3,
+        4
+      ],
+      "sign": -1,
+      "ternary": 23,
+      "ternary_depth": 3,
+      "total_gap": 57,
+      "word_length": 36
+    },
+    {
+      "binary": 15,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 16,
+          "precision": 1,
+          "start_bits": 12
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 3,
+          "start_bits": 17
+        },
+        {
+          "endpoint_bits": 27,
+          "precision": 5,
+          "start_bits": 22
+        }
+      ],
+      "denominator": 1,
+      "last": 1,
+      "numerator": -1,
+      "ones": 2,
+      "prefix": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "sign": -1,
+      "ternary": 26,
+      "ternary_depth": 3,
+      "total_gap": 7,
+      "word_length": 7
+    },
+    {
+      "binary": 17,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 33,
+          "precision": 1,
+          "start_bits": 33
+        },
+        {
+          "endpoint_bits": 38,
+          "precision": 3,
+          "start_bits": 38
+        },
+        {
+          "endpoint_bits": 44,
+          "precision": 5,
+          "start_bits": 43
+        }
+      ],
+      "denominator": 118985033,
+      "last": 8,
+      "numerator": -1676724967,
+      "ones": 15,
+      "prefix": [
+        2,
+        3
+      ],
+      "sign": -1,
+      "ternary": 31,
+      "ternary_depth": 4,
+      "total_gap": 28,
+      "word_length": 18
+    },
+    {
+      "binary": 23,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 125,
+          "precision": 1,
+          "start_bits": 124
+        },
+        {
+          "endpoint_bits": 130,
+          "precision": 3,
+          "start_bits": 130
+        },
+        {
+          "endpoint_bits": 136,
+          "precision": 5,
+          "start_bits": 135
+        }
+      ],
+      "denominator": 99114473471031450891048983515247869,
+      "last": 41,
+      "numerator": -1987004839863393397960378116720005701,
+      "ones": 72,
+      "prefix": [
+        1,
+        1,
+        5
+      ],
+      "sign": -1,
+      "ternary": 59,
+      "ternary_depth": 4,
+      "total_gap": 120,
+      "word_length": 76
+    },
+    {
+      "binary": 31,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 19,
+          "precision": 1,
+          "start_bits": 14
+        },
+        {
+          "endpoint_bits": 24,
+          "precision": 3,
+          "start_bits": 20
+        },
+        {
+          "endpoint_bits": 29,
+          "precision": 5,
+          "start_bits": 25
+        }
+      ],
+      "denominator": 18659,
+      "last": 1,
+      "numerator": -21251,
+      "ones": 3,
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "sign": -1,
+      "ternary": 80,
+      "ternary_depth": 4,
+      "total_gap": 10,
+      "word_length": 9
+    },
+    {
+      "binary": 1,
+      "binary_depth": 1,
+      "crt_checks": [
+        {
+          "endpoint_bits": 7,
+          "precision": 1,
+          "start_bits": 8
+        },
+        {
+          "endpoint_bits": 12,
+          "precision": 3,
+          "start_bits": 13
+        },
+        {
+          "endpoint_bits": 18,
+          "precision": 5,
+          "start_bits": 18
+        }
+      ],
+      "denominator": 1,
+      "last": 2,
+      "numerator": 1,
+      "ones": 0,
+      "prefix": [
+        2
+      ],
+      "sign": 1,
+      "ternary": 1,
+      "ternary_depth": 1,
+      "total_gap": 4,
+      "word_length": 2
+    },
+    {
+      "binary": 1,
+      "binary_depth": 1,
+      "crt_checks": [
+        {
+          "endpoint_bits": 7,
+          "precision": 1,
+          "start_bits": 9
+        },
+        {
+          "endpoint_bits": 13,
+          "precision": 3,
+          "start_bits": 15
+        },
+        {
+          "endpoint_bits": 18,
+          "precision": 5,
+          "start_bits": 20
+        }
+      ],
+      "denominator": 23,
+      "last": 3,
+      "numerator": 7,
+      "ones": 0,
+      "prefix": [
+        2
+      ],
+      "sign": 1,
+      "ternary": 2,
+      "ternary_depth": 1,
+      "total_gap": 5,
+      "word_length": 2
+    },
+    {
+      "binary": 3,
+      "binary_depth": 2,
+      "crt_checks": [
+        {
+          "endpoint_bits": 11,
+          "precision": 1,
+          "start_bits": 16
+        },
+        {
+          "endpoint_bits": 16,
+          "precision": 3,
+          "start_bits": 21
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 5,
+          "start_bits": 26
+        }
+      ],
+      "denominator": 1967,
+      "last": 8,
+      "numerator": 65,
+      "ones": 1,
+      "prefix": [
+        1,
+        1
+      ],
+      "sign": 1,
+      "ternary": 4,
+      "ternary_depth": 2,
+      "total_gap": 11,
+      "word_length": 4
+    },
+    {
+      "binary": 5,
+      "binary_depth": 3,
+      "crt_checks": [
+        {
+          "endpoint_bits": 9,
+          "precision": 1,
+          "start_bits": 11
+        },
+        {
+          "endpoint_bits": 15,
+          "precision": 3,
+          "start_bits": 16
+        },
+        {
+          "endpoint_bits": 20,
+          "precision": 5,
+          "start_bits": 21
+        }
+      ],
+      "denominator": 37,
+      "last": 1,
+      "numerator": 89,
+      "ones": 1,
+      "prefix": [
+        4
+      ],
+      "sign": 1,
+      "ternary": 8,
+      "ternary_depth": 2,
+      "total_gap": 6,
+      "word_length": 3
+    },
+    {
+      "binary": 7,
+      "binary_depth": 3,
+      "crt_checks": [
+        {
+          "endpoint_bits": 14,
+          "precision": 1,
+          "start_bits": 15
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 3,
+          "start_bits": 20
+        },
+        {
+          "endpoint_bits": 25,
+          "precision": 5,
+          "start_bits": 25
+        }
+      ],
+      "denominator": 295,
+      "last": 4,
+      "numerator": 817,
+      "ones": 2,
+      "prefix": [
+        1,
+        1,
+        2
+      ],
+      "sign": 1,
+      "ternary": 10,
+      "ternary_depth": 3,
+      "total_gap": 10,
+      "word_length": 6
+    },
+    {
+      "binary": 9,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 15,
+          "precision": 1,
+          "start_bits": 15
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 3,
+          "start_bits": 20
+        },
+        {
+          "endpoint_bits": 24,
+          "precision": 5,
+          "start_bits": 25
+        }
+      ],
+      "denominator": 295,
+      "last": 2,
+      "numerator": 1999,
+      "ones": 2,
+      "prefix": [
+        2,
+        1,
+        3
+      ],
+      "sign": 1,
+      "ternary": 13,
+      "ternary_depth": 3,
+      "total_gap": 10,
+      "word_length": 6
+    },
+    {
+      "binary": 11,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 15,
+          "precision": 1,
+          "start_bits": 26
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 3,
+          "start_bits": 31
+        },
+        {
+          "endpoint_bits": 25,
+          "precision": 5,
+          "start_bits": 36
+        }
+      ],
+      "denominator": 2096423,
+      "last": 13,
+      "numerator": 1837,
+      "ones": 2,
+      "prefix": [
+        1,
+        2,
+        3
+      ],
+      "sign": 1,
+      "ternary": 17,
+      "ternary_depth": 3,
+      "total_gap": 21,
+      "word_length": 6
+    },
+    {
+      "binary": 13,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 13,
+          "precision": 1,
+          "start_bits": 31
+        },
+        {
+          "endpoint_bits": 17,
+          "precision": 3,
+          "start_bits": 35
+        },
+        {
+          "endpoint_bits": 23,
+          "precision": 5,
+          "start_bits": 41
+        }
+      ],
+      "denominator": 67108621,
+      "last": 17,
+      "numerator": 2729,
+      "ones": 2,
+      "prefix": [
+        3,
+        4
+      ],
+      "sign": 1,
+      "ternary": 23,
+      "ternary_depth": 3,
+      "total_gap": 26,
+      "word_length": 5
+    },
+    {
+      "binary": 15,
+      "binary_depth": 4,
+      "crt_checks": [
+        {
+          "endpoint_bits": 15,
+          "precision": 1,
+          "start_bits": 29
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 3,
+          "start_bits": 35
+        },
+        {
+          "endpoint_bits": 26,
+          "precision": 5,
+          "start_bits": 40
+        }
+      ],
+      "denominator": 33552245,
+      "last": 19,
+      "numerator": 2059,
+      "ones": 2,
+      "prefix": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "sign": 1,
+      "ternary": 26,
+      "ternary_depth": 3,
+      "total_gap": 25,
+      "word_length": 7
+    },
+    {
+      "binary": 17,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 14,
+          "precision": 1,
+          "start_bits": 20
+        },
+        {
+          "endpoint_bits": 19,
+          "precision": 3,
+          "start_bits": 26
+        },
+        {
+          "endpoint_bits": 24,
+          "precision": 5,
+          "start_bits": 31
+        }
+      ],
+      "denominator": 64807,
+      "last": 8,
+      "numerator": 2647,
+      "ones": 3,
+      "prefix": [
+        2,
+        3
+      ],
+      "sign": 1,
+      "ternary": 31,
+      "ternary_depth": 4,
+      "total_gap": 16,
+      "word_length": 6
+    },
+    {
+      "binary": 23,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 15,
+          "precision": 1,
+          "start_bits": 55
+        },
+        {
+          "endpoint_bits": 21,
+          "precision": 3,
+          "start_bits": 61
+        },
+        {
+          "endpoint_bits": 26,
+          "precision": 5,
+          "start_bits": 66
+        }
+      ],
+      "denominator": 2251799813683061,
+      "last": 41,
+      "numerator": 9859,
+      "ones": 3,
+      "prefix": [
+        1,
+        1,
+        5
+      ],
+      "sign": 1,
+      "ternary": 59,
+      "ternary_depth": 4,
+      "total_gap": 51,
+      "word_length": 7
+    },
+    {
+      "binary": 31,
+      "binary_depth": 5,
+      "crt_checks": [
+        {
+          "endpoint_bits": 19,
+          "precision": 1,
+          "start_bits": 69
+        },
+        {
+          "endpoint_bits": 24,
+          "precision": 3,
+          "start_bits": 74
+        },
+        {
+          "endpoint_bits": 29,
+          "precision": 5,
+          "start_bits": 79
+        }
+      ],
+      "denominator": 18446744073709531933,
+      "last": 55,
+      "numerator": 21251,
+      "ones": 3,
+      "prefix": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "sign": 1,
+      "ternary": 80,
+      "ternary_depth": 4,
+      "total_gap": 64,
+      "word_length": 9
+    }
+  ],
+  "cycle_rotations_checked": 265,
+  "ordinary_paths_checked": 72,
+  "product_cylinder_bridges": [
+    {
+      "endpoint": 2861,
+      "source": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "start": 1129,
+      "target": [
+        5,
+        3,
+        8,
+        2
+      ],
+      "word": [
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "endpoint": 22031,
+      "source": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "start": 5801,
+      "target": [
+        15,
+        4,
+        26,
+        3
+      ],
+      "word": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "endpoint": 1619,
+      "source": [
+        3,
+        2,
+        4,
+        2
+      ],
+      "start": 319,
+      "target": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "word": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "endpoint": 36251,
+      "source": [
+        5,
+        3,
+        8,
+        2
+      ],
+      "start": 156427685,
+      "target": [
+        11,
+        4,
+        17,
+        3
+      ],
+      "word": [
+        4,
+        1,
+        1,
+        1,
+        13
+      ]
+    },
+    {
+      "endpoint": 10443167,
+      "source": [
+        7,
+        3,
+        10,
+        3
+      ],
+      "start": 814951,
+      "target": [
+        31,
+        5,
+        80,
+        4
+      ],
+      "word": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "endpoint": 593983,
+      "source": [
+        9,
+        4,
+        13,
+        3
+      ],
+      "start": 2224921,
+      "target": [
+        7,
+        3,
+        10,
+        3
+      ],
+      "word": [
+        2,
+        1,
+        3,
+        1,
+        1,
+        1,
+        4
+      ]
+    },
+    {
+      "endpoint": 7899313,
+      "source": [
+        11,
+        4,
+        17,
+        3
+      ],
+      "start": 315616139,
+      "target": [
+        17,
+        5,
+        31,
+        4
+      ],
+      "word": [
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "endpoint": 49423,
+      "source": [
+        13,
+        4,
+        23,
+        3
+      ],
+      "start": 416525,
+      "target": [
+        3,
+        2,
+        4,
+        2
+      ],
+      "word": [
+        3,
+        4,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "endpoint": 4848845,
+      "source": [
+        15,
+        4,
+        26,
+        3
+      ],
+      "start": 12399042815,
+      "target": [
+        13,
+        4,
+        23,
+        3
+      ],
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        17
+      ]
+    },
+    {
+      "endpoint": 20155,
+      "source": [
+        17,
+        5,
+        31,
+        4
+      ],
+      "start": 63697,
+      "target": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "word": [
+        2,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "endpoint": 4673497,
+      "source": [
+        23,
+        5,
+        59,
+        4
+      ],
+      "start": 8752919,
+      "target": [
+        9,
+        4,
+        13,
+        3
+      ],
+      "word": [
+        1,
+        1,
+        5,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "endpoint": 224663927,
+      "source": [
+        31,
+        5,
+        80,
+        4
+      ],
+      "start": 8567430252170166431,
+      "target": [
+        23,
+        5,
+        59,
+        4
+      ],
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        41
+      ]
+    }
+  ],
+  "scope": "exact rational cycle construction and finite ordinary CRT paths",
+  "status": "PASS; not a positive integer cycle exclusion"
+}

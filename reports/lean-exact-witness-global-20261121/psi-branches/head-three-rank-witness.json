@@ -1,0 +1,144 @@
+{
+  "certificates": {
+    "173": {
+      "correction": 789145,
+      "gaps": [
+        3,
+        2,
+        2,
+        4,
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        173,
+        65,
+        49,
+        37,
+        7,
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "total_clock": 22
+    },
+    "205": {
+      "correction": 75953,
+      "gaps": [
+        3,
+        3,
+        3,
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        205,
+        77,
+        29,
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "total_clock": 19
+    },
+    "77": {
+      "correction": 9403,
+      "gaps": [
+        3,
+        3,
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        77,
+        29,
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "total_clock": 16
+    }
+  },
+  "child_count_at_grade": 2,
+  "child_grades": [
+    5,
+    6,
+    4,
+    4,
+    8,
+    2,
+    2,
+    4,
+    6,
+    8
+  ],
+  "common_endpoint": 3503,
+  "highest_changed_grade": 8,
+  "inverse_dead_ends": {
+    "q205": 273,
+    "u77": 51
+  },
+  "left_ordinary_path": [
+    1639,
+    2459,
+    3689,
+    5534,
+    2767,
+    4151,
+    6227,
+    9341,
+    14012,
+    7006,
+    3503
+  ],
+  "parent_count_at_grade": 1,
+  "parent_grades": [
+    5,
+    6,
+    6,
+    6,
+    2,
+    4,
+    6,
+    8
+  ],
+  "partner_target": 1383,
+  "right_ordinary_path": [
+    1383,
+    2075,
+    3113,
+    4670,
+    2335,
+    3503
+  ],
+  "scope": "not a divergent target or an obstruction to other source rewrites",
+  "smaller_source": 692,
+  "source": 820,
+  "status": "exact_finite_identity_and_rank_witness",
+  "tail_endpoint": 77,
+  "target": 1639,
+  "target_prefix": {
+    "correction": 251,
+    "endpoint": 6227,
+    "gaps": [
+      1,
+      1,
+      2,
+      1,
+      1
+    ]
+  }
+}

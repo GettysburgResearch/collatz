@@ -1,0 +1,60 @@
+{
+  "schema": "collatz-selected-executions/v1",
+  "scope": "Final strict Lean compile and normal/optimized exact finite checker executions; not an infinite verification or Collatz proof",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256": {
+    "UnitProjection.lean": "bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4",
+    "FULL_SOURCE_FINITE_CERTIFICATE.md": "380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d",
+    "check_unit_projection.py": "32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b"
+  },
+  "normal_optimized_byte_equal": true,
+  "executions": [
+    {
+      "name": "lean",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/UnitProjection.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "stdout": "'CollatzUnitProjection.odd_part_reaches' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.nonunit_odd_successor_reaches' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.full_source_projects' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.odd_successor_unit' depends on axioms: [propext]\n'CollatzUnitProjection.projected_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnitProjection.finite_projection_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": {
+        "UnitProjection.lean": "bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4"
+      },
+      "retained_execution_note": "The previously recorded strict compilation is retained for the unchanged Lean source. The new correction only adds nonemptiness hypotheses to the written FP8/FP9 statements."
+    },
+    {
+      "name": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/check_unit_projection.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_projected_suffix_steps\": 126062,\n  \"actual_source_atoms\": 13700,\n  \"complete_fiber_rectangles\": 201,\n  \"complete_rectangle_atoms\": 7035,\n  \"failed_strengthening_controls\": [\n    \"height factor 1 rejected by 3 -> 5\",\n    \"bounded unweighted multiplicity rejected by a dyadic fiber\",\n    \"omitted dyadic weights rejected\",\n    \"lost nonunit source rejected by 75 -> 113 -> 170 -> 85\",\n    \"one shortcut step is not the full odd projection: 21 -> 1 takes 6\"\n  ],\n  \"full_predecessor_pools\": 25,\n  \"inverse_square_constant\": \"111404/22113\",\n  \"largest_finite_inverse_power_ratio\": \"1644899292857976598433555569/326533181312040994075152384\",\n  \"largest_finite_pressure_ratio\": \"4879426596671485/1125899906842624\",\n  \"largest_observed_fiber\": 47,\n  \"sample_pool_records\": [\n    {\n      \"exact_ratio_sha256\": \"6ac26b9d91af7f27faf7dab1130997df99978206f984c65848ebd200064500dd\",\n      \"ratio_display\": 1.4936633892,\n      \"root\": 1,\n      \"sources\": 274,\n      \"unit_images\": 46\n    },\n    {\n      \"exact_ratio_sha256\": \"c42f7b5b984eec1d19e19775dcd3489356fad421d42008b9cf99c57c7c8cfd1a\",\n      \"ratio_display\": 3.2678691975,\n      \"root\": 5,\n      \"sources\": 501,\n      \"unit_images\": 84\n    },\n    {\n      \"exact_ratio_sha256\": \"4828bde39b4552afb3699e855abef42a0785b25cfa18f6d45a7388127cf58e13\",\n      \"ratio_display\": 2.09509754,\n      \"root\": 7,\n      \"sources\": 349,\n      \"unit_images\": 57\n    },\n    {\n      \"exact_ratio_sha256\": \"f9e5f86e0406224c13f947bb1dd443492421b1c52e37720a0be6728eb89fe812\",\n      \"ratio_display\": 1.8674761025,\n      \"root\": 11,\n      \"sources\": 715,\n      \"unit_images\": 125\n    },\n    {\n      \"exact_ratio_sha256\": \"77f6e15603db0cc78a1a6147458b09662755592af1881055d8b08d59319e0f5a\",\n      \"ratio_display\": 1.7726127349,\n      \"root\": 13,\n      \"sources\": 609,\n      \"unit_images\": 105\n    }\n  ],\n  \"scope\": \"finite actual ordinary predecessor and exact weighted-fiber controls; no escape simulation\",\n  \"sources\": {\n    \"FULL_SOURCE_FINITE_CERTIFICATE.md\": \"380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d\",\n    \"UnitProjection.lean\": \"bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4\",\n    \"check_unit_projection.py\": \"32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b\"\n  },\n  \"sources_with_nonunit_odd_part\": 4424\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/check_unit_projection.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_projected_suffix_steps\": 126062,\n  \"actual_source_atoms\": 13700,\n  \"complete_fiber_rectangles\": 201,\n  \"complete_rectangle_atoms\": 7035,\n  \"failed_strengthening_controls\": [\n    \"height factor 1 rejected by 3 -> 5\",\n    \"bounded unweighted multiplicity rejected by a dyadic fiber\",\n    \"omitted dyadic weights rejected\",\n    \"lost nonunit source rejected by 75 -> 113 -> 170 -> 85\",\n    \"one shortcut step is not the full odd projection: 21 -> 1 takes 6\"\n  ],\n  \"full_predecessor_pools\": 25,\n  \"inverse_square_constant\": \"111404/22113\",\n  \"largest_finite_inverse_power_ratio\": \"1644899292857976598433555569/326533181312040994075152384\",\n  \"largest_finite_pressure_ratio\": \"4879426596671485/1125899906842624\",\n  \"largest_observed_fiber\": 47,\n  \"sample_pool_records\": [\n    {\n      \"exact_ratio_sha256\": \"6ac26b9d91af7f27faf7dab1130997df99978206f984c65848ebd200064500dd\",\n      \"ratio_display\": 1.4936633892,\n      \"root\": 1,\n      \"sources\": 274,\n      \"unit_images\": 46\n    },\n    {\n      \"exact_ratio_sha256\": \"c42f7b5b984eec1d19e19775dcd3489356fad421d42008b9cf99c57c7c8cfd1a\",\n      \"ratio_display\": 3.2678691975,\n      \"root\": 5,\n      \"sources\": 501,\n      \"unit_images\": 84\n    },\n    {\n      \"exact_ratio_sha256\": \"4828bde39b4552afb3699e855abef42a0785b25cfa18f6d45a7388127cf58e13\",\n      \"ratio_display\": 2.09509754,\n      \"root\": 7,\n      \"sources\": 349,\n      \"unit_images\": 57\n    },\n    {\n      \"exact_ratio_sha256\": \"f9e5f86e0406224c13f947bb1dd443492421b1c52e37720a0be6728eb89fe812\",\n      \"ratio_display\": 1.8674761025,\n      \"root\": 11,\n      \"sources\": 715,\n      \"unit_images\": 125\n    },\n    {\n      \"exact_ratio_sha256\": \"77f6e15603db0cc78a1a6147458b09662755592af1881055d8b08d59319e0f5a\",\n      \"ratio_display\": 1.7726127349,\n      \"root\": 13,\n      \"sources\": 609,\n      \"unit_images\": 105\n    }\n  ],\n  \"scope\": \"finite actual ordinary predecessor and exact weighted-fiber controls; no escape simulation\",\n  \"sources\": {\n    \"FULL_SOURCE_FINITE_CERTIFICATE.md\": \"380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d\",\n    \"UnitProjection.lean\": \"bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4\",\n    \"check_unit_projection.py\": \"32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b\"\n  },\n  \"sources_with_nonunit_odd_part\": 4424\n}\n",
+      "stderr": ""
+    }
+  ],
+  "written_hypothesis_correction": "FP7 permits arbitrary finite G. FP8 requires nonempty finite G, ensuring nonempty H and F and positive normalizing mass. FP9 requires N>=1 (and hence X>=1)."
+}

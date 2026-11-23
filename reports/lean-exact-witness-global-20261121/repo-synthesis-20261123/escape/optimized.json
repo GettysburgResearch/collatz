@@ -1,0 +1,89 @@
+{
+  "abstract_sharp_cases": 64,
+  "basin_minima": [
+    [
+      2645,
+      783
+    ],
+    [
+      2005,
+      2005
+    ],
+    [
+      3029,
+      2019
+    ],
+    [
+      4565,
+      3043
+    ],
+    [
+      6869,
+      4287
+    ],
+    [
+      10325,
+      6883
+    ],
+    [
+      7765,
+      7765
+    ],
+    [
+      5845,
+      3463
+    ],
+    [
+      8789,
+      5859
+    ],
+    [
+      6613,
+      6613
+    ],
+    [
+      9941,
+      6627
+    ],
+    [
+      14933,
+      9955
+    ]
+  ],
+  "coarse_minimum_exponent": "799/800",
+  "descending_first_hit_cases": 86,
+  "false_minimum_control": [
+    1566,
+    2645,
+    783,
+    4
+  ],
+  "finite_cutoff_cases": 192,
+  "finite_weight_pool_size": 115,
+  "first_hit_cases": 145,
+  "integer_height_cases": 145,
+  "literal_parity_carry_cases": 13312,
+  "no_descent_capacity_cases": 13,
+  "original_odd_source": 41,
+  "rejected_controls": 3,
+  "retained_sources": 115,
+  "schema": "collatz-basin-packing-finite-controls/v1",
+  "scope": "finite actual convergent examples, exact source accounting, and abstract sharp controls; no infinite-orbit validation",
+  "sibling_roots": [
+    2645,
+    2005,
+    3029,
+    4565,
+    6869,
+    10325,
+    7765,
+    5845,
+    8789,
+    6613,
+    9941,
+    14933
+  ],
+  "source_bound": 14933,
+  "square_pressure_rearrangement_exponent": "1599/799",
+  "status": "PASS"
+}

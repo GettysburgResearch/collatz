@@ -1,0 +1,106 @@
+{
+  "schema": "collatz-literature-closure-sources/v1",
+  "inspection_date": "2026-11-23",
+  "base_commit": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+  "scope": "Latest selected peer interfaces were inspected; this is not a replay of their complete histories or formal corpora.",
+  "pull_requests": [
+    {
+      "pr": 175,
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "updated_at": "2026-11-23T02:58:58Z"
+    },
+    {
+      "pr": 176,
+      "head": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "title": "Collatz: finite triadic height certificate and direct closure attacks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "updated_at": "2026-11-23T02:47:06Z"
+    },
+    {
+      "pr": 177,
+      "head": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "title": "Collatz: funded witnesses, pressure barriers, and a triadic bridge",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "updated_at": "2026-11-23T02:32:28Z"
+    },
+    {
+      "pr": 178,
+      "head": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "updated_at": "2026-11-23T02:54:13Z"
+    },
+    {
+      "pr": 180,
+      "head": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "title": "Collatz: strict stationary collision gaps and finite minimum-source flux",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "updated_at": "2026-11-23T02:47:23Z"
+    },
+    {
+      "pr": 182,
+      "head": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "title": "Collatz: exact source boxes and global orbit-count reconstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "updated_at": "2026-11-23T03:07:58Z"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "updated_at": "2026-11-23T01:18:35Z"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186",
+      "updated_at": "2026-11-21T22:51:35Z"
+    }
+  ],
+  "additional_root_reads": [
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "paths": [
+        "research/profound-step-20261122/mergers/ARBITRARY_DEBT.md"
+      ],
+      "scope": "Full current carry interface read; no new upstream formal replay."
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "paths": [],
+      "scope": "Current PR description inspected for source-bounded merger interface."
+    }
+  ],
+  "lane_source_ledgers": [
+    "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCES.json",
+    "research/lean-exact-witness-global-20261121/literature-closure/cycles/SOURCES.md"
+  ],
+  "primary_root_reads": [
+    {
+      "title": "The 3x+1 Semigroup",
+      "url": "https://arxiv.org/pdf/math/0411140v2",
+      "scope": "Theorem 1.1, Section 2, Lemma3.1 and explicit multiplier table; no ordinary merger theorem assumed."
+    },
+    {
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://arxiv.org/pdf/2105.14697",
+      "scope": "Mixed-base rules, Theorem3.17, and rule-removal scope; no full termination theorem assumed."
+    },
+    {
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "scope": "Inverse parity map, unique complementary point, finite known-source example; no unknown-target rationality assumed."
+    },
+    {
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "url": "https://arxiv.org/pdf/1909.03562v7",
+      "scope": "Primary source refreshed; no almost-all conclusion is substituted for the ordinary atomic task."
+    }
+  ]
+}

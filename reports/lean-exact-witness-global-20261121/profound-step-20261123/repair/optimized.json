@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "block_extrapolants": 1404,
+    "finite_products": 13104,
+    "literal_rational_edges": 3042,
+    "primitive_pairs": 4368,
+    "pullbacks": 4602,
+    "real_contracting_tail_blocks": 348,
+    "rejected_controls": 4
+  },
+  "ordinary_alternative": {
+    "canonical_leaf": "14822219/2187",
+    "fixed_root": 85,
+    "odd_path": [
+      75,
+      113,
+      85
+    ],
+    "original_prefix": 8,
+    "original_source": 65,
+    "source": 75
+  },
+  "scope": "exact finite rational and ordinary controls; no escaping-orbit example or universal integer repair",
+  "seeds": [
+    1,
+    5,
+    7,
+    11,
+    13,
+    17,
+    25,
+    31,
+    41,
+    65,
+    193,
+    385,
+    837799
+  ],
+  "sharp_finite_product": "7/3",
+  "sibling_powers": [
+    1,
+    2,
+    3,
+    4,
+    9,
+    27
+  ],
+  "source_sha256": {
+    "ADELIC_INTEGER_REPAIR.md": "cd2735741f0833f32f7707e31bb864452b9d2bead7cdaea7e35068a3922e5dc7",
+    "AdelicRepair.lean": "378edd7da50d235c4d80a96c70f17d079a9f1471e55dd759bae0180c3ccf324d",
+    "check_adelic_repair.py": "9019d940337598e57efe071a2c9b46b65ae53ab1368577c21c1235c1a93d46f4"
+  },
+  "status": "PASS"
+}

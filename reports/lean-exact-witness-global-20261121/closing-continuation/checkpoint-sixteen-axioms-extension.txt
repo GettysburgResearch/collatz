@@ -1,0 +1,4 @@
+$ lake env lean -DwarningAsError=true AuditNegativeCycleExtension.lean
+'CollatzNegativeCycleExtension.extension_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzNegativeCycleExtension.extension_binary_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzNegativeCycleExtension.extension_ternary_guard' depends on axioms: [propext, Classical.choice, Quot.sound]

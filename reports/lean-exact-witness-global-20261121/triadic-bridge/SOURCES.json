@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-source-snapshot/v1",
+  "owned_parent": "db1ae7690d1d53aafe01c8a11d52e24754a3cfab",
+  "sources": [
+    {
+      "pr": 178,
+      "sha": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/README.md",
+      "sha256": "a68ca2d811750180708f32e8c0fcce4a7e332f1a1ffc10f3bef8321df52edcff",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4e204f54136c79cf8c9393b34e3330594f99ae0a/research/global-closure-20261123/README.md"
+    },
+    {
+      "pr": 178,
+      "sha": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+      "sha256": "e4ad2b13c40b7f8906862143edc8c836def4b8f8c359bfec50d3c94146e2d120",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4e204f54136c79cf8c9393b34e3330594f99ae0a/research/global-closure-20261123/duality/TRIADIC_RANK.md"
+    },
+    {
+      "pr": 178,
+      "sha": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/cycles/INTEGRAL_MAHLER_CLOSURE_ATTEMPT.md",
+      "sha256": "3361b2a3d1e2fc9bbbbd92f5d5618125abbaecd3e641aa03169dc9105b5c488a",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4e204f54136c79cf8c9393b34e3330594f99ae0a/research/global-closure-20261123/cycles/INTEGRAL_MAHLER_CLOSURE_ATTEMPT.md"
+    }
+  ],
+  "read_scope": "Cycle lane read all three written files; coordinator independently read the complete TRIADIC_RANK.md. No peer Lean build or execution-record audit is claimed. The exact bridge refutation does not assume the rank theorem.",
+  "prior_repository_inventory": "../closing-continuation/OPEN_PR_HEADS.json",
+  "prior_selected_source_snapshot": "../closing-continuation/SOURCES.json"
+}

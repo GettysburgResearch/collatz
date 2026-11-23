@@ -1,0 +1,35 @@
+{
+  "checkpoint_files_sha256": {
+    "README.md": "45f4039d9f8447c8e7fdf9493294bf2b948dc8221cafec51d89eb6a220e36d93",
+    "high-gap-receipt.json": "3768abe3e5f46e3f064957e924219be14fd805a815f5a1db9991575fb5563743",
+    "high_gap_source_zero.py": "f1a2e42b372674d054e9209149628d76ce28b029a4d644bddbdb8d7f7bf87f92"
+  },
+  "mathematical_records_sha256": "0d9e8db87714dfc066fb9c6a9a5a9fffc1fee8a7357d63db0b8a1fffb102b377",
+  "original_full_result_sha256": "6ee4d941e64c8fa88f945595b9a099098334c2da1a1c2d18cb47db12744adcfc",
+  "original_high_gap_generator_sha256": "edeba0febb1ce92cc01eb756558aee32c23d935955bc51fbb6c1a06f712b84a4",
+  "original_rule_commit": "4e3231167d1e044e84f4a8b4469bf57225814d86",
+  "original_rule_files": {
+    "research/witness-global-closure-20261121/SOURCE_ZERO_DESCENT.md": "34dd2294996192279f894fa35d29610773e31a762c272d7da689f88af7d3813c",
+    "research/witness-global-closure-20261121/check_source_zero_descent.py": "9aaa78707aa44ab5caad92b1a52155374b0fda14f26ca208eb999945026dbc3b"
+  },
+  "portable_mathematical_records_match_original": true,
+  "prior_scratch_enumerator_sha256": "e75578f0b7cb77109b2c96662086dddeb9c58fc9cf2eb5d73a341f21a9374c9a",
+  "repository": "https://github.com/GettysburgResearch/collatz",
+  "status": "Exact finite checkpoint; universal closure remains OPEN",
+  "validation": {
+    "assert_dependency": false,
+    "finite_grammar_maximum_child_word_length": 14,
+    "finite_grammar_source_alphabet": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "normal_command": "python3 high_gap_source_zero.py --receipt high-gap-receipt.json",
+    "normal_exit_code": 0,
+    "optimized_command": "python3 -O high_gap_source_zero.py --receipt high-gap-receipt-O.json",
+    "optimized_exit_code": 0,
+    "receipts_byte_identical": true,
+    "unbounded_parent_exponent_scope": "a>=5 verified by coefficient identities and symbolic last-valuation normalization"
+  }
+}

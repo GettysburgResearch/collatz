@@ -1,0 +1,71 @@
+{
+  "schema": "collatz-positive-carry-replay/v1",
+  "scope": "Exact finite integer identity; selected rational-family controls; no integer-cycle exclusion",
+  "runs": [
+    {
+      "mode": "normal",
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual_check.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output_sha256": "57caff84203c7b50710bc7905af2f7c8aa572b902208d6c38033ede451be41a3",
+      "transitions": 34,
+      "weight_sum": 40,
+      "mutations_rejected": [
+        "weight",
+        "witness",
+        "output"
+      ],
+      "family_parameters": [
+        1,
+        2,
+        7,
+        13,
+        20
+      ]
+    },
+    {
+      "mode": "optimized",
+      "command": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual_check.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output_sha256": "57caff84203c7b50710bc7905af2f7c8aa572b902208d6c38033ede451be41a3",
+      "transitions": 34,
+      "weight_sum": 40,
+      "mutations_rejected": [
+        "weight",
+        "witness",
+        "output"
+      ],
+      "family_parameters": [
+        1,
+        2,
+        7,
+        13,
+        20
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual.json",
+      "sha256": "7bff33ef7e3ae184f84b8cef06f0236228df770e6b7bc1d603bdcc082abbaa56"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual_check.py",
+      "sha256": "15d4f20ce793cd67a41b404c3fcf55538327f7dd7baeb1c1ac646ba2199329d0"
+    }
+  ]
+}

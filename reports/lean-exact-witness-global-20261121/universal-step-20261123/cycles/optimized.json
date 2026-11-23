@@ -1,0 +1,83 @@
+{
+  "common_context_controls": 6,
+  "damaged_controls_rejected": 3,
+  "nonsmooth": {
+    "A": 8,
+    "P": 243,
+    "Q": 256,
+    "carries": [
+      211,
+      323
+    ],
+    "delta": 112,
+    "delta_six_free": 7,
+    "p": 5,
+    "threshold": 499,
+    "uniform_mixed_exclusion": true,
+    "words": [
+      "11111000",
+      "11110001"
+    ]
+  },
+  "nonsmooth_max_block_count": 6,
+  "nonsmooth_mixed_schedules_checked": 114,
+  "nonvacuous_general_affine_controls": 36,
+  "run_transposition_controls": 10,
+  "scope": "Exact finite controls of stated formulas; not a Collatz proof or all-word census",
+  "sharp_affine_control_not_collatz": {
+    "D": 7,
+    "G": 7,
+    "P": 3,
+    "Q": 4,
+    "capacity": 7,
+    "carries": [
+      8,
+      1
+    ],
+    "lattice_step": 1,
+    "span": 7,
+    "states": [
+      4,
+      5
+    ]
+  },
+  "status": "PASS",
+  "uncovered_relocation_not_a_counterexample": {
+    "A": 10,
+    "P": 243,
+    "Q": 1024,
+    "carries": [
+      2161,
+      3632
+    ],
+    "delta": 1471,
+    "delta_six_free": 1471,
+    "p": 5,
+    "threshold": 1267,
+    "uniform_mixed_exclusion": false,
+    "words": [
+      "1000011110",
+      "0000111101"
+    ]
+  },
+  "uv": {
+    "A": 8,
+    "P": 243,
+    "Q": 256,
+    "carries": [
+      283,
+      319
+    ],
+    "delta": 36,
+    "delta_six_free": 1,
+    "p": 5,
+    "threshold": 499,
+    "uniform_mixed_exclusion": true,
+    "words": [
+      "11101010",
+      "11011010"
+    ]
+  },
+  "uv_max_block_count": 12,
+  "uv_mixed_schedules_checked": 8166
+}

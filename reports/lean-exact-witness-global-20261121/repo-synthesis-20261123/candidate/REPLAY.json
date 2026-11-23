@@ -1,0 +1,64 @@
+{
+  "scope": "Fresh execution of new candidate compiler only; not whole-repository gate or universal Collatz verification",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "audited_declarations": 23,
+  "source_bindings": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JOINT_EDIT_COMPILER.md",
+      "sha256": "9832f769044ccbf33765665f60652a854efee0821d63909a1fb8effb203a06b8"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JointEditCompiler.lean",
+      "sha256": "750fe07635f7f3eec7e60b27c75f34db1f024434fb0d85addf4093ca47ffc1e9"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py",
+      "sha256": "a4dc6e292416c4d52baf1f0b0fd54e2d4a59b9daa3b511320cafdcc5d4922da5"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JointEditCompiler.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.67,
+      "output": "lean-audit.log",
+      "sha256": "cc40ba1b88e38725efdc305a6dc7684363777445878c14078bafb433ac66a8f3"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.204,
+      "output": "normal.json",
+      "sha256": "72d0ad51853ff66e18c5ec5265767a125b211a67954434b47a438bf720b8495b"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.179,
+      "output": "optimized.json",
+      "sha256": "72d0ad51853ff66e18c5ec5265767a125b211a67954434b47a438bf720b8495b"
+    }
+  ],
+  "normal_optimized_identical": true
+}

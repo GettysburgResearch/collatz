@@ -1,0 +1,8 @@
+import Collatz.WitnessLengthSeparation
+
+#print axioms CollatzWitnessLengthSeparation.four_step_input
+#print axioms CollatzWitnessLengthSeparation.exact_clocks
+#print axioms CollatzWitnessLengthSeparation.output_prefix_and_tail
+#print axioms CollatzWitnessLengthSeparation.output_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.tuple_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.no_input_length_bound

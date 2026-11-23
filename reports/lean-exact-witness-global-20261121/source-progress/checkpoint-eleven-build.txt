@@ -1,0 +1,18 @@
+ℹ [15/41] Replayed Collatz.UnboundedGapReset
+info: Collatz/UnboundedGapReset.lean:410:0: 'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:411:0: 'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:412:0: 'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:413:0: 'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms
+info: Collatz/UnboundedGapReset.lean:414:0: 'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:415:0: 'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:416:0: 'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:417:0: 'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [33/41] Built Collatz.BinaryRunForcing (1.1s)
+✔ [34/41] Built Collatz.RetainedEvenBoundary (1.6s)
+✔ [35/41] Built Collatz.PsiOddValuations (1.0s)
+✔ [36/41] Built Collatz.RetainedEvenReset (2.1s)
+✔ [37/41] Built Collatz.SourceGreenCoefficient (2.1s)
+✔ [38/41] Built Collatz.MergerDenominatorClear (2.5s)
+✔ [39/41] Built Collatz.PsiEvenHeadFour (3.7s)
+✔ [40/41] Built Collatz (250ms)
+Build completed successfully (41 jobs).

@@ -1,0 +1,28 @@
+✔ [2/21] Built Collatz.ReverseBasin146 (5.9s)
+✔ [3/21] Built Collatz.Closure (1.2s)
+✔ [4/21] Built Collatz.WitnessEnergy (599ms)
+✔ [5/21] Built Collatz.Shadow (1.0s)
+✔ [6/21] Built Collatz.Witness (1.1s)
+✔ [7/21] Built Collatz.DirectedInduction (1.4s)
+✔ [8/21] Built Collatz.SourceWitness (496ms)
+✔ [9/21] Built Collatz.PsiCompletion (999ms)
+✔ [10/21] Built Collatz.GapMultiset (753ms)
+✔ [11/21] Built Collatz.ResetFamily (769ms)
+✔ [12/21] Built Collatz.HighGapPump (1.2s)
+✔ [13/21] Built Collatz.LowGapLoops (1.0s)
+✔ [14/21] Built Collatz.LowGapPump (977ms)
+ℹ [15/21] Built Collatz.UnboundedGapReset (3.5s)
+info: Collatz/UnboundedGapReset.lean:410:0: 'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:411:0: 'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:412:0: 'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:413:0: 'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms
+info: Collatz/UnboundedGapReset.lean:414:0: 'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:415:0: 'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:416:0: 'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedGapReset.lean:417:0: 'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [16/21] Built Collatz.GapComparison (295ms)
+✔ [17/21] Built Collatz.LowGapToPsi (513ms)
+✔ [18/21] Built Collatz.GapHandoffs (685ms)
+✔ [19/21] Built Collatz.AsymmetricPsiReset (1.1s)
+✔ [20/21] Built Collatz (188ms)
+Build completed successfully (21 jobs).

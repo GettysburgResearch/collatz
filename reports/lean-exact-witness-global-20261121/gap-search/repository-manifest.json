@@ -1,0 +1,20 @@
+{
+  "status": "EXACT CONDITIONAL GAP REWRITES; FULL CLOSURE OPEN",
+  "scope": "These arithmetic generators and their source/target splice implementations are not formally verified in Lean; the generic energy inequality is available in Collatz.WitnessEnergy.",
+  "common_gap_energy_base": 15,
+  "repository_file_sha256": {
+    "reports/lean-exact-witness-global-20261121/gap-search/gap-dispatch-receipt.json": "81e70d3ba847d7f0c5e5a1489c88bfe332e8d7317b72588d9e746367e971eabb",
+    "reports/lean-exact-witness-global-20261121/gap-search/high-gap-provenance.json": "dda2dbbb9752e69efa0f7ece47380247a8609eb6a80d8b4e6b2588b9678edd44",
+    "reports/lean-exact-witness-global-20261121/gap-search/high-gap-receipt.json": "3768abe3e5f46e3f064957e924219be14fd805a815f5a1db9991575fb5563743",
+    "research/lean-exact-witness-global-20261121/gap-search/high/README.md": "f72fcc5c7da386932a764abf6dcb2e8347b00c8712f01a429bbebf3ba50c4e62",
+    "research/lean-exact-witness-global-20261121/gap-search/high/high_gap_source_zero.py": "f1a2e42b372674d054e9209149628d76ce28b029a4d644bddbdb8d7f7bf87f92",
+    "research/lean-exact-witness-global-20261121/gap-search/low/LOW_GAP_DISPATCH.md": "58c8648909aa647271b5e0ab230a8ca6fd856e53fc029ad1989fddb1c02d3952",
+    "research/lean-exact-witness-global-20261121/gap-search/low/gap-frontier288.json": "371b10bdf207c98793c70cc2d8c8db058b0a374d9df716d417544a7c3eb05c07",
+    "research/lean-exact-witness-global-20261121/gap-search/low/source_gap_frontier.py": "774fd45c6c10533731c01634d5a4a86262e6b1b17935a9df4c50efc8249ec4d0",
+    "research/lean-exact-witness-global-20261121/gap-search/low/check_gap_dispatch.py": "0c5540deca7e6452cdaf1f7af87cdf3f07266894a79392028832c1ebebbae3c5",
+    "reports/lean-exact-witness-global-20261121/gap-search/low-gap-independent-audit.json": "867f5ac320a16aed2133297b2e0c60fbc6d0d3e3bdf717f86d16fcc90e43cf33"
+  },
+  "relocation": "The copied original receipts retain hashes of their staged documentation. This manifest records the repository versions after moving reproduction outputs to /tmp. No mathematical source or generated record was changed.",
+  "independent_low_replay": "87 frozen rows independently replayed without importing the author generator; all 69 conditional rules satisfy A*C^delta+B>0 for all delta>=0 at both C=7 and C=15. Finite entrance exceptions remain explicit.",
+  "high_formula_review_scope": "Independent mathematical review of the affine identities, integrality guards, final-valuation normalization, finite grammar pruning and C15 inequality. This review does not claim a second complete enumeration."
+}

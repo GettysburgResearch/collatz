@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-finite-source-boundary/v1",
+  "normalization": "shortcut T; original target t=2B+1",
+  "results": [
+    {
+      "target": 2047,
+      "floor": 1023,
+      "scope": "minimum over all complete capturing certificates; no target convergence claim",
+      "retained_vertices": 439,
+      "retained_max_first_hit_clock": 37,
+      "boundary_sources": 140,
+      "same_minimum_grade_sources": [
+        1092
+      ],
+      "selected": {
+        "source": 1092,
+        "initial_even": 2,
+        "odd_source": 273,
+        "gaps": [
+          2,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          4
+        ],
+        "grade_descending": [
+          8,
+          6,
+          6,
+          6,
+          6,
+          5,
+          4,
+          4,
+          2
+        ],
+        "ordinary_first_hit_clock": 23
+      },
+      "graph_sha256": "738cd8b0460a049169a0f72df58dc3ffc4dcf2eed64e91e0c74681981a682bf9",
+      "graph_sound_and_inverse_closed": true,
+      "all_first_hit_identities_checked": 140
+    },
+    {
+      "target": 3711,
+      "floor": 1855,
+      "scope": "minimum over all complete capturing certificates; no target convergence claim",
+      "retained_vertices": 751,
+      "retained_max_first_hit_clock": 46,
+      "boundary_sources": 243,
+      "same_minimum_grade_sources": [
+        2184
+      ],
+      "selected": {
+        "source": 2184,
+        "initial_even": 3,
+        "odd_source": 273,
+        "gaps": [
+          2,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          4
+        ],
+        "grade_descending": [
+          8,
+          7,
+          6,
+          6,
+          6,
+          6,
+          4,
+          4,
+          2
+        ],
+        "ordinary_first_hit_clock": 24
+      },
+      "graph_sha256": "ab8711e5a30dfe267782a93c8fde186e8c5c7488a1c04b7cede0ad38bcaca916",
+      "graph_sound_and_inverse_closed": true,
+      "all_first_hit_identities_checked": 243
+    }
+  ],
+  "controls": {
+    "rejected": [
+      "missing legal predecessor",
+      "false first-hit clock",
+      "vertex outside floor"
+    ],
+    "count": 3
+  }
+}

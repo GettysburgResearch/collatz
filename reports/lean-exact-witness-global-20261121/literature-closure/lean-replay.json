@@ -1,0 +1,165 @@
+{
+  "schema": "collatz-literature-closure-lean/v1",
+  "base_commit": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "new_public_theorems": 12,
+  "commands": [
+    {
+      "name": "multiplier-strict",
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Collatz/MultiplierTransport.olean",
+        "Collatz/MultiplierTransport.lean"
+      ],
+      "exit_code": 0,
+      "log": "multiplier-strict.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "multiplier-audit",
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/lean",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "AuditMultiplierTransport.lean"
+      ],
+      "exit_code": 0,
+      "log": "multiplier-audit.log",
+      "log_sha256": "8ba739ee86473f54cc1e8dac29b3e0d64ad2245bd5a592d9adaa9afaa8f23668"
+    },
+    {
+      "name": "source-tail-strict-audit",
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/literature-closure/triadic",
+      "command": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "SourceTailPullback.lean"
+      ],
+      "exit_code": 0,
+      "log": "source-tail-strict-audit.log",
+      "log_sha256": "e1fc0c49e1025bfdca9a64f1960932aab063681c696b14e85f93dfa5960063fa"
+    }
+  ],
+  "axioms": [
+    {
+      "theorem": "CollatzMultiplierTransport.merger_clock_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzMultiplierTransport.no_uniform_merger_clock",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.pullNumerator_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.pullNumerator_three_unit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.pullNumerator_head_parity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.pullNumerator_endpoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.liftNumerator_zero",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.liftNumerator_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.liftNumerator_three_unit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.source_tail_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.source_tail_three_unit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzSourceTailPullback.terminal_cycle_credit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/MultiplierTransport.lean",
+      "sha256": "317dc5f78d75a25605032a2cb327a1e28193c79919342ce58a445512ef66f725"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditMultiplierTransport.lean",
+      "sha256": "294d2b9937104b3b605f903aa4470dc25ef5de70a98c26bee34afef094c19b66"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SourceTailPullback.lean",
+      "sha256": "06fd6dd82aef57efdbbef8e602c408c633d645edfcf1d72afc7025a360ff78fb"
+    }
+  ],
+  "scope": "Two new finite modules. Source-tail complete-source interpretation and denominator-exhaustion theorem remain written mathematics; no full Collatz theorem is claimed."
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "collatz-high-variance-files/v1",
+  "parent": "0444986571f09f302cb3687b4bba3552600e4119",
+  "files": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 49729,
+      "sha256": "bf87908122b9efa94475a3c402f6b75a71c66fbaed385be6f405c02c941ca156"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "bytes": 18287,
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "bytes": 24414,
+      "sha256": "d47a77884d979d99a0580d6d34f1f8ebc1e2e62a92fa3833f8fd3ce06f080cfc"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ARITHMETIC.md",
+      "bytes": 23794,
+      "sha256": "9d9d2fa408c68e497c7497477befcc2ff5414ff1214d7d6381129e374db448c2"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/finite_source_boundary.py",
+      "bytes": 6141,
+      "sha256": "01a370c24a21dc95e05746f0689cfaa4428f90df980278ded9e82a10cf22447e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/arithmetic_carry_controls.py",
+      "bytes": 4024,
+      "sha256": "e6012821569b50444a9c814fb0f7e535ed21f105c42a5b10205cca899828314a"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/FiniteSourceBoundary.lean",
+      "bytes": 7248,
+      "sha256": "9e456d32b4015323542f2741b6662bd9160709c9018734628f15f906afe2f051"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditFiniteSourceBoundary.lean",
+      "bytes": 415,
+      "sha256": "03e4e328999e200a27f300494e5616bfa469c233fa3a4fda74d865a2b3a36a69"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+      "bytes": 1390,
+      "sha256": "d9a4ef775e0349c3f1ef94bd20d372f38706e92422aea6939911573fa1ae7e94"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+      "bytes": 21131,
+      "sha256": "37a424ccdc767ad58f20d90c1cf7360404410ac82ce9a118ce0b0eb603233599"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/README.md",
+      "bytes": 6236,
+      "sha256": "cf895991df80c56685821de03f56f2784363ccfabe0cb8a5f1f411beb8db8275"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/REVIEW_ARITHMETIC.md",
+      "bytes": 2949,
+      "sha256": "f6f271c24461d3ff81488a5e4fd8b313af30205b90fb9dbd7eba5c7ac2e92a72"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/REVIEW_ESCAPE.md",
+      "bytes": 8637,
+      "sha256": "17ddf5a4a98031208cd468ee4695783406e8f2d057be90343fedeeed8f561e1f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/REVIEW_WITNESS.md",
+      "bytes": 2916,
+      "sha256": "a9ec34d425a980699fd63af88b028f6e70614a6e2979015105785f7d29c687fc"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/SOURCES.json",
+      "bytes": 6567,
+      "sha256": "e44bcf83df8486f426a9fb2f7adf78a886ca81a88ce8deeb877f97cc50b024fe"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/arithmetic-controls-normal.json",
+      "bytes": 3035,
+      "sha256": "8870f291fb78a94e7ec5f56be7bc73a26afe66b5d436dffdfedc13a628255fd6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/arithmetic-controls-optimized.json",
+      "bytes": 3035,
+      "sha256": "8870f291fb78a94e7ec5f56be7bc73a26afe66b5d436dffdfedc13a628255fd6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/arithmetic-controls-replay.json",
+      "bytes": 1123,
+      "sha256": "abd235607b02fa93453c84ad403f0adb6117c56a02b6754b7648a6da80ee3613"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/checkpoint-fifteen-axioms.txt",
+      "bytes": 534,
+      "sha256": "0130a33b9d4fd6e254dec44ba9d19d38d0ff9348cde1b09179ac2376bde32f7b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/checkpoint-fifteen-build.txt",
+      "bytes": 1296,
+      "sha256": "01749093c7e57c1b170d161bedbc64a1efd2f35b9e3f4982faabafc680f1fd62"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/checkpoint-fifteen-strict.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/checkpoint-fifteen.json",
+      "bytes": 9742,
+      "sha256": "99dcc2cd908b69070f9748f3659fea57808254b20d7f324463204f11bf61cd73"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/dependency-build-transcript.json",
+      "bytes": 1738,
+      "sha256": "50722da177288bac56168aa9d8f33c6ecbb39a140eef46e591e2595ae1b698a2"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/finite-source-boundary-normal.json",
+      "bytes": 2152,
+      "sha256": "03807ef17320be334067848eabdfe13c6ed47b4cc879409688659dc0b7ad7f62"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/finite-source-boundary-optimized.json",
+      "bytes": 2152,
+      "sha256": "03807ef17320be334067848eabdfe13c6ed47b4cc879409688659dc0b7ad7f62"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/high-variance/finite-source-boundary-replay.json",
+      "bytes": 1364,
+      "sha256": "5abec01e7a6d299db2c2115e3714a31b751496cf2ccdc25bb8c990b8b44ed95d"
+    }
+  ]
+}

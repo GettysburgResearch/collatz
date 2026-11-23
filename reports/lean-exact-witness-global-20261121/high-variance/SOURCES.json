@@ -1,0 +1,128 @@
+{
+  "schema": "collatz-high-variance-source-snapshot/v1",
+  "date": "2026-11-23",
+  "parent": "0444986571f09f302cb3687b4bba3552600e4119",
+  "head_metadata": {
+    "175": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+    "176": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+    "177": "0444986571f09f302cb3687b4bba3552600e4119",
+    "178": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+    "180": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+    "183": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+    "185": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+    "186": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+  },
+  "selected_sources": [
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/NONLOCAL_SURPLUS_REPAIR_ATTEMPT.md",
+      "sha256": "4e47174309ed0253458c7c1ad9e5ae20befd83e9c587616c6a3b2a048e31fb42",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/UNEQUAL_DEPTH_SIBLING_ATTEMPT.md",
+      "sha256": "50ee651b7cf783acccb6ea877a776a3b90302eb9966ecdcad36f65cce9dc34cb",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md",
+      "sha256": "7bada4db374c4150e59421bf36b9a829f58cd172a4e6211af5ef2faba39cadb6",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/EFFECTIVE_RUN_OCCUPATION.md",
+      "sha256": "911d73f4b1ebb18b2046b999124707e8c5566fe2853729c0bacd3e14b343cea4",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/LOGARITHMIC_SPARSE_RETURN_DESCENT.md",
+      "sha256": "086358d37609522226c5f585a07ecb2fff3e9e82e80c8289adfcf9bb7bd2725b",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/WHOLE_SOURCE_DEBT_ATTEMPT.md",
+      "sha256": "2c3ae41c57d5a1eb24e88cdd6343171224f08495abfb325ed9f42fa1582cb0de",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 178,
+      "commit": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "path": "research/whole-repo-synthesis-20261122/phase/EFFECTIVE_PHASE_AND_RUNS.md",
+      "sha256": "41aa50e507b490f14c1c483237f37a76e5b55a955f8e100c135f5d03edea273f",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 178,
+      "commit": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "path": "research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md",
+      "sha256": "7879c03d9df135e715e9b1bba517f1f6bde3a546245332569774232eb0f277ac",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/LEGAL_DESCENT.md",
+      "sha256": "32c2bf30b863fa78eafc33f3d7366b626e1382094241664e7c4cfc40802f8fb8",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/SIBLING_MASS.md",
+      "sha256": "91f150e225fbe1c8c714792557714c35ffbf2328fd46094cfbba60413cfb6f8b",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/CANONICAL_CHARGE.md",
+      "sha256": "979d6be5c4345489c3a71b1e1696ce60bb675d9000bc0800a6cb4ec04557566c",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "scope": "Selected mathematical interface inspected; no whole-PR acceptance or dependency rebuild asserted"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/pdf/math/0509175",
+      "version": "v2, 2006-08-09",
+      "used": "Lagarias–Soundararajan, Lemma 5.3 equation (5.11), reproducing Rhin exponent7.616; no stochastic-seed theorem used",
+      "scope": "Primary statement read; Rhin original proof not reconstructed"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1312.5969",
+      "version": "v3",
+      "used": "Thomsen Theorem4.4 and introduction: nonpositive-pressure conformal existence can be dissipative",
+      "scope": "Hypothesis/application check; no exclusion theorem imported"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1403.1635",
+      "used": "Guzman–Klivans M-matrix energy and z-superstable representative theorem",
+      "scope": "Primary definitions and statements inspected by arithmetic lane; all new Collatz algebra reconstructed directly"
+    }
+  ],
+  "status": "Exploratory closing attacks; full Collatz, original residue implication and FloorIntervalStep remain OPEN"
+}

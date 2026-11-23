@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-lean-exact-witness-build/v1",
+  "lean_version": "4.34.1",
+  "commands": [
+    {
+      "command": "lake build",
+      "exit_code": 0,
+      "output": "checkpoint-two-build.txt"
+    },
+    {
+      "command": "lake env lean Audit.lean",
+      "exit_code": 0,
+      "output": "checkpoint-two-axioms.txt"
+    }
+  ],
+  "scope": "All science modules through ResetFamily; exact file hashes below. Does not prove Collatz or the residue implication.",
+  "source_files_sha256": {
+    "Audit.lean": "7c00075ea9965e1e7586e391be1c1174c780a12e594d202205e6f5bcafb53354",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz.lean": "64c61389304e3d7b13ce7738815e9456b8afae4fe666d32428b10b09162b8012"
+  },
+  "axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx_observed": false
+}

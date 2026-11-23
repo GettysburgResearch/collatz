@@ -1,0 +1,35 @@
+{
+  "scope": "Precisely inspected inputs; no imported universal candidate-existence claim",
+  "sources": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/FINITE_DUAL_RECOGNITION.md",
+      "pr": 177,
+      "sha": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "use": "All-time triadic compatibility forces convergence; inherited finite theorem only, not algorithm runtime"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/EXACT_CANDIDATE_RIGIDITY.md",
+      "pr": 176,
+      "sha": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "use": "Forced first crossing and sign classification; avoids duplicating the prior exact-rigidity formalization"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CARRY_CONSTRUCTION_ATTACK.md",
+      "pr": 176,
+      "sha": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "use": "Existing positive reset telescope and negative fixed-denominator product; new note instead cancels denominator factors at every actual step"
+    },
+    {
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "pr": 178,
+      "sha": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "use": "Existing all-candidate F-weight optimization and separable-weight restriction; new recognizer changes acceptance to exact first crossing"
+    },
+    {
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "pr": 178,
+      "sha": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "use": "Read for overlap; no general-odd-denominator theorem imported"
+    }
+  ]
+}

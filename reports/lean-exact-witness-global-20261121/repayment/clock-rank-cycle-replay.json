@@ -1,0 +1,277 @@
+{
+  "cofinal_rank_reset": {
+    "child_source": 77,
+    "highest_changed_grade": 21,
+    "literal_preserved_suffix": [],
+    "parent_source": 1024
+  },
+  "conclusion": "The two unrestricted rule families contain a directed cycle.",
+  "fixed_target": 73,
+  "programs": [
+    {
+      "first_hitting_clock": 16,
+      "grades": [
+        6,
+        6,
+        2,
+        4,
+        6,
+        8
+      ],
+      "initial_even_run": 0,
+      "odd_gaps": [
+        3,
+        3,
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        77,
+        29,
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        77,
+        116,
+        58,
+        29,
+        44,
+        22,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 77
+    },
+    {
+      "first_hitting_clock": 15,
+      "grades": [
+        5,
+        6,
+        2,
+        4,
+        6,
+        8
+      ],
+      "initial_even_run": 2,
+      "odd_gaps": [
+        3,
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        29,
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        116,
+        58,
+        29,
+        44,
+        22,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 116
+    },
+    {
+      "first_hitting_clock": 14,
+      "grades": [
+        9,
+        2,
+        4,
+        6,
+        8
+      ],
+      "initial_even_run": 4,
+      "odd_gaps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        11,
+        17,
+        13,
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        176,
+        88,
+        44,
+        22,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 176
+    },
+    {
+      "first_hitting_clock": 13,
+      "grades": [
+        9,
+        4,
+        6,
+        8
+      ],
+      "initial_even_run": 4,
+      "odd_gaps": [
+        2,
+        3,
+        4
+      ],
+      "odd_path": [
+        17,
+        13,
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        272,
+        136,
+        68,
+        34,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 272
+    },
+    {
+      "first_hitting_clock": 12,
+      "grades": [
+        11,
+        6,
+        8
+      ],
+      "initial_even_run": 5,
+      "odd_gaps": [
+        3,
+        4
+      ],
+      "odd_path": [
+        13,
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        416,
+        208,
+        104,
+        52,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 416
+    },
+    {
+      "first_hitting_clock": 11,
+      "grades": [
+        15,
+        8
+      ],
+      "initial_even_run": 7,
+      "odd_gaps": [
+        4
+      ],
+      "odd_path": [
+        5,
+        1
+      ],
+      "ordinary_trajectory": [
+        640,
+        320,
+        160,
+        80,
+        40,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 640
+    },
+    {
+      "first_hitting_clock": 10,
+      "grades": [
+        21
+      ],
+      "initial_even_run": 10,
+      "odd_gaps": [],
+      "odd_path": [
+        1
+      ],
+      "ordinary_trajectory": [
+        1024,
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "source": 1024
+    }
+  ],
+  "source_clock_edges": 6
+}

@@ -1,0 +1,196 @@
+{
+  "scope": "Bindings for all other new or modified files in the universal-step checkpoint; excludes this manifest to avoid self-reference.",
+  "parent_remote_commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+  "entries": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/README.md",
+      "sha256": "c5b1c0d90b5411eb74678a4a7c77531a4aa6f0e4c3afddb2ee75e121b9cc28c4",
+      "bytes": 5264
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/ROOT_REPLAY.json",
+      "sha256": "062d28173633be76f08562a78f0fc651085d9ec20e70bdc95b79faa490fefd78",
+      "bytes": 16907
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/SOURCES.json",
+      "sha256": "01b03517967e0aaa70b0794cbd23a3a6b494c8938d788d95e3517c93db16b03c",
+      "bytes": 3926
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/README.md",
+      "sha256": "8d2b435a3443a47f869473507cff19c3d6e0a2251a4fcbe88e0de6b4afbce947",
+      "bytes": 2225
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/REPLAY.json",
+      "sha256": "ff41539ba8005504f5fd7d05c7a471662fb320931097e2f51b5ede9067360331",
+      "bytes": 2231
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/SOURCES.json",
+      "sha256": "c2130f8588668eebab77609a7f28b2fd7bf5cf6b7910b6991fb748336760380b",
+      "bytes": 1689
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/lean-strict-audit.log",
+      "sha256": "04bb4b185f36edcbd88da4965c9118b27c9e0c492a2ea5c2c03b5a26a068c7f9",
+      "bytes": 1197
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/normal.json",
+      "sha256": "9550626e4789bf8a93c5f5436a3340287c682a85535c26ce4d57e8eb21a393aa",
+      "bytes": 2480
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/candidate/optimized.json",
+      "sha256": "9550626e4789bf8a93c5f5436a3340287c682a85535c26ce4d57e8eb21a393aa",
+      "bytes": 2480
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/cycles/README.md",
+      "sha256": "8a9543f625cb02c949fc45df736a7f5b24d91eed24ebe1d7bbf98ecf3aa9a6cc",
+      "bytes": 3159
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/cycles/execution.json",
+      "sha256": "29621dd342dc26d1b2b4c49c82916de0e89ef18b2b843796555249b90941a7fc",
+      "bytes": 2419
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/cycles/lean-audit.log",
+      "sha256": "1ca1480516e45f2fcfbf298916fe0290f5f9b529b23e6d9a28865d092fe838a8",
+      "bytes": 810
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/cycles/normal.json",
+      "sha256": "24bfed60c4b09720459c850715d1bc2a36903c648c83df818c782afd08c153e1",
+      "bytes": 1507
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/cycles/optimized.json",
+      "sha256": "24bfed60c4b09720459c850715d1bc2a36903c648c83df818c782afd08c153e1",
+      "bytes": 1507
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/CHECKS.json",
+      "sha256": "872a03b01909aceda42a01c07e60dda0d223e7fb055dd7c85d922928599800b5",
+      "bytes": 2229
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/SOURCES.json",
+      "sha256": "72fb95f12c0bedf22c4471f9a858032f589d6e35380505739f9a68f6bbe6d7be",
+      "bytes": 2079
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/balanced-normal.json",
+      "sha256": "cdec8a169b567a59805a99466dd63c98f8d3ecb0d92e83390db73d352c04287d",
+      "bytes": 670
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/balanced-optimized.json",
+      "sha256": "cdec8a169b567a59805a99466dd63c98f8d3ecb0d92e83390db73d352c04287d",
+      "bytes": 670
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/REVIEW_COMMUTATOR_CANDIDATE_LANE.md",
+      "sha256": "f46232e1847bd3d6b1ad36a6e952bb687b9e07750cbd0577812686dd4b26ccd5",
+      "bytes": 4076
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/REVIEW_COORDINATING.md",
+      "sha256": "d484f54e9a1c1fb91fbb6e7683e4342c114b11acc6cd34f2b2ac98815b878689",
+      "bytes": 6210
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/REVIEW_NEGATIVE_CANDIDATE.md",
+      "sha256": "015a46ebb134dd58a08e0a94d6a130718477fa831597e57816c4e21ee018a264",
+      "bytes": 8282
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/REVIEW_ORDINARY_ESCAPE_TRANSPORT.md",
+      "sha256": "f0cfe58585a30f2220defbb354102af72ffe0eb1254983bc0525bd7bdfc1a0b6",
+      "bytes": 9324
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/REVIEW_UNEQUAL_BLOCK_COMMUTATOR.md",
+      "sha256": "ad91a9b4d29f608a994642a0b830b94fd8aac2db229e4558c18d8421350abaa2",
+      "bytes": 5992
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/reviews/escape-independent-controls.json",
+      "sha256": "bee48e742a98b6f8cfe007900aaed926806930b5afbc72bfe3c0d0667a273621",
+      "bytes": 500
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "sha256": "eb48a6512663177d82563a67cfc1b8495c645fac21b8f3c9afd01a14458c76c1",
+      "bytes": 58110
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/README.md",
+      "sha256": "a0c8555e451d22627667f964e2f7d9836aa3e60cc37d44decc7f80934f1426a3",
+      "bytes": 8259
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/NEGATIVE_NUMERATOR_RECOGNITION.md",
+      "sha256": "ff00acf44c7b99eef45baec24a59c76c71777e610c8f103f1dbe997d1176d2eb",
+      "bytes": 12222
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/NegativeCandidate.lean",
+      "sha256": "6f4739e252c100b501dc0a1fbaaf10644631f075e3ff82f497dee2dec7e3b8cd",
+      "bytes": 11480
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/negative_candidate.py",
+      "sha256": "f1995c7e5552044c7e8a73aac48e8a5ad9a2aa9ec6f093d46fed10298a05556a",
+      "bytes": 7854
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/commutator/UNEQUAL_BLOCK_COMMUTATOR.md",
+      "sha256": "2a85e4a68a8ee6b5107b9cbccfc06f5e5bf8295ac2e380353ef9f65d3449ebde",
+      "bytes": 9164
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/commutator/check_unequal_blocks.py",
+      "sha256": "c8358ab7e9f8dbcfd391bd6429be4d99c48897b9889260b94026f7ecf3ac2852",
+      "bytes": 5256
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/BLOCK_CARRY_CAPACITY.md",
+      "sha256": "1998aac23dad7772f335f82d2c236175e923fbe40e091de6ae33c3d7c85795fb",
+      "bytes": 13137
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/BlockMixture.lean",
+      "sha256": "4f7dc5cc1673df8088a3345f62e9f705de61c3fc1eb0166b58b77e5d29f2ec3d",
+      "bytes": 7893
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/block_carry_capacity_check.py",
+      "sha256": "f11207fa0ed4a2e9c444bd8cafebdf5f442643c9b903967b8949f26ceb467aa9",
+      "bytes": 7336
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "sha256": "58f5af3b205fb1ac720593865ea2bcba60fa918c5432f0c1917a467edfa94b9b",
+      "bytes": 7554
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/README.md",
+      "sha256": "d9330054edd89d91cd8d09f7f457fd535eb9716170a86f5e6bfe929651c2bc4b",
+      "bytes": 2471
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/SIBLING_BASIN_COLLAPSE.md",
+      "sha256": "da21d0b98230fd190f318a07e04cd2a3069740c7a7a4eba52594ca4165303db2",
+      "bytes": 11208
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/check_balanced_transport.py",
+      "sha256": "493de415e81b7cef14bbc8cf14f594d1b9c557cf895af6282458c53d85a2b7b8",
+      "bytes": 6407
+    }
+  ]
+}

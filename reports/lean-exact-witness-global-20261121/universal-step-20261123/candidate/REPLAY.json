@@ -1,0 +1,52 @@
+{
+  "audited_public_declarations": 13,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "optimized_byte_identical": true,
+  "runs": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/NegativeCandidate.lean"
+      ],
+      "exit_code": 0,
+      "file": "lean-strict-audit.log",
+      "stderr": "",
+      "stdout_sha256": "04bb4b185f36edcbd88da4965c9118b27c9e0c492a2ea5c2c03b5a26a068c7f9"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/negative_candidate.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "file": "normal.json",
+      "stderr": "",
+      "stdout_sha256": "9550626e4789bf8a93c5f5436a3340287c682a85535c26ce4d57e8eb21a393aa"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/negative_candidate.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "file": "optimized.json",
+      "stderr": "",
+      "stdout_sha256": "9550626e4789bf8a93c5f5436a3340287c682a85535c26ce4d57e8eb21a393aa"
+    }
+  ],
+  "scope": "13 finite Lean declarations and bounded recognizer controls; full Omega completeness is written scope; no universal candidate construction",
+  "source_sha256": {
+    "NEGATIVE_NUMERATOR_RECOGNITION.md": "ff00acf44c7b99eef45baec24a59c76c71777e610c8f103f1dbe997d1176d2eb",
+    "NegativeCandidate.lean": "6f4739e252c100b501dc0a1fbaaf10644631f075e3ff82f497dee2dec7e3b8cd",
+    "negative_candidate.py": "f1995c7e5552044c7e8a73aac48e8a5ad9a2aa9ec6f093d46fed10298a05556a"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "collatz-construction-source-ledger/v1",
+  "date": "2026-11-23",
+  "remote_parent": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+  "local_parent": "1f6c718ce598d83009c8295556b39342353ac8a8",
+  "parent_tree": "9e468ca108726fba529adf7a2d8611e62341274d",
+  "scope": "Four new construction attacks; full Collatz and residue-512 implication remain OPEN.",
+  "lanes": {
+    "descent": "descent/SOURCES.json",
+    "transport": "transport/SOURCES.json",
+    "witness": "witness/SOURCES.json",
+    "germ": "germ/SOURCES.json"
+  },
+  "latest_repository_snapshot": "LATEST_PR_SNAPSHOT.json",
+  "primary_inputs": [
+    {
+      "source": "E. M. Matveev, Izvestiya: Mathematics 64:6 (2000), Corollary 2.3, equations (2.4), (2.6), printed p.1219",
+      "url": "https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf",
+      "application": "Written all-exponent two-power separation; original theorem statement and parameter definitions read by author, root and independent reviewer.",
+      "boundary": "Not re-proved or formalized in Lean; exact finite arithmetic after specialization is executed independently."
+    },
+    {
+      "source": "Antoine Chambert-Loir and Camille Nous, Potentiel et rationalite, arXiv:2305.17210v2, 31 August 2026, Sections 2.7 and 4.1–4.3",
+      "url": "https://arxiv.org/pdf/2305.17210",
+      "application": "Written density-free deflated-germ rationality criterion, with integral-model, all local-realization and positive-game hypotheses explicitly reconstructed.",
+      "boundary": "External primary theorem; no unconditional actual-germ construction or full analytic Lean formalization."
+    }
+  ],
+  "peer_dependencies": [
+    {
+      "pr": 182,
+      "head": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+      "read": "PR metadata/body, complete README, complete RATIONAL_SELECTION.md",
+      "used": "R6-SEL-4 and actual-prefix deflation formula; no import of density-conditioned R6-SEL-5"
+    },
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "read": "PR metadata/body, complete GENERAL_DENSITY_JET.md and FINITE_FILTER_TEST.md",
+      "used": "Earlier multipoint interface, positive-source height bound, finite-filter obstruction"
+    },
+    {
+      "pr": 175,
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "read": "PR metadata and body only",
+      "used": "Orientation; no newly reviewed risk26 theorem imported"
+    }
+  ],
+  "independence": {
+    "descent": "Author macro_selection; root supplied the uniform carry-maximization idea; independent proof and exact-CF review by finite_mass.",
+    "transport": "Author finite_mass; independent review by witness_construction, including the nonempty-set correction for normalized trials.",
+    "witness": "Author witness_construction; independent review, strict Lean rerun and finite checker replay by macro_selection.",
+    "germ": "Author root; independent source, analytic-domain, game and cycle-selection review by finite_mass."
+  },
+  "claim_boundaries": [
+    "An all-length written theorem is distinct from its finite Lean algebraic consumers and finite controls.",
+    "The exact rank/cycle equivalence is not an exclusion of nonstandard positive cycles.",
+    "Projection preserves each root and controls loss but does not construct the required moving-root absolute mass.",
+    "Witness charge excludes the stated homogeneous architectures, not arbitrary numerical mergers or source-dependent certificate transformations.",
+    "The density-free germ package replaces an old density assumption with explicit stronger analytic radius requirements; those bounds are not derived from the old qualitative package."
+  ],
+  "historical_manifests": "Earlier checkpoint manifests retain their original commit-bound meaning. The cumulative index is updated here, so its historical hashes are not claims about this new tree."
+}

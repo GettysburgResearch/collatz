@@ -1,0 +1,66 @@
+{
+  "audit": {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "custom_axioms": false,
+    "public_theorems": 15,
+    "sorryAx": false
+  },
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        ".lake/build/lib/lean/Collatz/SourceGreenCoefficient.olean",
+        "Collatz/SourceGreenCoefficient.lean"
+      ],
+      "elapsed_seconds": 1.911,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "AuditSourceGreenCoefficient.lean"
+      ],
+      "elapsed_seconds": 0.273,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "'CollatzSourceGreenCoefficient.shifted_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.evenDefect_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.evenDefect_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.coefficient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.coefficient_strict_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.coefficient_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.allOdd_count' depends on axioms: [propext, Quot.sound]\n'CollatzSourceGreenCoefficient.allOdd_shifted_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.allOdd_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.even_input_before_large_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceGreenCoefficient.state_pow_two_pred' depends on axioms: [propext, Quot.sound]\n'CollatzSourceGreenCoefficient.allOdd_pow_two_pred' depends on axioms: [propext, Quot.sound]\n'CollatzSourceGreenCoefficient.initial_ascent' depends on axioms: [propext, Quot.sound]\n'CollatzSourceGreenCoefficient.cubic_surplus' depends on axioms: [propext, Quot.sound]\n'CollatzSourceGreenCoefficient.cubic_path_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": {
+    "kernel_checked": "15 public theorems: shifted ordinary path identity, exact coefficient equality/strictness, finite first even input, all-length ascent, cubic surplus and path certificate.",
+    "not_claimed": "Full Collatz convergence, cycle classification, properness of the raw Green weight, or a rank combining all good-drift and smaller-merger moves.",
+    "paper_only": "Infinite real Green series, exact source-capacity budgets and limits, all-s smaller-merger theorem, component-minimum maximum and analytic negative-residual consequences."
+  },
+  "sources": {
+    "research/lean-exact-witness-global-20261121/GLOBAL_GREEN_MERGER.md": {
+      "bytes": 18945,
+      "sha256": "7c002f66a4c5e8b0e58b5645dbf8b6794d53f8ef83654ad2aa1cd3d0d8e9d6a2"
+    },
+    "research/lean-exact-witness-global-20261121/lean/AuditSourceGreenCoefficient.lean": {
+      "bytes": 993,
+      "sha256": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b"
+    },
+    "research/lean-exact-witness-global-20261121/lean/Collatz/SourceGreenCoefficient.lean": {
+      "bytes": 9844,
+      "sha256": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1"
+    }
+  },
+  "status": "PASS: targeted new module and all 15 public theorem audits",
+  "working_directory": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/lean"
+}

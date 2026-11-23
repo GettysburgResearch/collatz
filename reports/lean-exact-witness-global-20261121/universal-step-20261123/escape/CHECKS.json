@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "finite exact table and paired-path checks; infinite theorems remain written mathematics",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/check_balanced_transport.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-O",
+        "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/check_balanced_transport.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "byte_identical_outputs": true,
+  "files": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "sha256": "58f5af3b205fb1ac720593865ea2bcba60fa918c5432f0c1917a467edfa94b9b",
+      "bytes": 7554
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/README.md",
+      "sha256": "e63e9e5e4badde8d434c48b06a1a27e27f73ef3e88145ae5323702ed9c1677e5",
+      "bytes": 2477
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/SIBLING_BASIN_COLLAPSE.md",
+      "sha256": "da21d0b98230fd190f318a07e04cd2a3069740c7a7a4eba52594ca4165303db2",
+      "bytes": 11208
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/check_balanced_transport.py",
+      "sha256": "493de415e81b7cef14bbc8cf14f594d1b9c557cf895af6282458c53d85a2b7b8",
+      "bytes": 6407
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/balanced-normal.json",
+      "sha256": "cdec8a169b567a59805a99466dd63c98f8d3ecb0d92e83390db73d352c04287d",
+      "bytes": 670
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/balanced-optimized.json",
+      "sha256": "cdec8a169b567a59805a99466dd63c98f8d3ecb0d92e83390db73d352c04287d",
+      "bytes": 670
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/universal-step-20261123/escape/SOURCES.json",
+      "sha256": "72fb95f12c0bedf22c4471f9a858032f589d6e35380505739f9a68f6bbe6d7be",
+      "bytes": 2079
+    }
+  ]
+}

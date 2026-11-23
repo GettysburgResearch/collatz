@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "certified_nonzero": 4702,
+    "certified_zero": 76,
+    "cutoff_lengths": 100,
+    "expanding_certified": 532,
+    "literal_steps": 84280,
+    "moving_anchor_certified": 20534,
+    "moving_anchor_edges": 29760,
+    "ordinary_macros": 7440
+  },
+  "failed_strengthening_controls": 5,
+  "schema": "collatz-adaptive-lattice-controls/v1",
+  "scope": "literal finite integer paths and exact rejection controls; no census proof",
+  "source_sha256": {
+    "ADAPTIVE_LATTICE_DESCENT.md": "c03c84c3288ea50eda3b2fa48d29734276eaf4ace59e286393b8af98fd7f09d4",
+    "AdaptiveLattice.lean": "fbfada80040f436a0cae32c3c9c7baf57c2280aa6fa8d0acd49e3627b4c33885",
+    "check_adaptive_lattice.py": "1993a37ce550c73feb32b407e938eea454059c84ff0b08b86188ef95485fd676"
+  },
+  "status": "PASS"
+}

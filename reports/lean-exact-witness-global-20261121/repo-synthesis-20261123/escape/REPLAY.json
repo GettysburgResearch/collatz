@@ -1,0 +1,69 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BasinPacking.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "output_file": "lean-strict-audit.log",
+      "output_sha256": "59781fb537fac7b1d0da73eb505c005f4ca06f3b83cb4e6f37ea2eaa35f05d03",
+      "seconds": 2.562,
+      "stderr": "",
+      "stdout": "'CollatzBasinPacking.two_hits_comparable' depends on axioms: [propext]\n'CollatzBasinPacking.descent_forces_earlier_hit' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_positive' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_height' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_iterate_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.iterate_on_ray' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.off_ray_roots_incomparable' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.predecessor_roots_unique' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.finite_predecessor_basins_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.touched_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.untouched_mass_le_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.finite_source_cutoff_with_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.finite_source_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_packing.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output_file": "normal.json",
+      "output_sha256": "a3214e38af388a1b2a6c41fcf65853c763d19e809f7ec4764bb5425866a52b2a",
+      "seconds": 0.374,
+      "stderr": "",
+      "stdout": "{\n  \"abstract_sharp_cases\": 64,\n  \"basin_minima\": [\n    [\n      2645,\n      783\n    ],\n    [\n      2005,\n      2005\n    ],\n    [\n      3029,\n      2019\n    ],\n    [\n      4565,\n      3043\n    ],\n    [\n      6869,\n      4287\n    ],\n    [\n      10325,\n      6883\n    ],\n    [\n      7765,\n      7765\n    ],\n    [\n      5845,\n      3463\n    ],\n    [\n      8789,\n      5859\n    ],\n    [\n      6613,\n      6613\n    ],\n    [\n      9941,\n      6627\n    ],\n    [\n      14933,\n      9955\n    ]\n  ],\n  \"coarse_minimum_exponent\": \"799/800\",\n  \"descending_first_hit_cases\": 86,\n  \"false_minimum_control\": [\n    1566,\n    2645,\n    783,\n    4\n  ],\n  \"finite_cutoff_cases\": 192,\n  \"finite_weight_pool_size\": 115,\n  \"first_hit_cases\": 145,\n  \"integer_height_cases\": 145,\n  \"literal_parity_carry_cases\": 13312,\n  \"no_descent_capacity_cases\": 13,\n  \"original_odd_source\": 41,\n  \"rejected_controls\": 3,\n  \"retained_sources\": 115,\n  \"schema\": \"collatz-basin-packing-finite-controls/v1\",\n  \"scope\": \"finite actual convergent examples, exact source accounting, and abstract sharp controls; no infinite-orbit validation\",\n  \"sibling_roots\": [\n    2645,\n    2005,\n    3029,\n    4565,\n    6869,\n    10325,\n    7765,\n    5845,\n    8789,\n    6613,\n    9941,\n    14933\n  ],\n  \"source_bound\": 14933,\n  \"square_pressure_rearrangement_exponent\": \"1599/799\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_packing.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output_file": "optimized.json",
+      "output_sha256": "a3214e38af388a1b2a6c41fcf65853c763d19e809f7ec4764bb5425866a52b2a",
+      "seconds": 0.442,
+      "stderr": "",
+      "stdout": "{\n  \"abstract_sharp_cases\": 64,\n  \"basin_minima\": [\n    [\n      2645,\n      783\n    ],\n    [\n      2005,\n      2005\n    ],\n    [\n      3029,\n      2019\n    ],\n    [\n      4565,\n      3043\n    ],\n    [\n      6869,\n      4287\n    ],\n    [\n      10325,\n      6883\n    ],\n    [\n      7765,\n      7765\n    ],\n    [\n      5845,\n      3463\n    ],\n    [\n      8789,\n      5859\n    ],\n    [\n      6613,\n      6613\n    ],\n    [\n      9941,\n      6627\n    ],\n    [\n      14933,\n      9955\n    ]\n  ],\n  \"coarse_minimum_exponent\": \"799/800\",\n  \"descending_first_hit_cases\": 86,\n  \"false_minimum_control\": [\n    1566,\n    2645,\n    783,\n    4\n  ],\n  \"finite_cutoff_cases\": 192,\n  \"finite_weight_pool_size\": 115,\n  \"first_hit_cases\": 145,\n  \"integer_height_cases\": 145,\n  \"literal_parity_carry_cases\": 13312,\n  \"no_descent_capacity_cases\": 13,\n  \"original_odd_source\": 41,\n  \"rejected_controls\": 3,\n  \"retained_sources\": 115,\n  \"schema\": \"collatz-basin-packing-finite-controls/v1\",\n  \"scope\": \"finite actual convergent examples, exact source accounting, and abstract sharp controls; no infinite-orbit validation\",\n  \"sibling_roots\": [\n    2645,\n    2005,\n    3029,\n    4565,\n    6869,\n    10325,\n    7765,\n    5845,\n    8789,\n    6613,\n    9941,\n    14933\n  ],\n  \"source_bound\": 14933,\n  \"square_pressure_rearrangement_exponent\": \"1599/799\",\n  \"status\": \"PASS\"\n}\n"
+    }
+  ],
+  "lean": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "optimized_output_identical": true,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "collatz-basin-packing-author-replay/v1",
+  "scope": "actual finite compiler and arithmetic executions; written infinite conclusions remain distinct",
+  "source_sha256": {
+    "BASIN_PRESSURE_PACKING.md": "257443f6c0800ab42e9f08c79c1daebc4d97c894833add6941b46389778349d2",
+    "BasinPacking.lean": "cf972db86c532ca2a8a68bcca835c965b6d7329383d7d12a24e7958fa7daf0d1",
+    "SPARSE_BASIN_MINIMA.md": "65f1a0698cb3a17a8eb52ddab42f6b548be5bb921872f71c4d9cb00369ccbeec",
+    "check_basin_packing.py": "8689fbae338ab5eca8a2b38959edc33fb906a237d2d11d3493aedeea753b4985"
+  }
+}

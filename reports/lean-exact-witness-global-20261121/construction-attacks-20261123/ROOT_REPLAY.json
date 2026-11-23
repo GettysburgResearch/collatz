@@ -1,0 +1,347 @@
+{
+  "scope": "Fresh root executions of four new Lean modules and four normal/optimized exact finite checker pairs. No old whole-suite replay and no claim to formalize the external analytic theorems.",
+  "started_utc": "2026-11-23T07:06:39.199558+00:00",
+  "completed_utc": "2026-11-23T07:11:10.881995+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "reused_dependency_sha256": {
+    "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean": "92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339",
+    "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/AdaptiveLattice.lean": "fbfada80040f436a0cae32c3c9c7baf57c2280aa6fa8d0acd49e3627b4c33885",
+    "/tmp/collatz-template-selector/LatticeDescent.olean": "39ff01b10cafb2838c6dc7a4e91f297b5505a498d239d7b48e9da2067d85c376",
+    "/tmp/collatz-template-selector/AdaptiveLattice.olean": "8521888f1a78191dd2944c0be1c0bd3958709b96f776cff8989336a4c0397dcf"
+  },
+  "dependency_build_evidence": "descent/REPLAY.json records the fresh author rebuilds; root replay reuses these exact artifacts.",
+  "audited_new_declarations": 46,
+  "recorded_executions": 12,
+  "lanes": {
+    "descent": {
+      "source_sha256": {
+        "TemplateSelection.lean": "1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715",
+        "TEMPLATE_SELECTION.md": "90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2",
+        "check_template_selection.py": "12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798"
+      },
+      "audited_declarations": 13,
+      "audited_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "normal_optimized_byte_equal": true,
+      "executions": [
+        {
+          "name": "lean",
+          "argv": [
+            "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+            "env",
+            "lean",
+            "-j",
+            "1",
+            "-DwarningAsError=true",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/TemplateSelection.lean"
+          ],
+          "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "LEAN_PATH": "/tmp/collatz-template-selector"
+          },
+          "started_utc": "2026-11-23T07:06:39.201087+00:00",
+          "elapsed_seconds": 3.883659,
+          "exit_code": 0,
+          "stdout": "'CollatzTemplateSelection.carry_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.fixed_center_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.contracting_window_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.primitive_displacement_ne_zero' depends on axioms: [propext, Quot.sound]\n'CollatzTemplateSelection.nonintegral_rank_above_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.ordinary_anchor_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.ordinary_nonintegral_rank_above_source' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzTemplateSelection.finite_template_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.word_multiplier_bound' depends on axioms: [propext, Quot.sound]\n'CollatzTemplateSelection.word_carry_bound' depends on axioms: [propext, Quot.sound]\n'CollatzTemplateSelection.template_sublevel_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.terminal_word_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTemplateSelection.terminal_source_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "stdout_sha256": "007cff66128ff0ce63b73ef8671eb8aada0742e94a6359b5f183cbe963a7ff7d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "normal",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/check_template_selection.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "LEAN_PATH": "/tmp/collatz-template-selector"
+          },
+          "started_utc": "2026-11-23T07:06:43.084774+00:00",
+          "elapsed_seconds": 0.08869,
+          "exit_code": 0,
+          "stdout": "{\n  \"continued_fraction\": {\n    \"exponent_cutoff\": 1000000000000,\n    \"log_series_terms\": 128,\n    \"rows\": [\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 1,\n        \"numerator\": 1,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"exact base gap; all multiples covered by power lifting\",\n        \"denominator\": 1,\n        \"numerator\": 2,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 2,\n        \"numerator\": 3,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > (3/2)*2^-b\",\n        \"denominator\": 5,\n        \"numerator\": 8,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 12,\n        \"numerator\": 19,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > (3/2)*2^-b\",\n        \"denominator\": 41,\n        \"numerator\": 65,\n        \"partial_quotient\": 3,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 53,\n        \"numerator\": 84,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 306,\n        \"numerator\": 485,\n        \"partial_quotient\": 5,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 665,\n        \"numerator\": 1054,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 15601,\n        \"numerator\": 24727,\n        \"partial_quotient\": 23,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 31867,\n        \"numerator\": 50508,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 79335,\n        \"numerator\": 125743,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 111202,\n        \"numerator\": 176251,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 190537,\n        \"numerator\": 301994,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 10590737,\n        \"numerator\": 16785921,\n        \"partial_quotient\": 55,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 10781274,\n        \"numerator\": 17087915,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 53715833,\n        \"numerator\": 85137581,\n        \"partial_quotient\": 4,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 171928773,\n        \"numerator\": 272500658,\n        \"partial_quotient\": 3,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 225644606,\n        \"numerator\": 357638239,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 397573379,\n        \"numerator\": 630138897,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 6189245291,\n        \"numerator\": 9809721694,\n        \"partial_quotient\": 15,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 6586818670,\n        \"numerator\": 10439860591,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 65470613321,\n        \"numerator\": 103768467013,\n        \"partial_quotient\": 9,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 137528045312,\n        \"numerator\": 217976794617,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 753110839881,\n        \"numerator\": 1193652440098,\n        \"partial_quotient\": 5,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 5409303924479,\n        \"numerator\": 8573543875303,\n        \"partial_quotient\": 7,\n        \"upper\": true\n      }\n    ],\n    \"small_exponents\": [\n      {\n        \"gap\": 1,\n        \"length\": 2,\n        \"p\": 1\n      },\n      {\n        \"gap\": 7,\n        \"length\": 4,\n        \"p\": 2\n      },\n      {\n        \"gap\": 5,\n        \"length\": 5,\n        \"p\": 3\n      },\n      {\n        \"gap\": 47,\n        \"length\": 7,\n        \"p\": 4\n      }\n    ]\n  },\n  \"controls\": {\n    \"integral_center_control\": true,\n    \"rejected_ordinary_inputs\": 2,\n    \"unpadded_two_to_one_budget_rejected\": true,\n    \"zero_control\": true\n  },\n  \"scope\": \"Exact finite CF certificate and ordinary controls; Matveev and the infinite reduction are written inputs, not executed or formalized here.\",\n  \"source_sha256\": {\n    \"TEMPLATE_SELECTION.md\": \"90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2\",\n    \"TemplateSelection.lean\": \"1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715\",\n    \"check_template_selection.py\": \"12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798\"\n  },\n  \"templates\": {\n    \"actual_sources\": 24570,\n    \"contracting_native_window_descents\": 14984,\n    \"contracting_nonintegral_sources\": 19197,\n    \"improving_integral_sources\": 24,\n    \"nonintegral_sources\": 24393,\n    \"words\": 8190\n  },\n  \"terminal_compiler\": {\n    \"ordinary_steps\": 41074,\n    \"padded_short_word\": 1,\n    \"sources\": 1023\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "c4797dfc400a9f7468f25eae163cd93ab945d89af7b99034a17c03005c9231e3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "optimized",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/check_template_selection.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "LEAN_PATH": "/tmp/collatz-template-selector"
+          },
+          "started_utc": "2026-11-23T07:06:43.173506+00:00",
+          "elapsed_seconds": 0.152436,
+          "exit_code": 0,
+          "stdout": "{\n  \"continued_fraction\": {\n    \"exponent_cutoff\": 1000000000000,\n    \"log_series_terms\": 128,\n    \"rows\": [\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 1,\n        \"numerator\": 1,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"exact base gap; all multiples covered by power lifting\",\n        \"denominator\": 1,\n        \"numerator\": 2,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 2,\n        \"numerator\": 3,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > (3/2)*2^-b\",\n        \"denominator\": 5,\n        \"numerator\": 8,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 12,\n        \"numerator\": 19,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > (3/2)*2^-b\",\n        \"denominator\": 41,\n        \"numerator\": 65,\n        \"partial_quotient\": 3,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 53,\n        \"numerator\": 84,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 306,\n        \"numerator\": 485,\n        \"partial_quotient\": 5,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 665,\n        \"numerator\": 1054,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 15601,\n        \"numerator\": 24727,\n        \"partial_quotient\": 23,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 31867,\n        \"numerator\": 50508,\n        \"partial_quotient\": 2,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 79335,\n        \"numerator\": 125743,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 111202,\n        \"numerator\": 176251,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 190537,\n        \"numerator\": 301994,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 10590737,\n        \"numerator\": 16785921,\n        \"partial_quotient\": 55,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 10781274,\n        \"numerator\": 17087915,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 53715833,\n        \"numerator\": 85137581,\n        \"partial_quotient\": 4,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 171928773,\n        \"numerator\": 272500658,\n        \"partial_quotient\": 3,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 225644606,\n        \"numerator\": 357638239,\n        \"partial_quotient\": 1,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 397573379,\n        \"numerator\": 630138897,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 6189245291,\n        \"numerator\": 9809721694,\n        \"partial_quotient\": 15,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 6586818670,\n        \"numerator\": 10439860591,\n        \"partial_quotient\": 1,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 65470613321,\n        \"numerator\": 103768467013,\n        \"partial_quotient\": 9,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 137528045312,\n        \"numerator\": 217976794617,\n        \"partial_quotient\": 2,\n        \"upper\": true\n      },\n      {\n        \"certificate\": \"lower convergent; irrelevant to Q>P\",\n        \"denominator\": 753110839881,\n        \"numerator\": 1193652440098,\n        \"partial_quotient\": 5,\n        \"upper\": false\n      },\n      {\n        \"certificate\": \"Lambda > 2^-100 > (3/2)*2^-b\",\n        \"denominator\": 5409303924479,\n        \"numerator\": 8573543875303,\n        \"partial_quotient\": 7,\n        \"upper\": true\n      }\n    ],\n    \"small_exponents\": [\n      {\n        \"gap\": 1,\n        \"length\": 2,\n        \"p\": 1\n      },\n      {\n        \"gap\": 7,\n        \"length\": 4,\n        \"p\": 2\n      },\n      {\n        \"gap\": 5,\n        \"length\": 5,\n        \"p\": 3\n      },\n      {\n        \"gap\": 47,\n        \"length\": 7,\n        \"p\": 4\n      }\n    ]\n  },\n  \"controls\": {\n    \"integral_center_control\": true,\n    \"rejected_ordinary_inputs\": 2,\n    \"unpadded_two_to_one_budget_rejected\": true,\n    \"zero_control\": true\n  },\n  \"scope\": \"Exact finite CF certificate and ordinary controls; Matveev and the infinite reduction are written inputs, not executed or formalized here.\",\n  \"source_sha256\": {\n    \"TEMPLATE_SELECTION.md\": \"90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2\",\n    \"TemplateSelection.lean\": \"1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715\",\n    \"check_template_selection.py\": \"12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798\"\n  },\n  \"templates\": {\n    \"actual_sources\": 24570,\n    \"contracting_native_window_descents\": 14984,\n    \"contracting_nonintegral_sources\": 19197,\n    \"improving_integral_sources\": 24,\n    \"nonintegral_sources\": 24393,\n    \"words\": 8190\n  },\n  \"terminal_compiler\": {\n    \"ordinary_steps\": 41074,\n    \"padded_short_word\": 1,\n    \"sources\": 1023\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "c4797dfc400a9f7468f25eae163cd93ab945d89af7b99034a17c03005c9231e3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "transport": {
+      "source_sha256": {
+        "UnitProjection.lean": "bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4",
+        "FULL_SOURCE_FINITE_CERTIFICATE.md": "380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d",
+        "check_unit_projection.py": "32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b"
+      },
+      "audited_declarations": 6,
+      "audited_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "normal_optimized_byte_equal": true,
+      "executions": [
+        {
+          "name": "lean",
+          "argv": [
+            "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+            "env",
+            "lean",
+            "-j",
+            "1",
+            "-DwarningAsError=true",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/UnitProjection.lean"
+          ],
+          "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:11:05.419310+00:00",
+          "elapsed_seconds": 5.028817,
+          "exit_code": 0,
+          "stdout": "'CollatzUnitProjection.odd_part_reaches' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.nonunit_odd_successor_reaches' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.full_source_projects' depends on axioms: [propext, Quot.sound]\n'CollatzUnitProjection.odd_successor_unit' depends on axioms: [propext]\n'CollatzUnitProjection.projected_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnitProjection.finite_projection_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "stdout_sha256": "bfe04bf63b5434c9ed174cc20b10a23eaa8e885a25c9e9534e81e5879c25735c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "normal",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/check_unit_projection.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:11:10.448236+00:00",
+          "elapsed_seconds": 0.179814,
+          "exit_code": 0,
+          "stdout": "{\n  \"actual_projected_suffix_steps\": 126062,\n  \"actual_source_atoms\": 13700,\n  \"complete_fiber_rectangles\": 201,\n  \"complete_rectangle_atoms\": 7035,\n  \"failed_strengthening_controls\": [\n    \"height factor 1 rejected by 3 -> 5\",\n    \"bounded unweighted multiplicity rejected by a dyadic fiber\",\n    \"omitted dyadic weights rejected\",\n    \"lost nonunit source rejected by 75 -> 113 -> 170 -> 85\",\n    \"one shortcut step is not the full odd projection: 21 -> 1 takes 6\"\n  ],\n  \"full_predecessor_pools\": 25,\n  \"inverse_square_constant\": \"111404/22113\",\n  \"largest_finite_inverse_power_ratio\": \"1644899292857976598433555569/326533181312040994075152384\",\n  \"largest_finite_pressure_ratio\": \"4879426596671485/1125899906842624\",\n  \"largest_observed_fiber\": 47,\n  \"sample_pool_records\": [\n    {\n      \"exact_ratio_sha256\": \"6ac26b9d91af7f27faf7dab1130997df99978206f984c65848ebd200064500dd\",\n      \"ratio_display\": 1.4936633892,\n      \"root\": 1,\n      \"sources\": 274,\n      \"unit_images\": 46\n    },\n    {\n      \"exact_ratio_sha256\": \"c42f7b5b984eec1d19e19775dcd3489356fad421d42008b9cf99c57c7c8cfd1a\",\n      \"ratio_display\": 3.2678691975,\n      \"root\": 5,\n      \"sources\": 501,\n      \"unit_images\": 84\n    },\n    {\n      \"exact_ratio_sha256\": \"4828bde39b4552afb3699e855abef42a0785b25cfa18f6d45a7388127cf58e13\",\n      \"ratio_display\": 2.09509754,\n      \"root\": 7,\n      \"sources\": 349,\n      \"unit_images\": 57\n    },\n    {\n      \"exact_ratio_sha256\": \"f9e5f86e0406224c13f947bb1dd443492421b1c52e37720a0be6728eb89fe812\",\n      \"ratio_display\": 1.8674761025,\n      \"root\": 11,\n      \"sources\": 715,\n      \"unit_images\": 125\n    },\n    {\n      \"exact_ratio_sha256\": \"77f6e15603db0cc78a1a6147458b09662755592af1881055d8b08d59319e0f5a\",\n      \"ratio_display\": 1.7726127349,\n      \"root\": 13,\n      \"sources\": 609,\n      \"unit_images\": 105\n    }\n  ],\n  \"scope\": \"finite actual ordinary predecessor and exact weighted-fiber controls; no escape simulation\",\n  \"sources\": {\n    \"FULL_SOURCE_FINITE_CERTIFICATE.md\": \"380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d\",\n    \"UnitProjection.lean\": \"bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4\",\n    \"check_unit_projection.py\": \"32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b\"\n  },\n  \"sources_with_nonunit_odd_part\": 4424\n}\n",
+          "stderr": "",
+          "stdout_sha256": "5578e5b6df0b015bcbb2ba147009b0227705f6121dec784009ecf0a5f3dd6a0c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "optimized",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/check_unit_projection.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:11:10.628116+00:00",
+          "elapsed_seconds": 0.252793,
+          "exit_code": 0,
+          "stdout": "{\n  \"actual_projected_suffix_steps\": 126062,\n  \"actual_source_atoms\": 13700,\n  \"complete_fiber_rectangles\": 201,\n  \"complete_rectangle_atoms\": 7035,\n  \"failed_strengthening_controls\": [\n    \"height factor 1 rejected by 3 -> 5\",\n    \"bounded unweighted multiplicity rejected by a dyadic fiber\",\n    \"omitted dyadic weights rejected\",\n    \"lost nonunit source rejected by 75 -> 113 -> 170 -> 85\",\n    \"one shortcut step is not the full odd projection: 21 -> 1 takes 6\"\n  ],\n  \"full_predecessor_pools\": 25,\n  \"inverse_square_constant\": \"111404/22113\",\n  \"largest_finite_inverse_power_ratio\": \"1644899292857976598433555569/326533181312040994075152384\",\n  \"largest_finite_pressure_ratio\": \"4879426596671485/1125899906842624\",\n  \"largest_observed_fiber\": 47,\n  \"sample_pool_records\": [\n    {\n      \"exact_ratio_sha256\": \"6ac26b9d91af7f27faf7dab1130997df99978206f984c65848ebd200064500dd\",\n      \"ratio_display\": 1.4936633892,\n      \"root\": 1,\n      \"sources\": 274,\n      \"unit_images\": 46\n    },\n    {\n      \"exact_ratio_sha256\": \"c42f7b5b984eec1d19e19775dcd3489356fad421d42008b9cf99c57c7c8cfd1a\",\n      \"ratio_display\": 3.2678691975,\n      \"root\": 5,\n      \"sources\": 501,\n      \"unit_images\": 84\n    },\n    {\n      \"exact_ratio_sha256\": \"4828bde39b4552afb3699e855abef42a0785b25cfa18f6d45a7388127cf58e13\",\n      \"ratio_display\": 2.09509754,\n      \"root\": 7,\n      \"sources\": 349,\n      \"unit_images\": 57\n    },\n    {\n      \"exact_ratio_sha256\": \"f9e5f86e0406224c13f947bb1dd443492421b1c52e37720a0be6728eb89fe812\",\n      \"ratio_display\": 1.8674761025,\n      \"root\": 11,\n      \"sources\": 715,\n      \"unit_images\": 125\n    },\n    {\n      \"exact_ratio_sha256\": \"77f6e15603db0cc78a1a6147458b09662755592af1881055d8b08d59319e0f5a\",\n      \"ratio_display\": 1.7726127349,\n      \"root\": 13,\n      \"sources\": 609,\n      \"unit_images\": 105\n    }\n  ],\n  \"scope\": \"finite actual ordinary predecessor and exact weighted-fiber controls; no escape simulation\",\n  \"sources\": {\n    \"FULL_SOURCE_FINITE_CERTIFICATE.md\": \"380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d\",\n    \"UnitProjection.lean\": \"bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4\",\n    \"check_unit_projection.py\": \"32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b\"\n  },\n  \"sources_with_nonunit_odd_part\": 4424\n}\n",
+          "stderr": "",
+          "stdout_sha256": "5578e5b6df0b015bcbb2ba147009b0227705f6121dec784009ecf0a5f3dd6a0c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "witness": {
+      "source_sha256": {
+        "WitnessCharge.lean": "c0c9d658f0de0c344f77f0f4c0a8d11a4f8484695aa953d8d14ec5fb2acc115d",
+        "WITNESS_CHARGE_AND_POWER_INDUCTION.md": "c20dbdde1ebb7e1aa7d4a71e7e13091755f8a98b059bebc381d495c14767b591",
+        "check_witness_charge.py": "f8d239f4c397771a62e3cda0570536bf26034a28fc1986db8522be2cc75c6e7e"
+      },
+      "audited_declarations": 21,
+      "audited_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "normal_optimized_byte_equal": true,
+      "executions": [
+        {
+          "name": "lean",
+          "argv": [
+            "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+            "-j",
+            "1",
+            "-DwarningAsError=true",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WitnessCharge.lean"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:39.202726+00:00",
+          "elapsed_seconds": 3.633238,
+          "exit_code": 0,
+          "stdout": "'CollatzWitnessCharge.pad_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.complete_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.complete_charge_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.profile_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.complete_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.cylinder_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.half_germ_of_charge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.half_germ_charge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.half_germ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.half_germ_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.four_step_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.no_half_germ_four_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.power_germ_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.power_germ_of_charge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.power_germ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.power_germ_transitive' depends on axioms: [propext, Quot.sound]\n'CollatzWitnessCharge.power_germ_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.power_signature_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.no_large_power_germ_to_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.alignment_charge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzWitnessCharge.four_step_edit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "stdout_sha256": "93f4bbe917c0ae088c0c86511f0e57de5727177396b7c6b13ff168981e5f0c3c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "normal",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/check_witness_charge.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:42.835998+00:00",
+          "elapsed_seconds": 0.197886,
+          "exit_code": 0,
+          "stdout": "{\n  \"cycle_controls\": 640,\n  \"cylinder_controls\": 2496,\n  \"finite_seed_barrier\": {\n    \"excluded_exponent\": 219,\n    \"maximum_signature\": 72,\n    \"seed_exponents\": [\n      1,\n      2,\n      3,\n      4,\n      5,\n      6,\n      7,\n      8,\n      9,\n      10,\n      11,\n      12,\n      13,\n      14,\n      15,\n      16,\n      17,\n      18,\n      19,\n      20,\n      21,\n      22,\n      23,\n      24,\n      25,\n      26,\n      27\n    ],\n    \"target_convergence_used\": false\n  },\n  \"first_four_step_exact_edit_control\": {\n    \"alignment_columns\": 279,\n    \"alignment_sha256\": \"f4693fb5b2e3aeffd5688a0f67098a893068409d153e8f21efd810ca5ff7e61e\",\n    \"endpoint\": 2,\n    \"explored_edges\": 27327,\n    \"explored_states\": 10931,\n    \"full_closed_product\": 17703,\n    \"minimum_edits\": 138,\n    \"source\": 56934395289227009,\n    \"source_charge\": -54,\n    \"source_clock\": 62,\n    \"target\": 28467197644613505,\n    \"target_charge\": 4,\n    \"target_clock\": 280\n  },\n  \"half_classifications\": 49,\n  \"half_examples\": [\n    {\n      \"germ\": true,\n      \"source_charge\": -2,\n      \"target_charge\": -1,\n      \"target_germ_clock\": 4,\n      \"x\": 5,\n      \"y\": 3\n    },\n    {\n      \"germ\": false,\n      \"source_charge\": 11,\n      \"target_charge\": -3,\n      \"target_germ_clock\": null,\n      \"x\": 129,\n      \"y\": 65\n    },\n    {\n      \"germ\": true,\n      \"source_charge\": 10,\n      \"target_charge\": 11,\n      \"target_germ_clock\": 11,\n      \"x\": 257,\n      \"y\": 129\n    },\n    {\n      \"germ\": false,\n      \"source_charge\": -5,\n      \"target_charge\": 10,\n      \"target_germ_clock\": null,\n      \"x\": 385,\n      \"y\": 193\n    }\n  ],\n  \"lifted_family_controls\": 36,\n  \"positive_affine_cell_parameters\": 12,\n  \"positive_power_germs\": 155,\n  \"power_classifications\": 1770,\n  \"power_signature_rows\": [\n    {\n      \"L\": 2,\n      \"m\": 1,\n      \"r\": 0,\n      \"signature\": 0\n    },\n    {\n      \"L\": 5,\n      \"m\": 2,\n      \"r\": 1,\n      \"signature\": 1\n    },\n    {\n      \"L\": 13,\n      \"m\": 3,\n      \"r\": 5,\n      \"signature\": 3\n    },\n    {\n      \"L\": 70,\n      \"m\": 4,\n      \"r\": 40,\n      \"signature\": 18\n    },\n    {\n      \"L\": 16,\n      \"m\": 5,\n      \"r\": 5,\n      \"signature\": 4\n    },\n    {\n      \"L\": 62,\n      \"m\": 6,\n      \"r\": 33,\n      \"signature\": 16\n    },\n    {\n      \"L\": 24,\n      \"m\": 7,\n      \"r\": 8,\n      \"signature\": 6\n    },\n    {\n      \"L\": 51,\n      \"m\": 8,\n      \"r\": 24,\n      \"signature\": 13\n    },\n    {\n      \"L\": 51,\n      \"m\": 9,\n      \"r\": 23,\n      \"signature\": 13\n    },\n    {\n      \"L\": 32,\n      \"m\": 10,\n      \"r\": 10,\n      \"signature\": 8\n    },\n    {\n      \"L\": 89,\n      \"m\": 11,\n      \"r\": 45,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 12,\n      \"r\": 44,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 13,\n      \"r\": 43,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 14,\n      \"r\": 42,\n      \"signature\": 23\n    },\n    {\n      \"L\": 97,\n      \"m\": 15,\n      \"r\": 46,\n      \"signature\": 25\n    },\n    {\n      \"L\": 135,\n      \"m\": 16,\n      \"r\": 69,\n      \"signature\": 35\n    },\n    {\n      \"L\": 89,\n      \"m\": 17,\n      \"r\": 39,\n      \"signature\": 23\n    },\n    {\n      \"L\": 127,\n      \"m\": 18,\n      \"r\": 62,\n      \"signature\": 33\n    },\n    {\n      \"L\": 97,\n      \"m\": 19,\n      \"r\": 42,\n      \"signature\": 25\n    },\n    {\n      \"L\": 70,\n      \"m\": 20,\n      \"r\": 24,\n      \"signature\": 18\n    },\n    {\n      \"L\": 70,\n      \"m\": 21,\n      \"r\": 23,\n      \"signature\": 18\n    },\n    {\n      \"L\": 173,\n      \"m\": 22,\n      \"r\": 87,\n      \"signature\": 45\n    },\n    {\n      \"L\": 276,\n      \"m\": 23,\n      \"r\": 151,\n      \"signature\": 72\n    },\n    {\n      \"L\": 70,\n      \"m\": 24,\n      \"r\": 20,\n      \"signature\": 18\n    },\n    {\n      \"L\": 173,\n      \"m\": 25,\n      \"r\": 84,\n      \"signature\": 45\n    },\n    {\n      \"L\": 257,\n      \"m\": 26,\n      \"r\": 136,\n      \"signature\": 67\n    },\n    {\n      \"L\": 219,\n      \"m\": 27,\n      \"r\": 111,\n      \"signature\": 57\n    }\n  ],\n  \"rejected_strengthenings\": 4,\n  \"retained_four_step_family\": [\n    {\n      \"every_successful_alignment_has_at_least\": 11,\n      \"forced_target_clock\": 61,\n      \"k\": 1,\n      \"m\": 27,\n      \"source_clock\": 62,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 20,\n      \"forced_target_clock\": 115,\n      \"k\": 2,\n      \"m\": 54,\n      \"source_clock\": 116,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 29,\n      \"forced_target_clock\": 169,\n      \"k\": 3,\n      \"m\": 81,\n      \"source_clock\": 170,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 38,\n      \"forced_target_clock\": 223,\n      \"k\": 4,\n      \"m\": 108,\n      \"source_clock\": 224,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 47,\n      \"forced_target_clock\": 277,\n      \"k\": 5,\n      \"m\": 135,\n      \"source_clock\": 278,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 56,\n      \"forced_target_clock\": 331,\n      \"k\": 6,\n      \"m\": 162,\n      \"source_clock\": 332,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 65,\n      \"forced_target_clock\": 385,\n      \"k\": 7,\n      \"m\": 189,\n      \"source_clock\": 386,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 74,\n      \"forced_target_clock\": 439,\n      \"k\": 8,\n      \"m\": 216,\n      \"source_clock\": 440,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 83,\n      \"forced_target_clock\": 493,\n      \"k\": 9,\n      \"m\": 243,\n      \"source_clock\": 494,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 92,\n      \"forced_target_clock\": 547,\n      \"k\": 10,\n      \"m\": 270,\n      \"source_clock\": 548,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 101,\n      \"forced_target_clock\": 601,\n      \"k\": 11,\n      \"m\": 297,\n      \"source_clock\": 602,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 110,\n      \"forced_target_clock\": 655,\n      \"k\": 12,\n      \"m\": 324,\n      \"source_clock\": 656,\n      \"source_odd_steps\": 4\n    }\n  ],\n  \"scope\": \"Exact finite controls; the unrestricted conclusions use the written proofs and Lean theorems.\",\n  \"source_sha256\": {\n    \"WITNESS_CHARGE_AND_POWER_INDUCTION.md\": \"c20dbdde1ebb7e1aa7d4a71e7e13091755f8a98b059bebc381d495c14767b591\",\n    \"WitnessCharge.lean\": \"c0c9d658f0de0c344f77f0f4c0a8d11a4f8484695aa953d8d14ec5fb2acc115d\",\n    \"check_witness_charge.py\": \"f8d239f4c397771a62e3cda0570536bf26034a28fc1986db8522be2cc75c6e7e\"\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "optimized",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/check_witness_charge.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:43.033922+00:00",
+          "elapsed_seconds": 0.254484,
+          "exit_code": 0,
+          "stdout": "{\n  \"cycle_controls\": 640,\n  \"cylinder_controls\": 2496,\n  \"finite_seed_barrier\": {\n    \"excluded_exponent\": 219,\n    \"maximum_signature\": 72,\n    \"seed_exponents\": [\n      1,\n      2,\n      3,\n      4,\n      5,\n      6,\n      7,\n      8,\n      9,\n      10,\n      11,\n      12,\n      13,\n      14,\n      15,\n      16,\n      17,\n      18,\n      19,\n      20,\n      21,\n      22,\n      23,\n      24,\n      25,\n      26,\n      27\n    ],\n    \"target_convergence_used\": false\n  },\n  \"first_four_step_exact_edit_control\": {\n    \"alignment_columns\": 279,\n    \"alignment_sha256\": \"f4693fb5b2e3aeffd5688a0f67098a893068409d153e8f21efd810ca5ff7e61e\",\n    \"endpoint\": 2,\n    \"explored_edges\": 27327,\n    \"explored_states\": 10931,\n    \"full_closed_product\": 17703,\n    \"minimum_edits\": 138,\n    \"source\": 56934395289227009,\n    \"source_charge\": -54,\n    \"source_clock\": 62,\n    \"target\": 28467197644613505,\n    \"target_charge\": 4,\n    \"target_clock\": 280\n  },\n  \"half_classifications\": 49,\n  \"half_examples\": [\n    {\n      \"germ\": true,\n      \"source_charge\": -2,\n      \"target_charge\": -1,\n      \"target_germ_clock\": 4,\n      \"x\": 5,\n      \"y\": 3\n    },\n    {\n      \"germ\": false,\n      \"source_charge\": 11,\n      \"target_charge\": -3,\n      \"target_germ_clock\": null,\n      \"x\": 129,\n      \"y\": 65\n    },\n    {\n      \"germ\": true,\n      \"source_charge\": 10,\n      \"target_charge\": 11,\n      \"target_germ_clock\": 11,\n      \"x\": 257,\n      \"y\": 129\n    },\n    {\n      \"germ\": false,\n      \"source_charge\": -5,\n      \"target_charge\": 10,\n      \"target_germ_clock\": null,\n      \"x\": 385,\n      \"y\": 193\n    }\n  ],\n  \"lifted_family_controls\": 36,\n  \"positive_affine_cell_parameters\": 12,\n  \"positive_power_germs\": 155,\n  \"power_classifications\": 1770,\n  \"power_signature_rows\": [\n    {\n      \"L\": 2,\n      \"m\": 1,\n      \"r\": 0,\n      \"signature\": 0\n    },\n    {\n      \"L\": 5,\n      \"m\": 2,\n      \"r\": 1,\n      \"signature\": 1\n    },\n    {\n      \"L\": 13,\n      \"m\": 3,\n      \"r\": 5,\n      \"signature\": 3\n    },\n    {\n      \"L\": 70,\n      \"m\": 4,\n      \"r\": 40,\n      \"signature\": 18\n    },\n    {\n      \"L\": 16,\n      \"m\": 5,\n      \"r\": 5,\n      \"signature\": 4\n    },\n    {\n      \"L\": 62,\n      \"m\": 6,\n      \"r\": 33,\n      \"signature\": 16\n    },\n    {\n      \"L\": 24,\n      \"m\": 7,\n      \"r\": 8,\n      \"signature\": 6\n    },\n    {\n      \"L\": 51,\n      \"m\": 8,\n      \"r\": 24,\n      \"signature\": 13\n    },\n    {\n      \"L\": 51,\n      \"m\": 9,\n      \"r\": 23,\n      \"signature\": 13\n    },\n    {\n      \"L\": 32,\n      \"m\": 10,\n      \"r\": 10,\n      \"signature\": 8\n    },\n    {\n      \"L\": 89,\n      \"m\": 11,\n      \"r\": 45,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 12,\n      \"r\": 44,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 13,\n      \"r\": 43,\n      \"signature\": 23\n    },\n    {\n      \"L\": 89,\n      \"m\": 14,\n      \"r\": 42,\n      \"signature\": 23\n    },\n    {\n      \"L\": 97,\n      \"m\": 15,\n      \"r\": 46,\n      \"signature\": 25\n    },\n    {\n      \"L\": 135,\n      \"m\": 16,\n      \"r\": 69,\n      \"signature\": 35\n    },\n    {\n      \"L\": 89,\n      \"m\": 17,\n      \"r\": 39,\n      \"signature\": 23\n    },\n    {\n      \"L\": 127,\n      \"m\": 18,\n      \"r\": 62,\n      \"signature\": 33\n    },\n    {\n      \"L\": 97,\n      \"m\": 19,\n      \"r\": 42,\n      \"signature\": 25\n    },\n    {\n      \"L\": 70,\n      \"m\": 20,\n      \"r\": 24,\n      \"signature\": 18\n    },\n    {\n      \"L\": 70,\n      \"m\": 21,\n      \"r\": 23,\n      \"signature\": 18\n    },\n    {\n      \"L\": 173,\n      \"m\": 22,\n      \"r\": 87,\n      \"signature\": 45\n    },\n    {\n      \"L\": 276,\n      \"m\": 23,\n      \"r\": 151,\n      \"signature\": 72\n    },\n    {\n      \"L\": 70,\n      \"m\": 24,\n      \"r\": 20,\n      \"signature\": 18\n    },\n    {\n      \"L\": 173,\n      \"m\": 25,\n      \"r\": 84,\n      \"signature\": 45\n    },\n    {\n      \"L\": 257,\n      \"m\": 26,\n      \"r\": 136,\n      \"signature\": 67\n    },\n    {\n      \"L\": 219,\n      \"m\": 27,\n      \"r\": 111,\n      \"signature\": 57\n    }\n  ],\n  \"rejected_strengthenings\": 4,\n  \"retained_four_step_family\": [\n    {\n      \"every_successful_alignment_has_at_least\": 11,\n      \"forced_target_clock\": 61,\n      \"k\": 1,\n      \"m\": 27,\n      \"source_clock\": 62,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 20,\n      \"forced_target_clock\": 115,\n      \"k\": 2,\n      \"m\": 54,\n      \"source_clock\": 116,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 29,\n      \"forced_target_clock\": 169,\n      \"k\": 3,\n      \"m\": 81,\n      \"source_clock\": 170,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 38,\n      \"forced_target_clock\": 223,\n      \"k\": 4,\n      \"m\": 108,\n      \"source_clock\": 224,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 47,\n      \"forced_target_clock\": 277,\n      \"k\": 5,\n      \"m\": 135,\n      \"source_clock\": 278,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 56,\n      \"forced_target_clock\": 331,\n      \"k\": 6,\n      \"m\": 162,\n      \"source_clock\": 332,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 65,\n      \"forced_target_clock\": 385,\n      \"k\": 7,\n      \"m\": 189,\n      \"source_clock\": 386,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 74,\n      \"forced_target_clock\": 439,\n      \"k\": 8,\n      \"m\": 216,\n      \"source_clock\": 440,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 83,\n      \"forced_target_clock\": 493,\n      \"k\": 9,\n      \"m\": 243,\n      \"source_clock\": 494,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 92,\n      \"forced_target_clock\": 547,\n      \"k\": 10,\n      \"m\": 270,\n      \"source_clock\": 548,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 101,\n      \"forced_target_clock\": 601,\n      \"k\": 11,\n      \"m\": 297,\n      \"source_clock\": 602,\n      \"source_odd_steps\": 4\n    },\n    {\n      \"every_successful_alignment_has_at_least\": 110,\n      \"forced_target_clock\": 655,\n      \"k\": 12,\n      \"m\": 324,\n      \"source_clock\": 656,\n      \"source_odd_steps\": 4\n    }\n  ],\n  \"scope\": \"Exact finite controls; the unrestricted conclusions use the written proofs and Lean theorems.\",\n  \"source_sha256\": {\n    \"WITNESS_CHARGE_AND_POWER_INDUCTION.md\": \"c20dbdde1ebb7e1aa7d4a71e7e13091755f8a98b059bebc381d495c14767b591\",\n    \"WitnessCharge.lean\": \"c0c9d658f0de0c344f77f0f4c0a8d11a4f8484695aa953d8d14ec5fb2acc115d\",\n    \"check_witness_charge.py\": \"f8d239f4c397771a62e3cda0570536bf26034a28fc1986db8522be2cc75c6e7e\"\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "germ": {
+      "source_sha256": {
+        "GermCapacity.lean": "8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1",
+        "DENSITY_FREE_DEFLATED_GERM.md": "dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990",
+        "check_deflated_germ.py": "639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8"
+      },
+      "audited_declarations": 6,
+      "audited_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "normal_optimized_byte_equal": true,
+      "executions": [
+        {
+          "name": "lean",
+          "argv": [
+            "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+            "env",
+            "lean",
+            "-j",
+            "1",
+            "-DwarningAsError=true",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/GermCapacity.lean"
+          ],
+          "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:39.202234+00:00",
+          "elapsed_seconds": 3.430397,
+          "exit_code": 0,
+          "stdout": "'CollatzGermCapacity.first_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.second_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.capacity_strategy_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.inverse_constant' does not depend on any axioms\n'CollatzGermCapacity.inverse_linear' depends on axioms: [propext]\n'CollatzGermCapacity.inverse_convolution' depends on axioms: [propext, Quot.sound]\n",
+          "stderr": "",
+          "stdout_sha256": "4adab11d7f765e0129b0b2a159c0d1e3147fff9ec8c0aa48c538710015bed4c8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "normal",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/check_deflated_germ.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:42.632669+00:00",
+          "elapsed_seconds": 0.772325,
+          "exit_code": 0,
+          "stdout": "{\n  \"actual_germs\": {\n    \"coefficient_equalities\": 4260,\n    \"inverse_coefficients\": 64,\n    \"maximum_degree\": 219,\n    \"ordinary_steps\": 4107,\n    \"sources\": 153\n  },\n  \"capacity\": {\n    \"below_threshold_control\": true,\n    \"certified_payoff_floors\": [\n      \"9/100\",\n      \"3/100\"\n    ],\n    \"explicit_strategy\": [\n      \"2/5\",\n      \"3/5\"\n    ],\n    \"log_series_terms\": 96,\n    \"strict_radius_controls\": 4\n  },\n  \"controls\": {\n    \"fitted_constant_rejected\": true,\n    \"foreign_prime_rejected\": true,\n    \"old_derivative_zero_fixture_retained\": true\n  },\n  \"scope\": \"Exact finite capacity and known-convergent actual-germ controls; not the analytic rationality theorem or a universal germ construction.\",\n  \"source_sha256\": {\n    \"DENSITY_FREE_DEFLATED_GERM.md\": \"dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990\",\n    \"GermCapacity.lean\": \"8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1\",\n    \"check_deflated_germ.py\": \"639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8\"\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "optimized",
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/check_deflated_germ.py"
+          ],
+          "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+          "env_delta": {
+            "PYTHONDONTWRITEBYTECODE": "1"
+          },
+          "started_utc": "2026-11-23T07:06:43.405029+00:00",
+          "elapsed_seconds": 0.846214,
+          "exit_code": 0,
+          "stdout": "{\n  \"actual_germs\": {\n    \"coefficient_equalities\": 4260,\n    \"inverse_coefficients\": 64,\n    \"maximum_degree\": 219,\n    \"ordinary_steps\": 4107,\n    \"sources\": 153\n  },\n  \"capacity\": {\n    \"below_threshold_control\": true,\n    \"certified_payoff_floors\": [\n      \"9/100\",\n      \"3/100\"\n    ],\n    \"explicit_strategy\": [\n      \"2/5\",\n      \"3/5\"\n    ],\n    \"log_series_terms\": 96,\n    \"strict_radius_controls\": 4\n  },\n  \"controls\": {\n    \"fitted_constant_rejected\": true,\n    \"foreign_prime_rejected\": true,\n    \"old_derivative_zero_fixture_retained\": true\n  },\n  \"scope\": \"Exact finite capacity and known-convergent actual-germ controls; not the analytic rationality theorem or a universal germ construction.\",\n  \"source_sha256\": {\n    \"DENSITY_FREE_DEFLATED_GERM.md\": \"dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990\",\n    \"GermCapacity.lean\": \"8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1\",\n    \"check_deflated_germ.py\": \"639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8\"\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  }
+}

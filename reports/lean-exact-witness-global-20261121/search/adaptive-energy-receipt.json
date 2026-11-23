@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT_REPLAY; GLOBAL THEOREM OPEN",
+  "mode": "adaptive energy grammar",
+  "record_count": 1486,
+  "classifications": {
+    "multiset_replacement": 944,
+    "ordinary_merger": 229,
+    "forward_consumption": 313
+  },
+  "maximum_energy_insertions": 14,
+  "sufficient_energy_base": 15,
+  "semantic_sha256": "de564e81fdc4c6db4865a234ff4b81b3bb3349cfe64e7516e7ee1126bcb9a622",
+  "partition": {
+    "activated_coarse_states": 1071,
+    "resolved_leaves": 1486,
+    "unresolved_cells": 8099,
+    "binary_splits": 8514,
+    "processed_cells": 10000,
+    "partition": "DISJOINT_AND_COMPLETE_FOR_EVERY_ACTIVE_COARSE_CELL",
+    "global_induction_complete": false
+  },
+  "input_sha256": "bda1c68117032d277ff133aada673e72345c42d943ae5c47a659805fa8ad52db"
+}

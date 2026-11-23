@@ -1,0 +1,183 @@
+{
+  "axiom_audit": {
+    "declarations": 273,
+    "exit_code": 0,
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": [],
+    "without_axioms": 9
+  },
+  "checkpoint": 13,
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint-thirteen-build.txt",
+      "seconds": 1.912
+    },
+    {
+      "command": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/ArithmeticPrecision.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint-thirteen-strict-ArithmeticPrecision.txt",
+      "seconds": 0.508
+    },
+    {
+      "command": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/AffineBlockPrecision.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint-thirteen-strict-AffineBlockPrecision.txt",
+      "seconds": 0.68
+    },
+    {
+      "command": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/SegmentFloor.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint-thirteen-strict-SegmentFloor.txt",
+      "seconds": 0.565
+    },
+    {
+      "command": [
+        "/workspace/scratch/e15c6f8bf5c3/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint-thirteen-axioms.txt",
+      "seconds": 0.343
+    }
+  ],
+  "created_at_utc": "2026-11-22T08:02:14.512447+00:00",
+  "execution_scope": {
+    "baseline_receipt": "../joint-minimum/checkpoint-twelve.json",
+    "kind": "Incremental aggregate build and strict recompilation of every new module; full expanded axiom audit",
+    "old_dependencies_freshly_rebuilt": false,
+    "reported_jobs": "45",
+    "source_files": 45,
+    "unchanged_preexisting_lean_files_checked_by_hash": 40
+  },
+  "formal_boundary": "The all-clock correction inequality, arbitrary-block valuation loss, and finite Q*2^h actual-return threshold are Lean theorems. The external published S-unit theorem, its sparse-endpoint specialization and density deduction remain written mathematics. Canonical BV, sector computations, subcritical forcing, and terminal energy commutator are written deductions retaining the pinned analytic assumptions. No deep theorem is imported as a custom axiom.",
+  "global_remaining_premise": "FloorIntervalStep remains unproved. Sparse-endpoint returns alone do not cover arbitrary target histories. A sufficient uniform upper bound for the actual subcritical-weight canonical transport commutator and exclusion of nontrivial cycles are unproved. Separate fixed-block valuation countdowns do not prove termination under arbitrary block switching.",
+  "lean_dependencies": "Lean core only; no Mathlib",
+  "lean_source_sha256": {
+    "Audit.lean": "64899b2a2c4ad822e02292917df314ede1ccf364a98d916395bc44f8097e4698",
+    "AuditSourceGreenCoefficient.lean": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b",
+    "Collatz.lean": "54d1b97ed5e27c3d4b1b5ca4e836f1b705c16dfd5f4575fad1fa16619efa7317",
+    "Collatz/AffineBlockPrecision.lean": "9a14848638d7b0d36372ea2f6f06119173620714100fdf5e07fe30f1d6cf249f",
+    "Collatz/ArithmeticPrecision.lean": "72ddbe6963d3747cead438fcf892fa0946876ffcc4ccaba0e74c0ce58a127fb6",
+    "Collatz/AsymmetricPsiReset.lean": "773af3bb312aa57cdbad9e530945ff5ee44fb642ebceea9f08549ea411a25615",
+    "Collatz/BinaryRunForcing.lean": "f720ef163c41c7a88ba0995a5836640586cde2e01a23f7f9311b32f303d473a7",
+    "Collatz/BoundedFourNormalForm.lean": "916738b33f17df9b9481e68951d03f18d6d6ca91ca4924dcc1fca29952ffe4b7",
+    "Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "Collatz/ClockSynchronization.lean": "64238fb906e02c311c32042963527b57a3a66622a4d2502cee4ca0ec62dc606f",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "Collatz/DyadicCoset.lean": "c282dee9ff69f966bbe700f8b48c33426f42f9a2efb8d59e1ebcc76bb1434bff",
+    "Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "Collatz/GapHandoffs.lean": "fd4c4251ab270f803c88c66599dcd22a687a25f3f9a9f498018d93f050e2419b",
+    "Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "Collatz/JointMinimalCounterexample.lean": "a91c248f26049707df8d6c3da9b6cc82f616ecbfcf35a09c14fea156ab5c4432",
+    "Collatz/LowGapGlobal.lean": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f",
+    "Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "Collatz/LowGapToPsi.lean": "8e0987e5ad506d3a9b8b764f7b35defb1cf03560450c994ebc3c2f48f913ca06",
+    "Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "Collatz/MergerDenominatorClear.lean": "cf54fed295d0869cefc1a5821481cefb7b9f3e174d7d8b7c1ef6776c7a1b429e",
+    "Collatz/NegativeShadow.lean": "b5cfdf34ebb56651b36ac3a4908f9295e31da64d787b43b070cab3488f4b402d",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/PsiEvenHeadFour.lean": "07d1427cfe2ea62e8866f14fe03bd013ccb4522f022c491971501d73d3ce2304",
+    "Collatz/PsiEvenHeadTwo.lean": "5946dac63e63576dc6799a4fd26ae86de5f22e4352154e1e472ee0ed363caddb",
+    "Collatz/PsiOddValuations.lean": "f7b7d0e338f9f2601e7809352849c93380d695191f8c2d50c341c01201ceaafd",
+    "Collatz/PsiSuffix.lean": "ed8bf9f6702ff2aeffefd08dfef02def97272750633e2b24e65c53b8025ddae7",
+    "Collatz/PsiValuationOne.lean": "46268f211e0bd0b0b27f13f7d1e30720ab77de994c934729a033787f91ed34c7",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/RetainedEvenBoundary.lean": "3518b36ef6394d41bd6664060157171fc42746db6178f02e09ef64a605237e3f",
+    "Collatz/RetainedEvenReset.lean": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/RootedSourceFloor.lean": "b23f59ce7d6261208d0dbc6a7793c839bb8214dbf7ed6cca3e7b42e4ae057c03",
+    "Collatz/SegmentFloor.lean": "eba1fe6c42ea475f5c0906b61a78dd3ef974da772ef32d844f196d830db35f78",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/SignedShadow.lean": "72e61feb3a40fecff48bcf15a20cc296db807e7ab929963b9ca94f6bada46ff0",
+    "Collatz/SourceGreenCoefficient.lean": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1",
+    "Collatz/SourceOrbitProgress.lean": "1d1b08d4b231f4f37011bb298bb68f36d929e145f3ca33bdf943a7e57359a411",
+    "Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+  },
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "new_modules": [
+    "Collatz/ArithmeticPrecision.lean",
+    "Collatz/AffineBlockPrecision.lean",
+    "Collatz/SegmentFloor.lean"
+  ],
+  "new_public_theorem_names": [
+    "CollatzArithmeticPrecision.affine_identity",
+    "CollatzArithmeticPrecision.first_odd_contribution",
+    "CollatzArithmeticPrecision.state_add",
+    "CollatzArithmeticPrecision.state_pow_two",
+    "CollatzArithmeticPrecision.odd_core_at_later_clock",
+    "CollatzArithmeticPrecision.normalized_correction_bound",
+    "CollatzArithmeticPrecision.least_bad_odd_core",
+    "CollatzArithmeticPrecision.least_bad_precision_bound",
+    "CollatzAffineBlockPrecision.block_affine",
+    "CollatzAffineBlockPrecision.block_orbit",
+    "CollatzAffineBlockPrecision.balance_transport",
+    "CollatzAffineBlockPrecision.balance_magnitude_transport",
+    "CollatzAffineBlockPrecision.repeated_actual_orbit",
+    "CollatzAffineBlockPrecision.repeated_balance",
+    "CollatzAffineBlockPrecision.repetition_precision",
+    "CollatzAffineBlockPrecision.repetition_clock_bound",
+    "CollatzAffineBlockPrecision.repetition_exact_precision",
+    "CollatzAffineBlockPrecision.no_infinite_repetition",
+    "CollatzAffineBlockPrecision.expanding_balance_positive",
+    "CollatzAffineBlockPrecision.expanding_no_infinite_repetition",
+    "CollatzAffineBlockPrecision.odd_even_odd_balance",
+    "CollatzSegmentFloor.to_prefix",
+    "CollatzSegmentFloor.actual_orbit",
+    "CollatzSegmentFloor.of_bounded_orbit_floor",
+    "CollatzSegmentFloor.of_orbit_floor",
+    "CollatzSegmentFloor.product_bound",
+    "CollatzSegmentFloor.correction_product_bound",
+    "CollatzSegmentFloor.correction_bound",
+    "CollatzSegmentFloor.correction_sharp_bound",
+    "CollatzSegmentFloor.correction_forces_floor_failure",
+    "CollatzSegmentFloor.actual_return_below_floor",
+    "CollatzSegmentFloor.ratio_forces_return"
+  ],
+  "new_public_theorems": 32,
+  "parent_published_head": "431d858d1ac92e88f4a58f6610c0d67733dc7242",
+  "repository_gate": "A separate integrity/regression gate is run on the final complete clean checkout before publication; checked commit/tree and receipt digest are recorded on PR177.",
+  "scientific_artifact_sha256": {
+    "LATEST_SOURCE_SYNTHESIS.md": "1711795ec57f6859c2a8aeb688127a4a4fcfca37067142f29ce3d6c4eab242e8",
+    "LITERATURE_ARITHMETIC_RETURN.md": "f530ee3644600cf73e3881dc008c99b251a644b3dd5a0f1f2fd67a540aa182e1",
+    "LITERATURE_CANONICAL_ENERGY.md": "3803fc415be23b6d7b65880ffdb89eec5a0f14f791356d84e21330f058b6cdee",
+    "LITERATURE_WITNESS_TERMINATION.md": "e6b1ddfe2d3ee59c73b0c03cde17723957d2229f80a88568dc35143470f8c853",
+    "README.md": "d1c44ad78aacddc87a6e77006953333468bbbb739ec09c419bf1762dc34fe940"
+  },
+  "status": "Written ESS finite-core return and upper Banach density theorem established; 32 finite arithmetic and repetition theorems checked in Lean; canonical subcritical forcing proved under pinned analytic inputs; full Collatz and residue implication OPEN"
+}

@@ -1,0 +1,28 @@
+{
+  "address_quotients": [
+    0,
+    1,
+    2
+  ],
+  "checks": [
+    "unique base exponents",
+    "actual integer branches",
+    "exact valuations",
+    "reversible addresses",
+    "fixed-depth vertex injectivity",
+    "signed cost budget",
+    "exact rational height cocycle",
+    "exact pressure cost",
+    "truncated weight comparison"
+  ],
+  "damaged_tables_rejected": 3,
+  "exhaustive_residue_colour_entries": 12,
+  "maximum_depth": 3,
+  "negative_total_costs": 660,
+  "ordinary_root_pairs": 6,
+  "paired_paths": 1554,
+  "positive_total_costs": 612,
+  "scope": "finite table and address controls only; not Collatz",
+  "status": "PASS",
+  "zero_total_costs": 282
+}

@@ -1,0 +1,38 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/finite_source_boundary.py",
+        "--controls"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032,
+      "output": "finite-source-boundary-normal.json",
+      "sha256": "03807ef17320be334067848eabdfe13c6ed47b4cc879409688659dc0b7ad7f62"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/finite_source_boundary.py",
+        "--controls"
+      ],
+      "exit_code": 0,
+      "seconds": 0.113,
+      "output": "finite-source-boundary-optimized.json",
+      "sha256": "03807ef17320be334067848eabdfe13c6ed47b4cc879409688659dc0b7ad7f62"
+    }
+  ],
+  "outputs_byte_identical": true,
+  "checked_boundary_certificates": 383,
+  "damaged_graph_controls_rejected_each_mode": 3,
+  "script_sha256": "01a370c24a21dc95e05746f0689cfaa4428f90df980278ded9e82a10cf22447e",
+  "scope": "New complete finite graph optimizer, not convergence of either target or all-target coverage"
+}

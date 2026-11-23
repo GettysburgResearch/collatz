@@ -1,0 +1,19 @@
+{
+  "reviewer": "global_candidate_attack",
+  "command": [
+    "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-DwarningAsError=true",
+    "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean"
+  ],
+  "source_sha256": "92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339",
+  "result": {
+    "chunk_id": "8ace82",
+    "wall_time_seconds": 0.000015824,
+    "exit_code": 0,
+    "original_token_count": 465,
+    "output": "'CollatzLatticeDescent.paid_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_strict' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_weak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_tail_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.block_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.repeat_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.repeat_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.macro_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.macro_paid' depends on axioms: [propext]\n'CollatzLatticeDescent.power_ratio_mono' depends on axioms: [propext]\n'CollatzLatticeDescent.cutoff_budget' depends on axioms: [propext]\n'CollatzLatticeDescent.run_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.uniform_macro_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.arbitrary_defect_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.word_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.word_coprime' depends on axioms: [propext, Quot.sound]\n'CollatzLatticeDescent.word_repeat_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.ordinary_word_language_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "scope": "Fresh reviewer compile of the new module only; no author checker replay or historical census"
+}

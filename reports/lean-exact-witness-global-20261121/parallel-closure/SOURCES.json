@@ -1,0 +1,113 @@
+{
+  "created_at_utc": "2026-11-22T08:54:04.822924+00:00",
+  "own_published_parent": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+  "scope": "Targeted current-source inspection by the research team; no fresh build or global mathematical acceptance of peer branches. Exact source bytes pinned below.",
+  "files": [
+    {
+      "pr": 175,
+      "head": "08fe1388ad63c758680b3695249aca319515c47d",
+      "path": "research/lean-global-closure-20261121/machinery/EXACT_RUN_WEIGHT_COMMUTATOR.md",
+      "sha256": "521ed021ebfa0f010c9881e2ec40fb2603438547c383a0ff8bd6762fbc8be6b7",
+      "bytes": 11032,
+      "role": "Exact surviving commutator coefficient; prevents treating finite forcing as a cutoff-uniform energy bound."
+    },
+    {
+      "pr": 175,
+      "head": "08fe1388ad63c758680b3695249aca319515c47d",
+      "path": "research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md",
+      "sha256": "dd959aa34c35773d20642582d0aeb7c25d2d1eee65bc969b9a35a22304cd4be5",
+      "bytes": 20115,
+      "role": "Source-qualified moving ordinary fibres; the persistent original-source submeasure remains."
+    },
+    {
+      "pr": 175,
+      "head": "08fe1388ad63c758680b3695249aca319515c47d",
+      "path": "research/lean-global-closure-20261121/machinery/BOUNDED_LANGUAGE_SOURCE_RIGIDITY.md",
+      "sha256": "63af23e8fa3594d6e1355dcc35a9d3bea52040528f37891b5420a2706f7a52d8",
+      "bytes": 10545,
+      "role": "Fixed-language source restrictions; not a universal carry-completeness theorem."
+    },
+    {
+      "pr": 176,
+      "head": "00018ce11fa657b5f3fae072e5567a1d93184c2b",
+      "path": "research/lean-global-resolvent-20261121/overview/machinery/CONTEXT_FREE_CERTIFICATE_OBSTRUCTION.md",
+      "sha256": "7f85995926e7d17bc3770006fea8fb8e6720c2662ffb51ddb61c773dca628de8",
+      "bytes": 11912,
+      "role": "Sound bounded-gap certificate pumping does not cover cofinal sources."
+    },
+    {
+      "pr": 178,
+      "head": "9d4ae09cd50ccd54036141edc3938d2cabe786fd",
+      "path": "research/deep-machinery-20261122/rigidity/SIBLING_REPAIR_ATTEMPT.md",
+      "sha256": "73229bb0349858c68b68cdab61bd82bd3b1db0800ff5bd1e2b048a2d371031b2",
+      "bytes": 7013,
+      "role": "Legal adaptive inverse correspondence leaves the actual terminal-height distortion open."
+    },
+    {
+      "pr": 178,
+      "head": "9d4ae09cd50ccd54036141edc3938d2cabe786fd",
+      "path": "research/deep-machinery-20261122/termination/MODE_REFINEMENT_ATTEMPT.md",
+      "sha256": "5540863b8b80df8820659c381b7c38deb12afedff2777f19caec90fcedf3dba4",
+      "bytes": 12368,
+      "role": "Fixed mode-switch bounds do not pay arbitrary changing-block precision."
+    },
+    {
+      "pr": 180,
+      "head": "a66a44c9bf058cd7efe1018827ddda9a13297a21",
+      "path": "research/deep-machinery-20261122/README.md",
+      "sha256": "119bbcdcd9b9219c683c45a6e990d47c245cbb394c2c975be1c478e1da239daa",
+      "bytes": 7744,
+      "role": "Whole-source survival surplus and exact remaining legal splice; canonical current survives symmetrization."
+    },
+    {
+      "pr": 185,
+      "head": "980d40fc4afeaaf8f2a9256f322acf3e4568e013",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98",
+      "bytes": 10058,
+      "role": "Entropy ceiling of actual ternary time laws, without the lower bound that would exclude escape."
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "sha256": "f27af626f9de6beaf07562f0a4ef4a1240f99eb5cab04c99a50789a048a4d960",
+      "bytes": 16794,
+      "role": "Effective fixed mixed-block cycle classification already handles independent exponents; comparable-growth CZ route is not a new positive-cycle result."
+    },
+    {
+      "pr": 177,
+      "head": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "path": "research/lean-exact-witness-global-20261121/LITERATURE_ARITHMETIC_RETURN.md",
+      "sha256": "f530ee3644600cf73e3881dc008c99b251a644b3dd5a0f1f2fd67a540aa182e1",
+      "bytes": 15075,
+      "role": "Frozen ESS return and upper Banach density input."
+    },
+    {
+      "pr": 177,
+      "head": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "path": "research/lean-exact-witness-global-20261121/LITERATURE_CANONICAL_ENERGY.md",
+      "sha256": "3803fc415be23b6d7b65880ffdb89eec5a0f14f791356d84e21330f058b6cdee",
+      "bytes": 30050,
+      "role": "Frozen canonical reference, original charge, source-wise BV, and escaping component coefficient."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Evertse, Schlickewei, Schmidt",
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "publication": "Annals of Mathematics 155 (2002), 807-836",
+      "theorem": "1.1",
+      "url": "https://arxiv.org/pdf/math/0409604",
+      "role": "Published finiteness input through the frozen sparse-endpoint proof; not installed as a Lean axiom."
+    },
+    {
+      "authors": "Corvaja, Zannier",
+      "title": "S-unit points on analytic hypersurfaces",
+      "publication": "Annales scientifiques de l Ecole Normale Superieure 38 (2005), 76-92",
+      "theorem": "1",
+      "url": "https://numdam.org/item/10.1016/j.ansens.2004.09.003.pdf",
+      "role": "Primary paper read for a comparable-multiparameter cycle attack. Its proposed positive-cycle consequence was subsumed by pinned PR183 BC-T3 and is not promoted as a new result."
+    }
+  ]
+}

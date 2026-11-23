@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-density-free-germ-sources/v1",
+  "date": "2026-11-23",
+  "source_sha256": {
+    "DENSITY_FREE_DEFLATED_GERM.md": "dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990",
+    "GermCapacity.lean": "8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1",
+    "check_deflated_germ.py": "639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8"
+  },
+  "primary_rationality": {
+    "source": "Antoine Chambert-Loir and Camille Nous, Potentiel et rationalite, arXiv:2305.17210v2, 31 August 2026, Sections 2.7 and 4.1–4.3",
+    "url": "https://arxiv.org/pdf/2305.17210",
+    "application": "Written density-free deflated-germ rationality criterion, with integral-model, all local-realization and positive-game hypotheses explicitly reconstructed.",
+    "boundary": "External primary theorem; no unconditional actual-germ construction or full analytic Lean formalization."
+  },
+  "peer_reads": [
+    {
+      "pr": 182,
+      "head": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+      "read": "PR metadata/body, complete README, complete RATIONAL_SELECTION.md",
+      "used": "R6-SEL-4 and actual-prefix deflation formula; no import of density-conditioned R6-SEL-5"
+    },
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "read": "PR metadata/body, complete GENERAL_DENSITY_JET.md and FINITE_FILTER_TEST.md",
+      "used": "Earlier multipoint interface, positive-source height bound, finite-filter obstruction"
+    }
+  ],
+  "orientation_only": [
+    {
+      "title": "Bell–Gunn–Nguyen–Saunders, arXiv:2206.00862v1",
+      "url": "https://arxiv.org/pdf/2206.00862",
+      "scope": "Primary text opened for orientation; no theorem from this source is used in DG5."
+    },
+    {
+      "title": "Breuer–Simon, Natural boundaries and spectral theory",
+      "url": "https://web.ma.utexas.edu/mp_arc/c/10/10-29.pdf",
+      "scope": "Primary text opened for orientation; no theorem from this source is used in DG5."
+    }
+  ],
+  "formal_scope": "Six finite Lean declarations: strict explicit capacity strategy and integer inverse-coefficient identities. Infinite analytic rationality, variable-radius optimization and full arithmetic germ remain written/unconstructed as specified."
+}

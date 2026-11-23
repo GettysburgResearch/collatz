@@ -1,0 +1,164 @@
+{
+  "all_depth_theorem_evidence": "paper proof in SECTION_MASS_ATTACK.md; not inferred from this replay",
+  "density": "F_k(n)=3^k P(S_k congruent to n mod3^k)",
+  "exact_negative_residual": {
+    "conclusion": "Raw W_2 drift is negative here; the same finite packet gives the smaller ordinary merger 27.",
+    "drift_threshold": "85266756/9235",
+    "endpoint": 4616,
+    "integer_inequality": "9235*3^66 > 85266756*2^90",
+    "odd_inputs": 33,
+    "ordinary_trace": [
+      27,
+      41,
+      62,
+      31,
+      47,
+      71,
+      107,
+      161,
+      242,
+      121,
+      182,
+      91,
+      137,
+      206,
+      103,
+      155,
+      233,
+      350,
+      175,
+      263,
+      395,
+      593,
+      890,
+      445,
+      668,
+      334,
+      167,
+      251,
+      377,
+      566,
+      283,
+      425,
+      638,
+      319,
+      479,
+      719,
+      1079,
+      1619,
+      2429,
+      3644,
+      1822,
+      911,
+      1367,
+      2051,
+      3077,
+      4616
+    ],
+    "parent": 2308,
+    "positive_integer_difference": "179835499451235240895300577234092971",
+    "predecessor": 27,
+    "scope": "Does not exclude a finite-core repair, a different weight, or supply global closure.",
+    "shortcut_clock": 45,
+    "single_source_green_weight": "30903154382632612361920641803529/1237940039285380274899124224"
+  },
+  "fixed_positive_targets": [
+    {
+      "all_depth_upper_bound": "32/7",
+      "finite_trace_sum": "5638646311077683794228602787209/4006401897017613910903160747855",
+      "ordinary_target": 1
+    },
+    {
+      "all_depth_upper_bound": "392/13",
+      "finite_trace_sum": "22554585244310735176914411148836/4006401897017613910903160747855",
+      "ordinary_target": 2
+    },
+    {
+      "all_depth_upper_bound": "1800/19",
+      "finite_trace_sum": "0",
+      "ordinary_target": 3
+    },
+    {
+      "all_depth_upper_bound": "12800/31",
+      "finite_trace_sum": "13131922143952620611094986834196/4006401897017613910903160747855",
+      "ordinary_target": 5
+    },
+    {
+      "all_depth_upper_bound": "47432/43",
+      "finite_trace_sum": "2704452014356991447667544518069/4006401897017613910903160747855",
+      "ordinary_target": 7
+    },
+    {
+      "all_depth_upper_bound": "279752/67",
+      "finite_trace_sum": "18249329615100327566685082156836/4006401897017613910903160747855",
+      "ordinary_target": 11
+    },
+    {
+      "all_depth_upper_bound": "9803592/163",
+      "finite_trace_sum": "0",
+      "ordinary_target": 27
+    },
+    {
+      "all_depth_upper_bound": "143820800/319",
+      "finite_trace_sum": "82300294539428559171824445570804/4006401897017613910903160747855",
+      "ordinary_target": 53
+    },
+    {
+      "all_depth_upper_bound": "781231392/487",
+      "finite_trace_sum": "0",
+      "ordinary_target": 81
+    },
+    {
+      "all_depth_upper_bound": "4707216392/763",
+      "finite_trace_sum": "4562332403775081891671270539209/4006401897017613910903160747855",
+      "ordinary_target": 127
+    }
+  ],
+  "gap_law": "P(a)=3/4^a, for every positive integer a",
+  "levels": [
+    {
+      "complete_residue_count": 3,
+      "density_at_negative_one": "12/5",
+      "density_at_positive_one": "3/5",
+      "density_sum": "3",
+      "depth": 1,
+      "negative_one_lower_bound": "9/4",
+      "ternary_modulus": 3,
+      "vector_sha256": "65e04b02be67df5b8b1433173393200a7fd8e1707af645a2821c8cf4313ce585"
+    },
+    {
+      "complete_residue_count": 9,
+      "density_at_negative_one": "492/91",
+      "density_at_positive_one": "192/455",
+      "density_sum": "9",
+      "depth": 2,
+      "negative_one_lower_bound": "81/16",
+      "ternary_modulus": 9,
+      "vector_sha256": "020b5eaea764bf185887489f93616a63d62a783cd5077666fc0b3444d045519b"
+    },
+    {
+      "complete_residue_count": 27,
+      "density_at_negative_one": "30964474668/2545165805",
+      "density_at_positive_one": "614157312/2545165805",
+      "density_sum": "27",
+      "depth": 3,
+      "negative_one_lower_bound": "729/64",
+      "ternary_modulus": 27,
+      "vector_sha256": "1813939d27d7ab7c91d4c646874ced17ff973687fe9c0eb9551ed4ec31ca45a2"
+    },
+    {
+      "complete_residue_count": 81,
+      "density_at_negative_one": "15667420537574779931097199681188/572343128145373415843308678265",
+      "density_at_positive_one": "577432989967854512698867264512/4006401897017613910903160747855",
+      "density_sum": "81",
+      "depth": 4,
+      "negative_one_lower_bound": "6561/256",
+      "ternary_modulus": 81,
+      "vector_sha256": "ff63860dc752a3995f56205d9ce0033a69ed511a5d2cb6ba6e22d59a4ca8878c"
+    }
+  ],
+  "max_depth": 4,
+  "source_sha256": "3a4261ed39799c0ef8f90b43af295de729d87646f4655e1260371e94e22f863c",
+  "status": "PASS: exact finite quotient replay; not a Collatz proof",
+  "warning": "The negative residue -1 at each modulus is one fixed 3-adic target; its positive representatives change with k."
+}

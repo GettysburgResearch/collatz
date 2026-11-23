@@ -1,0 +1,4 @@
+import Collatz.MultiplierTransport
+
+#print axioms CollatzMultiplierTransport.merger_clock_budget
+#print axioms CollatzMultiplierTransport.no_uniform_merger_clock

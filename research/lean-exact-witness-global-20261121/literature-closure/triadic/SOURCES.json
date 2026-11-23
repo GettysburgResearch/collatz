@@ -1,0 +1,54 @@
+{
+  "inspection_date": "2026-11-23",
+  "scope": "Source-dependent triadic pullback construction; literature is motivation and the stated conjugacy framework, not an imported closure axiom.",
+  "primary_literature": [
+    {
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "read_scope": "Section 1 inverse-parity formula and autoconjugacy definition; main-results framework. The finite source dual was reconstructed directly from its certified path."
+    },
+    {
+      "authors": "Kenneth G. Monks",
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "read_scope": "Introduction, Theorem 2, Theorem 5, and Conjecture 6. No universal polynomiality claim was imported."
+    },
+    {
+      "authors": "Benjamin Kraft and Keenan Monks",
+      "title": "On Conjugacies of the 3x+1 Map Induced by Continuous Endomorphisms of the Shift Dynamical System",
+      "url": "https://monks.scranton.edu/files/pubs/KraftMonks.pdf",
+      "read_scope": "Introduction, definitions of block maps and coimage conjugacy, Theorems 1-2 and Corollary 4. No rationality of an unknown target was inferred."
+    }
+  ],
+  "repository_sources": [
+    {
+      "pr": 176,
+      "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "paths": [
+        "research/lean-global-resolvent-20261121/overview/triadic-height/README.md",
+        "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md"
+      ],
+      "use": "Exact F(r) potential, signed branch estimates, and the finite horizon 9 bl(n max(1,|a|) F(r))+1."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "paths": [
+        "research/profound-step-20261123/README.md",
+        "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+        "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+        "research/profound-step-20261123/transfer/REAL_ADIC_TRANSFER_ATTEMPT.md"
+      ],
+      "use": "Current boundary-corrected stream, backward denominator persistence, exact reset accounting, and the actual carry obstruction to importing polynomiality."
+    },
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "paths": [
+        "research/global-closure-20261123/duality/TRIADIC_RANK.md"
+      ],
+      "use": "Inherited triadic complementary-point framework and previous height-dependent closing implication."
+    }
+  ]
+}

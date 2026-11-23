@@ -1,0 +1,15 @@
+'CollatzTemplateSelection.carry_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.fixed_center_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.contracting_window_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.primitive_displacement_ne_zero' depends on axioms: [propext, Quot.sound]
+'CollatzTemplateSelection.nonintegral_rank_above_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.ordinary_anchor_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.ordinary_nonintegral_rank_above_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzTemplateSelection.finite_template_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.word_multiplier_bound' depends on axioms: [propext, Quot.sound]
+'CollatzTemplateSelection.word_carry_bound' depends on axioms: [propext, Quot.sound]
+'CollatzTemplateSelection.template_sublevel_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.terminal_word_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTemplateSelection.terminal_source_rank' depends on axioms: [propext, Classical.choice, Quot.sound]

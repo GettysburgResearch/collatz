@@ -1,0 +1,65 @@
+{
+  "schema": "collatz-ordinary-entrance-replay/v1",
+  "scope": "Actual author executions for the displayed finite module and exact controls; no infinite analytic proof by census",
+  "records": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/check_entrance_law.py"
+      ],
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "seconds": 2.372,
+      "stdout_file": "normal.json",
+      "stdout_sha256": "a232944c6bb39f142847976009ad5677696bd7c9ad6d90524adb620a926487d9",
+      "stdout_bytes": 3768,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/check_entrance_law.py"
+      ],
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "seconds": 2.619,
+      "stdout_file": "optimized.json",
+      "stdout_sha256": "a232944c6bb39f142847976009ad5677696bd7c9ad6d90524adb620a926487d9",
+      "stdout_bytes": 3768,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/EntranceLaw.lean"
+      ],
+      "workdir": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.008,
+      "stdout_file": "lean-strict-audit.log",
+      "stdout_sha256": "29351aee42731aab4264d11c5438e48ac87aa5c3e36e5a839d76d5a83f1f3400",
+      "stdout_bytes": 791,
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "lean_public_declarations": 9,
+  "source_sha256": {
+    "ORDINARY_ENTRANCE_LAW.md": "e38a7749ca5b7290daf33838586751d46232ca27f414e83fefe847b6ce72f93b",
+    "EntranceLaw.lean": "1db93cb36595a0823887fd520602edfc9294dc8693fb6d3bf4451a56dff03bab",
+    "check_entrance_law.py": "dea3282bf2fe3b0faab28ebb448402b42b379ed2e734eed20fcdb59f57d7cc21"
+  },
+  "note": "Final checker reruns bind the frozen manuscript/checker; the unchanged Lean source retains its already completed strict compile record."
+}

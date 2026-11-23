@@ -1,0 +1,381 @@
+{
+  "schema": "collatz-focused-lean-checkpoint/v1",
+  "checkpoint": 16,
+  "created_utc": "2026-11-23T02:05:17.271859+00:00",
+  "parent_sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "commands": [
+    {
+      "label": "build",
+      "command": [
+        "lake",
+        "build",
+        "Collatz.NegativeCycleExtension",
+        "Collatz.WitnessLengthSeparation"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.652,
+      "log": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-build.txt",
+      "log_sha256": "1f51f8bacf4f6a5151e8b5bdb47f712583c4c9da6bfa7f3a390f6fc6616b3fe3"
+    },
+    {
+      "label": "strict-extension",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/NegativeCycleExtension.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.467,
+      "log": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-strict-extension.txt",
+      "log_sha256": "da83dca465741d0c5125ccc9959041d76ed57b69604c15ee12c8b87d29aeb908"
+    },
+    {
+      "label": "strict-length",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/WitnessLengthSeparation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.873,
+      "log": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-strict-length.txt",
+      "log_sha256": "28915026ae79a0ac6b179ed1585a8a7bf7d9b7398d9e887df12cf182d540abbe"
+    },
+    {
+      "label": "axioms-extension",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "AuditNegativeCycleExtension.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.203,
+      "log": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-axioms-extension.txt",
+      "log_sha256": "cf34d37c8a3c9c721dca108f19d0b3a75ab6dd96707d335b9fee66b9bba6b024"
+    },
+    {
+      "label": "axioms-length",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "AuditWitnessLengthSeparation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.215,
+      "log": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-axioms-length.txt",
+      "log_sha256": "02df4cbf4b1d81131b4637f92ae9bf06422c361cb0e88390c68fc1696040ab05"
+    }
+  ],
+  "scope": "Focused build and strict audits of nine new public results only. Inherited dependencies reused; no claim of replaying the aggregate historical audit.",
+  "new_public_result_count": 9,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_hashes": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/NegativeCycleExtension.lean",
+      "sha256": "f69070cfc0767d24a1e8305e431574e9aed62b7158b80694b7787df7e3330012"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessLengthSeparation.lean",
+      "sha256": "03bcc009632fed5696438f5b4a9c7288b239f2f1f5810bc61ffe92bb6a41da41"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditNegativeCycleExtension.lean",
+      "sha256": "bb02a5e564bfda8b912ec0c16956a1180f1d87e07379d084c69f37cd144efdc3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditWitnessLengthSeparation.lean",
+      "sha256": "50e5e06adab104a95a966c1f7a89812b8c02e5b23722e798c4a3674006569a2e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+      "sha256": "ce6f912d36e9e6dfc55f3718d58c48b6281ee2b1e1190e87425dec17fd91cc0f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+      "sha256": "bf31fd8898ff0944834def75be8ca327bf8c5a34e139c681d181d666145f77ea"
+    }
+  ],
+  "inherited_lean_files_unchanged": [
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditFiniteSourceBoundary.lean",
+      "sha256": "03e4e328999e200a27f300494e5616bfa469c233fa3a4fda74d865a2b3a36a69"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditSourceGreenCoefficient.lean",
+      "sha256": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/AffineBlockPrecision.lean",
+      "sha256": "9a14848638d7b0d36372ea2f6f06119173620714100fdf5e07fe30f1d6cf249f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ArithmeticPrecision.lean",
+      "sha256": "72ddbe6963d3747cead438fcf892fa0946876ffcc4ccaba0e74c0ce58a127fb6"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/AsymmetricPsiReset.lean",
+      "sha256": "773af3bb312aa57cdbad9e530945ff5ee44fb642ebceea9f08549ea411a25615"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BinaryRunClock.lean",
+      "sha256": "0a3bce12fd66cd4c13040f054b60f7626c653da1e77dcc837de8977531c041e3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BinaryRunForcing.lean",
+      "sha256": "f720ef163c41c7a88ba0995a5836640586cde2e01a23f7f9311b32f303d473a7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedFourNormalForm.lean",
+      "sha256": "916738b33f17df9b9481e68951d03f18d6d6ca91ca4924dcc1fca29952ffe4b7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedGapCofinal.lean",
+      "sha256": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ClockSynchronization.lean",
+      "sha256": "64238fb906e02c311c32042963527b57a3a66622a4d2502cee4ca0ec62dc606f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/Closure.lean",
+      "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ContextSurgery.lean",
+      "sha256": "c9e8e0187c42a14f06b0951a8b88baa1d0c7ea681b06c5782419002b9356a593"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/DirectedInduction.lean",
+      "sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/DyadicCoset.lean",
+      "sha256": "c282dee9ff69f966bbe700f8b48c33426f42f9a2efb8d59e1ebcc76bb1434bff"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/FiniteSourceBoundary.lean",
+      "sha256": "9e456d32b4015323542f2741b6662bd9160709c9018734628f15f906afe2f051"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean",
+      "sha256": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapHandoffs.lean",
+      "sha256": "fd4c4251ab270f803c88c66599dcd22a687a25f3f9a9f498018d93f050e2419b"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapMultiset.lean",
+      "sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/HighGapPump.lean",
+      "sha256": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/JointMinimalCounterexample.lean",
+      "sha256": "a91c248f26049707df8d6c3da9b6cc82f616ecbfcf35a09c14fea156ab5c4432"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapGlobal.lean",
+      "sha256": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapLoops.lean",
+      "sha256": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapPump.lean",
+      "sha256": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapToPsi.lean",
+      "sha256": "8e0987e5ad506d3a9b8b764f7b35defb1cf03560450c994ebc3c2f48f913ca06"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowIntervalRefinement.lean",
+      "sha256": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/MergerDenominatorClear.lean",
+      "sha256": "cf54fed295d0869cefc1a5821481cefb7b9f3e174d7d8b7c1ef6776c7a1b429e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/NegativeShadow.lean",
+      "sha256": "b5cfdf34ebb56651b36ac3a4908f9295e31da64d787b43b070cab3488f4b402d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiCompletion.lean",
+      "sha256": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadFour.lean",
+      "sha256": "07d1427cfe2ea62e8866f14fe03bd013ccb4522f022c491971501d73d3ce2304"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadTwo.lean",
+      "sha256": "5946dac63e63576dc6799a4fd26ae86de5f22e4352154e1e472ee0ed363caddb"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiOddValuations.lean",
+      "sha256": "f7b7d0e338f9f2601e7809352849c93380d695191f8c2d50c341c01201ceaafd"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiSuffix.lean",
+      "sha256": "ed8bf9f6702ff2aeffefd08dfef02def97272750633e2b24e65c53b8025ddae7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiValuationOne.lean",
+      "sha256": "46268f211e0bd0b0b27f13f7d1e30720ab77de994c934729a033787f91ed34c7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ResetFamily.lean",
+      "sha256": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/RetainedEvenBoundary.lean",
+      "sha256": "3518b36ef6394d41bd6664060157171fc42746db6178f02e09ef64a605237e3f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/RetainedEvenReset.lean",
+      "sha256": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ReverseBasin146.lean",
+      "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/RootedSourceFloor.lean",
+      "sha256": "b23f59ce7d6261208d0dbc6a7793c839bb8214dbf7ed6cca3e7b42e4ae057c03"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SegmentFloor.lean",
+      "sha256": "eba1fe6c42ea475f5c0906b61a78dd3ef974da772ef32d844f196d830db35f78"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/Shadow.lean",
+      "sha256": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SignedShadow.lean",
+      "sha256": "72e61feb3a40fecff48bcf15a20cc296db807e7ab929963b9ca94f6bada46ff0"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceGreenCoefficient.lean",
+      "sha256": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceOrbitProgress.lean",
+      "sha256": "1d1b08d4b231f4f37011bb298bb68f36d929e145f3ca33bdf943a7e57359a411"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceWitness.lean",
+      "sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/UnboundedGapReset.lean",
+      "sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/Witness.lean",
+      "sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessEnergy.lean",
+      "sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+    }
+  ],
+  "inherited_lean_file_count": 47,
+  "actual_public_result_audit": [
+    {
+      "name": "CollatzNegativeCycleExtension.extension_data",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzNegativeCycleExtension.extension_binary_guard",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzNegativeCycleExtension.extension_ternary_guard",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.four_step_input",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.exact_clocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.output_prefix_and_tail",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.output_length_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.tuple_length_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CollatzWitnessLengthSeparation.no_input_length_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "actual_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

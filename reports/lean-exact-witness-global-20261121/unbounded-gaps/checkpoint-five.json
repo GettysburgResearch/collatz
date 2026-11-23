@@ -1,0 +1,30 @@
+{
+  "audit_command": "lake env lean -DwarningAsError=true Audit.lean",
+  "audit_exit_code": 0,
+  "build_command": "lake build",
+  "build_exit_code": 0,
+  "build_jobs": 17,
+  "fresh_output_directory": "/tmp/collatz-unbounded-clean-build",
+  "lean_version": "4.34.1",
+  "proof_scope": "Unbounded guarded families and a conditional complete-dispatcher theorem. Complete remains unproved.",
+  "source_hashes": {
+    "research/lean-exact-witness-global-20261121/lean/Audit.lean": "d815ff406b79c1b582d0b4570aa58533073a83520ffeaa146e575d6d0037c723",
+    "research/lean-exact-witness-global-20261121/lean/Collatz.lean": "3e002fb640c6b435b676cf468fd8f6d33fafa58e9ab05c4be1315af1103c54d9",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean": "1d911c2d2a305263522b13c358c1a529601b69f6212cdcf248a6dff667bbd40f",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+  },
+  "source_identity_check": "All 16 Lean files exactly equal the clean build inputs.",
+  "status": "PASS"
+}

@@ -1,0 +1,101 @@
+{
+  "analytic_scope": "SECTION_MASS_ATTACK.md is a paper theorem with exact finite replay; not formalized or imported as an axiom",
+  "axiom_audit": {
+    "command": "lake env lean -DwarningAsError=true Audit.lean",
+    "declarations": 92,
+    "exit_code": 0,
+    "log": "checkpoint-seven-axioms.txt",
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": [],
+    "without_axioms": 2
+  },
+  "checkpoint": 7,
+  "created_at_utc": "2026-11-21T22:36:02.428748+00:00",
+  "fresh_build": {
+    "command": "lake build",
+    "directory_had_no_previous_lake_outputs": true,
+    "exit_code": 0,
+    "jobs": 27,
+    "log": "checkpoint-seven-build.txt",
+    "source_files": 26
+  },
+  "global_remaining_premise": "CollatzBoundedGapCofinal.LowIntervalStep; additional proved low-case rules are explicit in the new modules",
+  "latest_changed_external_head": {
+    "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+    "pr": 178,
+    "scope": "written deductions and receipts; no changed Lean input"
+  },
+  "lean_dependencies": "Lean core only",
+  "lean_source_sha256": {
+    "Audit.lean": "573df12157fbdc3a741713a0dadbdb293d78112a8c6ac3dc5266fe81570366ec",
+    "Collatz.lean": "258b0264cc12a7115ba18bb761dae7748bc213b8ee18e87472d498d98de721f8",
+    "Collatz/AsymmetricPsiReset.lean": "773af3bb312aa57cdbad9e530945ff5ee44fb642ebceea9f08549ea411a25615",
+    "Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "Collatz/GapHandoffs.lean": "fd4c4251ab270f803c88c66599dcd22a687a25f3f9a9f498018d93f050e2419b",
+    "Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "Collatz/LowGapToPsi.lean": "8e0987e5ad506d3a9b8b764f7b35defb1cf03560450c994ebc3c2f48f913ca06",
+    "Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "Collatz/MergerDenominatorClear.lean": "cf54fed295d0869cefc1a5821481cefb7b9f3e174d7d8b7c1ef6776c7a1b429e",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/PsiSuffix.lean": "ed8bf9f6702ff2aeffefd08dfef02def97272750633e2b24e65c53b8025ddae7",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/RetainedEvenBoundary.lean": "3518b36ef6394d41bd6664060157171fc42746db6178f02e09ef64a605237e3f",
+    "Collatz/RetainedEvenReset.lean": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+  },
+  "lean_version": "4.34.1",
+  "new_artifact_sha256": {
+    "BOUNDED_GAP_ATTACK.md": "120452cc12dc88adfc84f4a059c29e64377b9f3a7a33140afccb9014004d3a0e",
+    "LOW_INTERVAL_REFINEMENT.md": "ffd05a10d1c322b8dbdf5c92e7720c86c3d5688ac1ae3fd2a727fd898471eaca",
+    "MERGER_ATTACK.md": "807796cbd4496cabdf492f55c158a0268a041a3fb79a9828f6c28406f8a36c81",
+    "MERGER_RETAINED_EVEN.md": "ffe877d8fe88c4cccd7425b91a9fa543386126ac9158b1997b822bf2bcf75d11",
+    "PSI_SUFFIX_ATTACK.md": "a634fdf16a2f00e0f88290847c7af2001529c9ad3007410e006c75127d131ab5",
+    "SECTION_MASS_ATTACK.md": "2f3419ea05dac4fb6b9fe54f5f5cf195dfa5fbbf5513b5d15d163d886cae987e",
+    "gap-search/high/cofinal_rewrite.py": "26ecde9637d6d8e9f1bac9c87ae8b0ef35f148bba2822083301ae05d88b6860b",
+    "gap-search/high/denominator_clear.py": "09687d62495fd97a173ff0aa14e3a416ce2167a26cd543a1c04ba7d5988b82e0",
+    "mass-search/critical_inverse_trace.py": "3a4261ed39799c0ef8f90b43af295de729d87646f4655e1260371e94e22f863c"
+  },
+  "parent_published_head": "00a611094043afeb256d6532b477c0709e8ed270",
+  "replays": {
+    "cofinal": {
+      "cases": 30,
+      "command": "python [-O] -B gap-search/high/cofinal_rewrite.py --replay",
+      "normal_optimized_identical": true,
+      "stdout_sha256": "c2bdd2ba74e5e7b8dd1630494f5d4a0336a1df9d2c0ae961b6e6c943bedd6fc8"
+    },
+    "denominator": {
+      "command": "python [-O] gap-search/high/denominator_clear.py --power K --first-gap A",
+      "normal_optimized_identical": true,
+      "receipt": "denominator-clear-replay.json",
+      "whole_affine_cases": 22
+    },
+    "inverse_trace": {
+      "command": "python [-O] mass-search/critical_inverse_trace.py --depth 4",
+      "exact_residue_counts": [
+        3,
+        9,
+        27,
+        81
+      ],
+      "normal_optimized_identical": true,
+      "receipt": "../section-mass/critical-inverse-trace.json"
+    }
+  },
+  "repository_gate": "A separate complete clean-checkout gate is run on the final committed tree before remote publication; its result and exact checked tree are recorded in PR177.",
+  "status": "Partial unconditional and conditional Lean theorems; original residue implication and full Collatz remain OPEN"
+}

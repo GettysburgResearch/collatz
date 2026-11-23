@@ -1,0 +1,17 @@
+import Collatz.SourceGreenCoefficient
+
+#print axioms CollatzSourceGreenCoefficient.shifted_identity
+#print axioms CollatzSourceGreenCoefficient.evenDefect_pos_iff
+#print axioms CollatzSourceGreenCoefficient.evenDefect_zero_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_bound
+#print axioms CollatzSourceGreenCoefficient.coefficient_strict_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_eq_iff
+#print axioms CollatzSourceGreenCoefficient.allOdd_count
+#print axioms CollatzSourceGreenCoefficient.allOdd_shifted_identity
+#print axioms CollatzSourceGreenCoefficient.allOdd_divisibility
+#print axioms CollatzSourceGreenCoefficient.even_input_before_large_power
+#print axioms CollatzSourceGreenCoefficient.state_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.allOdd_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.initial_ascent
+#print axioms CollatzSourceGreenCoefficient.cubic_surplus
+#print axioms CollatzSourceGreenCoefficient.cubic_path_certificate

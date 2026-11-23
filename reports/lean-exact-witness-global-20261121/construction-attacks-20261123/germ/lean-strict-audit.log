@@ -1,0 +1,6 @@
+'CollatzGermCapacity.first_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGermCapacity.second_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGermCapacity.capacity_strategy_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGermCapacity.inverse_constant' does not depend on any axioms
+'CollatzGermCapacity.inverse_linear' depends on axioms: [propext]
+'CollatzGermCapacity.inverse_convolution' depends on axioms: [propext, Quot.sound]

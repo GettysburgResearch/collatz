@@ -1,0 +1,6 @@
+'CollatzUnitProjection.odd_part_reaches' depends on axioms: [propext, Quot.sound]
+'CollatzUnitProjection.nonunit_odd_successor_reaches' depends on axioms: [propext, Quot.sound]
+'CollatzUnitProjection.full_source_projects' depends on axioms: [propext, Quot.sound]
+'CollatzUnitProjection.odd_successor_unit' depends on axioms: [propext]
+'CollatzUnitProjection.projected_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzUnitProjection.finite_projection_mass' depends on axioms: [propext, Classical.choice, Quot.sound]

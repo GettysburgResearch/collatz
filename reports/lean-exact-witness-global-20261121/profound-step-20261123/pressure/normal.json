@@ -1,0 +1,107 @@
+{
+  "counts": {
+    "anchored_uniform_integrability_cases": 48,
+    "balanced_density_atoms": 3410,
+    "chronological_entropy_controls": 32,
+    "finite_conditioning_cases": 7,
+    "fractional_moment_cases": 10,
+    "literature_denominator_control": 1,
+    "lost_source_rejected": 10,
+    "normalizer_blindness_atoms": 13640,
+    "omitted_killing_rejected": 10,
+    "ordinary_phase_hits": 1939,
+    "ordinary_tree_cases": 10,
+    "periodic_phase_control": 1,
+    "terminal_atoms_compared": 3410,
+    "wrong_cost_sign_rejected": 1
+  },
+  "finite_tree_rows": [
+    {
+      "atoms": 341,
+      "fractional_moment": "425466520212887712171857329/589580430265663925089696720",
+      "green_ratio": "39025793635903701168749118653/7546629507400498241148118016",
+      "root": 5,
+      "s": 2
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "718567636611058794649164460068882980657/967060520237017801135123372044417881672",
+      "green_ratio": "46561289242848001034670617305043886771509297/3961079890890824913449465331893935643328512",
+      "root": 5,
+      "s": 3
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "368709748211289436986994432/340430728279126110036090037",
+      "green_ratio": "732946380231760208703259792/340430728279126110036090037",
+      "root": 7,
+      "s": 2
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "5606020694084423243413727492205568788736/5525515791653282699374707590754316311481",
+      "green_ratio": "9532434377527298859730253745485360259136/5525515791653282699374707590754316311481",
+      "root": 7,
+      "s": 3
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "376243066707279189807937732/407338403106907804588607365",
+      "green_ratio": "593082580167515484371658209/81467680621381560917721473",
+      "root": 41,
+      "s": 2
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "5599311324004083119505905074707249984136/5935841230603569169017679254796815369721",
+      "green_ratio": "90613888880291092768973036846002777386361/5935841230603569169017679254796815369721",
+      "root": 41,
+      "s": 3
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "33165125901434591433264484/79044080491351894798807345",
+      "green_ratio": "18561790264784622477255269/63235264393081515839045876",
+      "root": 65,
+      "s": 2
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "162364858269862234772637401871234831904/399199882577185706864199447799456558129",
+      "green_ratio": "720481051750095000216928408052352936257/3193599060617485654913595582395652465032",
+      "root": 65,
+      "s": 3
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "1303088280770589880548265444/2148991932466841248557506233",
+      "green_ratio": "21262635534635325800529323713/34383870919469459976920099728",
+      "root": 193,
+      "s": 2
+    },
+    {
+      "atoms": 341,
+      "fractional_moment": "44791260905359312838484327784493769918788/63542914807673492895038676528587617367873",
+      "green_ratio": "2817698851617940573312683031589995288863857/4066746547691103545282475297829607511543872",
+      "root": 193,
+      "s": 3
+    }
+  ],
+  "ordinary_phase_sources": 469,
+  "phase_ray": [
+    65,
+    49,
+    37,
+    7,
+    11,
+    17,
+    13
+  ],
+  "scope": "finite actual inverse trees and ordinary phases; finite generic conditioning and normalization controls; no escaping source or infinite analytic theorem is tested by census",
+  "source_sha256": {
+    "EntranceLaw.lean": "1db93cb36595a0823887fd520602edfc9294dc8693fb6d3bf4451a56dff03bab",
+    "ORDINARY_ENTRANCE_LAW.md": "e38a7749ca5b7290daf33838586751d46232ca27f414e83fefe847b6ce72f93b",
+    "check_entrance_law.py": "dea3282bf2fe3b0faab28ebb448402b42b379ed2e734eed20fcdb59f57d7cc21"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "collatz-witness-charge-sources/v1",
+  "status": "Original implication and full Collatz remain OPEN. New scoped charge, classification and obstruction theorems; finite controls explicitly separated.",
+  "retained_parent": {
+    "pr": 177,
+    "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+    "local_same_tree_head": "1f6c718ce598d83009c8295556b39342353ac8a8"
+  },
+  "science": {
+    "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WITNESS_CHARGE_AND_POWER_INDUCTION.md": "c20dbdde1ebb7e1aa7d4a71e7e13091755f8a98b059bebc381d495c14767b591",
+    "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WitnessCharge.lean": "c0c9d658f0de0c344f77f0f4c0a8d11a4f8484695aa953d8d14ec5fb2acc115d",
+    "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/check_witness_charge.py": "f8d239f4c397771a62e3cda0570536bf26034a28fc1986db8522be2cc75c6e7e"
+  },
+  "prior_sources": [
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessLengthSeparation.lean",
+      "sha256": "03bcc009632fed5696438f5b4a9c7288b239f2f1f5810bc61ffe92bb6a41da41",
+      "use_and_evidence": "Complete source read and algebra reconstructed; the four-odd-step family, target prefix and existing output-length separation are inherited. No prior compilation rerun."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JOINT_EDIT_COMPILER.md",
+      "sha256": "9832f769044ccbf33765665f60652a854efee0821d63909a1fb8effb203a06b8",
+      "use_and_evidence": "Complete prior finite-clock compiler read; used to distinguish existence of a finite decision at each budget from a universally successful budget."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "sha256": "dec49df0c881ee560ce9bcd3d1da076301b9686c762a1929eda1e9d368984cd4",
+      "use_and_evidence": "Prior fixed-word slope obstruction read; the new charge condition addresses its remaining 2,3-smooth slopes."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "sha256": "f9b97f4945e3adeaf7b7eb2d1bfc9e50bb59fb0d166db398c55f2f40011c2f8f",
+      "use_and_evidence": "Prior source-tail denominator obstruction read for architecture context; not a formal proof dependency."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/WITNESS_CLOSURE_CONTINUATION.md",
+      "sha256": "08c0da9935c70f090eb759652e6dae890e31e3da6e1f1144bd401dda6448dde9",
+      "use_and_evidence": "Prior carry construction read for architecture context; not a formal proof dependency."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/DIRECTED_WITNESS_SEARCH.md",
+      "sha256": "7d609aaa23f93b9864b2965ab0d1c41d417aec33c43e2f318a5d887908e5936d",
+      "use_and_evidence": "Prior source/energy rank and original-implication reduction read for context; no new equivalence theorem claimed."
+    },
+    {
+      "parent_pr": 177,
+      "parent_commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634",
+      "use_and_evidence": "Relevant finite-boundary discussion read; no claim of full historical audit or proof dependence."
+    }
+  ],
+  "external_literature": {
+    "proof_dependencies": [],
+    "orientation_only": "Search results for the primary Monks arithmetic-progression sufficiency papers were inspected. No full external paper was reconstructed and no external theorem is used in the new proof."
+  },
+  "formal_scope": {
+    "imports": [
+      "Std"
+    ],
+    "audited_public_declarations": 21,
+    "axiom_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "custom_axioms": false,
+    "sorryAx": false,
+    "general_rational_slope_classification": "written proof only; Lean proves the half-map and pure-power cases",
+    "finite_table_and_finite_seed_corollaries": "written corollaries of the individually stated formal lemmas"
+  },
+  "execution_records": {
+    "REPLAY.json": "932a82edbb9555961d2099f1fbdfcc81f88d2a2ae3495191025614afba210fe5",
+    "lean-strict-audit.log": "93f4bbe917c0ae088c0c86511f0e57de5727177396b7c6b13ff168981e5f0c3c",
+    "normal.json": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0",
+    "optimized.json": "9271bb7607b1a54d36a4b312d6ecd3d103587125a1251ee9f7207e6be3c6ddc0"
+  },
+  "known_inherited_family": "WitnessLengthSeparation.lean already contains the r=4 family and its source/output witness-length separation. The new unbounded lower bound is for paid edits with unlimited common steps and cycle padding."
+}

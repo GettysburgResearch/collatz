@@ -1,0 +1,33 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/arithmetic_carry_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.029,
+      "output": "arithmetic-controls-normal.json",
+      "sha256": "8870f291fb78a94e7ec5f56be7bc73a26afe66b5d436dffdfedc13a628255fd6"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/arithmetic_carry_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.071,
+      "output": "arithmetic-controls-optimized.json",
+      "sha256": "8870f291fb78a94e7ec5f56be7bc73a26afe66b5d436dffdfedc13a628255fd6"
+    }
+  ],
+  "outputs_byte_identical": true,
+  "source_sha256": "e6012821569b50444a9c814fb0f7e535ed21f105c42a5b10205cca899828314a"
+}

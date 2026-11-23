@@ -1,0 +1,82 @@
+{
+  "source_sha256": {
+    "GermCapacity.lean": "8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1",
+    "DENSITY_FREE_DEFLATED_GERM.md": "dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990",
+    "check_deflated_germ.py": "639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8"
+  },
+  "audited_declarations": 6,
+  "audited_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "normal_optimized_byte_equal": true,
+  "executions": [
+    {
+      "name": "lean",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/GermCapacity.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "env_delta": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_utc": "2026-11-23T07:06:39.202234+00:00",
+      "elapsed_seconds": 3.430397,
+      "exit_code": 0,
+      "stdout": "'CollatzGermCapacity.first_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.second_column_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.capacity_strategy_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGermCapacity.inverse_constant' does not depend on any axioms\n'CollatzGermCapacity.inverse_linear' depends on axioms: [propext]\n'CollatzGermCapacity.inverse_convolution' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "stdout_sha256": "4adab11d7f765e0129b0b2a159c0d1e3147fff9ec8c0aa48c538710015bed4c8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/check_deflated_germ.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "env_delta": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_utc": "2026-11-23T07:06:42.632669+00:00",
+      "elapsed_seconds": 0.772325,
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_germs\": {\n    \"coefficient_equalities\": 4260,\n    \"inverse_coefficients\": 64,\n    \"maximum_degree\": 219,\n    \"ordinary_steps\": 4107,\n    \"sources\": 153\n  },\n  \"capacity\": {\n    \"below_threshold_control\": true,\n    \"certified_payoff_floors\": [\n      \"9/100\",\n      \"3/100\"\n    ],\n    \"explicit_strategy\": [\n      \"2/5\",\n      \"3/5\"\n    ],\n    \"log_series_terms\": 96,\n    \"strict_radius_controls\": 4\n  },\n  \"controls\": {\n    \"fitted_constant_rejected\": true,\n    \"foreign_prime_rejected\": true,\n    \"old_derivative_zero_fixture_retained\": true\n  },\n  \"scope\": \"Exact finite capacity and known-convergent actual-germ controls; not the analytic rationality theorem or a universal germ construction.\",\n  \"source_sha256\": {\n    \"DENSITY_FREE_DEFLATED_GERM.md\": \"dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990\",\n    \"GermCapacity.lean\": \"8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1\",\n    \"check_deflated_germ.py\": \"639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8\"\n  }\n}\n",
+      "stderr": "",
+      "stdout_sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/check_deflated_germ.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "env_delta": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "started_utc": "2026-11-23T07:06:43.405029+00:00",
+      "elapsed_seconds": 0.846214,
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_germs\": {\n    \"coefficient_equalities\": 4260,\n    \"inverse_coefficients\": 64,\n    \"maximum_degree\": 219,\n    \"ordinary_steps\": 4107,\n    \"sources\": 153\n  },\n  \"capacity\": {\n    \"below_threshold_control\": true,\n    \"certified_payoff_floors\": [\n      \"9/100\",\n      \"3/100\"\n    ],\n    \"explicit_strategy\": [\n      \"2/5\",\n      \"3/5\"\n    ],\n    \"log_series_terms\": 96,\n    \"strict_radius_controls\": 4\n  },\n  \"controls\": {\n    \"fitted_constant_rejected\": true,\n    \"foreign_prime_rejected\": true,\n    \"old_derivative_zero_fixture_retained\": true\n  },\n  \"scope\": \"Exact finite capacity and known-convergent actual-germ controls; not the analytic rationality theorem or a universal germ construction.\",\n  \"source_sha256\": {\n    \"DENSITY_FREE_DEFLATED_GERM.md\": \"dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990\",\n    \"GermCapacity.lean\": \"8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1\",\n    \"check_deflated_germ.py\": \"639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8\"\n  }\n}\n",
+      "stderr": "",
+      "stdout_sha256": "3945f7d607a9234667342ebe534e402a63c75af0dec3f29e3e486a22f82ab863",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

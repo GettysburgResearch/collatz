@@ -1,0 +1,50 @@
+{
+  "scope": "Exact finite BM4/BM6-BM9 controls on a known convergent ray; no infinite escaping-source assertion",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_minima.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.139,
+      "output": "minima-normal.json",
+      "sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_minima.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.241,
+      "output": "minima-optimized.json",
+      "sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4",
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_identical": true,
+  "counts": {
+    "binomial_horizons": 65,
+    "complete_affine_carries": 40960,
+    "exact_minima_at_or_below_limit": 9,
+    "exact_parity_cylinders": 2047,
+    "incomparable_roots": 18,
+    "rejected_controls": 4,
+    "split_cases": 140,
+    "strict_minimum_first_hit_checks": 170,
+    "subcritical_nondescent_small_source_cases": 19
+  },
+  "source_sha256": {
+    "SPARSE_BASIN_MINIMA.md": "65f1a0698cb3a17a8eb52ddab42f6b548be5bb921872f71c4d9cb00369ccbeec",
+    "check_basin_minima.py": "4b6b4daac8984edf7b110c95f443f84e1983e91d62ba437a7dcaa3f2e11b5a4c"
+  }
+}

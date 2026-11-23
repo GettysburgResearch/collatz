@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-23",
+  "status": "written deductions and explicit compiler; escape exclusion open",
+  "sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "scope": "HE2 and HE18--HE24a; ordinary positive product and escape pressure measure"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "scope": "same-successor scaling, actual Green mass, retained endpoint; no new Haar transfer assumed"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "scope": "read for overlap and conditional stationary/minimum-source boundaries; no theorem imported"
+    },
+    {
+      "title": "Collatz map as a non-singular transformation",
+      "author": "Idris Assani",
+      "url": "https://arxiv.org/pdf/2208.11675v3",
+      "version": "v3, 2023-12-13",
+      "scope": "Theorem 1.2, Definition 2.5 and surrounding recurrence statement inspected; no power-bound theorem applied to the pressure measure"
+    }
+  ],
+  "new_theorems": [
+    "same-source double summability of upper-sibling Green ratios",
+    "finite and local basin-budget inequalities",
+    "near-logarithmic sibling collapse on every hypothetical escaping ordinary ray",
+    "complete balanced ordinary inverse-path-tree bijection",
+    "two-sided finite-depth pressure comparison",
+    "exact signed exponent/physical-height cocycle"
+  ],
+  "formal_scope": "no new Lean declarations in this lane",
+  "open_step": "amortized signed compiler cost on the actual full predecessor pressure law"
+}
