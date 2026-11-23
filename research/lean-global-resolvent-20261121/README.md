@@ -4,7 +4,17 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [effective sparse returns and logarithmic descent](overview/returns/README.md)
+**Latest checkpoint:** [direct high-variance closing attempts](overview/longshot/README.md)
+tests a full-denominator affine trace bound, actual-source adelic mixing,
+nonlocal sibling transport, and simultaneous Mahler rigidity. No new
+universal closing estimate was obtained. The packet retains an exact
+identity-atom interface, a concrete unit-residue counterexample to a
+monotonicity step, finite word/slice computations with small independent
+witness verifiers, and standalone research questions. The near-contact
+regeneration rederived during the pass is explicitly attributed to
+checkpoint 8. No new Lean closing theorem or axiom is added.
+
+[Checkpoint 13: effective sparse returns and logarithmic descent](overview/returns/README.md)
 prove a source-uniform, effective `O_S(N/log N)` bound on visits to at most
 `S` binary runs in every injective actual odd-orbit segment. A separate
 application of Evertse's small-sum theorem proves that a nonexceptional

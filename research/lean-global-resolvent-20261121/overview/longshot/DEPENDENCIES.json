@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-high-variance-packet/v1",
+  "date": "2026-11-23",
+  "parent_commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+  "status": "unsuccessful global closing attempts; exact finite diagnostics",
+  "new_lean_declarations": 0,
+  "files_sha256": {
+    "research/lean-global-resolvent-20261121/overview/longshot/ADELIC_MIXING_ATTEMPT.md": "53f53c7cfe8fa8cc513dd154e106971cdb2d7f3d4d545ad7cad3ff58d3d63351",
+    "research/lean-global-resolvent-20261121/overview/longshot/FINITE_AFFINE_WORD_QUESTION.txt": "f8385f934d8d0c2c50f5f6e5851f587dbb12accce5df3c7f10f23128941adb8c",
+    "research/lean-global-resolvent-20261121/overview/longshot/MAHLER_RIGIDITY_ATTEMPT.md": "0415f42ba05f302d92eb94a6b742bd63e5a36c271ede5369de39dd6a31268121",
+    "research/lean-global-resolvent-20261121/overview/longshot/MIXED_DECIMATION_QUESTION.txt": "0139f218f9080eb1c9f991c11a030c0df556ab2595941641b4237faf521e5b7c",
+    "research/lean-global-resolvent-20261121/overview/longshot/NONLOCAL_SIBLING_ATTEMPT.md": "796f701eb6379b593a9b13e28d59ced7ff12cf33f4ff7ab195b22ea8e00d3b50",
+    "research/lean-global-resolvent-20261121/overview/longshot/README.md": "6763fbecd6096ef4139335cdbb803e88faf4db69e08bf3cf19c63cdc2d0a6aaf",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/IDENTITY_ATOM_ATTEMPT.md": "1046195b819bbea9ffc3f14da938a84762824443722d5cfd67f2d95d1abae22b",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/MANIFEST.sha256": "dd3155106a87e61b98f0cf5aff97b9345a8f2822ca45f750fc0bca7ad10e8c81",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/RUNS.md": "e3aea4912e4d34a324cf69895dfaf895d028bc5c6e00be8c5489d025e5bb6c57",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/fiber_8_5.py": "26a06ab2a14d9106ae465e95df4e21c556db18c5d7efb6be55674772eaffc44c",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/fiber_8_5.txt": "9eaaba7f06b822908b8eaa8f4fd09ac4af6a941f28b077363a5091aabd0987de",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/full_32_20.txt": "c51a7679ca440b523270eced040f3145aa10a0659c2ec0722fc226c1dd65d29f",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/full_35_22.txt": "9aac5af3d60e729c916a4c1bcb06d24f6b969f82a31e9793f523b004864f8b9b",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/full_fibers.cpp": "31cba2476afa99904574ac47af7c4db96b46b6101cb7b7fb4988eabd39e69425",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/maxfiber_35_22.json": "c962004a8c9c64bd9a43f6c2f3b49c2b6d3171ced8910a059d44242e27e34723",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/rational_slice.cpp": "fc97aab0795445b18c6415ae49601f0f7a9aa697065e0fd370094d8761d005b6",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/slice_149_94_343.txt": "9dae1e6b059a49cf582fc7398036b8ee759d4fa9c8557a51a4dc5ac6204395b4",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/slice_233_147_5.txt": "a875b166290e9d8a3d0783702129e83954009b8e3bed06fe137a60d9e220a0dd",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/slice_46_29_39409.txt": "0ace92e18f4a07ad94d315cfcb164d295a243e45b706df2ee5010dacc827e7dd",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/slice_65_41_551.txt": "38e0fa722a3686ceb97eb8e9a8ce41e48edd84e1bd22f873beb7b25cc8ec1cd7",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/validate_recorded_parameters.py": "919e9016925b053f1ea1a1f685327cef0cf043773ffa3e7dc4f94d1a592769ea",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/validate_recorded_parameters.txt": "0cdcae260e6ca804a801e5e938110df67b44267c1b0ac3d623c45bdd5e15db6c",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/verify_witnesses.py": "e597ec2732d49d7b43c2a01717bf6430f6a3189811ede5885e8621229b6f6a88",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/verify_witnesses.txt": "59af2e25f86d745ce6d12a2aafa8f2388a21d8a56ce02645e338ab754e2d4c95"
+  }
+}

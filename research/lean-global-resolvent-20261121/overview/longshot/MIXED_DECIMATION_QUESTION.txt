@@ -1,0 +1,51 @@
+MIXED DECIMATION AND FINITE RANK
+
+Status: open research target; no finite-rank theorem is assumed.
+
+Let a=(a_n)_(n>=0) take values in {0,1}, with a_0=0, and suppose that
+for every integer n>=0,
+
+    a_(2n)=a_n,
+    a_(2n+1)=a_(3n+2).
+
+Put F(z)=sum_(n>=0) a_n z^n, a formal power series over Q that is
+analytic for |z|<1. Let omega be a primitive cube root of unity.
+The assumptions imply
+
+    3z(F(z^3)-F(z^6))
+       =F(z^2)+omega F(omega z^2)+omega^2 F(omega^2 z^2).
+
+QUESTION
+
+Can one prove, from exactly these assumptions, that F satisfies both
+a nonzero finite 2-Mahler equation and a nonzero finite 3-Mahler equation?
+Concretely, can one find finite m,l and rational functions P_i,Q_j,
+not all zero in either family, such that
+
+    sum_(i=0)^m P_i(z) F(z^(2^i))=0,
+    sum_(j=0)^l Q_j(z) F(z^(3^j))=0?
+
+The equations may depend on a. A stronger sufficient result is a
+finite-dimensional Q(z)-space containing F and invariant under both
+substitutions z -> z^2 and z -> z^3. The mixed equation above alone
+is not being called such a system.
+
+EXACT EXTRACTION HIERARCHY
+
+Write A_(k,r)(n)=a_(3^k n+r), where 0<=r<3^k. Its binary extraction
+A_(k,r)(2n+epsilon), epsilon in {0,1}, equals
+
+    A_(k,(3^k epsilon+r)/2)(n),
+
+if epsilon+r is even, and equals
+
+    A_(k+1,(3^(k+1) epsilon+3r+1)/2)(n),
+
+otherwise. Repeated odd extraction includes the formal states
+A_(k,3^k-1). Their unbounded indices do not prove linear independence;
+their finite linear dependence has not been established either.
+
+A correct solution must obtain the finite relations, not assume that
+bounded coefficients, two bases in one identity, or computability of
+the sequence makes it automatic or Mahler. A proof of rationality by
+another valid argument would also answer the intended rigidity question.
