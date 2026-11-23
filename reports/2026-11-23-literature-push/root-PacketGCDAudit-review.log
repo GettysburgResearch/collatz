@@ -1,0 +1,12 @@
+'CollatzLiterature.PacketGCD.packetProduct' depends on axioms: [propext, Quot.sound]
+'CollatzLiterature.PacketGCD.packetNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLiterature.PacketGCD.packet_numerator_coprime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLiterature.PacketGCD.gcd_divides_small_factors' depends on axioms: [propext, Quot.sound]
+'CollatzLiterature.PacketGCD.repunitFactor' depends on axioms: [propext]
+'CollatzLiterature.PacketGCD.packetCoefficient' depends on axioms: [propext]
+'CollatzLiterature.PacketGCD.repunitPacketNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLiterature.PacketGCD.repunit_packet_numerator_coprime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzLiterature.PacketGCD.repunit_packet_gcd_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLiterature.PacketGCD.full_numerical_gcd_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]

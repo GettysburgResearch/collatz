@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-23T05:25:11.444209+00:00",
+  "parent_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "freeze_manifests": [
+    {
+      "manifest": "reports/2026-11-23-literature-push/arithmetic-freeze.json",
+      "manifest_sha256": "aa61498e58fa4fc0bc48456be5fa5176206ead10af35aca654c43ef468ec3788",
+      "status": "PASS",
+      "entries": [
+        {
+          "path": "research/literature-push-20261123/arithmetic/README.md",
+          "sha256": "008015881ee0606911ec5811bc0f997b197de2fc7a6f7fab4ed92c4ce515a279"
+        },
+        {
+          "path": "research/literature-push-20261123/arithmetic/FULL_NUMERICAL_SEPARATION.md",
+          "sha256": "91d0afa1661956f7d5a80a22fe3f731925f33b2dc05516dcf2c844e6c22bf044"
+        },
+        {
+          "path": "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py",
+          "sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/arithmetic-check-normal.json",
+          "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/arithmetic-check-optimized.json",
+          "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/arithmetic-check-receipt.json",
+          "sha256": "41ed3e50cb0f7db557a2262410963160974aef5b7e13f386fd87b58fe5ae5108"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/arithmetic-sources.json",
+          "sha256": "ac4982f773d138039a352e31ddbc11efd5b433e0f1958003c40fc0efa4782b5d"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+          "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+          "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-repunits-freeze.json",
+          "sha256": "e96249b9c6d69853a6c2a660c11ab97515e9f15b6db4ea02195ac72a9862daff"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-freeze.json",
+          "sha256": "9100576910d8ba8762d8e61acef3f010880a9682c84b2781a333ee2023380197"
+        }
+      ]
+    },
+    {
+      "manifest": "reports/2026-11-23-literature-push/boundary-freeze.json",
+      "manifest_sha256": "aeca2441b379567c11a6329f9582735a15692433a5f0c3e4bf4abc50181d1f76",
+      "status": "PASS",
+      "entries": [
+        {
+          "path": "research/literature-push-20261123/boundary/CANONICAL_FIBRE_DEPTH.md",
+          "sha256": "118ce0a322d68ae683789d1647060c4bc16e39086ee96ae443f68d877c2b1999"
+        },
+        {
+          "path": "research/literature-push-20261123/boundary/review_packet_arithmetic.py",
+          "sha256": "bb88953ed77c010bcd6ef75b6832d9470f0b33cd66af0a70f46e1ea66bd5b570"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/boundary-arithmetic-controls.json",
+          "sha256": "42cd998b3241a703c9d41a59efae805bb8f00ae7f03a9848f14749a58beaf59b"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/boundary-arithmetic-review.md",
+          "sha256": "6f44ccf1ec5b037e64d7ee92ab87fd4b3a6cb2173827a73b9c9124c060ed5101"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/boundary-general-density-review.md",
+          "sha256": "d0cdc17a1f132b091ddd0cc64437a8132d086dfc1dcc231f6237c6676565e5c5"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/boundary-index-review.md",
+          "sha256": "7c8633c2c08664fc59331a68cab9d755f40ed1a6d2acccb315eb68cb1b032363"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/boundary-sources.json",
+          "sha256": "738cc5e3ee1209da95408a171e47d8c31c65e698e241e658aec3962caa41fdf8"
+        }
+      ]
+    },
+    {
+      "manifest": "reports/2026-11-23-literature-push/rigidity-freeze.json",
+      "manifest_sha256": "98ea484f4947be8e8cf535ef2af4c48ba8ee47c787eef270ab0d7e653eca1b5d",
+      "status": "PASS",
+      "entries": [
+        {
+          "path": "research/literature-push-20261123/rigidity/SCALAR_BOUNDARY_AND_SECOND_CENTER.md",
+          "sha256": "e5b8ac874505bbecfd2ae889cfe81eb9586b68e4ad19fb3a0ee6dbe61a493c73"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/FINITE_FILTER_TEST.md",
+          "sha256": "132d23447fd01aeaebfb40cfe4315facf446ab0b8b1659d3d31da5e579b51a89"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/README.md",
+          "sha256": "d37a73df0ee30cfd6524c0052a43707426270ba7a9311cd1c4c58128809a14aa"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-sources.json",
+          "sha256": "386685da5ed61b18579702bcfff20f5cee17ca36b79722e200f2c3440bbc42ac"
+        }
+      ]
+    },
+    {
+      "manifest": "reports/2026-11-23-literature-push/rigidity-packet-freeze.json",
+      "manifest_sha256": "9100576910d8ba8762d8e61acef3f010880a9682c84b2781a333ee2023380197",
+      "status": "PASS",
+      "entries": [
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+          "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean",
+          "sha256": "9ec16723516018decb7defcd8c24f6a8300cf2f7b40d38715eec9b75f704d811"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/PACKET_GCD.md",
+          "sha256": "15bfa0e2e73353b031f9db9a8fd30168cfe70eb16e05a2c9ca86c80718cf2e43"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-proof.md",
+          "sha256": "8d15d69f2d5a4c36bc508521f3377a978266ec51eac8fe85ed90ca40a2f23048"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-lean-receipt.json",
+          "sha256": "07f4fc8a191ea8a869d354113af66b54684e03fafc16eabc1f863c65d7337da7"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-dependency-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-packet-axioms.log",
+          "sha256": "5266f1f5181c55d1b02c12fcedde09c9675fac8db339b559c00cb651dd698437"
+        }
+      ]
+    },
+    {
+      "manifest": "reports/2026-11-23-literature-push/rigidity-repunits-freeze.json",
+      "manifest_sha256": "e96249b9c6d69853a6c2a660c11ab97515e9f15b6db4ea02195ac72a9862daff",
+      "status": "PASS",
+      "entries": [
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+          "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+          "sha256": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86"
+        },
+        {
+          "path": "research/literature-push-20261123/rigidity/lean/README.md",
+          "sha256": "bab5bbf3c86605d5218bf14bb3791080bcc9dcadaf29c06afc67eaa7a7c3f507"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-repunits-proof.md",
+          "sha256": "e162eea2679132b0973982f2ecc1d782641064d0c9778b76cf669d087bfeea59"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-repunits-lean-receipt.json",
+          "sha256": "6fcf29112b6781938f236c6216a1fb5ca085f1b6da45c1d10e359e5cc8703a31"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-repunits-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reports/2026-11-23-literature-push/rigidity-repunits-axioms.log",
+          "sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0"
+        }
+      ]
+    }
+  ],
+  "lean_sources": [
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+      "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean",
+      "sha256": "9ec16723516018decb7defcd8c24f6a8300cf2f7b40d38715eec9b75f704d811"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+      "sha256": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+    }
+  ],
+  "relative_markdown_links_checked": 52,
+  "scope": "Prepublication byte identity, JSON parsing, local-link existence and absence of proof placeholder tokens. Independent compiler/replay and mathematical-review records carry their distinct scopes."
+}

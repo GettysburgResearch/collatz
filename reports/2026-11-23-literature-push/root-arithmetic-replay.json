@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "reviewer": "/root",
+  "date_utc": "2026-11-23T05:19:54.126033+00:00",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/arithmetic/check_full_numerical_separation.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.416,
+  "source": "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py",
+  "source_sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a",
+  "source_unchanged": true,
+  "independent_execution_matches_author": true,
+  "case_count": 9,
+  "literal_polynomial_gcd_cases": 3,
+  "rational_steps": 6268,
+  "ordinary_steps": 6268,
+  "output": "reports/2026-11-23-literature-push/root-arithmetic-check.json",
+  "output_sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c",
+  "scope": "Independent execution of the frozen exact finite controls, after source and written proof inspection; not a universal proof by enumeration. Separate reviewer arithmetic reconstruction also recorded."
+}

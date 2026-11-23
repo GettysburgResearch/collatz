@@ -1,0 +1,66 @@
+{
+  "author": "/root/cycle_closure",
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "date_utc": "2026-11-23T05:19:55.204796+00:00",
+  "files": [
+    {
+      "bytes": 1806,
+      "path": "research/literature-push-20261123/arithmetic/README.md",
+      "sha256": "008015881ee0606911ec5811bc0f997b197de2fc7a6f7fab4ed92c4ce515a279"
+    },
+    {
+      "bytes": 15909,
+      "path": "research/literature-push-20261123/arithmetic/FULL_NUMERICAL_SEPARATION.md",
+      "sha256": "91d0afa1661956f7d5a80a22fe3f731925f33b2dc05516dcf2c844e6c22bf044"
+    },
+    {
+      "bytes": 11054,
+      "path": "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py",
+      "sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a"
+    },
+    {
+      "bytes": 9028,
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-normal.json",
+      "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+    },
+    {
+      "bytes": 9028,
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-optimized.json",
+      "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+    },
+    {
+      "bytes": 1695,
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-receipt.json",
+      "sha256": "41ed3e50cb0f7db557a2262410963160974aef5b7e13f386fd87b58fe5ae5108"
+    },
+    {
+      "bytes": 6468,
+      "path": "reports/2026-11-23-literature-push/arithmetic-sources.json",
+      "sha256": "ac4982f773d138039a352e31ddbc11efd5b433e0f1958003c40fc0efa4782b5d"
+    }
+  ],
+  "formal_dependencies": [
+    {
+      "bytes": 5065,
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+    },
+    {
+      "bytes": 4572,
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+      "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e"
+    },
+    {
+      "bytes": 1825,
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-freeze.json",
+      "sha256": "e96249b9c6d69853a6c2a660c11ab97515e9f15b6db4ea02195ac72a9862daff"
+    },
+    {
+      "bytes": 2288,
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-freeze.json",
+      "sha256": "9100576910d8ba8762d8e61acef3f010880a9682c84b2781a333ee2023380197"
+    }
+  ],
+  "scope": "Arbitrary finite disjoint cyclic packets with pairwise coprime packet sizes: primitive legal rational word, exact complete polynomial gcd, entire numerical gcd divisibility, surviving denominator bound, and arbitrary-floor embeddings. Formalized numerical arithmetic separately; unrestricted nontrivial positive integer-cycle exclusion OPEN.",
+  "status": "FROZEN FOR INDEPENDENT REVIEW"
+}

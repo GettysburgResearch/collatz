@@ -1,0 +1,365 @@
+{
+  "arithmetic": "Python integers and Fraction; SymPy QQ polynomial gcd",
+  "case_count": 9,
+  "cases": [
+    {
+      "A": 60,
+      "complete_denominator_bits": 41,
+      "final_denominator_bits": 41,
+      "floor_lower_bound": "19/10",
+      "full_gcd": "1",
+      "gcd_bound": "5605",
+      "minimum_state": "3004172932777/1203121300255",
+      "name": "original_two_packets",
+      "ordinary_steps_replayed": 60,
+      "p": 36,
+      "parameters": {
+        "a": 5,
+        "b": 3,
+        "n": [
+          2,
+          3
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "polynomial": {
+        "gcd_degree": 12,
+        "literal_full_gcd_checked": true,
+        "profile_gcd_checked": true,
+        "residual_degree": 24
+      },
+      "profile_period": 12,
+      "rational_states_replayed": 60,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 60
+    },
+    {
+      "A": 160,
+      "complete_denominator_bits": 65,
+      "final_denominator_bits": 60,
+      "floor_lower_bound": "5/14",
+      "full_gcd": "35",
+      "gcd_bound": "875",
+      "minimum_state": "275067396556038191/760850707307316725",
+      "name": "shared_prime_powers",
+      "ordinary_steps_replayed": 160,
+      "p": 80,
+      "parameters": {
+        "a": 4,
+        "b": 2,
+        "n": [
+          4,
+          5
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "prime_5_valuations": {
+        "B": 0,
+        "K": 2,
+        "R": 1,
+        "Y_minus_V": 1,
+        "g": 1,
+        "q": 2
+      },
+      "profile_period": 40,
+      "rational_states_replayed": 160,
+      "shared_prime_K_R_YminusV": 5,
+      "shortcut_period": 160
+    },
+    {
+      "A": 520,
+      "complete_denominator_bits": 210,
+      "final_denominator_bits": 204,
+      "floor_lower_bound": "6305/3262",
+      "full_gcd": "35",
+      "gcd_bound": "151711811615",
+      "minimum_state": "51069219072525425622044582271851703027033025574120392984404619/24273941401872362193328883694970262231374491591858302184395381",
+      "name": "nontrivial_numerical_gcd",
+      "ordinary_steps_replayed": 520,
+      "p": 320,
+      "parameters": {
+        "a": 13,
+        "b": 8,
+        "n": [
+          4,
+          5
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "profile_period": 40,
+      "rational_states_replayed": 520,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 520
+    },
+    {
+      "A": 1100,
+      "complete_denominator_bits": 202,
+      "final_denominator_bits": 202,
+      "floor_lower_bound": "19/10",
+      "full_gcd": "1",
+      "gcd_bound": "5605",
+      "minimum_state": "10117476153239841517687885410309536905358780206403721022185001/5263095953024540185019854991411992665375982452114023285430175",
+      "name": "large_profile_cancellation",
+      "ordinary_steps_replayed": 1100,
+      "p": 660,
+      "parameters": {
+        "a": 5,
+        "b": 3,
+        "n": [
+          10,
+          11
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "profile_period": 220,
+      "rational_states_replayed": 1100,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 1100
+    },
+    {
+      "A": 270,
+      "complete_denominator_bits": 73,
+      "final_denominator_bits": 73,
+      "floor_lower_bound": "1/10",
+      "full_gcd": "1",
+      "gcd_bound": "485",
+      "minimum_state": "527521864555318387411/5247383959891010943775",
+      "name": "three_packets_polynomial",
+      "ordinary_steps_replayed": 270,
+      "p": 90,
+      "parameters": {
+        "a": 3,
+        "b": 1,
+        "n": [
+          2,
+          3,
+          5
+        ],
+        "r": 3,
+        "s": [
+          0,
+          1,
+          2
+        ]
+      },
+      "polynomial": {
+        "gcd_degree": 66,
+        "literal_full_gcd_checked": true,
+        "profile_gcd_checked": true,
+        "residual_degree": 24
+      },
+      "profile_period": 90,
+      "rational_states_replayed": 270,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 270
+    },
+    {
+      "A": 750,
+      "complete_denominator_bits": 202,
+      "final_denominator_bits": 202,
+      "floor_lower_bound": "19/10",
+      "full_gcd": "1",
+      "gcd_bound": "364904975",
+      "minimum_state": "7395621756005922329326557923825598221843430804739604199886201/3641833343632933779680251298113926609814793193260978099305375",
+      "name": "three_sparse_residues",
+      "ordinary_steps_replayed": 750,
+      "p": 450,
+      "parameters": {
+        "a": 5,
+        "b": 3,
+        "n": [
+          2,
+          3,
+          5
+        ],
+        "r": 5,
+        "s": [
+          0,
+          2,
+          4
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "profile_period": 150,
+      "rational_states_replayed": 750,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 750
+    },
+    {
+      "A": 2520,
+      "complete_denominator_bits": 169,
+      "final_denominator_bits": 169,
+      "floor_lower_bound": "1/10",
+      "full_gcd": "1",
+      "gcd_bound": "4015",
+      "minimum_state": "39736283912655535142207309654508234275997893206867/397090260898215694799795695214327827296250507503775",
+      "name": "four_packets",
+      "ordinary_steps_replayed": 2520,
+      "p": 840,
+      "parameters": {
+        "a": 3,
+        "b": 1,
+        "n": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "r": 4,
+        "s": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "profile_period": 840,
+      "rational_states_replayed": 2520,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 2520
+    },
+    {
+      "A": 108,
+      "complete_denominator_bits": 73,
+      "final_denominator_bits": 68,
+      "floor_lower_bound": "19/74",
+      "full_gcd": "19",
+      "gcd_bound": "4606759",
+      "minimum_state": "69205467109466620355/267094462603651456501",
+      "name": "noncoprime_embedding",
+      "ordinary_steps_replayed": 108,
+      "p": 54,
+      "parameters": {
+        "a": 6,
+        "b": 3,
+        "n": [
+          2,
+          3
+        ],
+        "r": 3,
+        "s": [
+          1,
+          2
+        ]
+      },
+      "polynomial": {
+        "gcd_degree": 18,
+        "literal_full_gcd_checked": true,
+        "profile_gcd_checked": true,
+        "residual_degree": 36
+      },
+      "profile_period": 18,
+      "rational_states_replayed": 108,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 108
+    },
+    {
+      "A": 780,
+      "complete_denominator_bits": 518,
+      "final_denominator_bits": 518,
+      "floor_lower_bound": "36472994178147530851/840983540496633658",
+      "full_gcd": "1",
+      "gcd_bound": "1125191978160438686903125309635670078948976542808050420165",
+      "minimum_state": "27575745905076583026781469709706019759982070406506654244787234488480346958902598278122915652852310707631760377972985688179543476627748523485873551061201676961/451101801429454300237322881846234739526590965348359786768659332828162173241629753998629431096409140114454235827578822478439949161348481952268140420873360735",
+      "name": "nearcritical_high_floor",
+      "ordinary_steps_replayed": 780,
+      "p": 492,
+      "parameters": {
+        "a": 65,
+        "b": 41,
+        "n": [
+          2,
+          3
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "polynomial": {
+        "literal_full_gcd_checked": false
+      },
+      "profile_period": 12,
+      "rational_states_replayed": 780,
+      "shared_prime_K_R_YminusV": 1,
+      "shortcut_period": 780
+    }
+  ],
+  "evidence": "exact finite controls; all-parameter theorem is the written proof",
+  "literal_polynomial_gcd_cases": 3,
+  "rejected_hypothesis_controls": {
+    "noncoprime_periods": {
+      "claimed_bound_outside_domain": "5605",
+      "complete_polynomial_denominator_claimed": false,
+      "least_profile_period": 12,
+      "parameters": {
+        "a": 5,
+        "b": 3,
+        "n": [
+          3,
+          6
+        ],
+        "r": 2,
+        "s": [
+          0,
+          1
+        ]
+      },
+      "profile_length": 36,
+      "repunit_gcd": "2326513",
+      "unreduced_displayed_numerical_gcd": "11632565"
+    },
+    "overlapping_offsets": {
+      "binary_power_embedding_rejected": true,
+      "coefficient_values": [
+        1,
+        2,
+        3
+      ],
+      "n": [
+        2,
+        3
+      ],
+      "r": 2,
+      "s": [
+        0,
+        0
+      ]
+    }
+  },
+  "source_sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a",
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "total_rational_and_ordinary_steps_each": 6268
+}

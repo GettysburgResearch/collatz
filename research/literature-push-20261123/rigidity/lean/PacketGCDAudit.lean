@@ -1,0 +1,12 @@
+import PacketGCD
+
+#print axioms CollatzLiterature.PacketGCD.packetProduct
+#print axioms CollatzLiterature.PacketGCD.packetNumerator
+#print axioms CollatzLiterature.PacketGCD.packet_numerator_coprime
+#print axioms CollatzLiterature.PacketGCD.gcd_divides_small_factors
+#print axioms CollatzLiterature.PacketGCD.repunitFactor
+#print axioms CollatzLiterature.PacketGCD.packetCoefficient
+#print axioms CollatzLiterature.PacketGCD.repunitPacketNumerator
+#print axioms CollatzLiterature.PacketGCD.repunit_packet_numerator_coprime
+#print axioms CollatzLiterature.PacketGCD.repunit_packet_gcd_dvd
+#print axioms CollatzLiterature.PacketGCD.full_numerical_gcd_dvd

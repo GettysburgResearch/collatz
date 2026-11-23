@@ -1,0 +1,299 @@
+{
+  "date_utc": "2026-11-23T05:25:11.447546+00:00",
+  "parent_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "parent_tree": "791383b1b197ec4cee502bddb020a71769f0f85b",
+  "scope": "This checkpoint only; all files under its two prefixes except this manifest itself. Source reviews and executions have the distinct scopes recorded in their reports.",
+  "file_count_excluding_manifest": 58,
+  "files": [
+    {
+      "path": "reports/2026-11-23-literature-push/EOF_NORMALIZATION.json",
+      "bytes": 2139,
+      "sha256": "ab63ec27648028c2c2d0d967c5ed60f1debd777dbab3ce56b416cd7dd1dc315e"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/FROZEN_CHECKS.json",
+      "bytes": 9563,
+      "sha256": "a2150cc892952d7ac264a8b3acf26306e326f8044e974941d4bfd6df2e90b471"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/PR178_PREVIOUS.json",
+      "bytes": 15316,
+      "sha256": "1e3652e333e36beb2949ab1ac847e268106dcbfc5523b1ab90f8a6e21c66a96c"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/PR178_PREVIOUS.md",
+      "bytes": 14401,
+      "sha256": "090653924bafe41214d03f172975441cfb154b7b985a21340e2efc695cbc202f"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/README.md",
+      "bytes": 6036,
+      "sha256": "78fa34596b55ca6b4b1722e4da57a0b36a349873c45eef942a168bc770502f26"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/REPOSITORY_SNAPSHOT.json",
+      "bytes": 13784,
+      "sha256": "400565eff67657697b56639ce37b080c3aef14a4596d7347de9df4a395030439"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-normal.json",
+      "bytes": 9028,
+      "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-optimized.json",
+      "bytes": 9028,
+      "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-check-receipt.json",
+      "bytes": 1695,
+      "sha256": "41ed3e50cb0f7db557a2262410963160974aef5b7e13f386fd87b58fe5ae5108"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-final-index-review.md",
+      "bytes": 2449,
+      "sha256": "f084a8a830f10d449a58174e55bff397472d60c786d331bbf3a66fef39a4f703"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-freeze.json",
+      "bytes": 2802,
+      "sha256": "aa61498e58fa4fc0bc48456be5fa5176206ead10af35aca654c43ef468ec3788"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/arithmetic-sources.json",
+      "bytes": 6468,
+      "sha256": "ac4982f773d138039a352e31ddbc11efd5b433e0f1958003c40fc0efa4782b5d"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-arithmetic-controls.json",
+      "bytes": 2814,
+      "sha256": "42cd998b3241a703c9d41a59efae805bb8f00ae7f03a9848f14749a58beaf59b"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-arithmetic-review.md",
+      "bytes": 7371,
+      "sha256": "6f44ccf1ec5b037e64d7ee92ab87fd4b3a6cb2173827a73b9c9124c060ed5101"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-freeze.json",
+      "bytes": 2875,
+      "sha256": "aeca2441b379567c11a6329f9582735a15692433a5f0c3e4bf4abc50181d1f76"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-general-density-review.md",
+      "bytes": 5786,
+      "sha256": "d0cdc17a1f132b091ddd0cc64437a8132d086dfc1dcc231f6237c6676565e5c5"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-index-review.md",
+      "bytes": 1810,
+      "sha256": "7c8633c2c08664fc59331a68cab9d755f40ed1a6d2acccb315eb68cb1b032363"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/boundary-sources.json",
+      "bytes": 9181,
+      "sha256": "738cc5e3ee1209da95408a171e47d8c31c65e698e241e658aec3962caa41fdf8"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-freeze.json",
+      "bytes": 1255,
+      "sha256": "98ea484f4947be8e8cf535ef2af4c48ba8ee47c787eef270ab0d7e653eca1b5d"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-general-density-review.md",
+      "bytes": 7709,
+      "sha256": "ec73b514ae472153ddb27086f924843aa5c11d29dda6f9d1e4562bdf1c5ead1c"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-index-review.md",
+      "bytes": 2909,
+      "sha256": "7caf6c538b1fe6a8e463b580c2afd3f8bea893c2ec73f685761d267f6d8c0472"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-axioms.log",
+      "bytes": 1011,
+      "sha256": "5266f1f5181c55d1b02c12fcedde09c9675fac8db339b559c00cb651dd698437"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-dependency-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-freeze.json",
+      "bytes": 2288,
+      "sha256": "9100576910d8ba8762d8e61acef3f010880a9682c84b2781a333ee2023380197"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-lean-receipt.json",
+      "bytes": 5032,
+      "sha256": "07f4fc8a191ea8a869d354113af66b54684e03fafc16eabc1f863c65d7337da7"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-proof.md",
+      "bytes": 1647,
+      "sha256": "8d15d69f2d5a4c36bc508521f3377a978266ec51eac8fe85ed90ca40a2f23048"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-axioms.log",
+      "bytes": 1823,
+      "sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-freeze.json",
+      "bytes": 1825,
+      "sha256": "e96249b9c6d69853a6c2a660c11ab97515e9f15b6db4ea02195ac72a9862daff"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-lean-receipt.json",
+      "bytes": 4104,
+      "sha256": "6fcf29112b6781938f236c6216a1fb5ca085f1b6da45c1d10e359e5cc8703a31"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-proof.md",
+      "bytes": 2555,
+      "sha256": "e162eea2679132b0973982f2ecc1d782641064d0c9778b76cf669d087bfeea59"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-sources.json",
+      "bytes": 6728,
+      "sha256": "386685da5ed61b18579702bcfff20f5cee17ca36b79722e200f2c3440bbc42ac"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-HomogeneousRepunits-review.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-HomogeneousRepunitsAudit-review.log",
+      "bytes": 1823,
+      "sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-PacketGCD-review.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-PacketGCDAudit-review.log",
+      "bytes": 1011,
+      "sha256": "5266f1f5181c55d1b02c12fcedde09c9675fac8db339b559c00cb651dd698437"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-analytic-review.md",
+      "bytes": 10290,
+      "sha256": "9ce034a5f8945e4072a8b0c3111be26645424f44a235ca1fe0f3c28f237ec790"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-arithmetic-check.json",
+      "bytes": 9028,
+      "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-arithmetic-replay.json",
+      "bytes": 1099,
+      "sha256": "73cba89f6ee15356a4c2fca32b7adca536eca8e4748d2afdea27916381050558"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-formal-review.md",
+      "bytes": 2618,
+      "sha256": "85ab1e9bb5a9a9c8400060125fb70844cd14e6395c38cee2fa970914d59e7a56"
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-lean-review.json",
+      "bytes": 7280,
+      "sha256": "a6e7b004bcf8047f1bbfc5cad2ce48a927d7aad0e27102a110d3fcc8606cbbe5"
+    },
+    {
+      "path": "research/literature-push-20261123/README.md",
+      "bytes": 11802,
+      "sha256": "4ba8cf99b8f850ba80f4abcaad91eedfe5e957ad3bd7ec511b255c5d587b5b66"
+    },
+    {
+      "path": "research/literature-push-20261123/arithmetic/FULL_NUMERICAL_SEPARATION.md",
+      "bytes": 15909,
+      "sha256": "91d0afa1661956f7d5a80a22fe3f731925f33b2dc05516dcf2c844e6c22bf044"
+    },
+    {
+      "path": "research/literature-push-20261123/arithmetic/README.md",
+      "bytes": 1806,
+      "sha256": "008015881ee0606911ec5811bc0f997b197de2fc7a6f7fab4ed92c4ce515a279"
+    },
+    {
+      "path": "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py",
+      "bytes": 11054,
+      "sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a"
+    },
+    {
+      "path": "research/literature-push-20261123/boundary/CANONICAL_FIBRE_DEPTH.md",
+      "bytes": 16182,
+      "sha256": "118ce0a322d68ae683789d1647060c4bc16e39086ee96ae443f68d877c2b1999"
+    },
+    {
+      "path": "research/literature-push-20261123/boundary/review_packet_arithmetic.py",
+      "bytes": 5569,
+      "sha256": "bb88953ed77c010bcd6ef75b6832d9470f0b33cd66af0a70f46e1ea66bd5b570"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/FINITE_FILTER_TEST.md",
+      "bytes": 6251,
+      "sha256": "132d23447fd01aeaebfb40cfe4315facf446ab0b8b1659d3d31da5e579b51a89"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/GENERAL_DENSITY_JET.md",
+      "bytes": 8370,
+      "sha256": "400e3c6cdccea71b71224fc2ee5cfb1379b334e5422cd64b81a87bd239403890"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/README.md",
+      "bytes": 2545,
+      "sha256": "d37a73df0ee30cfd6524c0052a43707426270ba7a9311cd1c4c58128809a14aa"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/SCALAR_BOUNDARY_AND_SECOND_CENTER.md",
+      "bytes": 16596,
+      "sha256": "e5b8ac874505bbecfd2ae889cfe81eb9586b68e4ad19fb3a0ee6dbe61a493c73"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "bytes": 5065,
+      "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+      "bytes": 1249,
+      "sha256": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PACKET_GCD.md",
+      "bytes": 3065,
+      "sha256": "15bfa0e2e73353b031f9db9a8fd30168cfe70eb16e05a2c9ca86c80718cf2e43"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+      "bytes": 4572,
+      "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean",
+      "bytes": 653,
+      "sha256": "9ec16723516018decb7defcd8c24f6a8300cf2f7b40d38715eec9b75f704d811"
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/README.md",
+      "bytes": 2417,
+      "sha256": "bab5bbf3c86605d5218bf14bb3791080bcc9dcadaf29c06afc67eaa7a7c3f507"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+import HomogeneousRepunits
+
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_zero
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_succ
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_one
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_eq_sum
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_symm
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_add
+#print axioms CollatzLiterature.HomogeneousRepunits.coprime_base_left
+#print axioms CollatzLiterature.HomogeneousRepunits.coprime_base_product
+#print axioms CollatzLiterature.HomogeneousRepunits.gcd_add_right
+#print axioms CollatzLiterature.HomogeneousRepunits.gcd_mul_add_right
+#print axioms CollatzLiterature.HomogeneousRepunits.gcd_repunit
+#print axioms CollatzLiterature.HomogeneousRepunits.coprime_repunit
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_mul_sub
+#print axioms CollatzLiterature.HomogeneousRepunits.repunit_eq_div
+#print axioms CollatzLiterature.HomogeneousRepunits.gcd_pow_sub_pow
+#print axioms CollatzLiterature.HomogeneousRepunits.coprime_powered_repunit
+#print axioms CollatzLiterature.HomogeneousRepunits.powered_repunit_coprime_base

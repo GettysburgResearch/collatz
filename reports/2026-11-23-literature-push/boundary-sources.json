@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-23",
+  "author": "/root/actual_collision",
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "scope": "One original hypothetical escaping ordinary orbit; model/canonical boundary comparison. The uniform square-height depth budget separately imports Lambda_* > 0 from the retained reciprocal bound. The finite original-cylinder lower bound remains exact with Lambda_j without that import. No escape or cycle exclusion; no new Lean claim.",
+  "repository_sources": [
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/FOURIER_BRIDGE.md",
+      "sha256": "1677ce2685f693363df82e3e30a141d09a164a4eaeed8ff3a169ac119eafc29e",
+      "bytes": 16772,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "APPLIED COMPARISON, SOURCE-QUALIFIED: Sections 1 and 5-7 define the same geometric-2 joint model, its finite conditional Fourier law and shallow-depth regime; no model-to-canonical equality or limit exchange imported."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/COLLISION_CLOSURE.md",
+      "sha256": "5a08dc30b5f7d4a7ff8d47c6797c46011ec1b3cb05a27cbcc88557b09a4ea927",
+      "bytes": 20099,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "CONSULTED: complete-carry weighted collision theorem and the exact iid Renyi-2 branch; no actual collision estimate imported."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/TILTED_MOMENT_OBSTRUCTION.md",
+      "sha256": "e6219d59418a7796854ff86513bd686025ea2d639cb24c1fa9aea872194a8f96",
+      "bytes": 7581,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "CONSULTED: bounded stationary tilted-carry counterexample; no new generic stationary countermodel built from it."
+    },
+    {
+      "pr": 182,
+      "commit": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "path": "research/closure-round5-20261123/TERNARY_INFORMATION.md",
+      "sha256": "e254b24b199c94ac5832a095dc6c428eee2d8a6628dff05546bdc855287073f4",
+      "bytes": 12268,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "CONSULTED: exact-dimensional Shannon theorem and the explicitly missing untrimmed collision rate; no Renyi upgrade inferred."
+    },
+    {
+      "pr": 182,
+      "commit": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "path": "research/closure-round5-20261123/FIXED_SOURCE_PRESSURE.md",
+      "sha256": "09b9cb3a1bd7daf1bc77b70e5010c8591b3d1fa7965e59a63dff6efc1dbe5c76",
+      "bytes": 26608,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "CONSULTED: same-source entropy/height lower bound; no universal polynomial-height hypothesis assumed."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "bytes": 11593,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "CONSULTED: canonical inverse cylinder weights and retained low-profile/selection qualifications; its positive information-dimension theorem is not needed in the new depth budget."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "bytes": 16551,
+      "access": "Exact GitHub raw text fetched at full commit and directly read at the indicated scope.",
+      "role": "APPLIED INPUT, SOURCE-QUALIFIED: equations (2)-(5) give the positive harmonic canonical trace, legal unit-parent kernel, exact real inverse prefix and law. The existence and imported reciprocal/path inputs are not re-proved."
+    },
+    {
+      "commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+      "path": "research/high-variance-20261123/entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md",
+      "sha256": "63e80adb5334027afc9b99eb499e7e7f4c4454eae26a6be6076319fb32264d24",
+      "access": "Section 1 directly read in the complete worktree; operator acts on all positive odd integers before the trace zeros are used.",
+      "role": "SOURCE-QUALIFIED: (1)-(4) identify D_m with the model trace and canonical kernel; (2) supplies h(q)<=M_0 q for the normalized-law corollary; (5) retains positive original-spine path weight."
+    },
+    {
+      "commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "access": "Retained component/clock conventions consulted; no inference that an arbitrary regularized flow equals the canonical trace flow.",
+      "role": "Scope reference for the ordinary component. A finite-capacity claim for nu_h=r*h must concern that exact flow, not just another equivalent flow."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": [
+        "Predrag R. Jelenkovic",
+        "Mariana Olvera-Cravioto"
+      ],
+      "title": "Implicit renewal theory and power tails on trees",
+      "journal": "Advances in Applied Probability 44 (2012), 528-561",
+      "url": "https://molvera.web.unc.edu/wp-content/uploads/sites/19443/2019/01/Jelenkovic_Olvera_WBP_AAP_final.pdf",
+      "claim": "Theorem 3.1, N=1 and alpha=1",
+      "access": "Author-hosted published primary PDF directly opened; theorem statement, hypotheses and tail-constant formula inspected.",
+      "role": "APPLIED primary theorem. Verified E A=1, E A log A=(3 log3-4 log2)/4>0, renewal nonarithmeticity, every subunit R moment, and the finite tail-difference integral E B=1/4. Concludes x P(R>x)->1/log(27/16)."
+    },
+    {
+      "authors": [
+        "Lyapunov Weaver"
+      ],
+      "title": "Geometry, integer fibres, and dyadic equidistribution of the joint Collatz affine law",
+      "version": "v2; page dated 2026-10-22",
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "versioned_download": "https://rstation.ai/api/v1/papers/collatz_19/versions/2/download",
+      "claim": "Section 9.2, (F1)-(F8), canonical trace-weighted Cesaro fibre; (F13) ordinary-law comparison consulted",
+      "access": "Primary author manuscript and its fixed version download directly opened; proof of the exact conditional identity and selection passage read.",
+      "role": "SOURCE-QUALIFIED interface, not a new theorem of this packet. Fixed-root weak convergence is reused only to identify the correct comparison law; no individual-depth convergence or root-uniform rate is assumed. Its Valbuena, atom-floor and selection inputs retain upstream qualification."
+    }
+  ],
+  "literature_consulted_not_applied": [
+    {
+      "author": "Sara Brofferio",
+      "title": "The Poisson boundary of random rational affinities",
+      "url": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "access": "Primary published PDF introduction/theorem inspected.",
+      "reason": "Product boundary and harmonic representation do not identify the specified ordinary fibres or their required convergence rates; no theorem invoked."
+    },
+    {
+      "author": "Charles M. Goldie",
+      "title": "Implicit Renewal Theory and Tails of Solutions of Random Equations",
+      "doi": "10.1214/aoap/1177005985",
+      "access": "Original publisher PDF request returned a service/security page; original theorem not directly inspected.",
+      "reason": "The application instead uses the independently opened author-hosted Jelenkovic--Olvera-Cravioto primary extension, which contains the required one-child theorem."
+    }
+  ],
+  "normalization_safeguards": [
+    "Model nu is one joint law (R,Y); R and Y are not assumed independent.",
+    "eta_m^q has mass F_m(q), not one. Cesaro averaging is performed before normalization.",
+    "The exact source prefix q_0,...,q_j is reversed only in the inverse-word convention; all clock and carry identities are retained.",
+    "The main discrepancy is measured after division by q_j in a single fixed scaled Lipschitz test. The normalized TV-plus-trace-error corollary separately requires h(q_j)/q_j bounded.",
+    "All uniform square-height conclusions retain the separate imported hypothesis Lambda_* > 0, displayed as (18); it is not deduced from escape alone."
+  ],
+  "first_unproved_step": "A sufficiently deep, frequency-dependent comparison between the fixed ordinary canonical boundary and the model, after paying the square-height source cost, or a direct same-source ternary collision upper. The new lower budget is necessary, not sufficient, and is not an escape contradiction."
+}

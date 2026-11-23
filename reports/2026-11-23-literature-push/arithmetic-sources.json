@@ -1,0 +1,104 @@
+{
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "claim_status": "New written all-parameter family theorem plus separate substantive Lean numerical core; unrestricted nontrivial-cycle exclusion OPEN.",
+  "date_utc": "2026-11-23",
+  "primary_literature": [
+    {
+      "authors": "T. Y. Lam and K. H. Leung",
+      "scope": "Introduction and cyclic group-ring discussion inspected in primary preprint; inspiration only, no theorem dependency.",
+      "title": "On vanishing sums of roots of unity",
+      "url": "https://arxiv.org/pdf/math/9511209",
+      "version": "math/9511209v1"
+    },
+    {
+      "authors": "Nathan Grieve and Julie Tzu-Yueh Wang",
+      "scope": "Theorem 1.2 inspected in primary paper; generic moving-target limitations credited to old PR182 and not claimed as new progress.",
+      "title": "Greatest common divisors with moving targets and consequences for linear recurrence sequences",
+      "url": "https://arxiv.org/pdf/1902.09109",
+      "version": "1902.09109v2"
+    }
+  ],
+  "source_records": [
+    {
+      "key": "counterfamily",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "role": "Direct credited starting family: Section 8 (N18)-(N23), two packets at a=5,b=3; full polynomial gcd given, numerical gcd left open.",
+      "sha": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "sha256_utf8": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "utf8_bytes": 18876
+    },
+    {
+      "key": "old_moving",
+      "path": "research/closure-round2-20261123/CYCLE_CANCELLATION.md",
+      "role": "Prior credited moving-target analysis in Section 5; inspected, not a new result or proof dependency.",
+      "sha": "b78819e95ee7d39f02022de991b42217821e7590",
+      "sha256_utf8": "b77eb45c9c7852dba80f24aed88901f2720122a781ce05f4e24437306cadff5f",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b78819e95ee7d39f02022de991b42217821e7590/research/closure-round2-20261123/CYCLE_CANCELLATION.md",
+      "utf8_bytes": 14352
+    },
+    {
+      "key": "degree",
+      "path": "research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md",
+      "role": "Fresh PR175 residual-degree estimates inspected for context; not used in the new proof.",
+      "sha": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "sha256_utf8": "d92b1dd9c6da48459dad86a918b1a639f98c43aac8b6610157efd956b7a84b2a",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md",
+      "utf8_bytes": 13624
+    },
+    {
+      "key": "lattice",
+      "path": "research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md",
+      "role": "Fresh PR175 recurrence/valuation estimates and full-gcd height counterexample inspected; not used in the new proof.",
+      "sha": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "sha256_utf8": "9f1f08ecd36e84cfd3cdc3021591cd47d9cb4c3cc5e6ce51401cf4686d51aba5",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md",
+      "utf8_bytes": 9466
+    },
+    {
+      "key": "cyclotomic",
+      "path": "research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md",
+      "role": "Fresh PR175 proposed cyclotomic-value packet inspected; status retained, not independently certified or used as a proof dependency here.",
+      "sha": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "sha256_utf8": "a65775e58fff641dba07d36e622d38979e1a93268ddea0e5dd8e339ffc35021b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md",
+      "utf8_bytes": 9228
+    },
+    {
+      "key": "paired",
+      "path": "research/lean-global-resolvent-20261121/overview/global-closing/PAIRED_TENSOR_CLOSURE_ATTEMPT.md",
+      "role": "Fresh PR176 paired-moment ideal result inspected for context; no moment closure used in the new proof.",
+      "sha": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "sha256_utf8": "b828c5c0155c3baa3377c1d56f7c284602762b2dec149cff772bba8b1a42016e",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a/research/lean-global-resolvent-20261121/overview/global-closing/PAIRED_TENSOR_CLOSURE_ATTEMPT.md",
+      "utf8_bytes": 10582
+    },
+    {
+      "key": "residual_prior",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "role": "Prior primitive residual-degree framework inspected; no result imported as a proof dependency.",
+      "sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "sha256_utf8": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "utf8_bytes": 9204
+    },
+    {
+      "key": "growth_prior",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "role": "Prior denominator growth framework inspected; no result imported as a proof dependency.",
+      "sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "sha256_utf8": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "utf8_bytes": 12131
+    },
+    {
+      "key": "rational",
+      "path": "research/closure-round5-20261123/CYCLE_EXCLUSION.md",
+      "role": "Fetched for current-source context; only source PR description inspected in this lane, not a claim of a full source-file review.",
+      "sha": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "sha256_utf8": "53ca400b528fa55047cb78e8c056e243932256dcd3e3c7d0fa0afd129d97ebbb",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/afe6f4d1a661b377c9daa4623bdd732ba478386b/research/closure-round5-20261123/CYCLE_EXCLUSION.md",
+      "utf8_bytes": 14196
+    }
+  ]
+}

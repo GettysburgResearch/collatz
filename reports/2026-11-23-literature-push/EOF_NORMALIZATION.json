@@ -1,0 +1,41 @@
+{
+  "scope": "Mechanical removal of redundant blank line at EOF after staged diff check; only newline bytes removed. Reviewed mathematical text unchanged. Review source bindings updated independently before release. Exact previous PR metadata remains in PR178_PREVIOUS.json.",
+  "changes": [
+    {
+      "path": "reports/2026-11-23-literature-push/PR178_PREVIOUS.md",
+      "before_sha256": "ece829b79b5eec709fdca2652a51a951e65908420cea2a06bc0e885dbcbe8a7b",
+      "after_sha256": "090653924bafe41214d03f172975441cfb154b7b985a21340e2efc695cbc202f",
+      "removed_trailing_newline_bytes": 1
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/README.md",
+      "before_sha256": "cede073d9b2693b2aac45ff0d6ae0832b7cb222ef555d5b26d084b52c932ac09",
+      "after_sha256": "78fa34596b55ca6b4b1722e4da57a0b36a349873c45eef942a168bc770502f26",
+      "removed_trailing_newline_bytes": 1
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-analytic-review.md",
+      "before_sha256": "6374400d4a044b87e6df217195fb4f6319d5740b638ab7f956f249c42b7b257f",
+      "after_sha256": "9ce034a5f8945e4072a8b0c3111be26645424f44a235ca1fe0f3c28f237ec790",
+      "removed_trailing_newline_bytes": 1
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/root-formal-review.md",
+      "before_sha256": "a3c1966b35b03b986d9cde1230689939b252a792ab1eea10eaf2b1b90c35dc0f",
+      "after_sha256": "85ab1e9bb5a9a9c8400060125fb70844cd14e6395c38cee2fa970914d59e7a56",
+      "removed_trailing_newline_bytes": 1
+    },
+    {
+      "path": "research/literature-push-20261123/README.md",
+      "before_sha256": "3c7ecec57fbde131b6c682c4826cc2a427a72e4a997aace3ba774f96a26f0b5b",
+      "after_sha256": "4ba8cf99b8f850ba80f4abcaad91eedfe5e957ad3bd7ec511b255c5d587b5b66",
+      "removed_trailing_newline_bytes": 1
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/GENERAL_DENSITY_JET.md",
+      "before_sha256": "4a555d292a3179063dbd249128c59287dac92eccb1d931f5e752990f67118cf2",
+      "after_sha256": "400e3c6cdccea71b71224fc2ee5cfb1379b334e5422cd64b81a87bd239403890",
+      "removed_trailing_newline_bytes": 1
+    }
+  ]
+}
