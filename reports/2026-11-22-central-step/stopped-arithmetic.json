@@ -1,0 +1,119 @@
+{
+  "schema": "collatz-stopped-sibling-arithmetic/v1",
+  "scope": "finite rational densities; no canonical G comparison or Collatz conclusion",
+  "generator": "research/lean-joint-20261122/finite_density_certificate.py",
+  "generator_sha256": "45c6bebc8008727e367428f922baa5c1a48a09c565864292f420e79405f45fd3",
+  "valuation_tail": "complete periodic geometric sums; no exponent cutoff",
+  "residue_averages": [
+    {
+      "depth": 1,
+      "root": 1,
+      "modulus": 3,
+      "orbit_length": 1,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 1,
+      "root": 5,
+      "modulus": 3,
+      "orbit_length": 1,
+      "exact_average": "2",
+      "D_1": "2"
+    },
+    {
+      "depth": 2,
+      "root": 1,
+      "modulus": 9,
+      "orbit_length": 3,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 2,
+      "root": 5,
+      "modulus": 9,
+      "orbit_length": 3,
+      "exact_average": "2",
+      "D_1": "2"
+    },
+    {
+      "depth": 3,
+      "root": 1,
+      "modulus": 27,
+      "orbit_length": 9,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 3,
+      "root": 5,
+      "modulus": 27,
+      "orbit_length": 9,
+      "exact_average": "2",
+      "D_1": "2"
+    },
+    {
+      "depth": 4,
+      "root": 1,
+      "modulus": 81,
+      "orbit_length": 27,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 4,
+      "root": 5,
+      "modulus": 81,
+      "orbit_length": 27,
+      "exact_average": "2",
+      "D_1": "2"
+    },
+    {
+      "depth": 5,
+      "root": 1,
+      "modulus": 243,
+      "orbit_length": 81,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 5,
+      "root": 5,
+      "modulus": 243,
+      "orbit_length": 81,
+      "exact_average": "2",
+      "D_1": "2"
+    },
+    {
+      "depth": 6,
+      "root": 1,
+      "modulus": 729,
+      "orbit_length": 243,
+      "exact_average": "1",
+      "D_1": "1"
+    },
+    {
+      "depth": 6,
+      "root": 5,
+      "modulus": 729,
+      "orbit_length": 243,
+      "exact_average": "2",
+      "D_1": "2"
+    }
+  ],
+  "diagnostic": {
+    "depth": 6,
+    "n": 1457,
+    "B_n": 93269,
+    "D_6_n": "4529434075333635818676362986132926812220965525315475939243049081267707168547851567603128622778636478076703604794304855725476323147561975630186518/274062972867247603303734187526423379379849494006252611323711996455451016851117969393277902052213286905663818370054902421548244778428601179153047",
+    "D_6_B_n": "253725156380482042087993115956357272767335727158515782866061990811124312673727083995749522421117681155845683147347998086791144706080521630239744/274062972867247603303734187526423379379849494006252611323711996455451016851117969393277902052213286905663818370054902421548244778428601179153047",
+    "ratio": "126862578190241021043996557978178636383667863579257891433030995405562156336863541997874761210558840577922841573673999043395572353040260815119872/2264717037666817909338181493066463406110482762657737969621524540633853584273925783801564311389318239038351802397152427862738161573780987815093259",
+    "D_6_n_decimal": "16.52698293369105506011618",
+    "D_6_B_n_decimal": "0.9257914475859643965693069",
+    "ratio_decimal": "0.05601696639370841834042190",
+    "D_6_n_gt_16": true,
+    "D_6_B_n_lt_1": true,
+    "ratio_lt_one_sixteenth": true
+  }
+}

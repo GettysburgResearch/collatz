@@ -1,0 +1,40 @@
+'CollatzJoint.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.comparisons_of_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.collatz_of_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.Checkpoint.rules_valid' depends on axioms: [propext]
+'CollatzJoint.Checkpoint.every_rule_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSelectedWords.word_determined_by_total_and_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzNegativeFive.escape_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem CollatzJoint.collatz_of_complete : ∀ {w : CollatzJoint.Weights},
+  0 < w.triple → 0 < w.five → CollatzJoint.Complete w → ∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n :=
+fun {w} hw3 hw5 hc =>
+  have all := CollatzJoint.comparisons_of_complete hw3 hw5 hc;
+  CollatzReverseBasin.reverse_generates
+    { twice := CollatzClosure.basin_twice, oddStep := CollatzClosure.basin_odd,
+      triple := fun n hn hb =>
+        have positive := Decidable.byContradiction fun a => CollatzJoint.collatz_of_complete._proof_1_1 n hn a;
+        (all CollatzJoint.Kind.triple n positive).mpr hb }
+    (have this := Exists.intro 0 rfl;
+    this)
+CollatzJoint.Checkpoint.unresolved_count : CollatzJoint.Checkpoint.unresolved.length = 437
+'CollatzSelectedWords.linear_block_constants' does not depend on any axioms
+'CollatzAffineJoint.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.collatz_of_complete_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.PurePsiCheckpoint.rules_valid' depends on axioms: [propext]
+'CollatzAffineJoint.PurePsiCheckpoint.residue_accounting' does not depend on any axioms
+'CollatzAffineJoint.PurePsiCheckpoint.residue_covered' depends on axioms: [propext, Quot.sound]
+'CollatzAffineJoint.PurePsiCheckpoint.checked_row_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.reciprocal_even_psi_family' depends on axioms: [propext, Quot.sound]
+'CollatzAffineJoint.no_rank_for_both_reciprocal_arcs' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.psi_even_of_half_and_odd' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.collatz_iff_odd_psi' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.collatz_of_odd_rank_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzPsiParity.OddRankStep : Prop :=
+∀ (n : ℕ),
+  0 < n →
+    n % 2 = 1 →
+      (∀ (u : ℕ),
+          0 < u →
+            CollatzPsiParity.psiRank u < CollatzPsiParity.psiRank n →
+              CollatzAffineJoint.Comparison CollatzAffineJoint.Kind.psi u) →
+        CollatzAffineJoint.Comparison CollatzAffineJoint.Kind.psi n

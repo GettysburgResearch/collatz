@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "direct_imports": [
+    {
+      "module": "Mathlib.Basic.Real.Basic",
+      "source_path": "Mathlib/Basic/Real/Basic.lean",
+      "sha256": "b10f715c299e6c3f468e916cad97620e921dc432e31269217954d94191fc7829"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "source_path": "Mathlib/Algebra/Order/BigOperators/GroupWithZero/Finset.lean",
+      "sha256": "a2f4be025a6f8863af1ded0c330ab72f94602d60e808cd24699bb1cd1f1d3263"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "source_path": "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean",
+      "sha256": "17c2e6e0d7b41171e8d023f58f583230da93ae4e8576be56ac8cbb07dd00f478"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "source_path": "Mathlib/Algebra/BigOperators/Group/Finset/Piecewise.lean",
+      "sha256": "779ebdd8b88d494a840fead5fb43ab2143e2121d4df7502de63a20d049c7b763"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "source_path": "Mathlib/Algebra/BigOperators/Ring/Finset.lean",
+      "sha256": "3260deb025880a9c56b258bc0d9c53106aab2452599141b1e1c8f5bb0f589aa3"
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "source_path": "Mathlib/Tactic/Ring.lean",
+      "sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e"
+    },
+    {
+      "module": "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+      "source_path": "Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean",
+      "sha256": "9ab3822cbd68dadee6ce8d3d0326a993dce2fb13c378c59f4b711c519d2ae463"
+    },
+    {
+      "module": "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+      "source_path": "Mathlib/Analysis/SpecialFunctions/Pow/Real.lean",
+      "sha256": "5f4970fe329b14615ca6cfa3e0dcb0cf9d2017c98d2e3501237412aa2474e70b"
+    }
+  ],
+  "fresh_mathlib_dependencies": [
+    {
+      "module": "Mathlib.MeasureTheory.OuterMeasure.Defs",
+      "source_path": "Mathlib/MeasureTheory/OuterMeasure/Defs.lean",
+      "sha256": "e204c876e2ab2ea2272fc0c1c8b3dd1287dc0d3e688fe2246fa0d6acad17ae10",
+      "exit_code": 0,
+      "seconds": 0.968
+    },
+    {
+      "module": "Mathlib.MeasureTheory.OuterMeasure.Basic",
+      "source_path": "Mathlib/MeasureTheory/OuterMeasure/Basic.lean",
+      "sha256": "1804bb6669866188dfd2723b0910d8f282c27e10990ff9afdb59cdbadf33cd2b",
+      "exit_code": 0,
+      "seconds": 1.772
+    },
+    {
+      "module": "Mathlib.MeasureTheory.OuterMeasure.AE",
+      "source_path": "Mathlib/MeasureTheory/OuterMeasure/AE.lean",
+      "sha256": "de58d3b2aa42d801e9a268df285c32e5aa6ca7ffc5b42bf5eff8f12bda87a00d",
+      "exit_code": 0,
+      "seconds": 2.278
+    },
+    {
+      "module": "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+      "source_path": "Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean",
+      "sha256": "9ab3822cbd68dadee6ce8d3d0326a993dce2fb13c378c59f4b711c519d2ae463",
+      "exit_code": 0,
+      "seconds": 1.145
+    }
+  ],
+  "fresh_local_output": true,
+  "warnings_as_errors": true,
+  "new_public_theorem_count": 7,
+  "historical_project_modules_rebuilt": 0,
+  "scope": "Four finite inequalities: harmonic-term cone floor, selected-edge product, actual cylinder multiplier bound, arbitrary-reference heavy-cell comparison. Three measure-theoretic deductions invoke first Borel-Cantelli to retain infinitely many good returns, select an increasing subsequence, and obtain arbitrarily small good real-ball mass bounds. The actual Collatz bad-event estimate, recurrence, canonical trace construction, clock tail, information dimension and full Collatz convergence are not formalized.",
+  "modules": [
+    {
+      "module": "BoundaryMass",
+      "path": "research/source-clock-20261123/lean/BoundaryMass.lean",
+      "sha256": "e2ff0677e2df2f20e2fcf9376dd881787479d886349a3fadf644a92903ea48e3",
+      "exit_code": 0,
+      "seconds": 1.095,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "BoundaryBorelCantelli",
+      "path": "research/source-clock-20261123/lean/BoundaryBorelCantelli.lean",
+      "sha256": "e4825c20e2c5c2d5d2b8d0bc1d3a5a4402cc4ce648a5812bea88f404126e68f4",
+      "exit_code": 0,
+      "seconds": 1.531,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "BoundaryAudit",
+      "path": "research/source-clock-20261123/lean/BoundaryAudit.lean",
+      "sha256": "107773bff48f2d4bf1c9e57721b06f29485df3c46a2b2b17186b96beff8cad7f",
+      "exit_code": 0,
+      "seconds": 1.381,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audited_declarations": [
+        "CollatzSourceClock.BoundaryMass.cone_floor_of_path_term",
+        "CollatzSourceClock.BoundaryMass.selected_prefix_product",
+        "CollatzSourceClock.BoundaryMass.cylinder_multiplier_bound",
+        "CollatzSourceClock.BoundaryMass.heavy_cell_mass",
+        "CollatzSourceClock.BoundaryBorelCantelli.ae_frequently_good_avoiding_bad",
+        "CollatzSourceClock.BoundaryBorelCantelli.ae_exists_good_subsequence_avoiding_bad",
+        "CollatzSourceClock.BoundaryBorelCantelli.ae_arbitrarily_small_real_ball_bounds"
+      ]
+    }
+  ]
+}

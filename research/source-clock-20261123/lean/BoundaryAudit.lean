@@ -1,0 +1,10 @@
+import BoundaryMass
+import BoundaryBorelCantelli
+
+#print axioms CollatzSourceClock.BoundaryMass.cone_floor_of_path_term
+#print axioms CollatzSourceClock.BoundaryMass.selected_prefix_product
+#print axioms CollatzSourceClock.BoundaryMass.cylinder_multiplier_bound
+#print axioms CollatzSourceClock.BoundaryMass.heavy_cell_mass
+#print axioms CollatzSourceClock.BoundaryBorelCantelli.ae_frequently_good_avoiding_bad
+#print axioms CollatzSourceClock.BoundaryBorelCantelli.ae_exists_good_subsequence_avoiding_bad
+#print axioms CollatzSourceClock.BoundaryBorelCantelli.ae_arbitrarily_small_real_ball_bounds

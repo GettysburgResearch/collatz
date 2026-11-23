@@ -1,0 +1,9 @@
+MODULE FibreReconstruction
+
+MODULE FibreAudit
+'CollatzHighVariance.FibreReconstruction.coherent_edge_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzHighVariance.FibreReconstruction.finite_fibre_reconstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

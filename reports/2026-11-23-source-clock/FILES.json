@@ -1,0 +1,142 @@
+{
+  "schema": "collatz-checkpoint-file-manifest/v1",
+  "base_commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+  "scope": "Exact files added by this checkpoint; the manifest itself is excluded to avoid a self-hash.",
+  "files": [
+    {
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "bytes": 16551
+    },
+    {
+      "path": "research/source-clock-20261123/COLLISION_TRANSFER.md",
+      "sha256": "4f6494baa8fd85e936e69367c45a27ab774a8a0aa6ee188919e49f44371b7fe9",
+      "bytes": 6823
+    },
+    {
+      "path": "research/source-clock-20261123/DEPENDENCIES.json",
+      "sha256": "42a94ab84e5b63927722f90746535437c650803c2985e649503ccc2125aca1d2",
+      "bytes": 3394
+    },
+    {
+      "path": "research/source-clock-20261123/EARLY_TRACE.md",
+      "sha256": "6faae3c0d510a6d2603c07f1fb34f6b9a144d918b38f05b198623a0eca80d16d",
+      "bytes": 10727
+    },
+    {
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "bytes": 11593
+    },
+    {
+      "path": "research/source-clock-20261123/LITERATURE.md",
+      "sha256": "a19a95558d0e9b6a7ed5d8c87b0d844bf32232122315a9263c8890656ee17823",
+      "bytes": 3619
+    },
+    {
+      "path": "research/source-clock-20261123/README.md",
+      "sha256": "5cdb2d345893d9f54829d0d5deccd90fc3c04b5271c6fc2d49fe25553b6f36ea",
+      "bytes": 9540
+    },
+    {
+      "path": "research/source-clock-20261123/SOURCES.json",
+      "sha256": "ae102295d179d74a557197d818d2b88c6b24c2de1cfb8ffd86e1fb72af593c36",
+      "bytes": 7825
+    },
+    {
+      "path": "research/source-clock-20261123/TARGET_DESCENT.md",
+      "sha256": "ba1656edb83aa127e514b94b1adcfb7f28c4c97e28e17312e2d12f7a3d5f87cb",
+      "bytes": 9295
+    },
+    {
+      "path": "research/source-clock-20261123/THEOREMS.json",
+      "sha256": "fab3e63fa2b2a5199886ce6deaf81067e135301ec0505e9b147b48e071e3dccd",
+      "bytes": 1091
+    },
+    {
+      "path": "research/source-clock-20261123/check_lean.py",
+      "sha256": "3323c2ddf1983fec37ebb5c5ac610c3b91dde539353829b28c0d8c0681513eee",
+      "bytes": 9651
+    },
+    {
+      "path": "research/source-clock-20261123/check_packet.py",
+      "sha256": "03fa0530a201a8c25ce69a700cf0a6acce4fe072666997cb4e6f3132674a2fe7",
+      "bytes": 5917
+    },
+    {
+      "path": "research/source-clock-20261123/lean/BoundaryAudit.lean",
+      "sha256": "107773bff48f2d4bf1c9e57721b06f29485df3c46a2b2b17186b96beff8cad7f",
+      "bytes": 599
+    },
+    {
+      "path": "research/source-clock-20261123/lean/BoundaryBorelCantelli.lean",
+      "sha256": "e4825c20e2c5c2d5d2b8d0bc1d3a5a4402cc4ce648a5812bea88f404126e68f4",
+      "bytes": 4092
+    },
+    {
+      "path": "research/source-clock-20261123/lean/BoundaryMass.lean",
+      "sha256": "e2ff0677e2df2f20e2fcf9376dd881787479d886349a3fadf644a92903ea48e3",
+      "bytes": 4921
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/EARLY_TRACE_BOUNDARY_REVIEW.md",
+      "sha256": "c306922a32b7a651bb013a175d66ef77a9d4d110733e3e647d40b09dfd190e5f",
+      "bytes": 8680
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/ROOT_BOREL_CANTELLI_REVIEW.md",
+      "sha256": "830636519ae4570e5c87567a5ba2ae9b677d03d669c405eb751703d3884dd8ef",
+      "bytes": 2345
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/ROOT_COLLISION_REVIEW.md",
+      "sha256": "9cfcac8bb6e62b74a69cf5962c78e9d77cd9d25bf01b91a295ff93282e476056",
+      "bytes": 2462
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/ROOT_TRACE_TARGET_REVIEW.md",
+      "sha256": "9d80d6eb7336379c845a3c751bf7cf6b84378fce41dcc6a4b55e6fb6c07c2d46",
+      "bytes": 4401
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/TARGET_BOUNDARY_REVIEW.md",
+      "sha256": "4c4adef5d54cb265360184beb50b490c241cc44aa13759d61cc7de34a0e0f096",
+      "bytes": 6875
+    },
+    {
+      "path": "research/source-clock-20261123/reviews/TARGET_EXTENSION_REVIEW.md",
+      "sha256": "90c766529fe845524eff2e65a81b6be7756128e2e39addc898cd0bf7ba8db6b6",
+      "bytes": 6969
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/REVIEW_SCOPE.json",
+      "sha256": "05ef1476f1f943598caa09b0c2f3902e21033d36b0c261c1cc01705a523d984e",
+      "bytes": 3795
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/VERIFICATION.md",
+      "sha256": "63cabdd9ee382513040caf72c75479771dfd3498273fe4c80914187100dc0465",
+      "bytes": 4426
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/lean-build.log",
+      "sha256": "b229aaa070fea03b752de7e207162dae78710dd1808bb0713d46ccaf30c86887",
+      "bytes": 1172
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/lean-check.json",
+      "sha256": "00cf7ac44b38f2151f4a26f46e24b8858578f0a2124da1a5483e6d5c3c6097e9",
+      "bytes": 5493
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/open-pr-snapshot.json",
+      "sha256": "3dfdf4b33b88f45fa8502b0fef09dbdcde0589edbba4e8f7e9b4ab2b7850d653",
+      "bytes": 49485
+    },
+    {
+      "path": "reports/2026-11-23-source-clock/pr180-prior-description.json",
+      "sha256": "aac2030aa2289b85539270af017176bf4897012a8a6b5bce1e549ddb2ba17c06",
+      "bytes": 18965
+    }
+  ]
+}

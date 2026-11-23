@@ -1,0 +1,26 @@
+import ReturnSynthesis
+import WitnessSynthesis
+import RepeatedTail
+
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.explicit_frequency_separation
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_of_height
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_finite_cutoff
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.kernel_sum_absolute
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_finite_bound
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_explicit_bound
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.marked_source_occupation_identity
+#print axioms CollatzShell.ForwardSection.ReturnSynthesis.weighted_marked_occupation_bound
+#print axioms CollatzShell.WitnessSynthesis.powered_trace_hit
+#print axioms CollatzShell.WitnessSynthesis.source_grade_peel
+#print axioms CollatzShell.WitnessSynthesis.peel_powered_source
+#print axioms CollatzShell.WitnessSynthesis.half_size_merger_rule
+#print axioms CollatzShell.WitnessSynthesis.erase_prefix_asynchronous
+#print axioms CollatzShell.WitnessSynthesis.erasure_interval_rule
+#print axioms CollatzShell.WitnessSynthesis.unresolved_endpoint_pair
+#print axioms CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure
+#print axioms CollatzShell.WitnessSynthesis.seven_asynchronous_erasure
+#print axioms CollatzShell.WideRepeatedTail.odd_orbit_positive_odd
+#print axioms CollatzShell.WideRepeatedTail.odd_step_le_double
+#print axioms CollatzShell.WideRepeatedTail.odd_orbit_height
+#print axioms CollatzShell.WideRepeatedTail.repeated_odd_prefix
+#print axioms CollatzShell.WideRepeatedTail.repeated_odd_height

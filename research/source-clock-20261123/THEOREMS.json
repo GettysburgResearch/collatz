@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-formal-theorem-inventory/v1",
+  "public_theorem_count": 7,
+  "modules": [
+    {
+      "module": "BoundaryMass",
+      "theorems": [
+        "cone_floor_of_path_term",
+        "selected_prefix_product",
+        "cylinder_multiplier_bound",
+        "heavy_cell_mass"
+      ]
+    },
+    {
+      "module": "BoundaryBorelCantelli",
+      "theorems": [
+        "ae_frequently_good_avoiding_bad",
+        "ae_exists_good_subsequence_avoiding_bad",
+        "ae_arbitrarily_small_real_ball_bounds"
+      ]
+    }
+  ],
+  "audit_module": "BoundaryAudit",
+  "scope": "Four finite inequalities: harmonic-term cone floor, selected-edge product, actual cylinder multiplier bound, arbitrary-reference heavy-cell comparison. Three measure-theoretic deductions invoke first Borel-Cantelli to retain infinitely many good returns, select an increasing subsequence, and obtain arbitrarily small good real-ball mass bounds. The actual Collatz bad-event estimate, recurrence, canonical trace construction, clock tail, information dimension and full Collatz convergence are not formalized."
+}

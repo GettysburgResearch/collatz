@@ -1,0 +1,4 @@
+import FibreReconstruction
+
+#print axioms CollatzHighVariance.FibreReconstruction.coherent_edge_increment
+#print axioms CollatzHighVariance.FibreReconstruction.finite_fibre_reconstruction

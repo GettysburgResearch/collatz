@@ -1,0 +1,22 @@
+import BandClosure
+
+#print axioms CollatzShell.BandTransport.restored_word
+#print axioms CollatzShell.BandTransport.compressed_component_descent
+#print axioms CollatzShell.BandTransport.band_component_descent
+#print axioms CollatzShell.BandTransport.band_family_unbounded
+#print axioms CollatzShell.CarryBlocks.carryHeight_constant_prefix
+#print axioms CollatzShell.ForwardSection.carryHeight_on_return
+#print axioms CollatzShell.ForwardSection.Population.universal_iff_cubic_bound
+#check CollatzShell.ForwardSection.Population.DenseBandFans
+#check CollatzShell.ForwardSection.Population.CubicSurvivorBound
+#print axioms CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi
+#print axioms CollatzShell.BandParityBridge.solved_phase_odd_psi
+#print axioms CollatzShell.UnitPopulationTransport.unitize_population
+#print axioms CollatzShell.WitnessGlobal.single_four_psi
+#print axioms CollatzShell.WitnessGlobal.long_terminal_certificate
+#print axioms CollatzShell.WitnessGlobal.long_terminal_psi_boundary
+#print axioms CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor
+#print axioms CollatzShell.InverseDensityPotential.finite_absorbing_floor
+#print axioms CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor
+#print axioms CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base
+#check CollatzShell.InverseDensityPotential.MarkedSublinear

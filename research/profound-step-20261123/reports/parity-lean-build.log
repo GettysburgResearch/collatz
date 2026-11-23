@@ -1,0 +1,15 @@
+MODULE ParityRecurrence.lean
+
+MODULE ParityRecurrenceAudit.lean
+'CollatzProfound.ParityRecurrence.finite_choice_eventually_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzProfound.ParityRecurrence.constant_recurrence_of_finite_normalized_windows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzProfound.ParityRecurrence.oddCount_le' depends on axioms: [propext, Quot.sound]
+'CollatzProfound.ParityRecurrence.oddCount_add' depends on axioms: [propext]
+'CollatzProfound.ParityRecurrence.parity_finite_normalized_windows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzProfound.ParityRecurrence.parity_constant_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+MODULE WeightedCollision.lean
+
+MODULE WeightedCollisionAudit.lean
+'CollatzClosing.WeightedCollision.weighted_sum_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClosing.WeightedCollision.labelled_collision_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClosing.WeightedCollision.complete_carry_recovery' depends on axioms: [propext]

@@ -1,0 +1,6 @@
+import StationaryCollisionGap
+
+#print axioms CollatzWholeSource.StationaryCollisionGap.block_bound
+#print axioms CollatzWholeSource.StationaryCollisionGap.deficit_at_all_lengths
+#print axioms CollatzWholeSource.StationaryCollisionGap.strict_gap_of_block_deficit
+#print axioms CollatzWholeSource.StationaryCollisionGap.strict_rate_gap

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Exact negative-cycle control; not a Collatz proof or universal-bound formalization",
+  "length": 11,
+  "original_odd_count": 7,
+  "original_complete_carry": 2363,
+  "original_complete_denominator": -139,
+  "companion_complete_carry": 5296,
+  "companion_complete_denominator": 1967,
+  "companion_reduced_denominator": 1967,
+  "companion_product": "8",
+  "companion_cycle": [
+    "5296/1967",
+    "2648/1967",
+    "1324/1967",
+    "662/1967",
+    "331/1967",
+    "1480/1967",
+    "740/1967",
+    "370/1967",
+    "185/1967",
+    "1261/1967",
+    "2875/1967"
+  ]
+}

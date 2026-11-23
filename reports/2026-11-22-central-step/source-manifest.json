@@ -1,0 +1,108 @@
+{
+  "schema": "collatz-central-step-source-manifest/v1",
+  "base_commit": "ab3973099f0d285bbe88972382ad599bb02cd460",
+  "local_markdown_targets_checked": 20,
+  "source_qualified_notes": [
+    "CRITICAL_BOUNDARY.md",
+    "STOPPED_MIXING.md"
+  ],
+  "kernel_receipt": "reports/2026-11-22-central-step/lean-check.json",
+  "scope": "Hashes of the final checkpoint sources and receipts before committing. Infinite analytic results retain the hypotheses and written status in their notes.",
+  "files": [
+    {
+      "path": "reports/2026-11-22-central-step/lean-build.log",
+      "sha256": "0a171a7e47965cb588b87d45c8f3adfcc3b75fb06c5800751cb20baa9d366532",
+      "bytes": 3874
+    },
+    {
+      "path": "reports/2026-11-22-central-step/lean-check.json",
+      "sha256": "070ec699cb512f4213635fab15787b1e616a537ded5424f33787bf4a9a352695",
+      "bytes": 4397
+    },
+    {
+      "path": "reports/2026-11-22-central-step/pr-description-before.json",
+      "sha256": "c2ac170a8de7058e781fb6bb9ffdeb82ed528828a2e4ab64c9aab12857e50eaf",
+      "bytes": 10456
+    },
+    {
+      "path": "reports/2026-11-22-central-step/stopped-arithmetic.json",
+      "sha256": "ed5b52558cc47040eaf6256896fa45acd67e3448cddfa89ca0f41e9b964f21f2",
+      "bytes": 3330
+    },
+    {
+      "path": "research/central-step-20261122/CRITICAL_BOUNDARY.md",
+      "sha256": "2eb0f804d3e422a5a2ca6aafd6cdf725d47dea51f01e432096019162809949b4",
+      "bytes": 18232
+    },
+    {
+      "path": "research/central-step-20261122/DEPENDENCIES.json",
+      "sha256": "c38b2ee311ed678dbff7534921f5c971b49f8dd33fb14064f2b453825d6c1faf",
+      "bytes": 1786
+    },
+    {
+      "path": "research/central-step-20261122/README.md",
+      "sha256": "9b3a0bb5ab4ce718b03e61ccc1cb80b290a2b09b71917bbee04af928f6cf8b61",
+      "bytes": 7745
+    },
+    {
+      "path": "research/central-step-20261122/REVIEW_BOUNDARY.md",
+      "sha256": "f41fb7130d49787bdfe65848e07d315a3b8c46d53c2ed35b19c306c808acd488",
+      "bytes": 6723
+    },
+    {
+      "path": "research/central-step-20261122/REVIEW_SOURCE.md",
+      "sha256": "442834adac936acbb8cd7aa24add20e03bb08ce106993813198968712d22cb73",
+      "bytes": 5795
+    },
+    {
+      "path": "research/central-step-20261122/REVIEW_STOPPED.md",
+      "sha256": "8e8edde560af4c1caf5c468719fd2b6f6b26305f9d38cd3fcae74b4aa807dfbc",
+      "bytes": 4562
+    },
+    {
+      "path": "research/central-step-20261122/SOURCES.json",
+      "sha256": "c4f1f04948024969f4c86a775dbc43e701707741c9f42396a4d947449791528c",
+      "bytes": 25946
+    },
+    {
+      "path": "research/central-step-20261122/STOPPED_MIXING.md",
+      "sha256": "2df3b2b8687579b1ed842e71d6230d6b3ca2d5915ea47e79d4cd60166215d3c7",
+      "bytes": 13681
+    },
+    {
+      "path": "research/central-step-20261122/THEOREMS.json",
+      "sha256": "7b81e5991237c9387a02d256da61daad2b328dd3cd36885cecb0fbb330f213f9",
+      "bytes": 592
+    },
+    {
+      "path": "research/central-step-20261122/UNIVERSAL_SOURCE.md",
+      "sha256": "569c8fc4603335b24f15c476ea9a0cb4df0d8028156708eb1ca827dc4868a814",
+      "bytes": 13155
+    },
+    {
+      "path": "research/central-step-20261122/check_lean.py",
+      "sha256": "7cbb9d80e59224e4ef9344336b9504e38eff562ae1a55b65e438e0a163a713a4",
+      "bytes": 6709
+    },
+    {
+      "path": "research/central-step-20261122/lean/CentralAudit.lean",
+      "sha256": "8c27d191c00cb8529b6ba8833dd9bb5b96ad2b4857297456fc2b0b57f1515b96",
+      "bytes": 525
+    },
+    {
+      "path": "research/central-step-20261122/lean/CentralCurrent.lean",
+      "sha256": "d2d6cbac42379e1d43d405adbf1a202861eeab74fd8424a9f83e7bb94f77c95e",
+      "bytes": 5763
+    },
+    {
+      "path": "research/central-step-20261122/lean/RationalShadowTest.lean",
+      "sha256": "45ee2b77e5daaab8b6f27b91230d1b6a4991e81b479c906db14e237b3a46d507",
+      "bytes": 6266
+    },
+    {
+      "path": "research/central-step-20261122/verify_stopped_arithmetic.py",
+      "sha256": "1ee26dd6b73a3bc14e42554d00ecb45d39b19bb939f332865d770eaad878829c",
+      "bytes": 4607
+    }
+  ]
+}

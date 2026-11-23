@@ -1,0 +1,98 @@
+{
+  "schema": "collatz-packet-manifest/v1",
+  "scope": "New whole-source packet and its reports; excludes this manifest itself.",
+  "files": [
+    {
+      "path": "reports/2026-11-23-whole-source/PR180_PREVIOUS.json",
+      "sha256": "26efed9dd935a08942326b07fdac6111cf91f3a358db372cdf7eb21dc00ed524"
+    },
+    {
+      "path": "reports/2026-11-23-whole-source/PR_SNAPSHOT.json",
+      "sha256": "72ff7e28d0b7680c970d4765cf53dda91ad06ff50cf000ede00956521694ffd8"
+    },
+    {
+      "path": "reports/2026-11-23-whole-source/reviews/REVIEW_BOUNDARY.md",
+      "sha256": "2663b2d25961d2b4631ea8765e1ba9b37bd5c814cb2717c05a27ff5d57dabb7b"
+    },
+    {
+      "path": "reports/2026-11-23-whole-source/reviews/REVIEW_COLLISION.md",
+      "sha256": "788ad2d2ff70e36d9eb4e5db23631d705f0419c6598dc53e315ba54857a94f10"
+    },
+    {
+      "path": "research/whole-source-20261123/ARITHMETIC_MINIMUM.md",
+      "sha256": "931dfa3e20e3a77093f011d39d108996d63c7459569cacbd9b751d5689e13343"
+    },
+    {
+      "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738"
+    },
+    {
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c"
+    },
+    {
+      "path": "research/whole-source-20261123/README.md",
+      "sha256": "b5c5529b22bd76928c037846dfb6b1c70213e8055780c94ef2a74d88ea818d35"
+    },
+    {
+      "path": "research/whole-source-20261123/REVIEW_BINDINGS.json",
+      "sha256": "9bad84ca0ba5c37c2fc5d38cb28e11eaf594758df7fd95d6ea68676ba2171577"
+    },
+    {
+      "path": "research/whole-source-20261123/SOURCES.json",
+      "sha256": "d59d297a8b3ef4b4ac1013181e72607fd109c1d1fb746d481eaece215b580545"
+    },
+    {
+      "path": "research/whole-source-20261123/THEOREMS.json",
+      "sha256": "63e1bb9c6a98ad4c3cb5442c91f59e9ca2f608f6d21d6716c60ba24f698baef8"
+    },
+    {
+      "path": "research/whole-source-20261123/check_arithmetic_lean.py",
+      "sha256": "121e6283e60f41995b8c39733dc0fb379d1330dd9c64994b741b217cbf57adcd"
+    },
+    {
+      "path": "research/whole-source-20261123/check_collision_lean.py",
+      "sha256": "45e902491de3fc386f5db61417c44c071e83c6790e8283ff1e302d35fa875a42"
+    },
+    {
+      "path": "research/whole-source-20261123/check_packet.py",
+      "sha256": "1859f5952c9f2e56718f7bacf5f17245e7c42b07bc47423b96ea98c989694fd9"
+    },
+    {
+      "path": "research/whole-source-20261123/lean/ArithmeticRepair.lean",
+      "sha256": "c27023ace64bfeba5527b463ee567dacd59cbefe8acf1bbe238c35c2bd654239"
+    },
+    {
+      "path": "research/whole-source-20261123/lean/ArithmeticRepairAudit.lean",
+      "sha256": "c7c7d1ddab3f418ba5c86d566d5a5d0cfcbb0513f4a23453727b313b6a014c7f"
+    },
+    {
+      "path": "research/whole-source-20261123/lean/StationaryCollisionGap.lean",
+      "sha256": "c3e92dce283fac5b5a0b3162b3472990aa244185c41798ee87f905feb690e0b7"
+    },
+    {
+      "path": "research/whole-source-20261123/lean/StationaryCollisionGapAudit.lean",
+      "sha256": "4ff553bcf294050b3caea961227027d55b46a5349c68bb3537f9fe660c6015d4"
+    },
+    {
+      "path": "research/whole-source-20261123/reports/arithmetic-lean-build.log",
+      "sha256": "b407101af5f99b7cabfa134f326319e57ccf02a7635b5177b16eae248a678a32"
+    },
+    {
+      "path": "research/whole-source-20261123/reports/arithmetic-lean-check.json",
+      "sha256": "2ec4be7872346d2c6646e5983a463b184889eb64657959bdb9f0f3e389fd7032"
+    },
+    {
+      "path": "research/whole-source-20261123/reports/collision-lean-build.log",
+      "sha256": "61a1e2cb0854c3729e9d4d5eca3af072416812211d3ae5180f550d4fd98c1aea"
+    },
+    {
+      "path": "research/whole-source-20261123/reports/collision-lean-check.json",
+      "sha256": "388448988b92173dc564226cb3419086c784e5e961a5656292c36654072cdd8b"
+    },
+    {
+      "path": "research/whole-source-20261123/reviews/COLLISION_REVIEW.md",
+      "sha256": "22da017b532c18f4999aad58fcab5b156f57e3e98a9df2ab9d8563affe338015"
+    }
+  ]
+}

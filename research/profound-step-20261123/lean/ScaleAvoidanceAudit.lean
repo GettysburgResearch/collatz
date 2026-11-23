@@ -1,0 +1,6 @@
+import ScaleAvoidance
+
+#print axioms CollatzProfound.ScaleAvoidance.bounded_upward_first_crossing
+#print axioms CollatzProfound.ScaleAvoidance.periodic_interval_hole
+#print axioms CollatzProfound.ScaleAvoidance.relative_hole_width
+#print axioms CollatzProfound.ScaleAvoidance.covering_count_iterate

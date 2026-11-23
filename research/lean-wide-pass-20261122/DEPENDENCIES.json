@@ -1,0 +1,79 @@
+{
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "files": [
+    {
+      "module": "ShellCover",
+      "path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "ForwardSection",
+      "path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "BandTransport",
+      "path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "sha256": "4534e598e1f6c4ac20b105bb3060142a5eb4f7a4de2299d66511ad2cee6eb44d",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "WitnessGlobal",
+      "path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "InverseDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "sha256": "f644a2e04179c3589aeb07f0f0c29ce3876348e84d90d1d87df043f1d71fec2b",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "MarkedDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "sha256": "7172d964262c91c33b72bc1b6c077e76a59557f0522c829454a0be0f61819685",
+      "origin_commit": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "origin_path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "kind": "baseline"
+    },
+    {
+      "module": "ReturnFourier",
+      "path": "research/lean-wide-pass-20261122/lean/vendor/ReturnFourier.lean",
+      "sha256": "a758b7b8c6b1827a5f96eb8ae32196c0145a0280229b6fa22bf899c3cd348ed3",
+      "origin_commit": "75f2f9aad4d3f80aaa1f8718e229faa04ee5770e",
+      "origin_path": "research/band-return-20261121/lean/ReturnFourier.lean",
+      "kind": "vendor"
+    },
+    {
+      "module": "MarkPhase",
+      "path": "research/lean-wide-pass-20261122/lean/vendor/MarkPhase.lean",
+      "sha256": "bd4cc9ef10cbaa91b8d8a8ea83f1d9dfbbf644d0235ceff77452c18abdf199d9",
+      "origin_commit": "75f2f9aad4d3f80aaa1f8718e229faa04ee5770e",
+      "origin_path": "research/band-return-20261121/lean/MarkPhase.lean",
+      "kind": "vendor"
+    },
+    {
+      "module": "MarkFrequency",
+      "path": "research/lean-wide-pass-20261122/lean/vendor/MarkFrequency.lean",
+      "sha256": "7786fd2c3eccecf8dedb931233c9ae1da059a8d883fb1e8250304b6c4df84921",
+      "origin_commit": "75f2f9aad4d3f80aaa1f8718e229faa04ee5770e",
+      "origin_path": "research/band-return-20261121/lean/MarkFrequency.lean",
+      "kind": "vendor"
+    }
+  ]
+}

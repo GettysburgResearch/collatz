@@ -1,0 +1,114 @@
+{
+  "schema": "collatz-packet-manifest/v1",
+  "scope": "New profound-step packet and its reports; excludes this manifest itself.",
+  "files": [
+    {
+      "path": "reports/2026-11-23-profound-step/ARITHMETIC_REVIEW.md",
+      "sha256": "9c5fdfd231ecc93a4039d0d0d3dfe0fb3480beb1d61ee664f08630dc4b40a2d5"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/ENTROPY_REVIEW.md",
+      "sha256": "104b64cf01e40c276d2e1f0dbaedf4141d30dffe362fd4db2acf51b156d38d95"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/HOLONOMICITY_REVIEW.md",
+      "sha256": "da40d53e80c087afba7f5473d3cddcce4ee74ab009c769d18d0fb40355edfd2d"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/SOURCE_REFRESH.json",
+      "sha256": "f9ec002d537d813433960f9bb54e12ba3257216341d785980bc8e7eb7868dedf"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/STATIONARY_ATOMS_REVIEW.md",
+      "sha256": "bf4e957f9d9dabf7ea5efd67855c254027bc2b7fb7ce730641d1ccbd148e1818"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/STATIONARY_REVIEW.md",
+      "sha256": "ba159422e311e46619759a8a40612653701d0d7667cc174bb5cbadad5398afd2"
+    },
+    {
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "sha256": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed"
+    },
+    {
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6"
+    },
+    {
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149"
+    },
+    {
+      "path": "research/profound-step-20261123/README.md",
+      "sha256": "ad65b86e6ecdc03463f23ca4ca4f57b1595ff4508c7df4db0cae54c6030e999f"
+    },
+    {
+      "path": "research/profound-step-20261123/REVIEW_BINDINGS.json",
+      "sha256": "e2f1367bd843ae418cc76ef287eb45826193f3b1d2f2b0bf3c32d47a2f495b47"
+    },
+    {
+      "path": "research/profound-step-20261123/SOURCES.json",
+      "sha256": "0b00459da017b26f9ead7047add4ff49ed1e92f1d696b22ed93bb473530b0c0c"
+    },
+    {
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4"
+    },
+    {
+      "path": "research/profound-step-20261123/THEOREMS.json",
+      "sha256": "62407b9778765804c7c70b52b7e7f327ed6d7cb0aa0137514a65ebd2efa28f58"
+    },
+    {
+      "path": "research/profound-step-20261123/check_companion_control.py",
+      "sha256": "8ef1ffeff25b6f6fc937dc4a1b8c4c9f2817983b52f82d009bb2cff328f23abf"
+    },
+    {
+      "path": "research/profound-step-20261123/check_lean.py",
+      "sha256": "d50218267a0ac41ba1e590d4c5ca9ff35dbeeb58f2e0971423c3b84722495f9b"
+    },
+    {
+      "path": "research/profound-step-20261123/check_packet.py",
+      "sha256": "1b379d6cc1f81f3e51173ab961157dabb50ba45cd8455eeb0f553148d9688865"
+    },
+    {
+      "path": "research/profound-step-20261123/check_scale_lean.py",
+      "sha256": "3122dd97fa1a4f5a0ba34c7e54243b680cdcd077e338ca1ea003c6c86c6e4ce1"
+    },
+    {
+      "path": "research/profound-step-20261123/lean/ParityRecurrence.lean",
+      "sha256": "49e330cb36fa3e088490e4fa068c10ef38db9a6c2c98f9278570409a046c7074"
+    },
+    {
+      "path": "research/profound-step-20261123/lean/ParityRecurrenceAudit.lean",
+      "sha256": "b96fcbc728009a61e690b9237cd9d9a3bf2795db892c9fdbd23e62649cb1f27a"
+    },
+    {
+      "path": "research/profound-step-20261123/lean/ScaleAvoidance.lean",
+      "sha256": "53dd7d9eefccdea3e159d6522639266957b55b820776d6932a239a0c0e17563b"
+    },
+    {
+      "path": "research/profound-step-20261123/lean/ScaleAvoidanceAudit.lean",
+      "sha256": "537181c77d173e46c436cd17954dd2763fd3bf4f977639d9cbc507c70c49db3a"
+    },
+    {
+      "path": "research/profound-step-20261123/reports/companion-control.json",
+      "sha256": "87f70ec46f595c9d33e5c58267cd16e11f3f3c9957dfc2544b291b8514af5e81"
+    },
+    {
+      "path": "research/profound-step-20261123/reports/parity-lean-build.log",
+      "sha256": "2614db1e06997e422220a473fd58ad5d2c77adf7f522512066be83c885921c71"
+    },
+    {
+      "path": "research/profound-step-20261123/reports/parity-lean-check.json",
+      "sha256": "ab09bdc57fcc2993c9c0ba9b7e256f3cfae4f0678e34fbfc4e33ca769a279cfe"
+    },
+    {
+      "path": "research/profound-step-20261123/reports/scale-lean-build.log",
+      "sha256": "f7f962f223bbf73c96d3d62805da464ec6a36e39bafb4f0dd61b85d3b4279f70"
+    },
+    {
+      "path": "research/profound-step-20261123/reports/scale-lean-check.json",
+      "sha256": "ab54535a4d6ce38f264eb1439a8938cfffec0a6f9efc15260f746fe6e5f0fa3c"
+    }
+  ]
+}

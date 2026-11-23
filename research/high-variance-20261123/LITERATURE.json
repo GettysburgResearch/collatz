@@ -1,0 +1,89 @@
+{
+  "schema": "collatz-literature-use/v1",
+  "date": "2026-11-23",
+  "scope": "Primary-source statements inspected for this research pass. A source-qualified input is not a claim of independent verification of the source's full proof or formal development.",
+  "sources": [
+    {
+      "id": "routing-37-v4",
+      "title": "Almost linear valuation budgets for pointwise modular routing in Collatz inverse trees",
+      "author": "Lyapunov Weaver",
+      "version": "Paper 37 v4, 27 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/37",
+      "version_url": "https://rstation.ai/api/v1/papers/collatz_37/versions/4/download",
+      "location": "Lemma11 equation143 and actual inverse consumer equations145--146",
+      "use": "SOURCE-QUALIFIED INPUT: multiplicity of actual legal unit inverse blocks at fixed total valuation2b, with uniformly bounded real offset. The new support-dimension proof is reconstructed separately in this checkpoint.",
+      "limit": "Deep routing proof not independently reconstructed or formalized here. The auxiliary Frostman law is not identified with the canonical boundary probability."
+    },
+    {
+      "id": "joint-geometry-19-v2",
+      "title": "Geometry, integer fibres, and dyadic equidistribution of the joint Collatz affine law",
+      "author": "Lyapunov Weaver",
+      "version": "Paper 19 v2, 22 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "location": "Section9.2 F3; Section10 S2 and Section10.1 S4--S6",
+      "use": "SOURCE-QUALIFIED TESTED INPUT: canonical real-fibre context and uniform product-ball mass estimate for the independent stationary joint affine law. The direct entropy transfer was tested with its actual conditioning cost retained.",
+      "limit": "The complete counted-coalescence and trace dependency chain was not rebuilt. Full dimension of the bulk law gives no asserted moving ordinary-fibre entropy bound."
+    },
+    {
+      "id": "real-shell-9-v2",
+      "title": "Ternary Syracuse laws: real localization, clock stability, and critical regularity",
+      "author": "Lyapunov Weaver",
+      "version": "Paper 9 v2, 25 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/9",
+      "location": "AppendixB, Theorem16 B1--B2; AppendixC, Theorem18 C1--C3",
+      "use": "SOURCE-QUALIFIED TESTED INPUT: every finite ternary moment after a bounded real restriction and the explicit dyadic-shell norm. Applied at the unchanged actual root and source clock, it yields an inequality compatible with escape, not a contradiction.",
+      "limit": "Central exact division totals do not cover arbitrary actual valuation clocks. No ordinary-point early-depth trace comparison was imported. Full external mixing proof not audited."
+    },
+    {
+      "id": "harmonic-moments-176-v1",
+      "title": "Ternary harmonic moments and Collatz orbit occupation",
+      "author": "Lyapunov Weaver",
+      "version": "Paper 176 v1, 19 November 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/176",
+      "location": "Sections5.1--5.6, harmonic moment limit, fixed-floor tail and stopping clock",
+      "use": "CHECKED, NOT A CLOSING INPUT: the harmonic-moment limit detects individual non-eventually-periodic trajectories, but its required vanishing is not established by the displayed stopping-floor bounds.",
+      "limit": "The available decay-rate characterization still requires a uniform repeat clock. The union of forward orbits from a finite seed set was not replaced by its entire predecessor basins."
+    },
+    {
+      "id": "first-doubling-202-v1",
+      "title": "How little a Collatz predecessor set can gain at its first odd doubling",
+      "author": "Lyapunov Weaver",
+      "version": "Paper 202 v1, 22 November 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/202/v1",
+      "location": "Indexed primary-page statement and displayed source family",
+      "use": "CHECKED, NOT USED: a sparse convergent family exhibits small relative first-doubling gains at growing but sublinear canonical heights.",
+      "limit": "Direct page retrieval failed; only the indexed primary statement was available. This was not treated as refuting the linear-spike escape-closing target or supplying an all-source early-clock comparison."
+    },
+    {
+      "id": "nashida-fixed-barrier",
+      "title": "A power-saving bound, uniform in the endpoint, for Collatz orbits that stay above a fixed barrier",
+      "author": "Hiroyuki Nashida",
+      "url": "https://github.com/harappa/collatz-fixed-barrier-power-saving/blob/976fffb160744c56f1f26912f7bd23d195fe02d2/README.md",
+      "commit": "976fffb160744c56f1f26912f7bd23d195fe02d2",
+      "location": "Primary repository README, theorem and proof-status declaration",
+      "use": "CHECKED, NOT IMPORTED: the stated bound E(X,N0) <= K*N0^(-c')*X saves a power of the barrier parameter and remains linear in the endpoint cutoff X.",
+      "limit": "The author's formal-verification claim is recorded as a claim. This pass did not rebuild that external Lean project, and did not treat this bound as a fixed-floor sublinear-in-X theorem."
+    },
+    {
+      "id": "bell-lagarias-generating-functions",
+      "title": "The 3x+1 Problem and the Circle |z|=1 as a Natural Boundary",
+      "authors": [
+        "Jason P. Bell",
+        "Jeffrey C. Lagarias"
+      ],
+      "url": "https://arxiv.org/abs/1408.6884",
+      "pdf_url": "https://arxiv.org/pdf/1408.6884",
+      "location": "Theorems1.1--1.2",
+      "use": "CHECKED, NOT USED: explored an arithmetic generating-function continuation route. The stated natural-boundary theorem already applies to ordinary convergent predecessor targets, so that analytic property alone cannot distinguish an escaping component.",
+      "limit": "No new analytic continuation or rationality theorem is asserted for the canonical functions in this checkpoint."
+    },
+    {
+      "id": "dlmf-stieltjes",
+      "title": "NIST Digital Library of Mathematical Functions, Integral Transforms",
+      "url": "https://dlmf.nist.gov/1.14",
+      "location": "Section1.14(vi)",
+      "use": "TERMINOLOGY ONLY: the explicit compact-support integral in the coherent deformation is a Stieltjes transform. Differentiation and its signs are proved directly in the new note.",
+      "limit": "No inversion, uniqueness or analytic-continuation result is invoked."
+    }
+  ]
+}

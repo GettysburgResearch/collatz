@@ -1,0 +1,48 @@
+{
+  "schema": "collatz-review-bindings/v1",
+  "scope": "Independent written reviews are scoped to the exact files and claims described in each review. They do not certify Collatz or inherited qualified premises.",
+  "bindings": [
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_COLLISION.md",
+      "review_sha256": "788ad2d2ff70e36d9eb4e5db23631d705f0419c6598dc53e315ba54857a94f10",
+      "target": "research/whole-source-20261123/COLLISION_CORE.md",
+      "target_sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c"
+    },
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_COLLISION.md",
+      "review_sha256": "788ad2d2ff70e36d9eb4e5db23631d705f0419c6598dc53e315ba54857a94f10",
+      "target": "research/whole-source-20261123/lean/StationaryCollisionGap.lean",
+      "target_sha256": "c3e92dce283fac5b5a0b3162b3472990aa244185c41798ee87f905feb690e0b7"
+    },
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_COLLISION.md",
+      "review_sha256": "788ad2d2ff70e36d9eb4e5db23631d705f0419c6598dc53e315ba54857a94f10",
+      "target": "research/whole-source-20261123/lean/StationaryCollisionGapAudit.lean",
+      "target_sha256": "4ff553bcf294050b3caea961227027d55b46a5349c68bb3537f9fe660c6015d4"
+    },
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_COLLISION.md",
+      "review_sha256": "788ad2d2ff70e36d9eb4e5db23631d705f0419c6598dc53e315ba54857a94f10",
+      "target": "research/whole-source-20261123/reports/collision-lean-check.json",
+      "target_sha256": "388448988b92173dc564226cb3419086c784e5e961a5656292c36654072cdd8b"
+    },
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_BOUNDARY.md",
+      "review_sha256": "2663b2d25961d2b4631ea8765e1ba9b37bd5c814cb2717c05a27ff5d57dabb7b",
+      "target": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "target_sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738"
+    },
+    {
+      "review": "reports/2026-11-23-whole-source/reviews/REVIEW_BOUNDARY.md",
+      "review_sha256": "2663b2d25961d2b4631ea8765e1ba9b37bd5c814cb2717c05a27ff5d57dabb7b",
+      "target": "research/whole-source-20261123/ARITHMETIC_MINIMUM.md",
+      "target_sha256": "931dfa3e20e3a77093f011d39d108996d63c7459569cacbd9b751d5689e13343"
+    },
+    {
+      "review": "research/whole-source-20261123/reviews/COLLISION_REVIEW.md",
+      "review_sha256": "22da017b532c18f4999aad58fcab5b156f57e3e98a9df2ab9d8563affe338015",
+      "target": "research/whole-source-20261123/COLLISION_CORE.md",
+      "target_sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c"
+    }
+  ]
+}

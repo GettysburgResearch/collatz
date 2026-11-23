@@ -1,0 +1,135 @@
+{
+  "schema": "collatz-source-bindings/v1",
+  "repository": "GettysburgResearch/collatz",
+  "date": "2026-11-23",
+  "base_commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+  "qualification": "This records exact text read and retained interfaces; it is not a full audit or rebuild of the source branches. Analytic and population qualifications are preserved.",
+  "files": [
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "bytes": 23198,
+      "use": "coherent real coordinate and bounded path-law changes",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/ANALYTIC_GLUING.md"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80",
+      "bytes": 19003,
+      "use": "actual common law and distinction from moving real normalization",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/ENTROPY_RIGIDITY.md"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "sha256": "de581110256ab48080e66b150eb0d633e225234d56de89a5f8a178d33c111e60",
+      "bytes": 14532,
+      "use": "complete source cuts and convergent structural control",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/astra-critical-mass/REMAINDER_CANCELLATION.md",
+      "sha256": "3a5131b97f82883414025533d642eb76194789bda5351146ae4c0b73e2d5dd78",
+      "bytes": 16812,
+      "use": "prior mention of the Applegate-Lagarias semigroup theorem",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/astra-critical-mass/REMAINDER_CANCELLATION.md"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/astra-critical-mass/CLOCK_DEFECT.md",
+      "sha256": "6d122aeead4ed5c9dcc80bb7be777860180f60ed1a098234bc8e4ee8187fade6",
+      "bytes": 17791,
+      "use": "prior semigroup context",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/astra-critical-mass/CLOCK_DEFECT.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md",
+      "sha256": "dd959aa34c35773d20642582d0aeb7c25d2d1eee65bc969b9a35a22304cd4be5",
+      "bytes": 20115,
+      "use": "canonical trace, full-path selection, and exact bounded change of law",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "sha256": "44511e0ab026ca922296ca97bad817321f950d93545f8d8e284e8fd3d850bb18",
+      "bytes": 14016,
+      "use": "examined as an independent operator route; not a new theorem input",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "sha256": "850ac21d509b017d28ee3a90b6398a70f5f9ae4528995b4654a68a1f0038d5a7",
+      "bytes": 14809,
+      "use": "scope comparison for actual common fibre and integer lift cost",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md"
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634",
+      "bytes": 18287,
+      "use": "finite boundary optimization and target-dependent obligation",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md"
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "sha256": "d47a77884d979d99a0580d6d34f1f8ebc1e2e62a92fa3833f8fd3ce06f080cfc",
+      "bytes": 24414,
+      "use": "pressure family and exact ordinary atomic measure; tested extension, not used to assert exclusion",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md"
+    },
+    {
+      "pr": 178,
+      "commit": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md",
+      "sha256": "63e80adb5334027afc9b99eb499e7e7f4c4454eae26a6be6076319fb32264d24",
+      "bytes": 11243,
+      "use": "trace normalization, positive forward-spine mass, deterministic source-clock front",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md"
+    },
+    {
+      "pr": 178,
+      "commit": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md",
+      "sha256": "71aeff76e8983a9f703229d8c07a7cc9b734f3e07b82a85c8d3576b337787d05",
+      "bytes": 15112,
+      "use": "actual sum-carry and parity boundary",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+      "bytes": 18385,
+      "use": "nonperiodic inverse domain, finite distinct-path count and reciprocal bound, ordinary harmonic reference",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "bytes": 15723,
+      "use": "actual inverse-time lower collision bound and exact same-law upper target",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md"
+    }
+  ]
+}

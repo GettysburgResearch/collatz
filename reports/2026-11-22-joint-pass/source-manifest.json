@@ -1,0 +1,101 @@
+{
+  "schema": "collatz-joint-source-manifest/v1",
+  "base_head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+  "files": [
+    {
+      "path": "research/lean-joint-20261122/CONTACT_CLOCK.md",
+      "sha256": "c82be41200a9054a6176b4405ba579d8944e5c149d680ab4de2b397215285129",
+      "bytes": 7231
+    },
+    {
+      "path": "research/lean-joint-20261122/CYLINDER_BUDGET.md",
+      "sha256": "d74f8b79c043530da00ca8f3cfe4de3fc6eda3882da53d8e581e2f554b97da09",
+      "bytes": 7696
+    },
+    {
+      "path": "research/lean-joint-20261122/DEPENDENCIES.json",
+      "sha256": "fd2c1cf0a02c458730e2c32dbc6ec37983d4704bdce24d28b336980a4c8ad65c",
+      "bytes": 3339
+    },
+    {
+      "path": "research/lean-joint-20261122/FINITE_SPIKE_CLOSURE.md",
+      "sha256": "62bb6dfe0201875e5194ad28526c50f529a24b0bb2242305a4be6414adde86cb",
+      "bytes": 16879
+    },
+    {
+      "path": "research/lean-joint-20261122/MIXED_COVER.md",
+      "sha256": "e1e9abeb23da3c44f14115c1cc2c9afdb6e3b3b283d7cfc91156fdcc82ed87d9",
+      "bytes": 23166
+    },
+    {
+      "path": "research/lean-joint-20261122/ORDINARY_BOUNDARY.md",
+      "sha256": "688fc66d5e117b4bfe08db87cefead01250d7d6282ff96daa857d4843d12a1ea",
+      "bytes": 27012
+    },
+    {
+      "path": "research/lean-joint-20261122/README.md",
+      "sha256": "58e444b087f6a6790409b61a11b70a803e8b42412aa5b4d7cba3e948fb8b4634",
+      "bytes": 15838
+    },
+    {
+      "path": "research/lean-joint-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "8ff81c9ebbf1b8809653a72f0cb1fe6056c1c391040542bdd0fd568cc8767d37",
+      "bytes": 54857
+    },
+    {
+      "path": "research/lean-joint-20261122/THEOREMS.json",
+      "sha256": "1f3af6cbe97a9ff21e1e5f0e3f84b71f34ba81e4ab0728989e0a272e432d7855",
+      "bytes": 3208
+    },
+    {
+      "path": "research/lean-joint-20261122/check_lean.py",
+      "sha256": "707f5e60b19b2d5dec8de9b255692d71f10dd238fe81360f219f37ce60212a5d",
+      "bytes": 6776
+    },
+    {
+      "path": "research/lean-joint-20261122/finite-density-certificate.json",
+      "sha256": "12d93c5e06387406439d0c932c5169a252fc3e477365146e06cbb81226779991",
+      "bytes": 2009
+    },
+    {
+      "path": "research/lean-joint-20261122/finite_density_certificate.py",
+      "sha256": "45c6bebc8008727e367428f922baa5c1a48a09c565864292f420e79405f45fd3",
+      "bytes": 7906
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/ContactClock.lean",
+      "sha256": "a06f971e3ae2ca3e228e214af14408d0ecc3d9fc66eadcff5ec83934f9e7d0a3",
+      "bytes": 3259
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/FiniteSpikeClosure.lean",
+      "sha256": "2034cf601b910bae54421d49db6890e80e676fad68545d49fb97541c7afc709b",
+      "bytes": 9917
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/JointAudit.lean",
+      "sha256": "e605b2c9590f959d3775c503996c3eebdf4c42b4be4d7a263d2a48ea9c311e7a",
+      "bytes": 4673
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/LayeredContact.lean",
+      "sha256": "119c5ae7c64f5435c877b515c3b9b154ec36af76c28100e6961b401906f4d629",
+      "bytes": 4193
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/MixedCoverAttack.lean",
+      "sha256": "1dea7535e58048e0f447c7f1effff26927f85bf26903e70ff992d921fbfb6f60",
+      "bytes": 39365
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/MixingCylinder.lean",
+      "sha256": "f9a956c3c203c00fcc5efa4677eb60dd32b8c77fea0a4974b3b60e97f1db2447",
+      "bytes": 6195
+    },
+    {
+      "path": "research/lean-joint-20261122/lean/OrdinaryBoundary.lean",
+      "sha256": "c48d9047a0ecc47ad5219057e797286ed25f733f8e4b0de36783b0b91d00d7c0",
+      "bytes": 5568
+    }
+  ]
+}

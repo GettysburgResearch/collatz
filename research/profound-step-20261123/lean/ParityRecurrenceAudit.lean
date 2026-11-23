@@ -1,0 +1,8 @@
+import ParityRecurrence
+
+#print axioms CollatzProfound.ParityRecurrence.finite_choice_eventually_zero
+#print axioms CollatzProfound.ParityRecurrence.constant_recurrence_of_finite_normalized_windows
+#print axioms CollatzProfound.ParityRecurrence.oddCount_le
+#print axioms CollatzProfound.ParityRecurrence.oddCount_add
+#print axioms CollatzProfound.ParityRecurrence.parity_finite_normalized_windows
+#print axioms CollatzProfound.ParityRecurrence.parity_constant_recurrence

@@ -1,0 +1,141 @@
+MODULE ShellCover
+
+
+MODULE ForwardSection
+'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE SectionDynamics
+'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE RisingReturns
+'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE CarryBlocks
+'CollatzShell.CarryBlocks.carryHeight_constant_on_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryBlocks.carryHeight_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryBlocks.carryHeight_constant_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryBlocks.carry_exit_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE CarrySection
+'CollatzShell.ForwardSection.carryHeight_on_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE BandTransport
+'CollatzShell.BandTransport.restored_word' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_basin_iff' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.compressed_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.restored_tail_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_dyadic_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_family_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE BandParityBridge
+'CollatzShell.BandParityBridge.complementary_identifications' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.complementary_forward_is_reverse_same_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.complementary_query_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandParityBridge.solved_phase_odd_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE BandPopulationCriterion
+'CollatzShell.ForwardSection.Population.predecessor_subset_survivors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.Population.universal_iff_cubic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE UnitPopulationTransport
+'CollatzShell.UnitPopulationTransport.lift_three_clocks' depends on axioms: [propext, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WitnessGlobal
+'CollatzShell.WitnessGlobal.low_complete_is_one' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.low_trace_to_five' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_language' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.terminal_gap_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE InverseDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_strict_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.two_short_unit_parents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.inverse_affine_clock' depends on axioms: [propext, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE MarkedDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_segment_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE BandClosure
+
+
+MODULE Audit
+'CollatzShell.BandTransport.restored_word' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.compressed_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_family_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryBlocks.carryHeight_constant_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.carryHeight_on_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Population.universal_iff_cubic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CollatzShell.ForwardSection.Population.DenseBandFans : Prop
+CollatzShell.ForwardSection.Population.CubicSurvivorBound : Prop
+'CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.solved_phase_odd_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CollatzShell.InverseDensityPotential.MarkedSublinear (F : ℕ → ℝ) : Prop

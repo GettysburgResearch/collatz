@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-retained-source-reviews/v1",
+  "date": "2026-11-22",
+  "bindings": [
+    {
+      "source": "research/retained-source-attacks-20261122/LEGAL_DESCENT.md",
+      "source_sha256": "32c2bf30b863fa78eafc33f3d7366b626e1382094241664e7c4cfc40802f8fb8",
+      "review": "research/retained-source-attacks-20261122/REVIEW_LEGAL_DESCENT.md",
+      "review_sha256": "940a4fc6fcb096fae7499193eaf8847537c914ae20e645bbf0e3b9504e0c7df7",
+      "verdict": "VERIFIED within explicit source-qualified input scope; no full Collatz conclusion."
+    },
+    {
+      "source": "research/retained-source-attacks-20261122/SIBLING_MASS.md",
+      "source_sha256": "91f150e225fbe1c8c714792557714c35ffbf2328fd46094cfbba60413cfb6f8b",
+      "review": "research/retained-source-attacks-20261122/REVIEW_SIBLING_MASS.md",
+      "review_sha256": "ecf5f312a83a51d5ef2983fe8ab50506976aaee69ca1c91133934499b7f60959",
+      "verdict": "VERIFIED within explicit source-qualified input scope; no full Collatz conclusion."
+    },
+    {
+      "source": "research/retained-source-attacks-20261122/CANONICAL_CHARGE.md",
+      "source_sha256": "979d6be5c4345489c3a71b1e1696ce60bb675d9000bc0800a6cb4ec04557566c",
+      "review": "research/retained-source-attacks-20261122/REVIEW_CANONICAL_CHARGE.md",
+      "review_sha256": "ead564ea24c6d5bd5fd203f8c75dad3a9b09f37d93f8fd60c8bcdd0cb7c10e4b",
+      "verdict": "VERIFIED within explicit source-qualified input scope; no full Collatz conclusion."
+    },
+    {
+      "source": "research/retained-source-attacks-20261122/ANALYTIC_PARAMETER.md",
+      "source_sha256": "c4d81e33b76a2b92901365c11325aa90c1777939711c03fd833d2d91f84bad22",
+      "review": "research/retained-source-attacks-20261122/REVIEW_ANALYTIC_PARAMETER.md",
+      "review_sha256": "a833e56aad5fa19c2dd3e1b04c9782e700de423ea479f1607b9223628b929eed",
+      "verdict": "VERIFIED within explicit source-qualified input scope; no full Collatz conclusion."
+    }
+  ],
+  "new_lean_modules": [
+    {
+      "module": "SurvivalCurvature",
+      "kind": "new",
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalCurvature.lean",
+      "expected_audits": 2,
+      "sha256": "f667a8b1292126ec77ce3889ab432dae22655b1595e1a82e5da02d426bec80d0",
+      "exit_code": 0,
+      "seconds": 2.155,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 2
+    },
+    {
+      "module": "SurvivalAudit",
+      "kind": "audit",
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalAudit.lean",
+      "expected_audits": 2,
+      "sha256": "81aaf69137c451cacac7991f51e98c5b854137892d4df7b98e2850615d704d04",
+      "exit_code": 0,
+      "seconds": 1.392,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 2
+    }
+  ],
+  "qualification": "Independent in-session mathematical reconstruction; no external peer review. Imported analytic chains retain source qualifications."
+}

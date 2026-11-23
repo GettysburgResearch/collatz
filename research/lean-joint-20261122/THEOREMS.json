@@ -1,0 +1,107 @@
+{
+  "schema": "collatz-joint-public-theorems/v1",
+  "public_theorem_count": 65,
+  "modules": [
+    {
+      "module": "MixedCoverAttack",
+      "namespace": "CollatzShell.MixedCoverAttack",
+      "theorems": [
+        "interior_grade_drop",
+        "interior_splice_interval_rule",
+        "head_three_one_interval_rule",
+        "head_three_two_one_interval_rule",
+        "head_three_four_one_interval_rule",
+        "powered_source_ceiling",
+        "same_grade_source_defect_drop",
+        "fixed_grade_source_tie_wellFounded",
+        "head_three_four_two_interval_rule",
+        "head_three_valuation_one_rule",
+        "head_three_valuation_large_rule",
+        "close_fixed_grade_with_source_and_target",
+        "head_three_prefix_four",
+        "head_three_partner_smaller",
+        "head_three_unbounded_merger",
+        "head_three_same_source_rule",
+        "head_three_residual_pair",
+        "head_three_residual_equivalence",
+        "head_three_cofactor_class",
+        "head_three_residual_ternary",
+        "residual_cofactor_classification",
+        "head_three_residual_parameterization",
+        "head_three_exhaustive_split",
+        "head_three_of_residual_return",
+        "head_three_two_family_frontier",
+        "head_three_two_residue_descent",
+        "head_three_two_low_family_rule",
+        "head_three_three_forced_prefix",
+        "head_three_low_final_frontier"
+      ]
+    },
+    {
+      "module": "FiniteSpikeClosure",
+      "namespace": "CollatzShell.FiniteSpikeClosure",
+      "theorems": [
+        "geometric_block_identity",
+        "full_clock_tail_bound",
+        "affine_error_budget",
+        "quartic_calibration",
+        "calibrated_horizon",
+        "calibration_dominates_polynomials",
+        "finite_obstacle_sum",
+        "finite_floor_extraction"
+      ]
+    },
+    {
+      "module": "MixingCylinder",
+      "namespace": "CollatzShell.MixingCylinder",
+      "theorems": [
+        "ternary_power_lift",
+        "ternary_exponent_period",
+        "all_one_trace",
+        "ordinary_cylinder",
+        "zero_mass_l1",
+        "finite_density_error_lower",
+        "critical_error_floor",
+        "calibration_ceiling"
+      ]
+    },
+    {
+      "module": "OrdinaryBoundary",
+      "namespace": "CollatzShell.OrdinaryBoundary",
+      "theorems": [
+        "parents_unit",
+        "parents_equation",
+        "parents_strictMono",
+        "parents_odd_step",
+        "seventeen_in_basin",
+        "seven_eleven_seventeen",
+        "seventeen_not_contact",
+        "occupation_quadratic_bound",
+        "contact_atom_cost",
+        "finite_contact_cost",
+        "contact_cost_not_summable"
+      ]
+    },
+    {
+      "module": "LayeredContact",
+      "namespace": "CollatzShell.LayeredContact",
+      "theorems": [
+        "contact_atom_reference_bound",
+        "original_packet_bound",
+        "reciprocal_root_weight_lower",
+        "bounded_density_power"
+      ]
+    },
+    {
+      "module": "ContactClock",
+      "namespace": "CollatzShell.ContactClock",
+      "theorems": [
+        "unit_residue_cover",
+        "unit_exponent",
+        "noncontact_parent_ladder",
+        "two_gap_one_predecessors",
+        "parent_above_contact"
+      ]
+    }
+  ]
+}

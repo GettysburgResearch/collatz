@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-central-step-theorems/v1",
+  "public_theorem_count": 7,
+  "modules": [
+    {
+      "module": "CentralCurrent",
+      "namespace": "CollatzShell.CentralCurrent",
+      "theorems": [
+        "actual_sibling_family",
+        "no_identical_word_lift",
+        "pair_clock_split"
+      ]
+    },
+    {
+      "module": "RationalShadowTest",
+      "namespace": "CollatzCentral.RationalShadowTest",
+      "theorems": [
+        "source_certificate",
+        "source_all_prefix_contract",
+        "target_all_prefix_expand",
+        "target_state_certificate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warnings_as_errors": true,
+  "fresh_local_module_output": true,
+  "module_count": 13,
+  "new_public_theorem_count": 42,
+  "modules": [
+    {
+      "module": "ShellCover",
+      "path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 19.864,
+      "printed_axioms": [],
+      "printed_audit_count": 0
+    },
+    {
+      "module": "ForwardSection",
+      "path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 10.746,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "BandTransport",
+      "path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "sha256": "4534e598e1f6c4ac20b105bb3060142a5eb4f7a4de2299d66511ad2cee6eb44d",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 7.127,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 10
+    },
+    {
+      "module": "WitnessGlobal",
+      "path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 6.237,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 7
+    },
+    {
+      "module": "InverseDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "sha256": "f644a2e04179c3589aeb07f0f0c29ce3876348e84d90d1d87df043f1d71fec2b",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 5.525,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 6
+    },
+    {
+      "module": "MarkedDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "sha256": "7172d964262c91c33b72bc1b6c077e76a59557f0522c829454a0be0f61819685",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 2.498,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 3
+    },
+    {
+      "module": "RepeatedTail",
+      "path": "research/lean-wide-pass-20261122/lean/RepeatedTail.lean",
+      "sha256": "5d547f77fcdd0cb335f28440835f4208b5be8f62d52e000c4785c1185776e2d4",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-wide-pass-20261122/lean/RepeatedTail.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 2.33,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 5
+    },
+    {
+      "module": "WitnessSynthesis",
+      "path": "research/lean-wide-pass-20261122/lean/WitnessSynthesis.lean",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "origin_commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "origin_path": "research/lean-wide-pass-20261122/lean/WitnessSynthesis.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 2.279,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 9
+    },
+    {
+      "module": "ReturnCritical",
+      "kind": "new",
+      "path": "research/lean-critical-20261122/lean/ReturnCritical.lean",
+      "sha256": "a0f00a5b71b4b48a41ec471c064899c8670c090799c06e70b05233582931f775",
+      "exit_code": 0,
+      "seconds": 3.093,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "WitnessCritical",
+      "kind": "new",
+      "path": "research/lean-critical-20261122/lean/WitnessCritical.lean",
+      "sha256": "57b21967b684a27ef70410dfe9fd50148a6aae010ba24e1d8789809f3c66be25",
+      "exit_code": 0,
+      "seconds": 5.913,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 16
+    },
+    {
+      "module": "PotentialCritical",
+      "kind": "new",
+      "path": "research/lean-critical-20261122/lean/PotentialCritical.lean",
+      "sha256": "7b87e094d7b6e40824fb1bf18492aaf16094874f98ecd8fa3eba80f5927a429c",
+      "exit_code": 0,
+      "seconds": 2.845,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 13
+    },
+    {
+      "module": "LognormalClock",
+      "kind": "new",
+      "path": "research/lean-critical-20261122/lean/LognormalClock.lean",
+      "sha256": "d1b6042c5ed771f5bbea0857da639c4e92aa8bd0e6143cfd51aa6d0507c47b33",
+      "exit_code": 0,
+      "seconds": 5.073,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 9
+    },
+    {
+      "module": "CriticalAudit",
+      "kind": "audit",
+      "path": "research/lean-critical-20261122/lean/CriticalAudit.lean",
+      "sha256": "52eb64893176c1b000f6c1f8dec985f75ef82fe2eb632483b651f25f22f6bf88",
+      "exit_code": 0,
+      "seconds": 2.202,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 42
+    }
+  ],
+  "scope": "Pinned local dependencies and all 42 public theorems in the four new modules.",
+  "not_formalized": [
+    "The infinite reference measures, general Lp inequalities, and return-closed family",
+    "The imported polylogarithmic clock and Diophantine theorem",
+    "The compact Green map, Banach-space nonclosability, and infinite immigration tails",
+    "A total successful carry selector or fixed-reference critical transport bound",
+    "Universal Collatz convergence"
+  ]
+}

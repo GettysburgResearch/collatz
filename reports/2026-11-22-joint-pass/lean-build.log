@@ -1,0 +1,272 @@
+MODULE ShellCover
+
+
+MODULE ForwardSection
+'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE BandTransport
+'CollatzShell.BandTransport.restored_word' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_basin_iff' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.compressed_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.restored_tail_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_dyadic_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_family_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WitnessGlobal
+'CollatzShell.WitnessGlobal.low_complete_is_one' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.low_trace_to_five' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_language' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.terminal_gap_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE InverseDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_strict_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.two_short_unit_parents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.inverse_affine_clock' depends on axioms: [propext, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE MarkedDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_segment_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE WitnessSynthesis
+'CollatzShell.WitnessSynthesis.powered_trace_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.source_grade_peel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.peel_powered_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.half_size_merger_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erase_prefix_asynchronous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erasure_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.unresolved_endpoint_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_asynchronous_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WitnessCritical
+'CollatzShell.WitnessCritical.minus_step_positive' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessCritical.minus_orbit_positive' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessCritical.reflected_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.carry_gap_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.zero_exponent_exit' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessCritical.terminal_padding_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.every_target_terminal_debt' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessCritical.compiler_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.compiler_zero_exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.prefix_grade_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessCritical.compiler_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.carry_initialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.safe_language_compile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.safe_carry_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.terminal_one_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessCritical.terminal_two_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE MixedCoverAttack
+'CollatzShell.MixedCoverAttack.head_three_prefix_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_partner_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_unbounded_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_same_source_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_cofactor_class' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_ternary' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.residual_cofactor_classification' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_parameterization' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_exhaustive_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_of_residual_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.interior_grade_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.interior_splice_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_valuation_one_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_valuation_large_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_family_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_four_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.powered_source_ceiling' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.same_grade_source_defect_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.fixed_grade_source_tie_wellFounded' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_four_two_interval_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.close_fixed_grade_with_source_and_target' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_residue_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_low_family_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_three_forced_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_low_final_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE FiniteSpikeClosure
+'CollatzShell.FiniteSpikeClosure.geometric_block_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.full_clock_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.affine_error_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.quartic_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.calibrated_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.calibration_dominates_polynomials' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.FiniteSpikeClosure.finite_obstacle_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.finite_floor_extraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE MixingCylinder
+'CollatzShell.MixingCylinder.ternary_power_lift' depends on axioms: [propext]
+'CollatzShell.MixingCylinder.ternary_exponent_period' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixingCylinder.all_one_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.ordinary_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.zero_mass_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.finite_density_error_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.critical_error_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.calibration_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE OrdinaryBoundary
+'CollatzShell.OrdinaryBoundary.parents_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_equation' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_strictMono' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_odd_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.seventeen_in_basin' does not depend on any axioms
+'CollatzShell.OrdinaryBoundary.seven_eleven_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.seventeen_not_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.occupation_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.contact_atom_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.finite_contact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.contact_cost_not_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE LayeredContact
+'CollatzShell.LayeredContact.contact_atom_reference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.original_packet_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.reciprocal_root_weight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.bounded_density_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE ContactClock
+'CollatzShell.ContactClock.unit_residue_cover' depends on axioms: [propext, Quot.sound]
+'CollatzShell.ContactClock.unit_exponent' depends on axioms: [propext, Quot.sound]
+'CollatzShell.ContactClock.noncontact_parent_ladder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ContactClock.two_gap_one_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ContactClock.parent_above_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE JointAudit
+'CollatzShell.MixedCoverAttack.interior_grade_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.interior_splice_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_four_one_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.powered_source_ceiling' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.same_grade_source_defect_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.fixed_grade_source_tie_wellFounded' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_four_two_interval_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_valuation_one_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_valuation_large_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.close_fixed_grade_with_source_and_target' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_prefix_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_partner_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_unbounded_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_same_source_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_cofactor_class' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_ternary' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.residual_cofactor_classification' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_residual_parameterization' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_exhaustive_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_of_residual_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_family_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_residue_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_two_low_family_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_three_forced_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MixedCoverAttack.head_three_low_final_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.geometric_block_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.full_clock_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.affine_error_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.quartic_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.calibrated_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.calibration_dominates_polynomials' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.FiniteSpikeClosure.finite_obstacle_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.FiniteSpikeClosure.finite_floor_extraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.ternary_power_lift' depends on axioms: [propext]
+'CollatzShell.MixingCylinder.ternary_exponent_period' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MixingCylinder.all_one_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.ordinary_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.zero_mass_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.finite_density_error_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.critical_error_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MixingCylinder.calibration_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_equation' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_strictMono' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OrdinaryBoundary.parents_odd_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.seventeen_in_basin' does not depend on any axioms
+'CollatzShell.OrdinaryBoundary.seven_eleven_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.seventeen_not_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.occupation_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.contact_atom_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.finite_contact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OrdinaryBoundary.contact_cost_not_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.contact_atom_reference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.original_packet_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.reciprocal_root_weight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.LayeredContact.bounded_density_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ContactClock.unit_residue_cover' depends on axioms: [propext, Quot.sound]
+'CollatzShell.ContactClock.unit_exponent' depends on axioms: [propext, Quot.sound]
+'CollatzShell.ContactClock.noncontact_parent_ladder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ContactClock.two_gap_one_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ContactClock.parent_above_contact' depends on axioms: [propext, Classical.choice, Quot.sound]

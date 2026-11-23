@@ -1,0 +1,139 @@
+{
+  "status": "exact_replay_passed",
+  "scope": "Arithmetic witnesses refuting the two stated candidate potentials.",
+  "not_established": [
+    "A global sublinear density envelope",
+    "Collatz convergence"
+  ],
+  "infinite_series_candidate": {
+    "formula": "sum(j>=0) 2^(-j)*(3/2)^v3(2^j*q+1)",
+    "source": 7,
+    "target": 11,
+    "odd_exponent": 1,
+    "prefix_length": 12,
+    "source_valuations": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      5
+    ],
+    "target_valuations": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "source_lower": {
+      "numerator": 154611,
+      "denominator": 65536
+    },
+    "target_prefix": {
+      "numerator": 2925,
+      "denominator": 1024
+    },
+    "analytic_tail_inequality": "tail from 2K <= 4*sqrt(q+1)/2^K",
+    "target_sqrt_upper": 4,
+    "target_tail_upper": {
+      "numerator": 1,
+      "denominator": 4
+    },
+    "strict_transfer_gap_lower": {
+      "numerator": 56665,
+      "denominator": 131072
+    }
+  },
+  "carry_candidate_family": {
+    "formula": "source=2*3^(2k)-1, target=(3^(2k+1)-1)/2, k>=1",
+    "proof": "v3(source+1)=2k, v3(target+1)=0; weight=3/4",
+    "finite_examples": [
+      {
+        "k": 1,
+        "source": 17,
+        "target": 13,
+        "transfer_gap": {
+          "numerator": 11,
+          "denominator": 16
+        }
+      },
+      {
+        "k": 2,
+        "source": 161,
+        "target": 121,
+        "transfer_gap": {
+          "numerator": 179,
+          "denominator": 64
+        }
+      },
+      {
+        "k": 3,
+        "source": 1457,
+        "target": 1093,
+        "transfer_gap": {
+          "numerator": 1931,
+          "denominator": 256
+        }
+      },
+      {
+        "k": 4,
+        "source": 13121,
+        "target": 9841,
+        "transfer_gap": {
+          "numerator": 18659,
+          "denominator": 1024
+        }
+      },
+      {
+        "k": 5,
+        "source": 118097,
+        "target": 88573,
+        "transfer_gap": {
+          "numerator": 173051,
+          "denominator": 4096
+        }
+      },
+      {
+        "k": 6,
+        "source": 1062881,
+        "target": 797161,
+        "transfer_gap": {
+          "numerator": 1577939,
+          "denominator": 16384
+        }
+      },
+      {
+        "k": 7,
+        "source": 9565937,
+        "target": 7174453,
+        "transfer_gap": {
+          "numerator": 14283371,
+          "denominator": 65536
+        }
+      },
+      {
+        "k": 8,
+        "source": 86093441,
+        "target": 64570081,
+        "transfer_gap": {
+          "numerator": 128878019,
+          "denominator": 262144
+        }
+      }
+    ]
+  }
+}

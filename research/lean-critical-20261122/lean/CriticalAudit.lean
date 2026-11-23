@@ -1,0 +1,47 @@
+import ReturnCritical
+import WitnessCritical
+import PotentialCritical
+import LognormalClock
+
+#print axioms CollatzShell.ReturnCritical.positive_return_clock
+#print axioms CollatzShell.ReturnCritical.first_return_clock_square_bound
+#print axioms CollatzShell.ReturnCritical.fiber_quadratic_bound
+#print axioms CollatzShell.ReturnCritical.aggregate_quadratic_bound
+#print axioms CollatzShell.WitnessCritical.minus_step_positive
+#print axioms CollatzShell.WitnessCritical.minus_orbit_positive
+#print axioms CollatzShell.WitnessCritical.reflected_prefix
+#print axioms CollatzShell.WitnessCritical.carry_gap_transport
+#print axioms CollatzShell.WitnessCritical.zero_exponent_exit
+#print axioms CollatzShell.WitnessCritical.terminal_padding_transport
+#print axioms CollatzShell.WitnessCritical.every_target_terminal_debt
+#print axioms CollatzShell.WitnessCritical.compiler_complete
+#print axioms CollatzShell.WitnessCritical.compiler_zero_exit
+#print axioms CollatzShell.WitnessCritical.prefix_grade_drop
+#print axioms CollatzShell.WitnessCritical.compiler_interval_rule
+#print axioms CollatzShell.WitnessCritical.carry_initialization
+#print axioms CollatzShell.WitnessCritical.safe_language_compile
+#print axioms CollatzShell.WitnessCritical.safe_carry_interval_rule
+#print axioms CollatzShell.WitnessCritical.terminal_one_fixed
+#print axioms CollatzShell.WitnessCritical.terminal_two_fixed
+#print axioms CollatzShell.CriticalPotential.ladder_unit
+#print axioms CollatzShell.CriticalPotential.ladder_equation
+#print axioms CollatzShell.CriticalPotential.ladder_cofinal
+#print axioms CollatzShell.CriticalPotential.odd_step_ladder
+#print axioms CollatzShell.CriticalPotential.odd_step_five
+#print axioms CollatzShell.CriticalPotential.odd_step_one
+#print axioms CollatzShell.CriticalPotential.ladder_reaches_one
+#print axioms CollatzShell.CriticalPotential.ladder_tail_one
+#print axioms CollatzShell.CriticalPotential.ladder_nonperiodic
+#print axioms CollatzShell.CriticalPotential.weighted_single
+#print axioms CollatzShell.CriticalPotential.push_ladder_atom
+#print axioms CollatzShell.CriticalPotential.vanishing_input_fixed_output
+#print axioms CollatzShell.CriticalPotential.no_weighted_push_bound
+#print axioms CollatzShell.LognormalClock.weight_pos
+#print axioms CollatzShell.LognormalClock.weight_le_one
+#print axioms CollatzShell.LognormalClock.polynomial_bound
+#print axioms CollatzShell.LognormalClock.all_time_moments
+#print axioms CollatzShell.LognormalClock.log_square_le
+#print axioms CollatzShell.LognormalClock.logarithmic_cost_absorption
+#print axioms CollatzShell.LognormalClock.reciprocal_weight
+#print axioms CollatzShell.LognormalClock.exponential_cost_bound
+#print axioms CollatzShell.LognormalClock.quadratic_parameter_loss

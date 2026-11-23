@@ -1,0 +1,181 @@
+MODULE ShellCover
+
+
+MODULE ForwardSection
+'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE BandTransport
+'CollatzShell.BandTransport.restored_word' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_basin_iff' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandTransport.restored_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.compressed_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.restored_tail_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_dyadic_common_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_component_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandTransport.band_family_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WitnessGlobal
+'CollatzShell.WitnessGlobal.low_complete_is_one' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.low_trace_to_five' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_language' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.terminal_gap_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE InverseDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_strict_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.two_short_unit_parents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.inverse_affine_clock' depends on axioms: [propext, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE MarkedDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_segment_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE ReturnFourier
+'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE MarkPhase
+
+
+MODULE MarkFrequency
+'CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.MarkFrequency.kernel_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE ReturnSynthesis
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_of_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.explicit_frequency_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_finite_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.kernel_sum_absolute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_finite_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_explicit_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_source_occupation_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.weighted_marked_occupation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE WitnessSynthesis
+'CollatzShell.WitnessSynthesis.powered_trace_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.source_grade_peel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.peel_powered_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.half_size_merger_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erase_prefix_asynchronous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erasure_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.unresolved_endpoint_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_asynchronous_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE RepeatedTail
+'CollatzShell.WideRepeatedTail.odd_orbit_positive_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.odd_step_le_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.odd_orbit_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.repeated_odd_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.repeated_odd_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WideAudit
+'CollatzShell.ForwardSection.ReturnSynthesis.explicit_frequency_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_of_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_kernel_finite_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.kernel_sum_absolute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_finite_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_visits_explicit_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.marked_source_occupation_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.ReturnSynthesis.weighted_marked_occupation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.WitnessSynthesis.powered_trace_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.source_grade_peel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.peel_powered_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.half_size_merger_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erase_prefix_asynchronous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.erasure_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.unresolved_endpoint_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessSynthesis.seven_asynchronous_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.odd_orbit_positive_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.odd_step_le_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.odd_orbit_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.repeated_odd_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WideRepeatedTail.repeated_odd_height' depends on axioms: [propext, Classical.choice, Quot.sound]

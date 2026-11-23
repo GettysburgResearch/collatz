@@ -1,0 +1,10 @@
+import CentralCurrent
+import RationalShadowTest
+
+#print axioms CollatzShell.CentralCurrent.actual_sibling_family
+#print axioms CollatzShell.CentralCurrent.no_identical_word_lift
+#print axioms CollatzShell.CentralCurrent.pair_clock_split
+#print axioms CollatzCentral.RationalShadowTest.source_certificate
+#print axioms CollatzCentral.RationalShadowTest.source_all_prefix_contract
+#print axioms CollatzCentral.RationalShadowTest.target_all_prefix_expand
+#print axioms CollatzCentral.RationalShadowTest.target_state_certificate

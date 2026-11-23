@@ -1,0 +1,6 @@
+import ArithmeticRepair
+
+#print axioms CollatzWholeSource.ArithmeticRepair.repair_excess_clock
+#print axioms CollatzWholeSource.ArithmeticRepair.repair_span_power
+#print axioms CollatzWholeSource.ArithmeticRepair.nonlocal_integral_repair
+#print axioms CollatzWholeSource.ArithmeticRepair.repair_span_exceeds_prefix

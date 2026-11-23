@@ -1,0 +1,38 @@
+{
+  "schema": "collatz-theorem-inventory/v1",
+  "public_theorem_count": 8,
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "module": "StationaryCollisionGap",
+      "namespace": "CollatzWholeSource.StationaryCollisionGap",
+      "source": "research/whole-source-20261123/lean/StationaryCollisionGap.lean",
+      "audit": "research/whole-source-20261123/lean/StationaryCollisionGapAudit.lean",
+      "receipt": "research/whole-source-20261123/reports/collision-lean-check.json",
+      "theorems": [
+        "block_bound",
+        "deficit_at_all_lengths",
+        "strict_gap_of_block_deficit",
+        "strict_rate_gap"
+      ],
+      "scope": "Subadditive entropy-sequence deficit-or-rigidity argument; probability identifications remain written"
+    },
+    {
+      "module": "ArithmeticRepair",
+      "namespace": "CollatzWholeSource.ArithmeticRepair",
+      "source": "research/whole-source-20261123/lean/ArithmeticRepair.lean",
+      "audit": "research/whole-source-20261123/lean/ArithmeticRepairAudit.lean",
+      "receipt": "research/whole-source-20261123/reports/arithmetic-lean-check.json",
+      "theorems": [
+        "repair_excess_clock",
+        "repair_span_power",
+        "nonlocal_integral_repair",
+        "repair_span_exceeds_prefix"
+      ],
+      "scope": "Finite carry-range/divisibility and coefficient implications; physical carry derivation remains written"
+    }
+  ]
+}

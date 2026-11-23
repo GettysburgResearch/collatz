@@ -1,0 +1,9 @@
+MODULE ArithmeticRepair.lean
+
+MODULE ArithmeticRepairAudit.lean
+'CollatzWholeSource.ArithmeticRepair.repair_excess_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWholeSource.ArithmeticRepair.repair_span_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWholeSource.ArithmeticRepair.nonlocal_integral_repair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzWholeSource.ArithmeticRepair.repair_span_exceeds_prefix' depends on axioms: [propext, Quot.sound]

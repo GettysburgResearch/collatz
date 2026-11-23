@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-closing-step-reviews/v1",
+  "bindings": [
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_COLLISION.md",
+      "review_sha256": "3f2722cb3a2882a485f97a65575f9ffe6b8ea417aaa30b3ef3c69a2eff940223",
+      "target": "research/closing-step-20261123/COLLISION_CLOSURE.md",
+      "target_sha256": "5a08dc30b5f7d4a7ff8d47c6797c46011ec1b3cb05a27cbcc88557b09a4ea927",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/COLLISION_REVIEW_FOURIER.md",
+      "review_sha256": "8aa17adb98a454f7c41bde577ad22db7c276dc1263554a4e823fb1435240c985",
+      "target": "research/closing-step-20261123/FOURIER_BRIDGE.md",
+      "target_sha256": "1677ce2685f693363df82e3e30a141d09a164a4eaeed8ff3a169ac119eafc29e",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/CYCLE_REVIEW_GLOBAL.md",
+      "review_sha256": "f75fa9f90f32839bbd61bcd12c0a43cb8f05d6ac483dfc2c8f7155ca46e2922c",
+      "target": "research/closing-step-20261123/GLOBAL_CONSTRUCTION.md",
+      "target_sha256": "6293818c1de954c12ed04031680d43a807ff9544f083a29ba4568518f260c0b5",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/ROOT_REVIEW_CYCLE.md",
+      "review_sha256": "6ade51e7df4c5b5760aa36054b0c1d4e8aa66de229496cc1766fbb40712d3c62",
+      "target": "research/closing-step-20261123/POSITIVE_CYCLE.md",
+      "target_sha256": "7157db774bc3c944c4cc3259f0742fd74f5bc294ba2f09d0cfe894135e8e80ee",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/ROOT_REVIEW_CYCLE.md",
+      "review_sha256": "6ade51e7df4c5b5760aa36054b0c1d4e8aa66de229496cc1766fbb40712d3c62",
+      "target": "research/closing-step-20261123/check_cycle_return.py",
+      "target_sha256": "4336da226111c09d87fddb20f7cb0fe259814ab03c9f9b5617506d4374c2b009",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/ROOT_REVIEW_CYCLE.md",
+      "review_sha256": "6ade51e7df4c5b5760aa36054b0c1d4e8aa66de229496cc1766fbb40712d3c62",
+      "target": "research/closing-step-20261123/reports/cycle-return-control.json",
+      "target_sha256": "125ca15de485a1c39b7f67c989f351bc25bc414063cf56afdc59bca6a2bc8842",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_TILTED.md",
+      "review_sha256": "ddff8d5fa5210c5f26019df678972d344ffe6ec93ba72e66a4e5def88b3941e9",
+      "target": "research/closing-step-20261123/TILTED_MOMENT_OBSTRUCTION.md",
+      "target_sha256": "e6219d59418a7796854ff86513bd686025ea2d639cb24c1fa9aea872194a8f96",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_BRIDGE.md",
+      "review_sha256": "29727ae32282e00c7032c9580adb4c7a3399166dc50c5a3c1c725cdd52b3980e",
+      "target": "research/closing-step-20261123/CYCLE_RESOLVENT_BRIDGE.md",
+      "target_sha256": "a6161661ad69c730fd90c72f0ad91b3dacad9977b9818f19d4ac9beb54a64173",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_LEAN.md",
+      "review_sha256": "d1e8f73c1e43e8d177d529689decaf2a182f918aa13cb9f3dbaac51a504af9f7",
+      "target": "research/closing-step-20261123/lean/WeightedCollision.lean",
+      "target_sha256": "10ca5db21199dec6ac8dd3059c573bd7cd952b8bbbaaf114649975fc4141a3ee",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_LEAN.md",
+      "review_sha256": "d1e8f73c1e43e8d177d529689decaf2a182f918aa13cb9f3dbaac51a504af9f7",
+      "target": "research/closing-step-20261123/lean/WeightedCollisionAudit.lean",
+      "target_sha256": "0aa063cadeb387fdd3bfd447e1c0eb2389dd56db576a5fe5198da38f72b06048",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_LEAN.md",
+      "review_sha256": "d1e8f73c1e43e8d177d529689decaf2a182f918aa13cb9f3dbaac51a504af9f7",
+      "target": "research/closing-step-20261123/check_lean.py",
+      "target_sha256": "384b0ee481acbbb5b2c6eebbdaad61a7a9e90b2ded6eb08b08e7a2f4b54c2382",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_LEAN.md",
+      "review_sha256": "d1e8f73c1e43e8d177d529689decaf2a182f918aa13cb9f3dbaac51a504af9f7",
+      "target": "research/closing-step-20261123/reports/weighted-collision-lean-check.json",
+      "target_sha256": "85ffcb3d43bd798bea9250c6f8f05d1f579718ef286b4234c50ecda27e9dee34",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    },
+    {
+      "review": "reports/2026-11-23-closing-step/GLOBAL_REVIEW_LEAN.md",
+      "review_sha256": "d1e8f73c1e43e8d177d529689decaf2a182f918aa13cb9f3dbaac51a504af9f7",
+      "target": "research/closing-step-20261123/reports/weighted-collision-lean-build.log",
+      "target_sha256": "bc9b088847313beced2d6757776cef0ee255f604289d43e9329bc33233499aa6",
+      "scope": "Review applies only to the exact target bytes and the claim boundaries stated in the review."
+    }
+  ]
+}

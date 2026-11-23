@@ -1,0 +1,127 @@
+{
+  "schema": "collatz-checkpoint-files/v1",
+  "date": "2026-11-23",
+  "self_excluded": "reports/2026-11-23-high-variance/FILES.json",
+  "files": [
+    {
+      "path": "reports/2026-11-23-high-variance/REVIEW_ENTROPY_RIGIDITY.md",
+      "bytes": 8428,
+      "sha256": "c6a5b74ec0abe463cb7e9c770213688629865d459b5b71e84d079550cd9c59e3"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/REVIEW_FIBRE_LEAN.md",
+      "bytes": 3758,
+      "sha256": "5e73b3e6632f90d488be7af325c79c65e52fa1b7a740b9c27fce805dd4b763f0"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/REVIEW_GLOBAL_SOURCE.md",
+      "bytes": 6583,
+      "sha256": "a8767b9a8cfed607dcfea49928a10de51bdf7715233a110f992442ddc81b64e8"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/REVIEW_SCOPE.json",
+      "bytes": 3677,
+      "sha256": "6606d6ba2e3b171c5026bd556d44ff5455f71b031a91752ddaa17bb6a4967c93"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/VERIFICATION.md",
+      "bytes": 6371,
+      "sha256": "4dfb8903e3b648128ba787ada685e4603c4119605a966bcc0e582c0ced7f3118"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/global-source-check.json",
+      "bytes": 1015,
+      "sha256": "f8a4e150f62a4fb4e40f74536e9d49ea2c5cebff7c53c065107dd84832e02852"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/lean-build.log",
+      "bytes": 304,
+      "sha256": "38eb45dfbe960f8a725228102f3c2a8ee2afb31ea837c0025533617aee5ebea6"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/lean-check.json",
+      "bytes": 2628,
+      "sha256": "e694246f6482e518da6c0388eacaec3ca90359e9eae93eafd9ce2e59c2828c09"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/pr-description-before.json",
+      "bytes": 10949,
+      "sha256": "19d025583f0cce9d8ccb9e44b43e48a4f100618356e4445c6bf6f22135661c85"
+    },
+    {
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "bytes": 23198,
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85"
+    },
+    {
+      "path": "research/high-variance-20261123/DEPENDENCIES.json",
+      "bytes": 1524,
+      "sha256": "bdab6e6175330d1b6bec0585683f203387bb8fa969bef4b743f0de4351edd81e"
+    },
+    {
+      "path": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "bytes": 19003,
+      "sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80"
+    },
+    {
+      "path": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "bytes": 14532,
+      "sha256": "de581110256ab48080e66b150eb0d633e225234d56de89a5f8a178d33c111e60"
+    },
+    {
+      "path": "research/high-variance-20261123/LITERATURE.json",
+      "bytes": 6414,
+      "sha256": "e1915c930854226c31cea8446879009c826ddd636408bbcdd57296b6829ca078"
+    },
+    {
+      "path": "research/high-variance-20261123/README.md",
+      "bytes": 9748,
+      "sha256": "eb4c57c7d5af2e08d1f4a7061c08c21bc8e5e8a13bfc3989afd51a32f847a879"
+    },
+    {
+      "path": "research/high-variance-20261123/REVIEW_ANALYTIC_GLUING.md",
+      "bytes": 8406,
+      "sha256": "23f5581ac08741fd0f4295bddf1110322c4c7ba8021569c6af39e6515e40784a"
+    },
+    {
+      "path": "research/high-variance-20261123/SOURCES.json",
+      "bytes": 18223,
+      "sha256": "e8e7f94981ca8c39241d609cf4e795ce41d06fad4a6fa069385330bb66105284"
+    },
+    {
+      "path": "research/high-variance-20261123/SOURCE_SNAPSHOT.json",
+      "bytes": 36731,
+      "sha256": "cc90b67799bfbc3e2208e45d4c6550d55557618ee096cfbc34e9e316a6b8a477"
+    },
+    {
+      "path": "research/high-variance-20261123/THEOREMS.json",
+      "bytes": 555,
+      "sha256": "b84efa44e0fafffb9da2f6428d99e8cb49ffc972629e1265901b4aa939774d32"
+    },
+    {
+      "path": "research/high-variance-20261123/check_global_source.py",
+      "bytes": 10340,
+      "sha256": "75b239f0492954b9cc90ad9fa1959d14446f6200e390d88d1db1c057a8c00355"
+    },
+    {
+      "path": "research/high-variance-20261123/check_lean.py",
+      "bytes": 6465,
+      "sha256": "4fa4956916db33a9edb5996e07085eacb961f87993d6d15e7dbeeba99a96810f"
+    },
+    {
+      "path": "research/high-variance-20261123/global-source-control.json",
+      "bytes": 2360,
+      "sha256": "9f3803d814688f026bb2d40d1a4f55d65668f6827c03d87968aa50972343d7df"
+    },
+    {
+      "path": "research/high-variance-20261123/lean/FibreAudit.lean",
+      "bytes": 188,
+      "sha256": "91af2030f41f788084fdc5bbc503f00e7238e71679caea63c73b01d4f5c65076"
+    },
+    {
+      "path": "research/high-variance-20261123/lean/FibreReconstruction.lean",
+      "bytes": 3676,
+      "sha256": "d81acc83862914d097261ef92753ef1455bded005e291db3088a0b1c46a71cec"
+    }
+  ]
+}

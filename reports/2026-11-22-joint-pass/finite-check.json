@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "script_sha256": "45c6bebc8008727e367428f922baa5c1a48a09c565864292f420e79405f45fd3",
+  "certificate_sha256": "12d93c5e06387406439d0c932c5169a252fc3e477365146e06cbb81226779991",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "research/lean-joint-20261122/finite_density_certificate.py",
+        "--max-block",
+        "3",
+        "--check",
+        "research/lean-joint-20261122/finite-density-certificate.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.096,
+      "output": {
+        "checks": {
+          "consistency_cells": 364,
+          "ordinary_rows": 120
+        },
+        "horizons": [
+          1,
+          1,
+          1
+        ],
+        "intrinsic_horizons": [
+          1,
+          1,
+          1
+        ],
+        "max_block": 3,
+        "status": "passed"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "research/lean-joint-20261122/finite_density_certificate.py",
+        "--max-block",
+        "3",
+        "--check",
+        "research/lean-joint-20261122/finite-density-certificate.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.187,
+      "output": {
+        "checks": {
+          "consistency_cells": 364,
+          "ordinary_rows": 120
+        },
+        "horizons": [
+          1,
+          1,
+          1
+        ],
+        "intrinsic_horizons": [
+          1,
+          1,
+          1
+        ],
+        "max_block": 3,
+        "status": "passed"
+      }
+    }
+  ],
+  "scope": "Exact finite arithmetic only: 364 coarsening cells, 120 literal odd rows, all complete geometric tails, and six quartic maxima at m=1,2,3."
+}
