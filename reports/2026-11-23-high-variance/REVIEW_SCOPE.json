@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-scoped-review/v1",
+  "date": "2026-11-23",
+  "full_collatz_proved": false,
+  "reviewed_scientific_files": {
+    "cycles/MOVING_PRIME_CYCLE_ATTEMPT.md": "a6e8585f188899c08fd450d50fbbf85b53382bb5a4f6fea6440367d8c36bb3b1",
+    "cycles/lean/BalancedCycleUnit.lean": "9231cf4ab54f3674ca89001a9b3a3ab84aabbcde89f61dc2151eb332be6d63f6",
+    "arithmetic/RATIONAL_DUAL_CERTIFICATE.md": "71aeff76e8983a9f703229d8c07a7cc9b734f3e07b82a85c8d3576b337787d05",
+    "arithmetic/check_rational_dual.py": "7ee4c64b4203e7e8d2cc1ff6aac840eecc5bc16b0ce3c90f23c358efbe2a2a43",
+    "arithmetic/rational-dual-check.json": "150b98725be838849a25d675e99e912b5720f1026314799ce6db196b94e3673f",
+    "entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md": "63e80adb5334027afc9b99eb499e7e7f4c4454eae26a6be6076319fb32264d24",
+    "adelic/TWO_PLACE_AND_RENEWAL_ATTEMPT.md": "eb8983e9d61503e7941eece1d5857a829260160f2afb683a678a0666336dddb3"
+  },
+  "claims": [
+    {
+      "claim": "Balanced carry is coprime to complete actual cycle denominator",
+      "status": "LEAN-CHECKED",
+      "scope": "8 theorems, 1 definition; all final finite arithmetic hypotheses explicit",
+      "compile_receipt": "cycles-receipt.json",
+      "independent_semantic_review": "nov23_global_merger and root",
+      "excluded": "Infinite prime selection, real floor, rational dynamical realization, arbitrary-word cycle exclusion"
+    },
+    {
+      "claim": "Every finite prime set and every positive real floor admits primitive rational cycles with full nontrivial denominators outside that set",
+      "status": "VERIFIED WRITTEN",
+      "reviewers": [
+        "nov23_global_merger",
+        "root"
+      ],
+      "scope": "MOVING_PRIME_CYCLE_ATTEMPT.md Sections 1-4",
+      "excluded": "Adaptive full-factor sieves or integer-cycle counterexamples"
+    },
+    {
+      "claim": "All-input finite decision for each supplied rational dual candidate",
+      "status": "VERIFIED WRITTEN",
+      "reviewers": [
+        "nov23_cycle_ideal",
+        "root"
+      ],
+      "scope": "RATIONAL_DUAL_CERTIFICATE.md Sections 2-7, including zero and crossing cases and terminal mismatch",
+      "report": "cycles-review-rational-dual.md",
+      "execution": "2701 exact cases; finite execution only",
+      "excluded": "Universal rational-dual existence or no nontrivial positive cycles"
+    },
+    {
+      "claim": "Coarse digit memory, bilateral trace profile, and finite-path bounded-corrector obstruction",
+      "status": "SOURCE-QUALIFIED WRITTEN",
+      "reviewers": [
+        "root",
+        "nov23_cycle_ideal"
+      ],
+      "report": "cycles-review-entropy.md",
+      "scope": "Root all displayed deductions; independent cycle review of (11), (16), and (21)-(24)",
+      "excluded": "Upstream canonical trace construction and scalar tightness"
+    },
+    {
+      "claim": "Direct S-adic product, shell Holder comparison, and all-ones joint control",
+      "status": "VERIFIED CALCULATIONS WITH EXPLICIT INPUTS",
+      "reviewers": [
+        "nov23_cycle_ideal"
+      ],
+      "report": "cycles-review-adelic.md",
+      "scope": "Equations (7), (8), (13), (16); final k>=2 density clarification",
+      "excluded": "External analytic source proof, algebraicity of real limit, positive integer escape exclusion"
+    }
+  ]
+}

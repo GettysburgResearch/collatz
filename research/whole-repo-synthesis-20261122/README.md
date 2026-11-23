@@ -1,5 +1,10 @@
 # Actual-orbit phase, inverse windows, and whole-word closure attacks
 
+**23 November continuation:** the [high-variance attack packet](../high-variance-20261123/README.md)
+adds a full-denominator balanced Lean proof, a finite rational-dual
+certificate, and direct entropy/Diophantine closing attempts. Its claim
+and verification boundaries are separate from this checkpoint.
+
 **22 November 2026. Full Collatz remains open.** This checkpoint adds a
 written power-law phase estimate for every supplied distinct ordinary
 odd-orbit segment, its finite Lean core, and three attempts to turn the

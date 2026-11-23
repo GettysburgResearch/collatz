@@ -1,0 +1,132 @@
+{
+  "schema": "collatz-artifact-hashes/v1",
+  "date": "2026-11-23",
+  "scope": "New research packet and reports, excluding this manifest itself",
+  "files": [
+    {
+      "path": "research/high-variance-20261123/README.md",
+      "bytes": 8801,
+      "sha256": "e75eb8c6bddfdd0e211cc3145ff99b387709b7a6ccc5b4c8e796ed5a5c1e4232"
+    },
+    {
+      "path": "research/high-variance-20261123/SOURCE_SNAPSHOT.json",
+      "bytes": 15030,
+      "sha256": "b5dfcb57139565e7ec5060fce0e2ae5ef25235526f4e1362d946d9cf002d20ea"
+    },
+    {
+      "path": "research/high-variance-20261123/adelic/TWO_PLACE_AND_RENEWAL_ATTEMPT.md",
+      "bytes": 10979,
+      "sha256": "eb8983e9d61503e7941eece1d5857a829260160f2afb683a678a0666336dddb3"
+    },
+    {
+      "path": "research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md",
+      "bytes": 15112,
+      "sha256": "71aeff76e8983a9f703229d8c07a7cc9b734f3e07b82a85c8d3576b337787d05"
+    },
+    {
+      "path": "research/high-variance-20261123/arithmetic/check_rational_dual.py",
+      "bytes": 7484,
+      "sha256": "7ee4c64b4203e7e8d2cc1ff6aac840eecc5bc16b0ce3c90f23c358efbe2a2a43"
+    },
+    {
+      "path": "research/high-variance-20261123/arithmetic/rational-dual-check.json",
+      "bytes": 3755,
+      "sha256": "150b98725be838849a25d675e99e912b5720f1026314799ce6db196b94e3673f"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/MOVING_PRIME_CYCLE_ATTEMPT.md",
+      "bytes": 11110,
+      "sha256": "a6e8585f188899c08fd450d50fbbf85b53382bb5a4f6fea6440367d8c36bb3b1"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/README.md",
+      "bytes": 4431,
+      "sha256": "8b0135d29f97b645c3b0f7f074a97e3a7ca82dc117c275c962311f14fcf0b8c4"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/check_moving_prime_controls.py",
+      "bytes": 3437,
+      "sha256": "a5f6a2d3ed5ab36fe110c716a926b797e6bbad7be61b80ad13850a3ad727486a"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/lean/BalancedCycleAudit.lean",
+      "bytes": 578,
+      "sha256": "8f98f4bae32ca0c23f213b38097f7214e8263b155ec9f8dab8038c08851ff5e6"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/lean/BalancedCycleUnit.lean",
+      "bytes": 7945,
+      "sha256": "9231cf4ab54f3674ca89001a9b3a3ab84aabbcde89f61dc2151eb332be6d63f6"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/lean/lean-toolchain",
+      "bytes": 25,
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/lean/mathlib-revision",
+      "bytes": 41,
+      "sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "path": "research/high-variance-20261123/cycles/moving_prime_controls.json",
+      "bytes": 1174,
+      "sha256": "72a3cea52cfaad7feb4f6f4b5b325375122f25926c38847fe809d198c515680d"
+    },
+    {
+      "path": "research/high-variance-20261123/entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md",
+      "bytes": 11243,
+      "sha256": "63e80adb5334027afc9b99eb499e7e7f4c4454eae26a6be6076319fb32264d24"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/README.md",
+      "bytes": 3536,
+      "sha256": "2a11a16c8f729e7c9b503230ea333fb0d18b8fe22448498d18bace3792d05a81"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/REVIEW_SCOPE.json",
+      "bytes": 3284,
+      "sha256": "31b2b14621552ab0d9b38425d73a27b2fdc63e6446bb0d3a126245006dd431c4"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-lean-axioms.log",
+      "bytes": 896,
+      "sha256": "459dfe3a7b57fb362da5a5471b587da5c07dcd726cc0ed39f82f2393c6b2ea26"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-lean-compile.log",
+      "bytes": 1091,
+      "sha256": "b08fe04467be91a2816d46b7e69c46bb50918adf53ecef2c3eedd21503c72430"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-lean-replay.md",
+      "bytes": 3514,
+      "sha256": "3012547153cb701834a9c64d02026f497dcd0143102baec24170b9fe6c2c948a"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-receipt.json",
+      "bytes": 3449,
+      "sha256": "f4448262d129ad7324a17870df5a9d91fd039cc38bbc98f184236413b104b75c"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-review-adelic.md",
+      "bytes": 4047,
+      "sha256": "5e1ab41301589f2b9101bf8aae323325e95184602e64cb30ad62c08b15d732d3"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-review-entropy.md",
+      "bytes": 3922,
+      "sha256": "a87ba91f049ae2726831bf992855618390b33669647a76403fd1e56e4e7c6f8a"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/cycles-review-rational-dual.md",
+      "bytes": 4906,
+      "sha256": "048894abe93247a20feb2eddb50a58078210c1c9820960719c3dc9c35b061fd3"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/pr-description-before.json",
+      "bytes": 11590,
+      "sha256": "c67235adb5230e1b72e659a642d8c9116acc5dae03a63ae741129a5117f93ff4"
+    }
+  ]
+}
