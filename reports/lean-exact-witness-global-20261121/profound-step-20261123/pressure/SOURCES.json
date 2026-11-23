@@ -1,0 +1,91 @@
+{
+  "schema": "collatz-ordinary-entrance-sources/v1",
+  "date": "2026-11-23",
+  "source_commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+  "repository_sources": [
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "claims": "BP1-BP4, BP10-BP11",
+      "use": "Unchanged escaping component, positive r, exact Green/source identity and sibling transport normalization; read full proof."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/ALL_BRANCH_CAPACITY.md",
+      "claims": "AC2, AC6-AC7",
+      "use": "Complete component partition and all-branch root summability; read full proof."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "claims": "(2)-(7), (12)",
+      "use": "Complete address bijection and signed cost; read full proof."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "claims": "(21)-(31), Section 7",
+      "use": "Prior Haar/Green defect and recurrence discussion inspected to avoid rediscovery; not advertised as new."
+    },
+    {
+      "pr": 178,
+      "commit": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "path": "research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md",
+      "claims": "(3)-(11)",
+      "use": "Current source fetched and read; distinguishes old critical harmonic window transfer from the new killed resolvent terminal law. No theorem from this source is needed as an extra premise."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Vincent Vigon",
+      "title": "(Homogeneous) Markovian bridges",
+      "publication": "Annales de l’Institut Henri Poincaré, Probabilités et Statistiques 47(3), 875-916 (2011)",
+      "doi": "10.1214/10-AIHP391",
+      "url": "https://www.numdam.org/item/10.1214/10-AIHP391.pdf",
+      "sections": "Section 2 nonnegative transient matrices; Section 3.1, Lemma 3.2 and Proposition 3.3; Section 11 scope",
+      "inspection": "Primary PDF text and rendered page 10 (printed page 885).",
+      "use": "Potential-transform inspiration, instantiated by direct proof EL2-EL4. The original operator need not have normalized rows. No Martin-boundary theorem imported.",
+      "correction": "Printed Proposition 3.3 has U[P]g(y) in the terminal-law denominator; the correct starting-state denominator is U[P]g(x). A two-state transient matrix in the checker rejects the printed orientation; EL3 proves the needed orientation."
+    },
+    {
+      "authors": "Omri M. Sarig",
+      "title": "Thermodynamic formalism for countable Markov shifts",
+      "url": "https://www.weizmann.ac.il/math/sarigo/sites/math.sarigo/files/uploads/tdf-survey.pdf",
+      "sections": "Theorems 3.5 and 4.9; Section 4.3",
+      "inspection": "Primary author-hosted survey, exact theorem hypotheses read.",
+      "use": "Applicability boundary only: recurrence characterization retains conservativity and topological mixing. No RPF or spectral-gap conclusion is applied to the ordinary acyclic component."
+    },
+    {
+      "authors": "Ilia Krasikov and Jeffrey C. Lagarias",
+      "title": "Bounds for the 3x+1 problem using difference inequalities",
+      "publication": "Acta Arithmetica 109.3 (2003)",
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/81918",
+      "sections": "Theorem 6.1, printed page 254",
+      "inspection": "Primary publisher PDF theorem read.",
+      "use": "Fixed-target predecessor lower-count theorem; no source-uniform pressure estimate or low-height ancestor is inferred from its target-dependent threshold."
+    }
+  ],
+  "formal_environment": {
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "public_declarations": 9,
+    "axiom_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_free": [
+      "merge_later"
+    ]
+  },
+  "scientific_file_sha256": {
+    "ORDINARY_ENTRANCE_LAW.md": "e38a7749ca5b7290daf33838586751d46232ca27f414e83fefe847b6ce72f93b",
+    "EntranceLaw.lean": "1db93cb36595a0823887fd520602edfc9294dc8693fb6d3bf4451a56dff03bab",
+    "check_entrance_law.py": "dea3282bf2fe3b0faab28ebb448402b42b379ed2e734eed20fcdb59f57d7cc21"
+  }
+}

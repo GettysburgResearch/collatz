@@ -1,0 +1,6 @@
+'CollatzAdelicRepair.shadow_numerator' depends on axioms: [propext, Quot.sound]
+'CollatzAdelicRepair.shadow_next_edge' depends on axioms: [propext, Quot.sound]
+'CollatzAdelicRepair.numerator_recurrence' depends on axioms: [propext]
+'CollatzAdelicRepair.first_sibling_primitive_numerator' depends on axioms: [propext]
+'CollatzAdelicRepair.extrapolation_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAdelicRepair.actual_block_displacement' depends on axioms: [propext, Quot.sound]

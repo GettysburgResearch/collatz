@@ -1,0 +1,9 @@
+'CollatzEntranceLaw.merge_later' does not depend on any axioms
+'CollatzEntranceLaw.merge_phase_unique' depends on axioms: [propext, Quot.sound]
+'CollatzEntranceLaw.integer_phase_unique' depends on axioms: [propext, Quot.sound]
+'CollatzEntranceLaw.phase_at_late_root' depends on axioms: [propext, Quot.sound]
+'CollatzEntranceLaw.ray_hit_unique' depends on axioms: [propext, Quot.sound]
+'CollatzEntranceLaw.transformed_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzEntranceLaw.stopped_path_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzEntranceLaw.finite_killed_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzEntranceLaw.normalized_tilt_rescaling' depends on axioms: [propext, Classical.choice, Quot.sound]

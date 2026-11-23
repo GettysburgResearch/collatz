@@ -1,24 +1,52 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz, the requested residue-512 implication, and
-`FloorIntervalStep`.** The latest continuation combines ordinary first-hit
-arithmetic with orbit sparsity to prove a power saving for disjoint basin
-minima and critical-root summability of the actual Green ratios. Parallel
-attacks prove all-time descent through an infinite word dictionary and a
-complete finite merger compiler for arbitrary bounded joint edits.
-Fifty-six new Lean declarations certify the displayed ordinary-word,
-compiler, and finite source-accounting statements.
+`FloorIntervalStep`.** The latest continuation constructs an ordinary
+entrance law from the full inverse potential and an explicit finite-source
+trial certificate for the remaining absolute transport cost. The arithmetic
+lane removes common cutoffs and fixed centers from the ordinary lattice
+descent; the repair lane computes the exact adelic obstruction and its
+shared displacement variable. Twenty-eight new Lean declarations certify
+the displayed finite and literal ordinary-word ingredients.
 No successful universal certificate transformer or exclusion of all
 escaping or cyclic components is claimed.
 
 The earlier formal equivalences, unrestricted source-witness reductions,
 finite boundary optimizer, and ordinary atomic eigenmeasure classification
 remain available below. There is no input exponent or witness-length bound,
-`sorry`, or conjectural axiom in the new Lean modules. The new compiler and
-word-language modules use Lean 4.34.1 core/Std; the finite pressure module
-uses the explicitly pinned Mathlib environment.
+`sorry`, or conjectural axiom in the new Lean modules. The adaptive module
+uses Lean 4.34.1 core/Std and its unchanged pinned lattice dependency;
+the finite pressure and repair modules use the pinned Mathlib environment.
 
-## Latest checkpoint: sparse basins, infinite-word descent, and joint edits
+## Latest checkpoint: ordinary entrance laws and adaptive integer descent
+
+The [literature-driven closing-step packet](profound-step-20261123/README.md)
+continues published head `92e7aaf602a0d4f0442556a133ae8e882e1fe93f`.
+Its killed potential transform has a precise ordinary terminal law and
+integer lifetime phase. The complete-capacity bound gives finite total
+root variation and critical Renyi entropy of the entry code. Exact
+transported densities identify the still-open lower Green estimate as an
+absolute ordinary cost-plus-entropy bound.
+
+The coordinating theorem supplies an explicit finite trial using only
+verified transported source heights and known constants. Its desired
+scale still needs an actual source-set construction. Normalized-law
+closeness alone cannot calibrate the missing partition function, even
+with the empty-address zero-cost anchor retained.
+
+Adaptive integer descent now permits all finite defects with individual
+cutoffs and arbitrary changing rational fixed points with a fully paid
+cross-carry. The adelic lane tests the canonical sibling pullbacks at all
+three places and proves a product lower bound of 7/3 for every sibling
+power; signed periodic extrapolation recovers the same source displacement
+as the adaptive rank. Neither argument supplies universal paid-word
+coverage or an unrestricted ordinary integer repair.
+
+The [execution and review report](../../reports/lean-exact-witness-global-20261121/profound-step-20261123/README.md)
+records 28 fresh strict Lean audits, three normal/optimized exact checkers,
+primary-source hypotheses, and exact-hash internal reconstructions.
+
+## Previous checkpoint: sparse basins, infinite-word descent, and joint edits
 
 The [repository-synthesis packet](repo-synthesis-20261123/README.md)
 continues published head `2fbc5706d2caff5d1485247e5291374ff4885041` after

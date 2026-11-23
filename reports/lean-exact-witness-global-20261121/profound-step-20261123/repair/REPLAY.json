@@ -1,0 +1,66 @@
+{
+  "schema": "collatz-adelic-repair-execution/v1",
+  "scope": "Actual finite controls and six strict Lean algebra declarations; no universal integer repair",
+  "lean": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "executions": [
+    {
+      "artifact": "lean-strict-audit.log",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/repair/AdelicRepair.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "stdout_sha256": "6599ce497f049f635d824cf1f440aedde409f6ce8206247f4d8bbdb4c5e98a1a",
+      "stdout_bytes": 514,
+      "stderr": "",
+      "seconds": 1.784
+    },
+    {
+      "artifact": "normal.json",
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/repair/check_adelic_repair.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "stdout_sha256": "17f7fd15498bdb7bd90b4a92148748a0b2920e57bec87af89314ff896efa37ce",
+      "stdout_bytes": 1134,
+      "stderr": "",
+      "seconds": 0.513
+    },
+    {
+      "artifact": "optimized.json",
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/profound-step-20261123/repair/check_adelic_repair.py"
+      ],
+      "cwd": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "stdout_sha256": "17f7fd15498bdb7bd90b4a92148748a0b2920e57bec87af89314ff896efa37ce",
+      "stdout_bytes": 1134,
+      "stderr": "",
+      "seconds": 0.605
+    }
+  ],
+  "normal_optimized_byte_equal": true,
+  "source_sha256": {
+    "ADELIC_INTEGER_REPAIR.md": "cd2735741f0833f32f7707e31bb864452b9d2bead7cdaea7e35068a3922e5dc7",
+    "AdelicRepair.lean": "378edd7da50d235c4d80a96c70f17d079a9f1471e55dd759bae0180c3ccf324d",
+    "check_adelic_repair.py": "9019d940337598e57efe071a2c9b46b65ae53ab1368577c21c1235c1a93d46f4"
+  },
+  "receipt_note": "The finite checkers were rerun after two review wording/indexing corrections to the manuscript; Lean source was unchanged after its successful strict compile."
+}

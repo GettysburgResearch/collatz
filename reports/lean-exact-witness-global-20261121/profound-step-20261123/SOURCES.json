@@ -1,0 +1,146 @@
+{
+  "schema": "collatz-profound-step-source-ledger/v1",
+  "date": "2026-11-23",
+  "remote_parent": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+  "parent_tree": "b23ab77af54e79914b25c7014bd3d1149ff56557",
+  "scope": "Primary-source-guided attempts at ordinary escape closure, actual integer repair, and unrestricted cycle/word coverage. Full Collatz remains open.",
+  "repository_sources": [
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md",
+      "claims": "BM3/BM4",
+      "use": "Retained ordinary basin-minimum bound and first-hit split; no full old-corpus replay."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/ALL_BRANCH_CAPACITY.md",
+      "claims": "AC2, AC6, AC7",
+      "use": "Exact component partition and full-kernel root capacity for the new variation and entropy results."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "claims": "BP1-BP3 and root summability",
+      "use": "Original component, ordinary r, complete pressure, source height bounds and closing consumer."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "claims": "Complete addresses, signed cost, equations6/10/12",
+      "use": "All-depth bijection on actual ordinary sources and exact weight distortion."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean",
+      "claims": "Literal traces, affine carries, repeat lattice",
+      "use": "Exact unchanged Lean dependency; twenty older declarations excluded from the new count."
+    },
+    {
+      "pr": 177,
+      "commit": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/REPOSITORY_SYNTHESIS.md",
+      "claims": "RS1-RS2",
+      "use": "Fixed-sibling bounded rational pullbacks and the unchanged-target integer repair question."
+    },
+    {
+      "pr": 178,
+      "commit": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "path": "See arithmetic/SOURCES.json for exact paths",
+      "use": "Latest full numerical-gcd and canonical entropy interfaces inspected; not claimed as newly proved or imported at wider scope."
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "paths": [
+        "literature/deep-machinery-20261122/02_analysis_and_entropy.md",
+        "literature/deep-machinery-20261122/04_returns_operators_and_termination.md",
+        "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md"
+      ],
+      "use": "Guide and heading-level orientation refreshed; underlying primary sources are read separately when used."
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "(Homogeneous) Markovian bridges",
+      "author": "Vincent Vigon",
+      "year": 2011,
+      "url": "https://www.numdam.org/item/10.1214/10-AIHP391.pdf",
+      "inspected": "Definitions of transient nonnegative matrices and potential transforms, Sections2-3, Proposition3.3 and actual PDF page885 screenshot.",
+      "use": "Positive mechanism for a killed bridge; new ordinary formulas proved directly.",
+      "qualification": "Printed terminal-law denominator Ug(y) is locally corrected to Ug(x) by direct telescoping and a two-state check. No wholesale review of the paper is claimed."
+    },
+    {
+      "title": "On the complexity of algebraic numbers I. Expansions in integer bases",
+      "authors": [
+        "Boris Adamczewski",
+        "Yann Bugeaud"
+      ],
+      "url": "https://arxiv.org/pdf/math/0511674",
+      "version": "math/0511674v1",
+      "inspected": "Section4, TheoremE printedpages7-8 and periodic completion construction.",
+      "use": "Exact mixed-place and height-normalized Subspace inequality tested on the canonical primitive pairs; guides signed periodic extrapolation.",
+      "qualification": "Algebraicity of the real shadow limit is not supplied. Even provisionally assuming it, the specified product is bounded below by7/3. Other approximation choices are not excluded."
+    },
+    {
+      "title": "Martin boundary of random walks with unbounded jumps in hyperbolic groups",
+      "author": "Sebastien Gouezel",
+      "year": 2015,
+      "url": "https://gouezel.pages.math.cnrs.fr/webpage/articles/infinite_ancona.pdf",
+      "inspected": "Introduction, Theorems1.1-1.2, admissibility and Anc* definitions.",
+      "use": "Audit the hypotheses for a proposed Green/Harnack import.",
+      "qualification": "Admissible group walk, hyperbolic geometry, Anc* and superexponential tails are not established by the directed ordinary inverse kernel. No theorem imported as a Collatz estimate."
+    },
+    {
+      "title": "Bounds for the 3x+1 Problem using Difference Inequalities",
+      "authors": [
+        "Ilia Krasikov",
+        "Jeffrey C. Lagarias"
+      ],
+      "year": 2003,
+      "url": "https://websites.umich.edu/lagarias/doc/krasikov.pdf",
+      "additional_url": "https://arxiv.org/abs/math/0205002",
+      "inspected": "Root read abstract on actual PDF page0 screenshot due broken author-copy text layer; pressure lane reads Theorem6.1 from publisher copy, see its ledger.",
+      "use": "Fixed-target predecessor growth is relevant to finite trial mass.",
+      "qualification": "Target-dependent thresholds and ordinary-source projections are retained; no uniform small-source repair is inferred."
+    },
+    {
+      "title": "The 3x+1 Semigroup",
+      "authors": [
+        "David Applegate",
+        "Jeffrey C. Lagarias"
+      ],
+      "version": "math/0411140v2",
+      "url": "https://arxiv.org/pdf/math/0411140v2",
+      "inspected": "Theorem1.1 and Section2 modified iterations.",
+      "use": "Test multiplicative descent as an alternate repair mechanism; compare with already retained multiplier-transport theorem.",
+      "qualification": "Semigroup products can fail to be one ordinary orbit. Earlier bounded-clock obstruction is credited, not new."
+    },
+    {
+      "title": "The p-adic Subspace Theorem",
+      "author": "Jan-Hendrik Evertse",
+      "year": 2011,
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+      "inspected": "Theorem1.1, algebraic coefficient condition, primitive-pair examples.",
+      "use": "Additional primary theorem-format check; not a new proof dependency or Lean axiom."
+    },
+    {
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "author": "Terence Tao",
+      "version": "arXiv1909.03562v7",
+      "url": "https://arxiv.org/abs/1909.03562v7",
+      "inspected": "Primary abstract and current version metadata only in this pass.",
+      "use": "Orientation on first-passage transport and 3-adic Fourier machinery; no new all-source implication claimed."
+    }
+  ],
+  "lane_ledgers": [
+    "arithmetic/SOURCES.json",
+    "pressure/SOURCES.json",
+    "repair/SOURCES.json"
+  ],
+  "review_scope": "Internal exact-hash reconstructions, with shared authorship disclosed. No external acceptance or full mathematical corpus audit."
+}
