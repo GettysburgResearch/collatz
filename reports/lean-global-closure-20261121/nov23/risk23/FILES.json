@@ -1,0 +1,118 @@
+{
+  "schema": "collatz-risk23-file-manifest/v1",
+  "date": "2026-11-23",
+  "parent": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+  "scope": "new packet and own scientific entrypoint; manifest excludes its own bytes",
+  "files": [
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/HARDY_REVIEW_PRIOR_DRAFT.md",
+      "bytes": 3336,
+      "sha256": "f7771891e7b117d4e4d12277e88edf79debae5cb71c93ce3ec2ae1fda7bfea2c"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/README.md",
+      "bytes": 6249,
+      "sha256": "5a10261cd2a3505457ffd0da119d2f832c1e401e91c6495e02c87b32caca1dd7"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/late-frontier.json",
+      "bytes": 1759,
+      "sha256": "c01169816628e3bc101d5c79aa32feb3a9a6400ca0db5dd871d48fb91976ad0b"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/new-source-checks.json",
+      "bytes": 27210,
+      "sha256": "458e93c30a6581e86046a67db8ca41b6307d736c22dc755925dc8a55ebbae2f0"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/previous-pr-description.json",
+      "bytes": 49843,
+      "sha256": "9ecb8d758406ce04cbd88f13a1f3c26f01a561f4bb69c327562270ac563e382f"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/repo-refresh.json",
+      "bytes": 55772,
+      "sha256": "8ca8277f138fe02e10edeb08852223878b88ded41ec27e629b688d9128540adc"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk23/review-scope.json",
+      "bytes": 4606,
+      "sha256": "e10becc08621647300e7e35231c46b9c9e79c5303b1d7652a66178024267b583"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/README.md",
+      "bytes": 20247,
+      "sha256": "bfa7aa22a57d0b4baf01bbaa542949970f3ffdd2e05be6d8974596ec55fca9a4"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/ALL_WORD_POLYNOMIAL_ATTACK.md",
+      "bytes": 13510,
+      "sha256": "4a2207c4f36977297705210f9502f2b1be12fa03d6646f444343e48e92dd7734"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md",
+      "bytes": 14364,
+      "sha256": "53565910ef15a2cf87ab066b187fbff9b83b187468f24c3c4348d6568248db1c"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "bytes": 14016,
+      "sha256": "44511e0ab026ca922296ca97bad817321f950d93545f8d8e284e8fd3d850bb18"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/HIGH_CYCLE_FOURIER_LIFT.md",
+      "bytes": 4732,
+      "sha256": "acf9835d369806defcf573325726b72fd84f04c0bf5f266a8302647dc576ea40"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/InverseBranching.lean",
+      "bytes": 1598,
+      "sha256": "57e5e27e3774e5bc9dffead23ee37f5493e7f8b3c14dd85ac261d15dd8181cee"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/LATE_FRONTIER_SYNTHESIS.md",
+      "bytes": 9736,
+      "sha256": "bfad0015766476f31e84edf8943b006e4ace4c992e3aeaf1766243ed1c86a210"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/PrimeBalanceObstruction.lean",
+      "bytes": 4216,
+      "sha256": "1eca1e801e330077759630372460d80bc65b309e5f4cb2c88d45d1868c45f0fd"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/README.md",
+      "bytes": 7609,
+      "sha256": "9cf56437d8708c1c8f42a1f54df1689556a4a3ba2ab3ef07335ca46180e99abd"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "bytes": 14809,
+      "sha256": "850ac21d509b017d28ee3a90b6398a70f5f9ae4528995b4654a68a1f0038d5a7"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/TERNARY_POLE_BARRIER_ATTEMPT.md",
+      "bytes": 9787,
+      "sha256": "c27da1d55355e4c203b3b64f38bfd6a36703d7a3381f6194f72230e747ce4ae5"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/check_cycle_obstructions.py",
+      "bytes": 4677,
+      "sha256": "f00e4b67fb0c38af88afbc6cc7b578626acaeb81f656d77e4045628a8679b6ae"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/check_fourier_interface.py",
+      "bytes": 4198,
+      "sha256": "3bd13fdcd11ee5bca1184de960d2fc711e43619857443b3c4ba36fc31a9354f3"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/check_hardy_flows.py",
+      "bytes": 4632,
+      "sha256": "cc9b2d2d8594fe83e2f7ae75dd2736fb76d732ab7ad4ff92da28e8bf6bec097a"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/verify_risk23.py",
+      "bytes": 5471,
+      "sha256": "bf06033e22d8a6609882fa1edb283ace1ac2fd08f10c2f65fccee12341f52eff"
+    }
+  ]
+}

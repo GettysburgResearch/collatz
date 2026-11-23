@@ -1,0 +1,87 @@
+{
+  "schema": "collatz-risk23-review-scope/v1",
+  "date": "2026-11-23",
+  "scope": "in-session independent reconstruction, not external peer review",
+  "proofs": [
+    {
+      "path": "research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "sha256": "44511e0ab026ca922296ca97bad817321f950d93545f8d8e284e8fd3d850bb18",
+      "scope": "Complete complex-eigenvalue disk, actual tree, shared-tail balances, root defect, channel cancellation, H2 convergence, known-basin antichain; final positive-cone and ell1 endpoint.",
+      "reviewers": [
+        "root: complete final proof",
+        "risk23_global_order: main disk proof and ell1 endpoint argument",
+        "risk23_compact_escape: main disk proof at separately pinned draft"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion",
+      "earlier_review_boundary": {
+        "reviewed_sha256": "bb1d37dfcd61c53d28611bfc950d437d4f7b5d54bd5a35098558f8493cebca4a",
+        "retained_review": "HARDY_REVIEW_PRIOR_DRAFT.md",
+        "later_changes": "Known-basin version of lambda=0, positive-cone classification and ell1 nonclosed-range endpoint; checked by root."
+      }
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "sha256": "850ac21d509b017d28ee3a90b6398a70f5f9ae4528995b4654a68a1f0038d5a7",
+      "scope": "Exact normalized TV, Fourier scaling, retained source, solenoid product limit and finite integer-part entropy. Inherited analytic inputs qualified. Concurrent PR180 overlap explicitly credited.",
+      "reviewers": [
+        "root",
+        "risk23_global_order"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion",
+      "earlier_review_boundary": {
+        "reviewed_sha256": "b29994ce024e23b603d318b3d2a8c08a844eb3f3064ad412c038f01fd5f608e8",
+        "later_changes": "Root added concurrent PR180 attribution and cross-reference; mathematical proof unchanged."
+      }
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md",
+      "sha256": "53565910ef15a2cf87ab066b187fbff9b83b187468f24c3c4348d6568248db1c",
+      "scope": "Measure criterion, eventual-periodicity consumer, exact positive pullbacks, logarithmic coefficient and nonreal fifth-root residue. Actual all-time norm bound remains open.",
+      "reviewers": [
+        "root"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/TERNARY_POLE_BARRIER_ATTEMPT.md",
+      "sha256": "c27da1d55355e4c203b3b64f38bfd6a36703d7a3381f6194f72230e747ce4ae5",
+      "scope": "Ordinary finite-pole failure, exact scaled transfer and Haar multiplier; no ordinary-to-a.e. inference.",
+      "reviewers": [
+        "root",
+        "risk23_global_order"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/ALL_WORD_POLYNOMIAL_ATTACK.md",
+      "sha256": "4a2207c4f36977297705210f9502f2b1be12fa03d6646f444343e48e92dd7734",
+      "scope": "Full polynomial/dyadic matching, actual five-edge product balance, complete numerator and denominator, rational Fourier lifting. No cycle exclusion.",
+      "reviewers": [
+        "root",
+        "risk23_global_order"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/HIGH_CYCLE_FOURIER_LIFT.md",
+      "sha256": "acf9835d369806defcf573325726b72fd84f04c0bf5f266a8302647dc576ea40",
+      "scope": "Generic finite-Fourier lift, disjoint actual source/image sets, exact residual norm and rational minimum inequality. Infinite family is source-qualified on PR182.",
+      "reviewers": [
+        "root"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk23/LATE_FRONTIER_SYNTHESIS.md",
+      "sha256": "bfad0015766476f31e84edf8943b006e4ace4c992e3aeaf1766243ed1c86a210",
+      "scope": "Targeted statements at exact new heads; explicit concurrent overlap and no promotion of unproved closing premises.",
+      "reviewers": [
+        "root: PR180 common-path crosswalk and PR185 collision theorem checked directly",
+        "risk23_compact_escape: PR180 and PR185 new science",
+        "risk23_global_order: PR178 and PR176 new science",
+        "risk23_cycle_ideal: PR182 new science"
+      ],
+      "status": "written reconstruction; no full Collatz conclusion"
+    }
+  ]
+}

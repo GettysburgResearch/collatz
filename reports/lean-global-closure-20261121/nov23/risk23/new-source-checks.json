@@ -1,0 +1,510 @@
+{
+  "schema": "collatz-risk23-local-evidence/v1",
+  "started_utc": "2026-11-23T01:14:21.515140+00:00",
+  "scope": "two new core/Std Lean modules and exact finite controls; not a Collatz proof or an analytic formalization",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "source_sha256": {
+    "InverseBranching.lean": "57e5e27e3774e5bc9dffead23ee37f5493e7f8b3c14dd85ac261d15dd8181cee",
+    "PrimeBalanceObstruction.lean": "1eca1e801e330077759630372460d80bc65b309e5f4cb2c88d45d1868c45f0fd",
+    "check_fourier_interface.py": "3bd13fdcd11ee5bca1184de960d2fc711e43619857443b3c4ba36fc31a9354f3",
+    "check_cycle_obstructions.py": "f00e4b67fb0c38af88afbc6cc7b578626acaeb81f656d77e4045628a8679b6ae",
+    "check_hardy_flows.py": "cc9b2d2d8594fe83e2f7ae75dd2736fb76d732ab7ad4ff92da28e8bf6bec097a"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "InverseBranching.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.InverseBranching.two_children' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InverseBranching.two_children' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source": "InverseBranching.lean",
+      "public_theorems_audited": [
+        "two_children"
+      ],
+      "axiom_audit_lines": [
+        "'Collatz.InverseBranching.two_children' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.InverseBranching.two_children' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "audit_complete": true
+    },
+    {
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "PrimeBalanceObstruction.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.PrimeBalanceObstruction.edge25' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.full_product' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.full_denominator_does_not_divide_word_numerator' depends on axioms: [propext]\n'Collatz.PrimeBalanceObstruction.minimum_inequality' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.no_completely_additive_strict_descent' depends on axioms: [propext, Quot.sound]\n'Collatz.PrimeBalanceObstruction.no_simultaneous_decrease_on_witness' depends on axioms: [propext, Quot.sound]\n'Collatz.PrimeBalanceObstruction.edge25' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.edge19' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.edge29' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.edge55' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.edge83' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.endpoint_product' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.full_product' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.exact_division_sum' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.full_denominator' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.word_numerator' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.full_denominator_does_not_divide_word_numerator' depends on axioms: [propext]\n'Collatz.PrimeBalanceObstruction.word_counts_coprime' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.minimum_inequality' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.minimum_bound' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.distinct_sources' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.distinct_images' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.all_sources_gt_one_and_coprime_six' does not depend on any axioms\n'Collatz.PrimeBalanceObstruction.source_image_sets_differ' depends on axioms: [propext, Quot.sound]\n'Collatz.PrimeBalanceObstruction.no_completely_additive_strict_descent' depends on axioms: [propext, Quot.sound]\n'Collatz.PrimeBalanceObstruction.no_simultaneous_decrease_on_witness' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source": "PrimeBalanceObstruction.lean",
+      "public_theorems_audited": [
+        "edge25",
+        "edge19",
+        "edge29",
+        "edge55",
+        "edge83",
+        "endpoint_product",
+        "full_product",
+        "exact_division_sum",
+        "full_denominator",
+        "word_numerator",
+        "full_denominator_does_not_divide_word_numerator",
+        "word_counts_coprime",
+        "minimum_inequality",
+        "minimum_bound",
+        "distinct_sources",
+        "distinct_images",
+        "all_sources_gt_one_and_coprime_six",
+        "source_image_sets_differ",
+        "no_completely_additive_strict_descent",
+        "no_simultaneous_decrease_on_witness"
+      ],
+      "axiom_audit_lines": [
+        "'Collatz.PrimeBalanceObstruction.edge25' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.full_product' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.full_denominator_does_not_divide_word_numerator' depends on axioms: [propext]",
+        "'Collatz.PrimeBalanceObstruction.minimum_inequality' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.no_completely_additive_strict_descent' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PrimeBalanceObstruction.no_simultaneous_decrease_on_witness' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PrimeBalanceObstruction.edge25' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.edge19' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.edge29' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.edge55' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.edge83' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.endpoint_product' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.full_product' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.exact_division_sum' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.full_denominator' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.word_numerator' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.full_denominator_does_not_divide_word_numerator' depends on axioms: [propext]",
+        "'Collatz.PrimeBalanceObstruction.word_counts_coprime' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.minimum_inequality' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.minimum_bound' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.distinct_sources' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.distinct_images' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.all_sources_gt_one_and_coprime_six' does not depend on any axioms",
+        "'Collatz.PrimeBalanceObstruction.source_image_sets_differ' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PrimeBalanceObstruction.no_completely_additive_strict_descent' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PrimeBalanceObstruction.no_simultaneous_decrease_on_witness' depends on axioms: [propext, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "audit_complete": true
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "check_fourier_interface.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"new formulas checked; no Collatz proof or uniform basin norm bound claimed\",\n  \"exact_checks\": {\n    \"positive_integer_range\": [\n      1,\n      10000\n    ],\n    \"shortcut_preimage_residues_mod_10\": [\n      0,\n      3\n    ],\n    \"initial_dyadic_invariance\": true,\n    \"accelerated_modular_formula\": true,\n    \"accelerated_dyadic_invariance\": true,\n    \"anchor_values_at_1_and_2\": [\n      1,\n      1\n    ],\n    \"failure_of_full_fixed_point_at_3\": {\n      \"d_3\": 0,\n      \"d_T3\": 1\n    },\n    \"exponent_residue_cycle_mod_5\": [\n      3,\n      1,\n      2,\n      4\n    ],\n    \"rational_boundary_weights\": {\n      \"3\": \"8/75\",\n      \"1\": \"4/75\",\n      \"2\": \"2/75\",\n      \"4\": \"1/75\"\n    }\n  },\n  \"numerical_sanity_checks_not_proofs\": {\n    \"boundary_residue_real\": -0.08726779962499649,\n    \"boundary_residue_imaginary\": -0.008980559531591699,\n    \"raw_shortcut_L1_logarithm_coefficient\": 0.39186283857119253,\n    \"radial_values\": [\n      {\n        \"r\": 0.99,\n        \"real\": -0.08952040714593579,\n        \"imaginary\": -0.008369707674106532,\n        \"distance_from_exact_formula_evaluated_numerically\": 0.0023339624322566456\n      },\n      {\n        \"r\": 0.9999,\n        \"real\": -0.08732377128141416,\n        \"imaginary\": -0.008982857942666225,\n        \"distance_from_exact_formula_evaluated_numerically\": 5.601882733158058e-05\n      },\n      {\n        \"r\": 0.999999,\n        \"real\": -0.08726868767375401,\n        \"imaginary\": -0.008980472524001524,\n        \"distance_from_exact_formula_evaluated_numerically\": 8.92300911393847e-07\n      },\n      {\n        \"r\": 0.99999999,\n        \"real\": -0.0872678118420008,\n        \"imaginary\": -0.00898055897545126,\n        \"distance_from_exact_formula_evaluated_numerically\": 1.2229656026340561e-08\n      }\n    ]\n  },\n  \"infinite_conclusions\": \"See the written proofs in FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md\"\n}\n",
+      "stderr": "",
+      "source": "check_fourier_interface.py",
+      "finite_control_result": {
+        "status": "new formulas checked; no Collatz proof or uniform basin norm bound claimed",
+        "exact_checks": {
+          "positive_integer_range": [
+            1,
+            10000
+          ],
+          "shortcut_preimage_residues_mod_10": [
+            0,
+            3
+          ],
+          "initial_dyadic_invariance": true,
+          "accelerated_modular_formula": true,
+          "accelerated_dyadic_invariance": true,
+          "anchor_values_at_1_and_2": [
+            1,
+            1
+          ],
+          "failure_of_full_fixed_point_at_3": {
+            "d_3": 0,
+            "d_T3": 1
+          },
+          "exponent_residue_cycle_mod_5": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "rational_boundary_weights": {
+            "3": "8/75",
+            "1": "4/75",
+            "2": "2/75",
+            "4": "1/75"
+          }
+        },
+        "numerical_sanity_checks_not_proofs": {
+          "boundary_residue_real": -0.08726779962499649,
+          "boundary_residue_imaginary": -0.008980559531591699,
+          "raw_shortcut_L1_logarithm_coefficient": 0.39186283857119253,
+          "radial_values": [
+            {
+              "r": 0.99,
+              "real": -0.08952040714593579,
+              "imaginary": -0.008369707674106532,
+              "distance_from_exact_formula_evaluated_numerically": 0.0023339624322566456
+            },
+            {
+              "r": 0.9999,
+              "real": -0.08732377128141416,
+              "imaginary": -0.008982857942666225,
+              "distance_from_exact_formula_evaluated_numerically": 5.601882733158058e-05
+            },
+            {
+              "r": 0.999999,
+              "real": -0.08726868767375401,
+              "imaginary": -0.008980472524001524,
+              "distance_from_exact_formula_evaluated_numerically": 8.92300911393847e-07
+            },
+            {
+              "r": 0.99999999,
+              "real": -0.0872678118420008,
+              "imaginary": -0.00898055897545126,
+              "distance_from_exact_formula_evaluated_numerically": 1.2229656026340561e-08
+            }
+          ]
+        },
+        "infinite_conclusions": "See the written proofs in FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "check_cycle_obstructions.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"exact_obstructions_only_no_Collatz_closure\",\n  \"distinct_odd_edges\": [\n    [\n      25,\n      19,\n      2\n    ],\n    [\n      19,\n      29,\n      1\n    ],\n    [\n      29,\n      11,\n      3\n    ],\n    [\n      55,\n      83,\n      1\n    ],\n    [\n      83,\n      125,\n      1\n    ]\n  ],\n  \"source_and_image_product\": 62882875,\n  \"shortcut_sources\": [\n    25,\n    38,\n    19,\n    29,\n    44,\n    22,\n    55,\n    83\n  ],\n  \"shortcut_images\": [\n    38,\n    19,\n    29,\n    44,\n    22,\n    11,\n    83,\n    125\n  ],\n  \"shortcut_polynomial_residual\": {\n    \"11\": 1,\n    \"25\": -1,\n    \"55\": -1,\n    \"125\": 1\n  },\n  \"finite_Fourier_orders_passed_by_product_witness\": [\n    4,\n    14\n  ],\n  \"full_word\": [\n    1,\n    0,\n    1,\n    1,\n    0,\n    0,\n    1,\n    1\n  ],\n  \"A\": 8,\n  \"p\": 5,\n  \"D\": 13,\n  \"C\": 581,\n  \"C_mod_D\": 9,\n  \"cycle_minimum_inequality_passes\": true,\n  \"candidate_minimum\": 19,\n  \"minimum_upper_bound\": 32,\n  \"rational_cycle\": [\n    \"581/13\",\n    \"878/13\",\n    \"439/13\",\n    \"665/13\",\n    \"1004/13\",\n    \"502/13\",\n    \"251/13\",\n    \"383/13\"\n  ],\n  \"root_of_unity_lifts\": [\n    41,\n    38,\n    19,\n    29,\n    44,\n    46,\n    23,\n    11\n  ],\n  \"lift_images\": [\n    62,\n    19,\n    29,\n    44,\n    22,\n    23,\n    35,\n    17\n  ],\n  \"lift_residue_modulus\": 24,\n  \"lift_polynomial_residual\": {\n    \"11\": -1,\n    \"17\": 1,\n    \"22\": 1,\n    \"35\": 1,\n    \"38\": -1,\n    \"41\": -1,\n    \"46\": -1,\n    \"62\": 1\n  }\n}\n",
+      "stderr": "",
+      "source": "check_cycle_obstructions.py",
+      "finite_control_result": {
+        "status": "exact_obstructions_only_no_Collatz_closure",
+        "distinct_odd_edges": [
+          [
+            25,
+            19,
+            2
+          ],
+          [
+            19,
+            29,
+            1
+          ],
+          [
+            29,
+            11,
+            3
+          ],
+          [
+            55,
+            83,
+            1
+          ],
+          [
+            83,
+            125,
+            1
+          ]
+        ],
+        "source_and_image_product": 62882875,
+        "shortcut_sources": [
+          25,
+          38,
+          19,
+          29,
+          44,
+          22,
+          55,
+          83
+        ],
+        "shortcut_images": [
+          38,
+          19,
+          29,
+          44,
+          22,
+          11,
+          83,
+          125
+        ],
+        "shortcut_polynomial_residual": {
+          "11": 1,
+          "25": -1,
+          "55": -1,
+          "125": 1
+        },
+        "finite_Fourier_orders_passed_by_product_witness": [
+          4,
+          14
+        ],
+        "full_word": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "A": 8,
+        "p": 5,
+        "D": 13,
+        "C": 581,
+        "C_mod_D": 9,
+        "cycle_minimum_inequality_passes": true,
+        "candidate_minimum": 19,
+        "minimum_upper_bound": 32,
+        "rational_cycle": [
+          "581/13",
+          "878/13",
+          "439/13",
+          "665/13",
+          "1004/13",
+          "502/13",
+          "251/13",
+          "383/13"
+        ],
+        "root_of_unity_lifts": [
+          41,
+          38,
+          19,
+          29,
+          44,
+          46,
+          23,
+          11
+        ],
+        "lift_images": [
+          62,
+          19,
+          29,
+          44,
+          22,
+          23,
+          35,
+          17
+        ],
+        "lift_residue_modulus": 24,
+        "lift_polynomial_residual": {
+          "11": -1,
+          "17": 1,
+          "22": 1,
+          "35": 1,
+          "38": -1,
+          "41": -1,
+          "46": -1,
+          "62": 1
+        }
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "check_hardy_flows.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"finite_exact_flow_controls_passed\",\n  \"infinite_theorem_scope\": \"written_proof_not_finite_inference\",\n  \"cases\": [\n    {\n      \"root\": 1,\n      \"lambda\": \"1\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 1.0,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"1\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 117,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 0.25,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"1\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2001,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.015625,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"-1\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 1.0,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"-1\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 117,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 0.25,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"-1\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2001,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.015625,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"33/32\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 2.212682944769991,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"33/32\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 117,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 1.1583898557947099,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 1,\n      \"lambda\": \"33/32\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2001,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.2865941392080349,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"1\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 1.0,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"1\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 111,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 0.25,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"1\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2009,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.015625,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"-1\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 1.0,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"-1\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 111,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 0.25,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"-1\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2009,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.015625,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"33/32\",\n      \"depth\": 1,\n      \"nonzero_coefficients\": 21,\n      \"boundary_coefficients\": 4,\n      \"boundary_l2_squared_approx\": 2.0342233865100776,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"33/32\",\n      \"depth\": 3,\n      \"nonzero_coefficients\": 111,\n      \"boundary_coefficients\": 16,\n      \"boundary_l2_squared_approx\": 0.9671690623918031,\n      \"exact_assertions_passed\": true\n    },\n    {\n      \"root\": 5,\n      \"lambda\": \"33/32\",\n      \"depth\": 7,\n      \"nonzero_coefficients\": 2009,\n      \"boundary_coefficients\": 256,\n      \"boundary_l2_squared_approx\": 0.24257473443433414,\n      \"exact_assertions_passed\": true\n    }\n  ],\n  \"antichain_roots\": [\n    85,\n    53,\n    1109,\n    5909\n  ],\n  \"antichain_truncation_supports_disjoint\": true\n}\n",
+      "stderr": "",
+      "source": "check_hardy_flows.py",
+      "finite_control_result": {
+        "status": "finite_exact_flow_controls_passed",
+        "infinite_theorem_scope": "written_proof_not_finite_inference",
+        "cases": [
+          {
+            "root": 1,
+            "lambda": "1",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 1.0,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "1",
+            "depth": 3,
+            "nonzero_coefficients": 117,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 0.25,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "1",
+            "depth": 7,
+            "nonzero_coefficients": 2001,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.015625,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "-1",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 1.0,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "-1",
+            "depth": 3,
+            "nonzero_coefficients": 117,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 0.25,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "-1",
+            "depth": 7,
+            "nonzero_coefficients": 2001,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.015625,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "33/32",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 2.212682944769991,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "33/32",
+            "depth": 3,
+            "nonzero_coefficients": 117,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 1.1583898557947099,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 1,
+            "lambda": "33/32",
+            "depth": 7,
+            "nonzero_coefficients": 2001,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.2865941392080349,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "1",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 1.0,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "1",
+            "depth": 3,
+            "nonzero_coefficients": 111,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 0.25,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "1",
+            "depth": 7,
+            "nonzero_coefficients": 2009,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.015625,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "-1",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 1.0,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "-1",
+            "depth": 3,
+            "nonzero_coefficients": 111,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 0.25,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "-1",
+            "depth": 7,
+            "nonzero_coefficients": 2009,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.015625,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "33/32",
+            "depth": 1,
+            "nonzero_coefficients": 21,
+            "boundary_coefficients": 4,
+            "boundary_l2_squared_approx": 2.0342233865100776,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "33/32",
+            "depth": 3,
+            "nonzero_coefficients": 111,
+            "boundary_coefficients": 16,
+            "boundary_l2_squared_approx": 0.9671690623918031,
+            "exact_assertions_passed": true
+          },
+          {
+            "root": 5,
+            "lambda": "33/32",
+            "depth": 7,
+            "nonzero_coefficients": 2009,
+            "boundary_coefficients": 256,
+            "boundary_l2_squared_approx": 0.24257473443433414,
+            "exact_assertions_passed": true
+          }
+        ],
+        "antichain_roots": [
+          85,
+          53,
+          1109,
+          5909
+        ],
+        "antichain_truncation_supports_disjoint": true
+      }
+    }
+  ],
+  "success": true,
+  "lean_version": {
+    "argv": [
+      "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+    "stderr": ""
+  },
+  "finished_utc": "2026-11-23T01:14:24.367395+00:00"
+}

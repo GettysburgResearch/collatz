@@ -10,6 +10,20 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### High-variance attacks and the Hardy inverse-tree theorem — 23 November 2026
+
+The [new packet](risk23/README.md) proves that every `|lambda|<2^(1/16)` is
+an eigenvalue of infinite multiplicity for the actual shortcut pushforward
+on unweighted Hardy space, using explicitly generated ordinary predecessors
+in the known basin of 1. Thus its index cannot give a finite cycle count.
+The packet also gives exact total-variation convergence of renormalized
+same-source inverse fibres, then tests the full solenoid-entropy, Fourier
+basin, positive-polynomial and ternary-height closing steps. Two new core
+Lean modules certify the universal inverse branching and the additive
+potential obstruction; their 21 public theorems were audited. The infinite
+analysis remains written mathematics. **No full Collatz proof or new
+universal closing estimate is claimed.**
+
 ### Four direct attacks after the whole-repository refresh — 22 November 2026
 
 The [new closing packet](closing/README.md) takes the full-denominator zero
