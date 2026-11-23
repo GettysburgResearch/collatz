@@ -1,0 +1,35 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "baseline_pr": 185,
+  "baseline_head": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+  "new_proof_inputs": [
+    {
+      "title": "Classical and modular approaches to exponential Diophantine equations I. Fibonacci and Lucas perfect powers",
+      "authors": [
+        "Yann Bugeaud",
+        "Maurice Mignotte",
+        "Samir Siksek"
+      ],
+      "year": 2006,
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n3-p05.pdf",
+      "scope": "Theorem 9.4 real-field two-logarithm specialization, printed page 989; height hypotheses page 988. Used only in quantitative factor growth, not elementary principal survival or unit classification."
+    },
+    {
+      "title": "How little a Collatz predecessor set can gain at its first odd doubling",
+      "author": "Lyapunov Weaver",
+      "version": "rStation Paper202/v1",
+      "date": "2026-11-22",
+      "url": "https://rstation.ai/problems/collatz/papers/202/v1",
+      "manuscript_sha256": "62384ee2c5e3607ee265c8cb2a66c66d8ad3272385c80dc00c560fa016322ab6",
+      "scope": "Source-qualified literature comparison only. External density and passage assumptions are not independently rebuilt or treated as a new Collatz closure."
+    }
+  ],
+  "local_dependencies": "DEPENDENCIES.json and COLLISION_SOURCES.json",
+  "refreshed_source_heads": "SOURCE_SNAPSHOT.json",
+  "refreshed_source_file_hashes": "SOURCE_FILES.json",
+  "grh_used": false,
+  "unproved_obligations": [
+    "Nontrivial primitive complete residual evaluation nondivisibility D_pol not dividing Q_0(3).",
+    "Same-original-source critical collision upper bound on the exact inverse law."
+  ]
+}

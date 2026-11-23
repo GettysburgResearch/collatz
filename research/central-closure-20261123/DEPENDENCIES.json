@@ -1,0 +1,37 @@
+{
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_modules": [
+    {
+      "module": "ResidualWord",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6"
+    },
+    {
+      "module": "DistinctWordBudget",
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54"
+    }
+  ],
+  "local_theorem_dependencies": [],
+  "written_dependencies": [
+    {
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2"
+    },
+    {
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98"
+    },
+    {
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd"
+    }
+  ],
+  "scope": "Two new Mathlib-only modules, 21 public theorem audits. The complete root argument, composition coding, Stirling limits and harmonic-law construction remain written mathematics with explicit dependencies; no unrestricted Collatz or GRH premise is imported."
+}

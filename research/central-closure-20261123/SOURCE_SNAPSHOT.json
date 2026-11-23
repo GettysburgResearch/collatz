@@ -1,0 +1,873 @@
+{
+  "baseline": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+  "sources": [
+    {
+      "pr": 175,
+      "base": "08fe1388ad63c758680b3695249aca319515c47d",
+      "head": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "files": [
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/FILES.json",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "changes": 127,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/INTEGRATION_REVIEWS.md",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "changes": 127,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/LATE_REFRESH.json",
+          "status": "added",
+          "additions": 131,
+          "deletions": 0,
+          "changes": 131,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/REPOSITORY_SNAPSHOT.json",
+          "status": "added",
+          "additions": 1478,
+          "deletions": 0,
+          "changes": 1478,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/REVIEW_FIXED_SOURCE_SHADOW_ENTROPY.md",
+          "status": "added",
+          "additions": 42,
+          "deletions": 0,
+          "changes": 42,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/REVIEW_ZERO_ATOM_CLOSING_ATTEMPT.md",
+          "status": "added",
+          "additions": 55,
+          "deletions": 0,
+          "changes": 55,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/VALIDATION.md",
+          "status": "added",
+          "additions": 87,
+          "deletions": 0,
+          "changes": 87,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/cycle-minimum-import-closure.txt",
+          "status": "added",
+          "additions": 2456,
+          "deletions": 0,
+          "changes": 2456,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/cycle-minimum-source-build.json",
+          "status": "added",
+          "additions": 73,
+          "deletions": 0,
+          "changes": 73,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/entropy-evidence-manifest.json",
+          "status": "added",
+          "additions": 123,
+          "deletions": 0,
+          "changes": 123,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/surplus-repair-control.json",
+          "status": "added",
+          "additions": 426,
+          "deletions": 0,
+          "changes": 426,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/surplus-repair-replay.json",
+          "status": "added",
+          "additions": 15,
+          "deletions": 0,
+          "changes": 15,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-global-closure-20261121/nov22/closing/zero-atom-control.json",
+          "status": "added",
+          "additions": 1005,
+          "deletions": 0,
+          "changes": 1005,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/README.md",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 0,
+          "changes": 14,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/CycleMinimum.lean",
+          "status": "added",
+          "additions": 120,
+          "deletions": 0,
+          "changes": 120,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/CycleMinimumAudit.lean",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "changes": 16,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/FIXED_SOURCE_SHADOW_ENTROPY.md",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0,
+          "changes": 283,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/LATE_LEGAL_DESCENT_COMPARISON.md",
+          "status": "added",
+          "additions": 63,
+          "deletions": 0,
+          "changes": 63,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/NONLOCAL_SURPLUS_REPAIR_ATTEMPT.md",
+          "status": "added",
+          "additions": 269,
+          "deletions": 0,
+          "changes": 269,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/README.md",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0,
+          "changes": 149,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/UNEQUAL_DEPTH_SIBLING_ATTEMPT.md",
+          "status": "added",
+          "additions": 267,
+          "deletions": 0,
+          "changes": 267,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md",
+          "status": "added",
+          "additions": 257,
+          "deletions": 0,
+          "changes": 257,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/build_cycle_minimum.py",
+          "status": "added",
+          "additions": 139,
+          "deletions": 0,
+          "changes": 139,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/check_surplus_repair.py",
+          "status": "added",
+          "additions": 80,
+          "deletions": 0,
+          "changes": 80,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-closure-20261121/closing/zero_atom.py",
+          "status": "added",
+          "additions": 140,
+          "deletions": 0,
+          "changes": 140,
+          "previous_filename": null
+        }
+      ]
+    },
+    {
+      "pr": 176,
+      "base": "00018ce11fa657b5f3fae072e5567a1d93184c2b",
+      "head": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "files": [
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/README.md",
+          "status": "added",
+          "additions": 140,
+          "deletions": 0,
+          "changes": 140,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/REVIEW_EFFECTIVE_RUN_OCCUPATION.md",
+          "status": "added",
+          "additions": 113,
+          "deletions": 0,
+          "changes": 113,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/REVIEW_LOGARITHMIC_DESCENT.md",
+          "status": "added",
+          "additions": 106,
+          "deletions": 0,
+          "changes": 106,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/horizon-control.json",
+          "status": "added",
+          "additions": 139,
+          "deletions": 0,
+          "changes": 139,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/lean-fresh-replay.json",
+          "status": "added",
+          "additions": 110,
+          "deletions": 0,
+          "changes": 110,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-effective-sparse-returns/repository-snapshot.json",
+          "status": "added",
+          "additions": 830,
+          "deletions": 0,
+          "changes": 830,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/README.md",
+          "status": "modified",
+          "additions": 14,
+          "deletions": 2,
+          "changes": 16,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/DEPENDENCIES.json",
+          "status": "added",
+          "additions": 75,
+          "deletions": 0,
+          "changes": 75,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/EFFECTIVE_RUN_OCCUPATION.md",
+          "status": "added",
+          "additions": 347,
+          "deletions": 0,
+          "changes": 347,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/LOGARITHMIC_SPARSE_RETURN_DESCENT.md",
+          "status": "added",
+          "additions": 249,
+          "deletions": 0,
+          "changes": 249,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/README.md",
+          "status": "added",
+          "additions": 168,
+          "deletions": 0,
+          "changes": 168,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/STOPPING_TREE_TRANSPORT_ATTEMPT.md",
+          "status": "added",
+          "additions": 236,
+          "deletions": 0,
+          "changes": 236,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/WHOLE_SOURCE_DEBT_ATTEMPT.md",
+          "status": "added",
+          "additions": 149,
+          "deletions": 0,
+          "changes": 149,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/check_horizon.py",
+          "status": "added",
+          "additions": 92,
+          "deletions": 0,
+          "changes": 92,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/check_returns.py",
+          "status": "added",
+          "additions": 126,
+          "deletions": 0,
+          "changes": 126,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/lean/AuditDyadicCluster.lean",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0,
+          "changes": 31,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-global-resolvent-20261121/overview/returns/lean/Collatz/DyadicCluster.lean",
+          "status": "added",
+          "additions": 338,
+          "deletions": 0,
+          "changes": 338,
+          "previous_filename": null
+        }
+      ]
+    },
+    {
+      "pr": 177,
+      "base": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "head": "0444986571f09f302cb3687b4bba3552600e4119",
+      "files": [
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/README.md",
+          "status": "added",
+          "additions": 96,
+          "deletions": 0,
+          "changes": 96,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/SOURCES.json",
+          "status": "added",
+          "additions": 113,
+          "deletions": 0,
+          "changes": 113,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/checkpoint-fourteen-axioms.txt",
+          "status": "added",
+          "additions": 451,
+          "deletions": 0,
+          "changes": 451,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/checkpoint-fourteen-build.txt",
+          "status": "added",
+          "additions": 10,
+          "deletions": 0,
+          "changes": 10,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/checkpoint-fourteen-strict-BinaryRunClock.txt",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/checkpoint-fourteen-strict-ContextSurgery.txt",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/lean-exact-witness-global-20261121/parallel-closure/checkpoint-fourteen.json",
+          "status": "added",
+          "additions": 175,
+          "deletions": 0,
+          "changes": 175,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/ARITHMETIC_CYCLE_CONTINUATION.md",
+          "status": "added",
+          "additions": 450,
+          "deletions": 0,
+          "changes": 450,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/ENERGY_TRANSPORT_CONTINUATION.md",
+          "status": "added",
+          "additions": 597,
+          "deletions": 0,
+          "changes": 597,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+          "status": "modified",
+          "additions": 40,
+          "deletions": 1,
+          "changes": 41,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/README.md",
+          "status": "modified",
+          "additions": 90,
+          "deletions": 11,
+          "changes": 101,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/WITNESS_CLOSURE_CONTINUATION.md",
+          "status": "added",
+          "additions": 285,
+          "deletions": 0,
+          "changes": 285,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+          "status": "modified",
+          "additions": 39,
+          "deletions": 0,
+          "changes": 39,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/lean/Collatz/BinaryRunClock.lean",
+          "status": "added",
+          "additions": 287,
+          "deletions": 0,
+          "changes": 287,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/lean-exact-witness-global-20261121/lean/Collatz/ContextSurgery.lean",
+          "status": "added",
+          "additions": 244,
+          "deletions": 0,
+          "changes": 244,
+          "previous_filename": null
+        }
+      ]
+    },
+    {
+      "pr": 178,
+      "base": "9d4ae09cd50ccd54036141edc3938d2cabe786fd",
+      "head": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "files": [
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/FILES.json",
+          "status": "added",
+          "additions": 121,
+          "deletions": 0,
+          "changes": 121,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/README.md",
+          "status": "added",
+          "additions": 106,
+          "deletions": 0,
+          "changes": 106,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/REVIEW_SCOPE.json",
+          "status": "added",
+          "additions": 57,
+          "deletions": 0,
+          "changes": 57,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/arithmetic-check.json",
+          "status": "added",
+          "additions": 36,
+          "deletions": 0,
+          "changes": 36,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/lean-audit.log",
+          "status": "added",
+          "additions": 22,
+          "deletions": 0,
+          "changes": 22,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/lean-build.json",
+          "status": "added",
+          "additions": 127,
+          "deletions": 0,
+          "changes": 127,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/lean-compile.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "changes": 0,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-whole-repo-synthesis/pr-description-before.json",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/deep-machinery-20261122/README.md",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 0,
+          "changes": 5,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/README.md",
+          "status": "added",
+          "additions": 276,
+          "deletions": 0,
+          "changes": 276,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/SOURCE_SNAPSHOT.json",
+          "status": "added",
+          "additions": 1533,
+          "deletions": 0,
+          "changes": 1533,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/arithmetic/WHOLE_WORD_MERGER_ATTEMPT.md",
+          "status": "added",
+          "additions": 341,
+          "deletions": 0,
+          "changes": 341,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/arithmetic/check_whole_word_control.py",
+          "status": "added",
+          "additions": 145,
+          "deletions": 0,
+          "changes": 145,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/arithmetic/input-pins.json",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0,
+          "changes": 38,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/arithmetic/whole-word-control.json",
+          "status": "added",
+          "additions": 2125,
+          "deletions": 0,
+          "changes": 2125,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md",
+          "status": "added",
+          "additions": 376,
+          "deletions": 0,
+          "changes": 376,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/EFFECTIVE_PHASE_AND_RUNS.md",
+          "status": "added",
+          "additions": 496,
+          "deletions": 0,
+          "changes": 496,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/ActualPhaseEstimate.lean",
+          "status": "added",
+          "additions": 286,
+          "deletions": 0,
+          "changes": 286,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/AuditActualPhaseEstimate.lean",
+          "status": "added",
+          "additions": 17,
+          "deletions": 0,
+          "changes": 17,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/README.md",
+          "status": "added",
+          "additions": 63,
+          "deletions": 0,
+          "changes": 63,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/build.py",
+          "status": "added",
+          "additions": 128,
+          "deletions": 0,
+          "changes": 128,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/imports.sha256",
+          "status": "added",
+          "additions": 4,
+          "deletions": 0,
+          "changes": 4,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/phase/lean/lean-toolchain",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0,
+          "changes": 1,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/whole-repo-synthesis-20261122/sibling/HIGH_SPIKE_SECTOR.md",
+          "status": "added",
+          "additions": 265,
+          "deletions": 0,
+          "changes": 265,
+          "previous_filename": null
+        }
+      ]
+    },
+    {
+      "pr": 180,
+      "base": "a66a44c9bf058cd7efe1018827ddda9a13297a21",
+      "head": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "files": [
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/FILES.json",
+          "status": "added",
+          "additions": 112,
+          "deletions": 0,
+          "changes": 112,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/REVIEW_SCOPE.json",
+          "status": "added",
+          "additions": 67,
+          "deletions": 0,
+          "changes": 67,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/VERIFICATION.md",
+          "status": "added",
+          "additions": 83,
+          "deletions": 0,
+          "changes": 83,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/lean-build.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0,
+          "changes": 12,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/lean-check.json",
+          "status": "added",
+          "additions": 50,
+          "deletions": 0,
+          "changes": 50,
+          "previous_filename": null
+        },
+        {
+          "filename": "reports/2026-11-22-retained-source-attacks/pr-description-before.json",
+          "status": "added",
+          "additions": 6,
+          "deletions": 0,
+          "changes": 6,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/ANALYTIC_PARAMETER.md",
+          "status": "added",
+          "additions": 264,
+          "deletions": 0,
+          "changes": 264,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/CANONICAL_CHARGE.md",
+          "status": "added",
+          "additions": 410,
+          "deletions": 0,
+          "changes": 410,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/DEPENDENCIES.json",
+          "status": "added",
+          "additions": 8,
+          "deletions": 0,
+          "changes": 8,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/LEGAL_DESCENT.md",
+          "status": "added",
+          "additions": 256,
+          "deletions": 0,
+          "changes": 256,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/LITERATURE.json",
+          "status": "added",
+          "additions": 58,
+          "deletions": 0,
+          "changes": 58,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/README.md",
+          "status": "added",
+          "additions": 170,
+          "deletions": 0,
+          "changes": 170,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/REVIEW_ANALYTIC_PARAMETER.md",
+          "status": "added",
+          "additions": 86,
+          "deletions": 0,
+          "changes": 86,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/REVIEW_CANONICAL_CHARGE.md",
+          "status": "added",
+          "additions": 165,
+          "deletions": 0,
+          "changes": 165,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/REVIEW_LEGAL_DESCENT.md",
+          "status": "added",
+          "additions": 67,
+          "deletions": 0,
+          "changes": 67,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/REVIEW_SIBLING_MASS.md",
+          "status": "added",
+          "additions": 198,
+          "deletions": 0,
+          "changes": 198,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/SIBLING_MASS.md",
+          "status": "added",
+          "additions": 404,
+          "deletions": 0,
+          "changes": 404,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/SOURCES.json",
+          "status": "added",
+          "additions": 970,
+          "deletions": 0,
+          "changes": 970,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/THEOREMS.json",
+          "status": "added",
+          "additions": 14,
+          "deletions": 0,
+          "changes": 14,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/check_lean.py",
+          "status": "added",
+          "additions": 140,
+          "deletions": 0,
+          "changes": 140,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/lean/SurvivalAudit.lean",
+          "status": "added",
+          "additions": 4,
+          "deletions": 0,
+          "changes": 4,
+          "previous_filename": null
+        },
+        {
+          "filename": "research/retained-source-attacks-20261122/lean/SurvivalCurvature.lean",
+          "status": "added",
+          "additions": 89,
+          "deletions": 0,
+          "changes": 89,
+          "previous_filename": null
+        }
+      ]
+    }
+  ],
+  "scope": "Read latest heads before deriving the new principal factor and critical collision statements. Source-qualified inputs retain their original hypotheses; snapshots do not assert whole-branch mathematical validation."
+}

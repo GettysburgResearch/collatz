@@ -1,0 +1,31 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "new_result": "finite composition collision budget and its original-source applications",
+  "baseline_inputs": [
+    {
+      "pr": 185,
+      "head": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "blob": "c430b45adf356b11bd5d4f7aeb7026212ecf4183",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "used_scope": "Sections 1\u20132, especially equations (1), (7a): original harmonic-flow kernel, moving roots and exact ordinary endpoint masses."
+    },
+    {
+      "pr": 185,
+      "head": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "blob": "339b2b728170595a618fe550b0c7a7a14b01033e",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98",
+      "used_scope": "Sections 2\u20134: exact past-word residue projection, sliding-window cost and positive-real telescope."
+    },
+    {
+      "pr": 185,
+      "head": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "blob": "3c935022a2b9b053c689921ac5b51fdb3878c9bb",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "used_scope": "sliding_window_cost_le: pre-existing finite sliding-window arithmetic core; not rebuilt in this child lane."
+    }
+  ],
+  "external_dependency_boundary": "The ordinary harmonic-flow construction retains the dependencies declared in the pinned PR185 source. The composition, original-orbit collision and bounded-height results do not import Paper 150 or Paper 176."
+}
