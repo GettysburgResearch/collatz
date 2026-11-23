@@ -1,9 +1,21 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz and for the requested residue implication.**
+The current checkpoint replaces an unbounded source-witness search by an
+exact finite ordinary boundary, with five new core-Lean theorems and an
+executable all-certificate optimizer. A separate analytic attack classifies
+all finite positive ordinary atomic eigenmeasures of a new inverse-pressure
+operator: its nonzero extreme rays correspond exactly to escaping ordinary
+components. This characterization uses an elementary orbit count, without
+the earlier canonical-envelope or predecessor-population hypotheses.
+The cycle attack proves a discrepancy bound in terms of the actual cycle
+minimum and retains the complete denominator in a bounded integer carry
+system and an M-matrix class. None of these results establishes the remaining
+target entry, eliminates the atomic cone, or excludes every nontrivial cycle.
+
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint proves a binary-run bound for the entire actual
+The preceding checkpoint proves a binary-run bound for the entire actual
 ordinary clock, upgrades the S-unit return theorem to finiteness of sparse
 endpoint pairs, and obtains a uniform occupation bound for both escaping
 orbits and positive cycles. It also determines every finite-Green energy
@@ -31,7 +43,94 @@ These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: ordinary clock, cycle occupation, and Green cutoffs
+## Latest checkpoint: finite source boundary and ordinary atomic pressure
+
+This continuation starts from published head
+`0444986571f09f302cb3687b4bba3552600e4119`. Three parallel attacks pursue
+global witness replacement, actual escape, and unrestricted cycle
+integrality. The newly advanced peer heads are pinned in
+[the checkpoint-fifteen source snapshot](../../reports/lean-exact-witness-global-20261121/high-variance/SOURCES.json).
+
+### Every complete source witness has a finite boundary competitor
+
+For the original odd target `t=2B+1`, `B>2`, any complete capturing source
+certificate can be trimmed at its last ordinary state at least `B`. Its
+retained source satisfies
+
+    B <= S < 2B,     S even,     T^k(S) < B for every k >= 1.
+
+The literal supplied witness pays the trimming: its complete grade drops
+strictly whenever a positive number of clocks is consumed. Thus the
+globally minimum grade and maximum-source tie can be computed from the
+finite graph of states below `B` reaching one without leaving that interval.
+Removing terminal padding leaves one canonical certificate per boundary
+source. Arbitrary input exponents and lengths are covered by the proof.
+
+[`FiniteSourceBoundary.lean`](lean/Collatz/FiniteSourceBoundary.lean) proves
+the last-exit and exact minimum/maximum interfaces.
+[The written proof and record process](HIGH_VARIANCE_WITNESS.md) establish
+the full finite algorithm and its exact plateau/jump laws. The
+[optimizer](finite_source_boundary.py) recovers the global selected sources
+1092 and 2184 for targets 2047 and 3711, checking all 383 finite boundary
+certificates without imposing a gap-four enumeration cap. These controls
+verify the new optimizer; their target/source values were already known.
+The target's return into the certified graph is still unproved.
+
+### A different operator keeps each escaping ordinary component
+
+On ternary units define
+
+    P_s f(q) = sum_legal_e (3/2^e)^s f((2^e*q-1)/3).
+
+[The pressure proof](HIGH_VARIANCE_ESCAPE.md) gives the exact unit-Haar
+multiplier `rho(s)=3^(s-1)/(2^s-1)`, which is strictly below one for
+`1<s<2`. For every escaping ordinary component `E`, however, the same
+operator would have the finite positive eigenmeasure
+
+    mu_E,s = sum_(n in E) (Lambda_infinity(n)/n)^s delta_n,
+    mu_E,s P_s = mu_E,s.
+
+The infinite path product is strictly positive by an elementary actual
+orbit-cylinder count reconstructed in the note. Conversely, any nonzero
+finite positive eigenmeasure concentrated on positive odd units forces
+escape. All such measures are exactly nonnegative sums of the component
+measures above with finite total mass. Each nonzero one is purely atomic and has full
+topological support. No identification with Haar is made.
+
+The same proof evaluates the ordinary Green kernel and its normalized
+limit along the original ray. It proves that its integral against this
+atomic eigenmeasure is infinite even though the measure is finite and
+the Green function is finite at every ordinary atom. The unchanged
+original source accounts for that failure explicitly. A sharp obstruction
+at the negative fixed point also prevents the proposed Lp shortcut.
+Excluding the ordinary atomic cone remains the central missing theorem.
+
+### Cycle averaging and the complete integer carry
+
+[The arithmetic proof](HIGH_VARIANCE_ARITHMETIC.md) averages over all
+cyclic starting positions, allowing test windows longer than the cycle.
+For mean logarithmic correction `eta` and every convergent denominator
+`q` of `log_2 3`, it proves
+
+    phase_discrepancy <= 4/q + 2*q*eta.
+
+Rhin's stated linear-form bound then gives discrepancy at most
+`C*m^(-1/8.616)`, where `m` is the cycle minimum. Corresponding typical
+binary-run and exponential-run-moment bounds follow. The infinite and
+transcendence arguments are written mathematics, not Lean declarations.
+
+For an arbitrary gap word, a bounded integer carry circulation terminates
+at zero exactly when its full rational cycle is a nonnegative integer
+cycle. The M-matrix formulation retains the group of order
+`2^A-3^p` and the distinguished all-ones class. Exact controls show why
+ordinary stability or a general M-matrix theorem does not already decide
+that class. No unrestricted cycle exclusion is claimed.
+
+[Checkpoint-fifteen execution and scoped independent reviews](../../reports/lean-exact-witness-global-20261121/high-variance/)
+record the focused five-theorem Lean audit, unchanged inherited sources,
+new executable controls, and the remaining mathematical obligations.
+
+## Previous checkpoint: ordinary clock, cycle occupation, and Green cutoffs
 
 This continuation starts from the published head
 `e4ca639326bac73da8c2a698dec8a749e5efbe68`. Three parallel attacks pursued

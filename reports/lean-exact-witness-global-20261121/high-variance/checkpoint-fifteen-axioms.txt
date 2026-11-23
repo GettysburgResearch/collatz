@@ -1,0 +1,5 @@
+'CollatzFiniteSourceBoundary.last_exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteSourceBoundary.trim_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteSourceBoundary.minimum_on_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteSourceBoundary.boundary_minimum_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteSourceBoundary.boundary_maximum_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

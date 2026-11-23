@@ -1,0 +1,64 @@
+{
+  "schema": "collatz-subagent-build-transcript/v1",
+  "status": "PASS",
+  "scope": "Transcription of executed tool results; no replay claimed by creating this record.",
+  "runtime": "Lean4.34.1;compiler5045d0056413266e57c625dcd7c365b10e377c52",
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "build",
+        "Collatz.JointMinimalCounterexample"
+      ],
+      "exit_code": 0,
+      "lake_jobs": 21,
+      "cold_built_existing_modules": [
+        "Collatz.ReverseBasin146",
+        "Collatz.Closure",
+        "Collatz.WitnessEnergy",
+        "Collatz.Witness",
+        "Collatz.DirectedInduction",
+        "Collatz.SourceWitness",
+        "Collatz.GapMultiset",
+        "Collatz.HighGapPump",
+        "Collatz.LowGapLoops",
+        "Collatz.LowGapPump",
+        "Collatz.UnboundedGapReset",
+        "Collatz.GapComparison",
+        "Collatz.SignedShadow",
+        "Collatz.BoundedGapCofinal",
+        "Collatz.LowIntervalRefinement",
+        "Collatz.NegativeShadow",
+        "Collatz.SourceOrbitProgress",
+        "Collatz.BoundedFourNormalForm",
+        "Collatz.RootedSourceFloor",
+        "Collatz.JointMinimalCounterexample"
+      ]
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "Collatz.FiniteSourceBoundary"
+      ],
+      "exit_code": 0,
+      "warning": "if_pos deprecation; source subsequently corrected"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Collatz/FiniteSourceBoundary.lean"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "python_controls": [
+    "normal and python -O both exited0",
+    "outputs byte-identical by cmp",
+    "three damaged graph certificates rejected in each mode"
+  ]
+}

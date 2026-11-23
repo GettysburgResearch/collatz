@@ -42,3 +42,4 @@ import Collatz.AffineBlockPrecision
 import Collatz.SegmentFloor
 import Collatz.BinaryRunClock
 import Collatz.ContextSurgery
+import Collatz.FiniteSourceBoundary

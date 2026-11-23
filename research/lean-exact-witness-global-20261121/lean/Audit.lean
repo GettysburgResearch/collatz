@@ -374,3 +374,10 @@ import Collatz
 #print axioms CollatzContextSurgery.unchanged_context_blocks_seed
 #print axioms CollatzContextSurgery.seventy_seven_predecessors
 #print axioms CollatzContextSurgery.all_length_seed_growth_failure
+
+-- Checkpoint fifteen: unrestricted complete certificates reduce to a finite boundary.
+#print axioms CollatzFiniteSourceBoundary.last_exit
+#print axioms CollatzFiniteSourceBoundary.trim_certificate
+#print axioms CollatzFiniteSourceBoundary.minimum_on_boundary
+#print axioms CollatzFiniteSourceBoundary.boundary_minimum_iff
+#print axioms CollatzFiniteSourceBoundary.boundary_maximum_iff
