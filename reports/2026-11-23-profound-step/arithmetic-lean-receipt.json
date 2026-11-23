@@ -1,0 +1,47 @@
+{
+  "date_utc": "2026-11-23T02:34:15.758190+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "module": "TriadicBoundary",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-profound-arithmetic-lean/TriadicBoundary.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean",
+      "source_sha256": "4cd83febdb3161feb7ad56149e794b8fcb29aa278efb3b912577c63766f5265d",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TriadicBoundaryAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-profound-arithmetic-lean/TriadicBoundaryAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean/TriadicBoundaryAudit.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/profound-step-20261123/arithmetic/lean/TriadicBoundaryAudit.lean",
+      "source_sha256": "c9712b42bf5b371e00b4c0aeebb474687eac29f8324e258205786c38dde8f28e",
+      "output_sha256": "9f5cf6ff27225d636241706c814f830b0c862770e5da47a7566dc71df22be3c1"
+    }
+  ],
+  "dependency_objects_reused": true,
+  "scope": "Finite boundary-carry identities, 3-denominator persistence numerator algebra, and the alternating-source residual. No Subspace theorem, infinite convergence, or universal witness construction is formalized.",
+  "status": "PASS",
+  "public_theorem_count": 10,
+  "axiom_union": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorryAx_in_audit": true
+}

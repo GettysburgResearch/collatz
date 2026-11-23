@@ -1,0 +1,242 @@
+{
+  "schema": "collatz-packet-files/v1",
+  "date": "2026-11-23",
+  "base_commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+  "scope": "All files in research/profound-step-20261123 and reports/2026-11-23-profound-step except this manifest. File integrity is not mathematical verification.",
+  "files": [
+    {
+      "path": "reports/2026-11-23-profound-step/README.md",
+      "bytes": 5224,
+      "sha256": "58e1b7e19be919e58bcb45795c5e5b0322d15f54929dfa11eff54c19f1a54ede",
+      "git_blob_sha": "f223b7af0a98e19b3b025a791b7c319666cf681c"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/SOURCE_SNAPSHOT.json",
+      "bytes": 12102,
+      "sha256": "c055b921bcea2c51ea3b1ec6b5db59fc092e6f8db2c296bad8bc98cc8e3ebced",
+      "git_blob_sha": "f6c0a2ffafbc415d444d5e1e6336e5b0cc8171b9"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/archive/PR178_AT_4e204f5.json",
+      "bytes": 12807,
+      "sha256": "6b0e124306faa58a9ac4d81eedb67073391ade144175e1fd32c979d300fff724",
+      "git_blob_sha": "81586e25d9c12eff0e585b8bdbc9ccda20e5103e"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/archive/PR178_BODY_AT_4e204f5.md",
+      "bytes": 12527,
+      "sha256": "ff5f55d6e981311015de27b9b7d781be2b558ea13ce91566a75c1b700a36e986",
+      "git_blob_sha": "39a5534cb6b8549f9b83f26cd3833e399b1f9af4"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-axioms.log",
+      "bytes": 895,
+      "sha256": "9f5cf6ff27225d636241706c814f830b0c862770e5da47a7566dc71df22be3c1",
+      "git_blob_sha": "a1f1b88ea5dbee0359779e710cc5cb6190086f32"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-lean-receipt.json",
+      "bytes": 2221,
+      "sha256": "72fadfe6859bc8b69846544424d0627ce650f9cdaebef0523412ab5a3a229018",
+      "git_blob_sha": "8964718f4881600e6d5ae7fa7443daf6eaf7b233"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-review-axioms.log",
+      "bytes": 895,
+      "sha256": "9f5cf6ff27225d636241706c814f830b0c862770e5da47a7566dc71df22be3c1",
+      "git_blob_sha": "a1f1b88ea5dbee0359779e710cc5cb6190086f32"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-review-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-review-execution.json",
+      "bytes": 4116,
+      "sha256": "c5d3745f700a8eba0ee7834c85df57605d234ef41e6757b34fdb9bec57e776fb",
+      "git_blob_sha": "12b3fa36b629632f9e8d7c5d0ddb76c214109ad9"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-review.md",
+      "bytes": 9672,
+      "sha256": "87f6dba88055038cb47afd42e9b7b6b3084884e933fc2f6a7183e25a09bfd315",
+      "git_blob_sha": "9ca25c970c3d065a6124e16dd5e31ddfa7dcc569"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/arithmetic-sources.json",
+      "bytes": 3258,
+      "sha256": "c9a65f55e5809903a3ad1754b112616441482869c2b32813500f639ebf765032",
+      "git_blob_sha": "5716282663c647e3c80a310fb9d5912ed1cfa804"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/cycles-review.md",
+      "bytes": 7957,
+      "sha256": "e316084cc8f2740503653ab8c80e002c449177a524ee28218fc656b7731c8c10",
+      "git_blob_sha": "b143bf4a26a7be7c77935bb41b298766e29f7c2f"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/cycles-sources.json",
+      "bytes": 3304,
+      "sha256": "f40cff863ac1a0565b94b072b86a920775541c5cbc2d503ebaa54aa16261b31f",
+      "git_blob_sha": "04194355979db0727788d8efc14493970c561f01"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/dynamics-review.md",
+      "bytes": 6329,
+      "sha256": "8e30bb4b90218b30b66f85cae9d76ae8c7a07d66e60e2b39d92dfb7044435971",
+      "git_blob_sha": "ea7a010eccc46e66b4405203807a691dabe0b22d"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/failure-position-review.md",
+      "bytes": 2536,
+      "sha256": "dc1a134ced884876d8ca3872651f26a52454d39342f479de06bf94fa8c858b6d",
+      "git_blob_sha": "767fd6785c57d97bad385024c282ad056dd16d92"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-axioms.log",
+      "bytes": 705,
+      "sha256": "c823563da4d09b739d4bb0389b9bdcfe320dd2e43185f0eeca60df1fb5d007f1",
+      "git_blob_sha": "fcbd6dcd5e3e7b2e0a01355a900ab748cf7f9977"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-lean-receipt.json",
+      "bytes": 3309,
+      "sha256": "c487e587094da13a9bc5ad3514e0b69aa7fc09ad1b00644a40d4f4d7f5e8f665",
+      "git_blob_sha": "6262ee81002a9b8786a42e41ff58ef635c778ea0"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-review-axioms.log",
+      "bytes": 705,
+      "sha256": "c823563da4d09b739d4bb0389b9bdcfe320dd2e43185f0eeca60df1fb5d007f1",
+      "git_blob_sha": "fcbd6dcd5e3e7b2e0a01355a900ab748cf7f9977"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-review-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-review-execution.json",
+      "bytes": 2155,
+      "sha256": "d2a4924447de36b032f529d74421d04df95305f491d9e6ee2ada8326b1951cda",
+      "git_blob_sha": "bb1124be9e6e39800f1bcfe2a0660603eb714317"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-review.md",
+      "bytes": 8588,
+      "sha256": "32bf004e469dd69a87b669f1e8a646736f5d962354a018d9e4b27e5961cc77cc",
+      "git_blob_sha": "ae19ccf7b050be71187ca0ffe12b4a359e9cd9c6"
+    },
+    {
+      "path": "reports/2026-11-23-profound-step/transfer-sources.json",
+      "bytes": 2658,
+      "sha256": "de52f7f19d72fc625f5667f9e2c01301b835ac5bf00b41f3c7980b8527cc66c5",
+      "git_blob_sha": "604caf764308b2fb2d50e62338e3d6976e613ccc"
+    },
+    {
+      "path": "research/profound-step-20261123/README.md",
+      "bytes": 9858,
+      "sha256": "0bbae4002adadad34bc40fc3ffb9f54468e290f03f591202d83801c8ab257294",
+      "git_blob_sha": "7be3e996dd8401b99d690634bd3ee57853a21a7c"
+    },
+    {
+      "path": "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+      "bytes": 5348,
+      "sha256": "28406b5165f1cba6d8317456920654d13f3204846104f289d68e13b1978c825a",
+      "git_blob_sha": "d0bde1a3c4c9d61f65e3ae1aefbf165c602deae8"
+    },
+    {
+      "path": "research/profound-step-20261123/arithmetic/README.md",
+      "bytes": 1251,
+      "sha256": "5a9b08d25578345ba6ceb6f567fe087d395c29108a47d26e0eae0956b6c22b8f",
+      "git_blob_sha": "186f0a9d2fdce66b41ba64b445360e4743b3bad0"
+    },
+    {
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "bytes": 14333,
+      "sha256": "92228f5a376d7c6af08ad256fb14ed1f09e155c9c514c49b94568e9d0dadc093",
+      "git_blob_sha": "f7c43e643036304ff12b01679cc7b0a9d84a0f57"
+    },
+    {
+      "path": "research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean",
+      "bytes": 3584,
+      "sha256": "4cd83febdb3161feb7ad56149e794b8fcb29aa278efb3b912577c63766f5265d",
+      "git_blob_sha": "cae9ae5a1aafb0ec610c27b04283504dfb12bac4"
+    },
+    {
+      "path": "research/profound-step-20261123/arithmetic/lean/TriadicBoundaryAudit.lean",
+      "bytes": 616,
+      "sha256": "c9712b42bf5b371e00b4c0aeebb474687eac29f8324e258205786c38dde8f28e",
+      "git_blob_sha": "970cd9b54279cc3722026ed190732cb9f212595c"
+    },
+    {
+      "path": "research/profound-step-20261123/cycles/README.md",
+      "bytes": 1722,
+      "sha256": "8bf3eaecdb03c9ce9421636b29a77d30a0f5562cf2d1bb780ceb511b53ef9508",
+      "git_blob_sha": "cc66ef579c8fcdef8002113bbef2275f841f7789"
+    },
+    {
+      "path": "research/profound-step-20261123/cycles/UNIT_EQUATION_HEIGHT_ATTACK.md",
+      "bytes": 12169,
+      "sha256": "4d243d3724c9812d450d5a086f118d0025030563d78bc9e8066aa455c027bd36",
+      "git_blob_sha": "ea033b2d9225ab12327d970015327d91aeee5ad8"
+    },
+    {
+      "path": "research/profound-step-20261123/dynamics/COALESCENCE_AND_CRITICAL_COLLISIONS.md",
+      "bytes": 17208,
+      "sha256": "60d0f00f1f6360ae452d0d098bb3f244ae75ef69e130ae005e5466e1e5366acb",
+      "git_blob_sha": "e5616bff76f62a259a6a67741ec00dd3dca59ca9"
+    },
+    {
+      "path": "research/profound-step-20261123/dynamics/README.md",
+      "bytes": 3074,
+      "sha256": "9ce9e7b3cf9fffc0ea11ac164b85650b1beeec690b8e310f3ebafd0e1db7795a",
+      "git_blob_sha": "757f714c51d4dd04d1b9510dd6c341ec9fea02ab"
+    },
+    {
+      "path": "research/profound-step-20261123/dynamics/SOURCES.json",
+      "bytes": 5621,
+      "sha256": "3c6bd22b6991198ec218e42b5e8f34a8da273a6096f9273a492af6774d0076f8",
+      "git_blob_sha": "17cc9a498de939f8e7f22d6398c3b059e421b2ac"
+    },
+    {
+      "path": "research/profound-step-20261123/transfer/README.md",
+      "bytes": 837,
+      "sha256": "3fdbc8b626f43dc85c42fc129b3ad74a6af82969d3d52c0b55e538836e8680a4",
+      "git_blob_sha": "bf3b1752291872373e7b4431986e5d830e1e87c6"
+    },
+    {
+      "path": "research/profound-step-20261123/transfer/REAL_ADIC_TRANSFER_ATTEMPT.md",
+      "bytes": 11049,
+      "sha256": "a45d38f6be88a76209ce72860acffe585a2be3f27c868ab9a75148444de6e2ae",
+      "git_blob_sha": "949b56ee061aa895f741aaf061eb1f9ef3199e79"
+    },
+    {
+      "path": "research/profound-step-20261123/transfer/lean/RealAdicAudit.lean",
+      "bytes": 443,
+      "sha256": "4cb865773037bb680576ac1d8221304a2ad410ae2266fc1ff8d032a85d7271ed",
+      "git_blob_sha": "95c3ac792f147e4dedbc5f4f325fce7f4c7ffb5b"
+    },
+    {
+      "path": "research/profound-step-20261123/transfer/lean/RealAdicControl.lean",
+      "bytes": 3356,
+      "sha256": "47b155e7a049363fe6c8ddf06162726b60fa159fe0be60397d3111db3dbfcfd6",
+      "git_blob_sha": "8478dc802417a163d816e8a00354e11f35d49d54"
+    }
+  ]
+}

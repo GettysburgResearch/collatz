@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-23",
+  "author": "/root",
+  "scope": "Primary source inspection for a q-carry construction attempt and a narrowly stated real/2-adic transfer control. No external theorem is imported as a universal Collatz result.",
+  "primary_sources": [
+    {
+      "authors": "Kenneth G. Monks",
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "publication": "Journal of Integer Sequences 28 (2025)",
+      "locations": "Theorems 2 and 5, Conjecture 6",
+      "access": "Primary article read directly by author and independent reviewer",
+      "use": "Formal conjugacies and polynomial dynamics; the property of conjugacy images of ordinary positive inputs remains conjectural."
+    },
+    {
+      "authors": "G. Christol, T. Kamae, M. Mendes France, G. Rauzy",
+      "title": "Suites algébriques, automates et substitutions",
+      "url": "https://www.numdam.org/article/BSMF_1980__108__401_0.pdf",
+      "publication": "Bulletin de la Société Mathématique de France 108 (1980), 401–419",
+      "locations": "Theorem 1 and coefficient-section arguments in Sections 6–7",
+      "access": "Primary PDF theorem read by author; theorem and coefficient-section proof read by independent reviewer",
+      "use": "Algebraicity requires a finite coefficient automaton; computability alone is not this hypothesis."
+    },
+    {
+      "authors": "Josefina López and Peter Stoll",
+      "title": "The 3x+1 Periodicity Conjecture in R",
+      "url": "https://arxiv.org/html/2101.12747v1",
+      "version": "arXiv:2101.12747v1, 29 January 2021",
+      "locations": "Section 2, equations (15)–(16) and following argument; Section 6, Lemmas 23–26 and proof of Theorem 1",
+      "access": "Primary HTML/PDF argument read directly by author and independent reviewer",
+      "use": "A specific intermediate assertion about existing real Bernstein limits with even reduced denominator is refuted by the packet. The corresponding real/2-adic identification is unavailable. No claim that the final Theorem 1 is false, and no claim about rationality of the constructed 2-adic limit."
+    }
+  ],
+  "new_mathematics": {
+    "written": [
+      "Exact ordinary binary carry identity",
+      "Exact q-adic conjugacy correction series",
+      "Forced real itinerary and convergence of its Bernstein series",
+      "Aperiodicity, odd lower-density bound and odd-denominator unequal-limit variant"
+    ],
+    "lean": "Eight finite recurrence statements; see transfer-lean-receipt.json and independent transfer-review-execution.json"
+  },
+  "review": "transfer-review.md"
+}

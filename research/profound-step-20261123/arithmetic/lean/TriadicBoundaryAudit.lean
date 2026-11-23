@@ -1,0 +1,12 @@
+import TriadicBoundary
+
+#print axioms CollatzTriadicBoundary.original_boundary_recurrence
+#print axioms CollatzTriadicBoundary.dual_boundary_recurrence
+#print axioms CollatzTriadicBoundary.defect_zero_iff
+#print axioms CollatzTriadicBoundary.defect_square
+#print axioms CollatzTriadicBoundary.not_three_dvd_twice
+#print axioms CollatzTriadicBoundary.not_three_dvd_backward_odd
+#print axioms CollatzTriadicBoundary.backward_even_fraction
+#print axioms CollatzTriadicBoundary.backward_odd_fraction
+#print axioms CollatzTriadicBoundary.alternating_carry_closed
+#print axioms CollatzTriadicBoundary.alternating_residual

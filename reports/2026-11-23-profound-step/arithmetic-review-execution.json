@@ -1,0 +1,65 @@
+{
+  "reviewer": "cycle_arithmetic",
+  "date_utc": "2026-11-23T02:38:51.115597+00:00",
+  "status": "PASS",
+  "scope": "Fresh independent compile and ten-theorem axiom audit of the new arithmetic finite core only. Installed Mathlib/package dependency objects reused. No historical proof-corpus replay.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "fresh_output_directory": "/workspace/scratch/56e7a5765d0c/nov23-profound-cycle-review-arithmetic",
+  "lean_path": "/workspace/scratch/56e7a5765d0c/nov23-profound-cycle-review-arithmetic:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "modules": [
+    {
+      "module": "TriadicBoundary",
+      "source": "research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean",
+      "source_sha256_before": "4cd83febdb3161feb7ad56149e794b8fcb29aa278efb3b912577c63766f5265d",
+      "source_sha256_after": "4cd83febdb3161feb7ad56149e794b8fcb29aa278efb3b912577c63766f5265d",
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-profound-cycle-review-arithmetic/TriadicBoundary.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean",
+      "exit_code": 0,
+      "seconds": 2.357,
+      "output_log": "reports/2026-11-23-profound-step/arithmetic-review-compile.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TriadicBoundaryAudit",
+      "source": "research/profound-step-20261123/arithmetic/lean/TriadicBoundaryAudit.lean",
+      "source_sha256_before": "c9712b42bf5b371e00b4c0aeebb474687eac29f8324e258205786c38dde8f28e",
+      "source_sha256_after": "c9712b42bf5b371e00b4c0aeebb474687eac29f8324e258205786c38dde8f28e",
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-profound-cycle-review-arithmetic/TriadicBoundaryAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean/TriadicBoundaryAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/arithmetic/lean",
+      "exit_code": 0,
+      "seconds": 1.748,
+      "output_log": "reports/2026-11-23-profound-step/arithmetic-review-axioms.log",
+      "output_sha256": "9f5cf6ff27225d636241706c814f830b0c862770e5da47a7566dc71df22be3c1"
+    }
+  ],
+  "audited_public_theorems": [
+    "original_boundary_recurrence",
+    "dual_boundary_recurrence",
+    "defect_zero_iff",
+    "defect_square",
+    "not_three_dvd_twice",
+    "not_three_dvd_backward_odd",
+    "backward_even_fraction",
+    "backward_odd_fraction",
+    "alternating_carry_closed",
+    "alternating_residual"
+  ],
+  "public_theorem_count": 10,
+  "only_standard_axioms": true,
+  "source_bytes_unchanged": true
+}

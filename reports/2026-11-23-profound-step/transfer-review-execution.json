@@ -1,0 +1,42 @@
+{
+  "reviewer": "triadic_construction",
+  "date_utc": "2026-11-23T02:38:00.390041+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "fresh_output_directory": "/workspace/scratch/56e7a5765d0c/nov23-arithmetic-transfer-review",
+  "modules": [
+    {
+      "module": "RealAdicControl",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-arithmetic-transfer-review/RealAdicControl.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/transfer/lean/RealAdicControl.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/profound-step-20261123/transfer/lean/RealAdicControl.lean",
+      "source_sha256": "47b155e7a049363fe6c8ddf06162726b60fa159fe0be60397d3111db3dbfcfd6",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RealAdicAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-arithmetic-transfer-review/RealAdicAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_profound_nov23/research/profound-step-20261123/transfer/lean/RealAdicAudit.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/profound-step-20261123/transfer/lean/RealAdicAudit.lean",
+      "source_sha256": "4cb865773037bb680576ac1d8221304a2ad410ae2266fc1ff8d032a85d7271ed",
+      "output_sha256": "c823563da4d09b739d4bb0389b9bdcfe320dd2e43185f0eeca60df1fb5d007f1"
+    }
+  ],
+  "status": "PASS",
+  "dependency_objects_reused": true,
+  "scope": "Independent fresh strict compile of the two transfer modules; eight finite theorems audited. Infinite limits, source comparison and q-carry series are reviewed written mathematics."
+}
