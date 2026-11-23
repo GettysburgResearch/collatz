@@ -1,0 +1,52 @@
+{
+  "date_utc": "2026-11-23",
+  "source_base_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "new_claim_scope": "Written actual-source finite jump bound, late-defect bound, real running-maximum growth gap, boundedness equivalence, and stronger escape-only rate. No universal upper bound or new Lean declaration.",
+  "repository_inputs": [
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "bytes": 14333,
+      "sha256": "92228f5a376d7c6af08ad256fb14ed1f09e155c9c514c49b94568e9d0dadc093",
+      "git_blob_sha1": "f7c43e643036304ff12b01679cc7b0a9d84a0f57",
+      "role": "Direct dependency: boundary stream, complete carries, finite coding interpretation, defect jumps and jump-product identity, equations (4)-(9). Original identities are credited; old Lean module was not rebuilt."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/INFINITE_OPTIMAL_RAY_ATTEMPT.md",
+      "role": "Inspected attempted fixed-source adelic closure; equation (8) is credited as a prior obstruction. Not a dependency of the new real-growth lower bound.",
+      "bytes": 9987,
+      "sha256": "d6e147e27e61d57d7b4fdac74e7cfad70116a1c0fda8b1b50e1764130f7cdf0f",
+      "git_blob_sha1": "0808df3fa851b209b19f29367943e6c531475f3a"
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CARRY_CONSTRUCTION_ATTACK.md",
+      "role": "Inspected current construction state, exact denominator clock, and surviving positive-sector reset cost. Background only; no new universal bound imported.",
+      "bytes": 9954,
+      "sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+      "git_blob_sha1": "5e7b58c1395289676f75241108600ba6f40e5ae9"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "inspected": "Theorem 2.7(b), Section 4.1 proof of divergent rational parity-density bound; Theorem 2.1 and the parity framework.",
+      "use": "Theorem 2.7(b) is used only for the stronger conditional escaping-orbit rate. The finite and all-noncore growth bounds are elementary and do not use it."
+    },
+    {
+      "author": "Kenneth G. Monks",
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "year": 2025,
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "inspected": "Theorems 2 and 5, Conjecture 6, and the proof of Theorem 5.",
+      "use": "Credits the polynomializing map. The explicit parity-series formula and its defect interpretation are reconstructed directly; no finite-support or recurrence premise is supplied."
+    }
+  ],
+  "verification_boundary": "Written proof only. No old mathematical dependency tree or source code corpus was rebuilt. No historical priority claim."
+}

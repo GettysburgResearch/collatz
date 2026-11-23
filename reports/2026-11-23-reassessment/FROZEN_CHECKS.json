@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-11-23T04:40:17.391316+00:00",
+  "parent_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "scope": "Byte-bound review and fresh-build receipt integration only. This is not another proof build or the required clean-checkout repository gate.",
+  "frozen_files_checked": {
+    "research/reassessment-20261123/README.md": "5c276942829192b16c0813daf0ce6e7ae62bd51b984e653fed310dab64b64fc1",
+    "reports/2026-11-23-reassessment/README.md": "869aac209aec153bfda45de9ded736f74eeb7583f87180f1f9046bacfc3907f9",
+    "research/reassessment-20261123/REPOSITORY_REASSESSMENT.md": "4b0966163757ae4ce3e5b0ebf707efa540786415e59a41a9f4aed99c609fc6a9",
+    "research/reassessment-20261123/construction/REAL_GROWTH_GAP.md": "7116b007679deb512b26ee1a8d641184c8733a1850e30b8b6070ad769a7bc5b3",
+    "research/reassessment-20261123/construction/README.md": "973df4262030f4a700c3407b5aff5da97ad06da5e7f3167b048063c29c00f711",
+    "reports/2026-11-23-reassessment/construction-sources.json": "b0bd4e1d5eeca6b80d70e23bad73398fb25c863b9ff98f4032782921a7c7c34b",
+    "reports/2026-11-23-reassessment/construction-review.md": "5406fb5ab545312892bf006e0417b2aa37370723a678aec77166c046256e0a13",
+    "research/reassessment-20261123/cycles/PRIME_POTENTIAL_AND_FULL_CLOSURE.md": "c586053fae8b446f44bd7ac0541daea58056c211f9f6c69cdd05ee2afc137807",
+    "research/reassessment-20261123/cycles/README.md": "b1616ec9578932b7ddaf06e87dbc9058a8e290033db0196cf89b2cb39bbf6f39",
+    "research/reassessment-20261123/cycles/PrimePotentialCirculation.lean": "4db2b6bb3b8b97065f26ccc033d269566d43e0efff002b69695916655fb3002b",
+    "research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean": "e7818ce273d353d16feff1fa55a7ad5ceb6069c168b8fb267e58a4995aa686f8",
+    "reports/2026-11-23-reassessment/cycles-lean-receipt.json": "30d40efc05226e93f699171904b070a24c32802dd405ee74a2a57db4f380a6ff",
+    "reports/2026-11-23-reassessment/cycles-source-ledger.json": "95430b91f6e42a5bed7d8d0a60f79d836dcfedc45d3c84d17e18b37132696724",
+    "reports/2026-11-23-reassessment/cycles-integration-scope-review.md": "2d07f6f5b22e03bf155c0e36f78f4e8dcaa701d27e56323d347e7d08ed06d837",
+    "reports/2026-11-23-reassessment/cycles-final-index-review.md": "435bd589fbdaf258fe600ba8d2ecda7a5ea1bf992a2ae8dd8cc83ca42e7bc2c0",
+    "reports/2026-11-23-reassessment/collision-cycle-review.md": "dc4b6e72b98e35e4452e05d5ef6534dcd0027663b0cd5b8d6a49947cfa922786",
+    "reports/2026-11-23-reassessment/construction-collision-review.md": "fcdce5858426c0dbbeb347b2032d9a6d9299128f1ae54a0bd4d56eebad3f639a",
+    "reports/2026-11-23-reassessment/construction-collision-lean-review.json": "fa9a06fb5c01554e9eac1f2b57ceec4ae96d96020451e7e4891c8f3eac594dfe",
+    "reports/2026-11-23-reassessment/construction-collision-review-freeze.json": "c8e57e4db227f2016048ffdbe09ad89a524fbfb51f10d46eb3483a39166415ff",
+    "research/reassessment-20261123/collision/FINITE_CLOCK_AND_FIXED_SOURCE.md": "45d7be3b4a5b3fbef2d9481120c38de635d3c52f4157856790ba99b20c7a762b",
+    "research/reassessment-20261123/collision/lean/FiniteClock.lean": "dfce17c2af78df947ac865ed47832e3265d077be407cb928ccb68d9c3936c3f4",
+    "research/reassessment-20261123/collision/lean/FiniteClockAudit.lean": "4d8d936a95131018e8bb392c07302aba6cfad62098efd04de53e9e7fa9260918",
+    "reports/2026-11-23-reassessment/collision-axioms.log": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec",
+    "reports/2026-11-23-reassessment/collision-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports/2026-11-23-reassessment/collision-lean-receipt.json": "e4159469ebb2430c183836dc58d2e0f82e35ef6822f0195dbf0adbae9ecf01b6",
+    "reports/2026-11-23-reassessment/collision-sources.json": "c4da4cd0e857d995b767dce81688fddf423d706d40ecd5744a42b94bd6a0e51f",
+    "reports/2026-11-23-reassessment/construction-collision-compile-review.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports/2026-11-23-reassessment/construction-collision-axioms-review.log": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec"
+  },
+  "author_and_independent_receipts": [
+    "collision-lean-receipt.json",
+    "cycles-lean-receipt.json",
+    "construction-collision-lean-review.json",
+    "collision-cycle-lean-review.json"
+  ],
+  "formal_source_hashes_match_both_builds": true,
+  "audited_authored_declarations": {
+    "CollatzReassessment.PrimePotentialCirculation.edge_25_19": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.edge_19_29": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.edge_29_11": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.edge_55_83": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.edge_83_125": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.endpoint_product": [],
+    "CollatzReassessment.PrimePotentialCirculation.ordinary_product_balance": [
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.additive_endpoint_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.additive_edge_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.five_weak_edges_are_flat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.no_global_strict_additive_potential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.PrimePotentialCirculation.fixed_word_hyperbola": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.FiniteClock.floor_along_orbit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReassessment.FiniteClock.finite_normalization_forces_summable_clock": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "declaration_count": 14,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "all_source_declarations_covered": true,
+  "review_binding_checks": {
+    "construction-review.md": [
+      "research/reassessment-20261123/construction/REAL_GROWTH_GAP.md",
+      "research/reassessment-20261123/construction/README.md",
+      "reports/2026-11-23-reassessment/construction-sources.json"
+    ],
+    "construction-collision-review.md": [
+      "research/reassessment-20261123/collision/FINITE_CLOCK_AND_FIXED_SOURCE.md",
+      "research/reassessment-20261123/collision/lean/FiniteClock.lean",
+      "research/reassessment-20261123/collision/lean/FiniteClockAudit.lean"
+    ],
+    "collision-cycle-review.md": [
+      "research/reassessment-20261123/cycles/PRIME_POTENTIAL_AND_FULL_CLOSURE.md",
+      "research/reassessment-20261123/cycles/PrimePotentialCirculation.lean",
+      "research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean"
+    ],
+    "cycles-integration-scope-review.md": [
+      "research/reassessment-20261123/REPOSITORY_REASSESSMENT.md"
+    ],
+    "cycles-final-index-review.md": [
+      "research/reassessment-20261123/README.md",
+      "reports/2026-11-23-reassessment/README.md"
+    ]
+  },
+  "json_and_whitespace_checks": "PASS"
+}

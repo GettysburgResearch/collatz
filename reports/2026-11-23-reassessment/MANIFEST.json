@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "parent_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "scope": "All new reassessment packet/report files except this self-excluding manifest.",
+  "files": [
+    {
+      "path": "reports/2026-11-23-reassessment/FROZEN_CHECKS.json",
+      "bytes": 7381,
+      "sha256": "22bbe1be10d3c0eeba93e5c2b274a12b4d4ba8ddd51dce7f7b5ccec2e549d6bf"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/PR178_PREVIOUS.json",
+      "bytes": 14692,
+      "sha256": "d12365f8454a603f9ef34b34ca6c7458ac3cdcc4b4f27f611174afaf039de95a"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/PR178_PREVIOUS.md",
+      "bytes": 14033,
+      "sha256": "fca67cffbf7cf6e0350aacc6ee3ae5c1c7175c38292fffd76c3d85bfb394d361"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/README.md",
+      "bytes": 4282,
+      "sha256": "869aac209aec153bfda45de9ded736f74eeb7583f87180f1f9046bacfc3907f9"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/REPOSITORY_SNAPSHOT.json",
+      "bytes": 59691,
+      "sha256": "eea3b91469942e426e4e219889badb81e55095f408316822e813d9a482a7fa2a"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-axioms.log",
+      "bytes": 249,
+      "sha256": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-cycle-lean-review.json",
+      "bytes": 4224,
+      "sha256": "5fafe2e1844fe23d1a941e0bad781e855c46fb50dbfc3b51e1de9754605ffbc1"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-cycle-review.md",
+      "bytes": 5639,
+      "sha256": "dc4b6e72b98e35e4452e05d5ef6534dcd0027663b0cd5b8d6a49947cfa922786"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-freeze.json",
+      "bytes": 1742,
+      "sha256": "9c23d5e5043d647457815a458957284884bc934a90eba826e460ad8d8446ead2"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-lean-receipt.json",
+      "bytes": 3199,
+      "sha256": "e4159469ebb2430c183836dc58d2e0f82e35ef6822f0195dbf0adbae9ecf01b6"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-sources.json",
+      "bytes": 4821,
+      "sha256": "c4da4cd0e857d995b767dce81688fddf423d706d40ecd5744a42b94bd6a0e51f"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-axioms-review.log",
+      "bytes": 249,
+      "sha256": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-compile-review.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-lean-review.json",
+      "bytes": 3967,
+      "sha256": "fa9a06fb5c01554e9eac1f2b57ceec4ae96d96020451e7e4891c8f3eac594dfe"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-review-freeze.json",
+      "bytes": 1254,
+      "sha256": "c8e57e4db227f2016048ffdbe09ad89a524fbfb51f10d46eb3483a39166415ff"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-review.md",
+      "bytes": 8971,
+      "sha256": "fcdce5858426c0dbbeb347b2032d9a6d9299128f1ae54a0bd4d56eebad3f639a"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-review.md",
+      "bytes": 5684,
+      "sha256": "5406fb5ab545312892bf006e0417b2aa37370723a678aec77166c046256e0a13"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-sources.json",
+      "bytes": 3194,
+      "sha256": "b0bd4e1d5eeca6b80d70e23bad73398fb25c863b9ff98f4032782921a7c7c34b"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/cycles-final-index-review.md",
+      "bytes": 3138,
+      "sha256": "435bd589fbdaf258fe600ba8d2ecda7a5ea1bf992a2ae8dd8cc83ca42e7bc2c0"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/cycles-integration-scope-review.md",
+      "bytes": 2525,
+      "sha256": "2d07f6f5b22e03bf155c0e36f78f4e8dcaa701d27e56323d347e7d08ed06d837"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/cycles-lean-receipt.json",
+      "bytes": 4293,
+      "sha256": "30d40efc05226e93f699171904b070a24c32802dd405ee74a2a57db4f380a6ff"
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/cycles-source-ledger.json",
+      "bytes": 4578,
+      "sha256": "95430b91f6e42a5bed7d8d0a60f79d836dcfedc45d3c84d17e18b37132696724"
+    },
+    {
+      "path": "research/reassessment-20261123/README.md",
+      "bytes": 9916,
+      "sha256": "5c276942829192b16c0813daf0ce6e7ae62bd51b984e653fed310dab64b64fc1"
+    },
+    {
+      "path": "research/reassessment-20261123/REPOSITORY_REASSESSMENT.md",
+      "bytes": 12322,
+      "sha256": "4b0966163757ae4ce3e5b0ebf707efa540786415e59a41a9f4aed99c609fc6a9"
+    },
+    {
+      "path": "research/reassessment-20261123/collision/FINITE_CLOCK_AND_FIXED_SOURCE.md",
+      "bytes": 14076,
+      "sha256": "45d7be3b4a5b3fbef2d9481120c38de635d3c52f4157856790ba99b20c7a762b"
+    },
+    {
+      "path": "research/reassessment-20261123/collision/lean/FiniteClock.lean",
+      "bytes": 2591,
+      "sha256": "dfce17c2af78df947ac865ed47832e3265d077be407cb928ccb68d9c3936c3f4"
+    },
+    {
+      "path": "research/reassessment-20261123/collision/lean/FiniteClockAudit.lean",
+      "bytes": 173,
+      "sha256": "4d8d936a95131018e8bb392c07302aba6cfad62098efd04de53e9e7fa9260918"
+    },
+    {
+      "path": "research/reassessment-20261123/construction/README.md",
+      "bytes": 1075,
+      "sha256": "973df4262030f4a700c3407b5aff5da97ad06da5e7f3167b048063c29c00f711"
+    },
+    {
+      "path": "research/reassessment-20261123/construction/REAL_GROWTH_GAP.md",
+      "bytes": 8715,
+      "sha256": "7116b007679deb512b26ee1a8d641184c8733a1850e30b8b6070ad769a7bc5b3"
+    },
+    {
+      "path": "research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean",
+      "bytes": 982,
+      "sha256": "e7818ce273d353d16feff1fa55a7ad5ceb6069c168b8fb267e58a4995aa686f8"
+    },
+    {
+      "path": "research/reassessment-20261123/cycles/PRIME_POTENTIAL_AND_FULL_CLOSURE.md",
+      "bytes": 14151,
+      "sha256": "c586053fae8b446f44bd7ac0541daea58056c211f9f6c69cdd05ee2afc137807"
+    },
+    {
+      "path": "research/reassessment-20261123/cycles/PrimePotentialCirculation.lean",
+      "bytes": 4116,
+      "sha256": "4db2b6bb3b8b97065f26ccc033d269566d43e0efff002b69695916655fb3002b"
+    },
+    {
+      "path": "research/reassessment-20261123/cycles/README.md",
+      "bytes": 1039,
+      "sha256": "b1616ec9578932b7ddaf06e87dbc9058a8e290033db0196cf89b2cb39bbf6f39"
+    }
+  ]
+}

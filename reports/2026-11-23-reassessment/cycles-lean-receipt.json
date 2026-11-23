@@ -1,0 +1,50 @@
+{
+  "timestamp_utc": "2026-11-23T04:24:28.349001+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "LEAN_PATH": "/workspace/scratch/56e7a5765d0c/reassessment-cycle-build:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "dependency_objects_reused": true,
+  "source_hashes": {
+    "research/reassessment-20261123/cycles/PrimePotentialCirculation.lean": "4db2b6bb3b8b97065f26ccc033d269566d43e0efff002b69695916655fb3002b",
+    "research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean": "e7818ce273d353d16feff1fa55a7ad5ceb6069c168b8fb267e58a4995aa686f8"
+  },
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-cycle-build/PrimePotentialCirculation.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/cycles/PrimePotentialCirculation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 3.4728784561157227
+    },
+    {
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-cycle-build/AuditPrimePotentialCirculation.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollatzReassessment.PrimePotentialCirculation.edge_25_19' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_19_29' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_29_11' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_55_83' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_83_125' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.endpoint_product' does not depend on any axioms\n'CollatzReassessment.PrimePotentialCirculation.ordinary_product_balance' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.additive_endpoint_balance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.additive_edge_balance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.five_weak_edges_are_flat' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.no_global_strict_additive_potential' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.fixed_word_hyperbola' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": "",
+      "elapsed_seconds": 0.8991456031799316
+    }
+  ],
+  "scope": "Five exact ordinary accelerated edges; endpoint and full product balance; finite additive-potential contradiction; fixed-word hyperbola. No semigroup theorem or unrestricted cycle exclusion is formalized.",
+  "status": "PASS",
+  "public_declaration_count": 12,
+  "axiom_union": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorryAx_in_audit": true
+}

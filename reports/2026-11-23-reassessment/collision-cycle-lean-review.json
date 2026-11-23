@@ -1,0 +1,53 @@
+{
+  "date_utc": "2026-11-23T04:30:48.012061+00:00",
+  "reviewer": "/root/actual_collision",
+  "status": "PASS",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_path": [
+    "/workspace/scratch/56e7a5765d0c/reassessment-cycle-independent-review",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "source": "research/reassessment-20261123/cycles/PrimePotentialCirculation.lean",
+      "source_sha256": "4db2b6bb3b8b97065f26ccc033d269566d43e0efff002b69695916655fb3002b",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-cycle-independent-review/PrimePotentialCirculation.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/cycles/PrimePotentialCirculation.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.198,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean",
+      "source_sha256": "e7818ce273d353d16feff1fa55a7ad5ceb6069c168b8fb267e58a4995aa686f8",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-cycle-independent-review/AuditPrimePotentialCirculation.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/cycles/AuditPrimePotentialCirculation.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.946,
+      "stdout": "'CollatzReassessment.PrimePotentialCirculation.edge_25_19' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_19_29' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_29_11' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_55_83' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.edge_83_125' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.endpoint_product' does not depend on any axioms\n'CollatzReassessment.PrimePotentialCirculation.ordinary_product_balance' depends on axioms: [propext]\n'CollatzReassessment.PrimePotentialCirculation.additive_endpoint_balance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.additive_edge_balance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.five_weak_edges_are_flat' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.no_global_strict_additive_potential' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzReassessment.PrimePotentialCirculation.fixed_word_hyperbola' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Independent strict rebuild of the two frozen finite cycle-circulation modules only; primary semigroup result and its written ordered-group corollaries are not formalized."
+}
