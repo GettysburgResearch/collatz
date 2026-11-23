@@ -1,0 +1,21 @@
+import CycleCancellation
+import TwoSidedPressure
+
+#print axioms Collatz.HighVariance.CycleCancellation.moving_one_carry
+#print axioms Collatz.HighVariance.CycleCancellation.denominator_coprime_two_three
+#print axioms Collatz.HighVariance.CycleCancellation.gcd_after_unit_displacement
+#print axioms Collatz.HighVariance.CycleCancellation.moving_one_gcd
+#print axioms Collatz.HighVariance.CycleCancellation.full_denominator_moving_one_gcd
+#print axioms Collatz.HighVariance.CycleCancellation.adjacent_zero_has_coprime_neighbor
+#print axioms CollatzShell.TwoSidedPressure.path_endpoints
+#print axioms CollatzShell.TwoSidedPressure.path_positive_clock
+#print axioms CollatzShell.TwoSidedPressure.path_balance
+#print axioms CollatzShell.TwoSidedPressure.attained_maximum
+#print axioms CollatzShell.TwoSidedPressure.distinct_powers
+#print axioms CollatzShell.TwoSidedPressure.forward_coefficient
+#print axioms CollatzShell.TwoSidedPressure.inverse_coefficient
+#print axioms CollatzShell.TwoSidedPressure.common_root_two_sided
+#print axioms CollatzShell.TwoSidedPressure.forward_value_growth
+#print axioms CollatzShell.TwoSidedPressure.forward_gap_one
+#print axioms CollatzShell.TwoSidedPressure.no_incoming_gap_one
+#print axioms CollatzShell.TwoSidedPressure.maximum_root_residues

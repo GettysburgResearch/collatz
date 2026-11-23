@@ -1,0 +1,97 @@
+{
+  "checker_sha256": "c4a59a15436cc1ad7139d90ff9079489056815e63b92251ed20ab479b52abd2f",
+  "cycles": {
+    "maximum_length": 12,
+    "counts": {
+      "positive_complete_words": 6411,
+      "moving_letter_identities": 31865,
+      "zero_residue_gcd_transports": 36,
+      "adjacent_disjoint_factor_checks": 16561,
+      "cyclic_cut_separation_checks": 6065,
+      "cyclic_window_injections": 198,
+      "closed_neighborhood_fibres": 3
+    },
+    "nontrivial_adjacent_gcd_examples": [
+      {
+        "word": "001001001",
+        "cut": 1,
+        "D": 485,
+        "gcds": [
+          97,
+          5
+        ]
+      },
+      {
+        "word": "001001001",
+        "cut": 4,
+        "D": 485,
+        "gcds": [
+          97,
+          5
+        ]
+      },
+      {
+        "word": "001001001",
+        "cut": 7,
+        "D": 485,
+        "gcds": [
+          97,
+          5
+        ]
+      }
+    ],
+    "scope": "bounded exact controls; all-word claims use the written and Lean proofs"
+  },
+  "pressure": {
+    "parameter_s": 2,
+    "depth": 24,
+    "source_count": 9,
+    "endpoint_merges_retained": 6,
+    "reference_mass": {
+      "numerator": "7872922536293823443",
+      "denominator": "3744941168406601800"
+    },
+    "loss": {
+      "numerator": "2602319896373076897200044574260302901556306390206659090163217",
+      "denominator": "1238556247915204374670836743308941263922680343413814145843200"
+    },
+    "residual": {
+      "numerator": "18633273351162281750693899775179871941270221",
+      "denominator": "15650040685761751944435361015427888515309895680"
+    },
+    "periodic_visit_deletion_rejected": true,
+    "scope": "exact finite identity; no claim that the infinite residual vanishes"
+  },
+  "source": {
+    "finite_source": 7,
+    "prefixes": [
+      {
+        "odd_depth": 1,
+        "endpoint": 11,
+        "total_gap": 1,
+        "forward_coefficient_above_one": true
+      },
+      {
+        "odd_depth": 2,
+        "endpoint": 17,
+        "total_gap": 2,
+        "forward_coefficient_above_one": true
+      },
+      {
+        "odd_depth": 3,
+        "endpoint": 13,
+        "total_gap": 4,
+        "forward_coefficient_above_one": true
+      },
+      {
+        "odd_depth": 4,
+        "endpoint": 5,
+        "total_gap": 7,
+        "forward_coefficient_above_one": false
+      }
+    ],
+    "root_23_gap_one_source": 15,
+    "root_23_source_is_excluded_nonunit": true,
+    "scope": "these convergent controls are not hypothetical infinite pressure maxima"
+  }
+}

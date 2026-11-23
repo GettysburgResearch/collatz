@@ -1,5 +1,10 @@
 # High-variance attacks: complete cycle divisibility and actual source routing
 
+The later [closing-attempt continuation](../closure-round2-20261123/README.md)
+adds a common ordinary pressure maximum, full numerical cancellation transport,
+and exact original-source pressure-loss accounting. This page preserves the
+earlier checkpoint and its original verification scope.
+
 **23 November 2026. Full Collatz remains open.** This checkpoint pursued three
 closing mechanisms directly: distinguished-ideal cycle exclusion, unbounded
 cheap source surgery, and arithmetic regularity of the actual inverse law.

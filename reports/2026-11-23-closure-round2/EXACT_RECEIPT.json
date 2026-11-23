@@ -1,0 +1,66 @@
+{
+  "finished_utc": "2026-11-23T01:57:04.312623+00:00",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/cycle_cancellation_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.042,
+      "stdout_file": "CYCLE_CONTROLS.json",
+      "stderr": "",
+      "source_sha256": "9c0852fd97edab873eacd24746391c3a788d531e63816c21123e76e2564fe94d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/cycle_cancellation_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.097,
+      "stdout_file": "CYCLE_CONTROLS_OPTIMIZED.json",
+      "stderr": "",
+      "source_sha256": "9c0852fd97edab873eacd24746391c3a788d531e63816c21123e76e2564fe94d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/replay.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.098,
+      "stdout_file": "EXACT_CONTROLS.json",
+      "stderr": "",
+      "source_sha256": "c4a59a15436cc1ad7139d90ff9079489056815e63b92251ed20ab479b52abd2f"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/replay.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.155,
+      "stdout_file": "EXACT_CONTROLS_OPTIMIZED.json",
+      "stderr": "",
+      "source_sha256": "c4a59a15436cc1ad7139d90ff9079489056815e63b92251ed20ab479b52abd2f"
+    }
+  ],
+  "success": true,
+  "normal_and_optimized_equal": true,
+  "scope": "bounded exact controls, not universal Collatz verification"
+}
