@@ -4,7 +4,18 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [ordinary integer fibres and direct closing attacks](overview/integer-boundary/README.md)
+**Latest checkpoint:** [one amortized triadic height budget](overview/triadic-height/README.md)
+proves a finite candidate-to-convergence theorem in Lean, with a literal
+computed horizon and all signed/zero cases included. The new integer
+potential removes the multiplication of candidate numerator height by its
+denominator exponent. Universal candidate construction remains open.
+Parallel direct attacks retain the actual boundary law and complete cycle
+denominator; an exact all-depth ordinary optimizer shows why balanced-word
+extremality cannot be inferred from those optimizer properties. The packet
+includes a standalone finite two-carry construction question, 22 new
+theorem declarations and four definitions, and independent reconstruction.
+
+[Checkpoint 15: ordinary integer fibres and direct closing attacks](overview/integer-boundary/README.md)
 proves a corrected simultaneous real/3-adic integer-value classification,
 with a strictly compiled Lean real-gap bridge. A separate written theorem
 constructs positive weighted-Wiener approximate fixed vectors entirely in

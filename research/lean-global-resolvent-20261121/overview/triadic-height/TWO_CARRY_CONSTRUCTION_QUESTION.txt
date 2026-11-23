@@ -1,0 +1,37 @@
+Two complementary affine carries
+
+For an integer m>=1, let bl(m) be the least positive E with m<2^E.
+For r>=0, put F(r)=product_(0<=j<r)(1+3^j), with F(0)=1.
+
+Question. Prove or refute the following statement.
+
+For every fixed positive integer n, there exist integers K>=1, r>=0,
+a in Z, and a binary word e_0,...,e_(K-1) such that the following hold.
+
+Define two complete ordered carries and a count by
+
+  C_0=D_0=s_0=0,
+  C_(i+1)=3^(e_i) C_i + e_i 2^i,
+  D_(i+1)=3^(1-e_i) D_i + (1-e_i) 2^i,
+  s_(i+1)=s_i+e_i.
+
+Then require simultaneously
+
+  2^K divides 3^(s_K) n + C_K,
+  2^K divides 3^(K-s_K) a + 3^r D_K,
+  K >= 9 bl(n max(1,|a|) F(r)) + 1.
+
+The integer n is fixed before choosing all the other data. A construction
+that changes n with K does not answer the question. The numerator a may
+have either sign or be zero. The second carry must use the same word as
+the first, with the displayed complementary letters and their order.
+
+For any chosen K, the first divisibility condition specifies exactly one
+binary word of length K. It is therefore not legitimate to choose C_K and
+D_K independently. Centered representatives solve the second congruence
+without the final size condition; proving the simultaneous size condition
+is the task. No assertion of uniform distribution is part of the premises.
+
+Return a proof valid for every fixed n, or an exact counterexample with
+proof that it excludes all possible K,r,a. Finite successful examples or
+the decidability of a supplied candidate do not resolve the statement.
