@@ -1,0 +1,198 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "repository": "GettysburgResearch/collatz",
+  "sources": [
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "git_blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "use": "Qualified whole-path law and coherent coordinate",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "git_blob": "a34c0e993ccd190d47235c4285e53d6145660ea2",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "use": "Qualified actual-boundary information dimension under fixed reweighting",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/COLLISION_TRANSFER.md",
+      "git_blob": "9d856db99fd806ca519e072b866dda749c71ec40",
+      "sha256": "4f6494baa8fd85e936e69367c45a27ab774a8a0aa6ee188919e49f44371b7fe9",
+      "use": "Actual collision-law distinction",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/astra-three-routes/pass2/ORBIT_MELLIN.md",
+      "git_blob": "16c943601ce791afb1bbd5f02f3a9ea88ef38520",
+      "sha256": "2f7f3f81c34b15315fd73c5a52b6eb3f9c8ce8595b7ced30c9f9a58a4298415d",
+      "use": "Equal-depth-injective count and Mellin integration",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/deep-machinery-20261122/ARITHMETIC_RIGIDITY.md",
+      "git_blob": "ae0c8789c23bae5900004a190d0cacaa02c0b2e6",
+      "sha256": "488680ca8c09bda1642c6228818a7286ab9de511687191d40b9883cce1450064",
+      "use": "Prior splice and bounded-gap repair restrictions",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "git_blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "use": "Critical collision and running-height comparison",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "git_blob": "c430b45adf356b11bd5d4f7aeb7026212ecf4183",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "use": "Qualified ordinary harmonic flow and actual inverse endpoint law",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "git_blob": "314fce3965adf36775fac9b5f2097c0181e830de",
+      "sha256": "d47a77884d979d99a0580d6d34f1f8ebc1e2e62a92fa3833f8fd3ce06f080cfc",
+      "use": "Ordinary atomic pressure and elementary positive product",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "git_blob": "f3143fc4c63c3eff749ceb2d18ce7326a184a5c1",
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634",
+      "use": "Finite source optimizer and candidate boundary",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/escape/PRESSURE_COLLISION_ATTACK.md",
+      "git_blob": "019aa6a468c40e76720fa786939b076ab2e6ab61",
+      "sha256": "cad066fc49bf987f198e9c1ad3098f05f2575d6f7cb74efa91e1c4483523c8be",
+      "use": "Actual off-diagonal comparison and density cost",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+      "git_blob": "ab60fd248086bd8a2b753ea12a7b41387ea5c2de",
+      "sha256": "e4ad2b13c40b7f8906862143edc8c836def4b8f8c359bfec50d3c94146e2d120",
+      "use": "Finite triadic-dual rank; candidate construction remains open",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/ORDER_CONSTRUCTION_ATTEMPT.md",
+      "git_blob": "c8b1ff140abdb577d391604a0d252c077d349227",
+      "sha256": "89dbbfd7009b869fae54a60ac7cf1db999e05bf809a12bf2614e2096d0a03f0e",
+      "use": "Limits of strictly monotone rule interpretations",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "git_blob": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162",
+      "sha256": "50b9ebe3fe972c4c7fbbdd3697bb36917cc010f85335fb527330f2244c669f76",
+      "use": "Unit-domain common pressure maximum",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/ESCAPE_CLOSURE.md",
+      "git_blob": "364611325bba005a086992d1447bbfbfd2977f80",
+      "sha256": "607228e47b1370435747e1843c3ed7b572ffcf3ef834647c18a1ca98575c57bf",
+      "use": "Full ordinary loss-measure sum; no global closing bound",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/LEAST_FAILURE_SIEVE.md",
+      "git_blob": "6c6805cb075be49f6eeffa863dcb0527ee617706",
+      "sha256": "563d4626e09db89d2f954bf1fb999c878c2070d9bb90ae5974825ce9dddcf451",
+      "use": "Actual least-failure arithmetic, inspected route",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_ONE_SIDED.md",
+      "git_blob": "46060a86fb37728b519ba4763c4ef0ad064ccd2d",
+      "sha256": "c1fac2428a2b8a23fc30fbd19e7a5de32f7f294064683dae3f000c284b2e7c02",
+      "use": "Directed tripling reduction, inspected route",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_SMALLER.md",
+      "git_blob": "d61f955798254eeab3b76e44841133bfade10703",
+      "sha256": "46afeae3ca65195e9602795e228453425442f7ea10492836e58ecb8fd0cc3b92",
+      "use": "Smaller-source tripling reduction, inspected route",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/PRESSURE_WIENER_ATTACK.md",
+      "git_blob": "774142a6f0fb37e49efd138c6753516cb8ce9305",
+      "sha256": "4b73c35aabe57a44d96c08c30a4990ee0aecec64f7e9200738cd20b5b4ea2bcd",
+      "use": "Positive analytic kernel and exact mixed Mahler equation, inspected closing attempt",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/INDEPENDENT_KERNEL_ATTACK.md",
+      "git_blob": "099e82c955b99f6198beffbc7ac37892c497f4cf",
+      "sha256": "fb6479c13b0fd4563259758d4245e18dfd398706c9f6ae3e3f596b6838b8e6d5",
+      "use": "Fixed-envelope coefficient regularity boundary, inspected closing attempt",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/TWO_PLACE_NUMEN_CLASSIFICATION.md",
+      "git_blob": "55c08437d8324f4a64a734b25904d07c2f278f0d",
+      "sha256": "ed208f5ad73cf2f566973d72a5a75b2addfc487973978a4c7cc5e3c7b093d9d7",
+      "use": "Two-place separation and its cycle/nonperiodic scope, inspected boundary route",
+      "scope": "Existing source-qualified inputs retain their original qualifications; a source pin is not a new full proof review."
+    }
+  ],
+  "external_inspections": [
+    {
+      "url": "https://singer.math.ncsu.edu/papers/vshort2-5.pdf",
+      "part": "Theorem 1",
+      "use": "Read exact separate independent-base Mahler hypotheses; not applied to a single mixed equation."
+    },
+    {
+      "url": "https://arxiv.org/html/1909.09733v3",
+      "part": "Finite Dreamcatcher Theorem and stated scope",
+      "use": "Inspected finite-support restriction; no theorem from this source is used in the new deductions."
+    }
+  ]
+}

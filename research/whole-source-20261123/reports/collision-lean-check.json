@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_public_theorem_count": 4,
+  "scope": "Generic entropy-deficit sequence core; original-source probability argument remains written",
+  "fresh_local_output": true,
+  "warnings_as_errors": true,
+  "historical_project_modules_rebuilt": 0,
+  "source_sha256": {
+    "StationaryCollisionGap.lean": "c3e92dce283fac5b5a0b3162b3472990aa244185c41798ee87f905feb690e0b7",
+    "StationaryCollisionGapAudit.lean": "4ff553bcf294050b3caea961227027d55b46a5349c68bb3537f9fe660c6015d4"
+  },
+  "direct_import_sha256": {
+    "Mathlib.Basic.Real.Basic": "b10f715c299e6c3f468e916cad97620e921dc432e31269217954d94191fc7829",
+    "Mathlib.Tactic.Linarith": "0581fd9f80f34d728ad628e7c1fb5a93d36cb9cb48d469fbc797869e83ebe0a6",
+    "Mathlib.Tactic.Positivity": "74549078792cb4bef7b904577b94f0e206912935507b6f2f39eb73b7a15927d6",
+    "Mathlib.Tactic.Ring": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e"
+  },
+  "modules": [
+    {
+      "module": "StationaryCollisionGap",
+      "exit_code": 0,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "StationaryCollisionGapAudit",
+      "exit_code": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audited_declarations": [
+        "CollatzWholeSource.StationaryCollisionGap.block_bound",
+        "CollatzWholeSource.StationaryCollisionGap.deficit_at_all_lengths",
+        "CollatzWholeSource.StationaryCollisionGap.strict_gap_of_block_deficit",
+        "CollatzWholeSource.StationaryCollisionGap.strict_rate_gap"
+      ]
+    }
+  ]
+}

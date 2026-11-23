@@ -1,0 +1,11 @@
+MODULE StationaryCollisionGap.lean
+
+MODULE StationaryCollisionGapAudit.lean
+'CollatzWholeSource.StationaryCollisionGap.block_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWholeSource.StationaryCollisionGap.deficit_at_all_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzWholeSource.StationaryCollisionGap.strict_gap_of_block_deficit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzWholeSource.StationaryCollisionGap.strict_rate_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
