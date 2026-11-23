@@ -1,0 +1,23 @@
+Fix the following six operators on formal power series:
+R1 retains indices 2 or 8 modulo 9;
+R2 retains indices 1 or 4 modulo 9;
+R3 retains indices 2 or 5 modulo 9;
+R4 retains indices 1 or 7 modulo 9;
+R5 retains indices 5 or 8 modulo 9;
+R6 retains indices 4 or 7 modulo 9.
+
+Let H(z)=sum_(n>=1) c_n z^n, where c_n=0 unless gcd(n,6)=1,
+and 0<=c_n<=1/n^2. Suppose, as an identity on |z|<1,
+
+4096 z H(z^3) - z^64 H(z^192)
+ = 9216 (R1 H)(z^2) + 2304 (R2 H)(z^4)
+   + 576 (R3 H)(z^8) + 144 (R4 H)(z^16)
+   + 36 (R5 H)(z^32) + 9 (R6 H)(z^64).
+
+Must H vanish identically? Prove it, or exhibit a nonzero solution.
+
+The equation is a single mixed dilation identity. Do not invoke a theorem
+requiring separate finite equations at scales 2 and 3 without deriving
+those separate equations. Norm coercivity is not supplied as a premise.
+
+This is an open standalone question, not an established theorem.

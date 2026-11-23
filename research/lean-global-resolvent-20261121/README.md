@@ -4,15 +4,25 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [direct high-variance closing attempts](overview/longshot/README.md)
+**Latest checkpoint:** [ordinary integer fibres and direct closing attacks](overview/integer-boundary/README.md)
+proves a corrected simultaneous real/3-adic integer-value classification,
+with a strictly compiled Lean real-gap bridge. A separate written theorem
+constructs positive weighted-Wiener approximate fixed vectors entirely in
+the known basin of one, so norm coercivity cannot exclude the missing
+exact fixed vector. The packet also supplies an all-parameter mandatory-band
+family outlasting its whole shared binary horizon, and a standalone mixed
+analytic uniqueness question. Ten new theorems and three definitions are
+audited. The complete infinite classification and spectral theorem are
+written, internally reconstructed proofs. No new global escape or cycle
+exclusion was obtained.
+
+[Checkpoint 14: direct high-variance closing attempts](overview/longshot/README.md)
 tests a full-denominator affine trace bound, actual-source adelic mixing,
-nonlocal sibling transport, and simultaneous Mahler rigidity. No new
-universal closing estimate was obtained. The packet retains an exact
-identity-atom interface, a concrete unit-residue counterexample to a
-monotonicity step, finite word/slice computations with small independent
-witness verifiers, and standalone research questions. The near-contact
-regeneration rederived during the pass is explicitly attributed to
-checkpoint 8. No new Lean closing theorem or axiom is added.
+nonlocal sibling transport, and simultaneous Mahler rigidity. It retains
+an exact identity-atom interface, a concrete unit-residue counterexample
+to a monotonicity step, finite word/slice computations with small independent
+witness verifiers, and standalone questions. Its global closing estimates
+remain open; near-contact regeneration is attributed to checkpoint 8.
 
 [Checkpoint 13: effective sparse returns and logarithmic descent](overview/returns/README.md)
 prove a source-uniform, effective `O_S(N/log N)` bound on visits to at most
