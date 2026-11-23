@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite controls only; no unknown-cycle census or proof of input (P)",
+  "legal_return_cases": 48,
+  "inverse_lattice_cases": 144,
+  "false_extra_lap_rejections": 10,
+  "fixed_endpoint_example": {
+    "cycle_phase": 1,
+    "endpoint": 4,
+    "one_lap_inverse": "5",
+    "two_lap_inverse": "19/3"
+  },
+  "positive_rational_control": {
+    "original": "319/13",
+    "original_states": [
+      "319/13",
+      "485/13",
+      "734/13",
+      "367/13",
+      "557/13",
+      "842/13",
+      "421/13",
+      "638/13"
+    ],
+    "full_original_denominator": 13,
+    "original_carry": 319,
+    "original_gcd": 1,
+    "companion": "260/229",
+    "full_companion_denominator": 229,
+    "reduced_companion_denominator": 229,
+    "ordinary_and_shifted_product": "256/243"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "repository": "GettysburgResearch/collatz",
+  "inspection_date": "2026-11-23",
+  "scope": "Exact repository dependencies and primary-literature inputs or explicitly limited inspections for this checkpoint.",
+  "sources": [
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "git_blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "use": "Actual stationary gap lift, entropy bound, strict collision gap, and maximum-Shannon iid equality branch",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "git_blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "use": "Conditional-drift real-series classification and correction budget",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "git_blob": "4530ed36c4f3ff6c9cf21149989e97cb94eb1714",
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6",
+      "use": "Source-qualified actual common-boundary law, physical scales, and retained conditional laws",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "git_blob": "c1fed85a4090ade76f73e23efed6548dc2fcff8d",
+      "sha256": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed",
+      "use": "Complete complementary denominator and sign-sensitive cycle controls",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "git_blob": "01a5d159730960894e903cd91e04550b05ba1d64",
+      "sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149",
+      "use": "Actual weighted parity series and finite-window recurrence rigidity; continuation remains missing",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/lean-forward-band-20261121/DIVERGENT_ORBIT_PHASES.md",
+      "git_blob": "4558cd40952420e701688c4c17fb6bba3e887e21",
+      "sha256": "fa24473e5f0b924d5ec81180ee4d4835307ced1257565025bb41c1c4cf9f74db",
+      "use": "Explicit uniform predecessor-density input (P), retained as source-qualified",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/lean-ordinary-closure-20261121/LINEAR_BLOCK_ATOM_FLOOR.md",
+      "git_blob": "1cf40edfd0263a1f4b7f0d683d8cbaf1fcd50fc8",
+      "sha256": "3e3d3c6c6206bf731ffb5da186bfb209e5d837a4f20f73749d6f79ef98dc30e2",
+      "use": "Earlier selected-block derivation and manuscript provenance of (P); not freshly audited here",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "git_blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "use": "Qualified whole-path real boundary and physical-fibre coordinates",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "git_blob": "041d15c84ec5d826b2fdd197a5e9f4424f541e32",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "use": "Canonical trace boundary and original-source overlap interfaces",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/EXACT_CANDIDATE_RIGIDITY.md",
+      "git_blob": "11bb852f9416024ec5b3ac772e5c6f76fd87b92f",
+      "sha256": "3362a3efbefe945b0e4167f9db714d15bdf650df57c031d877105308f53ccee7",
+      "use": "Inspected finite acceptance rigidity; no universal candidate-existence conclusion",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CARRY_CONSTRUCTION_ATTACK.md",
+      "git_blob": "5e7b58c1395289676f75241108600ba6f40e5ae9",
+      "sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+      "use": "Exact actual candidate freedom and its carry-construction boundary",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/INFINITE_OPTIMAL_RAY_ATTEMPT.md",
+      "git_blob": "0808df3fa851b209b19f29367943e6c531475f3a",
+      "sha256": "d6e147e27e61d57d7b4fdac74e7cfad70116a1c0fda8b1b50e1764130f7cdf0f",
+      "use": "Fixed-source adelic tail cost retained",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/PRESSURE_WIENER_ATTACK.md",
+      "git_blob": "774142a6f0fb37e49efd138c6753516cb8ce9305",
+      "sha256": "4b73c35aabe57a44d96c08c30a4990ee0aecec64f7e9200738cd20b5b4ea2bcd",
+      "use": "Compared distinct odd-pressure operator and its closed-range obstruction",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/INDEPENDENT_KERNEL_ATTACK.md",
+      "git_blob": "099e82c955b99f6198beffbc7ac37892c497f4cf",
+      "sha256": "fb6479c13b0fd4563259758d4245e18dfd398706c9f6ae3e3f596b6838b8e6d5",
+      "use": "Compared positive-kernel coefficient-repetition and derivative obstruction",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/FINITE_DUAL_RECOGNITION.md",
+      "git_blob": "7281aa186d1ded9985860741be707533416a3b5f",
+      "sha256": "29a7e0cbfc5ed68479985829b87ae48f15aa7361132b17e8d84e0a422aeb799e",
+      "use": "Inspected finite exact candidate recognition; existence not imported",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "git_blob": "5850899458f9bc2fe402697f9dfc42d2b4af75f2",
+      "sha256": "f9b97f4945e3adeaf7b7eb2d1bfc9e50bb59fb0d166db398c55f2f40011c2f8f",
+      "use": "Inspected all-parameter source-tail padding failure at its own horizon",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "git_blob": "8c69144dd093c2a2be29b2e54d2fbc523272ba9e",
+      "sha256": "c5dc5eb08a9666c7e780db1b9ae599a7d58ad6895172159a4db91458119c16b6",
+      "use": "Ordinary renewal and exact retained endpoint; generator averaging does not replace original time law",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/POSITIVE_CARRY_CLOSURE_ATTEMPT.md",
+      "git_blob": "65adbcd5030b689843a669480b4835e56fbb2154",
+      "sha256": "81a35de37fac925c58fe399fc8644b33e756d55085b74011bdcded1beb6a5a4c",
+      "use": "Complete positive rational control and nearest-neighbor energy limitation",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "git_blob": "39ccf195e42ee17121ff856c45541e70e05d393f",
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "use": "Quantitative same-source inverse/time-law comparison; collision term remains explicit",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "git_blob": "97c3b1342bad9fbc7b9a1cd3a45aff031e1c124d",
+      "sha256": "7bcf9b6dcb275795d5f53f171098614bd30f0b65d0462a3c90b3b9399ee4ef0e",
+      "use": "Full reduced companion denominator lower bound, not an opposite upper bound",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "git_blob": "d5fc4e7a3b5cd8b27cac696ef6561b8b12aa8dfd",
+      "sha256": "f75d052b925c7b1bfbf439bb44c9d2770c1865596cebbd095b7dc4575b82fb92",
+      "use": "Inspected candidate optimization and denominator-height cost",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "git_blob": "2b875987b32ce8ee515c714fa330da77cc6cddde",
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "use": "Finite periodic shadows, source-height payment, and collision/local-statistics distinction",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "git_blob": "c44ba6d3f8ed50f04b531d14befef7355f792390",
+      "sha256": "9ab24369fe171a003ae318db808f1af78e949beeb868765673bcc632d1d78630",
+      "use": "Root-gap congruences and rotation neutrality retain full integer closure",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/TRIADIC_RIGIDITY.md",
+      "git_blob": "70fa89b909782afb36e8994d952e0ce33eb4bfb6",
+      "sha256": "b7f33d95c9b8caac1b1d7457189ad451220198c84f4e89f7af3ed935823fe05b",
+      "use": "Inspected triadic stopping interpretation; no universal successful selector",
+      "scope": "Inherited source qualifications remain in force. Identity and inspection do not constitute a new full proof review."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+      "git_blob": "118af095616dbe5544b39f117fd2f465dac4a10b",
+      "sha256": "eb8a352d3ad072e601637c0d2beff2992317252ff4ca58b830100074a1b17709",
+      "use": "Exact complete-carry decoding and joint quotient-channel injection",
+      "scope": "Arithmetic decoding reconstructed in the new collision note; no cross-box moment bound imported."
+    }
+  ],
+  "external_inspections": [
+    {
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F",
+      "part": "Tao, Proposition 1.14, published primary full text",
+      "use": "Applied uniform fine-scale mixing to the same geometric-2 Syracuse residue law; Haar normalization explicitly reconstructed in FOURIER_BRIDGE Section 3."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1910.03463",
+      "part": "Bremont, Theorem 2.3 in the November 2020 arXiv version",
+      "use": "Applied average-contracting positive-slope Rajchman criterion to real maps x/2 and (3x+1)/2. No decay rate or real absolute continuity asserted."
+    },
+    {
+      "url": "https://arxiv.org/html/2106.11859v9",
+      "part": "Neklyudov, Sections 1 and 4",
+      "use": "Primary operator literature inspected by global-construction author for context; the new weighted sequence-space construction is proved directly."
+    },
+    {
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v180-n2-p07-p.pdf",
+      "part": "Hochman, Theorem 2.7 and self-similar setup",
+      "use": "Inspected by collision author; independent-convolution premise is not supplied for actual dependent endpoint labels, so theorem not imported."
+    },
+    {
+      "url": "https://arxiv.org/html/2003.08117v2",
+      "part": "Eberhard-Varju, Theorem 1.1",
+      "use": "Inspected by collision author; iid innovations and almost-all-moduli bounds are not substituted for the original orbit or all powers of three."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1203.0758",
+      "part": "Steiner-Thuswaldner, Theorem 1 and rational-base examples",
+      "use": "Inspected single expanding-base and standard-digit hypotheses; no self-affine tiling theorem is applied to varying Collatz multipliers."
+    },
+    {
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "part": "Monks-Yazinski, Theorems 2.3-2.5",
+      "use": "Cycle author inspected complementary symmetry and self-conjugate restriction; no general integer-cycle self-conjugacy inferred."
+    },
+    {
+      "url": "https://people.math.ethz.ch/~halorenz/publications/pdf/collatz.pdf",
+      "part": "Halbeisen-Hungerbuehler, finite-word, rotation, and gcd formulas",
+      "use": "Known rational cycle framework inspected; no rotation-rarity factor assumed."
+    },
+    {
+      "url": "https://doi.org/10.1016/j.disc.2025.114812",
+      "part": "Knight, publisher abstract only",
+      "use": "Lead concerning extremal high rational cycles; full text inaccessible, no theorem beyond inspected scope imported."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/22/v1",
+      "part": "Sparse block-sum manuscript, version 1",
+      "use": "Inspected evolving lead, not a closing premise."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/113/v1",
+      "part": "Mechanical-gap manuscript, version 1",
+      "use": "Inspected evolving lead, not a closing premise."
+    }
+  ]
+}

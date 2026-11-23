@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_public_theorem_count": 3,
+  "scope": "Finite weighted collision transport retaining all labels, plus full quotient/residue carry recovery; no infinite collision estimate or universal closure",
+  "fresh_local_output": true,
+  "warnings_as_errors": true,
+  "historical_project_modules_rebuilt": 0,
+  "source_sha256": {
+    "WeightedCollision.lean": "10ca5db21199dec6ac8dd3059c573bd7cd952b8bbbaaf114649975fc4141a3ee",
+    "WeightedCollisionAudit.lean": "0aa063cadeb387fdd3bfd447e1c0eb2389dd56db576a5fe5198da38f72b06048"
+  },
+  "direct_import_sha256": {
+    "Mathlib.Algebra.Order.BigOperators.Ring.Finset": "440f582cbd2e05fb6d2bbafdcc0c8fb45cc5b0b152204d90876f87ebbee3588f",
+    "Mathlib.Data.Fintype.BigOperators": "b9a6354ebff5fcd22fb1ddb7992682a404ec44c8ee42d519177f17d1d5a239e9",
+    "Mathlib.Tactic": "f45622ca1381833c77e9659a0b2ec07e5b667d0d4667cb2a28a58e9540634e85"
+  },
+  "modules": [
+    {
+      "module": "WeightedCollision",
+      "exit_code": 0,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "WeightedCollisionAudit",
+      "exit_code": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audited_declarations": [
+        "CollatzClosing.WeightedCollision.weighted_sum_cauchy",
+        "CollatzClosing.WeightedCollision.labelled_collision_bound",
+        "CollatzClosing.WeightedCollision.complete_carry_recovery"
+      ]
+    }
+  ]
+}

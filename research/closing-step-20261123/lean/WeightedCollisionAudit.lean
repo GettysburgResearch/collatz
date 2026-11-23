@@ -1,0 +1,5 @@
+import WeightedCollision
+
+#print axioms CollatzClosing.WeightedCollision.weighted_sum_cauchy
+#print axioms CollatzClosing.WeightedCollision.labelled_collision_bound
+#print axioms CollatzClosing.WeightedCollision.complete_carry_recovery

@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-closing-step-lean-inventory/v1",
+  "public_theorem_count": 3,
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Only finite weighted Cauchy, label-preserving collision transport, and complete natural carry recovery are formalized.",
+  "modules": [
+    {
+      "source": "research/closing-step-20261123/lean/WeightedCollision.lean",
+      "audit": "research/closing-step-20261123/lean/WeightedCollisionAudit.lean",
+      "namespace": "CollatzClosing.WeightedCollision",
+      "theorems": [
+        "weighted_sum_cauchy",
+        "labelled_collision_bound",
+        "complete_carry_recovery"
+      ],
+      "receipt": "research/closing-step-20261123/reports/weighted-collision-lean-check.json"
+    }
+  ]
+}
