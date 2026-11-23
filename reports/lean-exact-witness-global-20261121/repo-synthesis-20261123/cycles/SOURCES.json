@@ -1,0 +1,101 @@
+{
+  "scope": "Repository orientation and targeted cycle-source reading; no blanket new review and no external analytic theorem imported.",
+  "heads": [
+    {
+      "pr": 175,
+      "sha": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "title": "Collatz: integer residual growth and full-carry transfer"
+    },
+    {
+      "pr": 178,
+      "sha": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+      "title": "Collatz: classify additive potentials and finite-clock obstructions"
+    },
+    {
+      "pr": 180,
+      "sha": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity"
+    },
+    {
+      "pr": 183,
+      "sha": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry"
+    },
+    {
+      "pr": 185,
+      "sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds"
+    }
+  ],
+  "files": [
+    {
+      "pr": 175,
+      "commit": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md",
+      "blob": "5f6395e64980939f4a87de1ae4b658c6190d246b"
+    },
+    {
+      "pr": 175,
+      "commit": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md",
+      "blob": "2f4649f17266342031d37276f091c3d335e29d71"
+    },
+    {
+      "pr": 175,
+      "commit": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md",
+      "blob": "e3ebc88a0da4ddf112a58a45f70bebe304c138ff"
+    },
+    {
+      "pr": 178,
+      "commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+      "path": "research/reassessment-20261123/cycles/PRIME_POTENTIAL_AND_FULL_CLOSURE.md",
+      "blob": "91efe1489630a6a0928203f536cc94596daadcad"
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/POSITIVE_CYCLE.md",
+      "blob": "241e6a9ec402a38b02aad87c501d8c1c0b109a1e"
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/CYCLE_RESOLVENT_BRIDGE.md",
+      "blob": "362d4943e70f76189191f43b14be54defc335d2f"
+    },
+    {
+      "pr": 183,
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "blob": "32e6dcfd7006fdd396d9b581cccff3504cc77d8f"
+    },
+    {
+      "pr": 183,
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/CARRY_COMPRESSION_BRIDGE.md",
+      "blob": "c9d53c19a67dc062c89852359a3f1f8110ecf651"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/RESIDUAL_UNIT_EXCLUSION.md",
+      "blob": "d05f9b9a32beb1efa6cebcad750493af02597040"
+    }
+  ],
+  "resident_scope": [
+    "AGENTS.md",
+    "docs/RESEARCH_MAP.md",
+    "research/integrated/ERRATA.md",
+    "research/integrated/periodic-tails/README.md",
+    "research/integrated/coefficient-stopping/README.md",
+    "research/integrated/factor-complexity/README.md"
+  ],
+  "prior_result": {
+    "pr": 177,
+    "commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+    "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/commutator/UNEQUAL_BLOCK_COMMUTATOR.md",
+    "clause": "Section 5, independent varying-k infinite-dictionary boundary"
+  }
+}
+

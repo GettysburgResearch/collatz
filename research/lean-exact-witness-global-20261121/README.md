@@ -1,23 +1,48 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz, the requested residue-512 implication, and
-`FloorIntervalStep`.** The latest continuation attacks candidate
-construction, ordinary escape, and complete cycle integrality in parallel.
-It gives exact candidate recognition in the numerator's binary length,
-all-period block-language cycle exclusions using the whole denominator,
-an unequal-block dictionary extension, and a complete ordinary inverse-tree
-compiler with its signed cost retained. Twenty-one new core-Lean
-declarations certify the stated finite and all-length specializations.
+`FloorIntervalStep`.** The latest continuation combines ordinary first-hit
+arithmetic with orbit sparsity to prove a power saving for disjoint basin
+minima and critical-root summability of the actual Green ratios. Parallel
+attacks prove all-time descent through an infinite word dictionary and a
+complete finite merger compiler for arbitrary bounded joint edits.
+Fifty-six new Lean declarations certify the displayed ordinary-word,
+compiler, and finite source-accounting statements.
 No successful universal certificate transformer or exclusion of all
 escaping or cyclic components is claimed.
 
 The earlier formal equivalences, unrestricted source-witness reductions,
 finite boundary optimizer, and ordinary atomic eigenmeasure classification
 remain available below. There is no input exponent or witness-length bound,
-`sorry`, or conjectural axiom in the new Lean modules. The project uses
-Lean 4.34.1 with core libraries only.
+`sorry`, or conjectural axiom in the new Lean modules. The new compiler and
+word-language modules use Lean 4.34.1 core/Std; the finite pressure module
+uses the explicitly pinned Mathlib environment.
 
-## Latest checkpoint: numerator recognition and complete block-cycle exclusion
+## Latest checkpoint: sparse basins, infinite-word descent, and joint edits
+
+The [repository-synthesis packet](repo-synthesis-20261123/README.md)
+continues published head `2fbc5706d2caff5d1485247e5291374ff4885041` after
+inventorying all 145 PR records and reading the integrated catalog, errata,
+and selected latest proof interfaces. The new first-hit split proves that
+at most `12 X^(799/800)` disjoint upper-sibling basins have a positive
+ordinary ancestor at height at most X. It counts basins, not the sources
+inside one basin. A sharper separately scoped exponent is approximately
+0.99586542.
+
+This strengthens ordinary pressure to summability of the s-th roots of
+all sibling Green ratios for every s>1, without an external predecessor
+density premise. The other lanes permit independently unbounded repetition
+counts in one all-time integer descent theorem and decide every prescribed
+joint-edit merger budget with no separate clock cutoff. Acceptance consumes
+the complete input tuple and emits a complete target tuple. Universal
+budget existence and the ordinary Green lower comparison remain open.
+
+The [new execution and review report](../../reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/README.md)
+records 56 freshly compiled declarations, four normal/optimized exact
+checkers, and hash-bound internal reconstructions. Infinite real-analysis
+statements retain their written-proof scope.
+
+## Previous checkpoint: numerator recognition and complete block-cycle exclusion
 
 The [new universal-step packet](universal-step-20261123/README.md) starts
 from published head `f47a5ec51aa5853f104013a6d5046d6220ff7423` and refreshes

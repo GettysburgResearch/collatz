@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "cutoff_words": 1012,
+    "literal_steps": 20084,
+    "macro_edges": 750,
+    "ordinary_traces": 250,
+    "paid_integer_edges": 1112,
+    "rejected_controls": 4,
+    "zero_edges": 50
+  },
+  "scope": "exact finite controls; no census proof",
+  "source_sha256": {
+    "INFINITE_DICTIONARY_DESCENT.md": "40f359ad13850a995ed798bd5c6ae8b3bf2257c9f62991d7a004c8441afa597d",
+    "LatticeDescent.lean": "92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339",
+    "check_lattice_descent.py": "be61f95feb6b167d119868a961a3c07c24f9e3939e4486a19b0286c55ff3a5d7"
+  },
+  "status": "PASS"
+}
+

@@ -1,0 +1,2131 @@
+{
+  "binomial_controls": [
+    {
+      "H": 0,
+      "tail_count": 1
+    },
+    {
+      "H": 1,
+      "tail_count": 1
+    },
+    {
+      "H": 2,
+      "tail_count": 1
+    },
+    {
+      "H": 3,
+      "tail_count": 4
+    },
+    {
+      "H": 4,
+      "tail_count": 5
+    },
+    {
+      "H": 5,
+      "tail_count": 6
+    },
+    {
+      "H": 6,
+      "tail_count": 22
+    },
+    {
+      "H": 7,
+      "tail_count": 29
+    },
+    {
+      "H": 8,
+      "tail_count": 93
+    },
+    {
+      "H": 9,
+      "tail_count": 130
+    },
+    {
+      "H": 10,
+      "tail_count": 176
+    },
+    {
+      "H": 11,
+      "tail_count": 562
+    },
+    {
+      "H": 12,
+      "tail_count": 794
+    },
+    {
+      "H": 13,
+      "tail_count": 1093
+    },
+    {
+      "H": 14,
+      "tail_count": 3473
+    },
+    {
+      "H": 15,
+      "tail_count": 4944
+    },
+    {
+      "H": 16,
+      "tail_count": 14893
+    },
+    {
+      "H": 17,
+      "tail_count": 21778
+    },
+    {
+      "H": 18,
+      "tail_count": 31180
+    },
+    {
+      "H": 19,
+      "tail_count": 94184
+    },
+    {
+      "H": 20,
+      "tail_count": 137980
+    },
+    {
+      "H": 21,
+      "tail_count": 198440
+    },
+    {
+      "H": 22,
+      "tail_count": 600370
+    },
+    {
+      "H": 23,
+      "tail_count": 880970
+    },
+    {
+      "H": 24,
+      "tail_count": 2579130
+    },
+    {
+      "H": 25,
+      "tail_count": 3850756
+    },
+    {
+      "H": 26,
+      "tail_count": 5658537
+    },
+    {
+      "H": 27,
+      "tail_count": 16628809
+    },
+    {
+      "H": 28,
+      "tail_count": 24821333
+    },
+    {
+      "H": 29,
+      "tail_count": 36519556
+    },
+    {
+      "H": 30,
+      "tail_count": 107636402
+    },
+    {
+      "H": 31,
+      "tail_count": 160645504
+    },
+    {
+      "H": 32,
+      "tail_count": 462411533
+    },
+    {
+      "H": 33,
+      "tail_count": 699030226
+    },
+    {
+      "H": 34,
+      "tail_count": 1043243132
+    },
+    {
+      "H": 35,
+      "tail_count": 3014470024
+    },
+    {
+      "H": 36,
+      "tail_count": 4552602248
+    },
+    {
+      "H": 37,
+      "tail_count": 6794414896
+    },
+    {
+      "H": 38,
+      "tail_count": 19695916592
+    },
+    {
+      "H": 39,
+      "tail_count": 29722279084
+    },
+    {
+      "H": 40,
+      "tail_count": 84585398828
+    },
+    {
+      "H": 41,
+      "tail_count": 128945452600
+    },
+    {
+      "H": 42,
+      "tail_count": 194458630304
+    },
+    {
+      "H": 43,
+      "tail_count": 555426982210
+    },
+    {
+      "H": 44,
+      "tail_count": 845671815202
+    },
+    {
+      "H": 45,
+      "tail_count": 1274628824490
+    },
+    {
+      "H": 46,
+      "tail_count": 3652326252870
+    },
+    {
+      "H": 47,
+      "tail_count": 5554957478880
+    },
+    {
+      "H": 48,
+      "tail_count": 15678563083450
+    },
+    {
+      "H": 49,
+      "tail_count": 24047289165796
+    },
+    {
+      "H": 50,
+      "tail_count": 36540319845976
+    },
+    {
+      "H": 51,
+      "tail_count": 103486583075152
+    },
+    {
+      "H": 52,
+      "tail_count": 158513693883329
+    },
+    {
+      "H": 53,
+      "tail_count": 240667007224758
+    },
+    {
+      "H": 54,
+      "tail_count": 683689022885551
+    },
+    {
+      "H": 55,
+      "tail_count": 1045990679431517
+    },
+    {
+      "H": 56,
+      "tail_count": 2933710175466709
+    },
+    {
+      "H": 57,
+      "tail_count": 4520654244367538
+    },
+    {
+      "H": 58,
+      "tail_count": 6908928820005766
+    },
+    {
+      "H": 59,
+      "tail_count": 19439585857570622
+    },
+    {
+      "H": 60,
+      "tail_count": 29914794287141614
+    },
+    {
+      "H": 61,
+      "tail_count": 45675308424810128
+    },
+    {
+      "H": 62,
+      "tail_count": 128890229419961956
+    },
+    {
+      "H": 63,
+      "tail_count": 198102100394765312
+    },
+    {
+      "H": 64,
+      "tail_count": 552859891708071949
+    }
+  ],
+  "counts": {
+    "binomial_horizons": 65,
+    "complete_affine_carries": 40960,
+    "exact_minima_at_or_below_limit": 9,
+    "exact_parity_cylinders": 2047,
+    "incomparable_roots": 18,
+    "rejected_controls": 4,
+    "split_cases": 140,
+    "strict_minimum_first_hit_checks": 170,
+    "subcritical_nondescent_small_source_cases": 19
+  },
+  "finite_ordinary_ray": [
+    65,
+    49,
+    37,
+    7,
+    11,
+    17,
+    13,
+    5,
+    1
+  ],
+  "first_hit_split": [
+    {
+      "H": 0,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 6,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 8,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 12,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 16,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 20,
+      "X": 1,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 0,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 2,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 2,
+      "actual_nondescent_sources": 1,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 6,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 8,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 12,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 2
+    },
+    {
+      "H": 16,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 20,
+      "X": 2,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 0,
+      "X": 3,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 3,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 6,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 8,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 12,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 3
+    },
+    {
+      "H": 16,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 7
+    },
+    {
+      "H": 20,
+      "X": 3,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 0,
+      "X": 4,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 4,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 6,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 8,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 12,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 3
+    },
+    {
+      "H": 16,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 8
+    },
+    {
+      "H": 20,
+      "X": 4,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 0,
+      "X": 8,
+      "actual_nondescent_sources": 8,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 8,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 8,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 8,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 8,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 6,
+      "X": 8,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 8,
+      "X": 8,
+      "actual_nondescent_sources": 3,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 12,
+      "X": 8,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 16,
+      "X": 8,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 20,
+      "X": 8,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 11
+    },
+    {
+      "H": 0,
+      "X": 16,
+      "actual_nondescent_sources": 16,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 16,
+      "actual_nondescent_sources": 8,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 16,
+      "actual_nondescent_sources": 6,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 16,
+      "actual_nondescent_sources": 8,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 4,
+      "X": 16,
+      "actual_nondescent_sources": 7,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 6,
+      "X": 16,
+      "actual_nondescent_sources": 6,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 8,
+      "X": 16,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 2
+    },
+    {
+      "H": 12,
+      "X": 16,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 16,
+      "X": 16,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 20,
+      "X": 16,
+      "actual_nondescent_sources": 2,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 14
+    },
+    {
+      "H": 0,
+      "X": 32,
+      "actual_nondescent_sources": 32,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 32,
+      "actual_nondescent_sources": 16,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 2,
+      "X": 32,
+      "actual_nondescent_sources": 10,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 3,
+      "X": 32,
+      "actual_nondescent_sources": 16,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 4,
+      "X": 32,
+      "actual_nondescent_sources": 12,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 6,
+      "X": 32,
+      "actual_nondescent_sources": 11,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 2
+    },
+    {
+      "H": 8,
+      "X": 32,
+      "actual_nondescent_sources": 9,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 4
+    },
+    {
+      "H": 12,
+      "X": 32,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 9
+    },
+    {
+      "H": 16,
+      "X": 32,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 20,
+      "X": 32,
+      "actual_nondescent_sources": 4,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 15
+    },
+    {
+      "H": 0,
+      "X": 64,
+      "actual_nondescent_sources": 64,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 0
+    },
+    {
+      "H": 1,
+      "X": 64,
+      "actual_nondescent_sources": 32,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 2,
+      "X": 64,
+      "actual_nondescent_sources": 18,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 3,
+      "X": 64,
+      "actual_nondescent_sources": 32,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 4,
+      "X": 64,
+      "actual_nondescent_sources": 22,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 1
+    },
+    {
+      "H": 6,
+      "X": 64,
+      "actual_nondescent_sources": 24,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 4
+    },
+    {
+      "H": 8,
+      "X": 64,
+      "actual_nondescent_sources": 15,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 12,
+      "X": 64,
+      "actual_nondescent_sources": 10,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 16,
+      "X": 64,
+      "actual_nondescent_sources": 10,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 12
+    },
+    {
+      "H": 20,
+      "X": 64,
+      "actual_nondescent_sources": 10,
+      "exact_low_minima": 0,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 0,
+      "small_roots": 17
+    },
+    {
+      "H": 0,
+      "X": 128,
+      "actual_nondescent_sources": 128,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 1,
+      "small_roots": 1
+    },
+    {
+      "H": 1,
+      "X": 128,
+      "actual_nondescent_sources": 64,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 1,
+      "small_roots": 1
+    },
+    {
+      "H": 2,
+      "X": 128,
+      "actual_nondescent_sources": 34,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 1,
+      "small_roots": 1
+    },
+    {
+      "H": 3,
+      "X": 128,
+      "actual_nondescent_sources": 64,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 1,
+      "small_roots": 2
+    },
+    {
+      "H": 4,
+      "X": 128,
+      "actual_nondescent_sources": 42,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 1,
+      "small_roots": 3
+    },
+    {
+      "H": 6,
+      "X": 128,
+      "actual_nondescent_sources": 46,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 0,
+      "small_roots": 6
+    },
+    {
+      "H": 8,
+      "X": 128,
+      "actual_nondescent_sources": 24,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 0,
+      "small_roots": 8
+    },
+    {
+      "H": 12,
+      "X": 128,
+      "actual_nondescent_sources": 29,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 16,
+      "X": 128,
+      "actual_nondescent_sources": 24,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 0,
+      "small_roots": 15
+    },
+    {
+      "H": 20,
+      "X": 128,
+      "actual_nondescent_sources": 28,
+      "exact_low_minima": 1,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 0,
+      "X": 256,
+      "actual_nondescent_sources": 256,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 2,
+      "small_roots": 1
+    },
+    {
+      "H": 1,
+      "X": 256,
+      "actual_nondescent_sources": 128,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 2,
+      "small_roots": 2
+    },
+    {
+      "H": 2,
+      "X": 256,
+      "actual_nondescent_sources": 66,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 2,
+      "small_roots": 3
+    },
+    {
+      "H": 3,
+      "X": 256,
+      "actual_nondescent_sources": 128,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 2,
+      "small_roots": 5
+    },
+    {
+      "H": 4,
+      "X": 256,
+      "actual_nondescent_sources": 82,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 2,
+      "small_roots": 6
+    },
+    {
+      "H": 6,
+      "X": 256,
+      "actual_nondescent_sources": 90,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 0,
+      "small_roots": 7
+    },
+    {
+      "H": 8,
+      "X": 256,
+      "actual_nondescent_sources": 44,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 12,
+      "X": 256,
+      "actual_nondescent_sources": 61,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 0,
+      "small_roots": 12
+    },
+    {
+      "H": 16,
+      "X": 256,
+      "actual_nondescent_sources": 43,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 0,
+      "small_roots": 16
+    },
+    {
+      "H": 20,
+      "X": 256,
+      "actual_nondescent_sources": 67,
+      "exact_low_minima": 2,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 0,
+      "X": 512,
+      "actual_nondescent_sources": 512,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 4,
+      "small_roots": 3
+    },
+    {
+      "H": 1,
+      "X": 512,
+      "actual_nondescent_sources": 256,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 4,
+      "small_roots": 4
+    },
+    {
+      "H": 2,
+      "X": 512,
+      "actual_nondescent_sources": 130,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 3,
+      "small_roots": 6
+    },
+    {
+      "H": 3,
+      "X": 512,
+      "actual_nondescent_sources": 256,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 1,
+      "minimum_nondescent_part": 3,
+      "small_roots": 6
+    },
+    {
+      "H": 4,
+      "X": 512,
+      "actual_nondescent_sources": 162,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 2,
+      "small_roots": 7
+    },
+    {
+      "H": 6,
+      "X": 512,
+      "actual_nondescent_sources": 178,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 4,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 8,
+      "X": 512,
+      "actual_nondescent_sources": 81,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 4,
+      "minimum_nondescent_part": 0,
+      "small_roots": 10
+    },
+    {
+      "H": 12,
+      "X": 512,
+      "actual_nondescent_sources": 112,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 4,
+      "minimum_nondescent_part": 0,
+      "small_roots": 14
+    },
+    {
+      "H": 16,
+      "X": 512,
+      "actual_nondescent_sources": 68,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 4,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 20,
+      "X": 512,
+      "actual_nondescent_sources": 112,
+      "exact_low_minima": 4,
+      "minimum_early_hit_part": 4,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 0,
+      "X": 1024,
+      "actual_nondescent_sources": 1024,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 7,
+      "small_roots": 5
+    },
+    {
+      "H": 1,
+      "X": 1024,
+      "actual_nondescent_sources": 512,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 7,
+      "small_roots": 6
+    },
+    {
+      "H": 2,
+      "X": 1024,
+      "actual_nondescent_sources": 258,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 5,
+      "small_roots": 6
+    },
+    {
+      "H": 3,
+      "X": 1024,
+      "actual_nondescent_sources": 512,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 5,
+      "small_roots": 8
+    },
+    {
+      "H": 4,
+      "X": 1024,
+      "actual_nondescent_sources": 322,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 3,
+      "minimum_nondescent_part": 4,
+      "small_roots": 9
+    },
+    {
+      "H": 6,
+      "X": 1024,
+      "actual_nondescent_sources": 354,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 5,
+      "minimum_nondescent_part": 2,
+      "small_roots": 10
+    },
+    {
+      "H": 8,
+      "X": 1024,
+      "actual_nondescent_sources": 155,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 6,
+      "minimum_nondescent_part": 1,
+      "small_roots": 11
+    },
+    {
+      "H": 12,
+      "X": 1024,
+      "actual_nondescent_sources": 210,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 15
+    },
+    {
+      "H": 16,
+      "X": 1024,
+      "actual_nondescent_sources": 120,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 20,
+      "X": 1024,
+      "actual_nondescent_sources": 170,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 0,
+      "X": 2048,
+      "actual_nondescent_sources": 2048,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 7,
+      "small_roots": 6
+    },
+    {
+      "H": 1,
+      "X": 2048,
+      "actual_nondescent_sources": 1024,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 7,
+      "small_roots": 7
+    },
+    {
+      "H": 2,
+      "X": 2048,
+      "actual_nondescent_sources": 514,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 5,
+      "small_roots": 9
+    },
+    {
+      "H": 3,
+      "X": 2048,
+      "actual_nondescent_sources": 1024,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 2,
+      "minimum_nondescent_part": 5,
+      "small_roots": 10
+    },
+    {
+      "H": 4,
+      "X": 2048,
+      "actual_nondescent_sources": 642,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 3,
+      "minimum_nondescent_part": 4,
+      "small_roots": 10
+    },
+    {
+      "H": 6,
+      "X": 2048,
+      "actual_nondescent_sources": 706,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 5,
+      "minimum_nondescent_part": 2,
+      "small_roots": 11
+    },
+    {
+      "H": 8,
+      "X": 2048,
+      "actual_nondescent_sources": 303,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 6,
+      "minimum_nondescent_part": 1,
+      "small_roots": 13
+    },
+    {
+      "H": 12,
+      "X": 2048,
+      "actual_nondescent_sources": 409,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 17
+    },
+    {
+      "H": 16,
+      "X": 2048,
+      "actual_nondescent_sources": 223,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 20,
+      "X": 2048,
+      "actual_nondescent_sources": 294,
+      "exact_low_minima": 7,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 0,
+      "X": 4096,
+      "actual_nondescent_sources": 4096,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 9,
+      "small_roots": 8
+    },
+    {
+      "H": 1,
+      "X": 4096,
+      "actual_nondescent_sources": 2048,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 0,
+      "minimum_nondescent_part": 9,
+      "small_roots": 10
+    },
+    {
+      "H": 2,
+      "X": 4096,
+      "actual_nondescent_sources": 1026,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 3,
+      "minimum_nondescent_part": 6,
+      "small_roots": 10
+    },
+    {
+      "H": 3,
+      "X": 4096,
+      "actual_nondescent_sources": 2048,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 3,
+      "minimum_nondescent_part": 6,
+      "small_roots": 10
+    },
+    {
+      "H": 4,
+      "X": 4096,
+      "actual_nondescent_sources": 1282,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 5,
+      "minimum_nondescent_part": 4,
+      "small_roots": 10
+    },
+    {
+      "H": 6,
+      "X": 4096,
+      "actual_nondescent_sources": 1410,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 7,
+      "minimum_nondescent_part": 2,
+      "small_roots": 13
+    },
+    {
+      "H": 8,
+      "X": 4096,
+      "actual_nondescent_sources": 599,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 8,
+      "minimum_nondescent_part": 1,
+      "small_roots": 15
+    },
+    {
+      "H": 12,
+      "X": 4096,
+      "actual_nondescent_sources": 796,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 9,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 16,
+      "X": 4096,
+      "actual_nondescent_sources": 439,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 9,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    },
+    {
+      "H": 20,
+      "X": 4096,
+      "actual_nondescent_sources": 540,
+      "exact_low_minima": 9,
+      "minimum_early_hit_part": 9,
+      "minimum_nondescent_part": 0,
+      "small_roots": 18
+    }
+  ],
+  "maximum_observed_first_hit_one_clock": 150,
+  "rejected_controls": [
+    "a root and its actual odd successor are comparable",
+    "150 hits 85 but is not its basin minimum; descent precedes its root hit",
+    "2 descends but has no hit of the specified root85",
+    "tampered complete affine carry"
+  ],
+  "roots": [
+    {
+      "base": 65,
+      "complete_root_path": [
+        4181,
+        6272,
+        3136,
+        1568,
+        784,
+        392,
+        196,
+        98,
+        49,
+        74,
+        37,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 1,
+      "minimum_if_at_most_limit": 2787,
+      "odd_successor": 49,
+      "ray_index": 0,
+      "root": 4181,
+      "sibling_depth": 1
+    },
+    {
+      "base": 65,
+      "complete_root_path": [
+        267605,
+        401408,
+        200704,
+        100352,
+        50176,
+        25088,
+        12544,
+        6272,
+        3136,
+        1568,
+        784,
+        392,
+        196,
+        98,
+        49,
+        74,
+        37,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 49,
+      "ray_index": 0,
+      "root": 267605,
+      "sibling_depth": 2
+    },
+    {
+      "base": 49,
+      "complete_root_path": [
+        3157,
+        4736,
+        2368,
+        1184,
+        592,
+        296,
+        148,
+        74,
+        37,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 0,
+      "minimum_if_at_most_limit": 3157,
+      "odd_successor": 37,
+      "ray_index": 1,
+      "root": 3157,
+      "sibling_depth": 1
+    },
+    {
+      "base": 49,
+      "complete_root_path": [
+        202069,
+        303104,
+        151552,
+        75776,
+        37888,
+        18944,
+        9472,
+        4736,
+        2368,
+        1184,
+        592,
+        296,
+        148,
+        74,
+        37,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 37,
+      "ray_index": 1,
+      "root": 202069,
+      "sibling_depth": 2
+    },
+    {
+      "base": 37,
+      "complete_root_path": [
+        2389,
+        3584,
+        1792,
+        896,
+        448,
+        224,
+        112,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 5,
+      "minimum_if_at_most_limit": 943,
+      "odd_successor": 7,
+      "ray_index": 2,
+      "root": 2389,
+      "sibling_depth": 1
+    },
+    {
+      "base": 37,
+      "complete_root_path": [
+        152917,
+        229376,
+        114688,
+        57344,
+        28672,
+        14336,
+        7168,
+        3584,
+        1792,
+        896,
+        448,
+        224,
+        112,
+        56,
+        28,
+        14,
+        7,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 7,
+      "ray_index": 2,
+      "root": 152917,
+      "sibling_depth": 2
+    },
+    {
+      "base": 7,
+      "complete_root_path": [
+        469,
+        704,
+        352,
+        176,
+        88,
+        44,
+        22,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 0,
+      "minimum_if_at_most_limit": 469,
+      "odd_successor": 11,
+      "ray_index": 3,
+      "root": 469,
+      "sibling_depth": 1
+    },
+    {
+      "base": 7,
+      "complete_root_path": [
+        30037,
+        45056,
+        22528,
+        11264,
+        5632,
+        2816,
+        1408,
+        704,
+        352,
+        176,
+        88,
+        44,
+        22,
+        11,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 11,
+      "ray_index": 3,
+      "root": 30037,
+      "sibling_depth": 2
+    },
+    {
+      "base": 11,
+      "complete_root_path": [
+        725,
+        1088,
+        544,
+        272,
+        136,
+        68,
+        34,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 1,
+      "minimum_if_at_most_limit": 483,
+      "odd_successor": 17,
+      "ray_index": 4,
+      "root": 725,
+      "sibling_depth": 1
+    },
+    {
+      "base": 11,
+      "complete_root_path": [
+        46421,
+        69632,
+        34816,
+        17408,
+        8704,
+        4352,
+        2176,
+        1088,
+        544,
+        272,
+        136,
+        68,
+        34,
+        17,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 17,
+      "ray_index": 4,
+      "root": 46421,
+      "sibling_depth": 2
+    },
+    {
+      "base": 17,
+      "complete_root_path": [
+        1109,
+        1664,
+        832,
+        416,
+        208,
+        104,
+        52,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 7,
+      "minimum_if_at_most_limit": 583,
+      "odd_successor": 13,
+      "ray_index": 5,
+      "root": 1109,
+      "sibling_depth": 1
+    },
+    {
+      "base": 17,
+      "complete_root_path": [
+        70997,
+        106496,
+        53248,
+        26624,
+        13312,
+        6656,
+        3328,
+        1664,
+        832,
+        416,
+        208,
+        104,
+        52,
+        26,
+        13,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 13,
+      "ray_index": 5,
+      "root": 70997,
+      "sibling_depth": 2
+    },
+    {
+      "base": 13,
+      "complete_root_path": [
+        853,
+        1280,
+        640,
+        320,
+        160,
+        80,
+        40,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 0,
+      "minimum_if_at_most_limit": 853,
+      "odd_successor": 5,
+      "ray_index": 6,
+      "root": 853,
+      "sibling_depth": 1
+    },
+    {
+      "base": 13,
+      "complete_root_path": [
+        54613,
+        81920,
+        40960,
+        20480,
+        10240,
+        5120,
+        2560,
+        1280,
+        640,
+        320,
+        160,
+        80,
+        40,
+        20,
+        10,
+        5,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 5,
+      "ray_index": 6,
+      "root": 54613,
+      "sibling_depth": 2
+    },
+    {
+      "base": 5,
+      "complete_root_path": [
+        341,
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 2,
+      "minimum_if_at_most_limit": 151,
+      "odd_successor": 1,
+      "ray_index": 7,
+      "root": 341,
+      "sibling_depth": 1
+    },
+    {
+      "base": 5,
+      "complete_root_path": [
+        21845,
+        32768,
+        16384,
+        8192,
+        4096,
+        2048,
+        1024,
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 1,
+      "ray_index": 7,
+      "root": 21845,
+      "sibling_depth": 2
+    },
+    {
+      "base": 1,
+      "complete_root_path": [
+        85,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": 3,
+      "minimum_if_at_most_limit": 75,
+      "odd_successor": 1,
+      "ray_index": 8,
+      "root": 85,
+      "sibling_depth": 1
+    },
+    {
+      "base": 1,
+      "complete_root_path": [
+        5461,
+        8192,
+        4096,
+        2048,
+        1024,
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "minimum_first_hit_clock": null,
+      "minimum_if_at_most_limit": null,
+      "odd_successor": 1,
+      "ray_index": 8,
+      "root": 5461,
+      "sibling_depth": 2
+    }
+  ],
+  "scope": "Exact finite ordinary controls for BM4, BM6--BM9. No escaping source or infinite-family theorem is assumed or inferred.",
+  "source_limit": 4096,
+  "source_sha256": {
+    "SPARSE_BASIN_MINIMA.md": "65f1a0698cb3a17a8eb52ddab42f6b548be5bb921872f71c4d9cb00369ccbeec",
+    "check_basin_minima.py": "4b6b4daac8984edf7b110c95f443f84e1983e91d62ba437a7dcaa3f2e11b5a4c"
+  },
+  "sources_hitting_a_selected_root": 341,
+  "status": "PASS"
+}

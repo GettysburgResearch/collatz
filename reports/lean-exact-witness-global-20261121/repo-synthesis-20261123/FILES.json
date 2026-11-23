@@ -1,0 +1,248 @@
+{
+  "schema": "collatz-changed-file-bindings/v1",
+  "scope": "Exact bytes of this checkpoint; excludes this manifest to avoid self-reference. Earlier manifests retain their historical commit meaning.",
+  "remote_parent_commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+  "parent_tree": "fb303db5f6af5f55829be63faa4fedeade01e91b",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/README.md",
+      "bytes": 7964,
+      "sha256": "2260bf09e417518ddcb8211b1f3e0e9574692f887ae25be6960db05cf2634eaa"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/REPOSITORY_INVENTORY.json",
+      "bytes": 59415,
+      "sha256": "ad7343b950cbee23fb5a4b127e32cda441379838ba5ddc1950a91533f3734f1d"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/ROOT_REPLAY.json",
+      "bytes": 23348,
+      "sha256": "31593a6aa969f7b67e5284ca4396a3b0e7bd3a0f1e0046c3ea24ec25a4c781b8"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/SOURCES.json",
+      "bytes": 9520,
+      "sha256": "0aa010b7785e8e775fc8a4ed897a8297d30941724d5711705142e0f229fcbb41"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/README.md",
+      "bytes": 3305,
+      "sha256": "29d39a2c8ed1c7bb3b2a7e7e61dab1de6ff79478018b0a2ad9c30db2e96e18ff"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/REPLAY.json",
+      "bytes": 2439,
+      "sha256": "0003c85bd284378d9bfa5181931dcb04556cfc0709cebb8154ddde290a8aa0a8"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/SOURCES.json",
+      "bytes": 3310,
+      "sha256": "42193f698f2eb967b4e60b77e08e23bb32631e6270defeea140dc7c5756f1028"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/lean-audit.log",
+      "bytes": 1979,
+      "sha256": "cc40ba1b88e38725efdc305a6dc7684363777445878c14078bafb433ac66a8f3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/normal.json",
+      "bytes": 3875,
+      "sha256": "72d0ad51853ff66e18c5ec5265767a125b211a67954434b47a438bf720b8495b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/optimized.json",
+      "bytes": 3875,
+      "sha256": "72d0ad51853ff66e18c5ec5265767a125b211a67954434b47a438bf720b8495b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/EXECUTION.json",
+      "bytes": 5255,
+      "sha256": "abe35b5a9c66f805c2a26956a4a1eb3acc9e00db9f5acede4bdae594c3fc5669"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/README.md",
+      "bytes": 4747,
+      "sha256": "307d5935f341fc37961fee7c1703d2b1a974331970253a3092acf6c3c86b9f00"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/SOURCES.json",
+      "bytes": 3686,
+      "sha256": "c8db7e6860df772081feea23c428d52472074f2b503b11ffcae0dcfd9e3ffdc1"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/lean-strict-audit.log",
+      "bytes": 1858,
+      "sha256": "76eb49bc09f845b5668ea61bbed14b2acc697fd5ac7d1493ad45ad6d4df622f0"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/normal.json",
+      "bytes": 609,
+      "sha256": "bf78e7d2946097275c361bbf1fcb0fd06adf942744ed577597d789512e603320"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/optimized.json",
+      "bytes": 609,
+      "sha256": "bf78e7d2946097275c361bbf1fcb0fd06adf942744ed577597d789512e603320"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/README.md",
+      "bytes": 5647,
+      "sha256": "69e7a0f0a4d522989639efa1bddd94a1af08bc76c413703530c440b0618629ed"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/REPLAY.json",
+      "bytes": 7012,
+      "sha256": "fbacea1aa1f45451b6a356d1fb56b314a72e07e04cbefa855b150498bb804ec2"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/REVIEW_SPARSE_BASIN_MINIMA.md",
+      "bytes": 3357,
+      "sha256": "b7e6126ab961e75c41aa1db6231ba73d6399eb39467fbb1bf88b1be09bbd9a17"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SOURCES.json",
+      "bytes": 4895,
+      "sha256": "807667b26c5078b6af6f129bd45376319e53c9b62ebd247dd0acfda6bd68f5b6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/lean-strict-audit.log",
+      "bytes": 1217,
+      "sha256": "59781fb537fac7b1d0da73eb505c005f4ca06f3b83cb4e6f37ea2eaa35f05d03"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/minima-REPLAY.json",
+      "bytes": 1546,
+      "sha256": "6d1a2b966eb506e2de9cf043a81a6371e044a0ed26b10efe89fe078598e69a7c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/minima-normal.json",
+      "bytes": 42630,
+      "sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/minima-optimized.json",
+      "bytes": 42630,
+      "sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/normal.json",
+      "bytes": 1348,
+      "sha256": "a3214e38af388a1b2a6c41fcf65853c763d19e809f7ec4764bb5425866a52b2a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/optimized.json",
+      "bytes": 1348,
+      "sha256": "a3214e38af388a1b2a6c41fcf65853c763d19e809f7ec4764bb5425866a52b2a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/INFINITE_DICTIONARY_REVIEW_EXECUTION.json",
+      "bytes": 2530,
+      "sha256": "a7add44cd8ac69c58fa9e6c8318531a1228f3543e033d47b198a95e02dc2d351"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/REVIEW_ALL_BRANCH_CAPACITY.md",
+      "bytes": 3305,
+      "sha256": "bfae7d4e412fba3dcdfe1e1b187657a1088d9187167f2cdbce0a4a479d8083d6"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/REVIEW_BASIN_PRESSURE.md",
+      "bytes": 8456,
+      "sha256": "d4c20cc19f17136004c143da5248f780e10d3de88e8a68250b45afc7d9c0a0f2"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/REVIEW_INFINITE_DICTIONARY.md",
+      "bytes": 6323,
+      "sha256": "65278c827933ffa19584d7531fe3dacef970b6d6cc35059eebed77b928014c1a"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/REVIEW_JOINT_EDIT_COMPILER.md",
+      "bytes": 7110,
+      "sha256": "2dc9f5a336646324210e7c1fbf4151c1415bfeb35684b4b4630eccb1210a0970"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/REVIEW_SPARSE_BASIN_MINIMA.md",
+      "bytes": 8971,
+      "sha256": "18f5fb3d20977437f0aaafc09ff74cb5214d430d8ae2cc42cca1cd205d9ae5eb"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/reviews/joint-edit-independent.json",
+      "bytes": 1356,
+      "sha256": "bf74a2eb04db88edcce896730bc5d825f92f01c7737d128166ab47c7a99f89db"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 59610,
+      "sha256": "59ccfa3b73b6bd4ff2d0623b09a01ea8661f5aea0907fda61024757c4ff763a7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/README.md",
+      "bytes": 8854,
+      "sha256": "bc7ac7df9e4c585fd94e57f13d974d6e266e643c3c7a9d9eb46a9796596c33a5"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/REPOSITORY_SYNTHESIS.md",
+      "bytes": 9357,
+      "sha256": "372c8d9f3ee183c710a27c310c718ba6719f5f19255e6898ad44eac7df0c5a09"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JOINT_EDIT_COMPILER.md",
+      "bytes": 15336,
+      "sha256": "9832f769044ccbf33765665f60652a854efee0821d63909a1fb8effb203a06b8"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JointEditCompiler.lean",
+      "bytes": 15326,
+      "sha256": "750fe07635f7f3eec7e60b27c75f34db1f024434fb0d85addf4093ca47ffc1e9"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py",
+      "bytes": 15030,
+      "sha256": "a4dc6e292416c4d52baf1f0b0fd54e2d4a59b9daa3b511320cafdcc5d4922da5"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/INFINITE_DICTIONARY_DESCENT.md",
+      "bytes": 10959,
+      "sha256": "40f359ad13850a995ed798bd5c6ae8b3bf2257c9f62991d7a004c8441afa597d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean",
+      "bytes": 13097,
+      "sha256": "92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/check_lattice_descent.py",
+      "bytes": 6151,
+      "sha256": "be61f95feb6b167d119868a961a3c07c24f9e3939e4486a19b0286c55ff3a5d7"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/ALL_BRANCH_CAPACITY.md",
+      "bytes": 6027,
+      "sha256": "26fac702d7178ea9ecf41fc673975fa4d9d2961c10e4f63fda5bcb5c75896fe3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "bytes": 10570,
+      "sha256": "257443f6c0800ab42e9f08c79c1daebc4d97c894833add6941b46389778349d2"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BasinPacking.lean",
+      "bytes": 9863,
+      "sha256": "cf972db86c532ca2a8a68bcca835c965b6d7329383d7d12a24e7958fa7daf0d1"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md",
+      "bytes": 9699,
+      "sha256": "65f1a0698cb3a17a8eb52ddab42f6b548be5bb921872f71c4d9cb00369ccbeec"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_minima.py",
+      "bytes": 11555,
+      "sha256": "4b6b4daac8984edf7b110c95f443f84e1983e91d62ba437a7dcaa3f2e11b5a4c"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_packing.py",
+      "bytes": 8883,
+      "sha256": "8689fbae338ab5eca8a2b38959edc33fb906a237d2d11d3493aedeea753b4985"
+    }
+  ]
+}

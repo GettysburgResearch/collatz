@@ -1,0 +1,113 @@
+{
+  "schema": "collatz-basin-packing-sources/v1",
+  "repository": "GettysburgResearch/collatz",
+  "remote_inspections": [
+    {
+      "pr": 175,
+      "commit": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/CRITICAL_CARRY_TRANSFER.md",
+      "git_blob": "59816d3870a8c2b53c4d6af56b9fd0ecbd6f101c",
+      "scope": "Inspected actual-word/carry transfer and its unchanged-law cost; not a premise of BP1–BP16."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/COLLISION_CLOSURE.md",
+      "git_blob": "6e3bb90eb3733b58274f9742ffdd7a86ef84945c",
+      "scope": "Inspected general complete-carry and iid collision scopes; no iid model imported."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/FOURIER_BRIDGE.md",
+      "git_blob": "2fe3127e8d4882ae332541f76cfc17bbcee8079f",
+      "scope": "Inspected exact iid integrability and unresolved ordinary fibre comparison; no Fourier theorem imported."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/POSITIVE_CYCLE.md",
+      "git_blob": "241e6a9ec402a38b02aad87c501d8c1c0b109a1e",
+      "scope": "Inspected qualified input P and finite disjoint-basin argument. P is explicitly not used by the new pressure theorem."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/lean-forward-band-20261121/MINIMAL_ENVELOPE_ATOM_REMOVAL.md",
+      "git_blob": "518abe231632127c28bd829caffe28f776c96e4e",
+      "scope": "Inspected ordinary path / predecessor-density scope. Neither analytic envelope nor PDU is a new premise."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "git_blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "scope": "Inspected collision and contiguous-window count scope; no harmonic-flow premise imported."
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "git_blob": "758080b836dc878760042dc2019238cf42732046",
+      "scope": "Inspected task interfaces and stop rules; no additional theorem imported."
+    }
+  ],
+  "extra_remote_inspections": [
+    {
+      "pr": 182,
+      "commit": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "git_blob": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "scope": "Inspected critical separated-visit theorem and duplicate detection. Only root's optional BM15 uses its sharper exponent; BP1–BP16 use coarse BM3."
+    }
+  ],
+  "dependencies": [
+    {
+      "pr": 177,
+      "commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "claims": [
+        "HE2",
+        "HE15–HE24a"
+      ],
+      "scope": "Elementary actual-orbit product, r(n) bounds and ordinary Green identity, read from unchanged local source."
+    },
+    {
+      "pr": 177,
+      "commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/SIBLING_BASIN_COLLAPSE.md",
+      "claims": [
+        "(5)–(14)"
+      ],
+      "scope": "Actual disjoint upper-sibling basins and exact source scaling."
+    },
+    {
+      "pr": 177,
+      "commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "claims": [
+        "(2)–(3)",
+        "(10)–(11)"
+      ],
+      "scope": "All-depth finite ordinary compiler and exact signed physical-height cocycle."
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md",
+      "claim": "BM3",
+      "scope": "New coordinating source; complete hash captured in author replay and independent review."
+    }
+  ],
+  "literature_inspection": [
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "version": "v3, 26 October 2026",
+      "scope": "Primary manuscript sections 1–6 inspected after duplicate detection. No result imported into new pressure theorem, no whole-proof certification or priority claim."
+    }
+  ],
+  "not_done": [
+    "No historical Lean corpus recompiled.",
+    "No complete audit of upstream analytic manuscripts.",
+    "No theorem of ordinary Green comparison or full Collatz proved."
+  ]
+}

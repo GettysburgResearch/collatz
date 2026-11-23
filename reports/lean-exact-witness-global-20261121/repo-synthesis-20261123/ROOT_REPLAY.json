@@ -1,0 +1,122 @@
+{
+  "scope": "Selected fresh root executions on the new checkpoint, not a historical whole-project Lean replay. Counts and formal/analytic boundaries are recorded separately.",
+  "lean_version": "4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit_for_escape": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "audited_declarations": 56,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "normal_optimized_identical": {
+    "candidate": true,
+    "cycles": true,
+    "packing": true,
+    "minima": true
+  },
+  "executions": [
+    {
+      "name": "candidate-lean",
+      "command": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean -j 1 -DwarningAsError=true research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/JointEditCompiler.lean",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "'CollatzJointEdit.orbit_add' depends on axioms: [propext]\n'CollatzJointEdit.orbit_succ' does not depend on any axioms\n'CollatzJointEdit.same_run_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.same_run_precision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.same_run_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.same_run_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.shortcut_le_double' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.orbit_height' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.block_edit_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.prepend_common' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.alignment_normalizes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.budget_closed' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.repair_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.repair_ordinary' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.seek_sound' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.seek_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.seek_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.budget_mono' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.seek_ordinary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.seek_rejection_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.ordinary_alignment_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzJointEdit.orbit_one_even' depends on axioms: [propext, Quot.sound]\n'CollatzJointEdit.complete_witness_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "name": "cycle-lean",
+      "command": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean -j 1 -DwarningAsError=true research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/LatticeDescent.lean",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "'CollatzLatticeDescent.paid_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_strict' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_weak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.paid_tail_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.block_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.repeat_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.repeat_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.macro_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.macro_paid' depends on axioms: [propext]\n'CollatzLatticeDescent.power_ratio_mono' depends on axioms: [propext]\n'CollatzLatticeDescent.cutoff_budget' depends on axioms: [propext]\n'CollatzLatticeDescent.run_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.uniform_macro_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.arbitrary_defect_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.word_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.word_coprime' depends on axioms: [propext, Quot.sound]\n'CollatzLatticeDescent.word_repeat_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzLatticeDescent.ordinary_word_language_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "name": "escape-lean",
+      "command": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake env lean -j 1 -DwarningAsError=true /workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BasinPacking.lean",
+      "workdir": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "output": "'CollatzBasinPacking.two_hits_comparable' depends on axioms: [propext]\n'CollatzBasinPacking.descent_forces_earlier_hit' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_positive' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_height' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.shortcut_iterate_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.iterate_on_ray' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.off_ray_roots_incomparable' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.predecessor_roots_unique' depends on axioms: [propext, Quot.sound]\n'CollatzBasinPacking.finite_predecessor_basins_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.touched_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.untouched_mass_le_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.finite_source_cutoff_with_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBasinPacking.finite_source_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "name": "candidate-0",
+      "command": "python -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py --self-test",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"accepted\": 270,\n  \"common_run_cases\": 2016,\n  \"compiler_grid_cases\": 1024,\n  \"damaged_certificates_rejected\": 4,\n  \"fixtures\": [\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"LLLL\",\n        \"column_bound\": 30,\n        \"columns\": 4,\n        \"edit_budget\": 4,\n        \"edits\": 4,\n        \"endpoint\": 2,\n        \"left_clock\": 4,\n        \"left_path\": [\n          3,\n          5,\n          8,\n          4,\n          2\n        ],\n        \"right_clock\": 0,\n        \"right_path\": [\n          2\n        ],\n        \"start\": [\n          3,\n          2\n        ]\n      },\n      \"clock_bound\": 30,\n      \"edit_budget\": 4,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        3,\n        2\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"LLL==LL\",\n        \"column_bound\": 93,\n        \"columns\": 7,\n        \"edit_budget\": 5,\n        \"edits\": 5,\n        \"endpoint\": 5,\n        \"left_clock\": 7,\n        \"left_path\": [\n          7,\n          11,\n          17,\n          26,\n          13,\n          20,\n          10,\n          5\n        ],\n        \"right_clock\": 2,\n        \"right_path\": [\n          6,\n          3,\n          5\n        ],\n        \"start\": [\n          7,\n          6\n        ]\n      },\n      \"clock_bound\": 93,\n      \"edit_budget\": 5,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        7,\n        6\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"R===R\",\n        \"column_bound\": 18,\n        \"columns\": 5,\n        \"edit_budget\": 2,\n        \"edits\": 2,\n        \"endpoint\": 17,\n        \"left_clock\": 3,\n        \"left_path\": [\n          45,\n          68,\n          34,\n          17\n        ],\n        \"right_clock\": 5,\n        \"right_path\": [\n          19,\n          29,\n          44,\n          22,\n          11,\n          17\n        ],\n        \"start\": [\n          45,\n          19\n        ]\n      },\n      \"clock_bound\": 18,\n      \"edit_budget\": 2,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        45,\n        19\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"L===L\",\n        \"column_bound\": 18,\n        \"columns\": 5,\n        \"edit_budget\": 2,\n        \"edits\": 2,\n        \"endpoint\": 17,\n        \"left_clock\": 5,\n        \"left_path\": [\n          19,\n          29,\n          44,\n          22,\n          11,\n          17\n        ],\n        \"right_clock\": 3,\n        \"right_path\": [\n          45,\n          68,\n          34,\n          17\n        ],\n        \"start\": [\n          19,\n          45\n        ]\n      },\n      \"clock_bound\": 18,\n      \"edit_budget\": 2,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        19,\n        45\n      ]\n    }\n  ],\n  \"input_clock_budget_obstruction\": {\n    \"closed_pair_states\": 1848,\n    \"minimum_edit_budget\": 39,\n    \"scope\": \"all clocks including arbitrary core-cycle padding; finite closed ordinary graph\",\n    \"start\": [\n      193,\n      385\n    ]\n  },\n  \"padded_input_checked\": true,\n  \"scope\": \"finite independent controls; arbitrary-budget theorem is written and formal\",\n  \"source_tuple\": [\n    0,\n    2,\n    4,\n    6,\n    7,\n    12,\n    13,\n    14,\n    19,\n    23\n  ],\n  \"transported_alignment\": \"LL===L===LLL===L=LL=LLL=L====L==LLL=L==LLLLLL==LLL=LL======LL==L=LL=LLL==LL\",\n  \"transported_target_tuple\": [\n    0,\n    2,\n    4,\n    7,\n    9,\n    10,\n    11,\n    12,\n    13,\n    15,\n    17,\n    18,\n    20,\n    21,\n    22,\n    24,\n    25,\n    26,\n    27,\n    29,\n    32,\n    33,\n    34,\n    36,\n    37,\n    39,\n    40,\n    41,\n    42,\n    43,\n    44,\n    47,\n    48,\n    49,\n    50,\n    54,\n    56,\n    58,\n    62,\n    65,\n    66,\n    67,\n    72,\n    76\n  ]\n}\n"
+    },
+    {
+      "name": "candidate-1",
+      "command": "python -O -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/candidate/joint_edit_compiler.py --self-test",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"accepted\": 270,\n  \"common_run_cases\": 2016,\n  \"compiler_grid_cases\": 1024,\n  \"damaged_certificates_rejected\": 4,\n  \"fixtures\": [\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"LLLL\",\n        \"column_bound\": 30,\n        \"columns\": 4,\n        \"edit_budget\": 4,\n        \"edits\": 4,\n        \"endpoint\": 2,\n        \"left_clock\": 4,\n        \"left_path\": [\n          3,\n          5,\n          8,\n          4,\n          2\n        ],\n        \"right_clock\": 0,\n        \"right_path\": [\n          2\n        ],\n        \"start\": [\n          3,\n          2\n        ]\n      },\n      \"clock_bound\": 30,\n      \"edit_budget\": 4,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        3,\n        2\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"LLL==LL\",\n        \"column_bound\": 93,\n        \"columns\": 7,\n        \"edit_budget\": 5,\n        \"edits\": 5,\n        \"endpoint\": 5,\n        \"left_clock\": 7,\n        \"left_path\": [\n          7,\n          11,\n          17,\n          26,\n          13,\n          20,\n          10,\n          5\n        ],\n        \"right_clock\": 2,\n        \"right_path\": [\n          6,\n          3,\n          5\n        ],\n        \"start\": [\n          7,\n          6\n        ]\n      },\n      \"clock_bound\": 93,\n      \"edit_budget\": 5,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        7,\n        6\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"R===R\",\n        \"column_bound\": 18,\n        \"columns\": 5,\n        \"edit_budget\": 2,\n        \"edits\": 2,\n        \"endpoint\": 17,\n        \"left_clock\": 3,\n        \"left_path\": [\n          45,\n          68,\n          34,\n          17\n        ],\n        \"right_clock\": 5,\n        \"right_path\": [\n          19,\n          29,\n          44,\n          22,\n          11,\n          17\n        ],\n        \"start\": [\n          45,\n          19\n        ]\n      },\n      \"clock_bound\": 18,\n      \"edit_budget\": 2,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        45,\n        19\n      ]\n    },\n    {\n      \"accepted\": true,\n      \"certificate\": {\n        \"alignment\": \"L===L\",\n        \"column_bound\": 18,\n        \"columns\": 5,\n        \"edit_budget\": 2,\n        \"edits\": 2,\n        \"endpoint\": 17,\n        \"left_clock\": 5,\n        \"left_path\": [\n          19,\n          29,\n          44,\n          22,\n          11,\n          17\n        ],\n        \"right_clock\": 3,\n        \"right_path\": [\n          45,\n          68,\n          34,\n          17\n        ],\n        \"start\": [\n          19,\n          45\n        ]\n      },\n      \"clock_bound\": 18,\n      \"edit_budget\": 2,\n      \"scope\": \"exact bounded-edit ordinary merging; not universal convergence\",\n      \"start\": [\n        19,\n        45\n      ]\n    }\n  ],\n  \"input_clock_budget_obstruction\": {\n    \"closed_pair_states\": 1848,\n    \"minimum_edit_budget\": 39,\n    \"scope\": \"all clocks including arbitrary core-cycle padding; finite closed ordinary graph\",\n    \"start\": [\n      193,\n      385\n    ]\n  },\n  \"padded_input_checked\": true,\n  \"scope\": \"finite independent controls; arbitrary-budget theorem is written and formal\",\n  \"source_tuple\": [\n    0,\n    2,\n    4,\n    6,\n    7,\n    12,\n    13,\n    14,\n    19,\n    23\n  ],\n  \"transported_alignment\": \"LL===L===LLL===L=LL=LLL=L====L==LLL=L==LLLLLL==LLL=LL======LL==L=LL=LLL==LL\",\n  \"transported_target_tuple\": [\n    0,\n    2,\n    4,\n    7,\n    9,\n    10,\n    11,\n    12,\n    13,\n    15,\n    17,\n    18,\n    20,\n    21,\n    22,\n    24,\n    25,\n    26,\n    27,\n    29,\n    32,\n    33,\n    34,\n    36,\n    37,\n    39,\n    40,\n    41,\n    42,\n    43,\n    44,\n    47,\n    48,\n    49,\n    50,\n    54,\n    56,\n    58,\n    62,\n    65,\n    66,\n    67,\n    72,\n    76\n  ]\n}\n"
+    },
+    {
+      "name": "cycles-0",
+      "command": "python -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/check_lattice_descent.py",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"counts\": {\n    \"cutoff_words\": 1012,\n    \"literal_steps\": 20084,\n    \"macro_edges\": 750,\n    \"ordinary_traces\": 250,\n    \"paid_integer_edges\": 1112,\n    \"rejected_controls\": 4,\n    \"zero_edges\": 50\n  },\n  \"scope\": \"exact finite controls; no census proof\",\n  \"source_sha256\": {\n    \"INFINITE_DICTIONARY_DESCENT.md\": \"40f359ad13850a995ed798bd5c6ae8b3bf2257c9f62991d7a004c8441afa597d\",\n    \"LatticeDescent.lean\": \"92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339\",\n    \"check_lattice_descent.py\": \"be61f95feb6b167d119868a961a3c07c24f9e3939e4486a19b0286c55ff3a5d7\"\n  },\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "cycles-1",
+      "command": "python -O -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/cycles/check_lattice_descent.py",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"counts\": {\n    \"cutoff_words\": 1012,\n    \"literal_steps\": 20084,\n    \"macro_edges\": 750,\n    \"ordinary_traces\": 250,\n    \"paid_integer_edges\": 1112,\n    \"rejected_controls\": 4,\n    \"zero_edges\": 50\n  },\n  \"scope\": \"exact finite controls; no census proof\",\n  \"source_sha256\": {\n    \"INFINITE_DICTIONARY_DESCENT.md\": \"40f359ad13850a995ed798bd5c6ae8b3bf2257c9f62991d7a004c8441afa597d\",\n    \"LatticeDescent.lean\": \"92b4d94ec3d69259fe9604097548b673693bd577ea20faf76c5c8df342b00339\",\n    \"check_lattice_descent.py\": \"be61f95feb6b167d119868a961a3c07c24f9e3939e4486a19b0286c55ff3a5d7\"\n  },\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "packing-0",
+      "command": "python -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_packing.py",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"abstract_sharp_cases\": 64,\n  \"basin_minima\": [\n    [\n      2645,\n      783\n    ],\n    [\n      2005,\n      2005\n    ],\n    [\n      3029,\n      2019\n    ],\n    [\n      4565,\n      3043\n    ],\n    [\n      6869,\n      4287\n    ],\n    [\n      10325,\n      6883\n    ],\n    [\n      7765,\n      7765\n    ],\n    [\n      5845,\n      3463\n    ],\n    [\n      8789,\n      5859\n    ],\n    [\n      6613,\n      6613\n    ],\n    [\n      9941,\n      6627\n    ],\n    [\n      14933,\n      9955\n    ]\n  ],\n  \"coarse_minimum_exponent\": \"799/800\",\n  \"descending_first_hit_cases\": 86,\n  \"false_minimum_control\": [\n    1566,\n    2645,\n    783,\n    4\n  ],\n  \"finite_cutoff_cases\": 192,\n  \"finite_weight_pool_size\": 115,\n  \"first_hit_cases\": 145,\n  \"integer_height_cases\": 145,\n  \"literal_parity_carry_cases\": 13312,\n  \"no_descent_capacity_cases\": 13,\n  \"original_odd_source\": 41,\n  \"rejected_controls\": 3,\n  \"retained_sources\": 115,\n  \"schema\": \"collatz-basin-packing-finite-controls/v1\",\n  \"scope\": \"finite actual convergent examples, exact source accounting, and abstract sharp controls; no infinite-orbit validation\",\n  \"sibling_roots\": [\n    2645,\n    2005,\n    3029,\n    4565,\n    6869,\n    10325,\n    7765,\n    5845,\n    8789,\n    6613,\n    9941,\n    14933\n  ],\n  \"source_bound\": 14933,\n  \"square_pressure_rearrangement_exponent\": \"1599/799\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "packing-1",
+      "command": "python -O -X utf8 -B research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_packing.py",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "exit_code": 0,
+      "output": "{\n  \"abstract_sharp_cases\": 64,\n  \"basin_minima\": [\n    [\n      2645,\n      783\n    ],\n    [\n      2005,\n      2005\n    ],\n    [\n      3029,\n      2019\n    ],\n    [\n      4565,\n      3043\n    ],\n    [\n      6869,\n      4287\n    ],\n    [\n      10325,\n      6883\n    ],\n    [\n      7765,\n      7765\n    ],\n    [\n      5845,\n      3463\n    ],\n    [\n      8789,\n      5859\n    ],\n    [\n      6613,\n      6613\n    ],\n    [\n      9941,\n      6627\n    ],\n    [\n      14933,\n      9955\n    ]\n  ],\n  \"coarse_minimum_exponent\": \"799/800\",\n  \"descending_first_hit_cases\": 86,\n  \"false_minimum_control\": [\n    1566,\n    2645,\n    783,\n    4\n  ],\n  \"finite_cutoff_cases\": 192,\n  \"finite_weight_pool_size\": 115,\n  \"first_hit_cases\": 145,\n  \"integer_height_cases\": 145,\n  \"literal_parity_carry_cases\": 13312,\n  \"no_descent_capacity_cases\": 13,\n  \"original_odd_source\": 41,\n  \"rejected_controls\": 3,\n  \"retained_sources\": 115,\n  \"schema\": \"collatz-basin-packing-finite-controls/v1\",\n  \"scope\": \"finite actual convergent examples, exact source accounting, and abstract sharp controls; no infinite-orbit validation\",\n  \"sibling_roots\": [\n    2645,\n    2005,\n    3029,\n    4565,\n    6869,\n    10325,\n    7765,\n    5845,\n    8789,\n    6613,\n    9941,\n    14933\n  ],\n  \"source_bound\": 14933,\n  \"square_pressure_rearrangement_exponent\": \"1599/799\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "minima-0",
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_minima.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "/tmp/collatz-stepback-minima-normal.json",
+      "stdout_sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4",
+      "stdout_bytes": 42630,
+      "matches_recorded_artifact": true,
+      "recorded_artifact": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/minima-normal.json",
+      "stderr": "",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "output_storage": "Full fresh stdout matched the checked-in artifact byte-for-byte; original first run was output-truncated, so this captured rerun is the receipt."
+    },
+    {
+      "name": "minima-1",
+      "command": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/check_basin_minima.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "/tmp/collatz-stepback-minima-optimized.json",
+      "stdout_sha256": "0979de85d56066a8b61194a89e01ffeea313f946c17b1167aa96ec421ec3a7c4",
+      "stdout_bytes": 42630,
+      "matches_recorded_artifact": true,
+      "recorded_artifact": "reports/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/minima-optimized.json",
+      "stderr": "",
+      "workdir": "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global",
+      "output_storage": "Full fresh stdout matched the checked-in artifact byte-for-byte; original first run was output-truncated, so this captured rerun is the receipt."
+    }
+  ]
+}
