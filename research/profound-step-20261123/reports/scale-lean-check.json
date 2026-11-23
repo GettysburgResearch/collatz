@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_public_theorem_count": 4,
+  "scope": "All-depth first crossing, explicit periodic hole, relative hole size and covering recurrence; no source or measure-theory axioms",
+  "fresh_local_output": true,
+  "warnings_as_errors": true,
+  "historical_project_modules_rebuilt": 0,
+  "source_sha256": {
+    "ScaleAvoidance.lean": "53dd7d9eefccdea3e159d6522639266957b55b820776d6932a239a0c0e17563b",
+    "ScaleAvoidanceAudit.lean": "537181c77d173e46c436cd17954dd2763fd3bf4f977639d9cbc507c70c49db3a"
+  },
+  "direct_import_sha256": {
+    "Mathlib.Basic.Real.Basic": "b10f715c299e6c3f468e916cad97620e921dc432e31269217954d94191fc7829",
+    "Mathlib.Algebra.Order.Floor.Ring": "8526b01a43c61639a41f1bd0b1404f68eb727e6fa7da85184e480fca2ea65375",
+    "Mathlib.Tactic": "f45622ca1381833c77e9659a0b2ec07e5b667d0d4667cb2a28a58e9540634e85"
+  },
+  "modules": [
+    {
+      "module": "ScaleAvoidance",
+      "exit_code": 0,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "ScaleAvoidanceAudit",
+      "exit_code": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audited_declarations": [
+        "CollatzProfound.ScaleAvoidance.bounded_upward_first_crossing",
+        "CollatzProfound.ScaleAvoidance.periodic_interval_hole",
+        "CollatzProfound.ScaleAvoidance.relative_hole_width",
+        "CollatzProfound.ScaleAvoidance.covering_count_iterate"
+      ]
+    }
+  ]
+}

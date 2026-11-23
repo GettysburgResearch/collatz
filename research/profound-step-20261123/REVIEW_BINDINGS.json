@@ -1,0 +1,84 @@
+{
+  "schema": "collatz-review-bindings/v1",
+  "scope": "Independent written reviews bind only the frozen targets and claims described in each review. They do not certify Collatz, fully formalize the written measure theory, or newly prove inherited qualified premises.",
+  "bindings": [
+    {
+      "review": "reports/2026-11-23-profound-step/HOLONOMICITY_REVIEW.md",
+      "review_sha256": "da40d53e80c087afba7f5473d3cddcce4ee74ab009c769d18d0fb40355edfd2d",
+      "target": "research/profound-step-20261123/HOLONOMICITY.md",
+      "target_sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/HOLONOMICITY_REVIEW.md",
+      "review_sha256": "da40d53e80c087afba7f5473d3cddcce4ee74ab009c769d18d0fb40355edfd2d",
+      "target": "research/profound-step-20261123/lean/ParityRecurrence.lean",
+      "target_sha256": "49e330cb36fa3e088490e4fa068c10ef38db9a6c2c98f9278570409a046c7074"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/HOLONOMICITY_REVIEW.md",
+      "review_sha256": "da40d53e80c087afba7f5473d3cddcce4ee74ab009c769d18d0fb40355edfd2d",
+      "target": "research/profound-step-20261123/lean/ParityRecurrenceAudit.lean",
+      "target_sha256": "b96fcbc728009a61e690b9237cd9d9a3bf2795db892c9fdbd23e62649cb1f27a"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/HOLONOMICITY_REVIEW.md",
+      "review_sha256": "da40d53e80c087afba7f5473d3cddcce4ee74ab009c769d18d0fb40355edfd2d",
+      "target": "research/profound-step-20261123/reports/parity-lean-check.json",
+      "target_sha256": "ab09bdc57fcc2993c9c0ba9b7e256f3cfae4f0678e34fbfc4e33ca769a279cfe"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ENTROPY_REVIEW.md",
+      "review_sha256": "104b64cf01e40c276d2e1f0dbaedf4141d30dffe362fd4db2acf51b156d38d95",
+      "target": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "target_sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ENTROPY_REVIEW.md",
+      "review_sha256": "104b64cf01e40c276d2e1f0dbaedf4141d30dffe362fd4db2acf51b156d38d95",
+      "target": "research/profound-step-20261123/lean/ScaleAvoidance.lean",
+      "target_sha256": "53dd7d9eefccdea3e159d6522639266957b55b820776d6932a239a0c0e17563b"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ENTROPY_REVIEW.md",
+      "review_sha256": "104b64cf01e40c276d2e1f0dbaedf4141d30dffe362fd4db2acf51b156d38d95",
+      "target": "research/profound-step-20261123/lean/ScaleAvoidanceAudit.lean",
+      "target_sha256": "537181c77d173e46c436cd17954dd2763fd3bf4f977639d9cbc507c70c49db3a"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ENTROPY_REVIEW.md",
+      "review_sha256": "104b64cf01e40c276d2e1f0dbaedf4141d30dffe362fd4db2acf51b156d38d95",
+      "target": "research/profound-step-20261123/reports/scale-lean-check.json",
+      "target_sha256": "ab54535a4d6ce38f264eb1439a8938cfffec0a6f9efc15260f746fe6e5f0fa3c"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/STATIONARY_REVIEW.md",
+      "review_sha256": "ba159422e311e46619759a8a40612653701d0d7667cc174bb5cbadad5398afd2",
+      "target": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "target_sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/STATIONARY_ATOMS_REVIEW.md",
+      "review_sha256": "bf4e957f9d9dabf7ea5efd67855c254027bc2b7fb7ce730641d1ccbd148e1818",
+      "target": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "target_sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ARITHMETIC_REVIEW.md",
+      "review_sha256": "9c5fdfd231ecc93a4039d0d0d3dfe0fb3480beb1d61ee664f08630dc4b40a2d5",
+      "target": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "target_sha256": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ARITHMETIC_REVIEW.md",
+      "review_sha256": "9c5fdfd231ecc93a4039d0d0d3dfe0fb3480beb1d61ee664f08630dc4b40a2d5",
+      "target": "research/profound-step-20261123/check_companion_control.py",
+      "target_sha256": "8ef1ffeff25b6f6fc937dc4a1b8c4c9f2817983b52f82d009bb2cff328f23abf"
+    },
+    {
+      "review": "reports/2026-11-23-profound-step/ARITHMETIC_REVIEW.md",
+      "review_sha256": "9c5fdfd231ecc93a4039d0d0d3dfe0fb3480beb1d61ee664f08630dc4b40a2d5",
+      "target": "research/profound-step-20261123/reports/companion-control.json",
+      "target_sha256": "87f70ec46f595c9d33e5c58267cd16e11f3f3c9957dfc2544b291b8514af5e81"
+    }
+  ]
+}

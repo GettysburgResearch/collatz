@@ -1,0 +1,9 @@
+MODULE ScaleAvoidance.lean
+
+MODULE ScaleAvoidanceAudit.lean
+'CollatzProfound.ScaleAvoidance.bounded_upward_first_crossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzProfound.ScaleAvoidance.periodic_interval_hole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzProfound.ScaleAvoidance.relative_hole_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzProfound.ScaleAvoidance.covering_count_iterate' depends on axioms: [propext]

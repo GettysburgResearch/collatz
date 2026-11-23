@@ -1,0 +1,60 @@
+{
+  "schema": "collatz-source-refresh/v1",
+  "date": "2026-11-23",
+  "scope": "Continuation of PR180's prior whole-repository survey; five peer branches advanced and their current work was inspected. This is not a new replay of the historical proof corpus.",
+  "own_base": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+  "own_base_tree": "782d8e436a1803a50e3bf48c23f4e3914b590c33",
+  "main_read_at_start": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "advanced_peer_heads": [
+    {
+      "number": 175,
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "branch": "research/lean-global-closure-20261121",
+      "updated_at": "2026-11-23T02:58:58Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "number": 176,
+      "title": "Collatz: finite triadic height certificate and direct closure attacks",
+      "head": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "branch": "research/lean-global-resolvent-20261121",
+      "updated_at": "2026-11-23T02:47:06Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: funded witnesses, pressure barriers, and a triadic bridge",
+      "head": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "branch": "research/lean-exact-witness-global-20261121",
+      "updated_at": "2026-11-23T02:32:28Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+      "head": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "branch": "research/lean-global-20261121",
+      "updated_at": "2026-11-23T02:54:13Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "number": 182,
+      "title": "Collatz: exact source boxes and global orbit-count reconstruction",
+      "head": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "branch": "research/dyadic-band-descent-20261121",
+      "updated_at": "2026-11-23T03:07:58Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    }
+  ],
+  "unchanged_inputs": [
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+    }
+  ]
+}

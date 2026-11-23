@@ -1,0 +1,262 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "repository": "GettysburgResearch/collatz",
+  "inspection_date": "2026-11-23",
+  "scope": "Exact repository pins plus a primary-literature inspection ledger. The four new notes state theorem hypotheses and distinguish applied results from unclosed routes.",
+  "sources": [
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "git_blob": "041d15c84ec5d826b2fdd197a5e9f4424f541e32",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "use": "Equation (24): full upper local dimension of the actual common boundary law",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "git_blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "use": "Strict actual stationary collision gap and its maximum-Shannon equality branch",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "git_blob": "34b437972096ae409568842e655509a8233a8087",
+      "sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738",
+      "use": "Ordinary minimum source, whole-source reconstruction, and actual clock normalization",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "git_blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "use": "Qualified whole-path law, common real boundary, and coherent physical coordinate",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "git_blob": "a34c0e993ccd190d47235c4285e53d6145660ea2",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "use": "Qualified actual-boundary information dimension under retained reweighting",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HIGHER_RANK_BOUNDARY_ATTACK.md",
+      "git_blob": "21ab6c80f12ca54002d7ed0286ca4416336e9d4a",
+      "sha256": "9cee71eaa78069c3c377adab69795f223dd6abdd3b9010d1bf3dffbc26620ab2",
+      "use": "Inspected higher-rank boundary route and the original-fibre interface",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/BOREL_DWORK_ACTUAL_PARITY_ATTEMPT.md",
+      "git_blob": "c10dd81668f05ef895a9e88277efbdf4e745a047",
+      "sha256": "daa17bfe27a75c53361bfcbd204ec6417c9337f99ef0b05d695ee012f08dbf6e",
+      "use": "Actual weighted parity series; strict-capacity and continuation hypotheses remain missing",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "git_blob": "5069b91e9b5fb954c4d079bd76a34004efb3f85f",
+      "sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c",
+      "use": "Inspected finite-rank/holonomicity route; actual recurrence construction remains open",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 176,
+      "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+      "git_blob": "94c2760f09813bc2b4feea1428a10d28c2054a3d",
+      "sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f",
+      "use": "Inspected finite triadic-height closure and the unresolved all-input budget",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 177,
+      "commit": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "path": "research/lean-exact-witness-global-20261121/ATOMIC_EXCLUSION_CONTINUATION.md",
+      "git_blob": "de9705e222665bf8208dc9d7b8368031516f0f21",
+      "sha256": "c4d2c2124f51d4cd8dd59e9169197da7a79d45b4f290d2379151185c501db16a",
+      "use": "Inspected actual atomic exclusion continuation; relevant ordinary/stationary distinction",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 177,
+      "commit": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "path": "research/lean-exact-witness-global-20261121/TRIADIC_BRIDGE_TEST.md",
+      "git_blob": "754339d26778e028e1c4b82ed1f335ed582ebb90",
+      "sha256": "f51ba8f372ff2305d1878b1ca8e7ebf322decbc519d1ee15e607da3c8afa1bea",
+      "use": "Inspected finite bridge test; not imported as a universal closing theorem",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "git_blob": "f7c43e643036304ff12b01679cc7b0a9d84a0f57",
+      "sha256": "92228f5a376d7c6af08ad256fb14ed1f09e155c9c514c49b94568e9d0dadc093",
+      "use": "Inspected direct triadic construction and its remaining candidate-existence obligation",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+      "git_blob": "d0bde1a3c4c9d61f65e3ae1aefbf165c602deae8",
+      "sha256": "28406b5165f1cba6d8317456920654d13f3204846104f289d68e13b1978c825a",
+      "use": "Inspected exact failure-position reset arithmetic",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/cycles/UNIT_EQUATION_HEIGHT_ATTACK.md",
+      "git_blob": "ea033b2d9225ab12327d970015327d91aeee5ad8",
+      "sha256": "4d243d3724c9812d450d5a086f118d0025030563d78bc9e8066aa455c027bd36",
+      "use": "Inspected complete-cycle unit-equation height route and its all-period limitation",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+      "git_blob": "118af095616dbe5544b39f117fd2f465dac4a10b",
+      "sha256": "eb8a352d3ad072e601637c0d2beff2992317252ff4ca58b830100074a1b17709",
+      "use": "Actual source-box decomposition retaining source quotients, total gaps, and carries",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "git_blob": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "sha256": "bee22c362de8adcbb6a0360f48240ad276fdf6122f6383273eb10dee8e29271d",
+      "use": "Inspected exact global orbit-count reconstruction and cross-box dependence",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/TRIADIC_CLOSURE.md",
+      "git_blob": "3c6e297ccbb6fc5d9ad5abcffdab371cf64ebba9",
+      "sha256": "31164e32797d3868f06cf1f2b9b771e912335f096d7fc92e53a1e29355dbba36",
+      "use": "Inspected triadic closure interface; successful selector is not established universally",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/COMPLETE_CYCLE.md",
+      "git_blob": "f5114ef4dcccedeee5ccb429bd2f1663bb6de01e",
+      "sha256": "67222af04ed277cc0ffb27521b081661afefb9446e9d19b7737cabc87a410ff5",
+      "use": "Inspected complete-cycle arithmetic and the unresolved full-denominator implication",
+      "scope": "Inherited statements retain their source qualifications. A file identity or inspected route is not a new full proof review or an unconditional Collatz theorem."
+    }
+  ],
+  "external_inspections": [
+    {
+      "url": "https://math.smertnig.at/paper/bezivinmultivariate.pdf",
+      "part": "Bell–Smertnig, Theorems 1.2 and 1.3; univariate Bézivin precedent",
+      "use": "Known D-finite Pólya-series rationality; elementary actual-parity specialization reconstructed and its recurrence core formalized."
+    },
+    {
+      "url": "https://math.nyu.edu/~tschinke/.manin/final/bost/BCL070720.pdf",
+      "part": "Bost–Chambert-Loir, Theorem 7.9 and Example 7.10",
+      "use": "Inspected adelic rationality/capacity hypotheses; no strict-capacity or actual-continuation conclusion assumed."
+    },
+    {
+      "url": "https://kskedlaya.org/weil-cohom/chapter-11.html",
+      "part": "Kedlaya, chapter 11, Dwork rationality exposition",
+      "use": "Background for the rationality attempt; no unverified completion-transfer implication used."
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5B7471AB9A282B5B179E35040809159/S0143385721000742a.pdf/div-class-title-rigidity-properties-for-commuting-automorphisms-on-tori-and-solenoids-div.pdf",
+      "part": "Einsiedler–Lindenstrauss, Theorem 1.2",
+      "use": "Inspected higher-rank rigidity; a joint invariant measure and the required entropy are not supplied for the original law."
+    },
+    {
+      "url": "https://annals.math.princeton.edu/2014/180-2/p07",
+      "part": "Hochman, entropy inverse theorem",
+      "use": "Inspected route; actual arithmetic dependence is retained and no independent convolution is fabricated."
+    },
+    {
+      "url": "https://annals.math.princeton.edu/2019/189-2/p01",
+      "part": "Shmerkin, Lq-dimension and convolution results",
+      "use": "Inspected route; no theorem is applied to an unproved independent-convolution model."
+    },
+    {
+      "url": "https://math.huji.ac.il/~mhochman/preprints/normality.pdf",
+      "part": "Hochman–Shmerkin, scenery/normality framework",
+      "use": "Inspected spectral/scenery hypotheses; original chronological frequencies are not inferred from support or dimension alone."
+    },
+    {
+      "url": "https://w3.impa.br/~viana/out/extremal.pdf",
+      "part": "Avila–Viana, zero-exponent invariance principles including Theorem B",
+      "use": "Inspected hypotheses; no invariant real probability lift is supplied by an escaping affine coordinate."
+    },
+    {
+      "url": "https://www.math.u-bordeaux.fr/~jquint/publications/walk.pdf",
+      "part": "Benoist–Quint, random walks and stationary measures",
+      "use": "Inspected independent-driving/Choquet–Deny interface; iid gap marginals do not establish independence from the boundary."
+    },
+    {
+      "url": "https://sbroffer.perso.math.cnrs.fr/articoli/proc-BBD13.pdf",
+      "part": "Brofferio–Buraczewski–Damek, Theorem 1.6 and section 3.2",
+      "use": "Inspected critical iid affine recursion, Radon measure, moment and descending-ladder assumptions; the actual minimum source has infinite first strict descending ladder time."
+    },
+    {
+      "url": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "part": "Brofferio, critical random affine recursion",
+      "use": "Inspected renewal context; arbitrary stationary driving is not substituted for iid driving."
+    },
+    {
+      "url": "https://wrap.warwick.ac.uk/id/eprint/136838/1/WRAP_Theses_Atkinson_1976.pdf",
+      "part": "Atkinson thesis, reproduced recurrence paper, PDF pages 97–99, theorem on page 98",
+      "use": "Primary-source recurrence context. New stationary real-series proof uses the explicit logarithmic identity and conditional drift, not an unstated recurrence hypothesis."
+    },
+    {
+      "url": "https://people.math.ethz.ch/~halorenz/publications/pdf/collatz.pdf",
+      "part": "Halbeisen–Hungerbühler, finite parity-word formulas, Lemmas 1–2",
+      "use": "Known full-word rational cycle formulas and legality; no novelty claim for those inputs."
+    },
+    {
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "part": "Monks–Yazinski, Theorems 2.1 and 2.5",
+      "use": "Known rational-companion periodicity and self-conjugate-cycle results; no general rational companion is constructed here."
+    },
+    {
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "part": "Monks, 2025 q-analogue work",
+      "use": "Inspected literature lead; no new all-input theorem imported."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/16/v2",
+      "part": "Structured parity/automaticity claims and explicit completion-transfer boundary",
+      "use": "Inspected evolving research lead; no broad ordinary-real conclusion or unreviewed general primitive-word candidate imported."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "part": "Version 3, entropy/boundary discussion",
+      "use": "Inspected evolving research lead; source qualifications and actual-law interface retained."
+    },
+    {
+      "url": "https://arxiv.org/html/2611.14569v1",
+      "part": "Verger-Gaugry, S-unit-related research lead",
+      "use": "Inspected lead, not used as a universal cycle-exclusion theorem."
+    }
+  ]
+}
