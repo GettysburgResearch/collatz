@@ -1,0 +1,221 @@
+{
+  "convergents": [
+    {
+      "certificate": "lower",
+      "denominator": 1,
+      "digit": 1,
+      "index": 0,
+      "numerator": 1,
+      "upper": false
+    },
+    {
+      "certificate": "power_lift_base",
+      "denominator": 1,
+      "digit": 1,
+      "index": 1,
+      "numerator": 2,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 2,
+      "digit": 1,
+      "index": 2,
+      "numerator": 3,
+      "upper": false
+    },
+    {
+      "certificate": "small_upper",
+      "denominator": 5,
+      "digit": 2,
+      "index": 3,
+      "numerator": 8,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 12,
+      "digit": 2,
+      "index": 4,
+      "numerator": 19,
+      "upper": false
+    },
+    {
+      "certificate": "small_upper",
+      "denominator": 41,
+      "digit": 3,
+      "index": 5,
+      "numerator": 65,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 53,
+      "digit": 1,
+      "index": 6,
+      "numerator": 84,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 306,
+      "digit": 5,
+      "index": 7,
+      "numerator": 485,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 665,
+      "digit": 2,
+      "index": 8,
+      "numerator": 1054,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 15601,
+      "digit": 23,
+      "index": 9,
+      "numerator": 24727,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 31867,
+      "digit": 2,
+      "index": 10,
+      "numerator": 50508,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 79335,
+      "digit": 2,
+      "index": 11,
+      "numerator": 125743,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 111202,
+      "digit": 1,
+      "index": 12,
+      "numerator": 176251,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 190537,
+      "digit": 1,
+      "index": 13,
+      "numerator": 301994,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 10590737,
+      "digit": 55,
+      "index": 14,
+      "numerator": 16785921,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 10781274,
+      "digit": 1,
+      "index": 15,
+      "numerator": 17087915,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 53715833,
+      "digit": 4,
+      "index": 16,
+      "numerator": 85137581,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 171928773,
+      "digit": 3,
+      "index": 17,
+      "numerator": 272500658,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 225644606,
+      "digit": 1,
+      "index": 18,
+      "numerator": 357638239,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 397573379,
+      "digit": 1,
+      "index": 19,
+      "numerator": 630138897,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 6189245291,
+      "digit": 15,
+      "index": 20,
+      "numerator": 9809721694,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 6586818670,
+      "digit": 1,
+      "index": 21,
+      "numerator": 10439860591,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 65470613321,
+      "digit": 9,
+      "index": 22,
+      "numerator": 103768467013,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 137528045312,
+      "digit": 2,
+      "index": 23,
+      "numerator": 217976794617,
+      "upper": true
+    },
+    {
+      "certificate": "lower",
+      "denominator": 753110839881,
+      "digit": 5,
+      "index": 24,
+      "numerator": 1193652440098,
+      "upper": false
+    },
+    {
+      "certificate": "large_upper",
+      "denominator": 5409303924479,
+      "digit": 7,
+      "index": 25,
+      "numerator": 8573543875303,
+      "upper": true
+    }
+  ],
+  "cutoff": 1000000000000,
+  "scope": "Independent exact finite CF replay only; no author checker imported, no word census repeated, no imported infinite theorem executed.",
+  "source_sha256": {
+    "TEMPLATE_SELECTION.md": "90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2",
+    "TemplateSelection.lean": "1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715",
+    "check_template_selection.py": "12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798"
+  },
+  "status": "PASS",
+  "terms": 128
+}

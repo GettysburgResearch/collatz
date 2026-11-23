@@ -1,0 +1,62 @@
+{
+  "actual_projected_suffix_steps": 126062,
+  "actual_source_atoms": 13700,
+  "complete_fiber_rectangles": 201,
+  "complete_rectangle_atoms": 7035,
+  "failed_strengthening_controls": [
+    "height factor 1 rejected by 3 -> 5",
+    "bounded unweighted multiplicity rejected by a dyadic fiber",
+    "omitted dyadic weights rejected",
+    "lost nonunit source rejected by 75 -> 113 -> 170 -> 85",
+    "one shortcut step is not the full odd projection: 21 -> 1 takes 6"
+  ],
+  "full_predecessor_pools": 25,
+  "inverse_square_constant": "111404/22113",
+  "largest_finite_inverse_power_ratio": "1644899292857976598433555569/326533181312040994075152384",
+  "largest_finite_pressure_ratio": "4879426596671485/1125899906842624",
+  "largest_observed_fiber": 47,
+  "sample_pool_records": [
+    {
+      "exact_ratio_sha256": "6ac26b9d91af7f27faf7dab1130997df99978206f984c65848ebd200064500dd",
+      "ratio_display": 1.4936633892,
+      "root": 1,
+      "sources": 274,
+      "unit_images": 46
+    },
+    {
+      "exact_ratio_sha256": "c42f7b5b984eec1d19e19775dcd3489356fad421d42008b9cf99c57c7c8cfd1a",
+      "ratio_display": 3.2678691975,
+      "root": 5,
+      "sources": 501,
+      "unit_images": 84
+    },
+    {
+      "exact_ratio_sha256": "4828bde39b4552afb3699e855abef42a0785b25cfa18f6d45a7388127cf58e13",
+      "ratio_display": 2.09509754,
+      "root": 7,
+      "sources": 349,
+      "unit_images": 57
+    },
+    {
+      "exact_ratio_sha256": "f9e5f86e0406224c13f947bb1dd443492421b1c52e37720a0be6728eb89fe812",
+      "ratio_display": 1.8674761025,
+      "root": 11,
+      "sources": 715,
+      "unit_images": 125
+    },
+    {
+      "exact_ratio_sha256": "77f6e15603db0cc78a1a6147458b09662755592af1881055d8b08d59319e0f5a",
+      "ratio_display": 1.7726127349,
+      "root": 13,
+      "sources": 609,
+      "unit_images": 105
+    }
+  ],
+  "scope": "finite actual ordinary predecessor and exact weighted-fiber controls; no escape simulation",
+  "sources": {
+    "FULL_SOURCE_FINITE_CERTIFICATE.md": "380d70b3618ed5ffe2992b20ed6eb66d30fe325479bc8db9e82f7f3db0ffd58d",
+    "UnitProjection.lean": "bd404caded2fb5f1d1c0ebf673d4d0c6208727a989d11fb8031e39a82ddbd1b4",
+    "check_unit_projection.py": "32e96d5905c8896d074d19872d4f0f67010ff64a6ef61fd6dd0dacea7f73e52b"
+  },
+  "sources_with_nonunit_odd_part": 4424
+}

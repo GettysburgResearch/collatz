@@ -1,24 +1,51 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz, the requested residue-512 implication, and
-`FloorIntervalStep`.** The latest continuation constructs an ordinary
-entrance law from the full inverse potential and an explicit finite-source
-trial certificate for the remaining absolute transport cost. The arithmetic
-lane removes common cutoffs and fixed centers from the ordinary lattice
-descent; the repair lane computes the exact adelic obstruction and its
-shared displacement variable. Twenty-eight new Lean declarations certify
-the displayed finite and literal ordinary-word ingredients.
+`FloorIntervalStep`.** The latest continuation proves an all-length
+nonintegral-template displacement theorem, projects full ordinary source
+sets to the same unit root with explicit mass loss, classifies complete-
+witness affine mergers and their unbounded edit cost, and gives a
+density-free arithmetic-germ criterion with explicit radius bounds.
+Forty-six new Lean declarations certify the stated finite and ordinary
+ingredients. The imported analytic theorems remain written inputs.
 No successful universal certificate transformer or exclusion of all
 escaping or cyclic components is claimed.
 
 The earlier formal equivalences, unrestricted source-witness reductions,
 finite boundary optimizer, and ordinary atomic eigenmeasure classification
 remain available below. There is no input exponent or witness-length bound,
-`sorry`, or conjectural axiom in the new Lean modules. The adaptive module
-uses Lean 4.34.1 core/Std and its unchanged pinned lattice dependency;
-the finite pressure and repair modules use the pinned Mathlib environment.
+`sorry`, or conjectural axiom in the new Lean modules. The witness-charge
+module uses Lean4.34.1 `Std`; the other new modules use the pinned Mathlib
+environment, and template selection retains its unchanged lattice dependencies.
 
-## Latest checkpoint: ordinary entrance laws and adaptive integer descent
+## Latest checkpoint: four attacks on the missing constructions
+
+The [construction-attacks packet](construction-attacks-20261123/README.md)
+continues published head `3124c03a6a672cb70cdd5604eaf2d4eb19a467e3`.
+Its template theorem uses Matveev's explicit bound and a complete exact
+continued-fraction certificate to cover every word length. Nonintegral
+fixed centers cannot improve ordinary source height. The minimum nonzero
+template score has a complete finite evaluator; its equality with an
+elementary rank is equivalent to excluding nonstandard positive cycles,
+and remains open.
+
+The full-source projection supplies every missing odd-unit fiber in the
+previous finite trial certificate while preserving the same target root.
+The witness charge classifies homogeneous mergers, excludes them on an
+entire retained four-odd-step family at every clock, and proves that every
+successful joint alignment on that family needs an unbounded edit budget.
+
+The new arithmetic-germ criterion uses the latest frozen PR182 cycle
+obstruction and Chambert-Loir--Nous's multipoint rationality theorem.
+It replaces a limiting-density assumption with explicit stronger complex
+and ternary radius bounds on the complete actual deflated germ. Constructing
+the germ and those bounds for arbitrary sources is not established.
+
+The [execution and review report](../../reports/lean-exact-witness-global-20261121/construction-attacks-20261123/README.md)
+records 46 fresh strict Lean audits, four normal/optimized exact checkers,
+primary-source interfaces, and four source-bound independent internal reviews.
+
+## Previous checkpoint: ordinary entrance laws and adaptive integer descent
 
 The [literature-driven closing-step packet](profound-step-20261123/README.md)
 continues published head `92e7aaf602a0d4f0442556a133ae8e882e1fe93f`.

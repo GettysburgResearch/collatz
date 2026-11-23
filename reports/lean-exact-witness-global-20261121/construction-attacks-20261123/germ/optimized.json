@@ -1,0 +1,33 @@
+{
+  "actual_germs": {
+    "coefficient_equalities": 4260,
+    "inverse_coefficients": 64,
+    "maximum_degree": 219,
+    "ordinary_steps": 4107,
+    "sources": 153
+  },
+  "capacity": {
+    "below_threshold_control": true,
+    "certified_payoff_floors": [
+      "9/100",
+      "3/100"
+    ],
+    "explicit_strategy": [
+      "2/5",
+      "3/5"
+    ],
+    "log_series_terms": 96,
+    "strict_radius_controls": 4
+  },
+  "controls": {
+    "fitted_constant_rejected": true,
+    "foreign_prime_rejected": true,
+    "old_derivative_zero_fixture_retained": true
+  },
+  "scope": "Exact finite capacity and known-convergent actual-germ controls; not the analytic rationality theorem or a universal germ construction.",
+  "source_sha256": {
+    "DENSITY_FREE_DEFLATED_GERM.md": "dd9f6d886e85ce7c58bbcf701b584ecefe05df50885c0edd3bb64c0405f45990",
+    "GermCapacity.lean": "8961a62fc28dcc5d00e81b060bf7d7905ecd58f6bd4bcc07412cfd7b2a6f5ef1",
+    "check_deflated_germ.py": "639426325905d8741e2508bea25c5923a961cea7a1aeaa3df017239018c79ff8"
+  }
+}

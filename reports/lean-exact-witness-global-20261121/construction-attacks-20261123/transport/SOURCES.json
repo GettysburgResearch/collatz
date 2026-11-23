@@ -1,0 +1,52 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "date": "2026-11-23",
+  "parent": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+  "scope": "New direct ordinary-source projection and its exact weighted fibers; no external predecessor-growth theorem imported",
+  "sources": [
+    {
+      "pr": 177,
+      "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/COMMON_DISPLACEMENT_AND_FREE_ENERGY.md",
+      "claims": "CF5-CF9",
+      "use": "Exact finite trial cost; finite transported inverse-power certificate and its unchanged ordinary source pool",
+      "read_scope": "Full note"
+    },
+    {
+      "pr": 177,
+      "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "claims": "BP1-BP3, BP11-BP16",
+      "use": "Ordinary product weight, exact Green source identity, root summability and actual repair target",
+      "read_scope": "Full note"
+    },
+    {
+      "pr": 177,
+      "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "claims": "1-12",
+      "use": "Complete actual unit-ancestor bijection used to pull projected finite targets back to source trials",
+      "read_scope": "Full note"
+    },
+    {
+      "pr": 177,
+      "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "claims": "HE5, HE17-HE29",
+      "use": "Checked that the Haar multiplier, exceptional pointwise source term and ordinary atomic measure are prior results; not claimed new",
+      "read_scope": "Relevant sections and source search"
+    },
+    {
+      "pr": 177,
+      "commit": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "claims": "21-43",
+      "use": "Checked the existing retained-endpoint and full-odd-domain normalization boundaries; did not rebrand those results as new",
+      "read_scope": "Sections4-7"
+    }
+  ],
+  "new_written_claims": "FP1-FP14 in FULL_SOURCE_FINITE_CERTIFICATE.md",
+  "formal_scope": "Six finite actual-path, height and fiber-aggregation declarations; infinite geometric fiber estimates and pressure comparisons are written only",
+  "unresolved": "Construct moving-sibling ordinary ancestor populations satisfying FP10; unrestricted escape, cycles and residue-512 witness transport remain open",
+  "normalization_hypotheses": "FP8 requires a nonempty finite ancestor set G; FP9 requires N>=1. FP7 remains valid for arbitrary finite G."
+}

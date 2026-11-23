@@ -1,0 +1,237 @@
+{
+  "continued_fraction": {
+    "exponent_cutoff": 1000000000000,
+    "log_series_terms": 128,
+    "rows": [
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 1,
+        "numerator": 1,
+        "partial_quotient": 1,
+        "upper": false
+      },
+      {
+        "certificate": "exact base gap; all multiples covered by power lifting",
+        "denominator": 1,
+        "numerator": 2,
+        "partial_quotient": 1,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 2,
+        "numerator": 3,
+        "partial_quotient": 1,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > (3/2)*2^-b",
+        "denominator": 5,
+        "numerator": 8,
+        "partial_quotient": 2,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 12,
+        "numerator": 19,
+        "partial_quotient": 2,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > (3/2)*2^-b",
+        "denominator": 41,
+        "numerator": 65,
+        "partial_quotient": 3,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 53,
+        "numerator": 84,
+        "partial_quotient": 1,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 306,
+        "numerator": 485,
+        "partial_quotient": 5,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 665,
+        "numerator": 1054,
+        "partial_quotient": 2,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 15601,
+        "numerator": 24727,
+        "partial_quotient": 23,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 31867,
+        "numerator": 50508,
+        "partial_quotient": 2,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 79335,
+        "numerator": 125743,
+        "partial_quotient": 2,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 111202,
+        "numerator": 176251,
+        "partial_quotient": 1,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 190537,
+        "numerator": 301994,
+        "partial_quotient": 1,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 10590737,
+        "numerator": 16785921,
+        "partial_quotient": 55,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 10781274,
+        "numerator": 17087915,
+        "partial_quotient": 1,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 53715833,
+        "numerator": 85137581,
+        "partial_quotient": 4,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 171928773,
+        "numerator": 272500658,
+        "partial_quotient": 3,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 225644606,
+        "numerator": 357638239,
+        "partial_quotient": 1,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 397573379,
+        "numerator": 630138897,
+        "partial_quotient": 1,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 6189245291,
+        "numerator": 9809721694,
+        "partial_quotient": 15,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 6586818670,
+        "numerator": 10439860591,
+        "partial_quotient": 1,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 65470613321,
+        "numerator": 103768467013,
+        "partial_quotient": 9,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 137528045312,
+        "numerator": 217976794617,
+        "partial_quotient": 2,
+        "upper": true
+      },
+      {
+        "certificate": "lower convergent; irrelevant to Q>P",
+        "denominator": 753110839881,
+        "numerator": 1193652440098,
+        "partial_quotient": 5,
+        "upper": false
+      },
+      {
+        "certificate": "Lambda > 2^-100 > (3/2)*2^-b",
+        "denominator": 5409303924479,
+        "numerator": 8573543875303,
+        "partial_quotient": 7,
+        "upper": true
+      }
+    ],
+    "small_exponents": [
+      {
+        "gap": 1,
+        "length": 2,
+        "p": 1
+      },
+      {
+        "gap": 7,
+        "length": 4,
+        "p": 2
+      },
+      {
+        "gap": 5,
+        "length": 5,
+        "p": 3
+      },
+      {
+        "gap": 47,
+        "length": 7,
+        "p": 4
+      }
+    ]
+  },
+  "controls": {
+    "integral_center_control": true,
+    "rejected_ordinary_inputs": 2,
+    "unpadded_two_to_one_budget_rejected": true,
+    "zero_control": true
+  },
+  "scope": "Exact finite CF certificate and ordinary controls; Matveev and the infinite reduction are written inputs, not executed or formalized here.",
+  "source_sha256": {
+    "TEMPLATE_SELECTION.md": "90682f31bb3fa4a7d39ac779b9c4c749a1cc37c3bffa2a2a56b5e023a1d164d2",
+    "TemplateSelection.lean": "1b6244a88168434637780507660bce382135caeeb65ad8242172bc95b0b47715",
+    "check_template_selection.py": "12919fec4e6a42e2fca22e4fe38b2814eae64928dcc017e02715185f08c8b798"
+  },
+  "templates": {
+    "actual_sources": 24570,
+    "contracting_native_window_descents": 14984,
+    "contracting_nonintegral_sources": 19197,
+    "improving_integral_sources": 24,
+    "nonintegral_sources": 24393,
+    "words": 8190
+  },
+  "terminal_compiler": {
+    "ordinary_steps": 41074,
+    "padded_short_word": 1,
+    "sources": 1023
+  }
+}
