@@ -1,0 +1,17 @@
+{
+  "schema": "collatz-joint-publication/v1",
+  "branch": "research/astra-joint-closure-20261124",
+  "main_base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "science_commit": "a5a6c2a2baa822f5428fae5a5910648efea799fb",
+  "science_tree": "9e576c2a8d5a7fdca98b85890c63cde7da8255e0",
+  "science_checkout_tracked_files": 342,
+  "source_bindings_verified": 26,
+  "source_manifest_sha256": "62273d4e047db9a828e5ecfbad0acadb5a07d1b5a23a5f77a5c00de1bbfe6a51",
+  "published_science_validation": {
+    "success": true,
+    "regressions": true,
+    "commands": 11,
+    "finished_utc": "2026-11-24T14:49:05.158847+00:00"
+  },
+  "scope": "This receipt follow-up adds only this publication record and the complete published-science validator receipt. Mathematical scope remains that of the scientific packet; Collatz is open."
+}

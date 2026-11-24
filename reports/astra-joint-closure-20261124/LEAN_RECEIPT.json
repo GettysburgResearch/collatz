@@ -1,0 +1,270 @@
+{
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Reused prebuilt supporting dependencies; no fresh mathlib build.",
+  "frozen_import_only": [
+    {
+      "pr": 202,
+      "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "path": "research/synchronized-long-basin-blocks-20261124/ClockTransport.lean",
+      "git_blob": "b0081dbb22740f89e7d369c9933d704d3074a539",
+      "original_sha256": "008a8f330a39b4d0a0e573f2b2463eb388ad74cd29c8cce6d8af8b169955c059",
+      "transformation": "Replace only import Mathlib by the four listed narrow imports.",
+      "imports": [
+        "import Mathlib.Tactic.LinearCombination",
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.NormNum",
+        "import Mathlib.Tactic.Ring"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "ClockTransport.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "a84b3f9ff98e3634473402b39aeb7ea5bd35963ad8306b4916ab00c5c0fa6aa1",
+      "compiler_input_sha256": "ba13261cc321727a088aeb983cfd276264f996f07d39b5112c920783f380cb3e",
+      "theorem_count": 8,
+      "axioms": {
+        "SynchronizedBasinBlocks.walk_add": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.common_clock": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.attach_target": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.fixed_clock_injective": [],
+        "SynchronizedBasinBlocks.inverse_step_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.carry_height_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.scaled_carry_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.router_height_cost": []
+      },
+      "diagnostics": "ClockTransport.lean:80:5: warning: Variable name `hB` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hB\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/MixedTransport.lean",
+      "git_blob": "9375fd1abd56f63a92ee4de9cad7630d1a179199",
+      "original_sha256": "aaac3afd181c9f8e48bd971452365771cd050925cf67439c2efe3affe191c1ce",
+      "transformation": "Replace only import Mathlib by the four listed narrow imports.",
+      "imports": [
+        "import Mathlib.Tactic.LinearCombination",
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.NormNum",
+        "import Mathlib.Tactic.Ring"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "MixedTransport.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "bbf92b60c625615e69ac5345a4a4f95db9d4b1359f7058ade96064470ec93251",
+      "compiler_input_sha256": "5550984e62940525879c9eafc9a4daa67f5e27ea61400306094df16b93aa957a",
+      "theorem_count": 6,
+      "axioms": {
+        "MixedTransport.run_add": [
+          "propext"
+        ],
+        "MixedTransport.distinct_depths": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MixedTransport.cannot_hit_target_earlier": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MixedTransport.common_clock": [
+          "propext"
+        ],
+        "MixedTransport.lift_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MixedTransport.word_carry_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "diagnostics": ""
+    }
+  ],
+  "working_sources": [
+    {
+      "path": "research/astra-joint-closure-20261124/ordinary/InternalMerge.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "InternalMerge.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "4677fcfd89afd374ff9a513a50a238a317ef39482d70ece157c122a8da4e26de",
+      "compiler_input_sha256": "2ea4977936bf7739e85a405cdd7c27b9a9f98cd336780d47d5b24fcc36ad88d4",
+      "theorem_count": 7,
+      "axioms": {
+        "InternalMerge.append": [
+          "propext"
+        ],
+        "InternalMerge.halve": [
+          "propext"
+        ],
+        "InternalMerge.ones": [
+          "propext",
+          "Quot.sound"
+        ],
+        "InternalMerge.internal_meeting": [
+          "propext",
+          "Quot.sound"
+        ],
+        "InternalMerge.reverse_odd_shadow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InternalMerge.shadow_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "InternalMerge.source_remainder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "diagnostics": ""
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/arithmetic/FiniteCycleTests.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "FiniteCycleTests.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "6d59babca177a85ead06fcfcd732b4e9715296d0521284b3b9f71d858e0ee0bc",
+      "compiler_input_sha256": "9ff6c8e35357f7d0fa58feac4404c1dd403e7cd540cbda3cebdf69f614e884df",
+      "theorem_count": 4,
+      "axioms": {
+        "FiniteCycleTests.branch_swap": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FiniteCycleTests.translation_generator": [
+          "propext"
+        ],
+        "FiniteCycleTests.outside_divides_denominator": [
+          "propext"
+        ],
+        "FiniteCycleTests.saturated_residue": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "diagnostics": ""
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/upstream/ClockTransport.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "ClockTransport.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "6c6745934b92708faee8f7a794c5e53c60f050dc4faa298e0e9927ba7a88924d",
+      "compiler_input_sha256": "7ee5e650bbc4c34c6adb6c11b55f707222c99a60e3ff890ba9e4e1bbcb2fff1d",
+      "theorem_count": 8,
+      "axioms": {
+        "SynchronizedBasinBlocks.walk_add": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.common_clock": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.attach_target": [
+          "propext"
+        ],
+        "SynchronizedBasinBlocks.fixed_clock_injective": [],
+        "SynchronizedBasinBlocks.inverse_step_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.carry_height_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.scaled_carry_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SynchronizedBasinBlocks.router_height_cost": []
+      },
+      "diagnostics": ""
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/upstream/MixedTransport.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "MixedTransport.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256": "04460e97e34cdec99e12c43de70f1cbf10c93b38adbc05c905f64d9d9c36564d",
+      "compiler_input_sha256": "0533c706cd85321389229c5aad3a36d53438cc0b298573bdcbfbfb9dafa54805",
+      "theorem_count": 6,
+      "axioms": {
+        "MixedTransport.run_add": [
+          "propext"
+        ],
+        "MixedTransport.distinct_depths": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MixedTransport.cannot_hit_target_earlier": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MixedTransport.common_clock": [
+          "propext"
+        ],
+        "MixedTransport.lift_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MixedTransport.word_carry_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "diagnostics": ""
+    }
+  ],
+  "distinct_theorems": 25,
+  "successful_compiler_executions": 6
+}
