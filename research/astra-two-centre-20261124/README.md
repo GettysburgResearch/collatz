@@ -25,7 +25,7 @@ V_K(x)=\min_{y\text{ in the component of }x}
 \left(K\lfloor\log_2y\rfloor+d_c(x,y)\right)
 \]
 
-is a computable proper function, whether or not Collatz holds. It obeys an exact Bellman recurrence. If \(V_K(x)<K\lfloor\log_2x\rfloor\) for every \(x>1\), some actual adjacent vertex has strictly smaller rank and repeated selection must reach 1.
+is a computable proper function for each fixed positive rational K, whether or not Collatz holds. It obeys an exact Bellman recurrence. If \(V_K(x)<K\lfloor\log_2x\rfloor\) for every \(x>1\), some actual adjacent vertex has strictly smaller rank and repeated selection must reach 1.
 
 For \(K=3\), the exact finite check covers every \(1\le x\le10^6\), including competitors outside that interval. On these sources \(V_3(x)\) equals the cumulative cost of the actual forward orbit to 1. The largest observed ratio to \(\lfloor\log_2x\rfloor\) is \(237739/102960\), attained at 27. This is finite evidence. It is not a universal bound on runtime, height, or weighted duration.
 
@@ -35,7 +35,7 @@ The proof attempt obtained one usable charge. Fix an integer \(X\ge1\), and set 
 L\le3h-1.
 \]
 
-Inside this interval, staying in the interval forces each state below \(2X\) to be odd and each state above it to be even. The allowed map preserves cyclic order. Extend this finite partial map to a circle homeomorphism. Its two partition boundaries have at most \(2h\) preimages through clock \(h-1\), so at most \(2h\) different length-\(h\) parity words occur. Exact parity coding makes those words injective on the ordinary integers of the interval, since its width is at most \(2^h\). Applying the count to overlapping windows proves the bound. Each such visit has bounded harmonic cost.
+Inside this interval, staying in the interval forces each state below \(2X\) to be odd and each state above it to be even. The allowed map preserves cyclic order. Extend this finite partial map to a circle homeomorphism. Its two partition boundaries have at most \(2h\) preimages through clock \(h-1\), so at most \(2h\) different length-\(h\) parity words occur. Exact parity coding makes those words injective on the ordinary integers of the interval, since its width is at most \(2^h\). Applying the count to overlapping windows proves the bound. Each such visit has harmonic cost at most 4.
 
 **The failed gluing step is explicit.** Projecting different intervals onto one circle does not preserve cyclic order; [rewriting.md](rewriting.md) gives an ordinary trajectory witnessing the reversal. The proof does not bound the number of visits, the number of bands reached, or their accumulated cost in terms of the original source. In particular it does not prove the global prefix estimate
 
