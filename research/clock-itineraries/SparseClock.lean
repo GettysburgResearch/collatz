@@ -32,6 +32,38 @@ private theorem budget (es : List Nat) :
   | cons e es ih =>
     by_cases h : e=2 <;> simp [List.sum_cons,defects,cost,h] <;> omega
 
+private theorem Path.snoc {es : List Nat} {x y q e : Nat} (p : Path es x y)
+    (g : Gap e y q) : Path (es++[e]) x q := by
+  induction p with
+  | nil => exact .cons g (.nil _)
+  | cons edge _ ih => exact .cons edge (ih g)
+
+private theorem path_of_route {q s a : Nat} {rs : List Bool} (r : Route q rs s a) :
+    ∃ es, Path es a q ∧ es.sum=s ∧ es.length=rs.length := by
+  induction r with
+  | nil => exact ⟨[],.nil _,rfl,rfl⟩
+  | @cons q y x e s mark rs edge _ _ ih =>
+    obtain ⟨es,p,ht,hl⟩ := ih
+    exact ⟨es++[e],p.snoc edge,by simp [List.sum_append,ht,Nat.add_comm],by simp [hl]⟩
+
+private theorem Path.unit_budget {es : List Nat} {x q : Nat} (p : Path es x q) :
+    2*es.length ≤ es.sum+ones es := by
+  induction p with
+  | nil => decide
+  | @cons x y q e es edge _ ih =>
+    have he := edge.pos
+    by_cases h : e=1 <;> simp [ones,h] <;> omega
+
+/-- A nonconverging gate supplies linearly many unit gaps in its own suffix. -/
+theorem bad_suffix_unit_gaps {q s a : Nat} {rs : List Bool} (r : Route q rs s a)
+    (bad : ¬ReachesOne a) (hq : 0<q) :
+    ∃ es, Path es a q ∧ es.sum=s ∧ es.length=rs.length ∧
+      2*rs.length ≤ 5*ones es+5*a := by
+  obtain ⟨es,p,ht,hl⟩ := path_of_route r
+  have h := r.clock_bound bad hq
+  have hu := p.unit_budget
+  exact ⟨es,p,ht,hl,by omega⟩
+
 private theorem defect_cost {es : List Nat} {x q : Nat} (p : Path es x q) :
     3*defects es ≤ cost es + 2*ones es := by
   induction p with
@@ -326,6 +358,7 @@ theorem sparse_high_carry {es : List Nat} {x q j : Nat} (p : Path es x q)
   rwa [he] at bound
 
 #print axioms Path.balanced
+#print axioms bad_suffix_unit_gaps
 #print axioms neutral_parameter
 #print axioms neutral_realize
 #print axioms Path.shifted_identity

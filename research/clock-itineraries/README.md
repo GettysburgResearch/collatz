@@ -77,7 +77,7 @@ For a relative carry of at least $2^{-j}$, Lean proves the explicit integer boun
 
 A separate written argument uses Evertse's Corollary 1 to strengthen the conclusion to $h/\log b\to\infty$ along any sequence of qualifying rows with $b\to\infty$ at fixed $\epsilon>0$. The application of that corollary and the resulting limit are proposed for mathematical review. [Derivation and source](SparseDefects.md)
 
-**Remaining step.** The lower theorem prescribes the first $m-1$ residues. Both upper estimates count exceptions on the whole path. The common suffix can contain enough gaps of length one to obey both estimates. A proof that one necessary prefix word is absent at every eligible gate on arbitrarily large rows would close the criterion.
+**Remaining step.** The lower theorem prescribes the first $m-1$ residues. Both upper estimates count exceptions on the whole path. On a nonconverging ray the common suffix of length $n$ already has at least $2n/5-a$ gaps of length one. Indeed every other gap costs at least two, and the suffix clock is at most $8n/5+a$. The result `bad_suffix_unit_gaps` gives this lower bound on the actual suffix. A proof that one necessary prefix word is absent at every eligible gate on arbitrarily large rows would close the criterion.
 
 ## Sources and replay
 

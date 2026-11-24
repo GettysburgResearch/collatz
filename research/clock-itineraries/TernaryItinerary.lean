@@ -374,7 +374,7 @@ private theorem Route.rate {q s a : Nat} {rs : List Bool} (h : Route q rs s a)
       _ = 2^(8*(r::rs).length)*x^5 := by
         rw [List.length_cons,Nat.mul_add,Nat.mul_one,Nat.pow_add]; ac_rfl
 
-private theorem Route.clock_bound {q s a : Nat} {rs : List Bool} (h : Route q rs s a)
+theorem Route.clock_bound {q s a : Nat} {rs : List Bool} (h : Route q rs s a)
     (bad : ¬ReachesOne a) (hq : 0<q) : 5*s ≤ 8*rs.length + 5*a := by
   apply (Nat.pow_le_pow_iff_right (by decide : 1<2)).1
   have hp := Nat.pow_le_pow_left (Nat.le_of_lt (Nat.lt_two_pow_self (n:=a))) 5
