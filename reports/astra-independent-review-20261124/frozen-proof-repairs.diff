@@ -1,0 +1,62 @@
+--- a/research/phase-packing-round12-20261124/PhasePacking.lean
++++ b/research/phase-packing-round12-20261124/PhasePacking.lean
+@@ -44,25 +44,25 @@
+     exact mul_le_mul_of_nonneg_right (by linarith) (by positivity)
+   have hh := hleft.trans hright
+   have hdc : 0 < (2 : ℚ) ^ d * 2 ^ c := by positivity
+-  apply (mul_le_mul_right₀ hdc).mp
++  apply (mul_le_mul_iff_left₀ hdc).mp
+   calc
+     (2 : ℚ) ^ b * ((r : ℚ) / 2 ^ d) * (2 ^ d * 2 ^ c) =
+-        2 ^ b * 2 ^ c * r := by field_simp; ring
++        2 ^ b * 2 ^ c * r := by field_simp
+     _ ≤ (3 * (q : ℚ) + 2 ^ c) * 2 ^ d := hh
+-    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp; ring
++    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp
+ 
+ /-- Height recovered from the integer carry guard, without real logarithms. -/
+ theorem cubic_height (q u y : ℚ) (hu : 0 < u) (hy : 1 ≤ y)
+     (hq : q = y * u) (h : u ^ 3 ≤ 4 * q) : q ^ 2 ≤ 4 * y ^ 3 := by
+   have ht : u ^ 2 ≤ 4 * y := by
+-    apply (mul_le_mul_right₀ hu).mp
++    apply (mul_le_mul_iff_left₀ hu).mp
+     calc
+       u ^ 2 * u = u ^ 3 := by ring
+       _ ≤ 4 * q := h
+       _ = (4 * y) * u := by rw [hq]; ring
+   calc
+     q ^ 2 = y ^ 2 * u ^ 2 := by rw [hq]; ring
+-    _ ≤ y ^ 2 * (4 * y) := mul_le_mul_of_nonneg_left ht (sq_nonneg y)
++    _ ≤ y ^ 2 * (4 * y) := mul_le_mul_of_nonneg_left ht (pow_nonneg ((by norm_num : (0 : ℚ) ≤ 1).trans hy) 2)
+     _ = 4 * y ^ 3 := by ring
+ 
+ /-- Propagation of the difference from a canonical rational trajectory. -/
+--- a/research/scalar-carry-cocycle-20261124/CarryCocycle.lean
++++ b/research/scalar-carry-cocycle-20261124/CarryCocycle.lean
+@@ -20,7 +20,7 @@
+     _ = 16^n := by
+       rw [← pow_mul, Nat.mul_comm n 4, pow_mul]
+       norm_num
+-    _ ≤ 64^n := by gcongr <;> norm_num
++    _ ≤ 64^n := by gcongr; norm_num
+     _ = 8^(2*n) := by rw [pow_mul]; norm_num
+ 
+ /-- All possible carry changes, including arbitrarily large carries.
+@@ -34,7 +34,7 @@
+       omega
+     calc
+       8^d * (c+1)^4 ≤ 8^c * 8^(2*c) := by gcongr
+-      _ = 8^(3*c) := by rw [← pow_add]; congr 1 <;> omega
++      _ = 8^(3*c) := by rw [← pow_add]; congr 1; omega
+       _ ≤ 8^(3*c) * (d+1)^4 := by
+         simpa using Nat.mul_le_mul_left (8^(3*c)) hp
+   · by_cases h3 : d ≤ 3*c
+@@ -62,7 +62,7 @@
+             _ = (3*c+2+1)^4 := by ring
+         calc
+           8^(3*c+2)*(c+1)^4 = 8^(3*c)*(64*(c+1)^4) := by
+-            rw [pow_add]; norm_num <;> ring
++            rw [pow_add]; norm_num; ring
+           _ ≤ 8^(3*c)*(3*c+2+1)^4 := Nat.mul_le_mul_left _ hfour
+ 
+ /-- a = actual gap, b = canonical centered ternary gap, c,d = carries. -/

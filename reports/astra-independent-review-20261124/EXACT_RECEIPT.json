@@ -1,0 +1,143 @@
+{
+  "scope": "finite identities and specified bounded controls; not a proof of full Collatz",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "records": [
+    {
+      "source": "research/astra-birth-rigidity-20261124/check_run_support.py",
+      "source_sha256": "e5484544bb428c19e89c1bf46d764dcbaa0741387de11cfa11a7a734f5150923",
+      "assert_nodes": 0,
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_run_support.py"
+          ],
+          "started_utc": "2026-11-24T03:59:14.363239+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "2ebdfba74bb3711da65e0ed27b3a4673fc88d7d22385b08ee8c1ea0e07439fe0",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_run_support.normal.log"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_run_support.py"
+          ],
+          "started_utc": "2026-11-24T03:59:14.752708+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "2ebdfba74bb3711da65e0ed27b3a4673fc88d7d22385b08ee8c1ea0e07439fe0",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_run_support.optimized.log"
+        }
+      ],
+      "byte_identical_normal_optimized": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "research/astra-birth-rigidity-20261124/check_top_component.py",
+      "source_sha256": "1f9c8f9d0d46a99c3f832a1262b75027082bc26277e3f37371b27323c4a5827a",
+      "assert_nodes": 0,
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_top_component.py"
+          ],
+          "started_utc": "2026-11-24T03:59:15.383563+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "8e2015f086527feefe3e552bead5450e70274e2fc53d93d3318f3d408ed38301",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_top_component.normal.log"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_top_component.py"
+          ],
+          "started_utc": "2026-11-24T03:59:16.130220+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "8e2015f086527feefe3e552bead5450e70274e2fc53d93d3318f3d408ed38301",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_top_component.optimized.log"
+        }
+      ],
+      "byte_identical_normal_optimized": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "research/astra-birth-rigidity-20261124/check_phase_tree.py",
+      "source_sha256": "0afae3b15539db95d778f872d5b50985473f466ddfa49879290a47ad58469a5c",
+      "assert_nodes": 0,
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_phase_tree.py"
+          ],
+          "started_utc": "2026-11-24T03:59:16.791787+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "6e16f5656db4f8784fb10c3832f3991bec823faddb994399b684c4902846ee95",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_phase_tree.normal.log"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_phase_tree.py"
+          ],
+          "started_utc": "2026-11-24T03:59:16.838904+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "6e16f5656db4f8784fb10c3832f3991bec823faddb994399b684c4902846ee95",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_phase_tree.optimized.log"
+        }
+      ],
+      "byte_identical_normal_optimized": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "research/astra-birth-rigidity-20261124/check_triangular_scripts.py",
+      "source_sha256": "c026442ce60df694d9f6d0c228a4819687dd5a28ba6eace52f8b34aee1b11f98",
+      "assert_nodes": 0,
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_triangular_scripts.py"
+          ],
+          "started_utc": "2026-11-24T03:59:16.964156+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "acfa1cdc584f93ef709c506fbfb97b4f90460409ddb0160a8dd22f521155fb29",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_triangular_scripts.normal.log"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz/research/astra-birth-rigidity-20261124/check_triangular_scripts.py"
+          ],
+          "started_utc": "2026-11-24T03:59:17.049894+00:00",
+          "exit_code": 0,
+          "stdout_sha256": "acfa1cdc584f93ef709c506fbfb97b4f90460409ddb0160a8dd22f521155fb29",
+          "stderr": "",
+          "log": "reports/astra-independent-review-20261124/check_triangular_scripts.optimized.log"
+        }
+      ],
+      "byte_identical_normal_optimized": true,
+      "source_unchanged": true
+    }
+  ]
+}

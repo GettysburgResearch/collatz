@@ -1,0 +1,58 @@
+{
+  "scope": "finite source modules independently executed by the indicated agents, not full analytic or infinite proofs",
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "base_flags": [
+    "-j",
+    "1",
+    "-DwarningAsError=true"
+  ],
+  "additional_autoImplicit_false": [
+    "BoundedBirth",
+    "PhaseTreeCertificate"
+  ],
+  "records": [
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/RunSupport.lean",
+      "source_sha256": "0054ab81c1f2ad8f424e2d537db9d133ba464c6e0cb67bc416a0627868cfe6ac",
+      "executed_source": "/workspace/scratch/ad48b85f0ea2/agent-lean/RunSupport.lean",
+      "log": "reports/astra-independent-review-20261124/RunSupport.lean.log",
+      "log_sha256": "4d659dc0c1ede14d6ebd6e457bae0582544ca33d120bcb056e86db7615029f59",
+      "strict_compile_exit_code": 0,
+      "verification": "observed successful subagent compiler execution, reproduced byte-for-byte source and output"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/BoundedBirth.lean",
+      "source_sha256": "10d071c56edafd3d16941671cbe028f71c3867ce628e88e8c58f2f895bf903dd",
+      "executed_source": "/workspace/scratch/ad48b85f0ea2/agent-lean/BoundedBirth.lean",
+      "log": "reports/astra-independent-review-20261124/BoundedBirth.lean.log",
+      "log_sha256": "7798cbfbf6abfc194b0ee8655da77697b38484ac83ce22a6ae0016903e07375a",
+      "strict_compile_exit_code": 0,
+      "verification": "observed successful subagent compiler execution, reproduced byte-for-byte source and output"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/CarryBudgetStd.lean",
+      "source_sha256": "ad7788e158540dea2e8b6e34eda4604a23819ffc47b0177cf003e352fa122691",
+      "executed_source": "/workspace/scratch/ad48b85f0ea2/agent-lean/CarryBudgetStd.lean",
+      "log": "reports/astra-independent-review-20261124/CarryBudgetStd.lean.log",
+      "log_sha256": "5fb02574f95585014eb204e81aef29db67c516cb2322d216e8742df6d903f509",
+      "strict_compile_exit_code": 0,
+      "verification": "observed successful subagent compiler execution, reproduced byte-for-byte source and output"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/PhaseTreeCertificate.lean",
+      "source_sha256": "097354975f0817203810e3d4ff93b982ec7567bce3fa20ed340d4c9f3f4dab56",
+      "executed_source": "/workspace/scratch/ad48b85f0ea2/agent-stationary/PhaseTreeCertificate.lean",
+      "log": "reports/astra-independent-review-20261124/PhaseTreeCertificate.lean.log",
+      "log_sha256": "e31bfebbd7540830127dc2b9c5ef2751d92919cd75fbb43d5f3dfe0299b1e3ba",
+      "strict_compile_exit_code": 0,
+      "verification": "observed successful subagent compiler execution, reproduced byte-for-byte source and output"
+    }
+  ],
+  "duplicate_root_replay": {
+    "source": "RunSupport.lean",
+    "status": "timeout after 120 seconds with no diagnostics",
+    "success_claimed": false,
+    "other_sources_reached": false
+  }
+}

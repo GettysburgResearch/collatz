@@ -1,0 +1,7 @@
+'Collatz.BoundedBirth.potential' does not depend on any axioms
+'Collatz.BoundedBirth.rowMass' does not depend on any axioms
+'Collatz.BoundedBirth.zero_carry_bound' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundedBirth.row_exact' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundedBirth.row_le' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundedBirth.positive_row' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundedBirth.birth_row' depends on axioms: [propext, Quot.sound]
