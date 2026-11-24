@@ -1,0 +1,3 @@
+'Collatz.PeakCertificate.finite_tree' does not depend on any axioms
+'Collatz.PeakCertificate.local_safety' depends on axioms: [propext, Quot.sound]
+'Collatz.PeakCertificate.lift' depends on axioms: [propext, Classical.choice, Quot.sound]

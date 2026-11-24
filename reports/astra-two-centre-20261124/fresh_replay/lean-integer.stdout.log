@@ -1,0 +1,5 @@
+'Collatz.BinaryBoundary.transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BinaryBoundary.divisionBudget' depends on axioms: [propext, Quot.sound]
+'Collatz.MixedBoundary.negativeWall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MixedBoundary.expenditure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MixedBoundary.clearsDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
