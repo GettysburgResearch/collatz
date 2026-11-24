@@ -1,0 +1,3 @@
+'Collatz.DelayedTransversal.same_clock_max' depends on axioms: [propext, Quot.sound]
+'Collatz.DelayedTransversal.tagged_transversal' depends on axioms: [propext, Quot.sound]
+'Collatz.DelayedTransversal.settled_advance' depends on axioms: [propext]
