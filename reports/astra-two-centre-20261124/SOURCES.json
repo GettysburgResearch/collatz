@@ -1,0 +1,119 @@
+{
+  "schema": "collatz-astra-two-centre-sources/v1",
+  "baseline_commit": "3868f83ed8fab67ea1bcb28312a288ca96c7dc5f",
+  "baseline_tree": "245fe654920863afef008b2952c89732dbb47d56",
+  "remote_rechecked_date_utc": "2026-11-24",
+  "upstream": [
+    {
+      "pr": 195,
+      "head": "b69ec87d28f539233a32b7c07964f5605320eb71",
+      "review_scope": "targeted written-source intake; upstream formal development not rebuilt",
+      "files": [
+        {
+          "path": "research/astra-global-closure-20261124/round4/README.md",
+          "git_blob": "f391e79a80fa446a25f91b95874f18393c17a57c",
+          "sha256": "31ac8213c0cfe26925af39f72201d853ea5007ff383a4250e8df3f855929f7e5"
+        },
+        {
+          "path": "research/astra-global-closure-20261124/round4/ordinary/README.md",
+          "git_blob": "a2b5f2c2b45f79e460d91a652654d4dbaf360134",
+          "sha256": "dc57012b30256c4439e8dcd8c6a73f4f6a9c331f5a7a8ea6b1cacaaf9cad5dc7"
+        },
+        {
+          "path": "research/astra-global-closure-20261124/round4/arithmetic/README.md",
+          "git_blob": "f4edf12cd33e5c598844072f8028d1dddd101da3",
+          "sha256": "f0d6a529de3e549bcb21ab6a0484f8ba39524fc07d6986e7e369a94b990dc241"
+        },
+        {
+          "path": "research/astra-global-closure-20261124/round4/arithmetic/CYCLOTOMIC_DEGREE.md",
+          "git_blob": "b8362fbffd09ab0589aab5b4576c533fbb4fbadf",
+          "sha256": "c9926f783775101f2765ccbe8bf0a8d3e422d92cf9287331a2aca4f522c103e4"
+        },
+        {
+          "path": "research/astra-global-closure-20261124/round4/head/README.md",
+          "git_blob": "d03d3646fc5152b409fb68c38a5e051ffcd9831f",
+          "sha256": "d442ceb155a590df54cb2d790c4159e0394fa5c5b6434467efdbc7a624c8f85a"
+        }
+      ]
+    },
+    {
+      "pr": 200,
+      "head": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "review_scope": "targeted written-source intake; upstream formal development not rebuilt",
+      "files": [
+        {
+          "path": "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+          "git_blob": "3dc8080948785fb780aade553d3205f982252442",
+          "sha256": "89d0a72940bce925d982bc21d77a1ae9539fe87c80d055b031c565dd807ae716"
+        },
+        {
+          "path": "research/regularity-rigidity-20261124/continuation/README.md",
+          "git_blob": "9172eb685eecb5643688253c4d6c97df5ccc8378",
+          "sha256": "d134780cbf50eda72690be2d0c89240cf9fdabe4c2534b565dcaed0259f84625"
+        },
+        {
+          "path": "research/regularity-rigidity-20261124/continuation/REVERSE_RENEWAL.md",
+          "git_blob": "562757fb4c91c9931b363abfafc948af0381682c",
+          "sha256": "06eda30d81f843f4a11ab218fed58a7c9caebd23aa35ebd0aed0e91d29b65cd8"
+        },
+        {
+          "path": "research/regularity-rigidity-20261124/continuation/MACROSCOPIC_RIGIDITY.md",
+          "git_blob": "55686b131b504c4efd0a39e938438a0f5ede0f0b",
+          "sha256": "f0919d8389fe2f2265e1ed4aa99a3482b3c11bb98d5d0095ef3996c9cd00b513"
+        },
+        {
+          "path": "research/regularity-rigidity-20261124/continuation/FOURIER_UNIFORMITY.md",
+          "git_blob": "c2de757a3658ac869bda95c960160d92a365f88d",
+          "sha256": "5a70f3aca69db0069c2605bb622b559e230ee211ba9c84cc621d09a473027d18"
+        }
+      ]
+    },
+    {
+      "pr": 202,
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "review_scope": "targeted written-source intake; upstream formal development not rebuilt",
+      "files": [
+        {
+          "path": "research/synchronized-long-basin-blocks-20261124/README.md",
+          "git_blob": "9ce54625c8cc09d2585a3a9c17cb95695196bce6",
+          "sha256": "bce786cafc67344d82fdc676a673d6185582be1bd39eaca79af4d3edfc62c3c1"
+        }
+      ]
+    }
+  ],
+  "external": [
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/19/v2",
+      "role": "Unmarked joint seed-image volume bound and nonperiodic integer-fibre separation; written imported inputs; no upstream formal replay"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "version": "v1, 2026-10-21",
+      "role": "Canonical profiles and relative odd density partitions, equations 20 through 28; written imported inputs"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/10/v3",
+      "role": "Reciprocal predecessor floor; source-qualified from earlier checkpoint"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/22/v3",
+      "role": "Prior ordered-gap complexity and record-prefix restrictions; comparison, not closure"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.disc.2025.114812",
+      "title": "Kevin Knight, Collatz high cycles do not exist",
+      "role": "Published prior art for mechanical-cycle exclusion; primary publisher preview read; full article not rebuilt"
+    },
+    {
+      "url": "https://arxiv.org/abs/2105.14697",
+      "title": "Yolcu, Aaronson and Heule, An Automated Approach to the Collatz Conjecture",
+      "role": "Primary context for string and matrix termination proofs; no theorem imported into our exact matrix certificate"
+    }
+  ],
+  "notes": [
+    "The scientific packet and source-file hashes at its exact commit are separately recorded by the fresh replay.",
+    "Source-qualified analytic conclusions retain the sources named in the written proofs.",
+    "PR146 first-return clock input f431078244e868dc699fad011044f0d5e7f76437 is reused via the pinned PR200 continuation; not rebuilt.",
+    "Earlier unchanged branch intakes remain pinned in reports/astra-fixed-atom-20261124/SOURCES.json."
+  ]
+}
