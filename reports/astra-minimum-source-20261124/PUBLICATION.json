@@ -1,0 +1,16 @@
+{
+  "schema": "collatz-minimum-source-publication/v1",
+  "science_commit": "f4453eff99bf9d0315404c6931e1c70e5c93cefe",
+  "science_tree": "84f47c53bf48896050746c785e7a7aa4e9a923de",
+  "previous_published_head": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+  "destination_branch": "research/astra-central-closure-20261124",
+  "destination_pr": "https://github.com/GettysburgResearch/collatz/pull/192",
+  "replay_receipt_sha256": "601bb62408d5c372505e1e9823a83f7f6128505c50999164a873e57e91f7ecb7",
+  "science_files": 15,
+  "public_theorem_audits": 46,
+  "normal_optimized_control_pairs": 4,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "finished_utc": "2026-11-24T14:17:14.938635+00:00",
+  "scope": "Binds the actually executed clean science checkout; the receipt follow-up and branch head are separately read back."
+}

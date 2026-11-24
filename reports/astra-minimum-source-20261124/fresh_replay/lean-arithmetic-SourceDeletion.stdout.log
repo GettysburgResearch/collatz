@@ -1,0 +1,8 @@
+'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
