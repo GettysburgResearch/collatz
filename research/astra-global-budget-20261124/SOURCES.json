@@ -1,0 +1,171 @@
+{
+  "schema": "collatz-astra-global-budget-sources/v1",
+  "status": "Collatz OPEN; proposed written results with scoped verification",
+  "baseline": {
+    "pr": 192,
+    "commit": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+    "paths": [
+      "research/astra-two-centre-20261124/rewriting.md",
+      "research/astra-two-centre-20261124/integer.md",
+      "research/astra-two-centre-20261124/basin.md"
+    ],
+    "scope": "Previous one-band cost theorem, restricted cycle theorem and recorded obstructions; unchanged."
+  },
+  "inputs": [
+    {
+      "pr": 182,
+      "commit": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "paths": [
+        "research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md",
+        "research/high-variance-closure-20261124/ordinary-arithmetic/TRIADIC_SEPARATION.md",
+        "research/direct-universal-attempt-20261124/README.md"
+      ],
+      "scope": "Written dyadic companion equivalence and exact prior direct-attempt gaps; not rebuilt."
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "paths": [
+        "research/astra-global-resolution-20261124/rewriting/SEVEN_RETURN.md",
+        "research/astra-global-resolution-20261124/arithmetic/RESIDUAL_GHOST.md"
+      ],
+      "scope": "Directed ordinary basin transfer and existing approximation attempts; imported certificate not rebuilt here."
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "paths": [
+        "research/astra-global-closure-20261124/round5/renewal/README.md"
+      ],
+      "scope": "Exact whole-word lifting and finite real moments of the reversed marked law, sections 2-3. Upstream reverse-cylinder estimate remains source-qualified."
+    },
+    {
+      "pr": 197,
+      "commit": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "paths": [
+        "research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/PHYSICAL_CLOCK_PROJECTION.md"
+      ],
+      "scope": "Direct head-contraction attempt inspected; no fresh ordinary conditional independence or contraction inferred."
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md",
+        "research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md"
+      ],
+      "scope": "Source-qualified marked renewal law and two-sided length tail; paired whole-block comparison."
+    },
+    {
+      "pr": 200,
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "paths": [
+        "research/regularity-rigidity-20261124/continuation/REVERSE_RENEWAL.md",
+        "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+        "research/regularity-rigidity-20261124/ratio_pressure.js"
+      ],
+      "scope": "Exact completed dictionary, unconditional reverse-prefix estimate, actual padded branch, and stopped-tree exponent 1/9. Arithmetic reviewer reran the finite pressure certificate; upstream infinite probability inputs not rebuilt."
+    },
+    {
+      "pr": 202,
+      "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "paths": [
+        "research/synchronized-long-basin-blocks-20261124/README.md"
+      ],
+      "scope": "Comparison to longer single-arm blocks only; no paired fixed-target router imported."
+    }
+  ],
+  "primary_literature": [
+    {
+      "author": "Jan-Hendrik Evertse",
+      "title": "On sums of S-units and linear recurrences",
+      "year": 1984,
+      "journal": "Compositio Mathematica 53, 225-244",
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "claim": "Corollary 1, printed page 227, (9)-(12)",
+      "scope": "Primitive, nondegenerate fixed-dimensional integer zero sums, outside-prime product and finite exceptions; ineffective constants, no growing tail-count uniformity, not formalized here."
+    },
+    {
+      "authors": [
+        "lyapunov_weaver",
+        "fourier_wren"
+      ],
+      "title": "Hierarchical Syracuse renewal and linear valuation budgets for modular routing",
+      "version": "v2, 28 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/48",
+      "claim": "Lemma 7 (76), Theorem 8 (80)-(83)",
+      "scope": "Primary interface checked by root and reviewers. Uniform joint fixed-total beta-residue floor remains an assumed analytic input, not proved or formalized here."
+    },
+    {
+      "authors": [
+        "J. Simons",
+        "B. de Weger"
+      ],
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/82263?download.pdf=",
+      "claim": "Lemma 12, citing Rhin",
+      "scope": "Optional source-qualified two-logarithm separation exponent 13.3, used only for the phase-window extension."
+    }
+  ],
+  "formal_runtime": {
+    "lean": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "scope": "Fresh new module objects, reused pinned prebuilt dependency objects."
+  },
+  "final_refresh": [
+    {
+      "pr": 193,
+      "commit": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "paths": [
+        "research/astra-pointwise-resolution-20261124/transfer/README.md",
+        "research/astra-pointwise-resolution-20261124/renewal/README.md"
+      ],
+      "scope": "Direct common-landing and inverse-return constructions checked against the fixed failing pair. The routed family has a fixed initial cylinder; its population does not imply deep approximation to a supplied failure."
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "paths": [
+        "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md",
+        "research/regularity-rigidity-20261124/pointwise-fibers/PAIRED_FIBERS.md",
+        "research/regularity-rigidity-20261124/pointwise-fibers/APPROXIMATE_COLORING.md"
+      ],
+      "scope": "Fixed finite companion menu precedes selection of the common-suffix first terminal. Almost-every-terminal multiplicity is not all-prescribed-terminal multiplicity. Approximate coloring is not an exact Collatz invariant."
+    },
+    {
+      "pr": 201,
+      "commit": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+      "paths": [
+        "research/killed-green-head-closure-20261124/prefix-density/README.md"
+      ],
+      "scope": "Central extra-depth inverse atom floor from paper 37 v4, (2)-(3), source-qualified. Original-source counts intersect scalar exceptions before companion-state selection."
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "paths": [
+        "research/mixed-adic-basin-density-20261124/README.md",
+        "research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md"
+      ],
+      "scope": "F-prime is uniform over residue classes, central totals and arbitrary supplied unit targets at one onset. Primary paper 48 interface checked, not its full analytic proof. Used for exact-grade lifts and first-hit phase windows."
+    },
+    {
+      "pr": 197,
+      "commit": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "paths": [
+        "research/ayh-resource-reset-20261124/literature-step/FIRST_PASSAGE_MARKS.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md"
+      ],
+      "scope": "Scalar stopped-stage estimates with original-source exceptions. No fair law conditioned on an inverse fiber is assumed."
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "paths": [
+        "research/astra-global-closure-20261124/round5/head/README.md"
+      ],
+      "scope": "Selected discordant-pair third-phase radius exp(j^beta), beta<1/12; new phase-window count does not reach this conditioned short-window statement."
+    }
+  ]
+}
