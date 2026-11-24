@@ -1,5 +1,15 @@
 # Pointwise harmonic fibers and the limit of averaged rigidity
 
+**Current continuation:** [central rows with polynomial losses and common-clock
+coarse localization](../refinement/README.md) strengthen PF2 and add an exact
+ordinary carry-intersection test. The unrestricted-menu reading of FS is
+[refuted with an attainable state](../refinement/PAIRED_FIBER_AUDIT.md).
+The conditional common-suffix implication survives. The current finite
+Lean modules have actually compiled; their
+[formal scope and receipt](../../../reports/regularity-rigidity-20261124/LEAN_REPLAY.md)
+supersede the original uncompiled-status descriptions below. PT at every
+fixed ordinary target and Collatz remain open.
+
 24 November 2026. **Collatz remains OPEN.** This continues PR200 at 39918be724038ac550d77c7fc95d17e05251dfc6. It develops a sharp fixed-clock inverse-fiber theorem, a literature-based analytic rigidity extension, and an explicit countermodel to relying only on approximate invariance.
 
 - [PAIRED_FIBERS.md](PAIRED_FIBERS.md) (PF1/PF2): For the infinite marked ratio-five law, the bounded-real-offset submeasure beta<=1/2 has full ternary support. On almost every point under that submeasure, near-optimal numbers G^(1-o(1)) of distinct exact legal paired inverse words exist along balanced cumulative clocks, with G=2^e/3^p. The proof is a summable low-incidence bound (2 G^(-epsilon)) for the original prefix law, not a product of independent endpoint distributions. Combining with the prior Tao-qualified thin-cell avoidance gives 3^(p-o(p)) favorable fine residue classes at common clocks with multiplicity G^(1-o(1)). On any FIXED positive ordinary unit in the good set, these are literal positive paired ancestors in [qG/2,qG]. The good set is dense G_delta and has full local Hausdorff dimension, but may miss every ordinary integer. The pointwise PT obligation and need for an opposing failed-pair estimate are explicit.

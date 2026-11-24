@@ -1,0 +1,26 @@
+{
+  "scope": "Complete finite residue certificate for four padded A blocks; no central-row or Collatz proof",
+  "clock": 88,
+  "odd_count": 8,
+  "blocks": 4,
+  "compositions": 47905,
+  "coarse_modulus": 6561,
+  "fine_modulus": 19683,
+  "coarse_unit_classes": 4374,
+  "fine_unit_classes": 13122,
+  "fine_lift_count_histogram": {
+    "2": 249,
+    "3": 4125
+  },
+  "literal_arm_paths": 26244,
+  "literal_shortcut_steps": 2309472,
+  "selector_sha256": "fcc218033175ae6811e13bb4d3a318188a473ee696214ce261d6de3c2e699069",
+  "source_sha256": "a0c0efa24a365f5328ba9a87dacf8d62f48fca40994ca14ffe33ffa999ac21ea",
+  "negative_control": {
+    "clock": 87,
+    "compositions": 45760,
+    "coarse_carry_classes_missing_two_lifts": [
+      1732
+    ]
+  }
+}

@@ -1,5 +1,12 @@
 # Infinite harmonic return law and global prediction rigidity
 
+**Current review and execution:** the [refinement packet](../refinement/README.md)
+adds independent conditional reviews, a stronger state-count range, and
+actual strict Lean compilation. PR195's later logarithmic entropy bound
+is [credited and reconstructed](../refinement/STATIONARY_CYLINDER_BOUNDS.md).
+Tool-availability and uncompiled-source statements below describe this
+directory's original checkpoint, not the current verification status.
+
 24 November 2026. **Collatz remains OPEN.** This is a continuation of PR200 at c43fcbe6643c3d816975a4fb4328dc19dbdac6fb.
 
 Three mathematical attacks, all written and subject to independent review:

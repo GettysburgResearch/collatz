@@ -1,4 +1,14 @@
-import Mathlib
+module
+
+public import Mathlib.Algebra.Order.Field.Rat
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Logic.Function.Iterate
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 set_option autoImplicit false
 open scoped BigOperators
@@ -35,7 +45,7 @@ theorem pressure_identity (p e : ℕ) (N : ℚ) :
       N / ((2:ℚ)^e/(3:ℚ)^p) := by
   have h2 : (2:ℚ)^e ≠ 0 := pow_ne_zero _ (by norm_num)
   have h3 : (3:ℚ)^p ≠ 0 := pow_ne_zero _ (by norm_num)
-  field_simp [h2, h3] <;> ring
+  field_simp [h2, h3]
 
 /-- The exact finite low-fiber incidence bound used before Borel–Cantelli.
     The index set need not consist of any random samples. -/

@@ -47,6 +47,15 @@ where $C_s$ is the fixed source suffix carry through clock $h$. Enlarge the fixe
 
 ## A fixed-target counting reduction
 
+**Scope correction:** the following implication is conditional for a
+fixed selected menu. FS cannot hold for every integral menu, even if the
+companion endpoints are positive units and the state occurs on a literal
+balanced ordinary pair. The necessary offset inequality
+$D>-5\,3^{k_+}B$ excludes, for example, $(k,D)=(0,-4)$ when $B=1/2$.
+The [exact obstruction and revised open quantifier](../refinement/PAIRED_FIBER_AUDIT.md)
+are separate results. The original sufficient implication below is retained;
+its hypothesis must be established for a suitable cutoff-compatible menu.
+
 Consider the following *one-arm, finite-state-filtered* estimate, denoted FS. For a fixed ternary class and fixed menu as above, for every positive odd unit $y\equiv y_0\pmod{3^K}$, there exist arbitrarily large balanced pairs $(e,p)$, $p/e\to1/2$, having
 
 $$

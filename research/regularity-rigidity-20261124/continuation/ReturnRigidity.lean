@@ -1,4 +1,11 @@
-import Mathlib
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Algebra.Order.Field.Rat
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 set_option autoImplicit false
 
@@ -53,10 +60,12 @@ theorem constant_prediction_bound (p q : ℝ)
     (hp0 : 0 ≤ p) (hp1 : p ≤ 1)
     (hq0 : 0 ≤ q) (hq1 : q ≤ 1) :
     min p (1-p) ≤ p+q-2*p*q := by
+  -- Retain the original probability-domain hypotheses and their argument names.
+  have _ := And.intro hp0 hp1
   by_cases h : p ≤ 1-p
   · rw [min_eq_left h]
     have h2 : 0 ≤ 1-2*p := by linarith
-    nlinarith [mul_nonneg q h2]
+    nlinarith [mul_nonneg hq0 h2]
   · have h' : 1-p ≤ p := le_of_lt (lt_of_not_ge h)
     rw [min_eq_right h']
     have h2 : 0 ≤ 2*p-1 := by linarith

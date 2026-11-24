@@ -1,4 +1,10 @@
-import Mathlib
+module
+
+public import Mathlib.Basic.Real.Basic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 set_option autoImplicit false
 
@@ -11,10 +17,10 @@ theorem step_lift (x t : ℤ) :
     T (x+2*t) = T x + (if x % 2 = 0 then 1 else 3)*t := by
   by_cases h : x % 2 = 0
   · have h' : (x+2*t) % 2 = 0 := by omega
-    simp only [T, h, h', if_true, one_mul]
+    simp only [T, h, h', ite_true, one_mul]
     omega
   · have h' : (x+2*t) % 2 ≠ 0 := by omega
-    simp only [T, h, h', if_false]
+    simp only [T, h, h', ite_false]
     omega
 
 /-- An exact affine profile yields an inverse on the given endpoint. -/
@@ -39,6 +45,8 @@ theorem path_probability_step {p p' x x' G s : ℝ}
     (hp : p' ≤ p / G) (hpp : 0 ≤ p)
     (hxx : x' ≤ G*x) (hbound : p*x ≤ s) :
     p'*x' ≤ s := by
+  -- Retain the original range hypothesis and its argument name.
+  have _ := hs
   calc
     p'*x' ≤ (p/G)*x' := mul_le_mul_of_nonneg_right hp hx
     _ ≤ (p/G)*(G*x) := mul_le_mul_of_nonneg_left hxx (div_nonneg hpp hG.le)

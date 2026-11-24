@@ -1,0 +1,54 @@
+{
+  "scope": "Independent exact replay of new finite controls; analytic limits not established by these computations",
+  "cases": [
+    {
+      "script": "research/regularity-rigidity-20261124/refinement/fiber_controls.py",
+      "optimized": false,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/440f31b72de6/collatz-v2/research/regularity-rigidity-20261124/refinement/fiber_controls.py"
+      ],
+      "source_sha256": "748e2d5000764da16a3b01353e8e321ef6a8f5e0793a6221d2fa416ff355268e",
+      "returncode": 0,
+      "stdout": "{\n  \"two_a\": {\n    \"unit_residues\": 162,\n    \"good_splits_per_residue\": {\n      \"1\": 108,\n      \"2\": 54\n    },\n    \"physical_pairs_at_119\": 648,\n    \"uncovered_residues_at_118\": [\n      194\n    ]\n  },\n  \"finite_carry_identity\": {\n    \"max_clock\": 14,\n    \"all_odd_words_with_odd_sentinel\": 16383,\n    \"complete_paired_words\": 179\n  },\n  \"menu_guard\": {\n    \"source\": 835,\n    \"companion_source\": 4175,\n    \"clock\": 10,\n    \"both_grades\": 5,\n    \"source_endpoint\": 199,\n    \"companion_endpoint\": 991,\n    \"source_carry\": 871,\n    \"companion_carry\": 259,\n    \"relative_offset\": -4\n  },\n  \"fixed_rows\": {\n    \"columns\": [\n      \"ordinary_q\",\n      \"p_at_clock_2p\",\n      \"bounded_unit_one_arm\",\n      \"bounded_unit_paired\"\n    ],\n    \"physical_scan_through_grade\": 24,\n    \"rows\": [\n      [\n        1,\n        12,\n        0,\n        0\n      ],\n      [\n        5,\n        12,\n        0,\n        0\n      ],\n      [\n        7,\n        12,\n        0,\n        0\n      ],\n      [\n        13,\n        12,\n        0,\n        0\n      ],\n      [\n        1,\n        16,\n        0,\n        0\n      ],\n      [\n        5,\n        16,\n        2,\n        0\n      ],\n      [\n        7,\n        16,\n        2,\n        0\n      ],\n      [\n        13,\n        16,\n        0,\n        0\n      ],\n      [\n        1,\n        20,\n        1,\n        0\n      ],\n      [\n        5,\n        20,\n        2,\n        0\n      ],\n      [\n        7,\n        20,\n        2,\n        0\n      ],\n      [\n        13,\n        20,\n        0,\n        0\n      ],\n      [\n        1,\n        24,\n        3,\n        0\n      ],\n      [\n        5,\n        24,\n        5,\n        0\n      ],\n      [\n        7,\n        24,\n        6,\n        0\n      ],\n      [\n        13,\n        24,\n        0,\n        0\n      ],\n      [\n        1,\n        28,\n        12,\n        0\n      ],\n      [\n        5,\n        28,\n        17,\n        0\n      ],\n      [\n        7,\n        28,\n        24,\n        3\n      ],\n      [\n        13,\n        28,\n        3,\n        0\n      ],\n      [\n        1,\n        32,\n        48,\n        0\n      ],\n      [\n        5,\n        32,\n        58,\n        0\n      ],\n      [\n        7,\n        32,\n        73,\n        10\n      ],\n      [\n        13,\n        32,\n        9,\n        0\n      ],\n      [\n        1,\n        36,\n        152,\n        2\n      ],\n      [\n        5,\n        36,\n        217,\n        0\n      ],\n      [\n        7,\n        36,\n        196,\n        22\n      ],\n      [\n        13,\n        36,\n        45,\n        2\n      ],\n      [\n        1,\n        40,\n        508,\n        7\n      ],\n      [\n        5,\n        40,\n        679,\n        0\n      ],\n      [\n        7,\n        40,\n        607,\n        59\n      ],\n      [\n        13,\n        40,\n        113,\n        0\n      ]\n    ]\n  }\n}\n",
+      "stderr": "",
+      "verdict": "PASS"
+    },
+    {
+      "script": "research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py",
+      "optimized": false,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/440f31b72de6/collatz-v2/research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py"
+      ],
+      "source_sha256": "fc7277c7526ff16a16303120d2de82c99c9acd85d11b0749ebf74fe9973b37bb",
+      "returncode": 0,
+      "stdout": "binary tables=746 recurrent classes=800 unordered live pairs=1094 max mean=8\nperiodic_four period=2 unordered live pairs=2 max mean=2\ndelayed_phase_eight period=1 unordered live pairs=28 max mean=209\nternary_reset_five period=1 unordered live pairs=10 max mean=7380/3281\n",
+      "stderr": "",
+      "verdict": "PASS"
+    },
+    {
+      "script": "research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py",
+      "optimized": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/440f31b72de6/collatz-v2/research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py"
+      ],
+      "source_sha256": "fc7277c7526ff16a16303120d2de82c99c9acd85d11b0749ebf74fe9973b37bb",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/440f31b72de6/collatz-v2/research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py\", line 10, in <module>\n    raise RuntimeError(\"The exact finite controls require Python assertions. Run without -O or -OO.\")\nRuntimeError: The exact finite controls require Python assertions. Run without -O or -OO.\n",
+      "verdict": "EXPECTED_REJECTION"
+    }
+  ]
+}
