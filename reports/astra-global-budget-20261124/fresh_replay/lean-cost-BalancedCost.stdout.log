@@ -1,0 +1,6 @@
+'Collatz.BalancedCost.sameWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedCost.growth' depends on axioms: [propext, Quot.sound]
+'Collatz.BalancedCost.dictionaryCollision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedCost.balancedBudget' depends on axioms: [propext, Quot.sound]
+'Collatz.BalancedCost.carryGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedCost.gradeCutoff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+'Collatz.ParentCertificate.numerator_unit' depends on axioms: [propext, Quot.sound]
+'Collatz.ParentCertificate.recover_complete' depends on axioms: [propext, Quot.sound]
+'Collatz.ParentCertificate.recover_sound' depends on axioms: [propext, Quot.sound]
+'Collatz.ParentCertificate.terminal_powers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ParentCertificate.two_clock' depends on axioms: [propext, Quot.sound]
+'Collatz.ParentCertificate.paired_clock_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
