@@ -1,0 +1,187 @@
+{
+  "schema": "collatz-deep-closure-sources/v1",
+  "checked_utc_date": "2026-11-24",
+  "evidence_scope": "Primary theorem statements and new deductions inspected; external manuscript formalizations and published large computations were not rebuilt.",
+  "external": [
+    {
+      "id": "carmichael-yabuta",
+      "title": "A simple proof of Carmichael's theorem on primitive divisors",
+      "author": "Minoru Yabuta",
+      "url": "https://www.fq.math.ca/Scanned/39-5/yabuta.pdf",
+      "pin": "Fibonacci Quarterly 39 (2001), Theorem 1",
+      "used_for": "First-appearance primes in real Lucas sequences; the packet handles indices 1, 2 and 6 explicitly and excludes the exceptional Fibonacci parameters at 12.",
+      "status": "Published theorem; not formalized in these Lean modules."
+    },
+    {
+      "id": "beukers-schlickewei",
+      "title": "The equation x+y=1 in finitely generated groups",
+      "authors": [
+        "F. Beukers",
+        "H. P. Schlickewei"
+      ],
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa78/aa7826.pdf",
+      "pin": "Acta Arithmetica 78 (1996), Theorem 1.1",
+      "used_for": "At most 2^(8r+8) solutions in the rational closure of a rank-r subgroup of (C*)^2. Coefficient vectors are charged one extra rank.",
+      "status": "Published theorem; exact statement checked in primary search result after direct PDF retrieval returned 403."
+    },
+    {
+      "id": "evertse-schlickewei-schmidt",
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "authors": [
+        "J.-H. Evertse",
+        "H. P. Schlickewei",
+        "W. M. Schmidt"
+      ],
+      "url": "https://arxiv.org/pdf/math/0409604v1",
+      "pin": "Annals of Mathematics 155 (2002), Theorem 1.1; arXiv v1",
+      "used_for": "Uniform nondegenerate solution count exp((6n)^(3n)(r+1)); the sign pattern and the product-group rank are checked in WINDOWS.md.",
+      "status": "Published theorem; external."
+    },
+    {
+      "id": "hercher-period",
+      "title": "There are no Collatz m-Cycles with m <= 91",
+      "author": "Christian Hercher",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.pdf",
+      "pin": "Journal of Integer Sequences 26 (2023), Article 23.3.5, Corollary 29 and Remark 30",
+      "used_for": "Verification through 3*2^69 implies more than 137500000000 odd cycle states. The bound counts odd members, not local minima.",
+      "status": "Published computational theorem; its five-week search not repeated."
+    },
+    {
+      "id": "hercher-corrigendum",
+      "title": "Corrigendum to Article 23.3.5",
+      "author": "Christian Hercher",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/corrigendum.pdf",
+      "pin": "Two-page author corrigendum, retrieved 2026-11-24",
+      "used_for": "Corrects Theorem 21. The independently used Corollary 29 follows the Lemma 26 computational route.",
+      "status": "Read with the original paper."
+    },
+    {
+      "id": "barina-verification",
+      "title": "Improved verification limit for the convergence of the Collatz conjecture",
+      "author": "David Barina",
+      "url": "https://doi.org/10.1007/s11227-025-07337-0",
+      "pin": "Journal of Supercomputing 81, 810 (2025), version of record 2025-05-02",
+      "used_for": "Published convergence verification through 2^71. Used as a fixed external result, not a claim about the current largest verification range.",
+      "status": "Published computational result; not rerun."
+    },
+    {
+      "id": "matveev-two-logs",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "author": "E. M. Matveev",
+      "url": "https://www.mathnet.ru/eng/im314",
+      "pin": "Izvestiya: Mathematics 64 (2000), Theorem 2.1 and Corollary 2.3",
+      "used_for": "A fixed power lower bound for |q log 2-4p log 3|, yielding polynomial control of consecutive continued-fraction denominators.",
+      "status": "Published theorem; primary PDF statement checked."
+    },
+    {
+      "id": "rudolph",
+      "title": "x2 and x3 invariant measures and entropy",
+      "author": "Daniel J. Rudolph",
+      "url": "https://doi.org/10.1017/S0143385700005629",
+      "pin": "Ergodic Theory and Dynamical Systems 10 (1990), 395-406",
+      "used_for": "Examined as a closure route. The constructed extension already has Haar base on each invariant color slice, so the theorem does not couple the slices.",
+      "status": "Published theorem; no new application claiming convergence."
+    },
+    {
+      "id": "weaver-12",
+      "title": "First-landing bounds and canonical inverse laws for Collatz",
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "pin": "v1, retrieved 2026-11-24; Sections 6, 8-10.1, 13 and Appendix A",
+      "used_for": "Lemma 13 (39), Theorem 14 and its clocks; canonical inverse cylinder probabilities, Cesaro profile identity, basin densities and equivalence of inverse path laws; relative first-landing comparison.",
+      "status": "Source-qualified manuscript. Its selected-block and joint-mixing hypotheses are retained."
+    },
+    {
+      "id": "shaik-passage",
+      "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+      "author": "Idris Ali Shaik",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "pin": "Manuscript v4.0.2, 2026-10-04, Corollary 1.2 and Proposition 6.4 (6.31)-(6.33)",
+      "used_for": "Arbitrarily high inverse-log exceptional powers, same-source critical hitting clock and grade, and the first-passage threshold tending to infinity.",
+      "status": "Source-qualified manuscript; reported Lean formalization not rebuilt."
+    },
+    {
+      "id": "mazur-fixed-target",
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "author": "Lech Mazur",
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "pin": "Exact fixed-target theorem at the retrieved 2026-11-24 page",
+      "used_for": "Positive lower natural density for each fixed positive ordinary target not divisible by three; no uniform target constant or hitting-time claim.",
+      "status": "Source-qualified reported accepted formalization; not rebuilt."
+    },
+    {
+      "id": "weaver-wren-48",
+      "title": "Hierarchical Syracuse renewal and linear valuation budgets for modular routing",
+      "authors": [
+        "lyapunov_weaver",
+        "fourier_wren"
+      ],
+      "url": "https://rstation.ai/problems/collatz/papers/48",
+      "pin": "v2, 2026-10-28, Lemma 7 (76), Theorem 8 and its bounded spreading",
+      "used_for": "Additional input only for LATE_PR201.md: fixed-total inverse floor at a small fractional extra ternary depth.",
+      "status": "Source-qualified manuscript. No full-tail upper estimate is inferred."
+    }
+  ],
+  "repository": [
+    {
+      "pr": 193,
+      "sha": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "paths": [
+        "research/astra-pointwise-resolution-20261124/",
+        "research/astra-global-resolution-20261124/arithmetic/README.md",
+        "research/astra-ordinary-boundary-20261124/transfer/ALL_EVENTUAL_MEETINGS.md"
+      ],
+      "role": "Continuation base, rational companion dictionary, and fixed-floor deadline."
+    },
+    {
+      "pr": 195,
+      "sha": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "paths": [
+        "research/astra-global-closure-20261124/round6/"
+      ],
+      "role": "Latest integral-point, least-failure and paired-residue routes inspected; no reexecution or claim of full closure."
+    },
+    {
+      "pr": 197,
+      "sha": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "paths": [
+        "research/ayh-resource-reset-20261124/crossing-step/",
+        "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md"
+      ],
+      "role": "Actual joint target lines and midpoints; scheduled four-suffix comparison; angular discrepancy."
+    },
+    {
+      "pr": 200,
+      "sha": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "paths": [
+        "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md"
+      ],
+      "role": "Finite-menu common-suffix theorem and exact anchored-relative-state obligation."
+    },
+    {
+      "pr": 201,
+      "sha": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "paths": [
+        "research/killed-green-head-closure-20261124/two-end-bridge/README.md"
+      ],
+      "role": "Late head: literal front/middle/suffix bridge, early marked returns, and pointwise relative-offset escape criterion."
+    },
+    {
+      "pr": 203,
+      "sha": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "paths": [
+        "research/"
+      ],
+      "role": "Prior mixed-adic depth-bank input remains in intake; no new theorem imported from a later head."
+    },
+    {
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md"
+      ],
+      "role": "Source-qualified finite-grid fusion and ratio-five renewal, used at the explicitly retained source/clock scope."
+    }
+  ],
+  "proof_boundary": "The 32 public Lean declarations contain no newly assumed analytic or number-theoretic theorems. Those results are written/external dependencies, not custom Lean axioms. Universal Collatz is not proved."
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "collatz-astra-deep-closure/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "Every public theorem in the three new Std-only modules, and the new exact controls. The infinite proofs, rank-theoretic literature and analytic inputs are written or external, not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "arithmetic/RankWindows.lean",
+      "sha256": "6d4d41ab5f31cf950ee106df83cc2d611feb85114ec19a968117fa45b4149875",
+      "audited_copy_sha256": "7c7dd1c7db85405e9598b55c6b7af46c42a587fb0e9eacec47024c077ee9260c",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/deep-checks/RankWindows.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.114,
+      "public_theorems": [
+        "RankWindows.unroll",
+        "RankWindows.no_cancellation",
+        "RankWindows.neighbors_coprime",
+        "RankWindows.gap_budget",
+        "RankWindows.farey_between",
+        "RankWindows.exact_period_floor",
+        "RankWindows.pell_edge",
+        "RankWindows.ratio_five_pell",
+        "RankWindows.paired_first_two_exclusive",
+        "RankWindows.sixth_factor",
+        "RankWindows.first_two_exclusive",
+        "RankWindows.triangular_independence",
+        "RankWindows.cycle_rank_cutoffs",
+        "RankWindows.thirty_rank_cutoff"
+      ],
+      "axioms": {
+        "RankWindows.unroll": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.no_cancellation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RankWindows.neighbors_coprime": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RankWindows.gap_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RankWindows.farey_between": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.exact_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.pell_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.ratio_five_pell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.paired_first_two_exclusive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.sixth_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.first_two_exclusive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RankWindows.triangular_independence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RankWindows.cycle_rank_cutoffs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RankWindows.thirty_rank_cutoff": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "pressure/ClockTransfer.lean",
+      "sha256": "2839d6f9cf4623e09730930540ce6082ff71f2f14463bb89d02db110c16cd7f2",
+      "audited_copy_sha256": "60873765f2906745799da0284a55ce2bb5e407147f2731a3cfb7191daabc8eef",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/deep-checks/ClockTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.714,
+      "public_theorems": [
+        "FixedTargetPressure.clockGap",
+        "FixedTargetPressure.pullBackWitness",
+        "FixedTargetPressure.exactRecordFiber",
+        "FixedTargetPressure.localVersusAnchored"
+      ],
+      "axioms": {
+        "FixedTargetPressure.clockGap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FixedTargetPressure.pullBackWitness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FixedTargetPressure.exactRecordFiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FixedTargetPressure.localVersusAnchored": []
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "descent/HeadSampling.lean",
+      "sha256": "3d3bb83b3d8c9441094bb51e9e4e16df11e4b8e56226d9dced5a457072e12503",
+      "audited_copy_sha256": "a17020693ec4588f5c2e09629d27fc9413e8b800d9b95aef3dba1f838edba975",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/deep-checks/HeadSampling.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.88,
+      "public_theorems": [
+        "HeadSampling.hits_step_away",
+        "HeadSampling.source_le_twice_step",
+        "HeadSampling.hits_after_above_floor",
+        "HeadSampling.hits_at_common_future",
+        "HeadSampling.coarsen_head",
+        "HeadSampling.change_on_block",
+        "HeadSampling.mix_cells",
+        "HeadSampling.word_mass",
+        "HeadSampling.orbit_add",
+        "HeadSampling.visits_comparable",
+        "HeadSampling.incompatible_seven_nineteen",
+        "HeadSampling.seven_nineteen_merge",
+        "HeadSampling.ternary_zero_trace",
+        "HeadSampling.thick_fiber_rank"
+      ],
+      "axioms": {
+        "HeadSampling.hits_step_away": [],
+        "HeadSampling.source_le_twice_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.hits_after_above_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.hits_at_common_future": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.coarsen_head": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.change_on_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "HeadSampling.mix_cells": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.word_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.orbit_add": [
+          "propext"
+        ],
+        "HeadSampling.visits_comparable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.incompatible_seven_nineteen": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.seven_nineteen_merge": [],
+        "HeadSampling.ternary_zero_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "HeadSampling.thick_fiber_rank": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "76a0b1e9d02260ca93e46b9913c004b2778f60d1a51e0b008d355ae6e42b5787",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-deep-closure-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.074,
+      "stdout": "1017 coupled sources, 11 independent product pivots; 4003 literal transitions, 4000 Pell discriminants, 2 multi-index fibers, 3 fresh odd pivots; rational Farey and rank cutoffs passed\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "76a0b1e9d02260ca93e46b9913c004b2778f60d1a51e0b008d355ae6e42b5787",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-deep-closure-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.108,
+      "stdout": "1017 coupled sources, 11 independent product pivots; 4003 literal transitions, 4000 Pell discriminants, 2 multi-index fibers, 3 fresh odd pivots; rational Farey and rank cutoffs passed\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

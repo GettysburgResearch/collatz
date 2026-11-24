@@ -1,0 +1,120 @@
+{
+  "schema": "collatz-research-head-refresh/v1",
+  "scope": "Latest 100 all-state PRs sorted by update; combined with the unchanged older inventory. Only changed scientific head PR201 required a new source read.",
+  "changed_heads": [
+    {
+      "number": 201,
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "state": "open",
+      "draft": true,
+      "head_sha": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "head_ref": "gpt62/killed-green-head-closure-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T11:21:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    }
+  ],
+  "watched_heads": [
+    {
+      "number": 201,
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "state": "open",
+      "draft": true,
+      "head_sha": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "head_ref": "gpt62/killed-green-head-closure-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T11:21:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "number": 197,
+      "title": "Collatz: prescribed head tests, joint incidence and Lean basin reduction",
+      "state": "open",
+      "draft": true,
+      "head_sha": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "head_ref": "research/ayh-resource-reset-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T11:04:45Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "number": 195,
+      "title": "Collatz: integral points, even-lift bounds and marked residue routing",
+      "state": "open",
+      "draft": true,
+      "head_sha": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "head_ref": "research/astra-global-closure-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T10:57:37Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "number": 193,
+      "title": "Collatz: pointwise paired bounds, complete denominators, and common landings",
+      "state": "open",
+      "draft": true,
+      "head_sha": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "head_ref": "research/astra-universal-descent-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T10:47:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "number": 200,
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "state": "open",
+      "draft": true,
+      "head_sha": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "head_ref": "research/gpt62-regularity-rigidity-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T10:37:07Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "number": 203,
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "state": "open",
+      "draft": true,
+      "head_sha": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "head_ref": "research/mixed-adic-basin-density-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T10:29:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/203"
+    },
+    {
+      "number": 192,
+      "title": "Collatz: complete-graph rank attempts and fixed-source renewal",
+      "state": "open",
+      "draft": true,
+      "head_sha": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "head_ref": "research/astra-central-closure-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T10:05:22Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "number": 182,
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "state": "open",
+      "draft": true,
+      "head_sha": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "head_ref": "research/dyadic-band-descent-20261121",
+      "base_ref": "research/lean-universal-basin-20261121",
+      "updated_at": "2026-11-24T09:44:42Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "number": 202,
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "state": "open",
+      "draft": true,
+      "head_sha": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "head_ref": "research/synchronized-long-basin-blocks-20261124",
+      "base_ref": "main",
+      "updated_at": "2026-11-24T08:49:53Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/202"
+    }
+  ],
+  "action": "Fetched PR201 to refs/inspection/deep/pr201, read its two-end bridge, and incorporated a same-source deduction in pressure/LATE_PR201.md. No earlier Lean packet rebuilt.",
+  "retrieved_utc_date": "2026-11-24"
+}
