@@ -10,7 +10,7 @@ namespace Collatz.Itinerary
 
 set_option autoImplicit false
 
-def digit (b : Bool) : Nat := b.toNat + 1
+@[expose] def digit (b : Bool) : Nat := b.toNat + 1
 
 def step (n : Nat) : Nat := if n % 2 = 0 then n / 2 else (3*n+1)/2
 
@@ -449,7 +449,7 @@ theorem carry_through_gate {q x a u v : Nat} {rs ms : List Bool}
 
 /-- The fixed gate is reached after the free prefix. The same physical
 suffix and clock then work for *all* requested binary words in the row. -/
-def FullRow (a b m : Nat) : Prop :=
+@[expose] def FullRow (a b m : Nat) : Prop :=
   ∃ q marks u v, 2 < q ∧ marks.length = b-m ∧ Route q marks v a ∧ u+v=2*b ∧
     ∀ w : List Bool, w.length=m-1 → ∃ r x, Route a (r::w) u x
 
