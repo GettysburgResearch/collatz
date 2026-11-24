@@ -1,0 +1,136 @@
+{
+  "schema": "collatz-literature-step-sources/v1",
+  "accessed_utc_date": "2026-11-24",
+  "repository": "GettysburgResearch/collatz",
+  "parent_checkpoint": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+  "lean": {
+    "version": "4.34.1",
+    "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "inputs": [
+    {
+      "id": "AYH",
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://arxiv.org/abs/2105.14697",
+      "author_pdf": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "use": "Underlying eleven-rule system and its Collatz termination equivalence; ordinary blocked-head reduction is in the parent checkpoint."
+    },
+    {
+      "id": "PR146-affine",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+        "research/upper-bit-mergers/PREFIX_REPRESENTATIVES.md"
+      ],
+      "status": "Frozen proposed written mathematical input; not re-formalized in this checkpoint.",
+      "use": "Uniform finite-grid profile mergers and binary realization; spatial discrepancy uses this input."
+    },
+    {
+      "id": "Inselmann-2024",
+      "author": "Manuel Inselmann",
+      "title": "An approximation of the Collatz map and a lower bound for the average total stopping time",
+      "url": "https://arxiv.org/html/2402.03276v3",
+      "version": "v3, 2024-08-13",
+      "items": [
+        "Definition 2.6",
+        "Theorem 2.18",
+        "Theorem 3.3"
+      ],
+      "status": "Primary preprint inspected. No external Lean build claimed.",
+      "use": "Existing scalar orbit/count envelopes; the written fixed-altitude proof here is self-contained and makes the source multiplicities explicit."
+    },
+    {
+      "id": "Pliss-ABV",
+      "authors": [
+        "Jose F. Alves",
+        "Christian Bonatti",
+        "Marcelo Viana"
+      ],
+      "title": "SRB measures for partially hyperbolic systems whose central direction is mostly expanding",
+      "url": "https://w3.impa.br/~viana/out/mexpanding.pdf",
+      "item": "Lemma 3.1",
+      "original_pliss_reference": "https://www.mathnet.ru/eng/de1484",
+      "status": "Primary author PDF inspected; no SRB or bounded-distortion theorem imported.",
+      "use": "Finite bounded-increment selection principle; our forward integer version is directly kernel-checked."
+    },
+    {
+      "id": "KL-2003",
+      "authors": [
+        "Ilia Krasikov",
+        "Jeffrey C. Lagarias"
+      ],
+      "title": "Bounds for the 3x+1 problem using difference inequalities",
+      "url": "https://arxiv.org/html/math/0205002v1",
+      "author_pdf": "https://websites.umich.edu/lagarias/doc/krasikov.pdf",
+      "item": "Theorem 6.1",
+      "status": "Published computer-assisted input, not re-executed here.",
+      "use": "The existing exponent 0.84 closing criterion remains available independently of the later positive-density input."
+    },
+    {
+      "id": "Mazur-predecessor-density",
+      "author": "Lech Mazur",
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "manuscript_version": "v1.0, 2026-09-06",
+      "reported_full_closure_commit": "c290ac229b379d2b51026d3e86140496870d6f39",
+      "supplement_sha256": "55ceb4df0cca17ae728dc65b30bf5077000e1b47f2dc322454eea9f637ac75b3",
+      "baseline_sha": "830b9d3f38f2a8da8cd921bf6a9310dd69336fd0",
+      "baseline_archive_sha256": "23f5cac4d66e696401144658752cf180a13ce70373a122f00693e1e1fe969c1f",
+      "formal_roots": [
+        "CollatzPredecessorDensity.predecessors_positive_lower_density",
+        "CollatzPredecessorDensity.nonconvergence_positive_lower_density_of_counterexample"
+      ],
+      "status": "SOURCE-QUALIFIED primary statement and reported 388-file verification inspected; not rebuilt here. Source reports precompiled third-party dependency reuse.",
+      "use": "Only the positive-fraction and summable-error global closure deductions. No new local Lean module assumes this result as an axiom."
+    },
+    {
+      "id": "Shaik-polylog",
+      "author": "Idris Ali Shaik",
+      "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "version": "Manuscript 4.0.2, 2026-10-04",
+      "items": [
+        "Theorem 1.1",
+        "Corollary 1.2",
+        "Lemma 4.2",
+        "Proposition 4.3"
+      ],
+      "status": "Primary author manuscript inspected; advertised external formalization not rebuilt.",
+      "use": "Prior original-source first-passage method and sharper standalone polylogarithmic descent; our application tests sliding parity windows and actual paired marks."
+    }
+  ],
+  "latest_source_cut": [
+    {
+      "pr": 198,
+      "sha": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "scope": "Metadata comparison with preceding checkpoint, not a new full proof audit."
+    },
+    {
+      "pr": 196,
+      "sha": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "scope": "Metadata comparison with preceding checkpoint; quarter reduction was incorporated previously."
+    },
+    {
+      "pr": 193,
+      "sha": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+      "scope": "Updated PR statement and scope read: forward anchors, mixed-language descent and minimum-height rigidity; not imported as an exhaustive language theorem."
+    },
+    {
+      "pr": 188,
+      "sha": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "scope": "Updated PR statement and scope read: persistent mixed-cluster descent, full-denominator bounds and residue rigidity; no unproved source precision imported."
+    }
+  ],
+  "non_dependencies": [
+    "Rudolph-Johnson measure rigidity and rational affine random-walk boundary results were explored but do not provide a verified ordinary joint-source law here.",
+    "The recent generalized-map logarithmic-density preprint was inspected but is not a dependency."
+  ]
+}

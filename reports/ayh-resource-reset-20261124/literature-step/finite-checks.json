@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "research/ayh-resource-reset-20261124/literature-step/check_post_descent.py"
+  ],
+  "exit_code": 0,
+  "seconds": 4.631,
+  "stdout": "{'j': 1, 'children': 81, 'native_clock': 6, 'restart_clock': 15, 'grid_depth': 3, 'missed_all_pairs_of_native_clocks': 80, 'missed_all_pairs_of_extended_clocks': 48, 'distinct_profiles': 30, 'max_arm_endpoint_multiplicity': 81, 'odd_difference_changed_by_at_least_half_block': 6}\n{'j': 2, 'children': 6561, 'native_clock': 12, 'restart_clock': 30, 'grid_depth': 6, 'missed_all_pairs_of_native_clocks': 6513, 'missed_all_pairs_of_extended_clocks': 5317, 'distinct_profiles': 1068, 'max_arm_endpoint_multiplicity': 1935, 'odd_difference_changed_by_at_least_half_block': 649}\n{'j': 3, 'children': 531441, 'native_clock': 19, 'restart_clock': 45, 'grid_depth': 9, 'missed_all_pairs_of_native_clocks': 522696, 'missed_all_pairs_of_extended_clocks': 463328, 'distinct_profiles': 37406, 'max_arm_endpoint_multiplicity': 110520, 'odd_difference_changed_by_at_least_half_block': 15995}\n",
+  "stderr": "",
+  "scope": "finite actual-clock and affine-profile replay; no asymptotic verification"
+}
