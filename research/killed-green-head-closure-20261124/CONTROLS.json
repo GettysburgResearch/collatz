@@ -1,0 +1,21 @@
+{
+  "status": "executed exact BigInt finite controls",
+  "runtime": "JavaScript Code Mode",
+  "result": {
+    "depth": 10,
+    "head_residues": 81,
+    "trajectories": 82944,
+    "transitions": 829440,
+    "words": 82944,
+    "offsetChecks": 829440,
+    "killedTransitions": 1194,
+    "rational_contraction_certificate": true
+  },
+  "lean_compiled": false,
+  "full_checkout_validated": false,
+  "source_inputs": {
+    "PR146": "f431078244e868dc699fad011044f0d5e7f76437",
+    "PR197": "578e43911f49d41ef610b368a89b5a1ec269e134",
+    "PR199": "d868f8e8405c08b8c501236853bea495ca593824"
+  }
+}
