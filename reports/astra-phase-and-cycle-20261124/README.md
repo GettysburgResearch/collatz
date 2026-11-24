@@ -18,12 +18,30 @@ The complete cycle-size corollary retains the specific PR185 linear-forms/certif
 
 Finite controls do not establish the unbounded mathematical assertions.
 
-## Lean execution status at this checkpoint
+## Completed fresh-source Lean replay
 
-The pinned Lean 4.34.1 compiler was installed and actually executed. The exact Mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612` and its cache were obtained. Earlier environment absence is therefore not the status of this session.
+**PASS.** The integrating agent executed the entire seven-module replay at published source commit `e3c33885e5d1530c4ad4595e324f9dbeb2761482`, tree `06fba51f3518271d8c31fffd96a2e19b1ad48ca7`. The source checkout was clean. Every source matched that Git head, and the source bytes and head remained unchanged through completion.
 
-Successfully compiled in the worker's recorded checks: the byte-exact upstream actual-scalar file, the `Std` lower-run kernel, the `Std` infinite ordinary-shadow theorem, and the immutable PR191 `TwoSidedPacking.lean`. The latter printed 13 axiom reports containing only standard Lean axioms. This checkpoint does not yet assert a complete new dependency replay: the actual-scalar bridge modules and aggregate audit are awaiting the final sequential execution receipt.
+- [Complete machine-readable receipt](fresh_replay/receipt.json): actual commands, exit codes, timestamps, source hashes, generated-source hashes, fresh object hashes and all axiom inventories.
+- [Combined axiom output](fresh_replay/12-AllAxioms.stdout.log): ten new public theorem declarations, including intermediate bridge lemmas, and five selected upstream theorem declarations.
+- [Exact visibility patch](fresh_replay/visibility-port.patch), [original sources](fresh_replay/src-original) and [generated sources](fresh_replay/src): the complete source transformation used in the successful build.
 
-An initial sequential attempt to replay the other newly uncompiled upstream candidates was interrupted during its first file under severe shared storage pressure. No file completed in that attempt, and no kernel status is assigned from it. The new contribution uses a separately documented fresh-source replay. Header/visibility ports, if needed, are recorded explicitly and do not change statements or proof bodies.
+The environment was Lean 4.34.1, release commit `5045d0056413266e57c625dcd7c365b10e377c52`, with Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. The seven modules were compiled sequentially with `-j1 -DwarningAsError=true`. No pre-existing object for any of these seven modules was reused.
 
-The final head-bound receipt will replace this pending paragraph only after successful execution. No pending Lean file is claimed checked on the basis of written review.
+The successful replay used the documented module/visibility port. It changes initial import and visibility declarations, preserving every theorem statement and proof body. The generated bridges use `import all ActualScalar` to expose definitions from the unchanged upstream source locally. This receipt certifies those exact generated sources; it is not presented as a complete byte-exact unported replay.
+
+All fifteen transitive axiom reports contained only members of `propext`, `Classical.choice`, and `Quot.sound`. The lower finite kernel used only `propext` and `Quot.sound`. No `sorryAx`, custom axiom, or assumed Collatz convergence appeared in any audited dependency closure.
+
+The actual-scalar floor and clock are derived from the actual convergent series. The upper and lower run theorems consequently apply to literal ordinary odd orbits, rather than requiring a hypothetical scalar recurrence. The ordinary-shadow theorem separately proves an infinite smaller nonconvergent ordinary trajectory under its explicit residue/language assumptions. Those assumptions are not proved universal.
+
+## Separate upstream and worker checks
+
+[Worker execution records](worker_checks/worker_executions.json) preserve successful byte-exact original compilations of PR182's actual-scalar source, the new `Std` ordinary-shadow theorem, and PR191's `TwoSidedPacking.lean`. The latter printed 13 axiom reports containing only standard Lean axioms. These checks are distinct from the integrating agent's complete fresh-source replay above.
+
+An earlier attempt to compile other upstream candidates was interrupted during its first file under shared storage pressure. No file completed in that attempt, and it supplies no kernel evidence for those candidates. PS2–PS6's real approximation and unbounded realization arguments, and the cycle/Galois deductions, remain independently reviewed written mathematics with exact finite controls. The PR185 analytic input retains its source-qualified status.
+
+## Source refresh and publication
+
+[LIVE_SOURCE_DELTA.json](LIVE_SOURCE_DELTA.json) records the final review of PR189's concurrent head `a390a1a4c75ee95db98b4b683d17c503f4e4a118`. Its eleven-line attribution correction credits PR180 for the stationary collision gap and changes no theorem, proof or code. It requires no mathematical change to this packet. The initial PR146–191 inventory remains frozen at its recorded heads.
+
+The contribution is published in [draft PR192](https://github.com/GettysburgResearch/collatz/pull/192). Its description records the final observed published head and complete-checkout repository validation separately from the Lean receipt. The required repository command is `python -X utf8 -B tools/validate.py`; repository integrity is not mathematical verification. The published Lean sources are authenticated individually by the replay receipt even when a later commit adds only reports and documentation.

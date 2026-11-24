@@ -8,7 +8,7 @@ The most useful new results are exact arithmetic statements about the actual sca
 
 | Result | What it establishes | Boundary |
 |---|---|---|
-| [PS1–PS3: actual phase separation](PHASE_SEPARATION.md) | A run of L lowest canonical digits from odd q requires `2^(L+1) <= q+1`; a run of highest digits requires `4*8^L <= (5q-1)*3^L`. These give explicit two-sided separation of the actual centered scalar from every ternary grid, with different exponents on its two sides. | The finite run kernels have compiled. The final actual-map bridge replay is pending; see the execution report. Real approximation and sharpness deductions are written proofs. They do not classify arbitrary scalar phases. |
+| [PS1–PS3: actual phase separation](PHASE_SEPARATION.md) | A run of L lowest canonical digits from odd q requires `2^(L+1) <= q+1`; a run of highest digits requires `4*8^L <= (5q-1)*3^L`. These give explicit two-sided separation of the actual centered scalar from every ternary grid, with different exponents on its two sides. | Both finite run kernels and the actual-map bridges passed the final fresh-source Lean replay. Real approximation and sharpness deductions are written proofs. They do not classify arbitrary scalar phases. |
 | [PS4–PS5: complete finite canonical language](PHASE_SEPARATION.md) | Every finite canonical word has an ordinary witness. More strongly, every word of length m has an explicit positive witness whose first visit to one is exactly m+2 accelerated odd steps later. Its actual scalar is known exactly. | The witness can depend on the word; the construction makes no infinite-realization claim. The unbounded construction is a written proof. |
 | [PS6: exact scalar fibers](PHASE_SEPARATION.md) | On the two-step first-hitting layer, scalar `(6d+2)/9` has exactly d sources. Their residues modulo every power of three have counts differing by at most one. | A statement about many convergent sources, not a stationary measure on one escaping trajectory. |
 | [Residual degree and denominator](CYCLE_FACTORS.md) | Primitivity forces `log p <= 3 sqrt(n) log(2n)`, where n is the residual polynomial degree. With the pinned PR185 value estimate, the denominator after polynomial cancellation grows faster than every fixed power of p. Prime-power clock gcds have stronger exponential bounds. | Written proof. The value estimate retains PR185's explicit linear-forms and finite-certificate dependencies. Numerical cancellation after evaluation remains unresolved. |
@@ -80,6 +80,8 @@ An actual cycle instead needs the entire remaining integer denominator to divide
 ## 4. Current repository intake
 
 [SOURCE_SNAPSHOT.json](SOURCE_SNAPSHOT.json) pins the fetched heads and trees of PR146–191, including PR182's concurrent round-12 update at `cbec52dde5bed390a693310dd04e911033ba0cc9`. This inventory is not a claim of line-by-line review of every source file in those PRs.
+
+A final read-only refresh caught PR189's attribution-only update at `a390a1a4c75ee95db98b4b683d17c503f4e4a118`. Its S1 collision-gap conclusion is credited to PR180's equations (16)–(17); the delta changes no mathematics or code. The [live-delta review](../../reports/astra-phase-and-cycle-20261124/LIVE_SOURCE_DELTA.json) records that boundary separately from the frozen initial inventory.
 
 The deep reading in this pass covered the following interfaces:
 
