@@ -1,0 +1,50 @@
+{
+  "date_utc": "2026-11-23T06:12:57.904673+00:00",
+  "scope": "Bounded exact controls; no infinite-orbit, denominator-growth, stationary-limit or Collatz proof by execution",
+  "source_sha256": {
+    "COLLISION_CLOSURE.md": "056f6c0362c347e30c4277eabfceee18c8139988ffc0a7442d9ea080c331a8f9",
+    "replay_jets.py": "57cc8ac55716581e120121f22fbc88a0a8240e8a2b69d4f7999cb109afc1cb89",
+    "RATIONAL_SELECTION.md": "ca2ad10cf4e38780d26817743a6c33ae875a13d0082c6eefcad8a7687d17856f",
+    "CycleArithmetic.lean": "80c89fba5c1fd4e3ef0bd34686874594348d407b03027d1f0dfc563c7ff65892",
+    "CollisionClosure.lean": "7c6dd6ed0d61478afcc65bbc07dda2778677da46e0a112277a0570b4b64d44f0",
+    "exact_replay.py": "640b65a41aab02efc35c9746f293b2bd9083a413ceeb29a64ad8aabfb490b75f",
+    "RationalSelection.lean": "da6bba30cbec4c9232d9c67fa310e49bfb3d82c55cad13e2e6ea1b3189fdb6e3",
+    "CYCLE_ARITHMETIC.md": "78e34a6b27d5e9fc9e7158eb5f91d85bedbeb7130c6fcb8763b6883db5207069"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 2.066,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-profound-round6/EXACT_CONTROLS.json",
+      "output_sha256": "5ddc2e2cf330a185d5c3366178fb0bc9b4e6e50eee6ba4ffc7d0422a43511c4f"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 2.109,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-profound-round6/EXACT_CONTROLS_OPTIMIZED.json",
+      "output_sha256": "5ddc2e2cf330a185d5c3366178fb0bc9b4e6e50eee6ba4ffc7d0422a43511c4f"
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "assert_statements_in_python_sources": 0,
+  "success": true
+}

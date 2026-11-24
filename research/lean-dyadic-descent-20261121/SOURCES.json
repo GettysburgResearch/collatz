@@ -1,0 +1,36 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "source_pr": 173,
+  "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+  "source_tree": "72b5895180fa002e162f895d6359c8c6da943c5f",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "unchanged_dependencies": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-shell-cover/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/lean-shell-cover/SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+  },
+  "scope": "New modules import the pinned ordinary shortcut map, forced section, and actual first-return dynamics. No earlier global hypothesis is assumed.",
+  "continuation": {
+    "prior_pr182_commit": "8372e302041a55057742a9e6ee9b4fa600c88fdb",
+    "additional_source_pr": 178,
+    "additional_source_commit": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+    "upstream_directory": "research/band-return-20261121/lean",
+    "vendor_directory": "research/lean-dyadic-descent-20261121/vendor-pr178",
+    "byte_identical_sources": {
+      "ReturnFourier.lean": {
+        "git_blob": "7087e3de4f009b973ad60e56fdedd2f7913eb13e",
+        "sha256": "a758b7b8c6b1827a5f96eb8ae32196c0145a0280229b6fa22bf899c3cd348ed3"
+      },
+      "MarkPhase.lean": {
+        "git_blob": "ddee6da36d1c49cd81e5e2fa4460467abb2fa08e",
+        "sha256": "bd4cc9ef10cbaa91b8d8a8ea83f1d9dfbbf644d0235ceff77452c18abdf199d9"
+      },
+      "MarkFrequency.lean": {
+        "git_blob": "2af20eef6d19d164ac11eec37f0cc7c70f71f897",
+        "sha256": "7786fd2c3eccecf8dedb931233c9ae1da059a8d883fb1e8250304b6c4df84921"
+      }
+    },
+    "scope": "The quantitative occupation proofs reuse PR178's actual Fourier and trigonometric-kernel lemmas. No predecessor-density or survivor-decay hypothesis is imported. New source hashes and actual compilation output are recorded in the continuation receipt."
+  }
+}

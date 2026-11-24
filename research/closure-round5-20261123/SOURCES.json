@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-23",
+  "parent": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+  "scope": "Latest 30 updated PR metadata records refreshed, then selected current source files read. The earlier 145-record repository inventory remains preserved; this is not a new proof audit of every branch.",
+  "heads": [
+    {
+      "pr": 175,
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "scope": "Metadata/body refresh only in this round; prior exact reviews retain their own pins."
+    },
+    {
+      "pr": 176,
+      "head": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "title": "Collatz checkpoint 17: finite-candidate rigidity and parallel closure attacks",
+      "scope": "Metadata/body refresh only in this round; prior exact reviews retain their own pins."
+    },
+    {
+      "pr": 177,
+      "head": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "title": "Collatz: exact dual recognition and ordinary endpoint retention",
+      "scope": "Metadata/body refresh only in this round; prior exact reviews retain their own pins."
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "title": "Collatz: finite rational certificates and fast ordinary flows",
+      "scope": "Relevant exact files listed below."
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "title": "Collatz: actual fibre density, critical renewal, and complementary denominators",
+      "scope": "Relevant exact files listed below."
+    },
+    {
+      "pr": 182,
+      "head": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "title": "Collatz: triadic stopping rigidity and finite collision obstruction",
+      "scope": "Metadata/body refresh only in this round; prior exact reviews retain their own pins."
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "scope": "Metadata/body refresh only; prior exact reviews retain their own pins."
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "scope": "Metadata/body refresh only; prior exact reviews retain their own pins."
+    }
+  ],
+  "source_files": [
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "blob": "598fbfcb64545247d355c5ca7aee4e40f63e0e1e",
+      "claim": "Finite rational certificate, visit repetition and parity-tail consumer; sharpened in this packet.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/rational/lean/RationalExcursions.lean",
+      "blob": "e08a06f2c011699f5fde3a33223f0f93350a56f6",
+      "claim": "Read numerical formal core; not imported into this fresh compile.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/rational/lean/RationalExcursions.lean"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "blob": "d5fc4e7a3b5cd8b27cac696ef6561b8b12aa8dfd",
+      "claim": "Full candidate numerator/exponent cost and remaining source approximation gap.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "blob": "39ccf195e42ee17121ff856c45541e70e05d393f",
+      "claim": "Equivalent fixed flow with O(1/N) TV convergence and relative collision comparison; preserves root law, does not supply its collision upper.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "blob": "97c3b1342bad9fbc7b9a1cd3a45aff031e1c124d",
+      "claim": "Necessary lower bound on fully reduced complementary denominator; no matching universal upper.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "claim": "Actual stationary backward-gap lift, collision gap and exact finite blocking limit order.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/whole-source-20261123/COLLISION_CORE.md"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "blob": "34b437972096ae409568842e655509a8233a8087",
+      "claim": "Source-height cost of occupation transfer and minimum-source flux.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/whole-source-20261123/BOUNDARY_DESCENT.md"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "claim": "Critical real divergence and rational-cycle atom classification already proved upstream; not newly claimed here.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/profound-step-20261123/STATIONARY_REAL.md"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "blob": "4530ed36c4f3ff6c9cf21149989e97cb94eb1714",
+      "claim": "Actual unthickened fibre density and fixed-modulus scale-clock independence; no growing-modulus uniform rate inferred.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/profound-step-20261123/ENTROPY_ARITHMETIC.md"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "blob": "c1fed85a4090ade76f73e23efed6548dc2fcff8d",
+      "claim": "Complete complementary denominator lower bound 3(2p-A); ordinary-to-complementary gcd closure remains open.",
+      "scope": "Full relevant source read by root and/or assigned lane; claim-level reconstruction stated in accompanying notes.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/profound-step-20261123/ARITHMETIC_CLOSURE.md"
+    }
+  ],
+  "literature": [
+    {
+      "author": "Monks–Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "scope": "Primary definition and Theorem 2.1 inspected; rational autoconjugacy reduction credited."
+    },
+    {
+      "author": "Bernstein–Lagarias",
+      "title": "The 3x+1 conjugacy map",
+      "url": "https://websites.umich.edu/lagarias/doc/bernstein.pdf",
+      "scope": "Classical complete parity coding, derived again finitely in the local module."
+    },
+    {
+      "author": "K. L. Chung",
+      "title": "A note on the ergodic theorem of information theory",
+      "url": "https://doi.org/10.1214/aoms/1177705069",
+      "scope": "Classical countable-alphabet SMB input with finite one-letter entropy verified locally. Bibliographic primary landing page and author bibliography/abstract inspected; no new full-paper audit claimed."
+    },
+    {
+      "author": "Feng–Hu",
+      "title": "Dimension theory of iterated function systems",
+      "url": "https://arxiv.org/abs/1002.2036",
+      "scope": "Primary abstract/scope inspected. Finite-alphabet Euclidean theorem not imported into countable 3-adic setting; direct proof supplied."
+    },
+    {
+      "author": "Rudolph",
+      "title": "Times 2 and times 3 invariant measures and entropy",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/64243AD8323B37089540F911F8CC77EB/S0143385700005629a.pdf/2_and_3_invariant_measures_and_entropy.pdf",
+      "scope": "Positive-entropy rigidity consumer inspected with its two invariances retained; those invariances not established for actual skew law."
+    },
+    {
+      "author": "Lyapunov Weaver",
+      "title": "Ternary Syracuse laws: real localization, clock stability, and critical regularity, Paper 9 v2",
+      "url": "https://rstation.ai/problems/collatz/papers/9",
+      "scope": "Working manuscript. Theorem 5 and Corollary 6 and their proofs read: bounded decoding entropy and exact dimension for specified tilted iid law. Fixed-total carry mechanism explicitly credited."
+    },
+    {
+      "author": "Lyapunov Weaver",
+      "title": "Critical barriers and memory costs in Collatz inverse dynamics, Paper 150 v2",
+      "url": "https://rstation.ai/problems/collatz/papers/150",
+      "scope": "Working manuscript. Section 4 source-entropy inequalities under Haar absolute continuity inspected; that assumption is neither imported nor deduced."
+    },
+    {
+      "author": "Lyapunov Weaver",
+      "title": "Finite approximation bounds for mechanical Collatz itineraries, Paper 84",
+      "url": "https://rstation.ai/problems/collatz/papers/84",
+      "scope": "Working manuscript. Stated quantitative ordinary approximation results and scope inspected by entropy lane; no full external audit or best-bound claim."
+    },
+    {
+      "author": "Halbeisen–Hungerbühler",
+      "title": "Optimal bounds for the length of rational Collatz cycles",
+      "url": "https://people.math.ethz.ch/~halorenz/publications/pdf/collatz.pdf",
+      "scope": "Primary Sections 2–3, Lemmas 1–2 and 5 inspected; complete rational carries and balanced extremality credited."
+    },
+    {
+      "author": "Fernández–Ibáñez",
+      "title": "Christoffel Words as Extremal Structures in Collatz Dynamics",
+      "url": "https://arxiv.org/html/2607.24844v1",
+      "scope": "2026 preprint, Sections 5–9 and Theorem 7.3 inspected by cycle lane; no full proof audit or all-word integrality theorem imported."
+    },
+    {
+      "author": "Knight",
+      "title": "Collatz high cycles do not exist",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0012365X25004200",
+      "scope": "Publisher abstract and available section previews inspected by cycle lane. HAL access challenge blocked full text; no successful full-paper audit claimed."
+    }
+  ],
+  "novelty": "No historical-priority claim. Written local proofs and finite Lean kernels are separately scoped."
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "finite transport controls; no unrestricted cycle exclusion",
+  "checker_sha256": "9c0852fd97edab873eacd24746391c3a788d531e63816c21123e76e2564fe94d",
+  "controls": [
+    {
+      "prefix": "",
+      "h": 1,
+      "suffix": "",
+      "source": "01",
+      "neighbor": "10",
+      "D": 1,
+      "full_denominator": true,
+      "C": 2,
+      "C_neighbor": 1,
+      "expected_gcd": 1,
+      "neighbor_reduced_denominator": 1
+    },
+    {
+      "prefix": "",
+      "h": 1,
+      "suffix": "0101010101",
+      "source": "010101010101",
+      "neighbor": "100101010101",
+      "D": 3367,
+      "full_denominator": true,
+      "C": 6734,
+      "C_neighbor": 6491,
+      "expected_gcd": 1,
+      "neighbor_reduced_denominator": 3367
+    },
+    {
+      "prefix": "0101",
+      "h": 1,
+      "suffix": "010101",
+      "source": "010101010101",
+      "neighbor": "010110010101",
+      "D": 3367,
+      "full_denominator": true,
+      "C": 6734,
+      "C_neighbor": 6302,
+      "expected_gcd": 1,
+      "neighbor_reduced_denominator": 3367
+    },
+    {
+      "prefix": "",
+      "h": 3,
+      "suffix": "01",
+      "source": "000101",
+      "neighbor": "100001",
+      "D": 7,
+      "full_denominator": false,
+      "C": 56,
+      "C_neighbor": 35,
+      "expected_gcd": 7,
+      "neighbor_reduced_denominator": 1
+    }
+  ],
+  "corruptions_rejected": [
+    {
+      "field": "C",
+      "reason": "carry mutation"
+    },
+    {
+      "field": "C_neighbor",
+      "reason": "carry mutation"
+    },
+    {
+      "field": "D",
+      "reason": "incorrect full denominator"
+    }
+  ]
+}

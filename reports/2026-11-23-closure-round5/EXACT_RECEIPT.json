@@ -1,0 +1,52 @@
+{
+  "date_utc": "2026-11-23T04:40:00.135962+00:00",
+  "scope": "Bounded exact controls; no infinite-orbit, entropy-limit or Collatz proof by execution",
+  "source_sha256": {
+    "CYCLE_EXCLUSION.md": "53ca400b528fa55047cb78e8c056e243932256dcd3e3c7d0fa0afd129d97ebbb",
+    "replay_carry_cycle.py": "b4cccf0fd73870ecca5298482732e81f481b269696adc4751fc505576edbeafd",
+    "FIXED_SOURCE_PRESSURE.md": "09b9cb3a1bd7daf1bc77b70e5010c8591b3d1fa7965e59a63dff6efc1dbe5c76",
+    "exact_replay.py": "6c14e08098142e1106db99cbe2cf3bcda3e56133ad13788da8c9f770a28c035b",
+    "TriadicConstruction.lean": "296e622d30826fe87a63f86be63b1836497705d751c7bace5699f3755e04fc23",
+    "TERNARY_INFORMATION.md": "e254b24b199c94ac5832a095dc6c428eee2d8a6628dff05546bdc855287073f4",
+    "FixedSourcePressure.lean": "1ca906b9fbacad0b7228ce3702c63df0e5b01b9964231b7cd2f6ed0cb812a3d6",
+    "replay_rational.py": "a62cf4579f4588996085f2f3d4594d6f98b6b3e8cff973ae635df98c271df887",
+    "TRIADIC_CONSTRUCTION.md": "40fde45d454b19a97f208aef9950a2fd6fbf0fd15cef1995b37fbf5099b8b562",
+    "verify_rational.py": "91e79761fe43e092e69a2be2f9224d62c4015c4b9aed8ccf77205b4bc83091b0"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 1.074,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-closure-round5/EXACT_CONTROLS.json",
+      "output_sha256": "6bdd318b4f9b66a6eca18562794cc73c3b234400c0c58faf33a6129231a4afc4"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 1.123,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-closure-round5/EXACT_CONTROLS_OPTIMIZED.json",
+      "output_sha256": "6bdd318b4f9b66a6eca18562794cc73c3b234400c0c58faf33a6129231a4afc4"
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "assert_statements_in_python_sources": 0,
+  "success": true
+}

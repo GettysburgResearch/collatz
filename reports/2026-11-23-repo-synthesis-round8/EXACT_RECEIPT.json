@@ -1,0 +1,60 @@
+{
+  "date_utc": "2026-11-23T13:14:21.076821+00:00",
+  "scope": "Exact finite controls only: actual supplied ordinary sources/candidates, complete listed modular residue domains, explicit convergent finite floor, and rational pressure enclosures. Infinite series attachment and all-exponent proofs are written mathematics.",
+  "source_sha256": {
+    "GERM_BRIDGE.md": "7c3de361cb2ff683b487ec537225e55d3713a7aa0a1956e16c2860f4d29980cb",
+    "GermBridge.lean": "d696be05c72e75b0da31a8f2f62c089d1e7346fb7aa0f0aa7c7417fe87f25a3e",
+    "LITERATURE_BOUNDARY.md": "806993c8aabd7e2b4be5e70451994b671d75aee7bfa69799c6a6fb1e82e7b991",
+    "ORDINARY_SELECTOR.md": "78ff6c1742cd4d1799fb2fddea016e299444837a56bb17ee95e4ae4d25237208",
+    "OrdinarySelector.lean": "240732a9b7cd101ca035b2ea9b66cb83d9cbadb11dce54a983b34f72f8364dce",
+    "PRESSURE_CONSTRUCTION.md": "533514adbb08dabada8fdb6fc911e4cf703e163005f517ee2445289a74abe030",
+    "README.md": "c30cc9cfd693ae0dc0503f649de66ff6b748b6cfa3c44079df8e38fceefa1942",
+    "REPO_SYNTHESIS.md": "30a68fef4853976a7a16208a6f52889146bae2834b8d0fc7a61b86f1ea7830b3",
+    "SCALAR_SEPARATION.md": "c17c580d4d3cf14deec7997b09d0230c4142a8fd6226056da6de83b42592dfa5",
+    "SOURCES.json": "d53c8e2ecf151df1afbe88f9cfcf5aedb1db6aa2aa5539f8f250dbbc1ce800c6",
+    "exact_replay.py": "c4664510e22f2be7567f4ebd382b2f417bd227b051dbb565197709aeba933db2",
+    "germ_bridge_controls.py": "8733a0d74cd3f7934454201715c327888c970ec1180d4187f13e2313441cdb03",
+    "pressure_controls.py": "8f8ac57346b7c351431ae15b7a8733694373aa5b51e7f5a33b99bbf2ce8bd9f5",
+    "scalar_controls.py": "7cb76827b0f3c87ecb23b2241ebeee18a3a7ac2bc98fd283a07fca3511efb5d1",
+    "selector_controls.py": "de51e5d8c738d7eb8ac7bf812ae050cb0dc1636a02cea65aa547524e285e295e"
+  },
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/collatz-round8-20261123/collatz",
+      "exit_code": 0,
+      "stderr": "",
+      "elapsed_seconds": 0.792,
+      "output_file": "reports/2026-11-23-repo-synthesis-round8/EXACT_CONTROLS.json",
+      "stdout_sha256": "d9a79cdcf543d9d64809c9c7957a3e539b33bf83bb2fb7d29f3625e210c44696",
+      "stdout_bytes": 22788
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/collatz-round8-20261123/collatz",
+      "exit_code": 0,
+      "stderr": "",
+      "elapsed_seconds": 0.928,
+      "output_file": "reports/2026-11-23-repo-synthesis-round8/EXACT_CONTROLS_OPTIMIZED.json",
+      "stdout_sha256": "d9a79cdcf543d9d64809c9c7957a3e539b33bf83bb2fb7d29f3625e210c44696",
+      "stdout_bytes": 22788
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "python_source_count": 5,
+  "assert_statements_in_python_sources": 0,
+  "success": true
+}

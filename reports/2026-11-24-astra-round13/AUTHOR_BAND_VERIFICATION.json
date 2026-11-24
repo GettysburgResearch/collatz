@@ -1,0 +1,144 @@
+{
+  "source_head": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compiler_options": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "lean_path": "working directory with local .oleans followed by pinned Mathlib and its package .lake/build/lib/lean paths",
+  "builds": [
+    {
+      "module": "ShellCover",
+      "command": "lean -j1 -DwarningAsError=true -o ShellCover.olean ShellCover.lean",
+      "exit_code": 0
+    },
+    {
+      "module": "OffsetDescent",
+      "command": "lean -j1 -DwarningAsError=true -o OffsetDescent.olean OffsetDescent.lean",
+      "exit_code": 0
+    },
+    {
+      "module": "ForwardSection",
+      "command": "lean -j1 -DwarningAsError=true -o ForwardSection.olean ForwardSection.lean",
+      "exit_code": 0
+    },
+    {
+      "module": "AffinePairReturn",
+      "command": "lean -j1 -DwarningAsError=true -o AffinePairReturn.olean AffinePairReturn.lean",
+      "exit_code": 0
+    },
+    {
+      "module": "PairedLanguage",
+      "command": "lean -j1 -DwarningAsError=true -o PairedLanguage.olean PairedLanguage.lean",
+      "exit_code": 0
+    },
+    {
+      "module": "MarkedHalfReturn",
+      "command": "lean -j1 -DwarningAsError=true -o MarkedHalfReturn.olean MarkedHalfReturn.lean",
+      "exit_code": 0
+    }
+  ],
+  "audit_command": "lean -j1 -DwarningAsError=true AuditBandReturn.lean",
+  "audit_exit_code": 0,
+  "math_module_stdout_bytes": {
+    "AffinePairReturn.lean": 0,
+    "PairedLanguage.lean": 0,
+    "MarkedHalfReturn.lean": 0,
+    "AuditBandReturn.lean": 1390
+  },
+  "audited_declarations": {
+    "CollatzShell.AffinePairReturn.pair_return": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.return_residue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.defect_trace": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.defect_merger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.half_size_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.lift_odd_coefficient": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.ordinary_progression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.accepted_positive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.accepted_merger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.accepted_half": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.section_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.section_strip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.lower_marked_of_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.AffinePairReturn.collatz_iff_residual_marked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "controls_commands": [
+    "python -X utf8 -B controls.py",
+    "python -O -X utf8 -B controls.py"
+  ],
+  "controls_exit_codes": [
+    0,
+    0
+  ],
+  "finite_outputs_identical": true,
+  "sha256": {
+    "ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "AffinePairReturn.lean": "562573f4b9b11ff13815240d8cd790197efaa89fab7b37212cc9ffe3e3b2738f",
+    "PairedLanguage.lean": "b0b448001dbcc48c364cb57c7971976995d3a7e133aa2b40dc51bff4380196c6",
+    "MarkedHalfReturn.lean": "a8e97fc74dfbb17f0d72b38a5ffecb8552d2f0d822064e3ab06e29506c53665d",
+    "AuditBandReturn.lean": "fde8a66a4ed8d7edf93f05dafb12d28c43c11b8c5223084128d4d889bf6b5a49",
+    "BAND_RETURN.md": "989a79edb4d0c4c61808bb87751fdcdb5e778dd5841c96a849f6402245cdc891",
+    "controls.py": "ecc89dffe3e5fe7aee7c7e4157f7cdef05949d4d4f0d02d568541eb541dc75bb",
+    "controls-result.json": "c62365d70d2b4261f56eaaf33be5d804e003a8fea28aa1077e51fd6ce9036f89",
+    "controls-optimized-result.json": "c62365d70d2b4261f56eaaf33be5d804e003a8fea28aa1077e51fd6ce9036f89",
+    "audit.log": "ad4b8a45ea6d7189b91fbcdc6a3aa28b47a2c09690dc68ec1820b4a21795c46f"
+  },
+  "written_only": [
+    "closed-form density and asymptotics in marked octaves",
+    "rational orbit of 8/55",
+    "uncovered high-rising family and infinite mixed-return necessary condition"
+  ]
+}

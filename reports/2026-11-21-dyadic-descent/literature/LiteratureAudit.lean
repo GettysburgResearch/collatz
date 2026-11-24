@@ -1,0 +1,28 @@
+import AffineRigidity
+import LiteratureCertificate
+#print axioms CollatzShell.AffineRigidity.finite_harmonic_invariant
+#print axioms CollatzShell.AffineRigidity.affine_surjective
+#print axioms CollatzShell.AffineRigidity.adjacent_affine_values
+#print axioms CollatzShell.AffineRigidity.translation_invariant
+#print axioms CollatzShell.AffineRigidity.translate_nsmul
+#print axioms CollatzShell.AffineRigidity.cyclic_affine_constant
+#print axioms CollatzShell.AffineRigidity.finite_cyclic_harmonic_constant
+#print axioms CollatzShell.AffineRigidity.continuous_affine_constant
+#print axioms CollatzShell.AffineRigidity.shortcut_to_affine
+#print axioms CollatzShell.AffineRigidity.shortcut_translation
+#print axioms CollatzShell.AffineRigidity.continuous_shortcut_constant
+#print axioms CollatzShell.AffineRigidity.finite_shortcut_harmonic_constant
+#print axioms CollatzShell.LiteratureCertificate.certificate_unique
+#print axioms CollatzShell.LiteratureCertificate.prefix_of_shared_suffix
+#print axioms CollatzShell.LiteratureCertificate.rank_cancel_suffix
+#print axioms CollatzShell.LiteratureCertificate.lower_rank_alphabet
+#print axioms CollatzShell.LiteratureCertificate.lower_three_prefix
+#print axioms CollatzShell.LiteratureCertificate.one_four_prefix
+#print axioms CollatzShell.LiteratureCertificate.same_tail_source_bound
+#print axioms CollatzShell.LiteratureCertificate.same_tail_bound_attained
+#print axioms CollatzShell.LiteratureCertificate.proportional_source_loss
+#print axioms CollatzShell.LiteratureCertificate.no_same_tail_source_growth
+#print axioms CollatzShell.LiteratureCertificate.certified_family_root
+#print axioms CollatzShell.LiteratureCertificate.family_index_unbounded
+#print axioms CollatzShell.LiteratureCertificate.unbounded_certified_obstruction
+#print axioms CollatzShell.LiteratureCertificate.no_uniform_forward_lookahead

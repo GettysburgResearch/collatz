@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [Marked descent and complete denominators, Round 13](astra-round13-20261124/README.md) | A smaller marked partner, residual convergence equivalence, an explicit cycle correction budget, arbitrary-prefix denominator bounds, and a short-horizon obstruction. | Scoped Lean replay and independent agent reviews are recorded; density, infinite counting and Diophantine arguments retain written-proof status. Universal residual convergence and all-cycle exclusion remain open. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |

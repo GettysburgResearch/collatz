@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-23",
+  "parent": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+  "scope": "Latest 30 updated PR metadata refreshed, then selected source proofs read. Prior 145-record inventory is preserved; this is not a proof audit of every repository branch.",
+  "heads": [
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 177,
+      "head": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "title": "Collatz: sparse basin minima, full-kernel pressure, and infinite-word descent",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 182,
+      "head": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "title": "Collatz: rational recognition and same-source entropy",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 176,
+      "head": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "title": "Collatz checkpoint 18: finite ordinary repairs and all-gap collisions",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 175,
+      "head": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "title": "Collatz: integer residual growth and full-carry transfer",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "scope": "Metadata refreshed; only the selected paths and claims below carry a source-inspection boundary."
+    }
+  ],
+  "source_files": [
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "path": "research/literature-push-20261123/rigidity/GENERAL_DENSITY_JET.md",
+      "blob": "5a4250dfc3b976dd5eb552d4a4b008ec19a120ee",
+      "claim": "Limiting actual parity density plus the full arithmetic Jet implies rationality and eventual ordinary periodicity.",
+      "scope": "Relevant theorem and complete small-hole/game proof reconstructed by author, independent reviewer, and root. External analytic theorem retained.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/398b3a04da071e96362005792417bd5cf8cc6497/research/literature-push-20261123/rigidity/GENERAL_DENSITY_JET.md"
+    },
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "path": "research/literature-push-20261123/rigidity/SCALAR_BOUNDARY_AND_SECOND_CENTER.md",
+      "blob": "951a88535220cf0673dd7a9186b0751368c76ce6",
+      "claim": "Actual weighted series, binary second center, full Jet hypothesis and local domains.",
+      "scope": "Full relevant source read; scalar specialization alone is not a second arithmetic germ.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/398b3a04da071e96362005792417bd5cf8cc6497/research/literature-push-20261123/rigidity/SCALAR_BOUNDARY_AND_SECOND_CENTER.md"
+    },
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "path": "research/literature-push-20261123/rigidity/FINITE_FILTER_TEST.md",
+      "blob": "c31b142a0b56c0ffe1c682581c2bc196ba35bdc0",
+      "claim": "Deflation and finite filters retain arithmetic denominator costs.",
+      "scope": "Read; no all-source germ construction imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/398b3a04da071e96362005792417bd5cf8cc6497/research/literature-push-20261123/rigidity/FINITE_FILTER_TEST.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "blob": "01a5d159730960894e903cd91e04550b05ba1d64",
+      "claim": "Rational actual series forces eventually periodic parity, then an ordinary cycle.",
+      "scope": "Sections 3–4 independently reconstructed; no universal D-finite or recurrence construction imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/profound-step-20261123/HOLONOMICITY.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/COLLISION_CLOSURE.md",
+      "blob": "6e3bb90eb3733b58274f9742ffdd7a86ef84945c",
+      "claim": "Full clock/carry coding, conditional-mean correction and exact iid geometric order-two exponent.",
+      "scope": "Read by collision lane; imported conclusions remain SOURCE-QUALIFIED and are not substituted for an actual ordinary-source law.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/closing-step-20261123/COLLISION_CLOSURE.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/TILTED_MOMENT_OBSTRUCTION.md",
+      "blob": "a49031a2d4966b510c93f3af790465c811c7de1d",
+      "claim": "Original-law log carry bounds do not supply the needed squared-word tilted moment.",
+      "scope": "Read by collision lane; imported conclusions remain SOURCE-QUALIFIED and are not substituted for an actual ordinary-source law.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/closing-step-20261123/TILTED_MOMENT_OBSTRUCTION.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/FOURIER_BRIDGE.md",
+      "blob": "2fe3127e8d4882ae332541f76cfc17bbcee8079f",
+      "claim": "Random-model regularity retains fixed-root/growing-frequency transfer boundary.",
+      "scope": "Read by collision lane; imported conclusions remain SOURCE-QUALIFIED and are not substituted for an actual ordinary-source law.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/closing-step-20261123/FOURIER_BRIDGE.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "claim": "Actual backward-gap stationary lift, global mean bound and process-dependent collision gap.",
+      "scope": "Relevant source read by assigned lane; earlier exact reviews retain their own pins. No uniform convergence rate inferred.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/whole-source-20261123/COLLISION_CORE.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "claim": "Stationary real-series exclusion retains unproved actual-source tightness.",
+      "scope": "Relevant source read by assigned lane; earlier exact reviews retain their own pins. No uniform convergence rate inferred.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/profound-step-20261123/STATIONARY_REAL.md"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "blob": "4530ed36c4f3ff6c9cf21149989e97cb94eb1714",
+      "claim": "Actual arithmetic and the critical iid alternative.",
+      "scope": "Relevant source read by assigned lane; earlier exact reviews retain their own pins. No uniform convergence rate inferred.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7cfd911d35382d9d3bc988060ba88ade78a4267e/research/profound-step-20261123/ENTROPY_ARITHMETIC.md"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "blob": "39ccf195e42ee17121ff856c45541e70e05d393f",
+      "claim": "O(1/N) comparison of two finite actual laws with the fixed source retained.",
+      "scope": "Section 4 and hypotheses checked by collision reviewer; flow construction and component hypotheses remain source-qualified.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c91b80a3156e640ad471cf30c47721145ae21eb1/research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md"
+    },
+    {
+      "pr": 175,
+      "head": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md",
+      "claim": "Current numerical cycle-gcd boundary.",
+      "scope": "Cycle lane read the named source. Its missing universal gcd inequality is not imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md"
+    },
+    {
+      "pr": 175,
+      "head": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md",
+      "claim": "Current numerical cycle-gcd boundary.",
+      "scope": "Cycle lane read the named source. Its missing universal gcd inequality is not imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md"
+    },
+    {
+      "pr": 175,
+      "head": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+      "path": "research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md",
+      "claim": "Current numerical cycle-gcd boundary.",
+      "scope": "Cycle lane read the named source. Its missing universal gcd inequality is not imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17/research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md"
+    },
+    {
+      "pr": 177,
+      "head": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/ALL_BRANCH_CAPACITY.md",
+      "claim": "Exploratory pressure lane; not a dependency of the new cycle-prime theorem.",
+      "scope": "Root read the all-branch pressure/capacity construction; no new lower pressure comparison obtained.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/92e7aaf602a0d4f0442556a133ae8e882e1fe93f/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/ALL_BRANCH_CAPACITY.md"
+    },
+    {
+      "pr": 177,
+      "head": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md",
+      "claim": "Exploratory pressure lane; not a dependency of the new cycle-prime theorem.",
+      "scope": "Root read the full proof of side-basin summability and its explicit unproved comparison.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/92e7aaf602a0d4f0442556a133ae8e882e1fe93f/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/BASIN_PRESSURE_PACKING.md"
+    },
+    {
+      "pr": 177,
+      "head": "92e7aaf602a0d4f0442556a133ae8e882e1fe93f",
+      "path": "research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md",
+      "claim": "Exploratory pressure lane; not a dependency of the new cycle-prime theorem.",
+      "scope": "Selected initial sections inspected; no complete proof audit claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/92e7aaf602a0d4f0442556a133ae8e882e1fe93f/research/lean-exact-witness-global-20261121/repo-synthesis-20261123/escape/SPARSE_BASIN_MINIMA.md"
+    }
+  ],
+  "literature": [
+    {
+      "author": "Antoine Chambert-Loir and Camille Noûs",
+      "title": "Potentiel et rationalité",
+      "version": "arXiv:2305.17210v2, 31 August 2026",
+      "url": "https://arxiv.org/pdf/2305.17210v2",
+      "scope": "Primary Sections 2.1/2.3 and 4.1–4.3 inspected across the team; precise integral-model/local-realization/strict-game hypotheses reconstructed. General theorem used externally, not newly proved or formalized."
+    },
+    {
+      "author": "Jean-Benoît Bost and Antoine Chambert-Loir",
+      "title": "Analytic curves in algebraic varieties over number fields",
+      "version": "arXiv:math/0702593v3",
+      "url": "https://webusers.imj-prg.fr/~marco.maculan/java/2016/files/BostChambertLoir.pdf",
+      "scope": "Primary Theorem 7.9, subsequent condition 2′ and Example 7.10 read. Strict capacitary criterion only; equality-case algebraicity is not assumed for free."
+    },
+    {
+      "author": "Keith Conrad",
+      "title": "Infinite series in p-adic fields",
+      "url": "https://kconrad.math.uconn.edu/blurbs/gradnumthy/infseriespadic.pdf",
+      "scope": "Primary authored exposition, Theorem 3.7 and translation discussion: nonarchimedean Cauchy–Hadamard. Used for the explicit surviving-pole calculation."
+    },
+    {
+      "author": "Pablo Shmerkin",
+      "title": "On Furstenberg's intersection conjecture, self-similar measures, and the Lq norms of convolutions",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v189-n2-p01-s.pdf",
+      "scope": "Primary Theorem 2.1 and preceding discussion read by collision lane. Required actual convolution structure not established, so theorem not applied."
+    },
+    {
+      "author": "Wu, Li, Xu and Han",
+      "title": "Renyi Entropy Rate of Stationary Ergodic Processes",
+      "url": "https://arxiv.org/abs/2207.07554",
+      "scope": "Primary abstract and publication metadata only. No full-proof result imported; exact PR180 iid calculation supplies the used Shannon/Renyi separation."
+    },
+    {
+      "author": "Brofferio, Buraczewski and Damek",
+      "title": "On the invariant measure of the random difference equation in the critical case",
+      "url": "https://www.numdam.org/article/AIHPB_2012__48_2_377_0.pdf",
+      "scope": "Primary introduction and Theorem 1.1 hypotheses read by collision lane. No typical-random-sample assumption transferred to a fixed ordinary orbit."
+    }
+  ],
+  "novelty": "New deductions in this packet are distinguished from imported machinery; no historical-priority claim."
+}

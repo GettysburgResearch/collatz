@@ -1,0 +1,138 @@
+{
+  "checker_sha256": "82a038962c076fbb3282cd53af1e98fbb7fcc27248ca182b8d4aa7b505323170",
+  "scope": "bounded exact arithmetic controls, never a universal convergence test",
+  "word_controls": {
+    "maximum_shortcut_length": 12,
+    "counts": {
+      "complete_words": 8191,
+      "translated_carry_fibers": 25265,
+      "ordinary_box_occurrences": 32764
+    },
+    "discarding_carry_quotient_rejected": {
+      "length": 3,
+      "ones": 1,
+      "first": [
+        [
+          0,
+          0,
+          1
+        ],
+        12,
+        5
+      ],
+      "second": [
+        [
+          1,
+          0,
+          0
+        ],
+        13,
+        5
+      ],
+      "residue": 2
+    },
+    "discarding_source_quotient_rejected": {
+      "word": [
+        1
+      ],
+      "sources_endpoints": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  },
+  "ordinary_fixtures": [
+    {
+      "source": 1,
+      "distinct_odd_states": 1,
+      "peak": 1
+    },
+    {
+      "source": 3,
+      "distinct_odd_states": 3,
+      "peak": 5
+    },
+    {
+      "source": 7,
+      "distinct_odd_states": 6,
+      "peak": 17
+    },
+    {
+      "source": 27,
+      "distinct_odd_states": 42,
+      "peak": 3077
+    },
+    {
+      "source": 97,
+      "distinct_odd_states": 44,
+      "peak": 3077
+    },
+    {
+      "source": 871,
+      "distinct_odd_states": 66,
+      "peak": 63665
+    },
+    {
+      "source": 6171,
+      "distinct_odd_states": 97,
+      "peak": 325133
+    },
+    {
+      "source": 837799,
+      "distinct_odd_states": 196,
+      "peak": 991661525
+    },
+    {
+      "source": 670617279,
+      "distinct_odd_states": 371,
+      "peak": 322205345153
+    },
+    {
+      "source": 2147483647,
+      "distinct_odd_states": 163,
+      "peak": 411782264189297
+    }
+  ],
+  "actual_windows": {
+    "counts": {
+      "original_windows": 7598,
+      "exact_quotient_channels": 1926,
+      "exact_source_boxes": 7217,
+      "weighted_interval_groups": 2695,
+      "full_aggregation_checks": 63
+    },
+    "dropping_repeated_words_rejected": true,
+    "dropping_cross_box_terms_rejected": true,
+    "weights": "exact t_j=(j+1)/(N*(j+2))\u22641/N; finite test weights, not asserted harmonic-flow samples"
+  },
+  "global_count_interfaces": {
+    "counts": {
+      "exact_binomial_identities": 3160,
+      "ordinary_high_clock_sources": 1182,
+      "all_source_low_lane_bounds": 9,
+      "separated_visit_charges_with_terminal_allowance": 90
+    },
+    "whole_basin_injectivity_rejected": [
+      1,
+      5
+    ],
+    "finite_boundary": "each finite fixture pays its final m source positions; no infinite orbit is fabricated"
+  },
+  "full_cycle_conditioning": {
+    "full_denominator": 7,
+    "four_actual_word_residues": {
+      "((1, 0), (1, 0))": 0,
+      "((1, 0), (0, 1))": 4,
+      "((0, 1), (1, 0))": 3,
+      "((0, 1), (0, 1))": 0
+    },
+    "matching_bound_at_A13_p8": 50,
+    "scope": "known trivial-cycle repetitions; no new positive cycle asserted"
+  }
+}

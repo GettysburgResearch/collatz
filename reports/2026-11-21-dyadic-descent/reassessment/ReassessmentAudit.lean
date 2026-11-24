@@ -1,0 +1,41 @@
+import CoefficientCounting
+import CoefficientPeaks
+import CertificateBoundary
+#print axioms CollatzShell.CoefficientCounting.oddCount_lift
+#print axioms CollatzShell.CoefficientCounting.oddCount_mod
+#print axioms CollatzShell.CoefficientCounting.parity_weight_pair
+#print axioms CollatzShell.CoefficientCounting.parity_weight_sum
+#print axioms CollatzShell.CoefficientCounting.block_power_constants
+#print axioms CollatzShell.CoefficientCounting.resistant_oddCount
+#print axioms CollatzShell.CoefficientCounting.resistant_card
+#print axioms CollatzShell.CoefficientCounting.packing
+#print axioms CollatzShell.CoefficientPeaks.orbit_next
+#print axioms CollatzShell.CoefficientPeaks.oddCount_next
+#print axioms CollatzShell.CoefficientPeaks.step_linear_exact
+#print axioms CollatzShell.CoefficientPeaks.normalized_upper
+#print axioms CollatzShell.CoefficientPeaks.normalized_lower
+#print axioms CollatzShell.CoefficientPeaks.strip_mono
+#print axioms CollatzShell.CoefficientPeaks.strip_height_bound
+#print axioms CollatzShell.CoefficientPeaks.supercritical_clock_bound
+#print axioms CollatzShell.CoefficientPeaks.strip_clock_bound
+#print axioms CollatzShell.CoefficientPeaks.orbit_bound_of_repeat
+#print axioms CollatzShell.CoefficientPeaks.strip_prefix_injective
+#print axioms CollatzShell.CoefficientPeaks.strip_shifted_lower
+#print axioms CollatzShell.CoefficientPeaks.escapeClock_polynomial
+#print axioms CollatzShell.CoefficientPeaks.finite_strip_impossible
+#print axioms CollatzShell.CoefficientPeaks.finite_coefficient_exit
+#print axioms CollatzShell.CoefficientPeaks.supercritical_peak
+#print axioms CollatzShell.CertificateBoundary.certificate_odd
+#print axioms CollatzShell.CertificateBoundary.certificate_cons_iff
+#print axioms CollatzShell.CertificateBoundary.certificate_basin
+#print axioms CollatzShell.CertificateBoundary.powered_certificate_basin
+#print axioms CollatzShell.CertificateBoundary.sibling_certificate
+#print axioms CollatzShell.CertificateBoundary.doubling_certificate
+#print axioms CollatzShell.CertificateBoundary.second_boundary_rank
+#print axioms CollatzShell.CertificateBoundary.boundary_three
+#print axioms CollatzShell.CertificateBoundary.boundary_five
+#print axioms CollatzShell.CertificateBoundary.boundary_nine
+#print axioms CollatzShell.CertificateBoundary.boundary_seven
+#print axioms CollatzShell.CertificateBoundary.full_boundary_transport
+#print axioms CollatzShell.CertificateBoundary.second_even_source_reset
+#print axioms CollatzShell.CertificateBoundary.second_boundary_interval_rule

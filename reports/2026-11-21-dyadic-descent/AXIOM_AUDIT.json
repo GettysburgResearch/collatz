@@ -1,0 +1,263 @@
+{
+  "scope": "Independent whitelist scan of printed axiom closures from the seven-source fresh build; all source hashes rechecked",
+  "success": true,
+  "audited_declarations": 28,
+  "new_declarations": 23,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": [
+    {
+      "declaration": "CollatzShell.ForwardSection.steer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-shell-cover/ForwardSection.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.marked_count_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-shell-cover/ForwardSection.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.bounded_visit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-shell-cover/ForwardSection.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.collatz_iff_section",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-shell-cover/ForwardSection.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.collatz_iff_return_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-shell-cover/SectionDynamics.lean"
+    },
+    {
+      "declaration": "CollatzShell.OffsetDescent.affine_lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.OffsetDescent.dyadic_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.OffsetDescent.descent_iff_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.OffsetDescent.accepts_upper_ray",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.OffsetDescent.eventually_dyadic_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.padded_lift_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.endpoint_marked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.endpoint_marked_of_phase",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.marked_to_marked_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.power_plus_one_window",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.power_plus_one_large_window",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.MarkedOffsetReturn.power_plus_one_overlapping_windows",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.mean_zero_of_rotation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.character_alpha_ne_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.divergent_odd_fourier_mean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.nonrepeating_odd_fourier_mean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.unbounded_odd_fourier_mean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.lowBitsMean_eventually_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.PhaseFrequency.no_escape_of_unbiased_lowBits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_large_positive_approximants",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_large_certified_offset_descents",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_strong_certified_offset_descents",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.InfiniteDescent.power_plus_one_arbitrarily_strong",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+    }
+  ]
+}

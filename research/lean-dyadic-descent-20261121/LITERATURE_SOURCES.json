@@ -1,0 +1,48 @@
+{
+  "scope": "Late read-only metadata reconciliation after the frozen 145-PR inventory; the new analytic proof retains its earlier exact FLOOR/LOG pins.",
+  "previous_inventory": "WHOLE_REPO_INVENTORY.json",
+  "own_parent": "2d478a6588f33a72fc3a5bdc085a928b5cf78737",
+  "literature_guide": {
+    "pr": 186,
+    "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+    "source": "literature/deep-machinery-20261122/06_agent_tasks.md",
+    "read": "Task cards and arithmetic chapter"
+  },
+  "late_upstream": [
+    {
+      "pr": 175,
+      "head": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+      "title": "Collatz: Lean inverse completeness and global canonical-potential bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "observed_evidence": "PR metadata and body; no acceptance upgrade or fresh Lean replay of this upstream head"
+    },
+    {
+      "pr": 176,
+      "head": "41dc0ff039c13eeaf7f130c56a290212c00bcdef",
+      "title": "Lean and analysis: critical inverse limits and complete carry families",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "observed_evidence": "PR metadata and body; no acceptance upgrade or fresh Lean replay of this upstream head"
+    },
+    {
+      "pr": 178,
+      "head": "be5696cc45a95ad1903802b08ba1dc3ebba66930",
+      "title": "Lean: literature-led Collatz renewal, source budgets, and mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "observed_evidence": "PR metadata and body; no acceptance upgrade or fresh Lean replay of this upstream head"
+    },
+    {
+      "pr": 180,
+      "head": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "title": "Collatz: Lean witness transport, uniform marked visits, and canonical potentials",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "observed_evidence": "PR metadata and body; no acceptance upgrade or fresh Lean replay of this upstream head"
+    },
+    {
+      "pr": 185,
+      "head": "b8c8de2e6859df702eb93eb28197520258fa767f",
+      "title": "Collatz: variable-clock half-branch selector and global inverse capacity bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "observed_evidence": "PR metadata and body; no acceptance upgrade or fresh Lean replay of this upstream head"
+    }
+  ]
+}

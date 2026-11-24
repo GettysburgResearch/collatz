@@ -1,0 +1,153 @@
+{
+  "scope": "Lean proof checking at pinned sources; not a proof of full Collatz",
+  "started_utc": "2026-11-21T15:23:36.001435+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-shell-cover/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/lean-shell-cover/SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+    "research/lean-dyadic-descent-20261121/OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean": "e9455233935c582084e73bd5f73d17553bab8b1a76bdb774485f38b33e81ed8f",
+    "research/lean-dyadic-descent-20261121/PhaseFrequency.lean": "f0afbb1f3ef0f8cb7494963855cfb5dd7cc97d9b9da551af65a31b848bbdce95",
+    "research/lean-dyadic-descent-20261121/InfiniteDescent.lean": "e490eaf11c9dc5d5e78fd49d69a0d20c4619244185925c8d5920fabfb8c39b4f"
+  },
+  "commands": [
+    {
+      "source": "research/lean-shell-cover/ShellCover.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/ShellCover.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover/ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 27.679,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-shell-cover/ForwardSection.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/ForwardSection.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover/ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 25.964,
+      "stdout": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-shell-cover/SectionDynamics.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/SectionDynamics.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover/SectionDynamics.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.888,
+      "stdout": "'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/OffsetDescent.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.091,
+      "stdout": "'CollatzShell.OffsetDescent.affine_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.OffsetDescent.dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.descent_iff_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.accepts_upper_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.eventually_dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/MarkedOffsetReturn.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 8.724,
+      "stdout": "'CollatzShell.MarkedOffsetReturn.padded_lift_endpoint' depends on axioms: [propext, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.endpoint_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.endpoint_marked_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.marked_to_marked_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.power_plus_one_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.power_plus_one_large_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedOffsetReturn.power_plus_one_overlapping_windows' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/PhaseFrequency.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/PhaseFrequency.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.671,
+      "stdout": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n'CollatzShell.PhaseFrequency.mean_zero_of_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.character_alpha_ne_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.divergent_odd_fourier_mean' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.nonrepeating_odd_fourier_mean' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.unbounded_odd_fourier_mean' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.lowBitsMean_eventually_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhaseFrequency.no_escape_of_unbiased_lowBits' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean",
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/replay-final/InfiniteDescent.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 12.211,
+      "stdout": "'CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_large_positive_approximants' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_large_certified_offset_descents' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.InfiniteDescent.arbitrarily_strong_certified_offset_descents' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.InfiniteDescent.power_plus_one_arbitrarily_strong' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "sources_unchanged": true,
+  "finished_utc": "2026-11-21T15:25:07.232276+00:00"
+}

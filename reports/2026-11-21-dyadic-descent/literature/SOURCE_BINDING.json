@@ -1,0 +1,23 @@
+{
+  "scope": "Proof-source hashes match the actual successful fresh five-module replay. Written analytic notes have separate internal reviews and source-qualified inputs; they are not Lean declarations.",
+  "lean_receipt_sha256": "95bfab9e0b3b05aae57a98d71e50bcc0ec1b9e708cfb3868b47416fb5033c74f",
+  "source_sha256": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-dyadic-descent-20261121/OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "research/lean-dyadic-descent-20261121/CertificateBoundary.lean": "3cdedfd465939cf48528b8ee199d528a7d6d9f795b332470757ac0d96944d3c9",
+    "research/lean-dyadic-descent-20261121/AffineRigidity.lean": "a01f300f2246726e4d99f9a5d8952fdca6adbca4c53c88ca329efef1edad6aee",
+    "research/lean-dyadic-descent-20261121/LiteratureCertificate.lean": "9f35bd92f368f372c17e6d8289946def478fd906c54af90e69b4175f8f50595c"
+  },
+  "runner_sha256": "5c380e542addbccee19f3fa5b1548467c5712fcf9fb9f011132e37797497f3e7",
+  "reviewed_note_sha256": {
+    "AFFINE_RIGIDITY.md": "3001297ae4c4c2171059bcdf40cd42c66dc61819b3abbce975c9fd3a7f65ce78",
+    "LITERATURE_CERTIFICATE_BRIDGE.md": "34c2f8fa37305090739611e1ac6890dd8e811e2a1d3a6606b64ac98916202199",
+    "LITERATURE_RIGIDITY_BRIDGE.md": "b31fd7aaa0d911eeda02345604ccc8d96661672a37cf45faf057f481f7cdce81",
+    "LITERATURE_COEFFICIENT_BRIDGE.md": "7743afc13c78f12b4df972e89636d4e23a3929cd41dfc6a4b897e07416916be1"
+  },
+  "semantic_review_sha256": "13cde36fc8d717365853af7c39e2a992a99e1da7f175f23d1cedcf1534951420",
+  "prior_published_commit": "2d478a6588f33a72fc3a5bdc085a928b5cf78737",
+  "checked_proof_commit": "04745685189aefbf88cb01c942f3959353516f39",
+  "checked_proof_tree": "f92f84d6c6a74f757d7cd1caf75b9c4913fd67b8",
+  "checkout_receipt_sha256": "f9e53c93b1673b240ac146361e98238882412c30ad922c30c72c216d3cb4a562"
+}

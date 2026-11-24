@@ -1,0 +1,345 @@
+{
+  "schema": "collatz-astra-round13-lean/v1",
+  "started_utc": "2026-11-24T04:30:49.843196+00:00",
+  "scope": "finite sources and named declaration axiom audit; not full Collatz",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "rows": [
+    {
+      "source": "research/lean-shell-cover/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ShellCover.olean",
+        "ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 18.649,
+      "printed_axioms": [],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+      "sha256": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "OffsetDescent.olean",
+        "OffsetDescent.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollatzShell.OffsetDescent.affine_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.OffsetDescent.dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.descent_iff_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.accepts_upper_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.eventually_dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 2.348,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/lean-shell-cover/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ForwardSection.olean",
+        "ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 10.109,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/AffinePairReturn.lean",
+      "sha256": "562573f4b9b11ff13815240d8cd790197efaa89fab7b37212cc9ffe3e3b2738f",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "AffinePairReturn.olean",
+        "AffinePairReturn.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 2.913,
+      "printed_axioms": [],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/PairedLanguage.lean",
+      "sha256": "b0b448001dbcc48c364cb57c7971976995d3a7e133aa2b40dc51bff4380196c6",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "PairedLanguage.olean",
+        "PairedLanguage.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 1.55,
+      "printed_axioms": [],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/MarkedHalfReturn.lean",
+      "sha256": "a8e97fc74dfbb17f0d72b38a5ffecb8552d2f0d822064e3ab06e29506c53665d",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "MarkedHalfReturn.olean",
+        "MarkedHalfReturn.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 2.082,
+      "printed_axioms": [],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/AuditBandReturn.lean",
+      "sha256": "fde8a66a4ed8d7edf93f05dafb12d28c43c11b8c5223084128d4d889bf6b5a49",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "AuditBandReturn.olean",
+        "AuditBandReturn.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollatzShell.AffinePairReturn.pair_return' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.return_residue' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.defect_trace' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.defect_merger' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.half_size_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.lift_odd_coefficient' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.ordinary_progression' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.accepted_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.accepted_merger' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffinePairReturn.accepted_half' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.section_parent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.section_strip' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.lower_marked_of_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.collatz_iff_residual_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 1.464,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/CycleBudget.lean",
+      "sha256": "177ec2128103c1607d4d775e85adf1daf8a0fcc1f5b4d3ed77bc478bb42c3b65",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "CycleBudget.olean",
+        "CycleBudget.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.CycleBudget.product_complement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleBudget.product_second' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleBudget.half_bit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleBudget.endpoint_squares' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleBudget.primitive_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleBudget.no_periodic_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 2.173,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/IntegerClock.lean",
+      "sha256": "ef9b2fa141fdb8f735fd9f47b2aabf3aa87cf04b5b966b153cc030406a9038ec",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "IntegerClock.olean",
+        "IntegerClock.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.IntegerClock.zero_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.IntegerClock.unique_clock' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 0.175,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/DyadicSubtotal.lean",
+      "sha256": "a86bb1ed94ade9741bb5a32ede55d631acd5fac69fb8ec3c80c48177907da785",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "DyadicSubtotal.olean",
+        "DyadicSubtotal.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.DyadicSubtotal.finite_subtotal' does not depend on any axioms\n'Collatz.DyadicSubtotal.geometric_remainder' does not depend on any axioms\n",
+      "stderr": "",
+      "seconds": 0.219,
+      "printed_axioms": [],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/CycleNormComplete.lean",
+      "sha256": "ddc684225a6c21546b268e2a7b077e5e1407cf5d1de514f36e2f71f73b90b364",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "CycleNormComplete.olean",
+        "CycleNormComplete.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.CycleNorm.numerator_factor' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.top_factor' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.reduced_closure' depends on axioms: [propext]\n'Collatz.CycleNorm.bezout_minus' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.bezout_plus' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.bezout_quadratic' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.gcd_dvd_certificate' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.coprime_of_certificate' depends on axioms: [propext, Quot.sound]\n'Collatz.CycleNorm.residual_coprime_105' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleNorm.residual_full_coprime' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 2.267,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/HighFloorNorm.lean",
+      "sha256": "2cc22c24c3745faad306c7950923c1d068cd3071e9cf560e2a73ee45374ca53d",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "HighFloorNorm.olean",
+        "HighFloorNorm.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.HighFloorNorm.interleaved_carry_factor' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.interleaved_top_factor' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.exceptional_minus_bezout' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.exceptional_plus_bezout' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.exceptional_quadratic_bezout' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.full_clock_factor' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.full_residual_bezout' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.full_residual_gcd_dvd_seven' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.HighFloorNorm.full_prefix_gcd_dvd' depends on axioms: [propext, Quot.sound]\n'Collatz.HighFloorNorm.denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 3.027,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/DefectCover.lean",
+      "sha256": "0ecd88498b1c909595ba902e665224a6e9f77a9fbbea7c4ae3cdda3fbe72c71e",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "DefectCover.olean",
+        "DefectCover.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.DefectCover.translated_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.DefectCover.aggregate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 1.304,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/astra-round13-20261124/lean/GuardedPredecessor.lean",
+      "sha256": "4230db8a85e98f3d4eaa6230734d1f9a3e3c027001dc5887099fc10069dc48ab",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "GuardedPredecessor.olean",
+        "GuardedPredecessor.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollatzShell.AffinePairReturn.guarded_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.predecessor_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffinePairReturn.ls3_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 1.352,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
+      "sha256": "7dffc8eed6e4e70ba99e2789aa576620f56751a1374295f389595dbadc2e0f29",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "RepetitionWindow.olean",
+        "RepetitionWindow.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.FixedSourceRepetition.denom' does not depend on any axioms\n'Collatz.FixedSourceRepetition.carry' does not depend on any axioms\n'Collatz.FixedSourceRepetition.Edge' does not depend on any axioms\n'Collatz.FixedSourceRepetition.extra' does not depend on any axioms\n'Collatz.FixedSourceRepetition.wordDen' depends on axioms: [propext]\n'Collatz.FixedSourceRepetition.wordDen_succ' depends on axioms: [propext]\n'Collatz.FixedSourceRepetition.aligned' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.difference_dvd' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.small_shared_word' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.edge_height' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.prefix_height' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.two_start_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepetition.early_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepetition.edge_deterministic' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.equal_start_future' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepetition.four_window_reject' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 2.257,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    },
+    {
+      "source": "research/phase-packing-round12-20261124/PhasePacking.lean",
+      "sha256": "26cd05d0d9c2ade2b16f85120f87c6b3a394918bc698eccdaacd6d047c7f1d4d",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "PhasePacking.olean",
+        "PhasePacking.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.PhasePacking.clock_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]\n'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.canonical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 2.17,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-24T04:31:43.915797+00:00"
+}

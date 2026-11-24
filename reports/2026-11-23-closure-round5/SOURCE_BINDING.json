@@ -1,0 +1,302 @@
+{
+  "scope": "All 23 science/review/execution files at the validated science tree; this binding and the copied gate receipt are the only receipt-commit additions. Published tree is separately checked.",
+  "parent": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+  "science_commit": "ab65318f8e350a7378fa374b423b88ab4cd475b1",
+  "science_tree": "5c3cd1620428b42ee69b9d072d56f91d5195cbb5",
+  "files": [
+    {
+      "path": "reports/2026-11-23-closure-round5/ENTROPY_CYCLE_REVIEW.md",
+      "sha256": "ead2c1a8aeeebf2d0878402e49684f155d6082620bd5df0d32ca08a61d92f93b",
+      "bytes": 17257
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/EXACT_CONTROLS.json",
+      "sha256": "6bdd318b4f9b66a6eca18562794cc73c3b234400c0c58faf33a6129231a4afc4",
+      "bytes": 9245
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/EXACT_CONTROLS_OPTIMIZED.json",
+      "sha256": "6bdd318b4f9b66a6eca18562794cc73c3b234400c0c58faf33a6129231a4afc4",
+      "bytes": 9245
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/EXACT_RECEIPT.json",
+      "sha256": "d456b47ac18900b2de438ec7852ad29bc26c03170a3e5fef815d5e6974839afe",
+      "bytes": 2274
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/LEAN_RECEIPT.json",
+      "sha256": "4244b0a3b1c5843f0ba227a00b4cca34e6a2448987be61a9a0676b9ff55c5138",
+      "bytes": 7480
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/PR182_BEFORE.json",
+      "sha256": "89e8d6bf29e0cdfd3e7f32e8209d50b71ab023ef78a3da6aead24262d7927fd0",
+      "bytes": 16194
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/RATIONAL_SOURCE_REVIEW.md",
+      "sha256": "324c1cdb1b9ece8189d637a7aceb6edc8e69c0d8858c122d944aa5e9d471df12",
+      "bytes": 16241
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/README.md",
+      "sha256": "626c541b26b3f8a2a7dc9e28fbfcd004c28d822de460df345d0ec96519dd849a",
+      "bytes": 7708
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/ROOT_REVIEW.md",
+      "sha256": "4440a696d6c3ef58218ad0c1d867cd38ec3d28f84df96351cd8c09f54ee69473",
+      "bytes": 12417
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/RoundFiveAudit.lean",
+      "sha256": "92516a994270d55c9390532b27c657cd222a863af8f7143a60a21b1efa8f1e80",
+      "bytes": 1200
+    },
+    {
+      "path": "reports/2026-11-23-closure-round5/TERNARY_PRESSURE_REVIEW.md",
+      "sha256": "da0176f4ff2144f6f7adff44b44ab1c9b9f0404c67b2773a8e812a04e821e86f",
+      "bytes": 12045
+    },
+    {
+      "path": "research/closure-round5-20261123/CYCLE_EXCLUSION.md",
+      "sha256": "53ca400b528fa55047cb78e8c056e243932256dcd3e3c7d0fa0afd129d97ebbb",
+      "bytes": 14196
+    },
+    {
+      "path": "research/closure-round5-20261123/FIXED_SOURCE_PRESSURE.md",
+      "sha256": "09b9cb3a1bd7daf1bc77b70e5010c8591b3d1fa7965e59a63dff6efc1dbe5c76",
+      "bytes": 26608
+    },
+    {
+      "path": "research/closure-round5-20261123/FixedSourcePressure.lean",
+      "sha256": "1ca906b9fbacad0b7228ce3702c63df0e5b01b9964231b7cd2f6ed0cb812a3d6",
+      "bytes": 5343
+    },
+    {
+      "path": "research/closure-round5-20261123/README.md",
+      "sha256": "e52f107877d9b458afa6be49fb305614a24c91cab58a69aca4979a598d4b480c",
+      "bytes": 11636
+    },
+    {
+      "path": "research/closure-round5-20261123/SOURCES.json",
+      "sha256": "b8c72db1ba3604f2ae8f5eff6a5214460a4bb2cce243126647b2a968d093d97e",
+      "bytes": 12678
+    },
+    {
+      "path": "research/closure-round5-20261123/TERNARY_INFORMATION.md",
+      "sha256": "e254b24b199c94ac5832a095dc6c428eee2d8a6628dff05546bdc855287073f4",
+      "bytes": 12268
+    },
+    {
+      "path": "research/closure-round5-20261123/TRIADIC_CONSTRUCTION.md",
+      "sha256": "40fde45d454b19a97f208aef9950a2fd6fbf0fd15cef1995b37fbf5099b8b562",
+      "bytes": 17597
+    },
+    {
+      "path": "research/closure-round5-20261123/TriadicConstruction.lean",
+      "sha256": "296e622d30826fe87a63f86be63b1836497705d751c7bace5699f3755e04fc23",
+      "bytes": 9476
+    },
+    {
+      "path": "research/closure-round5-20261123/exact_replay.py",
+      "sha256": "6c14e08098142e1106db99cbe2cf3bcda3e56133ad13788da8c9f770a28c035b",
+      "bytes": 7024
+    },
+    {
+      "path": "research/closure-round5-20261123/replay_carry_cycle.py",
+      "sha256": "b4cccf0fd73870ecca5298482732e81f481b269696adc4751fc505576edbeafd",
+      "bytes": 20198
+    },
+    {
+      "path": "research/closure-round5-20261123/replay_rational.py",
+      "sha256": "a62cf4579f4588996085f2f3d4594d6f98b6b3e8cff973ae635df98c271df887",
+      "bytes": 13393
+    },
+    {
+      "path": "research/closure-round5-20261123/verify_rational.py",
+      "sha256": "91e79761fe43e092e69a2be2f9224d62c4015c4b9aed8ccf77205b4bc83091b0",
+      "bytes": 5556
+    }
+  ],
+  "older_tracked_lean_files_unchanged": [
+    {
+      "path": "reports/2026-11-21-dyadic-descent/continuation/ContinuationAudit.lean",
+      "sha256": "558ffac58977d5648366f6e3f6cac78da88c1747077d2f9a365e66e369ac7cc5"
+    },
+    {
+      "path": "reports/2026-11-21-dyadic-descent/continued/ContinuedAudit.lean",
+      "sha256": "f2efd80337c41fbb4d38d59b6d86fcb28daf15015c43ab7b3759f23f1b163e6f"
+    },
+    {
+      "path": "reports/2026-11-21-dyadic-descent/literature/LiteratureAudit.lean",
+      "sha256": "1f58a555236f7e3b5b986620ea5a63bc756762d0b566a5aeac87a7a219868061"
+    },
+    {
+      "path": "reports/2026-11-21-dyadic-descent/reassessment/ReassessmentAudit.lean",
+      "sha256": "cd58fddbff12ab171b1ac17199d389ef085fc632384c830ad5ab29a33f019a7f"
+    },
+    {
+      "path": "reports/2026-11-23-closure-round2/RoundTwoAudit.lean",
+      "sha256": "27a9e3d46bc75582887381dc314b5731b84a88736cd8aa22b198471b377ab0c5"
+    },
+    {
+      "path": "reports/2026-11-23-high-variance/HighVarianceAudit.lean",
+      "sha256": "928f771d4d407091324a6431a3290159a78d881bfe216b5ba31ca7d7a04a083d"
+    },
+    {
+      "path": "reports/2026-11-23-literature-round4/RoundFourAudit.lean",
+      "sha256": "5d791d9c3d3a1ce250f933d0d7f1fc4dab9c0d3a8ef47545c7ac84278d528806"
+    },
+    {
+      "path": "reports/2026-11-23-whole-repo-round3/RoundThreeAudit.lean",
+      "sha256": "3587a52d0fe698c9ff40767f7aff41c560453226e9d803972f41b64ba2c7bd7c"
+    },
+    {
+      "path": "research/closure-round2-20261123/CycleCancellation.lean",
+      "sha256": "7d9118b6a8efeefc6e6b3229b95420771f88291ed2583f259c00ae665648724d"
+    },
+    {
+      "path": "research/closure-round2-20261123/TwoSidedPressure.lean",
+      "sha256": "bb476bfb2481226fc1566d2d44c17fde31d795171a2ca36909b563d5c0b8c84e"
+    },
+    {
+      "path": "research/high-variance-20261123/CycleWordAlgebra.lean",
+      "sha256": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e"
+    },
+    {
+      "path": "research/high-variance-20261123/ForcedRoute.lean",
+      "sha256": "1ec27b82a10b58427f854e8d178ffe7b304d13d3ca6ac253e17fa8e11ba9736a"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/AffineRigidity.lean",
+      "sha256": "a01f300f2246726e4d99f9a5d8952fdca6adbca4c53c88ca329efef1edad6aee"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/AnalyticCoupling.lean",
+      "sha256": "5e0938034cf795ad65993d1ca384ebba4f967bb3267283b5166c08c4ea6f16a4"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/CertificateBoundary.lean",
+      "sha256": "3cdedfd465939cf48528b8ee199d528a7d6d9f795b332470757ac0d96944d3c9"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/CoefficientCounting.lean",
+      "sha256": "070d4f0f0da69130b04033b8aac169fd1e9f763c3435ff78448ba1dbe232e51e"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/CoefficientPeaks.lean",
+      "sha256": "34c522620ab742bd728db2d2ebf958b131a981fb5edd9d7c9ad160ee28d50db9"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/ExponentCoverage.lean",
+      "sha256": "339a866a08aaba64660c984a0b17834e89a98d3bfd6b2230b63e2a9995536718"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/HarmonicCapture.lean",
+      "sha256": "e85184f7a9bf33f82bbcc0ab36a45052252050d50682ee45caa10004f4e26bc8"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean",
+      "sha256": "e490eaf11c9dc5d5e78fd49d69a0d20c4619244185925c8d5920fabfb8c39b4f"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/LiteratureCertificate.lean",
+      "sha256": "9f35bd92f368f372c17e6d8289946def478fd906c54af90e69b4175f8f50595c"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean",
+      "sha256": "e9455233935c582084e73bd5f73d17553bab8b1a76bdb774485f38b33e81ed8f"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/MergerDispatch.lean",
+      "sha256": "cd34962cee9831194a95c19c13c948b14fbc3c7f4be232841cff924ff4a5720d"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+      "sha256": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/PhaseFrequency.lean",
+      "sha256": "f0afbb1f3ef0f8cb7494963855cfb5dd7cc97d9b9da551af65a31b848bbdce95"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/PolynomialLift.lean",
+      "sha256": "e487984361d2f5f613e3683a311e38231a9dfb1afd01a72e22e4e0a3466c1ac8"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/TemporalDensity.lean",
+      "sha256": "3f78622671aaed9ee29f59c1edcadc4d5545487a873e31c6bf156b5e272bc2f6"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/vendor-pr178/MarkFrequency.lean",
+      "sha256": "7786fd2c3eccecf8dedb931233c9ae1da059a8d883fb1e8250304b6c4df84921"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/vendor-pr178/MarkPhase.lean",
+      "sha256": "bd4cc9ef10cbaa91b8d8a8ea83f1d9dfbbf644d0235ceff77452c18abdf199d9"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/vendor-pr178/ReturnFourier.lean",
+      "sha256": "a758b7b8c6b1827a5f96eb8ae32196c0145a0280229b6fa22bf899c3cd348ed3"
+    },
+    {
+      "path": "research/lean-shell-cover/DyadicMixing.lean",
+      "sha256": "f0ea85a8c4ae5c441c2e3caa1b95928460c8012600d8f42b8397b35fcbca93f0"
+    },
+    {
+      "path": "research/lean-shell-cover/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+    },
+    {
+      "path": "research/lean-shell-cover/OctaveCriterion.lean",
+      "sha256": "916d0577d8c53d984f4c6c49d6101754e1aaddb0ec93f4b9a3e3e38693914733"
+    },
+    {
+      "path": "research/lean-shell-cover/OctaveDeadline.lean",
+      "sha256": "23b43afd3a425701a6030be85d12aa805a878486c17279685fb58965dcc99f91"
+    },
+    {
+      "path": "research/lean-shell-cover/OctavePacking.lean",
+      "sha256": "19c9119450b913316deb2b67a32519c1ef824ba4d3849a9e4b461cd62ad54e18"
+    },
+    {
+      "path": "research/lean-shell-cover/PeriodicWindow.lean",
+      "sha256": "22cb5ec9171a11f8da6247b07e78faa59b3ea2e4463520533e1cd2e5a6526445"
+    },
+    {
+      "path": "research/lean-shell-cover/RisingReturns.lean",
+      "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
+    },
+    {
+      "path": "research/lean-shell-cover/SectionDynamics.lean",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+    },
+    {
+      "path": "research/lean-shell-cover/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "path": "research/literature-round4-20261123/ActualLawRigidity.lean",
+      "sha256": "9248f4e4041d3241038fef6a64ed502b2ab203228345c3aec3e9c4e735d432b8"
+    },
+    {
+      "path": "research/literature-round4-20261123/CycleRigidity.lean",
+      "sha256": "e169c9914a01f1d43cf9133fbdaa5044bd080de849269437d822c10b33468d28"
+    },
+    {
+      "path": "research/literature-round4-20261123/TriadicRigidity.lean",
+      "sha256": "ab75d91329b642dd69eb6d33fd82bb376637ae0d2c8e7705fd1953e444957eb3"
+    },
+    {
+      "path": "research/whole-repo-round3-20261123/CarryFibers.lean",
+      "sha256": "9fd194724b6c2c101bfe837dcd198199f4618911c7cf608ff425c8bac31818e3"
+    },
+    {
+      "path": "research/whole-repo-round3-20261123/OrbitCounting.lean",
+      "sha256": "1886e34527f8c88007ba2dd9f7841283fa13447a03cc7ec4d14f710bd9a70acc"
+    }
+  ],
+  "gate_success": true
+}

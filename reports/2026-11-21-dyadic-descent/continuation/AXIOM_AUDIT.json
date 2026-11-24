@@ -1,0 +1,425 @@
+{
+  "scope": "All 53 public theorems declared by the four new continuation modules; imported results are credited separately.",
+  "standard_axiom_allowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audits": [
+    {
+      "declaration": "CollatzShell.ExponentCoverage.oddCount_le_clock",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.certificate_source_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.twice_le_three_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.endpoint_marked_phase_window",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.simultaneous_block_of_coefficient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.simultaneous_block_of_approximant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.arbitrarily_large_simultaneous_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.growing_certificate_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.exponential_padded_coefficient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_success_of_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.source_exponential_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.exponential_simultaneous_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_saving_simultaneous_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_plus_one_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_plus_one_power_saving_blocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_plus_one_upper_density",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ExponentCoverage.power_plus_one_power_saving_density",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.two_steps_nine_gap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.one_even_lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.one_odd_lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.even_gap_endpoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.even_gap_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.odd_gap_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.odd_gap_early_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.odd_gap_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.no_descent_gap_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.no_descent_valuation_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.odd_gap_smaller_partner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.component_minimum_gap_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.component_minimum_valuation_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.MergerDispatch.least_counterexample_valuation_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.reciprocal_set_harmonic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_reciprocal_harmonic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_reciprocal_log",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_log_cocycle_harmonic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_valuation_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_harmonic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.character_gap_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.fourierBudget_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_log",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.kernel_sum_absolute",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.marked_kernel_above",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.kernel_count_finite_values",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.marked_visits_finite_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForwardSection.AnalyticCoupling.first_marked_offset_above_source",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.log_le_digits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.log_budget_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.parameter_power_bounds",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.logarithmic_count_of_kernel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.marked_visits_logarithmic_finite",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.marked_visits_logarithmic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.TemporalDensity.unbounded_marked_visits_logarithmic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

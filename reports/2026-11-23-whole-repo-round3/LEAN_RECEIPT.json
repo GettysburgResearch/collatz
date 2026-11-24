@@ -1,0 +1,110 @@
+{
+  "date_utc": "2026-11-23T02:58:59.832736+00:00",
+  "scope": "Fresh complete local dependency build and all 19 new public theorem axiom audits; written asymptotics and infinite constructions are not formalized.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/3f23e1a583aa/round3-lean-fresh",
+  "source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/whole-repo-round3-20261123/CarryFibers.lean": "9fd194724b6c2c101bfe837dcd198199f4618911c7cf608ff425c8bac31818e3",
+    "research/whole-repo-round3-20261123/OrbitCounting.lean": "1886e34527f8c88007ba2dd9f7841283fa13447a03cc7ec4d14f710bd9a70acc",
+    "reports/2026-11-23-whole-repo-round3/RoundThreeAudit.lean": "3587a52d0fe698c9ff40767f7aff41c560453226e9d803972f41b64ba2c7bd7c"
+  },
+  "new_public_declarations": [
+    "CollatzShell.CarryFibers.carry_head_parity",
+    "CollatzShell.CarryFibers.word_eq_of_length_ones_carry",
+    "CollatzShell.CarryFibers.word_eq_of_carry_div_mod",
+    "CollatzShell.CarryFibers.residue_fiber_card_le",
+    "CollatzShell.CarryFibers.residue_fiber_card_le_interval",
+    "CollatzShell.CarryFibers.word_eq_of_small_carry_mod",
+    "CollatzShell.CarryFibers.endpoint_residue_to_carry",
+    "CollatzShell.CarryFibers.actual_endpoint_fiber_card_le",
+    "CollatzShell.CarryFibers.actual_endpoint_fiber_card_le_interval",
+    "CollatzShell.CarryFibers.same_carry_source_mod",
+    "CollatzShell.CarryFibers.same_carry_same_source_block",
+    "CollatzShell.CarryFibers.actual_box_injection",
+    "CollatzShell.CarryFibers.fiber_weight_square_le",
+    "CollatzShell.CarryFibers.carry_collision_le",
+    "CollatzShell.CarryFibers.actual_endpoint_collision_le_interval",
+    "CollatzShell.CarryFibers.actual_endpoint_collision_le",
+    "CollatzShell.OrbitCounting.carry_lt_clock_product",
+    "CollatzShell.OrbitCounting.high_clock_compresses",
+    "CollatzShell.OrbitCounting.high_lane_card_le"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round3-lean-fresh/CycleWordAlgebra.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/CycleWordAlgebra.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 3.747,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round3-lean-fresh/CarryFibers.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/CarryFibers.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.213,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round3-lean-fresh/OrbitCounting.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/OrbitCounting.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.812,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-whole-repo-round3",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round3-lean-fresh/RoundThreeAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-whole-repo-round3/RoundThreeAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.083,
+      "stdout": "'CollatzShell.CarryFibers.carry_head_parity' depends on axioms: [propext]\n'CollatzShell.CarryFibers.word_eq_of_length_ones_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.word_eq_of_carry_div_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.residue_fiber_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.residue_fiber_card_le_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.word_eq_of_small_carry_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.endpoint_residue_to_carry' depends on axioms: [propext]\n'CollatzShell.CarryFibers.actual_endpoint_fiber_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.actual_endpoint_fiber_card_le_interval' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.CarryFibers.same_carry_source_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.same_carry_same_source_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.actual_box_injection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.fiber_weight_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.carry_collision_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryFibers.actual_endpoint_collision_le_interval' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.CarryFibers.actual_endpoint_collision_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OrbitCounting.carry_lt_clock_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OrbitCounting.high_clock_compresses' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OrbitCounting.high_lane_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}

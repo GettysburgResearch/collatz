@@ -1,0 +1,57 @@
+import ExponentCoverage
+import MergerDispatch
+import AnalyticCoupling
+import TemporalDensity
+#print axioms CollatzShell.ExponentCoverage.oddCount_le_clock
+#print axioms CollatzShell.ExponentCoverage.certificate_source_bound
+#print axioms CollatzShell.ExponentCoverage.twice_le_three_pow
+#print axioms CollatzShell.ExponentCoverage.endpoint_marked_phase_window
+#print axioms CollatzShell.ExponentCoverage.simultaneous_block_of_coefficient
+#print axioms CollatzShell.ExponentCoverage.simultaneous_block_of_approximant
+#print axioms CollatzShell.ExponentCoverage.arbitrarily_large_simultaneous_blocks
+#print axioms CollatzShell.ExponentCoverage.growing_certificate_blocks
+#print axioms CollatzShell.ExponentCoverage.exponential_padded_coefficient
+#print axioms CollatzShell.ExponentCoverage.power_success_of_scale
+#print axioms CollatzShell.ExponentCoverage.source_exponential_scale
+#print axioms CollatzShell.ExponentCoverage.exponential_simultaneous_blocks
+#print axioms CollatzShell.ExponentCoverage.power_saving_simultaneous_blocks
+#print axioms CollatzShell.ExponentCoverage.power_plus_one_blocks
+#print axioms CollatzShell.ExponentCoverage.power_plus_one_power_saving_blocks
+#print axioms CollatzShell.ExponentCoverage.power_plus_one_upper_density
+#print axioms CollatzShell.ExponentCoverage.power_plus_one_power_saving_density
+#print axioms CollatzShell.MergerDispatch.two_steps_nine_gap
+#print axioms CollatzShell.MergerDispatch.one_even_lift
+#print axioms CollatzShell.MergerDispatch.one_odd_lift
+#print axioms CollatzShell.MergerDispatch.even_gap_endpoint
+#print axioms CollatzShell.MergerDispatch.even_gap_descent
+#print axioms CollatzShell.MergerDispatch.odd_gap_endpoint
+#print axioms CollatzShell.MergerDispatch.odd_gap_early_endpoint
+#print axioms CollatzShell.MergerDispatch.odd_gap_descent
+#print axioms CollatzShell.MergerDispatch.no_descent_gap_residual
+#print axioms CollatzShell.MergerDispatch.no_descent_valuation_residual
+#print axioms CollatzShell.MergerDispatch.odd_gap_smaller_partner
+#print axioms CollatzShell.MergerDispatch.component_minimum_gap_residual
+#print axioms CollatzShell.MergerDispatch.component_minimum_valuation_residual
+#print axioms CollatzShell.MergerDispatch.least_counterexample_valuation_residual
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.reciprocal_set_harmonic
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_reciprocal_harmonic
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_reciprocal_log
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_log_cocycle_harmonic
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_valuation_bound
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_harmonic
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.character_gap_budget
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.fourierBudget_nonneg
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_explicit
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.odd_prefix_fourier_log
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.kernel_sum_absolute
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.marked_kernel_above
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.kernel_count_finite_values
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.marked_visits_finite_bound
+#print axioms CollatzShell.ForwardSection.AnalyticCoupling.first_marked_offset_above_source
+#print axioms CollatzShell.TemporalDensity.log_le_digits
+#print axioms CollatzShell.TemporalDensity.log_budget_bound
+#print axioms CollatzShell.TemporalDensity.parameter_power_bounds
+#print axioms CollatzShell.TemporalDensity.logarithmic_count_of_kernel
+#print axioms CollatzShell.TemporalDensity.marked_visits_logarithmic_finite
+#print axioms CollatzShell.TemporalDensity.marked_visits_logarithmic
+#print axioms CollatzShell.TemporalDensity.unbounded_marked_visits_logarithmic

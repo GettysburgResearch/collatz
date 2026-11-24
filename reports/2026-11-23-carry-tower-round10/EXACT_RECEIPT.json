@@ -1,0 +1,59 @@
+{
+  "schema": "collatz-round10-exact-execution/v1",
+  "recorded_utc": "2026-11-23T14:45:03.967157+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "success": true,
+  "byte_identical": true,
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/carry-tower-round10-20261123/run_exact_controls.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "seconds": 1.524,
+      "output": {
+        "path": "reports/2026-11-23-carry-tower-round10/EXACT_CONTROLS.json",
+        "bytes": 24998,
+        "sha256": "a46647bf4b567968b3e8d5831cbf3adfe5aff16981f36b2ec052ad0fe5308646"
+      },
+      "explicit_checks": 126433,
+      "scientific_inputs": 14,
+      "lane_checks": {
+        "arbitrary_return_tower": 35714,
+        "general_rational_phase": 16541,
+        "sparse_arithmetic_scripts": 74178
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/carry-tower-round10-20261123/run_exact_controls.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "seconds": 1.337,
+      "output": {
+        "path": "reports/2026-11-23-carry-tower-round10/EXACT_CONTROLS_OPTIMIZED.json",
+        "bytes": 24998,
+        "sha256": "a46647bf4b567968b3e8d5831cbf3adfe5aff16981f36b2ec052ad0fe5308646"
+      },
+      "explicit_checks": 126433,
+      "scientific_inputs": 14,
+      "lane_checks": {
+        "arbitrary_return_tower": 35714,
+        "general_rational_phase": 16541,
+        "sparse_arithmetic_scripts": 74178
+      }
+    }
+  ],
+  "scope": "bounded controls, not an all-time Collatz proof"
+}

@@ -1,0 +1,1220 @@
+{
+  "input_sha256": {
+    "ACTUAL_SCALAR_LAW.md": "0ee3cca1ef3c1e07bd469edcf208e36fca61b2594b6ebf75e15c6eb03a1ef516",
+    "ARITHMETIC_RIGIDITY.md": "b12c3b55c9f95b2ab3ba19b22e31ac5911d502c128660e0e06ec4a19575d983f",
+    "ArithmeticRigidity.lean": "4eece1db14104297ff26491dd496f754c37da60cdaaf0849cce8de36608fecb8",
+    "CARRY_RETURN.md": "6392e987c4b384a9c5992841005fa0e9dbd7840283a5f7785dc1f3e890ca6618",
+    "CarryReturn.lean": "e1151b7c0148a12138a43f5c54c0349617711d0474459e5d1dcac9d626dfd1f0",
+    "MAXIMUM_GATE.md": "e5f587c59d0277f3a4cce67771a812dfd3a84dbf56597820df4a673911215ff9",
+    "MaximumGate.lean": "812cb007aec7ddc494198153721026e56a11dada5f5ad8db18e9eadd92ff54aa",
+    "PHASE_RIGIDITY.md": "4c87b64c237f3fbc9d02c308fa9a94050046adf664cbe9f88282505d1b3d79a4",
+    "README.md": "637fd27c2725aa58a81cb817e8dbe73f3dc6ed0433df4bdde22ea1c2e6d30585",
+    "SOURCES.json": "500f72fdfc9b914a53e6c53e4af17f398fc7fcf8bc27bba37421ee8178318002",
+    "arithmetic_controls.py": "682887bb00fe515d1cc82e41ce3eb376ffa2c93fef60f246b4500bbb9e991c46",
+    "carry_controls.py": "7674c174a6122ba9fee231ad6f3d352c70ff9d49bf908da31af78cb249eb1ab7",
+    "law_controls.py": "0741b12e324778da3c502ad8af78c16a104cb8e355ad232b679cea22caf37a50",
+    "phase_controls.py": "612c8e0231416caa3a7989b1a41bdb673597d5c6530b5398d61049fd96d57ad1",
+    "run_exact_controls.py": "f88feb0d511f476e0e4597303dccc014f76c14e32390c1657ee448e21b95a6dc"
+  },
+  "lanes": {
+    "actual_source_law": {
+      "actual_prefix_replays": 13200,
+      "actual_source_limits": [
+        31,
+        128,
+        1024,
+        4096
+      ],
+      "bounded_lipschitz_test_functions": "four monotone clipped affine functions per empirical row",
+      "checks_by_category": {
+        "all retained word count": 5,
+        "complete endpoint congruence": 17576,
+        "complete ordinary affine equation": 52728,
+        "cylinder representative literal valuation replay": 52728,
+        "empirical outside mass bounded without orbit convergence": 20,
+        "exact independent tail satisfies Chernoff bound": 5,
+        "full bounded Lipschitz estimate using certified intervals": 80,
+        "independent literal source count equals cylinder count": 70304,
+        "independent retained mass below one": 5,
+        "literal cylinder has a positive odd representative": 17576,
+        "literal endpoint positive odd": 52728,
+        "negative binomial tail formula through depth 128": 128,
+        "ordinary endpoint bit length bound": 13200,
+        "ordinary endpoint growth bound": 13200,
+        "positive composition count at exact clock": 50,
+        "progression probability discrepancy": 158184,
+        "retained word total discrepancy": 20,
+        "terminal-one scalar completion remains triadic": 15504,
+        "unconditional actual scalar enclosure is nonempty": 13200,
+        "uniform actual scalar tail bound": 13200,
+        "word count growth used in weak convergence": 128
+      },
+      "cylinder_lift_replays": 52728,
+      "empirical_rows": [
+        {
+          "odd_sources": 16,
+          "prefix_length": 1,
+          "retained_actual_sources": 15,
+          "retained_ideal_mass": "15/16",
+          "source_limit": 31
+        },
+        {
+          "odd_sources": 16,
+          "prefix_length": 2,
+          "retained_actual_sources": 16,
+          "retained_ideal_mass": "247/256",
+          "source_limit": 31
+        },
+        {
+          "odd_sources": 16,
+          "prefix_length": 3,
+          "retained_actual_sources": 16,
+          "retained_ideal_mass": "4017/4096",
+          "source_limit": 31
+        },
+        {
+          "odd_sources": 16,
+          "prefix_length": 4,
+          "retained_actual_sources": 16,
+          "retained_ideal_mass": "64839/65536",
+          "source_limit": 31
+        },
+        {
+          "odd_sources": 16,
+          "prefix_length": 5,
+          "retained_actual_sources": 16,
+          "retained_ideal_mass": "260595/262144",
+          "source_limit": 31
+        },
+        {
+          "odd_sources": 64,
+          "prefix_length": 1,
+          "retained_actual_sources": 60,
+          "retained_ideal_mass": "15/16",
+          "source_limit": 128
+        },
+        {
+          "odd_sources": 64,
+          "prefix_length": 2,
+          "retained_actual_sources": 61,
+          "retained_ideal_mass": "247/256",
+          "source_limit": 128
+        },
+        {
+          "odd_sources": 64,
+          "prefix_length": 3,
+          "retained_actual_sources": 64,
+          "retained_ideal_mass": "4017/4096",
+          "source_limit": 128
+        },
+        {
+          "odd_sources": 64,
+          "prefix_length": 4,
+          "retained_actual_sources": 64,
+          "retained_ideal_mass": "64839/65536",
+          "source_limit": 128
+        },
+        {
+          "odd_sources": 64,
+          "prefix_length": 5,
+          "retained_actual_sources": 64,
+          "retained_ideal_mass": "260595/262144",
+          "source_limit": 128
+        },
+        {
+          "odd_sources": 512,
+          "prefix_length": 1,
+          "retained_actual_sources": 480,
+          "retained_ideal_mass": "15/16",
+          "source_limit": 1024
+        },
+        {
+          "odd_sources": 512,
+          "prefix_length": 2,
+          "retained_actual_sources": 494,
+          "retained_ideal_mass": "247/256",
+          "source_limit": 1024
+        },
+        {
+          "odd_sources": 512,
+          "prefix_length": 3,
+          "retained_actual_sources": 502,
+          "retained_ideal_mass": "4017/4096",
+          "source_limit": 1024
+        },
+        {
+          "odd_sources": 512,
+          "prefix_length": 4,
+          "retained_actual_sources": 510,
+          "retained_ideal_mass": "64839/65536",
+          "source_limit": 1024
+        },
+        {
+          "odd_sources": 512,
+          "prefix_length": 5,
+          "retained_actual_sources": 512,
+          "retained_ideal_mass": "260595/262144",
+          "source_limit": 1024
+        },
+        {
+          "odd_sources": 2048,
+          "prefix_length": 1,
+          "retained_actual_sources": 1920,
+          "retained_ideal_mass": "15/16",
+          "source_limit": 4096
+        },
+        {
+          "odd_sources": 2048,
+          "prefix_length": 2,
+          "retained_actual_sources": 1976,
+          "retained_ideal_mass": "247/256",
+          "source_limit": 4096
+        },
+        {
+          "odd_sources": 2048,
+          "prefix_length": 3,
+          "retained_actual_sources": 2009,
+          "retained_ideal_mass": "4017/4096",
+          "source_limit": 4096
+        },
+        {
+          "odd_sources": 2048,
+          "prefix_length": 4,
+          "retained_actual_sources": 2022,
+          "retained_ideal_mass": "64839/65536",
+          "source_limit": 4096
+        },
+        {
+          "odd_sources": 2048,
+          "prefix_length": 5,
+          "retained_actual_sources": 2046,
+          "retained_ideal_mass": "260595/262144",
+          "source_limit": 4096
+        }
+      ],
+      "exact_checks": 490569,
+      "finite_gap_words": 17576,
+      "maximum_actual_prefix_length": 5,
+      "negative_binomial_tail_depths": [
+        1,
+        128
+      ],
+      "not_claimed": "random dynamics on a fixed orbit, irrational actual scalar, or Collatz convergence",
+      "scope": "exact finite cylinder and tail controls; infinite law and measure type are written theorems",
+      "status": "PASS",
+      "triadic_completion_cases": 15504
+    },
+    "arithmetic_rigidity": {
+      "actual_odd_transitions": 6384,
+      "binary_carry_cases": 130,
+      "checks_by_category": {
+        "CRT source bit-length payment": 620,
+        "actual finite carry realization shadows seven eighths": 130,
+        "arbitrary finite carry word has exact symbolic scalar": 130,
+        "bounded candidate scalar transport": 1764,
+        "complete binary carry clock": 130,
+        "complete physical prefix identity": 6384,
+        "complete terminal-odd cylinder congruence": 620,
+        "endpoint height independent of supplied gap sizes": 620,
+        "exact target prefix and tail": 490,
+        "linear source height for supplied target": 490,
+        "literal actual gap matches cylinder": 6384,
+        "normalized target scalar tail": 490,
+        "positive odd actual endpoint": 6384,
+        "positive odd complete CRT representative": 620,
+        "positive target gap digits": 490,
+        "prescribed odd source congruence": 620,
+        "unconditional enclosure certifies target approximation": 490
+      },
+      "exact_checks": 26856,
+      "scope": "finite actual ordinary CRT realizations and unconditional scalar enclosures; no terminating-tail assumption",
+      "status": "PASS",
+      "target_approximation_cases": 490,
+      "unproved": "arithmetic or periodicity of the actual scalar carries for one arbitrary fixed positive ordinary source"
+    },
+    "complete_denominator_rigidity": {
+      "analytic_prime_controls": [
+        {
+          "minimum_mean": "1",
+          "order": 1012,
+          "prime": 1013
+        },
+        {
+          "minimum_mean": "992/1001",
+          "order": 1001,
+          "prime": 2003
+        },
+        {
+          "minimum_mean": "1002/1013",
+          "order": 1013,
+          "prime": 2027
+        },
+        {
+          "minimum_mean": "1",
+          "order": 2003,
+          "prime": 4007
+        },
+        {
+          "minimum_mean": "2486/2501",
+          "order": 2501,
+          "prime": 5003
+        }
+      ],
+      "binary_boundary_phases": 34,
+      "checks_by_category": {
+        "all complete cosets at checked analytic prime": 9,
+        "analytic control uses a prime modulus": 5,
+        "binary sixteen-times-odd boundary lower mean": 34,
+        "binary support cap is attained by low phases": 4,
+        "complete composite denominator fiber contraction": 242,
+        "complete first low-family phase and mean": 13,
+        "complete order ratio funds every fiber": 8,
+        "complete ordinary cylinder edge": 1535,
+        "cross-order valuation depends only on prime support": 1477,
+        "cross-prime order obstruction is retained": 1,
+        "doubling family beyond negative-one pairing": 1,
+        "entire actual scalar enclosure approaches fixed low phase": 62,
+        "every complete phase at a violated support cap contracts": 430,
+        "every literal finite cylinder pressure clock": 1535,
+        "every mixed-modulus residue lift retained": 3456,
+        "every phase in the complete three-power-minus-two family": 36,
+        "every prescribed cylinder valuation is actual": 1535,
+        "exact doubling or projection defect identity": 923,
+        "exact fixed-support denominator bound": 2,
+        "exact odd-or-even complete fiber mean": 246,
+        "exact ordinary first-departure valuation gate": 1152,
+        "exact periodic scalar candidate tail identity": 62,
+        "exact rational prime-only Gauss threshold": 5,
+        "explicit complete doubling-in-tripling family": 7,
+        "first low-family complete pressure prefix clocks": 104,
+        "first low-family complete scalar word": 13,
+        "full composite fiber domain": 8,
+        "full projected composite coset": 246,
+        "literal positive ordinary cylinder source": 62,
+        "negative rational shadow has complete odd denominator": 62,
+        "ordinary endpoint height funds scalar enclosure": 62,
+        "sharp binary low-family complete scalar word": 7,
+        "sharp binary low-family exact phase": 7,
+        "sharp low phase survives every finite-floor test": 7,
+        "sharp low starting scalar below pressure ceiling": 7,
+        "strict complete fiber lower mean": 246,
+        "violated odd support cap produces full prime fiber": 75,
+        "wrong first-departure gate rejects exact scalar candidate": 1082
+      },
+      "complete_phases_at_violated_caps": 430,
+      "composite_fiber_cases": [
+        {
+          "base": 35,
+          "d": 175,
+          "fiber": 5,
+          "minimum_mean": "29/30"
+        },
+        {
+          "base": 91,
+          "d": 637,
+          "fiber": 7,
+          "minimum_mean": "20/21"
+        },
+        {
+          "base": 275,
+          "d": 1375,
+          "fiber": 5,
+          "minimum_mean": "97/100"
+        },
+        {
+          "base": 3025,
+          "d": 15125,
+          "fiber": 5,
+          "minimum_mean": "24/25"
+        },
+        {
+          "base": 88,
+          "d": 176,
+          "fiber": 2,
+          "minimum_mean": "39/40"
+        },
+        {
+          "base": 728,
+          "d": 2912,
+          "fiber": 4,
+          "minimum_mean": "43/48"
+        },
+        {
+          "base": 560,
+          "d": 2240,
+          "fiber": 4,
+          "minimum_mean": "91/96"
+        },
+        {
+          "base": 968,
+          "d": 3872,
+          "fiber": 4,
+          "minimum_mean": "15/16"
+        }
+      ],
+      "doubling_identity_cosets": 923,
+      "exact_checks": 14768,
+      "low_phase_families": [
+        {
+          "denominator": 8,
+          "family": "one terminal two",
+          "mean": "3/4",
+          "n": 2,
+          "target": "5/8"
+        },
+        {
+          "denominator": 13,
+          "family": "one terminal two",
+          "mean": "2/3",
+          "n": 3,
+          "target": "7/13"
+        },
+        {
+          "denominator": 80,
+          "family": "one terminal two",
+          "mean": "5/8",
+          "n": 4,
+          "target": "41/80"
+        },
+        {
+          "denominator": 121,
+          "family": "one terminal two",
+          "mean": "3/5",
+          "n": 5,
+          "target": "61/121"
+        },
+        {
+          "denominator": 728,
+          "family": "one terminal two",
+          "mean": "7/12",
+          "n": 6,
+          "target": "365/728"
+        },
+        {
+          "denominator": 1093,
+          "family": "one terminal two",
+          "mean": "4/7",
+          "n": 7,
+          "target": "547/1093"
+        },
+        {
+          "denominator": 6560,
+          "family": "one terminal two",
+          "mean": "9/16",
+          "n": 8,
+          "target": "3281/6560"
+        },
+        {
+          "denominator": 9841,
+          "family": "one terminal two",
+          "mean": "5/9",
+          "n": 9,
+          "target": "4921/9841"
+        },
+        {
+          "denominator": 59048,
+          "family": "one terminal two",
+          "mean": "11/20",
+          "n": 10,
+          "target": "29525/59048"
+        },
+        {
+          "denominator": 88573,
+          "family": "one terminal two",
+          "mean": "6/11",
+          "n": 11,
+          "target": "44287/88573"
+        },
+        {
+          "denominator": 531440,
+          "family": "one terminal two",
+          "mean": "13/24",
+          "n": 12,
+          "target": "265721/531440"
+        },
+        {
+          "denominator": 797161,
+          "family": "one terminal two",
+          "mean": "7/13",
+          "n": 13,
+          "target": "398581/797161"
+        },
+        {
+          "denominator": 4782968,
+          "family": "one terminal two",
+          "mean": "15/28",
+          "n": 14,
+          "target": "2391485/4782968"
+        },
+        {
+          "denominator": 1456,
+          "family": "sharp binary support",
+          "mean": "19/24",
+          "n": 6,
+          "target": "729/1456"
+        },
+        {
+          "denominator": 4372,
+          "family": "sharp binary support",
+          "mean": "11/14",
+          "n": 7,
+          "target": "2187/4372"
+        },
+        {
+          "denominator": 13120,
+          "family": "sharp binary support",
+          "mean": "25/32",
+          "n": 8,
+          "target": "6561/13120"
+        },
+        {
+          "denominator": 39364,
+          "family": "sharp binary support",
+          "mean": "7/9",
+          "n": 9,
+          "target": "19683/39364"
+        },
+        {
+          "denominator": 118096,
+          "family": "sharp binary support",
+          "mean": "31/40",
+          "n": 10,
+          "target": "59049/118096"
+        },
+        {
+          "denominator": 354292,
+          "family": "sharp binary support",
+          "mean": "17/22",
+          "n": 11,
+          "target": "177147/354292"
+        },
+        {
+          "denominator": 1062880,
+          "family": "sharp binary support",
+          "mean": "37/48",
+          "n": 12,
+          "target": "531441/1062880"
+        }
+      ],
+      "ordinary_cylinders": [
+        {
+          "certified_error": "4/9",
+          "endpoint_bits": 4,
+          "prefix_steps": 2,
+          "repeats": 1,
+          "source": "11",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "20/243",
+          "endpoint_bits": 8,
+          "prefix_steps": 4,
+          "repeats": 2,
+          "source": "123",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "28/2187",
+          "endpoint_bits": 11,
+          "prefix_steps": 6,
+          "repeats": 3,
+          "source": "1019",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "4/2187",
+          "endpoint_bits": 14,
+          "prefix_steps": 8,
+          "repeats": 4,
+          "source": "8187",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "44/177147",
+          "endpoint_bits": 17,
+          "prefix_steps": 10,
+          "repeats": 5,
+          "source": "65531",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "52/1594323",
+          "endpoint_bits": 21,
+          "prefix_steps": 12,
+          "repeats": 6,
+          "source": "524283",
+          "target": "5/8",
+          "word_length": 2
+        },
+        {
+          "certified_error": "16/81",
+          "endpoint_bits": 4,
+          "prefix_steps": 3,
+          "repeats": 1,
+          "source": "7",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "28/2187",
+          "endpoint_bits": 10,
+          "prefix_steps": 6,
+          "repeats": 2,
+          "source": "231",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "40/59049",
+          "endpoint_bits": 12,
+          "prefix_steps": 9,
+          "repeats": 3,
+          "source": "743",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "52/1594323",
+          "endpoint_bits": 20,
+          "prefix_steps": 12,
+          "repeats": 4,
+          "source": "107239",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "64/43046721",
+          "endpoint_bits": 24,
+          "prefix_steps": 15,
+          "repeats": 5,
+          "source": "762599",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "76/1162261467",
+          "endpoint_bits": 28,
+          "prefix_steps": 18,
+          "repeats": 6,
+          "source": "9151207",
+          "target": "7/13",
+          "word_length": 3
+        },
+        {
+          "certified_error": "20/243",
+          "endpoint_bits": 7,
+          "prefix_steps": 4,
+          "repeats": 1,
+          "source": "47",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "4/2187",
+          "endpoint_bits": 13,
+          "prefix_steps": 8,
+          "repeats": 2,
+          "source": "751",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "52/1594323",
+          "endpoint_bits": 19,
+          "prefix_steps": 12,
+          "repeats": 3,
+          "source": "29423",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "68/129140163",
+          "endpoint_bits": 25,
+          "prefix_steps": 16,
+          "repeats": 4,
+          "source": "684783",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "28/3486784401",
+          "endpoint_bits": 32,
+          "prefix_steps": 20,
+          "repeats": 5,
+          "source": "34239215",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "100/847288609443",
+          "endpoint_bits": 39,
+          "prefix_steps": 24,
+          "repeats": 6,
+          "source": "1577743087",
+          "target": "41/80",
+          "word_length": 4
+        },
+        {
+          "certified_error": "8/243",
+          "endpoint_bits": 7,
+          "prefix_steps": 5,
+          "repeats": 1,
+          "source": "31",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "44/177147",
+          "endpoint_bits": 16,
+          "prefix_steps": 10,
+          "repeats": 2,
+          "source": "4255",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "64/43046721",
+          "endpoint_bits": 23,
+          "prefix_steps": 15,
+          "repeats": 3,
+          "source": "143519",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "28/3486784401",
+          "endpoint_bits": 33,
+          "prefix_steps": 20,
+          "repeats": 4,
+          "source": "27930783",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "104/2541865828329",
+          "endpoint_bits": 41,
+          "prefix_steps": 25,
+          "repeats": 5,
+          "source": "1403662495",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "124/617673396283947",
+          "endpoint_bits": 46,
+          "prefix_steps": 30,
+          "repeats": 6,
+          "source": "20731015327",
+          "target": "61/121",
+          "word_length": 5
+        },
+        {
+          "certified_error": "28/2187",
+          "endpoint_bits": 11,
+          "prefix_steps": 6,
+          "repeats": 1,
+          "source": "191",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "52/1594323",
+          "endpoint_bits": 16,
+          "prefix_steps": 12,
+          "repeats": 2,
+          "source": "1471",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "76/1162261467",
+          "endpoint_bits": 30,
+          "prefix_steps": 18,
+          "repeats": 3,
+          "source": "3573183",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "100/847288609443",
+          "endpoint_bits": 32,
+          "prefix_steps": 24,
+          "repeats": 4,
+          "source": "3573183",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "124/617673396283947",
+          "endpoint_bits": 49,
+          "prefix_steps": 30,
+          "repeats": 5,
+          "source": "49395697087",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "148/450283905890997363",
+          "endpoint_bits": 58,
+          "prefix_steps": 36,
+          "repeats": 6,
+          "source": "5546953835967",
+          "target": "365/728",
+          "word_length": 6
+        },
+        {
+          "certified_error": "32/6561",
+          "endpoint_bits": 11,
+          "prefix_steps": 7,
+          "repeats": 1,
+          "source": "127",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "20/4782969",
+          "endpoint_bits": 24,
+          "prefix_steps": 14,
+          "repeats": 2,
+          "source": "126591",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "88/31381059609",
+          "endpoint_bits": 29,
+          "prefix_steps": 21,
+          "repeats": 3,
+          "source": "781951",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "116/68630377364883",
+          "endpoint_bits": 46,
+          "prefix_steps": 28,
+          "repeats": 4,
+          "source": "7282093695",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "16/16677181699666569",
+          "endpoint_bits": 55,
+          "prefix_steps": 35,
+          "repeats": 5,
+          "source": "428188888703",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "172/328256967394537077627",
+          "endpoint_bits": 67,
+          "prefix_steps": 42,
+          "repeats": 6,
+          "source": "334679723732607",
+          "target": "547/1093",
+          "word_length": 7
+        },
+        {
+          "certified_error": "4/2187",
+          "endpoint_bits": 14,
+          "prefix_steps": 8,
+          "repeats": 1,
+          "source": "767",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "68/129140163",
+          "endpoint_bits": 26,
+          "prefix_steps": 16,
+          "repeats": 2,
+          "source": "237311",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "100/847288609443",
+          "endpoint_bits": 38,
+          "prefix_steps": 24,
+          "repeats": 3,
+          "source": "74686207",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "44/1853020188851841",
+          "endpoint_bits": 49,
+          "prefix_steps": 32,
+          "repeats": 4,
+          "source": "20744216319",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "164/36472996377170786403",
+          "endpoint_bits": 60,
+          "prefix_steps": 40,
+          "repeats": 5,
+          "source": "2082328518399",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "196/239299329230617529590083",
+          "endpoint_bits": 74,
+          "prefix_steps": 48,
+          "repeats": 6,
+          "source": "3168675816513279",
+          "target": "3281/6560",
+          "word_length": 8
+        },
+        {
+          "certified_error": "52/1594323",
+          "endpoint_bits": 18,
+          "prefix_steps": 12,
+          "repeats": 1,
+          "source": "177279",
+          "target": "729/1456",
+          "word_length": 12
+        },
+        {
+          "certified_error": "100/847288609443",
+          "endpoint_bits": 39,
+          "prefix_steps": 24,
+          "repeats": 2,
+          "source": "321491481727",
+          "target": "729/1456",
+          "word_length": 12
+        },
+        {
+          "certified_error": "148/450283905890997363",
+          "endpoint_bits": 53,
+          "prefix_steps": 36,
+          "repeats": 3,
+          "source": "5520419618731135",
+          "target": "729/1456",
+          "word_length": 12
+        },
+        {
+          "certified_error": "196/239299329230617529590083",
+          "endpoint_bits": 73,
+          "prefix_steps": 48,
+          "repeats": 4,
+          "source": "6633627627551264519295",
+          "target": "729/1456",
+          "word_length": 12
+        },
+        {
+          "certified_error": "20/4782969",
+          "endpoint_bits": 23,
+          "prefix_steps": 14,
+          "repeats": 1,
+          "source": "4137727",
+          "target": "2187/4372",
+          "word_length": 14
+        },
+        {
+          "certified_error": "116/68630377364883",
+          "endpoint_bits": 45,
+          "prefix_steps": 28,
+          "repeats": 2,
+          "source": "24965952774911",
+          "target": "2187/4372",
+          "word_length": 14
+        },
+        {
+          "certified_error": "172/328256967394537077627",
+          "endpoint_bits": 66,
+          "prefix_steps": 42,
+          "repeats": 3,
+          "source": "30432325391722947327",
+          "target": "2187/4372",
+          "word_length": 14
+        },
+        {
+          "certified_error": "76/523347633027360537213511521",
+          "endpoint_bits": 89,
+          "prefix_steps": 56,
+          "repeats": 4,
+          "source": "334325720971232922006659839",
+          "target": "2187/4372",
+          "word_length": 14
+        },
+        {
+          "certified_error": "68/129140163",
+          "endpoint_bits": 25,
+          "prefix_steps": 16,
+          "repeats": 1,
+          "source": "18137599",
+          "target": "6561/13120",
+          "word_length": 16
+        },
+        {
+          "certified_error": "44/1853020188851841",
+          "endpoint_bits": 50,
+          "prefix_steps": 32,
+          "repeats": 2,
+          "source": "518729659367935",
+          "target": "6561/13120",
+          "word_length": 16
+        },
+        {
+          "certified_error": "196/239299329230617529590083",
+          "endpoint_bits": 73,
+          "prefix_steps": 48,
+          "repeats": 3,
+          "source": "3530009726855387857407",
+          "target": "6561/13120",
+          "word_length": 16
+        },
+        {
+          "certified_error": "260/10301051460877537453973547267843",
+          "endpoint_bits": 102,
+          "prefix_steps": 64,
+          "repeats": 4,
+          "source": "1608218229769832201873419190783",
+          "target": "6561/13120",
+          "word_length": 16
+        },
+        {
+          "certified_error": "76/1162261467",
+          "endpoint_bits": 27,
+          "prefix_steps": 18,
+          "repeats": 1,
+          "source": "90385407",
+          "target": "19683/39364",
+          "word_length": 18
+        },
+        {
+          "certified_error": "148/450283905890997363",
+          "endpoint_bits": 58,
+          "prefix_steps": 36,
+          "repeats": 2,
+          "source": "134989732355714047",
+          "target": "19683/39364",
+          "word_length": 18
+        },
+        {
+          "certified_error": "220/174449211009120179071170507",
+          "endpoint_bits": 85,
+          "prefix_steps": 54,
+          "repeats": 3,
+          "source": "9295783568669162325879807",
+          "target": "19683/39364",
+          "word_length": 18
+        },
+        {
+          "certified_error": "292/67585198634817523235520443624317923",
+          "endpoint_bits": 114,
+          "prefix_steps": 72,
+          "repeats": 4,
+          "source": "3046897339518728220924747591134207",
+          "target": "19683/39364",
+          "word_length": 18
+        },
+        {
+          "certified_error": "28/3486784401",
+          "endpoint_bits": 33,
+          "prefix_steps": 20,
+          "repeats": 1,
+          "source": "2834089983",
+          "target": "59049/118096",
+          "word_length": 20
+        },
+        {
+          "certified_error": "164/36472996377170786403",
+          "endpoint_bits": 65,
+          "prefix_steps": 40,
+          "repeats": 2,
+          "source": "8713758781150644223",
+          "target": "59049/118096",
+          "word_length": 20
+        },
+        {
+          "certified_error": "244/127173474825648610542883299603",
+          "endpoint_bits": 92,
+          "prefix_steps": 60,
+          "repeats": 3,
+          "source": "858950372062575047866107903",
+          "target": "59049/118096",
+          "word_length": 20
+        },
+        {
+          "certified_error": "4/5474401089420219382077155933569751763",
+          "endpoint_bits": 125,
+          "prefix_steps": 80,
+          "repeats": 4,
+          "source": "4181096451982901462954225265390962687",
+          "target": "59049/118096",
+          "word_length": 20
+        }
+      ],
+      "ordinary_first_departure_gates": 1152,
+      "scope": "finite exact controls for the written complete-denominator proofs; actual scalars enclosed from ordinary finite prefixes",
+      "status": "PASS",
+      "support_cap_modulus_limit": 1536,
+      "unproved": "all-time carry control and arithmetic rigidity of one fixed positive ordinary source",
+      "violated_cap_denominators": 107
+    },
+    "ordinary_carry_return": {
+      "candidate_ordinary_sources": 16384,
+      "checks_by_category": {
+        "actual scalar equality transport on finite candidate return": 24,
+        "actual scalar transport for unreduced supplied candidates": 36,
+        "all returned small sources strictly decrease": 614,
+        "all-carry short-prefix descent": 275,
+        "all-paid-return P majorant": 25,
+        "arbitrary paid excursion after exact L prefix": 325,
+        "binary and ternary gates retain ordinary integer freedom": 8,
+        "bounded supplied denominator-eight reduction": 36,
+        "closed positive denominator-eight candidate": 25,
+        "complete L-power-P source and endpoint class": 99,
+        "complete P source residue period": 33,
+        "complete cylinder affine equation": 350,
+        "complete normalized carry clock": 25,
+        "complete ordinary edge equation": 10850,
+        "completed examples are not exact seven-eighths sources": 24,
+        "exact alternating candidate phase": 25,
+        "exact carry-normalized ordinary equation": 244,
+        "exact supplied-candidate reduction endpoint": 36,
+        "exact unpaid length before arbitrary carry excursion": 325,
+        "finite normalized one-return budget": 614,
+        "first-return integer carry lower bound": 25,
+        "full affine endpoint including additive term": 99,
+        "independent complete physical clock bound": 24,
+        "literal ordinary gap replay": 10850,
+        "literal supplied-candidate reduction prefix": 41,
+        "minimal first low return and forced normalization": 25,
+        "paid high entry": 25,
+        "positive nonterminal cylinder member": 350,
+        "returned candidate path satisfies all-carry majorant": 614,
+        "selected actual scalar tail completed": 120,
+        "sharp ten-eleven physical threshold": 99,
+        "smaller literal inverse-L source": 12,
+        "smaller literal inverse-eleven-L-P source": 6,
+        "strict longer-excursion affine majorant": 24,
+        "transformer actual high-entry clock": 614,
+        "transformer uses literal unpaid prefix": 614,
+        "unbounded carry unit envelope": 206
+      },
+      "compatible_gate_examples": [
+        {
+          "j": 0,
+          "one_return_status": "reject",
+          "source": 17179869177,
+          "steps": 26
+        },
+        {
+          "j": 1,
+          "one_return_status": "reject",
+          "source": 326417514489,
+          "steps": 26
+        },
+        {
+          "j": 2,
+          "one_return_status": "reject",
+          "source": 635655159801,
+          "steps": 28
+        },
+        {
+          "j": 3,
+          "one_return_status": "reject",
+          "source": 944892805113,
+          "steps": 26
+        },
+        {
+          "j": 4,
+          "one_return_status": "reject",
+          "source": 1254130450425,
+          "steps": 26
+        },
+        {
+          "j": 5,
+          "one_return_status": "reject",
+          "source": 1563368095737,
+          "steps": 26
+        },
+        {
+          "j": 6,
+          "one_return_status": "return",
+          "source": 1872605741049,
+          "steps": 24
+        },
+        {
+          "j": 7,
+          "one_return_status": "reject",
+          "source": 2181843386361,
+          "steps": 26
+        }
+      ],
+      "exact_actual_scalar_transport_examples": 24,
+      "exact_checks": 27741,
+      "largest_paid_source_bits": 7393,
+      "largest_tested_carry": 2460,
+      "maximum_candidate_odd_steps": 11,
+      "one_return_decisions": {
+        "reject: lower guard": 662,
+        "reject: one": 8,
+        "reject: shifted valuation": 7021,
+        "reject: upper guard": 8079,
+        "return": 614
+      },
+      "paid_excursion_cases": 25,
+      "scope": "finite ordinary prefixes and candidate carries; all-time scalar equality is not assumed",
+      "sharp_threshold_rows": [
+        {
+          "direction": "descent",
+          "m": 0,
+          "u0": 5
+        },
+        {
+          "direction": "descent",
+          "m": 1,
+          "u0": 29
+        },
+        {
+          "direction": "descent",
+          "m": 10,
+          "u0": 21
+        },
+        {
+          "direction": "expansion",
+          "m": 11,
+          "u0": 13
+        },
+        {
+          "direction": "expansion",
+          "m": 32,
+          "u0": 5
+        }
+      ],
+      "status": "PASS",
+      "supplied_candidate_reductions": {
+        "reject": 324,
+        "seven_eighths_candidate": 36,
+        "triadic_dispatch": 40
+      },
+      "unproved": "termination of repeated returns after arbitrarily long low prefixes at one fixed positive ordinary source"
+    }
+  },
+  "not_claimed": "Collatz closure or a fixed positive ordinary realization of a symbolic infinite word",
+  "published_parent": "6352608dd6c04735e1f8bd86fef4ebc97b1aeacb",
+  "python_assert_counts": {
+    "arithmetic_controls.py": 0,
+    "carry_controls.py": 0,
+    "law_controls.py": 0,
+    "phase_controls.py": 0,
+    "run_exact_controls.py": 0
+  },
+  "schema": "collatz-round9-exact-controls/v1",
+  "scope": "finite exact controls, distinct from the written universal proofs and Lean compilation",
+  "status": "PASS",
+  "total_explicit_checks": 559934
+}

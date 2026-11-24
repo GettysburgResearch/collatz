@@ -1,0 +1,170 @@
+{
+  "date_utc": "2026-11-23T03:36:37.053230+00:00",
+  "scope": "Fresh complete local dependency build and all 25 new public theorem axiom audits; full de Bruijn/CRT realization, triadic rational interpretation and necklace counting remain written proofs.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/3f23e1a583aa/round4-lean-fresh",
+  "source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/closure-round2-20261123/CycleCancellation.lean": "7d9118b6a8efeefc6e6b3229b95420771f88291ed2583f259c00ae665648724d",
+    "research/whole-repo-round3-20261123/CarryFibers.lean": "9fd194724b6c2c101bfe837dcd198199f4618911c7cf608ff425c8bac31818e3",
+    "research/literature-round4-20261123/ActualLawRigidity.lean": "9248f4e4041d3241038fef6a64ed502b2ab203228345c3aec3e9c4e735d432b8",
+    "research/literature-round4-20261123/TriadicRigidity.lean": "ab75d91329b642dd69eb6d33fd82bb376637ae0d2c8e7705fd1953e444957eb3",
+    "research/literature-round4-20261123/CycleRigidity.lean": "e169c9914a01f1d43cf9133fbdaa5044bd080de849269437d822c10b33468d28",
+    "reports/2026-11-23-literature-round4/RoundFourAudit.lean": "5d791d9c3d3a1ce250f933d0d7f1fc4dab9c0d3a8ef47545c7ac84278d528806"
+  },
+  "new_public_declarations": [
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.gapCarry_append",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.rotated_gap_carry",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.period_shadow_step",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.actual_shadow_step",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_telescope",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_ternary_divisibility",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_binary_divisibility",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.source_height_payment",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.same_shadow_phase_residue",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.phase_residue_card",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.phase_collision_lower",
+    "Collatz.LiteratureRoundFour.ActualLawRigidity.affine_coincidence_unique",
+    "CollatzShell.TriadicRigidity.step_positive",
+    "CollatzShell.TriadicRigidity.step_nonzero",
+    "CollatzShell.TriadicRigidity.cycle_of_step",
+    "CollatzShell.TriadicRigidity.step_energy",
+    "CollatzShell.TriadicRigidity.finite_pair_rigidity",
+    "CollatzShell.TriadicRigidity.alltime_integral_pair_rigidity",
+    "CollatzShell.TriadicRigidity.odd_count_lt_twice_even_count",
+    "CollatzShell.TriadicRigidity.clock_lt_three_even_count",
+    "Collatz.HighVariance.CycleRigidity.cut_determinant",
+    "Collatz.HighVariance.CycleRigidity.rotation_transport",
+    "Collatz.HighVariance.CycleRigidity.full_denominator_rotation_dvd",
+    "Collatz.HighVariance.CycleRigidity.least_rotation_full_denominator_gap",
+    "Collatz.HighVariance.CycleRigidity.least_rotation_suffix_contracts"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/CycleWordAlgebra.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/CycleWordAlgebra.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.636,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/CycleCancellation.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/CycleCancellation.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.189,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/CarryFibers.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/CarryFibers.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.849,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/ActualLawRigidity.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123/ActualLawRigidity.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.208,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/TriadicRigidity.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123/TriadicRigidity.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.491,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/CycleRigidity.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123/CycleRigidity.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.731,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-literature-round4",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round4-lean-fresh/RoundFourAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-literature-round4/RoundFourAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.058,
+      "stdout": "'Collatz.LiteratureRoundFour.ActualLawRigidity.gapCarry_append' depends on axioms: [propext]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.rotated_gap_carry' depends on axioms: [propext]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.period_shadow_step' depends on axioms: [propext, Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.actual_shadow_step' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_telescope' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_ternary_divisibility' depends on axioms: [propext, Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_binary_divisibility' depends on axioms: [propext, Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.source_height_payment' depends on axioms: [propext, Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.same_shadow_phase_residue' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.phase_residue_card' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.phase_collision_lower' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.LiteratureRoundFour.ActualLawRigidity.affine_coincidence_unique' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.TriadicRigidity.step_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.TriadicRigidity.step_nonzero' depends on axioms: [propext, Quot.sound]\n'CollatzShell.TriadicRigidity.cycle_of_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.TriadicRigidity.step_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.TriadicRigidity.finite_pair_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.TriadicRigidity.alltime_integral_pair_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.TriadicRigidity.odd_count_lt_twice_even_count' depends on axioms: [propext, Quot.sound]\n'CollatzShell.TriadicRigidity.clock_lt_three_even_count' depends on axioms: [propext, Quot.sound]\n'Collatz.HighVariance.CycleRigidity.cut_determinant' depends on axioms: [propext, Quot.sound]\n'Collatz.HighVariance.CycleRigidity.rotation_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.HighVariance.CycleRigidity.full_denominator_rotation_dvd' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.HighVariance.CycleRigidity.least_rotation_full_denominator_gap' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.HighVariance.CycleRigidity.least_rotation_suffix_contracts' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}

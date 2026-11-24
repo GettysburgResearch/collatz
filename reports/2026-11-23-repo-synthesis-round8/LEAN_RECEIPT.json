@@ -1,0 +1,102 @@
+{
+  "date_utc": "2026-11-23T13:12:11.438879+00:00",
+  "scope": "Seventeen finite arithmetic theorems and three definitions, freshly compiled from both new modules and audited. No older repository module imported. Pinned Mathlib cache reused. Real series, analytic derivative, full modular source construction, finite candidate attachment and rational phase exclusions remain written mathematics.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "official_lean_archive_sha256": "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/collatz-round8-20261123/lean-fresh-round8",
+  "source_sha256": {
+    "research/repo-synthesis-round8-20261123/GermBridge.lean": "d696be05c72e75b0da31a8f2f62c089d1e7346fb7aa0f0aa7c7417fe87f25a3e",
+    "research/repo-synthesis-round8-20261123/OrdinarySelector.lean": "240732a9b7cd101ca035b2ea9b66cb83d9cbadb11dce54a983b34f72f8364dce",
+    "reports/2026-11-23-repo-synthesis-round8/RoundEightAudit.lean": "c6c3fdba7d1541fda8fc45d96f9e6d3e6e6793f271cca2f58355caa5d770bd11"
+  },
+  "new_theorem_count": 17,
+  "new_definition_count": 3,
+  "public_declarations_audited": [
+    "Collatz.RepoSynthesisRoundEight.GermBridge.polynomial_gap_contraction",
+    "Collatz.RepoSynthesisRoundEight.GermBridge.integer_gap_potential_step",
+    "Collatz.RepoSynthesisRoundEight.GermBridge.scalar_charge_power",
+    "Collatz.RepoSynthesisRoundEight.GermBridge.scalar_guard_below_bitlength",
+    "Collatz.RepoSynthesisRoundEight.GermBridge.three_quarters_cube",
+    "Collatz.RepoSynthesisRoundEight.GermBridge.finite_scalar_budget",
+    "Collatz.Round8OrdinarySelector.low",
+    "Collatz.Round8OrdinarySelector.paid",
+    "Collatz.Round8OrdinarySelector.lowRun",
+    "Collatz.Round8OrdinarySelector.low_complete_gaps",
+    "Collatz.Round8OrdinarySelector.paid_complete_gaps",
+    "Collatz.Round8OrdinarySelector.low_shift",
+    "Collatz.Round8OrdinarySelector.low_run_shift",
+    "Collatz.Round8OrdinarySelector.low_run_paid",
+    "Collatz.Round8OrdinarySelector.low_scalar_prefix",
+    "Collatz.Round8OrdinarySelector.paid_scalar_prefix",
+    "Collatz.Round8OrdinarySelector.low_scalar_interval",
+    "Collatz.Round8OrdinarySelector.paid_scalar_intervals",
+    "Collatz.Round8OrdinarySelector.tail_exponential_bound",
+    "Collatz.Round8OrdinarySelector.affine_return_expansion"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round8/GermBridge.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123/GermBridge.lean"
+      ],
+      "cwd": "/workspace/scratch/collatz-round8-20261123/collatz",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 6.309,
+      "source_sha256": "d696be05c72e75b0da31a8f2f62c089d1e7346fb7aa0f0aa7c7417fe87f25a3e"
+    },
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round8/OrdinarySelector.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/repo-synthesis-round8-20261123/OrdinarySelector.lean"
+      ],
+      "cwd": "/workspace/scratch/collatz-round8-20261123/collatz",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 9.579,
+      "source_sha256": "240732a9b7cd101ca035b2ea9b66cb83d9cbadb11dce54a983b34f72f8364dce"
+    },
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/reports/2026-11-23-repo-synthesis-round8",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round8/RoundEightAudit.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/reports/2026-11-23-repo-synthesis-round8/RoundEightAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/collatz-round8-20261123/collatz",
+      "exit_code": 0,
+      "stdout": "'Collatz.RepoSynthesisRoundEight.GermBridge.polynomial_gap_contraction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.RepoSynthesisRoundEight.GermBridge.integer_gap_potential_step' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.RepoSynthesisRoundEight.GermBridge.scalar_charge_power' depends on axioms: [propext, Quot.sound]\n'Collatz.RepoSynthesisRoundEight.GermBridge.scalar_guard_below_bitlength' depends on axioms: [propext, Quot.sound]\n'Collatz.RepoSynthesisRoundEight.GermBridge.three_quarters_cube' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.RepoSynthesisRoundEight.GermBridge.finite_scalar_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.Round8OrdinarySelector.low' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.lowRun' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_complete_gaps' depends on axioms: [propext, Quot.sound]\n'Collatz.Round8OrdinarySelector.paid_complete_gaps' depends on axioms: [propext, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_run_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_run_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_scalar_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.paid_scalar_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.low_scalar_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.paid_scalar_intervals' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.tail_exponential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round8OrdinarySelector.affine_return_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "elapsed_seconds": 2.874,
+      "source_sha256": "c6c3fdba7d1541fda8fc45d96f9e6d3e6e6793f271cca2f58355caa5d770bd11"
+    }
+  ],
+  "success": true
+}

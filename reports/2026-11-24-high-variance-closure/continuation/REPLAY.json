@@ -1,0 +1,179 @@
+{
+  "schema": "collatz-ordinary-series-replay/v1",
+  "started_utc": "2026-11-24T08:12:19.092131+00:00",
+  "scope": "five new series-criterion audits plus five dependency audits; two finite controls in two modes; no universal finiteness proof",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean": [
+    {
+      "source": "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+      "source_sha256": "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+      "new_in_this_checkpoint": false,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "QuarterShift.olean",
+        "QuarterShift.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'QuarterShift.balanced_step' depends on axioms: [propext, Quot.sound]\n'QuarterShift.balanced_path' depends on axioms: [propext, Quot.sound]\n'QuarterShift.odd_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.even_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.below_twenty' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "QuarterShift.balanced_step": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.balanced_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.odd_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.even_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.below_twenty": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "aa852ba195e4b5245c40cb9eb88616360a0671c6eeab0b17088494eb260c2d5d",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/continuation/lean/BiasedParity.lean",
+      "source_sha256": "f9be262b47615a2c19e1070b9efc38f948aa8573c75e751869c3a92ecdd64be2",
+      "new_in_this_checkpoint": true,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "BiasedParity.olean",
+        "BiasedParity.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'BiasedParity.highPrefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.geometricTerm' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.summableOfHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.boundedIffHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.summableIffHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "BiasedParity.highPrefix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.geometricTerm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.summableOfHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.boundedIffHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.summableIffHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "6bb89a751eebe8f64c2d7fba9dbed82dfffa2425a3a69a4d0f3fcb7d91ccc5e2",
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "research/high-variance-closure-20261124/continuation/checks/reset_block_control.py",
+      "source_sha256": "3d5e044b5b495cf8d0790a9546a9b39eee5ba2a014555ba4facecf5554b831c5",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/continuation/checks/reset_block_control.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "24 fixed-basin blocks: 60 literal (2,1) valleys and 24 exact target fibres\nSingle boundary refill: 1668 -> 834; first ceiling-1024 hit after 52 clocks at 1079\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/continuation/checks/reset_block_control.py",
+      "source_sha256": "3d5e044b5b495cf8d0790a9546a9b39eee5ba2a014555ba4facecf5554b831c5",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/continuation/checks/reset_block_control.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "24 fixed-basin blocks: 60 literal (2,1) valleys and 24 exact target fibres\nSingle boundary refill: 1668 -> 834; first ceiling-1024 hit after 52 clocks at 1079\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/continuation/checks/potential_control.py",
+      "source_sha256": "9db07f9264681708420bde32d95b3f572b331ceeb5e6622186718159a0476ffc",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/continuation/checks/potential_control.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "Two exact positive rational cycles; prefix 1110 and nine halvings; selected-prime integrality and geometric divergence\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/continuation/checks/potential_control.py",
+      "source_sha256": "9db07f9264681708420bde32d95b3f572b331ceeb5e6622186718159a0476ffc",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/continuation/checks/potential_control.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "Two exact positive rational cycles; prefix 1110 and nine halvings; selected-prime integrality and geometric divergence\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-24T08:13:37.638414+00:00"
+}

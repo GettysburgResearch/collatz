@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-central-closure-source-manifest/v1",
+  "base_commit": "9b02334f27ff59694a91fe7f018e0aaabad7620b",
+  "scope": "written research and finite Lean diagnostics; not a Collatz proof",
+  "files": [
+    {
+      "path": "research/central-closure-20261124/FIXED_FLOOR.md",
+      "bytes": 4882,
+      "sha256": "65d6479c870083b30bf335a89949ac64aae25cbff12dfba43a4b39eaf18c4cb4",
+      "git_blob_sha1": "04d66bbde6fd9105ef263498c9029dd9b7e662c7"
+    },
+    {
+      "path": "research/central-closure-20261124/GLOBAL_RANK.md",
+      "bytes": 7668,
+      "sha256": "51037adb226ef4c8fb00275c0ef31241b5352f28f03304987290477a7ad3e74c",
+      "git_blob_sha1": "aaa0cacb10b9cdb9ec9c916a726c11cfe91ec166"
+    },
+    {
+      "path": "research/central-closure-20261124/INTEGER_SUMMANDS.md",
+      "bytes": 4079,
+      "sha256": "5f52a252247f580781d3c213a58414ea281de99d3f32e5580d9cc49b9748562b",
+      "git_blob_sha1": "abc6a389ee4d7401056b5063ff52da637696b191"
+    },
+    {
+      "path": "research/central-closure-20261124/INTEGRALITY.md",
+      "bytes": 5110,
+      "sha256": "7eb15bd9220540cf8c7cd1d4fde8363f86eefcd74d38ebe88348be40e2be4f33",
+      "git_blob_sha1": "23cee5dfff47e2d31368c0ee04656c0f71e3ad4e"
+    },
+    {
+      "path": "research/central-closure-20261124/README.md",
+      "bytes": 5863,
+      "sha256": "00322dcdc45a3a525fa817d5ecd8887b07f695cdd8b93b033f67908bde6457c4",
+      "git_blob_sha1": "84b3be2470dc0ef3e95c9d0af67b9e6b08d5aeee"
+    },
+    {
+      "path": "research/central-closure-20261124/SOURCES.json",
+      "bytes": 2208,
+      "sha256": "3eec832d9b56e5285615efdc9e7d914b5031eaebccddcd6c73f9b9e444181dea",
+      "git_blob_sha1": "a0583d8a966d3699992649dc8bf666a6fb40f019"
+    },
+    {
+      "path": "research/central-closure-20261124/checks/replay.py",
+      "bytes": 4570,
+      "sha256": "1cff73005dad3c3f53e4a67e3b9b3916edfcd6e2604ea7fd799ae57a15938bdf",
+      "git_blob_sha1": "219a39b764c5ac66ac9986317b366848ed46a52f"
+    },
+    {
+      "path": "research/central-closure-20261124/lean/ClosureDiagnostics.lean",
+      "bytes": 3451,
+      "sha256": "e2942fa345853c5d0c735c2176b0ef91776c906b889597d52dcc5dc2928a4c80",
+      "git_blob_sha1": "b77a5dfb9444d6198c0870c5ee79bae6224962dc"
+    },
+    {
+      "path": "reports/2026-11-24-central-closure/ROOT_REVIEW.md",
+      "bytes": 4892,
+      "sha256": "03dba9d376b9d2ce22e64e09cb12ff7b1aafd0c32300be1434ea02bd4e0bbc21",
+      "git_blob_sha1": "3772c47882572d39da98819e4d80089e3341af66"
+    },
+    {
+      "path": "reports/2026-11-24-central-closure/LEAN_REPLAY.json",
+      "bytes": 3011,
+      "sha256": "2528d94f475a3741e7317d2de190a4fbfde265b5a6eaeebc254ae005ed30f8f6",
+      "git_blob_sha1": "5edb7fdd9cbc4051fd82f8cd8325533781e08abb"
+    }
+  ]
+}

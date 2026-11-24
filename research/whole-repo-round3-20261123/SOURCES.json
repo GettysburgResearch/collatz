@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-23",
+  "parent": "b78819e95ee7d39f02022de991b42217821e7590",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Whole PR metadata inventory; selected file reads and proof reconstructions. No whole-repository mathematical audit or historical corpus replay is asserted.",
+  "selected_current_pins": [
+    {
+      "pr": 6,
+      "head": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "title": "report: port audited termination and obstruction frontier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/6"
+    },
+    {
+      "pr": 34,
+      "head": "b7eec65ffb13c5a89415a888c0153f36a52f23e3",
+      "title": "proof: add audited cross-direction and period-four quotient lemmas",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/34"
+    },
+    {
+      "pr": 141,
+      "head": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/141"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "pr": 173,
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173"
+    },
+    {
+      "pr": 175,
+      "head": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "title": "Collatz: Hardy inverse-tree spectrum and direct closing attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "pr": 176,
+      "head": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "title": "Collatz: integer fibres, real separation, and positive pressure quasimodes",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "title": "Collatz: finite witness boundary and ordinary atomic pressure",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "pr": 178,
+      "head": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "title": "Collatz: triadic convergence rank and pressure collision bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "pr": 179,
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179"
+    },
+    {
+      "pr": 180,
+      "head": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "title": "Collatz: actual boundary dimension and source-clock estimates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "pr": 181,
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181"
+    },
+    {
+      "pr": 182,
+      "head": "b78819e95ee7d39f02022de991b42217821e7590",
+      "title": "Collatz: one pressure maximum for both directions; full numerical cancellation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    }
+  ],
+  "precise_file_ledgers": [
+    "TRIADIC_CLOSURE.md sections 1-2",
+    "ACTUAL_COLLISION.md section 1",
+    "COMPLETE_CYCLE.md section 6",
+    "GLOBAL_ORBIT_COUNT.md section 8"
+  ],
+  "additional_principal_reads": [
+    {
+      "pr": 6,
+      "commit": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "path": "research/termination-frontier/README.md",
+      "blob": "ca3642c75329740dc30fc941c45a0a0b6047f773",
+      "scope": "full file; unadmitted legacy claims remain unadmitted"
+    },
+    {
+      "pr": 6,
+      "commit": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "path": "research/termination-frontier/CLAIM_INVENTORY.md",
+      "blob": "9f8d16f60fcb63d00ff3fc9b90eb50e92911ddb1",
+      "scope": "full file"
+    },
+    {
+      "pr": 141,
+      "commit": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "path": "research/ay-persistent-20261031/PROOF.md",
+      "blob": "14817e80d8a304b84cea76c3714c80285e1c5357",
+      "scope": "HC1-HC6 and SC1-SC3 inspected; large certificate corpus not replayed"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/04_returns_operators_and_termination.md",
+      "blob": "a45e4c0835323608a542c4b4bdf84ff06938eb3e",
+      "scope": "operator/rank/termination sections; primary source claims not all independently verified"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "blob": "8b7a6471f014be065f1dc3decc0027ba112cfd33",
+      "scope": "higher-rank, random-matrix, interpolation and GRH hypothesis boundaries"
+    }
+  ],
+  "external_primary_checks": [
+    {
+      "url": "https://arxiv.org/pdf/2105.14697",
+      "version": "v3, 31 December 2022",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "scope": "primary abstract and mixed-base framework inspected; no new full termination order asserted"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "version": "v3, 26 October 2026",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "scope": "Theorem 1, equation (24) and prior-work statements checked for priority and scope; stronger analytic proof and ineffective power gain not imported"
+    },
+    {
+      "url": "https://rstation.ai/r/collatz/posts/36",
+      "version": "23 October 2026",
+      "title": "Uniform interval compression at H₂(log₃2): finite clocks, smaller sources, and a square-root logarithmic saving",
+      "scope": "primary statement checked; independent simple reconstruction here makes no priority claim"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/138",
+      "version": "v1, 13 November 2026",
+      "title": "Prime-power returns and multiplicative complexity of Collatz orbits",
+      "scope": "Section 6 and references supplied navigation to prior orbit sparsity; no multiplicative-rank theorem imported"
+    }
+  ],
+  "formal_boundary": {
+    "new_public_theorems": 19,
+    "carry_module": 16,
+    "orbit_module": 3,
+    "unchanged_dependency": "research/high-variance-20261123/CycleWordAlgebra.lean",
+    "written_only": [
+      "actual harmonic-flow infinite consumer",
+      "critical collision lower bound",
+      "critical entropy asymptotic and scale recursion",
+      "moment and product-floor corollaries",
+      "triadic denominator optimization and certificate capacity",
+      "cycle conditioned-law attempt"
+    ]
+  }
+}

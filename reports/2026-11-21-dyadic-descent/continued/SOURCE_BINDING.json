@@ -1,0 +1,19 @@
+{
+  "scope": "Actual fresh two-module replay and separate source-qualified written reviews. No full Collatz proof is claimed.",
+  "prior_published_commit": "45354128f890fb479f6c23b547368bcddd9cebe6",
+  "lean_receipt_sha256": "6d4482dc9e43aeaa399e1567774fa0658afab0926871f56d9014f595d81b0d69",
+  "source_sha256": {
+    "research/lean-dyadic-descent-20261121/PolynomialLift.lean": "e487984361d2f5f613e3683a311e38231a9dfb1afd01a72e22e4e0a3466c1ac8",
+    "research/lean-dyadic-descent-20261121/HarmonicCapture.lean": "e85184f7a9bf33f82bbcc0ab36a45052252050d50682ee45caa10004f4e26bc8"
+  },
+  "runner_sha256": "5612c2f0d17513fcfe128a8342aec3797ba48fa0a477745ebd7528b8277f4797",
+  "reviewed_note_sha256": {
+    "INVARIANT_CORRELATION.md": "6dea7ffa0fa67df75c2d221ee547228a9d3842fa9a498981078e4e73e300dc2c",
+    "HARMONIC_CAPTURE_BRIDGE.md": "686e7038e2182a5953573630b248215127878de378ee0f7d7a32703a873787fa",
+    "CANONICAL_ESCAPE_LABEL.md": "c434c6bfaa46994f28612ecc2f256cca41e2b8871157433fc2067ef60aadc04f"
+  },
+  "semantic_review_sha256": "62f586b256d36c6911351b99ad36762e078ab140ea9afab4f81f0257e2a5fd7e",
+  "checked_proof_commit": "c6c5ca2ea1c54656152b7de05db08cd8e5561b27",
+  "checked_proof_tree": "1a3bbcd9b2ec766510cbd2fad9390409d5742cb6",
+  "checkout_receipt_sha256": "c6a4656b43d681555722ef8e13865966abc4bbcdacfdcc19fcc622d1df92b83a"
+}

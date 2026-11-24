@@ -1,0 +1,217 @@
+{
+  "schema": "collatz-literature-round4-sources/v1",
+  "date": "2026-11-23",
+  "parent_commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+  "scope": "Four current PR metadata snapshots, selected new source files and primary literature. The earlier 145-PR inventory is preserved in round three; it was not rerun as a new whole-repository proof audit.",
+  "current_pull_requests": [
+    {
+      "number": 178,
+      "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+      "head": "research/lean-global-20261121",
+      "head_sha": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "scope": "Metadata and selected source files below"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: strict stationary collision gaps and finite minimum-source flux",
+      "head": "research/lean-ordinary-closure-20261121",
+      "head_sha": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "scope": "Metadata and selected source files below"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "head": "research/literature-orbit-closure-20261121",
+      "head_sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "base": "research/lean-band-coupling-20261121",
+      "base_sha": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "scope": "Metadata refresh; earlier detailed source reviews remain separately pinned"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "research/deep-machinery-guide-20261122",
+      "head_sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186",
+      "scope": "Metadata refresh; earlier detailed source reviews remain separately pinned"
+    }
+  ],
+  "inspected_files": [
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+      "blob": "ab60fd248086bd8a2b753ea12a7b41387ea5c2de",
+      "claims": "Triadic closure, integer rank and conservative finite horizon",
+      "inspection": "Root and source lane read; denominator transition credited as preceding input"
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/global-closure-20261123/duality/lean/TriadicDualClosure.lean",
+      "blob": "8eed815f2dc89b16da80d759c965244513082ac4",
+      "claims": "All-time supplied-candidate closing implication",
+      "inspection": "Source lane read; not a fresh root compile of this external module"
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "blob": "f7c43e643036304ff12b01679cc7b0a9d84a0f57",
+      "claims": "Corrected terminal candidates and reduced denominator persistence backward",
+      "inspection": "Root and source lane read; universal construction remains open"
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+      "blob": "d0bde1a3c4c9d61f65e3ae1aefbf165c602deae8",
+      "claims": "Actual reset arithmetic and quadratic conservative-horizon cost",
+      "inspection": "Source lane read"
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/lean/TriadicBoundary.lean",
+      "blob": "cae9ae5a1aafb0ec610c27b04283504dfb12bac4",
+      "claims": "Finite corrected carry and denominator algebra",
+      "inspection": "Source lane read; not a fresh root compile of this external module"
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "claims": "Strict process-dependent stationary collision gap for a fixed actual time-limit law; finite Shannon deficit branch and exact iid branch have different limit scopes",
+      "inspection": "Root and actual-law reviewer read; no same-limit collision upper supplied"
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "blob": "34b437972096ae409568842e655509a8233a8087",
+      "claims": "Finite minimum-source flux and the unbounded height/window payment in transfer from weighted occupation to late unweighted current",
+      "inspection": "Root read; no global vanishing current inferred"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Monks and Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "year": 2004,
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "scope": "Definitions, signed example Omega(3)=-4/9, rationality and cycle theorems. Used for complementary parity framework; no universal triadic existence imported.",
+      "read_by": "Root and source lane"
+    },
+    {
+      "authors": "Bernstein and Lagarias",
+      "title": "The 3x+1 conjugacy map",
+      "year": 1996,
+      "url": "https://websites.umich.edu/lagarias/doc/bernstein.pdf",
+      "scope": "Section 1 and inverse parity coding; exact finite residue and 2-adic uniqueness.",
+      "read_by": "Root and source lane"
+    },
+    {
+      "authors": "Hochman",
+      "title": "On self-similar sets with overlaps and inverse theorems for entropy",
+      "year": 2014,
+      "url": "https://annals.math.princeton.edu/2014/180-2/p07",
+      "pdf": "https://annals.math.princeton.edu/wp-content/uploads/annals-v180-n2-p07-p.pdf",
+      "scope": "Entropy inverse theorem and its product-measure input. No deterministic Collatz mixing theorem is imported.",
+      "read_by": "Root opened primary paper; actual-law lane and source reviewer read theorem 2.7"
+    },
+    {
+      "authors": "Eberhard and Varju",
+      "title": "Mixing time of the Chung-Diaconis-Graham random process",
+      "url": "https://arxiv.org/html/2003.08117v2",
+      "scope": "Independent innovations and almost-all-moduli scope of Theorem 1.1; no substitution by deterministic locally matching frequencies.",
+      "read_by": "Root, actual-law lane and source reviewer"
+    },
+    {
+      "authors": "Halbeisen and Hungerbuhler",
+      "title": "Optimal bounds for the length of rational Collatz cycles",
+      "year": 1997,
+      "url": "https://math.ch/norbert.hungerbuehler/publications/Optimal_bounds_for_the_length_of_rational_Collatz_cycles.pdf",
+      "scope": "Sections 2-3, p.238 equations 13-15 and Lemma 9: complete carries, rotations and classical gcd backbone; no novelty claim for those identities.",
+      "read_by": "Root and cycle lane"
+    },
+    {
+      "authors": "Dershowitz and Zaks",
+      "title": "Patterns in Trees",
+      "year": 1984,
+      "url": "https://groups.csail.mit.edu/tds/papers/Zaks/TM-271.pdf",
+      "scope": "Section 3 cycle lemma for integer step types; motivates root selection, but its exact count is not imported for incommensurable logarithmic increments.",
+      "read_by": "Root and cycle lane"
+    },
+    {
+      "authors": "Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "year": 2022,
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F",
+      "scope": "Propositions 1.9, 1.11 and 1.14 and specified input laws; not applied to conditioning on an exact integral cycle.",
+      "read_by": "Cycle lane; root opened primary source"
+    },
+    {
+      "authors": "Moreno",
+      "url": "https://repositorio.uchile.cl/bitstream/handle/2250/124628/Moreno_E.pdf",
+      "scope": "De Bruijn motivation; the finite Eulerian construction is given self-contained in the local note. Root access encountered a challenge and is not claimed as a successful full-text read.",
+      "read_by": "Actual-law lane reported primary account inspection; root access limited"
+    }
+  ],
+  "source_qualified_working_manuscripts": [
+    {
+      "authors": "De Jesus",
+      "title": "Realizer Bounds and Repetition Constraints at the First Coefficient Crossing in the 3x+1 Problem",
+      "date": "2026-11-14",
+      "version": 2,
+      "url": "https://hexagonmath.org/pdf/2611.00459",
+      "scope": "Cycle lane inspected sections 1-2 and 7. Used to identify existing Terras/Lagarias first-crossing inequality and explicit open realizer target; quantitative computational or logarithmic-form conclusions not imported."
+    },
+    {
+      "authors": "Lyapunov Weaver and Fourier Wren",
+      "title": "Effective equidistribution and path laws for long Collatz excursions",
+      "date": "2026-11-02",
+      "version": 1,
+      "url": "https://rstation.ai/problems/collatz/papers/87",
+      "scope": "Cycle lane inspected sections 1-3, equation 5b and Corollary 2. Comparison only to stated conductor window; full external proof not independently audited by root."
+    }
+  ],
+  "formal_scope": {
+    "public_theorems": 25,
+    "modules": {
+      "ActualLawRigidity": 12,
+      "TriadicRigidity": 8,
+      "CycleRigidity": 5
+    },
+    "compiled_unchanged_dependencies": [
+      "research/high-variance-20261123/CycleWordAlgebra.lean",
+      "research/closure-round2-20261123/CycleCancellation.lean",
+      "research/whole-repo-round3-20261123/CarryFibers.lean"
+    ],
+    "written_only": [
+      "Rational reduced-denominator interpretation and full stopping-time application",
+      "Finite verifier correctness proof and bit-cost qualifications",
+      "Conservative/adaptive logarithmic certificate bounds and sharp all-source horizon minimum",
+      "Full CRT/de Bruijn ordinary realization and global sample choices",
+      "Necklace quotient counting, gap gcd and source-window comparison"
+    ],
+    "open": [
+      "Universal successful triadic denominator selector",
+      "Same-source actual-law collision upper paying cross-box and diagonal costs",
+      "Unrestricted full-denominator zero exclusion for nontrivial cycles"
+    ]
+  }
+}

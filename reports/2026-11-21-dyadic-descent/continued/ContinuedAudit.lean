@@ -1,0 +1,24 @@
+import PolynomialLift
+import HarmonicCapture
+#print axioms CollatzShell.PolynomialLift.affine_comp
+#print axioms CollatzShell.PolynomialLift.lift_comp
+#print axioms CollatzShell.PolynomialLift.lift_identity
+#print axioms CollatzShell.PolynomialLift.lift_inverse
+#print axioms CollatzShell.PolynomialLift.lift_surjective
+#print axioms CollatzShell.PolynomialLift.lift_evaluation
+#print axioms CollatzShell.PolynomialLift.lift_constant
+#print axioms CollatzShell.PolynomialLift.lift_monomial
+#print axioms CollatzShell.PolynomialLift.shortcut_commutator
+#print axioms CollatzShell.PolynomialLift.quarter_translation_four
+#print axioms CollatzShell.PolynomialLift.shortcut_quarter_invariant
+#print axioms CollatzShell.PolynomialLift.shortcut_unit_invariant
+#print axioms CollatzShell.HarmonicCapture.canonical_seed_identity
+#print axioms CollatzShell.HarmonicCapture.canonical_seed_bounds
+#print axioms CollatzShell.HarmonicCapture.green_telescope
+#print axioms CollatzShell.HarmonicCapture.green_with_time_zero
+#print axioms CollatzShell.HarmonicCapture.finite_seed_green_bounds
+#print axioms CollatzShell.HarmonicCapture.immigration_hasSum
+#print axioms CollatzShell.HarmonicCapture.canonical_green_bounds
+#print axioms CollatzShell.HarmonicCapture.normalized_green_bound
+#print axioms CollatzShell.HarmonicCapture.finite_collision_green_bound
+#print axioms CollatzShell.HarmonicCapture.collision_green_summable

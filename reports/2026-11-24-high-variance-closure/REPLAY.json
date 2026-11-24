@@ -1,0 +1,370 @@
+{
+  "schema": "collatz-high-variance-closure-replay/v1",
+  "started_utc": "2026-11-24T07:45:18.929999+00:00",
+  "scope": "five Lean modules, 24 named axiom audits and four finite controls in two modes; not Collatz",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean": [
+    {
+      "source": "research/high-variance-closure-20261124/lean/EnvelopeCertificate.lean",
+      "source_sha256": "1dbb759bd304e096b553b4acf570c7c5297a32ec4518b0bd76cb63aee28a8acc",
+      "fresh_empty_build_directory": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "EnvelopeCertificate.olean",
+        "EnvelopeCertificate.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'RestrictedEnvelope.matched_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.shadow_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.ordinary_clocks' does not depend on any axioms\n'RestrictedEnvelope.small_box' depends on axioms: [propext]\n'RestrictedEnvelope.source_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.negIter_add' depends on axioms: [propext]\n'RestrictedEnvelope.root_stays' depends on axioms: [propext, Quot.sound]\n'RestrictedEnvelope.complete_tree_candidate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.center_witnesses' depends on axioms: [propext]\n'RestrictedEnvelope.score_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.envelope_strict_increase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RestrictedEnvelope.checks' depends on axioms: [propext]\n",
+      "stderr": "",
+      "audits": {
+        "RestrictedEnvelope.matched_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.shadow_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.ordinary_clocks": [],
+        "RestrictedEnvelope.small_box": [
+          "propext"
+        ],
+        "RestrictedEnvelope.source_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.negIter_add": [
+          "propext"
+        ],
+        "RestrictedEnvelope.root_stays": [
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.complete_tree_candidate_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.center_witnesses": [
+          "propext"
+        ],
+        "RestrictedEnvelope.score_bounded": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.envelope_strict_increase": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "RestrictedEnvelope.checks": [
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "5af982d8161f7208f59cb1f83dafff2daca97e427039348523725171efbe9dea",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/lean/NonlinearTransport.lean",
+      "source_sha256": "11393d3fbf49d1782344757499b15888ab84be818cdd4c125beb3d9d147434a4",
+      "fresh_empty_build_directory": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "NonlinearTransport.olean",
+        "NonlinearTransport.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'RestrictedEnvelope.strict_matched_nonlinear_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "RestrictedEnvelope.strict_matched_nonlinear_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "5afd16ee7a1f1459580c1f3ae76961cb850cc6ccca8efd120b926fbea1c6dae9",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+      "source_sha256": "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+      "fresh_empty_build_directory": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "QuarterShift.olean",
+        "QuarterShift.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'QuarterShift.balanced_step' depends on axioms: [propext, Quot.sound]\n'QuarterShift.balanced_path' depends on axioms: [propext, Quot.sound]\n'QuarterShift.odd_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.even_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.below_twenty' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "QuarterShift.balanced_step": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.balanced_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.odd_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.even_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.below_twenty": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "aa852ba195e4b5245c40cb9eb88616360a0671c6eeab0b17088494eb260c2d5d",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/lean/FourTritDelay.lean",
+      "source_sha256": "aabfcf7d2446dfdb1e7c530ee1b2844f287fee2d9cabb3a970356d7bab3b53d1",
+      "fresh_empty_build_directory": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "FourTritDelay.olean",
+        "FourTritDelay.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'FourTritDelay.oddRun' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourTritDelay.exactArms' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "FourTritDelay.oddRun": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "FourTritDelay.exactArms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "20986af774361a9541be6f33963e741e2a9c6238245f458fc723a32fbce1225f",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/lean/OrientedBoundary.lean",
+      "source_sha256": "a201caa76baf52d54d4c19586bbc1373764cb7684a35ee33c08194c4486996fe",
+      "fresh_empty_build_directory": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "OrientedBoundary.olean",
+        "OrientedBoundary.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'OrientedBoundary.childChoice' depends on axioms: [propext, Quot.sound]\n'OrientedBoundary.zeroTriple' depends on axioms: [propext, Quot.sound]\n'OrientedBoundary.inverseThird' depends on axioms: [propext, Quot.sound]\n'OrientedBoundary.forbiddenGap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "OrientedBoundary.childChoice": [
+          "Quot.sound",
+          "propext"
+        ],
+        "OrientedBoundary.zeroTriple": [
+          "Quot.sound",
+          "propext"
+        ],
+        "OrientedBoundary.inverseThird": [
+          "Quot.sound",
+          "propext"
+        ],
+        "OrientedBoundary.forbiddenGap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "9903496ec231ade2af3dcd38b0fb468e41ca1d44679d32cd50fa76999e0c8860",
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "research/high-variance-closure-20261124/checks/rank_certificate.py",
+      "source_sha256": "902599616ee85d74aac30e3ed47eb91188abd704cf939eb1764a37681cea3497",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/rank_certificate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "n=1 E=8/7 witness=-7/1 cutoff=10 admissible=11 tree_hits=1\nn=31 E=4294967296/291622243 witness=-291622243/129140163 cutoff=53 admissible=2 tree_hits=1\nn=121 E=67108864/2804503 witness=-2804503/531441 cutoff=49 admissible=3 tree_hits=2\nstrict restricted-envelope increase: 31 -> 121\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/rank_certificate.py",
+      "source_sha256": "902599616ee85d74aac30e3ed47eb91188abd704cf939eb1764a37681cea3497",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/rank_certificate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "n=1 E=8/7 witness=-7/1 cutoff=10 admissible=11 tree_hits=1\nn=31 E=4294967296/291622243 witness=-291622243/129140163 cutoff=53 admissible=2 tree_hits=1\nn=121 E=67108864/2804503 witness=-2804503/531441 cutoff=49 admissible=3 tree_hits=2\nstrict restricted-envelope increase: 31 -> 121\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/transfer_control.py",
+      "source_sha256": "7281ba58c280acc0831a634819054474ee42b0fb6c30461a924e129fdd05a7d8",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/transfer_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "8191 parity words at clocks 0 through 12; three lifts per word; exact mean and product identities\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/transfer_control.py",
+      "source_sha256": "7281ba58c280acc0831a634819054474ee42b0fb6c30461a924e129fdd05a7d8",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/transfer_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "8191 parity words at clocks 0 through 12; three lifts per word; exact mean and product identities\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/tilt_control.py",
+      "source_sha256": "19bb90ceb5d77f6e42fe6826024e8e3f6934219290a98e2773f34a98f20c5dd9",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/tilt_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "16,382 adjacent ordinary pairs on 13 complete grids; exact Q(sqrt(3)) directional failure bound\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/tilt_control.py",
+      "source_sha256": "19bb90ceb5d77f6e42fe6826024e8e3f6934219290a98e2773f34a98f20c5dd9",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/tilt_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "16,382 adjacent ordinary pairs on 13 complete grids; exact Q(sqrt(3)) directional failure bound\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/boundary_control.py",
+      "source_sha256": "b143e99b3f09b0aa7c3cef06560d36f2f158d3bd96048360488ddbe63257cceb",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/boundary_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"forbidden_gap_paths\": 520, \"oriented_transfer_pairs\": 160, \"signed_seed_pairs\": 6}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/checks/boundary_control.py",
+      "source_sha256": "b143e99b3f09b0aa7c3cef06560d36f2f158d3bd96048360488ddbe63257cceb",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/checks/boundary_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"forbidden_gap_paths\": 520, \"oriented_transfer_pairs\": 160, \"signed_seed_pairs\": 6}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-24T07:45:43.202901+00:00"
+}

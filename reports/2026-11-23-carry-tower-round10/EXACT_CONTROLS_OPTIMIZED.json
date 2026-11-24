@@ -1,0 +1,827 @@
+{
+  "input_sha256": {
+    "ACTUAL_SCALAR_FORMALIZATION.md": "e9aa6e16bd29487d19ec603f1c73a267b7bca93ee7334ea68882ab9c5b2be2d0",
+    "ARITHMETIC_TOWER.md": "9a2aae53816d97a97c00be8a85b493e31c6a0e6e027e8059e8a86291bea1fac8",
+    "ActualScalar.lean": "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9",
+    "ArithmeticTower.lean": "3b3b0db73c07d766b006712c6eb6b5366bd599e597063bb3616938415adfd188",
+    "GENERAL_PHASE_RETURN.md": "73721b10e68ac7b045a57e42bc4ac631a84f688f8dc9db0b17bf2618d045bbb8",
+    "GeneralPhaseReturn.lean": "a920fa79010a93d1865826470ddbddaecda0e0347a3e1782ebacb638003bf0e7",
+    "README.md": "1fc0e71b8e1c2888dd4308eec8716e3dac118b808e6fb61c5845153f3816fbc0",
+    "RETURN_TOWER.md": "516eeeab4483b5caafbaf089b5f9d8ecadaa891890dad24ce17e5400f5e20456",
+    "ReturnTower.lean": "e22912f42218f56832b6050775e67609ac8682ffdc96451ff1217111d3d95309",
+    "SOURCES.json": "f332a3587567afc35301d26aa88c892d9ad4af69933924211ff4a1820d944bdc",
+    "arithmetic_tower_controls.py": "9fc3a69eb17717b6db7681709c03e4048c4f03cfd9553373fcdaa8b6480293ea",
+    "general_phase_controls.py": "bff571c0f590b54dd57986b41222f4c3a6f1fe23858d61f0ae8773a996cae285",
+    "run_exact_controls.py": "60cf7a9dd3b562b48713b2a56936850d3ff1f0f99ed7560fc4159fe27b939f3c",
+    "tower_controls.py": "c35a351392356a81d2f28bec90d24a59f925060de11be84fc9268363b3a4d43c"
+  },
+  "lanes": {
+    "arbitrary_return_tower": {
+      "actual_flat_valuation_towers": [
+        {
+          "compared_endpoint_source_ratio_floor": 1,
+          "constant_valuation_comparisons": 1,
+          "initial_center_valuation": 77,
+          "odd_prefix_steps": 48,
+          "prescribed_returns": 2,
+          "source_bit_bound": 131,
+          "source_bits": 131,
+          "tail_gap_one_steps": 53
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 1,
+          "constant_valuation_comparisons": 2,
+          "initial_center_valuation": 115,
+          "odd_prefix_steps": 72,
+          "prescribed_returns": 3,
+          "source_bit_bound": 193,
+          "source_bits": 193,
+          "tail_gap_one_steps": 77
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 1,
+          "constant_valuation_comparisons": 3,
+          "initial_center_valuation": 153,
+          "odd_prefix_steps": 96,
+          "prescribed_returns": 4,
+          "source_bit_bound": 255,
+          "source_bits": 250,
+          "tail_gap_one_steps": 101
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 1,
+          "constant_valuation_comparisons": 7,
+          "initial_center_valuation": 305,
+          "odd_prefix_steps": 192,
+          "prescribed_returns": 8,
+          "source_bit_bound": 503,
+          "source_bits": 503,
+          "tail_gap_one_steps": 197
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 1,
+          "constant_valuation_comparisons": 15,
+          "initial_center_valuation": 609,
+          "odd_prefix_steps": 384,
+          "prescribed_returns": 16,
+          "source_bit_bound": 999,
+          "source_bits": 999,
+          "tail_gap_one_steps": 389
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 2,
+          "constant_valuation_comparisons": 31,
+          "initial_center_valuation": 1217,
+          "odd_prefix_steps": 768,
+          "prescribed_returns": 32,
+          "source_bit_bound": 1991,
+          "source_bits": 1989,
+          "tail_gap_one_steps": 773
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 5,
+          "constant_valuation_comparisons": 63,
+          "initial_center_valuation": 2433,
+          "odd_prefix_steps": 1536,
+          "prescribed_returns": 64,
+          "source_bit_bound": 3975,
+          "source_bits": 3973,
+          "tail_gap_one_steps": 1541
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 31,
+          "constant_valuation_comparisons": 127,
+          "initial_center_valuation": 4865,
+          "odd_prefix_steps": 3072,
+          "prescribed_returns": 128,
+          "source_bit_bound": 7943,
+          "source_bits": 7942,
+          "tail_gap_one_steps": 3077
+        },
+        {
+          "compared_endpoint_source_ratio_floor": 1003,
+          "constant_valuation_comparisons": 255,
+          "initial_center_valuation": 9729,
+          "odd_prefix_steps": 6144,
+          "prescribed_returns": 256,
+          "source_bit_bound": 15879,
+          "source_bits": 15877,
+          "tail_gap_one_steps": 6149
+        }
+      ],
+      "checks_by_category": {
+        "actual boundary scalar interval below exceptional phase": 522,
+        "closed candidate return in mixed ordinary tower": 21,
+        "complete actual gap-one tail and height bound": 9,
+        "complete prescribed tower endpoint": 9,
+        "complete return boundary count": 9,
+        "complete shifted return with additive constant": 534,
+        "constant shifted valuation before every R": 513,
+        "cumulative arbitrary-return shifted product": 534,
+        "exact actual scalar tail comparison": 9,
+        "exact chosen repetition-rank source": 15,
+        "exact expanding-return constants": 1,
+        "exact finite tower source integrality": 9,
+        "exact growth and paid-budget comparisons": 1,
+        "exact integer repetition rank decrement": 513,
+        "exact maximal constant-return count": 9,
+        "exact next unpaid shifted valuation": 534,
+        "explicit source floor for sharpened paid factor": 513,
+        "first paid return with correct low normalization": 5,
+        "fixed-source repetition height budget": 9,
+        "full expanding return affine equation": 513,
+        "integer affine-center transport": 513,
+        "integer height-to-low-run budget": 534,
+        "integral full repeated affine constant": 9,
+        "literal ordinary tower gap": 25711,
+        "maximal repetition rank at boundary cases": 15,
+        "next complete R word fails after maximal count": 15,
+        "next cumulative arbitrary-return bound": 534,
+        "next-run ordinary size requirement": 534,
+        "no additional constant return at the endpoint": 9,
+        "nonzero terminal source congruence": 9,
+        "positive candidate carries in mixed ordinary tower": 418,
+        "positive first-excursion candidate phases": 5,
+        "positive ordinary source with linear bit bound": 9,
+        "sharpened source-floor product": 513,
+        "source-dependent exponential low-run bound": 534,
+        "strict actual physical growth at every return": 513,
+        "strict actual q-over-h increase from disjoint enclosures": 513,
+        "strict actual scalar decrease between returns": 513,
+        "terminal break in the constant return type": 9,
+        "unconditional actual tail scalar enclosure": 9,
+        "unique odd terminal representative": 9,
+        "valuation correction unchanged at both compared endpoints": 504
+      },
+      "exact_checks": 35714,
+      "mixed_arbitrary_paid_towers": 3,
+      "repetition_rank_boundary_cases": [
+        {
+          "returns": 0,
+          "valuation": 1
+        },
+        {
+          "returns": 0,
+          "valuation": 2
+        },
+        {
+          "returns": 0,
+          "valuation": 33
+        },
+        {
+          "returns": 0,
+          "valuation": 34
+        },
+        {
+          "returns": 0,
+          "valuation": 35
+        },
+        {
+          "returns": 0,
+          "valuation": 38
+        },
+        {
+          "returns": 1,
+          "valuation": 39
+        },
+        {
+          "returns": 1,
+          "valuation": 40
+        },
+        {
+          "returns": 1,
+          "valuation": 76
+        },
+        {
+          "returns": 2,
+          "valuation": 77
+        },
+        {
+          "returns": 2,
+          "valuation": 78
+        },
+        {
+          "returns": 2,
+          "valuation": 114
+        },
+        {
+          "returns": 3,
+          "valuation": 115
+        },
+        {
+          "returns": 4,
+          "valuation": 153
+        },
+        {
+          "returns": 10,
+          "valuation": 381
+        }
+      ],
+      "scope": "finite ordinary towers with unconditional real scalar enclosures; no exact seven-eighths realization",
+      "status": "PASS",
+      "unproved": "a rank that cannot reset indefinitely across changing actual return types at one fixed positive ordinary source"
+    },
+    "general_rational_phase": {
+      "actual_scalar_transport_cases": 40,
+      "arbitrary_paid_paths": 56,
+      "checks_by_category": {
+        "actual paid return respects linear source budget": 123,
+        "actual scalar equality transport on returned finite prefix": 40,
+        "checked standard canonical cycle branch": 1,
+        "complete affine threshold retains additive cost": 1,
+        "complete arbitrary high candidate path": 336,
+        "complete canonical phase endpoints": 8,
+        "complete cylinder affine equation": 65,
+        "complete literal ordinary cylinder valuation": 6016,
+        "complete paid composite phase word": 1,
+        "complete same-phase composite endpoint identity": 9,
+        "complete signed periodic denominator": 8,
+        "every high step contracts finite guarded rank": 134,
+        "exact complete normalized physical step": 337,
+        "exact composite phase slope threshold": 1,
+        "exact denominator-1456 first-departure gate": 1,
+        "first paid low return occurs before optional phase completion": 9,
+        "fixed-source valuation funds full threshold source height": 1,
+        "fixed-source valuation pays zero-carry run": 123,
+        "integral carry bound from scalar guard": 134,
+        "large ordinary source funds every candidate guard": 336,
+        "literal full-family ordinary valuation class": 9,
+        "necessary scalar guard supplies normalized lower rank": 460,
+        "nonterminal positive ordinary cylinder states": 65,
+        "sharp complete composite return descent-expansion threshold": 9,
+        "sharp composite phase explicit bit-length return budget": 9,
+        "sharp composite phase full canonical data": 1,
+        "small-prefix descent and all-later expansion signs": 1,
+        "total rejection respects supplied source budget": 8068,
+        "total transformer reconstructs arbitrary high excursion": 56,
+        "unbounded-carry paid envelope on actual ordinary word": 56,
+        "universal arbitrary-phase paid affine upper bound": 123
+      },
+      "exact_checks": 16541,
+      "largest_tested_carry": 1457,
+      "scope": "literal ordinary finite paths and total supplied-phase transformers; returns preserve equality without accepting it",
+      "sharp_composite_family": [
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 8,
+          "m": 0,
+          "source_bits": 23,
+          "whole_word_steps": 12
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 20,
+          "m": 1,
+          "source_bits": 42,
+          "whole_word_steps": 24
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 32,
+          "m": 2,
+          "source_bits": 61,
+          "whole_word_steps": 36
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 128,
+          "m": 10,
+          "source_bits": 213,
+          "whole_word_steps": 132
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 608,
+          "m": 50,
+          "source_bits": 973,
+          "whole_word_steps": 612
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 1208,
+          "m": 100,
+          "source_bits": 1923,
+          "whole_word_steps": 1212
+        },
+        {
+          "direction": "descent",
+          "first_paid_return_steps": 1220,
+          "m": 101,
+          "source_bits": 1942,
+          "whole_word_steps": 1224
+        },
+        {
+          "direction": "expansion",
+          "first_paid_return_steps": 1232,
+          "m": 102,
+          "source_bits": 1961,
+          "whole_word_steps": 1236
+        },
+        {
+          "direction": "expansion",
+          "first_paid_return_steps": 1244,
+          "m": 103,
+          "source_bits": 1980,
+          "whole_word_steps": 1248
+        }
+      ],
+      "status": "PASS",
+      "supplied_phase_source_cases": 8192,
+      "transformer_outcomes": {
+        "canonical_cycle": 1,
+        "reject": 8068,
+        "return": 123
+      },
+      "unproved": "termination or exclusion of repeated paid returns from one fixed positive ordinary source"
+    },
+    "sparse_arithmetic_scripts": {
+      "arbitrary_binary_words": 126,
+      "arbitrary_positive_cylinders": 252,
+      "automatic_positive_cylinders": [
+        {
+          "blocks": 2,
+          "h": 1,
+          "k": 1,
+          "source": "457",
+          "source_bits": 9
+        },
+        {
+          "blocks": 4,
+          "h": 2,
+          "k": 1,
+          "source": "54217",
+          "source_bits": 16
+        },
+        {
+          "blocks": 8,
+          "h": 4,
+          "k": 1,
+          "source": "1796133833",
+          "source_bits": 31
+        },
+        {
+          "blocks": 16,
+          "h": 8,
+          "k": 1,
+          "source": "83891761890382793",
+          "source_bits": 57
+        },
+        {
+          "blocks": 4,
+          "h": 1,
+          "k": 2,
+          "source": "5065",
+          "source_bits": 13
+        },
+        {
+          "blocks": 8,
+          "h": 2,
+          "k": 2,
+          "source": "118599193545",
+          "source_bits": 37
+        },
+        {
+          "blocks": 16,
+          "h": 4,
+          "k": 2,
+          "source": "75761227606434780105",
+          "source_bits": 67
+        },
+        {
+          "blocks": 32,
+          "h": 8,
+          "k": 2,
+          "source": "23562840126795742374488088805022634953",
+          "source_bits": 125
+        },
+        {
+          "blocks": 8,
+          "h": 1,
+          "k": 3,
+          "source": "204498539465",
+          "source_bits": 38
+        },
+        {
+          "blocks": 16,
+          "h": 2,
+          "k": 3,
+          "source": "128211109341678290342857",
+          "source_bits": 77
+        },
+        {
+          "blocks": 32,
+          "h": 4,
+          "k": 3,
+          "source": "130153384558754018957299994955673709784863689",
+          "source_bits": 147
+        },
+        {
+          "blocks": 64,
+          "h": 8,
+          "k": 3,
+          "source": "33255124049029476759078873438009064484342079249856315881369671009269279056232190921",
+          "source_bits": 275
+        },
+        {
+          "blocks": 16,
+          "h": 1,
+          "k": 4,
+          "source": "373774166450899841455049",
+          "source_bits": 79
+        },
+        {
+          "blocks": 32,
+          "h": 2,
+          "k": 4,
+          "source": "165588312019450881659399979914488285967961560009",
+          "source_bits": 157
+        },
+        {
+          "blocks": 64,
+          "h": 4,
+          "k": 4,
+          "source": "11554485573742830501537184234278330577105021459220043377884359384104896933637164128747393993",
+          "source_bits": 303
+        },
+        {
+          "blocks": 128,
+          "h": 8,
+          "k": 4,
+          "source": "715415463042063550847391799404232965299720455464920078989046578980886352299538706127544008037263942907912060795873842372499130776531784522329490429401500045349301108419335113",
+          "source_bits": 578
+        }
+      ],
+      "checks_by_category": {
+        "budget power is least admissible": 8256,
+        "budget uses a positive power of two": 8256,
+        "complete block clock": 268,
+        "complete cylinder is positive and odd": 252,
+        "complete positive ordinary edge": 3468,
+        "complete ternary denominator retained": 52,
+        "cylinder clock replay": 252,
+        "displayed fifth-family gap is not admitted": 1,
+        "every prescribed odd gap is actual": 3468,
+        "exact automatic-family lacunary height gain": 16,
+        "exact eleventh-power height comparison": 1,
+        "exact same-source unpaid-run window": 3292,
+        "finite Mahler functional equation": 8,
+        "finite inverse identity with actual endpoint": 1734,
+        "fixed positive source mismatches within proved budget": 8256,
+        "fixed rational candidate ordinary height": 10400,
+        "largest admitted automatic family is lacunary": 1,
+        "linear bit-length budget comparison": 8256,
+        "literal unpaid-run shifted identity": 3292,
+        "ordinary partial numerator height": 52,
+        "positive ordinary block height growth": 1734,
+        "rational height cannot fund required tail valuation": 4282,
+        "shifted block retains additive constant166": 1734,
+        "specified paid endpoints are consecutive": 16,
+        "symbolic scalar retained as candidate tail only": 1734,
+        "terminal oddness funds full binary divisor": 3292,
+        "truncation equality is not infinite equality": 3,
+        "two specified endpoints are paid": 16,
+        "unchanged-source full prefix height": 1734,
+        "unique first omitted valuation cannot cancel": 52
+      },
+      "exact_checks": 74178,
+      "finite_tail_valuation_cases": 52,
+      "fixed_rational_height_cases": 10400,
+      "fixed_source_budget_cases": 8256,
+      "height_samples": [
+        {
+          "last_paid": 0,
+          "next_paid": 1,
+          "next_tail_valuation": 5,
+          "r": 0
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 10,
+          "r": 1
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 3,
+          "next_tail_valuation": 15,
+          "r": 2
+        },
+        {
+          "last_paid": 3,
+          "next_paid": 4,
+          "next_tail_valuation": 20,
+          "r": 3
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 5,
+          "next_tail_valuation": 25,
+          "r": 4
+        },
+        {
+          "last_paid": 5,
+          "next_paid": 6,
+          "next_tail_valuation": 30,
+          "r": 5
+        },
+        {
+          "last_paid": 6,
+          "next_paid": 7,
+          "next_tail_valuation": 35,
+          "r": 6
+        },
+        {
+          "last_paid": 7,
+          "next_paid": 8,
+          "next_tail_valuation": 40,
+          "r": 7
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 8,
+          "r": 0
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 4,
+          "next_tail_valuation": 16,
+          "r": 1
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 8,
+          "next_tail_valuation": 30,
+          "r": 2
+        },
+        {
+          "last_paid": 8,
+          "next_paid": 16,
+          "next_tail_valuation": 56,
+          "r": 3
+        },
+        {
+          "last_paid": 16,
+          "next_paid": 32,
+          "next_tail_valuation": 106,
+          "r": 4
+        },
+        {
+          "last_paid": 32,
+          "next_paid": 64,
+          "next_tail_valuation": 204,
+          "r": 5
+        },
+        {
+          "last_paid": 64,
+          "next_paid": 128,
+          "next_tail_valuation": 398,
+          "r": 6
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 3,
+          "next_tail_valuation": 11,
+          "r": 0
+        },
+        {
+          "last_paid": 3,
+          "next_paid": 7,
+          "next_tail_valuation": 25,
+          "r": 1
+        },
+        {
+          "last_paid": 7,
+          "next_paid": 13,
+          "next_tail_valuation": 45,
+          "r": 2
+        },
+        {
+          "last_paid": 13,
+          "next_paid": 21,
+          "next_tail_valuation": 71,
+          "r": 3
+        },
+        {
+          "last_paid": 21,
+          "next_paid": 31,
+          "next_tail_valuation": 103,
+          "r": 4
+        },
+        {
+          "last_paid": 31,
+          "next_paid": 43,
+          "next_tail_valuation": 141,
+          "r": 5
+        },
+        {
+          "last_paid": 43,
+          "next_paid": 57,
+          "next_tail_valuation": 185,
+          "r": 6
+        },
+        {
+          "last_paid": 57,
+          "next_paid": 73,
+          "next_tail_valuation": 235,
+          "r": 7
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 8,
+          "r": 0
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 4,
+          "next_tail_valuation": 16,
+          "r": 1
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 8,
+          "next_tail_valuation": 30,
+          "r": 2
+        },
+        {
+          "last_paid": 8,
+          "next_paid": 16,
+          "next_tail_valuation": 56,
+          "r": 3
+        },
+        {
+          "last_paid": 16,
+          "next_paid": 32,
+          "next_tail_valuation": 106,
+          "r": 4
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 8,
+          "r": 0
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 3,
+          "next_tail_valuation": 13,
+          "r": 1
+        },
+        {
+          "last_paid": 3,
+          "next_paid": 4,
+          "next_tail_valuation": 18,
+          "r": 2
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 5,
+          "next_tail_valuation": 23,
+          "r": 3
+        },
+        {
+          "last_paid": 5,
+          "next_paid": 6,
+          "next_tail_valuation": 28,
+          "r": 4
+        },
+        {
+          "last_paid": 6,
+          "next_paid": 8,
+          "next_tail_valuation": 36,
+          "r": 5
+        },
+        {
+          "last_paid": 8,
+          "next_paid": 9,
+          "next_tail_valuation": 41,
+          "r": 6
+        },
+        {
+          "last_paid": 9,
+          "next_paid": 10,
+          "next_tail_valuation": 46,
+          "r": 7
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 8,
+          "r": 0
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 3,
+          "next_tail_valuation": 13,
+          "r": 1
+        },
+        {
+          "last_paid": 3,
+          "next_paid": 4,
+          "next_tail_valuation": 18,
+          "r": 2
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 5,
+          "next_tail_valuation": 23,
+          "r": 3
+        },
+        {
+          "last_paid": 5,
+          "next_paid": 6,
+          "next_tail_valuation": 28,
+          "r": 4
+        },
+        {
+          "last_paid": 6,
+          "next_paid": 7,
+          "next_tail_valuation": 33,
+          "r": 5
+        },
+        {
+          "last_paid": 7,
+          "next_paid": 8,
+          "next_tail_valuation": 38,
+          "r": 6
+        },
+        {
+          "last_paid": 8,
+          "next_paid": 9,
+          "next_tail_valuation": 43,
+          "r": 7
+        },
+        {
+          "last_paid": 1,
+          "next_paid": 2,
+          "next_tail_valuation": 8,
+          "r": 0
+        },
+        {
+          "last_paid": 2,
+          "next_paid": 3,
+          "next_tail_valuation": 13,
+          "r": 1
+        },
+        {
+          "last_paid": 3,
+          "next_paid": 4,
+          "next_tail_valuation": 18,
+          "r": 2
+        },
+        {
+          "last_paid": 4,
+          "next_paid": 5,
+          "next_tail_valuation": 23,
+          "r": 3
+        },
+        {
+          "last_paid": 5,
+          "next_paid": 6,
+          "next_tail_valuation": 28,
+          "r": 4
+        },
+        {
+          "last_paid": 6,
+          "next_paid": 7,
+          "next_tail_valuation": 33,
+          "r": 5
+        },
+        {
+          "last_paid": 7,
+          "next_paid": 8,
+          "next_tail_valuation": 38,
+          "r": 6
+        },
+        {
+          "last_paid": 8,
+          "next_paid": 9,
+          "next_tail_valuation": 43,
+          "r": 7
+        }
+      ],
+      "longest_matching_odd_prefix_in_controls": {
+        "1": 33,
+        "2": 65,
+        "3": 128,
+        "4": 256
+      },
+      "scope": "finite exact ordinary realizations, mismatch budgets and arithmetic controls for the written 2-adic irrationality proof",
+      "status": "PASS",
+      "unproved": "arbitrary bounded-carry or automatic-script exclusion and full denominator-eight rigidity"
+    }
+  },
+  "not_claimed": "Collatz closure or a fixed positive ordinary realization of a symbolic infinite word",
+  "published_parent": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+  "python_assert_counts": {
+    "arithmetic_tower_controls.py": 0,
+    "general_phase_controls.py": 0,
+    "run_exact_controls.py": 0,
+    "tower_controls.py": 0
+  },
+  "schema": "collatz-round10-exact-controls/v1",
+  "scope": "finite exact controls, distinct from the actual scalar Lean theorem and the written return and 2-adic arguments",
+  "status": "PASS",
+  "total_explicit_checks": 126433
+}

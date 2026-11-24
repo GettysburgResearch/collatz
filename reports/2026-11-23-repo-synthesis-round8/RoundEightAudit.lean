@@ -1,0 +1,23 @@
+import GermBridge
+import OrdinarySelector
+
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.polynomial_gap_contraction
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.integer_gap_potential_step
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.scalar_charge_power
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.scalar_guard_below_bitlength
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.three_quarters_cube
+#print axioms Collatz.RepoSynthesisRoundEight.GermBridge.finite_scalar_budget
+#print axioms Collatz.Round8OrdinarySelector.low
+#print axioms Collatz.Round8OrdinarySelector.paid
+#print axioms Collatz.Round8OrdinarySelector.lowRun
+#print axioms Collatz.Round8OrdinarySelector.low_complete_gaps
+#print axioms Collatz.Round8OrdinarySelector.paid_complete_gaps
+#print axioms Collatz.Round8OrdinarySelector.low_shift
+#print axioms Collatz.Round8OrdinarySelector.low_run_shift
+#print axioms Collatz.Round8OrdinarySelector.low_run_paid
+#print axioms Collatz.Round8OrdinarySelector.low_scalar_prefix
+#print axioms Collatz.Round8OrdinarySelector.paid_scalar_prefix
+#print axioms Collatz.Round8OrdinarySelector.low_scalar_interval
+#print axioms Collatz.Round8OrdinarySelector.paid_scalar_intervals
+#print axioms Collatz.Round8OrdinarySelector.tail_exponential_bound
+#print axioms Collatz.Round8OrdinarySelector.affine_return_expansion

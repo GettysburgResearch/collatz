@@ -1,0 +1,118 @@
+{
+  "schema": "collatz-ordinary-arithmetic-sources/v1",
+  "repository": "GettysburgResearch/collatz",
+  "base_commit": "a30402b7849c437edf245974d9f436d1f105e08e",
+  "direct_inputs": [
+    {
+      "pr": 182,
+      "commit": "a30402b7849c437edf245974d9f436d1f105e08e",
+      "paths": [
+        "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+        "research/high-variance-closure-20261124/continuation/lean/BiasedParity.lean"
+      ],
+      "sha256": [
+        "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+        "f9be262b47615a2c19e1070b9efc38f948aa8573c75e751869c3a92ecdd64be2"
+      ],
+      "use": "Freshly rebuilt finite physical base, parity counts and high-prefix inequality; both project dependencies audited"
+    },
+    {
+      "pr": 182,
+      "commit": "a30402b7849c437edf245974d9f436d1f105e08e",
+      "paths": [
+        "research/high-variance-closure-20261124/SPARSE_RESET_MEASURE.md",
+        "research/high-variance-closure-20261124/continuation/MULTISCALE_CLOSURE.md",
+        "research/high-variance-closure-20261124/BOUNDARY_RAYS.md"
+      ],
+      "use": "Selector, separated wrapped starts, exact debit, ancestor toll and persistent boundary definitions; written arguments reconstructed"
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "sha256": "bee22c362de8adcbb6a0360f48240ad276fdf6122f6383273eb10dee8e29271d",
+      "use": "Written independently reviewed strict-power occupation on one injective forward orbit; only used by ORIGIN_BIAS"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md"
+      ],
+      "use": "Prior physical pair table and exponential-parameter mechanism credited; deterministic finite reachability re-proved and checked in Lean. Almost-sure absorption in ORDINARY_OSCILLATION remains a named source-qualified input, not a new full probability formalization."
+    }
+  ],
+  "primary_literature": [
+    {
+      "author": "Kenneth M. Monks",
+      "title": "The sufficiency of arithmetic progressions for the 3x+1 conjecture",
+      "year": 2006,
+      "url": "https://monks.scranton.edu/content/pubs/SufficiencyRev4.pdf",
+      "location": "Theorem 1.1, printed page 2",
+      "use": "Every translated positive arithmetic progression meets the ordinary basin of one; only needed by same-residue convergent examples"
+    },
+    {
+      "author": "Nicolas Gouillon",
+      "title": "Explicit lower bounds for linear forms in two logarithms",
+      "year": 2006,
+      "url": "https://www.numdam.org/item/JTNB_2006__18_1_125_0.pdf",
+      "location": "Corollary 2.3, printed page 128",
+      "use": "Fixed bases 2 and 3 give a polynomial lower bound for a nonzero two-log form; only the quantitative finite-delay result uses it"
+    }
+  ],
+  "current_repository_intake": [
+    {
+      "pr": 192,
+      "commit": "5720732b9c83361f5cded4f8bfac24e36f469937",
+      "title": "Collatz: ordinary carry-class bounds and fixed-source closure audit",
+      "scope": "Read descent.md and arithmetic.md in research/astra-universal-step-20261124, plus PR metadata",
+      "imported_as_theorem": false
+    },
+    {
+      "pr": 193,
+      "commit": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "title": "Collatz: global unit-equation bounds, actual first passage, and Lean checkpoints",
+      "scope": "Read research/astra-closure-20261124/boundary/GLOBAL_ATTEMPT.md, plus PR metadata",
+      "imported_as_theorem": false
+    },
+    {
+      "pr": 195,
+      "commit": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "title": "Collatz: two-light descent, divisor source counts, and cycle transport",
+      "scope": "PR metadata and third-continuation summary only",
+      "imported_as_theorem": false
+    },
+    {
+      "pr": 197,
+      "commit": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "title": "Collatz: triple first-fusion moments and joint landing weights",
+      "scope": "Read research/ayh-resource-reset-20261124/joint-renewal/README.md and PR metadata",
+      "imported_as_theorem": false
+    },
+    {
+      "pr": 201,
+      "commit": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "title": "Collatz: killed Green occupation removes the balanced head-obstruction branch",
+      "scope": "Read research/killed-green-head-closure-20261124/README.md and PR metadata",
+      "imported_as_theorem": false
+    }
+  ],
+  "literature_context_only": [
+    {
+      "author": "Sara Brofferio",
+      "url": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "use": "Read measured affine-boundary formulation while testing the negative-center route; not used as a theorem in this packet"
+    },
+    {
+      "author": "Hillel Furstenberg",
+      "url": "https://ems.press/content/serial-article-files/23953?nt=1",
+      "location": "EMS Magazine 119 (2021), page 59",
+      "use": "Read the orbit-equidistribution conjectures as motivation; neither conjecture is assumed"
+    }
+  ],
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "formal_scope": "Eleven new public declaration audits; ten rebuilt dependency audits. Infinite dyadic/arithmetic, boundary, reset and asymptotic applications remain written proofs.",
+  "novelty_scope": "No literature-priority claim. Pure triadic periodic-address exclusion overlaps the preceding forbidden-word result; affine exponential-parameter merging already appears in PR146."
+}

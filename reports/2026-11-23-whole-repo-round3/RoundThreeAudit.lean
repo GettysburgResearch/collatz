@@ -1,0 +1,22 @@
+import CarryFibers
+import OrbitCounting
+
+#print axioms CollatzShell.CarryFibers.carry_head_parity
+#print axioms CollatzShell.CarryFibers.word_eq_of_length_ones_carry
+#print axioms CollatzShell.CarryFibers.word_eq_of_carry_div_mod
+#print axioms CollatzShell.CarryFibers.residue_fiber_card_le
+#print axioms CollatzShell.CarryFibers.residue_fiber_card_le_interval
+#print axioms CollatzShell.CarryFibers.word_eq_of_small_carry_mod
+#print axioms CollatzShell.CarryFibers.endpoint_residue_to_carry
+#print axioms CollatzShell.CarryFibers.actual_endpoint_fiber_card_le
+#print axioms CollatzShell.CarryFibers.actual_endpoint_fiber_card_le_interval
+#print axioms CollatzShell.CarryFibers.same_carry_source_mod
+#print axioms CollatzShell.CarryFibers.same_carry_same_source_block
+#print axioms CollatzShell.CarryFibers.actual_box_injection
+#print axioms CollatzShell.CarryFibers.fiber_weight_square_le
+#print axioms CollatzShell.CarryFibers.carry_collision_le
+#print axioms CollatzShell.CarryFibers.actual_endpoint_collision_le_interval
+#print axioms CollatzShell.CarryFibers.actual_endpoint_collision_le
+#print axioms CollatzShell.OrbitCounting.carry_lt_clock_product
+#print axioms CollatzShell.OrbitCounting.high_clock_compresses
+#print axioms CollatzShell.OrbitCounting.high_lane_card_le

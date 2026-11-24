@@ -1,0 +1,163 @@
+{
+  "scope": "Fresh five-module Lean replay and all new public theorem axiom audits; full Collatz remains open",
+  "started_utc": "2026-11-22T00:00:41.313348+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "source_sha256": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-dyadic-descent-20261121/OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "research/lean-dyadic-descent-20261121/CertificateBoundary.lean": "3cdedfd465939cf48528b8ee199d528a7d6d9f795b332470757ac0d96944d3c9",
+    "research/lean-dyadic-descent-20261121/AffineRigidity.lean": "a01f300f2246726e4d99f9a5d8952fdca6adbca4c53c88ca329efef1edad6aee",
+    "research/lean-dyadic-descent-20261121/LiteratureCertificate.lean": "9f35bd92f368f372c17e6d8289946def478fd906c54af90e69b4175f8f50595c"
+  },
+  "runner_sha256": "5c380e542addbccee19f3fa5b1548467c5712fcf9fb9f011132e37797497f3e7",
+  "audited_declarations": [
+    "CollatzShell.AffineRigidity.finite_harmonic_invariant",
+    "CollatzShell.AffineRigidity.affine_surjective",
+    "CollatzShell.AffineRigidity.adjacent_affine_values",
+    "CollatzShell.AffineRigidity.translation_invariant",
+    "CollatzShell.AffineRigidity.translate_nsmul",
+    "CollatzShell.AffineRigidity.cyclic_affine_constant",
+    "CollatzShell.AffineRigidity.finite_cyclic_harmonic_constant",
+    "CollatzShell.AffineRigidity.continuous_affine_constant",
+    "CollatzShell.AffineRigidity.shortcut_to_affine",
+    "CollatzShell.AffineRigidity.shortcut_translation",
+    "CollatzShell.AffineRigidity.continuous_shortcut_constant",
+    "CollatzShell.AffineRigidity.finite_shortcut_harmonic_constant",
+    "CollatzShell.LiteratureCertificate.certificate_unique",
+    "CollatzShell.LiteratureCertificate.prefix_of_shared_suffix",
+    "CollatzShell.LiteratureCertificate.rank_cancel_suffix",
+    "CollatzShell.LiteratureCertificate.lower_rank_alphabet",
+    "CollatzShell.LiteratureCertificate.lower_three_prefix",
+    "CollatzShell.LiteratureCertificate.one_four_prefix",
+    "CollatzShell.LiteratureCertificate.same_tail_source_bound",
+    "CollatzShell.LiteratureCertificate.same_tail_bound_attained",
+    "CollatzShell.LiteratureCertificate.proportional_source_loss",
+    "CollatzShell.LiteratureCertificate.no_same_tail_source_growth",
+    "CollatzShell.LiteratureCertificate.certified_family_root",
+    "CollatzShell.LiteratureCertificate.family_index_unbounded",
+    "CollatzShell.LiteratureCertificate.unbounded_certified_obstruction",
+    "CollatzShell.LiteratureCertificate.no_uniform_forward_lookahead"
+  ],
+  "commands": [
+    {
+      "source": "research/lean-shell-cover/ShellCover.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/ShellCover.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-shell-cover/ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 23.409,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/OffsetDescent.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/OffsetDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.074,
+      "stdout": "'CollatzShell.OffsetDescent.affine_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.OffsetDescent.dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.descent_iff_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.accepts_upper_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.eventually_dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/CertificateBoundary.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/CertificateBoundary.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/CertificateBoundary.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.903,
+      "stdout": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nTry this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nTry this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n'CollatzShell.CertificateBoundary.certificate_basin' depends on axioms: [propext, Quot.sound]\n'CollatzShell.CertificateBoundary.powered_certificate_basin' depends on axioms: [propext, Quot.sound]\n'CollatzShell.CertificateBoundary.doubling_certificate' depends on axioms: [propext, Quot.sound]\n'CollatzShell.CertificateBoundary.second_boundary_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CertificateBoundary.full_boundary_transport' depends on axioms: [propext, Quot.sound]\n'CollatzShell.CertificateBoundary.second_even_source_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CertificateBoundary.second_boundary_interval_rule' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/AffineRigidity.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/AffineRigidity.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/AffineRigidity.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.687,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/LiteratureCertificate.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/LiteratureCertificate.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/LiteratureCertificate.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.791,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "/workspace/scratch/3f23e1a583aa/lean-literature-verified/LiteratureAudit.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/LiteratureAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/lean-literature-verified/LiteratureAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.224,
+      "stdout": "'CollatzShell.AffineRigidity.finite_harmonic_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineRigidity.affine_surjective' depends on axioms: [propext]\n'CollatzShell.AffineRigidity.adjacent_affine_values' depends on axioms: [propext]\n'CollatzShell.AffineRigidity.translation_invariant' depends on axioms: [propext]\n'CollatzShell.AffineRigidity.translate_nsmul' depends on axioms: [propext]\n'CollatzShell.AffineRigidity.cyclic_affine_constant' depends on axioms: [propext]\n'CollatzShell.AffineRigidity.finite_cyclic_harmonic_constant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineRigidity.continuous_affine_constant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineRigidity.shortcut_to_affine' depends on axioms: [Quot.sound]\n'CollatzShell.AffineRigidity.shortcut_translation' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineRigidity.continuous_shortcut_constant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineRigidity.finite_shortcut_harmonic_constant' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.LiteratureCertificate.certificate_unique' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.prefix_of_shared_suffix' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.rank_cancel_suffix' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.lower_rank_alphabet' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.LiteratureCertificate.lower_three_prefix' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.one_four_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.LiteratureCertificate.same_tail_source_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.LiteratureCertificate.same_tail_bound_attained' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.proportional_source_loss' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.LiteratureCertificate.no_same_tail_source_growth' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.LiteratureCertificate.certified_family_root' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.family_index_unbounded' depends on axioms: [propext, Quot.sound]\n'CollatzShell.LiteratureCertificate.unbounded_certified_obstruction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.LiteratureCertificate.no_uniform_forward_lookahead' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "axiom_audit_complete": true,
+  "sources_unchanged": true,
+  "finished_utc": "2026-11-22T00:01:25.402434+00:00"
+}

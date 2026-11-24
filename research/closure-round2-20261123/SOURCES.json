@@ -1,0 +1,150 @@
+{
+  "scope": "Frozen source ledger for the second 23 November closing attempt. Metadata refresh and targeted source reading are not a complete audit of every upstream PR. No full Collatz proof.",
+  "repository": "GettysburgResearch/collatz",
+  "parent_checkpoint": "aa12c13601cacec2c8496f1349b4947457dc1b45",
+  "upstream_heads": [
+    {
+      "pr": 175,
+      "head": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "title": "Collatz: Hardy inverse-tree spectrum and direct closing attempts",
+      "updated_at": "2026-11-23T01:27:51Z"
+    },
+    {
+      "pr": 176,
+      "head": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+      "title": "Collatz: sparse returns, identity atoms, and rigidity attempts",
+      "updated_at": "2026-11-23T01:14:48Z"
+    },
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "title": "Collatz: finite witness boundary and ordinary atomic pressure",
+      "updated_at": "2026-11-23T01:17:55Z"
+    },
+    {
+      "pr": 178,
+      "head": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "title": "Collatz: balanced denominator units and finite rational-dual certificates",
+      "updated_at": "2026-11-23T01:15:56Z"
+    },
+    {
+      "pr": 180,
+      "head": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "title": "Collatz: actual boundary laws, entropy, and complete source cuts",
+      "updated_at": "2026-11-23T01:10:35Z"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "updated_at": "2026-11-23T01:18:35Z"
+    }
+  ],
+  "files": [
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "blob": "f3143fc4c63c3eff749ceb2d18ce7326a184a5c1",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md"
+    },
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "blob": "314fce3965adf36775fac9b5f2097c0181e830de",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md"
+    },
+    {
+      "pr": 180,
+      "head": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "blob": "400cdfc4bba491488247a744996e8555e131abf7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "blob": "54b6f161d8a8ce81c32fed6c6166807d5c9f8445",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "blob": "c749ad8f97cd9585a9b251129a79a880ff46d965",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md"
+    },
+    {
+      "pr": 178,
+      "head": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/cycles/MOVING_PRIME_CYCLE_ATTEMPT.md",
+      "blob": "f71374314dbf2193aa82ed493eadbcd223a97e6c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/cycles/MOVING_PRIME_CYCLE_ATTEMPT.md"
+    },
+    {
+      "pr": 178,
+      "head": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/cycles/lean/BalancedCycleUnit.lean",
+      "blob": "277796ca05b23a81d90340a88d1603f41a79e4c7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/cycles/lean/BalancedCycleUnit.lean"
+    },
+    {
+      "pr": 176,
+      "head": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+      "path": "research/lean-global-resolvent-20261121/overview/longshot/cycles/IDENTITY_ATOM_ATTEMPT.md",
+      "blob": "c76c61df5cdfe887bddc50cce0f8ced7dc923211",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ff3e068fa44eb85bb918580b2e10e18c027a18e6/research/lean-global-resolvent-20261121/overview/longshot/cycles/IDENTITY_ATOM_ATTEMPT.md"
+    },
+    {
+      "pr": 175,
+      "head": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/TERNARY_POLE_BARRIER_ATTEMPT.md",
+      "blob": "629bd0f0d1b7993e90cfa6cb20a5e98facbd22ff",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/TERNARY_POLE_BARRIER_ATTEMPT.md"
+    },
+    {
+      "pr": 175,
+      "head": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md",
+      "blob": "2e96c55e7c3edcc69a0dcc56b4d6adb573fd9a51",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md"
+    }
+  ],
+  "dependency_boundary": {
+    "positive_product": "PR177 HIGH_VARIANCE_ESCAPE.md HE2 is the written ordinary-orbit counting/product input for the escaping-component application. The principal researcher reconstructed its cylinder split and reciprocal integral; it has not been formalized in this new Lean packet.",
+    "finite_source_optimizer": "PR177 witness and PR180 source synthesis are the current source-search context; the new pressure-maximum theorem does not assume an unproved complete dispatcher.",
+    "cycle_growth": "PR185 residual denominator growth and principal-fibre controls are comparison inputs. The new transport theorem uses the literal full D and does not assume numerical residual cancellation is impossible.",
+    "balanced_unit": "PR178 balanced unit supplies the quotient normalization used in the written attempted gcd argument; its source module was read, not recompiled in this checkpoint.",
+    "critical_collision": "PR185 logarithmic gain defines the outstanding same-law upper-bound target; no such upper bound is imported.",
+    "older_census": "The earlier PR175 zero-atom note is cited only for comparison with its source-qualified polynomial census."
+  },
+  "primary_literature": [
+    {
+      "authors": "Nathan Grieve and Julie Tzu-Yueh Wang",
+      "title": "Greatest common divisors with moving targets and consequences for linear recurrence sequences",
+      "url": "https://arxiv.org/pdf/1902.09109v2",
+      "read_scope": "Theorem 1.2 and height conventions; fixed dimension/degrees, small coefficient heights, and exceptional subgroup alternative checked. Not instantiated for arbitrary Collatz words."
+    },
+    {
+      "authors": "Pietro Corvaja and Umberto Zannier",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "url": "https://arxiv.org/pdf/math/0311030v2",
+      "read_scope": "Theorem 1 and fixed-polynomial/finitely-generated-group hypotheses; no universal cycle bound imported."
+    },
+    {
+      "authors": "Kevin Knight",
+      "title": "Collatz high cycles do not exist",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0012365X25004200",
+      "read_scope": "Publisher abstract and section preview only; extremal Christoffel-cycle scope checked. Full HAL text was access-blocked; no theorem from the full text is imported."
+    }
+  ]
+}

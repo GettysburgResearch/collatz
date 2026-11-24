@@ -1,0 +1,284 @@
+{
+  "scope": "All 38 public theorems in three new reassessment modules; separate from written analytic results.",
+  "audits": [
+    {
+      "declaration": "CollatzShell.CoefficientCounting.oddCount_lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.oddCount_mod",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.parity_weight_pair",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.parity_weight_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.block_power_constants",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.resistant_oddCount",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.resistant_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientCounting.packing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.orbit_next",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.oddCount_next",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.step_linear_exact",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.normalized_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.normalized_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.strip_mono",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.strip_height_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.supercritical_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.strip_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.orbit_bound_of_repeat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.strip_prefix_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.strip_shifted_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.escapeClock_polynomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.finite_strip_impossible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.finite_coefficient_exit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CoefficientPeaks.supercritical_peak",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.certificate_odd",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.certificate_cons_iff",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.certificate_basin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.powered_certificate_basin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.sibling_certificate",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.doubling_certificate",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.second_boundary_rank",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.boundary_three",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.boundary_five",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.boundary_nine",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.boundary_seven",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.full_boundary_transport",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.second_even_source_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.CertificateBoundary.second_boundary_interval_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

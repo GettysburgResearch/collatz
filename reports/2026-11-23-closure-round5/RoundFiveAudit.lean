@@ -1,0 +1,18 @@
+import FixedSourcePressure
+import TriadicConstruction
+
+#print axioms CollatzShell.FixedSourcePressure.parityPrefix_length
+#print axioms CollatzShell.FixedSourcePressure.shortcut_affine
+#print axioms CollatzShell.FixedSourcePressure.parityPrefix_affine
+#print axioms CollatzShell.FixedSourcePressure.same_prefix_source_mod
+#print axioms CollatzShell.FixedSourcePressure.source_eq_of_prefix_of_height
+#print axioms CollatzShell.FixedSourcePressure.prefix_image_card
+#print axioms CollatzShell.FixedSourcePressure.prefix_fiber_card_le
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.large_step_nonincrease
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.odd_step_five_sixths
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.very_large_step_seven_eighths
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.large_two_step_seven_eighths
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.nonzero_step_charge
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.distinct_charge_product
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.signed_distinct_charge_bound
+#print axioms Collatz.ClosureRoundFive.RationalAccounting.global_charge_contradiction

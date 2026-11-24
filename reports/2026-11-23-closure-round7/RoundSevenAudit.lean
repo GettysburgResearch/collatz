@@ -1,0 +1,9 @@
+import GermConstruction
+
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.binaryIntegral_int_mul
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.integral_of_double
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.triangular_integrality
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.even_step_cleared
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.odd_step_cleared
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.odd_step_integral
+#print axioms Collatz.ClosureRoundSeven.GermConstruction.jet_subring_iff

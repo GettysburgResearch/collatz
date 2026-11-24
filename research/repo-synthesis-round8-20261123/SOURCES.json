@@ -1,0 +1,98 @@
+{
+  "date_utc": "2026-11-23",
+  "parent": "3954c775ba74e1f40776ff38cb4282698d4a334a",
+  "scope": "Whole-project metadata survey plus selected full-text reconstruction. The inventory is not a blanket proof audit. The new scalar and phase deductions are elementary; the escaping pressure construction retains its pinned source qualification.",
+  "inventory": "../../reports/2026-11-23-repo-synthesis-round8/REPO_INVENTORY.json",
+  "full_text_inputs": [
+    {
+      "pr": 177,
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/germ/DENSITY_FREE_DEFLATED_GERM.md",
+      "git_blob": "9e623e64138efc54326408e174452d18c123aad3",
+      "claims": "DG1--DG6",
+      "scope": "Density-free actual arithmetic germ and quantitative two-center radii; motivation for returning to the real derivative at one. No analytic rationality theorem is applied by the new scalar proof."
+    },
+    {
+      "pr": 177,
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/descent/TEMPLATE_SELECTION.md",
+      "git_blob": "1a5181163de2d5ac751954ddedac96e1c0ca37dc",
+      "claims": "TS-A and the contracting-prefix source-size result",
+      "scope": "Actual template and source-height boundaries; context, not a new blanket audit of all upstream claims."
+    },
+    {
+      "pr": 177,
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/witness/WITNESS_CHARGE_AND_POWER_INDUCTION.md",
+      "git_blob": "050035ed12b68fc4607cf2416cc4cb736b09ff4f",
+      "claims": "Witness charge, terminal-padding invariance and homogeneous finite-seed obstruction",
+      "scope": "Context for why an unchanged ordinary source and complete clock cost must be retained."
+    },
+    {
+      "pr": 177,
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "path": "research/lean-exact-witness-global-20261121/construction-attacks-20261123/transport/FULL_SOURCE_FINITE_CERTIFICATE.md",
+      "git_blob": "0b504bde5b0f5b91fb7bfbac45b2cb98947eda7c",
+      "claims": "FP1--FP14",
+      "scope": "Full-source unit projection and finite free-energy certificate. No missing moving-root mass lower bound is claimed."
+    },
+    {
+      "pr": 182,
+      "head": "3954c775ba74e1f40776ff38cb4282698d4a334a",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "git_blob": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162",
+      "claims": "Selection theorem (1)--(3), uniform product bound and forward coefficient inequality (6)",
+      "scope": "Actual same-component pressure maximum, preserving the underlying escaping-product source qualification."
+    },
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "git_blob": "314fce3965adf36775fac9b5f2097c0181e830de",
+      "claims": "HE18--HE24e",
+      "scope": "Inherited source-qualified positivity and ordinary escaping-product input through SOURCE_CLOSURE.md; no periodic component product asserted."
+    },
+    {
+      "pr": 182,
+      "head": "3954c775ba74e1f40776ff38cb4282698d4a334a",
+      "path": "research/closure-round7-20261123/GERM_CONSTRUCTION.md",
+      "git_blob": "6a92d7c329c0b6e782e78f2bb3abaace3fcc5a64",
+      "claims": "Actual binary Taylor jet and denominator clock",
+      "scope": "Contrasting coordinate and finite-versus-all-order boundary; not identified with the real derivative at one."
+    },
+    {
+      "pr": 182,
+      "head": "3954c775ba74e1f40776ff38cb4282698d4a334a",
+      "path": "research/closure-round5-20261123/TRIADIC_CONSTRUCTION.md",
+      "git_blob": "1ceadd11ddde96e01bfa1a0523322f770aa14211",
+      "claims": "Complementary autoconjugacy scalar and candidate interface",
+      "scope": "Distinct 2-adic coordinate, not an imported rationality proof for h."
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/NEGATIVE_FIVE_CHECKPOINT.md",
+      "claims": "Negative-five cycle shadow and finite ordinary geometry",
+      "scope": "Previously known negative-cycle context; actual discounted-scalar pattern of the new family is proved separately."
+    }
+  ],
+  "literature": [
+    {
+      "authors": "Sebastian Schepis",
+      "date": "2025-09-03",
+      "title": "The Collatz Conjecture via a State-Only, Well-Founded Lyapunov Function in a Prime-Resonant Framework",
+      "url": "https://www.academia.edu/143743604/The_Collatz_Conjecture_Proven_via_Entropy_Collapse_in_Prime_Resonant_Hilbert_Space",
+      "inspected": "Complete author-hosted text, particularly section 3",
+      "verdict": "REFUTED at the uniform strict descent lemma, by the exact actual 7 -> 11 transition. No universal conclusion imported."
+    },
+    {
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "date": "2002-07-10",
+      "title": "The Autoconjugacy of the 3x+1 Function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "inspected": "Author PDF, definitions and Theorem 2.1",
+      "scope": "Conceptual and attribution boundary: rationality of a distinct 2-adic coordinate relates to divergence. Not a proof of the new real scalar's triadic type."
+    }
+  ],
+  "first_unsupported_global_step": "Construct a triadic value, or the stated sufficiently accurate triadic approximation, for the actual scalar of every fixed positive ordinary source. Rational phase exclusions and actual finite return families do not construct this."
+}
