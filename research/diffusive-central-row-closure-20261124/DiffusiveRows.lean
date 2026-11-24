@@ -75,9 +75,20 @@ theorem suffix_carry_monotone (A E C H q D u v : ℤ)
 
 /-- Exact normalization of the prefix amplification, without square roots.
     A0=2^A_i, P0=3^i, X0=original gate, Dnum/Dden=distortion. -/
-theorem moving_target_normalization (A0 P0 X0 Q Dnum Dden : ℤ)
-    (h : A0*Q*Dden = P0*X0*Dnum) :
-    P0*X0*Dnum = Q*A0*Dden := by nlinarith only [h]
+theorem moving_target_normalization
+    (twoPrefix twoSuffix fourTotal threePrefix threeSuffix threeTotal
+      a q Dnum Dden : ℤ)
+    (ht : twoPrefix*twoSuffix=fourTotal)
+    (hb : threePrefix*threeSuffix=threeTotal)
+    (ha : twoSuffix*q*Dden=threeSuffix*a*Dnum) :
+    twoPrefix*threeTotal*a*Dnum =
+      fourTotal*threePrefix*q*Dden := by
+  calc
+    twoPrefix*threeTotal*a*Dnum =
+        (twoPrefix*threePrefix)*(threeSuffix*a*Dnum) := by rw [← hb]; ring
+    _ = (twoPrefix*threePrefix)*(twoSuffix*q*Dden) := by rw [ha]
+    _ = (twoPrefix*twoSuffix)*threePrefix*q*Dden := by ring
+    _ = fourTotal*threePrefix*q*Dden := by rw [ht]
 
 /-- Every selected gate gives a terminal in a finite list of actual orbit
     values. This interface preserves the gate-to-terminal length. -/
@@ -95,18 +106,19 @@ theorem gate_time (total suffix gate first : ℕ)
 
 /-- A full cycle with affine multiplier lambda=B/A has positive
     correction H; its r-fold carry is q(1-lambda^r) after normalization. -/
-theorem cycle_lap (A B H q : ℚ) (h : q = B*q + H) (x : ℚ) :
+theorem cycle_lap (B H q : ℚ) (h : q = B*q + H) (x : ℚ) :
     q-(B*x+H)=B*(q-x) := by linarith only [h]
 
+def affineRun (B H : ℚ) (x : ℚ) : ℕ → ℚ
+  | 0 => x
+  | r+1 => B * affineRun B H x r + H
+
 theorem iterated_cycle_defect (B H q : ℚ) (h : q=B*q+H) (x : ℚ) (r : ℕ) :
-    q - (Function.iterate (fun z : ℚ => B*z+H) r x) = B^r*(q-x) := by
-  induction r generalizing x with
-  | zero => simp
+    q - affineRun B H x r = B^r*(q-x) := by
+  induction r with
+  | zero => simp [affineRun]
   | succ r ih =>
-    rw [Function.iterate_succ_apply', pow_succ]
-    change q-(B*((fun z : ℚ => B*z+H)^[r] x)+H)=B^r*B*(q-x)
-    rw [cycle_lap 0 B H q h]
-    rw [ih]
+    rw [affineRun, cycle_lap B H q h, ih, pow_succ]
     ring
 
 end DiffusiveRows
