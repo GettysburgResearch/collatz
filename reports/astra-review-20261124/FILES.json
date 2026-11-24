@@ -13,6 +13,21 @@
       "bytes": 7422
     },
     {
+      "path": "reports/astra-review-20261124/ADDENDUM_PR194_CARRY.md",
+      "sha256": "b1d677984864f866dcb5e538ddaafa34450f8a30e548e25493696120b3782e27",
+      "bytes": 4695
+    },
+    {
+      "path": "reports/astra-review-20261124/ADDENDUM_PR194_CYCLES.md",
+      "sha256": "f0ae6a6fe793c211afa68b8a46299f3ad735d86e34038f515b4fe44efbfc369c",
+      "bytes": 5429
+    },
+    {
+      "path": "reports/astra-review-20261124/ADDENDUM_PR195_MERGERS.md",
+      "sha256": "9ea11ebc551444a37c7096ee2c342dad1007b91cf8b2d412e20a8e2989e00cba",
+      "bytes": 7149
+    },
+    {
       "path": "reports/astra-review-20261124/AUDIT_SUMMARY.json",
       "sha256": "d485d0155581ae41dfdb6fb7407ca416a0ef534c1f8157d41c04da3f4e691b35",
       "bytes": 4406
@@ -79,13 +94,28 @@
     },
     {
       "path": "reports/astra-review-20261124/FRONTIER_REVIEW.md",
-      "sha256": "712070a6ceac878163c3e5e7f506e7f329233fe2896d66dc01fc2b13d8e97784",
-      "bytes": 18888
+      "sha256": "0812f5397659ec274eb55a9fbb19369077e061bf84ce6645a2a89546e10592f1",
+      "bytes": 21607
     },
     {
       "path": "reports/astra-review-20261124/INDEPENDENT_REVIEW.md",
       "sha256": "2baea8a6ac85412e4c5d7b05c978971accd7b8898f9320e9b40d5c681c23f3a7",
       "bytes": 5099
+    },
+    {
+      "path": "reports/astra-review-20261124/INITIAL_PUBLICATION_VALIDATION.json",
+      "sha256": "c8672ed49314aa60ee7f236e7520d5d4f70725aaa4894752505ebbdbc4cb8af3",
+      "bytes": 3261
+    },
+    {
+      "path": "reports/astra-review-20261124/LATE_ANALYTIC_REVIEW.md",
+      "sha256": "6afa4f31866d8684e46399697b8f25ac32ec87ea73d2add5f76cd0a04e855614",
+      "bytes": 5848
+    },
+    {
+      "path": "reports/astra-review-20261124/LATE_SOURCE_HEADS.json",
+      "sha256": "b689e1a3527b6fb3aa07d0694d5a790063d1b3fb1633b64bee6eb744499f1389",
+      "bytes": 761
     },
     {
       "path": "reports/astra-review-20261124/MERGER_ADDENDUM_REVIEW.md",
@@ -149,8 +179,8 @@
     },
     {
       "path": "reports/astra-review-20261124/README.md",
-      "sha256": "020c5cce8bb1c123255ebb7bd869c386b278de3296037bece2aa427973725148",
-      "bytes": 9664
+      "sha256": "d0149f3f3498f2cdcb6ee9b5ac7ce7545a0aa36120cf9411fea079ead2ab4338",
+      "bytes": 11002
     },
     {
       "path": "reports/astra-review-20261124/REFRESHED_HEADS.json",
@@ -208,9 +238,14 @@
       "bytes": 1179
     },
     {
+      "path": "research/astra-orbit-cycle-20261124/LATE_SYNTHESIS.md",
+      "sha256": "58fbcfc40bc7e9a6ee36e82b0d4f40105e6bed3592629a3dccb9be4ca29ec20a",
+      "bytes": 4971
+    },
+    {
       "path": "research/astra-orbit-cycle-20261124/README.md",
-      "sha256": "2007ea267f115db588bde0ba05581566fb8ade4e530808b4c12489bf9377eb1e",
-      "bytes": 12407
+      "sha256": "f454a5a2405fab4bbafc824f2cc5610ed6e95e964ef53130d399c37345113b64",
+      "bytes": 13095
     },
     {
       "path": "research/astra-orbit-cycle-20261124/audited_lean/CarryBudget.lean",

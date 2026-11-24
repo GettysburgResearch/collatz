@@ -114,6 +114,8 @@ A CRT construction supplies arbitrarily large marked inputs with both an expensi
 
 **Remaining obligation:** cover the complementary class \(3^HM\equiv3\pmod4\), or prove every relevant fixed source eventually acquires a smaller partner through another exact construction. The new interval synchronization theorem in PR193 leaves the least member of each fiber unresolved and does not supply this pointwise coverage.
 
+**Late synthesis with PR194–195.** The [combined deductions](LATE_SYNTHESIS.md) transfer PR194's restricted physical occupation exponent 17/25 to the actual canonical multipliers on the same injective orbit with subexponential canonical complexity. PR195's guarded source family lies entirely in the complementary half-size class: it has H=4 and M=3 modulo 4. On its selected lifts, our barrier forces at least 33k+5 partner odd inputs at target clock 5, while its later actual merger at clock 33k+10 uses only 21k+3 on both arms. These are written consequences of the pinned results. They extend the useful comparison and supplied families, but do not establish universal coverage.
+
 ## 4. What Lean actually checked
 
 The fresh strict replay covers **83 theorem declarations including helpers** in eleven files. Every printed transitive axiom set is a subset of `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx` or additional mathematical axiom occurs.
@@ -141,4 +143,4 @@ The script checks the toolchain commits, each source hash and all 66 prior-kerne
 
 Run `occupation/carry_controls.py`, `cycles/controls.py`, and `mergers/check_two_anchor.py` in normal and optimized Python. Exact commands and paired outputs are in the reports. These bounded controls are supplementary evidence, not proofs of the infinite statements. The complete checkout gate is `python -X utf8 -B tools/validate.py`.
 
-The [frontier review](../../reports/astra-review-20261124/FRONTIER_REVIEW.md) distinguishes the latest source claims and their first unsupported global steps. Internal [proof reconstruction](../../reports/astra-review-20261124/INDEPENDENT_REVIEW.md), the [merger extension review](../../reports/astra-review-20261124/MERGER_ADDENDUM_REVIEW.md), and late PR192/193 comparison notes retain their exact source boundaries. No external referee acceptance is claimed.
+The [frontier review](../../reports/astra-review-20261124/FRONTIER_REVIEW.md) distinguishes the latest source claims and their first unsupported global steps. Internal [proof reconstruction](../../reports/astra-review-20261124/INDEPENDENT_REVIEW.md), the [merger extension review](../../reports/astra-review-20261124/MERGER_ADDENDUM_REVIEW.md), and late PR192–195 comparison notes retain their exact source boundaries. No external referee acceptance is claimed.
