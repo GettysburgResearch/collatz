@@ -1,0 +1,26 @@
+{
+  "status": "PROPOSED",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "python": {
+    "commands": [
+      "python /tmp/collatz_stationary_check.py",
+      "python -O /tmp/collatz_stationary_check.py"
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "identical_stdout": true,
+    "stdout": [
+      "Exact exponent inequalities: PASS (0.94 < critical; carry bound < 0.94)",
+      "Legal finite carry-word cases: 13362",
+      "Weak-composition count cases: 40"
+    ]
+  },
+  "lean": {
+    "compiled": false,
+    "reason": "lean/lake absent; network DNS unavailable",
+    "candidate": "CarryBudget.lean"
+  },
+  "full_checkout_validated": false
+}
