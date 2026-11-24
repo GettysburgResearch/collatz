@@ -1,0 +1,74 @@
+{
+  "schema": "collatz-central-closure-replay/v1",
+  "started_utc": "2026-11-24T06:34:30.894987+00:00",
+  "scope": "one finite Lean source, ten named declaration audits; not Collatz",
+  "source": "research/central-closure-20261124/lean/ClosureDiagnostics.lean",
+  "source_sha256": "e2942fa345853c5d0c735c2176b0ef91776c906b889597d52dcc5dc2928a4c80",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "success": true,
+  "argv": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "ClosureDiagnostics.olean",
+    "ClosureDiagnostics.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'CentralClosure.inverse_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.fixed_type_debit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.refill_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.refill_run_parities' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.source_reservoir_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.destination_reservoir_factor' depends on axioms: [propext]\n'CentralClosure.increasing_refill' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.concrete_refill' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.positive_weights_increase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CentralClosure.restricted_tree_transfer_counterexample' does not depend on any axioms\n",
+  "stderr": "",
+  "audits": {
+    "inverse_difference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "fixed_type_debit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "refill_family": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "refill_run_parities": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "source_reservoir_five": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "destination_reservoir_factor": [
+      "propext"
+    ],
+    "increasing_refill": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "concrete_refill": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "positive_weights_increase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "restricted_tree_transfer_counterexample": []
+  },
+  "unexpected_axioms": [],
+  "missing_audits": [],
+  "extra_audits": [],
+  "olean_sha256": "b988c57b00b5910657db8828c498219a06922c3cde2fdfd9f928d7bf60ed9cc1",
+  "finished_utc": "2026-11-24T06:34:35.910149+00:00"
+}
