@@ -100,7 +100,25 @@ Then \(U\equiv2\pmod9\), \(U\) is good, and its failed child \(9U+2\) has the ea
 
 This identifies a failed parent on the surviving branch and improves its canonical-source size window from the earlier factor below 171 to 3 **on this branch**. It does not prove that branch empty. The conditions \(h\ge3\), \(m\ge3\), and the surviving exit parity are essential.
 
-## 4. Latest-source connection
+## 4. A second-run descent inside the surviving branch
+
+A further actual-basin theorem goes beyond the first exit. Suppose the first odd run of \(n=3q\) has length \(1\le m\le3\), and its exit survives: \(r=3^m a\equiv3\pmod4\). Put
+
+\[
+ U=(3^{m-1}a-1)/4,\qquad y=T^{m+1}(3q)=(r-1)/2=6U+1.
+\]
+
+Now \(0<U<q\). Indeed the required inequality is \((4\cdot2^m-3^m)a>1\), with coefficients 5, 7 and 5 for the three possible lengths. Thus \(3U\) is a smaller good multiple of three, even if \(U\) is even. Factor the actual next odd state as \(y+1=2^\ell b\) with \(b\) odd. If the second exit has \(3^\ell b\equiv1\pmod4\), then
+
+\[
+ T^{m+\ell+3}(3q)=T^{\ell+1}(3U)=(3^\ell b-1)/4.
+\]
+
+This is a contradiction to minimality. The second run length is unbounded across this excluded family; the result needs no assumption on \(v_3(3q)\). [SecondRun.lean](second/SecondRun.lean) proves the contradiction for the actual minimum of [MinimumFailure.lean](minimal/MinimumFailure.lean), not only for an unspecified invariant label.
+
+For \(m=3\), there are infinite ordinary progressions with any prescribed \(h=v_3(3q)\ge3\) and \(\ell\ge7\) to which this new reduction applies, while the earlier first-exit residue 147 and all four fixed source rows do not apply. The two exact CRT conditions and their parity guards are in the [second-run proof](second/README.md). A small example is \(q=1485\): its triple 4455 and the smaller triple 3759 meet at 14276 after 11 and 6 steps. The second-exit residue 3 modulo 4 still has no universal reduction here. When \(m\ge4\), the size inequality for this particular \(U\) fails.
+
+## 5. Latest-source connection
 
 The current pinned developments in PR193, PR195, PR197 and PR201 were considered against this same source minimum; [SOURCES.md](SOURCES.md) records their exact versions and the claims used. The late PR201 update supplies an elementary exponential inverse family at exact shortcut clock \(2b\), without the earlier analytic floor. Its opposing upper estimate remains open.
 
@@ -113,10 +131,10 @@ That inverse family does not automatically provide descent. On any exact \((b,2b
 
 Here every bad odd input is at least 5, since 1 and 3 converge. Under the present minimum, \(v>q\); for \(b\ge5\), these sources exceed \(3q\). Counting many such sources therefore does not give the required smaller bad multiple. A source-preserving result on a genuinely contracting grade, or a different ordinary descent, is still needed.
 
-## 5. Exact remaining closing obligation
+## 6. Exact remaining closing obligation
 
 The new minimum is now available as a proved premise. What is missing is a proof that **every** such \(q\) admits an ordinary contradiction: for example, that the component of \(3q\) reaches the guaranteed good interval, contains a positive multiple of three below \(3q\), or yields a smaller odd discordance. The listed families supply these conclusions on their precise domains. They do not establish the universal quantifier.
 
-In particular, the surviving canonical branch above still permits \(B(U)=3q\), with both neighboring integers good, without a constructed smaller bad representative. Sources outside that branch's valuation hypotheses also need their own reduction. No count of changing lifts, finite experiment, or conditional tripling comparison is used to assert otherwise.
+In particular, after the second-run exclusions the remaining canonical branch can still have \(B(U)=3q\), with both neighboring integers good, without a constructed smaller bad representative. Sources outside that branch's valuation hypotheses also need their own reduction. No count of changing lifts, finite experiment, or conditional tripling comparison is used to assert otherwise.
 
 The Lean modules prove the stated finite and inductive results; the asymptotic progression consequences and canonical-source assembly retain their written-proof boundary. [Verification and independent reviews](../../reports/astra-minimum-source-20261124/VERIFICATION.md) record exact compiler executions, axiom audits, finite controls, and clean-checkout validation. A successful repository validator checks integrity, not the missing universal theorem.

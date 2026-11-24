@@ -34,6 +34,12 @@ On the other side, h≥3 and m≥3 give U=(3^(m-1)a-1)/4. The residue makes this
 
 The renewal lane's complementary row has s=147+256t. Literal paths from s-1 and 9s-1 meet at 47+81t after eight steps, with four and two odd inputs. For the actual factorization at depth m≥2, (3q-3)/4 reaches s-1 and is positive and below q on the specified class. This is a true-exit test at an unbounded clock. Neither this row nor the first parity test covers every possible exit.
 
+## Further second-run proof
+
+The final fresh lane supplied a positive reduction inside the remaining first-exit branch. I independently checked its arithmetic, its actual clocks, the CRT existence argument, and the imported actual-basin hypotheses. When m is 1,2,3, the parent U=(3^(m-1)a-1)/4 has 0<U<q; the inequality reduces to (4·2^m-3^m)a>1, whose coefficient is respectively 5,7,5. It is essential that the formal minimum covers every smaller multiple of three, since U need not be odd. The known good integer is 3U, while the bad next odd state is y=6U+1. If y+1=2^ell b and 3^ell b=1 mod4, the adjacent endpoint merger gives exact clocks m+ell+3 and ell+1 from 3q and 3U.
+
+I independently replayed q=1485: n=4455, m=3, a=557, h=4, U=1253, y=7519, ell=5, b=235. Both actual paths reach 14276. I also constructed and replayed fifteen CRT combinations with ell=7,8,9,12,17 and h=3,4,8. Each has the exact two valuations and s=3a=199 mod256, rather than the earlier class 147. The congruences have coprime moduli; extending their one positive solution gives infinitely many ordinary inputs with the same guards. The actual-basin Lean theorem itself requires no unproved CRT assumption. The family construction remains a written argument. The opposite second-exit residue and m≥4 are not discharged.
+
 ## Latest PR201 and the missing inequality
 
 I read the new exact-row argument at PR201 `2978d84f8a1fda9083593b26c6bf724d5976d859`, `escape-analysis/README.md`, including its actual suffix and two-gap correction. Its exponential family has total shortcut clock 2b. On any such path in a bad component, telescoping gives x=v·4^b/∏(3+1/y_i). All bad odd inputs satisfy y_i≥5, so x≥v(5/4)^b. Our minimum gives v>q. At b≥5 these sources are larger than 3q. Thus neither the multiplicity nor relaxing the source residue to 0 mod3 creates a smaller bad root on that row. I do not infer an opposing estimate for PR201's maximum from this observation.
