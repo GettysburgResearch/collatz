@@ -111,11 +111,14 @@ injective positive ordinary odd orbit satisfies
 
     limsup_{m->infty} [-log Col_m(mu)/(m log 3)] < theta.
 
-The strict gap need not be uniform over stationary laws. For example,
-iid concatenated blocks chosen uniformly from increasingly large
-constant-composition classes, with an independent uniform block offset,
-can have collision-entropy rates approaching the Shannon bound. Do not
-turn S1 into a uniform exponent improvement for all finite clocks.
+This proof gives no uniform gap over stationary laws. At the level of
+word laws, stationary processes made from independent uniform
+constant-composition blocks of fixed length and a uniform block offset
+can have collision-entropy rates approaching the Shannon bound as that
+block length increases. This observation does not exclude a stronger
+uniform gap for their ternary projections; that would require a separate
+argument. Do not turn S1 into a uniform exponent improvement for all
+finite clocks.
 
 ### 1.3 Exact connection to PR185
 
