@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Executed exact BigInt bounded controls; no verification of the renewal floor, infinite arguments, Lean or full checkout",
+  "counts": {
+    "forward_candidates": 2210,
+    "inverse_words": 222,
+    "matched_rows": 222,
+    "simple_rows": 212,
+    "repeated_rows": 10,
+    "suffix_carry_checks": 1541,
+    "gate_checks": 142,
+    "terminal_list_bounds": 40,
+    "finite_climb_moving_windows": 112,
+    "cycle_residual_checks": 36,
+    "superdiffusive_shell_arithmetic": 5
+  }
+}
