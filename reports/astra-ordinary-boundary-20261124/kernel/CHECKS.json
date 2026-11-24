@@ -1,0 +1,154 @@
+{
+  "schema": "collatz-astra-ordinary-boundary/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "All public theorems in the three new Std-only modules; bounded exact ordinary controls. External analytic results and written infinite proofs are not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "arithmetic/MaskDenominator.lean",
+      "sha256": "1bee802b513987bc69bce531b7b9da74c212d9474c451c5c152887e60418c9b4",
+      "audited_copy_sha256": "634e8bd05edf7cda601c6e42ab938a44d3d7dc35704f9e122897fbf10a88e119",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/ordinary-audit/MaskDenominator.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.681,
+      "public_theorems": [
+        "MaskDenominator.mask_carry",
+        "MaskDenominator.torsion_factor",
+        "MaskDenominator.prefix_difference",
+        "MaskDenominator.geometric_difference",
+        "MaskDenominator.block_split"
+      ],
+      "axioms": {
+        "MaskDenominator.mask_carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MaskDenominator.torsion_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MaskDenominator.prefix_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MaskDenominator.geometric_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MaskDenominator.block_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "transfer/TraceClocks.lean",
+      "sha256": "ceb6f4eb020b607172edc099582373c623a8214898060934a4ee92b47a227cf5",
+      "audited_copy_sha256": "7f0cc1051176a3c5262a90a2470631a6952f6bf2b6160c98fd4d7410faea3543",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/ordinary-audit/TraceClocks.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.572,
+      "public_theorems": [
+        "Collatz.TraceClocks.prefix_meets_trace_iff",
+        "Collatz.TraceClocks.slow_at_shortcut_clock",
+        "Collatz.TraceClocks.odd_hit_has_shortcut_clock"
+      ],
+      "axioms": {
+        "Collatz.TraceClocks.prefix_meets_trace_iff": [
+          "propext"
+        ],
+        "Collatz.TraceClocks.slow_at_shortcut_clock": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TraceClocks.odd_hit_has_shortcut_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "spectral/TraceKernel.lean",
+      "sha256": "7d7de7eb786fb7e6578a77c4815f7fb40f10d5ca7aa578b8d7425d6be2ef096e",
+      "audited_copy_sha256": "cefa3b49fd6f07ba99e3a066ce20f15718c08d2780c73a7571a55f41faa970b7",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/ordinary-audit/TraceKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.68,
+      "public_theorems": [
+        "Collatz.TraceKernel.row",
+        "Collatz.TraceKernel.height",
+        "Collatz.TraceKernel.suffix_difference"
+      ],
+      "axioms": {
+        "Collatz.TraceKernel.row": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TraceKernel.height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TraceKernel.suffix_difference": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "9dca509ec40c26606f0c5d0c0349c6250d5e45f4c8f4f59e88f4e472bebda8d4",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-ordinary-boundary-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "coprime composite-modulus controls: 2307; torsion masks: 443\nblock selectors: 2026; with inactive nontrivial frequencies: 468\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "9dca509ec40c26606f0c5d0c0349c6250d5e45f4c8f4f59e88f4e472bebda8d4",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-ordinary-boundary-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "coprime composite-modulus controls: 2307; torsion masks: 443\nblock selectors: 2026; with inactive nontrivial frequencies: 468\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

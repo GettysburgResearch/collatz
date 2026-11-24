@@ -1,0 +1,154 @@
+{
+  "schema": "collatz-astra-ordinary-boundary-sources/v1",
+  "date": "2026-11-24",
+  "base_commit": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+  "base_tree": "240ead83da59c6756ec739ec8cf2da3d3791bec2",
+  "inventory_scope": "Refreshed open-PR metadata; only stated dependencies in the written proofs are used. Prior work was not rebuilt.",
+  "frozen_frontier": [
+    {
+      "number": 193,
+      "title": "Collatz: global unit-equation bounds, actual first passage, and Lean checkpoints",
+      "head": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "updated_at": "2026-11-24T08:33:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "branch": "research/astra-universal-descent-20261124"
+    },
+    {
+      "number": 197,
+      "title": "Collatz: triple first-fusion moments and joint landing weights",
+      "head": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "updated_at": "2026-11-24T08:32:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197",
+      "branch": "research/ayh-resource-reset-20261124"
+    },
+    {
+      "number": 195,
+      "title": "Collatz: two-light descent, divisor source counts, and cycle transport",
+      "head": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "updated_at": "2026-11-24T08:26:25Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "branch": "research/astra-global-closure-20261124"
+    },
+    {
+      "number": 192,
+      "title": "Collatz: ordinary carry-class bounds and fixed-source closure audit",
+      "head": "5720732b9c83361f5cded4f8bfac24e36f469937",
+      "updated_at": "2026-11-24T08:19:37Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "branch": "research/astra-central-closure-20261124"
+    },
+    {
+      "number": 182,
+      "title": "Collatz: Lean ordinary-series criterion and multiscale closure attempts",
+      "head": "a30402b7849c437edf245974d9f436d1f105e08e",
+      "updated_at": "2026-11-24T08:17:07Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "branch": "research/dyadic-band-descent-20261121"
+    },
+    {
+      "number": 201,
+      "title": "Collatz: killed Green occupation removes the balanced head-obstruction branch",
+      "head": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "updated_at": "2026-11-24T07:57:35Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "branch": "gpt62/killed-green-head-closure-20261124"
+    },
+    {
+      "number": 200,
+      "title": "Regularity rigidity: macroscopic ancestor blocks, all-base automaticity obstruction, and 1/9 five-return pressure",
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "updated_at": "2026-11-24T07:14:58Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "branch": "research/gpt62-regularity-rigidity-20261124"
+    },
+    {
+      "number": 199,
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "updated_at": "2026-11-24T07:10:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199",
+      "branch": "research/optimal-critical-ancestors-20261124"
+    },
+    {
+      "number": 188,
+      "title": "Collatz: Lean persistent descent, all-rotation cycle bounds, and residue rigidity",
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "updated_at": "2026-11-24T06:48:33Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/188",
+      "branch": "research/scalar-carry-cocycle-20261124"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146",
+      "branch": "research/upper-bit-merger-cost-20261120"
+    }
+  ],
+  "primary_sources": [
+    {
+      "key": "corvaja_zannier",
+      "url": "https://arxiv.org/pdf/math/0311030",
+      "version": "arXiv:math/0311030v2, 22 April 2004",
+      "locations": "Proposition 2 (2.8), proof and displayed Ridout estimate",
+      "use": "All bounded-degree full-divisor cancellation; exceptional subgroups through identity explicitly excluded."
+    },
+    {
+      "key": "weaver12",
+      "url": "https://rstation.ai/problems/collatz/papers/12/v1",
+      "version": "v1",
+      "locations": "Section 1 Input C, Section 6 (15), first-landing and predecessor statements as cited",
+      "use": "Relative duration-mark transfer, fixed-floor densities and named positivity inputs; no external Lean rebuild."
+    },
+    {
+      "key": "weaver13",
+      "url": "https://rstation.ai/problems/collatz/papers/13/v1",
+      "version": "v1",
+      "locations": "Uniform pair bound (1), Proposition 1; (21) retained as PR197's input",
+      "use": "Relative individual odd-residue and whole ordinary future comparison."
+    },
+    {
+      "key": "shaik_clock",
+      "url": "https://hexagonmath.org/pdf/2610.00523v1",
+      "version": "Hexagon v1, 26 October 2026 landing metadata",
+      "locations": "Theorems I.1 and I.2, PDF page 2",
+      "use": "Positive density of timed visits to a fixed ternary-unit target; ordinary clock converted exactly."
+    },
+    {
+      "key": "orbit_sparsity",
+      "url": "https://rstation.ai/problems/collatz/papers/19/v2",
+      "version": "v2",
+      "locations": "Section 9 (B1), attributed to Leen as written there",
+      "use": "Uniform source-independent ordinary orbit-set sparsity; exact dependence retained."
+    },
+    {
+      "key": "binary_cylinders",
+      "url": "https://rstation.ai/problems/collatz/papers/18",
+      "version": "Version displayed on source page",
+      "locations": "Appendix B",
+      "use": "Prior binary-cell to odd-progression method credited; no priority claim for that mechanism."
+    },
+    {
+      "key": "leen_minimum",
+      "url": "https://doi.org/10.5281/zenodo.23269488",
+      "version": "Brownian motion in Collatz orbits, v2",
+      "locations": "Existing minimum and single-orbit clock laws, as cited",
+      "use": "Prior-work credit; the new meeting proof displays its own marked-duration deduction."
+    },
+    {
+      "key": "brofferio",
+      "url": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "locations": "Theorem 5.1",
+      "use": "Considered boundary architecture, not an imported ordinary-orbit conclusion."
+    },
+    {
+      "key": "assani",
+      "url": "https://arxiv.org/pdf/2208.11675",
+      "version": "v3, 13 December 2023",
+      "locations": "Theorems 4.1 and 4.2",
+      "use": "Considered power-bounded-measure route; no such global construction claimed."
+    }
+  ],
+  "evidence_scope": "Eleven finite Std-only Lean declarations plus written proofs with independent reviews. No external theorem or previous packet was recompiled."
+}
