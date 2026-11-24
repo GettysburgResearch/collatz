@@ -1,0 +1,18 @@
+{
+  "compiler": "Lean 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52",
+  "declaration": "CollatzQuantitativeReturn.bounded_return",
+  "command": "lean -DwarningAsError=true -DautoImplicit=false -j1 -o QuantitativeReturn.olean QuantitativeReturn.lean",
+  "exit_code": 0,
+  "wall_seconds": 335.537,
+  "compiler_stdout": "'CollatzQuantitativeReturn.bounded_return' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "import_type_smoke_check_exit_code": 0,
+  "sha256": {
+    "QuantitativeReturn.lean": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+    "replay_quantitative_tables.py": "ce906efcd26836fbbc1979577cfe84499220cd2e7ddf4ed12de3b11e0e8d09d6",
+    "QUANTITATIVE_RETURN_REPLAY.md": "a602fb59751c38e207ed2fdb83c4fd66b2807550e7f53089a1a24bc986d0055d",
+    "TwoOddCertificate.lean": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda",
+    "DirectedEleven.lean": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+    "UnitResidueExchange.lean": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+    "NonunitExit.lean": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0"
+  }
+}

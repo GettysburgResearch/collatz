@@ -1,5 +1,7 @@
 # Execution and independent review record
 
+The [latest closing-proposal record](closing-proposal/README.md) preserves the fresh 17-module mathematical build and 100-declaration axiom audit, normal/optimized finite replays, independent whole-bank ordinary replay, frozen review boundaries and the 143-open-PR metadata intake. The final Lean assembly retains its open higher-rank premise.
+
 The [latest directed-return checkpoint](directed-return/README.md) records the full pointwise directed localization and reverse-17 ordinary Collatz equivalence, a fresh 82-declaration audit including exact dependencies, two independent normal/optimized finite replay pairs, and independent reviews of the original-source return, width and color arguments. The [previous unit-escape checkpoint](unit-exit/README.md) retains its four-module/15-theorem build and two finite pressure certificates. The [preceding crossing checkpoint](crossing-step/README.md) preserves its separate four-module build and rebuilt PR 193 global certificate. The [earlier two-class checkpoint](two-class-descent/README.md) retains its six-module build and analytic scope.
 
 The [third checkpoint's evidence](continuation/README.md) records the fresh seven-module continuation, its 20 new public theorem audits, four pairs of exact finite replays, and independent mathematical reviews. Earlier execution events below retain their original scopes and commit identities.

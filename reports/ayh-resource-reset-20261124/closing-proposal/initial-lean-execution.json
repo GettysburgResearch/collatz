@@ -1,0 +1,40 @@
+{
+  "schema": "collatz-lean-execution/v1",
+  "started_utc": "2026-11-24T18:21:32.505152+00:00",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "argv": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_lean.sh"
+  ],
+  "fresh_repository_objects": true,
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "sources": {
+    "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+    "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+    "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+    "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+    "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+    "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37",
+    "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean": "3175f6206aa7567d23952ca68a36cd6da9c43dcc7afca1e78313551b1c653379",
+    "research/ayh-resource-reset-20261124/closing-proposal/FiniteHorizon.lean": "e7d20e71da1d191e39ac144e1c7442f281c86a104c5500b7a015978d82676d13",
+    "research/ayh-resource-reset-20261124/closing-proposal/LocalResampling.lean": "15cc801d0092092b86eaaff4ecdff79d98958c803932eda7023e475028ab2562",
+    "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a",
+    "research/ayh-resource-reset-20261124/closing-proposal/MersenneFirstBad.lean": "7e51a184e32072fe418bcf55bf7ad2b8ec594af67f624a0c8893bc916d3fee9e",
+    "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8",
+    "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnKernel.lean": "abe786fecd337c31cf1632986d173b45e360a9a1aa21fea7b523e817db182134",
+    "research/ayh-resource-reset-20261124/closing-proposal/OppositeArm.lean": "6578fe87b6ff8cfa70c229a5ea7e5bbece6dd773c98dd593e50c67454ff075f1",
+    "research/ayh-resource-reset-20261124/closing-proposal/PublicAudit.lean": "77c5a4eda6e9df13f518f0245cfa842193aa6efd573b6a13b5719ef06bdf896d",
+    "research/ayh-resource-reset-20261124/closing-proposal/RankThreeFamily.lean": "c43064465874dffc3b299dfd35d7bf3bd0769627606e47e0c906a0cbb1ec1b7e",
+    "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda"
+  },
+  "scope": "Exact local modules and public axiom audit; HigherRankProgress is an unproved explicit argument.",
+  "exit_code": 0,
+  "seconds": 157.758,
+  "finished_utc": "2026-11-24T18:24:10.265998+00:00",
+  "log_sha256": "736f85562e32d014e7119fa8e5b8c263a024f9025073ff813ff120312d09216b"
+}

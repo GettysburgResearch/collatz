@@ -1,0 +1,154 @@
+{
+  "schema": "collatz-qualified-source-ledger/v1",
+  "baseline": {
+    "pr": 197,
+    "head": "7ad81ec56947146fac854d2586651ca0c934a536",
+    "tree": "4c36c3578e23b103d30852e26ef6b1da5b4c5c7c",
+    "scope": "Complete source checkout; earlier reports retain their own frozen review and execution boundaries."
+  },
+  "inventory": "../../../reports/ayh-resource-reset-20261124/closing-proposal/OPEN_PR_INTAKE.json",
+  "scope": "Focused claim-level reads and comparisons. Metadata inventory is not an audit of every PR. Later heads are not covered by an earlier source review.",
+  "sources": [
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "claims": [
+        "directed comparison descent",
+        "Mersenne and shifted-power rank obstructions"
+      ],
+      "git_blob": "a5b56da6e23c2efd0c71d670ac3e275fd7f94567",
+      "evidence": "Byte-frozen vendor freshly rebuilt; 26-word numerical height separately replayed and independently reconstructed. PR146 neighboring Mersenne results are credited, not re-audited in full.",
+      "vendored_at_commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+      "vendored_path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/README.md",
+      "claim": "Literature field guide and missing transfer interfaces",
+      "evidence": "Overview and PR description read; external theorems keep their own scope."
+    },
+    {
+      "pr": 192,
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "claim": "Minimum-disagreement and actual descent interfaces",
+      "evidence": "Focused source comparison in parallel agent work, not a new whole-branch audit."
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "claim": "Repeated ordinary component descent and prescribed-pair interfaces",
+      "evidence": "Focused comparison; previously vendored dependencies retain earlier source pins."
+    },
+    {
+      "pr": 195,
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "claim": "Paired families and subcell descent",
+      "evidence": "Focused comparison, no import of an unrestricted smaller witness."
+    },
+    {
+      "pr": 200,
+      "commit": "9fc000d840f365340539e426c9beb05a34edbd82",
+      "claim": "Pointwise rigidity, least multiple and inverse obstruction interfaces",
+      "evidence": "Earlier focused parallel-agent read. Later head 81ea4c1754d73c98d1451447527e6b2ba56977cc is metadata-only in this pass."
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/README.md",
+      "claim": "Directed scheduled-head transfer and suffix-57 conditional divergence",
+      "evidence": "Pinned prior comparison plus local-resampling consumer. M remains source-qualified; no new kernel import."
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "claim": "Fixed-target depth-bank renewal input",
+      "evidence": "Qualified interface comparison; the external renewal proof was not independently rebuilt."
+    },
+    {
+      "pr": 204,
+      "commit": "5d4698b692ec102b44cf77a59930a2a80b4104fd",
+      "path": "research/astra-joint-closure-20261124/pressure/WEIGHTED_POINTWISE_ROWS.md",
+      "git_blob": "db1d7a9d70d1bb0cec5d77030b24f9898792f1ff",
+      "claim": "Supplied-target ratio-five paired count at exponent one fifth",
+      "evidence": "Complete manuscript read; joint law and central-balance restrictions retained."
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/README.md",
+      "git_blob": "6f6367a51770ad4830b5fd7c35e503dfadbc28e3",
+      "claim": "Ordinary least-source excursion and inverse-law barrier",
+      "evidence": "Complete overview read and compared against gate transport."
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+      "git_blob": "90aea2475ec8a791f460efc248a7935cb28e65bc",
+      "claim": "Height strip and cycle alternative",
+      "evidence": "Complete manuscript read; its alternative is not discarded."
+    },
+    {
+      "pr": 206,
+      "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+      "path": "research/clock-itineraries/README.md",
+      "git_blob": "47bb23e424f14c074f064b3aaaf69a1fe549936b",
+      "claim": "Exact-clock prefix itineraries and sparse-gap constraints",
+      "evidence": "Complete overview and SparseDefects source read. The common ordinary suffix remains relevant."
+    },
+    {
+      "pr": 206,
+      "commit": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/Proposal.md",
+      "git_blob": "0c40720288643824d8349afce66e6569fc7356a1",
+      "claim": "Later forward-clock and finite cycle-test equivalence",
+      "evidence": "Late proposal read at this exact head; its two conditions are explicitly open. Companion Lean was not rebuilt here."
+    },
+    {
+      "pr": 207,
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/README.md",
+      "git_blob": "39317a73963712c014f42ad09e336c60e7020d8b",
+      "claim": "Conditional aggregate criterion and diffusive localization",
+      "evidence": "Publisher read plus independent focused comparison. F and P remain source-qualified; no source imported into Lean build."
+    },
+    {
+      "pr": 207,
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md",
+      "git_blob": "20873f1181ac90862381f60c06d70c45e4b25981",
+      "claim": "Fixed-terminal shell and nontrivial-cycle clock mismatch",
+      "evidence": "Parallel agent reconstructed compatible upper/lower ranges. Its companion Lean is marked uncompiled at this head."
+    }
+  ],
+  "primary_literature": [
+    {
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "role": "Original mixed-base rewriting and exact termination viewpoint; no imported theorem in this new Lean build."
+    },
+    {
+      "title": "On sums of S-units and linear recurrences",
+      "author": "Jan-Hendrik Evertse",
+      "year": 1984,
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "role": "Primary literature check for the sparse-gap route; no claim of independently checking the full paper or formalizing it."
+    }
+  ],
+  "lean_environment": {
+    "lean": "4.34.1",
+    "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_quantitative_kernel": {
+    "module": "QuantitativeReturn.lean",
+    "declaration": "CollatzQuantitativeReturn.bounded_return",
+    "scope": "Unconditional ordinary bounded return; independently checked original-row localization and 26-leaf descent. No analytic input."
+  }
+}
