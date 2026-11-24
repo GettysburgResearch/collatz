@@ -1,0 +1,7 @@
+'Collatz.FixedWord.physical_affine' depends on axioms: [propext]
+'Collatz.FixedWord.physical_gcd' depends on axioms: [propext, Quot.sound]
+'Collatz.FixedWord.adjacent_carry' depends on axioms: [propext]
+'Collatz.FixedWord.physical_size' depends on axioms: [propext, Quot.sound]
+'Collatz.FixedWord.floor_carry' depends on axioms: [propext, Quot.sound]
+'Collatz.FixedWord.covered_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FixedWord.floor_product' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,30 @@
+{
+  "source_checks": {
+    "2": {
+      "odd_sources": 8000,
+      "sources_with_a_covered_row": 7,
+      "distinct_word_row_divisor_certificates": 8
+    },
+    "3": {
+      "odd_sources": 8000,
+      "sources_with_a_covered_row": 39,
+      "distinct_word_row_divisor_certificates": 47
+    },
+    "4": {
+      "odd_sources": 8000,
+      "sources_with_a_covered_row": 123,
+      "distinct_word_row_divisor_certificates": 161
+    },
+    "5": {
+      "odd_sources": 8000,
+      "sources_with_a_covered_row": 284,
+      "distinct_word_row_divisor_certificates": 412
+    },
+    "8": {
+      "odd_sources": 8000,
+      "sources_with_a_covered_row": 1361,
+      "distinct_word_row_divisor_certificates": 2551
+    }
+  },
+  "fixed_word_target_pairs": 360
+}

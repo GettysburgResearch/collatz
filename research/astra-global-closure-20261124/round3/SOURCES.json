@@ -1,0 +1,141 @@
+{
+  "status": "Frozen source interfaces; not blanket approval of these pull requests.",
+  "repository": "GettysburgResearch/collatz",
+  "sources": [
+    {
+      "pr": 182,
+      "head": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/INTEGRALITY.md",
+      "sha256": "7eb15bd9220540cf8c7cd1d4fde8363f86eefcd74d38ebe88348be40e2be4f33",
+      "scope": "Cycle lane comparison"
+    },
+    {
+      "pr": 188,
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "path": "research/astra-global-step-20261124/SHIFT_DISTANCE.md",
+      "sha256": "03e86a2c6ff653bf207c6d1ab4346b657d1b0e8d9b351fcf4f4d51c985672093",
+      "scope": "Intrinsic full-denominator shift inequality used by cycle proof"
+    },
+    {
+      "pr": 188,
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "path": "research/astra-global-step-20261124/PERSISTENT_DESCENT.md",
+      "sha256": "f1444754c0381b1fbd03446aab6955549fffc7579ef6f36872dc13e1afe2e2cb",
+      "scope": "Earlier persistent singleton/doublet language; comparison only"
+    },
+    {
+      "pr": 192,
+      "head": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "path": "research/astra-high-variance-20261124/DESCENT_ALL_HEADERS.md",
+      "sha256": "0e540711722bd47b67781c53abb74cfd9599f7b557e1533fdf09a9819184a770",
+      "scope": "Descent lane comparison"
+    },
+    {
+      "pr": 192,
+      "head": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "path": "research/astra-high-variance-20261124/CENTRAL_RETURN.md",
+      "sha256": "af62b0ea0639bf5f87ef107a3a2ab3276fd1c49605275c74ddbd45aff5e37179",
+      "scope": "Universal affine-controller boundary"
+    },
+    {
+      "pr": 193,
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-global-synthesis-20261124/merger/mixed.md",
+      "sha256": "156eb0ce487d1c95a208d6d74e196e7a96b89e554aca6d3c96abba89d704d3aa",
+      "scope": "Predecessor of the 183 comparison with three intervening lights"
+    },
+    {
+      "pr": 193,
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-global-synthesis-20261124/section/DISTINCT_COMPONENTS.md",
+      "sha256": "7d215cfb78cdca8f851d3e401993bc1e6a09aaa7e62f153abd5272bdf10e0b53",
+      "scope": "Corrected-height component separation; reviewed interface"
+    },
+    {
+      "pr": 193,
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-heavy-machinery-20261124/ergodic/HEAD_DIAGONAL.md",
+      "sha256": "2b8b7f8337cbbbea9a7c4d08a1a7f171a07023d48bbefba0a60010b75420d385",
+      "scope": "Literal paired first-passage diagonal; reviewed interface"
+    },
+    {
+      "pr": 197,
+      "head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "path": "research/ayh-resource-reset-20261124/literature-step/README.md",
+      "sha256": "cdc57a3f01167919861ed7c937bd7b4c95855abfa0f6ab2131bd24fd74ae88b4",
+      "scope": "Current first-passage and source-transfer summary"
+    },
+    {
+      "pr": 197,
+      "head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "path": "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md",
+      "sha256": "4919e55ab057d328b336423ae434a8b57bf40ebacd584512512cf66b62ecf23a",
+      "scope": "Actual independent-source closing law; reviewed interface"
+    },
+    {
+      "pr": 199,
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "path": "research/optimal-critical-ancestors-20261124/README.md",
+      "sha256": "c5564da5d847048bee14f59a72ab71c4994ecdfa6e83944b9fc9b14b3da97fe4",
+      "scope": "Theorem A used conditionally for fixed-target critical counts"
+    },
+    {
+      "pr": 199,
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "path": "research/optimal-critical-ancestors-20261124/FIRST_PASSAGE.md",
+      "sha256": "819ec1fa4c795d4cee34426d578573a8bf42ca36697256584c008bfe884f5f93",
+      "scope": "Joint finite-root law and distinction from marginal hitting"
+    },
+    {
+      "pr": 200,
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "path": "research/regularity-rigidity-20261124/README.md",
+      "sha256": "b7079c8603be732e65282bef6f567291ed9f48972fbdcc1ad3e0adba61e075ae",
+      "scope": "Current regularity frontier"
+    },
+    {
+      "pr": 200,
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "path": "research/regularity-rigidity-20261124/AUTOMATA.md",
+      "sha256": "4eb0975c2efc2df84b510bf3f9ac4e2a13a6a9914839a161ba4caa07559c4732",
+      "scope": "Automatic approximation closing criterion; comparison"
+    },
+    {
+      "pr": 200,
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "path": "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+      "sha256": "89d0a72940bce925d982bc21d77a1ae9539fe87c80d055b031c565dd807ae716",
+      "scope": "First-return pressure and harmonic endpoint; comparison"
+    }
+  ],
+  "external_sources": [
+    {
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "scope": "Public exact fixed-target density statement inspected; external build not reproduced."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/137/v1",
+      "scope": "Prior valuation criterion and affine gcd identity credited."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/138/v1",
+      "scope": "Prior stronger whole-prefix rank and prime-pool results credited."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/144/v1",
+      "scope": "Prior local Sidon and multiplicative expansion results credited."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/4",
+      "scope": "Prior Christoffel full-denominator and single-transposition results credited."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/84",
+      "scope": "Prior finite Sturmian approximation and prefix perturbation results credited."
+    },
+    {
+      "url": "https://arxiv.org/pdf/math/0512006",
+      "scope": "Lagarias Lemma 2.2 supplies the two-logarithm bound; imported theorem, not a new local formalization."
+    }
+  ]
+}
