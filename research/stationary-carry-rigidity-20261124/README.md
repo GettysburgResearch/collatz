@@ -330,3 +330,8 @@ claimed.
   Mathlib checkout.
 - Full repository checkout/validate not performed; the connector supplies
   source reads and Git objects, not a local complete checkout.
+
+
+## Continuation: finite-window canonical entropy and PR188
+
+See [FINITE_PHASE_ENTROPY.md](FINITE_PHASE_ENTROPY.md) for the extension beyond rational phases and stationary limits. For the original actual gap-word law G and canonical phase-word law B, H(G) <= H(B) + (0.5415281905... log 3)m + O(R), with R explicit and bounded at square-root precision. Rational phases therefore give finite-window collision lower bounds at exponent 0.5415281905... and a necessary running-height exponent 1.8466259329... for escape. Combining with pinned PR188's canonical drawup inequality excludes escape when canonical word complexity is subexponential and drawup is O(N^eta) along an unbounded subsequence with eta < 0.8466259329.... These are proposed written deductions, not Lean-verified or unconditional convergence. PR187's actual-gap complexity condition is distinct from the canonical complexity condition here.
