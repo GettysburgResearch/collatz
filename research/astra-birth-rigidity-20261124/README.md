@@ -25,6 +25,16 @@ stated separately. These clocks have not been identified with one another.
 These identifiers refer to the corresponding statements in this packet; their
 source predecessors retain their own IDs and review boundaries.
 
+### Subsequent synthesis with PR192--193
+
+The [latest-source synthesis](LATEST_SOURCE_SYNTHESIS.md) records a further
+frozen-head review after the initial publication. It derives stronger
+same-orbit congruence separation, the full numerical denominator bound
+`21d >= 32^(g/s-1)` for ABR-5's mixed-prime family, and the exact guarded-visit
+constraint `64r >= 81n+49` for a least nonconverger n. These are written
+deductions; the Lean execution counts below are unchanged. PR192 independently
+overlaps the prime-power survival part of ABR-5 and is credited in the synthesis.
+
 ## Proofs
 
 - [Carry support, entropy, height, and phase-specific bounds](RUN_PARTITION.md)

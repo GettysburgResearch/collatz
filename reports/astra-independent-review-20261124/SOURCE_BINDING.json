@@ -1,6 +1,11 @@
 {
-  "scope": "Final research, review and execution-source bindings; excludes itself and the separate clean-checkout receipt to avoid a circular receipt chain",
+  "scope": "Final research, review and execution-source bindings. Excludes itself and CHECKOUT_VALIDATION.json to avoid a circular receipt chain. The retained initial published-head receipt is included.",
   "files": [
+    {
+      "path": "research/astra-birth-rigidity-20261124/LATEST_SOURCE_SYNTHESIS.md",
+      "bytes": 10281,
+      "sha256": "2a9b1ff7559e7ec1e5690d84cde4eca8b9346658819559cefd0bd477ae332712"
+    },
     {
       "path": "research/astra-birth-rigidity-20261124/MAHLER_EXTENSION.md",
       "bytes": 15491,
@@ -18,8 +23,8 @@
     },
     {
       "path": "research/astra-birth-rigidity-20261124/README.md",
-      "bytes": 8404,
-      "sha256": "c7338bffa41ee04a3aae4dd572d339422e202d309fa6dd38c1d28ca3e7323670"
+      "bytes": 8978,
+      "sha256": "c31ac8bbad649dceb0c75046b83404b2f3d2d11c7003cc9a57b04d06bbdfb2ca"
     },
     {
       "path": "research/astra-birth-rigidity-20261124/RUN_PARTITION.md",
@@ -117,6 +122,31 @@
       "sha256": "fa685a4d9cda2694b3fe7ce0c9b1d7f101e7f8b9e0386dab2e61c075296edffa"
     },
     {
+      "path": "reports/astra-independent-review-20261124/INITIAL_PUBLISHED_CHECKOUT_VALIDATION.json",
+      "bytes": 3261,
+      "sha256": "6ce978ea6b8baac9970932bcbdda0d26a1830f8b6df9df592d2a8e59d97043e4"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_CYCLE_REVIEW.md",
+      "bytes": 6149,
+      "sha256": "e47bfaca8de7f21b5347887f35768b5e426c3388a1943867ff21f750676dfe2b"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_ESCAPE_REVIEW.md",
+      "bytes": 9236,
+      "sha256": "20b87d8525119562046fce3e373d9237d56c929b59104bfc353435e2ec3d629a"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_FORMAL_REVIEW.md",
+      "bytes": 3422,
+      "sha256": "3b934b5f43e23c44310b3626b69680fa5ebffcfd8ecdf76b9dd9435fa4c29be2"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_SOURCE_HEADS.json",
+      "bytes": 1136,
+      "sha256": "11907aa99b55485aebae82234d7ec222cda8e495e6b95c606197651dde6af468"
+    },
+    {
       "path": "reports/astra-independent-review-20261124/LEAN_SOURCE_RECONSTRUCTION.json",
       "bytes": 514,
       "sha256": "b9c0d9d57be366218197fe2cef5565f471296ad963cf6e3702fb454924f8a67b"
@@ -125,6 +155,11 @@
       "path": "reports/astra-independent-review-20261124/MAHLER_CROSS_REVIEW.md",
       "bytes": 8511,
       "sha256": "cd1e1bede4609f6777168d50f6660e2d09f597aa75ae82367aa89542e7e1f3eb"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/MIXED_DENOMINATOR_RECONSTRUCTION.md",
+      "bytes": 3679,
+      "sha256": "5a4f33635073be1930f4ad90e2b752fe26cb39afdbd26d420938474b29ed6b43"
     },
     {
       "path": "reports/astra-independent-review-20261124/PR189_CHECKOUT_VALIDATION.json",
@@ -143,8 +178,8 @@
     },
     {
       "path": "reports/astra-independent-review-20261124/README.md",
-      "bytes": 8916,
-      "sha256": "9c9173b305a6c61ecf695c54cec084820416b022faba81c3c5777a17a65b2c65"
+      "bytes": 10692,
+      "sha256": "efbf236dab53f9b46543d3ef750352e83f04da48502d2d135e7198d3ea9961d2"
     },
     {
       "path": "reports/astra-independent-review-20261124/ROOT_RECONSTRUCTION.md",

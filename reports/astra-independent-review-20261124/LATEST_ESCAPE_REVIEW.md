@@ -1,0 +1,46 @@
+# Two late heads and a same-orbit separation consequence
+
+**Frozen sources.** PR192 at be783656f0e889fe0d5318a2f7a9140099cb94b5, research/astra-phase-and-cycle-20261124/PHASE_SEPARATION.md. PR193 at 52beff703fd3ce798c430e5af8199eb58d41bf93, research/astra-universal-descent-20261124/{escape.md,shadow.md,SHADOW_COVERAGE_LIMIT.md}. The entropy input is PR194 at 764f3a9f539febf3d2661a9ca4acc1b10827878c, research/astra-birth-rigidity-20261124/RUN_PARTITION.md, equations (4)–(5). The joint conclusion below is a proposed written corollary. No Lean check of these analytic statements was performed here.
+
+## Phase separation and finite words
+
+PR192 PS1–PS3 verify two different quantifier orders. For a run of $L$ canonical ones beginning at an actual odd state $q_j$, $2^{L+1}\le q_j+1$. At carry zero all actual gaps of the run are one and terminal oddness gives $2^{L+1}\mid q_j+1$. At positive carry $X_i=q_i/2^{c_i}\ge1$ contracts by at least a factor two until the first zero carry; applying the preceding divisibility to the rest proves the bound. A run of canonical threes instead satisfies $4\cdot8^L\le(5q_j-1)3^L$ by iterating $X_{i+1}-1/5\le(3/8)(X_i-1/5)$.
+
+For the actual centered phase $y_0=h_0-c_0-1/2$, this bounds approximation by the ternary grid for **every shift of the same source**, with lower-side exponent $\log_2 3$ and upper-side exponent $1+\log(3/2)/\log(8/3)$. This follows from $3^ny_0=D_n+y_n$ and $q_n+1\le(3/2)^n(q_0+1)$. The lower-side *local* exponent is sharp by changing the source to $2^k-1$. These estimates control runs of extreme digits. A periodic phase with intermediate digits or an aperiodic phase with bounded extreme runs is compatible with the stated run restrictions.
+
+PS4 has order **every finite word, some source**. A dyadic cylinder realizes the desired physical gap word followed by enough unit gaps to bring $h_m$ into $(1/2,3/2)$. Backward recurrence keeps all first $m+1$ scalar states in that strip, so the canonical word agrees with the physical word. PS5 obtains a different witness already in the basin of one, hitting one for the first time at odd clock $m+2$. Its two-step terminal family has constant raw scalar but varies through all residues modulo $3^m$: the parameter map permutes residues modulo three and preserves $v_3(t-u)$ on each residue class. One can therefore invert the prescribed prefix from an ordinary legal endpoint. The transient carries of PS5 are $2\cdot 3^i$ through time $m$, unlike PS4's zero carries. The result excludes a universally forbidden finite canonical word, even on the convergent basin. It gives no single ordinary source realizing an arbitrarily prescribed infinite schedule or supplying an opposing bound on canonical complexity.
+
+## Synchronization and smaller sources
+
+PR193 escape.md (1b) proves $O(L^\theta/\sqrt{\log(2L)})$, $\theta=0.949955527188\ldots$, uniformly over translated integer intervals of length $L$ and sets with pairwise distinct odd cores at every common future odd clock. Its finite-clock version bounds the number of *distinct* outputs of a whole interval by the same expression after $O((\log(2L))^2)$ common odd steps. Grouping the first $\lfloor\log_2 L\rfloor$ shortcut steps by their odd count $p$ makes the translated image width independent of the initial height: the left endpoint contains the factor $3^p M/2^k$, the width does not. Stirling bounds the high-$p$ classes, and, below a fixed offset from the critical $p$, the sum of the recursively counted image widths to the power $\theta$ contracts. On each such class the odd-core identity leaves the remaining synchronization clock available.
+
+Keeping the smallest input in each terminal fiber provides a smaller merging partner for every other input in the interval. The fiber minima remain. In shadow.md S1 a particular sufficient guard at each ternary height $h$ constructs an ordinary partner strictly smaller than $3^h u$ reaching its first endpoint. Its guard is one unit class, not every unit. S2–S5 identify lower limits on the required clock and odd count in an initial odd run, and reduce the first-endpoint problem to an exact finite-word diagram with an ordinary tail. The later-endpoint problem is wider. SHADOW_COVERAGE_LIMIT.md shows that at each fixed $h\ge1$, a relative lower density greater than $17/500$ of odd ternary units $u$ have no first-endpoint diagram within the stated logarithmic odd-excess budget. Such a source may still have a larger-cost diagram, a later merger, or a direct descent. The relative-density argument counts ordinary representatives of each congruence class and pays the rounding error. An independent exact summation of its structural binomial series through 400 verified the reported bounds $1931/1000$ for that partial sum and $1/1000$ for the stated tail estimate.
+
+PR194's $17/25$ occupation exponent is for origin-based height in a forward-invariant injective set with finitely many scalar phases, or its stated subexponential single-orbit variant. Its low-clock argument bounds the *terminal carry by the logarithm of the absolute endpoint height*. For sources in $[M,M+L)$ this may depend on $M$. Thus the proof does not give PR193's translation-uniform estimate with $\theta$ replaced by $17/25$.
+
+## Combined finite separation of colliding pairs
+
+Fix a single injective positive ordinary odd orbit $q_j$. Let $M\ge1$, $n=M+1$, $\pi_M=n^{-1}\sum_{j=0}^M\delta_{q_j}$, $1\le m\le M$ and $Q=3^m$. Sample $J$ uniformly from $0,\ldots,M-m$ and let $B=(b_J,\ldots,b_{J+m-1})$ be the actual canonical window. Write
+$$
+d=0.285859533495646\ldots,\qquad
+W=e^{-H(B)}Q^{-d}.
+$$
+PR194 gives $\operatorname{Col}_{Q}(\pi_M)\ge c_q W$ with fixed $c_q>0$. Independently sample $X,Y$ with law $\pi_M$ and let $E=\{X\ne Y,\ Q\mid X-Y\}$, $p=\Pr(E)$. The diagonal mass is exactly $1/n$. For $p>0$ put $H_Q=1/\mathbb E[1/|X-Y|\mid E]$.
+
+**Consequence.** Whenever $c_q W\ge 2/n$,
+$$
+\frac{H_Q}{n}\ \ge\ c'_q\,\frac{e^{-H(B)}Q^{1-d}}{\log(2Q)},\qquad
+\Pr\!\left(|X-Y|\ge c''_q\,n e^{-H(B)}Q^{1-d}\,\middle|\,E\right)\ge\tfrac12 . \tag{1}
+$$
+Indeed $p\ge c_q W/2$. PR193 escape.md (4) bounds the sum of $1/|x-z|$ over distinct congruent points of an admissible set by $C\log(2Q)/Q$, uniformly in its center $z$. The count up to radius $R$ is bounded by $\min(2R/Q,C_s R^s)$ for any fixed $\theta<s<1$. Integrating against $dR/R^2$ yields that estimate. Applying it to the actual orbit and averaging over $Y$ gives $p/H_Q\le C\log(2Q)/(nQ)$, which proves the first inequality. For each $Y$, at most $2R/Q$ eligible lattice points are at distance at most $R$, each having mass $1/n$. Thus $\Pr(|X-Y|\le R\mid E)\le2R/(nQp)$. Use $R=nQp/4$ for the second claim. The constants are source dependent. No harmonic-flow premise is used.
+
+For a fixed rational scalar phase the entire canonical word is eventually periodic, so $H(B)$ is uniformly bounded by the log of the period plus a finite-prefix allowance (equivalently by $\log(\mathrm{period}+\mathrm{preperiod})$). Thus in the eligible window the separation power becomes $1-d=0.714140466504354\ldots$. More generally this factor is $Q^{1-d-o(1)}$ for subexponential canonical complexity along $m\to\infty$. This lowers the amount of harmonic-mean or median upper control that would contradict escape; it does not supply such upper control. The eligibility condition ensures genuine off-diagonal collisions.
+
+**Qualified inverse-law extension.** PR193's upper estimate is valid for the equal mixture of arbitrary probability laws on the disjoint ordinary fibers $U^{-r}(q_{j+r})$: choose one representative per fiber, apply synchronous-distinctness packing, then average. Every atom in the mixture has mass at most $1/n$, giving diagonal mass at most $1/n$. To transfer the *lower* collision estimate one additionally needs the pinned PR185 harmonic law at 2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d, research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md, with positive flow $v_j=\nu(q_j)\uparrow C_{\rm flow}<\infty$ and exact ordinary kernel. Its moving-root law puts mass $v_j/(n v_{j+r})\ge(v_0/C_{\rm flow})/n$ at $q_j$. Replace $c_q$ by $c_q(v_0/C_{\rm flow})^2$ in eligibility and the proof of (1), uniformly in finite $r$. Arbitrary fiber measures need not dominate the original orbit.
+
+**Unrestricted fixed-limit variant.** Without an assumption on phase complexity, let any subsequence $\pi_{M_i}$ converge ternarily to $\mu$. PR180 at 7cfd911d35382d9d3bc988060ba88ade78a4267e, research/whole-source-20261123/COLLISION_CORE.md (16)–(17), gives an $\epsilon_\mu>0$ with $\operatorname{Col}_{Q}(\mu)\ge Q^{-\theta+\epsilon_\mu}$ for every sufficiently large $m$. For each such *fixed* $m$, the residue probabilities converge and the diagonal $1/(M_i+1)$ tends to zero. Consequently PR193 (6) yields
+$$
+\liminf_{i\to\infty}\frac{H_Q(\pi_{M_i})}{M_i+1}
+\ge c\,Q^{1-\theta+\epsilon_\mu}/\log(2Q)
+$$
+with an absolute $c>0$. The improvement depends on the chosen weak limit. There is no prescribed growing precision for this conclusion. Neither version of the separation estimate bounds same-orbit collision distances from above, ensures a smaller partner for the least possible exceptional ordinary source, or excludes a nontrivial positive cycle.

@@ -25,6 +25,27 @@ read back at `a390a1a4c75ee95db98b4b683d17c503f4e4a118`. It credits PR180's
 `research/whole-source-20261123/COLLISION_CORE.md` for S1. The reviewed scientific
 statements at the older head are preserved.
 
+### New heads found at publication
+
+PR192 and PR193 were discovered after the first PR194 publication. The
+[additional source inventory](LATEST_SOURCE_HEADS.json) freezes both heads.
+The root read their phase, translated packing, cycle-factor, reduced-denominator
+and guarded-merger arguments and reconstructed the three deductions in the
+[synthesis](../../research/astra-birth-rigidity-20261124/LATEST_SOURCE_SYNTHESIS.md).
+The three agents separately supplied a [phase and escape review](LATEST_ESCAPE_REVIEW.md),
+[cycle review](LATEST_CYCLE_REVIEW.md), and [formal-source/receipt review](LATEST_FORMAL_REVIEW.md).
+The mixed-family deduction has a separate
+[arithmetic reconstruction](MIXED_DENOMINATOR_RECONSTRUCTION.md).
+
+The cycle reviewer reports bounded exact replays of both pinned cycle programs
+and 176 instances of the new mixed-family denominator divisibility; the escape
+reviewer reports exact rational verification of the structural series bound.
+These additional runs belong to those agents and are described in their reviews.
+The root independently checked the written arguments, without repeating those
+finite replays. The newer Lean module receipts were inspected and matched to
+their source bytes, not independently re-executed. They are not included in
+this packet's own compiled declaration counts.
+
 ## Executed Lean work
 
 Toolchain: Lean **4.34.1**, release commit
@@ -143,3 +164,10 @@ permission setting, or existing main-branch theorem was changed.
 The raw unified proof patch retains four space-only context lines required by
 its format; Git’s whitespace check flags those lines. No scientific source
 change was hidden by stripping or regenerating that hash-bound patch.
+
+The initial remote PR194 commit `764f3a9f539febf3d2661a9ca4acc1b10827878c`,
+tree `320f35a90349b4e2c9e8c4ad695d23d1a2ed9b34`, was fetched into a clean
+complete checkout and passed all five commands with 364 tracked files.
+[Its full published-head receipt](INITIAL_PUBLISHED_CHECKOUT_VALIDATION.json)
+is retained. The final addendum changes documentation and source bindings only.
+Its exact published-head validation is recorded separately in the PR body.
