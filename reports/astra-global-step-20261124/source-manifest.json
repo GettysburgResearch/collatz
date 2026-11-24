@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-global-step-source-manifest/v1",
+  "parent_commit": "f98262be4ea40068dc88c779a767a9400a8bcaa3",
+  "files": [
+    {
+      "path": "reports/astra-global-step-20261124/REVIEW.md",
+      "bytes": 9186,
+      "sha256": "52ee2672b00b0ed69f90c19e5edbb9b5c6351dbee25505764d2c20edcd6bdada"
+    },
+    {
+      "path": "reports/astra-global-step-20261124/finite-controls-replay.json",
+      "bytes": 2080,
+      "sha256": "ac13b0ab92b8b055511863b88638b80241229d1e6ba13159a9093b7013df7bbd"
+    },
+    {
+      "path": "reports/astra-global-step-20261124/isolated-lean-replay.json",
+      "bytes": 9711,
+      "sha256": "5f71474470f6c3361bf519fc97b2a1ac0c3081109834b394026715586b0c8994"
+    },
+    {
+      "path": "research/astra-global-step-20261124/AUXILIARY_RESIDUES.md",
+      "bytes": 20706,
+      "sha256": "5883a8a76f015668fa6f8c8a5b5642b40d8c4a9b7ca29911112c894c3591f7fa"
+    },
+    {
+      "path": "research/astra-global-step-20261124/ActualCycleSeparation.lean",
+      "bytes": 3285,
+      "sha256": "90eaee30382fa1f91e3e9d9c14fed19fba509fcd9ddcc04e6ca2ea0049dd0e70"
+    },
+    {
+      "path": "research/astra-global-step-20261124/AuxiliaryResidues.lean",
+      "bytes": 7601,
+      "sha256": "8602431e4e20123405a89c2747efbc59ac438e863bb4cf70dde83f0e9f993f1a"
+    },
+    {
+      "path": "research/astra-global-step-20261124/ClusterShadow.lean",
+      "bytes": 6117,
+      "sha256": "8728518402782893b6f16098b4ebab34e87cba692c5ae69afa56bbd9e62d4269"
+    },
+    {
+      "path": "research/astra-global-step-20261124/CycleRotation.lean",
+      "bytes": 3123,
+      "sha256": "a00485161306767e5066e29e9bf21c26c48dff0ce26bc722d521c28b67073f0f"
+    },
+    {
+      "path": "research/astra-global-step-20261124/LATEST_INPUTS.md",
+      "bytes": 4816,
+      "sha256": "a2eafd192556c206ae0eea7fcfa7274f5b142db929b89ed0678e433b62abf7bb"
+    },
+    {
+      "path": "research/astra-global-step-20261124/PERSISTENT_DESCENT.md",
+      "bytes": 10469,
+      "sha256": "f1444754c0381b1fbd03446aab6955549fffc7579ef6f36872dc13e1afe2e2cb"
+    },
+    {
+      "path": "research/astra-global-step-20261124/README.md",
+      "bytes": 10238,
+      "sha256": "7a9ff4cda20e92b4462bf7666338ae52411409fb5957c9bd01d5e9943f6a7046"
+    },
+    {
+      "path": "research/astra-global-step-20261124/REPLAY.md",
+      "bytes": 1601,
+      "sha256": "949e5460bd8a2f733c42c133e09eec3a679256c0c720c02b92c175ee8297ae61"
+    },
+    {
+      "path": "research/astra-global-step-20261124/Renewal.lean",
+      "bytes": 10829,
+      "sha256": "81f477421fbac9289dbf1f9396f300c29da433aa6b0d58e7f1847e39fe0f3e7f"
+    },
+    {
+      "path": "research/astra-global-step-20261124/RotationalDistance.lean",
+      "bytes": 6411,
+      "sha256": "9315be71b4b71661f756d5c4211faf43234ade843324848f024099bd150a310f"
+    },
+    {
+      "path": "research/astra-global-step-20261124/SHIFT_DISTANCE.md",
+      "bytes": 20035,
+      "sha256": "03e86a2c6ff653bf207c6d1ab4346b657d1b0e8d9b351fcf4f4d51c985672093"
+    },
+    {
+      "path": "research/astra-global-step-20261124/renewal_controls.py",
+      "bytes": 2795,
+      "sha256": "f707bbc046205b67980093da541c4a647d612edd0ae173a66ec994f7b2d062e8"
+    },
+    {
+      "path": "research/astra-global-step-20261124/replay_lean.py",
+      "bytes": 5829,
+      "sha256": "a45d72ecc9d153623c20754ac24b9c072a2205264852c8a8f0448f0e029bd380"
+    },
+    {
+      "path": "research/astra-global-step-20261124/shift_distance_control.py",
+      "bytes": 3151,
+      "sha256": "1b862cce003e2a1e502adb974aca1c60b5f2b68cae05f8ae7c1db088cf1d09b4"
+    }
+  ]
+}

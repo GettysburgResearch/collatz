@@ -1,0 +1,54 @@
+{
+  "schema": "collatz-global-step-finite-controls/v1",
+  "success": true,
+  "normal_and_optimized_identical": true,
+  "scope": "Exact bounded replay of the new rotation and persistent-descent mechanisms; not exhaustive Collatz verification",
+  "runs": [
+    {
+      "script": "research/astra-global-step-20261124/shift_distance_control.py",
+      "optimized": false,
+      "command": [
+        "python",
+        "-B",
+        "research/astra-global-step-20261124/shift_distance_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"independent_euclidean_offsets\": 124251,\n  \"interval_discrepancies\": 1818380,\n  \"phase_comparisons\": 148558,\n  \"primitive_contracting_necklaces\": 1131,\n  \"rotation_comparisons\": 12282\n}\n"
+    },
+    {
+      "script": "research/astra-global-step-20261124/shift_distance_control.py",
+      "optimized": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/astra-global-step-20261124/shift_distance_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"independent_euclidean_offsets\": 124251,\n  \"interval_discrepancies\": 1818380,\n  \"phase_comparisons\": 148558,\n  \"primitive_contracting_necklaces\": 1131,\n  \"rotation_comparisons\": 12282\n}\n"
+    },
+    {
+      "script": "research/astra-global-step-20261124/renewal_controls.py",
+      "optimized": false,
+      "command": [
+        "python",
+        "-B",
+        "research/astra-global-step-20261124/renewal_controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Exact ordinary cylinder comparisons: 70\nTwo-state core transitions: 5\nSingleton/doublet ordered-pair controls: 4\n"
+    },
+    {
+      "script": "research/astra-global-step-20261124/renewal_controls.py",
+      "optimized": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/astra-global-step-20261124/renewal_controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Exact ordinary cylinder comparisons: 70\nTwo-state core transitions: 5\nSingleton/doublet ordered-pair controls: 4\n"
+    }
+  ]
+}
