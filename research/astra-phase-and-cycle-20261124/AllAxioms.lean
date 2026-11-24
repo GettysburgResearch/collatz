@@ -1,9 +1,11 @@
 import ActualOneRun
 import OrdinaryShadow
+import ThreeRunCore
 
 -- New public theorems, including the intermediate bridge theorems.
 #print axioms Collatz.PhaseRepulsion.one_run
 #print axioms Collatz.PhaseRepulsion.one_run_length
+#print axioms Collatz.PhaseRepulsion.three_run_length
 #print axioms Collatz.OrdinaryShadow.smaller_nonconverger
 #print axioms Collatz.ActualThreeRun.three_run_bound
 #print axioms Collatz.ActualThreeRun.carry_lt

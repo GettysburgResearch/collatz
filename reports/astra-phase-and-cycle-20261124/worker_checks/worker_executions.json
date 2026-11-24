@@ -1,0 +1,35 @@
+{
+  "worker_executions": [
+    {
+      "source": "research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean",
+      "source_sha256": "ec4af1d8258372c4be091f649c572517214344e952d22fcfea6e43075c28a273",
+      "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+      "command": "PATH=../lean-4.34.1-linux/bin:$PATH lake env lean ../TwoSidedPacking.lean > ../191.log 2>&1",
+      "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "exit_code": 0,
+      "log": "TwoSidedPacking.log",
+      "source_commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    },
+    {
+      "source": "research/carry-tower-round10-20261123/ActualScalar.lean",
+      "source_sha256": "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9",
+      "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+      "command": "PATH=../lean-4.34.1-linux/bin:$PATH lake env lean -o .lake/build/lib/lean/ActualScalar.olean ActualScalar.lean > ../actual.log 2>&1",
+      "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "exit_code": 0,
+      "log": "ActualScalar.log",
+      "source_commit": "f94a2ae1caba9a1857feda892ee1779695eea9d2",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    },
+    {
+      "source": "research/astra-phase-and-cycle-20261124/OrdinaryShadow.lean",
+      "source_sha256": "b47cc76bf01c5855d3f8d5caee82cd65aa0ff5b4864bd14f1492202fa3831d51",
+      "cwd": "/workspace/scratch/ae8b5ba301f1",
+      "command": "lean_env/lean-4.34.1-linux/bin/lean lean_env/Shadow.lean > lean_env/shadow.log 2>&1",
+      "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "exit_code": 0,
+      "log": "OrdinaryShadow.log"
+    }
+  ]
+}

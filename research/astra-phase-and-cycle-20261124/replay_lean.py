@@ -16,7 +16,7 @@ PACKET = Path(__file__).resolve().parent
 MATHLIB = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 VENDOR_BLOB = "85385ac9b4dbc2bab8b3f78f02d4f865ed16d2b8"
 VENDOR_SHA256 = "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9"
-SOURCES = ("vendor/ActualScalar.lean", "OneRun.lean", "OrdinaryShadow.lean",
+SOURCES = ("vendor/ActualScalar.lean", "OneRun.lean", "ThreeRunCore.lean", "OrdinaryShadow.lean",
            "PhaseBounds.lean", "ActualOneRun.lean", "AllAxioms.lean")
 UPSTREAM = "Collatz.CarryTowerRoundTen.ActualScalar."
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
@@ -29,6 +29,10 @@ def require(condition, message):
 
 def sha256(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def git_blob(data):
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
 def now():
@@ -58,7 +62,7 @@ def run(record, output, label, argv, cwd, env=None):
     return proc.stdout
 
 
-def visibility_port(data):
+def visibility_port(data, name):
     # Only the initial import block changes. Preserve every byte of the body.
     lines = data.splitlines(keepends=True)
     i = 0
@@ -66,8 +70,10 @@ def visibility_port(data):
         i += 1
     require(i > 0 and i < len(lines) and lines[i] == b"\n",
             "expected an initial import block followed by a blank line")
-    return (b"module\n\n" + b"".join(b"public " + line for line in lines[:i]) +
-            b"\npublic section\n\n" + b"".join(lines[i+1:]))
+    header = b"module\n\n" + b"".join(b"public " + line for line in lines[:i])
+    if name in ("PhaseBounds.lean", "ActualOneRun.lean"):
+        header += b"import all ActualScalar\n"
+    return header + b"\npublic section\n\n" + b"".join(lines[i+1:])
 
 
 def check_audits(source_dir, output_text):
@@ -125,6 +131,12 @@ def replay(args, output, record):
             "vendor manifest toolchain, Mathlib or path does not match replay")
     require(manifest["git_blob"] == VENDOR_BLOB and manifest["sha256"] == VENDOR_SHA256,
             "vendor manifest disagrees with the packet's frozen pins")
+    tree = run(record, output, "source-tree", ["git", "ls-tree", "-r", "HEAD", "--", *SOURCES], PACKET)
+    committed = {}
+    for line in tree.splitlines():
+        info, pathname = line.split("\t", 1)
+        committed[pathname] = info.split()[2]
+    record["sources_differing_from_head"] = []
     record["sources"] = {}
     record["compiled_sources"] = {}
     record["source_mode"] = "generated visibility-only port" if args.module_port else "byte-exact"
@@ -132,13 +144,15 @@ def replay(args, output, record):
     for source in SOURCES:
         data = (PACKET / source).read_bytes()
         digest = sha256(data)
+        blob = git_blob(data)
+        if committed.get(source) != blob:
+            record["sources_differing_from_head"].append(source)
         if source == SOURCES[0]:
-            blob = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
             require(blob == VENDOR_BLOB and digest == VENDOR_SHA256, "vendor bytes differ from pin")
             record["vendor_git_blob"] = blob
         name = Path(source).name
         (original_dir / name).write_bytes(data)
-        generated = visibility_port(data) if args.module_port else data
+        generated = visibility_port(data, name) if args.module_port else data
         (source_dir / name).write_bytes(generated)
         record["sources"][source] = digest
         record["compiled_sources"][name] = sha256(generated)
@@ -146,6 +160,7 @@ def replay(args, output, record):
             patch.extend(unified_diff(data.decode().splitlines(keepends=True),
                                       generated.decode().splitlines(keepends=True),
                                       fromfile="original/" + name, tofile="generated/" + name))
+    record["sources_match_head"] = not record["sources_differing_from_head"]
     if args.module_port:
         patch_bytes = "".join(patch).encode()
         (output / "visibility-port.patch").write_bytes(patch_bytes)
@@ -178,6 +193,15 @@ def replay(args, output, record):
             record["companion_objects"][companion.name] = sha256(companion.read_bytes())
         if name == "AllAxioms":
             record["axioms"] = check_audits(source_dir, stdout)
+    current = {source: sha256((PACKET / source).read_bytes()) for source in SOURCES}
+    require(current == record["sources"], "packet source changed after the replay snapshot")
+    require(sha256((PACKET / "VENDOR.json").read_bytes()) == record["vendor_manifest_sha256"],
+            "vendor manifest changed during replay")
+    record["final_source_head"] = run(record, output, "final-source-head",
+                                      ["git", "rev-parse", "HEAD"], PACKET).strip()
+    record["final_source_status"] = run(record, output, "final-source-status",
+                                        ["git", "status", "--short", "--", "."], PACKET)
+    require(record["final_source_head"] == record["source_head"], "repository HEAD changed during replay")
 
 
 def main():
@@ -186,7 +210,7 @@ def main():
     parser.add_argument("--mathlib", required=True, type=Path, help="existing pinned, built Mathlib checkout")
     parser.add_argument("--lean-path", help="existing dependency search path; default comes from sibling Lake")
     parser.add_argument("--module-port", action="store_true",
-                        help="compile generated module/public import/public section headers; retain exact originals and diff")
+                        help="compile the documented visibility-port headers; retain exact originals and diff")
     parser.add_argument("--output", required=True, type=Path, help="empty or new directory outside the repository")
     args = parser.parse_args()
     repo = Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"],

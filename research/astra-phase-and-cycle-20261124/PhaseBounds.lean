@@ -87,7 +87,7 @@ theorem carry_lt (q : ℕ) (hq : 0 < q) (ho : Odd q) :
 
 theorem actual_floor (q : ℕ) (hq : 0 < q) (ho : Odd q) : 2^(carry q) ≤ q := by
   by_cases h : carry q = 0
-  · simpa [h] using hq
+  · simp only [h, pow_zero]; omega
   have hc : (1:ℝ) ≤ carry q := by exact_mod_cast (show 1 ≤ carry q by omega)
   have hu := scalar_upper q hq
   have hl := carry_lt q hq ho
