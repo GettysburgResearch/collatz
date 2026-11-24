@@ -1,0 +1,92 @@
+{
+  "schema": "collatz-astra-fixed-atom-sources/v1",
+  "date_utc": "2026-11-24",
+  "baseline_commit": "5720732b9c83361f5cded4f8bfac24e36f469937",
+  "review_scope": "Named interfaces and metadata, not blanket independent verification of imported manuscripts",
+  "upstream": [
+    {
+      "pr": 193,
+      "sha": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "packet": "research/astra-closure-20261124",
+      "paths": [
+        "research/astra-closure-20261124/README.md",
+        "research/astra-closure-20261124/descent/REPAYMENT.md",
+        "research/astra-closure-20261124/transfer/RETURNS.md",
+        "research/astra-closure-20261124/transfer/HEAD_ROOTS.md",
+        "research/astra-closure-20261124/boundary/CROSSINGS.md",
+        "research/astra-closure-20261124/arithmetic/LATEST_ARITHMETIC.md"
+      ],
+      "scope": "Named mathematical interfaces"
+    },
+    {
+      "pr": 197,
+      "sha": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "packet": "research/ayh-resource-reset-20261124/joint-renewal",
+      "paths": [
+        "research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_SUBCRITICAL_MOMENTS.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_FIRST_FUSION.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/QUARTET_COLLAPSE.md"
+      ],
+      "scope": "Named mathematical interfaces"
+    },
+    {
+      "pr": 201,
+      "sha": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "packet": "research/killed-green-head-closure-20261124",
+      "paths": [
+        "research/killed-green-head-closure-20261124/README.md"
+      ],
+      "scope": "Named mathematical interfaces"
+    },
+    {
+      "pr": 182,
+      "sha": "a30402b7849c437edf245974d9f436d1f105e08e",
+      "packet": "research/high-variance-closure-20261124/continuation",
+      "paths": [
+        "research/high-variance-closure-20261124/continuation/README.md",
+        "research/high-variance-closure-20261124/continuation/BIASED_PARITY_MEASURE.md",
+        "research/high-variance-closure-20261124/continuation/MULTISCALE_CLOSURE.md",
+        "research/high-variance-closure-20261124/continuation/QUANTITATIVE_RESETS.md"
+      ],
+      "scope": "Named mathematical interfaces"
+    },
+    {
+      "pr": 195,
+      "sha": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "packet": null,
+      "paths": [],
+      "scope": "PR metadata and current prime-coverage statement"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/10/v3",
+      "use": "Uniform reciprocal predecessor floor; source-qualified"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/12/v1",
+      "use": "Canonical inverse laws and countable parent partition; source-qualified"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/176/v1",
+      "use": "Source-preserving first-meeting range and orbit occupation; source-qualified"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/178/v1",
+      "use": "First-meeting distributions and fixed-source limitation; source-qualified"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/202/v1",
+      "use": "Small density gains with d(x) tending to zero; source-qualified"
+    }
+  ],
+  "scientific_sha256": {
+    "research/astra-fixed-atom-20261124/README.md": "7feec414e9f118054dcbb14aa1aad7c207c51b44432a769f0addb18ec38d026f",
+    "research/astra-fixed-atom-20261124/arithmetic.md": "346ee309d24d53aa1336311cfc0abfe8a525249d0e00ba9a28c0137a2d7be12f",
+    "research/astra-fixed-atom-20261124/controller_pressure.md": "f792418071989dd462a90f2af6e743fa6bf4b7a26d6c9d244cf4619809dc3144",
+    "research/astra-fixed-atom-20261124/finite_certificate.lean": "cb2b75d000a66d3d080e26ca99f966d8eac57a89c97a455f4d6892173f81ec60",
+    "research/astra-fixed-atom-20261124/termination.lean": "9cc75080179dce260c08ab2e02a4c40a233342a014d5838ced16237e5531d012",
+    "research/astra-fixed-atom-20261124/termination.md": "573a5b83d11f580db67620bfaf8152189e741381c47035b4e9f7a0267cb358d6",
+    "research/astra-fixed-atom-20261124/termination.py": "f5298722170f9c4dc6d08a3c9107ab0f2624e628593904039f657c5a2b8be60f"
+  }
+}
