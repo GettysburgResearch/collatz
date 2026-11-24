@@ -1,5 +1,15 @@
 # Killed Green-function localization of the global head obstruction
 
+## Latest continuation: exact finite rows and directed residue covers
+
+See [Exact-clock amplification and directed single-residue closure](FINITE_CLOSURE.md)
+for the new full-conjecture finite-row dichotomy, the two kernel-checked
+whole-progression covers, and the ordinary gap-word verification. The new
+finite-row argument does not assume F. The original analytic packet below
+retains its stated inputs and its open upper estimate. Collatz remains open.
+
+---
+
 **Status: PROPOSED written mathematics, conditional on the explicitly pinned
 pair-chain estimates for the probabilistic deductions and on M for the
 full-conjecture reduction. Collatz remains OPEN.** This is an attempt at the

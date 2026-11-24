@@ -1,0 +1,38 @@
+[
+  {
+    "residue_modulo_6": 1,
+    "dictionary_words": 261,
+    "tree_nodes": 1606,
+    "full_progression_leaves": 948,
+    "maximum_modulus": 17915904,
+    "longest_word": 63,
+    "total_path_letters": 35627,
+    "forward_query_positions": 2325,
+    "minimum_query_to_input": "27145/732923",
+    "maximum_query_to_input": "26406895/30563",
+    "shortest_example_from_multiple_of_three": [
+      13,
+      1728,
+      219,
+      "tthAthhiDDiDi"
+    ]
+  },
+  {
+    "residue_modulo_6": 5,
+    "dictionary_words": 312,
+    "tree_nodes": 2130,
+    "full_progression_leaves": 1263,
+    "maximum_modulus": 71663616,
+    "longest_word": 62,
+    "total_path_letters": 49015,
+    "forward_query_positions": 2701,
+    "minimum_query_to_input": "65/4167",
+    "maximum_query_to_input": "4614215/6759",
+    "shortest_example_from_multiple_of_three": [
+      9,
+      144,
+      63,
+      "tAthhiDDi"
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "base": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+  "scope": "New continuation scientific files and its reports, excluding this manifest and later publication receipts",
+  "files": [
+    {
+      "path": "reports/astra-continuation-audit-20261124/ESCAPE_CROSS_REVIEW.md",
+      "sha256": "f54ee3ac474a0cd4c01f36d4b1dc1ac2f7d657e40cd6a6fe82b9f9e3df347eba",
+      "bytes": 5446
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/GLOBAL_CROSS_REVIEW.md",
+      "sha256": "a58060a877f689b3558467b0fe9a22fbc5c141c1be8a0d2cfeda0a203ce07616",
+      "bytes": 4170
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/NEW_CONTROLS_REPLAY.json",
+      "sha256": "037b29631ac728996777084b10f4acac6cc4ba1ca6f5990f31ea372a56e9f8e5",
+      "bytes": 3350
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/OVERVIEW_REVIEW.md",
+      "sha256": "1fd4a118589e786c194aa098983f6bae8bd30f308b922f72f98f88c8d928d804",
+      "bytes": 1919
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/PREVIOUS_PR_DESCRIPTION.json",
+      "sha256": "f7a4c355563b50312b8ca27f168f04c70ea1343a9ee02613dfdfb940b57d4aa9",
+      "bytes": 8163
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/PRIOR_CONTROLS_REPLAY.json",
+      "sha256": "059ec4db33748b1707640f69cc3da0813fc57b67859abac7413319db37d926f9",
+      "bytes": 2573
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/README.md",
+      "sha256": "d136dc7386a78a2892467ab367184a085f66eac2181fdaa68399ed290db05730",
+      "bytes": 4493
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/ROOT_REVIEW.md",
+      "sha256": "ec91b176cd24b3dcbed97f5f9da6d7f506c45155c0b85f78fad33434829e6335",
+      "bytes": 8487
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/SOURCE_INTAKE.json",
+      "sha256": "cf7d3f2452b44c421838a86495e572912a427ba72e2019a5fd2fd26b018d1d5f",
+      "bytes": 2538
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/lean/README.md",
+      "sha256": "a34c00e8a63fdd4077e23517544934f5546e897b91d44f58ad31086307e9d0a9",
+      "bytes": 8768
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/lean/RECEIPT.json",
+      "sha256": "d08f6621c59ff586fd0588fdcf7fe89991e3fb741eb3769fdc2069be1fb2b313",
+      "bytes": 19375
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/lean/cover_source.py",
+      "sha256": "84be067fdc37c65675a81d855b4c891ecb6e88ef72e3c2b466ccfdf3a5d70184",
+      "bytes": 2801
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/lean/replay.py",
+      "sha256": "54dceaf5cea4cae9b52c6d5b89e14e1eb5fc76cad5c9b3266bcea44e3e37d9d0",
+      "bytes": 7010
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/replay_new_controls.py",
+      "sha256": "6010859c3d3d2de9ce39511c8610d7e91dacdb078c8afbeb8f5037712eebc251",
+      "bytes": 2512
+    },
+    {
+      "path": "reports/astra-continuation-audit-20261124/replay_prior_controls.py",
+      "sha256": "01791a2015389f9aa593d18520ecd649dc3d1dcbd2a79db5b929406e3672b4ce",
+      "bytes": 2550
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/FINITE_CLOSURE.md",
+      "sha256": "52e1b8f33330a28bd13d0b25659af894ac7a4eac401dce54ae2d8c3313259bdb",
+      "bytes": 8296
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/README.md",
+      "sha256": "b31b41df7f0b4a70c8abc1ca1f1b9749fca730da9f619c06fb504cf1c8a8373d",
+      "bytes": 20692
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/CONTROLS.json",
+      "sha256": "b24581bff08881816697cf0fad6159052288a8e70ed28dc21e1300232606e517",
+      "bytes": 741
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "sha256": "1718e91e498b7491e7c6a9e939f92609a46b78bb0bb1e355b6588e6c73384b39",
+      "bytes": 14376
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/controls.py",
+      "sha256": "91c7fa2f2ee92a82e536867a12ffdc91c9bd4f48ba9010f0a23706d9400ad9f0",
+      "bytes": 5207
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/CONTROLS.json",
+      "sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516",
+      "bytes": 902
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/README.md",
+      "sha256": "083dd1aa50d9ff33163b0d24bb63fc0f3729ed7ba9070c026ea8672786be5a5f",
+      "bytes": 14483
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/check.py",
+      "sha256": "8b7e4e0f8b11d1499ba1954c077007aade3228e4239eddd888167645fb7bc27c",
+      "bytes": 3577
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover1.txt",
+      "sha256": "03fe44cd5c3d01e2a89b7ce6f5c95d6456e9c5526cc43d7e4de26e0e6deb96e0",
+      "bytes": 15915
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover5.txt",
+      "sha256": "062bc68e7dc2e34b24a0aa2e155a6ffc7b832b2bf6d6b0d228cba3d1ab283815",
+      "bytes": 19777
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/ExactClockRouter.lean",
+      "sha256": "691a97e9435784582fadf85718fbb86fb81a76b3c0b362680a7105601ee50ca2",
+      "bytes": 2889
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/KilledMoment.lean",
+      "sha256": "4b90a6d183cdbbe08b98a8a452d940fdbb8f94a5c86bee3c812f856a4a3021e1",
+      "bytes": 2889
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/OctavePhase.lean",
+      "sha256": "38780e1212ccf05c249eac1efd1227e80b634a539a5e5551280c978fe5ac473c",
+      "bytes": 2808
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/OrdinaryGapWord.lean",
+      "sha256": "1ce2a6eefa0f2174f7b4dd6af395c365d2cf618cdefb8ea9bf31892242625776",
+      "bytes": 8128
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/PrefixDensity.lean",
+      "sha256": "4db1088a27b31787a70b54972ab9c4a7c22ab8490cfdfa49fa1f56d3d0ec6cab",
+      "bytes": 3431
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/TriplingCover.lean",
+      "sha256": "02545dc003a9ffa533b559ccd052310b3eb965ccff53ba87af7b0690d4e3b821",
+      "bytes": 4881
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/TwoEndBridge.lean",
+      "sha256": "12a8cb0f9a30828c196023d9295373a88e9f6f4373942a68c0c8aaadc1f5f818",
+      "bytes": 1655
+    }
+  ]
+}

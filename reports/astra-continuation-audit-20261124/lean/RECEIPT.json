@@ -1,0 +1,559 @@
+{
+  "source_pr": 201,
+  "source_commit": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "import_only": {
+    "KilledMoment": {
+      "original_path": "research/killed-green-head-closure-20261124/KilledMoment.lean",
+      "original_sha256": "d939402a204668affd95fc7065f121a01d5932ca1ff7e2c9a271e9f30298afac",
+      "original_git_blob": "72a1a7eaacef5007f825fa34059158d1a596f3fc",
+      "replacement_imports": [
+        "import Mathlib.Basic.Real.Basic",
+        "import Mathlib.Tactic.FieldSimp",
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.NormNum"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "KilledMoment.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "c9f57005254cb050cd8e9f27213ad4835e588b77371ca1ae386af04e45756ae4",
+      "compiler_input_sha256": "c9f57005254cb050cd8e9f27213ad4835e588b77371ca1ae386af04e45756ae4",
+      "diagnostics": "KilledMoment.lean:44:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nKilledMoment.lean:66:18: warning: Variable name `ha` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _ha\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nKilledMoment.lean:67:5: warning: Variable name `hp` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hp\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nKilledMoment.lean:67:18: warning: Variable name `hm` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hm\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "axioms": {
+        "Collatz.KilledGreenHead.sqrt_majorant_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.survival_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.killed_moment_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.green_charge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "OctavePhase": {
+      "original_path": "research/killed-green-head-closure-20261124/continuation/OctavePhase.lean",
+      "original_sha256": "7c8ff33ab1a55ce57749622ac4fd5b3e3cb626fceada1c02a7bf858e688d8dc6",
+      "original_git_blob": "001321d682c410a4d043d0bef35f3d85be003b83",
+      "replacement_imports": [
+        "import Mathlib.Basic.Real.Basic",
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.NormNum"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "OctavePhase.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "a1a280b8826bd9b5929a41f6c58493329c7c8a805124b9f429f041a5cbd21f67",
+      "compiler_input_sha256": "a1a280b8826bd9b5929a41f6c58493329c7c8a805124b9f429f041a5cbd21f67",
+      "diagnostics": "OctavePhase.lean:41:20: warning: exponent 365 exceeds the threshold 256, exponentiation operation was not evaluated, use `set_option exponentiation.threshold <num>` to set a new threshold\nOctavePhase.lean:55:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`",
+      "axioms": {
+        "Collatz.OctavePhase.native_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.native_large_count_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.terminal_carry_unique": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.rational_birth_constants": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.native_exponent_constants": [
+          "propext"
+        ],
+        "Collatz.OctavePhase.displacement_le_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.peak_charge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "PrefixDensity": {
+      "original_path": "research/killed-green-head-closure-20261124/prefix-density/PrefixDensity.lean",
+      "original_sha256": "e6f0119d83015b9bee3f9fb2142f71522f6865216ea88db828ecd3bc1b1a4a7a",
+      "original_git_blob": "7aef4809362f4036d55dba7fbbd0de136fc08f10",
+      "replacement_imports": [
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.Positivity"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "PrefixDensity.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "bd0805cadb089cdf3a5d12017ec04fc609c665584d14faf39a95ba31218cfcf5",
+      "compiler_input_sha256": "bd0805cadb089cdf3a5d12017ec04fc609c665584d14faf39a95ba31218cfcf5",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.PrefixDensity.run_add": [
+          "propext"
+        ],
+        "Collatz.PrefixDensity.disjoint_depths": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.incomparable_disjoint": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.critical_clock": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.log_majorant_certificate": [
+          "propext"
+        ],
+        "Collatz.PrefixDensity.unique_lift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.congruence_lift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "TwoEndBridge": {
+      "original_path": "research/killed-green-head-closure-20261124/two-end-bridge/TwoEndBridge.lean",
+      "original_sha256": "144f5399772928438d96e06a0a86e90f01526f5cbab295589daac1fdb81902ad",
+      "original_git_blob": "619e45d01a67ded6aab977f62e3d2075f53027fd",
+      "replacement_imports": [
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.NormNum"
+      ],
+      "command": [
+        "lean",
+        "-j1",
+        "TwoEndBridge.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "12a8cb0f9a30828c196023d9295373a88e9f6f4373942a68c0c8aaadc1f5f818",
+      "compiler_input_sha256": "12a8cb0f9a30828c196023d9295373a88e9f6f4373942a68c0c8aaadc1f5f818",
+      "diagnostics": "",
+      "axioms": {
+        "TwoEndBridge.compose_three": [
+          "propext"
+        ],
+        "TwoEndBridge.lift_congruence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TwoEndBridge.retain_relative_offset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TwoEndBridge.normalization_transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "verified": {
+    "KilledMoment": {
+      "path": "research/killed-green-head-closure-20261124/verified/KilledMoment.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "KilledMoment.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "4b90a6d183cdbbe08b98a8a452d940fdbb8f94a5c86bee3c812f856a4a3021e1",
+      "compiler_input_sha256": "4b90a6d183cdbbe08b98a8a452d940fdbb8f94a5c86bee3c812f856a4a3021e1",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.KilledGreenHead.sqrt_majorant_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.survival_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.killed_moment_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.KilledGreenHead.green_charge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "OctavePhase": {
+      "path": "research/killed-green-head-closure-20261124/verified/OctavePhase.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "OctavePhase.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "38780e1212ccf05c249eac1efd1227e80b634a539a5e5551280c978fe5ac473c",
+      "compiler_input_sha256": "2b5ba9864022e208e40453eb7d45411c4de9ea0632a10b3146e28366dbb98145",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.OctavePhase.native_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.native_large_count_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.terminal_carry_unique": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.rational_birth_constants": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.native_exponent_constants": [
+          "propext"
+        ],
+        "Collatz.OctavePhase.displacement_le_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.peak_charge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctavePhase.variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "PrefixDensity": {
+      "path": "research/killed-green-head-closure-20261124/verified/PrefixDensity.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "PrefixDensity.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "4db1088a27b31787a70b54972ab9c4a7c22ab8490cfdfa49fa1f56d3d0ec6cab",
+      "compiler_input_sha256": "d476665de02fde4c308ca955c62060ce1aa4ccfbc6e264b175135a0931ca99b5",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.PrefixDensity.run_add": [
+          "propext"
+        ],
+        "Collatz.PrefixDensity.disjoint_depths": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.incomparable_disjoint": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.critical_clock": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.log_majorant_certificate": [
+          "propext"
+        ],
+        "Collatz.PrefixDensity.unique_lift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.congruence_lift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PrefixDensity.run": []
+      }
+    },
+    "TwoEndBridge": {
+      "path": "research/killed-green-head-closure-20261124/verified/TwoEndBridge.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "TwoEndBridge.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "12a8cb0f9a30828c196023d9295373a88e9f6f4373942a68c0c8aaadc1f5f818",
+      "compiler_input_sha256": "12a8cb0f9a30828c196023d9295373a88e9f6f4373942a68c0c8aaadc1f5f818",
+      "diagnostics": "",
+      "axioms": {
+        "TwoEndBridge.compose_three": [
+          "propext"
+        ],
+        "TwoEndBridge.lift_congruence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TwoEndBridge.retain_relative_offset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TwoEndBridge.normalization_transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "OrdinaryGapWord": {
+      "path": "research/killed-green-head-closure-20261124/verified/OrdinaryGapWord.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "OrdinaryGapWord.lean",
+        "-o",
+        "<build>/OrdinaryGapWord.olean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "1ce2a6eefa0f2174f7b4dd6af395c365d2cf618cdefb8ea9bf31892242625776",
+      "compiler_input_sha256": "05bde2430d0c53bf309a3d3a09db33f01b5d18bf0e3053b2c4933f5b9e6fe855",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.OrdinaryGapWord.Path.endpoints": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.Path.affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.path_of_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.even_run": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.Path.shortcut_iterate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.odd_part_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Path.unique_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.source_class_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Path.unique_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.unit_after_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.unit_source_class_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Word": [],
+        "Collatz.OrdinaryGapWord.Word.depth": [],
+        "Collatz.OrdinaryGapWord.Word.clock": [],
+        "Collatz.OrdinaryGapWord.Word.carry": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.PositiveOdd": [],
+        "Collatz.OrdinaryGapWord.Path": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.shortcut": []
+      }
+    },
+    "ExactClockRouter": {
+      "path": "research/killed-green-head-closure-20261124/verified/ExactClockRouter.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "ExactClockRouter.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "691a97e9435784582fadf85718fbb86fb81a76b3c0b362680a7105601ee50ca2",
+      "compiler_input_sha256": "82d9b8e310fae2e1a5bcab15ca2fbb9f53e53f98c5b028dca21ab484907a4284",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.OrdinaryGapWord.beta_snoc": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.beta_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.beta_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.target_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.two_gap_router": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Word.beta": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.twoGapWord": []
+      }
+    },
+    "TriplingCover": {
+      "path": "research/killed-green-head-closure-20261124/verified/TriplingCover.lean",
+      "command": [
+        "lean",
+        "-j1",
+        "TriplingCover.lean",
+        "-o",
+        "<build>/TriplingCover.olean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "02545dc003a9ffa533b559ccd052310b3eb965ccff53ba87af7b0690d4e3b821",
+      "compiler_input_sha256": "9b84a33aea42d375a543ee6e84597b51b961545033bff313f9e1ad0a3c7001cd",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.TriplingCover.advance_sound": [
+          "propext"
+        ],
+        "Collatz.TriplingCover.run_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TriplingCover.split_sound": [
+          "propext"
+        ],
+        "Collatz.TriplingCover.check_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TriplingCover.Op": [],
+        "Collatz.TriplingCover.Rule": [],
+        "Collatz.TriplingCover.rule": [],
+        "Collatz.TriplingCover.Row": [],
+        "Collatz.TriplingCover.evaluate": [],
+        "Collatz.TriplingCover.advance": [],
+        "Collatz.TriplingCover.run": [],
+        "Collatz.TriplingCover.triple": [],
+        "Collatz.TriplingCover.Tree": [],
+        "Collatz.TriplingCover.child": [],
+        "Collatz.TriplingCover.check": [],
+        "Collatz.TriplingCover.Rules": [],
+        "Collatz.TriplingCover.Covers": []
+      }
+    }
+  },
+  "certificates": {
+    "Residue1": {
+      "table": "research/killed-green-head-closure-20261124/global-bridge/cover1.txt",
+      "table_sha256": "03fe44cd5c3d01e2a89b7ce6f5c95d6456e9c5526cc43d7e4de26e0e6deb96e0",
+      "command": [
+        "lean",
+        "-j1",
+        "Residue1.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "1e0cfd0bc248fae5892868132fe1e4c4acf2915a5a3143172cf3046d72a6e6f5",
+      "compiler_input_sha256": "1e0cfd0bc248fae5892868132fe1e4c4acf2915a5a3143172cf3046d72a6e6f5",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.TriplingCover.Residue1.finite_check": [],
+        "Collatz.TriplingCover.Residue1.directed_tripling": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    "Residue5": {
+      "table": "research/killed-green-head-closure-20261124/global-bridge/cover5.txt",
+      "table_sha256": "062bc68e7dc2e34b24a0aa2e155a6ffc7b832b2bf6d6b0d228cba3d1ab283815",
+      "command": [
+        "lean",
+        "-j1",
+        "Residue5.lean"
+      ],
+      "exit_code": 0,
+      "source_sha256_before_axiom_queries": "f6b3f4f72d5ee169adeabb132e17acca504f43e7c606596dc9c8b19e96bc635b",
+      "compiler_input_sha256": "f6b3f4f72d5ee169adeabb132e17acca504f43e7c606596dc9c8b19e96bc635b",
+      "diagnostics": "",
+      "axioms": {
+        "Collatz.TriplingCover.Residue5.finite_check": [],
+        "Collatz.TriplingCover.Residue5.directed_tripling": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  }
+}
