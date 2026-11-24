@@ -1,0 +1,101 @@
+{
+  "scope": "Exact finite arithmetic with explicit guards in normal and optimized Python; no universal dynamical inference.",
+  "python_version": "3.12.14",
+  "runner_sha256": "416c265648969527e7493a20920a35d866ae1277c8a31d8a08fd9d7cbfec09e4",
+  "runs": [
+    {
+      "source": "research/astra-global-closure-20261124/round6/arithmetic/check.py",
+      "source_sha256": "fb3309a033754dd57331fcf6802832f6403a6d2f4ca346c8252e905c796e6782",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/arithmetic/controls.json",
+      "expected_output_sha256": "92bcaecc779a4aba83b593969f37d5a032c0d46127af8fff448621ab378300bc",
+      "output_matches": true,
+      "stdout_sha256": "92bcaecc779a4aba83b593969f37d5a032c0d46127af8fff448621ab378300bc",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round6/arithmetic/check.py",
+      "source_sha256": "fb3309a033754dd57331fcf6802832f6403a6d2f4ca346c8252e905c796e6782",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/arithmetic/controls.json",
+      "expected_output_sha256": "92bcaecc779a4aba83b593969f37d5a032c0d46127af8fff448621ab378300bc",
+      "output_matches": true,
+      "stdout_sha256": "92bcaecc779a4aba83b593969f37d5a032c0d46127af8fff448621ab378300bc",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round6/head/check.py",
+      "source_sha256": "5223e8f395535b01fffc6c8fc1f5d74a81bf966abdf8f6ea48b040d606745795",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/head/controls.json",
+      "expected_output_sha256": "fd8dd6d51d3359f4c47c90c4476584cb784bb2437cdd064a37d24e08f4a1e0b4",
+      "output_matches": true,
+      "stdout_sha256": "fd8dd6d51d3359f4c47c90c4476584cb784bb2437cdd064a37d24e08f4a1e0b4",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round6/head/check.py",
+      "source_sha256": "5223e8f395535b01fffc6c8fc1f5d74a81bf966abdf8f6ea48b040d606745795",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/head/controls.json",
+      "expected_output_sha256": "fd8dd6d51d3359f4c47c90c4476584cb784bb2437cdd064a37d24e08f4a1e0b4",
+      "output_matches": true,
+      "stdout_sha256": "fd8dd6d51d3359f4c47c90c4476584cb784bb2437cdd064a37d24e08f4a1e0b4",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round6/renewal/check.py",
+      "source_sha256": "83048558581904efb0a3a8a9b0bb8e56b9000e7d2e18351ec4fcbf8bb4ab74cf",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/renewal/controls.json",
+      "expected_output_sha256": "e336079cce323bded3f02ab023e8ad3c475422364cf34db98f5a1d94bb474312",
+      "output_matches": true,
+      "stdout_sha256": "e336079cce323bded3f02ab023e8ad3c475422364cf34db98f5a1d94bb474312",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round6/renewal/check.py",
+      "source_sha256": "83048558581904efb0a3a8a9b0bb8e56b9000e7d2e18351ec4fcbf8bb4ab74cf",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round6/renewal/controls.json",
+      "expected_output_sha256": "e336079cce323bded3f02ab023e8ad3c475422364cf34db98f5a1d94bb474312",
+      "output_matches": true,
+      "stdout_sha256": "e336079cce323bded3f02ab023e8ad3c475422364cf34db98f5a1d94bb474312",
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "status": "PASS"
+}

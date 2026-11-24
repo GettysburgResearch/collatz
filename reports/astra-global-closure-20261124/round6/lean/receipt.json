@@ -1,0 +1,81 @@
+{
+  "scope": "Fresh compilation of all three new modules, which have no local project imports; existing Mathlib/package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runner_sha256": "69708656c128ccee23c07628bb1e46fffb183dbcfecd5713c825caa8c405e99f",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "PrefixInterpolation",
+      "source": "research/astra-global-closure-20261124/round6/arithmetic/PrefixInterpolation.lean",
+      "source_sha256": "4408e528e717f853d1c190a4b158cdc1140ce9bad5e7e551e9434215167193b8",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round6/lean/PrefixInterpolation.log",
+      "log_sha256": "7eb726097461e5749a0ae046567ee5fdfcf8d5ea1aa5f3f226cd06e042623af1",
+      "axiom_reports": [
+        "'Collatz.PrefixInterpolation.local_targets' depends on axioms: [propext]",
+        "'Collatz.PrefixInterpolation.clock_overlap' does not depend on any axioms",
+        "'Collatz.PrefixInterpolation.interpolate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PrefixInterpolation.product_dvd_value_times_overlap' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 4,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "FixedTargetRays",
+      "source": "research/astra-global-closure-20261124/round6/head/FixedTargetRays.lean",
+      "source_sha256": "388721e85e4e8a5d666e59bd2eeb449f7da28e7c7468b0e44036066ade0d3e80",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round6/lean/FixedTargetRays.log",
+      "log_sha256": "b7c35457fbb87a99ec10d0454d1bcc193ad1c4036a784bc982f737e806935c02",
+      "axiom_reports": [
+        "'FixedTargetRays.oddRun' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.halvingRun' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.evenPairs' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.evenPairsPlusOne' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.oddEndpoints' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.originalArms' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.inverseRescue' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.smallOfFirstFailure' depends on axioms: [propext, Quot.sound]",
+        "'FixedTargetRays.cut' does not depend on any axioms",
+        "'FixedTargetRays.forcedPeak' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 10,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "MarkedRouter",
+      "source": "research/astra-global-closure-20261124/round6/renewal/MarkedRouter.lean",
+      "source_sha256": "049f1726d9cadd9049183b059ea465d4e69009abc3a01086384cd3dca30d53d2",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round6/lean/MarkedRouter.log",
+      "log_sha256": "346678b1b3e4c60724f5ec306179a19ae43c2389e86475ac42b69f87d791d7fb",
+      "axiom_reports": [
+        "'Collatz.MarkedRouter.trace_add' depends on axioms: [propext]",
+        "'Collatz.MarkedRouter.first_return_six' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.MarkedRouter.padded' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MarkedRouter.pair_split' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MarkedRouter.physical_pair' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MarkedRouter.physical_chain' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MarkedRouter.realize_residue' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 7,
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "module_count": 3,
+  "selected_axiom_report_count": 21,
+  "all_sources_unchanged": true
+}
