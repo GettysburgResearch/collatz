@@ -1,0 +1,89 @@
+{
+  "schema": "collatz-astra-closure-heads/v1",
+  "scope": "Focused scientific intake; repository metadata and named source reads, not blanket proof audits.",
+  "heads": [
+    {
+      "pr": 192,
+      "title": "Collatz: unrestricted closure test, ordinary descent, and five-module Lean replay",
+      "head": "5720732b9c83361f5cded4f8bfac24e36f469937",
+      "branch": "research/astra-central-closure-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "updated_at": "2026-11-24T08:18:45Z"
+    },
+    {
+      "pr": 182,
+      "title": "Collatz: Lean ordinary-series criterion and multiscale closure attempts",
+      "head": "a30402b7849c437edf245974d9f436d1f105e08e",
+      "branch": "research/dyadic-band-descent-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "updated_at": "2026-11-24T08:17:07Z"
+    },
+    {
+      "pr": 201,
+      "title": "Collatz: killed Green occupation removes the balanced head-obstruction branch",
+      "head": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "branch": "gpt62/killed-green-head-closure-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "updated_at": "2026-11-24T07:57:35Z"
+    },
+    {
+      "pr": 193,
+      "title": "Collatz: ordinary critical mergers, quantitative recurrence, and adelic rigidity",
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "branch": "research/astra-universal-descent-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "updated_at": "2026-11-24T07:43:35Z"
+    },
+    {
+      "pr": 197,
+      "title": "Collatz: AYH first-passage bounds and Lean parity marks",
+      "head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "branch": "research/ayh-resource-reset-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197",
+      "updated_at": "2026-11-24T07:42:08Z"
+    },
+    {
+      "pr": 200,
+      "title": "Regularity rigidity: macroscopic ancestor blocks, all-base automaticity obstruction, and 1/9 five-return pressure",
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "branch": "research/gpt62-regularity-rigidity-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "updated_at": "2026-11-24T07:14:58Z"
+    },
+    {
+      "pr": 199,
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "branch": "research/optimal-critical-ancestors-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199",
+      "updated_at": "2026-11-24T07:10:44Z"
+    },
+    {
+      "pr": 195,
+      "title": "Collatz: ordinary mergers, cycle denominator rank, and adelic boundaries",
+      "head": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+      "branch": "research/astra-global-closure-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "updated_at": "2026-11-24T07:04:26Z"
+    },
+    {
+      "pr": 188,
+      "title": "Collatz: Lean persistent descent, all-rotation cycle bounds, and residue rigidity",
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "branch": "research/scalar-carry-cocycle-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/188",
+      "updated_at": "2026-11-24T06:48:33Z"
+    }
+  ],
+  "additional_pins": [
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437"
+    },
+    {
+      "pr": 192,
+      "head": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/CYCLE_EXTENSION.md"
+    }
+  ]
+}

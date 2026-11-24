@@ -1,0 +1,116 @@
+{
+  "schema": "collatz-source-manifest/v1",
+  "scope": "All scientific packet files; reports are outside this noncircular source binding.",
+  "files": [
+    {
+      "path": "research/astra-closure-20261124/LATEST_CONNECTIONS.md",
+      "sha256": "3af0596483cd31556bf75e7b82e57afbd5f38ef5cb872e4b5495d20a2c050620",
+      "bytes": 4695
+    },
+    {
+      "path": "research/astra-closure-20261124/README.md",
+      "sha256": "4a1b0a60f41e72dc647b8ab5debad2ba12748ae434d24fe33dbc3258652acbed",
+      "bytes": 10299
+    },
+    {
+      "path": "research/astra-closure-20261124/SOURCES.md",
+      "sha256": "2fe9d54a51caa6b5963f1a3fad8906313b2831b666a0a86544fd61344c7941ed",
+      "bytes": 5819
+    },
+    {
+      "path": "research/astra-closure-20261124/arithmetic/LATEST_ARITHMETIC.md",
+      "sha256": "12b566258aa3c6da23165bb8aeaa451468a423984b1a579c9af73dabacf5c572",
+      "bytes": 5527
+    },
+    {
+      "path": "research/astra-closure-20261124/arithmetic/MountainReturns.lean",
+      "sha256": "09ecd045fa5bbb51bf77754d3b99c1cf91e38539b6181d38bf41e2e99ca9f618",
+      "bytes": 5744
+    },
+    {
+      "path": "research/astra-closure-20261124/arithmetic/README.md",
+      "sha256": "ffc38fe9bb0f00a52f592ce289a04667db4a3030b27551334d5ec7845609246b",
+      "bytes": 16385
+    },
+    {
+      "path": "research/astra-closure-20261124/arithmetic/REVIEW_HEAD_ROOTS.md",
+      "sha256": "0d3cc8f838aaf2f6fe147d0c1bda0836e073b8770952b2899598c47e9430d347",
+      "bytes": 7852
+    },
+    {
+      "path": "research/astra-closure-20261124/arithmetic/check.py",
+      "sha256": "d4e1fe0c6fe8afbb2ebaacd843e7fe79260620c4a36f0758f9c7f333991f9eb9",
+      "bytes": 3672
+    },
+    {
+      "path": "research/astra-closure-20261124/boundary/BarrierExit.lean",
+      "sha256": "8d6936497188e4a0d52acb3918e540f635a773bbf217cd3c9d0855f02c0ad48b",
+      "bytes": 1468
+    },
+    {
+      "path": "research/astra-closure-20261124/boundary/CROSSINGS.md",
+      "sha256": "ae08ffa8f0a032853be6ed8636f4d4935ddfac6a91109475cc73283123fa66db",
+      "bytes": 11267
+    },
+    {
+      "path": "research/astra-closure-20261124/boundary/GLOBAL_ATTEMPT.md",
+      "sha256": "a6df3d15911ddfb8d82aebe001487ff065352ff0bdeb2454a3513f53f33c4a17",
+      "bytes": 6833
+    },
+    {
+      "path": "research/astra-closure-20261124/check.py",
+      "sha256": "0f9306a083c65c88b72928a211d1bbc7bc2f80021a8e7c2821e611c0fdcf3fa2",
+      "bytes": 5071
+    },
+    {
+      "path": "research/astra-closure-20261124/descent/REPAYMENT.md",
+      "sha256": "c429aee775ff64ceced5ee26641a633020b5ef1eec1d9c21aea4af8ceb328996",
+      "bytes": 18529
+    },
+    {
+      "path": "research/astra-closure-20261124/descent/Repayment.lean",
+      "sha256": "198ab92b752bfefae439b79de0b8d05691b7382e416905fd5a5b56395b06a9f9",
+      "bytes": 5863
+    },
+    {
+      "path": "research/astra-closure-20261124/descent/check.py",
+      "sha256": "61265bd9afa6a51985a3dc7c4660036e9557fb76712431ed56141a06e9d31886",
+      "bytes": 2736
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/HEAD_ROOTS.md",
+      "sha256": "70022c74e402a510efad179c6188cf2ac5eaf5cc2541379c9ce4965bef651410",
+      "bytes": 18642
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/PhysicalReturn.lean",
+      "sha256": "e30fd7e01748006724854b36b09df28ead58a8ee877a96ff2f8a7c62840b6fe2",
+      "bytes": 5423
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/RETURNS.md",
+      "sha256": "50aacd5230da0aac0c6fd8b95a44d7e7120f45181d6ba677128c7c81b8e4d635",
+      "bytes": 9766
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/REVIEW_ARITHMETIC.md",
+      "sha256": "fc05b8d95903f9b0eabaa502bcc5ccd2fba77f626b7f6fd97a9d3b35cfec82d1",
+      "bytes": 8678
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/REVIEW_BOUNDARY.md",
+      "sha256": "556711f957b1d6c971254b4f21157ff65517928f5af6c81ff7c9270c3249aa00",
+      "bytes": 6876
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/REVIEW_DESCENT.md",
+      "sha256": "19623633e3e4e5c42a87b02a258ca8471756e13a0514307a3a6c490e83cf20d8",
+      "bytes": 11350
+    },
+    {
+      "path": "research/astra-closure-20261124/transfer/controls.py",
+      "sha256": "9ac7fbd381e7d2600866db1dd585236b2f4bee9c060c4968477ca81fa5ba942a",
+      "bytes": 2325
+    }
+  ]
+}
