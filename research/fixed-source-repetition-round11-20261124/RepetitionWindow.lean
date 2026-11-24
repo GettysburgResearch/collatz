@@ -1,7 +1,12 @@
-import Mathlib.Tactic
+import Mathlib.Data.Nat.GCD.Basic
+import Mathlib.Tactic.ByContra
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
-/-! Round 11 finite arithmetic candidate. Compiler replay is pending.
-    No assertion of arbitrary-source realization or Collatz convergence. -/
+/-! Round 11 finite arithmetic core, replayed with the pinned toolchain in Round 13.
+    No assertion of arbitrary-source realization or Collatz convergence.
+    The Round 13 execution report binds the exact source and axiom audit. -/
 namespace Collatz.FixedSourceRepetition
 set_option autoImplicit false
 
@@ -166,5 +171,22 @@ theorem four_window_reject (q : ℕ → ℕ) (s : ℕ → Bool) (H t : ℕ)
   have hf := equal_start_future q s H (2 * H) t (by omega)
     (fun i hi => he i (by omega)) h0
   exact hd hf.2
+
+#print axioms denom
+#print axioms carry
+#print axioms Edge
+#print axioms extra
+#print axioms wordDen
+#print axioms wordDen_succ
+#print axioms aligned
+#print axioms difference_dvd
+#print axioms small_shared_word
+#print axioms edge_height
+#print axioms prefix_height
+#print axioms two_start_bounds
+#print axioms early_repeat
+#print axioms edge_deterministic
+#print axioms equal_start_future
+#print axioms four_window_reject
 
 end Collatz.FixedSourceRepetition

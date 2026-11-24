@@ -1,0 +1,6 @@
+'Collatz.CycleBudget.product_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CycleBudget.product_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CycleBudget.half_bit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CycleBudget.endpoint_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CycleBudget.primitive_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CycleBudget.no_periodic_carry' depends on axioms: [propext, Classical.choice, Quot.sound]

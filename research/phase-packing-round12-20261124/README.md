@@ -1,5 +1,15 @@
 # Round 12: prefix escape, phase-conditioned entropy, and a finite rational phase classifier
 
+> **Round 13 verification update — 24 November 2026.** The finite Lean
+> module in this directory has now been repaired where needed and compiled
+> with Lean 4.34.1 and pinned Mathlib, with warnings as errors. The named
+> declaration axiom audit contains only Lean's standard axioms. The original
+> authoring-session status below is retained as historical evidence; it no
+> longer describes the updated finite module. The broader written consumers
+> are not thereby formalized. See the [Round 13 execution report](../../reports/2026-11-24-astra-round13/EXECUTION.md).
+
+## Original authoring-session record
+
 **VERIFICATION STATUS — LEAN NOT CHECKED.** This is proposed written mathematics
 and a finite exact Python replay. Lean, Lake, and Elan are absent from this session's
 container; network access for installing the toolchain also failed. The eight Lean

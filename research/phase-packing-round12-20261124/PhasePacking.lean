@@ -1,7 +1,16 @@
-import Mathlib.Tactic
+import Mathlib.Algebra.Order.Ring.Rat
+import Mathlib.Data.Nat.GCD.Basic
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Tactic.ByContra
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
-/-! PROPOSED Lean finite arithmetic core. NOT compiled or axiom-audited.
-The analytic, orbit counting, and finite recognizer consumers are in README.md. -/
+/-! Finite arithmetic core, repaired and replayed in Round 13 with Lean 4.34.1.
+The analytic, orbit-counting, and finite-recognizer consumers remain written
+proofs in README.md; this module does not prove universal convergence. -/
 namespace Collatz.PhasePacking
 set_option autoImplicit false
 
@@ -44,18 +53,18 @@ theorem normalized_edge (q r a b c d : ℕ)
     exact mul_le_mul_of_nonneg_right (by linarith) (by positivity)
   have hh := hleft.trans hright
   have hdc : 0 < (2 : ℚ) ^ d * 2 ^ c := by positivity
-  apply (mul_le_mul_right₀ hdc).mp
+  apply (mul_le_mul_iff_left₀ hdc).mp
   calc
     (2 : ℚ) ^ b * ((r : ℚ) / 2 ^ d) * (2 ^ d * 2 ^ c) =
-        2 ^ b * 2 ^ c * r := by field_simp; ring
+        2 ^ b * 2 ^ c * r := by field_simp
     _ ≤ (3 * (q : ℚ) + 2 ^ c) * 2 ^ d := hh
-    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp; ring
+    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp
 
 /-- Height recovered from the integer carry guard, without real logarithms. -/
-theorem cubic_height (q u y : ℚ) (hu : 0 < u) (hy : 1 ≤ y)
+theorem cubic_height (q u y : ℚ) (hu : 0 < u) (_hy : 1 ≤ y)
     (hq : q = y * u) (h : u ^ 3 ≤ 4 * q) : q ^ 2 ≤ 4 * y ^ 3 := by
   have ht : u ^ 2 ≤ 4 * y := by
-    apply (mul_le_mul_right₀ hu).mp
+    apply (mul_le_mul_iff_left₀ hu).mp
     calc
       u ^ 2 * u = u ^ 3 := by ring
       _ ≤ 4 * q := h
