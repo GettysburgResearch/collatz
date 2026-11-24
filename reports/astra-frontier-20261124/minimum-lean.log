@@ -1,0 +1,4 @@
+'Collatz.ElementaryPacking.nondescending_affine_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ElementaryPacking.nondescending_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ElementaryPacking.nondescending_log_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ElementaryPacking.farey_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]

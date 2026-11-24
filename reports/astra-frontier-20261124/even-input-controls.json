@@ -1,0 +1,11 @@
+{
+  "source_limit": 12000,
+  "competing_clock_limit": 40,
+  "source_clock_range": "0 <= b <= v2(n + 1)",
+  "eligible_sources_with_v3_positive": 4000,
+  "exact_smaller_mergers_replayed": 577,
+  "odd_input_guard": "p > b + e",
+  "even_input_bound": "2 ** (a - p + e) > 3 ** e",
+  "total_clock_bound": "2 ** (a - b - 1) > 3 ** e",
+  "result": "PASS"
+}

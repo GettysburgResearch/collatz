@@ -1,0 +1,319 @@
+{
+  "schema": "collatz-astra-source-manifest/v1",
+  "scope": "Research packet and evidence files; this manifest excludes itself. Git tree identity covers all files.",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "files": [
+    {
+      "path": "reports/astra-frontier-20261124/CYCLE_AND_MERGER_REVIEW.md",
+      "bytes": 8650,
+      "sha256": "cbd813e3202c5ca59fac81668efe6a852bf6b71e1d54b798be15e073391f15e0",
+      "git_blob": "5d42f648cca627ac48c45be543c99cfd50356863"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/FINITE_CONTROLS.json",
+      "bytes": 10703,
+      "sha256": "79b1014eda349a960ed45ec6962a518895124ef0224bb45ea92cbce24e31f902",
+      "git_blob": "6cf0ca6649ac51d9eddf6505a610dc03f0b5417b"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/FROZEN_SOURCE_AUDIT.json",
+      "bytes": 6007,
+      "sha256": "b6bd5deae01762419faf8c331fcdb89da9388dbf55b6cc596c8557ef12419cb1",
+      "git_blob": "56992f56bdf84793473744010faf9a9a8e66ce97"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/INDEPENDENT_REVIEW.md",
+      "bytes": 15617,
+      "sha256": "03f20bc689c39ae658246b5be8ef6867b2cecbd4ca94a4cb82d0782a4c142a71",
+      "git_blob": "c7b4a5c027c49458a187c5c7b881aeecb83d689b"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/LEAN_RECEIPT.json",
+      "bytes": 13302,
+      "sha256": "419e0276f8cae9ca2fad1715157ab7a9134107aea67c152ccfd4757d1ffde109",
+      "git_blob": "db57d11088dbad49c41044118f842fb04c0e49ff"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/MINIMUM_ARC_REVIEW.md",
+      "bytes": 3510,
+      "sha256": "c75bd067393995f701bb4ddba6d5d8a4eda44b23c7ca58d890f724c9416cd84f",
+      "git_blob": "b401cb4e3c6fa1c1596d1b11694984b0590a9735"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PORTABLE_RECEIPT.json",
+      "bytes": 8254,
+      "sha256": "b5a336fcaf572548e524a2a3212f6fbdb650213f99c3ddf3aa6c7bb99137d213",
+      "git_blob": "2c30d5c87a799ae09cb829c3540a5b0a84d4ebdc"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PR188_196_REVIEW.md",
+      "bytes": 13145,
+      "sha256": "e05cc3030d59a5d8a490262a346cf39b7d103e3aa1375153f7267cc4395d09ca",
+      "git_blob": "117755b1a271a9e95f3059962fefd82a304e55a9"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PR190_AUDIT.md",
+      "bytes": 7739,
+      "sha256": "cfc09843e4175404f4027da646a9a2e1f153c72c6cdbc56ed7dec77f065dbd47",
+      "git_blob": "e0cd1ef174ee5a5e450a1660f55655f53be56b61"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PR192_189_REVIEW.md",
+      "bytes": 6839,
+      "sha256": "053ef9177af7e34e029adbe2c4dc450ac0284cb6ad46e7e65504aed2072b248c",
+      "git_blob": "5feb431625214095ab48033050e07b684bd126ef"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PR193_195_REVIEW.md",
+      "bytes": 12126,
+      "sha256": "8be174d4a43e89c818d8191a6fdd2721e18225b675a92db34fbb834f120ecd77",
+      "git_blob": "516bfc3288d3640fff627b49efdafb68e1b3a53f"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/PR194_REVIEW.md",
+      "bytes": 9557,
+      "sha256": "2becfc25d3bf5c00e184b2042b62b9dcd97dd284d4681490d570e0866e2f1159",
+      "git_blob": "36e042c66fcc803a6a44a5cd64d73ece91d12510"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/README.md",
+      "bytes": 5045,
+      "sha256": "f22f923ef116d206d1b01472818c10b58ba92b427941f186b43fca5d47d38dda",
+      "git_blob": "401ce1bb19db31eb723a4d501d5ec309ed598ea0"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/TWO_SIDED_REVIEW.md",
+      "bytes": 6329,
+      "sha256": "570d31a2fa07478c2d6281746c8ad7c103fe2b9cc9a657144aa3ae2ceeefc749",
+      "git_blob": "38b056d04d7876affbd199ec07c14f9fe87c48c5"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/cycle-lean.log",
+      "bytes": 2024,
+      "sha256": "ace8b0a6c6d354b3d03b7d883705674997eb8c5717d621e369b003196b9b6a8c",
+      "git_blob": "b75b3d2372acafc2a28aad572d1e44c52d4cfd38"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/even-input-controls.json",
+      "bytes": 349,
+      "sha256": "440a3dd5187b9737acfd7ddf751654dfbf048121a576bc2ee5ba4895ee20a4eb",
+      "git_blob": "0b08d449f88d66801ed30c7915f1286936465b7a"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/farey-gate.log",
+      "bytes": 206,
+      "sha256": "c44b946de4dc90117780142df39f7c130efe9b50ee1f558448cd20b882d6ffff",
+      "git_blob": "effe16e848cdff321a19b678474e6572427e61a4"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/first-crossing-envelope.log",
+      "bytes": 202,
+      "sha256": "1dee2eddaa2e2951145037ba7f36ddc3d983dbed62002ed267c3f4b9de262e5d",
+      "git_blob": "a81b7a9da6a75512e76a20ac89bec8d8dd15b0a4"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/frontier-pins.json",
+      "bytes": 5425,
+      "sha256": "b2273e3db379b54c46175005b4658548a1cdaaac30da9391574b07988f342f90",
+      "git_blob": "ae461c53b666eb34b34906b4f11897e062520000"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/global-finite-controls.log",
+      "bytes": 235,
+      "sha256": "a55cf4685499eb7d9c73375a86d2781216861086f2961ff4a64fd05179591d2f",
+      "git_blob": "b4bd106d09f4bdfc8c5432728eff9b1bd4d5e1d3"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/late-frontier-pins.json",
+      "bytes": 3255,
+      "sha256": "8741942d6eee8b3966040a23b66541ab1792ff130bb0182186e61eb82181dbf5",
+      "git_blob": "8cf53b18fe252d90b4998f2a124377e6037f2ed2"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/minimum-lean.log",
+      "bytes": 435,
+      "sha256": "1a1d18df161ad5d96b715ce5e96e6d08e6ace1be7b572756e4768d1c700217f1",
+      "git_blob": "7f0353e991380d5a671fd01d156920be8f856d40"
+    },
+    {
+      "path": "reports/astra-frontier-20261124/ordinary-206178386.log",
+      "bytes": 172,
+      "sha256": "cd62ed751945e20926222b47d17a4af59c875ad850db26159564bad78e191302",
+      "git_blob": "5c4bee6aaddeb904bd45cce1685dab90797edb78"
+    },
+    {
+      "path": "research/astra-frontier-20261124/BRIDGE_AUDIT.md",
+      "bytes": 9496,
+      "sha256": "5f73fac2bac5056dd9d40b1576122c46c7e322c817f1714d28955425a84c6e96",
+      "git_blob": "9cadbfab1677a0ec6e021ad1279361c73e527332"
+    },
+    {
+      "path": "research/astra-frontier-20261124/CYCLE_CLOSURE.md",
+      "bytes": 11110,
+      "sha256": "3bc5953b10af0f7a979ba3ad15579bfa557499c52baf5c1a3fbdf1bf70842231",
+      "git_blob": "5ee14f4b92eb764444d13eddfefa50d6be1149ec"
+    },
+    {
+      "path": "research/astra-frontier-20261124/EVEN_INPUT_REFINEMENT.md",
+      "bytes": 2983,
+      "sha256": "f2879757a8be643c6cef91133439a1450db922550a19a66b971ba4d446506c97",
+      "git_blob": "c45f1cdd5317491650e87d5198752ee3e06530dd"
+    },
+    {
+      "path": "research/astra-frontier-20261124/GLOBAL_CLOSURE_ATTEMPT.md",
+      "bytes": 7046,
+      "sha256": "455c4d0737fb0f93823ab68f103fa74457a59bd642b4aefb6826048916218860",
+      "git_blob": "b8d235cce661af99af8ca2558f584509b3927609"
+    },
+    {
+      "path": "research/astra-frontier-20261124/LATE_FRONTIER.md",
+      "bytes": 9527,
+      "sha256": "b7c17871ec62d0a563e87bd9e51db5f93eab1dceaff619302dd24c0e8511a93f",
+      "git_blob": "3db7544ad52735306d3f9386d71235be321482e3"
+    },
+    {
+      "path": "research/astra-frontier-20261124/MINIMUM_ARC.md",
+      "bytes": 4188,
+      "sha256": "431ba55291001e00bdfd134cabff346afdf2dfb1e7479a3160fe327970514329",
+      "git_blob": "4a8aa3b7ea3162dd6b64501f7b0231df475bd413"
+    },
+    {
+      "path": "research/astra-frontier-20261124/QUANTITATIVE_GLUING.md",
+      "bytes": 5764,
+      "sha256": "5aacd699ddda089ff217ab1433799cf33d467eb85617abb846b07d4504adbcf3",
+      "git_blob": "6e82806280af8933dc80decf3ed0286a48029c33"
+    },
+    {
+      "path": "research/astra-frontier-20261124/README.md",
+      "bytes": 16655,
+      "sha256": "3b9ff72b00716c0c0e6446c73884a35cfe44f14d615449b21b440d5e764d8150",
+      "git_blob": "3b611f83ee0d8754ced138606e827b276d4df23b"
+    },
+    {
+      "path": "research/astra-frontier-20261124/REDUCIBLE_SUBSTITUTIONS.md",
+      "bytes": 14532,
+      "sha256": "9815db9db17849d0c45078c78e0df9bf9dfb9d1c7a5ae10cc4c256f1f49ad17e",
+      "git_blob": "3d3f094b7e36a0b34ec2c2613755e9cbd985514a"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/check_even_input_refinement.py",
+      "bytes": 2720,
+      "sha256": "2cdcf36fd60d4a2dba5743cd7703f2d1ca7a7bc9239d58766620e2c998f9c5e8",
+      "git_blob": "915026c60df068d31be2ed18da07011908e28be9"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/check_farey_gate.py",
+      "bytes": 1343,
+      "sha256": "6e9f87d499a94ec223d70bd239b78325bd4944f93883a97dd84b1361fb1c0430",
+      "git_blob": "839ee5d890526274c88028f01a5054050d1e5aaa"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/check_first_crossing.py",
+      "bytes": 2338,
+      "sha256": "593257a2ab62468bad78b5e3054d5eb42be7d56443750ae993a3f0e1189238a3",
+      "git_blob": "67a3ddbb9dd8c929d59ee47fb4b4798408497e75"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/check_global_barrier.py",
+      "bytes": 3720,
+      "sha256": "2d8a4955f297026efc76ea459522f9ffb00a0eaeb8c7cb4193de21ba54e05142",
+      "git_blob": "5b26c38398c082ef35909935200af80e79d982d2"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/check_ordinary_descent.cpp",
+      "bytes": 1931,
+      "sha256": "ad7e60ba6d6f4f618ef2af7f9a2f992c5a371bb9b899c00fcaddd63a0d52c4b4",
+      "git_blob": "e9f10d5bc77f86008dde3aae16015ab5f45b9902"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/reducible_checks.py",
+      "bytes": 3809,
+      "sha256": "09e41d0f96834be06f4f191875bb7c83930bef85d517a65fddc9ac5de180430a",
+      "git_blob": "731b290e3b2f88fef723ff1fcc3468b3cb0da465"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/replay.py",
+      "bytes": 2743,
+      "sha256": "11c7a6a52681064b2681a22a5c9f40d76c69c79b1c8a5ec1fbf25c2eab125d3b",
+      "git_blob": "484a2ec3be3e08339a76f5977a4867a346588ba7"
+    },
+    {
+      "path": "research/astra-frontier-20261124/controls/verify_gluing.py",
+      "bytes": 4772,
+      "sha256": "0928627b6f4ed072fe12132aae41ba12c37ec94ca71a46f0d7823a0cfdf51291",
+      "git_blob": "5c83b369a56534d43dc3526d2583ec263e734653"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/CommutingImages.lean",
+      "bytes": 3762,
+      "sha256": "1bda895e96317a01fd75a9ff2a01a11bb19b872c3f5879f3cf35ef765743893d",
+      "git_blob": "a6e906f6ba2298fb27bc0003a8b612f52bfd81e6"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/CyclePacking.lean",
+      "bytes": 17746,
+      "sha256": "db704e854e95fbfca1c2f8438c368b8b2250a1268fda60e6deb867f18240851d",
+      "git_blob": "1623eca9961e595179875f3d1da39f8ef0031669"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/DigitMahler.lean",
+      "bytes": 1866,
+      "sha256": "8cbd17f0f2a399428717b8ca2558851d2b094db47e167f6d7d3ea5cf105597eb",
+      "git_blob": "f050f28c0dc4ca24f92a971cc0462d6ea50b9a8b"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/ExplicitConcentration.lean",
+      "bytes": 4436,
+      "sha256": "d3015ce91c7ff7212bc39aaccc883eb414311df897bd8efe805249478c07e3cc",
+      "git_blob": "681373b36cc76d1f5855bf695c3897088f7e4db2"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/GluingKernel.lean",
+      "bytes": 2121,
+      "sha256": "f1577865f785f79b01f0ece2365aa7a2c18077b1d2b95372a7a3912b7707f4f7",
+      "git_blob": "cd7414f961cd208945dbd359da4e6e1a45e43046"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/MahlerRegularity.lean",
+      "bytes": 10913,
+      "sha256": "d806e3d96d1f8823b67bff26022b7906478b27f2e87a79945dd00168b4754f60",
+      "git_blob": "bd879814ccbfe9a072c5850542625035f3cd3caf"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/MinimumCrossing.lean",
+      "bytes": 3826,
+      "sha256": "36a5de08da5ff9153008b4ac9ab4d17a08cb18de02c7b72d89b9fcd27cbab6be",
+      "git_blob": "95736a3ba6c3ffcb13f86cb10b0666668b26c01d"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/PhasePacking.lean",
+      "bytes": 6014,
+      "sha256": "5627ad427559f976bc1537c8b861376297f479699fa005024410771c9696236f",
+      "git_blob": "624f3a1ff06bba872c307fe3c07de4361a56eca7"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/README.md",
+      "bytes": 9183,
+      "sha256": "6890939f3ae34ab76bc9f9a004ec2323a20ae957e4e54dcc217a80bc0b2f2585",
+      "git_blob": "e070583a090923ff089334f04b5ae4d698157f6f"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/RepetitionWindow.lean",
+      "bytes": 8352,
+      "sha256": "367f3c075d93db86e1e19190a1fe777a32581d93879b168d7ffca6ab079928f9",
+      "git_blob": "5e209170404c1489d2e37c98cee823a487afdd8f"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/TwoSidedPacking.lean",
+      "bytes": 5223,
+      "sha256": "6251fe82f3e4ef6dccc465434b5a2a9228d1ef2830114bcc15f776eeb1ce965f",
+      "git_blob": "6718e799b2925423c53795eae124af9e1d28a365"
+    },
+    {
+      "path": "research/astra-frontier-20261124/lean/replay_lean.py",
+      "bytes": 4916,
+      "sha256": "1282e5513564e4ad7152c492f79f0d9414c34c1490f9b6ff151a846819c3f78d",
+      "git_blob": "39178a4f1de8ca2d43f5fab8c21095decddff2e0"
+    }
+  ]
+}

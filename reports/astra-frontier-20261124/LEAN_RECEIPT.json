@@ -1,0 +1,475 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_git_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "warning_as_error": true,
+  "auto_implicit": false,
+  "modules": [
+    {
+      "file": "CyclePacking.lean",
+      "sha256": "db704e854e95fbfca1c2f8438c368b8b2250a1268fda60e6deb867f18240851d",
+      "axioms": {
+        "Collatz.ElementaryPacking.bits_follows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.bits_length": [
+          "propext"
+        ],
+        "Collatz.ElementaryPacking.follows_append": [],
+        "Collatz.ElementaryPacking.follows_affine": [
+          "propext"
+        ],
+        "Collatz.ElementaryPacking.ones_le_length": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.carry_plus_pow_le": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.carry_lt_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.same_future": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.cycle_barrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.boundary_lt_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.two_words_identify": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.card_le_dictionary_sq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.orbit_period_le_dictionary_sq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.ones_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.carry_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.beforeCrossing_carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.firstCrossing_length": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.beforeCrossing_envelope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.firstCrossing_center_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.firstCrossing_boundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.firstCrossing_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "DigitMahler.lean",
+      "sha256": "8cbd17f0f2a399428717b8ca2558851d2b094db47e167f6d7d3ea5cf105597eb",
+      "axioms": {
+        "BinaryDigitMahler.rational_digit_degrees": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "ExplicitConcentration.lean",
+      "sha256": "d3015ce91c7ff7212bc39aaccc883eb414311df897bd8efe805249478c07e3cc",
+      "axioms": {
+        "Collatz.ExplicitConcentration.ternary_valuation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.ternary_divisibility": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.lift_exists": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.state_positive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.state_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.state_edge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.state_strict_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.state_residue": [
+          "propext"
+        ],
+        "Collatz.ExplicitConcentration.terminal_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ExplicitConcentration.explicit_family": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "GluingKernel.lean",
+      "sha256": "f1577865f785f79b01f0ece2365aa7a2c18077b1d2b95372a7a3912b7707f4f7",
+      "axioms": {
+        "Collatz.OrdinaryGluing.state_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGluing.physical_one_edge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGluing.ternary_residue": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGluing.terminal_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGluing.exact_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "MahlerRegularity.lean",
+      "sha256": "d806e3d96d1f8823b67bff26022b7906478b27f2e87a79945dd00168b4754f60",
+      "axioms": {
+        "MahlerPhysical.telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.finite_mahler": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.affine_expand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.eliminate_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_injective_odd_denominator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.determinant_zero_iff_commute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.physical_determinant_zero_iff_commute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.physicalSlope_weight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.determinant_at_every_iterate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "PhasePacking.lean",
+      "sha256": "5627ad427559f976bc1537c8b861376297f479699fa005024410771c9696236f",
+      "axioms": {
+        "Collatz.PhasePacking.clock_carry_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.normalized_complete": [
+          "propext"
+        ],
+        "Collatz.PhasePacking.normalized_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.cubic_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.canonical_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.canonical_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.returning_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.past_endpoint_unique": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "RepetitionWindow.lean",
+      "sha256": "367f3c075d93db86e1e19190a1fe777a32581d93879b168d7ffca6ab079928f9",
+      "axioms": {
+        "Collatz.FixedSourceRepetition.wordDen_succ": [
+          "propext"
+        ],
+        "Collatz.FixedSourceRepetition.aligned": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.difference_dvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.small_shared_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.prefix_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.two_start_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.early_repeat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_deterministic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.equal_start_future": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.four_window_reject": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "TwoSidedPacking.lean",
+      "sha256": "6251fe82f3e4ef6dccc465434b5a2a9228d1ef2830114bcc15f776eeb1ce965f",
+      "axioms": {
+        "Collatz.TwoSidedPacking.cycle_spread_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.lattice_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.spaced_span": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.denominator_packing_core": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.composed_carry_difference": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_L": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_P": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_smaller_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_exists": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shifted83_L": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shifted83_P": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_first_gap": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.bezout_torus": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "CommutingImages.lean",
+      "sha256": "1bda895e96317a01fd75a9ff2a01a11bb19b872c3f5879f3cf35ef765743893d",
+      "axioms": {
+        "_private.CommutingImages.0.MahlerPhysical.length_le_substitute": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.CommutingImages.0.MahlerPhysical.commute_substituted_prefix": [
+          "propext"
+        ],
+        "MahlerPhysical.period_of_commuting_images": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.regularity_of_aperiodic_fixed_sequence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "MinimumCrossing.lean",
+      "sha256": "36a5de08da5ff9153008b4ac9ab4d17a08cb18de02c7b72d89b9fcd27cbab6be",
+      "axioms": {
+        "Collatz.ElementaryPacking.nondescending_affine_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.nondescending_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.nondescending_log_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ElementaryPacking.farey_coordinates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "mathlib_git_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+}
