@@ -5,6 +5,17 @@ This packet gives three source-preserving deductions and a Lean proof candidate 
 the finite carry arithmetic. The Lean candidate has not been compiled in this
 environment. No source-qualified analytic theorem is upgraded to kernel verification.
 
+## Attribution correction — 24 November 2026
+
+S1 rederives the strict stationary collision-gap theorem already proved in
+PR180 at `7cfd911d35382d9d3bc988060ba88ade78a4267e`,
+`research/whole-source-20261123/COLLISION_CORE.md`, sections 3–4,
+equations (16)–(17). Its conclusion is not a new theorem of this packet.
+The sufficient contrary hypothesis using upper collision dimension in section
+1.3 is an immediate corollary of that earlier upper-dimension conclusion.
+S2, S3 and the finite-phase extension have separate statements and scopes.
+This correction changes attribution only; the original proof is preserved below.
+
 ## Sources and notation
 
 We use the actual accelerated positive odd map U(q)=(3q+1)/2^g(q),
