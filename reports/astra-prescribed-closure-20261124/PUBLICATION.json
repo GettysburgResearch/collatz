@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-prescribed-publication/v1",
+  "repository": "GettysburgResearch/collatz",
+  "pr": 193,
+  "branch": "research/astra-universal-descent-20261124",
+  "previous_head": "bdd4409062bc02416ff6941f8d5690b800068cb3",
+  "local_science_commit": "3eedad7ee12ae925f5310c010c4d03ef360db3b5",
+  "published_science_commit": "40469acd0dc6caab9017593604c4ea2d5cde28a5",
+  "published_science_tree": "644bf525859a48e93513c2ed0b84a24ec0517d7a",
+  "publication": "GitHub create_tree matched the locally validated tree; create_commit then fast-forward update_ref with an exact expected-parent lease.",
+  "published_science_validation": "Actual remote science commit fetched into this clean complete 586-file worktree; all five validator commands passed. Validation receipts do not verify mathematics.",
+  "source_hash_bindings_verified": 20,
+  "lean": {
+    "version": "4.34.1",
+    "modules": 3,
+    "public_theorems_audited": 34,
+    "only_standard_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "scope": "New finite arithmetic interfaces; no full Collatz or imported analytic theorem asserted."
+  },
+  "receipt_followup": "Adds only this record, LOCAL_VALIDATION.json and PUBLISHED_SCIENCE_VALIDATION.json. The final published receipt-head SHA is recorded in the PR description after remote readback."
+}
