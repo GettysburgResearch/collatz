@@ -1,0 +1,53 @@
+{
+  "schema": "collatz-publication-checkpoint/v1",
+  "published_science_commit": "02971c5732a7bebec783088fe3f0a5578c16f379",
+  "published_science_tree": "2994d2d4ebaebd3691a56fcbe71a99ecfcc569c6",
+  "parent_commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+  "repository": "GettysburgResearch/collatz",
+  "branch": "research/gpt62-regularity-rigidity-20261124",
+  "pull_request": 200,
+  "pull_request_url": "https://github.com/GettysburgResearch/collatz/pull/200",
+  "remote_science_head_readback": "02971c5732a7bebec783088fe3f0a5578c16f379",
+  "recorded_utc": "2026-11-24T14:12:15.095177+00:00",
+  "publication_method": "GitHub tree matched the complete local staged tree; commit has the existing branch head as parent; reference moved with expected-head lease and force=false; remote PR head re-read.",
+  "scientific_files_changed": 35,
+  "complete_science_checkout": {
+    "commit": "02971c5732a7bebec783088fe3f0a5578c16f379",
+    "tree": "2994d2d4ebaebd3691a56fcbe71a99ecfcc569c6",
+    "tracked_files": 371
+  },
+  "structural_validation": {
+    "file": "PUBLISHED_SCIENCE_VALIDATION.json",
+    "sha256": "1ea06ef9f31fb47ae109445d303416d796c7c7f739d44655fb9c0aaf58145cfc",
+    "commands": 5,
+    "success": true,
+    "scope": "structure, frozen identities and selected bounded regressions; not a proof of Collatz"
+  },
+  "evidence_manifest": {
+    "file": "MANIFEST.json",
+    "sha256": "03398d30b4df68d677cb82e84c2c41ee2256c41ccc884dd9db78f0d442994bf4"
+  },
+  "mathematical_evidence": {
+    "lean_receipt": "LEAN_RECEIPT.json",
+    "modules": 7,
+    "theorem_declarations": 46,
+    "public_declarations": 38,
+    "private_helpers": 8,
+    "original_signatures_preserved": 19,
+    "fresh_coordinator_replay_matched_worker_receipt": true,
+    "finite_controls": [
+      "BASE_CONTROLS_REPLAY.json",
+      "INDEPENDENT_CONTROLS_REPLAY.json",
+      "ROUTER_REPLAY.json"
+    ],
+    "independent_reports": [
+      "LOCAL_FIBER_CROSSREVIEW.md",
+      "FOUR_A_CROSS_REVIEW.md",
+      "REVERSE_AND_RIGIDITY_REVIEW.md"
+    ],
+    "coordinator_review": "ROOT_REVIEW.md",
+    "late_source_comparison": "LATEST_INTAKE.md"
+  },
+  "status": "Collatz OPEN. Infinite results remain written and source-qualified. No fixed-ordinary-target balanced paired-pressure theorem or opposing failure bound is claimed.",
+  "attachment_note": "This report and the complete science-checkout receipt are added in a later evidence-only commit. Its contents are excluded from the scientific manifest; the manifest remains bound to the published science tree."
+}
