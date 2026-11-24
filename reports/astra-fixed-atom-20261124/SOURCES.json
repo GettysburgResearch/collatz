@@ -88,5 +88,30 @@
     "research/astra-fixed-atom-20261124/termination.lean": "9cc75080179dce260c08ab2e02a4c40a233342a014d5838ced16237e5531d012",
     "research/astra-fixed-atom-20261124/termination.md": "573a5b83d11f580db67620bfaf8152189e741381c47035b4e9f7a0267cb358d6",
     "research/astra-fixed-atom-20261124/termination.py": "f5298722170f9c4dc6d08a3c9107ab0f2624e628593904039f657c5a2b8be60f"
+  },
+  "final_recheck": {
+    "unchanged_prs": [
+      197,
+      195,
+      182
+    ],
+    "advanced": [
+      {
+        "pr": 193,
+        "sha": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+        "paths": [
+          "research/astra-ordinary-boundary-20261124/transfer/ALL_EVENTUAL_MEETINGS.md",
+          "research/astra-ordinary-boundary-20261124/spectral/PHYSICAL_TAILS.md"
+        ]
+      },
+      {
+        "pr": 201,
+        "sha": "084b983fbec6f3d2120ef101946754431f82874e",
+        "paths": [
+          "research/killed-green-head-closure-20261124/continuation/README.md"
+        ]
+      }
+    ],
+    "scope": "Written interfaces read at stated scope; no new premise imported; see LATE_INTAKE.md"
   }
 }
