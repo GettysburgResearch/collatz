@@ -50,4 +50,10 @@ The whole-nonnegative-orthant dimension-three extension, the positive-orthant ex
 
 The source-qualified two-base rank argument invokes Bell's published regular-sequence theorem. Nashida's pinned natural/arctic barrier development was inspected at its primary source but **was not rebuilt**. Neither external result is a dependency of the new polynomial or sparse-section Lean theorem.
 
-The wider repository's earlier proof corpus was not replayed by this pass. A repository-integrity validation checks preservation and structure, not the mathematics in every branch. The exact complete-checkout receipt is recorded separately after the content commit.
+The wider repository's earlier proof corpus was not replayed by this pass. A repository-integrity validation checks preservation and structure, not the mathematics in every branch.
+
+## Complete-checkout integrity execution
+
+After committing the research content, the publishing agent ran `python -X utf8 -B tools/validate.py --receipt /workspace/scratch/33d115a3cb8d/remote-content-validation.json` in the clean, complete checkout at **`8d9be8ad35b440626fa8efb1ee93b9376a2441fd`**, tree `4bf37774be1ff1de514d231d13090d70efaee722`. The command exited **0**. All five default checks passed, including the original integration state, review identities, invalid fixtures, portability controls and scoped D follow-up. `--regressions` was not requested or run.
+
+The actual [JSON receipt](checkout-validation.json) was first written outside the checkout, then copied here in a separate documentation-only commit. That later commit does not alter any research or proof file. The receipt is evidence of repository integrity at its recorded commit, not a mathematical acceptance of the new packet or earlier branches.
