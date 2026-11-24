@@ -205,6 +205,43 @@
       "inspection": "PR metadata and claim summary; not a proof audit"
     }
   ],
+  "late_publication_sources": [
+    {
+      "pr": 192,
+      "head": "be783656f0e889fe0d5318a2f7a9140099cb94b5",
+      "title": "research: actual scalar phase separation, convergent words, and cycle factors",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "scope": "PR metadata and claim summary only; not a proof dependency"
+    },
+    {
+      "pr": 193,
+      "head": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "title": "Collatz: unbounded smaller partners, uniform synchronization, and reduced denominators",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "scope": "PR metadata and focused smaller-partner source reconstruction; see LATEST_SOURCE_CONNECTIONS.md"
+    },
+    {
+      "pr": 194,
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "title": "Collatz: bounded carry births, binary substitution rigidity, and verified finite kernels",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/194",
+      "scope": "PR metadata and claim summary only; not a proof dependency"
+    },
+    {
+      "pr": 195,
+      "head": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "title": "Collatz: long ordinary mergers, finite-state shadow rigidity, and Lean replay",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "scope": "PR metadata and focused smaller-partner source reconstruction; see LATEST_SOURCE_CONNECTIONS.md"
+    },
+    {
+      "pr": 196,
+      "head": "10fcd50c45c219d8f794034f8d46d127d86e562c",
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/196",
+      "scope": "PR metadata and focused smaller-partner source reconstruction; see LATEST_SOURCE_CONNECTIONS.md"
+    }
+  ],
   "external": [
     {
       "url": "https://arxiv.org/abs/2105.14697",

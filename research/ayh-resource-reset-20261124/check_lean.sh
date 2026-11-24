@@ -22,7 +22,7 @@ done
 for module in ShellCover ForwardSection OffsetDescent; do
     compile "$source_dir/positive-section/vendor" "$module"
 done
-for module in MarkedCylinders InversePowerRows; do
+for module in MarkedCylinders InversePowerRows CriticalSection; do
     compile "$source_dir/positive-section" "$module"
 done
 
@@ -33,6 +33,7 @@ import PolynomialPump
 import PositivePolynomialBarrier
 import CarryTrace
 import InversePowerRows
+import CriticalSection
 #print axioms AYHSelfEmbedding.certificate
 #print axioms AYHSelfEmbedding.every_rule_used
 #print axioms AYHSelfEmbedding.source_embeds
@@ -62,6 +63,8 @@ import InversePowerRows
 #print axioms CollatzShell.MarkedCylinders.odd_predecessor
 #print axioms CollatzShell.MarkedCylinders.cofinal_marked_power_predecessors
 #print axioms CollatzShell.MarkedCylinders.universal_iff_marked_power
+#print axioms CollatzShell.MarkedCylinders.critical_quarter_descent
+#print axioms CollatzShell.MarkedCylinders.universal_iff_critical_mark
 LEAN
 (
     cd -- "$output_dir"

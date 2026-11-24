@@ -6,9 +6,11 @@ This record accompanies the [AYH research packet](../../research/ayh-resource-re
 
 The publishing agent ran the packet's `check_lean.sh` with Lean **4.34.1** (compiler commit `5045d0056413266e57c625dcd7c365b10e377c52`) and a built Mathlib checkout at **`d13f23b723b8a846827a245b89c10fc7d3f11612`**. The command exited **0**. Each module was compiled into fresh temporary storage, with one worker and `-DwarningAsError=true`.
 
-The ten compiled modules were `SelfEmbedding`, `MixedBaseRigidity`, `PolynomialPump`, `PositivePolynomialBarrier`, `CarryTrace`, the three byte-identical upstream modules `ShellCover`, `ForwardSection`, `OffsetDescent`, and the two new modules `MarkedCylinders`, `InversePowerRows`. The temporary output directory was removed after the run. No pre-existing compiled copy of a new module was used.
+The initial ten compiled modules were `SelfEmbedding`, `MixedBaseRigidity`, `PolynomialPump`, `PositivePolynomialBarrier`, `CarryTrace`, the three byte-identical upstream modules `ShellCover`, `ForwardSection`, `OffsetDescent`, and the two new modules `MarkedCylinders`, `InversePowerRows`. The temporary output directory was removed after the run. No pre-existing compiled copy of a new module was used.
 
-The final audit explicitly queried **29 new public theorem declarations**. Every printed dependency was among `propext`, `Classical.choice`, and `Quot.sound`; some certificates used no axioms. There was no `sorryAx` or project-specific axiom in those reports. The [complete compiler output](lean-build.log) also includes audit messages emitted while compiling supporting sources. Its repeated names are not additional theorems.
+The initial audit explicitly queried **29 new public theorem declarations**. Every printed dependency was among `propext`, `Classical.choice`, and `Quot.sound`; some certificates used no axioms. There was no `sorryAx` or project-specific axiom in those reports. The [initial compiler output](lean-build.log) also includes audit messages emitted while compiling supporting sources. Its repeated names are not additional theorems.
+
+For the second scientific checkpoint the publishing agent freshly compiled **all eleven modules**, adding `CriticalSection`, through the updated combined script. It again exited **0** with warnings treated as errors. The [complete current build](lean-critical-build.log) audits **31 new public declarations**, with only the same three standard axioms. The two new theorems prove the exact smaller marked quarter partner and the closed equivalence for the eight-excess section. The exact valuation is enforced by an odd cofactor. The earlier ten mathematical source files are unchanged.
 
 The main theorem boundaries are:
 
@@ -20,6 +22,7 @@ The main theorem boundaries are:
 | `CarryTrace` | Natural-matrix carry aggregation, trace vanishing, and zero carry defects on returning digit paths. |
 | `cofinal_marked_power_predecessors` | For every fixed positive target not divisible by three and every bound, an actual marked predecessor above that bound, with the checked power estimate and a physical continuation to the same target. |
 | `universal_iff_marked_power` | Closed equivalence between universal ordinary convergence and convergence on the specified marked power-descent section. |
+| `critical_quarter_descent`, `universal_iff_critical_mark` | Exact smaller marked partner with excess reduced by eight, and universal convergence equivalent to convergence on marked odd sources with exact excess in zero through seven. |
 | Other `MarkedCylinders` declarations | Arithmetic cylinder gluing, section closure from inverse rows, and the inverse power-cost inequality. |
 
 The [source manifest](source-hashes.json) authenticates the delivered research files. The vendored upstream file identities and exact source commits are also recorded in the positive-section README and `SOURCES.json`.
@@ -31,6 +34,7 @@ The agent who developed the scalar approach independently reconstructed the othe
 - [Polynomial and trace review](POLYNOMIAL_TRACE_REVIEW.md): positive-coordinate dependence argument, literal rule uses, ordered-algebra linkage, and compilation of the exact reviewed sources.
 - [Positive ordinary-section review](POSITIVE_SECTION_REVIEW.md): rotation estimates, same-target arithmetic realization, physical clocks, cofinal quantifiers, and the missing smaller-source step.
 - [Zero-coordinate extension review](ZERO_FACE_REVIEW.md): support-mask dynamics, eventual two-step comparison, and independent replay of the 308-step all-rule witness. This extension is a written proof, **not** part of the positive-orthant Lean theorem.
+- [Critical-section review](MARKED_STRIP_REVIEW.md): independently reconstructed quarter reduction, base case, precise Lean statement, uniqueness per next odd value, cofinality for the same original target, two-sided endpoint bounds, and all eight unbounded excess classes. The last four conclusions retain written-proof status.
 
 The final publication review corrected two prose overstatements: the prefix-length guarantee is in shortcut clocks, with up to two bits of numerator overhead; and the two-base rank obstruction requires weak decrease at every step in addition to strict decrease on one parity.
 
@@ -43,6 +47,8 @@ The first checker replays the 27-to-107 and 41-to-161 traces, all eleven rule oc
 The zero-face checker verifies the three larger witnesses, including their decoded integer value after every rewrite: 515 to 2051 in 308 rewrites and 52 shortcut steps; 259 to 2051 in 306 rewrites and 51 shortcut steps; 1042601 to 8906921 in 150 rewrites and 8 shortcut steps. Each uses all eleven rules. It also enumerates the 36 monotone maps on the Boolean square, with maximum transient length two. The written proof uses the weaker bound three.
 
 The ordinary-section checker was separately run in normal Python and exited 0. Its retained [marked-replay.json](marked-replay.json) covers eight targets and three rational-rotation denominators, giving **24 rows, 8,216 entries and 728 marked predecessors**. Each marked predecessor was checked against its original supplied target and the fifth-power inequality. These finite checks supplement the all-quantified Lean proof; they do not establish it by enumeration.
+
+The second checkpoint's [critical-section receipts](critical-checks.json) record successful normal and optimized executions with identical output. Through 250,000 there are 17,809 marked-power sources, including the known base one: 6,090 admit the quarter reduction and 11,718 are in the critical section. The checker verifies every repeated reduction chain and finds 11,718 distinct exact odd endpoints for those boundary members. These counts are finite controls, distinct from the global Lean equivalence and written uniqueness proof.
 
 ## Written and external results
 
@@ -57,3 +63,5 @@ The wider repository's earlier proof corpus was not replayed by this pass. A rep
 After committing the research content, the publishing agent ran `python -X utf8 -B tools/validate.py --receipt /workspace/scratch/33d115a3cb8d/remote-content-validation.json` in the clean, complete checkout at **`8d9be8ad35b440626fa8efb1ee93b9376a2441fd`**, tree `4bf37774be1ff1de514d231d13090d70efaee722`. The command exited **0**. All five default checks passed, including the original integration state, review identities, invalid fixtures, portability controls and scoped D follow-up. `--regressions` was not requested or run.
 
 The actual [JSON receipt](checkout-validation.json) was first written outside the checkout, then copied here in a separate documentation-only commit. That later commit does not alter any research or proof file. The receipt is evidence of repository integrity at its recorded commit, not a mathematical acceptance of the new packet or earlier branches.
+
+The second scientific checkpoint adds the critical-section theorem and the [focused late-source comparison](../../research/ayh-resource-reset-20261124/LATEST_SOURCE_CONNECTIONS.md). Its source hashes are in the updated manifest. The exact final published commit and its complete-checkout receipt are retained in [PR 197's description](https://github.com/GettysburgResearch/collatz/pull/197), separately from the first checkpoint's archived receipt above.

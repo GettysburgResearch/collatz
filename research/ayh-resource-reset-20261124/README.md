@@ -2,7 +2,7 @@
 
 **Collatz remains OPEN.** This packet attempts the global termination and ordinary-source closure steps. Its two main results are a checked obstruction to a broad nonlinear interpretation class for the full eleven-rule system, and a checked global reduction to a sparse set of marked inputs with a forced power-size descent. Neither result supplies a terminating interpretation or the final descent below the original source.
 
-The principal Lean theorems and all their supporting modules were compiled with Lean 4.34.1 and warnings treated as errors. The combined audit lists 29 new public theorem declarations; their axiom dependencies are subsets of `propext`, `Classical.choice`, and `Quot.sound`. The proofs and evidence below distinguish the checked declarations from written extensions and external results. [Execution record and review](../../reports/ayh-resource-reset-20261124/README.md).
+The principal Lean theorems and all their supporting modules were compiled with Lean 4.34.1 and warnings treated as errors. The combined audit lists 31 new public theorem declarations; their axiom dependencies are subsets of `propext`, `Classical.choice`, and `Quot.sound`. The second scientific checkpoint further reduces the ordinary section to eight exact valuation excesses. The proofs and evidence below distinguish the checked declarations from written extensions and external results. [Execution record and review](../../reports/ayh-resource-reset-20261124/README.md).
 
 ## 1. The nonlinear rank obstruction
 
@@ -102,6 +102,26 @@ u\ge q,\quad u\le4n^{4/5}
 
 Thus an inverse construction with these properties cannot give a representative of size `O(q^(5/4−ε))` on unbounded targets. Such a bound, if supplied by a different same-component selector, would combine with the power descent to give induction on sufficiently large elements of `S`, after resolving the finite base. This packet supplies no such selector. The theorem reduces the all-input problem and identifies a failed closing mechanism; it does not discharge that problem.
 
+### A further closed reduction: eight exact excesses
+
+The final comparison with PR 196's half-size merger produced a stronger theorem, now checked in [CriticalSection.lean](positive-section/CriticalSection.lean). Require `e = v₂(3n+1)` to be the **exact** exponent, and define
+
+\[
+B=\{n\text{ marked}:0\le5e-(d+1)\le7\}.
+\]
+
+Then **universal convergence is equivalent to convergence on `B`**. If `n > 1` lies in the old section `S` with excess at least eight, the explicit odd partner
+
+\[
+m=(n-1)/4<n,\qquad T(m)=T^3(n)
+\]
+
+remains marked. Its binary exponent and exact valuation each fall by two, so its excess falls by exactly eight. Strong induction reaches `B` or the known base `1`. The formal definition uses an odd cofactor in `3n+1=2^e u`; merely choosing a smaller nonexact exponent would not establish this narrower section.
+
+The written proof additionally shows that `B` has at most one member per next odd value, and still contains arbitrarily large predecessors of every fixed positive target not divisible by three. These stronger ordinary-source quantifiers follow by proving each fixed odd endpoint has only finitely many marked predecessors. They have an independent written review but are not added to the Lean declaration count. [Proof and scope](positive-section/CRITICAL_SECTION.md) · [Review](../../reports/ayh-resource-reset-20261124/MARKED_STRIP_REVIEW.md).
+
+On `B`, the next odd value is bounded above and below by positive constants times `n^(4/5)`. It need not lie in `B`. Quartering a boundary member either ceases to give an odd partner or produces negative excess. No return to a smaller member of `B` has been proved. The new theorem reduces the precise remaining domain; it does not prove convergence there.
+
 ## 3. Other proved structure and nonlinear transfer
 
 The same exploration produced complementary results, with their evidence levels kept explicit.
@@ -123,7 +143,7 @@ PR 6 recorded the original natural/arctic frontier and missing legacy proofs. PR
 
 The refreshed literature also contains Nashida's later [natural/arctic barrier repository](https://github.com/harappa/collatz-arctic-interpretation-barriers/tree/de961be6671b2084ae0189a3572b674c60788456), whose `paper_thm_9_2_T` states the all-dimensional natural-matrix no-removal theorem. We inspected the pinned primary source and its verification scope but did not rebuild that external development. Our checked three-coordinate **nonlinear polynomial** theorem and the ordinary predecessor theorem do not depend on it. The monomial transfer is independent; its Collatz corollary inherits the exact external barrier hypotheses and verification status.
 
-The latest PRs through 191 were used to locate the active frontier. In particular, finite rational-phase, repeated-word, substitution, and denominator results do not establish arbitrary-source termination. We did not re-audit all of those branches. [Inspection ledger](SOURCES.json).
+The initial latest-PR inventory through 191 was used to locate the active frontier. A publication readback found PRs 192–196. Their metadata were read, and the smaller-partner sources in 193, 195 and 196 received focused mathematical comparison. The last supplied the quarter-reduction connection above; the others do not close its remaining induction step. [Latest source comparison](LATEST_SOURCE_CONNECTIONS.md). Finite rational-phase, repeated-word, substitution, and denominator results do not establish arbitrary-source termination. We did not re-audit every file in those branches. [Inspection ledger](SOURCES.json).
 
 ## Replay
 
@@ -135,6 +155,7 @@ python -B /path/to/research/ayh-resource-reset-20261124/check_rewrite_certificat
 python -B /path/to/research/ayh-resource-reset-20261124/check_zero_faces.py
 python -B /path/to/research/ayh-resource-reset-20261124/monomial_transfer.py
 python -B /path/to/research/ayh-resource-reset-20261124/positive-section/replay_marked.py
+python -B /path/to/research/ayh-resource-reset-20261124/positive-section/check_critical_section.py
 ```
 
-The Lean script builds all ten modules into fresh temporary storage and prints every new public theorem's axioms. Three upstream files are included byte-for-byte with their original identities. Finite controls and repository integrity checks supplement the proofs; they are not substitutes for the missing global argument.
+The Lean script builds all eleven modules into fresh temporary storage and prints every new public theorem's axioms. Three upstream files are included byte-for-byte with their original identities. Finite controls and repository integrity checks supplement the proofs; they are not substitutes for the missing global argument.

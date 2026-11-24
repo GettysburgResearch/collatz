@@ -17,6 +17,6 @@ compile() {
 for module in ShellCover ForwardSection OffsetDescent; do
     compile "$source_dir/vendor" "$module"
 done
-for module in MarkedCylinders InversePowerRows; do
+for module in MarkedCylinders InversePowerRows CriticalSection; do
     compile "$source_dir" "$module"
 done
