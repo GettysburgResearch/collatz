@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "method": "Executed exact JavaScript BigInt source in connector execution environment; no Lean or asymptotic floor verification.",
+  "counts": {
+    "inverseWords": 460,
+    "disjointDepthChecks": 460,
+    "profiles": 255,
+    "synchronizedProfiles": 82,
+    "transportedSources": 6133,
+    "mixedCongruences": 24532,
+    "firstHitPhaseChecks": 8151,
+    "memberChecks": 8151
+  }
+}
