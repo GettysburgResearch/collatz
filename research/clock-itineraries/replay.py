@@ -89,6 +89,41 @@ def enumerate_row(q, depth, clock, modulus):
     return words
 
 
+def check_sparse_paths():
+    """Expand the shifted identity independently on ordinary forward trajectories."""
+    segments = balanced = 0
+    for source in range(3, 4000, 2):
+        q = source
+        clock = ones = terms = 0
+        valuations = []
+        for depth in range(1, 26):
+            value = 3*q+1
+            gap = (value & -value).bit_length()-1
+            q = value >> gap
+            if q == 1:
+                break
+            defect = (1 << gap)-4
+            terms = 3*terms + (defect << clock)
+            if defect:
+                valuations.append(clock + min(2, gap))
+            clock += gap
+            ones += gap == 1
+            check(3**depth*(source-1) == ((q-1) << clock) + terms, "shifted identity")
+            terminal_valuation = clock + (((q-1) & -(q-1)).bit_length()-1)
+            extended = valuations + [terminal_valuation]
+            check(all(a < b for a, b in zip(extended, extended[1:])), "subsum valuations")
+            segments += 1
+            if clock == 2*depth:
+                terminal = q << clock
+                carry = terminal - 3**depth*source
+                check(carry > 0, "nonpositive affine carry")
+                j = ((terminal-1)//carry).bit_length()
+                check(terminal <= carry << j, "relative carry exponent")
+                check(depth <= (j+5*ones+1)*(1 << (2*ones+1))+2*ones, "sparse bound")
+                balanced += 1
+    return segments, balanced
+
+
 def main():
     rows = scripts = compatible_cases = incompatible_cases = free_words = 0
     for depth in (2, 3):
@@ -158,11 +193,13 @@ def main():
         check((3*gate+1)*3**b*x <= 3*gate*4**b*q, "carry bound failed")
         sources.add(x)
     check(len(sources)==2**(m-1), "distinct mark words collided")
+    segments, balanced = check_sparse_paths()
     print(json.dumps(dict(direct_rows=rows, direct_word_tests=scripts,
                           higher_precision_constructed=compatible_cases,
                           incompatible_signatures=incompatible_cases,
                           compensated_words=free_words, cube_sources=len(sources),
-                          cube_odd_steps=b, cube_shortcut_steps=2*b), indent=2))
+                          cube_odd_steps=b, cube_shortcut_steps=2*b,
+                          shifted_segments=segments, balanced_sparse_rows=balanced), indent=2))
 
 
 if __name__ == "__main__":

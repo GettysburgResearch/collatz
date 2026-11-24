@@ -15,7 +15,7 @@ Fix a unit endpoint $q$, precision $K\ge1$, $M=3^K$, $L=2\cdot3^{K-1}$, and $m\g
     \equiv \prod_{i=0}^{m-1}(3r_i+1) \pmod M. \tag{1}
 \]
 
-In particular, at $M=3$, the only condition above $6m+7$ (inclusive) is the parity of the clock. This parity counts the residues equal to two among $r_1,\ldots,r_{m-1},q$. The first source residue $r_0$ carries no parity cost. The complete equivalence at $M=3$ and the connection to literal shortcut iteration are kernel-checked in [TernaryItinerary.lean](TernaryItinerary.lean), theorems `exact_clock`, `Route.follow` and `Route.readout`. The Lean list orders the prescribed marks backwards from the endpoint. The proof below treats every $K$.
+At $M=3$ and $S\ge6m+7$, the only condition is the parity of the clock. This parity counts the residues equal to two among $r_1,\ldots,r_{m-1},q$. The first source residue $r_0$ carries no parity cost. The complete equivalence at $M=3$ and the connection to literal shortcut iteration are kernel-checked in [TernaryItinerary.lean](TernaryItinerary.lean), theorems `exact_clock`, `Route.follow` and `Route.readout`. The Lean list orders the prescribed marks backwards from the endpoint. The proof below treats every $K$.
 
 **Proof.** Multiplying the $m$ gap equations and reducing modulo $M$ gives (1). The order of two modulo $3^j$ is $2\cdot3^{j-1}$. Indeed $4-1=3$, and cubing $1+3^j t$ with $3\nmid t$ raises the valuation of its difference from one by exactly one. The order divides the unit group size, is even, and the valuation calculation excludes every smaller divisor. Thus every unit has a positive discrete logarithm at most the group order.
 
@@ -73,10 +73,24 @@ Across a run of $k$ neutral gaps $e=2$ from $u$ to $v$, the exact identity is $4
 
 Indeed the length of the $j$th neutral run, starting the count at zero, is at most $\rho^j(\log_3 q+2d\log_3 2)$. With the carry bound this yields $b\le C_\epsilon(h+1)\rho^{2h}$ and $\liminf h/\log b\ge1/(2\log\rho)$ along unbounded qualifying rows. A gap one ends at residue two modulo three. In particular fixed-defect full itineraries cannot support these rows indefinitely.
 
-**Remaining step.** The lower theorem prescribes the first $m-1$ residues. The obstruction counts exceptions on the whole path. The free suffix can contain enough gaps of length one to obey both bounds. A proof that one of the necessary prefix words is absent at every eligible gate on cofinally many rows would close the criterion. We have no such bound.
+For a relative carry of at least $2^{-j}$, Lean proves the explicit integer bound $b\le 2^{2h+1}(j+5h+1)+2h$. The second module also proves the shifted orbit identity and the nonvanishing of every nonempty subset of its exceptional and terminal terms when $q>1$. [SparseClock.lean](SparseClock.lean)
+
+A separate written argument uses Evertse's Corollary 1 to strengthen the conclusion to $h/\log b\to\infty$ along any sequence of qualifying rows with $b\to\infty$ at fixed $\epsilon>0$. The application of that corollary and the resulting limit are proposed for mathematical review. [Derivation and source](SparseDefects.md)
+
+**Remaining step.** The lower theorem prescribes the first $m-1$ residues. Both upper estimates count exceptions on the whole path. The common suffix can contain enough gaps of length one to obey both estimates. A proof that one necessary prefix word is absent at every eligible gate on arbitrarily large rows would close the criterion.
 
 ## Sources and replay
 
-The ordinary map and integrated stopping framework use main at `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. The two-gap identity, the one-gap unit tree and the exact-row carry test come from [PR #201, escape analysis at 2978d84](https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md). [PR #202, fixed-clock routing at 3b10b24](https://github.com/GettysburgResearch/collatz/blob/3b10b24d12d4b349cb20f4cbc83086c8a09f807e/research/synchronized-long-basin-blocks-20261124/README.md) and [PR #203, phase-marked depth slices at 3f2c89f](https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md) motivated keeping the exact clock and checking which observations may be fixed jointly. The proofs here use elementary arithmetic and finite kernel decisions.
+The ordinary map and integrated stopping framework use main at `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. The two-gap identity, the one-gap unit tree and the exact-row carry test come from [PR #201, escape analysis at 2978d84](https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md). [PR #202, fixed-clock routing at 3b10b24](https://github.com/GettysburgResearch/collatz/blob/3b10b24d12d4b349cb20f4cbc83086c8a09f807e/research/synchronized-long-basin-blocks-20261124/README.md) and [PR #203, phase-marked depth slices at 3f2c89f](https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md) motivated keeping the exact clock and checking which observations may be fixed jointly. The Lean modules use elementary arithmetic and finite kernel decisions. Two related submissions consider paired rows at a fixed target and excursions along an ordinary orbit. [PR #204](https://github.com/GettysburgResearch/collatz/pull/204) and [PR #205](https://github.com/GettysburgResearch/collatz/pull/205)
 
-From this directory run `lean -DwarningAsError=true TernaryItinerary.lean` and `python -X utf8 -B replay.py`. The Python control reads every shortcut step on constructed paths and separately enumerates all gap compositions in its small rows. Its 512-source example uses a finite initial climb of $2^{63}-1$ at $b=70$. It makes no assumption about that source's eventual orbit.
+From this directory, run the following with a Lean 4 installation and Python. The second Lean file imports the compiled first module.
+
+```sh
+lean -DwarningAsError=true -DautoImplicit=false -o TernaryItinerary.olean TernaryItinerary.lean
+LEAN_PATH=. lean -DwarningAsError=true -DautoImplicit=false SparseClock.lean
+python -X utf8 -B replay.py
+```
+
+Both modules were checked with Lean 4.33.0-pre at compiler commit `62b6a2291302d4bbeace37642a066b7510d0145c`, using the WebAssembly CLI with one worker. The printed theorem dependencies use only `propext`, `Classical.choice` and `Quot.sound`. [Compiler distribution](https://github.com/live-codes/browser-lean/tree/a8aed095534e67061e2626b94e8e69193099091d)
+
+The Python control reads each constructed path forward and independently enumerates small rows. Its 512-source example uses a finite initial climb of $2^{63}-1$ at $b=70$. It also checks the shifted identity and valuations on 36,285 ordinary forward path segments, including 3,727 balanced segments on which it checks the explicit carry bound.
