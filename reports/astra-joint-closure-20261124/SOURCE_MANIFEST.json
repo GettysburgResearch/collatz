@@ -1,0 +1,135 @@
+{
+  "scope": "Scientific packet and prepublication evidence; excludes this manifest and later publication receipts.",
+  "files": [
+    {
+      "path": "research/astra-joint-closure-20261124/README.md",
+      "bytes": 9209,
+      "sha256": "3727dcef398a0a0514bdbc1812d133899bbbc452ff27d79e360e70ff3334080e"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/arithmetic/FiniteCycleTests.lean",
+      "bytes": 2395,
+      "sha256": "6d59babca177a85ead06fcfcd732b4e9715296d0521284b3b9f71d858e0ee0bc"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/arithmetic/README.md",
+      "bytes": 12652,
+      "sha256": "a568b6e5fb765968b51ca18756c87c8ca651ff0729cac972985ba6d6169139f7"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/arithmetic/check_cycle.py",
+      "bytes": 1827,
+      "sha256": "aaa42f47aea83dce0e12cf1b1a6e277b1bfe8c2ead0dba58be79d0feb53dcd41"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/ordinary/InternalMerge.lean",
+      "bytes": 3517,
+      "sha256": "4677fcfd89afd374ff9a513a50a238a317ef39482d70ece157c122a8da4e26de"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/ordinary/README.md",
+      "bytes": 9139,
+      "sha256": "2b59010f0c676ea656de91e4df3bc33b192c0d344f7a594fe2bde507298bd129"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/ordinary/check_internal_merge.py",
+      "bytes": 2164,
+      "sha256": "90a82a836e58c1968898551f3b588fc90ec1fc2b49dba6d5d9bbc42f7b0a591c"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/pressure/FIRST_HIT_PACKING.md",
+      "bytes": 3848,
+      "sha256": "1d27d46c3d2a9a5fbac36c854672b79f1504d49cf0aa1baeea4ac220ade1179a"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/pressure/WEIGHTED_POINTWISE_ROWS.md",
+      "bytes": 6804,
+      "sha256": "66317debdf47470d618879250e56204901a39fbe4204165d33b7cd4c0e33896b"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/pressure/check_weighted_pressure.py",
+      "bytes": 3958,
+      "sha256": "415e046e889c2a024d4f78b53347af200207f0fbb77cb5185929f2c20b6eb7e0"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/upstream/ClockTransport.lean",
+      "bytes": 2964,
+      "sha256": "6c6745934b92708faee8f7a794c5e53c60f050dc4faa298e0e9927ba7a88924d"
+    },
+    {
+      "path": "research/astra-joint-closure-20261124/upstream/MixedTransport.lean",
+      "bytes": 2853,
+      "sha256": "04460e97e34cdec99e12c43de70f1cbf10c93b38adbc05c905f64d9d9c36564d"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/CONTROLS_RECEIPT.json",
+      "bytes": 4096,
+      "sha256": "5d8a44b4c88ff987019ccc3569c6700114629725aa9a17f491cb208e834f28a5"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/LEAN_RECEIPT.json",
+      "bytes": 8683,
+      "sha256": "e79537874795d54131dd7a16c36fa6ae01e5360da2108fe16bb08875cbcc3ef0"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/README.md",
+      "bytes": 4887,
+      "sha256": "7ccd4db2333685173f4fc1a5313af99989e8b31c9231ea73763614ae87e050be"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/ROOT_REVIEW.md",
+      "bytes": 8346,
+      "sha256": "561fccc71639bbf47d51476adfbc1061d2fa62c8aa56fbf087177a1b5b8c2ba0"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/SOURCE_INTAKE.json",
+      "bytes": 6108,
+      "sha256": "3a25989ad1d1b9e6b409ea1c6760d257b1e8b84eb07cf798dfaaf1a00cf15c72"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/arithmetic/EXECUTION.md",
+      "bytes": 1520,
+      "sha256": "be5b82d491825a73d721a73c63bc39044329d68295876482669845dfb09b6237"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/arithmetic/REVIEW_ORDINARY.md",
+      "bytes": 5158,
+      "sha256": "4e0dfacda36cd3c6a88e61ee1f1918eb4284dad974d2011aa3e0fa4ce3719e32"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/ordinary/REVIEW_PRESSURE.md",
+      "bytes": 6340,
+      "sha256": "8c38c7d83212a914cd9c81d4e96ab6f536d16441493b8ba1f74f1d2cb63b530b"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/pressure/REVIEW_ARITHMETIC.md",
+      "bytes": 4041,
+      "sha256": "68f6710c3b265dbc8e620ba9bbb4878d83bbdc73ac594ce99ab65ea646135a01"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/pressure/WEIGHTED_PRESSURE.json",
+      "bytes": 335,
+      "sha256": "2fb8a8a19095c64227bfd3be91b9d22d69756041db79035af5159bdd85982aa1"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/replay_controls.py",
+      "bytes": 2252,
+      "sha256": "8e0f03a2191f613530db4aff721045d613af1af980c30d14f50317f2bebba744"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/replay_lean.py",
+      "bytes": 6444,
+      "sha256": "3c0dbb1d1dc1a7bab7be0a69a7c372c9aad3c7a76fb1b5c60b7760be80450467"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/upstream-originals/ClockTransport.lean",
+      "bytes": 2762,
+      "sha256": "008a8f330a39b4d0a0e573f2b2463eb388ad74cd29c8cce6d8af8b169955c059"
+    },
+    {
+      "path": "reports/astra-joint-closure-20261124/upstream-originals/MixedTransport.lean",
+      "bytes": 2731,
+      "sha256": "aaac3afd181c9f8e48bd971452365771cd050925cf67439c2efe3affe191c1ce"
+    }
+  ]
+}
