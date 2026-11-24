@@ -1,6 +1,6 @@
 # Execution and independent review record
 
-The [latest crossing checkpoint](crossing-step/README.md) records the four new Lean modules, the rebuilt PR 193 global certificate, exact source pins and written cross-reviews. The [preceding two-class checkpoint](two-class-descent/README.md) retains its separate six-module build and analytic scope.
+The [latest unit-escape checkpoint](unit-exit/README.md) records four new Lean modules with 15 public theorems, two freshly replayed exact finite pressure certificates, original-source graph estimates, and the independent written reviews. The [preceding crossing checkpoint](crossing-step/README.md) preserves its separate four-module build and rebuilt PR 193 global certificate. The [earlier two-class checkpoint](two-class-descent/README.md) retains its six-module build and analytic scope.
 
 The [third checkpoint's evidence](continuation/README.md) records the fresh seven-module continuation, its 20 new public theorem audits, four pairs of exact finite replays, and independent mathematical reviews. Earlier execution events below retain their original scopes and commit identities.
 

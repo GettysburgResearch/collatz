@@ -1,0 +1,135 @@
+{
+  "schema": "collatz-public-axiom-audit/v1",
+  "scope": "All new public theorem declarations; written analytic claims and Python graph enumerations are not formalized here.",
+  "theorem_count": 15,
+  "modules": {
+    "NonunitExit": [
+      "NonunitExit.physical_chain",
+      "NonunitExit.directed_successor",
+      "NonunitExit.shadow_lift",
+      "NonunitExit.denom_iter",
+      "NonunitExit.shadow_certifies"
+    ],
+    "DisjointGradeCrossing": [
+      "Collatz.DisjointGradeCrossing.opposite_classes",
+      "Collatz.DisjointGradeCrossing.tie_before_inversion"
+    ],
+    "PredictablePhysicalArms": [
+      "Collatz.PredictablePhysicalArms.affine_step",
+      "Collatz.PredictablePhysicalArms.next_parameter",
+      "Collatz.PredictablePhysicalArms.truncate_parameter",
+      "Collatz.PredictablePhysicalArms.current_eq",
+      "Collatz.PredictablePhysicalArms.signed_flux",
+      "Collatz.PredictablePhysicalArms.even_suffix_parent"
+    ],
+    "UnitResidueExchange": [
+      "UnitResidueExchange.unit_one_exchange",
+      "UnitResidueExchange.residue17_descends"
+    ]
+  },
+  "declarations": {
+    "NonunitExit.physical_chain": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "NonunitExit.directed_successor": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "NonunitExit.shadow_lift": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "NonunitExit.denom_iter": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "NonunitExit.shadow_certifies": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.DisjointGradeCrossing.opposite_classes": {
+      "axioms": [
+        "propext"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.DisjointGradeCrossing.tie_before_inversion": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.affine_step": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.next_parameter": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.truncate_parameter": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.current_eq": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.signed_flux": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "Collatz.PredictablePhysicalArms.even_suffix_parent": {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "lean-build.log"
+    },
+    "UnitResidueExchange.unit_one_exchange": {
+      "axioms": [
+        "propext"
+      ],
+      "log": "residue17-lean-build.log"
+    },
+    "UnitResidueExchange.residue17_descends": {
+      "axioms": [
+        "propext"
+      ],
+      "log": "residue17-lean-build.log"
+    }
+  }
+}

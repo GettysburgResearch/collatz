@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "finite",
+  "started_utc": "2026-11-24T11:34:47.875757+00:00",
+  "finished_utc": "2026-11-24T11:34:49.857937+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unit-exit/check_nonunit.py"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 1.982,
+  "stdout_sha256": "5dbaedd6ca3bb5fc864a40c6ca0f3647f32ce868e9d98eaf9c7c615e36f34606",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/unit-exit/check_nonunit.py": "5214d579965916c6ea5bc7f7d2839d11358642d86811c3c77154fb5d9f0a9af4"
+  }
+}
