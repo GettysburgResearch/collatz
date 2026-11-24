@@ -1,0 +1,216 @@
+{
+  "schema": "collatz-astra-universal-step-replay/v1",
+  "started_utc": "2026-11-24T08:17:37.087280+00:00",
+  "scope": "exact new sources, fresh Lean objects, finite controls, repository integrity",
+  "commit": "d75b5235691bc2cee50833a7b776cd28f3e22c0c",
+  "tree": "f1b2d46240179baeffde71bf8d7a4befdfdcbffa",
+  "sources_before": {
+    "research/astra-universal-step-20261124/README.md": "ce5915f5a027401d395067f8c6d6969daf1e812a6afb408893d835097629892c",
+    "research/astra-universal-step-20261124/arithmetic.lean": "331c68e59757a805a6a846f5b5bc28c55a61117e7c78ac2551a72cc07b4a59af",
+    "research/astra-universal-step-20261124/arithmetic.md": "1419df3f23d5021dc15b298c4732191b46e859cb4ce9f8a98e289fbf23f5ae59",
+    "research/astra-universal-step-20261124/descent.lean": "dae16e576d80f83b8d990018c836138ba623305d32c2b6ffe3fc8466c55ab119",
+    "research/astra-universal-step-20261124/descent.md": "c1b288428db8ead7412050f0802584aac4e4165469247e272cabaed469c1cabe",
+    "research/astra-universal-step-20261124/descent.py": "7e27b2dc3e62e57551f9f76f1176623f900674e4e0a971bd3e79ba7cf051c07c",
+    "research/astra-universal-step-20261124/moment.md": "610ae05c5747e847d2e45507d75d164a59063e6efc2b389dd73523b9573c293c"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.129,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-descent",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/universal-fresh-d75b523/objects/descent.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-universal-step-20261124/descent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.063,
+      "stdout_sha256": "b8aae411cf92b190bda1acecb25de94fc46cbfd01ac5fa1ab5991c207fa222c1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d5425f4ef3a93e4d5f44cd28fc24483896926a6e103e0c5584d8c296e90c968a"
+    },
+    {
+      "label": "lean-arithmetic",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/universal-fresh-d75b523/objects/arithmetic.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-universal-step-20261124/arithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.571,
+      "stdout_sha256": "17e096d7ba996e0daf3af907de4327904df3d27e52108abc616246d23f947643",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "07cd195a7659bd8a48a2b22cf4b98d398c41cc0fe9623b0988818d210301f31a"
+    },
+    {
+      "label": "python-descent",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-universal-step-20261124/descent.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.169,
+      "stdout_sha256": "21d5a485572b8ff9ea2a8e6f05d9a8a9b25e98b7d5cba27fb778ccc073c86832",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-universal-step-20261124/descent.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.099,
+      "stdout_sha256": "21d5a485572b8ff9ea2a8e6f05d9a8a9b25e98b7d5cba27fb778ccc073c86832",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/universal-fresh-d75b523/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.111,
+      "stdout_sha256": "b267e72abad1599282be07175ca1ca601edee04479a7b0d8020662fe52f7f5bf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.pair_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.matching_pair_divides",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.stationary_copy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.actual_runs",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.affine",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.powered_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.powered_divides",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent.lean",
+      "declaration": "Collatz.PoweredInverse.nonstationary_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "arithmetic.lean",
+      "declaration": "Collatz.FixedSource.odd_growth",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "arithmetic.lean",
+      "declaration": "Collatz.FixedSource.matching_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "descent.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-universal-step-20261124/README.md": "ce5915f5a027401d395067f8c6d6969daf1e812a6afb408893d835097629892c",
+    "research/astra-universal-step-20261124/arithmetic.lean": "331c68e59757a805a6a846f5b5bc28c55a61117e7c78ac2551a72cc07b4a59af",
+    "research/astra-universal-step-20261124/arithmetic.md": "1419df3f23d5021dc15b298c4732191b46e859cb4ce9f8a98e289fbf23f5ae59",
+    "research/astra-universal-step-20261124/descent.lean": "dae16e576d80f83b8d990018c836138ba623305d32c2b6ffe3fc8466c55ab119",
+    "research/astra-universal-step-20261124/descent.md": "c1b288428db8ead7412050f0802584aac4e4165469247e272cabaed469c1cabe",
+    "research/astra-universal-step-20261124/descent.py": "7e27b2dc3e62e57551f9f76f1176623f900674e4e0a971bd3e79ba7cf051c07c",
+    "research/astra-universal-step-20261124/moment.md": "610ae05c5747e847d2e45507d75d164a59063e6efc2b389dd73523b9573c293c"
+  },
+  "finished_utc": "2026-11-24T08:17:40.246836+00:00"
+}

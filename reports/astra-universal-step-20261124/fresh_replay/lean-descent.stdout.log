@@ -1,0 +1,8 @@
+'Collatz.PoweredInverse.pair_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.matching_pair_divides' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.stationary_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.actual_runs' depends on axioms: [propext, Quot.sound]
+'Collatz.PoweredInverse.affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.powered_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.powered_divides' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PoweredInverse.nonstationary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
