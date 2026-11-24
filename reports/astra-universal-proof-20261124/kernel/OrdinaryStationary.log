@@ -1,0 +1,6 @@
+'OrdinaryStationary.coboundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryStationary.empirical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryStationary.nonreturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryStationary.after_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryStationary.exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryStationary.visits_from_root' depends on axioms: [propext, Classical.choice, Quot.sound]

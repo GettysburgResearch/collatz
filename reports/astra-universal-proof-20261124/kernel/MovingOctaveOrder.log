@@ -1,0 +1,4 @@
+'MovingOctaveOrder.lift_step' depends on axioms: [propext]
+'MovingOctaveOrder.moving_clock_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MovingOctaveOrder.words_differ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MovingOctaveOrder.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]

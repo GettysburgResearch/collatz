@@ -1,0 +1,5 @@
+'MinimumRunClock.block' depends on axioms: [propext, Quot.sound]
+'MinimumRunClock.runs_of_dvd' depends on axioms: [propext, Quot.sound]
+'MinimumRunClock.dvd_of_runs' depends on axioms: [propext, Quot.sound]
+'MinimumRunClock.clock_iff' depends on axioms: [propext, Quot.sound]
+'MinimumRunClock.each_source_exits' depends on axioms: [propext, Quot.sound]
