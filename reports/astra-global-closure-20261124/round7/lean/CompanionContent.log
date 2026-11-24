@@ -1,0 +1,7 @@
+'Collatz.CompanionContent.projected_content' depends on axioms: [propext, Quot.sound]
+'Collatz.CompanionContent.pivot_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CompanionContent.kernel_determined_off_pivot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CompanionContent.edge_bound' depends on axioms: [propext, Quot.sound]
+'Collatz.CompanionContent.path_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CompanionContent.inversion_cost' depends on axioms: [propext]
+'Collatz.CompanionContent.top_block' depends on axioms: [propext, Classical.choice, Quot.sound]

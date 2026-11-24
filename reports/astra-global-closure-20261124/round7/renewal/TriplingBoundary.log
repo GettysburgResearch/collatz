@@ -1,0 +1,7 @@
+'Collatz.TriplingBoundary.trace_add' depends on axioms: [propext]
+'Collatz.TriplingBoundary.step_unit' depends on axioms: [propext, Quot.sound]
+'Collatz.TriplingBoundary.units_along' depends on axioms: [propext, Quot.sound]
+'Collatz.TriplingBoundary.odd_tripled_unit' depends on axioms: [propext, Quot.sound]
+'Collatz.TriplingBoundary.no_exact_tripling' depends on axioms: [propext, Quot.sound]
+'Collatz.TriplingBoundary.common_prefix' depends on axioms: [propext, Quot.sound]
+'Collatz.TriplingBoundary.common_suffix' depends on axioms: [propext, Quot.sound]

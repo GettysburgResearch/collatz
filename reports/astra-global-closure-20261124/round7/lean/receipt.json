@@ -1,0 +1,128 @@
+{
+  "scope": "Fresh compilation of all five new modules, which have no local project imports; existing Mathlib/package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runner_sha256": "39a4db027b3827cb3fcb9a8ca160b3f944a7745e883fee1b8ca6c10fa25ecf45",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "CompanionContent",
+      "source": "research/astra-global-closure-20261124/round7/arithmetic/CompanionContent.lean",
+      "source_sha256": "4347eab51643216308549cc59ecde713d3f4c598e6d658ff90b1db1db3ef4d47",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round7/lean/CompanionContent.log",
+      "log_sha256": "1facbfd20497b64dd2c0b1306587cb9fe6bf65b8fa46793c59e46d1bc0fc7915",
+      "axiom_reports": [
+        "'Collatz.CompanionContent.projected_content' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.CompanionContent.pivot_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.CompanionContent.kernel_determined_off_pivot' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.CompanionContent.edge_bound' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.CompanionContent.path_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.CompanionContent.inversion_cost' depends on axioms: [propext]",
+        "'Collatz.CompanionContent.top_block' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 7,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "OddUnitLift",
+      "source": "research/astra-global-closure-20261124/round7/head/OddUnitLift.lean",
+      "source_sha256": "3d42c70e69f56ed261538aca94adf7a4951a85363438e25b8ce1ac50975c5f08",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round7/lean/OddUnitLift.log",
+      "log_sha256": "ce6130790ace9fbfac5245731b62817b6dc33f50ce1ca814c2ba7041a7f3e36a",
+      "axiom_reports": [
+        "'OddUnitLift.highBit' depends on axioms: [propext, Quot.sound]",
+        "'_private.research.\u00abastra-global-closure-20261124\u00bb.round7.head.OddUnitLift.0.OddUnitLift.sixPrefixes' depends on axioms: [propext]",
+        "'_private.research.\u00abastra-global-closure-20261124\u00bb.round7.head.OddUnitLift.0.OddUnitLift.allCells' depends on axioms: [propext]",
+        "'OddUnitLift.pairedLift' depends on axioms: [propext, Quot.sound]",
+        "'OddUnitLift.orderedOddRay' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 5,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "UnitTripling",
+      "source": "research/astra-global-closure-20261124/round7/head/UnitTripling.lean",
+      "source_sha256": "215e9342dd0b81d85b79f41e61abb751aa862ddf00bc4b4b00da9b15f782e789",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round7/lean/UnitTripling.log",
+      "log_sha256": "5ea9bc2d32a0a0e9ecc0bbf6f58c84156c5f4640c8cc87f3206965f1486471d9",
+      "axiom_reports": [
+        "'UnitTripling.upCover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.downCover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.pairedCover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.basinIffUnitForward' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.basinIffUnitReverse' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.basinIffOddUnitForward' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.basinIffOddUnitReverse' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.allOddPairs' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'UnitTripling.exactHead57' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 9,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "ShortSuffix",
+      "source": "research/astra-global-closure-20261124/round7/renewal/ShortSuffix.lean",
+      "source_sha256": "ad6268d02bcd5cbd01331203d36df7ed3204038bf3d952e58dc701b0a0695637",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round7/lean/ShortSuffix.log",
+      "log_sha256": "2da2be06eb422650b1f979242e7bc0ad663fda4b315336b6384517e6991c21ed",
+      "axiom_reports": [
+        "'Collatz.ShortSuffix.physical_row' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.physical_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.two_arm_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.same_word_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.halving_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.short_suffix_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.fixed_target_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.late_repair' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.rational_cell_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ShortSuffix.terminal_pair' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.ShortSuffix.terminal_class_edge' depends on axioms: [propext]",
+        "'Collatz.ShortSuffix.terminal_class_separates' depends on axioms: [propext]"
+      ],
+      "expected_axiom_report_count": 12,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "TriplingBoundary",
+      "source": "research/astra-global-closure-20261124/round7/renewal/TriplingBoundary.lean",
+      "source_sha256": "ec1054e5153b168e37d8af90645c043c7f1ffe66d05be96e5759518dea84223a",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round7/lean/TriplingBoundary.log",
+      "log_sha256": "ecc9b38a91c5bc46ad6ab4e2aec695d5d4fddd32347c8a7cf97988c33dd704e1",
+      "axiom_reports": [
+        "'Collatz.TriplingBoundary.trace_add' depends on axioms: [propext]",
+        "'Collatz.TriplingBoundary.step_unit' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TriplingBoundary.units_along' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TriplingBoundary.odd_tripled_unit' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TriplingBoundary.no_exact_tripling' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TriplingBoundary.common_prefix' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TriplingBoundary.common_suffix' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 7,
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "module_count": 5,
+  "selected_axiom_report_count": 40,
+  "all_sources_unchanged": true
+}

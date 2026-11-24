@@ -1,0 +1,334 @@
+{
+  "date": "2026-11-24",
+  "baseline": "fbe68bf1b13b797843691080d782f4262a5c4468",
+  "scope": "Exact source identity ledger for round seven. Pins freeze the cited versions; status and dependency hypotheses remain those in the manuscripts. Metadata coverage is not mathematical certification.",
+  "repository_sources": [
+    {
+      "pr": 182,
+      "commit": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md",
+      "git_blob": "332e3974dd516b851cd6993eee077771c3aff70f",
+      "sha256": "2fbe5366470f38627edbb3db0ca5f09f2380be30b26bca2bca89380c02e030d3",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/234fd2ece3a17c8950dce452291198705b4e6e60/research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md",
+      "git_blob": "c0614f158a1f3a13fd1c2394e993a05369a4ae13",
+      "sha256": "035e9100d9eb68201f15d56c8ff3d05c9760c5bf409cf0d242e77b9e20830899",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_ROUTING.md",
+      "git_blob": "76f1dfb5e22c4bf3a3e8b88856931c0aeead0a4d",
+      "sha256": "525f78c4425293fdf7524ba2d840e113325e0f59e80beafabd1ecd65871265d0",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_ROUTING.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/JOINT_TARGET_MIDPOINTS.md",
+      "git_blob": "cfc3852bdd16a49992ec08c2087e3c9ec863dc66",
+      "sha256": "89a8135f670a48a16294378eca427c471c0a6df1bb1c3611594b874af910688e",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/JOINT_TARGET_MIDPOINTS.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md",
+      "git_blob": "a40924dc1ea6b2b7e5f028e196d22814ca1b8868",
+      "sha256": "68cb66ff0a6cbf0b36189a540cfe1e52dbcfac0b0e157641a886edafa06b8989",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/NATIVE_FIBER_CROSSING.md",
+      "git_blob": "892d87bd6414d32f6554477eae9f27ef481799f2",
+      "sha256": "d8b70a5e3fe94b27ee1e372ae4eee87d608315639d663b03c70c519dee856fc3",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/NATIVE_FIBER_CROSSING.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/PERIODIC_FOUR_SUFFIX_SCHEDULE.md",
+      "git_blob": "c9b5ae6e9977a6756601868c7c6cdfa9702a074c",
+      "sha256": "30cf14ffd3f3017d32e5577a006bb8174f03da28f9870b0fe8ddd14bf8416c9b",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/PERIODIC_FOUR_SUFFIX_SCHEDULE.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/README.md",
+      "git_blob": "7dbcd63a7083726175bddedafa09bfeeb8835a4b",
+      "sha256": "1822df044a83e7358d1603d4e542c20091422b9426a605cf3c71b805469d1021",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/README.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/RETROSPECTIVE_INFORMATION.md",
+      "git_blob": "629c5524c03f2d50235c0262805ce9db20411b1f",
+      "sha256": "dd75f9567f2e5dfc3546e860824191b557a4ee036b9370bd2b0c25dac17a159d",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/RETROSPECTIVE_INFORMATION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/SYMMETRIC_FUTURE_FORKS.md",
+      "git_blob": "2ec2f470d62829ff5667d2477e9df82d5f4489af",
+      "sha256": "7857698938cf63ea0fef0efeb0a06a3fd9ea59446854bb9d1529ddab0c322128",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/SYMMETRIC_FUTURE_FORKS.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/TRACK_VARIATION.md",
+      "git_blob": "dc9611bc9a1a990b14d8df4b5a4977d3951f24e3",
+      "sha256": "3c203be12ae7dd10378d46771f09d38a2617b1d7d2e1a101d10bfb8cdbf44832",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/TRACK_VARIATION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/WEIGHTED_TWO_HEAD_GRAPH.md",
+      "git_blob": "69f783a1700c0db4b63780e91cd2f52c5f06bc71",
+      "sha256": "0d8d9788d6ff68e0b3b879f586875e4fa00534d481ce50caf94f90eb95f3c8d4",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/WEIGHTED_TWO_HEAD_GRAPH.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/README.md",
+      "git_blob": "cef4fd6353912a1c8c780be6694d78db592cef8d",
+      "sha256": "572153774ae4c3b11cb773d88679982a36c5e34f7e6d26c969a30846b96585b4",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/README.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/companion_obstruction.md",
+      "git_blob": "3a343649d878d51e70cc95584ed25d4c4953275e",
+      "sha256": "bd4fd5d4aac4a1fe4c335926a22983aa2f214a42bfc515dd76b6e6791032baec",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/companion_obstruction.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md",
+      "git_blob": "86e77570121079a5fefffc65ad23442604bb0f44",
+      "sha256": "f3f8a2fa26a9dd9dd440a6504287e226e8f0afa08041fe62e7a7f0650828897b",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/SingleReturn.lean",
+      "git_blob": "797e2629e931551cc5913acbe7ef314aea489cd2",
+      "sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/rewriting/SingleReturn.lean"
+    },
+    {
+      "pr": 201,
+      "commit": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "git_blob": "d7ce88173738b5e5a256915c5dd05fc28a638857",
+      "sha256": "fcc6c393bfde585ea726a3b441fb44a44cce0d931aaa035f25931d08857a64e7",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/73a145ca99448a78219bd149e273f33b6e3fda4b/research/killed-green-head-closure-20261124/two-end-bridge/README.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md",
+      "git_blob": "2355d8305ed9ca4e805d0918e5c71e6ecb25987f",
+      "sha256": "2ffdc7df8cc5dc8a3936aabe0a4cc62db3ea1fe2e1025621ce220d5d7993de3e",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/POLYNOMIAL_RIGIDITY.md",
+      "git_blob": "d9cda5af28a09a82906820945195c9e532a54910",
+      "sha256": "8b12687154b369887685da0d27ead47094c4600e76974f31a921e136c1307ef7",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/POLYNOMIAL_RIGIDITY.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/README.md",
+      "git_blob": "fd7808f42bb76472ea6130ce8f99fe23af555f6c",
+      "sha256": "6d307caf89f6581295d43ec98028375f4895d07ffa6226dd6ebac2eed38ba3f4",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "path": "research/astra-pointwise-resolution-20261124/arithmetic/README.md",
+      "git_blob": "6252de31b0767423345495ca5306c50d32e3798b",
+      "sha256": "90b52e0fcf5129919e02d481c356dfffa4f3008c612fefb7c584255538acde30",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/cc800b9041efdeee43bb89df21088a81e1f44a74/research/astra-pointwise-resolution-20261124/arithmetic/README.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/FIVE_RETURN_IN_EVERY_CLASS.md",
+      "git_blob": "71094a7b0f670f4f7abe24b79f613b2a1b7b5be6",
+      "sha256": "0705056d3c91e1bf5f7c706189469c93cf76da364a5fa2d32ff24da729a7309b",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/FIVE_RETURN_IN_EVERY_CLASS.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_ONE_SIDED.md",
+      "git_blob": "46060a86fb37728b519ba4763c4ef0ad064ccd2d",
+      "sha256": "c1fac2428a2b8a23fc30fbd19e7a5de32f7f294064683dae3f000c284b2e7c02",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_ONE_SIDED.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_TERNARY.md",
+      "git_blob": "2bce9f3c5d664ebfc01917b07208c3c749adbe7e",
+      "sha256": "2cb02531156f5e1be5737ebbcbf866813982adeb41badf87df15b4c8dfbeedcd",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_TERNARY.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_UPPER.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/TRIPLING_VARIATION.md",
+      "git_blob": "870b1e3d348cd2f88ec25b3e5c4a9e1878e65456",
+      "sha256": "1a3aef543f1ec76db6b585041108eaa105f1d4ceb0c04fe421f1b15ed47d21bb",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/TRIPLING_VARIATION.md"
+    },
+    {
+      "pr": 195,
+      "commit": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "path": "research/astra-global-closure-20261124/round6/arithmetic/COMPANION.md",
+      "git_blob": "aa3a2c3f4261c053599b753f979e966b1a008800",
+      "sha256": "56a1620c323d8988997f87512fbf56c7326489975dc8790bbb88d6ce7a67dc43",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe68bf1b13b797843691080d782f4262a5c4468/research/astra-global-closure-20261124/round6/arithmetic/COMPANION.md"
+    },
+    {
+      "pr": 195,
+      "commit": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "path": "research/astra-global-closure-20261124/round6/arithmetic/README.md",
+      "git_blob": "8d5706df05b8baee74796fee1411a35f96a7eb4b",
+      "sha256": "d78e56fdbe4574b786815e8aeb7865423cf1856e03f8f457cfe14e330f0d42b6",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe68bf1b13b797843691080d782f4262a5c4468/research/astra-global-closure-20261124/round6/arithmetic/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "path": "research/astra-global-closure-20261124/round6/head/README.md",
+      "git_blob": "d3ac49c14694b20ce642c17a261542c041ca1613",
+      "sha256": "deffa1e08c70f92f37d4420845ed190a818b63f85838bc80a630d92b9d411088",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe68bf1b13b797843691080d782f4262a5c4468/research/astra-global-closure-20261124/round6/head/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "path": "research/astra-global-closure-20261124/round6/renewal/README.md",
+      "git_blob": "25a35745b389efd2ac7dbafd4df5176bd6d65e37",
+      "sha256": "ab8e342e3b4d95bc509fefcf0dfdfc72f369b33741f644a6856e503e73174558",
+      "scope": "Pinned mathematical interface or comparison; the exact used claim and qualifications are given in the lane manuscripts and reviews. No whole upstream branch or archive rebuild is claimed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe68bf1b13b797843691080d782f4262a5c4468/research/astra-global-closure-20261124/round6/renewal/README.md"
+    }
+  ],
+  "external_sources": [
+    {
+      "name": "Evertse, The p-adic Subspace Theorem, Theorem 1.1",
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+      "scope": "Primary author exposition; original typeset statement and hypotheses inspected, including r >= n >= 2 and selected-place independent algebraic forms. Used in the algebraic alternative and fixed-term unit-sum argument; not locally formalized."
+    },
+    {
+      "name": "Schlickewei, The p-adic Thue-Siegel-Roth-Schmidt theorem, Archiv der Mathematik 29 (1977), 267-270",
+      "url": "https://doi.org/10.1007/BF01220404",
+      "scope": "Original theorem attribution and bibliography. Publisher DOI could not be opened here; the precise formulation was checked in the Evertse primary-author exposition."
+    },
+    {
+      "name": "Corvaja and Zannier, A subspace theorem approach to integral points on curves",
+      "url": "https://www.numdam.org/item/10.1016/S1631-073X%2802%2902240-9.pdf",
+      "scope": "Theorem 1 and S-integral extension inspected. Siegel input to the prior fixed-source curve-avoidance theorem; not locally formalized."
+    },
+    {
+      "name": "Weaver and fourier_wren, paper 48 v2",
+      "url": "https://rstation.ai/problems/collatz/papers/48/v2",
+      "download_url": "https://rstation.ai/api/v1/papers/collatz_48/versions/2/download",
+      "scope": "Named analytic input F. Lemma 7, equation (76), and bounded-branch proof of Theorem 8 inspected, retaining central totals, fixed ordinary targets, bounded real offset and linear extra ternary precision. No claim of complete independent verification of the analytic paper."
+    },
+    {
+      "name": "Shaik, polylogarithmic Collatz trajectory paper v4.0.2 (2026-10-04)",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "scope": "Named analytic input H. Corollary 1.2 and the actual shortcut odd-count estimate in the time-control proof of Proposition 6.4 inspected. Endpoint equality alone is insufficient. External formalization archive was not rebuilt."
+    },
+    {
+      "name": "Inselmann, An Approximation of the Collatz Map and a Lower Bound for its Average Total Stopping Time, arXiv:2402.03276v3",
+      "url": "https://arxiv.org/html/2402.03276v3",
+      "scope": "Theorem 2.18 full-trajectory statement at the maximal horizon with power-density exceptions inspected. Source-qualified alternative to H for the weaker o(e) conclusion; not formalized."
+    },
+    {
+      "name": "Krasikov and Lagarias, Bounds for the 3x+1 problem using difference inequalities, arXiv:math/0205002",
+      "url": "https://arxiv.org/abs/math/0205002",
+      "scope": "Primary paper abstract and exponent .84 inspected. The manuscript uses the frozen PR197/PR200 predecessor-based rigidity interface; no new proof of that counting theorem is claimed."
+    },
+    {
+      "name": "Lagarias, The Ultimate Challenge: The 3x+1 Problem, overview",
+      "url": "https://www.ams.org/bookstore/pspdf/mbk-78-prev.pdf",
+      "scope": "Classical ordinary all-odd trajectory formula is attributed for context and independently rederived in the new finite arithmetic."
+    }
+  ],
+  "additional_named_interfaces": [
+    {
+      "name": "R: actual first-mark tail under fair prefixes",
+      "source_commit": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "source_path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "scope": "Retained as the explicit additional input in the sparse-edit note bridge composition."
+    },
+    {
+      "name": "S: finite simple-path reciprocal distortion",
+      "source_commit": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "source_path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "scope": "Retained when discussing the relative-offset tail criterion; no closing tail estimate is claimed here."
+    }
+  ]
+}

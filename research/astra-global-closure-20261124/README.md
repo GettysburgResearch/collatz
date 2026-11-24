@@ -7,6 +7,13 @@ repair strategy, a written transcendence extension, and executed Lean checks.
 None of the restricted results supplies the universal descent or reverse
 closure still needed for the conjecture.
 
+**Latest continuation:** [round seven](round7/README.md) adds Lean-checked
+directed unit-tripling criteria, a single-suffix head-series reduction,
+determinant bounds on full cancellation along one ordinary escape, and
+completed paired constructions with their exact endpoint cost. It also records
+sparse-edit and tripling constraints. The conjecture remains open; the earlier
+rounds below retain their original scope and publication history.
+
 The checkout base is `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.
 The [frontier report](../../reports/astra-global-closure-20261124/audit/FRONTIER.md)
 and [live metadata snapshot](../../reports/astra-global-closure-20261124/audit/pr146-191.json)

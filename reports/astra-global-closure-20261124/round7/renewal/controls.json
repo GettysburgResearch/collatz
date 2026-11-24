@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "ordinary_row_members": 317,
+  "late_edit_comparisons": 8316,
+  "terminal_coalescences": {
+    "1": 3,
+    "5": 15
+  },
+  "simultaneous_repair_examples": [
+    {
+      "q": 1,
+      "p": 34,
+      "e": 68,
+      "Y": 2,
+      "k": -3,
+      "inputs": 7,
+      "control_clock": 11,
+      "new_clock": 94,
+      "new_odd_count": 37,
+      "center": "767/67108864",
+      "ordinary_target": 1062937790459668787,
+      "completed_blocks": {
+        "1": 5,
+        "2": 2
+      }
+    },
+    {
+      "q": 1,
+      "p": 34,
+      "e": 68,
+      "Y": 2,
+      "k": -5,
+      "inputs": 5,
+      "control_clock": 13,
+      "new_clock": 98,
+      "new_odd_count": 36,
+      "center": "2825/1073741824",
+      "ordinary_target": 86434547909117723,
+      "completed_blocks": {
+        "1": 5
+      }
+    },
+    {
+      "q": 5,
+      "p": 35,
+      "e": 70,
+      "Y": 2,
+      "k": -4,
+      "inputs": 12,
+      "control_clock": 10,
+      "new_clock": 95,
+      "new_odd_count": 36,
+      "center": "271/33554432",
+      "ordinary_target": 474613510762034843,
+      "completed_blocks": {
+        "1": 6,
+        "2": 6
+      }
+    },
+    {
+      "q": 5,
+      "p": 35,
+      "e": 70,
+      "Y": 668,
+      "k": 3,
+      "inputs": 9,
+      "control_clock": 13,
+      "new_clock": 101,
+      "new_odd_count": 41,
+      "center": "1529/536870912",
+      "ordinary_target": 152107338011713806751,
+      "completed_blocks": {
+        "1": 1,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "q": 7,
+      "p": 34,
+      "e": 68,
+      "Y": 1,
+      "k": -6,
+      "inputs": 7,
+      "control_clock": 16,
+      "new_clock": 106,
+      "new_odd_count": 36,
+      "center": "17983/274877906944",
+      "ordinary_target": 302041963128857551,
+      "completed_blocks": {
+        "1": 7
+      }
+    },
+    {
+      "q": 7,
+      "p": 34,
+      "e": 68,
+      "Y": 319,
+      "k": 2,
+      "inputs": 6,
+      "control_clock": 12,
+      "new_clock": 98,
+      "new_odd_count": 39,
+      "center": "2977/1073741824",
+      "ordinary_target": 3041122187382662887,
+      "completed_blocks": {
+        "1": 5,
+        "2": 1
+      }
+    },
+    {
+      "q": 11,
+      "p": 35,
+      "e": 70,
+      "Y": 20,
+      "k": -1,
+      "inputs": 13,
+      "control_clock": 6,
+      "new_clock": 88,
+      "new_odd_count": 37,
+      "center": "121/262144",
+      "ordinary_target": 1319021078558360161,
+      "completed_blocks": {
+        "1": 11,
+        "2": 2
+      }
+    },
+    {
+      "q": 11,
+      "p": 35,
+      "e": 70,
+      "Y": 2,
+      "k": -5,
+      "inputs": 11,
+      "control_clock": 17,
+      "new_clock": 110,
+      "new_odd_count": 39,
+      "center": "37073/1099511627776",
+      "ordinary_target": 9095287132447768547,
+      "completed_blocks": {
+        "1": 11
+      }
+    }
+  ]
+}

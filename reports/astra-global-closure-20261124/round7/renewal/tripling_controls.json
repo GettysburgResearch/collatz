@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "positive_clock_unit_checks": 32768,
+  "five_clock_cylinder_lifts": 512,
+  "common_suffix_checks": 2048,
+  "bounded_offset_fixed_target_rows": [
+    {
+      "q": 1,
+      "clock": 104,
+      "source_odd_count": 52,
+      "companion_odd_count": 51,
+      "ordinary_pairs": 258
+    },
+    {
+      "q": 5,
+      "clock": 104,
+      "source_odd_count": 52,
+      "companion_odd_count": 51,
+      "ordinary_pairs": 340
+    },
+    {
+      "q": 7,
+      "clock": 104,
+      "source_odd_count": 52,
+      "companion_odd_count": 51,
+      "ordinary_pairs": 256
+    },
+    {
+      "q": 11,
+      "clock": 104,
+      "source_odd_count": 52,
+      "companion_odd_count": 51,
+      "ordinary_pairs": 351
+    }
+  ]
+}
