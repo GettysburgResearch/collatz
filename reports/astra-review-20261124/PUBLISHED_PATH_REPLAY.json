@@ -1,0 +1,15 @@
+{
+  "schema": "collatz-astra-publication-replay/v1",
+  "started_utc": "2026-11-24T04:02:00.432262+00:00",
+  "command": [
+    "python",
+    "-B",
+    "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/replay_checked.py",
+    "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib"
+  ],
+  "exit_code": 0,
+  "seconds": 220.32,
+  "stdout_sha256": "2233377c8178ccd1155a2a4a06b6bd6b29dba19ecc001f79eb7f1cfebcba2e21",
+  "script_sha256": "dcc24feeb3dc9ffecbf6830a001e69f2dfc1de7961f5a4e1ebfdfaf7e67add5d",
+  "scope": "Fresh standalone compilation of all eight checked copies at their final repository paths; exact source hashes and all 66 printed theorem axiom lists matched the original per-file audit."
+}

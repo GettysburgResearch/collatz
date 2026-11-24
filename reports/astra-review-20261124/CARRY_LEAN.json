@@ -1,0 +1,20 @@
+{
+  "schema": "collatz-astra-lean/v1",
+  "source": "research/astra-orbit-cycle-20261124/occupation/CarryOccupation.lean",
+  "source_sha256": "2ea3ba93c2939c77646a56a05d8d0f24b819fe6f515e2094330ae239d4fef9a6",
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/occupation/CarryOccupation.lean"
+  ],
+  "started_utc": "2026-11-24T04:03:53.656685+00:00",
+  "seconds": 29.567,
+  "exit_code": 0,
+  "stdout": "'Collatz.CarryOccupation.exceptional_jump' depends on axioms: [propext, Quot.sound]\n'Collatz.CarryOccupation.exceptional_powers' depends on axioms: [propext, Quot.sound]\n'Collatz.CarryOccupation.mem_affected' depends on axioms: [propext, Quot.sound]\n'Collatz.CarryOccupation.affected_length' depends on axioms: [propext]\n'Collatz.CarryOccupation.positive_carry_count' depends on axioms: [propext, Quot.sound]\n'Collatz.CarryOccupation.dictionary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Six finite counting kernels using Std only; infinite orbit and edit-distance theorems are written proofs."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-astra-exact-controls/v1",
+  "scope": "Bounded cycle arithmetic, full short words, and adversarial scope controls; not full Collatz or Lean validation.",
+  "source_sha256": "33c2e93090291360dcbb932ae76f15251773e82e35e8225677e95f8859b92f23",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/cycles/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Exact Farey/log enclosure and middle-range comparison passed\nPositive gaps checked at lengths 17..511: 82202\nLengths 1..16: words, positive contracting, integral (all alternating): 131070 112892 16\nR1 actual rotated pairs and first failure after dropping d: 13066 ((0, 0, 1), (0, 1, 0), 5, 2, 5)\nTransposition cases and primitive cases: 5908 5908\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/cycles/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Exact Farey/log enclosure and middle-range comparison passed\nPositive gaps checked at lengths 17..511: 82202\nLengths 1..16: words, positive contracting, integral (all alternating): 131070 112892 16\nR1 actual rotated pairs and first failure after dropping d: 13066 ((0, 0, 1), (0, 1, 0), 5, 2, 5)\nTransposition cases and primitive cases: 5908 5908\n",
+      "stderr": ""
+    }
+  ],
+  "outputs_identical": true
+}

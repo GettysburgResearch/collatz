@@ -1,0 +1,32 @@
+{
+  "schema": "collatz-astra-controls/v1",
+  "source": "research/astra-orbit-cycle-20261124/mergers/check_two_anchor.py",
+  "source_sha256": "44b71f13c6b1b9f0acac492f035fcefea6e73197f7af660c2423f2e949b2a893",
+  "normal_optimized_identical": true,
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/mergers/check_two_anchor.py"
+      ],
+      "seconds": 0.113,
+      "exit_code": 0,
+      "stdout": "{\n  \"max_source_exclusive\": 900,\n  \"max_inverse_clock\": 32,\n  \"obstruction_sources\": 149,\n  \"actual_meetings_checked\": 1859,\n  \"positive_selectors\": 225,\n  \"narrowing_band_examples\": 24,\n  \"additive_overhead\": {\n    \"E\": 16,\n    \"M\": 1312,\n    \"D\": 66,\n    \"sufficient_A\": 397\n  },\n  \"A2_H2\": {\n    \"n\": 5923,\n    \"predecessor\": 4159,\n    \"odds\": 6,\n    \"final_halvings\": 3,\n    \"minimum_clock_zero_odds\": 4,\n    \"first_layer\": [\n      [\n        4679,\n        6,\n        4\n      ]\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/mergers/check_two_anchor.py"
+      ],
+      "seconds": 0.162,
+      "exit_code": 0,
+      "stdout": "{\n  \"max_source_exclusive\": 900,\n  \"max_inverse_clock\": 32,\n  \"obstruction_sources\": 149,\n  \"actual_meetings_checked\": 1859,\n  \"positive_selectors\": 225,\n  \"narrowing_band_examples\": 24,\n  \"additive_overhead\": {\n    \"E\": 16,\n    \"M\": 1312,\n    \"D\": 66,\n    \"sufficient_A\": 397\n  },\n  \"A2_H2\": {\n    \"n\": 5923,\n    \"predecessor\": 4159,\n    \"odds\": 6,\n    \"final_halvings\": 3,\n    \"minimum_clock_zero_odds\": 4,\n    \"first_layer\": [\n      [\n        4679,\n        6,\n        4\n      ]\n    ]\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Bounded exact controls, complete indicated finite inverse layers and the E=16 anchor certificate; not universal verification."
+}

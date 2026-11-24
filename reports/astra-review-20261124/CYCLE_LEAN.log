@@ -1,0 +1,4 @@
+'Collatz.RotationalExclusion.amp_append' depends on axioms: [propext]
+'Collatz.RotationalExclusion.carry_append' depends on axioms: [propext]
+'Collatz.RotationalExclusion.rotation_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RotationalExclusion.transposition_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]

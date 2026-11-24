@@ -1,0 +1,26 @@
+--- PR182@cbec52dde5bed390a693310dd04e911033ba0cc9/research/phase-packing-round12-20261124/PhasePacking.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/PhasePacking.lean
+@@ -1 +1,7 @@
+-import Mathlib.Tactic
++import Mathlib.Algebra.BigOperators.Group.Finset.Basic
++import Mathlib.Data.Nat.GCD.Basic
++import Mathlib.Data.Rat.Cast.Order
++import Mathlib.Tactic.Linarith
++import Mathlib.Tactic.Positivity
++import Mathlib.Tactic.FieldSimp
++import Mathlib.Tactic.Ring
+@@ -47 +53 @@
+-  apply (mul_le_mul_right₀ hdc).mp
++  apply (mul_le_mul_iff_left₀ hdc).mp
+@@ -50 +56 @@
+-        2 ^ b * 2 ^ c * r := by field_simp; ring
++        2 ^ b * 2 ^ c * r := by field_simp
+@@ -52 +58 @@
+-    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp; ring
++    _ = (3 * ((q : ℚ) / 2 ^ c) + 1) * (2 ^ d * 2 ^ c) := by field_simp
+@@ -58 +64 @@
+-    apply (mul_le_mul_right₀ hu).mp
++    apply (mul_le_mul_iff_left₀ hu).mp
+@@ -65 +71 @@
+-    _ ≤ y ^ 2 * (4 * y) := mul_le_mul_of_nonneg_left ht (sq_nonneg y)
++    _ ≤ y ^ 2 * (4 * y) := mul_le_mul_of_nonneg_left ht (pow_nonneg (show 0 ≤ y by linarith only [hy]) 2)

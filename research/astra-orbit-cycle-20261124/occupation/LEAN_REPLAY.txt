@@ -1,0 +1,10 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+2ea3ba93c2939c77646a56a05d8d0f24b819fe6f515e2094330ae239d4fef9a6  CarryOccupation.lean
+lean -j1 -DwarningAsError=true CarryOccupation.lean
+'Collatz.CarryOccupation.exceptional_jump' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.exceptional_powers' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.mem_affected' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.affected_length' depends on axioms: [propext]
+'Collatz.CarryOccupation.positive_carry_count' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.dictionary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_status=0

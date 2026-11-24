@@ -1,0 +1,6 @@
+'Collatz.ResidueDefect.balanced_numerator_inverse' depends on axioms: [propext, Quot.sound]
+'Collatz.ResidueDefect.single_interval_defect' depends on axioms: [propext, Quot.sound]
+'Collatz.ResidueDefect.geom_mul' depends on axioms: [propext, Quot.sound]
+'Collatz.ResidueDefect.balanced_unit' depends on axioms: [propext, Quot.sound]
+'Collatz.ResidueDefect.exponent_transport' depends on axioms: [propext]
+'Collatz.ResidueDefect.cycle_term' depends on axioms: [propext, Quot.sound]

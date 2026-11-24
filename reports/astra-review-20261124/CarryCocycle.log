@@ -1,0 +1,9 @@
+'Collatz.ScalarCarryCocycle.clock_amortized_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'_private.agents.lean_audit.repaired.CarryCocycle.0.Collatz.ScalarCarryCocycle.succ_le_two_pow' depends on axioms: [propext,
+ Quot.sound]
+'_private.agents.lean_audit.repaired.CarryCocycle.0.Collatz.ScalarCarryCocycle.fourth_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.ScalarCarryCocycle.carry_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ScalarCarryCocycle.clock_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ScalarCarryCocycle.clock_amortized' depends on axioms: [propext, Classical.choice, Quot.sound]

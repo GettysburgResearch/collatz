@@ -1,0 +1,6 @@
+'Collatz.CarryOccupation.exceptional_jump' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.exceptional_powers' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.mem_affected' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.affected_length' depends on axioms: [propext]
+'Collatz.CarryOccupation.positive_carry_count' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryOccupation.dictionary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

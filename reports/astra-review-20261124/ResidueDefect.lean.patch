@@ -1,0 +1,12 @@
+--- PR188@beed685ab713923191ae40c9559bf7400298d2d3/research/scalar-carry-cocycle-20261124/ResidueDefect.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/ResidueDefect.lean
+@@ -1 +1,2 @@
+-import Mathlib
++import Mathlib.Tactic.NormNum
++import Mathlib.Tactic.Ring
+@@ -61,0 +63,5 @@
++
++#print axioms Collatz.ResidueDefect.geom_mul
++#print axioms Collatz.ResidueDefect.balanced_unit
++#print axioms Collatz.ResidueDefect.exponent_transport
++#print axioms Collatz.ResidueDefect.cycle_term

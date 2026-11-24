@@ -1,0 +1,8 @@
+'Collatz.PhasePacking.clock_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]
+'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.canonical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, Quot.sound]

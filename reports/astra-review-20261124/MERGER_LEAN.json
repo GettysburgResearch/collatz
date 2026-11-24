@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-astra-lean/v1",
+  "source": "research/astra-orbit-cycle-20261124/mergers/HalfSource.lean",
+  "source_sha256": "5a7b4239ba7a68a45686e07bee1787a853df0122cec18f6c66167ab27291146e",
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lake",
+    "env",
+    "lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/mergers/HalfSource.lean"
+  ],
+  "started_utc": "2026-11-24T04:10:22.091303+00:00",
+  "seconds": 2.302,
+  "exit_code": 0,
+  "stdout": "'TwoAnchor.Trace.join' depends on axioms: [propext]\n'TwoAnchor.Trace.shift' depends on axioms: [propext]\n'TwoAnchor.Trace.pos_of_end_pos' depends on axioms: [propext, Quot.sound]\n'TwoAnchor.Trace.affine_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TwoAnchor.clock_zero_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TwoAnchor.initial_odds' depends on axioms: [propext, Quot.sound]\n'TwoAnchor.half_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Seven declarations including guarded trace helpers, exact half-size merger with odd counts, and the full clock-zero valuation barrier. Positive-clock and unbounded-additive-overhead general proofs remain written mathematics."
+}

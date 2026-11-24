@@ -1,0 +1,12 @@
+--- PR187@099058f3f2602a48e109c964899f0a9a2a223338/research/fixed-source-repeat-obstruction-20261124/RepeatObstruction.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/RepeatObstruction.lean
+@@ -1 +1,4 @@
+-import Mathlib
++import Mathlib.Tactic.Linarith
++import Mathlib.Tactic.LinearCombination
++import Mathlib.Tactic.Positivity
++import Mathlib.Tactic.Ring
+@@ -193,0 +197,3 @@
++
++#print axioms Collatz.FixedSourceRepeat.cancel3_pow2
++#print axioms Collatz.FixedSourceRepeat.cancel9_pow8

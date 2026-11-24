@@ -1,0 +1,143 @@
+[
+  {
+    "pr": 182,
+    "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+    "source": "research/fixed-source-repetition-round11-20261124/repetition_controls.py",
+    "sha256": "62e9ff80a51cc72df6bbf84b5bdfe59740ce4fac7a54ec179c72c56e4da63d3d",
+    "exit": 0,
+    "output": {
+      "bit_caps": 12,
+      "cap_replays": 48,
+      "cap_symbols": 16448,
+      "edges": 23064,
+      "fixed_source_tests": 1548,
+      "near_critical_constructions": 99,
+      "paths": 3432,
+      "repeated_windows": 53868,
+      "scope": "finite exact arithmetic only"
+    }
+  },
+  {
+    "pr": 182,
+    "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+    "source": "research/phase-packing-round12-20261124/phase_controls.py",
+    "sha256": "efad49756721572726fcc650cdb01c5f6edbfe458f026a82dd378493e1725d23",
+    "exit": 0,
+    "output": {
+      "accepted": 67,
+      "actual_edges": 24703,
+      "balanced_words": 200,
+      "candidate_decisions": 17030,
+      "confined_cycles": [
+        [
+          1
+        ]
+      ],
+      "contracting_phases": 87,
+      "largest_cycle_bound": 5019951,
+      "max_candidate_clock": 44,
+      "odd_graph_vertices": 2509976,
+      "past_residue_checks": 113588,
+      "prefix_checks": 24703,
+      "sample_bounds": {
+        "1": 2,
+        "147": 1904337,
+        "17": 5980,
+        "200": 5019951,
+        "29": 25848,
+        "3": 40,
+        "41": 140849,
+        "5": 560
+      },
+      "scope": "finite exact arithmetic only; Lean not run"
+    }
+  },
+  {
+    "pr": 187,
+    "commit": "099058f3f2602a48e109c964899f0a9a2a223338",
+    "source": "research/fixed-source-repeat-obstruction-20261124/controls.js",
+    "sha256": "7d0d45f35ec351ed4d78fe5c7ff001aebba3fba3fa902512bd64f7e46c90d77a",
+    "exit": 0,
+    "output": {
+      "repeated_factor_letters": 358500,
+      "explicit_mismatch_pairs": 220,
+      "rational_finite_lifts": 3048,
+      "complete_factor_cones": 1016,
+      "fixed_signed_rational_budget_checks": 11250
+    }
+  },
+  {
+    "pr": 188,
+    "commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+    "source": "research/scalar-carry-cocycle-20261124/controls.js",
+    "sha256": "0cc3151e89e5e428f802908ab35e1465838b6b8771c5c4a8a2aa822ee9492a25",
+    "exit": 0,
+    "output": {
+      "local": 9963,
+      "intervals": 203118,
+      "heights": 11589,
+      "sources": 501,
+      "mechanical": 991,
+      "normCases": 5851,
+      "interior": 4960,
+      "scope": "bounded exact controls only; no Lean execution"
+    }
+  },
+  {
+    "pr": 189,
+    "commit": "a0be70b1ffa075cbc50755ac76036108c028d120",
+    "source": "research/stationary-carry-rigidity-20261124/check.py",
+    "sha256": "9b1549c18c4683fe507b2051a6042f0d373302d9537174fcf82a396e2e1dce94",
+    "exit": 0,
+    "output": [
+      "Exact exponent inequalities: PASS (0.94 < critical; carry bound < 0.94)",
+      "Legal finite carry-word cases: 13362",
+      "Weak-composition count cases: 40"
+    ]
+  },
+  {
+    "pr": 190,
+    "commit": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+    "source": "research/mahler-physical-scripts-20261124/controls.js",
+    "sha256": "abbd457362e93cff79a46165885981879caa7bd87a3947d4ad1f20a2bd184de2",
+    "exit": 0,
+    "output": {
+      "telescope": 93,
+      "substitution": 13860,
+      "regularity": 924,
+      "ratio": 924,
+      "physical": 2044,
+      "expanding": 19
+    }
+  },
+  {
+    "pr": 190,
+    "commit": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+    "source": "research/mahler-physical-scripts-20261124/primitive_controls.js",
+    "sha256": "5399e02d65bbca6f95be3cc02d58145df87d0fcb8d9df8a9ee47ada0b2319fd5",
+    "exit": 0,
+    "output": {
+      "periodicRegularity": 11532,
+      "prefixCases": 1176,
+      "transverse": 163
+    }
+  },
+  {
+    "pr": 191,
+    "commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+    "source": "research/two-sided-cycle-packing-20261124/controls.js",
+    "sha256": "f3b8a5f38c128c1c53852266d9dec4c9280a8a5b5f81ba3304aebfc7f8471dbc",
+    "exit": 0,
+    "output": {
+      "small_center_words": 1625,
+      "cyclotomic_norm_certificates": 2635,
+      "noncoprime_components": 1950,
+      "zero_norms": 57,
+      "noncoprime_zero_comparisons": 1950,
+      "actual_rational_cycle_packings": 8088,
+      "two_sided_repeated_factor_checks": 75488,
+      "contracting_dictionary_checks": 908,
+      "ordinary_shadow_scripts": 1022
+    }
+  }
+]
