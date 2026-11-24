@@ -1,0 +1,109 @@
+{
+  "schema": "collatz-universal-step-sources/v1",
+  "baseline": {
+    "pr": 192,
+    "sha": "045be43632f274dd64faf15714e42cc8de27a2e9",
+    "tree": "e55fec0072bc4286bd160fb8657b2e1a2aca9607"
+  },
+  "upstream_heads": [
+    {
+      "pr": 193,
+      "sha": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "branch": "research/astra-universal-descent-20261124",
+      "title": "Collatz: ordinary critical mergers, quantitative recurrence, and adelic rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 195,
+      "sha": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+      "branch": "research/astra-global-closure-20261124",
+      "title": "Collatz: ordinary mergers, cycle denominator rank, and adelic boundaries",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "pr": 197,
+      "sha": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "branch": "research/ayh-resource-reset-20261124",
+      "title": "Collatz: AYH first-passage bounds and Lean parity marks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "pr": 199,
+      "sha": "d868f8e8405c08b8c501236853bea495ca593824",
+      "branch": "research/optimal-critical-ancestors-20261124",
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199"
+    },
+    {
+      "pr": 200,
+      "sha": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "branch": "research/gpt62-regularity-rigidity-20261124",
+      "title": "Regularity rigidity: macroscopic ancestor blocks, all-base automaticity obstruction, and 1/9 five-return pressure",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    }
+  ],
+  "read_interfaces": [
+    {
+      "pr": 193,
+      "path": "research/astra-heavy-machinery-20261124/ergodic/HEAD_DIAGONAL.md",
+      "use": "Inspected positive diagonal mass; not an upper bound on failures."
+    },
+    {
+      "pr": 193,
+      "path": "research/astra-global-synthesis-20261124/section/proof.md",
+      "use": "Written corrected-height construction used only in the failed inverse-minimum attempt."
+    },
+    {
+      "pr": 195,
+      "path": "research/astra-global-closure-20261124/closing/README.md",
+      "use": "Updated closure boundary and cycle/adelic comparison; not a dependency of the new kernel theorem."
+    },
+    {
+      "pr": 197,
+      "path": "research/ayh-resource-reset-20261124/literature-step/FIRST_PASSAGE_MARKS.md",
+      "use": "Read original-source joint-weight boundary."
+    },
+    {
+      "pr": 197,
+      "path": "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md",
+      "use": "Read spatial discrepancy and independent-pair criterion."
+    },
+    {
+      "pr": 199,
+      "path": "research/optimal-critical-ancestors-20261124/FIRST_PASSAGE.md",
+      "use": "Read conditional summability equivalence; not assumed proved."
+    },
+    {
+      "pr": 200,
+      "path": "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+      "use": "Read finite/infinite first-return pressure boundary."
+    }
+  ],
+  "external": [
+    {
+      "url": "https://arxiv.org/abs/2106.11859v9",
+      "use": "Hardy-space operator scope; no such theorem is applied to ordinary component indicators."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/9/v2",
+      "use": "Numerator-ordering precedent, reconstructed directly for binary words in moment.md."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/13",
+      "use": "Actual-input coupling explored; its reported formal development not rebuilt."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/146",
+      "use": "Critical density/collision manuscript inspected for a possible trace bound; no dependency."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/176/v1",
+      "use": "Ordinary harmonic-moment boundary inspected; no dependency."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/178",
+      "use": "First-smaller-orbit law inspected; not a fixed-source universal statement."
+    }
+  ],
+  "boundary": "New carry-class kernel theorem and fixed-source matching exclusion are elementary. No external recent analytic/formal claim is used to assert universal convergence."
+}
