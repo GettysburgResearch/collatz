@@ -1,0 +1,35 @@
+{
+  "schema": "collatz-astra-global-resolution-hashes/v1",
+  "scope": "Final scientific packet and initial execution/review files; publication and checkout receipts are added separately.",
+  "sources": {
+    "LATEST_CONNECTIONS.md": "72118aba8752680735ba69c6ac06c97a84eca9b6782d1884f4488f86f7a7a3d9",
+    "README.md": "510144697d68424c5312f811ffb6121c58068e699963699bcb996f6b109d00cf",
+    "SOURCES.json": "1efc18e958d396c590be0f06517459982b76f5bf4e8fd13b9c6b739cb2391b22",
+    "arithmetic/CLOCK_FIBERS.md": "e158a48c5e98bca6051377f480464507898e31ac8b0432c69a67a2bd6acec00b",
+    "arithmetic/CompanionPacking.lean": "32daedba1e463f9b8ce6e77f17fa418a1a5fd647bd588a67192a823bb2e120f0",
+    "arithmetic/README.md": "fd369051c4c6aad0b55b63ed586a6c79aeefb85fa0843460b9588e6c26326993",
+    "arithmetic/RESIDUAL_GHOST.md": "f5258e750f83ea5c1874fb81ebac95365996395dec317d1b4853b6f60de2a47d",
+    "arithmetic/REVIEW_COLLISION.md": "bcc1f687c594c59f65278762659b671723888862368febc35a562df0d7c83c85",
+    "arithmetic/check.py": "1c0e340199dc79b238d419a3f2f967d7c84142af342766cb0d040de2339b94d8",
+    "check.py": "282d08260ff19a687a2ed1f4d359b9d294c4a23b886d049345a439f8adda38be",
+    "collision/ClockCollision.lean": "d2219f33b80acffc5e1e35849c7c7095113a77f81d8944cf1d37f48c922e7ed8",
+    "collision/README.md": "5aa27684c7139217fa9475f8e6d575f6892a7cb6ba775bf981787ca7d3e9baab",
+    "collision/REVIEW_ARITHMETIC.md": "39f5a305db9418cc267df22dc82827d3f3cf48880edc546d37449cfb6e75360a",
+    "collision/REVIEW_RESIDUAL_GHOST.md": "71bc4c1bb50ee87c30ee80fe539343dd7dc5cce690d3be6a74c49b5ec996f5f2",
+    "collision/REVIEW_REWRITING.md": "e53d6cf3edd8d5d915cb9b3bb9ac6ef2dd0f0e6659e06f3619ceb9350f28428d",
+    "rewriting/SEVEN_RETURN.md": "4512f0918044d529e725fcfbb7aa284090ab562ef62dc76365fb224ff943e52a",
+    "rewriting/SevenReturn.lean": "baa0a598792994d2b96be5eae6952adf99a2a3bf749f061ae09abf64e18101b8",
+    "rewriting/SingleReturn.lean": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+    "rewriting/check.py": "b0e2d2b1711acf333d90e7c021e1d2581ff29c347b17dcdf550ee80fc93315c2"
+  },
+  "coordinator_review_sha256": "9d08edcbe87ae4c0e0a6737efaf23e3a39648f15e4d35fc8f067878d9f5a193c",
+  "executions": {
+    "collision/ClockCollision.log": "a08fae66c49aa3c2ebb49882b4ac8cd094e651bffda1ea53f648081b6524749e",
+    "kernel/CHECKS.json": "36474c77ed6e5a49bd181333ea92715ffad76ad2a34979309788fc048bdcbce1",
+    "kernel/ClockCollision.log": "364cf6f00cb996fc9c8f0984654bceed2cb8caaa1e284b07e2ed132dad2a6392",
+    "kernel/CompanionPacking.log": "3be44b4846420ef67845c941f6b324b3d6dfa75ac71b4fa00104863a06dd97c8",
+    "kernel/SevenReturn.log": "b0d16ab0f4b415a334f2c9e5cbf8b556faa63ef9b96d1abfc3ac044d38a459c3",
+    "kernel/SingleReturn.log": "840661d6850eaa240fc07bd9b23d89f98bbb081841eb9836ba22cda9047b85c2",
+    "residual-control.json": "4802dc03e6a35d579f0fa30a72611ac213bdfd3bc8ed447ec1d07ef60e2ee9f2"
+  }
+}
