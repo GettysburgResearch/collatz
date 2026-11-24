@@ -1,0 +1,131 @@
+{
+  "schema": "collatz-astra-heavy-source-manifest/v1",
+  "base": "4dcc03aa236fd64b7dc1c04d2574d0f56cc24f79",
+  "files": [
+    {
+      "path": "research/astra-heavy-machinery-20261124/LATEST_CONNECTIONS.md",
+      "sha256": "c70b140dbd986d228b75fe20c79fb5647e1f631ce094642225263ecd3eb82e71",
+      "bytes": 7392
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/README.md",
+      "sha256": "bd5911717c3a2b96d774f07d6af5204ef2a57e8cc0891656022cf3cae98acc01",
+      "bytes": 12009
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/SOURCES.md",
+      "sha256": "41816890af3eeb8a8d288838d43eef7967437956516f09ec34dd832cc4f80ea7",
+      "bytes": 9285
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/check.py",
+      "sha256": "b8dfb7e96f52b4fe60ae9b15fd38f7b3deaf6cf52761c4985049321b19015e2a",
+      "bytes": 5094
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/ADELIC_MAHLER.md",
+      "sha256": "f7f91a8fb91c0e05125c5ec136a7e3486e2427c959ad05b3d491d7360613b8b1",
+      "bytes": 7266
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/MahlerCore.lean",
+      "sha256": "9c0286f79656b4182b53862f7c573e7eab8c51bff932cfe729eebc697ca836de",
+      "bytes": 902
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/REVIEW_AUTOMATIC_TESTS.md",
+      "sha256": "e789c8bcd8ac4b5039421648074398f2933e6c39e6502c9210f4d66cb7694031",
+      "bytes": 3827
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/REVIEW_CRITICAL.md",
+      "sha256": "bba976f1bd3a144fdf1ea79cbde3d1ee6fa728816568c2e51b106ff3604f570f",
+      "bytes": 3747
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/REVIEW_ERGODIC.md",
+      "sha256": "b4c1f36bfa99d7e587dd62872c7ce6b5b8c0197163be158db54835ff9c670a88",
+      "bytes": 5386
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/check.py",
+      "sha256": "ca4840f3c2c4f277af7984f5feb672ef7d72e3a30748d77dde38a43864ff9e18",
+      "bytes": 2955
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/mixed-rigidity.md",
+      "sha256": "c725aa6bb9795bd553122f70fa7475bceacda9245e1c1b2ad6883b4d1535e377",
+      "bytes": 5375
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/mixed_check.py",
+      "sha256": "ca788b182ca88330d2b4a32a8c29e9308f28e6e70002789b1b67dd1dfc85c003",
+      "bytes": 1643
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/diophantine/proof.md",
+      "sha256": "4d3e15b36c746846e0f8a4b80fe3f4a3bd40c43cec92991bc74bec41e53c0678",
+      "bytes": 19335
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/AUTOMATIC_TESTS.md",
+      "sha256": "1d30311c08c2bf2567efa5a1b970523c5f7d1612ba8e6af238c123c161b2bf31",
+      "bytes": 12948
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/DENSITY_RIGIDITY.md",
+      "sha256": "c344a6fc709ac06eb44c673674fdd40f78a88125ecf9bae115fecd23433cfa20",
+      "bytes": 12974
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/KernelTransfer.lean",
+      "sha256": "d2ed9ca61927ea4c14d2cb033f29924558e6eff08eb0b69b2b45bb44f2fd51cb",
+      "bytes": 4640
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/WEIGHTED_CLOCKS.md",
+      "sha256": "71794e5551a111948b00675e6ee907c307a7b64990abb0371a7b899d834790c6",
+      "bytes": 7286
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/controls.py",
+      "sha256": "7b05a1c9998d79a5d61fcd00a5e04ce313b9ee4a87e92980cd58c7c511046a99",
+      "bytes": 2462
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/dynamics/potential.md",
+      "sha256": "0bf2f8a84e5f575f0ecb334df2b7c98bfdda54e761c8f9893b39b65ef3b69219",
+      "bytes": 6832
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/ErgodicWindow.lean",
+      "sha256": "37dfcebc4df16dc34fc687a3438105cee4646ad4ddafa403a23499691d779e5b",
+      "bytes": 6135
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/HEAD_DIAGONAL.md",
+      "sha256": "2b8b7f8337cbbbea9a7c4d08a1a7f171a07023d48bbefba0a60010b75420d385",
+      "bytes": 6199
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/check.py",
+      "sha256": "a7f4a26565544207686f03f4f6378bae24ae7e3bcd3bd78c7c0c50f685af37e8",
+      "bytes": 3029
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/critical.md",
+      "sha256": "d2ce6099623587631dd1495f8f47a7bcb4df11212aa9208cab3cf855bdec2da8",
+      "bytes": 3263
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/proof.md",
+      "sha256": "df79b6e861a9707c1747775e02db68a40adc93e3a40d8c25094a26f8a62880f7",
+      "bytes": 19315
+    },
+    {
+      "path": "research/astra-heavy-machinery-20261124/ergodic/quantitative.md",
+      "sha256": "53ed4cd6bef10aba71a276d21c65ee9ccb2c1308317a0f057d0353d1d1b7e8d5",
+      "bytes": 5918
+    }
+  ]
+}

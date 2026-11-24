@@ -1,0 +1,247 @@
+{
+  "schema": "collatz-astra-heavy-latest-heads/v1",
+  "read_on_utc": "2026-11-24",
+  "scope": "Thirty most recently updated PRs from final metadata refresh; focused new proof intake of PR188,192,195,197,199,200. Earlier complete-head intake is retained in global-synthesis reports.",
+  "prs": [
+    {
+      "number": 192,
+      "title": "Collatz: unrestricted closure test, ordinary descent, and five-module Lean replay",
+      "head": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "updated_at": "2026-11-24T07:23:35Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "number": 200,
+      "title": "Regularity rigidity: macroscopic ancestor blocks, all-base automaticity obstruction, and 1/9 five-return pressure",
+      "head": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "updated_at": "2026-11-24T07:14:58Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "number": 193,
+      "title": "Collatz: forward anchors, minimum-height rigidity, and mixed-language Lean descent",
+      "head": "4dcc03aa236fd64b7dc1c04d2574d0f56cc24f79",
+      "updated_at": "2026-11-24T07:14:37Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "number": 199,
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "updated_at": "2026-11-24T07:10:44Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199"
+    },
+    {
+      "number": 195,
+      "title": "Collatz: ordinary mergers, cycle denominator rank, and adelic boundaries",
+      "head": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+      "updated_at": "2026-11-24T07:04:26Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "number": 188,
+      "title": "Collatz: Lean persistent descent, all-rotation cycle bounds, and residue rigidity",
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "updated_at": "2026-11-24T06:48:33Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/188"
+    },
+    {
+      "number": 197,
+      "title": "Collatz: AYH head descent and a sparse-edge closure criterion",
+      "head": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+      "updated_at": "2026-11-24T06:47:45Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "number": 182,
+      "title": "Collatz: marked descent and direct attempts at universal closure",
+      "head": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "updated_at": "2026-11-24T06:37:04Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "number": 198,
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "head": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "updated_at": "2026-11-24T04:33:32Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/198"
+    },
+    {
+      "number": 196,
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "head": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "updated_at": "2026-11-24T04:32:50Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/196"
+    },
+    {
+      "number": 194,
+      "title": "Collatz: bounded carry births, binary substitution rigidity, and verified finite kernels",
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "updated_at": "2026-11-24T04:16:49Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/194"
+    },
+    {
+      "number": 189,
+      "title": "Stationary critical collision rigidity and rational-scalar carry compression",
+      "head": "a390a1a4c75ee95db98b4b683d17c503f4e4a118",
+      "updated_at": "2026-11-24T04:01:31Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/189"
+    },
+    {
+      "number": 191,
+      "title": "Collatz: two-sided full-denominator packing, noncoprime norm, and smaller scalar shadow",
+      "head": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "updated_at": "2026-11-24T03:33:36Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/191"
+    },
+    {
+      "number": 190,
+      "title": "Collatz: p-adic Mahler rigidity for binary uniform and primitive substitution scripts",
+      "head": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "updated_at": "2026-11-24T03:32:38Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/190"
+    },
+    {
+      "number": 187,
+      "title": "Collatz: exclude all finite digit-weight carry scripts via fixed-source factor arithmetic",
+      "head": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "updated_at": "2026-11-24T03:25:22Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/187"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: all-template bounds, witness charge, and density-free germs",
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "updated_at": "2026-11-23T07:15:29Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: unconditional cycle budgets and fixed-source arithmetic",
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "updated_at": "2026-11-23T05:42:14Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "updated_at": "2026-11-23T05:27:44Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "number": 176,
+      "title": "Collatz checkpoint 18: finite ordinary repairs and all-gap collisions",
+      "head": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "updated_at": "2026-11-23T04:36:00Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity",
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "updated_at": "2026-11-23T04:29:06Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "updated_at": "2026-11-21T14:34:32Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "updated_at": "2026-11-21T09:39:39Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "updated_at": "2026-11-21T08:47:54Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "updated_at": "2026-11-21T08:41:05Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "updated_at": "2026-11-20T23:57:31Z",
+      "state": "open",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/172"
+    }
+  ]
+}

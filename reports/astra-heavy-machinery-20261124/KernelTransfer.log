@@ -1,0 +1,4 @@
+'Collatz.KernelTransfer.inverse_digit' depends on axioms: [propext, Quot.sound]
+'Collatz.KernelTransfer.ternary_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KernelTransfer.inverse_digit' depends on axioms: [propext, Quot.sound]
+'Collatz.KernelTransfer.ternary_row' depends on axioms: [propext, Classical.choice, Quot.sound]
