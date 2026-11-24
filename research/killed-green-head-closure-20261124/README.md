@@ -352,3 +352,8 @@ performed. The draft is a mathematical checkpoint pending review.
 ## Continuation: exact grade spreading and branching phase sparsity
 
 See [continuation/README.md](continuation/README.md). This checkpoint proves an exact full-octave odd-grade TV shift bound and the aggregate maximum-fiber bound O(1/sqrt(log X)), retaining both actual roots and signed clock differences. It also gives the native-clock bound O(L X^0.71) for arbitrary finite canonical phase sets, with no injectivity or forward-invariance premise, and a triadic-denominator depth restriction on rational-scalar ancestors. Written proposed mathematics; additional exact controls executed; Lean candidate uncompiled. Neither result closes the two-class discordance or all ordinary sources.
+
+
+## Continuation: positive-density synchronized blocks and exact prefix-conditioned inverse floors
+
+See [prefix-density/README.md](prefix-density/README.md). Conditional on the extra-depth retained atom floor of paper 37 v4, every fixed ordinary unit target has linear-size ordinary antichains in each sufficiently large height band. Using these disjoint moving anchors, sum actual central fixed-clock slices to get positive relative ancestor density in every sublinear binary prefix and both fixed grade residues, including shrinking intervals in the stated Rhin range. Combining with PR146 yields a positive-proportion packing of long synchronized blocks, strengthening PR202's subpower count on fixed macroscopic intervals. A two-color lower bound holds for arbitrary scale-dependent low-bit lookup tables. The actual two-arm weighted discordance and completed ratio-five atom floor remain open. Written conditional results; exact finite controls executed; Lean candidate uncompiled.
