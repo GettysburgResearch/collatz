@@ -1,0 +1,392 @@
+{
+  "date": "2026-11-24",
+  "baseline": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+  "scope": "Round-eight source identity ledger. Exact repository and literature pins freeze the versions used in the focused proof reviews. The initial and prepublication 162-PR inventories are metadata coverage, not complete mathematical certification.",
+  "repository_sources": [
+    {
+      "pr": 195,
+      "commit": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+      "path": "research/astra-global-closure-20261124/round7/README.md",
+      "git_blob": "5e40a89325d34d3bddc88dc8fb04054c3090f638",
+      "sha256": "2f508efd8ae509708b35ae28591b3af262d98102f48978706cfd73367cae4667",
+      "bytes": 13680,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0e8a7f9f965416189b30b57b8aa818fbcb7757c7/research/astra-global-closure-20261124/round7/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+      "path": "research/astra-global-closure-20261124/round7/head/README.md",
+      "git_blob": "2a8451137400ce17d17ecca115ae52f1d8f10a29",
+      "sha256": "daa6128b4368c48e1d6f77e4b852dd01fde10de92505e543f8e4d8439786c8a7",
+      "bytes": 10030,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0e8a7f9f965416189b30b57b8aa818fbcb7757c7/research/astra-global-closure-20261124/round7/head/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+      "path": "research/integrated/exceptional-mass/README.md",
+      "git_blob": "08ceff7af5e45fbfcbd71b660fa3bfd04d558873",
+      "sha256": "157ef73f3db67d0eaf1c978cf3b404fb3576ef87bf8a268ea394ebabb9498574",
+      "bytes": 7274,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0e8a7f9f965416189b30b57b8aa818fbcb7757c7/research/integrated/exceptional-mass/README.md"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/FINITE_CLOSURE.md",
+      "git_blob": "48c5f31da4f297ec9eeb134a88f7657c0dd98d03",
+      "sha256": "52e1b8f33330a28bd13d0b25659af894ac7a4eac401dce54ae2d8c3313259bdb",
+      "bytes": 8296,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/FINITE_CLOSURE.md"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/CONTROLS.json",
+      "git_blob": "2cb285988f5d318fa2508885faa3474763d9fb10",
+      "sha256": "b24581bff08881816697cf0fad6159052288a8e70ed28dc21e1300232606e517",
+      "bytes": 741,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/CONTROLS.json"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "git_blob": "614eb6a2b70aad949fa851b564462dff78eafbcb",
+      "sha256": "1718e91e498b7491e7c6a9e939f92609a46b78bb0bb1e355b6588e6c73384b39",
+      "bytes": 14376,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/CONTROLS.json",
+      "git_blob": "027b054020a2b8080bb9c1ac34f79673f33cc430",
+      "sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516",
+      "bytes": 902,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/CONTROLS.json"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/README.md",
+      "git_blob": "fd5f6c6f79d415550ef416f4a674ef07bbad8366",
+      "sha256": "083dd1aa50d9ff33163b0d24bb63fc0f3729ed7ba9070c026ea8672786be5a5f",
+      "bytes": 14483,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/README.md"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/check.py",
+      "git_blob": "601c98b8aca09b44a2ea4b8e16359de0db20cb26",
+      "sha256": "8b7e4e0f8b11d1499ba1954c077007aade3228e4239eddd888167645fb7bc27c",
+      "bytes": 3577,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/check.py"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover1.txt",
+      "git_blob": "323d967b3eca1d76e7102f9df36c984d6fa4d5d8",
+      "sha256": "03fe44cd5c3d01e2a89b7ce6f5c95d6456e9c5526cc43d7e4de26e0e6deb96e0",
+      "bytes": 15915,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/cover1.txt"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover5.txt",
+      "git_blob": "c0cdb6d80a6be5e12d598a5b29b46a3a48c085b7",
+      "sha256": "062bc68e7dc2e34b24a0aa2e155a6ffc7b832b2bf6d6b0d228cba3d1ab283815",
+      "bytes": 19777,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/cover5.txt"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/verified/TriplingCover.lean",
+      "git_blob": "4a2b08e21f34ac21bbba70fe6414a3a7a62a62fc",
+      "sha256": "02545dc003a9ffa533b559ccd052310b3eb965ccff53ba87af7b0690d4e3b821",
+      "bytes": 4881,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/verified/TriplingCover.lean"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/README.md",
+      "git_blob": "cef4fd6353912a1c8c780be6694d78db592cef8d",
+      "sha256": "572153774ae4c3b11cb773d88679982a36c5e34f7e6d26c969a30846b96585b4",
+      "bytes": 20778,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/README.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md",
+      "git_blob": "86e77570121079a5fefffc65ad23442604bb0f44",
+      "sha256": "f3f8a2fa26a9dd9dd440a6504287e226e8f0afa08041fe62e7a7f0650828897b",
+      "bytes": 13553,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md"
+    },
+    {
+      "pr": 197,
+      "commit": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/README.md",
+      "git_blob": "746fcff27579211941f20a6d630bd0856f8244e4",
+      "sha256": "5026f2b11d7a930c042822be39fac1b215c301e7b52c2d6aa4a35bdbf60eeb3a",
+      "bytes": 17649,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/README.md"
+    },
+    {
+      "pr": 197,
+      "commit": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/README.md",
+      "git_blob": "8a45890d2d458b3663555975c07158ce03ccfd2a",
+      "sha256": "e8aa9d84d672829d0e535b661758d7991cb109e853adb5bf9b2c99da23f90b1b",
+      "bytes": 16631,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/two-class-descent/README.md"
+    },
+    {
+      "pr": 197,
+      "commit": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UNIT_EXIT.md",
+      "git_blob": "6ebe1557a2744e66014addd3ef6e45db91cabf5e",
+      "sha256": "1bff7d7b7bfe5cc3155d62918b442a915113a298afc22f86a4113464f62ede1e",
+      "bytes": 13314,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/UNIT_EXIT.md"
+    },
+    {
+      "pr": 192,
+      "commit": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "path": "research/astra-closing-step-20261124/descent/README.md",
+      "git_blob": "64fe5112e16e2b802578a2ef3e43f0d29df13c72",
+      "sha256": "0893ef76b3fa7d3fe0292e064626ea77920020277f1b3127b6c4938ec783dbfa",
+      "bytes": 8421,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b/research/astra-closing-step-20261124/descent/README.md"
+    },
+    {
+      "pr": 192,
+      "commit": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "path": "research/astra-global-budget-20261124/arithmetic/LATEST_CONNECTIONS.md",
+      "git_blob": "33302d885615164f124af03ad7d47feb932af390",
+      "sha256": "c7a547c5658a9aa2478ec02b06e26b2f812ac23e2e9190a8e9f63aeabc6e2b2b",
+      "bytes": 8136,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b/research/astra-global-budget-20261124/arithmetic/LATEST_CONNECTIONS.md"
+    },
+    {
+      "pr": 192,
+      "commit": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "path": "research/astra-global-budget-20261124/arithmetic/README.md",
+      "git_blob": "f18cef18e44451ee9557376e26b9368858e7601c",
+      "sha256": "7991ea19020b0e24d073e6e47e6a38dc3181b738273d8d329e8593ee34813779",
+      "bytes": 9156,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b/research/astra-global-budget-20261124/arithmetic/README.md"
+    },
+    {
+      "pr": 192,
+      "commit": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "path": "research/astra-global-budget-20261124/cost/README.md",
+      "git_blob": "8c85e8c3e015edb22c3bb6619d1d2d82d9543ca3",
+      "sha256": "17c1850405c9a9be3efec332903bd106c4ca1ffc5c9bb051bb7c545fcc94a788",
+      "bytes": 11908,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b/research/astra-global-budget-20261124/cost/README.md"
+    },
+    {
+      "pr": 192,
+      "commit": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "path": "research/astra-global-budget-20261124/renewal/README.md",
+      "git_blob": "cf7e061cab177a1b3ac6aa0ece87c72ab301bd0e",
+      "sha256": "b0795766591a06fb0e875048dd411f3e669b49a4f103a8daf5d5a0022fa7b00b",
+      "bytes": 13050,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b/research/astra-global-budget-20261124/renewal/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "bdd4409062bc02416ff6941f8d5690b800068cb3",
+      "path": "research/astra-deep-closure-20261124/arithmetic/README.md",
+      "git_blob": "4ec547ef4498668aa352528117fef74186033e80",
+      "sha256": "37b7fd54c1b81ddfc608dc653d7955afc102e0847e3f17f59e2741b6d51fa7ec",
+      "bytes": 13205,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/bdd4409062bc02416ff6941f8d5690b800068cb3/research/astra-deep-closure-20261124/arithmetic/README.md"
+    },
+    {
+      "commit": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/FIXED_SOURCE.md",
+      "git_blob": "992de375d8934805c4906a1168c56e59475032be",
+      "sha256": "815183d2bb9110c2455340070d3b0ca4027a01760c4042a7d6d8841d2687e563",
+      "bytes": 25293,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d2081d1cd2410e6004eaee9f9b13c5553afaf3f4/research/astra-closure-attack-20261124/FIXED_SOURCE.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/DIRECTED_TRIPLING.md",
+      "git_blob": "8dcd86c6c2242d5680a9f790be4d9b45395236b4",
+      "sha256": "7c567433f8e0c902f2034f049f7611a1416035b2fe6c067a9cb5469bbc7fe4aa",
+      "bytes": 6751,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/DIRECTED_TRIPLING.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "git_blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "sha256": "af24fd6b80da22fec7d90688b1738b4cd64894323096c80cda6ffcd824db62a2",
+      "bytes": 7230,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/PREFIX_COMPRESSION.md",
+      "git_blob": "0f393fe3bf462a4782c8ae22f2ae7ee7894a48a0",
+      "sha256": "eda057668ae31ca2d22d14b207da873b2d248a3fdfb08820c3de5b469786c09a",
+      "bytes": 7740,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/PREFIX_COMPRESSION.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/PREFIX_REPRESENTATIVES.md",
+      "git_blob": "76f124b14a3f01c26060e44bb83b0ebbe3e3a2ed",
+      "sha256": "41e2d9bc694056421911b43abfff6719f5c05b05fea6c124078fb729dabad211",
+      "bytes": 13338,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/PREFIX_REPRESENTATIVES.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/STABILIZED_CORE_DESCENT.md",
+      "git_blob": "c7294fa8a34b14deb936379cab2bb749ffa07506",
+      "sha256": "81089a8af5d6039bae68340e0023df17d7abb8017bbee575c16ec877b9cadd92",
+      "bytes": 5627,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/STABILIZED_CORE_DESCENT.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+      "git_blob": "71ca2c94331f44310897dae105e1337e5874dcbb",
+      "sha256": "567ecc84a34d41d01ca9bf63a4b4074a92b350c1cbbdc77060927fb1ed72f3b5",
+      "bytes": 6257,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_DENSITY.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "bytes": 7806,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_UPPER.md"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-prescribed-closure-20261124/README.md",
+      "git_blob": "3eaf93f8b429c10fa198a991d641b44f5962e7e2",
+      "sha256": "91eff1e9be04bc0bf99820af3bc7307565a200d5722f2a6353b01b5a0e6c8ba3",
+      "bytes": 6866,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-prescribed-closure-20261124/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-prescribed-closure-20261124/head/OrderedLanding.lean",
+      "git_blob": "f5391360a3116f219d3fba4da7e0373300458bf5",
+      "sha256": "3c6df11b05bde8a555c5c0c8276b2cf8ab0d0003e0a67385e60e044efab53865",
+      "bytes": 5864,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-prescribed-closure-20261124/head/OrderedLanding.lean"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-prescribed-closure-20261124/head/PRESCRIBED_RESIDUES.md",
+      "git_blob": "fb34a8f0f74404fa38ed9bd3724b6e83c793a85f",
+      "sha256": "0d5d9d0a892c8094b577ac458e833996343666bf2511992e0e98ac9c4017fd14",
+      "bytes": 7324,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-prescribed-closure-20261124/head/PRESCRIBED_RESIDUES.md"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-prescribed-closure-20261124/head/README.md",
+      "git_blob": "f933838195676c3e9093e7e0ebdb2117ac150974",
+      "sha256": "78977a273b4e3dff70d602d69b0ce30c36ce235694cc108d055e7cd727f4ac1f",
+      "bytes": 13597,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-prescribed-closure-20261124/head/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-prescribed-closure-20261124/paired/README.md",
+      "git_blob": "ba4c46df76eda2e46fa2f64cbe9dc15b76f41c32",
+      "sha256": "2cdc402e7f15f2a9fed9886fed9377098db9edf170e7a30cf73a135305524257",
+      "bytes": 13828,
+      "scope": "Exact cited interface or comparison. The lane manuscripts and reviews retain its hypotheses and distinguish written mathematics from executed checks; this pin does not certify an entire upstream branch.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-prescribed-closure-20261124/paired/README.md"
+    }
+  ],
+  "external_sources": [
+    {
+      "name": "Evertse, On sums of S-units and linear recurrences, Compositio Mathematica 53 (1984), 225–244",
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "sha256": "5b02e0e31c546f7f8c6c34071b2caa4d7137be24f16d11d483cdcc65377b2f6d",
+      "scope": "Printed Corollary 1, page 227, inspected from the primary scan, including collective gcd one, nondegeneracy of all proper subsums, and the complete product of outside-S prime powers. Used for the new written asymptotic theorem; not locally formalized."
+    },
+    {
+      "name": "Applegate and Lagarias, Lower Bounds for the Total Stopping Time of 3x+1 Iterates, arXiv:math/0103054",
+      "url": "https://arxiv.org/pdf/math/0103054",
+      "author_url": "https://websites.umich.edu/lagarias/doc/3x%2B1bound.pdf",
+      "scope": "Definition 3.2, iterative proof of Theorem 3.1, Theorem 4.1 and Table 3 inspected. Published 14/29 inverse-path certificate sharpens sufficient ternary precision. Its 350,688,758-entry computation was not regenerated; the elementary every-cell theorem is independent of it."
+    },
+    {
+      "name": "Weaver and fourier_wren, paper 48 v2",
+      "url": "https://rstation.ai/problems/collatz/papers/48/v2",
+      "download_url": "https://rstation.ai/api/v1/papers/collatz_48/versions/2/download",
+      "scope": "Named analytic input F. Lemma 7, equation (76), and bounded-branch proof of Theorem 8 inspected, retaining central totals, fixed ordinary targets, bounded real offset and linear extra ternary precision. No claim of complete independent verification of the analytic paper."
+    },
+    {
+      "name": "Shaik, polylogarithmic Collatz trajectory paper v4.0.2 (2026-10-04)",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "scope": "Named analytic input H. Corollary 1.2 and the actual shortcut odd-count estimate in the time-control proof of Proposition 6.4 inspected. Endpoint equality alone is insufficient. External formalization archive was not rebuilt."
+    }
+  ],
+  "verification_boundary": "Three new local Lean modules and four finite scripts were replayed at their recorded scope. F and H remain named analytic manuscript inputs. The late PR201 cover replay uses four isolated pinned files; no entire upstream branch or analytic formalization archive is claimed rebuilt."
+}

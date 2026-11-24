@@ -1,0 +1,91 @@
+{
+  "scope": "Fresh compilation of all three new modules, which have no local project imports; existing Mathlib/package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runner_sha256": "28a15fdc886846056e8a7dfa1876ba4282d4a589378cb1f7c3053aaa138cb0b5",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "SparseTerminal",
+      "source": "research/astra-global-closure-20261124/round8/arithmetic/SparseTerminal.lean",
+      "source_sha256": "1c52c43b61df48015ab99e2b102045ba37b50613c024c86a2f686e803e38f5b6",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round8/lean/SparseTerminal.log",
+      "log_sha256": "a814740c31cb835a3e9ca8722d62776ab86816e8c52528634c38cad4ce9981b8",
+      "axiom_reports": [
+        "'Collatz.SparseTerminal.exists_walk' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SparseTerminal.affine_row' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.lift_walk' depends on axioms: [propext]",
+        "'Collatz.SparseTerminal.physical_height' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.terminal_difference' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.odd_run' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.even_run' depends on axioms: [propext]",
+        "'Collatz.SparseTerminal.repeat_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.prune_signed' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.strip_clock' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SparseTerminal.outside_product' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SparseTerminal.pivot_divisibility' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 12,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "PairedProfiles",
+      "source": "research/astra-global-closure-20261124/round8/paired/PairedProfiles.lean",
+      "source_sha256": "b9465152fb5175579f21f784f6ce122833c15040f2196c6de4eca9dbab42653f",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round8/lean/PairedProfiles.log",
+      "log_sha256": "3a3c72785326af7a9863759821818a43fd4445c5bb01a70b69b7df5f0c95534f",
+      "axiom_reports": [
+        "'Collatz.PairedProfiles.lift' depends on axioms: [propext]",
+        "'Collatz.PairedProfiles.trace_add' depends on axioms: [propext]",
+        "'Collatz.PairedProfiles.anchor_arm' depends on axioms: [propext]",
+        "'Collatz.PairedProfiles.paired_anchor' depends on axioms: [propext]",
+        "'Collatz.PairedProfiles.anchor_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PairedProfiles.translate_profile' depends on axioms: [propext]",
+        "'Collatz.PairedProfiles.profile_strip' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PairedProfiles.location' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 8,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "RayGrade",
+      "source": "research/astra-global-closure-20261124/round8/unit/RayGrade.lean",
+      "source_sha256": "0274b322e059db226a6a17a2dee4009cb7630d25c051d46548933647e3dee98d",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round8/lean/RayGrade.log",
+      "log_sha256": "63dc2deff7393ce2b7450fe88b12850ae56ab7439ad0a3fab6da31aa9535828f",
+      "axiom_reports": [
+        "'RayGrade.carry_bounds' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.ceiling' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.longer_clock' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.reference_barrier' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.strict_grade' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.cycle_pull' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.repaid_descent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'RayGrade.back_sound' depends on axioms: [propext, Quot.sound]",
+        "'RayGrade.back_lift' depends on axioms: [propext]",
+        "'RayGrade.steered_descent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'RayGrade.every_cell' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 11,
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "module_count": 3,
+  "selected_axiom_report_count": 31,
+  "all_sources_unchanged": true
+}

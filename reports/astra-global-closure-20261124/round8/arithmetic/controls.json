@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "contents_divisible_by_six": 576,
+    "exact_pivot_divisibilities": 6364,
+    "nontrivial_contents": 576,
+    "physically_iterated_halving_suffixes": 45,
+    "pruned_zero_subsums": 628,
+    "rational_root_coefficients": 368,
+    "signed_physical_tuples": 624,
+    "two_run_first_hits": 48
+  },
+  "scope": "finite ordinary identities and exact primitive divisibility",
+  "two_run_examples": [
+    {
+      "even_tail": 117,
+      "k": 3,
+      "lift_quotient_bits": 113,
+      "n": 27,
+      "odd_tail": 3,
+      "p": 2
+    },
+    {
+      "even_tail": 5103,
+      "k": 5,
+      "lift_quotient_bits": 5094,
+      "n": 27,
+      "odd_tail": 5,
+      "p": 4
+    },
+    {
+      "even_tail": 85293,
+      "k": 6,
+      "lift_quotient_bits": 85282,
+      "n": 27,
+      "odd_tail": 6,
+      "p": 5
+    }
+  ]
+}

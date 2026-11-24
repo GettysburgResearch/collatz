@@ -1,0 +1,132 @@
+{
+  "scope": "Exact finite arithmetic with explicit guards in normal and optimized Python; no universal dynamical inference.",
+  "python_version": "3.12.14",
+  "runner_sha256": "9cf0db0ec62cb4018ad33580f291d865352e1cf73b387b9c54714ef152fbfb6a",
+  "runs": [
+    {
+      "source": "research/astra-global-closure-20261124/round8/unit/check.py",
+      "source_sha256": "438bf7ef9ec9a0a2c9c826f4779f20d51bb3dc52b61eec6b7c391ad11f9c6446",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/unit/controls.json",
+      "expected_output_sha256": "e46434a840db24bd94b2d3b99d9af401f01d4611ba080792de175b5267542546",
+      "output_matches": true,
+      "stdout_sha256": "e46434a840db24bd94b2d3b99d9af401f01d4611ba080792de175b5267542546",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round8/unit/check.py",
+      "source_sha256": "438bf7ef9ec9a0a2c9c826f4779f20d51bb3dc52b61eec6b7c391ad11f9c6446",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/unit/controls.json",
+      "expected_output_sha256": "e46434a840db24bd94b2d3b99d9af401f01d4611ba080792de175b5267542546",
+      "output_matches": true,
+      "stdout_sha256": "e46434a840db24bd94b2d3b99d9af401f01d4611ba080792de175b5267542546",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "reports/astra-global-closure-20261124/round8/unit/review_pair.py",
+      "source_sha256": "1c796463d026b2adb0a1236a35b68fedb62f7f8209f58720e92a758592cde92a",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/unit/binary_controls.json",
+      "expected_output_sha256": "c95e0246f06262454dd6e8e553d52f2cb904a515a30883b48129f14916a0c5cd",
+      "output_matches": true,
+      "stdout_sha256": "c95e0246f06262454dd6e8e553d52f2cb904a515a30883b48129f14916a0c5cd",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "reports/astra-global-closure-20261124/round8/unit/review_pair.py",
+      "source_sha256": "1c796463d026b2adb0a1236a35b68fedb62f7f8209f58720e92a758592cde92a",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/unit/binary_controls.json",
+      "expected_output_sha256": "c95e0246f06262454dd6e8e553d52f2cb904a515a30883b48129f14916a0c5cd",
+      "output_matches": true,
+      "stdout_sha256": "c95e0246f06262454dd6e8e553d52f2cb904a515a30883b48129f14916a0c5cd",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round8/arithmetic/check.py",
+      "source_sha256": "b7e8c8d1ccd45700439eda40454e21a94062db861ea8e12416907c853831d120",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/arithmetic/controls.json",
+      "expected_output_sha256": "2c6afba3b7a74ea1ff763739928bd47487ea0db67b090b6784688ed361e799c4",
+      "output_matches": true,
+      "stdout_sha256": "2c6afba3b7a74ea1ff763739928bd47487ea0db67b090b6784688ed361e799c4",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round8/arithmetic/check.py",
+      "source_sha256": "b7e8c8d1ccd45700439eda40454e21a94062db861ea8e12416907c853831d120",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/arithmetic/controls.json",
+      "expected_output_sha256": "2c6afba3b7a74ea1ff763739928bd47487ea0db67b090b6784688ed361e799c4",
+      "output_matches": true,
+      "stdout_sha256": "2c6afba3b7a74ea1ff763739928bd47487ea0db67b090b6784688ed361e799c4",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round8/paired/check.py",
+      "source_sha256": "6ff6d08492fcc260113ede93685620f010c7ed41c811378bbea6d917456d6762",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/paired/controls.json",
+      "expected_output_sha256": "33b4df81ba01013fdc25af411c91fe933ef5bc9d0b436af90a9f506259604c3f",
+      "output_matches": true,
+      "stdout_sha256": "33b4df81ba01013fdc25af411c91fe933ef5bc9d0b436af90a9f506259604c3f",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round8/paired/check.py",
+      "source_sha256": "6ff6d08492fcc260113ede93685620f010c7ed41c811378bbea6d917456d6762",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round8/paired/controls.json",
+      "expected_output_sha256": "33b4df81ba01013fdc25af411c91fe933ef5bc9d0b436af90a9f506259604c3f",
+      "output_matches": true,
+      "stdout_sha256": "33b4df81ba01013fdc25af411c91fe933ef5bc9d0b436af90a9f506259604c3f",
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "status": "PASS"
+}
