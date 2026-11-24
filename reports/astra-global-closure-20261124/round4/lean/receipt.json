@@ -1,0 +1,116 @@
+{
+  "scope": "Fresh compilation of all five new modules, which have no local project imports; existing Mathlib/package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runner_sha256": "81b528784a7573bd497b71e97ef586d8b8700465ca468b3856692de432020c0d",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "PaleyResultant",
+      "source": "research/astra-global-closure-20261124/round4/arithmetic/PaleyResultant.lean",
+      "source_sha256": "86a38cca6fc6ce7061e224e15c83c419b7aa844e96afe2667a12481a36d4cc8b",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round4/lean/PaleyResultant.log",
+      "log_sha256": "4659c553c29a0de2dbd3c12c268e194aea9487b3898ef91c12440a19a4ce9caa",
+      "axiom_reports": [
+        "'Collatz.PaleyResultant.period_quadratic' depends on axioms: [propext]",
+        "'Collatz.PaleyResultant.scaled_error' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PaleyResultant.short_exponent' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.PaleyResultant.full_resultant_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PaleyResultant.ramified_square' depends on axioms: [propext, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 5,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "KilledClock",
+      "source": "research/astra-global-closure-20261124/round4/controller/KilledClock.lean",
+      "source_sha256": "15a0bf212393a067b974e4f2d8c25b2fe5ca7601add74e11b0da43cf77f45254",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round4/lean/KilledClock.log",
+      "log_sha256": "0b82e7bc5e21e34d3349a6232c589a3456b2fe1cf9b8806b8b4244e9b0e0bd7d",
+      "axiom_reports": [
+        "'Collatz.KilledClock.sqrt_majorant_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.KilledClock.survival_block' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.KilledClock.killed_moment_block' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.KilledClock.green_charge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.KilledClock.common_clock' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.KilledClock.common_source_clock' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 6,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "PhaseCut",
+      "source": "research/astra-global-closure-20261124/round4/head/PhaseCut.lean",
+      "source_sha256": "5aa29b27630b4f64044774685e1b78a0944b0b791cecc48f7a8e4a14e30147af",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round4/lean/PhaseCut.log",
+      "log_sha256": "3dacaa3738543552cd8b216dc8c85909cd7623a4fa1693b8a4dc75da468abe59",
+      "axiom_reports": [
+        "'Collatz.HeadPhaseCut.phase_swap' depends on axioms: [propext]",
+        "'Collatz.HeadPhaseCut.collapse_score' depends on axioms: [propext]",
+        "'Collatz.HeadPhaseCut.binary_square' depends on axioms: [propext]",
+        "'Collatz.HeadPhaseCut.square_bound' depends on axioms: [propext]",
+        "'Collatz.HeadPhaseCut.path_forces_cross' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadPhaseCut.accumulate_squares' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadPhaseCut.pay_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 7,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "DyadicCutoff",
+      "source": "research/astra-global-closure-20261124/round4/ordinary/DyadicCutoff.lean",
+      "source_sha256": "e124f4a3175be41a0ce3c90518399be8e15198928ec0609d2663678d1da207e8",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round4/lean/DyadicCutoff.log",
+      "log_sha256": "74b71e52ab621c9bbd0e8a1273ce773fc0b8724719a0e735bf5f1d023e2918e4",
+      "axiom_reports": [
+        "'Collatz.DyadicCutoff.source_first_passage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.DyadicCutoff.first_passage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.DyadicCutoff.affine' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.DyadicCutoff.one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 4,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "TruncatedDivisors",
+      "source": "research/astra-global-closure-20261124/round4/ordinary/TruncatedDivisors.lean",
+      "source_sha256": "5c54cf54e9e11c0cd359991d7bf669b25fd43e889a28a713c19b38ad61f04d60",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round4/lean/TruncatedDivisors.log",
+      "log_sha256": "55490171b27d4c065da4f21f01dee44c4da17acfcda68e9e45198aad0ade7ffb",
+      "axiom_reports": [
+        "'Collatz.TruncatedDivisors.factor_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TruncatedDivisors.shifted_divisors' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TruncatedDivisors.shifted_row' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TruncatedDivisors.capped_row' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TruncatedDivisors.capped_cover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TruncatedDivisors.rankin' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 6,
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "module_count": 5,
+  "selected_axiom_report_count": 28,
+  "all_sources_unchanged": true
+}

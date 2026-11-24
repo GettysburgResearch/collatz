@@ -1,0 +1,109 @@
+{
+  "scope": "Exact finite controls; no unknown ordinary cycle tested.",
+  "counts": {
+    "N_divides_carry_difference": 29,
+    "damaged_nonunit_gcd": 18,
+    "damaged_resultants": 720,
+    "intervals_with_changed_cell_weights": 464,
+    "negative_short_exponents": 428,
+    "physical_rotations": 5640,
+    "unaltered_direct_bit_replays": 47,
+    "unaltered_nonunit_gcd": 160,
+    "unaltered_template_pairs": 9280,
+    "wraparound_intervals": 78
+  },
+  "nontrivial_gcd_examples": [
+    {
+      "N": 23,
+      "L": 2,
+      "weight": 1,
+      "starts": [
+        20,
+        12
+      ],
+      "lengths": [
+        2,
+        3
+      ],
+      "g": 47,
+      "denominator_bits": 41,
+      "resultant_bits": 101
+    },
+    {
+      "N": 11,
+      "L": 6,
+      "weight": 2,
+      "starts": [
+        10,
+        1
+      ],
+      "lengths": [
+        1,
+        2
+      ],
+      "g": 23,
+      "denominator_bits": 62,
+      "resultant_bits": 50
+    },
+    {
+      "N": 7,
+      "L": 4,
+      "weight": 2,
+      "starts": [
+        0
+      ],
+      "lengths": [
+        1
+      ],
+      "g": 7,
+      "denominator_bits": 26,
+      "resultant_bits": 7
+    },
+    {
+      "N": 23,
+      "L": 6,
+      "weight": 2,
+      "starts": [
+        11,
+        14
+      ],
+      "lengths": [
+        2,
+        2
+      ],
+      "g": 47,
+      "denominator_bits": 133,
+      "resultant_bits": 213
+    },
+    {
+      "N": 11,
+      "L": 10,
+      "weight": 5,
+      "starts": [
+        7
+      ],
+      "lengths": [
+        2
+      ],
+      "g": 11,
+      "denominator_bits": 107,
+      "resultant_bits": 140
+    },
+    {
+      "N": 7,
+      "L": 7,
+      "weight": 3,
+      "starts": [
+        3,
+        1
+      ],
+      "lengths": [
+        1,
+        2
+      ],
+      "g": 29,
+      "denominator_bits": 45,
+      "resultant_bits": 111
+    }
+  ]
+}

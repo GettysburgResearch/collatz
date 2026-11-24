@@ -1,0 +1,5 @@
+'Collatz.PaleyResultant.period_quadratic' depends on axioms: [propext]
+'Collatz.PaleyResultant.scaled_error' depends on axioms: [propext, Quot.sound]
+'Collatz.PaleyResultant.short_exponent' depends on axioms: [propext, Quot.sound]
+'Collatz.PaleyResultant.full_resultant_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PaleyResultant.ramified_square' depends on axioms: [propext, Quot.sound]

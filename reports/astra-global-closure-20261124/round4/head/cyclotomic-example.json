@@ -1,0 +1,19 @@
+{
+  "N": 5,
+  "length": 17,
+  "weight": 6,
+  "reference_carries": [
+    18565,
+    665,
+    697,
+    697,
+    665
+  ],
+  "replacement_carry": 42949,
+  "minimal_polynomial": "y**2 - 35768*y + 319836176",
+  "reference_gcd": 961,
+  "altered_gcd": 961,
+  "full_reduced_denominator": 40255594409430012964103,
+  "resultant": 31811938000156597917491963556448112896,
+  "sympy_version": "1.14.0"
+}

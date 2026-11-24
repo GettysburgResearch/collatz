@@ -1,0 +1,22 @@
+{
+  "exit": 0,
+  "source": "research/astra-global-closure-20261124/round4/arithmetic/PaleyResultant.lean",
+  "source_sha256": "86a38cca6fc6ce7061e224e15c83c419b7aa844e96afe2667a12481a36d4cc8b",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runtime_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "log_sha256": "4659c553c29a0de2dbd3c12c268e194aea9487b3898ef91c12440a19a4ce9caa",
+  "axiom_reports": [
+    "'Collatz.PaleyResultant.period_quadratic' depends on axioms: [propext]",
+    "'Collatz.PaleyResultant.scaled_error' depends on axioms: [propext, Quot.sound]",
+    "'Collatz.PaleyResultant.short_exponent' depends on axioms: [propext, Quot.sound]",
+    "'Collatz.PaleyResultant.full_resultant_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.PaleyResultant.ramified_square' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Fresh source check against cached unmodified mathlib and Lean package imports."
+}

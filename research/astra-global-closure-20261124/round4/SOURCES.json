@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-24",
+  "baseline": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+  "scope": "Pins for proof inputs and explicitly identified intake. Metadata surveys do not assert full mathematical review of every PR.",
+  "repository_sources": [
+    {
+      "commit": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "path": "research/astra-global-closure-20261124/round3/analytic/README.md",
+      "git_blob": "74ac27b55a4dd5d54838da7643e84ad31b929b82",
+      "sha256": "5353daa4bb3ba75ce34d510f76c366866a35df05a0561bcb28abdf9943d3fbdf",
+      "scope": "used and inspected",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8edc24b576e7c7da56f99d882ce6fd1e014ee730/research/astra-global-closure-20261124/round3/analytic/README.md"
+    },
+    {
+      "commit": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "path": "research/astra-global-closure-20261124/round3/analytic/FixedWord.lean",
+      "git_blob": "35ce9aa2365518d0ec60a7f6d1dd21be40806a9a",
+      "sha256": "a6505a7ba28c810e64f461bf36cee61a92542eca0a649918685a79ed63aced39",
+      "scope": "used and inspected",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8edc24b576e7c7da56f99d882ce6fd1e014ee730/research/astra-global-closure-20261124/round3/analytic/FixedWord.lean"
+    },
+    {
+      "commit": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "path": "research/astra-global-closure-20261124/round3/cycles/CONGRUENCE_MODEL.md",
+      "git_blob": "2c6d7afa611acdd5e8526395ecc883a7dd1a5451",
+      "sha256": "98eb973ab20fb1fcc4dc5736a3bd145d944ae3229bd0a54b7d96591d0b8af3a7",
+      "scope": "used and inspected",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8edc24b576e7c7da56f99d882ce6fd1e014ee730/research/astra-global-closure-20261124/round3/cycles/CONGRUENCE_MODEL.md"
+    },
+    {
+      "commit": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "path": "research/astra-universal-descent-20261124/escape.md",
+      "git_blob": "1fbb615119e9d12f32dc2f33c333fafd65fd0938",
+      "sha256": "59946132704f2d380b5fb4b244148ea481aa0c0a1f70cc800911e5ee98da53b2",
+      "scope": "synchronized image bound used and reconstructed",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784/research/astra-universal-descent-20261124/escape.md"
+    },
+    {
+      "commit": "b579defec53bb791ddbe2b6e07382cbb079ba8fc",
+      "path": "research/astra-closure-20261124/transfer/PhysicalReturn.lean",
+      "git_blob": "8bf444efd110e52aa5d0f0e79cad459d38bcdb9e",
+      "sha256": "e30fd7e01748006724854b36b09df28ead58a8ee877a96ff2f8a7c62840b6fe2",
+      "scope": "physical affine-lift antecedent",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b579defec53bb791ddbe2b6e07382cbb079ba8fc/research/astra-closure-20261124/transfer/PhysicalReturn.lean"
+    },
+    {
+      "commit": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_SUBCRITICAL_MOMENTS.md",
+      "git_blob": "a7d8391d7ee91f374cdf189316b8216642b67975",
+      "sha256": "82f207e0f09c8342706396348cb6e1aa1c4fdef17e0a5d415b2b8754cde4e04e",
+      "scope": "source-qualified analytic input; inspected, external dependency not rebuilt",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9ab91d964b38fc870d1034bac628d62f59488467/research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_SUBCRITICAL_MOMENTS.md"
+    },
+    {
+      "commit": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md",
+      "git_blob": "9447c606968cf348396188a74e5c43d2d7a8ad9d",
+      "sha256": "08eefbb0512911f26bcc3243981540d4bff32cd6c4fd6b8a88b72b15af7fa947",
+      "scope": "source-qualified analytic input; inspected, external dependency not rebuilt",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9ab91d964b38fc870d1034bac628d62f59488467/research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md"
+    },
+    {
+      "commit": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/QUARTET_COLLAPSE.md",
+      "git_blob": "0f92b3476c5f912609b1f804a85f5ee5d8d463b1",
+      "sha256": "f41d01dc502e0e13c1112042329af11b40a86937b2e6467e24223509a963db55",
+      "scope": "source-qualified analytic input; inspected, external dependency not rebuilt",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9ab91d964b38fc870d1034bac628d62f59488467/research/ayh-resource-reset-20261124/joint-renewal/QUARTET_COLLAPSE.md"
+    },
+    {
+      "commit": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "path": "research/killed-green-head-closure-20261124/README.md",
+      "git_blob": "f0ad39baf3474c631d22f65894060d5f7551c034",
+      "sha256": "6d53ecd827a6cb623b5f3feabda56a33846487009f0b83e6551ab520b57838e6",
+      "scope": "optional profile input; finite moment candidate adapted and compiled locally",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3c9e444e3f2f2e457b25cd827dc9a29f981e9de2/research/killed-green-head-closure-20261124/README.md"
+    },
+    {
+      "commit": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "path": "research/killed-green-head-closure-20261124/KilledMoment.lean",
+      "git_blob": "72a1a7eaacef5007f825fa34059158d1a596f3fc",
+      "sha256": "d939402a204668affd95fc7065f121a01d5932ca1ff7e2c9a271e9f30298afac",
+      "scope": "optional profile input; finite moment candidate adapted and compiled locally",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3c9e444e3f2f2e457b25cd827dc9a29f981e9de2/research/killed-green-head-closure-20261124/KilledMoment.lean"
+    },
+    {
+      "commit": "d868f8e8405c08b8c501236853bea495ca593824",
+      "path": "research/optimal-critical-ancestors-20261124/FIRST_PASSAGE.md",
+      "git_blob": "56d41654d8db4649e3c994750339c44d32693a95",
+      "sha256": "819ec1fa4c795d4cee34426d578573a8bf42ca36697256584c008bfe884f5f93",
+      "scope": "one-head closure deduction inspected; density input external",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d868f8e8405c08b8c501236853bea495ca593824/research/optimal-critical-ancestors-20261124/FIRST_PASSAGE.md"
+    },
+    {
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "scope": "source-qualified P and S antecedents; no whole-bundle replay",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_UPPER.md"
+    },
+    {
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md",
+      "git_blob": "2e10eaea1bc2f10ebd0ea379d9f7d5579b416c4e",
+      "sha256": "6e5e0a8e95f559c27d722f569cc124204a8384ff2d0df70f3907d2a722db9397",
+      "scope": "source-qualified P and S antecedents; no whole-bundle replay",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md"
+    },
+    {
+      "commit": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "path": "research/astra-global-step-20261124/SHIFT_DISTANCE.md",
+      "git_blob": "3b81897308be11a20e50ec8b9272741810285141",
+      "sha256": "03e86a2c6ff653bf207c6d1ab4346b657d1b0e8d9b351fcf4f4d51c985672093",
+      "scope": "eight-bit high-discrepancy-distance construction inspected",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d/research/astra-global-step-20261124/SHIFT_DISTANCE.md"
+    },
+    {
+      "commit": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "path": "research/astra-ordinary-boundary-20261124/README.md",
+      "git_blob": "9e9ca44efde5b21628ff643dfbdcd9e128e79f87",
+      "sha256": "b767aadd5be035bb3f46857c90e87303d9877c49f0ee831d7edae5c01493de89",
+      "scope": "latest intake; mathematical interfaces inspected, no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5f160a843750f209ea1251dfb01ea0b23e532fd6/research/astra-ordinary-boundary-20261124/README.md"
+    },
+    {
+      "commit": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "path": "research/astra-ordinary-boundary-20261124/arithmetic/README.md",
+      "git_blob": "a8a1fcfd2c3d452090d3c9b68fcbd9a3679429b5",
+      "sha256": "159f72b043c756eddf046cbe7dd0bdc85bb6996791d032686bed8a8d8fb1d4c5",
+      "scope": "latest intake; mathematical interfaces inspected, no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5f160a843750f209ea1251dfb01ea0b23e532fd6/research/astra-ordinary-boundary-20261124/arithmetic/README.md"
+    },
+    {
+      "commit": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "path": "research/astra-ordinary-boundary-20261124/spectral/PHYSICAL_TAILS.md",
+      "git_blob": "f3469c4019b235fe063b37c2f5761b06cf4b17be",
+      "sha256": "d8afc0575d40755aa6cc1bcd44f167e86812d916745063d191c8f397db1c685e",
+      "scope": "latest intake; mathematical interfaces inspected, no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5f160a843750f209ea1251dfb01ea0b23e532fd6/research/astra-ordinary-boundary-20261124/spectral/PHYSICAL_TAILS.md"
+    },
+    {
+      "commit": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "path": "research/astra-ordinary-boundary-20261124/transfer/ALL_EVENTUAL_MEETINGS.md",
+      "git_blob": "7cb0fef88d63279f868387916137bec188e982c6",
+      "sha256": "759c86b9dca383b85c22ca99eb372ed6de7a0e53a5dbf696c8edbce02f8fe9ba",
+      "scope": "latest intake; mathematical interfaces inspected, no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5f160a843750f209ea1251dfb01ea0b23e532fd6/research/astra-ordinary-boundary-20261124/transfer/ALL_EVENTUAL_MEETINGS.md"
+    },
+    {
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/README.md",
+      "git_blob": "9172eb685eecb5643688253c4d6c97df5ccc8378",
+      "sha256": "d134780cbf50eda72690be2d0c89240cf9fdabe4c2534b565dcaed0259f84625",
+      "scope": "latest intake by arithmetic stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/continuation/README.md"
+    },
+    {
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/REVERSE_RENEWAL.md",
+      "git_blob": "562757fb4c91c9931b363abfafc948af0381682c",
+      "sha256": "06eda30d81f843f4a11ab218fed58a7c9caebd23aa35ebd0aed0e91d29b65cd8",
+      "scope": "latest intake by arithmetic stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/continuation/REVERSE_RENEWAL.md"
+    },
+    {
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/MACROSCOPIC_RIGIDITY.md",
+      "git_blob": "55686b131b504c4efd0a39e938438a0f5ede0f0b",
+      "sha256": "f0919d8389fe2f2265e1ed4aa99a3482b3c11bb98d5d0095ef3996c9cd00b513",
+      "scope": "latest intake by arithmetic stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/continuation/MACROSCOPIC_RIGIDITY.md"
+    },
+    {
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/FOURIER_UNIFORMITY.md",
+      "git_blob": "c2de757a3658ac869bda95c960160d92a365f88d",
+      "sha256": "5a70f3aca69db0069c2605bb622b559e230ee211ba9c84cc621d09a473027d18",
+      "scope": "latest intake by arithmetic stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/continuation/FOURIER_UNIFORMITY.md"
+    },
+    {
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/SOURCES.md",
+      "git_blob": "812667d8c62c11d23ae838306d6514bf1fe04c10",
+      "sha256": "036629d2106d5794eb8375ed2d1aa960482c26257bfa5b72ffc389af7b472a0d",
+      "scope": "latest intake by arithmetic stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/continuation/SOURCES.md"
+    },
+    {
+      "commit": "084b983fbec6f3d2120ef101946754431f82874e",
+      "path": "research/killed-green-head-closure-20261124/README.md",
+      "git_blob": "3a7feb3f470da4d9c4afe6edc5aaeb4943519d4f",
+      "sha256": "083e6a69937ab12bb9ee195369af75a8e8588bb7dd9ac95a0cd3034d64954bbc",
+      "scope": "latest intake by head stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/084b983fbec6f3d2120ef101946754431f82874e/research/killed-green-head-closure-20261124/README.md"
+    },
+    {
+      "commit": "084b983fbec6f3d2120ef101946754431f82874e",
+      "path": "research/killed-green-head-closure-20261124/continuation/README.md",
+      "git_blob": "79c901d7b462b0a8d2c5cf8d012352beb10caca2",
+      "sha256": "9230c6d0f38c2a81788bb08de349180a4c519cec3a093e4dea0e819a630e8ac2",
+      "scope": "latest intake by head stream; no upstream build",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/084b983fbec6f3d2120ef101946754431f82874e/research/killed-green-head-closure-20261124/continuation/README.md"
+    },
+    {
+      "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "path": "research/synchronized-long-basin-blocks-20261124/README.md",
+      "git_blob": "9ce54625c8cc09d2585a3a9c17cb95695196bce6",
+      "sha256": "bce786cafc67344d82fdc676a673d6185582be1bd39eaca79af4d3edfc62c3c1",
+      "scope": "latest intake and conditional block corollaries; S/R/M/D retain qualifications",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3b10b24d12d4b349cb20f4cbc83086c8a09f807e/research/synchronized-long-basin-blocks-20261124/README.md"
+    }
+  ],
+  "external_sources": [
+    {
+      "name": "Krasikov-Lagarias",
+      "url": "https://arxiv.org/pdf/math/0205002",
+      "scope": "Theorem 6.1 inspected directly; fixed-target exponent 0.84; published computer-aided certificate not rerun."
+    },
+    {
+      "name": "Weaver 137",
+      "url": "https://rstation.ai/problems/collatz/papers/137/v1",
+      "scope": "Prime domination and gcd criteria; not a formal dependency build."
+    },
+    {
+      "name": "Weaver 138",
+      "url": "https://rstation.ai/problems/collatz/papers/138/v1",
+      "scope": "Whole-prefix rank and one-trajectory coset counts; quantifier comparison."
+    },
+    {
+      "name": "Conditional clocks, paper 13",
+      "url": "https://rstation.ai/problems/collatz/papers/13",
+      "scope": "Source of T3 mixed-clock input; retained as source-qualified analytic assumption."
+    },
+    {
+      "name": "Mazur predecessor density M",
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "scope": "Reported formalized fixed-target positive lower density. External archive not rebuilt; used for equivalences and the strongest block application only."
+    },
+    {
+      "name": "Sutherland local fields",
+      "url": "https://math.mit.edu/classes/18.785/2015fa/LectureNotes19.pdf",
+      "scope": "Binomial unramifiedness, Hensel lifting and translated cyclotomic Eisenstein polynomial."
+    },
+    {
+      "name": "Sutherland local field course",
+      "url": "https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2021/pages/lecture-notes/",
+      "scope": "Lectures 9-11: unramified extensions, Hensel and valuations."
+    },
+    {
+      "name": "Hu sequence prior art",
+      "url": "https://arxiv.org/abs/1406.3889",
+      "scope": "Classical ideal-autocorrelation and denominator/determinant method; no priority claim for the general method."
+    },
+    {
+      "name": "Xiong-Qu-Li sequence prior art",
+      "url": "https://arxiv.org/abs/1309.1625",
+      "scope": "Classical 2-adic complexity and determinant approach."
+    },
+    {
+      "name": "Weaver router R",
+      "url": "https://rstation.ai/problems/collatz/papers/37",
+      "scope": "Theorem D imported through PR202, not independently rebuilt."
+    },
+    {
+      "name": "Tao Syracuse distribution",
+      "url": "https://arxiv.org/pdf/1909.03562",
+      "scope": "Proposition 1.14 used in latest PR200 comparison, not a pointwise ordinary inverse theorem."
+    }
+  ]
+}

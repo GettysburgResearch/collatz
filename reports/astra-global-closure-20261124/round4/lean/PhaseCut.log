@@ -1,0 +1,7 @@
+'Collatz.HeadPhaseCut.phase_swap' depends on axioms: [propext]
+'Collatz.HeadPhaseCut.collapse_score' depends on axioms: [propext]
+'Collatz.HeadPhaseCut.binary_square' depends on axioms: [propext]
+'Collatz.HeadPhaseCut.square_bound' depends on axioms: [propext]
+'Collatz.HeadPhaseCut.path_forces_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadPhaseCut.accumulate_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadPhaseCut.pay_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source": "research/astra-global-closure-20261124/round4/head/PhaseCut.lean",
+  "source_sha256": "5aa29b27630b4f64044774685e1b78a0944b0b791cecc48f7a8e4a14e30147af",
+  "log": "reports/astra-global-closure-20261124/round4/head/PhaseCut.log",
+  "log_sha256": "3dacaa3738543552cd8b216dc8c85909cd7623a4fa1693b8a4dc75da468abe59",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "exit_code": 0,
+  "declarations": [
+    "'Collatz.HeadPhaseCut.phase_swap' depends on axioms: [propext]",
+    "'Collatz.HeadPhaseCut.collapse_score' depends on axioms: [propext]",
+    "'Collatz.HeadPhaseCut.binary_square' depends on axioms: [propext]",
+    "'Collatz.HeadPhaseCut.square_bound' depends on axioms: [propext]",
+    "'Collatz.HeadPhaseCut.path_forces_cross' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadPhaseCut.accumulate_squares' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadPhaseCut.pay_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Fresh temporary olean for the finite label, path and recurrence kernels. Existing Lean and Mathlib packages reused."
+}

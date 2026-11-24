@@ -1,0 +1,4 @@
+'Collatz.DyadicCutoff.source_first_passage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicCutoff.first_passage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicCutoff.affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicCutoff.one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]

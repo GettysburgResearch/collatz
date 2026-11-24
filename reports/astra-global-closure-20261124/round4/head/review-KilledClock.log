@@ -1,0 +1,6 @@
+'Collatz.KilledClock.sqrt_majorant_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KilledClock.survival_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KilledClock.killed_moment_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KilledClock.green_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KilledClock.common_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.KilledClock.common_source_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
