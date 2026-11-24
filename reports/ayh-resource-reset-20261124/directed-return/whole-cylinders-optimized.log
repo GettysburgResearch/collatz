@@ -1,0 +1,46 @@
+{
+  "certificate_sha256": "d2acc996d6f97b171891d542255eadb936533a4bfcdb8415aa05a19c3c361665",
+  "motifs": 116,
+  "height": 10,
+  "whole_cylinders": 59049,
+  "motifs_used_by_first_matching_assignment": 82,
+  "first_matching_motif_lengths": {
+    "8": 1,
+    "7": 15,
+    "5": 3785,
+    "6": 44,
+    "3": 30228,
+    "4": 24976
+  },
+  "query_positions": 193,
+  "maximum_path_length": 94,
+  "maximum_query_to_local_source_ratio": "523",
+  "maximum_path_value_to_local_source_ratio": "2354",
+  "all_checks_passed": true,
+  "original_source_accounting": {
+    "surviving_prefixes_by_depth": [
+      1,
+      3,
+      9,
+      25,
+      54,
+      65,
+      58,
+      27,
+      8,
+      1,
+      0
+    ],
+    "direct_exit_positions": 251,
+    "first_blocked_prefixes": 503,
+    "intrinsic_blocked_prefixes": 74,
+    "query_positions": 1007,
+    "maximum_query_to_original_source_ratio": "574854143371/219537"
+  },
+  "strict_return_integer_controls": {
+    "three_pow15_lt_two_pow24": true,
+    "chernoff_three_fifths": true,
+    "three_pow94_lt_two_pow149": true,
+    "chernoff_94_over149": true
+  }
+}

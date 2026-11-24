@@ -1,0 +1,55 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "certificate-optimized",
+  "started_utc": "2026-11-24T13:54:19.361670+00:00",
+  "finished_utc": "2026-11-24T13:54:19.498131+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "-O",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/directed-return/check_directed11.py"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 0.136,
+  "stdout_sha256": "2abe365371d9005c68a76988cc9b7b85430eb22d68b4f58cfe817ef823ee1d05",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/directed-return/check_directed11.py": "ca26eb4f58e509fd42c3574e1d91b8d1bd785a3b873954c69633d118cc9c0e8d",
+    "research/ayh-resource-reset-20261124/directed-return/Directed11Motifs.json": "d2acc996d6f97b171891d542255eadb936533a4bfcdb8415aa05a19c3c361665",
+    "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677"
+  },
+  "result": {
+    "motifs": 116,
+    "distinct_routes": 88,
+    "route_letters": 7115,
+    "longest_route": 94,
+    "motif_forward_positions": 193,
+    "allowed_by_depth": [
+      1,
+      3,
+      9,
+      25,
+      54,
+      65,
+      58,
+      27,
+      8,
+      1,
+      0
+    ],
+    "terminal_positions": 251,
+    "first_blocked_prefixes": 503,
+    "first_blocked_intrinsic": 74,
+    "total_affine_query_positions": 1007,
+    "largest_query_to_source": "574854143371/219537",
+    "maximizing_case": [
+      "motif",
+      "522455454",
+      "5454",
+      0
+    ]
+  }
+}

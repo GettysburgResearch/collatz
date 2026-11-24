@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "lean",
+  "started_utc": "2026-11-24T13:57:10.591553+00:00",
+  "finished_utc": "2026-11-24T14:01:09.913811+00:00",
+  "command": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/directed-return/check_lean.sh"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 239.321,
+  "stdout_sha256": "e8fbfb62d8cf23e0b7e612bdd3fb4773f6b6015bcf2468ef17faff2bd68b94d2",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/directed-return/check_lean.sh": "afaf4f590439a1c1c68a635444be4675ceacbb2b12414b239444074fe704d3af",
+    "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+    "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+    "research/ayh-resource-reset-20261124/directed-return/FixedTritFeatures.lean": "4f493000530303b2e93f6c4a802e920dc66feb9f077eabc4172c6de2b5370554",
+    "research/ayh-resource-reset-20261124/directed-return/InteriorGradeBudget.lean": "75c897142c995815e81d155d242f37778281e02147c60ea2a375eee8eb12339a",
+    "research/ayh-resource-reset-20261124/directed-return/LocalColorCells.lean": "16e7b9387b47c7762f7a9c8f226bdf9f8467af8ade697ff3a0cb10ef266d5b7c",
+    "research/ayh-resource-reset-20261124/directed-return/PublicAudit.lean": "c4a3081f5763a0f2891f0c52bb8b42ce8de2eb658899d96c358e1068a74ad6ae",
+    "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37",
+    "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+    "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+    "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8"
+  },
+  "lean": {
+    "path": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "local_outputs": "Every local module rebuilt in a fresh temporary directory, deleted on exit; only pinned third-party Lean/Mathlib objects reused.",
+    "flags": [
+      "-j1",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true"
+    ]
+  }
+}

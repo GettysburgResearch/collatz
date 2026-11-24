@@ -1,0 +1,338 @@
+{
+  "schema": "collatz-public-axiom-audit/v1",
+  "public_theorem_count": 82,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": {
+    "NonunitExit.physical_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.directed_successor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.denom_iter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_certifies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "UnitResidueExchange.unit_one_exchange": [
+      "propext"
+    ],
+    "UnitResidueExchange.residue17_descends": [
+      "propext"
+    ],
+    "CollatzReverseBasin.reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.reverse_binary_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary_restricted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.deep_reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_deep_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_restricted_adjacent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.runSound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.checkedSound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_proper": [],
+    "DirectedEleven.group1_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_proper": [],
+    "DirectedEleven.group2_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_proper": [],
+    "DirectedEleven.group3_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_proper": [],
+    "DirectedEleven.group4_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_proper": [],
+    "DirectedEleven.group5_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_proper": [],
+    "DirectedEleven.group6_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_proper": [],
+    "DirectedEleven.group7_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_proper": [],
+    "DirectedEleven.group8_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_proper": [],
+    "DirectedEleven.group9_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_proper": [],
+    "DirectedEleven.group10_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_proper": [],
+    "DirectedEleven.group11_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_proper": [],
+    "DirectedEleven.group12_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_proper": [],
+    "DirectedEleven.group13_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_proper": [],
+    "DirectedEleven.group14_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_proper": [],
+    "DirectedEleven.all_midpoints_located": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.all_routes_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.proper_rows": [
+      "propext"
+    ],
+    "DirectedEleven.validTree_hits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.ten_tree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.hit_at_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.localize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.localize_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.collatz_iff_reverse_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.two_lift_width": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.stoppedSum_fair": [
+      "propext"
+    ],
+    "Collatz.InteriorGradeBudget.residue_spacing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.strict_pack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.released_telescope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.released_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Collatz.InteriorGradeBudget.released_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.LocalColorCells.cell_mass_to_sites": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.LocalColorCells.modal_opposite_mass": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Collatz.LocalColorCells.mixed_stride": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Collatz.LocalColorCells.column_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Collatz.FixedTritFeatures.split_inventory": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_public_declarations_present": true,
+  "all_dependencies_standard": true,
+  "lean_receipt_sha256": "fc9fcb2ee4c12a851be7bd94e1bf40131ace2f46a44af645e18b25aac27bd9df"
+}

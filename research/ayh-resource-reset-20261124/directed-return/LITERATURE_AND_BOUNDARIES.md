@@ -1,0 +1,29 @@
+# Literature inputs and the remaining deductions
+
+This packet continues the proof-producing viewpoint of Emre Yolcu, Scott Aaronson and Marijn J. H. Heule, [An Automated Approach to the Collatz Conjecture](https://emreyolcu.com/research/rewriting-collatz.pdf), DOI [10.1007/s10817-022-09658-8](https://doi.org/10.1007/s10817-022-09658-8). Their mixed binary–ternary string system encodes the conjecture as termination, and their automated certificates prove specified weakenings. We use exact affine progressions with ordinary edges and explicitly marked additional tripling comparisons. The new table removes every length-ten continuation in a restricted comparison procedure. The remaining additional comparisons are still substantive basin implications. Termination of this finite localization procedure does not assert termination of every ordinary Collatz orbit.
+
+The substantive change from the preceding pressure calculation is a complete finite replacement. Binary information from an earlier part of a word and ternary divisibility from its later part constrain the same intermediate integer. Each of the 116 resulting cylinder certificates uses only forward comparisons at 11 modulo 32. The kernel checks those contexts, path legality, their final affine values and the complete finite cover. The original-source count checks every possible first-hit position. This avoids assuming a uniform law at a color-selected endpoint.
+
+The geometric argument instead uses a killed grade difference whose two possible bit extensions sum to twice its present width. At strict interior containment, the allowable child intervals leave unused width. We also account for the bounded future bits needed to certify a physical regeneration. Releasing the candidate only after those bits have been exposed permits a conditional estimate on the original grid. Early ties, crossings of the margins and local reversals of the cut order are explicitly charged; none is discarded as an assumed negligible event.
+
+The fixed-query argument uses the finite shattering count of N. Sauer, [On the density of families of sets](https://doi.org/10.1016/0097-3165(72)90019-2), *Journal of Combinatorial Theory A* 13 (1972), 145–147. Our proof gives the required inventory recursion directly. Features have partially defined responses, and every retained pattern is realized by a whole leaf of the chronological tree of actual sources. This distinction matters: an undefined response cannot be filled in arbitrarily, and a common probe formula represents different ordinary integers at different source values. The resulting monotone variation count is proved separately in [SELECTED_COLOR_VARIATION.md](SELECTED_COLOR_VARIATION.md).
+
+## The optional separation of the real windows
+
+For the disjoint-window clause it is sufficient that, for integers \(a,b\) of size \(O(d)\), not both zero,
+
+\[
+ |a\log3-b\log2|\ge c d^{-C}
+\]
+
+with fixed unspecified constants. A direct primary source is E. M. Matveev, [An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II](https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf), *Izvestiya: Mathematics* 64 (2000), 1217–1269, Theorem 2.1, DOI [10.1070/IM2000v064n06ABEH000314](https://doi.org/10.1070/IM2000v064n06ABEH000314). Take the field to be the rationals, the algebraic numbers to be 2 and 3 and their logarithmic heights fixed. Their logarithms are linearly independent over the integers, by unique prime factorization. All factors in the theorem's bound are fixed except \(W_0=O(\log d)\). A coefficient equal to zero gives an immediate stronger bound. Exponentiating supplies the displayed estimate.
+
+The original population note points to the same two-logarithm input through the prior head-incidence calculation and the Collatz literature of Simons and de Weger. The primary theorem just specified is sufficient for all new disjoint-window claims; no numerical irrationality exponent from their cycle-specific notation is required. The real windows have exponentially small relative radius, so this inverse-polynomial separation suffices. No such number-theoretic input is used in the finite directed residue certificate or in its ordinary Collatz equivalence.
+
+## External and source-qualified boundaries
+
+The \(0.84\) exponent comes from the published fixed-target result of I. Krasikov and J. C. Lagarias, [Bounds for the 3x+1 problem using difference inequalities](https://arxiv.org/abs/math/0205002), together with the pinned repository reduction from a counterexample to actual tripling defects. The new finite substitution preserves that exponent; it does not prove the contrary upper bound.
+
+The head geometry and selected-color probability statements retain P, the native finite merger bound, and R, the ordinary regeneration and original-source projection statements, at the exact heads and paths in [SOURCES.json](SOURCES.json). They are written deductions at those hypotheses, with finite Lean ingredients. They are not included in the complete arithmetic kernel theorem. The strict-return parity count and finite source localization require neither P nor R. Fixed-target positive density M is needed only when invoking the previously proposed summability-to-Collatz consumer or its explicitly conditional inverse-polynomial population trigger. It is absent from the arithmetic localization, ordinary strict-return estimate and the geometric and color-complexity deductions at their stated source hypotheses.
+
+The new packet therefore leaves three concrete tasks: control the pullback of the exceptional set under the actual smaller witness; bound the early ties, margin failures and local folds forced by the width budget; or bound the simultaneous color oscillation in the selected subpower intervals. The current results prove none of these closing estimates.

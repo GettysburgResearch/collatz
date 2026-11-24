@@ -1,0 +1,62 @@
+{
+  "recorded_utc": "2026-11-24 14:09:41 UTC",
+  "precision": "Record created after the prepublication API refresh; updated_at fields below are the returned provider timestamps.",
+  "own_pr": 197,
+  "own_head": "b0538639df0ab7edd239281bd897e705160f732c",
+  "own_draft": true,
+  "neighbors": [
+    {
+      "number": 203,
+      "head_sha": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "updated_at": "2026-11-24T10:29:47Z"
+    },
+    {
+      "number": 202,
+      "head_sha": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "updated_at": "2026-11-24T08:49:53Z"
+    },
+    {
+      "number": 201,
+      "head_sha": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "title": "Collatz: exact-clock amplification and Lean-checked single-residue closure",
+      "updated_at": "2026-11-24T13:52:34Z"
+    },
+    {
+      "number": 200,
+      "head_sha": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "updated_at": "2026-11-24T10:37:07Z"
+    },
+    {
+      "number": 199,
+      "head_sha": "d868f8e8405c08b8c501236853bea495ca593824",
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "updated_at": "2026-11-24T07:10:44Z"
+    },
+    {
+      "number": 198,
+      "head_sha": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "updated_at": "2026-11-24T04:33:32Z"
+    },
+    {
+      "number": 197,
+      "head_sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "title": "Collatz: quantitative unit escape, exact pressure and Lean descent",
+      "updated_at": "2026-11-24T11:56:14Z"
+    },
+    {
+      "number": 196,
+      "head_sha": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "updated_at": "2026-11-24T04:32:50Z"
+    }
+  ],
+  "new_head_detected": {
+    "pr": 201,
+    "sha": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+    "scope": "Late update identified during publication refresh. See LATE_PR201_COMPARISON.md for the subsequently read source content and exact review boundary."
+  }
+}
