@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "/workspace/scratch/ad48b85f0ea2/collatz/reports/astra-independent-review-20261124/make_lean_replay.py",
+    "--repo",
+    "/workspace/scratch/ad48b85f0ea2/collatz",
+    "--out",
+    "/tmp/astra-lean-source-replay-z8b_27q9/out",
+    "--mode",
+    "repaired-bundle"
+  ],
+  "exit_code": 0,
+  "byte_identical": true,
+  "bundle_sha256": "f5a292583bacc29aafb0bd1d8032849a5a3c5085f02b5d1162fb8257be4346e5",
+  "scope": "source identity replay; not a second compiler execution"
+}

@@ -1,0 +1,275 @@
+{
+  "scope": "Final research, review and execution-source bindings. Excludes itself and CHECKOUT_VALIDATION.json to avoid a circular receipt chain. The retained initial published-head receipt is included.",
+  "files": [
+    {
+      "path": "research/astra-birth-rigidity-20261124/LATEST_SOURCE_SYNTHESIS.md",
+      "bytes": 10281,
+      "sha256": "2a9b1ff7559e7ec1e5690d84cde4eca8b9346658819559cefd0bd477ae332712"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/MAHLER_EXTENSION.md",
+      "bytes": 15491,
+      "sha256": "c3ad04f4026fd5ce965c72871a999d2b0515dccd005bb533535a320d48c351b2"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/OCCUPATION.md",
+      "bytes": 5131,
+      "sha256": "51aea60e8be3026948d39a1f2f29fea1bae85dd26304a519839b37372b9fd766"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/PHASE_TREE.md",
+      "bytes": 6928,
+      "sha256": "4ba1df60d8f364ff12a0f8452d30a881445b06abef854cf7a52ad9081fcec516"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/README.md",
+      "bytes": 8978,
+      "sha256": "c31ac8bbad649dceb0c75046b83404b2f3d2d11c7003cc9a57b04d06bbdfb2ca"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/RUN_PARTITION.md",
+      "bytes": 10422,
+      "sha256": "5014a994698abeeea371ac5dcd56d2677d2d739506be594dfd772064e1b2fc29"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/TOP_COMPONENT.md",
+      "bytes": 10121,
+      "sha256": "b014b2dd42b8b61d9714449444042ec1c3aca3ba61b358314621fa8e675c8f4b"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/TOP_CONTROLS.json",
+      "bytes": 1080,
+      "sha256": "8e2015f086527feefe3e552bead5450e70274e2fc53d93d3318f3d408ed38301"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/TREE_CONTROLS.json",
+      "bytes": 808,
+      "sha256": "6e16f5656db4f8784fb10c3832f3991bec823faddb994399b684c4902846ee95"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/check_phase_tree.py",
+      "bytes": 2869,
+      "sha256": "0afae3b15539db95d778f872d5b50985473f466ddfa49879290a47ad58469a5c"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/check_run_support.py",
+      "bytes": 5889,
+      "sha256": "e5484544bb428c19e89c1bf46d764dcbaa0741387de11cfa11a7a734f5150923"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/check_top_component.py",
+      "bytes": 5764,
+      "sha256": "1f9c8f9d0d46a99c3f832a1262b75027082bc26277e3f37371b27323c4a5827a"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/check_triangular_scripts.py",
+      "bytes": 2487,
+      "sha256": "c026442ce60df694d9f6d0c228a4819687dd5a28ba6eace52f8b34aee1b11f98"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/BoundedBirth.lean",
+      "bytes": 2895,
+      "sha256": "10d071c56edafd3d16941671cbe028f71c3867ce628e88e8c58f2f895bf903dd"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/CarryBudgetStd.lean",
+      "bytes": 3216,
+      "sha256": "ad7788e158540dea2e8b6e34eda4604a23819ffc47b0177cf003e352fa122691"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/PhaseTreeCertificate.lean",
+      "bytes": 1993,
+      "sha256": "097354975f0817203810e3d4ff93b982ec7567bce3fa20ed340d4c9f3f4dab56"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/RunSupport.lean",
+      "bytes": 1654,
+      "sha256": "0054ab81c1f2ad8f424e2d537db9d133ba464c6e0cb67bc416a0627868cfe6ac"
+    },
+    {
+      "path": "research/astra-birth-rigidity-20261124/lean/UpstreamFiniteKernels.lean",
+      "bytes": 42104,
+      "sha256": "f5a292583bacc29aafb0bd1d8032849a5a3c5085f02b5d1162fb8257be4346e5"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/BIRTH_BOUND_REVIEW.md",
+      "bytes": 4506,
+      "sha256": "891a8001d984e240af005d7267bd777234c3335653b5ca644f14b228dfbffbe2"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/BoundedBirth.lean.log",
+      "bytes": 501,
+      "sha256": "7798cbfbf6abfc194b0ee8655da77697b38484ac83ce22a6ae0016903e07375a"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/CarryBudgetStd.lean.log",
+      "bytes": 541,
+      "sha256": "5fb02574f95585014eb204e81aef29db67c516cb2322d216e8742df6d903f509"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/EXACT_RECEIPT.json",
+      "bytes": 6160,
+      "sha256": "31af1516d6d8de21a039d0398045b8355e9c12bd658f1b074209da210400afa5"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/FINITE_KERNEL_RECEIPT.json",
+      "bytes": 1934,
+      "sha256": "755c46660152ecb357cb4f5953f51e3200500179db6af1ece5292b8310ffadb5"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/FORMAL_SUMMARY.md",
+      "bytes": 3353,
+      "sha256": "fa685a4d9cda2694b3fe7ce0c9b1d7f101e7f8b9e0386dab2e61c075296edffa"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/INITIAL_PUBLISHED_CHECKOUT_VALIDATION.json",
+      "bytes": 3261,
+      "sha256": "6ce978ea6b8baac9970932bcbdda0d26a1830f8b6df9df592d2a8e59d97043e4"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_CYCLE_REVIEW.md",
+      "bytes": 6149,
+      "sha256": "e47bfaca8de7f21b5347887f35768b5e426c3388a1943867ff21f750676dfe2b"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_ESCAPE_REVIEW.md",
+      "bytes": 9236,
+      "sha256": "20b87d8525119562046fce3e373d9237d56c929b59104bfc353435e2ec3d629a"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_FORMAL_REVIEW.md",
+      "bytes": 3422,
+      "sha256": "3b934b5f43e23c44310b3626b69680fa5ebffcfd8ecdf76b9dd9435fa4c29be2"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LATEST_SOURCE_HEADS.json",
+      "bytes": 1136,
+      "sha256": "11907aa99b55485aebae82234d7ec222cda8e495e6b95c606197651dde6af468"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/LEAN_SOURCE_RECONSTRUCTION.json",
+      "bytes": 514,
+      "sha256": "b9c0d9d57be366218197fe2cef5565f471296ad963cf6e3702fb454924f8a67b"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/MAHLER_CROSS_REVIEW.md",
+      "bytes": 8511,
+      "sha256": "cd1e1bede4609f6777168d50f6660e2d09f597aa75ae82367aa89542e7e1f3eb"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/MIXED_DENOMINATOR_RECONSTRUCTION.md",
+      "bytes": 3679,
+      "sha256": "5a4f33635073be1930f4ad90e2b752fe26cb39afdbd26d420938474b29ed6b43"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/PR189_CHECKOUT_VALIDATION.json",
+      "bytes": 3260,
+      "sha256": "52838d99ddf2b6b12ba6d482f595de9cdcd7381cd4838acbe591115911c59746"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/PR189_CHECKOUT_VALIDATION.log",
+      "bytes": 1447,
+      "sha256": "c9d21a0ac2cc1748835f713d592f735d7c91b237e46179a6409274ce755256f7"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/PhaseTreeCertificate.lean.log",
+      "bytes": 228,
+      "sha256": "e31bfebbd7540830127dc2b9c5ef2751d92919cd75fbb43d5f3dfe0299b1e3ba"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/README.md",
+      "bytes": 10692,
+      "sha256": "efbf236dab53f9b46543d3ef750352e83f04da48502d2d135e7198d3ea9961d2"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/ROOT_RECONSTRUCTION.md",
+      "bytes": 13025,
+      "sha256": "78a2ec244f440867371ee3f9afb8e89d0e32b3b0418a9f027d5154b3f3c43076"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/RunSupport.lean.log",
+      "bytes": 172,
+      "sha256": "4d659dc0c1ede14d6ebd6e457bae0582544ca33d120bcb056e86db7615029f59"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/SOURCE_HEADS.json",
+      "bytes": 7905,
+      "sha256": "6086b7503e93830313df68ea7a88638d46c53ed97ca09a8227f5edb1d003701d"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/STATIONARY_REVIEW.md",
+      "bytes": 5970,
+      "sha256": "095b42b85edbb96a764146d42e8d96f6efbe9a4b912aacf2f7bcae2cf41e44bd"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/STD_LEAN_RECEIPT.json",
+      "bytes": 2988,
+      "sha256": "250b8c0b432c475829f749917c00673f09b33b4d67a9c0181874ddd3647624cd"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/UpstreamFiniteKernels.lean.log",
+      "bytes": 10899,
+      "sha256": "2df0af4b6c3b67eac1fe8bead61d28c63ca2f18d48e417e0e9247200df05bc50"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_phase_tree.normal.log",
+      "bytes": 808,
+      "sha256": "6e16f5656db4f8784fb10c3832f3991bec823faddb994399b684c4902846ee95"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_phase_tree.optimized.log",
+      "bytes": 808,
+      "sha256": "6e16f5656db4f8784fb10c3832f3991bec823faddb994399b684c4902846ee95"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_run_support.normal.log",
+      "bytes": 475,
+      "sha256": "2ebdfba74bb3711da65e0ed27b3a4673fc88d7d22385b08ee8c1ea0e07439fe0"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_run_support.optimized.log",
+      "bytes": 475,
+      "sha256": "2ebdfba74bb3711da65e0ed27b3a4673fc88d7d22385b08ee8c1ea0e07439fe0"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_top_component.normal.log",
+      "bytes": 1080,
+      "sha256": "8e2015f086527feefe3e552bead5450e70274e2fc53d93d3318f3d408ed38301"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_top_component.optimized.log",
+      "bytes": 1080,
+      "sha256": "8e2015f086527feefe3e552bead5450e70274e2fc53d93d3318f3d408ed38301"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_triangular_scripts.normal.log",
+      "bytes": 156,
+      "sha256": "acfa1cdc584f93ef709c506fbfb97b4f90460409ddb0160a8dd22f521155fb29"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/check_triangular_scripts.optimized.log",
+      "bytes": 156,
+      "sha256": "acfa1cdc584f93ef709c506fbfb97b4f90460409ddb0160a8dd22f521155fb29"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/declaration-manifest.json",
+      "bytes": 5408,
+      "sha256": "208762f62767e3d12220516a6672c518b1308039aa4a76498f984bd6afc4c5d6"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/frozen-proof-repairs.diff",
+      "bytes": 2676,
+      "sha256": "951436699aa906cf6b244d2b7daf6468665ee9c54eaad17345972df366f4b094"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/lean-source-reconstruction.log",
+      "bytes": 83,
+      "sha256": "8a2adc283161ea72d09404a21e7ad1d2cb37ae2c88e7ea14942254129cfd50f6"
+    },
+    {
+      "path": "reports/astra-independent-review-20261124/make_lean_replay.py",
+      "bytes": 3655,
+      "sha256": "454c60970e2a202b3bdfdd09e1ae7e9ef9e7d63378e8da1aa11c5785bb45ff8b"
+    }
+  ]
+}

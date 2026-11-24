@@ -1,0 +1,162 @@
+[
+  {
+    "pr": 182,
+    "source_commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+    "source_path": "research/phase-packing-round12-20261124/PhasePacking.lean",
+    "git_blob": "04f6abb7847339a69d465a30ff878c71db950955",
+    "sha256": "b10dbf602c9afcc8491cba3b6b0c326103f1f4e6599a73204c7454574bdecbe5",
+    "all_declarations": [
+      "clock_carry_identity",
+      "normalized_complete",
+      "normalized_edge",
+      "cubic_height",
+      "canonical_difference",
+      "canonical_prefix",
+      "returning_bound",
+      "past_endpoint_unique"
+    ],
+    "appended_sha256": "cfc85afb348ffc6dc3cbd2a8cac0a4221ba01fd603e60039b2de187b09e71a68"
+  },
+  {
+    "pr": 182,
+    "source_commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+    "source_path": "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
+    "git_blob": "48c71836b596ed9d6119119a63a0661e9dacba8b",
+    "sha256": "313e434abb73b2027311145c40e6aed3262a82ec1a2ba688b48d411e64e305d2",
+    "all_declarations": [
+      "denom",
+      "carry",
+      "Edge",
+      "extra",
+      "wordDen",
+      "wordDen_succ",
+      "aligned",
+      "difference_dvd",
+      "small_shared_word",
+      "edge_height",
+      "prefix_height",
+      "two_start_bounds",
+      "early_repeat",
+      "edge_deterministic",
+      "equal_start_future",
+      "four_window_reject"
+    ],
+    "appended_sha256": "6e8097e55d29a9776eb6f35667cb1d753f1410fd90dbf790ff426f8f8b5f8528"
+  },
+  {
+    "pr": 187,
+    "source_commit": "099058f3f2602a48e109c964899f0a9a2a223338",
+    "source_path": "research/fixed-source-repeat-obstruction-20261124/RepeatObstruction.lean",
+    "git_blob": "9d34adeb6a72c6ccb87d0e2573137af5714ba5ca",
+    "sha256": "d73158ea82188a40b16c64e77da2033b5a5b6373d3aaa23921c551a29a5b2e13",
+    "all_declarations": [
+      "cancel3_pow2",
+      "cancel9_pow8",
+      "eq_zero_of_multiple_small",
+      "shared_lp_divisibility",
+      "shared_lp_eq_of_small",
+      "clock",
+      "clock_ge",
+      "shared_gap_full_divisibility",
+      "shared_gap_eq_of_height"
+    ],
+    "appended_sha256": "46978e5749ad9123bbdfe27b4a4efa0e09a7e9e613aa7dad62931669066bb0c3"
+  },
+  {
+    "pr": 188,
+    "source_commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+    "source_path": "research/scalar-carry-cocycle-20261124/CarryCocycle.lean",
+    "git_blob": "a43d5e4274fdfc7fbb4c78aac3d1bee58dcec5e2",
+    "sha256": "a42133eddf0bb81288b3a27e6b43774e92137bab481f9748f93b261ce602a878",
+    "all_declarations": [
+      "succ_le_two_pow",
+      "fourth_bound",
+      "carry_power",
+      "clock_step",
+      "clock",
+      "clock_amortized",
+      "clock_amortized_shift"
+    ],
+    "appended_sha256": "7da7a415ea29e10ba729349f302faf46bf814bbfc42979731d0c67ffb5a1b454"
+  },
+  {
+    "pr": 188,
+    "source_commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+    "source_path": "research/scalar-carry-cocycle-20261124/ResidueDefect.lean",
+    "git_blob": "199259f73fb564636baef2d90ea1bf500f23b424",
+    "sha256": "a2f47b41e37fe60e5ee024395cb95b791f134516ba6a7fd9a5551fe9b8e7d2b2",
+    "all_declarations": [
+      "geom",
+      "geom_mul",
+      "balanced_unit",
+      "exponent_transport",
+      "cycle_term",
+      "balanced_numerator_inverse",
+      "single_interval_defect"
+    ],
+    "appended_sha256": "59f51729ac77d4fa33fd623ba36b529e6ffa6b844bfe88cecd101487de666216"
+  },
+  {
+    "pr": 189,
+    "source_commit": "a0be70b1ffa075cbc50755ac76036108c028d120",
+    "source_path": "research/stationary-carry-rigidity-20261124/CarryBudget.lean",
+    "git_blob": "db28cebb68956aad8a674e9c927b98b387078343",
+    "sha256": "aa84500b5fd73eb4daa49d62237f3d3a0d42be8d454d35b323823f73ef406097",
+    "all_declarations": [
+      "prefixSum",
+      "prefixSum_congr",
+      "prefixSum_ge_length",
+      "carry_telescope",
+      "carry_budget",
+      "carry_word_determined",
+      "no_carry_birth"
+    ],
+    "appended_sha256": "c7532b7c4383f5d98e8f8b2d5348d89eecb1a488a95530d276a35a641eb0f61b"
+  },
+  {
+    "pr": 190,
+    "source_commit": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+    "source_path": "research/mahler-physical-scripts-20261124/MahlerCore.lean",
+    "git_blob": "b84d1d3f6d1256a307c5810ef118ced4d8834501",
+    "sha256": "0ebc5c02a28db6af93e81eb4cb55c65386774501b3e1e02277d866ade6b550f5",
+    "all_declarations": [
+      "weight",
+      "zeroSum",
+      "oneSum",
+      "telescope",
+      "weight_append",
+      "oneSum_append",
+      "substitute",
+      "weight_substitute",
+      "oneSum_substitute",
+      "finite_mahler",
+      "affineWord",
+      "affine_expand",
+      "eliminate_zero"
+    ],
+    "appended_sha256": "db29a55c27cddffb9432a363225efcc5a23961d1de89fe04711ab7f3e33f32d3"
+  },
+  {
+    "pr": 191,
+    "source_commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+    "source_path": "research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean",
+    "git_blob": "3f030acc403d0a70f592563395127ae85f5765b8",
+    "sha256": "ec4af1d8258372c4be091f649c572517214344e952d22fcfea6e43075c28a273",
+    "all_declarations": [
+      "cycle_spread_bound",
+      "lattice_step",
+      "spaced_span",
+      "denominator_packing_core",
+      "composed_carry_difference",
+      "shadow_L",
+      "shadow_P",
+      "shadow_smaller_odd",
+      "shadow_exists",
+      "shifted83_L",
+      "shifted83_P",
+      "shadow_first_gap",
+      "bezout_torus"
+    ],
+    "appended_sha256": "fcccfe079dafd76d2f8688716d9e0e8c62668889a1d331952b38ca4c90ae1f22"
+  }
+]

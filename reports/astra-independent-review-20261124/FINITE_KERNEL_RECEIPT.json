@@ -1,0 +1,39 @@
+{
+  "scope": "One repaired module combining eight finite arithmetic sources from six PR heads. The representative input theorem statements are unchanged. This module supplies no universal physical-dynamics or convergence theorem.",
+  "source_sha256": "f5a292583bacc29aafb0bd1d8032849a5a3c5085f02b5d1162fb8257be4346e5",
+  "source_bytes": 42104,
+  "combined_log_sha256": "2df0af4b6c3b67eac1fe8bead61d28c63ca2f18d48e417e0e9247200df05bc50",
+  "proof_diff_sha256": "951436699aa906cf6b244d2b7daf6468665ee9c54eaad17345972df366f4b094",
+  "source_manifest_sha256": "208762f62767e3d12220516a6672c518b1308039aa4a76498f984bd6afc4c5d6",
+  "generator_sha256": "454c60970e2a202b3bdfdd09e1ae7e9ef9e7d63378e8da1aa11c5785bb45ff8b",
+  "lean_version": "Lean 4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_tag": "v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_git_blob": "de612f43de68d2b64dc65f74fc9b37d1f9d20898",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "flags": [
+    "-j",
+    "1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "input_basename": "FixedBundle.lean",
+  "exit_code": 0,
+  "explicit_theorems_and_lemmas": 66,
+  "explicit_definitions": 14,
+  "unique_printed_declarations": 80,
+  "print_results_including_repeated_checks": 119,
+  "all_observed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "differences_from_frozen_sources": [
+    "9 selected mathlib module imports in place of each file header",
+    "Finite kernels combined in original namespaces",
+    "Two obsolete lemma-name uses, two redundant ring steps, and one explicit proof using retained hy in PhasePacking",
+    "Three warning-as-error tactic sequencing repairs in CarryCocycle",
+    "Supplemental axiom command for each authored declaration, in addition to any original axiom commands"
+  ]
+}

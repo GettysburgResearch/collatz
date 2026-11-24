@@ -1,0 +1,29 @@
+{
+  "scope": "Frozen source heads reviewed after the initial PR194 publication; earlier SOURCE_HEADS.json remains the original twenty-head inventory",
+  "initial_pr194_head": "764f3a9f539febf3d2661a9ca4acc1b10827878c",
+  "new_sources": [
+    {
+      "pr": 192,
+      "head": "be783656f0e889fe0d5318a2f7a9140099cb94b5",
+      "path": "research/astra-phase-and-cycle-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "pr": 193,
+      "head": "52beff703fd3ce798c430e5af8199eb58d41bf93",
+      "path": "research/astra-universal-descent-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    }
+  ],
+  "closing_query_of_original_twenty_heads": {
+    "unchanged": 19,
+    "changed": [
+      {
+        "pr": 189,
+        "head": "a390a1a4c75ee95db98b4b683d17c503f4e4a118",
+        "reason": "Attribution-only correction made and read back during this investigation"
+      }
+    ]
+  },
+  "review_execution_scope": "Read-only source/receipt review for the newer Lean modules, not an independent compiler replay; new infinite synthesis remains written mathematics"
+}
