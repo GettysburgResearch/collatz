@@ -4,6 +4,8 @@
 `T(2n)=n`, `T(2n+1)=3n+2`. An odd gap from `x` to `y` has length `e≥1` and satisfies
 `3x+1=2^e y`, with both ends positive and odd. A unit here is an odd positive integer prime to three.
 
+The [current full-conjecture proposal](Proposal.md) gives two explicit arithmetic obligations. The first asks for a cumulative clock crossing on each ordinary unit orbit. The second asks for arbitrarily large depths at which a finite cycle test returns false. Lean proves the equivalence and the correctness of the finite test. The two universal obligations remain open. [Main declaration](FinalProposal.lean)
+
 ## Which itineraries occur at a fixed clock?
 
 Fix a unit endpoint $q$, precision $K\ge1$, $M=3^K$, $L=2\cdot3^{K-1}$, and $m\ge2$. Prescribe *every* source residue $r_0,\ldots,r_{m-1}$ modulo $M$ in chronological order. All are units modulo $M$. Ask for an ordinary path from some $x_0$ to this very $q$, with exactly $m$ odd steps, exactly $S$ shortcut steps, and $x_i\equiv r_i\pmod M$ before each odd step.
@@ -77,20 +79,29 @@ For a relative carry of at least $2^{-j}$, Lean proves the explicit integer boun
 
 A separate written argument uses Evertse's Corollary 1 to strengthen the conclusion to $h/\log b\to\infty$ along any sequence of qualifying rows with $b\to\infty$ at fixed $\epsilon>0$. The application of that corollary and the resulting limit are proposed for mathematical review. [Derivation and source](SparseDefects.md)
 
-**Remaining step.** The lower theorem prescribes the first $m-1$ residues. Both upper estimates count exceptions on the whole path. On a nonconverging ray the common suffix of length $n$ already has at least $2n/5-a$ gaps of length one. Indeed every other gap costs at least two, and the suffix clock is at most $8n/5+a$. The result `bad_suffix_unit_gaps` gives this lower bound on the actual suffix. A proof that one necessary prefix word is absent at every eligible gate on arbitrarily large rows would close the criterion.
+**Remaining step in the itinerary argument.** The lower theorem prescribes the first $m-1$ residues. Both upper estimates count exceptions on the whole path. On a nonconverging ray the common suffix of length $n$ already has at least $2n/5-a$ gaps of length one. Every other gap costs at least two, and the suffix clock is at most $8n/5+a$. The subsequent fixed-gate calculation proves that at the depth used in the equivalence, a missing row is exactly an actual hit at one once the explicit clock budget is met. [Fixed-gate proof and sharp distortion bound](FixedGate.md)
 
 ## Sources and replay
 
 The ordinary map and integrated stopping framework use main at `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. The two-gap identity, the one-gap unit tree and the exact-row carry test come from [PR #201, escape analysis at 2978d84](https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md). [PR #202, fixed-clock routing at 3b10b24](https://github.com/GettysburgResearch/collatz/blob/3b10b24d12d4b349cb20f4cbc83086c8a09f807e/research/synchronized-long-basin-blocks-20261124/README.md) and [PR #203, phase-marked depth slices at 3f2c89f](https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md) motivated keeping the exact clock and checking which observations may be fixed jointly. The Lean modules use elementary arithmetic and finite kernel decisions. Two related submissions consider paired rows at a fixed target and excursions along an ordinary orbit. [PR #204](https://github.com/GettysburgResearch/collatz/pull/204) and [PR #205](https://github.com/GettysburgResearch/collatz/pull/205)
 
-From this directory, run the following with a Lean 4 installation and Python. The second Lean file imports the compiled first module.
+From this directory, a Lean installation providing Std can build the modules in dependency order. This POSIX shell example writes compiled objects into a fresh temporary directory.
 
 ```sh
-lean -DwarningAsError=true -DautoImplicit=false -o TernaryItinerary.olean TernaryItinerary.lean
-LEAN_PATH=. lean -DwarningAsError=true -DautoImplicit=false SparseClock.lean
+set -e
+build=$(mktemp -d)
+export LEAN_PATH="$build${LEAN_PATH:+:$LEAN_PATH}"
+for mod in TernaryItinerary SparseClock FixedGate MinimumDescent CycleRows \
+  SynchronousShadow OrbitAttack CycleDetection CycleAmplification DescentClocks \
+  ClosureProposal ClockRecurrence FinalProposal MixedBarrier
+do
+  lean -j1 -DwarningAsError=true -DautoImplicit=false -DElab.async=false \
+    -o "$build/$mod.olean" "$mod.lean"
+done
 python -X utf8 -B replay.py
+python -X utf8 -B proposal_replay.py
 ```
 
-Both modules were checked with Lean 4.33.0-pre at compiler commit `62b6a2291302d4bbeace37642a066b7510d0145c`, using the WebAssembly CLI with one worker. The printed theorem dependencies use only `propext`, `Classical.choice` and `Quot.sound`. [Compiler distribution](https://github.com/live-codes/browser-lean/tree/a8aed095534e67061e2626b94e8e69193099091d)
+The local compiler was Lean 4.33.0-pre at commit `62b6a2291302d4bbeace37642a066b7510d0145c`, running the WebAssembly CLI. The theorem audits print their dependencies. [Compiler distribution](https://github.com/live-codes/browser-lean/tree/a8aed095534e67061e2626b94e8e69193099091d)
 
-The Python control reads each constructed path forward and independently enumerates small rows. Its 512-source example uses a finite initial climb of $2^{63}-1$ at $b=70$. It also checks the shifted identity and valuations on 36,285 ordinary forward path segments, including 3,727 balanced segments on which it checks the explicit carry bound.
+The first Python control reads constructed paths forward, independently enumerates 2,628 exact rows, and checks the shifted identity on 36,285 ordinary segments. The second control checks 79,378 segments against the sixth-power bound, exhausts the finite cycle test through depth 16 and checks 114 translated paths. The common gate in the 512-source example reaches one at shortcut time 553. [Finite controls](proposal_replay.py) and [kernel-checked gate](FinalProposal.lean)
