@@ -1,0 +1,14 @@
+{
+  "scope": "Exact finite BigInt checks executed in authoring session; not Lean replay, external review, or universal proof.",
+  "counts": {
+    "small_center_words": 1625,
+    "cyclotomic_norm_certificates": 2635,
+    "noncoprime_components": 1950,
+    "zero_norms": 57,
+    "noncoprime_zero_comparisons": 1950,
+    "actual_rational_cycle_packings": 8088,
+    "two_sided_repeated_factor_checks": 75488,
+    "contracting_dictionary_checks": 908,
+    "ordinary_shadow_scripts": 1022
+  }
+}
