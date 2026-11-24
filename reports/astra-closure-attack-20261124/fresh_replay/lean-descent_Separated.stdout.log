@@ -1,0 +1,5 @@
+'Collatz.SeparatedDescent.separated_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SeparatedDescent.integral' depends on axioms: [propext, Quot.sound]
+'Collatz.SeparatedDescent.shadow_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.SeparatedDescent.smaller_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SeparatedDescent.descent_all_phases' depends on axioms: [propext, Classical.choice, Quot.sound]

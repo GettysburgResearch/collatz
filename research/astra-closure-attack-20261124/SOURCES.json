@@ -122,6 +122,96 @@
       "sha256": "5d7546ef00fd1c58b6e6211f052d8b9fa436f4263ab4ef7c1d1d26089328c142",
       "scope": "Actual canonical window comparison; no changing finite witness used as infinite orbit",
       "url": "https://github.com/GettysburgResearch/collatz/blob/f98262be4ea40068dc88c779a767a9400a8bcaa3/research/astra-closure-20261124/CANONICAL_WINDOWS.md"
+    },
+    {
+      "pr": 195,
+      "commit": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "tree": "dc04a239cf7410d92e6a1c9b8c4ae5007c7c313f",
+      "path": "research/astra-global-closure-20261124/structural/README.md",
+      "git_blob": "64eee4f18181204244b830891ae10ddcf92e735a",
+      "sha256": "0a9770d5ce4b15f73574d7f8ac3c28e1d3e8470f2fc09ed99a08e044a8308d55",
+      "scope": "CS1 guarded offset -17 ordinary merger; phase-by-phase comparison",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a24ef018147a1e16bf314d14085e2d0d6c620d32/research/astra-global-closure-20261124/structural/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "tree": "dc04a239cf7410d92e6a1c9b8c4ae5007c7c313f",
+      "path": "research/astra-global-closure-20261124/audit/SHADOW_RIGIDITY.md",
+      "git_blob": "1c1b0795e4dc5ad4c23374a311675feb9917b122",
+      "sha256": "8fc11084c6d8097169edc5f0bf855b8fb424978d913a2e47c6937bbd7ac3308a",
+      "scope": "AR5 finite total causal affine controller; original-clock and common-slope scope",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a24ef018147a1e16bf314d14085e2d0d6c620d32/research/astra-global-closure-20261124/audit/SHADOW_RIGIDITY.md"
+    },
+    {
+      "pr": 196,
+      "commit": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "tree": "4a38aa96aec5f1ea26196a5851b4290d3a742e81",
+      "path": "research/astra-orbit-cycle-20261124/mergers/TWO_ANCHOR_MERGERS.md",
+      "git_blob": "dced2a09659cebdb36546e200f5640769db03112",
+      "sha256": "9b5bdc19098a6135f7cfc6e930b7e4008d39c5354ce1d10c2bc4064fe4bef90a",
+      "scope": "Half-size selector; guard and odd-core floor comparison on all L/P phases",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/27d03cfe902660e06604eb55bb28ca3d2754ff48/research/astra-orbit-cycle-20261124/mergers/TWO_ANCHOR_MERGERS.md"
+    },
+    {
+      "pr": 196,
+      "commit": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "tree": "4a38aa96aec5f1ea26196a5851b4290d3a742e81",
+      "path": "research/astra-orbit-cycle-20261124/cycles/ROTATIONAL_EXCLUSION.md",
+      "git_blob": "2006ae96eb51618c681364d71f7f3d644b3ec2cc",
+      "sha256": "689175720ff0904cfd86cdcc54a66749d0964aedae3add81692c297e45f7c251",
+      "scope": "R1 complete denominator and source-qualified R2; reused-center consequence",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/27d03cfe902660e06604eb55bb28ca3d2754ff48/research/astra-orbit-cycle-20261124/cycles/ROTATIONAL_EXCLUSION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "tree": "dec94cf76589d28f4d00107bfb7bcbb94651538a",
+      "path": "research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md",
+      "git_blob": "f0dcb7a8e8ec23798dd2e685cf1b4caa592941e6",
+      "sha256": "0f950d72941b5a3a967aa3028ed480ca5bcf687f17eac68c64e819c3bf759b86",
+      "scope": "Critical surplus section; exact quarter reduction and unproved smaller-section return",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "tree": "dec94cf76589d28f4d00107bfb7bcbb94651538a",
+      "path": "research/ayh-resource-reset-20261124/LATEST_SOURCE_CONNECTIONS.md",
+      "git_blob": "7914cea0f8aad047c709f4738eea413ce3448c24",
+      "sha256": "576b3f3bcafc1f32c7fc322678a00fd9c6abc56788b03e74d57242b50bf14e11",
+      "scope": "Prior incoming-merger comparison and retained source-floor requirement",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/LATEST_SOURCE_CONNECTIONS.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/README.md",
+      "git_blob": "3b611f83ee0d8754ced138606e827b276d4df23b",
+      "sha256": "3b9ff72b00716c0c0e6446c73884a35cfe44f14d615449b21b440d5e764d8150",
+      "scope": "AF6 equal-clock dictionary and source review; no universal tiling inferred",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/README.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/MINIMUM_ARC.md",
+      "git_blob": "4a8aa3b7ea3162dd6b64501f7b0231df475bd413",
+      "sha256": "431ba55291001e00bdfd134cabff346afdf2dfb1e7479a3160fe327970514329",
+      "scope": "First contracting arc at a minimum; no center-height upper bound inferred",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/MINIMUM_ARC.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/LATE_FRONTIER.md",
+      "git_blob": "3db7544ad52735306d3f9386d71235be321482e3",
+      "sha256": "b7c17871ec62d0a563e87bd9e51db5f93eab1dceaff619302dd24c0e8511a93f",
+      "scope": "Latest-source interface comparison, not imported analytic verification",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/LATE_FRONTIER.md"
     }
   ],
   "primary_sources": [
@@ -174,5 +264,6 @@
       "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
       "used": "Mixed-radix termination equivalence; no well-founded order imported"
     }
-  ]
+  ],
+  "late_refresh_scope": "Focused reads of PR195\u2013198 and new deductions in LATE_SOURCE_CONNECTIONS.md. No blanket whole-branch audit or inherited compiler evidence."
 }
