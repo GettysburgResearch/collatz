@@ -1,0 +1,236 @@
+{
+  "schema": "collatz-astra-prescribed-closure/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "Every public theorem in the three new Std-only modules, including the exact finite numerical example. Written probability, asymptotic counting, and cited research inputs are not formalized by this audit.",
+  "formal": [
+    {
+      "source": "head/OrderedLanding.lean",
+      "sha256": "3c6df11b05bde8a555c5c0c8276b2cf8ab0d0003e0a67385e60e044efab53865",
+      "audited_copy_sha256": "36932065563318d1641c67d3a9c3ff2e8a9de45dc8cc9cea3b14cb75c600ab40",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/prescribed-checks/OrderedLanding.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.037,
+      "public_theorems": [
+        "OrderedLanding.joinRuns",
+        "OrderedLanding.evens",
+        "OrderedLanding.odds",
+        "OrderedLanding.lowerLift",
+        "OrderedLanding.upperEven",
+        "OrderedLanding.upperOdd",
+        "OrderedLanding.lowerMenu",
+        "OrderedLanding.upperMenu",
+        "OrderedLanding.prefixDistinct",
+        "OrderedLanding.lowerNoSync",
+        "OrderedLanding.upperEvenNoSync",
+        "OrderedLanding.upperOddNoSync"
+      ],
+      "axioms": {
+        "OrderedLanding.joinRuns": [
+          "propext"
+        ],
+        "OrderedLanding.evens": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.odds": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.lowerLift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.upperEven": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.upperOdd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.lowerMenu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.upperMenu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.prefixDistinct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.lowerNoSync": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.upperEvenNoSync": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrderedLanding.upperOddNoSync": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "paired/PatternTransfer.lean",
+      "sha256": "8034f7cba01b666d4137400c0096e0df5eff65a177186df51756b26ea3eb0e7c",
+      "audited_copy_sha256": "654e8be6aec4df6da3950075f47100ee3a636373f0a11b899b84f499df87a028",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/prescribed-checks/PatternTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.152,
+      "public_theorems": [
+        "PrescribedPair.lift",
+        "PrescribedPair.pairedTranslate",
+        "PrescribedPair.traceJoin",
+        "PrescribedPair.patternAtTarget",
+        "PrescribedPair.translatedSpan",
+        "PrescribedPair.router",
+        "PrescribedPair.examplePattern"
+      ],
+      "axioms": {
+        "PrescribedPair.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedPair.pairedTranslate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedPair.traceJoin": [
+          "propext"
+        ],
+        "PrescribedPair.patternAtTarget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedPair.translatedSpan": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedPair.router": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedPair.examplePattern": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "orbit/PrescribedReturns.lean",
+      "sha256": "9179e9ad4a5209e08ba11bc785394a51def7e2167287add3c475eca73f26a535",
+      "audited_copy_sha256": "dd2b8704038a8338bbab845a8db03aebaf1e64cf2f30290bfc02855b3f205c9c",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/prescribed-checks/PrescribedReturns.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.285,
+      "public_theorems": [
+        "PrescribedReturns.onlyEvenPreimage",
+        "PrescribedReturns.preimageTriple",
+        "PrescribedReturns.noReturnToTriple",
+        "PrescribedReturns.evenRun",
+        "PrescribedReturns.homogeneousFiber",
+        "PrescribedReturns.liftRun",
+        "PrescribedReturns.merge46",
+        "PrescribedReturns.merge23",
+        "PrescribedReturns.return2830",
+        "PrescribedReturns.exchangedPrefix",
+        "PrescribedReturns.exchangedNineReplay",
+        "PrescribedReturns.exchangedThreeFusion",
+        "PrescribedReturns.sameSlope",
+        "PrescribedReturns.repeatDivides",
+        "PrescribedReturns.infiniteRepeatFixed"
+      ],
+      "axioms": {
+        "PrescribedReturns.onlyEvenPreimage": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.preimageTriple": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.noReturnToTriple": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.evenRun": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.homogeneousFiber": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.liftRun": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.merge46": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.merge23": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.return2830": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.exchangedPrefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.exchangedNineReplay": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.exchangedThreeFusion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.sameSlope": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.repeatDivides": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PrescribedReturns.infiniteRepeatFixed": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "success": true
+}

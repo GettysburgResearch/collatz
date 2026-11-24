@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-head-refresh/v1",
+  "observed_at_utc": "2026-11-24T13:53:47Z",
+  "all_state_pull_requests": 162,
+  "changed": [
+    {
+      "pr": 201,
+      "previous_head": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "new_head": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "title": "Collatz: exact-clock amplification and Lean-checked single-residue closure",
+      "updated_at": "2026-11-24T13:52:34Z",
+      "read_paths": [
+        "research/killed-green-head-closure-20261124/escape-analysis/README.md"
+      ]
+    }
+  ],
+  "own_pr": 193,
+  "own_head": "bdd4409062bc02416ff6941f8d5690b800068cb3",
+  "scope": "Final read-only metadata refresh. The changed PR201 mathematical reduction was read and reconciled in orbit/LATE_PR201.md; its existing Lean builds and finite experiments were not replayed.",
+  "conclusion": "No newer source supplies the missing global estimate; all new claims retain their original frozen dependencies."
+}

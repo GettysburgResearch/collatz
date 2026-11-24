@@ -1,0 +1,128 @@
+{
+  "schema": "collatz-astra-prescribed-sources/v1",
+  "date": "2026-11-24",
+  "repository": "GettysburgResearch/collatz",
+  "parent": {
+    "pr": 193,
+    "commit": "bdd4409062bc02416ff6941f8d5690b800068cb3",
+    "tree": "8547586b32988e14d05bac60420a3e917f63f2b4"
+  },
+  "map": "positive ordinary shortcut T(2n)=n, T(2n+1)=3n+2",
+  "repository_inputs": [
+    {
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+        "research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md",
+        "research/upper-bit-mergers/DIRECTED_TRIPLING.md"
+      ],
+      "used_for": [
+        "symbolic absorption on a complete original binary grid",
+        "iid ratio-five odd-sentinel renewal and two-sided inverse-square-root gap tail",
+        "directed-cut comparison"
+      ],
+      "qualification": "Frozen repository proof inputs; their earlier complete formal dependency chain was not rebuilt. Ordinary meeting alone is weaker than the symbolic cylinder statement used."
+    },
+    {
+      "pr": 195,
+      "sha": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+      "paths": [
+        "research/astra-global-closure-20261124/round7/head/README.md",
+        "research/astra-global-closure-20261124/round7/renewal/README.md",
+        "research/astra-global-closure-20261124/round7/renewal/TRIPLING_FIBER.md",
+        "research/astra-global-closure-20261124/round6/renewal/README.md",
+        "reports/astra-global-closure-20261124/round7/arithmetic/TRIPLING_REVIEW.md"
+      ],
+      "used_for": [
+        "directed unit-tripling equivalence and full head-series comparison",
+        "prior central ratio-five rows and target routing",
+        "credit for positive-clock empty tripling fiber and 23 mod32 merger",
+        "exact common-future tripling return in two target classes"
+      ],
+      "qualification": "Read at this exact newer head; no import or blanket verification of neighboring claims."
+    },
+    {
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "paths": [
+        "research/ayh-resource-reset-20261124/unit-exit/NESTED_GRADE_REFINEMENTS.md",
+        "research/ayh-resource-reset-20261124/unit-exit/LOCAL_COLOR_INFORMATION.md",
+        "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md"
+      ],
+      "used_for": [
+        "remaining interior order-preserving paired case",
+        "conditional information route",
+        "M-qualified head-series convergence criterion"
+      ],
+      "qualification": "M is explicitly additional to the new ordered-descent probability theorem."
+    },
+    {
+      "pr": 192,
+      "sha": "b72cea3bcd5aa51aba8df6f5e63bc1c473e9523b",
+      "paths": [
+        "research/astra-closing-step-20261124/descent/README.md"
+      ],
+      "used_for": [
+        "least-source transfer through B(u)",
+        "attempted ternary contraction at beta=-1/4"
+      ],
+      "qualification": "The bounded representative is for the existential transfer selected by that reduction, not every constructed sparse representative."
+    },
+    {
+      "pr": 201,
+      "sha": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "paths": [
+        "research/killed-green-head-closure-20261124/escape-analysis/README.md"
+      ],
+      "used_for": [
+        "late intake: elementary exact-clock moving-endpoint dichotomy, covering escape and nontrivial cycles"
+      ],
+      "qualification": "Read after the new main results were frozen; comparison with the tilted moment in orbit/LATE_PR201.md. No upper estimate is imported or claimed."
+    }
+  ],
+  "external_primary": [
+    {
+      "title": "Strong Bounds for 3-Progressions",
+      "authors": "Zander Kelley and Raghu Meka",
+      "url": "https://arxiv.org/abs/2302.05537",
+      "version": "v6",
+      "use": "Main progression-free density theorem applied to the actual common finite source pattern after fixing a modulus.",
+      "scope": "Written theorem input for a corollary, not Lean formalized."
+    },
+    {
+      "title": "Geometry, integer fibres, and dyadic equidistribution of the joint Collatz affine law",
+      "author": "Lyapunov Weaver",
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "version": "v2",
+      "use": "Research route checked: joint singularity, integer Cesaro fibers and their pointwise scope.",
+      "scope": "Not an added premise of the new main results; no uniform moving-root estimate inferred."
+    },
+    {
+      "title": "Ternary harmonic moments and Collatz orbit occupation",
+      "author": "Lyapunov Weaver",
+      "url": "https://rstation.ai/problems/collatz/papers/176",
+      "version": "v1",
+      "use": "Theorem 3: moving tilted quadratic moment detects any individual divergent source; examined as full escape-exclusion route.",
+      "scope": "No vanishing estimate for the moving moment proved here. Additional cycles still need exclusion."
+    },
+    {
+      "title": "Rational self-affine tiles",
+      "authors": "Wolfgang Steiner and Jorg M. Thuswaldner",
+      "url": "https://arxiv.org/abs/1203.0758",
+      "version": "v2",
+      "use": "Adelic tile route screened at fixed expanding-map and finite-digit hypotheses.",
+      "scope": "Those hypotheses not supplied for the variable-clock Collatz affine law; theorem not applied to claim convergence."
+    },
+    {
+      "title": "Ternary Syracuse laws: real localization, clock stability, and critical regularity",
+      "author": "Lyapunov Weaver",
+      "url": "https://rstation.ai/problems/collatz/papers/9",
+      "version": "v2",
+      "use": "Read fixed-clock real/ternary regularity and pointwise scope while checking the tilted-law route.",
+      "scope": "No ordinary prescribed-target inference added."
+    }
+  ],
+  "verification_boundary": "Lean verifies new finite arithmetic interfaces. Probability, renewal, asymptotic counting and their cited inputs are written/source-qualified. No full Collatz theorem."
+}
