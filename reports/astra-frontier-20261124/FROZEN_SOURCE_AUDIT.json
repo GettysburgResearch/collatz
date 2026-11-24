@@ -1,0 +1,177 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_git_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": [
+    {
+      "pr": 190,
+      "head": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "path": "research/mahler-physical-scripts-20261124/MahlerCore.lean",
+      "git_blob": "b84d1d3f6d1256a307c5810ef118ced4d8834501",
+      "sha256": "0ebc5c02a28db6af93e81eb4cb55c65386774501b3e1e02277d866ade6b550f5",
+      "command": "lean -o MahlerCore.olean MahlerCore.lean",
+      "exit_code": 0,
+      "status": "original passed",
+      "compiler_axiom_output": {
+        "MahlerPhysical.telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.finite_mahler": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.affine_expand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.eliminate_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "all_declarations_from_compiler_olean_axiom_table": {
+        "MahlerPhysical.telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.finite_mahler": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.affine_expand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.eliminate_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "pr": 182,
+      "head": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "path": "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
+      "git_blob": "48c71836b596ed9d6119119a63a0661e9dacba8b",
+      "sha256": "313e434abb73b2027311145c40e6aed3262a82ec1a2ba688b48d411e64e305d2",
+      "command": "lean -DwarningAsError=true -o RepetitionWindow.olean RepetitionWindow.lean",
+      "exit_code": 0,
+      "status": "original passed",
+      "all_axioms_from_imported_original": {
+        "Collatz.FixedSourceRepetition.wordDen_succ": [
+          "propext"
+        ],
+        "Collatz.FixedSourceRepetition.aligned": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.difference_dvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.small_shared_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.prefix_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.two_start_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.early_repeat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_deterministic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.equal_start_future": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.four_window_reject": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "pr": 182,
+      "head": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "path": "research/phase-packing-round12-20261124/PhasePacking.lean",
+      "git_blob": "04f6abb7847339a69d465a30ff878c71db950955",
+      "sha256": "b10dbf602c9afcc8491cba3b6b0c326103f1f4e6599a73204c7454574bdecbe5",
+      "command": "lean -DwarningAsError=true -o PhasePacking.olean PhasePacking.lean",
+      "exit_code": 1,
+      "status": "original failed; repaired module passed",
+      "errors": [
+        "PhasePacking.lean:47:9: error(lean.unknownIdentifier): Unknown identifier `mul_le_mul_right₀`",
+        "PhasePacking.lean:48:2: error: No goals to be solved",
+        "PhasePacking.lean:58:11: error(lean.unknownIdentifier): Unknown identifier `mul_le_mul_right₀`",
+        "PhasePacking.lean:59:4: error: No goals to be solved"
+      ],
+      "original_placeholder_reports": [
+        "Collatz.PhasePacking.normalized_edge",
+        "Collatz.PhasePacking.cubic_height"
+      ],
+      "repaired_source": "PhasePacking.lean"
+    },
+    {
+      "pr": 191,
+      "head": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "path": "research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean",
+      "git_blob": "3f030acc403d0a70f592563395127ae85f5765b8",
+      "sha256": "ec4af1d8258372c4be091f649c572517214344e952d22fcfea6e43075c28a273",
+      "command": "lean -DwarningAsError=true -o TwoSidedPacking.olean TwoSidedPacking.lean",
+      "exit_code": 130,
+      "status": "legacy process was cancelled after its portable version with identical theorem statements and proof bodies passed",
+      "second_legacy_command": "lean -j1 -DwarningAsError=true TwoSidedPacking.lean",
+      "second_legacy_exit_code": 130,
+      "portable_source": "TwoSidedPacking.lean"
+    }
+  ]
+}
