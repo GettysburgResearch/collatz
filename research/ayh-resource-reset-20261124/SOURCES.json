@@ -1,0 +1,231 @@
+{
+  "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "retrieved": "2026-11-24",
+  "scope": "Source navigation and frozen dependencies, not acceptance of all listed claims",
+  "lean_version": "4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "focused_sources": [
+    {
+      "pr": 6,
+      "head": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "paths": [
+        "research/termination-frontier/README.md",
+        "research/termination-frontier/CLAIM_INVENTORY.md"
+      ],
+      "scope": "Full source read; legacy proofs remain unadmitted"
+    },
+    {
+      "pr": 106,
+      "head": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3",
+      "paths": [
+        "research/astra-linear-frontier/prefix-rank/PROOF.md"
+      ],
+      "scope": "Selected definition and actual-prefix descent interface"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "README.md"
+      ],
+      "scope": "Current head and overview; no proof dependency"
+    },
+    {
+      "pr": 153,
+      "head": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "scope": "Run-guarded termination summary; not a new replay of the run census"
+    },
+    {
+      "pr": 173,
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "paths": [
+        "research/lean-shell-cover/ShellCover.lean",
+        "research/lean-shell-cover/ForwardSection.lean"
+      ],
+      "scope": "Byte-identical vendor source; compiled as transitive proof dependencies"
+    },
+    {
+      "pr": 182,
+      "head": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "paths": [
+        "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+        "research/phase-packing-round12-20261124/README.md"
+      ],
+      "scope": "OffsetDescent is a compiled byte-identical dependency; round12 written source inspected, not imported"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "paths": [
+        "research/literature-closing-20261121/mergers/CONSTRUCTIVE_NORMAL_FORM.md"
+      ],
+      "scope": "Full normal-form proof and explicit closing gap read; no full branch audit"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "paths": [
+        "literature/deep-machinery-20261122/04_returns_operators_and_termination.md"
+      ],
+      "scope": "Termination and operator machinery guide read"
+    }
+  ],
+  "latest_pr_overview": [
+    {
+      "pr": 191,
+      "title": "Collatz: two-sided full-denominator packing, noncoprime norm, and smaller scalar shadow",
+      "head": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/191",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 190,
+      "title": "Collatz: p-adic Mahler rigidity for binary uniform and primitive substitution scripts",
+      "head": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/190",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 189,
+      "title": "Stationary critical collision rigidity and rational-scalar carry compression",
+      "head": "a0be70b1ffa075cbc50755ac76036108c028d120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/189",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 188,
+      "title": "Research: unbounded scalar-carry amortization and full cycle norm obstruction",
+      "head": "beed685ab713923191ae40c9559bf7400298d2d3",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/188",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 187,
+      "title": "Collatz: exclude all finite digit-weight carry scripts via fixed-source factor arithmetic",
+      "head": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/187",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 182,
+      "title": "Collatz: phase-conditioned entropy and finite rational classification (Lean pending)",
+      "head": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 180,
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity",
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 178,
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 177,
+      "title": "Collatz: all-template bounds, witness charge, and density-free germs",
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 176,
+      "title": "Collatz checkpoint 18: finite ordinary repairs and all-gap collisions",
+      "head": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 175,
+      "title": "Collatz: unconditional cycle budgets and fixed-source arithmetic",
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    },
+    {
+      "pr": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173",
+      "inspection": "PR metadata and claim summary; not a proof audit"
+    }
+  ],
+  "external": [
+    {
+      "url": "https://arxiv.org/abs/2105.14697",
+      "scope": "Primary AYH equivalence and rewriting paper"
+    },
+    {
+      "url": "https://github.com/emreyolcu/rewriting-collatz/blob/main/rules/collatz-T.srs",
+      "blob": "789362dc9f9e0546fbb8f19c90fbf7554fce725a",
+      "scope": "Exact eleven-rule data"
+    },
+    {
+      "url": "https://www.math.uwaterloo.ca/~jpbell/cobham.pdf",
+      "scope": "Theorem1.5 integer regular sequence rigidity; source-qualified semantic rank proof"
+    },
+    {
+      "url": "https://github.com/harappa/collatz-arctic-interpretation-barriers/tree/de961be6671b2084ae0189a3572b674c60788456",
+      "scope": "Primary r5 README and paper_thm_9_2_T/Trev source inspected; external development NOT rebuilt and not imported by our Lean"
+    },
+    {
+      "url": "https://arxiv.org/abs/1405.4988",
+      "scope": "Positive commutator comparison reference; our natural trace lemma proved directly"
+    }
+  ]
+}
