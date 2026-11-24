@@ -1,0 +1,163 @@
+{
+  "schema": "collatz-astra-pointwise-sources/v1",
+  "date": "2026-11-24",
+  "repository": "GettysburgResearch/collatz",
+  "base_head": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+  "scope": "Frozen interfaces consumed or compared in the pointwise continuation; no claim to have rebuilt upstream proofs. New infinite theorems are written mathematics unless their exact types appear in the Lean receipt.",
+  "repository_sources": [
+    {
+      "pr": 193,
+      "head": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "title": "Collatz: Lean one-way criterion, rational companion bounds, and collision energy",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 192,
+      "head": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "title": "Collatz: complete-graph rank attempts and fixed-source renewal",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "pr": 195,
+      "head": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "title": "Collatz: S-unit cycle bounds, growing head neighborhoods and ordinary renewal",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "pr": 182,
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "pr": 197,
+      "head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "title": "Collatz: actual head descent, source projection and finite-floor selection",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "pr": 201,
+      "head": "084b983fbec6f3d2120ef101946754431f82874e",
+      "title": "Collatz: killed Green head closure, exact odd-grade spreading, and branching phase sparsity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 202,
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/202"
+    },
+    {
+      "pr": 200,
+      "head": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "title": "Collatz: infinite harmonic renewal, automata and Fourier rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "CZ2004",
+      "url": "https://arxiv.org/pdf/math/0311030v2",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "statement": "Theorem 1, equivalent negative-log gcd inequality (1.2), proof equation (2.30): fixed coprime polynomials not both vanishing at (0,0), fixed rational S-unit group, finitely many exceptional translated proper subtori and points.",
+      "status": "Primary theorem and exact local-place normalization checked. Original proof not rebuilt or imported into Lean.",
+      "consumer": "arithmetic/DENOMINATORS.md and EXCEPTIONAL_TRANSLATES.md"
+    },
+    {
+      "id": "Lagarias2008",
+      "url": "https://arxiv.org/pdf/math/0512006v4",
+      "title": "Ternary Expansions of Powers of 2",
+      "statement": "Lemma 2.2(1), equation (2.4): |log_3(2)-p/q| >= 1/(1200 q^14.3).",
+      "status": "Primary PDF statement checked.",
+      "consumer": "arithmetic/README.md, cycle minimum; arithmetic denominator logarithms"
+    },
+    {
+      "id": "FirstLanding",
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "title": "First-landing bounds and canonical inverse laws for Collatz",
+      "statement": "Theorem 14 under Lemma 13's selected-block and averaged joint-mixing inputs, and Input C for fixed predecessor natural density.",
+      "status": "Source-qualified written input. The stronger linear landing count and density classification retain these assumptions. The new polynomial count in renewal Section 4 does not use them.",
+      "consumer": "renewal/README.md Sections 1 and 3"
+    },
+    {
+      "id": "JointAtomFloor",
+      "url": "https://rstation.ai/problems/collatz/papers/10/v3",
+      "title": "A valuation-slice atom floor for Syracuse inverse words",
+      "statement": "Theorem 2, central total valuation atom floor, through paper 12's retained fixed-total construction.",
+      "status": "Unmarked-source input to the cited manuscript. No marked two-component atom floor is inferred.",
+      "consumer": "renewal/README.md, source-qualified linear lower bound"
+    },
+    {
+      "id": "ModularRouting",
+      "url": "https://rstation.ai/problems/collatz/papers/37",
+      "title": "Almost linear valuation budgets for pointwise modular routing in Collatz inverse trees",
+      "statement": "Theorem D, fixed-total routing at growing ternary precision.",
+      "status": "Prior comparison only. This packet proves its fixed-precision route directly.",
+      "consumer": "renewal/README.md, attribution"
+    },
+    {
+      "id": "AdaptiveWords",
+      "url": "https://rstation.ai/problems/collatz/papers/15",
+      "title": "Adaptive periodic-dictionary constraints for Collatz",
+      "statement": "Budgeted periodic descriptions and height separation, compared with the fixed-source positive-Nielsen bound.",
+      "status": "Primary statement inspected as a possible full-closing input; no changing-seed upper bound is supplied or imported.",
+      "consumer": "LATEST_CONNECTIONS.md"
+    },
+    {
+      "id": "StationaryKernel",
+      "url": "https://rstation.ai/problems/collatz/papers/127",
+      "title": "Capped inverse kernels and stationary laws",
+      "statement": "Uniqueness of Haar stationary law at cap six; continuous-test Cesaro and empirical convergence.",
+      "status": "Primary abstract and statement inspected as a closing route. No extension to discontinuous ordinary-component indicators is made.",
+      "consumer": "LATEST_CONNECTIONS.md"
+    },
+    {
+      "id": "OrbitImages",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "title": "Sparse images and ordinary orbit bounds",
+      "statement": "Uniform finite-clock image and orbit-sparsity estimates, inspected against changing-source pair lifts.",
+      "status": "Prior comparison only; not needed for the new elementary paired-height and polynomial landing theorems.",
+      "consumer": "LATEST_CONNECTIONS.md"
+    }
+  ],
+  "late_refresh": [
+    {
+      "pr": 200,
+      "head": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "updated_at": "2026-11-24T10:37:07Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 201,
+      "head": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "updated_at": "2026-11-24T10:30:45Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 203,
+      "head": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "updated_at": "2026-11-24T10:29:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/203"
+    }
+  ],
+  "late_refresh_scope": "Late metadata and new-interface inspection only; no upstream rebuild. Earlier consumed source pins remain unchanged."
+}

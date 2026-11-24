@@ -1,0 +1,222 @@
+{
+  "schema": "collatz-astra-pointwise-resolution/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "All public theorems in the three new Std-only modules; bounded exact ordinary controls. External analytic results and written infinite proofs are not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "arithmetic/SeedDenominator.lean",
+      "sha256": "daeb64636bdfd6e276224330336c1910143bde414f33a5912fbdba12976728b0",
+      "audited_copy_sha256": "066f6a45ce57ceb79fc7eb47735c149a79d3861d619464ee75eaddd18be7b7c5",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/pointwise-checks/SeedDenominator.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.327,
+      "public_theorems": [
+        "SeedDenominator.right_block_rules",
+        "SeedDenominator.swap_blocks",
+        "SeedDenominator.suffix_carry",
+        "SeedDenominator.clock_transversality",
+        "SeedDenominator.base_commutators",
+        "SeedDenominator.mechanical_window_budget"
+      ],
+      "axioms": {
+        "SeedDenominator.right_block_rules": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SeedDenominator.swap_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SeedDenominator.suffix_carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SeedDenominator.clock_transversality": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SeedDenominator.base_commutators": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SeedDenominator.mechanical_window_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "transfer/PairedPrefix.lean",
+      "sha256": "d60dfd4f045a9a330e631bb7efb033472c8dde9e747a4f6e271af2228ef8c214",
+      "audited_copy_sha256": "beca0f0f5a035be07b8e74b5861cedafd5df9a3a0c5976a288f3274e4423e7eb",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/pointwise-checks/PairedPrefix.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 8.411,
+      "public_theorems": [
+        "PairedPrefix.proportionalForcesMeeting",
+        "PairedPrefix.jointHalvingBound",
+        "PairedPrefix.separatedClock",
+        "PairedPrefix.boundedMarkedFiber",
+        "PairedPrefix.markedReturn",
+        "PairedPrefix.upperShellPositions"
+      ],
+      "axioms": {
+        "PairedPrefix.proportionalForcesMeeting": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PairedPrefix.jointHalvingBound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PairedPrefix.separatedClock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PairedPrefix.boundedMarkedFiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PairedPrefix.markedReturn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PairedPrefix.upperShellPositions": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "renewal/PairedLanding.lean",
+      "sha256": "1a0b378349b943c27ccf8c6eb0a4e467b120c9c3c88d75fa1cf287c961b5d8e1",
+      "audited_copy_sha256": "f4eac885f9fe7d822a657c942fb2067955b1643c47298613f0e5f82eb8cc1542",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/pointwise-checks/PairedLanding.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 31.085,
+      "public_theorems": [
+        "PairedLanding.add_run",
+        "PairedLanding.residual_cylinder",
+        "PairedLanding.two_gap_router",
+        "PairedLanding.concrete_incomparable",
+        "PairedLanding.ordered_after_fusion",
+        "PairedLanding.weights_and_four_step"
+      ],
+      "axioms": {
+        "PairedLanding.add_run": [
+          "propext"
+        ],
+        "PairedLanding.residual_cylinder": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PairedLanding.two_gap_router": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PairedLanding.concrete_incomparable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PairedLanding.ordered_after_fusion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PairedLanding.weights_and_four_step": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "73008c42f8ac6dc8ddfedbd596a31d06436deba6387d0256d7a715511c367e8c",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-pointwise-resolution-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "276 dictionaries; 4416 affine/valuation checks; 552 exact seed-10 denominators; 4953 physical segments; 40 exceptional specializations\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "73008c42f8ac6dc8ddfedbd596a31d06436deba6387d0256d7a715511c367e8c",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-pointwise-resolution-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "276 dictionaries; 4416 affine/valuation checks; 552 exact seed-10 denominators; 4953 physical segments; 40 exceptional specializations\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "renewal/check.py",
+      "sha256": "9d4162833f95348951541774d0e355e4aa89f5c5ffef9ba862918c0c3975c85b",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-pointwise-resolution-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"complete_routes\": 8748, \"initial_arms_per_route\": 2, \"minimum_inverse_cut_numerators\": [7482, 83609556, 873163981825, 10261932046877717], \"physical_odd_steps\": 37908, \"shortcut_fusion_clock\": 6, \"ternary_units_checked\": 1458}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "renewal/check.py",
+      "sha256": "9d4162833f95348951541774d0e355e4aa89f5c5ffef9ba862918c0c3975c85b",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-pointwise-resolution-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"complete_routes\": 8748, \"initial_arms_per_route\": 2, \"minimum_inverse_cut_numerators\": [7482, 83609556, 873163981825, 10261932046877717], \"physical_odd_steps\": 37908, \"shortcut_fusion_clock\": 6, \"ternary_units_checked\": 1458}\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

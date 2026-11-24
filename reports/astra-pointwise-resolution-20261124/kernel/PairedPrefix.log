@@ -1,0 +1,6 @@
+'PairedPrefix.proportionalForcesMeeting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPrefix.jointHalvingBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPrefix.separatedClock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPrefix.boundedMarkedFiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPrefix.markedReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PairedPrefix.upperShellPositions' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-pointwise-source-hashes/v1",
+  "scope": "Final research packet; compiled and exact-control hashes also recorded in kernel/CHECKS.json.",
+  "sha256": {
+    "research/astra-pointwise-resolution-20261124/LATEST_CONNECTIONS.md": "4864051596cf957d8f657bc6d9b210dd7846c2cb8574561921fd5da4a227124c",
+    "research/astra-pointwise-resolution-20261124/README.md": "b9858f76de69b2a8029be5776bba5168f2b67134ddb49a0479ed13852ed9530a",
+    "research/astra-pointwise-resolution-20261124/SOURCES.json": "0ce723839f858cd3455a709f917271472b1bcb8cb5bb71875e30ade7eb584f34",
+    "research/astra-pointwise-resolution-20261124/arithmetic/DENOMINATORS.md": "600f648263f6786d5858d839092dc2a8e543c1618635cf568129357035140256",
+    "research/astra-pointwise-resolution-20261124/arithmetic/EXCEPTIONAL_TRANSLATES.md": "417bb49eba08f21f02aa9b5ae01e09e9ec809f20d9bee4386bc2c34b8f540634",
+    "research/astra-pointwise-resolution-20261124/arithmetic/README.md": "90b52e0fcf5129919e02d481c356dfffa4f3008c612fefb7c584255538acde30",
+    "research/astra-pointwise-resolution-20261124/arithmetic/REVIEW_TRANSFER.md": "446c6dffdcd7130a3dbd702af8c9d6fc814283b7f2807fdc5729d03e7f69812d",
+    "research/astra-pointwise-resolution-20261124/arithmetic/SeedDenominator.lean": "daeb64636bdfd6e276224330336c1910143bde414f33a5912fbdba12976728b0",
+    "research/astra-pointwise-resolution-20261124/arithmetic/check.py": "73008c42f8ac6dc8ddfedbd596a31d06436deba6387d0256d7a715511c367e8c",
+    "research/astra-pointwise-resolution-20261124/check.py": "6322879c0c1d13250e1bdc60ff9a81e0ffd1ffb40b816148e93b15c12556ccd9",
+    "research/astra-pointwise-resolution-20261124/renewal/PairedLanding.lean": "1a0b378349b943c27ccf8c6eb0a4e467b120c9c3c88d75fa1cf287c961b5d8e1",
+    "research/astra-pointwise-resolution-20261124/renewal/README.md": "ef5c216ba90853f9ccafd615753a2937e5823331900a6283bf8723e2eb4d7261",
+    "research/astra-pointwise-resolution-20261124/renewal/check.py": "9d4162833f95348951541774d0e355e4aa89f5c5ffef9ba862918c0c3975c85b",
+    "research/astra-pointwise-resolution-20261124/transfer/PairedPrefix.lean": "d60dfd4f045a9a330e631bb7efb033472c8dde9e747a4f6e271af2228ef8c214",
+    "research/astra-pointwise-resolution-20261124/transfer/README.md": "7a195ec52dda8208b3d9dbffb4bcf310f8cc4648c83305dc1a87719320e56845",
+    "research/astra-pointwise-resolution-20261124/transfer/REVIEW_RENEWAL.md": "29affa9aedb5f45bdeed4ab1974c5bc2b8e93adba004a7e83b7b67bd74224e99"
+  }
+}
