@@ -1,0 +1,32 @@
+[
+  {
+    "path": "research/astra-fixed-target-closure-20261124/lean/ClockTransport.lean",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-DautoImplicit=false",
+      "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean/ClockTransport.lean"
+    ],
+    "returncode": 0,
+    "seconds": 2.5931357559966273,
+    "output": "'SynchronizedBasinBlocks.walk_add' depends on axioms: [propext]\n'SynchronizedBasinBlocks.common_clock' depends on axioms: [propext]\n'SynchronizedBasinBlocks.attach_target' depends on axioms: [propext]\n'SynchronizedBasinBlocks.fixed_clock_injective' does not depend on any axioms\n'SynchronizedBasinBlocks.inverse_step_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.carry_height_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.scaled_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.router_height_cost' does not depend on any axioms\n"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/lean/MixedTransport.lean",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-DautoImplicit=false",
+      "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean/MixedTransport.lean"
+    ],
+    "returncode": 0,
+    "seconds": 2.0843689009998343,
+    "output": "'MixedTransport.run_add' depends on axioms: [propext]\n'MixedTransport.distinct_depths' depends on axioms: [propext, Quot.sound]\n'MixedTransport.cannot_hit_target_earlier' depends on axioms: [propext, Quot.sound]\n'MixedTransport.common_clock' depends on axioms: [propext]\n'MixedTransport.lift_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedTransport.word_carry_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  }
+]

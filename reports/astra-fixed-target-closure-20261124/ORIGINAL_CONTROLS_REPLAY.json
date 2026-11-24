@@ -1,0 +1,49 @@
+[
+  {
+    "pr": 202,
+    "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+    "command": [
+      "node",
+      "reports/astra-fixed-target-closure-20261124/original-sources/pr202/controls.js"
+    ],
+    "returncode": 0,
+    "comparison_path": "root",
+    "actual": {
+      "scope": "finite exact controls only; no asymptotic proof or Lean replay",
+      "synchronization_checks": 175,
+      "word_checks": 2436,
+      "block_member_checks": 12180,
+      "injectivity_checks": 2436,
+      "height_identity_checks": 2436,
+      "unit_conversion_checks": 666,
+      "phase_bank_steps": 3927,
+      "phase_bank_intervals": 48
+    },
+    "equal": true,
+    "stderr": "",
+    "sha256": "d14b18f28fa06910871aa849409684fab2d1f776fc671b66e6feddd5e779a2d6"
+  },
+  {
+    "pr": 203,
+    "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+    "command": [
+      "node",
+      "reports/astra-fixed-target-closure-20261124/original-sources/pr203/controls.js"
+    ],
+    "returncode": 0,
+    "comparison_path": "counts",
+    "actual": {
+      "inverseWords": 460,
+      "disjointDepthChecks": 460,
+      "profiles": 255,
+      "synchronizedProfiles": 82,
+      "transportedSources": 6133,
+      "mixedCongruences": 24532,
+      "firstHitPhaseChecks": 8151,
+      "memberChecks": 8151
+    },
+    "equal": true,
+    "stderr": "",
+    "sha256": "e85e7e020463935d06731e395a5f0d3e7ca7a513fa668d42ef90bf5726568774"
+  }
+]

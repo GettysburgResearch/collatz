@@ -1,0 +1,162 @@
+[
+  {
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/check.py",
+    "optimized": false,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/arithmetic/controls.json",
+    "equal": true,
+    "actual": {
+      "instances": 1354,
+      "marked_pasts": 5176,
+      "near_critical_rational_controls": 4,
+      "primitive_words_up_to_rotation": 2538,
+      "repeated_word_checks": 10
+    },
+    "stderr": "",
+    "sha256": "96f9bf3e11ad03fe0de6774309452fb76b8bf5193e024a075ebc46116100f6e8"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/check.py",
+    "optimized": true,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/arithmetic/controls.json",
+    "equal": true,
+    "actual": {
+      "instances": 1354,
+      "marked_pasts": 5176,
+      "near_critical_rational_controls": 4,
+      "primitive_words_up_to_rotation": 2538,
+      "repeated_word_checks": 10
+    },
+    "stderr": "",
+    "sha256": "96f9bf3e11ad03fe0de6774309452fb76b8bf5193e024a075ebc46116100f6e8"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/analytic/zoom_check.py",
+    "optimized": false,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/analytic/zoom_controls.json",
+    "equal": true,
+    "actual": {
+      "complete_word_bijections": 468,
+      "empty_tail_boundary_controls": 7,
+      "full_residue_histograms": 1872,
+      "labelled_joint_product_histograms": 18,
+      "scaled_word_matches": 7098
+    },
+    "stderr": "",
+    "sha256": "741610ad86ca335b6074959052b0dba5f95c5486819112ef6fc6cead679c7fe1"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/analytic/zoom_check.py",
+    "optimized": true,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/analytic/zoom_controls.json",
+    "equal": true,
+    "actual": {
+      "complete_word_bijections": 468,
+      "empty_tail_boundary_controls": 7,
+      "full_residue_histograms": 1872,
+      "labelled_joint_product_histograms": 18,
+      "scaled_word_matches": 7098
+    },
+    "stderr": "",
+    "sha256": "741610ad86ca335b6074959052b0dba5f95c5486819112ef6fc6cead679c7fe1"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_escape.py",
+    "optimized": false,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/ordinary/controls.json",
+    "equal": true,
+    "actual": {
+      "balanced_cases": {
+        "cross": 12,
+        "merge": 12
+      },
+      "first_brakes_paid": 20835,
+      "odd_q_through": 99999,
+      "ordinary_singleton_edges": 44437,
+      "ternary_residue_counts_k_0_to_12": [
+        1,
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        61,
+        120,
+        236,
+        464,
+        912,
+        1793
+      ]
+    },
+    "stderr": "",
+    "sha256": "edae659474cacf2740b09c29da1941bcb1bc32c84eef73dfa1e412064add784e"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_escape.py",
+    "optimized": true,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/ordinary/controls.json",
+    "equal": true,
+    "actual": {
+      "balanced_cases": {
+        "cross": 12,
+        "merge": 12
+      },
+      "first_brakes_paid": 20835,
+      "odd_q_through": 99999,
+      "ordinary_singleton_edges": 44437,
+      "ternary_residue_counts_k_0_to_12": [
+        1,
+        1,
+        2,
+        4,
+        8,
+        16,
+        31,
+        61,
+        120,
+        236,
+        464,
+        912,
+        1793
+      ]
+    },
+    "stderr": "",
+    "sha256": "edae659474cacf2740b09c29da1941bcb1bc32c84eef73dfa1e412064add784e"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_strip.py",
+    "optimized": false,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/ordinary/strip_controls.json",
+    "equal": true,
+    "actual": {
+      "block_length": 512,
+      "starting_bins": 245,
+      "strict_check": "C^100 < 3^(49*512)",
+      "word_count_upper": 212645256384396458825682891323571683274873328767864650541987922574538402882020434401076164100822363646544085559650226048
+    },
+    "stderr": "",
+    "sha256": "4f588da0cf8b8a83cdc8e573635c2a967323a05b2d57c99893f1dd1c8e448eb4"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_strip.py",
+    "optimized": true,
+    "returncode": 0,
+    "expected_path": "research/astra-fixed-target-closure-20261124/ordinary/strip_controls.json",
+    "equal": true,
+    "actual": {
+      "block_length": 512,
+      "starting_bins": 245,
+      "strict_check": "C^100 < 3^(49*512)",
+      "word_count_upper": 212645256384396458825682891323571683274873328767864650541987922574538402882020434401076164100822363646544085559650226048
+    },
+    "stderr": "",
+    "sha256": "4f588da0cf8b8a83cdc8e573635c2a967323a05b2d57c99893f1dd1c8e448eb4"
+  }
+]

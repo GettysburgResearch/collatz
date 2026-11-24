@@ -1,0 +1,69 @@
+{
+  "scope": "Finite Lean kernels and exact imported dependencies only; no formalization of the analytic floor, entropy limits, stationary probability, or full Collatz.",
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "packages": [
+    {
+      "name": "plausible",
+      "revision": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "passed": false,
+  "modules": [
+    {
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/SourceDeletion.lean",
+      "kind": "byte-identical dependency",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-fixed-target-lean-kp4kdcr_/SourceDeletion.olean",
+        "/tmp/collatz-fixed-target-lean-kp4kdcr_/SourceDeletion.lean"
+      ],
+      "returncode": 1,
+      "output": "input file '/tmp/collatz-fixed-target-lean-kp4kdcr_/SourceDeletion.lean' must be contained in root directory (/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/)\n",
+      "axiom_audit": []
+    }
+  ],
+  "audited_declaration_count": 0
+}
