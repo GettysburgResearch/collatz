@@ -89,6 +89,47 @@ theorem inverse_transversal {α ι : Type} (f : α → α) (r : Nat)
     have ht' : r+(t-r) = t := by omega
     simpa only [ht'] using h
 
+def oddCore (n : Nat) : Nat :=
+  if h₀ : n = 0 then 0
+  else if n % 2 = 0 then oddCore (n/2) else n
+termination_by n
+decreasing_by omega
+
+theorem core_double (n : Nat) : oddCore (2*n) = oddCore n := by
+  by_cases h : n = 0
+  · simp [h]
+  · have hn : 2*n ≠ 0 := by omega
+    rw [oddCore.eq_def (2*n)]
+    simp [hn]
+
+def oddStep (n : Nat) := oddCore (3*n+1)
+
+theorem core_step (n : Nat) : oddCore (step n) =
+    if n % 2 = 0 then oddCore n else oddStep (oddCore n) := by
+  by_cases h : n % 2 = 0
+  · have hd : 2*(n/2) = n := by omega
+    have hx := core_double (n/2)
+    rw [hd] at hx
+    simpa [h, step] using hx.symm
+  · have hn : n ≠ 0 := by omega
+    have hc : oddCore n = n := by rw [oddCore.eq_def n]; simp [hn,h]
+    have hd : 2*((3*n+1)/2) = 3*n+1 := by omega
+    have hx := core_double ((3*n+1)/2)
+    rw [hd] at hx
+    simpa [h, step, oddStep, hc] using hx.symm
+
+theorem odd_transport (n k : Nat) :
+    oddCore (state n k) = forward oddStep (ones n k) (oddCore n) := by
+  induction k with
+  | zero => rfl
+  | succ k ih =>
+    rw [state, core_step, ones]
+    by_cases h : state n k % 2 = 0
+    · simpa [h] using ih
+    · simpa [h, forward] using congrArg oddStep ih
+
+#print axioms odd_transport
+
 #print axioms affine
 #print axioms translated_interval
 #print axioms residual_distinct

@@ -119,7 +119,7 @@ states. It does not bound the corresponding unweighted collision
 probability from above. The precise missing separation estimate and all
 orders of limits are in [escape.md](escape.md).
 
-[EscapeCore.lean](EscapeCore.lean) formalizes the affine interval bound
+[EscapeCore.lean](EscapeCore.lean) formalizes the affine interval bound, the concrete odd-core transport,
 and the deterministic finite-clock and inverse-fiber injectivity steps.
 The binomial-tail, strong-induction counting, and infinite weighted-sum
 arguments are written proofs, not claimed as fully Lean formalized.
@@ -182,7 +182,45 @@ separation, and unrestricted cycle statements have not been proved.
 The checkpoint records the positive results and the exact failure of the
 attempt to close those last steps.
 
-## 5. Inputs and scope
+## 5. Second checkpoint: test the actual closing steps
+
+The proof search continued after the first checkpoint, with the following
+explicit outcomes. These are written results with an independently checked
+proof; the numerical constant in the first has an exact rational certificate.
+
+**The first endpoint does not give a uniformly inexpensive completion.**
+For each fixed h>=1, more than 17/500 of the odd ternary units u, in relative
+lower natural density, have no smaller partner at T(3^h u) within the
+stated logarithmic excess budget. For a competing path with k odd steps,
+the budget is (9/2)^(k-h-1) <= n/(2·3^(2h)). All competing words and clocks
+are included; later source endpoints and larger budgets remain available.
+The proof controls the rounding error in counting ordinary integers,
+not merely the measure of residue classes in a completion.
+[Exact statement and proof](SHADOW_COVERAGE_LIMIT.md).
+
+**Positive rational cycles can have maximal factor complexity.**
+For every fixed finite list of primes and every fixed positive minimum
+floor, there are arbitrarily long positive rational cycles integral at
+all those primes, with all cyclic blocks of length C log A distinct and
+with true reduced denominator at least c·2^(A/2). Thus the low-complexity
+scale required by the denominator screen does not follow from those
+inputs. A proof using full ordinary integrality remains possible.
+[Construction and proof](HIGH_COMPLEXITY_CONTROLS.md).
+
+The concrete transport identity used in the synchronization proof is now
+also formalized in Lean:
+
+```
+oddCore (T^k(n)) = U^(number of odd steps in the prefix)(oddCore n).
+```
+
+Together with the original finite cores, this gives 26 audited public
+Lean declarations across the three modules. The complete analytic
+synchronization proof and the two new limit results remain written
+mathematics. The checker keeps the original checkpoint receipts and
+separately records the changed module.
+
+## 6. Inputs and scope
 
 Only the comparison with PR185's collision lower bound imports its
 source-qualified harmonic-flow construction. The partner construction,

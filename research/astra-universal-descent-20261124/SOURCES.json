@@ -106,7 +106,7 @@
     },
     {
       "pr": 174,
-      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "title": "research: dependency-free Lean attack \u2014 Collatz from one \u03c8-closure lemma (open)",
       "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
       "scope": "PR metadata inspected; selected source content only, not a whole-PR verification"
     },
@@ -116,5 +116,11 @@
       "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
       "scope": "PR metadata inspected; selected source content only, not a whole-PR verification"
     }
-  ]
+  ],
+  "late_metadata_refresh": {
+    "pr": 192,
+    "head": "e3c33885e5d1530c4ad4595e324f9dbeb2761482",
+    "title": "research: actual scalar phase separation, convergent words, and cycle factors",
+    "scope": "PR description only; no theorem imported or independently verified"
+  }
 }

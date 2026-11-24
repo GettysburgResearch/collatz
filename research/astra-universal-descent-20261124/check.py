@@ -47,6 +47,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lean", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--modules", nargs="+", choices=["CycleCore.lean", "EscapeCore.lean", "ShadowCore.lean"], default=["CycleCore.lean", "EscapeCore.lean", "ShadowCore.lean"])
+    parser.add_argument("--controls", nargs="+", choices=["cycle_check.py", "shadow_check.py", "escape_check.py", "coverage_bound.py"], default=["cycle_check.py", "shadow_check.py", "escape_check.py", "coverage_bound.py"])
     args = parser.parse_args()
     out = args.out.resolve()
     if out.is_relative_to(HERE):
@@ -54,11 +56,11 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     lean = args.lean.resolve()
     version = subprocess.run([str(lean),"--version"],capture_output=True,text=True,check=True).stdout.strip()
-    sources = sorted(HERE.glob("*Core.lean"))
+    sources = [HERE/name for name in args.modules]
     with ThreadPoolExecutor(max_workers=3) as pool:
         formal = list(pool.map(lambda p:compile_one(p,lean,out),sources))
     finite = []
-    for name in ("cycle_check.py","shadow_check.py","escape_check.py"):
+    for name in args.controls:
         outputs = []
         for mode in ([],["-O"]):
             cmd = [sys.executable,"-B",*mode,str(HERE/name)]

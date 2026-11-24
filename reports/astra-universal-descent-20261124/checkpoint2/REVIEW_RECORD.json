@@ -1,0 +1,19 @@
+{
+  "scope": "Independent written-proof reconstruction, not full Lean formalization or external peer review",
+  "files": [
+    {
+      "path": "research/astra-universal-descent-20261124/SHADOW_COVERAGE_LIMIT.md",
+      "sha256": "6703ab2d01a3a0188e6caf19b79adeb8c0597648fc5c191ac1505d2121ba10d3",
+      "reviewer": "escape_rigidity and root",
+      "scope": "S5 exact reconstruction, strict-contraction budget, relative density, vanishing ordinary rounding error, infinite tail bound",
+      "result": "No gap found in stated scope; no universal ordinary closure asserted"
+    },
+    {
+      "path": "research/astra-universal-descent-20261124/HIGH_COMPLEXITY_CONTROLS.md",
+      "sha256": "9be19876c930bc305de61dc8b12e25847659c4bacd178f6258cdf75ef3d8be19",
+      "reviewer": "universal_shadow and root",
+      "scope": "clock/minimum choice, overlapping factors, conditioning, adjacent swap, reduced denominator product and preserved factor uniqueness",
+      "result": "No gap found in stated scope; no universal ordinary closure asserted"
+    }
+  ]
+}

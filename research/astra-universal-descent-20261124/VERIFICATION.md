@@ -1,5 +1,33 @@
 # Verification and proof boundaries
 
+## Latest formal scope: checkpoint 2
+
+There are now **26 public theorem declarations** across the current three
+modules. The changed EscapeCore.lean has eight audited public theorems;
+CycleCore.lean and ShadowCore.lean retain their exact checkpoint-1 bytes and
+their eight and ten audited declarations.
+
+The [checkpoint-2 receipt](../../reports/astra-universal-descent-20261124/checkpoint2/CHECKS.json)
+records a fresh Lean 4.34.1 compilation of the changed module with warnings
+as errors. Its SHA-256 is `2d2b01135ab765c58001edd00c3ebea6598ebb13dd0e36fe97297acee2f4244d`. The new concrete
+odd-core transport identity has no extra mathematical hypothesis; the
+previous residual-clock lemma can now use that actual Collatz identity.
+All eight current axiom lists are subsets of the same three standard axioms.
+
+The new coverage_bound.py ran in normal and optimized Python with identical
+outputs. It checks a finite rational sum through total clock 400 and the
+exact geometric bound on the proved infinite tail. It is not a scan of
+Collatz sources. The all-source natural-density conclusion remains a
+written argument using this constant, not a Lean theorem.
+
+SHADOW_COVERAGE_LIMIT.md and HIGH_COMPLEXITY_CONTROLS.md were independently
+reconstructed by the escape and shadow agents, respectively. The root
+checked the residue-density normalization and ordinary rounding error,
+and the overlapping-factor argument, adjacent-swap gcd and denominator
+product. Their precise review hashes are recorded in the checkpoint-2
+[review record](../../reports/astra-universal-descent-20261124/checkpoint2/REVIEW_RECORD.json).
+Neither note closes the unrestricted Collatz problem.
+
 ## Checkpoint 1: executed formal checks
 
 The exact execution receipt is
