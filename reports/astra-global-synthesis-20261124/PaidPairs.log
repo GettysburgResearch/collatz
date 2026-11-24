@@ -1,0 +1,10 @@
+'Collatz.PaidPairs.paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PaidPairs.integral' depends on axioms: [propext, Quot.sound]
+'Collatz.PaidPairs.shadow_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.PaidPairs.smaller_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PaidPairs.integral' depends on axioms: [propext, Quot.sound]
+'Collatz.PaidPairs.shadow_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.PaidPairs.smaller_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PaidPairs.bad_preimage' does not depend on any axioms
+'Collatz.PaidPairs.smaller_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PaidPairs.paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]

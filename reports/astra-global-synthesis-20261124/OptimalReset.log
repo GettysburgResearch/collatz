@@ -1,0 +1,6 @@
+'Collatz.OptimalReset.paid_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.OptimalReset.one_edge_next' depends on axioms: [propext, Quot.sound]
+'Collatz.OptimalReset.inverse_one_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OptimalReset.paid_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.OptimalReset.one_edge_next' depends on axioms: [propext, Quot.sound]
+'Collatz.OptimalReset.inverse_one_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
