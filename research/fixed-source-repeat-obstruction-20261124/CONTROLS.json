@@ -1,0 +1,10 @@
+{
+  "scope": "Exact finite JS BigInt controls executed in this session; not Lean compilation or universal proof.",
+  "counts": {
+    "repeated_factor_letters": 358500,
+    "explicit_mismatch_pairs": 220,
+    "rational_finite_lifts": 3048,
+    "complete_factor_cones": 1016,
+    "fixed_signed_rational_budget_checks": 11250
+  }
+}
