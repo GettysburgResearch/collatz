@@ -1,0 +1,184 @@
+{
+  "schema": "collatz-global-step-lean-replay/v1",
+  "started_utc": "2026-11-24T06:41:02.935885+00:00",
+  "lean_version_output": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "module_order": [
+    "AuxiliaryResidues",
+    "CycleRotation",
+    "Renewal",
+    "RotationalDistance",
+    "ActualCycleSeparation",
+    "ClusterShadow"
+  ],
+  "builds": [
+    {
+      "source": "research/astra-global-step-20261124/AuxiliaryResidues.lean",
+      "source_sha256": "8602431e4e20123405a89c2747efbc59ac438e863bb4cf70dde83f0e9f993f1a",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "AuxiliaryResidues.olean",
+        "AuxiliaryResidues.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.AuxiliaryResidues.path_identity' depends on axioms: [propext]\n'Collatz.AuxiliaryResidues.code_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AuxiliaryResidues.residue_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AuxiliaryResidues.collision_codes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AuxiliaryResidues.code_bound' depends on axioms: [propext, Quot.sound]\n'Collatz.AuxiliaryResidues.swap_translation' depends on axioms: [propext]\n'Collatz.AuxiliaryResidues.return_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AuxiliaryResidues.return_center_equal' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.AuxiliaryResidues.path_identity",
+        "Collatz.AuxiliaryResidues.code_injective",
+        "Collatz.AuxiliaryResidues.residue_decoder",
+        "Collatz.AuxiliaryResidues.collision_codes",
+        "Collatz.AuxiliaryResidues.code_bound",
+        "Collatz.AuxiliaryResidues.swap_translation",
+        "Collatz.AuxiliaryResidues.return_congruence",
+        "Collatz.AuxiliaryResidues.return_center_equal"
+      ],
+      "axiom_reports": 8,
+      "expected_axiom_reports": 8,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    },
+    {
+      "source": "research/astra-global-step-20261124/CycleRotation.lean",
+      "source_sha256": "a00485161306767e5066e29e9bf21c26c48dff0ce26bc722d521c28b67073f0f",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "CycleRotation.olean",
+        "CycleRotation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.CycleRotation.permutation_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleRotation.equal_weight_hamming' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleRotation.permutation_hamming' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CycleRotation.primitive_rotation_ne' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.CycleRotation.permutation_seed",
+        "Collatz.CycleRotation.equal_weight_hamming",
+        "Collatz.CycleRotation.permutation_hamming",
+        "Collatz.CycleRotation.primitive_rotation_ne"
+      ],
+      "axiom_reports": 4,
+      "expected_axiom_reports": 4,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    },
+    {
+      "source": "research/astra-global-step-20261124/Renewal.lean",
+      "source_sha256": "81f477421fbac9289dbf1f9396f300c29da433aa6b0d58e7f1847e39fe0f3e7f",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "Renewal.olean",
+        "Renewal.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.PaidRenewal.cylinder' depends on axioms: [propext, Quot.sound]\n'Collatz.PaidRenewal.certified' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PaidRenewal.transition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PaidRenewal.persistent_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.PaidRenewal.cylinder",
+        "Collatz.PaidRenewal.certified",
+        "Collatz.PaidRenewal.transition",
+        "Collatz.PaidRenewal.persistent_descent"
+      ],
+      "axiom_reports": 4,
+      "expected_axiom_reports": 4,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    },
+    {
+      "source": "research/astra-global-step-20261124/RotationalDistance.lean",
+      "source_sha256": "9315be71b4b71661f756d5c4211faf43234ade843324848f024099bd150a310f",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "RotationalDistance.olean",
+        "RotationalDistance.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.RotationalDistance.same_word_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.common_run_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.dominance_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.dominance_walk' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.clock_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.euclidean_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.drift_from_suffixes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.walk_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalDistance.closed_height_from_suffixes' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.RotationalDistance.same_word_difference",
+        "Collatz.RotationalDistance.common_run_dvd",
+        "Collatz.RotationalDistance.dominance_step",
+        "Collatz.RotationalDistance.dominance_walk",
+        "Collatz.RotationalDistance.clock_budget",
+        "Collatz.RotationalDistance.euclidean_return",
+        "Collatz.RotationalDistance.drift_from_suffixes",
+        "Collatz.RotationalDistance.walk_affine",
+        "Collatz.RotationalDistance.closed_height_from_suffixes"
+      ],
+      "axiom_reports": 9,
+      "expected_axiom_reports": 9,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    },
+    {
+      "source": "research/astra-global-step-20261124/ActualCycleSeparation.lean",
+      "source_sha256": "90eaee30382fa1f91e3e9d9c14fed19fba509fcd9ddcc04e6ca2ea0049dd0e70",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ActualCycleSeparation.olean",
+        "ActualCycleSeparation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.ActualCycleSeparation.actual_step' depends on axioms: [propext, Quot.sound]\n'Collatz.ActualCycleSeparation.actual_walk' depends on axioms: [propext, Quot.sound]\n'Collatz.ActualCycleSeparation.actual_common_run' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ActualCycleSeparation.distinct_common_run_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ActualCycleSeparation.primitive_cycle_common_run_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.ActualCycleSeparation.actual_step",
+        "Collatz.ActualCycleSeparation.actual_walk",
+        "Collatz.ActualCycleSeparation.actual_common_run",
+        "Collatz.ActualCycleSeparation.distinct_common_run_bound",
+        "Collatz.ActualCycleSeparation.primitive_cycle_common_run_bound"
+      ],
+      "axiom_reports": 5,
+      "expected_axiom_reports": 5,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    },
+    {
+      "source": "research/astra-global-step-20261124/ClusterShadow.lean",
+      "source_sha256": "8728518402782893b6f16098b4ebab34e87cba692c5ae69afa56bbd9e62d4269",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ClusterShadow.olean",
+        "ClusterShadow.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.ClusterShadow.four_divisor' depends on axioms: [propext, Quot.sound]\n'Collatz.ClusterShadow.affine_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ClusterShadow.singleton_doublet_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audited_declarations": [
+        "Collatz.ClusterShadow.four_divisor",
+        "Collatz.ClusterShadow.affine_return",
+        "Collatz.ClusterShadow.singleton_doublet_descent"
+      ],
+      "axiom_reports": 3,
+      "expected_axiom_reports": 3,
+      "complete_axiom_reports": true,
+      "unexpected_axioms": [],
+      "compiler_diagnostics": false
+    }
+  ],
+  "success": true,
+  "sources_unchanged_during_replay": true,
+  "finished_utc": "2026-11-24T06:41:34.257762+00:00"
+}
