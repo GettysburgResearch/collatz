@@ -27,7 +27,7 @@ SOURCES = [
     *[PACKET + name + ".lean" for name in (
         "AffinePairReturn", "PairedLanguage", "MarkedHalfReturn", "AuditBandReturn",
         "CycleBudget", "IntegerClock", "DyadicSubtotal", "CycleNormComplete",
-        "HighFloorNorm", "DefectCover")],
+        "HighFloorNorm", "DefectCover", "GuardedPredecessor")],
     "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
     "research/phase-packing-round12-20261124/PhasePacking.lean",
 ]

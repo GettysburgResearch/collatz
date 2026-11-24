@@ -174,9 +174,77 @@ specific short-horizon completion strategy. They do not imply divergence
 or rule out longer paths or other smaller partners. This is written
 mathematics with exact finite controls; it is not Lean formalized.
 
+## 6. Follow-up after the first push: PR192–194
+
+The first packet was published as
+`cf1f04db7f9f84d3a31bfccf2546431b711312d0`. A freshness review then
+reconstructed the new phase, synchronization, smaller-partner and cycle
+arguments in PR192–194 at the exact heads listed in the three notes below.
+This also identifies the overlapping prime-power classification in those
+branches; no independent priority claim is made for our parallel derivation.
+
+**A decidable, critically summable test set.** Combining the actual marked
+descent with PR193's written translated-interval synchronization gives an
+explicit decidable set `S` of marked ordinary integers such that
+
+    Collatz holds  iff  every member of S reaches 1,
+    sum_(n in S) n^(-theta) < infinity,
+    theta=H_2(log(2)/log(3))=0.9499555... .
+
+In each full marked interval, synchronize all integers, including the even
+ones, after `(d+2)^3` common odd clocks. A fiber containing an even integer
+or an odd integer accepted by a bounded half-return script has a marked
+partner below the entire octave. Discard that fiber. From every remaining
+fiber keep its minimum. Strong induction gives the equivalence, and the
+translated count supplies `O(2^(theta*d)/d^(theta+1/2))` retained sources
+per octave. The series converges even at exponent `theta`. This complete
+new reduction is a **written proof**, depending on the written analytic
+count in PR193. A finite critical-power sum does not prove convergence on
+the retained minima. See [the construction and proof](LATEST_BAND.md).
+
+**A stronger guarded predecessor.** The same note identifies the literal
+five-step identity
+
+    T^5(64t+47)=162t+121,  with 0<64t+47<162t+121.
+
+Thus every guarded visit `r=162t+121` on a least nonconverger `n_0` obeys
+`32r>=81n_0+65`. The general predecessor identity, its strict saving and
+this specialization are checked in `lean/GuardedPredecessor.lean`.
+The stronger bound does not force a guarded visit below its threshold.
+The note constructs sources having both this alternative partner and the
+earlier independent-clock half-partner obstruction, keeping the two kinds
+of certificate separate.
+
+**Complete top-factor absorption arbitrarily high.** For every fixed
+clock gcd `g` with at least two distinct prime divisors, there are primitive
+positive rational cycles using only gaps one and two, of arbitrarily high
+minimum and arbitrarily small positive clock excess, for which the
+**entire** top cyclotomic polynomial and its numerical value cancel. The
+complete reduced denominator still grows at least as `c_g*2^n/n`. The
+proof combines a two-grid seed with common-prefix lifts and the defect
+bound; it needs no external two-log estimate for this chosen family.
+This is a written theorem about nonintegral rational cycles. The exact
+`g=6` fixture has 17,160 odd steps, minimum floor 90,269, a completely
+absorbed 9,066-bit top value and an 18,127-bit surviving denominator.
+See [the proof, attribution and exact fixture](LATEST_CYCLE.md).
+
+**Cyclic entropy without clipping.** The half-bit cycle budget makes
+PR194's conditional carry-entropy estimate uniform on cyclic windows,
+with an absolute additive constant. A cycle with `k` odd vertices and
+canonical period `L` consequently requires maximum height at least an
+absolute constant times `(k/L)^(1/d)-1`, where `d=0.2858595...`. The
+corresponding modular-collision lower bound retains the actual cyclic
+law. There is still no opposing height or collision bound. The same
+[phase and substitution review](LATEST_PHASE.md) credits PR194's extension
+to nonidentity, nonerasing binary fixed substitutions and distinguishes
+PR192's changing convergent finite-word witnesses from a single infinite
+ordinary realization. These deductions and the cited infinite results
+retain written-proof status.
+
 ## Verification and the remaining mathematical step
 
-The execution report accompanying this packet records exact source hashes,
+The [execution report](../../reports/2026-11-24-astra-round13/EXECUTION.md)
+accompanying this packet records exact source hashes,
 compiler versions, declaration-level axiom output, normal/optimized
 finite replays and complete-checkout validation. A successful finite
 kernel does not upgrade the surrounding unformalized counting, density

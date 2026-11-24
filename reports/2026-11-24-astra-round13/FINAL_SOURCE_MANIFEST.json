@@ -1,0 +1,191 @@
+{
+  "schema": "collatz-round13-source-manifest/v1",
+  "first_checkpoint": "cf1f04db7f9f84d3a31bfccf2546431b711312d0",
+  "files": [
+    {
+      "path": "research/astra-round13-20261124/BAND_RETURN.md",
+      "bytes": 8728,
+      "sha256": "989a79edb4d0c4c61808bb87751fdcdb5e778dd5841c96a849f6402245cdc891"
+    },
+    {
+      "path": "research/astra-round13-20261124/CYCLE_BUDGET.md",
+      "bytes": 13014,
+      "sha256": "7f87bc5bbb7ab586263ff20551b7328140639fdd3d628ca52d4074a04bd01bf5"
+    },
+    {
+      "path": "research/astra-round13-20261124/DEFECT_COVER.md",
+      "bytes": 6255,
+      "sha256": "f916ae15983d01e35cf927c2fd13c7401b4f34d2829fac4624d8ecfad180cd4e"
+    },
+    {
+      "path": "research/astra-round13-20261124/DYADIC_CERTIFICATE.md",
+      "bytes": 1745,
+      "sha256": "119071822b6a4f87a63bd21b55497f82448fcb3c3c414b4767595e3f32e6d981"
+    },
+    {
+      "path": "research/astra-round13-20261124/HIGH_FLOOR_NORM.md",
+      "bytes": 6895,
+      "sha256": "42a877d151dcc6e4b8c32f8f104ab457b03df1b71ed0d8dfee8ce4a26ae89770"
+    },
+    {
+      "path": "research/astra-round13-20261124/LATEST_BAND.md",
+      "bytes": 9071,
+      "sha256": "b77f9b8ff871fb24fc18d1292ce9d59c1ce274cd308ff0b479f80b8e5032db30"
+    },
+    {
+      "path": "research/astra-round13-20261124/LATEST_CYCLE.md",
+      "bytes": 11124,
+      "sha256": "84afa56fc80558f4165c68d8ee8be5ddfcedd1f64ede6df8b12a526840151c6e"
+    },
+    {
+      "path": "research/astra-round13-20261124/LATEST_PHASE.md",
+      "bytes": 11709,
+      "sha256": "15451b011eb7b022d7ef1b5532c2577ef8d9966615053fc2e5e4f4a7784cf7a0"
+    },
+    {
+      "path": "research/astra-round13-20261124/LINEAR_HORIZON.md",
+      "bytes": 3068,
+      "sha256": "1d9e1c7d4ef84b305cfbd85e21b0f30cae288f57faed393b7ff2d45b7669b851"
+    },
+    {
+      "path": "research/astra-round13-20261124/PRIME_POWER_NORM.md",
+      "bytes": 10836,
+      "sha256": "a4688e0060e2685fdcf62b28d0eec239d5a0aa8575a9db0557342a377f482d54"
+    },
+    {
+      "path": "research/astra-round13-20261124/README.md",
+      "bytes": 13503,
+      "sha256": "a87075903bfd03940e668727c5e5e7b421c3c2b3b765908ad43ead2e4f5b928a"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/affine_ray_controls.py",
+      "bytes": 1909,
+      "sha256": "044d3a36f2ad8bea0c8be14dcc7245a1d68ab113fcb702bb84a6313dd55beb25"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/band_controls.py",
+      "bytes": 3438,
+      "sha256": "ecc89dffe3e5fe7aee7c7e4157f7cdef05949d4d4f0d02d568541eb541dc75bb"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/cover_control.py",
+      "bytes": 2198,
+      "sha256": "1b312b7b818fb538caa796f24791a42e4d9a6731d1c4c45c91762633b90c6647"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/cycle_budget.py",
+      "bytes": 2191,
+      "sha256": "e730dbb9a6868ad176b75f6f122394ac2e9613da84db6cc57290081fb7b3dd71"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/high_floor_control.py",
+      "bytes": 3366,
+      "sha256": "48c06823f5dd0daaf9e3c5836581f0f309b26f7577e66277ba3e544333c955b9"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/horizon_controls.py",
+      "bytes": 1593,
+      "sha256": "6d2834745e7a32b9ae546463789e8cc412b38704aafe14a593c717eca158557c"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/mixed_top_control.py",
+      "bytes": 2067,
+      "sha256": "81ef291acc641f79c76ee1a6c63624c19ed1dc0b5bc4b05aa7d9503dd4462a6e"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/prime_power_controls.py",
+      "bytes": 2905,
+      "sha256": "119b69d2afd0c39f2ada0df4b0ca998d6d29a63351a28b5213b59e170946eb1d"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/replay_controls.py",
+      "bytes": 3637,
+      "sha256": "44a1da2d096cc3d34584d6bf213fc32834c896d43d9a47ca955d0e8c9fa60a3b"
+    },
+    {
+      "path": "research/astra-round13-20261124/checks/replay_lean.py",
+      "bytes": 5707,
+      "sha256": "1c9cafd5252d39688cc32ca63eeb6fb1e82bb9fdbb1e05f918bf94d180d3ccce"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/AffinePairReturn.lean",
+      "bytes": 6192,
+      "sha256": "562573f4b9b11ff13815240d8cd790197efaa89fab7b37212cc9ffe3e3b2738f"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/AuditBandReturn.lean",
+      "bytes": 498,
+      "sha256": "fde8a66a4ed8d7edf93f05dafb12d28c43c11b8c5223084128d4d889bf6b5a49"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/CycleBudget.lean",
+      "bytes": 5738,
+      "sha256": "177ec2128103c1607d4d775e85adf1daf8a0fcc1f5b4d3ed77bc478bb42c3b65"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/CycleNormComplete.lean",
+      "bytes": 4795,
+      "sha256": "ddc684225a6c21546b268e2a7b077e5e1407cf5d1de514f36e2f71f73b90b364"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/DefectCover.lean",
+      "bytes": 1761,
+      "sha256": "0ecd88498b1c909595ba902e665224a6e9f77a9fbbea7c4ae3cdda3fbe72c71e"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/DyadicSubtotal.lean",
+      "bytes": 1625,
+      "sha256": "a86bb1ed94ade9741bb5a32ede55d631acd5fac69fb8ec3c80c48177907da785"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/GuardedPredecessor.lean",
+      "bytes": 1629,
+      "sha256": "4230db8a85e98f3d4eaa6230734d1f9a3e3c027001dc5887099fc10069dc48ab"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/HighFloorNorm.lean",
+      "bytes": 4663,
+      "sha256": "2cc22c24c3745faad306c7950923c1d068cd3071e9cf560e2a73ee45374ca53d"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/IntegerClock.lean",
+      "bytes": 1087,
+      "sha256": "ef9b2fa141fdb8f735fd9f47b2aabf3aa87cf04b5b966b153cc030406a9038ec"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/MarkedHalfReturn.lean",
+      "bytes": 3194,
+      "sha256": "a8e97fc74dfbb17f0d72b38a5ffecb8552d2f0d822064e3ab06e29506c53665d"
+    },
+    {
+      "path": "research/astra-round13-20261124/lean/PairedLanguage.lean",
+      "bytes": 2488,
+      "sha256": "b0b448001dbcc48c364cb57c7971976995d3a7e133aa2b40dc51bff4380196c6"
+    },
+    {
+      "path": "research/lean-shell-cover/ShellCover.lean",
+      "bytes": 38148,
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "path": "research/lean-shell-cover/ForwardSection.lean",
+      "bytes": 25164,
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+    },
+    {
+      "path": "research/lean-dyadic-descent-20261121/OffsetDescent.lean",
+      "bytes": 8566,
+      "sha256": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b"
+    },
+    {
+      "path": "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
+      "bytes": 8474,
+      "sha256": "7dffc8eed6e4e70ba99e2789aa576620f56751a1374295f389595dbadc2e0f29"
+    },
+    {
+      "path": "research/phase-packing-round12-20261124/PhasePacking.lean",
+      "bytes": 6030,
+      "sha256": "26cd05d0d9c2ade2b16f85120f87c6b3a394918bc698eccdaacd6d047c7f1d4d"
+    }
+  ]
+}

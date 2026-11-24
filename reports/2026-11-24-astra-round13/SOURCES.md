@@ -24,10 +24,22 @@ The phase-budget note cites Round 3's original whole-orbit count at
 `f94a2ae1caba9a1857feda892ee1779695eea9d2`. Their written consumers do not
 become freshly formalized merely because the newer finite kernels compile.
 
-The final freshness scan also discovered PR192–194, whose phase, cycle
-and smaller-partner work is being reviewed separately. The already checked
-Round 13 packet does not depend on these new branches. A separate freshness
-addendum will identify their exact heads, overlap and reviewed statements.
+The freshness follow-up separately reconstructs these three later sources:
+
+| PR | Frozen head | Reconstructed material |
+|---|---|---|
+| 192 | `be783656f0e889fe0d5318a2f7a9140099cb94b5` | PHASE_SEPARATION, finite convergent words, CYCLE_FACTORS and the distinction between polynomial and numerical cancellation |
+| 193 | `c6cb5e66516a86c33a757154983bbddc822510de` | Translated synchronization, odd-core transport, guarded ordinary partners, coverage limits and complete numerical denominator estimate |
+| 194 | `b1bf1f151a2da8936f80d229f132d0b7539ba42c` | RUN_PARTITION, OCCUPATION, MAHLER_EXTENSION, TOP_COMPONENT and LATEST_SOURCE_SYNTHESIS |
+
+The scientific packet's LATEST_BAND, LATEST_PHASE and LATEST_CYCLE notes
+give claim-level reconstruction, source paths and the new deductions.
+These later branches are inputs to the explicitly named follow-up
+theorems, not to the first published packet. Their authors' Lean builds
+were not independently rerun as part of this source review. Our own
+new guarded-predecessor module has its separately recorded fresh build.
+The prime-power classification overlapping PR192/194 is credited there;
+no new priority claim is made for our parallel reconstruction.
 
 ## External primary sources
 
@@ -48,6 +60,7 @@ Alpöge's announcement, the Lean community statement and Rubinstein's
 primary verification report. It motivates the user's request but is not
 a dependency of any Collatz argument here.
 
-Source hashes for the exact local packet and replay inputs are in
-`SOURCE_MANIFEST.json`. The compiler and finite-control receipts also
+The first published checkpoint is bound by `SOURCE_MANIFEST.json`.
+The updated packet and replay inputs are bound by
+`FINAL_SOURCE_MANIFEST.json`. Compiler and finite-control receipts also
 bind their own input bytes independently.

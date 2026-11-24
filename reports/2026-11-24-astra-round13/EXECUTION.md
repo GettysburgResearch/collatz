@@ -10,7 +10,40 @@ run, an axiom audit, and repository integrity checks have separate scopes.
 The [scientific packet](../../research/astra-round13-20261124/README.md)
 states the mathematical results and remaining obligations.
 
-## Consolidated source replay
+## Current follow-up verification
+
+After publishing `cf1f04db7f9f84d3a31bfccf2546431b711312d0`, the three
+original attack authors reviewed PR192–194 at their separately pinned
+heads. The coordinating agent reconstructed the new fiber reduction,
+unimodular clock construction, complete top-factor cancellation and cyclic
+entropy calculation. [The follow-up review](ROOT_FOLLOWUP_REVIEW.md)
+records the exact source hashes and remaining boundaries.
+
+The updated [FOLLOWUP_LEAN_REPLAY.json](FOLLOWUP_LEAN_REPLAY.json) is a
+second fresh private-directory build of the complete scoped source set,
+now including `GuardedPredecessor.lean`. **All 16 source compilations
+passed; all 82 named axiom audits contain only the standard axioms.**
+There are now 49 new theorem targets. The three added results are the
+general actual predecessor identity, its strict size saving for at least
+two reversed odd steps, and the explicit five-clock LS3 specialization.
+The original 15 source files are byte-identical to the first successful
+build; their proof statements were not changed in this follow-up.
+
+[FOLLOWUP_CONTROLS_REPLAY.json](FOLLOWUP_CONTROLS_REPLAY.json) records
+**20 successful executions**, ten programs in normal and optimized modes,
+with identical paired output. The added standard-library mixed-top
+fixture replays all 17,160 literal odd gaps, checks primitive clock gcd 6,
+complete numerical top-factor divisibility, full return, and the surviving
+18,127-bit reduced denominator. Its minimum floor is 90,269. All earlier
+finite programs were also replayed by the updated runner.
+
+The new critical-summable residual set, the uniform cyclic entropy
+deduction, the arbitrary-floor full-top-absorption family, and the
+least-source consequence of the guarded predecessor remain **written
+proofs**. Their scope is not included in the 49 Lean theorem targets.
+No original Lean sources from PR192–194 were rebuilt by this follow-up.
+
+## First checkpoint: consolidated source replay
 
 [LEAN_REPLAY.json](LEAN_REPLAY.json) records a fresh, sequential replay of
 15 source files from this checkout in one new private build directory.

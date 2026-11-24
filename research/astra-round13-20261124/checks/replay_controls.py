@@ -18,7 +18,7 @@ PACKET = "research/astra-round13-20261124/checks/"
 SOURCES = [
     *[PACKET + name + ".py" for name in (
         "band_controls", "cycle_budget", "prime_power_controls", "affine_ray_controls",
-        "high_floor_control", "cover_control", "horizon_controls")],
+        "high_floor_control", "cover_control", "horizon_controls", "mixed_top_control")],
     "research/fixed-source-repetition-round11-20261124/repetition_controls.py",
     "research/phase-packing-round12-20261124/phase_controls.py",
 ]
