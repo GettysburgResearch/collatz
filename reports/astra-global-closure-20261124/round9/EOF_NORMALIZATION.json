@@ -1,0 +1,40 @@
+{
+  "scope": "One surplus terminal newline removed from each named file before publication. Published Lean source rebuilt independently after normalization. Historical audited source reconstructed exactly by the targeted verifier.",
+  "files": [
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/DEPTH_REVIEW.md",
+      "before": "6f2bebfb983c0324868f1b8b39c7f7f6c38426cfe37a96135cd358591f88977c",
+      "after": "28c2a9daa91374095eb5bdb321fee05d56319d3b11d7cfae4eba5cad0c421cc7",
+      "removed_bytes": 1,
+      "only_trailing_newline_change": true
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/EXECUTION.md",
+      "before": "4cae08bcc61d1a0f1fdac6ecbb753568a5281bd567dd992871d821a77d9934ca",
+      "after": "5dab781ee925ca32a465f0864bf738f6f50a3aeec6c0637113d8c8c011531aee",
+      "removed_bytes": 1,
+      "only_trailing_newline_change": true
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/BarrierEnvelope.lean",
+      "before": "d5f647ba9ea7255b2eabd2340ff9fb15e18a7e4fb2c8794cfaaaac938c516bf9",
+      "after": "76f96f253091883f905ec885b22b8aadd04cbcf1d4f693fd980476b0fd136719",
+      "removed_bytes": 1,
+      "only_trailing_newline_change": true
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/README.md",
+      "before": "ba1f2a97a186eb399d94eff22598107f211a14267985489f2d1e97a48cd1c42f",
+      "after": "c5597d532bbc9b8271e15f5b2b4c0f4d48ed6491c8ceb240d950b366b13fbf75",
+      "removed_bytes": 1,
+      "only_trailing_newline_change": true
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/UPPER.md",
+      "before": "f470972b79cceefcc1cbe50847a12708fb2b98840344478a96091fe1e0d05aae",
+      "after": "bf28d979804b77515234e820ddaed898a80d21963cad057ff083071da5868ad3",
+      "removed_bytes": 1,
+      "only_trailing_newline_change": true
+    }
+  ]
+}

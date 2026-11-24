@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-24",
+  "baseline": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+  "scope": "Round-nine cited source ledger. Additional targeted upstream files and hashes appear in the lane intake tables and arithmetic/upstream/audit_receipt.json. Metadata inventory covers 166 PRs, not 166 proof audits.",
+  "repository_sources": [
+    {
+      "commit": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+      "path": "research/astra-universal-proof-20261124/critical/CYCLE_OCCUPATION.md",
+      "git_blob": "ae868b136ffc9a41dbfd0e3bc08d31538354a5ee",
+      "sha256": "a32c8af6e9c23c3747e2499825876a367c2824709700485766a3e5cf7411ce26",
+      "bytes": 5191,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/24cdd0e5471d4421716cfce6bd88916f858f994c/research/astra-universal-proof-20261124/critical/CYCLE_OCCUPATION.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-closure-attack-20261124/FIXED_SOURCE.md",
+      "git_blob": "992de375d8934805c4906a1168c56e59475032be",
+      "sha256": "815183d2bb9110c2455340070d3b0ca4027a01760c4042a7d6d8841d2687e563",
+      "bytes": 25293,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/26f070c38ad9edd21ed7dac6efaab6554550c2a3/research/astra-closure-attack-20261124/FIXED_SOURCE.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-minimum-source-20261124/README.md",
+      "git_blob": "41ac937c07cd07e72ccd5cdc82d9b46fc2716788",
+      "sha256": "2c572369cefe72820092db02943b7282e941c939df569de2b1b3143f95ab504c",
+      "bytes": 10613,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/26f070c38ad9edd21ed7dac6efaab6554550c2a3/research/astra-minimum-source-20261124/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "bytes": 7337,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/26f070c38ad9edd21ed7dac6efaab6554550c2a3/research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "bytes": 5993,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/26f070c38ad9edd21ed7dac6efaab6554550c2a3/research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "git_blob": "614eb6a2b70aad949fa851b564462dff78eafbcb",
+      "sha256": "1718e91e498b7491e7c6a9e939f92609a46b78bb0bb1e355b6588e6c73384b39",
+      "bytes": 14376,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "git_blob": "d7ce88173738b5e5a256915c5dd05fc28a638857",
+      "sha256": "fcc6c393bfde585ea726a3b441fb44a44cce0d931aaa035f25931d08857a64e7",
+      "bytes": 17635,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/arithmetic/README.md",
+      "git_blob": "75947f046effa7591948f15c02c12ec5068e6034",
+      "sha256": "a977d6e4d5839cbfbafca18dffb9b4f80ecd568768f6b5a7772072ee27967286",
+      "bytes": 11975,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/32d722c5d5597846da5dad842c8ea15742abc176/research/astra-fixed-target-closure-20261124/arithmetic/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+      "git_blob": "90aea2475ec8a791f460efc248a7935cb28e65bc",
+      "sha256": "e816dc32482325e0507073cfe53f749a5f2d5f39adc786cbf11e703b824b9d42",
+      "bytes": 5068,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/32d722c5d5597846da5dad842c8ea15742abc176/research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/README.md",
+      "git_blob": "6f6367a51770ad4830b5fd7c35e503dfadbc28e3",
+      "sha256": "ed2f484f44dcf58ceb8bcd0ba0c4675ff9561ab57372ff958776a27aed547c97",
+      "bytes": 9852,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/32d722c5d5597846da5dad842c8ea15742abc176/research/astra-fixed-target-closure-20261124/ordinary/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+      "path": "research/clock-itineraries/README.md",
+      "git_blob": "47bb23e424f14c074f064b3aaaf69a1fe549936b",
+      "sha256": "14f9493b076a503784d6e87e77c9d5ce468c684c290da2022d0076cd1ab11d15",
+      "bytes": 11483,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/37d2b5d644664a746891042c199e58cfb06f1176/research/clock-itineraries/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+      "path": "research/clock-itineraries/SparseDefects.md",
+      "git_blob": "47b10ea9b5cf87f5d749aeb0d2e1393c58b7d2a3",
+      "sha256": "693e92b56f1e3c28e45d087d5f4d9d91ced72c2071fa82c7291ff484ba5c7bb7",
+      "bytes": 5774,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/37d2b5d644664a746891042c199e58cfb06f1176/research/clock-itineraries/SparseDefects.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+      "path": "research/clock-itineraries/TernaryItinerary.lean",
+      "git_blob": "4640008db31908a0d896a55645ea57f0b55234e2",
+      "sha256": "b79cfc44200087ac0ca9bed9daab9c83a64487bbdb29a4e1e410ba7d6d3f8112",
+      "bytes": 19637,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/37d2b5d644664a746891042c199e58cfb06f1176/research/clock-itineraries/TernaryItinerary.lean",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/ClosureProposal.lean",
+      "git_blob": "ff2e9c0ad1c51072dbd051ab567b2bb1796bae38",
+      "sha256": "eb91552efac88b983f174b491b0dca06fdc786348d0753994381f60054d8ee21",
+      "bytes": 5723,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/ClosureProposal.lean",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/CycleAmplification.md",
+      "git_blob": "3ef12095689b299f4911a506c6300b4237148069",
+      "sha256": "7d6de3d34318b4e83e8c6d723951b53d865332e6c076ee4fbc03f6dbe4914972",
+      "bytes": 2854,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/CycleAmplification.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/DescentClocks.md",
+      "git_blob": "d893385af350b3926102b8d03625285ed5301acd",
+      "sha256": "c8a811d86b2941b609cc8f43e2f38e45d2f0f9bd23956d4e9aab79e307d669cc",
+      "bytes": 6778,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/DescentClocks.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/FixedGate.md",
+      "git_blob": "b07d283db7c428bf311ff977d125e17ead1dc4f6",
+      "sha256": "26b66fc2ac55abbca77dfb417fab6d4ff7f4637f1e06754bab087e58dfb04bca",
+      "bytes": 2404,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/FixedGate.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/OrbitAttack.md",
+      "git_blob": "c525ae4fceacd80cfd63df4a677e86565cce171b",
+      "sha256": "431f78e46ef0d872eb2733fa5d01babb813b6fc29a04c379c95e5869b65ce612",
+      "bytes": 6069,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/OrbitAttack.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/OrbitTrace.md",
+      "git_blob": "f7705319ce40c7d07bfc5c7066e66796c4f5eb9d",
+      "sha256": "44254de77843d41fa4810dc960c463bf9242872d31678a8a1d3b13ad839ecfee",
+      "bytes": 5319,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/OrbitTrace.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2",
+      "path": "research/clock-itineraries/SynchronousShadow.md",
+      "git_blob": "1a7a588955e43e26e50d37b718045063e4a7c390",
+      "sha256": "a6f20e0e9ab5afa2d1cbb34f51b59ac6f3a7ad60f6d4ba5f240d7b9d4085f22d",
+      "bytes": 3453,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/611fb796d01f2c6f3794508fb4a9acf5ebc5a5b2/research/clock-itineraries/SynchronousShadow.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "81ea4c1754d73c98d1451447527e6b2ba56977cc",
+      "path": "research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md",
+      "git_blob": "341039e2f7683b6c52e2425f2786e3ced5a70809",
+      "sha256": "8da2b2f26154b4aacb7fa71e4693d12cdf535dbe6774ed9729896fff281765b0",
+      "bytes": 16416,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/81ea4c1754d73c98d1451447527e6b2ba56977cc/research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/cycle/README.md",
+      "git_blob": "8c1defa8a62b68b8a11fc0a60e72a1ede1a2a523",
+      "sha256": "24629507ac85f3ad5c1f10d526bbb346f695bd03271c38d77f46293fed91b128",
+      "bytes": 9784,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a0d7c6e36c378bbb6c826002039aef486bbe0383/research/astra-universal-closure-20261124/cycle/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/cycle/RationalBasin.lean",
+      "git_blob": "35cc29cc139e3c34915072008f496eda89fae43e",
+      "sha256": "fdc41d4f3892a379ceb0322361cf8567df2b49b19dada21b279f9f31c4231fd6",
+      "bytes": 4408,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a0d7c6e36c378bbb6c826002039aef486bbe0383/research/astra-universal-closure-20261124/cycle/RationalBasin.lean",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md",
+      "git_blob": "20873f1181ac90862381f60c06d70c45e4b25981",
+      "sha256": "c147b6df2710e5fd3747f2895b7f88ad2600622447d839a7f8ca06926059c283",
+      "bytes": 8863,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b56c4dc2c28a184cf55638bb80c49a9d4662fc81/research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/README.md",
+      "git_blob": "39317a73963712c014f42ad09e336c60e7020d8b",
+      "sha256": "6ee24648dea08ec941b989aa602cfd5646938575760c1107c2afcf243651a6da",
+      "bytes": 25405,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b56c4dc2c28a184cf55638bb80c49a9d4662fc81/research/diffusive-central-row-closure-20261124/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "AGENTS.md",
+      "git_blob": "638d19a3adabf5e83dd1113473ffb3632f92553b",
+      "sha256": "eb7ef98a32f21b2fda36bcd6a64a4c0b8f2cbd020454004022cc316f22e3d1ba",
+      "bytes": 4415,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/AGENTS.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "CONTRIBUTING.md",
+      "git_blob": "0d3a2b0856c72d803997e648d1a7b784d8af60df",
+      "sha256": "f51de0b26d2737d3e4d3c0d16c4b1889aa524e79ed67ce82a3a25e7f8d8448c8",
+      "bytes": 4926,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/CONTRIBUTING.md",
+      "scope": "Repository instruction and orientation reviewed at baseline; not mathematical evidence for closure."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "README.md",
+      "git_blob": "f238d85aeacee6bf264526a7a7e1f4aea1aaccf6",
+      "sha256": "45f6b8faf6a22dfec154117d18b9e0387432cebe39c7e8e87147a677acbe0d14",
+      "bytes": 7983,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "docs/RESEARCH_MAP.md",
+      "git_blob": "d9127b7da910783fc937c8d68ba545651f7acf43",
+      "sha256": "10dd929f2aa90c36126ea0844b8bb9f04b5b8ded130dd7c734ac03ded38cb17b",
+      "bytes": 10161,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/docs/RESEARCH_MAP.md",
+      "scope": "Repository instruction and orientation reviewed at baseline; not mathematical evidence for closure."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "docs/REVIEWING.md",
+      "git_blob": "6da08ed46ef0dc8024213539966a5fc1b9fb86e1",
+      "sha256": "f21b052d24fe9fc05fe7b828941df14392d21cbf0ccf50fb2e42c6bbbfd3c317",
+      "bytes": 4109,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/docs/REVIEWING.md",
+      "scope": "Repository instruction and orientation reviewed at baseline; not mathematical evidence for closure."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/README.md",
+      "git_blob": "405da610085b78dbeb8b47432ea0a0a801cbb89c",
+      "sha256": "b01810efd9a8d4c6fbcc17a07546639529dd3c86d356f0a119f7b19636c510f1",
+      "bytes": 4293,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/astra-global-closure-20261124/round8/README.md",
+      "git_blob": "c1ebad70e8028313cccd1a804341cdf3f15215e8",
+      "sha256": "270bbd949dd0c7d6241ad1a44663cc8c4587a1ee957c783c71331139443b4f8f",
+      "bytes": 13620,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/astra-global-closure-20261124/round8/README.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/astra-global-closure-20261124/round8/paired/CROSS_ROUTE.md",
+      "git_blob": "008d53c41e9f6b8a7185cbd217105a38a8b43897",
+      "sha256": "8608326d57917e1e48979b2a21054d49fe842ba9630790a7aa67ab6fc00474d9",
+      "bytes": 7743,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/astra-global-closure-20261124/round8/paired/CROSS_ROUTE.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/astra-global-closure-20261124/round8/paired/PAIRED_PREFIX.md",
+      "git_blob": "4293e6ce1f925974f25fe570372c439bb56caf04",
+      "sha256": "36ff83d0b8dcf71702f7b1ba47e224a4f6c8a5ab0e2a9eda23bab8310a984083",
+      "bytes": 6374,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/astra-global-closure-20261124/round8/paired/PAIRED_PREFIX.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/integrated/ERRATA.md",
+      "git_blob": "e9b3e919a894170c88149e173fc20b846e6dba8f",
+      "sha256": "27bb01b72bd8785e59ffafce9dfb1d208067a9cb4b59c6b8794dabac596a7c19",
+      "bytes": 11801,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/integrated/ERRATA.md",
+      "scope": "Repository instruction and orientation reviewed at baseline; not mathematical evidence for closure."
+    },
+    {
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/integrated/README.md",
+      "git_blob": "45df5ea2e42c6a233193bfe6b5cd7f4b72559046",
+      "sha256": "54f8cb632e29d383329e79e5b7421aac1684fe409e9361de9c6207534c3758ec",
+      "bytes": 6434,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ef3496b577ed7525d5e0c82a9b782819457403d5/research/integrated/README.md",
+      "scope": "Repository instruction and orientation reviewed at baseline; not mathematical evidence for closure."
+    },
+    {
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-global-synthesis-20261124/arithmetic/proof.md",
+      "git_blob": "c46faf3dcefc768a984b99eb66aa62ef398f9a8c",
+      "sha256": "716dd2fc0d26e09c8bcf499403976a76ccaea6d2df0d094dc3b2a70f62996305",
+      "bytes": 14862,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fbe870ec44239e6b6c753bab9d1c7537acfff701/research/astra-global-synthesis-20261124/arithmetic/proof.md",
+      "scope": "Pinned cited interface. Precise read, execution and assumption scope is in the corresponding manuscript/intake report; this entry alone does not certify the whole upstream proof."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Evertse, On sums of S-units and linear recurrences (1984)",
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "interface": "Corollary 1, printed p.227, equations (9)-(12); fixed dimension, fixed prime set, collective gcd and nondegeneracy."
+    },
+    {
+      "title": "Evertse-Ferretti, A further improvement of the Quantitative Subspace Theorem (2013)",
+      "url": "https://doi.org/10.4007/annals.2013.177.2.4",
+      "interface": "Fixed-height-system, dimension-dependent exceptional-subspace bounds; not an unbounded-atom corollary."
+    },
+    {
+      "title": "Wu-Wang, On the irrationality measure of log 3 (2014)",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "interface": "Theorem 1 with constant coefficient zero; conversion to a rational approximation adds one to the exponent."
+    },
+    {
+      "title": "Dubickas, On integer sequences generated by linear maps (2009)",
+      "url": "https://doi.org/10.1017/S0017089508004655",
+      "interface": "Theorem 5: eventual parity-factor complexity lower bound on a divergent ordinary positive orbit."
+    },
+    {
+      "title": "Knight, Collatz high cycles do not exist (2026)",
+      "url": "https://doi.org/10.1016/j.disc.2025.114812",
+      "interface": "Published high-cycle exclusion; not all bounded mixed-band physical words."
+    },
+    {
+      "title": "Lean FRO and Mathlib Initiative, RH verification statement (2026-11-21)",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "interface": "Public independent certification of RH statement and proof; not independently rebuilt here and not an input to Collatz."
+    },
+    {
+      "title": "An Arakelov-theoretic perspective on the Alpoge-Claude argument on RH (2026-11-22)",
+      "url": "https://hexagonmath.org/pdf/2611.00833v1",
+      "interface": "Section 1.2 slope-method input list; endpoint served PDF imprinted v3, no v1 byte-identity asserted; no geometric theorem transferred to Collatz."
+    },
+    {
+      "title": "Calegari-Dimitrov-Tang, The unbounded denominators conjecture (2025)",
+      "url": "https://doi.org/10.1090/jams/1053",
+      "interface": "Arithmetic holonomicity and modular uniformization context; no claimed applicability to arbitrary Collatz carry series."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "actual_progression": {
+    "carry": 49385281,
+    "clock": 26,
+    "odd_depth": 16,
+    "sampled_rows": 7
+  },
+  "nonconstant_lift": {
+    "actual": [
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "bands": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "normalized": [
+      1,
+      2,
+      1,
+      2,
+      2
+    ],
+    "range_ratio": "653/283"
+  },
+  "protocol": "collatz-round9-critical-1",
+  "quarter_grid": {
+    "odd_minima": 128,
+    "scaled_sites": 57408,
+    "single_cuts": 127,
+    "ties_with_common_odd_core": 8256
+  },
+  "relaxed_modular_counterexample": {
+    "denominator": 13,
+    "illegal_exponents": [
+      0,
+      1,
+      2,
+      2,
+      3
+    ],
+    "polynomial_value": 5486,
+    "unit": 6
+  },
+  "two_sided_ordinary_minima": [
+    {
+      "backward_clock": 4,
+      "depth": 2,
+      "forward_clock": 3,
+      "source_bits": 8
+    },
+    {
+      "backward_clock": 5,
+      "depth": 3,
+      "forward_clock": 4,
+      "source_bits": 10
+    },
+    {
+      "backward_clock": 8,
+      "depth": 5,
+      "forward_clock": 7,
+      "source_bits": 17
+    },
+    {
+      "backward_clock": 16,
+      "depth": 10,
+      "forward_clock": 15,
+      "source_bits": 33
+    },
+    {
+      "backward_clock": 32,
+      "depth": 20,
+      "forward_clock": 31,
+      "source_bits": 65
+    },
+    {
+      "backward_clock": 64,
+      "depth": 40,
+      "forward_clock": 63,
+      "source_bits": 129
+    },
+    {
+      "backward_clock": 127,
+      "depth": 80,
+      "forward_clock": 126,
+      "source_bits": 255
+    }
+  ]
+}

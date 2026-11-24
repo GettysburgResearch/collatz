@@ -1,0 +1,6 @@
+'Collatz.BalancedBarrier.advance_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedBarrier.advance_peak' depends on axioms: [propext, Quot.sound]
+'Collatz.BalancedBarrier.balanced_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedBarrier.Follows.affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BalancedBarrier.denominator' depends on axioms: [propext]
+'Collatz.BalancedBarrier.physical_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]

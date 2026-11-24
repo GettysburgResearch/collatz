@@ -7,15 +7,16 @@ repair strategy, a written transcendence extension, and executed Lean checks.
 None of the restricted results supplies the universal descent or reverse
 closure still needed for the conjecture.
 
-**Latest continuation:** [round eight](round8/README.md) proves an ordinary
-contracting subprogression inside every ternary unit class, extends the
-arithmetic obstruction to arbitrarily long repeated suffixes, and constructs
-actual paired families with strict smaller and larger members. It integrates
-the latest directed covers and ordered-descent work, including the precise
-odd-count obstruction at a least hypothetical failure. Three Lean modules
-and their finite controls were executed. The conjecture remains open;
-[round seven](round7/README.md) and the earlier rounds below retain their
-original scope and publication history.
+**Latest continuation:** [round nine](round9/README.md) supplies an ordinary
+Lean return certificate excluding a whole progression of least tripling
+disagreements, a ballot upper bound for large-endpoint exact rows, and a
+four-coordinate Evertse estimate for unrestricted literal suffix carries.
+It reviews the frontier through PR207 and credits parallel cycle-order and
+finite-survivor results. Five new Lean modules and three pinned dependencies
+were rebuilt; ten finite replays passed. The universal cover in the
+[final Lean proposal](round9/formal/README.md) remains open.
+[Round eight](round8/README.md), [round seven](round7/README.md) and the
+earlier rounds below retain their original scope and publication history.
 
 The checkout base is `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.
 The [frontier report](../../reports/astra-global-closure-20261124/audit/FRONTIER.md)

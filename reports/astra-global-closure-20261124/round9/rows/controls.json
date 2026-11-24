@@ -1,0 +1,64 @@
+{
+  "barriers": {
+    "balanced_words": 125476,
+    "barrier_histogram_checks": 55,
+    "odd_depth_cutoff": 10
+  },
+  "immediate_terminal_examples": 8,
+  "rows": [
+    {
+      "b": 17,
+      "certified_odd_steps_from_q_to_one": 64,
+      "k": 15,
+      "m": 2,
+      "starts": 2
+    },
+    {
+      "b": 22,
+      "certified_odd_steps_from_q_to_one": 89,
+      "k": 19,
+      "m": 3,
+      "starts": 4
+    },
+    {
+      "b": 27,
+      "certified_odd_steps_from_q_to_one": 138,
+      "k": 23,
+      "m": 4,
+      "starts": 8
+    },
+    {
+      "b": 35,
+      "certified_odd_steps_from_q_to_one": 131,
+      "k": 30,
+      "m": 5,
+      "starts": 16
+    },
+    {
+      "b": 42,
+      "certified_odd_steps_from_q_to_one": 155,
+      "k": 35,
+      "m": 7,
+      "starts": 64
+    },
+    {
+      "b": 52,
+      "certified_odd_steps_from_q_to_one": 166,
+      "k": 43,
+      "m": 9,
+      "starts": 256
+    },
+    {
+      "b": 57,
+      "certified_odd_steps_from_q_to_one": 162,
+      "k": 47,
+      "m": 10,
+      "starts": 512
+    }
+  ],
+  "small": {
+    "cutoff_cells": 32,
+    "raw_cells": 2272,
+    "surviving_cells": 351
+  }
+}

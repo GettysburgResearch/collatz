@@ -1,0 +1,678 @@
+{
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "provenance": "agent37.stdout and agent65.stdout preserve the console summaries of the two original independent runs. Per-theorem streams were parsed in memory and removed with their temporary directories. Expected per-theorem reports below are corroborating records from the named pre-existing compiler logs, plus the retained direct two-helper query. They are independently distinguishable from the coordinator eight-module 76-inventory replay.",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "runs": {
+    "lane37": {
+      "original_exit": 0,
+      "flags": [
+        "-DwarningAsError=true",
+        "-DautoImplicit=false"
+      ],
+      "original_stdout": "agent37.stdout",
+      "original_stdout_sha256": "5d05dc5bbcf37e53e210620e3307910b66b6c0eb210001b71867c7389f20b2dd",
+      "public_theorem_count": 37,
+      "modules": [
+        {
+          "source": "research/astra-global-closure-20261124/round9/vendor/TernaryItinerary.lean",
+          "sha256": "b79cfc44200087ac0ca9bed9daab9c83a64487bbdb29a4e1e410ba7d6d3f8112",
+          "revision": null,
+          "action": "dependency"
+        },
+        {
+          "source": "research/astra-global-closure-20261124/round9/rows/FiniteSurvival.lean",
+          "sha256": "104c52cc8a4bef5dc2e6d7d186653ca9a2339c60428231a51e155c2382f7a96d",
+          "revision": null,
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-global-closure-20261124/round9/lean/FiniteSurvival.log",
+            "revision": null,
+            "sha256": "b01318e6140bd27ed77105575481a3c616a88b7c6085156bc1776ade7f5eb264"
+          },
+          "expected_reports": {
+            "Collatz.Itinerary.FiniteSurvival.survivor_rate": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.suffix_clock": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.endpoint_unique": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.fullRow_iff_terminal": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.twelfth_row_iff_terminal": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.all_one_suffix": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.Itinerary.FiniteSurvival.climbing_witnesses": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-global-closure-20261124/round9/rows/BarrierEnvelope.lean",
+          "sha256": "d5f647ba9ea7255b2eabd2340ff9fb15e18a7e4fb2c8794cfaaaac938c516bf9",
+          "revision": null,
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-global-closure-20261124/round9/lean/BarrierEnvelope.log",
+            "revision": null,
+            "sha256": "c809a67b09e6ba2b788c61affb614313516d4ac1cb0855498fb90658fff61ce4"
+          },
+          "expected_reports": {
+            "Collatz.BalancedBarrier.advance_envelope": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.advance_coherent": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.advance_peak": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.after_word": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.balanced_carry": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.Follows.affine": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.denominator": [
+              "propext"
+            ],
+            "Collatz.BalancedBarrier.physical_barrier": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          },
+          "publication_normalization": {
+            "published_source_sha256": "76f96f253091883f905ec885b22b8aadd04cbcf1d4f693fd980476b0fd136719",
+            "removed_trailing_bytes": "\n",
+            "scope": "Reconstruct original audited bytes after whitespace-only publication cleanup; current bytes separately rebuilt by the root Lean runner."
+          }
+        },
+        {
+          "source": "research/astra-global-closure-20261124/round9/arithmetic/LiteralCarry.lean",
+          "sha256": "e54b5253738c2a79ee12c3bd60d7ea968f0c17c75c73c6ea8ca208c35fb84596",
+          "revision": null,
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-global-closure-20261124/round9/lean/LiteralCarry.log",
+            "revision": null,
+            "sha256": "701f196e4324aa1c3ab22034693e5656f50f9fe251ed36679d84490c4a180877"
+          },
+          "expected_reports": {
+            "Collatz.LiteralCarry.no_proper_subsum": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.unit_after_odd": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.original_content": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.content_dvd_displacement": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.primitive_height_gain": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.displacement_unique": [
+              "propext"
+            ],
+            "Collatz.LiteralCarry.physical_floor_bound": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.agreement_dvd": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.LiteralCarry.low_words_injective": [
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-global-closure-20261124/round9/critical/CycleOrder.lean",
+          "sha256": "e9c19183531b438a53aebd86c962d74809e2b47a7087931926127a165640c2b2",
+          "revision": null,
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-global-closure-20261124/round9/lean/CycleOrder.log",
+            "revision": null,
+            "sha256": "d2fe4045277904b59f93ca8e8caa8340ff281ad67de165d34149a2829b72e57e"
+          },
+          "expected_reports": {
+            "CriticalCycle.quarter_order": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.no_wrap_overlap": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.one_cut_rotation": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.rotation_primitive": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.clock_total": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.no_unit_gap": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.six_twos_exceed": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.first_detour_shadow": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.continuing_detour_shadow": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.lift": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.recentered_meeting": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.small_multiple": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CriticalCycle.relaxed_polynomial_vanishes": []
+          }
+        }
+      ]
+    },
+    "upstream65": {
+      "original_exit": 0,
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false"
+      ],
+      "original_stdout": "agent65.stdout",
+      "original_stdout_sha256": "837783e0358ba3002266bdd1913cb8810ee1d2f56a255ddf364ff2030202fcca",
+      "public_theorem_count": 65,
+      "modules": [
+        {
+          "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+          "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "dependency"
+        },
+        {
+          "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+          "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "dependency"
+        },
+        {
+          "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+          "sha256": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "dependency"
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+          "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-closure-20261124/fresh_replay/lean-global-SmoothCore.stdout.log",
+            "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+            "sha256": "7123e91ba50de2e77827b62871aa4aaf809a277a5d8874d0971cf6eabc95e88f"
+          },
+          "expected_reports": {
+            "Collatz.SmoothCore.exists_first_tower": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.base_good": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.base_is_unit": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.smooth_reservoir": [
+              "propext"
+            ],
+            "Collatz.SmoothCore.odd_run_end": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.strict_base_of_clock": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.same_three": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.higher_three": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.same_four": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.lower_four": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.forbid_small_base_exit": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.forbid_two_power_return": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.next_base_good": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.SmoothCore.universal_iff_frontier_merger": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/descent/CorePrefix.lean",
+          "sha256": "fe1699e1431a933a9ed0abb548afa7e029a2620cb8b2a9c2075cc27dc9e7a30d",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-closure-20261124/fresh_replay/lean-descent-CorePrefix.stdout.log",
+            "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+            "sha256": "8beccdd73c3b16f4e8d47712f98b54339c31c7546550e90a11e26aa8e6cbcbf3"
+          },
+          "expected_reports": {
+            "Collatz.CorePrefix.prefix_merger": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.CorePrefix.no_fast_prefix": [
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/descent/CrossingRank.lean",
+          "sha256": "2a887a4177e5741a6f927b70a5637d22344c1d61ab1003b2eb9b2f61e396c7bf",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-closure-20261124/fresh_replay/lean-descent-CrossingRank.stdout.log",
+            "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+            "sha256": "f54db2023dbf39d062e98aea08ba38c687a7b3ffd457b598f7bfc54ff6cc82ad"
+          },
+          "expected_reports": {
+            "Collatz.CrossingRank.shadow": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.CrossingRank.crossing": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.CrossingRank.returned_clock": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/cycle/DecorationControl.lean",
+          "sha256": "937d521ebadcb9a61f6cc7862e90f1dc11b174c645f8ab42776401636bc19f38",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-closure-20261124/fresh_replay/lean-cycle-DecorationControl.stdout.log",
+            "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+            "sha256": "26c70779a20faee1e86b5257f77fd3604fc9925467c9af3a21dc93648694e577"
+          },
+          "expected_reports": {
+            "CollatzDecorationControl.arithmeticControl": [],
+            "CollatzDecorationControl.ordinaryDivisibilityFails": [
+              "propext"
+            ],
+            "CollatzDecorationControl.exactRationalCycle": [],
+            "CollatzDecorationControl.rankControl": [
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/cycle/RationalBasin.lean",
+          "sha256": "fdc41d4f3892a379ceb0322361cf8567df2b49b19dada21b279f9f31c4231fd6",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-closure-20261124/fresh_replay/lean-cycle-RationalBasin.stdout.log",
+            "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+            "sha256": "7a263fad178b0bc1c9848aec9319687bafa99b7aa9ee0a813b4a8959c569fbc7"
+          },
+          "expected_reports": {
+            "CollatzRationalBasin.run_add": [],
+            "CollatzRationalBasin.closed": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.stays": [
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.lowerCutoff": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.cycleAndLift": [],
+            "CollatzRationalBasin.leastBasinNumerator": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.leastMultipleNumerator": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.firstTriplingDisagreement": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollatzRationalBasin.reaches_step": [],
+            "CollatzRationalBasin.path_preserves_basin": [],
+            "CollatzRationalBasin.noLowerPath": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/UniversalProposal.lean",
+          "sha256": "2f5377e2231af4cfc048f0948c7885fe6244bfe1818072cb91f8ccf6507c132a",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-proof-20261124/kernel/UniversalProposal.log",
+            "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+            "sha256": "901cdd2e9f5322adef7089094ce1bc46a48ff6c57fef71415855233e3a87be1f"
+          },
+          "expected_reports": {
+            "UniversalProposal.converges_one": [],
+            "UniversalProposal.converges_three": [],
+            "UniversalProposal.converges_step": [],
+            "UniversalProposal.converges_run": [],
+            "UniversalProposal.converges_of_meets": [],
+            "UniversalProposal.multiple_ancestor": [
+              "Quot.sound",
+              "propext"
+            ],
+            "UniversalProposal.collatz_of_triple_descent": [
+              "Quot.sound",
+              "propext"
+            ],
+            "UniversalProposal.collatz_iff_triple_descent": [
+              "Quot.sound",
+              "propext"
+            ],
+            "UniversalProposal.check_sound": [],
+            "UniversalProposal.certified_collatz": [
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/minimum/MovingOctaveOrder.lean",
+          "sha256": "7541675b4f597dbf94c49232a85c56fddfb84dd84b1fcaa6b325ee7234fd97ac",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-proof-20261124/kernel/MovingOctaveOrder.log",
+            "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+            "sha256": "cdc07e4dfef20f278afb4c644ea7d9b56eb7ae530202c621e697d6e22d536c84"
+          },
+          "expected_reports": {
+            "MovingOctaveOrder.lift_step": [
+              "propext"
+            ],
+            "MovingOctaveOrder.moving_clock_order": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "MovingOctaveOrder.words_differ": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "MovingOctaveOrder.capacity": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/critical/OctaveOccupation.lean",
+          "sha256": "67dc83cf4dea5e2cd003e1c64d6e868d2d72e57301770402791f49137d4599de",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-proof-20261124/kernel/OctaveOccupation.log",
+            "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+            "sha256": "cf0a9b131a0adc02447ebda88f473f725f63c3648089f581fd8a3406afc59d42"
+          },
+          "expected_reports": {
+            "Collatz.OctaveOccupation.drop_balance": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.OctaveOccupation.recover_left": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.OctaveOccupation.encode_length": [
+              "propext"
+            ],
+            "Collatz.OctaveOccupation.encode_mass": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.OctaveOccupation.encode_injective": [
+              "Quot.sound",
+              "propext"
+            ],
+            "Collatz.OctaveOccupation.entropy_margin": []
+          }
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/minimum/RunClock.lean",
+          "sha256": "4ecf880e923700c4f41a0db32e1c2e73f6f63d875e92150316b64d446acdb1d2",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-proof-20261124/kernel/RunClock.log",
+            "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+            "sha256": "c5141f5d636d093641c6dc1f35097da59172d1b01deceb058ec55650ca33a515"
+          },
+          "expected_reports": {
+            "MinimumRunClock.block": [
+              "Quot.sound",
+              "propext"
+            ],
+            "MinimumRunClock.runs_of_dvd": [
+              "Quot.sound",
+              "propext"
+            ],
+            "MinimumRunClock.dvd_of_runs": [
+              "Quot.sound",
+              "propext"
+            ],
+            "MinimumRunClock.clock_iff": [
+              "Quot.sound",
+              "propext"
+            ],
+            "MinimumRunClock.each_source_exits": [
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/interior/OrdinaryStationary.lean",
+          "sha256": "df3a5a4384151d2ec42d7c4b8d2a5df77c9e99a53875e8578533d0b24e79cfeb",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "audit",
+          "corroborating_log": {
+            "source": "reports/astra-universal-proof-20261124/kernel/OrdinaryStationary.log",
+            "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+            "sha256": "8959104ea62358d168af5bc6a4c88ceefc333f5c4eed69a40fa4ca5d65797cc6"
+          },
+          "expected_reports": {
+            "OrdinaryStationary.coboundary": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "OrdinaryStationary.empirical": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "OrdinaryStationary.nonreturn": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "OrdinaryStationary.after_odd": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "OrdinaryStationary.exit": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "OrdinaryStationary.visits_from_root": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        }
+      ],
+      "controls": [
+        {
+          "source": "research/astra-universal-closure-20261124/descent/check_smooth_ray.py",
+          "sha256": "00f2d5fbf15ffa96b0d2d7158df040681a463bdb2d2ee03a6d1351627848ca0c",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "python normal and optimized",
+          "combined_output_sha256": "fc03c04a5b4fba51d81e7da223beb7f6a39ff3369007cb9c833fa4972b044f1d"
+        },
+        {
+          "source": "research/astra-universal-closure-20261124/descent/check_prefix.py",
+          "sha256": "2f09c4439e24e12cb99ea438b1a9fc8019bc74a1fe78a6ce43287fa30453ad9c",
+          "revision": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+          "action": "python normal and optimized",
+          "combined_output_sha256": "57523e0de936b30425f66041af278b72f7a04726190eb3d64a73293a789bb2d7"
+        },
+        {
+          "source": "research/astra-universal-proof-20261124/minimum/check.py",
+          "sha256": "b458fd659b6b714f34ae96559250e8d16f571b6ce20e69b3f63a6caee7bd5d31",
+          "revision": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+          "action": "python normal and optimized",
+          "combined_output_sha256": "1954e45457947a5ac516d94ea5947d4a8199b3e29c567aab7642f1af476cc270"
+        }
+      ]
+    }
+  },
+  "supplementary_helper_query": {
+    "input_module_source_sha256": "d5f647ba9ea7255b2eabd2340ff9fb15e18a7e4fb2c8794cfaaaac938c516bf9",
+    "flags": [
+      "-DwarningAsError=true",
+      "-DautoImplicit=false"
+    ],
+    "log": "barrier_helpers.log",
+    "log_sha256": "ece61f27c4eb5d68532ebffd2713fc2f1e235b4d6949463d86832a7bf2a1541d",
+    "exit": 0
+  },
+  "coordinator_receipt": "reports/astra-global-closure-20261124/round9/lean/receipt.json"
+}

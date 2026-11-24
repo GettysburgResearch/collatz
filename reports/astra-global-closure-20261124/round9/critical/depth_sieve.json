@@ -1,0 +1,117 @@
+{
+  "protocol": "collatz-round9-critical-sieve-1",
+  "rows": [
+    {
+      "depth": 1,
+      "eligible_ternary_prefixes": 1,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 2
+    },
+    {
+      "depth": 2,
+      "eligible_ternary_prefixes": 1,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 6
+    },
+    {
+      "depth": 3,
+      "eligible_ternary_prefixes": 2,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 10
+    },
+    {
+      "depth": 4,
+      "eligible_ternary_prefixes": 3,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 35
+    },
+    {
+      "depth": 5,
+      "eligible_ternary_prefixes": 6,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 56
+    },
+    {
+      "depth": 6,
+      "eligible_ternary_prefixes": 9,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 210
+    },
+    {
+      "depth": 7,
+      "eligible_ternary_prefixes": 13,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 792
+    },
+    {
+      "depth": 8,
+      "eligible_ternary_prefixes": 26,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 1287
+    },
+    {
+      "depth": 9,
+      "eligible_ternary_prefixes": 39,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 5005
+    },
+    {
+      "depth": 10,
+      "eligible_ternary_prefixes": 78,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 8008
+    },
+    {
+      "depth": 11,
+      "eligible_ternary_prefixes": 117,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 31824
+    },
+    {
+      "depth": 12,
+      "eligible_ternary_prefixes": 173,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 125970
+    },
+    {
+      "depth": 13,
+      "eligible_ternary_prefixes": 346,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 203490
+    },
+    {
+      "depth": 14,
+      "eligible_ternary_prefixes": 519,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 817190
+    },
+    {
+      "depth": 15,
+      "eligible_ternary_prefixes": 1038,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 0,
+      "tested_compositions": 1307504
+    },
+    {
+      "depth": 16,
+      "eligible_ternary_prefixes": 1557,
+      "smaller_interval_classes": 0,
+      "smaller_multiple_classes": 1,
+      "tested_compositions": 5311735
+    }
+  ]
+}

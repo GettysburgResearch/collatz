@@ -1,0 +1,11 @@
+Collatz.RoundNine.collatz_of_complete_return_cover (cover : CompleteReturnCover) : OrdinaryCollatz
+Collatz.RoundNine.complete_return_cover_iff_collatz : CompleteReturnCover ↔ OrdinaryCollatz
+Collatz.RoundNine.progression_excluded (u : ℕ) : ¬LeastDiscordance (163815229 + 1377495072 * u)
+'Collatz.RoundNine.safe_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundNine.certificate_refutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundNine.collatz_of_complete_return_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundNine.complete_return_cover_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundNine.critical_run_eq' does not depend on any axioms
+'Collatz.RoundNine.run_add' depends on axioms: [propext]
+'Collatz.RoundNine.progressionCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundNine.progression_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
