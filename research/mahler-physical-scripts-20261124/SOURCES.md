@@ -28,3 +28,8 @@ PRs #146–187 were screened through returned titles and PR descriptions, includ
 | main | ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a, research/integrated/factor-complexity/README.md; AGENTS.md, research map, catalog, errata entry points | Historical centered-cylinder recurrence cone and false unrestricted screen credited. |
 
 The current packet is self-contained at the level of written elementary affine arithmetic, D-finiteness and standard height inequalities. No unproved result from any source PR is an input to MPS-1. It is not claimed as a historical novelty over all mathematics literature.
+
+## Concurrent frontier refresh
+
+- PR188 `beed685ab713923191ae40c9559bf7400298d2d3`, current description: scalar-carry cocycle forces canonical ternary-phase drawup, and full cycle norm obstruction for selected clock classes. Neither supplies substitutive structure of arbitrary actual schedules.
+- PR189 `acbb126157c47c1e4de751ba0f9907f0de4c2594`, current description: stationary critical collision deficit, rational-scalar support entropy restrictions and restricted separated-visit bound. The required actual lower collision dimension remains open. None is used as an input in the new theorem.

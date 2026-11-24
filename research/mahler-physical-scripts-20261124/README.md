@@ -2,6 +2,8 @@
 
 2026-11-24. **PROPOSED written theorem; exact finite controls; Lean arithmetic source pending compiler replay. Full Collatz remains OPEN.** This packet attacks actual fixed-source rationality, not a change of source with the horizon. It replaces the repeat-position bound of PR187 by a Mahler auxiliary-polynomial argument for an entire class of arbitrary expanding or contracting two-letter return scripts.
 
+**Second checkpoint:** [MPS-5 and MPS-6](PRIMITIVE_MORPHISMS.md) extend this theorem to all primitive binary substitutions, including nonuniform ones, using Perron weights, weighted clock specializations, and exact transverse monomial nonvanishing. The first checkpoint below is retained unchanged in mathematical scope.
+
 ## 1. Main theorem (MPS-1)
 
 Let W0,W1 be two distinct nonempty finite words of positive accelerated odd Collatz gaps, of the same number of odd steps. More generally, any pair whose rational inverse affine maps have different fixed points is sufficient. Let s be a one-sided fixed point of a binary b-uniform substitution σ, b>=2, so σ(0) and σ(1) each have length b and s=σ(s). If s is not eventually periodic, the unique physical odd 2-adic completion of the concatenated gap script W_{s_0} W_{s_1} ... is **transcendental over Q**.
