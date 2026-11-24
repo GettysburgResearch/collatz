@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/MahlerCore.lean",
+  "sha256": "6b8d9598c85a64c9e1bee3db8c1038b374a8a40f4ae9f3f47bc8c457b1fe6d05",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/MahlerCore.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'MahlerPhysical.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MahlerPhysical.oneSum_substitute' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MahlerPhysical.finite_mahler' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MahlerPhysical.affine_expand' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MahlerPhysical.eliminate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 86.932
+}

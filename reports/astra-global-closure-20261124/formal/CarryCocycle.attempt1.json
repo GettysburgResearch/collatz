@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/CarryCocycle.lean",
+  "sha256": "4c0209adf81e5396a25e39c95e39be2954051555e5edf8963dc3c354b1b25275",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean"
+  ],
+  "exit_code": 1,
+  "stdout": "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:28:26: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:42:48: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:70:35: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n'Collatz.ScalarCarryCocycle.clock_amortized_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 2.334
+}

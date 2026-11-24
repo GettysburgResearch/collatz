@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "research/astra-global-closure-20261124/structural/CycleShadows.lean"
+  ],
+  "source_sha256": "05ef6b77b2ce9d571c598e5a0e4a526be3412b844349476ec72408b0bf145e99",
+  "unchanged": true,
+  "exit_code": 0,
+  "seconds": 81.082,
+  "printed_axiom_reports": 9,
+  "sorryAx": false,
+  "stdout_stderr": "'CycleShadows.no_local_join' depends on axioms: [propext, Quot.sound]\n'CycleShadows.lift' depends on axioms: [propext, Quot.sound]\n'CycleShadows.small_negative_table' depends on axioms: [propext, Quot.sound]\n'CycleShadows.small_positive_table' does not depend on any axioms\n'CycleShadows.positive_tail_controls' does not depend on any axioms\n'CycleShadows.member_endpoint' depends on axioms: [propext, Quot.sound]\n'CycleShadows.ten_even_bridge' depends on axioms: [propext, Quot.sound]\n'CycleShadows.certified_arm' depends on axioms: [propext, Quot.sound]\n'CycleShadows.unbounded_bridge' depends on axioms: [propext, Quot.sound]\n"
+}

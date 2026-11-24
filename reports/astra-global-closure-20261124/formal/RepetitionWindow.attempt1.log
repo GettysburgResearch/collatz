@@ -1,0 +1,4 @@
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean:61:11: error(lean.invalidField): Invalid field `dvd_mul_left`: The environment does not contain `Eq.dvd_mul_left`, so it is not possible to project the field `dvd_mul_left` from an expression
+  hc
+of type `(8 ^ m).gcd (9 ^ m) = 1`
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean:62:2: error: No goals to be solved

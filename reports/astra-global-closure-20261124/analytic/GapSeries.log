@@ -1,0 +1,8 @@
+'Collatz.GapSeries.physical_telescope' depends on axioms: [propext, Quot.sound]
+'Collatz.GapSeries.affine_slopes_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapSeries.slopes_synchronize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapSeries.common_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapSeries.periodic_gaps_of_affine_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapSeries.difference_divisibility' depends on axioms: [propext, Quot.sound]
+'Collatz.GapSeries.equal_sources_of_same_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapSeries.gap_period_forces_orbit_period' depends on axioms: [propext, Classical.choice, Quot.sound]

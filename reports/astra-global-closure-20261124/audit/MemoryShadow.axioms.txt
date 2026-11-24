@@ -1,0 +1,5 @@
+'Collatz.BoundedMemoryShadow.dropOldest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundedMemoryShadow.memoryOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundedMemoryShadow.classifyOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundedMemoryShadow.classifyAll' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundedMemoryShadow.integralShadowResidue' depends on axioms: [propext, Classical.choice, Quot.sound]

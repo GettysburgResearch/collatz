@@ -1,0 +1,6 @@
+'Collatz.FixedSourceRepeat.eq_zero_of_multiple_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FixedSourceRepeat.shared_lp_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FixedSourceRepeat.shared_lp_eq_of_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FixedSourceRepeat.clock_ge' depends on axioms: [propext, Quot.sound]
+'Collatz.FixedSourceRepeat.shared_gap_full_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FixedSourceRepeat.shared_gap_eq_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]

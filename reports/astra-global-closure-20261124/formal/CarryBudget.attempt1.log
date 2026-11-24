@@ -1,0 +1,4 @@
+'Collatz.StationaryCarryRigidity.carry_telescope' depends on axioms: [propext, Quot.sound]
+'Collatz.StationaryCarryRigidity.carry_budget' depends on axioms: [propext, Quot.sound]
+'Collatz.StationaryCarryRigidity.carry_word_determined' depends on axioms: [propext, Quot.sound]
+'Collatz.StationaryCarryRigidity.no_carry_birth' depends on axioms: [propext, Quot.sound]

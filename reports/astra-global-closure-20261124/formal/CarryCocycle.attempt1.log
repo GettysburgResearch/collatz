@@ -1,0 +1,10 @@
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:28:26: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:42:48: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean:70:35: error: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Collatz.ScalarCarryCocycle.clock_amortized_shift' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,32 @@
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:55:31: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_right ?m.454
+of type
+  ∀ (a : ?m.448), a * ?m.449 ≤ a * ?m.450
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:55:26: error: Application type mismatch: The argument
+  hdc
+has type
+  0 < 2 ^ d * 2 ^ c
+but is expected to have type
+  ?m.449 ≤ ?m.450
+in the application
+  mul_le_mul_right hdc
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:66:32: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_right ?m.92
+of type
+  ∀ (a : ?m.86), a * ?m.87 ≤ a * ?m.88
+/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:66:28: error: Application type mismatch: The argument
+  hu
+has type
+  0 < u
+but is expected to have type
+  ?m.87 ≤ ?m.88
+in the application
+  mul_le_mul_right hu
+'Collatz.PhasePacking.clock_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]
+'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.canonical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, Quot.sound]

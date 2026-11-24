@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/ResidueDefect.lean",
+  "sha256": "04d70dbbced70a348f8e78279449c156777b4e2691db23bc391244c995df8bff",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/ResidueDefect.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.ResidueDefect.balanced_numerator_inverse' depends on axioms: [propext, Quot.sound]\n'Collatz.ResidueDefect.single_interval_defect' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 1.663
+}

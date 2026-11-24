@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "research/astra-global-closure-20261124/analytic/GapSeries.lean"
+  ],
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "cwd": "/workspace/scratch/9d899a6c0eac/collatz",
+  "lean_source_sha256": "b8f526ea2ad9593f7f1f2dfe7fc30fa6980fc80a32fd48c593159915fe2de7e0",
+  "source_unchanged": true,
+  "exit_code": 0,
+  "seconds": 25.603,
+  "axiom_reports": 8,
+  "contains_sorryAx": false,
+  "log_sha256": "2f65cbd756951e0620576d6ff8634cb60c562ca5aedc92ed9ac2abbeb6932e46"
+}
