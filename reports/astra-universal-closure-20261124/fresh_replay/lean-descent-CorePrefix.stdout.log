@@ -1,0 +1,2 @@
+'Collatz.CorePrefix.prefix_merger' depends on axioms: [propext, Quot.sound]
+'Collatz.CorePrefix.no_fast_prefix' depends on axioms: [propext, Quot.sound]

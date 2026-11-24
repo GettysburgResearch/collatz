@@ -16,4 +16,10 @@ The program rejects unchecked proof tokens, omitted or duplicate public-theorem 
 
 The expected science coverage is 80 public Lean theorem audits: 46 unchanged predecessor theorems and 34 new theorems. There are eight Python control programs, each run in both modes. The all-exponent progression existence, valuation/permutation arguments, cycle-order reductions and external-source discussion remain written mathematical arguments. The replay does not relabel them as kernel-checked proofs.
 
-The publication receipt and fresh replay logs are added after the remote science commit has been fetched and replayed in a clean complete checkout. Their exact commits, timestamps, command exits and source hashes are authoritative for what was actually executed.
+## Executed clean replay
+
+The remote science commit `ae87464f6fadd2f3db77686c9883ad463198293f`, tree `be2ec250bb23b4debf8de12bf725021701fc522f`, was fetched and checked out completely with 756 tracked files. The replay ran from 18:10:26 to 18:11:17 UTC on 24 November 2026. All ten project modules compiled with warnings as errors and automatic implicit arguments disabled. All 80 public theorem audits passed; their combined transitive axiom set was exactly `propext`, `Classical.choice`, and `Quot.sound`.
+
+All eight Python programs passed in normal and optimized modes with byte-identical outputs and no `assert` nodes. All eleven repository-validator commands, including the bounded regression bundle, exited zero. All 31 research-file hashes remained unchanged, and the checkout stayed clean at the same commit and tree. No prior project object file was reused.
+
+[Machine receipt](fresh_replay/receipt.json), [repository validation receipt](fresh_replay/repository-validation.json), and the adjacent stdout/stderr logs record the actual commands and outcomes. [Publication record](PUBLICATION.json) pins the science commit and every research hash. The follow-up publication adds reports only; its clean checkout is checked against these hashes before the branch moves. The exact published head is reported in the PR and session.
