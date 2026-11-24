@@ -1,0 +1,54 @@
+{
+  "scope": "Single-module clean compilation against provisioned Mathlib/package oleans; bounded finite tests separately. Theorems U1 and W2-W3 remain written mathematics.",
+  "status": "PASS",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "source": "research/astra-global-closure-20261124/round5/head/WindowRepresentatives.lean",
+  "source_sha256": "2db5a0f818b36c7b6122111e4d4b3e161ebd69b0d0100ac1bf7b6a7158448e5e",
+  "compiler_exit": 0,
+  "compiler_log": "reports/astra-global-closure-20261124/round5/head/WindowRepresentatives.log",
+  "compiler_log_sha256": "8d428878de2e9f426b7a914b970df91a28da7f1e295c8320faac0aa7b1a3510b",
+  "axiom_inventories": [
+    "'Collatz.HeadWindows.last_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadWindows.separate_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadWindows.third_on_representative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadWindows.prefix_cover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.HeadWindows.head_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "bounded_script_sha256": "85a1569951b8d8ab19aaeddd78878ade534630c7244c15efc3f20461f60df23e",
+  "bounded_output_sha256": "0be1df0c51873e5a78402d9aee3a005ad11206f619d9d2cfdcf5aa06373e11f2",
+  "bounded_case_count": 24,
+  "bounded_source_case_evaluations": 9216,
+  "bounded_index_continuation_checks": 134144,
+  "bounded_replays": [
+    {
+      "flags": [
+        "-X",
+        "utf8",
+        "-B"
+      ],
+      "exit": 0,
+      "output_sha256": "0be1df0c51873e5a78402d9aee3a005ad11206f619d9d2cfdcf5aa06373e11f2",
+      "matches_frozen_output": true,
+      "empty_representatives_rejected": true
+    },
+    {
+      "flags": [
+        "-O",
+        "-X",
+        "utf8",
+        "-B"
+      ],
+      "exit": 0,
+      "output_sha256": "0be1df0c51873e5a78402d9aee3a005ad11206f619d9d2cfdcf5aa06373e11f2",
+      "matches_frozen_output": true,
+      "empty_representatives_rejected": true
+    }
+  ]
+}

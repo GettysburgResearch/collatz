@@ -1,0 +1,91 @@
+{
+  "binary_digit_masks": 126,
+  "local_lattice": {
+    "noncoprime_clocks": 485,
+    "nontrivial_gcds": 842,
+    "verified_square_prime_divisor": 20
+  },
+  "physical": {
+    "nonprogression": {
+      "A": 8,
+      "C": 653,
+      "D": 13,
+      "exponents": [
+        0,
+        2,
+        4,
+        6,
+        3
+      ],
+      "gaps": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "p": 5,
+      "reduced_denominator": 13
+    },
+    "reciprocal": 949,
+    "words": 6485
+  },
+  "pullback_lifts": [
+    {
+      "A": 190,
+      "base": 7,
+      "cubic_gcd": 1,
+      "gcd": 1,
+      "m": 136,
+      "nontorsion_degree": 408,
+      "p": 119,
+      "span": 2360
+    },
+    {
+      "A": 359,
+      "base": 7,
+      "cubic_gcd": 1,
+      "gcd": 1,
+      "m": 512,
+      "nontorsion_degree": 1536,
+      "p": 224,
+      "span": 8793
+    },
+    {
+      "A": 544,
+      "base": 7,
+      "cubic_gcd": 1,
+      "gcd": 1,
+      "m": 931,
+      "nontorsion_degree": 2793,
+      "p": 343,
+      "span": 18027
+    },
+    {
+      "A": 1423,
+      "base": 7,
+      "cubic_gcd": 7,
+      "gcd": 7,
+      "m": 8320,
+      "nontorsion_degree": 24960,
+      "p": 896,
+      "span": 141809
+    },
+    {
+      "A": 163,
+      "base": 6,
+      "gcd": 1,
+      "m": 119,
+      "p": 102,
+      "span": 1809
+    },
+    {
+      "A": 467,
+      "base": 6,
+      "gcd": 1,
+      "m": 1127,
+      "p": 294,
+      "span": 16193
+    }
+  ]
+}

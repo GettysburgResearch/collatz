@@ -1,0 +1,7 @@
+'Collatz.OrdinaryAtoms.decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryAtoms.integral_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryAtoms.fixed_clock_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryAtoms.localized_fixed_clock_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryAtoms.first_odd_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryAtoms.truncated_clock' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryAtoms.clock_floor' depends on axioms: [propext, Classical.choice, Quot.sound]

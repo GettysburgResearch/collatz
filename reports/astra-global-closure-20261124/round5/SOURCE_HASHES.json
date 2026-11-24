@@ -1,0 +1,186 @@
+{
+  "scope": "All round-five scientific sources, review notes and replay records before publication receipts; excludes this manifest and later publication-only files.",
+  "baseline": "b69ec87d28f539233a32b7c07964f5605320eb71",
+  "files": [
+    {
+      "path": "reports/astra-global-closure-20261124/round5/LATEST_INTAKE.md",
+      "sha256": "5048ad491177fd8a182a1e71eda627a4cccde8e3088364a7a63b352d2e9e4a87",
+      "bytes": 7662
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/PR_SNAPSHOT.json",
+      "sha256": "3db5eec2c0214e6c1d08a85974ca354a0ce791dbd5b38ed1f2f5a9cb910c1059",
+      "bytes": 109592
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/ROOT_REVIEW.md",
+      "sha256": "9e5b5083bfb87ebf828d7c9ff68f593ac6dadf8e02d77f8c6f9cca734f0e6497",
+      "bytes": 12418
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/arithmetic/ClockLattice.log",
+      "sha256": "2c9ba411d4368e2451ba1ee231825a2f93e848f8de5ad9c160ddc41ed46c4802",
+      "bytes": 693
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/arithmetic/REVIEW_HEAD.md",
+      "sha256": "a540b76fb814427109beef498857fd440be022e548d026b1f3909f568945a044",
+      "bytes": 4624
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/arithmetic/controls.json",
+      "sha256": "d443d439b6cf43e956b7116788f4b8141c6afe03564c38a4897c5160462cb996",
+      "bytes": 1434
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/arithmetic/receipt.json",
+      "sha256": "1bd3782dfcf01f79830a392eab161cd0e362947821697fdae6314acd60a0c947",
+      "bytes": 1454
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/controls-replay.json",
+      "sha256": "2338a8d5a8f4287e31c7ecc151a4fde077b724dff94dce1f00b8db74ff53e6e1",
+      "bytes": 4154
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/head/LATEST_197.md",
+      "sha256": "5f2733b81b354ee752c1c8d8d561c886f3b2f9e7437f1fafaf9a8791f9f4418e",
+      "bytes": 7461
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/head/REVIEW_RENEWAL.md",
+      "sha256": "48bd968ee0d6455d1b1b2965b36c20718a01042ba23a66093fe4bc5b9882f5f9",
+      "bytes": 4430
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/head/WindowRepresentatives.log",
+      "sha256": "8d428878de2e9f426b7a914b970df91a28da7f1e295c8320faac0aa7b1a3510b",
+      "bytes": 495
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/head/verification.json",
+      "sha256": "d19d03026383fa39622d3e580efe7af00026e58c44a259c2b968724244f740d5",
+      "bytes": 2458
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/head/windows.json",
+      "sha256": "0be1df0c51873e5a78402d9aee3a005ad11206f619d9d2cfdcf5aa06373e11f2",
+      "bytes": 7136
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/lean/ClockLattice.log",
+      "sha256": "2c9ba411d4368e2451ba1ee231825a2f93e848f8de5ad9c160ddc41ed46c4802",
+      "bytes": 693
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/lean/OrdinaryAtoms.log",
+      "sha256": "2a6fb29a99a359fcb036323974ff6785c547578cf029f8ac3222ed687382e6c1",
+      "bytes": 678
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/lean/WindowRepresentatives.log",
+      "sha256": "8d428878de2e9f426b7a914b970df91a28da7f1e295c8320faac0aa7b1a3510b",
+      "bytes": 495
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/lean/receipt.json",
+      "sha256": "3601e47eb08acf6211a2465b1036422dcdae253a2028b9feea3f4a33950c3e6a",
+      "bytes": 4656
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/renewal/ARITHMETIC_REVIEW.md",
+      "sha256": "e85d25ab39eb830306341362afea34e9cae880635f670ec81bd53a26d0e74236",
+      "bytes": 4561
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/renewal/EXECUTION.md",
+      "sha256": "bf5351da4535e572ec68dfab61c570f8a5c184fc552ad7eb9fb528276af24629",
+      "bytes": 3368
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/renewal/OrdinaryAtoms.log",
+      "sha256": "2a6fb29a99a359fcb036323974ff6785c547578cf029f8ac3222ed687382e6c1",
+      "bytes": 678
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round5/renewal/controls.json",
+      "sha256": "2d2cd706bf0f9c3b85a6216b3d6cf7f6376184d4ee51e21b05b849edc1da2ff2",
+      "bytes": 3959
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/README.md",
+      "sha256": "5c6037ebde084c20a5a44a06b496199c0183fa81df6eb7f369f8cb587829842e",
+      "bytes": 10463
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/SOURCES.json",
+      "sha256": "a6878d9d12b1c9e30d02644bf068bc385a256a073f49d07d753325e8aaab5271",
+      "bytes": 20938
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/arithmetic/ClockLattice.lean",
+      "sha256": "3c61188f859fe6b568f54d188b0a8074f3eb6b6d2b7a3b752f54485f111799e8",
+      "bytes": 4921
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/arithmetic/README.md",
+      "sha256": "00664f3dd8d4d78d7ebc91f7c3e4befad04c19c0ba6c516810f1ff7a3f6f5701",
+      "bytes": 13262
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/arithmetic/UNIT_RELATIONS.md",
+      "sha256": "15a70b8baf6708a23055f53489ae26bbc7e669b9b3b75ec7011eff39bcf74d38",
+      "bytes": 11063
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/arithmetic/check.py",
+      "sha256": "ca085990783f10978ee8d439ac0ec1eeec224da0c066f3ef01e04b0577f2482d",
+      "bytes": 6787
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/check_controls.py",
+      "sha256": "7b857e6a0b82cb58f19dc21ffc242399219b99e2d5f3a1a85f74ea927b17059f",
+      "bytes": 2777
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/check_lean.py",
+      "sha256": "530dc8f13acfa11750cc0fe0e1ac35003f5ba6cb6e94a6f088778cb936dc48b0",
+      "bytes": 5344
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/head/README.md",
+      "sha256": "e8c305cf74012522235fd57a36439f3c603f919d7031c6b1bd2b4dcf9992bfb1",
+      "bytes": 12342
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/head/UNIFORM_TRIPLES.md",
+      "sha256": "8a9eb7ab374de9997b2a25b4edbeb8196c2d70dde4038157f54dfe096a49abd5",
+      "bytes": 9772
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/head/WindowRepresentatives.lean",
+      "sha256": "2db5a0f818b36c7b6122111e4d4b3e161ebd69b0d0100ac1bf7b6a7158448e5e",
+      "bytes": 4017
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/head/check_windows.py",
+      "sha256": "85a1569951b8d8ab19aaeddd78878ade534630c7244c15efc3f20461f60df23e",
+      "bytes": 3634
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/renewal/OrdinaryAtoms.lean",
+      "sha256": "4d5a52e54196a956233a911a6a03b36a2367dd90f503b3d6041486839e8860da",
+      "bytes": 9016
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/renewal/README.md",
+      "sha256": "086edd77d933b3cc3bf5788e44c9e62938142e902d166befe9044a9a019c536a",
+      "bytes": 15162
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round5/renewal/check.py",
+      "sha256": "b1583abd53255337c900891658086ed0143200514cf49232d152d39d5d53b2ae",
+      "bytes": 7058
+    }
+  ]
+}

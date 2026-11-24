@@ -1,0 +1,261 @@
+{
+  "ordinary": {
+    "max_clock": 14,
+    "all_chronological_words_starting_odd": 16383,
+    "positive_integer_lifts": 49149,
+    "fixed_clock_height_counts": 34638,
+    "localized_fiber_counts": 57730
+  },
+  "marked": {
+    "mark_test_horizon": 10,
+    "positive_binary_translates": 2048,
+    "ordinary_starts_max": 4096,
+    "physical_witness_clock_cap": 80,
+    "observed_marks": 266,
+    "deterministic_clock_tests": 1330,
+    "partial_mark_counterexample": {
+      "q": 7,
+      "x": 37,
+      "second_endpoint": 314
+    }
+  },
+  "tail": {
+    "checked_binomial_cutoffs": 24,
+    "exact_markov_base": "390625/4194304",
+    "checked_truncated_gap_sums": 15000
+  },
+  "central": [
+    {
+      "odd_count": 2,
+      "symbolic_words": 0,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    },
+    {
+      "odd_count": 3,
+      "symbolic_words": 0,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    },
+    {
+      "odd_count": 4,
+      "symbolic_words": 1,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 1,
+        "853": 1
+      }
+    },
+    {
+      "odd_count": 5,
+      "symbolic_words": 1,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 1
+      }
+    },
+    {
+      "odd_count": 6,
+      "symbolic_words": 8,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    },
+    {
+      "odd_count": 7,
+      "symbolic_words": 22,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    },
+    {
+      "odd_count": 8,
+      "symbolic_words": 88,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    },
+    {
+      "odd_count": 9,
+      "symbolic_words": 270,
+      "ordinary_counts": {
+        "1": 0,
+        "5": 0,
+        "7": 0,
+        "13": 0,
+        "19": 0,
+        "43": 0,
+        "205": 0,
+        "853": 0
+      }
+    }
+  ],
+  "fixed_target_central": {
+    "max_odd_count": 32,
+    "inclusive_ordinary_source_ceiling": 69684,
+    "counts_indexed_from_one": {
+      "1": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        3,
+        4,
+        6,
+        9,
+        10
+      ]
+    },
+    "least_source_witness": {
+      "7": [
+        511,
+        30,
+        15
+      ],
+      "1": [
+        3733,
+        58,
+        29
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+'Collatz.HeadWindows.last_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadWindows.separate_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadWindows.third_on_representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadWindows.prefix_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HeadWindows.head_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
