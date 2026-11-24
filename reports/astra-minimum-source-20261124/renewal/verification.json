@@ -1,0 +1,22 @@
+{
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "flags": [
+    "-DwarningAsError=true"
+  ],
+  "source_sha256": {
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee"
+  },
+  "declaration_output": "SourceDeletion.lean\n'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n\nMinimumFailure.lean\n'Collatz.MinimumFailure.good_one' does not depend on any axioms\n'Collatz.MinimumFailure.good_step' does not depend on any axioms\n'Collatz.MinimumFailure.good_run' does not depend on any axioms\n'Collatz.MinimumFailure.label_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.label_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.label_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.exists_least_discordance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.good_below' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.good_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.upper_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.smaller_triples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.smaller_multiples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.counterexample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.exclude_seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.counterexample_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]\n\nUpperRepresentative.lean\n'Collatz.UpperRepresentative.seven_upper' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.seven_lower' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_lower' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_comparison' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_upper' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.invariant_run' does not depend on any axioms\n'Collatz.UpperRepresentative.no_signed_minimum' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.first_exit_labels' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.first_exit_reduces' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.complementary_exit' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "ordinary_and_optimized_identical": true,
+  "finite_replay": {
+    "dyadic_lifts_per_family": 2049,
+    "first_exits": {
+      "twelve_five": 1340,
+      "nine_zero": 448,
+      "nine_three": 445,
+      "complementary": 59
+    }
+  }
+}

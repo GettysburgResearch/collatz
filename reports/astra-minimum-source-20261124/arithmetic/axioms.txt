@@ -1,0 +1,38 @@
+'Collatz.CarryDescent.T' does not depend on any axioms
+'Collatz.CarryDescent.adaptive_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryDescent.adjacent' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryDescent.cycle_scale' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.edge_lift' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.fixed_ratio' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.lift' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.negative_twenty_one' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.odds' does not depend on any axioms
+'Collatz.CarryDescent.orbit' does not depend on any axioms
+'Collatz.CarryDescent.orbit_add' depends on axioms: [propext]
+'Collatz.CarryDescent.precondition' depends on axioms: [propext, Quot.sound]
+'Collatz.CarryDescent.stable' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.odds' does not depend on any axioms
+'Collatz.SourceDeletion.run' does not depend on any axioms
+'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SourceDeletion.step' does not depend on any axioms
+'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]
+'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.UpperRepresentative.complementary_exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.UpperRepresentative.first_exit_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.UpperRepresentative.first_exit_reduces' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.UpperRepresentative.invariant_run' does not depend on any axioms
+'Collatz.UpperRepresentative.no_signed_minimum' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.run' does not depend on any axioms
+'Collatz.UpperRepresentative.seven_lower' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.seven_upper' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.signed_comparison' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.signed_lower' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.signed_upper' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperRepresentative.step' does not depend on any axioms
