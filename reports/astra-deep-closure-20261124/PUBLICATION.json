@@ -1,0 +1,19 @@
+{
+  "schema": "collatz-deep-closure-publication/v1",
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 193,
+  "pull_request_url": "https://github.com/GettysburgResearch/collatz/pull/193",
+  "branch": "research/astra-universal-descent-20261124",
+  "previous_remote_head": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+  "local_science_commit": "4f1579e97c4b2fb354130787b17b8199c0c5fcf0",
+  "published_science_commit": "79015cab2fca154367c973e6eff473903e5e1f45",
+  "published_science_tree": "66a6514af8b3707dbd2a1d6549d8ff21e35b277c",
+  "publication_method": "GitHub Git database API. Exact tree equality checked against the clean validated local commit, followed by a non-forced leased ref update and validation of the actual fetched published commit.",
+  "compiled_public_theorems": 32,
+  "lean_version": "4.34.1",
+  "verification_scope": "Only the three new Lean modules and one new exact control program were executed. External analytic and arithmetic results remain named written dependencies. Complete-checkout validation checks integrity, not Collatz.",
+  "local_science_validation": "LOCAL_VALIDATION.json",
+  "actual_published_science_validation": "PUBLISHED_VALIDATION.json",
+  "receipt_commit_scope": "This follow-up adds only this publication record and the two complete-checkout validation receipts. Its own final identity is reported in PR193.",
+  "main_branch_modified": false
+}
