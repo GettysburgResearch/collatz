@@ -1,0 +1,117 @@
+{
+  "schema": "collatz-source-manifest/v1",
+  "base_commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+  "scope": "reviewed packet and reports; self excluded",
+  "files": [
+    {
+      "path": "reports/2026-11-24-high-variance-closure/REPLAY.json",
+      "sha256": "901b144ddfadfa99940bf987571eea84a7bd7f0e9068bf157c1f3bde8c24b2f9",
+      "bytes": 14999
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ROOT_REVIEW.md",
+      "sha256": "419c99d8b453b2fef45a37641deb592d8d229235eaab7f610857b7ea40268b90",
+      "bytes": 9153
+    },
+    {
+      "path": "research/high-variance-closure-20261124/BOUNDARY_RAYS.md",
+      "sha256": "3c452f7bf7c68e1ab2ee22ff4f51ef36994969ae04d4ccd64eb6751a3da21894",
+      "bytes": 12153
+    },
+    {
+      "path": "research/high-variance-closure-20261124/CLOCK_WINDOW.md",
+      "sha256": "4f8647f1b3df6af613f486482d4d93c5b42c07fb93d2d5cb4ea468ae1773b03c",
+      "bytes": 5023
+    },
+    {
+      "path": "research/high-variance-closure-20261124/DIFFUSE_RANK.md",
+      "sha256": "4f967a75c121858ace5b377c91072b7037414605d6c13adb5975d6d6020455c7",
+      "bytes": 9015
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ORDINARY_MOMENT.md",
+      "sha256": "b40abfcd529b5f656febf36fd59b50563508c7d63bd4e42307306edd645ce2d5",
+      "bytes": 5659
+    },
+    {
+      "path": "research/high-variance-closure-20261124/QUARTER_SHIFT.md",
+      "sha256": "4f2db049b279ecc746875dabfb99898acd601ce8e796f962415fde06dd00111e",
+      "bytes": 7939
+    },
+    {
+      "path": "research/high-variance-closure-20261124/README.md",
+      "sha256": "b8154d6d9b7cbaa757642d5199a6fa808baa22cc2aafc2594da202d85fa8467a",
+      "bytes": 10510
+    },
+    {
+      "path": "research/high-variance-closure-20261124/RESTRICTED_RANK.md",
+      "sha256": "06b6e225bc065fc52cdf66e51b810e00aee2327a6bfef878d81572c3ef08ed45",
+      "bytes": 14610
+    },
+    {
+      "path": "research/high-variance-closure-20261124/SOURCES.json",
+      "sha256": "80b206fe0e73adf61d756b6d85b6d9fe79227105d514642b7f83267c61021419",
+      "bytes": 5326
+    },
+    {
+      "path": "research/high-variance-closure-20261124/SPARSE_RESET_MEASURE.md",
+      "sha256": "ef3347137d779e0a9dcbd86dc8e8e9c35f795592c0c0f809181b24cbb822fe7d",
+      "bytes": 7275
+    },
+    {
+      "path": "research/high-variance-closure-20261124/TILTED_COUPLING.md",
+      "sha256": "a67318c0904df4d2c6efeb3b3b6bdf42663c894b7b704d0bc7acb86fae89d745",
+      "bytes": 5979
+    },
+    {
+      "path": "research/high-variance-closure-20261124/checks/boundary_control.py",
+      "sha256": "b143e99b3f09b0aa7c3cef06560d36f2f158d3bd96048360488ddbe63257cceb",
+      "bytes": 1988
+    },
+    {
+      "path": "research/high-variance-closure-20261124/checks/rank_certificate.py",
+      "sha256": "902599616ee85d74aac30e3ed47eb91188abd704cf939eb1764a37681cea3497",
+      "bytes": 3187
+    },
+    {
+      "path": "research/high-variance-closure-20261124/checks/replay.py",
+      "sha256": "49bcf78b695908a5e4d1dbf09d90e915b25e1860c90418e9336c5493bda3c295",
+      "bytes": 7410
+    },
+    {
+      "path": "research/high-variance-closure-20261124/checks/tilt_control.py",
+      "sha256": "19bb90ceb5d77f6e42fe6826024e8e3f6934219290a98e2773f34a98f20c5dd9",
+      "bytes": 1503
+    },
+    {
+      "path": "research/high-variance-closure-20261124/checks/transfer_control.py",
+      "sha256": "7281ba58c280acc0831a634819054474ee42b0fb6c30461a924e129fdd05a7d8",
+      "bytes": 1247
+    },
+    {
+      "path": "research/high-variance-closure-20261124/lean/EnvelopeCertificate.lean",
+      "sha256": "1dbb759bd304e096b553b4acf570c7c5297a32ec4518b0bd76cb63aee28a8acc",
+      "bytes": 8594
+    },
+    {
+      "path": "research/high-variance-closure-20261124/lean/FourTritDelay.lean",
+      "sha256": "aabfcf7d2446dfdb1e7c530ee1b2844f287fee2d9cabb3a970356d7bab3b53d1",
+      "bytes": 1881
+    },
+    {
+      "path": "research/high-variance-closure-20261124/lean/NonlinearTransport.lean",
+      "sha256": "11393d3fbf49d1782344757499b15888ab84be818cdd4c125beb3d9d147434a4",
+      "bytes": 1439
+    },
+    {
+      "path": "research/high-variance-closure-20261124/lean/OrientedBoundary.lean",
+      "sha256": "a201caa76baf52d54d4c19586bbc1373764cb7684a35ee33c08194c4486996fe",
+      "bytes": 3252
+    },
+    {
+      "path": "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+      "sha256": "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+      "bytes": 2903
+    }
+  ]
+}

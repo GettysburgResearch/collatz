@@ -1,0 +1,115 @@
+{
+  "schema": "collatz-high-variance-closure-sources/v1",
+  "repository": "GettysburgResearch/collatz",
+  "base_pr": 182,
+  "base_commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+  "repository_sources": [
+    {
+      "pr": 182,
+      "commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/GLOBAL_RANK.md",
+      "use": "previous atomic obstruction and previously open full restricted-tree envelope"
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "use": "written strict-power counting of one injective positive odd orbit; reciprocal-summability input"
+    },
+    {
+      "pr": 182,
+      "commit": "9b02334f27ff59694a91fe7f018e0aaabad7620b",
+      "path": "research/astra-round13-20261124/CYCLE_BUDGET.md",
+      "use": "written high invariant-set correction sum below 17/50 and product below 117/83; external convergence floor retained"
+    },
+    {
+      "pr": 192,
+      "commit": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/FIXED_SOURCE.md",
+      "use": "fixed-source normalized affine identity and cited reciprocal summability"
+    },
+    {
+      "pr": 192,
+      "commit": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "path": "research/astra-high-variance-20261124/CENTRAL_CLOSURE.md",
+      "use": "prior overlapping odd-clock atomic moment, shifted killed test, Haar contraction and fixed-ancestor Green obstruction; read at the final intake"
+    },
+    {
+      "pr": 197,
+      "commit": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+      "path": "research/ayh-resource-reset-20261124/continuation/HEAD_EDGE_RIGIDITY.md",
+      "use": "the infinite-time four-trit failure criterion D_j=o((81^j)^0.84); the new finite-clock lower bound does not disprove it"
+    },
+    {
+      "pr": 197,
+      "commit": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+      "path": "research/ayh-resource-reset-20261124/continuation/GROWING_HEAD.md",
+      "use": "inspiration and comparison for the actual phase selector; SPARSE_RESET_MEASURE gives its own qualitative selector proof"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+        "research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md"
+      ],
+      "use": "existing finite-grid ordinary coalescence and fair shared-digit conditioning; distinguished from the new biased-grid calculation"
+    }
+  ],
+  "related_intake_not_used_as_hypotheses": [
+    {
+      "pr": 188,
+      "commit": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "path": "research/astra-global-step-20261124/AUXILIARY_RESIDUES.md",
+      "scope": "read full written residue claims; no new independent Lean replay of that packet"
+    },
+    {
+      "pr": 193,
+      "commit": "4dcc03aa236fd64b7dc1c04d2574d0f56cc24f79",
+      "scope": "latest PR metadata and description read; not a full independent review of this head"
+    },
+    {
+      "pr": 195,
+      "commit": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+      "scope": "latest PR metadata and description read; not a full independent review of this head"
+    },
+    {
+      "pr": 199,
+      "commit": "d868f8e8405c08b8c501236853bea495ca593824",
+      "path": "research/optimal-critical-ancestors-20261124/README.md",
+      "scope": "read proof overview and named external M/R/N hypotheses; none imported or independently rebuilt here"
+    },
+    {
+      "pr": 200,
+      "commit": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "path": "research/regularity-rigidity-20261124/README.md",
+      "scope": "read overview and verification limits; not an independent review of full packet or its draft Lean"
+    }
+  ],
+  "external_sources": [
+    {
+      "authors": "Nicolas Gouillon",
+      "title": "Explicit lower bounds for linear forms in two logarithms",
+      "journal": "Journal de Theorie des Nombres de Bordeaux 18 (2006), 125-146",
+      "url": "https://www.numdam.org/item/JTNB_2006__18_1_125_0.pdf",
+      "use": "Corollary 2.3, printed p. 128, fixed bases 2 and 3; polynomial lower bound in CLOCK_WINDOW"
+    },
+    {
+      "authors": "J.-H. Evertse, R. G. Ferretti",
+      "title": "A further improvement of the quantitative Subspace Theorem",
+      "url": "https://arxiv.org/pdf/1008.2340",
+      "use": "finite-place Subspace Theorem as stated in introduction, equation (1.1); only its qualitative fixed-dimensional consequence is used"
+    },
+    {
+      "authors": "David Barina",
+      "title": "Improved verification limit for the convergence of the Collatz conjecture",
+      "journal": "The Journal of Supercomputing 81, article 810 (2025)",
+      "url": "https://doi.org/10.1007/s11227-025-07337-0",
+      "use": "reported verification below 2^71 for the source-qualified prescribed-antipode criterion; external computation, not replayed"
+    }
+  ],
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "formal_scope": "five standalone modules, 24 named transitive axiom audits; written analytic and measure claims remain separate"
+}
