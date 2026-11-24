@@ -1,0 +1,121 @@
+{
+  "schema": "collatz-continuation-verification-index/v1",
+  "scope": "Index of actually executed team compiler runs, with final source bytes and logs checked by the root. This indexing operation does not claim another compiler invocation. Full mathematical scopes remain in module execution reports.",
+  "compiler_version": "4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_revision_for_mathlib_modules": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "module_count": 8,
+  "selected_axiom_report_count": 26,
+  "modules": [
+    {
+      "source": "research/astra-global-closure-20261124/closing/descent/SustainedResidual.lean",
+      "source_sha256": "951817b99d9ab64b21520ccc4cc1c336c3822d02f96a536c157dc75188dc2920",
+      "log": "reports/astra-global-closure-20261124/closing/descent/sustained-lean.txt",
+      "log_sha256": "61497efbe4256d499cd80ff4086c595da9d7f9e15db2ffaac72a9de16accaf4a",
+      "selected_axiom_reports": 1,
+      "printed_inventory": [
+        "'SustainedResidual.sustained_residual' depends on axioms: [propext, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/descent/ResidualDescent.lean",
+      "source_sha256": "b5f149855866419b771e49127bdaabd1cb5749ec7d6f3b6091f3fb54bf1ccc98",
+      "log": "reports/astra-global-closure-20261124/closing/descent/residual-lean.txt",
+      "log_sha256": "8c2838d36307e46b0860e28728220dcb8ff9c83d48eb870e79e21dd39339e773",
+      "selected_axiom_reports": 1,
+      "printed_inventory": [
+        "'ResidualDescent.residual_descent' depends on axioms: [propext, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/descent/HeightPartner.lean",
+      "source_sha256": "e908f6c8738f06754ebc3b76b7deac0335e700a2e0ffbddee7314f1cd0a1ec6f",
+      "log": "reports/astra-global-closure-20261124/closing/descent/height-lean.txt",
+      "log_sha256": "fb00ffb8d85db4642bdac2297bdb74ea7cdd9ae64a4677941bd57e01f35ecb6f",
+      "selected_axiom_reports": 3,
+      "printed_inventory": [
+        "'HeightPartner.no_predecessor_55' depends on axioms: [propext, Quot.sound]",
+        "'HeightPartner.witness_55' does not depend on any axioms",
+        "'HeightPartner.height_partner' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/descent/PastCylinder.lean",
+      "source_sha256": "2f3904caf3ea257820b1328673a1c4745202b7f89a9723639eb055618b569fe3",
+      "log": "reports/astra-global-closure-20261124/closing/descent/past-lean.txt",
+      "log_sha256": "b540a11b889b72980a8268e39f50e79aa40ee35f11e8e53ea0f9b0a38765846a",
+      "selected_axiom_reports": 1,
+      "printed_inventory": [
+        "'PastCylinder.past_descent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/descent/LongPast.lean",
+      "source_sha256": "1566f437118187de95710b11ec2b3eef35f74e660772cd8d72cade8e3e030cb2",
+      "log": "reports/astra-global-closure-20261124/closing/descent/longpast-lean.txt",
+      "log_sha256": "093a298faadd6488ee253bacd2b9f0bdbebf19b14c42b1c076b2c91bdd162e46",
+      "selected_axiom_reports": 1,
+      "printed_inventory": [
+        "'LongPast.isolated_lights' depends on axioms: [propext, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/cycles/DenominatorBudget.lean",
+      "source_sha256": "defafaf8f5fb735e4ad12f7119be0361fb43b787d9061253cf102ee34f0638bb",
+      "log": "reports/astra-global-closure-20261124/closing/cycles/DenominatorBudget.log",
+      "log_sha256": "c66dbcbe62d5c3d2446230ffbb174c5099a94c87bd1582c2a041a1f579a5618d",
+      "selected_axiom_reports": 8,
+      "printed_inventory": [
+        "'Collatz.DenominatorBudget.product_path' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.product_lap' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.product_comparison' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.packed_clock' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.center_divisor_iff' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.nested_clock_divisor' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.earlier_carry_residue' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.DenominatorBudget.later_carry_residue' depends on axioms: [propext, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/cycles/ValuationDominance.lean",
+      "source_sha256": "c9bc26ec2b1e91d1ac8cbabc8fc510c39bf33475e6f211be34be84e9fead4c39",
+      "log": "reports/astra-global-closure-20261124/closing/cycles/ValuationDominance.log",
+      "log_sha256": "b9631e227b592199704cdfe5d13ef39186a2f740bd682b6edec55bcc5e4204df",
+      "selected_axiom_reports": 2,
+      "printed_inventory": [
+        "'Collatz.ValuationDominance.relation_cover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ValuationDominance.truncated_cover' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    },
+    {
+      "source": "research/astra-global-closure-20261124/closing/adelic/OrbitTransform.lean",
+      "source_sha256": "9949931d5c19b4a6889684f230f618677b48bce628fa54c46b1ff3bf9ae03c7f",
+      "log": "reports/astra-global-closure-20261124/closing/adelic/OrbitTransform.log",
+      "log_sha256": "8c251efd4c9a2898b3d9f37db89f847675aa4943215de71d1642f5a8b3fc3c72",
+      "selected_axiom_reports": 9,
+      "printed_inventory": [
+        "'Collatz.Adelic.scaled_physical' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.Adelic.rounded_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Adelic.orbit_odd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Adelic.orbit_increases' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Adelic.control_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Adelic.bounded_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Adelic.partial_split' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.Adelic.carry_bound' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.Adelic.short_return_bound' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "strict_compiler_exit": 0
+    }
+  ]
+}

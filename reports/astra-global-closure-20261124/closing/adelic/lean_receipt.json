@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "research/astra-global-closure-20261124/closing/adelic/OrbitTransform.lean"
+  ],
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "source_sha256": "9949931d5c19b4a6889684f230f618677b48bce628fa54c46b1ff3bf9ae03c7f",
+  "source_unchanged": true,
+  "exit_code": 0,
+  "seconds": 1.649,
+  "axiom_reports": 9,
+  "permitted_kernel_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "contains_sorryAx": false,
+  "log_sha256": "8c251efd4c9a2898b3d9f37db89f847675aa4943215de71d1642f5a8b3fc3c72"
+}
