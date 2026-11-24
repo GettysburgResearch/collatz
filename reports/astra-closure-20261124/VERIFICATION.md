@@ -39,3 +39,5 @@ Each review identifies exact target hashes. [ROOT_REVIEW.md](ROOT_REVIEW.md) rec
 The Mahler, Subspace, ESS, renewal, probability, density and all-time arguments remain written mathematics. Recent first-passage/fusion/barrier inputs remain source-qualified. No claim is made that the nineteen declarations formalize these infinite theorems or prove Collatz.
 
 Earlier proof bundles and external formalization libraries were not rebuilt. Clean complete-checkout repository validation is a separate integrity gate, with its receipt recorded after the scientific commit. It does not verify mathematics.
+
+The actual published scientific commit `b579defec53bb791ddbe2b6e07382cbb079ba8fc`, tree `33594eec89da3eaeb19ae4f6347efe29edaea8ee`, passed all five default integrity commands in a fresh, complete, clean 446-file checkout. [Publication record](PUBLISHED_CHECKPOINT.md) · [Exact checkout receipt](PUBLISHED_CHECKOUT.json).
