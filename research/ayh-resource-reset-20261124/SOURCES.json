@@ -192,7 +192,7 @@
     },
     {
       "pr": 174,
-      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "title": "research: dependency-free Lean attack \u2014 Collatz from one \u03c8-closure lemma (open)",
       "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
       "url": "https://github.com/GettysburgResearch/collatz/pull/174",
       "inspection": "PR metadata and claim summary; not a proof audit"
@@ -264,5 +264,6 @@
       "url": "https://arxiv.org/abs/1405.4988",
       "scope": "Positive commutator comparison reference; our natural trace lemma proved directly"
     }
-  ]
+  ],
+  "continuation_manifest": "continuation/SOURCES.json"
 }

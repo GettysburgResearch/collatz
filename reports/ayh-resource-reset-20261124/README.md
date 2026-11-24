@@ -1,5 +1,9 @@
 # Execution and independent review record
 
+The [third checkpoint's evidence](continuation/README.md) records the fresh seven-module continuation, its 20 new public theorem audits, four pairs of exact finite replays, and independent mathematical reviews. Earlier execution events below retain their original scopes and commit identities.
+
+The earlier source-hash manifest freezes the preceding checkpoint at 2fb1f11c959e35eba875338833d84969222dc089. Current continuation files and updated navigation documents have their own [source manifest](continuation/source-hashes.json).
+
 This record accompanies the [AYH research packet](../../research/ayh-resource-reset-20261124/README.md). The packet is a proposed research contribution. Collatz remains open. The verification events below concern the stated narrow theorems and finite controls, not universal termination.
 
 ## Lean build actually executed

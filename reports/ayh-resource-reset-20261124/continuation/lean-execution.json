@@ -1,0 +1,202 @@
+{
+  "command": [
+    "bash",
+    "research/ayh-resource-reset-20261124/continuation/check_lean.sh"
+  ],
+  "execution": "Direct pinned Lean binary with the existing Mathlib LEAN_PATH",
+  "started_at": "2026-11-24T06:41:59.259020+00:00",
+  "finished_at": "2026-11-24T06:43:19.799967+00:00",
+  "exit_code": 0,
+  "lean": "4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "fresh_output_directory": true,
+  "new_modules": 7,
+  "supporting_modules_rebuilt": 6,
+  "new_public_declarations_audited": 20,
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "log": "lean-build.log",
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_declaration_audit": [
+    {
+      "file": "BasinCounting.lean",
+      "declaration": "CollatzShell.CriticalCounting.inv4_mod16",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "BasinCounting.lean",
+      "declaration": "CollatzShell.CriticalCounting.remaining_clocks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "BasinCounting.lean",
+      "declaration": "CollatzShell.CriticalCounting.finite_target_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "BasinCounting.lean",
+      "declaration": "CollatzShell.CriticalCounting.deletion_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "CriticalCompression.lean",
+      "declaration": "CollatzShell.MarkedCylinders.critical_compression",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "HeadEdgeTransport.lean",
+      "declaration": "CollatzShell.TernaryHead.radix_floor_parent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "HeadEdgeTransport.lean",
+      "declaration": "CollatzShell.TernaryHead.doubled_floor_mask",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "HeadEdgeTransport.lean",
+      "declaration": "CollatzShell.TernaryHead.local_return_rigidity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "InverseWordCover.lean",
+      "declaration": "CollatzShell.CriticalCounting.inverse_word_cover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "InverseWordCover.lean",
+      "declaration": "CollatzShell.CriticalCounting.inverse_word_prefix_cost",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "file": "InverseWordCover.lean",
+      "declaration": "CollatzShell.CriticalCounting.inverse_link_clock",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.head_or_small",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.source_contraction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.contraction_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.contraction_seven_fifths",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.low_basin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryHeadDescent.lean",
+      "declaration": "CollatzShell.TernaryHead.universal_iff_truncate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryStopping.lean",
+      "declaration": "CollatzShell.TernaryStopping.mesh_orbit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "TernaryStopping.lean",
+      "declaration": "CollatzShell.TernaryStopping.universal_iff_mesh",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "file": "WholeTernaryFiber.lean",
+      "declaration": "CollatzShell.TernaryHead.whole_fiber",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
