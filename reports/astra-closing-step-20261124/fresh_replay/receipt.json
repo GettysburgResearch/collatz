@@ -1,0 +1,144 @@
+{
+  "schema": "collatz-astra-closing-step-replay/v1",
+  "started_utc": "2026-11-24T11:32:23.768997+00:00",
+  "scope": "new Lean kernels and finite controls; not the infinite written arguments",
+  "commit": "f872f7ad1b8ce809875198d6b9a1d5125e87bc77",
+  "tree": "71ee679262912d900c85a16a91ba30253761048e",
+  "sources_before": {
+    "research/astra-closing-step-20261124/README.md": "3dd83792b97654c9fea28febad7e20ad48b1ed37db7b13b7af71ba1e7b64dede",
+    "research/astra-closing-step-20261124/descent/CanonicalSource.lean": "5d2d0925a3751cf409d903eecc7f8720a3f82903afd0e609042efcd2d07ac4f3",
+    "research/astra-closing-step-20261124/descent/README.md": "0893ef76b3fa7d3fe0292e064626ea77920020277f1b3127b6c4938ec783dbfa",
+    "research/astra-closing-step-20261124/descent/check.py": "e38f1790c0f96808e7cf90e1b639863a04fc6b862bdec4d90597f9f54fd137fb"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean Std dependency objects reused; Mathlib path supplied but new module imports only Std",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/checkpoints/closing-step-fresh-f872f7ad/objects:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.072,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-descent-CanonicalSource",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closing-step-fresh-f872f7ad/objects/CanonicalSource.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closing-step-20261124/descent/CanonicalSource.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.759,
+      "stdout_sha256": "b814a51c2715727a6b491d23e4ea63891b82d549ca1d8f7b97587ba63c99993b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "adebc623b810559de0375afe04ba1e9dfea3926245df837d5d603afcf50c8918"
+    },
+    {
+      "label": "python-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closing-step-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.071,
+      "stdout_sha256": "ce7f281c8d7ce8862ce802e9c34df9f45aff4080668803ed07caf3e1a2f097aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closing-step-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.084,
+      "stdout_sha256": "ce7f281c8d7ce8862ce802e9c34df9f45aff4080668803ed07caf3e1a2f097aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closing-step-fresh-f872f7ad/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.294,
+      "stdout_sha256": "1129e6c72d492e6d165e47c6d927985ebeb2e43c1a0967e52305047e170fb196",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-closing-step-20261124/descent/CanonicalSource.lean",
+      "declaration": "Collatz.CanonicalSource.run_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-closing-step-20261124/descent/CanonicalSource.lean",
+      "declaration": "Collatz.CanonicalSource.all_odd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-closing-step-20261124/descent/CanonicalSource.lean",
+      "declaration": "Collatz.CanonicalSource.normalized_reaches_child",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-closing-step-20261124/descent/CanonicalSource.lean",
+      "declaration": "Collatz.CanonicalSource.adjacent_mersenne",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-closing-step-20261124/descent/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-closing-step-20261124/README.md": "3dd83792b97654c9fea28febad7e20ad48b1ed37db7b13b7af71ba1e7b64dede",
+    "research/astra-closing-step-20261124/descent/CanonicalSource.lean": "5d2d0925a3751cf409d903eecc7f8720a3f82903afd0e609042efcd2d07ac4f3",
+    "research/astra-closing-step-20261124/descent/README.md": "0893ef76b3fa7d3fe0292e064626ea77920020277f1b3127b6c4938ec783dbfa",
+    "research/astra-closing-step-20261124/descent/check.py": "e38f1790c0f96808e7cf90e1b639863a04fc6b862bdec4d90597f9f54fd137fb"
+  },
+  "finished_utc": "2026-11-24T11:32:27.079315+00:00"
+}
