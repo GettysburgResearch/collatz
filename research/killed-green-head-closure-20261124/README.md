@@ -347,3 +347,8 @@ audit is claimed.** The separate probability, Green, head-transfer,
 and ergodicity arguments are written proofs with the named dependencies.
 No full checkout validation or independent subagent review was
 performed. The draft is a mathematical checkpoint pending review.
+
+
+## Continuation: exact grade spreading and branching phase sparsity
+
+See [continuation/README.md](continuation/README.md). This checkpoint proves an exact full-octave odd-grade TV shift bound and the aggregate maximum-fiber bound O(1/sqrt(log X)), retaining both actual roots and signed clock differences. It also gives the native-clock bound O(L X^0.71) for arbitrary finite canonical phase sets, with no injectivity or forward-invariance premise, and a triadic-denominator depth restriction on rational-scalar ancestors. Written proposed mathematics; additional exact controls executed; Lean candidate uncompiled. Neither result closes the two-class discordance or all ordinary sources.
