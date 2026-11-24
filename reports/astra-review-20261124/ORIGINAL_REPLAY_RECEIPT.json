@@ -1,0 +1,152 @@
+{
+  "scope": "Independent strict replays of unedited original Git blobs. A PASS is finite Lean-source acceptance. No cycle or infinite-orbit attachment follows automatically. All eight narrowed or repaired copies are treated in a separate receipt.",
+  "lean_version": "4.34.1",
+  "lean_git_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_git_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "method": "Local lean executable on PATH with pinned Mathlib and package build directories on LEAN_PATH. All eight dependency checkout commits matched lake-manifest.json, and all tracked dependency trees were clean. Outputs below are from actual completed standalone invocations; source argument paths in the command have been made checkout-relative.",
+  "originals": [
+    {
+      "pr": 189,
+      "commit": "a0be70b1ffa075cbc50755ac76036108c028d120",
+      "path": "research/stationary-carry-rigidity-20261124/CarryBudget.lean",
+      "source_sha256": "aa84500b5fd73eb4daa49d62237f3d3a0d42be8d454d35b323823f73ef406097",
+      "original_import": "import Mathlib",
+      "status": "NO_COMPLETED_ORIGINAL_RESULT",
+      "note": "See the separate strict compiler receipt for the checked copy."
+    },
+    {
+      "pr": 188,
+      "commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+      "path": "research/scalar-carry-cocycle-20261124/CarryCocycle.lean",
+      "source_sha256": "a42133eddf0bb81288b3a27e6b43774e92137bab481f9748f93b261ce602a878",
+      "original_import": "import Mathlib",
+      "status": "NO_COMPLETED_ORIGINAL_RESULT",
+      "note": "See the separate strict compiler receipt for the checked copy."
+    },
+    {
+      "pr": 190,
+      "commit": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "path": "research/mahler-physical-scripts-20261124/MahlerCore.lean",
+      "source_sha256": "0ebc5c02a28db6af93e81eb4cb55c65386774501b3e1e02277d866ade6b550f5",
+      "original_import": "import Mathlib",
+      "status": "NO_COMPLETED_ORIGINAL_RESULT",
+      "note": "See the separate strict compiler receipt for the checked copy."
+    },
+    {
+      "pr": 182,
+      "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "path": "research/phase-packing-round12-20261124/PhasePacking.lean",
+      "source_sha256": "b10dbf602c9afcc8491cba3b6b0c326103f1f4e6599a73204c7454574bdecbe5",
+      "original_import": "import Mathlib.Tactic",
+      "status": "FAIL",
+      "exit_code": 1,
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "research/phase-packing-round12-20261124/PhasePacking.lean"
+      ],
+      "diagnostics_sha256": "2004ae881471112370df0abd8ea5de76d556c90d65612d99f6eab3547c8a8d8a",
+      "output": [
+        "agents/lean_audit/research/phase-packing-round12-20261124/PhasePacking.lean:47:9: error(lean.unknownIdentifier): Unknown identifier `mul_le_mul_right₀`",
+        "agents/lean_audit/research/phase-packing-round12-20261124/PhasePacking.lean:48:2: error: No goals to be solved",
+        "agents/lean_audit/research/phase-packing-round12-20261124/PhasePacking.lean:58:11: error(lean.unknownIdentifier): Unknown identifier `mul_le_mul_right₀`",
+        "agents/lean_audit/research/phase-packing-round12-20261124/PhasePacking.lean:59:4: error: No goals to be solved",
+        "'Collatz.PhasePacking.clock_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]",
+        "'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.canonical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "pr": 187,
+      "commit": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "path": "research/fixed-source-repeat-obstruction-20261124/RepeatObstruction.lean",
+      "source_sha256": "d73158ea82188a40b16c64e77da2033b5a5b6373d3aaa23921c551a29a5b2e13",
+      "original_import": "import Mathlib",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "research/fixed-source-repeat-obstruction-20261124/RepeatObstruction.lean"
+      ],
+      "diagnostics_sha256": "b3c9178f6ff186b596bdfbbbc46125b2a76bd13e606757119399597daa00acd1",
+      "output": [
+        "'Collatz.FixedSourceRepeat.eq_zero_of_multiple_small' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedSourceRepeat.shared_lp_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedSourceRepeat.shared_lp_eq_of_small' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedSourceRepeat.clock_ge' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FixedSourceRepeat.shared_gap_full_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedSourceRepeat.shared_gap_eq_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "elapsed_seconds": 63
+    },
+    {
+      "pr": 182,
+      "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "path": "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean",
+      "source_sha256": "313e434abb73b2027311145c40e6aed3262a82ec1a2ba688b48d411e64e305d2",
+      "original_import": "import Mathlib.Tactic",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean"
+      ],
+      "diagnostics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": [],
+      "elapsed_seconds": 5,
+      "note": "The original has no #print axioms commands; all eleven are printed by the separately checked copy."
+    },
+    {
+      "pr": 188,
+      "commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+      "path": "research/scalar-carry-cocycle-20261124/ResidueDefect.lean",
+      "source_sha256": "a2f47b41e37fe60e5ee024395cb95b791f134516ba6a7fd9a5551fe9b8e7d2b2",
+      "original_import": "import Mathlib",
+      "status": "NO_COMPLETED_ORIGINAL_RESULT",
+      "note": "See the separate strict compiler receipt for the checked copy."
+    },
+    {
+      "pr": 191,
+      "commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "path": "research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean",
+      "source_sha256": "ec4af1d8258372c4be091f649c572517214344e952d22fcfea6e43075c28a273",
+      "original_import": "import Mathlib",
+      "status": "PASS",
+      "exit_code": 0,
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean"
+      ],
+      "diagnostics_sha256": "bbe18de68d2998aaa7febb573a2f790a38960f637a0a14ebb3a2bb9e2c0186f0",
+      "output": [
+        "'Collatz.TwoSidedPacking.cycle_spread_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TwoSidedPacking.lattice_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TwoSidedPacking.spaced_span' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TwoSidedPacking.denominator_packing_core' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TwoSidedPacking.composed_carry_difference' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shadow_L' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shadow_P' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shadow_smaller_odd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shadow_exists' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shifted83_L' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shifted83_P' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.shadow_first_gap' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TwoSidedPacking.bezout_torus' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "elapsed_seconds": 608
+    }
+  ]
+}

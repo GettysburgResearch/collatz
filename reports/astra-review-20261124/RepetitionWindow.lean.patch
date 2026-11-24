@@ -1,0 +1,21 @@
+--- PR182@cbec52dde5bed390a693310dd04e911033ba0cc9/research/fixed-source-repetition-round11-20261124/RepetitionWindow.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/RepetitionWindow.lean
+@@ -1 +1,4 @@
+-import Mathlib.Tactic
++import Mathlib.Data.Nat.GCD.Basic
++import Mathlib.Tactic.Linarith
++import Mathlib.Tactic.Positivity
++import Mathlib.Tactic.Ring
+@@ -170,0 +174,12 @@
++
++#print axioms Collatz.FixedSourceRepetition.wordDen_succ
++#print axioms Collatz.FixedSourceRepetition.aligned
++#print axioms Collatz.FixedSourceRepetition.difference_dvd
++#print axioms Collatz.FixedSourceRepetition.small_shared_word
++#print axioms Collatz.FixedSourceRepetition.edge_height
++#print axioms Collatz.FixedSourceRepetition.prefix_height
++#print axioms Collatz.FixedSourceRepetition.two_start_bounds
++#print axioms Collatz.FixedSourceRepetition.early_repeat
++#print axioms Collatz.FixedSourceRepetition.edge_deterministic
++#print axioms Collatz.FixedSourceRepetition.equal_start_future
++#print axioms Collatz.FixedSourceRepetition.four_window_reject

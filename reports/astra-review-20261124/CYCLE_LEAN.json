@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-astra-lean/v1",
+  "source": "research/astra-orbit-cycle-20261124/cycles/RotationalExclusion.lean",
+  "source_sha256": "9fc5b20835aa3cc7f8aab03e2961ff5b65016471db06b4531da848644ac6d10d",
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_status": "",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lake",
+    "env",
+    "lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "/workspace/scratch/ff0fa7d64f83/collatz/research/astra-orbit-cycle-20261124/cycles/RotationalExclusion.lean"
+  ],
+  "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+  "started_utc": "2026-11-24T03:53:15.239323+00:00",
+  "seconds": 226.987,
+  "exit_code": 0,
+  "stdout": "'Collatz.RotationalExclusion.amp_append' depends on axioms: [propext]\n'Collatz.RotationalExclusion.carry_append' depends on axioms: [propext]\n'Collatz.RotationalExclusion.rotation_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.RotationalExclusion.transposition_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Four finite affine and divisor theorems; no analytic Matveev or complete Collatz theorem."
+}

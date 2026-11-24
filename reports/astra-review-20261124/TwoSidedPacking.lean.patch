@@ -1,0 +1,7 @@
+--- PR191@37b3916633cd32a0c173b20bb18ec3a7ec290a63/research/two-sided-cycle-packing-20261124/TwoSidedPacking.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/TwoSidedPacking.lean
+@@ -1 +1,3 @@
+-import Mathlib
++import Mathlib.Algebra.Group.Basic
++import Mathlib.Tactic.Linarith
++import Mathlib.Tactic.Ring

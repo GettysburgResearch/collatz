@@ -1,0 +1,19 @@
+{
+  "schema": "collatz-late-source-cutoff/v1",
+  "date": "2026-11-24",
+  "scope": "Two concurrent PRs found during publication of PR196. Scoped reviews and written combined deductions only; their additional Lean modules were not recompiled by this packet. Earlier source inventories remain unchanged.",
+  "pull_requests": [
+    {
+      "pr": 194,
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "tree": "c916c8b265883d6a9cd6667de82f1cecd0c314e9",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/194"
+    },
+    {
+      "pr": 195,
+      "head": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "tree": "dc04a239cf7410d92e6a1c9b8c4ae5007c7c313f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+'TwoAnchor.Trace.join' depends on axioms: [propext]
+'TwoAnchor.Trace.shift' depends on axioms: [propext]
+'TwoAnchor.Trace.pos_of_end_pos' depends on axioms: [propext, Quot.sound]
+'TwoAnchor.Trace.affine_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TwoAnchor.clock_zero_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TwoAnchor.initial_odds' depends on axioms: [propext, Quot.sound]
+'TwoAnchor.half_source' depends on axioms: [propext, Classical.choice, Quot.sound]

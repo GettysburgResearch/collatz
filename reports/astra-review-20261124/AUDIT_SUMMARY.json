@@ -1,0 +1,90 @@
+{
+  "schema": "collatz-astra-audit-summary/v1",
+  "total_files": 11,
+  "total_declarations_including_helpers": 83,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Exact final source hashes and completed compiler/axiom receipts; surrounding written mathematics has its separate boundary.",
+  "files": [
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/CarryBudget.lean",
+      "sha256": "456559139e14fd6ce2ca141e7b7258348726c6b7441ae70ec0d7d7c58766411f",
+      "theorem_declarations": 6,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/CarryCocycle.lean",
+      "sha256": "eb5aa87fa81faed33f9986edec06b3739f07fb2f24c35427dbc91f64f1d8b23d",
+      "theorem_declarations": 6,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/MahlerCore.lean",
+      "sha256": "7d9038773782b5a7804b5a256d021385f91fab37c9b5a4906185bd487eb30104",
+      "theorem_declarations": 8,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/PhasePacking.lean",
+      "sha256": "2975e86aa5dd4693240ac9ee12e78b301b80743f839dac0246baa3d70acc2211",
+      "theorem_declarations": 8,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/RepeatObstruction.lean",
+      "sha256": "56f0017a3e3419b77c57ae51dc9678a84a8ca50aa514aa33be342b019b52d79f",
+      "theorem_declarations": 8,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/RepetitionWindow.lean",
+      "sha256": "0ca41af6d9e873b57fd755f7a8a56462d921bf1723cc9d21885fe18961889da4",
+      "theorem_declarations": 11,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/ResidueDefect.lean",
+      "sha256": "5c1b58ef497914b6207dd84e5d848870915eb5f746bae89c8c263b0fa2d83ad8",
+      "theorem_declarations": 6,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/audited_lean/TwoSidedPacking.lean",
+      "sha256": "ecca443c5c99bfbff9f808e1c8d7fbee3c0faeed47ea2efe632c3cb33ce13ee7",
+      "theorem_declarations": 13,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/COMPILE_RECEIPT.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/occupation/CarryOccupation.lean",
+      "sha256": "2ea3ba93c2939c77646a56a05d8d0f24b819fe6f515e2094330ae239d4fef9a6",
+      "theorem_declarations": 6,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/CARRY_LEAN.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/cycles/RotationalExclusion.lean",
+      "sha256": "9fc5b20835aa3cc7f8aab03e2961ff5b65016471db06b4531da848644ac6d10d",
+      "theorem_declarations": 4,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/CYCLE_LEAN.json"
+    },
+    {
+      "path": "research/astra-orbit-cycle-20261124/mergers/HalfSource.lean",
+      "sha256": "5a7b4239ba7a68a45686e07bee1787a853df0122cec18f6c66167ab27291146e",
+      "theorem_declarations": 7,
+      "proof_status": "strict compiler pass and all named transitive axiom reports",
+      "receipt": "reports/astra-review-20261124/MERGER_LEAN.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+--- PR190@ba58227c5a047ff3859a148a5fdaac4fd1451e4c/research/mahler-physical-scripts-20261124/MahlerCore.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/MahlerCore.lean
+@@ -1 +1,3 @@
+-import Mathlib
++import Mathlib.Data.Rat.Cast.Order
++import Mathlib.Tactic.LinearCombination
++import Mathlib.Tactic.Ring
+@@ -108,0 +111,4 @@
++
++#print axioms MahlerPhysical.weight_append
++#print axioms MahlerPhysical.oneSum_append
++#print axioms MahlerPhysical.weight_substitute

@@ -1,0 +1,24 @@
+--- PR188@beed685ab713923191ae40c9559bf7400298d2d3/research/scalar-carry-cocycle-20261124/CarryCocycle.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/CarryCocycle.lean
+@@ -1 +1,4 @@
+-import Mathlib
++import Mathlib.Tactic.GCongr
++import Mathlib.Tactic.Positivity
++import Mathlib.Tactic.NormNum
++import Mathlib.Tactic.Ring
+@@ -23 +26 @@
+-    _ ≤ 64^n := by gcongr <;> norm_num
++    _ ≤ 64^n := by gcongr; norm_num
+@@ -37 +40 @@
+-      _ = 8^(3*c) := by rw [← pow_add]; congr 1 <;> omega
++      _ = 8^(3*c) := by rw [← pow_add]; congr 1; omega
+@@ -65 +68 @@
+-            rw [pow_add]; norm_num <;> ring
++            rw [pow_add]; norm_num; ring
+@@ -124,0 +128,6 @@
++
++#print axioms Collatz.ScalarCarryCocycle.succ_le_two_pow
++#print axioms Collatz.ScalarCarryCocycle.fourth_bound
++#print axioms Collatz.ScalarCarryCocycle.carry_power
++#print axioms Collatz.ScalarCarryCocycle.clock_step
++#print axioms Collatz.ScalarCarryCocycle.clock_amortized

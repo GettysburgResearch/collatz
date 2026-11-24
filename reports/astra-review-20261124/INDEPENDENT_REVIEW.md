@@ -1,0 +1,25 @@
+# Independent reconstruction of the three written packets
+
+The identities below refer to SHA-256 of the reviewed Markdown bytes. The verdicts cover the stated written results. No Lean replay, convergence theorem, universal merger selector, or general positive cycle exclusion is part of this review.
+
+## Carry occupation and mechanical separation
+
+**VERIFIED** for sections 1–4 of CARRY_OCCUPATION.md, a5c3bafaac9306ce40a8c793926faa1da77842056398b2ab935425c625647809, with its stated dependencies on the actual scalar and the uniform counting theorem. The right-closed choice of phase gives the strict bound on c. Summing the carry recurrence gives the sign +c_n in (1). A bad clock triples the accumulated mass plus at least one, including at mass zero, and each selected clock bounds that mass by half the threshold logarithm. The physical count is applied to one injective forward-invariant suffix at a time. An eventually periodic trajectory is handled separately by its bounded digits and irrational reference mean.
+
+An m-gap word determines its end modulo 3^m, independent of its start. Once all candidate endpoints are positive and smaller than that modulus, injectivity bounds unmarked windows by dictionary cardinality. Carry marks include both ends. A deletion in the comparison can invalidate adjacency at its next actual position, so at most one actual index need be marked per edit. A mechanical fragment carries discrepancy less than one for every prefix at every intercept. These one-sided bounds suffice even when the physical digit alphabet has no global upper bound. The coefficients of squared discrepancy are 1/ell and 9/(4 ell) for physical and canonical digits, respectively. The cubic defect example has infinitely many unchanged 2s in every tail, retains its irrational limiting frequency, and has at most one change in any late m-window after a cutoff of order m^(3/2).
+
+The submitted control script ran successfully, including its 10,548 residue tests, 8,880 Hamming tests, 384 alignment tests and 128 fragment tests. A constant-improvement suggestion made separately is outside these frozen verdicts.
+
+## Rotational exclusion
+
+**VERIFIED** for elementary R1 and R3 of ROTATIONAL_EXCLUSION.md, 689175720ff0904cfd86cdcc54a66749d0964aedae3add81692c297e45f7c251. The common suffix preserves the denominator after cancellation of its 3-power. Distinct primitive states give a nonzero carry difference. In R3 both 2 and 3 are units modulo the full denominator, and reducing the power-difference gcd leaves precisely K dividing dE. The h and r need not be coprime.
+
+**VERIFIED with the identified Matveev input** for R2 and its large-period consequences. In the short and middle ranges the finite and Farey certificates replayed. In particular A/p equals neither enclosure endpoint as both reduced denominators exceed p. The determinant gap yields Lambda greater than ln(2)/V, including for unreduced A/p. For large periods, Matveev, Izvestiya: Mathematics 64 (2000), Corollary 2.3, equations (1.4), (2.4), (2.6), gives the quoted estimate directly with n=2, D=1, log 2 and log 3 for the height parameters, and B*=A. The paper's theorem statement and hypotheses were checked against the primary source, https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf. Its proof is an external dependency. The large-period numerical function has positive derivative beyond the stated cutoff. For two differences the longer complementary matching run has length at least ceil((A-2)/2), precisely enough.
+
+The submitted controls replayed. A separate integer-only sweep tested the greatest contracting power 3^p at each of 17,984 consecutive periods A=17 through 18,000. A second direct enumeration through A=9 checked R1 at the maximal common suffix for 5,476 ordered distinct rotational pairs using the actual reduced starting denominator.
+
+## Smaller ordinary mergers
+
+**VERIFIED** for the three written constructions in TWO_ANCHOR_MERGERS.md, 9bcaaba3ebbe2afa04fcc9720fc1c4b63173bafcc4a0ad3b1fb35b29152ce26c. The h=0 replay of each odd inverse at the positive anchor stays integral by its remaining ternary divisibility. An integral odd inverse of a positive state is positive. For h>=1 a signed shadow has e+1 legal initial branches. If its state then lies at or below zero, monotonicity and iteration from zero on all positive odd affine branches bound every real continuation by (3/2)^(h-1)-1. If the shadow starts at 1, the odd-count inequality becomes s<=ceil((e+1)/2)-1=floor(e/2). At H+1 the target Z is 1 mod 3 and exceeds n by ((3^H-2^(H+1))M+1)/2. Its unique last inverse is even and contributes zero odd steps. The positive ordinary construction generates a full progression through arbitrarily large marked octaves. The opposite residue class remains outside the selector.
+
+The packet's checker passed. A separate ordinary-forward simulation over odd sources 3..1023 tested each x<n and t<=24 for 170 barrier sources. It found 1,347 meetings, including 198 attaining the lower bound. It also verified 256 selector equalities and both sides' odd counts.

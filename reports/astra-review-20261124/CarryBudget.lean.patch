@@ -1,0 +1,9 @@
+--- PR189@a0be70b1ffa075cbc50755ac76036108c028d120/research/stationary-carry-rigidity-20261124/CarryBudget.lean
++++ research/astra-orbit-cycle-20261124/audited_lean/CarryBudget.lean
+@@ -1 +1 @@
+-import Mathlib
++import Mathlib.Data.Nat.Init
+@@ -94,0 +95,3 @@
++
++#print axioms Collatz.StationaryCarryRigidity.prefixSum_congr
++#print axioms Collatz.StationaryCarryRigidity.prefixSum_ge_length
