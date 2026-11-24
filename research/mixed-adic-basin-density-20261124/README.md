@@ -4,6 +4,10 @@
 
 Use the positive shortcut map T(n)=n/2 for even n and T(n)=(3n+1)/2 for odd n, with T(0)=0 only for finite canonical-prefix calculations. For odd n>0, let U(n)=(3n+1)/2^v_2(3n+1). A **unit** is a positive odd integer prime to three. A(a) denotes the ordinary predecessors of a fixed unit a, i.e. integers whose actual T orbit visits a. All logarithms below are natural unless indicated.
 
+## Stronger continuation: fixed-target depth bank
+
+The subsequent [fixed_target_depth_bank.md](fixed_target_depth_bank.md) removes input M from both principal conclusions: A follows from the source-qualified floor F alone, and B from F,S. It fixes one large nonperiodic predecessor of the desired target, then sums over distinct inverse odd depths rather than totals at a fixed depth. The populations cannot overlap. It also prescribes both first-hit clock and odd-count residues modulo any fixed modulus, with an optional growing-modulus refinement using the Rhin phase-gap bound. Its stronger conclusions are the preferred handoff. The alternative fixed-depth proof below is preserved because it uses a different counting cancellation and allows a moving pool of targets.
+
 ## 1. The new conclusions
 
 **Theorem A (mixed-adic lower density, conditional on F and M below).** There exists an absolute eta>0 with the following property. Fix a unit a and a fixed real interval shape 0<A<B. There exists c=c(a,A,B)>0 such that, for all sufficiently large X, simultaneously for all integers h,k>=0 with h+k<=eta log X and ALL residues r mod 2^h and l mod 3^k,
@@ -150,7 +154,7 @@ By B, both colors also have positive-density sets of starting positions of block
 - PR199 (d868f8e8405c08b8c501236853bea495ca593824): target-specific sparse sections using Mazur and first-passage rigidity. PR201 (084b983fbec6f3d2120ef101946754431f82874e): low-grade summability and odd-grade spreading. PR182 (234fd2ece3a17c8950dce452291198705b4e6e60): the dyadic companion remains a separate arithmetic route; see companion_obstruction.md for the conjugate-height calculation.
 - The external literature input F is stronger than the theorem D in paper 37 used previously. It is the *fractional extra precision* and the **joint fixed-total floor** that enable the new estimate.
 
-These are source reads and narrow interfaces, not a fresh independent audit of all files or all recent proofs. The next high-value target is to exploit the original-word conditional floor under a **second** output constraint while retaining enough multiplicity to insert a third phase at a selected head pair. A second unconstrained marginal, or summing words at varying odd depth without accounting for duplicates, would not suffice.
+These are source reads and narrow interfaces, not a fresh independent audit of all files or all recent proofs. The stronger continuation above removes the separate positive-density assumption and adds exact first-hit phases, but does not solve the two-class remainder. The next high-value target is to exploit the original-word conditional floor under a **second** output constraint while retaining enough multiplicity to insert a third phase at a selected head pair. A second unconstrained marginal, or summing words at varying odd depth without accounting for duplicates, would not suffice.
 
 ## 8. Evidence
 
