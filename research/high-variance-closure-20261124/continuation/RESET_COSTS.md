@@ -1,0 +1,44 @@
+# Weighted reset frequency on an ordinary escape and an obstruction on each fixed basin
+
+**Status.** Written positive conditional exclusion and a counterexample to a class of multiscale constructions. No universal potential satisfying the conditional estimate is constructed. They do not settle whether a nontrivial cycle exists. They use the physical set $S$ and its set of marked odd valleys $M$ in ../SPARSE_RESET_MEASURE.md. The properties needed of $S$ are explicit: for every integer $t\ge0$, all sufficiently large elements of $S$ are in $W_t=\bigcup_{m\ge0}[7\cdot3^m,(7+3^{-t})3^m)$, and a valley is marked if at least one of its actual source states belongs to $S$ (the terminal valley state is excluded).
+
+## Weighted rotation along one fixed ordinary source
+
+Let $X_i=T^i(x)$ on a fixed escaping positive shortcut trajectory and $w(n)=1/\log(n+2)$ using natural logarithms. Then
+$$\sum_{i<N}w(X_i)\to\infty,\qquad
+\sum_{i<N:X_i\in S}w(X_i)=o\left(\sum_{i<N}w(X_i)\right).\tag{1}$$
+The first assertion follows from $X_i+2\le2^i(x+2)$. For the second, modulo one the clock $\log_3 X_i$ advances by $-\log_3 2$ plus an error between zero and $1/(3X_i\log3)$. On a block of any fixed length $K$ started sufficiently late, the deviation from the corresponding rotation block tends uniformly to zero, since $X_i\to\infty$. Also $w(X_{i+j})/w(X_i)\to1$ uniformly for $0\le j<K$, since consecutive logarithmic heights change by at most a constant.
+
+Given any desired error, choose $t$ so the projected window, of circle length $\log_3(1+3^{-t}/7)$, is sufficiently short. Widen it slightly to an arc with still small length. By uniform equidistribution of the irrational rotation, some fixed $K$ makes the visit proportion to this widened window small for *every* starting angle. For example the geometric-sum formula for each nonconstant Fourier mode gives uniform convergence of its averages, and a continuous upper approximation to the arc indicator gives this assertion. For all sufficiently late disjoint $K$-blocks of the actual trajectory the unweighted visit fraction is therefore small; the weight ratio within each block tends to one. Combine the blocks; the initial finite terms and the final partial block are negligible compared with the divergent mass. This proves (1) without assuming a reciprocal-summability theorem or independent gaps.
+
+For example, a finite nonnegative potential $V$ on odd positive valley sources would exclude all escaping orbits if, for fixed $c>0,0\le C<\infty$, every sufficiently large valley $y$ of length $\ell=a+b$, ending at $z$, satisfied
+$$V(y)-V(z)\ge \sum_{j=0}^{\ell-1}w(T^j y)\left(c-C{\bf1}_S(T^j y)\right).\tag{2}$$
+Sum along successive actual valleys and apply (1) to see the contradiction. This pays a uniformly bounded *relative* cost per actual reset hit; the existing first-return construction has no such uniform relative bound. The denominator $\log(y+2)$ alone per entire valley does not automatically give a divergent clock sum: the uniform bound on growth per shortcut step does not bound growth by a constant factor per valley.
+
+The same argument yields a finite global threshold conditional on (2). Choose $t$ so the window and a slightly widened arc have length much less than $c/C$ (the case $C=0$ needs no window). Choose $K$ giving a uniform visit fraction to that widened arc less than $c/(4C)$. Increase $B$ past the finite exceptions to $S\subset W_t$, the domain cutoff of (2), and enough to ensure $K/(3B\log3)$ is smaller than the enlargement margin. Increase it again so the maximum and minimum weights in any $K$-block staying above $B$ differ by at most a factor two. This is possible because consecutive logarithmic heights differ by at most a fixed constant. All such complete blocks now have weighted reset fraction at most $c/(2C)$. A positive infinite trajectory staying entirely above $B$ would therefore have divergent net debit by (2), summing to complete-valley endpoints and discarding a bounded partial $K$-block; the harmonic lower bound on the total weights holds even for a bounded trajectory. Hence (2) forces **every** positive orbit to enter one fixed finite interval. Excluding cycles that intersect that interval still requires a finite orbit check. This conclusion is strictly conditional on constructing $V$ with controlled negative increments.
+
+## Reset-clock potentials and the missing debit
+
+A physical first-hit candidate for a fixed section is the cost to its next visit, $F_S(n)=\sum_{j<\tau_S(n)}w(T^jn)$. It is finite whenever the prescribed hit is guaranteed and zero at a mark. The positive debits before a mark are exact. Between successive marks $s,u$, its loss on the first edge from $s$ is exactly the sum of all the subsequent unmarked credits up to $u$ (zero for consecutive marks). Coupling several scales by a positive linear combination does not change this identity scale by scale. Small interpolation measure mass does not bound these losses.
+
+A different candidate subtracts a common divergent offset from discounted infinite-horizon costs. Let $w_0(n)=w(n){\bf1}_{n\notin\{1,2\}}$ and $G_r(n)=\sum_{j\ge0}r^j w_0(T^j n)$, $0<r<1$. The exact debit is $w_0(n)-(1-r)G_r(Tn)$. On one escaping source the latter correction tends to zero as $r\uparrow1$, since $w_0(T^jn)\to0$. But its $G_r(n)$ diverges by (1) and monotone convergence. Even if a common scalar $d_r$ could give finite pointwise limits of $G_r-d_r$ along a subsequence on that escaping component, their limiting values would debit $w$ on every edge, and so would tend to minus infinity forward. This excludes an argument that scalar normalization preserves the lower bound required for descent.
+
+## A quantitative test through one fixed ordinary predecessor basin
+
+There is also an unconditional obstruction to bounded or slowly growing sums of phase corrections. Fix any positive ternary unit $q$ and its actual predecessor basin $P(q)$. Suppose a candidate valley potential $V$ has a debit
+$$V(y)-V(z)\ge w(y)\left(c-C{\bf1}_M(y)\right),\qquad c>0,\quad 0\le C<\infty,\tag{3}$$
+on all sufficiently large internal odd valley edges of $P(q)$. Alternatively suppose (2) on these edges. For any nondecreasing real function $G$ of the ordinary input size,
+$$\limsup_{\substack{n\to\infty\\ n\in P(q),\ n\ \mathrm{odd}}}
+ \frac{|V(n)-G(n)|\log(n+2)}{\log\log(n+2)}
+ \ \ge\ \frac{c}{4\log 3} .\tag{4}$$
+For (2), the proof even supplies $3c/(4\log3)$. In particular $G(n)+H(n)/\log(n+2)$ with bounded $H$ fails, even if all its phase corrections use different scales, arbitrary measurable functions, or the exact integer $n$. The assertion does not exclude larger corrections.
+
+For each $k$, choose an exponent $e\in[2\cdot 9^k,4\cdot9^k]$ with $2^e q\equiv-14\bmod 3^{2k+1}$. The unit group is generated by two with period $2\cdot9^k$ (use $v_3(4^{3^h}-1)=h+1$). Let $y=(2^eq-1)/3$, an odd ordinary predecessor reaching $q$ with $9^k\mid y+5$, and put
+$$x_i=8^{k-i}9^i(y+5)/9^k-5\quad(0\le i\le k).$$
+Each $x_i$ is odd, $x_k=y$, and for $i<k$, $x_i\equiv3\bmod8$. Its first two inputs are odd, its third is even, and $T^3x_i=(9x_i+5)/8=x_{i+1}$ is odd. These are exactly $k$ consecutive expanding $(2,1)$ valleys inside the *same fixed basin*. All physical states exceed or equal $x_0$, and their logarithmic heights are $e\log2+O_q(k+1)$. In particular $\log\log(x_i+2)=2k\log3+O_q(1)$ uniformly and $w(x_i)/w(x_0)=1+o(1)$.
+
+The cumulative circle-phase error along their $3k$ physical steps is $O(k/x_0)=o(1)$. The true starts and all their true intermediate states therefore shadow one $3k$-clock irrational rotation up to a vanishing phase error. Uniform rotation equidistribution and the eventual inclusions $S\subset W_t$ above the fixed cutoff for each $t$ show that $o(k)$ physical sites land in $S$. Thus at most $o(k)$ of these valleys lie in $M$. Telescoping (3) gives $V(x_0)-V(y)\ge(c-o(1))k/\log(x_0+2)$; telescoping (2) gives the same bound with $3c$. Since $x_0<y$ and $G$ is nondecreasing, $|V(x_0)-G(x_0)|+|V(y)-G(y)|$ is at least this large. At least one endpoint witnesses (4), using their comparable logarithms.
+
+If the claim concerns *all* ordinary starts with no selected basin, there is a complementary short choice $x_0=2\cdot8^k-5$, $x_k=2\cdot9^k-5$. The same whole-block rotation estimate applies, with logarithmic heights of order $k$. Their total assigned debit is then bounded below by a positive constant, showing that even $V(n)=G(n)+o(1)$ cannot work on all large ordinary edges. Unlike (4), this last short choice alone does not prescribe a common target $q$ across $k$.
+
+The remaining problem is an actual ordinary construction with large enough oscillation and with negative increments controlled at the same reset dates. The frequency calculation pays bounded relative tolls if such a function exists. Neither small total measure mass nor a convergent sum of uniformly bounded rescaled phase clocks supplies one.

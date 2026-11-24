@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-multiscale-series-sources/v1",
+  "repository": "GettysburgResearch/collatz",
+  "base_commit": "273e5433a4b16a17998ad98d92549ee06896abff",
+  "base_packet": "research/high-variance-closure-20261124",
+  "direct_inputs": [
+    {
+      "commit": "273e5433a4b16a17998ad98d92549ee06896abff",
+      "paths": [
+        "research/high-variance-closure-20261124/SPARSE_RESET_MEASURE.md",
+        "research/high-variance-closure-20261124/DIFFUSE_RANK.md",
+        "research/high-variance-closure-20261124/QUARTER_SHIFT.md"
+      ],
+      "use": "actual sparse selector and image; valuation interpolation; balanced ordinary correction"
+    },
+    {
+      "commit": "273e5433a4b16a17998ad98d92549ee06896abff",
+      "path": "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+      "sha256": "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+      "use": "freshly recompiled formal dependency; shortcut, endpoint, odd count and finite convergence below 20"
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "use": "source-qualified compression test in SIMULTANEOUS_RESETS only; not needed by the series equivalence or reset-frequency theorem"
+    }
+  ],
+  "external_input": {
+    "authors": "Nicolas Gouillon",
+    "title": "Explicit lower bounds for linear forms in two logarithms",
+    "url": "https://www.numdam.org/item/JTNB_2006__18_1_125_0.pdf",
+    "use": "Corollary 2.3 at the fixed bases 2 and 3; effective c>0 and kappa>=1 with distance(h log_3(2), Z)>=c h^(-kappa)"
+  },
+  "formal_scope": "ordinary series summability and boundedness iff hitting one, with positive-natural domain; not universal summability or measure construction",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "novelty_scope": "no literature-priority claim for weighted stopping-series criteria or general potential constructions"
+}
