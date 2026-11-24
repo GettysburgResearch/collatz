@@ -1,0 +1,149 @@
+[
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/README.md",
+    "sha256": "a977d6e4d5839cbfbafca18dffb9b4f80ecd568768f6b5a7772072ee27967286"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/ACTUAL_APPROXIMATION.md",
+    "sha256": "2f4ae63620704603ae4087e01ba18dba0b8e6a531b07ec54621d5b8b798f4a2c"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/CompanionPacking.lean",
+    "sha256": "3ddcbabc648513aee14327c5b3b673cedf6bbb3672bf778fdc0fd045374612ce"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/check.py",
+    "sha256": "96f9bf3e11ad03fe0de6774309452fb76b8bf5193e024a075ebc46116100f6e8"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/arithmetic/controls.json",
+    "sha256": "c790b21a01f7789510f11b1829ef0bb0c6ecdb05b55c3fce67c2c3bda4eb7b13"
+  },
+  {
+    "author_agent": "joint_floor_machinery",
+    "path": "research/astra-fixed-target-closure-20261124/analytic/JOINT_REAL_FLOOR.md",
+    "sha256": "0664b27279cff0ecabd87055b1bf09072ea2c2299e9bfc019ebfd5c03747b590"
+  },
+  {
+    "author_agent": "joint_floor_machinery",
+    "path": "research/astra-fixed-target-closure-20261124/analytic/SHRINKING_WINDOWS.md",
+    "sha256": "db8609eaba5fea77c7c4f83cf3b47e58579f8e24b646a551775624233265afea"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/analytic/DYADIC_ZOOM.md",
+    "sha256": "a769f4df56962903e4bc952269f35ff916cfb34ea4edbf9f994bd0ea8278389d"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/analytic/zoom_check.py",
+    "sha256": "741610ad86ca335b6074959052b0dba5f95c5486819112ef6fc6cead679c7fe1"
+  },
+  {
+    "author_agent": "arithmetic_rigidity",
+    "path": "research/astra-fixed-target-closure-20261124/analytic/zoom_controls.json",
+    "sha256": "c52aa253fbc0cac124ecb27128c824289202e30518189185a38ced3fe866957a"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/README.md",
+    "sha256": "ed2f484f44dcf58ceb8bcd0ba0c4675ff9561ab57372ff958776a27aed547c97"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/OneEvenEscape.lean",
+    "sha256": "7c2cb76bcb2f129d00cfe83e1fad919212e3f2557c58e01f0c0ba8ab728fc2f5"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_escape.py",
+    "sha256": "edae659474cacf2740b09c29da1941bcb1bc32c84eef73dfa1e412064add784e"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/controls.json",
+    "sha256": "58a86bb5f16e8fe5255def13cf891b7bc6ca175e9d4edcdb13262a37a4801720"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/SourceDeletion.lean",
+    "pr": 192,
+    "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+    "source_paths": [
+      "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean"
+    ],
+    "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/MinimumFailure.lean",
+    "pr": 192,
+    "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+    "source_paths": [
+      "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean"
+    ],
+    "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/UpperRepresentative.lean",
+    "pr": 192,
+    "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+    "source_paths": [
+      "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean"
+    ],
+    "sha256": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+    "sha256": "e816dc32482325e0507073cfe53f749a5f2d5f39adc786cbf11e703b824b9d42",
+    "reviewed_original_sha256": "768d24b554de6382138fbabf2672a689717975b1804ff713f8a70f722fb9b748",
+    "coordinator_change": "Citation only: replace inaccessible Durand notes link with Vaughan notes, Theorem 2.3. Mathematical text unchanged."
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/check_strip.py",
+    "sha256": "4f588da0cf8b8a83cdc8e573635c2a967323a05b2d57c99893f1dd1c8e448eb4"
+  },
+  {
+    "author_agent": "ordinary_closure",
+    "path": "research/astra-fixed-target-closure-20261124/ordinary/strip_controls.json",
+    "sha256": "f2630365c672a800145d5e7c8763ba74935575316213253ebe25f9983fb78072"
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/lean/ClockTransport.lean",
+    "pr": 202,
+    "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+    "original_snapshot": "reports/astra-fixed-target-closure-20261124/original-sources/pr202/ClockTransport.lean",
+    "original_sha256": "008a8f330a39b4d0a0e573f2b2463eb388ad74cd29c8cce6d8af8b169955c059",
+    "sha256": "d178a2d3763b281f99079e807fabec3507acfc2976dd7e00b539af2a00cda958",
+    "change": "Narrow imports; rename unused hB binder to _hB. Propositions and proof bodies unchanged."
+  },
+  {
+    "path": "research/astra-fixed-target-closure-20261124/lean/MixedTransport.lean",
+    "pr": 203,
+    "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+    "original_snapshot": "reports/astra-fixed-target-closure-20261124/original-sources/pr203/MixedTransport.lean",
+    "original_sha256": "aaac3afd181c9f8e48bd971452365771cd050925cf67439c2efe3affe191c1ce",
+    "sha256": "a9deab7ebee920e47ee1d8f946695e285c50b91e8fc7ad98f283deb9e8502aea",
+    "change": "Narrow imports; propositions and proof bodies unchanged."
+  },
+  {
+    "author_agent": "root",
+    "path": "research/astra-fixed-target-closure-20261124/lean/CentralInverseBarrier.lean",
+    "sha256": "b9eab70438a2458a0371f6dc4457957a0d83e9abc341de352c9508f35eb619d6"
+  },
+  {
+    "author_agent": "root",
+    "path": "research/astra-fixed-target-closure-20261124/replay_lean.py",
+    "sha256": "7884e8a7069041c2fb6e970ac19f9cacbc72afdb8bd6084f8f9704a747a92ed0"
+  },
+  {
+    "author_agent": "root",
+    "path": "research/astra-fixed-target-closure-20261124/README.md",
+    "sha256": "66250a7d38281e7aca18882ebad7707d25fb2eceec54c5e15b5c25fb8bf5e20e"
+  }
+]

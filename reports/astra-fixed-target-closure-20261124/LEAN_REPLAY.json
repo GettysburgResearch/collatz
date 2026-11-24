@@ -1,0 +1,668 @@
+{
+  "scope": "Finite Lean kernels and exact imported dependencies only; no formalization of the analytic floor, entropy limits, stationary probability, or full Collatz.",
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "packages": [
+    {
+      "name": "plausible",
+      "revision": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "passed": true,
+  "modules": [
+    {
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/SourceDeletion.lean",
+      "kind": "byte-identical dependency",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-fixed-target-lean-szom79h3/SourceDeletion.olean",
+        "/tmp/collatz-fixed-target-lean-szom79h3/SourceDeletion.lean"
+      ],
+      "cwd": "/tmp/collatz-fixed-target-lean-szom79h3",
+      "returncode": 0,
+      "output": "'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.SourceDeletion.lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.swapped_paths",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.swapped_row",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.delete_digit",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.lower_representative",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.all_below",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.all_below_cutoff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.SourceDeletion.seven_mod_eight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/MinimumFailure.lean",
+      "kind": "byte-identical dependency",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-fixed-target-lean-szom79h3/MinimumFailure.olean",
+        "/tmp/collatz-fixed-target-lean-szom79h3/MinimumFailure.lean"
+      ],
+      "cwd": "/tmp/collatz-fixed-target-lean-szom79h3",
+      "returncode": 0,
+      "output": "'Collatz.MinimumFailure.good_one' does not depend on any axioms\n'Collatz.MinimumFailure.good_step' does not depend on any axioms\n'Collatz.MinimumFailure.good_run' does not depend on any axioms\n'Collatz.MinimumFailure.label_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.label_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.label_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.exists_least_discordance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.good_below' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.good_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.upper_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.smaller_triples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.smaller_multiples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.counterexample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.exclude_seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumFailure.counterexample_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.MinimumFailure.good_one",
+          "axioms": []
+        },
+        {
+          "name": "Collatz.MinimumFailure.good_step",
+          "axioms": []
+        },
+        {
+          "name": "Collatz.MinimumFailure.good_run",
+          "axioms": []
+        },
+        {
+          "name": "Collatz.MinimumFailure.label_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.label_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.label_eq_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.exists_least_discordance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.good_below",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.good_cutoff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.upper_bad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.smaller_triples_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.smaller_multiples_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.counterexample_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.exclude_seven_mod_eight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.MinimumFailure.counterexample_reduction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/dependencies/UpperRepresentative.lean",
+      "kind": "byte-identical dependency",
+      "sha256": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-fixed-target-lean-szom79h3/UpperRepresentative.olean",
+        "/tmp/collatz-fixed-target-lean-szom79h3/UpperRepresentative.lean"
+      ],
+      "cwd": "/tmp/collatz-fixed-target-lean-szom79h3",
+      "returncode": 0,
+      "output": "'Collatz.UpperRepresentative.seven_upper' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.seven_lower' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_lower' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_comparison' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.signed_upper' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.invariant_run' does not depend on any axioms\n'Collatz.UpperRepresentative.no_signed_minimum' depends on axioms: [propext, Quot.sound]\n'Collatz.UpperRepresentative.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.first_exit_labels' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.first_exit_reduces' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.UpperRepresentative.complementary_exit' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.UpperRepresentative.seven_upper",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.seven_lower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.signed_lower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.signed_comparison",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.signed_upper",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.invariant_run",
+          "axioms": []
+        },
+        {
+          "name": "Collatz.UpperRepresentative.no_signed_minimum",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.all_odd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.first_exit_labels",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.first_exit_reduces",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.UpperRepresentative.complementary_exit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/lean/ClockTransport.lean",
+      "kind": "finite kernel",
+      "sha256": "d178a2d3763b281f99079e807fabec3507acfc2976dd7e00b539af2a00cda958",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean/ClockTransport.lean"
+      ],
+      "cwd": "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean",
+      "returncode": 0,
+      "output": "'SynchronizedBasinBlocks.walk_add' depends on axioms: [propext]\n'SynchronizedBasinBlocks.common_clock' depends on axioms: [propext]\n'SynchronizedBasinBlocks.attach_target' depends on axioms: [propext]\n'SynchronizedBasinBlocks.fixed_clock_injective' does not depend on any axioms\n'SynchronizedBasinBlocks.inverse_step_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.carry_height_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.scaled_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.router_height_cost' does not depend on any axioms\n",
+      "axiom_audit": [
+        {
+          "name": "SynchronizedBasinBlocks.walk_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.common_clock",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.attach_target",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.fixed_clock_injective",
+          "axioms": []
+        },
+        {
+          "name": "SynchronizedBasinBlocks.inverse_step_affine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.carry_height_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.scaled_carry_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SynchronizedBasinBlocks.router_height_cost",
+          "axioms": []
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/lean/MixedTransport.lean",
+      "kind": "finite kernel",
+      "sha256": "a9deab7ebee920e47ee1d8f946695e285c50b91e8fc7ad98f283deb9e8502aea",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean/MixedTransport.lean"
+      ],
+      "cwd": "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean",
+      "returncode": 0,
+      "output": "'MixedTransport.run_add' depends on axioms: [propext]\n'MixedTransport.distinct_depths' depends on axioms: [propext, Quot.sound]\n'MixedTransport.cannot_hit_target_earlier' depends on axioms: [propext, Quot.sound]\n'MixedTransport.common_clock' depends on axioms: [propext]\n'MixedTransport.lift_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedTransport.word_carry_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "MixedTransport.run_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "MixedTransport.distinct_depths",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MixedTransport.cannot_hit_target_earlier",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MixedTransport.common_clock",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "MixedTransport.lift_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MixedTransport.word_carry_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/lean/CentralInverseBarrier.lean",
+      "kind": "finite kernel",
+      "sha256": "b9eab70438a2458a0371f6dc4457957a0d83e9abc341de352c9508f35eb619d6",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean/CentralInverseBarrier.lean"
+      ],
+      "cwd": "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/lean",
+      "returncode": 0,
+      "output": "'Collatz.CentralInverseBarrier.inverse_at_least_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CentralInverseBarrier.inverse_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CentralInverseBarrier.word_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CentralInverseBarrier.central_product' depends on axioms: [propext, Quot.sound]\n'Collatz.CentralInverseBarrier.central_word_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CentralInverseBarrier.central_window_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CentralInverseBarrier.no_central_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.CentralInverseBarrier.inverse_at_least_three",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.inverse_step_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.word_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.central_product",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.central_word_expands",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.central_window_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CentralInverseBarrier.no_central_descent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/arithmetic/CompanionPacking.lean",
+      "kind": "finite kernel",
+      "sha256": "3ddcbabc648513aee14327c5b3b673cedf6bbb3672bf778fdc0fd045374612ce",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/arithmetic/CompanionPacking.lean"
+      ],
+      "cwd": "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/arithmetic",
+      "returncode": 0,
+      "output": "'Collatz.CompanionPacking.affine' depends on axioms: [propext]\n'Collatz.CompanionPacking.same_past' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CompanionPacking.packing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CompanionPacking.record_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.CompanionPacking.affine",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Collatz.CompanionPacking.same_past",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CompanionPacking.packing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.CompanionPacking.record_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/OneEvenEscape.lean",
+      "kind": "finite kernel",
+      "sha256": "7c2cb76bcb2f129d00cfe83e1fad919212e3f2557c58e01f0c0ba8ab728fc2f5",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/ordinary/OneEvenEscape.lean"
+      ],
+      "cwd": "/workspace/scratch/ff0fa7d64f83/collatz-continuation/research/astra-fixed-target-closure-20261124/ordinary",
+      "returncode": 0,
+      "output": "'Collatz.OneEvenEscape.reverse_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.path_no_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.bounded_chain_escapes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.rewind_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.interior_double_exit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.singleton_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OneEvenEscape.singleton_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "axiom_audit": [
+        {
+          "name": "Collatz.OneEvenEscape.reverse_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.path_no_repeat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.bounded_chain_escapes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.rewind_repeat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.interior_double_exit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.singleton_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Collatz.OneEvenEscape.singleton_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ],
+  "audited_declaration_count": 66
+}

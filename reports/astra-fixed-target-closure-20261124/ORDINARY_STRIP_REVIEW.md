@@ -1,0 +1,25 @@
+# Review of the sub-square-root ordinary deadline
+
+**Verdict: verified as a written theorem using an exact finite integer certificate.** This review assumes the before-crossing and recentered-cycle structure checked in ORDINARY_REVIEW.md, including its precise least-disagreement hypothesis and its first crossing or repetition construction.
+
+| Source inspected | SHA-256 |
+|---|---|
+| HEIGHT_STRIP.md | 768d24b554de6382138fbabf2672a689717975b1804ff713f8a70f722fb9b748 |
+| check_strip.py | 4f588da0cf8b8a83cdc8e573635c2a967323a05b2d57c99893f1dd1c8e448eb4 |
+| strip_controls.json | f2630365c672a800145d5e7c8763ba74935575316213253ebe25f9983fb78072 |
+
+**The physical strip.** Write n=3q, s=(n−1)/2. Across a completed bounded-to-bounded singleton edge, the odd sites start at height at least s and increase up to the last odd site. Its odd shortcut lands at the even value 2y′; hence the last odd site is (4y′−1)/3≤(8n−1)/3. The bounded entry y′ at the end also lies in the strip. This gives ratio at most (16n−2)/(3n−3)<267/50 for n≥10⁶. Thus H=log₂(x/s) lies in [0,2.42), by the exact integer inequality supplied. An internal odd-to-odd step has denominator 2, and the last step of a run has denominator 4. This conclusion uses only the singleton path and stops before any final edge ending above 2n.
+
+**Drift and rounding.** For a 512-step block, H_i=H₀+iA−D_i+E_i, with accumulated ones D_i and 0≤E_i≤512/s from log₂(1+1/(3x))<1/x. A₀=58496/100000 satisfies 0<A−A₀<10⁻⁵ by the stated exact comparison. For B=(ceil(100H₀)+1)/100 one has .01≤B−H₀<.02 and B in the tested grid. Hence B+iA₀−D_i=H_i+(B−H₀)−i(A−A₀)−E_i. The subtraction is less than .01 since 512(10⁻⁵+1/s)<.01 at the stated onset. This yields both required endpoints of the rational strip. Small n are absorbed into the implied constant by the previously proved finite deadline.
+
+**Independent finite count.** Both normal and optimized invocations of the supplied Python recurrence reproduced its stored integer. I also executed a separately written recurrence in the scaled height coordinate. Initialize one path at each of the 245 integer heights 0,1000,...,244000. At each of 512 clocks propagate its full integer multiplicity to the two heights H+58496 and H−41504, retaining each only in [0,244000]. The terminal sum in this independent computation was
+
+    C = 212645256384396458825682891323571683274873328767864650541987922574538402882020434401076164100822363646544085559650226048.
+
+It agreed with strip_controls.json and satisfied the exact integer comparison C^100<3^25088. Each allowable block word is counted at least once. Counting a word from more than one compatible bin increases the upper bound. The per-block C already includes all bins, so disjoint successive blocks can be counted by multiplying C, irrespective of the compatibility of their starting bins. For k=512t+r, 0≤r<512, the residual 2^r costs an absolute constant when bounding C^t2^r by O(3^(0.49k)).
+
+**Injection and physical time.** For any k consecutive protected odd steps, iteration of 2^(1+e)x′=3x+1 gives 2^(k+D_k)x_end=3^k x_start+C_word. Thus the terminal residue is fixed modulo 3^k by the ordered word. No run alignment is necessary at the beginning of the word. Choose k=ceil(log₃(2n+1)); at most one positive entry of height ≤2n lies in each residue. At most k initial run entries have fewer than k preceding protected odd inputs. All entries prior to the event are distinct, so the event comes in O(q^0.49) runs. The previous proof charges at most six physical clocks for each completed bounded edge, O(log q) for the last potentially unbounded edge, and a constant to return from the recentered path to original n. In the recentered cycle case the repeat rewinds to the root; the complete protected cycle up to this repeat therefore also has O(q^0.49) length, rather than just a bound on time to first enter it.
+
+**Continued fractions.** On this cycle the least physical lap has h shortcut inputs, p odd inputs and minimum s. Multiplication over the full lap gives the positive excess h/p−log₂3 as an average of p terms log₂(1+1/(3x)), all <1/s. Also p=O(s^0.49); thus 1/s=O(p^(−100/49)), and p²/s=O(s^(−0.02)). The latter is less than 1/2 eventually. If b is the denominator of the *reduced* ratio h/p, then b≤p, and the difference is <1/(2b²). Legendre's criterion therefore gives an upper convergent to log₂3. Unbounded s would yield distinct reduced ratios with unbounded denominators because the errors tend to zero and log₂3 is irrational. The implied constant in the quantitative approximation gives an irrationality-exponent lower bound ≥100/49 on such a family by taking strict smaller exponents. No opposite irrationality bound, crossing contradiction or exclusion of an exceptional cycle is supplied.
+
+The height calculation and asymptotic time and Diophantine consequences were independently reconstructed as written mathematics. The exact DP is a finite computation. None of these later conclusions is claimed as one of the seven previously compiled Lean declarations.

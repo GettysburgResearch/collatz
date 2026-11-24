@@ -1,0 +1,38 @@
+[
+  {
+    "pr": 202,
+    "commit": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+    "path": "research/synchronized-long-basin-blocks-20261124/ClockTransport.lean",
+    "local_path": "/workspace/scratch/ff0fa7d64f83/continuation-sources/pr202/ClockTransport.lean",
+    "sha256": "008a8f330a39b4d0a0e573f2b2463eb388ad74cd29c8cce6d8af8b169955c059",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "/workspace/scratch/ff0fa7d64f83/continuation-sources/pr202/ClockTransport.lean"
+    ],
+    "returncode": 1,
+    "seconds": 82.90256381400104,
+    "output": "/workspace/scratch/ff0fa7d64f83/continuation-sources/pr202/ClockTransport.lean:77:5: error: Variable name `hB` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hB\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'SynchronizedBasinBlocks.walk_add' depends on axioms: [propext]\n'SynchronizedBasinBlocks.common_clock' depends on axioms: [propext]\n'SynchronizedBasinBlocks.attach_target' depends on axioms: [propext]\n'SynchronizedBasinBlocks.fixed_clock_injective' does not depend on any axioms\n'SynchronizedBasinBlocks.inverse_step_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.carry_height_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.scaled_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SynchronizedBasinBlocks.router_height_cost' does not depend on any axioms\n"
+  },
+  {
+    "pr": 203,
+    "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+    "path": "research/mixed-adic-basin-density-20261124/MixedTransport.lean",
+    "local_path": "/workspace/scratch/ff0fa7d64f83/continuation-sources/pr203/MixedTransport.lean",
+    "sha256": "aaac3afd181c9f8e48bd971452365771cd050925cf67439c2efe3affe191c1ce",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "/workspace/scratch/ff0fa7d64f83/continuation-sources/pr203/MixedTransport.lean"
+    ],
+    "returncode": 0,
+    "seconds": 91.91863460800232,
+    "output": "'MixedTransport.run_add' depends on axioms: [propext]\n'MixedTransport.distinct_depths' depends on axioms: [propext, Quot.sound]\n'MixedTransport.cannot_hit_target_earlier' depends on axioms: [propext, Quot.sound]\n'MixedTransport.common_clock' depends on axioms: [propext]\n'MixedTransport.lift_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedTransport.word_carry_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  }
+]
