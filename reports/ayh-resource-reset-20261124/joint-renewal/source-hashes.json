@@ -1,0 +1,97 @@
+{
+  "schema": "collatz-joint-renewal-source-hashes/v1",
+  "base_commit": "578e43911f49d41ef610b368a89b5a1ec269e134",
+  "hash_algorithm": "sha256",
+  "files": [
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/AffineGradeRigidity.lean",
+      "bytes": 3685,
+      "sha256": "f498a300fd31618a6ae550bfef0614a65efca0c6ae6087494d32d415a7ca2ecf"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/EndpointFibers.lean",
+      "bytes": 5271,
+      "sha256": "3708dd8b26c4f01992abde43c304594434072591d522b4a6c821e675e99c5418"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/EntranceGrades.lean",
+      "bytes": 4656,
+      "sha256": "003735dcd04a869339507c2fc1c70842aa4493431da515920186b95734937a3a"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/JOINT_ENTRANCE_GRADES.md",
+      "bytes": 19460,
+      "sha256": "46c881d002b4736b153b46fd7bbd3b55a8ee7f369ced617ab28e0b712d6a310e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/KILLED_GRADE_OCCUPATION.md",
+      "bytes": 10029,
+      "sha256": "f609bf39efd9478f53b7f6d76e418c714afd0cb4bf7a36d2840601ba645992c1"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/KilledGradeGreen.lean",
+      "bytes": 2807,
+      "sha256": "671bc6996b0595fe955aba8a1185d725abe0e25cb5063fac0d23a13dee98bc49"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md",
+      "bytes": 10180,
+      "sha256": "08eefbb0512911f26bcc3243981540d4bff32cd6c4fd6b8a88b72b15af7fa947"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/MiddleIsolationWindow.lean",
+      "bytes": 2518,
+      "sha256": "e250ef0a82b358a0b5a494e1bb30dec71b1d8902eb8d2402052ef6594d0ab1dc"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/QUARTET_COLLAPSE.md",
+      "bytes": 3068,
+      "sha256": "f41d01dc502e0e13c1112042329af11b40a86937b2e6467e24223509a963db55"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/QuartetCollapse.lean",
+      "bytes": 2214,
+      "sha256": "a2da0d79b1da31ff6c86fe8f144f9f5f86fc3b28f98b10b649271e39f5563cd5"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/README.md",
+      "bytes": 10717,
+      "sha256": "8951fbab37e26f3bfd3eb40da8cf3fbf127fbe5a254c395c9409b5e9052b8a65"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/SOURCES.json",
+      "bytes": 9607,
+      "sha256": "6948c68f75d75bed2059566b96937de24ca440846ec70157ce3dcb9cd32e9194"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/SubcriticalCurvature.lean",
+      "bytes": 4490,
+      "sha256": "8c5b655837299a777ce9375c9b053e4a46cc3618af40d6eef56497b360dffe0e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_FIRST_FUSION.md",
+      "bytes": 12475,
+      "sha256": "7b673f95dbe79aeaa674f9f0e8cf19aa9a6f66d2b208336ff77814a9634db69b"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/TRIPLE_SUBCRITICAL_MOMENTS.md",
+      "bytes": 10802,
+      "sha256": "82f207e0f09c8342706396348cb6e1aa1c4fdef17e0a5d415b2b8754cde4e04e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/TripleGradeProduct.lean",
+      "bytes": 2328,
+      "sha256": "9345f336af47a3a9d6092a71ad8e0ba157284d3946a62a3931a89ef779a7502e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/check_entrance_grades.py",
+      "bytes": 4265,
+      "sha256": "e0c9c2deb0d7cee239fcc520f0cb128229ddfcdc7ef4d7cf653291971892a44f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/joint-renewal/check_lean.sh",
+      "bytes": 2866,
+      "sha256": "c0816c2df984df9a49d7ba111c182580ae86dc49bfe57f70c302611c35205cbd"
+    }
+  ]
+}

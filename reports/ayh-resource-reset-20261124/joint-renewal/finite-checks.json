@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "research/ayh-resource-reset-20261124/joint-renewal/check_entrance_grades.py"
+  ],
+  "started_utc": "2026-11-24T08:18:15.025432+00:00",
+  "seconds": 4.383,
+  "exit_code": 0,
+  "source_sha256": "e0c9c2deb0d7cee239fcc520f0cb128229ddfcdc7ef4d7cf653291971892a44f",
+  "stderr": "",
+  "result": {
+    "finite_group": {
+      "l1_to_product": "15206/49",
+      "mean_translated_l1": "2852/7",
+      "modulus": 7
+    },
+    "head_controls": {
+      "certified_pairs": 13181,
+      "digit_trials": 172935
+    },
+    "record_patterns": {
+      "2HH": 9270,
+      "2HM": 2823,
+      "2MH": 11279,
+      "2MM": 6088,
+      "3HH": 7285,
+      "3HM": 2164,
+      "3MH": 8860,
+      "3MM": 4955
+    }
+  }
+}

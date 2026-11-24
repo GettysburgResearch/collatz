@@ -1,0 +1,181 @@
+{
+  "schema": "collatz-joint-renewal-sources/v1",
+  "inspected_date": "2026-11-24",
+  "base_pr": 197,
+  "base_head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+  "base_tree": "7e7dc25e077d14365c8ecb58713948c93ebbb1f6",
+  "scope": "Written deductions and separately kernel-checked finite/real-analysis interfaces; no universal convergence claim.",
+  "repository_inputs": [
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "status": "PROPOSED upstream written proof; relevant arguments reconstructed",
+      "use": "Exact binary source realization; physical holding, boundary returns, uniform pair survival and offset control. No upstream Lean probability rebuild."
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "status": "Written estimate inspected",
+      "use": "Uniform-location profile merger bounds and finite-deadline distinctions."
+    },
+    {
+      "pr": 197,
+      "head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "path": "research/ayh-resource-reset-20261124/literature-step/FIRST_PASSAGE_MARKS.md",
+      "status": "Earlier written proof reused; finite local imports rebuilt",
+      "use": "Original-source multistage first passage and simultaneous sliding parity tests."
+    },
+    {
+      "pr": 197,
+      "head": "578e43911f49d41ef610b368a89b5a1ec269e134",
+      "path": "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md",
+      "status": "Earlier written closing criterion",
+      "use": "The source-qualified positive-density implication from summable actual weighted head discordance. This input is not required for the new triple moment theorem."
+    },
+    {
+      "pr": 193,
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-heavy-machinery-20261124/dynamics/WEIGHTED_CLOCKS.md",
+      "blob": "94e4793b100a18eecbb741b4f319381d51ecdb01",
+      "status": "Focused source inspection; external formal dependencies not rebuilt",
+      "use": "Prior fixed-modulus weighted stopping-clock equidistribution. A fixed joint residue corollary is not claimed as new."
+    },
+    {
+      "pr": 193,
+      "head": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-heavy-machinery-20261124/ergodic/HEAD_DIAGONAL.md",
+      "blob": "56980d88e4a22be3c838bed45a6dcc1c2352140f",
+      "status": "Focused source inspection",
+      "use": "Prior positive first-passage diagonal mass under its stated fixed-target density assumption; does not supply a summable upper bound."
+    },
+    {
+      "pr": 199,
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "path": "research/optimal-critical-ancestors-20261124/FIRST_PASSAGE.md",
+      "blob": "56d41654d8db4649e3c994750339c44d32693a95",
+      "status": "Focused source inspection",
+      "use": "Prior joint first-passage criterion and explicit warnings about marginal laws and fixed-target density."
+    },
+    {
+      "pr": 192,
+      "head": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "path": "research/astra-high-variance-20261124/CENTRAL_CLOSURE.md",
+      "status": "Read by affine stream; coordinator read description only",
+      "use": "Prior inverse Green potential and fixed-spine summability obstruction; rediscovery was not promoted."
+    }
+  ],
+  "latest_pr_metadata": [
+    {
+      "pr": 200,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "title": "Regularity rigidity: macroscopic ancestor blocks, all-base automaticity obstruction, and 1/9 five-return pressure",
+      "head_sha": "c43fcbe6643c3d816975a4fb4328dc19dbdac6fb",
+      "intake": "Metadata and description; only selected files listed below were read."
+    },
+    {
+      "pr": 199,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199",
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "head_sha": "d868f8e8405c08b8c501236853bea495ca593824",
+      "intake": "Metadata and description; only selected files listed below were read."
+    },
+    {
+      "pr": 193,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "title": "Collatz: ordinary critical mergers, quantitative recurrence, and adelic rigidity",
+      "head_sha": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "intake": "Metadata and description; only selected files listed below were read."
+    },
+    {
+      "pr": 192,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "title": "Collatz: unrestricted closure test, ordinary descent, and five-module Lean replay",
+      "head_sha": "045be43632f274dd64faf15714e42cc8de27a2e9",
+      "intake": "Metadata and description; only selected files listed below were read."
+    },
+    {
+      "pr": 195,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "title": "Collatz: ordinary mergers, cycle denominator rank, and adelic boundaries",
+      "head_sha": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+      "intake": "Metadata and description; only selected files listed below were read."
+    }
+  ],
+  "external_inputs": [
+    {
+      "id": "CLOCK",
+      "author": "lyapunov_weaver",
+      "title": "Conditional clocks and source couplings for Collatz synchronization",
+      "version": "rStation paper 13 v1, 21 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/13",
+      "version_url": "https://rstation.ai/problems/collatz/papers/13/v1",
+      "location": "Proof of Theorem 6, equations (20)-(21), displayed page lines 174-181",
+      "status": "SOURCE-QUALIFIED recent written estimate; primary statement and proof interface read and reconstructed; no external Lean rebuild",
+      "use": "Unconditional mixed-step quota duration estimate uniform in all integer offsets and initial gap 2<=k<=K. Required for finite mean and p<3/2 moments.",
+      "access": "Unversioned primary page was read and labels itself v1; versioned path was inaccessible to this tool."
+    },
+    {
+      "id": "LEEN",
+      "author": "David Leen",
+      "title": "Late synchronization and the geometry of Collatz families",
+      "version": "9 October 2026 deposit",
+      "url": "https://doi.org/10.5281/zenodo.23268753",
+      "status": "Prior-work pointer, primary deposit inaccessible",
+      "use": "Credit for fixed-family capacities and surviving partitions. Accessible comparisons attribute a fixed-triple o(t^-1/2) first-merger result. No best-known-exponent or priority assertion.",
+      "comparison_urls": [
+        "https://rstation.ai/problems/collatz/papers/13",
+        "https://rstation.ai/r/collatz/posts/20"
+      ]
+    },
+    {
+      "id": "SHAIK",
+      "author": "Idris Ali Shaik",
+      "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+      "version": "Manuscript v4.0.2, 4 October 2026",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "status": "Primary manuscript read; external formalization not rebuilt",
+      "use": "Prior original-source first-passage concentration and scalar time-window/fiber method. Our missed-pair source-interval application is separated."
+    },
+    {
+      "id": "MATVEEV",
+      "author": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "version": "Izvestiya: Mathematics 64:6 (2000), 1217-1269",
+      "url": "https://www.mathnet.ru/eng/im314",
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "status": "Classical published external theorem",
+      "use": "Effective power separation for nonzero a log 2+b log 3 with bounded integer coefficients. No numerical exponent is claimed."
+    },
+    {
+      "id": "BW",
+      "author": "Alan Baker and Gisbert Wüstholz",
+      "title": "Logarithmic forms and group varieties",
+      "version": "Journal für die reine und angewandte Mathematik 442 (1993), 19-62",
+      "url": "https://doi.org/10.1515/crll.1993.442.19",
+      "status": "Classical published external theorem",
+      "use": "Optional all-scale power from bounded continued-fraction growth; the explicit-Q joint grade bound does not require it."
+    },
+    {
+      "id": "AYH",
+      "author": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "arxiv": "2105.14697",
+      "status": "Primary author PDF read; baseline rewriting route",
+      "use": "Mixed binary-ternary termination architecture. This checkpoint builds on the previously checked fixed-head reduction, not a new all-rule termination proof."
+    },
+    {
+      "id": "TAO",
+      "author": "Terence Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "version": "Forum of Mathematics, Pi 10 (2022), e12",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F",
+      "status": "Literature comparison; not a new theorem dependency here",
+      "use": "First-passage stabilization and 3-adic Fourier method motivated the joint investigation. Its marginal estimate is not treated as an ordinary two-arm law."
+    }
+  ]
+}

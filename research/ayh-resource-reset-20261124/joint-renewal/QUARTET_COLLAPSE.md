@@ -1,0 +1,15 @@
+# Two surviving affine classes in a dilation comparison
+
+There is a cylinder common to the tripling and doubling comparisons in the joint grade transport on which both new arms have already merged into the old upper arm. The original edge can still miss finite symbolic merger with probability of order $h^{-1/2}$ over another $h$ fresh bits.
+
+Take $n=32q+23$, suffix $r=73$, and write $B=n$, $A=81n+73$. The original ordinary positive shortcut at clock five gives
+$$
+ T^5 B=27q+20=:z,\qquad T^5 A=243q+182=9z+2.
+$$
+For $n'=3n+2$, the two new states at clock five both equal $243q+182$. For $n'=2n+1$, the new states at clock six both equal $243q+182$. All four affine identities for the dilated arms, the two original identities, and the strictly ordered residual profile hold for every $q\ge0$. They are formally checked by the high-bit lifting theorem in [QuartetCollapse.lean](QuartetCollapse.lean).
+
+At every later aligned clock there are at most two affine classes. Until the residual canonical level first returns to zero there are exactly two, since their slopes differ. In the fair model from level two, the level evolves at jump clocks as a symmetric simple walk until zero. If an independent sequence providing these fair jump signs keeps the embedded walk positive for $h$ jumps, it stays positive through the first $h$ physical clocks, since there are at most $h$ jumps in that many clocks. Reflection, or summation of the two image terms for a walk started at 2, gives this event probability $\gg (1+h)^{-1/2}$. This is the same written jump-process construction as [PR 146's clock lower bound](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_CLOCKS.md).
+
+This is an actual head-row bound. In $[7R/81,8R/81)$ let $N$ be the number of parents $n=32q+23$. The admissible $q$ form a consecutive interval of length $N=R/(81\cdot32)+O(1)$. At $h=\lfloor\log_2N\rfloor$ it contains one complete block of $2^h\ge N/2$ consecutive $q$, and $27q+20$ runs over every binary class modulo $2^h$ once. Thus $\gg R/\sqrt{\log R}$ original children in every sufficiently high row miss the original symbolic certificate at clock $5+h$, although both new arms have the certified collapse above. This also holds at the natural clock $\lfloor\log_2(R/81)\rfloor$: write $R/81=32M+s$ with integer $M\ge1$ and $0\le s<32$. Then $\lfloor\log_2(R/81)\rfloor=5+\lfloor\log_2 M\rfloor$, $N\ge M$, and the same proof with $h=\lfloor\log_2 M\rfloor$ applies.
+
+The example is positive mass at precisely the finite deadline relevant to the comparison. Its triples can all have merged down to two classes while the two desired dilate matches still fail. A theorem bounding the mass of **three** surviving symbolic classes cannot bound all such simultaneous finite failures. The result says nothing about the basin colors of the residual pair $z,9z+2$; they may have a later common future. Nor does it lower-bound the total variation of a distribution, in which losses from different sources can cancel.
