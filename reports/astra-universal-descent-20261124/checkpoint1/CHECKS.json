@@ -1,0 +1,253 @@
+{
+  "schema": "collatz-astra-universal-descent/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "New finite Lean declarations and bounded controls; not a proof of Collatz",
+  "formal": [
+    {
+      "source": "CycleCore.lean",
+      "sha256": "16452b97967d2279eb25dabfc4fa52df50d3b475d2a7cab85a46ba25d2f6c81b",
+      "audited_copy_sha256": "02ed3df09cace63c330b3d03423c1fa72ea0b795e6b7e8fe29eda32f537e4948",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/checks/checkpoint1/CycleCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 127.66,
+      "public_theorems": [
+        "CycleCore.endpointDefect",
+        "CycleCore.exactShadow",
+        "CycleCore.smallShadow",
+        "CycleCore.excludeOneByParity",
+        "CycleCore.dropLeadingOnes",
+        "CycleCore.residueSpacing",
+        "CycleCore.sharedDvd",
+        "CycleCore.scaledWindowBound"
+      ],
+      "axioms": {
+        "CycleCore.endpointDefect": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CycleCore.exactShadow": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CycleCore.smallShadow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CycleCore.excludeOneByParity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CycleCore.dropLeadingOnes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CycleCore.residueSpacing": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CycleCore.sharedDvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CycleCore.scaledWindowBound": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "EscapeCore.lean",
+      "sha256": "94c242425386d2273f74ec08164d91614df394ba482b6966b5dc4fbc714b9d73",
+      "audited_copy_sha256": "6c88797327a067d58acd2aaa4e5aee114b0142fd8a1fdafcb43a8d4ecfc1b618",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/checks/checkpoint1/EscapeCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 127.435,
+      "public_theorems": [
+        "EscapeCore.affine",
+        "EscapeCore.translated_interval",
+        "EscapeCore.forward_add",
+        "EscapeCore.residual_distinct",
+        "EscapeCore.inverse_transversal"
+      ],
+      "axioms": {
+        "EscapeCore.affine": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCore.translated_interval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCore.forward_add": [],
+        "EscapeCore.residual_distinct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCore.inverse_transversal": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "ShadowCore.lean",
+      "sha256": "e3902fa437b78b123d5cec2f73d04b68604fbfcf8b2eb2c674b161bf1a4cda16",
+      "audited_copy_sha256": "cdc545d6eb0843503571873412a3ddfa259bb1a5496c7b92e0139a9fe4587ae9",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/checks/checkpoint1/ShadowCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 128.303,
+      "public_theorems": [
+        "ShadowCore.step_even",
+        "ShadowCore.step_odd",
+        "ShadowCore.run_add",
+        "ShadowCore.run_first",
+        "ShadowCore.ones",
+        "ShadowCore.pair",
+        "ShadowCore.pairs",
+        "ShadowCore.guarded_meet",
+        "ShadowCore.guarded_smaller",
+        "ShadowCore.guarded_certificate"
+      ],
+      "axioms": {
+        "ShadowCore.step_even": [
+          "propext"
+        ],
+        "ShadowCore.step_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ShadowCore.run_add": [],
+        "ShadowCore.run_first": [],
+        "ShadowCore.ones": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ShadowCore.pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ShadowCore.pairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ShadowCore.guarded_meet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ShadowCore.guarded_smaller": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ShadowCore.guarded_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "cycle_check.py",
+      "sha256": "243f53bb7d82d2fe65909a93c5b1ba27f8ba40e8a8c7c742ad37ccaa40e8ef3b",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/cycle_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "i=4 b=4 M=25 exact_root=211/13\ni=16 b=11 M=2592 exact_root=129009091/5077565\ni=40 b=25 M=124416 exact_root=36472994178147530851/420491770248316829\nC5.1 checked on 179 primitive positive cycles and 4384 splits\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycle_check.py",
+      "sha256": "243f53bb7d82d2fe65909a93c5b1ba27f8ba40e8a8c7c742ad37ccaa40e8ef3b",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/cycle_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "i=4 b=4 M=25 exact_root=211/13\ni=16 b=11 M=2592 exact_root=129009091/5077565\ni=40 b=25 M=124416 exact_root=36472994178147530851/420491770248316829\nC5.1 checked on 179 primitive positive cycles and 4384 splits\n",
+      "stderr": ""
+    },
+    {
+      "source": "shadow_check.py",
+      "sha256": "09a4fa85d577a275c1112a570c9331d26d4d68e2e7294d585504ab7c7d49b179",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/shadow_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "63 exact positive certificates, h=0..20, a=1,8,17\n2188 smaller diagrams, 329 first-tier, n\u2264500, both clocks\u226416\n38 complete first-endpoint inversions, odd 3|n<350, clocks\u226490\nd, r_max, B_d, sufficient h: 1 2 1 2\nd, r_max, B_d, sufficient h: 2 4 2 6\nd, r_max, B_d, sufficient h: 4 10 3 11\nd, r_max, B_d, sufficient h: 8 51 21 60\nd, r_max, B_d, sufficient h: 12 259 21 66\nd, r_max, B_d, sufficient h: 16 1313 26 83\n",
+      "stderr": ""
+    },
+    {
+      "source": "shadow_check.py",
+      "sha256": "09a4fa85d577a275c1112a570c9331d26d4d68e2e7294d585504ab7c7d49b179",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/shadow_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "63 exact positive certificates, h=0..20, a=1,8,17\n2188 smaller diagrams, 329 first-tier, n\u2264500, both clocks\u226416\n38 complete first-endpoint inversions, odd 3|n<350, clocks\u226490\nd, r_max, B_d, sufficient h: 1 2 1 2\nd, r_max, B_d, sufficient h: 2 4 2 6\nd, r_max, B_d, sufficient h: 4 10 3 11\nd, r_max, B_d, sufficient h: 8 51 21 60\nd, r_max, B_d, sufficient h: 12 259 21 66\nd, r_max, B_d, sufficient h: 16 1313 26 83\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape_check.py",
+      "sha256": "a1a53de4eed23c5aafb334c0ed4398867143ebbf1ced674a1dff635c6838a43c",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/escape_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "8 256 130 126\n12 4096 1540 2556\n16 65536 19283 46253\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape_check.py",
+      "sha256": "a1a53de4eed23c5aafb334c0ed4398867143ebbf1ced674a1dff635c6838a43c",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/collatz/research/astra-universal-descent-20261124/escape_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "8 256 130 126\n12 4096 1540 2556\n16 65536 19283 46253\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}
