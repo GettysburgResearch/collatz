@@ -7,3 +7,7 @@
 - [APPROXIMATE_COLORING.md](APPROXIMATE_COLORING.md): An explicit binary coloring, not an invariant basin, has exact doubling, both colors of natural density 1/2, O(X/sqrt(log X)) adjacent/tripling/shortcut defects, and the same macroscopic and spectral screens. It can agree with arbitrary finite convergence verification. Slowly drifting resonant log-scale waves demonstrate why the exact odd-edge constraints cannot be replaced by these averaged estimates alone.
 
 [controls.js](controls.js) and [CONTROLS.json](CONTROLS.json) are executed exact finite evidence. [PointwiseFiber.lean](PointwiseFiber.lean) is **uncompiled candidate** Lean arithmetic, not formal verification of the written theorems. [SOURCES.md](SOURCES.md) gives exact inputs and scope, including the recent PRs and literature. The principal advancement is the same-law, same-clock, real-and-ternary branching theorem; the remaining gap is pointwise membership or source-preserving routing at the required precision for each actual ordinary failed comparison, followed by a genuine opposing estimate.
+
+## Further fixed-target reduction
+
+[COMMON_SUFFIX.md](COMMON_SUFFIX.md) proves a finite-menu common-suffix theorem, conditional on the pinned PR146 control results, and reduces paired pointwise pressure to the fixed-target finite-state-filtered one-arm count FS. [Exact finite control](COMMON_SUFFIX_CONTROL.js): 16 states, common 83-step suffix, 544 literal positive path checks. FS remains unproved; this is a reduction, not a proof of PT or Collatz.
