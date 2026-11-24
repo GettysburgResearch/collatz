@@ -1,0 +1,379 @@
+{
+  "schema": "collatz-ordinary-arithmetic-replay/v1",
+  "started_utc": "2026-11-24T09:13:49.352792+00:00",
+  "scope": "eleven new public declaration audits plus ten pinned dependency audits; four finite controls in two modes; no all-source arithmetic membership proof",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "compiler": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean": [
+    {
+      "source": "research/high-variance-closure-20261124/lean/QuarterShift.lean",
+      "source_sha256": "9799954b9bc35e270d72399f319c40004f272169c17285ff8fe296657db7a272",
+      "new_in_this_checkpoint": false,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "QuarterShift.olean",
+        "QuarterShift.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'QuarterShift.balanced_step' depends on axioms: [propext, Quot.sound]\n'QuarterShift.balanced_path' depends on axioms: [propext, Quot.sound]\n'QuarterShift.odd_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.even_run' depends on axioms: [propext, Quot.sound]\n'QuarterShift.below_twenty' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "QuarterShift.balanced_step": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.balanced_path": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.odd_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.even_run": [
+          "Quot.sound",
+          "propext"
+        ],
+        "QuarterShift.below_twenty": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "aa852ba195e4b5245c40cb9eb88616360a0671c6eeab0b17088494eb260c2d5d",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/continuation/lean/BiasedParity.lean",
+      "source_sha256": "f9be262b47615a2c19e1070b9efc38f948aa8573c75e751869c3a92ecdd64be2",
+      "new_in_this_checkpoint": false,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "BiasedParity.olean",
+        "BiasedParity.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'BiasedParity.highPrefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.geometricTerm' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.summableOfHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.boundedIffHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BiasedParity.summableIffHits' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "BiasedParity.highPrefix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.geometricTerm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.summableOfHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.boundedIffHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "BiasedParity.summableIffHits": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "6bb89a751eebe8f64c2d7fba9dbed82dfffa2425a3a69a4d0f3fcb7d91ccc5e2",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/DyadicCompanion.lean",
+      "source_sha256": "491f84776043b3d3eaad6ef173b329cbd535b9a196cb63c8714c4b5256c75cd9",
+      "new_in_this_checkpoint": true,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "DyadicCompanion.olean",
+        "DyadicCompanion.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'DyadicCompanion.heightDrop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicCompanion.visitsSmall' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicCompanion.smallFails' depends on axioms: [propext, Quot.sound]\n'DyadicCompanion.integralCompanionImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "DyadicCompanion.heightDrop": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "DyadicCompanion.visitsSmall": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "DyadicCompanion.smallFails": [
+          "Quot.sound",
+          "propext"
+        ],
+        "DyadicCompanion.integralCompanionImpossible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "c50f4244601c2f7d5a2db6ff3332e07001c0f1fa39085cc51b73397cf4f09c9a",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/ResetAncestor.lean",
+      "source_sha256": "4a81be6a1b9a90a91dfdbb2bc7033f06b7abecb8dd523e09590def5fe8e2a84d",
+      "new_in_this_checkpoint": true,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "ResetAncestor.olean",
+        "ResetAncestor.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'ResetAncestor.uniqueParent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ResetAncestor.equalToll' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ResetAncestor.delayedMerge' depends on axioms: [propext, Quot.sound]\n'ResetAncestor.nonperiodicBranch' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "ResetAncestor.uniqueParent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ResetAncestor.equalToll": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ResetAncestor.delayedMerge": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ResetAncestor.nonperiodicBranch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "5e5ac43f0d35d8b1d8694e64eb5b8750d19a66f5f2c3fe240d7eb7e7b38288a6",
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/PeriodicBoundary.lean",
+      "source_sha256": "06102eed5d2ac0f478b55ccc2843dfe6c5aaa79bbe1b96cfeaf6da03a80a54a1",
+      "new_in_this_checkpoint": true,
+      "fresh_dependency_order": true,
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "PeriodicBoundary.olean",
+        "PeriodicBoundary.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'PeriodicBoundary.everyStateMerges' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeriodicBoundary.liftedWalk' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeriodicBoundary.alignedNumerators' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "audits": {
+        "PeriodicBoundary.everyStateMerges": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PeriodicBoundary.liftedWalk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PeriodicBoundary.alignedNumerators": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": [],
+      "missing_audits": [],
+      "extra_audits": [],
+      "olean_sha256": "176baa4337c55cac2ea45b45cdae83a6cd57c882b429e50a8e40acf52c218741",
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/companion_checks.py",
+      "source_sha256": "84520a43d0a460b2f84f4c0f545cd3236e0ebda658e2711579a0e3ded8d9a015",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/companion_checks.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "{\n  \"physical_controls\": 128,\n  \"dyadic_bits_each\": 96,\n  \"different_triadic_trials\": 15995,\n  \"integral_companions_checked\": 62,\n  \"maximum_illegality_clock\": 17,\n  \"same_residue_convergent_pair\": [\n    232128511,\n    223346903\n  ],\n  \"physical_word\": [\n    17,\n    10\n  ],\n  \"term_multiplier\": \"17592186044416/7625597484987\",\n  \"adjacent_convergent_pair\": [\n    18446744073709551615,\n    18446744073709551616\n  ],\n  \"rational_cycle_companion\": \"-999/13\"\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/companion_checks.py",
+      "source_sha256": "84520a43d0a460b2f84f4c0f545cd3236e0ebda658e2711579a0e3ded8d9a015",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/companion_checks.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "{\n  \"physical_controls\": 128,\n  \"dyadic_bits_each\": 96,\n  \"different_triadic_trials\": 15995,\n  \"integral_companions_checked\": 62,\n  \"maximum_illegality_clock\": 17,\n  \"same_residue_convergent_pair\": [\n    232128511,\n    223346903\n  ],\n  \"physical_word\": [\n    17,\n    10\n  ],\n  \"term_multiplier\": \"17592186044416/7625597484987\",\n  \"adjacent_convergent_pair\": [\n    18446744073709551615,\n    18446744073709551616\n  ],\n  \"rational_cycle_companion\": \"-999/13\"\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/reset_exit_control.py",
+      "source_sha256": "4f9c86fbde907a6ab0dd8c7701815f599587533b691cef32755eea88dc4ba0f3",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/reset_exit_control.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "PASS j=8 bits=65,67 d=20 selector_depths=26,26\nPASS j=12 bits=146,148 d=24 selector_depths=72,72\nPASS j=16 bits=257,258 d=34 selector_depths=136,136\nPASS j=24 bits=577,579 d=48 selector_depths=330,330\nPASS j=32 bits=1026,1027 d=68 selector_depths=599,599\nPASS j=64 bits=4097,4099 d=130 selector_depths=2500,2500\nPASS ordinary selector, congruences, cheaper ancestors and delayed merges; no finite test of wrapped global membership\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/reset_exit_control.py",
+      "source_sha256": "4f9c86fbde907a6ab0dd8c7701815f599587533b691cef32755eea88dc4ba0f3",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/reset_exit_control.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "PASS j=8 bits=65,67 d=20 selector_depths=26,26\nPASS j=12 bits=146,148 d=24 selector_depths=72,72\nPASS j=16 bits=257,258 d=34 selector_depths=136,136\nPASS j=24 bits=577,579 d=48 selector_depths=330,330\nPASS j=32 bits=1026,1027 d=68 selector_depths=599,599\nPASS j=64 bits=4097,4099 d=130 selector_depths=2500,2500\nPASS ordinary selector, congruences, cheaper ancestors and delayed merges; no finite test of wrapped global membership\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/boundary_recurrence_control.py",
+      "source_sha256": "1e15a49b992bc83394c45befb78f7515e60367280dc0b3949563f31d182664eb",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/boundary_recurrence_control.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "{\n  \"order_4_ray\": {\n    \"fixed_root\": 17,\n    \"left_level\": 224,\n    \"right_level\": 128,\n    \"extra_clocks\": 10,\n    \"common_odd_grade\": 77,\n    \"all_native_residuals_left\": [\n      -14,\n      -13,\n      -12,\n      -11,\n      -9,\n      -7,\n      -6,\n      -3,\n      3,\n      6,\n      12\n    ],\n    \"all_native_residuals_right\": [\n      1,\n      2,\n      4,\n      8,\n      9,\n      21,\n      33,\n      39,\n      57,\n      66,\n      93,\n      114,\n      147,\n      228\n    ]\n  },\n  \"uniform_control\": {\n    \"modulus\": 65536,\n    \"residues_covered\": 61440,\n    \"distinct_exponent_orbits\": 32,\n    \"max_failed_exponents_before_hit\": 1023,\n    \"extra_merger_clock_at_most\": 16,\n    \"sufficient_1011_repetitions\": 9209\n  },\n  \"triadic_seeds\": {\n    \"highest_seed_denominator\": 4782969\n  },\n  \"terminal_sides\": {\n    \"fixed_center\": 5,\n    \"exponent\": 51,\n    \"actual_meeting_clocks\": [\n      72,\n      123,\n      124\n    ]\n  }\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/boundary_recurrence_control.py",
+      "source_sha256": "1e15a49b992bc83394c45befb78f7515e60367280dc0b3949563f31d182664eb",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/boundary_recurrence_control.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "{\n  \"order_4_ray\": {\n    \"fixed_root\": 17,\n    \"left_level\": 224,\n    \"right_level\": 128,\n    \"extra_clocks\": 10,\n    \"common_odd_grade\": 77,\n    \"all_native_residuals_left\": [\n      -14,\n      -13,\n      -12,\n      -11,\n      -9,\n      -7,\n      -6,\n      -3,\n      3,\n      6,\n      12\n    ],\n    \"all_native_residuals_right\": [\n      1,\n      2,\n      4,\n      8,\n      9,\n      21,\n      33,\n      39,\n      57,\n      66,\n      93,\n      114,\n      147,\n      228\n    ]\n  },\n  \"uniform_control\": {\n    \"modulus\": 65536,\n    \"residues_covered\": 61440,\n    \"distinct_exponent_orbits\": 32,\n    \"max_failed_exponents_before_hit\": 1023,\n    \"extra_merger_clock_at_most\": 16,\n    \"sufficient_1011_repetitions\": 9209\n  },\n  \"triadic_seeds\": {\n    \"highest_seed_denominator\": 4782969\n  },\n  \"terminal_sides\": {\n    \"fixed_center\": 5,\n    \"exponent\": 51,\n    \"actual_meeting_clocks\": [\n      72,\n      123,\n      124\n    ]\n  }\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/negative_kernel_control.py",
+      "source_sha256": "d8a1294eb62fc88924ba1ba37f7c8a7dc447cb768bc19e2eb79455d5721e6210",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/negative_kernel_control.py"
+      ],
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "{\n  \"two_step_rows\": 10000,\n  \"green_depths\": 24,\n  \"distinct_negative_centers\": 1739,\n  \"weighted_moment_partial_sum\": \"31341463129589/1223861324751\",\n  \"weighted_moment_upper_bound\": \"1539/13\",\n  \"odd_pole_lifts\": 23,\n  \"scope\": \"finite operator controls; no universal supersolution\"\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    },
+    {
+      "source": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/negative_kernel_control.py",
+      "source_sha256": "d8a1294eb62fc88924ba1ba37f7c8a7dc447cb768bc19e2eb79455d5721e6210",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-closure-20261124/ordinary-arithmetic/checks/negative_kernel_control.py"
+      ],
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "{\n  \"two_step_rows\": 10000,\n  \"green_depths\": 24,\n  \"distinct_negative_centers\": 1739,\n  \"weighted_moment_partial_sum\": \"31341463129589/1223861324751\",\n  \"weighted_moment_upper_bound\": \"1539/13\",\n  \"odd_pole_lifts\": 23,\n  \"scope\": \"finite operator controls; no universal supersolution\"\n}\n",
+      "stderr": "",
+      "same_stdout_across_modes": true,
+      "success": true
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-24T09:17:17.164675+00:00"
+}

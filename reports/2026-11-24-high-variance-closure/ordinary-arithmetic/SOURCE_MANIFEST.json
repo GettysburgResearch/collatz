@@ -1,0 +1,159 @@
+{
+  "schema": "collatz-ordinary-arithmetic-manifest/v1",
+  "base_commit": "a30402b7849c437edf245974d9f436d1f105e08e",
+  "scope": "Exact scientific sources, written reviews, executed replay receipt and archived preceding PR description; not a formal proof of the entire packet",
+  "receipt": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/REPLAY.json",
+  "excluded_self": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/SOURCE_MANIFEST.json",
+  "files": [
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/BOUNDARY_REVIEW.md",
+      "bytes": 8537,
+      "sha256": "113f34a6fef00dbae0483f295a05aa55c95aa77af9e65f70a6c557d6929d8674",
+      "git_blob_sha": "d3dc11b90f9ee0f4de331729c3b80d1ff5ead381"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/NEGATIVE_KERNEL_REVIEW.md",
+      "bytes": 2909,
+      "sha256": "6b8b38e44f8cfa240f78d0e4593d1c69b442e1f151c0137f55cac045fa9ae1a6",
+      "git_blob_sha": "8be2c2fb540db822bfb3a3a0ded5c67736fc3a1c"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/PREVIOUS_PR182_DESCRIPTION.json",
+      "bytes": 60072,
+      "sha256": "58e0545eaec6df17e98b4c40ec63e72657f4717e8458ad337120d1a0651bfef5",
+      "git_blob_sha": "eed4afc5b6ff0721db3f674ff20cff91a3dd355a"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/REPLAY.json",
+      "bytes": 19012,
+      "sha256": "129c316b297d537bdfa789a5a73f35c29490d8a74aaa7708bf17c407f06aadb1",
+      "git_blob_sha": "5eb9002be7022033f88715db848b5c447d3869cd"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/RESET_EXIT_REVIEW.md",
+      "bytes": 8587,
+      "sha256": "1213cb214edac4e36b767e251ba3f7c1c86a0dff01679200d95238d33772f73f",
+      "git_blob_sha": "cc2d48d4445d51c915ae084a2bef2ffe4b056325"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/ROOT_REVIEW.md",
+      "bytes": 22729,
+      "sha256": "69c08abdf2cb183e905e5b95cd7d0f61e2354921a7a630c9fb0780e9e22a987d",
+      "git_blob_sha": "efa609de992e9e14c780a03e17f5438cef8d851b"
+    },
+    {
+      "path": "reports/2026-11-24-high-variance-closure/ordinary-arithmetic/SERIES_REVIEW.md",
+      "bytes": 3741,
+      "sha256": "ba9b46a90ea804c36ddc37680584f340fbea65d7693738789fe31198cc3cde4a",
+      "git_blob_sha": "d6f69312e907c40be4431eebdd5ca303b68b04af"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md",
+      "bytes": 8066,
+      "sha256": "2fbe5366470f38627edbb3db0ca5f09f2380be30b26bca2bca89380c02e030d3",
+      "git_blob_sha": "332e3974dd516b851cd6993eee077771c3aff70f"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/NEGATIVE_INTEGER_KERNEL.md",
+      "bytes": 5466,
+      "sha256": "03fff4751397ef5534b0d983219285eca69e4e0c86a4a78764be678a9d0813f8",
+      "git_blob_sha": "69e04f1baa8ecdce18b6f703e0670813c8d23b8e"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/ORDINARY_OSCILLATION.md",
+      "bytes": 5563,
+      "sha256": "bf615340a782cc6a93bfab6e0b8f02186dbcf9915512c9bb4b7afcc0a58b11e4",
+      "git_blob_sha": "89962625fc66fd7ba12681e1843dfce21a98154c"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/ORIGIN_BIAS.md",
+      "bytes": 5877,
+      "sha256": "c356810e1630dc0a4e1110b640af2d1a7f6f6dc36871d2ca71c3371138ea9b2e",
+      "git_blob_sha": "afe16c3fdd06cdc11deaa91f88885e5015aebdb9"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/PERIODIC_BOUNDARIES.md",
+      "bytes": 15145,
+      "sha256": "0111f0a66eb2076513db18b729f12f29fab82e6f02a5a2217e4029aeed96ae04",
+      "git_blob_sha": "b9cb2c4ba5b88aa7a18cfb2c49b21ca289576435"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/README.md",
+      "bytes": 11318,
+      "sha256": "c93066d58efdc254309b0def17def342390d7bfca97d6261d4cc171403d064dc",
+      "git_blob_sha": "c3b943233b264a4a4097d82db18952d0e267c764"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/RESET_EXIT.md",
+      "bytes": 12257,
+      "sha256": "563efe8a8ee8d97c83251477c02619dad11b06bf0ceea8a2b16b83a31ecb7181",
+      "git_blob_sha": "e3d342c5a2223a018d1c574eb8d4641dc8a639d2"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/SOURCES.json",
+      "bytes": 5686,
+      "sha256": "9c41b758a7c8f2abd1901f40be950d4c8ba8bdeb9d024a05cc32f596f513b135",
+      "git_blob_sha": "99d59c08bb9b3c161b6df52626d94c0202fd7dba"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/TERMINAL_RECURRENCE.md",
+      "bytes": 3081,
+      "sha256": "a7fe723936c3fc7f1e382d87482500a818c425915a1a49fcddda9fe28706a778",
+      "git_blob_sha": "ac68e544e097226fb26cf6e0320bb6d7ad4fb983"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/TRIADIC_SEPARATION.md",
+      "bytes": 5308,
+      "sha256": "1f199488c89a2d741ee794ee8b2eff341aa497806a17f31b730c5e8ac984f708",
+      "git_blob_sha": "1912bc274d82c875abd43b4e96b3b5ae86d1a481"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/boundary_recurrence_control.py",
+      "bytes": 5131,
+      "sha256": "1e15a49b992bc83394c45befb78f7515e60367280dc0b3949563f31d182664eb",
+      "git_blob_sha": "05487ca7cc3d7891de4b456da0a920e059a165f6"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/companion_checks.py",
+      "bytes": 5424,
+      "sha256": "84520a43d0a460b2f84f4c0f545cd3236e0ebda658e2711579a0e3ded8d9a015",
+      "git_blob_sha": "669e5ce0e975b6817d45aa2b5466888478ccab09"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/negative_kernel_control.py",
+      "bytes": 2600,
+      "sha256": "d8a1294eb62fc88924ba1ba37f7c8a7dc447cb768bc19e2eb79455d5721e6210",
+      "git_blob_sha": "e701a39d585b695502924ccd7fc8b0340479d7a1"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/replay.py",
+      "bytes": 7695,
+      "sha256": "60cdc01d3d62146fed36ece6ec1d530a15aa83a99c538f5e28ebed0d06f4aa83",
+      "git_blob_sha": "8a255ca11ed061298a2ba8ad6b85dcccc6e4bfdf"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/checks/reset_exit_control.py",
+      "bytes": 3169,
+      "sha256": "4f9c86fbde907a6ab0dd8c7701815f599587533b691cef32755eea88dc4ba0f3",
+      "git_blob_sha": "2c187090713152e0f595bbdb2ff458a50fb9ebf1"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/DyadicCompanion.lean",
+      "bytes": 4288,
+      "sha256": "491f84776043b3d3eaad6ef173b329cbd535b9a196cb63c8714c4b5256c75cd9",
+      "git_blob_sha": "9be6da7d0b15a6f91bdcc0f8f53227195ec07311"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/PeriodicBoundary.lean",
+      "bytes": 6217,
+      "sha256": "06102eed5d2ac0f478b55ccc2843dfe6c5aaa79bbe1b96cfeaf6da03a80a54a1",
+      "git_blob_sha": "af52140bb1ba9e66bd50c42f576a58ddb0894ade"
+    },
+    {
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/lean/ResetAncestor.lean",
+      "bytes": 4632,
+      "sha256": "4a81be6a1b9a90a91dfdbb2bc7033f06b7abecb8dd523e09590def5fe8e2a84d",
+      "git_blob_sha": "5ef566fe73fb25b7bf902811e53218cc37cb379a"
+    }
+  ]
+}
