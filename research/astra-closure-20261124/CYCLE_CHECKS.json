@@ -1,0 +1,24 @@
+{
+  "lean_file": "CycleDefectFilters.lean",
+  "lean_sha256": "ab14b167f9437d79e5a10f68caa1265bcd95512018e127404220b44f58d1e420",
+  "lean_version": "4.34.1",
+  "lean_invocation": "lean -j1 -DwarningAsError=true CycleDefectFilters.lean",
+  "lean_exit": 0,
+  "printed_axioms": {
+    "Collatz.CycleDefectFilters.noWrapDown": ["propext", "Quot.sound"],
+    "Collatz.CycleDefectFilters.intervalEnd": ["propext", "Quot.sound"],
+    "Collatz.CycleDefectFilters.highStrideTwo": ["propext", "Quot.sound"],
+    "Collatz.CycleDefectFilters.repeatedIntervalFilter": ["propext", "Quot.sound"],
+    "Collatz.CycleDefectFilters.strideTwoFilter": ["propext", "Quot.sound"],
+    "Collatz.CycleDefectFilters.dyadicMargin": ["propext", "Quot.sound"]
+  },
+  "controls_sha256": "f48ba83ddd81c5bb833226d3f7579cb5bec126198a14209d2fa5dc195bc77b04",
+  "commands": ["python -B cycle_filter_controls.py", "python -O -B cycle_filter_controls.py"],
+  "control_exits": [0,0],
+  "identical_control_output": {
+    "bounded_counts": {"nonunit_common_gcd": 249, "positive_gap_profiles": 3240, "profiles": 8140, "progression_presentations": 881, "wrapped_high_progressions": 5},
+    "exact_parameter_checks": 16,
+    "noncoprime_counts": {"nonunit_projected_gcd": 982, "positive_denominator_words": 9850}
+  },
+  "scope": "Lean checks six finite kernels. Family exclusions, logarithmic estimates and resultant arguments are written proofs. Finite tests do not prove the general theorems."
+}

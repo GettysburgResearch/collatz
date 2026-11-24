@@ -1,8 +1,11 @@
-import Mathlib
+module
 
-/-! Candidate formalization of the coprime-cycle residue kernel.
-No existence of an ordinary cycle or of an unrestricted selector is asserted.
-Compilation and axiom audit are pending. -/
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+
+public section
+
+/-! Coprime-cycle residue identities over a commutative ring. -/
 namespace Collatz.ResidueDefect
 
 set_option autoImplicit false
@@ -56,6 +59,10 @@ theorem single_interval_defect (x : R) (p u v : ℕ) (hp : x^p = 2) :
   rw [mul_add, mul_sub, balanced_unit x p hp, geom_mul, geom_mul]
   ring
 
+#print axioms geom_mul
+#print axioms balanced_unit
+#print axioms exponent_transport
+#print axioms cycle_term
 #print axioms balanced_numerator_inverse
 #print axioms single_interval_defect
 end Collatz.ResidueDefect

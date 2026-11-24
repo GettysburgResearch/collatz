@@ -1,0 +1,113 @@
+{
+  "compiler": "Lean 4.34.1 (5045d0056413266e57c625dcd7c365b10e377c52)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "actual_scalar_dependency": {
+    "pr": 182,
+    "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+    "path": "research/carry-tower-round10-20261123/ActualScalar.lean",
+    "source_sha256": "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9",
+    "git_blob": "85385ac9b4dbc2bab8b3f78f02d4f865ed16d2b8",
+    "upstream_build_and_audit_receipt": "reports/2026-11-23-carry-tower-round10/LEAN_RECEIPT.json",
+    "imported_olean_sha256": "74bf8d341d5113de5c98446d56752f14df3be3848499c969c5f9a059402002b9",
+    "local_rebuild": {
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ActualScalar.olean",
+        "ActualScalar.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "result_olean_sha256": "74bf8d341d5113de5c98446d56752f14df3be3848499c969c5f9a059402002b9",
+      "byte_identical_to_imported_olean": true
+    }
+  },
+  "builds": [
+    {
+      "module": "StrictCarry",
+      "source_sha256": "ce04470009544ab797afcfe885869368468b7e37a0673b4446a0038a51ede97b",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "StrictCarry.olean",
+        "StrictCarry.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.StrictCarry.carry_slack' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.step_slack' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.interval_slack' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "CarryCocycle",
+      "source_sha256": "44ac3a76764691203d1ee0112bef368fba5f326db21078c3ce27443e65eea410",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "CarryCocycle.olean",
+        "CarryCocycle.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.ScalarCarryCocycle.carry_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarCarryCocycle.clock_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarCarryCocycle.clock_amortized' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarCarryCocycle.clock_amortized_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ResidueDefect",
+      "source_sha256": "4bf8d464eb8994b98a24dea25c6c51e3aaac0647540bf25e20719d7baaa2a76a",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ResidueDefect.olean",
+        "ResidueDefect.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.ResidueDefect.geom_mul' depends on axioms: [propext, Quot.sound]\n'Collatz.ResidueDefect.balanced_unit' depends on axioms: [propext, Quot.sound]\n'Collatz.ResidueDefect.exponent_transport' depends on axioms: [propext]\n'Collatz.ResidueDefect.cycle_term' depends on axioms: [propext, Quot.sound]\n'Collatz.ResidueDefect.balanced_numerator_inverse' depends on axioms: [propext, Quot.sound]\n'Collatz.ResidueDefect.single_interval_defect' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ActualCarry",
+      "source_sha256": "d4d5625e6b8fc2b46dcb8b3553330d8f86ba7637b38c5746030c53d575b1df3d",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ActualCarry.olean",
+        "ActualCarry.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.StrictCarry.Actual.phase_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.canonical_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.actual_edge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.saturated_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.positive_carry_forces_strict' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.large_gap_strict' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.zero_carry_of_small_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.no_strict_iff_small_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.actual_interval_slack' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "DebitCarry",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "DebitCarry.olean",
+        "DebitCarry.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.StrictCarry.debit_slack' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "0218e471f61cd8f698406d8095036565256fb2aa60d6dffb244550131d6ad479"
+    },
+    {
+      "module": "ActualPrefix",
+      "flags": [
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ActualPrefix.olean",
+        "ActualPrefix.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.StrictCarry.Actual.physical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.StrictCarry.Actual.strict_physical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "da6ab03c110be3c0484dbe523e2c75a483e56fb0d9235aeed30531385ca45a25"
+    }
+  ]
+}

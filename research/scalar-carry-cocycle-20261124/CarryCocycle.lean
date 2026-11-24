@@ -1,7 +1,13 @@
-import Mathlib
+module
 
-/-! Candidate formalization of the finite carry amortization kernel.
-Compilation and axiom audit are pending; no universal phase bound is assumed. -/
+public import Mathlib.Tactic.GCongr
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+
+public section
+
+/-! A finite carry amortization kernel on each actual-clock interval. -/
 namespace Collatz.ScalarCarryCocycle
 
 set_option autoImplicit false
@@ -20,7 +26,7 @@ private theorem fourth_bound (n : ℕ) : (n + 1)^4 ≤ 8^(2*n) := by
     _ = 16^n := by
       rw [← pow_mul, Nat.mul_comm n 4, pow_mul]
       norm_num
-    _ ≤ 64^n := by gcongr <;> norm_num
+    _ ≤ 64^n := by gcongr; norm_num
     _ = 8^(2*n) := by rw [pow_mul]; norm_num
 
 /-- All possible carry changes, including arbitrarily large carries.
@@ -34,7 +40,7 @@ theorem carry_power (c d : ℕ) (hd : d ≤ 3*c+2) :
       omega
     calc
       8^d * (c+1)^4 ≤ 8^c * 8^(2*c) := by gcongr
-      _ = 8^(3*c) := by rw [← pow_add]; congr 1 <;> omega
+      _ = 8^(3*c) := by rw [← pow_add]; congr 1; omega
       _ ≤ 8^(3*c) * (d+1)^4 := by
         simpa using Nat.mul_le_mul_left (8^(3*c)) hp
   · by_cases h3 : d ≤ 3*c
@@ -62,7 +68,7 @@ theorem carry_power (c d : ℕ) (hd : d ≤ 3*c+2) :
             _ = (3*c+2+1)^4 := by ring
         calc
           8^(3*c+2)*(c+1)^4 = 8^(3*c)*(64*(c+1)^4) := by
-            rw [pow_add]; norm_num <;> ring
+            rw [pow_add]; norm_num; ring
           _ ≤ 8^(3*c)*(3*c+2+1)^4 := Nat.mul_le_mul_left _ hfour
 
 /-- a = actual gap, b = canonical centered ternary gap, c,d = carries. -/
@@ -120,5 +126,8 @@ theorem clock_amortized_shift (a b c : ℕ → ℕ)
     (fun i => by simpa only [Nat.add_assoc] using he (j+i)) n
   simpa using h
 
+#print axioms carry_power
+#print axioms clock_step
+#print axioms clock_amortized
 #print axioms clock_amortized_shift
 end Collatz.ScalarCarryCocycle

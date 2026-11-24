@@ -1,6 +1,6 @@
 # Scalar carry cocycle and residue-defect norms
 
-Status: **proposed research, not a proof of Collatz**. Two mathematical routes are developed below. The finite integer kernels are supplied as Lean source drafts; compilation and axiom audits have not been run in this environment. The written proofs and executed exact-integer controls are separate evidence.
+Status: **proposed research, not a proof of Collatz**. Two mathematical routes are developed below. The [Astra continuation](../astra-closure-20261124/README.md) develops stronger actual-source packing and carry theorems and broader cycle exclusions. It also repairs and compiles both original finite Lean kernels under the pinned Lean 4.34.1 toolchain; all ten explicit axiom reports contain only standard axioms. The original written proofs and finite controls remain a separate evidence layer.
 
 ## Closing targets
 
@@ -29,10 +29,10 @@ Inspected PR metadata and selected relevant proof sources, not a fresh audit of 
 
 ## Reproduction and evidence
 
-- CarryCocycle.lean: finite carry-amortization kernel draft.
-- ResidueDefect.lean: finite residue/evaluation identity draft.
+- CarryCocycle.lean: finite carry-amortization kernel, repaired and compiled in the Astra continuation.
+- ResidueDefect.lean: finite residue/evaluation identities, compiled and axiom-audited in the Astra continuation.
 - controls.js and controls-receipt.json: exact BigInt finite controls, executed via the available JavaScript execution environment before the first commit. Run the script with Node.js. These are not Lean proof certificates or exhaustive checks.
-- Lean replay is **pending**. In a Mathlib project with the pinned toolchain used by the recent upstream packets (Lean 4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612), run lake env lean -DwarningAsError=true on each absolute source path and inspect the resulting axiom output. No compilation result or axiom audit is claimed here.
-- Full clean-checkout validation unavailable locally: this session did not have a Lean toolchain or a usable repository clone. Repository contents and commits were transferred through the GitHub connector. No workflows modified.
+- [Current replay instructions](../astra-closure-20261124/REPLAY.md) give the exact toolchain and isolated module build. The original compiler outputs and source hashes are in [the carry receipt](../../reports/astra-closure-20261124/carry-lean-receipt.json).
+- At the original `beed685ab713923191ae40c9559bf7400298d2d3` checkpoint, Lean and a full local checkout were unavailable and the files were explicitly uncompiled drafts. The later compiler and repository validation receipts apply to the repaired continuation, not retrospectively to that old source tree.
 
-The evidence is scoped: new proofs written below; upstream formal results attributed to their pinned sources; numerical checks finite; Lean scripts awaiting compiler replay.
+The evidence is scoped: the full mathematical routes below are written proofs; upstream results retain their source qualifications; numerical controls are finite; compilation covers only the named formal declarations.

@@ -1,0 +1,18 @@
+{
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source": "research/astra-closure-20261124/NormCertificate.lean",
+  "source_sha256": "861fddbead0db0e6d69292157dda79eb7f474365c269c93456c87361db360b57",
+  "command": [
+    "lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "NormCertificate.olean",
+    "NormCertificate.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.NormCertificate.det_eq_zero_of_normalized_left_kernel' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.NormCertificate.modulus_dvd_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NormCertificate.modulus_dvd_multiplication_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NormCertificate.modulus_dvd_norm_of_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NormCertificate.monic_quotient_norm_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NormCertificate.dyadic_relation_of_binomial' depends on axioms: [propext]\n'Collatz.NormCertificate.modulus_dvd_dyadic_relation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

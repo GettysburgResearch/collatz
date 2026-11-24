@@ -1,0 +1,40 @@
+{
+  "lean": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "source": "CanonicalWindows.lean",
+      "sha256": "1e6912073d119ecb0a783026010f8298636e9fbba72bd7c6138af9ddfea0c300",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "CanonicalWindows.olean",
+        "CanonicalWindows.lean"
+      ],
+      "exit_code": 0,
+      "axioms_stdout": [
+        "'Collatz.CanonicalWindows.same_past_residue' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.CanonicalWindows.canonical_window_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "source": "ActualCanonicalWindows.lean",
+      "sha256": "8f35bb982d161ce9ee75d16e47ea12a6c3f3d689938271ca7ff93c0360779c32",
+      "command": [
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "ActualCanonicalWindows.olean",
+        "ActualCanonicalWindows.lean"
+      ],
+      "exit_code": 0,
+      "axioms_stdout": [
+        "'Collatz.CanonicalWindows.ordinary_canonical_window_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ]
+}

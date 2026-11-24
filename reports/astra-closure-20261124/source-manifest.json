@@ -1,0 +1,167 @@
+{
+  "schema": "collatz-astra-source-manifest/v1",
+  "parent_commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+  "scope": "Integrated proof sources, compiler/control evidence and documentation; excludes this manifest and later checkout receipts.",
+  "files": [
+    {
+      "path": "research/astra-closure-20261124/ActualCanonicalWindows.lean",
+      "bytes": 1211,
+      "sha256": "8f35bb982d161ce9ee75d16e47ea12a6c3f3d689938271ca7ff93c0360779c32"
+    },
+    {
+      "path": "research/astra-closure-20261124/ActualCarry.lean",
+      "bytes": 6353,
+      "sha256": "d4d5625e6b8fc2b46dcb8b3553330d8f86ba7637b38c5746030c53d575b1df3d"
+    },
+    {
+      "path": "research/astra-closure-20261124/ActualPrefix.lean",
+      "bytes": 3568,
+      "sha256": "da6ab03c110be3c0484dbe523e2c75a483e56fb0d9235aeed30531385ca45a25"
+    },
+    {
+      "path": "research/astra-closure-20261124/CANONICAL_WINDOWS.md",
+      "bytes": 14419,
+      "sha256": "5d7546ef00fd1c58b6e6211f052d8b9fa436f4263ab4ef7c1d1d26089328c142"
+    },
+    {
+      "path": "research/astra-closure-20261124/CYCLE_CHECKS.json",
+      "bytes": 1454,
+      "sha256": "abe14aa0427eb2859583417fa6c856746d44a84d836c386cf8268a01e5e5619b"
+    },
+    {
+      "path": "research/astra-closure-20261124/CYCLE_FILTERS.md",
+      "bytes": 18140,
+      "sha256": "eda310d6d184c175b5dee7120c87fec006d1eb77af810b0ee148c4226f58be39"
+    },
+    {
+      "path": "research/astra-closure-20261124/CanonicalWindows.lean",
+      "bytes": 3957,
+      "sha256": "1e6912073d119ecb0a783026010f8298636e9fbba72bd7c6138af9ddfea0c300"
+    },
+    {
+      "path": "research/astra-closure-20261124/CycleDefectFilters.lean",
+      "bytes": 3141,
+      "sha256": "ab14b167f9437d79e5a10f68caa1265bcd95512018e127404220b44f58d1e420"
+    },
+    {
+      "path": "research/astra-closure-20261124/DebitCarry.lean",
+      "bytes": 1838,
+      "sha256": "0218e471f61cd8f698406d8095036565256fb2aa60d6dffb244550131d6ad479"
+    },
+    {
+      "path": "research/astra-closure-20261124/GLOBAL_BRIDGE.md",
+      "bytes": 5845,
+      "sha256": "288da8c57fc3ffe2aeb7117d4f074905491dc7cf103d983d87c85b16e9650c16"
+    },
+    {
+      "path": "research/astra-closure-20261124/NormCertificate.lean",
+      "bytes": 4682,
+      "sha256": "861fddbead0db0e6d69292157dda79eb7f474365c269c93456c87361db360b57"
+    },
+    {
+      "path": "research/astra-closure-20261124/README.md",
+      "bytes": 11178,
+      "sha256": "73043c82b5ea3666930ff8eb092babf573bf354ff8e0c7c9c93fa29c5b6e84b5"
+    },
+    {
+      "path": "research/astra-closure-20261124/REPLAY.md",
+      "bytes": 2830,
+      "sha256": "17f07a93aab246566d5da7c84bbd543c7faafafd31ea7d11ae8459aef27bcc98"
+    },
+    {
+      "path": "research/astra-closure-20261124/STRICT_CARRY.md",
+      "bytes": 5825,
+      "sha256": "ccd14410f3a61538aaccabc0a1baf8695e631bee2cc14e8942273f1bc1ca7222"
+    },
+    {
+      "path": "research/astra-closure-20261124/StrictCarry.lean",
+      "bytes": 4537,
+      "sha256": "ce04470009544ab797afcfe885869368468b7e37a0673b4446a0038a51ede97b"
+    },
+    {
+      "path": "research/astra-closure-20261124/TRANSLATED_BANDS.md",
+      "bytes": 11157,
+      "sha256": "d01d989588f005af68410ed472672c091df2c88b433329aa7f7060a3a9ede38e"
+    },
+    {
+      "path": "research/astra-closure-20261124/WINDOW_CONTROLS.json",
+      "bytes": 316,
+      "sha256": "954f32f62754c39ec5c7d682e4911fd0860eea6fd9d5879ef5bf4986f4994ad3"
+    },
+    {
+      "path": "research/astra-closure-20261124/canonical_window_controls.py",
+      "bytes": 3607,
+      "sha256": "3bc9c4cd9aa6a1af3dd8520213d081d12c051a7b6c4c6a5fa04e5b6a576e324f"
+    },
+    {
+      "path": "research/astra-closure-20261124/cycle_filter_controls.py",
+      "bytes": 6096,
+      "sha256": "f48ba83ddd81c5bb833226d3f7579cb5bec126198a14209d2fa5dc195bc77b04"
+    },
+    {
+      "path": "research/astra-closure-20261124/dependencies/ActualScalar.lean",
+      "bytes": 15349,
+      "sha256": "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9"
+    },
+    {
+      "path": "research/astra-closure-20261124/replay_lean.py",
+      "bytes": 4504,
+      "sha256": "a2401b478398e72c7839d44a6355aa4a6455a778d648cdbfc30664210a9d8b15"
+    },
+    {
+      "path": "research/astra-closure-20261124/strict_controls.json",
+      "bytes": 331,
+      "sha256": "99c79381df8b9c3ad88472980b53cf66b4f65c8cef103d59742be72d10627cdd"
+    },
+    {
+      "path": "research/astra-closure-20261124/strict_controls.py",
+      "bytes": 2636,
+      "sha256": "6a73e24591d5ac96a9807ee21da9eeeba2f117be43d0c1f6b8e6108f783a07f3"
+    },
+    {
+      "path": "research/scalar-carry-cocycle-20261124/CarryCocycle.lean",
+      "bytes": 4832,
+      "sha256": "44ac3a76764691203d1ee0112bef368fba5f326db21078c3ce27443e65eea410"
+    },
+    {
+      "path": "research/scalar-carry-cocycle-20261124/ResidueDefect.lean",
+      "bytes": 2107,
+      "sha256": "4bf8d464eb8994b98a24dea25c6c51e3aaac0647540bf25e20719d7baaa2a76a"
+    },
+    {
+      "path": "research/scalar-carry-cocycle-20261124/README.md",
+      "bytes": 4568,
+      "sha256": "57d95f7a2011df3299e4d32f6421c50816a46029e304e1295b97065ec850bac4"
+    },
+    {
+      "path": "reports/astra-closure-20261124/REVIEW.md",
+      "bytes": 5610,
+      "sha256": "5d11649160df43331679607fc56fac261d51fad96b8688ff17be30aef70d6f4d"
+    },
+    {
+      "path": "reports/astra-closure-20261124/canonical-lean-receipt.json",
+      "bytes": 1277,
+      "sha256": "2f22a02b04a81ebe1ca5f6bc1790b1eb433fc842c90d3f8d84c2a523d2a2c0db"
+    },
+    {
+      "path": "reports/astra-closure-20261124/carry-lean-receipt.json",
+      "bytes": 5588,
+      "sha256": "8d412d90eeb94dcd9dac98ffa7c7635556e95ff4e2aaa17b259fe0b64aa20a80"
+    },
+    {
+      "path": "reports/astra-closure-20261124/finite-controls-replay.json",
+      "bytes": 2467,
+      "sha256": "9f157a169d3c169b485bce3f8d5c4c05028572ffa2fa6d06644391e3bbf180f7"
+    },
+    {
+      "path": "reports/astra-closure-20261124/isolated-lean-replay.json",
+      "bytes": 10277,
+      "sha256": "c913840042cb390cfee05aff0b930c661ffa5a30106966817526357f8c57969a"
+    },
+    {
+      "path": "reports/astra-closure-20261124/norm-lean-receipt.json",
+      "bytes": 1279,
+      "sha256": "9156977e2baf73edb34d1a3b7b2d91c3f2cef93f5e706a40093173a87fc2d10d"
+    }
+  ]
+}
