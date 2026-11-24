@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-two-class-finite-checks/v1",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/two-class-descent/check_high_grade.py"
+  ],
+  "started_utc": "2026-11-24T09:27:01.572913+00:00",
+  "duration_seconds": 0.139,
+  "exit_code": 0,
+  "source_sha256": "b00e59df1b0cc49b5077a8444b48cab7c9dcae7fbdbebceebb82f96303f4b14f",
+  "stdout": "{\"fixed_weight_words\": 32766, \"max_scaled_error_tested\": \"1/9\", \"physical_fresh_histories\": 2040}\n",
+  "stderr": "",
+  "counts": {
+    "fixed_weight_words": 32766,
+    "max_scaled_error_tested": "1/9",
+    "physical_fresh_histories": 2040
+  }
+}

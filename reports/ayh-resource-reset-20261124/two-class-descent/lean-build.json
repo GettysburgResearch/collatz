@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-two-class-lean-build/v1",
+  "command": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/two-class-descent/check_lean.sh"
+  ],
+  "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+  "started_utc": "2026-11-24T09:27:01.570461+00:00",
+  "duration_seconds": 278.198,
+  "exit_code": 0,
+  "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n'CollatzShell.OffsetDescent.affine_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.OffsetDescent.dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.descent_iff_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.accepts_upper_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.OffsetDescent.eventually_dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FrontierCoarea.single_dyadic_floor' depends on axioms: [propext, Quot.sound]\n'Collatz.FrontierCoarea.exists_floor_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.KilledEntryContraction.uniform_weighted_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.endpoint_in_band' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.same_anchor_span' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.integer_record_census' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HighGradeShadow.parity_numer' depends on axioms: [propext]\n'CollatzShell.HighGradeShadow.fixed_weight_residue_injective' depends on axioms: [propext]\n'CollatzShell.HighGradeShadow.oriented_shadow_update' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.RoundedHeadDescent.simultaneous_bottom' depends on axioms: [propext, Quot.sound]\n'Collatz.FrontierCoarea.single_dyadic_floor' depends on axioms: [propext, Quot.sound]\n'Collatz.FrontierCoarea.total_incidence_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FrontierCoarea.exists_floor_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.KilledEntryContraction.uniform_weighted_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PairedSourceShuffle.lower_fringe' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PairedSourceShuffle.upper_fringe' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PairedSourceShuffle.total_fringe' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PairedSourceShuffle.sparse_residue_test' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.endpoint_in_band' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.same_anchor_span' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LargestSlopeProjection.integer_record_census' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "local_imports_rebuilt": [
+    "ShellCover",
+    "OffsetDescent"
+  ],
+  "new_modules": [
+    "HighGradeShadow",
+    "RoundedHeadDescent",
+    "FrontierCoarea",
+    "KilledEntryContraction",
+    "PairedSourceShuffle",
+    "LargestSlopeProjection"
+  ],
+  "source_sha256": {
+    "FrontierCoarea.lean": "f4a4003a41d4c28ffc33e15e08f5d6b962d91435591c4c8099215de12b81d635",
+    "HighGradeShadow.lean": "cb27e3f9cf7f2f65626aa91c9ce4a3de4267ab82e772894a4ea0f0d1de264cec",
+    "KilledEntryContraction.lean": "b698242b2f142073b681d67efe4b57584b3adf91784e7fb939f306859efa38fd",
+    "LargestSlopeProjection.lean": "922285aa2a69d569f49652a1546e51a7463da6500c2a929957eb217a6742602e",
+    "PairedSourceShuffle.lean": "aa1ff31238eae88fc49a95e1bd529cb9918758ba173c5104aba60d83728b299b",
+    "RoundedHeadDescent.lean": "c1dfeaf305585a8fb95a03386333380e605feb14a45cdb9804e370d26ced33af"
+  },
+  "driver_sha256": "227835e5df8a342f0aaa90729da42ef441f8172cf80a81c1d38c955418510142"
+}
