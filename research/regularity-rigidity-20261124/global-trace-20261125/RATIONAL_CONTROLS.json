@@ -1,0 +1,227 @@
+{
+  "models": [
+    {
+      "A": 5,
+      "p": 3,
+      "D": "5",
+      "C": "23",
+      "qNumerator": "17",
+      "nNumerator": "51",
+      "cycle": [
+        "23",
+        "37",
+        "29"
+      ],
+      "oddStartsTested": 25,
+      "gcdExcluded": 5,
+      "knownTarget": 3,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 2,
+      "newOddSteps": 28,
+      "maxNumerator": "181"
+    },
+    {
+      "A": 7,
+      "p": 4,
+      "D": "47",
+      "C": "101",
+      "qNumerator": "83",
+      "nNumerator": "249",
+      "cycle": [
+        "101",
+        "175",
+        "143",
+        "119"
+      ],
+      "oddStartsTested": 124,
+      "gcdExcluded": 3,
+      "knownTarget": 4,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 6,
+      "newOddSteps": 205,
+      "maxNumerator": "7387"
+    },
+    {
+      "A": 8,
+      "p": 5,
+      "D": "13",
+      "C": "319",
+      "qNumerator": "217",
+      "nNumerator": "651",
+      "cycle": [
+        "319",
+        "485",
+        "367",
+        "557",
+        "421"
+      ],
+      "oddStartsTested": 325,
+      "gcdExcluded": 25,
+      "knownTarget": 5,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 8,
+      "newOddSteps": 475,
+      "maxNumerator": "22145"
+    },
+    {
+      "A": 12,
+      "p": 7,
+      "D": "1909",
+      "C": "5095",
+      "qNumerator": "4033",
+      "nNumerator": "12099",
+      "cycle": [
+        "5095",
+        "8597",
+        "6925",
+        "5671",
+        "9461",
+        "7573",
+        "6157"
+      ],
+      "oddStartsTested": 6049,
+      "gcdExcluded": 333,
+      "knownTarget": 7,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 79,
+      "newOddSteps": 9785,
+      "maxNumerator": "7216757"
+    },
+    {
+      "A": 13,
+      "p": 8,
+      "D": "1631",
+      "C": "14501",
+      "qNumerator": "10211",
+      "nNumerator": "30633",
+      "cycle": [
+        "14501",
+        "22567",
+        "17333",
+        "26815",
+        "20519",
+        "15797",
+        "24511",
+        "18791"
+      ],
+      "oddStartsTested": 15316,
+      "gcdExcluded": 2245,
+      "knownTarget": 8,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 96,
+      "newOddSteps": 21140,
+      "maxNumerator": "27213883"
+    },
+    {
+      "A": 18,
+      "p": 11,
+      "D": "84997",
+      "C": "579943",
+      "qNumerator": "414961",
+      "nNumerator": "1244883",
+      "cycle": [
+        "579943",
+        "912413",
+        "705559",
+        "1100837",
+        "846877",
+        "656407",
+        "1027109",
+        "791581",
+        "614935",
+        "964901",
+        "744925"
+      ],
+      "oddStartsTested": 345801,
+      "gcdExcluded": 31479,
+      "knownTarget": 0,
+      "badBelowOrAtQ": 0,
+      "badSmallerMultiple": 0,
+      "otherCycles": 1931,
+      "newOddSteps": 836262,
+      "maxNumerator": "155755750169"
+    }
+  ],
+  "pairwiseCoprime": [
+    [
+      "5",
+      "47",
+      "1"
+    ],
+    [
+      "5",
+      "13",
+      "1"
+    ],
+    [
+      "5",
+      "1909",
+      "1"
+    ],
+    [
+      "5",
+      "1631",
+      "1"
+    ],
+    [
+      "5",
+      "84997",
+      "1"
+    ],
+    [
+      "47",
+      "13",
+      "1"
+    ],
+    [
+      "47",
+      "1909",
+      "1"
+    ],
+    [
+      "47",
+      "1631",
+      "1"
+    ],
+    [
+      "47",
+      "84997",
+      "1"
+    ],
+    [
+      "13",
+      "1909",
+      "1"
+    ],
+    [
+      "13",
+      "1631",
+      "1"
+    ],
+    [
+      "13",
+      "84997",
+      "1"
+    ],
+    [
+      "1909",
+      "1631",
+      "1"
+    ],
+    [
+      "1909",
+      "84997",
+      "1"
+    ],
+    [
+      "1631",
+      "84997",
+      "1"
+    ]
+  ]
+}
