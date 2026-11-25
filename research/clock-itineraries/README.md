@@ -98,7 +98,7 @@ for mod in TernaryItinerary SparseClock FixedGate MinimumDescent CycleRows \
   ClosureProposal ClockRecurrence FinalProposal MixedBarrier \
   BasinTransport WindowCapture CycleFrontier CycleFrontierCounting \
   EscapeFrontier EscapeRecords TowerFrontierAffine TowerFrontierRotation \
-  TowerFrontier TowerFrontierMergers TowerFrontierLimit TowerFrontierPrescribed \
+  TowerFrontier TowerFrontierMergers TowerFrontierLimit TowerFrontierPrescribed TowerRecurrence \
   NovemberProposal
 do
   lean -j1 -DwarningAsError=true -Dlinter.deprecated=false -DautoImplicit=false -DElab.async=false \

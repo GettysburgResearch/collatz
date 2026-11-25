@@ -10,7 +10,7 @@ The scales may be chosen after looking at the profiles. PR #197 obtained strong 
 
 ## Integer rays force a constant limit
 
-For $b,d,e\ge0$ and $m\ge1$, the two inputs
+For $b,d,e\ge0$ and $m\ge2$, the two positive inputs
 
 $$
        2^d(2^b m-1),\qquad 2^e(3^b m-1)

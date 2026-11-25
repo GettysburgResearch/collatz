@@ -90,7 +90,7 @@ def transport_controls():
     for b in range(9):
         for d in range(4):
             for e in range(4):
-                for m in range(1, 16):
+                for m in range(2, 17):
                     x = (2**b*m-1) << d
                     y = (3**b*m-1) << e
                     check(run(b+d, x) == run(e, y), "affine rays")
