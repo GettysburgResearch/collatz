@@ -12,7 +12,6 @@ function critical(w){let S=0;for(let j=0;j<w.length;j++){S+=w[j];if(pow(2n,S)>=p
 function step(d,x){return mod(x,2n)===0n?x/2n:(3n*x+d)/2n}
 function gap(d,x){let v=3n*x+d,e=0;check(v!==0n,"nonzero");while(v%2n===0n){v/=2n;e++}return [v,e]}
 function reverse(d,x,e){const u=pow(2n,e)*x-d;check(u%3n===0n,"inverse integer");return u/3n}
-function ceilpow2(a){let n=0;while(pow(2n,n)<a)n++;return n}
 function run(){
  const out={critical_words:0,negative_periodic_words:0,actual_positive_record_words:0,positive_record_edges:0,periodic_repetition_prefixes:0,small_shadow_nodes:0,small_shadow_sign_crossings:0,small_shadow_repeats:0,negative_product_checks:0,signed_occupancy_checks:0,even_denominator_edges:0,periodization_vector_checks:0,matching_divisibility_checks:0};
  const words=[[]];
@@ -75,7 +74,7 @@ function run(){
          }
        }
        // Check exact sign segment occupancy by integer powers, not floats.
-       if(w.length===10){
+       if(w.length>=1){
          const pos=xs.filter(u=>u>0n),neg=xs.filter(u=>u<0n).map(abs);
          for(const [list,c] of [[pos,10n*(d+1n)],[neg,10n]]){
            for(const X of [1n,4n,16n,64n,256n]){
