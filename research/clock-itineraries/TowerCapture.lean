@@ -42,16 +42,20 @@ def Covers (w A H K B T k O y : Nat) (holes : List Nat) : Prop :=
   ∀ u, B<u → u≤2^T*window k → u∉holes →
     ∃ r≤512, ∃ t≤O, run t (start w A H K u r)=y
 
-private theorem shares {w A H K B T k O y q : Nat} {c : Bool}
-    (route : ∀ b, b%2=1 → b%3≠0 → ∃ u, B<u ∧
-      ∀ r≤512, run T (start w A H K u r)=b)
+/-- A common-clock section transfers any finite bank of distinct odd target
+ancestors to distinct parameters in the original family. -/
+theorem transfers_count {T R C k O y q : Nat} {c : Bool}
+    (arms : Nat → Nat → Nat) (eligible : Nat → Prop)
+    (route : ∀ b, b%2=1 → b%3≠0 → ∃ u, eligible u ∧ u≤C*b ∧
+      ∀ r≤R, run T (arms u r)=b)
     (odd : q%2=1) (col : q%3=digit c)
     (room : 2^(4*k+2*(k/2))*q≤3^k*window k)
-    (holes : List Nat) (pass : Covers w A H K B T k O y holes) :
-    ReachesOne q ↔ ReachesOne y := by
+    (holes : List Nat) (few : holes.length<quota k (k/2))
+    (cover : ∀ u, eligible u → u≤C*window k → u∉holes →
+      ∃ r≤R, ∃ t≤O, run t (arms u r)=y) : ReachesOne q ↔ ReachesOne y := by
   classical
   obtain ⟨xs,nd,len,targets⟩ := unit_ancestors odd col room
-  let viable (b u : Nat) := B<u ∧ ∀ r≤512, run T (start w A H K u r)=b
+  let viable (b u : Nat) := eligible u ∧ u≤C*b ∧ ∀ r≤R, run T (arms u r)=b
   let pick (b : Nat) := if h : ∃ u, viable b u then Classical.choose h else 0
   have spec (b : Nat) (hb : b∈xs) : viable b (pick b) := by
     have facts := targets b hb
@@ -59,9 +63,9 @@ private theorem shares {w A H K B T k O y q : Nat} {c : Bool}
     simpa [pick,ex] using Classical.choose_spec ex
   have unique : (xs.map pick).Nodup := map_distinct nd (by
     intro x hx z hz eq
-    have first := (spec x hx).2 0 (by decide)
+    have first := (spec x hx).2.2 0 (Nat.zero_le _)
     rw [eq] at first
-    exact first.symm.trans ((spec z hz).2 0 (by decide)))
+    exact first.symm.trans ((spec z hz).2.2 0 (Nat.zero_le _)))
   have selected : ∃ b∈xs, pick b∉holes := by
     apply Classical.byContradiction
     intro no
@@ -71,23 +75,33 @@ private theorem shares {w A H K B T k O y q : Nat} {c : Bool}
       exact Classical.byContradiction (fun miss => no ⟨b,hb,miss⟩)
     have bound := unique.length_le_of_subset sub
     rw [List.length_map,len] at bound
-    have := pass.1
     omega
   obtain ⟨b,hb,out⟩ := selected
-  have ⟨low,ready⟩ := spec b hb
+  have ⟨low,size,ready⟩ := spec b hb
   obtain ⟨small,_,_,s,atQ⟩ := targets b hb
-  have height := input_bound T (start w A H K (pick b) 0)
-  rw [ready 0 (by decide)] at height
-  have limit := Nat.le_trans (start_ge w A H K (pick b) 0)
-    (Nat.le_trans height (Nat.mul_le_mul_left (2^T) small))
-  obtain ⟨r,hr,t,_,atY⟩ := pass.2 _ low limit out
+  have limit := Nat.le_trans size (Nat.mul_le_mul_left C small)
+  obtain ⟨r,hr,t,_,atY⟩ := cover _ low limit out
   have qLabel := MinimumDescent.good_run s b
-  have bLabel := MinimumDescent.good_run T (start w A H K (pick b) r)
-  have yLabel := MinimumDescent.good_run t (start w A H K (pick b) r)
+  have bLabel := MinimumDescent.good_run T (arms (pick b) r)
+  have yLabel := MinimumDescent.good_run t (arms (pick b) r)
   rw [atQ] at qLabel
   rw [ready r hr] at bLabel
   rw [atY] at yLabel
   exact qLabel.trans (bLabel.trans yLabel.symm)
+
+private theorem shares {w A H K B T k O y q : Nat} {c : Bool}
+    (route : ∀ b, b%2=1 → b%3≠0 → ∃ u, B<u ∧
+      ∀ r≤512, run T (start w A H K u r)=b)
+    (odd : q%2=1) (col : q%3=digit c)
+    (room : 2^(4*k+2*(k/2))*q≤3^k*window k)
+    (holes : List Nat) (pass : Covers w A H K B T k O y holes) :
+    ReachesOne q ↔ ReachesOne y := by
+  refine transfers_count (T:=T) (start w A H K) (fun u => B<u) ?_ odd col room holes pass.1 pass.2
+  intro b bo bu
+  obtain ⟨u,low,hits⟩ := route b bo bu
+  have height := input_bound T (start w A H K u 0)
+  rw [hits 0 (by decide)] at height
+  exact ⟨u,low,Nat.le_trans (start_ge w A H K u 0) height,hits⟩
 
 /-- On one fixed tower rank interval and any one prescribed mixed progression
 of bases, cofinally many passing finite counts are equivalent to Collatz. -/
