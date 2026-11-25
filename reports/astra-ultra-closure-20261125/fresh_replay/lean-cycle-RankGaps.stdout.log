@@ -1,0 +1,6 @@
+'CollatzRankGaps.markedPast_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRankGaps.cleanPast_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRankGaps.rank_gap_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRankGaps.equal_corrections_give_gap' depends on axioms: [propext]
+'CollatzRankGaps.lift_octaves' depends on axioms: [propext]
+'CollatzRankGaps.ordered_lap_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
