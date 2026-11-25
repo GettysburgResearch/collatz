@@ -23,6 +23,7 @@ private structure Landing (k budget q x : Nat) : Prop where
   endpoint : after k x = q
   height : 3^k*x ≤ 2^budget*q
   clock : ∃ t, t ≤ budget ∧ run t x = q
+  unit : x%3≠0
 
 private theorem two_children {q : Nat} {c : Bool} (odd : q%2=1) (col : q%3=digit c) :
     ∃ (u v e f : Nat) (a b : Bool), u≠v ∧ e≤4 ∧ f≤6 ∧
@@ -42,7 +43,7 @@ private theorem two_children {q : Nat} {c : Bool} (odd : q%2=1) (col : q%3=digit
 
 private theorem extend {k B C q u x e : Nat} (p : Landing k B u x)
     (edge : Gap e u q) (clock : B+e≤C) : Landing (k+1) C q x := by
-  refine ⟨p.odd,?_,?_,?_⟩
+  refine ⟨p.odd,?_,?_,?_,p.unit⟩
   · rw [after_add, p.endpoint]
     change (next u).2=q
     rw [gap_next edge]
@@ -65,7 +66,8 @@ private theorem bank (k j q : Nat) {c : Bool} (odd : q%2=1) (col : q%3=digit c) 
     intro x hx
     have eq : x=q := by simpa using hx
     subst x
-    exact ⟨odd,rfl,by simpa using Nat.le_mul_of_pos_left q (Nat.pow_pos (by decide : 0<2)),0,by omega,rfl⟩
+    refine ⟨odd,rfl,by simpa using Nat.le_mul_of_pos_left q (Nat.pow_pos (by decide : 0<2)),⟨0,by omega,rfl⟩,?_⟩
+    cases c <;> simp_all [digit]
   | succ k ih =>
     obtain ⟨u,v,e,f,a,b,ne,he,hf,gu,cu,gv,cv⟩ := two_children odd col
     obtain ⟨xs,ndx,lx,hx⟩ := ih j u gu.oddSource cu
@@ -84,6 +86,22 @@ private theorem bank (k j q : Nat) {c : Bool} (odd : q%2=1) (col : q%3=digit c) 
         rcases List.mem_append.mp mem with inX | inY
         · exact extend (hx x inX) gu (by omega)
         · exact extend (hy x inY) gv (by omega)
+
+/-- The original odd ancestors before moving them into an octave. Each is
+a ternary unit, so it can itself be used as a prescribed routing target. -/
+theorem unit_ancestors {k j q X : Nat} {c : Bool} (odd : q%2=1) (col : q%3=digit c)
+    (room : 2^(4*k+2*j)*q≤3^k*X) :
+    ∃ xs : List Nat, xs.Nodup ∧ xs.length=quota k j ∧
+      ∀ x∈xs, x≤X ∧ x%2=1 ∧ x%3≠0 ∧ ∃ t, run t x=q := by
+  obtain ⟨xs,nd,len,hits⟩ := bank k j q odd col
+  refine ⟨xs,nd,len,?_⟩
+  intro x member
+  have h := hits x member
+  obtain ⟨t,_,path⟩ := h.clock
+  exact ⟨Nat.le_of_mul_le_mul_left (Nat.le_trans h.height room) (Nat.pow_pos (by decide : 0<3)),
+    h.odd,h.unit,t,path⟩
+
+#print axioms unit_ancestors
 
 private theorem octave_power {X x : Nat} (pos : 0<x) (small : x≤X) :
     ∃ d, X≤2^d*x ∧ 2^d*x<2*X := by
