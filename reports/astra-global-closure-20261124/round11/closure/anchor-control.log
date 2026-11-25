@@ -1,0 +1,4 @@
+'Collatz.AnchorControl.short_miss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AnchorControl.no_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AnchorControl.no_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AnchorControl.control_good' does not depend on any axioms

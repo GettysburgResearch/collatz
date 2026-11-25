@@ -7,15 +7,16 @@ repair strategy, a written transcendence extension, and executed Lean checks.
 None of the restricted results supplies the universal descent or reverse
 closure still needed for the conjecture.
 
-**Latest continuation:** [round ten](round10/README.md) proves a finite-clock
-tower classification and ordinary longer-return families, derives matched
-exact-row tails under the qualified renewal floor, and gives a written
-positive-density band-change bound for every nonzero rank shift in the
-bounded exceptional-cycle branch. Seven Lean modules and 65 selected axiom
-inventories were rebuilt. The [final Lean consumer](round10/formal/README.md)
-still has an explicit open merger premise. The refresh includes the new
-PR197 and PR206 proposals and preserves their higher-rank and pointwise gaps.
-[Round nine](round9/README.md), [round eight](round8/README.md),
+**Latest continuation:** [round eleven](round11/README.md) gives an exact local
+test for the complete cycle denominator, source-dependent ordinary descent,
+S-unit limits on finite anchor and template catalogues, and an explicit zero
+range on the original integer trace using a published finite floor. A closed
+Lean control proves that 3645 converges while the stated arbitrary-clock
+anchor family misses its full immediate lower cone. Ten Lean modules and 83
+selected axiom inventories were rebuilt. The [final Lean proposal](round11/formal/README.md)
+still requires the explicit open universal merger premise. The intake checks
+the new PR192, PR197, PR208 and PR209 heads.
+[Round ten](round10/README.md), [round nine](round9/README.md), [round eight](round8/README.md),
 [round seven](round7/README.md) and the earlier rounds below retain their
 original scope and publication history.
 

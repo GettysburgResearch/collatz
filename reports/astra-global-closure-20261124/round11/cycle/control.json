@@ -1,0 +1,132 @@
+{
+  "exhaustive_p5_h8": {
+    "tested_words": 81,
+    "physically_legal": 2,
+    "whole_divisor_words_without_legality_filter": 7,
+    "orders_checked": [
+      1,
+      3
+    ]
+  },
+  "nonphysical_full_divisor": {
+    "p": 5,
+    "h": 8,
+    "difference_order": 2,
+    "reduced_denominator": "1",
+    "intercept_scale": 1,
+    "filters": [
+      {
+        "offset": 3,
+        "bound": 217,
+        "depth": 7,
+        "failing_ranks": 0
+      },
+      {
+        "offset": 2,
+        "bound": 94,
+        "depth": 6,
+        "failing_ranks": 0
+      }
+    ]
+  },
+  "ordinary_intercept_rational": {
+    "p": 5,
+    "h": 8,
+    "difference_order": 2,
+    "reduced_denominator": "13",
+    "intercept_scale": 1,
+    "filters": [
+      {
+        "offset": 3,
+        "bound": 217,
+        "depth": 7,
+        "failing_ranks": 4
+      },
+      {
+        "offset": 2,
+        "bound": 94,
+        "depth": 6,
+        "failing_ranks": 4
+      }
+    ]
+  },
+  "scaled_intercept_integer": {
+    "p": 5,
+    "h": 8,
+    "difference_order": 2,
+    "reduced_denominator": "1",
+    "intercept_scale": 13,
+    "filters": [
+      {
+        "offset": 3,
+        "bound": 2820,
+        "depth": 10,
+        "failing_ranks": 0
+      },
+      {
+        "offset": 2,
+        "bound": 1219,
+        "depth": 9,
+        "failing_ranks": 0
+      }
+    ]
+  },
+  "rational_306": {
+    "p": 306,
+    "h": 485,
+    "difference_order": 3,
+    "reduced_denominator": "102065376400825306534437391838939444403106454408085639783964140880896699835673006969445010534504805079858638689074275443284439551032910142670903",
+    "intercept_scale": 1,
+    "filters": [
+      {
+        "offset": 5,
+        "bound": 331,
+        "depth": 8,
+        "failing_ranks": 299
+      },
+      {
+        "offset": 6,
+        "bound": 103,
+        "depth": 7,
+        "failing_ranks": 108
+      }
+    ]
+  },
+  "wide_mixed": {
+    "odd_width_strict_bounds": [
+      3,
+      4
+    ],
+    "minimum_mismatches": 8,
+    "temporal_mismatches": 104,
+    "ternary_ranks": 485,
+    "reduced_denominator_bits": 476,
+    "local_check": {
+      "p": 306,
+      "h": 485,
+      "difference_order": 3,
+      "reduced_denominator": "102065376400825306534437391838939444403106454408085639783964140880896699835673006969445010534504805079858638689074275443284439551032910142670903",
+      "intercept_scale": 1,
+      "filters": [
+        {
+          "offset": 5,
+          "bound": 331,
+          "depth": 8,
+          "failing_ranks": 295
+        },
+        {
+          "offset": 6,
+          "bound": 103,
+          "depth": 7,
+          "failing_ranks": 129
+        }
+      ]
+    }
+  },
+  "single_filter_loss": {
+    "modulus": 5,
+    "S": 3,
+    "p": 7,
+    "offset": 4
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "compiler": "Lean 4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies": [
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "scope": "Unchanged pinned dependency, rebuilt in the round-eleven project cache.",
+      "also_identical_at_pr192_round11": true
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "scope": "Unchanged pinned dependency, rebuilt in the round-eleven project cache.",
+      "also_identical_at_pr192_round11": true
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "git_blob": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "scope": "Unchanged pinned dependency, rebuilt in the round-eleven project cache.",
+      "also_identical_at_pr192_round11": true
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "local": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "scope": "Unchanged round-ten finite ordinary-word dependency."
+    }
+  ],
+  "external_inputs": [
+    {
+      "name": "Evertse-Schlickewei-Schmidt, Theorem 1.1",
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/00-equation.pdf",
+      "scope": "Published finite-rank nondegenerate unit-equation theorem. Reconstructed application; external proof not rebuilt in Lean."
+    },
+    {
+      "name": "Wu-Wang, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "scope": "Published mixed-logarithm lower bound, used in the homogeneous specialization. Its proof and effective constants not rebuilt."
+    },
+    {
+      "name": "Barina, published verification and shortcut path records",
+      "urls": [
+        "https://doi.org/10.1007/s11227-025-07337-0",
+        "https://pcbarina.fit.vut.cz/path-records.htm"
+      ],
+      "scope": "Exhaustive coverage below 2^71 and the record cap are external inputs. Only the final record-holder trajectory is replayed here."
+    },
+    {
+      "name": "Weaver-Wren paper48 v2, floor F",
+      "url": "https://rstation.ai/problems/collatz/papers/48/v2",
+      "scope": "Inherited source-qualified exact-count floor, used only to carry the previous lower count into the one-bit cycle shell; not used by the new trace zero-range upper."
+    }
+  ]
+}

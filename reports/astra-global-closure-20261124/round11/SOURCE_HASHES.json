@@ -1,0 +1,229 @@
+{
+  "scope": "Frozen round-eleven science, source dependencies and execution evidence; publication receipts and this manifest are excluded.",
+  "files": [
+    {
+      "path": "reports/astra-global-closure-20261124/round11/INTAKE.md",
+      "sha256": "ed6571071085e69fa6e7f1090a93d1a3559d22e57ae7f55df24efd76237c721d"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/PR_SNAPSHOT.json",
+      "sha256": "f106d3ae29e4407f6b7775a7cdface8675dd0c493cf61014b60e260f16910ab4"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/README.md",
+      "sha256": "c8ace895b0968b52cf9e83a4c42bef45873a0fa5db175e9c3b7f6740666d7174"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/ROOT_REVIEW.md",
+      "sha256": "2ee907dd35c986bd8e61b69d39f2c12a285c3943b37da88d99925756fe766615"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/closure/CYCLE_REVIEW.md",
+      "sha256": "3ae0f69195e2728b9828474654cff3afa3bf54342230fdd3c2213e7d51bcf00c"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/closure/README.md",
+      "sha256": "ea2b4d8a6fb938d747bd23f305de04fe9bdb9eb75ca5a419e63a0a502133c9a1"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/closure/anchor-control.log",
+      "sha256": "914226005774b65a5f767f4df2be90d7f89770f4e68dc76ceb63104d0b7de8cf"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/closure/finite.json",
+      "sha256": "7790465d1c9e2e69051e90ff1d08fd2170196be9886d45b2d0add104d3f027bf"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/closure/lean.log",
+      "sha256": "d010c193c7af4fec76126479188dc6ae55afabc1063e80adf89f6fd4cc7f1690"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/controls/closure-controls.json",
+      "sha256": "7790465d1c9e2e69051e90ff1d08fd2170196be9886d45b2d0add104d3f027bf"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/controls/control-replay.json",
+      "sha256": "4f831b0f52d724f5a842b0969e49b830e8c30a72e43b742761e2bff8e10c28ee"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/controls/cycle-controls.json",
+      "sha256": "377b79976b7c4744a3590c188a7aad97a3e91659014c5d109cf673cff254cbfb"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/controls/diagonal-controls.json",
+      "sha256": "c4cc63b4001fc7c7f7d4fd198cd63872bcbc7d06e53cbd531c3c5d047f831f9a"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/cycle/DIAGONAL_REVIEW.md",
+      "sha256": "25d93a7d6941917755706b8f2bc028dba5a20e1f909faf3d478db630875351aa"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/cycle/FINAL_REVIEW.md",
+      "sha256": "c6cdc836bc358bb88002a6659c07aa6e9c9d3e3d22cf1e70801a3123151e48f8"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/cycle/control.json",
+      "sha256": "377b79976b7c4744a3590c188a7aad97a3e91659014c5d109cf673cff254cbfb"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/cycle/lean.log",
+      "sha256": "8ef2e1a45546f28cabb5fc58c524525cf8c94cb744205b5015da4b9c776539e7"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/diagonal/CLOSURE_REVIEW.md",
+      "sha256": "9c3bd54bba605a165843923f8a81a5bd5c99ced974ad1f7740db0d95bcacac9f"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/diagonal/TEMPLATE_REVIEW.md",
+      "sha256": "eca642b50230787c861aed5575ee9d3b4528b6d16e497773a2498430abba7921"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/diagonal/certificate.json",
+      "sha256": "c4cc63b4001fc7c7f7d4fd198cd63872bcbc7d06e53cbd531c3c5d047f831f9a"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/diagonal/lean.log",
+      "sha256": "48acecfad8bc1658766b57ebd4549325dff0d47d8045c34b189b45703693d8d5"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/AnchorControl.log",
+      "sha256": "914226005774b65a5f767f4df2be90d7f89770f4e68dc76ceb63104d0b7de8cf"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/AnchorDescent.log",
+      "sha256": "d010c193c7af4fec76126479188dc6ae55afabc1063e80adf89f6fd4cc7f1690"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/FinalProposal.log",
+      "sha256": "85dacf0e85ecc0c9d19fcb74bc4e3c0c73d96bfae2d26fc775fe6debd8f867c3"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/LocalDenominator.log",
+      "sha256": "8ef2e1a45546f28cabb5fc58c524525cf8c94cb744205b5015da4b9c776539e7"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/MinimumFailure.log",
+      "sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/SmoothCore.log",
+      "sha256": "7123e91ba50de2e77827b62871aa4aaf809a277a5d8874d0971cf6eabc95e88f"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/SourceDeletion.log",
+      "sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/TemplateChain.log",
+      "sha256": "39be1c19ec56cebd6ebb28d97234fd6a054fe155412adb27cb57df1a90e962b8"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/TowerClock.log",
+      "sha256": "d2e31a99ee1922888963c7a7784046f19a3759d515e12d1d98eaa06b7876cf11"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/TraceCensus.log",
+      "sha256": "48acecfad8bc1658766b57ebd4549325dff0d47d8045c34b189b45703693d8d5"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round11/lean/receipt.json",
+      "sha256": "f2c65116bfe8b239a45e9250472144870981e95540bd995848874b22d2a87919"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/README.md",
+      "sha256": "e16e514e2c8af709cd3212c9bb80ef7b051ce2ebb93234509e6622400a06888e"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/README.md",
+      "sha256": "2f4bde26a5c4c2db4d063bfdda5c900370f37832c7f4faa42fdee52efd026b16"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/SOURCES.json",
+      "sha256": "3069a176f0db15dc1f80cb4fa3588a3f13b0a4ca3923ebf35da11f6a39918da8"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/check_controls.py",
+      "sha256": "c734904dfc4c05725ae51387a1f6607db4fd22a54c0a61f619b53708a215ec5e"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/check_lean.py",
+      "sha256": "7ee4977a3224963f3da12c3d513ad891ff6b641c5d4dce10c8549215266db5b9"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/closure/README.md",
+      "sha256": "158b027cc3bf97a46b4bcbfcff8356c5d458d3c2ccc0b5fe5fd624fdc6327fbe"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/closure/check.py",
+      "sha256": "f0a0c833fe9ed302e88fdf754e21bf1af18e44d719723776dcc1ea2ae8c1c60c"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/cycle/README.md",
+      "sha256": "f806593affeecc58bc4764c3ddf9fcfb6e0be728434d6cb3b0df593e1c1d2e1d"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/cycle/WIDE_CONTROLS.md",
+      "sha256": "177a36665038b9ec371ed392a2d5ea45ff6233ce6598eb0005ce70ffb4cdfe88"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/cycle/check.py",
+      "sha256": "185c0f38b0c5e2f41b033bac9b5fdd1c1e1bab5c5d98357142998463dc7121b7"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/diagonal/README.md",
+      "sha256": "27ab3b8eb05673cbfe3d48d603f032f5b04623ef2fee24ff755c34484b038c81"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/diagonal/check.py",
+      "sha256": "95e9f4f5a4baa6709631af21006b1e0aac18f6c158f55a1697126c6c992fbf2e"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/formal/BOUNDED_TEMPLATE.md",
+      "sha256": "8a0375a90421ee0b264573a3211cad96d8995840c2d66709d6d91e1343ca2077"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/formal/README.md",
+      "sha256": "f08d3732cd314cef3def7c314f17e2432bba43cd8d1fd71367bd7ac68fab6f26"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0"
+    }
+  ]
+}
