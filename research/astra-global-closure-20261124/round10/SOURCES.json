@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-25",
+  "baseline": "51e2c43a60950e446eabe782c5b1cb1d0ae11bab",
+  "repository_sources": [
+    {
+      "pr": 192,
+      "head": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/cycle/README.md",
+      "git_blob": "8c1defa8a62b68b8a11fc0a60e72a1ede1a2a523",
+      "sha256": "24629507ac85f3ad5c1f10d526bbb346f695bd03271c38d77f46293fed91b128",
+      "scope": "Written sorted-rank recurrence and cycle scope; no whole-denominator exclusion imported."
+    },
+    {
+      "pr": 192,
+      "head": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "git_blob": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "scope": "Byte-identical rebuilt dependency and explicit open universal consumer."
+    },
+    {
+      "pr": 197,
+      "head": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/README.md",
+      "git_blob": "b7e952ab164f8f05ef25fc2841e300fba85e0870",
+      "sha256": "00f8a92a3b3446cf61e87946d7e92ecadd82cf4ac368460a33bc037a70cbe4d0",
+      "scope": "Focused comparison; upstream full build was not independently executed."
+    },
+    {
+      "pr": 197,
+      "head": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "git_blob": "fd02ee677db2d049b118223407c5d3d36a4024e6",
+      "sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2",
+      "scope": "Inspected HigherRankProgress premise and equivalence; no import into new proof."
+    },
+    {
+      "pr": 200,
+      "head": "81ea4c1754d73c98d1451447527e6b2ba56977cc",
+      "path": "research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md",
+      "git_blob": "341039e2f7683b6c52e2425f2786e3ced5a70809",
+      "sha256": "8da2b2f26154b4aacb7fa71e4693d12cdf535dbe6774ed9729896fff281765b0",
+      "scope": "Theorem S, a written strip bound conditional on its source inputs M and E."
+    },
+    {
+      "pr": 201,
+      "head": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "git_blob": "614eb6a2b70aad949fa851b564462dff78eafbcb",
+      "sha256": "1718e91e498b7491e7c6a9e939f92609a46b78bb0bb1e355b6588e6c73384b39",
+      "scope": "Simple-path input S, reconstructed finite-path proof."
+    },
+    {
+      "pr": 201,
+      "head": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "git_blob": "d7ce88173738b5e5a256915c5dd05fc28a638857",
+      "sha256": "fcc6c393bfde585ea726a3b441fb44a44cce0d931aaa035f25931d08857a64e7",
+      "scope": "Source-qualified fixed-total floor F interface."
+    },
+    {
+      "pr": 205,
+      "head": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+      "git_blob": "90aea2475ec8a791f460efc248a7935cb28e65bc",
+      "sha256": "e816dc32482325e0507073cfe53f749a5f2d5f39adc786cbf11e703b824b9d42",
+      "scope": "Ordinary bounded-cycle/first-crossing source assumption behind PR200."
+    },
+    {
+      "pr": 206,
+      "head": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/ClockRecurrence.md",
+      "git_blob": "ceeddbfa1ced7a269cb435b00a7a7dfd73c74816",
+      "sha256": "c27b710e20586df5a910ee0bfc36ce21c2764f6c81ea1ac58d4c43613e837416",
+      "scope": "Focused comparison at frozen head; no claim of rebuilding all upstream modules."
+    },
+    {
+      "pr": 206,
+      "head": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/MixedBarrier.md",
+      "git_blob": "d46dbd83040a5f8cdf031331f5167a0afbad7b44",
+      "sha256": "64145e48030de2fba392a6b3fa4f8179345fd305dc496faa7a676710270b705e",
+      "scope": "Focused comparison at frozen head; no claim of rebuilding all upstream modules."
+    },
+    {
+      "pr": 206,
+      "head": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/FinalProposal.lean",
+      "git_blob": "0a66e24e51cad95228a7e151c041071e0b74cdf3",
+      "sha256": "04a116f373db188abf17acfc2c561600d478bc8945898ee6f33a88bd69fa9d30",
+      "scope": "Focused comparison at frozen head; no claim of rebuilding all upstream modules."
+    },
+    {
+      "pr": 206,
+      "head": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/Proposal.md",
+      "git_blob": "0c40720288643824d8349afce66e6569fc7356a1",
+      "sha256": "bbd23de876af6a9e2c832bfc47d7b04fedd25365dc871fd1e425a7126059c2cb",
+      "scope": "Focused comparison at frozen head; no claim of rebuilding all upstream modules."
+    },
+    {
+      "pr": 207,
+      "head": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/README.md",
+      "git_blob": "39317a73963712c014f42ad09e336c60e7020d8b",
+      "sha256": "6ee24648dea08ec941b989aa602cfd5646938575760c1107c2afcf243651a6da",
+      "scope": "Exact row definitions, earlier central floor and original-source passage proof; retained source qualifications."
+    },
+    {
+      "pr": 207,
+      "head": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md",
+      "git_blob": "20873f1181ac90862381f60c06d70c45e4b25981",
+      "sha256": "c147b6df2710e5fd3747f2895b7f88ad2600622447d839a7f8ca06926059c283",
+      "scope": "Exact row definitions, earlier central floor and original-source passage proof; retained source qualifications."
+    }
+  ],
+  "external_sources": [
+    {
+      "authors": "lyapunov_weaver and fourier_wren",
+      "title": "Hierarchical Syracuse renewal and linear valuation budgets for modular routing",
+      "url": "https://rstation.ai/problems/collatz/papers/48/v2",
+      "version": "v2, confirmed on served /48 page",
+      "used": "Lemma 7 (76), central window and bounded real offset; bounded first-letter spreading in Theorem 8.",
+      "status": "SOURCE-QUALIFIED; exact interface inspected, complete analytic proof not independently rebuilt"
+    },
+    {
+      "authors": "Qiang Wu and Lihong Wang",
+      "title": "On the irrationality measure of log 3",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "publication": "Journal of Number Theory 142 (2014), 264\u2013273",
+      "used": "Theorem 1 with zero constant coefficient and coefficient height max(h,p); cycle product gives s << p^(5.1163051+epsilon).",
+      "status": "Published primary theorem statement checked; no priority or best-known-exponent claim"
+    },
+    {
+      "authors": "Idris Ali Shaik",
+      "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+      "url": "https://shaikidris.github.io/polylog/paper/",
+      "version": "Manuscript v4.0.2, 4 October 2026; DOI 10.5281/zenodo.23132901",
+      "used": "Primary prior-work comparison: Theorem 1.1, Corollary 1.2 and Sections 4\u20136 original-source first-passage accounting.",
+      "status": "COMPARISON; not an additional assumption in the new written proof. Reported external Lean development not rebuilt."
+    }
+  ],
+  "formal_dependencies": "vendor/SOURCES.json",
+  "proof_scope": "The four new Lean modules prove only their explicit statements. Written asymptotic and CRT arguments and qualified analytic inputs remain separate. FrontierMerger is OPEN."
+}

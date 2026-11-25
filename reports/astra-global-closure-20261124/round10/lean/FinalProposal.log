@@ -1,0 +1,5 @@
+'Collatz.RoundTen.run_positive' depends on axioms: [propext, Quot.sound]
+'Collatz.RoundTen.no_two_run_tower' depends on axioms: [propext, Quot.sound]
+'Collatz.RoundTen.no_delayed_family_tower' depends on axioms: [propext, Quot.sound]
+'Collatz.RoundTen.first_tower_prefix_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RoundTen.final_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+'OrderedBandGaps.lifted_gap' depends on axioms: [propext, Quot.sound]
+'OrderedBandGaps.base_gap' depends on axioms: [propext]
+'OrderedBandGaps.common_edge' depends on axioms: [propext, Quot.sound]
+'OrderedBandGaps.propagate' depends on axioms: [propext, Quot.sound]
+'OrderedBandGaps.middle_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedBandGaps.middle_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

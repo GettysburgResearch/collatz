@@ -1,0 +1,29 @@
+[
+  {
+    "pr": 192,
+    "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+    "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+    "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+    "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+    "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "scope": "Byte-identical pinned dependency; not a new round-ten theorem."
+  },
+  {
+    "pr": 192,
+    "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+    "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+    "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+    "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+    "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "scope": "Byte-identical pinned dependency; not a new round-ten theorem."
+  },
+  {
+    "pr": 192,
+    "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+    "path": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+    "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+    "git_blob": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+    "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+    "scope": "Byte-identical pinned dependency; not a new round-ten theorem."
+  }
+]

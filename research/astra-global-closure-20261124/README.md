@@ -7,16 +7,17 @@ repair strategy, a written transcendence extension, and executed Lean checks.
 None of the restricted results supplies the universal descent or reverse
 closure still needed for the conjecture.
 
-**Latest continuation:** [round nine](round9/README.md) supplies an ordinary
-Lean return certificate excluding a whole progression of least tripling
-disagreements, a ballot upper bound for large-endpoint exact rows, and a
-four-coordinate Evertse estimate for unrestricted literal suffix carries.
-It reviews the frontier through PR207 and credits parallel cycle-order and
-finite-survivor results. Five new Lean modules and three pinned dependencies
-were rebuilt; ten finite replays passed. The universal cover in the
-[final Lean proposal](round9/formal/README.md) remains open.
-[Round eight](round8/README.md), [round seven](round7/README.md) and the
-earlier rounds below retain their original scope and publication history.
+**Latest continuation:** [round ten](round10/README.md) proves a finite-clock
+tower classification and ordinary longer-return families, derives matched
+exact-row tails under the qualified renewal floor, and gives a written
+positive-density band-change bound for every nonzero rank shift in the
+bounded exceptional-cycle branch. Seven Lean modules and 65 selected axiom
+inventories were rebuilt. The [final Lean consumer](round10/formal/README.md)
+still has an explicit open merger premise. The refresh includes the new
+PR197 and PR206 proposals and preserves their higher-rank and pointwise gaps.
+[Round nine](round9/README.md), [round eight](round8/README.md),
+[round seven](round7/README.md) and the earlier rounds below retain their
+original scope and publication history.
 
 The checkout base is `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.
 The [frontier report](../../reports/astra-global-closure-20261124/audit/FRONTIER.md)
