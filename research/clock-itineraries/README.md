@@ -4,6 +4,8 @@
 `T(2n)=n`, `T(2n+1)=3n+2`. An odd gap from `x` to `y` has length `e≥1` and satisfies
 `3x+1=2^e y`, with both ends positive and odd. A unit here is an odd positive integer prime to three.
 
+The November 25 pass combines the window certificate, uncorrected pointwise clock bound, and cycle test. It also gives 513 consecutive tower ranks with one physical endpoint, quantitative restrictions on escaping records, and an all-period cycle occupation bound. The two global obligations remain open. [November 25 proof attempt](November25.md) · [Combined Lean theorem](NovemberProposal.lean) · [Fifty source PRs](FiftyPRs.md)
+
 The [current full-conjecture proposal](Proposal.md) gives two explicit arithmetic obligations. The first asks for a cumulative clock crossing on each ordinary unit orbit. The second asks for arbitrarily large depths at which a finite cycle test returns false. Lean proves the equivalence and the correctness of the finite test. The two universal obligations remain open. [Main declaration](FinalProposal.lean)
 
 ## Which itineraries occur at a fixed clock?
@@ -93,15 +95,20 @@ build=$(mktemp -d)
 export LEAN_PATH="$build${LEAN_PATH:+:$LEAN_PATH}"
 for mod in TernaryItinerary SparseClock FixedGate MinimumDescent CycleRows \
   SynchronousShadow OrbitAttack CycleDetection CycleAmplification DescentClocks \
-  ClosureProposal ClockRecurrence FinalProposal MixedBarrier
+  ClosureProposal ClockRecurrence FinalProposal MixedBarrier \
+  BasinTransport WindowCapture CycleFrontier CycleFrontierCounting \
+  EscapeFrontier EscapeRecords TowerFrontierAffine TowerFrontierRotation \
+  TowerFrontier TowerFrontierMergers TowerFrontierLimit TowerFrontierPrescribed \
+  NovemberProposal
 do
-  lean -j1 -DwarningAsError=true -DautoImplicit=false -DElab.async=false \
+  lean -j1 -DwarningAsError=true -Dlinter.deprecated=false -DautoImplicit=false -DElab.async=false \
     -o "$build/$mod.olean" "$mod.lean"
 done
 python -X utf8 -B replay.py
 python -X utf8 -B proposal_replay.py
+python -X utf8 -B window_replay.py
 ```
 
-The local compiler was Lean 4.33.0-pre at commit `62b6a2291302d4bbeace37642a066b7510d0145c`, running the WebAssembly CLI. The theorem audits print their dependencies. [Compiler distribution](https://github.com/live-codes/browser-lean/tree/a8aed095534e67061e2626b94e8e69193099091d)
+The November 25 build uses native Lean 4.34.1 at commit `5045d0056413266e57c625dcd7c365b10e377c52`. The command permits legacy theorem names that this release deprecates and treats other warnings as errors. The original fourteen modules were also checked with the Lean 4.33.0-pre WebAssembly CLI at `62b6a2291302d4bbeace37642a066b7510d0145c`. The theorem audits print their dependencies. [Earlier compiler distribution](https://github.com/live-codes/browser-lean/tree/a8aed095534e67061e2626b94e8e69193099091d)
 
 The first Python control reads constructed paths forward, independently enumerates 2,628 exact rows, and checks the shifted identity on 36,285 ordinary segments. The second control checks 79,378 segments against the sixth-power bound, exhausts the finite cycle test through depth 16 and checks 114 translated paths. The common gate in the 512-source example reaches one at shortcut time 553. [Finite controls](proposal_replay.py) and [kernel-checked gate](FinalProposal.lean)
