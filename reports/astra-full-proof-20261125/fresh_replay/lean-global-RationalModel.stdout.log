@@ -1,0 +1,3 @@
+'Collatz.WeightedParity.states_of_all_bits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedParity.height_constant_on_component' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedParity.noetherian_finite_heights' depends on axioms: [propext, Classical.choice, Quot.sound]
