@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Bounded exact BigInt controls only; no Lean compilation or infinite theorem verification",
+  "counts": {
+    "critical_words": 4402,
+    "negative_periodic_words": 4402,
+    "actual_positive_record_words": 4402,
+    "positive_record_edges": 45327,
+    "periodic_repetition_prefixes": 135981,
+    "small_shadow_nodes": 264,
+    "small_shadow_sign_crossings": 10,
+    "small_shadow_repeats": 9,
+    "negative_product_checks": 71,
+    "signed_occupancy_checks": 0,
+    "even_denominator_edges": 8,
+    "periodization_vector_checks": 589,
+    "matching_divisibility_checks": 512
+  }
+}
