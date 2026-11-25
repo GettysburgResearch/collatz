@@ -41,14 +41,12 @@ def Matches (d : ℤ) : ℕ → ℤ → ℤ → Prop
 
 theorem even_step (d x : ℤ) (h : x % 2 = 0) :
     2*step d x = x := by
-  simp [step, h]
-  omega
+  simp [step, h] <;> omega
 
 theorem odd_step (d x : ℤ) (hd : d % 2 = 1) (h : x % 2 = 1) :
     2*step d x = 3*x+d := by
   have hn : x % 2 ≠ 0 := by omega
-  simp [step, hn]
-  omega
+  simp [step, hn] <;> omega
 
 theorem cancel_three (k : ℕ) (x : ℤ)
     (h : (2:ℤ)^k ∣ 3*x) : (2:ℤ)^k ∣ x := by
