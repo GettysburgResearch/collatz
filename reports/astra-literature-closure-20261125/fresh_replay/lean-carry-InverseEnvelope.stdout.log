@@ -1,0 +1,3 @@
+'Collatz.InverseEnvelope.missing_origins' depends on axioms: [propext, Quot.sound]
+'Collatz.InverseEnvelope.inverse_envelope' depends on axioms: [propext, Quot.sound]
+'Collatz.InverseEnvelope.attained' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,4 @@
+'Collatz.IteratedReturn.centered_identity' depends on axioms: [propext]
+'Collatz.IteratedReturn.translated_chain' depends on axioms: [propext]
+'Collatz.IteratedReturn.terminal_progression' depends on axioms: [propext, Quot.sound]
+'Collatz.IteratedReturn.prescribed_depth' depends on axioms: [propext, Classical.choice, Quot.sound]
