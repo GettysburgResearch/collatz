@@ -1,0 +1,506 @@
+{
+  "scope": "fresh Lean elaboration and public theorem axiom audit; not Collatz",
+  "started_utc": "2026-11-25T07:59:12.436307+00:00",
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "--version"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "d13f23b723b8a846827a245b89c10fc7d3f11612\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "118aa17ee84656b8bd727fef7c458ee8c833385c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "ddf04cf3949fa556442341e87d47f9f6e6074707\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "e928b72544873815af278d38681b31c0293588e3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "355695d523e41d0554926416cba2a2b3544fbbc9\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/tmp/collatz-polynomial-mathlib/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/PhysicalEcho.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery/PhysicalEcho.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery",
+      "exit_code": 0,
+      "stdout": "'PhysicalEcho.periodic_of_cofinal_squares' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.physical_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.sharp_simultaneously' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.rank_one_cuts' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.window_caps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.mask_escape' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_block_continues_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.mask_even_transport' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_odd_transport' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/arithmetic",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/PolynomialStrips.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/arithmetic/PolynomialStrips.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/arithmetic",
+      "exit_code": 0,
+      "stdout": "'Collatz.PolynomialStrips.band_terminal_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.phase_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.drop_or_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.actual_odd_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.polynomial_grid_physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/TowerDescent.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source/TowerDescent.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+      "exit_code": 0,
+      "stdout": "'TowerDescent.exists_simultaneous_mergers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.block_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.first_bad_requires_exception' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.endpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.below_base_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.below_base' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.code_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.total_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.failures_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.good_block_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/TowerWindows.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source/TowerWindows.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+      "exit_code": 0,
+      "stdout": "'TowerWindows.merger_in_each_block' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/BinomialTower.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source/BinomialTower.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source",
+      "exit_code": 0,
+      "stdout": "'TowerDescent.ray_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.ray_simultaneous_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.ray_exists_of_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.failure_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.exists_of_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "--root=/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery",
+        "-o",
+        "/tmp/collatz-ultra-lean-cbw_2r75/TowerCertificate.olean",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery/TowerCertificate.lean"
+      ],
+      "cwd": "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/machinery",
+      "exit_code": 0,
+      "stdout": "'TowerCertificate.numerical_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.odd_numerical_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.full_block_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.odd_ray_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.affine_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.exact_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "/tmp/collatz-ultra-lean-cbw_2r75/PublicAudit.lean"
+      ],
+      "cwd": "/tmp/collatz-ultra-lean-cbw_2r75",
+      "exit_code": 0,
+      "stdout": "'PhysicalEcho.orbit_add' depends on axioms: [propext]\n'PhysicalEcho.agree_congruent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.orbit_height' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.echo_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.square_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.large_square_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.periodic_of_cofinal_squares' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.transport' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.cut_value' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.same_word' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.physical_ray' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.sharp_simultaneously' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.rank_one_cuts' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.window_caps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.mask_block' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_block_continues_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhysicalEcho.mask_even_transport' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_odd_transport' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_block_growth' depends on axioms: [propext, Quot.sound]\n'PhysicalEcho.mask_escape' depends on axioms: [propext, Quot.sound]\n'Collatz.PolynomialStrips.log_two_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.logb_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.rotation_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.rotation_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.phase_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.drop_or_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.actual_odd_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.polynomial_grid_physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PolynomialStrips.band_terminal_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.odds_le' depends on axioms: [propext, Quot.sound]\n'TowerDescent.endpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.below_base_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.below_base' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.code_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.total_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.failures_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.orbit_pos' depends on axioms: [propext, Quot.sound]\n'TowerDescent.good_block_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.exists_simultaneous_mergers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.block_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.first_bad_requires_exception' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerWindows.merger_in_each_block' depends on axioms: [propext, Quot.sound]\n'TowerDescent.failure_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.simultaneous_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.exists_of_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.ray_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.ray_simultaneous_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerDescent.ray_exists_of_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.numerical_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.odd_numerical_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.full_block_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.odd_ray_116' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.affine_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerCertificate.exact_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "sources": [
+    {
+      "path": "machinery/PhysicalEcho.lean",
+      "sha256": "b4c007afc3b5f620fb626b7085b6a72dadae9ed7243127fe96a07a077e9832dd",
+      "module": "PhysicalEcho",
+      "public_theorems": [
+        "PhysicalEcho.orbit_add",
+        "PhysicalEcho.agree_congruent",
+        "PhysicalEcho.orbit_height",
+        "PhysicalEcho.echo_return",
+        "PhysicalEcho.square_return",
+        "PhysicalEcho.large_square_return",
+        "PhysicalEcho.periodic_of_cofinal_squares",
+        "PhysicalEcho.transport",
+        "PhysicalEcho.cut_value",
+        "PhysicalEcho.same_word",
+        "PhysicalEcho.physical_ray",
+        "PhysicalEcho.sharp_simultaneously",
+        "PhysicalEcho.rank_one_cuts",
+        "PhysicalEcho.window_caps",
+        "PhysicalEcho.mask_block",
+        "PhysicalEcho.mask_block_continues_iff",
+        "PhysicalEcho.mask_even_transport",
+        "PhysicalEcho.mask_odd_transport",
+        "PhysicalEcho.mask_block_growth",
+        "PhysicalEcho.mask_escape"
+      ]
+    },
+    {
+      "path": "arithmetic/PolynomialStrips.lean",
+      "sha256": "af8f91235edb78fa828ac951fd131e63f8020f435c7f1cdcd2ac80115695d6ef",
+      "module": "PolynomialStrips",
+      "public_theorems": [
+        "Collatz.PolynomialStrips.log_two_bounds",
+        "Collatz.PolynomialStrips.logb_two",
+        "Collatz.PolynomialStrips.rotation_bounds",
+        "Collatz.PolynomialStrips.rotation_grid",
+        "Collatz.PolynomialStrips.phase_permutation",
+        "Collatz.PolynomialStrips.drop_or_grid",
+        "Collatz.PolynomialStrips.actual_odd_orbit",
+        "Collatz.PolynomialStrips.polynomial_grid_physical",
+        "Collatz.PolynomialStrips.band_terminal_unique"
+      ]
+    },
+    {
+      "path": "fixed_source/TowerDescent.lean",
+      "sha256": "17d9758604a1cdfc775ddf1755c6cca6f304ffca9d99a6feb66932565be6a0ce",
+      "module": "TowerDescent",
+      "public_theorems": [
+        "TowerDescent.odds_le",
+        "TowerDescent.endpoint_bound",
+        "TowerDescent.below_base_of_budget",
+        "TowerDescent.below_base",
+        "TowerDescent.code_bijective",
+        "TowerDescent.total_weight",
+        "TowerDescent.failures_bound",
+        "TowerDescent.simultaneous_budget",
+        "TowerDescent.simultaneous_bound",
+        "TowerDescent.orbit_pos",
+        "TowerDescent.good_block_merger",
+        "TowerDescent.exists_simultaneous_mergers",
+        "TowerDescent.block_1024",
+        "TowerDescent.first_bad_requires_exception"
+      ]
+    },
+    {
+      "path": "fixed_source/TowerWindows.lean",
+      "sha256": "81adb06400f2e3bdb0180e8b87808902440bbe07f75794b3adcef55149588eb7",
+      "module": "TowerWindows",
+      "public_theorems": [
+        "TowerWindows.merger_in_each_block"
+      ]
+    },
+    {
+      "path": "fixed_source/BinomialTower.lean",
+      "sha256": "7a8a22aece95ce42fa2a057b6a54e172eb413c50abc87d7128dc10eec6f1a3a7",
+      "module": "BinomialTower",
+      "public_theorems": [
+        "TowerDescent.failure_tail_bound",
+        "TowerDescent.simultaneous_tail_bound",
+        "TowerDescent.exists_of_tail",
+        "TowerDescent.ray_failure_bound",
+        "TowerDescent.ray_simultaneous_bound",
+        "TowerDescent.ray_exists_of_tail"
+      ]
+    },
+    {
+      "path": "machinery/TowerCertificate.lean",
+      "sha256": "10d10efcbc88639de78608c04f0f1d58d4fea664115f2f23b5e70baf8fac5b95",
+      "module": "TowerCertificate",
+      "public_theorems": [
+        "TowerCertificate.numerical_116",
+        "TowerCertificate.odd_numerical_116",
+        "TowerCertificate.full_block_116",
+        "TowerCertificate.odd_ray_116",
+        "TowerCertificate.affine_sandwich",
+        "TowerCertificate.exact_clock_1024"
+      ]
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependencies": [
+    {
+      "name": "plausible",
+      "revision": "118aa17ee84656b8bd727fef7c458ee8c833385c"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "ddf04cf3949fa556442341e87d47f9f6e6074707"
+    },
+    {
+      "name": "importGraph",
+      "revision": "e928b72544873815af278d38681b31c0293588e3"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+    },
+    {
+      "name": "aesop",
+      "revision": "355695d523e41d0554926416cba2a2b3544fbbc9"
+    },
+    {
+      "name": "Qq",
+      "revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259"
+    },
+    {
+      "name": "batteries",
+      "revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2"
+    },
+    {
+      "name": "Cli",
+      "revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+    }
+  ],
+  "public_theorem_count": 56,
+  "transitive_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-25T07:59:58.524958+00:00"
+}

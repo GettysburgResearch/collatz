@@ -1,0 +1,31 @@
+{
+  "scope": "exact finite tower calculations and sixteen ordinary controls; not universal convergence",
+  "started_utc": "2026-11-25T08:00:05.910474+00:00",
+  "source": "research/astra-ultra-closure-20261125/fixed_source/check_towers.py",
+  "source_sha256": "ab77361836a3dc313fa36e11eabe59f60fb9c75dfeb23193c08b6cd0d94104f8",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source/check_towers.py"
+      ],
+      "exit_code": 0,
+      "stdout": "h=1024 r<=64: full tail < 19538/10^9, odd tail < 22456/10^9\nh=1024 r<=115: full tail < 919766000/10^9, odd tail < 978462000/10^9\nh=1024 r<=116: both tail sums exceed their populations\nchecked 16 long finite lifts; reference first descent clock=62, endpoint=3774236102\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/dd1396c58536/collatz-ultra/research/astra-ultra-closure-20261125/fixed_source/check_towers.py"
+      ],
+      "exit_code": 0,
+      "stdout": "h=1024 r<=64: full tail < 19538/10^9, odd tail < 22456/10^9\nh=1024 r<=115: full tail < 919766000/10^9, odd tail < 978462000/10^9\nh=1024 r<=116: both tail sums exceed their populations\nchecked 16 long finite lifts; reference first descent clock=62, endpoint=3774236102\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-25T08:00:06.015501+00:00"
+}
