@@ -1,5 +1,7 @@
 # Aaronson–Yolcu–Heule: nonlinear interpretations and ordinary merger sections
 
+**Latest paired-reduction step:** [Paired ordinary reductions and the final remaining obligation](paired-reductions/README.md) proves smaller rational-reference queries on seventeen parameter classes for m modulo 19,683, an all-rank 55-class residue exclusion, and exact source-clock constraints. It also proves fixed-rank deadline and rational-center coverage obstructions. The final Lean assembly has 52 new public theorems and a fresh 204-declaration combined audit; the universal remaining exclusion is explicit and OPEN. Collatz remains open.
+
 **Latest source-progress step:** [Ordinary source progress beyond the expanding prefix](source-progress/README.md) proves two source-dependent Mersenne exclusions, cofinal progressing families at every sufficiently high exact upper rank, and the finite core of a joint binary-grid transfer. The final Lean proposal dispatches the proved cases and leaves its universal residual obligation explicit. Collatz remains open.
 
 **Previous closing proposal:** [Least reverse defects and a Lean closing proposal](closing-proposal/README.md) proves ordinary progress for every two-odd upper certificate, isolates a first bad Mersenne exponent in one three-odd family, and certifies infinite subfamilies with smaller reverse queries. A fresh 100-declaration audit checks the final assembly with the open higher-rank progress theorem explicit. Collatz remains open.

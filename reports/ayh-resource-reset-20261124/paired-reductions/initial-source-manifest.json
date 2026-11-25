@@ -1,0 +1,128 @@
+[
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/CheckpointUnitExit.lean",
+    "author_source": "closure-20261125/checkpoints/CheckpointUnitExit.lean",
+    "sha256": "395bb920b61e0cac8de2bc5fd5c54965721bb2be166aa408d8cc3e0d7fc9f9ce",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+    "author_source": "closure-20261125/checkpoints/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+    "sha256": "2c1ee6c0cf07ff78a19ac4aaa70546194c059e1fd98c28b3afd370f05bfc6075",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/check_checkpoint_delay.py",
+    "author_source": "closure-20261125/checkpoints/check_checkpoint_delay.py",
+    "sha256": "724ac9f52d2204d233cfc7f83ba91b0b703487314f82c492a651c078b82beed6",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/THIRTY_TWO_ORDINARY_COMPARISONS.md",
+    "author_source": "closure-20261125/checkpoints/THIRTY_TWO_ORDINARY_COMPARISONS.md",
+    "sha256": "817a67b90e16904338745a9a0c05e870c472fb468e310ac2be9922ac9a091d35",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/check_thirty_two.py",
+    "author_source": "closure-20261125/checkpoints/check_thirty_two.py",
+    "sha256": "fbd870f9f169c5a4ac3b3448aa8680899ec590a5a58f336354c9f8b0d6b9ddfd",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+    "author_source": "closure-20261125/rewriting/SignedCycleDilation.lean",
+    "sha256": "a39820fe4f81a30835047a3ae5321c314d52b0545ac467b6e1edfeed213758a3",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/DifferentCycleAnchors.lean",
+    "author_source": "closure-20261125/rewriting/DifferentCycleAnchors.lean",
+    "sha256": "318ba88a0a8297f20c80609ec1322c5176f278648c11ece163a0789ca801d866",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/MersenneTwoCenter.lean",
+    "author_source": "closure-20261125/rewriting/MersenneTwoCenter.lean",
+    "sha256": "200a72d44d14e7a28e6dd238da0573f030a9808c2dce6d63b98378df917026fe",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/GuardedResidueCover.lean",
+    "author_source": "closure-20261125/rewriting/GuardedResidueCover.lean",
+    "sha256": "e15f066d09c85f05fa17e91d56b61a95f4361da3e103b3432c589aee62a2abfc",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/check_signed_routes.py",
+    "author_source": "closure-20261125/rewriting/check_signed_routes.py",
+    "sha256": "2832a94455f0281bbdee4aa414a95ff18b468b308efba518c38312a39d0d770f",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/SIGNED_ROUTES.md",
+    "author_source": "closure-20261125/rewriting/SIGNED_ROUTES.md",
+    "sha256": "88bf94083c79372604f03e983353420c6562b01ea6f5ff2dd10fce94fc377e2d",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/OddClockFloor.lean",
+    "author_source": "closure-20261125/latest/OddClockFloor.lean",
+    "sha256": "f5fac01e443e3bd59899e99ebe423dab0cbdde949ebf8282f43f0564842da5ad",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+    "author_source": "closure-20261125/latest/ShadowTernaryDigits.lean",
+    "sha256": "d06eaafc53c73137a41309ecb8be192bb39a259bd7d53f6eb780c63db7569a22",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+    "author_source": "closure-20261125/latest/ShadowTernaryRescue.lean",
+    "sha256": "ce09a11c31be1ebdd08d18d87e024267acdab9cba9f3c3baba63499faf6c9a61",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/FixedRankDeadlines.lean",
+    "author_source": "closure-20261125/latest/FixedRankDeadlines.lean",
+    "sha256": "1fd86fd3cb7fbbdce741db53a731c6080d25842a057fbfe2b66a8fd7f9d5496e",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/DefectClockFloor.lean",
+    "author_source": "closure-20261125/latest/DefectClockFloor.lean",
+    "sha256": "1387a760fecfb4c4c14625026af89378fd0441675172bd7dae3e632afc1d14b3",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/check_clock_and_shadow.py",
+    "author_source": "closure-20261125/latest/check_clock_and_shadow.py",
+    "sha256": "5668b3ebf27852392c99a985a03f827f05a36328679d6857eeae465eac449cb1",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/TECHNICAL_NOTE.md",
+    "author_source": "closure-20261125/latest/TECHNICAL_NOTE.md",
+    "sha256": "814594dd4629d8224bf7b4dfa052748dd7e2abc0223d7493dac1c8f37a598ffb",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/CenterPhaseObstruction.lean",
+    "author_source": "closure-20261125/latest/CenterPhaseObstruction.lean",
+    "sha256": "5a452f521278f3938234ccd386ec954f127865f90c24adfc8ee81279251cebd6",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/CENTER_PHASE_OBSTRUCTION.md",
+    "author_source": "closure-20261125/latest/CENTER_PHASE_OBSTRUCTION.md",
+    "sha256": "b9bd5ae30bc27528dae8920e06f53fa99ae7e57e96584d097a7afda87663f4de",
+    "copied_without_change": true
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/paired-reductions/check_center_phase.py",
+    "author_source": "closure-20261125/latest/check_center_phase.py",
+    "sha256": "18bdedc4693247808d775fddccb5db0147157f683ddb14d5091d78e3c0e3e39a",
+    "copied_without_change": true
+  }
+]

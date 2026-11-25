@@ -1,0 +1,98 @@
+{
+  "baseline": "156652e03fe7a78f9cd4442039779cc622fdf3de",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Fresh source build of all new mathematical modules. Imports use only the root-fresh objects recorded in baseline-execution.json or earlier entries here, plus pinned Mathlib. No author-supplied local objects used.",
+  "modules": [
+    {
+      "module": "CheckpointUnitExit",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CheckpointUnitExit.lean",
+      "sha256": "395bb920b61e0cac8de2bc5fd5c54965721bb2be166aa408d8cc3e0d7fc9f9ce",
+      "exit_code": 0,
+      "seconds": 6.453,
+      "output": "'CollatzCheckpointUnitExit.twoOrdinaryExits' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.earlierOddQuotients' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.firstUnitExit' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.secondUnitExit' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.distinct_at_positive_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "SignedCycleDilation",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+      "sha256": "a39820fe4f81a30835047a3ae5321c314d52b0545ac467b6e1edfeed213758a3",
+      "exit_code": 0,
+      "seconds": 2.131,
+      "output": "'SignedCycleDilation.cycle_lifts' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.paired' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.minus1183' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.least_not_minus1183' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "DifferentCycleAnchors",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DifferentCycleAnchors.lean",
+      "sha256": "318ba88a0a8297f20c80609ec1322c5176f278648c11ece163a0789ca801d866",
+      "exit_code": 0,
+      "seconds": 2.262,
+      "output": "'DifferentCycleAnchors.align' depends on axioms: [propext, Quot.sound]\n'DifferentCycleAnchors.two_anchors' depends on axioms: [propext, Quot.sound]\n'DifferentCycleAnchors.height_debt' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "MersenneTwoCenter",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/MersenneTwoCenter.lean",
+      "sha256": "200a72d44d14e7a28e6dd238da0573f030a9808c2dce6d63b98378df917026fe",
+      "exit_code": 0,
+      "seconds": 10.79,
+      "output": "'MersenneTwoCenter.progress' depends on axioms: [propext, Quot.sound]\n'MersenneTwoCenter.least_excluded' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "GuardedResidueCover",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/GuardedResidueCover.lean",
+      "sha256": "e15f066d09c85f05fa17e91d56b61a95f4361da3e103b3432c589aee62a2abfc",
+      "exit_code": 0,
+      "seconds": 4.322,
+      "output": "'GuardedResidueCover.census' does not depend on any axioms\n'GuardedResidueCover.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "OddClockFloor",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/OddClockFloor.lean",
+      "sha256": "f5fac01e443e3bd59899e99ebe423dab0cbdde949ebf8282f43f0564842da5ad",
+      "exit_code": 0,
+      "seconds": 3.509,
+      "output": "'OddClockFloor.bad_tower_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.small_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.odd_clock_upper' depends on axioms: [propext, Quot.sound]\n'OddClockFloor.bad_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.bad_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.bad_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ShadowTernaryDigits",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+      "sha256": "d06eaafc53c73137a41309ecb8be192bb39a259bd7d53f6eb780c63db7569a22",
+      "exit_code": 0,
+      "seconds": 2.104,
+      "output": "'ShadowTernaryDigits.shadow_equation' depends on axioms: [propext]\n'ShadowTernaryDigits.digit_displacement' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.three_lifts' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.full_block' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.cofinal_residue' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.finite_screen' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "ShadowTernaryRescue",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+      "sha256": "ce09a11c31be1ebdd08d18d87e024267acdab9cba9f3c3baba63499faf6c9a61",
+      "exit_code": 0,
+      "seconds": 3.592,
+      "output": "'ShadowTernaryRescue.shadow_parameter' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryRescue.ternary_row_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ShadowTernaryRescue.simultaneous_shadow_rescue' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "DefectClockFloor",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DefectClockFloor.lean",
+      "sha256": "1387a760fecfb4c4c14625026af89378fd0441675172bd7dae3e632afc1d14b3",
+      "exit_code": 0,
+      "seconds": 1.794,
+      "output": "'DefectClockFloor.source_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_all_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_ternary_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_simultaneous_shadow_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FixedRankDeadlines",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/FixedRankDeadlines.lean",
+      "sha256": "1fd86fd3cb7fbbdce741db53a731c6080d25842a057fbfe2b66a8fd7f9d5496e",
+      "exit_code": 0,
+      "seconds": 1.608,
+      "output": "'FixedRankDeadlines.no_rank_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "CenterPhaseObstruction",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CenterPhaseObstruction.lean",
+      "sha256": "5a452f521278f3938234ccd386ec954f127865f90c24adfc8ee81279251cebd6",
+      "exit_code": 0,
+      "seconds": 5.912,
+      "output": "'CenterPhaseObstruction.smaller_never_hits' depends on axioms: [propext, Quot.sound]\n'CenterPhaseObstruction.parent_phase_clock' depends on axioms: [propext, Quot.sound]\n'CenterPhaseObstruction.limiting_query_impossible' depends on axioms: [propext, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "seconds": 44.484
+}

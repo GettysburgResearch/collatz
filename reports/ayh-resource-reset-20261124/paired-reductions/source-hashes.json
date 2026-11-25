@@ -1,0 +1,214 @@
+{
+  "schema": "collatz-paired-reductions-hashes/v1",
+  "scope": "Final new scientific and report files plus updated packet navigation; excludes this self-referential manifest.",
+  "files": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/CHECKPOINT_REVIEW.md",
+      "sha256": "572c6b5414b6db1a2f71d0c7a628d54de284ec9b580ee73c5db12f9ca50e61e2"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/CLOCK_AND_TERNARY_REVIEW.md",
+      "sha256": "492a19bfdf2212b18902a417f6ba0f968adada24acaaea48104b49c3f5ffb11a"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/CLOSING_PROPOSAL_REVIEW.md",
+      "sha256": "2b75bfd85c4c6de93f74da717c5f2c38b4288dc1f47982bd0892a322a2eb82a1"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/INDEPENDENT_CENTER_PHASE_REVIEW.md",
+      "sha256": "413dc5e49f250aec4565a847c5838dd2fce09aa220b159f7703b729b5d7436c8"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/INDEPENDENT_REWRITE_REVIEW.md",
+      "sha256": "d012997a9fe44f2d0bd24eac64fa378b71de540fd37ce931188bdfb61ae57cba"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/LIVE_192_REVIEW.md",
+      "sha256": "cbadcf384a8afa61ab7daa56912ff6f7cd5505fcb059c1120d61b1fab58b88b4"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/LIVE_195_REVIEW.md",
+      "sha256": "f34e8f5b3e819654a15a22e1ddd9228b34786546bb75465f96c62853099adb45"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/LIVE_206_REVIEW.md",
+      "sha256": "288ef18ec9e5dc328c4d3e3b7e74146cae9b9e5ead5318e0a626b25d6fdb1156"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/LIVE_PR_INTAKE.json",
+      "sha256": "b8e2fcb00835302ca89b59803d6aac0effa17acda652044b90d80f39fb05d8b4"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/LIVE_SOURCE_SYNTHESIS.md",
+      "sha256": "0d08114192d72dbf80bd52980f6ad5edf1b86590663dda8496b1498675be188e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/OPEN_PR_INTAKE.json",
+      "sha256": "3b9a4993d985961cfdbd92481660415fe359588468e00fdb0efb1de21229898d"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/PRIOR_PR_DESCRIPTION.json",
+      "sha256": "cbd71cf8b40b56f92903cf23bf66473abe62f024160b7c66a27dfb6a0c29cd00"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/PUBLICATION_READINESS.md",
+      "sha256": "b63f24cb99e1998e1afc10762d6974ba0b98b5295db057dfdebc83e3a0d65b18"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/README.md",
+      "sha256": "229090c73033f56f7f4120db0bb0de718745f55991574558d3237abfce46ae1e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/ROOT_REVIEW.md",
+      "sha256": "5bfc823ae7ce33e08f1b9bec7bbeb77874c04c620301f1556398d3b5f64547ae"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/THIRTY_TWO_REVIEW.md",
+      "sha256": "c905730888b637aaa14c3b38cc84704c833840c7fd036d23b2aefa95428b6191"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/assembly-execution.json",
+      "sha256": "825f99740e21aee73f1e3eeca9203d38b76368a184ed8057603531eadd78872c"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/axiom-audit.json",
+      "sha256": "4c1744394cec12a16761df6366e4665c327bad66097f94f43b570534fcedc65c"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/baseline-execution.json",
+      "sha256": "26c1eae98755cc0990c35361351aabc66f4c40e79dbd55997a9c74e9b1c44d16"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/check_rewrite_independent.py",
+      "sha256": "17eeccba640f0de19e2e0be73fbc13b2381cd650597115676ef5fca8349996c9"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/finite-execution.json",
+      "sha256": "c4f8b038e4e6a15c4d1818f117ced89493951402d75a5e542e3d508f232004fa"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/formatting-execution.json",
+      "sha256": "51ac7f1f5942bd4208fd782ac34ff7781471609324c98d25cbc461a8d826fc2d"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/formatting-provenance.json",
+      "sha256": "9cdbf853c5166e54a487142cdbd80235cc72b448515dd619b9eb465c6b0af8cb"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/initial-source-manifest.json",
+      "sha256": "baa81e529ec031f10f33d8c6bb4ffad78f0d6767e0dd8551b6f1260e109f91fa"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/new-execution.json",
+      "sha256": "570f73cc38232f5d431b93ca376556313da2a18fb633150650d8415479a1c3db"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/README.md",
+      "sha256": "1cc7842aa81388ec859de522a4ea6bb8c675caae6e6b0df76c7f58f495796961"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CENTER_PHASE_OBSTRUCTION.md",
+      "sha256": "b9bd5ae30bc27528dae8920e06f53fa99ae7e57e96584d097a7afda87663f4de"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CenterPhaseObstruction.lean",
+      "sha256": "5a452f521278f3938234ccd386ec954f127865f90c24adfc8ee81279251cebd6"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CheckpointUnitExit.lean",
+      "sha256": "395bb920b61e0cac8de2bc5fd5c54965721bb2be166aa408d8cc3e0d7fc9f9ce"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ClosingProposal.lean",
+      "sha256": "7d713aeae926be6c0987c17a551a21b3551d9b7cce3c61276199a6901cb936c3"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DefectClockFloor.lean",
+      "sha256": "1387a760fecfb4c4c14625026af89378fd0441675172bd7dae3e632afc1d14b3"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DifferentCycleAnchors.lean",
+      "sha256": "318ba88a0a8297f20c80609ec1322c5176f278648c11ece163a0789ca801d866"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/FixedRankDeadlines.lean",
+      "sha256": "1fd86fd3cb7fbbdce741db53a731c6080d25842a057fbfe2b66a8fd7f9d5496e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/GuardedResidueCover.lean",
+      "sha256": "e15f066d09c85f05fa17e91d56b61a95f4361da3e103b3432c589aee62a2abfc"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/MersenneTwoCenter.lean",
+      "sha256": "200a72d44d14e7a28e6dd238da0573f030a9808c2dce6d63b98378df917026fe"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/OddClockFloor.lean",
+      "sha256": "f5fac01e443e3bd59899e99ebe423dab0cbdde949ebf8282f43f0564842da5ad"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/PublicPairedAudit.lean",
+      "sha256": "cd9c130971a3089ab1d2a8f662672222c3300656c6b5dcd880ea089a87cdb7e1"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/README.md",
+      "sha256": "529c350fb36c0abec610d9e0cf409fc69e85e137a0df70663ad60983b4e8ea1f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SIGNED_ROUTES.md",
+      "sha256": "88bf94083c79372604f03e983353420c6562b01ea6f5ff2dd10fce94fc377e2d"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+      "sha256": "2c1ee6c0cf07ff78a19ac4aaa70546194c059e1fd98c28b3afd370f05bfc6075"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SOURCES.json",
+      "sha256": "d3317c11ff6ebfddf409c8970977992972e4ca006be571f746c4a56008f3b109"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+      "sha256": "6949878cae845dea016d240b51792b1869221e12fd75ff09392fff5f4faf25fb"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+      "sha256": "7fe374b138cd1314bbd5c311fa350a77bb45dba55f9d1dd8a7050b79e6d4ff6b"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+      "sha256": "a39820fe4f81a30835047a3ae5321c314d52b0545ac467b6e1edfeed213758a3"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/TECHNICAL_NOTE.md",
+      "sha256": "814594dd4629d8224bf7b4dfa052748dd7e2abc0223d7493dac1c8f37a598ffb"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/THIRTY_TWO_ORDINARY_COMPARISONS.md",
+      "sha256": "817a67b90e16904338745a9a0c05e870c472fb468e310ac2be9922ac9a091d35"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_center_phase.py",
+      "sha256": "18bdedc4693247808d775fddccb5db0147157f683ddb14d5091d78e3c0e3e39a"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_checkpoint_delay.py",
+      "sha256": "724ac9f52d2204d233cfc7f83ba91b0b703487314f82c492a651c078b82beed6"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_clock_and_shadow.py",
+      "sha256": "5668b3ebf27852392c99a985a03f827f05a36328679d6857eeae465eac449cb1"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_lean.sh",
+      "sha256": "5ab4bc291e820262f01f953caa795c0b5b87a41678869fc8d4e59c24261fb7e8"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_signed_routes.py",
+      "sha256": "2832a94455f0281bbdee4aa414a95ff18b468b308efba518c38312a39d0d770f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_thirty_two.py",
+      "sha256": "fbd870f9f169c5a4ac3b3448aa8680899ec590a5a58f336354c9f8b0d6b9ddfd"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "success": true,
+  "scope": "Six exact integer/rational checkers, each run normally and with Python optimization. These finite replays supplement Lean and written proofs; they are not a proof of universal convergence.",
+  "checks": [
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_checkpoint_delay.py",
+      "sha256": "724ac9f52d2204d233cfc7f83ba91b0b703487314f82c492a651c078b82beed6",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_checkpoint_delay.py"
+          ],
+          "exit_code": 0,
+          "seconds": 4.779,
+          "stdout": "Signed traces, ordinary starts, and 130 binary/ternary rescues passed; 18687 affine steps, largest word 975.\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_checkpoint_delay.py"
+          ],
+          "exit_code": 0,
+          "seconds": 4.387,
+          "stdout": "Signed traces, ordinary starts, and 130 binary/ternary rescues passed; 18687 affine steps, largest word 975.\n"
+        }
+      ]
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_signed_routes.py",
+      "sha256": "2832a94455f0281bbdee4aa414a95ff18b468b308efba518c38312a39d0d770f",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_signed_routes.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.057,
+          "stdout": "Small-horizon simultaneous signed anchors: [(0, 0), (4, 1), (5, 1)]\nDifferent rational-center rows, classes modulo 19683: (13, 17)\nAll-rank residue classes, classes using a smaller tripling: (55, 13)\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_signed_routes.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.187,
+          "stdout": "Small-horizon simultaneous signed anchors: [(0, 0), (4, 1), (5, 1)]\nDifferent rational-center rows, classes modulo 19683: (13, 17)\nAll-rank residue classes, classes using a smaller tripling: (55, 13)\n"
+        }
+      ]
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_clock_and_shadow.py",
+      "sha256": "5668b3ebf27852392c99a985a03f827f05a36328679d6857eeae465eac449cb1",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_clock_and_shadow.py",
+            "research/ayh-resource-reset-20261124/closing-proposal/OppositeArmQueries.json"
+          ],
+          "exit_code": 0,
+          "seconds": 0.147,
+          "stdout": "{\n  \"small_ordinary_sources\": [\n    1,\n    2719\n  ],\n  \"max_first_drop_with_one_witness\": [\n    81,\n    1407\n  ],\n  \"max_first_hit_with_one_witness\": [\n    132,\n    2463\n  ],\n  \"least_floor_for_count_620_factor_2pow40\": 226,\n  \"least_floor_for_count_plus_exponent_646\": 2720,\n  \"eligible_least_defect_tail_exact\": \"51136036418359787630178025889473994167068101893347047735486914284881423145267085690252043415609288982178137533280883837161645200077241019185636951781386200383776886746824014915589152225623581343734073789670947146924970428216019989836232313150655124282934736038680995495489298094869225240279305253/11235582092889474423308157442431404585112356118389416079589380072358292237843810195794279832650471001320007117491962084853674360550901038905802964414967132773610493339054092829768888725077880882465817684505312860552384417646403930092119569408801702322709406917786643639996702871154982269052209770601514008576\",\n  \"eligible_least_defect_tail_decimal\": 4.551258314486584e-12,\n  \"prior_ternary_bank_rows\": 214,\n  \"shadow_t_period_checked\": 59049,\n  \"prior_ternary_bank_covered_t\": 1000,\n  \"prior_ternary_bank_uncovered_t\": 58049,\n  \"third_query_t_residue_mod_2187\": 2034\n}\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_clock_and_shadow.py",
+            "research/ayh-resource-reset-20261124/closing-proposal/OppositeArmQueries.json"
+          ],
+          "exit_code": 0,
+          "seconds": 0.207,
+          "stdout": "{\n  \"small_ordinary_sources\": [\n    1,\n    2719\n  ],\n  \"max_first_drop_with_one_witness\": [\n    81,\n    1407\n  ],\n  \"max_first_hit_with_one_witness\": [\n    132,\n    2463\n  ],\n  \"least_floor_for_count_620_factor_2pow40\": 226,\n  \"least_floor_for_count_plus_exponent_646\": 2720,\n  \"eligible_least_defect_tail_exact\": \"51136036418359787630178025889473994167068101893347047735486914284881423145267085690252043415609288982178137533280883837161645200077241019185636951781386200383776886746824014915589152225623581343734073789670947146924970428216019989836232313150655124282934736038680995495489298094869225240279305253/11235582092889474423308157442431404585112356118389416079589380072358292237843810195794279832650471001320007117491962084853674360550901038905802964414967132773610493339054092829768888725077880882465817684505312860552384417646403930092119569408801702322709406917786643639996702871154982269052209770601514008576\",\n  \"eligible_least_defect_tail_decimal\": 4.551258314486584e-12,\n  \"prior_ternary_bank_rows\": 214,\n  \"shadow_t_period_checked\": 59049,\n  \"prior_ternary_bank_covered_t\": 1000,\n  \"prior_ternary_bank_uncovered_t\": 58049,\n  \"third_query_t_residue_mod_2187\": 2034\n}\n"
+        }
+      ]
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_center_phase.py",
+      "sha256": "18bdedc4693247808d775fddccb5db0147157f683ddb14d5091d78e3c0e3e39a",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_center_phase.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.035,
+          "stdout": "{\n  \"source\": 3233,\n  \"triple_first_hit\": 18,\n  \"source_first_hit\": 107,\n  \"candidate_count\": 67,\n  \"sum_candidate_first_hit_clocks\": 3379,\n  \"maximum_candidate_first_hit\": 99,\n  \"lower_phase_targets\": [\n    2047,\n    3071,\n    4607,\n    6911,\n    10367,\n    15551,\n    23327,\n    34991,\n    52487,\n    78731,\n    118097,\n    177146\n  ],\n  \"earlier_candidate_meetings\": 0,\n  \"parent_target_visits\": [\n    [\n      7,\n      0\n    ],\n    [\n      8,\n      1\n    ],\n    [\n      9,\n      2\n    ],\n    [\n      10,\n      3\n    ],\n    [\n      11,\n      4\n    ],\n    [\n      12,\n      5\n    ],\n    [\n      13,\n      6\n    ],\n    [\n      14,\n      7\n    ],\n    [\n      15,\n      8\n    ],\n    [\n      16,\n      9\n    ],\n    [\n      17,\n      10\n    ],\n    [\n      18,\n      11\n    ]\n  ],\n  \"ternary_precision_controls\": 32\n}\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_center_phase.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.117,
+          "stdout": "{\n  \"source\": 3233,\n  \"triple_first_hit\": 18,\n  \"source_first_hit\": 107,\n  \"candidate_count\": 67,\n  \"sum_candidate_first_hit_clocks\": 3379,\n  \"maximum_candidate_first_hit\": 99,\n  \"lower_phase_targets\": [\n    2047,\n    3071,\n    4607,\n    6911,\n    10367,\n    15551,\n    23327,\n    34991,\n    52487,\n    78731,\n    118097,\n    177146\n  ],\n  \"earlier_candidate_meetings\": 0,\n  \"parent_target_visits\": [\n    [\n      7,\n      0\n    ],\n    [\n      8,\n      1\n    ],\n    [\n      9,\n      2\n    ],\n    [\n      10,\n      3\n    ],\n    [\n      11,\n      4\n    ],\n    [\n      12,\n      5\n    ],\n    [\n      13,\n      6\n    ],\n    [\n      14,\n      7\n    ],\n    [\n      15,\n      8\n    ],\n    [\n      16,\n      9\n    ],\n    [\n      17,\n      10\n    ],\n    [\n      18,\n      11\n    ]\n  ],\n  \"ternary_precision_controls\": 32\n}\n"
+        }
+      ]
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/check_thirty_two.py",
+      "sha256": "fbd870f9f169c5a4ac3b3448aa8680899ec590a5a58f336354c9f8b0d6b9ddfd",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_thirty_two.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.326,
+          "stdout": "8 supplied members, 6776 checkpoint values, 108416 Mersenne post-peak values, 2314 matched comparisons.\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/ayh-resource-reset-20261124/paired-reductions/check_thirty_two.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.082,
+          "stdout": "8 supplied members, 6776 checkpoint values, 108416 Mersenne post-peak values, 2314 matched comparisons.\n"
+        }
+      ]
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/paired-reductions/check_rewrite_independent.py",
+      "sha256": "17eeccba640f0de19e2e0be73fbc13b2381cd650597115676ef5fca8349996c9",
+      "matching_outputs": true,
+      "runs": [
+        {
+          "optimized": false,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "reports/ayh-resource-reset-20261124/paired-reductions/check_rewrite_independent.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.552,
+          "stdout": "Independently confirmed 26 physical row instances, 1278 shortcut clocks, maximum j=5350871, 17 disjoint common classes, and 10 signed-pair lifts.\nSigned anchor census from an independent absolute height bound: [(0, 0), (4, 1), (5, 1)]\nGuarded bank: 64 positive walk executions, 55 distinct residues.\n"
+        },
+        {
+          "optimized": true,
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "reports/ayh-resource-reset-20261124/paired-reductions/check_rewrite_independent.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.476,
+          "stdout": "Independently confirmed 26 physical row instances, 1278 shortcut clocks, maximum j=5350871, 17 disjoint common classes, and 10 signed-pair lifts.\nSigned anchor census from an independent absolute height bound: [(0, 0), (4, 1), (5, 1)]\nGuarded bank: 64 positive walk executions, 55 distinct residues.\n"
+        }
+      ]
+    }
+  ],
+  "seconds": 9.175
+}
