@@ -1,0 +1,158 @@
+{
+  "schema": "collatz-source-progress-hashes/v1",
+  "scope": "Final science, reports and navigation bytes; excludes this self-referential manifest.",
+  "files": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/FINAL_CYLINDER_REVIEW.md",
+      "sha256": "e555b473d467d1681600e2512e46d59e27cad94745165c204e67a8032ed5a15a"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/LATTICE_REVIEW.md",
+      "sha256": "eccf19d2011ee3a7bb0ce32c403b0d70c0ad25d2cf204243cc720ac18b63fda8"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/MERSENNE_REVIEW.md",
+      "sha256": "8f8a5296b3f6d1e7691bdc6c10e9ccbccecc4db44bc627c0b0261bea41294177"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/OPEN_PR_INTAKE.json",
+      "sha256": "1d12b2ae834bbc08e2fd223f89645fbd0286d31df0f7c9d0c7c279d2438df906"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/PRIOR_PR_DESCRIPTION.json",
+      "sha256": "601ed4c1a0b927620dbb5a0ff88e1469456a9ffa63ffa641b7595b164cc7df0e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/README.md",
+      "sha256": "f054f29aed35a75121cfc4f5736a103c347d330b7445a2ee3b47b96bfe479a83"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/SOURCE_CASES_REVIEW.md",
+      "sha256": "34c9866d2b9b091450e156b107122127aa8e991dcae56eaaf4047f380f679bc5"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/axiom-audit.json",
+      "sha256": "60dc3ebc43dceb9850a0fbe8053dc6c821ea0b160533d875d774d3c9c8bddbdb"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/check_word_independent.py",
+      "sha256": "d17c0410f0298ca310ec4509edc90549bf6f4c06c2a768043f0548330e66ea72"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/finite-execution.json",
+      "sha256": "c226762d9831bfbae3a52ad9252ba76f665df8c7cd4709dab49de1a494d9426a"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/grid-controls.json",
+      "sha256": "8bf034a761beb6a56c1d7b66cbff18f1a47ead6e7747a7e8e13807e869a7f63a"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/lean-execution.json",
+      "sha256": "184933ac1de196546203c66a59a72305e4018fa2efa905f3947e5cced0fb2331"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/source-progress/word-independent.json",
+      "sha256": "5f2977a7f4f3966391da0892fe792985f0f43fb35550c1de4e406c427e28ea4d"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/README.md",
+      "sha256": "a2b0c43b949f120f34b8bffcf2482879247a97c1ed3c223add07119bfee64f9f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/FinalProgressProposal.lean",
+      "sha256": "f803ed28152845d620f0114ed870cfd621340871c6f8dcc869b3203fe8e0df57"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/GRID_TRANSFER.md",
+      "sha256": "83225da3c9e92121a7b82099fb3cf958eee32c8ccc070b93a236e75b5381c62b"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/LiftedLattice.lean",
+      "sha256": "dfa342146d8afe933e72081d66cff55bae2806da4f6aea6c29cd7d66929cc2c5"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneProgressCases.lean",
+      "sha256": "a91b286866f347e88292e90ee96efd7ec4c33f502552bc78d64cf2c473131bb2"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueCylinder.lean",
+      "sha256": "9b7c05e91474e0e705574e8a5bd12df113cf56d5ccb3a219fdb1933b5654a00f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueWords.lean",
+      "sha256": "85073e9d4202e936560591f2ae6eb91ba281c9507eacb728b399d26931b97118"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneTwoCheckpoints.lean",
+      "sha256": "6baca0d4b3da675d026f9735bf71a6b6363bf3b9c89988a5ff167d2eeb1f99b0"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/OrdinaryWordRealization.lean",
+      "sha256": "d160b8a77442e71f55f4ad9f68b22af05760930468839aa92296facd15ad3229"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/PositiveWordDescent.lean",
+      "sha256": "f6499c78faad234b376b5e306e8c7e64949912656623ca7291b46e14f14d0f19"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/PublicProgressAudit.lean",
+      "sha256": "9eb99b6ff8804500ad7dc519a4c7eb808d5424bb8580fe9b4bc2fa9049563f90"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/README.md",
+      "sha256": "d265f7280207b177e1b57f5627021fbd49e692969599d1b356b3de2404fe2fff"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/SOURCES.json",
+      "sha256": "9ad6fdd3cd4aec55db6baa8f52ad794f449120549d6b6cbe4d89f155d0509327"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/SignedSeventeenPotential.lean",
+      "sha256": "04e76a626d14d578969ac9538fba89dc84e89153ab593b0d5ab5d03c4ca9c1bf"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/SourceProgressCases.lean",
+      "sha256": "3f4302bbe12eb79445c04a855a0f01878e1f573501243d3ef101f9e04d569f93"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/TWO_CHECKPOINT_RESCUE.md",
+      "sha256": "5a7db49d4472befceb92eb689719ae47ba9fc0d82aa55a9ea05f4fa0190eb648"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/UNIFORM_MERSENNE_QUOTIENT.md",
+      "sha256": "949e4034ef47c70df11f98627c2210a1723cbd194f1101deda87ca7d38d85c95"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/WORD_REALIZATION.md",
+      "sha256": "a2facbc83dc0b16010609c16fbb2d63fb88a6a33706e22629cd06e5dd1a86226"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/WordRank.lean",
+      "sha256": "873802f2b394de8de1be50a24f94847dcbdc35c5881272271432adbdbdbc30fe"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/check_grid_transfer.py",
+      "sha256": "8363835e2484eeeea11591563947ecea7183745538351ac6eeaf1e211d659a86"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/check_lean.sh",
+      "sha256": "4750ec229049e5a98f825ff2d5565b9cda4dafb1518dc637b703a490108b487d"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/check_two_checkpoint_rescue.py",
+      "sha256": "658483ddaf236a56d05a600d4097db8b6e5fd82711f4fbfae1d53bf707563681"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/check_uniform_mersenne_quotient.py",
+      "sha256": "d07adb5465c35a213fe9819d22417692fb595d2a7f16ca9f6ca280a669832c79"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/check_word_realization.py",
+      "sha256": "e3693442cc20339a92d7d356867bd0e1ecff8dff13a26fbc332f46e0d5960963"
+    }
+  ]
+}
