@@ -31,6 +31,8 @@ PR 193 gives a written $S$-adic Subspace Theorem lower bound for the outside-pri
 
 A written argument in this packet gives $O_\theta(X^\theta)$ visits below $X$ on every finite simple odd path whenever $\theta>h(\log_2 3)/\log 3\approx0.9499555$. The estimate is uniform in the path. Its proof uses counting and induction and has not been formalized. [Height count proof and prior bounds](HourCycleOccupation.md)
 
+The frozen PR 200 file `FinalProposal.lean` failed in this pinned toolchain at line 52. Replacing `(mul_le_mul_right hx).mp hprod` with `le_of_mul_le_mul_right hprod hx` in a separate copy made the file pass with warnings treated as errors. The final theorem still takes escape and periodic-orbit hypotheses. [Original source](https://github.com/GettysburgResearch/collatz/blob/8e6add443b13acbcfd553676898c120183f07377/research/regularity-rigidity-20261124/global-trace-20261125/FinalProposal.lean#L52)
+
 ## Rebuilding this packet
 
 Use Lean 4.34.1 and a Mathlib checkout at `d13f23b723b8a846827a245b89c10fc7d3f11612` with its matching binary cache. The command below rebuilds every local Lean module into a new temporary directory, checks every printed axiom report, and writes the source hashes and module counts to a receipt. Adjust the paths to the installed toolchain and Mathlib.
