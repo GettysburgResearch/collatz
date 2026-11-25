@@ -16,3 +16,5 @@ The science tree contains the root Lean replay for 13 project modules and 109 se
 This follow-up adds only this note and the science-validation receipt. The final complete candidate and final remote tree are checked separately, with the final remote head reported in the PR and response. The main branch, other contributors' branches and repository settings are unchanged.
 
 The retained universal Lean theorem still consumes the unproved FrontierMerger premise. The cycle-factor restriction, finite-class and bounded-template theorems, and source-qualified trace implications do not establish it. Collatz remains open.
+
+A subsequent wording correction makes the cycle heading explicitly collective: the high-degree factors together must absorb the large divisor. The theorem does not say that one individual factor must absorb almost the whole determinant. Only that heading, its manifest hash and this note changed; the proof statements, Lean sources and finite checkers are unchanged.

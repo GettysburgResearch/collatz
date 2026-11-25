@@ -1,4 +1,4 @@
-# A large irreducible factor must carry almost the whole Collatz cycle determinant
+# Large irreducible factors collectively carry almost the whole cycle determinant
 
 **PROPOSED written theorem.** Let $p$ be the odd period in the bounded least-tripling-disagreement branch and $F(X)=\sum_{r=0}^{p-1}c_r X^{p-1-r}$ its rank polynomial, with $c_r\in\{1,2,4\}$. For an irreducible factor $G$ of $F$ over the rationals, let $t$ be the gcd of the positive exponents with nonzero coefficients and write $G(X)=H(X^t)$. This removes all common dilation from its exponents. Call $n=\deg H$ its degree after this substitution.
 
