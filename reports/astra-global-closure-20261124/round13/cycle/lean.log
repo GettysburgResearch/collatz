@@ -1,0 +1,6 @@
+'RankCharacter.convolution_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankCharacter.centered_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankCharacter.telescope' depends on axioms: [propext, Quot.sound]
+'RankCharacter.frequency_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankCharacter.local_switch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankCharacter.reflected_edge' depends on axioms: [propext, Classical.choice, Quot.sound]

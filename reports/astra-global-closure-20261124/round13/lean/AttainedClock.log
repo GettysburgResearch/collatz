@@ -1,0 +1,13 @@
+'Collatz.AttainedClock.hits_level' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.slope_odd' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AttainedClock.phase_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AttainedClock.equal_grade_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AttainedClock.repair_contracts' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.grade_drop' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.odd_climb' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.even_descent' depends on axioms: [propext]
+'Collatz.AttainedClock.convergent_climb_control' depends on axioms: [propext, Quot.sound]
+'Collatz.AttainedClock.packet_antichain' does not depend on any axioms
+'Collatz.AttainedClock.principal_order' depends on axioms: [propext]
+'Collatz.AttainedClock.shifted_product' depends on axioms: [propext, Classical.choice, Quot.sound]

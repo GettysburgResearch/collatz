@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Bounded exact controls, not evidence of universal Collatz convergence or independent proofs of the asymptotic arguments.",
+  "runner_sha256": "91e5e4db02e2302343880b1504ffed19eb0fc7479a7a59737ed540198e6bbfc6",
+  "scripts": [
+    {
+      "script": "research/astra-global-closure-20261124/round13/arithmetic/check.py",
+      "source_sha256": "d5e8c902af416821a7ec3a7e9488ca472d1f696ac4186ebbd931bd4265ed55e4",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-global-closure-20261124/round13/arithmetic/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "e27c012b0f077b71f73ee60f38cba8c6c8931a02ee9f1b6c808237f0c41710c9"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-global-closure-20261124/round13/arithmetic/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "e27c012b0f077b71f73ee60f38cba8c6c8931a02ee9f1b6c808237f0c41710c9"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-global-closure-20261124/round13/controls/arithmetic-controls.txt",
+      "stdout_sha256": "e27c012b0f077b71f73ee60f38cba8c6c8931a02ee9f1b6c808237f0c41710c9"
+    },
+    {
+      "script": "research/astra-global-closure-20261124/round13/trace/check.py",
+      "source_sha256": "9bd52916cedd6fd2c1705c772c4d35ac30073cac09127d44f6db6de44a64c1b3",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-global-closure-20261124/round13/trace/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "f364e4c1329530a86fd5db6d089a8910bdb090449a98ad9dd1ee564eb908a3c1"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-global-closure-20261124/round13/trace/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "f364e4c1329530a86fd5db6d089a8910bdb090449a98ad9dd1ee564eb908a3c1"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-global-closure-20261124/round13/controls/trace-controls.json",
+      "stdout_sha256": "f364e4c1329530a86fd5db6d089a8910bdb090449a98ad9dd1ee564eb908a3c1"
+    },
+    {
+      "script": "research/astra-global-closure-20261124/round13/cycle/check.py",
+      "source_sha256": "ba608dfe00831fc35be316041af3a7043f0c42d0ace5e5ae15be5d5c71e5dca9",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-global-closure-20261124/round13/cycle/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "e528350147742c922647962f206fecae10dae2e548bb9b2685d0e9ade77b4208"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-global-closure-20261124/round13/cycle/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "e528350147742c922647962f206fecae10dae2e548bb9b2685d0e9ade77b4208"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-global-closure-20261124/round13/controls/cycle-controls.json",
+      "stdout_sha256": "e528350147742c922647962f206fecae10dae2e548bb9b2685d0e9ade77b4208"
+    },
+    {
+      "script": "research/astra-global-closure-20261124/round13/critical/check.py",
+      "source_sha256": "851e3a2425e35a705aee56f973f8aa46f4f5c52fd6918e02a68955c3a401a97a",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-global-closure-20261124/round13/critical/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "4757861d4e1a126ce80c3ba4d0673e7bb50d1bae9d2c7b2cd687e126f184bc0e"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-global-closure-20261124/round13/critical/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "4757861d4e1a126ce80c3ba4d0673e7bb50d1bae9d2c7b2cd687e126f184bc0e"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-global-closure-20261124/round13/controls/critical-controls.json",
+      "stdout_sha256": "4757861d4e1a126ce80c3ba4d0673e7bb50d1bae9d2c7b2cd687e126f184bc0e"
+    }
+  ],
+  "scripts_count": 4,
+  "executions": 8
+}

@@ -1,0 +1,325 @@
+{
+  "factor_counts": [
+    {
+      "length": 1,
+      "observed_factors": 2
+    },
+    {
+      "length": 2,
+      "observed_factors": 3
+    },
+    {
+      "length": 3,
+      "observed_factors": 4
+    },
+    {
+      "length": 4,
+      "observed_factors": 5
+    },
+    {
+      "length": 5,
+      "observed_factors": 6
+    },
+    {
+      "length": 6,
+      "observed_factors": 7
+    },
+    {
+      "length": 7,
+      "observed_factors": 8
+    },
+    {
+      "length": 8,
+      "observed_factors": 9
+    },
+    {
+      "length": 9,
+      "observed_factors": 10
+    },
+    {
+      "length": 10,
+      "observed_factors": 11
+    },
+    {
+      "length": 11,
+      "observed_factors": 12
+    },
+    {
+      "length": 12,
+      "observed_factors": 13
+    },
+    {
+      "length": 13,
+      "observed_factors": 14
+    },
+    {
+      "length": 14,
+      "observed_factors": 15
+    },
+    {
+      "length": 15,
+      "observed_factors": 16
+    },
+    {
+      "length": 16,
+      "observed_factors": 17
+    },
+    {
+      "length": 17,
+      "observed_factors": 18
+    },
+    {
+      "length": 18,
+      "observed_factors": 19
+    },
+    {
+      "length": 19,
+      "observed_factors": 20
+    },
+    {
+      "length": 20,
+      "observed_factors": 21
+    },
+    {
+      "length": 21,
+      "observed_factors": 22
+    },
+    {
+      "length": 22,
+      "observed_factors": 23
+    },
+    {
+      "length": 23,
+      "observed_factors": 24
+    },
+    {
+      "length": 24,
+      "observed_factors": 25
+    },
+    {
+      "length": 25,
+      "observed_factors": 26
+    },
+    {
+      "length": 26,
+      "observed_factors": 27
+    },
+    {
+      "length": 27,
+      "observed_factors": 28
+    },
+    {
+      "length": 28,
+      "observed_factors": 29
+    },
+    {
+      "length": 29,
+      "observed_factors": 30
+    },
+    {
+      "length": 30,
+      "observed_factors": 31
+    },
+    {
+      "length": 31,
+      "observed_factors": 32
+    },
+    {
+      "length": 32,
+      "observed_factors": 33
+    },
+    {
+      "length": 33,
+      "observed_factors": 34
+    },
+    {
+      "length": 34,
+      "observed_factors": 35
+    },
+    {
+      "length": 35,
+      "observed_factors": 36
+    },
+    {
+      "length": 36,
+      "observed_factors": 37
+    },
+    {
+      "length": 37,
+      "observed_factors": 38
+    },
+    {
+      "length": 38,
+      "observed_factors": 39
+    },
+    {
+      "length": 39,
+      "observed_factors": 40
+    },
+    {
+      "length": 40,
+      "observed_factors": 41
+    },
+    {
+      "length": 41,
+      "observed_factors": 42
+    },
+    {
+      "length": 42,
+      "observed_factors": 43
+    },
+    {
+      "length": 43,
+      "observed_factors": 44
+    },
+    {
+      "length": 44,
+      "observed_factors": 45
+    },
+    {
+      "length": 45,
+      "observed_factors": 46
+    },
+    {
+      "length": 46,
+      "observed_factors": 47
+    },
+    {
+      "length": 47,
+      "observed_factors": 48
+    },
+    {
+      "length": 48,
+      "observed_factors": 49
+    },
+    {
+      "length": 49,
+      "observed_factors": 50
+    },
+    {
+      "length": 50,
+      "observed_factors": 51
+    },
+    {
+      "length": 51,
+      "observed_factors": 52
+    },
+    {
+      "length": 52,
+      "observed_factors": 53
+    },
+    {
+      "length": 53,
+      "observed_factors": 54
+    },
+    {
+      "length": 54,
+      "observed_factors": 55
+    },
+    {
+      "length": 55,
+      "observed_factors": 56
+    },
+    {
+      "length": 56,
+      "observed_factors": 57
+    },
+    {
+      "length": 57,
+      "observed_factors": 58
+    },
+    {
+      "length": 58,
+      "observed_factors": 59
+    },
+    {
+      "length": 59,
+      "observed_factors": 60
+    },
+    {
+      "length": 60,
+      "observed_factors": 61
+    },
+    {
+      "length": 61,
+      "observed_factors": 62
+    },
+    {
+      "length": 62,
+      "observed_factors": 63
+    },
+    {
+      "length": 63,
+      "observed_factors": 64
+    },
+    {
+      "length": 64,
+      "observed_factors": 65
+    }
+  ],
+  "mechanical_prefix_length": 4096,
+  "ordinary_realizations": [
+    {
+      "clock": 1,
+      "depth": 1,
+      "endpoint": "5",
+      "source": "3"
+    },
+    {
+      "clock": 3,
+      "depth": 2,
+      "endpoint": "11",
+      "source": "9"
+    },
+    {
+      "clock": 4,
+      "depth": 3,
+      "endpoint": "47",
+      "source": "27"
+    },
+    {
+      "clock": 6,
+      "depth": 4,
+      "endpoint": "155",
+      "source": "121"
+    },
+    {
+      "clock": 12,
+      "depth": 8,
+      "endpoint": "11657",
+      "source": "7275"
+    },
+    {
+      "clock": 25,
+      "depth": 16,
+      "endpoint": "56291915",
+      "source": "43878905"
+    },
+    {
+      "clock": 50,
+      "depth": 32,
+      "endpoint": "3295697307782771",
+      "source": "2002474292583531"
+    },
+    {
+      "clock": 101,
+      "depth": 64,
+      "endpoint": "2123552777298256518243126783365",
+      "source": "1567950395927331422523214498297"
+    },
+    {
+      "clock": 202,
+      "depth": 128,
+      "endpoint": "6582737072038871566266565147624289355915845397233037007850285",
+      "source": "3588765066964615640900915413004884796199686477926953068242811"
+    },
+    {
+      "clock": 405,
+      "depth": 256,
+      "endpoint": "199353387259569599473429640289720715285395964708005812562154243400146040226919114732277746349436466632915212994729321298073",
+      "source": "118503357433392833600644254229887616613123934279936029805026559946312146893326101683779740773154571224173587525814460718187"
+    }
+  ],
+  "scope": "Finite mechanical prefixes and changing positive ordinary realizations; no infinite ordinary orbit or transcendence inferred by this program.",
+  "status": "PASS"
+}

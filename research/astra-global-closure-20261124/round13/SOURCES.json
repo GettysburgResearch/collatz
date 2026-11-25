@@ -1,0 +1,130 @@
+{
+  "compiler": "Lean 4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies": [
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "scope": "Unchanged dependency rebuilt from visible source in round thirteen."
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "scope": "Unchanged dependency rebuilt from visible source in round thirteen."
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "git_blob": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "scope": "Unchanged dependency rebuilt from visible source in round thirteen."
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "local": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "scope": "Unchanged dependency rebuilt from visible source in round thirteen."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "local": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "local": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "local": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "local": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    }
+  ],
+  "external_inputs": [
+    {
+      "name": "Schlickewei p-adic Subspace Theorem, Evertse Theorem 1.1",
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+      "status": "published theorem, primary exposition checked",
+      "scope": "Written PR210 application reconstructed at fixed dimension three and fixed places infinity, 2, 3. Not formalized by the finite Lean consumer."
+    },
+    {
+      "name": "Adamczewski-Bugeaud, Annals 165 (2007), 547-565",
+      "url": "https://annals.math.princeton.edu/2007/165-2/p04",
+      "status": "published, methodological precedent",
+      "scope": "Repetition/transcendence method. Its ordinary base-digit results are not applied directly to variable-clock critical coordinates."
+    },
+    {
+      "name": "Smyth, On the product of the conjugates outside the unit circle of an algebraic integer (1971)",
+      "url": "https://doi.org/10.1112/blms/3.2.169",
+      "readable_primary_copy": "https://webhomes.maths.ed.ac.uk/~chris/papers/Smyth240707.pdf",
+      "status": "published; author survey checked",
+      "scope": "Uniform Mahler measure bound greater than one for monic irreducible nonreciprocal polynomials with nonzero constant coefficient. Used in written factor-count estimate."
+    },
+    {
+      "name": "Wu-Wang, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "status": "published, inherited round-twelve dependency",
+      "scope": "Determinant scale log D = p log 3 + O(log p) in the bounded cycle branch. Not rebuilt here."
+    },
+    {
+      "name": "PR146 oriented pair absorption",
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "status": "SOURCE-QUALIFIED proposed external input",
+      "scope": "Only arithmetic/DENSITY.md uses the absorption tail. The new deterministic synchronization, actual-row floor, every-progression merger construction and finite-class obstruction do not assume it."
+    },
+    {
+      "name": "Tao, Almost all orbits of the Collatz map attain almost bounded values",
+      "url": "https://arxiv.org/abs/1909.03562",
+      "status": "published, scope comparison",
+      "scope": "Logarithmic-density conclusion does not supply an upper estimate inside the exponentially remote polynomial-width source bands. No use as a proof input."
+    }
+  ]
+}

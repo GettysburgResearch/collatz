@@ -7,16 +7,19 @@ repair strategy, a written transcendence extension, and executed Lean checks.
 None of the restricted results supplies the universal descent or reverse
 closure still needed for the conjecture.
 
-**Latest continuation:** [round eleven](round11/README.md) gives an exact local
-test for the complete cycle denominator, source-dependent ordinary descent,
-S-unit limits on finite anchor and template catalogues, and an explicit zero
-range on the original integer trace using a published finite floor. A closed
-Lean control proves that 3645 converges while the stated arbitrary-clock
-anchor family misses its full immediate lower cone. Ten Lean modules and 83
-selected axiom inventories were rebuilt. The [final Lean proposal](round11/formal/README.md)
-still requires the explicit open universal merger premise. The intake checks
-the new PR192, PR197, PR208 and PR209 heads.
-[Round ten](round10/README.md), [round nine](round9/README.md), [round eight](round8/README.md),
+**Latest continuation:** [round thirteen](round13/README.md) constructs actual
+mergers with any finite set of earlier canonical parents inside every parameter
+progression, and proves an all-depth obstruction to covering every index with
+that synchronized architecture. It removes external renewal and pair-tail
+assumptions from a selected-row source count, adds cycle-factor restrictions
+and a rational inverse-optimality control, and reconstructs the critical-record
+Subspace Theorem argument. Fourteen Lean modules and 119 selected axiom
+inventories passed the root replay. The full ordinary merger and cycle/escape
+exclusions remain open; the [final Lean proposal](round11/formal/README.md)
+still exposes its unproved universal premise. Late PR200 and PR201 changes
+received separately scoped reviews.
+[Round twelve](round12/README.md), [round eleven](round11/README.md),
+[round ten](round10/README.md), [round nine](round9/README.md), [round eight](round8/README.md),
 [round seven](round7/README.md) and the earlier rounds below retain their
 original scope and publication history.
 

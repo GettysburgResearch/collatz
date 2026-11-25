@@ -1,0 +1,54 @@
+{
+  "scope": "Final prepublication refresh, focused written review only. No late upstream programs or Lean modules were executed.",
+  "pull_request_count": 169,
+  "changed_heads": [
+    {
+      "number": 201,
+      "title": "Collatz: strict-record renewal dimension and two-coordinate escape rigidity",
+      "head_sha": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "head": "gpt62/killed-green-head-closure-20261124",
+      "updated_at": "2026-11-25T18:06:24Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "previous_head": "02fb390a76fb2ffb00fee612649ca23a82d99d31"
+    },
+    {
+      "number": 200,
+      "title": "Collatz: ordinary trace onset, all-depth minima and spectral rigidity",
+      "head_sha": "8e6add443b13acbcfd553676898c120183f07377",
+      "head": "research/gpt62-regularity-rigidity-20261124",
+      "updated_at": "2026-11-25T18:11:04Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "previous_head": "81ea4c1754d73c98d1451447527e6b2ba56977cc"
+    }
+  ],
+  "sources": [
+    {
+      "pr": 201,
+      "commit": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "path": "research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "git_blob": "1fde22a7485251a9badad2e6e7ab6183397a4887",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/94ce06ccbd312ccd0ce4450b567cc514a2f0b54a/research/killed-green-head-closure-20261124/record-renewal/README.md"
+    },
+    {
+      "pr": 200,
+      "commit": "8e6add443b13acbcfd553676898c120183f07377",
+      "path": "research/regularity-rigidity-20261124/global-trace-20261125/TRACE_ONSET.md",
+      "git_blob": "b0dda8ec84f31bfcfceeeaa9e17ca0469d986975",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8e6add443b13acbcfd553676898c120183f07377/research/regularity-rigidity-20261124/global-trace-20261125/TRACE_ONSET.md"
+    },
+    {
+      "pr": 200,
+      "commit": "8e6add443b13acbcfd553676898c120183f07377",
+      "path": "research/regularity-rigidity-20261124/global-trace-20261125/FOURIER_RIGIDITY.md",
+      "git_blob": "e0f1c0e798058a05787a04b60edbc0d23dc0c0ea",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8e6add443b13acbcfd553676898c120183f07377/research/regularity-rigidity-20261124/global-trace-20261125/FOURIER_RIGIDITY.md"
+    },
+    {
+      "pr": 200,
+      "commit": "8e6add443b13acbcfd553676898c120183f07377",
+      "path": "research/regularity-rigidity-20261124/global-trace-20261125/RATIONAL_MINIMA.md",
+      "git_blob": "ae992bf6baa5c8f82b35415b5398ecae05e8456c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8e6add443b13acbcfd553676898c120183f07377/research/regularity-rigidity-20261124/global-trace-20261125/RATIONAL_MINIMA.md"
+    }
+  ]
+}
