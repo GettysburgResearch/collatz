@@ -1,0 +1,55 @@
+{
+  "large": {
+    "all_endpoint_depth": 762148,
+    "d_bits": 301971,
+    "h": 301994,
+    "maximum_residue_modulus": 19053,
+    "p": 190537
+  },
+  "ordinary": {
+    "candidate_rays": 2918106,
+    "completed_odd_steps": 8834817,
+    "endpoints": 8,
+    "max_depth": 384,
+    "unexcluded_mergers": 0,
+    "windows": 3072
+  },
+  "rational": [
+    {
+      "D": 13,
+      "adjacent": 36,
+      "d": 13,
+      "equal_label": 5,
+      "h": 8,
+      "integer": 60,
+      "p": 5,
+      "pairs": 903,
+      "points": 43,
+      "proper_partial": 0
+    },
+    {
+      "D": 1631,
+      "adjacent": 58,
+      "d": 1631,
+      "equal_label": 9,
+      "h": 13,
+      "integer": 9,
+      "p": 8,
+      "pairs": 2415,
+      "points": 70,
+      "proper_partial": 379
+    },
+    {
+      "D": 420491770248316829,
+      "adjacent": 282,
+      "d": 22131145802542991,
+      "equal_label": 17,
+      "h": 65,
+      "integer": 17,
+      "p": 41,
+      "pairs": 44253,
+      "points": 298,
+      "proper_partial": 1439
+    }
+  ]
+}
