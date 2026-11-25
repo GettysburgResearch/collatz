@@ -1,0 +1,24 @@
+{
+  "forbidden": {
+    "binary_seed": 1686831099,
+    "full_stride": 6442450944,
+    "multiple_row_seed": 3834314747,
+    "native_reverse": "1221212222121212121",
+    "rival_reverse": "3341221111111111111",
+    "width_denominator": 16384,
+    "width_numerator": 59049
+  },
+  "ordinary_control": {
+    "complete_budget_leaves": 3327,
+    "exact_pairs_at_minimum": 22,
+    "maximum_depth": 24,
+    "ordinary_initial_minimum": "5338228335277628446454002375675",
+    "radius": 32,
+    "stride": "3535422307630878001253092612396889747226624",
+    "windows": 1260
+  },
+  "small_starts": {
+    "checked": 728,
+    "longest_shortcut_time": 108
+  }
+}
