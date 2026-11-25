@@ -1,0 +1,4 @@
+'MaximalWords.maximal_of_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximalWords.protected_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaximalWords.encode_length' depends on axioms: [propext, Quot.sound]
+'MaximalWords.encode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]

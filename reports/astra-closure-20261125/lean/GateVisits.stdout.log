@@ -1,0 +1,7 @@
+'GateVisits.common_gate_all_tests' depends on axioms: [propext, Quot.sound]
+'GateVisits.suffix_of_last_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GateVisits.suffix_misses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GateVisits.marked_distortion' depends on axioms: [propext, Quot.sound]
+'GateVisits.gate_budget' depends on axioms: [propext, Quot.sound]
+'GateVisits.bounded_code' depends on axioms: [propext, Quot.sound]
+'GateVisits.code_injective_on_visits' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'NineteenMerger.run_lift' depends on axioms: [propext, Quot.sound]
+'NineteenMerger.family' depends on axioms: [propext, Quot.sound]
+'NineteenMerger.whole_residue' depends on axioms: [propext, Quot.sound]

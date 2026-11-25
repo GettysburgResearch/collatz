@@ -1,0 +1,176 @@
+{
+  "schema": "collatz-astra-closure-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "All eight new modules and two resident imports, fresh project objects; cached pinned Mathlib dependencies. Written analytic and rational-cycle theorems are not formalized in full.",
+  "modules": [
+    {
+      "module": "EscapeCore",
+      "source": "research/astra-universal-descent-20261124/EscapeCore.lean",
+      "new": false,
+      "sha256": "2d2b01135ab765c58001edd00c3ebea6598ebb13dd0e36fe97297acee2f4244d",
+      "exit_code": 0,
+      "seconds": 1.339,
+      "public_theorems": [
+        "EscapeCore.affine",
+        "EscapeCore.translated_interval",
+        "EscapeCore.forward_add",
+        "EscapeCore.residual_distinct",
+        "EscapeCore.inverse_transversal",
+        "EscapeCore.core_double",
+        "EscapeCore.core_step",
+        "EscapeCore.odd_transport"
+      ]
+    },
+    {
+      "module": "UniversalProposal",
+      "source": "research/astra-universal-proof-20261124/UniversalProposal.lean",
+      "new": false,
+      "sha256": "2f5377e2231af4cfc048f0948c7885fe6244bfe1818072cb91f8ccf6507c132a",
+      "exit_code": 0,
+      "seconds": 2.221,
+      "public_theorems": [
+        "UniversalProposal.converges_one",
+        "UniversalProposal.converges_three",
+        "UniversalProposal.converges_step",
+        "UniversalProposal.converges_run",
+        "UniversalProposal.converges_of_meets",
+        "UniversalProposal.multiple_ancestor",
+        "UniversalProposal.collatz_of_triple_descent",
+        "UniversalProposal.collatz_iff_triple_descent",
+        "UniversalProposal.check_sound",
+        "UniversalProposal.certified_collatz"
+      ]
+    },
+    {
+      "module": "TowerDeadline",
+      "source": "research/astra-closure-20261125/descent/TowerDeadline.lean",
+      "new": true,
+      "sha256": "546321a4a09bee664ede0e50a9ecff0f4f8a44c18d1b30107b036db12bdb250b",
+      "exit_code": 0,
+      "seconds": 6.416,
+      "public_theorems": [
+        "TowerDeadline.no_earlier_power",
+        "TowerDeadline.lift_class",
+        "TowerDeadline.deadline_window",
+        "TowerDeadline.cofinal_deadline"
+      ]
+    },
+    {
+      "module": "MaximalWords",
+      "source": "research/astra-closure-20261125/descent/MaximalWords.lean",
+      "new": true,
+      "sha256": "08b2e998a2beb2d6ce7f17f8d1586c1f3501a5579785f4270989aef728c9aa0a",
+      "exit_code": 0,
+      "seconds": 1.749,
+      "public_theorems": [
+        "MaximalWords.maximal_of_bound",
+        "MaximalWords.protected_words",
+        "MaximalWords.encode_length",
+        "MaximalWords.encode_injective"
+      ]
+    },
+    {
+      "module": "PowerRealization",
+      "source": "research/astra-closure-20261125/descent/PowerRealization.lean",
+      "new": true,
+      "sha256": "b88da7b3813f1f0e61c1934c4986bb4ecdccfa0dd919f24ce66a0d553a99fd64",
+      "exit_code": 0,
+      "seconds": 1.759,
+      "public_theorems": [
+        "PowerRealization.realized_at_power"
+      ]
+    },
+    {
+      "module": "PrimeSwitch",
+      "source": "research/astra-closure-20261125/cycles/PrimeSwitch.lean",
+      "new": true,
+      "sha256": "9a92e405cf2b6d0ae175c089dcbc573e785e0756a58a338e016caaf5105306a1",
+      "exit_code": 0,
+      "seconds": 0.5,
+      "public_theorems": [
+        "PrimeSwitch.weight_append",
+        "PrimeSwitch.shifted_weight",
+        "PrimeSwitch.switch_difference",
+        "PrimeSwitch.translated_switch"
+      ]
+    },
+    {
+      "module": "NineteenMerger",
+      "source": "research/astra-closure-20261125/cycles/NineteenMerger.lean",
+      "new": true,
+      "sha256": "055ed010d675221e95c3f55b078097ad9779d801cde112028cbb3849a1e0e835",
+      "exit_code": 0,
+      "seconds": 2.963,
+      "public_theorems": [
+        "NineteenMerger.run_lift",
+        "NineteenMerger.family",
+        "NineteenMerger.whole_residue"
+      ]
+    },
+    {
+      "module": "GateVisits",
+      "source": "research/astra-closure-20261125/escape/GateVisits.lean",
+      "new": true,
+      "sha256": "b1b8e2e4eb682e2ea882c6871c40371f8c16c6131c8be6ab830d41e4932a087a",
+      "exit_code": 0,
+      "seconds": 0.942,
+      "public_theorems": [
+        "GateVisits.marked_distortion",
+        "GateVisits.gate_budget",
+        "GateVisits.marks_mono",
+        "GateVisits.marked_visits_distinct",
+        "GateVisits.visit_rank_injective",
+        "GateVisits.dyadic_budget",
+        "GateVisits.bounded_code",
+        "GateVisits.code_injective_on_visits",
+        "GateVisits.state_add",
+        "GateVisits.ones_add",
+        "GateVisits.common_gate_all_tests",
+        "GateVisits.suffix_of_last_cross",
+        "GateVisits.suffix_misses"
+      ]
+    },
+    {
+      "module": "PeriodicColor",
+      "source": "research/astra-closure-20261125/global/PeriodicColor.lean",
+      "new": true,
+      "sha256": "0a16c08bb2292edeb8e7562f9a136afd2821a6a23448b32b5fb0e8217fd2b9e0",
+      "exit_code": 0,
+      "seconds": 2.848,
+      "public_theorems": [
+        "PeriodicColor.eventually_periodic_invariant"
+      ]
+    },
+    {
+      "module": "FinalProposal",
+      "source": "research/astra-closure-20261125/FinalProposal.lean",
+      "new": true,
+      "sha256": "d48bed7ef82ba94c987257b5823fc48d037ed13c4630eb84edf89467e95c6347",
+      "exit_code": 0,
+      "seconds": 1.48,
+      "public_theorems": [
+        "FinalProposal.collatz_of_source_closure",
+        "FinalProposal.source_closure_iff_collatz",
+        "FinalProposal.final_lean_proposal",
+        "FinalProposal.exclude_nineteen_residue",
+        "FinalProposal.no_uniform_tower_deadline",
+        "FinalProposal.collatz_iff_eventually_periodic_convergence"
+      ]
+    }
+  ],
+  "success": true,
+  "new_public_theorems": 36,
+  "imported_public_theorems": 18,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 54,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 23.439
+}

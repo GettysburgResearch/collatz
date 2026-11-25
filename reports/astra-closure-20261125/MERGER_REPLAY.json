@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-nineteen-merger-finite/v1",
+  "scope": "Exact 19-departure residue identity and depth40 mechanical finite-window control; agent depth60 run is reported separately, not repeated here.",
+  "runs": [
+    {
+      "source": "research/astra-closure-20261125/cycles/check_merger.py",
+      "sha256": "3b375ddbd3b1950db30c908411b871367baf5c6023f6376a50b10bb8ca27221a",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-closure-20261125/cycles/check_merger.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.146,
+      "stdout": "Joint family's 19-gap past gives s=187605073 modulo 1162261467, smaller multiple (2^29 s-310339913)/3^18.\nMechanical minimum and its next seven odd sites: all candidate ancestor depths 1 through 40, 398171 nodes, no cheaper rival.\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check_merger.py",
+      "sha256": "3b375ddbd3b1950db30c908411b871367baf5c6023f6376a50b10bb8ca27221a",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-closure-20261125/cycles/check_merger.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.191,
+      "stdout": "Joint family's 19-gap past gives s=187605073 modulo 1162261467, smaller multiple (2^29 s-310339913)/3^18.\nMechanical minimum and its next seven odd sites: all candidate ancestor depths 1 through 40, 398171 nodes, no cheaper rival.\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}
