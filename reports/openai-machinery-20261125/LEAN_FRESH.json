@@ -1,0 +1,284 @@
+{
+  "actual_package_revisions": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "build_stdout": "\u2139 [1809/1832] Built SourceDeletion (3.5s)\ninfo: ../tensor/pr192/SourceDeletion.lean:164:0: 'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:165:0: 'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:166:0: 'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:167:0: 'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:168:0: 'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:169:0: 'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:170:0: 'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SourceDeletion.lean:171:0: 'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1810/1832] Built OAI.LinearAlgebra.SpectralBooks.BlockDiagRank (5.6s)\n\u2714 [1811/1832] Built OAI.LinearAlgebra.SpectralBooks.KroneckerRank (5.6s)\n\u2139 [1812/1832] Built MinimumFailure (2.5s)\ninfo: ../tensor/pr192/MinimumFailure.lean:144:0: 'Collatz.MinimumFailure.good_one' does not depend on any axioms\ninfo: ../tensor/pr192/MinimumFailure.lean:145:0: 'Collatz.MinimumFailure.good_step' does not depend on any axioms\ninfo: ../tensor/pr192/MinimumFailure.lean:146:0: 'Collatz.MinimumFailure.good_run' does not depend on any axioms\ninfo: ../tensor/pr192/MinimumFailure.lean:147:0: 'Collatz.MinimumFailure.label_step' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:148:0: 'Collatz.MinimumFailure.label_one' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:149:0: 'Collatz.MinimumFailure.label_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:150:0: 'Collatz.MinimumFailure.exists_least_discordance' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:151:0: 'Collatz.MinimumFailure.good_below' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:152:0: 'Collatz.MinimumFailure.good_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:153:0: 'Collatz.MinimumFailure.upper_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:154:0: 'Collatz.MinimumFailure.smaller_triples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:155:0: 'Collatz.MinimumFailure.smaller_multiples_good' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:156:0: 'Collatz.MinimumFailure.counterexample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:157:0: 'Collatz.MinimumFailure.exclude_seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/MinimumFailure.lean:158:0: 'Collatz.MinimumFailure.counterexample_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1813/1832] Built OAI.Optimization.LinearProgramming.Farkas.Sparse (6.5s)\n\u2714 [1814/1832] Built TensorBridge (3.3s)\n\u2714 [1815/1832] Built OAI.LinearAlgebra.FiniteFourier.BatchedTimeShift (3.3s)\n\u2139 [1816/1832] Built SmoothCore (3.3s)\ninfo: ../tensor/pr192/SmoothCore.lean:315:0: 'Collatz.SmoothCore.exists_first_tower' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:316:0: 'Collatz.SmoothCore.base_good' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:317:0: 'Collatz.SmoothCore.base_is_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:318:0: 'Collatz.SmoothCore.strict_base_of_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:319:0: 'Collatz.SmoothCore.smooth_reservoir' depends on axioms: [propext]\ninfo: ../tensor/pr192/SmoothCore.lean:320:0: 'Collatz.SmoothCore.odd_run_end' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:321:0: 'Collatz.SmoothCore.same_three' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:322:0: 'Collatz.SmoothCore.higher_three' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:323:0: 'Collatz.SmoothCore.same_four' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:324:0: 'Collatz.SmoothCore.lower_four' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:325:0: 'Collatz.SmoothCore.forbid_small_base_exit' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:326:0: 'Collatz.SmoothCore.forbid_two_power_return' depends on axioms: [propext, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:327:0: 'Collatz.SmoothCore.next_base_good' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../tensor/pr192/SmoothCore.lean:328:0: 'Collatz.SmoothCore.universal_iff_frontier_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1817/1832] Built OAI.Optimization.LinearProgramming.Farkas.Basic (4.3s)\n\u2139 [1818/1832] Built TernaryItinerary (12s)\ninfo: ../clock/pr206/TernaryItinerary.lean:498:0: 'Collatz.Itinerary.Gap.follow' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:499:0: 'Collatz.Itinerary.Route.follow' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:500:0: 'Collatz.Itinerary.Route.parity' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:501:0: 'Collatz.Itinerary.exact_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:502:0: 'Collatz.Itinerary.Route.readout' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:503:0: 'Collatz.Itinerary.free_marks' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:504:0: 'Collatz.Itinerary.carry_through_gate' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:505:0: 'Collatz.Itinerary.rows_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:506:0: 'Collatz.Itinerary.empty_of_convergence' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/TernaryItinerary.lean:507:0: 'Collatz.Itinerary.universal_iff_missing_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1819/1832] Built FourierBridge (2.8s)\n\u2714 [1820/1832] Built CycleRows (529ms)\n\u2714 [1821/1832] Built TowerMerger (1.4s)\n\u2139 [1822/1832] Built CycleDetection (1.2s)\ninfo: ../clock/pr206/CycleDetection.lean:156:0: 'Collatz.Itinerary.CycleRows.cycle_of_distortion' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/CycleDetection.lean:157:0: 'Collatz.Itinerary.CycleRows.reached_cycle_of_distortion' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/CycleDetection.lean:158:0: 'Collatz.Itinerary.CycleRows.witness_implies_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1823/1832] Built TowerRows (2.5s)\n\u2714 [1824/1832] Built PotentialBridge (2.7s)\n\u26a0 [1825/1832] Built FixedGate (3.5s)\nwarning: ../clock/pr206/FixedGate.lean:36:26: `if_false` has been deprecated: Use `ite_false` instead\ninfo: ../clock/pr206/FixedGate.lean:237:0: 'Collatz.Itinerary.FixedGate.route_read' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/FixedGate.lean:238:0: 'Collatz.Itinerary.FixedGate.distortion' depends on axioms: [propext, Quot.sound]\ninfo: ../clock/pr206/FixedGate.lean:239:0: 'Collatz.Itinerary.FixedGate.distortion_sharp' does not depend on any axioms\ninfo: ../clock/pr206/FixedGate.lean:240:0: 'Collatz.Itinerary.FixedGate.height_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/FixedGate.lean:241:0: 'Collatz.Itinerary.FixedGate.full_iff_after_of_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/FixedGate.lean:242:0: 'Collatz.Itinerary.FixedGate.full_iff_after' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/FixedGate.lean:243:0: 'Collatz.Itinerary.FixedGate.missing_iff_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2139 [1826/1832] Built CycleAmplification (1.6s)\ninfo: ../clock/pr206/CycleAmplification.lean:329:0: 'Collatz.Itinerary.CycleAmplification.cycle_amplifies_eventually' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: ../clock/pr206/CycleAmplification.lean:330:0: 'Collatz.Itinerary.CycleAmplification.cycle_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/CycleAmplification.lean:331:0: 'Collatz.Itinerary.CycleAmplification.bounded_witness_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/CycleAmplification.lean:332:0: 'Collatz.Itinerary.CycleAmplification.witnessTest_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1827/1832] Built PositiveTower (3.3s)\n\u2139 [1828/1832] Built ClosureProposal (840ms)\ninfo: ../clock/pr206/ClosureProposal.lean:139:0: 'Collatz.Itinerary.Proposal.crossing_descent_or_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/ClosureProposal.lean:140:0: 'Collatz.Itinerary.Proposal.crosses_of_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ../clock/pr206/ClosureProposal.lean:141:0: 'Collatz.Itinerary.Proposal.universal_iff_clocks_and_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [1829/1832] Built TowerFrontier (2.2s)\n\u2139 [1830/1832] Built ClockBridge (2.9s)\ninfo: ClockBridge.lean:495:0: 'Collatz.Itinerary.ClockBridge.rowSum_eq_range' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:496:0: 'Collatz.Itinerary.ClockBridge.ordinary_lift' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:497:0: 'Collatz.Itinerary.ClockBridge.ordinary_pressure' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:498:0: 'Collatz.Itinerary.ClockBridge.high_odd_row_bound' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:499:0: 'Collatz.Itinerary.ClockBridge.clock_le_implies_odds' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:500:0: 'Collatz.Itinerary.ClockBridge.clock_failure_bound' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:501:0: 'Collatz.Itinerary.ClockBridge.exponentially_sparse_clock' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:502:0: 'Collatz.Itinerary.ClockBridge.balanced_forces_cross' depends on axioms: [propext]\ninfo: ClockBridge.lean:503:0: 'Collatz.Itinerary.ClockBridge.balanced_suffix_iff' depends on axioms: [propext]\ninfo: ClockBridge.lean:504:0: 'Collatz.Itinerary.ClockBridge.balanced_failure_needs_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ClockBridge.lean:505:0: 'Collatz.Itinerary.ClockBridge.aligned_balanced_height' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:506:0: 'Collatz.Itinerary.ClockBridge.early_balanced_height' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:507:0: 'Collatz.Itinerary.ClockBridge.minimum_tail_fails' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: ClockBridge.lean:508:0: 'Collatz.Itinerary.ClockBridge.crossing_predecessor' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:509:0: 'Collatz.Itinerary.ClockBridge.backward_transfer_control' does not depend on any axioms\ninfo: ClockBridge.lean:510:0: 'Collatz.Itinerary.ClockBridge.unit_prefix' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:511:0: 'Collatz.Itinerary.ClockBridge.arbitrarily_long_failure' depends on axioms: [propext, Quot.sound]\ninfo: ClockBridge.lean:512:0: 'Collatz.Itinerary.ClockBridge.split_pair' does not depend on any axioms\ninfo: ClockBridge.lean:513:0: 'Collatz.Itinerary.ClockBridge.pair_left_crosses' does not depend on any axioms\n\u2714 [1831/1832] Built CollatzOpenAI (1.8s)\nBuild completed successfully (1832 jobs).\n",
+  "declarations": {
+    "Collatz.Itinerary.ClockBridge.aligned_balanced_height": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.arbitrarily_long_failure": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.backward_transfer_control": [],
+    "Collatz.Itinerary.ClockBridge.balanced_failure_needs_suffix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.balanced_forces_cross": [
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.balanced_suffix_iff": [
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.clock_failure_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.clock_le_implies_odds": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.crossing_predecessor": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.early_balanced_height": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.exponentially_sparse_clock": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.high_odd_row_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.minimum_tail_fails": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.ordinary_lift": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.ordinary_pressure": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.pair_left_crosses": [],
+    "Collatz.Itinerary.ClockBridge.rowSum_eq_range": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.Itinerary.ClockBridge.split_pair": [],
+    "Collatz.Itinerary.ClockBridge.unit_prefix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIFourier.count_labeled_disagreements": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIFourier.dense_broadcast_rank_le_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIFourier.equal_clock_collision_at_seventeen": [
+      "propext"
+    ],
+    "Collatz.OpenAIFourier.ordinary_collision_at_five": [
+      "propext"
+    ],
+    "Collatz.OpenAIFourier.rank_after_deleting_states": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIPotential.circulation_excludes_potential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIPotential.ordinary_residue_self_loop": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIPotential.potential_iff_feasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIPotential.potential_or_sparse_obstruction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.OpenAIPotential.residue_only_strict_potential_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.attained_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.every_row_frontier_guards": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.every_row_lower_base": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.first_row_frontier_survivors": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.first_row_lower_base": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.incidence_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.mem_attained": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.orbit_rank_drop_iff_meeting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.positive_shift_survivors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.rank_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.rank_drop_iff_meeting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.rowOffset_identity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.rowOffset_odd": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.rowOffset_unit": [
+      "propext"
+    ],
+    "Collatz.TensorBridge.sibling_clocks": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.three_sibling_meeting": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.TensorBridge.unbounded_guarded_tower_exclusions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.LinearAlgebra.FiniteFourier.rank_feedback_difference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.LinearAlgebra.FiniteFourier.rank_time_shift_readout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.LinearAlgebra.SpectralBooks.rank_fromBlocks_diagonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.LinearAlgebra.SpectralBooks.rank_kronecker": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Optimization.LinearProgramming.Farkas.alternative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Optimization.LinearProgramming.Farkas.certificate_excludes_feasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.Optimization.LinearProgramming.Farkas.sparse_alternative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-25T07:52:25.071877+00:00",
+  "frozen_sources": {
+    "clock/pr206/ClosureProposal.lean": "eb91552efac88b983f174b491b0dca06fdc786348d0753994381f60054d8ee21",
+    "clock/pr206/CycleAmplification.lean": "3b6d3d6f64d97fe50291c8d0a073e8d9beb9efb7032ca701f909e7475b33a689",
+    "clock/pr206/CycleDetection.lean": "36fe77bda861ff82a6d1f7ec6846df0542d8d7b0bdc617e314703843987004d0",
+    "clock/pr206/CycleRows.lean": "c00508d25bb8b72fc128181b2c08721102fc552da5b5436d51a1b40d04cf74f0",
+    "clock/pr206/FixedGate.lean": "d6663ef25ccc82f53c1eff91a59fc13350e5d42939455fa4e5cbbb4f59013360",
+    "clock/pr206/TernaryItinerary.lean": "b6a2bce0e51455a8c5177a473b751219da82021086e158698564cb4c920b6b56",
+    "formal/OAI/LinearAlgebra/FiniteFourier/BatchedTimeShift.lean": "aac06a9220db9c110f97ec0a61652cc3304f4947ad42d76a02e45551cc7047a0",
+    "formal/OAI/LinearAlgebra/SpectralBooks/BlockDiagRank.lean": "81fab98dcb0d109fc8e79add9c54f10a21a2bb56f5b1d5a22a2d9510da34e51d",
+    "formal/OAI/LinearAlgebra/SpectralBooks/KroneckerRank.lean": "d3a2398ea3aea23c5fb2cb120fd12552ed7db2ae71c107d1b9f7903a279f84a7",
+    "formal/OAI/Optimization/LinearProgramming/Farkas/Basic.lean": "f7ceecd54260cefa97cc9bb7f65b538bfac9dd28f9638ab0f10369138c742119",
+    "formal/OAI/Optimization/LinearProgramming/Farkas/Sparse.lean": "f02b3fc52764abd7f6c0974ed4836144bc350458fa437ae9541330719a2ab5c6",
+    "tensor/pr192/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "tensor/pr192/SmoothCore.lean": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+    "tensor/pr192/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0"
+  },
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "local_sources": {
+    "formal/Audit.lean": "bff3a69b07bdb1f496df865748b0c71e1ea43c9654907508c9614d2ca1989829",
+    "formal/ClockBridge.lean": "a2fefb21eb474e2a78e11f39d4dcc1828ae78a85b0496751e937cba29dff5e32",
+    "formal/CollatzOpenAI.lean": "6a68d1c008f5de8e14e23c07b87415ed237e60dd572b33ae22abcb39f53e424a",
+    "formal/PotentialBridge.lean": "a7b9779290eb81954164f3a7105725471357bc86d2383c51f6f5e0c20ecdf2bd",
+    "fourier/FourierBridge.lean": "9de3429367823f38b7b2ae9c19a6181dbd1cde8960d7430998b698adec70d193",
+    "tensor/PositiveTower.lean": "f079c8c4ccc2e21724620147e09a6fa9403452f743930529f84b1e114abf9639",
+    "tensor/TensorBridge.lean": "986057b907deb61ed48d5b2c5428469c63bd0a1f560f61e64ab4552b3b1e5bb4",
+    "tensor/TowerFrontier.lean": "e60f57fdb261df722a9358d38ac425fd55803e2f0fb21796e64e6722cb11a789",
+    "tensor/TowerMerger.lean": "7cf41e83c4d6e73a44b75d7b0170550298be69d80f4afb071b415ee0c6bbc923",
+    "tensor/TowerRows.lean": "10f4e1a3a974e1c4b39a8c0c8e14b7f8688b24acb7b88998c2f84de62f35d6f6"
+  },
+  "package_pins": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "schema": "collatz-openai-lean/v1",
+  "scope": "14 frozen source files; connected local proofs; not a rebuild of the headline upstream theorems",
+  "started_utc": "2026-11-25T07:51:55.545339+00:00",
+  "success": true
+}

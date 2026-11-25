@@ -1,0 +1,57 @@
+import CollatzOpenAI
+
+/-! Every public bridge theorem and the seven directly relevant imported interfaces. -/
+
+#print axioms OAI.LinearAlgebra.SpectralBooks.rank_fromBlocks_diagonal
+#print axioms OAI.LinearAlgebra.SpectralBooks.rank_kronecker
+#print axioms OAI.LinearAlgebra.FiniteFourier.rank_feedback_difference
+#print axioms OAI.LinearAlgebra.FiniteFourier.rank_time_shift_readout
+#print axioms OAI.Optimization.LinearProgramming.Farkas.alternative
+#print axioms OAI.Optimization.LinearProgramming.Farkas.certificate_excludes_feasible
+#print axioms OAI.Optimization.LinearProgramming.Farkas.sparse_alternative
+#print axioms Collatz.TensorBridge.mem_attained
+#print axioms Collatz.TensorBridge.incidence_rank
+#print axioms Collatz.TensorBridge.attained_sum
+#print axioms Collatz.TensorBridge.rank_balance
+#print axioms Collatz.TensorBridge.rank_drop_iff_meeting
+#print axioms Collatz.TensorBridge.orbit_rank_drop_iff_meeting
+#print axioms Collatz.TensorBridge.three_sibling_meeting
+#print axioms Collatz.TensorBridge.first_row_lower_base
+#print axioms Collatz.TensorBridge.first_row_frontier_survivors
+#print axioms Collatz.TensorBridge.rowOffset_identity
+#print axioms Collatz.TensorBridge.rowOffset_unit
+#print axioms Collatz.TensorBridge.rowOffset_odd
+#print axioms Collatz.TensorBridge.sibling_clocks
+#print axioms Collatz.TensorBridge.every_row_lower_base
+#print axioms Collatz.TensorBridge.every_row_frontier_guards
+#print axioms Collatz.TensorBridge.positive_shift_survivors
+#print axioms Collatz.TensorBridge.unbounded_guarded_tower_exclusions
+#print axioms Collatz.OpenAIFourier.rank_after_deleting_states
+#print axioms Collatz.OpenAIFourier.count_labeled_disagreements
+#print axioms Collatz.OpenAIFourier.ordinary_collision_at_five
+#print axioms Collatz.OpenAIFourier.equal_clock_collision_at_seventeen
+#print axioms Collatz.OpenAIFourier.dense_broadcast_rank_le_one
+#print axioms Collatz.OpenAIPotential.potential_iff_feasible
+#print axioms Collatz.OpenAIPotential.circulation_excludes_potential
+#print axioms Collatz.OpenAIPotential.potential_or_sparse_obstruction
+#print axioms Collatz.OpenAIPotential.ordinary_residue_self_loop
+#print axioms Collatz.OpenAIPotential.residue_only_strict_potential_impossible
+#print axioms Collatz.Itinerary.ClockBridge.ordinary_lift
+#print axioms Collatz.Itinerary.ClockBridge.rowSum_eq_range
+#print axioms Collatz.Itinerary.ClockBridge.ordinary_pressure
+#print axioms Collatz.Itinerary.ClockBridge.high_odd_row_bound
+#print axioms Collatz.Itinerary.ClockBridge.clock_le_implies_odds
+#print axioms Collatz.Itinerary.ClockBridge.clock_failure_bound
+#print axioms Collatz.Itinerary.ClockBridge.exponentially_sparse_clock
+#print axioms Collatz.Itinerary.ClockBridge.balanced_forces_cross
+#print axioms Collatz.Itinerary.ClockBridge.balanced_suffix_iff
+#print axioms Collatz.Itinerary.ClockBridge.balanced_failure_needs_suffix
+#print axioms Collatz.Itinerary.ClockBridge.aligned_balanced_height
+#print axioms Collatz.Itinerary.ClockBridge.early_balanced_height
+#print axioms Collatz.Itinerary.ClockBridge.minimum_tail_fails
+#print axioms Collatz.Itinerary.ClockBridge.crossing_predecessor
+#print axioms Collatz.Itinerary.ClockBridge.backward_transfer_control
+#print axioms Collatz.Itinerary.ClockBridge.unit_prefix
+#print axioms Collatz.Itinerary.ClockBridge.arbitrarily_long_failure
+#print axioms Collatz.Itinerary.ClockBridge.split_pair
+#print axioms Collatz.Itinerary.ClockBridge.pair_left_crosses
