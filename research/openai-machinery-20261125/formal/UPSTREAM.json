@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "3344da59991ed94f9ba711217b29c1d760badfa6",
+  "license": "Apache-2.0",
+  "roots": [
+    "OAI.LinearAlgebra.SpectralBooks.BlockDiagRank",
+    "OAI.LinearAlgebra.FiniteFourier.BatchedTimeShift",
+    "OAI.Optimization.LinearProgramming.Farkas.Basic"
+  ],
+  "modules": {
+    "OAI.LinearAlgebra.SpectralBooks.BlockDiagRank": {
+      "path": "lean/OAI/LinearAlgebra/SpectralBooks/BlockDiagRank.lean",
+      "sha256": "81fab98dcb0d109fc8e79add9c54f10a21a2bb56f5b1d5a22a2d9510da34e51d",
+      "bytes": 1077
+    },
+    "OAI.LinearAlgebra.FiniteFourier.BatchedTimeShift": {
+      "path": "lean/OAI/LinearAlgebra/FiniteFourier/BatchedTimeShift.lean",
+      "sha256": "aac06a9220db9c110f97ec0a61652cc3304f4947ad42d76a02e45551cc7047a0",
+      "bytes": 2620
+    },
+    "OAI.LinearAlgebra.SpectralBooks.KroneckerRank": {
+      "path": "lean/OAI/LinearAlgebra/SpectralBooks/KroneckerRank.lean",
+      "sha256": "d3a2398ea3aea23c5fb2cb120fd12552ed7db2ae71c107d1b9f7903a279f84a7",
+      "bytes": 1271
+    },
+    "OAI.Optimization.LinearProgramming.Farkas.Basic": {
+      "path": "lean/OAI/Optimization/LinearProgramming/Farkas/Basic.lean",
+      "sha256": "f7ceecd54260cefa97cc9bb7f65b538bfac9dd28f9638ab0f10369138c742119",
+      "bytes": 7512
+    },
+    "OAI.Optimization.LinearProgramming.Farkas.Sparse": {
+      "path": "lean/OAI/Optimization/LinearProgramming/Farkas/Sparse.lean",
+      "sha256": "f02b3fc52764abd7f6c0974ed4836144bc350458fa437ae9541330719a2ab5c6",
+      "bytes": 9962
+    }
+  }
+}

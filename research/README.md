@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [OpenAI mathematics release: connected proofs and transfer limits](openai-machinery-20261125/README.md) | Source-qualified review of the November 24 release, pinned Lean interfaces, all-row sibling mergers, complete-row clock bounds, and finite certificate harnesses. | New scoped exploration with independent reviews; the universal merger, retained-source transfer, and pointwise clock obligations remain open. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |

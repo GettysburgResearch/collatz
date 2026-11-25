@@ -1,0 +1,19 @@
+{
+  "cutoff_utc": "2026-11-25T07:15:37Z",
+  "collatz_repository": "GettysburgResearch/collatz",
+  "heads": {
+    "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "openai/math": "3344da59991ed94f9ba711217b29c1d760badfa6",
+    "PR192": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+    "PR197": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+    "PR200": "81ea4c1754d73c98d1451447527e6b2ba56977cc",
+    "PR201": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+    "PR205": "32d722c5d5597846da5dad842c8ea15742abc176",
+    "PR206": "b2b56b94175174a680a296478f16c619a8828972",
+    "PR207": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81"
+  },
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "openai_content_commit": "92b516ef8e2abf66c3db7aa31438d3010bc7956f",
+  "openai_merge_utc": "2026-11-25T00:18:47Z"
+}

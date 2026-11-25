@@ -1,0 +1,41 @@
+{
+  "schema": "collatz-openai-finite-replays/v1",
+  "started_utc": "2026-11-25T07:50:59.315508+00:00",
+  "scope": "exact bounded controls; not universal Collatz verification",
+  "runs": [
+    {
+      "script": "research/openai-machinery-20261125/fourier/collisions.py",
+      "source_sha256": "6be8e72b459a911787e9acafd2304f38d7327188d81dcb7de1c63176309899a0",
+      "args": [],
+      "success": true,
+      "normal_and_optimized_identical": true,
+      "stdout": "k=2 S=8 pairs=1 distinct_sources=2 one_endpoint=true max_relative_offset<2^-2 odd_Haar_mass=2*2^-8 source_class=0_mod_1 basin_checked=True\nk=12 S=18 pairs=1 distinct_sources=2 one_endpoint=true max_relative_offset<2^-12 odd_Haar_mass=2*2^-18 source_class=0_mod_1 basin_checked=False\nk=120 S=180 pairs=1 distinct_sources=4 one_endpoint=true max_relative_offset<2^-120 odd_Haar_mass=4*2^-180 source_class=2_mod_3 basin_checked=False\nk=240 S=360 pairs=2 distinct_sources=22 one_endpoint=true max_relative_offset<2^-240 odd_Haar_mass=22*2^-360 source_class=0_mod_1 basin_checked=False\nk=120 S=240 pairs=2 distinct_sources=22 one_endpoint=true max_relative_offset<2^-120 odd_Haar_mass=22*2^-240 source_class=0_mod_1 basin_checked=False\n",
+      "stdout_sha256": "166ba7223f77f210f891f39aac7ac56e4146eb47586dbb63926e2ba211357747"
+    },
+    {
+      "script": "research/openai-machinery-20261125/lp/certificates.py",
+      "source_sha256": "f4e3b85848a1e09f9ef488cae21e2bc7def13f0033194ef7df54cb32c063f1c0",
+      "args": [],
+      "success": true,
+      "normal_and_optimized_identical": true,
+      "stdout": "{\n  \"boundary_checks\": {\n    \"empty_graph\": {\n      \"kind\": \"potential\",\n      \"values\": {}\n    },\n    \"rejected_inexact_or_misprojected\": 5\n  },\n  \"paths\": [\n    {\n      \"certificate\": {\n        \"kind\": \"potential\",\n        \"values\": {\n          \"1\": 0,\n          \"3\": 0,\n          \"5\": -3\n        }\n      },\n      \"edges\": 2,\n      \"start\": 3\n    },\n    {\n      \"certificate\": {\n        \"kind\": \"potential\",\n        \"values\": {\n          \"1\": 0,\n          \"5\": 0,\n          \"7\": 0,\n          \"11\": -3,\n          \"13\": -4,\n          \"17\": -6\n        }\n      },\n      \"edges\": 5,\n      \"start\": 7\n    },\n    {\n      \"certificate\": {\n        \"kind\": \"potential\",\n        \"values\": {\n          \"1\": 0,\n          \"5\": 0,\n          \"23\": -1,\n          \"27\": 0,\n          \"31\": -1,\n          \"35\": -4,\n          \"41\": -3,\n          \"47\": -4,\n          \"53\": -7,\n          \"61\": -8,\n          \"71\": -7,\n          \"91\": -9,\n          \"103\": -10,\n          \"107\": -10,\n          \"121\": -11,\n          \"137\": -12,\n          \"155\": -13,\n          \"161\": -13,\n          \"167\": -14,\n          \"175\": -14,\n          \"233\": -16,\n          \"251\": -17,\n          \"263\": -17,\n          \"283\": -18,\n          \"319\": -19,\n          \"325\": -20,\n          \"377\": -20,\n          \"395\": -20,\n          \"425\": -21,\n          \"433\": -22,\n          \"445\": -21,\n          \"479\": -22,\n          \"577\": -24,\n          \"593\": -23,\n          \"719\": -25,\n          \"911\": -27,\n          \"1079\": -28,\n          \"1367\": -30,\n          \"1619\": -31,\n          \"2051\": -33,\n          \"2429\": -34,\n          \"3077\": -36\n        }\n      },\n      \"edges\": 41,\n      \"start\": 27\n    }\n  ],\n  \"rejected_mutations\": 15,\n  \"residues\": [\n    {\n      \"active_certificate\": [\n        {\n          \"edge\": {\n            \"cost\": 3,\n            \"endpoint\": 17,\n            \"gap\": 1,\n            \"ordinary\": 11,\n            \"source\": 5,\n            \"target\": 5\n          },\n          \"weight\": 1\n        }\n      ],\n      \"edges\": 5,\n      \"modulus\": 6,\n      \"total_cost\": 3,\n      \"vertices\": 2\n    },\n    {\n      \"active_certificate\": [\n        {\n          \"edge\": {\n            \"cost\": 3,\n            \"endpoint\": 47,\n            \"gap\": 1,\n            \"ordinary\": 31,\n            \"source\": 13,\n            \"target\": 11\n          },\n          \"weight\": 1\n        },\n        {\n          \"edge\": {\n            \"cost\": -2,\n            \"endpoint\": 49,\n            \"gap\": 2,\n            \"ordinary\": 65,\n            \"source\": 11,\n            \"target\": 13\n          },\n          \"weight\": 1\n        }\n      ],\n      \"edges\": 17,\n      \"modulus\": 18,\n      \"total_cost\": 1,\n      \"vertices\": 6\n    },\n    {\n      \"active_certificate\": [\n        {\n          \"edge\": {\n            \"cost\": 3,\n            \"endpoint\": 161,\n            \"gap\": 1,\n            \"ordinary\": 107,\n            \"source\": 53,\n            \"target\": 53\n          },\n          \"weight\": 1\n        }\n      ],\n      \"edges\": 53,\n      \"modulus\": 54,\n      \"total_cost\": 3,\n      \"vertices\": 18\n    },\n    {\n      \"active_certificate\": [\n        {\n          \"edge\": {\n            \"cost\": 3,\n            \"endpoint\": 485,\n            \"gap\": 1,\n            \"ordinary\": 323,\n            \"source\": 161,\n            \"target\": 161\n          },\n          \"weight\": 1\n        }\n      ],\n      \"edges\": 161,\n      \"modulus\": 162,\n      \"total_cost\": 3,\n      \"vertices\": 54\n    },\n    {\n      \"active_certificate\": [\n        {\n          \"edge\": {\n            \"cost\": 3,\n            \"endpoint\": 1451,\n            \"gap\": 1,\n            \"ordinary\": 967,\n            \"source\": 481,\n            \"target\": 479\n          },\n          \"weight\": 1\n        },\n        {\n          \"edge\": {\n            \"cost\": -2,\n            \"endpoint\": 1453,\n            \"gap\": 2,\n            \"ordinary\": 1937,\n            \"source\": 479,\n            \"target\": 481\n          },\n          \"weight\": 1\n        }\n      ],\n      \"edges\": 485,\n      \"modulus\": 486,\n      \"total_cost\": 1,\n      \"vertices\": 162\n    }\n  ],\n  \"scope\": \"finite exact certificates; no global coverage\"\n}\n",
+      "stdout_sha256": "e29f2535de7cf57d735db2d4119a77515f646069909ec8c5575cfc1ee46c903d"
+    },
+    {
+      "script": "research/openai-machinery-20261125/clock/replay.py",
+      "source_sha256": "9b8868eba1c749e96f5d9faa5a504f24c5f1e01dfc3a568881108ca3e79fa547",
+      "args": [
+        "--depth",
+        "64",
+        "--direct",
+        "8"
+      ],
+      "success": true,
+      "normal_and_optimized_identical": true,
+      "stdout": "k threshold all-fail kth-fail odd-row\n1 1 1 1 2\n2 3 3 4 8\n3 5 10 16 32\n4 6 15 22 64\n5 8 51 93 256\n6 9 79 130 512\n7 11 273 562 2048\n8 13 979 2380 8192\n16 26 3040856 10970272 67108864\n32 51 21263805061408 103486583075152 2251799813685248\n64 102 3959347348695333220186564761 32757237240718201505487117920 5070602400912917605986812821504\n",
+      "stdout_sha256": "696bbb99b0e7f4c844e432235a4165050b4054814de81d86b62f6333ff018a9b"
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-25T07:51:00.037379+00:00"
+}
