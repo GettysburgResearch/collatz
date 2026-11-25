@@ -1,0 +1,21 @@
+{
+  "pr197_head": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compiler": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "scope": "Four new modules compiled in dependency order into a fresh object directory against existing pinned repository and Mathlib dependencies. Root separately rebuilds repository-local dependencies.",
+  "flags": [
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "files": {
+    "FixedTowerReflection.lean": "fcaa17f9adc99a21787ff08e42e6801f6107502e5976ead225f6fb879ccb5ada",
+    "TowerLowerCone.lean": "a081cc5ecf18d1da62f6f5ccd2c8447a67f482ead90ce68b9cff97ff750a5a06",
+    "TowerSuffixSharp.lean": "b60889359035625dd56de4b70207d6b70aa438916fbbb323bcde3fe34a8e871d",
+    "DelayedTowerMerger.lean": "ed5cbf240ecfae83335c5870c9b4d93862aebe9869972d57e8ce26d551b60d4c",
+    "FIXED_TOWER.md": "38bf33d94e628acbddc844e8fd761cd8075d20605dc89a6b2f7bfcb450b885cf",
+    "TOWER_SOURCES.json": "5581a79ee63bff1eb63b7e026978b544d3da0636982a5917aff5657b40ffb727",
+    "check_fixed_tower.py": "722063a9e7ded233d96906f6d4e02f4f3c197e8d48256d951080ebe6d0bbb0dd",
+    "fixed-tower.json": "3f9a3e0b461b6fd7a136df63719885e1d38810e4540c89217e20aa11bdf6aa6f",
+    "tower-lean.log": "2cbdf7796e13fabe6bf5761ab4f6e63c423ee7f14417ee5e5da93c81dbb989ee"
+  }
+}

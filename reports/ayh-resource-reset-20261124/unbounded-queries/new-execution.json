@@ -1,0 +1,103 @@
+{
+  "baseline": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Independent root execution of the final new packet against all 44 freshly rebuilt baseline modules. No author objects imported. Exact final source hashes below.",
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "AllDepthCenter",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllDepthCenter.lean",
+      "sha256": "3c3cfa27db12ef34434a5dd2df2073545a27f492fa9a1bfb10125c2dd1f01472",
+      "exit_code": 0,
+      "seconds": 9.018,
+      "output": "'AllDepthCenter.inverse_band' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.cutoff_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.no_congruent_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.denominator_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "RationalCenterPump",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/RationalCenterPump.lean",
+      "sha256": "98c1a8320e892137eef3cf71730f52e5cfc329081d9432523ff3d006320f102c",
+      "exit_code": 0,
+      "seconds": 34.728,
+      "output": "'RationalCenterPump.repeated_laps' depends on axioms: [propext, Quot.sound]\n'RationalCenterPump.physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.smaller' depends on axioms: [propext, Quot.sound]\n'RationalCenterPump.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.cofinal_pumps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.cofinal_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.arbitrary_saving' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "AllMersenneCarries",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllMersenneCarries.lean",
+      "sha256": "641e92e4773b3c58ecbcbed6e9769fdf348e2725ce45a977fe669e33c8bf878a",
+      "exit_code": 0,
+      "seconds": 7.021,
+      "output": "'CollatzAllMersenneCarries.negativePrefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.selectEarlier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.positiveDeadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.realize' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.negativeShape' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.negativeOdd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.rescueMinusOne' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FixedCofactorRescue",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorRescue.lean",
+      "sha256": "2d98510a30ebf2bfc826505f8324e972d4111b37da1e457b727d4856179adc7e",
+      "exit_code": 0,
+      "seconds": 135.891,
+      "output": "'CollatzFixedCofactorRescue.shortMerger' depends on axioms: [propext, Quot.sound]\n'CollatzFixedCofactorRescue.fixedCofactorFamily' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "FixedCofactorLeastParent",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorLeastParent.lean",
+      "sha256": "2f617b830a7be15a7f528f39cc5287d2e1249abcf7ae43dbe34f719fd794e0a5",
+      "exit_code": 0,
+      "seconds": 15.545,
+      "output": "'CollatzFixedCofactorLeastParent.rowArithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedCofactorLeastParent.oldRows' depends on axioms: [propext, Quot.sound]\n'CollatzFixedCofactorLeastParent.parentBasin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedCofactorLeastParent.leastExcluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FixedTowerReflection",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedTowerReflection.lean",
+      "sha256": "fcaa17f9adc99a21787ff08e42e6801f6107502e5976ead225f6fb879ccb5ada",
+      "exit_code": 0,
+      "seconds": 6.755,
+      "output": "'FixedTowerReflection.reflect_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.returning_multiplier' depends on axioms: [propext, Quot.sound]\n'FixedTowerReflection.defect_delay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.convergent_control' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "TowerLowerCone",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerLowerCone.lean",
+      "sha256": "a081cc5ecf18d1da62f6f5ccd2c8447a67f482ead90ce68b9cff97ff750a5a06",
+      "exit_code": 0,
+      "seconds": 8.087,
+      "output": "'TowerLowerCone.high_tower_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.orientation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.defect_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.high_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.block_endpoint_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "TowerSuffixSharp",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerSuffixSharp.lean",
+      "sha256": "b60889359035625dd56de4b70207d6b70aa438916fbbb323bcde3fe34a8e871d",
+      "exit_code": 0,
+      "seconds": 5.304,
+      "output": "'TowerSuffixSharp.suffix' depends on axioms: [propext, Quot.sound]\n'TowerSuffixSharp.exact_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "DelayedTowerMerger",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/DelayedTowerMerger.lean",
+      "sha256": "ed5cbf240ecfae83335c5870c9b4d93862aebe9869972d57e8ce26d551b60d4c",
+      "exit_code": 0,
+      "seconds": 6.962,
+      "output": "'DelayedTowerMerger.delayed_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "UnboundedQueryProposal",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/UnboundedQueryProposal.lean",
+      "sha256": "621f8d65849070577f50542379cd2f7123ad102b1596120f8545d174d2235a2c",
+      "exit_code": 0,
+      "seconds": 3.833,
+      "output": "'UnboundedQueryProposal.survivor_extends' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "PublicUnboundedAudit",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/PublicUnboundedAudit.lean",
+      "sha256": "b1e13d6fabf79a99aa78736d924da502f089919f72dc143fc33efca61c61697d",
+      "exit_code": 0,
+      "seconds": 3.299,
+      "output": "'AllDepthCenter.inverse_band' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.cutoff_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.no_congruent_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AllDepthCenter.denominator_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.repeated_laps' depends on axioms: [propext, Quot.sound]\n'RationalCenterPump.physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.smaller' depends on axioms: [propext, Quot.sound]\n'RationalCenterPump.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.cofinal_pumps' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.cofinal_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RationalCenterPump.arbitrary_saving' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.realize' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.physical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.oddCount_le' depends on axioms: [propext, Quot.sound]\n'CollatzAllMersenneCarries.negativeShape' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.negativeOdd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.rescueMinusOne' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.selectEarlier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.positiveDeadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAllMersenneCarries.negativePrefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedCofactorRescue.shortMerger' depends on axioms: [propext, Quot.sound]\n'CollatzFixedCofactorRescue.fixedCofactorFamily' depends on axioms: [propext, Quot.sound]\n'CollatzFixedCofactorLeastParent.rowArithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedCofactorLeastParent.oldRows' depends on axioms: [propext, Quot.sound]\n'CollatzFixedCofactorLeastParent.parentBasin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedCofactorLeastParent.leastExcluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.powers_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.reflect_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.returning_multiplier' depends on axioms: [propext, Quot.sound]\n'FixedTowerReflection.defect_delay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedTowerReflection.convergent_control' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.high_tower_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.orientation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.defect_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.high_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerLowerCone.block_endpoint_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TowerSuffixSharp.suffix' depends on axioms: [propext, Quot.sound]\n'TowerSuffixSharp.exact_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DelayedTowerMerger.delayed_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.survivor_extends' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "seconds": 236.495
+}

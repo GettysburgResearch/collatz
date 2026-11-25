@@ -1,0 +1,28 @@
+{
+  "scope": "Independent root execution of the separate modular reviewer in normal and optimized Python. Finite exact arithmetic, not a global proof.",
+  "script": "reports/ayh-resource-reset-20261124/unbounded-queries/check_wide_independent.py",
+  "sha256": "c89ef8a98c7cea6dbeb4181d84fa311a1ed14d4cb64f6880beda9a6df7df53aa",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "reports/ayh-resource-reset-20261124/unbounded-queries/check_wide_independent.py"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n  {\n    \"n\": 0,\n    \"full_ternary_digits\": 8,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"6f52d3110a0e41e462ac098244206ed69db33999b743e284fc4c5d34c2d4a529\"\n  },\n  {\n    \"n\": 1,\n    \"full_ternary_digits\": 15,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"9683a3ba63c6df4cd2d272ef3d942b4e5d68b2f18cdd9d3917074491b363182c\"\n  },\n  {\n    \"n\": 4,\n    \"full_ternary_digits\": 36,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"72031ebbce364b7ebac6a21840f4a28abf6522eed2915b3b815eb97f3192b897\"\n  },\n  {\n    \"n\": 404,\n    \"full_ternary_digits\": 2836,\n    \"high_digits\": [\n      2,\n      1,\n      0\n    ],\n    \"common_address_sha256\": \"04bb7be23c7a2375389b9edb62c45b8ee04c6e5d0aa3ce011d2165417ebf80c0\"\n  },\n  {\n    \"n\": 405,\n    \"full_ternary_digits\": 2843,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"310711ad842e1f1d784dc0e4bca68c5ba7d1d1d8a83f38e7850cf7526ac203e6\"\n  },\n  {\n    \"n\": 406,\n    \"full_ternary_digits\": 2850,\n    \"high_digits\": [\n      0,\n      2,\n      1\n    ],\n    \"common_address_sha256\": \"040553740d40a31c296fc28565e3746400f6ec916323febfdc3eeafb0248e4af\"\n  },\n  {\n    \"n\": 422,\n    \"full_ternary_digits\": 2962,\n    \"high_digits\": [\n      2,\n      1,\n      0\n    ],\n    \"common_address_sha256\": \"f317004f84a8332fa1070fdb5cde2aaa511b0fee875a61f7211f8905f6d88767\"\n  },\n  {\n    \"n\": 423,\n    \"full_ternary_digits\": 2969,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"0e2d4e7d0f1d27529509c1bb700182613ff318e6a013939f25ff716ee3881a33\"\n  },\n  {\n    \"n\": 424,\n    \"full_ternary_digits\": 2976,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"719ff0150de65c85aa322a1866d5428e4fc9acdf208cabcf0bfe5b246cf9e458\"\n  }\n]\n"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "reports/ayh-resource-reset-20261124/unbounded-queries/check_wide_independent.py"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n  {\n    \"n\": 0,\n    \"full_ternary_digits\": 8,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"6f52d3110a0e41e462ac098244206ed69db33999b743e284fc4c5d34c2d4a529\"\n  },\n  {\n    \"n\": 1,\n    \"full_ternary_digits\": 15,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"9683a3ba63c6df4cd2d272ef3d942b4e5d68b2f18cdd9d3917074491b363182c\"\n  },\n  {\n    \"n\": 4,\n    \"full_ternary_digits\": 36,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"72031ebbce364b7ebac6a21840f4a28abf6522eed2915b3b815eb97f3192b897\"\n  },\n  {\n    \"n\": 404,\n    \"full_ternary_digits\": 2836,\n    \"high_digits\": [\n      2,\n      1,\n      0\n    ],\n    \"common_address_sha256\": \"04bb7be23c7a2375389b9edb62c45b8ee04c6e5d0aa3ce011d2165417ebf80c0\"\n  },\n  {\n    \"n\": 405,\n    \"full_ternary_digits\": 2843,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"310711ad842e1f1d784dc0e4bca68c5ba7d1d1d8a83f38e7850cf7526ac203e6\"\n  },\n  {\n    \"n\": 406,\n    \"full_ternary_digits\": 2850,\n    \"high_digits\": [\n      0,\n      2,\n      1\n    ],\n    \"common_address_sha256\": \"040553740d40a31c296fc28565e3746400f6ec916323febfdc3eeafb0248e4af\"\n  },\n  {\n    \"n\": 422,\n    \"full_ternary_digits\": 2962,\n    \"high_digits\": [\n      2,\n      1,\n      0\n    ],\n    \"common_address_sha256\": \"f317004f84a8332fa1070fdb5cde2aaa511b0fee875a61f7211f8905f6d88767\"\n  },\n  {\n    \"n\": 423,\n    \"full_ternary_digits\": 2969,\n    \"high_digits\": [\n      1,\n      2,\n      0\n    ],\n    \"common_address_sha256\": \"0e2d4e7d0f1d27529509c1bb700182613ff318e6a013939f25ff716ee3881a33\"\n  },\n  {\n    \"n\": 424,\n    \"full_ternary_digits\": 2976,\n    \"high_digits\": [\n      1,\n      0,\n      2\n    ],\n    \"common_address_sha256\": \"719ff0150de65c85aa322a1866d5428e4fc9acdf208cabcf0bfe5b246cf9e458\"\n  }\n]\n"
+    }
+  ],
+  "normal_optimized_equal": true,
+  "success": true
+}

@@ -1,0 +1,1366 @@
+{
+  "scope": "Exhaustive final current-pass kernel axiom output plus final-source hash matching for every compiled module.",
+  "distinct_modules": 56,
+  "mathematical_modules": 52,
+  "audit_modules": 4,
+  "baseline_public_theorems": 204,
+  "new_public_theorems": 49,
+  "all_public_theorems": 253,
+  "axioms_allowed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "successful_invocations": 58,
+  "failed_invocations": 1,
+  "failure_resolution": "One final audit attempt put a module doc comment before imports. It was moved after imports and the exhaustive audit passed. No mathematical source changed for this fix.",
+  "final_compiled_sources": [
+    {
+      "module": "NonunitExit",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0"
+    },
+    {
+      "module": "UnitResidueExchange",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8"
+    },
+    {
+      "module": "ReverseBasin",
+      "path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+      "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65"
+    },
+    {
+      "module": "DirectedEleven",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+      "sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677"
+    },
+    {
+      "module": "DirectedElevenLocal",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean",
+      "sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f"
+    },
+    {
+      "module": "Residue17Closure",
+      "path": "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean",
+      "sha256": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37"
+    },
+    {
+      "module": "TwoOddCertificate",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean",
+      "sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda"
+    },
+    {
+      "module": "FiniteHorizon",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FiniteHorizon.lean",
+      "sha256": "e7d20e71da1d191e39ac144e1c7442f281c86a104c5500b7a015978d82676d13"
+    },
+    {
+      "module": "MersenneBarrier",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "sha256": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a"
+    },
+    {
+      "module": "MersenneParity",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "sha256": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8"
+    },
+    {
+      "module": "LocalResampling",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/LocalResampling.lean",
+      "sha256": "15cc801d0092092b86eaaff4ecdff79d98958c803932eda7023e475028ab2562"
+    },
+    {
+      "module": "MersenneReturnKernel",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnKernel.lean",
+      "sha256": "abe786fecd337c31cf1632986d173b45e360a9a1aa21fea7b523e817db182134"
+    },
+    {
+      "module": "MersenneFirstBad",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneFirstBad.lean",
+      "sha256": "7e51a184e32072fe418bcf55bf7ad2b8ec594af67f624a0c8893bc916d3fee9e"
+    },
+    {
+      "module": "RankThreeFamily",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RankThreeFamily.lean",
+      "sha256": "c43064465874dffc3b299dfd35d7bf3bd0769627606e47e0c906a0cbb1ec1b7e"
+    },
+    {
+      "module": "OppositeArm",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OppositeArm.lean",
+      "sha256": "6578fe87b6ff8cfa70c229a5ea7e5bbece6dd773c98dd593e50c67454ff075f1"
+    },
+    {
+      "module": "QuantitativeReturn",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean",
+      "sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07"
+    },
+    {
+      "module": "FinalProofProposal",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2"
+    },
+    {
+      "module": "PublicAudit",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/PublicAudit.lean",
+      "sha256": "2991f45581aacf6ce4665f7fe41e81fa6997bd37e9bf672ebfb0719ed403ae9a"
+    },
+    {
+      "module": "TernaryPowerLift",
+      "path": "research/ayh-resource-reset-20261124/source-progress/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f"
+    },
+    {
+      "module": "WordRank",
+      "path": "research/ayh-resource-reset-20261124/source-progress/WordRank.lean",
+      "sha256": "873802f2b394de8de1be50a24f94847dcbdc35c5881272271432adbdbdbc30fe"
+    },
+    {
+      "module": "OrdinaryWordRealization",
+      "path": "research/ayh-resource-reset-20261124/source-progress/OrdinaryWordRealization.lean",
+      "sha256": "d160b8a77442e71f55f4ad9f68b22af05760930468839aa92296facd15ad3229"
+    },
+    {
+      "module": "PositiveWordDescent",
+      "path": "research/ayh-resource-reset-20261124/source-progress/PositiveWordDescent.lean",
+      "sha256": "f6499c78faad234b376b5e306e8c7e64949912656623ca7291b46e14f14d0f19"
+    },
+    {
+      "module": "SignedSeventeenPotential",
+      "path": "research/ayh-resource-reset-20261124/source-progress/SignedSeventeenPotential.lean",
+      "sha256": "04e76a626d14d578969ac9538fba89dc84e89153ab593b0d5ab5d03c4ca9c1bf"
+    },
+    {
+      "module": "LiftedLattice",
+      "path": "research/ayh-resource-reset-20261124/source-progress/LiftedLattice.lean",
+      "sha256": "dfa342146d8afe933e72081d66cff55bae2806da4f6aea6c29cd7d66929cc2c5"
+    },
+    {
+      "module": "SourceProgressCases",
+      "path": "research/ayh-resource-reset-20261124/source-progress/SourceProgressCases.lean",
+      "sha256": "3f4302bbe12eb79445c04a855a0f01878e1f573501243d3ef101f9e04d569f93"
+    },
+    {
+      "module": "MersenneTwoCheckpoints",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneTwoCheckpoints.lean",
+      "sha256": "6baca0d4b3da675d026f9735bf71a6b6363bf3b9c89988a5ff167d2eeb1f99b0"
+    },
+    {
+      "module": "MersenneRescueWords",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueWords.lean",
+      "sha256": "85073e9d4202e936560591f2ae6eb91ba281c9507eacb728b399d26931b97118"
+    },
+    {
+      "module": "MersenneRescueCylinder",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueCylinder.lean",
+      "sha256": "9b7c05e91474e0e705574e8a5bd12df113cf56d5ccb3a219fdb1933b5654a00f"
+    },
+    {
+      "module": "MersenneProgressCases",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneProgressCases.lean",
+      "sha256": "a91b286866f347e88292e90ee96efd7ec4c33f502552bc78d64cf2c473131bb2"
+    },
+    {
+      "module": "FinalProgressProposal",
+      "path": "research/ayh-resource-reset-20261124/source-progress/FinalProgressProposal.lean",
+      "sha256": "f803ed28152845d620f0114ed870cfd621340871c6f8dcc869b3203fe8e0df57"
+    },
+    {
+      "module": "PublicProgressAudit",
+      "path": "research/ayh-resource-reset-20261124/source-progress/PublicProgressAudit.lean",
+      "sha256": "9eb99b6ff8804500ad7dc519a4c7eb808d5424bb8580fe9b4bc2fa9049563f90"
+    },
+    {
+      "module": "CheckpointUnitExit",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CheckpointUnitExit.lean",
+      "sha256": "395bb920b61e0cac8de2bc5fd5c54965721bb2be166aa408d8cc3e0d7fc9f9ce"
+    },
+    {
+      "module": "SignedCycleDilation",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+      "sha256": "a39820fe4f81a30835047a3ae5321c314d52b0545ac467b6e1edfeed213758a3"
+    },
+    {
+      "module": "DifferentCycleAnchors",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DifferentCycleAnchors.lean",
+      "sha256": "318ba88a0a8297f20c80609ec1322c5176f278648c11ece163a0789ca801d866"
+    },
+    {
+      "module": "MersenneTwoCenter",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/MersenneTwoCenter.lean",
+      "sha256": "200a72d44d14e7a28e6dd238da0573f030a9808c2dce6d63b98378df917026fe"
+    },
+    {
+      "module": "GuardedResidueCover",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/GuardedResidueCover.lean",
+      "sha256": "e15f066d09c85f05fa17e91d56b61a95f4361da3e103b3432c589aee62a2abfc"
+    },
+    {
+      "module": "OddClockFloor",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/OddClockFloor.lean",
+      "sha256": "f5fac01e443e3bd59899e99ebe423dab0cbdde949ebf8282f43f0564842da5ad"
+    },
+    {
+      "module": "ShadowTernaryDigits",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+      "sha256": "6949878cae845dea016d240b51792b1869221e12fd75ff09392fff5f4faf25fb"
+    },
+    {
+      "module": "ShadowTernaryRescue",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+      "sha256": "7fe374b138cd1314bbd5c311fa350a77bb45dba55f9d1dd8a7050b79e6d4ff6b"
+    },
+    {
+      "module": "DefectClockFloor",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DefectClockFloor.lean",
+      "sha256": "1387a760fecfb4c4c14625026af89378fd0441675172bd7dae3e632afc1d14b3"
+    },
+    {
+      "module": "FixedRankDeadlines",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/FixedRankDeadlines.lean",
+      "sha256": "1fd86fd3cb7fbbdce741db53a731c6080d25842a057fbfe2b66a8fd7f9d5496e"
+    },
+    {
+      "module": "CenterPhaseObstruction",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CenterPhaseObstruction.lean",
+      "sha256": "5a452f521278f3938234ccd386ec954f127865f90c24adfc8ee81279251cebd6"
+    },
+    {
+      "module": "ClosingProposal",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ClosingProposal.lean",
+      "sha256": "7d713aeae926be6c0987c17a551a21b3551d9b7cce3c61276199a6901cb936c3"
+    },
+    {
+      "module": "PublicPairedAudit",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/PublicPairedAudit.lean",
+      "sha256": "cd9c130971a3089ab1d2a8f662672222c3300656c6b5dcd880ea089a87cdb7e1"
+    },
+    {
+      "module": "AllDepthCenter",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllDepthCenter.lean",
+      "sha256": "3c3cfa27db12ef34434a5dd2df2073545a27f492fa9a1bfb10125c2dd1f01472"
+    },
+    {
+      "module": "RationalCenterPump",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/RationalCenterPump.lean",
+      "sha256": "98c1a8320e892137eef3cf71730f52e5cfc329081d9432523ff3d006320f102c"
+    },
+    {
+      "module": "AllMersenneCarries",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllMersenneCarries.lean",
+      "sha256": "641e92e4773b3c58ecbcbed6e9769fdf348e2725ce45a977fe669e33c8bf878a"
+    },
+    {
+      "module": "FixedCofactorRescue",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorRescue.lean",
+      "sha256": "2d98510a30ebf2bfc826505f8324e972d4111b37da1e457b727d4856179adc7e"
+    },
+    {
+      "module": "FixedCofactorLeastParent",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorLeastParent.lean",
+      "sha256": "2f617b830a7be15a7f528f39cc5287d2e1249abcf7ae43dbe34f719fd794e0a5"
+    },
+    {
+      "module": "FixedTowerReflection",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedTowerReflection.lean",
+      "sha256": "fcaa17f9adc99a21787ff08e42e6801f6107502e5976ead225f6fb879ccb5ada"
+    },
+    {
+      "module": "TowerLowerCone",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerLowerCone.lean",
+      "sha256": "a081cc5ecf18d1da62f6f5ccd2c8447a67f482ead90ce68b9cff97ff750a5a06"
+    },
+    {
+      "module": "TowerSuffixSharp",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerSuffixSharp.lean",
+      "sha256": "b60889359035625dd56de4b70207d6b70aa438916fbbb323bcde3fe34a8e871d"
+    },
+    {
+      "module": "DelayedTowerMerger",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/DelayedTowerMerger.lean",
+      "sha256": "ed5cbf240ecfae83335c5870c9b4d93862aebe9869972d57e8ce26d551b60d4c"
+    },
+    {
+      "module": "UnboundedQueryProposal",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/UnboundedQueryProposal.lean",
+      "sha256": "e1ece46f9cbc8272ac43d11e0a3d11b79aef5e7f8adbdcaa8e8a865dcb7ac25e"
+    },
+    {
+      "module": "PublicUnboundedAudit",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/PublicUnboundedAudit.lean",
+      "sha256": "a6a91100800776ca62a93082516f7cc0159806009b887af1cb82844e26986a62"
+    },
+    {
+      "module": "WideCenterPump",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/WideCenterPump.lean",
+      "sha256": "67711375eff76865a78a1f306c39ddef7236b0760ca8bee92b3a9a920ac356ca"
+    }
+  ],
+  "declarations": {
+    "NonunitExit.physical_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.directed_successor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.denom_iter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_certifies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "UnitResidueExchange.unit_one_exchange": [
+      "propext"
+    ],
+    "UnitResidueExchange.residue17_descends": [
+      "propext"
+    ],
+    "CollatzReverseBasin.reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.reverse_binary_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary_restricted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.deep_reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_deep_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_restricted_adjacent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.runSound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.checkedSound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.all_midpoints_located": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.all_routes_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.proper_rows": [
+      "propext"
+    ],
+    "DirectedEleven.validTree_hits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.ten_tree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.hit_at_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.localize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.localize_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.collatz_iff_reverse_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.least_defect_not_two_odd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFiniteHorizon.no_uniform_native_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.ascent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_meeting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_basin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LocalResampling.query_stride": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneReturnKernel.forty_returns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.tripled_previous": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.exact_first_bad": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzRankThree.rank_three_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.upper_has_two_odds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.two_odd_layer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_from_proposal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_iff_higher_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.query_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.exponent_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.family_query": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzQuantitativeReturn.bounded_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.quantitative_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TernaryPowerLift.period": [
+      "propext"
+    ],
+    "TernaryPowerLift.cofinal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.runAdd": [
+      "propext"
+    ],
+    "WordRank.oddsAdd": [
+      "propext"
+    ],
+    "WordRank.halves": [
+      "propext"
+    ],
+    "WordRank.powOdd": [
+      "propext"
+    ],
+    "WordRank.wordRow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WordRank.liftPrefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.unitRun": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.finishRow": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.exactRankRow": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.powerFinish": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.delayed_tail_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.even_tail_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.dense_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzSignedSeventeen.all_reflected_paths": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.iterate_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.edge_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.linked_iff_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.dyadic_labels_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.shadow_residue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.label_implies_linked": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.exceptions_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.typical_linked_iff_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.grid_census": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.tail_case_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.least_defect_not_tail": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.dense_closing_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.collatz_from_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.collatz_iff_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.five_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.seventeen_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.two_bad_checkpoints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.exclude_sixteenth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.checkpoint_exponents": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.no_negative_rational_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.sixteenth_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.least_defect_not_sixteenth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.cylinder_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.least_defect_not_cylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueWords.ordinary_meet": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueCylinder.cylinder_meeting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueCylinder.cylinder_first_bad_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProgressProposal.collatz_from_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProgressProposal.collatz_iff_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.firstUnitExit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.secondUnitExit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.realWord_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.distinct_at_positive_shadow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.earlierOddQuotients": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.twoOrdinaryExits": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.cycle_lifts": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.nat_orbit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.lift_value": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.paired": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.no_least_of_pair": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.minus1183": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.least_not_minus1183": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.align": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.two_anchors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.height_debt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneTwoCenter.progress": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneTwoCenter.least_excluded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GuardedResidueCover.least_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.run_pos": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.small_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.linear_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.odd_clock_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_clock_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_tower_clock_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.index_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.shadow_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.digit_displacement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.three_lifts": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.full_block": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.cofinal_residue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.finite_screen": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.shadow_parameter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.ternary_row_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.simultaneous_shadow_rescue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.source_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_all_clocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_not_ternary_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_not_simultaneous_shadow_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedRankDeadlines.no_rank_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.smaller_never_hits": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.parent_phase_clock": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.limiting_query_impossible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ClosingProposal.residual_survives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosingProposal.collatz_from_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosingProposal.collatz_iff_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AllDepthCenter.inverse_band": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AllDepthCenter.cutoff_trap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AllDepthCenter.no_congruent_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AllDepthCenter.denominator_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.repeated_laps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.physical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.smaller": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.least_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.cofinal_pumps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.cofinal_exclusions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RationalCenterPump.arbitrary_saving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.realize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.physical": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.oddCount_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.negativeShape": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.negativeOdd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.rescueMinusOne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.selectEarlier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.positiveDeadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzAllMersenneCarries.negativePrefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorRescue.shortMerger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorRescue.fixedCofactorFamily": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorLeastParent.rowArithmetic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorLeastParent.oldRows": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorLeastParent.parentBasin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFixedCofactorLeastParent.leastExcluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTowerReflection.powers_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTowerReflection.reflect_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTowerReflection.returning_multiplier": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FixedTowerReflection.defect_delay": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedTowerReflection.convergent_control": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.high_tower_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.clock_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.defect_clock_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.high_clock_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerLowerCone.block_endpoint_exclusion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TowerSuffixSharp.suffix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "TowerSuffixSharp.exact_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DelayedTowerMerger.delayed_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WideCenterPump.threshold": [
+      "propext"
+    ],
+    "WideCenterPump.height": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WideCenterPump.least_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WideCenterPump.integral_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WideCenterPump.three_digits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WideCenterPump.excluded_progression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UnboundedQueryProposal.survivor_extends": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UnboundedQueryProposal.collatz_from_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UnboundedQueryProposal.collatz_iff_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_proper": [],
+    "DirectedEleven.group1_proper": [],
+    "DirectedEleven.group2_proper": [],
+    "DirectedEleven.group3_proper": [],
+    "DirectedEleven.group4_proper": [],
+    "DirectedEleven.group5_proper": [],
+    "DirectedEleven.group6_proper": [],
+    "DirectedEleven.group7_proper": [],
+    "DirectedEleven.group8_proper": [],
+    "DirectedEleven.group9_proper": [],
+    "DirectedEleven.group10_proper": [],
+    "DirectedEleven.group11_proper": [],
+    "DirectedEleven.group12_proper": [],
+    "DirectedEleven.group13_proper": [],
+    "DirectedEleven.group14_proper": [],
+    "CollatzMersenneParity.hits_atClock": [],
+    "LocalResampling.iterate_color": [],
+    "LocalResampling.meet_color": [],
+    "LocalResampling.linked_color": [],
+    "LocalResampling.k_outside_every_component": [],
+    "PositiveWordDescent.hitsRun": [],
+    "PositiveWordDescent.basinRun": [],
+    "SignedCycleDilation.basin_value": [],
+    "GuardedResidueCover.census": []
+  },
+  "success": true
+}

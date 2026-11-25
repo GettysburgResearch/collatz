@@ -1,0 +1,67 @@
+{
+  "baseline": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+  "root_source_files": [
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1f1d3d690d7517e1b2a44b5f2f4930bd45b63302/research/astra-diagonal-closure-20261125/cycle/README.md",
+      "git_blob": "ba960e5df56fe3e55837b930dc936f7f786f862c",
+      "sha256": "b31f7a1d16843a1295837f6da2768416b40f5a350f58596efd688f9cfaa90547",
+      "bytes": 9242
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1f1d3d690d7517e1b2a44b5f2f4930bd45b63302/research/astra-diagonal-closure-20261125/transport/README.md",
+      "git_blob": "5524972a12fab2590719ff69a9b04eaede87598a",
+      "sha256": "8a9ffebbc75e706665f77fc395bb672d098c67906782fb19a7b6389b5fd9882b",
+      "bytes": 9375
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1f1d3d690d7517e1b2a44b5f2f4930bd45b63302/research/astra-diagonal-closure-20261125/FINAL_PROPOSAL.md",
+      "git_blob": "a8aabb37909109efc7f9b64382a55a3a8091a72d",
+      "sha256": "a36ba748cbd1b1ab4df714f784ed5ba35460b2b49274befa9b91189f74dd663b",
+      "bytes": 3884
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/aa0b01234735683b413098b81afdf764de503730/research/astra-closure-20261125/global/README.md",
+      "git_blob": "7e90b2e54be286cefafe45c310c7321a2c290677",
+      "sha256": "67c716db032f81f1a5c624689060c6612039f4fd4497bc1193b9c14605257f42",
+      "bytes": 9817
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/aa0b01234735683b413098b81afdf764de503730/research/astra-closure-20261125/global/PeriodicColor.lean",
+      "git_blob": "f4d06bae577138e5dbea717a4b14f70e56342d9c",
+      "sha256": "0a16c08bb2292edeb8e7562f9a136afd2821a6a23448b32b5fb0e8217fd2b9e0",
+      "bytes": 4911
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/02fb390a76fb2ffb00fee612649ca23a82d99d31/research/killed-green-head-closure-20261124/thin-band/README.md",
+      "git_blob": "0186e97659a0d8c851067f4d0b4b0a572594b0f2",
+      "sha256": "8ad44af26d91bf63cebcad1211b6d0059af315a971e3528d30f36c3dbf68a773",
+      "bytes": 20745
+    },
+    {
+      "url": "https://github.com/GettysburgResearch/collatz/blob/592328fecf8ea2cf41736294856d95f890a1ba98/research/critical-record-rational-rigidity-20261125/SUBSPACE.md",
+      "git_blob": "104ce24a574fbdf96ee54ca6126f0e76d38263d9",
+      "sha256": "9ae0856bc51d59d0a6cb028aa5ace9f877c0be85346fb1645378d4fb6828af87",
+      "bytes": 11067
+    }
+  ],
+  "delegated_tower_sources": "TOWER_SOURCES.json",
+  "source_review": "../../../reports/ayh-resource-reset-20261124/unbounded-queries/SOURCE_REVIEW.md",
+  "scope": "Exact-source inspection and qualified comparison; not a full audit of every file in every current pull request.",
+  "literature": [
+    {
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "url": "https://doi.org/10.1007/s10817-022-09658-8"
+    },
+    {
+      "title": "A quantitative version of the idempotent theorem in harmonic analysis",
+      "authors": "Ben Green, Tom Sanders",
+      "url": "https://annals.math.princeton.edu/2008/168-3/p09"
+    },
+    {
+      "title": "The 3n+1 Collatz Problem and Functional Equations",
+      "authors": "Lothar Berg, G\u00fcnter Meinardus",
+      "url": "https://www.math.uni-rostock.de/math/pub/romako/heft48/berg2.html"
+    }
+  ]
+}

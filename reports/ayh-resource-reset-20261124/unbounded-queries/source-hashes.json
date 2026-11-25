@@ -1,0 +1,253 @@
+{
+  "scope": "Delivered current-pass science, reports and navigation, excluding this manifest itself. Final compiled source identities are also checked in axiom-audit.json.",
+  "formatting": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/CENTER_CROSS_REVIEW.md",
+      "change": "Removed one extra empty line at end of independent review; no mathematical or Lean source change.",
+      "original_sha256": "196c889bb13bdcc8abd0d6ffb69b988ffef420d3c20fdde4611fb12e82f55fd6",
+      "delivered_sha256": "c362a4232483b0e11c97925c41aae12f78e48f151b1575dcf4d8d55b47dce621"
+    }
+  ],
+  "files": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/CENTER_CROSS_REVIEW.md",
+      "sha256": "c362a4232483b0e11c97925c41aae12f78e48f151b1575dcf4d8d55b47dce621",
+      "bytes": 5682
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/CHECKPOINT_CROSS_REVIEW.md",
+      "sha256": "527af5b08f6db5f256a2912cc1ae85a8ef19b0fd04d43370c8efd65b918492b6",
+      "bytes": 3336
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/INDEPENDENT_FIXED_TOWER_REVIEW.md",
+      "sha256": "05cf10ffdfc5988cffd49ff0ae8b4d38c1ff0629c373d4941bed97b198fd2263",
+      "bytes": 5287
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/OPEN_PR_INTAKE.json",
+      "sha256": "f8bd51cae743c4e8a4ddd4c7e806c09dd9ab3fa4273b4ce6d82aa998aaf3f3c5",
+      "bytes": 13051
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/PRIOR_PR_DESCRIPTION.json",
+      "sha256": "17d21a19799d64ca05ae4fc68a52b1b75e6b6c72976760dd6b89dba9950669e4",
+      "bytes": 14283
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/README.md",
+      "sha256": "a7c68a8eb6210fe52d895cdf5a81be997d41ca4d83d1b4e64036dcedc1ae45a8",
+      "bytes": 5658
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/ROOT_REVIEW.md",
+      "sha256": "0ab0fa3ed887fb918396e87a99811ac895e1e6025c9dda519e765579bcbca34e",
+      "bytes": 7367
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/SOURCE_REVIEW.md",
+      "sha256": "7f2af622c1d15a8a5743bc4a2ef6feafb0e98beccc19c643d71c35cdc2e18f56",
+      "bytes": 9158
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/WIDE_CENTER_REVIEW.md",
+      "sha256": "2cf4222a5475b398b77fceeb7fb1d74c2834e80c80c424d5c7fdffd154e678ef",
+      "bytes": 4085
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/audit-execution.json",
+      "sha256": "b40cd770fc6ae1dfb47c7bf981269a69fb7ef44e2993e8f4ef1788555c963121",
+      "bytes": 22700
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/author-fixed-tower.json",
+      "sha256": "3f9a3e0b461b6fd7a136df63719885e1d38810e4540c89217e20aa11bdf6aa6f",
+      "bytes": 498
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/author-tower-lean.log",
+      "sha256": "2cbdf7796e13fabe6bf5761ab4f6e63c423ee7f14417ee5e5da93c81dbb989ee",
+      "bytes": 1295
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/author-tower-receipt.json",
+      "sha256": "f211d72ae0af60340f6a0468221d4176f7063027cf0258cbad01c9d166fd2129",
+      "bytes": 1330
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/axiom-audit.json",
+      "sha256": "547f3e7eaab96862528d8eb925595c887be6ed14f53f8e2ee1b6ee0aa556a82e",
+      "bytes": 37559
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/baseline-execution.json",
+      "sha256": "f4eee18601cb2fcf540f2b600cc180b590fc77089e2f61c26ee443eaff7aacd8",
+      "bytes": 40739
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/check_wide_independent.py",
+      "sha256": "c89ef8a98c7cea6dbeb4181d84fa311a1ed14d4cb64f6880beda9a6df7df53aa",
+      "bytes": 2047
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/final-extension-execution.json",
+      "sha256": "d66a873068d6ccb5124f7c4a8b88dd68daa3f51963f70a5cbdb8c4807f143da0",
+      "bytes": 2427
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/finite-execution.json",
+      "sha256": "f8cd059636f5d0927c8a41303bb687b57c1312247c7dc8725c8c7ced61f813cb",
+      "bytes": 7587
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/independent-center-lean.log",
+      "sha256": "d53d3061a7174acf18e62d75afe40580dd882a6a5cbe40762e1d057566988d92",
+      "bytes": 1094
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/independent-wide-lean.log",
+      "sha256": "a19174fb7179b2b11c4e519344f5d955145e00e197ec5b329fc6820a356f95e5",
+      "bytes": 595
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/initial-source-manifest.json",
+      "sha256": "753c023ca0f0f2a75c54b63a721acf3bf42347581e49456130ef70c60f568b60",
+      "bytes": 3949
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/new-execution.json",
+      "sha256": "a524444c666aaff10c2e9c96b4a30ba18cf64579d52a33dc98cefa83379b28fa",
+      "bytes": 11829
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/review_tower_deadlines.py",
+      "sha256": "6a40b771ba6a69a15c7fb3e33047886baf8fd415c66d944c8a7af11f1b8650e4",
+      "bytes": 1879
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/unbounded-queries/wide-finite-execution.json",
+      "sha256": "c8a6ab66332cb611d62b22be322b019d72b5f43f5d03858fc63478a1ee2f052f",
+      "bytes": 4870
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/README.md",
+      "sha256": "58ffe80b710d3a7c9fe67182fef4903433de223cc3da80e20763a1eaa37ccb29",
+      "bytes": 20273
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/ALL_EARLIER_MERSENNE_RESCUE.md",
+      "sha256": "e4a5b1cab5d93195207c8347b0e4978fe456af9f52ec3b9f6b5b8828de261c4e",
+      "bytes": 10730
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllDepthCenter.lean",
+      "sha256": "3c3cfa27db12ef34434a5dd2df2073545a27f492fa9a1bfb10125c2dd1f01472",
+      "bytes": 14019
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllMersenneCarries.lean",
+      "sha256": "641e92e4773b3c58ecbcbed6e9769fdf348e2725ce45a977fe669e33c8bf878a",
+      "bytes": 7688
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/DelayedTowerMerger.lean",
+      "sha256": "ed5cbf240ecfae83335c5870c9b4d93862aebe9869972d57e8ce26d551b60d4c",
+      "bytes": 4416
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FIXED_TOWER.md",
+      "sha256": "38bf33d94e628acbddc844e8fd761cd8075d20605dc89a6b2f7bfcb450b885cf",
+      "bytes": 9547
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorLeastParent.lean",
+      "sha256": "2f617b830a7be15a7f528f39cc5287d2e1249abcf7ae43dbe34f719fd794e0a5",
+      "bytes": 3946
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedCofactorRescue.lean",
+      "sha256": "2d98510a30ebf2bfc826505f8324e972d4111b37da1e457b727d4856179adc7e",
+      "bytes": 4211
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/FixedTowerReflection.lean",
+      "sha256": "fcaa17f9adc99a21787ff08e42e6801f6107502e5976ead225f6fb879ccb5ada",
+      "bytes": 6545
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/PublicUnboundedAudit.lean",
+      "sha256": "a6a91100800776ca62a93082516f7cc0159806009b887af1cb82844e26986a62",
+      "bytes": 12646
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/RATIONAL_CENTER_PUMP.md",
+      "sha256": "b0c292a809cdd5382730b16496e88b640215b1d74cae3daa1b7e6654f900650a",
+      "bytes": 9582
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/README.md",
+      "sha256": "5355dccd0346c6880027211a944891d133d5e266f8e3b781a89044065ebbd385",
+      "bytes": 9451
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/RationalCenterPump.lean",
+      "sha256": "98c1a8320e892137eef3cf71730f52e5cfc329081d9432523ff3d006320f102c",
+      "bytes": 11700
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/SOURCES.json",
+      "sha256": "9f45348e4577858b3a7f6313d63ef54b13478558a0424b674257680bbe69b27a",
+      "bytes": 3443
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TOWER_SOURCES.json",
+      "sha256": "5581a79ee63bff1eb63b7e026978b544d3da0636982a5917aff5657b40ffb727",
+      "bytes": 4514
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerLowerCone.lean",
+      "sha256": "a081cc5ecf18d1da62f6f5ccd2c8447a67f482ead90ce68b9cff97ff750a5a06",
+      "bytes": 9478
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/TowerSuffixSharp.lean",
+      "sha256": "b60889359035625dd56de4b70207d6b70aa438916fbbb323bcde3fe34a8e871d",
+      "bytes": 2397
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/UnboundedQueryProposal.lean",
+      "sha256": "e1ece46f9cbc8272ac43d11e0a3d11b79aef5e7f8adbdcaa8e8a865dcb7ac25e",
+      "bytes": 2836
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/WIDE_CENTER_PUMP.md",
+      "sha256": "0f69bc46d800a9123a91c02716680990ebc0c7f9c886fe96c8df68cd42641308",
+      "bytes": 3729
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/WideCenterPump.lean",
+      "sha256": "67711375eff76865a78a1f306c39ddef7236b0760ca8bee92b3a9a920ac356ca",
+      "bytes": 7873
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/check_all_earlier.py",
+      "sha256": "5c171d18c1665e9f663913574810dd541d260e1c144d7414ea7a785373768e01",
+      "bytes": 4271
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/check_fixed_tower.py",
+      "sha256": "722063a9e7ded233d96906f6d4e02f4f3c197e8d48256d951080ebe6d0bbb0dd",
+      "bytes": 3588
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/check_lean.sh",
+      "sha256": "6b8bdaf05fb1f942af55886690866f488179d828bf479a469e41c2a7a47ec1f5",
+      "bytes": 2183
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/check_rational_pump.py",
+      "sha256": "0fedea6af2f5c1da2aae4c6ed3e5ec46e44771634c43ee770ae36cdf5ffc11d7",
+      "bytes": 4286
+    }
+  ]
+}
