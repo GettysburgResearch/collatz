@@ -1,0 +1,141 @@
+{
+  "flags": [
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_log_sha256": "b767e28186628b8a315c63b666a7480cb6ff5bbcae4f0485a53e0f8168820e76",
+  "lean_outputs": {
+    "anchor_smaller": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ascent_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ascent_cost": [
+      "propext",
+      "Quot.sound"
+    ],
+    "budget_excludes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "canonical_anchor17": [
+      "propext",
+      "Quot.sound"
+    ],
+    "cost_compose": [
+      "propext"
+    ],
+    "cost_of_drop": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exponent_return": [
+      "propext",
+      "Quot.sound"
+    ],
+    "paired_anchor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "paired_ascent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "plus_one_power": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_certificate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_descent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_floor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_forces_unit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_identity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_neighbor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_pure": [
+      "propext",
+      "Quot.sound"
+    ],
+    "rank_one_shape": [
+      "propext",
+      "Quot.sound"
+    ],
+    "transport_hit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "triple_not_zero_rank": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "public_theorems": 23,
+  "python_control": {
+    "file": "research/astra-ultra-closure-20261125/bridge/check_bridge.py",
+    "matching_stdout_sha256": "fe228bbec927f4991cc1470483cd8ba0a59aab4b7c3127f083b7fa8373badf16",
+    "modes": [
+      "python -X utf8 -B",
+      "python -X utf8 -O -B"
+    ],
+    "source_sha256": "67151afacdaa524cbe7015ecffd90623364d12dcce6407fa5bc5dba6540fd3b5",
+    "stdout": {
+      "height_threshold": 1600,
+      "neighbor_rows": [
+        [
+          1878,
+          14417,
+          1925,
+          7,
+          4
+        ],
+        [
+          3159,
+          13451,
+          200,
+          5,
+          2
+        ]
+      ]
+    }
+  },
+  "scope": "Local replay in a new project-object directory using installed Mathlib objects. Initial development compiles reported errors before correction; the retained final output contains zero errors or warnings.",
+  "sha256_sources": {
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean": "45304517f441d787aee0c1270fa0b666a32b77a0b449242bc743ccd174dc7257",
+    "research/astra-universal-closure-20261124/global/SmoothCore.lean": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+  }
+}
