@@ -1,0 +1,48 @@
+{
+  "schema": "collatz-closure-publication/v1",
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 193,
+  "branch": "research/astra-universal-descent-20261124",
+  "base_head": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+  "published_science_head": "f35fb03662a757d5be18e2d62feeda143531acdc",
+  "published_science_tree": "37e4c09a607bb7f90500a42c9304adda33955688",
+  "local_validated_head": "62537893e16827db5d68921b74ec99b2151e45fb",
+  "remote_tree_equals_local_validated_tree": true,
+  "published_complete_checkout_files": 684,
+  "published_science_manifest_files_verified": 61,
+  "compiled_source_hashes_verified": 10,
+  "new_lean_modules": 8,
+  "new_public_theorems": 36,
+  "total_axiom_audits": 54,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "finite_programs_in_both_python_modes": 5,
+  "finite_runs": 10,
+  "frozen_source_files": 34,
+  "source_intake": {
+    "initial_all_state_pr_count": 168,
+    "focused_prs": [
+      192,
+      195,
+      197,
+      206,
+      207,
+      208,
+      209
+    ],
+    "late_heads": {
+      "192": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "206": "45a6a111321f947a8482c9e96e898435b57cee09"
+    }
+  },
+  "followup_changes": [
+    "Archive local complete-checkout receipt",
+    "Archive published-science complete-checkout receipt",
+    "Record publication and mathematical evidence scope"
+  ],
+  "proof_status": "Collatz OPEN. The actual least-source certificate coverage and the Fourier summability bound are unproved.",
+  "verification_boundary": "Eight new Lean modules and two resident imports compiled with warnings as errors. Mathematical analysis using Caravenna, Yu, Wu-Wang and the idempotent theorem remains written, source-qualified mathematics. Complete-checkout integrity does not prove those assertions."
+}
