@@ -62,6 +62,31 @@ def earlier_misses():
                  all(z < 20 or z%27 != 20 for z in predecessors(b,h))) for h in range(CLOCK)]
 
 
+def replay_gate_counts():
+    times = {1: 0}
+
+    def time_to_one(n):
+        trail = []
+        while n not in times:
+            trail.append(n)
+            n = step(n)
+        clock = times[n]
+        for x in reversed(trail):
+            clock += 1
+            times[x] = clock
+        return clock
+
+    for k, expected in enumerate(((237, 8911), (329, 78543))):
+        window = 2**(4*k + 2*(k//2)) * (k+1) // 3**k + 1
+        count = 9710*window + 1
+        last = (0, 0)
+        for u in range(count):
+            w = 23 + 32*u
+            last = max(last, (min(time_to_one(w), time_to_one(3*w)), u))
+        require(last == expected, (k, last))
+        print(f"stage {k}, {count} parameters, zero misses at clock {last[0]}")
+
+
 def replay():
     src = Path(__file__).with_name("PairCoverData.lean").read_text(encoding="utf8")
     groups = re.findall(r"\| \d+ => #\[(.*?)\]", src, re.S)
@@ -82,6 +107,7 @@ def replay():
     misses = earlier_misses()
     require(misses[-1] == 8161, misses)
     print(f"{len(actual)} classes, {checked} forward trajectories, earlier missing targets {misses}")
+    replay_gate_counts()
 
 
 if __name__ == "__main__":

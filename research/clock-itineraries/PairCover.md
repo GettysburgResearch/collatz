@@ -9,3 +9,9 @@ Both members reach $20+27t$ after five steps. For each of the 4374 odd units mod
 The independent replay regenerates every table entry from parity words, checks both starting trajectories at three lifts of every representative, and searches backwards for the missed targets. Run `python pair_fiber_replay.py` from this directory. [Replay](pair_fiber_replay.py)
 
 A smaller predecessor would make an induction on the target possible. For every $h,t\ge0$, every ordinary predecessor of $b=1+3^h t$ at any clock through $h$ has size at least $b$. Thus even a uniform inverse construction faces explicit size obstructions at arbitrarily large finite clocks. [Inverse height theorem](InverseHeight.lean)
+
+## A finite-count form of the remaining conjecture
+
+Write $X_k=1+\lfloor 2^{4k+2\lfloor k/2\rfloor}(k+1)/3^k\rfloor$. Inspect the parameters $0\le t\le9710X_k$. A parameter misses a chosen gate $g$ if neither member of its pair visits $g$ by time $O$. Lean proves that every positive start reaches 1 if and only if, for arbitrarily large $k$, some $O,g$ give strictly fewer than $\sum_{i=0}^{\lfloor k/2\rfloor}\binom{k}{i}$ misses. The gate and deadline may depend on the stage. The 23-step construction bounds the chosen parameter by $9710b$ for each target $b$. Distinct targets give distinct parameters, so the earlier inverse-tree counting theorem applies. [Full equivalence](PairCapture.lean) · [Inverse witnesses and quota](WindowCapture.lean)
+
+At gate 1, direct iteration of all 19,421 parameters at stage zero gives zero misses at deadline 237. All 106,811 parameters at stage one pass by deadline 329. In each case a parameter attains the stated deadline. The unbounded-stage estimate remains open. [Replay](pair_fiber_replay.py)

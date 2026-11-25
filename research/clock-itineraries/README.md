@@ -4,6 +4,8 @@
 `T(2n)=n`, `T(2n+1)=3n+2`. An odd gap from `x` to `y` has length `e≥1` and satisfies
 `3x+1=2^e y`, with both ends positive and odd. A unit here is an odd positive integer prime to three.
 
+The follow-up proves that 23 is the first common clock that covers every odd target coprime to three from the pair $23+32t$ and its triple. It also gives exact common clocks for 513 ranks and separate rational-residue exclusions for high bounded-width cycles. [Follow-up, source revisions and rebuild command](FreshHour.md) · [Sharp 23-step theorem](PairCover.md)
+
 The November 25 pass combines the window certificate, uncorrected pointwise clock bound, and cycle test. It also gives 513 consecutive tower ranks with one physical endpoint, quantitative restrictions on escaping records, and an all-period cycle occupation bound. The two global obligations remain open. [November 25 proof attempt](November25.md) · [Combined Lean theorem](NovemberProposal.lean) · [Fifty source PRs](FiftyPRs.md)
 
 The [current full-conjecture proposal](Proposal.md) gives two explicit arithmetic obligations. The first asks for a cumulative clock crossing on each ordinary unit orbit. The second asks for arbitrarily large depths at which a finite cycle test returns false. Lean proves the equivalence and the correctness of the finite test. The two universal obligations remain open. [Main declaration](FinalProposal.lean)
