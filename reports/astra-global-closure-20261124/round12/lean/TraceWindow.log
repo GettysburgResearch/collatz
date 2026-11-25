@@ -1,0 +1,7 @@
+'Collatz.TraceWindow.source_shell_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceWindow.source_shell_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceWindow.find_predecessor_residue' depends on axioms: [propext, Quot.sound]
+'Collatz.TraceWindow.variation_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceWindow.retained_terminals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceWindow.residue_image_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceWindow.translated_exponents' depends on axioms: [propext]

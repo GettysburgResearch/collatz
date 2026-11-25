@@ -1,0 +1,7 @@
+'LocalDenominator.seam_coprime' depends on axioms: [propext, Quot.sound]
+'LocalDenominator.recover_from_two_differences' depends on axioms: [propext, Quot.sound]
+'LocalDenominator.unroll' depends on axioms: [propext, Quot.sound]
+'LocalDenominator.small_edge' depends on axioms: [propext, Quot.sound]
+'LocalDenominator.lap_rigid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalDenominator.overlap' depends on axioms: [propext, Quot.sound]
+'LocalDenominator.decode_lap' depends on axioms: [propext, Classical.choice, Quot.sound]

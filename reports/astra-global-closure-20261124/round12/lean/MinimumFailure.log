@@ -1,0 +1,15 @@
+'Collatz.MinimumFailure.good_one' does not depend on any axioms
+'Collatz.MinimumFailure.good_step' does not depend on any axioms
+'Collatz.MinimumFailure.good_run' does not depend on any axioms
+'Collatz.MinimumFailure.label_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.label_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.label_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.exists_least_discordance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.good_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.good_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.upper_bad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.smaller_triples_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.smaller_multiples_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.counterexample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.exclude_seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MinimumFailure.counterexample_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]

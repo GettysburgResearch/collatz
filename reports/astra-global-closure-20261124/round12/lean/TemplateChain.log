@@ -1,0 +1,4 @@
+'Collatz.TemplateChain.physical_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TemplateChain.centered_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TemplateChain.chain_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TemplateChain.endpoint_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
