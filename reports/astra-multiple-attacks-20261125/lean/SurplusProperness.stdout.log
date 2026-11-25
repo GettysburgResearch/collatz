@@ -1,0 +1,4 @@
+'SurplusProperness.fixed_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusProperness.finite_windows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusProperness.source_free_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurplusProperness.unbounded_extra' depends on axioms: [propext, Classical.choice, Quot.sound]

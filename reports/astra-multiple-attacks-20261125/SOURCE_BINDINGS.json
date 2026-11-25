@@ -1,0 +1,116 @@
+{
+  "schema": "collatz-multiple-attacks-source-bindings/v1",
+  "base_commit": "aa0b01234735683b413098b81afdf764de503730",
+  "sources": [
+    {
+      "pr": 195,
+      "commit": "99a4ab3f808c01acd115ef08eee42a8b886d5d4c",
+      "path": "research/astra-global-closure-20261124/round12/arithmetic/README.md",
+      "git_blob": "2821956ff40fb820d81a6e6c8053d4fda21f80b7",
+      "sha256": "cc3aa55f38f253a77c33cfca27e53b7231b8754a146f9494af6cda822be55109",
+      "bytes": 18911,
+      "scope": "Finite-simple-path reciprocal estimate, \u00a71(2)",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 195,
+      "commit": "99a4ab3f808c01acd115ef08eee42a8b886d5d4c",
+      "path": "research/astra-global-closure-20261124/round12/cycle/README.md",
+      "git_blob": "8375ef4ae3c8f95fa67e2847a337f3ffee2ac8fa",
+      "sha256": "d5ce926d0ccf519a902f945903f6b4e5ad334b952cd138442e43f1cfdecd19a0",
+      "bytes": 11795,
+      "scope": "Full determinant, compressed factors and short-relation resultants",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 195,
+      "commit": "99a4ab3f808c01acd115ef08eee42a8b886d5d4c",
+      "path": "research/astra-global-closure-20261124/round9/critical/README.md",
+      "git_blob": "89033a93a36e45866f309d49d5efd64f8051d136",
+      "sha256": "c32eb428c88b06eaa766d2484c8199433b5d1b8bb665ba5d1e9a03044ea4b403",
+      "bytes": 16382,
+      "scope": "Bounded least-disagreement branch and rank normalization",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 192,
+      "commit": "1f1d3d690d7517e1b2a44b5f2f4930bd45b63302",
+      "path": "research/astra-diagonal-closure-20261125/cycle/README.md",
+      "git_blob": "ba960e5df56fe3e55837b930dc936f7f786f862c",
+      "sha256": "b31f7a1d16843a1295837f6da2768416b40f5a350f58596efd688f9cfaa90547",
+      "bytes": 9242,
+      "scope": "Ordinary inverse optimality and phase cost",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 192,
+      "commit": "1f1d3d690d7517e1b2a44b5f2f4930bd45b63302",
+      "path": "research/astra-diagonal-closure-20261125/joint/README.md",
+      "git_blob": "3a18836db0ce9af908b4adf834b41e8c5f48ff75",
+      "sha256": "b0166e19fce3234113930faa7c6b2984ee1bcc990c83aecf4b63183ea576ff7a",
+      "bytes": 17471,
+      "scope": "Original-parent grid scope and enlargement limitation",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 192,
+      "commit": "1f1d3d690d7517e1b2a44b5f2f4930bd45b63302",
+      "path": "research/astra-minimum-source-20261124/descent/README.md",
+      "git_blob": "0f8c50e266213292869e34ec5b5da42ae9e7b930",
+      "sha256": "3a7e78db667997b7dda877f3fe27842d61e80c236ea97f36ddd88c0e40e2a7c8",
+      "bytes": 7792,
+      "scope": "Prior adjacent Mersenne merger",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 201,
+      "commit": "02fb390a76fb2ffb00fee612649ca23a82d99d31",
+      "path": "research/killed-green-head-closure-20261124/thin-band/README.md",
+      "git_blob": "0186e97659a0d8c851067f4d0b4b0a572594b0f2",
+      "sha256": "8ad44af26d91bf63cebcad1211b6d0059af315a971e3528d30f36c3dbf68a773",
+      "bytes": 20745,
+      "scope": "Actual prescribed-clock inverse source bands",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 210,
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "path": "research/critical-record-rational-rigidity-20261125/README.md",
+      "git_blob": "57d3e2d9b46f18003de88c00ae853fc7af4aedeb",
+      "sha256": "13cef04e38fd5c3b011fc90a4482167bd088c9d6f3c9983a5f678ec888b3a96d",
+      "bytes": 21584,
+      "scope": "Critical backward rational scripts; ordinary applicability separate",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 210,
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "path": "research/critical-record-rational-rigidity-20261125/SUBSPACE.md",
+      "git_blob": "104ce24a574fbdf96ee54ca6126f0e76d38263d9",
+      "sha256": "9ae0856bc51d59d0a6cb028aa5ace9f877c0be85346fb1645378d4fb6828af87",
+      "bytes": 11067,
+      "scope": "Three-place subspace criterion",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 197,
+      "commit": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/README.md",
+      "git_blob": "84f00d20d10cf1479298c9b718049f9217d79787",
+      "sha256": "529c350fb36c0abec610d9e0cf409fc69e85e137a0df70663ad60983b4e8ea1f",
+      "bytes": 15065,
+      "scope": "Paired reductions and open exclusion",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    },
+    {
+      "pr": 197,
+      "commit": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/CENTER_PHASE_OBSTRUCTION.md",
+      "git_blob": "c9ee4921c31a3dbf94b84d8e6a1a24cef3dd4291",
+      "sha256": "b9bd5ae30bc27528dae8920e06f53fa99ae7e57e96584d097a7afda87663f4de",
+      "bytes": 5573,
+      "scope": "All-clock center-phase obstruction",
+      "evidence": "targeted written-source inspection; not a full branch or Lean audit"
+    }
+  ]
+}
