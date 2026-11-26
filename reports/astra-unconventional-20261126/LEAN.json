@@ -1,0 +1,118 @@
+{
+  "schema": "collatz-astra-unconventional-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "All six new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure construction and S-part theorem are written proofs, not formalized by this build.",
+  "modules": [
+    {
+      "module": "MovingCenters",
+      "source": "research/astra-unconventional-20261126/arithmetic/MovingCenters.lean",
+      "new": true,
+      "sha256": "2ebdbbf586274c1582afe283677ba5ddfcd8a323f4da71a7c08e774ec2549df7",
+      "exit_code": 0,
+      "seconds": 1.764,
+      "public_theorems": [
+        "Collatz.Unconventional.MovingCenters.follow_assoc",
+        "Collatz.Unconventional.MovingCenters.word_append",
+        "Collatz.Unconventional.MovingCenters.carry_swap",
+        "Collatz.Unconventional.MovingCenters.word_clocks",
+        "Collatz.Unconventional.MovingCenters.carry_swap_one_two",
+        "Collatz.Unconventional.MovingCenters.junction_numerators",
+        "Collatz.Unconventional.MovingCenters.repeated_center"
+      ]
+    },
+    {
+      "module": "FrozenAmplitude",
+      "source": "research/astra-unconventional-20261126/arithmetic/FrozenAmplitude.lean",
+      "new": true,
+      "sha256": "5ac6be941c712c1b8e3a2de0312d5c48d10ff833916653f7e889956860530be5",
+      "exit_code": 0,
+      "seconds": 2.633,
+      "public_theorems": [
+        "Collatz.Unconventional.Arithmetic.physical_fold",
+        "Collatz.Unconventional.Arithmetic.coord_real",
+        "Collatz.Unconventional.Arithmetic.amplitude_edge",
+        "Collatz.Unconventional.Arithmetic.amplitude_step_bound",
+        "Collatz.Unconventional.Arithmetic.freeze",
+        "Collatz.Unconventional.Arithmetic.incoming_residue",
+        "Collatz.Unconventional.Arithmetic.residue_near_wrap"
+      ]
+    },
+    {
+      "module": "BoundaryKernel",
+      "source": "research/astra-unconventional-20261126/boundary/BoundaryKernel.lean",
+      "new": true,
+      "sha256": "b1987844ccd3f1f4506996c8d80caf837169f0a6a6ae06dd307a6336059e0e3a",
+      "exit_code": 0,
+      "seconds": 1.885,
+      "public_theorems": [
+        "Collatz.BoundaryKernel.multiplier_pos",
+        "Collatz.BoundaryKernel.multiplier_append",
+        "Collatz.BoundaryKernel.Edge.target_pos",
+        "Collatz.BoundaryKernel.Edge.retention",
+        "Collatz.BoundaryKernel.retention_append",
+        "Collatz.BoundaryKernel.address_append",
+        "Collatz.BoundaryKernel.strip_clocks",
+        "Collatz.BoundaryKernel.address_injective_source",
+        "Collatz.BoundaryKernel.square_atom_weight"
+      ]
+    },
+    {
+      "module": "RecordTwo",
+      "source": "research/astra-unconventional-20261126/boundary/RecordTwo.lean",
+      "new": true,
+      "sha256": "e5958185d8b89bbc00001cf072b8e635f80f5be47f736d41a56a1cabb065cb2c",
+      "exit_code": 0,
+      "seconds": 2.123,
+      "public_theorems": [
+        "Collatz.RecordTwo.one_exact",
+        "Collatz.RecordTwo.two_one_exact",
+        "Collatz.RecordTwo.directed_disjoint",
+        "Collatz.RecordTwo.inverse_disjoint",
+        "Collatz.RecordTwo.expansion",
+        "Collatz.RecordTwo.iter_a",
+        "Collatz.RecordTwo.iter_b"
+      ]
+    },
+    {
+      "module": "NegativeShadow",
+      "source": "research/astra-unconventional-20261126/global/NegativeShadow.lean",
+      "new": true,
+      "sha256": "0d16eec2c475de177d4f953f946c11f0c483981c5a0ca372ccd5e424b101a978",
+      "exit_code": 0,
+      "seconds": 1.824,
+      "public_theorems": [
+        "NegativeShadow.unique_clock",
+        "NegativeShadow.product_bound",
+        "NegativeShadow.reflected_gain_bound"
+      ]
+    },
+    {
+      "module": "OrdinaryFibers",
+      "source": "research/astra-unconventional-20261126/global/OrdinaryFibers.lean",
+      "new": true,
+      "sha256": "ac674e6b8cfea7eaf1999e12377c47a33b1f00f5dcebdf1628e1ef2d72869330",
+      "exit_code": 0,
+      "seconds": 1.953,
+      "public_theorems": [
+        "OrdinaryFibers.shifted_affine",
+        "OrdinaryFibers.score_increases",
+        "OrdinaryFibers.positive_fiber_injective"
+      ]
+    }
+  ],
+  "success": true,
+  "new_public_theorems": 36,
+  "imported_public_theorems": 0,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 36,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 13.273
+}
