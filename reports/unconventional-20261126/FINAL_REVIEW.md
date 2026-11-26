@@ -296,3 +296,26 @@ is vanishing weighted current on the explicit thin critical gate sieve.
 In the cycle route it is exclusion of the denominator-one row except for
 words on the known positive cycle.
 Neither conclusion follows from the restrictions reviewed here.
+
+## 9. Final combined closing audit
+
+The coordinator reconstructed the exact identities and the homogeneous
+resultant argument in
+[CLOSING_AUDIT.md](../../research/unconventional-20261126/CLOSING_AUDIT.md),
+final SHA-256 `f3fd299cde3847b010afddbcbd3c6ac4c24660f789a2ec2bee505df305ca9ce8`.
+All three agents independently reconstructed the preceding version
+`91a82587a82791e757aaf0c67e0962766876bf0c60fd4bc2fa4ce7b3f3e444f9`.
+The final two qualifications fix the denominator tolerance at most 1/2
+for a uniform constant and restrict the nonprimitive-coordinate observation
+to full determinant greater than one. The coordinator checked both edits.
+
+The actual critical trace contains an explicit moving rational witness
+at each true record, with an exactly growing power-of-two denominator.
+Its cleared moving polynomial has a constant cofactor outside the prime
+3. The direct two-coordinate Subspace product separately has the exact
+positive residual `L(p)-p`. The nonlinear resultant restrictions also
+persist on the cleared primitive coordinates of large-denominator rational
+cycles. The audit retains the distinction from the subexponential-denominator
+family and claims no countermodel satisfying every proposed filter.
+These are structural explanations of the missing inference; they do not
+assert an ordinary escaping trajectory or a nontrivial ordinary cycle.

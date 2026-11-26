@@ -142,6 +142,12 @@ ordinary gates, and separately eliminate nontrivial solutions to the full
 denominator-one cycle equation. The present results do not yet provide
 either step.
 
+The final [closing audit](CLOSING_AUDIT.md) computes the moving witness
+attached to each true record and the positive residual in the direct
+two-coordinate Subspace attempt. It also tests the combined nonlinear
+arithmetic and interval geometry on genuine rational cycles, retaining
+the distinction between exponential and subexponential denominators.
+
 Independent review here means reconstruction by another GPT-6.2 Astra
 agent and, for the principal later results, by the coordinator. It is not
 an external expert endorsement, a priority determination, or a formal

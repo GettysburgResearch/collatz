@@ -13,6 +13,10 @@ the [compulsory log-height arithmetic](operator/ROUGH_LOG_GATES.md), and
 the [integer cycle order restriction](adelic/DYADIC_CYCLE_ORDER.md).
 [FINAL_PROPOSAL.md](FINAL_PROPOSAL.md) states the exact Lean endpoint and
 the mathematical steps still required to reach it.
+[CLOSING_AUDIT.md](CLOSING_AUDIT.md) records the final combined attack:
+the exact moving rational witness, a positive floor in the direct
+Subspace product, and rational cycles that preserve the nonlinear
+cofactor estimates in their denominator-aware form.
 
 Throughout, the native shortcut map is
 
