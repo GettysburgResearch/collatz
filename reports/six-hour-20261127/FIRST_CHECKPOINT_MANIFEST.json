@@ -1,0 +1,131 @@
+{
+  "scope": "First checkpoint exact bytes; mathematical status and source hypotheses are in the linked review reports",
+  "baseline": "21bed7ac2b1b1bb4baf0f6cabd53f8b9dd11b58a",
+  "files": [
+    {
+      "path": "research/six-hour-20261127/README.md",
+      "sha256": "2f1e693de9632c1e5c51025168340f57159546442c8f1b62da55bca2d13ad487",
+      "bytes": 7568
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PEAK_RIGIDITY.md",
+      "sha256": "8a5b52f46121ec449202e3fc30dda4ad115cbbe5cb100a29ec243d7ea931feb1",
+      "bytes": 11183
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "bytes": 13721
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/check_peak.py",
+      "sha256": "79c909f26ca6ea403209234fdeba95f6d7f2f100ae801d194c3bb93672492226",
+      "bytes": 2847
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PEAK_CONTROLS.json",
+      "sha256": "c645ef443394a8e21cf0f56d8cb4cd9b73aef27400d127223965e72414221d91",
+      "bytes": 3607
+    },
+    {
+      "path": "research/six-hour-20261127/escape/PERMANENT_SIEVE.md",
+      "sha256": "95642b16cb20e7b24957df270c6850b02745852add7b3c331c5076effd845e9a",
+      "bytes": 7962
+    },
+    {
+      "path": "research/six-hour-20261127/escape/TERNARY_DECODER.md",
+      "sha256": "e096e81b3d3aa8c07cdb006d1cf9c3eb70ca4d7552651c21b9a9426266c6fce4",
+      "bytes": 9434
+    },
+    {
+      "path": "research/six-hour-20261127/escape/ORDINARY_DECODER_CONTROLS.md",
+      "sha256": "c1c336faffc967288fa8662b87218d7a70fecb68220a63ddee5cd266ef8aeddc",
+      "bytes": 5294
+    },
+    {
+      "path": "research/six-hour-20261127/escape/PermanentSieve.lean",
+      "sha256": "440a260c217d158d30adc14b50d74fcc3193b55d41f60afa6f6f1716114bc308",
+      "bytes": 3146
+    },
+    {
+      "path": "research/six-hour-20261127/escape/check_escape.py",
+      "sha256": "d446f0e9598732f88c4fab06c0cca0f9f37c1e7cecc3f6d6fa5f1ee579293b25",
+      "bytes": 6823
+    },
+    {
+      "path": "research/six-hour-20261127/escape/CONTROLS.json",
+      "sha256": "c7e750cd6efbfd61f69da8ece52a3e7b609dfaf71b261e1885d6ab3dd6b6a614",
+      "bytes": 9421
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/CUBIC_HEIGHT_COST.md",
+      "sha256": "68f070dad5ffd92e2a8a71cd1e99629eba2bc01d49fd16e88a59b07890612080",
+      "bytes": 10982
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/ALL_TIME_CUBIC_TRACE.md",
+      "sha256": "a6b1eee8fbed52c68064bbad2f66570c949b04e2261de231273a31b27be57830",
+      "bytes": 10289
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/PELL_TOWER_ORDER.md",
+      "sha256": "0c9ef041e3f76f0c0459e016e701d9959be1150e1a197365c8dea812526a579c",
+      "bytes": 5809
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/SOURCE_AUDIT.md",
+      "sha256": "807b3dec5a68090718f53289026681fe164e5d57104b4f39699611af66fddc2d",
+      "bytes": 5440
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/CubicHeight.lean",
+      "sha256": "984e6e228bb6f83f9295e1cb499257370ccc984e4634e42840cd0403cf976ee2",
+      "bytes": 2157
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/check_cubic.py",
+      "sha256": "f904d6e13ea21deed86d408eba664d54f982de6ca4e3a78655a95eb93d5f3143",
+      "bytes": 4693
+    },
+    {
+      "path": "reports/six-hour-20261127/INTAKE.json",
+      "sha256": "d253940ca9126099c87226523d710f750c148983a37ca112099c899cf32e15af",
+      "bytes": 38653
+    },
+    {
+      "path": "reports/six-hour-20261127/ROOT_FIRST_REVIEW.md",
+      "sha256": "29b37b35ebd4496a8df69b0d92ec94579dd24bdb7d8fd10a2f9ac103cefa4f95",
+      "bytes": 6403
+    },
+    {
+      "path": "reports/six-hour-20261127/ARITHMETIC_REVIEW_OF_COUPLING.md",
+      "sha256": "ff26359ef6c1e6b25fe2b4d70dd3a88bf5f2ee09b68c445dd5956a780d61479b",
+      "bytes": 5093
+    },
+    {
+      "path": "reports/six-hour-20261127/COUPLING_REVIEW_OF_ESCAPE.md",
+      "sha256": "f9d58db1ba068456e69a39b937eae248d731ccdac3dd324e5f2690908c09e8a4",
+      "bytes": 6224
+    },
+    {
+      "path": "reports/six-hour-20261127/ESCAPE_REVIEW_OF_ARITHMETIC.md",
+      "sha256": "9b5a146f03316b5fa6e8192418763c333d68a0a06f0cac4b0f3b383002f41745",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/six-hour-20261127/CUBIC_CONTROLS.json",
+      "sha256": "d9ab59adbe718d32a4d25e8dfede8bc49620dc00e6bb7c57b3b9dee0f07a4e00",
+      "bytes": 555
+    },
+    {
+      "path": "reports/six-hour-20261127/replay.py",
+      "sha256": "411047ff53d5b97268183a264a8f60fe673e66bc816110ebc05e248b9b7dd296",
+      "bytes": 8522
+    },
+    {
+      "path": "reports/six-hour-20261127/FIRST_REPLAY.json",
+      "sha256": "d9159440b35fb086af09538fae4581ca29016ccc8337f3d2c85a2a70ec17b23b",
+      "bytes": 11904
+    }
+  ]
+}

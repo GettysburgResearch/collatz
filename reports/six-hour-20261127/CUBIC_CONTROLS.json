@@ -1,0 +1,37 @@
+{
+  "rotation_cost_times_two_summed_over_nine": [
+    0,
+    18,
+    18,
+    18,
+    24,
+    24,
+    18,
+    24,
+    24
+  ],
+  "tower": {
+    "degree_five_first_nonzero_frequencies": [
+      1,
+      2,
+      5
+    ],
+    "divisor_rules_checked": 147,
+    "levels": 30
+  },
+  "trace": {
+    "distinct_departures": 58,
+    "interior_prime": 181,
+    "interior_vertex": 32761,
+    "normalized_trace": "369/362",
+    "pell_labels": 57,
+    "repeated_labels": {
+      "3": [
+        43681,
+        1
+      ]
+    },
+    "start": 43681,
+    "terminal": 1
+  }
+}
