@@ -1,0 +1,32 @@
+{
+  "scope": "O11–O18 and WEIGHTED_SHORTCUT_PRESSURE are written mathematical proofs. Three independent reconstructions of the frozen O15 found no gap. Scope of Lean: three triangular sequence sublemmas, ten window, cyclic group, and carry lemmas, and six finite ordinary first-descent lemmas. The full operator, entropy, and stationary-excursion proofs have written status.",
+  "exact_bergman_radius": "sqrt(20)/3 for the Hilbert transfer on the quotient removing degrees 0, 1, and 2",
+  "certified_point_spectrum": "The proven open disk of genuine infinite-multiplicity eigenvalues has radius sqrt(207384761192/93324220975). Its remaining gap to the exact spectral radius is open.",
+  "ordinary_scope": "O16 optimizes over varying ordinary inverse roots. O18 bounds the maximal multiplicity of finite words. S1 realizes complete terminating descents on varying sources. Ordinary global convergence remains open.",
+  "external_review_target": {
+    "ORDINARY_STATIONARY_EXCURSIONS.md": "b46a9721111525b15a69269f0bd4a2a20b98a2717f43f8ab730e201c358a3ec9"
+  },
+  "files": {
+    "SECOND_WAVE_FREEZE.json": "3ca74d2ffddc3786b3124ccde5acc56699ee8b6fd9dc7bf051679601edd8b354",
+    "PRODUCT_SEQUENCE_SHIFT.md": "2af5650916dd1e3be8472d59da3ca35a4cef81e8603796d5cae95c3649dc7268",
+    "BERGMAN_DISK.md": "2b5f8b6ad06bdbc497d201b71ea266e4454542a4d954d55e7164ae243dd8d4c2",
+    "BIASED_PRESSURE.md": "f04842f5f5ad4c7f78b80cb11a37b76d67e18792e3cb9ce464310c1a7a61fcdd",
+    "BERGMAN_POINT_DISK.md": "0b9e1d7b8e7cd3f9bc3bd2ef5ab1868ad0d98c486d1feb6b81cc0597b434aa69",
+    "check_pressure.py": "46bb684b250fa24a6b5e3634a3e2f01d5c6e8cf19797baa84cc1369e9125e0c8",
+    "PRESSURE_CONTROLS.json": "cc309d3793ef7174261c57dcf8db17bb3e0774b9efcc3216d3e3ebf47a91799d",
+    "SequencePivot.lean": "68c47e1ec8ef0a084286f528862f85cc22ff9bb8d6e539c67009d2b556d9810e",
+    "SEQUENCE_PIVOT_AXIOMS.txt": "301e2b52cc7b82a2389b80cd3aa19d469d3a17e8d47f18b970618dcf573ad47a",
+    "EXACT_BERGMAN_PRESSURE.md": "5e93fc264fdbf9fe287c90531bab5875d1d7f9745f2ecd4419e9be9edcf5194c",
+    "ARITHMETIC_PRESSURE.md": "70fd2a202921d52b0e995f91a04d55557a4ddc505ae51c6624411a7beda31648",
+    "FINITE_LOCAL_PRESSURE.md": "dbdd34c90a53aae0c4c731e238bbab00b1a838c3d2d5d6cdfaf8529b2b3a1a32",
+    "LOCALIZED_SURVIVOR_PRESSURE.md": "07aaa763d404b5b034e4b5db0337ad65a99408fdd592179164332959fbc8b58d",
+    "WEIGHTED_SHORTCUT_PRESSURE.md": "522f38875d35236142e9dd2360876c6123aad07abd9afe6e229a4c614d83c77a",
+    "PressureWindows.lean": "b3f09cb83531f1056bdfa363de85edc26e91a511b4bb7d2aa89cf0386e431846",
+    "PRESSURE_WINDOW_AXIOMS.txt": "1113f2ce2f21d92ca85b937c4797a6247be1d7ce929a87c3ae48e1419a29a8e1",
+    "FirstDescentFloor.lean": "82615f3843df529dd9e227325d49778c04f7c2ddc537611bee80196e6f741f90",
+    "FIRST_DESCENT_FLOOR_AXIOMS.txt": "774f90f9f18c490165559e394f58a777848100a9dc0121bdf9a5c3ca877d1c2b",
+    "EXCURSION_INDEPENDENT_REVIEW.md": "a3bad58e0925865b165ade38828b852524913194c63851a09da76aa90322e4f5",
+    "check_excursion_review.py": "05c227296ec87bdc51fad8ad2f3623bb565d023b9bd15b56bb93893344e6fdd8",
+    "EXCURSION_REVIEW_CONTROLS.json": "07ca7564a3030765d5f2c7a7a0dc225c0f8c51e7e5f93627c2fad00e5186e22d"
+  }
+}

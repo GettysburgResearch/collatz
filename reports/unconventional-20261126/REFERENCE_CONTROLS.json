@@ -1,0 +1,124 @@
+{
+  "depth": 40,
+  "first_hit_triple_leaves": 22289,
+  "surviving_reverse_prefixes": 44474,
+  "weighted_leaf_mass_lower": {
+    "numerator": 27671094771,
+    "denominator": 549755813888,
+    "decimal": "0.0503334282"
+  },
+  "weighted_leaf_mass_error_at_most": {
+    "numerator": 22237,
+    "denominator": 549755813888,
+    "decimal": "0.0000000404"
+  },
+  "relative_to_positive_odd_sources": [
+    {
+      "both_arms": false,
+      "reserve": 0,
+      "certified_cylinders": 13483,
+      "pending_lower_first_hits": 0,
+      "relative_density_lower": {
+        "numerator": 3403055273,
+        "denominator": 34359738368,
+        "decimal": "0.0990419437"
+      },
+      "relative_density_upper": {
+        "numerator": 27224464421,
+        "denominator": 274877906944,
+        "decimal": "0.0990420246"
+      }
+    },
+    {
+      "both_arms": false,
+      "reserve": 1,
+      "certified_cylinders": 19783,
+      "pending_lower_first_hits": 0,
+      "relative_density_lower": {
+        "numerator": 27668375859,
+        "denominator": 549755813888,
+        "decimal": "0.0503284825"
+      },
+      "relative_density_upper": {
+        "numerator": 1729274881,
+        "denominator": 34359738368,
+        "decimal": "0.0503285229"
+      }
+    },
+    {
+      "both_arms": false,
+      "reserve": 2,
+      "certified_cylinders": 20396,
+      "pending_lower_first_hits": 0,
+      "relative_density_lower": {
+        "numerator": 27669397633,
+        "denominator": 1099511627776,
+        "decimal": "0.0251651705"
+      },
+      "relative_density_upper": {
+        "numerator": 13834709935,
+        "denominator": 549755813888,
+        "decimal": "0.0251651908"
+      }
+    },
+    {
+      "both_arms": true,
+      "reserve": 0,
+      "certified_cylinders": 4949,
+      "pending_lower_first_hits": 16259,
+      "relative_density_lower": {
+        "numerator": 36441516717,
+        "denominator": 549755813888,
+        "decimal": "0.0662867328"
+      },
+      "relative_density_upper": {
+        "numerator": 72883138641,
+        "denominator": 1099511627776,
+        "decimal": "0.0662868284"
+      }
+    },
+    {
+      "both_arms": true,
+      "reserve": 1,
+      "certified_cylinders": 5817,
+      "pending_lower_first_hits": 16259,
+      "relative_density_lower": {
+        "numerator": 36448539097,
+        "denominator": 1099511627776,
+        "decimal": "0.0331497532"
+      },
+      "relative_density_upper": {
+        "numerator": 72897183401,
+        "denominator": 2199023255552,
+        "decimal": "0.0331498010"
+      }
+    },
+    {
+      "both_arms": true,
+      "reserve": 2,
+      "certified_cylinders": 5862,
+      "pending_lower_first_hits": 16259,
+      "relative_density_lower": {
+        "numerator": 18224273713,
+        "denominator": 1099511627776,
+        "decimal": "0.0165748804"
+      },
+      "relative_density_upper": {
+        "numerator": 72897200059,
+        "denominator": 4398046511104,
+        "decimal": "0.0165749043"
+      }
+    }
+  ],
+  "delayed_merger_dates_and_sharp_margin_checked": [
+    12,
+    30,
+    48,
+    66,
+    102,
+    192,
+    408,
+    1038,
+    1812
+  ]
+}

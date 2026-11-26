@@ -20,10 +20,14 @@ import tempfile
 LEAN_COMMIT = "5045d0056413266e57c625dcd7c365b10e377c52"
 MATHLIB_COMMIT = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
-DECLARATION = re.compile(r"^(?:private\s+)?theorem\s+([\w']+)", re.MULTILINE)
+DECLARATION = re.compile(r"^(?:private\s+)?theorem\s+([\w.']+)", re.MULTILINE)
 REQUEST = re.compile(r"^#print\s+axioms\s+([\w.']+)\s*$", re.MULTILINE)
 REPORT = re.compile(r"^'([^']+)' (?:depends on axioms:\s*\[([^\]]*)\]|does not depend on any axioms)$")
 FLAGS = ["-j1", "-DwarningAsError=true", "-DautoImplicit=false", "--json"]
+REBUILD_DEPENDENCIES = [
+    "Mathlib/Algebra/Order/GroupWithZero/Action/Synonym",
+    "Mathlib/Topology/Connected/TotallyDisconnected",
+]
 
 
 def output(command):
@@ -32,7 +36,7 @@ def output(command):
 
 def parse_audits(source, lean_output):
     requested = [n.rsplit(".", 1)[-1] for n in REQUEST.findall(source)]
-    declarations = DECLARATION.findall(source)
+    declarations = [n.rsplit(".", 1)[-1] for n in DECLARATION.findall(source)]
     if not declarations or sorted(requested) != sorted(declarations):
         raise ValueError("local theorems and axiom-audit requests differ")
     if len(set(requested)) != len(requested):
@@ -85,12 +89,46 @@ def main():
         "mathlib_commit": mathlib_commit,
         "flags": FLAGS,
         "dependency_scope": "precompiled pinned Mathlib; every project module rebuilt",
+        "rebuilt_dependencies": [],
         "modules": [],
     }
     with tempfile.TemporaryDirectory(prefix="collatz-unconventional-lean-") as tmp:
         destination = Path(tmp)
+        dependency_root = destination / "dependencies"
+        # Lean resolves a module root from the first matching search directory.
+        # Mirror the pinned cache with file symlinks, then fill only the two
+        # missing dependency objects from their unchanged pinned sources.
+        for original in olean_root.rglob("*"):
+            relative = original.relative_to(olean_root)
+            target = dependency_root / relative
+            if original.is_dir():
+                target.mkdir(parents=True, exist_ok=True)
+            elif not any(relative.as_posix().startswith(module + ".")
+                         for module in REBUILD_DEPENDENCIES):
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.symlink_to(original)
         env = dict(os.environ)
-        env["LEAN_PATH"] = os.pathsep.join(str(p) for p in (destination, olean_root, *packages))
+        env["LEAN_PATH"] = os.pathsep.join(
+            str(p) for p in (destination, dependency_root, olean_root, *packages))
+        for module in REBUILD_DEPENDENCIES:
+            source = mathlib / (module + ".lean")
+            target = dependency_root / (module + ".olean")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            command = [args.lean, *FLAGS, "-R", str(mathlib),
+                       "-o", str(target), str(source)]
+            result = subprocess.run(command, env=env, text=True, capture_output=True,
+                                    cwd=mathlib)
+            if result.returncode or result.stdout or result.stderr:
+                sys.stderr.write(result.stdout + result.stderr)
+                raise SystemExit(result.returncode or 1)
+            if not target.is_file():
+                raise RuntimeError(f"missing dependency object: {module}")
+            receipt["rebuilt_dependencies"].append({
+                "path": module + ".lean",
+                "sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                "exit_code": result.returncode,
+            })
+            print(f"{module}: pinned dependency rebuilt", file=sys.stderr, flush=True)
         for source in sources:
             data = source.read_bytes()
             target = destination / source.with_suffix(".olean").name

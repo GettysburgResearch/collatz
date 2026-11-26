@@ -1,0 +1,32 @@
+{
+  "positive_odd_roots": 24,
+  "literal_odd_paths": 8160,
+  "finite_path_lower_comparisons": 240,
+  "periodic_and_first_hit_rows": [
+    {
+      "depth": 1,
+      "period": 3,
+      "first_and_averaged_sha256": "70ca83b6589ae34c41845153aa67b110bfb68e1a4dd643b24abc9e8896b34c23"
+    },
+    {
+      "depth": 2,
+      "period": 9,
+      "first_and_averaged_sha256": "aa46c5b8a565bc31293af74e73b48abe5df3b48629201a78ca0dee91fa19c5da"
+    },
+    {
+      "depth": 3,
+      "period": 27,
+      "first_and_averaged_sha256": "8f46b5b8db14debda27267629a1cf9f70cf194f976e36ecc003e6ad7d3c253e3"
+    },
+    {
+      "depth": 4,
+      "period": 81,
+      "first_and_averaged_sha256": "8e9e90242a7819fbd88bb4964289d402f75f3241720289727b979ae4157a5702"
+    },
+    {
+      "depth": 5,
+      "period": 243,
+      "first_and_averaged_sha256": "3747232cee1e473a61a9d1a140b993a23b1ad51d6bd7096bf6ab96a2a6e47835"
+    }
+  ]
+}

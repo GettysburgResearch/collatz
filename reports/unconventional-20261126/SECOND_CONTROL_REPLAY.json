@@ -1,0 +1,174 @@
+{
+  "scope": "second-wave complete exact finite controls only",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runs": [
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_reference.py",
+      "source_sha256": "04984269e729074a8766f7e3cd914097c1dc52e1184e68dcb44378e481f3525b",
+      "record": "REFERENCE_CONTROLS.json",
+      "record_sha256": "8d442c8332903f8d1df93c57a0a36dd6bf7cbbe34770bcba4179ad2e97c21dd6",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_reference.py",
+      "source_sha256": "04984269e729074a8766f7e3cd914097c1dc52e1184e68dcb44378e481f3525b",
+      "record": "REFERENCE_CONTROLS.json",
+      "record_sha256": "8d442c8332903f8d1df93c57a0a36dd6bf7cbbe34770bcba4179ad2e97c21dd6",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_trace.py",
+      "source_sha256": "5d4756916d212dfcf7351ca2294535c9db9635dc4e463ccb9520dea989a0fa9c",
+      "record": "TRACE_CONTROLS.json",
+      "record_sha256": "75157365b67ee55e6d2a1f6bfa8bcaea342f77a83b38f563525013f71c06049b",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_trace.py",
+      "source_sha256": "5d4756916d212dfcf7351ca2294535c9db9635dc4e463ccb9520dea989a0fa9c",
+      "record": "TRACE_CONTROLS.json",
+      "record_sha256": "75157365b67ee55e6d2a1f6bfa8bcaea342f77a83b38f563525013f71c06049b",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_decoder.py",
+      "source_sha256": "48c26e07a89dd25dd1fbe0e6aa9113017e540fedd4f2f5f47a8a9a4f870aee7e",
+      "record": "DECODER_CONTROLS.json",
+      "record_sha256": "010064c5a682e7f44072451a9d5c14fea55877d8748659f94853f3dd50973f1f",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_decoder.py",
+      "source_sha256": "48c26e07a89dd25dd1fbe0e6aa9113017e540fedd4f2f5f47a8a9a4f870aee7e",
+      "record": "DECODER_CONTROLS.json",
+      "record_sha256": "010064c5a682e7f44072451a9d5c14fea55877d8748659f94853f3dd50973f1f",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_excursions.py",
+      "source_sha256": "3d066381613cfdd6bfd29d058b24db97da34cdf57fa08b03d5f0764d196070e3",
+      "record": "EXCURSION_CONTROLS.json",
+      "record_sha256": "bea5a17991aab455a01183455804844208bbcb042dc56e5bb4770d5adaf36fa9",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_excursions.py",
+      "source_sha256": "3d066381613cfdd6bfd29d058b24db97da34cdf57fa08b03d5f0764d196070e3",
+      "record": "EXCURSION_CONTROLS.json",
+      "record_sha256": "bea5a17991aab455a01183455804844208bbcb042dc56e5bb4770d5adaf36fa9",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/operator/check_pressure.py",
+      "source_sha256": "46bb684b250fa24a6b5e3634a3e2f01d5c6e8cf19797baa84cc1369e9125e0c8",
+      "record": "PRESSURE_CONTROLS.json",
+      "record_sha256": "cc309d3793ef7174261c57dcf8db17bb3e0774b9efcc3216d3e3ebf47a91799d",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/operator/check_pressure.py",
+      "source_sha256": "46bb684b250fa24a6b5e3634a3e2f01d5c6e8cf19797baa84cc1369e9125e0c8",
+      "record": "PRESSURE_CONTROLS.json",
+      "record_sha256": "cc309d3793ef7174261c57dcf8db17bb3e0774b9efcc3216d3e3ebf47a91799d",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_reference.py",
+      "source_sha256": "6b781e07f848107ed92a69365658706c857782a76c6af64aae9d4ee2a9ce3dcf",
+      "record": "REFERENCE_REVIEW_CONTROLS.json",
+      "record_sha256": "c8a3735bf9a10bcf3688f63a9264bfc0c43453faddf5a6b0e3397755e5f90215",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_reference.py",
+      "source_sha256": "6b781e07f848107ed92a69365658706c857782a76c6af64aae9d4ee2a9ce3dcf",
+      "record": "REFERENCE_REVIEW_CONTROLS.json",
+      "record_sha256": "c8a3735bf9a10bcf3688f63a9264bfc0c43453faddf5a6b0e3397755e5f90215",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_pressure_entropy.py",
+      "source_sha256": "22255746b3d199a7a953b09c080040c8341d6ce1da6ff7f2b3e29b2851a2ddd9",
+      "record": "PRESSURE_REVIEW_CONTROLS.json",
+      "record_sha256": "45725ceff45c7561c8f894f2b64adfdf46d30457cc79886a95d75e4a9ab6d535",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_pressure_entropy.py",
+      "source_sha256": "22255746b3d199a7a953b09c080040c8341d6ce1da6ff7f2b3e29b2851a2ddd9",
+      "record": "PRESSURE_REVIEW_CONTROLS.json",
+      "record_sha256": "45725ceff45c7561c8f894f2b64adfdf46d30457cc79886a95d75e4a9ab6d535",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_survivor.py",
+      "source_sha256": "8d3439fe51e2bea699d9d1ba1fc9c0f62225c17f57e95fee1b99a8c39d9830d8",
+      "record": "SURVIVOR_REVIEW_CONTROLS.json",
+      "record_sha256": "d1f6e5d5e20e2cdce93bb17377331a84fc101d3d4ac36c0773e6df175219f2f6",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_survivor.py",
+      "source_sha256": "8d3439fe51e2bea699d9d1ba1fc9c0f62225c17f57e95fee1b99a8c39d9830d8",
+      "record": "SURVIVOR_REVIEW_CONTROLS.json",
+      "record_sha256": "d1f6e5d5e20e2cdce93bb17377331a84fc101d3d4ac36c0773e6df175219f2f6",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_excursion.py",
+      "source_sha256": "05c227296ec87bdc51fad8ad2f3623bb565d023b9bd15b56bb93893344e6fdd8",
+      "record": "EXCURSION_REVIEW_CONTROLS.json",
+      "record_sha256": "07ca7564a3030765d5f2c7a7a0dc225c0f8c51e7e5f93627c2fad00e5186e22d",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_excursion.py",
+      "source_sha256": "05c227296ec87bdc51fad8ad2f3623bb565d023b9bd15b56bb93893344e6fdd8",
+      "record": "EXCURSION_REVIEW_CONTROLS.json",
+      "record_sha256": "07ca7564a3030765d5f2c7a7a0dc225c0f8c51e7e5f93627c2fad00e5186e22d",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    }
+  ],
+  "vector_regeneration": {
+    "source_sha256": "b9f853c4ce5a1f483a767905c1a1d8f9465a62a290f715b1d91e820c160d91a4",
+    "vector_sha256": "91170eb02223527b842d0e06d8370ba6e8278f71f5a108f33075660de54dae88",
+    "complete_record_equal": true,
+    "residues": 59049
+  }
+}

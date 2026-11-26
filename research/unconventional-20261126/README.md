@@ -1,10 +1,16 @@
 # Ordinary arithmetic, coupled cycles and operator spectra
 
-**Collatz remains open.** This packet records the first wave of the 26 November
-2026 broad reevaluation. Three GPT-6.2 Astra workers pursued independent
+**Collatz remains open.** This packet records the 26 November 2026 broad
+reevaluation. Successive teams of GPT-6.2 Astra workers pursue independent
 arithmetic, combinatorial and operator approaches, followed by independent
-proof reconstruction and exact replays. A second fresh wave attacks the
-remaining global step. The results below do not supply that step.
+proof reconstruction and exact replays. The first-wave results below are
+retained, with the current spectral and validation conclusions updated.
+
+**Current checkpoint:** [exact pressure, uniform finite prediction and
+complete ordinary first descents](SECOND_WAVE.md). The classical Bergman
+radius is now exactly $\sqrt{20}/3$ by a complete written proof with two
+independent reviews. The strict Lean packet has 121 audited local theorems
+in 16 modules. These results do not supply the remaining global Collatz step.
 
 The most concrete positive outcomes are answers to specified questions about
 Collatz operators in the published literature, a finiteness theorem for actual
@@ -51,15 +57,15 @@ $$
 with degrees $0,1,2$ removed, the specified transfer satisfies
 
 $$
- \boxed{\frac{\sqrt{20}}3\le r(\mathcal T)
- \le\sqrt{\frac{5516102802}{2482245023}}}.
+ \boxed{r(\mathcal T)=\frac{\sqrt{20}}3}.
 $$
 
-Thus $1.49071198<r(\mathcal T)<1.49071236$, and the value
-$\sqrt2$ proposed in Question 4.1 of Béhani's paper is excluded.
-The exact radius is not determined. This is an answer to the yes/no part of
-the stated question, without a claim of historical priority over unexamined
-later work.
+The value $\sqrt2$ proposed in Question 4.1 of Béhani's paper is excluded.
+The second wave proves the exact radius through its biased-pressure theorem.
+This answers the stated mathematical question without a claim of historical
+priority over unexamined later work. The first-wave independently certified
+upper bound $r(\mathcal T)\le\sqrt{5516102802/2482245023}$ remains a useful
+finite control of the exact calculation.
 
 The lower bound is analytic. A length-$k$ inverse word with $q$ odd branches
 is legal in exactly one class modulo $3^q$ and contributes slope
@@ -81,6 +87,7 @@ verifier checked the original transfer inequality on all 177,147 lifted
 residues, with three deliberately corrupted cases rejected.
 
 [Proof and exact operator identification](operator/BERGMAN_RADIUS.md) ·
+[exact pressure proof](operator/EXACT_BERGMAN_PRESSURE.md) ·
 [primary paper, Question 4.1 and Proposition 4.2](https://arxiv.org/pdf/2303.03203) ·
 [independent certificate receipt](../../reports/unconventional-20261126/BERGMAN_INDEPENDENT.json).
 
@@ -268,8 +275,9 @@ rooted-tree weight criterion is proved with its root and domain retained.
 
 ## Formalization and reproduction
 
-The strict first-wave replay rebuilt **10 modules and audited all 70 local
-theorem declarations**, including private lemmas. They use only the standard
+The strict current replay rebuilt **16 modules and audited all 121 local
+theorem declarations**, including private lemmas. The first checkpoint had
+10 modules and 70 declarations. They use only the standard
 axioms `propext`, `Classical.choice`, and `Quot.sound`, or no axioms. Eleven
 of those declarations are repaired copies of earlier uncompiled closing
 interfaces; their unproved global premises remain parameters. The earlier
@@ -282,6 +290,8 @@ axiom reports.
 | `MixedWordSpacing`, `TriplingCut`, `CoupledCycles` | 13 | Ordinary divisibilities, local merger-or-gap, paired affine words and reciprocal identities |
 | `MersenneReset`, `DefectArithmetic` | 18 | Complete one-reset physical classification and centered correction arithmetic |
 | `verified/MinimumClosure`, `verified/TraceProposal` | 11 | Repaired earlier arithmetic and explicitly conditional global consumers |
+| `ReferenceBarrier`, `FirstDescentFloor`, `FusionControl` | 29 | Reference capacity, actual first descent and synchronized binary fusion |
+| `SequencePivot`, `PressureWindows`, `TraceFront` | 22 | Triangular pivots, carry and window arithmetic, conditional trace-front interfaces |
 
 Use the pinned Lean and Mathlib versions recorded in the receipt. The replay
 reuses their external library build and creates fresh project objects.
@@ -289,8 +299,9 @@ reuses their external library build and creates fresh project objects.
 ```bash
 python -B research/unconventional-20261126/replay_lean.py \
   --mathlib /path/to/pinned/mathlib4 --lean /path/to/pinned/lean \
-  --check reports/unconventional-20261126/LEAN_RECEIPT.json
+  --check reports/unconventional-20261126/SECOND_LEAN_RECEIPT.json
 python -B research/unconventional-20261126/replay_controls.py
+python -B research/unconventional-20261126/replay_second_wave.py
 ```
 
 For the independent upper certificate check:
@@ -302,13 +313,15 @@ python -B research/unconventional-20261126/check_bergman_certificate.py \
   /tmp/collatz-bergman-vector.txt
 ```
 
-All five primary controls were replayed in normal and optimized Python with
-complete JSON equality. Five independently authored supplemental controls
-also ran. Assertion-based supplemental scripts reject optimized execution
-before doing work. Full-checkout structural validation has its own receipt;
-it is not mathematical verification.
+All first-wave primary controls were replayed in normal and optimized Python
+with complete JSON equality. The second wave adds five primary and four
+independent exact controls, all replayed in both modes, and regenerates the
+depth-ten integer vector. Assertion-based first-wave supplemental scripts
+reject optimized execution before doing work. Full-checkout structural
+validation has its own receipt; it is not mathematical verification.
 
-[Lean receipt](../../reports/unconventional-20261126/LEAN_RECEIPT.json) ·
+[current Lean receipt](../../reports/unconventional-20261126/SECOND_LEAN_RECEIPT.json) ·
+[second finite replay](../../reports/unconventional-20261126/SECOND_CONTROL_REPLAY.json) ·
 [finite replay receipt](../../reports/unconventional-20261126/CONTROL_REPLAY.json) ·
 [legacy repairs](verified/README.md).
 
@@ -318,5 +331,8 @@ No theorem here proves that every positive integer has a smaller merging
 witness, that every ordinary orbit enters a rigid template, or that the
 canonical ordinary trace has the uniform bound needed to exclude escape.
 The precise universal descent and cycle/escape premises in the closing
-Lean interfaces remain open. The next wave tests integer-specific coupled
-transport and ordinary trace concentration against the new rational controls.
+Lean interfaces remain open. The final wave tests information retained by
+one fixed integer, full-denominator cycle restrictions and the nonlocal
+first-hit trace. The [second-wave review](../../reports/unconventional-20261126/ROOT_SECOND_REVIEW.md)
+records why the completed pressure and excursion theorems do not close
+those obligations.

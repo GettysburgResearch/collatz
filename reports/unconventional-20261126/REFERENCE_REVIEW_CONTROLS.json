@@ -1,0 +1,64 @@
+{
+  "independent_gap_tree_leaves": 22289,
+  "live_prefixes": 44474,
+  "pending_lower_clocks": 16259,
+  "exact_enclosures": [
+    {
+      "both": false,
+      "reserve": 0,
+      "cylinders": 13483,
+      "lower": "3403055273/34359738368",
+      "upper": "27224464421/274877906944"
+    },
+    {
+      "both": false,
+      "reserve": 1,
+      "cylinders": 19783,
+      "lower": "27668375859/549755813888",
+      "upper": "1729274881/34359738368"
+    },
+    {
+      "both": false,
+      "reserve": 2,
+      "cylinders": 20396,
+      "lower": "27669397633/1099511627776",
+      "upper": "13834709935/549755813888"
+    },
+    {
+      "both": true,
+      "reserve": 0,
+      "cylinders": 4949,
+      "lower": "36441516717/549755813888",
+      "upper": "72883138641/1099511627776"
+    },
+    {
+      "both": true,
+      "reserve": 1,
+      "cylinders": 5817,
+      "lower": "36448539097/1099511627776",
+      "upper": "72897183401/2199023255552"
+    },
+    {
+      "both": true,
+      "reserve": 2,
+      "cylinders": 5862,
+      "lower": "18224273713/1099511627776",
+      "upper": "72897200059/4398046511104"
+    }
+  ],
+  "family_exponents": [
+    12,
+    30,
+    48,
+    66,
+    84,
+    102,
+    120,
+    138,
+    156,
+    174,
+    192,
+    210
+  ],
+  "scope": "finite certificate replay; all-depth density inference is written"
+}

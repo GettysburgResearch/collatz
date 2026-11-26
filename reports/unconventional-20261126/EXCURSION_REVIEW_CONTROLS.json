@@ -1,0 +1,62 @@
+[
+  {
+    "bits": 204,
+    "first_cross": 156,
+    "gaps": 98,
+    "max_gap": 4,
+    "mean": "78/49",
+    "q_sha256": "26d53e81a19dd90021caf9d8a54130e23bfed5bce99ca441a313c3eb25747401",
+    "terminating_times": [
+      920,
+      1172,
+      920,
+      920,
+      1137
+    ]
+  },
+  {
+    "bits": 359,
+    "first_cross": 311,
+    "gaps": 196,
+    "max_gap": 4,
+    "mean": "311/196",
+    "q_sha256": "b8c81ef98549027b407cad5c8404ae4851782f95ceae37946f19c0dd5a49474c",
+    "terminating_times": [
+      1774,
+      2056,
+      1701,
+      1701,
+      1701
+    ]
+  },
+  {
+    "bits": 278,
+    "first_cross": 230,
+    "gaps": 145,
+    "max_gap": 2,
+    "mean": "46/29",
+    "q_sha256": "040347cbda4e7d31dd0cddb9af3ccc9c8a6c3093477b2e435d3d3c60b99febe1",
+    "terminating_times": [
+      1059,
+      1674,
+      1395,
+      1395,
+      1349
+    ]
+  },
+  {
+    "bits": 381,
+    "first_cross": 333,
+    "gaps": 210,
+    "max_gap": 3,
+    "mean": "111/70",
+    "q_sha256": "715ebc0cdcec75bedbfc867660f12c9161a694b30c089758b7eb8bc6e3799d01",
+    "terminating_times": [
+      2170,
+      2170,
+      2170,
+      2170,
+      1647
+    ]
+  }
+]
