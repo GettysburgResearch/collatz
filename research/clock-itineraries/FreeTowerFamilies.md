@@ -67,3 +67,14 @@ Indeed, if convergence fails, one fixed bad unit target and target 1 have opposi
 | 4 | 119,304,647 | 5,585,854 | 0 | 381 |
 
 At the last stage, \(x=118900443\) gives common endpoint 6355687 and attains 381. These are exhaustive computational checks at three finite stages. The assertion for arbitrarily large stages remains open. Tao's almost-bounded-value theorem uses logarithmic density and a growing threshold, which leaves this fixed-gate count undecided. [Finite replay](synchronous_basin_replay.mjs) · [Tao, *Almost all orbits of the Collatz map attain almost bounded values*](https://arxiv.org/abs/1909.03562)
+
+## Positive density from the 2026 predecessor theorem
+
+Mazur's September 2026 manuscript proves positive lower natural density of the full-map predecessors of each fixed positive target coprime to three. Its companion formalization uses the unaccelerated odd step \(n\mapsto3n+1\). Skipping the intermediate even value preserves every visit to an odd target. For an even unit \(b\), choose \(j\in\{1,2,3,4\}\) with \(2^jb\equiv4\) or \(7\pmod9\), which is possible for each of the six unit residues. Then \((2^jb-1)/3\) is an odd unit reaching \(b\) in \(j\) shortcut steps. The positive-density lower bound therefore transfers to every unit target and, by our injective encoding, to its synchronized triples. The theorem `positive_triple_density` checks this for every large bound on the triple base itself, including even targets. The density constant can depend on the target. [Lean proof of density transfer](SynchronousDensityTransfer.lean) · [Mazur, Theorem 1.1](https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf) · [Source supplement and audit](https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html)
+
+With the integer reciprocal form of Mazur's bound as an explicit input, Lean proves the stronger finite test
+\[
+  \mathrm{Universal}\quad\Longleftrightarrow\quad
+  \forall D,N\;\exists X\ge N,\ O,\ g\quad D\,M(X,O,g)<X.
+\]
+Thus the fraction of misses needs to become arbitrarily small along selected stages. The same deadline and gate must work for the whole stage. A hypothetical bad component supplies a positive lower fraction of synchronized triples with the wrong label at every large stage, for any proposed gate. The new module checks the conversion for odd targets and the finite counting implication. The external positive-density development is a separate dependency. [Lean reduction and map conversion](SynchronousBasinDensity.lean)

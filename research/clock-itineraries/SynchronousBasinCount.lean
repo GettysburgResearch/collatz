@@ -72,6 +72,26 @@ private theorem positive (h n : Nat) (pos : 0<n) : 0<run h n := by
   | succ h ih =>
     apply ih; unfold step; split <;> omega
 
+theorem zero_misses (all : Universal) (X : Nat) : ∃ O, misses X O 1=[] := by
+  let raw := (List.range (limit X+1)).filter (fun x => decide (0<x))
+  let ys := raw.map (run 28)
+  have pos : ∀ y∈ys, 0<y := by
+    intro y mem
+    obtain ⟨x,member,rfl⟩ := List.mem_map.mp mem
+    exact positive _ _ (of_decide_eq_true (List.mem_filter.mp member).2)
+  obtain ⟨O,allHit⟩ := all_hit all ys pos
+  have none : misses X O 1=[] := by
+    apply List.eq_nil_iff_forall_not_mem.mpr
+    intro x member
+    obtain ⟨within,cond⟩ := List.mem_filter.mp member
+    simp only [Bool.and_eq_true,Bool.not_eq_true',decide_eq_true_eq] at cond
+    have mx : x∈raw := List.mem_filter.mpr ⟨within,decide_eq_true cond.1.1.1⟩
+    have reached := (hitBy_iff O (run 28 x) 1).mpr
+      (allHit _ (List.mem_map.mpr ⟨x,mx,rfl⟩))
+    rw [reached] at cond
+    simp at cond
+  exact ⟨O,none⟩
+
 /-- With the published predecessor bound as input, cofinally many fully
 finite gate tests, allowing an X^(21/25) quota of misses, are equivalent
 to universal Collatz. The deadline and the gate may differ by stage. -/
@@ -80,23 +100,7 @@ theorem universal_iff_sparse_triples (lower : PredecessorBound) :
   constructor
   · intro all N
     let X := N+1
-    let raw := (List.range (limit X+1)).filter (fun x => decide (0<x))
-    let ys := raw.map (run 28)
-    have pos : ∀ y∈ys, 0<y := by
-      intro y mem
-      obtain ⟨x,member,rfl⟩ := List.mem_map.mp mem
-      exact positive _ _ (of_decide_eq_true (List.mem_filter.mp member).2)
-    obtain ⟨O,allHit⟩ := all_hit all ys pos
-    have none : misses X O 1=[] := by
-      apply List.eq_nil_iff_forall_not_mem.mpr
-      intro x member
-      obtain ⟨within,cond⟩ := List.mem_filter.mp member
-      simp only [Bool.and_eq_true,Bool.not_eq_true',decide_eq_true_eq] at cond
-      have mx : x∈raw := List.mem_filter.mpr ⟨within,decide_eq_true cond.1.1.1⟩
-      have reached := (hitBy_iff O (run 28 x) 1).mpr
-        (allHit _ (List.mem_map.mpr ⟨x,mx,rfl⟩))
-      rw [reached] at cond
-      simp at cond
+    obtain ⟨O,none⟩ := zero_misses all X
     refine ⟨X,O,1,by dsimp [X]; omega,?_⟩
     rw [none]
     exact Nat.pow_pos (by dsimp [X]; omega)
