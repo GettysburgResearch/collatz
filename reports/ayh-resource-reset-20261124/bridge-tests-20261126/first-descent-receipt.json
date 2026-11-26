@@ -1,0 +1,22 @@
+{
+  "scope": "Independent increasing-origin finite replay, not a universal theorem",
+  "started_utc": "2026-11-26T21:40:48.456223+00:00",
+  "source_sha256": "b8384a32b8c9023d534254f9edcc8d2379242c0f5dcc788d682b76a0f185da9d",
+  "compile": [
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/workspace/scratch/33d115a3cb8d/collatz-published-4234561/research/ayh-resource-reset-20261124/bridge-tests-20261126/first_descent.cpp",
+    "-o",
+    "/workspace/scratch/33d115a3cb8d/unconventional-20261126/first_descent_root"
+  ],
+  "compile_exit": 0,
+  "compile_output": "",
+  "execution_exit": 0,
+  "log_sha256": "cff01f2486a5981d162b84bcb3525f874d839d81200a2dfbb04d49ed7358256c",
+  "finished_utc": "2026-11-26T21:40:57.260222+00:00",
+  "success": true
+}
