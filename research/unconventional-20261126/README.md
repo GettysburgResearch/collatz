@@ -321,7 +321,7 @@ python -B research/unconventional-20261126/check_bergman_certificate.py \
 All first-wave primary controls were replayed in normal and optimized Python
 with complete JSON equality. The second wave adds five primary and four
 independent exact controls, all replayed in both modes, and regenerates the
-depth-ten integer vector. The third wave adds seven primary and two independent
+depth-ten integer vector. The third wave adds eight primary and two independent
 root controls, all compared in both modes. Assertion-based first-wave supplemental scripts
 reject optimized execution before doing work. Full-checkout structural
 validation has its own receipt; it is not mathematical verification.

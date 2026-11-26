@@ -265,9 +265,9 @@ Diophantine and asymptotic conclusions remain written proofs. In particular
 the existing closing interfaces retain their unproved universal premises.
 Counting an interface as a theorem does not discharge its assumptions.
 
-Nine third-wave finite controls, including two separately written root
+Ten third-wave finite controls, including two separately written root
 reviewers, pass complete-record comparison in normal and optimized Python.
-The seven primary controls include two independent implementations of the
+The eight primary controls include two independent implementations of the
 finite exit gates. Earlier first- and second-wave receipts remain in the
 packet. Structural validation is reported separately from mathematics.
 
@@ -287,3 +287,13 @@ finite harmonic head or the exit-gate totals, or force a contradictory
 arithmetic structure on one fixed exceptional trajectory. The work above
 does not justify replacing that step by a finite experiment, a density-one
 statement, rational approximation, or the existence of a formal consumer.
+
+## Closing challenge after the main freeze
+
+The last focused review strengthened the swap theorem to an arbitrary shared
+physical prefix and isolated an exact gate-loss telescoping identity. It also
+identified the precise full-period factor allocation that still leaves the
+relative squareclass rank uncontrolled. These results and their limitations
+are in [the closing checks](CLOSING_CHECKS.md). The prefix extension adds a
+written proof and an independently reproduced finite exhaustion, with no
+additional Lean declaration.

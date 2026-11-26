@@ -93,6 +93,24 @@
       "complete_payload_equal": true
     },
     {
+      "path": "research/unconventional-20261126/defects/check_prefix_swap.py",
+      "source_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+      "record": "PREFIX_SWAP_CONTROLS.json",
+      "record_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_prefix_swap.py",
+      "source_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+      "record": "PREFIX_SWAP_CONTROLS.json",
+      "record_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
       "path": "research/unconventional-20261126/trace/check_dirichlet_current.py",
       "source_sha256": "62266700878d45547d4f8ea3503cbe6fd92f34b82e0ee12561bc5efe538759e4",
       "record": "DIRICHLET_CONTROL.json",

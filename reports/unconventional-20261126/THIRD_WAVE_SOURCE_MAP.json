@@ -306,5 +306,33 @@
     "source_sha256": "8c120d015f61674424e92cb321e906149372651ba336b64a530fe9f4f7849ff3",
     "integrated_sha256": "8c120d015f61674424e92cb321e906149372651ba336b64a530fe9f4f7849ff3",
     "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/nonlocal-trace-final-attack/HEIGHT_GATE_TELESCOPING.md",
+    "path": "research/unconventional-20261126/trace/HEIGHT_GATE_TELESCOPING.md",
+    "source_sha256": "fc8877967d7feb1809b82df198bf81d4f92d1a7618b1159805c6cdb56008980a",
+    "integrated_sha256": "fc8877967d7feb1809b82df198bf81d4f92d1a7618b1159805c6cdb56008980a",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/single-integer-final-attack/PREFIX_SWAP_EXCLUSION.md",
+    "path": "research/unconventional-20261126/defects/PREFIX_SWAP_EXCLUSION.md",
+    "source_sha256": "06104e78ccffdb75472b4da0baadbc8fa13c8b085827e2005b6b66778e67b579",
+    "integrated_sha256": "da5e18c97dbed60aacc6d14777c1e8dd0286de3f15d0c704b343768855587571",
+    "integration_change": "Adapted the finite-control link for integrated report layout; proof unchanged."
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/single-integer-final-attack/check_prefix_swap.py",
+    "path": "research/unconventional-20261126/defects/check_prefix_swap.py",
+    "source_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+    "integrated_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/single-integer-final-attack/PREFIX_SWAP_CONTROLS.json",
+    "path": "reports/unconventional-20261126/PREFIX_SWAP_CONTROLS.json",
+    "source_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+    "integrated_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+    "integration_change": null
   }
 ]

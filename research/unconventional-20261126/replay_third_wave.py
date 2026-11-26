@@ -30,6 +30,7 @@ def main():
         (root / "defects/check_persistent_divisor.py", "PERSISTENT_DIVISOR_CONTROLS.json"),
         (root / "defects/check_depth_ratios.py", "DEPTH_RATIO_CONTROLS.txt"),
         (root / "defects/check_two_block_swap.py", "TWO_BLOCK_SWAP_CONTROLS.json"),
+        (root / "defects/check_prefix_swap.py", "PREFIX_SWAP_CONTROLS.json"),
         (root / "trace/check_dirichlet_current.py", "DIRICHLET_CONTROL.json"),
         (root / "trace/check_critical_gates.py", "CRITICAL_GATE_CONTROLS.json"),
         (reports / "reviews/review_final_arithmetic.py", "FINAL_ARITHMETIC_REVIEW_CONTROLS.json"),

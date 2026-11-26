@@ -238,8 +238,8 @@ dependencies; no old project object supplied a proof. The six new modules
 contain 26 declarations. None imports the large written Diophantine or
 analytic conclusion as an axiom.
 
-All nine third-wave finite scripts passed complete-record comparisons in
-normal and optimized Python. Seven are primary controls and two are
+All ten third-wave finite scripts passed complete-record comparisons in
+normal and optimized Python. Eight are primary controls and two are
 separately written root reviewers. Explicit exceptions keep the new
 checks active under optimization. Source and record hashes are retained
 in [THIRD_CONTROL_REPLAY.json](THIRD_CONTROL_REPLAY.json). The exact
@@ -249,3 +249,10 @@ The sprint's output is therefore a stronger reviewed proposal, several
 rigorous finite certificates, and precise unproved global inequalities.
 The absence of escape and the absence of nontrivial ordinary cycles remain
 separate requirements for a full proof.
+
+The final common-prefix transposition extension was separately reconstructed
+by root and the cycle reviewer. Its 480,300 gain-eligible tuples were checked
+with independent rational arithmetic, and its published integer control was
+replayed in both Python modes. The finite reduction is written, not a new
+Lean theorem. The gate-height identity and cycle factor allocation receive
+the separate scope discussion in [the closing checks](../../research/unconventional-20261126/CLOSING_CHECKS.md).
