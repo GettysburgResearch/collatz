@@ -1,0 +1,103 @@
+{
+  "scope": "First-wave gate/capacity lane. Read-only by agreement, publication delegated to root. Source inspection of relevant portions is distinct from rebuilding a dependency or verifying an entire PR. Two prior Fourier-rigidity sections were consulted as novelty controls.",
+  "own_files_sha256": {
+    "EARLY_GATE_BACKGROUND.md": "0951adb46c8b6520588c8b4601ba114c3a4e495b501014564cca338894acd3cf",
+    "GRADE_GATE_LEAKAGE.md": "ed4786792aa2049225e7c1ff17a8ba6c4bbc26f4b521ff8637ea1afa2180fcd9",
+    "GateDyadicMoment.lean": "5a5cc0a00acdf85d9cb34baf6573c58ed52c9905c43a8c5bfdca8b24bf9c2d20",
+    "gate_background_controls.py": "3890c0a7998e24204b972a125ad9472d416a48343988c96d5d16b21d5b863133",
+    "GATE_BACKGROUND_CONTROLS.json": "51b95f912f1b6f06b552916fc732bef710982722e9879eba5d989af5c62c67d7",
+    "GRADE_RECURRENCE.md": "aa4f54682d82a9d7108a5f192bf62b4cff9792beeb020f6fe74bb5fbfbffac2d",
+    "ADAPTIVE_WINDOW_POSTERIOR.md": "6ff79fd2ee3fb4b283010a5043524a1b58ea2f39236d3840b81194a89083e386",
+    "BALANCED_GATE_BLOCKS.md": "1d0570ca7d1668963e90c4b6527b7b5ce4834a0829bd64d317c25b30524a19f1",
+    "GateMergeCarry.lean": "63d31472d54d91fb3c2967095cac46cd9acf0ff7d11098796d73f55577799a34"
+  },
+  "repository_sources": [
+    {
+      "pr": 200,
+      "commit": "ad70a3b831867cb8a74d402a2a1abdc419f5a09b",
+      "inspected_paths": {
+        "AGENTS.md": "638d19a3adabf5e83dd1113473ffb3632f92553b",
+        "README.md": "f238d85aeacee6bf264526a7a7e1f4aea1aaccf6",
+        "docs/RESEARCH_MAP.md": "d9127b7da910783fc937c8d68ba545651f7acf43",
+        "research/integrated/README.md": "45df5ea2e42c6a233193bfe6b5cd7f4b72559046",
+        "research/integrated/ERRATA.md": "e9b3e919a894170c88149e173fc20b846e6dba8f",
+        "research/unconventional-20261126/FINAL_SPRINT.md": "c9827a8433fedd4f8bd97ee4f77ad0c48fa16b2f",
+        "research/unconventional-20261126/CLOSING_CHECKS.md": "6adfd32052d3e0ced21a1c7d8679f8274743df05",
+        "research/unconventional-20261126/trace/CRITICAL_EXIT_GATES.md": "c409217fe7c6c3577329c8667c1c49b88c283a4e",
+        "research/unconventional-20261126/trace/HEIGHT_GATE_TELESCOPING.md": "b441a2c09b934d4b890dbb9fb960bfb6fbde13c1",
+        "research/unconventional-20261126/trace/ANNULAR_ESCAPE_CURRENT.md": "fd4cd55010936ae11127cd3758fe7899c37e0b40",
+        "research/unconventional-20261126/trace/DIRICHLET_CHARGE.md": "159267447f788355bbba260115a81ab1bc0a8656",
+        "research/unconventional-20261126/trace/REFLECTED_PRESSURE.md": "8908ed44b2b812d7ba5c201848f1a9fef51d9faa",
+        "research/unconventional-20261126/trace/ENTRANCE_AND_INDEX.md": "d401241aa46b426bb4ed0cb31998a2e90da8a734",
+        "research/unconventional-20261126/trace/FINITE_ANNULAR_MAXIMUM.md": "d274e475d7f82c8230d55e408c0bb65396677f07",
+        "research/regularity-rigidity-20261124/continuation/MACROSCOPIC_RIGIDITY.md": "55686b131b504c4efd0a39e938438a0f5ede0f0b",
+        "research/regularity-rigidity-20261124/global-trace-20261125/FOURIER_RIGIDITY.md": "e0f1c0e798058a05787a04b60edbc0d23dc0c0ea"
+      }
+    },
+    {
+      "pr": 201,
+      "commit": "21bed7ac2b1b1bb4baf0f6cabd53f8b9dd11b58a",
+      "inspected_paths": {
+        "research/unconventional-20261126/CLOSING_AUDIT.md": "d88a66ec0261319c4e4349d5674bb4b6aaffbea3",
+        "research/unconventional-20261126/operator/GATE_ARITHMETIC.md": "eda1824a214984a6aa176c409145b050d75d923d",
+        "research/unconventional-20261126/operator/IMPEDANCE.md": "0e7f0004ce7adfb12bd432d81c1b9e041e4c949f",
+        "research/unconventional-20261126/operator/GATE_SUSPENSION.md": "08fe6c1fcc8c76c7ba01503efb23d33a58daec72",
+        "research/unconventional-20261126/operator/GATE_LOWER.md": "61bdb9a6be706114b96cb7adb5582d85e2ca2d4c",
+        "research/unconventional-20261126/operator/ANNULAR_TRANSPLANT.md": "a86029022d77fe9cc4085419de7a232a00b4ef18",
+        "research/unconventional-20261126/operator/ROUGH_LOG_GATES.md": "0f052c676788da73d2ba8907edd12f38c74d2fc7",
+        "research/unconventional-20261126/operator/WEIGHTED_BOUNDARY.md": "7ac49aed22ed90c5fdf36a76a33c2d36d4e26ec1",
+        "research/unconventional-20261126/renewal/GATE_PROXIMITY.md": "67b48b7583bbc9df73dbb1a27943ee952f6bb0c9",
+        "research/unconventional-20261126/renewal/LOG_HEIGHT_MODEL.md": "36758c1b3ab3dc19e70b2905c3b5689edbd1a8a3",
+        "research/unconventional-20261126/renewal/ENTROPY_FIBERS.md": "39e089140f420a100f270c9a9a632fd4a19d0ca1"
+      }
+    },
+    {
+      "pr": 193,
+      "commit": "25f5462e2c43feea65760884f7ea8f53576fbc18",
+      "inspected_paths": {
+        "research/astra-unconventional-20261126/CLOSING_PROPOSAL.md": "40c2678c31ec6b46a506bc4f8077105a8596d983",
+        "research/astra-unconventional-20261126/global/COLLISION_ENERGY.md": "24b57d05e416ba06b6c576f6e3b5a6a708a3462f",
+        "research/astra-unconventional-20261126/boundary/COLLISION_SOURCE.md": "314f44e58afbb713b11d03016b25bb9bbea82cfd",
+        "research/astra-unconventional-20261126/arithmetic/DYADIC_INCREMENT.md": "485fb1e1f9b59ec1b3f065783a7652d4b2b30c7e",
+        "research/astra-unconventional-20261126/global/POSTERIOR.md": "251f2bb23b600c87f65d014c8bb2a7f4dbaa3fcb",
+        "research/astra-unconventional-20261126/boundary/TRACE_PROFILE.md": "6835ed9b9dec4fe5a6600d6f2a7181d5cbd78243",
+        "research/astra-unconventional-20261126/global/README.md": "4978fafee64f233d3cc2b7d96774810c65dca75c",
+        "research/astra-unconventional-20261126/arithmetic/SPATIAL_WINDOWS.md": "e98d4b188cf15ed1dbc103812ec1a0c4f2fe43d5"
+      }
+    }
+  ],
+  "head_diffs_inspected": {
+    "21bed7ac2b1b1bb4baf0f6cabd53f8b9dd11b58a": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+    "25f5462e2c43feea65760884f7ea8f53576fbc18": "1d211b2b2ae10cba5e4d79522cd7f6ec5b987d69"
+  },
+  "outside_sources": {
+    "x1xhlol/collatz-two-coordinate-obstruction@a7275d5a73814d3d9a400c6fe6577de9542b03a3": {
+      "paper/tao-basin-densities.tex": "63ca82653986b0dfa4c54bac17ed80199b806448",
+      "formal-periodic-census/source/GaoShortcutBridge.lean": "a2aa84bb6f1e9ad92080bbb28ecc5c9920d4787e",
+      "formal-periodic-census/source/Martas.lean": "b8d834332ef59f3583d94360c91555dca08f2d0f",
+      "formal-periodic-census/source/BasinAdjacentVariation.lean": "75008344222de2e83d86f21e0beeb5c1df03ccf1",
+      "formal-periodic-census/README.md": "2ece7f0b57991986370d3ccce3addedb6a504b1e",
+      "formal-periodic-census/bundle-manifest.json": "f9fa5a1aa69d9d4cb63dd16e2abffd86695fa36b"
+    },
+    "openai/math@3344da59991ed94f9ba711217b29c1d760badfa6": {
+      "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/windows.tex": "15710b44105c1f63dc2421e2af6a2947867429a6",
+      "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/sections/types.tex": "94e53ade666953db6fe366d94c968e65f0a5e8f1"
+    },
+    "Assani": "Studia Mathematica 275 (2024) 249–261; DOI 10.4064/sm230913-14-12. Compared finite invariant-measure conditions, using a direct elementary proof in our note."
+  },
+  "lean": {
+    "revision": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "flags": [
+      "-j1",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true"
+    ],
+    "external_analytic_chain": "source-inspected, not rebuilt",
+    "compiled_local_theorems": {
+      "GateDyadicMoment": 7,
+      "GateMergeCarry": 2
+    }
+  },
+  "python_controls": "Default and optimized Python both reproduce the stored JSON byte for byte. Six finite X, full dyadic shells at clocks 0..10, first-strict-ladder rational computation through clock 1250."
+}

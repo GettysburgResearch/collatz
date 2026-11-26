@@ -1,0 +1,54 @@
+{
+  "compact": {
+    "coprime_window": 15488,
+    "mixed": 11376,
+    "negative_residual": 13089,
+    "noncoprime_window": 11304,
+    "nonresonant": 25154,
+    "one_sided": 15416,
+    "positive_residual": 13703,
+    "primitive_rational_cycles": 1204,
+    "resonant": 1638,
+    "single_exception": 90,
+    "unit_lift_checks": 1275,
+    "windows": 26792
+  },
+  "two_switch": [
+    {
+      "a": 41,
+      "b": 65,
+      "clock_gcd": 35,
+      "discrepancy_span_times_odd_period": 32760,
+      "exceptions_at_unit_lag": 94,
+      "native_period": 2275,
+      "odd_period": 1435,
+      "predicted_limit_denominator": 35,
+      "predicted_limit_numerator": 11,
+      "q": 5,
+      "r": 7,
+      "reduced_denominator_bits": 709,
+      "reduced_denominator_sha256_unsigned_big_endian": "3b9da3ae3546b37fae9183f95cdbdbac3d40ab5fbfa520f866dc6db98caa9394",
+      "resonant_exception_count": 14,
+      "resonant_largest_spacing": 164,
+      "whole_denominator_bits": 2274
+    },
+    {
+      "a": 41,
+      "b": 65,
+      "clock_gcd": 55,
+      "discrepancy_span_times_odd_period": 51480,
+      "exceptions_at_unit_lag": 150,
+      "native_period": 3575,
+      "odd_period": 2255,
+      "predicted_limit_denominator": 55,
+      "predicted_limit_numerator": 15,
+      "q": 5,
+      "r": 11,
+      "reduced_denominator_bits": 975,
+      "reduced_denominator_sha256_unsigned_big_endian": "3e1b3b721f794fbca47307f40d7426a81f0087e34baba1eefb8ed65cb6e3b39d",
+      "resonant_exception_count": 22,
+      "resonant_largest_spacing": 164,
+      "whole_denominator_bits": 3574
+    }
+  ]
+}

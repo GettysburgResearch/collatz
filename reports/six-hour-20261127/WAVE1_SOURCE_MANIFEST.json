@@ -1,0 +1,182 @@
+[
+  {
+    "path": "research/six-hour-20261127/gates/EARLY_GATE_BACKGROUND.md",
+    "sha256": "0951adb46c8b6520588c8b4601ba114c3a4e495b501014564cca338894acd3cf",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/GRADE_GATE_LEAKAGE.md",
+    "sha256": "ed4786792aa2049225e7c1ff17a8ba6c4bbc26f4b521ff8637ea1afa2180fcd9",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/GRADE_RECURRENCE.md",
+    "sha256": "aa4f54682d82a9d7108a5f192bf62b4cff9792beeb020f6fe74bb5fbfbffac2d",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/ADAPTIVE_WINDOW_POSTERIOR.md",
+    "sha256": "6ff79fd2ee3fb4b283010a5043524a1b58ea2f39236d3840b81194a89083e386",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/BALANCED_GATE_BLOCKS.md",
+    "sha256": "1d0570ca7d1668963e90c4b6527b7b5ce4834a0829bd64d317c25b30524a19f1",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/GateDyadicMoment.lean",
+    "sha256": "5a5cc0a00acdf85d9cb34baf6573c58ed52c9905c43a8c5bfdca8b24bf9c2d20",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/GateMergeCarry.lean",
+    "sha256": "63d31472d54d91fb3c2967095cac46cd9acf0ff7d11098796d73f55577799a34",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/gate_background_controls.py",
+    "sha256": "3890c0a7998e24204b972a125ad9472d416a48343988c96d5d16b21d5b863133",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/gates/GATE_BACKGROUND_CONTROLS.json",
+    "sha256": "51b95f912f1b6f06b552916fc732bef710982722e9879eba5d989af5c62c67d7",
+    "source_agent": "sixhour-gate-capacity",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/cycles/TORIC_CYCLE_WINDOWS.md",
+    "sha256": "8ac0504105e0c5912a0d8820c1a3af06a50dc7185053d18675c0bdc5f39ee246",
+    "source_agent": "sixhour-cycle-geometry",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/cycles/ToricWindow.lean",
+    "sha256": "b003889375b87b75ac7bd268b21daf9e099fa841a61f9cc670f64037cf535368",
+    "source_agent": "sixhour-cycle-geometry",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/cycles/check_toric_windows.py",
+    "sha256": "4384fde4cde9ba123fa521fc482a883542662c9cfd3cf1c7b440045d9c12c76d",
+    "source_agent": "sixhour-cycle-geometry",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/cycles/TORIC_WINDOW_CONTROLS.json",
+    "sha256": "f12f4ed76f2390c93b543ac78d7a2cee45d204197bc2e8c06d4b39415131bf4b",
+    "source_agent": "sixhour-cycle-geometry",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/MONOTONE_BLOCK_DURATION.md",
+    "sha256": "514c2352e0c6ddf181eea277c5b92b42e72cdb8d942f78c21641a37363ded868",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/UNIFORM_KEY_CAP.md",
+    "sha256": "faff691cc8b157b672b0fed64453159ca5c4675ae82c92d0f455ffe447c5f83d",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/ACTUAL_WORD_COMPENSATION.md",
+    "sha256": "a41293f7e944b8097f582f1d26346d09bb1bc36a3c2b38098cc5fb293612facd",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/MultiBlockCompensation.lean",
+    "sha256": "83e91b580da2e897bd03d7f41cb6e792f654bd63e9159a373b36d2d1eb0a8b41",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/OrdinaryCountedBarrier.lean",
+    "sha256": "96cfd84b3b3be705070af314a2f2cf62926bd57246002c5a397ebf57c3cd3c63",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/check_multi_block.py",
+    "sha256": "684d8ea68e4b8ca569626a744b7065f505b8f3cb027cc728b593f17295c68f30",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/MULTI_BLOCK_CONTROLS.json",
+    "sha256": "be5875ab1a8014d21fa0a9be78af234fbc2b5200bf8e6f99a6e3f4f5c49d9b84",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/NEGATIVE17_EXACT_MINIMA.md",
+    "sha256": "1d036bb16dd0623a95d09124d8e88ec06d071a8981ba5d126ff92eaa175fed60",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/check_negative17_minimum.py",
+    "sha256": "98e2f10e62100ff462d32e80b67568ddf4d318dcbda8618aa71427f9d1ecaa74",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/NEGATIVE17_CONTROLS.json",
+    "sha256": "33f56524935ff7a8b6bce35cf18b3341609a247f5b6e3b0f44d609daa3395e3f",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/ReflectedCycleMinimum.lean",
+    "sha256": "9e78964fec3ea9cc549f08291d2b1bc3bbdcbdb283364b38d6aa53ab78d4e3a6",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/SevenPhaseMinimum.lean",
+    "sha256": "db030a2c0a3e065c7cfab0905ed227d7df1828764f9a36fad7683a87b1517511",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/SevenPhaseOddMap.lean",
+    "sha256": "283b522e648cb64a20de903bc9cc16e3393a1ebfe0326e56070f4b3c20c233c6",
+    "source_agent": "sixhour-pointwise-bridge",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "reports/six-hour-20261127/INVERSE_MINIMUM_REVIEW.md",
+    "sha256": "254c77612e5a0f30b7eb673feef12818aff6d8f751e4148c4e6fba7b39864bfa",
+    "source_agent": "sixhour-inverse-minimum-audit",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/independent_audit.py",
+    "sha256": "a4ee5a995776969af3e469c044add98bcefca68b7de9576d0f0545b6a8ffa008",
+    "source_agent": "sixhour-inverse-minimum-audit",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "research/six-hour-20261127/pointwise/INDEPENDENT_MINIMUM_CONTROLS.json",
+    "sha256": "a8ad0ebf1a779e07d810ea55da31fdaec56bc44fd46aec4f5c3f985a1117c913",
+    "source_agent": "sixhour-inverse-minimum-audit",
+    "scope": "frozen author file, independently reconstructed where specified in root review"
+  },
+  {
+    "path": "reports/six-hour-20261127/TORIC_INDEPENDENT_REVIEW.md",
+    "sha256": "82402958eabf5662d1fbbb68d4705d0564f8fdc8e614b4751306a2eab318023f",
+    "source_agent": "sixhour-toric-audit-global",
+    "scope": "frozen independent mathematical review"
+  }
+]
