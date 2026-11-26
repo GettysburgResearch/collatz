@@ -1,0 +1,518 @@
+{
+  "schema": "collatz-astra-unconventional-replay/v1",
+  "started_utc": "2026-11-26T19:51:26.752548+00:00",
+  "scope": "All new public Lean declarations and specified finite controls; not the infinite written arguments or external range verification",
+  "commit": "7ebc9ea05655875fdc27469742e725aa00483515",
+  "tree": "0eba3671b112711883ca29ea1a1dc1b0ff313bcf",
+  "tracked_file_count": 1092,
+  "sources_before": {
+    "research/astra-unconventional-20261126/README.md": "ad7b6ab682dfea49a5a2c024af5aa30669dea008553167cea0d81787c65c8f9b",
+    "research/astra-unconventional-20261126/adelic/CHARACTERS.md": "7194c76bc2d47dfd9d75812e85d93391b1eb90ad42e2d68aa4174f5f6deb8772",
+    "research/astra-unconventional-20261126/adelic/GROWTH.md": "88e121bf76b790d3be963a81b9a759eeaf725a1fddcb5a652212af3e90eef1e2",
+    "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean": "14e577369f3f0d9613e3e26f37ec894785ae0a7143a5d5800453b371fdf1052b",
+    "research/astra-unconventional-20261126/adelic/README.md": "8c83afb93e53f44cb98e610103bac69023ffa9b786a0a3dbe730d78b5300d0b5",
+    "research/astra-unconventional-20261126/adelic/ShortRelations.lean": "4c9d2cd37bc3f345eac70fef59e262449345abc4c881ac718954cc9dd36fe947",
+    "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean": "7e9755c0f628c4d2fa56c85ba9f0b82f5af61cf69b2615867e0c0a70b89c221f",
+    "research/astra-unconventional-20261126/adelic/check.py": "f1c96f1ed8407b9358f30bf2b35f70416c7c71efd89f9f455e061ab30553fd53",
+    "research/astra-unconventional-20261126/descent/PAIRED.md": "3a3e918075c9229231cd79536107becdf9f76f6a2264a065b3877ae69a4ad082",
+    "research/astra-unconventional-20261126/descent/Portal.lean": "7a0a65dbc67f6cf52d28099a7cdaf83eeda2fe88e5684bdfc102bffbc377cc14",
+    "research/astra-unconventional-20261126/descent/README.md": "c83e182153e7633b448596ab415208dd8cee497b514d434147db8bd5cb9dea71",
+    "research/astra-unconventional-20261126/descent/check.py": "0a699c419ba7b529deaed1d69a7f453d185c9ac3385f132ca332eac9c1c16429",
+    "research/astra-unconventional-20261126/descent/portal.py": "36ad3995cf752cf46bd0a8449c3a87a6c2f205114146343cf7c7ac4c5b5607ab",
+    "research/astra-unconventional-20261126/descent/returns.py": "0b207907535a24e1a7aacecd458212b6766f4607bb3ddc006ddc8d880743ac6d",
+    "research/astra-unconventional-20261126/operator/README.md": "aa51cfe5ba46a51907f799aa8576753bd4e48e348a980848bbb0899b4da43b39",
+    "research/astra-unconventional-20261126/operator/WeightedTransport.lean": "5ed8bee6f02d14fc5b41a9c534961af6073ac0c5ea9562b6d0b5c7a6cece1f13"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean and Mathlib dependency objects reused; every project dependency and new module rebuilt in a new empty object directory",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.065,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-adelic-MixedSquareGrid",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects/MixedSquareGrid.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.823,
+      "stdout_sha256": "a716779385af54bcab50c53ae58e83356cd6be573324e5900510cdd07527b225",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "da48c219ec11f4b290b264e3421a9452cdae6a476a5bf2ac3ce42cc7570d0111"
+    },
+    {
+      "label": "lean-adelic-ShortRelations",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects/ShortRelations.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/adelic/ShortRelations.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.786,
+      "stdout_sha256": "a0590bc21fbd0f2c7507fb19b5f5d8c431874442baa3b86433f0904fb589615b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f7e2c0f8105736247ac13f3dd5601eac67cfe9d131cd7cb81b46356533d09d60"
+    },
+    {
+      "label": "lean-adelic-SquareclassDescent",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects/SquareclassDescent.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/adelic/SquareclassDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.679,
+      "stdout_sha256": "1f5c851359c89a61ae231604ccfc0d421776644c9c3c29dcb882914e36d792af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "dfdf03147035ce009374390a3c22fbf59a6e75bc2f15f6bd14dfb8f30d0ad0a7"
+    },
+    {
+      "label": "lean-descent-Portal",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects/Portal.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/descent/Portal.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.615,
+      "stdout_sha256": "ed6205c9a86f0d7421db689b788f969bc6247a112bef49f3199d3dc5edda4916",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "06d8aaffbb847a0f35af7b9089f82ea766005e395e87894b4cd6270c4ac4586f"
+    },
+    {
+      "label": "lean-operator-WeightedTransport",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/objects/WeightedTransport.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/operator/WeightedTransport.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.339,
+      "stdout_sha256": "7c2ec341933d48773d1f0cf5065ce98e7f3bff469cef77589d957b2bc55a2790",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "a705c244ee89a19062e9fab983d6d48525379e84968a667f891e43eb2068c830"
+    },
+    {
+      "label": "python-adelic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/adelic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.605,
+      "stdout_sha256": "29cc2aef33e7f338057cc8417bbf88fda5aa19044b9ea4e71aac9532f18889d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-adelic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/adelic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.479,
+      "stdout_sha256": "29cc2aef33e7f338057cc8417bbf88fda5aa19044b9ea4e71aac9532f18889d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.732,
+      "stdout_sha256": "79838959d8e9ae90ff51b4b650515ae3ebf99cc07b468fa1ace22350cb05ab06",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-first/research/astra-unconventional-20261126/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.475,
+      "stdout_sha256": "79838959d8e9ae90ff51b4b650515ae3ebf99cc07b468fa1ace22350cb05ab06",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--regressions",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-initial-replay/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 6.699,
+      "stdout_sha256": "9de31f8e33f306f99df5f67574aa96951f00051048bf9e005e4be4f38052887e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.single_factor",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.square_root_vanishes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.ternary_grid_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.shifted_grid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/ShortRelations.lean",
+      "declaration": "Collatz.ShortRelations.short_relation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/ShortRelations.lean",
+      "declaration": "Collatz.ShortRelations.protected_weight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.physical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.next_odd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.clock_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.growth_carry",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.square_after_growth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.local_descent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.reaches_one_of_dependent_growth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.dyadic_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.dyadic_prefix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.run_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.odds_add",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.halves",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.physical_envelope",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.prefix_lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.paired_cusp",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.decode_congruence",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.decode",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.peak",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.boundary_atom",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.path_boundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.finite_collision",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.cycle_primitive",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.eventual_hits",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.positive_cycle_contracts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.ordinary_cycle_primitive",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-unconventional-20261126/adelic/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_comparison": {
+    "files": 9114,
+    "mismatches": 0,
+    "source_manifest_sha256": "19356a0bbc13f8a6c54ce09ba884b03f2e51aa238e8b83c304d77ac7d6045359",
+    "fresh_checkout": "/workspace/scratch/ae8b5ba301f1/mathlib-provenance",
+    "cached_source_tree": "/workspace/scratch/ed89426b1007/verified-mathlib"
+  },
+  "new_module_count": 5,
+  "project_dependency_count": 0,
+  "sources_after": {
+    "research/astra-unconventional-20261126/README.md": "ad7b6ab682dfea49a5a2c024af5aa30669dea008553167cea0d81787c65c8f9b",
+    "research/astra-unconventional-20261126/adelic/CHARACTERS.md": "7194c76bc2d47dfd9d75812e85d93391b1eb90ad42e2d68aa4174f5f6deb8772",
+    "research/astra-unconventional-20261126/adelic/GROWTH.md": "88e121bf76b790d3be963a81b9a759eeaf725a1fddcb5a652212af3e90eef1e2",
+    "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean": "14e577369f3f0d9613e3e26f37ec894785ae0a7143a5d5800453b371fdf1052b",
+    "research/astra-unconventional-20261126/adelic/README.md": "8c83afb93e53f44cb98e610103bac69023ffa9b786a0a3dbe730d78b5300d0b5",
+    "research/astra-unconventional-20261126/adelic/ShortRelations.lean": "4c9d2cd37bc3f345eac70fef59e262449345abc4c881ac718954cc9dd36fe947",
+    "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean": "7e9755c0f628c4d2fa56c85ba9f0b82f5af61cf69b2615867e0c0a70b89c221f",
+    "research/astra-unconventional-20261126/adelic/check.py": "f1c96f1ed8407b9358f30bf2b35f70416c7c71efd89f9f455e061ab30553fd53",
+    "research/astra-unconventional-20261126/descent/PAIRED.md": "3a3e918075c9229231cd79536107becdf9f76f6a2264a065b3877ae69a4ad082",
+    "research/astra-unconventional-20261126/descent/Portal.lean": "7a0a65dbc67f6cf52d28099a7cdaf83eeda2fe88e5684bdfc102bffbc377cc14",
+    "research/astra-unconventional-20261126/descent/README.md": "c83e182153e7633b448596ab415208dd8cee497b514d434147db8bd5cb9dea71",
+    "research/astra-unconventional-20261126/descent/check.py": "0a699c419ba7b529deaed1d69a7f453d185c9ac3385f132ca332eac9c1c16429",
+    "research/astra-unconventional-20261126/descent/portal.py": "36ad3995cf752cf46bd0a8449c3a87a6c2f205114146343cf7c7ac4c5b5607ab",
+    "research/astra-unconventional-20261126/descent/returns.py": "0b207907535a24e1a7aacecd458212b6766f4607bb3ddc006ddc8d880743ac6d",
+    "research/astra-unconventional-20261126/operator/README.md": "aa51cfe5ba46a51907f799aa8576753bd4e48e348a980848bbb0899b4da43b39",
+    "research/astra-unconventional-20261126/operator/WeightedTransport.lean": "5ed8bee6f02d14fc5b41a9c534961af6073ac0c5ea9562b6d0b5c7a6cece1f13"
+  },
+  "finished_utc": "2026-11-26T19:51:55.186148+00:00"
+}
