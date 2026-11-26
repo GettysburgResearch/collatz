@@ -1,0 +1,1917 @@
+{
+  "schema": "collatz-unconventional-axiom-audit/v1",
+  "scope": "All explicitly declared public theorems in the rebuilt local dependency chain; no claim that the open proposition is proved",
+  "module_count": 95,
+  "baseline_public_count": 253,
+  "new_public_count": 150,
+  "combined_public_count": 403,
+  "new_mathematical_modules": 38,
+  "new_audit_modules": 1,
+  "standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "only_standard_axioms": true,
+  "all_expected_public_names_reported": true,
+  "public_declarations": {
+    "AdelicParent.cylinder_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdelicSwitch.cylinder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdelicSwitch.power_precision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdelicSwitch.prepare": [
+      "Quot.sound",
+      "propext"
+    ],
+    "AllDepthCenter.cutoff_trap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AllDepthCenter.denominator_growth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AllDepthCenter.inverse_band": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AllDepthCenter.no_congruent_merger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CenterPhaseObstruction.limiting_query_impossible": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CenterPhaseObstruction.parent_phase_clock": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CenterPhaseObstruction.smaller_never_hits": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ClosingProposal.collatz_from_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ClosingProposal.collatz_iff_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ClosingProposal.residual_survives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.FreshAscentShadow.at_signed_fixed_point": [
+      "propext"
+    ],
+    "Collatz.FreshAscentShadow.endpoint_unique": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.FreshAscentShadow.first_fresh_parent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.FreshAscentShadow.shift_path": [
+      "propext"
+    ],
+    "Collatz.FreshAscentShadow.signed_parent_gt_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.carry_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.carry_plus_clock_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.clock_difference_coprime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.closing_matches": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.disjoint_powers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.fixed_plane_late": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.fixed_plane_unique_late": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.grade_le_clock": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.one_zero_denominator_dvd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.ordinary_row": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.shifted_row": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.RecordPrecision.zero_shift_parameter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.negativeOdd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.negativePrefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.negativeShape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.oddCount_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.physical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.positiveDeadline": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.realize": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.rescueMinusOne": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzAllMersenneCarries.selectEarlier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.distinct_at_positive_shadow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.earlierOddQuotients": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.firstUnitExit": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.realWord_above": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.secondUnitExit": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzCheckpointUnitExit.twoOrdinaryExits": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFiniteHorizon.no_uniform_native_merger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorLeastParent.leastExcluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorLeastParent.oldRows": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorLeastParent.parentBasin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorLeastParent.rowArithmetic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorRescue.fixedCofactorFamily": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzFixedCofactorRescue.shortMerger": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneFirstBad.exact_first_bad": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneFirstBad.tripled_previous": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneParity.ascent": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneParity.even_mersenne_basin": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneParity.even_mersenne_meeting": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneParity.hits_atClock": [],
+    "CollatzMersenneRescueCylinder.cylinder_first_bad_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneRescueCylinder.cylinder_meeting": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneRescueWords.ordinary_meet": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.checkpoint_exponents": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.exclude_sixteenth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.five_endpoint": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.no_negative_rational_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.seventeen_endpoint": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzMersenneTwoCheckpoints.two_bad_checkpoints": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzOppositeArm.exponent_family": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzOppositeArm.family_query": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzOppositeArm.query_progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzQuantitativeReturn.bounded_return": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzRankThree.rank_three_family": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.collatz_iff_deep_reverse_binary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.collatz_iff_restricted_adjacent": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary_restricted": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.deep_reverse_generates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.reverse_binary_generates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzReverseBasin.reverse_generates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzSignedSeventeen.all_reflected_paths": [
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzTwoOdd.least_defect_not_two_odd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzTwoOdd.two_odd_progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzTwoOdd.two_odd_unbounded": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DefectClockFloor.least_1024": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DefectClockFloor.least_all_clocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DefectClockFloor.least_not_simultaneous_shadow_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DefectClockFloor.least_not_ternary_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DefectClockFloor.source_progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DelayedTowerMerger.delayed_merger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DifferentCycleAnchors.align": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DifferentCycleAnchors.height_debt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DifferentCycleAnchors.two_anchors": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.all_midpoints_located": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.all_routes_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.checkedSound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group0_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group0_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group0_proper": [],
+    "DirectedEleven.group10_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group10_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group10_proper": [],
+    "DirectedEleven.group11_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group11_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group11_proper": [],
+    "DirectedEleven.group12_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group12_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group12_proper": [],
+    "DirectedEleven.group13_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group13_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group13_proper": [],
+    "DirectedEleven.group14_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group14_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group14_proper": [],
+    "DirectedEleven.group1_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group1_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group1_proper": [],
+    "DirectedEleven.group2_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group2_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group2_proper": [],
+    "DirectedEleven.group3_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group3_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group3_proper": [],
+    "DirectedEleven.group4_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group4_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group4_proper": [],
+    "DirectedEleven.group5_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group5_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group5_proper": [],
+    "DirectedEleven.group6_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group6_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group6_proper": [],
+    "DirectedEleven.group7_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group7_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group7_proper": [],
+    "DirectedEleven.group8_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group8_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group8_proper": [],
+    "DirectedEleven.group9_checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group9_covered": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.group9_proper": [],
+    "DirectedEleven.hit_at_ten": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.localize": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.proper_rows": [
+      "propext"
+    ],
+    "DirectedEleven.runSound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.ten_tree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DirectedEleven.validTree_hits": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "DyadicPowerPrecision.precision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProgressProposal.collatz_from_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProgressProposal.collatz_iff_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProofProposal.collatz_from_proposal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProofProposal.collatz_iff_higher_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProofProposal.quantitative_return": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProofProposal.two_odd_layer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinalProofProposal.upper_has_two_odds": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedRankDeadlines.no_rank_deadline": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedTowerReflection.convergent_control": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedTowerReflection.defect_delay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedTowerReflection.powers_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedTowerReflection.reflect_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedTowerReflection.returning_multiplier": [
+      "Quot.sound",
+      "propext"
+    ],
+    "GuardedResidueCover.census": [],
+    "GuardedResidueCover.least_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseBudget.equation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseBudget.one_class": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseBudget.quadratic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseBudget.root_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseMultiplicity.legal_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InverseMultiplicity.numerator_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "InversePhase.all_phase_gate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.dyadic_labels_ne": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.edge_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.exceptions_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.grid_census": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.iterate_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.label_implies_linked": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.lift": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.linked_iff_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.shadow_residue": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LiftedLattice.typical_linked_iff_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LocalResampling.iterate_color": [],
+    "LocalResampling.k_outside_every_component": [],
+    "LocalResampling.linked_color": [],
+    "LocalResampling.meet_color": [],
+    "LocalResampling.query_stride": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.anchor_lift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.band_peaks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.laps": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.normalized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.normalized_at": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.ordinary_gate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.rotation_multiple": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.six_peaks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTower.terminal_lift": [
+      "Quot.sound",
+      "propext"
+    ],
+    "LogTowerData.anchors": [
+      "propext"
+    ],
+    "LogTowerData.finite_unit": [
+      "propext"
+    ],
+    "LogTowerData.terminal": [
+      "propext"
+    ],
+    "MersenneBarrier.mersenne_family": [
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneBarrier.mersenne_prefix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneBarrier.three_odd_family": [
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneBarrier.three_odd_upper": [
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneProgressCases.cylinder_closure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneProgressCases.least_defect_not_cylinder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneProgressCases.least_defect_not_sixteenth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneProgressCases.sixteenth_closure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneReturnKernel.forty_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneTwoCenter.least_excluded": [
+      "Quot.sound",
+      "propext"
+    ],
+    "MersenneTwoCenter.progress": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.all_earlier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.all_smaller": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.full_clock": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.full_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.minus_one_grade": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.not_perfect_power": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.pointwise": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.prepeak_clock": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.progression": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.representative_form": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeExponentAddress.separated_endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "NegativeProfile.ordinary": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NonunitExit.denom_iter": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NonunitExit.directed_successor": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NonunitExit.physical_chain": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NonunitExit.shadow_certifies": [
+      "Quot.sound",
+      "propext"
+    ],
+    "NonunitExit.shadow_lift": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.bad_clock_1024": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.bad_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.bad_tower_clock_1024": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.bad_upper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.linear_lower": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.odd_clock_upper": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.run_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OddClockFloor.small_good": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrdinaryWordRealization.lower": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OrdinaryWordRealization.powerFinish": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OrdinaryWordRealization.realization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OrdinaryWordRealization.upper": [
+      "Quot.sound",
+      "propext"
+    ],
+    "PerfectPowerParents.excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositiveWordDescent.basinRun": [],
+    "PositiveWordDescent.delayed_tail_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositiveWordDescent.dense_progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositiveWordDescent.even_tail_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositiveWordDescent.hitsRun": [],
+    "PositiveWordDescent.progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.arbitrary_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.cofinal_exclusions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.cofinal_pumps": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.least_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.physical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.repeated_laps": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RationalCenterPump.smaller": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Residue17Closure.collatz_iff_reverse_seventeen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Residue17Closure.localize_seventeen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SegmentTrace.correct": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryDigits.cofinal_residue": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryDigits.digit_displacement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryDigits.finite_screen": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryDigits.full_block": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryDigits.index_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.shadow_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.three_lifts": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryRescue.shadow_parameter": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryRescue.simultaneous_shadow_rescue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ShadowTernaryRescue.ternary_row_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.basin_value": [],
+    "SignedCycleDilation.cycle_lifts": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.least_not_minus1183": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.lift": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.lift_value": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.minus1183": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.nat_orbit": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.no_least_of_pair": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SignedCycleDilation.paired": [
+      "Quot.sound",
+      "propext"
+    ],
+    "SourceProgressCases.collatz_from_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SourceProgressCases.collatz_iff_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SourceProgressCases.dense_closing_cases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SourceProgressCases.least_defect_not_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SourceProgressCases.tail_case_progress": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryPowerLift.cofinal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "TernaryPowerLift.period": [
+      "propext"
+    ],
+    "TowerLowerCone.block_endpoint_exclusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerLowerCone.clock_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerLowerCone.defect_clock_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerLowerCone.high_clock_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerLowerCone.high_tower_merger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerLowerCone.orientation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerSuffixSharp.exact_deadline": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TowerSuffixSharp.suffix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "UnboundedQueryProposal.collatz_from_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnboundedQueryProposal.collatz_iff_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnboundedQueryProposal.survivor_extends": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnconventionalProposal.collatz_from_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnconventionalProposal.collatz_iff_remaining": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnconventionalProposal.failure_has_wall": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnconventionalProposal.small_query_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnconventionalProposal.survivor_extends": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitResidueExchange.residue17_descends": [
+      "propext"
+    ],
+    "UnitResidueExchange.unit_one_exchange": [
+      "propext"
+    ],
+    "WallAffine.absorb": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallAffine.cell_pull": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallAffine.in_class": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallAffine.signed_lift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallAffine.solve_unit": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallAffine.two_slopes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallBank.eventually_no_81": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallBank.forbids": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallBank.reset_81": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallBank.sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDelay.merger_needs_clock": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDelay.missing_bit": [
+      "propext"
+    ],
+    "WallDelay.other_separations": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDelay.period18_separated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDelay.period18_unbounded_clocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDensity.chart_from_residue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDensity.period18_uniform": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDensity.same_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDensity.time_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDensity.universal_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDichotomy.alternating_or_eventual_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallDichotomy.ternary_or_breaks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallEscape.forces_escape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallEscape.positive_escape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallExamples.period12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallExamples.period18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallExamples.period4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallExamples.period8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallGeneral.address_eq": [
+      "propext"
+    ],
+    "WallGeneral.breaks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallGeneral.chart_arm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallGeneral.cross_clock": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallGeneral.phase_at": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallGeneral.signed_nat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallLinear.linear_depth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.bit": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.cancel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.cover": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.exp_unit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.exponential_merger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallOrbit.odd_power": [
+      "propext"
+    ],
+    "WallOrbit.paired": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.breaks_by": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.cross_clock_merge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.eventually_from_reset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.eventually_no_copies": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.from_copies": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.index_add": [],
+    "WallPeriodic.no_infinite_period": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.reset_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallPeriodic.split_twos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRational.grade_add": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRational.lap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRational.lift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRational.runD_add": [
+      "propext"
+    ],
+    "WallRefinement.child_eq": [
+      "propext"
+    ],
+    "WallRefinement.even_pair": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.exact_sparseSum": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.fixed_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.forbidden_even_run": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.fused_zero": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.index_eq": [
+      "propext"
+    ],
+    "WallRefinement.index_mixed": [
+      "propext"
+    ],
+    "WallRefinement.ones": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.propagated": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.propagated_run": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.run_fusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.source_difference": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.split_difference": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.thirteen_bit_cut": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.triple_four_edge": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallRefinement.twelve_bit_cut": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallShadow.block_eq": [
+      "propext"
+    ],
+    "WallShadow.paired_charts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallShifted.rotation_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallShifted.sampled": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallTernary.excludes_power_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallTernary.finite_floor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallTernary.rejects_ternary_word": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallTernary.ternary_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallUniform.after_mismatch": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallUniform.exponential_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallUniform.finite_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallUniform.paired_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallWheel.bank_merge": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallWheel.bank_spec": [
+      "propext"
+    ],
+    "WallWheel.wheel": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WallWords.eventual_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallWords.range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WallWords.read_blocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.excluded_progression": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.height": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.integral_shift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.least_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.three_digits": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "WideCenterPump.threshold": [
+      "propext"
+    ],
+    "WordRank.exactRankRow": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WordRank.finishRow": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WordRank.halves": [
+      "propext"
+    ],
+    "WordRank.liftPrefix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WordRank.oddsAdd": [
+      "propext"
+    ],
+    "WordRank.powOdd": [
+      "propext"
+    ],
+    "WordRank.runAdd": [
+      "propext"
+    ],
+    "WordRank.unitRun": [
+      "Quot.sound",
+      "propext"
+    ],
+    "WordRank.wordRow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "new_public_names": [
+    "AdelicSwitch.prepare",
+    "AdelicSwitch.power_precision",
+    "AdelicSwitch.cylinder",
+    "AdelicParent.cylinder_excluded",
+    "InverseBudget.equation",
+    "InverseBudget.one_class",
+    "InverseBudget.quadratic",
+    "InverseBudget.root_bound",
+    "InversePhase.all_phase_gate",
+    "InverseMultiplicity.legal_iff",
+    "InverseMultiplicity.numerator_unique",
+    "DyadicPowerPrecision.precision",
+    "LogTowerData.finite_unit",
+    "LogTowerData.anchors",
+    "LogTowerData.terminal",
+    "LogTower.rotation_multiple",
+    "LogTower.normalized",
+    "LogTower.normalized_at",
+    "LogTower.anchor_lift",
+    "LogTower.laps",
+    "LogTower.terminal_lift",
+    "LogTower.ordinary_gate",
+    "LogTower.band_peaks",
+    "LogTower.six_peaks",
+    "PerfectPowerParents.excluded",
+    "SegmentTrace.correct",
+    "NegativeProfile.ordinary",
+    "NegativeExponentAddress.minus_one_grade",
+    "NegativeExponentAddress.separated_endpoint",
+    "NegativeExponentAddress.all_earlier",
+    "NegativeExponentAddress.representative_form",
+    "NegativeExponentAddress.progression",
+    "NegativeExponentAddress.not_perfect_power",
+    "NegativeExponentAddress.all_smaller",
+    "NegativeExponentAddress.pointwise",
+    "NegativeExponentAddress.full_clock",
+    "NegativeExponentAddress.full_margin",
+    "NegativeExponentAddress.prepeak_clock",
+    "WallRefinement.child_eq",
+    "WallRefinement.index_eq",
+    "WallRefinement.index_mixed",
+    "WallRefinement.triple_four_edge",
+    "WallRefinement.ones",
+    "WallRefinement.even_pair",
+    "WallRefinement.run_fusion",
+    "WallRefinement.forbidden_even_run",
+    "WallRefinement.split_difference",
+    "WallRefinement.propagated",
+    "WallRefinement.propagated_run",
+    "WallRefinement.fused_zero",
+    "WallRefinement.exact_sparseSum",
+    "WallRefinement.source_difference",
+    "WallRefinement.twelve_bit_cut",
+    "WallRefinement.thirteen_bit_cut",
+    "WallRefinement.fixed_source",
+    "WallShadow.block_eq",
+    "WallShadow.paired_charts",
+    "WallWheel.wheel",
+    "WallWheel.bank_spec",
+    "WallWheel.bank_merge",
+    "WallPeriodic.cross_clock_merge",
+    "WallPeriodic.breaks_by",
+    "WallPeriodic.split_twos",
+    "WallPeriodic.no_infinite_period",
+    "WallPeriodic.index_add",
+    "WallPeriodic.from_copies",
+    "WallPeriodic.reset_bound",
+    "WallPeriodic.eventually_from_reset",
+    "WallPeriodic.eventually_no_copies",
+    "WallBank.sound",
+    "WallBank.forbids",
+    "WallBank.reset_81",
+    "WallBank.eventually_no_81",
+    "WallRational.runD_add",
+    "WallRational.grade_add",
+    "WallRational.lift",
+    "WallRational.lap",
+    "WallAffine.solve_unit",
+    "WallAffine.cell_pull",
+    "WallAffine.absorb",
+    "WallAffine.signed_lift",
+    "WallAffine.two_slopes",
+    "WallAffine.in_class",
+    "WallOrbit.odd_power",
+    "WallOrbit.bit",
+    "WallOrbit.cover",
+    "WallOrbit.cancel",
+    "WallOrbit.exponential_merger",
+    "WallOrbit.exp_unit",
+    "WallOrbit.paired",
+    "WallGeneral.address_eq",
+    "WallGeneral.phase_at",
+    "WallGeneral.chart_arm",
+    "WallGeneral.signed_nat",
+    "WallGeneral.cross_clock",
+    "WallGeneral.breaks",
+    "WallUniform.finite_bound",
+    "WallUniform.exponential_bound",
+    "WallUniform.paired_bound",
+    "WallUniform.after_mismatch",
+    "WallWords.range",
+    "WallWords.read_blocks",
+    "WallWords.eventual_cap",
+    "WallExamples.period4",
+    "WallExamples.period8",
+    "WallExamples.period12",
+    "WallExamples.period18",
+    "WallTernary.excludes_power_three",
+    "WallTernary.finite_floor",
+    "WallTernary.ternary_bound",
+    "WallTernary.rejects_ternary_word",
+    "WallDichotomy.ternary_or_breaks",
+    "WallDichotomy.alternating_or_eventual_cap",
+    "WallDensity.time_pos",
+    "WallDensity.chart_from_residue",
+    "WallDensity.same_rate",
+    "WallDensity.universal_cap",
+    "WallDensity.period18_uniform",
+    "WallEscape.positive_escape",
+    "WallEscape.forces_escape",
+    "WallShifted.sampled",
+    "WallShifted.rotation_cap",
+    "WallLinear.linear_depth",
+    "WallDelay.merger_needs_clock",
+    "WallDelay.period18_separated",
+    "WallDelay.other_separations",
+    "WallDelay.missing_bit",
+    "WallDelay.period18_unbounded_clocks",
+    "Collatz.RecordPrecision.ordinary_row",
+    "Collatz.RecordPrecision.grade_le_clock",
+    "Collatz.RecordPrecision.carry_le",
+    "Collatz.RecordPrecision.carry_plus_clock_le",
+    "Collatz.RecordPrecision.shifted_row",
+    "Collatz.RecordPrecision.zero_shift_parameter",
+    "Collatz.RecordPrecision.closing_matches",
+    "Collatz.RecordPrecision.disjoint_powers",
+    "Collatz.RecordPrecision.clock_difference_coprime",
+    "Collatz.RecordPrecision.one_zero_denominator_dvd",
+    "Collatz.RecordPrecision.fixed_plane_late",
+    "Collatz.RecordPrecision.fixed_plane_unique_late",
+    "Collatz.FreshAscentShadow.endpoint_unique",
+    "Collatz.FreshAscentShadow.shift_path",
+    "Collatz.FreshAscentShadow.at_signed_fixed_point",
+    "Collatz.FreshAscentShadow.signed_parent_gt_one",
+    "Collatz.FreshAscentShadow.first_fresh_parent",
+    "UnconventionalProposal.small_query_excluded",
+    "UnconventionalProposal.failure_has_wall",
+    "UnconventionalProposal.survivor_extends",
+    "UnconventionalProposal.collatz_from_remaining",
+    "UnconventionalProposal.collatz_iff_remaining"
+  ],
+  "log": "lean-final.log",
+  "log_sha256": "07c43ea48b59862e87ca3c6f18664eb000a7bb87d247027a75d119ae1b51ab58"
+}

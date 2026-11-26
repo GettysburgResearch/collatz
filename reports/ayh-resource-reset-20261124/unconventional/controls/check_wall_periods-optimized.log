@@ -1,0 +1,154 @@
+{
+  "schema": 2,
+  "through": 30,
+  "lengths": {
+    "2": {
+      "primitive_necklaces": 1,
+      "zero_shadow": 1,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "no_positive_equal_density": 1
+      },
+      "largest_uncached_path": 4
+    },
+    "4": {
+      "primitive_necklaces": 1,
+      "signed_rational_wall": 1,
+      "signed_wall_representatives": [
+        "0111"
+      ],
+      "phase_density_cases": {
+        "no_positive_equal_density": 1
+      },
+      "largest_uncached_path": 14
+    },
+    "6": {
+      "primitive_necklaces": 2,
+      "nonzero_cycles_with_cross_color_overlap": 2,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 2
+      },
+      "largest_uncached_path": 16
+    },
+    "8": {
+      "primitive_necklaces": 3,
+      "nonzero_cycles_with_cross_color_overlap": 2,
+      "signed_rational_wall": 1,
+      "signed_wall_representatives": [
+        "01011111"
+      ],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 2,
+        "no_positive_equal_density": 1
+      },
+      "largest_uncached_path": 121
+    },
+    "10": {
+      "primitive_necklaces": 6,
+      "nonzero_cycles_with_cross_color_overlap": 6,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 6
+      },
+      "largest_uncached_path": 111
+    },
+    "12": {
+      "primitive_necklaces": 9,
+      "nonzero_cycles_with_cross_color_overlap": 8,
+      "signed_rational_wall": 1,
+      "signed_wall_representatives": [
+        "011111111111"
+      ],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 8,
+        "no_positive_equal_density": 1
+      },
+      "largest_uncached_path": 104
+    },
+    "14": {
+      "primitive_necklaces": 18,
+      "nonzero_cycles_with_cross_color_overlap": 18,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 18
+      },
+      "largest_uncached_path": 749
+    },
+    "16": {
+      "primitive_necklaces": 30,
+      "nonzero_cycles_with_cross_color_overlap": 30,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 30
+      },
+      "largest_uncached_path": 687
+    },
+    "18": {
+      "primitive_necklaces": 56,
+      "nonzero_cycles_with_cross_color_overlap": 55,
+      "signed_rational_wall": 1,
+      "signed_wall_representatives": [
+        "010101010101010111"
+      ],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 56
+      },
+      "largest_uncached_path": 440
+    },
+    "20": {
+      "primitive_necklaces": 99,
+      "nonzero_cycles_with_cross_color_overlap": 99,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 99
+      },
+      "largest_uncached_path": 882
+    },
+    "22": {
+      "primitive_necklaces": 186,
+      "nonzero_cycles_with_cross_color_overlap": 186,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 186
+      },
+      "largest_uncached_path": 6822
+    },
+    "24": {
+      "primitive_necklaces": 335,
+      "nonzero_cycles_with_cross_color_overlap": 335,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 335
+      },
+      "largest_uncached_path": 1583
+    },
+    "26": {
+      "primitive_necklaces": 630,
+      "nonzero_cycles_with_cross_color_overlap": 630,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 630
+      },
+      "largest_uncached_path": 9014
+    },
+    "28": {
+      "primitive_necklaces": 1161,
+      "nonzero_cycles_with_cross_color_overlap": 1161,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 1161
+      },
+      "largest_uncached_path": 4786
+    },
+    "30": {
+      "primitive_necklaces": 2182,
+      "nonzero_cycles_with_cross_color_overlap": 2182,
+      "signed_wall_representatives": [],
+      "phase_density_cases": {
+        "equal_density_at_same_phase": 2182
+      },
+      "largest_uncached_path": 7364
+    }
+  }
+}

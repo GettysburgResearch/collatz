@@ -1,0 +1,30 @@
+{
+  "population_certificate": {
+    "block_length": 1536,
+    "total_clock": 2434,
+    "rotation_lower_bound_bits": 2295,
+    "count_exceeds_three_power_47L_over_50": true
+  },
+  "word_controls": {
+    "words": 8190,
+    "carry_envelope_equalities": 90,
+    "one_zero": 77
+  },
+  "path_controls": {
+    "shifted_rows": 125632,
+    "closing_endpoint_pairs": 31408,
+    "exact_zero_shifts": 8756,
+    "nonzero_directed_pairs": 125632
+  },
+  "forced_closings": {
+    "windows": 6685,
+    "equal_phase_windows": 0,
+    "fixed_rise_example": {
+      "odd_center": 50784898697244261559526485147077041166949867601596797816001043829971424895355358679733,
+      "past_odd_count": 179,
+      "future_bits": 284,
+      "past_denominator": 1,
+      "future_denominator": 31082702275611651431434166985955083072916196399032595803988243380897512445342398869029
+    }
+  }
+}

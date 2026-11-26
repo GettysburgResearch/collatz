@@ -1,0 +1,45 @@
+{
+  "recorded_utc": "2026-11-26 21:16:30 UTC",
+  "scope": "Final selected PR metadata refresh. PR201 changed from the earlier intake and receives a separate scoped comparison. This is not an upstream execution receipt.",
+  "pull_requests": [
+    {
+      "pr": 193,
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "branch": "research/astra-universal-descent-20261124",
+      "title": "Collatz: ordinary trace onset, joint boundaries and cycle constraints",
+      "updated_at": "2026-11-26T20:41:45Z"
+    },
+    {
+      "pr": 195,
+      "commit": "f192322f70073ba44bc9f98785a51c27a4da9ee5",
+      "branch": "research/astra-global-closure-20261124",
+      "title": "Collatz: ordinary merger progressions, source bands and critical limits",
+      "updated_at": "2026-11-25T18:38:08Z"
+    },
+    {
+      "pr": 201,
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "branch": "gpt62/killed-green-head-closure-20261124",
+      "title": "Collatz: fixed-source obstructions, exact gauges, and finite escape gates",
+      "updated_at": "2026-11-26T20:47:13Z"
+    },
+    {
+      "pr": 206,
+      "commit": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "branch": "research/lean-clock-packing-20261124",
+      "title": "Prove the sharp 23-step Collatz pair cover and a finite-count criterion for convergence",
+      "updated_at": "2026-11-25T19:00:11Z"
+    },
+    {
+      "pr": 210,
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "branch": "research/critical-record-rational-rigidity-20261125",
+      "title": "Critical-record rational rigidity and a three-place Subspace Theorem attack",
+      "updated_at": "2026-11-25T17:15:26Z"
+    }
+  ],
+  "queried_between_utc": [
+    "2026-11-26 21:14:22 UTC",
+    "2026-11-26 21:16:30 UTC"
+  ]
+}

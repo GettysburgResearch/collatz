@@ -1,0 +1,87 @@
+{
+  "signed_rational_periodic_wall": {
+    "denominator": 15,
+    "phase_numerators": [
+      [
+        -11,
+        4
+      ],
+      [
+        -7,
+        8
+      ],
+      [
+        -14,
+        1
+      ],
+      [
+        -13,
+        2
+      ]
+    ],
+    "left_cycle": [
+      3,
+      12,
+      6
+    ],
+    "right_cycle": [
+      57,
+      93,
+      147,
+      228,
+      114
+    ]
+  },
+  "negative_integer_global_basin": {
+    "roots": [
+      -7,
+      -5
+    ],
+    "depth": 9,
+    "source_index": -3107,
+    "transported_index": -2330,
+    "destination_index": -2081,
+    "transported_offset": 230,
+    "removed_prefix": [
+      6,
+      28
+    ],
+    "oriented_colors": [
+      false,
+      true
+    ]
+  },
+  "ordinary_visit_to_5_local_control": {
+    "roots": [
+      113,
+      85
+    ],
+    "depth": 5,
+    "source_index": 3637,
+    "transported_index": 2728,
+    "destination_index": 2730,
+    "transported_offset": 8,
+    "removed_prefix": [
+      4,
+      4
+    ],
+    "oriented_colors": [
+      false,
+      true
+    ]
+  },
+  "single_edge_language_capacity": {
+    "13": {
+      "minimal_forbidden_words": 13,
+      "block_length": 265,
+      "admissible_blocks": 7681499506458016187864010543164683884885,
+      "strict_square_comparison": true
+    },
+    "22": {
+      "minimal_forbidden_words": 89,
+      "block_length": 58,
+      "admissible_blocks": 520612224,
+      "strict_square_comparison": true
+    }
+  }
+}

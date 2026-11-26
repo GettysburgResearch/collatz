@@ -1,0 +1,209 @@
+{
+  "schema": "collatz-unconventional-source-index/v1",
+  "baseline_commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+  "scope": "Frozen claim-level source inputs and metadata intake; no blanket verification of all PRs",
+  "root_repository_inputs": [
+    {
+      "pr": 6,
+      "commit": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "path": "research/termination-frontier/README.md",
+      "git_blob": "ca3642c75329740dc30fc941c45a0a0b6047f773",
+      "sha256": "9556d547395ea380d855c6e727b47c71e5c87b9da91b30053c7aa99e46315ca4",
+      "scope": "Historical AYH frontier; written/source-inspected distinctions",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4810a0771da61a1cb609ef8707dfcf7f0f6e666f/research/termination-frontier/README.md"
+    },
+    {
+      "pr": 6,
+      "commit": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "path": "research/termination-frontier/CLAIM_INVENTORY.md",
+      "git_blob": "9f8d16f60fcb63d00ff3fc9b90eb50e92911ddb1",
+      "sha256": "415c62b48b12335c01641051e10d03f205cf18eb99d7543e914c966563ce3260",
+      "scope": "Claim inventory; not blanket verification",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4810a0771da61a1cb609ef8707dfcf7f0f6e666f/research/termination-frontier/CLAIM_INVENTORY.md"
+    },
+    {
+      "pr": 141,
+      "commit": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "path": "research/ay-transversal-20261031/README.md",
+      "git_blob": "289334163d437b24324006d31a8dfec1b4e76fc3",
+      "sha256": "d754a4c6a2e4a35a667f2bb7051b2cbd7e9498039c268450647731ca69c3eb1c",
+      "scope": "Finite cores and residual source obligations",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5025ef464d4b6d4f4a412a3e33c3477de68dfa8b/research/ay-transversal-20261031/README.md"
+    },
+    {
+      "pr": 141,
+      "commit": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "path": "research/ay-swarm-20261030/synthesis.md",
+      "git_blob": "bb66ebed63f393e074a5e6e4295659631ef3f15e",
+      "sha256": "a9baa15148ebcef155cc1135e7a2b234680c9a8a43f273919e4a40d9daf5c564",
+      "scope": "AYH source-side lineage",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5025ef464d4b6d4f4a412a3e33c3477de68dfa8b/research/ay-swarm-20261030/synthesis.md"
+    },
+    {
+      "pr": 195,
+      "commit": "f192322f70073ba44bc9f98785a51c27a4da9ee5",
+      "path": "research/astra-global-closure-20261124/round13/README.md",
+      "git_blob": "5ff4aeb3325c37fe108146baa0ff32cc5b8cec8f",
+      "sha256": "b212af815013227aabd23b05d17226e3e33d9341576f79001b08a533d8f0a77d",
+      "scope": "Selected population and source-closure comparison",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f192322f70073ba44bc9f98785a51c27a4da9ee5/research/astra-global-closure-20261124/round13/README.md"
+    },
+    {
+      "pr": 201,
+      "commit": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "path": "research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "git_blob": "1fde22a7485251a9badad2e6e7ab6183397a4887",
+      "sha256": "c92c6736011df30adf404b886da75f8a88a4688b2af0a99c6e2a28f9d37ae5a2",
+      "scope": "Record and sampling comparison",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/94ce06ccbd312ccd0ce4450b567cc514a2f0b54a/research/killed-green-head-closure-20261124/record-renewal/README.md"
+    },
+    {
+      "pr": 206,
+      "commit": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "path": "research/clock-itineraries/PairCover.lean",
+      "git_blob": "492ba6bf72073667e9657fb60d98f5b655f3a8e9",
+      "sha256": "c4023d713d2d9d736d6dd93c88a9603b78be889621aa72ec8c1036a8b8734660",
+      "scope": "Source inspection of conditional finite cover; no fresh upstream execution",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3729d84e00cf8794dab43fe2f500213b2b643f83/research/clock-itineraries/PairCover.lean"
+    },
+    {
+      "pr": 206,
+      "commit": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "path": "research/clock-itineraries/PairCover.md",
+      "git_blob": "954d001fbdf9eec3eb82ef9ead50dac0ac2fd847",
+      "sha256": "237768859e8fe14b7a780ad939e11c33146f5a2ff5cb1b4be496e140e7057db0",
+      "scope": "Written scope of conditional cover",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3729d84e00cf8794dab43fe2f500213b2b643f83/research/clock-itineraries/PairCover.md"
+    },
+    {
+      "pr": 206,
+      "commit": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "path": "research/clock-itineraries/PairDeadline.lean",
+      "git_blob": "36b935510fe3d09cec04d4fe196981c56c97132c",
+      "sha256": "3a98a29484eeb9d0e5e08270c7afe91f3919a09f016037a689b4656ac74cb89a",
+      "scope": "Source inspection of clock bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3729d84e00cf8794dab43fe2f500213b2b643f83/research/clock-itineraries/PairDeadline.lean"
+    },
+    {
+      "pr": 206,
+      "commit": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "path": "research/clock-itineraries/PairCapture.lean",
+      "git_blob": "beee3945f87b77e2e78a18dfab02a9e0fd06be7b",
+      "sha256": "5e24376066ddd7b6e34747103c226d425d6bc46d649c880c86893149a39c2214",
+      "scope": "Source inspection of finite-count consumer",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3729d84e00cf8794dab43fe2f500213b2b643f83/research/clock-itineraries/PairCapture.lean"
+    }
+  ],
+  "additional_exact_source_manifests": [
+    "adelic-source-inputs.json",
+    "critical-source-inputs.json"
+  ],
+  "metadata_intake": "ALL_PR_INTAKE.json",
+  "late_selected_heads": "LATE_SELECTED_INTAKE.json",
+  "primary_ayh": {
+    "authors": [
+      "Emre Yolcu",
+      "Scott Aaronson",
+      "Marijn J. H. Heule"
+    ],
+    "title": "An Automated Approach to the Collatz Conjecture",
+    "doi": "10.1007/s10817-022-09658-8",
+    "url": "https://link.springer.com/article/10.1007/s10817-022-09658-8",
+    "scope": "Original full rewriting-system lineage; full termination is not established here"
+  },
+  "final_selected_heads": "FREEZE_HEADS.json",
+  "late_pr201_review": "LATE_PR201_REVIEW.md",
+  "late_pr201_exact_sources": [
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "reports/unconventional-20261126/ERRATUM.md",
+      "git_blob": "4f5a64d574b6a02a94ec2a170c7d2a47c089c0e3",
+      "sha256": "648fb3e835963175cf2f092756f8a5bf028f0a14d71e6388582b97f6c799da03",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "git_blob": "fb550a7ae19231521986897488760962d2597f19",
+      "sha256": "4d9e9853204dc7ed54e695cf6383c3f5ac3e84f493c8e7d6d0f20cbdc23b0077",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/FinalProposal.lean",
+      "git_blob": "e6d8bfc1121f553b1cf9a5f9aef901b9f8bb9d10",
+      "sha256": "585a101642a3e7b3f1dff925827c0fea51d3fe379a653e1fd5a7af8669c0718a",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/README.md",
+      "git_blob": "0d1637948004281c9ac3dd73f0220f9509b7bab2",
+      "sha256": "45b52eca508d6600d42ec302794da89668a18d8321f6675a584a46b063afbc6c",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/adelic/FIXED_SOURCE_TOPOLOGY.md",
+      "git_blob": "201b2ae8e387cf49560968f80718691be38247e6",
+      "sha256": "97720745ee0e42520c29c3a194c9e18433416d09dd1170cb583242f23ec8aec0",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/operator/EXIT_GATES.md",
+      "git_blob": "d365d3ee7494a103161feeeeb321b6a97ed2a79e",
+      "sha256": "a5fc2c44d8e33ad808c7fe5e9b9dae14918df5f28f0f8792051d7bd3f058963e",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/BRIDGE.md",
+      "git_blob": "00a3f79167d5aefc5f9f1aaaafb0401119e315bc",
+      "sha256": "f8f4349e6c22940831fb2029b6c70917b347e3f43e4e8895ae645fd61db8c256",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/CRITICAL_GAUGE_ENDPOINT.md",
+      "git_blob": "3aae926287ae531f916d925cdc2bd6f6827dedb3",
+      "sha256": "9e55dc5e81e9617b0ced6ef55ebaea135bc9e81b1676aa1ccc19fa2ce5871a50",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/LONG_GAPS.md",
+      "git_blob": "1c85b63102a2b70781dc27513cd709c74caf900b",
+      "sha256": "561506a199daf069027263cabf5967ecb1c4cf71adc14aab48d489e3664e19ab",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/MONOTONE_RECORDS.md",
+      "git_blob": "c790329005a36667c54d90a79e6671e116a67124",
+      "sha256": "9d4deafdcaf39c987f1349da02c0a2e278d5ce8f5c4ecd34d4eacc2c9f4fc547",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/RATIONAL_DIAGONAL.md",
+      "git_blob": "2cc013c9143aaf2ad9f5fcb87a960e9f19113b41",
+      "sha256": "3b823138448df4579e404f8d145fdbde35ce2f0416cf6352d80b2994a447be90",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+      "path": "research/unconventional-20261126/renewal/RECORD_TEMPLATE_COST.md",
+      "git_blob": "40e3b586eac3aa4b94a7fd309a144fecf1ef0d41",
+      "sha256": "15c6e2420745561fb2d3028f118845a76eedc1be68cbe6f04ddd34df54821d76",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    },
+    {
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "path": "research/critical-record-rational-rigidity-20261125/README.md",
+      "git_blob": "57d3e2d9b46f18003de88c00ae853fc7af4aedeb",
+      "sha256": "13cef04e38fd5c3b011fc90a4482167bd088c9d6f3c9983a5f678ec888b3a96d",
+      "scope": "Scoped written/source comparison; no upstream execution claim"
+    }
+  ]
+}

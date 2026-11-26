@@ -1,0 +1,55 @@
+{
+  "signed_capped": {
+    "max_odd_grade": 8,
+    "max_gap": 8,
+    "capped_layer_sizes": [
+      3,
+      8,
+      20,
+      56,
+      148,
+      392,
+      1040,
+      2764
+    ],
+    "capped_minimum_magnitudes": [
+      3,
+      15,
+      39,
+      53,
+      69,
+      95,
+      127,
+      85
+    ]
+  },
+  "ordinary": {
+    "initial_rises": 40,
+    "positive_signed_endpoint_pairs": 35460
+  },
+  "forks": {
+    "maps": 288,
+    "origin_sets": 4330,
+    "iterated_subset_checks": 154048
+  },
+  "reciprocal_shells": {
+    "first_shell": 1,
+    "last_shell": 399,
+    "exact_weighted_sum": "27214245539549246082315535879756990605293275300075445693155771082392111997663353857788159780807369534440803904304918693541/1291124939043454294827959586001505937164852896414611756415329678270323811008420597314822676640068915717951585986373746688",
+    "upper_bound": 22
+  },
+  "signed_winners": {
+    "magnitude_cutoff_exclusive": 52488,
+    "odd_origins": 26243,
+    "first_hits_one": 8735,
+    "certified_other_cycle": 17508,
+    "max_odd_state_in_accelerated_census": 130030819,
+    "maximizers": [
+      [
+        3,
+        1,
+        3
+      ]
+    ]
+  }
+}

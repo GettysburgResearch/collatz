@@ -1,0 +1,602 @@
+[
+  {
+    "module": "AdelicSwitch",
+    "name": "AdelicSwitch.prepare"
+  },
+  {
+    "module": "AdelicSwitch",
+    "name": "AdelicSwitch.power_precision"
+  },
+  {
+    "module": "AdelicSwitch",
+    "name": "AdelicSwitch.cylinder"
+  },
+  {
+    "module": "AdelicParent",
+    "name": "AdelicParent.cylinder_excluded"
+  },
+  {
+    "module": "InverseBudget",
+    "name": "InverseBudget.equation"
+  },
+  {
+    "module": "InverseBudget",
+    "name": "InverseBudget.one_class"
+  },
+  {
+    "module": "InverseBudget",
+    "name": "InverseBudget.quadratic"
+  },
+  {
+    "module": "InverseBudget",
+    "name": "InverseBudget.root_bound"
+  },
+  {
+    "module": "InversePhase",
+    "name": "InversePhase.all_phase_gate"
+  },
+  {
+    "module": "InverseMultiplicity",
+    "name": "InverseMultiplicity.legal_iff"
+  },
+  {
+    "module": "InverseMultiplicity",
+    "name": "InverseMultiplicity.numerator_unique"
+  },
+  {
+    "module": "DyadicPowerPrecision",
+    "name": "DyadicPowerPrecision.precision"
+  },
+  {
+    "module": "LogTowerData",
+    "name": "LogTowerData.finite_unit"
+  },
+  {
+    "module": "LogTowerData",
+    "name": "LogTowerData.anchors"
+  },
+  {
+    "module": "LogTowerData",
+    "name": "LogTowerData.terminal"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.rotation_multiple"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.normalized"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.normalized_at"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.anchor_lift"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.laps"
+  },
+  {
+    "module": "LogTowerCore",
+    "name": "LogTower.terminal_lift"
+  },
+  {
+    "module": "LogTower",
+    "name": "LogTower.ordinary_gate"
+  },
+  {
+    "module": "LogTower",
+    "name": "LogTower.band_peaks"
+  },
+  {
+    "module": "LogTower",
+    "name": "LogTower.six_peaks"
+  },
+  {
+    "module": "PerfectPowerParents",
+    "name": "PerfectPowerParents.excluded"
+  },
+  {
+    "module": "SegmentTrace",
+    "name": "SegmentTrace.correct"
+  },
+  {
+    "module": "NegativeProfile",
+    "name": "NegativeProfile.ordinary"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.minus_one_grade"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.separated_endpoint"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.all_earlier"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.representative_form"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.progression"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.not_perfect_power"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.all_smaller"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.pointwise"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.full_clock"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.full_margin"
+  },
+  {
+    "module": "NegativeExponentAddress",
+    "name": "NegativeExponentAddress.prepeak_clock"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.child_eq"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.index_eq"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.index_mixed"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.triple_four_edge"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.ones"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.even_pair"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.run_fusion"
+  },
+  {
+    "module": "WallRefinement",
+    "name": "WallRefinement.forbidden_even_run"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.split_difference"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.propagated"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.propagated_run"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.fused_zero"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.exact_sparseSum"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.source_difference"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.twelve_bit_cut"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.thirteen_bit_cut"
+  },
+  {
+    "module": "WallGate",
+    "name": "WallRefinement.fixed_source"
+  },
+  {
+    "module": "WallShadow",
+    "name": "WallShadow.block_eq"
+  },
+  {
+    "module": "WallShadow",
+    "name": "WallShadow.paired_charts"
+  },
+  {
+    "module": "WallWheel",
+    "name": "WallWheel.wheel"
+  },
+  {
+    "module": "WallWheel",
+    "name": "WallWheel.bank_spec"
+  },
+  {
+    "module": "WallWheel",
+    "name": "WallWheel.bank_merge"
+  },
+  {
+    "module": "WallPeriodic",
+    "name": "WallPeriodic.cross_clock_merge"
+  },
+  {
+    "module": "WallPeriodic",
+    "name": "WallPeriodic.breaks_by"
+  },
+  {
+    "module": "WallPeriodic",
+    "name": "WallPeriodic.split_twos"
+  },
+  {
+    "module": "WallPeriodic",
+    "name": "WallPeriodic.no_infinite_period"
+  },
+  {
+    "module": "WallRun",
+    "name": "WallPeriodic.index_add"
+  },
+  {
+    "module": "WallRun",
+    "name": "WallPeriodic.from_copies"
+  },
+  {
+    "module": "WallRun",
+    "name": "WallPeriodic.reset_bound"
+  },
+  {
+    "module": "WallRun",
+    "name": "WallPeriodic.eventually_from_reset"
+  },
+  {
+    "module": "WallRun",
+    "name": "WallPeriodic.eventually_no_copies"
+  },
+  {
+    "module": "WallBank",
+    "name": "WallBank.sound"
+  },
+  {
+    "module": "WallBank",
+    "name": "WallBank.forbids"
+  },
+  {
+    "module": "WallRuns81",
+    "name": "WallBank.reset_81"
+  },
+  {
+    "module": "WallRuns81",
+    "name": "WallBank.eventually_no_81"
+  },
+  {
+    "module": "WallRational",
+    "name": "WallRational.runD_add"
+  },
+  {
+    "module": "WallRational",
+    "name": "WallRational.grade_add"
+  },
+  {
+    "module": "WallRational",
+    "name": "WallRational.lift"
+  },
+  {
+    "module": "WallRational",
+    "name": "WallRational.lap"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.solve_unit"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.cell_pull"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.absorb"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.signed_lift"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.two_slopes"
+  },
+  {
+    "module": "WallAffine",
+    "name": "WallAffine.in_class"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.odd_power"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.bit"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.cover"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.cancel"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.exponential_merger"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.exp_unit"
+  },
+  {
+    "module": "WallOrbit",
+    "name": "WallOrbit.paired"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.address_eq"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.phase_at"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.chart_arm"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.signed_nat"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.cross_clock"
+  },
+  {
+    "module": "WallGeneral",
+    "name": "WallGeneral.breaks"
+  },
+  {
+    "module": "WallUniform",
+    "name": "WallUniform.finite_bound"
+  },
+  {
+    "module": "WallUniform",
+    "name": "WallUniform.exponential_bound"
+  },
+  {
+    "module": "WallUniform",
+    "name": "WallUniform.paired_bound"
+  },
+  {
+    "module": "WallUniform",
+    "name": "WallUniform.after_mismatch"
+  },
+  {
+    "module": "WallWords",
+    "name": "WallWords.range"
+  },
+  {
+    "module": "WallWords",
+    "name": "WallWords.read_blocks"
+  },
+  {
+    "module": "WallWords",
+    "name": "WallWords.eventual_cap"
+  },
+  {
+    "module": "WallExamples",
+    "name": "WallExamples.period4"
+  },
+  {
+    "module": "WallExamples",
+    "name": "WallExamples.period8"
+  },
+  {
+    "module": "WallExamples",
+    "name": "WallExamples.period12"
+  },
+  {
+    "module": "WallExamples",
+    "name": "WallExamples.period18"
+  },
+  {
+    "module": "WallTernary",
+    "name": "WallTernary.excludes_power_three"
+  },
+  {
+    "module": "WallTernary",
+    "name": "WallTernary.finite_floor"
+  },
+  {
+    "module": "WallTernary",
+    "name": "WallTernary.ternary_bound"
+  },
+  {
+    "module": "WallTernary",
+    "name": "WallTernary.rejects_ternary_word"
+  },
+  {
+    "module": "WallDichotomy",
+    "name": "WallDichotomy.ternary_or_breaks"
+  },
+  {
+    "module": "WallDichotomy",
+    "name": "WallDichotomy.alternating_or_eventual_cap"
+  },
+  {
+    "module": "WallDensity",
+    "name": "WallDensity.time_pos"
+  },
+  {
+    "module": "WallDensity",
+    "name": "WallDensity.chart_from_residue"
+  },
+  {
+    "module": "WallDensity",
+    "name": "WallDensity.same_rate"
+  },
+  {
+    "module": "WallDensity",
+    "name": "WallDensity.universal_cap"
+  },
+  {
+    "module": "WallDensity",
+    "name": "WallDensity.period18_uniform"
+  },
+  {
+    "module": "WallEscape",
+    "name": "WallEscape.positive_escape"
+  },
+  {
+    "module": "WallEscape",
+    "name": "WallEscape.forces_escape"
+  },
+  {
+    "module": "WallShifted",
+    "name": "WallShifted.sampled"
+  },
+  {
+    "module": "WallShifted",
+    "name": "WallShifted.rotation_cap"
+  },
+  {
+    "module": "WallLinear",
+    "name": "WallLinear.linear_depth"
+  },
+  {
+    "module": "WallDelay",
+    "name": "WallDelay.merger_needs_clock"
+  },
+  {
+    "module": "WallDelay",
+    "name": "WallDelay.period18_separated"
+  },
+  {
+    "module": "WallDelay",
+    "name": "WallDelay.other_separations"
+  },
+  {
+    "module": "WallDelay",
+    "name": "WallDelay.missing_bit"
+  },
+  {
+    "module": "WallDelay",
+    "name": "WallDelay.period18_unbounded_clocks"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.ordinary_row"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.grade_le_clock"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.carry_le"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.carry_plus_clock_le"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.shifted_row"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.zero_shift_parameter"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.closing_matches"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.disjoint_powers"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.clock_difference_coprime"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.one_zero_denominator_dvd"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.fixed_plane_late"
+  },
+  {
+    "module": "RecordPrecision",
+    "name": "Collatz.RecordPrecision.fixed_plane_unique_late"
+  },
+  {
+    "module": "FreshAscentShadow",
+    "name": "Collatz.FreshAscentShadow.endpoint_unique"
+  },
+  {
+    "module": "FreshAscentShadow",
+    "name": "Collatz.FreshAscentShadow.shift_path"
+  },
+  {
+    "module": "FreshAscentShadow",
+    "name": "Collatz.FreshAscentShadow.at_signed_fixed_point"
+  },
+  {
+    "module": "FreshAscentShadow",
+    "name": "Collatz.FreshAscentShadow.signed_parent_gt_one"
+  },
+  {
+    "module": "FreshAscentShadow",
+    "name": "Collatz.FreshAscentShadow.first_fresh_parent"
+  },
+  {
+    "module": "UnconventionalProposal",
+    "name": "UnconventionalProposal.small_query_excluded"
+  },
+  {
+    "module": "UnconventionalProposal",
+    "name": "UnconventionalProposal.failure_has_wall"
+  },
+  {
+    "module": "UnconventionalProposal",
+    "name": "UnconventionalProposal.survivor_extends"
+  },
+  {
+    "module": "UnconventionalProposal",
+    "name": "UnconventionalProposal.collatz_from_remaining"
+  },
+  {
+    "module": "UnconventionalProposal",
+    "name": "UnconventionalProposal.collatz_iff_remaining"
+  }
+]
