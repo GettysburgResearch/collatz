@@ -1,0 +1,4 @@
+'OrderReversals.three_even_finite_rows' depends on axioms: [propext]
+'OrderReversals.reversal_seeds' does not depend on any axioms
+'OrderReversals.contraction_reversal' depends on axioms: [propext]
+'OrderReversals.double_lap_carry' depends on axioms: [propext, Quot.sound]

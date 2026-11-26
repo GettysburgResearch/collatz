@@ -1,0 +1,7 @@
+'FiniteExit.trap_correct' depends on axioms: [propext]
+'FiniteExit.certificate_implies_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteExit.repeat_implies_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteExit.repeat_iff_finite_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteExit.no_escape_iff_finite_trapping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteExit.exact_finite_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteExit.exit_gate_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,89 @@
+{
+  "contracting_reversal": {
+    "clock": 46,
+    "grade": 29,
+    "images": [
+      890,
+      866
+    ],
+    "sources": [
+      859,
+      860
+    ]
+  },
+  "cycle_census": {
+    "counts_by_gcd": {
+      "1": 1068,
+      "2": 555,
+      "3": 30,
+      "4": 48,
+      "5": 25,
+      "6": 75,
+      "7": 245
+    },
+    "max_clock": 14,
+    "sharp_examples": {
+      "1": {
+        "denominator": 1,
+        "inversions": 0,
+        "word": "01"
+      },
+      "2": {
+        "denominator": 7,
+        "inversions": 1,
+        "word": "0011"
+      },
+      "3": {
+        "denominator": 37,
+        "inversions": 2,
+        "word": "000111"
+      },
+      "4": {
+        "denominator": 35,
+        "inversions": 3,
+        "word": "00001111"
+      },
+      "5": {
+        "denominator": 781,
+        "inversions": 4,
+        "word": "0000011111"
+      },
+      "6": {
+        "denominator": 3367,
+        "inversions": 5,
+        "word": "000001011111"
+      },
+      "7": {
+        "denominator": 14197,
+        "inversions": 6,
+        "word": "00000101101111"
+      }
+    }
+  },
+  "forty_adjacent_reversals": {
+    "smaller_terminal_sha256": "72bbc838d418e2c514215b6804e7981f9c74db7e7a2d635ba191397d8efdd488",
+    "start_sha256": "ed94ae16de722822ba93488a07dcab705aff3882eb94ba6c66ad956288894c78",
+    "total_clock": 433,
+    "total_grade": 273
+  },
+  "grade_census": {
+    "grade_classes": 119,
+    "max_clock": 14,
+    "reversing_classes": 52
+  },
+  "known_basin": {
+    "clock_before_fusion": 18,
+    "common_power_exponent": 2815,
+    "gadgets": [
+      2,
+      2,
+      2
+    ],
+    "least_prefix_height_bits": 2816
+  },
+  "ordinary_nesting": {
+    "first": 41,
+    "odd_steps": 39,
+    "second": 5
+  }
+}

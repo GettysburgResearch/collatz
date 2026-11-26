@@ -1,9 +1,84 @@
 # What an unbounded coefficient-record gap costs
 
-**Status: PROPOSED written mathematics.** We work with one positive odd
+**Status — proposed written mathematics.** We work with one positive odd
 ordinary trajectory, or an explicitly identified finite gap word. The
 ordinary-source problem and the exclusion of nontrivial positive cycles
 remain open.
+
+## Results and their scope
+
+| Question | Conclusion |
+|---|---|
+| How much integer height survives prime removal on an actual escape? | For any finite list of rational dyadic shifts, at least a lower fraction $\log_3 2$ of all native clocks simultaneously retain exponent $1-\epsilon$ of every shifted height after deleting an adaptively chosen bounded prime pool. All nonperiodic shifts give density one. The same fraction applies across a family of large primitive positive cycles. [Shifted ordinary cofactors](SHIFTED_COFACTORS.md) · [cycle extension](CYCLE_COFACTORS.md) |
+| What is stronger for nonlinear polynomial values? | On every finite distinct ordinary path, the fraction retaining exponent $1-\epsilon$ tends to one for each fixed polynomial without rational roots, uniformly over growing pools with $r\log(2r)=o(\log N)$. A nonzero return resultant also bounds visits to adaptive finite-rank multiplicative cosets. [Polynomial cofactors](POLYNOMIAL_COFACTORS.md) |
+| Which joint local limits must an ordinary escape have? | At least one record limit lies outside the rational diagonal, with no bound on gaps or assumption of positive record density. The dyadic record limits cannot all be negative periodic. With bounded gaps the ternary limits cannot all be rational dyadic units. [Rational diagonal theorem](RATIONAL_DIAGONAL.md) |
+| How costly are long gaps on the actual positive path? | Finite ternary confinement forces the sparse inexact transitions and height lower bound proved below. Rational endpoint precision forces large drawdown; superlogarithmic gaps force almost full-size signed shadow denominators. [Two local ends](RATIONAL.md) · [joint precision and spacing](BRIDGE.md) · [long-gap denominators and the shallow corridor](LONG_GAPS.md) |
+| Can growing, two-piece return words realize ordinary escape? | Eventually nondecreasing lengths are excluded at every growth rate. More generally, lengths tending to infinity require infinitely many distinct lengths to occur on at least ten separated runs. Grouped fixed-source template costs and a harmonic budget give the exclusion. [Template cost](RECORD_TEMPLATE_COST.md) · [repeated record words](MONOTONE_RECORDS.md) |
+| What does positive limiting record occupancy see? | Actual odd-time-normalized flows have classified rational atoms. A positive-mass flow places at least $1-\rho/\delta$ of its ternary mass on an explicitly smaller-dimensional stratum. Conditional fibers of an ergodic finite-mean component have dimension $h/(L\log3)$ above its exact dyadic future. [Stationary flow](RECORD_FLOW.md) · [density spectrum](DENSITY_SPECTRUM.md) · [entropy fibers](ENTROPY_FIBERS.md) |
+| Which numerical gates can carry persistent ordinary mass? | Heavy pre-gates are within $p^{-\log3/\log(3/2)}(\log p)^{O(1)}$ of the critical trace. At exponent $1<s<2$, leakage outside the specified sparse gate sieve has sharp order $X^{1-s}$; at $s=2$ it has sharp order $(\log X)/X$. [Gate proximity and leakage](GATE_PROXIMITY.md) |
+| What happens to the previous bounded-record dimension? | The finite-alphabet proof survives the audit. The truncation defect has a three-term asymptotic, including its explicit constant. [Earlier proof audit](AUDIT.md) · [pressure calculation](PRESSURE.md) |
+| How thin is the universal ternary critical trace? | The leading cube-root transition constant is $4.3758449\ldots$, with infinite measure at equality. At the first logarithmic refinement the measure is zero for $b>1$ and infinite for $b\le1$. The larger unrestricted incoming-slope set has a distinct exact integral test. [Elementary gauge](GAUGE.md) · [leading constant](SHARP_GAUGE.md) · [equality](CRITICAL_GAUGE_ENDPOINT.md) · [refined upper bound](CRITICAL_GAUGE_REFINEMENT.md) · [unrestricted test](INCOMING_GAUGE_TEST.md) |
+| Which ordinary height counts enter these arguments? | The bounded-height proof and its effective convolution include a finite $2^{128}$ cap. The unrestricted simple-path Mellin proof is elementary; Weaver's Paper 28/v3 already gives stronger asymptotic ordinary bounds. [Height](HEIGHT.md) · [unrestricted visits](OCCUPATION.md) |
+| What survives purely symbolic tests? | Arbitrary compact joint clusters in the specified no-rise-by-critical product have formal histories with diverging coefficients, long blocks and finite positive ordinary lifts. Formal laws can place all logarithmic height on a signed rational diagonal while retaining an off-diagonal cluster. The infinite dyadic addresses in these examples are irrational. [Escape of mass](ESCAPE_OF_MASS.md) · [log-height models and finite ordinary realizations](LOG_HEIGHT_MODEL.md) |
+
+The finite arithmetic [Lean file](RenewalArithmetic.lean) proves
+the two-ended divisibility and the centered Fourier carry injection.
+The [exact controls](controls.py) and [receipt](CONTROLS.json) test
+the indicated finite specializations. Independent audits in this
+lane cover the [operator core](REVIEW_OPERATOR.md), [cycle
+index](REVIEW_CYCLE_INDEX.md), [primitive pressure](REVIEW_PRIMITIVE.md),
+[unrestricted gauge](REVIEW_UNRESTRICTED.md), and [numerical gate
+arithmetic](REVIEW_GATE_ARITHMETIC.md), [regular logarithmic
+occupation](REVIEW_REGULAR_OCCUPATION.md), [square-root record-gate
+budget](REVIEW_ROUGH_GATES.md), and [landing frontiers and dyadic
+cycle order](REVIEW_LEVEL_AND_ORDER.md). The [shorter Fourier
+patch](CYCLE_SIEVE_REVIEW.md) strengthens the growing-prime cutoff
+for the sibling rational-cycle construction.
+
+The main remaining ordinary alternative is an off-diagonal or
+nonrational cluster, potentially with unbounded return lengths
+and zero elapsed-time record density. Even a singular distribution
+at a signed cycle allows its physical integer differences to have
+arbitrarily large factors outside every fixed prime pool. A proof by rational-diagonal confinement would
+need a new fixed-source arithmetic statement, and positive cycle
+uniqueness is a separate open obligation.
+
+## A single set of ordinary clocks for every algebraic target
+
+For one fixed injective positive ordinary shortcut trajectory $(x_t)$
+there is a set $G$ of native times of lower natural density at least
+$\log_3 2$ such that, simultaneously for every prime $p$ and every
+number $\xi$ algebraic over $\mathbb Q$ in a chosen embedding into
+$\overline{\mathbb Q}_p$,
+$$
+ \frac{\log^+(1/|x_t-\xi|_p)}{\log x_t}\longrightarrow 0
+                        \qquad(t\to\infty,\ t\in G).                 \tag{4}
+$$
+When only algebraic numbers of degree at least two are tested, a
+single set of **natural density one** works. These statements control
+the precision relative to the logarithm of the actual integer. They
+allow any tested coordinate to accumulate at fixed precisions, and
+this native-time set can miss a sparse sequence of record clocks.
+
+Indeed for any primitive integral minimal polynomial $f$ of a
+tested number, factor $f$ over $\overline{\mathbb Q}_p$. At
+ordinary integers the valuations of every factor $x_t-\xi_j$
+are bounded below by $\min(0,v_p(\xi_j))$. Consequently
+$v_p(x_t-\xi)\le v_p(f(x_t))+O_{p,f}(1)$ after omitting zeros.
+Also $\ln|f(x_t)|/\ln x_t\to\deg f$. For any finite list of
+polynomials and primes, and any prescribed precision tolerance,
+the polynomial and linear theorems above give lower density at
+least $\log_3 2$ for their simultaneous good clocks, or density
+one when every polynomial has degree at least two and is irreducible.
+To obtain a single set, enumerate these countably many polynomial
+and prime tests at tolerances tending to zero and let $G_j$ impose
+the first $j$ tests. For $c=\log_3 2$ or $c=1$ as appropriate,
+choose increasing $N_j$ so every prefix of length $N\ge N_j$ has
+at least $(c-1/j)N$ clocks in $G_j$. On $[N_j,N_{j+1})$ use
+$G_j$. At a prefix ending in stage $j$, all earlier stages were
+supersets of $G_j$ (the finite initial prefix can be included).
+Hence the union has lower density at least $c$ and each fixed
+test eventually holds on it. This proves (4).
 
 ## Conventions and scope
 

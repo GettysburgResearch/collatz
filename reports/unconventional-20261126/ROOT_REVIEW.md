@@ -6,6 +6,8 @@ The pass began on 2026-11-26 at 18:52:27 UTC from PR201 head
 [the continuation overview](../../research/unconventional-20261126/README.md).
 This report does not assert that all repository papers, all earlier PRs,
 or every new analytic appendix received a complete independent audit.
+The later actual arithmetic and gate arguments, and the final combined
+execution counts, are reviewed in [FINAL_REVIEW.md](FINAL_REVIEW.md).
 The reviewed files are identified by SHA-256 in the source manifest and,
 where a separate review exists, by the review's own explicit source pin.
 
