@@ -1,0 +1,2 @@
+'Collatz.TernaryPortal.prepare_signed' depends on axioms: [propext, Quot.sound]
+'Collatz.TernaryPortal.hard_family_paid' depends on axioms: [propext, Classical.choice, Quot.sound]

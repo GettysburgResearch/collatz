@@ -1,0 +1,1852 @@
+{
+  "schema": "collatz-astra-unconventional-replay/v1",
+  "started_utc": "2026-11-26T21:33:00.117252+00:00",
+  "scope": "All new public Lean declarations, specified finite controls, and the integer rank-twelve pressure certificate; not the infinite written arguments or external range verification",
+  "commit": "d0611ca619a783e85a533bc695fa4abef5013ce7",
+  "tree": "59a4eeeacf3b0737add0b3fdb7f76c652f4506c1",
+  "tracked_file_count": 1173,
+  "sources_before": {
+    "research/astra-unconventional-20261126/FINAL_PROPOSAL.md": "a2f0baa9b6d0c60f49fc675a5cffbaedd0ff931311823dec947cd2497a870d8c",
+    "research/astra-unconventional-20261126/README.md": "11c7de3f4db90dd46a27863f8844d16eced069bb3cb522e04715e8926bafae2f",
+    "research/astra-unconventional-20261126/adelic/CHARACTERS.md": "7194c76bc2d47dfd9d75812e85d93391b1eb90ad42e2d68aa4174f5f6deb8772",
+    "research/astra-unconventional-20261126/adelic/CUBIC_FIELDS.md": "81dde1190a0fd62d0c993b8a7307caf9efdd2b35f679f45b5919bd27d9fb94c8",
+    "research/astra-unconventional-20261126/adelic/CubicLift.lean": "245ff4636cf301803e957d6d31ed619501b16fb232f9c8b17014f1420a207113",
+    "research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean": "a2342657f19fdee201d5e7525e99446a36d53d6081e0d2c4ca80cc4faca2d3f0",
+    "research/astra-unconventional-20261126/adelic/GROWTH.md": "88e121bf76b790d3be963a81b9a759eeaf725a1fddcb5a652212af3e90eef1e2",
+    "research/astra-unconventional-20261126/adelic/INVARIANT_STRESS.md": "d0cd835106a0036728202b9d28a954ba75ba79576ab0db5f0d4d86d71b76e4b1",
+    "research/astra-unconventional-20261126/adelic/LOCAL_UNITS.md": "d2331049896599c76ab4fa1da95f98d525121fabc858a46a7b6fa6740ea0a2d4",
+    "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean": "0bd36100371417d21d4a43834886fc6681c147fa96eb09ec12c36e518c9d5819",
+    "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean": "14e577369f3f0d9613e3e26f37ec894785ae0a7143a5d5800453b371fdf1052b",
+    "research/astra-unconventional-20261126/adelic/PELL.md": "8edd8f0afeca4705be34fac0b2a1a17486655a98d46d855417ab5d75c0b57baf",
+    "research/astra-unconventional-20261126/adelic/PellBoundary.lean": "a1ed8683040dfe3c060b87c91f9df11aac5d502cd7f955957c0328cb351dddad",
+    "research/astra-unconventional-20261126/adelic/README.md": "8c83afb93e53f44cb98e610103bac69023ffa9b786a0a3dbe730d78b5300d0b5",
+    "research/astra-unconventional-20261126/adelic/REGULATOR_REPAIR.md": "d2f79464a116aa9de19a2698d7c455876373bdf9901de97cac3f83c062ff877f",
+    "research/astra-unconventional-20261126/adelic/ShortRelations.lean": "4c9d2cd37bc3f345eac70fef59e262449345abc4c881ac718954cc9dd36fe947",
+    "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean": "7e9755c0f628c4d2fa56c85ba9f0b82f5af61cf69b2615867e0c0a70b89c221f",
+    "research/astra-unconventional-20261126/adelic/StressVariation.lean": "b9482d1de3f9ed4a165aaa410b3e6d3cff27cf8a69cef112902bf11e5966117f",
+    "research/astra-unconventional-20261126/adelic/check.py": "f1c96f1ed8407b9358f30bf2b35f70416c7c71efd89f9f455e061ab30553fd53",
+    "research/astra-unconventional-20261126/adelic/check_repair.py": "64702ffd83786dbdde55f84ea9a205501246a31d7b34bc16c5ed55a050aae627",
+    "research/astra-unconventional-20261126/adelic/check_units.py": "59cffeaec95c3d0a5def511dd17f823f76d6c3d7cb66a50ca27c82ddecd045a7",
+    "research/astra-unconventional-20261126/descent/DelayAddresses.lean": "57f77d894fdd8b2d0eff51e1e1966d3c827807670e8dfacefceadc28fecf994a",
+    "research/astra-unconventional-20261126/descent/JOINT_OBSTRUCTION.md": "ee53fabbb19bfe9e172b942ebeeff0f256dd50c1986ca18a51839c3da2a553ef",
+    "research/astra-unconventional-20261126/descent/PAID_DELAY_REPAIRS.md": "033a26d273c093f918fb92848e90542ec8b514933601162e531addd0332258b0",
+    "research/astra-unconventional-20261126/descent/PAIRED.md": "3a3e918075c9229231cd79536107becdf9f76f6a2264a065b3877ae69a4ad082",
+    "research/astra-unconventional-20261126/descent/POSTPEAK_DELAY.md": "3b1bfe0cc76ff471b8b69fbc6ef5b208ef4d9c53d67e2803a315c7d6320f59d3",
+    "research/astra-unconventional-20261126/descent/POSTPEAK_DENSITY.md": "0a8b9c8d7870ecb132e7ff8b107fc72260ebbf9672c5b5914b4fd1221572d5e7",
+    "research/astra-unconventional-20261126/descent/Portal.lean": "7a0a65dbc67f6cf52d28099a7cdaf83eeda2fe88e5684bdfc102bffbc377cc14",
+    "research/astra-unconventional-20261126/descent/README.md": "c83e182153e7633b448596ab415208dd8cee497b514d434147db8bd5cb9dea71",
+    "research/astra-unconventional-20261126/descent/SIGNED_COVERAGE.md": "a455a3f5e33a09cd79f24541c4a5ee1e40fb656612979a480e29e791c187a4d1",
+    "research/astra-unconventional-20261126/descent/SIGNED_MERSENNE.md": "99449484f79ab03c0695c3510f743735d18c090be4c80646261613a7506c5393",
+    "research/astra-unconventional-20261126/descent/SignedDelay.lean": "501d0b5d353defbddea9c4c401221f379a320e8f0b6160cabf27292fcd828045",
+    "research/astra-unconventional-20261126/descent/SignedHardFamily.lean": "9f278bd1bc93685e2a95db538310883f0bb999ad2941988df4b4ef229be6a6cd",
+    "research/astra-unconventional-20261126/descent/SignedIndex.lean": "2e31a65572774a530a17b5c7ab95578e76e6041b632a0548dfc853918c3c7f56",
+    "research/astra-unconventional-20261126/descent/SignedMersenne.lean": "68944962772be9a5e40e78dd953a040d41940e8e49ea4ac8b5d992addc0ccf4a",
+    "research/astra-unconventional-20261126/descent/SignedNarrow.lean": "df1f578680fbc1eadd08398835fbf80dbfd8e1f0e75fc87eb02695cbe62377f8",
+    "research/astra-unconventional-20261126/descent/TRANSLATIONS.md": "38d485f9744a589e9bfebd65f8b700c6a57d4f3ddde051c97d0f0b57ba82273c",
+    "research/astra-unconventional-20261126/descent/Translations.lean": "6a14bf25ff5713775d6dcfbb34be6d5a56a5a7fcbd5c7f67ab5a32c63fa9a263",
+    "research/astra-unconventional-20261126/descent/check.py": "0a699c419ba7b529deaed1d69a7f453d185c9ac3385f132ca332eac9c1c16429",
+    "research/astra-unconventional-20261126/descent/paid_delay_repairs.py": "079273dd2612279e025e8d08dbc5d3940d2cb3ab6336a260624efe10b19dde6f",
+    "research/astra-unconventional-20261126/descent/paired_words.py": "d1153023fa1136111bf134c8c633fbd9298e357138aa88da77f2ae1c6be078bb",
+    "research/astra-unconventional-20261126/descent/portal.py": "36ad3995cf752cf46bd0a8449c3a87a6c2f205114146343cf7c7ac4c5b5607ab",
+    "research/astra-unconventional-20261126/descent/postpeak_check.py": "8627f6bdc4ac1116f949fec3a6a60f94d48f0f185607ff84c8d8025e5a6431eb",
+    "research/astra-unconventional-20261126/descent/returns.py": "0b207907535a24e1a7aacecd458212b6766f4607bb3ddc006ddc8d880743ac6d",
+    "research/astra-unconventional-20261126/descent/signed_mersenne.py": "2202297efb918909c272f2365fcaddaf5714f36287c08699ead262d0fa2cd46d",
+    "research/astra-unconventional-20261126/operator/COMMON_HOLDS.md": "d516dad224fcd71573b3d8f584cffd330c259e5b4a5fb11a65622e139319b2f6",
+    "research/astra-unconventional-20261126/operator/GAP_ENTROPY.md": "a1ca19443a459ba7e19440af69fcd05e19fa8e8745b66225a5fa99904295a4ef",
+    "research/astra-unconventional-20261126/operator/GapArithmetic.lean": "f580164c9d72b6ae50d9c898fb5921c9b24c5f8fdd8ed4eab6869f9a4c243bad",
+    "research/astra-unconventional-20261126/operator/PAIRED_CAPACITY.md": "920e58ed886dcbe7fa3295065b82721db92ef9a8d290aadf5ca84471cc813139",
+    "research/astra-unconventional-20261126/operator/PAIRED_GAIN.md": "adebea3ecfd3db72ea810b9204370446135e5bfb9e4a3fd3986cf394b5627914",
+    "research/astra-unconventional-20261126/operator/PairedCapacity.lean": "013eeb74ded2dc256121fb37387f76b7156dc7189704f8a0685007a3baad9506",
+    "research/astra-unconventional-20261126/operator/PairedGain.lean": "016b0d3894815d7641f5a5496b4738d8a5a0fed13ce10e180d63951e79ce5c24",
+    "research/astra-unconventional-20261126/operator/RANK_PRESSURE.md": "140fc93ff8bb3358e81d1d23c4252ca17d38e9e73ef41f2a353098f0399b0e3d",
+    "research/astra-unconventional-20261126/operator/README.md": "aa51cfe5ba46a51907f799aa8576753bd4e48e348a980848bbb0899b4da43b39",
+    "research/astra-unconventional-20261126/operator/SUFFIX_MASS.md": "fbcbbd9a2be727ae06c76af91afcba176d31cc6717e4e4fec79c02f79ced6b68",
+    "research/astra-unconventional-20261126/operator/SuffixMass.lean": "f9e1d9b51c4f3b43fcf5a782e08273146720c88e3f0de78cc160a1c5c8cb286d",
+    "research/astra-unconventional-20261126/operator/WeightedTransport.lean": "5ed8bee6f02d14fc5b41a9c534961af6073ac0c5ea9562b6d0b5c7a6cece1f13",
+    "research/astra-unconventional-20261126/operator/distortion_bounds.py": "a63ab70be9d229b955873e9b11f6db0c4ae7c05b8e829b509e66e5381022c55e",
+    "research/astra-unconventional-20261126/operator/rank_pressure.cpp": "0695caefeb9f124d777597ea7a6c94c7df85ab743b6d15b127751a452b3affea"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean and Mathlib dependency objects reused; every project dependency and new module rebuilt in a new empty object directory",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ed89426b1007/verified-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.298,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-adelic-CubicLift",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/CubicLift.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/CubicLift.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 8.766,
+      "stdout_sha256": "278153cb4811a67201e15187b9b2e1d9444abe71e00c23ab2ed0bae1e1ecbd4a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ba41b2a41f283b78538368dfc075f3ea2b10d08002e3f05dfa38876ca0a19f7f"
+    },
+    {
+      "label": "lean-adelic-CyclotomicCorrection",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/CyclotomicCorrection.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.815,
+      "stdout_sha256": "cbbd30d466e301710ea7fa8e1a7204ea21c4520a84f63607a98194dc728f8020",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "aef58f869344da5c6e71812baec601454d41d0b79473e2e0958dc1007863abcb"
+    },
+    {
+      "label": "lean-adelic-LocalUnitRelations",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/LocalUnitRelations.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.172,
+      "stdout_sha256": "834d2b06bdd99813b72a616487fe9a83fef4ebc74fa21ec326ca237b5941a5f4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "6a51f81d7e73ec4a861fb9c047ee8ef8fa8f841c393cfd868c1b3a8ba89b25a9"
+    },
+    {
+      "label": "lean-adelic-MixedSquareGrid",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/MixedSquareGrid.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.714,
+      "stdout_sha256": "a716779385af54bcab50c53ae58e83356cd6be573324e5900510cdd07527b225",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "da48c219ec11f4b290b264e3421a9452cdae6a476a5bf2ac3ce42cc7570d0111"
+    },
+    {
+      "label": "lean-adelic-PellBoundary",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/PellBoundary.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/PellBoundary.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.86,
+      "stdout_sha256": "4b450f32a94794b1f239fd30b478736cba77372fe4db1412109b9540580292a8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "fad96092a657d28afda9b508998f9d568ed23621ae8d94491d5e47e31cbc8011"
+    },
+    {
+      "label": "lean-adelic-ShortRelations",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/ShortRelations.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/ShortRelations.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.64,
+      "stdout_sha256": "a0590bc21fbd0f2c7507fb19b5f5d8c431874442baa3b86433f0904fb589615b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f7e2c0f8105736247ac13f3dd5601eac67cfe9d131cd7cb81b46356533d09d60"
+    },
+    {
+      "label": "lean-adelic-SquareclassDescent",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SquareclassDescent.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/SquareclassDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.832,
+      "stdout_sha256": "1f5c851359c89a61ae231604ccfc0d421776644c9c3c29dcb882914e36d792af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "dfdf03147035ce009374390a3c22fbf59a6e75bc2f15f6bd14dfb8f30d0ad0a7"
+    },
+    {
+      "label": "lean-adelic-StressVariation",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/StressVariation.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/StressVariation.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.28,
+      "stdout_sha256": "3a2dfa3915bbe8f28e11dc1bcb65340983eca2d199b2610aa69265dddede7885",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "20a4425effa4b6538fed5227f878ecab675b9211d64aa57aad7cb87060d00cda"
+    },
+    {
+      "label": "lean-descent-SignedIndex",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SignedIndex.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/SignedIndex.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.963,
+      "stdout_sha256": "4c49175e18989b7f9ec6eee11a26c2bb9c94a80317cacc6cae378648327d31a6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "e12d04ae11e7dc2e35d3e5dd2bd3ea149e1a16c3e579c1481e3d1506d8b37e72"
+    },
+    {
+      "label": "lean-descent-Portal",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/Portal.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/Portal.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.191,
+      "stdout_sha256": "ed6205c9a86f0d7421db689b788f969bc6247a112bef49f3199d3dc5edda4916",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "06d8aaffbb847a0f35af7b9089f82ea766005e395e87894b4cd6270c4ac4586f"
+    },
+    {
+      "label": "lean-descent-SignedDelay",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SignedDelay.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/SignedDelay.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.131,
+      "stdout_sha256": "6c199acaebe20ba56f537fb54405046ca35c58c1b3423aefbf5268d5ff72dd64",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "379ea975e8402a24553049b0308d68cc317607b00882c3ae8e26a9249051dbc6"
+    },
+    {
+      "label": "lean-descent-DelayAddresses",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/DelayAddresses.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/DelayAddresses.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.03,
+      "stdout_sha256": "a1897c1ca6f368bf06d9357d2dcb0c8bd2c5ff16a614f12529406012374ef6c0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "c408837b8f90b9008fba3fc61a467d757da588884cd4e61530e5f20e24b89620"
+    },
+    {
+      "label": "lean-descent-SignedMersenne",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SignedMersenne.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/SignedMersenne.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 24.854,
+      "stdout_sha256": "0e78c09fbd039f3d5bb3b8465ac36539b1c5869a06751190bd58cc8584f202d9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ddc4ca0fdde85be22bfb9d8e464c131009d3eb98a1f240b0dd2bb00ce4c58643"
+    },
+    {
+      "label": "lean-descent-SignedHardFamily",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SignedHardFamily.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/SignedHardFamily.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.222,
+      "stdout_sha256": "93aac967309c26121412c2a01d87ffe175a6a462c960324f4005a511d580c531",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "97024126186a780930b08232ac277458950e3d37a7f0551c7ec01e197904d9ab"
+    },
+    {
+      "label": "lean-descent-SignedNarrow",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SignedNarrow.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/SignedNarrow.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 46.151,
+      "stdout_sha256": "40066aee55237028f42ffae6cf58b923430f095b037dd749504542abe959a183",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "52235002b836654e743d7a581aefec113c6eeac0e9a212a29f07fab504059ab4"
+    },
+    {
+      "label": "lean-descent-Translations",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/Translations.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/Translations.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.762,
+      "stdout_sha256": "48dfbffc21a23463095ee9d8bef3089c65cdb3bdda005d523879afb4aeefb279",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f167e069f8dd0d66839ec906e83238013287ac0d61b2d4a8afdc717d5c016158"
+    },
+    {
+      "label": "lean-operator-GapArithmetic",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/GapArithmetic.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/GapArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.52,
+      "stdout_sha256": "98162da08b64153ceb893c53e217fd2f8c8037e7d89fb41d9c7cceed9c40e427",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "1b7b974d9e3713a82c26fea998396cda1b92f7204bba5d44af13dc18c0630d8a"
+    },
+    {
+      "label": "lean-operator-PairedCapacity",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/PairedCapacity.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/PairedCapacity.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.617,
+      "stdout_sha256": "e08ad6725baa0c43195a8fee25039be4c0f85f56741c47de4776229c4ac7b803",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ff61d9f0aec3ef6d8e88ea7fa9dcf76c959b06f1ecc99185058966aa98dd7b05"
+    },
+    {
+      "label": "lean-operator-PairedGain",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/PairedGain.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/PairedGain.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.85,
+      "stdout_sha256": "5754bed0a921895bfa1a30e645883432b4ee9cde417b03d46f232dfa449dd5de",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "a9ca2e0181e7578990bfc615efca9c4436050e03fed9caed724ef6fda67c406d"
+    },
+    {
+      "label": "lean-operator-SuffixMass",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/SuffixMass.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/SuffixMass.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.108,
+      "stdout_sha256": "4d014633de3351bc018ffcca8699556f6bab8b26b1d019ae0b064bdc32db5d52",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "8c1ba6367a15d97174b8fa3303a6c207ce893aa436494bd70e1a11c4b045df1e"
+    },
+    {
+      "label": "lean-operator-WeightedTransport",
+      "argv": [
+        "/workspace/scratch/ed89426b1007/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/objects/WeightedTransport.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/WeightedTransport.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.925,
+      "stdout_sha256": "7c2ec341933d48773d1f0cf5065ce98e7f3bff469cef77589d957b2bc55a2790",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "a705c244ee89a19062e9fab983d6d48525379e84968a667f891e43eb2068c830"
+    },
+    {
+      "label": "python-adelic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.538,
+      "stdout_sha256": "29cc2aef33e7f338057cc8417bbf88fda5aa19044b9ea4e71aac9532f18889d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-adelic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.738,
+      "stdout_sha256": "29cc2aef33e7f338057cc8417bbf88fda5aa19044b9ea4e71aac9532f18889d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-adelic-check_units",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check_units.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.391,
+      "stdout_sha256": "90c399cdd66ab692d58c767b931dc69f0d17003e06791038d93fd05381369563",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-adelic-check_units",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check_units.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.486,
+      "stdout_sha256": "90c399cdd66ab692d58c767b931dc69f0d17003e06791038d93fd05381369563",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-adelic-check_repair",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check_repair.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.729,
+      "stdout_sha256": "a2feffa81fc51d94c8289fb932b81674942c99a03fa92f970657d2f11d63c978",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-adelic-check_repair",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/adelic/check_repair.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.771,
+      "stdout_sha256": "a2feffa81fc51d94c8289fb932b81674942c99a03fa92f970657d2f11d63c978",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.05,
+      "stdout_sha256": "79838959d8e9ae90ff51b4b650515ae3ebf99cc07b468fa1ace22350cb05ab06",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.046,
+      "stdout_sha256": "79838959d8e9ae90ff51b4b650515ae3ebf99cc07b468fa1ace22350cb05ab06",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-paired_words",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/paired_words.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.096,
+      "stdout_sha256": "713c5ab0d1b2f281ef869be1b2860c85fe52351b9e52119ae20645ff598188b1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-paired_words",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/paired_words.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.081,
+      "stdout_sha256": "713c5ab0d1b2f281ef869be1b2860c85fe52351b9e52119ae20645ff598188b1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-signed_mersenne",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/signed_mersenne.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.158,
+      "stdout_sha256": "b749677eaa989cb6db2a7b10311179a9d416f4b22cdac5a443d206f087fbf3d5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-signed_mersenne",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/signed_mersenne.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.115,
+      "stdout_sha256": "b749677eaa989cb6db2a7b10311179a9d416f4b22cdac5a443d206f087fbf3d5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-postpeak_check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/postpeak_check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.086,
+      "stdout_sha256": "e94efa60717724079d05484e4715533c11ccb28b1a1ed0a3439b4c72dbcae151",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-postpeak_check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/postpeak_check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.797,
+      "stdout_sha256": "e94efa60717724079d05484e4715533c11ccb28b1a1ed0a3439b4c72dbcae151",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-paid_delay_repairs",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/paid_delay_repairs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5,
+      "stdout_sha256": "f8ff5365782b708d9444c8bf747347923e7ebe66248d4c88d644122726b05708",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-paid_delay_repairs",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/descent/paid_delay_repairs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.562,
+      "stdout_sha256": "f8ff5365782b708d9444c8bf747347923e7ebe66248d4c88d644122726b05708",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-operator-distortion_bounds",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/distortion_bounds.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.329,
+      "stdout_sha256": "57606dd9c6d5f7efab609e914d8921397b6bdf8faaa2a1ac815e28ca0b61483c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-operator-distortion_bounds",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/distortion_bounds.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.35,
+      "stdout_sha256": "57606dd9c6d5f7efab609e914d8921397b6bdf8faaa2a1ac815e28ca0b61483c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cpp-version",
+      "argv": [
+        "g++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.003,
+      "stdout_sha256": "5f6798e87440f1e8b88bf6822c33bebe434f83374640a7f8ba967902ee1ea098",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cpp-rank_pressure-build",
+      "argv": [
+        "g++",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O3",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/rank_pressure.cpp",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/cpp-rank_pressure"
+      ],
+      "exit_code": 0,
+      "seconds": 1.222,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cpp-rank_pressure-run",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/cpp-rank_pressure",
+        "12"
+      ],
+      "exit_code": 0,
+      "seconds": 35.26,
+      "stdout_sha256": "e938ef107920d60aa79bbb2cb62deb34f9871c32f85a98cc7e8fa0436905c6a9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cpp-ubsan-rank_pressure-build",
+      "argv": [
+        "g++",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/workspace/scratch/ae8b5ba301f1/collatz-unconventional-late-science/research/astra-unconventional-20261126/operator/rank_pressure.cpp",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/cpp-ubsan-rank_pressure"
+      ],
+      "exit_code": 0,
+      "seconds": 1.157,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "cpp-ubsan-rank_pressure-run",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/cpp-ubsan-rank_pressure",
+        "12"
+      ],
+      "exit_code": 0,
+      "seconds": 71.191,
+      "stdout_sha256": "e938ef107920d60aa79bbb2cb62deb34f9871c32f85a98cc7e8fa0436905c6a9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--regressions",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/unconventional-late-replay/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 7.014,
+      "stdout_sha256": "108655f1e1b8e3f7d554c1f19af28edef476cb6abdb32537cbd7536d74ca8afc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.normalized_parameter",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.normalized_polynomial",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.trace_cube",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.trace_factorizations",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.no_primitive_root",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CubicLift.lean",
+      "declaration": "Collatz.CubicLift.polynomial_discriminant",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean",
+      "declaration": "Collatz.CyclotomicCorrection.power_correction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean",
+      "declaration": "Collatz.CyclotomicCorrection.two_corrections",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean",
+      "declaration": "Collatz.CyclotomicCorrection.repair_coordinates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.local_trace_identities",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.asymmetric_norms",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.third_field_trace",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.interval_cayley",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.physical_swaps",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean",
+      "declaration": "Collatz.LocalUnitRelations.no_corrected_prime_descent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.single_factor",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.square_root_vanishes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.ternary_grid_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean",
+      "declaration": "Collatz.MixedSquareGrid.shifted_grid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.pell_traces",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.punctured_edge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.abel_arguments",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.fricke",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.eliminate_trace",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.trace_grid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/PellBoundary.lean",
+      "declaration": "Collatz.PellBoundary.ordinary_coordinate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/ShortRelations.lean",
+      "declaration": "Collatz.ShortRelations.short_relation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/ShortRelations.lean",
+      "declaration": "Collatz.ShortRelations.protected_weight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.physical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.next_odd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.clock_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.growth_carry",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.square_after_growth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.local_descent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.reaches_one_of_dependent_growth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.dyadic_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean",
+      "declaration": "Collatz.SquareclassDescent.dyadic_prefix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/StressVariation.lean",
+      "declaration": "Collatz.StressVariation.first_variation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/StressVariation.lean",
+      "declaration": "Collatz.StressVariation.second_variation",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/StressVariation.lean",
+      "declaration": "Collatz.StressVariation.curvature_margin",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/StressVariation.lean",
+      "declaration": "Collatz.StressVariation.affine_checkerboard",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedIndex.lean",
+      "declaration": "Collatz.SignedMersenneIndex.compatible_index",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedIndex.lean",
+      "declaration": "Collatz.SignedMersenneIndex.compatible_above",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedIndex.lean",
+      "declaration": "Collatz.SignedMersenneIndex.compatible_target",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.run_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.odds_add",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.halves",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.physical_envelope",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.prefix_lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.paired_cusp",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.decode_congruence",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.decode",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Portal.lean",
+      "declaration": "Collatz.TernaryPortal.peak",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.signed_peaks_apart",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.delayed_lifts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.ordinary_delayed_lifts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.peak_gap",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.postpeak_no_meeting",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.all_earlier",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+      "declaration": "Collatz.SignedPeakDelay.explicit_delayed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/DelayAddresses.lean",
+      "declaration": "Collatz.SignedPeakDelay.hard_delays_every_address",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_original",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_four",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_stable",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_canonical_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_canonical_two",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_paid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_height_eighty",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_four_smaller",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedMersenne.lean",
+      "declaration": "Collatz.TernaryPortal.hard_mersenne_certificate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedHardFamily.lean",
+      "declaration": "Collatz.TernaryPortal.prepare_signed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedHardFamily.lean",
+      "declaration": "Collatz.TernaryPortal.hard_family_paid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/SignedNarrow.lean",
+      "declaration": "Collatz.TernaryPortal.signed_narrow",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Translations.lean",
+      "declaration": "Collatz.TernaryPortal.paired_adjacent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Translations.lean",
+      "declaration": "Collatz.TernaryPortal.paired_three",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Translations.lean",
+      "declaration": "Collatz.TernaryPortal.four_cross",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/Translations.lean",
+      "declaration": "Collatz.TernaryPortal.no_paired_four",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/GapArithmetic.lean",
+      "declaration": "Collatz.GapArithmetic.offset_unit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/GapArithmetic.lean",
+      "declaration": "Collatz.GapArithmetic.zero_offset_rank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/GapArithmetic.lean",
+      "declaration": "Collatz.GapArithmetic.deep_ends",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/GapArithmetic.lean",
+      "declaration": "Collatz.GapArithmetic.excursion_growth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/GapArithmetic.lean",
+      "declaration": "Collatz.GapArithmetic.rank_zero_amortization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.ordinary_carry_nonzero",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.carry_update",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.one_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.ordinary_clock_product",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.grade_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedCapacity.lean",
+      "declaration": "Collatz.PairedCapacity.word_endpoint_injective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedGain.lean",
+      "declaration": "Collatz.PairedGain.good_suffix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedGain.lean",
+      "declaration": "Collatz.PairedGain.ordinary_transfer",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedGain.lean",
+      "declaration": "Collatz.PairedGain.terminal_mod_nine",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/PairedGain.lean",
+      "declaration": "Collatz.PairedGain.forty_bits",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.fits_iff_residue",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.stopped_mass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.strict_unit_mass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.signed_cut_prefix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.post_cut_class",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.forward_shift_band",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/SuffixMass.lean",
+      "declaration": "Collatz.SuffixMass.reverse_shift_charge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.boundary_atom",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.path_boundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.finite_collision",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.cycle_primitive",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.eventual_hits",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.positive_cycle_contracts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/WeightedTransport.lean",
+      "declaration": "Collatz.WeightedTransport.ordinary_cycle_primitive",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-unconventional-20261126/adelic/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/check_units.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/adelic/check_repair.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/paired_words.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/signed_mersenne.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/postpeak_check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/descent/paid_delay_repairs.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-unconventional-20261126/operator/distortion_bounds.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "cpp_pairs": [
+    {
+      "source": "research/astra-unconventional-20261126/operator/rank_pressure.cpp",
+      "rank_bound": 12,
+      "identical_output": true,
+      "undefined_behavior_sanitizer": true,
+      "certificate_summary": "R=12 rate=90/100 raised=835391 updates=32674072 max_raised_abs_carry=2684354560 root_weight=190 build_checks=189473786 verification_checks=23090720"
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_comparison": {
+    "files": 9114,
+    "mismatches": 0,
+    "source_manifest_sha256": "19356a0bbc13f8a6c54ce09ba884b03f2e51aa238e8b83c304d77ac7d6045359",
+    "fresh_checkout": "/workspace/scratch/ae8b5ba301f1/mathlib-provenance",
+    "cached_source_tree": "/workspace/scratch/ed89426b1007/verified-mathlib"
+  },
+  "new_module_count": 21,
+  "project_dependency_count": 0,
+  "cpp_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "sources_after": {
+    "research/astra-unconventional-20261126/FINAL_PROPOSAL.md": "a2f0baa9b6d0c60f49fc675a5cffbaedd0ff931311823dec947cd2497a870d8c",
+    "research/astra-unconventional-20261126/README.md": "11c7de3f4db90dd46a27863f8844d16eced069bb3cb522e04715e8926bafae2f",
+    "research/astra-unconventional-20261126/adelic/CHARACTERS.md": "7194c76bc2d47dfd9d75812e85d93391b1eb90ad42e2d68aa4174f5f6deb8772",
+    "research/astra-unconventional-20261126/adelic/CUBIC_FIELDS.md": "81dde1190a0fd62d0c993b8a7307caf9efdd2b35f679f45b5919bd27d9fb94c8",
+    "research/astra-unconventional-20261126/adelic/CubicLift.lean": "245ff4636cf301803e957d6d31ed619501b16fb232f9c8b17014f1420a207113",
+    "research/astra-unconventional-20261126/adelic/CyclotomicCorrection.lean": "a2342657f19fdee201d5e7525e99446a36d53d6081e0d2c4ca80cc4faca2d3f0",
+    "research/astra-unconventional-20261126/adelic/GROWTH.md": "88e121bf76b790d3be963a81b9a759eeaf725a1fddcb5a652212af3e90eef1e2",
+    "research/astra-unconventional-20261126/adelic/INVARIANT_STRESS.md": "d0cd835106a0036728202b9d28a954ba75ba79576ab0db5f0d4d86d71b76e4b1",
+    "research/astra-unconventional-20261126/adelic/LOCAL_UNITS.md": "d2331049896599c76ab4fa1da95f98d525121fabc858a46a7b6fa6740ea0a2d4",
+    "research/astra-unconventional-20261126/adelic/LocalUnitRelations.lean": "0bd36100371417d21d4a43834886fc6681c147fa96eb09ec12c36e518c9d5819",
+    "research/astra-unconventional-20261126/adelic/MixedSquareGrid.lean": "14e577369f3f0d9613e3e26f37ec894785ae0a7143a5d5800453b371fdf1052b",
+    "research/astra-unconventional-20261126/adelic/PELL.md": "8edd8f0afeca4705be34fac0b2a1a17486655a98d46d855417ab5d75c0b57baf",
+    "research/astra-unconventional-20261126/adelic/PellBoundary.lean": "a1ed8683040dfe3c060b87c91f9df11aac5d502cd7f955957c0328cb351dddad",
+    "research/astra-unconventional-20261126/adelic/README.md": "8c83afb93e53f44cb98e610103bac69023ffa9b786a0a3dbe730d78b5300d0b5",
+    "research/astra-unconventional-20261126/adelic/REGULATOR_REPAIR.md": "d2f79464a116aa9de19a2698d7c455876373bdf9901de97cac3f83c062ff877f",
+    "research/astra-unconventional-20261126/adelic/ShortRelations.lean": "4c9d2cd37bc3f345eac70fef59e262449345abc4c881ac718954cc9dd36fe947",
+    "research/astra-unconventional-20261126/adelic/SquareclassDescent.lean": "7e9755c0f628c4d2fa56c85ba9f0b82f5af61cf69b2615867e0c0a70b89c221f",
+    "research/astra-unconventional-20261126/adelic/StressVariation.lean": "b9482d1de3f9ed4a165aaa410b3e6d3cff27cf8a69cef112902bf11e5966117f",
+    "research/astra-unconventional-20261126/adelic/check.py": "f1c96f1ed8407b9358f30bf2b35f70416c7c71efd89f9f455e061ab30553fd53",
+    "research/astra-unconventional-20261126/adelic/check_repair.py": "64702ffd83786dbdde55f84ea9a205501246a31d7b34bc16c5ed55a050aae627",
+    "research/astra-unconventional-20261126/adelic/check_units.py": "59cffeaec95c3d0a5def511dd17f823f76d6c3d7cb66a50ca27c82ddecd045a7",
+    "research/astra-unconventional-20261126/descent/DelayAddresses.lean": "57f77d894fdd8b2d0eff51e1e1966d3c827807670e8dfacefceadc28fecf994a",
+    "research/astra-unconventional-20261126/descent/JOINT_OBSTRUCTION.md": "ee53fabbb19bfe9e172b942ebeeff0f256dd50c1986ca18a51839c3da2a553ef",
+    "research/astra-unconventional-20261126/descent/PAID_DELAY_REPAIRS.md": "033a26d273c093f918fb92848e90542ec8b514933601162e531addd0332258b0",
+    "research/astra-unconventional-20261126/descent/PAIRED.md": "3a3e918075c9229231cd79536107becdf9f76f6a2264a065b3877ae69a4ad082",
+    "research/astra-unconventional-20261126/descent/POSTPEAK_DELAY.md": "3b1bfe0cc76ff471b8b69fbc6ef5b208ef4d9c53d67e2803a315c7d6320f59d3",
+    "research/astra-unconventional-20261126/descent/POSTPEAK_DENSITY.md": "0a8b9c8d7870ecb132e7ff8b107fc72260ebbf9672c5b5914b4fd1221572d5e7",
+    "research/astra-unconventional-20261126/descent/Portal.lean": "7a0a65dbc67f6cf52d28099a7cdaf83eeda2fe88e5684bdfc102bffbc377cc14",
+    "research/astra-unconventional-20261126/descent/README.md": "c83e182153e7633b448596ab415208dd8cee497b514d434147db8bd5cb9dea71",
+    "research/astra-unconventional-20261126/descent/SIGNED_COVERAGE.md": "a455a3f5e33a09cd79f24541c4a5ee1e40fb656612979a480e29e791c187a4d1",
+    "research/astra-unconventional-20261126/descent/SIGNED_MERSENNE.md": "99449484f79ab03c0695c3510f743735d18c090be4c80646261613a7506c5393",
+    "research/astra-unconventional-20261126/descent/SignedDelay.lean": "501d0b5d353defbddea9c4c401221f379a320e8f0b6160cabf27292fcd828045",
+    "research/astra-unconventional-20261126/descent/SignedHardFamily.lean": "9f278bd1bc93685e2a95db538310883f0bb999ad2941988df4b4ef229be6a6cd",
+    "research/astra-unconventional-20261126/descent/SignedIndex.lean": "2e31a65572774a530a17b5c7ab95578e76e6041b632a0548dfc853918c3c7f56",
+    "research/astra-unconventional-20261126/descent/SignedMersenne.lean": "68944962772be9a5e40e78dd953a040d41940e8e49ea4ac8b5d992addc0ccf4a",
+    "research/astra-unconventional-20261126/descent/SignedNarrow.lean": "df1f578680fbc1eadd08398835fbf80dbfd8e1f0e75fc87eb02695cbe62377f8",
+    "research/astra-unconventional-20261126/descent/TRANSLATIONS.md": "38d485f9744a589e9bfebd65f8b700c6a57d4f3ddde051c97d0f0b57ba82273c",
+    "research/astra-unconventional-20261126/descent/Translations.lean": "6a14bf25ff5713775d6dcfbb34be6d5a56a5a7fcbd5c7f67ab5a32c63fa9a263",
+    "research/astra-unconventional-20261126/descent/check.py": "0a699c419ba7b529deaed1d69a7f453d185c9ac3385f132ca332eac9c1c16429",
+    "research/astra-unconventional-20261126/descent/paid_delay_repairs.py": "079273dd2612279e025e8d08dbc5d3940d2cb3ab6336a260624efe10b19dde6f",
+    "research/astra-unconventional-20261126/descent/paired_words.py": "d1153023fa1136111bf134c8c633fbd9298e357138aa88da77f2ae1c6be078bb",
+    "research/astra-unconventional-20261126/descent/portal.py": "36ad3995cf752cf46bd0a8449c3a87a6c2f205114146343cf7c7ac4c5b5607ab",
+    "research/astra-unconventional-20261126/descent/postpeak_check.py": "8627f6bdc4ac1116f949fec3a6a60f94d48f0f185607ff84c8d8025e5a6431eb",
+    "research/astra-unconventional-20261126/descent/returns.py": "0b207907535a24e1a7aacecd458212b6766f4607bb3ddc006ddc8d880743ac6d",
+    "research/astra-unconventional-20261126/descent/signed_mersenne.py": "2202297efb918909c272f2365fcaddaf5714f36287c08699ead262d0fa2cd46d",
+    "research/astra-unconventional-20261126/operator/COMMON_HOLDS.md": "d516dad224fcd71573b3d8f584cffd330c259e5b4a5fb11a65622e139319b2f6",
+    "research/astra-unconventional-20261126/operator/GAP_ENTROPY.md": "a1ca19443a459ba7e19440af69fcd05e19fa8e8745b66225a5fa99904295a4ef",
+    "research/astra-unconventional-20261126/operator/GapArithmetic.lean": "f580164c9d72b6ae50d9c898fb5921c9b24c5f8fdd8ed4eab6869f9a4c243bad",
+    "research/astra-unconventional-20261126/operator/PAIRED_CAPACITY.md": "920e58ed886dcbe7fa3295065b82721db92ef9a8d290aadf5ca84471cc813139",
+    "research/astra-unconventional-20261126/operator/PAIRED_GAIN.md": "adebea3ecfd3db72ea810b9204370446135e5bfb9e4a3fd3986cf394b5627914",
+    "research/astra-unconventional-20261126/operator/PairedCapacity.lean": "013eeb74ded2dc256121fb37387f76b7156dc7189704f8a0685007a3baad9506",
+    "research/astra-unconventional-20261126/operator/PairedGain.lean": "016b0d3894815d7641f5a5496b4738d8a5a0fed13ce10e180d63951e79ce5c24",
+    "research/astra-unconventional-20261126/operator/RANK_PRESSURE.md": "140fc93ff8bb3358e81d1d23c4252ca17d38e9e73ef41f2a353098f0399b0e3d",
+    "research/astra-unconventional-20261126/operator/README.md": "aa51cfe5ba46a51907f799aa8576753bd4e48e348a980848bbb0899b4da43b39",
+    "research/astra-unconventional-20261126/operator/SUFFIX_MASS.md": "fbcbbd9a2be727ae06c76af91afcba176d31cc6717e4e4fec79c02f79ced6b68",
+    "research/astra-unconventional-20261126/operator/SuffixMass.lean": "f9e1d9b51c4f3b43fcf5a782e08273146720c88e3f0de78cc160a1c5c8cb286d",
+    "research/astra-unconventional-20261126/operator/WeightedTransport.lean": "5ed8bee6f02d14fc5b41a9c534961af6073ac0c5ea9562b6d0b5c7a6cece1f13",
+    "research/astra-unconventional-20261126/operator/distortion_bounds.py": "a63ab70be9d229b955873e9b11f6db0c4ae7c05b8e829b509e66e5381022c55e",
+    "research/astra-unconventional-20261126/operator/rank_pressure.cpp": "0695caefeb9f124d777597ea7a6c94c7df85ab743b6d15b127751a452b3affea"
+  },
+  "finished_utc": "2026-11-26T21:37:35.722333+00:00"
+}

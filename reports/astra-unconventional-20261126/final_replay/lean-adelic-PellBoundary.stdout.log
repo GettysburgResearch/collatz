@@ -1,0 +1,7 @@
+'Collatz.PellBoundary.pell_traces' depends on axioms: [propext, Quot.sound]
+'Collatz.PellBoundary.punctured_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellBoundary.abel_arguments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellBoundary.fricke' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellBoundary.eliminate_trace' depends on axioms: [propext, Quot.sound]
+'Collatz.PellBoundary.trace_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellBoundary.ordinary_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]

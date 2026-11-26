@@ -1,0 +1,269 @@
+{
+  "bridge": {
+    "hard_index": 4471574,
+    "k": 20883403,
+    "modulus": 43046721
+  },
+  "cases": [
+    {
+      "H": 22,
+      "canonical_seed": {
+        "denominator": 59049,
+        "lower_clock": 25,
+        "lower_odds": 10,
+        "u": 44102839,
+        "upper_clock": 25,
+        "upper_odds": 9,
+        "upper_witness_clock_change": 8,
+        "upper_witness_odd_change": 6
+      },
+      "earlier_odds": 30,
+      "h": 63,
+      "k": 1,
+      "original_odds": 20,
+      "s": 10
+    },
+    {
+      "H": 40,
+      "canonical_seed": {
+        "denominator": 729,
+        "lower_clock": 13,
+        "lower_odds": 6,
+        "u": 11911,
+        "upper_clock": 13,
+        "upper_odds": 5,
+        "upper_witness_clock_change": -16,
+        "upper_witness_odd_change": 2
+      },
+      "earlier_odds": 48,
+      "h": 95,
+      "k": 2,
+      "original_odds": 26,
+      "s": 22
+    },
+    {
+      "H": 58,
+      "earlier_odds": 92,
+      "h": 177,
+      "k": 3,
+      "original_odds": 49,
+      "s": 43
+    },
+    {
+      "H": 76,
+      "earlier_odds": 79,
+      "h": 167,
+      "k": 4,
+      "original_odds": 32,
+      "s": 47
+    },
+    {
+      "H": 94,
+      "earlier_odds": 136,
+      "h": 275,
+      "k": 5,
+      "original_odds": 73,
+      "s": 63
+    },
+    {
+      "H": 112,
+      "earlier_odds": 107,
+      "h": 227,
+      "k": 6,
+      "original_odds": 42,
+      "s": 65
+    },
+    {
+      "H": 130,
+      "earlier_odds": 69,
+      "h": 146,
+      "k": 7,
+      "original_odds": 10,
+      "s": 59
+    },
+    {
+      "H": 148,
+      "earlier_odds": 81,
+      "h": 186,
+      "k": 8,
+      "original_odds": 18,
+      "s": 63
+    },
+    {
+      "H": 166,
+      "earlier_odds": 130,
+      "h": 289,
+      "k": 9,
+      "original_odds": 47,
+      "s": 83
+    },
+    {
+      "H": 184,
+      "earlier_odds": 163,
+      "h": 338,
+      "k": 10,
+      "original_odds": 62,
+      "s": 101
+    },
+    {
+      "H": 202,
+      "earlier_odds": 154,
+      "h": 325,
+      "k": 11,
+      "original_odds": 47,
+      "s": 107
+    },
+    {
+      "H": 220,
+      "earlier_odds": 151,
+      "h": 296,
+      "k": 12,
+      "original_odds": 26,
+      "s": 125
+    },
+    {
+      "H": 238,
+      "earlier_odds": 164,
+      "h": 361,
+      "k": 13,
+      "original_odds": 47,
+      "s": 117
+    },
+    {
+      "H": 256,
+      "earlier_odds": 274,
+      "h": 607,
+      "k": 14,
+      "original_odds": 157,
+      "s": 117
+    },
+    {
+      "H": 274,
+      "earlier_odds": 138,
+      "h": 291,
+      "k": 15,
+      "original_odds": 11,
+      "s": 127
+    },
+    {
+      "H": 292,
+      "earlier_odds": 144,
+      "h": 306,
+      "k": 16,
+      "original_odds": 9,
+      "s": 135
+    },
+    {
+      "H": 310,
+      "earlier_odds": 196,
+      "h": 433,
+      "k": 17,
+      "original_odds": 47,
+      "s": 149
+    },
+    {
+      "H": 328,
+      "earlier_odds": 158,
+      "h": 342,
+      "k": 18,
+      "original_odds": 9,
+      "s": 149
+    },
+    {
+      "H": 346,
+      "earlier_odds": 222,
+      "h": 469,
+      "k": 19,
+      "original_odds": 47,
+      "s": 175
+    },
+    {
+      "H": 364,
+      "earlier_odds": 184,
+      "h": 378,
+      "k": 20,
+      "original_odds": 9,
+      "s": 175
+    },
+    {
+      "H": 382,
+      "earlier_odds": 505,
+      "h": 1021,
+      "k": 21,
+      "original_odds": 314,
+      "s": 191
+    },
+    {
+      "H": 400,
+      "earlier_odds": 277,
+      "h": 554,
+      "k": 22,
+      "original_odds": 62,
+      "s": 215
+    },
+    {
+      "H": 418,
+      "earlier_odds": 277,
+      "h": 572,
+      "k": 23,
+      "original_odds": 62,
+      "s": 215
+    },
+    {
+      "H": 436,
+      "earlier_odds": 321,
+      "h": 600,
+      "k": 24,
+      "original_odds": 66,
+      "s": 255
+    },
+    {
+      "H": 454,
+      "earlier_odds": 299,
+      "h": 618,
+      "k": 25,
+      "original_odds": 66,
+      "s": 233
+    },
+    {
+      "H": 472,
+      "earlier_odds": 6063,
+      "h": 12365,
+      "k": 26,
+      "original_odds": 6023,
+      "s": 40
+    },
+    {
+      "H": 490,
+      "earlier_odds": 560,
+      "h": 1163,
+      "k": 27,
+      "original_odds": 327,
+      "s": 233
+    },
+    {
+      "H": 508,
+      "earlier_odds": 329,
+      "h": 662,
+      "k": 28,
+      "original_odds": 62,
+      "s": 267
+    },
+    {
+      "H": 526,
+      "earlier_odds": 333,
+      "h": 690,
+      "k": 29,
+      "original_odds": 66,
+      "s": 267
+    },
+    {
+      "H": 544,
+      "earlier_odds": 320,
+      "h": 667,
+      "k": 30,
+      "original_odds": 47,
+      "s": 273
+    }
+  ]
+}

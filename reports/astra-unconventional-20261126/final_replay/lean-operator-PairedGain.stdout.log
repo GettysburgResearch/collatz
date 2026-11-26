@@ -1,0 +1,4 @@
+'Collatz.PairedGain.good_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedGain.ordinary_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedGain.terminal_mod_nine' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedGain.forty_bits' depends on axioms: [propext, Quot.sound]

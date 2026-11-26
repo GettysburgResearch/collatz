@@ -1,0 +1,7 @@
+'Collatz.SuffixMass.fits_iff_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.stopped_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.strict_unit_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.signed_cut_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.post_cut_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.forward_shift_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SuffixMass.reverse_shift_charge' depends on axioms: [propext, Classical.choice, Quot.sound]

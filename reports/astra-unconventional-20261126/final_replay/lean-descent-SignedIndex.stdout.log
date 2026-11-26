@@ -1,0 +1,3 @@
+'Collatz.SignedMersenneIndex.compatible_index' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedMersenneIndex.compatible_above' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedMersenneIndex.compatible_target' depends on axioms: [propext, Quot.sound]

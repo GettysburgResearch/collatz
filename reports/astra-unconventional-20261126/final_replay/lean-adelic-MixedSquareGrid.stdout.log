@@ -1,0 +1,4 @@
+'Collatz.MixedSquareGrid.single_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MixedSquareGrid.square_root_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MixedSquareGrid.ternary_grid_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MixedSquareGrid.shifted_grid' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+'Collatz.SignedPeakDelay.signed_peaks_apart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedPeakDelay.delayed_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedPeakDelay.ordinary_delayed_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedPeakDelay.peak_gap' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedPeakDelay.postpeak_no_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedPeakDelay.all_earlier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedPeakDelay.explicit_delayed' depends on axioms: [propext, Classical.choice, Quot.sound]
