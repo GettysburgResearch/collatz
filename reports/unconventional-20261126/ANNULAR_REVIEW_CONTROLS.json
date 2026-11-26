@@ -1,0 +1,52 @@
+{
+  "physical_cutoffs": 150,
+  "binary_model": {
+    "sources": 4096,
+    "targets": 8192,
+    "maximum_empirical_error": "1/4096",
+    "currents": [
+      {
+        "cutoff": 3,
+        "quadratic_current": "3/8"
+      },
+      {
+        "cutoff": 7,
+        "quadratic_current": "21/32"
+      },
+      {
+        "cutoff": 15,
+        "quadratic_current": "105/128"
+      },
+      {
+        "cutoff": 31,
+        "quadratic_current": "465/512"
+      },
+      {
+        "cutoff": 63,
+        "quadratic_current": "1953/2048"
+      },
+      {
+        "cutoff": 127,
+        "quadratic_current": "8001/8192"
+      },
+      {
+        "cutoff": 255,
+        "quadratic_current": "32385/32768"
+      },
+      {
+        "cutoff": 511,
+        "quadratic_current": "130305/131072"
+      },
+      {
+        "cutoff": 1023,
+        "quadratic_current": "522753/524288"
+      },
+      {
+        "cutoff": 2047,
+        "quadratic_current": "2094081/2097152"
+      }
+    ],
+    "selected_ray_count": 1
+  },
+  "scope": "finite identities and independent non-Collatz model"
+}

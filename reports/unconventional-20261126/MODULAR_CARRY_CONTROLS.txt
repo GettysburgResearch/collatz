@@ -1,0 +1,9 @@
+primitive modular-clock comparisons: 531
+direct switched carry witnesses: 2024
+marker (5, 1, 0) -> (p,A,G,denominator bits,switches) (17, 27, 5, 20, (3,))
+marker (7, 1, 0) -> (p,A,G,denominator bits,switches) (22, 35, 7, 29, (5, 8))
+marker (35, 2, 0) -> (p,A,G,denominator bits,switches) (106, 170, 35, 165, (8,))
+marker (35, 2, 11) -> (p,A,G,denominator bits,switches) (106, 170, 1, 170, (8, 11))
+marker (25, 1, 0) -> (p,A,G,denominator bits,switches) (63, 101, 25, 96, (3, 6, 8))
+single cubic (p,A,switched date,cancelled 5-valuation,retained 5-valuation,G):
+{1: (41, 67, 22, 1, 1, 5), 2: (297, 479, 62, 2, 1, 25), 3: (1537, 2459, 10, 3, 1, 125)}

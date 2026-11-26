@@ -1,0 +1,47 @@
+{
+  "source_weight": "1/x normalized by H_(X-1)",
+  "exact_two_implementations": [
+    {
+      "cutoff": 2,
+      "gates": 1,
+      "total_floor_times_10_pow_12": 750000000000,
+      "largest_floor_times_10_pow_12": 750000000000
+    },
+    {
+      "cutoff": 5,
+      "gates": 1,
+      "total_floor_times_10_pow_12": 144000000000,
+      "largest_floor_times_10_pow_12": 144000000000
+    },
+    {
+      "cutoff": 10,
+      "gates": 2,
+      "total_floor_times_10_pow_12": 86076078501,
+      "largest_floor_times_10_pow_12": 48202603960
+    },
+    {
+      "cutoff": 30,
+      "gates": 5,
+      "total_floor_times_10_pow_12": 79589029239,
+      "largest_floor_times_10_pow_12": 27044982377
+    },
+    {
+      "cutoff": 100,
+      "gates": 17,
+      "total_floor_times_10_pow_12": 93128412178,
+      "largest_floor_times_10_pow_12": 35072942598
+    },
+    {
+      "cutoff": 300,
+      "gates": 50,
+      "total_floor_times_10_pow_12": 143376514736,
+      "largest_floor_times_10_pow_12": 72381031052
+    },
+    {
+      "cutoff": 1000,
+      "gates": 167,
+      "total_floor_times_10_pow_12": 189647306761,
+      "largest_floor_times_10_pow_12": 115312308691
+    }
+  ]
+}

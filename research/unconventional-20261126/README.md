@@ -6,11 +6,12 @@ arithmetic, combinatorial and operator approaches, followed by independent
 proof reconstruction and exact replays. The first-wave results below are
 retained, with the current spectral and validation conclusions updated.
 
-**Current checkpoint:** [exact pressure, uniform finite prediction and
-complete ordinary first descents](SECOND_WAVE.md). The classical Bergman
-radius is now exactly $\sqrt{20}/3$ by a complete written proof with two
-independent reviews. The strict Lean packet has 121 audited local theorems
-in 16 modules. These results do not supply the remaining global Collatz step.
+**Current checkpoint:** [three-hour final handoff](FINAL_SPRINT.md), covering
+exact pressure, persistent reset divisors, shifted squareclasses and finite
+positive escape gates. The classical Bergman radius is exactly
+$\sqrt{20}/3$ in the reviewed written proposal. The strict Lean packet has
+147 audited local declarations in 22 modules; the large written theorems
+are not thereby formalized. The universal Collatz step remains open.
 
 The most concrete positive outcomes are answers to specified questions about
 Collatz operators in the published literature, a finiteness theorem for actual
@@ -81,8 +82,9 @@ $$
  =\sum_{q=0}^k\binom{k}{q}2^k3^{-2q}=(20/9)^k.
 $$
 
-The maximum dominates this average. The upper bound is certified by a
-positive integer table on 59,049 residue classes. An independently written
+The maximum dominates this average. The earlier, slightly larger upper bound is certified by a
+positive integer table on 59,049 residue classes. The exact upper bound
+uses the written pressure theorem. An independently written
 verifier checked the original transfer inequality on all 177,147 lifted
 residues, with three deliberately corrupted cases rejected.
 
@@ -275,7 +277,7 @@ rooted-tree weight criterion is proved with its root and domain retained.
 
 ## Formalization and reproduction
 
-The strict current replay rebuilt **16 modules and audited all 121 local
+The strict current replay rebuilt **22 modules and audited all 147 local
 theorem declarations**, including private lemmas. The first checkpoint had
 10 modules and 70 declarations. They use only the standard
 axioms `propext`, `Classical.choice`, and `Quot.sound`, or no axioms. Eleven
@@ -292,6 +294,8 @@ axiom reports.
 | `verified/MinimumClosure`, `verified/TraceProposal` | 11 | Repaired earlier arithmetic and explicitly conditional global consumers |
 | `ReferenceBarrier`, `FirstDescentFloor`, `FusionControl` | 29 | Reference capacity, actual first descent and synchronized binary fusion |
 | `SequencePivot`, `PressureWindows`, `TraceFront` | 22 | Triangular pivots, carry and window arithmetic, conditional trace-front interfaces |
+| `ModularCarry`, `RelativeReset`, `PersistentDivisor` | 16 | Exact finite carry perturbations and ordinary reset identities |
+| `ResetDepthRatio`, `TwoBlockSwap`, `AnnularCut` | 10 | Divisor transport, finite transposition exclusion and annular cancellation |
 
 Use the pinned Lean and Mathlib versions recorded in the receipt. The replay
 reuses their external library build and creates fresh project objects.
@@ -299,9 +303,10 @@ reuses their external library build and creates fresh project objects.
 ```bash
 python -B research/unconventional-20261126/replay_lean.py \
   --mathlib /path/to/pinned/mathlib4 --lean /path/to/pinned/lean \
-  --check reports/unconventional-20261126/SECOND_LEAN_RECEIPT.json
+  --check reports/unconventional-20261126/THIRD_LEAN_RECEIPT.json
 python -B research/unconventional-20261126/replay_controls.py
 python -B research/unconventional-20261126/replay_second_wave.py
+python -B research/unconventional-20261126/replay_third_wave.py
 ```
 
 For the independent upper certificate check:
@@ -316,11 +321,12 @@ python -B research/unconventional-20261126/check_bergman_certificate.py \
 All first-wave primary controls were replayed in normal and optimized Python
 with complete JSON equality. The second wave adds five primary and four
 independent exact controls, all replayed in both modes, and regenerates the
-depth-ten integer vector. Assertion-based first-wave supplemental scripts
+depth-ten integer vector. The third wave adds seven primary and two independent
+root controls, all compared in both modes. Assertion-based first-wave supplemental scripts
 reject optimized execution before doing work. Full-checkout structural
 validation has its own receipt; it is not mathematical verification.
 
-[current Lean receipt](../../reports/unconventional-20261126/SECOND_LEAN_RECEIPT.json) ·
+[current Lean receipt](../../reports/unconventional-20261126/THIRD_LEAN_RECEIPT.json) ·
 [second finite replay](../../reports/unconventional-20261126/SECOND_CONTROL_REPLAY.json) ·
 [finite replay receipt](../../reports/unconventional-20261126/CONTROL_REPLAY.json) ·
 [legacy repairs](verified/README.md).
@@ -331,8 +337,8 @@ No theorem here proves that every positive integer has a smaller merging
 witness, that every ordinary orbit enters a rigid template, or that the
 canonical ordinary trace has the uniform bound needed to exclude escape.
 The precise universal descent and cycle/escape premises in the closing
-Lean interfaces remain open. The final wave tests information retained by
-one fixed integer, full-denominator cycle restrictions and the nonlocal
-first-hit trace. The [second-wave review](../../reports/unconventional-20261126/ROOT_SECOND_REVIEW.md)
+Lean interfaces remain open. The final wave restricts information retained by
+one fixed integer, classifies fixed-modulus cycle restrictions and expresses
+escape charge through finite positive exit gates; the required zero limit is unproved. The [second-wave review](../../reports/unconventional-20261126/ROOT_SECOND_REVIEW.md)
 records why the completed pressure and excursion theorems do not close
 those obligations.

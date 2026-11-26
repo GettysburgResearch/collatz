@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild every Lean module in this packet and check every local theorem's axioms.
 
-Uses the version-pinned external Mathlib build; does not rebuild Mathlib itself.
+Reuses the version-pinned external Mathlib build, rebuilding the two listed
+missing dependency modules from unchanged pinned sources in a temporary mirror.
 No project oleans are reused. Compilation and audit failures are fatal under
 both normal and optimized Python. Receipts contain the exact source identities.
 """

@@ -10,7 +10,8 @@ $$\boxed{r(\mathcal T)=\frac{\sqrt{20}}3}.$$
 This follows from an exact pressure theorem for ternary inverse dynamics.
 The proof was reconstructed by the root reviewer and two independent
 GPT-6.2 Astra reviewers. It is not yet a complete Lean theorem. The strict
-Lean packet now has **121 audited local theorems in 16 modules**.
+Lean packet at this checkpoint had **121 audited local theorems in 16 modules**.
+The current integrated packet and replay are documented in [FINAL_SPRINT.md](FINAL_SPRINT.md).
 
 The most consequential negative result is equally concrete: every stationary
 inverse process of mean exponent at most $\log_2 3$ can arise as a weak limit
@@ -189,16 +190,19 @@ exclusion argument.
 
 ## 6. Reproduction and the remaining proof obligation
 
-The strict Lean replay rebuilt 16 modules and audited all 121 local theorem
+At this checkpoint the strict Lean replay rebuilt 16 modules and audited all 121 local theorem
 declarations, including private lemmas. It uses only standard Lean axioms.
 Two missing dependencies were rebuilt from the pinned Mathlib source in a
 temporary mirror. The older eleven closing-interface declarations remain
 conditional on their explicit global hypotheses.
 
+The command below checks the current integrated packet, including the later wave.
+The linked second-wave receipt records its historical 121-declaration scope.
+
 ```bash
 python -B research/unconventional-20261126/replay_lean.py \
   --mathlib /path/to/pinned/mathlib4 --lean /path/to/pinned/lean \
-  --check reports/unconventional-20261126/SECOND_LEAN_RECEIPT.json
+  --check reports/unconventional-20261126/THIRD_LEAN_RECEIPT.json
 python -B research/unconventional-20261126/replay_second_wave.py
 ```
 
