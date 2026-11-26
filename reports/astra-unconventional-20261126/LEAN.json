@@ -3,15 +3,43 @@
   "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
-  "scope": "All six new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure construction and S-part theorem are written proofs, not formalized by this build.",
+  "scope": "All eight new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates and moving-target trace laws are written proofs, not formalized by this build.",
   "modules": [
+    {
+      "module": "PhasePair",
+      "source": "research/astra-unconventional-20261126/arithmetic/PhasePair.lean",
+      "new": true,
+      "sha256": "ae067d0d0789e852de42ed9eada3244bfe8701efe8737705fbbead91726b907d",
+      "exit_code": 0,
+      "seconds": 6.396,
+      "public_theorems": [
+        "Collatz.Unconventional.PhasePair.lifted_edge",
+        "Collatz.Unconventional.PhasePair.endpoint",
+        "Collatz.Unconventional.PhasePair.arbitrary_groups",
+        "Collatz.Unconventional.PhasePair.grouped_endpoint"
+      ]
+    },
+    {
+      "module": "OddPosterior",
+      "source": "research/astra-unconventional-20261126/global/OddPosterior.lean",
+      "new": true,
+      "sha256": "05908831d1d15ff862e6ec6ba37f6a6d93f6688c96d48b09d2b5dff972a51ce1",
+      "exit_code": 0,
+      "seconds": 1.634,
+      "public_theorems": [
+        "OddPosterior.disjoint_predecessors",
+        "OddPosterior.persist",
+        "OddPosterior.accumulated",
+        "OddPosterior.relative_weight"
+      ]
+    },
     {
       "module": "MovingCenters",
       "source": "research/astra-unconventional-20261126/arithmetic/MovingCenters.lean",
       "new": true,
       "sha256": "2ebdbbf586274c1582afe283677ba5ddfcd8a323f4da71a7c08e774ec2549df7",
       "exit_code": 0,
-      "seconds": 1.764,
+      "seconds": 1.566,
       "public_theorems": [
         "Collatz.Unconventional.MovingCenters.follow_assoc",
         "Collatz.Unconventional.MovingCenters.word_append",
@@ -28,7 +56,7 @@
       "new": true,
       "sha256": "5ac6be941c712c1b8e3a2de0312d5c48d10ff833916653f7e889956860530be5",
       "exit_code": 0,
-      "seconds": 2.633,
+      "seconds": 2.65,
       "public_theorems": [
         "Collatz.Unconventional.Arithmetic.physical_fold",
         "Collatz.Unconventional.Arithmetic.coord_real",
@@ -45,7 +73,7 @@
       "new": true,
       "sha256": "b1987844ccd3f1f4506996c8d80caf837169f0a6a6ae06dd307a6336059e0e3a",
       "exit_code": 0,
-      "seconds": 1.885,
+      "seconds": 1.369,
       "public_theorems": [
         "Collatz.BoundaryKernel.multiplier_pos",
         "Collatz.BoundaryKernel.multiplier_append",
@@ -64,7 +92,7 @@
       "new": true,
       "sha256": "e5958185d8b89bbc00001cf072b8e635f80f5be47f736d41a56a1cabb065cb2c",
       "exit_code": 0,
-      "seconds": 2.123,
+      "seconds": 1.85,
       "public_theorems": [
         "Collatz.RecordTwo.one_exact",
         "Collatz.RecordTwo.two_one_exact",
@@ -81,7 +109,7 @@
       "new": true,
       "sha256": "0d16eec2c475de177d4f953f946c11f0c483981c5a0ca372ccd5e424b101a978",
       "exit_code": 0,
-      "seconds": 1.824,
+      "seconds": 1.861,
       "public_theorems": [
         "NegativeShadow.unique_clock",
         "NegativeShadow.product_bound",
@@ -94,7 +122,7 @@
       "new": true,
       "sha256": "ac674e6b8cfea7eaf1999e12377c47a33b1f00f5dcebdf1628e1ef2d72869330",
       "exit_code": 0,
-      "seconds": 1.953,
+      "seconds": 1.858,
       "public_theorems": [
         "OrdinaryFibers.shifted_affine",
         "OrdinaryFibers.score_increases",
@@ -103,16 +131,16 @@
     }
   ],
   "success": true,
-  "new_public_theorems": 36,
+  "new_public_theorems": 44,
   "imported_public_theorems": 0,
   "axiom_audit": {
     "exit_code": 0,
-    "audited": 36,
+    "audited": 44,
     "axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
     ]
   },
-  "seconds": 13.273
+  "seconds": 20.566
 }

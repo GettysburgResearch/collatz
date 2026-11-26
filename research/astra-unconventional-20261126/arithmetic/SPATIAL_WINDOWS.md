@@ -1,0 +1,19 @@
+# Digit frequencies within individual positive phases
+
+Fix \(\epsilon,\theta>0\). In each candidate cycle from the [joint interior-window theorem](README.md), take any chronological interval \(I\) of at least \(p^\theta\) phases. Choose intervals of consecutive binary depths \(A\) and ternary depths \(B\), with both lengths tending to infinity, all of whose moduli are in that theorem's interior range. At each individual folded integer \(Z_j\), sample \(a\in A,\ b\in B\) uniformly and independently. Let \(\mu_j\) be the empirical probability law of
+\[
+                (\{Z_j/2^a\},\{Z_j/3^b\}).
+\]
+Then, for every weak neighborhood \(U\) of Haar probability on the two-torus,
+\[
+                 \#\{j\in I:\mu_j\notin U\}=o(|I|).
+\]
+The same conclusion holds for the literal odd integers \(x_j\). Thus, on all but a vanishing fraction of phases, each individual integer realizes every fixed binary and ternary digit pattern with the normal frequencies throughout the chosen position intervals. The chosen intervals may move with the cycle and may occupy only a vanishing fraction of its digit length.
+
+To prove the claim, regard the collection of \(\mu_j\) as the empirical distribution \(\mathcal P_p\) of measures. By compactness it suffices to identify each subsequential weak limit \(\mathcal P\). The barycenter of \(\mathcal P\) is Haar by the uniform interior-window theorem averaged over the depth pairs. The transformations \(S_2(y,z)=(2y,z)\) and \(S_3(y,z)=(y,3z)\) change each \(\mu_j\), against any test function bounded by one, by at most \(2/|A|\) and \(2/|B|\), respectively. Indeed multiplying a torus coordinate changes the depth index by one, leaving just two endpoint slices. Consequently \(\mathcal P\) is supported on common invariant measures.
+
+Haar is an extreme common invariant probability. For example any jointly invariant event has Fourier coefficients constant along the backward invariance constraints; every nonconstant coefficient vanishes by repeated doubling in the first nonzero coordinate or tripling in the second. Equivalently the product map \((y,z)\mapsto(2y,3z)\) is ergodic for Haar. The barycenter being extreme now forces \(\mathcal P\) to be the point mass at Haar. More explicitly, conditioning \(\mathcal P\) on any positive-probability set gives an invariant barycenter, and the unconditional barycenter is a convex combination of the conditional ones. Extremality gives the same Haar barycenter under every such conditioning. A countable separating set of continuous tests then forces the random measure to equal Haar almost surely. The claimed convergence in the proportion of phases follows.
+
+For the physical integer \(x_j=2^{k_j}Z_j/4\), first apply the same argument to \(Z_j/4\) at the indicated depths. Its barycenter is Haar by the fixed-multiplier extension of the Fourier estimate in the window theorem. The spatial endpoint estimates are unchanged. Multiplication by one of the three integers \(2^{k_j}\) then sends Haar to Haar and is continuous. A common weak neighborhood for all three pullbacks gives the literal conclusion.
+
+One may attach any depth-independent mark of the phase, including its full low parity script or rank angle. When the depths are sampled as above, every subsequential joining makes the two-dimensional window independent of this mark, for bounded continuous tests on a compact mark space. In fact for any fixed continuous torus test, its spatial empirical mean converges to its Haar integral in mean absolute value over phases, so multiplication by **any** uniformly bounded function of the phase makes an error \(o(1)\). This is a spatially averaged statement. It does not prove independent low parity at a fixed depth, or independence for a number of specified digits proportional to \(\log p\). Each single integer's positional empirical distribution has only \(|A||B|\) sample points.

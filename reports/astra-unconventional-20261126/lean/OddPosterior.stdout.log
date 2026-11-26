@@ -1,0 +1,3 @@
+'OddPosterior.disjoint_predecessors' depends on axioms: [propext, Quot.sound]
+'OddPosterior.persist' depends on axioms: [propext, Quot.sound]
+'OddPosterior.relative_weight' depends on axioms: [propext, Classical.choice, Quot.sound]

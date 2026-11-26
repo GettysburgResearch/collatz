@@ -1,3 +1,5 @@
+import PhasePair
+import OddPosterior
 import MovingCenters
 import FrozenAmplitude
 import BoundaryKernel
@@ -5,6 +7,14 @@ import RecordTwo
 import NegativeShadow
 import OrdinaryFibers
 
+#print axioms Collatz.Unconventional.PhasePair.lifted_edge
+#print axioms Collatz.Unconventional.PhasePair.endpoint
+#print axioms Collatz.Unconventional.PhasePair.arbitrary_groups
+#print axioms Collatz.Unconventional.PhasePair.grouped_endpoint
+#print axioms OddPosterior.disjoint_predecessors
+#print axioms OddPosterior.persist
+#print axioms OddPosterior.accumulated
+#print axioms OddPosterior.relative_weight
 #print axioms Collatz.Unconventional.MovingCenters.follow_assoc
 #print axioms Collatz.Unconventional.MovingCenters.word_append
 #print axioms Collatz.Unconventional.MovingCenters.carry_swap

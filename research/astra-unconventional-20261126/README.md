@@ -2,7 +2,7 @@
 
 **Research checkpoint, 26 November 2026. Universal Collatz termination remains OPEN.** This packet starts from the complete PR 193 tree at `4cc06e7d8fdec923eed73a26b1e9d680c9f701d1` and the current scientific heads recorded in the [intake](../../reports/astra-unconventional-20261126/PR_INTAKE.json). Its purpose is to attack the common missing arithmetic condition with different tools: simultaneous digit windows and point spacing, real and nonarchimedean boundaries, and positive inverse-transfer measures. Three GPT-6.2 Astra agents developed the attacks in parallel; the coordinating agent reconstructed the new arguments and built the formal kernels independently.
 
-The shortcut map is $T(n)=n/2$ on even inputs and $T(n)=$3n+1$/2$ on odd inputs. The odd map strips the full power of two from $3n+1$. Physical clocks, odd clocks, folded ranks, and inverse-word lengths are explicitly distinguished in the individual proofs. None of the conclusions below is an unconditional proof of termination.
+The shortcut map is $T(n)=n/2$ on even inputs and $T(n)=(3n+1)/2$ on odd inputs. The odd map strips the full power of two from $3n+1$. Physical clocks, odd clocks, folded ranks, and inverse-word lengths are explicitly distinguished in the individual proofs. None of the conclusions below is an unconditional proof of termination.
 
 ## Results to read first
 
@@ -44,6 +44,19 @@ $$
 After primitive gcd reduction the exceptional rational lines contain only finitely many possible vectors, so the constant is uniform even as both centers move. At an actual ordinary junction this couples the incoming ternary clock and outgoing binary clock; the cost is the prime-to-six part of the separation of their centers. No moving-target version of the Subspace Theorem is assumed.
 
 An adjacent exchange of gaps 1 and 2 changes exactly one carry summand, so the separation is an S-unit, regardless of the rest of the word. Consequently two consecutive equal-clock blocks differing by a single adjacent swap cannot be longer than $(1+o(1))\log_3 s$ on the bounded ordinary branch. The result retains an arbitrary background word and all prime powers. It does not show that every candidate must contain such long near-repetitions.
+
+[The phase-pair extension](arithmetic/PHASE_PAIR_MASS.md) applies to every pair of ranks, including either lifted seam. Write $G_i$ for their positive lifted integer gap and $J_i$ for their signed mark discrepancy. Their exact recurrence is $2^{b_i}G_{i+1}=3G_i+J_i$. Partition the discrepancies into any fixed number of arbitrary groups and let $Y_I=\sum_{i\in I}2^{B_i}J_i/3^{i+1}$. The finite-place Subspace Theorem gives the uniform constraint
+
+$$
+2^{B_n+v_2(G_n)}3^{v_3(G_0)}
+\le e^{\epsilon(n+\log p)}G_0\prod_I H_{\{2,3\}}(Y_I).
+$$
+
+The rank-spacing estimate makes the initial gap dominate every partial discrepancy sum. That fact removes exceptional subspaces one coordinate at a time. In particular, if all nonzero discrepancies occupy a fixed number of intervals and the comparison is longer than a logarithmic window, those intervals must occupy almost the entire window. Frequent scattered discrepancies still satisfy the bound.
+
+[The spatial-window consequence](arithmetic/SPATIAL_WINDOWS.md) promotes the averaged window law to a statement about most individual phases: sample independently from any two growing contiguous intervals of admissible binary and ternary digit positions. On all but a vanishing fraction of phases in any polynomial-length chronological interval, that integer's positional empirical law tends to product Haar. It is also asymptotically independent of every depth-independent phase mark. The proof uses extremality of Haar among jointly invariant measures. It does not supply independence at one fixed depth or at the bottom digits.
+
+[The two-residue circuit theorem](arithmetic/RESIDUE_CIRCUITS.md) uses the low counts of allowed binary and ternary residue classes as a bipartite graph. For two moduli of size about $p^{31/15}$ it produces $p-O(p^{199/200})$ independent integer relations, each of coefficient norm at most 1000, which vanish on the actual cycle heights and are separately balanced in every marked residue class at both primes. A small integer-quotient pigeonhole step retains exact equality even when the product of the moduli is below the height. The resulting near-relations on the ideal exponential rank curve are insufficient on their own: explicit finite-difference polynomials give almost as many independent small forms. The unresolved inference must use the two exact residue balances as well.
 
 ### The real boundary is wide; the joint arithmetic boundary is structured
 
@@ -89,20 +102,52 @@ $$
 
 produces a strictly increasing score and is formalized in Lean. Excluding these particular fibers, rather than all ternary or adelic fixed measures, is the outstanding measure-theoretic target. It would address escape; nontrivial positive cycles require a separate exclusion.
 
+### An exact posterior and the moving-target onset law
+
+[The posterior theorem](global/POSTERIOR.md) retains one fixed positive odd source $m$, its actual odd orbit $y_k$, and its actual valuation sum $A_k(m)$. Let $p_k$ be the ternary residue law of independent geometric exponents. Under the cited uniform finite-residue atom floor, the reciprocal posterior
+
+$$
+R_k(m)=2^{A_k(m)}p_k(y_k\bmod3^k)
+$$
+
+increases to a finite limit if $m$ escapes, and grows exponentially if $m$ is eventually periodic. In the escaping case the limit is $P(m)Z_0$, where $Z_0$ is the reciprocal corrected-height mass of the whole synchronous ordinary class. The conditional source laws converge in total variation to an explicitly given countable distribution. On infinite geometric word space that distribution is singular, with a mean-one likelihood martingale tending to zero almost surely. Thus the proof identifies precisely why a typical-word argument does not control the retained ordinary word.
+
+[The trace-profile theorem](boundary/TRACE_PROFILE.md) gives more than a fixed-index posterior. Let $a_n$ be one hypothetical escaping odd unit ray, $Z_v$ its full grade masses, and $\rho_k=3^kp_k$. The ordinary predecessor density inputs give
+
+$$
+\sup_{k\ge0}\left|\frac{\rho_k(a_n)}{P(a_n)}-Z_{n-k}\right|\longrightarrow0 .
+$$
+
+The approximation is uniform over **every depth**, including depths moving with the target. It uses antichains of ordinary sources and the density of branches that join the ray later. The future masses satisfy $Z_v\to0$ as $v\to+\infty$. The fixed-integer trace supplies a positive past Cesàro limit $H$, with $h(a_n)/P(a_n)\to H$. Consequently, for every fixed $\lambda>0$,
+
+$$
+\frac{1}{h(a_n)\lfloor\lambda n\rfloor}
+\sum_{k=1}^{\lfloor\lambda n\rfloor}\rho_k(a_n)
+\longrightarrow (1-1/\lambda)_+ .
+$$
+
+The onset clock is the actual odd travel time from the original ordinary source. The stronger fixed-target absolute Cesàro theorem also yields a Bernoulli limit for the normalized individual trace values when depth is sampled uniformly over this interval. These are source-qualified written deductions. A uniform estimate for positive integer targets contradicting this profile is still missing.
+
+[The ordinary renewal theorem](boundary/ORDINARY_RENEWAL.md) samples actual odd ancestors of a fixed escaping target. Up to any growing physical horizon $L=o((\log X)^{1/8})$, their entire parity window approaches the fair conditioned-odd law. Their visible record count converges in total variation to a geometric law with continuation probability $2/3<p\le47/64$, even though each sampled ordinary source has infinitely many records. A critical tilt reaches the zero-critical-measure record set but fails the required critical Frostman bound. The proof keeps the order of the sampling and time limits explicit.
+
+[The transverse construction](global/TRANSVERSE.md) shows that a hypothetical escape supports a finite fixed measure dominating full ternary Haar on one specified positive ordinary binary fiber. Its entire ternary marginal is absolutely continuous. The exact masses of all other positive ordinary binary fibers are computed, including the grade-dependent factor on the past. Removing the remaining nonordinary inverse children loses stationarity. Absolute continuity of the ternary marginal alone therefore does not supply the missing ordinary exclusion.
+
 ## What is formalized
 
-The common [Lean driver](check_lean.py) builds six new modules with fresh project objects against Lean 4.34.1 and the pinned Mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612`. All **36 public theorem declarations** are audited. Only `propext`, `Classical.choice`, and `Quot.sound` occur in their axiom inventories.
+The common [Lean driver](check_lean.py) builds eight new modules with fresh project objects against Lean 4.34.1 and the pinned Mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612`. All **44 public theorem declarations** are audited. Only `propext`, `Classical.choice`, and `Quot.sound` occur in their axiom inventories.
 
 | Module | Public theorems | Checked content |
 |---|---:|---|
 | [FrozenAmplitude](arithmetic/FrozenAmplitude.lean) | 7 | Integer folding, amplitude recurrence and variation, finite telescoping, incoming residues and residue coincidences |
 | [MovingCenters](arithmetic/MovingCenters.lean) | 7 | Affine concatenation, arbitrary-background adjacent carry swap, physical junction numerators and repeated centers |
+| [PhasePair](arithmetic/PhasePair.lean) | 4 | Lifted-gap recurrence, exact endpoint numerator, arbitrary additive grouping and grouped endpoint identity |
 | [BoundaryKernel](boundary/BoundaryKernel.lean) | 9 | Actual odd-step retention, appended clocks, source-address injectivity and squared atom weight |
 | [RecordTwo](boundary/RecordTwo.lean) | 7 | Exact two-branch ordinary dynamics, disjointness, expansion and repeated-block equations |
 | [NegativeShadow](global/NegativeShadow.lean) | 3 | Unique visit clock to the reflected root and the finite-path gain bound |
 | [OrdinaryFibers](global/OrdinaryFibers.lean) | 3 | Shifted shortcut identity, score increase and injectivity from a positive fiber |
+| [OddPosterior](global/OddPosterior.lean) | 4 | Disjoint ordinary predecessor classes, persistence of synchronous sources, accumulated clocks and relative weights |
 
-These finite kernels do not formalize Matveev, the exponential-sum estimates, Hochman's theorem, the S-part theorem, or the measure constructions. The [review and verification record](../../reports/astra-unconventional-20261126/REVIEW.md) separates written proofs, finite controls, Lean checks and repository integrity.
+These finite kernels do not formalize Matveev, the exponential-sum estimates, Hochman's theorem, the S-part theorem, the measure constructions or the analytic trace laws. The [review and verification record](../../reports/astra-unconventional-20261126/REVIEW.md) separates written proofs, finite controls, Lean checks and repository integrity.
 
 ## Scope of the re-evaluation
 

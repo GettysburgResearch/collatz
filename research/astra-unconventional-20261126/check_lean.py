@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 PACKET = Path("research/astra-unconventional-20261126")
 MATHLIB = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 MODULES = [
+    ("PhasePair", PACKET / "arithmetic/PhasePair.lean", "Collatz.Unconventional.PhasePair"),
+    ("OddPosterior", PACKET / "global/OddPosterior.lean", "OddPosterior"),
     ("MovingCenters", PACKET / "arithmetic/MovingCenters.lean", "Collatz.Unconventional.MovingCenters"),
     ("FrozenAmplitude", PACKET / "arithmetic/FrozenAmplitude.lean", "Collatz.Unconventional.Arithmetic"),
     ("BoundaryKernel", PACKET / "boundary/BoundaryKernel.lean", "Collatz.BoundaryKernel"),
@@ -56,7 +58,7 @@ def main() -> None:
         "compiler": version.stdout.strip(),
         "mathlib": MATHLIB,
         "dependency_manifest_sha256": hashlib.sha256((mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
-        "scope": "All six new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure construction and S-part theorem are written proofs, not formalized by this build.",
+        "scope": "All eight new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates and moving-target trace laws are written proofs, not formalized by this build.",
         "modules": [],
         "success": False,
     }

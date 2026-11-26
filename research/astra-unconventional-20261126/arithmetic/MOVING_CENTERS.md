@@ -63,3 +63,13 @@ On a bounded strip cycle with minimum \(s\to\infty\) and primitive odd period \(
             \limsup \frac{m\log3}{\log s}\le1 .
 \]
 Indeed \((3^m)^2\ll_\epsilon (3^m s)^{1+\epsilon}\), and \(\epsilon\) may decrease after taking the limsup. On the least-disagreement bounded branch, \(m\le p\ll s\), and \(2^a/3^m=(t_-/t)\prod_{j<m}(1+1/(3x_j))\) is bounded above and below, directly from the physical orbit. Thus long consecutive near-squares of this particular type are excluded even when their common word has no bounded-length description. The argument requires an actual occurrence of the two blocks. An arbitrary binary valuation sequence need not contain sufficiently long consecutive near-squares, and the present estimates do not show the strip dynamics forces them.
+
+## Two windows at arbitrary phases
+
+Consider two windows starting at distinct ordinary phases of the same primitive bounded cycle. Suppose their gap words agree on a prefix of \(k\) odd steps and on a suffix of total two-adic clock \(l\), and that between these parts the respective words are \(12\) and \(21\). Let \(F,G\) be the integer differences of the two actual states just before and just after that transposition. They are nonzero since the two phase indices stay distinct. The common prefix gives \(3^k\mid F\), the common suffix gives \(2^l\mid G\), and the exact carries give
+\[
+                   8G-9F=\pm2 .
+\]
+Applying (1) to \(8G,9F\) gives \(3^k2^l\ll_\epsilon s^{1+\epsilon}\), because all the sites lie in the same bounded height strip and the separation 2 has no prime-to-six factor. If the entire two windows agree, the initial difference is divisible by the full power of two of their clocks; the same length bound follows directly. Since \(2^l\asymp3^{\#\text{suffix odd steps}}\) for windows of length at most \(p\), their common total length is at most \((1+o(1))\log_3 s\) along any such family of occurrences. This applies regardless of the separation between the two starting phases. The [all-rank partition theorem](PHASE_PAIR_MASS.md) treats discrepancies supported on several intervals using the lifted integer gaps.
+
+[Lean verification of the arbitrary-context transposition, physical endpoint signs and repeated centered equation](MovingCenters.lean)
