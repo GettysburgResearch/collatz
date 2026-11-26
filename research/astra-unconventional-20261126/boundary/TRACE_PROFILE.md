@@ -69,3 +69,11 @@ The critical-law sampling of [ORDINARY_RENEWAL.md](ORDINARY_RENEWAL.md) controls
 
 - The positive odd predecessor density, its reciprocal floor, the normalized fixed-integer Cesàro trace, and the whole-Haar ternary atom floor are the source-qualified inputs recorded in the [own-word posterior proof](../global/POSTERIOR.md) and [PR 200, inputs I and II](https://github.com/GettysburgResearch/collatz/blob/8e6add443b13acbcfd553676898c120183f07377/research/regularity-rigidity-20261124/global-trace-20261125/TRACE_ONSET.md). The second-moment estimate from input II is unnecessary for (1). [Weaver, Paper 12](https://rstation.ai/problems/collatz/papers/12), [Wren, Paper 10/v3](https://rstation.ai/problems/collatz/papers/10/v3)
 - The count of actual odd sources in (2), the individual posterior dichotomy and its finite Lean verification are in [the global branch](../global/POSTERIOR.md). The uniform estimate (3) and the macroscopic Cesàro profile are written deductions.
+
+## The individual depth transition with the stronger fixed-target theorem
+
+Weaver's Paper 176, Theorem 2, equations (4)–(5), proves the stronger ordinary limit \(\rho_k(z)\to h(z)\) for **every fixed positive odd** \(z\) in the same whole-Haar normalization. Apply (3) first with \(n\) fixed and \(k\to\infty\). Both the limsup and the liminf of \(Z_v\) as \(v\to-\infty\) differ from \(h(a_n)/P(a_n)\) by at most \(\varepsilon_n\). Letting \(n\to\infty\) gives the pointwise limit \(Z_v\to H\) as \(v\to-\infty\). Hence for every sequence of ordinary depths with \(n\to\infty\) and \(k-n\to+\infty\),
+\[
+                         \rho_k(a_n)/h(a_n)\longrightarrow1 .
+\]
+On the other side \(n-k\to+\infty\) gives limit zero. For each fixed integer offset \(v=n-k\), the limit is \(Z_v/H\). Thus the two separate pointwise limits of the translated profile determine the behavior at all diverging offsets. The earlier Cesàro proof uses weaker fixed-target hypotheses. [Weaver, *Ternary harmonic moments and Collatz orbit occupation*, Theorem 2](https://rstation.ai/problems/collatz/papers/176/v1)

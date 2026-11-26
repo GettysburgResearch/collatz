@@ -1,3 +1,7 @@
+import AllGapSections
+import MixedMahler
+import DyadicBoundary
+import PairedBoundary
 import PhasePair
 import OddPosterior
 import MovingCenters
@@ -7,6 +11,39 @@ import RecordTwo
 import NegativeShadow
 import OrdinaryFibers
 
+#print axioms Collatz.Unconventional.AllGapSections.widen
+#print axioms Collatz.Unconventional.AllGapSections.rules_from_balance
+#print axioms Collatz.Unconventional.AllGapSections.dyadic_prepend
+#print axioms Collatz.Unconventional.AllGapSections.ternary_step
+#print axioms Collatz.Unconventional.AllGapSections.whole_depth
+#print axioms Collatz.Unconventional.MixedMahler.rules_of_balance
+#print axioms Collatz.Unconventional.MixedMahler.missing_edges
+#print axioms Collatz.Unconventional.MixedMahler.first_sections
+#print axioms Collatz.Unconventional.MixedMahler.ternary_closure
+#print axioms Collatz.Unconventional.MixedMahler.ternary_iterates
+#print axioms DyadicBoundary.rightColor
+#print axioms DyadicBoundary.childColors
+#print axioms DyadicBoundary.uniqueChangingChild
+#print axioms DyadicBoundary.colorEightFour
+#print axioms DyadicBoundary.colorEightFive
+#print axioms DyadicBoundary.forbidden100
+#print axioms DyadicBoundary.liftOdd
+#print axioms DyadicBoundary.liftEven
+#print axioms DyadicBoundary.liftOddColor
+#print axioms DyadicBoundary.liftEvenColor
+#print axioms DyadicBoundary.liftEvenBoundary
+#print axioms DyadicBoundary.digitTransitions
+#print axioms DyadicBoundary.criticalMidpoint
+#print axioms DyadicBoundary.tripledSeven
+#print axioms DyadicBoundary.shiftedSingle
+#print axioms DyadicBoundary.shiftedPowers
+#print axioms DyadicBoundary.plusSingle
+#print axioms DyadicBoundary.plusPowers
+#print axioms DyadicBoundary.evenDepthRightResidueTwo
+#print axioms DyadicBoundary.signedStep
+#print axioms DyadicBoundary.magnifiedEndpoint
+#print axioms Collatz.PairedBoundary.rise
+#print axioms Collatz.PairedBoundary.paired_rise
 #print axioms Collatz.Unconventional.PhasePair.lifted_edge
 #print axioms Collatz.Unconventional.PhasePair.endpoint
 #print axioms Collatz.Unconventional.PhasePair.arbitrary_groups

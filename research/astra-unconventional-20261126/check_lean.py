@@ -16,6 +16,10 @@ ROOT = Path(__file__).resolve().parents[2]
 PACKET = Path("research/astra-unconventional-20261126")
 MATHLIB = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 MODULES = [
+    ("AllGapSections", PACKET / "arithmetic/AllGapSections.lean", "Collatz.Unconventional.AllGapSections"),
+    ("MixedMahler", PACKET / "arithmetic/MixedMahler.lean", "Collatz.Unconventional.MixedMahler"),
+    ("DyadicBoundary", PACKET / "global/DyadicBoundary.lean", "DyadicBoundary"),
+    ("PairedBoundary", PACKET / "boundary/PairedBoundary.lean", "Collatz.PairedBoundary"),
     ("PhasePair", PACKET / "arithmetic/PhasePair.lean", "Collatz.Unconventional.PhasePair"),
     ("OddPosterior", PACKET / "global/OddPosterior.lean", "OddPosterior"),
     ("MovingCenters", PACKET / "arithmetic/MovingCenters.lean", "Collatz.Unconventional.MovingCenters"),
@@ -58,7 +62,7 @@ def main() -> None:
         "compiler": version.stdout.strip(),
         "mathlib": MATHLIB,
         "dependency_manifest_sha256": hashlib.sha256((mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
-        "scope": "All eight new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates and moving-target trace laws are written proofs, not formalized by this build.",
+        "scope": f"All {len(MODULES)} new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic, coefficient sections and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates, moving-target trace laws, periodic-boundary exclusion and D-finite rigidity are written proofs, not formalized by this build.",
         "modules": [],
         "success": False,
     }
@@ -72,7 +76,7 @@ def main() -> None:
         for name, path, namespace in MODULES:
             source = ROOT / path
             source_bytes = source.read_bytes()
-            declarations = re.findall(r"^theorem\s+([A-Za-z_][A-Za-z0-9_'.]*)", source_bytes.decode(), re.MULTILINE)
+            declarations = re.findall(r"^(?:@\[[^\n]*\]\s*)*(?:theorem|lemma)\s+([A-Za-z_][A-Za-z0-9_'.]*)", source_bytes.decode(), re.MULTILINE)
             qualified = [namespace + "." + declaration for declaration in declarations]
             public.extend(qualified)
             before = time.monotonic()

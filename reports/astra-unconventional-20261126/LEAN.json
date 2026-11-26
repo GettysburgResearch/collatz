@@ -3,15 +3,88 @@
   "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
-  "scope": "All eight new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates and moving-target trace laws are written proofs, not formalized by this build.",
+  "scope": "All 12 new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite arithmetic, coefficient sections and orbit kernels only; the analytic equidistribution and spacing arguments, entropy and fractal dimension statements, measure constructions, S-part estimates, moving-target trace laws, periodic-boundary exclusion and D-finite rigidity are written proofs, not formalized by this build.",
   "modules": [
+    {
+      "module": "AllGapSections",
+      "source": "research/astra-unconventional-20261126/arithmetic/AllGapSections.lean",
+      "new": true,
+      "sha256": "076c1c1376c712c81a9340737db3a08abe75f65f1074d89d6b2f9ea0e1759c91",
+      "exit_code": 0,
+      "seconds": 1.854,
+      "public_theorems": [
+        "Collatz.Unconventional.AllGapSections.widen",
+        "Collatz.Unconventional.AllGapSections.rules_from_balance",
+        "Collatz.Unconventional.AllGapSections.dyadic_prepend",
+        "Collatz.Unconventional.AllGapSections.ternary_step",
+        "Collatz.Unconventional.AllGapSections.whole_depth"
+      ]
+    },
+    {
+      "module": "MixedMahler",
+      "source": "research/astra-unconventional-20261126/arithmetic/MixedMahler.lean",
+      "new": true,
+      "sha256": "0e0a4400be9229de3052539353454a2ad7c16733afbd7c58275451410c8e74ce",
+      "exit_code": 0,
+      "seconds": 1.926,
+      "public_theorems": [
+        "Collatz.Unconventional.MixedMahler.rules_of_balance",
+        "Collatz.Unconventional.MixedMahler.missing_edges",
+        "Collatz.Unconventional.MixedMahler.first_sections",
+        "Collatz.Unconventional.MixedMahler.ternary_closure",
+        "Collatz.Unconventional.MixedMahler.ternary_iterates"
+      ]
+    },
+    {
+      "module": "DyadicBoundary",
+      "source": "research/astra-unconventional-20261126/global/DyadicBoundary.lean",
+      "new": true,
+      "sha256": "51076666554c3a24e54fb52ee05d8fe88a2a8fc11f0cdc4f5b9c454e4455d677",
+      "exit_code": 0,
+      "seconds": 1.52,
+      "public_theorems": [
+        "DyadicBoundary.rightColor",
+        "DyadicBoundary.childColors",
+        "DyadicBoundary.uniqueChangingChild",
+        "DyadicBoundary.colorEightFour",
+        "DyadicBoundary.colorEightFive",
+        "DyadicBoundary.forbidden100",
+        "DyadicBoundary.liftOdd",
+        "DyadicBoundary.liftEven",
+        "DyadicBoundary.liftOddColor",
+        "DyadicBoundary.liftEvenColor",
+        "DyadicBoundary.liftEvenBoundary",
+        "DyadicBoundary.digitTransitions",
+        "DyadicBoundary.criticalMidpoint",
+        "DyadicBoundary.tripledSeven",
+        "DyadicBoundary.shiftedSingle",
+        "DyadicBoundary.shiftedPowers",
+        "DyadicBoundary.plusSingle",
+        "DyadicBoundary.plusPowers",
+        "DyadicBoundary.evenDepthRightResidueTwo",
+        "DyadicBoundary.signedStep",
+        "DyadicBoundary.magnifiedEndpoint"
+      ]
+    },
+    {
+      "module": "PairedBoundary",
+      "source": "research/astra-unconventional-20261126/boundary/PairedBoundary.lean",
+      "new": true,
+      "sha256": "7cb261715a35f91f8fce2f1839c9c1ad85d340ced917fc79339142a28278d257",
+      "exit_code": 0,
+      "seconds": 1.353,
+      "public_theorems": [
+        "Collatz.PairedBoundary.rise",
+        "Collatz.PairedBoundary.paired_rise"
+      ]
+    },
     {
       "module": "PhasePair",
       "source": "research/astra-unconventional-20261126/arithmetic/PhasePair.lean",
       "new": true,
       "sha256": "ae067d0d0789e852de42ed9eada3244bfe8701efe8737705fbbead91726b907d",
       "exit_code": 0,
-      "seconds": 6.396,
+      "seconds": 1.225,
       "public_theorems": [
         "Collatz.Unconventional.PhasePair.lifted_edge",
         "Collatz.Unconventional.PhasePair.endpoint",
@@ -25,7 +98,7 @@
       "new": true,
       "sha256": "05908831d1d15ff862e6ec6ba37f6a6d93f6688c96d48b09d2b5dff972a51ce1",
       "exit_code": 0,
-      "seconds": 1.634,
+      "seconds": 1.491,
       "public_theorems": [
         "OddPosterior.disjoint_predecessors",
         "OddPosterior.persist",
@@ -39,7 +112,7 @@
       "new": true,
       "sha256": "2ebdbbf586274c1582afe283677ba5ddfcd8a323f4da71a7c08e774ec2549df7",
       "exit_code": 0,
-      "seconds": 1.566,
+      "seconds": 1.251,
       "public_theorems": [
         "Collatz.Unconventional.MovingCenters.follow_assoc",
         "Collatz.Unconventional.MovingCenters.word_append",
@@ -56,7 +129,7 @@
       "new": true,
       "sha256": "5ac6be941c712c1b8e3a2de0312d5c48d10ff833916653f7e889956860530be5",
       "exit_code": 0,
-      "seconds": 2.65,
+      "seconds": 2.601,
       "public_theorems": [
         "Collatz.Unconventional.Arithmetic.physical_fold",
         "Collatz.Unconventional.Arithmetic.coord_real",
@@ -73,7 +146,7 @@
       "new": true,
       "sha256": "b1987844ccd3f1f4506996c8d80caf837169f0a6a6ae06dd307a6336059e0e3a",
       "exit_code": 0,
-      "seconds": 1.369,
+      "seconds": 1.902,
       "public_theorems": [
         "Collatz.BoundaryKernel.multiplier_pos",
         "Collatz.BoundaryKernel.multiplier_append",
@@ -92,7 +165,7 @@
       "new": true,
       "sha256": "e5958185d8b89bbc00001cf072b8e635f80f5be47f736d41a56a1cabb065cb2c",
       "exit_code": 0,
-      "seconds": 1.85,
+      "seconds": 2.158,
       "public_theorems": [
         "Collatz.RecordTwo.one_exact",
         "Collatz.RecordTwo.two_one_exact",
@@ -109,7 +182,7 @@
       "new": true,
       "sha256": "0d16eec2c475de177d4f953f946c11f0c483981c5a0ca372ccd5e424b101a978",
       "exit_code": 0,
-      "seconds": 1.861,
+      "seconds": 1.853,
       "public_theorems": [
         "NegativeShadow.unique_clock",
         "NegativeShadow.product_bound",
@@ -122,7 +195,7 @@
       "new": true,
       "sha256": "ac674e6b8cfea7eaf1999e12377c47a33b1f00f5dcebdf1628e1ef2d72869330",
       "exit_code": 0,
-      "seconds": 1.858,
+      "seconds": 1.811,
       "public_theorems": [
         "OrdinaryFibers.shifted_affine",
         "OrdinaryFibers.score_increases",
@@ -131,16 +204,16 @@
     }
   ],
   "success": true,
-  "new_public_theorems": 44,
+  "new_public_theorems": 77,
   "imported_public_theorems": 0,
   "axiom_audit": {
     "exit_code": 0,
-    "audited": 44,
+    "audited": 77,
     "axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
     ]
   },
-  "seconds": 20.566
+  "seconds": 22.278
 }

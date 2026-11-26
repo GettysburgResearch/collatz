@@ -23,3 +23,6 @@ DyadicBoundary.lean, Lean 4.34.1 with the same pinned dependencies and warnings 
 'DyadicBoundary.digitTransitions' depends on axioms: [propext, Quot.sound]
 'DyadicBoundary.tripledSeven' depends on axioms: [propext, Quot.sound]
 'DyadicBoundary.shiftedPowers' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.plusPowers' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.evenDepthRightResidueTwo' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.magnifiedEndpoint' depends on axioms: [propext, Quot.sound]

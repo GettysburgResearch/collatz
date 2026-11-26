@@ -6,6 +6,31 @@ The shortcut map is $T(n)=n/2$ on even inputs and $T(n)=(3n+1)/2$ on odd inputs.
 
 ## Results to read first
 
+### Holonomic rigidity on the full finite-exponent graph
+
+The final algebraic attack uses every ordinary odd division exponent through an arbitrary finite ceiling $E$. In the coordinate $t=(x-1)/2$, the exact branch is $2^e v+r_e\mapsto3v+d_e$, with the residues given in [ALL_GAPS_MAHLER.md](arithmetic/ALL_GAPS_MAHLER.md). A circulation has one generating series $C_e$ per edge type and satisfies
+
+$$
+\sum_{e=1}^E X^{r_e}C_e(X^{2^e})
+=\sum_{e=1}^E X^{d_e}C_e(X^3).
+$$
+
+Every ternary coefficient section of depth $k$ is a finite sum of binary sections of depths between $k$ and $Ek$. This includes cancellations between different incoming branches and is checked in Lean. A finite-pole argument proves that every rational solution is polynomial over every field. In characteristic zero, the Adamczewski–Bell theorem gives the same conclusion for a finite-dimensional binary section span.
+
+[HOLONOMIC_RIGIDITY.md](arithmetic/HOLONOMIC_RIGIDITY.md) proves the stronger written result: **every formal complex D-finite solution is polynomial**, even with arbitrary signed coefficients and without assuming convergence at the origin. Levelt–Turrittin slopes cannot persist under both section scales: a positive slope would repeatedly require $s/3^k=t/2^l$ inside a fixed finite set. Regular singularity then gives convergence. Actual singularities of all continuations similarly become odd-order roots of unity; a missing dyadic cylinder eliminates them. The argument at infinity gives polynomial growth. The resulting polynomial flows are exactly finite sums of actual cycle indicators.
+
+The weighted version permits fixed nonzero incoming and outgoing factors. A finite cycle contributes precisely when its product of weight ratios is one. At the ratios $3/2^e$ the homogeneous holonomic kernel vanishes. Multiplying an unweighted cycle by its height introduces an inhomogeneous carry, so this spectral statement does not eliminate the original cycle. **Which nontrivial polynomial cycle indicators exist remains open.** The [two-branch analysis](arithmetic/MIXED_MAHLER.md) also records automaticity, the exact polynomial incidence equation and the obstruction to a universal bounded-offset descent.
+
+### Ordinary exclusion of periodic boundary patterns
+
+For an invariant Boolean label on positive integers, an opposite-colored adjacent pair has exactly one opposite-colored dyadic child. Following it gives a persistent real boundary, with the same two ordinary colors at every resolution. [DYADIC_BOUNDARY.md](global/DYADIC_BOUNDARY.md) derives exact digit restrictions and proves why multiplication by $3/2$ can destroy persistence and create new boundaries. Taking a closure does not repair that failure of invariance.
+
+[PAIRED_BOUNDARY.md](boundary/PAIRED_BOUNDARY.md) supplies an ordinary realization argument beyond finite local tests. At a rational boundary, compare its two sides at different dyadic levels chosen to have the same odd-step count along their signed rational references. If each reference enters a nonzero cycle, the resulting genuine positive pair has fixed separation and a common center $B+C3^{m\Delta}$. This sequence is dense in a dyadic open coset and therefore meets a finite counted-fusion cylinder from the cited full-measure synchronization theorem. Opposite ordinary colors are impossible.
+
+The same argument bounds repetitions of each such periodic word after a bit breaking its left continuation, and excludes it from a boundary's shift limit set. The worked word $01010111$ survives all universal finite counted-fusion tests on its rational references, yet the ordinary argument excludes it. A separate exact certificate bounds its repetitions after a break by 819188 using 32 fusion cosets at precision at most 24; this worked exclusion uses the finite certificate in place of the general full-measure input.
+
+The remaining rational cases include dyadic and eventually alternating boundaries, as well as signed references which are unbounded. [ZERO_ARM.md](global/ZERO_ARM.md) shows that a dyadic or alternating boundary would force the color of $3^j p$ to differ from that of its fixed positive ordinary anchor $p$ for density-one exponents $j$. It also derives the isolated-center behavior after dyadic magnification. Fixed-gap fusion does not prove a return to the anchor's color. Genuinely aperiodic boundaries remain unexcluded.
+
 ### One ordinary cycle, simultaneous binary and ternary windows
 
 [The joint-window proof](arithmetic/README.md) retains every phase of a putative ordinary cycle on the bounded least-tripling-disagreement branch. Let $p$ be its primitive odd period, $s$ its minimum, and $Z_j=2^{2-k_j}x_j$ its integer folded mantissas. For every fixed ε,θ>0, every chronological interval of at least $p^θ$ phases, and independently chosen powers
@@ -126,7 +151,29 @@ $$
 \longrightarrow (1-1/\lambda)_+ .
 $$
 
-The onset clock is the actual odd travel time from the original ordinary source. The stronger fixed-target absolute Cesàro theorem also yields a Bernoulli limit for the normalized individual trace values when depth is sampled uniformly over this interval. These are source-qualified written deductions. A uniform estimate for positive integer targets contradicting this profile is still missing.
+The onset clock is the actual odd travel time from the original ordinary source. The stronger fixed-target absolute Cesàro theorem also yields a Bernoulli limit for the normalized individual trace values when depth is sampled uniformly over this interval. Weaver's ordinary-depth fixed-target convergence strengthens the past-grade Cesàro limit to $Z_v\to H$ as $v\to-\infty$: every moving offset with $k-n\to+\infty$ has normalized trace tending to one, and every offset with $n-k\to+\infty$ has limit zero. These are source-qualified written deductions.
+
+[The collision-energy theorem](global/COLLISION_ENERGY.md) sums over every positive odd representative at depth $k$, retaining the original geometric exponent law. For first-hit weights $L_k$ and every fixed $r>1$ it proves
+
+$$
+\frac1k\sum_{\substack{0<y<2\cdot3^k\\y\ {\rm odd}}}
+\left(\frac{L_k(y)}y\right)^r
+\longrightarrow \sum_{C\ {\rm escaping}}H_C^r,
+\qquad H_C=\frac{\log(4/3)}2\,d_C ,
+$$
+
+where $d_C$ is the existing weighted logarithmic component mass. Targets outside a finite union of actual trajectories have a uniformly small first-hit ratio; a first-moment bound controls their total contribution. This permits exhaustion over all targets and all components. For thresholds outside an explicitly described countable set, the number of first-hit ratios above threshold is eventually an **exact affine function of $k$**, with slope equal to the number of components above that amplitude.
+
+Repeated visits to all positive cycles contribute only $o(k)$ in aggregate to the difference between raw and first-hit harmonic mass, even if there are infinitely many cycles. Thus the completely raw statistic, requiring no orbit classification,
+
+$$
+\frac1k\sum_{\substack{0<y<2\cdot3^k\\y\ {\rm odd}}}
+\frac{(\rho_k(y)/y)^2}{1+\rho_k(y)/y}
+\longrightarrow
+\sum_{C\ {\rm escaping}}\frac{H_C^2}{1+H_C}.
+$$
+
+An independent zero-limit estimate for this explicit finite-law statistic would exclude every ordinary escape under the stated inputs. The identity does not supply that estimate. Positive cycle exclusion remains a separate requirement.
 
 [The ordinary renewal theorem](boundary/ORDINARY_RENEWAL.md) samples actual odd ancestors of a fixed escaping target. Up to any growing physical horizon $L=o((\log X)^{1/8})$, their entire parity window approaches the fair conditioned-odd law. Their visible record count converges in total variation to a geometric law with continuation probability $2/3<p\le47/64$, even though each sampled ordinary source has infinitely many records. A critical tilt reaches the zero-critical-measure record set but fails the required critical Frostman bound. The proof keeps the order of the sampling and time limits explicit.
 
@@ -134,20 +181,24 @@ The onset clock is the actual odd travel time from the original ordinary source.
 
 ## What is formalized
 
-The common [Lean driver](check_lean.py) builds eight new modules with fresh project objects against Lean 4.34.1 and the pinned Mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612`. All **44 public theorem declarations** are audited. Only `propext`, `Classical.choice`, and `Quot.sound` occur in their axiom inventories.
+The common [Lean driver](check_lean.py) builds twelve new modules with fresh project objects against Lean 4.34.1 and the pinned Mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612`. All **77 public theorem declarations** are audited, including attributed public helper theorems. Only `propext`, `Classical.choice`, and `Quot.sound` occur in their axiom inventories.
 
 | Module | Public theorems | Checked content |
 |---|---:|---|
 | [FrozenAmplitude](arithmetic/FrozenAmplitude.lean) | 7 | Integer folding, amplitude recurrence and variation, finite telescoping, incoming residues and residue coincidences |
 | [MovingCenters](arithmetic/MovingCenters.lean) | 7 | Affine concatenation, arbitrary-background adjacent carry swap, physical junction numerators and repeated centers |
 | [PhasePair](arithmetic/PhasePair.lean) | 4 | Lifted-gap recurrence, exact endpoint numerator, arbitrary additive grouping and grouped endpoint identity |
+| [MixedMahler](arithmetic/MixedMahler.lean) | 5 | Physical two-branch coefficient balance, missing rows and closure of the binary kernel under arbitrary ternary sections |
+| [AllGapSections](arithmetic/AllGapSections.lean) | 5 | Arbitrary finite incoming sums, composition of sections and the full depth bounds $k\le l\le Ek$ |
 | [BoundaryKernel](boundary/BoundaryKernel.lean) | 9 | Actual odd-step retention, appended clocks, source-address injectivity and squared atom weight |
 | [RecordTwo](boundary/RecordTwo.lean) | 7 | Exact two-branch ordinary dynamics, disjointness, expansion and repeated-block equations |
 | [NegativeShadow](global/NegativeShadow.lean) | 3 | Unique visit clock to the reflected root and the finite-path gain bound |
 | [OrdinaryFibers](global/OrdinaryFibers.lean) | 3 | Shifted shortcut identity, score increase and injectivity from a positive fiber |
 | [OddPosterior](global/OddPosterior.lean) | 4 | Disjoint ordinary predecessor classes, persistence of synchronous sources, accumulated clocks and relative weights |
+| [DyadicBoundary](global/DyadicBoundary.lean) | 21 | Unique changing child, forbidden low bits, lifted endpoints, actual tripling defect, power-ray identities and signed-reference magnification |
+| [PairedBoundary](boundary/PairedBoundary.lean) | 2 | Arbitrary-length positive rise identities and the paired finite coalescence used in the boundary digit restriction |
 
-These finite kernels do not formalize Matveev, the exponential-sum estimates, Hochman's theorem, the S-part theorem, the measure constructions or the analytic trace laws. The [review and verification record](../../reports/astra-unconventional-20261126/REVIEW.md) separates written proofs, finite controls, Lean checks and repository integrity.
+These finite kernels do not formalize Matveev, the exponential-sum estimates, Hochman's theorem, the S-part theorem, the measure constructions, the analytic trace laws, the full periodic-boundary exclusion or the holonomic classification. The [review and verification record](../../reports/astra-unconventional-20261126/REVIEW.md) separates written proofs, finite controls, Lean checks and repository integrity.
 
 ## Scope of the re-evaluation
 
