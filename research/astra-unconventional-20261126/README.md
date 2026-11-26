@@ -4,6 +4,8 @@
 
 The shortcut map is $T(n)=n/2$ on even inputs and $T(n)=(3n+1)/2$ on odd inputs. The odd map strips the full power of two from $3n+1$. Physical clocks, odd clocks, folded ranks, and inverse-word lengths are explicitly distinguished in the individual proofs. None of the conclusions below is an unconditional proof of termination.
 
+**Closing proposal:** [CLOSING_PROPOSAL.md](CLOSING_PROPOSAL.md) gives the exact escape statistic, its fixed modulus-eight cancellation target, the surviving cycle obligation, and the boundary of the Lean verification. The final transfer attack is developed in [COLLISION_SOURCE.md](boundary/COLLISION_SOURCE.md) and [DYADIC_INCREMENT.md](arithmetic/DYADIC_INCREMENT.md). These retain the actual ordinary sources and the distinct-parent terms. [SMALL_SIGNED_CARRY.md](arithmetic/SMALL_SIGNED_CARRY.md) gives a nonzero polylogarithmic signed carry for the bounded candidate family.
+
 ## Results to read first
 
 ### Holonomic rigidity on the full finite-exponent graph

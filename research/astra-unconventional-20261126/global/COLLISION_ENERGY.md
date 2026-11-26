@@ -97,3 +97,65 @@ For example, a statistic needing only the original finite residue probabilities 
  =\sum_{C\ {\rm escaping}}\frac{H_C^2}{1+H_C} . \tag{10}
 \]
 Use the bounded Lipschitz test $u/(1+u)$ in (9). The limit vanishes exactly when every positive orbit is eventually periodic, under the source-qualified positivity input. It is insensitive to an arbitrary number of additional positive cycles and requires no cycle enumeration at any finite depth. Likewise at $t>0$ different from all amplitudes $H_C$, the unrestricted count $\#\{y:u_k(y)>t\}/k$ tends to the integer $\#\{C:H_C>t\}$, by integrating ${\bf1}_{(t,\infty)}(u)/u$ in (9). Equation (7)'s exact eventual affine count pertains to the first-hit statistic. An independent proof of sublinear growth of the explicit sum in (10) remains open here.
+
+## A signed modulus-eight test with forced positive drift on escape
+
+Let $\Phi(u)=u^2/(1+u)$. On odd integers define the fixed mean-zero periodic function
+\[
+ W(y)=\tfrac34-{\bf1}_{v_2(3y+1)\ge2}-{\bf1}_{v_2(3y+1)\ge3}.
+\]
+Its values on $y=1,3,5,7\pmod8$ are $-1/4,3/4,-5/4,3/4$, respectively. Set $\delta=3/4-\log_2(3/2)>0$. There is a quantitative signed obstruction with no integer-orbit test in its finite left side:
+\[
+ \liminf_{k\to\infty}\frac1k\sum_{\substack{0<y<2\cdot3^k\\y\ {\rm odd}}}
+ W(y)\Phi\!\left(\frac{3^k p_k(y\bmod3^k)}{y}\right)
+ \ \ge\ \delta\sum_{C\ {\rm escaping}}\Phi(H_C). \tag{11}
+\]
+If there is no escape the signed expression tends to zero by (10). An upper bound of zero along a subsequence would therefore rule out every ordinary escaping orbit under the named inputs. This only asks for cancellation of one fixed arithmetic test on the clipped original-law trace.
+
+For the proof, on an escaping ray put $e_n=v_2(3a_n+1)$, $A_N=\sum_{n<N}e_n$. Corrected heights give $2^{A_N}P(a_N)=3^N P(a_0)$ and $P(a_N)\ge1$. Consequently $A_N/N\le\log_2 3+O(1/N)$. For each $e\ge1$, ${\bf1}_{e\ge2}+{\bf1}_{e\ge3}\le e-1$. It follows directly that
+\[
+ \sum_{n<N}W(a_n)\ge N(7/4)-A_N\ge \delta N-O_{a_0}(1). \tag{12}
+\]
+On every fixed escaping tail, the two-sided limits in (3) let one replace $\Phi(g_k(a_n))$ by $\Phi(H_C)$ throughout $0\le n\le k$ with total error $o(k)$, since $W$ is bounded. For $n>k$, the first-power bound (2), $\Phi(u)\le u^2$ and the positive-lag limit give a total $o(k)$ just as for (4). The fixed periodic and transient sites contribute $o(k)$. Outside the orbits through $M$, $\Phi(g_k)\ll M^{-\delta_0}g_k$ for the positive exponent $\delta_0$ of the complementary layer estimate. Its signed normalized contribution is thus $O(M^{-\delta_0})$ in absolute value. Use (12) for each of the finitely many remaining escaping tails, let $M\to\infty$, and finally use (8) and the global Lipschitz bound for $\Phi$ to replace $g_k$ by $u_k$. This proves (11).
+
+The same arithmetic test can be read from dyadic target lifts. If $y$ is odd, $j\ge0$ and $k\ge1$, then $u_k(2^j y)$ is the ordinary harmonic fibre at $y$ restricted to sources whose last exponent exceeds $j$. Reconstructing an inverse word ending at $2^j y$ adds $j$ to its final exponent to get a word ending at $y$, leaving $3^k2^{-A}/(2^j y)$ equal to the latter word's harmonic weight. In particular there is no assumption of unbiased parity at these lifts. Weaver's solenoid equidistribution concerns dyadic pushforwards of the stationary joint real/ternary law, with an explicitly exceptional ordinary integer diagonal. It gives no estimate of the signed finite sums in (11). [Weaver, Paper 19, §§9–10.6](https://rstation.ai/problems/collatz/papers/19)
+
+### A counterexample to cancellation from ternary regularity alone
+
+There is an explicit probability density $f$ on the $3$-adic units whose finite Haar conditional densities $f_k$ have all the following properties. They have a uniform positive unit floor, exponentially fast $L^1$ convergence, a finite limit at each fixed positive ordinary integer, maximum of order $(3/2)^k$, and Haar quadratic energy of order $k$. The limiting $f$ is in weak $L^2$ and in every $L^p$ for $1\le p<2$, and has infinite second moment. Nevertheless
+\[
+ \liminf_k\frac1k\sum_{0<y<2\cdot3^k,\ y\ {\rm odd}}
+ W(y)\Phi(f_k(y)/y)>0. \tag{13}
+\]
+This separates (11)'s missing cancellation from strong absolute and harmonic regularity for consistent ternary reductions. The constructed density is a different law from the Syracuse affine fixed point.
+
+Here are the construction and bounds. Choose $z_n=24n+7$ for $n\ge6$ and put $B_n=z_n+3^n\mathbb Z_3$. These are unit cylinders with $z_n<3^n$, and $W(z_n)=3/4$. The positive spikes
+\[
+ b(z)=\sum_{n\ge6}z_n{\bf1}_{B_n}(z)
+\]
+lie in every finite $L^p$ by $\sum z_n3^{-n/p}<\infty$, with exponential conditional-expectation approximation in each such space. Disjointness is unnecessary. For $n\le k$ the bump is already resolved. Its normalized contributions at the other positive odd lifts in the representative window have $\ell^2$ norm at most $C z_n/3^n$, by summing the squares over $y=z_n+2j3^n$, $j\ge1$. If $n>k$ and $z_n<2\cdot3^k$, its sole positive odd representative is $z_n$. If $z_n\ge2\cdot3^k$, its averaged height is $z_n3^{k-n}$, and the sum of these heights is bounded uniformly in $k$ and tends to zero. It follows by the $\ell^2$ triangle inequality that on all sites with $W<0$ the vector $b_k(y)/y$ has uniformly bounded squared sum. Each $z_n$ with $6\le n\le k$ has $b_k(z_n)/z_n\ge1$. At a fixed positive integer, only finitely many resolved bumps meet it, and the unresolved ones through that integer eventually have $z_n\ge 3^k-O_y(1)$, hence their contribution vanishes. Also $\|b_k\|_\infty=O(k^2)$ by summing the first $k$ bump heights and their averaged tail.
+
+To supply the exact critical integrability threshold and maximal exponential growth, put $\eta=\log_2(4/3)$. In the first $j$ least-significant ternary positions, allow digits $1,2$ at exactly $\lfloor\eta j\rfloor$ positions and require digit $2$ at all others. One consistent choice makes position $j$ free when $\lfloor\eta j\rfloor>\lfloor\eta(j-1)\rfloor$. Let $L(z)$ be the length of the initial admissible segment. With Haar probability,
+\[
+ m\{L\ge j\}=3^{-j}2^{\lfloor\eta j\rfloor}\asymp(4/9)^j.
+\]
+Set $s(z)=(3/2)^{L(z)}$ on units and zero on nonunits. Its Haar tail is comparable to $t^{-2}$. On an admissible depth-$k$ cylinder, $s_k$ is comparable to $(3/2)^k$ because the conditional probability of surviving a further $j$ levels is at most $2(4/9)^j$. Elsewhere it equals $s$. The squared expectation of $s_k$ is of order $k$, since for $j<k$ the probability of $L=j$ is comparable to $(4/9)^j$, and each such level contributes order one. Its $L^1$ approximation error is $O((2/3)^k)$. At every positive integer $y$ with $j$ initial admissible digits, $y\ge(3^j-1)/2$ because every admissible digit is at least one. Therefore $s_k(y)\ll(1+y)^{\log_3(3/2)}$ uniformly in $k$. This exponent is less than $1/2$, so $\sum_{y\ge1}(s_k(y)/y)^2=O(1)$ uniformly.
+
+Finally set $f=({\bf1}_{\mathbb Z_3^\times}+c b+s)/Z$, normalized to total mass one. Choose the fixed $c\ge1$ so that $c\int b$ exceeds the mass of the other two summands. Then $f$ puts more than half its mass on $1\bmod3$ because every bump lies there. The Syracuse law puts exactly $1/3$ there, the probability of an even first exponent. Thus the exact affine recursion already fails on the first quotient. Its lower floor, critical index, maximum, energy, convergence, and fixed positive traces follow from the preceding bounds. On $W<0$ sites the total clipped contribution stays bounded because $\Phi(u)\le u^2$. The $k-5$ distinct marked sites contribute at least $(3/4)(k-5)\Phi(1/Z)$, proving (13). Any proof of cancellation through the exact Syracuse transfer must use structure beyond these matched properties.
+
+The counterexample can also match arbitrarily many exact Syracuse quotients. Fix $d\ge1$, put $g=b+s$, and let $g_d$ be its depth-$d$ conditional expectation. For sufficiently small $\epsilon>0$ the density $f^{(d)}=\rho_d+\epsilon(g-g_d)$ has $\rho_d-\epsilon g_d\ge\rho_d/2$ on units and is zero on nonunits. Its reductions through $d$ are exactly the original Syracuse reductions, so its integral is one. Beyond $d$ the density consists of a bounded, nonnegative baseline and $\epsilon g$. All the bounds above persist, with constants allowed to depend on $d,\epsilon$, and (13) still holds by replacing the marked-site lower bound with $\Phi(\epsilon)>0$. Since $g-g_d$ is nonzero, distinct $\epsilon$ give distinct densities. At most one can satisfy the full Syracuse affine recursion: its projection at depth $k$ is uniquely the original $k$-word law, as the first $k$ ternary digits of the iterated affine recursion are independent of the remaining seed. Thus one can select $\epsilon$ for which an affine quotient identity fails strictly beyond $d$.
+
+A one-depth perturbation quantifies the precision loss at the actual finite law. Use specifically Paper 12, §2, Input D, which imports a single $\alpha>0$ with $\rho_j(r)\ge\alpha$ for **every** $j\ge1$ and every ternary unit residue. Fix $\epsilon>0$, $q=3^k$, and choose $m=k-\lceil\log_3(Ck)\rceil$, where $C$ is a fixed sufficiently large constant depending on $\epsilon/\alpha$. Write $N=3^{k-m}$. For $1\le i\le k$ put $z_i=24i+7$. At sufficiently large $k$ these are distinct unit classes modulo $3^m$, all below $3^m$. Perturb the genuine depth-$k$ density by
+\[
+ \widetilde\rho_k(r)=\rho_k(r)+\epsilon\sum_{i=1}^k z_i
+ \left({\bf1}_{r=z_i\bmod q}-N^{-1}{\bf1}_{r=z_i\bmod3^m}\right).
+\]
+Each parent has unchanged total, so every original quotient law through $m$ is exact. Each subtraction is at most $\epsilon(24k+7)/N\le\alpha/2$, which gives a probability law. The total variation distance is $O_\epsilon(k^2/3^k)$ by summing the added masses. At every marked positive lift $z_i$ the normalized amplitude increases by $\epsilon(1-N^{-1})$. Convexity and $\Phi(0)=0$ imply $\Phi(u+a)-\Phi(u)\ge\Phi(a)$ on $u,a\ge0$. Away from those marked lifts, the total absolute loss in the signed clipped sum is bounded by the Lipschitz constant times
+\[
+ \|W\|_\infty\frac{\epsilon}{N}\sum_{i=1}^k z_i
+     \sum_{j=1}^{N-1}\frac1{z_i+2j3^m}
+ \ll_\epsilon \frac{k^2\log(2N)}{3^k}=o(1).
+\]
+Thus the change in the signed sum divided by $k$ has liminf at least $(3/4)\Phi(\epsilon)>0$, despite exponentially small total variation error and exact agreement until the final $O(\log k)$ levels. This is an instability of replacing the exact fine quotient by a nearby law. The triangular array does not satisfy the complete affine recursion. [Uniform all-residue atom floor as imported in Paper 12](https://rstation.ai/problems/collatz/papers/12)
+
+In fact this array converges in $L^1$ to the true stationary ternary density and satisfies the one-step affine recursion to $O_\epsilon(k^2 3^{-k})$ in total variation, because the affine pushforward is a total-variation contraction and the original finite laws satisfy that recursion exactly. Every fixed quotient is eventually exact. The signed discrepancy persists in this array because exact refinement at its changing finest levels is absent.
