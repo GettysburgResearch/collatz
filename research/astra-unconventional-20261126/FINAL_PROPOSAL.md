@@ -49,6 +49,8 @@ In the remaining bounded case, \(M_j=x\) is the first bad Mersenne and \(3M_j\) 
 
 The separately reviewed [finite-cover theorem](renormalization/FINITE_COVER_BARRIER.md) further excludes a finite cover of this row by the specified fixed-word floor and canonical-query tests. Its all-word reduction is written mathematics; the resulting complete finite classification is independently replayed. It explicitly permits an unbounded selector terminating at each ordinary exponent while failing at the nonordinary ternary limit. Thus it refines the missing construction, without asserting impossibility of a full Collatz proof.
 
+The [positive-Haar extension](renormalization/HAAR_BARRIER.md) shows that these exceptional ternary parameters form a positive-measure set in every sufficiently small ball about 590. The proof uses an exact finite ordinary replay through 5,900,000 and a written inverse-branch first-passage estimate. It rules out identifying all nonterminating ternary controls with finitely many rational points, but supplies no ordinary counterexample and does not decide whether an unbounded selector terminates at every ordinary exponent.
+
 ## A possible fixed-component contradiction and its absent construction
 
 Suppose \(C(3y)\) is witnessed at clock \(H_0\) with \(p_0\) odds, while the lower orbit of \(y\) is nonperiodic. If, for arbitrarily large \(g\), there were a positive \(u\) satisfying both

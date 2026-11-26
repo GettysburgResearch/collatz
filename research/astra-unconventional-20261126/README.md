@@ -105,6 +105,8 @@ The remaining row also has a precise obstruction to finite fixed-word searches. 
 
 [All-word reduction and finite-cover obstruction](renormalization/FINITE_COVER_BARRIER.md)
 
+A further written theorem strengthens this from one isolated limiting parameter to a positive-Haar set. In every ball centered at 590 of ternary depth at least 385, more than 41% of parameters retain exactly the same eight low-slope forms. The proof combines an elementary weak-square inverse-branch bound with the exact verification that every integer through 5,900,000 hits one in at most 384 shortcut steps. Both optimized and undefined-behavior-sanitized C++ replays gave identical results. This excludes a finite-rational-exception repair of the specified word strategy, while leaving ordinary exponent inputs and source-dependent clocks unresolved. [Positive-Haar theorem](renormalization/HAAR_BARRIER.md) · [Replay and review](../../reports/astra-unconventional-20261126/haar-replay.json)
+
 ## 4. Exact optimization reveals what a reset must accomplish
 
 For an all-odd ascent from \(x=2^ra-1\) to \(y=3^ra-1\), let \(L(r)\) be the least signed clock with \(r\) odd inputs ending at \(-2\), and define
