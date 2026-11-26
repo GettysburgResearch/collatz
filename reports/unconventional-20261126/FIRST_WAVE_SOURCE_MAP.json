@@ -1,0 +1,207 @@
+{
+  "base_commit": "8e6add443b13acbcfd553676898c120183f07377",
+  "sources": [
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/COMPONENT_OPERATORS.md",
+      "source_sha256": "1a1f9abb51d3fd0d0e5848e811c050593bdad76d7871e9a8de97ee767af4301a",
+      "integration_changes": [],
+      "integrated_sha256": "1a1f9abb51d3fd0d0e5848e811c050593bdad76d7871e9a8de97ee767af4301a"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/OPERATOR_STRUCTURE.md",
+      "source_sha256": "1364dee34a9b1ebf68c4ce5b5068d55dea7201ee96763fcc230b48179622eaeb",
+      "integration_changes": [],
+      "integrated_sha256": "1364dee34a9b1ebf68c4ce5b5068d55dea7201ee96763fcc230b48179622eaeb"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/FINITE_SPECTRUM.md",
+      "source_sha256": "b059b000df1752776743cd991d7e4555cf680d384e65d1d72472da9920fafa3a",
+      "integration_changes": [],
+      "integrated_sha256": "b059b000df1752776743cd991d7e4555cf680d384e65d1d72472da9920fafa3a"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/WEIGHTED_GAP.md",
+      "source_sha256": "ac085d5c0209696c18717a3d618ddf880c6cc281480a4ef38a053c10674c3a89",
+      "integration_changes": [],
+      "integrated_sha256": "ac085d5c0209696c18717a3d618ddf880c6cc281480a4ef38a053c10674c3a89"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/LOCAL_WEIGHT_OBSTRUCTION.md",
+      "source_sha256": "29e5eda8ec8f450788aa30c9643051f62c0a3af04b09e0b130b1a43c60e119b9",
+      "integration_changes": [],
+      "integrated_sha256": "29e5eda8ec8f450788aa30c9643051f62c0a3af04b09e0b130b1a43c60e119b9"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/POWER_SPECTRUM.md",
+      "source_sha256": "3683388b35792d3074c84cefabf6c3d316a81c42e99c2c5fc4529f51e268ca17",
+      "integration_changes": [],
+      "integrated_sha256": "3683388b35792d3074c84cefabf6c3d316a81c42e99c2c5fc4529f51e268ca17"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/BERGMAN_RADIUS.md",
+      "source_sha256": "88f97c741df5ce3b04f8d275381db53c6c1ecf7cada3ee23fe79e5a1df233fe0",
+      "integration_changes": [],
+      "integrated_sha256": "88f97c741df5ce3b04f8d275381db53c6c1ecf7cada3ee23fe79e5a1df233fe0"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/BERGMAN_VANISHING_WEIGHTS.md",
+      "source_sha256": "ae176d5704c3283f6803cdfdac767176ab2bff0305685fdffc54ac7c7e7fe333",
+      "integration_changes": [],
+      "integrated_sha256": "ae176d5704c3283f6803cdfdac767176ab2bff0305685fdffc54ac7c7e7fe333"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/AffineClock.lean",
+      "source_sha256": "964e7dc6d8ade85b28684724535eb3294d4bff85da83b2f7d944a07fe6942055",
+      "integration_changes": [],
+      "integrated_sha256": "964e7dc6d8ade85b28684724535eb3294d4bff85da83b2f7d944a07fe6942055"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/Funnel.lean",
+      "source_sha256": "b5d884f30ce886e6898fdd2da6aabc30e86a9e10bd04a30dbef4116ca000843c",
+      "integration_changes": [],
+      "integrated_sha256": "b5d884f30ce886e6898fdd2da6aabc30e86a9e10bd04a30dbef4116ca000843c"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/CarryMass.lean",
+      "source_sha256": "fd24bf366ac723142366e424e8bf1f9b3cd0e257e3a971cdc0863e762f5cae20",
+      "integration_changes": [],
+      "integrated_sha256": "fd24bf366ac723142366e424e8bf1f9b3cd0e257e3a971cdc0863e762f5cae20"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/check_operator.py",
+      "source_sha256": "d53bcb31d8cf7e0bcfb239564b4410208a1677cf3ef46c4ad98509bf54a64f74",
+      "integration_changes": [],
+      "integrated_sha256": "d53bcb31d8cf7e0bcfb239564b4410208a1677cf3ef46c4ad98509bf54a64f74"
+    },
+    {
+      "origin_agent_directory": "operator-attack",
+      "path": "research/unconventional-20261126/operator/check_bergman.py",
+      "source_sha256": "b9f853c4ce5a1f483a767905c1a1d8f9465a62a290f715b1d91e820c160d91a4",
+      "integration_changes": [],
+      "integrated_sha256": "b9f853c4ce5a1f483a767905c1a1d8f9465a62a290f715b1d91e820c160d91a4"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/MIXED_MECHANICAL.md",
+      "source_sha256": "134598235d16c03773d473f76ed88d928e17448b167a931f54a6e76b01cf5007",
+      "integration_changes": [],
+      "integrated_sha256": "134598235d16c03773d473f76ed88d928e17448b167a931f54a6e76b01cf5007"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/ROUGH_DENOMINATORS.md",
+      "source_sha256": "b3849bbf3f6ae3889a16ef5062e0ea4626f25cab87b1d01fb5705114750d21be",
+      "integration_changes": [],
+      "integrated_sha256": "b3849bbf3f6ae3889a16ef5062e0ea4626f25cab87b1d01fb5705114750d21be"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/TRIPLING_CLOCK.md",
+      "source_sha256": "6e1f4e01975525f37785b9a71101b34420bb1078cf9c8fefa77c5d3b8a94d0dd",
+      "integration_changes": [],
+      "integrated_sha256": "6e1f4e01975525f37785b9a71101b34420bb1078cf9c8fefa77c5d3b8a94d0dd"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/COUPLED_CYCLES.md",
+      "source_sha256": "25fd1d38ff8164775a3ba8fbcda68adf24a9a7cebbd7d833e688482d4fcc7f0e",
+      "integration_changes": [],
+      "integrated_sha256": "25fd1d38ff8164775a3ba8fbcda68adf24a9a7cebbd7d833e688482d4fcc7f0e"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/MixedWordSpacing.lean",
+      "source_sha256": "c269d4acbd16846021d73c22a552a737455be233bcf382039b439a0c0ff9b3f3",
+      "integration_changes": [
+        "added transitive axiom audits for coprime_two_three"
+      ],
+      "integrated_sha256": "efa883a0db006240a1f31e148ea4489d8bb3b83503a8eba6514577eea8ffdc0b"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/TriplingCut.lean",
+      "source_sha256": "fb2d1d1c7d80cbd79cdab3b123d4f29c452868f32c609007881c98bd3350bfe6",
+      "integration_changes": [
+        "added transitive axiom audits for odd_units, coprime_odd"
+      ],
+      "integrated_sha256": "28ac3228eae1537ad5d85182be5d2defb4a6e849ecb3694418491a75f3978ba3"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/CoupledCycles.lean",
+      "source_sha256": "a3fa13012990598360791f3b704e24b3657aac41d95c11b277d7cf9fae58ee24",
+      "integration_changes": [
+        "added transitive axiom audits for run_append, one_block"
+      ],
+      "integrated_sha256": "e1badd4ffdad1a6337f7f21ccb693c65107edc311d926122b818dd10578c8831"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/check_adelic.py",
+      "source_sha256": "bbad0ffa125b91cb4a747ab8bdb8b1b07765c737ad4b987a90057ec402e2e1fa",
+      "integration_changes": [],
+      "integrated_sha256": "bbad0ffa125b91cb4a747ab8bdb8b1b07765c737ad4b987a90057ec402e2e1fa"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/check_tripling.py",
+      "source_sha256": "7c8cec1caf0ff156538b74b61b3b82155c5687e51b3c2441b208e8dde1b3ba8d",
+      "integration_changes": [],
+      "integrated_sha256": "7c8cec1caf0ff156538b74b61b3b82155c5687e51b3c2441b208e8dde1b3ba8d"
+    },
+    {
+      "origin_agent_directory": "adelic-attack",
+      "path": "research/unconventional-20261126/arithmetic/check_coupled.py",
+      "source_sha256": "f768f54c2f5c35fcc4471f8d0a362f0e64745ff9079ee4fcc541e2df08893fa5",
+      "integration_changes": [],
+      "integrated_sha256": "f768f54c2f5c35fcc4471f8d0a362f0e64745ff9079ee4fcc541e2df08893fa5"
+    },
+    {
+      "origin_agent_directory": "combinatorial-attack",
+      "path": "research/unconventional-20261126/defects/CENTERED_DEFECT_RETURNS.md",
+      "source_sha256": "4eba8798c07cf07c3a35dd9370fa47c33162aef0a8b9deec2eb4e91cb03356d1",
+      "integration_changes": [],
+      "integrated_sha256": "4eba8798c07cf07c3a35dd9370fa47c33162aef0a8b9deec2eb4e91cb03356d1"
+    },
+    {
+      "origin_agent_directory": "combinatorial-attack",
+      "path": "research/unconventional-20261126/defects/SMOOTH_SOURCE_PREFIX.md",
+      "source_sha256": "cd480b5b1c56a4ec5754e5312c9103af5a391849f87905aabcb852d5fdbfbcdb",
+      "integration_changes": [],
+      "integrated_sha256": "cd480b5b1c56a4ec5754e5312c9103af5a391849f87905aabcb852d5fdbfbcdb"
+    },
+    {
+      "origin_agent_directory": "combinatorial-attack",
+      "path": "research/unconventional-20261126/defects/MERSENNE_ONE_RESET.md",
+      "source_sha256": "2adc1f6a494e7a69b84a716d543b32f00c49a7f36490dcbb13096238a814b256",
+      "integration_changes": [],
+      "integrated_sha256": "2adc1f6a494e7a69b84a716d543b32f00c49a7f36490dcbb13096238a814b256"
+    },
+    {
+      "origin_agent_directory": "combinatorial-attack",
+      "path": "research/unconventional-20261126/defects/MersenneReset.lean",
+      "source_sha256": "42528553db41839d40c07ebaf9b0bf46b43dfd74e001d7693a25f061efb96539",
+      "integration_changes": [],
+      "integrated_sha256": "42528553db41839d40c07ebaf9b0bf46b43dfd74e001d7693a25f061efb96539"
+    },
+    {
+      "origin_agent_directory": "combinatorial-attack",
+      "path": "research/unconventional-20261126/defects/DefectArithmetic.lean",
+      "source_sha256": "4a3cc309dd4f725c3a93c70eb90dce484239bc082c9b275c56e2ca9600835f90",
+      "integration_changes": [],
+      "integrated_sha256": "4a3cc309dd4f725c3a93c70eb90dce484239bc082c9b275c56e2ca9600835f90"
+    }
+  ]
+}

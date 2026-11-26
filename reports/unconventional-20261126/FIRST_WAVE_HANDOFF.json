@@ -1,0 +1,145 @@
+{
+  "baseline": "8e6add443b13acbcfd553676898c120183f07377",
+  "toolchain": "Lean 4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "statuses": {
+    "O1_to_O10": "written proofs independently reconstructed; operator-norm localization, functional analysis and conjecture not formally proved by these modules",
+    "formal_checks": "28 local theorems audited; all modules passed with -DautoImplicit=false -DwarningAsError=true",
+    "O9_upper": "root independently checked 177147 actual lifted residue inequalities; displayed table checks 59049 maxima",
+    "ordinary_global": "OPEN"
+  },
+  "claim_files": {
+    "O1_O2": "COMPONENT_OPERATORS.md",
+    "O3_O4": "OPERATOR_STRUCTURE.md",
+    "O1_finite_computability": "FINITE_SPECTRUM.md",
+    "O5_O6": "WEIGHTED_GAP.md",
+    "O7": "LOCAL_WEIGHT_OBSTRUCTION.md",
+    "O8": "POWER_SPECTRUM.md",
+    "O9": "BERGMAN_RADIUS.md",
+    "O10": "BERGMAN_VANISHING_WEIGHTS.md"
+  },
+  "written_proofs": [
+    {
+      "file": "COMPONENT_OPERATORS.md",
+      "sha256": "1a1f9abb51d3fd0d0e5848e811c050593bdad76d7871e9a8de97ee767af4301a"
+    },
+    {
+      "file": "OPERATOR_STRUCTURE.md",
+      "sha256": "1364dee34a9b1ebf68c4ce5b5068d55dea7201ee96763fcc230b48179622eaeb"
+    },
+    {
+      "file": "FINITE_SPECTRUM.md",
+      "sha256": "b059b000df1752776743cd991d7e4555cf680d384e65d1d72472da9920fafa3a"
+    },
+    {
+      "file": "WEIGHTED_GAP.md",
+      "sha256": "ac085d5c0209696c18717a3d618ddf880c6cc281480a4ef38a053c10674c3a89"
+    },
+    {
+      "file": "LOCAL_WEIGHT_OBSTRUCTION.md",
+      "sha256": "29e5eda8ec8f450788aa30c9643051f62c0a3af04b09e0b130b1a43c60e119b9"
+    },
+    {
+      "file": "POWER_SPECTRUM.md",
+      "sha256": "3683388b35792d3074c84cefabf6c3d316a81c42e99c2c5fc4529f51e268ca17"
+    },
+    {
+      "file": "BERGMAN_RADIUS.md",
+      "sha256": "88f97c741df5ce3b04f8d275381db53c6c1ecf7cada3ee23fe79e5a1df233fe0"
+    },
+    {
+      "file": "BERGMAN_VANISHING_WEIGHTS.md",
+      "sha256": "ae176d5704c3283f6803cdfdac767176ab2bff0305685fdffc54ac7c7e7fe333"
+    }
+  ],
+  "formal_sources": [
+    {
+      "file": "AffineClock.lean",
+      "sha256": "964e7dc6d8ade85b28684724535eb3294d4bff85da83b2f7d944a07fe6942055"
+    },
+    {
+      "file": "Funnel.lean",
+      "sha256": "b5d884f30ce886e6898fdd2da6aabc30e86a9e10bd04a30dbef4116ca000843c"
+    },
+    {
+      "file": "CarryMass.lean",
+      "sha256": "fd24bf366ac723142366e424e8bf1f9b3cd0e257e3a971cdc0863e762f5cae20"
+    }
+  ],
+  "formal_receipts": [
+    {
+      "file": "CLOCK_AXIOMS.txt",
+      "sha256": "90a512223b3f943abe62064fd0965f219ff1d8873746da04b69a8426480646c2"
+    },
+    {
+      "file": "FUNNEL_AXIOMS.txt",
+      "sha256": "0dee93e17b7a1f7608217318f729c3d3788fee0d9babcb9a4da207fa0e1b31a1"
+    },
+    {
+      "file": "CARRY_AXIOMS.txt",
+      "sha256": "315b830e7db65143daf3b4d1fa6dab3a75d66ea3b49edbc6f4ad76ef708de338"
+    }
+  ],
+  "replays": [
+    {
+      "file": "check_operator.py",
+      "sha256": "d53bcb31d8cf7e0bcfb239564b4410208a1677cf3ef46c4ad98509bf54a64f74"
+    },
+    {
+      "file": "OPERATOR_CONTROLS.json",
+      "sha256": "c23061ae7e8489fc570cd80e4edc2bdf731e899a7d83a7ebcff5df2248eccf24"
+    },
+    {
+      "file": "check_bergman.py",
+      "sha256": "b9f853c4ce5a1f483a767905c1a1d8f9465a62a290f715b1d91e820c160d91a4"
+    },
+    {
+      "file": "BERGMAN_CONTROLS.json",
+      "sha256": "9ee814eef3ac054eb3ef978b2f4db8758bdd816091289f086f8c862152a702db"
+    }
+  ],
+  "reviews_performed": [
+    {
+      "file": "ADEL_REVIEW.md",
+      "sha256": "69e53435111a640a978f80e4cfd8db8d5ed02dc83ca6ca62e643fe169b90a1af"
+    },
+    {
+      "file": "review_adelic.py",
+      "sha256": "9148ff05e48290fe371c670d8bc94343e062fdbb95316e39b9e48a398348c3bd"
+    },
+    {
+      "file": "ADEL_REVIEW_CONTROLS.json",
+      "sha256": "fd8b5f08cdb9ccd79d091cbac352e18e39719986f7ae41b8b8c0e430993f3727"
+    },
+    {
+      "file": "COUPLED_REVIEW.md",
+      "sha256": "443a5f1bcb58518f8f146dd8804ec522344d057d649260a98c2e8fdbd335ce15"
+    },
+    {
+      "file": "review_coupled.py",
+      "sha256": "9f738e680d23e6f7d9f801ab7adf420b4a9b3d77b43a683c680d8f0dc0b2339c"
+    },
+    {
+      "file": "COUPLED_REVIEW_CONTROLS.json",
+      "sha256": "cd676c068c17b7b83dc44bc4edf908d207cac918452ee72cdbd0cf665d7bd229"
+    }
+  ],
+  "independent_reviews_received": [
+    {
+      "file": "../combinatorial-attack/OPERATOR_REVIEW.md",
+      "sha256": "22ed7774dcd3107f4cb4059c70a73207a8f8b69e86082c1e869dfb72773913c6"
+    },
+    {
+      "file": "../combinatorial-attack/LOCAL_WEIGHT_REVIEW.md",
+      "sha256": "1aa43e051b6e4bb66a1ae5ec9c20c825c09aba663ba9b99c500f0449812013ad"
+    },
+    {
+      "file": "../combinatorial-attack/POWER_SPECTRUM_REVIEW.md",
+      "sha256": "1da70e19888181fb36150d852ba73c37c57cebd073257f82a10f3072c5985615"
+    },
+    {
+      "file": "../combinatorial-attack/VANISHING_WEIGHT_REVIEW.md",
+      "sha256": "bad6e51e082983ad4c7629c1923fb29f1675a31aeed4bd5cc121da7d433416c1"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "word_orderings": 2026,
+  "all_positive_rational_phases": 140244,
+  "input_cycles": 2026,
+  "output_cycles": 2026,
+  "raw_clock_groups": 45,
+  "largest_common_reduced_denominator_fiber": 222,
+  "congruence_cases": [
+    {
+      "modulus": 5,
+      "a": 83,
+      "b": 82,
+      "n": 424,
+      "odd": 169
+    },
+    {
+      "modulus": 35,
+      "a": 483,
+      "b": 498,
+      "n": 2472,
+      "odd": 985
+    },
+    {
+      "modulus": 385,
+      "a": 4803,
+      "b": 5034,
+      "n": 24720,
+      "odd": 9841
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "reports/unconventional-20261126/reviews/review_adelic.py",
+    "original_sha256": "9148ff05e48290fe371c670d8bc94343e062fdbb95316e39b9e48a398348c3bd",
+    "integrated_sha256": "9148ff05e48290fe371c670d8bc94343e062fdbb95316e39b9e48a398348c3bd",
+    "change": "none"
+  },
+  {
+    "path": "reports/unconventional-20261126/reviews/review_coupled.py",
+    "original_sha256": "9f738e680d23e6f7d9f801ab7adf420b4a9b3d77b43a683c680d8f0dc0b2339c",
+    "integrated_sha256": "58449296883e0a1e3d51e9596f7042eebbca44c0647ff722f6c179b5498e02b6",
+    "change": "reject optimized Python before assertion-based replay"
+  },
+  {
+    "path": "reports/unconventional-20261126/reviews/review_local_weight.py",
+    "original_sha256": "2f9878ae5b247a3ec553a1f56327de66e8ae95d50313126bb8efd547e6fe1e3b",
+    "integrated_sha256": "fcf836ae0ba8b37d0507c8a608d7d519ee5c13fc607e58a646b88e75f88bb885",
+    "change": "reject optimized Python before assertion-based replay"
+  },
+  {
+    "path": "reports/unconventional-20261126/reviews/review_operator_patch.py",
+    "original_sha256": "2fb185a7c433fb104295c0f397c6c4b9e79523ebf27d7ab816912c6ba520ffd7",
+    "integrated_sha256": "2fb185a7c433fb104295c0f397c6c4b9e79523ebf27d7ab816912c6ba520ffd7",
+    "change": "none"
+  },
+  {
+    "path": "reports/unconventional-20261126/reviews/review_power_spectrum.py",
+    "original_sha256": "25e8ddf10a4c939ce2f716bacce1925841a9cd1feb2d48d2bac8bf2e2affbf5e",
+    "integrated_sha256": "8b9efcab788bf58d678d0accbb4bf11426a3ee176aac5a34436980f2b2020b82",
+    "change": "reject optimized Python before assertion-based replay"
+  }
+]

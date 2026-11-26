@@ -1,0 +1,259 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "modules": [
+    {
+      "path": "LeanCore.lean",
+      "sha256": "81c6bcfde5d09085e03509a02691d3d1dfdcd43ea11c2be5d8a798dd1ae9ac11",
+      "axioms": {
+        "RegularityRigidity.step_lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegularityRigidity.affine_inverse": [
+          "propext"
+        ],
+        "RegularityRigidity.weighted_phase_increment": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegularityRigidity.path_probability_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RegularityRigidity.block_error": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RegularityRigidity.feed_append": [
+          "propext"
+        ],
+        "RegularityRigidity.prefix_transfer": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "path": "continuation/ReturnRigidity.lean",
+      "sha256": "1a7da3c43332ee3b4939ccdbdd0a7dcc5b43c634fc1aa98e36d3909aee4676da",
+      "axioms": {
+        "ReturnRigidity.run_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.run_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.common_prefix_tail": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.symmetric_quadratic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.shared_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.constant_prediction_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnRigidity.error_covariance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise-fibers/PointwiseFiber.lean",
+      "sha256": "9e73041211096fd9654f5db7b8520f325a6eb157ef8780372cfb521bc81a8ca1",
+      "axioms": {
+        "PointwiseFiber.different_carries_different_sources": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PointwiseFiber.bounded_offset_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PointwiseFiber.pressure_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PointwiseFiber.bad_incidence_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PointwiseFiber.inherit_pair": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise-fibers/OrdinaryFiber.lean",
+      "sha256": "036c897866b491f3d2ec3b452b18893785989cfcdee9877483bd8f2916bb25e5",
+      "axioms": {
+        "_private.OrdinaryFiber.0.OrdinaryFiber.three_pow_mod_two": [
+          "propext"
+        ],
+        "_private.OrdinaryFiber.0.OrdinaryFiber.numerator_even_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryFiber.0.OrdinaryFiber.numerator_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryFiber.0.OrdinaryFiber.decode_half": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryFiber.0.OrdinaryFiber.cons_affine": [
+          "propext"
+        ],
+        "OrdinaryFiber.affine_iff_orbit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.inverse_iff_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.unit_inverse_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.inverse_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.paired_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryFiber.0.OrdinaryFiber.carry_mod_two": [
+          "propext"
+        ],
+        "OrdinaryFiber.carry_injective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.fixed_clock_ceiling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.odd_source_of_word": [
+          "propext"
+        ],
+        "OrdinaryFiber.ordinary_paired_fiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryFiber.ordinary_fiber_ceiling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise-fibers/RelativeState.lean",
+      "sha256": "5b708593a40185a77a3c9f0b80dbf639e96ccf92cca36b2b1d9fe410a8fd0179",
+      "axioms": {
+        "RelativeState.relative_carry_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelativeState.relative_offset_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelativeState.excludes_minus_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise-fibers/FinitePressure.lean",
+      "sha256": "300c9cfa5ab71f6d75c36303290e1d5b664127c3c6e1007dd4c31263a2952254",
+      "axioms": {
+        "FinitePressure.mass_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FinitePressure.fixed_clock_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise-fibers/TwoBlockRouter.lean",
+      "sha256": "6bcbf87f234e7078fdab97df73e6e9deb47001c3b5a2173699efa3909fbac1de",
+      "axioms": {
+        "TwoBlockRouter.finite_split": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.TwoBlockRouter.0.TwoBlockRouter.zeros_carry": [
+          "propext"
+        ],
+        "_private.TwoBlockRouter.0.TwoBlockRouter.padded_profiles": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TwoBlockRouter.padded_block_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TwoBlockRouter.target_split": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TwoBlockRouter.two_block_router": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "shuffled_pair_checks": 334,
+  "all_depth_models": [
+    {
+      "pattern": "ABC",
+      "reduced_denominator": 130343,
+      "q_numerator": 1937,
+      "tripled_numerator": 5811,
+      "cycle_minimum_numerators": [
+        2309,
+        1937
+      ],
+      "tested_odd_starts": 1615,
+      "gcd_excluded": 0,
+      "new_odd_edges": 39564
+    },
+    {
+      "pattern": "AABC",
+      "reduced_denominator": 522101,
+      "q_numerator": 9395,
+      "tripled_numerator": 28185,
+      "cycle_minimum_numerators": [
+        9479,
+        9395
+      ],
+      "tested_odd_starts": 7830,
+      "gcd_excluded": 412,
+      "new_odd_edges": 171082
+    },
+    {
+      "pattern": "ABBC",
+      "reduced_denominator": 1046389,
+      "q_numerator": 9907,
+      "tripled_numerator": 29721,
+      "cycle_minimum_numerators": [
+        17743,
+        9907
+      ],
+      "tested_odd_starts": 8257,
+      "gcd_excluded": 0,
+      "new_odd_edges": 275225
+    },
+    {
+      "pattern": "AABBC",
+      "reduced_denominator": 598249,
+      "q_numerator": 6367,
+      "tripled_numerator": 19101,
+      "cycle_minimum_numerators": [
+        10243,
+        6367
+      ],
+      "tested_odd_starts": 5307,
+      "gcd_excluded": 20,
+      "new_odd_edges": 168082
+    }
+  ],
+  "all_denominators": [
+    5,
+    47,
+    13,
+    1909,
+    1631,
+    84997,
+    130343,
+    522101,
+    1046389,
+    598249
+  ],
+  "pairwise_coprimality_checks": 45
+}

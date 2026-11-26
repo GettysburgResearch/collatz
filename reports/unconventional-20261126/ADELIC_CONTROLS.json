@@ -1,0 +1,139 @@
+{
+  "finite_cut_controls": {
+    "odd_source_and_intercept_pairs": 8192,
+    "CRT_two_sided_windows": 576,
+    "sum_of_repeated_factor_checks": 1554,
+    "max_observed_total": 9
+  },
+  "rational_cycles": [
+    {
+      "upper_convergent": [
+        65,
+        41
+      ],
+      "preceding_lower": [
+        19,
+        12
+      ],
+      "L": 4,
+      "clock": 268,
+      "least_odd_period": 169,
+      "denominator_bits": 265,
+      "denominator_sha256_unsigned_big_endian": "860aebe2d843b507c6e81dd882cbbdb4cacc52af37853be4f89e65c10375e293",
+      "certified_rough_primes": [
+        5
+      ],
+      "floor_of_real_minimum": 415,
+      "certified_past_and_future_gaps": 40
+    },
+    {
+      "upper_convergent": [
+        65,
+        41
+      ],
+      "preceding_lower": [
+        19,
+        12
+      ],
+      "L": 12,
+      "clock": 972,
+      "least_odd_period": 613,
+      "denominator_bits": 971,
+      "denominator_sha256_unsigned_big_endian": "d999a331ec3901d16da77df0dba1b783510c7480c58a79beb482a66155a16e8e",
+      "certified_rough_primes": [
+        5,
+        7,
+        13
+      ],
+      "floor_of_real_minimum": 508,
+      "certified_past_and_future_gaps": 40
+    },
+    {
+      "upper_convergent": [
+        65,
+        41
+      ],
+      "preceding_lower": [
+        19,
+        12
+      ],
+      "L": 60,
+      "clock": 5520,
+      "least_odd_period": 3481,
+      "denominator_bits": 5520,
+      "denominator_sha256_unsigned_big_endian": "cf6cfac800d422ec012da69725faf0ccba7447afac6d4be785758158f2a637fb",
+      "certified_rough_primes": [
+        5,
+        7,
+        11,
+        13,
+        31,
+        61
+      ],
+      "floor_of_real_minimum": 439,
+      "certified_past_and_future_gaps": 40
+    },
+    {
+      "upper_convergent": [
+        485,
+        306
+      ],
+      "preceding_lower": [
+        84,
+        53
+      ],
+      "L": 1,
+      "clock": 886,
+      "least_odd_period": 559,
+      "denominator_bits": 879,
+      "denominator_sha256_unsigned_big_endian": "cfb4ad503817f7d24cd06af08c8f5c0431ec50032d05510acae4794cbd779274",
+      "certified_rough_primes": [],
+      "floor_of_real_minimum": 32544,
+      "certified_past_and_future_gaps": 305
+    },
+    {
+      "upper_convergent": [
+        485,
+        306
+      ],
+      "preceding_lower": [
+        84,
+        53
+      ],
+      "L": 12,
+      "clock": 5232,
+      "least_odd_period": 3301,
+      "denominator_bits": 5227,
+      "denominator_sha256_unsigned_big_endian": "8fa9fe5e594eb2115af519c92d11b679f9ec4c9ca9aca6626412d3f35130450c",
+      "certified_rough_primes": [
+        5,
+        7,
+        13
+      ],
+      "floor_of_real_minimum": 29527,
+      "certified_past_and_future_gaps": 305
+    },
+    {
+      "upper_convergent": [
+        485,
+        306
+      ],
+      "preceding_lower": [
+        84,
+        53
+      ],
+      "L": 24,
+      "clock": 15864,
+      "least_odd_period": 10009,
+      "denominator_bits": 15861,
+      "denominator_sha256_unsigned_big_endian": "112f125ea1d494e5f787dae42e3f8d4b38210a74b297de50ca9bf5bb9c7e25ee",
+      "certified_rough_primes": [
+        5,
+        7,
+        13
+      ],
+      "floor_of_real_minimum": 31470,
+      "certified_past_and_future_gaps": 305
+    }
+  ]
+}

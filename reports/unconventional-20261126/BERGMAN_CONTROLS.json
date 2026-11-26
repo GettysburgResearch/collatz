@@ -1,0 +1,57 @@
+[
+  {
+    "depth": 1,
+    "residues": 3,
+    "integer_scale": 100000000000,
+    "iterations": 640,
+    "vector_sha256": "a4242dd1c08b925b7ba4b8763344a45d50adb4cb27004fa2e1aa64dd716bf4ed",
+    "upper_squared": "100000000000/42356354419",
+    "squared_lower": "20/9",
+    "lower_radius_floor_8": 149071198,
+    "upper_radius_ceiling_8": 153652883
+  },
+  {
+    "depth": 3,
+    "residues": 27,
+    "integer_scale": 100000000000,
+    "iterations": 640,
+    "vector_sha256": "874b13e9e307aa7b1da944a9342341b242072cc57795da3abb2c95868471e24d",
+    "upper_squared": "4037601837/1814137648",
+    "squared_lower": "20/9",
+    "lower_radius_floor_8": 149071198,
+    "upper_radius_ceiling_8": 149185505
+  },
+  {
+    "depth": 6,
+    "residues": 729,
+    "integer_scale": 100000000000,
+    "iterations": 640,
+    "vector_sha256": "eff042b5cc237b89bb672a8f65881ac5c27d117ad39432b4867810fefada9163",
+    "upper_squared": "160536110172/72239786195",
+    "squared_lower": "20/9",
+    "lower_radius_floor_8": 149071198,
+    "upper_radius_ceiling_8": 149072709
+  },
+  {
+    "depth": 8,
+    "residues": 6561,
+    "integer_scale": 100000000000,
+    "iterations": 640,
+    "vector_sha256": "dc7e7165ef3478d6365c584ede38c3687666cf676d2cc696f79e6b749d5b7134",
+    "upper_squared": "26759080433/12041548746",
+    "squared_lower": "20/9",
+    "lower_radius_floor_8": 149071198,
+    "upper_radius_ceiling_8": 149071431
+  },
+  {
+    "depth": 10,
+    "residues": 59049,
+    "integer_scale": 100000000000,
+    "iterations": 640,
+    "vector_sha256": "91170eb02223527b842d0e06d8370ba6e8278f71f5a108f33075660de54dae88",
+    "upper_squared": "5516102802/2482245023",
+    "squared_lower": "20/9",
+    "lower_radius_floor_8": 149071198,
+    "upper_radius_ceiling_8": 149071236
+  }
+]
