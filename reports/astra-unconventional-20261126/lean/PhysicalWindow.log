@@ -1,0 +1,7 @@
+'Collatz.PhysicalWindow.affine' depends on axioms: [propext, Quot.sound]
+'Collatz.PhysicalWindow.offset_bound' depends on axioms: [propext, Quot.sound]
+'Collatz.PhysicalWindow.cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhysicalWindow.split_odds' depends on axioms: [propext, Quot.sound]
+'Collatz.PhysicalWindow.rise' depends on axioms: [propext, Quot.sound]
+'Collatz.PhysicalWindow.positive_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhysicalWindow.negative_cost' depends on axioms: [propext, Classical.choice, Quot.sound]

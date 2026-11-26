@@ -1,0 +1,7 @@
+'CollatzInfiniteKernel.collision_even' depends on axioms: [propext, Quot.sound]
+'CollatzInfiniteKernel.collision_odd' depends on axioms: [propext, Quot.sound]
+'CollatzInfiniteKernel.push_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInfiniteKernel.collision_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInfiniteKernel.collisions_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInfiniteKernel.kernel_collisions_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInfiniteKernel.kernel_not_finite' depends on axioms: [propext, Classical.choice, Quot.sound]

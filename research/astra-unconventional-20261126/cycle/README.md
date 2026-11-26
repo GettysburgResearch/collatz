@@ -1,0 +1,78 @@
+# Simultaneous arithmetic routing into one fixed odd Collatz value
+
+**Collatz remains open.** On the bounded least-disagreement branch, the cycle minimum is the global least bad integer. Its neighbors on both sides are good at every odd phase, and every maximal-run entry gives a genuine oriented tripling disagreement. [Ordinary sharp floor, neighboring values and exact native minima](GOOD_NEIGHBORS.md)
+
+Theorems 1–3 concern exact inverse paths into a supplied terminal. The endpoint, odd depth and elapsed shortcut time all agree across a complete set of residue representatives. In particular, one fixed ordinary inverse basin realizes every allowed residue of its source, odd count and shortcut time jointly, including at 2 and 3. Theorem 1 also characterizes the entire reachable residue fiber on a fixed rational denominator lattice. The physical clock can be large.
+
+## Conventions
+
+Let $d$ be a positive integer coprime to six. On positive odd numerators write $U_d(z)=(3z+d)/2^{v_2(3z+d)}$. An inverse step of exponent $e\ge1$ from $y$ goes to a positive odd $z$ satisfying $2^e y=3z+d$. A path listed **backwards from the terminal** has exponents $(e_1,\ldots,e_k)$ and total $E=\sum e_i$. For $d=1$, $E$ is exactly the number of shortcut steps of $T(n)=n/2$ on even inputs and $(3n+1)/2$ on odd inputs, while $k$ is the number of odd inputs. All sources below are actual positive odd integers on the stated numerator lattice. If $d>1$ and $\gcd(y,d)=1$, all of them remain in lowest terms over $d$.
+
+## Theorem 1. A complete fiber at one depth and one clock
+
+Fix $b\ge1$ coprime to six, $d$ as above, and an odd ternary unit $y\ge d$. Put $g=\gcd(b,d)$, $q=b/g$ and $L=\mathrm{lcm}(6,\mathrm{ord}_b(2))$, taking $\mathrm{ord}_1(2)=1$. A constant $k_0(q)=O(1+\log q)$ has the following property for **every** $k\ge k_0(q)$. At the one clock $E=4Lk$, the residue classes modulo $b$ of all sources at odd depth $k$ are exactly
+
+$$
+\{a\bmod b: 3^ka\equiv y\pmod g\}.
+$$
+
+For every such $a$, both nonzero residues modulo 3 occur. The paths used for sufficiency can have every exponent at least two. Their sources consequently exceed or equal the terminal. Any positive multiple of $L$ also works in place of $L$. In particular, $b=2^m-1$ for odd $m$ admits $k=O(m)$ and $E=O(m^2)$, including composite moduli.
+
+**Carry intervals.** Make an auxiliary free carry $C=\sum_{i=0}^{k-1}3^i2^{\ell_i}$ with $\ell_{k-1}=0$ and all other $\ell_i$ arbitrary nonnegative integers. At $k=3$ every ternary unit in $[12,25]$ is represented. For $n=13,14,16,17,19,20,22,23,25$, respective pairs $(\ell_0,\ell_1)$ are $(0,0),(1,0),(0,1),(1,1),(2,1),(3,0),(0,2),(1,2),(2,2)$.
+
+Suppose $[A,B]$ has this property at $k$. At $k+1$ take
+
+$$[A',B']=[3A+8,\ 3B+\lfloor(B-A)/5\rfloor].$$
+
+Given a unit $n$ there, choose $2^e\in[n-3B,n-3A]$ with $2^e\equiv n\pmod3$ and $2^e\not\equiv n\pmod9$. Among any four consecutive exponents two have the correct parity, and their residues modulo nine differ. If $n\le3B+1$, the four exponents starting at zero fit the upper bound. Otherwise $s=n-3B\ge2$; the least power of two at least $s$ is below $2s$, and the next three powers are at most $16s\le s+3(B-A)$. Thus $(n-2^e)/3$ is a unit in the preceding interval and supplies the remaining digits.
+
+Writing $W_k=B-A$, the floor recurrence gives $5(W_{k+1}-4)\ge16(W_k-4)$. Hence $W_k\ge4+9(16/5)^{k-3}$. In particular $W_k\ge 3^{k+r}q$ at all $k\ge 3+\lceil\log(3^{r+1}q)/\log(16/15)\rceil$, for every integer $r\ge1$. (This sufficient threshold need not be minimal.)
+
+**Putting the free exponents in physical order.** More generally allow a desired clock residue $J\ge0$, a desired class $a\bmod b$ compatible with $3^ka\equiv 2^J y\pmod g$, and a desired final class $v\bmod3^r$, where $r\ge1$. Choose a free carry solving
+
+$$dC\equiv 2^J y-3^ka\pmod b,\qquad
+  dC\equiv 2^J y-3^k v\pmod{3^{k+r}}.$$
+
+The first congruence reduces to exactly one class modulo $q$, because $d/g$ is coprime to $q$. The second specifies one ternary-unit class modulo $3^{k+r}$. CRT and $W_k\ge q3^{k+r}$ put a representative of the required class inside the carry interval. Take a common period $P$ of 2 modulo $b3^{k+r}$, also divisible by $L$. Starting with $\ell'_{k-1}=0$, lift each preceding $\ell_i$ by multiples of $P$ until $\ell'_i\ge\ell'_{i+1}+2$. Choose $E^*\equiv J\pmod P$ with $E^*\ge\ell'_0+2$. The decreasing sequence $(E^*,\ell'_0,\dots,\ell'_{k-1})$ has successive differences $e_1^*,\dots,e_k^*\ge2$. Writing $C'$ for the lifted carry, these differences give the exact affine identity
+
+$$3^k z=2^{E^*}y-dC'.$$
+
+The congruence modulo $3^{k+r}$ first makes $z$ integral and then gives $z\equiv v\pmod{3^r}$; the one modulo $b$ gives $z\equiv a\pmod b$. Every intermediate division is exact. Indeed reducing the whole formula modulo three gives $2^{e_2^*+\cdots+e_k^*}(2^{e_1^*}y-d)\equiv0\pmod3$. Divide the first edge by three and repeat on the tail. Each intermediate numerator is odd because $e_i^*\ge1$ and $d$ is odd, and each reversed step sends $w\ge d$ to at least $w$ because $e_i^*\ge2$. Each site preceding a further reversed edge is a ternary unit. This proof also permits $v\equiv0\pmod3$ at the final site.
+
+**Compressing the clock.** In Theorem 1 take $J=0$, $r=1$ and $v=1$ or 2. Let $s=v_3(2^L-1)\ge2$; $L$ is a multiple of six. Inductively preserve the virtual site's residue modulo $b3^s$, starting at the same actual terminal $y$. Choose the least $e\ge2$ congruent to $e_i^*$ modulo $L$ and consider $e,e+L,e+2L$, all at most $3L+1$. Before division, all have the required residue modulo $3^s$ and modulo $b$. The current site is a ternary unit, so multiplication by $2^L=1+c3^s$, $3\nmid c$, cycles once through all three lifts modulo $3^{s+1}$. Exactly one candidate therefore matches the virtual next site modulo $3^s$ **after** division, while preserving its residue modulo $b$. The resulting path has total at most $(3L+1)k$ and congruent to zero modulo $L$. Increase **the last reverse exponent** to bring the total to $4Lk$. This adds a nonnegative multiple of $L$, leaving the final site unchanged modulo $b$ and modulo 3, because $2^L\equiv1\pmod9$. Positivity and exact valuations still follow from the edge equations. Finally any path at these grades satisfies $3^k z\equiv2^Ey\equiv y\pmod g$ by the whole affine identity. This proves necessity as well.
+
+## Theorem 2. Arbitrarily prescribed ternary suffix and delayed clock
+
+Fix an ordinary odd ternary-unit terminal $y$. Fix $b$ coprime to six and $r\ge1$. There is a threshold $k_0=O(1+\log b+r)$ such that for every $k\ge k_0$ there is a finite $E_0$ for which **every** $E\ge E_0$ realizes **all** classes $a\bmod b3^r$ by positive odd sources at this same $(k,E)$. The sources can be required to exceed any prescribed bound, by increasing $E_0$.
+
+Indeed, in the free-exponent construction take $d=1$, $q=b$ and $W_k\ge b3^{k+r}$. For each residue of $E$ modulo the finite period $P$ and each $a\bmod b3^r$, fix its carry and lifted tail once using $J=E\bmod P$. Choose a common finite maximum of the lower bounds on $E$. For every larger eligible $E$, the first exponent $E-\ell'_0$ increases while the lifted tail stays fixed, and the actual source $(2^Ey-C')/3^k$ tends to infinity. Finiteness of the residue and target lists proves the common assertion.
+
+For reachability without an extra lower bound on the source, one has the explicit uniform choice $E_0=(3L_r+1)k$ with $L_r=\mathrm{lcm}(6,\mathrm{ord}_b(2),2\cdot3^r)$. Indeed, take any $E\ge E_0$, set $J=E\bmod L_r$ in the carry construction, and choose the virtual period divisible by $L_r$. By $v_3(4^n-1)=1+v_3(n)$, the quantity $s=v_3(2^{L_r}-1)$ is at least $r+1$. The three-candidate compression above gives total at most $E_0$ and congruent to $J$ modulo $L_r$. Final padding to $E$ adds a multiple of $L_r$ and preserves the site modulo $b3^r$, including when the last site is divisible by three. For $r=1$, this uses exactly $L$ from Theorem 1.
+
+## Theorem 3. Joint profinite density of the source and both grades
+
+Let $y$ be **any fixed positive odd ternary unit**. Given a positive modulus $M$, there is $K_0(M)$ such that for every $k\ge K_0(M)$ there is an $E_0(k,M,y)$ with the following property. For every $E\ge E_0$ and **every** residue class $a\bmod M$ containing odd integers, there is a positive odd $z\equiv a\pmod M$ with $U_1^k(z)=y$ and **exactly $E$ shortcut steps** in this segment. Thus $k$ and $E$ can independently be prescribed modulo any positive moduli while all the admissible $a$ occur at the *same chosen* $(k,E)$. Sources divisible by three are included.
+
+Write $M=2^s3^t b$, $\gcd(b,6)=1$. For each admissible $a$ fix a positive odd $n_a\equiv a\pmod M$ and follow its actual forward trajectory for $j=\max(1,s)$ odd inputs. Denote its odd terminal by $v_a$ and the total exponent by $B_a\ge j\ge s$. Each $v_a$ is a ternary unit since the last odd step has numerator $3x+1\equiv1\pmod3$. Choose $k$ so that the $k'=k-j$ prefix meets Theorem 2's threshold at modulus $b3^{j+t}$. For any sufficiently large $E$, route backwards from $y$ in $k'$ odd steps of total $E-B_a$ to some $w\equiv v_a\pmod{b3^{j+t}}$ with $w\ge v_a$. Theorem 2 allows this for every $a$ at once, after taking a maximum of the finitely many thresholds shifted by $B_a$.
+
+Append the exact reversed $j$-letter word from $v_a$ to $n_a$, this time starting at $w$. Writing $w-v_a=3^j 3^t b u$ with $u\ge0$, the difference after the first $i$ appended edges is $2^{B_{a,i}}3^{j-i}3^t b u$, where $B_{a,i}$ is the sum of their exponents. Every edge is therefore integral and remains positive; all new sites are odd. The final source is
+$$z=n_a+2^{B_a}3^t b u\equiv a\pmod M.$$
+Its path ends at the original $y$, the odd depth is $k'+j=k$, and the shortcut clock is $(E-B_a)+B_a=E$. This proves the assertion. A uniform quantitative option is $E_0=(3L_{j+t}+1)(k-j)+\max_a B_a$. For this bound use the compressed prepath without imposing $w\ge v_a$. Each appended inverse edge is still integral by the difference formula, and each is still positive: from a positive odd input, $2^e w-1>0$ for $e\ge1$, so every integral quotient by three is positive. For representatives $n_a\le2M$, multiplying their physical edge equations gives $2^{B_a}v_a\le4^j n_a$, so $B_a\le 2j+\log_2(2M)$. The initial $E_0$ may of course be enlarged to be at least $k$. In the profinite topology on $(z,k,E)$ the closure is exactly the set with $z$ odd at 2, with unrestricted grade coordinates.
+
+## Consecutive odd sources at each sufficiently late pair of grades
+
+For every fixed positive odd ternary-unit $y$ and every $m\ge1$, at all sufficiently large $k$ and then at **every** sufficiently large $E$, one such fiber contains $m$ consecutive positive odd integers. Here is a deterministic deduction. The elementary pair-refinement construction gives a finite binary class $n=n_0+2^h u$ on which all $2m$ translates $n+i$, $0\le i<2m$, have the same ordinary endpoint $w_0+3^p u$ after $h$ shortcuts with exactly $p$ odd inputs. Indeed one refines the class in turn to synchronize the first translate with each other translate; an equality of affine profiles persists on further refinements. The pinned proof supplies an explicit terminating word from arbitrary pair states. Enlarge $n_0$ within the class to make every original start positive. [Deterministic pair-word and arbitrary-prefix refinement](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/PREFIX_COMPRESSION.md)
+
+By Theorem 2, choose a positive odd $w\equiv w_0\pmod{3^p}$ above $w_0$ reaching $y$ in $k-p$ odd steps and $E-h$ shortcuts, for every sufficiently large such pair of grades. For $p=0$ omit the congruence. Use the nonnegative lift $u=(w-w_0)/3^p$. All $2m$ starts now reach $y$ at the same $(k,E)$, and the $m$ odd members give the stated odd grid. This deduction places no quantitative upper bound on the threshold in $m$. The sharper near-central clock estimate uses additional ingredients. [Quantitative fixed-fiber results](../adelic/README.md)
+
+## Cycle application and limits
+
+[Relative transport group and complete moment eigenline lattice](HOLONOMY.md) · [Native-lap padding and sparse multi-edit obstruction](NATIVE_RIGIDITY.md)
+
+For a periodic rational cycle with $p$ odd phases, total exponent $h$ and $D=2^h-3^p>1$, every reduced denominator $d$ divides $D$. Also $\gcd(D,6)=1$. For an ordinary candidate, $d=1$, Theorem 1 forces every residue modulo the **whole determinant**, including zero, among actual ancestors of each ternary-unit phase at common odd depth $O(1+\log D)$ and common clock. For reduced $d>1$, a numerator $y$ coprime to $d$ cannot have an ancestor $z\equiv0\pmod D$ at any grades, since the affine equation reduced modulo $d$ gives $3^kz\equiv2^Ey\pmod d$. A positive ordinary witness divisible by $D$ can be extremely high. Its mere existence does not violate the least-disagreement floor, and no deduction here rules out a positive integral cycle or an escaping component.
+
+At the prior 41-phase control, $D=420491770248316829$ and the reduced denominator is $44835377399$. From the nearby ordinary terminal 655, the replay constructs a 666-odd-step ancestor with residue zero modulo this $D$ and shortcut clock $9148020302287752480$. On the actual rational numerator lattice, it checks an eligible nonzero class at depth 286 and the exact zero obstruction. The ordinary terminal 655 is an independently chosen integer, not an assertion that the rational cycle is integral. The large-clock paths are replayed by modular exponentiation at enough joint precision to certify every division and the final residue; smaller paths are also materialized and independently replayed in the forward direction. [Prior rational control](../../astra-global-closure-20261124/round13/cycle/README.md) · [Construction and replay](check.py) · [Exact output](../../../reports/astra-unconventional-20261126/cycle/control.json)
+
+Monks, Monks, Monks and Monks previously proved inverse reachability for every residue modulo a general modulus coprime to six, with an upper bound $(b-1)\operatorname{ord}_b(3/2)$ on the number of odd inverse steps in Lemma 4.3, and different bounds in special cases. The results here give prescribed simultaneous grades, a logarithmic odd-depth threshold, rational-denominator fibers and the joint extension at all primes. No claim of publication priority is needed. [Monks et al., *Strongly sufficient sets and the distribution of arithmetic sequences in the 3x+1 graph*](https://arxiv.org/abs/1204.3904)
+
+**Formal scope.** The full qualitative Theorem 3 is kernel-checked in `GradedBasin.joint_source_and_grades`. For every supplied positive odd ternary unit $y$ and every positive modulus $M$, the theorem constructs the successive depth and clock thresholds and gives, in each odd residue at every eligible pair, a positive ordinary input $n$ with $T^E(n)=y$ and exactly $k$ odd inputs among those $E$ steps. No band width, binary period or reachability premise remains. The proof builds the free-digit interval, grows it, applies Euler’s theorem, lifts to physical exponent words, and translates and concatenates an actual ordinary suffix. It uses a coarser linear-in-modulus threshold for the band width to keep this qualitative statement elementary in Lean. The logarithmic depth estimate, compression, the sharper quantitative clock threshold, the consecutive block argument and the rational-denominator extension have written proofs. [BasinCarry.lean](BasinCarry.lean) · [BasinRouting.lean](BasinRouting.lean) · [GradedBasin.lean](GradedBasin.lean)

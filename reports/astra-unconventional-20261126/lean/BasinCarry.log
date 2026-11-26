@@ -1,0 +1,5 @@
+'BasinCarry.seed' depends on axioms: [propext, Quot.sound]
+'BasinCarry.extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinCarry.band_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinCarry.band_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinCarry.ordered_lift' depends on axioms: [propext, Quot.sound]

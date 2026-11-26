@@ -1,0 +1,3 @@
+'Collatz.RankTwoControl.terminal_charge' depends on axioms: [propext, Quot.sound]
+'Collatz.RankTwoControl.no_augmented_plus' depends on axioms: [propext, Quot.sound]
+'Collatz.RankTwoControl.before_upper_hit' depends on axioms: [propext, Quot.sound]

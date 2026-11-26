@@ -1,0 +1,7 @@
+'BasinRouting.interval_residue' depends on axioms: [propext, Quot.sound]
+'BasinRouting.physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinRouting.endpoint' depends on axioms: [propext]
+'BasinRouting.shift_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinRouting.append_path' depends on axioms: [propext]
+'BasinRouting.route_at_clock_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasinRouting.all_residues_at_every_late_clock' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+'Collatz.PhaseFamilies.all_bases' depends on axioms: [propext]
+'Collatz.PhaseFamilies.closed_families' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhaseFamilies.prior26' depends on axioms: [propext]
+'Collatz.PhaseFamilies.upper_families' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhaseFamilies.canonical_families' depends on axioms: [propext, Quot.sound]
+'Collatz.PhaseFamilies.first_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

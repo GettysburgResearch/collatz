@@ -1,0 +1,4 @@
+'NativeReset.affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NativeReset.padded_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NativeReset.common_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NativeReset.ratio_step' depends on axioms: [propext, Classical.choice, Quot.sound]

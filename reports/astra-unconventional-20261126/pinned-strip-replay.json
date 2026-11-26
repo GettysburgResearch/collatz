@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Pinned finite strip certificate, not a Lean proof of the written height argument. The latter was separately reconstructed in this pass.",
+  "source_commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+  "source_path": "research/astra-fixed-target-closure-20261124/ordinary/check_strip.py",
+  "source_git_blob": "e38084e605d0386abf373dfd5979972ca540fa87",
+  "source_sha256": "4f588da0cf8b8a83cdc8e573635c2a967323a05b2d57c99893f1dd1c8e448eb4",
+  "written_proof_path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+  "written_proof_sha256": "e816dc32482325e0507073cfe53f749a5f2d5f39adc786cbf11e703b824b9d42",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executions": [
+    {
+      "flags": [
+        "-B"
+      ],
+      "exit": 0,
+      "stdout_sha256": "f2630365c672a800145d5e7c8763ba74935575316213253ebe25f9983fb78072"
+    },
+    {
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit": 0,
+      "stdout_sha256": "f2630365c672a800145d5e7c8763ba74935575316213253ebe25f9983fb78072"
+    }
+  ],
+  "normal_equals_optimized": true,
+  "output": {
+    "block_length": 512,
+    "starting_bins": 245,
+    "strict_check": "C^100 < 3^(49*512)",
+    "word_count_upper": 212645256384396458825682891323571683274873328767864650541987922574538402882020434401076164100822363646544085559650226048
+  }
+}

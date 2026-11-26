@@ -1,0 +1,6 @@
+'Collatz.TraceCensus.image_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceCensus.shifted_census' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceCensus.log_threshold_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceCensus.record_height_bits' depends on axioms: [propext]
+'Collatz.TraceCensus.residual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TraceCensus.fifth_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
