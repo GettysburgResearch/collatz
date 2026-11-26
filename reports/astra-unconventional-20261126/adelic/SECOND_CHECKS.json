@@ -1,0 +1,172 @@
+{
+  "scope": "second-phase adelic Lean kernels and two finite controls",
+  "lean": {
+    "PellBoundary": {
+      "source_sha256": "a1ed8683040dfe3c060b87c91f9df11aac5d502cd7f955957c0328cb351dddad",
+      "public_theorem_axioms": {
+        "pell_traces": [
+          "propext",
+          "Quot.sound"
+        ],
+        "punctured_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "abel_arguments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "fricke": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "eliminate_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "trace_grid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ordinary_coordinate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "LocalUnitRelations": {
+      "source_sha256": "0bd36100371417d21d4a43834886fc6681c147fa96eb09ec12c36e518c9d5819",
+      "public_theorem_axioms": {
+        "local_trace_identities": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "asymmetric_norms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "third_field_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "interval_cayley": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "physical_swaps": [
+          "propext"
+        ],
+        "no_corrected_prime_descent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "CyclotomicCorrection": {
+      "source_sha256": "a2342657f19fdee201d5e7525e99446a36d53d6081e0d2c4ca80cc4faca2d3f0",
+      "public_theorem_axioms": {
+        "power_correction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "two_corrections": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "repair_coordinates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "CubicLift": {
+      "source_sha256": "245ff4636cf301803e957d6d31ed619501b16fb232f9c8b17014f1420a207113",
+      "public_theorem_axioms": {
+        "normalized_parameter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "normalized_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "trace_cube": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "trace_factorizations": [
+          "propext",
+          "Quot.sound"
+        ],
+        "no_primitive_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "polynomial_discriminant": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    "StressVariation": {
+      "source_sha256": "b9482d1de3f9ed4a165aaa410b3e6d3cff27cf8a69cef112902bf11e5966117f",
+      "public_theorem_axioms": {
+        "first_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "second_variation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "curvature_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "affine_checkerboard": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "python": {
+    "check_units.py": {
+      "source_sha256": "59cffeaec95c3d0a5def511dd17f823f76d6c3d7cb66a50ca27c82ddecd045a7",
+      "normal_and_optimized_stdout": [
+        "exact_physical_swap_edges=10",
+        "exact_dyadic_cubic_sources=333; shared_pell_field_exponents=7; bits=64",
+        "exact_balanced_rational_periods=5,41,306",
+        "sorted_gap_floors=3,14,163",
+        "decimal_rogers_and_trace_edges=102; tolerance=1e-48",
+        "decimal_positive_invariant_edges=14; clocks=1..14; smallest_positive_order=-44"
+      ]
+    },
+    "check_repair.py": {
+      "source_sha256": "64702ffd83786dbdde55f84ea9a205501246a31d7b34bc16c5ed55a050aae627",
+      "normal_and_optimized_stdout": [
+        "certified_clock_sign_intervals=2; opposite_centered_mean_signs=2",
+        "exact_rotated_odd_periods=5,41,17,41",
+        "surviving_prime_7_valuations=-1,2,-12,22,0"
+      ]
+    }
+  }
+}

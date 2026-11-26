@@ -1,0 +1,7 @@
+'Collatz.WeightedTransport.boundary_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.path_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.finite_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.cycle_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.eventual_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.positive_cycle_contracts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WeightedTransport.ordinary_cycle_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]

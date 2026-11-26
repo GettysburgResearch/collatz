@@ -1,0 +1,6 @@
+'Collatz.PairedCapacity.ordinary_carry_nonzero' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedCapacity.carry_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedCapacity.one_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedCapacity.ordinary_clock_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedCapacity.grade_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedCapacity.word_endpoint_injective' depends on axioms: [propext, Classical.choice, Quot.sound]

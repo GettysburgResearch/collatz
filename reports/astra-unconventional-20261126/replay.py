@@ -20,7 +20,12 @@ PACKETS = (NEW_PACKET,)
 DEPENDENCIES = []
 REVIEW_CONTROLS = []
 REVIEW_SOURCES = []
-CONTROL_NAMES = ['adelic/check.py', 'descent/check.py']
+CONTROL_NAMES = [
+    'adelic/check.py', 'adelic/check_units.py', 'adelic/check_repair.py',
+    'descent/check.py', 'descent/paired_words.py', 'descent/signed_mersenne.py',
+    'descent/postpeak_check.py', 'operator/distortion_bounds.py',
+]
+CPP_NAMES = ['operator/rank_pressure.cpp']
 ALLOWED_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
 
 
@@ -51,6 +56,7 @@ def main() -> None:
     parser.add_argument('--cached-mathlib', type=Path, required=True)
     parser.add_argument('--leanpath-file', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--cxx', default='g++')
     args = parser.parse_args()
     out = args.output.resolve()
     demand(not out.is_relative_to(ROOT), 'output must be outside the checkout')
@@ -66,14 +72,14 @@ def main() -> None:
     receipt = {
         'schema': 'collatz-astra-unconventional-replay/v1',
         'started_utc': datetime.now(timezone.utc).isoformat(),
-        'scope': 'All new public Lean declarations and specified finite controls; not the infinite written arguments or external range verification',
+        'scope': 'All new public Lean declarations, specified finite controls, and the integer rank-twelve pressure certificate; not the infinite written arguments or external range verification',
         'commit': git('rev-parse', 'HEAD'), 'tree': git('rev-parse', 'HEAD^{tree}'),
         'tracked_file_count': len(git('ls-files').splitlines()),
         'sources_before': manifest(), 'python': sys.version,
         'mathlib_commit': git('rev-parse', 'HEAD', root=args.mathlib),
         'dependency_objects': 'pinned Lean and Mathlib dependency objects reused; every project dependency and new module rebuilt in a new empty object directory',
         'lean_path': env['LEAN_PATH'],
-        'commands': [], 'lean_audits': [], 'python_pairs': [], 'success': False,
+        'commands': [], 'lean_audits': [], 'python_pairs': [], 'cpp_pairs': [], 'success': False,
     }
 
     def run(label: str, argv: list[str], timeout: int = 300) -> dict:
@@ -184,6 +190,29 @@ def main() -> None:
             receipt['python_pairs'].append({'source': str(source.relative_to(ROOT)),
                 'identical_output': True, 'assert_nodes': assertions})
 
+        compiler = run('cpp-version', [args.cxx, '--version'])
+        receipt['cpp_compiler'] = compiler['stdout'].decode().splitlines()[0]
+        for name in CPP_NAMES:
+            source = NEW_PACKET / name
+            outputs = []
+            for sanitized in (False, True):
+                label = ('cpp-ubsan-' if sanitized else 'cpp-') + source.stem
+                executable = out / label
+                options = ['-O1', '-g', '-fsanitize=undefined',
+                           '-fno-sanitize-recover=all'] if sanitized else ['-O3']
+                build = run(label + '-build', [args.cxx, '-std=c++20',
+                    '-Wall', '-Wextra', '-Werror', *options, str(source),
+                    '-o', str(executable)], timeout=600)
+                demand(not build['stderr'], 'unexpected compiler stderr')
+                outputs.append(run(label + '-run', [str(executable), '12'], timeout=600))
+                demand(not outputs[-1]['stderr'], 'unexpected certificate stderr')
+            demand(outputs[0]['stdout'] == outputs[1]['stdout'],
+                   'normal/sanitized certificate differs: ' + source.name)
+            receipt['cpp_pairs'].append({'source': str(source.relative_to(ROOT)),
+                'rank_bound': 12, 'identical_output': True,
+                'undefined_behavior_sanitizer': True,
+                'certificate_summary': outputs[0]['stdout'].decode().strip()})
+
         run('repository-validation', [sys.executable, '-X', 'utf8', '-B',
             'tools/validate.py', '--regressions', '--receipt', str(out / 'repository-validation.json')])
         receipt['sources_after'] = manifest()
@@ -196,7 +225,8 @@ def main() -> None:
         receipt['finished_utc'] = datetime.now(timezone.utc).isoformat()
         (out / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print('PASS', len(receipt['lean_audits']), 'named Lean audits (new modules and dependencies);',
-          len(receipt['python_pairs']), 'normal/optimized control pairs', flush=True)
+          len(receipt['python_pairs']), 'normal/optimized control pairs;',
+          len(receipt['cpp_pairs']), 'normal/UBSan certificate pairs', flush=True)
 
 
 if __name__ == '__main__':

@@ -1,10 +1,23 @@
 # Unconventional ordinary-source attacks
 
-**PROPOSED research, 26 November 2026. Collatz remains open.** This packet starts from the owned PR192 head `0e313e2cd42cfce1275dbef6129ac13e9a49abd5`. It tests three different ways of retaining one fixed ordinary source: arithmetic squareclasses, constructive inverse control, and signed transport. The infinite arguments are written mathematics; the named finite and local results have Lean kernels. A verification report records the exact checked revision and scope.
+**PROPOSED research, 26 November 2026. Collatz remains open.** This three-hour packet starts from the owned PR192 head `0e313e2cd42cfce1275dbef6129ac13e9a49abd5`. It tests arithmetic squareclasses and cubic fields, actual paired-source descent, and weighted transport. The infinite arguments are written mathematics; the named finite and local results have Lean kernels. A verification report records the exact checked revision and scope. Start with the [closing proposal](FINAL_PROPOSAL.md) for the strongest results and the remaining universal obligation.
 
 Throughout, the shortcut map is `T(2n)=n`, `T(2n+1)=3n+2`. The accelerated odd map is `U(x)=(3x+1)/2^a`, where `a=v₂(3x+1)`. A shortcut clock and an odd departure are different resources.
 
 ## Results and their boundaries
+
+The later part of the pass adds the following direct-source and global results.
+
+| Direction | Result | Exact remaining boundary |
+|---|---|---|
+| [Canonical signed descent](descent/SIGNED_MERSENNE.md) | A new seed gives cofinal explicit original-index classes with a strictly smaller source in `17 mod 48`; the Lean theorem preserves both physical labels and transfers every upper hit with `k+16` added clocks and `k+7` added odd departures, starting at `k=9`. | The index class is specified. A least disagreement outside those classes is still possible. Earlier universal exchanges and two rediscovered rows are attributed to PR197. |
+| [Postpeak density](descent/POSTPEAK_DENSITY.md) and [explicit delays](descent/POSTPEAK_DELAY.md) | The prior absorption estimate yields typical smaller canonical parents in every odd-modulus index progression with unchanged upper odd cost. A separate Lean theorem gives explicit hard parents whose peaks avoid every earlier Mersenne peak through a logarithmic clock horizon, even with independent clocks. | Typical descent does not cross the cut at every specified least source. The delay theorem is finite-time. |
+| [All-clock gap entropy](operator/GAP_ENTROPY.md) and [rank-twelve pressure](operator/RANK_PRESSURE.md) | Nearly exponential word counting over all clocks; an integer certificate plus an analytic tail gives `W_(p,12) ≤ 10·8.1^p` for every carry within relative rank twelve. | The logarithmic-form input is source-qualified; the pressure certificate does not control excursions outside the strip. |
+| [Actual smaller-source coverage](operator/SUFFIX_MASS.md) | A sourced first-crossing bound, a signed cut and an independent distortion certificate control actual height gain through a bounded number of even departures, allowing arbitrarily many odd departures. A separate finite-index bound controls growing excess grade. | A countable ternary-Haar bound is not ordinary pointwise noncoverage. Later even departures and unbounded excess grades remain possible. |
+| [Pell and cubic fields](adelic/CUBIC_FIELDS.md) | Explicit field discriminants and independent cubic radicals; density-one `S₃^h` splitting groups on every fixed-length window of a hypothetical injective positive orbit. | The fields vary with the window. Large global degree is compatible with small local degree at three. |
+| [Regulator repair](adelic/REGULATOR_REPAIR.md) and [invariant stress](adelic/INVARIANT_STRESS.md) | Positive small expressions with all dyadic and ternary boundary contractions cleared; a fully invariant construction forces a surviving finite-prime defect. | The remaining boundary is not shown to vanish. It is not a cycle contradiction. |
+
+The initial checkpoint supplies these complementary components.
 
 | Direction | Result | What remains unproved |
 |---|---|---|
