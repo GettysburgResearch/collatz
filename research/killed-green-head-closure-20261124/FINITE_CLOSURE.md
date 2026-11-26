@@ -1,5 +1,10 @@
 # Exact-clock amplification and directed single-residue closure
 
+**Later continuation (2026-11-26):** [exact critical gauges, separated
+rational cycles and physical operators](../unconventional-20261126/README.md).
+Its 53-declaration Lean packet and scoped reviews have separate receipts.
+The two universal closing obligations remain open.
+
 **Collatz remains OPEN.** This continuation of PR 201 gives two global
 reductions and checks the finite arithmetic connecting them to ordinary
 integer trajectories. The new exact-clock dichotomy does not assume the

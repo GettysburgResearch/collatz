@@ -1,0 +1,3 @@
+'PatchRigidity.telescope' depends on axioms: [propext]
+'PatchRigidity.ternary_divides_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PatchRigidity.no_long_small_run' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,69 @@
+{
+  "base_sha": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+  "unmodified_source_attempt": {
+    "base_sha": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+    "lean": "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+    "mathlib": "/workspace/scratch/9067acf67ee8/toolchain/mathlib4",
+    "files": [
+      {
+        "path": "research/killed-green-head-closure-20261124/record-renewal/RecordRenewal.lean",
+        "source_sha256": "8ed151fc1c3d05434208d551da0a33b8593e1996d4e60bc3f9b5cb9ef0863433",
+        "exit_code": 1,
+        "seconds": 0.5773578239968629,
+        "output": "/workspace/scratch/ad48b85f0ea2/collatz-201/research/killed-green-head-closure-20261124/record-renewal/RecordRenewal.lean:1:0: error: object file '/workspace/scratch/9067acf67ee8/toolchain/mathlib4/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Data/Rat.olean' of module Batteries.Data.Rat does not exist\n"
+      },
+      {
+        "path": "research/killed-green-head-closure-20261124/thin-band/ThinBand.lean",
+        "source_sha256": "27981d92a0233801c9449c50c6537edd6c82488cf469f5afe0f6162f0f00a706",
+        "exit_code": 1,
+        "seconds": 0.27861363899864955,
+        "output": "/workspace/scratch/ad48b85f0ea2/collatz-201/research/killed-green-head-closure-20261124/thin-band/ThinBand.lean:1:0: error: object file '/workspace/scratch/9067acf67ee8/toolchain/mathlib4/.lake/packages/batteries/.lake/build/lib/lean/Batteries/Data/Rat.olean' of module Batteries.Data.Rat does not exist\n"
+      }
+    ]
+  },
+  "import_only_replays": [
+    {
+      "original_path": "research/killed-green-head-closure-20261124/record-renewal/RecordRenewal.lean",
+      "original_sha256": "8ed151fc1c3d05434208d551da0a33b8593e1996d4e60bc3f9b5cb9ef0863433",
+      "replacement_imports": [
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.FieldSimp",
+        "import Mathlib.Tactic.NormNum",
+        "import Mathlib.Tactic.Positivity"
+      ],
+      "compiler_input_sha256": "59366d3e946d194583be3eef7491609033f38ad45e240b0c4a9a6c57e3eef6e9",
+      "proof_body_unchanged": true,
+      "exit_code": 0,
+      "seconds": 2.004,
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "/workspace/scratch/ad48b85f0ea2/lean_baseline/RecordRenewal.lean"
+      ],
+      "output": "/workspace/scratch/ad48b85f0ea2/lean_baseline/RecordRenewal.lean:64:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n/workspace/scratch/ad48b85f0ea2/lean_baseline/RecordRenewal.lean:76:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n'RecordRenewal.positive_carry_expanding_fixed_negative' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.strict_ratio_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.equal_row_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.affine_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.odd_plus_even' depends on axioms: [propext, Quot.sound]\n'RecordRenewal.even_plus_odd' depends on axioms: [propext, Quot.sound]\n'RecordRenewal.wrong_gap_over' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.wrong_gap_under' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RecordRenewal.dyadic_unbounded' depends on axioms: [propext, Quot.sound]\n'RecordRenewal.fixed_positive_gap_cannot_lock' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "original_path": "research/killed-green-head-closure-20261124/thin-band/ThinBand.lean",
+      "original_sha256": "27981d92a0233801c9449c50c6537edd6c82488cf469f5afe0f6162f0f00a706",
+      "replacement_imports": [
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.Ring",
+        "import Mathlib.Tactic.FieldSimp",
+        "import Mathlib.Tactic.NormNum",
+        "import Mathlib.Tactic.Positivity",
+        "import Mathlib.Data.Nat.Log",
+        "import Mathlib.Data.Finset.Card"
+      ],
+      "compiler_input_sha256": "a29cf81b85654d5d49ce4956b5b9b6d71a079710bd2116250155b9f94852d452",
+      "proof_body_unchanged": true,
+      "exit_code": 0,
+      "seconds": 1.564,
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "/workspace/scratch/ad48b85f0ea2/lean_baseline/ThinBand.lean"
+      ],
+      "output": "/workspace/scratch/ad48b85f0ea2/lean_baseline/ThinBand.lean:27:54: warning: `if_false` has been deprecated: Use `ite_false` instead\n/workspace/scratch/ad48b85f0ea2/lean_baseline/ThinBand.lean:33:34: warning: `if_true` has been deprecated: Use `ite_true` instead\n/workspace/scratch/ad48b85f0ea2/lean_baseline/ThinBand.lean:55:10: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\n/workspace/scratch/ad48b85f0ea2/lean_baseline/ThinBand.lean:55:10: warning: Unused tactic linter: `ring` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\n'ThinBand.carry_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThinBand.padded_width' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThinBand.scaled_integer_separation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ThinBand.collatz_of_cofinal_absence' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "scope": "Exactly the first import Mathlib line is replaced; original proof bodies and their existing printed declarations are byte-identical. Benign original warnings remain."
+}

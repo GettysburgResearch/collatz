@@ -1,0 +1,114 @@
+{
+  "mixed_ball": [
+    {
+      "radius": 1,
+      "least_CRT_root": 1,
+      "vertices": 3,
+      "edges_checked": 2,
+      "surviving_residues_mod_6^r": 2
+    },
+    {
+      "radius": 2,
+      "least_CRT_root": 19,
+      "vertices": 7,
+      "edges_checked": 8,
+      "surviving_residues_mod_6^r": 6
+    },
+    {
+      "radius": 3,
+      "least_CRT_root": 55,
+      "vertices": 12,
+      "edges_checked": 17,
+      "surviving_residues_mod_6^r": 30
+    },
+    {
+      "radius": 4,
+      "least_CRT_root": 1135,
+      "vertices": 21,
+      "edges_checked": 31,
+      "surviving_residues_mod_6^r": 135
+    },
+    {
+      "radius": 5,
+      "least_CRT_root": 2431,
+      "vertices": 34,
+      "edges_checked": 53,
+      "surviving_residues_mod_6^r": 540
+    },
+    {
+      "radius": 6,
+      "least_CRT_root": 33535,
+      "vertices": 53,
+      "edges_checked": 85,
+      "surviving_residues_mod_6^r": 3168
+    },
+    {
+      "radius": 7,
+      "least_CRT_root": 126847,
+      "vertices": 78,
+      "edges_checked": 129,
+      "surviving_residues_mod_6^r": 14256
+    },
+    {
+      "radius": 8,
+      "least_CRT_root": 406783,
+      "vertices": 111,
+      "edges_checked": 187
+    },
+    {
+      "radius": 9,
+      "least_CRT_root": 2086399,
+      "vertices": 155,
+      "edges_checked": 264
+    },
+    {
+      "radius": 10,
+      "least_CRT_root": 12164095,
+      "vertices": 217,
+      "edges_checked": 370
+    },
+    {
+      "radius": 11,
+      "least_CRT_root": 72630271,
+      "vertices": 304,
+      "edges_checked": 519
+    }
+  ],
+  "explicit_good": [
+    {
+      "radius": 1,
+      "j": 7,
+      "source_bits": 7
+    },
+    {
+      "radius": 2,
+      "j": 69,
+      "source_bits": 68
+    },
+    {
+      "radius": 3,
+      "j": 873,
+      "source_bits": 872
+    },
+    {
+      "radius": 4,
+      "j": 8235,
+      "source_bits": 8233
+    },
+    {
+      "radius": 5,
+      "j": 54999,
+      "source_bits": 54997
+    },
+    {
+      "radius": 6,
+      "j": 584415,
+      "source_bits": 584412
+    },
+    {
+      "radius": 7,
+      "j": 3268107,
+      "source_bits": 3268103
+    }
+  ]
+}

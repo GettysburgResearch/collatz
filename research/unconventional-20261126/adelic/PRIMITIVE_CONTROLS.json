@@ -1,0 +1,56 @@
+[
+  {
+    "distinct_boundary_phases": 323,
+    "exact_reduced_denominator_bits": 280,
+    "first_track_duty": 12,
+    "least_period": 2584,
+    "macro_clock": 8,
+    "macro_defect": 13,
+    "macro_grade": 5,
+    "phase_maximum_ceiling": 76,
+    "phase_minimum_floor": 18,
+    "reduced_denominator_sha256": "9be86ab5b9f2528ea8c015bf548ac6957f773d1c9d30a60b5dd00f8d14c6b0be",
+    "sieve_primes_checked_through": 17,
+    "subunit_boundary_spacing": true,
+    "tracks": [
+      17,
+      19
+    ]
+  },
+  {
+    "distinct_boundary_phases": 3127,
+    "exact_reduced_denominator_bits": 773,
+    "first_track_duty": 25,
+    "least_period": 21889,
+    "macro_clock": 7,
+    "macro_defect": 47,
+    "macro_grade": 4,
+    "phase_maximum_ceiling": 8,
+    "phase_minimum_floor": 1,
+    "reduced_denominator_sha256": "873a8ee844b1c96a2646e41321c85e13a9b6b4af465cfbe66d2016e52ef3b16f",
+    "sieve_primes_checked_through": 53,
+    "subunit_boundary_spacing": true,
+    "tracks": [
+      53,
+      59
+    ]
+  },
+  {
+    "distinct_boundary_phases": 43621,
+    "exact_reduced_denominator_bits": 3369,
+    "first_track_duty": 2,
+    "least_period": 348968,
+    "macro_clock": 8,
+    "macro_defect": 13,
+    "macro_grade": 5,
+    "phase_maximum_ceiling": 67,
+    "phase_minimum_floor": 16,
+    "reduced_denominator_sha256": "ce6b6697bc15e11295a35d4d4b567f0e2a844bf7620be7b1dce4efcce541c4e4",
+    "sieve_primes_checked_through": 590,
+    "subunit_boundary_spacing": true,
+    "tracks": [
+      181,
+      241
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+'PhysicalShadow.word_clock' depends on axioms: [propext]
+'PhysicalShadow.itinerary_length' depends on axioms: [propext]
+'PhysicalShadow.actual_clock' depends on axioms: [propext]
+'PhysicalShadow.common_prefix_divides' depends on axioms: [propext, Quot.sound]
+'PhysicalShadow.zero_of_all_dyadic_divisors' depends on axioms: [propext, Quot.sound]
+'PhysicalShadow.infinite_shadow_unique' depends on axioms: [propext, Quot.sound]
+'PhysicalShadow.negative_shadow_excludes_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PhysicalShadow.finite_shadow_height' depends on axioms: [propext, Quot.sound]

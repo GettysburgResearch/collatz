@@ -1,0 +1,6 @@
+'PeriodicWindows.actual_trace' depends on axioms: [propext, Quot.sound]
+'PeriodicWindows.shifted_segment' depends on axioms: [propext, Quot.sound]
+'PeriodicWindows.defect_join' depends on axioms: [propext, Quot.sound]
+'PeriodicWindows.genuine_zero' depends on axioms: [propext]
+'PeriodicWindows.mismatch_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PeriodicWindows.no_defect_divides' depends on axioms: [propext, Quot.sound]

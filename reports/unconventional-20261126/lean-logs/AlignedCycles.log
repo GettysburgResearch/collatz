@@ -1,0 +1,4 @@
+'AlignedCycles.tile_strict' depends on axioms: [propext, Quot.sound]
+'AlignedCycles.trace_strict' depends on axioms: [propext, Quot.sound]
+'AlignedCycles.first_equal_of_order_preserving_cycle' depends on axioms: [propext]
+'AlignedCycles.template_cycle_constant' depends on axioms: [propext, Quot.sound]

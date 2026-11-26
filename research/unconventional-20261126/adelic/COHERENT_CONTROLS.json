@@ -1,0 +1,55 @@
+[
+  {
+    "certified_gap_millionths": 1056149,
+    "direct_native_integer_steps": 7275,
+    "evaluated_all_phases": 7275,
+    "full_local_prime_power_product": 31,
+    "inner_patch_blocks": 6,
+    "least_period": 7275,
+    "macro_clock": 485,
+    "macro_grade": 306,
+    "maximum_interval_width_scaled": 30743,
+    "minimum_pairwise_gap_floor": 1,
+    "motif_clock": 170,
+    "motif_grade": 107,
+    "outward_interval_fractional_bits": 96,
+    "phase_minimum_floor": 18232,
+    "reduced_denominator_bits": 3385,
+    "reduced_denominator_sha256": "f21848dacb6a94f94666f5d997b8adaae6010522a833a3ef8ea81f6abbd98c4c",
+    "remainder_patch_blocks": 3,
+    "tested_primes": [
+      31
+    ],
+    "tracks": [
+      3,
+      5
+    ]
+  },
+  {
+    "certified_gap_millionths": 2752799,
+    "direct_native_integer_steps": 865445,
+    "evaluated_all_phases": 865445,
+    "full_local_prime_power_product": 8875,
+    "inner_patch_blocks": 15,
+    "least_period": 865445,
+    "macro_clock": 24727,
+    "macro_grade": 15601,
+    "maximum_interval_width_scaled": 3818189,
+    "minimum_pairwise_gap_floor": 2,
+    "motif_clock": 1054,
+    "motif_grade": 665,
+    "outward_interval_fractional_bits": 96,
+    "phase_minimum_floor": 51552628,
+    "reduced_denominator_bits": 271974,
+    "reduced_denominator_sha256": "bbdf1bbb2462df2cba4a15e67d931d9cc4ec2f8bd0d7d4f02bd1c0fb80473c70",
+    "remainder_patch_blocks": 13,
+    "tested_primes": [
+      5,
+      71
+    ],
+    "tracks": [
+      5,
+      7
+    ]
+  }
+]

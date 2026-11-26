@@ -1,0 +1,669 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "repo_head_at_start": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+  "repo_tree_at_start": "338720cd6ca38013135fdeab2b57cd6351bf5bdd",
+  "working_tree_status_at_start": "?? reports/unconventional-20261126/\n?? research/unconventional-20261126/",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/adelic/PeriodicWindows.lean",
+      "source_sha256": "34a2c97678731e2bf933655c623f18e5c92c9a400789faf41bc1a85869d2efb7",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/PeriodicWindows.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/PeriodicWindows.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.772,
+      "output_sha256": "28e6d7b8720426de573ac219a0ecbcf8922a4fdb256a0b2136c958e4c8bf7ace",
+      "declarations": {
+        "PeriodicWindows.actual_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PeriodicWindows.shifted_segment": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PeriodicWindows.defect_join": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PeriodicWindows.genuine_zero": [
+          "propext"
+        ],
+        "PeriodicWindows.mismatch_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeriodicWindows.no_defect_divides": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/PhysicalShadow.lean",
+      "source_sha256": "994cd7c29d53b090fc0f4ebf303c97856eaa8c19ba75188f7ff132da06910bfe",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/PhysicalShadow.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/PhysicalShadow.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.543,
+      "output_sha256": "68268a78f641dc6b34b7c8de6395ff57fc605c1e96ff5825905baecd902e4e09",
+      "declarations": {
+        "PhysicalShadow.word_clock": [
+          "propext"
+        ],
+        "PhysicalShadow.itinerary_length": [
+          "propext"
+        ],
+        "PhysicalShadow.actual_clock": [
+          "propext"
+        ],
+        "PhysicalShadow.common_prefix_divides": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PhysicalShadow.zero_of_all_dyadic_divisors": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PhysicalShadow.infinite_shadow_unique": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PhysicalShadow.negative_shadow_excludes_positive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PhysicalShadow.finite_shadow_height": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.087,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PatchRigidity.lean",
+      "source_sha256": "3f1335773792ee9dc16538d66fb679276cb434bd903e73f2afbbd39a7849792e",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/PatchRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/PatchRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.393,
+      "output_sha256": "2e76ef82b1086c3de5335fd8fdf95cac045a895a56620c8f329ed6375c7aabbc",
+      "declarations": {
+        "PatchRigidity.telescope": [
+          "propext"
+        ],
+        "PatchRigidity.ternary_divides_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PatchRigidity.no_long_small_run": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/CoprimeCancellation.lean",
+      "source_sha256": "7073e4ed0679c6d031608775860412af072728dfa08e660169a56b97f1c40b57",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/CoprimeCancellation.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoprimeCancellation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.373,
+      "output_sha256": "44fc98da5e24371c42a4b59e6d3c8f06bc85c1aaa58f568c7c21e65868623c1e",
+      "declarations": {
+        "CoprimeCancellation.numerator_coprime": [
+          "propext"
+        ],
+        "CoprimeCancellation.quotient_coprime": [
+          "propext"
+        ],
+        "CoprimeCancellation.fraction_after_cancel": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoprimeCancellation.exact_reduced_denominator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/AlignedCycles.lean",
+      "source_sha256": "de0c0d1834c254aaefdd5b9f7897d94e419a6d77c36d4d8cfd012eb21fbef25f",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/AlignedCycles.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/AlignedCycles.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.533,
+      "output_sha256": "f1da44576d898a8589cd51cbe0d2d301c0e4f1cba60322d6cb4929611c58e7b1",
+      "declarations": {
+        "AlignedCycles.tile_strict": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignedCycles.trace_strict": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignedCycles.first_equal_of_order_preserving_cycle": [
+          "propext"
+        ],
+        "AlignedCycles.template_cycle_constant": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/FinalProposal.lean",
+      "source_sha256": "585a101642a3e7b3f1dff925827c0fea51d3fe379a653e1fd5a7af8669c0718a",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/FinalProposal.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/FinalProposal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.101,
+      "output_sha256": "6cf1a9b839ad30602f8026d888a28bead9360b521d7838b784eb82da09424f5d",
+      "declarations": {
+        "FinalProposal.step_positive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FinalProposal.run_positive": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FinalProposal.convergence_from_two_obligations": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FinalProposal.convergence_implies_no_escape": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FinalProposal.convergence_implies_cycle_unique": [],
+        "FinalProposal.exact_final_obligations": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RenewalArithmetic.lean",
+      "source_sha256": "91dd985253915415acf255d888da1b8b63f6879a35be6233c8d3ef83f65692ef",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/RenewalArithmetic.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/renewal/RenewalArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.339,
+      "output_sha256": "b9e796e366f521e39cd47af46493339aed366e0044958c3062fd0dd779e2cbbc",
+      "declarations": {
+        "RenewalArithmetic.bridge_identity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewalArithmetic.joint_precision": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RenewalArithmetic.carry_telescope": [
+          "propext"
+        ],
+        "RenewalArithmetic.carry_string_divisor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RenewalArithmetic.centered_carry_string_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PrimitiveTracks.lean",
+      "source_sha256": "118bce73149b91ca88b63c858786d8e280b63870c2541daf3e23855f4570a892",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/PrimitiveTracks.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/PrimitiveTracks.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.134,
+      "output_sha256": "706e821032c1366228535d0643a3350bb0fa53c7489eb602f7f20bc90278a6bb",
+      "declarations": {
+        "PrimitiveTracks.periodic_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PrimitiveTracks.affine_superposition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PrimitiveTracks.exact_denominator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/unconventional-20261126/operator/HybridRoot.lean",
+      "source_sha256": "70ddc9a79528d3864e41360026cb02de20b5f2e85e4685e4a99ec8d818e20d51",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/replay_unconventional_20261126/build/HybridRoot.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/HybridRoot.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.035,
+      "output_sha256": "bd0558dcbdcb0ae55ae33a257023d5e10dba6526f6a13af23c61fba6dabe2fc7",
+      "declarations": {
+        "CollatzMixedRoot.invariants": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CollatzMixedRoot.slope_ge_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/unconventional-20261126/adelic/controls.py",
+      "source_sha256": "3cb50a0d8fbb2eb684fddd30b0d7a799e45a74fc948e680eca60cfafd2f670b2",
+      "expected": "research/unconventional-20261126/adelic/CONTROLS.json",
+      "expected_sha256": "b1de55a2254d8c53ad7c9fc2d84679b07293d774c5a6895e0e4cb739103823e6",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 3.034,
+          "stdout_sha256": "b1de55a2254d8c53ad7c9fc2d84679b07293d774c5a6895e0e4cb739103823e6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.92,
+          "stdout_sha256": "b1de55a2254d8c53ad7c9fc2d84679b07293d774c5a6895e0e4cb739103823e6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/adelic/cycle_controls.py",
+      "source_sha256": "9eed79ed97b4bdf6621dc2bc91f46aef537bdbfff68d4ec7e577e925d7c7cb2b",
+      "expected": "research/unconventional-20261126/adelic/CYCLE_CONTROLS.json",
+      "expected_sha256": "710f3b8aa0024b296e4b76883ad72eecc5240a808ba111fede0a47b41074038c",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/cycle_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.807,
+          "stdout_sha256": "710f3b8aa0024b296e4b76883ad72eecc5240a808ba111fede0a47b41074038c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/cycle_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.953,
+          "stdout_sha256": "710f3b8aa0024b296e4b76883ad72eecc5240a808ba111fede0a47b41074038c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/adelic/primitive_controls.py",
+      "source_sha256": "d5463207873704057e1c198ddaaa39dc5ce09f01409ac4d81ecf583475324a27",
+      "expected": "research/unconventional-20261126/adelic/PRIMITIVE_CONTROLS.json",
+      "expected_sha256": "96427e335040d44e73ff8380724536567615bb7d49014d3e3ab6fb018000f043",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/primitive_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.597,
+          "stdout_sha256": "96427e335040d44e73ff8380724536567615bb7d49014d3e3ab6fb018000f043",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/primitive_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.593,
+          "stdout_sha256": "96427e335040d44e73ff8380724536567615bb7d49014d3e3ab6fb018000f043",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/adelic/coherent_controls.py",
+      "source_sha256": "021f58b8b0a4622b219a00fb6729fb7b7960acd0ddddf7d867024da34b5aef57",
+      "expected": "research/unconventional-20261126/adelic/COHERENT_CONTROLS.json",
+      "expected_sha256": "921ebe2e8b4bd03ff40c772f8adf5ecf599ceac49bcadc3c208a20017eb7bf12",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/coherent_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 15.311,
+          "stdout_sha256": "921ebe2e8b4bd03ff40c772f8adf5ecf599ceac49bcadc3c208a20017eb7bf12",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/coherent_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 15.008,
+          "stdout_sha256": "921ebe2e8b4bd03ff40c772f8adf5ecf599ceac49bcadc3c208a20017eb7bf12",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/operator/controls.py",
+      "source_sha256": "a42cc3f4e0fce399ac9f5c61171efdbe2c3d2cf75e1a16712ef86fdf5fc7f9a1",
+      "expected": "research/unconventional-20261126/operator/CONTROLS.json",
+      "expected_sha256": "77a752c7969ee0b3311fc8b051e9c73558d611f4130dd9912acf62319f5c28a4",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.636,
+          "stdout_sha256": "77a752c7969ee0b3311fc8b051e9c73558d611f4130dd9912acf62319f5c28a4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.812,
+          "stdout_sha256": "77a752c7969ee0b3311fc8b051e9c73558d611f4130dd9912acf62319f5c28a4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/operator/hybrid_controls.py",
+      "source_sha256": "7049a305545ad32e66316eeab07932f33430a60d88d06807028ab10df545377a",
+      "expected": "research/unconventional-20261126/operator/HYBRID_CONTROLS.json",
+      "expected_sha256": "b0de5caab19950b7f777c32e5616ac100a6bdf412c566c338c8d32378dee24c5",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/hybrid_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.271,
+          "stdout_sha256": "b0de5caab19950b7f777c32e5616ac100a6bdf412c566c338c8d32378dee24c5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/hybrid_controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.337,
+          "stdout_sha256": "b0de5caab19950b7f777c32e5616ac100a6bdf412c566c338c8d32378dee24c5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/unconventional-20261126/renewal/controls.py",
+      "source_sha256": "306d681fe0aaaf79dfd79c6e89f3d80eda182963ae9f2583baf617a9daf51d8e",
+      "expected": "research/unconventional-20261126/renewal/CONTROLS.json",
+      "expected_sha256": "97a4a12b4ef7871b11c24bddbf7e2faacf403fe597e6330318a1f56d5d58bf36",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/renewal/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.621,
+          "stdout_sha256": "97a4a12b4ef7871b11c24bddbf7e2faacf403fe597e6330318a1f56d5d58bf36",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/renewal/controls.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.617,
+          "stdout_sha256": "97a4a12b4ef7871b11c24bddbf7e2faacf403fe597e6330318a1f56d5d58bf36",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/unconventional-20261126/\n?? research/unconventional-20261126/"
+}

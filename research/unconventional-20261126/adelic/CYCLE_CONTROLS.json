@@ -1,0 +1,49 @@
+{
+  "exhaustive": {
+    "all_words": 32766,
+    "exact_anchor_windows": 6252,
+    "positive_roots": 26419
+  },
+  "patches": [
+    {
+      "clock": 65,
+      "full_denominator_bits": 59,
+      "grade": 41,
+      "local_factor": 551,
+      "minimum_real_spacing_floor": 13,
+      "patch_blocks": 12,
+      "phase_minimum_floor": 544,
+      "reduced_denominator_bits": 50,
+      "tested_primes": [
+        19,
+        29
+      ]
+    },
+    {
+      "clock": 485,
+      "full_denominator_bits": 476,
+      "grade": 306,
+      "local_factor": 929,
+      "minimum_real_spacing_floor": 80,
+      "patch_blocks": 13,
+      "phase_minimum_floor": 30109,
+      "reduced_denominator_bits": 466,
+      "tested_primes": [
+        929
+      ]
+    },
+    {
+      "clock": 24727,
+      "full_denominator_bits": 24712,
+      "grade": 15601,
+      "local_factor": 25,
+      "minimum_real_spacing_floor": 2183,
+      "patch_blocks": 6,
+      "phase_minimum_floor": 32971887,
+      "reduced_denominator_bits": 24707,
+      "tested_primes": [
+        5
+      ]
+    }
+  ]
+}

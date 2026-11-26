@@ -1,0 +1,4 @@
+'CoprimeCancellation.numerator_coprime' depends on axioms: [propext]
+'CoprimeCancellation.quotient_coprime' depends on axioms: [propext]
+'CoprimeCancellation.fraction_after_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoprimeCancellation.exact_reduced_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]

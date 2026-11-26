@@ -1,5 +1,10 @@
 # Strict records as a renewal subshift: exact dimension and rational escape obstruction
 
+**2026-11-26 continuation:** [unconventional research packet](../../unconventional-20261126/README.md),
+with new scoped reviews and Lean receipts. The authoring-session evidence
+statement below is historical. One interval in section 5.2 is corrected in
+the [scoped erratum](../../../reports/unconventional-20261126/ERRATUM.md).
+
 **Status: PROPOSED written mathematics; Collatz remains OPEN.** This packet
 attacks fixed ordinary trajectories through their actual strict coefficient
 records, not through independently sampled inverse starts. It establishes a
@@ -428,7 +433,7 @@ the forward-shift construction of 5.1. All steps are on one
 fixed ordinary orbit until the compact limit is taken.
 
 In the case z=-1, the genuine gap is one. At the wrong gap
-e>=2 the shadow becomes -2/2^e in [-1/2,-1/4]. The next gap
+e>=2 the shadow becomes -2/2^e in [-1/2,0). The next gap
 leaves it >=-1/4, and the third gives a strictly positive
 value. Take the third subsequent record in the preceding
 subsequence argument instead of the second. This requires
