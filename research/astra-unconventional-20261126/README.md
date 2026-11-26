@@ -101,6 +101,10 @@ At \(r=2\), the remaining \(e=6\) source is on the cycle; its long all-odd ramp 
 
 [Bounded canonical floor and exact assumptions](cycle/CANONICAL_FLOOR.md) · [Formal floor and capture](cycle/CanonicalFloor.lean) · [Three-odd reduction](renormalization/BOUNDED_RANK_THREE.md) · [Formal prefixes and smaller canonical returns](renormalization/RankThreeFloor.lean)
 
+The remaining row also has a precise obstruction to finite fixed-word searches. At the single ternary limiting parameter \(N_*=590\), an all-word denominator argument reduces every eligible low-slope endpoint from \(N-1\) or \(2N-1\) to 932 ordinary starting integers. Exhausting their complete finite orbits leaves eight affine forms, with the original parent as the sole canonical one. Consequently no finite ternary-cylinder cover by this specified word grammar closes the row through the three stated floor/canonical tests. An unbounded selector depending on the actual ordinary exponent is still possible. This followup is a written theorem with an exact finite replay, not a Lean theorem.
+
+[All-word reduction and finite-cover obstruction](renormalization/FINITE_COVER_BARRIER.md)
+
 ## 4. Exact optimization reveals what a reset must accomplish
 
 For an all-odd ascent from \(x=2^ra-1\) to \(y=3^ra-1\), let \(L(r)\) be the least signed clock with \(r\) odd inputs ending at \(-2\), and define
@@ -177,9 +181,11 @@ A separate sparse-correction construction preserves one starting integer, long n
 
 The fresh project build compiled **37 Lean modules**, including **26 new modules** and eleven retained dependencies/consumers, into an empty project output cache. It checked **225 selected declaration axiom inventories**, including **129 in the new modules**. They contain only the standard logical axioms. Warnings were errors and automatic implicit variables were disabled. The compiler and cached Mathlib/package dependencies are pinned; those dependencies were not rebuilt in this pass.
 
-All five exact finite-control programs ran both normally and with Python optimization enabled: ten successful executions, with byte-identical output in each pair. These comprise the four lane controls and the final bounded-rank reduction. The pinned height-strip checker was separately replayed in both modes. These executions are finite evidence, not substitutes for the written unbounded proofs or the remaining universal premise.
+All six exact finite-control programs ran both normally and with Python optimization enabled: twelve successful executions, with byte-identical output in each pair. These comprise the four lane controls, the final bounded-rank reduction, and the separately reviewed finite-cover followup. The pinned height-strip checker was separately replayed in both modes. These executions are finite evidence, not substitutes for the written unbounded proofs or the remaining universal premise.
 
 [Lean receipt](../../reports/astra-unconventional-20261126/lean/receipt.json) · [Four-lane replay receipt](../../reports/astra-unconventional-20261126/control-replay.json) · [Bounded-rank replay receipt](../../reports/astra-unconventional-20261126/bounded-rank-replay.json) · [Pinned strip replay](../../reports/astra-unconventional-20261126/pinned-strip-replay.json) · [Source pins](SOURCES.json)
+
+[Written review at the published science commit](../../reports/astra-unconventional-20261126/REVIEW.json) · [Clean-checkout publication receipts](../../reports/astra-unconventional-20261126/PUBLICATION.json) · [Finite-cover followup replay](../../reports/astra-unconventional-20261126/finite-cover-replay.json)
 
 Rebuild with the pinned Lean executable, Mathlib checkout, and external package cache:
 
@@ -193,6 +199,8 @@ python -B research/astra-unconventional-20261126/check_controls.py \
   --report-dir /outside/checkout/control-replay
 python -B research/astra-unconventional-20261126/renormalization/check_bounded_rank.py
 python -O -B research/astra-unconventional-20261126/renormalization/check_bounded_rank.py
+python -B research/astra-unconventional-20261126/renormalization/check_finite_cover.py
+python -O -B research/astra-unconventional-20261126/renormalization/check_finite_cover.py
 ```
 
 The central fixed-source merger remains unproved. The retained final Lean consumer takes `FrontierMerger` as an explicit argument. The separate critical-record consumer takes `RecordLock` and `CycleExclusion` as explicit arguments. Their standard axiom inventories do not discharge those arguments.

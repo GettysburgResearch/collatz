@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "source": "research/astra-unconventional-20261126/renormalization/check_finite_cover.py",
+  "source_sha256": "6570ccd87a59ccaf63aacd52b9bbf3777d3a68060395ef68ea922b79cbfedff5",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-unconventional-20261126/renormalization/check_finite_cover.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "d99f21967fc263ac56ad7d129f80e80b8e28446bc878db37ef98cfbac81a2e7f"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "research/astra-unconventional-20261126/renormalization/check_finite_cover.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "d99f21967fc263ac56ad7d129f80e80b8e28446bc878db37ef98cfbac81a2e7f"
+    }
+  ],
+  "normal_equals_optimized": true,
+  "proof": "research/astra-unconventional-20261126/renormalization/FINITE_COVER_BARRIER.md",
+  "proof_sha256": "108fa4a00f576d42f2668e5c8f26b3260b659489ee12eea347caec425d86c2e6",
+  "reviewers": [
+    "root",
+    "cycle_global_ultra14"
+  ],
+  "review_scope": "All fixed-word reduction to ordinary inputs 1..932 independently reconstructed; both exact finite executions matched. Not a formal Lean proof.",
+  "mathematical_scope": "Fixed words from N-1 or2N-1 on a finite ternary-cylinder cover using the three named guaranteed floor/canonical tests. No obstruction to unbounded ordinary-dependent selectors, variable-j-length ascents, or other logical comparisons.",
+  "first_hit_inputs": 932,
+  "max_first_hit_clock": 113,
+  "max_ordinary_height": 125252,
+  "affine_rows": 8
+}

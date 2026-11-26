@@ -1,0 +1,223 @@
+{
+  "schema": "collatz-round14-written-review/v1",
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 195,
+  "reviewed_source_commit": "ec633e973dd28fb14d120cddf1abb62d4f55c21d",
+  "reviewed_source_tree": "8cea697b56087fa0530bd17d7de88617c1984270",
+  "review_kind": "Internal mathematical reconstruction by the coordinating agent and the named independent GPT-6.2 Astra ultra agents; not external peer review.",
+  "scope": "Verdicts are confined to listed claims and file hashes. External analytic inputs, finite computation, Lean compilation and repository integrity remain distinct evidence tiers.",
+  "rows": [
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/PHASE_RETURN.md",
+      "claims": "Thirteen floor-implies-Good progressions; explicit signed -17/-5 bridge; all base exceptions and upper first hits.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Own-floor premise remains explicit; leastness-to-floor uses the pinned quantitative-return source. Remaining rows are open.",
+      "sha256": "5986a838d71327172e6f14b2e42aa8df27f7093f1818fccf64394e5aa7d2147c"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/FIRST_MEETING.md",
+      "claims": "Exact unrestricted-clock odd-work optimum; all-rank varying-cofactor attainment; fixed-cofactor nonnative-entry congruences; diverging excess.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Equality at a fixed cofactor concerns entry on the other edge, not automatically first intersection on every cofactor.",
+      "sha256": "86023a0008b4a8879c0ce8ddde3e09af22abc02c4eda153e4fe79c18b3e7dc0f"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/POSTPEAK.md",
+      "claims": "Signed-potential work bounds and the additional logarithmic excess from Yu Theorem1.",
+      "status": "VERIFIED_WITH_EXTERNAL_INPUT",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Fixed postpeak window and fixed source ratio. Yu's primary statement/hypotheses checked; its proof not rebuilt; centers -1 and0 separate.",
+      "sha256": "55aebd084d75736458f879ae594f3a4c02a6110ad682eee9f818eeffeeb3c141"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/GRADED_MINIMA.md",
+      "claims": "All three fixed-reference minimum laws; balanced-reset bound; exact eventual canonical-triple recurrence.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Uses reviewed uniform reciprocal/simple-path estimates; no construction of unbounded simultaneous resets.",
+      "sha256": "c2dac5010cc378ba4c74637f2192bb428a9b0567cbea9d773fbdb91b2152a1c3"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/README.md",
+      "claims": "Ordinary row comparisons, finite own-floor use, and two all-height rank-two comparison countercontrols.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Does not regenerate leastness at arbitrary larger sources. Exact replay and corresponding Lean modules separately checked.",
+      "sha256": "ce426ab86fa50c209ca63d33352953bb2efefddea62f119f7ba0f5d4bae981df"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/PORTAL_BUDGET.md",
+      "claims": "Uniform weighted inverse-word clock count, arbitrary-class obstruction, fixed rational target height cap and finite-horizon ordinary density bound.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "No all-depth exclusion of the prescribed rational target for one supplied ordinary endpoint.",
+      "sha256": "743c3fc12ec6f1e04d43050a0d4183facc6272cf0c98cb9af027e19076037198"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/cycle/README.md",
+      "claims": "Theorems1-3: whole-denominator residue fibers; physical exponent ordering; exact-grade compression; every-prime ordinary routing.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Full qualitative Theorem3 also compiled. Quantitative thresholds and rational extension written. The separately cited consecutive-source deduction retains its upstream dependency.",
+      "sha256": "7a3a493b9006f997dbff20476b1f334e0c2daee5c3d49c78ae17300d53b5cbbc"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/cycle/GOOD_NEIGHBORS.md",
+      "claims": "Sharp ordinary global floor, bounded-branch neighbors and oriented labels; native inverse-clock restrictions.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Bounded least-disagreement hypotheses explicit. Many-lap consequence uses separately replayed pinned p << s^0.49 certificate; sharp floor credited upstream.",
+      "sha256": "e5a2aa6fac5fa12bd6d2f9561e6022cfede7278bf3d089a005f2dffb3752f396"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/cycle/NATIVE_RIGIDITY.md",
+      "claims": "One-exponent rigidity via Yu; sparse multi-edit bounds for small source and target.",
+      "status": "VERIFIED_WITH_EXTERNAL_INPUT",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Fixed/coherent native template and polynomial height regimes stated; dense edits and very high ancestors remain possible.",
+      "sha256": "4e3d915e3fa84131e3dde4e338bdb18a30942ee1904d7f36471c8778950c6353"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/cycle/HOLONOMY.md",
+      "claims": "Exact symmetric-power Smith factors and relative transport group; marked coset retains reduced denominator.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Abstract group compositions are not asserted to be legal positive paths. Do not extend the exact symmetric-power factors to arbitrary repeated-weight representations.",
+      "sha256": "26b51c8094a134d34257cd0bfa9854da0550b4f39046ec138a62bc275aebb233"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/MOMENT_LATTICE.md",
+      "claims": "All-prime full binomial lattice at exact grades, quantitative construction, minimum-cost refinement and carry index.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Signed integral spanning; no nonnegative interpolant or smaller positive ancestor follows.",
+      "sha256": "bd7ce628b51623939a847646d103a0ff0503cb6fd940d40add67e9758af284a9"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/MULTIPLE_CUTS.md",
+      "claims": "Fixed-grade mixed tensor lattice for arbitrary finite internal-cut count and polynomial/carry corollaries.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root",
+        "cycle_global_ultra14"
+      ],
+      "scope": "Arbitrarily many but finitely many cuts; sufficiently large per-segment grades; signed reconstruction.",
+      "sha256": "c50de92267230cf076e9557559808e5ce0d1b870be8dd1b45b36515719164437"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/EXACT_INTERVALS.md",
+      "claims": "Conditional deduction of consecutive ordinary fibers from pinned PR146 synchronization and rStation48(76).",
+      "status": "SOURCE_QUALIFIED",
+      "reviewers": [
+        "root",
+        "cycle_global_ultra14"
+      ],
+      "scope": "Conditional assembly and hypotheses checked. Full external analytic proof of the fixed-total floor was not independently reconstructed or formalized here.",
+      "sha256": "97fa483826bfbca5fdf0edf56dc91b0d7cd8af506aad5d6bbe21e5cdd5762182"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/POINTED_SPECTRUM.md",
+      "claims": "Exact derived-set strata, finite delay-fiber stabilization, two Hausdorff limits, elementary exponential lower bound and concentration.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Assumes one actual escaping component; does not produce one or refute one. Final near-full count and box-dimension section is separately SOURCE_QUALIFIED by the analytic floor.",
+      "sha256": "0bd3721de49ab87af931cb69d9be0b704337b95d85c0e2887fae9ab1f2b45ddc"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/SPARSE_SHADOW.md",
+      "claims": "Fixed-origin modified-carry critical path; simultaneous growing finite congruences/native windows; exact record accumulation; no rational native itinerary.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Unit carry is changed at sparse times. This is not an ordinary Collatz counterexample or a refutation of exact RecordLock.",
+      "sha256": "8304f738f28655f44d98b6371336d36f3890717d88754ff34a5d2c9a9cb86020"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/adelic/MINIMUM_PROFILE.md",
+      "claims": "Actual component-wide floor and highest-grade profile, near-minimal whole-future tests; mixed-unit local control.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root"
+      ],
+      "scope": "Criticality explicit. Mixed-unit control independently rederived and credited to late PR201's stronger all-shortcut OP-D2/3.",
+      "sha256": "dff56a5c0dc00f45b231d3d0eab912b2a3d3bd1ca78e5ab9607a33159033f266"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/spectral/README.md",
+      "claims": "S1/S2 full and Fredholm-essential disks on specified weighted l1; finite-floor and compact/equivalent-norm/finite-dimensional stability.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "cycle_global_ultra14"
+      ],
+      "scope": "Written Banach-space proof using stated sequential regular variation. Does not claim a contraction obstruction on every function space.",
+      "sha256": "8ea0f95722c11bce7b352add6a9d552ec8bd8f37b8165bcfd43a655449dcb987"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/spectral/POINT_SPECTRUM.md",
+      "claims": "S3 same disk in each actual killed-root basin; S4 complete nonzero eigenvalue/ray summability criterion and exact rooted speed radius.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root",
+        "adelic_ultra14"
+      ],
+      "scope": "Written result, with genuine rooted ordinary inverse rays. Elementary 1/4 bound only; optimal root speed not determined.",
+      "sha256": "e2dc6f202c506296abc4bf7f62887a6e040f8147932a7be8bff305739fd6eb0b"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/cycle/CANONICAL_FLOOR.md",
+      "claims": "Bounded-branch global canonical floor; exact minimum descending run; divisibility squeeze and r=2 on-cycle capture; positive fraction of canonical phases.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root",
+        "adelic_ultra14"
+      ],
+      "scope": "Ordinary bounded alternative, actual neighboring Good labels and leastness are explicit. Conditional floor/extraction/squeeze compiled; upstream branch identification and positive proportion remain written.",
+      "sha256": "2833ad6749a3dcf5d148d649ce0ebf3f5628729c3048bee782e5f8fdfa065363"
+    },
+    {
+      "path": "research/astra-unconventional-20261126/renormalization/BOUNDED_RANK_THREE.md",
+      "claims": "All bounded three-odd upper cases reduced to gap6 at r3,4,5; gap7 smaller visitor; gap8/10 smaller canonical return; r2 long-ramp exclusion; first-bad-Mersenne consequence.",
+      "status": "VERIFIED",
+      "reviewers": [
+        "root",
+        "cycle_global_ultra14",
+        "adelic_ultra14"
+      ],
+      "scope": "Prior exact rank-three shape/restriction pinned. Core phase identities and inequalities compiled; final cycle assembly written. Root additionally checked the explicitly stated n<25 first hits.",
+      "sha256": "4bdcb17ef6fbe9479758f194792cb238747299384d3842e1b1502bbffe0b99d2"
+    }
+  ],
+  "lean_receipt": "reports/astra-unconventional-20261126/lean/receipt.json",
+  "finite_receipts": [
+    "reports/astra-unconventional-20261126/control-replay.json",
+    "reports/astra-unconventional-20261126/bounded-rank-replay.json",
+    "reports/astra-unconventional-20261126/pinned-strip-replay.json"
+  ]
+}

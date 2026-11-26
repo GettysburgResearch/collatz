@@ -47,6 +47,8 @@ The remaining \(e=6\) family has
 \]
 In the remaining bounded case, \(M_j=x\) is the first bad Mersenne and \(3M_j\) is good. Its residue \(31\bmod48\) prevents the smaller raw disagreement from immediately contradicting canonical leastness. The new all-clock first-entry optimization and fixed postpeak bounds apply to possible competitors. They do not construct the needed small competitor at every such supplied \(m\). Upper odd counts beyond three and the first-crossing alternative remain open. The rank-two deadline and synchronized-grade rules already fail on ordinary convergent data. No universal selector based on those rules is proposed.
 
+The separately reviewed [finite-cover theorem](renormalization/FINITE_COVER_BARRIER.md) further excludes a finite cover of this row by the specified fixed-word floor and canonical-query tests. Its all-word reduction is written mathematics; the resulting complete finite classification is independently replayed. It explicitly permits an unbounded selector terminating at each ordinary exponent while failing at the nonordinary ternary limit. Thus it refines the missing construction, without asserting impossibility of a full Collatz proof.
+
 ## A possible fixed-component contradiction and its absent construction
 
 Suppose \(C(3y)\) is witnessed at clock \(H_0\) with \(p_0\) odds, while the lower orbit of \(y\) is nonperiodic. If, for arbitrarily large \(g\), there were a positive \(u\) satisfying both
