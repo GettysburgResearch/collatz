@@ -1,0 +1,107 @@
+{
+  "bank_rows": 64,
+  "left_signed_cycle_numerators": [
+    3,
+    6,
+    12
+  ],
+  "maximum_first_counted_clocks_by_phase": [
+    13,
+    12,
+    14,
+    14
+  ],
+  "ordinary_samples": [
+    {
+      "blocks": [
+        7301,
+        4057
+      ],
+      "n": 0,
+      "terminal_bits": 15428,
+      "valuation": 0
+    },
+    {
+      "blocks": [
+        623,
+        347
+      ],
+      "n": 1,
+      "terminal_bits": 1319,
+      "valuation": 1
+    },
+    {
+      "blocks": [
+        1694,
+        942
+      ],
+      "n": 2,
+      "terminal_bits": 3581,
+      "valuation": 0
+    },
+    {
+      "blocks": [
+        56,
+        32
+      ],
+      "n": 7,
+      "terminal_bits": 121,
+      "valuation": 2
+    },
+    {
+      "blocks": [
+        7300,
+        4056
+      ],
+      "n": 11,
+      "terminal_bits": 15428,
+      "valuation": 4
+    },
+    {
+      "blocks": [
+        622,
+        346
+      ],
+      "n": 27,
+      "terminal_bits": 1319,
+      "valuation": 5
+    },
+    {
+      "blocks": [
+        3773,
+        2097
+      ],
+      "n": 113,
+      "terminal_bits": 7981,
+      "valuation": 1
+    },
+    {
+      "blocks": [
+        388,
+        216
+      ],
+      "n": 65547,
+      "terminal_bits": 834,
+      "valuation": 4
+    }
+  ],
+  "reset_tree": {
+    "covered_mass": "15/16",
+    "exempt_class": "11 modulo 16",
+    "leaves_including_exempt": 854,
+    "maximum_binary_depth": 28,
+    "maximum_block_count": 81,
+    "source_sha256": "92329f3cf6ece9e4408b6fe33e8879024639c0775e7c5836434252051b7036b8"
+  },
+  "right_signed_cycle_numerators": [
+    57,
+    93,
+    114,
+    147,
+    228
+  ],
+  "scope": "finite merger bank, signed rational control, and ordinary sample replays",
+  "source_sha256": "efa58cec5cfede3617e1da88bcf1851762e6d0cf44a5ed8b3dca4cbcfe40605e",
+  "unbounded_ordinary_theorem_replayed": false,
+  "wheel_size": 1024
+}

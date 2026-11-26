@@ -1,0 +1,61 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'AYHSelfEmbedding.certificate' does not depend on any axioms
+'AYHSelfEmbedding.every_rule_used' depends on axioms: [propext, Quot.sound]
+'AYHSelfEmbedding.source_embeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AYHSelfEmbedding.no_strict_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AYHSelfEmbedding.no_strict_of_trace' depends on axioms: [propext]
+'AYHSelfEmbedding.certificate41' does not depend on any axioms
+'AYHSelfEmbedding.every_rule_used41' depends on axioms: [propext, Quot.sound]
+'AYHSelfEmbedding.no_strict_rule_of_zero_stutter' depends on axioms: [propext, Quot.sound]
+'PositivePolynomialBarrier.no_strict_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.affine_lift' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OffsetDescent.dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.descent_iff_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.accepts_upper_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.eventually_dyadic_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.section_of_inverse_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.cylinder_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.inverse_power_cost' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MarkedCylinders.inv4_not_dvd_sixteen' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MarkedCylinders.cofinal_marked_power_predecessors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MarkedCylinders.universal_iff_marked_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.odd_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AYHSelfEmbedding.certificate' does not depend on any axioms
+'AYHSelfEmbedding.every_rule_used' depends on axioms: [propext, Quot.sound]
+'AYHSelfEmbedding.source_embeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AYHSelfEmbedding.no_strict_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AYHSelfEmbedding.no_strict_of_trace' depends on axioms: [propext]
+'AYHSelfEmbedding.certificate41' does not depend on any axioms
+'AYHSelfEmbedding.every_rule_used41' depends on axioms: [propext, Quot.sound]
+'AYHSelfEmbedding.no_strict_rule_of_zero_stutter' depends on axioms: [propext, Quot.sound]
+'MixedBaseRigidity.forwardCollapse' depends on axioms: [propext, Quot.sound]
+'MixedBaseRigidity.reverseCollapse' depends on axioms: [propext, Quot.sound]
+'MixedBaseRigidity.allRulesEqual' depends on axioms: [propext, Quot.sound]
+'PolynomialPump.positive' depends on axioms: [propext]
+'PolynomialPump.support_mono' does not depend on any axioms
+'PolynomialPump.dominates' depends on axioms: [propext]
+'PolynomialPump.free_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolynomialPump.used_of_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolynomialPump.pump' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePolynomialBarrier.no_strict_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarryTrace.aggregate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarryTrace.trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarryTrace.zero_on_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarryTrace.summand_zero_on_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.section_of_inverse_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.cylinder_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.inverse_power_cost' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MarkedCylinders.inv4_not_dvd_sixteen' depends on axioms: [propext, Quot.sound]
+'CollatzShell.MarkedCylinders.odd_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.MarkedCylinders.cofinal_marked_power_predecessors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.MarkedCylinders.universal_iff_marked_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+MixedBaseRigidity.lean recompiled after comment-only whitespace cleanup: exit 0.

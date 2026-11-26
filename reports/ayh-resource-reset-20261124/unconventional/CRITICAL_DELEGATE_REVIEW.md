@@ -1,0 +1,11 @@
+# Independent cross-lane checks
+
+The following snapshots were reviewed independently of their authors. The checks concern the specified arguments. The critical-record, gain and first-entry papers in this directory are the reviewer's own work and are excluded from this receipt.
+
+| Reviewed snapshot | SHA-256 | Scope and result |
+| --- | --- | --- |
+| GEOMETRIC_SLICES.md | e916a32b7da760183d54e0a25c3df3ebe5f331a0ca753332d7fb2a66c21f5d08 | Checked the all-base split, the signed rational lifts at zero and minus one, the large-conditioning slopes, and covering an arbitrary translated exponent interval by complete residue periods. The high odd-base case loses at most two binary digits after normalization. The high even-base case fixes the sign on each parity class. |
+| INVERSE_COVERAGE.md | d5a8bc748c3addb46ad4055acc619bdd655f69d8d8b77386f0c3d07115cd9863 | Reviewed the sharper surplus allowance in the ordinary rounding argument. The first weak crossing ends in an odd inverse, so at fixed surplus the combined clock belongs to an interval of width strictly below one. Gate multiplicities decrease geometrically relative to the largest binomial coefficient. Stirling's square-root factor and a geometric final sum give the claimed logarithmic improvement. |
+| COVERAGE_CONTROL.md | 51b98ae62312da4271e3335e54a8d68c47a249e0566fe1cf968cdf7e7801c7ab | Checked all three claimed coverage properties for the complement of the set of powers of two with exponents powers of three. The ternary valuation is exactly one plus the exponent index, the binary valuation excludes squares, and a geometric base can hit only on a sequence of powers of three whose span gives the stated uniform logarithmic count. |
+
+For the first row, the pinned affine-absorption source at repository commit f431078244e868dc699fad011044f0d5e7f76437 uses the absorbing state with equal affine coefficients and fixed offset zero. This is sufficient for simultaneous equality of physical endpoints and compensated grades in the positive ordinary lifts. The large negative terminal is a finite computer certificate, and this review did not independently rebuild that complete trajectory. The author and parent supplied their respective checks.

@@ -1,0 +1,171 @@
+{
+  "schema": "collatz-finite-replay/v1",
+  "started_utc": "2026-11-24T18:21:55.739964+00:00",
+  "scope": "Finite certificates and algebraic safeguards; not a proof of Collatz",
+  "runs": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_rank_two.py",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean"
+      ],
+      "script_sha256": "5cf899e50f41f9cd3ab764e6de17db915832bc3b66a0a6ac2bc0ba00d5d9a64a",
+      "exit_code": 0,
+      "seconds": 0.041,
+      "stdout": "26 words; maximum prefix factor 16384/9; full reverse return under 2^40\nUpper exponents below 201: 39,93,147; least source hit times 168,398,677\nAbove the cutoff: 203 native steps produce a source smaller by factor 2^40\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_rank_two.py",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean"
+      ],
+      "script_sha256": "5cf899e50f41f9cd3ab764e6de17db915832bc3b66a0a6ac2bc0ba00d5d9a64a",
+      "exit_code": 0,
+      "seconds": 0.14,
+      "stdout": "26 words; maximum prefix factor 16384/9; full reverse return under 2^40\nUpper exponents below 201: 39,93,147; least source hit times 168,398,677\nAbove the cutoff: 203 native steps produce a source smaller by factor 2^40\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_rank_three.py"
+      ],
+      "script_sha256": "1a6442296b04574f34ae75345446592554908ac9a2aa331d174db80f06bf4ee1",
+      "exit_code": 0,
+      "seconds": 0.44,
+      "stdout": "156 contracting shadow prefixes; maximum length 343\n675 positive small-tail sources reach 1; maximum first-hit time 5619\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_rank_three.py"
+      ],
+      "script_sha256": "1a6442296b04574f34ae75345446592554908ac9a2aa331d174db80f06bf4ee1",
+      "exit_code": 0,
+      "seconds": 0.487,
+      "stdout": "156 contracting shadow prefixes; maximum length 343\n675 positive small-tail sources reach 1; maximum first-hit time 5619\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_mersenne_returns.py"
+      ],
+      "script_sha256": "e8a8d05a45c6f7f41c4f05cf6872dfa7392f26f024d412713d11e862c53a4150",
+      "exit_code": 0,
+      "seconds": 0.028,
+      "stdout": "40 complete offsets, partial ternary children [], 80 forward queries\nUncovered full offsets: [0, 1, 2]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_mersenne_returns.py"
+      ],
+      "script_sha256": "e8a8d05a45c6f7f41c4f05cf6872dfa7392f26f024d412713d11e862c53a4150",
+      "exit_code": 0,
+      "seconds": 0.086,
+      "stdout": "40 complete offsets, partial ternary children [], 80 forward queries\nUncovered full offsets: [0, 1, 2]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_opposite_arm_queries.py"
+      ],
+      "script_sha256": "3feb38e68b93173449df7a6effe2add61d67a282922a8aaa0c8fb7dfdb16153b",
+      "exit_code": 0,
+      "seconds": 0.079,
+      "stdout": "214 disjoint symbolic certificates; exponent classes modulo 59049:\n616 power, 384 positive-cycle contraction\n58049 classes still outside this certificate\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/check_opposite_arm_queries.py"
+      ],
+      "script_sha256": "3feb38e68b93173449df7a6effe2add61d67a282922a8aaa0c8fb7dfdb16153b",
+      "exit_code": 0,
+      "seconds": 0.155,
+      "stdout": "214 disjoint symbolic certificates; exponent classes modulo 59049:\n616 power, 384 positive-cycle contraction\n58049 classes still outside this certificate\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/reports/ayh-resource-reset-20261124/closing-proposal/check_opposite_arm_independent.py",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/OppositeArmQueries.json"
+      ],
+      "script_sha256": "fb6fdbddcaf154d0ba9af35906bc13934cb58e3df43d74a34337c9788ec12cd6",
+      "exit_code": 0,
+      "seconds": 29.164,
+      "stdout": "example 29419 (21, 11, -1) (24, 10, 1) 83\nrows by depth/kind [((10, 'power'), 2), ((11, 'contraction'), 4), ((11, 'power'), 9), ((12, 'contraction'), 6), ((12, 'power'), 9), ((13, 'contraction'), 51), ((13, 'power'), 33), ((14, 'contraction'), 69), ((14, 'power'), 31)]\nlifts by depth/kind [((10, 'power'), 162), ((11, 'contraction'), 108), ((11, 'power'), 243), ((12, 'contraction'), 54), ((12, 'power'), 81), ((13, 'contraction'), 153), ((13, 'power'), 99), ((14, 'contraction'), 69), ((14, 'power'), 31)]\ntotals 214 616 384 58049\nclocks replayed 31847 max h,H,pairs,j [26, 40, 98, 9355111]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/replay_quantitative_tables.py"
+      ],
+      "script_sha256": "ce906efcd26836fbbc1979577cfe84499220cd2e7ddf4ed12de3b11e0e8d09d6",
+      "exit_code": 0,
+      "seconds": 0.063,
+      "stdout": "Reconstructed 75 ternary subbanks, their outer tree, and the 26-leaf descent.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/closing-proposal/replay_quantitative_tables.py"
+      ],
+      "script_sha256": "ce906efcd26836fbbc1979577cfe84499220cd2e7ddf4ed12de3b11e0e8d09d6",
+      "exit_code": 0,
+      "seconds": 0.144,
+      "stdout": "Reconstructed 75 ternary subbanks, their outer tree, and the 26-leaf descent.\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-24T18:37:32.777362+00:00"
+}

@@ -1,0 +1,12 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'AllDepthCenter.inverse_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllDepthCenter.cutoff_trap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllDepthCenter.no_congruent_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllDepthCenter.denominator_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RationalCenterPump.repeated_laps' depends on axioms: [propext, Quot.sound]
+'RationalCenterPump.physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RationalCenterPump.smaller' depends on axioms: [propext, Quot.sound]
+'RationalCenterPump.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RationalCenterPump.cofinal_pumps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RationalCenterPump.cofinal_exclusions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RationalCenterPump.arbitrary_saving' depends on axioms: [propext, Classical.choice, Quot.sound]

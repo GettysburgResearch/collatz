@@ -1,0 +1,190 @@
+{
+  "schema": "collatz-crossing-axiom-audit/v1",
+  "scope": "Every new public theorem declaration, compared against the source inventory; plus three public roots of the freshly rebuilt prior PR193 certificate.",
+  "new_declaration_count": 18,
+  "imported_declaration_count": 3,
+  "custom_axioms_or_placeholders": false,
+  "new_declarations": [
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.dyadic_label",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.odd_run_label",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.unit_phase27",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.repeat_phase27",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.exact_head_labels",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.power_label",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "HeadRayRouting",
+      "name": "HeadRayRouting.tripling_from_four",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FourSuffixClosure",
+      "name": "FourSuffixClosure.tripled_return",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FourSuffixClosure",
+      "name": "FourSuffixClosure.constant_label",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FourSuffixClosure",
+      "name": "FourSuffixClosure.basin_iff_four",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LateWitnessTracks",
+      "name": "Collatz.LateWitnessTracks.projected_head_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LateWitnessTracks",
+      "name": "Collatz.LateWitnessTracks.parent_residue_bijective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LateWitnessTracks",
+      "name": "Collatz.LateWitnessTracks.parent_test_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SymmetricFutureForks",
+      "name": "Collatz.SymmetricFutureForks.steps_mono",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SymmetricFutureForks",
+      "name": "Collatz.SymmetricFutureForks.few_poor_centers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SymmetricFutureForks",
+      "name": "Collatz.SymmetricFutureForks.one_shift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SymmetricFutureForks",
+      "name": "Collatz.SymmetricFutureForks.prefix_shift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SymmetricFutureForks",
+      "name": "Collatz.SymmetricFutureForks.fork_parities",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "recompiled_imported_declarations": [
+    {
+      "module": "SingleReturn",
+      "name": "SingleReturn.singleReturnCover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SingleReturn",
+      "name": "SingleReturn.collatzIffSingleReturn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "SingleReturn",
+      "name": "SingleReturn.collatzIffEvenChild",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

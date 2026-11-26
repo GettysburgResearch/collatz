@@ -1,0 +1,140 @@
+{
+  "schema": "collatz-two-class-descent-sources/v1",
+  "inspected_date": "2026-11-24",
+  "base_pr": 197,
+  "base_head": "9ab91d964b38fc870d1034bac628d62f59488467",
+  "base_tree": "50162b090c78750728cb44965ba61ab3fa1d084b",
+  "scope": "PROPOSED written probability/source-transfer deductions, SOURCE-QUALIFIED named inputs, and separately kernel-checked exact interfaces. No universal convergence claim.",
+  "repository_inputs": [
+    {
+      "pr": 197,
+      "head": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "paths": [
+        "research/ayh-resource-reset-20261124/literature-step/FIRST_PASSAGE_MARKS.md",
+        "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/KILLED_GRADE_OCCUPATION.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md"
+      ],
+      "status": "Earlier written local inputs reused and relevant arguments reconstructed; no optional old regression replay.",
+      "use": "Actual scalar sliding windows, source fibers, native pair survival, fixed-target positive-density closing interface, and classical two-log separation."
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "status": "Earlier inspected source-qualified uniform-location pair estimate; external probability formalization not rebuilt.",
+      "use": "Canonical profile/source residue realization, fixed-profile merger tail and normalized offset drift."
+    },
+    {
+      "pr": 201,
+      "head": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+      "path": "research/killed-green-head-closure-20261124/README.md",
+      "blob": "f0ad39baf3474c631d22f65894060d5f7551c034",
+      "status": "Current full source read by coordinator.",
+      "use": "Overlap with preceding killed Green/low-grade result credited; its remaining high-grade color range remains open. Not counted as a new result here."
+    },
+    {
+      "pr": 193,
+      "head": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "path": "research/astra-closure-20261124/transfer/HEAD_ROOTS.md",
+      "blob": "50bc1b381458f73bcea0fb95f3d89551a1e47e8a",
+      "status": "Current full source read by coordinator.",
+      "use": "Actual joint-root law differs from a product law; focused comparison, not an imported color bound."
+    },
+    {
+      "pr": 193,
+      "head": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "path": "research/astra-closure-20261124/boundary/GLOBAL_ATTEMPT.md",
+      "blob": "77d357cea07a6d935e577631e54909cadb8a69e7",
+      "status": "Current full source read by coordinator.",
+      "use": "Fixed ordinary source cylinders and boundary transfer distinctions. No fresh endpoint law is assumed."
+    }
+  ],
+  "latest_pr_metadata": [
+    {
+      "pr": 193,
+      "title": "Collatz: global unit-equation bounds, actual first passage, and Lean checkpoints",
+      "head_sha": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "intake": "Focused source files below and description read."
+    },
+    {
+      "pr": 195,
+      "title": "Collatz: two-light descent, divisor source counts, and cycle transport",
+      "head_sha": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "intake": "Updated metadata and description only; no full new-head audit."
+    },
+    {
+      "pr": 192,
+      "title": "Collatz: ordinary carry-class bounds and fixed-source closure audit",
+      "head_sha": "5720732b9c83361f5cded4f8bfac24e36f469937",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "intake": "Updated metadata and description only; no full new-head audit."
+    }
+  ],
+  "external_inputs": [
+    {
+      "id": "AYH",
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "arxiv": "2105.14697",
+      "status": "Primary author PDF inspected in earlier checkpoint and architecture reused.",
+      "use": "Mixed binary/ternary rewriting and the ordinary-head termination route; no all-rule interpretation is supplied."
+    },
+    {
+      "id": "PAIR-ENTRY",
+      "title": "Square-root coalescence tails: proof discussion and corrected attribution",
+      "url": "https://rstation.ai/r/collatz/posts/20",
+      "location": "Canonical state table and Lemmas 3–5, especially successive-entry drift (16).",
+      "status": "SOURCE-QUALIFIED recent written argument. Coordinator read the entry-drift proof interface; external Duran/Leen input archive not rebuilt.",
+      "use": "Canonical fair pair chain, physical waits, finite-set absorption and killed successive-entry drift. These estimates are explicitly attributed there to Duran and Leen; no claim of their novelty here."
+    },
+    {
+      "id": "GROWING-BLOCKS",
+      "author": "lyapunov_weaver",
+      "title": "Synchronization of growing Collatz blocks and selected references",
+      "url": "https://rstation.ai/problems/collatz/papers/124",
+      "version": "v1, 9 November 2026",
+      "location": "Scalar sibling construction, Lemma 3 and equations (9)–(12); conditional future couplings as comparison.",
+      "status": "Primary recent manuscript read; no external formal build.",
+      "use": "Inspiration and comparison. The new adaptive finite-family projection proves its own largest-slope census and does not require an independent-arm coupling."
+    },
+    {
+      "id": "SCALAR-WORD-GEOMETRY",
+      "title": "Scalar word geometry (paper 19)",
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "status": "Primary source inspected by the direct-descending stream; coordinator comparison at source metadata level this round.",
+      "use": "Credit for established same-count affine-word geometry. The explicit dyadic injection used here is proved independently in Lean."
+    },
+    {
+      "id": "LARGE-SIEVE",
+      "authors": "H. L. Montgomery and R. C. Vaughan",
+      "title": "The large sieve",
+      "journal": "Mathematika 20 (1973), 119–134",
+      "doi": "10.1112/S0025579300004708",
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf",
+      "location": "Theorem 1, separated-frequency inequality (1.4).",
+      "status": "Classical published theorem; primary author-hosted text and journal metadata retrieved.",
+      "use": "Prime-average residue total variation for each retained exact-future fiber."
+    },
+    {
+      "id": "MATVEEV",
+      "author": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "journal": "Izvestiya: Mathematics 64:6 (2000), 1217–1269",
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "url": "https://www.mathnet.ru/eng/im314",
+      "status": "Classical published theorem, exact dependency retained from preceding landing-weight packet.",
+      "use": "Distinctness and inverse-polynomial logarithmic separation of returned heads. The main incidence inequality is independent of this input."
+    }
+  ],
+  "formal_environment": {
+    "lean": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "scope": "Local closure rebuilt; cached third-party Mathlib reused. Written probability estimates remain outside the formal scope."
+  }
+}

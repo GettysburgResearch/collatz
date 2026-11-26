@@ -1,0 +1,151 @@
+{
+  "schema": "collatz-source-progress-sources/v1",
+  "date": "2026-11-25",
+  "repository": "GettysburgResearch/collatz",
+  "scope": "Exact source and claim boundaries for this continuation. Source qualification is preserved.",
+  "repository_sources": [
+    {
+      "pr": 197,
+      "head": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+      "paths": [
+        "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+        "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+        "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+        "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+        "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean",
+        "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean",
+        "research/ayh-resource-reset-20261124/closing-proposal/"
+      ],
+      "claims": [
+        "Ordinary basin and reverse-17 closure",
+        "QuantitativeReturn.bounded_return",
+        "MersenneFirstBad.exact_first_bad",
+        "rank_three_family",
+        "two-odd progress and least-defect consumer",
+        "LocalResampling finite ordinary graph"
+      ],
+      "use": "All 17 mathematical modules and PublicAudit rebuilt by root. Exact individual paths and hashes are in lean-execution.json."
+    },
+    {
+      "pr": 197,
+      "head": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+      "paths": [
+        "research/ayh-resource-reset-20261124/directed-return/SELECTED_TRIT_CELLS.md",
+        "research/ayh-resource-reset-20261124/closing-proposal/LOCAL_RESAMPLING.md",
+        "research/ayh-resource-reset-20261124/closing-proposal/GATE_TRANSPORT.md"
+      ],
+      "claims": [
+        "Original-source rebase and native occupancy",
+        "Selected microblocks and finite query menu",
+        "Source-qualified P, R and M population/regeneration inputs"
+      ],
+      "use": "Read and used with their inherited written and source-qualified scope; not converted into unconditional Lean probability theorems."
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+        "research/upper-bit-mergers/THREE_RAY_CLOCKS.md"
+      ],
+      "primary_blob_sha": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "primary_file_sha256": "16bb5380096d7ca8224f277209937d29b6a153c9f3101eeb64094a47109db82d",
+      "claims": [
+        "Equation (1): complete-native-grid symbolic absorption for a fixed displacement",
+        "Fixed positive-level walk and reflection estimate",
+        "Stated finite-time sharpness construction"
+      ],
+      "use": "SOURCE-QUALIFIED written input. Root read the complete growing-gap note; its cited supporting chain is retained as upstream dependence. No new kernel proof of this probabilistic input is claimed."
+    },
+    {
+      "pr": 195,
+      "head": "51e2c43a60950e446eabe782c5b1cb1d0ae11bab",
+      "paths": [
+        "research/astra-global-closure-20261124/round9/README.md",
+        "research/astra-global-closure-20261124/round9/critical/ESCAPE.md",
+        "research/astra-global-closure-20261124/round9/critical/SHALLOW_ANCESTORS.md",
+        "research/astra-global-closure-20261124/round9/rows/UPPER.md"
+      ],
+      "claims": [
+        "Focused comparison as summarized in GRID_TRANSFER.md"
+      ],
+      "use": "Read by the joint-grid delegate at the frozen head; neighboring Lean modules were not rebuilt in this pass. No full-branch correctness verdict is issued."
+    },
+    {
+      "pr": 193,
+      "head": "24cdd0e5471d4421716cfce6bd88916f858f994c",
+      "paths": [
+        "research/astra-universal-proof-20261124/README.md",
+        "research/astra-universal-proof-20261124/critical/CYCLE_OCCUPATION.md",
+        "research/astra-universal-proof-20261124/critical/COMPANION_SYNCHRONIZATION.md",
+        "research/astra-universal-proof-20261124/critical/CLOCK_MASS.md"
+      ],
+      "claims": [
+        "Focused comparison as summarized in GRID_TRANSFER.md"
+      ],
+      "use": "Read by the joint-grid delegate at the frozen head; neighboring Lean modules were not rebuilt in this pass. No full-branch correctness verdict is issued."
+    },
+    {
+      "pr": 200,
+      "head": "81ea4c1754d73c98d1451447527e6b2ba56977cc",
+      "paths": [
+        "research/regularity-rigidity-20261124/minimum-closure/README.md",
+        "research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md"
+      ],
+      "claims": [
+        "Focused comparison as summarized in GRID_TRANSFER.md"
+      ],
+      "use": "Read by the joint-grid delegate at the frozen head; neighboring Lean modules were not rebuilt in this pass. No full-branch correctness verdict is issued."
+    },
+    {
+      "pr": 207,
+      "head": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "paths": [
+        "research/diffusive-central-row-closure-20261124/README.md",
+        "research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md"
+      ],
+      "claims": [
+        "Focused comparison as summarized in GRID_TRANSFER.md"
+      ],
+      "use": "Read by the joint-grid delegate at the frozen head; neighboring Lean modules were not rebuilt in this pass. No full-branch correctness verdict is issued."
+    },
+    {
+      "pr": 192,
+      "head": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "paths": [],
+      "claims": [],
+      "use": "Metadata refresh and context only in this pass; no theorem from this head is newly certified or required by the new Lean proof."
+    },
+    {
+      "pr": 206,
+      "head": "b2b56b94175174a680a296478f16c619a8828972",
+      "paths": [],
+      "claims": [],
+      "use": "Metadata refresh and context only in this pass; no theorem from this head is newly certified or required by the new Lean proof."
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "use": "Primary rewriting/termination paper. The present finite ordinary words continue that exact-rewrite viewpoint; no full terminating interpretation is produced."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "use": "Primary research page on labelled common-clock image compression, consulted to avoid claiming a rediscovered entropy estimate as new. Its stronger analytic theorem is not an input to the new kernel proofs."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/62",
+      "use": "Comparison with an injective partial-map construction; not a full ordinary convergence input."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/177",
+      "use": "Comparison with imported complete-orbit occupancy estimates; not used as an unconditional bridge."
+    }
+  ]
+}

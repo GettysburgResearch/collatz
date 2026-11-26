@@ -1,0 +1,24 @@
+# The full native bit window cannot certify a crossing on square-root mass
+
+**PROPOSED written theorem.** Use the same sampled ordinary parents, ordered records and centered trees as in SYMMETRIC_FUTURE_FORKS.md. For each fixed suffix 0≤r<81 and X=81^(j−1), take any complete block of 2^h consecutive parents in [7X,8X), where h=floor(log_2 X). Such a block contains at least half the parent row. There is original block mass at least c/sqrt(h) lying in retained rich records for which
+
+    T^i(81a+r) ≠ T^j(b)  for every two good members a,b of the record
+                           and every 0≤i,j≤h.
+
+One may simultaneously retain the centered ternary tree and discard its exceptional centers. This lower bound concerns actual failures of *finite* cross-certification, even at separately selected physical clocks and even after arbitrarily many candidates in a record are tried. It is compatible with eventual convergence of all their members. On the retained block population it has matching order as a worst-case finite search obstruction: absence of all such crossings in the center's record implies failure of its own ordinary native counted-fusion test, whose source-qualified tail is O(1/sqrt(h)).
+
+**Clock rigidity.** On one scalar arm beginning at z write t-step growth as
+
+    T^t(z) = 3^{p_t} 2^(−t) z (1+δ_t),  δ_t ≥ 0.
+
+The normalized affine expansion gives δ_t = z^(−1) sum_{i<t, bit_i=1} 2^i/3^{p_(i+1)}, nondecreasing in t. For a good member of a retained record its terminal additive scalar intercept is at most L, so δ_t≤δ_h≤L 2^h/(3^{p_h}z). Restrict to p_h≥h/4 on each of the two scalar arms, at an exponentially small original probability cost by their separate fair binomial counts. Since z≥7X and 2^h≤X, every one of these relative errors is O(L 3^(−h/4)) simultaneously through h. The retained fiber has diameter ≤LF and F≤2^h/3^(h/4); therefore log((81a+r)/b)=4 log 3 + O(L 3^(−h/4)+1/X) throughout the same fiber.
+
+Suppose a cross equality at clocks i,j≤h did occur. Taking logarithms gives
+
+    |(4+p_child(i)−p_parent(j)) log 3 − (i−j) log 2| ≪ L 3^(−h/4)+1/X.
+
+The exponents are integers of absolute value O(h). The lower bound for a nonzero linear form in these two logarithms, c(1+h)^(−ν) for fixed c,ν>0, eventually exceeds the right side because L is polynomial in h. Multiplicative independence now gives i=j and 4+p_child(i)=p_parent(i). All future shortcut parities agree from the meeting onward. Consequently 4+p_child(h)=p_parent(h). The recorded terminal counts for the two chosen arms are exactly the respective counts of the original center. Thus **a nonzero terminal signed gap excludes every such crossing**, without any claim about clocks beyond h. The same logarithmic input, with explicit published source, is used in [the previous packet](https://github.com/GettysburgResearch/collatz/blob/6eb986b0ce0b1836a356474d25d709ed4e948b67/research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md); see Simons–de Weger, Lemma 12, [Acta Arithmetica 117 (2005)](https://doi.org/10.4064/aa117-1-3).
+
+**Positive ordinary mass.** On the finite uniform block expose the parent parameter bits in chronological order. At each prefix both current arms have odd slopes in the unexposed quotient. Their next two parity bits are a fixed pair or its simultaneous complement with probability 1/2 each. Thus the signed grade 4+p_child−p_parent either holds or moves by a fair unit step, with the type of step already determined by the prefix. Couple its moving steps to the successive signs of an independent fair simple walk, using a separate fair bit at holding steps. This generates the original prefix law; the holding schedule may depend on the earlier moves. A simple walk from 4 that stays positive for its first h moves therefore keeps the physical grade positive through time h even if fewer moves are used. By reflection (or the central-binomial bound for a walk started at 1), this event has probability at least c/sqrt(h). This mixed/physical lower comparison is the elementary mechanism also used in [paper 124 v1, deterministic lower comparison](https://rstation.ai/api/v1/papers/collatz_124/versions/1/download). The probability is an ordinary block fraction since the h-bit grid is complete.
+
+The terminal property of having a positive signed gap is constant on each record. Remove the exponentially small scalar count tails, the bad intercepts, the undersized and small-F fibers, and the exceptional centered-tree roots with the arbitrarily high inverse-power cost from the companion theorem. The remaining original mass is still ≥c'/sqrt(h) for large h. Every such source lies in a fiber satisfying the clock rigidity proof and carries the centered tree. The necessary additional ingredient for a successful crossing on those records concerns later ordinary futures; richer choices of the past alone cannot beat this bound.

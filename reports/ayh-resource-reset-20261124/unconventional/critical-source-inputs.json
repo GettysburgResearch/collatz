@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "scope": "Source provenance for the critical-record and inverse-tree packet of the PR197 three-hour sprint, including its separate review of the 20:41 UTC PR193 update.",
+  "date_utc": "2026-11-26",
+  "repo_input_hash_definition": "Git blob SHA-1 and SHA-256 of the exact Git blob bytes, read from the named commit. Upstream written comparisons are source inspections and do not claim an upstream Lean build.",
+  "status": "Universal Collatz termination remains open.",
+  "toolchain": {
+    "lean_version": "4.34.1",
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean_url": "https://github.com/leanprover/lean4/commit/5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_url": "https://github.com/leanprover-community/mathlib4/commit/d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "project_base_commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5"
+  },
+  "direct_kernel_inputs": [
+    {
+      "source_type": "direct_lean_import",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "git_blob_sha1": "e14cc8982417825d48d0c00622bb902d7317c218",
+      "file_sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "scope": "The existing signed shortcut iteration and grade used by both finite arithmetic kernels.",
+      "consumed_or_compared_in": [
+        "RecordPrecision.lean",
+        "FreshAscentShadow.lean"
+      ]
+    },
+    {
+      "source_type": "direct_lean_import",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "path": "Mathlib/RingTheory/Coprime/Lemmas.lean",
+      "git_blob_sha1": "7877e4d9627e08b8036c4cd9c9a0f15810b9ba2f",
+      "file_sha256": "406ffe2fb9f644cf67c7aae6c95f386ccc322807a8708eb4b4e8f52811f9bc77",
+      "primary_url": "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/RingTheory/Coprime/Lemmas.lean",
+      "scope": "Arithmetic lemmas used by the two new finite kernels.",
+      "consumed_or_compared_in": [
+        "RecordPrecision.lean",
+        "FreshAscentShadow.lean"
+      ]
+    },
+    {
+      "source_type": "direct_lean_import",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "path": "Mathlib/Data/Int/GCD.lean",
+      "git_blob_sha1": "6cc9051fe51495a25c119f713cd0ec5f65a9ddff",
+      "file_sha256": "3ea1ccc0fdea836908d84bfa5811e34fe9463e41a1925e86da41c2fb08a3c065",
+      "primary_url": "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Data/Int/GCD.lean",
+      "scope": "Arithmetic lemmas used by the two new finite kernels.",
+      "consumed_or_compared_in": [
+        "RecordPrecision.lean",
+        "FreshAscentShadow.lean"
+      ]
+    }
+  ],
+  "repository_sources": [
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "1be1e81427cb5cfc182fb2a4e63dbbf8baa33fbe",
+      "path": "research/two-sided-cycle-packing-20261124/README.md",
+      "git_blob_sha1": "5380e3b5f0f0366556a2591e910f039bac0abfa7",
+      "file_sha256": "f9b14eac5b26b637bf16f6f4c368a565610e00975862be4111bf662a863e3ed0",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/1be1e81427cb5cfc182fb2a4e63dbbf8baa33fbe/research/two-sided-cycle-packing-20261124/README.md",
+      "scope": "Two-sided cycle packing, with cycle-specific spacing assumptions.",
+      "consumed_or_compared_in": [
+        "FORCED_CLOSINGS.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/arithmetic/MOVING_CENTERS.md",
+      "git_blob_sha1": "c2adaf83ae953a9d0016c6fa70bdc85a2b240368",
+      "file_sha256": "5482f09cda9c538600e1fef2407e56a065ec0e9ceeee00825b312ac09f2cb4cf",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/arithmetic/MOVING_CENTERS.md",
+      "scope": "Arbitrary-phase single 12/21 transposition on the bounded cycle branch.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/arithmetic/PHASE_PAIR_MASS.md",
+      "git_blob_sha1": "55371976aa9ac8f00600894eef9f6563d6367085",
+      "file_sha256": "552a8202ac4c63d0eb384849dfbeb10b8aaca14b6470c4295d1654eab66df228",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/arithmetic/PHASE_PAIR_MASS.md",
+      "scope": "Partitioned prime-to-six discrepancy costs for lifted bounded-cycle phases.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/arithmetic/RESIDUE_CIRCUITS.md",
+      "git_blob_sha1": "3795693a23e3df7c8e8027f15a695d1050bd3b2e",
+      "file_sha256": "f1e86960d6343ddc05311941ac6ac0af948df24e5e387494d89e36cc80cecaa2",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/arithmetic/RESIDUE_CIRCUITS.md",
+      "scope": "Residue-balanced sparse additive relations on bounded cycles.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/arithmetic/SPATIAL_WINDOWS.md",
+      "git_blob_sha1": "e98d4b188cf15ed1dbc103812ec1a0c4f2fe43d5",
+      "file_sha256": "88abb9e5d4ff3f7d57f87bea13fd4ab74f6b78d1d833ca8a18c6e9ac271a48f4",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/arithmetic/SPATIAL_WINDOWS.md",
+      "scope": "Digit-position windows on bounded cycles.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/boundary/ORDINARY_RENEWAL.md",
+      "git_blob_sha1": "8327928fd8cf3087f6062f917dbe60f3cb294f58",
+      "file_sha256": "1592843238a5311f9eca6543959024b62d95960980ff9cb71ebe2505c9875d5a",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/boundary/ORDINARY_RENEWAL.md",
+      "scope": "Growing physical windows for sampled ordinary members of a fixed escaping basin.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/boundary/TRACE_PROFILE.md",
+      "git_blob_sha1": "60c3da7cab2e4e3d15e6e64d7231524059ee4355",
+      "file_sha256": "a6deb292299e32e9e961ba468c00469bab710b86682e0e63ffb4a84193268b2c",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/boundary/TRACE_PROFILE.md",
+      "scope": "Macroscopic moving-target trace conditional on named density and trace interfaces.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/global/POSTERIOR.md",
+      "git_blob_sha1": "a12f232ae63b2f01cb3b1ee525158f27a934d03c",
+      "file_sha256": "221816fad60712f589565aa27d917b7c276e2a2db4e524f995e0f96ad31ec1ab",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/global/POSTERIOR.md",
+      "scope": "Source-specific moving-target likelihood and aggregate signed fixed-point control.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "late_pr193_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "path": "research/astra-unconventional-20261126/global/TRANSVERSE.md",
+      "git_blob_sha1": "39c8e548a83be176c24e5a5b14258635c7c8fe91",
+      "file_sha256": "6a773ca7b600f58177d4379dd17a6f6e6630e93367b4629c38e81a5621d52a34",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/23b7d326a43feb21a827a9024fc24eb10d944338/research/astra-unconventional-20261126/global/TRANSVERSE.md",
+      "scope": "Transverse fiber measure and zeta summation of ordinary side descendants at powers greater than one.",
+      "consumed_or_compared_in": [
+        "LATE_PR193_REVIEW.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "4cc06e7d8fdec923eed73a26b1e9d680c9f701d1",
+      "path": "research/astra-multiple-attacks-20261125/synthesis/README.md",
+      "git_blob_sha1": "8eea3665f16d4bc998e4bae7cf049996f3f0adb3",
+      "file_sha256": "ccffb9834b881993c1de23b7f3e3a79f8b4b860e1c99669f989df694051d3791",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/4cc06e7d8fdec923eed73a26b1e9d680c9f701d1/research/astra-multiple-attacks-20261125/synthesis/README.md",
+      "scope": "Whole-ray basin loss and entry-index counting. Individual marked vertices in the new elementary gain estimate use their own proof.",
+      "consumed_or_compared_in": [
+        "ENTRY_EDGE_GAINS.md"
+      ]
+    },
+    {
+      "source_type": "stronger_prior_written_theorem",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "5cf2ea9dda23470b600a72a2fab20d929f668e5d",
+      "path": "research/astra-unconventional-20261126/arithmetic/MOVING_CENTERS.md",
+      "git_blob_sha1": "2dfdec22d06aa60728ef366e5fb750953b4bc331",
+      "file_sha256": "4a6756e7f51a2876d8af27ffe4c14d07b1e8ae5c3a0c948e3182faa92b0365d5",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/5cf2ea9dda23470b600a72a2fab20d929f668e5d/research/astra-unconventional-20261126/arithmetic/MOVING_CENTERS.md",
+      "scope": "Prime-to-six cost for a single difference, implying the fixed-form two-variable bound for unequal displacements. The packet gives an independent derivation.",
+      "consumed_or_compared_in": [
+        "FORCED_CLOSINGS.md",
+        "PRECISION.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "5cf2ea9dda23470b600a72a2fab20d929f668e5d",
+      "path": "research/astra-unconventional-20261126/boundary/TILTED_TRACE.md",
+      "git_blob_sha1": "f0e9415cc883f883b1cb9e679fa06a4321dfc88a",
+      "file_sha256": "4ce71a6d1277067cb01a8d12c7f8339c15620815c1e994be2de6249fd81199df",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/5cf2ea9dda23470b600a72a2fab20d929f668e5d/research/astra-unconventional-20261126/boundary/TILTED_TRACE.md",
+      "scope": "Equations (7)–(9) on tilted trace, corrected heights and exponent above one.",
+      "consumed_or_compared_in": [
+        "ENTRY_EDGE_GAINS.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "7270321fc774ba4bc92a4e0e58cdf8f7f7d2b131",
+      "path": "research/least-counterexample-global/claims/L-6505-adelic-affine-plane-saturation.md",
+      "git_blob_sha1": "2d3e209cef77855786e0601869d50490c274dc41",
+      "file_sha256": "f0ca99bba56cd4908e687f3d4667133f22052cf8a83f52b38ee25149cd2862b4",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/7270321fc774ba4bc92a4e0e58cdf8f7f7d2b131/research/least-counterexample-global/claims/L-6505-adelic-affine-plane-saturation.md",
+      "scope": "Earlier affine-plane saturation. The present fixed-source plane exclusion uses different coefficients.",
+      "consumed_or_compared_in": [
+        "RENORMALIZED_REAL.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "881f940d4278a3409789c7d315d24a3ff2382d15",
+      "path": "research/astra-global-closure-20261124/round6/arithmetic/README.md",
+      "git_blob_sha1": "8d5706df05b8baee74796fee1411a35f96a7eb4b",
+      "file_sha256": "d78e56fdbe4574b786815e8aeb7865423cf1856e03f8f457cfe14e330f0d42b6",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/881f940d4278a3409789c7d315d24a3ff2382d15/research/astra-global-closure-20261124/round6/arithmetic/README.md",
+      "scope": "Single-source initial-prefix closing estimates.",
+      "consumed_or_compared_in": [
+        "FORCED_CLOSINGS.md"
+      ]
+    },
+    {
+      "source_type": "mixed",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "path": "research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "git_blob_sha1": "1fde22a7485251a9badad2e6e7ab6183397a4887",
+      "file_sha256": "c92c6736011df30adf404b886da75f8a88a4688b2af0a99c6e2a28f9d37ae5a2",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/94ce06ccbd312ccd0ce4450b567cc514a2f0b54a/research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "scope": "Sections 2.1–2.3 anticipate the finite bounded-overlap argument, now reproved for equal-length blocks. The bounded-gap real-error estimate is an input only to the stated bounded-record corollary in RENORMALIZED_REAL.md.",
+      "consumed_or_compared_in": [
+        "FINITE_RECORD_POPULATION.md",
+        "RENORMALIZED_REAL.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "a1379492dbaae85e0d16662b41ccc7176ab3c66e",
+      "path": "research/astra-global-synthesis-20261124/section/proof.md",
+      "git_blob_sha1": "400f2543b2a0f341675370443b68b8284b6840a2",
+      "file_sha256": "cbe95e8adf39ccf90253573005350260ee6ea0d67cb10c206108cbb624c59a02",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/a1379492dbaae85e0d16662b41ccc7176ab3c66e/research/astra-global-synthesis-20261124/section/proof.md",
+      "scope": "Corrected-height construction and synchronous ordinary classes. The elementary gain note also proves the height comparison it uses.",
+      "consumed_or_compared_in": [
+        "ENTRY_EDGE_GAINS.md"
+      ]
+    },
+    {
+      "source_type": "written_input",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "path": "research/astra-three-routes/pass3/FINITE_RECORDS.md",
+      "git_blob_sha1": "163a88adb1a110d6c0a1d76c0eb84905c91670d0",
+      "file_sha256": "82bc394dc7336c43eb38abf13f2bddf837ff227c3d6e85c3bebd3ad327885e3f",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/astra-three-routes/pass3/FINITE_RECORDS.md",
+      "scope": "Finite simple-path reciprocal estimate T-A3-651 used for convergence of the fixed-source real parameter.",
+      "consumed_or_compared_in": [
+        "RENORMALIZED_REAL.md"
+      ]
+    },
+    {
+      "source_type": "prior_work",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+      "git_blob_sha1": "c53362df03f3ce5cb4fd4c4a073bc0a987067e79",
+      "file_sha256": "2c1ee6c0cf07ff78a19ac4aaa70546194c059e1fd98c28b3afd370f05bfc6075",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+      "scope": "Earlier ternary carrier-divisibility comparison for two rank-three checkpoints and pure Mersenne visitors.",
+      "consumed_or_compared_in": [
+        "FIRST_ATTACHMENT_CLOCK.md"
+      ]
+    },
+    {
+      "source_type": "background_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "path": "research/critical-record-rational-rigidity-20261125/README.md",
+      "git_blob_sha1": "57d3e2d9b46f18003de88c00ae853fc7af4aedeb",
+      "file_sha256": "13cef04e38fd5c3b011fc90a4482167bd088c9d6f3c9983a5f678ec888b3a96d",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/592328fecf8ea2cf41736294856d95f890a1ba98/research/critical-record-rational-rigidity-20261125/README.md",
+      "scope": "Critical-record rational rigidity and conditional repetitive-prefix Subspace Theorem route. Algebraicity and repetition are not inferred for an arbitrary ordinary record limit.",
+      "consumed_or_compared_in": [
+        "initial research intake"
+      ]
+    },
+    {
+      "source_type": "background_comparison",
+      "repository": "GettysburgResearch/collatz",
+      "commit": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "path": "research/critical-record-rational-rigidity-20261125/SUBSPACE.md",
+      "git_blob_sha1": "104ce24a574fbdf96ee54ca6126f0e76d38263d9",
+      "file_sha256": "9ae0856bc51d59d0a6cb028aa5ace9f877c0be85346fb1645378d4fb6828af87",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/592328fecf8ea2cf41736294856d95f890a1ba98/research/critical-record-rational-rigidity-20261125/SUBSPACE.md",
+      "scope": "Critical-record rational rigidity and conditional repetitive-prefix Subspace Theorem route. Algebraicity and repetition are not inferred for an arbitrary ordinary record limit.",
+      "consumed_or_compared_in": [
+        "initial research intake"
+      ]
+    }
+  ],
+  "external_theorems_and_antecedents": [
+    {
+      "primary_url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+      "source_type": "classical_written_input",
+      "scope": "Theorem 1.1 and the two-coordinate example on pp. 1–2, supplying the primitive fixed-place Subspace Theorem and its finite rational exceptional subspaces.",
+      "consumed_or_compared_in": [
+        "PRECISION.md",
+        "FORCED_CLOSINGS.md",
+        "RENORMALIZED_REAL.md"
+      ],
+      "author": "Jan-Hendrik Evertse",
+      "title": "The p-adic Subspace Theorem",
+      "version": "May 2011",
+      "attribution": "Schlickewei 1977, as stated by Evertse.",
+      "original_article_doi": "https://doi.org/10.1007/BF01220404"
+    },
+    {
+      "primary_url": "https://library.slmath.org/books/Book37/files/vojta.pdf",
+      "source_type": "classical_written_input",
+      "scope": "Theorem 7.7 and the definition of coherent moving coefficient fields on pp. 553–554. Used with sub-height moving algebraic hyperplanes.",
+      "consumed_or_compared_in": [
+        "PRECISION.md",
+        "RENORMALIZED_REAL.md"
+      ],
+      "author": "Paul Vojta",
+      "title": "Nevanlinna Theory and Diophantine Approximation",
+      "volume": "MSRI Publications 37, 1999"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/28",
+      "source_type": "optional_source_qualified",
+      "scope": "Theorem A (P1), giving a counted auxiliary-exponent improvement for fixed and slowly growing marked generation radii. The elementary radius 1/512 and the fresh-ascent population use separate self-contained estimates.",
+      "consumed_or_compared_in": [
+        "ENTRY_EDGE_GAINS.md"
+      ],
+      "paper_number": 28,
+      "version": "v3",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/102",
+      "source_type": "optional_source_qualified",
+      "scope": "Theorem 1, uniform upper bound for any set of first odd landings at or below M, including the separate failure event, with W_Z sampled among odd integers in (Z/4,Z]. Used in the convergence part of the threshold supplement.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "paper_number": 102,
+      "version": "v1",
+      "title": "Power bounds for first Collatz landings and moments of ancestor labels",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/174",
+      "source_type": "prior_work",
+      "scope": "Theorem 5 on concentration in a fixed number of rise intervals and falls. Compared with the joint directed two-place bound for actual marked runs.",
+      "consumed_or_compared_in": [
+        "PRECISION.md"
+      ],
+      "paper_number": 174,
+      "version": "v1",
+      "title": "How rising steps are distributed in odd Collatz trajectories",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/178",
+      "source_type": "prior_work",
+      "scope": "Theorem 4 and Section 7 on all-odd target cylinders, signed first visits and the rising protection threshold. New absolute 3/8 controls have their own proof and finite census.",
+      "consumed_or_compared_in": [
+        "FRESH_ASCENT_BARRIER.md"
+      ],
+      "paper_number": 178,
+      "version": "v1",
+      "title": "The first meeting with a smaller Collatz orbit",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/179",
+      "source_type": "optional_source_qualified",
+      "scope": "Appendix A.4–A.5, especially (A.8), states the every-fixed-target natural-density Gaussian law and the positivity interface. The supplement uses this theorem statement as an input.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "paper_number": 179,
+      "version": "v1",
+      "title": "Protected first meetings at gap four in the shortcut Collatz map",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/191",
+      "source_type": "optional_source_qualified",
+      "scope": "Theorem 1, joint shortcut and standard-clock concentration at each first threshold in a translated interval. Used in the convergence part of the threshold supplement.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "paper_number": 191,
+      "version": "v2",
+      "title": "Collatz first passage in translated intervals",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/207",
+      "source_type": "prior_work",
+      "scope": "Section 1 already selects a minimizer of corrected height on one escaping component.",
+      "consumed_or_compared_in": [
+        "ENTRY_EDGE_GAINS.md"
+      ],
+      "paper_number": 207,
+      "version": "v1",
+      "title": "Smaller Collatz visitors at the original deadline",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/215",
+      "source_type": "optional_source_qualified",
+      "scope": "Section 6.3, counted equal-grade synchronization at offsets controlled by the prescribed prefix. Used only in the last moderate-deviation lower bound of the threshold supplement.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "paper_number": 215,
+      "version": "v1",
+      "title": "High excursions and prescribed attachment patterns in capped Collatz sink trees",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://rstation.ai/problems/collatz/papers/219",
+      "source_type": "prior_work",
+      "scope": "Section 3 on late ordinary visits. The new population proof uses its own elementary interval image bound.",
+      "consumed_or_compared_in": [
+        "FRESH_ASCENT_BARRIER.md"
+      ],
+      "paper_number": 219,
+      "version": "v1",
+      "title": "Finding remote Collatz visitors before first descent",
+      "author": "Lyapunov Weaver"
+    },
+    {
+      "primary_url": "https://doi.org/10.5281/zenodo.23252395",
+      "source_type": "originating_source_not_independently_verified",
+      "scope": "Section 1.3, attributed origin of the all-target hitting-time Gaussian law. Its statement was checked in Paper 179 Appendix (A.8), not independently in this preprint.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "author": "Leen",
+      "title": "Brownian motion in Collatz orbits"
+    },
+    {
+      "primary_url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "source_type": "optional_source_qualified",
+      "scope": "Author release on positive lower natural density for the predecessors of every fixed ternary-unit target. Used together with fixed-target density existence in the Gaussian input.",
+      "consumed_or_compared_in": [
+        "ENTRY_THRESHOLD.md"
+      ],
+      "author": "Lech Mazur",
+      "title": "Positive Lower Density of Collatz Predecessors"
+    }
+  ],
+  "late_pr193_comparison": {
+    "base_commit": "5cf2ea9dda23470b600a72a2fab20d929f668e5d",
+    "head_commit": "23b7d326a43feb21a827a9024fc24eb10d944338",
+    "primary_url": "https://github.com/GettysburgResearch/collatz/compare/5cf2ea9dda23470b600a72a2fab20d929f668e5d...23b7d326a43feb21a827a9024fc24eb10d944338",
+    "review_artifact": "LATE_PR193_REVIEW.md",
+    "reviewed_as": "Source comparison only. No dependent upstream build was needed."
+  },
+  "other_local_dependencies": {
+    "finite_computation": "The three exact controls use only the Python standard library. The 3/8 identification also uses the exact finite census in check_fresh_ascent.py.",
+    "self_contained_written_results": [
+      "The 1/512 marked generation radius in ENTRY_EDGE_GAINS.md",
+      "The signed exact cap and varying-source full-tree population in FRESH_ASCENT_BARRIER.md, together with its explicit finite census",
+      "The clock bound and sharp later-phase example in FIRST_ATTACHMENT_CLOCK.md",
+      "The finite equal-length-block population construction in FINITE_RECORD_POPULATION.md. Its separate exclusion of small denominators also invokes the closing-size bounds in FORCED_CLOSINGS.md."
+    ],
+    "diophantine_scope": "The classical fixed- and moving-place theorems enter only the written deductions. FORCED_CLOSINGS.md supplies the Diophantine closing-size bounds used in the denominator filter of FINITE_RECORD_POPULATION.md. Algebraicity premises on the corrected real parameter remain explicit."
+  }
+}

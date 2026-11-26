@@ -1,0 +1,24 @@
+{
+  "scope": "Finite exploratory enumeration only; no infinite entropy or Collatz counterexample claim",
+  "source": "research/ayh-resource-reset-20261124/unconventional/cross_prefix.cpp",
+  "source_sha256": "6b953cfe579b8d84e14b20e658f0da17bd2b0e06c1c0708d37dbcc99316c6238",
+  "compiler_command": [
+    "g++",
+    "-std=c++20",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "cross_prefix.cpp",
+    "-o",
+    "cross_prefix_final"
+  ],
+  "execution_args": [
+    "43",
+    "3"
+  ],
+  "log": "cross-prefix-corrected-h3-43.log",
+  "log_sha256": "929b692cf526905b84a0c2d81649b77893f7a61d76d884de2d18edb076caff3d",
+  "expected_final_count": 1726884,
+  "correction": "Initial root early-merger mask added after independent comparison exposed its omission; only corrected output is part of this packet."
+}

@@ -1,0 +1,192 @@
+{
+  "public_theorems": 21,
+  "source": "lean-build.log",
+  "audit": [
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.bad_odd_excess",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.good_odd_excess",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.color_discordant_ballistic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.bad_window_height_ratio",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.discordant_future_minimum_windows",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.good_exact_grade",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "BallisticColor",
+      "declaration": "CollatzShell.TernaryHead.ballisticWalk_laws",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "DiscordantPliss",
+      "declaration": "CollatzShell.TernaryHead.discordant_mark_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "DiscordantPliss",
+      "declaration": "CollatzShell.TernaryHead.discordant_uniform_mark_allowance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FirstPassageMarks",
+      "declaration": "CollatzShell.FirstPassageMarks.entrance_band",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FirstPassageMarks",
+      "declaration": "CollatzShell.FirstPassageMarks.entrance_source_width",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FirstPassageMarks",
+      "declaration": "CollatzShell.FirstPassageMarks.entrance_fiber_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ForwardPliss",
+      "declaration": "CollatzForwardPliss.tail_minimum_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ForwardPliss",
+      "declaration": "CollatzForwardPliss.forward_record_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ForwardPliss",
+      "declaration": "CollatzForwardPliss.parity_excess_record_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PatchPairCounting",
+      "declaration": "CollatzPatchPairs.binary_offset_normalization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PatchPairCounting",
+      "declaration": "CollatzPatchPairs.mixed_progression_lift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PatchPairCounting",
+      "declaration": "CollatzPatchPairs.cross_pairs_le_failed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PatchPairCounting",
+      "declaration": "CollatzPatchPairs.rotation_average_bridge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PostDescentFibers",
+      "declaration": "CollatzShell.PostDescentFibers.scaled_orbit_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PostDescentFibers",
+      "declaration": "CollatzShell.PostDescentFibers.same_endpoint_source_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

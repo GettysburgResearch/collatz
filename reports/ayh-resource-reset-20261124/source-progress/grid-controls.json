@@ -1,0 +1,253 @@
+{
+  "counts": {
+    "base_windows": 168,
+    "clean_graphs": 944,
+    "extra_merger_graphs": 734,
+    "half_obstructions": 72,
+    "literal_graphs": 1680
+  },
+  "exact_labelled_grids": [
+    {
+      "blocks": 16,
+      "deficiency_histogram": {
+        "2": 11,
+        "3": 5
+      },
+      "h": 6,
+      "r": 2,
+      "stride": 1
+    },
+    {
+      "blocks": 16,
+      "deficiency_histogram": {
+        "3": 16
+      },
+      "h": 6,
+      "r": 2,
+      "stride": 3
+    },
+    {
+      "blocks": 16,
+      "deficiency_histogram": {
+        "3": 16
+      },
+      "h": 6,
+      "r": 2,
+      "stride": 27
+    },
+    {
+      "blocks": 16,
+      "deficiency_histogram": {
+        "3": 16
+      },
+      "h": 6,
+      "r": 2,
+      "stride": 243
+    },
+    {
+      "blocks": 8,
+      "deficiency_histogram": {
+        "5": 4,
+        "6": 4
+      },
+      "h": 6,
+      "r": 3,
+      "stride": 1
+    },
+    {
+      "blocks": 8,
+      "deficiency_histogram": {
+        "6": 1,
+        "7": 7
+      },
+      "h": 6,
+      "r": 3,
+      "stride": 3
+    },
+    {
+      "blocks": 8,
+      "deficiency_histogram": {
+        "7": 8
+      },
+      "h": 6,
+      "r": 3,
+      "stride": 27
+    },
+    {
+      "blocks": 8,
+      "deficiency_histogram": {
+        "7": 8
+      },
+      "h": 6,
+      "r": 3,
+      "stride": 243
+    },
+    {
+      "blocks": 128,
+      "deficiency_histogram": {
+        "1": 12,
+        "2": 97,
+        "3": 19
+      },
+      "h": 9,
+      "r": 2,
+      "stride": 1
+    },
+    {
+      "blocks": 128,
+      "deficiency_histogram": {
+        "2": 24,
+        "3": 104
+      },
+      "h": 9,
+      "r": 2,
+      "stride": 3
+    },
+    {
+      "blocks": 128,
+      "deficiency_histogram": {
+        "3": 128
+      },
+      "h": 9,
+      "r": 2,
+      "stride": 27
+    },
+    {
+      "blocks": 128,
+      "deficiency_histogram": {
+        "3": 128
+      },
+      "h": 9,
+      "r": 2,
+      "stride": 243
+    },
+    {
+      "blocks": 64,
+      "deficiency_histogram": {
+        "3": 3,
+        "4": 1,
+        "5": 53,
+        "6": 7
+      },
+      "h": 9,
+      "r": 3,
+      "stride": 1
+    },
+    {
+      "blocks": 64,
+      "deficiency_histogram": {
+        "5": 3,
+        "6": 36,
+        "7": 25
+      },
+      "h": 9,
+      "r": 3,
+      "stride": 3
+    },
+    {
+      "blocks": 64,
+      "deficiency_histogram": {
+        "6": 1,
+        "7": 63
+      },
+      "h": 9,
+      "r": 3,
+      "stride": 27
+    },
+    {
+      "blocks": 64,
+      "deficiency_histogram": {
+        "7": 64
+      },
+      "h": 9,
+      "r": 3,
+      "stride": 243
+    },
+    {
+      "blocks": 1024,
+      "deficiency_histogram": {
+        "0": 8,
+        "1": 161,
+        "2": 735,
+        "3": 120
+      },
+      "h": 12,
+      "r": 2,
+      "stride": 1
+    },
+    {
+      "blocks": 1024,
+      "deficiency_histogram": {
+        "1": 26,
+        "2": 313,
+        "3": 685
+      },
+      "h": 12,
+      "r": 2,
+      "stride": 3
+    },
+    {
+      "blocks": 1024,
+      "deficiency_histogram": {
+        "2": 49,
+        "3": 975
+      },
+      "h": 12,
+      "r": 2,
+      "stride": 27
+    },
+    {
+      "blocks": 1024,
+      "deficiency_histogram": {
+        "3": 1024
+      },
+      "h": 12,
+      "r": 2,
+      "stride": 243
+    },
+    {
+      "blocks": 512,
+      "deficiency_histogram": {
+        "2": 8,
+        "3": 41,
+        "4": 55,
+        "5": 387,
+        "6": 21
+      },
+      "h": 12,
+      "r": 3,
+      "stride": 1
+    },
+    {
+      "blocks": 512,
+      "deficiency_histogram": {
+        "4": 8,
+        "5": 105,
+        "6": 291,
+        "7": 108
+      },
+      "h": 12,
+      "r": 3,
+      "stride": 3
+    },
+    {
+      "blocks": 512,
+      "deficiency_histogram": {
+        "6": 70,
+        "7": 442
+      },
+      "h": 12,
+      "r": 3,
+      "stride": 27
+    },
+    {
+      "blocks": 512,
+      "deficiency_histogram": {
+        "7": 512
+      },
+      "h": 12,
+      "r": 3,
+      "stride": 243
+    }
+  ]
+}

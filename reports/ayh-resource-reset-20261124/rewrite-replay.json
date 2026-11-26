@@ -1,0 +1,491 @@
+{
+  "status": "passed",
+  "scope": "two literal finite witnesses; not Collatz",
+  "certificates": [
+    {
+      "source": "cbabbd",
+      "target": "ceababbd",
+      "raw_rewrites": 29,
+      "shortcut_path": [
+        27,
+        41,
+        62,
+        31,
+        47,
+        71,
+        107
+      ],
+      "rule_counts": [
+        1,
+        5,
+        1,
+        3,
+        4,
+        1,
+        1,
+        9,
+        1,
+        1,
+        2
+      ],
+      "trace": [
+        {
+          "clock": 0,
+          "position": 4,
+          "rule": 1,
+          "before": "cbabbd",
+          "after": "cbabgd"
+        },
+        {
+          "clock": 1,
+          "position": 3,
+          "rule": 7,
+          "before": "cbabgd",
+          "after": "cbagbd"
+        },
+        {
+          "clock": 2,
+          "position": 2,
+          "rule": 4,
+          "before": "cbagbd",
+          "after": "cbfabd"
+        },
+        {
+          "clock": 3,
+          "position": 1,
+          "rule": 6,
+          "before": "cbfabd",
+          "after": "cgaabd"
+        },
+        {
+          "clock": 4,
+          "position": 0,
+          "rule": 10,
+          "before": "cgaabd",
+          "after": "cabaabd"
+        },
+        {
+          "clock": 5,
+          "position": 5,
+          "rule": 1,
+          "before": "cabaabd",
+          "after": "cabaagd"
+        },
+        {
+          "clock": 6,
+          "position": 4,
+          "rule": 4,
+          "before": "cabaagd",
+          "after": "cabafad"
+        },
+        {
+          "clock": 7,
+          "position": 3,
+          "rule": 3,
+          "before": "cabafad",
+          "after": "cabebad"
+        },
+        {
+          "clock": 8,
+          "position": 2,
+          "rule": 5,
+          "before": "cabebad",
+          "after": "cafbbad"
+        },
+        {
+          "clock": 9,
+          "position": 1,
+          "rule": 3,
+          "before": "cafbbad",
+          "after": "cebbbad"
+        },
+        {
+          "clock": 10,
+          "position": 0,
+          "rule": 8,
+          "before": "cebbbad",
+          "after": "cbbbbad"
+        },
+        {
+          "clock": 11,
+          "position": 5,
+          "rule": 0,
+          "before": "cbbbbad",
+          "after": "cbbbbd"
+        },
+        {
+          "clock": 12,
+          "position": 4,
+          "rule": 1,
+          "before": "cbbbbd",
+          "after": "cbbbgd"
+        },
+        {
+          "clock": 13,
+          "position": 3,
+          "rule": 7,
+          "before": "cbbbgd",
+          "after": "cbbgbd"
+        },
+        {
+          "clock": 14,
+          "position": 2,
+          "rule": 7,
+          "before": "cbbgbd",
+          "after": "cbgbbd"
+        },
+        {
+          "clock": 15,
+          "position": 1,
+          "rule": 7,
+          "before": "cbgbbd",
+          "after": "cgbbbd"
+        },
+        {
+          "clock": 16,
+          "position": 0,
+          "rule": 10,
+          "before": "cgbbbd",
+          "after": "cabbbbd"
+        },
+        {
+          "clock": 17,
+          "position": 5,
+          "rule": 1,
+          "before": "cabbbbd",
+          "after": "cabbbgd"
+        },
+        {
+          "clock": 18,
+          "position": 4,
+          "rule": 7,
+          "before": "cabbbgd",
+          "after": "cabbgbd"
+        },
+        {
+          "clock": 19,
+          "position": 3,
+          "rule": 7,
+          "before": "cabbgbd",
+          "after": "cabgbbd"
+        },
+        {
+          "clock": 20,
+          "position": 2,
+          "rule": 7,
+          "before": "cabgbbd",
+          "after": "cagbbbd"
+        },
+        {
+          "clock": 21,
+          "position": 1,
+          "rule": 4,
+          "before": "cagbbbd",
+          "after": "cfabbbd"
+        },
+        {
+          "clock": 22,
+          "position": 0,
+          "rule": 9,
+          "before": "cfabbbd",
+          "after": "caaabbbd"
+        },
+        {
+          "clock": 23,
+          "position": 6,
+          "rule": 1,
+          "before": "caaabbbd",
+          "after": "caaabbgd"
+        },
+        {
+          "clock": 24,
+          "position": 5,
+          "rule": 7,
+          "before": "caaabbgd",
+          "after": "caaabgbd"
+        },
+        {
+          "clock": 25,
+          "position": 4,
+          "rule": 7,
+          "before": "caaabgbd",
+          "after": "caaagbbd"
+        },
+        {
+          "clock": 26,
+          "position": 3,
+          "rule": 4,
+          "before": "caaagbbd",
+          "after": "caafabbd"
+        },
+        {
+          "clock": 27,
+          "position": 2,
+          "rule": 3,
+          "before": "caafabbd",
+          "after": "caebabbd"
+        },
+        {
+          "clock": 28,
+          "position": 1,
+          "rule": 2,
+          "before": "caebabbd",
+          "after": "ceababbd"
+        }
+      ]
+    },
+    {
+      "source": "cabaabd",
+      "target": "cabaaaabd",
+      "raw_rewrites": 32,
+      "shortcut_path": [
+        41,
+        62,
+        31,
+        47,
+        71,
+        107,
+        161
+      ],
+      "rule_counts": [
+        1,
+        5,
+        1,
+        3,
+        5,
+        1,
+        2,
+        9,
+        2,
+        1,
+        2
+      ],
+      "trace": [
+        {
+          "clock": 0,
+          "position": 5,
+          "rule": 1,
+          "before": "cabaabd",
+          "after": "cabaagd"
+        },
+        {
+          "clock": 1,
+          "position": 4,
+          "rule": 4,
+          "before": "cabaagd",
+          "after": "cabafad"
+        },
+        {
+          "clock": 2,
+          "position": 3,
+          "rule": 3,
+          "before": "cabafad",
+          "after": "cabebad"
+        },
+        {
+          "clock": 3,
+          "position": 2,
+          "rule": 5,
+          "before": "cabebad",
+          "after": "cafbbad"
+        },
+        {
+          "clock": 4,
+          "position": 1,
+          "rule": 3,
+          "before": "cafbbad",
+          "after": "cebbbad"
+        },
+        {
+          "clock": 5,
+          "position": 0,
+          "rule": 8,
+          "before": "cebbbad",
+          "after": "cbbbbad"
+        },
+        {
+          "clock": 6,
+          "position": 5,
+          "rule": 0,
+          "before": "cbbbbad",
+          "after": "cbbbbd"
+        },
+        {
+          "clock": 7,
+          "position": 4,
+          "rule": 1,
+          "before": "cbbbbd",
+          "after": "cbbbgd"
+        },
+        {
+          "clock": 8,
+          "position": 3,
+          "rule": 7,
+          "before": "cbbbgd",
+          "after": "cbbgbd"
+        },
+        {
+          "clock": 9,
+          "position": 2,
+          "rule": 7,
+          "before": "cbbgbd",
+          "after": "cbgbbd"
+        },
+        {
+          "clock": 10,
+          "position": 1,
+          "rule": 7,
+          "before": "cbgbbd",
+          "after": "cgbbbd"
+        },
+        {
+          "clock": 11,
+          "position": 0,
+          "rule": 10,
+          "before": "cgbbbd",
+          "after": "cabbbbd"
+        },
+        {
+          "clock": 12,
+          "position": 5,
+          "rule": 1,
+          "before": "cabbbbd",
+          "after": "cabbbgd"
+        },
+        {
+          "clock": 13,
+          "position": 4,
+          "rule": 7,
+          "before": "cabbbgd",
+          "after": "cabbgbd"
+        },
+        {
+          "clock": 14,
+          "position": 3,
+          "rule": 7,
+          "before": "cabbgbd",
+          "after": "cabgbbd"
+        },
+        {
+          "clock": 15,
+          "position": 2,
+          "rule": 7,
+          "before": "cabgbbd",
+          "after": "cagbbbd"
+        },
+        {
+          "clock": 16,
+          "position": 1,
+          "rule": 4,
+          "before": "cagbbbd",
+          "after": "cfabbbd"
+        },
+        {
+          "clock": 17,
+          "position": 0,
+          "rule": 9,
+          "before": "cfabbbd",
+          "after": "caaabbbd"
+        },
+        {
+          "clock": 18,
+          "position": 6,
+          "rule": 1,
+          "before": "caaabbbd",
+          "after": "caaabbgd"
+        },
+        {
+          "clock": 19,
+          "position": 5,
+          "rule": 7,
+          "before": "caaabbgd",
+          "after": "caaabgbd"
+        },
+        {
+          "clock": 20,
+          "position": 4,
+          "rule": 7,
+          "before": "caaabgbd",
+          "after": "caaagbbd"
+        },
+        {
+          "clock": 21,
+          "position": 3,
+          "rule": 4,
+          "before": "caaagbbd",
+          "after": "caafabbd"
+        },
+        {
+          "clock": 22,
+          "position": 2,
+          "rule": 3,
+          "before": "caafabbd",
+          "after": "caebabbd"
+        },
+        {
+          "clock": 23,
+          "position": 1,
+          "rule": 2,
+          "before": "caebabbd",
+          "after": "ceababbd"
+        },
+        {
+          "clock": 24,
+          "position": 0,
+          "rule": 8,
+          "before": "ceababbd",
+          "after": "cbababbd"
+        },
+        {
+          "clock": 25,
+          "position": 6,
+          "rule": 1,
+          "before": "cbababbd",
+          "after": "cbababgd"
+        },
+        {
+          "clock": 26,
+          "position": 5,
+          "rule": 7,
+          "before": "cbababgd",
+          "after": "cbabagbd"
+        },
+        {
+          "clock": 27,
+          "position": 4,
+          "rule": 4,
+          "before": "cbabagbd",
+          "after": "cbabfabd"
+        },
+        {
+          "clock": 28,
+          "position": 3,
+          "rule": 6,
+          "before": "cbabfabd",
+          "after": "cbagaabd"
+        },
+        {
+          "clock": 29,
+          "position": 2,
+          "rule": 4,
+          "before": "cbagaabd",
+          "after": "cbfaaabd"
+        },
+        {
+          "clock": 30,
+          "position": 1,
+          "rule": 6,
+          "before": "cbfaaabd",
+          "after": "cgaaaabd"
+        },
+        {
+          "clock": 31,
+          "position": 0,
+          "rule": 10,
+          "before": "cgaaaabd",
+          "after": "cabaaaabd"
+        }
+      ]
+    }
+  ]
+}

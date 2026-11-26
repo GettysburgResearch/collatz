@@ -1,0 +1,47 @@
+# Coordinator reconstruction of the crossing checkpoint
+
+**Scope.** These are internal mathematical reviews of the files frozen in `source-hashes.json`, relative to the preceding PR 197 head `6eb986b0ce0b1836a356474d25d709ed4e948b67`. They do not certify later revisions, neighboring PR statements, or imported recent probability results. The coordinator read the complete new manuscripts and reconstructed the arguments below. The global convergence conclusion remains conditional on an unproved estimate.
+
+## Four-suffix routing and whole-series comparison
+
+**VERIFIED WITH FIXES at the written inference level, given the pinned PR 146 actual-label variation inequality.** The construction gives positive parents and the same physical deadline on both arms. Powers of two modulo 27 provide all required phases for ternary units. The case p=0 imposes no unit restriction. Uniform bounded waiting in an irrational circle rotation gives a finite dilation menu, so the source comparison retains a bounded multiplicity and a bounded change of scale.
+
+At a multiple of 81 the recursive tripling term has coefficient exactly 1/81; constants multiply only the nonrecursive local head sum. The seven shifted octaves cover each 81-annulus. The adjacent-variation chain bounds a whole head row by a cumulative actual tripling-defect count. These two geometric sums give (q+1)81^(-q), including the finitely many levels above the initial row. Summability and every fixed sublinear power rate pass through this summable kernel.
+
+The only mathematical convention repaired during integration is the row j=0: the positive shortcut map has no positive parent for its child 7. The new equivalence explicitly sets a0=A0=0 and defines actual counts only for j>=1. Its bounded bottom term already absorbs this change. A duplicated punctuation mark in the routing note was removed. `draft-provenance.json` records both edits; earlier checkpoints are unchanged.
+
+For the periodic refinement, the same irrational rotation acts on a circle of length M. Each of the four routes reaches its own prescribed residue class of levels and its own interior arc in uniformly bounded time. A fixed lower bound on the exponent enforces any fixed number of initial even steps. All constants may depend on M,Q and the arcs. The proof does not permit them to grow with the row. Enlarging the restricted population by dropping the optional parent-residue condition preserves both inequalities needed for summability equivalence.
+
+## Global Lean consumer and prior certificate
+
+The new consumer derives full tripling invariance from the four multiplier comparisons, uses three exact steps from 3(8u+7) to 9u+8, and invokes PR 193's global directed-return certificate. Its general type-valued label theorem implies the stated equivalence for the actual basin of one. No density assumption or probability theorem occurs in that implication. Its multiplier hypotheses remain explicit; the theorem does not discharge them.
+
+The copied `SingleReturn.lean` matches Git blob `797e2629e931551cc5913acbe7ef314aea489cd2` at the frozen PR 193 head. The coordinator inspected its evaluator, rule soundness, finite-cover soundness, kernel `decide` and strong-induction consumer. The new aggregate build compiles it from source with the new modules. The certificate is credited to PR 193 and is not counted as newly authored work. Exact execution and axiom evidence are in the separate build report.
+
+## Late ordinary-coordinate product and path variation
+
+**VERIFIED at the written inference level under the existing source-qualified pair bound and PR 197 regeneration estimates.** The common coordinate has cell-range exponent 1-2.9(1-log2(3)/2)>.398. A cell still contains exponentially many candidates after fixing the first floor(d/2) original bits. The conjunction of all tests uses fewer than .31d coarse bits. Complete-period covering therefore costs one constant for the whole conjunction, even when its menu depends on the original low-bit residue.
+
+At each late time, replacing the coarse fractional part costs at most one. Conditioning on the coarse lower bits fixes the target suffix modulo 81 and leaves an odd-affine parent in the next quotient. The selected finite nonfusion tests occupy disjoint fresh blocks of this one coordinate. They upper-bound true events without imposing an endpoint restart law. The gap convolution gives the stated factorial moment and its square-root-p prefactor. The old good source sample supplies a positive frequency of marked clocks on every sufficiently long subinterval: low-grade starts cost only the single pathwise occupation exception.
+
+For total variation, choosing p proportional to D/W^2 at a positive hit frequency gives an exponential tail. The number of integer paths with total variation at most S is bounded by O(d) times 2^S times binomial(D+S,S). Its entropy is below the tail rate for S<=delta D and small fixed delta. This permits the post hoc choice of the witnessing heads while still proving a uniform lower variation bound. A diffusive trajectory can satisfy that bound.
+
+## Two-target incidence and its centered neighbors
+
+**VERIFIED at the written inference level under the same inputs and the stated classical logarithm separation.** The singleton-track cap removes only a small fraction of the second window when the central transverse band is narrow enough. Each original good source gives order d^2 ordered time pairs. Both target equations use the same original parent. Exponentially small target errors and polynomial two-logarithm separation give a unique relative clock and exponent for each target pair. The earlier absolute time has O(sqrt(d log d)) choices. At a fixed time its original strip has length O(R/z1), and native failure on that strip contributes 1/sqrt(d). Dividing by Rd^2 gives precisely sqrt(log d)/(z1 d^2).
+
+The midpoint composition changes coordinates at the targets. Fixing z1 modulo 81 times 2^v makes z2 an exact affine function of one ordinary parameter. Running only the first head pair for v steps makes all four relevant slopes odd. With h=.28d the largest-slope residual exponent exceeds .0209d, uniformly in these growing coefficients. It exceeds the .01d shift scale and the quasipolynomial progression threshold. The original interior arc margin absorbs the shifts. Summing relative exceptions over residues cancels their exponentially many classes; only polynomially many row and exponent choices remain. The source multiplicity absorbs those exceptions at arbitrary inverse-power order. The translated pairs preserve actual colors but are not claimed to be outputs of new original trajectories.
+
+## Centered progressions, conditional information and native clocks
+
+**VERIFIED at the written inference level under the stated inputs.** The coordinator independently retrieved Bloom–Sisask Theorem 21 from the publisher. Apply its progression count to the poor centers, not to the entire fiber. Subtracting constant triples and treating the two orientations gives the displayed positive-difference count. Padding residue tiles costs at most (L+2)F. This absolute poor-center loss also works for previously thinned sets, which justifies backwards pruning. At every split the three source values occupy distinct residues modulo 2^(s+2); later moves preserve them. This verifies the distinct leaves and their prescribed split windows.
+
+The local-isolation count uses three finite certificates on one anchor window. Their joint success forces all selected pairs in the window to agree. A union bound and an incidence count suffice; no independence is used. The source of the growing-block estimate is pinned to rStation paper 124 version 1 and retains its SOURCE-QUALIFIED status.
+
+For conditional information, the projected-word likelihood is bounded pointwise by K=J(L+1). Along any fixed predictable exposure policy, the Hellinger-normalized likelihood product is a mean-one martingale, including zero-probability branches and bounded stopping. The likelihood cap yields E exp(sum -log rho)<=sqrt(K); TV^2<=-2 log rho gives the claimed exponential tail. The entropy-chain-rule expectation bound is compatible with it. This controls the conditioned source's past, with no implication about randomness after the record.
+
+Finally, retained terminal scalar intercepts bound every earlier relative error because the normalized intercept sum is increasing. Typical terminal counts and the fiber diameter make these errors exponentially small even at the full native horizon. A cross-meeting inside one fiber at any two native clocks forces equal clocks and aligned formal counts by the logarithm separation. The entire records must then already be counted-fused. A fair moving-step walk starting at grade four stays positive with probability of order h^(-1/2), and the projection losses can be made smaller. The resulting finite-clock obstruction is compatible with universal eventual convergence.
+
+## Remaining inference
+
+The written results impose simultaneous geometric and arithmetic restrictions on the actual two-color remainder. They do not bound its full weighted graph degree or prove summability on the prescribed suffix schedule. The sufficient graph estimate in the scientific README is explicitly open. The recently advertised fixed-target positive-density input is used only to convert a future summability theorem to global convergence; its external formalization was not rebuilt here. The classical .84 criterion uses the published predecessor theorem instead.

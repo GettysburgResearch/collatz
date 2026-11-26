@@ -1,0 +1,96 @@
+{
+  "parent_pr": 197,
+  "parent_head": "2fb1f11c959e35eba875338833d84969222dc089",
+  "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "retrieved": "2026-11-24",
+  "scope": "Frozen inputs and inspection boundaries for the continuation; no blanket certification of listed branches",
+  "lean": {
+    "version": "4.34.1",
+    "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "pr": 197,
+      "head": "2fb1f11c959e35eba875338833d84969222dc089",
+      "path": "research/ayh-resource-reset-20261124/positive-section",
+      "scope": "Six supporting modules freshly compiled; critical set and ordinary predecessor definitions retained"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/PREFIX_COMPRESSION.md",
+        "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+        "research/upper-bit-mergers/THREE_RAY_UPPER.md"
+      ],
+      "scope": "Written finite-grid synchronization input. Our application, residue conditioning, and clock bounds reconstructed; the entire upstream probabilistic proof was not independently rebuilt or formalized"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/THREE_RAY_DENSITY.md"
+      ],
+      "scope": "Earlier tripling limiting-color and irrational-rotation argument read and credited; new proper-arc proof reconstructed directly"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "paths": [
+        "research/literature-closing-20261121/mergers/CONSTRUCTIVE_NORMAL_FORM.md"
+      ],
+      "scope": "Mixed-word grammar and same-rank terminal deletion comparison read; its full Lean suite not imported"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "paths": [
+        "research/upper-bit-mergers/NEGATIVE_FIVE_CHECKPOINT.md"
+      ],
+      "scope": "Two-reference method credited in the auxiliary bounded-merger proof; actual critical construction checked separately"
+    }
+  ],
+  "latest_metadata": [
+    {
+      "pr": 198,
+      "head": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/198",
+      "inspection": "PR metadata and body read; not a line-by-line proof audit or a formal dependency"
+    },
+    {
+      "pr": 196,
+      "head": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/196",
+      "inspection": "PR metadata and body read; not a line-by-line proof audit or a formal dependency"
+    },
+    {
+      "pr": 192,
+      "head": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "title": "Collatz: ordinary descent mergers, source rigidity, and complete cycle denominators",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "inspection": "PR metadata and body read; not a line-by-line proof audit or a formal dependency"
+    }
+  ],
+  "external": [
+    {
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://arxiv.org/html/2105.14697v3",
+      "scope": "Original Yolcu–Aaronson–Heule mixed-base rewriting system; primary source previously inspected"
+    },
+    {
+      "title": "Bounds for the 3x+1 Problem using Difference Inequalities",
+      "url": "https://arxiv.org/html/math/0205002v1",
+      "author_pdf": "https://websites.umich.edu/lagarias/doc/krasikov.pdf",
+      "claim": "Theorem 6.1 and shortcut map/fixed-target count definitions",
+      "scope": "Published exponent 0.84 for every fixed positive target coprime to three; primary theorem inspected, published linear-program calculation not replayed"
+    },
+    {
+      "title": "Repository source-qualified stronger predecessor bound",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/external/mazur-2026/predecessor-x090.md",
+      "scope": "Separate conditional use of exponent 0.901, retaining source-qualified status"
+    }
+  ]
+}

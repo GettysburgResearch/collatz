@@ -1,0 +1,137 @@
+{
+  "schema": "collatz-two-class-axiom-audit/v1",
+  "scope": "All new public theorem declarations, matched to source inventory and successful aggregate build",
+  "declaration_count": 15,
+  "custom_axioms_or_placeholders": false,
+  "declarations": [
+    {
+      "module": "FrontierCoarea",
+      "name": "Collatz.FrontierCoarea.single_dyadic_floor",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FrontierCoarea",
+      "name": "Collatz.FrontierCoarea.total_incidence_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "FrontierCoarea",
+      "name": "Collatz.FrontierCoarea.exists_floor_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "HighGradeShadow",
+      "name": "CollatzShell.HighGradeShadow.parity_numer",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "HighGradeShadow",
+      "name": "CollatzShell.HighGradeShadow.fixed_weight_residue_injective",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "HighGradeShadow",
+      "name": "CollatzShell.HighGradeShadow.oriented_shadow_update",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "KilledEntryContraction",
+      "name": "Collatz.KilledEntryContraction.uniform_weighted_contraction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LargestSlopeProjection",
+      "name": "Collatz.LargestSlopeProjection.endpoint_in_band",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LargestSlopeProjection",
+      "name": "Collatz.LargestSlopeProjection.same_anchor_span",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "LargestSlopeProjection",
+      "name": "Collatz.LargestSlopeProjection.integer_record_census",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PairedSourceShuffle",
+      "name": "CollatzShell.PairedSourceShuffle.lower_fringe",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PairedSourceShuffle",
+      "name": "CollatzShell.PairedSourceShuffle.upper_fringe",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PairedSourceShuffle",
+      "name": "CollatzShell.PairedSourceShuffle.total_fringe",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "PairedSourceShuffle",
+      "name": "CollatzShell.PairedSourceShuffle.sparse_residue_test",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RoundedHeadDescent",
+      "name": "CollatzShell.RoundedHeadDescent.simultaneous_bottom",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

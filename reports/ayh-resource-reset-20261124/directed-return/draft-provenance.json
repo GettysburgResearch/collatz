@@ -1,0 +1,133 @@
+{
+  "schema": "collatz-draft-provenance/v1",
+  "baseline_commit": "b0538639df0ab7edd239281bd897e705160f732c",
+  "workers": [
+    "/root/unit_return_4",
+    "/root/interior_interface_4",
+    "/root/rigidity_bridge_4"
+  ],
+  "worker_model": "gpt-6.2-astra",
+  "root_role": "Independent reconstruction, complete-cylinder checker, reverse17 kernel consumer, fixed-factor refinement, source integration and publication.",
+  "copied_drafts": [
+    {
+      "source_scratch": "attack_interior_interface_4/INTERIOR_GRADE_BUDGET.md",
+      "path": "research/ayh-resource-reset-20261124/directed-return/INTERIOR_GRADE_BUDGET.md",
+      "draft_sha256": "4aadccbbec4372b422bede3964a412604be8a9a5b64baeb50dae11436f9ef0d4",
+      "byte_exact": true,
+      "integrated_sha256": "4aadccbbec4372b422bede3964a412604be8a9a5b64baeb50dae11436f9ef0d4"
+    },
+    {
+      "source_scratch": "attack_interior_interface_4/DELAYED_NATIVE_TIES.md",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DELAYED_NATIVE_TIES.md",
+      "draft_sha256": "0d62f1ef05ec265038fcb6124ab2b614854791803afb3f66ca12ad4fdecc82a7",
+      "byte_exact": true,
+      "integrated_sha256": "0d62f1ef05ec265038fcb6124ab2b614854791803afb3f66ca12ad4fdecc82a7"
+    },
+    {
+      "source_scratch": "attack_interior_interface_4/InteriorGradeBudget.lean",
+      "path": "research/ayh-resource-reset-20261124/directed-return/InteriorGradeBudget.lean",
+      "draft_sha256": "75c897142c995815e81d155d242f37778281e02147c60ea2a375eee8eb12339a",
+      "byte_exact": true,
+      "integrated_sha256": "75c897142c995815e81d155d242f37778281e02147c60ea2a375eee8eb12339a"
+    },
+    {
+      "source_scratch": "attack_rigidity_bridge_4/SELECTED_TRIT_CELLS.md",
+      "path": "research/ayh-resource-reset-20261124/directed-return/SELECTED_TRIT_CELLS.md",
+      "draft_sha256": "4288ae981f46f9e079e60393060da373205303f19330904e88046f9d6fc13e4f",
+      "byte_exact": true,
+      "integrated_sha256": "4288ae981f46f9e079e60393060da373205303f19330904e88046f9d6fc13e4f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/FIXED_TRIT_PATTERNS.md",
+      "source_scratch": "attack_rigidity_bridge_4/FIXED_TRIT_PATTERNS.md",
+      "draft_sha256": "44e942fda19002fd074a84ff200b05bd2665b7059e58707b534716e2b7652902",
+      "byte_exact": true,
+      "integrated_sha256": "44e942fda19002fd074a84ff200b05bd2665b7059e58707b534716e2b7652902"
+    },
+    {
+      "source_scratch": "attack_rigidity_bridge_4/lean_slim/LocalColorCells.lean",
+      "path": "research/ayh-resource-reset-20261124/directed-return/LocalColorCells.lean",
+      "draft_sha256": "16e7b9387b47c7762f7a9c8f226bdf9f8467af8ade697ff3a0cb10ef266d5b7c",
+      "byte_exact": true,
+      "integrated_sha256": "16e7b9387b47c7762f7a9c8f226bdf9f8467af8ade697ff3a0cb10ef266d5b7c"
+    },
+    {
+      "source_scratch": "attack_rigidity_bridge_4/lean_slim/FixedTritFeatures.lean",
+      "path": "research/ayh-resource-reset-20261124/directed-return/FixedTritFeatures.lean",
+      "draft_sha256": "4f493000530303b2e93f6c4a802e920dc66feb9f077eabc4172c6de2b5370554",
+      "byte_exact": true,
+      "integrated_sha256": "4f493000530303b2e93f6c4a802e920dc66feb9f077eabc4172c6de2b5370554"
+    },
+    {
+      "source_scratch": "attack_rigidity_bridge_4/INTERIOR_AND_TIE_REVIEW.md",
+      "path": "reports/ayh-resource-reset-20261124/directed-return/INTERIOR_AND_TIE_REVIEW.md",
+      "draft_sha256": "731fa084e767b25aacf1cd933e8d77c27b8ba5136192bb8160523850cc0522a1",
+      "byte_exact": true,
+      "integrated_sha256": "731fa084e767b25aacf1cd933e8d77c27b8ba5136192bb8160523850cc0522a1"
+    },
+    {
+      "source_scratch": "attack_interior_interface_4/REVIEW_SELECTED_TRIT_CELLS.md",
+      "path": "reports/ayh-resource-reset-20261124/directed-return/SELECTED_TRIT_CELLS_REVIEW.md",
+      "draft_sha256": "539a40d4450406b9b117eb1e61737cd2b739a8b3f5a4d429b3a0c42c13242717",
+      "byte_exact": true,
+      "integrated_sha256": "539a40d4450406b9b117eb1e61737cd2b739a8b3f5a4d429b3a0c42c13242717"
+    },
+    {
+      "source_scratch": "attack_unit_return_4/Directed11Motifs.json",
+      "path": "research/ayh-resource-reset-20261124/directed-return/Directed11Motifs.json",
+      "draft_sha256": "d2acc996d6f97b171891d542255eadb936533a4bfcdb8415aa05a19c3c361665",
+      "byte_exact": true,
+      "integrated_sha256": "d2acc996d6f97b171891d542255eadb936533a4bfcdb8415aa05a19c3c361665"
+    },
+    {
+      "source_scratch": "attack_unit_return_4/check_directed11.py",
+      "path": "research/ayh-resource-reset-20261124/directed-return/check_directed11.py",
+      "draft_sha256": "ca26eb4f58e509fd42c3574e1d91b8d1bd785a3b873954c69633d118cc9c0e8d",
+      "byte_exact": true,
+      "integrated_sha256": "ca26eb4f58e509fd42c3574e1d91b8d1bd785a3b873954c69633d118cc9c0e8d"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/SELECTED_COLOR_VARIATION.md",
+      "source_scratch": "attack_rigidity_bridge_4/SELECTED_COLOR_VARIATION.md",
+      "draft_sha256": "7b9df30805410b7a90e0266fc47444a3bacdf689bcb717f3ff63113e9c64e0a2",
+      "byte_exact": true,
+      "integrated_sha256": "7b9df30805410b7a90e0266fc47444a3bacdf689bcb717f3ff63113e9c64e0a2"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/BOUNDED_DIRECTED_ELEVEN.md",
+      "source_scratch": "attack_unit_return_4/BOUNDED_DIRECTED_ELEVEN.md",
+      "draft_sha256": "a9af55e7ec85e8f39184815f77109fb8be3bfd11a232a3f828467e6cc345b2e8",
+      "byte_exact": true,
+      "integrated_sha256": "a9af55e7ec85e8f39184815f77109fb8be3bfd11a232a3f828467e6cc345b2e8"
+    },
+    {
+      "source_scratch": "attack_unit_return_4/DirectedEleven.lean",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+      "draft_sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+      "byte_exact": true,
+      "integrated_sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677"
+    },
+    {
+      "source_scratch": "attack_unit_return_4/DirectedElevenLocal.lean",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean",
+      "draft_sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+      "byte_exact": true,
+      "integrated_sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f"
+    }
+  ],
+  "substantive_draft_correction": {
+    "path": "reports/ayh-resource-reset-20261124/directed-return/drafts/FIXED_TRIT_PATTERNS.initial.md",
+    "sha256": "474d826bc6e93b803b8f71357c9acf0fdcac4e139ca06987737ad84dc66ff0ff",
+    "correction": "The opening growth claim now requires log d + u = o(m_*); quantitative theorem and both named parameter regimes were unchanged. Final correction independently reviewed."
+  },
+  "vendor": {
+    "path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+    "source_pr": 146,
+    "source_commit": "f431078244e868dc699fad011044f0d5e7f76437",
+    "source_blob": "a5b56da6e23c2efd0c71d670ac3e275fd7f94567",
+    "integrated_blob": "a5b56da6e23c2efd0c71d670ac3e275fd7f94567",
+    "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+    "byte_exact": true
+  },
+  "final_assembly_corrections": "Readme makes original defect domain, union-of-orientations .84 count, P/R boundary, polynomial mass hypothesis and M trigger explicit; signed review pins the corrected five documents."
+}

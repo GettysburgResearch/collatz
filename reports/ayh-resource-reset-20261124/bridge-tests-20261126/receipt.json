@@ -1,0 +1,75 @@
+{
+  "scope": "Four finite Python executions, independent root runs; not full written proof formalization",
+  "started_utc": "2026-11-26T21:38:35.327631+00:00",
+  "sources": {
+    "APERIODIC_HORIZONS.md": "fa59aee9dc606069bb5029ac14ecfb8320a82841ace960aa0f58440ee96c1720",
+    "check_aperiodic.py": "82e228442bd7c944dd41d3ac7ec0e3ac707d1299a8c0f38806f723951e2b3d3d",
+    "check_fixed_pool.py": "3a0559825841fcaab941093f369c1a47fbeacb0338561368e5096052710d68a8",
+    "MOMENT_INTERPOLATION.md": "97270b2d466871553e0b72be209362e58cad401edcebe3a3348843eb5274fe85",
+    "FIXED_POOL.md": "35b4d4c760a33b55017d4098de0fe39586b0cb897fa0a5e5af2acfb2e06b079e"
+  },
+  "executions": [
+    {
+      "script": "check_fixed_pool.py",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz-published-4234561/research/ayh-resource-reset-20261124/bridge-tests-20261126/check_fixed_pool.py"
+      ],
+      "exit_code": 0,
+      "log": "check_fixed_pool-normal.log",
+      "log_sha256": "59bf15464d296b206d486eeee0d3463362bd992b1defa8ef03c554919a9d8026"
+    },
+    {
+      "script": "check_fixed_pool.py",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz-published-4234561/research/ayh-resource-reset-20261124/bridge-tests-20261126/check_fixed_pool.py"
+      ],
+      "exit_code": 0,
+      "log": "check_fixed_pool-optimized.log",
+      "log_sha256": "59bf15464d296b206d486eeee0d3463362bd992b1defa8ef03c554919a9d8026"
+    },
+    {
+      "script": "check_aperiodic.py",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz-published-4234561/research/ayh-resource-reset-20261124/bridge-tests-20261126/check_aperiodic.py"
+      ],
+      "exit_code": 0,
+      "log": "check_aperiodic-normal.log",
+      "log_sha256": "9350e30ad8f124572f2bee46d975b3493dcd567d79afdeeee083b9e2e3652e35"
+    },
+    {
+      "script": "check_aperiodic.py",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/33d115a3cb8d/collatz-published-4234561/research/ayh-resource-reset-20261124/bridge-tests-20261126/check_aperiodic.py"
+      ],
+      "exit_code": 0,
+      "log": "check_aperiodic-optimized.log",
+      "log_sha256": "9350e30ad8f124572f2bee46d975b3493dcd567d79afdeeee083b9e2e3652e35"
+    }
+  ],
+  "same_outputs": true,
+  "unchanged_sources": true,
+  "success": true,
+  "finished_utc": "2026-11-26T21:38:59.025826+00:00"
+}

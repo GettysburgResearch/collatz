@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "residue17-lean",
+  "started_utc": "2026-11-24T11:44:18.261297+00:00",
+  "finished_utc": "2026-11-24T11:44:19.807991+00:00",
+  "command": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unit-exit/check_residue17_lean.sh"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 1.547,
+  "stdout_sha256": "dae362555e1896cf30c7135f7e87a82af9d29af9cd6337ad7ffbe6c55c86330a",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/unit-exit/check_residue17_lean.sh": "37022ed2c0741eb8656eadd90330f8cc7fc4164267e973b8a20e9cec6a256ea8",
+    "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8"
+  },
+  "lean": {
+    "path": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "local_outputs": "Fresh temporary directory, deleted on exit; only pinned third-party Mathlib/Lean objects reused.",
+    "flags": [
+      "-j1",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true"
+    ]
+  }
+}

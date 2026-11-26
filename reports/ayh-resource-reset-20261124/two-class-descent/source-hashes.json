@@ -1,0 +1,141 @@
+{
+  "schema": "collatz-two-class-source-hashes/v1",
+  "parent_head": "9ab91d964b38fc870d1034bac628d62f59488467",
+  "sources": [
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/ACTUAL_FRONTIER_OCCUPATION.md",
+      "bytes": 17304,
+      "sha256": "d4f74cf6ed121d5fa8d2f2f39eb33ce866f4fb7903aa9d94ecddfad100cc01af"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/ADAPTIVE_PAIRED_PROJECTION.md",
+      "bytes": 8724,
+      "sha256": "e712cf35c130499ea85355c36ea9876c1041ffb1c969122ecdd19521e0c9e38c"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/AREA_FRONTIER_EXTENSION.md",
+      "bytes": 5782,
+      "sha256": "e7ac7cfbc97b4c19c374a19346004ec91a8ad1cb452f16137e5e492c4af04328"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/FINITE_FLOOR_FRONTIER.md",
+      "bytes": 7638,
+      "sha256": "697931449c65e48dcbf9b9eef3b42948ab4cefbadddb09b48cf68eac9c28f70c"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/FORWARD_SOURCE_REEXPOSURE.md",
+      "bytes": 5634,
+      "sha256": "e86033f86567dbadbd514c1f4089d7131baed2275791d0e8e78b290427b9fa0a"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/FrontierCoarea.lean",
+      "bytes": 2508,
+      "sha256": "f4a4003a41d4c28ffc33e15e08f5d6b962d91435591c4c8099215de12b81d635"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md",
+      "bytes": 9048,
+      "sha256": "dc13a8daf06eb7827ff4989eeca7d00745504405308f312a3e344cc723dfd4d9"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/HIGH_GRADE_SHADOW.md",
+      "bytes": 11541,
+      "sha256": "a7eb5e317ccafcb505a876dbb6fc5723e1de89f6f3656c697895f07352ccf990"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/HighGradeShadow.lean",
+      "bytes": 2128,
+      "sha256": "cb27e3f9cf7f2f65626aa91c9ce4a3de4267ab82e772894a4ea0f0d1de264cec"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/KilledEntryContraction.lean",
+      "bytes": 2165,
+      "sha256": "b698242b2f142073b681d67efe4b57584b3adf91784e7fb939f306859efa38fd"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/LargestSlopeProjection.lean",
+      "bytes": 3550,
+      "sha256": "922285aa2a69d569f49652a1546e51a7463da6500c2a929957eb217a6742602e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/PAIRED_SOURCE_SHUFFLE.md",
+      "bytes": 12054,
+      "sha256": "cb4c9bfac9b6df41e6bdb825b4a214255853c0bdf61d331cabe1fdb176e910aa"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/PHYSICAL_CLOCK_PROJECTION.md",
+      "bytes": 4172,
+      "sha256": "ee71892a47320bb92c5165916297d4161b4b60ed3c73e86cf1c52fe47f61f631"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/PairedSourceShuffle.lean",
+      "bytes": 4660,
+      "sha256": "aa1ff31238eae88fc49a95e1bd529cb9918758ba173c5104aba60d83728b299b"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/README.md",
+      "bytes": 16631,
+      "sha256": "e8aa9d84d672829d0e535b661758d7991cb109e853adb5bf9b2c99da23f90b1b"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/ROUNDED_HEAD_DESCENT.md",
+      "bytes": 12255,
+      "sha256": "c57bd423824faaba39ac50575687a19afeaa7fe47bcdf9b3640a0554edf61bdb"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/RoundedHeadDescent.lean",
+      "bytes": 1478,
+      "sha256": "c1dfeaf305585a8fb95a03386333380e605feb14a45cdb9804e370d26ced33af"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/SIFTED_DISCORDANT_SOURCES.md",
+      "bytes": 6567,
+      "sha256": "bfd3923162fd11b226eaeca814be6582eae23eab08828a4ea38a8e7e8167a294"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/SOURCES.json",
+      "bytes": 7699,
+      "sha256": "005ea2f9f68dbc4bcb1c06079bb9a933610c0e4b9c2c7a19161e4798e3d7c1b2"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/check_high_grade.py",
+      "bytes": 2241,
+      "sha256": "b00e59df1b0cc49b5077a8444b48cab7c9dcae7fbdbebceebb82f96303f4b14f"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/check_lean.sh",
+      "bytes": 2102,
+      "sha256": "227835e5df8a342f0aaa90729da42ef441f8172cf80a81c1d38c955418510142"
+    }
+  ],
+  "independent_review_files": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/ADAPTIVE_PROJECTION_REVIEW.md",
+      "sha256": "b26dcf95e0b9a8c4f407d23b5e6f47e124eb6c2d5d7b62f98ce97e204f1e1661"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/AREA_FRONTIER_REVIEW.md",
+      "sha256": "e6b6529fef1b26d93f44a4d27c1aebb54c7bee2f518c3d2c4cb4aa760a4f1466"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/FINITE_FLOOR_REVIEW.md",
+      "sha256": "2aa4e7545f0798f482fe6f57e61cca2a75bdff52031fefdef783121050d2372d"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/HIGH_GRADE_SHADOW_REVIEW.md",
+      "sha256": "a9812ad4cc2f6269009f045e8ae8d697deb5505cbbfd98b2ab243a954c0b2b06"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/ROOT_REVIEW.md",
+      "sha256": "4c0f522b17547e3fe64c0c4a22dfbbcf8ce359b1412d184d13e46d1dbe0bc5a2"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/ROUNDED_DESCENT_REVIEW.md",
+      "sha256": "1c33e683bbb89bb5185eec74c67cbdc40d505e1fbe4e3e596dceede4412f9ed3"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/two-class-descent/SIFTED_SOURCES_REVIEW.md",
+      "sha256": "525dc535efdef7c1155911e7fdb40cbbaa81cc4fec608b00ee8d04848355bb93"
+    }
+  ]
+}

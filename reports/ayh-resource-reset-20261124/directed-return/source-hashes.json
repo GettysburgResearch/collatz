@@ -1,0 +1,207 @@
+{
+  "schema": "collatz-source-manifest/v1",
+  "baseline_commit": "b0538639df0ab7edd239281bd897e705160f732c",
+  "scope": "All new directed-return science and evidence files and both modified navigation files; this manifest excludes itself.",
+  "files": {
+    "reports/ayh-resource-reset-20261124/README.md": {
+      "sha256": "97287e27bfe17d73c42719cb8332bcb1181f7c34ae964b23be620e4e56304c1f",
+      "bytes": 11306
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/CONSUMER_AND_STRICT_RETURN_REVIEW.md": {
+      "sha256": "e9b03a9d2525801bda2fee81c19cac5410beef7c21f9b0859b26695301d7195f",
+      "bytes": 5193
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/FIXED_TRIT_PATTERNS_REVIEW.md": {
+      "sha256": "8af8fc31e51a36c397850bfbf4c52e1a952163bd6e98c0167a3893c495d6faaa",
+      "bytes": 3946
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/HEAD_REFRESH.json": {
+      "sha256": "6c7d53f567b44b521ffa6f37b2c691a9f758927b03f2c7d52fdaf69c807c7014",
+      "bytes": 2450
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/INTEGRATED_WORDING_REVIEW.md": {
+      "sha256": "4f05fea43d43182e5e36a399ea16a251e1623f6a00430291f058379fe07a4338",
+      "bytes": 6492
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/INTERIOR_AND_TIE_REVIEW.md": {
+      "sha256": "731fa084e767b25aacf1cd933e8d77c27b8ba5136192bb8160523850cc0522a1",
+      "bytes": 6567
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/LATE_PR201_COMPARISON.md": {
+      "sha256": "5841ac4436b1e5541905e3e42de0cab3820cb61f5e4493f1b7aaf15f6fc2c0ae",
+      "bytes": 5780
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/PRIOR_PR_DESCRIPTION.json": {
+      "sha256": "92578aa58da8feacd9e52c462d90f2fed67dde484e09a30fdeb09f4ad9a100b9",
+      "bytes": 18665
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/PR_INTAKE.json": {
+      "sha256": "5291fd0a6a340c6f7f701786619e047b69f3c2c9db25c9da088fa14269a144d2",
+      "bytes": 8242
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/README.md": {
+      "sha256": "5476f26b42b2760894947e07bfee12d96bd4a65700ea506840eca9d5eb165e47",
+      "bytes": 3503
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/ROOT_REVIEW.md": {
+      "sha256": "dad98b5206be507684134a497566088e129c894a7b5431e813f399a971683ad4",
+      "bytes": 8771
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/SELECTED_COLOR_VARIATION_REVIEW.md": {
+      "sha256": "7b01b9da26ff67abf20c5096651143922816641c211c6228441fb59a8fec4528",
+      "bytes": 2296
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/SELECTED_TRIT_CELLS_REVIEW.md": {
+      "sha256": "539a40d4450406b9b117eb1e61737cd2b739a8b3f5a4d429b3a0c42c13242717",
+      "bytes": 5499
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/STRICT_ORDINARY_RETURN_REVIEW.md": {
+      "sha256": "b9003ad5c443e70027ed5a294e5cd70e6f34b0fcb8ebc45935910088ee3b37db",
+      "bytes": 4360
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/axiom-audit.json": {
+      "sha256": "57ed077a90271fdf7e6eeaff207610cc1805ed26e922b530cf1b3294b75b4da7",
+      "bytes": 7840
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/draft-provenance.json": {
+      "sha256": "e2beb9692e580fc2df429e16e12ed7b8e1ec896bbf3f98a2c135e7b8d9bb4228",
+      "bytes": 7422
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/drafts/FIXED_TRIT_PATTERNS.initial.md": {
+      "sha256": "474d826bc6e93b803b8f71357c9acf0fdcac4e139ca06987737ad84dc66ff0ff",
+      "bytes": 7351
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/finite-certificate-optimized.json": {
+      "sha256": "ff6289eb972531c6714fa0a878d750091e1305edac01b19c916e844c51728135",
+      "bytes": 1679
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/finite-certificate-optimized.log": {
+      "sha256": "2abe365371d9005c68a76988cc9b7b85430eb22d68b4f58cfe817ef823ee1d05",
+      "bytes": 500
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/finite-certificate.json": {
+      "sha256": "ab78a27efe6040adcf0832272f7cbb1e90961f51685d670bb90a3e463f811a66",
+      "bytes": 1659
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/finite-certificate.log": {
+      "sha256": "2abe365371d9005c68a76988cc9b7b85430eb22d68b4f58cfe817ef823ee1d05",
+      "bytes": 500
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/lean-build.json": {
+      "sha256": "fc9fcb2ee4c12a851be7bd94e1bf40131ace2f46a44af645e18b25aac27bd9df",
+      "bytes": 2696
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/lean-build.log": {
+      "sha256": "e8fbfb62d8cf23e0b7e612bdd3fb4773f6b6015bcf2468ef17faff2bd68b94d2",
+      "bytes": 9241
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/whole-cylinders-optimized.json": {
+      "sha256": "5ba774ff52a13197b684e9afa1704d575c4b6646388aabb977adbcfeb1332ee6",
+      "bytes": 2151
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/whole-cylinders-optimized.log": {
+      "sha256": "3efd9810f619a6ae39b8bdb812bfa3166d27256cca189b008288aeb727b8af7b",
+      "bytes": 1094
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/whole-cylinders.json": {
+      "sha256": "ba169508f413eedc2ce9ace0b373c5a0ecb29fc0d51b51412489d4182c5472e7",
+      "bytes": 2131
+    },
+    "reports/ayh-resource-reset-20261124/directed-return/whole-cylinders.log": {
+      "sha256": "3efd9810f619a6ae39b8bdb812bfa3166d27256cca189b008288aeb727b8af7b",
+      "bytes": 1094
+    },
+    "research/ayh-resource-reset-20261124/README.md": {
+      "sha256": "a9ef2e195e0c404d080aad9262161cdccee157a614b06edd5ac6d57a1b5d35cc",
+      "bytes": 18339
+    },
+    "research/ayh-resource-reset-20261124/directed-return/BOUNDED_DIRECTED_ELEVEN.md": {
+      "sha256": "a9af55e7ec85e8f39184815f77109fb8be3bfd11a232a3f828467e6cc345b2e8",
+      "bytes": 8656
+    },
+    "research/ayh-resource-reset-20261124/directed-return/DELAYED_NATIVE_TIES.md": {
+      "sha256": "0d62f1ef05ec265038fcb6124ab2b614854791803afb3f66ca12ad4fdecc82a7",
+      "bytes": 4622
+    },
+    "research/ayh-resource-reset-20261124/directed-return/Directed11Motifs.json": {
+      "sha256": "d2acc996d6f97b171891d542255eadb936533a4bfcdb8415aa05a19c3c361665",
+      "bytes": 11043
+    },
+    "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean": {
+      "sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+      "bytes": 91330
+    },
+    "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean": {
+      "sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+      "bytes": 6040
+    },
+    "research/ayh-resource-reset-20261124/directed-return/FIXED_TRIT_PATTERNS.md": {
+      "sha256": "44e942fda19002fd074a84ff200b05bd2665b7059e58707b534716e2b7652902",
+      "bytes": 7457
+    },
+    "research/ayh-resource-reset-20261124/directed-return/FixedTritFeatures.lean": {
+      "sha256": "4f493000530303b2e93f6c4a802e920dc66feb9f077eabc4172c6de2b5370554",
+      "bytes": 1243
+    },
+    "research/ayh-resource-reset-20261124/directed-return/INTERIOR_GRADE_BUDGET.md": {
+      "sha256": "4aadccbbec4372b422bede3964a412604be8a9a5b64baeb50dae11436f9ef0d4",
+      "bytes": 19896
+    },
+    "research/ayh-resource-reset-20261124/directed-return/InteriorGradeBudget.lean": {
+      "sha256": "75c897142c995815e81d155d242f37778281e02147c60ea2a375eee8eb12339a",
+      "bytes": 4020
+    },
+    "research/ayh-resource-reset-20261124/directed-return/LITERATURE_AND_BOUNDARIES.md": {
+      "sha256": "29f351a498b550c0481a5268fb25d871f1fc11c4f2bab06a52311e69a9b908a5",
+      "bytes": 5881
+    },
+    "research/ayh-resource-reset-20261124/directed-return/LocalColorCells.lean": {
+      "sha256": "16e7b9387b47c7762f7a9c8f226bdf9f8467af8ade697ff3a0cb10ef266d5b7c",
+      "bytes": 2295
+    },
+    "research/ayh-resource-reset-20261124/directed-return/PublicAudit.lean": {
+      "sha256": "c4a3081f5763a0f2891f0c52bb8b42ce8de2eb658899d96c358e1068a74ad6ae",
+      "bytes": 4179
+    },
+    "research/ayh-resource-reset-20261124/directed-return/README.md": {
+      "sha256": "0009e4585ce7f51adc75190f9e0010e547e987066fd93192dfa49c73ee3ec282",
+      "bytes": 10966
+    },
+    "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean": {
+      "sha256": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37",
+      "bytes": 3738
+    },
+    "research/ayh-resource-reset-20261124/directed-return/SELECTED_COLOR_VARIATION.md": {
+      "sha256": "7b9df30805410b7a90e0266fc47444a3bacdf689bcb717f3ff63113e9c64e0a2",
+      "bytes": 3213
+    },
+    "research/ayh-resource-reset-20261124/directed-return/SELECTED_TRIT_CELLS.md": {
+      "sha256": "4288ae981f46f9e079e60393060da373205303f19330904e88046f9d6fc13e4f",
+      "bytes": 19819
+    },
+    "research/ayh-resource-reset-20261124/directed-return/SOURCES.json": {
+      "sha256": "22900c4f2bccb0cf4bcac05615f1d96c546f53b4d4ab4d01e35ecb2dbb68662f",
+      "bytes": 12164
+    },
+    "research/ayh-resource-reset-20261124/directed-return/STRICT_RETURN_REFINEMENT.md": {
+      "sha256": "59a214f834d3dc50b420f6103ed02a1ed2800828591bab27b55731f08ccd4668",
+      "bytes": 4013
+    },
+    "research/ayh-resource-reset-20261124/directed-return/check_cylinders.py": {
+      "sha256": "9348fa28ee54ae1ef8a51038e17ca0fe5db7519f2b4b624d8e2fc72e56cf1514",
+      "bytes": 7144
+    },
+    "research/ayh-resource-reset-20261124/directed-return/check_directed11.py": {
+      "sha256": "ca26eb4f58e509fd42c3574e1d91b8d1bd785a3b873954c69633d118cc9c0e8d",
+      "bytes": 5912
+    },
+    "research/ayh-resource-reset-20261124/directed-return/check_lean.sh": {
+      "sha256": "afaf4f590439a1c1c68a635444be4675ceacbb2b12414b239444074fe704d3af",
+      "bytes": 937
+    },
+    "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean": {
+      "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+      "bytes": 26809
+    }
+  }
+}

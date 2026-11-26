@@ -1,0 +1,34 @@
+{
+  "scope": "Only three trailing-whitespace removals after initial independent reviews. Exact original lines retained for reversibility. No token or mathematical content changes.",
+  "files": [
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+      "original_sha256": "d06eaafc53c73137a41309ecb8be192bb39a259bd7d53f6eb780c63db7569a22",
+      "final_sha256": "6949878cae845dea016d240b51792b1869221e12fd75ff09392fff5f4faf25fb",
+      "changes": [
+        {
+          "line": 84,
+          "old_line": "    have e : S*q+index t%S=index t := Nat.div_add_mod .. \n",
+          "new_line": "    have e : S*q+index t%S=index t := Nat.div_add_mod ..\n"
+        },
+        {
+          "line": 101,
+          "old_line": "  \n",
+          "new_line": "\n"
+        }
+      ]
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+      "original_sha256": "ce09a11c31be1ebdd08d18d87e024267acdab9cba9f3c3baba63499faf6c9a61",
+      "final_sha256": "7fe374b138cd1314bbd5c311fa350a77bb45dba55f9d1dd8a7050b79e6d4ff6b",
+      "changes": [
+        {
+          "line": 64,
+          "old_line": "    rw [clock_run]; exact PositiveWordDescent.basinRun .. \n",
+          "new_line": "    rw [clock_run]; exact PositiveWordDescent.basinRun ..\n"
+        }
+      ]
+    }
+  ]
+}

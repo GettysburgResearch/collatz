@@ -1,0 +1,33 @@
+{
+  "data_sha256": "e0f57bcde2598db5e96397a4ff95e15f6003d0a44e182cc311d0f097e565524c",
+  "derivative_squarings": 2955,
+  "first_counted_clock": 2957,
+  "first_equal_clock": 2957,
+  "odd_base_anchor_clocks": 1143,
+  "odd_base_augmented_grade": 721,
+  "odd_counts": [
+    1513,
+    1442
+  ],
+  "ordinary_unbounded_family_replayed": false,
+  "perfect_power_congruence_control_bases": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12,
+    15,
+    17,
+    27,
+    81,
+    243
+  ],
+  "precision_bits": 2957,
+  "scope": "finite arithmetic and modular controls only",
+  "terminal_bit_length": 2397
+}

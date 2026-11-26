@@ -1,0 +1,651 @@
+{
+  "schema": "collatz-paired-reductions-sources/v1",
+  "date": "2026-11-25",
+  "baseline": "156652e03fe7a78f9cd4442039779cc622fdf3de",
+  "repository_dependencies": [
+    {
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+      "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+      "sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean",
+      "sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean",
+      "sha256": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean",
+      "sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FiniteHorizon.lean",
+      "sha256": "e7d20e71da1d191e39ac144e1c7442f281c86a104c5500b7a015978d82676d13",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "sha256": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "sha256": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/LocalResampling.lean",
+      "sha256": "15cc801d0092092b86eaaff4ecdff79d98958c803932eda7023e475028ab2562",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnKernel.lean",
+      "sha256": "abe786fecd337c31cf1632986d173b45e360a9a1aa21fea7b523e817db182134",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneFirstBad.lean",
+      "sha256": "7e51a184e32072fe418bcf55bf7ad2b8ec594af67f624a0c8893bc916d3fee9e",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RankThreeFamily.lean",
+      "sha256": "c43064465874dffc3b299dfd35d7bf3bd0769627606e47e0c906a0cbb1ec1b7e",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OppositeArm.lean",
+      "sha256": "6578fe87b6ff8cfa70c229a5ea7e5bbece6dd773c98dd593e50c67454ff075f1",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean",
+      "sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/PublicAudit.lean",
+      "sha256": "2991f45581aacf6ce4665f7fe41e81fa6997bd37e9bf672ebfb0719ed403ae9a",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/WordRank.lean",
+      "sha256": "873802f2b394de8de1be50a24f94847dcbdc35c5881272271432adbdbdbc30fe",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/OrdinaryWordRealization.lean",
+      "sha256": "d160b8a77442e71f55f4ad9f68b22af05760930468839aa92296facd15ad3229",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/PositiveWordDescent.lean",
+      "sha256": "f6499c78faad234b376b5e306e8c7e64949912656623ca7291b46e14f14d0f19",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/SignedSeventeenPotential.lean",
+      "sha256": "04e76a626d14d578969ac9538fba89dc84e89153ab593b0d5ab5d03c4ca9c1bf",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/LiftedLattice.lean",
+      "sha256": "dfa342146d8afe933e72081d66cff55bae2806da4f6aea6c29cd7d66929cc2c5",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/SourceProgressCases.lean",
+      "sha256": "3f4302bbe12eb79445c04a855a0f01878e1f573501243d3ef101f9e04d569f93",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneTwoCheckpoints.lean",
+      "sha256": "6baca0d4b3da675d026f9735bf71a6b6363bf3b9c89988a5ff167d2eeb1f99b0",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueWords.lean",
+      "sha256": "85073e9d4202e936560591f2ae6eb91ba281c9507eacb728b399d26931b97118",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueCylinder.lean",
+      "sha256": "9b7c05e91474e0e705574e8a5bd12df113cf56d5ccb3a219fdb1933b5654a00f",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneProgressCases.lean",
+      "sha256": "a91b286866f347e88292e90ee96efd7ec4c33f502552bc78d64cf2c473131bb2",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/FinalProgressProposal.lean",
+      "sha256": "f803ed28152845d620f0114ed870cfd621340871c6f8dcc869b3203fe8e0df57",
+      "rebuilt": true
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/source-progress/PublicProgressAudit.lean",
+      "sha256": "9eb99b6ff8804500ad7dc519a4c7eb808d5424bb8580fe9b4bc2fa9049563f90",
+      "rebuilt": true
+    }
+  ],
+  "latest_repository_source_readings": [
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/README.md",
+      "sha256": "35dba29d35d40e4670d884c8bfa998327616aa211b79048da93ef3a9288d10f7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "1308d0d3559fb0c3c499bc1a2beade12e81e25bc",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/SOURCES.md",
+      "sha256": "9852d596a782b138f941a892e4b34fc08f6b1ba70e87ee4bd60a96993bfe4a22",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/SOURCES.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "d0dd839752bc3813afc78ad1b5b3340d60767c5d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "sha256": "45304517f441d787aee0c1270fa0b666a32b77a0b449242bc743ccd174dc7257",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "bd41ffbe1f1a492f6766fd6073d5c51f127c75fd",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/bridge/README.md",
+      "sha256": "1fbf3332348bb473f7e1124cd5e61fad67db4e5cb65775550fcc11c1a9b1941f",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/bridge/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "21a17733d5bc5d3e4792a639ae06d3a08330c159",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/core/ExponentTransport.lean",
+      "sha256": "f5549c2aefd583fb93f2f2608ac829dc0eacfdf1d1d7fde6b9ba0862f0780a70",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/core/ExponentTransport.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "febf92151ae1a37a33db238e40072833eb747fc5",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/core/README.md",
+      "sha256": "e4be46ea497825e9e3fc0922cb0f7eb2a2c22215bed181c92e32c770915b9057",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/core/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "87a480f41ec09f3e45f2e3ac91df887aa842a1be",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/core/TowerLaps.lean",
+      "sha256": "a720fdbe7c0736027ce38d1af46012e1a1e569e20271e8364f3526b606ab2028",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/core/TowerLaps.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "629c485b1d167c535efc9dbce1c9f9ee7470e5bb",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/cycle/RATIONAL_ORDERS.md",
+      "sha256": "db31ba3c0eb3e96e01c8bb665abb35e085071ee3720760c173f07372594db73e",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/cycle/RATIONAL_ORDERS.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "eb00939fda1b66bbcfde56710fbd314aabfe6ce5",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/cycle/README.md",
+      "sha256": "1cad9b91cb357c5d6b74a3101b33840a08d80ca7b9322e1841694ed8d6dfed5e",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/cycle/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "324adb440b8d61df76a2f7e5bed941355473d1c1",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "sha256": "dc60c3d85f7c951c053374101a12034775e3b3806526d3f8cd987748eb833f92",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "7a3307416aed5666f3742a8bdc127d825bfe3104",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "sha256": "4e63a191bcac8a18cb1d3d9601a78a82c4c9211cfca325d2ff07c48b53045e2a",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "50e6938424e7bcf8b79a0776cc59a9b815fc6257",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "sha256": "bc96bafaf34d992f6cc0c7aea30e2eff1b6e4f84c7ce57fe868e4592c976d603",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "4b38ae26c3f4687fc644ebd4a24a8c92df65ea0b",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 192,
+      "head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/intake/README.md",
+      "sha256": "0f0c372b304887cf03dc727bb490c8846a9fbf3a5577ff3756ec2d5694b3ab21",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/570476be82f706122cdd23ebd7a00f3d4ff90cd8/research/astra-ultra-closure-20261125/intake/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "f1b330eaeefae440ec3f4a7ffd67f86323e9b527",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/README.md",
+      "sha256": "93116ae9b8faa8758c129d3f86a0f6e8ce82b372b3ee7e11b6a31b88ea091d7c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "27b3ea18aca0d29e0c814ba9e1551f69b59e84bd",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/arithmetic/EXTENDED_SHIFTS.md",
+      "sha256": "4934dd94c0dd5f83add064ac0764fc642f376316033ae5041304862b208fcb2d",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/arithmetic/EXTENDED_SHIFTS.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "08a1f45ab64232df8fdc1b075e86ff6a63be4c1e",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/arithmetic/README.md",
+      "sha256": "f7657c065409854484ef0fc29d8ea8d08af591363fc835017cf02ed91dd2ef9b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/arithmetic/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "4a80c90765d5ef87cfa1e54b2309dc9b2202a6f2",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/arithmetic/RankGaps.lean",
+      "sha256": "6bebf67724a259ee4942e9be4caf21da658611fc00ab3bbd177f9370d59286de",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/arithmetic/RankGaps.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "5a75326ea516059b30e7a4940134ad69d435f047",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/README.md",
+      "sha256": "046f949f226ed3df9716076ae7674a65b967062592c733ede1056697534034bd",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/closure/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "9060d4e9bc1723fce99691da38e815fc42a6e4d6",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "43be5c06a9bc8199288a767132cc177817bb9f4d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/formal/FinalProposal.lean",
+      "sha256": "cc2ba9785f2832250afa689d67deea7893cfb77b3d9e02e69e54d9e7e9e8c423",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/formal/FinalProposal.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "0481de2e6eeb9f5bb53ffcabc4e6eb28f62e007d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/formal/README.md",
+      "sha256": "5d5f863bb86b6566199391a88e7bb11620bf42421dc23188f7a064b3e787dd41",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/formal/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "0cc7d166e8f8bd0f3f888b03e96ac48b6db3d3e0",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/rows/ClockBlocks.lean",
+      "sha256": "0070c9238037cf622f3be4af78d1bd856bc07d3fb8a812e3ff047bbc77167892",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/rows/ClockBlocks.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "6230c5b5bbeb3c6ed47b8437cd8853fd77abe120",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/rows/README.md",
+      "sha256": "da3ccead0a15908da81941a790a9a2b384d1dfb7c1e215139ffb21e4ae46b2a1",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/rows/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "c8375a741b4baefbafe993ac31e7c24e80d5406d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 195,
+      "head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57/research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 208,
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/clock/README.md",
+      "sha256": "375c2befc4ec18bbd5a13c4c968bf392828984eb2ff14209284101f897d0aa74",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f/research/openai-machinery-20261125/clock/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "4cf56a88f393efbf07120bf19ebd78c9d7c45433",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 208,
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/tensor/PositiveTower.lean",
+      "sha256": "f079c8c4ccc2e21724620147e09a6fa9403452f743930529f84b1e114abf9639",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f/research/openai-machinery-20261125/tensor/PositiveTower.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "6be49bea26f09efdb58d670ff3edee90f7f0c27f",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 208,
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/tensor/README.md",
+      "sha256": "af6b8483fbb316516cf1be708aa98fb4d15fbe529bd4152e74db5edbfc0a07db",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f/research/openai-machinery-20261125/tensor/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "f81207d8bca4c7a881f2e021900a8ac4e4d007a8",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 208,
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/tensor/TowerFrontier.lean",
+      "sha256": "e60f57fdb261df722a9358d38ac425fd55803e2f0fb21796e64e6722cb11a789",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f/research/openai-machinery-20261125/tensor/TowerFrontier.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "87dbfea43532aba22940b9137c480b4930a9c0cd",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 208,
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/tensor/TowerMerger.lean",
+      "sha256": "7cf41e83c4d6e73a44b75d7b0170550298be69d80f4afb071b415ee0c6bbc923",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f/research/openai-machinery-20261125/tensor/TowerMerger.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "37f275d5882d908322c2cda3b5d88bc229b0c15c",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/README.md",
+      "sha256": "f9b76b3bbbeed5462c862bba3cef1ed201b3d05100bee4841fab3b757e4bfa73",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "99dbd202c41f13a30f3a4cdca90312b2d9331a79",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/arithmetic/PolynomialStrips.lean",
+      "sha256": "af8f91235edb78fa828ac951fd131e63f8020f435c7f1cdcd2ac80115695d6ef",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/arithmetic/PolynomialStrips.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "49f30da647473a7761e0e3f59b40091b6e53716f",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/arithmetic/README.md",
+      "sha256": "b0856510fab45e1c99dc0b3583c81b8172c409ac2a995753eb0a2978aa576b21",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/arithmetic/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "56b756459a71b7fce31cbfab35fe55a891b577a4",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/BinomialTower.lean",
+      "sha256": "7a8a22aece95ce42fa2a057b6a54e172eb413c50abc87d7128dc10eec6f1a3a7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/fixed_source/BinomialTower.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "4d6df23f7bc884a7ba7e4534492b25e14edeb3b3",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/README.md",
+      "sha256": "3a4331db17fc7f6a3dcf6ac66a2ea70e1a7cc82ac206bca0c72f7ea93dab1f2c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/fixed_source/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "81789e7e86dcdea0fc1e1bd0cc3ebeca81043508",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/REVIEW_MACHINERY.md",
+      "sha256": "f10fc183d2bb6ec73d3569884c78448cd0cb133a119bbe919f3ad06076336e75",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/fixed_source/REVIEW_MACHINERY.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "30b8fc7560e8cc6f413c17bd90c334549b9a88eb",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/TowerDescent.lean",
+      "sha256": "17d9758604a1cdfc775ddf1755c6cca6f304ffca9d99a6feb66932565be6a0ce",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/fixed_source/TowerDescent.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "fbd2a9ad3bf22d1965744d1bef87de65187e7e6d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/TowerWindows.lean",
+      "sha256": "81adb06400f2e3bdb0180e8b87808902440bbe07f75794b3adcef55149588eb7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/fixed_source/TowerWindows.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "2deabf1b27b75bdca570b08d163f22165bd1feb3",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/PhysicalEcho.lean",
+      "sha256": "b4c007afc3b5f620fb626b7085b6a72dadae9ed7243127fe96a07a077e9832dd",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/machinery/PhysicalEcho.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "c4acf3df03d30e494fc5e75328b2b588ed94e410",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/README.md",
+      "sha256": "c055a1b1fdfb2763c7fe3ca1f05d0b9873bbf05b7d94f86bd98a6e09119823a0",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/machinery/README.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "0b300814bf125f19ebc77d1e42b557316bddb857",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/REVIEW_FIXED_SOURCE.md",
+      "sha256": "90ae2889eeafb88c253aa80aa19f85c078ac72fd1d5464eea10a1214bfb8e337",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/machinery/REVIEW_FIXED_SOURCE.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "903442158131a7a0406a4edc99d8431a2387e8d5",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/REVIEW_ODD_CYCLES.md",
+      "sha256": "78ae7b12f4b8d3173ff671e04d24a1e1764feb04297885aac6e1c5f37fd7d65c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/machinery/REVIEW_ODD_CYCLES.md",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "057056e63682d2382106777ce096bde80c8dda33",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    },
+    {
+      "pr": 209,
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/TowerCertificate.lean",
+      "sha256": "10d10efcbc88639de78608c04f0f1d58d4fea664115f2f23b5e70baf8fac5b95",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2d0230aa52d85732dbc85b5df20e30108dc1396f/research/astra-ultra-closure-20261125/machinery/TowerCertificate.lean",
+      "verification": "Source inspection and mathematical comparison; not imported as a closing hypothesis.",
+      "git_blob_sha1": "bec959afd87b65bc1b96bca85b1b11d4cb0b0e4d",
+      "digest_scope": "Exact GitHub bytes; the one transport-added newline in local review staging is excluded."
+    }
+  ],
+  "literature": [
+    {
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "arxiv": "2105.14697",
+      "use": "Ordinary Collatz equivalent to mixed-base rewriting termination; complete rule system and restricted subsystem certificates. No complete termination interpretation imported."
+    },
+    {
+      "author": "Hiroyuki Nashida",
+      "title": "Natural-number and arctic matrix interpretations alone make no progress, in any dimension, on the Collatz rewriting system",
+      "doi": "10.5281/zenodo.23147025",
+      "repository": "harappa/collatz-arctic-interpretation-barriers",
+      "head": "de961be6671b2084ae0189a3572b674c60788456",
+      "revision": "r5",
+      "paths": [
+        "README.md"
+      ],
+      "use": "Primary source inspection of dimension-free barriers for specified natural-number and arctic interpretations. External Lean not rebuilt in this pass. No exclusion of all possible rewriting approaches."
+    },
+    {
+      "repository": "openai/math",
+      "url": "https://github.com/openai/math/blob/main/history.md",
+      "use": "Read current research history to compare machinery suggestions. No external claim or theorem used as an axiom in this packet."
+    }
+  ],
+  "additional_repository_reference": {
+    "pr": 146,
+    "head": "f431078244e868dc699fad011044f0d5e7f76437",
+    "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+    "use": "Source-qualified arbitrary-state tail bound in the written checkpoint population discussion. Not an assumption in the Lean closing consumer."
+  },
+  "publication_boundary_refresh": {
+    "metadata": "../../../reports/ayh-resource-reset-20261124/paired-reductions/LIVE_PR_INTAKE.json",
+    "summary": "../../../reports/ayh-resource-reset-20261124/paired-reductions/LIVE_SOURCE_SYNTHESIS.md",
+    "changed_heads": [
+      {
+        "number": 195,
+        "previous_head": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+        "head": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+        "title": "Collatz: full cycle denominator tests and bounded template obstructions",
+        "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+        "review": "LIVE_195_REVIEW.md"
+      },
+      {
+        "number": 206,
+        "previous_head": "b2b56b94175174a680a296478f16c619a8828972",
+        "head": "45a6a111321f947a8482c9e96e898435b57cee09",
+        "title": "Lean proves 513 consecutive tower ranks merge and gives a recurrence criterion for Collatz",
+        "url": "https://github.com/GettysburgResearch/collatz/pull/206",
+        "review": "LIVE_206_REVIEW.md"
+      },
+      {
+        "number": 192,
+        "previous_head": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+        "head": "07d494324c7ea440d45845d725f5cebad8a67124",
+        "title": "Collatz: certificate transport, cycle bounds and escape rigidity",
+        "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+        "review": "LIVE_192_REVIEW.md"
+      }
+    ],
+    "verification": "Independent source and quantifier reviews at the exact heads; root additionally fetched and read PR192 CanonicalSuffix, PR195 FinalProposal, PR206 TowerFrontierMergers and TowerRecurrence. Upstream projects not rebuilt and no new assumptions added to local Lean."
+  }
+}

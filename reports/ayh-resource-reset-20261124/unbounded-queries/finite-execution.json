@@ -1,0 +1,124 @@
+{
+  "scope": "Current-pass independent root replay of the three new scientific programs and the independent tower review; finite evidence only.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_all_earlier.py",
+      "sha256": "5c171d18c1665e9f663913574810dd541d260e1c144d7414ea7a785373768e01",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_all_earlier.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.309,
+      "stdout": "252 physical language controls, 6 literal source mergers, 11 preassigned binary-power certificates, 5 fixed-class controls passed.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_all_earlier.py",
+      "sha256": "5c171d18c1665e9f663913574810dd541d260e1c144d7414ea7a785373768e01",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_all_earlier.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.297,
+      "stdout": "252 physical language controls, 6 literal source mergers, 11 preassigned binary-power certificates, 5 fixed-class controls passed.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_rational_pump.py",
+      "sha256": "0fedea6af2f5c1da2aae4c6ed3e5ec46e44771634c43ee770ae36cdf5ffc11d7",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_rational_pump.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.283,
+      "stdout": "Small audit: 68 ordinary inputs, maximum clock 107, maximum height 638468, unique trap (3233,18,15,11).\nSigned anchors and two arms checked at lap counts 0 through 16.\nLap count 0: m = 5903 mod 6561.\nLap count 1: m = 534563 mod 14348907.\nLap count 2: m = 26990356238 mod 31381059609.\nLap count 3: m = 60756572548781 mod 68630377364883.\n17 parameter lifts, three representatives per lift, and complete positive merger traces for lap counts 0 and 1.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_rational_pump.py",
+      "sha256": "0fedea6af2f5c1da2aae4c6ed3e5ec46e44771634c43ee770ae36cdf5ffc11d7",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_rational_pump.py"
+      ],
+      "exit_code": 0,
+      "seconds": 10.234,
+      "stdout": "Small audit: 68 ordinary inputs, maximum clock 107, maximum height 638468, unique trap (3233,18,15,11).\nSigned anchors and two arms checked at lap counts 0 through 16.\nLap count 0: m = 5903 mod 6561.\nLap count 1: m = 534563 mod 14348907.\nLap count 2: m = 26990356238 mod 31381059609.\nLap count 3: m = 60756572548781 mod 68630377364883.\n17 parameter lifts, three representatives per lift, and complete positive merger traces for lap counts 0 and 1.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_fixed_tower.py",
+      "sha256": "722063a9e7ded233d96906f6d4e02f4f3c197e8d48256d951080ebe6d0bbb0dd",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_fixed_tower.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.34,
+      "stdout": "{\n  \"late_mergers\": [\n    {\n      \"first_asynchronous_deadline\": 22,\n      \"horizon\": 17,\n      \"rank\": 360448,\n      \"verified_common_clock\": 22\n    },\n    {\n      \"first_asynchronous_deadline\": 24,\n      \"horizon\": 19,\n      \"rank\": 3276800,\n      \"verified_common_clock\": 24\n    }\n  ],\n  \"lower_cone\": {\n    \"asynchronous_control_endpoint\": 150083,\n    \"high_grade\": 251,\n    \"matches\": 309385\n  },\n  \"reflection\": {\n    \"clock_pairs\": 18240,\n    \"meetings\": 31\n  },\n  \"threshold_grade\": 2253\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ayh-resource-reset-20261124/unbounded-queries/check_fixed_tower.py",
+      "sha256": "722063a9e7ded233d96906f6d4e02f4f3c197e8d48256d951080ebe6d0bbb0dd",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/check_fixed_tower.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.628,
+      "stdout": "{\n  \"late_mergers\": [\n    {\n      \"first_asynchronous_deadline\": 22,\n      \"horizon\": 17,\n      \"rank\": 360448,\n      \"verified_common_clock\": 22\n    },\n    {\n      \"first_asynchronous_deadline\": 24,\n      \"horizon\": 19,\n      \"rank\": 3276800,\n      \"verified_common_clock\": 24\n    }\n  ],\n  \"lower_cone\": {\n    \"asynchronous_control_endpoint\": 150083,\n    \"high_grade\": 251,\n    \"matches\": 309385\n  },\n  \"reflection\": {\n    \"clock_pairs\": 18240,\n    \"meetings\": 31\n  },\n  \"threshold_grade\": 2253\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "reports/ayh-resource-reset-20261124/unbounded-queries/review_tower_deadlines.py",
+      "sha256": "6a40b771ba6a69a15c7fb3e33047886baf8fd415c66d944c8a7af11f1b8650e4",
+      "mode": "normal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/reports/ayh-resource-reset-20261124/unbounded-queries/review_tower_deadlines.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.087,
+      "stdout": "[(17, 360448, 22), (19, 3276800, 24), (21, 9961472, 26), (23, 35651584, 28), (25, 226492416, 30), (27, 301989888, 32), (29, 402653184, 34), (31, 536870912, 36), (33, 23622320128, 38), (35, 214748364800, 40), (37, 652835028992, 42), (39, 2336462209024, 44)]\n",
+      "stderr": ""
+    },
+    {
+      "script": "reports/ayh-resource-reset-20261124/unbounded-queries/review_tower_deadlines.py",
+      "sha256": "6a40b771ba6a69a15c7fb3e33047886baf8fd415c66d944c8a7af11f1b8650e4",
+      "mode": "optimized",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/reports/ayh-resource-reset-20261124/unbounded-queries/review_tower_deadlines.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.093,
+      "stdout": "[(17, 360448, 22), (19, 3276800, 24), (21, 9961472, 26), (23, 35651584, 28), (25, 226492416, 30), (27, 301989888, 32), (29, 402653184, 34), (31, 536870912, 36), (33, 23622320128, 38), (35, 214748364800, 40), (37, 652835028992, 42), (39, 2336462209024, 44)]\n",
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_equal": true,
+  "success": true
+}

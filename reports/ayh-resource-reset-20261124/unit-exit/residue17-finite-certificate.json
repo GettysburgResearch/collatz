@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "residue17-finite",
+  "started_utc": "2026-11-24T11:44:18.265006+00:00",
+  "finished_utc": "2026-11-24T11:44:19.318377+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unit-exit/check_residue17.py"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 1.053,
+  "stdout_sha256": "9b9034bb0fcf893bd59c88425afd84ac3c061b684abe1fd474eff7dc9543ce2c",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/unit-exit/check_residue17.py": "29f2d86978afc6b2bebbfec4eaa94e22261df05f378c360431e9e24d98b5d222"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schema": "collatz-draft-provenance/v1",
+  "baseline_head": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+  "scope": "Original agent drafts and exact integrated copies; root-authored overviews, drivers, source ledger and receipts are separately frozen by source-hashes.json.",
+  "drafts": [
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "UNIT_EXIT.md",
+      "draft_sha256": "58c399584c27fb51f70ed43b9b9ac5557d58e6fcf8d350e2508b5cc05b705e03",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/UNIT_EXIT.md",
+      "integrated_sha256": "1bff7d7b7bfe5cc3155d62918b442a915113a298afc22f86a4113464f62ede1e",
+      "byte_identical": false,
+      "changes": "Explicit sigma 2001/5000, exact summable exponent 4001/4000 and classical power 42021/70025; simultaneous target/threshold step counted as successful unit exit. Reviewed in INTEGRATED_WORDING_REVIEW."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "NonunitExit.lean",
+      "draft_sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "integrated_sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "check_nonunit.py",
+      "draft_sha256": "502a384dc0ce30e9fe60dc9e7cbddae941a561795968926fd5904d67855a0e5c",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/check_nonunit.py",
+      "integrated_sha256": "5214d579965916c6ea5bc7f7d2839d11358642d86811c3c77154fb5d9f0a9af4",
+      "byte_identical": false,
+      "changes": "Added two exact integer comparisons certifying sigma 2001/5000 and a printed exponent. Existing graph and row iterations unchanged; final bytes freshly run by coordinator."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "RESIDUE17_ESCAPE.md",
+      "draft_sha256": "febcff1066ef3e6973c708046af45d7e283c33f61367951a8f37897328b328d0",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/RESIDUE17_ESCAPE.md",
+      "integrated_sha256": "febcff1066ef3e6973c708046af45d7e283c33f61367951a8f37897328b328d0",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "check_residue17.py",
+      "draft_sha256": "29f2d86978afc6b2bebbfec4eaa94e22261df05f378c360431e9e24d98b5d222",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/check_residue17.py",
+      "integrated_sha256": "29f2d86978afc6b2bebbfec4eaa94e22261df05f378c360431e9e24d98b5d222",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "UnitResidueExchange.lean",
+      "draft_sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "integrated_sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_late_crossing_3",
+      "draft_file": "GRADE_CROSSING_REVIEW.md",
+      "draft_sha256": "5d1620aee273af389e3adcf0af0352aea26f39922900ea766daef146961553ef",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/GRADE_CROSSING_REVIEW.md",
+      "integrated_sha256": "6c542244f71c9e9ec0aec75355722d3c0de1a59290eafe39526efbde296dd18a",
+      "byte_identical": false,
+      "changes": "Editorial repair of doubled LaTeX backslashes in inline formulas; reviewed mathematical target and assertions unchanged."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "DISJOINT_GRADE_CROSSINGS.md",
+      "draft_sha256": "78c3bcbfee2b3e80e8770354c95f585a6d3acb8afa0090600ae79dd5a58dd0f5",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/DISJOINT_GRADE_CROSSINGS.md",
+      "integrated_sha256": "78c3bcbfee2b3e80e8770354c95f585a6d3acb8afa0090600ae79dd5a58dd0f5",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "DisjointGradeCrossing.lean",
+      "draft_sha256": "9c7d96bb85842bb9ad61c68cc4c586f28bb38e3d017e347f6e16b640aa8b9202",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/DisjointGradeCrossing.lean",
+      "integrated_sha256": "9c7d96bb85842bb9ad61c68cc4c586f28bb38e3d017e347f6e16b640aa8b9202",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "NESTED_GRADE_REFINEMENTS.md",
+      "draft_sha256": "97f040bfffead023e74ca4502a9806cd318634bacf86cb0b9d6e3f45ff62996d",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/NESTED_GRADE_REFINEMENTS.md",
+      "integrated_sha256": "97f040bfffead023e74ca4502a9806cd318634bacf86cb0b9d6e3f45ff62996d",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "REPEATED_MESOSCOPIC_TRIPLES.md",
+      "draft_sha256": "d8fd1372cfa6b0ee450b57c134d3123ce0cfdddc6228bff4119fd8225acb4190",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/REPEATED_MESOSCOPIC_TRIPLES.md",
+      "integrated_sha256": "d8fd1372cfa6b0ee450b57c134d3123ce0cfdddc6228bff4119fd8225acb4190",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "INFORMATION_REVIEW.md",
+      "draft_sha256": "45d017f30c543c979785931cbbc00a61e23c5fc9c8f55f2e380ebc8784a2eb87",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/INFORMATION_REVIEW.md",
+      "integrated_sha256": "45d017f30c543c979785931cbbc00a61e23c5fc9c8f55f2e380ebc8784a2eb87",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_graph_contraction_3",
+      "draft_file": "INTEGRATED_WORDING_REVIEW.md",
+      "draft_sha256": "f3eb95b99d771a31437a30e19eecf150957f8c531178d6e7f89f13ee484e74d5",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/INTEGRATED_WORDING_REVIEW.md",
+      "integrated_sha256": "f3eb95b99d771a31437a30e19eecf150957f8c531178d6e7f89f13ee484e74d5",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "LOCAL_COLOR_INFORMATION.md",
+      "draft_sha256": "f38728982a0cc325f6bf2de647a7c97f83fad0eadab4fb19e89812682c72da94",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/LOCAL_COLOR_INFORMATION.md",
+      "integrated_sha256": "f38728982a0cc325f6bf2de647a7c97f83fad0eadab4fb19e89812682c72da94",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "PredictablePhysicalArms.lean",
+      "draft_sha256": "8ec11a560d94c50ff43dd7d764f350062ffb109ec6b97e88457fb9485fcb9fb8",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/PredictablePhysicalArms.lean",
+      "integrated_sha256": "8ec11a560d94c50ff43dd7d764f350062ffb109ec6b97e88457fb9485fcb9fb8",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "ORIENTED_UNIT_SUFFIX.md",
+      "draft_sha256": "ad306ab401b28e83db69919ca98cd22069b712c17db3a87ec6632af9f37f2032",
+      "integrated_path": "research/ayh-resource-reset-20261124/unit-exit/ORIENTED_UNIT_SUFFIX.md",
+      "integrated_sha256": "ad306ab401b28e83db69919ca98cd22069b712c17db3a87ec6632af9f37f2032",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "UNIT_EXIT_REVIEW.md",
+      "draft_sha256": "e66a8dd0ebe4c71f8902b2bfeb9014034d9f45d34afbae25caea6d4b5805f452",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/UNIT_EXIT_REVIEW.md",
+      "integrated_sha256": "e66a8dd0ebe4c71f8902b2bfeb9014034d9f45d34afbae25caea6d4b5805f452",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "DISJOINT_GRADE_REVIEW.md",
+      "draft_sha256": "820d2bb2928d8dd00b4624c859f7d18b53131972008a6cb54294cc5e5bcfa8eb",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/DISJOINT_GRADE_REVIEW.md",
+      "integrated_sha256": "820d2bb2928d8dd00b4624c859f7d18b53131972008a6cb54294cc5e5bcfa8eb",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "NESTED_GRADE_REVIEW.md",
+      "draft_sha256": "16a51d22f903cfb2c5f999a435fc91e20ea8fa774e10c9d3b0a7424a4b5daba0",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/NESTED_GRADE_REVIEW.md",
+      "integrated_sha256": "16a51d22f903cfb2c5f999a435fc91e20ea8fa774e10c9d3b0a7424a4b5daba0",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "REPEATED_TRIPLE_REVIEW.md",
+      "draft_sha256": "421d8ac97327acf00b13e7192488351f78f1b1a5ee8742e6a9e05a7e1c209182",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/REPEATED_TRIPLE_REVIEW.md",
+      "integrated_sha256": "421d8ac97327acf00b13e7192488351f78f1b1a5ee8742e6a9e05a7e1c209182",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "RESIDUE17_REVIEW.md",
+      "draft_sha256": "38c2853a71bcfd6a41c918bbc5dc7c04e958b1dc6e6eff52d337ed62acd3d56d",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/RESIDUE17_REVIEW.md",
+      "integrated_sha256": "38c2853a71bcfd6a41c918bbc5dc7c04e958b1dc6e6eff52d337ed62acd3d56d",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    },
+    {
+      "draft_directory": "attack_interface_selection_3",
+      "draft_file": "MIXED_ADIC_SCOPE.md",
+      "draft_sha256": "6dce48c55ec721cc08c7d748c76701ad4d9bb3b67793f16c77365970e159240b",
+      "integrated_path": "reports/ayh-resource-reset-20261124/unit-exit/MIXED_ADIC_SCOPE.md",
+      "integrated_sha256": "6dce48c55ec721cc08c7d748c76701ad4d9bb3b67793f16c77365970e159240b",
+      "byte_identical": true,
+      "changes": "None; exact copy."
+    }
+  ],
+  "prior_pr_description": {
+    "source_head": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+    "original_body_sha256": "845a0b24047298c64a727db32d94373f36630175181fab63c23da6930a5d3962",
+    "normalized_file_sha256": "7cd2c17d266dc4fe87f28ab379ec1f688c1529ad19da00b15e27eee673ca3f24",
+    "normalization": "Trailing Markdown hard-break spaces and empty end lines removed; all substantive text and complete receipt JSON preserved."
+  }
+}

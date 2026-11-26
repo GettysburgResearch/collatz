@@ -1,0 +1,57 @@
+{
+  "source_count_per_spine": 5500,
+  "finite_spines": [
+    {
+      "spine_seed": 27,
+      "physical_spine_states": 71,
+      "rows": 226296,
+      "group_count": 50964,
+      "largest_distinct_marker_fibre": 136,
+      "cases": {
+        "downstream": 192368,
+        "straddling": 20867,
+        "earlier": 13061
+      },
+      "straddling_at_even_state": 14349
+    },
+    {
+      "spine_seed": 871,
+      "physical_spine_states": 114,
+      "rows": 225442,
+      "group_count": 50504,
+      "largest_distinct_marker_fibre": 92,
+      "cases": {
+        "downstream": 197289,
+        "straddling": 15660,
+        "earlier": 12493
+      },
+      "straddling_at_even_state": 10244
+    },
+    {
+      "spine_seed": 6171,
+      "physical_spine_states": 166,
+      "rows": 219338,
+      "group_count": 50624,
+      "largest_distinct_marker_fibre": 130,
+      "cases": {
+        "downstream": 183201,
+        "straddling": 21067,
+        "earlier": 15070
+      },
+      "straddling_at_even_state": 14572
+    },
+    {
+      "spine_seed": 837799,
+      "physical_spine_states": 330,
+      "rows": 223720,
+      "group_count": 50884,
+      "largest_distinct_marker_fibre": 129,
+      "cases": {
+        "downstream": 188476,
+        "straddling": 21321,
+        "earlier": 13923
+      },
+      "straddling_at_even_state": 14697
+    }
+  ]
+}

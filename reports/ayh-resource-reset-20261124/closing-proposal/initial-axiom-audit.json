@@ -1,0 +1,414 @@
+{
+  "schema": "collatz-public-axiom-audit/v1",
+  "public_declarations": 98,
+  "previous_dependency_declarations": 70,
+  "new_declarations": 28,
+  "compiled_modules": [
+    "NonunitExit",
+    "UnitResidueExchange",
+    "ReverseBasin",
+    "DirectedEleven",
+    "DirectedElevenLocal",
+    "Residue17Closure",
+    "TwoOddCertificate",
+    "FiniteHorizon",
+    "MersenneBarrier",
+    "MersenneParity",
+    "LocalResampling",
+    "MersenneReturnKernel",
+    "MersenneFirstBad",
+    "RankThreeFamily",
+    "OppositeArm",
+    "FinalProofProposal",
+    "PublicAudit"
+  ],
+  "mathematical_modules": 16,
+  "standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_nonstandard_axiom": true,
+  "records": {
+    "NonunitExit.physical_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.directed_successor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.denom_iter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_certifies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "UnitResidueExchange.unit_one_exchange": [
+      "propext"
+    ],
+    "UnitResidueExchange.residue17_descends": [
+      "propext"
+    ],
+    "DirectedEleven.all_routes_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.all_midpoints_located": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.hit_at_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.checkedSound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.localize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.localize_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.collatz_iff_reverse_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.least_defect_not_two_odd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFiniteHorizon.no_uniform_native_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LocalResampling.iterate_color": [],
+    "LocalResampling.meet_color": [],
+    "LocalResampling.linked_color": [],
+    "LocalResampling.k_outside_every_component": [],
+    "LocalResampling.query_stride": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneReturnKernel.forty_returns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.tripled_previous": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.exact_first_bad": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzRankThree.rank_three_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.upper_has_two_odds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.two_odd_layer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_from_proposal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_iff_higher_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.reverse_binary_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary_restricted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.deep_reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_deep_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_restricted_adjacent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.runSound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_proper": [],
+    "DirectedEleven.group1_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_proper": [],
+    "DirectedEleven.group2_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_proper": [],
+    "DirectedEleven.group3_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_proper": [],
+    "DirectedEleven.group4_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_proper": [],
+    "DirectedEleven.group5_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_proper": [],
+    "DirectedEleven.group6_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_proper": [],
+    "DirectedEleven.group7_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_proper": [],
+    "DirectedEleven.group8_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_proper": [],
+    "DirectedEleven.group9_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_proper": [],
+    "DirectedEleven.group10_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_proper": [],
+    "DirectedEleven.group11_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_proper": [],
+    "DirectedEleven.group12_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_proper": [],
+    "DirectedEleven.group13_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_proper": [],
+    "DirectedEleven.group14_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_proper": [],
+    "DirectedEleven.proper_rows": [
+      "propext"
+    ],
+    "DirectedEleven.validTree_hits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.ten_tree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.hits_atClock": [],
+    "CollatzMersenneParity.ascent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_meeting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_basin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.query_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.exponent_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.family_query": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "log_sha256": "736f85562e32d014e7119fa8e5b8c263a024f9025073ff813ff120312d09216b",
+  "scope": "Public declarations at the recorded source bytes. Explicit theorem parameters remain hypotheses."
+}

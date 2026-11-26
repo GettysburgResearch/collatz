@@ -1,0 +1,29 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/positive-section/check_critical_section.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.081,
+      "stdout": "{\n  \"positive_odd_inputs_up_to\": 250000,\n  \"marked_power_sources\": 17809,\n  \"quarter_reducible_sources\": 6090,\n  \"critical_sources\": 11718,\n  \"distinct_critical_odd_endpoints\": 11718,\n  \"counts_for_surplus_0_through_7\": [\n    1092,\n    546,\n    3990,\n    2185,\n    1092,\n    546,\n    273,\n    1994\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/positive-section/check_critical_section.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13,
+      "stdout": "{\n  \"positive_odd_inputs_up_to\": 250000,\n  \"marked_power_sources\": 17809,\n  \"quarter_reducible_sources\": 6090,\n  \"critical_sources\": 11718,\n  \"distinct_critical_odd_endpoints\": 11718,\n  \"counts_for_surplus_0_through_7\": [\n    1092,\n    546,\n    3990,\n    2185,\n    1092,\n    546,\n    273,\n    1994\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite exact checks through 250000, not proof of all-input convergence"
+}

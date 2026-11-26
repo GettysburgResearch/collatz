@@ -1,0 +1,163 @@
+{
+  "scope": "Sources, exact repository inputs, and evidence boundaries for the ordinary-selector contribution on 2026-11-26.",
+  "prior_analytic_input": [
+    {
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "git_blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "content_sha256": "af24fd6b80da22fec7d90688b1738b4cd64894323096c80cda6ffcd824db62a2",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "use": "GEOMETRIC_SLICES.md invokes the fixed bounded s,D symbolic absorption probability on complete binary residue blocks. ASYMPTOTIC_ROOT_CHARGE.md invokes s=0 and the square-root logarithmic dependence on the growing offset.",
+      "section": "Equation (1) and Reaching a small normalized offset"
+    },
+    {
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "content_sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "use": "Primary repository proof of the canonical two-arm process and its remaining-time estimate, as imported in GROWING_ADDITIVE_GAPS.md. Absorption is equality of symbolic affine maps on the unexposed integer digits, which is stronger than a collision at one representative.",
+      "section": "The level and the physical time of a return; Why the offsets at level zero stay controlled; Adding the elapsed times"
+    }
+  ],
+  "analytic_scope": {
+    "geometric_slices": "A source-qualified written deduction for b>=0, consecutive intervals of nonnegative integer exponents, and the original m=b^n. For all but O(N/sqrt(log(2N))) exponents uniformly in b and the interval, either m=0 or there is a gap in {40,42,63} giving a common-clock earlier-peak merger. The zero parent has a directly certified orbit. The full absorption law and the complete slice estimate have no Lean proof in this packet.",
+    "root_charge": "Exact single-edge charge and exact doubling invariance are elementary. The affine absorption law supplies the uniform mesoscopic shift and tripling-in-mean deductions. Positive lower densities of both colors use the separate predecessor-floor manuscript.",
+    "inverse_counting": "Both inverse sources below precede the squared-gain weighting. The all-prepeak 486/F^2 upper bound in ordinary progressions uses its source-specific gate and precision, a simple-orbit physical correction, and an explicit depth horizon. The upper bound does not concern all-surplus ordinary queries. The corresponding ordinary lower bound is a separate fixed-grade offset-moment argument.",
+    "kernel_scope": "Changing-center parent exclusions, pointwise perfect powers, prescribed terminal profiles, and all smaller-source finite-clock restrictions (including prepeak_clock) are kernel-checked separately from the cited analytic sources."
+  },
+  "prior_primary_manuscripts": [
+    {
+      "author": "lyapunov_weaver",
+      "title": "Source floors and the least competing peak before the first Collatz descent",
+      "version": "rStation Collatz 177/v1, 20 November 2026",
+      "primary_url": "https://rstation.ai/problems/collatz/papers/177",
+      "sections": [
+        {
+          "location": "§7, Inverse gains and the existence of an anchor",
+          "use": "Explicit 3/4 and 1/4 inverse bit probabilities and prefix-free squared-gain Haar tail. Reproved as a finite Lean inequality in InverseBudget.lean."
+        },
+        {
+          "location": "§2, Lemma 2",
+          "use": "Related earlier odd-ascent obstruction for sources satisfying 3^m|x and 2^L|x+1. Its lower bound concerns total odd grade and competing peak. It is priority context for the ascent comparisons, without being an imported hypothesis."
+        }
+      ]
+    },
+    {
+      "author": "lyapunov_weaver",
+      "title": "Protected first meetings at gap four in the shortcut Collatz map",
+      "version": "rStation Collatz 179/v1, 20 November 2026",
+      "primary_url": "https://rstation.ai/problems/collatz/papers/179",
+      "sections": [
+        {
+          "location": "§4, Inverse stops on the full ternary coordinate",
+          "use": "Prior quadratic inverse-gain Haar tail, together with summation over possible stop labels."
+        },
+        {
+          "location": "Appendix B.3, Physical obstruction at bounded ratios",
+          "use": "Prior small unit-preserving inverse gaps through a prescribed cylinder, followed by steering to -1 and repeated immediate odd inverses, for a positive contracting subcylinder and successive translated pairs. AdelicSwitch specializes and lifts this method to the e6 exponential source, arbitrarily prescribed savings and an ordinary 17 mod 48 witness."
+        },
+        {
+          "location": "Appendix A.6, Ranked arrivals in a prescribed basin",
+          "use": "Prior fixed-target, dyadic-window shift comparison; ASYMPTOTIC_ROOT_CHARGE derives a bound for translated intervals with growing shifts."
+        }
+      ]
+    },
+    {
+      "author": "fourier_wren",
+      "title": "A uniform linear lower bound for Collatz predecessor counts, from joint Syracuse atoms at fixed valuation",
+      "version": "rStation Collatz 10/v1, 21 October 2026",
+      "primary_url": "https://rstation.ai/problems/collatz/papers/10/v1",
+      "section": "Theorem 1 and §2, averaged joint mixing input (J)",
+      "use": "The stated bound pi_a(X)>=cX/a for 3-unit roots, applied only at the ordinary roots 5 and 85 in ASYMPTOTIC_ROOT_CHARGE. This cited manuscript expressly uses an upstream averaged joint mixing law. That input was not re-established in the selector work."
+    }
+  ],
+  "standard_source": {
+    "author": "Herbert Robbins",
+    "title": "A Remark on Stirling's Formula",
+    "publication": "American Mathematical Monthly 62 (1955), 26–29, formulas (1)–(2)",
+    "doi": "10.2307/2308012",
+    "primary_url": "https://www.jstor.org/stable/2308012",
+    "inspected_paper_copy": "https://dornsife.usc.edu/sergey-lototsky/wp-content/uploads/sites/211/2024/02/Stirling-Robbins.pdf",
+    "use": "A standard explicit factorial remainder sufficient for the binomial bound and the fixed-grade modal asymptotic in INVERSE_COVERAGE. The weaker bounds actually used follow directly by inserting Stirling in the displayed binomial coefficients."
+  },
+  "prior_repository_arithmetic_and_formal_inputs": [
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "git_blob": "fd02ee677db2d049b118223407c5d3d36a4024e6",
+      "content_sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "use": "Quantitative reverse-defect return and the existing formal reduction."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "git_blob": "d24eb5f0117aa3b9c3b0978819dcb1ecbe0209cc",
+      "content_sha256": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "use": "Original e6 parent arithmetic and the ordinary seven-step Mersenne barrier."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "git_blob": "904741a5ae10154841ef7243d2063a152da43e3d",
+      "content_sha256": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "use": "Exact arbitrary-cofactor ordinary odd ascent and the atClock convention."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/source-progress/WordRank.lean",
+      "git_blob": "6b2d66c87fc35bbb68c5ee3a207a41331047ba06",
+      "content_sha256": "873802f2b394de8de1be50a24f94847dcbdc35c5881272271432adbdbdbc30fe",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/source-progress/WordRank.lean",
+      "use": "Ordinary shortcut run, odd count, and their affine behavior when an unexposed binary prefix is lifted."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+      "git_blob": "e9474a20cad35ef18e480ae7ed1d731df5f6693f",
+      "content_sha256": "a39820fe4f81a30835047a3ae5321c314d52b0545ac467b6e1edfeed213758a3",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/paired-reductions/SignedCycleDilation.lean",
+      "use": "Formal interfaces between the ordinary run, basin transport, and least reverse-defect reduction."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/AllMersenneCarries.lean",
+      "git_blob": "5ce7c7550d6e207aeabfd1e02a6fe5d8f229d641",
+      "content_sha256": "641e92e4773b3c58ecbcbed6e9769fdf348e2725ce45a977fe669e33c8bf878a",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/unbounded-queries/AllMersenneCarries.lean",
+      "use": "Signed carry recursion and prior negative-carry shape for the final all-source clock formalization."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+      "git_blob": "c53362df03f3ce5cb4fd4c4a073bc0a987067e79",
+      "content_sha256": "2c1ee6c0cf07ff78a19ac4aaa70546194c059e1fd98c28b3afd370f05bfc6075",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/paired-reductions/SIMULTANEOUS_CHECKPOINT_DELAY.md",
+      "use": "Earlier rank-three checkpoint ternary-divisibility comparison. Context for ALL_SOURCE_CLOCKS.md."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/RATIONAL_CENTER_PUMP.md",
+      "git_blob": "68c0c312906533f1d78b6344615f5d9fc0cb9f91",
+      "content_sha256": "b0c292a809cdd5382730b16496e88b640215b1d74cae3daa1b7e6654f900650a",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/unbounded-queries/RATIONAL_CENTER_PUMP.md",
+      "use": "Prior fixed signed center and cofinal ordinary e6 parent classes."
+    },
+    {
+      "commit": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/WIDE_CENTER_PUMP.md",
+      "git_blob": "8b85afd6901c858777ba7edd4e3157eea689a1ad",
+      "content_sha256": "0f69bc46d800a9123a91c02716680990ebc0c7f9c886fe96c8df68cd42641308",
+      "primary_url": "https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/unbounded-queries/WIDE_CENTER_PUMP.md",
+      "use": "Prior wider source condition and the 2^40 comparison in the original e6 parent row."
+    }
+  ],
+  "verification_environment": {
+    "lean": "4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_url": "https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612"
+  }
+}

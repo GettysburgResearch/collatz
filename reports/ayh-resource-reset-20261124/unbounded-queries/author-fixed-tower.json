@@ -1,0 +1,26 @@
+{
+  "late_mergers": [
+    {
+      "first_asynchronous_deadline": 22,
+      "horizon": 17,
+      "rank": 360448,
+      "verified_common_clock": 22
+    },
+    {
+      "first_asynchronous_deadline": 24,
+      "horizon": 19,
+      "rank": 3276800,
+      "verified_common_clock": 24
+    }
+  ],
+  "lower_cone": {
+    "asynchronous_control_endpoint": 150083,
+    "high_grade": 251,
+    "matches": 309385
+  },
+  "reflection": {
+    "clock_pairs": 18240,
+    "meetings": 31
+  },
+  "threshold_grade": 2253
+}

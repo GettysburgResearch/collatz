@@ -1,0 +1,47 @@
+{
+  "scope": "Strict recompile of two whitespace-normalized sources and their affected closing consumers. All unchanged imports are root-fresh objects from the preceding three receipts. This is five additional invocations, not five new modules.",
+  "modules": [
+    {
+      "module": "ShadowTernaryDigits",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryDigits.lean",
+      "sha256": "6949878cae845dea016d240b51792b1869221e12fd75ff09392fff5f4faf25fb",
+      "exit_code": 0,
+      "seconds": 8.171,
+      "output": "'ShadowTernaryDigits.shadow_equation' depends on axioms: [propext]\n'ShadowTernaryDigits.digit_displacement' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.three_lifts' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.full_block' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.cofinal_residue' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.finite_screen' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "ShadowTernaryRescue",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ShadowTernaryRescue.lean",
+      "sha256": "7fe374b138cd1314bbd5c311fa350a77bb45dba55f9d1dd8a7050b79e6d4ff6b",
+      "exit_code": 0,
+      "seconds": 4.171,
+      "output": "'ShadowTernaryRescue.shadow_parameter' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryRescue.ternary_row_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ShadowTernaryRescue.simultaneous_shadow_rescue' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "DefectClockFloor",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/DefectClockFloor.lean",
+      "sha256": "1387a760fecfb4c4c14625026af89378fd0441675172bd7dae3e632afc1d14b3",
+      "exit_code": 0,
+      "seconds": 1.557,
+      "output": "'DefectClockFloor.source_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_all_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_ternary_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_simultaneous_shadow_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ClosingProposal",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/ClosingProposal.lean",
+      "sha256": "7d713aeae926be6c0987c17a551a21b3551d9b7cce3c61276199a6901cb936c3",
+      "exit_code": 0,
+      "seconds": 1.415,
+      "output": "'ClosingProposal.residual_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ClosingProposal.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ClosingProposal.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "PublicPairedAudit",
+      "path": "research/ayh-resource-reset-20261124/paired-reductions/PublicPairedAudit.lean",
+      "sha256": "cd9c130971a3089ab1d2a8f662672222c3300656c6b5dcd880ea089a87cdb7e1",
+      "exit_code": 0,
+      "seconds": 1.203,
+      "output": "'CollatzCheckpointUnitExit.firstUnitExit' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.secondUnitExit' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.realWord_above' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCheckpointUnitExit.distinct_at_positive_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCheckpointUnitExit.earlierOddQuotients' depends on axioms: [propext, Quot.sound]\n'CollatzCheckpointUnitExit.twoOrdinaryExits' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.lift' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.cycle_lifts' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.nat_orbit' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.basin_value' does not depend on any axioms\n'SignedCycleDilation.lift_value' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.paired' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.no_least_of_pair' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.minus1183' depends on axioms: [propext, Quot.sound]\n'SignedCycleDilation.least_not_minus1183' depends on axioms: [propext, Quot.sound]\n'DifferentCycleAnchors.align' depends on axioms: [propext, Quot.sound]\n'DifferentCycleAnchors.two_anchors' depends on axioms: [propext, Quot.sound]\n'DifferentCycleAnchors.height_debt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneTwoCenter.progress' depends on axioms: [propext, Quot.sound]\n'MersenneTwoCenter.least_excluded' depends on axioms: [propext, Quot.sound]\n'GuardedResidueCover.census' does not depend on any axioms\n'GuardedResidueCover.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.run_pos' depends on axioms: [propext, Quot.sound]\n'OddClockFloor.small_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.linear_lower' depends on axioms: [propext, Quot.sound]\n'OddClockFloor.odd_clock_upper' depends on axioms: [propext, Quot.sound]\n'OddClockFloor.bad_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.bad_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.bad_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OddClockFloor.bad_tower_clock_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ShadowTernaryDigits.index_equation' depends on axioms: [propext]\n'ShadowTernaryDigits.shadow_equation' depends on axioms: [propext]\n'ShadowTernaryDigits.digit_displacement' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.three_lifts' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.full_block' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.cofinal_residue' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryDigits.finite_screen' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryRescue.shadow_parameter' depends on axioms: [propext, Quot.sound]\n'ShadowTernaryRescue.ternary_row_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ShadowTernaryRescue.simultaneous_shadow_rescue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.source_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_all_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_1024' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_ternary_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DefectClockFloor.least_not_simultaneous_shadow_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedRankDeadlines.no_rank_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CenterPhaseObstruction.smaller_never_hits' depends on axioms: [propext, Quot.sound]\n'CenterPhaseObstruction.parent_phase_clock' depends on axioms: [propext, Quot.sound]\n'CenterPhaseObstruction.limiting_query_impossible' depends on axioms: [propext, Quot.sound]\n'ClosingProposal.residual_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ClosingProposal.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ClosingProposal.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "seconds": 16.519
+}

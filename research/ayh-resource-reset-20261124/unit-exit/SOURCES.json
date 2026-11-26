@@ -1,0 +1,234 @@
+{
+  "schema": "collatz-unit-exit-source-ledger/v1",
+  "baseline_pr": 197,
+  "baseline_head": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+  "baseline_tree": "ac6707bcc50a631b7fcc3cb99844be77cf609ba5",
+  "intake_utc": "2026-11-24 11:47:40 UTC",
+  "scope": "New written deductions and exact finite/formal execution. Claim-level qualifications survive; retrieved metadata is not a mathematical review.",
+  "repository_sources": [
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "claim": "P: equation (1), complete-grid pair tail, including equal-grade polynomial offsets",
+      "reading_depth": "Full source read by coordinator and reviewers; finite prefix and stopping-state use reconstructed. Imported stochastic inputs remain SOURCE-QUALIFIED."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/DIRECTED_TRIPLING.md",
+      "blob": "8dcd86c6c2242d5680a9f790be4d9b45395236b4",
+      "claim": "Bounded directed return and inequality (3), both ordered cut populations",
+      "reading_depth": "Full source read by coordinator and reviewer; high/low return, modular phase selection and injective finite affine list reconstructed. Prior finite certificate inventory not rerun."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_ONE_RESIDUE.md",
+      "blob": "3d4d195b0e1e767e02dc4c32111f9f96e39d6468",
+      "claim": "Ordered class-1 exchange and aggregate D(X)<=C D1(C'X)",
+      "reading_depth": "Full source read. New class-1 exchange re-proved and freshly built in Lean. Aggregate bounded-multiplicity reduction retained as a pinned written input; older 35-clock and class-13 finite certificates not rerun."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/TRIPLING_VARIATION.md",
+      "blob": "870b1e3d348cd2f88ec25b3e5c4a9e1878e65456",
+      "claim": "Variation of actual invariant labels",
+      "reading_depth": "Full source read in preceding checkpoint and reused with its exact binary-label domain."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+      "blob": "71ca2c94331f44310897dae105e1337e5874dcbb",
+      "claim": "Reciprocal summability and power-sparse dyadic-limit consumers",
+      "reading_depth": "Full source reconstructed in preceding checkpoint. M and classical .84 consumers remain distinct."
+    },
+    {
+      "pr": 195,
+      "ref": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-global-closure-20261124/round5/head/UNIFORM_TRIPLES.md",
+      "blob": "aa414f965a43d220e422cc0c8ceaf6e3288b91f0",
+      "claim": "U1: E(1+sigma)^u <= C_u Q^u, u<3/2, Q=1+A^2+log(2+Z*)",
+      "reading_depth": "Full source read by coordinator and two agents; new use at conditional polynomial-offset prefixes reconstructed. Its uniform paper-13 mixed-clock premise is SOURCE-QUALIFIED, not independently proved here."
+    },
+    {
+      "pr": 197,
+      "ref": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "paths": [
+        "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_ROUTING.md",
+        "research/ayh-resource-reset-20261124/crossing-step/PERIODIC_FOUR_SUFFIX_SCHEDULE.md",
+        "research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md",
+        "research/ayh-resource-reset-20261124/crossing-step/WEIGHTED_TWO_HEAD_GRAPH.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/ROUNDED_HEAD_DESCENT.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/ADAPTIVE_PAIRED_PROJECTION.md",
+        "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md"
+      ],
+      "claim": "R: ordinary source envelopes, regeneration, original strip incidence and one-coordinate finite-grid transfer; exact suffix route and earlier M source pins",
+      "reading_depth": "Prior completed local proofs reused; current coordinate, source weight, bit budget and counting scopes rechecked. No old expensive replay repeated."
+    },
+    {
+      "pr": 201,
+      "ref": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "path": "research/killed-green-head-closure-20261124/prefix-density/README.md",
+      "blob": "8dd9d53dea58a99a561dd6c90913974cd417814f",
+      "claim": "Theorems A-D1: fixed-target antichains and shrinking-window phase populations",
+      "reading_depth": "Full manuscript read by coordinator and literature agent. Antichain mechanism independently reconstructed. Existing result credited; external atom-floor F and synchronization S not audited or adopted as unconditional."
+    },
+    {
+      "pr": 203,
+      "ref": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md",
+      "blob": "86e77570121079a5fefffc65ad23442604bb0f44",
+      "claim": "Fixed nonperiodic target, disjoint inverse-depth bank and linear mixed-adic depth",
+      "reading_depth": "Full manuscript read by coordinator and literature agent; nonperiodicity and depth distinctness compared with the selected-cell problem. Its paper-48 floor F not independently audited. No conditional color-information upper bound inferred."
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "AYH",
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "arxiv": "2105.14697",
+      "claim": "Mixed binary/ternary rewriting and the directed-return architecture, section 4.5",
+      "status": "Primary author paper read in prior checkpoint. New dictionaries are finite obstructions for actual defect paths, not termination of the full eleven-rule system."
+    },
+    {
+      "id": "KL84",
+      "authors": "Ilia Krasikov and Jeffrey C. Lagarias",
+      "title": "Bounds for the 3x+1 problem using difference inequalities",
+      "url": "https://arxiv.org/pdf/math/0205002",
+      "publication": "Acta Arithmetica 109 (2003), 237-258",
+      "claim": "Theorem 6.1, every fixed positive target prime to three has at least X^0.84 predecessors for sufficiently large X",
+      "status": "Published primary paper reopened by coordinator. Used only by the classical oriented unit/suffix lower bound."
+    },
+    {
+      "id": "AZUMA",
+      "author": "Kazuoki Azuma",
+      "title": "Weighted sums of certain dependent random variables",
+      "doi": "10.2748/tmj/1178243286",
+      "url": "https://doi.org/10.2748/tmj/1178243286",
+      "claim": "Bounded-increment martingale concentration",
+      "status": "Published classical input. The new maximal stopping-time form follows from the exponential supermartingale; DOI resolver opened, full publisher page not machine-readable."
+    },
+    {
+      "id": "MASSEY",
+      "author": "James L. Massey",
+      "title": "Causality, Feedback and Directed Information",
+      "publication": "ISITA 1990",
+      "url": "https://www.isiweb.ee.ethz.ch/archive/massey_pub/pdf/BI532.pdf",
+      "claim": "Equation (7), separation of past information from later dependence",
+      "status": "Full primary six-page paper retrieved. Motivation only; the overlapping-block KL lower bound is proved in the new note."
+    },
+    {
+      "id": "M",
+      "author": "Lech Mazur",
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "version": "v1.0, 2026-09-06",
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "claim": "Positive lower natural density for ancestors of each fixed positive ternary-unit target",
+      "status": "SOURCE-QUALIFIED external reported formalization, not rebuilt. Exact earlier pins preserved in baseline PR197 MACROSCOPIC_PAIR_CLOSURE. Used only for specified closing implications, not the finite certificates, escape laws or new Lean identities."
+    }
+  ],
+  "latest_metadata_snapshot": [
+    {
+      "pr": 203,
+      "head": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "updated_at": "2026-11-24T10:29:47Z",
+      "scope": "Named exact manuscript(s) above; other contents not blanket-reviewed"
+    },
+    {
+      "pr": 202,
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "updated_at": "2026-11-24T08:49:53Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 201,
+      "head": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "updated_at": "2026-11-24T11:21:44Z",
+      "scope": "Named exact manuscript(s) above; other contents not blanket-reviewed"
+    },
+    {
+      "pr": 200,
+      "head": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "updated_at": "2026-11-24T10:37:07Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 199,
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "updated_at": "2026-11-24T07:10:44Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 198,
+      "head": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "updated_at": "2026-11-24T04:33:32Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 197,
+      "head": "2c1397d2adcadc620381bca20c465f3bf31a6f8e",
+      "title": "Collatz: prescribed head tests, joint incidence and Lean basin reduction",
+      "updated_at": "2026-11-24T11:04:45Z",
+      "scope": "Named exact manuscript(s) above; other contents not blanket-reviewed"
+    },
+    {
+      "pr": 196,
+      "head": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "updated_at": "2026-11-24T04:32:50Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 195,
+      "head": "fbe68bf1b13b797843691080d782f4262a5c4468",
+      "title": "Collatz: integral points, even-lift bounds and marked residue routing",
+      "updated_at": "2026-11-24T10:57:37Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 194,
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "title": "Collatz: bounded carry births, binary substitution rigidity, and verified finite kernels",
+      "updated_at": "2026-11-24T04:16:49Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 193,
+      "head": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "title": "Collatz: pointwise paired bounds, complete denominators, and common landings",
+      "updated_at": "2026-11-24T10:47:44Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    },
+    {
+      "pr": 192,
+      "head": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "title": "Collatz: complete-graph rank attempts and fixed-source renewal",
+      "updated_at": "2026-11-24T10:05:22Z",
+      "scope": "Metadata refresh only at this head; mathematical inputs, if any, use the older exact claim pins above or the prior checkpoint ledger"
+    }
+  ],
+  "new_development": {
+    "agents": 3,
+    "requested_agent_model": "gpt-6.2-astra",
+    "streams": [
+      "nonunit and residue17 pressure escape",
+      "weighted four-ray and mesoscopic three-class geometry",
+      "ordinary color information and directed-source/literature review"
+    ],
+    "formal_scope": "Four new modules, 15 public theorems; main three-module build and separate residue exchange build.",
+    "finite_scope": "Two exact forbidden-word graph reconstructions, each with two decoders, complete fixed-width dictionary and all row-sum iterations. Infinite implications remain written."
+  }
+}

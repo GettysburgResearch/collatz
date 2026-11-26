@@ -1,0 +1,1226 @@
+{
+  "scope": "Explicit public theorem audits. Standard axioms only. Theorem hypotheses, including ResidualExclusion, remain hypotheses.",
+  "earlier_declarations": 100,
+  "new_declarations": 52,
+  "declarations": [
+    {
+      "declaration": "NonunitExit.physical_chain",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "NonunitExit.directed_successor",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "NonunitExit.shadow_lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "NonunitExit.denom_iter",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "NonunitExit.shadow_certifies",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "UnitResidueExchange.unit_one_exchange",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "UnitResidueExchange.residue17_descends",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.reverse_generates",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.reverse_binary_generates",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.collatz_iff_reverse_binary_restricted",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.collatz_iff_reverse_binary",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.deep_reverse_generates",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.collatz_iff_deep_reverse_binary",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzReverseBasin.collatz_iff_restricted_adjacent",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.runSound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.checkedSound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group0_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group0_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group0_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group1_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group1_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group1_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group2_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group2_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group2_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group3_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group3_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group3_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group4_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group4_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group4_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group5_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group5_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group5_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group6_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group6_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group6_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group7_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group7_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group7_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group8_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group8_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group8_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group9_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group9_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group9_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group10_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group10_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group10_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group11_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group11_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group11_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group12_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group12_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group12_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group13_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group13_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group13_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group14_covered",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group14_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.group14_proper",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.all_midpoints_located",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.all_routes_checked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.proper_rows",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.validTree_hits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.ten_tree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.hit_at_ten",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "DirectedEleven.localize",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "Residue17Closure.localize_seventeen",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "Residue17Closure.collatz_iff_reverse_seventeen",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzTwoOdd.two_odd_unbounded",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzTwoOdd.two_odd_progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzTwoOdd.least_defect_not_two_odd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzFiniteHorizon.no_uniform_native_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "MersenneBarrier.mersenne_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "MersenneBarrier.mersenne_family",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "MersenneBarrier.three_odd_upper",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "MersenneBarrier.three_odd_family",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneParity.hits_atClock",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneParity.ascent",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneParity.even_mersenne_meeting",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneParity.even_mersenne_basin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "LocalResampling.iterate_color",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "LocalResampling.meet_color",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "LocalResampling.linked_color",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "LocalResampling.k_outside_every_component",
+      "axioms": [],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "LocalResampling.query_stride",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "MersenneReturnKernel.forty_returns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneFirstBad.tripled_previous",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzMersenneFirstBad.exact_first_bad",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzRankThree.rank_three_family",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "FinalProofProposal.upper_has_two_odds",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "FinalProofProposal.two_odd_layer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "FinalProofProposal.collatz_from_proposal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "FinalProofProposal.collatz_iff_higher_rank",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzOppositeArm.query_progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzOppositeArm.exponent_family",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzOppositeArm.family_query",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "CollatzQuantitativeReturn.bounded_return",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "FinalProofProposal.quantitative_return",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicAudit"
+    },
+    {
+      "declaration": "TernaryPowerLift.period",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "TernaryPowerLift.cofinal",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.runAdd",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.oddsAdd",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.halves",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.powOdd",
+      "axioms": [
+        "propext"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.wordRow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.liftPrefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.unitRun",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.finishRow",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "WordRank.exactRankRow",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "OrdinaryWordRealization.upper",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "OrdinaryWordRealization.lower",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "OrdinaryWordRealization.powerFinish",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "OrdinaryWordRealization.realization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.hitsRun",
+      "axioms": [],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.basinRun",
+      "axioms": [],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.delayed_tail_drop",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.even_tail_drop",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "PositiveWordDescent.dense_progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzSignedSeventeen.all_reflected_paths",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.lift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.iterate_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.edge_label",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.linked_iff_label",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.dyadic_labels_ne",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.shadow_residue",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.label_implies_linked",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.exceptions_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.typical_linked_iff_label",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "LiftedLattice.grid_census",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "SourceProgressCases.tail_case_progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "SourceProgressCases.least_defect_not_tail",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "SourceProgressCases.dense_closing_cases",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "SourceProgressCases.collatz_from_remaining",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "SourceProgressCases.collatz_iff_remaining",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.five_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.seventeen_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.two_bad_checkpoints",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.exclude_sixteenth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.checkpoint_exponents",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneTwoCheckpoints.no_negative_rational_pair",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "MersenneProgressCases.sixteenth_closure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "MersenneProgressCases.least_defect_not_sixteenth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "MersenneProgressCases.cylinder_closure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "MersenneProgressCases.least_defect_not_cylinder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneRescueWords.ordinary_meet",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneRescueCylinder.cylinder_meeting",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "CollatzMersenneRescueCylinder.cylinder_first_bad_excluded",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "FinalProgressProposal.collatz_from_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    },
+    {
+      "declaration": "FinalProgressProposal.collatz_iff_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "audit_module": "PublicProgressAudit"
+    }
+  ],
+  "success": true
+}

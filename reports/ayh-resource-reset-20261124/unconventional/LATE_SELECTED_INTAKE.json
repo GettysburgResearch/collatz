@@ -1,0 +1,60 @@
+{
+  "retrieved_utc": "2026-11-26T20:43:43Z",
+  "scope": "Metadata refresh of six selected PRs; full proof reviews retain their exact source pins.",
+  "pull_requests": [
+    {
+      "number": 197,
+      "title": "Collatz: unbounded ordinary queries and 405-lap least-defect exclusion",
+      "head_sha": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "head": "research/ayh-resource-reset-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197",
+      "draft": true,
+      "updated_at": "2026-11-25T18:38:19Z"
+    },
+    {
+      "number": 193,
+      "title": "Collatz: ordinary trace onset, joint boundaries and cycle constraints",
+      "head_sha": "23b7d326a43feb21a827a9024fc24eb10d944338",
+      "head": "research/astra-universal-descent-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "draft": true,
+      "updated_at": "2026-11-26T20:41:45Z"
+    },
+    {
+      "number": 195,
+      "title": "Collatz: ordinary merger progressions, source bands and critical limits",
+      "head_sha": "f192322f70073ba44bc9f98785a51c27a4da9ee5",
+      "head": "research/astra-global-closure-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "draft": true,
+      "updated_at": "2026-11-25T18:38:08Z"
+    },
+    {
+      "number": 201,
+      "title": "Collatz: strict-record renewal dimension and two-coordinate escape rigidity",
+      "head_sha": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "head": "gpt62/killed-green-head-closure-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "draft": true,
+      "updated_at": "2026-11-25T18:06:24Z"
+    },
+    {
+      "number": 206,
+      "title": "Prove the sharp 23-step Collatz pair cover and a finite-count criterion for convergence",
+      "head_sha": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "head": "research/lean-clock-packing-20261124",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206",
+      "draft": true,
+      "updated_at": "2026-11-25T19:00:11Z"
+    },
+    {
+      "number": 210,
+      "title": "Critical-record rational rigidity and a three-place Subspace Theorem attack",
+      "head_sha": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "head": "research/critical-record-rational-rigidity-20261125",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/210",
+      "draft": true,
+      "updated_at": "2026-11-25T17:15:26Z"
+    }
+  ]
+}

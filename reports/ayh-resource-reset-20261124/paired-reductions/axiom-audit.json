@@ -1,0 +1,847 @@
+{
+  "scope": "Exhaustive non-private theorem declarations in the 41 mathematical modules built in this pass, audited through three public audit modules.",
+  "mathematical_modules": 41,
+  "audit_modules": 3,
+  "compiler_invocations": 49,
+  "public_theorems": 204,
+  "new_public_theorems": 52,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declarations": {
+    "NonunitExit.physical_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.directed_successor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.denom_iter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NonunitExit.shadow_certifies": [
+      "propext",
+      "Quot.sound"
+    ],
+    "UnitResidueExchange.unit_one_exchange": [
+      "propext"
+    ],
+    "UnitResidueExchange.residue17_descends": [
+      "propext"
+    ],
+    "CollatzReverseBasin.reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.reverse_binary_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary_restricted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.deep_reverse_generates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_deep_reverse_binary": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzReverseBasin.collatz_iff_restricted_adjacent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.runSound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DirectedEleven.checkedSound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group0_proper": [],
+    "DirectedEleven.group1_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group1_proper": [],
+    "DirectedEleven.group2_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group2_proper": [],
+    "DirectedEleven.group3_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group3_proper": [],
+    "DirectedEleven.group4_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group4_proper": [],
+    "DirectedEleven.group5_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group5_proper": [],
+    "DirectedEleven.group6_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group6_proper": [],
+    "DirectedEleven.group7_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group7_proper": [],
+    "DirectedEleven.group8_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group8_proper": [],
+    "DirectedEleven.group9_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group9_proper": [],
+    "DirectedEleven.group10_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group10_proper": [],
+    "DirectedEleven.group11_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group11_proper": [],
+    "DirectedEleven.group12_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group12_proper": [],
+    "DirectedEleven.group13_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group13_proper": [],
+    "DirectedEleven.group14_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.group14_proper": [],
+    "DirectedEleven.all_midpoints_located": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.all_routes_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.proper_rows": [
+      "propext"
+    ],
+    "DirectedEleven.validTree_hits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.ten_tree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.hit_at_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DirectedEleven.localize": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.localize_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Residue17Closure.collatz_iff_reverse_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.two_odd_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzTwoOdd.least_defect_not_two_odd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzFiniteHorizon.no_uniform_native_merger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.mersenne_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneBarrier.three_odd_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.hits_atClock": [],
+    "CollatzMersenneParity.ascent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_meeting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneParity.even_mersenne_basin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LocalResampling.iterate_color": [],
+    "LocalResampling.meet_color": [],
+    "LocalResampling.linked_color": [],
+    "LocalResampling.k_outside_every_component": [],
+    "LocalResampling.query_stride": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneReturnKernel.forty_returns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.tripled_previous": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneFirstBad.exact_first_bad": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzRankThree.rank_three_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.upper_has_two_odds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.two_odd_layer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_from_proposal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.collatz_iff_higher_rank": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.query_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.exponent_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOppositeArm.family_query": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzQuantitativeReturn.bounded_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProofProposal.quantitative_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TernaryPowerLift.period": [
+      "propext"
+    ],
+    "TernaryPowerLift.cofinal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.runAdd": [
+      "propext"
+    ],
+    "WordRank.oddsAdd": [
+      "propext"
+    ],
+    "WordRank.halves": [
+      "propext"
+    ],
+    "WordRank.powOdd": [
+      "propext"
+    ],
+    "WordRank.wordRow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WordRank.liftPrefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.unitRun": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.finishRow": [
+      "propext",
+      "Quot.sound"
+    ],
+    "WordRank.exactRankRow": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.powerFinish": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OrdinaryWordRealization.realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.hitsRun": [],
+    "PositiveWordDescent.basinRun": [],
+    "PositiveWordDescent.delayed_tail_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.even_tail_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PositiveWordDescent.dense_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzSignedSeventeen.all_reflected_paths": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.iterate_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.edge_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.linked_iff_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.dyadic_labels_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.shadow_residue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.label_implies_linked": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LiftedLattice.exceptions_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.typical_linked_iff_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LiftedLattice.grid_census": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.tail_case_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.least_defect_not_tail": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.dense_closing_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.collatz_from_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SourceProgressCases.collatz_iff_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.five_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.seventeen_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.two_bad_checkpoints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.exclude_sixteenth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.checkpoint_exponents": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneTwoCheckpoints.no_negative_rational_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.sixteenth_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.least_defect_not_sixteenth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.cylinder_closure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneProgressCases.least_defect_not_cylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueWords.ordinary_meet": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueCylinder.cylinder_meeting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzMersenneRescueCylinder.cylinder_first_bad_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProgressProposal.collatz_from_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FinalProgressProposal.collatz_iff_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.firstUnitExit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.secondUnitExit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.realWord_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.distinct_at_positive_shadow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.earlierOddQuotients": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzCheckpointUnitExit.twoOrdinaryExits": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.cycle_lifts": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.nat_orbit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.basin_value": [],
+    "SignedCycleDilation.lift_value": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.paired": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.no_least_of_pair": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.minus1183": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SignedCycleDilation.least_not_minus1183": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.align": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.two_anchors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "DifferentCycleAnchors.height_debt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MersenneTwoCenter.progress": [
+      "propext",
+      "Quot.sound"
+    ],
+    "MersenneTwoCenter.least_excluded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GuardedResidueCover.census": [],
+    "GuardedResidueCover.least_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.run_pos": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.small_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.linear_lower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.odd_clock_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_drop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_clock_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddClockFloor.bad_tower_clock_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.index_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.shadow_equation": [
+      "propext"
+    ],
+    "ShadowTernaryDigits.digit_displacement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.three_lifts": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.full_block": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.cofinal_residue": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryDigits.finite_screen": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.shadow_parameter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.ternary_row_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ShadowTernaryRescue.simultaneous_shadow_rescue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.source_progress": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_all_clocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_1024": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_not_ternary_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DefectClockFloor.least_not_simultaneous_shadow_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FixedRankDeadlines.no_rank_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.smaller_never_hits": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.parent_phase_clock": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CenterPhaseObstruction.limiting_query_impossible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ClosingProposal.residual_survives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosingProposal.collatz_from_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ClosingProposal.collatz_iff_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "distinct_compiled_modules": 44,
+  "normalization_note": "Five final recompiles follow three trailing-whitespace removals in two modules; formatting-execution.json and formatting-provenance.json record the exact changes. Public theorem names and axiom sets are unchanged."
+}

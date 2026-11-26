@@ -1,0 +1,280 @@
+{
+  "schema": "collatz-source-progress-lean-execution/v1",
+  "baseline_commit": "b27a6fe31a487adf5615e173329ad009b975a3cd",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "scope": "All 17 inherited and 12 new mathematical modules plus two public audits were compiled from source in dependency order. The repository object directory started empty. Root executed sequential batches as development completed; the final matching successful invocation of each module is listed. No author-produced local object was used by root. Mathlib used its pinned cache. This is not a claim of one uninterrupted shell-script run.",
+  "modules": [
+    {
+      "module": "NonunitExit",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+      "seconds": 4.426,
+      "exit_code": 0,
+      "output": "'NonunitExit.physical_chain' depends on axioms: [propext, Quot.sound]\n'NonunitExit.directed_successor' depends on axioms: [propext, Quot.sound]\n'NonunitExit.shadow_lift' depends on axioms: [propext, Quot.sound]\n'NonunitExit.denom_iter' depends on axioms: [propext, Quot.sound]\n'NonunitExit.shadow_certifies' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "UnitResidueExchange",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8",
+      "seconds": 1.564,
+      "exit_code": 0,
+      "output": "'UnitResidueExchange.unit_one_exchange' depends on axioms: [propext]\n'UnitResidueExchange.residue17_descends' depends on axioms: [propext]\n"
+    },
+    {
+      "module": "ReverseBasin",
+      "path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+      "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65",
+      "seconds": 11.34,
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "module": "DirectedEleven",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+      "sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677",
+      "seconds": 102.195,
+      "exit_code": 0,
+      "output": "'DirectedEleven.all_routes_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.all_midpoints_located' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.hit_at_ten' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.checkedSound' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "DirectedElevenLocal",
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedElevenLocal.lean",
+      "sha256": "c4ad0e555251d1d14351758ca68a111936fa1dbb67c8e18c3e972d180c78102f",
+      "seconds": 7.942,
+      "exit_code": 0,
+      "output": "'DirectedEleven.localize' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Residue17Closure",
+      "path": "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean",
+      "sha256": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37",
+      "seconds": 2.097,
+      "exit_code": 0,
+      "output": "'Residue17Closure.localize_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Residue17Closure.collatz_iff_reverse_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "TwoOddCertificate",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean",
+      "sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda",
+      "seconds": 5.362,
+      "exit_code": 0,
+      "output": "'CollatzTwoOdd.two_odd_unbounded' depends on axioms: [propext, Quot.sound]\n'CollatzTwoOdd.two_odd_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTwoOdd.least_defect_not_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FiniteHorizon",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FiniteHorizon.lean",
+      "sha256": "e7d20e71da1d191e39ac144e1c7442f281c86a104c5500b7a015978d82676d13",
+      "seconds": 3.899,
+      "exit_code": 0,
+      "output": "'CollatzFiniteHorizon.no_uniform_native_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "MersenneBarrier",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "sha256": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a",
+      "seconds": 10.578,
+      "exit_code": 0,
+      "output": "'MersenneBarrier.mersenne_prefix' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.mersenne_family' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.three_odd_upper' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.three_odd_family' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "MersenneParity",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "sha256": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8",
+      "seconds": 3.238,
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "module": "LocalResampling",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/LocalResampling.lean",
+      "sha256": "15cc801d0092092b86eaaff4ecdff79d98958c803932eda7023e475028ab2562",
+      "seconds": 1.557,
+      "exit_code": 0,
+      "output": "'LocalResampling.iterate_color' does not depend on any axioms\n'LocalResampling.meet_color' does not depend on any axioms\n'LocalResampling.linked_color' does not depend on any axioms\n'LocalResampling.k_outside_every_component' does not depend on any axioms\n'LocalResampling.query_stride' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "MersenneReturnKernel",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnKernel.lean",
+      "sha256": "abe786fecd337c31cf1632986d173b45e360a9a1aa21fea7b523e817db182134",
+      "seconds": 46.876,
+      "exit_code": 0,
+      "output": "'MersenneReturnKernel.forty_returns' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "MersenneFirstBad",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneFirstBad.lean",
+      "sha256": "7e51a184e32072fe418bcf55bf7ad2b8ec594af67f624a0c8893bc916d3fee9e",
+      "seconds": 6.508,
+      "exit_code": 0,
+      "output": "'CollatzMersenneFirstBad.tripled_previous' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneFirstBad.exact_first_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "RankThreeFamily",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RankThreeFamily.lean",
+      "sha256": "c43064465874dffc3b299dfd35d7bf3bd0769627606e47e0c906a0cbb1ec1b7e",
+      "seconds": 11.727,
+      "exit_code": 0,
+      "output": "'CollatzRankThree.rank_three_family' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "OppositeArm",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OppositeArm.lean",
+      "sha256": "6578fe87b6ff8cfa70c229a5ea7e5bbece6dd773c98dd593e50c67454ff075f1",
+      "seconds": 2.811,
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "module": "QuantitativeReturn",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean",
+      "sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+      "seconds": 511.724,
+      "exit_code": 0,
+      "output": "'CollatzQuantitativeReturn.bounded_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FinalProofProposal",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2",
+      "seconds": 3.322,
+      "exit_code": 0,
+      "output": "'FinalProofProposal.quantitative_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.upper_has_two_odds' depends on axioms: [propext, Quot.sound]\n'FinalProofProposal.two_odd_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.collatz_from_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.collatz_iff_higher_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "PublicAudit",
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/PublicAudit.lean",
+      "sha256": "2991f45581aacf6ce4665f7fe41e81fa6997bd37e9bf672ebfb0719ed403ae9a",
+      "seconds": 1.681,
+      "exit_code": 0,
+      "output": "'NonunitExit.physical_chain' depends on axioms: [propext, Quot.sound]\n'NonunitExit.directed_successor' depends on axioms: [propext, Quot.sound]\n'NonunitExit.shadow_lift' depends on axioms: [propext, Quot.sound]\n'NonunitExit.denom_iter' depends on axioms: [propext, Quot.sound]\n'NonunitExit.shadow_certifies' depends on axioms: [propext, Quot.sound]\n'UnitResidueExchange.unit_one_exchange' depends on axioms: [propext]\n'UnitResidueExchange.residue17_descends' depends on axioms: [propext]\n'CollatzReverseBasin.reverse_generates' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.reverse_binary_generates' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.collatz_iff_reverse_binary_restricted' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.collatz_iff_reverse_binary' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.deep_reverse_generates' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.collatz_iff_deep_reverse_binary' depends on axioms: [propext, Quot.sound]\n'CollatzReverseBasin.collatz_iff_restricted_adjacent' depends on axioms: [propext, Quot.sound]\n'DirectedEleven.runSound' depends on axioms: [propext, Quot.sound]\n'DirectedEleven.checkedSound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group0_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group0_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group0_proper' does not depend on any axioms\n'DirectedEleven.group1_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group1_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group1_proper' does not depend on any axioms\n'DirectedEleven.group2_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group2_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group2_proper' does not depend on any axioms\n'DirectedEleven.group3_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group3_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group3_proper' does not depend on any axioms\n'DirectedEleven.group4_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group4_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group4_proper' does not depend on any axioms\n'DirectedEleven.group5_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group5_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group5_proper' does not depend on any axioms\n'DirectedEleven.group6_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group6_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group6_proper' does not depend on any axioms\n'DirectedEleven.group7_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group7_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group7_proper' does not depend on any axioms\n'DirectedEleven.group8_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group8_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group8_proper' does not depend on any axioms\n'DirectedEleven.group9_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group9_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group9_proper' does not depend on any axioms\n'DirectedEleven.group10_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group10_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group10_proper' does not depend on any axioms\n'DirectedEleven.group11_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group11_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group11_proper' does not depend on any axioms\n'DirectedEleven.group12_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group12_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group12_proper' does not depend on any axioms\n'DirectedEleven.group13_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group13_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group13_proper' does not depend on any axioms\n'DirectedEleven.group14_covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group14_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.group14_proper' does not depend on any axioms\n'DirectedEleven.all_midpoints_located' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.all_routes_checked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.proper_rows' depends on axioms: [propext]\n'DirectedEleven.validTree_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.ten_tree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.hit_at_ten' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectedEleven.localize' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Residue17Closure.localize_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Residue17Closure.collatz_iff_reverse_seventeen' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTwoOdd.two_odd_unbounded' depends on axioms: [propext, Quot.sound]\n'CollatzTwoOdd.two_odd_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTwoOdd.least_defect_not_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteHorizon.no_uniform_native_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneBarrier.mersenne_prefix' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.mersenne_family' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.three_odd_upper' depends on axioms: [propext, Quot.sound]\n'MersenneBarrier.three_odd_family' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneParity.hits_atClock' does not depend on any axioms\n'CollatzMersenneParity.ascent' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneParity.even_mersenne_meeting' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneParity.even_mersenne_basin' depends on axioms: [propext, Quot.sound]\n'LocalResampling.iterate_color' does not depend on any axioms\n'LocalResampling.meet_color' does not depend on any axioms\n'LocalResampling.linked_color' does not depend on any axioms\n'LocalResampling.k_outside_every_component' does not depend on any axioms\n'LocalResampling.query_stride' depends on axioms: [propext, Quot.sound]\n'MersenneReturnKernel.forty_returns' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneFirstBad.tripled_previous' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneFirstBad.exact_first_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzRankThree.rank_three_family' depends on axioms: [propext, Quot.sound]\n'FinalProofProposal.upper_has_two_odds' depends on axioms: [propext, Quot.sound]\n'FinalProofProposal.two_odd_layer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.collatz_from_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.collatz_iff_higher_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzOppositeArm.query_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzOppositeArm.exponent_family' depends on axioms: [propext, Quot.sound]\n'CollatzOppositeArm.family_query' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzQuantitativeReturn.bounded_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProofProposal.quantitative_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "TernaryPowerLift",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "exit_code": 0,
+      "seconds": 4.347,
+      "output": "",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/TernaryPowerLift.lean"
+    },
+    {
+      "module": "WordRank",
+      "sha256": "873802f2b394de8de1be50a24f94847dcbdc35c5881272271432adbdbdbc30fe",
+      "exit_code": 0,
+      "seconds": 2.571,
+      "output": "",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/WordRank.lean"
+    },
+    {
+      "module": "OrdinaryWordRealization",
+      "sha256": "d160b8a77442e71f55f4ad9f68b22af05760930468839aa92296facd15ad3229",
+      "exit_code": 0,
+      "seconds": 12.236,
+      "output": "",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/OrdinaryWordRealization.lean"
+    },
+    {
+      "module": "PositiveWordDescent",
+      "sha256": "f6499c78faad234b376b5e306e8c7e64949912656623ca7291b46e14f14d0f19",
+      "exit_code": 0,
+      "seconds": 1.971,
+      "output": "'OrdinaryWordRealization.realization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.delayed_tail_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.dense_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.even_tail_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/PositiveWordDescent.lean"
+    },
+    {
+      "module": "SignedSeventeenPotential",
+      "sha256": "04e76a626d14d578969ac9538fba89dc84e89153ab593b0d5ab5d03c4ca9c1bf",
+      "exit_code": 0,
+      "seconds": 5.278,
+      "output": "'CollatzSignedSeventeen.all_reflected_paths' depends on axioms: [propext, Quot.sound]\n",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/SignedSeventeenPotential.lean"
+    },
+    {
+      "module": "LiftedLattice",
+      "sha256": "dfa342146d8afe933e72081d66cff55bae2806da4f6aea6c29cd7d66929cc2c5",
+      "exit_code": 0,
+      "seconds": 4.145,
+      "output": "'LiftedLattice.lift' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.label_implies_linked' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.exceptions_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.typical_linked_iff_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.linked_iff_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.dyadic_labels_ne' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.shadow_residue' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.grid_census' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "grid-lean-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/LiftedLattice.lean"
+    },
+    {
+      "module": "SourceProgressCases",
+      "sha256": "3f4302bbe12eb79445c04a855a0f01878e1f573501243d3ef101f9e04d569f93",
+      "exit_code": 0,
+      "seconds": 1.543,
+      "output": "'SourceProgressCases.tail_case_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.least_defect_not_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.dense_closing_cases' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "new-core-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/SourceProgressCases.lean"
+    },
+    {
+      "module": "MersenneTwoCheckpoints",
+      "sha256": "6baca0d4b3da675d026f9735bf71a6b6363bf3b9c89988a5ff167d2eeb1f99b0",
+      "exit_code": 0,
+      "seconds": 12.969,
+      "output": "'CollatzMersenneTwoCheckpoints.checkpoint_exponents' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.no_negative_rational_pair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneTwoCheckpoints.exclude_sixteenth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneTwoCheckpoints.five_endpoint' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.seventeen_endpoint' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.two_bad_checkpoints' depends on axioms: [propext, Quot.sound]\n",
+      "execution_batch": "mersenne-lean-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneTwoCheckpoints.lean"
+    },
+    {
+      "module": "MersenneRescueWords",
+      "sha256": "85073e9d4202e936560591f2ae6eb91ba281c9507eacb728b399d26931b97118",
+      "exit_code": 0,
+      "seconds": 2.579,
+      "output": "'CollatzMersenneRescueWords.ordinary_meet' depends on axioms: [propext, Quot.sound]\n",
+      "execution_batch": "final-lean-execution.json",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueWords.lean"
+    },
+    {
+      "module": "MersenneRescueCylinder",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneRescueCylinder.lean",
+      "sha256": "9b7c05e91474e0e705574e8a5bd12df113cf56d5ccb3a219fdb1933b5654a00f",
+      "exit_code": 0,
+      "seconds": 9.097,
+      "output": "'CollatzMersenneRescueCylinder.cylinder_meeting' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneRescueCylinder.cylinder_first_bad_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "cylinder-final-execution.json"
+    },
+    {
+      "module": "MersenneProgressCases",
+      "path": "research/ayh-resource-reset-20261124/source-progress/MersenneProgressCases.lean",
+      "sha256": "a91b286866f347e88292e90ee96efd7ec4c33f502552bc78d64cf2c473131bb2",
+      "exit_code": 0,
+      "seconds": 2.826,
+      "output": "'MersenneProgressCases.sixteenth_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.least_defect_not_sixteenth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.cylinder_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.least_defect_not_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "cylinder-final-execution.json"
+    },
+    {
+      "module": "FinalProgressProposal",
+      "path": "research/ayh-resource-reset-20261124/source-progress/FinalProgressProposal.lean",
+      "sha256": "f803ed28152845d620f0114ed870cfd621340871c6f8dcc869b3203fe8e0df57",
+      "exit_code": 0,
+      "seconds": 1.378,
+      "output": "'FinalProgressProposal.collatz_from_residual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProgressProposal.collatz_iff_residual' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "cylinder-final-execution.json"
+    },
+    {
+      "module": "PublicProgressAudit",
+      "path": "research/ayh-resource-reset-20261124/source-progress/PublicProgressAudit.lean",
+      "sha256": "9eb99b6ff8804500ad7dc519a4c7eb808d5424bb8580fe9b4bc2fa9049563f90",
+      "exit_code": 0,
+      "seconds": 1.977,
+      "output": "'TernaryPowerLift.period' depends on axioms: [propext]\n'TernaryPowerLift.cofinal' depends on axioms: [propext, Quot.sound]\n'WordRank.runAdd' depends on axioms: [propext]\n'WordRank.oddsAdd' depends on axioms: [propext]\n'WordRank.halves' depends on axioms: [propext]\n'WordRank.powOdd' depends on axioms: [propext]\n'WordRank.wordRow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'WordRank.liftPrefix' depends on axioms: [propext, Quot.sound]\n'WordRank.unitRun' depends on axioms: [propext, Quot.sound]\n'WordRank.finishRow' depends on axioms: [propext, Quot.sound]\n'WordRank.exactRankRow' depends on axioms: [propext, Quot.sound]\n'OrdinaryWordRealization.upper' depends on axioms: [propext, Quot.sound]\n'OrdinaryWordRealization.lower' depends on axioms: [propext, Quot.sound]\n'OrdinaryWordRealization.powerFinish' depends on axioms: [propext, Quot.sound]\n'OrdinaryWordRealization.realization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.hitsRun' does not depend on any axioms\n'PositiveWordDescent.basinRun' does not depend on any axioms\n'PositiveWordDescent.delayed_tail_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.even_tail_drop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositiveWordDescent.dense_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedSeventeen.all_reflected_paths' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.lift' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.iterate_le' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.edge_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.linked_iff_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.dyadic_labels_ne' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.shadow_residue' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.label_implies_linked' depends on axioms: [propext, Quot.sound]\n'LiftedLattice.exceptions_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.typical_linked_iff_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'LiftedLattice.grid_census' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.tail_case_progress' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.least_defect_not_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.dense_closing_cases' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SourceProgressCases.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneTwoCheckpoints.five_endpoint' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.seventeen_endpoint' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.two_bad_checkpoints' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.exclude_sixteenth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneTwoCheckpoints.checkpoint_exponents' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneTwoCheckpoints.no_negative_rational_pair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.sixteenth_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.least_defect_not_sixteenth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.cylinder_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MersenneProgressCases.least_defect_not_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMersenneRescueWords.ordinary_meet' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneRescueCylinder.cylinder_meeting' depends on axioms: [propext, Quot.sound]\n'CollatzMersenneRescueCylinder.cylinder_first_bad_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProgressProposal.collatz_from_residual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FinalProgressProposal.collatz_iff_residual' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "execution_batch": "cylinder-final-execution.json"
+    }
+  ],
+  "mathematical_modules": 29,
+  "audit_modules": 2,
+  "public_declarations": 152,
+  "summed_final_invocation_seconds": 801.764,
+  "success": true
+}

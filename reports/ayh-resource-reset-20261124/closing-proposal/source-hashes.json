@@ -1,0 +1,308 @@
+{
+  "schema": "collatz-source-manifest/v1",
+  "baseline_commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+  "created_utc": "2026-11-24T18:47:25.130096+00:00",
+  "scope": "Final new science, evidence and two navigation changes; manifest excludes itself.",
+  "files": [
+    {
+      "path": "reports/ayh-resource-reset-20261124/README.md",
+      "bytes": 11651,
+      "sha256": "c49f971b48a9e49a6890b936ed2d9cf20d36e014e16b3980aa39ac1c28913c37",
+      "git_blob": "efb231ae7729d1535b6451c5079f7b2dabc445e5"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/FINAL_PROPOSAL_REVIEW.md",
+      "bytes": 6547,
+      "sha256": "16f31bab4db59fa50ec7813821095f664f98b3b581d03924333bb746ea20b333",
+      "git_blob": "e30b2b976168d402b06a63ed08cc4f8daabd873c"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/LATE_DIFFUSIVE_COMPARISON.md",
+      "bytes": 6439,
+      "sha256": "2434944f6aef7a1c20a00a95b73a45f6a7779440841324a51fbfe726ad2b9eb4",
+      "git_blob": "9f98513a3338c0dbeaae4ce6b673621fd9c323be"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/LOCAL_RESAMPLING_REVIEW.md",
+      "bytes": 6207,
+      "sha256": "153e4bf6dd7159a1d620dc80d4a97434287f19aea3a31ebf693d070e6d63290d",
+      "git_blob": "a2435c5682ed984761cbf9a9e67bf2c320edd44e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/OPEN_PR_INTAKE.json",
+      "bytes": 58269,
+      "sha256": "e4538da619bf9c6322babf896c6b7906313236047d2f101c8411e0f2c29a0dcb",
+      "git_blob": "4671e86335b0c29cb412a69d04ae82329ceebd2b"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/OPPOSITE_ARM_REVIEW.md",
+      "bytes": 4591,
+      "sha256": "8b2a9cf712106cf6a841bb145eb0ced0307ad42388f82791b7c1bd225d9e50a5",
+      "git_blob": "e70d2b3319ddcaec9bba85fcedef7a6a9337622e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/PRIOR_PR_DESCRIPTION.json",
+      "bytes": 17681,
+      "sha256": "a22a751264d92cb03557caaf4fb91015a17373572c403fb109b115b94d7c89ad",
+      "git_blob": "fd432f9ee2458746973e7deedf65b6037cfc3f94"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/RANK_TWO_INDEPENDENT_REVIEW.md",
+      "bytes": 5811,
+      "sha256": "78fe13b57d4a44a34b5a449d11f124a8ae60b5baeac13a3f8533de41df893f25",
+      "git_blob": "c89858e08ab15eb0f57f8d80e314f051aa8f871e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/README.md",
+      "bytes": 7328,
+      "sha256": "900c9016467a0aaa3c54efcaeae666b1b72522e655098108e92fe39fb3fafb05",
+      "git_blob": "4b64f7a669ad99da0c8c982159b70532fbf03885"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/ROOT_REVIEW.md",
+      "bytes": 8743,
+      "sha256": "df21abb08b2daecfbde74ed355a36f9c7a44da25fc2a5944205e219a51ce1f0d",
+      "git_blob": "6d3a13c1bc65456fb42efa48c50e96e9671f5e45"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/axiom-audit.json",
+      "bytes": 9941,
+      "sha256": "6a6b47310d51654de18b93d5ce20b3d808ea21e1af9269d24eb83e1930b60157",
+      "git_blob": "e36ee2749a1a477bba67f735cb783577a99c4e7f"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/check_opposite_arm_independent.py",
+      "bytes": 3233,
+      "sha256": "fb6fdbddcaf154d0ba9af35906bc13934cb58e3df43d74a34337c9788ec12cd6",
+      "git_blob": "58361aef611ee52354a1a701d64c3b7902fdd415"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/finite-execution.json",
+      "bytes": 7883,
+      "sha256": "98ca251fde46177911e78bb07d49ce503068253119eb92825ba56cc5263aba3f",
+      "git_blob": "b229c1326baa022555a8efde4211fff1eb8a13eb"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/initial-axiom-audit.json",
+      "bytes": 9639,
+      "sha256": "00773eb3c258443b62796e3b81d6a968039c6cb9daf7d7d49081fbd0a56852a3",
+      "git_blob": "61ed679bcbc474c830c7d5b72e1fdd3e4ae6fb85"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/initial-lean-build.log",
+      "bytes": 11503,
+      "sha256": "736f85562e32d014e7119fa8e5b8c263a024f9025073ff813ff120312d09216b",
+      "git_blob": "c1ff1c68a2abe34f65c2a72f78bfce0f16e8287c"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/initial-lean-execution.json",
+      "bytes": 3358,
+      "sha256": "334412685107b206eaf7a0f427f648aeaaa88094c262b804df26674d667a4f13",
+      "git_blob": "3fef6c60b4c5b352fbffdc0170d9d1024837ca6e"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/lean-build.log",
+      "bytes": 11936,
+      "sha256": "2a739f4ab42a34700ee84087f4d6fb2f35cfba433e4a3032df5e1ed9931a86d6",
+      "git_blob": "483b245c271ec1737a6d2b04a39484bf2e2bebbc"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/lean-execution.json",
+      "bytes": 3547,
+      "sha256": "b974b36af21ee246ec25d11256d6291f1c62085c979f5676c4d891f13ad14025",
+      "git_blob": "6d7b55df4a850ddd95d66f4981cd0356f9ce60d6"
+    },
+    {
+      "path": "reports/ayh-resource-reset-20261124/closing-proposal/quantitative-author-execution.json",
+      "bytes": 1213,
+      "sha256": "b03e3e6581ce5374728fd694d60f66cae9afc9b1222be7c33ced3cc25e7eb923",
+      "git_blob": "6be59ce824e8a2888aaad2e9e1371a37d7515322"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/README.md",
+      "bytes": 18771,
+      "sha256": "6345866233558a8dda9a26ffe088c636c244f1c3f9920d7b4eeac706641cf4ba",
+      "git_blob": "f3b3529396fa0d0b90812099226404611a2afa60"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FinalProofProposal.lean",
+      "bytes": 3736,
+      "sha256": "3070f6afe46813eca5716e82c37cb8a338f0007612b77ff9cbab7bfc08a2d2d2",
+      "git_blob": "fd02ee677db2d049b118223407c5d3d36a4024e6"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/FiniteHorizon.lean",
+      "bytes": 6704,
+      "sha256": "e7d20e71da1d191e39ac144e1c7442f281c86a104c5500b7a015978d82676d13",
+      "git_blob": "b2fd8f46a2f41149db64fb90ddf1dbafab2f981e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/GATE_TRANSPORT.md",
+      "bytes": 7174,
+      "sha256": "20395383463a2259bc1fc917243a833e1f50980e9c04a2f3085f1f60f173e532",
+      "git_blob": "fcbb4b4afbacd19d14a27f796b1d73c62f17b18a"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/LOCAL_RESAMPLING.md",
+      "bytes": 12460,
+      "sha256": "ca1882b87e25c59d1948f7c112260ca62bf889a535975a5a591b9609d13bc65a",
+      "git_blob": "e75869e2591a0f287307c5b6a1e0546fdef0f066"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/LocalResampling.lean",
+      "bytes": 3127,
+      "sha256": "15cc801d0092092b86eaaff4ecdff79d98958c803932eda7023e475028ab2562",
+      "git_blob": "99c5af394b95a060f1af818f2fb2e27a03cb4f87"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MERSENNE_FRONTIER.md",
+      "bytes": 4375,
+      "sha256": "82a15a3f65b70aa0da39af8151dacbb47b3b3e3eef0fc7702d5634441dd3939d",
+      "git_blob": "7f6572aafd7f883bcc8a767a8d598e176ae3f718"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneBarrier.lean",
+      "bytes": 6557,
+      "sha256": "c450c9b8792c20df3d853b1b28515d54c88c92a3e445d1e9933e57d2835e605a",
+      "git_blob": "d24eb5f0117aa3b9c3b0978819dcb1ecbe0209cc"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneFirstBad.lean",
+      "bytes": 5249,
+      "sha256": "7e51a184e32072fe418bcf55bf7ad2b8ec594af67f624a0c8893bc916d3fee9e",
+      "git_blob": "a84f8182a1f77c9693765516367dfd9ef5f2ae8c"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneParity.lean",
+      "bytes": 2947,
+      "sha256": "04b39dadfc74dd38aed1c43c5f6d94e99d06d90a98da96fe0e39ae40cfef07e8",
+      "git_blob": "904741a5ae10154841ef7243d2063a152da43e3d"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnKernel.lean",
+      "bytes": 11887,
+      "sha256": "abe786fecd337c31cf1632986d173b45e360a9a1aa21fea7b523e817db182134",
+      "git_blob": "dce9f8c582d4db70d41ca408eca827d88bad5af5"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/MersenneReturnPaths.json",
+      "bytes": 7688,
+      "sha256": "90e5e86121d04fdef79c9dbf6732b251ddac8df4f32be4c987598671da5bdabb",
+      "git_blob": "9edd2699c2cc4ab2d9069e6ef8da26b527eb1b1c"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OPPOSITE_ARM_CONTRACTION.md",
+      "bytes": 5048,
+      "sha256": "0435ede2c2c0261277fda9b4b26fce5a24ba8903f415e1a2874216ab70e3179e",
+      "git_blob": "bebf973468c47c70c3d96792baab3a6e4330bbc2"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OppositeArm.lean",
+      "bytes": 5862,
+      "sha256": "6578fe87b6ff8cfa70c229a5ea7e5bbece6dd773c98dd593e50c67454ff075f1",
+      "git_blob": "98d95d2585bc69de6e06959a9f90d9acbb11a543"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/OppositeArmQueries.json",
+      "bytes": 18911,
+      "sha256": "c95c810d5c917f9c36bbb851cc8956120d78e843f50bf519b88c6bf31eb7e0cf",
+      "git_blob": "3a0929f6e82dc116984a69cdd2ce4004cd6a1f6c"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/PublicAudit.lean",
+      "bytes": 5106,
+      "sha256": "2991f45581aacf6ce4665f7fe41e81fa6997bd37e9bf672ebfb0719ed403ae9a",
+      "git_blob": "551c0e97480ae01aa9b120ac2caea555e182f677"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QUANTITATIVE_RETURN.md",
+      "bytes": 2611,
+      "sha256": "a602fb59751c38e207ed2fdb83c4fd66b2807550e7f53089a1a24bc986d0055d",
+      "git_blob": "fa6a07b5c2d507321b59f5bab3aec64fff873af8"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean",
+      "bytes": 87293,
+      "sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+      "git_blob": "10fe3b1e2ce723a184897ef1a11302a689f3d692"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RANK_THREE_RESTRICTION.md",
+      "bytes": 4154,
+      "sha256": "4153300a7485f6846a0322f69a4e7bf3465d37aa133c583c2be3727470ecea16",
+      "git_blob": "696e3e6afafe580b5c1a968c728a873313ec27b4"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RANK_TWO_DESCENT.md",
+      "bytes": 4120,
+      "sha256": "e1216c7f86f24b5df5970367225e1c6ed7b4488bed7960d1567604f205b93b7c",
+      "git_blob": "eaee975930c991e3a752dbe1bce8a0944688b846"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/README.md",
+      "bytes": 12660,
+      "sha256": "00f8a92a3b3446cf61e87946d7e92ecadd82cf4ac368460a33bc037a70cbe4d0",
+      "git_blob": "b7e952ab164f8f05ef25fc2841e300fba85e0870"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/REEVALUATION.md",
+      "bytes": 8334,
+      "sha256": "a2faa8c2eebf2ec89bcf8c8040bea7e6947cfb41efe5f4fa64818bae79903d01",
+      "git_blob": "4329b461c952033d6228d517988b7c194fb7df0a"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/RankThreeFamily.lean",
+      "bytes": 5310,
+      "sha256": "c43064465874dffc3b299dfd35d7bf3bd0769627606e47e0c906a0cbb1ec1b7e",
+      "git_blob": "8b8c65eb7a324f9d7f9cbf523ee80789a0411ef0"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/SOURCES.json",
+      "bytes": 7380,
+      "sha256": "74e0361272dbdaf7b3e58794196179331e941d7eed6966d9293c0c1c94764a6a",
+      "git_blob": "40bbcc825ca66b40d0cecc88420e12d0644444e4"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean",
+      "bytes": 10524,
+      "sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda",
+      "git_blob": "87a5200d687bc49b7681bb99ed1d228e2aefeacc"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/check_lean.sh",
+      "bytes": 1137,
+      "sha256": "1a4697dc6ab224db7f3b13b69b3b6a4da9118f4aa2786367f7efc39dd8c0635d",
+      "git_blob": "7dcc933127623d4f533db8fba45f793b4e3e8e43"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/check_mersenne_returns.py",
+      "bytes": 3515,
+      "sha256": "e8a8d05a45c6f7f41c4f05cf6872dfa7392f26f024d412713d11e862c53a4150",
+      "git_blob": "ae2abc1f8848001557c2152c368cfb1df676dfe5"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/check_opposite_arm_queries.py",
+      "bytes": 2480,
+      "sha256": "3feb38e68b93173449df7a6effe2add61d67a282922a8aaa0c8fb7dfdb16153b",
+      "git_blob": "59400192710d20f83189e246b0ea73f5ad58f910"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/check_rank_three.py",
+      "bytes": 2219,
+      "sha256": "1a6442296b04574f34ae75345446592554908ac9a2aa331d174db80f06bf4ee1",
+      "git_blob": "fb9bf8ab9411f47c114a5e4fbd01cd3101d8a03e"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/check_rank_two.py",
+      "bytes": 2650,
+      "sha256": "5cf899e50f41f9cd3ab764e6de17db915832bc3b66a0a6ac2bc0ba00d5d9a64a",
+      "git_blob": "90a71758ef4ff1de83b1129672b28bdb3db2e455"
+    },
+    {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/replay_quantitative_tables.py",
+      "bytes": 4416,
+      "sha256": "ce906efcd26836fbbc1979577cfe84499220cd2e7ddf4ed12de3b11e0e8d09d6",
+      "git_blob": "10b4922148aec85fc221c939fc552aa7854afdfc"
+    }
+  ]
+}

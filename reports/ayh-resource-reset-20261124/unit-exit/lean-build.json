@@ -1,0 +1,32 @@
+{
+  "schema": "collatz-exact-execution/v1",
+  "kind": "lean",
+  "started_utc": "2026-11-24T11:34:47.877870+00:00",
+  "finished_utc": "2026-11-24T11:38:25.051348+00:00",
+  "command": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unit-exit/check_lean.sh"
+  ],
+  "cwd": "/workspace/scratch/33d115a3cb8d/collatz",
+  "exit_code": 0,
+  "seconds": 217.172,
+  "stdout_sha256": "fd376f9212c70b4aa72c7bcb1a5fa9d93c9b46f6d82fd9b0dfcd55bfe841f1e0",
+  "stderr": "",
+  "sources": {
+    "research/ayh-resource-reset-20261124/unit-exit/check_lean.sh": "b460984b896d1c95091ec584c7575c28af486da4de2349fa08b5e041deb0229e",
+    "research/ayh-resource-reset-20261124/unit-exit/DisjointGradeCrossing.lean": "9c7d96bb85842bb9ad61c68cc4c586f28bb38e3d017e347f6e16b640aa8b9202",
+    "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0",
+    "research/ayh-resource-reset-20261124/unit-exit/PredictablePhysicalArms.lean": "8ec11a560d94c50ff43dd7d764f350062ffb109ec6b97e88457fb9485fcb9fb8"
+  },
+  "lean": {
+    "path": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "local_outputs": "Fresh temporary directory, deleted on exit; only pinned third-party Mathlib/Lean objects reused.",
+    "flags": [
+      "-j1",
+      "-DautoImplicit=false",
+      "-DwarningAsError=true"
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "script": "research/ayh-resource-reset-20261124/continuation/check_critical_compression.py",
+    "sha256": "00b6d21d3b63345758d16c71823338c417edbf175b6ce52e9a193bf72694991a",
+    "runs": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/check_critical_compression.py"
+        ],
+        "started_at": "2026-11-24T06:32:44.888084+00:00",
+        "finished_at": "2026-11-24T06:32:45.584425+00:00",
+        "exit_code": 0,
+        "stdout": "[\n  {\n    \"valuation\": 24,\n    \"even_steps\": 8,\n    \"counts\": {\n      \"even_step_deadline\": 55,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 882,\n      \"smaller_critical_partner\": 71\n    }\n  },\n  {\n    \"valuation\": 48,\n    \"even_steps\": 16,\n    \"counts\": {\n      \"even_step_deadline\": 11,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 917,\n      \"smaller_critical_partner\": 80\n    }\n  },\n  {\n    \"valuation\": 80,\n    \"even_steps\": 24,\n    \"counts\": {\n      \"even_step_deadline\": 1,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 882,\n      \"smaller_critical_partner\": 125\n    }\n  },\n  {\n    \"valuation\": 128,\n    \"even_steps\": 32,\n    \"counts\": {\n      \"lower_edge\": 16,\n      \"pair_deadline\": 842,\n      \"smaller_critical_partner\": 166\n    }\n  }\n]\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/check_critical_compression.py"
+        ],
+        "started_at": "2026-11-24T06:32:45.584454+00:00",
+        "finished_at": "2026-11-24T06:32:46.355835+00:00",
+        "exit_code": 0,
+        "stdout": "[\n  {\n    \"valuation\": 24,\n    \"even_steps\": 8,\n    \"counts\": {\n      \"even_step_deadline\": 55,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 882,\n      \"smaller_critical_partner\": 71\n    }\n  },\n  {\n    \"valuation\": 48,\n    \"even_steps\": 16,\n    \"counts\": {\n      \"even_step_deadline\": 11,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 917,\n      \"smaller_critical_partner\": 80\n    }\n  },\n  {\n    \"valuation\": 80,\n    \"even_steps\": 24,\n    \"counts\": {\n      \"even_step_deadline\": 1,\n      \"lower_edge\": 16,\n      \"pair_deadline\": 882,\n      \"smaller_critical_partner\": 125\n    }\n  },\n  {\n    \"valuation\": 128,\n    \"even_steps\": 32,\n    \"counts\": {\n      \"lower_edge\": 16,\n      \"pair_deadline\": 842,\n      \"smaller_critical_partner\": 166\n    }\n  }\n]\n",
+        "stderr": ""
+      }
+    ],
+    "normal_equals_optimized": true
+  },
+  {
+    "script": "research/ayh-resource-reset-20261124/continuation/check_inverse_word_cover.py",
+    "sha256": "187b97c39b9920a3de104fea26584f302015656944bd1b951c9433cb7bfca9a8",
+    "runs": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/check_inverse_word_cover.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.356561+00:00",
+        "finished_at": "2026-11-24T06:32:46.418351+00:00",
+        "exit_code": 0,
+        "stdout": "{\n  \"unit_residues\": 162,\n  \"first_block_lengths\": {\n    \"1\": 135,\n    \"2\": 18,\n    \"3\": 6,\n    \"4\": 3\n  },\n  \"physical_inverse_links\": 16238\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/check_inverse_word_cover.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.418377+00:00",
+        "finished_at": "2026-11-24T06:32:46.531514+00:00",
+        "exit_code": 0,
+        "stdout": "{\n  \"unit_residues\": 162,\n  \"first_block_lengths\": {\n    \"1\": 135,\n    \"2\": 18,\n    \"3\": 6,\n    \"4\": 3\n  },\n  \"physical_inverse_links\": 16238\n}\n",
+        "stderr": ""
+      }
+    ],
+    "normal_equals_optimized": true
+  },
+  {
+    "script": "research/ayh-resource-reset-20261124/continuation/verify_inverse_cost.py",
+    "sha256": "172ab97988d0ad4ce8f3613e6bec3894389f392ffb930ab86687dd8a9961a778",
+    "runs": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/verify_inverse_cost.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.531879+00:00",
+        "finished_at": "2026-11-24T06:32:46.545011+00:00",
+        "exit_code": 0,
+        "stdout": "12 disjoint cylinders, 162 unit residues checked, prefix overhead at most 4\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/verify_inverse_cost.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.545025+00:00",
+        "finished_at": "2026-11-24T06:32:46.565175+00:00",
+        "exit_code": 0,
+        "stdout": "12 disjoint cylinders, 162 unit residues checked, prefix overhead at most 4\n",
+        "stderr": ""
+      }
+    ],
+    "normal_equals_optimized": true
+  },
+  {
+    "script": "research/ayh-resource-reset-20261124/continuation/verify_rising.py",
+    "sha256": "0dbd1e13f85d899e3951a5c7caa1456f067a0069b9ccd4007b96740847b0b90b",
+    "runs": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/verify_rising.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.566704+00:00",
+        "finished_at": "2026-11-24T06:32:46.585201+00:00",
+        "exit_code": 0,
+        "stdout": "Q d e k D f clocks\n53 104 21 52 115 24 73\n306 610 123 305 667 134 428\n665 1328 266 664 1452 291 930\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "research/ayh-resource-reset-20261124/continuation/verify_rising.py"
+        ],
+        "started_at": "2026-11-24T06:32:46.585219+00:00",
+        "finished_at": "2026-11-24T06:32:46.605998+00:00",
+        "exit_code": 0,
+        "stdout": "Q d e k D f clocks\n53 104 21 52 115 24 73\n306 610 123 305 667 134 428\n665 1328 266 664 1452 291 930\n",
+        "stderr": ""
+      }
+    ],
+    "normal_equals_optimized": true
+  }
+]

@@ -1,0 +1,159 @@
+{
+  "schema": "collatz-crossing-source-ledger/v1",
+  "baseline_pr": 197,
+  "baseline_head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+  "intake_date": "2026-11-24",
+  "scope": "Claim-specific source comparison and new mathematical deductions; retrieval alone is not a full audit. All refs are frozen even if neighboring PRs advance.",
+  "repository_sources": [
+    {
+      "pr": 202,
+      "ref": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "path": "research/synchronized-long-basin-blocks-20261124/README.md",
+      "blob": "9ce54625c8cc09d2585a3a9c17cb95695196bce6",
+      "reading_depth": "Full README read; common-clock affine transport and multiplicity reconstructed. External near-linear modular router R not independently audited or imported."
+    },
+    {
+      "pr": 200,
+      "ref": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/continuation/FOURIER_UNIFORMITY.md",
+      "blob": "c2de757a3658ac869bda95c960160d92a365f88d",
+      "reading_depth": "Full Fourier note read and small-/large-frequency split inspected. Comparison only; no new product bound for one-parameter dilation edges inferred."
+    },
+    {
+      "pr": 201,
+      "ref": "084b983fbec6f3d2120ef101946754431f82874e",
+      "path": "research/killed-green-head-closure-20261124/continuation/README.md",
+      "blob": "79c901d7b462b0a8d2c5cf8d012352beb10caca2",
+      "reading_depth": "Full continuation README read; exact-grade octave transport and its conditional-mass boundary compared. No new public Lean claims imported."
+    },
+    {
+      "pr": 195,
+      "ref": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-global-closure-20261124/round5/README.md",
+      "blob": "fcd254b3a64baddd4434601a7e841a9843de0ca4",
+      "reading_depth": "Full round5 README read; directed growing-neighborhood conclusion and its composition with prior PR197 incidence compared. Supporting arithmetic and renewal files were not fully re-audited."
+    },
+    {
+      "pr": 193,
+      "ref": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/SEVEN_RETURN.md",
+      "blob": "ec495b485c4a10235e46c607976a6d1a24d20b26",
+      "reading_depth": "Full SEVEN_RETURN note and exact SingleReturn.lean source read. Global certificate freshly compiled locally; imported certificate credited separately."
+    },
+    {
+      "pr": 193,
+      "ref": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/SingleReturn.lean",
+      "blob": "797e2629e931551cc5913acbe7ef314aea489cd2",
+      "local_copy": "vendor/SingleReturn.lean",
+      "sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+      "reading_depth": "Exact source, evaluator and global consumers inspected; rebuilt from source by this checkpoint."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/TRIPLING_VARIATION.md",
+      "blob": "870b1e3d348cd2f88ec25b3e5c4a9e1878e65456",
+      "reading_depth": "Full source read by coordinator and agents; actual-label domain and finite comparison chain retained. Used for the full-series convolution."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+      "blob": "71ca2c94331f44310897dae105e1337e5874dcbb",
+      "reading_depth": "Full source read; dyadic L1 limit, irrational-rotation rigidity and distinct density inputs reconstructed."
+    },
+    {
+      "pr": 146,
+      "ref": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "reading_depth": "Earlier pinned SOURCE-QUALIFIED complete-grid affine-pair estimate reused. External stochastic proof not rebuilt."
+    },
+    {
+      "pr": 197,
+      "ref": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "paths": [
+        "research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/ROUNDED_HEAD_DESCENT.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/ACTUAL_FRONTIER_OCCUPATION.md",
+        "research/ayh-resource-reset-20261124/two-class-descent/ADAPTIVE_PAIRED_PROJECTION.md",
+        "research/ayh-resource-reset-20261124/literature-step/MACROSCOPIC_PAIR_CLOSURE.md",
+        "research/ayh-resource-reset-20261124/joint-renewal/LANDING_WEIGHT_TRANSFER.md",
+        "research/ayh-resource-reset-20261124/continuation/HEAD_EDGE_RIGIDITY.md"
+      ],
+      "reading_depth": "Local prerequisite proofs from the completed preceding checkpoint reused; relevant source counts, intercepts, grade occupation and exact conditional domains reconstructed. Historical regressions not repeated."
+    },
+    {
+      "pr": 192,
+      "ref": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "reading_depth": "Updated metadata/description comparison only; no claim-level review or theorem imported."
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "KM21",
+      "authors": "Thomas F. Bloom and Olof Sisask; theorem attributed to Zander Kelley and Raghu Meka",
+      "title": "The Kelley–Meka bounds for sets free of three-term arithmetic progressions",
+      "publication": "Essential Number Theory 2 (2023), 15–44",
+      "doi": "10.2140/ent.2023.2.15",
+      "url": "https://msp.org/ent/2023/2-1/ent-v2-n1-p02-s.pdf",
+      "claim": "Theorem 21, progression count exp(-O(log(2/alpha)^12)) N^2",
+      "status": "Published primary theorem retrieved independently from the publisher. The new use on poor centers, pruning and Collatz fibers is a written deduction."
+    },
+    {
+      "id": "GROWING-BLOCKS",
+      "author": "lyapunov_weaver",
+      "title": "Synchronization of growing Collatz blocks and selected references",
+      "version": "1, 2026-11-09",
+      "url": "https://rstation.ai/api/v1/papers/collatz_124/versions/1/download",
+      "claim": "Theorem 1; complete-grid counted fusion tail for D consecutive starts, O((1+log D)^4/sqrt(t+1)).",
+      "status": "SOURCE-QUALIFIED recent primary manuscript; versioned full text retrieved. No external formalization rebuilt."
+    },
+    {
+      "id": "AYH",
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "arxiv": "2105.14697",
+      "claim": "Mixed binary/ternary rewriting architecture and residual directed return, section 4.5.",
+      "status": "Primary author PDF reopened in this checkpoint and section 4.5 inspected; architecture and historical directed return credited. No all-rule termination proof."
+    },
+    {
+      "id": "LOG-SEPARATION",
+      "authors": "J. Simons and B. de Weger, using G. Rhin",
+      "title": "Theoretical and computational bounds for m-cycles of the 3n+1 problem",
+      "publication": "Acta Arithmetica 117 (2005)",
+      "doi": "10.4064/aa117-1-3",
+      "claim": "Lemma 12, a fixed polynomial lower bound for nonzero bounded-coefficient linear forms in log 2 and log 3.",
+      "status": "Published input already pinned in prior PR197 LANDING_WEIGHT_TRANSFER; used only where head size is exponential in the coefficient bound."
+    },
+    {
+      "id": "KL84",
+      "authors": "Ilia Krasikov and Jeffrey C. Lagarias",
+      "title": "Bounds for the 3x+1 problem using difference inequalities",
+      "url": "https://arxiv.org/pdf/math/0205002",
+      "claim": "Theorem 6.1, fixed-target predecessor exponent 0.84.",
+      "status": "Published primary paper reopened; abstract explicitly supplies the fixed ternary-unit target exponent 0.84. Used only by the separate power-sparse consumer."
+    },
+    {
+      "id": "M",
+      "author": "Lech Mazur",
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "version": "v1.0, 2026-09-06",
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "claim": "Each fixed positive ternary-unit target has positive lower natural predecessor density; the nonconvergent population consequence is used only under a counterexample.",
+      "status": "SOURCE-QUALIFIED external reported formalization, not rebuilt here. Exact prior reproduction pins and mathematical scope are preserved in PR197 MACROSCOPIC_PAIR_CLOSURE at the baseline head. Not a hypothesis of the new Lean consumer."
+    }
+  ],
+  "new_development": {
+    "streams": [
+      "four-suffix routing and global consumer",
+      "late witness tracks and joint weighted graph",
+      "centered exact-future progressions and conditional information"
+    ],
+    "requested_agent_model": "gpt-6.2-astra",
+    "agents": 3,
+    "written_reviews": "See reports/ayh-resource-reset-20261124/crossing-step/",
+    "formal_scope": "Four new authored modules and byte-exact prior SingleReturn certificate; probability and analytic theorems remain written."
+  }
+}

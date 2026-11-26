@@ -1,0 +1,192 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "baseline": "b0538639df0ab7edd239281bd897e705160f732c",
+  "scope": "New arithmetic is independent of P,R,M. Probability/color deductions retain P and R. M is used only for the imported summability consumer/conditional polynomial-population trigger. All finite new claims remain distinct from universal Collatz.",
+  "repository_sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "blob": "e14cc8982417825d48d0c00622bb902d7317c218",
+      "claim": "Exact ordinary chain and orientation-preserving choice. Freshly rebuilt as a dependency.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "blob": "902d97292ecc99d19342b4f1795732ccb166781b",
+      "claim": "Class1 exchange and ordered11/17 bijection. Freshly rebuilt as a dependency.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/LOCAL_COLOR_INFORMATION.md",
+      "blob": "8184c096d63c6b41e462abb91a713be61de6cab4",
+      "claim": "Exact physical seeds and adaptive trit-query program. Written input; inherited scope.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/LOCAL_COLOR_INFORMATION.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md",
+      "blob": "a40924dc1ea6b2b7e5f028e196d22814ca1b8868",
+      "claim": "R: ordinary regeneration in every sufficiently long interval, predictable tracks and original source projection. Source-qualified written input.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md",
+      "blob": "1257ebfb05083de6b48d345e9870d10339d30340",
+      "claim": "Physical head lists and clock incidence, with the original common-source coordinate.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/two-class-descent/HEAD_INCIDENCE.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/two-class-descent/ROUNDED_HEAD_DESCENT.md",
+      "blob": "6725e04f712190f2f8f757bea8d3b022894b161b",
+      "claim": "Actual finite regeneration and physical endpoint certificates.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/two-class-descent/ROUNDED_HEAD_DESCENT.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/DISJOINT_GRADE_CROSSINGS.md",
+      "blob": "b0fe711e6f3b8e7ed766efcbd6c1b44f6f6b2fcf",
+      "claim": "Uniform scalar fractional-moment offset control before stopping.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/DISJOINT_GRADE_CROSSINGS.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 197,
+      "sha": "b0538639df0ab7edd239281bd897e705160f732c",
+      "path": "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md",
+      "blob": "c0614f158a1f3a13fd1c2394e993a05369a4ae13",
+      "claim": "Conditional summability consumer M and full-row variation reduction; not a new proof of M.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "claim": "P: finite native merger and location-uniform additive-gap bound. Written/source-qualified; not formalized by new finite identities.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_ONE_RESIDUE.md",
+      "blob": "3d4d195b0e1e767e02dc4c32111f9f96e39d6468",
+      "claim": "Bounded two-sided affine reduction from all odd defects to1mod16. Full source read; source finite table not freshly executed here.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_ONE_RESIDUE.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_ONE_SIDED.md",
+      "blob": "46060a86fb37728b519ba4763c4ef0ad064ccd2d",
+      "claim": "Either restriction to forward basin propagation on1mod16 suffices. Written residue refinement.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_ONE_SIDED.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/REVERSE_BASIN.md",
+      "blob": "fff7e6aae978896cec8ca5672b22d4f11cb7a8db",
+      "claim": "26-leaf directed contraction at odd multiples of3, at most61 edges and ratio9/10; used for original-source smaller witness.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/REVERSE_BASIN.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/ReverseBasin.lean",
+      "blob": "a5b56da6e23c2efd0c71d670ac3e275fd7f94567",
+      "claim": "Byte-exact vendor of ordinary reverse-binary implication and full positive Basin. Fresh kernel build and public axiom audit.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/ReverseBasin.lean"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+      "blob": "71ca2c94331f44310897dae105e1337e5874dcbb",
+      "claim": "From a counterexample and published fixed-target population to actual tripling defect lower bounds.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_DENSITY.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 195,
+      "sha": "0e8a7f9f965416189b30b57b8aa818fbcb7757c7",
+      "path": "research/astra-global-closure-20261124/round7/head/README.md",
+      "blob": "2a8451137400ce17d17ecca115ae52f1d8f10a29",
+      "claim": "Prior directed unit closure,59-query bounded two-sided substitution and unweighted suffix57 equivalence. Full written source read; new kernel rewriter acknowledges this architecture.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0e8a7f9f965416189b30b57b8aa818fbcb7757c7/research/astra-global-closure-20261124/round7/head/README.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 201,
+      "sha": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/global-bridge/README.md",
+      "blob": "fd5f6c6f79d415550ef416f4a674ef07bbad8366",
+      "claim": "Late prior work: complete directed odd-unit residue1/5mod6 covers and each-orientation quantitative transfer. Both full written manuscripts read by independent agent; no import of new table or theorem into the new kernel.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/global-bridge/README.md"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pr": 201,
+      "sha": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/escape-analysis/README.md",
+      "blob": "614eb6a2b70aad949fa851b564462dff78eafbcb",
+      "claim": "Late comparison: finite exact-row counterexample dichotomy, distinguished from an original-head disagreement population. Written source read; no new upper estimate imported.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2978d84f8a1fda9083593b26c6bf724d5976d859/research/killed-green-head-closure-20261124/escape-analysis/README.md"
+    }
+  ],
+  "literature": [
+    {
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "doi": "10.1007/s10817-022-09658-8",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "use": "Proof-producing mixed-base rewriting and termination viewpoint; no global Collatz proof imported."
+    },
+    {
+      "authors": "N. Sauer",
+      "title": "On the density of families of sets",
+      "year": 1972,
+      "doi": "10.1016/0097-3165(72)90019-2",
+      "url": "https://www.sciencedirect.com/science/article/pii/0097316572900192",
+      "use": "Finite shattering/inventory counting inspiration. Required partial-domain/block-transversal proof is supplied directly."
+    },
+    {
+      "authors": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "year": 2000,
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "url": "https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf",
+      "use": "Theorem2.1, directly read: for fixed2,3 gives inverse-polynomial separation of distinct late clocks. Optional disjointness clause only; no numerical irrationality exponent used."
+    },
+    {
+      "authors": "I. Krasikov and J. C. Lagarias",
+      "title": "Bounds for the 3x+1 problem using difference inequalities",
+      "url": "https://arxiv.org/abs/math/0205002",
+      "use": "Published .84 fixed-target population exponent through the pinned actual-defect reduction; no new opposing upper bound."
+    }
+  ],
+  "latest_neighbor_comparison": "Initial metadata and coverage: reports/ayh-resource-reset-20261124/directed-return/PR_INTAKE.json. Prepublication refresh: HEAD_REFRESH.json. Subsequently read new PR201 sources and comparison: LATE_PR201_COMPARISON.md in that reports directory."
+}

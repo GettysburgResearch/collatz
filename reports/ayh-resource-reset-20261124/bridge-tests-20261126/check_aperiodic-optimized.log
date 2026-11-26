@@ -1,0 +1,83 @@
+[
+  {
+    "kind": "fixed_horizon",
+    "H": 0,
+    "depth": 1200,
+    "sizes": [
+      1201,
+      1201
+    ]
+  },
+  {
+    "kind": "fixed_horizon",
+    "H": 1,
+    "depth": 1200,
+    "sizes": [
+      2321,
+      1283
+    ]
+  },
+  {
+    "kind": "fixed_horizon",
+    "H": 3,
+    "depth": 1200,
+    "sizes": [
+      4596,
+      1360
+    ]
+  },
+  {
+    "kind": "fixed_horizon",
+    "H": 7,
+    "depth": 1200,
+    "sizes": [
+      9128,
+      1418
+    ]
+  },
+  {
+    "kind": "fixed_horizon",
+    "H": 16,
+    "depth": 1200,
+    "sizes": [
+      19295,
+      1473
+    ]
+  },
+  {
+    "kind": "fixed_horizon",
+    "H": 32,
+    "depth": 1200,
+    "sizes": [
+      37369,
+      1489
+    ]
+  },
+  {
+    "kind": "fixed_root_growing_clocks",
+    "N": 128,
+    "depth": 3000,
+    "sizes": [
+      39576,
+      3038
+    ]
+  },
+  {
+    "kind": "fixed_root_growing_clocks",
+    "N": 256,
+    "depth": 3000,
+    "sizes": [
+      42560,
+      3041
+    ]
+  },
+  {
+    "kind": "fixed_root_growing_clocks",
+    "N": 1024,
+    "depth": 3000,
+    "sizes": [
+      60476,
+      3049
+    ]
+  }
+]

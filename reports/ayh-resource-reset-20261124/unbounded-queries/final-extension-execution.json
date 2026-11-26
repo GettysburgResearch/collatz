@@ -1,0 +1,37 @@
+{
+  "baseline": "10d87fee615d1095990d6b7ea329126b4cf7aa5a",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Final root build of the widened pump, updated assembly and exhaustive 253-theorem audit, using only the freshly root-compiled complete dependency chain.",
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "WideCenterPump",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/WideCenterPump.lean",
+      "sha256": "67711375eff76865a78a1f306c39ddef7236b0760ca8bee92b3a9a920ac356ca",
+      "exit_code": 0,
+      "seconds": 5.907,
+      "output": "'WideCenterPump.excluded_progression' depends on axioms: [propext, Classical.choice, Quot.sound]\n'WideCenterPump.threshold' depends on axioms: [propext]\n'WideCenterPump.height' depends on axioms: [propext, Quot.sound]\n'WideCenterPump.least_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'WideCenterPump.integral_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'WideCenterPump.three_digits' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "UnboundedQueryProposal",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/UnboundedQueryProposal.lean",
+      "sha256": "e1ece46f9cbc8272ac43d11e0a3d11b79aef5e7f8adbdcaa8e8a865dcb7ac25e",
+      "exit_code": 0,
+      "seconds": 1.222,
+      "output": "'UnboundedQueryProposal.survivor_extends' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_from_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnboundedQueryProposal.collatz_iff_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "PublicUnboundedAudit",
+      "path": "research/ayh-resource-reset-20261124/unbounded-queries/PublicUnboundedAudit.lean",
+      "sha256": "20eb117b31532027767e2ee5fb603398181f2759768060df45b0ad7d7b27930f",
+      "exit_code": 1,
+      "seconds": 0.24,
+      "output": "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/unbounded-queries/PublicUnboundedAudit.lean:2:0: error: invalid 'import' command, it must be used in the beginning of the file\n"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-crossing-lean-build/v1",
+  "command": [
+    "bash",
+    "/workspace/scratch/33d115a3cb8d/collatz/research/ayh-resource-reset-20261124/crossing-step/check_lean.sh"
+  ],
+  "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+  "started_utc": "2026-11-24T10:52:07.779448+00:00",
+  "duration_seconds": 213.743,
+  "exit_code": 0,
+  "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n'HeadRayRouting.dyadic_label' depends on axioms: [propext]\n'HeadRayRouting.odd_run_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HeadRayRouting.unit_phase27' depends on axioms: [propext, Quot.sound]\n'HeadRayRouting.repeat_phase27' depends on axioms: [propext]\n'HeadRayRouting.exact_head_labels' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HeadRayRouting.tripling_from_four' depends on axioms: [propext, Quot.sound]\n'Collatz.LateWitnessTracks.projected_head_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LateWitnessTracks.parent_residue_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LateWitnessTracks.parent_test_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SymmetricFutureForks.few_poor_centers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SymmetricFutureForks.prefix_shift' depends on axioms: [propext, Quot.sound]\n'Collatz.SymmetricFutureForks.fork_parities' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourSuffixClosure.tripled_return' depends on axioms: [propext, Quot.sound]\n'FourSuffixClosure.constant_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourSuffixClosure.basin_iff_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HeadRayRouting.dyadic_label' depends on axioms: [propext]\n'HeadRayRouting.odd_run_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HeadRayRouting.unit_phase27' depends on axioms: [propext, Quot.sound]\n'HeadRayRouting.repeat_phase27' depends on axioms: [propext]\n'HeadRayRouting.exact_head_labels' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HeadRayRouting.power_label' depends on axioms: [propext, Quot.sound]\n'HeadRayRouting.tripling_from_four' depends on axioms: [propext, Quot.sound]\n'FourSuffixClosure.tripled_return' depends on axioms: [propext, Quot.sound]\n'FourSuffixClosure.constant_label' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourSuffixClosure.basin_iff_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LateWitnessTracks.projected_head_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LateWitnessTracks.parent_residue_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.LateWitnessTracks.parent_test_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SymmetricFutureForks.steps_mono' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SymmetricFutureForks.few_poor_centers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SymmetricFutureForks.one_shift' depends on axioms: [propext, Quot.sound]\n'Collatz.SymmetricFutureForks.prefix_shift' depends on axioms: [propext, Quot.sound]\n'Collatz.SymmetricFutureForks.fork_parities' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SingleReturn.singleReturnCover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SingleReturn.collatzIffSingleReturn' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SingleReturn.collatzIffEvenChild' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "local_imports_rebuilt": [
+    "SingleReturn"
+  ],
+  "new_modules": [
+    "HeadRayRouting",
+    "LateWitnessTracks",
+    "SymmetricFutureForks",
+    "FourSuffixClosure"
+  ],
+  "source_sha256": {
+    "FourSuffixClosure.lean": "f1d3f0c673247cdd257669579ee14de6363192835088d56dfd4bd2f3e0bb6d4e",
+    "HeadRayRouting.lean": "f01048cc918d017a4bb38a73a7163445bd2aefe960c15a482f6a982c390641c0",
+    "LateWitnessTracks.lean": "061185697e55ed2dd1cde999b341b4743023797c34cc5f8bb79defb33e3d5618",
+    "SymmetricFutureForks.lean": "ffdb78a6199a9acef50e2318c35a81b7e7058ecc9912496cfbfd67de2f5c0750",
+    "vendor/SingleReturn.lean": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7"
+  },
+  "driver_sha256": "33612de24ffc2fc5f9701a24150425bba0e3efd68906b9dceca3705b103a09b1"
+}

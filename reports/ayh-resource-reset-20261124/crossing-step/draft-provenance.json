@@ -1,0 +1,146 @@
+[
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_ROUTING.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/FOUR_SUFFIX_ROUTING.md",
+    "draft_sha256": "525f78c4425293fdf7524ba2d840e113325e0f59e80beafabd1ecd65871265d0",
+    "integration_changes": [
+      "Remove a duplicated sentence-ending period."
+    ],
+    "integrated_sha256": "525f78c4425293fdf7524ba2d840e113325e0f59e80beafabd1ecd65871265d0"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/FOUR_SUFFIX_EQUIVALENCE.md",
+    "draft_sha256": "2420bf9dd85e489521adb91b5d0436d298f52d5129eff72eeb17f5d3cd418f40",
+    "integration_changes": [
+      "Define actual counts only for j>=1 and set a0=A0=0; the bounded bottom term already absorbs this convention."
+    ],
+    "integrated_sha256": "035e9100d9eb68201f15d56c8ff3d05c9760c5bf409cf0d242e77b9e20830899"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/HeadRayRouting.lean",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/HeadRayRouting.lean",
+    "draft_sha256": "f01048cc918d017a4bb38a73a7163445bd2aefe960c15a482f6a982c390641c0",
+    "integration_changes": [],
+    "integrated_sha256": "f01048cc918d017a4bb38a73a7163445bd2aefe960c15a482f6a982c390641c0"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/FourSuffixClosure.lean",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/FourSuffixClosure.lean",
+    "draft_sha256": "f1d3f0c673247cdd257669579ee14de6363192835088d56dfd4bd2f3e0bb6d4e",
+    "integration_changes": [],
+    "integrated_sha256": "f1d3f0c673247cdd257669579ee14de6363192835088d56dfd4bd2f3e0bb6d4e"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/vendor/SingleReturn.lean",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/SingleReturn.lean",
+    "draft_sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+    "integration_changes": [],
+    "integrated_sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7"
+  },
+  {
+    "path": "reports/ayh-resource-reset-20261124/crossing-step/REVIEW_WEIGHTED.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/REVIEW_WEIGHTED.md",
+    "draft_sha256": "442ed0fc5f5aee02e34322553d9397735cd83ff8f5f244e17b6d9794401c3b39",
+    "integration_changes": [],
+    "integrated_sha256": "442ed0fc5f5aee02e34322553d9397735cd83ff8f5f244e17b6d9794401c3b39"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/LATE_WITNESS_TRACKS.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/LATE_WITNESS_TRACKS.md",
+    "draft_sha256": "68cb66ff0a6cbf0b36189a540cfe1e52dbcfac0b0e157641a886edafa06b8989",
+    "integration_changes": [],
+    "integrated_sha256": "68cb66ff0a6cbf0b36189a540cfe1e52dbcfac0b0e157641a886edafa06b8989"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/WEIGHTED_TWO_HEAD_GRAPH.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/WEIGHTED_TWO_HEAD_GRAPH.md",
+    "draft_sha256": "0d8d9788d6ff68e0b3b879f586875e4fa00534d481ce50caf94f90eb95f3c8d4",
+    "integration_changes": [],
+    "integrated_sha256": "0d8d9788d6ff68e0b3b879f586875e4fa00534d481ce50caf94f90eb95f3c8d4"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/LateWitnessTracks.lean",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/LateWitnessTracks.lean",
+    "draft_sha256": "061185697e55ed2dd1cde999b341b4743023797c34cc5f8bb79defb33e3d5618",
+    "integration_changes": [],
+    "integrated_sha256": "061185697e55ed2dd1cde999b341b4743023797c34cc5f8bb79defb33e3d5618"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/TRACK_VARIATION.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/TRACK_VARIATION.md",
+    "draft_sha256": "3c203be12ae7dd10378d46771f09d38a2617b1d7d2e1a101d10bfb8cdbf44832",
+    "integration_changes": [],
+    "integrated_sha256": "3c203be12ae7dd10378d46771f09d38a2617b1d7d2e1a101d10bfb8cdbf44832"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/JOINT_TARGET_MIDPOINTS.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/JOINT_TARGET_MIDPOINTS.md",
+    "draft_sha256": "89a8135f670a48a16294378eca427c471c0a6df1bb1c3611594b874af910688e",
+    "integration_changes": [],
+    "integrated_sha256": "89a8135f670a48a16294378eca427c471c0a6df1bb1c3611594b874af910688e"
+  },
+  {
+    "path": "reports/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_REVIEW.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/FOUR_SUFFIX_REVIEW.md",
+    "draft_sha256": "321f935f22da3109408dd438846749b4305f4b8a1e862c27b32fc9be40b889f5",
+    "integration_changes": [],
+    "integrated_sha256": "321f935f22da3109408dd438846749b4305f4b8a1e862c27b32fc9be40b889f5"
+  },
+  {
+    "path": "reports/ayh-resource-reset-20261124/crossing-step/SYMMETRIC_FORK_REVIEW.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_weighted_closure_2/SYMMETRIC_FORK_REVIEW.md",
+    "draft_sha256": "3c76595f181c1d3e26036fa21c466bcf08a25b8dc09fb3d67c9f4d2573eee825",
+    "integration_changes": [],
+    "integrated_sha256": "3c76595f181c1d3e26036fa21c466bcf08a25b8dc09fb3d67c9f4d2573eee825"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/SYMMETRIC_FUTURE_FORKS.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_rigidity_literature_2/SYMMETRIC_FUTURE_FORKS.md",
+    "draft_sha256": "7857698938cf63ea0fef0efeb0a06a3fd9ea59446854bb9d1529ddab0c322128",
+    "integration_changes": [],
+    "integrated_sha256": "7857698938cf63ea0fef0efeb0a06a3fd9ea59446854bb9d1529ddab0c322128"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/SymmetricFutureForks.lean",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_rigidity_literature_2/SymmetricFutureForks.lean",
+    "draft_sha256": "ffdb78a6199a9acef50e2318c35a81b7e7058ecc9912496cfbfd67de2f5c0750",
+    "integration_changes": [],
+    "integrated_sha256": "ffdb78a6199a9acef50e2318c35a81b7e7058ecc9912496cfbfd67de2f5c0750"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/NATIVE_FIBER_CROSSING.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_rigidity_literature_2/NATIVE_FIBER_CROSSING.md",
+    "draft_sha256": "d8b70a5e3fe94b27ee1e372ae4eee87d608315639d663b03c70c519dee856fc3",
+    "integration_changes": [],
+    "integrated_sha256": "d8b70a5e3fe94b27ee1e372ae4eee87d608315639d663b03c70c519dee856fc3"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/PERIODIC_FOUR_SUFFIX_SCHEDULE.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/PERIODIC_FOUR_SUFFIX_SCHEDULE.md",
+    "draft_sha256": "30cf14ffd3f3017d32e5577a006bb8174f03da28f9870b0fe8ddd14bf8416c9b",
+    "integration_changes": [],
+    "integrated_sha256": "30cf14ffd3f3017d32e5577a006bb8174f03da28f9870b0fe8ddd14bf8416c9b"
+  },
+  {
+    "path": "reports/ayh-resource-reset-20261124/crossing-step/REVIEW_ADDITIONS.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_fiber_crossing_2/REVIEW_ADDITIONS.md",
+    "draft_sha256": "8f22a6f91b97cafc7fee8849e6a286273b09c8ec2bde5bb9db7a4b60668f1153",
+    "integration_changes": [],
+    "integrated_sha256": "8f22a6f91b97cafc7fee8849e6a286273b09c8ec2bde5bb9db7a4b60668f1153"
+  },
+  {
+    "path": "research/ayh-resource-reset-20261124/crossing-step/RETROSPECTIVE_INFORMATION.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_rigidity_literature_2/RETROSPECTIVE_INFORMATION.md",
+    "draft_sha256": "dd75f9567f2e5dfc3546e860824191b557a4ee036b9370bd2b0c25dac17a159d",
+    "integration_changes": [],
+    "integrated_sha256": "dd75f9567f2e5dfc3546e860824191b557a4ee036b9370bd2b0c25dac17a159d"
+  },
+  {
+    "path": "reports/ayh-resource-reset-20261124/crossing-step/JOINT_TARGET_MIDPOINTS_REVIEW.md",
+    "origin": "/workspace/scratch/33d115a3cb8d/attack_rigidity_literature_2/JOINT_TARGET_MIDPOINTS_REVIEW.md",
+    "draft_sha256": "0d8728a784194af81b5d0c08ced59b46a8d350589dbfb252b976715e712a10be",
+    "integration_changes": [],
+    "integrated_sha256": "0d8728a784194af81b5d0c08ced59b46a8d350589dbfb252b976715e712a10be"
+  }
+]
