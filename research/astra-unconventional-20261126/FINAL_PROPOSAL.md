@@ -157,6 +157,20 @@ This makes the obstruction to short-distance amplification explicit.
 The [delay note](descent/POSTPEAK_DELAY.md) distinguishes these
 formal results from its further source-qualified mixed-phase argument.
 
+The final attack also found **paid repairs at these preassigned
+parents**, without changing their high binary cofactor. The
+[late supplement](descent/PAID_DELAY_REPAIRS.md) supplies exact
+affine certificates for the first thirty parameters. For the first
+two, at exponents 3,145,727 and 824,633,720,831, it constructs
+smaller canonical sources and transports every original upper hit
+with costs respectively `+8 clocks, +6 odds` and `-16 clocks,
++2 odds`. The other twenty-eight have an actual same-component
+representative smaller by more than `2^40`, using the prior
+quantitative-return consumer for canonical descent. A specified
+infinite class of the same preassigned parameters also enters the
+depth-nine canonical bridge. These are successful original-source
+comparisons beyond the delay; an all-parameter theorem remains open.
+
 ## 4. All-clock control of paired returns
 
 For common-clock returns
@@ -186,8 +200,8 @@ proof with a source-qualified use of Yu; the finite carry and divisibility
 lemmas are separately in Lean.
 
 The [rank-twelve certificate](operator/RANK_PRESSURE.md) supplies a
-stronger exponential estimate on the strip where the difference of
-the two odd counts has magnitude at most twelve:
+stronger exponential estimate on the strip \(|r|\le12\), where
+\(r=1+b-a\) and \(a,b\) are the lower and upper odd counts:
 
 \[
 W_{p,12}\le10(8.1)^p.

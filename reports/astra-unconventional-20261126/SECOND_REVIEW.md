@@ -422,3 +422,30 @@ per-clock rate `ρ<1` would force `1/9 ≤ ρ^L` for arbitrarily
 large `L`, an impossibility. This does not refute a bound from the
 specific root: reachability of these charts from `(1,-1)` has not
 been established. It also does not refute contraction per odd grade.
+
+## Late paid repairs at the preassigned parents
+
+**VERIFIED as written mathematics and exact finite certificates,
+subject to the final executable replay.** The root read the complete
+late checker and reconstructed its affine recurrence. Low binary
+residues determine the actual parity decisions, even when the
+chosen representative is zero. Starting with offset `A=-1`, an
+odd step at clock `i` changes it to `3A+2^i`; an even step leaves
+it unchanged. Equality of full integer offsets and the exact
+odd-count difference `s` therefore proves equality of the two
+astronomical ordinary peaks. This does not rely on a checksum or
+on constructing the huge powers explicitly.
+
+The two signed canonical seeds are checked through their complete
+finite rational paths. Their dyadic lift precision, integral and
+canonical residues, positivity and strict height comparisons are
+explicit. The upper endpoints give the exact `+8,+6` and `-16,+2`
+clock/odd transfer costs. For the remaining twenty-eight cases the
+same-component `2^40` gain is unconditional, while the canonical
+conclusion invokes the pinned earlier quantitative-return consumer.
+The infinite parameter class is checked modulo `27·43046721`,
+including the full period; it is an application of the existing
+depth-nine bridge. The thirty cases and that one infinite class
+are not represented as an all-parameter theorem. The supplement
+adds no Lean declarations, and all previous 106 formal statements
+remain unchanged.

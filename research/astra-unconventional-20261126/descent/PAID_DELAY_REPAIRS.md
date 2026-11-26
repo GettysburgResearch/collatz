@@ -1,0 +1,24 @@
+# Paid comparisons at the preassigned delayed parents
+
+Let \(k\ge1\), \(m=12\cdot2^{18k}-1\), \(H=18k+4\) and \(z=(2^{m+7}-271)/81\). The peak \(U_m=3^m-1\) avoids every earlier peak at all pairs of clocks through \(H\). Nevertheless **each of the first thirty fixed parents \(k=1,\ldots,30\) admits a paid descent**. The parameter \(m\) in each comparison is the original formula with cofactor one. A further specified infinite class of the same parents admits canonical descent by the signed bridge. The finite comparisons are exact arithmetic with an executable checker. The infinite class uses the earlier cofinal physical kernels and an explicit modular address. [Delay theorem](SignedDelay.lean) · [Checker](paid_delay_repairs.py) · [All thirty witnesses](../../../reports/astra-unconventional-20261126/descent/paid_delay_repairs.json)
+
+## The first two parents
+
+| \(k\) | \(m\) | Earlier gap \(s\) | Postpeak clock \(h\) | Peak odd counts, original and earlier | Canonical ordinary source \(Y\) |
+|---:|---:|---:|---:|---|---|
+| 1 | 3,145,727 | 10 | 63 | 20 and 30 | \((2^{m+15}-44102839)/59049\) |
+| 2 | 824,633,720,831 | 22 | 95 | 26 and 48 | \((2^{m-9}-11911)/729\) |
+
+In both rows \(Y\equiv17\bmod48\) and \(0<Y<z\). At \(k=1\), the lower \(Y\) reaches \(2^{m-10}-1\) after 25 clocks and ten odds. The upper \(3Y\) reaches \(2^{m-10}\) after 25 clocks and nine odds. At \(k=2\), the lower \(Y\) reaches \(2^{m-22}-1\) after thirteen clocks and six odds. The upper \(3Y\) reaches \(2^{m-22}\) after thirteen clocks and five odds. These are ordinary prefix lifts of the signed reference pairs \((-44102839/59049,-3\cdot44102839/59049)\) and \((-11911/729,-3\cdot11911/729)\), ending at \((-1,0)\) in each case. Residues modulo \(16\) and \(3^{r+1}\), with \(r=10,6\), give integrality and the canonical class. The leading height ratios \(Y/z\) are \(256/729\) and \(1/589824\), respectively. The checker also verifies a strict finite-height bound using \(81z>127\cdot2^m\).
+
+The Mersenne lower sources reach their respective peaks and then meet after the additional \(h\) clocks in the table. The original upper \(3z\) first reaches \(2^{m-2}\) at clock nine with three odd departures along this prefix, then the smaller power in the applicable row at clock 17 or 29 with the same three odds. Every original supplied hit of 1 lies after this matching point, since that point exceeds 2. Thus every supplied upper witness transfers to \(3Y\) with **eight more clocks and six more odds** at \(k=1\), or **sixteen fewer clocks and two more odds** at \(k=2\). A bad lower \(z\) would give a smaller bad lower \(Y\) with a good upper at the same ordinary parent. [Physical hard-source prefix](SignedMersenne.lean)
+
+## The other twenty-eight parents
+
+For every \(3\le k\le30\) the witness list supplies \(s\ge40\) and \(h>H\) with \(T^h U_m=T^h U_{m-s}\). The positive ordinary source \(x=2^{m-s}-1\) therefore shares the lower component of \(z\), and \(2^{40}x<2^m<z\). If \(z\) were a least canonical reverse defect, the earlier quantitative-return theorem applied to this bad \(x\) would give a canonical defect below \(z\). These twenty-eight cases use that prior consumer. They do not assert a supplied upper certificate at \(3x\). The longest replay is \(k=26,\ H=472,\ h=12365,\ s=40\), with 6023 and 6063 odd departures. [Prior quantitative return](https://github.com/GettysburgResearch/collatz/blob/f74d2144275c3e1f9148b0b2997fecc7931ae7f5/research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean)
+
+The parity word at \(U_m\) through \(h\) is determined by \(3^m-1\bmod2^h\). Starting from signed offset \(A=-1\), an even departure leaves \(A\) unchanged, and an odd departure at clock \(i\) sends \(A\) to \(3A+2^i\). With \(p\) odds the exact ordinary endpoint is \((3^{m+p}+A)/2^h\). The checker requires equality of the **full integer** offsets and requires the earlier odd count to be \(p+s\). These certify the original physical meetings without constructing astronomical powers in full or relying on a checksum.
+
+## An infinite class of these same parents
+
+For every \(k\equiv20883403\bmod43046721\), the actual hard index \(j_k=2(2^{18k}-1)/27\) satisfies \(j_k\equiv4471574\bmod43046721\). The checker verifies both the base residue and its periodicity modulo \(27\cdot43046721\). This is precisely the depth-nine canonical address of the signed narrow theorem. Every such original parent admits a strictly smaller canonical representative with a lower meeting and transfer of every given upper certificate by **25 additional clocks and 16 additional odds**. This application uses the signed bridge, independently of a meeting with an earlier Mersenne peak. A paid comparison for all preassigned \(k\) remains open. [Canonical bridge and address proof](SIGNED_MERSENNE.md) · [Physical theorem](SignedNarrow.lean) · [Cofactor-one exponents in ternary classes](DelayAddresses.lean)

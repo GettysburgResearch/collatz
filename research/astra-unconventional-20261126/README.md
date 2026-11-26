@@ -19,6 +19,13 @@ The later part of the pass adds the following direct-source and global results.
 
 The initial checkpoint supplies these complementary components.
 
+The [late paid-repair supplement](descent/PAID_DELAY_REPAIRS.md)
+then resolves the first thirty preassigned delayed parents by exact
+affine certificates. Its first two reductions preserve the actual
+upper hitting witness with explicit costs; a further infinite
+subprogression uses the canonical bridge. This finite range and
+specified subprogression do not claim success for every parameter.
+
 | Direction | Result | What remains unproved |
 |---|---|---|
 | [Squareclasses](adelic/README.md), [actual descent](adelic/GROWTH.md) | An explicit bound on an orbit's record height in terms of its odd-state squareclass rank; an actual convergence theorem from a dependence condition at every growth triple; a mixed real/ternary argument for rank at most seven using the separately published verification below `2^71`. | No bound on the squareclass rank of every fixed source. The rank-seven corollary uses an external range computation, which this packet does not rerun. |

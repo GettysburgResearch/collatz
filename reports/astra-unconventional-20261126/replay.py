@@ -23,7 +23,8 @@ REVIEW_SOURCES = []
 CONTROL_NAMES = [
     'adelic/check.py', 'adelic/check_units.py', 'adelic/check_repair.py',
     'descent/check.py', 'descent/paired_words.py', 'descent/signed_mersenne.py',
-    'descent/postpeak_check.py', 'operator/distortion_bounds.py',
+    'descent/postpeak_check.py', 'descent/paid_delay_repairs.py',
+    'operator/distortion_bounds.py',
 ]
 CPP_NAMES = ['operator/rank_pressure.cpp']
 ALLOWED_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
