@@ -26,7 +26,7 @@ PR 192 proved that each of these original exponents delays a merger with every e
 
 At $k=1$ the supplied exponent is $m=3{,}145{,}727$ and $z=(2^{3{,}145{,}734}-271)/81$. Seven shortcuts reach $2^m-1$ and the next $m$ odd departures reach $3^m-1$. An ordinary block computation from that peak reaches 1 after exactly $24{,}052{,}486$ further steps, with $12{,}029{,}702$ odd departures. Thus $z$ itself reaches 1 at clock $27{,}198{,}220$. An independent variable-run evaluator with 383-bit blocks checked firstness by keeping the completed blocks strictly above 1 and testing every state in the scalar tail. [Independent first-hit replay](mersenne_parent_replay.py)
 
-The file divides the trajectory into 48 segments. A serial native Lean run checked the 48 concrete segment proofs before hitting a recursion limit while joining them. An explicit balanced join was then checked separately for arbitrary checkpoints with exactly these segment lengths. The complete corrected file has a separate, longer verification run. Elaboration computes proposed intermediate numerals. The kernel checks each segment from its stated start, and the ordinary iteration law joins the results. The theorem asserts an exact hit. The separate 383-bit first-hit replay also checks all earlier times. The standalone Lean source has SHA-256 `4f45a889452915eead7a275bc10a50d2c2dd3f2b89e90c2660466f8a1da3b1da`. [Long Lean replay](long/ReturnDescentMillion.lean)
+The standalone proof divides the trajectory into 48 segments. Lean checked their numerical proofs in six parallel modules and joined the genuine proof constants into the theorem `first_delayed_converges`, with axiom report `[propext, Quot.sound]`. This proves the exact hit. The 383-bit integer replay additionally checks every earlier time. The parallel driver derives its module sources from the single-file certificate, whose SHA-256 is `4f45a889452915eead7a275bc10a50d2c2dd3f2b89e90c2660466f8a1da3b1da`. [Lean certificate](long/ReturnDescentMillion.lean) · [Parallel replay](long/replay_shards.py)
 
 To reproduce the independent Lean check from `research/clock-itineraries` with Lean 4.34.1 on the executable path, use a fresh object directory.
 
@@ -40,6 +40,14 @@ do
 done
 lean -j6 -DwarningAsError=true -DautoImplicit=false -DElab.async=true \
   -o "$proof_objects/ReturnDescentMillion.olean" long/ReturnDescentMillion.lean
+```
+
+Using the same compiled prerequisites, the parallel replay below checks the 48 segments and the final assembly in eight modules and writes an axiom and object-digest receipt. Set `--out` to an output directory for the generated files.
+
+```sh
+python long/replay_shards.py --source long/ReturnDescentMillion.lean \
+  --lean "$(command -v lean)" --dependencies "$proof_objects" \
+  --out "$(mktemp -d)" --jobs 6
 ```
 
 These statements leave open whether each specified hard source meets an earlier Mersenne at an affordable residue and whether every canonical three-odd parent converges. The representative theorem transfers an actual lower label. A known upper hit alone gives no lower hit.
