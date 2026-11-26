@@ -18,6 +18,8 @@ One explicit arithmetic partial isometry \(V\) then gives a sharp alternative. F
 
 ## Evidence that bears on the remaining steps
 
+Bařina's verified range already implies zero misses for some finite deadline at every stage below 79,164,837,199,872. Direct finite searches can measure how long a common deadline must be. Extending the stage range indefinitely is the part that would prove convergence. [Lean finite-range implication](SynchronousFiniteRange.lean) · [Bařina, 2025](https://doi.org/10.1007/s11227-025-07337-0)
+
 The sharp height formulas rule out selecting a uniformly smaller pair at clock 14. For \(b=1093+3^{14}t\), even allowing every shorter common clock gives a least base \((16384b-313)/81\). Any descent proof through these pairs must also use later dynamics or another comparison. At the other end, finite inspection through \(x=119304647\) found 5,585,854 qualifying synchronized triples, all of whose 28-step endpoints reached 1 within 381 further steps. The required statement concerns arbitrarily large stages. [Exact lower bound](FreePairHeight.lean) · [Finite computation](synchronous_basin_replay.mjs)
 
 The operator test similarly distinguishes infinite from finite observation. Convergent points can have arbitrarily late physical mergers and almost maximizing finite row norms. Approximating the target with uniformly bounded graph propagation has the full error even on these known convergent examples. A proof through the distance estimate has to control the strong closure at every fixed ordinary coordinate. [Finite controls and scope](BergmanRelative.md)

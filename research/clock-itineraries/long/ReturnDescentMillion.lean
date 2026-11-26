@@ -65,7 +65,7 @@ private theorem splitEval_spec (f h n : Nat) : splitEval f h n=track h n 0 := by
       simp only [z,↓reduceIte,mid_eq]
     · simp only [z,↓reduceIte]
 
-private def cp0 : Nat := 3^3145727-1
+@[reducible] private def cp0 : Nat := 3^3145727-1
 
 private theorem checked_edge {f h n y : Nat} (proof : (splitEval f h n).1=y) : run h n=y := by
   rwa [splitEval_spec,track_run] at proof
@@ -313,7 +313,56 @@ private theorem edge46 : run 500000 cp46=cp47 := checked_edge (f:=10) (by decide
 
 private theorem edge47 : run 552486 cp47=1 := checked_edge (f:=10) (by decide +kernel)
 
-private theorem longPeak : run 24052486 (3^3145727-1)=1 :=
+private theorem assemble (cp0 cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12 cp13 cp14 cp15 cp16 cp17 cp18 cp19 cp20 cp21 cp22 cp23 cp24 cp25 cp26 cp27 cp28 cp29 cp30 cp31 cp32 cp33 cp34 cp35 cp36 cp37 cp38 cp39 cp40 cp41 cp42 cp43 cp44 cp45 cp46 cp47 : Nat)
+  (edge0 : run 500000 cp0=cp1)
+  (edge1 : run 500000 cp1=cp2)
+  (edge2 : run 500000 cp2=cp3)
+  (edge3 : run 500000 cp3=cp4)
+  (edge4 : run 500000 cp4=cp5)
+  (edge5 : run 500000 cp5=cp6)
+  (edge6 : run 500000 cp6=cp7)
+  (edge7 : run 500000 cp7=cp8)
+  (edge8 : run 500000 cp8=cp9)
+  (edge9 : run 500000 cp9=cp10)
+  (edge10 : run 500000 cp10=cp11)
+  (edge11 : run 500000 cp11=cp12)
+  (edge12 : run 500000 cp12=cp13)
+  (edge13 : run 500000 cp13=cp14)
+  (edge14 : run 500000 cp14=cp15)
+  (edge15 : run 500000 cp15=cp16)
+  (edge16 : run 500000 cp16=cp17)
+  (edge17 : run 500000 cp17=cp18)
+  (edge18 : run 500000 cp18=cp19)
+  (edge19 : run 500000 cp19=cp20)
+  (edge20 : run 500000 cp20=cp21)
+  (edge21 : run 500000 cp21=cp22)
+  (edge22 : run 500000 cp22=cp23)
+  (edge23 : run 500000 cp23=cp24)
+  (edge24 : run 500000 cp24=cp25)
+  (edge25 : run 500000 cp25=cp26)
+  (edge26 : run 500000 cp26=cp27)
+  (edge27 : run 500000 cp27=cp28)
+  (edge28 : run 500000 cp28=cp29)
+  (edge29 : run 500000 cp29=cp30)
+  (edge30 : run 500000 cp30=cp31)
+  (edge31 : run 500000 cp31=cp32)
+  (edge32 : run 500000 cp32=cp33)
+  (edge33 : run 500000 cp33=cp34)
+  (edge34 : run 500000 cp34=cp35)
+  (edge35 : run 500000 cp35=cp36)
+  (edge36 : run 500000 cp36=cp37)
+  (edge37 : run 500000 cp37=cp38)
+  (edge38 : run 500000 cp38=cp39)
+  (edge39 : run 500000 cp39=cp40)
+  (edge40 : run 500000 cp40=cp41)
+  (edge41 : run 500000 cp41=cp42)
+  (edge42 : run 500000 cp42=cp43)
+  (edge43 : run 500000 cp43=cp44)
+  (edge44 : run 500000 cp44=cp45)
+  (edge45 : run 500000 cp45=cp46)
+  (edge46 : run 500000 cp46=cp47)
+  (edge47 : run 552486 cp47=1)
+    : run 24052486 cp0=1 :=
   (@glue 12000000 12052486 cp0 cp24 1
     (@glue 6000000 6000000 cp0 cp12 cp24
       (@glue 3000000 3000000 cp0 cp6 cp12
@@ -410,13 +459,18 @@ private theorem longPeak : run 24052486 (3^3145727-1)=1 :=
               edge46
               edge47))))))
 
+private theorem longPeak : run 24052486 cp0=1 :=
+  assemble cp0 cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12 cp13 cp14 cp15 cp16 cp17 cp18 cp19 cp20 cp21 cp22 cp23 cp24 cp25 cp26 cp27 cp28 cp29 cp30 cp31 cp32 cp33 cp34 cp35 cp36 cp37 cp38 cp39 cp40 cp41 cp42 cp43 cp44 cp45 cp46 cp47
+    edge0 edge1 edge2 edge3 edge4 edge5 edge6 edge7 edge8 edge9 edge10 edge11 edge12 edge13 edge14 edge15 edge16 edge17 edge18 edge19 edge20 edge21 edge22 edge23 edge24 edge25 edge26 edge27 edge28 edge29 edge30 edge31 edge32 edge33 edge34 edge35 edge36 edge37 edge38 edge39 edge40 edge41 edge42 edge43 edge44 edge45 edge46 edge47
+
 /-- Unconditional ordinary iteration of the first preassigned delayed hard parent. -/
 theorem first_delayed_converges : run 27198220 (hardParent 3145727)=1 := by
   have source := (hard_source 19418).2.2.1
   change run 7 (hardParent 3145727)=M 3145727 at source
   have path := longPeak
-  rw [show 27198220=7+(3145727+24052486) by decide,run_add,source,
-    run_add,peak,path]
+  rw [show 27198220=7+(3145727+24052486) by decide,run_add,source,run_add,peak]
+  change run 24052486 cp0=1
+  exact path
 
 #print axioms first_delayed_converges
 end Collatz.Itinerary.ReturnDescent
