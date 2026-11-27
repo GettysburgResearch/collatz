@@ -29,7 +29,11 @@ def main() -> None:
     parser.add_argument("--mathlib", required=True, type=Path)
     parser.add_argument("--receipt", required=True, type=Path)
     parser.add_argument("--only", nargs="*", help="Optional exact module stems")
+    parser.add_argument("--threads", type=int, default=1,
+                        help="Lean worker threads per invocation (default: 1)")
     args = parser.parse_args()
+    if args.threads < 1:
+        parser.error("--threads must be positive")
     lean = str(args.lean.resolve())
     mathlib = args.mathlib.resolve()
     receipt = args.receipt.resolve()
@@ -53,6 +57,7 @@ def main() -> None:
     result = {
         "schema": "collatz-astra-diagonal-lean/v1",
         "compiler": version.stdout.strip(),
+        "threads": args.threads,
         "mathlib": MATHLIB_PIN,
         "dependency_manifest_sha256": hashlib.sha256(
             (mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
@@ -80,7 +85,7 @@ def main() -> None:
             declarations = [namespaces[0] + "." + name for name in names]
             public.extend(declarations)
             before = time.monotonic()
-            compiled = run([lean, "-DautoImplicit=false", "-DwarningAsError=true",
+            compiled = run([lean, "-j", str(args.threads), "-DautoImplicit=false", "-DwarningAsError=true",
                             "-o", str(obj / (source.stem + ".olean")), str(source)], env=env)
             if source.read_bytes() != original:
                 raise SystemExit("Source changed during compilation: " + str(source))
@@ -103,7 +108,7 @@ def main() -> None:
                             *("#print axioms " + name for name in public), ""])
         audit_path = obj / "Audit.lean"
         audit_path.write_text(audit)
-        checked = run([lean, "-DautoImplicit=false", "-DwarningAsError=true", str(audit_path)], env=env)
+        checked = run([lean, "-j", str(args.threads), "-DautoImplicit=false", "-DwarningAsError=true", str(audit_path)], env=env)
         (logs / "Audit.lean").write_text(audit)
         (logs / "Audit.stdout.log").write_text(checked.stdout)
         (logs / "Audit.stderr.log").write_text(checked.stderr)
