@@ -1,0 +1,197 @@
+{
+  "local_commit": "4666445db7f92be167f679ecf238f613000020db",
+  "parent_commit": "c683c28c82f182c3c97f82deb337643f552486b2",
+  "tree": "af43fb99e2097f868465b53dbaec49ba54d6d9fc",
+  "parent_tree": "c3a04753c04d087376f99847402d22dd76e94d89",
+  "files": [
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/FOURTH_CHECKPOINT.md",
+      "mode": "100644",
+      "blob": "e954e662c30bbafdeeb082d5fa256b5fa4641dd5",
+      "bytes": 11922,
+      "sha256": "cc6ef01c9130b81ad537e1fc5a3f721a0dfee79eeeb9b65be4457811fbdd4b70"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/README.md",
+      "mode": "100644",
+      "blob": "64ffa6e864e282d1ff855193fbbcde4a5d6922f8",
+      "bytes": 9533,
+      "sha256": "e004866ab6b227e0a6adebbc44f3136872cbd7e12e1dc1fb78cb5a204672d1fa"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/REVIEW_BOUNDARY.md",
+      "mode": "100644",
+      "blob": "9e229add69fd97f32bf759b54b78cec8e4def363",
+      "bytes": 12338,
+      "sha256": "16232bb60e776019c2644872758f91694e6f99405d5a9f7dd07c2bc781b02898"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/BLOCK_ALPHABETS.md",
+      "mode": "100644",
+      "blob": "a3f9a18d5460771d93f44a143aaac2670b27cf69",
+      "bytes": 8857,
+      "sha256": "ecd96782dd6f7975d35ab4352ae6ffc58a7227b9e797fba8d71b164f1a36d9d1"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/DENOMINATOR_LAW.md",
+      "mode": "100644",
+      "blob": "cad4035ac445b31829e857676b2813261f562071",
+      "bytes": 13889,
+      "sha256": "629e309354e042eb237591261d4ca351515f9e2fe4aa07c5c87923563753a69a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/PairFrequency.lean",
+      "mode": "100644",
+      "blob": "9eb73624ef34334e6a11555414d1c1032a905d12",
+      "bytes": 2774,
+      "sha256": "018cc84e3231383afe1b6da9b4b8768e60c538593a784d69f7b650feb81be2be"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/README.md",
+      "mode": "100644",
+      "blob": "77538593457f5f1a932604ef2f8684bd678ae66e",
+      "bytes": 2476,
+      "sha256": "72a804540ccea2cdbb8e79530600e04f8d71bd0e775009bf6dc7d31430ff39a7"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/check_blocks.py",
+      "mode": "100644",
+      "blob": "e3741801e7f3e4b43251a678908c62b8b65de784",
+      "bytes": 5989,
+      "sha256": "91f48d10fd1c3d4e6af49dc0f380b19205b9a5caddcb314180136d6f66d54d52"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase4/check_law.py",
+      "mode": "100644",
+      "blob": "0c7588aabff51a99a8be72be86c2794d75343d16",
+      "bytes": 6852,
+      "sha256": "a8103445762c49edc3deadcfddb3fa60308a33ce0d30ba4c892e191b300903b7"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/BAND_MERGERS.md",
+      "mode": "100644",
+      "blob": "a06d05386b15b64d68278f566388088ed348919b",
+      "bytes": 18283,
+      "sha256": "9241eb8724d5f1b160166a0b402b3778dc467dc13ee1606d4bf4e01c7c288a5a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/BandParents.lean",
+      "mode": "100644",
+      "blob": "a0dfe09c9ce1cbf831b654a47b961c25ed4505bc",
+      "bytes": 2722,
+      "sha256": "7627101b1071b005aa23d8aaafb921d5c9f120dd9fdafc0782a7dc2f367ea922"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/ENERGY_51_20.txt",
+      "mode": "100644",
+      "blob": "987c5ab4ff448e560862e3f38bee749d761f04de",
+      "bytes": 97,
+      "sha256": "529e8125c504293c451cb3946dd0c102e7445e4664303ae1d35f0b69105853aa"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/ENERGY_5_2.txt",
+      "mode": "100644",
+      "blob": "fe6e0bfe0694ad79b97fa78b6ffe06ad8a0ff0a3",
+      "bytes": 93,
+      "sha256": "1cd1c4e57cb796a6c3057f3b9087fd07dc5914acf0f2eeb297d2c0c631d2b39a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/MOTIF_CONTROLS.txt",
+      "mode": "100644",
+      "blob": "608a3dce7e4c4fedfc9f9e24f6cc96e30093b1f6",
+      "bytes": 288,
+      "sha256": "e43d635498967d65419450162c258255520435fd2dd9e742c7f088901b2c0760"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/SIXFOLD_MOTIFS.tsv",
+      "mode": "100644",
+      "blob": "b2418fb81404141b420977fa104fd05e92c819e5",
+      "bytes": 34625,
+      "sha256": "14b211eae1d776f3e3743c7eafe3e2c55d28b67ce44d14d5ad5f737acaec10a7"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/band_energy.py",
+      "mode": "100644",
+      "blob": "df64c528762220ef9124763be76d2a6778a02aa7",
+      "bytes": 3856,
+      "sha256": "13f42badacbb7414864a30c3d240e88d76cf5022d599ebc3c9bc0cfe068084a3"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/band/motif_controls.py",
+      "mode": "100644",
+      "blob": "484eba1ef20d9410fbd2d2e569b1a39ba9b109d4",
+      "bytes": 3688,
+      "sha256": "456d4ab77bbe2d9906b6980848277ceda9c12fa5789270a3fa3e15b28904e1af"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/FAST_CLOCK_CONTROLS.json",
+      "mode": "100644",
+      "blob": "a99306f695389ca6ac485140213211b02f1deba9",
+      "bytes": 3105,
+      "sha256": "f60deaf3f0b31a3d1d265990238811e0bc92824c95da947a6c7b60026ef5ea60"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/FAST_CLOCK_EDGE.md",
+      "mode": "100644",
+      "blob": "265cfd2e5e41c3910ce2a9da13fa8c28de2126b1",
+      "bytes": 6730,
+      "sha256": "7f79bcf0e7bbbf82ce1c0c5897e21e97da4e041831153fc9143a830704faab95"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/README.md",
+      "mode": "100644",
+      "blob": "7c57800b25a284c2ebbf13b626e43c0145062b5c",
+      "bytes": 1747,
+      "sha256": "e44c182b18c4a0f64c436dac51ec08dd9bbcd180cb08aa1c03d68bdc25842928"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/SOURCE_CLOCK_BANK.md",
+      "mode": "100644",
+      "blob": "c7893a6106f5c4b449f29d0172721981e12f331f",
+      "bytes": 15324,
+      "sha256": "c3c5fd8d4f971cf5be1379f9f0df6f6d808fa76dc5fc1d5193387cf88771d98c"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/SOURCE_CLOCK_CONTROLS.json",
+      "mode": "100644",
+      "blob": "1ab59cb52ca0b5967d29ce8f9d76a2304b2dfa6f",
+      "bytes": 2893,
+      "sha256": "512e37dc16ea99b47f2223be93cd3c2db33820d20b0e0d61e453b679e8f6628a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/fast_clock_controls.py",
+      "mode": "100644",
+      "blob": "ec50ce15b4710a39668d9f83eeaf66d609368311",
+      "bytes": 4845,
+      "sha256": "f52ab3e69c7a91aca88bb067784a151bfbeab656b0590cab734b7e31b2988059"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase5/source_clock_controls.py",
+      "mode": "100644",
+      "blob": "bad718cfa32e98dc7dce9b069a7a91b93e0a1fc7",
+      "bytes": 8237,
+      "sha256": "7e83392ce2293f5dc6b690b78c53e934d3884f7b2e377a4350e0ebe46be35eb9"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase4/MIRROR_ENERGY.md",
+      "mode": "100644",
+      "blob": "4be4012c61318a902c541e6698cfac7d96f93242",
+      "bytes": 5747,
+      "sha256": "256fc384f4c66cee300c40e73714e59c2407d4e8e1aa6c9289c9b5af48c916a9"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase4/MirrorEnergy.lean",
+      "mode": "100644",
+      "blob": "d0526f031c6aa731c05b2dc92147d3cccbfcdb55",
+      "bytes": 6710,
+      "sha256": "7e48872bd10ec5cec67874dd5e349c10f3d3a7864e94ecb91640ab9580841dc6"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase4/SharpCone.lean",
+      "mode": "100644",
+      "blob": "7b8407e27c69ac62c187b44c7080d3e435841c9c",
+      "bytes": 14027,
+      "sha256": "cbf306b568dfbbf5d6f482c378e468f329918c5f571258cab2d07d5b4a2fcd6b"
+    }
+  ]
+}

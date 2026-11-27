@@ -1,0 +1,164 @@
+{
+  "finished_utc": "2026-11-27T15:24:22.834352+00:00",
+  "fixtures": {
+    "descent/postpeak/band/ENERGY_51_20.txt": "529e8125c504293c451cb3946dd0c102e7445e4664303ae1d35f0b69105853aa",
+    "descent/postpeak/band/ENERGY_5_2.txt": "1cd1c4e57cb796a6c3057f3b9087fd07dc5914acf0f2eeb297d2c0c631d2b39a",
+    "descent/postpeak/band/MOTIF_CONTROLS.txt": "e43d635498967d65419450162c258255520435fd2dd9e742c7f088901b2c0760",
+    "descent/postpeak/band/SIXFOLD_MOTIFS.tsv": "14b211eae1d776f3e3743c7eafe3e2c55d28b67ce44d14d5ad5f737acaec10a7",
+    "rigidity/phase5/FAST_CLOCK_CONTROLS.json": "f60deaf3f0b31a3d1d265990238811e0bc92824c95da947a6c7b60026ef5ea60",
+    "rigidity/phase5/SOURCE_CLOCK_CONTROLS.json": "512e37dc16ea99b47f2223be93cd3c2db33820d20b0e0d61e453b679e8f6628a"
+  },
+  "fixtures_unchanged": true,
+  "passed": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rows": [
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase4/check_law.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.531,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "frequency roots 26400 small integer transitions 1336\nexact paired occupancy laws 594\nexact burst recoveries 45228\nfull histogram (8, 4) D 175 TV 24/175 max divisor mass error 4/35\nfull histogram (10, 5) D 781 TV 1135/49203 max divisor mass error 655/98406\nfull histogram (14, 8) D 9823 TV 7985/383097 max divisor mass error 56/8151\nfull histogram (16, 10) D 6487 TV 5141/499499 max divisor mass error 5/1001\nfull histogram (18, 11) D 84997 TV 54973/75137348 max divisor mass error 7/9724\nfull histogram (20, 12) D 517135 TV 84745801/6514349595 max divisor mass error 251/20995\nfull histogram (12, 9) D 15587 TV 1321/15587 max divisor mass error 42/715\nexact slice (40, 25, 25) max point error 4457537/77356432800\nexact slice (80, 50, 35) max point error 2668612009347709/155249719359707935602640\nexact slice (160, 100, 35) max point error 1267237857614976929864710688799/326913175567164571313623407425368270976505760\nexact slice (200, 126, 77) max point error 14702358781591515786891129/64926324807126048474409964573567836772051766827820400\n",
+          "output_sha256": "71239e59460d122f156e6c55c447c8ec1102b60bfe4e5d8b74fd4d8c27fcec0d"
+        },
+        {
+          "elapsed_seconds": 0.538,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "frequency roots 26400 small integer transitions 1336\nexact paired occupancy laws 594\nexact burst recoveries 45228\nfull histogram (8, 4) D 175 TV 24/175 max divisor mass error 4/35\nfull histogram (10, 5) D 781 TV 1135/49203 max divisor mass error 655/98406\nfull histogram (14, 8) D 9823 TV 7985/383097 max divisor mass error 56/8151\nfull histogram (16, 10) D 6487 TV 5141/499499 max divisor mass error 5/1001\nfull histogram (18, 11) D 84997 TV 54973/75137348 max divisor mass error 7/9724\nfull histogram (20, 12) D 517135 TV 84745801/6514349595 max divisor mass error 251/20995\nfull histogram (12, 9) D 15587 TV 1321/15587 max divisor mass error 42/715\nexact slice (40, 25, 25) max point error 4457537/77356432800\nexact slice (80, 50, 35) max point error 2668612009347709/155249719359707935602640\nexact slice (160, 100, 35) max point error 1267237857614976929864710688799/326913175567164571313623407425368270976505760\nexact slice (200, 126, 77) max point error 14702358781591515786891129/64926324807126048474409964573567836772051766827820400\n",
+          "output_sha256": "71239e59460d122f156e6c55c447c8ec1102b60bfe4e5d8b74fd4d8c27fcec0d"
+        }
+      ],
+      "sha256": "a8103445762c49edc3deadcfddb3fa60308a33ce0d30ba4c892e191b300903b7",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase4/check_blocks.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.154,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "pair identities and commuting tests 900\nstratum ('10', '110') (4, 8) H 6 h_D 1 roots 495 binary words 495 gcd bins 6\nstratum ('1', '000') (6, 3) H 7 h_D 7 roots 84 binary words 84 gcd bins 2\nstratum ('10', '1010') (4, 2) H 0 h_D 58975 roots 15 binary words 1 gcd bins 1\nstratum ('1', '0', '10') (2, 3, 2) H 1 h_D 1 roots 210 binary words 105 gcd bins 1\nstratum ('00', '01', '110') (2, 3, 2) H 1 h_D 1 roots 210 binary words 210 gcd bins 3\nmacro slice (12, 28) mod 77 coset 0 mod 1 maximum point error 7610223/21509385898\nmacro slice (24, 18) mod 49 coset 0 mod 7 maximum point error 3/11789904035\nmacro slice (25, 17) mod 77 coset 1 mod 7 maximum point error 233/73717926282\n",
+          "output_sha256": "717f5c0cb9cb2d562b92f7243ea3c0a3e89b243f0a81bf372ccb216840e42b39"
+        },
+        {
+          "elapsed_seconds": 0.281,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "pair identities and commuting tests 900\nstratum ('10', '110') (4, 8) H 6 h_D 1 roots 495 binary words 495 gcd bins 6\nstratum ('1', '000') (6, 3) H 7 h_D 7 roots 84 binary words 84 gcd bins 2\nstratum ('10', '1010') (4, 2) H 0 h_D 58975 roots 15 binary words 1 gcd bins 1\nstratum ('1', '0', '10') (2, 3, 2) H 1 h_D 1 roots 210 binary words 105 gcd bins 1\nstratum ('00', '01', '110') (2, 3, 2) H 1 h_D 1 roots 210 binary words 210 gcd bins 3\nmacro slice (12, 28) mod 77 coset 0 mod 1 maximum point error 7610223/21509385898\nmacro slice (24, 18) mod 49 coset 0 mod 7 maximum point error 3/11789904035\nmacro slice (25, 17) mod 77 coset 1 mod 7 maximum point error 233/73717926282\n",
+          "output_sha256": "717f5c0cb9cb2d562b92f7243ea3c0a3e89b243f0a81bf372ccb216840e42b39"
+        }
+      ],
+      "sha256": "91f48d10fd1c3d4e6af49dc0f380b19205b9a5caddcb314180136d6f66d54d52",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [
+        "--check"
+      ],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "rigidity/phase5/source_clock_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 1.758,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "{\n  \"eight_odd_steps\": {\n    \"lower_pressure_at_one_half\": \"269649/262144\",\n    \"minimum_arity_by_total_time\": {\n      \"24\": 2,\n      \"25\": 4,\n      \"26\": 7,\n      \"27\": 11,\n      \"28\": 18,\n      \"29\": 31,\n      \"30\": 47,\n      \"31\": 67,\n      \"32\": 96,\n      \"33\": 128,\n      \"34\": 172,\n      \"35\": 224,\n      \"36\": 285\n    },\n    \"minimum_ideal_prefix_multiplier\": \"256/243\",\n    \"modulus\": 19683,\n    \"root_residues\": 6561\n  },\n  \"elementary_pair_residue_time_cases\": 18,\n  \"first_hit_shells\": [\n    {\n      \"clock_histogram_sha256\": \"2dbf47ffe81c9e8adb1a3719316cbf4fd5ddbfa1ceac06b9c6f6b1b49485df2d\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 1\n    },\n    {\n      \"clock_histogram_sha256\": \"589928d2942938607a7dc7cca6a567d86ce008942efa5e57dae4809403e90196\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 1\n    },\n    {\n      \"clock_histogram_sha256\": \"bafe55319f651dd014ad05afd5ef5d60f1b4089b88ac5905933f390b351d2434\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 5\n    },\n    {\n      \"clock_histogram_sha256\": \"8a1f5ecc86ff7cc45625dabb9f7025aeb5e8ff89987762dc76c3c4ad5bbccf27\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 5\n    },\n    {\n      \"clock_histogram_sha256\": \"969607531285e404d93b7b4c73fde31e28cc652bc4cf5df5e691176c4ba01f63\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 85\n    },\n    {\n      \"clock_histogram_sha256\": \"8fce82d8d0584b94fa6791290ab8cf2c8e97527125d26fe2b85fce5d04934f1b\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 85\n    },\n    {\n      \"clock_histogram_sha256\": \"95da155a4020e559c31b1c7dde16c85456302104ab099bf476cb6d2c6801924c\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 1000001\n    },\n    {\n      \"clock_histogram_sha256\": \"97e4bbaf96104dbf0a326444499a4881fd03813434ba0ddf93bc038bb1baaa43\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 1000001\n    }\n  ],\n  \"physical_census_comparisons_per_model\": 270,\n  \"six_odd_steps\": {\n    \"lower_pressure_at_one_third\": \"18081/16384\",\n    \"minimum_arity_by_total_time\": {\n      \"27\": 2,\n      \"28\": 4,\n      \"29\": 8,\n      \"30\": 10,\n      \"31\": 14,\n      \"32\": 19,\n      \"33\": 25,\n      \"34\": 34,\n      \"35\": 43,\n      \"36\": 55,\n      \"37\": 63,\n      \"38\": 82,\n      \"39\": 95,\n      \"40\": 121\n    },\n    \"modulus\": 2187,\n    \"root_residues\": 729\n  }\n}\n",
+          "output_sha256": "512e37dc16ea99b47f2223be93cd3c2db33820d20b0e0d61e453b679e8f6628a"
+        },
+        {
+          "elapsed_seconds": 1.802,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "{\n  \"eight_odd_steps\": {\n    \"lower_pressure_at_one_half\": \"269649/262144\",\n    \"minimum_arity_by_total_time\": {\n      \"24\": 2,\n      \"25\": 4,\n      \"26\": 7,\n      \"27\": 11,\n      \"28\": 18,\n      \"29\": 31,\n      \"30\": 47,\n      \"31\": 67,\n      \"32\": 96,\n      \"33\": 128,\n      \"34\": 172,\n      \"35\": 224,\n      \"36\": 285\n    },\n    \"minimum_ideal_prefix_multiplier\": \"256/243\",\n    \"modulus\": 19683,\n    \"root_residues\": 6561\n  },\n  \"elementary_pair_residue_time_cases\": 18,\n  \"first_hit_shells\": [\n    {\n      \"clock_histogram_sha256\": \"2dbf47ffe81c9e8adb1a3719316cbf4fd5ddbfa1ceac06b9c6f6b1b49485df2d\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 1\n    },\n    {\n      \"clock_histogram_sha256\": \"589928d2942938607a7dc7cca6a567d86ce008942efa5e57dae4809403e90196\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 1\n    },\n    {\n      \"clock_histogram_sha256\": \"bafe55319f651dd014ad05afd5ef5d60f1b4089b88ac5905933f390b351d2434\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 5\n    },\n    {\n      \"clock_histogram_sha256\": \"8a1f5ecc86ff7cc45625dabb9f7025aeb5e8ff89987762dc76c3c4ad5bbccf27\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 5\n    },\n    {\n      \"clock_histogram_sha256\": \"969607531285e404d93b7b4c73fde31e28cc652bc4cf5df5e691176c4ba01f63\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 85\n    },\n    {\n      \"clock_histogram_sha256\": \"8fce82d8d0584b94fa6791290ab8cf2c8e97527125d26fe2b85fce5d04934f1b\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 85\n    },\n    {\n      \"clock_histogram_sha256\": \"95da155a4020e559c31b1c7dde16c85456302104ab099bf476cb6d2c6801924c\",\n      \"distinct_clocks\": 2,\n      \"log2_growth_cut\": 67,\n      \"maximum_clock_atom\": 14,\n      \"sources\": 15,\n      \"target\": 1000001\n    },\n    {\n      \"clock_histogram_sha256\": \"97e4bbaf96104dbf0a326444499a4881fd03813434ba0ddf93bc038bb1baaa43\",\n      \"distinct_clocks\": 1,\n      \"log2_growth_cut\": 137,\n      \"maximum_clock_atom\": 128,\n      \"sources\": 128,\n      \"target\": 1000001\n    }\n  ],\n  \"physical_census_comparisons_per_model\": 270,\n  \"six_odd_steps\": {\n    \"lower_pressure_at_one_third\": \"18081/16384\",\n    \"minimum_arity_by_total_time\": {\n      \"27\": 2,\n      \"28\": 4,\n      \"29\": 8,\n      \"30\": 10,\n      \"31\": 14,\n      \"32\": 19,\n      \"33\": 25,\n      \"34\": 34,\n      \"35\": 43,\n      \"36\": 55,\n      \"37\": 63,\n      \"38\": 82,\n      \"39\": 95,\n      \"40\": 121\n    },\n    \"modulus\": 2187,\n    \"root_residues\": 729\n  }\n}\n",
+          "output_sha256": "512e37dc16ea99b47f2223be93cd3c2db33820d20b0e0d61e453b679e8f6628a"
+        }
+      ],
+      "sha256": "7e83392ce2293f5dc6b690b78c53e934d3884f7b2e377a4350e0ebe46be35eb9",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [
+        "--check"
+      ],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "rigidity/phase5/fast_clock_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.065,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "{\n  \"all_preimage_upper_cases\": [\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        1,\n        1,\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        8,\n        12,\n        18,\n        24,\n        31,\n        39,\n        50\n      ],\n      \"target\": 1,\n      \"total_new_origins\": 205\n    },\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        2,\n        2,\n        3,\n        3,\n        5,\n        7,\n        11,\n        14,\n        19,\n        23,\n        30,\n        40,\n        53,\n        70,\n        94\n      ],\n      \"target\": 5,\n      \"total_new_origins\": 376\n    },\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        8,\n        12,\n        17,\n        22,\n        28,\n        37,\n        49,\n        67,\n        90\n      ],\n      \"target\": 85,\n      \"total_new_origins\": 351\n    }\n  ],\n  \"one_clock_shells\": [\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"a59b8daf26c73abe08e89c7e2acfbc939e66a15e64c16b2ada14269dd015c862\",\n      \"target\": 1\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"0f84f84abfc60338aaae7739d89c08625122025a1160cb276e589c33c5639ee6\",\n      \"target\": 1\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"9119d42448f981b131eeb54dbd3b6d6d797d4d15a181bd12a1e6979778a83db2\",\n      \"target\": 5\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"807bc41d554e4468fba0c1bf7799d68fd010568525e08e7145b8c2a969d34768\",\n      \"target\": 5\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"593c2e5aaa1c95d16fa31da0bd573b44309957453bf367b1535e1ffd986e4d41\",\n      \"target\": 85\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"c522f53fc93d6adfef77ff0f273e2291e1d96be1bbec60454a81b96ec7b3c91a\",\n      \"target\": 85\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"3dd66543c0868a8bc611bb94f1224c29c27c6a5951cf905e86c65de39e9ae6b3\",\n      \"target\": 1000001\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"02d6260b039b9dc9520bcdc0eca494070cd9fd4d5cda7c4d27c173608bf834de\",\n      \"target\": 1000001\n    }\n  ],\n  \"unit_root_start_index_cases\": 480\n}\n",
+          "output_sha256": "f60deaf3f0b31a3d1d265990238811e0bc92824c95da947a6c7b60026ef5ea60"
+        },
+        {
+          "elapsed_seconds": 0.156,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "{\n  \"all_preimage_upper_cases\": [\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        1,\n        1,\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        8,\n        12,\n        18,\n        24,\n        31,\n        39,\n        50\n      ],\n      \"target\": 1,\n      \"total_new_origins\": 205\n    },\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        2,\n        2,\n        3,\n        3,\n        5,\n        7,\n        11,\n        14,\n        19,\n        23,\n        30,\n        40,\n        53,\n        70,\n        94\n      ],\n      \"target\": 5,\n      \"total_new_origins\": 376\n    },\n    {\n      \"depth\": 15,\n      \"layer_sizes\": [\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        8,\n        12,\n        17,\n        22,\n        28,\n        37,\n        49,\n        67,\n        90\n      ],\n      \"target\": 85,\n      \"total_new_origins\": 351\n    }\n  ],\n  \"one_clock_shells\": [\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"a59b8daf26c73abe08e89c7e2acfbc939e66a15e64c16b2ada14269dd015c862\",\n      \"target\": 1\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"0f84f84abfc60338aaae7739d89c08625122025a1160cb276e589c33c5639ee6\",\n      \"target\": 1\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"9119d42448f981b131eeb54dbd3b6d6d797d4d15a181bd12a1e6979778a83db2\",\n      \"target\": 5\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"807bc41d554e4468fba0c1bf7799d68fd010568525e08e7145b8c2a969d34768\",\n      \"target\": 5\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"593c2e5aaa1c95d16fa31da0bd573b44309957453bf367b1535e1ffd986e4d41\",\n      \"target\": 85\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"c522f53fc93d6adfef77ff0f273e2291e1d96be1bbec60454a81b96ec7b3c91a\",\n      \"target\": 85\n    },\n    {\n      \"digit_budget\": 9,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 220,\n      \"odd_inverse_depth\": 3,\n      \"origins\": 220,\n      \"origins_and_clocks_sha256\": \"3dd66543c0868a8bc611bb94f1224c29c27c6a5951cf905e86c65de39e9ae6b3\",\n      \"target\": 1000001\n    },\n    {\n      \"digit_budget\": 5,\n      \"distinct_clocks\": 1,\n      \"largest_atom\": 252,\n      \"odd_inverse_depth\": 5,\n      \"origins\": 252,\n      \"origins_and_clocks_sha256\": \"02d6260b039b9dc9520bcdc0eca494070cd9fd4d5cda7c4d27c173608bf834de\",\n      \"target\": 1000001\n    }\n  ],\n  \"unit_root_start_index_cases\": 480\n}\n",
+          "output_sha256": "f60deaf3f0b31a3d1d265990238811e0bc92824c95da947a6c7b60026ef5ea60"
+        }
+      ],
+      "sha256": "f52ab3e69c7a91aca88bb067784a151bfbeab656b0590cab734b7e31b2988059",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/band/band_energy.py",
+      "runs": [
+        {
+          "elapsed_seconds": 6.752,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "groups 32 log2(radius) 5/2 phase words 65 display max ratio 0.991958806 checked cap 992/1000\ngroups 220 log2(radius) 51/20 phase words 441 display max ratio 0.996603762 checked cap 997/1000\n",
+          "output_sha256": "877ae70893f1026689ecfc3e60c489294d95d7eff895c56c160e20a8ffe489d3"
+        },
+        {
+          "elapsed_seconds": 6.291,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "groups 32 log2(radius) 5/2 phase words 65 display max ratio 0.991958806 checked cap 992/1000\ngroups 220 log2(radius) 51/20 phase words 441 display max ratio 0.996603762 checked cap 997/1000\n",
+          "output_sha256": "877ae70893f1026689ecfc3e60c489294d95d7eff895c56c160e20a8ffe489d3"
+        }
+      ],
+      "sha256": "13f42badacbb7414864a30c3d240e88d76cf5022d599ebc3c9bc0cfe068084a3",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/band/motif_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.183,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "29-letter source floor threshold (strict) 3679/1953 prefix meetings [(29, 28, 'every lift')]\nsixfold checked rows 446 maximum strict floor threshold 783/13\nlength histogram [(27, 1), (28, 2), (29, 2), (30, 3), (31, 7), (32, 9), (33, 9), (34, 20), (35, 29), (36, 37), (37, 53), (38, 274)]\n",
+          "output_sha256": "e43d635498967d65419450162c258255520435fd2dd9e742c7f088901b2c0760"
+        },
+        {
+          "elapsed_seconds": 0.291,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "29-letter source floor threshold (strict) 3679/1953 prefix meetings [(29, 28, 'every lift')]\nsixfold checked rows 446 maximum strict floor threshold 783/13\nlength histogram [(27, 1), (28, 2), (29, 2), (30, 3), (31, 7), (32, 9), (33, 9), (34, 20), (35, 29), (36, 37), (37, 53), (38, 274)]\n",
+          "output_sha256": "e43d635498967d65419450162c258255520435fd2dd9e742c7f088901b2c0760"
+        }
+      ],
+      "sha256": "456d4ab77bbe2d9906b6980848277ceda9c12fa5789270a3fa3e15b28904e1af",
+      "source_unchanged": true
+    }
+  ]
+}
