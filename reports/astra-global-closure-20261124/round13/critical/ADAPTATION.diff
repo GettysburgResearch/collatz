@@ -1,0 +1,74 @@
+--- PR210 frozen original
++++ round13 compiled adaptation
+@@ -1,7 +1,11 @@
+-import Mathlib
++import Mathlib.Data.Int.Basic
++import Mathlib.Tactic.Linarith
++import Mathlib.Tactic.NormNum
++import Mathlib.Tactic.Ring
+ 
+ /-! Candidate finite consumers for critical-record rational rigidity.
+-UNCOMPILED in this checkpoint. The signed occupation, compactness, periodic
++The exact upstream candidate is preserved in the round13 reports; this copy
++uses narrow imports and is submitted to the local round13 compiler replay. The signed occupation, compactness, periodic
+ shadow selection, and Subspace Theorem are written arguments, not Lean axioms.
+ The final full-domain implication exposes its two unproved hypotheses. -/
+ 
+@@ -41,12 +45,14 @@
+ 
+ theorem even_step (d x : ℤ) (h : x % 2 = 0) :
+     2*step d x = x := by
+-  simp [step, h] <;> omega
++  simp [step, h]
++  omega
+ 
+ theorem odd_step (d x : ℤ) (hd : d % 2 = 1) (h : x % 2 = 1) :
+     2*step d x = 3*x+d := by
+   have hn : x % 2 ≠ 0 := by omega
+-  simp [step, hn] <;> omega
++  simp [step, hn]
++  omega
+ 
+ theorem cancel_three (k : ℕ) (x : ℤ)
+     (h : (2:ℤ)^k ∣ 3*x) : (2:ℤ)^k ∣ x := by
+@@ -79,7 +85,7 @@
+       have hx' := even_step 1 x h0
+       have ha' := even_step d a ha
+       have he : 2*(d*step 1 x-step d a)=d*x-a := by
+-        linear_combination d*hx'-ha'
++        nlinarith [congrArg (fun v : ℤ => d*v) hx']
+       refine ⟨v,?_⟩
+       calc
+         d*x-a = 2*(d*step 1 x-step d a) := he.symm
+@@ -89,7 +95,7 @@
+       have hx' := odd_step 1 x (by decide) hx
+       have ha' := odd_step d a hd ha
+       have he : 2*(d*step 1 x-step d a)=3*(d*x-a) := by
+-        linear_combination d*hx'-ha'
++        nlinarith [congrArg (fun v : ℤ => d*v) hx']
+       apply cancel_three (k+1) (d*x-a)
+       refine ⟨v,?_⟩
+       calc
+@@ -121,7 +127,7 @@
+     (hq : 2^A*q=3^b*q'+C)
+     (hz : 2^A*z=3^b*z'+d*C) :
+     3^b*(z'-d*q')=2^A*(z-d*q) := by
+-  linear_combination d*hq-hz
++  nlinarith [congrArg (fun v : ℤ => d*v) hq]
+ 
+ -- Sign of the complete cyclic multiplier; this uses the full carry.
+ theorem negative_cycle_multiplier (A P C a : ℤ)
+@@ -173,9 +179,13 @@
+ end CriticalRecordRigidity
+ 
+ #print axioms CriticalRecordRigidity.run_add
++#print axioms CriticalRecordRigidity.step_pos
+ #print axioms CriticalRecordRigidity.run_pos
++#print axioms CriticalRecordRigidity.even_step
++#print axioms CriticalRecordRigidity.odd_step
+ #print axioms CriticalRecordRigidity.cancel_three
+ #print axioms CriticalRecordRigidity.matching_divisibility
++#print axioms CriticalRecordRigidity.pow_two_gt
+ #print axioms CriticalRecordRigidity.no_infinite_negative_match
+ #print axioms CriticalRecordRigidity.signed_inverse_difference
+ #print axioms CriticalRecordRigidity.negative_cycle_multiplier

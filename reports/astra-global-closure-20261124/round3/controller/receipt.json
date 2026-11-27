@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "research/astra-global-closure-20261124/round3/controller/check_controller.py"
+  ],
+  "exit_code": 0,
+  "source_sha256": "d9e3ecbb1d0c9b389bbd9da7f6d14c76159f394ad4051c8f328796c1bc790ede",
+  "output_sha256": "3c1e98473370849bb3ec374910fab250cf2b68f610b795a4c2454ba47366e501",
+  "stderr": "",
+  "scope": "Bounded exact independent coefficient/literal-word checks; complete theorem is in TwoLight.lean."
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-round14-haar-replay/v1",
+  "status": "PASS",
+  "proof_path": "research/astra-unconventional-20261126/renormalization/HAAR_BARRIER.md",
+  "proof_sha256": "d7b3ae89a7da15f06a9512025f70a12a94966828d3a0c94c7e78a1d8c5e62c9d",
+  "checker_path": "research/astra-unconventional-20261126/renormalization/check_haar_bound.cpp",
+  "checker_sha256": "85c28f7784f86391d7fedeade76eec297f4dea724917f6d740d716bd7e319581",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "compile_flags": [
+    [
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    [
+      "-std=c++17",
+      "-O1",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ]
+  ],
+  "runs": [
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout": "limit 5900000 max shortcut time 384 attained at 5649499 max height 1206246808304\n",
+      "stderr": ""
+    },
+    {
+      "mode": "undefined-behavior-sanitized",
+      "exit_code": 0,
+      "stdout": "limit 5900000 max shortcut time 384 attained at 5649499 max height 1206246808304\n",
+      "stderr": ""
+    }
+  ],
+  "limit": 5900000,
+  "max_first_hit_clock": 384,
+  "first_maximizer": 5649499,
+  "max_height": 1206246808304,
+  "review": {
+    "status": "VERIFIED_WRITTEN_WITH_EXACT_FINITE_REPLAY",
+    "author": "adelic_ultra14",
+    "independent_reviewers": [
+      "root",
+      "cycle_global_ultra14"
+    ],
+    "reviewed_scratch_proof_sha256": "14b4cf1da24c4fe83f22c5db2bdaed535f154446f4f4269ea7d7dd0419a05c84",
+    "published_changes": "Relative repository links, source citation, status label, and the same-proof extension to every D >= 385; reconstructed by root.",
+    "reviewed_points": [
+      "All reduced fixed words, with arbitrarily long initial forward part",
+      "Denominator-depth prefix legality and conditional Haar uniformity",
+      "Positive ordinary prefix count and first-hit exclusion",
+      "Prefix-free weak-square first-passage bound",
+      "Geometric tail and the boundary between profinite and ordinary inputs"
+    ]
+  },
+  "scope": "Finite ordinary replay supports the written positive-Haar theorem in its specified mixed-parameter fixed-word grammar. No Lean certification and no ordinary exceptional exponent inferred.",
+  "relative_haar_lower_bound": {
+    "numerator": 336797,
+    "denominator": 820125
+  }
+}

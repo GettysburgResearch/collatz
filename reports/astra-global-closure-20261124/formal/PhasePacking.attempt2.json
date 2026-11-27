@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/PhasePacking.lean",
+  "sha256": "0d25f1d556ee1149b989e12718db8b78cdeaf6a7fba7e8a254e2f905dc288719",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean"
+  ],
+  "exit_code": 1,
+  "stdout": "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:55:31: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression\n  mul_le_mul_right ?m.454\nof type\n  \u2200 (a : ?m.448), a * ?m.449 \u2264 a * ?m.450\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:55:26: error: Application type mismatch: The argument\n  hdc\nhas type\n  0 < 2 ^ d * 2 ^ c\nbut is expected to have type\n  ?m.449 \u2264 ?m.450\nin the application\n  mul_le_mul_right hdc\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:66:32: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression\n  mul_le_mul_right ?m.92\nof type\n  \u2200 (a : ?m.86), a * ?m.87 \u2264 a * ?m.88\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:66:28: error: Application type mismatch: The argument\n  hu\nhas type\n  0 < u\nbut is expected to have type\n  ?m.87 \u2264 ?m.88\nin the application\n  mul_le_mul_right hu\n'Collatz.PhasePacking.clock_carry_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]\n'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.canonical_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 3.951
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Isolated replay of the four pinned PR201 directed-cover files; not a complete upstream checkout or Lean rebuild.",
+  "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+  "sources": [
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/check.py",
+      "git_blob": "601c98b8aca09b44a2ea4b8e16359de0db20cb26",
+      "sha256": "8b7e4e0f8b11d1499ba1954c077007aade3228e4239eddd888167645fb7bc27c"
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover1.txt",
+      "git_blob": "323d967b3eca1d76e7102f9df36c984d6fa4d5d8",
+      "sha256": "03fe44cd5c3d01e2a89b7ce6f5c95d6456e9c5526cc43d7e4de26e0e6deb96e0"
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/cover5.txt",
+      "git_blob": "c0cdb6d80a6be5e12d598a5b29b46a3a48c085b7",
+      "sha256": "062bc68e7dc2e34b24a0aa2e155a6ffc7b832b2bf6d6b0d228cba3d1ab283815"
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/global-bridge/CONTROLS.json",
+      "git_blob": "027b054020a2b8080bb9c1ac34f79673f33cc430",
+      "sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516"
+    }
+  ],
+  "runs": [
+    {
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "output_matches_canonical_bytes": true,
+      "stdout_sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516"
+    },
+    {
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "output_matches_canonical_bytes": true,
+      "stdout_sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516"
+    }
+  ],
+  "results": [
+    {
+      "residue_modulo_6": 1,
+      "dictionary_words": 261,
+      "tree_nodes": 1606,
+      "full_progression_leaves": 948,
+      "maximum_modulus": 17915904,
+      "longest_word": 63,
+      "total_path_letters": 35627,
+      "forward_query_positions": 2325,
+      "minimum_query_to_input": "27145/732923",
+      "maximum_query_to_input": "26406895/30563",
+      "shortest_example_from_multiple_of_three": [
+        13,
+        1728,
+        219,
+        "tthAthhiDDiDi"
+      ]
+    },
+    {
+      "residue_modulo_6": 5,
+      "dictionary_words": 312,
+      "tree_nodes": 2130,
+      "full_progression_leaves": 1263,
+      "maximum_modulus": 71663616,
+      "longest_word": 62,
+      "total_path_letters": 49015,
+      "forward_query_positions": 2701,
+      "minimum_query_to_input": "65/4167",
+      "maximum_query_to_input": "4614215/6759",
+      "shortest_example_from_multiple_of_three": [
+        9,
+        144,
+        63,
+        "tAthhiDDi"
+      ]
+    }
+  ],
+  "status": "PASS"
+}

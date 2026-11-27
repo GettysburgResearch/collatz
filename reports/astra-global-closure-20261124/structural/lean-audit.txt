@@ -1,0 +1,9 @@
+'CycleShadows.no_local_join' depends on axioms: [propext, Quot.sound]
+'CycleShadows.lift' depends on axioms: [propext, Quot.sound]
+'CycleShadows.small_negative_table' depends on axioms: [propext, Quot.sound]
+'CycleShadows.small_positive_table' does not depend on any axioms
+'CycleShadows.positive_tail_controls' does not depend on any axioms
+'CycleShadows.member_endpoint' depends on axioms: [propext, Quot.sound]
+'CycleShadows.ten_even_bridge' depends on axioms: [propext, Quot.sound]
+'CycleShadows.certified_arm' depends on axioms: [propext, Quot.sound]
+'CycleShadows.unbounded_bridge' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,4 @@
+'GlobalFloor.good_step' does not depend on any axioms
+'GlobalFloor.run_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalFloor.bad_triple_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalFloor.floor_of_small_triples' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'Collatz.BalancedBarrier.advance_coherent' depends on axioms: [propext, Quot.sound]
+'Collatz.BalancedBarrier.after_word' depends on axioms: [propext, Classical.choice, Quot.sound]

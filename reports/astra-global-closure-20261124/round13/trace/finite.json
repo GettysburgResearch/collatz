@@ -1,0 +1,155 @@
+{
+  "actual_row_block": {
+    "arms": 4,
+    "balanced_grade": 114,
+    "binary_depth": 8,
+    "binary_residue": 99,
+    "distinct_blocks": 2,
+    "gate_bitlength": 173,
+    "gate_clock_to_one": 867,
+    "pre_gate_clock": 208,
+    "pre_gate_grade": 94,
+    "start_grade": 3,
+    "starts_examined": 8
+  },
+  "canonical_family": [
+    {
+      "augmented_grade": 199,
+      "first_checked_parameter_bitlength": 324,
+      "initial_binary_depth": 5,
+      "odd_modulus": 9,
+      "offsets": [
+        0,
+        1
+      ],
+      "post_peak_clock": 325,
+      "prescribed": 7,
+      "verified_positive_lifts": 3
+    },
+    {
+      "augmented_grade": 596,
+      "first_checked_parameter_bitlength": 1021,
+      "initial_binary_depth": 3,
+      "odd_modulus": 25,
+      "offsets": [
+        0,
+        1,
+        3
+      ],
+      "post_peak_clock": 1019,
+      "prescribed": 11,
+      "verified_positive_lifts": 3
+    },
+    {
+      "augmented_grade": 602,
+      "first_checked_parameter_bitlength": 1116,
+      "initial_binary_depth": 8,
+      "odd_modulus": 7,
+      "offsets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "post_peak_clock": 1117,
+      "prescribed": 62,
+      "verified_positive_lifts": 3
+    }
+  ],
+  "convergent_climbs": [
+    {
+      "climb": 2,
+      "halvings": 9,
+      "source_bits": 8
+    },
+    {
+      "climb": 3,
+      "halvings": 27,
+      "source_bits": 26
+    },
+    {
+      "climb": 4,
+      "halvings": 81,
+      "source_bits": 79
+    },
+    {
+      "climb": 5,
+      "halvings": 243,
+      "source_bits": 241
+    },
+    {
+      "climb": 6,
+      "halvings": 729,
+      "source_bits": 726
+    },
+    {
+      "climb": 7,
+      "halvings": 2187,
+      "source_bits": 2183
+    }
+  ],
+  "full_phase_sweep": {
+    "binary_depth": 2,
+    "clock_histogram": {
+      "0": 1388,
+      "1": 70
+    },
+    "full_words": 70,
+    "gate": "2^(2*period+initial_clock+5)-1; finite all-odd climb only",
+    "grade": 6,
+    "period": 1458,
+    "retained_words": 70,
+    "rows_decoded_across_two_periods": 140,
+    "sources_decoded_across_two_periods": 140,
+    "ternary_depth": 1
+  },
+  "status": "finite controls only",
+  "steering": {
+    "blocks": [
+      {
+        "arms": 2,
+        "clock": 5,
+        "lifts": 3,
+        "odd_count": 2
+      },
+      {
+        "arms": 3,
+        "clock": 11,
+        "lifts": 3,
+        "odd_count": 5
+      },
+      {
+        "arms": 4,
+        "clock": 18,
+        "lifts": 3,
+        "odd_count": 7
+      },
+      {
+        "arms": 7,
+        "clock": 42,
+        "lifts": 3,
+        "odd_count": 18
+      },
+      {
+        "arms": 12,
+        "clock": 50,
+        "lifts": 3,
+        "odd_count": 22
+      },
+      {
+        "arms": 18,
+        "clock": 50,
+        "lifts": 3,
+        "odd_count": 22
+      }
+    ],
+    "steering_cases": {
+      "equal_even": 15,
+      "equal_odd": 29,
+      "positive_grade": 53,
+      "signed_disparity_-1": 45,
+      "signed_disparity_0": 1,
+      "signed_disparity_1": 7
+    }
+  }
+}

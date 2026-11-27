@@ -1,0 +1,25 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "source_sha256": "0070c9238037cf622f3be4af78d1bd856bc07d3fb8a812e3ff047bbc77167892",
+  "compiled": "research/astra-global-closure-20261124/round10/rows/ClockBlocks.lean",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "axiom_inventory": [
+    "'Collatz.RoundTen.ClockBlocks.clock_balance' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.RoundTen.ClockBlocks.walk_add' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.RoundTen.ClockBlocks.concatenate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.RoundTen.ClockBlocks.bank_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.RoundTen.ClockBlocks.sum_le_row' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Collatz.RoundTen.ClockBlocks.bounded_offset' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "controls_sha256": "4013f9b509e2d5bd1a43cc10c671a6f14ca33e3930301aec855ae428db9ecd49",
+  "normal_and_optimized_equal": true,
+  "finite_checks": {
+    "direct_forward_rows": 270,
+    "literal_cut_unions": 870,
+    "exact_offset_compositions": 690,
+    "schedule_corner_checks": 50867
+  }
+}

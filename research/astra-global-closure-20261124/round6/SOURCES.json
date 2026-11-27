@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-24",
+  "baseline": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+  "scope": "Exact pins for finite proof inputs, named written inputs and latest comparisons. A link does not certify a complete branch or external archive.",
+  "repository_sources": [
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-global-closure-20261124/closing/adelic/README.md",
+      "git_blob": "4e694fd200d367a72419046c664ea718c86d1291",
+      "sha256": "8cbe7fb989e4e2e141268188c9a3f78c9fc4d2f0bf498d9384590ebaedb74391",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97/research/astra-global-closure-20261124/closing/adelic/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-global-closure-20261124/closing/cycles/README.md",
+      "git_blob": "a016db57c22bccbdc4dfe27507e9cd3b22cd0d07",
+      "sha256": "1c5723869e3145d4e2236ef1c7fdfd7f47cec8cbc6a81e410dd83a4744f48840",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97/research/astra-global-closure-20261124/closing/cycles/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-global-closure-20261124/round5/renewal/README.md",
+      "git_blob": "73f1b77a25150f54d7448d2acb04f82c46c82404",
+      "sha256": "086edd77d933b3cc3bf5788e44c9e62938142e902d166befe9044a9a019c536a",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97/research/astra-global-closure-20261124/round5/renewal/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/astra-three-routes/pass2/ORBIT_MELLIN.md",
+      "git_blob": "16c943601ce791afb1bbd5f02f3a9ea88ef38520",
+      "sha256": "2f7f3f81c34b15315fd73c5a52b6eb3f9c8ce8595b7ced30c9f9a58a4298415d",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97/research/astra-three-routes/pass2/ORBIT_MELLIN.md"
+    },
+    {
+      "pr": 195,
+      "commit": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "path": "research/integrated/orbitwise-boundaries/README.md",
+      "git_blob": "eddf7d9e592518438b214d45ea619df733aa250c",
+      "sha256": "ff7a85ef9653319b2d02a77e7d2e889dd575362164e42b62da0612100969751e",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97/research/integrated/orbitwise-boundaries/README.md"
+    },
+    {
+      "pr": 182,
+      "commit": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "path": "research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md",
+      "git_blob": "332e3974dd516b851cd6993eee077771c3aff70f",
+      "sha256": "2fbe5366470f38627edbb3db0ca5f09f2380be30b26bca2bca89380c02e030d3",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/234fd2ece3a17c8950dce452291198705b4e6e60/research/high-variance-closure-20261124/ordinary-arithmetic/DYADIC_COMPANION.md"
+    },
+    {
+      "pr": 192,
+      "commit": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "path": "research/astra-two-centre-20261124/basin.md",
+      "git_blob": "a140803d79087a98e5ed4e696744aa2d2de90e27",
+      "sha256": "5d29d22d81dd18e33011a62cb94a2c366cb60d4202ed88acf4354f491d90c9a5",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/301b84491ffafe283bd63d104c1b60ddf0e97f06/research/astra-two-centre-20261124/basin.md"
+    },
+    {
+      "pr": 192,
+      "commit": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "path": "research/astra-two-centre-20261124/integer.md",
+      "git_blob": "bee0bed165cb2cf04f497b14c7d8284643a49eac",
+      "sha256": "9bc5fce832bcda800c34394baa64cb9357e7f1017d928efec7ae5984c85bac59",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/301b84491ffafe283bd63d104c1b60ddf0e97f06/research/astra-two-centre-20261124/integer.md"
+    },
+    {
+      "pr": 192,
+      "commit": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "path": "research/astra-two-centre-20261124/rewriting.md",
+      "git_blob": "79f5048d10fd167be389bc24fe26060b9e6c7c14",
+      "sha256": "0962a8d9a0d979f1712836bc1a62241522369d90522cf96444bdfd51d6b8cecc",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/301b84491ffafe283bd63d104c1b60ddf0e97f06/research/astra-two-centre-20261124/rewriting.md"
+    },
+    {
+      "pr": 200,
+      "commit": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "path": "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+      "git_blob": "3dc8080948785fb780aade553d3205f982252442",
+      "sha256": "89d0a72940bce925d982bc21d77a1ae9539fe87c80d055b031c565dd807ae716",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39918be724038ac550d77c7fc95d17e05251dfc6/research/regularity-rigidity-20261124/RATIO_PRESSURE.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/companion_obstruction.md",
+      "git_blob": "3a343649d878d51e70cc95584ed25d4c4953275e",
+      "sha256": "bd4fd5d4aac4a1fe4c335926a22983aa2f214a42bfc515dd76b6e6791032baec",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/companion_obstruction.md"
+    },
+    {
+      "pr": 203,
+      "commit": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "path": "research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md",
+      "git_blob": "86e77570121079a5fefffc65ad23442604bb0f44",
+      "sha256": "f3f8a2fa26a9dd9dd440a6504287e226e8f0afa08041fe62e7a7f0650828897b",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/3f2c89f12b057b8bb8655bd6fc794c772aa8b65d/research/mixed-adic-basin-density-20261124/fixed_target_depth_bank.md"
+    },
+    {
+      "pr": 193,
+      "commit": "4f71eeb4cff9754af5c1c06682e95a6a23d1b14b",
+      "path": "research/astra-pointwise-resolution-20261124/LATEST_CONNECTIONS.md",
+      "git_blob": "c5a04cca31f0e8439baa3f629213a2225f5eb95c",
+      "sha256": "4864051596cf957d8f657bc6d9b210dd7846c2cb8574561921fd5da4a227124c",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4f71eeb4cff9754af5c1c06682e95a6a23d1b14b/research/astra-pointwise-resolution-20261124/LATEST_CONNECTIONS.md"
+    },
+    {
+      "pr": 193,
+      "commit": "4f71eeb4cff9754af5c1c06682e95a6a23d1b14b",
+      "path": "research/astra-pointwise-resolution-20261124/README.md",
+      "git_blob": "8a95ec2f7555c77a1232bee752e025c232e3c967",
+      "sha256": "b9858f76de69b2a8029be5776bba5168f2b67134ddb49a0479ed13852ed9530a",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4f71eeb4cff9754af5c1c06682e95a6a23d1b14b/research/astra-pointwise-resolution-20261124/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/arithmetic/CLOCK_FIBERS.md",
+      "git_blob": "b2679b91938da5db5459aa07f464ad8328583ece",
+      "sha256": "e158a48c5e98bca6051377f480464507898e31ac8b0432c69a67a2bd6acec00b",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/arithmetic/CLOCK_FIBERS.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/arithmetic/README.md",
+      "git_blob": "d56d7adefea8f55b55c4c1590c5850c78f24b8c7",
+      "sha256": "fd369051c4c6aad0b55b63ed586a6c79aeefb85fa0843460b9588e6c26326993",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/arithmetic/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/arithmetic/RESIDUAL_GHOST.md",
+      "git_blob": "080c704f50886cc032a4ed127e7a0d1082e71515",
+      "sha256": "f5258e750f83ea5c1874fb81ebac95365996395dec317d1b4853b6f60de2a47d",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/arithmetic/RESIDUAL_GHOST.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/collision/README.md",
+      "git_blob": "1f266f392814fa3db26dd710ffc5bec51d47db2f",
+      "sha256": "5aa27684c7139217fa9475f8e6d575f6892a7cb6ba775bf981787ca7d3e9baab",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/collision/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/SEVEN_RETURN.md",
+      "git_blob": "ec495b485c4a10235e46c607976a6d1a24d20b26",
+      "sha256": "4512f0918044d529e725fcfbb7aa284090ab562ef62dc76365fb224ff943e52a",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/rewriting/SEVEN_RETURN.md"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/SingleReturn.lean",
+      "git_blob": "797e2629e931551cc5913acbe7ef314aea489cd2",
+      "sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+      "scope": "Complete affine table independently replayed: all 291 leaves, 995328 residue bins, 3483 moves and 189 directed uses; upstream module not recompiled in this packet.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/rewriting/SingleReturn.lean"
+    },
+    {
+      "pr": 193,
+      "commit": "67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e",
+      "path": "research/astra-global-resolution-20261124/rewriting/check.py",
+      "git_blob": "3659805303255dab5caf6ff8d2ded6c3f7a17ceb",
+      "sha256": "b0e2d2b1711acf333d90e7c021e1d2581ff29c347b17dcdf550ee80fc93315c2",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/67f58e8eec87a4f1fb5f5e6da164ce0b9df44e1e/research/astra-global-resolution-20261124/rewriting/check.py"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/APPROXIMATE_COLORING.md",
+      "git_blob": "c674daac6c067f5a63490ef4fca85152282fd673",
+      "sha256": "1bd977f4f6d1a4aaaf5b3df65a592e1a28c84f070ec55dd7b4dd779fa92c7cad",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/APPROXIMATE_COLORING.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md",
+      "git_blob": "2355d8305ed9ca4e805d0918e5c71e6ecb25987f",
+      "sha256": "2ffdc7df8cc5dc8a3936aabe0a4cc62db3ea1fe2e1025621ce220d5d7993de3e",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/PAIRED_FIBERS.md",
+      "git_blob": "3d733dbc962da7d7ae22b88aac316ae18f6cf846",
+      "sha256": "0421980da56e34d93599fea5bd9570f4954b7392e2a7d0de73adcbbee3706719",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/PAIRED_FIBERS.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/POLYNOMIAL_RIGIDITY.md",
+      "git_blob": "d9cda5af28a09a82906820945195c9e532a54910",
+      "sha256": "8b12687154b369887685da0d27ead47094c4600e76974f31a921e136c1307ef7",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/POLYNOMIAL_RIGIDITY.md"
+    },
+    {
+      "pr": 200,
+      "commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/README.md",
+      "git_blob": "fd7808f42bb76472ea6130ce8f99fe23af555f6c",
+      "sha256": "6d307caf89f6581295d43ec98028375f4895d07ffa6226dd6ebac2eed38ba3f4",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/abf36c63b4d0181541d7e029d390d6f636940750/research/regularity-rigidity-20261124/pointwise-fibers/README.md"
+    },
+    {
+      "pr": 201,
+      "commit": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+      "path": "research/killed-green-head-closure-20261124/prefix-density/README.md",
+      "git_blob": "8dd9d53dea58a99a561dd6c90913974cd417814f",
+      "sha256": "ff713c1d9e93ae16a1f9bcee8ae4e09edbeb4c4f5dc8e0557a86d569af446c73",
+      "scope": "Late interface comparison and the explicitly conditional head-intake composition; no upstream whole-branch build or mathematical certification.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b68cf8f0fd565c4bb2151afc3ce7668f8801770d/research/killed-green-head-closure-20261124/prefix-density/README.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/ADJACENT_DESCENT.md",
+      "git_blob": "df27d004d00fbc316b3be1490d65fb73bb8b1420",
+      "sha256": "d062c8748394ecb930f35b985e76d9deeeb5d6a0a27016dff01675633cc02aae",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/ADJACENT_DESCENT.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md",
+      "git_blob": "f93d7dcf18c9dc5c6bd1ad4f553dc5a4c01c38d9",
+      "sha256": "e8062bdc8f5bf763be2e7368af67ba6910fe161f01bd14256c5f669b261739ae",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md",
+      "git_blob": "beed9abc39c8e4da8e8a7c295a2faf5081277d07",
+      "sha256": "af24fd6b80da22fec7d90688b1738b4cd64894323096c80cda6ffcd824db62a2",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/GROWING_ADDITIVE_GAPS.md"
+    },
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "scope": "Frozen mathematical input or comparison at the linked proof passage; source-qualified where specified in the lane notes and reviews, no full upstream rebuild.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_UPPER.md"
+    }
+  ],
+  "external_sources": [
+    {
+      "name": "Corvaja–Zannier, A subspace theorem approach to integral points on curves",
+      "url": "https://www.numdam.org/item/10.1016/S1631-073X%2802%2902240-9.pdf",
+      "scope": "Theorem 1 and S-integral extension, pp.268–269, primary statement inspected; Siegel input to fixed-curve avoidance, not locally formalized."
+    },
+    {
+      "name": "Corvaja–Zannier, On integral points on surfaces",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v160-n2-p09.pdf",
+      "scope": "Introduction and stated Siegel theorem inspected; the stronger surface theorem is not used."
+    },
+    {
+      "name": "Zheng Xiao, Greatest common divisors for polynomials in almost units, arXiv v3",
+      "url": "https://arxiv.org/pdf/2110.01751v3",
+      "scope": "Definitions 1.2 and 2.2, Theorem 1.3; primary theorem and all-place gcd convention inspected. Optional Theorem1.4 explicit consequence separately proved in renewal review. Not formalized."
+    },
+    {
+      "name": "Kunrui Yu, Linear forms in p-adic logarithms III",
+      "url": "https://www.numdam.org/article/CM_1994__91_3_241_0.pdf",
+      "scope": "Rational corollary pp.244–245; original typeset p.245 visually inspected by root and two reviewers, including A=A_(n-1) condition. Not formalized."
+    },
+    {
+      "name": "N. M. Korobov, On the distribution of digits in periodic fractions",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=sm&option_lang=eng&paperid=3253&what=fullteng",
+      "scope": "Theorem4 pp.671–674, fixed base and prime; permanent primary PDF opened. Conservative positive constant is sufficient. Not formalized."
+    },
+    {
+      "name": "Joseph Vandehey, Differencing methods for Korobov-type exponential sums",
+      "url": "https://arxiv.org/pdf/1606.07911",
+      "scope": "Theorem2.4 p.5, independent primary restatement of the prime-power estimate and hypotheses; no precise numerical constant claimed in current application."
+    },
+    {
+      "name": "Paul Vojta, Nevanlinna theory and Diophantine approximation",
+      "url": "https://library.slmath.org/books/Book37/files/vojta.pdf",
+      "scope": "Theorem7.6, especially linear independence over the moving field and slow heights; inspected to locate the full-cycle obstruction, not imported as a closing theorem."
+    },
+    {
+      "name": "Halbeisen–Hungerbühler, Optimal bounds for the length of rational Collatz cycles",
+      "url": "https://people.math.ethz.ch/~halorenz/publications/pdf/collatz.pdf",
+      "scope": "Classical rational-cycle formulas, compared in arithmetic note; finite formulas also rederived directly."
+    },
+    {
+      "name": "Caravenna–Doney, Local large deviations and the strong renewal theorem",
+      "url": "https://arxiv.org/abs/1612.07635",
+      "scope": "Comparison only: present central-mass proof uses elementary integrated renewal estimates, not the pointwise strong renewal theorem."
+    },
+    {
+      "name": "Sara Brofferio, The Poisson boundary of random rational affinities",
+      "url": "https://doi.org/10.5802/aif.2191",
+      "scope": "First-moment requirement compared to true marked law with infinite mean; no closing consequence imported."
+    },
+    {
+      "name": "Weaver, papers 37 v4 and 127 v1",
+      "url": "https://rstation.ai/problems/collatz/papers/37/v4",
+      "additional_url": "https://rstation.ai/problems/collatz/papers/127/v1",
+      "scope": "Source-qualified single-arm inverse statements; do not furnish completed paired marks. Named floor hypotheses retained in late PR201 comparison."
+    },
+    {
+      "name": "Weaver and fourier_wren, paper48 v2",
+      "url": "https://rstation.ai/problems/collatz/papers/48/v2",
+      "scope": "Named linear-extra-depth floor F in PR203; used only conditionally in the late head composition, not an unconditional closing input."
+    }
+  ]
+}

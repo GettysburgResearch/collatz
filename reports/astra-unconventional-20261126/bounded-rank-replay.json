@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Exact bounded-branch rank-three binary prefixes, three merger classes, small positive sources and residual list; universal assembly in accompanying proof. Does not exclude gap six for r>=3 or other upper ranks.",
+  "script": "research/astra-unconventional-20261126/renormalization/check_bounded_rank.py",
+  "source_sha256": "f2069d27b9b5938bcb9e1e06e648da71dc7ce1cc296e71b6da2088b8fdb03244",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-unconventional-20261126/renormalization/check_bounded_rank.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "70444e849ce5f6d128fabdd3947ae8ffcf203ec03ee95ef593ce04af28967af2"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "research/astra-unconventional-20261126/renormalization/check_bounded_rank.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "70444e849ce5f6d128fabdd3947ae8ffcf203ec03ee95ef593ce04af28967af2"
+    }
+  ],
+  "normal_equals_optimized": true,
+  "saved_output_matches": true,
+  "source_unchanged": true
+}

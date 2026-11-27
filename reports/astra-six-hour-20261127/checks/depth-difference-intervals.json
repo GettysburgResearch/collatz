@@ -1,0 +1,24 @@
+{
+  "arithmetic": "integer fixed-point interval enclosure",
+  "scale": "309485009821345068724781056",
+  "precision_bits": 88,
+  "tail_terms": 112,
+  "rows": [
+    {"depth": 1, "modulus": 3, "uniform_density_error_units": "114", "signed_lower_numerator": "-41264667976179342496637476", "signed_upper_numerator": "-41264667976179342496637300", "absolute_lower_numerator": "165058671904717369986549858", "absolute_upper_numerator": "165058671904717369986550033"},
+    {"depth": 2, "modulus": 9, "uniform_density_error_units": "456", "signed_lower_numerator": "-33344223978098729942443015", "signed_upper_numerator": "-33344223978098729942441822", "absolute_lower_numerator": "206664559148658670293101427", "absolute_upper_numerator": "206664559148658670293102561"},
+    {"depth": 3, "modulus": 27, "uniform_density_error_units": "1482", "signed_lower_numerator": "-48001622899312783647291066", "signed_upper_numerator": "-48001622899312783647285947", "absolute_lower_numerator": "193159301345306246777666500", "absolute_upper_numerator": "193159301345306246777671300"},
+    {"depth": 4, "modulus": 81, "uniform_density_error_units": "4560", "signed_lower_numerator": "-35612189882389246620110389", "signed_upper_numerator": "-35612189882389246620091106", "absolute_lower_numerator": "199009478656384735488620523", "absolute_upper_numerator": "199009478656384735488638496"},
+    {"depth": 5, "modulus": 243, "uniform_density_error_units": "13794", "signed_lower_numerator": "-36956377205616951768764641", "signed_upper_numerator": "-36956377205616951768695978", "absolute_lower_numerator": "189154125856299283895275616", "absolute_upper_numerator": "189154125856299283895339408"},
+    {"depth": 6, "modulus": 729, "uniform_density_error_units": "41496", "signed_lower_numerator": "-39509683962573247757683627", "signed_upper_numerator": "-39509683962573247757446418", "absolute_lower_numerator": "204002972460498661289175466", "absolute_upper_numerator": "204002972460498661289395419"},
+    {"depth": 7, "modulus": 2187, "uniform_density_error_units": "124602", "signed_lower_numerator": "-36961834715967914230309463", "signed_upper_numerator": "-36961834715967914229505592", "absolute_lower_numerator": "214887833766374001026177962", "absolute_upper_numerator": "214887833766374001026922313"},
+    {"depth": 8, "modulus": 6561, "uniform_density_error_units": "373920", "signed_lower_numerator": "-28632386246950013076641743", "signed_upper_numerator": "-28632386246950013073955045", "absolute_lower_numerator": "231333910026725425304774033", "absolute_upper_numerator": "231333910026725425307259180"},
+    {"depth": 9, "modulus": 19683, "uniform_density_error_units": "1121874", "signed_lower_numerator": "-21721689241712542557273113", "signed_upper_numerator": "-21721689241712542548390202", "absolute_lower_numerator": "245695703536739603773269343", "absolute_upper_numerator": "245695703536739603781478925"},
+    {"depth": 10, "modulus": 59049, "uniform_density_error_units": "3365736", "signed_lower_numerator": "-15561678730790910099860826", "signed_upper_numerator": "-15561678730790910070745411", "absolute_lower_numerator": "255394128975992413703337561", "absolute_upper_numerator": "255394128975992413730227337"},
+    {"depth": 11, "modulus": 177147, "uniform_density_error_units": "10097322", "signed_lower_numerator": "-10800473918016055369851174", "signed_upper_numerator": "-10800473918016055275107943", "absolute_lower_numerator": "264247247118048229688447311", "absolute_upper_numerator": "264247247118048229775897105"},
+    {"depth": 12, "modulus": 531441, "uniform_density_error_units": "30292080", "signed_lower_numerator": "-6805367697706866170510861", "signed_upper_numerator": "-6805367697706865864094186", "absolute_lower_numerator": "273491153455795849845734693", "absolute_upper_numerator": "273491153455795850128421925"},
+    {"depth": 13, "modulus": 1594323, "uniform_density_error_units": "90876354", "signed_lower_numerator": "-2659158405450490812637491", "signed_upper_numerator": "-2659158405450489826827008", "absolute_lower_numerator": "274907112724228220886739265", "absolute_upper_numerator": "274907112724228221795814720"},
+    {"depth": 14, "modulus": 4782969, "uniform_density_error_units": "272629176", "signed_lower_numerator": "218653710160899751744011", "signed_upper_numerator": "218653710160902908851957", "absolute_lower_numerator": "279545559105089509728414352", "absolute_upper_numerator": "279545559105089512638677275"}
+  ],
+  "signed_depth_14_positive": true,
+  "status": "PASS"
+}

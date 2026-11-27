@@ -1,0 +1,47 @@
+{
+  "directed_arms": {
+    "forward": 240,
+    "reverse": 122
+  },
+  "general_cells": {
+    "cell_count": 729,
+    "maximum_prefix_length": 24,
+    "physical_lifts": 2187
+  },
+  "grade_barrier": {
+    "largest_odd_excess": 27,
+    "pinned_sharp_example": [
+      13,
+      11,
+      1,
+      4,
+      3
+    ],
+    "positive_reference_comparisons": 3259,
+    "smaller_meetings": 3259,
+    "sources": 199
+  },
+  "mersenne": {
+    "first_classes": [
+      {
+        "first_d": 9565937,
+        "period_d": 9565938,
+        "r": 14,
+        "s": 1
+      },
+      {
+        "first_d": 65205067,
+        "period_d": 86093442,
+        "r": 15,
+        "s": 2
+      },
+      {
+        "first_d": 106395373,
+        "period_d": 774840978,
+        "r": 16,
+        "s": 3
+      }
+    ],
+    "symbolically_checked_exponent_classes": 40
+  }
+}

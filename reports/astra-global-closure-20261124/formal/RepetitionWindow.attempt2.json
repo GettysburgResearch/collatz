@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/RepetitionWindow.lean",
+  "sha256": "c059edb6db00c4fc05af8e75d5e2fb68bd0ff63b866cb6f282df98dbcc0a7670",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "seconds": 51.963
+}

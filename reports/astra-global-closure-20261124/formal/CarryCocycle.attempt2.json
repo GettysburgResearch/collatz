@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/CarryCocycle.lean",
+  "sha256": "ef04e679f1d7fbccef2f2b230edc0034c487c800f8483e9998d7a044b261fd76",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.ScalarCarryCocycle.clock_amortized_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 257.488
+}

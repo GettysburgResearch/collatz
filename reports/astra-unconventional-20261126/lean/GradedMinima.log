@@ -1,0 +1,5 @@
+'Collatz.GradedMinima.charge_of_link' depends on axioms: [propext, Quot.sound]
+'Collatz.GradedMinima.link_of_charge' depends on axioms: [propext, Quot.sound]
+'Collatz.GradedMinima.linked_lower' depends on axioms: [propext, Quot.sound]
+'Collatz.GradedMinima.upper_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GradedMinima.paired_cost' depends on axioms: [propext, Quot.sound]

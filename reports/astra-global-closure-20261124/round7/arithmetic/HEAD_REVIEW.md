@@ -1,0 +1,51 @@
+# Independent review of the directed tripling consumers
+
+**VERIFIED** for the two one-way positive-ordinary equivalences, the complete affine substitution, the ordered one-suffix placement, and the ordered six-prefix transfer at the following frozen bytes, relative to PR195 base fbe68bf1b13b797843691080d782f4262a5c4468. The full-series and power conclusions below retain their named imported hypotheses.
+
+| Source in research/astra-global-closure-20261124/round7/head | SHA-256 |
+|---|---|
+| UnitTripling.lean | 215e9342dd0b81d85b79f41e61abb751aa862ddf00bc4b4b00da9b15f782e789 |
+| OddUnitLift.lean | 3d42c70e69f56ed261538aca94adf7a4951a85363438e25b8ce1ac50975c5f08 |
+| README.md | daa6128b4368c48e1d6f77e4b852dd01fde10de92505e543f8e4d8439786c8a7 |
+| ODD_RAY.md | 27a5da87bce636a447d01501db84d8d3edaec163715602301aa06086be6aee15 |
+| check.py | c53a11bce78f133cae1971b89ef571e0772bdc54f6957086c2c74a109c9786f7 |
+
+## Directions, coverage and ordinary descent
+
+A route runs from the parent expression to the terminal expression. Membership in the terminal expression is propagated back to the parent. Thus a forward hypothesis \(C(u)\Rightarrow C(3u)\) licenses the path direction \(3u\to u\). The reverse hypothesis licenses \(u\to3u\). The ordinary edges \(2s\leftrightarrow s\) and \(2s+1\leftrightarrow3s+2\) preserve the basin label in both directions. At source 1 the one-step invariance uses the actual \(1,2\) cycle. Dividing out powers of two converts an assertion at all odd ternary units to the corresponding assertion at all positive ternary units, preserving both arms and the orientation.
+
+I extracted the three certificate arrays from the Lean text and independently verified their polynomials. At every edge of a row I propagated the two values at parameters zero and one. Membership of both in the required progression implies membership at every nonnegative parameter because the interpolated slope is a multiple of the input modulus. Its nonnegative affine quotient gives the next entire row. At every additional comparison the smaller argument's slope was a positive multiple of six and its constant was an odd ternary unit. Thus every such comparison stays at a positive odd unit throughout that progression. For each declaration I expanded its successive modulus splits from the original progression and checked every child until an explicitly certified leaf. All leaves were reachable and their total equalled the number of listed routes.
+
+| Table | Root and splits | Leaves | Total letters | Unit comparisons | Maximum \(u/n\) | Maximum terminal/source |
+|---|---|---:|---:|---:|---:|---:|
+| Forward alone | \(n=t+2,\ 16,9\) | 40 | 151 | 24 | \(167/27\) | \(8/9\) |
+| Reverse alone | \(n=t+2,\ 16,9,6,6,6,6\) | 172 | 1586 | 90 | \(2351/123\) | \(3398/3579\) |
+| Both directions | \(n=2t+1,\ 9,8,6\) | 33 | 423 | 59 | \(59/3\) | \(3\) |
+
+Only the indicated additional direction occurs in each of the first two tables. Every terminal row has positive constant, a strictly smaller constant than the starting row, and no larger slope. Thus strong induction from \(C(1)\) proves the corresponding one-way equivalence separately. It does not assume positivity of \(C(0)\) or require termination of an unrestricted search. If a supplied nonconvergent \(n\) is followed down these strict integer descents, it eventually encounters an outside-to-inside path; at least one directed unit test on that path fails. All earlier starting values decrease, giving the stated bounded-height witnesses.
+
+In the third table the terminal polynomial is exactly three times the initial polynomial. In the row \(18t+9\) the two extra steps occur at \(96t+49\) and \(192t+97\), both in the path direction \(u\to3u\). Each of the 59 unit query positions is an injective affine function on its own row. For an invariant label, unequal endpoint labels require an unequal unit comparison somewhere on the path, so \(D_o(X)\le59D_*((59/3)X)\). No independent distribution or meeting-time estimate enters this count.
+
+## Suffix 57
+
+The exact placement uses \(27b=2^k u+1\). For \(y=8b-1\) the first three physical odd steps give \(12b-1,18b-1,27b-1\), then \(k\) halves reach \(u\). Its child is \(81y+57=24(27b-1)=2^{k+3}(3u)\), so the same total clock reaches \(3u\). Since two generates the units modulo 27, each supplied unit admits \(k\) in a residue class modulo 18. Successive choices advance \(\log_{81}x\) by \(18\log_{81}2\), an irrational rotation modulo any prescribed integer period. Compactness supplies a uniformly bounded waiting time for a fixed nonempty open arc, and repeated visits give arbitrarily high rows. The two original orientations are preserved. The odd part \(3u\) stays fixed when the source is odd, which justifies the additional prescribed growing cap for a pointwise test.
+
+For the two-sided series the imported variation inequality concerns actual label discrepancies. With the pinned head-row telescoping estimate, summing \(81^{-j}\) above the minimal permissible row charges \(O(1/n)\) per source. Stripping powers of two costs a geometric sum, each unit-query substitution has the above finite multiplicity and slope bound, and each finite-menu child is comparable in height to its query. Thus only a bounded upward shift of the final row is incurred. For \(0<\alpha<1\), the geometric sums over rows and dyadic lifts preserve the stated little-o power. The paper explicitly preserves the difference between a true disagreement and missing a finite merger, and between the imported basin consequence and the unconditional finite equivalences. I inspected the pinned full-row comparison and actual-label variation statements; I did not reprove the external predecessor-density or Krasikov–Lagarias inputs. [PR197 full-row estimate](https://github.com/GettysburgResearch/collatz/blob/2c1397d2adcadc620381bca20c465f3bf31a6f8e/research/ayh-resource-reset-20261124/crossing-step/FOUR_SUFFIX_EQUIVALENCE.md) · [PR146 variation](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/TRIPLING_VARIATION.md)
+
+## Odd ordered witness
+
+The reviewed signatures now explicitly give \(u>0,\ u\equiv1\bmod2,\ 3\nmid u\) in both the prefix lift and the ordered comparison. An earlier draft 766c32a9146d308c8321c9680b0c1f9ecb1223652b6e44edec8ea3946e2d5dbe omitted the oddness conclusion; the current proof derives it from the odd base \(b\) and \(h\ge g\ge1\), or \(u=v\) in the identity branch.
+
+For \(v\equiv2\bmod9,\ 3v+1=2^ma,\ a\) odd and \(m>0\), the original arms at clock \(m\) are \(a\) and \(y-1\), \(y=3^{m+1}a\). If \(y\equiv1\bmod4\) then \(y/3\equiv3\bmod4\), and its two-step neighbor identity connects \((y/3)-1\) to \(y-1\). The witness is \(u=v\). Otherwise \(y\equiv3\bmod4\). Put \(Q=4(3v+1)\). It is divisible by eight and equals one modulo 27. I independently reconstructed all six ordinary base trajectories for the pair \((b,3b)\), checked both odd counts and exact endpoint offsets, and enumerated the 243 least representatives \(136+216i\) modulo 52488. In printed order the six rows newly accept \(162,54,18,6,2,1\) classes. Since \(2^g3^{p+1}\mid52488\), adding 52488 raises the lift parameter \(t\) by a positive multiple of three and preserves its unit class. Each representative was checked at periodic lifts indexed 0, 1 and 902, giving 729 actual pairs in the finite check in addition to the symbolic stride proof.
+
+From the simultaneous endpoints \(Y=2^{m+2-g}a\) and \(3^gY-1\), exactly \(m+2-g\) more prescribed steps reach \(a\) and \(3y-1\). The neighbor identity for \(y\equiv3\bmod4\) relates the latter to \(y-1\), preserving the original order. The six positive-slope expressions have coefficient in \(Q\) at most \(1048576/729\). Their constant corrections give \(u<(1048576/729)Q<24000v\). Including the identity choice gives at most seven antecedents per image. Independent literal trajectories checked this ordering on all 8,333 inputs \(v=11\bmod18\) below 150,000, including 4,167 uses of the six-prefix branch and 4,166 uses of the identity. For \(a=1,\ m=18j-2\) the lower arm's claimed first arrival follows from its pre-halving endpoint \(2^{m+2-g}>2\). No later upper-arm convergence is supplied.
+
+## Proper suffixes at a minimal first hitting time
+
+The ODD_RAY.md update retains the same formulas and adds a finite obstruction for all smaller first-arm suffix comparisons. If a forward unit failure has least first hitting time among all failing positive odd units, every proper suffix of its lower terminating arm has smaller hitting time. Its state is a ternary unit after the initial odd step, and all later even and odd steps preserve that condition. Dividing out powers of two yields an odd unit whose first hitting time can only decrease; its triple therefore reaches 1 by minimality. Reinstating the powers of two preserves convergence of the triple. No inference to the original upper arm is used here.
+
+For \(u=(2^k-1)/3\), with even \(k\ge4,\ 3\nmid k\), the lower suffix states are \(2^{k-1},\ldots,1\). The union of the forward paths of their triples has exactly the odd states \(3,5,1\) and maximum \(3\cdot2^{k-1}\), since the remaining common path is \(3,5,8,4,2,1\). For \(0\le i<k\), \(T^i(3u)=3^i2^{k-i}-1\) is odd and exceeds 5. Starting at \(T^k(3u)=3^k-1\), its state \(j\) steps later is at least \((3^k-1)/2^j\), so no point of the union is met while \(2^j(3\cdot2^{k-1})<3^k-1\). Equality at the threshold and all later clocks are left open. The first part is a minimal-counterexample implication. The concrete finite-path obstruction needs no failure assumption. Independently traced all 99 eligible exponents through 300, verifying the full union and 23,762 excluded upper clocks.
+
+## Execution
+
+Recompiled each frozen Lean module in a new temporary output directory with Lean 4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612 and warnings as errors. UnitTripling printed nine standard-axiom inventories, output SHA-256 5ea9bc2d32a0a0e9ecc0bbf6f58c84156c5f4640c8cc87f3206965f1486471d9. OddUnitLift printed five, output SHA-256 ce6130790ace9fbfac5245731b62817b6dc33f50ce1ca814c2ba7041a7f3e36a. The normal and optimized head checker outputs both had SHA-256 045ab1aa784a362fac51af57689feaee4423315ac9d6421ffe026cdcd017f77c.

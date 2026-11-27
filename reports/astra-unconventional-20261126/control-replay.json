@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Exact finite controls on the stated ordinary or fixed-denominator domains. These executions do not prove universal Collatz convergence or the accompanying unbounded written theorems.",
+  "runner_sha256": "8d6778ee40ce98dbf0e630cbfb5935b24e245c87d28b1df7a07670d981e9d5ad",
+  "scripts": [
+    {
+      "script": "research/astra-unconventional-20261126/adelic/check.py",
+      "source_sha256": "0bfd8231527182224c772559e496cc3f3d04de3493e0a5507a4f200923fd5ebb",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-unconventional-20261126/adelic/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "370565ddc4f6e575663ef66f571a676a02a117466693c977d3b1b5a82f605e7f"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-unconventional-20261126/adelic/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "370565ddc4f6e575663ef66f571a676a02a117466693c977d3b1b5a82f605e7f"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-unconventional-20261126/adelic/control.json",
+      "stdout_sha256": "370565ddc4f6e575663ef66f571a676a02a117466693c977d3b1b5a82f605e7f"
+    },
+    {
+      "script": "research/astra-unconventional-20261126/cycle/check.py",
+      "source_sha256": "5453ad76353d6b810bdbc926d534449f903f318613eb56b5bd0b18698221684a",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-unconventional-20261126/cycle/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "fe157496ceaf43c2818f82dd5c0de82872575db357aeed279980f3bfaa68d8e8"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-unconventional-20261126/cycle/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "fe157496ceaf43c2818f82dd5c0de82872575db357aeed279980f3bfaa68d8e8"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-unconventional-20261126/cycle/control.json",
+      "stdout_sha256": "fe157496ceaf43c2818f82dd5c0de82872575db357aeed279980f3bfaa68d8e8"
+    },
+    {
+      "script": "research/astra-unconventional-20261126/renormalization/check.py",
+      "source_sha256": "8010b89e0c0e9612896eed674301b1d30a07172a99cf9751a2ae8de153245df2",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-unconventional-20261126/renormalization/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "d352c0746452f1656396cb22fc0c82436ee92b2fe3019bca888edca748ad4a67"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-unconventional-20261126/renormalization/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "d352c0746452f1656396cb22fc0c82436ee92b2fe3019bca888edca748ad4a67"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-unconventional-20261126/renormalization/finite.json",
+      "stdout_sha256": "d352c0746452f1656396cb22fc0c82436ee92b2fe3019bca888edca748ad4a67"
+    },
+    {
+      "script": "research/astra-unconventional-20261126/spectral/check.py",
+      "source_sha256": "3e22de3f88f14636fd4f4f33d819da673fe36b4534a1cdd0dd114de9bc9cb040",
+      "commands": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "research/astra-unconventional-20261126/spectral/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "44382975b9a66db4852d3d9102b9d58bf70b4bf9351bd336376a6ae879d109d3"
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-O",
+            "-B",
+            "research/astra-unconventional-20261126/spectral/check.py"
+          ],
+          "exit": 0,
+          "stdout_sha256": "44382975b9a66db4852d3d9102b9d58bf70b4bf9351bd336376a6ae879d109d3"
+        }
+      ],
+      "normal_equals_optimized": true,
+      "source_unchanged": true,
+      "output": "reports/astra-unconventional-20261126/spectral/control.json",
+      "stdout_sha256": "44382975b9a66db4852d3d9102b9d58bf70b4bf9351bd336376a6ae879d109d3"
+    }
+  ],
+  "scripts_count": 4,
+  "executions": 8
+}

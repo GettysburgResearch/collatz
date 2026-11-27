@@ -1,0 +1,65 @@
+{
+  "scope": "One new, standalone project module compiled against existing Mathlib and package oleans. External Applegate\u2013Lagarias certificate is a written dependency of the sharper precision only.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "compiler_exit": 0,
+  "source_sha256": "0274b322e059db226a6a17a2dee4009cb7630d25c051d46548933647e3dee98d",
+  "log_sha256": "63dc2deff7393ce2b7450fe88b12850ae56ab7439ad0a3fab6da31aa9535828f",
+  "selected_axiom_reports": {
+    "RayGrade.carry_bounds": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.ceiling": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.longer_clock": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.reference_barrier": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.strict_grade": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.cycle_pull": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.repaid_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RayGrade.back_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RayGrade.back_lift": [
+      "propext"
+    ],
+    "RayGrade.steered_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RayGrade.every_cell": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "finite_checker_sha256": "438bf7ef9ec9a0a2c9c826f4779f20d51bb3dc52b61eec6b7c391ad11f9c6446",
+  "finite_control_output_sha256": "e46434a840db24bd94b2d3b99d9af401f01d4611ba080792de175b5267542546",
+  "ordinary_and_optimized_replay_match": true
+}

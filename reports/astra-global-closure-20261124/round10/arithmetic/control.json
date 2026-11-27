@@ -1,0 +1,28 @@
+{
+  "entropy_comparison_bit_lengths": [
+    272955,
+    273007
+  ],
+  "physical_rational_examples": [
+    {
+      "period": 5,
+      "clock": 8,
+      "base_gap_edges": 20,
+      "input_cut_edges": 10,
+      "output_upper_endpoint_crosses_cut": 10,
+      "tested_windows": 120,
+      "repeated_word_pairs": 4,
+      "nonzero_actual_differences": 4
+    },
+    {
+      "period": 41,
+      "clock": 65,
+      "base_gap_edges": 1640,
+      "input_cut_edges": 820,
+      "output_upper_endpoint_crosses_cut": 820,
+      "tested_windows": 14760,
+      "repeated_word_pairs": 4558,
+      "nonzero_actual_differences": 4558
+    }
+  ]
+}

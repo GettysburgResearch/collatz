@@ -1,0 +1,50 @@
+{
+  "baseline": "fbe68bf1b13b797843691080d782f4262a5c4468",
+  "sources": {
+    "ALGEBRAIC.md": "6104edb6558e679ed0010e316bb3d3067aab33ef8fb379575aaf3c57914307b6",
+    "CompanionContent.lean": "4347eab51643216308549cc59ecde713d3f4c598e6d658ff90b1db1db3ef4d47",
+    "README.md": "8f3a25610e9046b6a7bd3f2d50fe0709de809c25a807765669d3e881eb465a4f",
+    "check.py": "6f61612e9e9d24b62666ef64398f64da930a0af8b8a3a2cf0a53c3fd05c51bd5"
+  },
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "inputs": {
+    "PR182": "234fd2ece3a17c8950dce452291198705b4e6e60",
+    "PR193": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+    "PR195": "fbe68bf1b13b797843691080d782f4262a5c4468",
+    "PR203": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d"
+  },
+  "scope": "A fresh module with preinstalled Mathlib package oleans. Checks run literal finite ordinary orbits, including changing finite sources between some test cases. External theorems, multi-degree nonvanishing and asymptotics are written proofs.",
+  "lean_exit": 0,
+  "selected_inventories": 7,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_log_sha256": "1facbfd20497b64dd2c0b1306587cb9fe6bf65b8fa46793c59e46d1bc0fc7915",
+  "python_modes": [
+    [
+      "-B"
+    ],
+    [
+      "-O",
+      "-B"
+    ]
+  ],
+  "python_outputs_identical": true,
+  "python_exits": [
+    0,
+    0
+  ],
+  "controls_sha256": "34a8efdc5a07f1b06b86731bef0689955b777c819712894f1accd65dc6f5c2f1",
+  "sources_unchanged": true,
+  "status": "PASS"
+}

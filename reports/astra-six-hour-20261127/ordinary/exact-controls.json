@@ -1,0 +1,134 @@
+{
+  "anchors": {
+    "stable_derivative": 164232366001155405,
+    "clock_89": [
+      [
+        1,
+        45
+      ],
+      [
+        2,
+        47
+      ]
+    ],
+    "signs": [
+      {
+        "sign": 1,
+        "clock": 64,
+        "residue": 164232366001155405,
+        "sources": [
+          261839438460060088765816,
+          9697756980002225509847
+        ],
+        "endpoint": 2922489638071279607,
+        "odd": [
+          30,
+          33
+        ]
+      },
+      {
+        "sign": -1,
+        "clock": 62,
+        "residue": 4447453652426232499,
+        "sources": [
+          7090677649497148276503178,
+          262617690722116602833453
+        ],
+        "endpoint": 11724704031194517008,
+        "odd": [
+          27,
+          30
+        ]
+      }
+    ],
+    "odd_anchor": {
+      "exponents": [
+        173,
+        164
+      ],
+      "clock": 499,
+      "endpoint": 206172918000360585496211725112706136396363302641,
+      "odd": [
+        241,
+        250
+      ]
+    }
+  },
+  "all_earlier": [
+    {
+      "j": 11,
+      "m": 0,
+      "hit_one": [
+        89,
+        45
+      ],
+      "charge": 23,
+      "earlier_max_charge": [
+        16,
+        6
+      ],
+      "first_subfloor": [
+        54,
+        29
+      ],
+      "first_native_clock": 58,
+      "minimum_max_postpeak_clock": 58,
+      "earliest_witness": [
+        7,
+        58,
+        -7,
+        127
+      ]
+    },
+    {
+      "j": 983,
+      "m": 6,
+      "hit_one": [
+        7803,
+        3940
+      ],
+      "charge": 2043,
+      "earlier_max_charge": [
+        1791,
+        982
+      ],
+      "first_subfloor": [
+        2636,
+        1299
+      ],
+      "first_native_clock": 7726,
+      "minimum_max_postpeak_clock": 7726,
+      "earliest_witness": [
+        277,
+        7726,
+        1887,
+        1178
+      ]
+    },
+    {
+      "j": 2117,
+      "m": 13,
+      "hit_one": [
+        16934,
+        8567
+      ],
+      "charge": 4434,
+      "earlier_max_charge": [
+        4078,
+        2116
+      ],
+      "first_subfloor": [
+        5941,
+        2966
+      ],
+      "first_native_clock": 16913,
+      "minimum_max_postpeak_clock": 16913,
+      "earliest_witness": [
+        27,
+        16913,
+        198,
+        89
+      ]
+    }
+  ]
+}

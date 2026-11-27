@@ -1,0 +1,5 @@
+'Collatz.ShadowResidue.forbiddenFraction' depends on axioms: [propext, Quot.sound]
+'Collatz.ShadowResidue.noUnitDifference' depends on axioms: [propext, Quot.sound]
+'Collatz.ShadowResidue.twoForcesOne' depends on axioms: [propext, Quot.sound]
+'Collatz.ShadowResidue.translationNumerators' depends on axioms: [propext, Quot.sound]
+'Collatz.ShadowResidue.orderChecks' does not depend on any axioms

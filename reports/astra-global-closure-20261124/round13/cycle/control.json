@@ -1,0 +1,62 @@
+{
+  "decoded": 1022,
+  "transfer_censuses": [
+    {
+      "p": 5,
+      "h": 8,
+      "modulus": 13,
+      "min": 0,
+      "max": 1,
+      "total": 2
+    },
+    {
+      "p": 41,
+      "h": 65,
+      "modulus": 19,
+      "min": 12297672,
+      "max": 12302695,
+      "total": 233702141
+    },
+    {
+      "p": 41,
+      "h": 65,
+      "modulus": 29,
+      "min": 8056998,
+      "max": 8060373,
+      "total": 233702141
+    },
+    {
+      "p": 306,
+      "h": 485,
+      "modulus": 1,
+      "min": 398385043889454980045057736072170345269416515637518794769286745945867,
+      "max": 398385043889454980045057736072170345269416515637518794769286745945867,
+      "total": 398385043889454980045057736072170345269416515637518794769286745945867
+    }
+  ],
+  "reflection": {
+    "words": 98,
+    "nonconstant_with_common_factor": 7,
+    "needed_positive_multiplier": 5
+  },
+  "high_degree_control": {
+    "total": 233702141,
+    "target": 9378571,
+    "exact_multiples": 34,
+    "witness": {
+      "rank_bands": "01101110211100110010010101001000100100000",
+      "exponents": "12112121212211222212212121221122212211222",
+      "minimum": "29340952507853/44835377399",
+      "gcd": 9378571,
+      "degree_of_primitive_irreducible": 40,
+      "forbidden_inverse_window_absent": true,
+      "inverse_checks": {
+        "windows": 1681,
+        "central_minima": 41,
+        "merger_depth": 3,
+        "central_pairs_attained": 39,
+        "inverse_recursion_nodes": 5735790
+      }
+    }
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "scope": "eight inherited finite kernels; no global Collatz proof",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "replay_script_sha256": "b2bfecb63ee0fa189f8edc40d5c7623212988ea5b738a4c32c9592b01ef86f4e",
+  "expected_files": {
+    "CarryBudget.lean": 6,
+    "CarryCocycle.lean": 4,
+    "MahlerCore.lean": 8,
+    "PhasePacking.lean": 8,
+    "RepeatObstruction.lean": 6,
+    "RepetitionWindow.lean": 11,
+    "ResidueDefect.lean": 6,
+    "TwoSidedPacking.lean": 13
+  },
+  "files": [
+    {
+      "file": "CarryBudget.lean",
+      "sha256": "c064083c19bdee7797bc8fd57826cc0622f639a58e19e6c1dcb370ca6a39cd0f",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryBudget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.587,
+      "expected_public_theorems": 6,
+      "axiom_audits": {
+        "Collatz.StationaryCarryRigidity.prefixSum_ge_length": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.StationaryCarryRigidity.carry_telescope": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.StationaryCarryRigidity.carry_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.StationaryCarryRigidity.carry_word_determined": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.StationaryCarryRigidity.no_carry_birth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.StationaryCarryRigidity.prefixSum_congr": []
+      },
+      "unexpected_axioms": [],
+      "log": "CarryBudget.final.log",
+      "log_sha256": "2dbebf7fa2376fe32469ca1dcb7c4a48cf05606ec431baac4f57e4ddc86e1dda",
+      "passed": true
+    },
+    {
+      "file": "CarryCocycle.lean",
+      "sha256": "7d17a1d4d0f393bd509cb523886c83054101d19fd9babc7727b457dec273757a",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryCocycle.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.947,
+      "expected_public_theorems": 4,
+      "axiom_audits": {
+        "Collatz.ScalarCarryCocycle.carry_power": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ScalarCarryCocycle.clock_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ScalarCarryCocycle.clock_amortized": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ScalarCarryCocycle.clock_amortized_shift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "CarryCocycle.final.log",
+      "log_sha256": "3218245bc8ac6022a2c0c1658f5af8ce632694bd91bbcc288a21d3d0059cde92",
+      "passed": true
+    },
+    {
+      "file": "MahlerCore.lean",
+      "sha256": "8f15a4a6ce4032f0342f143604cad5f21ab0815f37b087c76fc778bf4b172a25",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/MahlerCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.64,
+      "expected_public_theorems": 8,
+      "axiom_audits": {
+        "MahlerPhysical.telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.weight_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.oneSum_substitute": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.finite_mahler": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.affine_expand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MahlerPhysical.eliminate_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "MahlerCore.final.log",
+      "log_sha256": "3e3a5874ae76b898830bc35e3b1b68dd6ecc74db622f8514e386a063478a828e",
+      "passed": true
+    },
+    {
+      "file": "PhasePacking.lean",
+      "sha256": "25d0f02e1faaa3540a755d794c86a45dc5ddc3db9dc047732b25e0607ef1dd03",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.815,
+      "expected_public_theorems": 8,
+      "axiom_audits": {
+        "Collatz.PhasePacking.clock_carry_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.normalized_complete": [
+          "propext"
+        ],
+        "Collatz.PhasePacking.normalized_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.cubic_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.canonical_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.canonical_prefix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.returning_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhasePacking.past_endpoint_unique": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "PhasePacking.final.log",
+      "log_sha256": "bb3c776fd53c87a333314675856f8e4dce0be501ad365543da6d9f0b3ca82895",
+      "passed": true
+    },
+    {
+      "file": "RepeatObstruction.lean",
+      "sha256": "424e5841662aa6f8c2264ebbe8bc62191d77493bea2ee85ae38eed5ee3a982ee",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepeatObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.026,
+      "expected_public_theorems": 6,
+      "axiom_audits": {
+        "Collatz.FixedSourceRepeat.eq_zero_of_multiple_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepeat.shared_lp_divisibility": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepeat.shared_lp_eq_of_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepeat.clock_ge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepeat.shared_gap_full_divisibility": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepeat.shared_gap_eq_of_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "RepeatObstruction.final.log",
+      "log_sha256": "b3c9178f6ff186b596bdfbbbc46125b2a76bd13e606757119399597daa00acd1",
+      "passed": true
+    },
+    {
+      "file": "RepetitionWindow.lean",
+      "sha256": "3c6eb159c12d047cf2eff381cce733b55deb7a499976d6e6cb6f91ca548b2b0c",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.304,
+      "expected_public_theorems": 11,
+      "axiom_audits": {
+        "Collatz.FixedSourceRepetition.wordDen_succ": [
+          "propext"
+        ],
+        "Collatz.FixedSourceRepetition.aligned": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.difference_dvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.small_shared_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.prefix_height": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.two_start_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.early_repeat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.edge_deterministic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.equal_start_future": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FixedSourceRepetition.four_window_reject": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "RepetitionWindow.final.log",
+      "log_sha256": "2c7d63b87e8b3f8bc6e55b5babb1d617db09d82f1c519be4d8a6124583655177",
+      "passed": true
+    },
+    {
+      "file": "ResidueDefect.lean",
+      "sha256": "9eae4f15bb0be0474a904db8c4e92f2bd18f1f5e1c6d304a3cd861ad1eeced8d",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/ResidueDefect.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.316,
+      "expected_public_theorems": 6,
+      "axiom_audits": {
+        "Collatz.ResidueDefect.geom_mul": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ResidueDefect.balanced_unit": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ResidueDefect.exponent_transport": [
+          "propext"
+        ],
+        "Collatz.ResidueDefect.cycle_term": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ResidueDefect.balanced_numerator_inverse": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ResidueDefect.single_interval_defect": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "ResidueDefect.final.log",
+      "log_sha256": "8ef539931ddc7c0223933af802baf71e4b38f2be3dc3f9d0fade3e1ad26364d6",
+      "passed": true
+    },
+    {
+      "file": "TwoSidedPacking.lean",
+      "sha256": "3ffbcbc49dcc194effd518a56c458da5d0aea7042f6e494212f0b100a8890181",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/TwoSidedPacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.286,
+      "expected_public_theorems": 13,
+      "axiom_audits": {
+        "Collatz.TwoSidedPacking.cycle_spread_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.lattice_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.spaced_span": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.denominator_packing_core": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.composed_carry_difference": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_L": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_P": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_smaller_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_exists": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shifted83_L": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shifted83_P": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.shadow_first_gap": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.TwoSidedPacking.bezout_torus": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unexpected_axioms": [],
+      "log": "TwoSidedPacking.final.log",
+      "log_sha256": "bbe18de68d2998aaa7febb573a2f790a38960f637a0a14ebb3a2bb9e2c0186f0",
+      "passed": true
+    }
+  ],
+  "completed": true,
+  "all_passed": true
+}

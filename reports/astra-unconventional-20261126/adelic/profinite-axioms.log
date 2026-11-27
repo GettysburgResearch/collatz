@@ -1,0 +1,4 @@
+'CollatzRound14.Adelic.liftQuotient' depends on axioms: [propext]
+'CollatzRound14.Adelic.boundedSteering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRound14.Adelic.OddWord.oddSource' depends on axioms: [propext]
+'CollatzRound14.Adelic.OddWord.transport' depends on axioms: [propext, Quot.sound]

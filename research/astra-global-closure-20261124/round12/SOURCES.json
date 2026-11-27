@@ -1,0 +1,141 @@
+{
+  "compiler": "Lean 4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies": [
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "scope": "Unchanged dependency rebuilt from visible source in round twelve."
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "scope": "Unchanged dependency rebuilt from visible source in round twelve."
+    },
+    {
+      "pr": 192,
+      "commit": "a0d7c6e36c378bbb6c826002039aef486bbe0383",
+      "path": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "git_blob": "89b0eefa833d6aa318993b3b908ce2f1cce54e86",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "scope": "Unchanged dependency rebuilt from visible source in round twelve."
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "local": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "scope": "Unchanged dependency rebuilt from visible source in round twelve."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "local": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "local": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "local": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    },
+    {
+      "pr": 195,
+      "commit": "4fd8af31c1ea525252b4d8f7411b5921dd447048",
+      "path": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "local": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12",
+      "scope": "Unchanged round-eleven dependency; FinalProposal retains an explicit unproved FrontierMerger premise."
+    }
+  ],
+  "external_inputs": [
+    {
+      "name": "Evertse-Schlickewei-Schmidt, Theorem 1.1",
+      "url": "https://pub.math.leidenuniv.nl/~evertsejh/00-equation.pdf",
+      "status": "published",
+      "scope": "Finiteness of nondegenerate unit-equation solutions in a finite-rank multiplicative group. Used in the written bounded-template two-arm theorem, not in Lean."
+    },
+    {
+      "name": "Dobrowolski, Acta Arithmetica 34 (1979), 391–401",
+      "url": "https://doi.org/10.4064/aa-34-4-391-401",
+      "status": "published",
+      "scope": "Mahler-measure lower bound for noncyclotomic irreducible algebraic integers, used to bound the number of factors. Not formalized here."
+    },
+    {
+      "name": "Voutier, An effective lower bound for the height of algebraic numbers, Acta Arithmetica 74 (1996), 81–95",
+      "url": "https://doi.org/10.4064/aa-74-1-81-95",
+      "readable_primary_copy": "https://www.researchgate.net/publication/233399224_An_effective_lower_bound_for_the_height_of_algebraic_numbers",
+      "status": "published, author-uploaded full text checked",
+      "scope": "Independent primary confirmation of the Mahler-measure bound used in the written cycle factor count; no complete proof replay."
+    },
+    {
+      "name": "Wu-Wang, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "status": "published",
+      "scope": "Homogeneous specialization of a lower bound on a linear form in 1, log 2, log 3. Used for cycle determinant growth and the all-depth trace discrepancy exponent. Not formalized here."
+    },
+    {
+      "name": "Bařina, Improved verification limit for the convergence of the Collatz conjecture",
+      "url": "https://doi.org/10.1007/s11227-025-07337-0",
+      "status": "published computation",
+      "scope": "External exhaustive convergence coverage through 2^71. Only needed in round twelve to apply the high-path equality to all hypothetical nonperiodic orbits; neither the finite-class nor bounded-lag finiteness theorem depends on this external coverage. Full computation not replayed."
+    },
+    {
+      "name": "Weaver-Wren, paper 48, page labelled v2, Lemma 7 (76) and Theorem 8 (82)–(83)",
+      "url": "https://rstation.ai/problems/collatz/papers/48",
+      "status": "source-qualified proposed external input F",
+      "scope": "Uniform fixed-total inverse-word floor with bounded real carry and linear ternary extra depth. New trace lower implications remain conditional on this input; source quantifiers were checked but its full analytic proof and supporting chain were not independently certified or formalized."
+    },
+    {
+      "name": "Corvaja-Zannier, A lower bound for the height of a rational function at S-unit points",
+      "url": "https://arxiv.org/pdf/math/0311030",
+      "status": "published, motivation only",
+      "scope": "The fixed-S gcd comparison motivated the new elementary short-relation resultant argument. The resulting bound does not invoke this theorem."
+    },
+    {
+      "name": "Chudnovsky, November 2026 preprint, Corollary 1.2",
+      "url": "https://arxiv.org/html/2611.30820v1",
+      "status": "optional reported preprint input, not used in main conclusions",
+      "scope": "The trace note records a conditional sharpening if its reported homogeneous logarithmic-form estimate is assumed. No external formalization or proof replay; neither the main cofinal nor the published Wu-Wang trace conclusion needs it."
+    }
+  ]
+}

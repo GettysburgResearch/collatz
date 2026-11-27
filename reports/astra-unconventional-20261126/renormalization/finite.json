@@ -1,0 +1,1261 @@
+{
+  "ascent_optima": [
+    {
+      "r": 1,
+      "clock": 2,
+      "signed_magnitude": 3,
+      "extra_odds": 4,
+      "minimum_odds": 5,
+      "inverse_gaps": [
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        3
+      ],
+      "optimal_cofactor_modulus": 81,
+      "optimal_cofactor_residues": [
+        61
+      ]
+    },
+    {
+      "r": 2,
+      "clock": 6,
+      "signed_magnitude": 15,
+      "extra_odds": 9,
+      "minimum_odds": 11,
+      "inverse_gaps": [
+        4,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        15
+      ],
+      "optimal_cofactor_modulus": 19683,
+      "optimal_cofactor_residues": [
+        15685
+      ]
+    },
+    {
+      "r": 3,
+      "clock": 9,
+      "signed_magnitude": 39,
+      "extra_odds": 12,
+      "minimum_odds": 15,
+      "inverse_gaps": [
+        6,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        39
+      ],
+      "optimal_cofactor_modulus": 531441,
+      "optimal_cofactor_residues": [
+        461897
+      ]
+    },
+    {
+      "r": 4,
+      "clock": 11,
+      "signed_magnitude": 53,
+      "extra_odds": 14,
+      "minimum_odds": 18,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        53
+      ],
+      "optimal_cofactor_modulus": 4782969,
+      "optimal_cofactor_residues": [
+        4535413
+      ]
+    },
+    {
+      "r": 5,
+      "clock": 13,
+      "signed_magnitude": 71,
+      "extra_odds": 16,
+      "minimum_odds": 21,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        69,
+        71
+      ],
+      "optimal_cofactor_modulus": 43046721,
+      "optimal_cofactor_residues": [
+        30088565,
+        39836083
+      ]
+    },
+    {
+      "r": 6,
+      "clock": 15,
+      "signed_magnitude": 95,
+      "extra_odds": 18,
+      "minimum_odds": 24,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        95
+      ],
+      "optimal_cofactor_modulus": 387420489,
+      "optimal_cofactor_residues": [
+        6916534
+      ]
+    },
+    {
+      "r": 7,
+      "clock": 17,
+      "signed_magnitude": 127,
+      "extra_odds": 19,
+      "minimum_odds": 26,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        127
+      ],
+      "optimal_cofactor_modulus": 1162261467,
+      "optimal_cofactor_residues": [
+        1152214758
+      ]
+    },
+    {
+      "r": 8,
+      "clock": 18,
+      "signed_magnitude": 85,
+      "extra_odds": 19,
+      "minimum_odds": 27,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        85
+      ],
+      "optimal_cofactor_modulus": 1162261467,
+      "optimal_cofactor_residues": [
+        384071586
+      ]
+    },
+    {
+      "r": 9,
+      "clock": 19,
+      "signed_magnitude": 57,
+      "extra_odds": 19,
+      "minimum_odds": 28,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        57
+      ],
+      "optimal_cofactor_modulus": 1162261467,
+      "optimal_cofactor_residues": [
+        902864840
+      ]
+    },
+    {
+      "r": 10,
+      "clock": 22,
+      "signed_magnitude": 151,
+      "extra_odds": 23,
+      "minimum_odds": 33,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        145,
+        151
+      ],
+      "optimal_cofactor_modulus": 94143178827,
+      "optimal_cofactor_residues": [
+        39142947024,
+        40773903150
+      ]
+    },
+    {
+      "r": 11,
+      "clock": 23,
+      "signed_magnitude": 101,
+      "extra_odds": 23,
+      "minimum_odds": 34,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        97,
+        101
+      ],
+      "optimal_cofactor_modulus": 94143178827,
+      "optimal_cofactor_residues": [
+        13047649008,
+        13591301050
+      ]
+    },
+    {
+      "r": 12,
+      "clock": 24,
+      "signed_magnitude": 65,
+      "extra_odds": 23,
+      "minimum_odds": 35,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        65
+      ],
+      "optimal_cofactor_modulus": 94143178827,
+      "optimal_cofactor_residues": [
+        4349216336
+      ]
+    },
+    {
+      "r": 13,
+      "clock": 26,
+      "signed_magnitude": 87,
+      "extra_odds": 24,
+      "minimum_odds": 37,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        87
+      ],
+      "optimal_cofactor_modulus": 282429536481,
+      "optimal_cofactor_residues": [
+        130907935750
+      ]
+    },
+    {
+      "r": 14,
+      "clock": 29,
+      "signed_magnitude": 231,
+      "extra_odds": 28,
+      "minimum_odds": 42,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        231
+      ],
+      "optimal_cofactor_modulus": 22876792454961,
+      "optimal_cofactor_residues": [
+        19115966700770
+      ]
+    },
+    {
+      "r": 15,
+      "clock": 31,
+      "signed_magnitude": 309,
+      "extra_odds": 30,
+      "minimum_odds": 45,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        309
+      ],
+      "optimal_cofactor_modulus": 205891132094649,
+      "optimal_cofactor_residues": [
+        143660447929589
+      ]
+    },
+    {
+      "r": 16,
+      "clock": 33,
+      "signed_magnitude": 409,
+      "extra_odds": 31,
+      "minimum_odds": 47,
+      "inverse_gaps": [
+        6,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        409
+      ],
+      "optimal_cofactor_modulus": 617673396283947,
+      "optimal_cofactor_residues": [
+        516847209153447
+      ]
+    },
+    {
+      "r": 17,
+      "clock": 34,
+      "signed_magnitude": 273,
+      "extra_odds": 31,
+      "minimum_odds": 48,
+      "inverse_gaps": [
+        6,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        273
+      ],
+      "optimal_cofactor_modulus": 617673396283947,
+      "optimal_cofactor_residues": [
+        172282403051149
+      ]
+    },
+    {
+      "r": 18,
+      "clock": 37,
+      "signed_magnitude": 759,
+      "extra_odds": 35,
+      "minimum_odds": 53,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        727,
+        729,
+        759
+      ],
+      "optimal_cofactor_modulus": 50031545098999707,
+      "optimal_cofactor_residues": [
+        23787642121731572,
+        42647581786702502,
+        43904911097700564
+      ]
+    },
+    {
+      "r": 19,
+      "clock": 38,
+      "signed_magnitude": 485,
+      "extra_odds": 35,
+      "minimum_odds": 54,
+      "inverse_gaps": [
+        6,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        485
+      ],
+      "optimal_cofactor_modulus": 50031545098999707,
+      "optimal_cofactor_residues": [
+        47989333765233326
+      ]
+    },
+    {
+      "r": 20,
+      "clock": 40,
+      "signed_magnitude": 647,
+      "extra_odds": 36,
+      "minimum_odds": 56,
+      "inverse_gaps": [
+        6,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        647
+      ],
+      "optimal_cofactor_modulus": 150094635296999121,
+      "optimal_cofactor_residues": [
+        86822078090702441
+      ]
+    },
+    {
+      "r": 21,
+      "clock": 42,
+      "signed_magnitude": 897,
+      "extra_odds": 38,
+      "minimum_odds": 59,
+      "inverse_gaps": [
+        4,
+        4,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        3,
+        6,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        857,
+        863,
+        897
+      ],
+      "optimal_cofactor_modulus": 1350851717672992089,
+      "optimal_cofactor_residues": [
+        17462033098057151,
+        120769969487650115,
+        782902111230022444
+      ]
+    },
+    {
+      "r": 22,
+      "clock": 44,
+      "signed_magnitude": 1151,
+      "extra_odds": 40,
+      "minimum_odds": 62,
+      "inverse_gaps": [
+        6,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        1143,
+        1151,
+        1157
+      ],
+      "optimal_cofactor_modulus": 12157665459056928801,
+      "optimal_cofactor_residues": [
+        453234918690638831,
+        8532518240631193124,
+        9943632921198114442
+      ]
+    },
+    {
+      "r": 23,
+      "clock": 46,
+      "signed_magnitude": 1553,
+      "extra_odds": 42,
+      "minimum_odds": 65,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1535,
+        1543,
+        1553
+      ],
+      "optimal_cofactor_modulus": 109418989131512359209,
+      "optimal_cofactor_residues": [
+        10844603654916472586,
+        78378580543866944289,
+        80731809806420764511
+      ]
+    },
+    {
+      "r": 24,
+      "clock": 47,
+      "signed_magnitude": 1029,
+      "extra_odds": 42,
+      "minimum_odds": 66,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        1,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1029
+      ],
+      "optimal_cofactor_modulus": 109418989131512359209,
+      "optimal_cofactor_residues": [
+        99072186268963887569
+      ]
+    },
+    {
+      "r": 25,
+      "clock": 49,
+      "signed_magnitude": 1381,
+      "extra_odds": 43,
+      "minimum_odds": 68,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1365,
+        1381
+      ],
+      "optimal_cofactor_modulus": 328256967394537077627,
+      "optimal_cofactor_residues": [
+        204721688476321937643,
+        269902436102718589124
+      ]
+    },
+    {
+      "r": 26,
+      "clock": 50,
+      "signed_magnitude": 921,
+      "extra_odds": 43,
+      "minimum_odds": 69,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        921
+      ],
+      "optimal_cofactor_modulus": 328256967394537077627,
+      "optimal_cofactor_residues": [
+        177659551956953005090
+      ]
+    },
+    {
+      "r": 27,
+      "clock": 53,
+      "signed_magnitude": 2455,
+      "extra_odds": 47,
+      "minimum_odds": 74,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        2401,
+        2405,
+        2423,
+        2439,
+        2455
+      ],
+      "optimal_cofactor_modulus": 26588814358957503287787,
+      "optimal_cofactor_residues": [
+        7653865894311060393778,
+        13127580240980748085961,
+        18113946228656101294939,
+        18601294587650435778144,
+        23392721231728055193840
+      ]
+    },
+    {
+      "r": 28,
+      "clock": 54,
+      "signed_magnitude": 1637,
+      "extra_odds": 47,
+      "minimum_odds": 75,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1601,
+        1637
+      ],
+      "optimal_cofactor_modulus": 26588814358957503287787,
+      "optimal_cofactor_residues": [
+        7797573743909351731280,
+        23926307768521814117906
+      ]
+    },
+    {
+      "r": 29,
+      "clock": 56,
+      "signed_magnitude": 2183,
+      "extra_odds": 48,
+      "minimum_odds": 77,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        2135,
+        2183
+      ],
+      "optimal_cofactor_modulus": 79766443076872509863361,
+      "optimal_cofactor_residues": [
+        1935283136260836885704,
+        33900342170089160969033
+      ]
+    },
+    {
+      "r": 30,
+      "clock": 58,
+      "signed_magnitude": 2911,
+      "extra_odds": 50,
+      "minimum_odds": 80,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "all_minimizing_magnitudes": [
+        2847,
+        2881,
+        2911
+      ],
+      "optimal_cofactor_modulus": 717897987691852588770249,
+      "optimal_cofactor_residues": [
+        35930869829436379922770,
+        240176556276807331659852,
+        631539805404444226948527
+      ]
+    },
+    {
+      "r": 31,
+      "clock": 59,
+      "signed_magnitude": 1941,
+      "extra_odds": 50,
+      "minimum_odds": 81,
+      "inverse_gaps": [
+        4,
+        6,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        5,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1921,
+        1941
+      ],
+      "optimal_cofactor_modulus": 717897987691852588770249,
+      "optimal_cofactor_residues": [
+        210513268468148075649509,
+        319358181322886640143367
+      ]
+    },
+    {
+      "r": 32,
+      "clock": 60,
+      "signed_magnitude": 1281,
+      "extra_odds": 50,
+      "minimum_odds": 82,
+      "inverse_gaps": [
+        6,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        4,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "all_minimizing_magnitudes": [
+        1281
+      ],
+      "optimal_cofactor_modulus": 717897987691852588770249,
+      "optimal_cofactor_residues": [
+        106452727107628880047789
+      ]
+    }
+  ],
+  "independent_unpruned_clocks": {
+    "1": 2,
+    "2": 6,
+    "3": 9,
+    "4": 11,
+    "5": 13,
+    "6": 15,
+    "7": 17,
+    "8": 18,
+    "9": 19,
+    "10": 22,
+    "11": 23
+  },
+  "ordinary_power_apex_examples": [
+    {
+      "r": 1,
+      "power_of_two_exponent": 79,
+      "start_bits": 79,
+      "visitor_bits": 79,
+      "first_native_intersection": 1,
+      "odds": 5
+    },
+    {
+      "r": 2,
+      "power_of_two_exponent": 59043,
+      "start_bits": 59042,
+      "visitor_bits": 59042,
+      "first_native_intersection": 2,
+      "odds": 11
+    }
+  ],
+  "supplied_ascent": {
+    "r": 11,
+    "a": 1,
+    "source_limit_exclusive": 2047,
+    "by_first_native_clock": {
+      "0": {
+        "sources": 2,
+        "w": 1819,
+        "minimum_odds": 2
+      }
+    }
+  },
+  "upper_certificate_controls": {
+    "hard_parent": 3233,
+    "lower_hit": 107,
+    "lower_maximum": 638468,
+    "upper_hit": 18,
+    "upper_odds": 3,
+    "postpeak_hit": 89,
+    "postpeak_odds": 45,
+    "charge": 23,
+    "rank_two_surviving_charge_bound": [
+      {
+        "s": 18,
+        "postpeak_first_hit": 127,
+        "postpeak_odd_count": 62,
+        "charge": 33
+      },
+      {
+        "s": 45,
+        "postpeak_first_hit": 303,
+        "postpeak_odd_count": 146,
+        "charge": 79
+      }
+    ],
+    "first_excluded_s": 72
+  },
+  "supplied_optimum_classes": {
+    "r": 1,
+    "all_supplied_cofactors_through": 250,
+    "attaining_cofactors": [
+      61,
+      142,
+      223
+    ]
+  },
+  "rank_three_phase_rows": [
+    {
+      "third_odd_gap": 17,
+      "first_upper_clock": 51,
+      "base_m": 1,
+      "base_upper_clock": 213,
+      "base_exponent": 126,
+      "exceptional_base_first_hit": 1153
+    },
+    {
+      "third_odd_gap": 23,
+      "first_upper_clock": 147,
+      "base_m": 0,
+      "base_upper_clock": 147,
+      "base_exponent": 80,
+      "exceptional_base_first_hit": 675
+    },
+    {
+      "third_odd_gap": 24,
+      "first_upper_clock": 90,
+      "base_m": 10,
+      "base_upper_clock": 1710,
+      "base_exponent": 1074
+    },
+    {
+      "third_odd_gap": 25,
+      "first_upper_clock": 71,
+      "base_m": 7,
+      "base_upper_clock": 1205,
+      "base_exponent": 752
+    },
+    {
+      "third_odd_gap": 26,
+      "first_upper_clock": 62,
+      "base_m": 11,
+      "base_upper_clock": 1844,
+      "base_exponent": 1158,
+      "preceding_same_class_first_hit": 338
+    },
+    {
+      "third_odd_gap": 27,
+      "first_upper_clock": 121,
+      "base_m": 1,
+      "base_upper_clock": 283,
+      "base_exponent": 164,
+      "exceptional_base_first_hit": 1426
+    },
+    {
+      "third_odd_gap": 28,
+      "first_upper_clock": 124,
+      "base_m": 9,
+      "base_upper_clock": 1582,
+      "base_exponent": 990
+    },
+    {
+      "third_odd_gap": 29,
+      "first_upper_clock": 81,
+      "base_m": 9,
+      "base_upper_clock": 1539,
+      "base_exponent": 962
+    },
+    {
+      "third_odd_gap": 30,
+      "first_upper_clock": 168,
+      "base_m": 1,
+      "base_upper_clock": 330,
+      "base_exponent": 192,
+      "exceptional_base_first_hit": 2034
+    },
+    {
+      "third_odd_gap": 31,
+      "first_upper_clock": 59,
+      "base_m": 3,
+      "base_upper_clock": 545,
+      "base_exponent": 328
+    },
+    {
+      "third_odd_gap": 33,
+      "first_upper_clock": 163,
+      "base_m": 4,
+      "base_upper_clock": 811,
+      "base_exponent": 496
+    },
+    {
+      "third_odd_gap": 37,
+      "first_upper_clock": 47,
+      "base_m": 8,
+      "base_upper_clock": 1343,
+      "base_exponent": 832
+    },
+    {
+      "third_odd_gap": 48,
+      "first_upper_clock": 78,
+      "base_m": 8,
+      "base_upper_clock": 1374,
+      "base_exponent": 844
+    }
+  ]
+}

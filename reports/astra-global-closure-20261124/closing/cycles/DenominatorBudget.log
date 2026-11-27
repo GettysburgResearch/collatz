@@ -1,0 +1,8 @@
+'Collatz.DenominatorBudget.product_path' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.product_lap' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.product_comparison' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.packed_clock' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.center_divisor_iff' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.nested_clock_divisor' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.earlier_carry_residue' depends on axioms: [propext, Quot.sound]
+'Collatz.DenominatorBudget.later_carry_residue' depends on axioms: [propext, Quot.sound]

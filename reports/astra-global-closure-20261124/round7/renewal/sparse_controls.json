@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "max_census_clock": 14,
+  "one_move_comparisons": 81936,
+  "accepted_one_moves": 248,
+  "nonzero_divisible_rank_tails": 12701,
+  "sharp_examples": [
+    {
+      "changed_rank": 1,
+      "weight": 24,
+      "clock": 48,
+      "displacement": 6,
+      "positive_target_bits": 40
+    },
+    {
+      "changed_rank": 2,
+      "weight": 72,
+      "clock": 144,
+      "displacement": 18,
+      "positive_target_bits": 117
+    },
+    {
+      "changed_rank": 3,
+      "weight": 216,
+      "clock": 432,
+      "displacement": 54,
+      "positive_target_bits": 344
+    },
+    {
+      "changed_rank": 4,
+      "weight": 648,
+      "clock": 1296,
+      "displacement": 162,
+      "positive_target_bits": 1030
+    },
+    {
+      "changed_rank": 5,
+      "weight": 1944,
+      "clock": 3888,
+      "displacement": 486,
+      "positive_target_bits": 3083
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# Independent review of binary descent and profile-count quantifiers
+
+**VERIFIED arithmetic and scope of the two-clock descent.** Use the positive ordinary shortcut map. Let $r$ be an odd ternary unit and let $T^hr,T^h(3r)\in\{1,2\}$ for an integer $h\ge1$. For $t>0$ put $q=r+2^{h+2}t$ and $q'=r+3\cdot2^h t$. On either reference arm, adding $2^k c$ to a source adds $3^{P_k}c$ to its endpoint at clock $k$, where $P_k$ counts its actual odd inputs. Two further steps from either cycle phase return to that same phase and add exactly one odd input. Consequently
+
+$$
+ T^{h+2}q=T^h q',\qquad T^{h+2}(3q)=T^h(3q').
+$$
+
+The second comparison has perturbations $3t$ and $9t$. Each comparison uses the odd count of its own reference arm, so it works with different phases and different odd counts across the arms. The integer $q'$ is positive, odd, $r\bmod3$, and smaller than $q$. A genuine forward or reverse unit failure at $q$ gives the same ordered pair of ordinary components at the smaller eligible $q'$. At other $q$ in the cylinder the algebra still holds.
+
+For any $q>r$ belonging to this cylinder, write $q-r=2^{h+2j+\delta}v$ with $v$ odd and $\delta=0$ or $1$. The exchange iterates at precisely $j$ successive steps on this anchor. Its final excess is $3^j2^{h+\delta}v$, which misses the input congruence modulo $2^{h+2}$. The word shrinks the excess by $3/4$ at each use. Applying a different anchor requires its own divisibility and its own terminating reference paths. If a proposed anchor was obtained by first exhibiting an affine tripling merger on its entire low-bit cylinder, every further lift in that cylinder already has equal components. Such anchors can establish density of some certified cylinders without routing a true failure into a new one. An unresolved ordinary integer need never be supplied to one of these formulas by the reported argument.
+
+An [independent literal replay](review_pair.py) checked all 171 positive odd ternary-unit anchors through 511, at the first clock with both arms in the cycle (at least 1) and one clock later. All four ordered phase combinations occurred. Its 10,260 exchanges include 8,550 with an eligible original unit, successive iterations through depth five, and the exact two odd-count identities at every exchange. [Results](binary_controls.json)
+
+## Scope of the profile estimate
+
+**VERIFIED WITH FIXES at the source bytes below.** The real strip applies after shifting each arm by its own homogeneous block displacement. At fixed counts the larger of the two slopes gives one integer coordinate in a range of length at most the larger slope plus the real carry cutoff. The smaller coordinate lies in a strip of width at most twice that cutoff, since the ratio of smaller to larger slope is at most one. For $R=h^{2w+2}$, the grade-pair marking contributes $O_w(2^h h^{2w+4-C_w})$. The reviewed correction $C_w=3w+8$ gives the required exceptional count for every fixed $w>0$. The earlier $2w+8$ only yields the stated strength up to $w=4$ by this proof. On any full binary block each arm separately has the fair parity law. Multiplication by 3 permutes binary residues. A union bound suffices and no independence between arms is required. In particular the argument permits a positive exceptional saving depending on a fixed error in the profile exponent.
+
+The [critical-grade lower bound](../../../../research/astra-global-closure-20261124/round8/unit/CRITICAL_PROFILES.md) rules out a fixed positive exceptional saving when the error in the near-central profile exponent tends to zero. At the grade forced by least failure, the number of exact profiles already attains the full grade entropy, through polynomial factors, on words whose designated arm stays above its initial size at every prefix. These controls concern finite physical words.
+
+## Paired records and weighted cuts
+
+**VERIFIED conditional deductions.** The paired packet's R8-P1 uses the fixed-exponent natural-density estimate in the written Corollary 1.2 of Shaik v4.0.2. Proposition 6.4's time-estimate proof explicitly bounds the odd count on this very shortcut path. Taking the exceptional sets under the two injections costs their sum. With $O(h^{2A+4})$ records and at most $\lfloor L/h^B\rfloor$ sources removed at each end of a record in a length-$L$ interval, summing all $h+1$ lengths leaves the asserted $O_w(X/h^w)$ exceptional set. Partners need only lie in the original record class. Advancing one of the common endpoints preserves its equality across the entire family, irrespective of its count on the other arm. [Shaik v4.0.2, Corollary 1.2 and Proposition 6.4](https://shaikidris.github.io/polylog/paper/)
+
+For R8-P2, given the stated F-to-density deduction and cited cut inputs, every separating oriented cut has divergent logarithmically weighted capacity. PR146's inequality (3) routes either odd orientation to the other at comparable heights, and PR197's (6) applies to each direction at the retained logarithmic weight. Deleting one universal exceptional set of summable capacity leaves every cut with infinite capacity. For each target flow $M$, the open subsets where the finite-height capacity exceeds $M$ increase with height and cover the compact space of separating binary labels. A common finite height follows, and ordinary finite max-flow/min-cut applies there. This can use intermediate merger components. Its quantifier concerns flows on some finite window for the prescribed cut endpoints, not a direct edge between every prescribed pair or recurrence of their numerical orbit targets. The present review treats the stated floor and positive-lower-density theorem as inputs and did not rebuild the external formalizations. [Frozen PR146 directed inequality](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/DIRECTED_TRIPLING.md) · [Frozen PR197 directed weighted implication](https://github.com/GettysburgResearch/collatz/blob/b0538639df0ab7edd239281bd897e705160f732c/research/ayh-resource-reset-20261124/unit-exit/UNIT_EXIT.md)
+
+## Reviewed source bytes
+
+| Source | SHA-256 |
+|---|---|
+| [README.md](../../../../research/astra-global-closure-20261124/round8/paired/README.md) | `671aa83ef06b7e3e7c230479427ae5af795ef820007673a65eb1ab82d4433ba5` |
+| [PAIRED_PREFIX.md](../../../../research/astra-global-closure-20261124/round8/paired/PAIRED_PREFIX.md) | `36ff83d0b8dcf71702f7b1ba47e224a4f6c8a5ab0e2a9eda23bab8310a984083` |
+| [PairedProfiles.lean](../../../../research/astra-global-closure-20261124/round8/paired/PairedProfiles.lean) | `b9465152fb5175579f21f784f6ce122833c15040f2196c6de4eca9dbab42653f` |
+
+An independent Lean 4.34.1 run with warnings as errors compiled the reviewed PairedProfiles.lean into a fresh output file and printed eight foundational-axiom inventories. Both ordinary and optimized Python reproduced the independent control output. These checks address the finite path and real-arithmetic statements. H, F and the analytic/counting deductions retain the written scopes above.

@@ -1,0 +1,163 @@
+{
+  "scope": "Exact finite arithmetic with explicit guards in normal and optimized Python; no universal dynamical inference.",
+  "python_version": "3.12.14",
+  "runner_sha256": "d54e02b84709ffc176d77134ddb7e104983986c4089994b97ad3425249932580",
+  "runs": [
+    {
+      "source": "research/astra-global-closure-20261124/round7/arithmetic/check.py",
+      "source_sha256": "6f61612e9e9d24b62666ef64398f64da930a0af8b8a3a2cf0a53c3fd05c51bd5",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/arithmetic/controls.json",
+      "expected_output_sha256": "34a8efdc5a07f1b06b86731bef0689955b777c819712894f1accd65dc6f5c2f1",
+      "output_matches": true,
+      "stdout_sha256": "34a8efdc5a07f1b06b86731bef0689955b777c819712894f1accd65dc6f5c2f1",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/arithmetic/check.py",
+      "source_sha256": "6f61612e9e9d24b62666ef64398f64da930a0af8b8a3a2cf0a53c3fd05c51bd5",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/arithmetic/controls.json",
+      "expected_output_sha256": "34a8efdc5a07f1b06b86731bef0689955b777c819712894f1accd65dc6f5c2f1",
+      "output_matches": true,
+      "stdout_sha256": "34a8efdc5a07f1b06b86731bef0689955b777c819712894f1accd65dc6f5c2f1",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/head/check.py",
+      "source_sha256": "c53a11bce78f133cae1971b89ef571e0772bdc54f6957086c2c74a109c9786f7",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/head/controls.json",
+      "expected_output_sha256": "045ab1aa784a362fac51af57689feaee4423315ac9d6421ffe026cdcd017f77c",
+      "output_matches": true,
+      "stdout_sha256": "045ab1aa784a362fac51af57689feaee4423315ac9d6421ffe026cdcd017f77c",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/head/check.py",
+      "source_sha256": "c53a11bce78f133cae1971b89ef571e0772bdc54f6957086c2c74a109c9786f7",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/head/controls.json",
+      "expected_output_sha256": "045ab1aa784a362fac51af57689feaee4423315ac9d6421ffe026cdcd017f77c",
+      "output_matches": true,
+      "stdout_sha256": "045ab1aa784a362fac51af57689feaee4423315ac9d6421ffe026cdcd017f77c",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/check.py",
+      "source_sha256": "894ea14c5c7e6405bc0d1043735555a6388d041f34d975dfe15069ac208da137",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/controls.json",
+      "expected_output_sha256": "07480918557116f67ebc20d8217395e0db72d6ccadbcffc574d11d911f2fae16",
+      "output_matches": true,
+      "stdout_sha256": "07480918557116f67ebc20d8217395e0db72d6ccadbcffc574d11d911f2fae16",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/check.py",
+      "source_sha256": "894ea14c5c7e6405bc0d1043735555a6388d041f34d975dfe15069ac208da137",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/controls.json",
+      "expected_output_sha256": "07480918557116f67ebc20d8217395e0db72d6ccadbcffc574d11d911f2fae16",
+      "output_matches": true,
+      "stdout_sha256": "07480918557116f67ebc20d8217395e0db72d6ccadbcffc574d11d911f2fae16",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/sparse_check.py",
+      "source_sha256": "2c90575cd49f818c658b0098b0323a640b36a23adbad67c5cf1e366d62967f0b",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/sparse_controls.json",
+      "expected_output_sha256": "c9e142395f6ac5641c749d66f39aaf2a80af28352a2f250c4b67dbe4485619ae",
+      "output_matches": true,
+      "stdout_sha256": "c9e142395f6ac5641c749d66f39aaf2a80af28352a2f250c4b67dbe4485619ae",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/sparse_check.py",
+      "source_sha256": "2c90575cd49f818c658b0098b0323a640b36a23adbad67c5cf1e366d62967f0b",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/sparse_controls.json",
+      "expected_output_sha256": "c9e142395f6ac5641c749d66f39aaf2a80af28352a2f250c4b67dbe4485619ae",
+      "output_matches": true,
+      "stdout_sha256": "c9e142395f6ac5641c749d66f39aaf2a80af28352a2f250c4b67dbe4485619ae",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/tripling_check.py",
+      "source_sha256": "7ea3dd2c2cddbacb4436903d62883cfa7fa3b55b126780c6185f0e289df97a09",
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/tripling_controls.json",
+      "expected_output_sha256": "269f99c125025444e657af17240e73a7efd813c546300d0d1218ddf7af627a3f",
+      "output_matches": true,
+      "stdout_sha256": "269f99c125025444e657af17240e73a7efd813c546300d0d1218ddf7af627a3f",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round7/renewal/tripling_check.py",
+      "source_sha256": "7ea3dd2c2cddbacb4436903d62883cfa7fa3b55b126780c6185f0e289df97a09",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "exit_code": 0,
+      "source_unchanged": true,
+      "expected_output": "reports/astra-global-closure-20261124/round7/renewal/tripling_controls.json",
+      "expected_output_sha256": "269f99c125025444e657af17240e73a7efd813c546300d0d1218ddf7af627a3f",
+      "output_matches": true,
+      "stdout_sha256": "269f99c125025444e657af17240e73a7efd813c546300d0d1218ddf7af627a3f",
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "status": "PASS"
+}

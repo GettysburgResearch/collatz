@@ -1,0 +1,85 @@
+{
+  "anchors": 171,
+  "critical_grade_controls": [
+    {
+      "arm_factor": 1,
+      "clock": 8,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 4,
+      "minimum_endpoints_across_three_blocks": 4,
+      "odd_count": 6
+    },
+    {
+      "arm_factor": 3,
+      "clock": 8,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 3,
+      "minimum_endpoints_across_three_blocks": 4,
+      "odd_count": 6
+    },
+    {
+      "arm_factor": 1,
+      "clock": 12,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 39,
+      "minimum_endpoints_across_three_blocks": 55,
+      "odd_count": 8
+    },
+    {
+      "arm_factor": 3,
+      "clock": 12,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 41,
+      "minimum_endpoints_across_three_blocks": 55,
+      "odd_count": 8
+    },
+    {
+      "arm_factor": 1,
+      "clock": 15,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 183,
+      "minimum_endpoints_across_three_blocks": 273,
+      "odd_count": 10
+    },
+    {
+      "arm_factor": 3,
+      "clock": 15,
+      "largest_multiplicity": 1,
+      "largest_unit_endpoint_count": 185,
+      "minimum_endpoints_across_three_blocks": 273,
+      "odd_count": 10
+    }
+  ],
+  "exchanges_at_original_ternary_unit": 8550,
+  "literal_exchanges": 10260,
+  "maximum_same_anchor_steps": 5,
+  "phase_pairs": {
+    "1,1": 108,
+    "1,2": 63,
+    "2,1": 63,
+    "2,2": 108
+  },
+  "profile_controls": [
+    {
+      "clock": 5,
+      "distinct_first_endpoints": 2,
+      "maximum_bucket": 1,
+      "odd_count": 3,
+      "retained_words": 2
+    },
+    {
+      "clock": 10,
+      "distinct_first_endpoints": 23,
+      "maximum_bucket": 1,
+      "odd_count": 6,
+      "retained_words": 23
+    },
+    {
+      "clock": 15,
+      "distinct_first_endpoints": 377,
+      "maximum_bucket": 1,
+      "odd_count": 9,
+      "retained_words": 377
+    }
+  ]
+}

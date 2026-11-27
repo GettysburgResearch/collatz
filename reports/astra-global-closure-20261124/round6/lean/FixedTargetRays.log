@@ -1,0 +1,10 @@
+'FixedTargetRays.oddRun' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.halvingRun' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.evenPairs' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.evenPairsPlusOne' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.oddEndpoints' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.originalArms' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.inverseRescue' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.smallOfFirstFailure' depends on axioms: [propext, Quot.sound]
+'FixedTargetRays.cut' does not depend on any axioms
+'FixedTargetRays.forcedPeak' depends on axioms: [propext, Quot.sound]

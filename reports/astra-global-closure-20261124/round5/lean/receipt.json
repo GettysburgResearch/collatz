@@ -1,0 +1,80 @@
+{
+  "scope": "Fresh compilation of all three new modules, which have no local project imports; existing Mathlib/package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runner_sha256": "530dc8f13acfa11750cc0fe0e1ac35003f5ba6cb6e94a6f088778cb936dc48b0",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "ClockLattice",
+      "source": "research/astra-global-closure-20261124/round5/arithmetic/ClockLattice.lean",
+      "source_sha256": "3c61188f859fe6b568f54d188b0a8074f3eb6b6d2b7a3b752f54485f111799e8",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round5/lean/ClockLattice.log",
+      "log_sha256": "2c9ba411d4368e2451ba1ee231825a2f93e848f8de5ad9c160ddc41ed46c4802",
+      "axiom_reports": [
+        "'Collatz.ClockLattice.local_lattice' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.ClockLattice.projection_determinant' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.ClockLattice.independent_rows' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ClockLattice.gram_area' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.ClockLattice.factor_mod_clock' depends on axioms: [propext]",
+        "'Collatz.ClockLattice.apery_edge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ClockLattice.reflected_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.ClockLattice.digit_step_cap' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 8,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "WindowRepresentatives",
+      "source": "research/astra-global-closure-20261124/round5/head/WindowRepresentatives.lean",
+      "source_sha256": "2db5a0f818b36c7b6122111e4d4b3e161ebd69b0d0100ac1bf7b6a7158448e5e",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round5/lean/WindowRepresentatives.log",
+      "log_sha256": "8d428878de2e9f426b7a914b970df91a28da7f1e295c8320faac0aa7b1a3510b",
+      "axiom_reports": [
+        "'Collatz.HeadWindows.last_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadWindows.separate_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadWindows.third_on_representative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadWindows.prefix_cover' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.HeadWindows.head_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 5,
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "OrdinaryAtoms",
+      "source": "research/astra-global-closure-20261124/round5/renewal/OrdinaryAtoms.lean",
+      "source_sha256": "4d5a52e54196a956233a911a6a03b36a2367dd90f503b3d6041486839e8860da",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round5/lean/OrdinaryAtoms.log",
+      "log_sha256": "2a6fb29a99a359fcb036323974ff6785c547578cf029f8ac3222ed687382e6c1",
+      "axiom_reports": [
+        "'Collatz.OrdinaryAtoms.decode' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.integral_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.fixed_clock_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.localized_fixed_clock_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.first_odd_carry' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.truncated_clock' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OrdinaryAtoms.clock_floor' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_axiom_report_count": 7,
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "module_count": 3,
+  "selected_axiom_report_count": 20,
+  "all_sources_unchanged": true
+}

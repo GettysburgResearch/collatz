@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/TwoSidedPacking.lean",
+  "sha256": "fc285a4621767f8be01f5f68848040d4953ee1778762e9d7db123525972b9f04",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/TwoSidedPacking.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.TwoSidedPacking.cycle_spread_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoSidedPacking.lattice_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoSidedPacking.spaced_span' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoSidedPacking.denominator_packing_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoSidedPacking.composed_carry_difference' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shadow_L' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shadow_P' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shadow_smaller_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoSidedPacking.shadow_exists' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shifted83_L' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shifted83_P' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.shadow_first_gap' depends on axioms: [propext, Quot.sound]\n'Collatz.TwoSidedPacking.bezout_torus' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 23.833
+}

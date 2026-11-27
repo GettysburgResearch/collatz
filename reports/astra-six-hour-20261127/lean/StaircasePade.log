@@ -1,0 +1,8 @@
+'StaircasePade.tri_add' depends on axioms: [propext, Quot.sound]
+'StaircasePade.shifted_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePade.filter_at_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePade.block_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePade.initial_remainder_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePade.finite_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePade.uniform_exponent_gap' depends on axioms: [propext]
+'StaircasePade.fixed_template_exponent_gap' depends on axioms: [propext]

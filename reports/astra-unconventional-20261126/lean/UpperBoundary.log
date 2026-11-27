@@ -1,0 +1,4 @@
+'Collatz.UpperBoundary.row' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperBoundary.exact_labels' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperBoundary.boundary' depends on axioms: [propext, Quot.sound]
+'Collatz.UpperBoundary.filled_class' depends on axioms: [propext, Quot.sound]

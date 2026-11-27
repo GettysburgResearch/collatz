@@ -1,0 +1,4 @@
+'Collatz.CanonicalGrade.expand_eq' depends on axioms: [propext]
+'Collatz.CanonicalGrade.canonical' depends on axioms: [propext]
+'Collatz.CanonicalGrade.upper_insertion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CanonicalGrade.all_seed_charges' depends on axioms: [propext]

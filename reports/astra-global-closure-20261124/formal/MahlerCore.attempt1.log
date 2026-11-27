@@ -1,0 +1,5 @@
+'MahlerPhysical.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MahlerPhysical.oneSum_substitute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MahlerPhysical.finite_mahler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MahlerPhysical.affine_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MahlerPhysical.eliminate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

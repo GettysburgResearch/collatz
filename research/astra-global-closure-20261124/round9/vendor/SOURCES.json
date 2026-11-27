@@ -1,0 +1,26 @@
+[
+  {
+    "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+    "path": "research/clock-itineraries/TernaryItinerary.lean",
+    "local": "research/astra-global-closure-20261124/round9/vendor/TernaryItinerary.lean",
+    "git_blob": "4640008db31908a0d896a55645ea57f0b55234e2",
+    "sha256": "b79cfc44200087ac0ca9bed9daab9c83a64487bbdb29a4e1e410ba7d6d3f8112",
+    "scope": "Byte-identical pinned upstream dependency; not a new round-nine theorem."
+  },
+  {
+    "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+    "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+    "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+    "git_blob": "7f2296244a988ef9fa0f38778902ab9ecf5d7330",
+    "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "scope": "Byte-identical pinned upstream dependency; not a new round-nine theorem."
+  },
+  {
+    "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+    "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+    "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+    "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+    "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "scope": "Byte-identical pinned upstream dependency; not a new round-nine theorem."
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "scope": "Root independently checked these 14 affine identities over exact rational coefficients; ordinary legality and original-floor theorem are written deductions, not a new Lean replay.",
+  "identities": [
+    {
+      "from": "E",
+      "to": "A",
+      "source": "PLL",
+      "bits": "00101011111",
+      "clocks": 11,
+      "odd": 7
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "source": "PLL",
+      "bits": "01110101111",
+      "clocks": 11,
+      "odd": 8
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "source": "PLL",
+      "bits": "10000101011",
+      "clocks": 11,
+      "odd": 5
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "source": "PLL",
+      "bits": "00010100001",
+      "clocks": 11,
+      "odd": 3
+    },
+    {
+      "from": "D",
+      "to": "A",
+      "source": "PLL",
+      "bits": "01101011111",
+      "clocks": 11,
+      "odd": 8
+    },
+    {
+      "from": "A",
+      "to": "actual endpoint",
+      "source": "PPLP",
+      "bits": "01110011010000010",
+      "clocks": 17,
+      "odd": 7
+    },
+    {
+      "from": "A",
+      "to": "actual endpoint",
+      "source": "PLPP",
+      "bits": "01110101001001000",
+      "clocks": 17,
+      "odd": 7
+    },
+    {
+      "from": "A",
+      "to": "actual endpoint",
+      "source": "PLPL",
+      "bits": "011101010010001",
+      "clocks": 15,
+      "odd": 7
+    },
+    {
+      "from": "A",
+      "to": "actual endpoint",
+      "source": "PPLLP",
+      "bits": "01110011010001001010",
+      "clocks": 20,
+      "odd": 9
+    },
+    {
+      "from": "C",
+      "to": "actual endpoint",
+      "source": "PPLP",
+      "bits": "00010001010111000",
+      "clocks": 17,
+      "odd": 6
+    },
+    {
+      "from": "C",
+      "to": "actual endpoint",
+      "source": "PLPP",
+      "bits": "00010100101011000",
+      "clocks": 17,
+      "odd": 6
+    },
+    {
+      "from": "C",
+      "to": "actual endpoint",
+      "source": "PLPL",
+      "bits": "000101001010101",
+      "clocks": 15,
+      "odd": 6
+    },
+    {
+      "from": "C",
+      "to": "actual endpoint",
+      "source": "PPLLP",
+      "bits": "00010001010110111000",
+      "clocks": 20,
+      "odd": 8
+    },
+    {
+      "from": "C",
+      "to": "actual endpoint",
+      "source": "PPP",
+      "bits": "00010001011000",
+      "clocks": 14,
+      "odd": 4
+    }
+  ]
+}

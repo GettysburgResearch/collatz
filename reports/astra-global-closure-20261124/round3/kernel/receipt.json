@@ -1,0 +1,169 @@
+{
+  "scope": "Fresh build of this packet and its complete local project import closure; existing Mathlib and package oleans reused.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "CyclicFlux",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/cycles/CyclicFlux.lean",
+      "source_sha256": "c5076fc5ac18d519ecb6a469d7751f71d84411f74a2ea7da4213f0567a836568",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/CyclicFlux.log",
+      "log_sha256": "6cbf49712a84b43f218d9d266388bc4de6af404914f2fdef55f1703102107a42",
+      "axiom_reports": [
+        "'Collatz.CyclicFlux.cyclic_range_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "DivisorCount",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/controller/DivisorCount.lean",
+      "source_sha256": "af766e9243cc79185bf893409ed3acf494725a36bfa86a428030a78b482a4f20",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/DivisorCount.log",
+      "log_sha256": "66a1ae1507ce9dd8b5029f3cc1b522e0464e474948a5f1a7658a8979ce3a4da0",
+      "axiom_reports": [
+        "'Collatz.FixedWordCount.source_divisor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedWordCount.source_divisor_cover' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "FixedWord",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/analytic/FixedWord.lean",
+      "source_sha256": "a6505a7ba28c810e64f461bf36cee61a92542eca0a649918685a79ed63aced39",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/FixedWord.log",
+      "log_sha256": "1441805bc3cd9e7a0dd8c77458c89f4a274d896ab6c9e00803ec06e5fd4d075a",
+      "axiom_reports": [
+        "'Collatz.FixedWord.physical_affine' depends on axioms: [propext]",
+        "'Collatz.FixedWord.physical_gcd' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FixedWord.adjacent_carry' depends on axioms: [propext]",
+        "'Collatz.FixedWord.physical_size' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FixedWord.floor_carry' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FixedWord.covered_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FixedWord.floor_product' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "CycleShadows",
+      "new_module": false,
+      "source": "research/astra-global-closure-20261124/structural/CycleShadows.lean",
+      "source_sha256": "05ef6b77b2ce9d571c598e5a0e4a526be3412b844349476ec72408b0bf145e99",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/CycleShadows.log",
+      "log_sha256": "ce316b342506c948c43d113becf2c2f94dac78af997048f9f473f8879dd6e9bc",
+      "axiom_reports": [
+        "'CycleShadows.no_local_join' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.lift' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.small_negative_table' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.small_positive_table' does not depend on any axioms",
+        "'CycleShadows.positive_tail_controls' does not depend on any axioms",
+        "'CycleShadows.member_endpoint' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.ten_even_bridge' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.certified_arm' depends on axioms: [propext, Quot.sound]",
+        "'CycleShadows.unbounded_bridge' depends on axioms: [propext, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "ResidualDescent",
+      "new_module": false,
+      "source": "research/astra-global-closure-20261124/closing/descent/ResidualDescent.lean",
+      "source_sha256": "b5f149855866419b771e49127bdaabd1cb5749ec7d6f3b6091f3fb54bf1ccc98",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/ResidualDescent.log",
+      "log_sha256": "8c2838d36307e46b0860e28728220dcb8ff9c83d48eb870e79e21dd39339e773",
+      "axiom_reports": [
+        "'ResidualDescent.residual_descent' depends on axioms: [propext, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "LoopCone",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/descent/LoopCone.lean",
+      "source_sha256": "a468fc36f293b3314342558ef438f6de46d7baf1ff0dc87c3571a9cf80a93c60",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/LoopCone.log",
+      "log_sha256": "9ab632d7c50d0c829121a0f53e6cfb0267a8b5963800f7fdc360f493d043fe9f",
+      "axiom_reports": [
+        "'LoopCone.loop_exit_descent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "TwoLight",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/descent/TwoLight.lean",
+      "source_sha256": "fdddc3ede29502691ea2a27354abdd8b09faee98fc0f338bb3b970c9cf141964",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/TwoLight.log",
+      "log_sha256": "e854c5cf1a5c930a8d084853a96f68b7d6276292bec6463ac37ce57302b7d5b6",
+      "axiom_reports": [
+        "'TwoLight.two_light_descent' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "ResetTiles",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/descent/ResetTiles.lean",
+      "source_sha256": "78a285a2933ef970f4f0f91d64e169f5c42ec3fe7b7fb1575c13e0e6ac3f69a3",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/ResetTiles.log",
+      "log_sha256": "6c9366b92a820d7e0d932d6c4e4d5d106a478a245bae71938b114cc0d911aba7",
+      "axiom_reports": [
+        "'ResetTiles.tile_descent' depends on axioms: [propext, Quot.sound]",
+        "'ResetTiles.catalog' does not depend on any axioms"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "module": "RotationProduct",
+      "new_module": true,
+      "source": "research/astra-global-closure-20261124/round3/cycles/RotationProduct.lean",
+      "source_sha256": "7333ffec11fb7b4053b9ae662fa58decadf6f0c6715b4f17dce63aa97438ab13",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round3/kernel/RotationProduct.log",
+      "log_sha256": "cf4b22fec13565f677c06911c51a59d3fb28ad3bd953e5604f14a22a1fc6f59a",
+      "axiom_reports": [
+        "'Collatz.RotationProduct.edge_factors' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.RotationProduct.product_path' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.RotationProduct.product_lap' depends on axioms: [propext, Quot.sound]"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "new_module_count": 7,
+  "new_selected_axiom_reports": 17
+}

@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/RepetitionWindow.lean",
+  "sha256": "4e17a3e5f3cd288d69af04fd7173e2392466e55a6ee88105f33166eef90dc2db",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean"
+  ],
+  "exit_code": 1,
+  "stdout": "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean:61:11: error(lean.invalidField): Invalid field `dvd_mul_left`: The environment does not contain `Eq.dvd_mul_left`, so it is not possible to project the field `dvd_mul_left` from an expression\n  hc\nof type `(8 ^ m).gcd (9 ^ m) = 1`\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepetitionWindow.lean:62:2: error: No goals to be solved\n",
+  "stderr": "",
+  "seconds": 2.491
+}

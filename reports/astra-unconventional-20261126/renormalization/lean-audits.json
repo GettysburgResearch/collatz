@@ -1,0 +1,457 @@
+{
+  "lean": "4.34.1",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "modules": [
+    {
+      "file": "SignedBudget.lean",
+      "sha256": "5f659872df4a3e915d272bdd9d55a24abab55cc3a6d64c8d1953fe7a0c0c1b65",
+      "audits": [
+        {
+          "theorem": "Collatz.SignedBudget.physical",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.SignedBudget.signed_lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.SignedBudget.negative_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.SignedBudget.negative_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.SignedBudget.sharp_lap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "ShadowBarrier.lean",
+      "sha256": "558c43120f85133001807aed9b000955d7180e4e20a455897943a2798cd8a41b",
+      "audits": [
+        {
+          "theorem": "Collatz.ShadowBarrier.shadow_coeff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ShadowBarrier.shadow",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ShadowBarrier.negative_magnitude",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ShadowBarrier.positive_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ShadowBarrier.negative_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "PhysicalWindow.lean",
+      "sha256": "93c727c4fdb35eaba437ce839ef5ddfa6677b24951edc7f8267e14df6f3e47e7",
+      "audits": [
+        {
+          "theorem": "Collatz.PhysicalWindow.affine",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.offset_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.cut",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.split_odds",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.rise",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.positive_cost",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhysicalWindow.negative_cost",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "AscentMerger.lean",
+      "sha256": "01bea0681435d4339c34515cd36ef3f7a3f99eead1291312d6d04b0154e2d40c",
+      "audits": [
+        {
+          "theorem": "Collatz.AscentMerger.ramp",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.AscentMerger.other_predecessor",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.AscentMerger.lower_witness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.AscentMerger.sharp_word",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "ExactOptimum.lean",
+      "sha256": "66305c1842d3e98005bcb7e49f3013820e8fc1d3a123c447d48aa87ac119df43",
+      "audits": [
+        {
+          "theorem": "Collatz.ExactOptimum.feasible_clock",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ExactOptimum.exact_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ExactOptimum.cofactor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.ExactOptimum.exact_attainment",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "UpperBoundary.lean",
+      "sha256": "6b68e308c3ab37b57e5ad2407950fb64284267ac5925cee1b6e10c44c8afa69e",
+      "audits": [
+        {
+          "theorem": "Collatz.UpperBoundary.row",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.UpperBoundary.exact_labels",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.UpperBoundary.boundary",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.UpperBoundary.filled_class",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "RankTwoControl.lean",
+      "sha256": "bd55b8a7a64c8c43e1d706baf686481cfa32ceba2e5bf4b431974eaee0742d43",
+      "audits": [
+        {
+          "theorem": "Collatz.RankTwoControl.terminal_charge",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.RankTwoControl.no_augmented_plus",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.RankTwoControl.before_upper_hit",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "GradedMinima.lean",
+      "sha256": "f76b01fadb8f401c7bfce56ccebfadfe91da05643d4c532e44041c9984470ecf",
+      "audits": [
+        {
+          "theorem": "Collatz.GradedMinima.charge_of_link",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.GradedMinima.link_of_charge",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.GradedMinima.linked_lower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.GradedMinima.upper_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.GradedMinima.paired_cost",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "PhaseReturn.lean",
+      "sha256": "60bb5a70188168874b4141fff2ac5ed2ed38a9f34c9d1a14525dfe567bc73ef2",
+      "audits": [
+        {
+          "theorem": "Collatz.PhaseReturn.faster_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseReturn.shift_eq",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseReturn.repeated_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseReturn.source23_eq",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseReturn.closed23",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "CanonicalGrade.lean",
+      "sha256": "557558c29964eb3d1ef378bb201ff107e1961745d2714a3769d94c5f8bdbc605",
+      "audits": [
+        {
+          "theorem": "Collatz.CanonicalGrade.expand_eq",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.CanonicalGrade.canonical",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.CanonicalGrade.upper_insertion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.CanonicalGrade.all_seed_charges",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "PhaseFamilies.lean",
+      "sha256": "4e9f7a6ca43c8d2d2c6199afd29f945715a9265aa536767d480b6b33c7152c8f",
+      "audits": [
+        {
+          "theorem": "Collatz.PhaseFamilies.all_bases",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseFamilies.closed_families",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseFamilies.prior26",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseFamilies.upper_families",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseFamilies.canonical_families",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "Collatz.PhaseFamilies.first_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "base_sha": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+  "controls_sha256": "92bcaecc779a4aba83b593969f37d5a032c0d46127af8fff448621ab378300bc",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "lean_exit": 0,
+  "lean_flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "lean_log_sha256": "7eb726097461e5749a0ae046567ee5fdfcf8d5ea1aa5f3f226cd06e042623af1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_exits": [
+    0,
+    0
+  ],
+  "python_modes": [
+    [
+      "-B"
+    ],
+    [
+      "-O",
+      "-B"
+    ]
+  ],
+  "python_outputs_identical": true,
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "scope": "Fresh single project module, existing Mathlib and package oleans. Python checks are finite and the external integral-points theorem is a written input.",
+  "selected_axiom_inventories": 4,
+  "source_sha256": {
+    "COMPANION.md": "56a1620c323d8988997f87512fbf56c7326489975dc8790bbb88d6ce7a67dc43",
+    "PrefixInterpolation.lean": "4408e528e717f853d1c190a4b158cdc1140ce9bad5e7e551e9434215167193b8",
+    "README.md": "d78e56fdbe4574b786815e8aeb7865423cf1856e03f8f457cfe14e330f0d42b6",
+    "check.py": "fb3309a033754dd57331fcf6802832f6403a6d2f4ca346c8252e905c796e6782"
+  },
+  "status": "PASS",
+  "verified_only_standard_printed_axioms": true
+}

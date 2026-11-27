@@ -1,0 +1,65 @@
+{
+  "native": {
+    "ordinary_unit_starts": 112299,
+    "exact_profiles": 111393,
+    "largest_class": 4,
+    "additional_members": 906,
+    "paired_translations": 56,
+    "sample_distinct_targets": [
+      18,
+      354653,
+      354659,
+      354665,
+      [
+        7,
+        2959,
+        8,
+        26630
+      ]
+    ]
+  },
+  "stopping": {
+    "octave": [
+      32768,
+      65536
+    ],
+    "literal_stop_threshold": 64,
+    "sources": 10922,
+    "scales": {
+      "128": {
+        "interval_profile_classes": 9257,
+        "strict_partners_each_side": 1,
+        "remaining_sources": 425,
+        "erased": 10497
+      },
+      "512": {
+        "interval_profile_classes": 8248,
+        "strict_partners_each_side": 1,
+        "remaining_sources": 1089,
+        "erased": 9833
+      },
+      "2048": {
+        "interval_profile_classes": 7808,
+        "strict_partners_each_side": 1,
+        "remaining_sources": 1478,
+        "erased": 9444
+      },
+      "8192": {
+        "interval_profile_classes": 7698,
+        "strict_partners_each_side": 1,
+        "remaining_sources": 1589,
+        "erased": 9333
+      },
+      "32768": {
+        "interval_profile_classes": 7673,
+        "strict_partners_each_side": 2,
+        "remaining_sources": 621,
+        "erased": 10301
+      }
+    }
+  },
+  "anchors": {
+    "cycle_anchors": 101,
+    "two_arm_contractions": 2121
+  }
+}

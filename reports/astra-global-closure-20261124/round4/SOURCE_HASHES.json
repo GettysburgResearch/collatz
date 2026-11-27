@@ -1,0 +1,114 @@
+{
+  "scope": "Exact new scientific sources and written reviews; generated execution receipts carry their own hashes.",
+  "baseline": "8edc24b576e7c7da56f99d882ce6fd1e014ee730",
+  "files": [
+    {
+      "path": "research/astra-global-closure-20261124/round4/README.md",
+      "sha256": "31ac8213c0cfe26925af39f72201d853ea5007ff383a4250e8df3f855929f7e5"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/SOURCES.json",
+      "sha256": "ee93520668fca08365158e63e38e323f088bdf5c5be0a3fbcde29a8f94c44376"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/arithmetic/CYCLOTOMIC_DEGREE.md",
+      "sha256": "c9926f783775101f2765ccbe8bf0a8d3e422d92cf9287331a2aca4f522c103e4"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/arithmetic/PaleyResultant.lean",
+      "sha256": "86a38cca6fc6ce7061e224e15c83c419b7aa844e96afe2667a12481a36d4cc8b"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/arithmetic/README.md",
+      "sha256": "f0d6a529de3e549bcb21ab6a0484f8ba39524fc07d6986e7e369a94b990dc241"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/arithmetic/controls.py",
+      "sha256": "c38de09925fd649f260fc2ffde805465c6f32db11d7cba1240531937c65f6648"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/check_controls.py",
+      "sha256": "fa6f176ef28d550dc29a2bb2fdf6b3986e148048cee5a5763db53541c9ad2cd0"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/check_lean.py",
+      "sha256": "81b528784a7573bd497b71e97ef586d8b8700465ca468b3856692de432020c0d"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/controller/KilledClock.lean",
+      "sha256": "15a0bf212393a067b974e4f2d8c25b2fe5ca7601add74e11b0da43cf77f45254"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/head/PhaseCut.lean",
+      "sha256": "5aa29b27630b4f64044774685e1b78a0944b0b791cecc48f7a8e4a14e30147af"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/head/README.md",
+      "sha256": "d442ceb155a590df54cb2d790c4159e0394fa5c5b6434467efdbc7a624c8f85a"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/head/controls.py",
+      "sha256": "4b7f82e5ce151fe1bc4f7d1b1c6a4e967113fd420a4e79f6f6144eef02a8669e"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/ordinary/DyadicCutoff.lean",
+      "sha256": "e124f4a3175be41a0ce3c90518399be8e15198928ec0609d2663678d1da207e8"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/ordinary/README.md",
+      "sha256": "dc57012b30256c4439e8dcd8c6a73f4f6a9c331f5a7a8ea6b1cacaaf9cad5dc7"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/ordinary/TruncatedDivisors.lean",
+      "sha256": "5c54cf54e9e11c0cd359991d7bf669b25fd43e889a28a713c19b38ad61f04d60"
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round4/ordinary/check.py",
+      "sha256": "76ad163fd2b5b1dae838c6769985583aee135fd3f4472854acac5c0465515bf4"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/LATEST_INTAKE.md",
+      "sha256": "ca7b29db37d45558c8b4ac4f3b42545bc588d1084ffbd2c1e8a0a4d1576a82f3"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/ROOT_REVIEW.md",
+      "sha256": "4365ee8ecfd57f232513a9b8494494e02970bdecd6202055a30f6f4119eed5ea"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/arithmetic/EXECUTION.md",
+      "sha256": "8c05783bb07a1a24ca3d9e43fee85edfd5b41ed79712cd4a1224619804ac2326"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/arithmetic/LATEST_INTAKE.md",
+      "sha256": "7ecf1c36fb1ebbc8ab3797ea7de89a970c18cbeb51daf06ae02dfa858206ef12"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/arithmetic/REVIEW_ORDINARY.md",
+      "sha256": "fc0feca8479739fd6f56ea63a4cb6b79ed04e099d889db9821dfe87e20c494ac"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/head/LATEST_INTAKE.md",
+      "sha256": "ec6eaf4408bffceb1a6e342c693ed4c632e5eef1325949f9fae49cc3a215b083"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/head/REVIEW_ARITHMETIC.md",
+      "sha256": "0c26179c291d959e2e211b35583975835b718899b528e3d9dcd1077173295e4b"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/ordinary/EXECUTION.md",
+      "sha256": "76a9ce0ded044e041329a25d66fe51ac05834da1b6f8233e4417c73ed4102c19"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/ordinary/LATEST_INTAKE.md",
+      "sha256": "3da1eb587db9de57a34fb2bf6efddf2c89b10d0666df1d63bc11d3a61e212585"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/ordinary/REVIEW_HEAD.md",
+      "sha256": "7f6362201bbc7ce755f08ba16570bd04cf0c1c7fb1e1feb846b34aec1469027c"
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round4/head/check_cyclotomic_example.py",
+      "sha256": "2af68b42cb225daefff578e435976dad25cd629349019e482754a64a78c89343"
+    }
+  ]
+}

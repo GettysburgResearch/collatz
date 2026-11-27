@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/RepeatObstruction.lean",
+  "sha256": "d488f846d31351142dab114a8e4016f570cbbcb287526661c4981885aeaf79a2",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/RepeatObstruction.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.FixedSourceRepeat.eq_zero_of_multiple_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepeat.shared_lp_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepeat.shared_lp_eq_of_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepeat.clock_ge' depends on axioms: [propext, Quot.sound]\n'Collatz.FixedSourceRepeat.shared_gap_full_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedSourceRepeat.shared_gap_eq_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 4.157
+}

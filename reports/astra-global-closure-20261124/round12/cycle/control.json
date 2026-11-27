@@ -1,0 +1,400 @@
+{
+  "sympy": "1.14.0",
+  "length_five_words": 81,
+  "gcd_histogram": {
+    "1": 74,
+    "13": 7
+  },
+  "factor_controls": {
+    "full_divisor_unphysical": {
+      "p": 5,
+      "h": 8,
+      "D": 13,
+      "u": 6,
+      "full_gcd": 13,
+      "denominator": 1,
+      "factors": [
+        {
+          "degree": 4,
+          "t": 1,
+          "compressed_degree": 4,
+          "multiplicity": 1,
+          "gcd": 13,
+          "witnesses": [
+            {
+              "relation": [
+                1,
+                0,
+                -5
+              ],
+              "abs_resultant": 8216
+            },
+            {
+              "relation": [
+                1,
+                -1,
+                3
+              ],
+              "abs_resultant": 9230
+            }
+          ]
+        }
+      ]
+    },
+    "dilation": {
+      "p": 10,
+      "h": 17,
+      "D": 72023,
+      "u": 6753,
+      "full_gcd": 7,
+      "denominator": 10289,
+      "factors": [
+        {
+          "degree": 4,
+          "t": 1,
+          "compressed_degree": 4,
+          "multiplicity": 1,
+          "gcd": 1,
+          "cyclotomic_order": 5
+        },
+        {
+          "degree": 5,
+          "t": 5,
+          "compressed_degree": 1,
+          "multiplicity": 1,
+          "gcd": 7,
+          "witnesses": [
+            {
+              "relation": [
+                1,
+                0,
+                -2
+              ],
+              "abs_resultant": 7
+            },
+            {
+              "relation": [
+                6,
+                -5,
+                5
+              ],
+              "abs_resultant": 7840
+            }
+          ]
+        }
+      ]
+    },
+    "repeated_cyclotomic": {
+      "p": 5,
+      "h": 8,
+      "D": 13,
+      "u": 6,
+      "full_gcd": 1,
+      "denominator": 13,
+      "factors": [
+        {
+          "degree": 1,
+          "t": 1,
+          "compressed_degree": 1,
+          "multiplicity": 2,
+          "gcd": 1,
+          "cyclotomic_order": 2
+        },
+        {
+          "degree": 2,
+          "t": 2,
+          "compressed_degree": 1,
+          "multiplicity": 1,
+          "gcd": 1,
+          "cyclotomic_order": 4
+        }
+      ]
+    },
+    "repeated_prime_divisor": {
+      "p": 19,
+      "h": 33,
+      "D": 7427673125,
+      "u": 183399338,
+      "full_gcd": 7675,
+      "denominator": 967775,
+      "factors": [
+        {
+          "degree": 1,
+          "t": 1,
+          "compressed_degree": 1,
+          "multiplicity": 1,
+          "gcd": 1,
+          "cyclotomic_order": 2
+        },
+        {
+          "degree": 17,
+          "t": 1,
+          "compressed_degree": 17,
+          "multiplicity": 1,
+          "gcd": 7675,
+          "witnesses": [
+            {
+              "relation": [
+                2,
+                -1,
+                -5
+              ],
+              "abs_resultant": 30742585198000
+            }
+          ]
+        }
+      ]
+    },
+    "wide_physical": {
+      "p": 8,
+      "h": 13,
+      "D": 1631,
+      "u": 122,
+      "full_gcd": 1,
+      "denominator": 1631,
+      "factors": [
+        {
+          "degree": 1,
+          "t": 1,
+          "compressed_degree": 1,
+          "multiplicity": 1,
+          "gcd": 1,
+          "cyclotomic_order": 2
+        },
+        {
+          "degree": 2,
+          "t": 2,
+          "compressed_degree": 1,
+          "multiplicity": 1,
+          "gcd": 1,
+          "cyclotomic_order": 4
+        },
+        {
+          "degree": 4,
+          "t": 1,
+          "compressed_degree": 4,
+          "multiplicity": 1,
+          "gcd": 1,
+          "witnesses": [
+            {
+              "relation": [
+                1,
+                -1,
+                5
+              ],
+              "abs_resultant": 7078
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rational_basin_controls": [
+    {
+      "denominator": 1631,
+      "p": 8,
+      "h": 13,
+      "odd_numerators": [
+        10865,
+        17113,
+        26485,
+        40543,
+        30815,
+        23519,
+        18047,
+        13943
+      ],
+      "S": 10865,
+      "Q": 7787,
+      "least_triple_in_component": 23361,
+      "cycle_min_for_Q": 6625,
+      "cycle_min_for_one": 4913,
+      "wide_ratio": "40543/10865",
+      "bands": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "hamming_by_rank_shift": [
+        0,
+        6,
+        4,
+        2,
+        8,
+        2,
+        4,
+        6
+      ],
+      "smaller_odd_starts": 5432,
+      "smaller_triples": 3893,
+      "closed_nodes": 17076,
+      "largest_numerator_checked": 27213883,
+      "cycle_periods_by_min": {
+        "35": 48,
+        "1165": 2,
+        "1631": 1,
+        "2977": 24,
+        "3121": 24,
+        "3385": 24,
+        "3841": 16,
+        "4273": 16,
+        "4529": 16,
+        "4769": 16,
+        "4913": 24,
+        "5089": 16,
+        "5377": 16,
+        "6149": 16,
+        "6305": 8,
+        "6433": 8,
+        "6533": 16,
+        "6625": 8,
+        "6689": 8,
+        "6865": 16,
+        "6881": 8,
+        "6913": 8,
+        "7105": 16,
+        "7169": 8,
+        "7201": 8,
+        "7265": 8,
+        "7345": 8,
+        "7393": 8,
+        "7489": 16,
+        "7553": 8,
+        "7601": 8,
+        "7633": 16,
+        "7681": 8,
+        "7777": 8,
+        "7985": 8,
+        "7993": 8,
+        "8065": 8,
+        "8113": 8,
+        "8129": 8,
+        "8225": 8,
+        "8249": 8,
+        "8417": 8,
+        "8497": 8,
+        "8545": 8,
+        "8561": 8,
+        "8633": 8,
+        "8641": 8,
+        "8705": 8,
+        "8761": 8,
+        "8801": 8,
+        "8833": 8,
+        "8965": 8,
+        "9073": 8,
+        "9089": 8,
+        "9137": 8,
+        "9145": 8,
+        "9209": 8,
+        "9221": 8,
+        "9265": 8,
+        "9409": 8,
+        "9425": 8,
+        "9521": 8,
+        "9569": 8,
+        "9605": 8,
+        "9665": 8,
+        "9721": 8,
+        "9733": 8,
+        "9785": 8,
+        "9841": 8,
+        "9857": 8,
+        "9913": 8,
+        "9937": 8,
+        "10073": 8,
+        "10097": 8,
+        "10117": 8,
+        "10169": 8,
+        "10181": 8,
+        "10289": 8,
+        "10433": 8,
+        "10489": 8,
+        "10561": 8,
+        "10585": 8,
+        "10693": 8,
+        "10705": 8,
+        "10745": 8,
+        "10757": 8,
+        "10865": 8,
+        "10885": 8,
+        "10937": 8,
+        "10961": 8,
+        "10993": 8,
+        "11045": 8,
+        "11141": 8,
+        "11353": 8,
+        "11461": 8,
+        "11557": 8,
+        "11585": 8,
+        "11609": 8,
+        "11641": 8,
+        "11717": 8,
+        "11729": 8,
+        "11857": 8,
+        "11909": 8,
+        "12017": 8,
+        "12325": 8,
+        "12505": 8,
+        "12581": 8,
+        "12613": 8,
+        "12665": 8,
+        "12881": 8,
+        "13477": 8,
+        "13637": 8
+      }
+    },
+    {
+      "denominator": 13,
+      "p": 5,
+      "h": 8,
+      "odd_numerators": [
+        283,
+        431,
+        653,
+        493,
+        373
+      ],
+      "S": 283,
+      "Q": 193,
+      "least_triple_in_component": 579,
+      "cycle_min_for_Q": 1,
+      "cycle_min_for_one": 1,
+      "wide_ratio": "653/283",
+      "bands": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hamming_by_rank_shift": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "smaller_odd_starts": 141,
+      "smaller_triples": 96,
+      "closed_nodes": 409,
+      "largest_numerator_checked": 40001,
+      "cycle_periods_by_min": {
+        "1": 1,
+        "13": 1,
+        "131": 15,
+        "211": 5,
+        "227": 5,
+        "251": 5,
+        "259": 5,
+        "283": 5,
+        "287": 5
+      }
+    }
+  ]
+}

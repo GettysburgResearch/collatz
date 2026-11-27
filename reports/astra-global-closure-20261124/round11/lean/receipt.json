@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "scope": "Ten project modules, including four unchanged dependencies, rebuilt from visible source. The source-qualified S-unit finiteness, complete analytic cycle criterion, trace recurrence and external floor coverage remain written mathematics. The final universal consumer has an explicit OPEN premise.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "runner_sha256": "7ee4977a3224963f3da12c3d513ad891ff6b641c5d4dce10c8549215266db5b9",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "source": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "dependency": true,
+      "source_sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/SourceDeletion.log",
+      "log_sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "axiom_reports": [
+        "'Collatz.SourceDeletion.lift' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.swapped_paths' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.swapped_row' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.delete_digit' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.lower_representative' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.all_below' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.all_below_cutoff' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SourceDeletion.seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "lift",
+        "swapped_paths",
+        "swapped_row",
+        "delete_digit",
+        "lower_representative",
+        "all_below",
+        "all_below_cutoff",
+        "seven_mod_eight"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "dependency": true,
+      "source_sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/MinimumFailure.log",
+      "log_sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "axiom_reports": [
+        "'Collatz.MinimumFailure.good_one' does not depend on any axioms",
+        "'Collatz.MinimumFailure.good_step' does not depend on any axioms",
+        "'Collatz.MinimumFailure.good_run' does not depend on any axioms",
+        "'Collatz.MinimumFailure.label_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.label_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.label_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.exists_least_discordance' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.good_below' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.good_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.upper_bad' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.smaller_triples_good' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.smaller_multiples_good' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.counterexample_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.exclude_seven_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.MinimumFailure.counterexample_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "good_one",
+        "good_step",
+        "good_run",
+        "label_step",
+        "label_one",
+        "label_eq_one",
+        "exists_least_discordance",
+        "good_below",
+        "good_cutoff",
+        "upper_bad",
+        "smaller_triples_good",
+        "smaller_multiples_good",
+        "counterexample_bound",
+        "exclude_seven_mod_eight",
+        "counterexample_reduction"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "dependency": true,
+      "source_sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/SmoothCore.log",
+      "log_sha256": "7123e91ba50de2e77827b62871aa4aaf809a277a5d8874d0971cf6eabc95e88f",
+      "axiom_reports": [
+        "'Collatz.SmoothCore.exists_first_tower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SmoothCore.base_good' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SmoothCore.base_is_unit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SmoothCore.strict_base_of_clock' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SmoothCore.smooth_reservoir' depends on axioms: [propext]",
+        "'Collatz.SmoothCore.odd_run_end' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.same_three' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.higher_three' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.same_four' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.lower_four' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.forbid_small_base_exit' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.forbid_two_power_return' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.SmoothCore.next_base_good' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.SmoothCore.universal_iff_frontier_merger' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "exists_first_tower",
+        "base_good",
+        "base_is_unit",
+        "strict_base_of_clock",
+        "smooth_reservoir",
+        "odd_run_end",
+        "same_three",
+        "higher_three",
+        "same_four",
+        "lower_four",
+        "forbid_small_base_exit",
+        "forbid_two_power_return",
+        "next_base_good",
+        "universal_iff_frontier_merger"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "dependency": true,
+      "source_sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/TowerClock.log",
+      "log_sha256": "d2e31a99ee1922888963c7a7784046f19a3759d515e12d1d98eaa06b7876cf11",
+      "axiom_reports": [
+        "'Collatz.TowerClock.word_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.carry_bound' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TowerClock.lower_power_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.short_meeting_rigid' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.short_cone_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.all_odd_weight' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.all_odd_no_short_cone' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.all_odd_no_short_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.fifteen_no_affine_return' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TowerClock.two_run_drop' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.TowerClock.delayed_linear_return' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "word_iff",
+        "carry_bound",
+        "lower_power_meeting",
+        "short_meeting_rigid",
+        "short_cone_iff",
+        "all_odd_weight",
+        "all_odd_no_short_cone",
+        "all_odd_no_short_smooth",
+        "fifteen_no_affine_return",
+        "two_run_drop",
+        "delayed_linear_return"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "dependency": false,
+      "source_sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/AnchorDescent.log",
+      "log_sha256": "d010c193c7af4fec76126479188dc6ae55afabc1063e80adf89f6fd4cc7f1690",
+      "axiom_reports": [
+        "'Collatz.AnchorDescent.positive_meeting' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.AnchorDescent.grade_gain' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.AnchorDescent.all_exponents' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.AnchorDescent.exclude_first_tower' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.AnchorDescent.anchor_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorDescent.grade_gain_native' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorDescent.positive_anchor_native' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorDescent.positive_anchor_scale' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorDescent.negative_meeting' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.AnchorDescent.negative_anchor_scale' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorDescent.anchor_control' depends on axioms: [propext]"
+      ],
+      "expected_inventories": [
+        "positive_meeting",
+        "grade_gain",
+        "all_exponents",
+        "exclude_first_tower",
+        "anchor_contraction",
+        "grade_gain_native",
+        "positive_anchor_native",
+        "positive_anchor_scale",
+        "negative_meeting",
+        "negative_anchor_scale",
+        "anchor_control"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "dependency": false,
+      "source_sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/AnchorControl.log",
+      "log_sha256": "914226005774b65a5f767f4df2be90d7f89770f4e68dc76ceb63104d0b7de8cf",
+      "axiom_reports": [
+        "'Collatz.AnchorControl.short_miss' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorControl.no_positive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorControl.no_negative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.AnchorControl.control_good' does not depend on any axioms"
+      ],
+      "expected_inventories": [
+        "short_miss",
+        "no_positive",
+        "no_negative",
+        "control_good"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "dependency": false,
+      "source_sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/TraceCensus.log",
+      "log_sha256": "48acecfad8bc1658766b57ebd4549325dff0d47d8045c34b189b45703693d8d5",
+      "axiom_reports": [
+        "'Collatz.TraceCensus.image_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TraceCensus.shifted_census' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TraceCensus.log_threshold_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TraceCensus.record_height_bits' depends on axioms: [propext]",
+        "'Collatz.TraceCensus.residual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TraceCensus.fifth_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "image_envelope",
+        "shifted_census",
+        "log_threshold_arithmetic",
+        "record_height_bits",
+        "residual_bounds",
+        "fifth_cutoff"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "dependency": false,
+      "source_sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/LocalDenominator.log",
+      "log_sha256": "8ef2e1a45546f28cabb5fc58c524525cf8c94cb744205b5015da4b9c776539e7",
+      "axiom_reports": [
+        "'LocalDenominator.seam_coprime' depends on axioms: [propext, Quot.sound]",
+        "'LocalDenominator.recover_from_two_differences' depends on axioms: [propext, Quot.sound]",
+        "'LocalDenominator.unroll' depends on axioms: [propext, Quot.sound]",
+        "'LocalDenominator.small_edge' depends on axioms: [propext, Quot.sound]",
+        "'LocalDenominator.lap_rigid' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'LocalDenominator.overlap' depends on axioms: [propext, Quot.sound]",
+        "'LocalDenominator.decode_lap' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "seam_coprime",
+        "recover_from_two_differences",
+        "unroll",
+        "small_edge",
+        "lap_rigid",
+        "overlap",
+        "decode_lap"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "dependency": false,
+      "source_sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/TemplateChain.log",
+      "log_sha256": "39be1c19ec56cebd6ebb28d97234fd6a054fe155412adb27cb57df1a90e962b8",
+      "axiom_reports": [
+        "'Collatz.TemplateChain.physical_center' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TemplateChain.centered_power' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TemplateChain.chain_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.TemplateChain.endpoint_equation' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "physical_center",
+        "centered_power",
+        "chain_identity",
+        "endpoint_equation"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "dependency": false,
+      "source_sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-global-closure-20261124/round11/lean/FinalProposal.log",
+      "log_sha256": "85dacf0e85ecc0c9d19fcb74bc4e3c0c73d96bfae2d26fc775fe6debd8f867c3",
+      "axiom_reports": [
+        "'Collatz.RoundEleven.convergent_control_outside_anchors' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.RoundEleven.all_exponents_have_descent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.RoundEleven.final_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "expected_inventories": [
+        "convergent_control_outside_anchors",
+        "all_exponents_have_descent",
+        "final_proposal"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "module_count": 10,
+  "new_module_count": 6,
+  "selected_axiom_report_count": 83,
+  "new_selected_axiom_report_count": 35,
+  "all_sources_unchanged": true
+}

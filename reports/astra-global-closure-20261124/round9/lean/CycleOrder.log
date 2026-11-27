@@ -1,0 +1,13 @@
+'CriticalCycle.relaxed_polynomial_vanishes' does not depend on any axioms
+'CriticalCycle.quarter_order' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.no_wrap_overlap' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.one_cut_rotation' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.rotation_primitive' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.clock_total' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.no_unit_gap' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.six_twos_exceed' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.first_detour_shadow' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.continuing_detour_shadow' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.lift' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.recentered_meeting' depends on axioms: [propext, Quot.sound]
+'CriticalCycle.small_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]

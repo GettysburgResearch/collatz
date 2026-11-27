@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/CarryBudget.lean",
+  "sha256": "4928cc6a7f84b31baa876599c528d57632aef0728ec3c5799af66da24174f8cd",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/CarryBudget.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.StationaryCarryRigidity.carry_telescope' depends on axioms: [propext, Quot.sound]\n'Collatz.StationaryCarryRigidity.carry_budget' depends on axioms: [propext, Quot.sound]\n'Collatz.StationaryCarryRigidity.carry_word_determined' depends on axioms: [propext, Quot.sound]\n'Collatz.StationaryCarryRigidity.no_carry_birth' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 346.75
+}

@@ -1,0 +1,69 @@
+{
+  "baseline_commit": "f192322f70073ba44bc9f98785a51c27a4da9ee5",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies": [
+    {
+      "local": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round13/critical/CriticalRecordRigidity.lean",
+      "sha256": "728740b9cfa0f51bbf759d6c7084ad7ab8d97c885866e03d9a772ce26ee9eb0e"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0"
+    }
+  ],
+  "reviewed_pull_request_heads": {
+    "192": "0e313e2cd42cfce1275dbef6129ac13e9a49abd5",
+    "193": "4cc06e7d8fdec923eed73a26b1e9d680c9f701d1",
+    "197": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+    "206": "3729d84e00cf8794dab43fe2f500213b2b643f83"
+  },
+  "scope": "Dependency hashes pin imports for the new kernel build. Pull-request heads pin this pass\u2019s intake, not verification of every statement at those heads.",
+  "retained_conditional_consumers": [
+    "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+    "research/astra-global-closure-20261124/round13/critical/CriticalRecordRigidity.lean"
+  ],
+  "late_reviewed_pull_request_heads": {
+    "192": "1cb3e8496a6bd6092d3d0dc1dd043c3bcd662aca",
+    "193": "23b7d326a43feb21a827a9024fc24eb10d944338",
+    "200": "e14f3aed2037de90cd571ea8b7c1314222469920",
+    "201": "3eb251fae9082fef33c047079a511d1c3f4c5969"
+  },
+  "late_review_scope": "Exact paths, claim boundaries and reviewer roles are recorded in reports/astra-unconventional-20261126/LATE_INTAKE.md; no whole-PR verification is inferred."
+}

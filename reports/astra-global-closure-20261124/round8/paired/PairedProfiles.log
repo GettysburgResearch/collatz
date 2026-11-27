@@ -1,0 +1,8 @@
+'Collatz.PairedProfiles.lift' depends on axioms: [propext]
+'Collatz.PairedProfiles.trace_add' depends on axioms: [propext]
+'Collatz.PairedProfiles.anchor_arm' depends on axioms: [propext]
+'Collatz.PairedProfiles.paired_anchor' depends on axioms: [propext]
+'Collatz.PairedProfiles.anchor_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedProfiles.translate_profile' depends on axioms: [propext]
+'Collatz.PairedProfiles.profile_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedProfiles.location' depends on axioms: [propext, Classical.choice, Quot.sound]

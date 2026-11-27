@@ -1,0 +1,50 @@
+{
+  "exact_routes": [
+    {
+      "appended_six_clock_words": null,
+      "common_clock": 994,
+      "common_odd_count": 8,
+      "distinct_sources_over_all_roots": 180,
+      "full_physical_paths_replayed": 15,
+      "ordinary_roots": [
+        1,
+        5,
+        7,
+        13,
+        205
+      ],
+      "padding_labels": 486,
+      "precision": 2
+    },
+    {
+      "appended_six_clock_words": 1944,
+      "common_clock": 4407,
+      "common_odd_count": 12,
+      "distinct_sources_over_all_roots": 17496,
+      "full_physical_paths_replayed": 9,
+      "ordinary_roots": [
+        1,
+        7,
+        205
+      ],
+      "padding_labels": 1458,
+      "precision": 3
+    }
+  ],
+  "natural_depth": {
+    "complete_physical_pair_replays": 324,
+    "four_block_carry_words": 26244,
+    "four_block_unit_cells": 13122,
+    "multiplicity_at_natural_depth_plus_one": 2,
+    "padding_labels": 162,
+    "ternary_unit_parent_classes": 162,
+    "two_block_clock": 173
+  },
+  "renewal_grid": {
+    "nonempty_complete_rows": 36,
+    "odd_binary_cylinders": 16384,
+    "physical_horizon": 14,
+    "tested_renewal_equations": 14,
+    "total_positive_mark_visits": 1169
+  }
+}

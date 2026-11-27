@@ -1,0 +1,6 @@
+'GradedBasin.late_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradedBasin.forward_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradedBasin.odd_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradedBasin.every_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradedBasin.shortcut_observations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradedBasin.joint_source_and_grades' depends on axioms: [propext, Classical.choice, Quot.sound]

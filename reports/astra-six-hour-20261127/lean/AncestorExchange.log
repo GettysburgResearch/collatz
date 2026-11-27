@@ -1,0 +1,3 @@
+'Collatz.AncestorExchange.triple_stack' depends on axioms: [propext, Quot.sound]
+'Collatz.AncestorExchange.odd_stack' depends on axioms: [propext, Quot.sound]
+'Collatz.AncestorExchange.physical_stack' depends on axioms: [propext, Classical.choice, Quot.sound]

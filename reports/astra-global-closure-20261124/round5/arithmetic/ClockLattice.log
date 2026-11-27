@@ -1,0 +1,8 @@
+'Collatz.ClockLattice.local_lattice' depends on axioms: [propext, Quot.sound]
+'Collatz.ClockLattice.projection_determinant' depends on axioms: [propext, Quot.sound]
+'Collatz.ClockLattice.independent_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockLattice.gram_area' depends on axioms: [propext, Quot.sound]
+'Collatz.ClockLattice.factor_mod_clock' depends on axioms: [propext]
+'Collatz.ClockLattice.apery_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockLattice.reflected_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockLattice.digit_step_cap' depends on axioms: [propext, Classical.choice, Quot.sound]

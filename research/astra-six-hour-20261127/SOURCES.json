@@ -1,0 +1,83 @@
+{
+  "baseline_commit": "51d97cbe17054415acaf95e422801a3532545033",
+  "compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies": [
+    {
+      "local": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round13/critical/CriticalRecordRigidity.lean",
+      "sha256": "728740b9cfa0f51bbf759d6c7084ad7ab8d97c885866e03d9a772ce26ee9eb0e"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+    },
+    {
+      "local": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0"
+    },
+    {
+      "local": "research/astra-unconventional-20261126/renormalization/AscentMerger.lean",
+      "sha256": "01bea0681435d4339c34515cd36ef3f7a3f99eead1291312d6d04b0154e2d40c"
+    },
+    {
+      "local": "research/astra-unconventional-20261126/renormalization/PhysicalWindow.lean",
+      "sha256": "93c727c4fdb35eaba437ce839ef5ddfa6677b24951edc7f8267e14df6f3e47e7"
+    },
+    {
+      "local": "research/astra-unconventional-20261126/renormalization/RankTwoControl.lean",
+      "sha256": "bd55b8a7a64c8c43e1d706baf686481cfa32ceba2e5bf4b431974eaee0742d43"
+    },
+    {
+      "local": "research/astra-unconventional-20261126/renormalization/ShadowBarrier.lean",
+      "sha256": "558c43120f85133001807aed9b000955d7180e4e20a455897943a2798cd8a41b"
+    },
+    {
+      "local": "research/astra-unconventional-20261126/renormalization/SignedBudget.lean",
+      "sha256": "5f659872df4a3e915d272bdd9d55a24abab55cc3a6d64c8d1953fe7a0c0c1b65"
+    }
+  ],
+  "reviewed_pull_request_heads": {
+    "192": "ed7a6fe30b8602407f77855ceb74ce0489ce9c10",
+    "193": "25f5462e2c43feea65760884f7ea8f53576fbc18",
+    "197": "1f0f496fbea37792439feada6106eaaff596bcd1",
+    "200": "ad70a3b831867cb8a74d402a2a1abdc419f5a09b",
+    "201": "21bed7ac2b1b1bb4baf0f6cabd53f8b9dd11b58a"
+  },
+  "scope": "Source hashes pin the entire project import closure. PR heads pin selected intake, not verification of every statement at those heads. The source and claim ledger identifies the imported boundaries.",
+  "retained_conditional_consumers": [
+    "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+    "research/astra-global-closure-20261124/round13/critical/CriticalRecordRigidity.lean"
+  ]
+}

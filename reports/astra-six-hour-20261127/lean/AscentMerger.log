@@ -1,0 +1,4 @@
+'Collatz.AscentMerger.ramp' depends on axioms: [propext, Quot.sound]
+'Collatz.AscentMerger.other_predecessor' depends on axioms: [propext, Quot.sound]
+'Collatz.AscentMerger.lower_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.AscentMerger.sharp_word' depends on axioms: [propext, Classical.choice, Quot.sound]

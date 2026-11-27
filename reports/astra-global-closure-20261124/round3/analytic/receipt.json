@@ -1,0 +1,27 @@
+{
+  "base": "07aa5124f7ca482b6665d61355fac0af5f6e55b2",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "research/astra-global-closure-20261124/round3/analytic/FixedWord.lean"
+  ],
+  "lean_exit": 0,
+  "controls_command": [
+    "python3",
+    "research/astra-global-closure-20261124/round3/analytic/controls.py"
+  ],
+  "controls_exit": 0,
+  "lean_printed_axiom_roots": 7,
+  "scope": "Finite actual carry, gcd, valuation-product divisibility, and floor bounds. Word assembly, divisor asymptotics and fixed-target applications are written.",
+  "sha256": {
+    "research/astra-global-closure-20261124/round3/analytic/FixedWord.lean": "a6505a7ba28c810e64f461bf36cee61a92542eca0a649918685a79ed63aced39",
+    "research/astra-global-closure-20261124/round3/analytic/README.md": "5353daa4bb3ba75ce34d510f76c366866a35df05a0561bcb28abdf9943d3fbdf",
+    "research/astra-global-closure-20261124/round3/analytic/controls.py": "0dd8868b0de1e0482dc2242f630717082e35a2c3cee43f7a912cb70623c473da",
+    "reports/astra-global-closure-20261124/round3/analytic/lean.txt": "1441805bc3cd9e7a0dd8c77458c89f4a274d896ab6c9e00803ec06e5fd4d075a",
+    "reports/astra-global-closure-20261124/round3/analytic/controls.json": "c8cec575aece5603a7fc2c35d6dd5e49dbe51fb3d00a06626abaa5d8033676f8",
+    "research/astra-global-closure-20261124/round3/controller/DivisorCount.lean": "af766e9243cc79185bf893409ed3acf494725a36bfa86a428030a78b482a4f20"
+  }
+}

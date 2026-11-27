@@ -1,0 +1,331 @@
+{
+  "scope": "Frozen round-nine science, source identities, intake and executed reviews. Excludes itself and later publication-only receipts to avoid self-reference.",
+  "baseline": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+  "files": [
+    {
+      "path": "reports/astra-global-closure-20261124/round9/EOF_NORMALIZATION.json",
+      "sha256": "3791a54dde76a220a2abff94605f5d85fcf845adfebc35f0d8e4d25070745c2f",
+      "bytes": 1903
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/INTAKE.md",
+      "sha256": "0168b91e159b694f1ee0de4031d4a20eabc498c5882adf62e696def6b1bfa003",
+      "bytes": 5100
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/PR_SNAPSHOT.json",
+      "sha256": "08db5c0dbacc75cf42bd8ae7c02a0ccd6139ac4fd112fa1312a7bfb044b8ed7b",
+      "bytes": 57412
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/ROOT_REVIEW.md",
+      "sha256": "49a53c3aff987bdc125b1f64ba0d391f4d2b60808bb070a8d7efa8fd569829f1",
+      "bytes": 7368
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/KERNEL_SCOPE_REVIEW.md",
+      "sha256": "c4d06718329815f9c204e21ea55e43de2d7cbb31e2f158dd9a0322dccacb293c",
+      "bytes": 3862
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/LATE_INTAKE.md",
+      "sha256": "eb85dc9fa03228738bf7b03be86b626b16a37a3ba1e3b30ee6e7433d405626c2",
+      "bytes": 9276
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/LiteralCarry.log",
+      "sha256": "701f196e4324aa1c3ab22034693e5656f50f9fe251ed36679d84490c4a180877",
+      "bytes": 753
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/ROW_REVIEW.md",
+      "sha256": "80fa4bcaeda0e2dda1b2795a8b8476ee398ca2f22077c01bfca7c3291b2e626b",
+      "bytes": 3609
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/controls.json",
+      "sha256": "dfe1e6a41f5a785d5819087cd88d7220adc29b07aa8ad68077b0bb94c5686ec5",
+      "bytes": 352
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/review_rows.py",
+      "sha256": "8a3264a2c4075c22ffa1ab5627dc3921c7ca64461f4428045840459571c3dceb",
+      "bytes": 2502
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/row_review_controls.json",
+      "sha256": "cb220cc13baa71062f762923e7c304169adf2cc08b615f71de7a91371b870b0c",
+      "bytes": 132
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/README.md",
+      "sha256": "92dcaa5d45ea4dff0cc741e9fef41ab65b163f3487df0fce6d706fced5f1474f",
+      "bytes": 3339
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/agent37.stdout",
+      "sha256": "5d05dc5bbcf37e53e210620e3307910b66b6c0eb210001b71867c7389f20b2dd",
+      "bytes": 331
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/agent65.stdout",
+      "sha256": "837783e0358ba3002266bdd1913cb8810ee1d2f56a255ddf364ff2030202fcca",
+      "bytes": 1964
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/audit_receipt.json",
+      "sha256": "31ec5522c885aab505acb6462b659814e870d94eef0d277d695e1b4acf30aca9",
+      "bytes": 25844
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/barrier_helpers.log",
+      "sha256": "ece61f27c4eb5d68532ebffd2713fc2f1e235b4d6949463d86832a7bf2a1541d",
+      "bytes": 180
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/arithmetic/upstream/replay.py",
+      "sha256": "d200b3462c3703fbbc0aa127ce199d0269f03838991c242df33e76d98c9c892e",
+      "bytes": 7030
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/control-replay.json",
+      "sha256": "45b6a62ad5dd4733931e78b6839a1fe6205ed0db076d11688cc185bf59d62071",
+      "bytes": 6923
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/critical/LATE_INTAKE.md",
+      "sha256": "153ec3ff485498fe7c66cef71647016d1f2ac2935b3ba69946bd9f4018c694d6",
+      "bytes": 9618
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/critical/PROGRESSION_REVIEW.md",
+      "sha256": "e3fe29c681db63a9264dab4e94c79d222b64d0cfeddd0f0615d0bfbd6c91d397",
+      "bytes": 4195
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/critical/controls.json",
+      "sha256": "79e727a3ad2ca28b96198e7ea6fc33d39f52e95fa845a3db9938657971594a33",
+      "bytes": 1555
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/critical/depth_sieve.json",
+      "sha256": "149d6d65004764927c62a41149819d68b8601b729e1295fd8fa251e55dab6725",
+      "bytes": 2924
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/critical/lean.log",
+      "sha256": "d2fe4045277904b59f93ca8e8caa8340ff281ad67de165d34149a2829b72e57e",
+      "bytes": 966
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/BarrierEnvelope.log",
+      "sha256": "c809a67b09e6ba2b788c61affb614313516d4ac1cb0855498fb90658fff61ce4",
+      "bytes": 551
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/CycleOrder.log",
+      "sha256": "d2fe4045277904b59f93ca8e8caa8340ff281ad67de165d34149a2829b72e57e",
+      "bytes": 966
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/FinalProposal.log",
+      "sha256": "170c5f628c0e24e0bb9a3fb5797df8a41baf16d31a2b41c6630f8dba6ea2b443",
+      "bytes": 1030
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/FiniteSurvival.log",
+      "sha256": "b01318e6140bd27ed77105575481a3c616a88b7c6085156bc1776ade7f5eb264",
+      "bytes": 763
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/LiteralCarry.log",
+      "sha256": "701f196e4324aa1c3ab22034693e5656f50f9fe251ed36679d84490c4a180877",
+      "bytes": 753
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/MinimumFailure.log",
+      "sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "bytes": 1407
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/SourceDeletion.log",
+      "sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "bytes": 654
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/TernaryItinerary.log",
+      "sha256": "1f76c3bdcd771a52aa5e4d01c5d9eb8abbd0f37faee9950648cd188d36489b46",
+      "bytes": 857
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/lean/receipt.json",
+      "sha256": "bc42608151346dd07e1e85cf05de4718807cb1f43b4fabdb886da09b51af9ca7",
+      "bytes": 13408
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/BarrierEnvelope.log",
+      "sha256": "c809a67b09e6ba2b788c61affb614313516d4ac1cb0855498fb90658fff61ce4",
+      "bytes": 551
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/DEPTH_REVIEW.md",
+      "sha256": "28c2a9daa91374095eb5bdb321fee05d56319d3b11d7cfae4eba5cad0c421cc7",
+      "bytes": 3656
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/EXECUTION.md",
+      "sha256": "5dab781ee925ca32a465f0864bf738f6f50a3aeec6c0637113d8c8c011531aee",
+      "bytes": 4030
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/FiniteSurvival.log",
+      "sha256": "b01318e6140bd27ed77105575481a3c616a88b7c6085156bc1776ade7f5eb264",
+      "bytes": 763
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/LATE_INTAKE.md",
+      "sha256": "50f2868c6294613cb8ffff0b53a7387b43ac897205f30e933a305282adf9b26e",
+      "bytes": 10646
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/TernaryItinerary.log",
+      "sha256": "1f76c3bdcd771a52aa5e4d01c5d9eb8abbd0f37faee9950648cd188d36489b46",
+      "bytes": 857
+    },
+    {
+      "path": "reports/astra-global-closure-20261124/round9/rows/controls.json",
+      "sha256": "3dbe724ad6bf21d044a794bf5a31066bb3440921e12593729b42347b039ddb1a",
+      "bytes": 1127
+    },
+    {
+      "path": "research/astra-global-closure-20261124/README.md",
+      "sha256": "3528cfeeec96f1bbb2c4d5102c309507a54a930f597c42c131078cbeea056182",
+      "bytes": 14753
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/LITERATURE.md",
+      "sha256": "2168637e707ca7023fd6eb9001c5514e2cbbd8e6a3ab95b27e56b53637d5f6ca",
+      "bytes": 6969
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/README.md",
+      "sha256": "fb944e779cdf3e273bf74fece5fe3c41367e3cf4c2950d1cddf7f031fbb93dc9",
+      "bytes": 10089
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/SOURCES.json",
+      "sha256": "76b2d08d4faa5c200530445a099c3e56e7f70edc1777ec4d750140834f60e277",
+      "bytes": 26713
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/arithmetic/LiteralCarry.lean",
+      "sha256": "e54b5253738c2a79ee12c3bd60d7ea968f0c17c75c73c6ea8ca208c35fb84596",
+      "bytes": 8385
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/arithmetic/README.md",
+      "sha256": "42bd1e6a28db80dcb9324f3294d1f0626afae2189b35f9723d9b0319f7a9d317",
+      "bytes": 14821
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/arithmetic/check.py",
+      "sha256": "5d52ad643f2344f5b6f420eb4c7bdb62fb3796fe5bd0e5f93613b428405a34f9",
+      "bytes": 5115
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/check_controls.py",
+      "sha256": "9204a43c87056fa332930d62b173f7459938a1cc35433b78c06302e6766d88bd",
+      "bytes": 3062
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/check_lean.py",
+      "sha256": "42592939c3747de01ea59b7e9c9aa1e11b10dfd46093a887400a3c83b4aa4cbe",
+      "bytes": 6208
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/CycleOrder.lean",
+      "sha256": "e9c19183531b438a53aebd86c962d74809e2b47a7087931926127a165640c2b2",
+      "bytes": 7346
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/ESCAPE.md",
+      "sha256": "b7427077540ecab869ba58f7b2672f3d75b290868acfde7ffbfa728e8d77bb47",
+      "bytes": 3623
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/README.md",
+      "sha256": "c32eb428c88b06eaa766d2484c8199433b5d1b8bb665ba5d1e9a03044ea4b403",
+      "bytes": 16382
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/SHALLOW_ANCESTORS.md",
+      "sha256": "c32fb1db5f925a01a905824c92797b92848ac2b694f2561cb22213de611e282a",
+      "bytes": 3459
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/check.py",
+      "sha256": "a66ada1fea9c9196fcfe760aa3cdd3b820cf25d0f5e16dae3d9196d587e5424c",
+      "bytes": 6305
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/critical/depth_sieve.py",
+      "sha256": "9d87d0ab95fe53527cf69bc47f66291303f1d5bf2072b92bd1d6832eeeaf3d95",
+      "bytes": 3268
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/formal/FinalProposal.lean",
+      "sha256": "d5272583018fcdbd0f18986fdd10a50e2c46e2b5d46f0bdc69cc81b562ff050d",
+      "bytes": 4498
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/formal/README.md",
+      "sha256": "40d7f6bf4c80809b13f46381f7346eb43b9522c973d0bb7e46691ddef50cc771",
+      "bytes": 3614
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/BarrierEnvelope.lean",
+      "sha256": "76f96f253091883f905ec885b22b8aadd04cbcf1d4f693fd980476b0fd136719",
+      "bytes": 7110
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/FiniteSurvival.lean",
+      "sha256": "104c52cc8a4bef5dc2e6d7d186653ca9a2339c60428231a51e155c2382f7a96d",
+      "bytes": 9329
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/README.md",
+      "sha256": "c5597d532bbc9b8271e15f5b2b4c0f4d48ed6491c8ceb240d950b366b13fbf75",
+      "bytes": 9908
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/UPPER.md",
+      "sha256": "bf28d979804b77515234e820ddaed898a80d21963cad057ff083071da5868ad3",
+      "bytes": 5708
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/rows/check.py",
+      "sha256": "b3c6d9538f84138f7d3d6741db5d486957ccaf6f0e268685386cf599eb7d07a5",
+      "bytes": 5591
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "bytes": 5993
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/SOURCES.json",
+      "sha256": "994aee8cf6d2a30ec0ee3684c1f214c0e143a8f583c1470844437b6a78286de3",
+      "bytes": 1394
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "bytes": 7337
+    },
+    {
+      "path": "research/astra-global-closure-20261124/round9/vendor/TernaryItinerary.lean",
+      "sha256": "b79cfc44200087ac0ca9bed9daab9c83a64487bbdb29a4e1e410ba7d6d3f8112",
+      "bytes": 19637
+    }
+  ]
+}

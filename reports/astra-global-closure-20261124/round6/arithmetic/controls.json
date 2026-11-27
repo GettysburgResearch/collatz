@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "agreements_with_additional_physical_bits": 565,
+    "all_marked_words": 2046,
+    "clock_overlaps": 6688,
+    "closed_form_carries": 4092,
+    "complete_modulus_targets": 4224,
+    "convergent_scalar_sources": 7,
+    "exact_genuine_scalar_agreements": 975,
+    "integer_interpolants": 1056,
+    "literal_rational_steps": 36868,
+    "nonzero_integer_interpolants": 993,
+    "target_moduli_above_one": 687,
+    "transient_double_cancellation_bounds": 1096,
+    "zero_integer_interpolants": 63
+  },
+  "distinct_standard_laps_checked": 32,
+  "status": "PASS",
+  "word_lengths": [
+    1,
+    10
+  ]
+}

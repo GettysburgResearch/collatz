@@ -1,0 +1,7 @@
+'Collatz.MarkedRouter.trace_add' depends on axioms: [propext]
+'Collatz.MarkedRouter.first_return_six' depends on axioms: [propext, Quot.sound]
+'Collatz.MarkedRouter.padded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MarkedRouter.pair_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MarkedRouter.physical_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MarkedRouter.physical_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.MarkedRouter.realize_residue' depends on axioms: [propext, Classical.choice, Quot.sound]

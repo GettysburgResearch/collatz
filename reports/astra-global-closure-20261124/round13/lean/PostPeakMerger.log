@@ -1,0 +1,4 @@
+'Collatz.PostPeakMerger.three_peaks' depends on axioms: [propext, Quot.sound]
+'Collatz.PostPeakMerger.three_parents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PostPeakMerger.upper_hit' depends on axioms: [propext, Quot.sound]
+'Collatz.PostPeakMerger.excludes_least' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "12 literal chart lifts and one finite failed extension",
+  "ordinary_lifts": 12,
+  "chart_rows": [
+    {
+      "source_word": "L",
+      "source_bits": "101",
+      "target_bits": "011",
+      "clocks": 3,
+      "odd_inputs": 2,
+      "source_carry": 7,
+      "target_carry": 10
+    },
+    {
+      "source_word": "LLP",
+      "source_bits": "10110111000",
+      "target_bits": "10110011100",
+      "clocks": 11,
+      "odd_inputs": 6,
+      "source_carry": 1391,
+      "target_carry": 1999
+    },
+    {
+      "source_word": "LLPP",
+      "source_bits": "1011011100011000",
+      "target_bits": "1011011100001100",
+      "clocks": 16,
+      "odd_inputs": 8,
+      "source_carry": 22759,
+      "target_carry": 32999
+    }
+  ],
+  "failed_unqualified_LLPPP_extension": {
+    "source": 13519481,
+    "source_endpoint": 380665,
+    "clocks": 21,
+    "shadow_start": 19328633,
+    "actual_shadow_endpoint": 14694257,
+    "putative_chart_endpoint": 544232,
+    "target_bits": "101101110011101011100",
+    "meaning": "The simple LLPPP tile is not a return for this chart. This is not a Collatz counterexample."
+  }
+}

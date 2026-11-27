@@ -1,0 +1,14 @@
+{
+  "file": "research/astra-global-closure-20261124/formal/PhasePacking.lean",
+  "sha256": "10b1b34b9260ded391068c75886b20e4ccadcd0166562be663b4215dd2862afb",
+  "command": [
+    "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean"
+  ],
+  "exit_code": 1,
+  "stdout": "/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:16:5: error: expected token\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:55:33: error: unknown tactic\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:63:11: error(lean.unknownIdentifier): Unknown identifier `mul_le_mul_right\u2080`\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:64:4: error: No goals to be solved\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:85:15: error: expected token\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:117:13: error(lean.invalidField): Invalid field `dvd_mul_left`: The environment does not contain `Eq.dvd_mul_left`, so it is not possible to project the field `dvd_mul_left` from an expression\n  hc\nof type `A.gcd D = 1`\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:122:13: error(lean.invalidField): Invalid field `dvd_mul_left`: The environment does not contain `Eq.dvd_mul_left`, so it is not possible to project the field `dvd_mul_left` from an expression\n  hc\nof type `A.gcd D = 1`\n'Collatz.PhasePacking.clock_carry_identity' does not depend on any axioms\n'Collatz.PhasePacking.normalized_complete' depends on axioms: [propext]\n'Collatz.PhasePacking.normalized_edge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.cubic_height' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.canonical_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n/workspace/scratch/9d899a6c0eac/collatz/research/astra-global-closure-20261124/formal/PhasePacking.lean:135:14: error(lean.unknownIdentifier): Unknown constant `canonical_prefix`\n'Collatz.PhasePacking.returning_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PhasePacking.past_endpoint_unique' depends on axioms: [propext, sorryAx, Quot.sound]\n",
+  "stderr": "",
+  "seconds": 2.565
+}
