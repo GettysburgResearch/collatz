@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/check_block_carries.py",
+      "sha256": "4599f3ccaf60554212775c20451deb0c25b82293f5eb4cd62d687f55ccb64703",
+      "optimized": false,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-nine-hour-20261128/cycles/check_block_carries.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14072641999973712,
+      "stdout": "Admissible (s,v) pairs at 1 <= s < 256: 20465\nEqualities: [(2, 0)]\nprimitive: 2331\ncontracting: 1650\nstraddling: 681\npacking: 3608\ncompatible: 2381\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/check_block_carries.py",
+      "sha256": "4599f3ccaf60554212775c20451deb0c25b82293f5eb4cd62d687f55ccb64703",
+      "optimized": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-nine-hour-20261128/cycles/check_block_carries.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.21737207299975125,
+      "stdout": "Admissible (s,v) pairs at 1 <= s < 256: 20465\nEqualities: [(2, 0)]\nprimitive: 2331\ncontracting: 1650\nstraddling: 681\npacking: 3608\ncompatible: 2381\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/check_machinery.py",
+      "sha256": "444f91a89bf2013b5464c4127c70cb5d97bd9de9b0830e7f50b7e8d65ca32a63",
+      "optimized": false,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-nine-hour-20261128/machinery/check_machinery.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.20049935399993046,
+      "stdout": "Exact ordinary routes: 1551 paths, 73051 positive odd steps\nMixed triangle geometry: 31101 phase sites, 1691 full triangle corners\nMixed numerator spacing: 22164 fixed-total words, 48307 nonempty residue buckets\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/check_machinery.py",
+      "sha256": "444f91a89bf2013b5464c4127c70cb5d97bd9de9b0830e7f50b7e8d65ca32a63",
+      "optimized": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-nine-hour-20261128/machinery/check_machinery.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.19191177199991216,
+      "stdout": "Exact ordinary routes: 1551 paths, 73051 positive odd steps\nMixed triangle geometry: 31101 phase sites, 1691 full triangle corners\nMixed numerator spacing: 22164 fixed-total words, 48307 nonempty residue buckets\n",
+      "stderr": ""
+    }
+  ]
+}
