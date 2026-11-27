@@ -72,6 +72,21 @@ CONTROLS = [
     ("cycles/check_unrestricted_three_grade_audit.py", [], "cycles/UNRESTRICTED_THREE_GRADE_AUDIT_CONTROLS.json"),
     ("cycles/physical_depth_transfer_certificate.py", [], "cycles/PHYSICAL_DEPTH_TRANSFER_CHECK.json"),
     ("cycles/review_physical_odd_transfer.py", [], "cycles/PHYSICAL_ODD_TRANSFER_REVIEW_CONTROLS.json"),
+    ("cycles/rational_residue_convexity_certificate.py", [], "cycles/RATIONAL_RESIDUE_CONVEXITY_CHECK.json"),
+    ("cycles/check_rational_rank_lanes.py", [], "cycles/RATIONAL_RANK_LANES_CONTROLS.json"),
+    ("cycles/residue_fibre_source_certificate.py", [], "cycles/RESIDUE_FIBRE_SOURCE_CHECK.json"),
+    ("cycles/check_residue_source_physical.py", [], "cycles/RESIDUE_SOURCE_PHYSICAL_AUDIT_CONTROLS.json"),
+    ("cycles/rational_rank_lag_consumer_check.py", [], "cycles/RATIONAL_RANK_LAG_CONSUMER_CHECK.json"),
+    ("cycles/rational_lag_review_check.py", [], "cycles/RATIONAL_LAG_REVIEW_CONTROLS.json"),
+    ("cycles/rank_cap_obstruction.py", [], "cycles/RANK_CAP_OBSTRUCTION_CONTROLS.json"),
+    ("cycles/check_rank_cap_independent.py", [], "cycles/ROOT_RANK_CAP_CONTROLS.json"),
+    ("cycles/adjacent_gap_period_certificate.py", [], "cycles/ADJACENT_GAP_PERIOD_CERTIFICATE.json"),
+    ("cycles/certify_adjacent_gap_exclusion_independent.py", [], "cycles/ADJACENT_PERIOD_INDEPENDENT_CONTROLS.json"),
+    ("cycles/generate_adjacent_period_lean.py", [], "cycles/ADJACENT_PERIOD_DATA_REPLAY.txt"),
+    ("cycles/independent_rational_gap_census_review.py", [], "cycles/INDEPENDENT_RATIONAL_GAP_CENSUS_CHECK.json"),
+    ("cycles/check_residue_support_and_diversity.py", [], "cycles/RESIDUE_SUPPORT_DIVERSITY_CONTROLS.json"),
+    ("cycles/parity_lag_energy_certificate.py", [], "cycles/PARITY_LAG_ENERGY_CHECK.json"),
+    ("cycles/ternary_parity_review_check.py", [], "cycles/TERNARY_PARITY_REVIEW_CONTROLS.json"),
 ]
 DEPENDENCIES = {
     "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
@@ -87,6 +102,12 @@ DEPENDENCIES = {
                               "cycles/fifth_grid_integer.cpp"],
     "cycles/independent_fifth_setup.py": ["cycles/FIFTH_WITNESSES.txt.gz", "cycles/FIFTH_INTEGER_GRID_ROWS.txt"],
     "cycles/independent_fifth_law_controls.py": ["cycles/independent_fifth_setup.py", "cycles/FIFTH_WITNESSES.txt.gz"],
+    "cycles/rational_residue_convexity_certificate.py": ["cycles/clock_order_certificate.py"],
+    "cycles/residue_fibre_source_certificate.py": ["cycles/clock_order_certificate.py"],
+    "cycles/rational_rank_lag_consumer_check.py": ["cycles/clock_order_certificate.py"],
+    "cycles/rational_lag_review_check.py": ["cycles/review_physical_odd_transfer.py"],
+    "cycles/generate_adjacent_period_lean.py": ["cycles/AdjacentPeriodCensus.lean", "cycles/certify_adjacent_gap_exclusion_independent.py"],
+    "cycles/check_residue_support_and_diversity.py": ["cycles/check_residue_source_physical.py"],
 }
 
 

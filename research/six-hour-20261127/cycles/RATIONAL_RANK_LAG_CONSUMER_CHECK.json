@@ -1,0 +1,12 @@
+{
+  "coarse_microscopic_entropy_upper": "(1+ln72)/36 < 1/6",
+  "counts": {
+    "abstract_no_wrap_multiplications": 1501,
+    "negative_terminal_quotients": 3470,
+    "nontrivial_multipliers": 647,
+    "signed_fibre_terminal_controls": 6972
+  },
+  "fixed_denominator_BLS_mismatch": "liminf > 1/(1000 S)",
+  "fixed_denominator_preprint_M3_mismatch": "liminf > 1/(36 S)",
+  "microscopic_scale_cut": "P^(1/4)"
+}

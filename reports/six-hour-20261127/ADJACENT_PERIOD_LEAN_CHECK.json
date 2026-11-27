@@ -1,0 +1,22 @@
+{
+  "declarations": {
+    "AdjacentPeriodCensus.all_screened_rows_pass": [],
+    "AdjacentPeriodCensus.endpoint_order_and_precision": [],
+    "AdjacentPeriodCensus.every_screened_row_excluded": [],
+    "AdjacentPeriodCensus.lower_euclidean_stream": [],
+    "AdjacentPeriodCensus.prescribed_coefficient_count": [],
+    "AdjacentPeriodCensus.screened_candidate_count": [],
+    "AdjacentPeriodCensus.upper_euclidean_stream": []
+  },
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "independent_object_sha256": "d668f14cee5f33c8d386120063764aa0bd05cbb7ebc445167969831407380f0f",
+  "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "separate_import": true,
+  "source_sha256": "ea6b65040068e9ca5fb0c196bcfd75abda64df96b573d00d860524dc12270d44"
+}

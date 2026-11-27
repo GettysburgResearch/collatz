@@ -1,0 +1,24 @@
+{
+  "binary_power_deficits": {
+    "third_layer": "3/80000",
+    "width_1.98": "1/1000",
+    "width_below_two": "3/40000"
+  },
+  "exact_windows": {
+    "nonzero_dyadic_translations": 18473,
+    "nonzero_ternary_translations": 18323,
+    "positive_primitive_cycles": 558,
+    "two_clock_fibre_windows": 19925,
+    "winding_windows": 4010,
+    "windows_at_large_relative_denominator": 2535,
+    "windows_with_zero_integer_part": 7000
+  },
+  "margins_one_minus_residue_exponent_minus_MC": {
+    "31_over_10": "17322968961/570000190000000",
+    "classical_12_over_5": "150800773/9500000000",
+    "classical_5_over_2": "10164002281/1800600000000",
+    "global_sparse_fifth": "13545966849/400000100000000",
+    "mixed_physical_above_four": "979994421999/40000010000000000",
+    "threefold": "3790599/300100000"
+  }
+}

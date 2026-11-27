@@ -1,0 +1,46 @@
+"""Fresh source and separate import builds of the kernel-only finite period census."""
+from pathlib import Path
+from tempfile import TemporaryDirectory
+import json
+import os
+import re
+from verify_ordinary_safe_modules import HERE, LEAN, MATHLIB, FLAGS, h, messages, run
+
+
+def main():
+    mod = 'AdjacentPeriodCensus'
+    compiler = run([LEAN, '--githash'], HERE).strip()
+    library = run(['git', '-C', MATHLIB, 'rev-parse', 'HEAD'], HERE).strip()
+    if compiler != '5045d0056413266e57c625dcd7c365b10e377c52' or library != 'd13f23b723b8a846827a245b89c10fc7d3f11612':
+        raise ValueError('dependency pins')
+    if run(['git','-C',MATHLIB,'status','--porcelain','--untracked-files=no'],HERE).strip():
+        raise ValueError('modified dependencies')
+    with TemporaryDirectory(dir=HERE) as temp:
+        wd = Path(temp)
+        if list(wd.iterdir()):
+            raise RuntimeError('nonempty output directory')
+        src = wd / (mod + '.lean')
+        src.write_bytes((HERE/src.name).read_bytes())
+        body = src.read_text()
+        if re.search(r'\b(?:sorry|admit|axiom|native_decide|unsafe)\b', body):
+            raise ValueError('disallowed source token')
+        names = {mod + '.' + n for n in re.findall(r'^(?:private\s+)?(?:theorem|lemma)\s+(\w+)',body,re.M)}
+        if names != set(re.findall(r'^#print axioms ([.\w]+)',body,re.M)):
+            raise ValueError('incomplete declaration coverage')
+        paths = [wd,MATHLIB/'.lake/build/lib/lean',*sorted((MATHLIB/'.lake/packages').glob('*/.lake/build/lib/lean'))]
+        env = dict(os.environ, LEAN_PATH=os.pathsep.join(map(str,paths)))
+        obj = src.with_suffix('.olean')
+        built = messages(run([LEAN,*FLAGS,'-R',wd,'-o',obj,src],wd,env),names)
+        if any(built.values()):
+            raise ValueError('this finite certificate must be completely axiom-free')
+        probe = wd / 'PeriodCensusFreshImport.lean'
+        probe.write_text('import '+mod+'\n'+'\n'.join('#print axioms '+n for n in sorted(names))+'\n')
+        if messages(run([LEAN,*FLAGS,'-R',wd,probe],wd,env), names) != built:
+            raise ValueError('separate import mismatch')
+        print(json.dumps(dict(source_sha256=h(src),independent_object_sha256=h(obj),
+                              lean=compiler, mathlib=library, declarations=built,
+                              separate_import=True, flags=FLAGS),indent=2,sort_keys=True))
+
+
+if __name__ == '__main__':
+    main()

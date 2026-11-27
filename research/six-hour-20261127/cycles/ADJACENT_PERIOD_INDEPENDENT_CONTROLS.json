@@ -1,0 +1,29 @@
+{
+  "common_convergents": 1944,
+  "complete_witness_digest": "90d7bf9bdcb8bdba7d444d73c6c8e71523570f69fdd6af60c9046aa18d2d8020",
+  "finite_calendar_controls": {
+    "actual_drift_words_counted": 173224,
+    "exact_cell_partitions": 530,
+    "retained_terminal_calendar_interfaces": 13112,
+    "short_path_calendars": 86
+  },
+  "finite_candidates_excluded": 959,
+  "floor_removals": 4,
+  "independent_log_base": "positive power series for -log(1-x), x=1/2,2/3",
+  "large_upper_fence_denominator_digits": 1001,
+  "min_multiple_index": 665,
+  "min_short_distance_lower_billionth": 62979,
+  "reciprocal_upper_millionth": 484763,
+  "small_upper_fence": "17087915/10781274",
+  "upper_above_small_before_floor": 963,
+  "working_bits": 7389,
+  "worst_case": {
+    "A": 217976794617,
+    "P": 137528045312,
+    "b": 18,
+    "g0_cap": 771316334040,
+    "integer_upper": 134074517099,
+    "ones": 7
+  },
+  "worst_ratio_upper_millionth": 974889
+}

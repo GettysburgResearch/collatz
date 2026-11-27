@@ -1,0 +1,27 @@
+{
+  "declarations": {
+    "RankSpacingExtinction.impossible_long_mechanical_run": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankSpacingExtinction.positive_spacing_lower_bound": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankSpacingExtinction.two_pow_dvd_start": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "independent_object_sha256": "4bf74ac1fbdf8a8f2453dcc3a2c187fd56565cfaa1f9efeac89e1335db406482",
+  "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "separate_import": true,
+  "source_sha256": "2031c0eea6a7690c98950d0a8c33280a334fce6ea99a4b3cc19d200557c32e08"
+}

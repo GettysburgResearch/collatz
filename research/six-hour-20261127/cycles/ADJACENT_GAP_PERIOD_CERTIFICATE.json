@@ -1,0 +1,23 @@
+{
+  "upper_period_limit": "10^1000",
+  "minimum_odd_state": "2^71",
+  "slope_bracket_dyadic_scale_bits": 6940,
+  "matching_convergents_including_fence": 1944,
+  "fence_denominator_digits": 1001,
+  "short_period_upper_fence": "17087915/10781274",
+  "minimum_short_multiple_distance_lower": "3936223/62500000000",
+  "convexity_logarithmic_horizon": 7000,
+  "legendre_certificate_upper_millionths": 484763,
+  "upper_convergents_tested": 959,
+  "first_tested_period": "137528045312",
+  "worst_census_ratio_upper_millionths": 974889,
+  "worst_case": {
+    "A": "217976794617",
+    "P": "137528045312",
+    "G0_ceiling": "771316334040",
+    "window": 18,
+    "min_disjoint_pairs": 7,
+    "upper_count": "134074517099"
+  },
+  "short_exact_difference_schedules": 52
+}

@@ -1,0 +1,29 @@
+{
+  "modular": {
+    "finite_group_schedules": 16020,
+    "heterogeneous_fibre_sizes": 7668,
+    "synthetic_order_defects": 10680
+  },
+  "proper_order_examples": [
+    {
+      "H": 4,
+      "K_support": 4,
+      "P": 8,
+      "R": 8,
+      "d": 431,
+      "g": 2,
+      "k": 1,
+      "max_K_atom": 2,
+      "q": 4
+    }
+  ],
+  "real": {
+    "large_X_return_determinants": 8,
+    "large_d_uncapped_cases": 338,
+    "low_grade_populations": 2360,
+    "multiple_raw_occupancy": 1,
+    "proper_order_defect": 1,
+    "true_cycles_full_subgroup_computed": 108,
+    "true_primitive_cycles": 590
+  }
+}
