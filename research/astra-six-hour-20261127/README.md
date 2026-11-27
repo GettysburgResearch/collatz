@@ -120,8 +120,8 @@ positive-integer problem. The new Lean theorem proves that implication through
 the usual full Collatz map, with the finite-sum bound retained as its explicit
 premise. The bound is **open**. The note also records its extra consequence:
 finiteness at 1 would force a uniform logarithmic first-hitting bound on all
-terminating sources. The adaptive replacement under investigation removes that
-extra fixed time tilt.
+terminating sources. The adaptive replacement in the fourth checkpoint removes
+that extra fixed time tilt.
 
 [The real tilted Green analysis](global/TILTED_GREEN.md) identifies the exact
 cycle and escape lower bounds, dense infinite values at positive nonintegral
@@ -150,6 +150,74 @@ records thirteen fresh module builds and 112 public axiom inventories. The
 two new full-problem conclusion theorems are conditional, and no Green bound
 or positive bounded potential is asserted as a proved premise.
 
+## Fourth checkpoint: adaptive energy and an RH-assisted cycle estimate
+
+[The rational energy proposal](root/RATIONAL_ENERGY.md) replaces the constant
+time tilt by a rational factor `1+1/(32*n²)` at odd states at least 13, and
+`1/4` at smaller states. It sums the resulting weights over actual visits,
+with a summable `1/x³` weight on each initial source. Lean proves that a uniform
+bound of 8 and uniform decay as the target tends to infinity imply full
+Collatz convergence. Both estimates remain open. A written converse uses
+telescoping products on simple paths, showing that this criterion asks for no
+additional stopping-time bound.
+
+[The adaptive ternary Green series](global/ADAPTIVE_GREEN.md) supplies a
+computable rational construction for that criterion. Its boost depends on the
+least positive representative of each prefix. It is Haar integrable, has
+uniform ordinary bounds at every nonperiodic target, and has a polynomial tail
+away from all trajectories of a fixed finite set of sources. The discrepancy
+from the ordinary positive recursion is globally summable. The remaining
+issue is decay along those fixed-source trajectories themselves; none of the
+average estimates supplies it. Nine new Lean lemmas check the coefficient
+inequalities, including domination of the rational energy.
+
+[The Mellin rank estimate](arithmetic/MELLIN_RANK_SPACING.md) uses Lindelöf
+and the Robert–Sargos fourth derivative estimate to bound, at every fixed
+amplitude `c <= R <= C*p^(11/20)`, the number of pairs with
+`||R*(2^(j/p)-2^(i/p))|| <= C0/p` by `O(p^(1+epsilon))`. The RH input is
+supported by the November 2026 MIT verification record; that external proof
+is not imported or rebuilt in this packet. Applied under the exact ordered
+three-band hypotheses, this gives the minimum-size exponent
+`1000/479+11/20 = 2.63768...` for an unbounded sequence of ordinary cycles in
+that branch. It does not exclude the remaining range or arbitrary cycles.
+
+[The Poisson clock spectrum](escape/POISSON_CLOCK_SPECTRUM.md) identifies the
+limits of the original signed-word statistic at depth `C*log(R)`. Each
+positive cycle's basin contributes a transition at its own contraction rate.
+The first transition comes from 1 exactly as the Fourier clock cutoff passes
+the mean of the original geometric total. Its unevaluated size is the density
+of convergence to 1. [Ternary rational shadows](escape/RATIONAL_WINDOW_SHADOWS.md)
+give new finite-deadline obstructions inside positive translated intervals,
+and a separate consequence of the p-adic Subspace Theorem shows that every
+fixed escaping ordinary ray has arbitrarily long blocks avoiding all the
+displayed bounded-complexity rational shadows. A converse classifying delayed
+windows is still missing.
+
+[Two-width isolation and first return](escape/FIRST_RETURN_POISSON.md)
+removes every terminal other than 1 from the original finite statistic with
+a power-saving error. Its stationary Mellin transform has residue `d1/2`
+at zero and at least one genuine nonreal lattice pole, by singularity of the
+wrapped exit law. This identifies the exact reciprocal exit moment to
+evaluate; it does not evaluate that moment as the value needed for `d1=1`.
+[Sparse shadows](global/SPARSE_SHADOWS.md) strengthens the ordinary-ray
+arithmetic exclusion to exponential-width neighborhoods of nonzero ternary
+multiples and signed binary approximants with any fixed number of digits.
+Both exclusions hold on the same long blocks, with a linear upper bound on
+the waiting time in the current orbit index.
+
+[The binary bridge pressure](arithmetic/BRIDGE_PRESSURE_THRESHOLD.md) computes
+the exact limiting fourth-energy rate from the three return words. Its
+critical fixed width lies in `(1.98534327,1.98534329)`. With the pinned
+external source estimate this gives fixed-denominator finiteness below that
+width, with ineffective onset. The same exact transfers show that every
+fixed even moment of the unforced two-layer population exceeds the rate
+needed by the stated equal-length bridge argument. Normal and optimized
+executions of the rational certificate agree byte for byte.
+
+[FOURTH_REVIEW.md](../../reports/astra-six-hour-20261127/FOURTH_REVIEW.md)
+records the statement-level scope. [LEAN_FOURTH.json](../../reports/astra-six-hour-20261127/LEAN_FOURTH.json)
+records fifteen fresh module builds and 130 public axiom inventories.
+
 ## The cycle and global attacks
 
 | Result | What it controls | Remaining pointwise obligation |
@@ -168,7 +236,7 @@ a constant coloring.
 
 ## Lean and reproducible checks
 
-Thirteen new Lean modules check finite arithmetic, exact orbit kernels, and
+Fifteen new Lean modules check finite arithmetic, exact orbit kernels, and
 the explicit conditional topological and full-problem reductions:
 
 * [MinimumCode.lean](arithmetic/MinimumCode.lean): physical minimum, carry cap,
@@ -198,6 +266,11 @@ the explicit conditional topological and full-problem reductions:
   odd normalization, and convergence conditional on a positive bounded potential.
 * [RationalGreen.lean](root/RationalGreen.lean): exact finite ordinary sums and
   the implication from the displayed uniform rational bound to convergence.
+* [AdaptiveGreen.lean](global/AdaptiveGreen.lean): monotonic prefix boosts,
+  exact high-state gain, and comparison with the rational energy multiplier.
+* [RationalEnergy.lean](root/RationalEnergy.lean): the finite rational energy,
+  its actual-path lower bound, and full convergence conditional on the stated
+  uniform bound and target decay.
 
 [check_lean.py](check_lean.py) compiles into fresh project objects, using Lean
 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, and prints and
@@ -240,3 +313,10 @@ A second intake during this pass froze PR201 at
 `640bf7e511831a0ffc4f00462f12df81f8a8a619`. The guide and relevant new
 arguments were read for the active attacks; their bulk computations were not
 replayed. [Exact delta inventory](../../reports/astra-six-hour-20261127/SECOND_INTAKE.json).
+
+A third intake froze PR195 at `3fa7ef4a0011b35447a70f587b400878d5ea8ebe`,
+PR201 at `807d67ab049f1646398d8ca8c20948cdc1d87742`, PR192 at
+`75eac0cbc744469ae2886bc2f140685c484e9fe7`, and PR200 at
+`2346db2d49030ef385b73e1ee3e27dcbff86d2d9`. The new Mellin, physical-source,
+graded transport, and bridge arguments were read where they bear on these
+attacks. [Exact delta inventory](../../reports/astra-six-hour-20261127/THIRD_INTAKE.json).

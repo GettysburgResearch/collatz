@@ -122,3 +122,25 @@
 'Collatz.SixHour.RationalGreen.finite_green_bound_implies_collatz' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.shape_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.shape_anti' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.boost_anti' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.boost_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.multiplier_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.exact_high_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.high_energy_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.low_energy_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.AdaptiveGreen.telescoping_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.edgeWeight_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.edgeWeight_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.pathWeight_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.high_path_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.finiteEnergy_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.path_in_finiteEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.bounded_additive_growth_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.RationalEnergy.criterion_reaches_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalEnergy.energy_criterion_implies_collatz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

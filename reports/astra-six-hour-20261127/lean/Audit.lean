@@ -11,6 +11,8 @@ import CycleSurgery
 import TiltedGreen
 import PotentialAssembly
 import RationalGreen
+import AdaptiveGreen
+import RationalEnergy
 
 #print axioms Collatz.SixHour.MinimumCode.trace_affine
 #print axioms Collatz.SixHour.MinimumCode.suffix_fits_at_minimum
@@ -124,3 +126,21 @@ import RationalGreen
 #print axioms Collatz.SixHour.RationalGreen.path_in_finiteGreen
 #print axioms Collatz.SixHour.RationalGreen.bounded_path_reaches_small
 #print axioms Collatz.SixHour.RationalGreen.finite_green_bound_implies_collatz
+#print axioms Collatz.SixHour.AdaptiveGreen.shape_one_le
+#print axioms Collatz.SixHour.AdaptiveGreen.shape_anti
+#print axioms Collatz.SixHour.AdaptiveGreen.boost_anti
+#print axioms Collatz.SixHour.AdaptiveGreen.boost_bounds
+#print axioms Collatz.SixHour.AdaptiveGreen.multiplier_constants
+#print axioms Collatz.SixHour.AdaptiveGreen.exact_high_gain
+#print axioms Collatz.SixHour.AdaptiveGreen.high_energy_bridge
+#print axioms Collatz.SixHour.AdaptiveGreen.low_energy_bridge
+#print axioms Collatz.SixHour.AdaptiveGreen.telescoping_factor
+#print axioms Collatz.SixHour.RationalEnergy.edgeWeight_positive
+#print axioms Collatz.SixHour.RationalEnergy.edgeWeight_high
+#print axioms Collatz.SixHour.RationalEnergy.pathWeight_positive
+#print axioms Collatz.SixHour.RationalEnergy.high_path_weight
+#print axioms Collatz.SixHour.RationalEnergy.finiteEnergy_nonnegative
+#print axioms Collatz.SixHour.RationalEnergy.path_in_finiteEnergy
+#print axioms Collatz.SixHour.RationalEnergy.bounded_additive_growth_impossible
+#print axioms Collatz.SixHour.RationalEnergy.criterion_reaches_small
+#print axioms Collatz.SixHour.RationalEnergy.energy_criterion_implies_collatz

@@ -29,6 +29,8 @@ MODULES = [
     ("TiltedGreen", PACKET / "global/TiltedGreen.lean", "Collatz.SixHour.TiltedGreen"),
     ("PotentialAssembly", PACKET / "root/PotentialAssembly.lean", "Collatz.SixHour.PotentialAssembly"),
     ("RationalGreen", PACKET / "root/RationalGreen.lean", "Collatz.SixHour.RationalGreen"),
+    ("AdaptiveGreen", PACKET / "global/AdaptiveGreen.lean", "Collatz.SixHour.AdaptiveGreen"),
+    ("RationalEnergy", PACKET / "root/RationalEnergy.lean", "Collatz.SixHour.RationalEnergy"),
 ]
 
 
@@ -64,7 +66,7 @@ def main() -> None:
         "compiler": version.stdout.strip(),
         "mathlib": MATHLIB,
         "dependency_manifest_sha256": hashlib.sha256((mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
-        "scope": f"All {len(MODULES)} packet modules, with fresh project objects and pinned Mathlib dependencies. The absent cached Mathlib.Tactic.Field object is built from the pinned source in a temporary overlay. This checks finite word, modular, Farey, sibling, orbit transport, representative-window kernels, conditional finite-crossing/countability, cycle surgery, Green arithmetic, and the conditional implication from an explicit rational finite-sum bound to ordinary Collatz convergence. No witness for that bound or for the positive bounded potential is supplied. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, Green integrals and ordinary upper bounds, and other infinite analytic arguments are written proofs and retained inputs, not formalized by this build.",
+        "scope": f"All {len(MODULES)} packet modules, with fresh project objects and pinned Mathlib dependencies. The absent cached Mathlib.Tactic.Field object is built from the pinned source in a temporary overlay. This checks finite word, modular, Farey, sibling, orbit transport, representative-window kernels, conditional finite-crossing/countability, cycle surgery, Green arithmetic, adaptive coefficient bounds, and the conditional implications from explicit rational finite-sum estimates to ordinary Collatz convergence. The energy criterion retains both the uniform bound and uniform target decay. No witness for any open criterion or positive bounded potential is supplied. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, Green integrals and ordinary upper bounds, energy converse, RH-assisted cycle census, Poisson limits, and other infinite analytic arguments are written proofs and retained inputs, not formalized by this build.",
         "modules": [],
         "success": False,
     }
