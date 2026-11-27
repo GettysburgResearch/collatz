@@ -1,0 +1,4 @@
+'Collatz.FirstPassage.mult_eq_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.endpoint_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.partner_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.paired_strip' depends on axioms: [propext, Classical.choice, Quot.sound]

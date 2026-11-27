@@ -1,0 +1,304 @@
+{
+  "schema": "collatz-astra-two-centre-replay/v1",
+  "started_utc": "2026-11-24T10:02:50.630002+00:00",
+  "scope": "exact new sources, fresh Lean objects, finite controls, repository integrity",
+  "commit": "71bedad6b44b35389d3a237e307e8286c11efcb5",
+  "tree": "a2aaf8a3496ec74771e88ccd03260e90138715a6",
+  "sources_before": {
+    "research/astra-two-centre-20261124/README.md": "fbb7edf1df43324316e9606663c1efcfa148851ee414791c335efb4aa944d502",
+    "research/astra-two-centre-20261124/basin.md": "5d29d22d81dd18e33011a62cb94a2c366cb60d4202ed88acf4354f491d90c9a5",
+    "research/astra-two-centre-20261124/basin.py": "e059a67acfb3dc25b4ddc6e3ce1d50c983f8ac05d86a60630fc4a2f67cf29a19",
+    "research/astra-two-centre-20261124/digit_rank.md": "ea9aada664b8897648d3be2a0723a5fda9bfa95dbbc16634c711a2a0be15c3a3",
+    "research/astra-two-centre-20261124/digit_rank.py": "b43c73b9a3d8e712976ea309ad64d380da29b11f46268787b9d8d55228a5e56c",
+    "research/astra-two-centre-20261124/integer.lean": "2796ad42820bbe113bff4a76ea8b28f1f5852ba306319526d5b19ce5cd7675d2",
+    "research/astra-two-centre-20261124/integer.md": "9bc5fce832bcda800c34394baa64cb9357e7f1017d928efec7ae5984c85bac59",
+    "research/astra-two-centre-20261124/integer.py": "d70913842cdde1eb81b33de025cae8313afb23fa67af54e72ffc48a1f469469c",
+    "research/astra-two-centre-20261124/rewriting.lean": "1a90762232a45553c7c74c197a1b3b4ac0bd66e8e224faed89ca87c74eaf5c2d",
+    "research/astra-two-centre-20261124/rewriting.md": "0962a8d9a0d979f1712836bc1a62241522369d90522cf96444bdfd51d6b8cecc",
+    "research/astra-two-centre-20261124/rewriting.py": "3b8e3630ad93a811d1dd9c1ce70fd215ad07d4763c31df79a96f8e38df9ba30b"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.089,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-integer",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/two-centre-fresh-71bedad6/objects/integer.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/integer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.946,
+      "stdout_sha256": "a226c00ff18aff128b57df282bdc4974652bd1f4f98a49286af73bb295066ece",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "50b1d6cab9d6d3437d8303f1dd636273565171bc34da56784a7361b1c35eece3"
+    },
+    {
+      "label": "lean-rewriting",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/two-centre-fresh-71bedad6/objects/rewriting.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/rewriting.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.812,
+      "stdout_sha256": "13b4fa7659e1a670fe5644bcd2cccd71bcfa19d73c5815778a0849a3692e3ec6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f37431375e42592d2f37238dae905a0369ffe7973654d1a85e97986411471147"
+    },
+    {
+      "label": "python-basin",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/basin.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.162,
+      "stdout_sha256": "e07459e44ef69e6b816e2b8a4e718d0c3346e2a49fc2b81b287e0e2a07862db1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-basin",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/basin.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.169,
+      "stdout_sha256": "e07459e44ef69e6b816e2b8a4e718d0c3346e2a49fc2b81b287e0e2a07862db1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-digit_rank",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/digit_rank.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.199,
+      "stdout_sha256": "cfa2d1ea1b8094a1a65c490d3e477486387e7c1e296a1726c29b84a9492259b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-digit_rank",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/digit_rank.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.241,
+      "stdout_sha256": "cfa2d1ea1b8094a1a65c490d3e477486387e7c1e296a1726c29b84a9492259b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-integer",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/integer.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.019,
+      "stdout_sha256": "f22dc37756621ce9834d7f121259c28d4e3eb5cb0e5e03984a1455027e391766",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-integer",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/integer.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.019,
+      "stdout_sha256": "f22dc37756621ce9834d7f121259c28d4e3eb5cb0e5e03984a1455027e391766",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-rewriting",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/rewriting.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.589,
+      "stdout_sha256": "c0d4234c04cebe682ab233bc87e21e38e113f408ecf91b12a7718b94d244665b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-rewriting",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-two-centre-20261124/rewriting.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.141,
+      "stdout_sha256": "c0d4234c04cebe682ab233bc87e21e38e113f408ecf91b12a7718b94d244665b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/two-centre-fresh-71bedad6/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.181,
+      "stdout_sha256": "00cba8e3c56c731f76c5bbaac3d7f938f0e2492b38c5a5ebf1232d02528c4b02",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "integer.lean",
+      "declaration": "Collatz.BinaryBoundary.transport",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "integer.lean",
+      "declaration": "Collatz.BinaryBoundary.divisionBudget",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "integer.lean",
+      "declaration": "Collatz.MixedBoundary.negativeWall",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "integer.lean",
+      "declaration": "Collatz.MixedBoundary.expenditure",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "integer.lean",
+      "declaration": "Collatz.MixedBoundary.clearsDenominator",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "rewriting.lean",
+      "declaration": "Collatz.PeakCertificate.finite_tree",
+      "axioms": []
+    },
+    {
+      "source": "rewriting.lean",
+      "declaration": "Collatz.PeakCertificate.local_safety",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "rewriting.lean",
+      "declaration": "Collatz.PeakCertificate.lift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "basin.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "digit_rank.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "integer.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "rewriting.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-two-centre-20261124/README.md": "fbb7edf1df43324316e9606663c1efcfa148851ee414791c335efb4aa944d502",
+    "research/astra-two-centre-20261124/basin.md": "5d29d22d81dd18e33011a62cb94a2c366cb60d4202ed88acf4354f491d90c9a5",
+    "research/astra-two-centre-20261124/basin.py": "e059a67acfb3dc25b4ddc6e3ce1d50c983f8ac05d86a60630fc4a2f67cf29a19",
+    "research/astra-two-centre-20261124/digit_rank.md": "ea9aada664b8897648d3be2a0723a5fda9bfa95dbbc16634c711a2a0be15c3a3",
+    "research/astra-two-centre-20261124/digit_rank.py": "b43c73b9a3d8e712976ea309ad64d380da29b11f46268787b9d8d55228a5e56c",
+    "research/astra-two-centre-20261124/integer.lean": "2796ad42820bbe113bff4a76ea8b28f1f5852ba306319526d5b19ce5cd7675d2",
+    "research/astra-two-centre-20261124/integer.md": "9bc5fce832bcda800c34394baa64cb9357e7f1017d928efec7ae5984c85bac59",
+    "research/astra-two-centre-20261124/integer.py": "d70913842cdde1eb81b33de025cae8313afb23fa67af54e72ffc48a1f469469c",
+    "research/astra-two-centre-20261124/rewriting.lean": "1a90762232a45553c7c74c197a1b3b4ac0bd66e8e224faed89ca87c74eaf5c2d",
+    "research/astra-two-centre-20261124/rewriting.md": "0962a8d9a0d979f1712836bc1a62241522369d90522cf96444bdfd51d6b8cecc",
+    "research/astra-two-centre-20261124/rewriting.py": "3b8e3630ad93a811d1dd9c1ce70fd215ad07d4763c31df79a96f8e38df9ba30b"
+  },
+  "finished_utc": "2026-11-24T10:03:06.226745+00:00"
+}

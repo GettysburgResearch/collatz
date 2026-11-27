@@ -1,0 +1,677 @@
+{
+  "schema": "collatz-astra-minimum-source-replay/v1",
+  "started_utc": "2026-11-24T14:16:49.487384+00:00",
+  "scope": "new Lean kernels and finite controls; not the infinite written arguments",
+  "commit": "f4453eff99bf9d0315404c6931e1c70e5c93cefe",
+  "tree": "84f47c53bf48896050746c785e7a7aa4e9a923de",
+  "sources_before": {
+    "research/astra-minimum-source-20261124/README.md": "2c572369cefe72820092db02943b7282e941c939df569de2b1b3143f95ab504c",
+    "research/astra-minimum-source-20261124/SOURCES.md": "ea6483a90d7bbae9d06be86c6482a20d32aa966725c225fe736c34d93cd90e94",
+    "research/astra-minimum-source-20261124/arithmetic/README.md": "17ceb3e8bfda7fa70214da2431c4ac5c4df3a9a1ff7b14ddc9cb9716396af4a8",
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/arithmetic/check.py": "043e95effb2b0a8d59ebaf3dfcce3fefb0ef3d6040e99a2018d2782da675530d",
+    "research/astra-minimum-source-20261124/descent/CarryDescent.lean": "c0591080aba6ca6eb2cbba0ec7a9148ec235be4f4f7ac368ec3787749a3177ea",
+    "research/astra-minimum-source-20261124/descent/README.md": "3a7e78db667997b7dda877f3fe27842d61e80c236ea97f36ddd88c0e40e2a7c8",
+    "research/astra-minimum-source-20261124/descent/check.py": "7c097c14fbfdd0438bd042b23c15a702c1bb83497b1e1a1174143c71d353a00e",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-minimum-source-20261124/renewal/README.md": "272f09b88158210f553de9676ada5bb683a19c9af3c0657a2ab23f4fd737ea4d",
+    "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee",
+    "research/astra-minimum-source-20261124/renewal/check.py": "b13bb0e97f0794f0387e7fd083c70b6bb5d4f6b552df0ff56a06c95c5fa9daf9",
+    "research/astra-minimum-source-20261124/second/README.md": "816235c2a2104d03a799b093f908ba115ac4dd32eb81e637d180ef5778d6377c",
+    "research/astra-minimum-source-20261124/second/SecondRun.lean": "fd02aaf78aa6ada2f046c6f1ab989c3f33a304978bb32554abda060988852b06",
+    "research/astra-minimum-source-20261124/second/check.py": "f2b7c6c95c2a7628af1ce54edbaec52bed1d3d47449c484bc8df4836078f2c7a"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean and Mathlib dependency objects reused; new SourceDeletion is rebuilt before MinimumFailure imports it",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.159,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-arithmetic-SourceDeletion",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects/SourceDeletion.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.672,
+      "stdout_sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "76028647dbd1ed5f03b0fa1f1fa50cb6bfc961463c31217a651b71b098f32dbb"
+    },
+    {
+      "label": "lean-descent-CarryDescent",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects/CarryDescent.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/descent/CarryDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.66,
+      "stdout_sha256": "4676a17761584123fc9bedc7a31321f34593042dd676b22f407b26dea9e687ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "76cf5c6b6bec035cd1296721997d02ad31c15eb1ff2619e72175c58e52a792ce"
+    },
+    {
+      "label": "lean-minimal-MinimumFailure",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects/MinimumFailure.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/minimal/MinimumFailure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.97,
+      "stdout_sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d3ff246ac46c8dbfa1db4e908fecf3f77f161b142c2f4ac38369b3149573214d"
+    },
+    {
+      "label": "lean-renewal-UpperRepresentative",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects/UpperRepresentative.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.857,
+      "stdout_sha256": "75dd693cbd761cbb72ad10d4c344996a6d81e33cfeb4a6e536aa887b250d5f6f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d7e8643a5dcec71c69974c285e3559f1f2716d0af19c4e953e831630427c313c"
+    },
+    {
+      "label": "lean-second-SecondRun",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/objects/SecondRun.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/second/SecondRun.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.124,
+      "stdout_sha256": "7865a5eee2d8070ae93f7587768e4d3d0fe993963945bbe3adf27a9809e76c64",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "f2fb3f524eeee2744d8b8f46bad6d27522cf5e313a36bf091b7af38df48fe342"
+    },
+    {
+      "label": "python-arithmetic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.131,
+      "stdout_sha256": "eb74d25a0d1fcf12b973c1557fd9ae8bcf9d685a9fa575f04774c47e04cdea34",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-arithmetic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.136,
+      "stdout_sha256": "eb74d25a0d1fcf12b973c1557fd9ae8bcf9d685a9fa575f04774c47e04cdea34",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.027,
+      "stdout_sha256": "cde1b0a5a8990566b8d9d90148934e7b9d808cb7da596354a504968d68224450",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.041,
+      "stdout_sha256": "cde1b0a5a8990566b8d9d90148934e7b9d808cb7da596354a504968d68224450",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-renewal-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.129,
+      "stdout_sha256": "42d7b3dee8140fdba4e8ca61c0a4b5f02296ded1bcc3e3bb5581aae611b500da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-renewal-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.173,
+      "stdout_sha256": "42d7b3dee8140fdba4e8ca61c0a4b5f02296ded1bcc3e3bb5581aae611b500da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-second-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/second/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.084,
+      "stdout_sha256": "f644eeecc06fecf94404418b50f13b34316593f64fc4a0c8e54de5c6436c8db0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-second-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz-minimum-source-clean/research/astra-minimum-source-20261124/second/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.068,
+      "stdout_sha256": "f644eeecc06fecf94404418b50f13b34316593f64fc4a0c8e54de5c6436c8db0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/minimum-source-clean-replay-f4453eff/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.165,
+      "stdout_sha256": "adf67feff94fdea5de00f0ec89ae52f8ed982e3d50e9e700383108690644c521",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_paths",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_row",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.delete_digit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lower_representative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below_cutoff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.edge_lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.orbit_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.adjacent",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.adaptive_down",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.fixed_ratio",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.all_odd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.negative_twenty_one",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.cycle_scale",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.precondition",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/CarryDescent.lean",
+      "declaration": "Collatz.CarryDescent.stable",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_one",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_step",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_run",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_step",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_eq_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exists_least_discordance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_below",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_cutoff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.upper_bad",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_triples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_multiples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exclude_seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_reduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.seven_upper",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.seven_lower",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.signed_lower",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.signed_comparison",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.signed_upper",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.invariant_run",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.no_signed_minimum",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.all_odd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.first_exit_labels",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.first_exit_reduces",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean",
+      "declaration": "Collatz.UpperRepresentative.complementary_exit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/second/SecondRun.lean",
+      "declaration": "Collatz.SecondRun.second_exit_excludes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/descent/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/renewal/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/second/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-minimum-source-20261124/README.md": "2c572369cefe72820092db02943b7282e941c939df569de2b1b3143f95ab504c",
+    "research/astra-minimum-source-20261124/SOURCES.md": "ea6483a90d7bbae9d06be86c6482a20d32aa966725c225fe736c34d93cd90e94",
+    "research/astra-minimum-source-20261124/arithmetic/README.md": "17ceb3e8bfda7fa70214da2431c4ac5c4df3a9a1ff7b14ddc9cb9716396af4a8",
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/arithmetic/check.py": "043e95effb2b0a8d59ebaf3dfcce3fefb0ef3d6040e99a2018d2782da675530d",
+    "research/astra-minimum-source-20261124/descent/CarryDescent.lean": "c0591080aba6ca6eb2cbba0ec7a9148ec235be4f4f7ac368ec3787749a3177ea",
+    "research/astra-minimum-source-20261124/descent/README.md": "3a7e78db667997b7dda877f3fe27842d61e80c236ea97f36ddd88c0e40e2a7c8",
+    "research/astra-minimum-source-20261124/descent/check.py": "7c097c14fbfdd0438bd042b23c15a702c1bb83497b1e1a1174143c71d353a00e",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-minimum-source-20261124/renewal/README.md": "272f09b88158210f553de9676ada5bb683a19c9af3c0657a2ab23f4fd737ea4d",
+    "research/astra-minimum-source-20261124/renewal/UpperRepresentative.lean": "4f370f593f549210fe2ef3888d24700702427236f945617e353bfd2ce75227ee",
+    "research/astra-minimum-source-20261124/renewal/check.py": "b13bb0e97f0794f0387e7fd083c70b6bb5d4f6b552df0ff56a06c95c5fa9daf9",
+    "research/astra-minimum-source-20261124/second/README.md": "816235c2a2104d03a799b093f908ba115ac4dd32eb81e637d180ef5778d6377c",
+    "research/astra-minimum-source-20261124/second/SecondRun.lean": "fd02aaf78aa6ada2f046c6f1ab989c3f33a304978bb32554abda060988852b06",
+    "research/astra-minimum-source-20261124/second/check.py": "f2b7c6c95c2a7628af1ce54edbaec52bed1d3d47449c484bc8df4836078f2c7a"
+  },
+  "finished_utc": "2026-11-24T14:17:14.938635+00:00"
+}

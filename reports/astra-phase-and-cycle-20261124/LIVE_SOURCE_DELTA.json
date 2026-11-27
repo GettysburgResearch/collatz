@@ -1,0 +1,20 @@
+{
+  "scope": "Read-only review of a concurrent source update; initial source snapshot remains frozen.",
+  "pr": 189,
+  "before": "a0be70b1ffa075cbc50755ac76036108c028d120",
+  "after": "a390a1a4c75ee95db98b4b683d17c503f4e4a118",
+  "path": "research/stationary-carry-rigidity-20261124/README.md",
+  "change": {
+    "added_lines": 11,
+    "removed_lines": 0,
+    "kind": "Attribution correction only"
+  },
+  "credit": {
+    "pr": 180,
+    "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+    "path": "research/whole-source-20261123/COLLISION_CORE.md",
+    "claims": "Sections 3\u20134, equations (16)\u2013(17), stationary collision gap and upper Renyi-2 dimension bound"
+  },
+  "effect_on_packet": "No change to PS1\u2013PS6 or the actual carry bridges. Distinct-source scalar-fiber counts are not a time-limit distribution along one orbit.",
+  "review": "Frontier worker read the exact delta and cited antecedent; root read the exact Git diff."
+}

@@ -1,0 +1,282 @@
+{
+  "schema": "collatz-high-variance-sources/v1",
+  "baseline": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+  "latest_pr182": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+  "latest_pr182_prior_dependencies_unchanged": true,
+  "repository_inputs": [
+    {
+      "pr": 173,
+      "commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "path": "research/lean-shell-cover/ForwardSection.lean",
+      "claim": "bounded_visit; collatz_iff_marked",
+      "scope": "Actual forward marked visits; input for small finite range of the new quantitative visit argument.",
+      "git_blob": "73736deaf444e1e4ff9cac81e0c8f7ce2a02ab85",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fa0c9e2a2851e6324391e39c17afcb5913185aec/research/lean-shell-cover/ForwardSection.lean"
+    },
+    {
+      "pr": 182,
+      "commit": "9b02334f27ff59694a91fe7f018e0aaabad7620b",
+      "path": "research/astra-round13-20261124/BAND_RETURN.md",
+      "claim": "mixed half-script grammar",
+      "scope": "Physical successful half partners and preservation of marks; equal odd counts sharpened here.",
+      "git_blob": "8d1447e3ea855e910d5ad142f90e1579fdc4aaf4",
+      "sha256": "989a79edb4d0c4c61808bb87751fdcdb5e778dd5841c96a849f6402245cdc891",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9b02334f27ff59694a91fe7f018e0aaabad7620b/research/astra-round13-20261124/BAND_RETURN.md"
+    },
+    {
+      "pr": 182,
+      "commit": "9b02334f27ff59694a91fe7f018e0aaabad7620b",
+      "path": "research/astra-round13-20261124/LATEST_BAND.md",
+      "claim": "decidable residual fiber minima; critical summability",
+      "scope": "Written construction and reduction, no end-to-end Lean claim.",
+      "git_blob": "2f49d1b909a0f580d89232c14612e97e73130ce1",
+      "sha256": "b77f9b8ff871fb24fc18d1292ce9d59c1ce274cd308ff0b479f80b8e5032db30",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9b02334f27ff59694a91fe7f018e0aaabad7620b/research/astra-round13-20261124/LATEST_BAND.md"
+    },
+    {
+      "pr": 182,
+      "commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/FIXED_FLOOR.md",
+      "claim": "odd-clock level minima",
+      "scope": "Fresh source comparison, predecessor sectors and original floor.",
+      "git_blob": "04d66bbde6fd9105ef263498c9029dd9b7e662c7",
+      "sha256": "65d6479c870083b30bf335a89949ac64aae25cbff12dfba43a4b39eaf18c4cb4",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67/research/central-closure-20261124/FIXED_FLOOR.md"
+    },
+    {
+      "pr": 182,
+      "commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/GLOBAL_RANK.md",
+      "claim": "atomic and supremum rank attempts",
+      "scope": "Reviewed freshness input; not an asserted rank theorem.",
+      "git_blob": "aaa0cacb10b9cdb9ec9c916a726c11cfe91ec166",
+      "sha256": "51037adb226ef4c8fb00275c0ef31241b5352f28f03304987290477a7ad3e74c",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67/research/central-closure-20261124/GLOBAL_RANK.md"
+    },
+    {
+      "pr": 182,
+      "commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/INTEGRALITY.md",
+      "claim": "fixed and growing-dimensional Subspace attempts",
+      "scope": "Reviewed failure of particular closing forms, not of the general method.",
+      "git_blob": "23cee5dfff47e2d31368c0ee04656c0f71e3ad4e",
+      "sha256": "7eb15bd9220540cf8c7cd1d4fde8363f86eefcd74d38ebe88348be40e2be4f33",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67/research/central-closure-20261124/INTEGRALITY.md"
+    },
+    {
+      "pr": 182,
+      "commit": "f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67",
+      "path": "research/central-closure-20261124/INTEGER_SUMMANDS.md",
+      "claim": "two-summand increasing finite blocks",
+      "scope": "Changing-source obstruction, compared to fixed-source no-tightness theorem.",
+      "git_blob": "abc6a389ee4d7401056b5063ff52da637696b191",
+      "sha256": "5f52a252247f580781d3c213a58414ea281de99d3f32e5580d9cc49b9748562b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f5e65dbad5eaf2a5f85cde8916e91fe6e5102e67/research/central-closure-20261124/INTEGER_SUMMANDS.md"
+    },
+    {
+      "pr": 191,
+      "commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "path": "research/two-sided-cycle-packing-20261124/README.md",
+      "claim": "TCP-5",
+      "scope": "Prior all-L/P modulus-83 shadow; no new priority claimed for it.",
+      "git_blob": "5380e3b5f0f0366556a2591e910f039bac0abfa7",
+      "sha256": "f9b14eac5b26b637bf16f6f4c368a565610e00975862be4111bf662a863e3ed0",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/37b3916633cd32a0c173b20bb18ec3a7ec290a63/research/two-sided-cycle-packing-20261124/README.md"
+    },
+    {
+      "pr": 192,
+      "commit": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/DESCENT_EXTENSION.md",
+      "claim": "finite thirteen-header prefix code",
+      "scope": "Unrestricted-future mergers for the complementary primary headers.",
+      "git_blob": "f909860776589a07a0dbffdf5446aa11f36075c2",
+      "sha256": "e902faffe7ee584ad354119d7809e0a4b663a12373fe7d2244dac5c84cb370d1",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d2081d1cd2410e6004eaee9f9b13c5553afaf3f4/research/astra-closure-attack-20261124/DESCENT_EXTENSION.md"
+    },
+    {
+      "pr": 192,
+      "commit": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/CYCLE_EXTENSION.md",
+      "claim": "open-segment fixed-group height estimate",
+      "scope": "Written Evertse-based duration bound used for growing homogeneous run counts.",
+      "git_blob": "c24cff804d2875b2ea9a5e20b9f1509b83f3941f",
+      "sha256": "893940dc7a3a1df47e5bb41d1a789696cb2caba08e730bdb87b07e9c2524fb9a",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d2081d1cd2410e6004eaee9f9b13c5553afaf3f4/research/astra-closure-attack-20261124/CYCLE_EXTENSION.md"
+    },
+    {
+      "pr": 192,
+      "commit": "d2081d1cd2410e6004eaee9f9b13c5553afaf3f4",
+      "path": "research/astra-closure-attack-20261124/SOURCE_EXTENSION.md",
+      "claim": "positive smooth-summand empirical laws",
+      "scope": "No tight subsequence on one hypothetical escaping source; not an upper bound.",
+      "git_blob": "b1f92f484f480e35f9ec69add6796b8244552925",
+      "sha256": "d98432fd189cb81f8c7f6fd4d57e92faac9498e5a40a71626d35fb3bf5dd6e9f",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d2081d1cd2410e6004eaee9f9b13c5553afaf3f4/research/astra-closure-attack-20261124/SOURCE_EXTENSION.md"
+    },
+    {
+      "pr": 193,
+      "commit": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "path": "research/astra-universal-descent-20261124/escape.md",
+      "claim": "sections 1a-1b; translated packing and synchronization",
+      "scope": "Written uniform count for synchronously distinct transversals, independent of interval translation.",
+      "git_blob": "1fbb615119e9d12f32dc2f33c333fafd65fd0938",
+      "sha256": "59946132704f2d380b5fb4b244148ea481aa0c0a1f70cc800911e5ee98da53b2",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c6cb5e66516a86c33a757154983bbddc822510de/research/astra-universal-descent-20261124/escape.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "path": "research/ayh-resource-reset-20261124/check_rewrite_certificates.py",
+      "claim": "eleven-rule alphabet",
+      "scope": "Exact alphabet and canonical exchange convention; new direct suffix identities checked here.",
+      "git_blob": "0dca55ec6a2e96a78b338af9995e593b960fe596",
+      "sha256": "49d86587e6db17e61b64703e9d2af26921efae4de40192afe8590d3289fa5db4",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/check_rewrite_certificates.py"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "path": "research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md",
+      "claim": "critical marks and cofinal predecessors",
+      "scope": "Cofinal predecessor construction is not a forward-return coverage theorem.",
+      "git_blob": "f0dcb7a8e8ec23798dd2e685cf1b4caa592941e6",
+      "sha256": "0f950d72941b5a3a967aa3028ed480ca5bcf687f17eac68c64e819c3bf759b86",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "path": "research/astra-frontier-20261124/BRIDGE_AUDIT.md",
+      "claim": "finite prefix grafting",
+      "scope": "Ordinary exact gap gluing; leading real phase specified additionally here.",
+      "git_blob": "9cadbfab1677a0ec6e021ad1279361c73e527332",
+      "sha256": "5f73fac2bac5056dd9d40b1576122c46c7e322c817f1714d28955425a84c6e96",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/BRIDGE_AUDIT.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "path": "research/astra-frontier-20261124/QUANTITATIVE_GLUING.md",
+      "claim": "bounded-multiplicity grafting",
+      "scope": "Source for finite-cylinder counting method; joint Archimedean extension here.",
+      "git_blob": "6e82806280af8933dc80decf3ed0286a48029c33",
+      "sha256": "5aacd699ddda089ff217ab1433799cf33d467eb85617abb846b07d4504adbcf3",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/QUANTITATIVE_GLUING.md"
+    },
+    {
+      "pr": 193,
+      "commit": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+      "path": "research/astra-global-synthesis-20261124/section/proof.md",
+      "claim": "sections 1–4; actual forward anchors and true minimum representatives",
+      "scope": "Written hypotheses reconstructed for direct floor-return attempt; no upstream Lean replay claimed.",
+      "git_blob": "400f2543b2a0f341675370443b68b8284b6840a2",
+      "sha256": "cbe95e8adf39ccf90253573005350260ee6ea0d67cb10c206108cbb624c59a02",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d35bdfd9d0c75effda50bbb8040c136482431e24/research/astra-global-synthesis-20261124/section/proof.md"
+    },
+    {
+      "pr": 193,
+      "commit": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+      "path": "research/astra-global-synthesis-20261124/arithmetic/optimality.md",
+      "claim": "absolute minimum-height widths",
+      "scope": "Examined for unrestricted corrected-clock closure; its spaced-clock hypothesis is retained.",
+      "git_blob": "9101fb4e5d08cb1439eff3ebe9eb26ac702e9021",
+      "sha256": "73516d04b396e5258f366340de5051504bef26de4b305b359edc688296320b9a",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d35bdfd9d0c75effda50bbb8040c136482431e24/research/astra-global-synthesis-20261124/arithmetic/optimality.md"
+    },
+    {
+      "pr": 193,
+      "commit": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+      "path": "research/astra-global-synthesis-20261124/arithmetic/window-control.md",
+      "claim": "finite all-inverse optimization on alternating signed phases",
+      "scope": "Changing finite source control, not an infinite ordinary realization.",
+      "git_blob": "c7283f68564b06bb7f204c82df531bc6675c956e",
+      "sha256": "1addd52b77e6fe9663d5b902ad4542757fd77024914fe1d6991d782ea1fa4dfe",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/d35bdfd9d0c75effda50bbb8040c136482431e24/research/astra-global-synthesis-20261124/arithmetic/window-control.md"
+    },
+    {
+      "pr": 197,
+      "commit": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+      "path": "research/ayh-resource-reset-20261124/continuation/HEAD_EDGE_RIGIDITY.md",
+      "claim": "power-sparse head-edge closing criterion",
+      "scope": "Focused written intake; missing power-saving upper bound is not supplied here.",
+      "git_blob": "0ced036b319ae4a593521e3b395d581af7dbe1e4",
+      "sha256": "6cbcc1784a9a5f3c89dc2214f5564e5101e558c21df4088836097c27a297daa8",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/9ed095c3b3386d66c1dba103117e8dda0268b7aa/research/ayh-resource-reset-20261124/continuation/HEAD_EDGE_RIGIDITY.md"
+    },
+    {
+      "pr": 188,
+      "commit": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "path": "research/astra-global-step-20261124/AUXILIARY_RESIDUES.md",
+      "claim": "AR1–AR6; same-source auxiliary residue statements",
+      "scope": "Focused written intake; no rate on rare ordinary-source contributions is imported.",
+      "git_blob": "cd6a4331955a0fe88c743e241fe9282b273a2a0c",
+      "sha256": "5883a8a76f015668fa6f8c8a5b5642b40d8c4a9b7ca29911112c894c3591f7fa",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d/research/astra-global-step-20261124/AUXILIARY_RESIDUES.md"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Qiang Wu and Lihong Wang",
+      "title": "On the irrationality measure of log 3",
+      "year": 2014,
+      "venue": "Journal of Number Theory 142, 264-273",
+      "locator": "Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "use": "Effective simultaneous linear-form lower exponent 4.1163051+epsilon. Publisher theorem and proof text inspected; kappa=17/4 used."
+    },
+    {
+      "authors": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "year": 2000,
+      "venue": "Izvestiya Mathematics 64:6, 1217-1269",
+      "locator": "Corollary 2.3, p.1219",
+      "url": "https://www.mathnet.ru/links/11696330cc866d273c92c771a63da235/im314_eng.pdf",
+      "use": "Fixed three-rational-log switch bounds; also a weaker effective alternative for two logs. Primary statement inspected."
+    },
+    {
+      "authors": "P. Erdos and P. Turan",
+      "title": "On a problem in the theory of uniform distribution. II",
+      "year": 1948,
+      "url": "https://users.renyi.hu/~p_erdos/1948-03.pdf",
+      "use": "Trigonometric discrepancy inequality; primary PDF inspected."
+    },
+    {
+      "authors": "Emre Yolcu, Scott Aaronson and Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "locator": "mixed binary/ternary rewriting system",
+      "use": "Full termination equivalence; this packet studies proper normalized executions."
+    },
+    {
+      "authors": "J.-H. Evertse",
+      "title": "On sums of S-units and linear recurrences",
+      "year": 1984,
+      "venue": "Compositio Mathematica 53, 225-244",
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "use": "Inherited fixed-dimensional height input through the pinned open-segment estimate; not newly formalized."
+    }
+  ],
+  "context_only_literature": [
+    {
+      "authors": "Lech Mazur",
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "date": "2026-09-06",
+      "url": "https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf",
+      "use": "Examined as a possible inverse-density closing route. No new theorem in this packet depends on accepting its analytic or formal verification claims; the abstract recurrence inference is disproved by ARITHMETIC_DENSITY."
+    },
+    {
+      "authors": "Terence Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "year": 2022,
+      "locator": "Propositions 1.14 and 1.17; Remarks 1.4 and 1.16",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F",
+      "use": "Primary source inspected for the attempted inverse-word moment estimate. No tilted-law extension, singular joint moment bound, or universal convergence is inferred."
+    }
+  ],
+  "late_closure_intake": {
+    "193": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+    "197": "9ed095c3b3386d66c1dba103117e8dda0268b7aa",
+    "188": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d"
+  }
+}

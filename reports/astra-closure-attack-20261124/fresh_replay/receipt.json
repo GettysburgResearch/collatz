@@ -1,0 +1,496 @@
+{
+  "started_utc": "2026-11-24T05:15:21.406621+00:00",
+  "source_commit": "4bec21d9257348588710a3c635af14f4486e72e8",
+  "source_tree": "8c4901528c023fe57ab34fe6768be87e26d0d6ad",
+  "checkout": "/workspace/scratch/ae8b5ba301f1/collatz",
+  "clean_before": true,
+  "tracked_files_present": 407,
+  "lean": "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "runs": [
+    {
+      "name": "lean-cycle_extension",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/cycle_extension.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_extension.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:21.583816+00:00",
+      "finished_utc": "2026-11-24T05:15:22.992715+00:00",
+      "elapsed_seconds": 1.409,
+      "exit_code": 0,
+      "stdout": "lean-cycle_extension.stdout.log",
+      "stderr": "lean-cycle_extension.stderr.log",
+      "stdout_sha256": "373a7d74da926b09d290115e0aadef913f6d7bae0409392bbc0d27a383e8c671",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_extension.lean",
+      "source_sha256": "c62c9105541ffd527a0c99c18a258693623764c42afda85348037c6157421a3d",
+      "fresh_object": "cycle_extension.olean",
+      "fresh_object_sha256": "bbaa1fe75a3efec0ec5f68df1e4b43d7f7dc4800c5c9a02edba8e65004829cda"
+    },
+    {
+      "name": "lean-cycle_two_centers",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/cycle_two_centers.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_two_centers.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:22.993380+00:00",
+      "finished_utc": "2026-11-24T05:15:23.460001+00:00",
+      "elapsed_seconds": 0.467,
+      "exit_code": 0,
+      "stdout": "lean-cycle_two_centers.stdout.log",
+      "stderr": "lean-cycle_two_centers.stderr.log",
+      "stdout_sha256": "e47f6b66d9696adfbcae23c4d5aa5171d498b6f57285bb32838cbc6ced300407",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_two_centers.lean",
+      "source_sha256": "d33fc5277403eeb0b7a273b400b6ab0085ad649cc4d7a1d3f5077dd3f044d450",
+      "fresh_object": "cycle_two_centers.olean",
+      "fresh_object_sha256": "4555f045bbf2dfeab718ff4c6c9187a12afcfa836499d5353b59b7500e945486"
+    },
+    {
+      "name": "lean-descent_Extension",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/descent_Extension.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_Extension.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:23.460609+00:00",
+      "finished_utc": "2026-11-24T05:15:28.723248+00:00",
+      "elapsed_seconds": 5.263,
+      "exit_code": 0,
+      "stdout": "lean-descent_Extension.stdout.log",
+      "stderr": "lean-descent_Extension.stderr.log",
+      "stdout_sha256": "55a2e9afdbbdb811a1e3d3c11a88dbf3ad75065eb95b1d26af3922b072e44071",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_Extension.lean",
+      "source_sha256": "053c2963d16ac25107c0e2a95cfbe924c3a0d6d9023d74e35941fbde6858b871",
+      "fresh_object": "descent_Extension.olean",
+      "fresh_object_sha256": "f05bedc7368d8e7aec1e2519835185bd7e74a6df62cb6687dc25f0c93a19ad2f"
+    },
+    {
+      "name": "lean-descent_Separated",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/descent_Separated.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_Separated.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:28.728574+00:00",
+      "finished_utc": "2026-11-24T05:15:38.062061+00:00",
+      "elapsed_seconds": 9.333,
+      "exit_code": 0,
+      "stdout": "lean-descent_Separated.stdout.log",
+      "stderr": "lean-descent_Separated.stderr.log",
+      "stdout_sha256": "eeafde550632efbf17402193563450a733b5bfcf0f62e583510d8277a3c720ec",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean",
+      "source_sha256": "db565fc09d38a450761c41cd1e01ad0de08ebcd8ceab90f12d4ead839404c16e",
+      "fresh_object": "descent_Separated.olean",
+      "fresh_object_sha256": "d81acd1cea683e591edd38c2e78abebacfea29769d89e9fbb9e38f012bf813a5"
+    },
+    {
+      "name": "lean-descent_Triple",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/descent_Triple.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_Triple.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:38.065589+00:00",
+      "finished_utc": "2026-11-24T05:15:44.963691+00:00",
+      "elapsed_seconds": 6.898,
+      "exit_code": 0,
+      "stdout": "lean-descent_Triple.stdout.log",
+      "stderr": "lean-descent_Triple.stderr.log",
+      "stdout_sha256": "3b67bb68784989cf834b333e706ab73cf81482e225bd60ae3bb54ee614bebe17",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_Triple.lean",
+      "source_sha256": "c77134e6062994a093f370ac24b79ff78d184b3043be565946afc6f8c8301033",
+      "fresh_object": "descent_Triple.olean",
+      "fresh_object_sha256": "bb240ab1e8482f757cc167472b27ef9e6874fc33b033ddd9cc476b0af404aa64"
+    },
+    {
+      "name": "lean-source_VirtualWindow",
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/closure-attack-published-replay/source_VirtualWindow.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/source_VirtualWindow.lean"
+      ],
+      "started_utc": "2026-11-24T05:15:44.966433+00:00",
+      "finished_utc": "2026-11-24T05:15:45.518444+00:00",
+      "elapsed_seconds": 0.552,
+      "exit_code": 0,
+      "stdout": "lean-source_VirtualWindow.stdout.log",
+      "stderr": "lean-source_VirtualWindow.stderr.log",
+      "stdout_sha256": "dd3e790c4db59f53d9f12f4b23da2a08b18fb74c5470e42ed9c7c2eef70bcfab",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/source_VirtualWindow.lean",
+      "source_sha256": "339a71ffcc7867ccf1dc419cc3a572b463a1bd6e47906659069acdf9e8c8409e",
+      "fresh_object": "source_VirtualWindow.olean",
+      "fresh_object_sha256": "3b19df9fc63858e1ecd71ec7a2ceec44a9d4d3d3bf0aee57befaacdd845fce3d"
+    },
+    {
+      "name": "python-cycle_closure_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_closure_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:45.519125+00:00",
+      "finished_utc": "2026-11-24T05:15:45.919208+00:00",
+      "elapsed_seconds": 0.4,
+      "exit_code": 0,
+      "stdout": "python-cycle_closure_controls.stdout.log",
+      "stderr": "python-cycle_closure_controls.stderr.log",
+      "stdout_sha256": "831f04e2516fea61c2323bdd64607484d72688203ccc231f91ab277e73c640d7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_closure_controls.py",
+      "source_sha256": "917e369bf83cfa0cc270ba27cddc755c7e92b29db4bbd6b23c817a13b4a06f02"
+    },
+    {
+      "name": "python-opt-cycle_closure_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_closure_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:45.919748+00:00",
+      "finished_utc": "2026-11-24T05:15:46.356006+00:00",
+      "elapsed_seconds": 0.436,
+      "exit_code": 0,
+      "stdout": "python-opt-cycle_closure_controls.stdout.log",
+      "stderr": "python-opt-cycle_closure_controls.stderr.log",
+      "stdout_sha256": "831f04e2516fea61c2323bdd64607484d72688203ccc231f91ab277e73c640d7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_closure_controls.py",
+      "source_sha256": "917e369bf83cfa0cc270ba27cddc755c7e92b29db4bbd6b23c817a13b4a06f02",
+      "identical_to_normal": true
+    },
+    {
+      "name": "python-cycle_extension",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_extension.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.356497+00:00",
+      "finished_utc": "2026-11-24T05:15:46.595522+00:00",
+      "elapsed_seconds": 0.239,
+      "exit_code": 0,
+      "stdout": "python-cycle_extension.stdout.log",
+      "stderr": "python-cycle_extension.stderr.log",
+      "stdout_sha256": "30212b7373eec2ed4b874a85466c6db74db299bda84d57009a853f7356034dde",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_extension.py",
+      "source_sha256": "ef4e4332d8a5ca96655593e2410aa4d75a912092480de8a7122cd5e8c4be8263"
+    },
+    {
+      "name": "python-opt-cycle_extension",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/cycle_extension.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.596007+00:00",
+      "finished_utc": "2026-11-24T05:15:46.866210+00:00",
+      "elapsed_seconds": 0.27,
+      "exit_code": 0,
+      "stdout": "python-opt-cycle_extension.stdout.log",
+      "stderr": "python-opt-cycle_extension.stderr.log",
+      "stdout_sha256": "30212b7373eec2ed4b874a85466c6db74db299bda84d57009a853f7356034dde",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/cycle_extension.py",
+      "source_sha256": "ef4e4332d8a5ca96655593e2410aa4d75a912092480de8a7122cd5e8c4be8263",
+      "identical_to_normal": true
+    },
+    {
+      "name": "python-descent_Extension",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_Extension.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.866717+00:00",
+      "finished_utc": "2026-11-24T05:15:46.895542+00:00",
+      "elapsed_seconds": 0.029,
+      "exit_code": 0,
+      "stdout": "python-descent_Extension.stdout.log",
+      "stderr": "python-descent_Extension.stderr.log",
+      "stdout_sha256": "9f071843cc993abb8c8af1a7b06728a35441693b6d121d33ec0ee09e652810b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_Extension.py",
+      "source_sha256": "ade990b43306cb464cdbbca4ae2563048e0512fc64a360743059080882d26181"
+    },
+    {
+      "name": "python-opt-descent_Extension",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_Extension.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.895931+00:00",
+      "finished_utc": "2026-11-24T05:15:46.921637+00:00",
+      "elapsed_seconds": 0.026,
+      "exit_code": 0,
+      "stdout": "python-opt-descent_Extension.stdout.log",
+      "stderr": "python-opt-descent_Extension.stderr.log",
+      "stdout_sha256": "9f071843cc993abb8c8af1a7b06728a35441693b6d121d33ec0ee09e652810b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_Extension.py",
+      "source_sha256": "ade990b43306cb464cdbbca4ae2563048e0512fc64a360743059080882d26181",
+      "identical_to_normal": true
+    },
+    {
+      "name": "python-descent_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.922113+00:00",
+      "finished_utc": "2026-11-24T05:15:46.970642+00:00",
+      "elapsed_seconds": 0.049,
+      "exit_code": 0,
+      "stdout": "python-descent_controls.stdout.log",
+      "stderr": "python-descent_controls.stderr.log",
+      "stdout_sha256": "68cce8892c3ca6bf9ffd21f8ceaa11ff7dad97876ca1f64759144ed048c8da77",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_controls.py",
+      "source_sha256": "9b0008aeb3859bc51f5bb665c68f6dec14c44e3e5284f8a5c93b93e4584c032b"
+    },
+    {
+      "name": "python-opt-descent_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/descent_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:46.971092+00:00",
+      "finished_utc": "2026-11-24T05:15:47.057579+00:00",
+      "elapsed_seconds": 0.086,
+      "exit_code": 0,
+      "stdout": "python-opt-descent_controls.stdout.log",
+      "stderr": "python-opt-descent_controls.stderr.log",
+      "stdout_sha256": "68cce8892c3ca6bf9ffd21f8ceaa11ff7dad97876ca1f64759144ed048c8da77",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/descent_controls.py",
+      "source_sha256": "9b0008aeb3859bc51f5bb665c68f6dec14c44e3e5284f8a5c93b93e4584c032b",
+      "identical_to_normal": true
+    },
+    {
+      "name": "python-source_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/source_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:47.058094+00:00",
+      "finished_utc": "2026-11-24T05:15:48.070932+00:00",
+      "elapsed_seconds": 1.013,
+      "exit_code": 0,
+      "stdout": "python-source_controls.stdout.log",
+      "stderr": "python-source_controls.stderr.log",
+      "stdout_sha256": "7501999522ece143c68138674dacac10b3a104654e1de047c4359fa690f5e2b4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/source_controls.py",
+      "source_sha256": "f7a714bcdd83a17d41a3b332350d8261820e25bf36b3e74c4f748eaee276296b"
+    },
+    {
+      "name": "python-opt-source_controls",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-closure-attack-20261124/source_controls.py"
+      ],
+      "started_utc": "2026-11-24T05:15:48.071583+00:00",
+      "finished_utc": "2026-11-24T05:15:49.070020+00:00",
+      "elapsed_seconds": 0.998,
+      "exit_code": 0,
+      "stdout": "python-opt-source_controls.stdout.log",
+      "stderr": "python-opt-source_controls.stderr.log",
+      "stdout_sha256": "7501999522ece143c68138674dacac10b3a104654e1de047c4359fa690f5e2b4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/astra-closure-attack-20261124/source_controls.py",
+      "source_sha256": "f7a714bcdd83a17d41a3b332350d8261820e25bf36b3e74c4f748eaee276296b",
+      "identical_to_normal": true
+    },
+    {
+      "name": "repository-validation",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "started_utc": "2026-11-24T05:15:49.070600+00:00",
+      "finished_utc": "2026-11-24T05:15:49.645980+00:00",
+      "elapsed_seconds": 0.575,
+      "exit_code": 0,
+      "stdout": "repository-validation.stdout.log",
+      "stderr": "repository-validation.stderr.log",
+      "stdout_sha256": "6316fd3c60a2fd6de703f77f3f6911adef06a59022a65a4493214b37d89cb787",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "axioms": [
+    {
+      "declaration": "Collatz.CyclePartition.centered_telescope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/cycle_extension.lean"
+    },
+    {
+      "declaration": "Collatz.TwoCenter.displacement",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/cycle_two_centers.lean"
+    },
+    {
+      "declaration": "Collatz.TwoCenter.bezout_payment",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/cycle_two_centers.lean"
+    },
+    {
+      "declaration": "Collatz.RampMerger.light_paid_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Extension.lean"
+    },
+    {
+      "declaration": "Collatz.RampMerger.paid_three_light_core",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Extension.lean"
+    },
+    {
+      "declaration": "Collatz.RampMerger.ramp_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Extension.lean"
+    },
+    {
+      "declaration": "Collatz.SeparatedDescent.separated_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean"
+    },
+    {
+      "declaration": "Collatz.SeparatedDescent.integral",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean"
+    },
+    {
+      "declaration": "Collatz.SeparatedDescent.shadow_edge",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean"
+    },
+    {
+      "declaration": "Collatz.SeparatedDescent.smaller_boundary",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean"
+    },
+    {
+      "declaration": "Collatz.SeparatedDescent.descent_all_phases",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Separated.lean"
+    },
+    {
+      "declaration": "Collatz.TriplePaid.triple_paid_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/descent_Triple.lean"
+    },
+    {
+      "declaration": "Collatz.FixedSourceWindow.virtual_window",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source": "research/astra-closure-attack-20261124/source_VirtualWindow.lean"
+    }
+  ],
+  "scope": "Six new Std-only source modules, five exact finite controls in ordinary/optimized Python, and repository integrity. Analytic and stationary arguments are not Lean-checked.",
+  "source_hashes": {
+    "research/astra-closure-attack-20261124/cycle_extension.lean": "c62c9105541ffd527a0c99c18a258693623764c42afda85348037c6157421a3d",
+    "research/astra-closure-attack-20261124/cycle_two_centers.lean": "d33fc5277403eeb0b7a273b400b6ab0085ad649cc4d7a1d3f5077dd3f044d450",
+    "research/astra-closure-attack-20261124/descent_Extension.lean": "053c2963d16ac25107c0e2a95cfbe924c3a0d6d9023d74e35941fbde6858b871",
+    "research/astra-closure-attack-20261124/descent_Separated.lean": "db565fc09d38a450761c41cd1e01ad0de08ebcd8ceab90f12d4ead839404c16e",
+    "research/astra-closure-attack-20261124/descent_Triple.lean": "c77134e6062994a093f370ac24b79ff78d184b3043be565946afc6f8c8301033",
+    "research/astra-closure-attack-20261124/source_VirtualWindow.lean": "339a71ffcc7867ccf1dc419cc3a572b463a1bd6e47906659069acdf9e8c8409e",
+    "research/astra-closure-attack-20261124/cycle_closure_controls.py": "917e369bf83cfa0cc270ba27cddc755c7e92b29db4bbd6b23c817a13b4a06f02",
+    "research/astra-closure-attack-20261124/cycle_extension.py": "ef4e4332d8a5ca96655593e2410aa4d75a912092480de8a7122cd5e8c4be8263",
+    "research/astra-closure-attack-20261124/descent_Extension.py": "ade990b43306cb464cdbbca4ae2563048e0512fc64a360743059080882d26181",
+    "research/astra-closure-attack-20261124/descent_controls.py": "9b0008aeb3859bc51f5bb665c68f6dec14c44e3e5284f8a5c93b93e4584c032b",
+    "research/astra-closure-attack-20261124/source_controls.py": "f7a714bcdd83a17d41a3b332350d8261820e25bf36b3e74c4f748eaee276296b"
+  },
+  "finished_utc": "2026-11-24T05:15:49.652202+00:00",
+  "clean_after": true,
+  "unchanged_head": true,
+  "unchanged_sources": true,
+  "result": "PASS",
+  "lean_modules": 6,
+  "python_scripts": 5,
+  "audited_declarations": 13
+}

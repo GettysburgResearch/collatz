@@ -1,0 +1,7 @@
+'Collatz.LiteratureInverseOffsets.labeled_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.LiteratureInverseOffsets.adjacent_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.LiteratureInverseOffsets.exact_gap_gcd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.LiteratureInverseOffsets.distortion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.LiteratureInverseOffsets.source_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.LiteratureInverseOffsets.first_floor' depends on axioms: [propext, Quot.sound]
+'Collatz.LiteratureInverseOffsets.offset_class' depends on axioms: [propext, Classical.choice, Quot.sound]

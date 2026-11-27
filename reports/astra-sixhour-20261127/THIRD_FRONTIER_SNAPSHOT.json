@@ -1,0 +1,733 @@
+{
+  "observed_utc": "2026-11-27T03:02:39Z",
+  "scope": "All returned open-PR metadata; selected changed-head guides and mathematical notes read. No bulk formal or numerical replay of these external heads.",
+  "pull_requests": [
+    {
+      "number": 210,
+      "title": "Critical-record rational rigidity and a three-place Subspace Theorem attack",
+      "head": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "branch": "research/critical-record-rational-rigidity-20261125",
+      "updated_at": "2026-11-25T17:15:26Z"
+    },
+    {
+      "number": 209,
+      "title": "Lean: exact 1024-clock descent and simultaneous 116-rank coverage",
+      "head": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "branch": "research/astra-ultra-closure-20261125",
+      "updated_at": "2026-11-25T08:03:31Z"
+    },
+    {
+      "number": 208,
+      "title": "Research: OpenAI machinery, actual tower mergers, and clock bounds",
+      "head": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "branch": "research/openai-machinery-20261125",
+      "updated_at": "2026-11-25T07:57:00Z"
+    },
+    {
+      "number": 207,
+      "title": "Collatz: diffusive aggregate exact rows and near-diagonal cycle discrimination",
+      "head": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "branch": "research/diffusive-central-row-closure-20261124",
+      "updated_at": "2026-11-24T17:52:18Z"
+    },
+    {
+      "number": 206,
+      "title": "Prove sharp Collatz pair and triple clocks and strengthen fixed-source tests",
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "branch": "research/lean-clock-packing-20261124",
+      "updated_at": "2026-11-26T23:35:16Z"
+    },
+    {
+      "number": 205,
+      "title": "Collatz: sub-square-root ordinary excursion, companion entropy and inverse-law limits",
+      "head": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "branch": "research/astra-fixed-target-closure-20261124",
+      "updated_at": "2026-11-24T15:09:45Z"
+    },
+    {
+      "number": 204,
+      "title": "Collatz: fixed-target paired rows at exponent 1/5 and full-denominator screening limits",
+      "head": "5d4698b692ec102b44cf77a59930a2a80b4104fd",
+      "branch": "research/astra-joint-closure-20261124",
+      "updated_at": "2026-11-24T14:50:32Z"
+    },
+    {
+      "number": 203,
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "head": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "branch": "research/mixed-adic-basin-density-20261124",
+      "updated_at": "2026-11-24T15:10:41Z"
+    },
+    {
+      "number": 202,
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "branch": "research/synchronized-long-basin-blocks-20261124",
+      "updated_at": "2026-11-24T15:10:39Z"
+    },
+    {
+      "number": 201,
+      "title": "Collatz: formal finite-mass criterion and ordinary-source advances",
+      "head": "a577c1f19a00b8219dcde9744814813ddd636e66",
+      "branch": "gpt62/killed-green-head-closure-20261124",
+      "updated_at": "2026-11-27T02:43:58Z"
+    },
+    {
+      "number": 200,
+      "title": "Collatz: certified fifth moment and broader cycle restrictions",
+      "head": "df2f17a117bea06bb34040a5a97e7dc9711d9871",
+      "branch": "research/gpt62-regularity-rigidity-20261124",
+      "updated_at": "2026-11-27T02:19:09Z"
+    },
+    {
+      "number": 199,
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "branch": "research/optimal-critical-ancestors-20261124",
+      "updated_at": "2026-11-24T07:10:44Z"
+    },
+    {
+      "number": 198,
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "head": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "branch": "research/astra-frontier-audit-20261124",
+      "updated_at": "2026-11-24T04:33:32Z"
+    },
+    {
+      "number": 197,
+      "title": "Collatz: ordinary wall exclusions, all-source clocks, and fixed-source bridge tests",
+      "head": "1f0f496fbea37792439feada6106eaaff596bcd1",
+      "branch": "research/ayh-resource-reset-20261124",
+      "updated_at": "2026-11-26T21:42:55Z"
+    },
+    {
+      "number": 196,
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "head": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "branch": "research/astra-orbit-cycle-audit-20261124",
+      "updated_at": "2026-11-24T04:32:50Z"
+    },
+    {
+      "number": 195,
+      "title": "Collatz: actual witness minima and original-law clock limits",
+      "head": "3fa7ef4a0011b35447a70f587b400878d5ea8ebe",
+      "branch": "research/astra-global-closure-20261124",
+      "updated_at": "2026-11-27T01:49:29Z"
+    },
+    {
+      "number": 194,
+      "title": "Collatz: bounded carry births, binary substitution rigidity, and verified finite kernels",
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "branch": "research/astra-independent-audit-20261124",
+      "updated_at": "2026-11-24T04:16:49Z"
+    },
+    {
+      "number": 193,
+      "title": "Collatz: explicit rational Green proposal, ordinary-source probes, and cycle arithmetic",
+      "head": "b69d47f7fc0a8c6c3f227b0afcaf69b28cc92845",
+      "branch": "research/astra-universal-descent-20261124",
+      "updated_at": "2026-11-27T02:04:36Z"
+    },
+    {
+      "number": 192,
+      "title": "Collatz: complete denominators, marked ordinary traces and original-source descent",
+      "head": "75eac0cbc744469ae2886bc2f140685c484e9fe7",
+      "branch": "research/astra-central-closure-20261124",
+      "updated_at": "2026-11-27T01:25:12Z"
+    },
+    {
+      "number": 191,
+      "title": "Collatz: two-sided full-denominator packing, noncoprime norm, and smaller scalar shadow",
+      "head": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "branch": "research/two-sided-cycle-packing-and-noncoprime-norm-20261124",
+      "updated_at": "2026-11-24T03:33:36Z"
+    },
+    {
+      "number": 190,
+      "title": "Collatz: p-adic Mahler rigidity for binary uniform and primitive substitution scripts",
+      "head": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "branch": "research/gpt62-mahler-physical-scripts-20261124",
+      "updated_at": "2026-11-24T03:32:38Z"
+    },
+    {
+      "number": 189,
+      "title": "Stationary critical collision rigidity and rational-scalar carry compression",
+      "head": "a390a1a4c75ee95db98b4b683d17c503f4e4a118",
+      "branch": "gpt62/stationary-carry-rigidity-20261124",
+      "updated_at": "2026-11-24T04:01:31Z"
+    },
+    {
+      "number": 188,
+      "title": "Collatz: Lean persistent descent, all-rotation cycle bounds, and residue rigidity",
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "branch": "research/scalar-carry-cocycle-20261124",
+      "updated_at": "2026-11-24T06:48:33Z"
+    },
+    {
+      "number": 187,
+      "title": "Collatz: exclude all finite digit-weight carry scripts via fixed-source factor arithmetic",
+      "head": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "branch": "research/lean-fixed-source-repeat-obstruction-20261124",
+      "updated_at": "2026-11-24T03:25:22Z"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "branch": "research/deep-machinery-guide-20261122",
+      "updated_at": "2026-11-21T22:51:35Z"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "branch": "research/literature-orbit-closure-20261121",
+      "updated_at": "2026-11-23T01:18:35Z"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "branch": "research/lean-band-coupling-20261121",
+      "updated_at": "2026-11-21T15:45:03Z"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "branch": "research/band-completion-20261121",
+      "updated_at": "2026-11-22T05:23:43Z"
+    },
+    {
+      "number": 182,
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "branch": "research/dyadic-band-descent-20261121",
+      "updated_at": "2026-11-24T09:44:42Z"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "branch": "research/lean-global-target-20261121",
+      "updated_at": "2026-11-21T08:47:54Z"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity",
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "branch": "research/lean-ordinary-closure-20261121",
+      "updated_at": "2026-11-23T04:29:06Z"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "branch": "research/lean-descent-20261121",
+      "updated_at": "2026-11-21T08:41:05Z"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "branch": "research/lean-global-20261121",
+      "updated_at": "2026-11-23T05:27:44Z"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: all-template bounds, witness charge, and density-free germs",
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "branch": "research/lean-exact-witness-global-20261121",
+      "updated_at": "2026-11-23T07:15:29Z"
+    },
+    {
+      "number": 176,
+      "title": "Collatz checkpoint 18: finite ordinary repairs and all-gap collisions",
+      "head": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "branch": "research/lean-global-resolvent-20261121",
+      "updated_at": "2026-11-23T04:36:00Z"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: unconditional cycle budgets and fixed-source arithmetic",
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "branch": "research/lean-global-closure-20261121",
+      "updated_at": "2026-11-23T05:42:14Z"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "branch": "claude/collatz-prs-discussion-qq2bvk",
+      "updated_at": "2026-11-21T09:39:39Z"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "branch": "research/lean-universal-basin-20261121",
+      "updated_at": "2026-11-21T14:34:32Z"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "branch": "research/global-certificate-closure-20261121",
+      "updated_at": "2026-11-20T23:57:31Z"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "head": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "branch": "research/adaptive-closure-20261121",
+      "updated_at": "2026-11-20T23:37:41Z"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "head": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "branch": "research/global-forcing-20261121",
+      "updated_at": "2026-11-20T23:31:14Z"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "head": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "branch": "research/certificate-renewal-20261121",
+      "updated_at": "2026-11-20T23:18:58Z"
+    },
+    {
+      "number": 168,
+      "title": "Research: balanced return languages, witness descent, and stationary regularity",
+      "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "branch": "research/closure-frontier-20261121",
+      "updated_at": "2026-11-20T23:12:52Z"
+    },
+    {
+      "number": 167,
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces",
+      "head": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "branch": "research/least-failure-closure-20261121",
+      "updated_at": "2026-11-20T23:01:36Z"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "head": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "branch": "research/grh-certificate-closure-20261120",
+      "updated_at": "2026-11-20T22:17:47Z"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "head": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "branch": "research/certificate-transfer-intake-20261120",
+      "updated_at": "2026-11-20T22:13:11Z"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "head": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "branch": "research/witness-closure-512-2026-11-20",
+      "updated_at": "2026-11-20T23:39:04Z"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "head": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "branch": "research/deep-reverse-closure-20261120",
+      "updated_at": "2026-11-20T21:53:00Z"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "head": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "branch": "research/creative-closure-20261120",
+      "updated_at": "2026-11-20T20:56:47Z"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "head": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "branch": "research/source-rigidity-20261120",
+      "updated_at": "2026-11-20T20:41:11Z"
+    },
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "head": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "branch": "research/closure-attacks-20261120",
+      "updated_at": "2026-11-20T20:33:03Z"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "head": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "branch": "research/allhands-global-closure-20261120",
+      "updated_at": "2026-11-20T20:29:02Z"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "head": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "branch": "research/ordinary-basin-closure-20261120",
+      "updated_at": "2026-11-20T20:27:56Z"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "head": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "branch": "research/global-closure-20261120",
+      "updated_at": "2026-11-20T20:01:36Z"
+    },
+    {
+      "number": 156,
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards",
+      "head": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "branch": "research/global-rigidity-20261120",
+      "updated_at": "2026-11-20T19:41:09Z"
+    },
+    {
+      "number": 155,
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit",
+      "head": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "branch": "research/gemini-dirichlet-global-20261120",
+      "updated_at": "2026-11-20T19:32:28Z"
+    },
+    {
+      "number": 154,
+      "title": "Research: prime-height dispersion and restricted five-ray rigidity",
+      "head": "fe40bb6f88e8094290ef01207d9bf7c4798d35d0",
+      "branch": "research/structural-reset-20261120",
+      "updated_at": "2026-11-20T19:26:04Z"
+    },
+    {
+      "number": 153,
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds",
+      "head": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "branch": "research/fixed-integer-descent-20261120",
+      "updated_at": "2026-11-20T18:43:31Z"
+    },
+    {
+      "number": 152,
+      "title": "Audit Gemini routes: actual transport domains, spectral boundary, and radical Padé classification",
+      "head": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "branch": "research/gemini-global-closure-20261120",
+      "updated_at": "2026-11-20T18:55:04Z"
+    },
+    {
+      "number": 151,
+      "title": "Construct recursive ordinary merger certificates and reduce signed targets",
+      "head": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "branch": "research/ordinary-merger-selection-20261120",
+      "updated_at": "2026-11-20T18:41:36Z"
+    },
+    {
+      "number": 150,
+      "title": "Bound sparse Collatz returns and classify local affine merger membership",
+      "head": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "branch": "research/pointwise-closure-20261120",
+      "updated_at": "2026-11-20T19:35:18Z"
+    },
+    {
+      "number": 149,
+      "title": "Extend merger-clock analysis and audit forward Collatz closure bounds",
+      "head": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "branch": "research/forward-inverse-defect-20261120",
+      "updated_at": "2026-11-20T17:41:36Z"
+    },
+    {
+      "number": 148,
+      "title": "Research: ordinary merger guards, inverse certificates, and cycle refinements",
+      "head": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "branch": "research/ordinary-bridge-20261120",
+      "updated_at": "2026-11-20T18:48:11Z"
+    },
+    {
+      "number": 147,
+      "title": "Certify a 13/6 inverse compiler and derive robust finite-credit completeness",
+      "head": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "branch": "research/robust-inverse-credit-20261120",
+      "updated_at": "2026-11-20T16:52:49Z"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "branch": "research/upper-bit-merger-cost-20261120",
+      "updated_at": "2026-11-21T07:06:20Z"
+    },
+    {
+      "number": 145,
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30",
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "branch": "research/six-branch-prefix-obstruction-20261118",
+      "updated_at": "2026-11-18T20:22:20Z"
+    },
+    {
+      "number": 144,
+      "title": "research: direct pressure dissipation and collision-free moment coercivity",
+      "head": "df756794e1d8de5cabff148ef433df505e3b68b4",
+      "branch": "research/pressure-diagonal-coercivity-20261031",
+      "updated_at": "2026-10-31T20:37:33Z"
+    },
+    {
+      "number": 143,
+      "title": "research: finite-clock pressure energy and a quadratic-moment route to decay",
+      "head": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+      "branch": "research/pressure-decay-20261031",
+      "updated_at": "2026-10-31T20:38:06Z"
+    },
+    {
+      "number": 142,
+      "title": "Research swarm: positive inverse-density bounds, contact fans, and beeping clocks",
+      "head": "b21f94f5772df5cfcaa5f5afd073d5889e75d294",
+      "branch": "research/beeping-density-swarm-20261030",
+      "updated_at": "2026-10-31T19:36:49Z"
+    },
+    {
+      "number": 141,
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent",
+      "head": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "branch": "research/ay-swarm-20261030",
+      "updated_at": "2026-10-31T19:30:48Z"
+    },
+    {
+      "number": 140,
+      "title": "research: polynomial invariant rigidity, finite defects, and algebraic certificates",
+      "head": "1092737688b0bbc159820d7095722ad680f1fa1d",
+      "branch": "research/novel-swarm-20261030",
+      "updated_at": "2026-10-31T20:41:55Z"
+    },
+    {
+      "number": 139,
+      "title": "research: fixed-source ternary splices and a common H restart budget",
+      "head": "c0e51c5bd90eb16fdf1caa294b6b74e972c58d1a",
+      "branch": "research/source-budget-20261018",
+      "updated_at": "2026-10-17T23:14:22Z"
+    },
+    {
+      "number": 138,
+      "title": "research: anchored capacities, exact dyadic completion, and odd-edge repair",
+      "head": "a3f006a1281939156b2068c5be5248bcf3c61dd1",
+      "branch": "research/anchored-cuts-constructive-20260925",
+      "updated_at": "2026-09-25T08:31:41Z"
+    },
+    {
+      "number": 137,
+      "title": "research: arithmetic component rigidity and residue-locked inverse geometry",
+      "head": "2911b53930cbd31f623d3e0586ca3613854f0143",
+      "branch": "research/component-rigidity-20260925",
+      "updated_at": "2026-09-25T04:48:57Z"
+    },
+    {
+      "number": 136,
+      "title": "research: escape restarts with whole-cylinder return certificates",
+      "head": "fc55ecf265f23b263983fb7eebd95a4c4b0f0787",
+      "branch": "research/astra-escape-restarts-20260921",
+      "updated_at": "2026-09-22T00:54:26Z"
+    },
+    {
+      "number": 135,
+      "title": "research: fixed-source splicing, whole valuation strata, and consecutive escape types",
+      "head": "40c59116ba9a3f94565d9782e4ffe3c97cc0ce71",
+      "branch": "research/fixed-source-splicing-20260921",
+      "updated_at": "2026-09-21T19:50:21Z"
+    },
+    {
+      "number": 134,
+      "title": "research: thick predecessor basins for every ternary-unit target and complete root-capped block inverses",
+      "head": "025f2683c19bfedc3eeff0303206b20c889c8005",
+      "branch": "research/endpoint-transplant-root-blocks-20260921",
+      "updated_at": "2026-09-21T19:45:41Z"
+    },
+    {
+      "number": 133,
+      "title": "research: pointwise shadow obstructions, rooted escape lifts and derivative escape",
+      "head": "9ad7b5b9c0eafacbecb1b185616ae52e573998cf",
+      "branch": "research/astra-pointwise-signatures-20260921",
+      "updated_at": "2026-09-21T19:45:09Z"
+    },
+    {
+      "number": 132,
+      "title": "research: finite least-source escapes and complete affine-shadow classification",
+      "head": "7687eec1ac364009d644cb8d015f1fe3b28730cc",
+      "branch": "research/astra-affine-completeness-20260920",
+      "updated_at": "2026-09-20T08:46:32Z"
+    },
+    {
+      "number": 131,
+      "title": "research: merger subcells in every dyadic cell, all-intercept shadows, and isolated-point rigidity",
+      "head": "e092da549c8c50e8a9430f88fb721ea51fe34d91",
+      "branch": "research/delayed-shadow-density-20260920",
+      "updated_at": "2026-09-20T08:43:00Z"
+    },
+    {
+      "number": 130,
+      "title": "research: complete affine-merger classification and persistent-companion return budgets",
+      "head": "53cf9b53bd568b1ab67601b00e789b464198e42b",
+      "branch": "research/universal-finite-synchronization-20260920",
+      "updated_at": "2026-09-20T08:38:41Z"
+    },
+    {
+      "number": 129,
+      "title": "research: anchored returns, two R bridges, and compressed original companions",
+      "head": "9d362511343c97790d42808c363b090a3342b45f",
+      "branch": "research/anchored-r-bridges-20260920",
+      "updated_at": "2026-09-20T08:14:26Z"
+    },
+    {
+      "number": 128,
+      "title": "research: universal shadow atlas and strict escape families",
+      "head": "edd48df6e9c678fa4a65b4ed8f41421dfc92518b",
+      "branch": "research/astra-universal-shadow-atlas-20260920",
+      "updated_at": "2026-09-20T08:00:04Z"
+    },
+    {
+      "number": 127,
+      "title": "research: all-gap merger compiler and successive escape-type gates",
+      "head": "f5e7ec9a23fa691d71a5a9f518cbff5529a5ea00",
+      "branch": "research/paired-escape-gaps-20260920",
+      "updated_at": "2026-09-20T01:51:42Z"
+    },
+    {
+      "number": 126,
+      "title": "research: shadow switching completes the missing seed entry",
+      "head": "7e996feb24cc5d8579d75b39e0b909ffc03b3bcb",
+      "branch": "research/astra-shadow-switching-20260920",
+      "updated_at": "2026-09-19T22:02:40Z"
+    },
+    {
+      "number": 125,
+      "title": "research: forced comparison entry, valuation bridges and companion ladder",
+      "head": "081dd4fb8af75b3b237a5eb4cef28b84bb5329be",
+      "branch": "research/paired-valuation-ladder-20260920",
+      "updated_at": "2026-09-20T01:53:31Z"
+    },
+    {
+      "number": 124,
+      "title": "research: adaptive companions remove the second-exit restriction",
+      "head": "1d4dfc103055648def3db73860778a383a91ea3c",
+      "branch": "research/astra-adaptive-companions-20260919",
+      "updated_at": "2026-09-19T21:05:47Z"
+    },
+    {
+      "number": 123,
+      "title": "research: reusable hard-exit returns and arbitrary finite paired compositions",
+      "head": "bf0696f888442c82a4c6cdc1df36becf8550295a",
+      "branch": "research/astra-hard-return-20260919",
+      "updated_at": "2026-09-19T20:33:01Z"
+    },
+    {
+      "number": 122,
+      "title": "research: proposed two-exit lower-source merging with exact certificates",
+      "head": "65c91ecea97d9ebf931eb1d9284b7950182a298e",
+      "branch": "research/astra-exit-merging-20260919",
+      "updated_at": "2026-09-19T20:13:33Z"
+    },
+    {
+      "number": 120,
+      "title": "feat: Collatz Observatory v0.3 paired investigations and research adapters",
+      "head": "af36459bc34e2f57a363545261ddcf59a92b0196",
+      "branch": "codex/collatz-observatory-v0.3-investigations",
+      "updated_at": "2026-09-18T20:07:34Z"
+    },
+    {
+      "number": 119,
+      "title": "feat: Collatz Observatory v0.1 — runnable exact visual research desk",
+      "head": "f0bf47d9c4253c3a16617f4b70388a7a4ba4e1de",
+      "branch": "codex/collatz-observatory-v0.1",
+      "updated_at": "2026-09-18T12:13:39Z"
+    },
+    {
+      "number": 117,
+      "title": "theory: backward prefix rotation, common-rank merging and an exact coverage obstruction",
+      "head": "d414cffc3a4119767df30f5ee0d5ee5856c5050f",
+      "branch": "research/astra-suffix-rotation-2026-09-09",
+      "updated_at": "2026-09-09T01:28:08Z"
+    },
+    {
+      "number": 116,
+      "title": "Integration candidate: reviewed tails, clearance and adaptive ranks",
+      "head": "30439f73267c5cdc69365975856b6692dc5b2979",
+      "branch": "integration/tails-ranks-2026-09-08",
+      "updated_at": "2026-09-08T12:33:11Z"
+    },
+    {
+      "number": 114,
+      "title": "Review post-integration research: tails, clearance, linear frontiers and actual-prefix ranks",
+      "head": "65235530e9cf4dda1c5850421b16b7189a491f36",
+      "branch": "review/post-integration-2026-09-08",
+      "updated_at": "2026-09-08T12:33:43Z"
+    },
+    {
+      "number": 106,
+      "title": "theory: linear frontier and automatic actual-prefix ranks",
+      "head": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3",
+      "branch": "research/astra-linear-frontier-2026-09-07",
+      "updated_at": "2026-09-08T10:55:57Z"
+    },
+    {
+      "number": 105,
+      "title": "Research: low word ranks give physical ancestors; sharp square-root spectrum",
+      "head": "423a0180a0f6a89da7adc1ab4bad950a6dc79ef6",
+      "branch": "agent/astra-tail-transport-01/critical-tails",
+      "updated_at": "2026-09-09T00:18:49Z"
+    },
+    {
+      "number": 92,
+      "title": "theory: fifth three-route attack — unsafe repayment, rank moments, and compulsory excursions",
+      "head": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "branch": "agent/astra-three-routes-01/three-route-offense",
+      "updated_at": "2026-09-05T18:31:50Z"
+    },
+    {
+      "number": 91,
+      "title": "theory: three-route arithmetic renewal, source charge, and unbounded rank repayment",
+      "head": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "branch": "agent/astra-three-route-01/2026-09-05-arithmetic-renewal",
+      "updated_at": "2026-09-05T18:31:34Z"
+    },
+    {
+      "number": 90,
+      "title": "theory: Astra unequal-clock reductions and ternary precision budget",
+      "head": "78ac7c8489f1df81230402808b1f4b77b18fae73",
+      "branch": "agent/astra-critical-mass-01/89-end-to-end-attempt",
+      "updated_at": "2026-09-05T18:31:25Z"
+    },
+    {
+      "number": 88,
+      "title": "theory: isolate fixed-height power-saving bottleneck and entropy wall",
+      "head": "c28922fb6d1c070bf86a76192f40bc9ea3edd67c",
+      "branch": "agent/fixed-height-power-saving-attack",
+      "updated_at": "2026-09-05T18:31:13Z"
+    }
+  ],
+  "selected_reads": [
+    {
+      "pr": 193,
+      "head": "b69d47f7fc0a8c6c3f227b0afcaf69b28cc92845",
+      "files": [
+        "research/astra-six-hour-20261127/root/RATIONAL_GREEN.md"
+      ]
+    },
+    {
+      "pr": 200,
+      "head": "df2f17a117bea06bb34040a5a97e7dc9711d9871",
+      "files": [
+        "research/six-hour-20261127/FOURTH_CHECKPOINT.md",
+        "research/six-hour-20261127/cycles/THIRD_LAYER_FIFTH_EXTENSION.md",
+        "research/six-hour-20261127/cycles/FIFTH_MOMENT_SOURCE_REDUCTION.md",
+        "research/six-hour-20261127/cycles/ALL_EVEN_MOMENT_BARRIER.md"
+      ]
+    },
+    {
+      "pr": 201,
+      "head": "a577c1f19a00b8219dcde9744814813ddd636e66",
+      "files": [
+        "research/six-hour-20261127/SIXTH_CHECKPOINT.md",
+        "research/six-hour-20261127/arithmetic/RIVAL_BAND_OCCUPATION.md"
+      ]
+    }
+  ]
+}

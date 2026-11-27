@@ -1,0 +1,8 @@
+# Final upstream recheck
+
+After the scientific checkpoint was frozen, the root re-queried PR193, PR197, PR195, PR182 and PR201. The middle three retained the heads in SOURCES.json. Two had advanced:
+
+* PR193: 5f160a843750f209ea1251dfb01ea0b23e532fd6. The root read the ordinary-boundary packet's transfer/ALL_EVENTUAL_MEETINGS.md and spectral/PHYSICAL_TAILS.md. The former locates the full eventual collision mass in a central finite window, with the upper deadline valid under any coupling of the stated marginals. Its error is absolute o(1), not a summable or arbitrary rare-event conditional estimate. Its independent collision limit is the sum of squared component densities; that value remains unknown. The latter compares an entire ordinary future after a residue selection with a single ordinary comparison source, at an explicitly changed scale and clock. It is not a product replacement for two arms of the same source. These claims were read at their stated written-proof scope, not independently rebuilt.
+* PR201: 084b983fbec6f3d2120ef101946754431f82874e. The root read continuation/README.md. Its exact-grade spreading retains the two roots and signed grade differences, so it does not bound their discordance. Its phase-count estimate applies to branching populations and explicitly permits increasing ternary denominator depth. Neither gives an opposing bound on the actual forward trajectory or eliminates its fixed ordinary contribution. Its Lean candidate remains uncompiled in that source's report; no independent build is claimed here.
+
+These late reads add no premise to the published mathematical arguments. Both continuations explicitly leave universal Collatz convergence open. The scientific checkpoint and its fresh replay remain unchanged.

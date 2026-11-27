@@ -1,0 +1,4 @@
+'Collatz.CanonicalSource.run_add' depends on axioms: [propext]
+'Collatz.CanonicalSource.all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CanonicalSource.normalized_reaches_child' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CanonicalSource.adjacent_mersenne' depends on axioms: [propext, Classical.choice, Quot.sound]

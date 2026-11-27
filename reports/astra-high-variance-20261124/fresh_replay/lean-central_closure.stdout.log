@@ -1,0 +1,2 @@
+'Collatz.CentralClosure.universal_iff_floor_meeting' depends on axioms: [propext, Quot.sound]
+'Collatz.CentralClosure.paired_lift' depends on axioms: [propext, Classical.choice, Quot.sound]

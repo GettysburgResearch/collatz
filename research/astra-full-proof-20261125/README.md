@@ -1,0 +1,22 @@
+# Full-proof attempt: actual certificates, cycle excursions and escape rigidity
+
+**Collatz remains OPEN.** This pass re-evaluates the latest repository work and attacks the universal steps in three directions. The deliverable is a Lean-checked set of arithmetic and topological kernels, new written deductions, independent reviews, and a final proposal identifying the missing inference. It is not an unconditional proof of convergence.
+
+The map throughout is the shortcut map: `T n = n/2` for even `n`, and `T n = (3*n+1)/2` for odd `n`. A positive ordinary input is good if some actual finite iterate is 1. All uses of rational reference trajectories, rational cycles and analytic series are identified separately.
+
+## Results and their scope
+
+| Attack | New result | Evidence boundary |
+|---|---|---|
+| [Actual-certificate transport](transport/README.md) | A signed-reference lift works for arbitrary prefix length and upper rank. Matching signed phases gives a literal meeting of two ordinary trajectories. A replacement's upper hit and odd count are constructed explicitly. Contracting periodic reference centers give uniform eventual height descent for every positive terminal cofactor. | The exact kernels are in `SignedPrefix.lean`. No theorem supplies a useful replacement or contracting center for every possible defect. A rank-two classification and its finite certificate table have separate written/replay scope. |
+| [Certificate-length test](transport/NoEarlyDrop.lean) | Infinitely many ordinary sources have a first two-odd upper hit, yet every positive lower clock through that hit exceeds the source. | This is an unrestricted certificate test, not a remaining canonical `17 mod 48` least-defect family. Whether any of these lower sources is bad remains open. |
+| [Cycle occupation](cycle/README.md) | Every sufficiently long ordinary positive cycle has more than `p/300` odd phases above `12s/5`, even with arbitrarily large excursions. A complete-denominator alternative quantifies the rational case. | Written entropy proof using published Wu–Wang; Lean proves the clipped clock budget and terminal injection. Larger constants use a separately identified preprint. High-occupation cycles remain possible under the theorem. |
+| [Escape rigidity](global/README.md) | A fixed ordinary trajectory is eventually periodic if it has a finite-dimensional rational dynamical representation over a characteristic-zero field. Finite recurrence fits of fixed order and uniformly bounded degree already suffice when their denominators are nonzero on the fitted data. Eventual periodicity is also equivalent to a scalar Mahler equation for its full weighted parity series. | Lean proves the Noetherian/clopen-parity core and the finite weighted telescope. The algebraic instantiation, finite-fit argument and Mahler transfer are written proofs; the latter invokes a published lifting theorem. No universal model or Mahler equation has been established. |
+
+The [two-order entropy construction](cycle/ORDER_ENTROPY.md) tests a proposed closing strategy quantitatively. Both actual rank orders, the width ceiling, the two-gap alphabet, occupation, and all-shift mismatch still permit a physical rational family whose union of windows has entropy greater than `ln(3)/3`. Every retained example has a large reduced denominator. An ordinary-integer or least-basin argument can therefore still improve that count; the geometric tests alone cannot give the proposed uniform exponent.
+
+## Final proposal and review
+
+[FINAL_PROPOSAL.md](FINAL_PROPOSAL.md) specifies the full target, explains why the new kernels do not yet discharge it, and gives the exact all-source bridge still needed. The [source intake](../../reports/astra-full-proof-20261125/LATEST_INTAKE.md) freezes the current PR197, PR195, PR209, PR208, PR190 and PR194 inputs. The [root review](../../reports/astra-full-proof-20261125/ROOT_REVIEW.md) records reconstructed arguments and independent review boundaries.
+
+The [replay driver](../../reports/astra-full-proof-20261125/replay.py) rebuilds every local dependency and new Lean module in a new object directory, audits every public theorem, runs each Python control with and without optimization, and executes the complete repository regression validator. [Execution evidence](../../reports/astra-full-proof-20261125/VERIFICATION.md) distinguishes that replay from written proofs and from external inputs. Repository validation does not prove the infinite deductions.

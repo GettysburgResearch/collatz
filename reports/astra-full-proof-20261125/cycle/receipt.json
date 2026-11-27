@@ -1,0 +1,25 @@
+{
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean": {
+    "exit_code": 0,
+    "output": "'Collatz.ExcursionBudget.common_word_dvd' depends on axioms: [propext, Quot.sound]\n'Collatz.ExcursionBudget.common_word_terminal' depends on axioms: [propext, Quot.sound]\n'Collatz.ExcursionBudget.clipped_product' depends on axioms: [propext, Quot.sound]\n'Collatz.ExcursionBudget.initially_low_budget' depends on axioms: [propext, Quot.sound]",
+    "command": "lean -DwarningAsError=true research/astra-full-proof-20261125/cycle/ExcursionBudget.lean"
+  },
+  "python": {
+    "exit_code": 0,
+    "output": "{\"four_site_count\": [{\"checked_edges\": 41, \"count\": 3145728, \"exceeds_ternary_threshold\": false, \"four_site_cells\": 5, \"period\": 41}, {\"checked_edges\": 306, \"count\": 3413240734767066113172734492505941151484724618723328, \"exceeds_ternary_threshold\": true, \"four_site_cells\": 37, \"period\": 306}], \"marked_endpoints_with_multiplicity\": 105231, \"repeated_valuation_word_congruences\": 11714, \"strict_exponent_checks\": 3, \"windows\": 30012}",
+    "command": "python -B research/astra-full-proof-20261125/cycle/check.py"
+  },
+  "python_optimized": {
+    "exit_code": 0,
+    "output": "{\"four_site_count\": [{\"checked_edges\": 41, \"count\": 3145728, \"exceeds_ternary_threshold\": false, \"four_site_cells\": 5, \"period\": 41}, {\"checked_edges\": 306, \"count\": 3413240734767066113172734492505941151484724618723328, \"exceeds_ternary_threshold\": true, \"four_site_cells\": 37, \"period\": 306}], \"marked_endpoints_with_multiplicity\": 105231, \"repeated_valuation_word_congruences\": 11714, \"strict_exponent_checks\": 3, \"windows\": 30012}",
+    "command": "python -O -B research/astra-full-proof-20261125/cycle/check.py"
+  },
+  "sha256": {
+    "research/astra-full-proof-20261125/cycle/ExcursionBudget.lean": "006094ce75d6a44e553c5ecebaa1b2917dd8c56b5b7c349126fb0b08701dd3e6",
+    "research/astra-full-proof-20261125/cycle/ORDER_ENTROPY.md": "9e17389ccfdb85059035d583a0d9a8d7d45cba504d5cec55bc6fc82f4c2f86ae",
+    "research/astra-full-proof-20261125/cycle/README.md": "2313a419c35700485e4e289c7325e00ad8fc2e69b670d4c137a73367fe0c7ecb",
+    "research/astra-full-proof-20261125/cycle/TWO_GAPS.md": "4850290d69ec8e4ab1eeeb128704f507bdbc9dff0a34456f580f899c1bfa6a82",
+    "research/astra-full-proof-20261125/cycle/check.py": "f894c1bde9f09cd5b79af3f6ffb2476d57db7c65732293e10dc41ccb555b2fdb"
+  }
+}

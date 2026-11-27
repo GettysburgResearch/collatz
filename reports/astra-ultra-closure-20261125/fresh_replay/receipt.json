@@ -1,0 +1,1045 @@
+{
+  "schema": "collatz-astra-ultra-closure-replay/v1",
+  "started_utc": "2026-11-25T08:09:17.264170+00:00",
+  "scope": "new Lean kernels, three exact project dependencies and finite controls; not the infinite written arguments",
+  "commit": "7cbc58c754a2a2653a21e9cebe8654099132fe5f",
+  "tree": "a71c91f5778d5c554416f2564f219a938782a745",
+  "tracked_file_count": 839,
+  "sources_before": {
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-ultra-closure-20261125/README.md": "35dba29d35d40e4670d884c8bfa998327616aa211b79048da93ef3a9288d10f7",
+    "research/astra-ultra-closure-20261125/SOURCES.md": "9852d596a782b138f941a892e4b34fc08f6b1ba70e87ee4bd60a96993bfe4a22",
+    "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean": "45304517f441d787aee0c1270fa0b666a32b77a0b449242bc743ccd174dc7257",
+    "research/astra-ultra-closure-20261125/bridge/README.md": "1fbf3332348bb473f7e1124cd5e61fad67db4e5cb65775550fcc11c1a9b1941f",
+    "research/astra-ultra-closure-20261125/bridge/check_bridge.py": "67151afacdaa524cbe7015ecffd90623364d12dcce6407fa5bc5dba6540fd3b5",
+    "research/astra-ultra-closure-20261125/core/ExponentTransport.lean": "f5549c2aefd583fb93f2f2608ac829dc0eacfdf1d1d7fde6b9ba0862f0780a70",
+    "research/astra-ultra-closure-20261125/core/README.md": "e4be46ea497825e9e3fc0922cb0f7eb2a2c22215bed181c92e32c770915b9057",
+    "research/astra-ultra-closure-20261125/core/TowerLaps.lean": "a720fdbe7c0736027ce38d1af46012e1a1e569e20271e8364f3526b606ab2028",
+    "research/astra-ultra-closure-20261125/cycle/RATIONAL_ORDERS.md": "db31ba3c0eb3e96e01c8bb665abb35e085071ee3720760c173f07372594db73e",
+    "research/astra-ultra-closure-20261125/cycle/README.md": "1cad9b91cb357c5d6b74a3101b33840a08d80ca7b9322e1841694ed8d6dfed5e",
+    "research/astra-ultra-closure-20261125/cycle/RankGaps.lean": "dc60c3d85f7c951c053374101a12034775e3b3806526d3f8cd987748eb833f92",
+    "research/astra-ultra-closure-20261125/cycle/check.py": "3d3122997fab1439b2de28d7ff933e3347b62ecbc1d814e86d00483fc02f2d08",
+    "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean": "4e63a191bcac8a18cb1d3d9601a78a82c4c9211cfca325d2ff07c48b53045e2a",
+    "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean": "bc96bafaf34d992f6cc0c7aea30e2eff1b6e4f84c7ce57fe868e4592c976d603",
+    "research/astra-ultra-closure-20261125/intake/README.md": "0f0c372b304887cf03dc727bb490c8846a9fbf3a5577ff3756ec2d5694b3ab21",
+    "research/astra-universal-closure-20261124/global/SmoothCore.lean": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean and Mathlib dependency objects reused; all nine project modules rebuilt in a new empty object directory",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/mathlib4/.lake/build/lib/lean:/workspace/scratch/6304d9a39499/toolchain/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.221,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-arithmetic-SourceDeletion",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/SourceDeletion.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.976,
+      "stdout_sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "76028647dbd1ed5f03b0fa1f1fa50cb6bfc961463c31217a651b71b098f32dbb"
+    },
+    {
+      "label": "lean-minimal-MinimumFailure",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/MinimumFailure.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-minimum-source-20261124/minimal/MinimumFailure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.118,
+      "stdout_sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d3ff246ac46c8dbfa1db4e908fecf3f77f161b142c2f4ac38369b3149573214d"
+    },
+    {
+      "label": "lean-global-SmoothCore",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/SmoothCore.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-universal-closure-20261124/global/SmoothCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.337,
+      "stdout_sha256": "7123e91ba50de2e77827b62871aa4aaf809a277a5d8874d0971cf6eabc95e88f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "6626388272ea8617145c60086fc66b4504b6f06ab7f3f35d13544f9d97e266e9"
+    },
+    {
+      "label": "lean-bridge-PairedReturn",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/PairedReturn.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/bridge/PairedReturn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.571,
+      "stdout_sha256": "b767e28186628b8a315c63b666a7480cb6ff5bbcae4f0485a53e0f8168820e76",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "a584eec4c8a14af254b06f42037a80c34b0bd21a186f78300071e03048173928"
+    },
+    {
+      "label": "lean-core-ExponentTransport",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/ExponentTransport.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/core/ExponentTransport.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.667,
+      "stdout_sha256": "5601361dcc6049514f3ee5e7eb1963277f4a7034b747a09b4216267a61f371d0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "1f3bc99f2f355b39bfd345fef83874e473f13b573683f32946047351c3dcb16f"
+    },
+    {
+      "label": "lean-core-TowerLaps",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/TowerLaps.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/core/TowerLaps.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.815,
+      "stdout_sha256": "62a12fb8d4dbb1c7ef883bb935eab749f6913f1bec2761e4f94bbee45c9c86ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ac3db70b678b10cd210068b7398a587354554aa06156c2d57fe88e2b2891d88b"
+    },
+    {
+      "label": "lean-cycle-RankGaps",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/RankGaps.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/cycle/RankGaps.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.673,
+      "stdout_sha256": "32ef36a6bdce7a9e075dcb6922651aaa1ca76d3fd755d8e201ae6854632428cd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "593c993dcfa5d49a9d0434e5c55e77719253a9cf35d02f4bb5a2f2a975b1f1c3"
+    },
+    {
+      "label": "lean-intake-DiffusiveRows",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/DiffusiveRows.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.764,
+      "stdout_sha256": "a9ee5898d8f556918719d3ca6a7c04257afa7e5cdc82f5acea1569340d76d351",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "8e68b80fe082ad7cc48644ff38ec6a9a95acde4ac1e9e4f3bdcd7c482a08277c"
+    },
+    {
+      "label": "lean-intake-MinimumClosure",
+      "argv": [
+        "/workspace/scratch/6304d9a39499/toolchain/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/objects/MinimumClosure.olean",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/intake/MinimumClosure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.758,
+      "stdout_sha256": "daedb346276c4de61d493449aae82a25ac3e238624f52f044bb08c0ced811555",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "3eb2810ec9fc34d4ae2f74ca4a938473ca36b29d04d2cc8d3f3290721909adbd"
+    },
+    {
+      "label": "python-bridge-check_bridge",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/bridge/check_bridge.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.071,
+      "stdout_sha256": "fe228bbec927f4991cc1470483cd8ba0a59aab4b7c3127f083b7fa8373badf16",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-bridge-check_bridge",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/bridge/check_bridge.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.062,
+      "stdout_sha256": "fe228bbec927f4991cc1470483cd8ba0a59aab4b7c3127f083b7fa8373badf16",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-cycle-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/cycle/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.091,
+      "stdout_sha256": "f0b10be6ccf19a035e2ba560cf2677e331b23c025d96b3e520f9c75c2ae2fa56",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-cycle-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/ultra-fresh-science/research/astra-ultra-closure-20261125/cycle/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.102,
+      "stdout_sha256": "f0b10be6ccf19a035e2ba560cf2677e331b23c025d96b3e520f9c75c2ae2fa56",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--regressions",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/ultra-clean-replay/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 6.791,
+      "stdout_sha256": "77c3bb43d5f9e4a70c401783c4c94f0f037a752c6cac9005baf12b11998f08f1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_paths",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_row",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.delete_digit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lower_representative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below_cutoff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_one",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_step",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_run",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_step",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_eq_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exists_least_discordance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_below",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_cutoff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.upper_bad",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_triples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_multiples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exclude_seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_reduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.exists_first_tower",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.base_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.base_is_unit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.strict_base_of_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.smooth_reservoir",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.odd_run_end",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.same_three",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.higher_three",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.same_four",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.lower_four",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.forbid_small_base_exit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.forbid_two_power_return",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.next_base_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-universal-closure-20261124/global/SmoothCore.lean",
+      "declaration": "Collatz.SmoothCore.universal_iff_frontier_merger",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.ascent_certificate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.canonical_anchor17",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_floor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.cost_of_drop",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.ascent_cost",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.cost_compose",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.budget_excludes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.plus_one_power",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_pure",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_forces_unit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_iff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.exponent_return",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_neighbor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_descent",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.paired_anchor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.anchor_smaller",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.transport_hit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.paired_ascent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.triple_not_zero_rank",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_shape",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_identity",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_certificate",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean",
+      "declaration": "Collatz.PairedReturn.rank_one_lower",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/core/ExponentTransport.lean",
+      "declaration": "Collatz.ExponentTransport.exponent_transport",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/core/ExponentTransport.lean",
+      "declaration": "Collatz.ExponentTransport.certificate_transport",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/core/ExponentTransport.lean",
+      "declaration": "Collatz.ExponentTransport.transported_offset",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/core/TowerLaps.lean",
+      "declaration": "Collatz.TowerLaps.base_gt_lap_power",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/core/TowerLaps.lean",
+      "declaration": "Collatz.TowerLaps.no_pure_power_laps",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.markedPast_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.cleanPast_dvd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.rank_gap_budget",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.equal_corrections_give_gap",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.lift_octaves",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/RankGaps.lean",
+      "declaration": "CollatzRankGaps.ordered_lap_budget",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.walk_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.balanced_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.central_window",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.repeat_forces_period",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.concatenate_carry",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.suffix_carry_monotone",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.moving_target_normalization",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.gate_terminal",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.gate_time",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.cycle_lap",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean",
+      "declaration": "DiffusiveRows.iterated_cycle_defect",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.good_of_path",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.relative_carry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.negative_crossing",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.relative_floor",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.good_step",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.good_iterate",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.smaller_multiple_contradiction",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "declaration": "MinimumClosure.collatz_of_minimum_and_descent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-ultra-closure-20261125/bridge/check_bridge.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-ultra-closure-20261125/cycle/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+    "research/astra-ultra-closure-20261125/README.md": "35dba29d35d40e4670d884c8bfa998327616aa211b79048da93ef3a9288d10f7",
+    "research/astra-ultra-closure-20261125/SOURCES.md": "9852d596a782b138f941a892e4b34fc08f6b1ba70e87ee4bd60a96993bfe4a22",
+    "research/astra-ultra-closure-20261125/bridge/PairedReturn.lean": "45304517f441d787aee0c1270fa0b666a32b77a0b449242bc743ccd174dc7257",
+    "research/astra-ultra-closure-20261125/bridge/README.md": "1fbf3332348bb473f7e1124cd5e61fad67db4e5cb65775550fcc11c1a9b1941f",
+    "research/astra-ultra-closure-20261125/bridge/check_bridge.py": "67151afacdaa524cbe7015ecffd90623364d12dcce6407fa5bc5dba6540fd3b5",
+    "research/astra-ultra-closure-20261125/core/ExponentTransport.lean": "f5549c2aefd583fb93f2f2608ac829dc0eacfdf1d1d7fde6b9ba0862f0780a70",
+    "research/astra-ultra-closure-20261125/core/README.md": "e4be46ea497825e9e3fc0922cb0f7eb2a2c22215bed181c92e32c770915b9057",
+    "research/astra-ultra-closure-20261125/core/TowerLaps.lean": "a720fdbe7c0736027ce38d1af46012e1a1e569e20271e8364f3526b606ab2028",
+    "research/astra-ultra-closure-20261125/cycle/RATIONAL_ORDERS.md": "db31ba3c0eb3e96e01c8bb665abb35e085071ee3720760c173f07372594db73e",
+    "research/astra-ultra-closure-20261125/cycle/README.md": "1cad9b91cb357c5d6b74a3101b33840a08d80ca7b9322e1841694ed8d6dfed5e",
+    "research/astra-ultra-closure-20261125/cycle/RankGaps.lean": "dc60c3d85f7c951c053374101a12034775e3b3806526d3f8cd987748eb833f92",
+    "research/astra-ultra-closure-20261125/cycle/check.py": "3d3122997fab1439b2de28d7ff933e3347b62ecbc1d814e86d00483fc02f2d08",
+    "research/astra-ultra-closure-20261125/intake/DiffusiveRows.lean": "4e63a191bcac8a18cb1d3d9601a78a82c4c9211cfca325d2ff07c48b53045e2a",
+    "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean": "bc96bafaf34d992f6cc0c7aea30e2eff1b6e4f84c7ce57fe868e4592c976d603",
+    "research/astra-ultra-closure-20261125/intake/README.md": "0f0c372b304887cf03dc727bb490c8846a9fbf3a5577ff3756ec2d5694b3ab21",
+    "research/astra-universal-closure-20261124/global/SmoothCore.lean": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db"
+  },
+  "finished_utc": "2026-11-25T08:09:52.336133+00:00"
+}

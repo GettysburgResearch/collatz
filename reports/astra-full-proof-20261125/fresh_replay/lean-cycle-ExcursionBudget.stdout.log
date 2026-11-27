@@ -1,0 +1,4 @@
+'Collatz.ExcursionBudget.common_word_dvd' depends on axioms: [propext, Quot.sound]
+'Collatz.ExcursionBudget.common_word_terminal' depends on axioms: [propext, Quot.sound]
+'Collatz.ExcursionBudget.clipped_product' depends on axioms: [propext, Quot.sound]
+'Collatz.ExcursionBudget.initially_low_budget' depends on axioms: [propext, Quot.sound]

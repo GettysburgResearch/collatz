@@ -1,0 +1,350 @@
+{
+  "schema": "collatz-astra-global-budget-replay/v1",
+  "started_utc": "2026-11-24T11:04:26.023602+00:00",
+  "scope": "new Lean kernels and finite controls; not the infinite written arguments",
+  "commit": "174f5ce593473f49962ab253548693183314391e",
+  "tree": "4bb883a89afe58477867420752bad9467ac8fe8f",
+  "sources_before": {
+    "research/astra-global-budget-20261124/README.md": "5617e4c36eb17bafcd6d84ddbc99619d3f20284992aaf9eb97696be230b345b0",
+    "research/astra-global-budget-20261124/SOURCES.json": "7411734d6d2fde9cdb9c411c160a75cb3e6b6cb4b27f5a3b9b528c1af5ca02dc",
+    "research/astra-global-budget-20261124/arithmetic/LATEST_CONNECTIONS.md": "c7a547c5658a9aa2478ec02b06e26b2f812ac23e2e9190a8e9f63aeabc6e2b2b",
+    "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean": "4c66045a2683d7b2be590ad8831db993747c1f1b4d6e590355662f5259ca4e03",
+    "research/astra-global-budget-20261124/arithmetic/README.md": "7991ea19020b0e24d073e6e47e6a38dc3181b738273d8d329e8593ee34813779",
+    "research/astra-global-budget-20261124/arithmetic/check.py": "5a46489f3c0661d61e585763ef193d3e942e501c752cea7d64fe521fbc2db8a9",
+    "research/astra-global-budget-20261124/cost/BalancedCost.lean": "b8a9e8064a98edc628898b37f77549da6285ef65ba7ff338b8c78ec14ef7d28f",
+    "research/astra-global-budget-20261124/cost/LATEST_CONNECTIONS.md": "a5b9ffc49a2b27dc034859ac6d57fd7cd392e857111aa8da609f18a96b168c30",
+    "research/astra-global-budget-20261124/cost/README.md": "17c1850405c9a9be3efec332903bd106c4ca1ffc5c9bb051bb7c545fcc94a788",
+    "research/astra-global-budget-20261124/cost/check.py": "792a92df11ba5bdbff5d845bc34e0cfeebf46c7abb7d9a9fbd9007a5f538b497",
+    "research/astra-global-budget-20261124/renewal/CellPressure.lean": "3fab8878494cbc49fa10e31a1f9d093db2efeb5b7c9145279349848513b8b4e3",
+    "research/astra-global-budget-20261124/renewal/LATEST_CONNECTIONS.md": "52cd511f9ea7eb879dc1ae15fc40c0760c353198300ca4e24e69d35284d55d8f",
+    "research/astra-global-budget-20261124/renewal/README.md": "b0795766591a06fb0e875048dd411f3e669b49a4f103a8daf5d5a0022fa7b00b",
+    "research/astra-global-budget-20261124/renewal/check.py": "5fe643d3ea026821e94d7e6cfd4c899bfea80ae6eee3bab157c708ef10d82e85"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned prebuilt Mathlib/package runtime reused",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/checkpoints/global-budget-fresh-174f5ce5/objects:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.213,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-arithmetic-ParentCertificate",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/global-budget-fresh-174f5ce5/objects/ParentCertificate.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.619,
+      "stdout_sha256": "b10250654a11e98446bfdf0a2c138330befa5ce2ed3cacc64dc762615f3cfd87",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "eedb4a903d17b1f871838b46aec04d6885ee109be10af2116155fd90cca9822e"
+    },
+    {
+      "label": "lean-cost-BalancedCost",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/global-budget-fresh-174f5ce5/objects/BalancedCost.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/cost/BalancedCost.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 11.267,
+      "stdout_sha256": "742305b6cdfc5a755d847df3b6d7f568519e0631c64cc48165ecc2b212e3f3d5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "9b4345dbda0d8275e07bf630b44ba1e9cfb3f93bd3452c6fa6e71565047089a9"
+    },
+    {
+      "label": "lean-renewal-CellPressure",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/global-budget-fresh-174f5ce5/objects/CellPressure.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/renewal/CellPressure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.216,
+      "stdout_sha256": "5fd00ca42e70d9e96767529df775dfe17d269ceaa2dd3e6f4184d1493cf90d5d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "168a6e6a4bfd39e158d61a7fbcfa41c5b55f9bb82517c69233d8a82e841e0480"
+    },
+    {
+      "label": "python-arithmetic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.493,
+      "stdout_sha256": "ce6b2ba2044dc056d4befb939a535de582d834f0b2112af2849bac8e81fba69f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-arithmetic-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.613,
+      "stdout_sha256": "ce6b2ba2044dc056d4befb939a535de582d834f0b2112af2849bac8e81fba69f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-cost-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/cost/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.149,
+      "stdout_sha256": "beb0cbf6408140f7eab225a08aefd8057926c327db4f8e6b359942f46bcd1f05",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-cost-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/cost/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.18,
+      "stdout_sha256": "beb0cbf6408140f7eab225a08aefd8057926c327db4f8e6b359942f46bcd1f05",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-renewal-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.722,
+      "stdout_sha256": "c65894e1dba0aac1286ebb977ea2c921d17abca36152415eff1b03723fe1ae09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-renewal-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-global-budget-20261124/renewal/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.678,
+      "stdout_sha256": "c65894e1dba0aac1286ebb977ea2c921d17abca36152415eff1b03723fe1ae09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/global-budget-fresh-174f5ce5/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.217,
+      "stdout_sha256": "8b83a14da0a9ae5c517a160e8c2496edbd28e908e7a6fbef0f5f516134f96fe1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.numerator_unit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.recover_complete",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.recover_sound",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.terminal_powers",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.two_clock",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean",
+      "declaration": "Collatz.ParentCertificate.paired_clock_budget",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.sameWord",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.growth",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.dictionaryCollision",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.balancedBudget",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.carryGain",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/BalancedCost.lean",
+      "declaration": "Collatz.BalancedCost.gradeCutoff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/renewal/CellPressure.lean",
+      "declaration": "Collatz.PairedCellPressure.heavy_cells",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-global-budget-20261124/renewal/CellPressure.lean",
+      "declaration": "Collatz.PairedCellPressure.prescribed_row",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-global-budget-20261124/arithmetic/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-global-budget-20261124/cost/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-global-budget-20261124/renewal/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-global-budget-20261124/README.md": "5617e4c36eb17bafcd6d84ddbc99619d3f20284992aaf9eb97696be230b345b0",
+    "research/astra-global-budget-20261124/SOURCES.json": "7411734d6d2fde9cdb9c411c160a75cb3e6b6cb4b27f5a3b9b528c1af5ca02dc",
+    "research/astra-global-budget-20261124/arithmetic/LATEST_CONNECTIONS.md": "c7a547c5658a9aa2478ec02b06e26b2f812ac23e2e9190a8e9f63aeabc6e2b2b",
+    "research/astra-global-budget-20261124/arithmetic/ParentCertificate.lean": "4c66045a2683d7b2be590ad8831db993747c1f1b4d6e590355662f5259ca4e03",
+    "research/astra-global-budget-20261124/arithmetic/README.md": "7991ea19020b0e24d073e6e47e6a38dc3181b738273d8d329e8593ee34813779",
+    "research/astra-global-budget-20261124/arithmetic/check.py": "5a46489f3c0661d61e585763ef193d3e942e501c752cea7d64fe521fbc2db8a9",
+    "research/astra-global-budget-20261124/cost/BalancedCost.lean": "b8a9e8064a98edc628898b37f77549da6285ef65ba7ff338b8c78ec14ef7d28f",
+    "research/astra-global-budget-20261124/cost/LATEST_CONNECTIONS.md": "a5b9ffc49a2b27dc034859ac6d57fd7cd392e857111aa8da609f18a96b168c30",
+    "research/astra-global-budget-20261124/cost/README.md": "17c1850405c9a9be3efec332903bd106c4ca1ffc5c9bb051bb7c545fcc94a788",
+    "research/astra-global-budget-20261124/cost/check.py": "792a92df11ba5bdbff5d845bc34e0cfeebf46c7abb7d9a9fbd9007a5f538b497",
+    "research/astra-global-budget-20261124/renewal/CellPressure.lean": "3fab8878494cbc49fa10e31a1f9d093db2efeb5b7c9145279349848513b8b4e3",
+    "research/astra-global-budget-20261124/renewal/LATEST_CONNECTIONS.md": "52cd511f9ea7eb879dc1ae15fc40c0760c353198300ca4e24e69d35284d55d8f",
+    "research/astra-global-budget-20261124/renewal/README.md": "b0795766591a06fb0e875048dd411f3e669b49a4f103a8daf5d5a0022fa7b00b",
+    "research/astra-global-budget-20261124/renewal/check.py": "5fe643d3ea026821e94d7e6cfd4c899bfea80ae6eee3bab157c708ef10d82e85"
+  },
+  "finished_utc": "2026-11-24T11:04:46.427004+00:00"
+}

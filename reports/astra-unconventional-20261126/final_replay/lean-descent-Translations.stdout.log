@@ -1,0 +1,4 @@
+'Collatz.TernaryPortal.paired_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TernaryPortal.paired_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.TernaryPortal.four_cross' depends on axioms: [propext, Quot.sound]
+'Collatz.TernaryPortal.no_paired_four' depends on axioms: [propext, Quot.sound]

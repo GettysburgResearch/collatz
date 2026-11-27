@@ -1,0 +1,5 @@
+'Collatz.ParentRows.appendRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ParentRows.undoSameBranch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ParentRows.initialParityGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ParentRows.firstNonunitGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ParentRows.initialRunDefect' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'Collatz.OrdinaryBasinControl.avoidsForever' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryBasinControl.predecessorFloors' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryBasinControl.attainingSources' does not depend on any axioms

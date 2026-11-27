@@ -1,0 +1,550 @@
+{
+  "schema": "collatz-astra-high-variance-replay/v1",
+  "started_utc": "2026-11-24T07:20:47.104589+00:00",
+  "scope": "exact new sources, fresh Lean objects, finite controls, repository integrity",
+  "commit": "182a44fac3567d8bf1a450935d64d7ffe52593e6",
+  "tree": "5c537f3a961459473a9898a4a08ac0747787d3a5",
+  "sources_before": {
+    "research/astra-high-variance-20261124/ARITHMETIC_COST.md": "7ae8dd65a63e9fc3b9ad28288bc323c7ae0c57acef78775b480b727d95e7c5a3",
+    "research/astra-high-variance-20261124/ARITHMETIC_DENSITY.md": "74a16338719e28c8c4c3adbeb1369c69f9af2ac0e3ea01d462dffd3151a301b0",
+    "research/astra-high-variance-20261124/ARITHMETIC_FLOOR.md": "3250dff2a54635f3eb2329df57ccc88a80f63715d5e10d959b56178d7e2be1dc",
+    "research/astra-high-variance-20261124/ARITHMETIC_INVERSE.md": "73d2bff82b78882929dbcbb5639b75a89149c69de42c45672d744bb297ef8b9b",
+    "research/astra-high-variance-20261124/ARITHMETIC_MACRO.md": "1ffe7e4f62f66de827310f8ddb44b016c19193e7a37f1b3b9531bd8d68d5e946",
+    "research/astra-high-variance-20261124/ARITHMETIC_RETURN.md": "ce002cfe38fdb860c4de2073fd9831164d1a40e5f016979be997cd71f7c45aa0",
+    "research/astra-high-variance-20261124/ARITHMETIC_REVIEW.md": "01c98adc9d9e47d1a93d9add90158ba13b05e55beeae8ccd924c5754968692bc",
+    "research/astra-high-variance-20261124/CENTRAL_CLOSURE.md": "6cea9d9d8693c54ad7bdc53d654813a43537a4e30252420b19e4755514240d78",
+    "research/astra-high-variance-20261124/CENTRAL_DESCENT.md": "4928c209520e9b21107436807f2a08a6da89a826156a3f9330a148fe305e75fc",
+    "research/astra-high-variance-20261124/CENTRAL_RETURN.md": "af62b0ea0639bf5f87ef107a3a2ab3276fd1c49605275c74ddbd45aff5e37179",
+    "research/astra-high-variance-20261124/DESCENT_ALL_HEADERS.md": "0e540711722bd47b67781c53abb74cfd9599f7b557e1533fdf09a9819184a770",
+    "research/astra-high-variance-20261124/DESCENT_MACRO.md": "a340608dcdbd28e5fa4460ac5a970e3f3639cca7ac5a359a5f508562eda69549",
+    "research/astra-high-variance-20261124/DESCENT_PAID_RUNS.md": "6d862ce247ffe386c6eb604f9199f41c52a17df21a205731a1bd465221fdfeca",
+    "research/astra-high-variance-20261124/DESCENT_PAIR.md": "a75cd718765b883c9ae722dc0504e5463262f1b8b225838e87247614aff57030",
+    "research/astra-high-variance-20261124/README.md": "5308eb4c5f42fa41a6c5dd2a4e2d81cbd247df9a73803fe3ed6e4c0e194aa0de",
+    "research/astra-high-variance-20261124/REWRITING_FRONT.md": "2c9e3b6e9c9a4400f98ee5d8faa363d67afd5f6006f284d5bfcd9099e89a5285",
+    "research/astra-high-variance-20261124/REWRITING_RETURN.md": "2d7c62ba905c7fec0d52546edaf80504dfb95646f7b4d5c5172b714af35b2d74",
+    "research/astra-high-variance-20261124/REWRITING_REVIEW.md": "2ba482121cec46aa9d236b5f0bb3de1cf058c2c6d6ab1e4f00938d08b4216db3",
+    "research/astra-high-variance-20261124/REWRITING_VARIATION.md": "b5cdbc543e54be0163d4228e6731ea9df7dc455375fb4c7de88633c0ca31db54",
+    "research/astra-high-variance-20261124/ROOT_REVIEW.md": "4db5764470ecb8cec3eb876ed1109be93544580c8cefffac9e60424454bb1c8c",
+    "research/astra-high-variance-20261124/SOURCES.json": "a05f2459144780d84465e5d944ac84fe3a313d87bb43d5f38f32ae8192986619",
+    "research/astra-high-variance-20261124/arithmetic_controls.py": "742a952b70a414f448dd05bb58cfa9bfbcb5b6127012adc671af026955a49d89",
+    "research/astra-high-variance-20261124/arithmetic_equal_clock.lean": "1ab600da34aef0f5b05b66018cf7afde8612b1ad8fb5c8f318d0971bf396b0dd",
+    "research/astra-high-variance-20261124/arithmetic_macro.py": "cd0f854bb93a64d908e932da16cb1868ba468bb039594a297ebf95d1851800b5",
+    "research/astra-high-variance-20261124/central_closure.lean": "6d6ce5a808c3be413426ffc49e7daa474240a14152f0201c637ce3d9852d5d0c",
+    "research/astra-high-variance-20261124/central_descent.py": "cb425457304f659c9557f232755f40b42050fe050166ca13124698a03ff58632",
+    "research/astra-high-variance-20261124/descent_all_headers.py": "44a3b2986efff94dc2e83f175384842db1a5243bea2c61559c37102435bcdb43",
+    "research/astra-high-variance-20261124/descent_macro.lean": "c3cb02722e2c633b8416d091867ae36e41dbccc1bfbbb7171e52a6f4ab52f65d",
+    "research/astra-high-variance-20261124/descent_macro.py": "dad699337ac5cd09dbb3fdd2c6d041e9694d81233a1708b6522e63453a78b086",
+    "research/astra-high-variance-20261124/descent_paid_runs.py": "4d87f76b247f551d7e826cf24ba37ba40de7ba3e64e4544817314fe81f456eb9",
+    "research/astra-high-variance-20261124/rewriting_front.lean": "6821849a13ffda89d793223c931053ff98c8f5ed4bc5bf131b2ed69e72d6cd91",
+    "research/astra-high-variance-20261124/rewriting_front.py": "bebd20727520a5b41850d773bb805b17995b22cf741db04d00141b720e99c5ad",
+    "research/astra-high-variance-20261124/root_delayed_transversal.lean": "47335673b8756e4af91e66c43e379836aa9b6c84aa1847bac44598498d3957e7"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.042,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-arithmetic_equal_clock",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/objects/arithmetic_equal_clock.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/arithmetic_equal_clock.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.232,
+      "stdout_sha256": "1e5f11681f440b082e208753c13cb264098dd309b04965c2376f704818afd385",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "296adc5f60c830218e28fe734a2d1de3f4f97d8103d92300de847af87ac6f3b4"
+    },
+    {
+      "label": "lean-central_closure",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/objects/central_closure.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/central_closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.485,
+      "stdout_sha256": "2867bb6491e5afcabde5928ee97ff6ed02ef2bf1659b780c5d5634661444c18e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "24db7ac6f0fa550a775d1efb4bbdfac0d98ad2f7983794f696d475b983cf8dfe"
+    },
+    {
+      "label": "lean-descent_macro",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/objects/descent_macro.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_macro.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.698,
+      "stdout_sha256": "465795151660fb94d88496be8bcc4863008f3ed7588dee5032e2472b246dcfc7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d84c07db1710675d951cc0b42fea93d61bc50c117ef2ad4785e2a5496f433e2e"
+    },
+    {
+      "label": "lean-rewriting_front",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/objects/rewriting_front.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/rewriting_front.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.58,
+      "stdout_sha256": "356af42cca101206b9930685058a61835893585ba695d379aa585deedfcdd27f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "2e7d45b8b11d85a1e187a5274b82cc8580ac2877e75de0b777456ba54459a8c0"
+    },
+    {
+      "label": "lean-root_delayed_transversal",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/objects/root_delayed_transversal.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/root_delayed_transversal.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.542,
+      "stdout_sha256": "517496c7693dbb6efa4c5cf1b192dc3f9eba16f9a95431fe2880762522cc16b2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "be6a78633936ca263e319053604a52ca1566cd94651f04880b5cd4d3055c9544"
+    },
+    {
+      "label": "python-arithmetic_controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/arithmetic_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.148,
+      "stdout_sha256": "5db1a7031e485b448e5992a26df4e0fdb4823478e3960ac9bce25ad3f7995184",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-arithmetic_controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/arithmetic_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.173,
+      "stdout_sha256": "5db1a7031e485b448e5992a26df4e0fdb4823478e3960ac9bce25ad3f7995184",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-arithmetic_macro",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/arithmetic_macro.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13,
+      "stdout_sha256": "9bca9493d3cac80bdbcf37a0fef51e77eb8eade103c828c8effb30e5ab459e73",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-arithmetic_macro",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/arithmetic_macro.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.109,
+      "stdout_sha256": "9bca9493d3cac80bdbcf37a0fef51e77eb8eade103c828c8effb30e5ab459e73",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-central_descent",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/central_descent.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.094,
+      "stdout_sha256": "d272e76627b47b45ac86fa2dbb4ee23946d725fd9df14423dd90f2ea079f2435",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-central_descent",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/central_descent.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.061,
+      "stdout_sha256": "d272e76627b47b45ac86fa2dbb4ee23946d725fd9df14423dd90f2ea079f2435",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent_all_headers",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_all_headers.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06,
+      "stdout_sha256": "d4f77e677b2892c512700b9431ac367c4660ff6c2d61ec41f7fd981dc1fc57af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent_all_headers",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_all_headers.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.057,
+      "stdout_sha256": "d4f77e677b2892c512700b9431ac367c4660ff6c2d61ec41f7fd981dc1fc57af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent_macro",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_macro.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.059,
+      "stdout_sha256": "e38854b8da35d913640f9b897e8ad2f8a33e4da8290f769216a646855d181b79",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent_macro",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_macro.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.071,
+      "stdout_sha256": "e38854b8da35d913640f9b897e8ad2f8a33e4da8290f769216a646855d181b79",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-descent_paid_runs",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_paid_runs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.058,
+      "stdout_sha256": "3f95b55d8607a5ca0ced2863ceb5ccc1ea44914cf7e13adb5d268f8a2e013fba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-descent_paid_runs",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/descent_paid_runs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.065,
+      "stdout_sha256": "3f95b55d8607a5ca0ced2863ceb5ccc1ea44914cf7e13adb5d268f8a2e013fba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-rewriting_front",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/rewriting_front.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.105,
+      "stdout_sha256": "6030bab89f354b95e4df919d3022ed9557a66b7586db130ec4bfd8f76f095f82",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-rewriting_front",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-high-variance-20261124/rewriting_front.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.118,
+      "stdout_sha256": "6030bab89f354b95e4df919d3022ed9557a66b7586db130ec4bfd8f76f095f82",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/variance-fresh-182a44f/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.319,
+      "stdout_sha256": "b0403b2dde7bc69e1c9fa4dfdf782e58e3df360572123ac7e6e0659be23e5a3d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "arithmetic_equal_clock.lean",
+      "declaration": "Collatz.EqualOddClock.mixed_tail_counts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "arithmetic_equal_clock.lean",
+      "declaration": "Collatz.EqualOddClock.mixed_source_counts",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "central_closure.lean",
+      "declaration": "Collatz.CentralClosure.universal_iff_floor_meeting",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "central_closure.lean",
+      "declaration": "Collatz.CentralClosure.paired_lift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent_macro.lean",
+      "declaration": "Collatz.ExpandingShadow.original_floor_descent",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent_macro.lean",
+      "declaration": "Collatz.ExpandingShadow.short_paid_drop",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent_macro.lean",
+      "declaration": "Collatz.ExpandingShadow.tail_integral",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent_macro.lean",
+      "declaration": "Collatz.ExpandingShadow.tail_bad",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "descent_macro.lean",
+      "declaration": "Collatz.ExpandingShadow.entrance_bad",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "rewriting_front.lean",
+      "declaration": "Collatz.RewriteFront.commute_digit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "rewriting_front.lean",
+      "declaration": "Collatz.RewriteFront.sweep_closed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "root_delayed_transversal.lean",
+      "declaration": "Collatz.DelayedTransversal.same_clock_max",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "root_delayed_transversal.lean",
+      "declaration": "Collatz.DelayedTransversal.tagged_transversal",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "root_delayed_transversal.lean",
+      "declaration": "Collatz.DelayedTransversal.settled_advance",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "arithmetic_controls.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "arithmetic_macro.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "central_descent.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "descent_all_headers.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "descent_macro.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "descent_paid_runs.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "rewriting_front.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-high-variance-20261124/ARITHMETIC_COST.md": "7ae8dd65a63e9fc3b9ad28288bc323c7ae0c57acef78775b480b727d95e7c5a3",
+    "research/astra-high-variance-20261124/ARITHMETIC_DENSITY.md": "74a16338719e28c8c4c3adbeb1369c69f9af2ac0e3ea01d462dffd3151a301b0",
+    "research/astra-high-variance-20261124/ARITHMETIC_FLOOR.md": "3250dff2a54635f3eb2329df57ccc88a80f63715d5e10d959b56178d7e2be1dc",
+    "research/astra-high-variance-20261124/ARITHMETIC_INVERSE.md": "73d2bff82b78882929dbcbb5639b75a89149c69de42c45672d744bb297ef8b9b",
+    "research/astra-high-variance-20261124/ARITHMETIC_MACRO.md": "1ffe7e4f62f66de827310f8ddb44b016c19193e7a37f1b3b9531bd8d68d5e946",
+    "research/astra-high-variance-20261124/ARITHMETIC_RETURN.md": "ce002cfe38fdb860c4de2073fd9831164d1a40e5f016979be997cd71f7c45aa0",
+    "research/astra-high-variance-20261124/ARITHMETIC_REVIEW.md": "01c98adc9d9e47d1a93d9add90158ba13b05e55beeae8ccd924c5754968692bc",
+    "research/astra-high-variance-20261124/CENTRAL_CLOSURE.md": "6cea9d9d8693c54ad7bdc53d654813a43537a4e30252420b19e4755514240d78",
+    "research/astra-high-variance-20261124/CENTRAL_DESCENT.md": "4928c209520e9b21107436807f2a08a6da89a826156a3f9330a148fe305e75fc",
+    "research/astra-high-variance-20261124/CENTRAL_RETURN.md": "af62b0ea0639bf5f87ef107a3a2ab3276fd1c49605275c74ddbd45aff5e37179",
+    "research/astra-high-variance-20261124/DESCENT_ALL_HEADERS.md": "0e540711722bd47b67781c53abb74cfd9599f7b557e1533fdf09a9819184a770",
+    "research/astra-high-variance-20261124/DESCENT_MACRO.md": "a340608dcdbd28e5fa4460ac5a970e3f3639cca7ac5a359a5f508562eda69549",
+    "research/astra-high-variance-20261124/DESCENT_PAID_RUNS.md": "6d862ce247ffe386c6eb604f9199f41c52a17df21a205731a1bd465221fdfeca",
+    "research/astra-high-variance-20261124/DESCENT_PAIR.md": "a75cd718765b883c9ae722dc0504e5463262f1b8b225838e87247614aff57030",
+    "research/astra-high-variance-20261124/README.md": "5308eb4c5f42fa41a6c5dd2a4e2d81cbd247df9a73803fe3ed6e4c0e194aa0de",
+    "research/astra-high-variance-20261124/REWRITING_FRONT.md": "2c9e3b6e9c9a4400f98ee5d8faa363d67afd5f6006f284d5bfcd9099e89a5285",
+    "research/astra-high-variance-20261124/REWRITING_RETURN.md": "2d7c62ba905c7fec0d52546edaf80504dfb95646f7b4d5c5172b714af35b2d74",
+    "research/astra-high-variance-20261124/REWRITING_REVIEW.md": "2ba482121cec46aa9d236b5f0bb3de1cf058c2c6d6ab1e4f00938d08b4216db3",
+    "research/astra-high-variance-20261124/REWRITING_VARIATION.md": "b5cdbc543e54be0163d4228e6731ea9df7dc455375fb4c7de88633c0ca31db54",
+    "research/astra-high-variance-20261124/ROOT_REVIEW.md": "4db5764470ecb8cec3eb876ed1109be93544580c8cefffac9e60424454bb1c8c",
+    "research/astra-high-variance-20261124/SOURCES.json": "a05f2459144780d84465e5d944ac84fe3a313d87bb43d5f38f32ae8192986619",
+    "research/astra-high-variance-20261124/arithmetic_controls.py": "742a952b70a414f448dd05bb58cfa9bfbcb5b6127012adc671af026955a49d89",
+    "research/astra-high-variance-20261124/arithmetic_equal_clock.lean": "1ab600da34aef0f5b05b66018cf7afde8612b1ad8fb5c8f318d0971bf396b0dd",
+    "research/astra-high-variance-20261124/arithmetic_macro.py": "cd0f854bb93a64d908e932da16cb1868ba468bb039594a297ebf95d1851800b5",
+    "research/astra-high-variance-20261124/central_closure.lean": "6d6ce5a808c3be413426ffc49e7daa474240a14152f0201c637ce3d9852d5d0c",
+    "research/astra-high-variance-20261124/central_descent.py": "cb425457304f659c9557f232755f40b42050fe050166ca13124698a03ff58632",
+    "research/astra-high-variance-20261124/descent_all_headers.py": "44a3b2986efff94dc2e83f175384842db1a5243bea2c61559c37102435bcdb43",
+    "research/astra-high-variance-20261124/descent_macro.lean": "c3cb02722e2c633b8416d091867ae36e41dbccc1bfbbb7171e52a6f4ab52f65d",
+    "research/astra-high-variance-20261124/descent_macro.py": "dad699337ac5cd09dbb3fdd2c6d041e9694d81233a1708b6522e63453a78b086",
+    "research/astra-high-variance-20261124/descent_paid_runs.py": "4d87f76b247f551d7e826cf24ba37ba40de7ba3e64e4544817314fe81f456eb9",
+    "research/astra-high-variance-20261124/rewriting_front.lean": "6821849a13ffda89d793223c931053ff98c8f5ed4bc5bf131b2ed69e72d6cd91",
+    "research/astra-high-variance-20261124/rewriting_front.py": "bebd20727520a5b41850d773bb805b17995b22cf741db04d00141b720e99c5ad",
+    "research/astra-high-variance-20261124/root_delayed_transversal.lean": "47335673b8756e4af91e66c43e379836aa9b6c84aa1847bac44598498d3957e7"
+  },
+  "finished_utc": "2026-11-24T07:20:56.347815+00:00"
+}

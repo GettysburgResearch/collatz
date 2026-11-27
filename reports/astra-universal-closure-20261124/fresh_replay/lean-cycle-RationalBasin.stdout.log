@@ -1,0 +1,11 @@
+'CollatzRationalBasin.run_add' does not depend on any axioms
+'CollatzRationalBasin.closed' depends on axioms: [propext, Quot.sound]
+'CollatzRationalBasin.stays' depends on axioms: [propext, Quot.sound]
+'CollatzRationalBasin.reaches_step' does not depend on any axioms
+'CollatzRationalBasin.path_preserves_basin' does not depend on any axioms
+'CollatzRationalBasin.noLowerPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalBasin.lowerCutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalBasin.cycleAndLift' does not depend on any axioms
+'CollatzRationalBasin.leastBasinNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalBasin.leastMultipleNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalBasin.firstTriplingDisagreement' depends on axioms: [propext, Classical.choice, Quot.sound]

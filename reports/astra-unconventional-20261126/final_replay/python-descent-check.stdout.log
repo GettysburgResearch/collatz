@@ -1,0 +1,225 @@
+{
+  "radix": {
+    "modular": 9248,
+    "full_ordinary": 3234
+  },
+  "histograms": [
+    {
+      "source": 1,
+      "precision": 2,
+      "stages": 2,
+      "window": 2,
+      "missing": 7,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "source": 1,
+      "precision": 3,
+      "stages": 2,
+      "window": 8,
+      "missing": 1,
+      "min": 0,
+      "max": 9
+    },
+    {
+      "source": 5,
+      "precision": 3,
+      "stages": 2,
+      "window": 8,
+      "missing": 0,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "source": 7,
+      "precision": 3,
+      "stages": 2,
+      "window": 8,
+      "missing": 0,
+      "min": 1,
+      "max": 7
+    },
+    {
+      "source": 17,
+      "precision": 4,
+      "stages": 3,
+      "window": 12,
+      "missing": 0,
+      "min": 8,
+      "max": 25
+    },
+    {
+      "source": 121,
+      "precision": 6,
+      "stages": 4,
+      "window": 16,
+      "missing": 0,
+      "min": 7,
+      "max": 45
+    }
+  ],
+  "large_modular_only": [
+    {
+      "q": 1,
+      "precision": 8,
+      "grade": 2,
+      "clock": 1514
+    },
+    {
+      "q": 17,
+      "precision": 8,
+      "grade": 2,
+      "clock": 1967
+    },
+    {
+      "q": 101,
+      "precision": 8,
+      "grade": 2,
+      "clock": 3163
+    },
+    {
+      "q": 1,
+      "precision": 24,
+      "grade": 4,
+      "clock": 201586932
+    },
+    {
+      "q": 17,
+      "precision": 24,
+      "grade": 4,
+      "clock": 208442415
+    },
+    {
+      "q": 101,
+      "precision": 24,
+      "grade": 4,
+      "clock": 270876305
+    },
+    {
+      "q": 1,
+      "precision": 64,
+      "grade": 8,
+      "clock": 40630585525619293086
+    },
+    {
+      "q": 17,
+      "precision": 64,
+      "grade": 8,
+      "clock": 36522585632836317087
+    },
+    {
+      "q": 101,
+      "precision": 64,
+      "grade": 8,
+      "clock": 43461882260763871337
+    },
+    {
+      "q": 1,
+      "precision": 152,
+      "grade": 12,
+      "clock": 13233422449558428331235307297994764141586188
+    },
+    {
+      "q": 17,
+      "precision": 152,
+      "grade": 12,
+      "clock": 8808643895717830576346917456050653160886317
+    },
+    {
+      "q": 101,
+      "precision": 152,
+      "grade": 12,
+      "clock": 10164598756975142367511860077164781027896727
+    }
+  ],
+  "paired": {
+    "cusp_full_ordinary": 196,
+    "exact_return_census": [
+      {
+        "grade": 1,
+        "all": 2,
+        "first": 2,
+        "max_clock": 3
+      },
+      {
+        "grade": 2,
+        "all": 6,
+        "first": 2,
+        "max_clock": 6
+      },
+      {
+        "grade": 3,
+        "all": 20,
+        "first": 4,
+        "max_clock": 11
+      },
+      {
+        "grade": 4,
+        "all": 79,
+        "first": 19,
+        "max_clock": 16
+      },
+      {
+        "grade": 5,
+        "all": 318,
+        "first": 58,
+        "max_clock": 21
+      },
+      {
+        "grade": 6,
+        "all": 1386,
+        "first": 282,
+        "max_clock": 26
+      },
+      {
+        "grade": 7,
+        "all": 6202,
+        "first": 1186,
+        "max_clock": 31
+      },
+      {
+        "grade": 8,
+        "all": 28752,
+        "first": 5579,
+        "max_clock": 36
+      },
+      {
+        "grade": 9,
+        "all": 136067,
+        "first": 26077,
+        "max_clock": 41
+      },
+      {
+        "grade": 10,
+        "all": 656026,
+        "first": 125176,
+        "max_clock": 48
+      },
+      {
+        "grade": 11,
+        "all": 3211039,
+        "first": 611855,
+        "max_clock": 54
+      },
+      {
+        "grade": 12,
+        "all": 15920899,
+        "first": 3031450,
+        "max_clock": 60
+      },
+      {
+        "grade": 13,
+        "all": 79818743,
+        "first": 15213359,
+        "max_clock": 74
+      },
+      {
+        "grade": 14,
+        "all": 404050149,
+        "first": 77140291,
+        "max_clock": 80
+      }
+    ]
+  }
+}

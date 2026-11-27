@@ -1,0 +1,18 @@
+{
+  "schema": "collatz-publication-inputs/v1",
+  "checked_science_commit": "d0611ca619a783e85a533bc695fa4abef5013ce7",
+  "checked_science_tree": "59a4eeeacf3b0737add0b3fdb7f76c652f4506c1",
+  "all_science_packet_files_identical": true,
+  "compared_file_count": 59,
+  "all_lean_python_cpp_sources_identical": true,
+  "all_individual_lane_proofs_identical": true,
+  "allowed_documentation_changes": [],
+  "replay_result": {
+    "lean_modules": 21,
+    "public_audits": 106,
+    "python_normal_optimized_pairs": 9,
+    "cpp_normal_ubsan_pairs": 1,
+    "validator_commands": 11,
+    "success": true
+  }
+}

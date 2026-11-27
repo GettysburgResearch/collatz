@@ -1,0 +1,3 @@
+'Collatz.HistoryTrades.trade_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HistoryTrades.trade_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HistoryTrades.transport_balance' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,88 @@
+{
+  "exhaustive_words": 3627,
+  "examples": [
+    {
+      "background_length": 32,
+      "background_clock": 56,
+      "marker_total": 38,
+      "markers": [
+        1,
+        37
+      ],
+      "active_frequencies": 2,
+      "denominator_bits": 145,
+      "raw_bits": 150,
+      "half_turn_gcd_bits": 6
+    },
+    {
+      "background_length": 69,
+      "background_clock": 119,
+      "marker_total": 89,
+      "markers": [
+        1,
+        88
+      ],
+      "active_frequencies": 2,
+      "denominator_bits": 327,
+      "raw_bits": 327,
+      "half_turn_gcd_bits": 1
+    },
+    {
+      "background_length": 20,
+      "background_clock": 35,
+      "marker_total": 675,
+      "markers": [
+        1,
+        2,
+        672
+      ],
+      "active_frequencies": 3,
+      "denominator_bits": 777,
+      "raw_bits": 780
+    },
+    {
+      "background_length": 23,
+      "background_clock": 40,
+      "marker_total": 1430,
+      "markers": [
+        101,
+        287,
+        1001,
+        41
+      ],
+      "active_frequencies": 4,
+      "denominator_bits": 1586,
+      "raw_bits": 1590
+    },
+    {
+      "background_length": 18,
+      "background_clock": 32,
+      "marker_total": 16,
+      "markers": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "active_frequencies": 2,
+      "denominator_bits": 72,
+      "raw_bits": 144
+    },
+    {
+      "background_length": 28,
+      "background_clock": 48,
+      "marker_total": 12,
+      "markers": [
+        3,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "active_frequencies": 5,
+      "denominator_bits": 250,
+      "raw_bits": 300
+    }
+  ]
+}

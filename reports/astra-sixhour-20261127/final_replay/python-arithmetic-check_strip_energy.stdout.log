@@ -1,0 +1,40 @@
+[
+  {
+    "odd_steps": 8,
+    "schedules": 10,
+    "independent_brute_checks": 24,
+    "maxima_by_native_clock": {
+      "12": {
+        "energy": 168699,
+        "initial_layer": 1,
+        "schedule": "121221212",
+        "display_exponent": 1.4470076580165934
+      },
+      "13": {
+        "energy": 224688,
+        "initial_layer": 0,
+        "schedule": "212212121",
+        "display_exponent": 1.3675048884948546
+      }
+    }
+  },
+  {
+    "odd_steps": 64,
+    "schedules": 66,
+    "independent_brute_checks": 0,
+    "maxima_by_native_clock": {
+      "101": {
+        "energy": 68931768644982317296080290705653987,
+        "initial_layer": 0,
+        "schedule": "21212212121221212212122121212212122121212212122121212212122121212",
+        "display_exponent": 1.1458487550346328
+      },
+      "102": {
+        "energy": 102176439881582869100955782739787728,
+        "initial_layer": 0,
+        "schedule": "22121221212122121221212212121221212212121221212212121221212212121",
+        "display_exponent": 1.140181822501726
+      }
+    }
+  }
+]

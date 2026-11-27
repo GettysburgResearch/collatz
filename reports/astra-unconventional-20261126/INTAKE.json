@@ -1,0 +1,71 @@
+{
+  "schema": "collatz-astra-unconventional-intake/v1",
+  "started_utc": "2026-11-26T18:46:06Z",
+  "owned_parent": "0e313e2cd42cfce1275dbef6129ac13e9a49abd5",
+  "note": "Frozen read-only intake. No external branch is merged or accepted wholesale.",
+  "pull_requests": [
+    {
+      "number": 192,
+      "head": "0e313e2cd42cfce1275dbef6129ac13e9a49abd5",
+      "title": "Collatz: exact carry chains, source regeneration and full-denominator labels",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "updated_at": "2026-11-25T18:33:26Z"
+    },
+    {
+      "number": 193,
+      "head": "4cc06e7d8fdec923eed73a26b1e9d680c9f701d1",
+      "title": "Collatz: all-source carry bounds, full-denominator attacks and Lean descent",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "updated_at": "2026-11-25T18:43:02Z"
+    },
+    {
+      "number": 195,
+      "head": "f192322f70073ba44bc9f98785a51c27a4da9ee5",
+      "title": "Collatz: ordinary merger progressions, source bands and critical limits",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "updated_at": "2026-11-25T18:38:08Z"
+    },
+    {
+      "number": 197,
+      "head": "f74d2144275c3e1f9148b0b2997fecc7931ae7f5",
+      "title": "Collatz: unbounded ordinary queries and 405-lap least-defect exclusion",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197",
+      "updated_at": "2026-11-25T18:38:19Z"
+    },
+    {
+      "number": 200,
+      "head": "8e6add443b13acbcfd553676898c120183f07377",
+      "title": "Collatz: ordinary trace onset, all-depth minima and spectral rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "updated_at": "2026-11-25T18:11:04Z"
+    },
+    {
+      "number": 201,
+      "head": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+      "title": "Collatz: strict-record renewal dimension and two-coordinate escape rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "updated_at": "2026-11-25T18:06:24Z"
+    },
+    {
+      "number": 206,
+      "head": "3729d84e00cf8794dab43fe2f500213b2b643f83",
+      "title": "Prove the sharp 23-step Collatz pair cover and a finite-count criterion for convergence",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206",
+      "updated_at": "2026-11-25T19:00:11Z"
+    },
+    {
+      "number": 210,
+      "head": "592328fecf8ea2cf41736294856d95f890a1ba98",
+      "title": "Critical-record rational rigidity and a three-place Subspace Theorem attack",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/210",
+      "updated_at": "2026-11-25T17:15:26Z"
+    },
+    {
+      "number": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146",
+      "updated_at": "2026-11-21T07:06:20Z"
+    }
+  ]
+}

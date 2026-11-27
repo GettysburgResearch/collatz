@@ -1,0 +1,184 @@
+{
+  "schema": "collatz-astra-fixed-atom-replay/v1",
+  "started_utc": "2026-11-24T09:14:29.963695+00:00",
+  "scope": "exact new sources, fresh Lean objects, finite controls, repository integrity",
+  "commit": "29d61ae09fa4b67641725248ee77f87d29c5e1fb",
+  "tree": "ca797fdda0132cde30ec42464d160ccad6a804bb",
+  "sources_before": {
+    "research/astra-fixed-atom-20261124/README.md": "7feec414e9f118054dcbb14aa1aad7c207c51b44432a769f0addb18ec38d026f",
+    "research/astra-fixed-atom-20261124/arithmetic.md": "346ee309d24d53aa1336311cfc0abfe8a525249d0e00ba9a28c0137a2d7be12f",
+    "research/astra-fixed-atom-20261124/controller_pressure.md": "f792418071989dd462a90f2af6e743fa6bf4b7a26d6c9d244cf4619809dc3144",
+    "research/astra-fixed-atom-20261124/finite_certificate.lean": "cb2b75d000a66d3d080e26ca99f966d8eac57a89c97a455f4d6892173f81ec60",
+    "research/astra-fixed-atom-20261124/termination.lean": "9cc75080179dce260c08ab2e02a4c40a233342a014d5838ced16237e5531d012",
+    "research/astra-fixed-atom-20261124/termination.md": "573a5b83d11f580db67620bfaf8152189e741381c47035b4e9f7a0267cb358d6",
+    "research/astra-fixed-atom-20261124/termination.py": "f5298722170f9c4dc6d08a3c9107ab0f2624e628593904039f657c5a2b8be60f"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.146,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-termination",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/fixed-atom-fresh-29d61ae/objects/termination.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-fixed-atom-20261124/termination.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.048,
+      "stdout_sha256": "90e931b5a53d5e78a69142bc5c64b7dffea3ec7b1d2b3a297495257496ee37e9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "b25acf66982cbd9db14ef914a378465fcc725d1aef29831fa93c0f49dc45758c"
+    },
+    {
+      "label": "lean-finite_certificate",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/fixed-atom-fresh-29d61ae/objects/finite_certificate.olean",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-fixed-atom-20261124/finite_certificate.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 20.141,
+      "stdout_sha256": "21a547db7df242dba3fa87eed322870fa4f3581949ccd4d51cecc3e0a72d3499",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "9c877a1c3074938430e15386619986e312eac7a595bbdbd82a8aaf457a9e21a6"
+    },
+    {
+      "label": "python-termination",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-fixed-atom-20261124/termination.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.021,
+      "stdout_sha256": "3f2c4fb6158db8c9ca0f2633b6b94438f6207c00606bd520b38ea7da324075ae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-termination",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-fixed-atom-20261124/termination.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.023,
+      "stdout_sha256": "3f2c4fb6158db8c9ca0f2633b6b94438f6207c00606bd520b38ea7da324075ae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/checkpoints/fixed-atom-fresh-29d61ae/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.685,
+      "stdout_sha256": "3bd363df0bbec39048dbeb833562f1da4e2e297a238715ba8c6439dcfde4320b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "termination.lean",
+      "declaration": "Collatz.CriticalSteering.steer_to_smaller_neighbor",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "termination.lean",
+      "declaration": "Collatz.CriticalSteering.switches_zero",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "termination.lean",
+      "declaration": "Collatz.CriticalSteering.switches_one",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "termination.lean",
+      "declaration": "Collatz.CriticalSteering.local_contraction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "termination.lean",
+      "declaration": "Collatz.CriticalSteering.all_inputs",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "finite_certificate.lean",
+      "declaration": "Collatz.FiniteCertificate.no_earlier_meeting",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "finite_certificate.lean",
+      "declaration": "Collatz.FiniteCertificate.meeting_at_81",
+      "axioms": []
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "termination.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "sources_after": {
+    "research/astra-fixed-atom-20261124/README.md": "7feec414e9f118054dcbb14aa1aad7c207c51b44432a769f0addb18ec38d026f",
+    "research/astra-fixed-atom-20261124/arithmetic.md": "346ee309d24d53aa1336311cfc0abfe8a525249d0e00ba9a28c0137a2d7be12f",
+    "research/astra-fixed-atom-20261124/controller_pressure.md": "f792418071989dd462a90f2af6e743fa6bf4b7a26d6c9d244cf4619809dc3144",
+    "research/astra-fixed-atom-20261124/finite_certificate.lean": "cb2b75d000a66d3d080e26ca99f966d8eac57a89c97a455f4d6892173f81ec60",
+    "research/astra-fixed-atom-20261124/termination.lean": "9cc75080179dce260c08ab2e02a4c40a233342a014d5838ced16237e5531d012",
+    "research/astra-fixed-atom-20261124/termination.md": "573a5b83d11f580db67620bfaf8152189e741381c47035b4e9f7a0267cb358d6",
+    "research/astra-fixed-atom-20261124/termination.py": "f5298722170f9c4dc6d08a3c9107ab0f2624e628593904039f657c5a2b8be60f"
+  },
+  "finished_utc": "2026-11-24T09:14:56.050287+00:00"
+}

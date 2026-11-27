@@ -1,0 +1,699 @@
+{
+  "schema": "collatz-astra-diagonal-closure-replay/v1",
+  "started_utc": "2026-11-25T17:37:40.247386+00:00",
+  "scope": "22 new Lean declarations, two exact project dependencies and finite controls; not the infinite written arguments",
+  "commit": "850a508b7d081ab74d6f2995b4225d8d54daded8",
+  "tree": "54df23cbebe1f22fb0ac890d8f8c27c0f9a9c62b",
+  "tracked_file_count": 969,
+  "sources_before": {
+    "reports/astra-diagonal-closure-20261125/cycle/inverse_minimum.cpp": "ec512597acdc6d56e4225edd860a362fe2e1a37f877d18cf44ddf9103bcd9260",
+    "reports/astra-diagonal-closure-20261125/cycle/review_inverse_minimum.py": "f709e07a383d1b6b5bdbaef0d71bb89f1cfa305780893e5fdb339c855d5d9e3c",
+    "reports/astra-diagonal-closure-20261125/joint/review_cylinders.py": "90d7c235db934bc6c4d2909390c522d4268b64cc914a696c1b2b97dd44ec6bd9",
+    "research/astra-diagonal-closure-20261125/FINAL_PROPOSAL.md": "a36ba748cbd1b1ab4df714f784ed5ba35460b2b49274befa9b91189f74dd663b",
+    "research/astra-diagonal-closure-20261125/README.md": "2d67c92b9d0cf594acdaecca8621f24358f7d122bdc7bb0077639b061389cb69",
+    "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean": "b2023d5225c2126dff5f82375601f6f21be30d91c0e2aad0c97bee072be44d77",
+    "research/astra-diagonal-closure-20261125/cycle/README.md": "b31f7a1d16843a1295837f6da2768416b40f5a350f58596efd688f9cfaa90547",
+    "research/astra-diagonal-closure-20261125/cycle/check.py": "876101a5aaf7edb0aeb4e7f0f70c2fe1b9f5d0839fdeaacd4f7f4dc547904bd2",
+    "research/astra-diagonal-closure-20261125/joint/FEASIBLE_OPENINGS.md": "1fb20632bf4258849b84c51c2eb174a06c03b4b7c77fc0c78737aac48961550f",
+    "research/astra-diagonal-closure-20261125/joint/README.md": "b0166e19fce3234113930faa7c6b2984ee1bcc990c83aecf4b63183ea576ff7a",
+    "research/astra-diagonal-closure-20261125/joint/TritChain.lean": "4fa03706c357d68ea146ffadfe342dcadf90cc8a7f908b312db27fb351c24a95",
+    "research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean": "574f07abdd6011bc14130de87fe7332c3fe696121a3a43f0e0dfa5e320c69955",
+    "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean": "dd23aa86021d468d397adaa9116e813160195e270e32511033236aae744ba997",
+    "research/astra-diagonal-closure-20261125/transport/README.md": "8a9ffebbc75e706665f77fc395bb672d098c67906782fb19a7b6389b5fd9882b",
+    "research/astra-diagonal-closure-20261125/transport/check.py": "4519a6274373b851036038739c2413baaf06abc3a3ab349c4a8d54cd70a05e42",
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_objects": "pinned Lean and Mathlib dependency objects reused; every project dependency and new module rebuilt in a new empty object directory",
+  "lean_path": "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib-pinned/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/lib/lean",
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.174,
+      "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "lean-arithmetic-SourceDeletion",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/SourceDeletion.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.81,
+      "stdout_sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "76028647dbd1ed5f03b0fa1f1fa50cb6bfc961463c31217a651b71b098f32dbb"
+    },
+    {
+      "label": "lean-minimal-MinimumFailure",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/MinimumFailure.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-minimum-source-20261124/minimal/MinimumFailure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.97,
+      "stdout_sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "d3ff246ac46c8dbfa1db4e908fecf3f77f161b142c2f4ac38369b3149573214d"
+    },
+    {
+      "label": "lean-cycle-InverseClocks",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/InverseClocks.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.035,
+      "stdout_sha256": "3db0264576b955e6bdba8402f4dffde498c8f620ff19baa262fc86d2b73a747e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "961522b458504154dc232bcc0094028d1f0f14fbb7a3715e78c57be4deff180d"
+    },
+    {
+      "label": "lean-joint-TritChain",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/TritChain.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/joint/TritChain.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.81,
+      "stdout_sha256": "d35e2dcd4a3faf0282d6ddaaeb3710d38343323cf371ae0fe914e845407603d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "b1c92dc5ebc3442fe208ca455ce001919aa6553af243b5ba21b6e2835dfcdb11"
+    },
+    {
+      "label": "lean-transport-CanonicalDeadline",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/CanonicalDeadline.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.419,
+      "stdout_sha256": "5dde79d5585bdf2342825c9d6bf72953858205c6ce18decdcde545d18dc2bc1b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "089e1b9eca2ee56e05a5187f692c55d410d0ff5ffb38565766eedde9844c2934"
+    },
+    {
+      "label": "lean-transport-FirstCrossing",
+      "argv": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/objects/FirstCrossing.olean",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.411,
+      "stdout_sha256": "3d05bf619048bdd99cba780c4911bee7dafbeb1dd388122b062be3f6746de510",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "2920b48d724ec2f6a88f4cd140a769d8a52de3281665711619e4c3baf6876522"
+    },
+    {
+      "label": "python-cycle-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/cycle/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.238,
+      "stdout_sha256": "2394ef68c999ef7479525076cdfa1ae4def38634115815d5340e26b45424085a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-cycle-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/cycle/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.262,
+      "stdout_sha256": "2394ef68c999ef7479525076cdfa1ae4def38634115815d5340e26b45424085a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-transport-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/transport/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.095,
+      "stdout_sha256": "2b3906df99a56cea1d504cf28ba73884a26c6714c45ed6a36fcb35f755c7cfd6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-transport-check",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/research/astra-diagonal-closure-20261125/transport/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.12,
+      "stdout_sha256": "2b3906df99a56cea1d504cf28ba73884a26c6714c45ed6a36fcb35f755c7cfd6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-cycle-review_inverse_minimum",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/reports/astra-diagonal-closure-20261125/cycle/review_inverse_minimum.py"
+      ],
+      "exit_code": 0,
+      "seconds": 10.824,
+      "stdout_sha256": "27d65f2df00140f4756f3984a98b3fe6be7b7b857deee921a43c951915149eb5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-cycle-review_inverse_minimum",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/reports/astra-diagonal-closure-20261125/cycle/review_inverse_minimum.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.707,
+      "stdout_sha256": "27d65f2df00140f4756f3984a98b3fe6be7b7b857deee921a43c951915149eb5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-joint-review_cylinders",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/reports/astra-diagonal-closure-20261125/joint/review_cylinders.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.101,
+      "stdout_sha256": "206e23db53b4fe94deeddf552eca97ff73de750a22dfe37a8e7112347e53679c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "python-opt-joint-review_cylinders",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_science_replay/reports/astra-diagonal-closure-20261125/joint/review_cylinders.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.103,
+      "stdout_sha256": "206e23db53b4fe94deeddf552eca97ff73de750a22dfe37a8e7112347e53679c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py",
+        "--regressions",
+        "--receipt",
+        "/workspace/scratch/ae8b5ba301f1/diagonal_replay_receipt/repository-validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 6.506,
+      "stdout_sha256": "72e75d0e34270ff583d3868f7500588f961b612d486f50ae5582b1a7f68af2a1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lean_audits": [
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_paths",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.swapped_row",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.delete_digit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.lower_representative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.all_below_cutoff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "declaration": "Collatz.SourceDeletion.seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_one",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_step",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_run",
+      "axioms": []
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_step",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.label_eq_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exists_least_discordance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_below",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.good_cutoff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.upper_bad",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_triples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.smaller_multiples_good",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.exclude_seven_mod_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "declaration": "Collatz.MinimumFailure.counterexample_reduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.gain",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.inverse_cone",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.window_distortion",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.rival_size",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.native_optimality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.minimum_multiple_cost",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.singleton_partner",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.quarter_merge",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean",
+      "declaration": "Collatz.DiagonalInverseClocks.forbidden_row",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/joint/TritChain.lean",
+      "declaration": "Collatz.TritChain.fourTritCylinder",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/joint/TritChain.lean",
+      "declaration": "Collatz.TritChain.forcedColumn",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean",
+      "declaration": "Collatz.CanonicalDeadline.prescribed_successor_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean",
+      "declaration": "Collatz.CanonicalDeadline.one_successor_iff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean",
+      "declaration": "Collatz.CanonicalDeadline.no_successor_through_first_hit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.positive_carry_meeting",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.align_positive_carry",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.unbounded_after_supplied_hit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.drop_or_exact_suffix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.descent_at_supplied_hit",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.strict_before_overshoot",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.meeting_requires_overshoot",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean",
+      "declaration": "Collatz.FirstCrossing.floor_budget",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "python_pairs": [
+    {
+      "source": "research/astra-diagonal-closure-20261125/cycle/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "research/astra-diagonal-closure-20261125/transport/check.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "reports/astra-diagonal-closure-20261125/cycle/review_inverse_minimum.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    },
+    {
+      "source": "reports/astra-diagonal-closure-20261125/joint/review_cylinders.py",
+      "identical_output": true,
+      "assert_nodes": 0
+    }
+  ],
+  "success": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "new_module_count": 4,
+  "project_dependency_count": 2,
+  "sources_after": {
+    "reports/astra-diagonal-closure-20261125/cycle/inverse_minimum.cpp": "ec512597acdc6d56e4225edd860a362fe2e1a37f877d18cf44ddf9103bcd9260",
+    "reports/astra-diagonal-closure-20261125/cycle/review_inverse_minimum.py": "f709e07a383d1b6b5bdbaef0d71bb89f1cfa305780893e5fdb339c855d5d9e3c",
+    "reports/astra-diagonal-closure-20261125/joint/review_cylinders.py": "90d7c235db934bc6c4d2909390c522d4268b64cc914a696c1b2b97dd44ec6bd9",
+    "research/astra-diagonal-closure-20261125/FINAL_PROPOSAL.md": "a36ba748cbd1b1ab4df714f784ed5ba35460b2b49274befa9b91189f74dd663b",
+    "research/astra-diagonal-closure-20261125/README.md": "2d67c92b9d0cf594acdaecca8621f24358f7d122bdc7bb0077639b061389cb69",
+    "research/astra-diagonal-closure-20261125/cycle/InverseClocks.lean": "b2023d5225c2126dff5f82375601f6f21be30d91c0e2aad0c97bee072be44d77",
+    "research/astra-diagonal-closure-20261125/cycle/README.md": "b31f7a1d16843a1295837f6da2768416b40f5a350f58596efd688f9cfaa90547",
+    "research/astra-diagonal-closure-20261125/cycle/check.py": "876101a5aaf7edb0aeb4e7f0f70c2fe1b9f5d0839fdeaacd4f7f4dc547904bd2",
+    "research/astra-diagonal-closure-20261125/joint/FEASIBLE_OPENINGS.md": "1fb20632bf4258849b84c51c2eb174a06c03b4b7c77fc0c78737aac48961550f",
+    "research/astra-diagonal-closure-20261125/joint/README.md": "b0166e19fce3234113930faa7c6b2984ee1bcc990c83aecf4b63183ea576ff7a",
+    "research/astra-diagonal-closure-20261125/joint/TritChain.lean": "4fa03706c357d68ea146ffadfe342dcadf90cc8a7f908b312db27fb351c24a95",
+    "research/astra-diagonal-closure-20261125/transport/CanonicalDeadline.lean": "574f07abdd6011bc14130de87fe7332c3fe696121a3a43f0e0dfa5e320c69955",
+    "research/astra-diagonal-closure-20261125/transport/FirstCrossing.lean": "dd23aa86021d468d397adaa9116e813160195e270e32511033236aae744ba997",
+    "research/astra-diagonal-closure-20261125/transport/README.md": "8a9ffebbc75e706665f77fc395bb672d098c67906782fb19a7b6389b5fd9882b",
+    "research/astra-diagonal-closure-20261125/transport/check.py": "4519a6274373b851036038739c2413baaf06abc3a3ab349c4a8d54cd70a05e42",
+    "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+    "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+  },
+  "finished_utc": "2026-11-25T17:38:36.887811+00:00"
+}

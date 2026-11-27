@@ -1,0 +1,3 @@
+'Collatz.RampMerger.light_paid_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RampMerger.paid_three_light_core' depends on axioms: [propext, Quot.sound]
+'Collatz.RampMerger.ramp_merger' depends on axioms: [propext, Classical.choice, Quot.sound]

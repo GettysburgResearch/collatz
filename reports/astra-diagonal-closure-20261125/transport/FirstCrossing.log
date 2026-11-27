@@ -1,0 +1,8 @@
+'Collatz.FirstCrossing.positive_carry_meeting' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.align_positive_carry' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.unbounded_after_supplied_hit' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.drop_or_exact_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstCrossing.descent_at_supplied_hit' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.strict_before_overshoot' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.meeting_requires_overshoot' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstCrossing.floor_budget' depends on axioms: [propext, Quot.sound]

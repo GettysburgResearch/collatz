@@ -1,0 +1,5 @@
+'Collatz.CriticalSteering.steer_to_smaller_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CriticalSteering.switches_zero' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalSteering.switches_one' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalSteering.local_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CriticalSteering.all_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]

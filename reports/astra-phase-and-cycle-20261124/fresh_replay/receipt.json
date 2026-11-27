@@ -1,0 +1,384 @@
+{
+  "status": "passed",
+  "started": "2026-11-24T04:05:35.552078+00:00",
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+      "started": "2026-11-24T04:05:35.552182+00:00",
+      "label": "lean-version",
+      "stdout": "01-lean-version.stdout.log",
+      "stderr": "01-lean-version.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:05:35.636824+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+      "started": "2026-11-24T04:05:35.637127+00:00",
+      "label": "mathlib-head",
+      "stdout": "02-mathlib-head.stdout.log",
+      "stderr": "02-mathlib-head.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:05:35.642170+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-phase-and-cycle-20261124",
+      "started": "2026-11-24T04:05:35.642299+00:00",
+      "label": "source-head",
+      "stdout": "03-source-head.stdout.log",
+      "stderr": "03-source-head.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:05:35.644352+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short",
+        "--",
+        "."
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-phase-and-cycle-20261124",
+      "started": "2026-11-24T04:05:35.644451+00:00",
+      "label": "source-status",
+      "stdout": "04-source-status.stdout.log",
+      "stderr": "04-source-status.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:05:35.650666+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-tree",
+        "-r",
+        "HEAD",
+        "--",
+        "vendor/ActualScalar.lean",
+        "OneRun.lean",
+        "ThreeRunCore.lean",
+        "OrdinaryShadow.lean",
+        "PhaseBounds.lean",
+        "ActualOneRun.lean",
+        "AllAxioms.lean"
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-phase-and-cycle-20261124",
+      "started": "2026-11-24T04:05:35.651326+00:00",
+      "label": "source-tree",
+      "stdout": "05-source-tree.stdout.log",
+      "stderr": "05-source-tree.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:05:35.653424+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/ActualScalar.olean",
+        "ActualScalar.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:05:35.658964+00:00",
+      "label": "ActualScalar",
+      "stdout": "06-ActualScalar.stdout.log",
+      "stderr": "06-ActualScalar.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:00.497595+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/OneRun.olean",
+        "OneRun.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:00.499979+00:00",
+      "label": "OneRun",
+      "stdout": "07-OneRun.stdout.log",
+      "stderr": "07-OneRun.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:02.996533+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/ThreeRunCore.olean",
+        "ThreeRunCore.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:02.997533+00:00",
+      "label": "ThreeRunCore",
+      "stdout": "08-ThreeRunCore.stdout.log",
+      "stderr": "08-ThreeRunCore.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:04.097448+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/OrdinaryShadow.olean",
+        "OrdinaryShadow.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:04.098262+00:00",
+      "label": "OrdinaryShadow",
+      "stdout": "09-OrdinaryShadow.stdout.log",
+      "stderr": "09-OrdinaryShadow.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:13.173705+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/PhaseBounds.olean",
+        "PhaseBounds.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:13.175123+00:00",
+      "label": "PhaseBounds",
+      "stdout": "10-PhaseBounds.stdout.log",
+      "stderr": "10-PhaseBounds.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:30.389279+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/ActualOneRun.olean",
+        "ActualOneRun.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:30.390379+00:00",
+      "label": "ActualOneRun",
+      "stdout": "11-ActualOneRun.stdout.log",
+      "stderr": "11-ActualOneRun.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:06:57.785775+00:00"
+    },
+    {
+      "command": [
+        "/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/astra_pr192_fresh_replay/olean/AllAxioms.olean",
+        "AllAxioms.lean"
+      ],
+      "cwd": "/tmp/astra_pr192_fresh_replay/src",
+      "started": "2026-11-24T04:06:57.786400+00:00",
+      "label": "AllAxioms",
+      "stdout": "12-AllAxioms.stdout.log",
+      "stderr": "12-AllAxioms.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:07:03.626248+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-phase-and-cycle-20261124",
+      "started": "2026-11-24T04:07:03.637907+00:00",
+      "label": "final-source-head",
+      "stdout": "13-final-source-head.stdout.log",
+      "stderr": "13-final-source-head.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:07:03.644416+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short",
+        "--",
+        "."
+      ],
+      "cwd": "/workspace/scratch/ae8b5ba301f1/collatz/research/astra-phase-and-cycle-20261124",
+      "started": "2026-11-24T04:07:03.644644+00:00",
+      "label": "final-source-status",
+      "stdout": "14-final-source-status.stdout.log",
+      "stderr": "14-final-source-status.stderr.log",
+      "returncode": 0,
+      "finished": "2026-11-24T04:07:03.650708+00:00"
+    }
+  ],
+  "replay_sha256": "0780bc743b10eba0d45f9437fda7589564199527a03e31a9e1f80c6a9457879e",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "/workspace/scratch/ae8b5ba301f1/lean_env/mathlib",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_head": "e3c33885e5d1530c4ad4595e324f9dbeb2761482",
+  "source_status": "",
+  "vendor_manifest_sha256": "39063e2948c78e17a8a4aa54ae9f639095e4b55356e976bcfae0991307bb4957",
+  "sources_differing_from_head": [],
+  "sources": {
+    "vendor/ActualScalar.lean": "5b0f035ad14624376ce722bfdff5d9d216b266a0d7066efc3715fcc19d37f4a9",
+    "OneRun.lean": "9d307751430220778955886396f9701711fc02f60816376b0e170929c4cdb1fb",
+    "ThreeRunCore.lean": "05177b1debcafd47813040eb5dfc97b2542935e6a7e664530822f0d69697ea67",
+    "OrdinaryShadow.lean": "b47cc76bf01c5855d3f8d5caee82cd65aa0ff5b4864bd14f1492202fa3831d51",
+    "PhaseBounds.lean": "f30e894e9ab89eb4030817d832b472982005078624a09eba2ac88ee487bd41cb",
+    "ActualOneRun.lean": "1381456b05435c6bf2486751caf98a8e1f28726f25e2e227dfd51e2887c8a0aa",
+    "AllAxioms.lean": "f3d9fdfe64f5d0275c885911d6cacb16b70d5f55c9fb90eff90802a93da45a7a"
+  },
+  "compiled_sources": {
+    "ActualScalar.lean": "1cd0f216c3847addc69cdee25fd16c06508c9bc0167035164d9f1caed9eb7e8e",
+    "OneRun.lean": "4302ec29edd01672773f61533cfc149018f1df6a659c36b79366d9cbac7104d7",
+    "ThreeRunCore.lean": "b985174a32a0ddfdba86c03446b80159cead922b68af11c278ce52f55c4ab8ce",
+    "OrdinaryShadow.lean": "06c43ee7cc444b11a9da4e06307f460b14dd498f96ffa71cd3f1736b28870a04",
+    "PhaseBounds.lean": "9a3dc986ae137bb7421f46cbd97ae6cfa8d65ac2800fdc1c9561e3cffbbf8fb3",
+    "ActualOneRun.lean": "0e2be15625f2cc70e9b88e8db6c7761b2b28cc06d10a17f48ad80d829c881524",
+    "AllAxioms.lean": "f479b5857b1ccc94dad3a399fc3d0e84a67b08b7f43cf27412707e35093f5d46"
+  },
+  "source_mode": "generated visibility-only port",
+  "vendor_git_blob": "85385ac9b4dbc2bab8b3f78f02d4f865ed16d2b8",
+  "sources_match_head": true,
+  "visibility_port_patch_sha256": "ba03d9d4325c35d741284387cba9c8285fb513c750909892b6ab3c9186443c3e",
+  "lean_path": "/tmp/astra_pr192_fresh_replay/olean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/mathlib/.lake/build/lib/lean:/workspace/scratch/ae8b5ba301f1/lean_env/lean-4.34.1-linux/lib/lean",
+  "objects": {
+    "ActualScalar": "07dfdf743a5e0f3a90730485e87b4546b7c4ef4900a20e69cf90512b61e2ed3c",
+    "OneRun": "ba5fb3ceba24815bb1a21f7c801edd36c577eca4ad2e646e2c16752cd34df133",
+    "ThreeRunCore": "923744b287e997422ee66ca88dcbe4da1987dcedae9f2b44557ac82d9eeb156e",
+    "OrdinaryShadow": "4b2827e9130f6db71aaccc1d3a8749d2c951d519b0fd37c3494a52e421cabc71",
+    "PhaseBounds": "0ab6795ba17afd143d1e9dcc6d96c5fc76ac1ce5f09f461dfeccef7bfdb5f848",
+    "ActualOneRun": "7d450a0b89ec583f035a653bae5359ba54681cae2fda706d6bdf88961a6e4070",
+    "AllAxioms": "0cd036d0a8f044d84791720db7f7b96bf5992fbbbd9e2c4b031b435e6f772014"
+  },
+  "companion_objects": {
+    "ActualScalar.olean.private": "b5544c0fc8ec47f2833261bef58d55fa6f164e434ad6dfc8afd1f915be6acde7",
+    "ActualScalar.olean.server": "109412b1bafcc422f667c87ba7314518d2d39e6f4e23c3c3d4dc870c0ea12971",
+    "OneRun.olean.private": "7b96cf8e4b46261501885a442da7cff998b9e289e3901718d120486dbaea9bc6",
+    "OneRun.olean.server": "eb501d10b47a27f46dc82c84a3e90a539c8e46c0383adce7993f090c3fb06d43",
+    "ThreeRunCore.olean.private": "5b75a114a56fb5964cdae5ce6951795a7e45239733e60281e58ae572cebd2df5",
+    "ThreeRunCore.olean.server": "e112ce7944ebc4877f01173a698aa39eea4a0ffc7fa7276ef0207d09176af35d",
+    "OrdinaryShadow.olean.private": "10c6c2edae113b69a546733891a81f432805c4c8872859f3d87987cc2052957e",
+    "OrdinaryShadow.olean.server": "6ed3b88d0c6c122f2131379acb950be7771d0968d6091da39ca68117f2236e35",
+    "PhaseBounds.olean.private": "3958290f92ca26c69cb80743a0847768b2a11f5bd588ca87c0ab1da47b83c94e",
+    "PhaseBounds.olean.server": "2d4958bfe70d32075390b431529a0b738238f5bb213331da0ca64cf7451fd775",
+    "ActualOneRun.olean.private": "0fdabde8e7c466b774cae51a7fb0085f7f9a817a2793f4eaed744bcc9a6bd0a5",
+    "ActualOneRun.olean.server": "df22c7e95bacd95bb29f0564d79a692cb980b0bc73ed17d0293ff4c2c1cfc766",
+    "AllAxioms.olean.private": "490d7c0fcb30703213d5e01508b99dd66574297e8e09d7e3d38616896c161a75",
+    "AllAxioms.olean.server": "9db86bb048718f41fc0e499cc1c674a91f9ffc5d44ba3a8a6bc858b010dea291"
+  },
+  "axioms": {
+    "new": {
+      "count": 10,
+      "declarations": {
+        "Collatz.PhaseRepulsion.one_run": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PhaseRepulsion.one_run_length": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PhaseRepulsion.three_run_length": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryShadow.smaller_nonconverger": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ActualThreeRun.three_run_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ActualThreeRun.carry_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ActualThreeRun.actual_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ActualThreeRun.actual_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ActualThreeRun.actual_three_run": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhaseRepulsion.actual_one_run": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "upstream": {
+      "count": 5,
+      "declarations": {
+        "Collatz.CarryTowerRoundTen.ActualScalar.scalar_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.CarryTowerRoundTen.ActualScalar.scalar_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.CarryTowerRoundTen.ActualScalar.scalar_recurrence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.CarryTowerRoundTen.ActualScalar.scalar_strict_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.CarryTowerRoundTen.ActualScalar.converges_iff_triadic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "final_source_head": "e3c33885e5d1530c4ad4595e324f9dbeb2761482",
+  "final_source_status": "",
+  "finished": "2026-11-24T04:07:03.650964+00:00"
+}

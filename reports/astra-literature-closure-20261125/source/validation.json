@@ -1,0 +1,75 @@
+{
+  "base": "1f1d3d690d7517e1b2a44b5f2f4930bd45b63302",
+  "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "options": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "compilations": [
+    {
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "exit_code": 0
+    },
+    {
+      "path": "research/astra-literature-closure-20261125/source/OriginalWindow.lean",
+      "sha256": "d15f2823f63884d117b98a7e955254c436475c832b38dd11d98a21440d3aaf50",
+      "exit_code": 0,
+      "audit": [
+        "'Collatz.OriginalWindow.affine_diameter' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.affine_fibre_card' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OriginalWindow.source_union_card' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OriginalWindow.unique_grade' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.suffix_budget' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.landing_carry' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.record_landing_carry' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.OriginalWindow.lift_gate_meet' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.descend_source_meet' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.tripling_via_adjacent' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.OriginalWindow.head_or_boundary' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "finite": {
+    "path": "research/astra-literature-closure-20261125/source/check.py",
+    "sha256": "49617dc9b09dddf339db352797a5a9be393412e96a827a22b7f8335b8a794e9e",
+    "python": "3.12.14",
+    "normal_exit": 0,
+    "optimized_exit": 0,
+    "results": {
+      "adjacent_start_control": [
+        {
+          "clock": 26,
+          "gate": 879899,
+          "n": 3000000000,
+          "odds": 9
+        },
+        {
+          "clock": 72,
+          "gate": 858163,
+          "n": 3000000001,
+          "odds": 38
+        }
+      ],
+      "base81_boundary_depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "nonvacuous_block_certificates": {
+        "16": 456,
+        "32": 130,
+        "8": 625
+      },
+      "tested_starts": 2050
+    }
+  }
+}

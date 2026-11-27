@@ -1,0 +1,42 @@
+{
+  "adaptive_meetings": 1536,
+  "canonical": [
+    {
+      "criterion_checked_through_clock": 18,
+      "first_balance": 5,
+      "lower_odd_inputs_at_hit": 15,
+      "saved_upper_odd_inputs": 2,
+      "upper_first_hit": 18,
+      "upper_odd_inputs": 3
+    },
+    {
+      "criterion_checked_through_clock": 180,
+      "first_balance": 5,
+      "lower_odd_inputs_at_hit": 177,
+      "saved_upper_odd_inputs": 2,
+      "upper_first_hit": 180,
+      "upper_odd_inputs": 3
+    },
+    {
+      "criterion_checked_through_clock": 342,
+      "first_balance": 5,
+      "lower_odd_inputs_at_hit": 339,
+      "saved_upper_odd_inputs": 2,
+      "upper_first_hit": 342,
+      "upper_odd_inputs": 3
+    },
+    {
+      "criterion_checked_through_clock": 504,
+      "first_balance": 5,
+      "lower_odd_inputs_at_hit": 501,
+      "saved_upper_odd_inputs": 2,
+      "upper_first_hit": 504,
+      "upper_odd_inputs": 3
+    }
+  ],
+  "ordinary": {
+    "drops": 3219,
+    "positive_carries": 621,
+    "scale_comparisons": 3840
+  }
+}

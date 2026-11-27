@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-24",
+  "baseline": "be783656f0e889fe0d5318a2f7a9140099cb94b5",
+  "scope": "Exact consumed interfaces and comparison sources. Not a whole-PR review or acceptance of every neighboring claim.",
+  "repository_sources": [
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "tree": "d23ad9ded19259214cfe6f4b437d9bbe3161df6e",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "git_blob": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "sha256": "bee22c362de8adcbb6a0360f48240ad276fdf6122f6383273eb10dee8e29271d",
+      "scope": "Theorem (1), reciprocal moment (9): one injective invariant ordinary orbit; written proof reconstructed",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a7fd3ac9e5bff7412858df23d776bb847e9c1371/research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "tree": "bbf7976125299168b71c3ca7b5643b2249d5af79",
+      "path": "research/profound-closure-20261122/BOUNDED_POWER_LANGUAGES.md",
+      "git_blob": "cb3d33dbe22b7d50b06b7c7025d73e689be5cd82",
+      "sha256": "cabaf79863a492e907e18e5cc67c47bb23c486b2a0302357f923106f3ea6a7ce",
+      "scope": "Two-logarithm estimate and dyadic budget; analytic input remains source-qualified",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/profound-closure-20261122/BOUNDED_POWER_LANGUAGES.md"
+    },
+    {
+      "pr": 191,
+      "commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "tree": "d7e1b6c02bf22a360c99948c29de66859b505e41",
+      "path": "research/two-sided-cycle-packing-20261124/README.md",
+      "git_blob": "5380e3b5f0f0366556a2591e910f039bac0abfa7",
+      "sha256": "f9b14eac5b26b637bf16f6f4c368a565610e00975862be4111bf662a863e3ed0",
+      "scope": "TCP-5 residue-guarded L/P shadow; comparison interface",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/37b3916633cd32a0c173b20bb18ec3a7ec290a63/research/two-sided-cycle-packing-20261124/README.md"
+    },
+    {
+      "pr": 192,
+      "commit": "be783656f0e889fe0d5318a2f7a9140099cb94b5",
+      "tree": "509b7612ecd9727335a4d576f6bf58e4eb1be200",
+      "path": "research/astra-phase-and-cycle-20261124/README.md",
+      "git_blob": "9403293761380d988b33d2e09a68addcfef5e9b3",
+      "sha256": "e8a727435aa5ab6e49f8d5fb009dda3bdb6fa680c1f8eabf34cf545def830b10",
+      "scope": "Starting checkpoint: phase and polynomial survival results; complete evaluation gap retained",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/be783656f0e889fe0d5318a2f7a9140099cb94b5/research/astra-phase-and-cycle-20261124/README.md"
+    },
+    {
+      "pr": 193,
+      "commit": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "tree": "a7651c33c3fff40acc3c2807dd07f7b255ae2abf",
+      "path": "research/astra-universal-descent-20261124/shadow.md",
+      "git_blob": "877caaccb0434fc13f98e86bb88fb4a07184becd",
+      "sha256": "14e3bf47038b8caf5b629ec4a26c9818d7038952e67c914eab14bcc88aa2b7a8",
+      "scope": "Guarded finite ordinary merger; comparison interface",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c6cb5e66516a86c33a757154983bbddc822510de/research/astra-universal-descent-20261124/shadow.md"
+    },
+    {
+      "pr": 193,
+      "commit": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "tree": "a7651c33c3fff40acc3c2807dd07f7b255ae2abf",
+      "path": "research/astra-universal-descent-20261124/escape.md",
+      "git_blob": "1fbb615119e9d12f32dc2f33c333fafd65fd0938",
+      "sha256": "59946132704f2d380b5fb4b244148ea481aa0c0a1f70cc800911e5ee98da53b2",
+      "scope": "Fixed-clock interval compression; comparison interface",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c6cb5e66516a86c33a757154983bbddc822510de/research/astra-universal-descent-20261124/escape.md"
+    },
+    {
+      "pr": 193,
+      "commit": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "tree": "a7651c33c3fff40acc3c2807dd07f7b255ae2abf",
+      "path": "research/astra-universal-descent-20261124/cycles.md",
+      "git_blob": "0a422b8d570660fe61edbed052163537f2b3e401",
+      "sha256": "9e6f6b273b670dbf4e0e280fc7c56bb5a4c6497179ee928571f525574a409c12",
+      "scope": "Complete evaluated denominator from factor complexity; comparison interface",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c6cb5e66516a86c33a757154983bbddc822510de/research/astra-universal-descent-20261124/cycles.md"
+    },
+    {
+      "pr": 193,
+      "commit": "c6cb5e66516a86c33a757154983bbddc822510de",
+      "tree": "a7651c33c3fff40acc3c2807dd07f7b255ae2abf",
+      "path": "research/astra-universal-descent-20261124/SHADOW_COVERAGE_LIMIT.md",
+      "git_blob": "4edfc8be302e44c0af46a47c6513000098b4b5ca",
+      "sha256": "6703ab2d01a3a0188e6caf19b79adeb8c0597648fc5c191ac1505d2121ba10d3",
+      "scope": "Finite partner-word coverage limitation; comparison interface",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c6cb5e66516a86c33a757154983bbddc822510de/research/astra-universal-descent-20261124/SHADOW_COVERAGE_LIMIT.md"
+    },
+    {
+      "pr": 194,
+      "commit": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "tree": "c916c8b265883d6a9cd6667de82f1cecd0c314e9",
+      "path": "research/astra-birth-rigidity-20261124/OCCUPATION.md",
+      "git_blob": "e3b023cb892f63b8754ee7d0a0b1b1c6fcc41345",
+      "sha256": "51aea60e8be3026948d39a1f2f29fea1bae85dd26304a519839b37372b9fd766",
+      "scope": "Finite-phase occupation count; comparison interface, not imported as universal closure",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b1bf1f151a2da8936f80d229f132d0b7539ba42c/research/astra-birth-rigidity-20261124/OCCUPATION.md"
+    },
+    {
+      "pr": 194,
+      "commit": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "tree": "c916c8b265883d6a9cd6667de82f1cecd0c314e9",
+      "path": "research/astra-birth-rigidity-20261124/RUN_PARTITION.md",
+      "git_blob": "6fc8decdf0c2ce00583c381cb03319c962ad7bf5",
+      "sha256": "5014a994698abeeea371ac5dcd56d2677d2d739506be594dfd772064e1b2fc29",
+      "scope": "Canonical binary-carry path budget; not a positive-integer unit summand upper bound",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b1bf1f151a2da8936f80d229f132d0b7539ba42c/research/astra-birth-rigidity-20261124/RUN_PARTITION.md"
+    },
+    {
+      "pr": 188,
+      "commit": "f98262be4ea40068dc88c779a767a9400a8bcaa3",
+      "tree": "6f70556f7a0c521c358fe57143a6fbca8f67e954",
+      "path": "research/astra-closure-20261124/GLOBAL_BRIDGE.md",
+      "git_blob": "456d0adbff53dc0eb882a6d3c32aa148228f379f",
+      "sha256": "288da8c57fc3ffe2aeb7117d4f074905491dc7cf103d983d87c85b16e9650c16",
+      "scope": "Carry debit and fixed-floor obstruction; expanding L/P controls",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f98262be4ea40068dc88c779a767a9400a8bcaa3/research/astra-closure-20261124/GLOBAL_BRIDGE.md"
+    },
+    {
+      "pr": 188,
+      "commit": "f98262be4ea40068dc88c779a767a9400a8bcaa3",
+      "tree": "6f70556f7a0c521c358fe57143a6fbca8f67e954",
+      "path": "research/astra-closure-20261124/CANONICAL_WINDOWS.md",
+      "git_blob": "a318e488c2f9a70308f26b9e392d897667ecc7d5",
+      "sha256": "5d7546ef00fd1c58b6e6211f052d8b9fa436f4263ab4ef7c1d1d26089328c142",
+      "scope": "Actual canonical window comparison; no changing finite witness used as infinite orbit",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f98262be4ea40068dc88c779a767a9400a8bcaa3/research/astra-closure-20261124/CANONICAL_WINDOWS.md"
+    },
+    {
+      "pr": 195,
+      "commit": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "tree": "dc04a239cf7410d92e6a1c9b8c4ae5007c7c313f",
+      "path": "research/astra-global-closure-20261124/structural/README.md",
+      "git_blob": "64eee4f18181204244b830891ae10ddcf92e735a",
+      "sha256": "0a9770d5ce4b15f73574d7f8ac3c28e1d3e8470f2fc09ed99a08e044a8308d55",
+      "scope": "CS1 guarded offset -17 ordinary merger; phase-by-phase comparison",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a24ef018147a1e16bf314d14085e2d0d6c620d32/research/astra-global-closure-20261124/structural/README.md"
+    },
+    {
+      "pr": 195,
+      "commit": "a24ef018147a1e16bf314d14085e2d0d6c620d32",
+      "tree": "dc04a239cf7410d92e6a1c9b8c4ae5007c7c313f",
+      "path": "research/astra-global-closure-20261124/audit/SHADOW_RIGIDITY.md",
+      "git_blob": "1c1b0795e4dc5ad4c23374a311675feb9917b122",
+      "sha256": "8fc11084c6d8097169edc5f0bf855b8fb424978d913a2e47c6937bbd7ac3308a",
+      "scope": "AR5 finite total causal affine controller; original-clock and common-slope scope",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/a24ef018147a1e16bf314d14085e2d0d6c620d32/research/astra-global-closure-20261124/audit/SHADOW_RIGIDITY.md"
+    },
+    {
+      "pr": 196,
+      "commit": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "tree": "4a38aa96aec5f1ea26196a5851b4290d3a742e81",
+      "path": "research/astra-orbit-cycle-20261124/mergers/TWO_ANCHOR_MERGERS.md",
+      "git_blob": "dced2a09659cebdb36546e200f5640769db03112",
+      "sha256": "9b5bdc19098a6135f7cfc6e930b7e4008d39c5354ce1d10c2bc4064fe4bef90a",
+      "scope": "Half-size selector; guard and odd-core floor comparison on all L/P phases",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/27d03cfe902660e06604eb55bb28ca3d2754ff48/research/astra-orbit-cycle-20261124/mergers/TWO_ANCHOR_MERGERS.md"
+    },
+    {
+      "pr": 196,
+      "commit": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "tree": "4a38aa96aec5f1ea26196a5851b4290d3a742e81",
+      "path": "research/astra-orbit-cycle-20261124/cycles/ROTATIONAL_EXCLUSION.md",
+      "git_blob": "2006ae96eb51618c681364d71f7f3d644b3ec2cc",
+      "sha256": "689175720ff0904cfd86cdcc54a66749d0964aedae3add81692c297e45f7c251",
+      "scope": "R1 complete denominator and source-qualified R2; reused-center consequence",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/27d03cfe902660e06604eb55bb28ca3d2754ff48/research/astra-orbit-cycle-20261124/cycles/ROTATIONAL_EXCLUSION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "tree": "dec94cf76589d28f4d00107bfb7bcbb94651538a",
+      "path": "research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md",
+      "git_blob": "f0dcb7a8e8ec23798dd2e685cf1b4caa592941e6",
+      "sha256": "0f950d72941b5a3a967aa3028ed480ca5bcf687f17eac68c64e819c3bf759b86",
+      "scope": "Critical surplus section; exact quarter reduction and unproved smaller-section return",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/positive-section/CRITICAL_SECTION.md"
+    },
+    {
+      "pr": 197,
+      "commit": "2fb1f11c959e35eba875338833d84969222dc089",
+      "tree": "dec94cf76589d28f4d00107bfb7bcbb94651538a",
+      "path": "research/ayh-resource-reset-20261124/LATEST_SOURCE_CONNECTIONS.md",
+      "git_blob": "7914cea0f8aad047c709f4738eea413ce3448c24",
+      "sha256": "576b3f3bcafc1f32c7fc322678a00fd9c6abc56788b03e74d57242b50bf14e11",
+      "scope": "Prior incoming-merger comparison and retained source-floor requirement",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2fb1f11c959e35eba875338833d84969222dc089/research/ayh-resource-reset-20261124/LATEST_SOURCE_CONNECTIONS.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/README.md",
+      "git_blob": "3b611f83ee0d8754ced138606e827b276d4df23b",
+      "sha256": "3b9ff72b00716c0c0e6446c73884a35cfe44f14d615449b21b440d5e764d8150",
+      "scope": "AF6 equal-clock dictionary and source review; no universal tiling inferred",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/README.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/MINIMUM_ARC.md",
+      "git_blob": "4a8aa3b7ea3162dd6b64501f7b0231df475bd413",
+      "sha256": "431ba55291001e00bdfd134cabff346afdf2dfb1e7479a3160fe327970514329",
+      "scope": "First contracting arc at a minimum; no center-height upper bound inferred",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/MINIMUM_ARC.md"
+    },
+    {
+      "pr": 198,
+      "commit": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "tree": "969973645869b0c2a63eaa931286e890d1eaaa73",
+      "path": "research/astra-frontier-20261124/LATE_FRONTIER.md",
+      "git_blob": "3db7544ad52735306d3f9386d71235be321482e3",
+      "sha256": "b7c17871ec62d0a563e87bd9e51db5f93eab1dceaff619302dd24c0e8511a93f",
+      "scope": "Latest-source interface comparison, not imported analytic verification",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c76acf99ba3fb05e7cc07ca7db7e467954c2d950/research/astra-frontier-20261124/LATE_FRONTIER.md"
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "J.-H. Evertse",
+      "title": "On sums of S-units and linear recurrences",
+      "year": 1984,
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "used": "Corollary 1, printed p.227; Theorem 4, printed p.231"
+    },
+    {
+      "authors": "J.-H. Evertse, H. P. Schlickewei, W. M. Schmidt",
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "year": 2002,
+      "url": "https://arxiv.org/pdf/math/0409604",
+      "doi": "10.2307/3062133",
+      "used": "Theorem 1.1, p.808; fixed-rank nondegenerate unit equations"
+    },
+    {
+      "authors": "F. Beukers, H. P. Schlickewei",
+      "title": "The equation x+y=1 in finitely generated groups",
+      "year": 1996,
+      "url": "https://webspace.science.uu.nl/~beuke106/s-units.pdf",
+      "doi": "10.4064/aa-78-2-189-199",
+      "used": "Theorem 1.1, author PDF p.1; sharper rank-two bound"
+    },
+    {
+      "authors": "P. Corvaja, U. Zannier",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "url": "https://arxiv.org/pdf/math/0311030",
+      "used": "Corollary 1, equation (1.3); independent fixed-prime clocks"
+    },
+    {
+      "authors": "N. Grieve, J. T.-Y. Wang",
+      "title": "Greatest common divisors with moving targets and consequences for linear recurrence sequences",
+      "url": "https://arxiv.org/pdf/1902.09109",
+      "used": "Theorem 1.2 and Example 1.3; fixed dimension and infinite-subset quantifiers"
+    },
+    {
+      "authors": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in logarithms of algebraic numbers. II",
+      "year": 2000,
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "url": "https://doi.org/10.1070/IM2000v064n06ABEH000314",
+      "used": "Fixed bases 2 and 3; source-qualified specialization through pinned PR185"
+    },
+    {
+      "authors": "E. Yolcu, S. Aaronson, M. J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "used": "Mixed-radix termination equivalence; no well-founded order imported"
+    }
+  ],
+  "late_refresh_scope": "Focused reads of PR195\u2013198 and new deductions in LATE_SOURCE_CONNECTIONS.md. No blanket whole-branch audit or inherited compiler evidence."
+}

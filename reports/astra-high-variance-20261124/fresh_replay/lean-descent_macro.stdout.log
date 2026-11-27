@@ -1,0 +1,5 @@
+'Collatz.ExpandingShadow.original_floor_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ExpandingShadow.short_paid_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ExpandingShadow.tail_integral' depends on axioms: [propext, Quot.sound]
+'Collatz.ExpandingShadow.tail_bad' depends on axioms: [propext, Quot.sound]
+'Collatz.ExpandingShadow.entrance_bad' depends on axioms: [propext, Quot.sound]

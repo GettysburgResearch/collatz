@@ -1,0 +1,53 @@
+{
+  "scope": "Executed by root on the named local sources; finite arithmetic controls, not unbounded mathematical proofs.",
+  "records": [
+    {
+      "source": "research/astra-phase-and-cycle-20261124/phase_controls.py",
+      "source_sha256": "b990ae029bcf81ab4f1c19ec27c685c753f0f11c089831480d14d99e8734aaeb",
+      "commands": [
+        [
+          "python",
+          "-B",
+          "phase_controls.py"
+        ],
+        [
+          "python",
+          "-O",
+          "-B",
+          "phase_controls.py"
+        ]
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "outputs_equal": true,
+      "output": "phase_controls.json",
+      "output_sha256": "37b29322600bf4a9df1b20580c6e4da094832bbebb6ff8e73717e0a9e71106bf"
+    },
+    {
+      "source": "research/astra-phase-and-cycle-20261124/cycle_controls.py",
+      "source_sha256": "549388f8f100664faac7ab8890e8a56fc77ce1f6886d9982095451d0279e1fe2",
+      "commands": [
+        [
+          "python",
+          "-B",
+          "cycle_controls.py"
+        ],
+        [
+          "python",
+          "-O",
+          "-B",
+          "cycle_controls.py"
+        ]
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "outputs_equal": true,
+      "output": "cycle_controls.txt",
+      "output_sha256": "38855fbb60b1cd5b9f39550c23923dddc68017103667a3c37d14bef0b6e69a51"
+    }
+  ]
+}

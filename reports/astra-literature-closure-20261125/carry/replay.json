@@ -1,0 +1,229 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "fresh_object_directory": true,
+  "modules": [
+    {
+      "path": "research/astra-minimum-source-20261124/arithmetic/SourceDeletion.lean",
+      "sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "exit": 0,
+      "axioms": {
+        "Collatz.SourceDeletion.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.swapped_paths": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.swapped_row": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.delete_digit": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.lower_representative": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.all_below": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.all_below_cutoff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.SourceDeletion.seven_mod_eight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "exit": 0,
+      "axioms": {
+        "Collatz.MinimumFailure.label_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.label_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.label_eq_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.exists_least_discordance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.good_below": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.good_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.upper_bad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.smaller_triples_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.smaller_multiples_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.counterexample_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.exclude_seven_mod_eight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.counterexample_reduction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MinimumFailure.good_one": [],
+        "Collatz.MinimumFailure.good_step": [],
+        "Collatz.MinimumFailure.good_run": []
+      }
+    },
+    {
+      "path": "research/astra-literature-closure-20261125/carry/MovingOrigin.lean",
+      "sha256": "1d62b2f7af98bf58f737a69f7193392613162fe349dddf04c04d55f3cac5768c",
+      "exit": 0,
+      "axioms": {
+        "Collatz.MovingOrigin.canonical_to_canonical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MovingOrigin.two_reference_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MovingOrigin.original_upper_suffix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MovingOrigin.paired_hit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MovingOrigin.unaligned_crossing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.MovingOrigin.unaligned_floor": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/astra-literature-closure-20261125/carry/InverseEnvelope.lean",
+      "sha256": "6e6e6bdee8ec6c0547c16094a9fb5780cb671aca6495516feb7eb5d98a7e6011",
+      "exit": 0,
+      "axioms": {
+        "Collatz.InverseEnvelope.missing_origins": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.InverseEnvelope.inverse_envelope": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.InverseEnvelope.attained": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/astra-literature-closure-20261125/carry/IteratedReturn.lean",
+      "sha256": "f7036763a40d451d6a0178697872dc98e78d471680aa3da08ad84329a890cf42",
+      "exit": 0,
+      "axioms": {
+        "Collatz.IteratedReturn.centered_identity": [
+          "propext"
+        ],
+        "Collatz.IteratedReturn.translated_chain": [
+          "propext"
+        ],
+        "Collatz.IteratedReturn.terminal_progression": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.IteratedReturn.prescribed_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/astra-literature-closure-20261125/carry/PowerBacktrace.lean",
+      "sha256": "38c0f54e2ef1c98bf613814991a1578d208b1d06733e6c1f76ed0b2c607b210f",
+      "exit": 0,
+      "axioms": {
+        "Collatz.PowerBacktrace.paid_backtrace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "finite_checks": [
+    {
+      "flags": [
+        "-B"
+      ],
+      "exit": 0,
+      "output_sha256": "9e8aec06c20f07529311184cdca41b3a430ac549299d1b3304fdad9b72febf5c"
+    },
+    {
+      "flags": [
+        "-B",
+        "-O"
+      ],
+      "exit": 0,
+      "output_sha256": "9e8aec06c20f07529311184cdca41b3a430ac549299d1b3304fdad9b72febf5c"
+    }
+  ],
+  "checker_sha256": "a3a17c4a63ca4fc435e54b6258e754fc4f31a852bcab118b4c778069af69ebfd"
+}

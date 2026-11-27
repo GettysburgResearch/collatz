@@ -1,0 +1,5 @@
+'Collatz.GapArithmetic.offset_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapArithmetic.zero_offset_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapArithmetic.deep_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapArithmetic.excursion_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GapArithmetic.rank_zero_amortization' depends on axioms: [propext, Classical.choice, Quot.sound]

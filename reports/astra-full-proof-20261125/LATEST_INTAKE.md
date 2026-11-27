@@ -1,0 +1,20 @@
+# Sources reassessed for the full-proof attempt
+
+The working parent is `570476be82f706122cdd23ebd7a00f3d4ff90cd8` on PR192. The following other branches were fetched at their full commit IDs and read without importing their competing packet directories. These are source-specific assessments, not reviews of later revisions.
+
+| Source | Frozen commit | Consequence relevant to closure | Remaining inference |
+|---|---|---|---|
+| [PR197](https://github.com/GettysburgResearch/collatz/pull/197) | `156652e03fe7a78f9cd4442039779cc622fdf3de` | Explicit smaller Mersenne checkpoints; ordinary progress sources in every finite word cylinder; lifted label grid reduces a counterexample to a lower bound for a shared-source joint bad event. | Cofinal progress does not give progress for the unchanged source. The required upper bound for the joint all-clock event is unproved. Marginal estimates and arbitrary translated windows do not establish it. |
+| [PR195](https://github.com/GettysburgResearch/collatz/pull/195) | `5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57` | Short tower mergers require a heavier parity word with the same affine constant; all-shift mismatch bounds constrain the bounded least-disagreement cycle. Round 10 also supplies matching diffusive-row bounds. | Asynchronous mergers need not satisfy the same-clock word condition. All shifts may have large mismatch. The matching row estimates prevent claiming that the previously proposed row tail alone contradicts a cycle. |
+| [PR209](https://github.com/GettysburgResearch/collatz/pull/209) | `2d0230aa52d85732dbc85b5df20e30108dc1396f` | Fixed 1024-clock descent criteria on all tower rows; positive proportions of simultaneous successful cylinders; narrow-band cycle counting; actual parity collision cancellation. | Positive proportions do not cover every source, adjacent tower mergers need not cross the first bad exponent, and a narrow-band exit can go upward. |
+| [PR208](https://github.com/GettysburgResearch/collatz/pull/208) | `72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f` | New machinery intake supplies sparse all-row progress, exponentially decaying finite obstruction counts, and precise failures of unweighted fiber caps and residue-only potentials. | Density zero of never-crossers is not emptiness. Fourier transport still needs a discrepancy estimate on retained actual sources and a budget that survives the transport. |
+| [PR190](https://github.com/GettysburgResearch/collatz/pull/190) | `ba58227c5a047ff3859a148a5fdaac4fd1451e4c` | Mahler auxiliary-polynomial exclusion of nonperiodic binary uniform and primitive substitution scripts at their physical dyadic completions. | An arbitrary ordinary trajectory need not have such a substitution description. |
+| [PR194](https://github.com/GettysburgResearch/collatz/pull/194) | `b1bf1f151a2da8936f80d229f132d0b7539ba42c` | Written audit of PR190 and extension to nonidentity non-erasing binary substitutions. | General ordinary trajectories and nontrivial positive cycles remain outside that result. |
+
+## What was selected for the present attacks
+
+1. Preserve an **actual upper certificate** while changing the lower source by a literal meeting. A theorem about fresh membership in the basin does not control that certificate's rank. The new signed-prefix kernels construct the replacement's upper witness explicitly.
+2. Count low endpoints while allowing **arbitrarily high excursions** between them. This addresses the restriction in the old narrow-band cycle count. The complete reduced denominator remains in the counting argument.
+3. Attack an **unchanged ordinary escaping trajectory** using finite-dimensional rational dynamics and an arbitrary scalar Mahler equation. These hypotheses are different from a prescribed binary substitution; neither is assumed to follow from the Collatz recurrence.
+
+The existing parent packet's cycle examples, actual-certificate costs, and first-tower hypotheses were retained. No claim that the three selected directions exhaust all possible proofs is made.

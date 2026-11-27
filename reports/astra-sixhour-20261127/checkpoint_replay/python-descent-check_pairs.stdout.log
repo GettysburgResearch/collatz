@@ -1,0 +1,95 @@
+{
+  "ordinary_charge_controls": {
+    "17": [
+      9,
+      3,
+      3
+    ],
+    "195": [
+      76,
+      43,
+      -10
+    ],
+    "51": [
+      17,
+      7,
+      3
+    ],
+    "65": [
+      19,
+      8,
+      3
+    ]
+  },
+  "recursive_strip_controls": [
+    {
+      "both_stopped": 867,
+      "output_pieces": 142,
+      "source_pairs": 1200
+    },
+    {
+      "both_stopped": 833,
+      "output_pieces": 227,
+      "source_pairs": 1200
+    },
+    {
+      "both_stopped": 794,
+      "output_pieces": 194,
+      "source_pairs": 1200
+    }
+  ],
+  "translated_intervals": [
+    {
+      "both_stopped": 1344,
+      "canonical_sources": 1365,
+      "coefficient_cut_denominator": 8192,
+      "deadline": 150,
+      "distinct_stopped_signatures": 1119,
+      "largest_stopped_fiber": 7,
+      "lower_missed_cut": 7,
+      "replayed_smaller_partners": 225,
+      "start": "1",
+      "upper_missed_cut": 16,
+      "width": 65536
+    },
+    {
+      "both_stopped": 1340,
+      "canonical_sources": 1365,
+      "coefficient_cut_denominator": 8192,
+      "deadline": 150,
+      "distinct_stopped_signatures": 1047,
+      "largest_stopped_fiber": 7,
+      "lower_missed_cut": 14,
+      "replayed_smaller_partners": 293,
+      "start": "1000011",
+      "upper_missed_cut": 13,
+      "width": 65536
+    },
+    {
+      "both_stopped": 1330,
+      "canonical_sources": 1366,
+      "coefficient_cut_denominator": 8192,
+      "deadline": 150,
+      "distinct_stopped_signatures": 1087,
+      "largest_stopped_fiber": 6,
+      "lower_missed_cut": 14,
+      "replayed_smaller_partners": 243,
+      "start": "1329227995784915872903807060280344613",
+      "upper_missed_cut": 23,
+      "width": 65536
+    },
+    {
+      "both_stopped": 1331,
+      "canonical_sources": 1365,
+      "coefficient_cut_denominator": 8192,
+      "deadline": 150,
+      "distinct_stopped_signatures": 1056,
+      "largest_stopped_fiber": 9,
+      "lower_missed_cut": 17,
+      "replayed_smaller_partners": 275,
+      "start": "106111661199647248543687855752712667991103904330482569981872730",
+      "upper_missed_cut": 19,
+      "width": 65536
+    }
+  ]
+}

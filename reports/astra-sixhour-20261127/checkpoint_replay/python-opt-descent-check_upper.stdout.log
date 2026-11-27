@@ -1,0 +1,291 @@
+{
+  "ordinary_parents": {
+    "negative / within / earlier lower hit": 60,
+    "negative / within / forced paid grade": 52,
+    "positive / beyond / earlier lower hit": 211,
+    "positive / within / earlier lower hit": 11,
+    "positive / within / forced paid grade": 2,
+    "zero / within / earlier lower hit": 144
+  },
+  "supplied_suffixes": [
+    {
+      "rows": [
+        {
+          "e": 472,
+          "exit_clock": 8,
+          "height_floor_clock": 757,
+          "negative_exit_bits": 474,
+          "original_bits": 477,
+          "upper_first_hit": 485
+        },
+        {
+          "e": 634,
+          "exit_clock": 8,
+          "height_floor_clock": 1013,
+          "negative_exit_bits": 636,
+          "original_bits": 639,
+          "upper_first_hit": 647
+        },
+        {
+          "e": 796,
+          "exit_clock": 8,
+          "height_floor_clock": 1270,
+          "negative_exit_bits": 798,
+          "original_bits": 801,
+          "upper_first_hit": 809
+        }
+      ],
+      "suffix_clocks": 4,
+      "suffix_odd_count": 1,
+      "u": "5"
+    },
+    {
+      "rows": [
+        {
+          "e": 396,
+          "exit_clock": 9,
+          "height_floor_clock": 636,
+          "negative_exit_bits": 402,
+          "original_bits": 405,
+          "upper_first_hit": 414
+        },
+        {
+          "e": 558,
+          "exit_clock": 9,
+          "height_floor_clock": 893,
+          "negative_exit_bits": 564,
+          "original_bits": 567,
+          "upper_first_hit": 576
+        },
+        {
+          "e": 720,
+          "exit_clock": 9,
+          "height_floor_clock": 1150,
+          "negative_exit_bits": 726,
+          "original_bits": 729,
+          "upper_first_hit": 738
+        }
+      ],
+      "suffix_clocks": 9,
+      "suffix_odd_count": 2,
+      "u": "53"
+    },
+    {
+      "rows": [
+        {
+          "e": 359,
+          "exit_clock": 10,
+          "height_floor_clock": 578,
+          "negative_exit_bits": 369,
+          "original_bits": 371,
+          "upper_first_hit": 382
+        },
+        {
+          "e": 521,
+          "exit_clock": 10,
+          "height_floor_clock": 834,
+          "negative_exit_bits": 531,
+          "original_bits": 533,
+          "upper_first_hit": 544
+        },
+        {
+          "e": 683,
+          "exit_clock": 10,
+          "height_floor_clock": 1091,
+          "negative_exit_bits": 693,
+          "original_bits": 695,
+          "upper_first_hit": 706
+        }
+      ],
+      "suffix_clocks": 14,
+      "suffix_odd_count": 3,
+      "u": "565"
+    },
+    {
+      "rows": [
+        {
+          "e": 437,
+          "exit_clock": 11,
+          "height_floor_clock": 701,
+          "negative_exit_bits": 450,
+          "original_bits": 452,
+          "upper_first_hit": 464
+        },
+        {
+          "e": 599,
+          "exit_clock": 11,
+          "height_floor_clock": 958,
+          "negative_exit_bits": 612,
+          "original_bits": 614,
+          "upper_first_hit": 626
+        },
+        {
+          "e": 761,
+          "exit_clock": 11,
+          "height_floor_clock": 1215,
+          "negative_exit_bits": 774,
+          "original_bits": 776,
+          "upper_first_hit": 788
+        }
+      ],
+      "suffix_clocks": 18,
+      "suffix_odd_count": 4,
+      "u": "3013"
+    },
+    {
+      "rows": [
+        {
+          "e": 475,
+          "exit_clock": 12,
+          "height_floor_clock": 761,
+          "negative_exit_bits": 491,
+          "original_bits": 492,
+          "upper_first_hit": 506
+        },
+        {
+          "e": 637,
+          "exit_clock": 12,
+          "height_floor_clock": 1018,
+          "negative_exit_bits": 653,
+          "original_bits": 654,
+          "upper_first_hit": 668
+        },
+        {
+          "e": 799,
+          "exit_clock": 12,
+          "height_floor_clock": 1275,
+          "negative_exit_bits": 815,
+          "original_bits": 816,
+          "upper_first_hit": 830
+        }
+      ],
+      "suffix_clocks": 22,
+      "suffix_odd_count": 5,
+      "u": "16069"
+    },
+    {
+      "rows": [
+        {
+          "e": 379,
+          "exit_clock": 13,
+          "height_floor_clock": 609,
+          "negative_exit_bits": 400,
+          "original_bits": 401,
+          "upper_first_hit": 416
+        },
+        {
+          "e": 541,
+          "exit_clock": 13,
+          "height_floor_clock": 866,
+          "negative_exit_bits": 562,
+          "original_bits": 563,
+          "upper_first_hit": 578
+        },
+        {
+          "e": 703,
+          "exit_clock": 13,
+          "height_floor_clock": 1123,
+          "negative_exit_bits": 724,
+          "original_bits": 725,
+          "upper_first_hit": 740
+        }
+      ],
+      "suffix_clocks": 28,
+      "suffix_odd_count": 6,
+      "u": "342805"
+    },
+    {
+      "rows": [
+        {
+          "e": 371,
+          "exit_clock": 14,
+          "height_floor_clock": 597,
+          "negative_exit_bits": 397,
+          "original_bits": 397,
+          "upper_first_hit": 414
+        },
+        {
+          "e": 533,
+          "exit_clock": 14,
+          "height_floor_clock": 853,
+          "negative_exit_bits": 559,
+          "original_bits": 559,
+          "upper_first_hit": 576
+        },
+        {
+          "e": 695,
+          "exit_clock": 14,
+          "height_floor_clock": 1110,
+          "negative_exit_bits": 721,
+          "original_bits": 721,
+          "upper_first_hit": 738
+        }
+      ],
+      "suffix_clocks": 34,
+      "suffix_odd_count": 7,
+      "u": "7313173"
+    },
+    {
+      "rows": [
+        {
+          "e": 435,
+          "exit_clock": 15,
+          "height_floor_clock": 698,
+          "negative_exit_bits": 464,
+          "original_bits": 463,
+          "upper_first_hit": 482
+        },
+        {
+          "e": 597,
+          "exit_clock": 15,
+          "height_floor_clock": 955,
+          "negative_exit_bits": 626,
+          "original_bits": 625,
+          "upper_first_hit": 644
+        },
+        {
+          "e": 759,
+          "exit_clock": 15,
+          "height_floor_clock": 1211,
+          "negative_exit_bits": 788,
+          "original_bits": 787,
+          "upper_first_hit": 806
+        }
+      ],
+      "suffix_clocks": 38,
+      "suffix_odd_count": 8,
+      "u": "39003589"
+    },
+    {
+      "rows": [
+        {
+          "e": 480,
+          "exit_clock": 16,
+          "height_floor_clock": 769,
+          "negative_exit_bits": 512,
+          "original_bits": 511,
+          "upper_first_hit": 531
+        },
+        {
+          "e": 642,
+          "exit_clock": 16,
+          "height_floor_clock": 1026,
+          "negative_exit_bits": 674,
+          "original_bits": 673,
+          "upper_first_hit": 693
+        },
+        {
+          "e": 804,
+          "exit_clock": 16,
+          "height_floor_clock": 1283,
+          "negative_exit_bits": 836,
+          "original_bits": 835,
+          "upper_first_hit": 855
+        }
+      ],
+      "suffix_clocks": 42,
+      "suffix_odd_count": 9,
+      "u": "208019141"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "convergent_controls": {
+    "parity_words": 511,
+    "shortcut_steps": 7172,
+    "terminal_power_paths": 1022
+  },
+  "dyadic": {
+    "odd_sources": 10000
+  },
+  "growth": {
+    "dependent_growth_triples": 75,
+    "growth_triples": 25000,
+    "odd_sources": 50001,
+    "pell_pairs": 70
+  },
+  "mixed_grid": {
+    "checked_even_subsets": 5018,
+    "cutoff_product": 192121133180158874880,
+    "exact_absolute_taylor_coefficients": 3,
+    "published_base": 2361183241434822606848
+  }
+}

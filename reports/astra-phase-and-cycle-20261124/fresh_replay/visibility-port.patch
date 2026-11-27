@@ -1,0 +1,100 @@
+--- original/ActualScalar.lean
++++ generated/ActualScalar.lean
+@@ -1,8 +1,12 @@
+-import Mathlib.Tactic
+-import Mathlib.Analysis.SpecificLimits.Normed
+-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+-import Mathlib.Data.Nat.Factorization.Basic
+-import Mathlib.Topology.Algebra.InfiniteSum.Real
++module
++
++public import Mathlib.Tactic
++public import Mathlib.Analysis.SpecificLimits.Normed
++public import Mathlib.Analysis.SpecialFunctions.Log.Basic
++public import Mathlib.Data.Nat.Factorization.Basic
++public import Mathlib.Topology.Algebra.InfiniteSum.Real
++
++public section
+ 
+ /-! The actual odd Collatz scalar. No custom axioms or abstract orbit input. -/
+ namespace Collatz.CarryTowerRoundTen.ActualScalar
+--- original/OneRun.lean
++++ generated/OneRun.lean
+@@ -1,4 +1,8 @@
+-import Std
++module
++
++public import Std
++
++public section
+ 
+ namespace Collatz.PhaseRepulsion
+ 
+--- original/ThreeRunCore.lean
++++ generated/ThreeRunCore.lean
+@@ -1,4 +1,8 @@
+-import Std
++module
++
++public import Std
++
++public section
+ 
+ namespace Collatz.PhaseRepulsion
+ 
+--- original/OrdinaryShadow.lean
++++ generated/OrdinaryShadow.lean
+@@ -1,4 +1,8 @@
+-import Std
++module
++
++public import Std
++
++public section
+ 
+ namespace Collatz.OrdinaryShadow
+ 
+--- original/PhaseBounds.lean
++++ generated/PhaseBounds.lean
+@@ -1,4 +1,9 @@
+-import ActualScalar
++module
++
++public import ActualScalar
++import all ActualScalar
++
++public section
+ 
+ namespace Collatz.ActualThreeRun
+ 
+--- original/ActualOneRun.lean
++++ generated/ActualOneRun.lean
+@@ -1,5 +1,10 @@
+-import OneRun
+-import PhaseBounds
++module
++
++public import OneRun
++public import PhaseBounds
++import all ActualScalar
++
++public section
+ 
+ namespace Collatz.PhaseRepulsion
+ 
+--- original/AllAxioms.lean
++++ generated/AllAxioms.lean
+@@ -1,6 +1,10 @@
+-import ActualOneRun
+-import OrdinaryShadow
+-import ThreeRunCore
++module
++
++public import ActualOneRun
++public import OrdinaryShadow
++public import ThreeRunCore
++
++public section
+ 
+ -- New public theorems, including the intermediate bridge theorems.
+ #print axioms Collatz.PhaseRepulsion.one_run

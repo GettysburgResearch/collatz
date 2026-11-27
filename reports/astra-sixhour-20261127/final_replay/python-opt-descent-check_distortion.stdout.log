@@ -1,0 +1,27 @@
+{
+  "distortion_bound": "6/5",
+  "first_ternary_octave": 69,
+  "harmonic_bound": "53/100",
+  "high_octave_tail": "15/524288",
+  "last_finitely_counted_octave": 959,
+  "native_subintervals_per_octave": 8,
+  "passes": [
+    {
+      "round": 1,
+      "scaled_ceiling_millionths": 1472746
+    },
+    {
+      "round": 2,
+      "scaled_ceiling_millionths": 697859
+    },
+    {
+      "round": 3,
+      "scaled_ceiling_millionths": 550779
+    },
+    {
+      "round": 4,
+      "scaled_ceiling_millionths": 515938
+    }
+  ],
+  "possible_initial_odd_multiple_of_three": "1/2361183241434822606848"
+}

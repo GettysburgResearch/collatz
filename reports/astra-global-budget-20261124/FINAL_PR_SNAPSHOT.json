@@ -1,0 +1,105 @@
+{
+  "intake_date_utc": "2026-11-24",
+  "scope": "Final refresh before this packet; only named claims used, not a complete audit of every file.",
+  "pull_requests": [
+    {
+      "pr": 193,
+      "title": "Collatz: pointwise paired bounds, complete denominators, and common landings",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "head": "cc800b9041efdeee43bb89df21088a81e1f44a74",
+      "branch": "research/astra-universal-descent-20261124",
+      "updated_at": "2026-11-24T10:47:44Z",
+      "draft": true
+    },
+    {
+      "pr": 200,
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200",
+      "head": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "branch": "research/gpt62-regularity-rigidity-20261124",
+      "updated_at": "2026-11-24T10:37:07Z",
+      "draft": true
+    },
+    {
+      "pr": 201,
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "head": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+      "branch": "gpt62/killed-green-head-closure-20261124",
+      "updated_at": "2026-11-24T10:30:45Z",
+      "draft": true
+    },
+    {
+      "pr": 203,
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/203",
+      "head": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "branch": "research/mixed-adic-basin-density-20261124",
+      "updated_at": "2026-11-24T10:29:47Z",
+      "draft": true
+    },
+    {
+      "pr": 192,
+      "title": "Collatz: complete-graph rank attempts and fixed-source renewal",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "head": "301b84491ffafe283bd63d104c1b60ddf0e97f06",
+      "branch": "research/astra-central-closure-20261124",
+      "updated_at": "2026-11-24T10:05:22Z",
+      "draft": true
+    },
+    {
+      "pr": 195,
+      "title": "Collatz: S-unit cycle bounds, growing head neighborhoods and ordinary renewal",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195",
+      "head": "1c6e750e2f6970e6d5456cba5a93c2f3de8c2a97",
+      "branch": "research/astra-global-closure-20261124",
+      "updated_at": "2026-11-24T10:04:49Z",
+      "draft": true
+    },
+    {
+      "pr": 182,
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "branch": "research/dyadic-band-descent-20261121",
+      "updated_at": "2026-11-24T09:44:42Z",
+      "draft": true
+    },
+    {
+      "pr": 197,
+      "title": "Collatz: actual head descent, source projection and finite-floor selection",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197",
+      "head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "branch": "research/ayh-resource-reset-20261124",
+      "updated_at": "2026-11-24T09:42:18Z",
+      "draft": true
+    },
+    {
+      "pr": 202,
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/202",
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "branch": "research/synchronized-long-basin-blocks-20261124",
+      "updated_at": "2026-11-24T08:49:53Z",
+      "draft": true
+    },
+    {
+      "pr": 199,
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/199",
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "branch": "research/optimal-critical-ancestors-20261124",
+      "updated_at": "2026-11-24T07:10:44Z",
+      "draft": true
+    },
+    {
+      "pr": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "branch": "research/upper-bit-merger-cost-20261120",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "draft": true
+    }
+  ]
+}

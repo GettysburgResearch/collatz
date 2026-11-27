@@ -1,0 +1,2 @@
+'Collatz.FixedSource.odd_growth' depends on axioms: [propext, Quot.sound]
+'Collatz.FixedSource.matching_separation' depends on axioms: [propext, Classical.choice, Quot.sound]

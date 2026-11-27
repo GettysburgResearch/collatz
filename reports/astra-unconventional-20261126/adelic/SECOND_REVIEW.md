@@ -1,0 +1,31 @@
+# Pell, cubic and regulator lane review
+
+The ordinary orbit map in this packet sends a positive odd $x$ to the positive odd $y$ satisfying $2^a y=3x+1$. The written results do not establish an all-seed descent or exclude every nontrivial cycle.
+
+## Results on a fixed ordinary trajectory
+
+- P1–P3 assign the real quadratic unit $E_x$ of trace $12x+2$ to each state and prove an effective no-return estimate for its field. A return to the same field within $H$ shortcut clocks forces $x\le4\cdot36^H$. High records and simple cycles consequently require many distinct unit fields. P6 supplies positive rational cycles with increasingly separated states and reciprocal sum tending to zero.
+- C1–C2 specify the physical cubic field of trace $E_x^{1/3}+E_x^{-1/3}$. Its exact discriminant equals $81$ times the discriminant of the imaginary quadratic field of squareclass $-x(3x+1)$. Distinct occurring Pell labels give independent cubic radicals even when their quadratic characters satisfy relations. C3 combines this with A2: on every infinite injective orbit, for every fixed $h$, a density-one set of $h$-edge windows has cubic splitting group $S_3^h$. Over the local multiquadratic base, the cubic degree at three is at most $27$ regardless of the number of states.
+- C5 gives one embedding of the entire physical orbit's cubic compositum into $\mathbb Q_2$ taking every trace to its even root. A second embedding chooses odd roots simultaneously. A physical norm-one factor $U_x>1$ tends to one with $x$, while its dyadic valuations in these embeddings are $a$ and $-a/2$ and all ternary valuations vanish. The absolute height is exactly $(\log(x(3x+1))+\log U_x)/3$. The height of a prefix product is bounded below by $(\log2)/(2\sqrt6)$ times the Euclidean norm of the actual clock totals grouped by Pell field. Thus real closeness on a fixed orbit is compatible with growing global height and opposing fixed-place valuations.
+
+## Attempts to force a cycle contradiction
+
+U1–U4 give the physical local logarithm valuations, a third relative field unit and the interval coboundary it generates. Two opposite five-edge balanced products rule out any globally strict descent within the stated convex or concave additive prime-height class. P4–P5 and U5–U7 give exact five-term identities, exterior-boundary coordinates and a uniform Bloch regulator grid conditional on vanishing of the rationalized boundary. The torsion normalization uses Frenkel–Szenes, Proposition 5.4 and Corollary 5.5, including the factor of two from the signed tensor convention.
+
+R1 clears every place above two and three with common coefficient denominator $288$ while preserving a small positive real correction. R3 detects a surviving prime seven by exact arithmetic even on the genuine $1$-cycle. R4 shows why full sign averaging of this repair can lose the required positivity. I1–I2 change the expression and prove a fully Galois-invariant, positive, small real value with both sets of contractions cleared and denominator dividing $11520$. A sufficiently high hypothetical integral cycle must still have a nonzero contraction at a place above a rational prime at least five. The rational correction can introduce that prime. I3 forces infinitely many split primes of the original single-edge factors by varying their cyclotomic index; that index is auxiliary and those primes need not divide any orbit state. No argument forces the last remaining boundary to vanish.
+
+## Exact replay and coverage
+
+Five second-phase Lean modules compiled with Lean 4.34.1, `-j1 -DwarningAsError=true -DautoImplicit=false`, using the pinned Mathlib dependency objects. Each of the 26 public theorems has exactly one named axiom audit. No audit contains anything beyond `propext`, `Classical.choice`, and `Quot.sound`. The first-phase fifteen are documented separately in `REVIEW.md`. Source hashes and per-declaration output are recorded in `SECOND_CHECKS.json`.
+
+| Module | Public theorems | Scope |
+|---|---:|---|
+| `PellBoundary.lean` | 7 | Unit and five-term identities, quadratic trace elimination, odd trace grid, and the actual ternary/odd-prime boundary coordinate. |
+| `LocalUnitRelations.lean` | 6 | Third-field and clock algebra, segment relations and fully concrete ordinary balanced paths. |
+| `CyclotomicCorrection.lean` | 3 | Alternating-coordinate factorizations in an arbitrary field and the interdependent two-place clearing equations. |
+| `StressVariation.lean` | 4 | First and second variations of the four-pair combination, strict quantitative curvature margin and affine checkerboard cancellation. |
+| `CubicLift.lean` | 6 | Trace and local factorizations, every primitive rational-root obstruction at three, polynomial discriminant, rational normalized parameter and exact cubic for the height formula. |
+
+The two standard-library controls used isolated Python in both normal and optimized modes, with identical outputs and no disappearing assertions. The unit control verifies 10 physical edges in the two product swaps, three exact positive rational cycles, the even cubic lifts at 333 ternary-unit sources to 64 dyadic bits, and seven exponents in one actual shared Pell field. Its decimal controls cover 102 Rogers/trace tests and 14 physical high-edge values of the invariant expression with clocks 1 through 14. The smallest positive value in those 14 decimal tests had order $10^{-44}$. The repair control uses exact rational intervals for both signs, four exact rational words, and computations in $\mathbb Q(\sqrt3)$ at the surviving prime seven. Separately, SymPy 1.14.0's maximal-order `round_two` algorithm reproduced all 49 C1 field discriminants for the ternary-unit odd sources below 140 together with 341 and 5461. SymPy is unnecessary for the replay.
+
+The operator lane reconstructed the P2 and P4 arguments and contributed the density-one window viewpoint. The coordinating lane reconstructed the P1–P6 and local unit identities, checked the primary Bloch-group convention, the exact surviving prime seven and the I1–I2 invariant-expression constants. It supplied the elementary disjoint-window proof used in C3. Local discriminant computations, the full analytic estimates, Kummer independence, window densities, coherent infinite-field embeddings and absolute height assertions remain written proofs beyond the Lean kernels identified here.

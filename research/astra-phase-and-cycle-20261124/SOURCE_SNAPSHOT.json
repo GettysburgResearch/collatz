@@ -1,0 +1,374 @@
+{
+  "baseline": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "PR146\u2013191 metadata and current source tree inventory; deep reading and independent verification are separately identified in README.",
+  "sources": [
+    {
+      "pr": 146,
+      "commit": "f431078244e868dc699fad011044f0d5e7f76437",
+      "tree": "8a11c6a53d6716876b43a95108f3d4840c43ca49",
+      "changed_files_vs_main": 68,
+      "lean_files": 2,
+      "last_subject": "Realize every surviving parity prefix by a certified ordinary terminal"
+    },
+    {
+      "pr": 147,
+      "commit": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "tree": "fcae963976a29c5a60c973fd72fd8c446a00e1b6",
+      "changed_files_vs_main": 19,
+      "lean_files": 0,
+      "last_subject": "Record clean-checkout validation for the published inverse-credit packet"
+    },
+    {
+      "pr": 148,
+      "commit": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "tree": "86d23364bb23edfb53302b25a1ee43d8bc9ee5ea",
+      "changed_files_vs_main": 61,
+      "lean_files": 0,
+      "last_subject": "Record focused forward findings and exact clean-checkout validation"
+    },
+    {
+      "pr": 149,
+      "commit": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "tree": "ff0864f2c22c2850dbb684a34e2515df88d9e8f2",
+      "changed_files_vs_main": 28,
+      "lean_files": 0,
+      "last_subject": "Credit concurrent representative classification in PR 148"
+    },
+    {
+      "pr": 150,
+      "commit": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "tree": "48bae6ca6c1790e33d3477d502390d0ccac282a2",
+      "changed_files_vs_main": 37,
+      "lean_files": 0,
+      "last_subject": "Attach the validation receipt for the published content commit"
+    },
+    {
+      "pr": 151,
+      "commit": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "tree": "bbf6369d557083ebf54e3b1c0868abaf030b4708",
+      "changed_files_vs_main": 26,
+      "lean_files": 0,
+      "last_subject": "Record validation of the published merger content"
+    },
+    {
+      "pr": 152,
+      "commit": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "tree": "05306a433f43e048e7ee402eeb55c40d2515f672",
+      "changed_files_vs_main": 41,
+      "lean_files": 1,
+      "last_subject": "Record independent drift review and exact follow-up checkout validation"
+    },
+    {
+      "pr": 153,
+      "commit": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "tree": "1c79653ade5869868a6800d4ce01d0a81a1496e9",
+      "changed_files_vs_main": 37,
+      "lean_files": 0,
+      "last_subject": "Clarify that the six-run guard is not a superset of the prior guard"
+    },
+    {
+      "pr": 154,
+      "commit": "fe40bb6f88e8094290ef01207d9bf7c4798d35d0",
+      "tree": "49635bdb6d5ea949c8733532b01e1eb055b3dabb",
+      "changed_files_vs_main": 22,
+      "lean_files": 0,
+      "last_subject": "docs: preserve structural proof reviews and exact checkout receipts"
+    },
+    {
+      "pr": 155,
+      "commit": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "tree": "3c1c6f4f262b042d8d42a770b298d78842cff1a4",
+      "changed_files_vs_main": 64,
+      "lean_files": 1,
+      "last_subject": "docs: record clean-checkout validation of published Dirichlet research"
+    },
+    {
+      "pr": 156,
+      "commit": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "tree": "c3b4e10ce2d5455ccebf22df43e4bcbf695d430a",
+      "changed_files_vs_main": 37,
+      "lean_files": 0,
+      "last_subject": "Attach exact published-content validation and review provenance"
+    },
+    {
+      "pr": 157,
+      "commit": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "tree": "23bf602c45f74ffcebf5eb3c95d27577a18d96bb",
+      "changed_files_vs_main": 31,
+      "lean_files": 0,
+      "last_subject": "docs: attach exact GitHub content validation receipts"
+    },
+    {
+      "pr": 158,
+      "commit": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "tree": "5704e4ec9e7e4a14d26cd2cb3b7667b35a1791e3",
+      "changed_files_vs_main": 23,
+      "lean_files": 0,
+      "last_subject": "docs: attach exact scientific checkout validation receipts"
+    },
+    {
+      "pr": 159,
+      "commit": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "tree": "cc5a6d685223a286ae99753c547b11c629908615",
+      "changed_files_vs_main": 33,
+      "lean_files": 0,
+      "last_subject": "Record validation of the published all-hands scientific snapshot"
+    },
+    {
+      "pr": 160,
+      "commit": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "tree": "1ff1e2d08ba3283768c5aa6020b8b7e68edc4194",
+      "changed_files_vs_main": 35,
+      "lean_files": 0,
+      "last_subject": "docs: attach exact closure-attack reviews and execution receipts"
+    },
+    {
+      "pr": 161,
+      "commit": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "tree": "ab128989c7bd19c4329e47bd240f408041dd6382",
+      "changed_files_vs_main": 43,
+      "lean_files": 0,
+      "last_subject": "docs: attach published source-rigidity validation receipts"
+    },
+    {
+      "pr": 162,
+      "commit": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "tree": "e2d16b4757444b346a9478cde8f560229aee00fa",
+      "changed_files_vs_main": 36,
+      "lean_files": 0,
+      "last_subject": "docs: attach exact creative-closure execution receipts"
+    },
+    {
+      "pr": 163,
+      "commit": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "tree": "527d797092c15c6d56499d6dca7cd8d3532fc998",
+      "changed_files_vs_main": 46,
+      "lean_files": 0,
+      "last_subject": "docs: attach actual clean-checkout receipts for deep reverse research"
+    },
+    {
+      "pr": 164,
+      "commit": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "tree": "092f3d044bb10e14fdc447034a6f2f5fbf84cfe3",
+      "changed_files_vs_main": 29,
+      "lean_files": 0,
+      "last_subject": "research: prove a direct reverse-tripling contraction with longer child witnesses"
+    },
+    {
+      "pr": 165,
+      "commit": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "tree": "bc5f52e8b1a8bed4961473e26782eec9db433eb6",
+      "changed_files_vs_main": 55,
+      "lean_files": 0,
+      "last_subject": "docs: record actual published certificate-intake validation"
+    },
+    {
+      "pr": 166,
+      "commit": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "tree": "eff7f5d70c35c68622cbd2ce7659ee72f28f0183",
+      "changed_files_vs_main": 35,
+      "lean_files": 0,
+      "last_subject": "Record fetched-commit mathematical replay and repository validation"
+    },
+    {
+      "pr": 167,
+      "commit": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "tree": "84b734dad7fa3d3164cf43521b657b5f6b475c17",
+      "changed_files_vs_main": 52,
+      "lean_files": 0,
+      "last_subject": "docs: attach published closure-pass validation receipts"
+    },
+    {
+      "pr": 168,
+      "commit": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "tree": "7950790bf505c8b265fc6a2e85bf4b728c8fdbbb",
+      "changed_files_vs_main": 34,
+      "lean_files": 0,
+      "last_subject": "docs: record exact closure-frontier execution receipts"
+    },
+    {
+      "pr": 169,
+      "commit": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "tree": "df86aa261fa4dfd75f83ce0796dbac632970041c",
+      "changed_files_vs_main": 33,
+      "lean_files": 0,
+      "last_subject": "docs: compare concurrent closure research and credit shared results"
+    },
+    {
+      "pr": 170,
+      "commit": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "tree": "e02a5ff7df69dd14ea4f65792a0eaff4779054d4",
+      "changed_files_vs_main": 32,
+      "lean_files": 0,
+      "last_subject": "docs: record clean-checkout global-forcing execution evidence"
+    },
+    {
+      "pr": 171,
+      "commit": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "tree": "379174270b583ced085cc592fb80a0426577c6e0",
+      "changed_files_vs_main": 39,
+      "lean_files": 0,
+      "last_subject": "docs: record exact published affine-section replay and validation"
+    },
+    {
+      "pr": 172,
+      "commit": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "tree": "f77860f406131da09b2651397297f77c008e22a8",
+      "changed_files_vs_main": 56,
+      "lean_files": 0,
+      "last_subject": "Docs: verify receipts from a direct GitHub clone with complete ancestry"
+    },
+    {
+      "pr": 173,
+      "commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "tree": "72b5895180fa002e162f895d6359c8c6da943c5f",
+      "changed_files_vs_main": 10,
+      "lean_files": 9,
+      "last_subject": "Prove the global logarithmic counting bound for the forced section"
+    },
+    {
+      "pr": 174,
+      "commit": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "tree": "3e2b984f80952171f35c1e0d2e98438b0edbccfc",
+      "changed_files_vs_main": 38,
+      "lean_files": 8,
+      "last_subject": "research: layers route \u2014 layer equivalences in Lean, two-parameter family isolated"
+    },
+    {
+      "pr": 175,
+      "commit": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "tree": "ad6802cb7a11dd6ec7e3371caa653ad35289da34",
+      "changed_files_vs_main": 311,
+      "lean_files": 47,
+      "last_subject": "Prove unconditional cycle budgets and fixed-source prefix arithmetic"
+    },
+    {
+      "pr": 176,
+      "commit": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "tree": "afb5993df7ec59ff54f1df75934e72826eeab230",
+      "changed_files_vs_main": 392,
+      "lean_files": 90,
+      "last_subject": "Research checkpoint 18: ordinary-source insertion bounds and all-gap collisions"
+    },
+    {
+      "pr": 177,
+      "commit": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "tree": "bfd6b49161e24ab3e47fe4d5f725496a8c6ed3df",
+      "changed_files_vs_main": 469,
+      "lean_files": 68,
+      "last_subject": "Prove all-template and witness-charge barriers; add density-free germ criterion"
+    },
+    {
+      "pr": 178,
+      "commit": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "tree": "208f3750e9d54e2796c99b68931ea76de64f3b04",
+      "changed_files_vs_main": 439,
+      "lean_files": 70,
+      "last_subject": "Prove full numerical gcd bounds for unbounded Collatz word families"
+    },
+    {
+      "pr": 179,
+      "commit": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "tree": "940bae0ee29fceb4c79dc5d70f5fe108a4ca6961",
+      "changed_files_vs_main": 24,
+      "lean_files": 13,
+      "last_subject": "Prove unbounded inverse ladders and budget-preserving mixed mergers in Lean"
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "tree": "c2269ed9ddf0380f733be5d1d521e2a482984ba8",
+      "changed_files_vs_main": 339,
+      "lean_files": 70,
+      "last_subject": "Research: complete-carry collision bounds and sharp affine-model regularity"
+    },
+    {
+      "pr": 181,
+      "commit": "5f03d809b4495802971211ef13ff905f741d700d",
+      "tree": "ba03b1f37cc2b688b9433bb9a89a81b8ec1aece0",
+      "changed_files_vs_main": 33,
+      "lean_files": 13,
+      "last_subject": "Lean checkpoint: prove unpaid exits and record latest global reset boundaries"
+    },
+    {
+      "pr": 182,
+      "commit": "cbec52dde5bed390a693310dd04e911033ba0cc9",
+      "tree": "84ee1bbd745faa374e04b4424849d93260c9d4e5",
+      "changed_files_vs_main": 369,
+      "lean_files": 67,
+      "last_subject": "Research: phase-conditioned carry entropy and finite rational phase classification (Lean pending)"
+    },
+    {
+      "pr": 183,
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "tree": "51d714ee9e665e61c7545b6272ed0c86effb8ba9",
+      "changed_files_vs_main": 87,
+      "lean_files": 19,
+      "last_subject": "Record clean-checkout validation of the 52-theorem research packet"
+    },
+    {
+      "pr": 184,
+      "commit": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "tree": "856abea5a6b8fc59a3d5dda5996803f3a8cd0cc5",
+      "changed_files_vs_main": 28,
+      "lean_files": 13,
+      "last_subject": "Extend lower-mark forcing to component mergers and record published replay"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "tree": "bbf7976125299168b71c3ca7b5643b2249d5af79",
+      "changed_files_vs_main": 442,
+      "lean_files": 55,
+      "last_subject": "reports: record exact published central-closure replay"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "tree": "51582f4bdbe12e74e32b45cb6d9b0d758947294c",
+      "changed_files_vs_main": 11,
+      "lean_files": 0,
+      "last_subject": "docs: map deep machinery to precise Collatz research interfaces"
+    },
+    {
+      "pr": 187,
+      "commit": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "tree": "a47cfb7a72d04909c8ac944cae2d0210b457b2d6",
+      "changed_files_vs_main": 4,
+      "lean_files": 1,
+      "last_subject": "Record executed finite arithmetic control counts"
+    },
+    {
+      "pr": 188,
+      "commit": "beed685ab713923191ae40c9559bf7400298d2d3",
+      "tree": "a1ce54f1baed3f2dac274ebf49c9faf15ac8d8e5",
+      "changed_files_vs_main": 7,
+      "lean_files": 2,
+      "last_subject": "Prove scalar drawup obstruction and complete-gcd residue norm; document open closure targets"
+    },
+    {
+      "pr": 189,
+      "commit": "a0be70b1ffa075cbc50755ac76036108c028d120",
+      "tree": "0468ad8dd475191b8ecedb0479a46aa09b983e5b",
+      "changed_files_vs_main": 5,
+      "lean_files": 1,
+      "last_subject": "Index finite-window canonical entropy and PR188 combination"
+    },
+    {
+      "pr": 190,
+      "commit": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "tree": "1fe24609a1d0d7e9590b0c58216280c023c2b3db",
+      "changed_files_vs_main": 8,
+      "lean_files": 1,
+      "last_subject": "Extend fixed-source Mahler exclusion to all primitive binary substitutions"
+    },
+    {
+      "pr": 191,
+      "commit": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "tree": "d7e1b6c02bf22a360c99948c29de66859b505e41",
+      "changed_files_vs_main": 4,
+      "lean_files": 1,
+      "last_subject": "Supply proposed Lean packing, shadow and Bezout finite kernels; verification pending"
+    }
+  ]
+}

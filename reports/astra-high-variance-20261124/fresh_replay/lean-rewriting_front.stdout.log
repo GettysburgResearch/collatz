@@ -1,0 +1,2 @@
+'Collatz.RewriteFront.commute_digit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RewriteFront.sweep_closed' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+'Collatz.FirstPassage.no_zero_clock_walk_65' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.charge_unique' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstPassage.merger_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.paired_charge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.no_balanced_65' depends on axioms: [propext, Classical.choice, Quot.sound]

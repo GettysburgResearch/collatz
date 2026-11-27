@@ -1,0 +1,3 @@
+'Collatz.RankFilter.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RankFilter.integral_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RankFilter.complete_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]

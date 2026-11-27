@@ -1,0 +1,3 @@
+'Collatz.ActualThreeRun.three_run_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.actual_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.actual_three_run' depends on axioms: [propext, Classical.choice, Quot.sound]

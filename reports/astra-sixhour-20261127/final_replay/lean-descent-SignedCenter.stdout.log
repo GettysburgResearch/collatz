@@ -1,0 +1,6 @@
+'Collatz.SignedCenter.strip_by_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedCenter.negative_exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedCenter.full_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedCenter.strip_exists' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedCenter.strip_budget' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedCenter.strip_lift' depends on axioms: [propext, Classical.choice, Quot.sound]

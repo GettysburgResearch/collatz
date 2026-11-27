@@ -1,0 +1,17 @@
+'Collatz.PhaseRepulsion.one_run' depends on axioms: [propext, Quot.sound]
+'Collatz.PhaseRepulsion.one_run_length' depends on axioms: [propext, Quot.sound]
+'Collatz.PhaseRepulsion.three_run_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryShadow.smaller_nonconverger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.three_run_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.carry_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.actual_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.actual_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ActualThreeRun.actual_three_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PhaseRepulsion.actual_one_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryTowerRoundTen.ActualScalar.scalar_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryTowerRoundTen.ActualScalar.scalar_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryTowerRoundTen.ActualScalar.scalar_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryTowerRoundTen.ActualScalar.scalar_strict_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CarryTowerRoundTen.ActualScalar.converges_iff_triadic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

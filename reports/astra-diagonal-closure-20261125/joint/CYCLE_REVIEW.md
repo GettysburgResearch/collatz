@@ -1,0 +1,30 @@
+# Independent review of the common-grid and unrestricted-opening results
+
+**Verdict: VERIFIED WITH A MINOR EXPOSITION FIX** for the two written results at the review pins below. Native row height, original selected mass and invariant-color feasibility remain open. This review does not derive convergence.
+
+| Item | Frozen Git blob or commit |
+|---|---|
+| Joint grid theorem, README.md | 578fa0c02a5516e1b85d5c6a9a9cb1ada6616279 |
+| Unrestricted openings, FEASIBLE_OPENINGS.md | 134cf939ed42cc03f27cc6a1dd09b29d41ec3b52 |
+| TritChain.lean | 9e23bdc110d6b86bd798b66b912ad05c3227ee2c |
+| PR197 grid and adaptive query program | 156652e03fe7a78f9cd4442039779cc622fdf3de |
+
+**Shared source and columns.** A fixed opening pair determines both later arms on the same bit string by the odd-affine update. Each arm separately exposes an independent fair sequence of its own parity digits. Jointly the two current digits need not be independent. Their signed difference is conditionally mean zero and has conditional second moment at most one. This gives the stated martingale bound at a fixed diffusive grade separation, and the scalar exponential-moment calculations do not require independence of arms or clocks. A weighted trit-edge merger uses an ordinary terminal coincidence together with an offset of four in the odd counts. Exactly the term $e$ in the weighted label cancels that offset. Inside a column its addition is constant and the prescribed partition is preserved.
+
+**Reachability and scale.** PR197's fixed program queries both ends of every retained chain, then bisects the first opposite-colored chain. Previous chains can receive equal endpoint replies. For any specific interior index of the chosen chain, return the middle reply retaining the half containing that index until the index is queried. The four chains have disjoint exponent classes modulo four and their distinct large arguments do not force conflicting repeated queries. This reconstructs a *formal* reply path. The answers restart at each clock, as in PR197. There is no all-clock true coloring in this step. All columns can first be compared on one common translated index block before invoking individual partition invariance. The coarsest representative differs from the beginning of the coarse row by at most $O(2^H+2^{O(W)})=o(c_0N)$. The phase of $m_*$ therefore works uniformly on the exterior cell. An added grade shifts $\log_3$ by an integer; one of the four truncations has the required class of that integer modulo four. The fixed interior margin and the exponentially large bottom height absorb floors, including repeated divisions by 81. Uniform rotation frequency has room to omit the possible final $O(\log d)$ clocks outside complete microblocks.
+
+**A common grid point.** Conditioning on current low bits or on a fixed opening cell leaves the requisite future bits uniform. Both the correction check and the grade check at that clock are low-prefix conditions. Resampling a row in a uniformly sampled aligned block preserves the uniform marginal. The adjacent agreement and endpoint mismatch then force a deficient column. Averaging its indicator over clocks proves the probability bound for one shared string and one shared seed even though the deficient column may vary with time. The proof applies to the stated bounded-parameter menu with formal replies. An externally imposed physical-parent check at every later clock would change that menu.
+
+**Unrestricted physical opening.** At positive level $s$, the two odd slopes yield $Y=3^sX+D$ identically on the remaining native cube. With $D$ odd, requiring the smaller-slope arm even increases the gap in one bit. Otherwise consecutive common even moves halve $D$, or a common odd move gives $(3D+1-3^s)/2$ of valuation $\nu_2(3^s-1)-1$ when the original offset was more divisible. These cases include $D=0$ and negative offsets. The total cost through level $S$ is at most $4S$. For the stated intermediate $4W+2S$ absolute-grade bound the child arm starts with an additional four. It is simplest to use $4W+2S+4$, which leaves the later $9W+5$ unchanged for large $d$. Alternatively the sharper bound
+$$
+ \sum_{s=1}^{S-1}(\nu_2(3^s-1)+1)
+ =2(S-1)+\lfloor(S-1)/2\rfloor+\sum_{s=1}^{S-1}\nu_2(s)
+ \le 7(S-1)/2
+$$
+absorbs the initial four for sufficiently large $S$. Nothing in the final moment or cell estimate depends on this slack.
+
+Although the steered prefixes can be very rare on the original native grid, their bits stop before $t_0$. The later opening coordinate $\ell\bmod2^{\Delta_\tau}$ remains uniform via its odd multiplier $3^{k_0}$. The argument therefore counts cells with *some* realizing continuation; it never assigns the steering probability to original row mass. The retained positive gap, two polynomial corrections and the scalar envelopes follow by the stated second moment, binomial tails and contraction. Adding $2^\tau k$ to the parent preserves both seed parameters and runs through every grid completion by the odd multiplier. Different completions may use different actual parents. Their unrestricted heights need not fall in the original row interval.
+
+**Checks executed for this review.** I compared the stated program and exterior/period convention against PR197's GRID_TRANSFER.md and unit-exit/LOCAL_COLOR_INFORMATION.md. Independent integer replay of all 81 trit residues, at lifts $0,1,17$ and deadlines 14 and 21, checked 486 pairs of endpoints and weighted grades. I also checked the formal bisection selection on every index for chain sizes 2 through 256 and the exact steering-cost sum for $2\le S\le199$. These finite checks supplement the general written arguments. The joint owner's strict Lean replay is recorded separately.
+
+**Post-fix verification.** I re-opened revised joint theorem Git blob 3a18836db0ce9af908b4adf834b41e8c5f48ff75 and unrestricted-opening blob dab8d24fbedf50f98f47ac604aa719b57fe01ed9. They use the enlarged child-grade bound and explicitly absorb the possible final short block. Verdict for these two narrow corrected statements is **VERIFIED**, with the original-row height and formal-answer qualifications above.
