@@ -1,0 +1,16 @@
+{
+  "schema": "collatz-astra-final-corollary-review/v1",
+  "status": "Written consequence; Collatz remains open",
+  "independent_readers": [
+    "root",
+    "rigidity"
+  ],
+  "author_version_sha256": "2c7b022b1d2be078b786b440d333f11d8a2ddd97b7ad4def2da7acdf602fb521",
+  "final_version_sha256": "bf4f9ad561ee39e9f9494a1a8ee876bb2a8af4a8cc51bdddd30a8a24bc8ba0ad",
+  "final_editorial_changes": "Root clarified infinity arithmetic and explicitly credited the packet earlier joint clock phase theorem; proof unchanged.",
+  "source": "Duran/Leen adjacent counted synchronization, as precisely restated in Weaver124 and the packet SYNCHRONIZATION.md",
+  "claim": "Each fixed positive ordinary target has natural-density-zero simultaneous equal-clock equal-odd-count coalescence class.",
+  "limits": "Ordinary arrivals allow different clocks; no fixed-source convergence follows. The result also follows from phase3 CLOCK_PHASES equation2. No general priority claim.",
+  "new_lean_modules": 0,
+  "new_finite_programs": 0
+}
