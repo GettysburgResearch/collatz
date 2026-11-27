@@ -1,0 +1,114 @@
+{
+  "scope": "Finite exact checks of the retained-clock trit formula, inverse recursion and geometric forcing expansion. No escape or unbounded-depth inference.",
+  "marked_original_law": [
+    {
+      "depth": 1,
+      "total_at_most": 9,
+      "words": 9,
+      "exact_cells": 243,
+      "observed_preimages": 27
+    },
+    {
+      "depth": 2,
+      "total_at_most": 10,
+      "words": 45,
+      "exact_cells": 729,
+      "observed_preimages": 135
+    },
+    {
+      "depth": 3,
+      "total_at_most": 11,
+      "words": 165,
+      "exact_cells": 2187,
+      "observed_preimages": 495
+    },
+    {
+      "depth": 4,
+      "total_at_most": 12,
+      "words": 495,
+      "exact_cells": 6561,
+      "observed_preimages": 1485
+    },
+    {
+      "depth": 5,
+      "total_at_most": 13,
+      "words": 1287,
+      "exact_cells": 19683,
+      "observed_preimages": 3861
+    }
+  ],
+  "single_target_trees": [
+    {
+      "root": 5,
+      "max_depth": 6,
+      "max_total": 18,
+      "nodes_by_depth": [
+        1,
+        9,
+        24,
+        40,
+        48,
+        44,
+        32
+      ],
+      "tested_equalities": 228,
+      "exact_same_clock_pair": {
+        "root": 5,
+        "depth": 2,
+        "total": 11,
+        "starts": [
+          1109,
+          1137
+        ]
+      }
+    },
+    {
+      "root": 7,
+      "max_depth": 6,
+      "max_total": 18,
+      "nodes_by_depth": [
+        1,
+        9,
+        21,
+        33,
+        37,
+        31,
+        16
+      ],
+      "tested_equalities": 228,
+      "exact_same_clock_pair": {
+        "root": 7,
+        "depth": 2,
+        "total": 12,
+        "starts": [
+          3157,
+          3185
+        ]
+      }
+    },
+    {
+      "root": 11,
+      "max_depth": 6,
+      "max_total": 18,
+      "nodes_by_depth": [
+        1,
+        9,
+        30,
+        57,
+        75,
+        73,
+        51
+      ],
+      "tested_equalities": 228,
+      "exact_same_clock_pair": {
+        "root": 11,
+        "depth": 2,
+        "total": 9,
+        "starts": [
+          597,
+          625
+        ]
+      }
+    }
+  ]
+}

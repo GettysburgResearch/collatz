@@ -3,10 +3,10 @@
   "scope": "Independent root replay and mathematical-review boundary; no full Collatz proof",
   "lean": {
     "receipt": "lean/receipt.json",
-    "modules": 25,
-    "new_modules": 9,
-    "selected_axiom_reports": 166,
-    "new_selected_axiom_reports": 46,
+    "modules": 31,
+    "new_modules": 15,
+    "selected_axiom_reports": 204,
+    "new_selected_axiom_reports": 84,
     "all_source_hashes_match": true
   },
   "upper_affine": {
@@ -20,7 +20,8 @@
   "ordinary": {
     "root_reran": [
       "check_ordinary.py",
-      "check_threshold.py"
+      "check_threshold.py",
+      "check_minimum.py"
     ],
     "all_frozen_census_fields_match": true
   },
@@ -33,7 +34,31 @@
     "result": "PASS"
   },
   "local_document_links": {
-    "checked": 77,
-    "missing": 0
+    "checked": 126,
+    "missing": 0,
+    "scope": "Published checkpoint files; excludes three pending exploratory notes"
+  },
+  "collision": {
+    "root_reran": "check_marked.py",
+    "marked_cells": 29403,
+    "recurrence_and_duhamel_equalities": 684,
+    "frozen_report_matches": true,
+    "receipt": "collision/marked_replay.json"
+  },
+  "terminal_even_cost": {
+    "root_reran": "check_cost_590.py",
+    "frozen_report_matches": true,
+    "receipt": "cycles/cost-590.json"
+  },
+  "depth_signed_check": {
+    "integer_engine": "C++ __int128 fixed point with directed rounding",
+    "depth_thirteen_signed_lower_bound_positive": true,
+    "independent_rational_period_check_depth": 5,
+    "independent_signed_and_absolute_values": 10,
+    "receipts": [
+      "checks/depth-difference-intervals.json",
+      "checks/depth-difference-independent.json"
+    ],
+    "scope": "Finite all-depth nonpositivity rejected; asymptotic sign remains open"
   }
 }

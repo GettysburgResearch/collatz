@@ -1,0 +1,8 @@
+'Collatz.FrozenPeakSeparation.carry_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.carry_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.carry_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.no_late_odds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.frozen_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.odds_of_modEq' depends on axioms: [propext, Quot.sound]
+'Collatz.FrozenPeakSeparation.frozen_peak_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenPeakSeparation.no_earlier_paid_peak' depends on axioms: [propext, Classical.choice, Quot.sound]

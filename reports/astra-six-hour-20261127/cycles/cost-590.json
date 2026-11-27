@@ -1,0 +1,89 @@
+{
+  "base": 590,
+  "slope_cap": "32/9",
+  "starts": 2097,
+  "largest_clock": 115,
+  "largest_site": 638468,
+  "largest_offset": 10,
+  "candidate_forms": 26,
+  "prezero_rows": [
+    {
+      "slope": "256/243",
+      "center": "623/243",
+      "offset": 0,
+      "signed_clock": 10,
+      "upper_odds": 4,
+      "upper_evens_minus_j": 4
+    },
+    {
+      "slope": "128/81",
+      "center": "271/81",
+      "offset": 0,
+      "signed_clock": 9,
+      "upper_odds": 3,
+      "upper_evens_minus_j": 4
+    },
+    {
+      "slope": "512/243",
+      "center": "1246/243",
+      "offset": 0,
+      "signed_clock": 11,
+      "upper_odds": 4,
+      "upper_evens_minus_j": 5
+    },
+    {
+      "slope": "2048/729",
+      "center": "4741/729",
+      "offset": 0,
+      "signed_clock": 13,
+      "upper_odds": 5,
+      "upper_evens_minus_j": 6
+    },
+    {
+      "slope": "256/81",
+      "center": "542/81",
+      "offset": 0,
+      "signed_clock": 10,
+      "upper_odds": 3,
+      "upper_evens_minus_j": 5
+    }
+  ],
+  "all_nine_classes_graded_le_six": [
+    {
+      "slope": "128/81",
+      "center": "271/81",
+      "offset": 0,
+      "score": 4,
+      "odds": 3,
+      "residues": [
+        104,
+        347,
+        590,
+        833,
+        1076,
+        1319,
+        1562,
+        1805,
+        2048
+      ]
+    },
+    {
+      "slope": "256/243",
+      "center": "623/243",
+      "offset": 0,
+      "score": 4,
+      "odds": 4,
+      "residues": [
+        104,
+        347,
+        590,
+        833,
+        1076,
+        1319,
+        1562,
+        1805,
+        2048
+      ]
+    }
+  ]
+}

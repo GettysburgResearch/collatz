@@ -1,6 +1,6 @@
 # Ordinary clocks, actual good labels, and the global closure gap
 
-**OPEN. This packet does not prove the Collatz conjecture.** It develops new exact ordinary mergers, proves a sharp limitation on their uniform clocks, and studies what actual convergence of neighboring trajectories forces on a hypothetical bounded cycle. A separate escape analysis obtains a height-to-entropy implication and a quantitative exclusion of growing parity blocks. The original global convergence consumers retain their explicit open premises.
+**OPEN. This packet does not prove the Collatz conjecture.** It develops exact ordinary mergers, a sharp limitation on their uniform clocks, and an attained minimum for actual reverse witnesses. It also studies completed clocks around a hypothetical bounded cycle and derives quantitative laws for the original Syracuse distribution on positive integers. The original global convergence consumers retain their explicit open premises.
 
 Throughout, the shortcut map is
 
@@ -68,7 +68,46 @@ The escape packet proves the following written implications and provides finite 
 
 The same packet constructs critical, reciprocal-summable symbolic histories with high entropy and without high word powers. They have irrational binary seeds. They show why the written implications do not, by themselves, eliminate every possible history of one integer. [Escape packet](escape/README.md)
 
-## 4. The remaining global implication
+## 4. An attained minimum for actual reverse witnesses
+
+In the canonical family of Section 1, minimize the pair \((E(3x),x)\) over actual bad positive integers \(x\) whose triple is good. Here \(E\) is the number of **even departures in the first path to one**. This minimum exists: every fixed-even-budget sublevel is finite. Its minimizing source is odd and is not the canonical \(17\bmod48\) source, since an actual smaller ancestor has the same even budget.
+
+The complete reduction now leaves only
+
+\[
+(E(3x)-j,p(3x))\in\{(3,3),(3,4),(4,4),(4,5),(4,6)\}.
+\]
+
+The exclusion of the previous \((2,3)\) row allows an **unbounded last gap**. Its proof combines actual ordinary prefix descents, a variable-length Mersenne merger, a smaller canonical witness, and a positive tripled visitor below the known floor. It never assumes that the minimizing source lies on the original cycle. [Even-minimum proof](ordinary/EVEN_MINIMUM.md) · [Finite Lean kernels](ordinary/ScoreTwo.lean)
+
+A separate fixed-word theorem classifies all bounded-cost terminal forms under the stated height cap. Its control at \(N=590\), with the full denominator retained, leaves only the two already known cost-four forms. It does not replace the preceding unrestricted-gap proof. [Terminal even cost](cycles/TERMINAL_EVEN_COST.md)
+
+The frozen-carry obstruction behind the sharp clock theorem has also been formalized for **every common clock**, rather than a finite clock range. Its fixed carry and grade hypotheses remain explicit. [All-clock separation](formal/README.md)
+
+## 5. Completed clocks around one actual cycle
+
+For a bounded least bad cycle, complete each selected neighboring good path to one. Combining its actual completion clock with the original cycle clock produces an integer mesh. The mesh has an exact range bound: either many good paths use a large odd budget, or many completed paths fall into the same class modulo one complete cycle lap.
+
+Using the stated source-qualified residue estimate, asymptotically more than \(0.53p\) of the \(p\) cycle phases must be long paths or repetitions of completed classes. If every class were distinct, one selected good path would need at least \((1.2164-o(1))s\) odd departures. The missing step is a cycle-specific restriction on repetitions or a suitable upper bound on these actual good paths. Generic small-multiplicity claims fail: the packet checks fourteen distinct blocks of one ordinary transient with the same completed pair. [Completed grade proof](cycles/COMPLETED_GRADES.md)
+
+## 6. Original-law collision and clock limits
+
+This lane keeps the independent geometric exponent law \(\Pr(e=r)=2^{-r}\) and the actual positive odd map throughout. Its analytic inputs are source-qualified and cited at their uses; the finite algebraic kernels have been replayed in Lean.
+
+* **Physical source cancellation.** A centered trit source on every high dyadic interval loses faster than any inverse power of its logarithmic height in the joint endpoint-and-native-clock norm. The argument uses one additional ternary digit of joint mixing and preserves the actual input interval.
+* **An unscaled escape detector.** The consecutive-depth difference on positive representatives obeys an actual positive-integer transport equation with summable errors. Its sum norm, maximum norm and signed sum converge to explicit component charges. The signed limit is the total escaping charge \(\sum_C H_C\).
+* **Corrected-height local laws.** Exact native clocks identify finite classes of ordinary sources at a corrected height. Their centered trit imbalance drives a geometric convolution. The resulting pointwise estimate is of order \(P/\sqrt{\log P}\), with a local limit law on the entire corrected-height lattice.
+* **The moving-root obstruction.** At each fixed positive odd root, the central native-clock density converges to its ordinary trace. Along the \(j\)-th state of an escaping source, at depth \(n=j+d\), the conditional clock is instead the source's own accumulated clock plus a negative-binomial clock of depth \(d\). Agreement with the unconditioned clock requires \(n/j^2\to\infty\) in the stated joint limit. A fixed-root theorem cannot be substituted at these moving roots.
+
+The natural proposed finite inequality for the signed detector is false. An independent integer-interval calculation proves
+
+\[
+0.00070650824182767<S_{13}<0.00070650824182769.
+\]
+
+This disposes of the proposed all-depth sign argument. It does not decide the required asymptotic sign. [Collision packet](collision/README.md) · [Exact sign check](checks/DEPTH_SIGN.md)
+
+## 7. The remaining global implication
 
 There are two outstanding kinds of supplied source:
 
@@ -83,7 +122,7 @@ This pass is continuing with the full cyclic equality and the original-law colli
 
 [Source manifest](SOURCES.json) pins the project import closure and the reviewed external PR heads. [Review ledger](../../reports/astra-six-hour-20261127/REVIEW.md) records the exact claim boundaries and the distinction between proof, source-qualified input and computation. The independent enumeration lives in [check_upper_affine.cpp](check_upper_affine.cpp); the Lean runner is [check_lean.py](check_lean.py).
 
-The first unified replay passed **25 modules, including all 9 new modules, and 166 selected axiom inventories (46 in new modules)**. [Root verification receipt](../../reports/astra-six-hour-20261127/ROOT_CHECKS.json)
+The second unified replay passed **31 modules, including all 15 current modules, and 204 selected axiom inventories (84 in current modules)**. The first published checkpoint remains in Git history. [Root verification receipt](../../reports/astra-six-hour-20261127/ROOT_CHECKS.json)
 
 The Lean replay rebuilds all current modules and their project dependencies from visible source in an empty project output cache. It reuses the pinned external Mathlib/package cache, checks warnings as errors, rejects `sorry`, `admit`, `native_decide` and added axioms in the project closure, and checks every selected axiom report against the standard logical axioms. It does not independently rebuild Lean or Mathlib. [Unified receipt](../../reports/astra-six-hour-20261127/lean/receipt.json)
 

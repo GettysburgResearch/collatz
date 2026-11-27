@@ -1,0 +1,8 @@
+'CollatzGradeMesh.fourteen_ordinary_marks' depends on axioms: [propext]
+'CollatzGradeMesh.one_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGradeMesh.two_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGradeMesh.circulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGradeMesh.grade_link' depends on axioms: [propext, Quot.sound]
+'CollatzGradeMesh.mesh_identity' depends on axioms: [propext, Quot.sound]
+'CollatzGradeMesh.mesh_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGradeMesh.integer_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]

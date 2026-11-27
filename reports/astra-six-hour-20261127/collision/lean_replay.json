@@ -1,0 +1,25 @@
+{
+  "source": "research/astra-six-hour-20261127/collision/CollisionOccupation.lean",
+  "sha256": "6915534cd683e86ff0071365aad269aacd967d6aacba15e3156349bcf2dd7dc3",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "args": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "research/astra-six-hour-20261127/collision/CollisionOccupation.lean"
+  ],
+  "exit_code": 0,
+  "output": [
+    "'CollisionOccupation.firstHit_simple' depends on axioms: [propext, Quot.sound]",
+    "'CollisionOccupation.fixedSource_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.propagate_error' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.centered_trit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.two_three_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.trit_two_parent' depends on axioms: [propext, Quot.sound]",
+    "'CollisionOccupation.min_height_omits_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.phase_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollisionOccupation.phase_bound' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Nine finite kernels for first-hit simplicity, the fixed source bound, contractive error propagation, the centered trit, uniqueness of paired clocks, the actual minimum-height parent, and the harmonic telescope. The analytic mixing, occupation compression, scattering, and local limits remain written."
+}
