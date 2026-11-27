@@ -1,0 +1,16 @@
+{
+  "floor_bits": 71,
+  "barrier_cutoff": 350,
+  "tail_cutoff": 1500,
+  "finite_eight_decimal_upper": 55485168,
+  "tail_eight_decimal_upper": 5617,
+  "even_total_eight_decimal_upper": 27745392,
+  "strict_rational_bound": "7/25",
+  "kernel_unrestricted_certificate": {
+    "cutoff": 325,
+    "finite_eight_decimal_upper": 99243638,
+    "reserve_eight_decimal_upper": 281791,
+    "all_sites_strict_bound": "249/250",
+    "even_departures_strict_bound": "1/4"
+  }
+}

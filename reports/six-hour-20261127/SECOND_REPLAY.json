@@ -1,0 +1,413 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "repo_head_at_start": "3376695869fcf7d2e34f676a876d2b78a391d799",
+  "repo_tree_at_start": "0e52c5756d6a63ae061060fb82abe0671cdeb4b9",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/ROOT_SECOND_REVIEW.md\n?? reports/six-hour-20261127/replay_second.py\n?? research/six-hour-20261127/OrdinaryGeodesic.lean\n?? research/six-hour-20261127/SECOND_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/HAAR_MODULUS.md\n?? research/six-hour-20261127/arithmetic/PeriodPacking.lean\n?? research/six-hour-20261127/arithmetic/RESET_FRONT.md\n?? research/six-hour-20261127/arithmetic/ResetFront.lean\n?? research/six-hour-20261127/coupling/CROSS_CLASS_FLOOR.md\n?? research/six-hour-20261127/coupling/DelayedTurns.lean\n?? research/six-hour-20261127/coupling/FINITE_FLOOR.md\n?? research/six-hour-20261127/coupling/FLOOR_CONTROLS.json\n?? research/six-hour-20261127/coupling/FloorCertificate.lean\n?? research/six-hour-20261127/coupling/FloorCounting.lean\n?? research/six-hour-20261127/coupling/PAID_CONTROLS.json\n?? research/six-hour-20261127/coupling/PaidCheckpoint.lean\n?? research/six-hour-20261127/coupling/check_paid.py\n?? research/six-hour-20261127/coupling/floor_bound.py\n?? research/six-hour-20261127/escape/FINITE_DECODER_ENTROPY.md\n?? research/six-hour-20261127/escape/GEODESIC_CONTROLS.json\n?? research/six-hour-20261127/escape/GEODESIC_POSTERIOR.md\n?? research/six-hour-20261127/escape/GeodesicPosterior.lean\n?? research/six-hour-20261127/escape/TROPICAL_CONTROLS.json\n?? research/six-hour-20261127/escape/TROPICAL_SIBLINGS.md\n?? research/six-hour-20261127/escape/UNIVERSAL_TABLE.md\n?? research/six-hour-20261127/escape/UNRESTRICTED_VISITORS.md\n?? research/six-hour-20261127/escape/VISITOR_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/escape/VisitorAnchor.lean\n?? research/six-hour-20261127/escape/check_geodesic.py\n?? research/six-hour-20261127/escape/check_tropical.py\n?? research/six-hour-20261127/escape/check_visitor_anchor.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.74,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.612,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.326,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCertificate.lean",
+      "source_sha256": "5688f1929acdd887c41ea02c3177736cae5bed4f45a4f3ff3f1e4c28bf6ba519",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/FloorCertificate.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCertificate.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.643,
+      "output_sha256": "5a78fbf5002a44442611b1f5d3c6e9c139e6555d16ed75f493c4ea6c3c282bf8",
+      "declarations": {
+        "FloorCertificate.shell_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.geometric_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.reciprocal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.even_reciprocal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/ResetFront.lean",
+      "source_sha256": "add34999cc3be3d7559c0ab941e494452028144655bcdbd21e05f52a71ea22d5",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/ResetFront.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/ResetFront.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.132,
+      "output_sha256": "d8f6677c35548a9c525905e1e6c239c5ccc6d078408fd33105c976df252d7797",
+      "declarations": {
+        "SixHour.ResetFront.prefix_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.ResetFront.exact_dyadic_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/GeodesicPosterior.lean",
+      "source_sha256": "27e3c36fa2f5a9542e7f95723133cb8ad99bb75d094e0a48a8bc0c26cace3b5a",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/GeodesicPosterior.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/GeodesicPosterior.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.668,
+      "output_sha256": "71fef2d7aeec26e19fbd57e53da4976925ed85e47c13d5baa8543a19162ba6ae",
+      "declarations": {
+        "EscapeGeodesicPosterior.normalized_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.center_telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.exact_center_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.split_center_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/OrdinaryGeodesic.lean",
+      "source_sha256": "4eea6b101ba63b2d6e1c7f53c4ed6b3eae0b5d9e18d8eb01de24f84f9f00c21c",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-second-final-replay/build/OrdinaryGeodesic.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/OrdinaryGeodesic.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.187,
+      "output_sha256": "6700dc01d6908591ab0349250e1f071028887276d5723fd15812b85290e56b97",
+      "declarations": {
+        "SixHour.OrdinaryGeodesic.residue_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.residue_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.coefficient_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.shorter_same_grade_is_smaller": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/coupling/floor_bound.py",
+      "source_sha256": "0649236941d52adb00e46323fdeb41ec8a97457e36882f964c8aea13b3181bea",
+      "expected": "research/six-hour-20261127/coupling/FLOOR_CONTROLS.json",
+      "expected_sha256": "4f11266e0599f72d6471621c94d1cd8d3c0d94b6241a2f8b25e5dd879f1f2ac8",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/floor_bound.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.762,
+          "stdout_sha256": "4f11266e0599f72d6471621c94d1cd8d3c0d94b6241a2f8b25e5dd879f1f2ac8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/floor_bound.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.699,
+          "stdout_sha256": "4f11266e0599f72d6471621c94d1cd8d3c0d94b6241a2f8b25e5dd879f1f2ac8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_geodesic.py",
+      "source_sha256": "24d33e79483a60b77d9ed16c028d2897e8c2c33f2f30d62a1cc798526728d9f1",
+      "expected": "research/six-hour-20261127/escape/GEODESIC_CONTROLS.json",
+      "expected_sha256": "433acb0b922105b366a659ae3dc48effbe2f94f324bd91ccfef3ed999318869e",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_geodesic.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.167,
+          "stdout_sha256": "433acb0b922105b366a659ae3dc48effbe2f94f324bd91ccfef3ed999318869e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_geodesic.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.166,
+          "stdout_sha256": "433acb0b922105b366a659ae3dc48effbe2f94f324bd91ccfef3ed999318869e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_tropical.py",
+      "source_sha256": "e868d8d897df01a5d678c31e6d49d6e55e8fa8b1f89195066e60f26e7c18f0eb",
+      "expected": "research/six-hour-20261127/escape/TROPICAL_CONTROLS.json",
+      "expected_sha256": "c19211d634f5ab8553df7697181b01cf052458d348c4ea2baefa13217340459a",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_tropical.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.448,
+          "stdout_sha256": "c19211d634f5ab8553df7697181b01cf052458d348c4ea2baefa13217340459a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_tropical.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.526,
+          "stdout_sha256": "c19211d634f5ab8553df7697181b01cf052458d348c4ea2baefa13217340459a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/ROOT_SECOND_REVIEW.md\n?? reports/six-hour-20261127/replay_second.py\n?? research/six-hour-20261127/OrdinaryGeodesic.lean\n?? research/six-hour-20261127/SECOND_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/HAAR_MODULUS.md\n?? research/six-hour-20261127/arithmetic/PeriodPacking.lean\n?? research/six-hour-20261127/arithmetic/RESET_FRONT.md\n?? research/six-hour-20261127/arithmetic/ResetFront.lean\n?? research/six-hour-20261127/arithmetic/check_period_gap.py\n?? research/six-hour-20261127/coupling/CROSS_CLASS_FLOOR.md\n?? research/six-hour-20261127/coupling/DelayedTurns.lean\n?? research/six-hour-20261127/coupling/FINITE_FLOOR.md\n?? research/six-hour-20261127/coupling/FLOOR_CONTROLS.json\n?? research/six-hour-20261127/coupling/FloorCertificate.lean\n?? research/six-hour-20261127/coupling/FloorCounting.lean\n?? research/six-hour-20261127/coupling/PAID_CONTROLS.json\n?? research/six-hour-20261127/coupling/PaidCheckpoint.lean\n?? research/six-hour-20261127/coupling/check_paid.py\n?? research/six-hour-20261127/coupling/floor_bound.py\n?? research/six-hour-20261127/escape/FINITE_DECODER_ENTROPY.md\n?? research/six-hour-20261127/escape/GEODESIC_CONTROLS.json\n?? research/six-hour-20261127/escape/GEODESIC_POSTERIOR.md\n?? research/six-hour-20261127/escape/GeodesicPosterior.lean\n?? research/six-hour-20261127/escape/TROPICAL_CONTROLS.json\n?? research/six-hour-20261127/escape/TROPICAL_SIBLINGS.md\n?? research/six-hour-20261127/escape/UNIVERSAL_TABLE.md\n?? research/six-hour-20261127/escape/UNRESTRICTED_VISITORS.md\n?? research/six-hour-20261127/escape/VISITOR_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/escape/VisitorAnchor.lean\n?? research/six-hour-20261127/escape/check_geodesic.py\n?? research/six-hour-20261127/escape/check_tropical.py\n?? research/six-hour-20261127/escape/check_visitor_anchor.py"
+}
