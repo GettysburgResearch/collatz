@@ -1,0 +1,52 @@
+{
+  "exact_jet_cancellations": [
+    {
+      "correction_depth": 0,
+      "leading_supremum": "3/2",
+      "root_classes": 6,
+      "zero_jet_through_order": 0
+    },
+    {
+      "correction_depth": 1,
+      "leading_supremum": "4",
+      "root_classes": 18,
+      "zero_jet_through_order": 1
+    },
+    {
+      "correction_depth": 2,
+      "leading_supremum": "9",
+      "root_classes": 54,
+      "zero_jet_through_order": 2
+    },
+    {
+      "correction_depth": 3,
+      "leading_supremum": "36",
+      "root_classes": 162,
+      "zero_jet_through_order": 3
+    }
+  ],
+  "finite_positive_bounds": [
+    {
+      "correction_depth": 0,
+      "parent_classes": 6,
+      "ratio_sha256": "a044781ed0468b11219584bc19422dc93d804717c1add79738c4205116e0172e",
+      "relative_error_below": "1/66",
+      "two_step_children": 18
+    },
+    {
+      "correction_depth": 1,
+      "parent_classes": 18,
+      "ratio_sha256": "62db4c2a84a7dfd58f2a018046d4be344c9ec2c0cae934c861962690348997f0",
+      "relative_error_below": "1/2479",
+      "two_step_children": 54
+    },
+    {
+      "correction_depth": 2,
+      "parent_classes": 54,
+      "ratio_sha256": "d6b860df31350f0360a205c9de07e3322b5304876d5cbd89de4fe767689a5aa1",
+      "relative_error_below": "1/108172",
+      "two_step_children": 162
+    }
+  ],
+  "parameter_for_rational_action": "1/100"
+}

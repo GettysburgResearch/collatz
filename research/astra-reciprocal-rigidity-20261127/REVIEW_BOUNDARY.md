@@ -195,3 +195,29 @@ to an arbitrary cohort. The near-fastest-clock proof retains the terminal
 nonunit inverse child and the physical dyadic clock cancellation. The
 threshold is a first odd landing when a general `M≥y` is used. Source
 counts near a target's past do not decide its future.
+
+## Fifth-checkpoint review boundary
+
+The reciprocal budgets sum over distinct ordinary integers, not over a
+random cyclic word. Dyadic parity cylinders and ternary past cylinders
+retain their actual source multiplicity. The avoid-five bound uses a
+backward ordinary history; the dimer bound covers complete forward
+survivors. The root and rigidity lane independently reconstructed the
+uniform translated-interval induction, including even endpoints and
+the square-root logarithmic term. The finite verified floor is imported.
+
+The stronger common protection count retains whole-space normalization
+inside each source residue class. The two overshoot savings subtract
+tree-weight excess in separate scale rows; they do not assume disjoint
+ordinary ternary cylinders. A full formal stopping tree makes the bounds
+uniform even when the actual odd budget is below the displayed grades.
+The kernel checks origin closure and rational margins, while the count
+uses the previously credited stopped-Kraft mechanism.
+
+The root reconstructed the all-orders pressure proof from the finite
+cylinder action, its Haar mean, the positive approximate eigenfunction,
+and the uniform tilted concentration estimate. Prefix positivity and
+first-hit injection are separate from the probabilistic calculation.
+The finite Lean transport assumes valuations at least two; it is not
+described as a formalization of the valuation-one pressure argument.
+No fixed-excess limiting rate or untilted inverse-tree theorem is claimed.

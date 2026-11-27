@@ -84,6 +84,19 @@ families and a two-term count near the fastest first-hit clocks. The
 rare integer denominator atom, upward exits, and future of an arbitrary
 target remain explicit gaps.
 
+## Fifth checkpoint
+
+[The fifth checkpoint](FIFTH_CHECKPOINT.md) gives explicit simultaneous
+cycle-defect budgets for the four open mod-eight avoidance classes,
+uniform interval counts for two precisely defined survivor families,
+and canonical-cut lists for each large complete divisor. The common
+all-scales protection set now exceeds one third of ternary space, with
+more than one quarter protected inside its zero residue alone. The
+ordinary first-hit exponent near the fastest clock agrees with the
+ternary-filtered entropy expression to all algebraic orders in the
+small excess. The order of limits and the possible exceptional single
+source or cycle remain explicit.
+
 ## Source intake and credit
 
 The branch starts from main at
