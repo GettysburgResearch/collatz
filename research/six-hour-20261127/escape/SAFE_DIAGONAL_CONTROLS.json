@@ -1,0 +1,458 @@
+{
+  "scope": "finite unshifted double height test; future exit for listed hits",
+  "ternary_depth": 42,
+  "height_inclusive": 109418989131512359209,
+  "direct_all_integer_crosscheck_through": 59049,
+  "principal_controls": [
+    {
+      "depth": 1,
+      "distinct_principal_cells": 2,
+      "least_seed": 1
+    },
+    {
+      "depth": 2,
+      "distinct_principal_cells": 3,
+      "least_seed": 7
+    },
+    {
+      "depth": 3,
+      "distinct_principal_cells": 5,
+      "least_seed": 7
+    },
+    {
+      "depth": 4,
+      "distinct_principal_cells": 8,
+      "least_seed": 9
+    },
+    {
+      "depth": 5,
+      "distinct_principal_cells": 13,
+      "least_seed": 27
+    },
+    {
+      "depth": 6,
+      "distinct_principal_cells": 21,
+      "least_seed": 27
+    },
+    {
+      "depth": 7,
+      "distinct_principal_cells": 34,
+      "least_seed": 27
+    },
+    {
+      "depth": 8,
+      "distinct_principal_cells": 55,
+      "least_seed": 91
+    },
+    {
+      "depth": 9,
+      "distinct_principal_cells": 89,
+      "least_seed": 91
+    },
+    {
+      "depth": 10,
+      "distinct_principal_cells": 144,
+      "least_seed": 111
+    },
+    {
+      "depth": 11,
+      "distinct_principal_cells": 233,
+      "least_seed": 111
+    },
+    {
+      "depth": 12,
+      "distinct_principal_cells": 377,
+      "least_seed": 639
+    },
+    {
+      "depth": 13,
+      "distinct_principal_cells": 610,
+      "least_seed": 871
+    },
+    {
+      "depth": 14,
+      "distinct_principal_cells": 987,
+      "least_seed": 871
+    },
+    {
+      "depth": 15,
+      "distinct_principal_cells": 1597,
+      "least_seed": 871
+    }
+  ],
+  "shells_depth_candidates_hits": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      3,
+      4,
+      0
+    ],
+    [
+      4,
+      5,
+      1
+    ],
+    [
+      5,
+      6,
+      0
+    ],
+    [
+      6,
+      11,
+      0
+    ],
+    [
+      7,
+      16,
+      0
+    ],
+    [
+      8,
+      29,
+      1
+    ],
+    [
+      9,
+      50,
+      3
+    ],
+    [
+      10,
+      80,
+      1
+    ],
+    [
+      11,
+      117,
+      0
+    ],
+    [
+      12,
+      186,
+      0
+    ],
+    [
+      13,
+      299,
+      0
+    ],
+    [
+      14,
+      482,
+      0
+    ],
+    [
+      15,
+      786,
+      0
+    ],
+    [
+      16,
+      1284,
+      0
+    ],
+    [
+      17,
+      2006,
+      0
+    ],
+    [
+      18,
+      3372,
+      1
+    ],
+    [
+      19,
+      5433,
+      0
+    ],
+    [
+      20,
+      8808,
+      1
+    ],
+    [
+      21,
+      14233,
+      1
+    ],
+    [
+      22,
+      22996,
+      2
+    ],
+    [
+      23,
+      37388,
+      0
+    ],
+    [
+      24,
+      60412,
+      0
+    ],
+    [
+      25,
+      97555,
+      0
+    ],
+    [
+      26,
+      157908,
+      1
+    ],
+    [
+      27,
+      255476,
+      2
+    ],
+    [
+      28,
+      413273,
+      1
+    ],
+    [
+      29,
+      669169,
+      0
+    ],
+    [
+      30,
+      1081401,
+      0
+    ],
+    [
+      31,
+      1751715,
+      1
+    ],
+    [
+      32,
+      2833766,
+      0
+    ],
+    [
+      33,
+      4585137,
+      0
+    ],
+    [
+      34,
+      7419604,
+      0
+    ],
+    [
+      35,
+      12003901,
+      0
+    ],
+    [
+      36,
+      19422630,
+      1
+    ],
+    [
+      37,
+      31425650,
+      0
+    ],
+    [
+      38,
+      50853772,
+      0
+    ],
+    [
+      39,
+      82284072,
+      2
+    ],
+    [
+      40,
+      133119901,
+      0
+    ],
+    [
+      41,
+      215410324,
+      0
+    ],
+    [
+      42,
+      348524685,
+      2
+    ]
+  ],
+  "hits": [
+    {
+      "state": 1,
+      "tokens": 0,
+      "odd_departures": 0,
+      "dyadic_clock": 0,
+      "first_rejected_token_entrance": 1
+    },
+    {
+      "state": 8,
+      "tokens": 3,
+      "odd_departures": 3,
+      "dyadic_clock": 3,
+      "first_rejected_token_entrance": 27
+    },
+    {
+      "state": 71,
+      "tokens": 5,
+      "odd_departures": 6,
+      "dyadic_clock": 7,
+      "first_rejected_token_entrance": 405
+    },
+    {
+      "state": 5831,
+      "tokens": 9,
+      "odd_departures": 12,
+      "dyadic_clock": 15,
+      "first_rejected_token_entrance": 94571
+    },
+    {
+      "state": 11034,
+      "tokens": 12,
+      "odd_departures": 16,
+      "dyadic_clock": 20,
+      "first_rejected_token_entrance": 452979
+    },
+    {
+      "state": 16551,
+      "tokens": 11,
+      "odd_departures": 15,
+      "dyadic_clock": 19,
+      "first_rejected_token_entrance": 452979
+    },
+    {
+      "state": 18620,
+      "tokens": 10,
+      "odd_departures": 13,
+      "dyadic_clock": 16,
+      "first_rejected_token_entrance": 452979
+    },
+    {
+      "state": 27930,
+      "tokens": 9,
+      "odd_departures": 12,
+      "dyadic_clock": 15,
+      "first_rejected_token_entrance": 452979
+    },
+    {
+      "state": 239478807,
+      "tokens": 18,
+      "odd_departures": 23,
+      "dyadic_clock": 28,
+      "first_rejected_token_entrance": 83987773113
+    },
+    {
+      "state": 1976826428,
+      "tokens": 17,
+      "odd_departures": 24,
+      "dyadic_clock": 31,
+      "first_rejected_token_entrance": 259985295957
+    },
+    {
+      "state": 9358589244,
+      "tokens": 25,
+      "odd_departures": 31,
+      "dyadic_clock": 37,
+      "first_rejected_token_entrance": 42059048448581
+    },
+    {
+      "state": 14037883866,
+      "tokens": 24,
+      "odd_departures": 30,
+      "dyadic_clock": 36,
+      "first_rejected_token_entrance": 42059048448581
+    },
+    {
+      "state": 21056825799,
+      "tokens": 23,
+      "odd_departures": 29,
+      "dyadic_clock": 35,
+      "first_rejected_token_entrance": 42059048448581
+    },
+    {
+      "state": 2415398221224,
+      "tokens": 25,
+      "odd_departures": 36,
+      "dyadic_clock": 47,
+      "first_rejected_token_entrance": 2575989662372883
+    },
+    {
+      "state": 3623097331836,
+      "tokens": 24,
+      "odd_departures": 35,
+      "dyadic_clock": 46,
+      "first_rejected_token_entrance": 2575989662372883
+    },
+    {
+      "state": 5434645997754,
+      "tokens": 23,
+      "odd_departures": 34,
+      "dyadic_clock": 45,
+      "first_rejected_token_entrance": 2575989662372883
+    },
+    {
+      "state": 8151968996631,
+      "tokens": 22,
+      "odd_departures": 33,
+      "dyadic_clock": 44,
+      "first_rejected_token_entrance": 2575989662372883
+    },
+    {
+      "state": 399189456441660,
+      "tokens": 29,
+      "odd_departures": 39,
+      "dyadic_clock": 49,
+      "first_rejected_token_entrance": 2873678697194559201
+    },
+    {
+      "state": 87153120994196384,
+      "tokens": 33,
+      "odd_departures": 45,
+      "dyadic_clock": 57,
+      "first_rejected_token_entrance": 1786609560077677444017
+    },
+    {
+      "state": 2293467116421288060,
+      "tokens": 38,
+      "odd_departures": 51,
+      "dyadic_clock": 64,
+      "first_rejected_token_entrance": 267766835351098391176517
+    },
+    {
+      "state": 3440200674631932090,
+      "tokens": 37,
+      "odd_departures": 50,
+      "dyadic_clock": 63,
+      "first_rejected_token_entrance": 267766835351098391176517
+    },
+    {
+      "state": 58150563856263001512,
+      "tokens": 39,
+      "odd_departures": 55,
+      "dyadic_clock": 71,
+      "first_rejected_token_entrance": 4296286627164155374735005
+    },
+    {
+      "state": 87225845784394502268,
+      "tokens": 38,
+      "odd_departures": 54,
+      "dyadic_clock": 70,
+      "first_rejected_token_entrance": 4296286627164155374735005
+    }
+  ]
+}
