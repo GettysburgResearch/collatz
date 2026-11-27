@@ -451,3 +451,18 @@ This checkpoint adds no new finite program or Lean module. The cumulative
 counts remain 39 dual-mode Python programs and 57 strict local Lean
 rebuilds. Its ten-checkpoint synthesis distinguishes those evidence levels
 from the written arguments and their cited external inputs throughout.
+
+## Final fixed-target supplement
+
+The final counted-fusion corollary requires both equality of the state and
+equality of the accumulated odd count at one common shortcut clock. Its
+integer component label is well defined by cancelling the cycle integral,
+or by uniqueness of relative meeting clocks on an escaping path. The
+external adjacent counted-pair theorem supplies the only dynamical input.
+Near-unit multipliers are fixed before taking the source cutoff to infinity;
+no uniformity over growing dilation exponents is assumed. Disjoint finite
+label levels then force zero natural density for each fixed counted target.
+This is an explicit consequence of the earlier clock-phase transport, with
+its antecedents credited, not a new universal convergence assertion. Root
+and rigidity read the complete proof. No Lean module or finite program was
+added, and the cumulative counts remain unchanged.

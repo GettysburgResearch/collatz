@@ -260,6 +260,20 @@ empirical moment bound for a fixed finite sample.
 integer. Meeting a smaller orbit is valuable for induction, but the
 available law does not guarantee that meeting for every source.
 
+A final [fixed-target corollary](descent/postpeak/stopped/FIXED_TARGET_COUNTED_DENSITY.md)
+sharpens the synchronization boundary. For every fixed positive target
+\(a\), the set of sources \(n\) for which some common clock \(t\)
+satisfies both \(T^t(n)=T^t(a)\) and \(F_t(n)=F_t(a)\) has natural
+density zero. This covers periodic and escaping target trajectories.
+The proof uses the cited density-one adjacent counted-fusion theorem,
+an integer label whose cycle integral vanishes, and disjoint label sets
+under multipliers \(2^r3^s\) close to one. It is an explicit consequence
+of the same clock-phase mechanism developed earlier in the packet.
+Changing adjacent pairs can synchronize on a set of density one while
+synchronization with every fixed counted target has density zero.
+Ordinary arrivals at target one still have positive lower density.
+The root and rigidity independently reconstructed this final supplement.
+
 ## 4. An exact cost for an escaping component
 
 For the shortcut slopes \(a(n)=1/2\) or \(3/2\), take a total computable
