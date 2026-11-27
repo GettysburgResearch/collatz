@@ -1,0 +1,31 @@
+{
+  "scope": "Sixth checkpoint files; this manifest excludes itself. No full Collatz proof.",
+  "base_commit": "1d67729f14ca167d075b7d62a03e70fcf3facd0e",
+  "file_count_excluding_manifest": 24,
+  "sha256": {
+    "reports/six-hour-20261127/ROOT_SIXTH_REVIEW.md": "5dabde42a52d19eebc2c0fceb94fce36a7aa35e0ad6f18d574377350fdd9c052",
+    "reports/six-hour-20261127/SIXTH_REPLAY.json": "0bc3ec78f437b0676350b4a105ffdbde3cbc2379b60d2344dd1ec68195c817b9",
+    "reports/six-hour-20261127/replay_sixth.py": "bfde5ec51a6abd965f43edb81cccddf839c9bb3f023fd44d02aad853318fa26d",
+    "research/six-hour-20261127/SIXTH_CHECKPOINT.md": "df91563d4b42c174fea02cfc570bfd62126dd863656a5e492df42b997e18b695",
+    "research/six-hour-20261127/arithmetic/RIVAL_BAND_OCCUPATION.md": "438325f73406fdc181ff71527d4c59b6be7eb659b1e91fa8e0c779ba5b2b8b56",
+    "research/six-hour-20261127/arithmetic/RIVAL_PRESSURE_CONTROLS.json": "f7a9478806441e84341eac35f7b67babc5a2894d98ea5bbd81dfb5f3147aa670",
+    "research/six-hour-20261127/arithmetic/RivalPressure.lean": "33626087bcc0b4e86ba9db1d333a2c9c500e4e4e5e2f79828ccb5a6612429a99",
+    "research/six-hour-20261127/arithmetic/check_rival_pressure.py": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0",
+    "research/six-hour-20261127/arithmetic/rival_pressure.cpp": "1553df402b2cbca33cdd1cde0d1cd72d84c8f957ef13d724f2b0ba99306a9510",
+    "research/six-hour-20261127/coupling/AnchorLookup.lean": "df212e7cf44f58e1d5820411c5c93c55bac9581a6c2e37c2fec878fbb32980f8",
+    "research/six-hour-20261127/coupling/NATIVE_EIGHT.md": "2f369feb06e2f77b7a4dde362abec89aa9f1c873525cccb94fea2b50d0a2535d",
+    "research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json": "cb97d95de0a27418fbfec7519d6173cfd3b311eec26c08ddb67cc9d841a8fe59",
+    "research/six-hour-20261127/coupling/NativeClassification.lean": "a651ff19493c5a21861397f521cb2812f7eb9fb5286c8ef4afc0af428a3f24a5",
+    "research/six-hour-20261127/coupling/NativeShadow.lean": "0236909a7d2d76be55d0043ede745bff28c339009321d86e5020f461459196f5",
+    "research/six-hour-20261127/coupling/NativeVisitors.lean": "ddf36562ec2a64211b75644a3767972b8762888ad353660e0722ca9be62f9a2d",
+    "research/six-hour-20261127/coupling/check_native_shadow.py": "43c245f12ee9593826821ee92edfc65772b26f0203bba978588b5366b72a5ca3",
+    "research/six-hour-20261127/escape/RATIONAL_SECTOR_CONTROLS.json": "ad9de08f58b133e395aff81b4c94b48d383cee51b253389dc24f552a380f9653",
+    "research/six-hour-20261127/escape/RATIONAL_SOURCE_SECTOR.md": "574767074b45c585d2001d4f8bdd9670db8f67e1bc4b5f64dfedfedeb8b7b5ce",
+    "research/six-hour-20261127/escape/RationalSourceSector.lean": "abe7dd620db87bf46fdaea0eecc25634aa43151c4ef2896fcfaac89f4ba5b698",
+    "research/six-hour-20261127/escape/SIGNED_HEIGHT_CONTROLS.json": "b8f50836a7c840691c02c20aa72b26e81037af86e58636350e061fb06228fcc5",
+    "research/six-hour-20261127/escape/SignedHeightGauge.lean": "ae05aace52200eaee708ac9065f8335fc1b9ad9871f5bee26c0f8196cc86c190",
+    "research/six-hour-20261127/escape/TWO_SIGNED_HEIGHTS.md": "7ab505e5a2791d85b21f34b89f06ab670f4946477ad97c7a6fbf18346e2db61a",
+    "research/six-hour-20261127/escape/check_rational_sector.py": "0c7143de55b5b0be6b8e30f92fe56b6545654f2c7334cddb3c1c3388a093b1d0",
+    "research/six-hour-20261127/escape/check_signed_heights.py": "8eb0537714f1d7200aa56507b9f31505793c780e8e5a9d0ab5ddc8083635e650"
+  }
+}

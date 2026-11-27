@@ -1,0 +1,457 @@
+{
+  "scope": "finite congruence rows and exact rational cycle checks",
+  "enclosure_denominator": 4611686018427387904,
+  "rows": [
+    {
+      "bits": 1,
+      "selected": 0,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 1,
+        "8": 1,
+        "16": 1,
+        "32": 1
+      },
+      "total_error_enclosure": [
+        576460752303423488,
+        576460752303423489
+      ],
+      "filtered_mass_enclosure": [
+        0,
+        0
+      ],
+      "integer_mass_enclosure": [
+        576460752303423488,
+        576460752303423489
+      ]
+    },
+    {
+      "bits": 2,
+      "selected": 0,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 1,
+        "8": 2,
+        "16": 2,
+        "32": 2
+      },
+      "total_error_enclosure": [
+        648518346341351424,
+        648518346341351426
+      ],
+      "filtered_mass_enclosure": [
+        0,
+        0
+      ],
+      "integer_mass_enclosure": [
+        648518346341351424,
+        648518346341351426
+      ]
+    },
+    {
+      "bits": 3,
+      "selected": 0,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 3,
+        "16": 4,
+        "32": 4
+      },
+      "total_error_enclosure": [
+        678875943829552545,
+        678875943829552549
+      ],
+      "filtered_mass_enclosure": [
+        0,
+        0
+      ],
+      "integer_mass_enclosure": [
+        678875943829552545,
+        678875943829552549
+      ]
+    },
+    {
+      "bits": 4,
+      "selected": 1,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 6,
+        "16": 7,
+        "32": 8
+      },
+      "total_error_enclosure": [
+        112502220823302935,
+        112502220823302943
+      ],
+      "filtered_mass_enclosure": [
+        576460752303423488,
+        576460752303423489
+      ],
+      "integer_mass_enclosure": [
+        688962973126726423,
+        688962973126726431
+      ]
+    },
+    {
+      "bits": 5,
+      "selected": 2,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 14,
+        "32": 15
+      },
+      "total_error_enclosure": [
+        103118648087594303,
+        103118648087594319
+      ],
+      "filtered_mass_enclosure": [
+        606860049788174336,
+        606860049788174338
+      ],
+      "integer_mass_enclosure": [
+        691880899373187202,
+        691880899373187218
+      ]
+    },
+    {
+      "bits": 6,
+      "selected": 4,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 26,
+        "32": 30
+      },
+      "total_error_enclosure": [
+        28603204950646529,
+        28603204950646561
+      ],
+      "filtered_mass_enclosure": [
+        675733458152062976,
+        675733458152062980
+      ],
+      "integer_mass_enclosure": [
+        692665810428956893,
+        692665810428956925
+      ]
+    },
+    {
+      "bits": 7,
+      "selected": 6,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 58
+      },
+      "total_error_enclosure": [
+        19856452733591782,
+        19856452733591846
+      ],
+      "filtered_mass_enclosure": [
+        681294787965353984,
+        681294787965353990
+      ],
+      "integer_mass_enclosure": [
+        692869348885117568,
+        692869348885117632
+      ]
+    },
+    {
+      "bits": 8,
+      "selected": 9,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 48,
+        "32": 106
+      },
+      "total_error_enclosure": [
+        6089288063895020,
+        6089288063895148
+      ],
+      "filtered_mass_enclosure": [
+        690426506911940608,
+        690426506911940617
+      ],
+      "integer_mass_enclosure": [
+        692921171422952202,
+        692921171422952330
+      ]
+    },
+    {
+      "bits": 9,
+      "selected": 12,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 176
+      },
+      "total_error_enclosure": [
+        4127413830733245,
+        4127413830733501
+      ],
+      "filtered_mass_enclosure": [
+        691135348314472448,
+        691135348314472460
+      ],
+      "integer_mass_enclosure": [
+        692934245806706892,
+        692934245806707148
+      ]
+    },
+    {
+      "bits": 10,
+      "selected": 21,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 188
+      },
+      "total_error_enclosure": [
+        2259734966502826,
+        2259734966503338
+      ],
+      "filtered_mass_enclosure": [
+        692723897803472896,
+        692723897803472917
+      ],
+      "integer_mass_enclosure": [
+        692937529340661673,
+        692937529340662185
+      ]
+    },
+    {
+      "bits": 11,
+      "selected": 24,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 170
+      },
+      "total_error_enclosure": [
+        1120846839051587,
+        1120846839052611
+      ],
+      "filtered_mass_enclosure": [
+        692542106870218752,
+        692542106870218776
+      ],
+      "integer_mass_enclosure": [
+        692938352097300137,
+        692938352097301161
+      ]
+    },
+    {
+      "bits": 12,
+      "selected": 41,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 164
+      },
+      "total_error_enclosure": [
+        511041173775533,
+        511041173777581
+      ],
+      "filtered_mass_enclosure": [
+        692762652367126528,
+        692762652367126569
+      ],
+      "integer_mass_enclosure": [
+        692938558020971703,
+        692938558020973751
+      ]
+    },
+    {
+      "bits": 13,
+      "selected": 48,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 164
+      },
+      "total_error_enclosure": [
+        235687903496800,
+        235687903500896
+      ],
+      "filtered_mass_enclosure": [
+        692868449977761792,
+        692868449977761840
+      ],
+      "integer_mass_enclosure": [
+        692938609531225801,
+        692938609531229897
+      ]
+    },
+    {
+      "bits": 14,
+      "selected": 82,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 164
+      },
+      "total_error_enclosure": [
+        133443101265547,
+        133443101273739
+      ],
+      "filtered_mass_enclosure": [
+        692917361333764096,
+        692917361333764178
+      ],
+      "integer_mass_enclosure": [
+        692938622412456093,
+        692938622412464285
+      ]
+    },
+    {
+      "bits": 15,
+      "selected": 117,
+      "large_height_counts": {
+        "1": 0,
+        "2": 0,
+        "4": 2,
+        "8": 10,
+        "16": 42,
+        "32": 164
+      },
+      "total_error_enclosure": [
+        62722599512544,
+        62722599528928
+      ],
+      "filtered_mass_enclosure": [
+        692927502450294784,
+        692927502450294901
+      ],
+      "integer_mass_enclosure": [
+        692938625633218741,
+        692938625633235125
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "slope": "3/1",
+      "loss": 1,
+      "cells": [
+        {
+          "residue": 3,
+          "height_one": 4096,
+          "twice_height_two": 6554,
+          "denominator_test": true
+        }
+      ]
+    },
+    {
+      "slope": "3/1",
+      "loss": 2,
+      "cells": [
+        {
+          "residue": 8195,
+          "height_one": 2049,
+          "twice_height_two": 3278,
+          "denominator_test": false
+        }
+      ]
+    },
+    {
+      "slope": "3/1",
+      "loss": 4,
+      "cells": [
+        {
+          "residue": 4099,
+          "height_one": 1027,
+          "twice_height_two": 1639,
+          "denominator_test": false
+        },
+        {
+          "residue": 12291,
+          "height_one": 1025,
+          "twice_height_two": 1642,
+          "denominator_test": false
+        }
+      ]
+    },
+    {
+      "slope": "5/3",
+      "loss": 1,
+      "cells": [
+        {
+          "residue": 5463,
+          "height_one": 2048,
+          "twice_height_two": 2980,
+          "denominator_test": false
+        }
+      ]
+    },
+    {
+      "slope": "7/9",
+      "loss": 1,
+      "cells": [
+        {
+          "residue": 9103,
+          "height_one": 1024,
+          "twice_height_two": 1311,
+          "denominator_test": false
+        }
+      ]
+    }
+  ],
+  "cycles": [
+    {
+      "bits": 8,
+      "ones": 5,
+      "minimum": "211/13",
+      "above_33": false,
+      "reduced_denominator": 13
+    },
+    {
+      "bits": 27,
+      "ones": 17,
+      "minimum": "129009091/5077565",
+      "above_33": false,
+      "reduced_denominator": 5077565
+    },
+    {
+      "bits": 46,
+      "ones": 29,
+      "minimum": "68629840493971/1738366812781",
+      "above_33": true,
+      "reduced_denominator": 1738366812781
+    }
+  ]
+}

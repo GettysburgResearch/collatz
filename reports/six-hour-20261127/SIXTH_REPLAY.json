@@ -1,0 +1,587 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "all",
+  "repo_head_at_start": "1d67729f14ca167d075b7d62a03e70fcf3facd0e",
+  "repo_tree_at_start": "64b6114476ac0bc076d737626d7b0ea90ddef64c",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_sixth.py\n?? research/six-hour-20261127/arithmetic/RIVAL_BAND_OCCUPATION.md\n?? research/six-hour-20261127/arithmetic/RIVAL_PRESSURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/RivalPressure.lean\n?? research/six-hour-20261127/arithmetic/check_rival_pressure.py\n?? research/six-hour-20261127/arithmetic/rival_pressure.cpp\n?? research/six-hour-20261127/coupling/AnchorLookup.lean\n?? research/six-hour-20261127/coupling/DeepFifteen.lean\n?? research/six-hour-20261127/coupling/NATIVE_EIGHT.md\n?? research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json\n?? research/six-hour-20261127/coupling/NativeClassification.lean\n?? research/six-hour-20261127/coupling/NativeShadow.lean\n?? research/six-hour-20261127/coupling/NativeVisitors.lean\n?? research/six-hour-20261127/coupling/check_native_shadow.py\n?? research/six-hour-20261127/escape/RATIONAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/RATIONAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/RationalSourceSector.lean\n?? research/six-hour-20261127/escape/SIGNED_HEIGHT_CONTROLS.json\n?? research/six-hour-20261127/escape/SignedHeightGauge.lean\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/TWO_SIGNED_HEIGHTS.md\n?? research/six-hour-20261127/escape/check_rational_sector.py\n?? research/six-hour-20261127/escape/check_signed_heights.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a",
+    "research/six-hour-20261127/arithmetic/rival_pressure.cpp": "1553df402b2cbca33cdd1cde0d1cd72d84c8f957ef13d724f2b0ba99306a9510"
+  },
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.739,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.521,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/AnchorRoute.lean",
+      "source_sha256": "d0010a307aeadc84aa3fea17dc759695ca25020d0f9f277ff7f734e1f184ec43",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/AnchorRoute.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/AnchorRoute.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.612,
+      "output_sha256": "a9a726c45131032ec165600f3e91b39c721d0c67ec336b0e153846b2277c691c",
+      "declarations": {
+        "AnchorRoute.physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.slope": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.adjusted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.ones": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.canonical_start": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/NativeShadow.lean",
+      "source_sha256": "0236909a7d2d76be55d0043ede745bff28c339009321d86e5020f461459196f5",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/NativeShadow.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/NativeShadow.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.737,
+      "output_sha256": "e0dc2dd539024763cbc349c558d7ac70adaa6dcb4d5e18ce175c2d3c11b50882",
+      "declarations": {
+        "NativeShadow.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.cap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.center_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.spectral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.marked_of_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.funded_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/NativeVisitors.lean",
+      "source_sha256": "ddf36562ec2a64211b75644a3767972b8762888ad353660e0722ca9be62f9a2d",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/NativeVisitors.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/NativeVisitors.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.659,
+      "output_sha256": "47d9469f73d9587f08b3d113035582b8bd4d73bc9b05812c8f070273cb54b606",
+      "declarations": {
+        "NativeVisitors.shift_growth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NativeVisitors.split": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NativeVisitors.native_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/AnchorLookup.lean",
+      "source_sha256": "df212e7cf44f58e1d5820411c5c93c55bac9581a6c2e37c2fec878fbb32980f8",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/AnchorLookup.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/AnchorLookup.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.038,
+      "output_sha256": "fb07b1c0c3825447e5e16c128f14050c02cf4856c4aa24e759a595a6f05874d1",
+      "declarations": {
+        "AnchorLookup.only_anchor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/NativeClassification.lean",
+      "source_sha256": "a651ff19493c5a21861397f521cb2812f7eb9fb5286c8ef4afc0af428a3f24a5",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/NativeClassification.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/NativeClassification.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.715,
+      "output_sha256": "758ae122fe59a44e337cb96074687a0339a80651ca4cf2846423436b9350821f",
+      "declarations": {
+        "NativeClassification.extra_row": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.shell_slack": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.protected_cut": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.native_openings": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.realize_row": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/SignedHeightGauge.lean",
+      "source_sha256": "ae05aace52200eaee708ac9065f8335fc1b9ad9871f5bee26c0f8196cc86c190",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/SignedHeightGauge.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/SignedHeightGauge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.607,
+      "output_sha256": "60265e6981db69fa07126d92e656725ea2c3c90a268d2bf67209ec41fcad16d6",
+      "declarations": {
+        "EscapeSignedHeightGauge.determinant_congruence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.aspect_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.aspect_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.select_denominator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/RationalSourceSector.lean",
+      "source_sha256": "abe7dd620db87bf46fdaea0eecc25634aa43151c4ef2896fcfaac89f4ba5b698",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/RationalSourceSector.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/RationalSourceSector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.301,
+      "output_sha256": "39221bd87b27d8f7f523b3fb74aff8326d266087453eea920bae019a3af34f84",
+      "declarations": {
+        "EscapeRationalSector.exact_affine": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.denominator_clears": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.shifted_floor_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.triple_residues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.native_suffix_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.numerical_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/RivalPressure.lean",
+      "source_sha256": "33626087bcc0b4e86ba9db1d333a2c9c500e4e4e5e2f79828ccb5a6612429a99",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-sixth-replay/build/RivalPressure.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/RivalPressure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.637,
+      "output_sha256": "b8f032f051f422a6c466b51494843a7374ab3e2bd9c49883800931102daa3eee",
+      "declarations": {
+        "Collatz.RivalPressure.affine_reverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.RivalPressure.weighted_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.RivalPressure.complement_ways": []
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/coupling/check_native_shadow.py",
+      "source_sha256": "43c245f12ee9593826821ee92edfc65772b26f0203bba978588b5366b72a5ca3",
+      "expected": "research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json",
+      "expected_sha256": "cb97d95de0a27418fbfec7519d6173cfd3b311eec26c08ddb67cc9d841a8fe59",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_native_shadow.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.046,
+          "stdout_sha256": "cb97d95de0a27418fbfec7519d6173cfd3b311eec26c08ddb67cc9d841a8fe59",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_native_shadow.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.109,
+          "stdout_sha256": "cb97d95de0a27418fbfec7519d6173cfd3b311eec26c08ddb67cc9d841a8fe59",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_signed_heights.py",
+      "source_sha256": "8eb0537714f1d7200aa56507b9f31505793c780e8e5a9d0ab5ddc8083635e650",
+      "expected": "research/six-hour-20261127/escape/SIGNED_HEIGHT_CONTROLS.json",
+      "expected_sha256": "b8f50836a7c840691c02c20aa72b26e81037af86e58636350e061fb06228fcc5",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_signed_heights.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.804,
+          "stdout_sha256": "b8f50836a7c840691c02c20aa72b26e81037af86e58636350e061fb06228fcc5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_signed_heights.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.964,
+          "stdout_sha256": "b8f50836a7c840691c02c20aa72b26e81037af86e58636350e061fb06228fcc5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_rational_sector.py",
+      "source_sha256": "0c7143de55b5b0be6b8e30f92fe56b6545654f2c7334cddb3c1c3388a093b1d0",
+      "expected": "research/six-hour-20261127/escape/RATIONAL_SECTOR_CONTROLS.json",
+      "expected_sha256": "ad9de08f58b133e395aff81b4c94b48d383cee51b253389dc24f552a380f9653",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_rational_sector.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.891,
+          "stdout_sha256": "ad9de08f58b133e395aff81b4c94b48d383cee51b253389dc24f552a380f9653",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_rational_sector.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.1,
+          "stdout_sha256": "ad9de08f58b133e395aff81b4c94b48d383cee51b253389dc24f552a380f9653",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_rival_pressure.py",
+      "source_sha256": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0",
+      "expected": "research/six-hour-20261127/arithmetic/RIVAL_PRESSURE_CONTROLS.json",
+      "expected_sha256": "f7a9478806441e84341eac35f7b67babc5a2894d98ea5bbd81dfb5f3147aa670",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_rival_pressure.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 4.71,
+          "stdout_sha256": "f7a9478806441e84341eac35f7b67babc5a2894d98ea5bbd81dfb5f3147aa670",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_rival_pressure.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 5.179,
+          "stdout_sha256": "f7a9478806441e84341eac35f7b67babc5a2894d98ea5bbd81dfb5f3147aa670",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_sixth.py\n?? research/six-hour-20261127/arithmetic/RIVAL_BAND_OCCUPATION.md\n?? research/six-hour-20261127/arithmetic/RIVAL_PRESSURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/RivalPressure.lean\n?? research/six-hour-20261127/arithmetic/check_rival_pressure.py\n?? research/six-hour-20261127/arithmetic/rival_pressure.cpp\n?? research/six-hour-20261127/coupling/AnchorLookup.lean\n?? research/six-hour-20261127/coupling/DeepFifteen.lean\n?? research/six-hour-20261127/coupling/NATIVE_EIGHT.md\n?? research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json\n?? research/six-hour-20261127/coupling/NativeClassification.lean\n?? research/six-hour-20261127/coupling/NativeShadow.lean\n?? research/six-hour-20261127/coupling/NativeVisitors.lean\n?? research/six-hour-20261127/coupling/check_native_shadow.py\n?? research/six-hour-20261127/escape/RATIONAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/RATIONAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/RationalSourceSector.lean\n?? research/six-hour-20261127/escape/SIGNED_HEIGHT_CONTROLS.json\n?? research/six-hour-20261127/escape/SignedHeightGauge.lean\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/TWO_SIGNED_HEIGHTS.md\n?? research/six-hour-20261127/escape/check_rational_sector.py\n?? research/six-hour-20261127/escape/check_signed_heights.py"
+}
