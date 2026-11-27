@@ -1,0 +1,1240 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "module_count": 129,
+  "axiom_reports": 357,
+  "modules": [
+    {
+      "file": "BasinTransport.lean",
+      "sha256": "945e71462ce0b3d9499d6e326d4afe1d923ffdef8eb484207e4f61f1cb4de05f",
+      "reports": 3,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BasinUnitEncoding.lean",
+      "sha256": "8805d951b0b9bde9ec43fb1b395da7c023cedcf9df418391567bdf221c40adaa",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BergmanAccumulation.lean",
+      "sha256": "65ff8b4d3aeff71794fa5d1cf8034c6100f0dbeb614e7842f39c68e55d131a51",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BergmanCenter.lean",
+      "sha256": "aa8e89d967d349b042a91e98eb088fa2d81e40f9f362cb5d79f770710fc2be1e",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BergmanDistance.lean",
+      "sha256": "3d9b5495fd474952b17405de176d33bce8fb8d0011d9f023b79811fba3812010",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BergmanRelative.lean",
+      "sha256": "3e444f40fcacece5bcef152919b68e444092451edaafcf172be28230114a53d8",
+      "reports": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "BergmanSpectrum.lean",
+      "sha256": "af072cd1b027833690a289d4e28d4e9ec7fe45f35d2767530259b086bd8f8e12",
+      "reports": 6,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ClockRecurrence.lean",
+      "sha256": "57d6418641b0a69de9dd10e0589a7888eb22ce820bc4f78b7b38c97f329af615",
+      "reports": 6,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ClosureProposal.lean",
+      "sha256": "eb91552efac88b983f174b491b0dca06fdc786348d0753994381f60054d8ee21",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "CycleAmplification.lean",
+      "sha256": "3b6d3d6f64d97fe50291c8d0a073e8d9beb9efb7032ca701f909e7475b33a689",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "CycleDetection.lean",
+      "sha256": "36fe77bda861ff82a6d1f7ec6846df0542d8d7b0bdc617e314703843987004d0",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "CycleFrontier.lean",
+      "sha256": "7e2308db09d1f2b4fab0981f4ee55240467c149eadb49859502ff1407e58690b",
+      "reports": 10,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "CycleFrontierCounting.lean",
+      "sha256": "e845af660275fd6a8ff773bcbea89a8a9b2367d0ba69e360379008ce9409900b",
+      "reports": 6,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "CycleRows.lean",
+      "sha256": "c00508d25bb8b72fc128181b2c08721102fc552da5b5436d51a1b40d04cf74f0",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "DescentClocks.lean",
+      "sha256": "116508f2bdc94b98c0b91cdbcf5de746a98cc41f717ada6dbcc87172b2b44218",
+      "reports": 5,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "EscapeFrontier.lean",
+      "sha256": "cd483a180649b0d98e1eff658c4489739c0d7a84403388b10054b44789250c49",
+      "reports": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "EscapeRecords.lean",
+      "sha256": "e410051b211e99a9c98391a6664aa93a41478da7b1bf123b84f50131e149c457",
+      "reports": 7,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FiberRouting.lean",
+      "sha256": "8c39ff53af731bd260afde9850aaf3565a793630ca96eefd9e6762f8bfa7d3b4",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FiberTransport.lean",
+      "sha256": "454100d8aa64a4d5914acfdb0b437aa4d22a17a59a2c252e203da348e54950e6",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FinalProposal.lean",
+      "sha256": "04a116f373db188abf17acfc2c561600d478bc8945898ee6f33a88bd69fa9d30",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FixedGate.lean",
+      "sha256": "d6663ef25ccc82f53c1eff91a59fc13350e5d42939455fa4e5cbbb4f59013360",
+      "reports": 7,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FreePairClock.lean",
+      "sha256": "31770b7c84696b77742592143e1eafe61b37367895334c79786662d2e1e028a7",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FreePairHeight.lean",
+      "sha256": "43837d1cc6f7077bbca154ad5e8bd065d822165501ca2ceb7c11f23368fa3d15",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "FreeTripleClock.lean",
+      "sha256": "beaf78399072d2b40917f1937a4493e0a4bb32d69062f141ee498da3a0895711",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourCycleRealization.lean",
+      "sha256": "ab6d27ab598644affe085b5fa4694902d0224798f2cf690a3af8146dbe56692a",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourCycleShadow.lean",
+      "sha256": "f5bdb316a83bddfaec59bbbc87ac0e3e50fb82690a765bbb9338f58fcbb1f834",
+      "reports": 9,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeBinary.lean",
+      "sha256": "0335b500acc0599ef3228e0af20bd254672d2963e04d7404400c8c9697b45f7d",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeBinaryWindows.lean",
+      "sha256": "3b1be16467e27b7e59b58836a842804935ce9910732c212fe2cfcc4325a87a57",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeBranching.lean",
+      "sha256": "75f3395c15a28d4124ca6eed1a3f34a61c4d56722e40cb0baa0f8f9f9a6c94f8",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeCylinders.lean",
+      "sha256": "b2542843e056aa894c4eade54547e0f15fb8d5c81068751aa7c4d18ccdb1dcdf",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeDrawdown.lean",
+      "sha256": "4041d515ae8fc48a53349a18f8433fcdd82fad449ffd8888e410556736cbcab0",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeLimits.lean",
+      "sha256": "18f35cc08a8719188ff521feef4e70fa9a58094fb1993c72174571220c7ebadc",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeLookback.lean",
+      "sha256": "b78ac7a040200d29a80b4a2a2a978b7f439d2185e276db13a8e4ab3f7f21a247",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapePacking.lean",
+      "sha256": "65f98f42cb6ccbc80f4a641de751f760eff128f01316ab2277625b2d4babef5f",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeSigned.lean",
+      "sha256": "3f59c85aab508ec7b1f7a239c790dee925cb49db06682023a5cee7e104b34acf",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourEscapeWindows.lean",
+      "sha256": "c66e11c4bb6223f2b448fc459f1f06adc8ed7b06e1f9683a798a5edb837fac33",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourTower.lean",
+      "sha256": "58e17acf1057d881924814bf90cff3f50b85ff3ddc8dbf77ce3ec0ded46929b7",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourTowerCapture.lean",
+      "sha256": "593a91e576b6a8136f61d1381750f90c604493ced7af6c9c9850553144ac06cf",
+      "reports": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourTowerCounting.lean",
+      "sha256": "b8eafd2bc1c86158ecac0b1a78dab98ea3642e67dbb9fca99f2328b86c227bea",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourTowerDensity.lean",
+      "sha256": "9c48d53f89262df7422155e95d4e21ec853ff1a9d51d11c8eff3c966eb15eb7d",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "HourTowerLag.lean",
+      "sha256": "c8ca6806b1a5e5b85efdea4fc0068b46d68a5b553417e503916c39dff788c547",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "InverseHeight.lean",
+      "sha256": "6fe035d6c35191244645259ef487a60ba9364046b80533c0c4b22d29f6d2b083",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "MinimumDescent.lean",
+      "sha256": "f77e69254e0cd913fcd972ee62901024d99bfcdb7a22833d0f5d3c010f09c4e7",
+      "reports": 9,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "MixedBarrier.lean",
+      "sha256": "5c6080b5d4024bc02f5490866c3bd11d5025853431bd96c7b8388814624151fd",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "NovemberProposal.lean",
+      "sha256": "cb32ff1c2038d10c5c961c074dec56047042cdd30b06e76afd113d69fe1fa90b",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "OrbitAttack.lean",
+      "sha256": "084107c99f7dbab8cc2cf130a82a90cf513b4761af36400f6074b232d5ae4a49",
+      "reports": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PairCapture.lean",
+      "sha256": "5e24376066ddd7b6e34747103c226d425d6bc46d649c880c86893149a39c2214",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PairCover.lean",
+      "sha256": "c4023d713d2d9d736d6dd93c88a9603b78be889621aa72ec8c1036a8b8734660",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PairCoverData.lean",
+      "sha256": "5da719e3e127f591cb4f1a70f18fc53050a90ba298239d3ae4771597945b9cc8",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PairDeadline.lean",
+      "sha256": "3a98a29484eeb9d0e5e08270c7afe91f3919a09f016037a689b4656ac74cb89a",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PairInverseRays.lean",
+      "sha256": "ab9b0775e52ab1c26a791eacbd8fb70ad092c2774f526834d8cae3ba49a6ac61",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageAligned.lean",
+      "sha256": "22304a7181becb929a4e0b957637db78309e2a340efc32f4c762f8d391feec5a",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageBinaryRays.lean",
+      "sha256": "1be4a90a490c3e0f5e76397d56992d5d259a6c0928686a04d96917f1139ae2c5",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageBoundary.lean",
+      "sha256": "c0ab49536b53535c24002e7e6c562ce008414bfafa7173fdd3e43d4ca025ca57",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageClassification.lean",
+      "sha256": "9171ba2faab9bee54437f4570f25aad714c1f15370620e6606f9edbe28c88c90",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescent.lean",
+      "sha256": "dd4f17b950e05be5cc1ebcc8c40a2df8df48c230b1618f5d9ca1634e9a97a56b",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageDescentAnchor.lean",
+      "sha256": "f4e7001f4bfe38aed6e14cebabff6252e4b536a2a8ce18b1352e9b0ee162ec59",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentCover.lean",
+      "sha256": "ad65ad91f84b0132f26a6ec6b57bb1958c9e7e7c328a2eb3c06fbff1ba3bc112",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageDescentDelayed.lean",
+      "sha256": "7230e5c7b282ee7a5f2a7ef7465daef47661dc2e1d15ca64d2f126bcbc3e03f0",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentDirect.lean",
+      "sha256": "cbb1f7797b53a4eb4112aa8407a375e2efe57dcc63c5c2b19f9222f5703c404a",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageDescentFirst.lean",
+      "sha256": "f65742daed5d3b5b66acee7dc0b5ad6815ae7dcc00b95ce7e9ff1a5acd2eb2af",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentIndependent.lean",
+      "sha256": "1283faaa4b4c19b544b238ac1d87953ea02a420fec4aa246294d379ecbafa246",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentPowers.lean",
+      "sha256": "34fe30e188493e2fcdb7d44d881bc445324c265463550c340cbe5cec9bfb1acb",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentRank.lean",
+      "sha256": "ed9ef141c419e9c221e0cf3b6023e1e28b4e2f77171520e7e54be8e19f3037bb",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageDescentRankTable.lean",
+      "sha256": "3a0da1a5310f65bc242bb460b777d95920c32bd587bb927e2596a3629079c664",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageDescentRows.lean",
+      "sha256": "e6547ae9cc4e86c2e4edc3a1eae9181cfe5f5df219972aa3e44beac8831b81cf",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageFixedPrefix.lean",
+      "sha256": "c0ad1eaa27f160780bad13cbc549e0fdc5fdf9649de1f146670ca7acfdb7777e",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageFrontier.lean",
+      "sha256": "2e28aec573c466dd39909fd9a60079eb2f5e20b76cb3b6da7a2a28867901264c",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageFusion.lean",
+      "sha256": "bbb7b58e887194ae9fab97ae17d34599f41625c79ab0d3d5e5222e2013e6faf2",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateAncestors.lean",
+      "sha256": "be713a09ea376e7f2f029fc7d5861e6e6b2716bc4e92658540bd0783a889acb8",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateCritical.lean",
+      "sha256": "f305f642999a324690e864982a1f26057719ac0246a499330a042eb2e62b6ecd",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateDistortion.lean",
+      "sha256": "958c95ec821d5eec037a9479b5beb3b34eca19b68f847b141264e7aedffc951e",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateMoment.lean",
+      "sha256": "e7ee70225c02ecda58d5d617618027e387706dd82f80a8390bad982ec9cdb194",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateMoving.lean",
+      "sha256": "e729f4c244d89002d4d5531bba53edb7953e83ea730abdc7409edb618f25353a",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGatePacking.lean",
+      "sha256": "5ba03451db201112d34ecccdf9b52e2fd3321032ee753fc1f3fecb6c2111053f",
+      "reports": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGatePrefix.lean",
+      "sha256": "8dd9f58a5fe3c3e25516e9635923f012f5aa52fabc388c4374c2bceb5afaae86",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGatePressure.lean",
+      "sha256": "87fc84182062866dca739680626f02b5f68db901a7ab3823dd9bcd9304b5d27a",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateReserve.lean",
+      "sha256": "2698bd4ffc510a01ba327f2aeac3d0d3b9158f6cca764bc5c7405649415241e9",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageGateSublinear.lean",
+      "sha256": "39582a7496821d4d055edef786ec50440a274347dae6b093ade8dcb307f53d82",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageIntervalData.lean",
+      "sha256": "9c0d6985678d2387ca2214e84dbe3fd84b11fcedf05c8a5531167658396664e5",
+      "reports": 4,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageIntervals.lean",
+      "sha256": "caf6193460fbf277cc0698c23014a77bf5b65d1f24ee52cc4f53708d04142b23",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitAllTimes.lean",
+      "sha256": "394a2db2f8e311c213a1c3b41f09aa86dba80a1125f64f285205835143b114b1",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitCycles.lean",
+      "sha256": "4c58e62f46c1fd0cb8c4f6067be5152507ba7f56d16cefe4a85ab1e6cc674c1d",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitDenominator.lean",
+      "sha256": "9357130c5eb956d70a6ce5a5c0f239a2672868cf67818bb53df5616e52b75c08",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageOrbitHeightPrice.lean",
+      "sha256": "edd0f9d75811e88a8d861ae4970551705c243518e50ea4716212bda030752480",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitHeights.lean",
+      "sha256": "d7e38fcb0c647e5b41e1bd987b04c494ab8deb8b588532a7e4e0ffd621ee6539",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageOrbitLcm.lean",
+      "sha256": "51a9cdc02e31facf43a1ec526a3c7b353c0b0503d245b3044fe60201ee4ba3dc",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitMovingPlaces.lean",
+      "sha256": "59683919ef3fee4b972152ed8adeb3e196d92696c08182c40563a1991bbccb0f",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitOutsideRank.lean",
+      "sha256": "42acbc37ff784c2881f127ed7c42b72e0749d94c599c7f6c8d43dd99ed05b8ce",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitPlaces.lean",
+      "sha256": "bd03b28eddb1c060685a2fa6ad819a752e3a923a66e4ef511326a0d76a62d32c",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageOrbitRank.lean",
+      "sha256": "666625879c6059dc3765fe8570ed6edc15a4f5be32afebb3561b22ad31fa5750",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "PassageRootClock.lean",
+      "sha256": "71c923f0383cea852800c7f792814e9f754b4f7f86b0d414ea763f6f9023c587",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageRouting.lean",
+      "sha256": "663b9d614c4c4fc82ad89c04fedb6afe54b08488d3e8fa18df20a14d4daa2ff1",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "PassageTwoOdds.lean",
+      "sha256": "cb88d34ff939455e2835e94ef08c38a7310c035c38e155dc7f404b448d302a9d",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnDescent.lean",
+      "sha256": "35103cb9ea28fe2d677c3d70ffface2575821ad94e5eb781a5bf8591ebe7a2c1",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnDescentFixed.lean",
+      "sha256": "1885a3e1ce566c11dd8e16ace19e5e160cb09014b099ffd483a89879571cc8ca",
+      "reports": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnDescentRows.lean",
+      "sha256": "c9a230e606436c88d3529322ad369fd4f5830238c14e20d1df240a2f2d0d93c2",
+      "reports": 2,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitBinary.lean",
+      "sha256": "c5ad1e335493d7525c588bf2ef75cde104fb0c268c0ef3608df88e8b86147d17",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitCensus.lean",
+      "sha256": "163890881b0a25c7d883e534421618fdab5e553da58ed1932334bd7b2ed1d166",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitGrowth.lean",
+      "sha256": "3e2cbef4bdc74f969e11378c54366e9fa95313cbd517b407c0b21e3475b1b177",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitPacking.lean",
+      "sha256": "7bf72cff9453c7d4e586cd4fc883b96a7bd49c7d741425e3f786bb45f7449106",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitRecords.lean",
+      "sha256": "eb203931067e99915e28167f5169ec67e34bd2ca8a29e377f167e96edb1f6d7c",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitTernary.lean",
+      "sha256": "a14c5e78b7aa6cb7551205f8cea34d691efbb77c938ca3c17eb341b718ea3899",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitTernaryWindows.lean",
+      "sha256": "48a82b05a31573300424859e8399123cd568ce910ca145384a8f5b770cef5301",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitWindows.lean",
+      "sha256": "71bbae11d1723944dc9c5a51ae516cda96c5f0da561fbca20b07bfd66d8998a7",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "ReturnOrbitWitness.lean",
+      "sha256": "2f0dc4d886249e75698af816fa4d3a19d585f5070fd6038dfd9cfba1d759a081",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SparseClock.lean",
+      "sha256": "c42a0b4770de2c41c597e0866331a6693087e5cc193c6d004b6cdb77838c19c0",
+      "reports": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "StableTowerFibers.lean",
+      "sha256": "b11aa13b06144a481c444a928f8a30c6f47fc8709b9d918afae094574346aff8",
+      "reports": 5,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousBasin.lean",
+      "sha256": "ca85de82cbae6e9afd75c8d245301e78eaa15019bf1f7a39aadee18663abf669",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousBasinCount.lean",
+      "sha256": "9fcc11b0881b74469c51f1b7ee6e89b9a9377ea572d6954bad2a10cd460785c7",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousBasinDensity.lean",
+      "sha256": "bd7a247cb4cf1ddb586781e560cbfdf71b981ba832b00deb581dd69c9e9e0523",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousDensityTransfer.lean",
+      "sha256": "c03db3db3a7cde900b5fb4e1a27808073b67ce3cd6b17334c3c2587e5a17e6e0",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousFiniteRange.lean",
+      "sha256": "d9835dcb16b735425a8591a34e330383536fc12136efbe1bbb8480cfc4b1c123",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousFirstHits.lean",
+      "sha256": "e1683bc105c7c212d9f009b1d8133c452fe5ebc6468156a752c2f5761753e78d",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "SynchronousShadow.lean",
+      "sha256": "ea38e6aa7368bd68794f2b59e7de25f74a9db0e138f86f871e2cab4725bff443",
+      "reports": 5,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TernaryItinerary.lean",
+      "sha256": "b6a2bce0e51455a8c5177a473b751219da82021086e158698564cb4c920b6b56",
+      "reports": 10,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerCapture.lean",
+      "sha256": "6b8a16bf37d24664b9fc91b2a06aa35afceb958d52f70268f0f632fd604ca2ba",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerCopies.lean",
+      "sha256": "f4be2be24946a41a18efd5666a07becd9dc28709a0b9733f393141ae198923e8",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerFrontier.lean",
+      "sha256": "01f5bde95da8cabbf59b8288874d023eefecacd6a1892bc3b17149a6ad8e338b",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerFrontierAffine.lean",
+      "sha256": "00950705ebc4f9855e6ec6e0585d3161791a09ba99f5e672f99489c43826f8e0",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "TowerFrontierLimit.lean",
+      "sha256": "171868080bd2061a09ef86e82cc7f94a21e28acb70ca6e8f83a73918b06458b2",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerFrontierMergers.lean",
+      "sha256": "6cea45face03093df3cd7f2f72a3c79c1f899be17cda35724953bf4ba18d2bb4",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerFrontierPrescribed.lean",
+      "sha256": "f1cd37679ccb9a87a7750af2a5726caad7017574711db03333bf37ebe840671a",
+      "reports": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerFrontierRotation.lean",
+      "sha256": "17613e8ba16c641d78e958f241d0656cac6a7c655c93d3df36fa63387be8ec0e",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "TowerRecurrence.lean",
+      "sha256": "e246069b78fb1d004b855fc15b19a2b61cb2d3474b626eddf1104310ff82b1fc",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "TowerSectionData.lean",
+      "sha256": "a54d3a3f77ee13b0d3f1facd187902d4f42ade4efa94a25ab1e6500afe6d6472",
+      "reports": 0,
+      "axioms": []
+    },
+    {
+      "file": "TowerSectionTree.lean",
+      "sha256": "de0552eb4ecde6ed9d4288c4fb25cdbadcbc1dd4b3b1c3600e88e9d856c377cd",
+      "reports": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "UniformTowerRouting.lean",
+      "sha256": "1adc98dda5e5245e9b1b60b574df5ab5ce710a55698f4caa03ad892293688091",
+      "reports": 3,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "file": "WindowCapture.lean",
+      "sha256": "95c164b74a12ba0d825ad0d04f0bc4d2b4a1487e92b8dd6222f93ba24159db0a",
+      "reports": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ]
+}

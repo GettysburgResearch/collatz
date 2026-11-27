@@ -1,0 +1,110 @@
+{
+  "monolithic_source_sha256": "4f45a889452915eead7a275bc10a50d2c2dd3f2b89e90c2660466f8a1da3b1da",
+  "exact_edge_statements": 48,
+  "exact_generated_checkpoint_definitions": 47,
+  "evaluator_and_kernel_soundness_proofs_match": true,
+  "same_final_assembly_source": true,
+  "compiler": "Lean 4.34.1 5045d0056413266e57c625dcd7c365b10e377c52",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "-DElab.async=false"
+  ],
+  "modules": [
+    {
+      "name": "ReturnDescentLongBase",
+      "source_sha256": "0a4d9ff9076cf3a333f387ecc894480eff55eda8e3798d1845187b7927666ef8",
+      "olean_sha256": "d5532bbdc6d6c21533e512e914f4b20a2ad294eaa699c49132de96077150a6ca",
+      "companions_sha256": {
+        ".olean.private": "6f99c2b94d54dd041ef597d2d80acf8dc930ca63d6866b8ca8009f4b7239c7e1",
+        ".olean.server": "ed050ddca3f976863ced5ca91e45db19d5ea108fdac6d1008bcc56e2fc868709",
+        ".ir": "ef028980ee4f63491b584d2b1fc0576a4b6e5e61886dc93282f89978efc4ad96",
+        ".ir.sig": "1d996082d40524ca8fa548f12c439f34f6b6fa56f027da22bdb2ddc7c9149731"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch0",
+      "source_sha256": "1a2970200e81f796f4012e541a55e109d768ffd640aa394ad6a629af093e4ead",
+      "olean_sha256": "e5026a70a855672ca6c752c11e703d605ac656f9dd48447481fba3005f71eb84",
+      "companions_sha256": {
+        ".olean.private": "1bbbd286bc4eadc9cac3c5af53bfca18f107219e768b873352311de9317d5ca1",
+        ".olean.server": "a9ffc75a6e7370c230b1d3a594deaebd929b9d8febe346455fb102768936fcec",
+        ".ir": "8e00e68156588418ba646d8a9ac2ec7e12686bb9d477ceb5e99a1bf846977ceb",
+        ".ir.sig": "73d2ddf3a8f07d17b8c58fb88eb23f466332327594bc446fd438134d40b66212"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch1",
+      "source_sha256": "5d4233c7ea483f9c6fe2ff7ba8898d7a22ca3a3e5fda0b587a425beaf91ab645",
+      "olean_sha256": "1ed0e8ed845ac43b9b246b29f37b07de02a56531125825bfa92050573b0d38da",
+      "companions_sha256": {
+        ".olean.private": "9add669c0921c77ba2def47d4445e789c3f7112ec6f0e30c91fd1f1e325f76e9",
+        ".olean.server": "3bf11358668431ff145e0cdddf44f2fb3397662eda255adae2cb4adcce786d20",
+        ".ir": "5f76ac0ea05c52174fb537d699336e3a597be34ba3f0634409f72a3278831671",
+        ".ir.sig": "232ede2669638c2ed8a4a35f17bf91906f3b83b5c052d0e9b32950f0fbab0e2f"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch2",
+      "source_sha256": "bad4ffe14c86bfb2c53869311c735e70192bb3cabf0aa2c1bfcfa324d8e366ae",
+      "olean_sha256": "86d53cb469e534af0088a957dfee3a3e794b1e0b1da58530a1689f6757a39efd",
+      "companions_sha256": {
+        ".olean.private": "9d4bd5777a71cf0d9c49a5a1ebc3621c54a99c656881905fad5d79c87150f999",
+        ".olean.server": "9b5ed4e0e95f3528547521e7f2ed8c74ff4e89087e0e7ec65d6311c23971ca0c",
+        ".ir": "1af77caccaef6abdc857c2879693c84201085879201e2afdfa6534faf74792bc",
+        ".ir.sig": "645253c9743fbf4e646cc9acbb41e9ebff1f6ae452b19d3986aa9f50b6e0d01b"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch3",
+      "source_sha256": "2670a9af9d187cde077df9c39f5722a25250382f26cc8dd64b0deab94da1110a",
+      "olean_sha256": "269e45aca3e39960d276e69dfc7ad56c1d511653b415bcdeb22eca8321fe3f44",
+      "companions_sha256": {
+        ".olean.private": "fafbaf9090070d2352f3088b3d33c0d092be774ff2ba5b6b72c7062d5460b13b",
+        ".olean.server": "462dc059ee65bd43e3c180a17369e441a1e502cf21ad200899dd748741ff2c3d",
+        ".ir": "11d1ae942a6bf811d0cdefc5635ea71ba8bad9abe2a855241993a2e71cf93fce",
+        ".ir.sig": "84d0d3c7b42248ce462cc95b12759a3494f3437b9f50b01f2c7533aeae9c2cec"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch4",
+      "source_sha256": "07386ba2b4f8570efabf821d52ccb4d0a0d605dd01c95d8baaca1b99e8c6a6c9",
+      "olean_sha256": "aa12afaa6e9842a77e778ab0f094443ec0594454af99d868e96bfa9214077451",
+      "companions_sha256": {
+        ".olean.private": "4a19d016a41524b0c2560c753dbd75bdb657f665a955446c127b7285d8772a4e",
+        ".olean.server": "67aaa4de63eb7e607e6531fa098c91c97f00cea25a89581211f1ea9d390b0795",
+        ".ir": "73561da4e4b295282efb90404603d2e10029d34b953952d522d851c3678397d7",
+        ".ir.sig": "d4ade0c070138c113ade86a1d49b8e1e5765c6d8b536fa0e81ff75c5d44f1a9d"
+      }
+    },
+    {
+      "name": "ReturnDescentLongBatch5",
+      "source_sha256": "5bc46408a78b2377abc12c43a26cbc1f55b62b7f5204889ee9492840728c8294",
+      "olean_sha256": "8895621fbe824725ff152f97e58e52bf9abb83c7c704a0e66afb978c0bf6b177",
+      "companions_sha256": {
+        ".olean.private": "e51ec7197a6517ea1a20f34f5b56ba8384a0cbdc28b06248edfa3d084d10580b",
+        ".olean.server": "735b150ff3e6b5a4c446c53408864db5b99d4491ea9e3a9bd67b6dde7348f905",
+        ".ir": "ef41518ba526b66b4f8438433976c15dbc32ee87a270e13d024b94f0c7df5df5",
+        ".ir.sig": "97b3c53a072557634b95efe4af43d2b256668d2563d6ae735a1b43ef52dc7e71"
+      }
+    },
+    {
+      "name": "ReturnDescentLongReceipt",
+      "source_sha256": "bafc13450db3d7ae5c26ba96007e295fe2da7025307b1cca10ba248628a72bbe",
+      "olean_sha256": "bf150f88c648103194789c789a029b2c04d098ce8850d0d62892bdc81c5be842",
+      "companions_sha256": {
+        ".olean.private": "7008e4e778b87afe42879fc082ed94b0548b495c48d564bad17e73a81d519f49",
+        ".olean.server": "434dc144f2084109927f8f9ba765471085aa7577101be0e084f33e2c34ee6f2d",
+        ".ir": "3323fb33864db883181ed065ce78ac27ebe39127a4e5b5a388ec5210fd207619",
+        ".ir.sig": "07799848a11d30b5c3cd3801489bf484406926a85fe58c6c3ad5d455c3ba3b8c"
+      }
+    }
+  ],
+  "observed_final_lean_output": "'Collatz.Itinerary.ReturnDescent.first_delayed_converges' depends on axioms: [propext, Quot.sound]",
+  "theorem": "run 27198220 (hardParent 3145727) = 1",
+  "final_compiler_exit_code": 0,
+  "source_map_driver_sha256": "3f9f680ca3c1273c9649279dbe1d867c545f1cd2fbfc1e6486bb331a531ff366",
+  "published_driver_sha256": "55e0a5d2a3ddcb11282c20f20656e95d2395bcf405a5ec4e466ea9e8f66c55ec",
+  "published_driver_source_comparison": "All eight generated modules agree with the compiled sources after normalization of line endings and terminal newlines."
+}
