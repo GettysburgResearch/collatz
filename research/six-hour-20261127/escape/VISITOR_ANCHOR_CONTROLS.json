@@ -1,0 +1,13 @@
+{
+  "scope": "finite ordinary paths and final rational inequality only",
+  "largest_odd_start": 4095,
+  "number_of_starts": 2048,
+  "maximum_odd_steps_to_one": 87,
+  "maximizing_starts": [
+    3711
+  ],
+  "largest_odd_vertex_after_a_step": 425645,
+  "ternary_depth": 128,
+  "failure_bound": "233840263062443348525733373997454625576200493493131/28727276183376227760211629071871259034357010064736256",
+  "strictly_below_one_percent": true
+}
