@@ -7,12 +7,21 @@ read arithmetic proofs, fresh Lean builds, exact finite controls, and
 clearly identified external analytic inputs. None of those evidence levels
 is silently promoted to a proof of universal convergence.
 
-The latest [eighth checkpoint](EIGHTH_CHECKPOINT.md) gives the strongest
-current conclusions: a full reduced-denominator exponent above `0.5128`
+The [eighth checkpoint](EIGHTH_CHECKPOINT.md) gives the strongest
+population conclusions: a full reduced-denominator exponent above `0.5128`
 at density-one least periods for every signed rational word; sharp
 source-preserving first-smaller-meeting tails after an odd ascent; and an
 exact positive-defect cost for ordinary escaping components. These are
 written research results with finite formal consumers and explicit gaps.
+
+The final [ninth checkpoint](NINTH_CHECKPOINT.md) tests the remaining
+pointwise bridges. It proves denominator costs for rotation splices and
+almost-full proper prefixes, an exact lower-record splitting criterion,
+and structural obstructions to source amplification. A sparse changed-map
+example separates population laws from the exact Collatz update. A genuine
+escaping path would have summable relative predecessor-branch growth;
+the sufficient positive-mass-floor comparison remains unproved, and the
+unrestricted comparison is already refuted by cited prior work.
 
 ## Initial checkpoint results
 
@@ -125,7 +134,7 @@ Local finite-prime energy functions face full-exponent or positive-density
 violation obstructions. The hypotheses, limiting orders, prior aggregation
 results, and unsupported bootstrap steps remain explicit.
 
-## Source intake and credit
+## Eighth and ninth checkpoints
 
 The [eighth checkpoint](EIGHTH_CHECKPOINT.md) records the subsequent
 denominator census, stopped first-meeting profile and nonlocal defect
@@ -133,6 +142,16 @@ construction. Its all-word denominator bound needs no quantitative
 irrationality estimate or Subspace Theorem. Its meeting upper bound
 explicitly imports the known adjacent-pair tail. The escape-cost minimum
 and the ordinary exceptional-source question remain undetermined.
+
+The [ninth checkpoint](NINTH_CHECKPOINT.md) retains the distinction
+between least period and word length, all-clock meetings and counted
+synchronization, changing finite positive lifts and one fixed source,
+and the true map and its sparse comparison maps. Its final source pass
+credits Paper 200 v2's two-climb construction, the earlier Weaver/Wren
+sibling strategy, and Paper 202's counterexamples to a uniform logarithmic
+share. No universal convergence conclusion follows from these results.
+
+## Source intake and credit
 
 The branch starts from main at
 `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.

@@ -1,0 +1,3 @@
+# A population-level comparison
+
+[SPARSE_SPINE.md](SPARSE_SPINE.md) tests the proposed passage from all-clock meeting estimates and small weighted one-edge losses to positivity at each fixed source. Changing a computable sparse set of ordinary edges by at most five produces an explicitly escaping comparison map while preserving the cited first-meeting density limits, including the simultaneous shell estimates. The primary comparison is elementary apart from the cited true-orbit packing bound used for arbitrary visitor clocks. A separate variant uses an external predecessor-density premise to produce a positive-density escaping basin. This is a written comparison between maps; the genuine Collatz conjecture remains open.

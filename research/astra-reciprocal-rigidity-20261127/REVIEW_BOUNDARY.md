@@ -331,3 +331,59 @@ The separate total-cost functional detects nontrivial cycles as well,
 using true height ratios; no claim establishes that its minimum is zero.
 The finite Lean path comparisons do not certify the variational minimum,
 the asymptotic edge counts, or the full Collatz conjecture.
+
+## Ninth-checkpoint review boundary
+
+The same-side splice argument requires all multipliers below one or all
+above one and at least two distinct anchors. The strict convex interval
+bound is used only where the dyadic cross difference is nonzero. Distinct
+macro-boundary phases use the least dictionary period; the physical period
+is only bounded above by its length. Powers preserve least period. Proper
+factor estimates exclude the exact full return, where the displacement
+vanishes. The two endpoint divisibilities transport one integer and are
+not independent. Rhin's quoted logarithm bound enters only the quantitative
+consumers. Root and rigidity independently read the splice argument.
+
+The lower-record splitting criterion checks all cyclic windows, including
+the possibility of repeated words before the record hypothesis is imposed.
+At a record, coprimality makes every word primitive and the centered-height
+comparison is strict. The positive rational realizations show that these
+order restrictions alone cannot forbid the record type. No claim turns a
+coefficient contraction at the exact full return into physical descent.
+Root and rigidity independently read the complete proof.
+
+The signed examples are not positive counterexamples. Each finite positive
+lift may use a new source, and arbitrary ternary classes are not assigned
+the all-clock protected fraction proved for a complete dyadic cylinder.
+The positive source seven is instead an exact counterexample to identifying
+ordinary asynchronous meetings with counted equal-clock synchronization
+pointwise. The previous density identity retains its actual measure scope.
+The component-minimum observation applies to complete forward-orbit
+intersection and supplies exactly one globally smaller-visitor-free source
+per component. Inverse abundance inside that component does not amplify
+this property. The inverse Fibonacci bound concerns matched finite depth
+and fixed or polynomially many anchors only.
+
+The sparse-spine example changes the map at its marked states. It is not
+an ordinary Collatz orbit. Its optional positive-density attachment has a
+different complete-trajectory agreement scope from the zero-density spine
+alone. The all-clock finite-shell comparison counts targets after any first
+alteration, applies the ordinary image bound to the unbounded old tails,
+and pays its error relative to the actual source cylinder. A preserved
+finite horizon is not a universal identity of maps.
+
+The sibling-share identity is for the genuine map, on a single common
+subsequence profile. It uses the external positive predecessor-density
+input only at fixed odd ternary units. An escaping target has disjoint
+parent basins; periodic targets need not. The initial odd seed is fixed
+before the height estimate. Main-path positive mass does not automatically
+give a relative lower bound for the other branch. Weaver Paper 202 already
+refutes the uniform logarithmic comparison, including proposed fixed
+polylogarithmic thresholds on x d(x). The remaining condition is explicitly
+restricted to d(x) at least a fixed positive constant. The earlier Weaver
+and Wren criterion and summability argument receive credit. Root checked
+the source theorem and its transfer to the full other-parent branch.
+
+This checkpoint adds written arguments and one dual-mode bounded checker.
+It introduces no new Lean proof and does not alter the mathematical status
+of the external inputs or the cumulative 57 checked local modules.
