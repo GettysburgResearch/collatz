@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/cycles/check_complete_plateaus.py",
+  "source_sha256": "5e78c09ac71358d5ce9e68b37d4dcc4b9c1bf0d3e5dacff3c9becbcdc4eee701",
+  "normal_and_optimized_match": true,
+  "finished_utc": "2026-11-27T23:21:50.476373+00:00",
+  "scope": "Exact finite controls only; no asymptotic theorem inferred from enumeration.",
+  "result": {
+    "native": {
+      "equal_cutoff_steps": 498,
+      "max_odd_cutoff": 1023,
+      "origins": 21055,
+      "strict_cutoff_switches": 12
+    },
+    "pressure": {
+      "directed_scale": 1000000000000,
+      "drift_lower": "3227093020657183629047/62867877888000000000000",
+      "pressure_upper": "248780987952353/4096000000000000",
+      "quadrature_bins": 8192,
+      "ratio_upper": "122508662755342816370953/3227093020657183629047"
+    }
+  }
+}
