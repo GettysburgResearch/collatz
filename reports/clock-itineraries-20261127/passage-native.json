@@ -1,7 +1,7 @@
 {
   "lean": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
-  "module_count": 128,
-  "axiom_reports": 355,
+  "module_count": 129,
+  "axiom_reports": 357,
   "modules": [
     {
       "file": "BasinTransport.lean",
@@ -870,6 +870,16 @@
       "sha256": "666625879c6059dc3765fe8570ed6edc15a4f5be32afebb3561b22ad31fa5750",
       "reports": 0,
       "axioms": []
+    },
+    {
+      "file": "PassageRootClock.lean",
+      "sha256": "71c923f0383cea852800c7f792814e9f754b4f7f86b0d414ea763f6f9023c587",
+      "reports": 2,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
     },
     {
       "file": "PassageRouting.lean",
