@@ -1,0 +1,55 @@
+{
+  "schema": "collatz-astra-global-rigidity-lean/v1",
+  "success": false,
+  "started_utc": "2026-11-27T23:26:03.388233+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": null,
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "all",
+    "requested": [
+      "CriticalCount",
+      "MersenneCrests",
+      "NativeGate",
+      "NativeTightness",
+      "NativeTransfer"
+    ],
+    "compiled": [
+      "NativeGate",
+      "NativeTransfer",
+      "NativeTightness",
+      "CriticalCount",
+      "MersenneCrests"
+    ],
+    "not_compiled": []
+  },
+  "mathematical_scope": "The stated finite actual-orbit centered-count and Mersenne crest theorems only. Their three frozen native dependency modules are freshly recompiled as well. No analytic Gaussian law, component-density theorem, prime-distribution theorem, general cycle exclusion or Collatz conclusion is formalized here.",
+  "modules": [
+    {
+      "module": "NativeGate",
+      "source": "research/astra-global-rigidity-20261128/../astra-diagonal-frontier-20261127/NativeGate.lean",
+      "source_sha256": "2990f536523b9333f7f38dfea8bfb4fc7d208d747377b243acbb21a5a8efe237",
+      "exit_code": 124,
+      "seconds": 300.168,
+      "public_theorems": [
+        "Collatz.NativeGate.step_positive",
+        "Collatz.NativeGate.orbit_positive",
+        "Collatz.NativeGate.orbit_add",
+        "Collatz.NativeGate.reaches_of_orbit",
+        "Collatz.NativeGate.even_step",
+        "Collatz.NativeGate.odd_step",
+        "Collatz.NativeGate.fourth_margin",
+        "Collatz.NativeGate.protected_bound",
+        "Collatz.NativeGate.least_source_gate",
+        "Collatz.NativeGate.atom_le_mass",
+        "Collatz.NativeGate.extinction_implies_collatz",
+        "Collatz.NativeGate.finite_certificate",
+        "Collatz.NativeGate.loss_budget_excludes_atom",
+        "Collatz.NativeGate.reserve_high",
+        "Collatz.NativeGate.reserve_low"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-global-finite/v1",
+  "success": true,
+  "started_utc": "2026-11-27T23:27:23.796893+00:00",
+  "scope": "Bounded exact controls only; no infinite theorem or Collatz proof.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checkers": [
+    {
+      "path": "cycles/check_height_entropy.py",
+      "sha256": "b3baae13d44c41998bc0c7d27962da587fc33f86153408e981f6be5f3e37b93c",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"cycles\": 314, \"entropy_rows\": 8728, \"hamming_rows\": 139056, \"selections_with_outside_collisions\": 3037}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"cycles\": 314, \"entropy_rows\": 8728, \"hamming_rows\": 139056, \"selections_with_outside_collisions\": 3037}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_width_entropy.py",
+      "sha256": "589c0271cfa74115d392ac3830277a7cfa8b930a604fa299a514b4f33d9e9ae4",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"circular_grade_arrays\": 3977, \"circular_models\": 29, \"distinct_rational_roots_summed_over_models\": 3972, \"exact_phase_cells_and_endpoints\": 770, \"finite_words_summed_over_bands_and_lengths\": 1543}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"circular_grade_arrays\": 3977, \"circular_models\": 29, \"distinct_rational_roots_summed_over_models\": 3972, \"exact_phase_cells_and_endpoints\": 770, \"finite_words_summed_over_bands_and_lengths\": 1543}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_mersenne.py",
+      "sha256": "c88ca0f997caa247ccb76a7d2b4cc2e7eb109b5491890fa5636cfc6cc0550457",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"first_nineteen_first_hit_grades\": [\n    1,\n    1,\n    2,\n    2,\n    16,\n    16,\n    6,\n    6,\n    8,\n    8,\n    23,\n    23,\n    23,\n    23,\n    18,\n    18,\n    33,\n    33,\n    25\n  ],\n  \"positive_return_certificates\": [\n    {\n      \"prime_exponent\": 25759,\n      \"ternary_precision\": 3,\n      \"protected_postcrest\": 7,\n      \"lower_sources\": 4,\n      \"first_simultaneous_clock\": 24,\n      \"full_odd_count\": 25767\n    },\n    {\n      \"prime_exponent\": 7436287,\n      \"ternary_precision\": 5,\n      \"protected_postcrest\": 12,\n      \"lower_sources\": 8,\n      \"first_simultaneous_clock\": 103,\n      \"full_odd_count\": 7436328\n    },\n    {\n      \"prime_exponent\": 878845951,\n      \"ternary_precision\": 8,\n      \"protected_postcrest\": 14,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 422,\n      \"full_odd_count\": 878846153\n    },\n    {\n      \"prime_exponent\": 48768057343,\n      \"ternary_precision\": 10,\n      \"protected_postcrest\": 17,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 748,\n      \"full_odd_count\": 48768057709\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"first_nineteen_first_hit_grades\": [\n    1,\n    1,\n    2,\n    2,\n    16,\n    16,\n    6,\n    6,\n    8,\n    8,\n    23,\n    23,\n    23,\n    23,\n    18,\n    18,\n    33,\n    33,\n    25\n  ],\n  \"positive_return_certificates\": [\n    {\n      \"prime_exponent\": 25759,\n      \"ternary_precision\": 3,\n      \"protected_postcrest\": 7,\n      \"lower_sources\": 4,\n      \"first_simultaneous_clock\": 24,\n      \"full_odd_count\": 25767\n    },\n    {\n      \"prime_exponent\": 7436287,\n      \"ternary_precision\": 5,\n      \"protected_postcrest\": 12,\n      \"lower_sources\": 8,\n      \"first_simultaneous_clock\": 103,\n      \"full_odd_count\": 7436328\n    },\n    {\n      \"prime_exponent\": 878845951,\n      \"ternary_precision\": 8,\n      \"protected_postcrest\": 14,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 422,\n      \"full_odd_count\": 878846153\n    },\n    {\n      \"prime_exponent\": 48768057343,\n      \"ternary_precision\": 10,\n      \"protected_postcrest\": 17,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 748,\n      \"full_odd_count\": 48768057709\n    }\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T23:27:26.633557+00:00"
+}
