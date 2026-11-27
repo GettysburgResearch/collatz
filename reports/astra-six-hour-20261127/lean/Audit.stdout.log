@@ -49,3 +49,31 @@
 'Collatz.SixHour.FormalTransport.mark_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Collatz.SixHour.FormalTransport.mark_neg_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Collatz.SixHour.FormalTransport.return_scale_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.exact_quotient' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.centered_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.centered_below_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.switch_odd' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.homogeneous_run' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.TernaryQuotient.switch_run' depends on axioms: [propext, Quot.sound]
+'CanonicalBirths.bit_shift' depends on axioms: [propext, Quot.sound]
+'CanonicalBirths.step_shift' depends on axioms: [propext, Quot.sound]
+'CanonicalBirths.translate' depends on axioms: [propext, Quot.sound]
+'CanonicalBirths.step_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CanonicalBirths.endpoint_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CanonicalBirths.same_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CanonicalBirths.same_strict_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CanonicalBirths.same_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CanonicalBirths.row_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.ClosedSupport.finite_crossings_of_vanishing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.ClosedSupport.exists_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.ClosedSupport.finite_crossing_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.ClosedSupport.closure_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.ClosedSupport.finite_crossing_isolated_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.ClosedSupport.closed_range_countable_outside' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.ClosedSupport.closed_range_of_singular_current' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

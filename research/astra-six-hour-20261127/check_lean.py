@@ -22,6 +22,9 @@ MODULES = [
     ("FareyCurrent", PACKET / "global/FareyCurrent.lean", "Collatz.SixHour.Farey"),
     ("EllipticMarkers", PACKET / "global/EllipticMarkers.lean", "Collatz.SixHour.Markers"),
     ("FormalTransport", PACKET / "root/FormalTransport.lean", "Collatz.SixHour.FormalTransport"),
+    ("TernaryQuotient", PACKET / "arithmetic/TernaryQuotient.lean", "Collatz.SixHour.TernaryQuotient"),
+    ("CanonicalBirths", PACKET / "global/CanonicalBirths.lean", "CanonicalBirths"),
+    ("ClosedSupport", PACKET / "root/ClosedSupport.lean", "Collatz.SixHour.ClosedSupport"),
 ]
 
 
@@ -56,7 +59,7 @@ def main() -> None:
         "compiler": version.stdout.strip(),
         "mathlib": MATHLIB,
         "dependency_manifest_sha256": hashlib.sha256((mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
-        "scope": f"All {len(MODULES)} new modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite word, modular, Farey, sibling, and exact orbit transport kernels only. The divisor counting, interval-complexity estimates, inverse-path laws, fractal dimension and singularity statements, harmonic trace asymptotics, Dirichlet completion, and infinite analytic arguments are written proofs and retained external inputs, not formalized by this build.",
+        "scope": f"All {len(MODULES)} packet modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite word, modular, Farey, sibling, exact orbit transport, signed representative-window kernels, and the conditional finite-crossing/countability argument. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, and other infinite analytic arguments are written proofs and retained external inputs, not formalized by this build.",
         "modules": [],
         "success": False,
     }

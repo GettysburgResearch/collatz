@@ -4,6 +4,9 @@ import ColorWords
 import FareyCurrent
 import EllipticMarkers
 import FormalTransport
+import TernaryQuotient
+import CanonicalBirths
+import ClosedSupport
 
 #print axioms Collatz.SixHour.MinimumCode.trace_affine
 #print axioms Collatz.SixHour.MinimumCode.suffix_fits_at_minimum
@@ -56,3 +59,25 @@ import FormalTransport
 #print axioms Collatz.SixHour.FormalTransport.mark_pos_iff
 #print axioms Collatz.SixHour.FormalTransport.mark_neg_iff
 #print axioms Collatz.SixHour.FormalTransport.return_scale_lt_one
+#print axioms Collatz.SixHour.TernaryQuotient.exact_quotient
+#print axioms Collatz.SixHour.TernaryQuotient.centered_edge
+#print axioms Collatz.SixHour.TernaryQuotient.centered_below_floor
+#print axioms Collatz.SixHour.TernaryQuotient.switch_odd
+#print axioms Collatz.SixHour.TernaryQuotient.homogeneous_run
+#print axioms Collatz.SixHour.TernaryQuotient.switch_run
+#print axioms CanonicalBirths.bit_shift
+#print axioms CanonicalBirths.step_shift
+#print axioms CanonicalBirths.translate
+#print axioms CanonicalBirths.step_sign
+#print axioms CanonicalBirths.endpoint_sign
+#print axioms CanonicalBirths.same_threshold
+#print axioms CanonicalBirths.same_strict_threshold
+#print axioms CanonicalBirths.same_quotient
+#print axioms CanonicalBirths.row_window
+#print axioms Collatz.SixHour.ClosedSupport.finite_crossings_of_vanishing_mass
+#print axioms Collatz.SixHour.ClosedSupport.exists_crossing
+#print axioms Collatz.SixHour.ClosedSupport.finite_crossing_gap
+#print axioms Collatz.SixHour.ClosedSupport.closure_gap
+#print axioms Collatz.SixHour.ClosedSupport.finite_crossing_isolated_left
+#print axioms Collatz.SixHour.ClosedSupport.closed_range_countable_outside
+#print axioms Collatz.SixHour.ClosedSupport.closed_range_of_singular_current

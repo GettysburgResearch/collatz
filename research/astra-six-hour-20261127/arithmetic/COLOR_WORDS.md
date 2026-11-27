@@ -43,3 +43,15 @@ P_f(N)\le2^t b^{G_t(N)}.
 With $t=\lceil\log_2N\rceil^2$ this gives (2) from Weaver's Theorem A, and the stated effective alternative from Theorem 1. The [Lean module](ColorWords.lean) verifies the exact shortcut lift, equality in both directions for labelled fibres, and factorization of every actual shifted color word through its residue's partition. The entropy estimates and the external compression theorem are written arguments.
 
 The existence of two positive basins supplies two colors and long single-color blocks. It supplies no independent assignment of colors to the many classes in one critical interval. Proving a lower entropy dimension at least $\theta$ for a nonconstant saturated coloring would contradict (2). That lower bound remains open. Zero shift entropy alone allows nonconstant label sequences.
+
+## A nonconstant ordinary control with one exceptional edge
+
+The catalogue bound survives a finite failure set. Suppose $f(Tn)=f(n)$ for every $n>E$. For centres $m>E2^t$, every first $t$-step path from $m+i$ stays above $E$ up to its endpoint, since $T^j(m+i)\ge(m+i)/2^j$. Its colors still factor through the labelled partition. The small centres contribute at most $E2^t$ additional words. Thus
+\[
+ P_f(N)\le 2^t\bigl(b^{G_t(N)}+E\bigr).
+\]
+All conclusions from Weaver's fixed-clock estimates follow for these labels as well.
+
+For a concrete case on the ordinary positive map, let $f(n)$ indicate that the trajectory visits $5$. This function is invariant except at $5\to8$. Both colors have positive octave proportions. The ancestors of $85$ belong to the other color, because the paths $5,8,4,2,1$ and $85,128,64,32,16,8,4,2,1$ have incomparable initial nodes. The predecessor floor applies to both targets. Paper 221 supplies all eight balanced three-summand visit patterns using $5$ and $85$, with their product proportions and short reach-one certificates. Consequently the upper entropy dimension in (2), the two positive proportions, and the independently prescribed additive triples coexist for a genuinely nonconstant ordinary label. Any contradiction for exactly saturated labels must exploit the individual edge on which this control fails invariance. [Paper 221, integer target theorem](https://rstation.ai/problems/collatz/papers/221)
+
+There is also a source-count obstruction. Take integer affine forms $L_i(\boldsymbol t)=a_i\cdot\boldsymbol t+b_i$ on a fixed $d$-parameter box of side $X$ with $d\ge2$. If $a_i,a_j$ are nonproportional over $\mathbb Q$, then any prescribed words for which the two actual shortcut endpoints meet impose a nonconstant affine equation in $\boldsymbol t$. Their respective linear parts are $3^{p_i}2^{-h_i}a_i$ and $3^{p_j}2^{-h_j}a_j$. The solution set contains at most $O(X^{d-1})$ integral parameter points. A fixed finite bank of such certificates obeys the same bound. This does not bound unbounded hitting clocks or rule out other logical relations between the labels. It explains why a positive-proportion supply of additive target patterns cannot by itself identify summands' orbits with the orbit of their sum.

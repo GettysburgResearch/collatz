@@ -61,6 +61,55 @@ legal rays, including the first-minimum-cell result, is credited to Weaver's
 paper 175. These are analytic written deductions from cited inputs, not Lean
 theorems in this packet.
 
+## Second checkpoint: closed support and exact entrance structure
+
+[Closed correction support](escape/CLOSED_CORRECTION_SUPPORT.md) proves, with
+its named analytic inputs retained, that the closure of **all** finite first-hit
+real offsets at every positive odd root has Lebesgue measure zero. The argument
+includes exceptional zero-probability inverse paths. It uses one canonical
+singular measure, a uniform local-mass lower bound obtained from the selected
+joint floor, and the finite-crossing argument. For an escaping component the
+closure of its all-future correction values is likewise null and has Hausdorff
+dimension one. The source-qualified written theorem settles the specific
+closed-support length question described in Weaver 175 §12, conditional on the
+cited inputs. The analytic inputs and their Collatz application are not fully
+formalized by the generic Lean reduction.
+
+[Graded correction sets](escape/GRADED_CORRECTION_SETS.md) identifies the
+countable compact correction set at each fixed odd grade: its successive
+Cantor–Bendixson derivatives advance the grade, and the omega derivative is
+`{1}`. Every sufficiently high dyadic corrected-height level nevertheless
+contains at least `c*(4/3)^b/sqrt(b)` actual sources. These are structural
+restrictions on a hypothetical escape, not its exclusion.
+
+[Primitive characters](global/PRIMITIVE_CHARACTERS.md) gives an exact
+conductor-by-conductor recurrence for the original ternary law. The Jacobi/Gauss
+matrix has tight **columns**, while the weighted normal operator has both
+expanding and contracting directions. This prevents replacing the remaining
+signed Dirichlet problem by a false operator-norm contraction.
+
+[Canonical births](global/CANONICAL_BIRTHS.md) counts representative-window
+entrances exactly. With the actual corrected reciprocal weights the limiting
+last-gap current is `-log(2)/2`. The **next-gap** current relevant to the escape
+trace cancels uniformly for ages `s <= c*(k+j)`, for every
+`c < log₂(3)/2`. This handles a positive proportion of entrance cohorts at a
+terminal depth. It does not control the older cohorts. The different time
+indices and measures are explicit in the note.
+
+[Positive ternary quotients](arithmetic/TERNARY_QUOTIENT.md) express every phase
+of the bounded bad-cycle alternative by a smaller positive good integer. The
+induced defects alternate `+1` and `-1`; the negative switches still require a
+changed-clock ordinary descent. The [component complexity note](arithmetic/COLOR_WORDS.md)
+also retains an actual finite-exception coloring control, preventing an entropy
+argument from silently ignoring the exceptional edge.
+
+The claim-level reconstruction and exact verification boundary are in
+[SECOND_REVIEW.md](../../reports/astra-six-hour-20261127/SECOND_REVIEW.md).
+[LEAN_SECOND.json](../../reports/astra-six-hour-20261127/LEAN_SECOND.json)
+records all nine fresh project builds and 73 public axiom inventories. The
+new character checker uses exact finite fields and rational arithmetic at
+`q=9,27,81`; both normal and optimized executions retain every check.
+
 ## The cycle and global attacks
 
 | Result | What it controls | Remaining pointwise obligation |
@@ -79,7 +128,7 @@ a constant coloring.
 
 ## Lean and reproducible checks
 
-Six new Lean modules check finite arithmetic and exact orbit kernels:
+Nine new Lean modules check finite arithmetic, exact orbit kernels, and the explicit conditional topological reduction:
 
 * [MinimumCode.lean](arithmetic/MinimumCode.lean): physical minimum, carry cap,
   and full numerator decoding from a bounded binary prefix.
@@ -93,6 +142,13 @@ Six new Lean modules check finite arithmetic and exact orbit kernels:
   integral marker existence, and complete polynomial divisor obstructions.
 * [FormalTransport.lean](root/FormalTransport.lean): legal inverse traces are
   actual odd iterates, exact affine offsets, and signed real-mark transport.
+* [TernaryQuotient.lean](arithmetic/TernaryQuotient.lean): exact positive ternary
+  quotients and alternating switch defects in the bounded cycle alternative.
+* [CanonicalBirths.lean](global/CanonicalBirths.lean): signed shortcut lifts,
+  identical high integer quotients, and actual representative-window entry.
+* [ClosedSupport.lean](root/ClosedSupport.lean): finite crossing, a gap below each
+  regular phase, and countability of the closed range outside the explicitly
+  supplied analytic exceptional set.
 
 [check_lean.py](check_lean.py) compiles into fresh project objects, using Lean
 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, and prints and
@@ -125,3 +181,11 @@ The prior own published head is `25f5462e2c43feea65760884f7ea8f53576fbc18`.
 Each note states its external inputs and the first unsupported inference.
 No claim of complete convergence, cycle uniqueness, or absence of escape is
 made by this checkpoint.
+
+A second intake during this pass froze PR201 at
+`4c36876ebbe8d3cca69b2c4867aeee34f5700470`, PR195 at
+`03b26119164664d08eaa04a1ea1d159dd4eccd7a`, PR200 at
+`07ae08382588992c1b7f7a60cd331a6647177495`, and PR206 at
+`640bf7e511831a0ffc4f00462f12df81f8a8a619`. The guide and relevant new
+arguments were read for the active attacks; their bulk computations were not
+replayed. [Exact delta inventory](../../reports/astra-six-hour-20261127/SECOND_INTAKE.json).
