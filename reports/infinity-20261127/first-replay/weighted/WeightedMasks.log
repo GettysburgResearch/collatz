@@ -1,0 +1,2 @@
+'WeightedMasks.count_subsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedMasks.count_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]

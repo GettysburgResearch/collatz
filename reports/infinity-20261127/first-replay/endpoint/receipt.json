@@ -1,0 +1,304 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "started_utc": "2026-11-27T11:52:45Z",
+  "repo_head": "d21bac748e705a64b6b57a7996a8ad6282f0bcbf",
+  "repo_tree": "9345cdaca91f380ae98240b14f0f5146eb5525a2",
+  "working_status": "?? reports/infinity-20261127/\n?? research/infinity-20261127/",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "edd361e6868dd81a5e2086ccd778f34b5a8c743fc74cdf38634558635c5c4a74",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.056,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "48d1c5da07af5e5ed13b30dad21b2e70570fbad616f07b09b5c71ea53618cb5c"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.309,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "f686fefed346f7df6e45a254455943a24c8dfb4beff556e749d6ac9f12116e06"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.364,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "a6b6f44ef95fc52b9129d17fb639c0c8edc69f38b30e3b0b6f14cfb72aad7a7e"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/PaidCheckpoint.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.708,
+      "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+      "declarations": {
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "bb664a6879f0546cd7eb916a0bee8a5416806cbd3fb0be436ba8de7886b31487"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/EarlierOffsets.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.672,
+      "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+      "declarations": {
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "09f35e18e050ab40dd60bd32753e1c305677dfe2eeb5e249ff282b13130f96ee"
+    },
+    {
+      "path": "research/six-hour-20261127/BinaryPrefixCriterion.lean",
+      "source_sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-endpoint-replay-2/build/BinaryPrefixCriterion.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/BinaryPrefixCriterion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.205,
+      "output_sha256": "b60b7c98cf9b43de8d88ef3d3c7d921c69bda2196442df61881ef8b4a9038dff",
+      "declarations": {
+        "BinaryPrefixCriterion.least_bad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.debt_reserve_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.minimum_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.principal_member": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.member_reciprocal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.finite_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.collatz_of_small_finite_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "a3859afd417bbd286510696e99fd9a074076a58bae4262dcb94cd5f689b10735"
+    }
+  ],
+  "finished_utc": "2026-11-27T11:53:16Z",
+  "complete": true
+}

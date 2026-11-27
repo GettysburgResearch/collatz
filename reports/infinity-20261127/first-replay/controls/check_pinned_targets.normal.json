@@ -1,0 +1,40 @@
+{
+  "canonical_source": 113,
+  "collar_rows": [
+    {
+      "grades": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "h": 8,
+      "r": 99,
+      "target": 11
+    },
+    {
+      "grades": [
+        4,
+        4,
+        3,
+        3
+      ],
+      "h": 9,
+      "r": 237,
+      "target": 38
+    }
+  ],
+  "largest_first_wheel_index": 127,
+  "odd_residues": 256,
+  "ordinary_visits": {
+    "113_to_1": 10,
+    "113_to_5": null,
+    "113_to_509": null,
+    "1367721_to_509": 116,
+    "455907_to_113": 31,
+    "509_to_1": 33,
+    "509_to_113": null,
+    "509_to_5": 29
+  },
+  "upper_head": 509
+}

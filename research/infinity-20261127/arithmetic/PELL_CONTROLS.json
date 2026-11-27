@@ -1,0 +1,110 @@
+{
+  "actual_returns": [
+    {
+      "D": 3,
+      "end": 1,
+      "norm": "319787188483821417097",
+      "odd_count": 17,
+      "shortcut_clock": 35,
+      "start": 225
+    },
+    {
+      "D": 3,
+      "end": 1,
+      "norm": "1788311735875205188500821527795750673144000207691055900778776777",
+      "odd_count": 57,
+      "shortcut_clock": 106,
+      "start": 43681
+    }
+  ],
+  "certificate": {
+    "available_vector_labels": 34359738368,
+    "distinct_weight_sums": 10021,
+    "hamming_ball_radius": 12,
+    "hamming_ball_size": 43257431931,
+    "offset_upper": "22028951919893580121259211643",
+    "pivot_primes": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137
+    ],
+    "published_odd_period_lower_comparison": 137500000000,
+    "rank_31_odd_period_upper": 127901154889,
+    "rank_hypothesis": 31,
+    "record_odd_edges": 44,
+    "shortcut_clock_upper": 69,
+    "strict_upper_log2_odd_maximum": 2561,
+    "weight_log2_scale": 64
+  },
+  "edges": {
+    "distinct_pell_discriminants": 99994,
+    "first_pairs": [
+      [
+        3,
+        1,
+        225,
+        97
+      ],
+      [
+        10,
+        3,
+        4563,
+        721
+      ],
+      [
+        15,
+        5,
+        19845,
+        1921
+      ],
+      [
+        3,
+        225,
+        43681,
+        97
+      ],
+      [
+        462,
+        7,
+        52983,
+        3697
+      ],
+      [
+        21,
+        9,
+        110889,
+        6049
+      ]
+    ],
+    "odd_sources": 100000,
+    "repeated_discriminants": 6
+  }
+}

@@ -1,0 +1,5 @@
+'Collatz.PellReturnPacking.returnNormOdd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellReturnPacking.returnCarry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellReturnPacking.pellOfKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellReturnPacking.conjugateGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PellReturnPacking.returnHeight' depends on axioms: [propext, Classical.choice, Quot.sound]

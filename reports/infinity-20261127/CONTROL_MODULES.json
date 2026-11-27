@@ -1,0 +1,24 @@
+[
+  {
+    "script": "research/infinity-20261127/mass/check_resonant_loss.py",
+    "expected": "research/infinity-20261127/mass/RESONANT_CONTROLS.json",
+    "local_imports": []
+  },
+  {
+    "script": "research/infinity-20261127/mass/check_old_head.py",
+    "expected": "research/infinity-20261127/mass/OLD_HEAD_CONTROLS.json",
+    "local_imports": [
+      "research/infinity-20261127/mass/check_resonant_loss.py"
+    ]
+  },
+  {
+    "script": "research/infinity-20261127/arithmetic/check_pell_returns.py",
+    "expected": "research/infinity-20261127/arithmetic/PELL_CONTROLS.json",
+    "local_imports": []
+  },
+  {
+    "script": "research/infinity-20261127/coupling/check_pinned_targets.py",
+    "expected": "research/infinity-20261127/coupling/PINNED_TARGET_CONTROLS.json",
+    "local_imports": []
+  }
+]
