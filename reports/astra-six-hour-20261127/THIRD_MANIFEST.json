@@ -1,0 +1,148 @@
+{
+  "schema": "collatz-astra-six-hour-checkpoint3/v1",
+  "parent": "2796977d3f02ad57daeb7510f16da29527f9afde",
+  "created_utc": "2026-11-27T02:03:31.093968+00:00",
+  "scope": "Exact frozen changed-file boundary excluding this manifest. THIRD_REVIEW.md states the conditional formal scope and retained analytic inputs. The adaptive Green work remains separate and in progress.",
+  "files": [
+    {
+      "path": "reports/astra-six-hour-20261127/CHECKPOINT2.json",
+      "bytes": 7313,
+      "sha256": "3f99d8c69fa1cf6cb9460751b712d34fdaf9a8ac3a0f9552334d05b644d64ff6"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/LEAN_THIRD.json",
+      "bytes": 12210,
+      "sha256": "7532ec4bae54381655e2ef70baabc09356ea0f3b4b3a125a911e01385ee14ffd"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/THIRD_REVIEW.md",
+      "bytes": 6211,
+      "sha256": "48b0f44d4ea7bbcb2e20246dc8da8b1cda923295b72e34332ecedad6bf360bb5"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/escape/poisson_probe.tsv",
+      "bytes": 1314,
+      "sha256": "113b900425395cabc84ba793c5460a85c2220e9a12da9e4e8ae8c1c4c5ef8457"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/escape/poisson_root_replay.json",
+      "bytes": 516,
+      "sha256": "ae0e93fb96a01122a4922a1cf58cedb20cf3cbec09875c791d25b49178ec2114"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Audit.lean",
+      "bytes": 7016,
+      "sha256": "1768af937f6ec09029fad4b7297da445aea029a2a99e31ea2699b5d550be9d7e"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Audit.stdout.log",
+      "bytes": 11264,
+      "sha256": "4abfe28b5c0c8788a7d03a5e01c116eb2cdbb4ce0acc6c9d11bdba7ce977d034"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/CycleSurgery.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/CycleSurgery.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Mathlib_Field.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Mathlib_Field.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/PotentialAssembly.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/PotentialAssembly.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/RationalGreen.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/RationalGreen.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/TiltedGreen.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/TiltedGreen.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/README.md",
+      "bytes": 15209,
+      "sha256": "b6a22d27e7320f45659887d8556fcb86d910c7166fc9f24995270d015e7057ef"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/CYCLE_SURGERY.md",
+      "bytes": 2980,
+      "sha256": "d7c6e9a0dd04099faba3e0649792da52e545367427fa4b120d8a6401bdeb2eb9"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/CycleSurgery.lean",
+      "bytes": 1820,
+      "sha256": "d4181fab4f2da4a17fde4201906b30b49fd29e0e56e7e0fe7a035c40ccc451b8"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/check_lean.py",
+      "bytes": 9510,
+      "sha256": "6a1e503accd46dd8de5ea7c344f6b555fc6c25929906e86e6c268463dde68737"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/POISSON_SOURCE_PROBE.md",
+      "bytes": 11118,
+      "sha256": "669afdacbd05e7de7f408d26e9e031f7ff6a06539ffb690717161794d193fb65"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/check_poisson_probe.py",
+      "bytes": 3560,
+      "sha256": "c43241b526684c6b07b165ae0c1b5ec6a21a5c672380192a294609a0deeded63"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/TILTED_GREEN.md",
+      "bytes": 8655,
+      "sha256": "684372abd71626eb3a7d87392c8f9bdba90b841328025bb07eabcba4179301a6"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/TiltedGreen.lean",
+      "bytes": 1750,
+      "sha256": "c778d1b8f36f9f3c03737eafeeefcde53b0ddf8f5c8da9dace0eb0ec80dbfae1"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/PotentialAssembly.lean",
+      "bytes": 6378,
+      "sha256": "5128113babff8767b875bda6418a01c37031a2974bf27dfe4d4cdac7950a1266"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RATIONAL_GREEN.md",
+      "bytes": 5772,
+      "sha256": "cbe8e411a9f487eb3e5b0ef451876d06fdb7a7b57d06ed7a5648f5d0aa141bab"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RationalGreen.lean",
+      "bytes": 8865,
+      "sha256": "7f69ed73b083f3263543fef939ca4690a9599f486250a565d7e10930642d1248"
+    }
+  ]
+}

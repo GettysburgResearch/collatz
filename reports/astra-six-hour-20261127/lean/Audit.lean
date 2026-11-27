@@ -7,6 +7,10 @@ import FormalTransport
 import TernaryQuotient
 import CanonicalBirths
 import ClosedSupport
+import CycleSurgery
+import TiltedGreen
+import PotentialAssembly
+import RationalGreen
 
 #print axioms Collatz.SixHour.MinimumCode.trace_affine
 #print axioms Collatz.SixHour.MinimumCode.suffix_fits_at_minimum
@@ -81,3 +85,42 @@ import ClosedSupport
 #print axioms Collatz.SixHour.ClosedSupport.finite_crossing_isolated_left
 #print axioms Collatz.SixHour.ClosedSupport.closed_range_countable_outside
 #print axioms Collatz.SixHour.ClosedSupport.closed_range_of_singular_current
+#print axioms Collatz.SixHour.CycleSurgery.eliminated_suffix
+#print axioms Collatz.SixHour.CycleSurgery.all_multiples
+#print axioms Collatz.SixHour.CycleSurgery.delete_initial_odd
+#print axioms Collatz.SixHour.TiltedGreen.cycle_weight_floor
+#print axioms Collatz.SixHour.TiltedGreen.certain_cycle_weight
+#print axioms Collatz.SixHour.TiltedGreen.haar_ratio_squared_control
+#print axioms Collatz.SixHour.TiltedGreen.affine_ghost_exit
+#print axioms Collatz.SixHour.TiltedGreen.one_steps
+#print axioms Collatz.SixHour.TiltedGreen.dense_family_formula
+#print axioms Collatz.SixHour.TiltedGreen.ghost_numerator_odd
+#print axioms Collatz.SixHour.TiltedGreen.negative_shadow_cost
+#print axioms Collatz.SixHour.PotentialAssembly.reaches_trans
+#print axioms Collatz.SixHour.PotentialAssembly.full_even
+#print axioms Collatz.SixHour.PotentialAssembly.halving_run
+#print axioms Collatz.SixHour.PotentialAssembly.reaches_oddPart
+#print axioms Collatz.SixHour.PotentialAssembly.oddPart_positive
+#print axioms Collatz.SixHour.PotentialAssembly.oddPart_odd
+#print axioms Collatz.SixHour.PotentialAssembly.syr_positive
+#print axioms Collatz.SixHour.PotentialAssembly.syr_odd
+#print axioms Collatz.SixHour.PotentialAssembly.reaches_syr
+#print axioms Collatz.SixHour.PotentialAssembly.reaches_syr_iterate
+#print axioms Collatz.SixHour.PotentialAssembly.small_odds_reach_one
+#print axioms Collatz.SixHour.PotentialAssembly.high_edge_margin
+#print axioms Collatz.SixHour.PotentialAssembly.bounded_growth_not_infinite
+#print axioms Collatz.SixHour.PotentialAssembly.potential_reaches_small
+#print axioms Collatz.SixHour.PotentialAssembly.ordinary_potential_implies_collatz
+#print axioms Collatz.SixHour.RationalGreen.exact_mean
+#print axioms Collatz.SixHour.RationalGreen.exact_integral_value
+#print axioms Collatz.SixHour.RationalGreen.coefficient_positive
+#print axioms Collatz.SixHour.RationalGreen.coefficient_scaled
+#print axioms Collatz.SixHour.RationalGreen.coefficient_dominates
+#print axioms Collatz.SixHour.RationalGreen.gap_positive
+#print axioms Collatz.SixHour.RationalGreen.actual_edge
+#print axioms Collatz.SixHour.RationalGreen.pathWeight_positive
+#print axioms Collatz.SixHour.RationalGreen.pathWeight_succ_last
+#print axioms Collatz.SixHour.RationalGreen.normalized_edge
+#print axioms Collatz.SixHour.RationalGreen.path_in_finiteGreen
+#print axioms Collatz.SixHour.RationalGreen.bounded_path_reaches_small
+#print axioms Collatz.SixHour.RationalGreen.finite_green_bound_implies_collatz

@@ -110,6 +110,46 @@ records all nine fresh project builds and 73 public axiom inventories. The
 new character checker uses exact finite fields and rational arithmetic at
 `q=9,27,81`; both normal and optimized executions retain every check.
 
+## Third checkpoint: explicit finite proposal and specified-source probe
+
+[The rational Green proposal](root/RATIONAL_GREEN.md) defines positive rational
+finite sums over actual ordinary trajectories. Its coefficient is
+`c_e=(134/25)*(5/14)^e`; the corresponding ternary Green series has Haar
+integral 135. A uniform bound `R_(K,H)(y)^2 <= C*y^3` would settle the entire
+positive-integer problem. The new Lean theorem proves that implication through
+the usual full Collatz map, with the finite-sum bound retained as its explicit
+premise. The bound is **open**. The note also records its extra consequence:
+finiteness at 1 would force a uniform logarithmic first-hitting bound on all
+terminating sources. The adaptive replacement under investigation removes that
+extra fixed time tilt.
+
+[The real tilted Green analysis](global/TILTED_GREEN.md) identifies the exact
+cycle and escape lower bounds, dense infinite values at positive nonintegral
+dyadic centers, and the ordinary source-height cost of a long negative shadow.
+Its integrable ternary average does not control the ordinary integer values.
+
+[The Poisson source probe](escape/POISSON_SOURCE_PROBE.md) retains one specified
+ordinary source in an exact signed binary Fourier formula under the original
+geometric law. It includes a finite-depth, arbitrarily high order readout of
+that source's actual multiplier, uniform in the smoothing width. All long
+clocks above the stated source-dependent cutoff can be removed absolutely.
+The signed cancellation on the surviving clocks remains open. Independent
+orbit and Fourier computations agree in all 20 retained numerical cases;
+this is not a rigorous floating-point error certificate or an asymptotic proof.
+
+[Cycle surgery](arithmetic/CYCLE_SURGERY.md) computes the complete reduced
+denominator after replacing any contiguous interval of an actual integer cycle.
+Together with the retained two-logarithm separation, a nontrivial replacement
+of sublinear total length has an exponentially large rational denominator.
+This controls perturbations of a hypothetical cycle, without excluding the
+cycle itself.
+
+[THIRD_REVIEW.md](../../reports/astra-six-hour-20261127/THIRD_REVIEW.md) gives
+the claim-level scope. [LEAN_THIRD.json](../../reports/astra-six-hour-20261127/LEAN_THIRD.json)
+records thirteen fresh module builds and 112 public axiom inventories. The
+two new full-problem conclusion theorems are conditional, and no Green bound
+or positive bounded potential is asserted as a proved premise.
+
 ## The cycle and global attacks
 
 | Result | What it controls | Remaining pointwise obligation |
@@ -128,7 +168,8 @@ a constant coloring.
 
 ## Lean and reproducible checks
 
-Nine new Lean modules check finite arithmetic, exact orbit kernels, and the explicit conditional topological reduction:
+Thirteen new Lean modules check finite arithmetic, exact orbit kernels, and
+the explicit conditional topological and full-problem reductions:
 
 * [MinimumCode.lean](arithmetic/MinimumCode.lean): physical minimum, carry cap,
   and full numerator decoding from a bounded binary prefix.
@@ -149,11 +190,21 @@ Nine new Lean modules check finite arithmetic, exact orbit kernels, and the expl
 * [ClosedSupport.lean](root/ClosedSupport.lean): finite crossing, a gap below each
   regular phase, and countability of the closed range outside the explicitly
   supplied analytic exceptional set.
+* [CycleSurgery.lean](arithmetic/CycleSurgery.lean): common-suffix elimination
+  and simultaneous divisibility after a word replacement.
+* [TiltedGreen.lean](global/TiltedGreen.lean): finite rational growth margins,
+  displaced-center identities, and ordinary negative-shadow cost.
+* [PotentialAssembly.lean](root/PotentialAssembly.lean): the genuine full map,
+  odd normalization, and convergence conditional on a positive bounded potential.
+* [RationalGreen.lean](root/RationalGreen.lean): exact finite ordinary sums and
+  the implication from the displayed uniform rational bound to convergence.
 
 [check_lean.py](check_lean.py) compiles into fresh project objects, using Lean
 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, and prints and
-audits the axioms of every public theorem. The build does not formalize the
-infinite analytic limits or the cited external theorems.
+audits the axioms of every public theorem. One missing cached Mathlib dependency
+is rebuilt from its pinned source into a temporary overlay; the existing
+dependency cache is left intact. The build does not formalize the infinite
+analytic limits or the cited external theorems.
 
 [check_linear_trace.py](escape/check_linear_trace.py) uses integer outward
 enclosures of the exact finite law. The retained depth-16 interval for `Z_16`

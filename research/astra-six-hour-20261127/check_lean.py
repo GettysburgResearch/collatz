@@ -25,11 +25,16 @@ MODULES = [
     ("TernaryQuotient", PACKET / "arithmetic/TernaryQuotient.lean", "Collatz.SixHour.TernaryQuotient"),
     ("CanonicalBirths", PACKET / "global/CanonicalBirths.lean", "CanonicalBirths"),
     ("ClosedSupport", PACKET / "root/ClosedSupport.lean", "Collatz.SixHour.ClosedSupport"),
+    ("CycleSurgery", PACKET / "arithmetic/CycleSurgery.lean", "Collatz.SixHour.CycleSurgery"),
+    ("TiltedGreen", PACKET / "global/TiltedGreen.lean", "Collatz.SixHour.TiltedGreen"),
+    ("PotentialAssembly", PACKET / "root/PotentialAssembly.lean", "Collatz.SixHour.PotentialAssembly"),
+    ("RationalGreen", PACKET / "root/RationalGreen.lean", "Collatz.SixHour.RationalGreen"),
 ]
 
 
-def run(argv: list[str], *, env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(argv, cwd=ROOT, env=env, text=True, capture_output=True)
+def run(argv: list[str], *, env: dict[str, str] | None = None,
+        cwd: Path = ROOT) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(argv, cwd=cwd, env=env, text=True, capture_output=True)
 
 
 def main() -> None:
@@ -59,7 +64,7 @@ def main() -> None:
         "compiler": version.stdout.strip(),
         "mathlib": MATHLIB,
         "dependency_manifest_sha256": hashlib.sha256((mathlib / "lake-manifest.json").read_bytes()).hexdigest(),
-        "scope": f"All {len(MODULES)} packet modules, with fresh project objects and cached pinned Mathlib dependencies. This checks finite word, modular, Farey, sibling, exact orbit transport, signed representative-window kernels, and the conditional finite-crossing/countability argument. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, and other infinite analytic arguments are written proofs and retained external inputs, not formalized by this build.",
+        "scope": f"All {len(MODULES)} packet modules, with fresh project objects and pinned Mathlib dependencies. The absent cached Mathlib.Tactic.Field object is built from the pinned source in a temporary overlay. This checks finite word, modular, Farey, sibling, orbit transport, representative-window kernels, conditional finite-crossing/countability, cycle surgery, Green arithmetic, and the conditional implication from an explicit rational finite-sum bound to ordinary Collatz convergence. No witness for that bound or for the positive bounded potential is supplied. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, Green integrals and ordinary upper bounds, and other infinite analytic arguments are written proofs and retained inputs, not formalized by this build.",
         "modules": [],
         "success": False,
     }
@@ -68,8 +73,32 @@ def main() -> None:
     imported_public: list[str] = []
     with tempfile.TemporaryDirectory(prefix="collatz-six-hour-lean-") as temporary:
         obj = Path(temporary)
+        # A partial Mathlib namespace masks the later cached root. Populate the
+        # overlay with symlinks, replacing only Field by a fresh pinned build.
+        overlay = obj / "Mathlib"
+        (overlay / "Tactic").mkdir(parents=True)
+        for child in (cache / "Mathlib").iterdir():
+            if child.name != "Tactic":
+                (overlay / child.name).symlink_to(child, target_is_directory=child.is_dir())
+        for child in (cache / "Mathlib/Tactic").iterdir():
+            if child.name != "Field" and not child.name.startswith("Field."):
+                (overlay / "Tactic" / child.name).symlink_to(child, target_is_directory=child.is_dir())
         env = os.environ.copy()
         env["LEAN_PATH"] = os.pathsep.join(map(str, [obj, cache, *package_caches]))
+        field_source = mathlib / "Mathlib/Tactic/Field.lean"
+        field_bytes = field_source.read_bytes()
+        field = run([lean, "-DwarningAsError=true", "-o",
+                     str(overlay / "Tactic/Field.olean"), str(field_source)], env=env, cwd=mathlib)
+        (logs / "Mathlib_Field.stdout.log").write_text(field.stdout)
+        (logs / "Mathlib_Field.stderr.log").write_text(field.stderr)
+        result["rebuilt_dependencies"] = [{"module": "Mathlib.Tactic.Field",
+            "source_sha256": hashlib.sha256(field_bytes).hexdigest(),
+            "exit_code": field.returncode, "source_pin": MATHLIB}]
+        if field.returncode or field_source.read_bytes() != field_bytes:
+            receipt_path.write_text(json.dumps(result, indent=2) + "\n")
+            print(field.stdout + field.stderr)
+            raise SystemExit("Pinned Mathlib.Tactic.Field rebuild failed")
+        print("Mathlib.Tactic.Field: fresh pinned dependency build", flush=True)
         for name, path, namespace in MODULES:
             source = ROOT / path
             source_bytes = source.read_bytes()

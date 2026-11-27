@@ -77,3 +77,48 @@
 'Collatz.SixHour.ClosedSupport.closed_range_of_singular_current' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'Collatz.SixHour.CycleSurgery.eliminated_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.CycleSurgery.all_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.CycleSurgery.delete_initial_odd' depends on axioms: [propext]
+'Collatz.SixHour.TiltedGreen.cycle_weight_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.certain_cycle_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.haar_ratio_squared_control' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.affine_ghost_exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.one_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.dense_family_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.TiltedGreen.ghost_numerator_odd' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.TiltedGreen.negative_shadow_cost' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.reaches_trans' does not depend on any axioms
+'Collatz.SixHour.PotentialAssembly.full_even' depends on axioms: [propext]
+'Collatz.SixHour.PotentialAssembly.halving_run' depends on axioms: [propext]
+'Collatz.SixHour.PotentialAssembly.reaches_oddPart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.oddPart_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.oddPart_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.syr_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.syr_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.reaches_syr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.reaches_syr_iterate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.small_odds_reach_one' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.high_edge_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.bounded_growth_not_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.PotentialAssembly.potential_reaches_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.PotentialAssembly.ordinary_potential_implies_collatz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.RationalGreen.exact_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.exact_integral_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.coefficient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.coefficient_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.coefficient_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.gap_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.actual_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.pathWeight_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.pathWeight_succ_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.normalized_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.path_in_finiteGreen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.bounded_path_reaches_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RationalGreen.finite_green_bound_implies_collatz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
