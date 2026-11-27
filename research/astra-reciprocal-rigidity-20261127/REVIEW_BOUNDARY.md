@@ -19,6 +19,16 @@ integer. The finite prefix bound and exact power comparison then give
 the larger odd bill. The root independently rebuilt the resulting
 `K≥84,b=12` consumer from a fresh local Lean output directory.
 
+The subsequent source pass identified a credit omission in this first
+checkpoint: PR146 at `f431078244e868dc699fad011044f0d5e7f76437`,
+`research/upper-bit-mergers/THREE_RAY_SMALLER.md` and `ADJACENT_DESCENT.md`,
+already contains written versions of the basic `K+j` barrier. The root
+read both arguments after this was found. D1 is a kernel formalization of
+that mathematics. The same head's `NEGATIVE_FIVE_CHECKPOINT.md` and
+`EXCESS_DENSITY.md` precede the small-origin prepayment architecture.
+This is a provenance correction; it does not invalidate the compiled
+statements or their retained execution receipts.
+
 **Postpeak cliff.** Any path having an even departure obeys the shifted
 one-even envelope `y+1≤(3/2)^k(m+2)/2`. An all-odd path is constrained by
 the exact ternary valuation of the target plus one. These cover every

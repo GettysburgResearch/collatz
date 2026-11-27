@@ -12,6 +12,19 @@ Use the shortcut map \(T(2v)=v,\ T(2v+1)=3v+2\). Write \(Q_e(m)\) for the number
 \]
 The upper source stays fixed as \(j\) ranges from 0 to \(v_2(n+1)\), including the even peak. The lower arm has unrestricted time, height and number of even steps. The divisibility is ordinary, with no compatibility limit over changing sources. [Native theorem and sharpness](RampShadow.lean)
 
+**Credit correction from the second source pass.** The written barriers for both
+source classes already occur in PR146 at
+`f431078244e868dc699fad011044f0d5e7f76437`: the section “A universal bound on the
+number of ordinary steps is impossible” of `THREE_RAY_SMALLER.md` gives `s=0`,
+and “A congruence that prevents descent” of `ADJACENT_DESCENT.md` gives the
+`s=1` argument. D1 is a unified kernel formalization of these antecedents;
+no new mathematical priority is claimed for the basic `K+j` barrier. The first
+checkpoint's source table omitted these two exact paths. The finite-budget
+architecture also has a prior signed-`−5` implementation in
+`NEGATIVE_FIVE_CHECKPOINT.md` and `EXCESS_DENSITY.md` at the same head. D2's
+fixed-point instance, its explicit all-precision certificate, and the subsequent
+scaled and postpeak extensions must be read with that architectural credit.
+
 **Proof.** The upper path takes the maximum possible step at each time through \(j\), so a smaller start cannot reach its endpoint in fewer than \(j\) steps. Write \(e=d+j\) and \(k=Q_e(m)\). Suppose \(k\le K+j\). The integer \(a=3^{j-k}(n-s)\) and the positive rational \(D=2^d3^{j-k}\) give
 \[
  m=m_0+D(n-s),\qquad m_0=m-2^d a\in\mathbb Z.
@@ -126,6 +139,7 @@ Main is frozen at `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. This packet uses e
 
 | Frozen source | Exact comparison |
 |---|---|
+| PR146, `f431078244e868dc699fad011044f0d5e7f76437`, `research/upper-bit-mergers/THREE_RAY_SMALLER.md` and `ADJACENT_DESCENT.md` | Prior written all-clock `K+j` barriers for the source classes 0 and 1. D1 formalizes and unifies them. At the same pin, `NEGATIVE_FIVE_CHECKPOINT.md` and `EXCESS_DENSITY.md` already extract small positive origins after paying initial odds, use finite ordinary controls, and construct CRT converses at the signed `−5` cycle. |
 | PR146, `f431078244e868dc699fad011044f0d5e7f76437`, `research/upper-bit-mergers/MERSENNE_EXPONENT_DESCENT.md` | Two reverse gaps of 2 followed by arbitrarily many gaps of 1 give a positive Mersenne family. An inverse first-crossing count excludes some depth-bounded visitors. D3 optimizes over **all** histories at increasing precision. |
 | PR197, `1f0f496fbea37792439feada6106eaaff596bcd1`, `research/ayh-resource-reset-20261124/unconventional/FIRST_ATTACHMENT_CLOCK.md` and `FRESH_ASCENT_BARRIER.md` | The first paper gives the same \((8n-5)/9\) witness and bounds clock surplus after a visitor's own ascent. The second bounds the odd surplus at a fresh attachment using the signed anchor \(-1\). D1 uses the positive ternary source anchors 0 and 1, and includes visitors attaching at the start. |
 | PR201, `d21bac748e705a64b6b57a7996a8ad6282f0bcbf`, `research/six-hour-20261127/coupling/PEAK_RIGIDITY.md` and `research/six-hour-20261127/escape/COMPARABLE_ANCESTORS.md` | The first classifies smaller Mersenne visitors in a postpeak clock cone. The second gives all-clock protection on a large density subset for each fixed allowed word. D1 and D2 protect every ordinary lift under their explicit budget and apply throughout the actual prepeak ascent. |

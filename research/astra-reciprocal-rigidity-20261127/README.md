@@ -11,14 +11,14 @@ is silently promoted to a proof of universal convergence.
 
 | Result | Exact scope | Evidence |
 |---|---|---|
-| A ternary precision forces an odd-step bill for every smaller visitor | If `3^K | n−s`, `s=0` or `1`, and the first `j` departures of `n` are odd, every positive `m<n` reaching that endpoint at any clock uses more than `K+j` odd steps. | Physical signed-integer path theorem, deterministic readout, Lean kernel proof. |
+| Kernel formalization of the prior ternary merger barrier | If `3^K | n−s`, `s=0` or `1`, and the first `j` departures of `n` are odd, every positive `m<n` reaching that endpoint at any clock uses more than `K+j` odd steps. | Unified Lean proof and deterministic readout of the written PR146 barriers; exact prior paths are credited below. |
 | A finite ordinary certificate increases that bill at all future clocks | For all `K≥84`, the same family needs more than `K+j+12` odd steps. The lower native clock is unbounded. | Lean evaluates 648 finite ordinary trajectories and proves their all-time consumer. |
 | A single halving can collapse the optimal merger cost | On the stated second-halving family, the optimal smaller visitor uses exactly `H−1` odd steps, after an immediately preceding endpoint can require arbitrarily more than `H+K`. | Exact ordinary witness and all-clock lower bound, Lean kernel proof; antecedent merger families credited. |
 | Every cyclic shift is constrained by the complete reduced denominator | A primitive rational cycle of length `n`, minimum `m`, denominator `d`, and shift mismatch count `s` satisfies `n < H_s(1+log₂(d(m+1))+(log₂3)s/2)`. No restriction on the order of the shift. | Elementary written proof; finite physical pair, mismatch-mask, and arithmetic kernels in Lean. |
 | Few-mismatch shifts have short rational approximations | If `n≥4s(1+log₂(d(m+1)))`, some `1≤q≤8s` has cyclic distance `|qh|_n≤2s²`. At most `32k³+32k²+4k` shifts have at most `k` mismatches under the corresponding hypothesis. | Written finite proof and exact bounded rational-cycle controls. |
 | An ordinary bad component forces a full natural boundary at every positive exponent | Canonically normalized squared-slope masses are either zero or have `n²a_n` uniformly bounded above and away from zero. Every nonempty bad support gives a natural boundary for `Σ a_n^(s/2) z^n`, for every real `s>0`. | Written proof using deterministic ordinary basin blocks, finite reciprocal packing, and a right-limit argument. |
 | The mixed equations admit an explicit analytic obstruction inside the known component | The actual predecessor tree of 5 supplies the same natural boundary with one monomial of forcing, while preserving the exact dyadic section relation. | Ordinary construction and exact coefficient identities; no hypothetical bad orbit required. |
-| Finite recurrence complexity has a sharp bookkeeping barrier | A nonzero rational prefix obeying `4a(2n)=a(n)` and a constant-coefficient recurrence of order `d` through index `N` must satisfy `N+2<4d`. | Lean kernel proof, including the primitive-annihilator and denominator arguments. |
+| Finite recurrence complexity has an explicit lower bound | A nonzero rational prefix obeying `4a(2n)=a(n)` and a constant-coefficient recurrence of order `d` through index `N` must satisfy `N+2<4d`. | Lean kernel proof, including the primitive-annihilator and denominator arguments. |
 
 Here `H_s=1+α+⋯+α^s` and `α=log₂3`. The cycle corollaries “42
 mismatches at every proper shift” and “134 when `n≥2^100`” additionally
@@ -62,6 +62,13 @@ work: fixed-clock modular routing, polynomial-height entropy, and the
 basic neighboring postpeak mergers. The present claims retain those
 credits. A new kernel proof or synthesis is not labeled as historical
 priority over its written antecedents.
+
+The second source pass found the exact antecedents of the basic `K+j`
+merger barrier in PR146's `THREE_RAY_SMALLER.md` and `ADJACENT_DESCENT.md`,
+and its prepaid-origin architecture in `NEGATIVE_FIVE_CHECKPOINT.md` and
+`EXCESS_DENSITY.md`, all at `f431078244e868dc699fad011044f0d5e7f76437`.
+The [descent note](descent/README.md) now records the correction explicitly.
+The basic barrier is a formalization, not a newly discovered theorem.
 
 ## Replay
 
