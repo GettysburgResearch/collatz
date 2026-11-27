@@ -1,0 +1,90 @@
+{
+  "schema": "collatz-astra-checkpoint-evidence/v1",
+  "science_local_commit": "65111688752b7b28bde9933f45d5b93349cb383d",
+  "science_published_commit": "2abaf8291de6e5272726dd05b9db79b8785d99b2",
+  "science_tree": "10f9c27349d3102779e133f21e62777a8e60e537",
+  "science_parent": "df70b0a6abe150a07914f7f620903e522bf64071",
+  "distinct_fresh_local_modules_through_checkpoint": [
+    "AllShift",
+    "AnchorBudget",
+    "AnchorCertificate",
+    "BandParents",
+    "BasinBlocks",
+    "CertifiedRamp",
+    "ChronologicalAnchor",
+    "ClockEnvelope",
+    "ClockResidues",
+    "CoastCollapse",
+    "CollisionCone",
+    "ConeBounds",
+    "CutoffRank",
+    "CyclicAllShift",
+    "DecideSelector",
+    "DimerMass",
+    "DyadicClock",
+    "EvenAutomaton",
+    "FactorRigidity",
+    "FiberInterval",
+    "FibreAttainment",
+    "FiniteTrace",
+    "FirstCrossing",
+    "FirstExit",
+    "GeometricScales",
+    "HardScale",
+    "HeckeRank",
+    "InversePrice",
+    "MarkovCertificate",
+    "MirrorEnergy",
+    "MotifBank",
+    "NativeFamily",
+    "PairFrequency",
+    "PhaseWords",
+    "PhysicalCrossing",
+    "PostSelector",
+    "PostWords",
+    "PrefixMeaning",
+    "PrepaidRamp",
+    "ProtectedBudget",
+    "ProtectedCone",
+    "RampShadow",
+    "ResidualFive",
+    "ResidualTable",
+    "ScaleSelector",
+    "ScaledPrepaid",
+    "ScaledRamp",
+    "SharpCone",
+    "ShiftBalance",
+    "SignedEscape",
+    "SignedOrigins",
+    "SwapArithmetic",
+    "TernarySteering",
+    "TowerPayoff"
+  ],
+  "evidence": [
+    {
+      "path": "FINITE_REPLAY.json",
+      "bytes": 5489,
+      "sha256": "1e605fd3508eb02a3fa8993ceefa4695e91d24bed413dc5857d6579d182f3ea6"
+    },
+    {
+      "path": "LEAN_REPLAY.json",
+      "bytes": 1673,
+      "sha256": "3aecbb2993bed9a0a21cdd4e7f070405a31e6d2f99feea5005646f8631222d3c"
+    },
+    {
+      "path": "LOCAL_REGRESSIONS.json",
+      "bytes": 13834,
+      "sha256": "3d9f285052458094c585f7903216526ed88fdfc43ac9ccc6906e7c1b996fb70b"
+    },
+    {
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "bytes": 13836,
+      "sha256": "540cc44cb2d9a28fd18c01e4124c9d33261b2ec4a5e05dfcda12ef03507eb893"
+    },
+    {
+      "path": "SCIENCE_MANIFEST.json",
+      "bytes": 6410,
+      "sha256": "dc137ad62d3cc6c203ca454c39835042e39cdcad183419377b4d796f866aa45e"
+    }
+  ]
+}

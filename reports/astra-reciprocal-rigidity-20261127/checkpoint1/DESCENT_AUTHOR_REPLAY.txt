@@ -1,0 +1,27 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+d08d76086122700895519950d8cd17517ed5e158bb3062a1b60d12f8e8ff30cb  CoastCollapse.lean
+cf222115fc5fc01a1507fb678450e35e659bb11f7df1abf81c1bcceb1ae95803  FibreAttainment.lean
+6314f347cf0d4d459ce974768a1a68557df7449639a0ac1f9afbbac2b4b0980b  InversePrice.lean
+5763bddb57698563d36cacf63e9e915695dbedb26b7c151f90472172affa2ad5  PrefixMeaning.lean
+22bdcef47c0271a4f130a2dc2efd229244e2d6b6d0b578c1ce98be2924acc0e5  PrepaidRamp.lean
+1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03  RampShadow.lean
+5a7f5ed36d7efbd5d967e1094dc1bcdef4a31e200622fdff6a56d558de6c2360  check.sh
+'RampShadow.ramp_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.native_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.post_barrier_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.sharp_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.one_fibre_price' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.decode_one_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.price_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.price_multiplier_escapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.fixed_repayment_insufficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.prepaid_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.arbitrary_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.contracting_rows_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.bounded_excess_iff_hits_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.all_prefix_bounds_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.penultimate_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.residual_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.one_even_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.unique_last_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.second_halving_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

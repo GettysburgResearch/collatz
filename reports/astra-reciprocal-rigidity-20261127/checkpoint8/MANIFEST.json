@@ -1,0 +1,98 @@
+{
+  "schema": "collatz-astra-checkpoint-evidence/v1",
+  "science_local_commit": "1b3950f82271306b77772611556a0eacfa73d4f3",
+  "science_published_commit": "210c909f6a384fd8ac0d680ab7f565bec2930f4b",
+  "science_tree": "4de9fa7234c4500a04f64251793613764bb8b782",
+  "science_parent": "80515945704627bd8c6cfeb4f0ca021ae651c765",
+  "distinct_fresh_local_modules_through_checkpoint": [
+    "AllShift",
+    "AnchorBudget",
+    "AnchorCertificate",
+    "BandParents",
+    "BasinBlocks",
+    "CertifiedRamp",
+    "ChronologicalAnchor",
+    "ClockEnvelope",
+    "ClockResidues",
+    "CoastCollapse",
+    "CollisionCone",
+    "ConeBounds",
+    "CutoffRank",
+    "CyclicAllShift",
+    "DecideSelector",
+    "DimerMass",
+    "DyadicClock",
+    "EvenAutomaton",
+    "FactorRigidity",
+    "FiberInterval",
+    "FibreAttainment",
+    "FiniteTrace",
+    "FirstCrossing",
+    "FirstExit",
+    "GeometricScales",
+    "HardScale",
+    "HeckeRank",
+    "InversePrice",
+    "MarkovCertificate",
+    "MirrorEnergy",
+    "MotifBank",
+    "NativeFamily",
+    "OrdinaryDefect",
+    "PairFrequency",
+    "PhaseWords",
+    "PhysicalCrossing",
+    "PostSelector",
+    "PostWords",
+    "PrefixMeaning",
+    "PrepaidRamp",
+    "ProtectedBudget",
+    "ProtectedCone",
+    "RampShadow",
+    "RationalCycleCharges",
+    "ResidualFive",
+    "ResidualTable",
+    "ScaleSelector",
+    "ScaledPrepaid",
+    "ScaledRamp",
+    "SharpCone",
+    "ShiftBalance",
+    "SignedEscape",
+    "SignedOrigins",
+    "StoppedOrigins",
+    "SwapArithmetic",
+    "TernarySteering",
+    "TowerPayoff"
+  ],
+  "evidence": [
+    {
+      "path": "CYCLE_LEAN_REPLAY.json",
+      "bytes": 2017,
+      "sha256": "2c0e2fa36e4f5c1743460c682a2c34acff170efafdf1346576d4130933b85324"
+    },
+    {
+      "path": "FINITE_REPLAY.json",
+      "bytes": 8677,
+      "sha256": "c843b8352c09dd8cebf9023643dfd4e65d8b6bc78afa58089fe226c190f64e78"
+    },
+    {
+      "path": "LEAN_REPLAY.json",
+      "bytes": 10070,
+      "sha256": "997630d27fa2ca073d0bae900e40216d173df660ffa5357e5ed1dcef2d3634ef"
+    },
+    {
+      "path": "LOCAL_REGRESSIONS.json",
+      "bytes": 13835,
+      "sha256": "ee3924fa21033cb867ff545890d75c30a6c8e14e2efc9f89a285fa293714b59e"
+    },
+    {
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "bytes": 13835,
+      "sha256": "0181e6773e29ac5be31558bbd01a514d486d82ff4247c29eb623eb9d4b446e0b"
+    },
+    {
+      "path": "SCIENCE_MANIFEST.json",
+      "bytes": 7299,
+      "sha256": "3ac5f3dfe235dbbb93c3d85d902650548b3e4315b4a07485a8606777914628b3"
+    }
+  ]
+}

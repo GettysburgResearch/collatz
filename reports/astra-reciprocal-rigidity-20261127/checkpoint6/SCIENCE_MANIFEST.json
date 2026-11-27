@@ -1,0 +1,190 @@
+{
+  "local_commit": "0743e89a2e31276dd64855829b4d78021348a450",
+  "parent_commit": "ac024a636c537e3bc0265c42c8168f2e9a0cfcb2",
+  "tree": "97db03c946af75b83e37cc809e4e5d919c177512",
+  "parent_tree": "4ee8f38d84224d1b3acc116e7245d6357d106931",
+  "files": [
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/README.md",
+      "mode": "100644",
+      "blob": "f596a9011df5909b293b813229d7594f1286b095",
+      "bytes": 10726,
+      "sha256": "dcd240c03c697aea3a4a0e855b461144aa94674210ba09e47751771dc3f82b3b"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/REVIEW_BOUNDARY.md",
+      "mode": "100644",
+      "blob": "bed85daba4f59862befecb66ef07b267920d8aee",
+      "bytes": 15579,
+      "sha256": "e08d493893d30f5af991b790415b14eceea7319b7b7585a8292ed96141c53429"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/SIXTH_CHECKPOINT.md",
+      "mode": "100644",
+      "blob": "6d7295ec23c402f1547793a3461ba2b886a3a270",
+      "bytes": 9481,
+      "sha256": "826243495d38c87bed98126bdbe20f98302062d1558211306a6382d73c645a32"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/FIFTH_CHECKPOINT.md",
+      "mode": "100644",
+      "blob": "5eb7ecc0481fd6818afba54004d4de5a0a6352ef",
+      "bytes": 10156,
+      "sha256": "0e73a278d073024ab783e5c662a2c2d7ccb4a335ebaea4542dcaba0c70e5ec34"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/AVOIDANCE_BUDGETS.md",
+      "mode": "100644",
+      "blob": "4055a2a44997c9cf9886d13fb9338e1f66a1aefb",
+      "bytes": 5079,
+      "sha256": "c19b501cf051d0cfb522ce1f221696c0047ff54000b2b4180538f03586095a75"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/README.md",
+      "mode": "100644",
+      "blob": "12ba1902768966dbbe58b9939ff7e82a057b5ad7",
+      "bytes": 3315,
+      "sha256": "a0385ce6ea62002fed2d8724213951aaacf0d53544e199b0a73f30941c322837"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/CANONICAL_ARCS.md",
+      "mode": "100644",
+      "blob": "992b664b4a4727982c7667dfaefb40648a0232a2",
+      "bytes": 7953,
+      "sha256": "f36b7c821cc1587e44841a8dc17f2d38ac3878647989bee708f1db33893a4425"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/EXPLICIT_GAIN.md",
+      "mode": "100644",
+      "blob": "02abdaca63829291b846361273378da6fbd351d9",
+      "bytes": 6851,
+      "sha256": "b7b5f3700aed2a088a2ca59958a663cc2eb5a36fb1958fd0a0a66213aae568cc"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/MARKOV_MOMENTS.md",
+      "mode": "100644",
+      "blob": "f6e3df9c636e26bdde76a33f33924700b9dac95e",
+      "bytes": 4996,
+      "sha256": "2767040611484ab5fcaad91c61afd5e71a34c8f94d3827bb59ac1193b21c058f"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/MarkovCertificate.lean",
+      "mode": "100644",
+      "blob": "57b1e9a3907ec250b7cce3e8527b6254c3521793",
+      "bytes": 1798,
+      "sha256": "c10ad7f7871f82016722b0a8fd48a15ade2525d543d25a9fd8934e9f59b1b7a1"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/README.md",
+      "mode": "100644",
+      "blob": "8c751e18fbf0ccb92f566a5648f44f5d67b9b7a6",
+      "bytes": 2492,
+      "sha256": "ff37d0b4f0208b692d33331be158722f91e32c2c7824c9d4a2dfa15db5666f46"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/STRICT_DIMER_SAVING.md",
+      "mode": "100644",
+      "blob": "0df2b503c458bf0273340d1aade1c75e2e640229",
+      "bytes": 5994,
+      "sha256": "3efaf4b99dec67054b250f3e9f1326c6a37638a1aad77bd1c76176296580a97b"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/STRICT_REVERSE_SAVING.md",
+      "mode": "100644",
+      "blob": "42f20bd45f6bcd5653e3a3a7a87e492081d6c47a",
+      "bytes": 6574,
+      "sha256": "bb1b4bad55dd95992d992d1f88310a2a6933438cc08f3dce5fb3ea1144697e19"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase6/check_markov.py",
+      "mode": "100644",
+      "blob": "5ca4d1f5e1009de14d66048ab571b45818dd4670",
+      "bytes": 3872,
+      "sha256": "9bc1fc6dbd9cc607f0712110b6c0b1b8f19b98622cdf9b814ab8ce9cf5d95ac8"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase7/ClockResidues.lean",
+      "mode": "100644",
+      "blob": "9c3c9ed0fd8df80ffdc52cfa41cb8aabacc0b8e4",
+      "bytes": 2670,
+      "sha256": "d0d75d1503c7ebdae6ab58c04e04a4bbae3e6112930216b756dbc05e8bf0b0c9"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase7/README.md",
+      "mode": "100644",
+      "blob": "de1618bdd41c70d84fe591a088750fd198212169",
+      "bytes": 1273,
+      "sha256": "7ce5dbb6e7cab319440c09b415bd7ccfe2276b66710d1c26b6ca75e8c7999f18"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase7/SHORT_WINDOW_CLOCKS.md",
+      "mode": "100644",
+      "blob": "f2af9667d590e50fa4e3ad83eb1ff633b0d901eb",
+      "bytes": 15277,
+      "sha256": "d09f1c8dd3d1fdf840b3edf88699d7cda60312c9d7a4fc4b0e7cc21c305a48d5"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase7/SHORT_WINDOW_CONTROLS.json",
+      "mode": "100644",
+      "blob": "d0f048561a86231c4bb6038cb7149dc755f283ae",
+      "bytes": 1044,
+      "sha256": "20c055d85c847c44dc7c00a032988170e6b8b137e15bc399daa9005dffe548ee"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase7/short_window_controls.py",
+      "mode": "100644",
+      "blob": "9c93ce7c7b6bb0be58b51614cc7a4e6880967956",
+      "bytes": 4917,
+      "sha256": "c227a8ada00a172e3756453ce20cdc2e3249aa3d6a5d038f34a8e9bdbd9c206a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/MotifBank.lean",
+      "mode": "100644",
+      "blob": "ca08cb41bd180f2785052edfbb1fd6775689d5e6",
+      "bytes": 30300,
+      "sha256": "0488dbda949c82a5f270ccc9c424934b6e0e2e6463330bbf52fe27d68136085b"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/NativeFamily.lean",
+      "mode": "100644",
+      "blob": "037cc971cda0b953965d0c50b19e45a080889599",
+      "bytes": 4229,
+      "sha256": "46982c6907d2c055ae96f958483cd080499663f662b43ea756c040b51bd74879"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/SIXFOLD.md",
+      "mode": "100644",
+      "blob": "1b1717f91870fd5f7efe92f92f498f8eebff0bb6",
+      "bytes": 15183,
+      "sha256": "bf7f6daa71886205587448977da24283bc34bb11f7b6f8e0e8f3aad5166b8cab"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/SIXFOLD_CHECK.txt",
+      "mode": "100644",
+      "blob": "5e36518bc87a273e49731a5d47c61ccd9f242eec",
+      "bytes": 202,
+      "sha256": "f03d212af8d08102eb4465036937ee6cb62ffbcc8559cb6ca62c5eb53dd1d1bb"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/cell_energy.cpp",
+      "mode": "100644",
+      "blob": "07667d992035e57420a0393f7af35d3bfe71b17d",
+      "bytes": 6635,
+      "sha256": "835beae20a90716cfbaa30aabbd3afb70dd1350088437ce7f66e64aa8335d72a"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/generate_motif_bank.py",
+      "mode": "100644",
+      "blob": "82772a7845620d239c2facaa956e5b39cc43d539",
+      "bytes": 3424,
+      "sha256": "8c41787a25e2b9eb5d5e476aa20acd2a69d0d5254d6925ded90dd6acdedaab11"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/sixfold/sixfold_energy.py",
+      "mode": "100644",
+      "blob": "b4bbcf2d0fe93a5264f246d7137d95df8a19321f",
+      "bytes": 8870,
+      "sha256": "91523b1ac704cafe31f2c410dddd1edbea2523da044bc055c7499f6776e111c6"
+    }
+  ]
+}

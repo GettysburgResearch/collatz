@@ -1,0 +1,80 @@
+{
+  "schema": "collatz-astra-written-review/v1",
+  "science_local_commit": "da8a08c72b34e84836dacb06bc52c2c74159eeaa",
+  "science_published_commit": "6d565bab687873bef2c00204f37de35b14147be7",
+  "science_tree": "cffd94c580caf671fb1fcabe075be0f9cfef5657",
+  "claims_status": "PROPOSED research; Collatz remains open",
+  "new_lean_modules": 0,
+  "new_finite_programs": 0,
+  "reviews": [
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase8/ENDPOINT_CENSUS.md",
+      "sha256": "8802c6d2879f374ac0c5c4ca8325752a128ddc41c4c9f0cb02f3ef55612f328e",
+      "independent_internal_readers": [
+        "root",
+        "rigidity"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase8/FAREY_CENSUS.md",
+      "sha256": "ffd0965f8482b33043f223cb204bb762d9a29835594565221b0f64c423e28d48",
+      "independent_internal_readers": [
+        "root",
+        "rigidity"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/stopped/CLOCK_LAW_SUPPLEMENT.md",
+      "sha256": "d9ebe9e869fe749e2012629778788f0a8526b1ffc8814864161e6c6f4fccb62c",
+      "independent_internal_readers": [
+        "root",
+        "cycles"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/stopped/GENERIC_COLORING.md",
+      "sha256": "790ee1832d1d80844ab694edea2df2244c719f36cf663dfeb6582a202bc5c209",
+      "independent_internal_readers": [
+        "root",
+        "rigidity"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/stopped/SOURCE_VARIANCE.md",
+      "sha256": "854e87538f9ec8fc53be3a211652479be96bb680e4beaa4c10ed85fe0416dce1",
+      "independent_internal_readers": [
+        "root",
+        "rigidity"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/descent/postpeak/stopped/ONE_SITE_MUTANT.md",
+      "sha256": "0fa63c1a874d6c46ec9e207fa322a2101a1e11e0f5f710a459b98ac0562ae107",
+      "independent_internal_readers": [
+        "root",
+        "rigidity"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase12/FINITE_SEED_REDUCTION.md",
+      "sha256": "b5fd4a8cd8a40c1b76628e816e2017c788df1d910436e2ac6ffd0296c221e76a",
+      "independent_internal_readers": [
+        "root"
+      ],
+      "status": "written argument read and reconstructed; exact scopes retained; not a full formalization"
+    }
+  ],
+  "scope_notes": [
+    "The denominator theorem retains exceptional periods.",
+    "The complete clock law is a population law; finite-sample moment claims are capped.",
+    "The variance-collapse premise is unproved and its external inputs were not rebuilt.",
+    "Generic coloring and the one-site mutant are boundary examples, not genuine Collatz counterexamples.",
+    "The finite-seed reduction concerns escape and permits bounded nontrivial cycles."
+  ]
+}

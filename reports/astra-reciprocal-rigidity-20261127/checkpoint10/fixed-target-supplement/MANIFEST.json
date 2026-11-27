@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-astra-final-corollary-evidence/v1",
+  "science_local_commit": "b6be38abc3e5190d5ddcab37e3c4b00b4c01cc0d",
+  "science_published_commit": "1833ff960dbec6198c4a8d31d5cb40f604ce7ce3",
+  "science_tree": "31f8191f2136e217d83eafdf596e45bce3999623",
+  "science_parent": "18d52097c2592a079f7cc4fd45cc865698008feb",
+  "cumulative_distinct_lean_modules": 57,
+  "cumulative_distinct_dual_mode_python_programs": 39,
+  "evidence": [
+    {
+      "path": "LOCAL_REGRESSIONS.json",
+      "bytes": 13833,
+      "sha256": "923d38801a8e2023db685b474c74bf362f11677109d719df0fc8bcb13bf33af2"
+    },
+    {
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "bytes": 13835,
+      "sha256": "312ad929ee1596f91b2183a9d14dd8f8103f090dfa14904420e442c6cc0fdee7"
+    },
+    {
+      "path": "SCIENCE_MANIFEST.json",
+      "bytes": 1128,
+      "sha256": "b19e8956c26693fa00d8c1d06181449972628dd776aab3b05c960211ce67e77f"
+    },
+    {
+      "path": "WRITTEN_REVIEW.json",
+      "bytes": 1015,
+      "sha256": "9863e316f1b33384dc456df42cfb2f66d438591f6a6bf1ac8c4b89c05c0a4c0a"
+    }
+  ]
+}

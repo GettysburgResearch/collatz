@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-astra-synthesis-correction-evidence/v1",
+  "science_local_commit": "f580d5898c21b065ee79d101adf6f25a28c2370c",
+  "science_published_commit": "021fc652becb89d1fe62ed3896ca320c7df83ae9",
+  "science_tree": "70802e8fb8203914026c7ab461ac6872a76588ec",
+  "science_parent": "ab1c7df6d4999bc187318c192a03981f3dd2c357",
+  "distinct_local_lean_modules": 57,
+  "distinct_dual_mode_python_programs": 39,
+  "evidence": [
+    {
+      "path": "LOCAL_REGRESSIONS.json",
+      "bytes": 13836,
+      "sha256": "f59b3425659ba1b714a475b10f1774fd555dba72741d0333d8a0f8671e821a00"
+    },
+    {
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "bytes": 13836,
+      "sha256": "a868092d4b0390f21b1a16c190ebcfcf40ac92b3a64763f79309d3d07705ba7e"
+    },
+    {
+      "path": "SCIENCE_MANIFEST.json",
+      "bytes": 1724,
+      "sha256": "188f815fa93f7b336adae50ee99977d5fa860efc9d8987f0a8427688c46b5c37"
+    },
+    {
+      "path": "WRITTEN_REVIEW.json",
+      "bytes": 1862,
+      "sha256": "a2d5422ffea9d44814f4fc678c8a3bd3a2ac92586cf11cba981085db6943a532"
+    }
+  ]
+}

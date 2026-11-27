@@ -1,0 +1,217 @@
+{
+  "finished_utc": "2026-11-27T14:45:33Z",
+  "passed": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rows": [
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase3/check_transport.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.54,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "primitive positive necklaces 3899 at lengths 2 through 15\npresentations [('opposite direction', 374), ('overlapping1', 78), ('overlapping2', 54), ('same direction', 412), ('single', 90)]\nfixed rows give d=4^k+3^k through k=20\ncritical template (8, 5) repeats 4 length 64 denominator bits 37\ncritical template (65, 41) repeats 9 length 1170 denominator bits 645\ncritical template (485, 306) repeats 32 length 31040 denominator bits 15997\n",
+          "output_sha256": "b4f18d7d124cbc35c65c8bda0b4bfec602da8c3caadffeff9e11e2cf6810cf1e"
+        },
+        {
+          "elapsed_seconds": 0.615,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "primitive positive necklaces 3899 at lengths 2 through 15\npresentations [('opposite direction', 374), ('overlapping1', 78), ('overlapping2', 54), ('same direction', 412), ('single', 90)]\nfixed rows give d=4^k+3^k through k=20\ncritical template (8, 5) repeats 4 length 64 denominator bits 37\ncritical template (65, 41) repeats 9 length 1170 denominator bits 645\ncritical template (485, 306) repeats 32 length 31040 denominator bits 15997\n",
+          "output_sha256": "b4f18d7d124cbc35c65c8bda0b4bfec602da8c3caadffeff9e11e2cf6810cf1e"
+        }
+      ],
+      "sha256": "81178af0d7bf5c2a5c429e1667475b7b423ee2dfc8730a9999218ab3f98b0220",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase3/check_dilations.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.184,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "positive necklaces of lengths 2 through 14 {'all': 2084, 'primitive': 2046, 'primitive with cancellation': 8}\nfirst primitive templates with cancellation [('00101101', 3, 4), ('000010011001', 3, 4), ('000100101001', 3, 4), ('000101101101', 5, 6), ('001001011101', 5, 6), ('001010101101', 5, 6), ('001010110101', 4, 6), ('001011010101', 5, 6)]\n10110100 exact limiting exponent 3/4\n",
+          "output_sha256": "8d4a8107c80bbe8c6473f5edea50c8fa4ca7f1b4bc2b98bc41e55edbc9b695da"
+        },
+        {
+          "elapsed_seconds": 0.216,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "positive necklaces of lengths 2 through 14 {'all': 2084, 'primitive': 2046, 'primitive with cancellation': 8}\nfirst primitive templates with cancellation [('00101101', 3, 4), ('000010011001', 3, 4), ('000100101001', 3, 4), ('000101101101', 5, 6), ('001001011101', 5, 6), ('001010101101', 5, 6), ('001010110101', 4, 6), ('001011010101', 5, 6)]\n10110100 exact limiting exponent 3/4\n",
+          "output_sha256": "8d4a8107c80bbe8c6473f5edea50c8fa4ca7f1b4bc2b98bc41e55edbc9b695da"
+        }
+      ],
+      "sha256": "654dd12ac21bc0c32a474fa03532654f571acc53965b2fb85413dd1a2a6bfca8",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "rigidity/phase3/clock_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.316,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "{\n  \"cases\": [\n    {\n      \"balanced_steps\": 16,\n      \"cutoff\": 8,\n      \"divided_steps\": 10,\n      \"dyadic_error_mass\": \"21/8\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"1/8\",\n      \"triadic_error_mass\": \"11/2\"\n    },\n    {\n      \"balanced_steps\": 25,\n      \"cutoff\": 8,\n      \"divided_steps\": 15,\n      \"dyadic_error_mass\": \"21/8\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"1/4\",\n      \"triadic_error_mass\": \"11/2\"\n    },\n    {\n      \"balanced_steps\": 75,\n      \"cutoff\": 31,\n      \"divided_steps\": 47,\n      \"dyadic_error_mass\": \"76/31\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"4/31\",\n      \"triadic_error_mass\": \"476/93\"\n    },\n    {\n      \"balanced_steps\": 71,\n      \"cutoff\": 31,\n      \"divided_steps\": 44,\n      \"dyadic_error_mass\": \"76/31\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"5/31\",\n      \"triadic_error_mass\": \"476/93\"\n    },\n    {\n      \"balanced_steps\": 93,\n      \"cutoff\": 128,\n      \"divided_steps\": 58,\n      \"dyadic_error_mass\": \"153/64\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"1/16\",\n      \"triadic_error_mass\": \"947/192\"\n    },\n    {\n      \"balanced_steps\": 89,\n      \"cutoff\": 128,\n      \"divided_steps\": 56,\n      \"dyadic_error_mass\": \"309/128\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"11/128\",\n      \"triadic_error_mass\": \"953/192\"\n    },\n    {\n      \"balanced_steps\": 117,\n      \"cutoff\": 511,\n      \"divided_steps\": 73,\n      \"dyadic_error_mass\": \"1173/511\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"20/511\",\n      \"triadic_error_mass\": \"2400/511\"\n    },\n    {\n      \"balanced_steps\": 113,\n      \"cutoff\": 511,\n      \"divided_steps\": 71,\n      \"dyadic_error_mass\": \"1178/511\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"25/511\",\n      \"triadic_error_mass\": \"2414/511\"\n    }\n  ]\n}\n",
+          "output_sha256": "7a9e06fd3df87b5012a9bb6d07ae66ecfc0e164b151ec11f4138a3ca2ef255ff"
+        },
+        {
+          "elapsed_seconds": 0.391,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "{\n  \"cases\": [\n    {\n      \"balanced_steps\": 16,\n      \"cutoff\": 8,\n      \"divided_steps\": 10,\n      \"dyadic_error_mass\": \"21/8\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"1/8\",\n      \"triadic_error_mass\": \"11/2\"\n    },\n    {\n      \"balanced_steps\": 25,\n      \"cutoff\": 8,\n      \"divided_steps\": 15,\n      \"dyadic_error_mass\": \"21/8\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"1/4\",\n      \"triadic_error_mass\": \"11/2\"\n    },\n    {\n      \"balanced_steps\": 75,\n      \"cutoff\": 31,\n      \"divided_steps\": 47,\n      \"dyadic_error_mass\": \"76/31\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"4/31\",\n      \"triadic_error_mass\": \"476/93\"\n    },\n    {\n      \"balanced_steps\": 71,\n      \"cutoff\": 31,\n      \"divided_steps\": 44,\n      \"dyadic_error_mass\": \"76/31\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"5/31\",\n      \"triadic_error_mass\": \"476/93\"\n    },\n    {\n      \"balanced_steps\": 93,\n      \"cutoff\": 128,\n      \"divided_steps\": 58,\n      \"dyadic_error_mass\": \"153/64\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"1/16\",\n      \"triadic_error_mass\": \"947/192\"\n    },\n    {\n      \"balanced_steps\": 89,\n      \"cutoff\": 128,\n      \"divided_steps\": 56,\n      \"dyadic_error_mass\": \"309/128\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"11/128\",\n      \"triadic_error_mass\": \"953/192\"\n    },\n    {\n      \"balanced_steps\": 117,\n      \"cutoff\": 511,\n      \"divided_steps\": 73,\n      \"dyadic_error_mass\": \"1173/511\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0\n      },\n      \"summed_row_maximum\": \"20/511\",\n      \"triadic_error_mass\": \"2400/511\"\n    },\n    {\n      \"balanced_steps\": 113,\n      \"cutoff\": 511,\n      \"divided_steps\": 71,\n      \"dyadic_error_mass\": \"1178/511\",\n      \"origin_clocks_by_root\": {\n        \"1\": 0,\n        \"5\": 17,\n        \"85\": -27\n      },\n      \"summed_row_maximum\": \"25/511\",\n      \"triadic_error_mass\": \"2414/511\"\n    }\n  ]\n}\n",
+          "output_sha256": "7a9e06fd3df87b5012a9bb6d07ae66ecfc0e164b151ec11f4138a3ca2ef255ff"
+        }
+      ],
+      "sha256": "83bd90daee59c3d29816961ece8164f1176c61cb6615d4daea88ffea2c9269f2",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "rigidity/phase4/anchor_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.324,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "{\n  \"all_words_up_to_length_eight\": {\n    \"exact_contacts\": 496,\n    \"partitions\": 11770,\n    \"piece_cuts\": 31214,\n    \"words\": 510\n  },\n  \"one_run_minima\": [\n    {\n      \"least\": 15,\n      \"length\": 8,\n      \"odd_length\": 4,\n      \"odd_start\": 0,\n      \"words\": 37\n    },\n    {\n      \"least\": 1887,\n      \"length\": 16,\n      \"odd_length\": 5,\n      \"odd_start\": 0,\n      \"words\": 137\n    },\n    {\n      \"least\": 53024286,\n      \"length\": 32,\n      \"odd_length\": 4,\n      \"odd_start\": 1,\n      \"words\": 529\n    },\n    {\n      \"least\": 27091966508384256,\n      \"length\": 64,\n      \"odd_length\": 32,\n      \"odd_start\": 14,\n      \"words\": 2081\n    },\n    {\n      \"least\": 406845894109281856753388828802154496,\n      \"length\": 128,\n      \"odd_length\": 70,\n      \"odd_start\": 23,\n      \"words\": 8257\n    },\n    {\n      \"least\": 17994598706604298414606227277928546856543015847508693416257758985533259775,\n      \"length\": 256,\n      \"odd_length\": 32,\n      \"odd_start\": 0,\n      \"words\": 32897\n    }\n  ]\n}\n",
+          "output_sha256": "210cc557cfed8de07411e64525dd8b759de8cc311840ad7c2d134d77fe2bb760"
+        },
+        {
+          "elapsed_seconds": 0.388,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "{\n  \"all_words_up_to_length_eight\": {\n    \"exact_contacts\": 496,\n    \"partitions\": 11770,\n    \"piece_cuts\": 31214,\n    \"words\": 510\n  },\n  \"one_run_minima\": [\n    {\n      \"least\": 15,\n      \"length\": 8,\n      \"odd_length\": 4,\n      \"odd_start\": 0,\n      \"words\": 37\n    },\n    {\n      \"least\": 1887,\n      \"length\": 16,\n      \"odd_length\": 5,\n      \"odd_start\": 0,\n      \"words\": 137\n    },\n    {\n      \"least\": 53024286,\n      \"length\": 32,\n      \"odd_length\": 4,\n      \"odd_start\": 1,\n      \"words\": 529\n    },\n    {\n      \"least\": 27091966508384256,\n      \"length\": 64,\n      \"odd_length\": 32,\n      \"odd_start\": 14,\n      \"words\": 2081\n    },\n    {\n      \"least\": 406845894109281856753388828802154496,\n      \"length\": 128,\n      \"odd_length\": 70,\n      \"odd_start\": 23,\n      \"words\": 8257\n    },\n    {\n      \"least\": 17994598706604298414606227277928546856543015847508693416257758985533259775,\n      \"length\": 256,\n      \"odd_length\": 32,\n      \"odd_start\": 0,\n      \"words\": 32897\n    }\n  ]\n}\n",
+          "output_sha256": "210cc557cfed8de07411e64525dd8b759de8cc311840ad7c2d134d77fe2bb760"
+        }
+      ],
+      "sha256": "941ce1757e2efd9147451b13984b7cc72cd203912c8c03beae76397fdf8a8f9c",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/native_automaton.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.016,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "2 1 0 None\n3 1 0 None\n3 2 0 None\n4 1 3 None\n4 2 3 None\n4 3 0 None\n5 1 13 None\n5 2 13 None\n5 3 0 None\n5 4 0 None\n6 1 33 ('EOEEEEEO', 'EEEOOOEE')\n6 2 33 ('EOEEEEEO', 'EOEOOOEE')\n6 3 2 None\n6 4 2 None\n6 5 0 None\n",
+          "output_sha256": "24da7850715e5065bb73910fd8b6ed582d9455a46059b9fcb8425ae433ff9759"
+        },
+        {
+          "elapsed_seconds": 0.036,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "2 1 0 None\n3 1 0 None\n3 2 0 None\n4 1 3 None\n4 2 3 None\n4 3 0 None\n5 1 13 None\n5 2 13 None\n5 3 0 None\n5 4 0 None\n6 1 33 ('EOEEEEEO', 'EEEOOOEE')\n6 2 33 ('EOEEEEEO', 'EOEOOOEE')\n6 3 2 None\n6 4 2 None\n6 5 0 None\n",
+          "output_sha256": "24da7850715e5065bb73910fd8b6ed582d9455a46059b9fcb8425ae433ff9759"
+        }
+      ],
+      "sha256": "d76ad806e0b3e91c35e82bbefa993eea2b35d5c61e3cfcce35c7d6bba60fa764",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/residual_automaton.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.091,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "3 1 1 None\n4 1 3 None\n4 2 2 None\n5 1 21 None\n5 2 17 None\n6 1 79 [(1, 3), (5, 0), (0, 0), (0, 2)]\n6 2 79 [(1, 1), (5, 1), (0, 0), (0, 0), (0, 2)]\n6 3 1 None\n7 1 238 [(1, 3), (5, 0), (1, 0), (0, 3)]\n7 2 246 [(1, 1), (5, 1), (1, 0), (0, 0), (0, 3)]\n7 3 3 None\n7 4 2 None\n8 1 602 [(1, 3), (5, 0), (2, 0), (0, 4)]\n8 2 687 [(1, 1), (5, 1), (2, 0), (0, 0), (0, 4)]\n8 3 14 None\n8 4 12 None\n9 1 1355 [(1, 3), (5, 0), (3, 0), (0, 5)]\n9 2 1726 [(1, 1), (5, 1), (3, 0), (0, 0), (0, 5)]\n9 3 199 None\n9 4 156 None\n9 5 1 None\n10 1 2804 [(1, 3), (5, 0), (4, 0), (0, 6)]\n10 2 4028 [(1, 1), (5, 1), (4, 0), (0, 0), (0, 6)]\n10 3 1670 [(1, 2), (0, 0), (0, 0), (9, 0), (0, 0), (0, 1), (0, 2), (0, 2)]\n10 4 1324 [(1, 1), (0, 0), (0, 0), (9, 0), (0, 0), (0, 0), (0, 1), (0, 2), (0, 2)]\n10 5 1 None\n",
+          "output_sha256": "dcc1bf468457741aabc38c71943ca2e4ff546f3a0d817882d956bf4d95f296ce"
+        },
+        {
+          "elapsed_seconds": 0.073,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "3 1 1 None\n4 1 3 None\n4 2 2 None\n5 1 21 None\n5 2 17 None\n6 1 79 [(1, 3), (5, 0), (0, 0), (0, 2)]\n6 2 79 [(1, 1), (5, 1), (0, 0), (0, 0), (0, 2)]\n6 3 1 None\n7 1 238 [(1, 3), (5, 0), (1, 0), (0, 3)]\n7 2 246 [(1, 1), (5, 1), (1, 0), (0, 0), (0, 3)]\n7 3 3 None\n7 4 2 None\n8 1 602 [(1, 3), (5, 0), (2, 0), (0, 4)]\n8 2 687 [(1, 1), (5, 1), (2, 0), (0, 0), (0, 4)]\n8 3 14 None\n8 4 12 None\n9 1 1355 [(1, 3), (5, 0), (3, 0), (0, 5)]\n9 2 1726 [(1, 1), (5, 1), (3, 0), (0, 0), (0, 5)]\n9 3 199 None\n9 4 156 None\n9 5 1 None\n10 1 2804 [(1, 3), (5, 0), (4, 0), (0, 6)]\n10 2 4028 [(1, 1), (5, 1), (4, 0), (0, 0), (0, 6)]\n10 3 1670 [(1, 2), (0, 0), (0, 0), (9, 0), (0, 0), (0, 1), (0, 2), (0, 2)]\n10 4 1324 [(1, 1), (0, 0), (0, 0), (9, 0), (0, 0), (0, 0), (0, 1), (0, 2), (0, 2)]\n10 5 1 None\n",
+          "output_sha256": "dcc1bf468457741aabc38c71943ca2e4ff546f3a0d817882d956bf4d95f296ce"
+        }
+      ],
+      "sha256": "a424f5c639bfa256cc6d65b7a4135c6b9e9dd6a5a98ec17a11358734c387fe71",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/tower_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 1.06,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "clock period (L+1 mod 8, exact absorption by clock for 1 link, 5 links)\n8 32 [(1, 1, 0), (3, 32, 0), (5, 0, 0), (7, 32, 0)]\n9 64 [(1, 3, 0), (3, 64, 0), (5, 1, 0), (7, 64, 0)]\n12 512 [(1, 42, 0), (3, 512, 0), (5, 24, 0), (7, 512, 0)]\n16 8192 [(1, 874, 0), (3, 8192, 9), (5, 659, 0), (7, 8192, 1)]\n19 65536 [(1, 7958, 0), (3, 65536, 127), (5, 6487, 0), (7, 65536, 69)]\n",
+          "output_sha256": "6844630d6a7c5dbfb0a0f5178a7c6cd0d5b85f2b261c5c66cca952d8e950fa20"
+        },
+        {
+          "elapsed_seconds": 0.934,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "clock period (L+1 mod 8, exact absorption by clock for 1 link, 5 links)\n8 32 [(1, 1, 0), (3, 32, 0), (5, 0, 0), (7, 32, 0)]\n9 64 [(1, 3, 0), (3, 64, 0), (5, 1, 0), (7, 64, 0)]\n12 512 [(1, 42, 0), (3, 512, 0), (5, 24, 0), (7, 512, 0)]\n16 8192 [(1, 874, 0), (3, 8192, 9), (5, 659, 0), (7, 8192, 1)]\n19 65536 [(1, 7958, 0), (3, 65536, 127), (5, 6487, 0), (7, 65536, 69)]\n",
+          "output_sha256": "6844630d6a7c5dbfb0a0f5178a7c6cd0d5b85f2b261c5c66cca952d8e950fa20"
+        }
+      ],
+      "sha256": "1805b4396e0ca75a73004403432e2562227002f614f094fb0e1913fcdc74fb20",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/scale_residues.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.515,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "K, denominator, reverse-tree nodes, hard residue counts within n mod 3 = 0,1,2\n1 3 3 1 1 0\n2 9 12 3 2 0\n3 27 12 9 6 0\n4 81 49 26 17 0\n5 243 49 78 51 0\n6 729 218 230 149 0\n7 2187 879 672 430 0\n8 6561 879 2016 1290 0\n9 19683 4018 5979 3806 0\n10 59049 4018 17937 11418 0\n11 177147 20107 53482 33963 0\n12 531441 90374 158768 100452 0\n13 1594323 90374 476304 301356 0\n14 4782969 450407 1421629 898010 0\n",
+          "output_sha256": "2dddd4a742d72721a4753e43ccdbcfacbc53c67399a45be1b8fbdf55d5ab9d72"
+        },
+        {
+          "elapsed_seconds": 0.587,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "K, denominator, reverse-tree nodes, hard residue counts within n mod 3 = 0,1,2\n1 3 3 1 1 0\n2 9 12 3 2 0\n3 27 12 9 6 0\n4 81 49 26 17 0\n5 243 49 78 51 0\n6 729 218 230 149 0\n7 2187 879 672 430 0\n8 6561 879 2016 1290 0\n9 19683 4018 5979 3806 0\n10 59049 4018 17937 11418 0\n11 177147 20107 53482 33963 0\n12 531441 90374 158768 100452 0\n13 1594323 90374 476304 301356 0\n14 4782969 450407 1421629 898010 0\n",
+          "output_sha256": "2dddd4a742d72721a4753e43ccdbcfacbc53c67399a45be1b8fbdf55d5ab9d72"
+        }
+      ],
+      "sha256": "42b544b22efcc95de467564ddcaedf13ad8eb748d87862b86a46f23d77f958c6",
+      "source_unchanged": true
+    },
+    {
+      "identical_outputs": true,
+      "passed": true,
+      "path": "descent/postpeak/scale_selector.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.314,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "pure 1 rows 1 compared 21 productive 4\npure 2 rows 3 compared 63 productive 18\npure 3 rows 3 compared 189 productive 54\npure 4 rows 9 compared 567 productive 171\npure 5 rows 9 compared 1701 productive 513\npure 6 rows 33 compared 5103 productive 1567\npostpeak 1 compared 3 productive 1 positive only at scaled predecessor 0\npostpeak 2 compared 9 productive 4 positive only at scaled predecessor 0\npostpeak 3 compared 27 productive 12 positive only at scaled predecessor 0\npostpeak 4 compared 81 productive 38 positive only at scaled predecessor 1\n",
+          "output_sha256": "6948379ca6fdf0fe70cafad539e12828afa4e8a771ed65920ce48f74e3c83066"
+        },
+        {
+          "elapsed_seconds": 0.263,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "pure 1 rows 1 compared 21 productive 4\npure 2 rows 3 compared 63 productive 18\npure 3 rows 3 compared 189 productive 54\npure 4 rows 9 compared 567 productive 171\npure 5 rows 9 compared 1701 productive 513\npure 6 rows 33 compared 5103 productive 1567\npostpeak 1 compared 3 productive 1 positive only at scaled predecessor 0\npostpeak 2 compared 9 productive 4 positive only at scaled predecessor 0\npostpeak 3 compared 27 productive 12 positive only at scaled predecessor 0\npostpeak 4 compared 81 productive 38 positive only at scaled predecessor 1\n",
+          "output_sha256": "6948379ca6fdf0fe70cafad539e12828afa4e8a771ed65920ce48f74e3c83066"
+        }
+      ],
+      "sha256": "b7958040f6c7908622554e5882def423d4b5a926d99941213eef45f714224e7e",
+      "source_unchanged": true
+    }
+  ],
+  "schema": "collatz-finite-replay/v1",
+  "scope": "Exact finite arithmetic, bounded enumerations and listed fixture checks; no claim of a universal Collatz verification.",
+  "started_utc": "2026-11-27T14:45:26Z"
+}

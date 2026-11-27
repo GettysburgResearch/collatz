@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-astra-synthesis-correction/v1",
+  "science_local_commit": "f580d5898c21b065ee79d101adf6f25a28c2370c",
+  "science_published_commit": "021fc652becb89d1fe62ed3896ca320c7df83ae9",
+  "science_tree": "70802e8fb8203914026c7ab461ac6872a76588ec",
+  "status": "PROPOSED research; no Collatz proof",
+  "corrections": [
+    "State same-sign hypothesis for rational parity separation.",
+    "Use least dictionary period and least physical parent period in splice and proper-prefix statements.",
+    "Retain correction-parameter dependence in the reciprocal charge bound.",
+    "Require the escaping odd seed to be prime to three for positive predecessor mass.",
+    "Use positive lower density and explicit o(X) basin-arrival scopes.",
+    "Put the ceiling before the square in the concrete variance clock, allowing direct integer bit-length computation. The proved any-superlog-clock result applies unchanged.",
+    "Choose J1 at least four and the initial f1 wave, giving c(7)=0 and c(11)=1, so the generic coloring explicitly fails the exact Collatz edge 7 to11."
+  ],
+  "reviews": [
+    {
+      "reader": "root",
+      "scope": "All corrections independently checked in the complete source contexts."
+    },
+    {
+      "reader": "cycles",
+      "scope": "Full final cycle synthesis read, including all same-sign, parameter, least-period and multiplicity qualifications."
+    },
+    {
+      "reader": "descent",
+      "scope": "Complete clock and variance synthesis read; ceiling-before-square and explicit generic affine failure independently confirmed."
+    },
+    {
+      "reader": "rigidity",
+      "scope": "Full final energy and variance synthesis read; odd ternary-unit condition, corrected clocks, basin-error wording and explicit generic affine failure reread after edits."
+    }
+  ],
+  "new_lean_modules": 0,
+  "new_finite_programs": 0
+}

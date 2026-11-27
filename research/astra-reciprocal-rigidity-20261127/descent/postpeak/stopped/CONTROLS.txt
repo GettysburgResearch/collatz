@@ -1,0 +1,14 @@
+N = 60 mod 81; deficit-one target 2N+1; reverse EOOOO gain 81/32
+ell 0: origins [1]; conditional charge 0.000000000000
+ell 1: origins []; conditional charge 0.000000000000
+ell 2: origins [3]; conditional charge 0.000171335941
+ell 3: origins []; conditional charge 0.000000000000
+ell 4: origins [11]; conditional charge 0.008492129143
+ell 5: origins [15]; conditional charge 0.002123032286
+ell 6: origins [29, 43]; conditional charge 0.000002596569
+ell 7: origins [39, 59]; conditional charge 0.000132689518
+finite charge 700112863303929083383818509967/64102430352281822574450571965680
+tail charge 81/625
+gap lower bound 6886830314415271160677244916120109/649037107316853453566312041152510000
+decimal lower bound 0.010610842180
+exact margin over 1/100 396459241246736625014124504595009/649037107316853453566312041152510000

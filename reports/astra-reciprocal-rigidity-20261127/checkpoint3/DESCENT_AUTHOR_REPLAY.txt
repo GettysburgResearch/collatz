@@ -1,0 +1,16 @@
+Lean 4.34.1, warnings treated as errors.
+PhaseWords, EvenAutomaton and ResidualTable passed the earlier serialized build.
+The declarations below are copied from successful strict build outputs.
+'RampShadow.Postpeak.phase_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.residual_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.six_even_witness' depends on axioms: [propext]
+'RampShadow.Postpeak.tower_payoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.FirstCrossing.normalized_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.FirstCrossing.crossing_free_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.FirstCrossing.stopped_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.scaled_descriptor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.physical_first_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.scaled_selector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.maximal_selector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.decide_scale_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.decide_scaled_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]

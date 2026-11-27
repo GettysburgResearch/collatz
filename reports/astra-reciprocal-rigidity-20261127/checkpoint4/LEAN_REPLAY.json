@@ -1,0 +1,509 @@
+{
+  "all_sources_unchanged": true,
+  "dependency_cache": "merged pinned Mathlib symlinks",
+  "finished_utc": "2026-11-27T15:28:48Z",
+  "fresh_local_output_directory": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "elapsed_seconds": 16.587,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "RampShadow",
+      "output": "'RampShadow.ramp_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.native_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.post_barrier_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.sharp_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.one_fibre_price' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.decode_one_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/RampShadow.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.417,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PostWords",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/PostWords.lean",
+      "printed_axioms": [],
+      "sha256": "a6cc98e63a862282aa87a76ca4ddbb25b0d67145aa23701c9b7aca713318d349",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.362,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "SignedEscape",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/SignedEscape.lean",
+      "printed_axioms": [],
+      "sha256": "5a62ea12542d48454de383543dccfdd163ee30709a336d064cb3ef2dcf054388",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.676,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "MirrorEnergy",
+      "output": "'RampShadow.Postpeak.MirrorEnergy.odd_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.energy_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.squared_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.sharp_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/phase4/MirrorEnergy.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "7e48872bd10ec5cec67874dd5e349c10f3d3a7864e94ecb91640ab9580841dc6",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.559,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FirstCrossing",
+      "output": "'RampShadow.FirstCrossing.normalized_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.FirstCrossing.crossing_free_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.FirstCrossing.stopped_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/FirstCrossing.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "6f14eacdcfa0f8c10c46e7cc2cd030e868925d10d2848de48f9281b0375b624d",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.464,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ScaledRamp",
+      "output": "'RampShadow.Postpeak.scaled_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/ScaledRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "70cf396e7bf75dbc14e97d12c51235125e1b98865f9d7933d2328a1c51e9116d",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.466,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "HardScale",
+      "output": "'RampShadow.Postpeak.scaled_descriptor' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/HardScale.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "aa4bbeb04270ec7fcb169ad7c19d3c766b8f4f7414a28118beae8409f74e42c4",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.087,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PhysicalCrossing",
+      "output": "'RampShadow.Postpeak.physical_first_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/PhysicalCrossing.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "b98f9a9eea7aa0c163072e0b78df9049330bb949f8383b03144a2022cc476738",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.47,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ConeBounds",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/ConeBounds.lean",
+      "printed_axioms": [],
+      "sha256": "bcd45917ee711629f2d9a49cc7faaa643806ddbb275025c57eabbb84a4f2e3e3",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 5.094,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CollisionCone",
+      "output": "'RampShadow.Postpeak.cone_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/CollisionCone.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "aeb25c437b9c5714b890d0a48abcc37778b9db36f64ab5bb7efe6a38fdd228a0",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 4.641,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ProtectedCone",
+      "output": "'RampShadow.Postpeak.paid_peak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.protected_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/ProtectedCone.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "f4f3a8dc8ad5e2b8662ab453aff645dc7a3bc980d3a4d09375605b48bf58ef1b",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.035,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ScaleSelector",
+      "output": "'RampShadow.Postpeak.scaled_selector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/ScaleSelector.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "442a8cf0e61f44d966e3429bbce34784aeb1d701f750129fadd689f33e5a87f9",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1.942,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PostSelector",
+      "output": "'RampShadow.Postpeak.maximal_selector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/PostSelector.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "f5c47256f71e30a4b775594762989a02bd5079b8ff982dd5751e90189b47058e",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.696,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "AnchorBudget",
+      "output": "'AnchorBudget.visit_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AnchorBudget.budget_of_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AnchorBudget.power_threshold_persists' depends on axioms: [propext, Quot.sound]\n'AnchorBudget.budgetCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/AnchorBudget.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "0c0edd960433878631684d82dfb38ebc7e20f1e64dad3adee978599d6995ef99",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 12.306,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "AnchorCertificate",
+      "output": "'AnchorCertificate.all_prefixes_648' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/AnchorCertificate.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "ec3dfefc5640a3e6c389a37d4559c6b48d1c329685523840e3a9992b42aeb9b1",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.13,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PrepaidRamp",
+      "output": "'RampShadow.prepaid_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/PrepaidRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "22bdcef47c0271a4f130a2dc2efd229244e2d6b6d0b578c1ce98be2924acc0e5",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1.364,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CertifiedRamp",
+      "output": "'CertifiedRamp.finite_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedRamp.twelve_extra_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/CertifiedRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "03ffdb2fc46de9cdbbaafb8f8ca2137d2565c0cfa4a1f2b980c10390882a5d93",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.824,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ScaledPrepaid",
+      "output": "'RampShadow.Postpeak.scaled_prepaid_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedRamp.twelve_extra_scaled_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/phase2/ScaledPrepaid.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "267652129a850b716791a5dbdf2d8212044a9be63997c1b18085db58317e06d9",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 7.025,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "SharpCone",
+      "output": "'RampShadow.Postpeak.Sharp.cone_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Sharp.paid_peak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Sharp.protected_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Sharp.maximal_selector_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Sharp.protected_prepaid_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedRamp.Sharp.twelve_extra_postpeak_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/phase4/SharpCone.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "cbf306b568dfbbf5d6f482c378e468f329918c5f571258cab2d07d5b4a2fcd6b",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1.791,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PairFrequency",
+      "output": "'CollatzResearch.PairFrequency.small_step' depends on axioms: [propext, Quot.sound]\n'CollatzResearch.PairFrequency.terminal_dvd' depends on axioms: [propext, Quot.sound]\n'CollatzResearch.PairFrequency.large_phase' depends on axioms: [propext, Quot.sound]\n",
+      "passed": true,
+      "path": "cycles/phase4/PairFrequency.lean",
+      "printed_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "018cc84e3231383afe1b6da9b4b8768e60c538593a784d69f7b650feb81be2be",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.165,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "BandParents",
+      "output": "'RampShadow.BandParents.odd_even_even' depends on axioms: [propext, Quot.sound]\n'RampShadow.BandParents.motif_twenty_nine' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/band/BandParents.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "7627101b1071b005aa23d8aaafb921d5c9f120dd9fdafc0782a7dc2f367ea922",
+      "source_unchanged_during_build": true
+    }
+  ],
+  "passed": true,
+  "requested_modules": [
+    "RampShadow",
+    "PostWords",
+    "SignedEscape",
+    "MirrorEnergy",
+    "FirstCrossing",
+    "ScaledRamp",
+    "HardScale",
+    "PhysicalCrossing",
+    "ConeBounds",
+    "CollisionCone",
+    "ProtectedCone",
+    "ScaleSelector",
+    "PostSelector",
+    "AnchorBudget",
+    "AnchorCertificate",
+    "PrepaidRamp",
+    "CertifiedRamp",
+    "ScaledPrepaid",
+    "SharpCone",
+    "PairFrequency",
+    "BandParents"
+  ],
+  "schema": "collatz-lean-packet-replay/v1",
+  "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources.",
+  "source_hashes": {
+    "AnchorBudget": "0c0edd960433878631684d82dfb38ebc7e20f1e64dad3adee978599d6995ef99",
+    "AnchorCertificate": "ec3dfefc5640a3e6c389a37d4559c6b48d1c329685523840e3a9992b42aeb9b1",
+    "BandParents": "7627101b1071b005aa23d8aaafb921d5c9f120dd9fdafc0782a7dc2f367ea922",
+    "CertifiedRamp": "03ffdb2fc46de9cdbbaafb8f8ca2137d2565c0cfa4a1f2b980c10390882a5d93",
+    "CollisionCone": "aeb25c437b9c5714b890d0a48abcc37778b9db36f64ab5bb7efe6a38fdd228a0",
+    "ConeBounds": "bcd45917ee711629f2d9a49cc7faaa643806ddbb275025c57eabbb84a4f2e3e3",
+    "FirstCrossing": "6f14eacdcfa0f8c10c46e7cc2cd030e868925d10d2848de48f9281b0375b624d",
+    "HardScale": "aa4bbeb04270ec7fcb169ad7c19d3c766b8f4f7414a28118beae8409f74e42c4",
+    "MirrorEnergy": "7e48872bd10ec5cec67874dd5e349c10f3d3a7864e94ecb91640ab9580841dc6",
+    "PairFrequency": "018cc84e3231383afe1b6da9b4b8768e60c538593a784d69f7b650feb81be2be",
+    "PhysicalCrossing": "b98f9a9eea7aa0c163072e0b78df9049330bb949f8383b03144a2022cc476738",
+    "PostSelector": "f5c47256f71e30a4b775594762989a02bd5079b8ff982dd5751e90189b47058e",
+    "PostWords": "a6cc98e63a862282aa87a76ca4ddbb25b0d67145aa23701c9b7aca713318d349",
+    "PrepaidRamp": "22bdcef47c0271a4f130a2dc2efd229244e2d6b6d0b578c1ce98be2924acc0e5",
+    "ProtectedCone": "f4f3a8dc8ad5e2b8662ab453aff645dc7a3bc980d3a4d09375605b48bf58ef1b",
+    "RampShadow": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+    "ScaleSelector": "442a8cf0e61f44d966e3429bbce34784aeb1d701f750129fadd689f33e5a87f9",
+    "ScaledPrepaid": "267652129a850b716791a5dbdf2d8212044a9be63997c1b18085db58317e06d9",
+    "ScaledRamp": "70cf396e7bf75dbc14e97d12c51235125e1b98865f9d7933d2328a1c51e9116d",
+    "SharpCone": "cbf306b568dfbbf5d6f482c378e468f329918c5f571258cab2d07d5b4a2fcd6b",
+    "SignedEscape": "5a62ea12542d48454de383543dccfdd163ee30709a336d064cb3ef2dcf054388"
+  },
+  "started_utc": "2026-11-27T15:27:07Z"
+}

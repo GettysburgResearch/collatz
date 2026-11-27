@@ -1,0 +1,116 @@
+{
+  "reflected_first_hit_counts_by_even_count": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    4,
+    6,
+    8,
+    13,
+    20,
+    30,
+    44,
+    66,
+    102,
+    156,
+    226,
+    331,
+    489,
+    740,
+    1116,
+    1676,
+    2504,
+    3757,
+    5613,
+    8435,
+    12623,
+    18952
+  ],
+  "p1_normalized_limit_rational_bounds": [
+    "7359716732026528428719416/6461081889226673298932241",
+    "17172672374728566378417880/15075857741528904364175229"
+  ],
+  "p1_normalized_limit_decimal_approximations": [
+    "1.1390842676515608607555633053337794",
+    "1.1390842676515608637231717448473163"
+  ],
+  "maxima_scaled_by_9_to_pk_depths_1_to_10": {
+    "1": [
+      10,
+      91,
+      829,
+      7471,
+      67258,
+      605341,
+      5448178,
+      49033792,
+      441304408,
+      3971740762
+    ],
+    "2": [
+      82,
+      6643,
+      538165,
+      43591447,
+      3530907370,
+      286003497133,
+      23166283274578,
+      1876468945254184,
+      151993984565608912,
+      12311512749814879882
+    ]
+  },
+  "known_terminating_all_odd_excursions": [
+    {
+      "k": 1,
+      "q_bit_length": 3,
+      "x_bit_length": 2,
+      "q_to_one_steps": 4,
+      "amplification": "9/4"
+    },
+    {
+      "k": 2,
+      "q_bit_length": 9,
+      "x_bit_length": 8,
+      "q_to_one_steps": 10,
+      "amplification": "81/16"
+    },
+    {
+      "k": 3,
+      "q_bit_length": 27,
+      "x_bit_length": 25,
+      "q_to_one_steps": 28,
+      "amplification": "729/64"
+    },
+    {
+      "k": 4,
+      "q_bit_length": 81,
+      "x_bit_length": 79,
+      "q_to_one_steps": 82,
+      "amplification": "6561/256"
+    },
+    {
+      "k": 5,
+      "q_bit_length": 243,
+      "x_bit_length": 240,
+      "q_to_one_steps": 244,
+      "amplification": "59049/1024"
+    },
+    {
+      "k": 6,
+      "q_bit_length": 729,
+      "x_bit_length": 725,
+      "q_to_one_steps": 730,
+      "amplification": "531441/4096"
+    },
+    {
+      "k": 7,
+      "q_bit_length": 2187,
+      "x_bit_length": 2183,
+      "q_to_one_steps": 2188,
+      "amplification": "4782969/16384"
+    }
+  ]
+}

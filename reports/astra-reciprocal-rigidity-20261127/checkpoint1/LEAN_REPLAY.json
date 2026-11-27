@@ -1,0 +1,345 @@
+{
+  "all_sources_unchanged": true,
+  "finished_utc": "2026-11-27T13:33:44Z",
+  "fresh_local_output_directory": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "elapsed_seconds": 24.895,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "RampShadow",
+      "output": "'RampShadow.ramp_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.native_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.post_barrier_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.sharp_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.one_fibre_price' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.decode_one_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/RampShadow.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 5.508,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "AnchorBudget",
+      "output": "'AnchorBudget.visit_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AnchorBudget.budget_of_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AnchorBudget.power_threshold_persists' depends on axioms: [propext, Quot.sound]\n'AnchorBudget.budgetCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/AnchorBudget.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "0c0edd960433878631684d82dfb38ebc7e20f1e64dad3adee978599d6995ef99",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 17.912,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "AnchorCertificate",
+      "output": "'AnchorCertificate.all_prefixes_648' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/AnchorCertificate.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "ec3dfefc5640a3e6c389a37d4559c6b48d1c329685523840e3a9992b42aeb9b1",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 15.96,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PrepaidRamp",
+      "output": "'RampShadow.prepaid_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/PrepaidRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "22bdcef47c0271a4f130a2dc2efd229244e2d6b6d0b578c1ce98be2924acc0e5",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 12.638,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CertifiedRamp",
+      "output": "'CertifiedRamp.finite_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedRamp.twelve_extra_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/CertifiedRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "03ffdb2fc46de9cdbbaafb8f8ca2137d2565c0cfa4a1f2b980c10390882a5d93",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 14.989,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "InversePrice",
+      "output": "'RampShadow.price_increment' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.price_multiplier_escapes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.fixed_repayment_insufficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/InversePrice.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "6314f347cf0d4d459ce974768a1a68557df7449639a0ac1f9afbbac2b4b0980b",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 18.676,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FibreAttainment",
+      "output": "'RampShadow.arbitrary_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.contracting_rows_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/FibreAttainment.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "cf222115fc5fc01a1507fb678450e35e659bb11f7df1abf81c1bcceb1ae95803",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 27.534,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PrefixMeaning",
+      "output": "'RampShadow.bounded_excess_iff_hits_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.all_prefix_bounds_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/PrefixMeaning.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "5763bddb57698563d36cacf63e9e915695dbedb26b7c151f90472172affa2ad5",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 26.862,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CoastCollapse",
+      "output": "'RampShadow.penultimate_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.residual_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.one_even_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.unique_last_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.second_halving_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/CoastCollapse.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "d08d76086122700895519950d8cd17517ed5e158bb3062a1b60d12f8e8ff30cb",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 98.748,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "AllShift",
+      "output": "'Collatz.AllShift.physical_pair_length' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllShift.cutoffs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllShift.synchronized_length' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllShift.shifted_edge' depends on axioms: [propext, Quot.sound]\n'Collatz.AllShift.paired_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllShift.shared_distance' depends on axioms: [propext, Quot.sound]\n'Collatz.AllShift.total_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllShift.log_budget_update' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "cycles/AllShift.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "14ef602b4795d4653dcb1d8ca2c957b9e63cc2e547a5c35ffd4e097f576fe38c",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 376.754,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FirstExit",
+      "output": "'Collatz.ReciprocalCycle.ordinary_first_exit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalCycle.first_exit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalCycle.exit_by_window_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalCycle.physical_log' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalCycle.error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "cycles/FirstExit.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "15a5388a5e82b269608ff2f0c3b5d40bf660888b768ba7aea2745cad56e5403c",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1058.19,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ShiftBalance",
+      "output": "'Collatz.ShiftBalance.recover_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ShiftBalance.no_two_shift_strict' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "cycles/ShiftBalance.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "ebc1b5596719c9aa5379f70a9852396ff905744c468f861fdad0fb9ddb48c923",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 30.096,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "HeckeRank",
+      "output": "",
+      "passed": true,
+      "path": "rigidity/HeckeRank.lean",
+      "printed_axioms": [],
+      "sha256": "6a44555c6187f8e938eb1ddeff159588ebaf41a2a4e456979bda7e044221b3db",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.438,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FiniteTrace",
+      "output": "",
+      "passed": true,
+      "path": "rigidity/FiniteTrace.lean",
+      "printed_axioms": [],
+      "sha256": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+      "source_unchanged_during_build": true
+    }
+  ],
+  "passed": true,
+  "requested_modules": [
+    "RampShadow",
+    "AnchorBudget",
+    "AnchorCertificate",
+    "PrepaidRamp",
+    "CertifiedRamp",
+    "InversePrice",
+    "FibreAttainment",
+    "PrefixMeaning",
+    "CoastCollapse",
+    "AllShift",
+    "FirstExit",
+    "ShiftBalance",
+    "HeckeRank",
+    "FiniteTrace"
+  ],
+  "schema": "collatz-lean-packet-replay/v1",
+  "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources.",
+  "source_hashes": {
+    "AllShift": "14ef602b4795d4653dcb1d8ca2c957b9e63cc2e547a5c35ffd4e097f576fe38c",
+    "AnchorBudget": "0c0edd960433878631684d82dfb38ebc7e20f1e64dad3adee978599d6995ef99",
+    "AnchorCertificate": "ec3dfefc5640a3e6c389a37d4559c6b48d1c329685523840e3a9992b42aeb9b1",
+    "CertifiedRamp": "03ffdb2fc46de9cdbbaafb8f8ca2137d2565c0cfa4a1f2b980c10390882a5d93",
+    "CoastCollapse": "d08d76086122700895519950d8cd17517ed5e158bb3062a1b60d12f8e8ff30cb",
+    "FibreAttainment": "cf222115fc5fc01a1507fb678450e35e659bb11f7df1abf81c1bcceb1ae95803",
+    "FiniteTrace": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+    "FirstExit": "15a5388a5e82b269608ff2f0c3b5d40bf660888b768ba7aea2745cad56e5403c",
+    "HeckeRank": "6a44555c6187f8e938eb1ddeff159588ebaf41a2a4e456979bda7e044221b3db",
+    "InversePrice": "6314f347cf0d4d459ce974768a1a68557df7449639a0ac1f9afbbac2b4b0980b",
+    "PrefixMeaning": "5763bddb57698563d36cacf63e9e915695dbedb26b7c151f90472172affa2ad5",
+    "PrepaidRamp": "22bdcef47c0271a4f130a2dc2efd229244e2d6b6d0b578c1ce98be2924acc0e5",
+    "RampShadow": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+    "ShiftBalance": "ebc1b5596719c9aa5379f70a9852396ff905744c468f861fdad0fb9ddb48c923"
+  },
+  "started_utc": "2026-11-27T13:04:53Z"
+}

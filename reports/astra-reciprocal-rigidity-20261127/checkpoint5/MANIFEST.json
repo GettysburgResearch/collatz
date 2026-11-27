@@ -1,0 +1,90 @@
+{
+  "schema": "collatz-astra-checkpoint-evidence/v1",
+  "science_local_commit": "6d606e8a7717167179d42920af731bb09d42417b",
+  "science_published_commit": "40820cc9701c880abd9fcd37c412985763b3f5b7",
+  "science_tree": "b22f3126bd7387a8f056bc1b0b4b967b0cdbbc76",
+  "science_parent": "594053764b988ad735778b48e336f858a8098cd7",
+  "distinct_fresh_local_modules_through_checkpoint": [
+    "AllShift",
+    "AnchorBudget",
+    "AnchorCertificate",
+    "BandParents",
+    "BasinBlocks",
+    "CertifiedRamp",
+    "ChronologicalAnchor",
+    "ClockEnvelope",
+    "CoastCollapse",
+    "CollisionCone",
+    "ConeBounds",
+    "CutoffRank",
+    "CyclicAllShift",
+    "DecideSelector",
+    "DimerMass",
+    "DyadicClock",
+    "EvenAutomaton",
+    "FactorRigidity",
+    "FiberInterval",
+    "FibreAttainment",
+    "FiniteTrace",
+    "FirstCrossing",
+    "FirstExit",
+    "HardScale",
+    "HeckeRank",
+    "InversePrice",
+    "MirrorEnergy",
+    "PairFrequency",
+    "PhaseWords",
+    "PhysicalCrossing",
+    "PostSelector",
+    "PostWords",
+    "PrefixMeaning",
+    "PrepaidRamp",
+    "ProtectedBudget",
+    "ProtectedCone",
+    "RampShadow",
+    "ResidualFive",
+    "ResidualTable",
+    "ScaleSelector",
+    "ScaledPrepaid",
+    "ScaledRamp",
+    "SharpCone",
+    "ShiftBalance",
+    "SignedEscape",
+    "SignedOrigins",
+    "SwapArithmetic",
+    "TernarySteering",
+    "TowerPayoff"
+  ],
+  "evidence": [
+    {
+      "path": "FINITE_REPLAY.json",
+      "bytes": 7805,
+      "sha256": "0b39c9fe9d2a9815b86fa9502c753a2612036038f34b8688f8d4f2ad7c374eb6"
+    },
+    {
+      "path": "LEAN_REPLAY.json",
+      "bytes": 3635,
+      "sha256": "8386a06589f84318619bd1a4e4dc393f7d1e4f6b8859d37fabef1f56aa91d686"
+    },
+    {
+      "path": "LOCAL_REGRESSIONS.json",
+      "bytes": 13834,
+      "sha256": "4e478318d6373404752536039e13d1cc619506bc6182e737ca1abc9a40973e90"
+    },
+    {
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "bytes": 13835,
+      "sha256": "fa85eec81e507a64f1037d63e824dcb6e9f279bd13338b94388bf919daa7de18"
+    },
+    {
+      "path": "SCIENCE_MANIFEST.json",
+      "bytes": 6057,
+      "sha256": "db62202953d4c383f5ebb9fb96b5ea37bc3873817417971f1481a1ffdbac91ac"
+    },
+    {
+      "path": "SIGNED_ORIGIN_REPLAY.json",
+      "bytes": 3984,
+      "sha256": "402574f835964874e468d3b75a1ac818ff25e1c548a7603c8cf33b9a59311b95"
+    }
+  ]
+}

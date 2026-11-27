@@ -1,0 +1,148 @@
+{
+  "local_commit": "6d606e8a7717167179d42920af731bb09d42417b",
+  "parent_commit": "594053764b988ad735778b48e336f858a8098cd7",
+  "tree": "b22f3126bd7387a8f056bc1b0b4b967b0cdbbc76",
+  "parent_tree": "0e250997982fca0155bc42889801cf3941d605c7",
+  "files": [
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/README.md",
+      "mode": "100644",
+      "blob": "14090ad59b4e3b9f09e63746413b87469b101d22",
+      "bytes": 10207,
+      "sha256": "7247d2b875ac6b95e6b1f2b49fe109b3185e559bfb3814fa63cdd33f3a20c843"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/REVIEW_BOUNDARY.md",
+      "mode": "100644",
+      "blob": "4b38ce68411b1a1ae151d259646872821ca86fef",
+      "bytes": 13839,
+      "sha256": "9805bdb74f6091738a20a0ddbca9dd4d7b578f6bad442609ec37f6683962f6ab"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/FIFTH_CHECKPOINT.md",
+      "mode": "100644",
+      "blob": "29f4b73efd4fa80ee5ba1b57c37c1456bd2a2bff",
+      "bytes": 9434,
+      "sha256": "1d26b993b68188e8394f5f2a1b403b4d7819668247b87948d0d0a3a3d5c0e943"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/AVOIDANCE_BUDGETS.md",
+      "mode": "100644",
+      "blob": "379bc06d6c86372656454fee87efe9f18bcddf1a",
+      "bytes": 4373,
+      "sha256": "744cca61f8578f315b995b63075d55299cea52e41896942fb762f02ab04ea99f"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/AVOIDER_COUNTS.md",
+      "mode": "100644",
+      "blob": "0c7a232bc8ac094ac5326ff69d77bed560a7949d",
+      "bytes": 9331,
+      "sha256": "6d66b0386c14f8452032ef08451c8b63f00b2a545ee50116f75b102160a81854"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/DIMER_MASS.md",
+      "mode": "100644",
+      "blob": "74a711d692f6c227a00518c2a1e593214c4c41a7",
+      "bytes": 6509,
+      "sha256": "b2253e3a7d729aea6ad53107aba3633a66d52df6159cad675bc3169262dbf43e"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/DIVISOR_TAIL.md",
+      "mode": "100644",
+      "blob": "fc23e2fdf1b3576ce7ac615aac68b51f4df505bd",
+      "bytes": 6120,
+      "sha256": "1b6e72ab051c2ff6c640758e9e2b95b32b5f91c79f68f036c453b54c42d2cbc0"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/DimerMass.lean",
+      "mode": "100644",
+      "blob": "fb3fc0999c590fd963b58e5d9731bba22253248a",
+      "bytes": 3413,
+      "sha256": "e1f2d269e0b88e26727d1a3351884453acb3b6d5183c3eaf8c1019fe1404ea8d"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/INTERVAL_COUNTS.md",
+      "mode": "100644",
+      "blob": "c4ff21f1801fa6fb3126f7ea35d8e66ce91e5f0f",
+      "bytes": 4849,
+      "sha256": "55f721b2e1c268f9c37194254c44756e80b9e6abbcde440d152207e7a274464e"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/README.md",
+      "mode": "100644",
+      "blob": "802a93ec8ffe83391d8245b111792f7a79f3bb8f",
+      "bytes": 2859,
+      "sha256": "23c75b5fe3a2097e0d8a56c41c621c78a87dc3a05fc8f98b220875e66fef4c23"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/check_dimer.py",
+      "mode": "100644",
+      "blob": "204198013b622c82beb16bcb80f39381dff6e0cc",
+      "bytes": 7432,
+      "sha256": "cd1a7bb5c50b290cb632f4b0bdfef0339cce0f4d7c2fe9a3ee9047e9f93de51c"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/cycles/phase5/check_entropy_tail.py",
+      "mode": "100644",
+      "blob": "885bf704adcd6e4014e58f636f287affbe84c0e9",
+      "bytes": 2584,
+      "sha256": "0f21f5169544556bbbc636f725afbba4dbba5e013143c58d06ebb40d83085a21"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase6/DyadicClock.lean",
+      "mode": "100644",
+      "blob": "3663157f33b9a2640b95d945219bc0ac5d99e43d",
+      "bytes": 4326,
+      "sha256": "819862938f91d7e6a793c3f678ca45ec3abe769eea4c3061123ce6ca7aeb63a3"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase6/FLAT_EDGE_PRESSURE.md",
+      "mode": "100644",
+      "blob": "61a2133bdf856f1f5aa635383bbb1c8b7407d9e1",
+      "bytes": 10592,
+      "sha256": "b7c0249a94dfdb9ceafa9c438b391c17fcccb7fc35de10670c0243e9f4ace6c7"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase6/PRESSURE_CONTROLS.json",
+      "mode": "100644",
+      "blob": "9bc980558ad5507fde8baa1c12f98e076a1cef6a",
+      "bytes": 1341,
+      "sha256": "947d0d122bed46eb17204baee66dad9c082eaa7eb78ca6fdd1a26bc81a7915c2"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase6/README.md",
+      "mode": "100644",
+      "blob": "db3fa63e626a80a989c145290faf58fb0508bcf2",
+      "bytes": 1814,
+      "sha256": "c023481f30a1be418ab020a7165962503e59d9acd3875d190d353c5467507fc4"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/rigidity/phase6/pressure_controls.py",
+      "mode": "100644",
+      "blob": "bafebc9a1379ceeb0431acc9f8604e803a9bfcd2",
+      "bytes": 5558,
+      "sha256": "12eb7e7670bf06a1c8ed910c73483f5d2ccef3ef761af02afc8f966eb0bab986"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase5/COMMON_PROTECTION.md",
+      "mode": "100644",
+      "blob": "b82e8bdb8814f3fba07c8161c08bdb98210644ec",
+      "bytes": 7160,
+      "sha256": "e2d085053f209939f41e85a0b220de24164c3b749eb24bc7847980ecde393209"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase5/SignedOrigins.lean",
+      "mode": "100644",
+      "blob": "6ba4b33742dbbcf01ba0b8e800cd1173877e60bb",
+      "bytes": 3478,
+      "sha256": "8a11658964a39ea11901330130f7902cb57a662edc7a9c30c05389878f3066dd"
+    },
+    {
+      "path": "research/astra-reciprocal-rigidity-20261127/root/phase5/check_protection.py",
+      "mode": "100644",
+      "blob": "4a9abcd4837202f63328fdcf3eca4cd9350d9f43",
+      "bytes": 3279,
+      "sha256": "00064c260cc14b4e8848433dd27d64d31170792cb595c7378120f305d916bc28"
+    }
+  ]
+}

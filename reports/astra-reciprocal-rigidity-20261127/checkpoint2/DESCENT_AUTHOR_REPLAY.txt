@@ -1,0 +1,12 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+a6cc98e63a862282aa87a76ca4ddbb25b0d67145aa23701c9b7aca713318d349  PostWords.lean
+bcd45917ee711629f2d9a49cc7faaa643806ddbb275025c57eabbb84a4f2e3e3  ConeBounds.lean
+5a62ea12542d48454de383543dccfdd163ee30709a336d064cb3ef2dcf054388  SignedEscape.lean
+aeb25c437b9c5714b890d0a48abcc37778b9db36f64ab5bb7efe6a38fdd228a0  CollisionCone.lean
+70cf396e7bf75dbc14e97d12c51235125e1b98865f9d7933d2328a1c51e9116d  ScaledRamp.lean
+f4f3a8dc8ad5e2b8662ab453aff645dc7a3bc980d3a4d09375605b48bf58ef1b  ProtectedCone.lean
+6a67027b54a4cc0d5f349eea93ebb1ee4413c43f166343dc0eae5fbe2b026866  check_core.sh
+'RampShadow.Postpeak.cone_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.scaled_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.paid_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RampShadow.Postpeak.protected_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]

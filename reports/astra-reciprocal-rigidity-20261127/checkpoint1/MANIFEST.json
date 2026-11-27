@@ -1,0 +1,55 @@
+{
+  "schema": "collatz-checkpoint-evidence/v1",
+  "created_utc": "2026-11-27T13:35:14.721637+00:00",
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 211,
+  "published_science_commit": "5c67ddfcc9a376cb6f6dde0a0d05c74d7b9ae3ee",
+  "locally_created_science_commit": "3dab945fc1f43aba0d032f46358f42271c1104c1",
+  "science_tree": "a6f837910687c00b0bf8aa0e439998c43484046a",
+  "same_tree_verified": true,
+  "clean_published_checkout": true,
+  "root_fresh_lean_modules": 15,
+  "finite_programs": 7,
+  "finite_modes": [
+    "ordinary",
+    "optimized"
+  ],
+  "files": [
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/DESCENT_AUTHOR_REPLAY.txt",
+      "sha256": "95df2da4864ea61124ba5ad49a0a0a8955a493c417be0e75c76d1f607265b83c",
+      "bytes": 2416
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/FINITE_REPLAY.json",
+      "sha256": "27bc610ea36b53e287d85011b84d665252d0debb407c4fd71edb751bc08c56c1",
+      "bytes": 50542
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/LEAN_REPLAY.json",
+      "sha256": "08cd7c7404b0eabf793ea66377a9014c4698904eb9869b9c3c7987cbe2a3f52c",
+      "bytes": 13942
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/LOCAL_INTEGRITY.json",
+      "sha256": "7b45f58a05cfe4ee653d30742d813dbc710bf04058f2515b193a69c70d41fb41",
+      "bytes": 3260
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/LOCAL_REGRESSIONS.json",
+      "sha256": "ac58557709643fee867a83f06e06d734810d7df0c9174cfd2bf3f6f460f5f222",
+      "bytes": 13836
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/PUBLISHED_REGRESSIONS.json",
+      "sha256": "4408a394e3187fc7133cb45b4ebf813e99551e2839f1260c200403d1873270ea",
+      "bytes": 13835
+    },
+    {
+      "path": "reports/astra-reciprocal-rigidity-20261127/checkpoint1/RIGIDITY_REPLAY.json",
+      "sha256": "d2d93c43ecf3d22278b1ef22a626d761684d741664fce7669ce9ab07f5436d6e",
+      "bytes": 3124
+    }
+  ],
+  "scope": "Execution and source-identity evidence. These records do not turn written analytic arguments or imported source-qualified theorems into kernel proofs, and do not prove Collatz."
+}

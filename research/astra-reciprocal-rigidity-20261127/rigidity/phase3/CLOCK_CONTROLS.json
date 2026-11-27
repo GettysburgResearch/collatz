@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "balanced_steps": 16,
+      "cutoff": 8,
+      "divided_steps": 10,
+      "dyadic_error_mass": "21/8",
+      "origin_clocks_by_root": {
+        "1": 0
+      },
+      "summed_row_maximum": "1/8",
+      "triadic_error_mass": "11/2"
+    },
+    {
+      "balanced_steps": 25,
+      "cutoff": 8,
+      "divided_steps": 15,
+      "dyadic_error_mass": "21/8",
+      "origin_clocks_by_root": {
+        "1": 0,
+        "5": 17,
+        "85": -27
+      },
+      "summed_row_maximum": "1/4",
+      "triadic_error_mass": "11/2"
+    },
+    {
+      "balanced_steps": 75,
+      "cutoff": 31,
+      "divided_steps": 47,
+      "dyadic_error_mass": "76/31",
+      "origin_clocks_by_root": {
+        "1": 0
+      },
+      "summed_row_maximum": "4/31",
+      "triadic_error_mass": "476/93"
+    },
+    {
+      "balanced_steps": 71,
+      "cutoff": 31,
+      "divided_steps": 44,
+      "dyadic_error_mass": "76/31",
+      "origin_clocks_by_root": {
+        "1": 0,
+        "5": 17,
+        "85": -27
+      },
+      "summed_row_maximum": "5/31",
+      "triadic_error_mass": "476/93"
+    },
+    {
+      "balanced_steps": 93,
+      "cutoff": 128,
+      "divided_steps": 58,
+      "dyadic_error_mass": "153/64",
+      "origin_clocks_by_root": {
+        "1": 0
+      },
+      "summed_row_maximum": "1/16",
+      "triadic_error_mass": "947/192"
+    },
+    {
+      "balanced_steps": 89,
+      "cutoff": 128,
+      "divided_steps": 56,
+      "dyadic_error_mass": "309/128",
+      "origin_clocks_by_root": {
+        "1": 0,
+        "5": 17,
+        "85": -27
+      },
+      "summed_row_maximum": "11/128",
+      "triadic_error_mass": "953/192"
+    },
+    {
+      "balanced_steps": 117,
+      "cutoff": 511,
+      "divided_steps": 73,
+      "dyadic_error_mass": "1173/511",
+      "origin_clocks_by_root": {
+        "1": 0
+      },
+      "summed_row_maximum": "20/511",
+      "triadic_error_mass": "2400/511"
+    },
+    {
+      "balanced_steps": 113,
+      "cutoff": 511,
+      "divided_steps": 71,
+      "dyadic_error_mass": "1178/511",
+      "origin_clocks_by_root": {
+        "1": 0,
+        "5": 17,
+        "85": -27
+      },
+      "summed_row_maximum": "25/511",
+      "triadic_error_mass": "2414/511"
+    }
+  ]
+}
