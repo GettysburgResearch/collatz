@@ -1,0 +1,29 @@
+{
+  "scope": "all physical prefix lengths through each reported depth",
+  "runs": [
+    {
+      "q": "25/41",
+      "depth": 15,
+      "ordinary_sources": 32768,
+      "surviving_numerator": 984426039926909786250000,
+      "return_numerator": 11084597827993600000000,
+      "denominator": 1555098314991537910888601
+    },
+    {
+      "q": "9/25",
+      "depth": 12,
+      "ordinary_sources": 4096,
+      "surviving_numerator": 33289271522738064,
+      "return_numerator": 1347652071456768,
+      "denominator": 59604644775390625
+    },
+    {
+      "q": "16/25",
+      "depth": 12,
+      "ordinary_sources": 4096,
+      "surviving_numerator": 35944553929973760,
+      "return_numerator": 469070472019968,
+      "denominator": 59604644775390625
+    }
+  ]
+}

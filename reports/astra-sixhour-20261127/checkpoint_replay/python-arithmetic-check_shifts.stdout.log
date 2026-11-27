@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "distinct_script_pairs": 1119,
+    "primitive_necklaces": 1131,
+    "rotations": 12282
+  },
+  "high_distance": {
+    "all_shift_minimum": 194,
+    "denominator": 102065376400825306534437391838939444403106454408085639783964140880896699835673006969445010534504805079858638689074275443284439551032910142670903,
+    "grade": 306,
+    "length": 485,
+    "physical_minimum": "580290687335937621748138666110622286157000245213130319460756252252743625880148367093137089804970808935047526714840555553605282937652063996493923401/102065376400825306534437391838939444403106454408085639783964140880896699835673006969445010534504805079858638689074275443284439551032910142670903"
+  },
+  "order_two": [
+    {
+      "denominator_bits": 82,
+      "length": 82,
+      "mismatches": 2,
+      "shift_order": 2
+    },
+    {
+      "denominator_bits": 166,
+      "length": 166,
+      "mismatches": 2,
+      "shift_order": 2
+    },
+    {
+      "denominator_bits": 334,
+      "length": 334,
+      "mismatches": 2,
+      "shift_order": 2
+    }
+  ],
+  "thresholds": [
+    {
+      "mismatch_cap": 40,
+      "period_floor": 206158430208,
+      "shell": 37,
+      "upper_ceiling": 171180259775
+    },
+    {
+      "mismatch_cap": 40,
+      "period_floor": 274877906944,
+      "shell": 38,
+      "upper_ceiling": 175375854377
+    },
+    {
+      "mismatch_cap": 132,
+      "period_floor": 1267650600228229401496703205376,
+      "shell": 100,
+      "upper_ceiling": 1236386936155913536042277872012
+    }
+  ]
+}

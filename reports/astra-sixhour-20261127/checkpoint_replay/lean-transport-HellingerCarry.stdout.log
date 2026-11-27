@@ -1,0 +1,3 @@
+'Collatz.HellingerCarry.normalized_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HellingerCarry.incrementError_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HellingerCarry.common_and_mismatch_increments' depends on axioms: [propext, Classical.choice, Quot.sound]
