@@ -1,0 +1,4 @@
+'Collatz.ReciprocalOperator.triple_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReciprocalOperator.harmonic_three_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReciprocalOperator.cycle_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReciprocalOperator.logarithmic_mass_changes' depends on axioms: [propext, Classical.choice, Quot.sound]

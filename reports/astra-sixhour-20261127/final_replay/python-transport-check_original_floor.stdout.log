@@ -1,0 +1,1916 @@
+{
+  "depth": 8,
+  "trits": 9,
+  "ceiling_ratio": 4,
+  "virtual_controls": [
+    {
+      "k": 5,
+      "minimum_v3": 2,
+      "short_prefixes": 19,
+      "small_tail_tests": 24,
+      "cleared_prefixes": 29
+    },
+    {
+      "k": 5,
+      "minimum_v3": 3,
+      "short_prefixes": 19,
+      "small_tail_tests": 24,
+      "cleared_prefixes": 29
+    },
+    {
+      "k": 7,
+      "minimum_v3": 3,
+      "short_prefixes": 38,
+      "small_tail_tests": 32,
+      "cleared_prefixes": 47
+    },
+    {
+      "k": 5,
+      "minimum_v3": 4,
+      "short_prefixes": 19,
+      "small_tail_tests": 24,
+      "cleared_prefixes": 29
+    },
+    {
+      "k": 7,
+      "minimum_v3": 4,
+      "short_prefixes": 38,
+      "small_tail_tests": 32,
+      "cleared_prefixes": 47
+    },
+    {
+      "k": 9,
+      "minimum_v3": 4,
+      "short_prefixes": 74,
+      "small_tail_tests": 40,
+      "cleared_prefixes": 76
+    },
+    {
+      "k": 5,
+      "minimum_v3": 5,
+      "short_prefixes": 19,
+      "small_tail_tests": 24,
+      "cleared_prefixes": 29
+    },
+    {
+      "k": 7,
+      "minimum_v3": 5,
+      "short_prefixes": 38,
+      "small_tail_tests": 32,
+      "cleared_prefixes": 47
+    },
+    {
+      "k": 9,
+      "minimum_v3": 5,
+      "short_prefixes": 74,
+      "small_tail_tests": 40,
+      "cleared_prefixes": 76
+    },
+    {
+      "k": 11,
+      "minimum_v3": 5,
+      "short_prefixes": 140,
+      "small_tail_tests": 48,
+      "cleared_prefixes": 123
+    }
+  ],
+  "results": [
+    {
+      "k": 5,
+      "minimum_v3": 2,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        6080,
+        6080,
+        6080,
+        6080
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          29,
+          83,
+          110
+        ],
+        [
+          2,
+          29,
+          83,
+          110
+        ],
+        [
+          2,
+          29,
+          83,
+          110
+        ],
+        [
+          2,
+          29,
+          83,
+          110
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 3990,
+        "triple": 13844,
+        "absolute": 10476
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 9,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 9,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 9,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 9,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 11
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 11
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 11
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 11
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "minimum_v3": 3,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        5181,
+        5181,
+        5181,
+        5181
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 3990,
+        "triple": 15216,
+        "absolute": 5160,
+        "canonical": 348
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "minimum_v3": 3,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        5181,
+        5181,
+        5181,
+        5181
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ],
+        [
+          2,
+          11,
+          29,
+          38
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4190,
+        "triple": 15216,
+        "absolute": 5160,
+        "canonical": 348
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 9,
+          "z_residue": 5
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "minimum_v3": 4,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        2704,
+        2704,
+        2704,
+        2704
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 3990,
+        "triple": 6504,
+        "absolute": 3852,
+        "canonical": 460
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "minimum_v3": 4,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        2704,
+        2704,
+        2704,
+        2704
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4190,
+        "triple": 6504,
+        "absolute": 3852,
+        "canonical": 460
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "minimum_v3": 4,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        2704,
+        2704,
+        2704,
+        2704
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4285,
+        "triple": 6504,
+        "absolute": 3852,
+        "canonical": 460
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 27,
+          "z_residue": 26
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            2
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 17
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "minimum_v3": 5,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        1986,
+        1986,
+        1986,
+        1986
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 3990,
+        "triple": 5732,
+        "absolute": 1548,
+        "canonical": 664
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "minimum_v3": 5,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        1986,
+        1986,
+        1986,
+        1986
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4190,
+        "triple": 5732,
+        "absolute": 1548,
+        "canonical": 664
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "minimum_v3": 5,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        1986,
+        1986,
+        1986,
+        1986
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4285,
+        "triple": 5732,
+        "absolute": 1548,
+        "canonical": 664
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        }
+      ]
+    },
+    {
+      "k": 11,
+      "minimum_v3": 5,
+      "classes_per_u": 6561,
+      "excluded_by_u": [
+        1986,
+        1986,
+        1986,
+        1986
+      ],
+      "first_unexcluded_z_residues": [
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ],
+        [
+          2,
+          5,
+          11,
+          14
+        ]
+      ],
+      "stats": {
+        "legal_nodes": 4331,
+        "triple": 5732,
+        "absolute": 1548,
+        "canonical": 664
+      },
+      "sample_witnesses": [
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 27,
+          "z_residue": 8
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1
+          ],
+          "kind": "triple",
+          "z_modulus": 81,
+          "z_residue": 53
+        },
+        {
+          "u_mod_8": 1,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 3,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 5,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        },
+        {
+          "u_mod_8": 7,
+          "n": 0,
+          "word": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "kind": "absolute",
+          "z_modulus": 81,
+          "z_residue": 80
+        }
+      ]
+    }
+  ]
+}

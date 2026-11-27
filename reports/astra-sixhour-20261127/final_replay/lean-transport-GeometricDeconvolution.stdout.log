@@ -1,0 +1,3 @@
+'Collatz.GeometricDeconvolution.unsheared_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GeometricDeconvolution.deconvolve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GeometricDeconvolution.syracuse_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]

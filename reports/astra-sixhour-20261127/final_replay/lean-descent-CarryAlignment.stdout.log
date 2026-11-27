@@ -1,0 +1,6 @@
+'Collatz.FirstPassage.run_binary_translate' depends on axioms: [propext, Quot.sound]
+'Collatz.FirstPassage.aligned_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.four_before_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.restricted_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.opposite_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FirstPassage.canonical_aligned_one' depends on axioms: [propext, Classical.choice, Quot.sound]
