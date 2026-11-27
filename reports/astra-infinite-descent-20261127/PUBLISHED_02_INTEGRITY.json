@@ -1,0 +1,20 @@
+{
+  "schema": "collatz-clean-integrity/v1",
+  "started_utc": "2026-11-27T14:31:05.320058+00:00",
+  "finished_utc": "2026-11-27T14:31:06.268523+00:00",
+  "commit": "e082b95a503d622bbbd121801f6bcadcab50df05",
+  "tree": "1debefaf2fe5642a89431235d3f6a98715a074d8",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "clean_before": true,
+  "clean_after": true,
+  "stdout": "CHECKOUT {\"commit\": \"e082b95a503d622bbbd121801f6bcadcab50df05\", \"tracked_files\": 424, \"tree\": \"1debefaf2fe5642a89431235d3f6a98715a074d8\"}\nRUN -X utf8 -B tools/check_integration_state.py\nOK: durable front door and lifecycle practice; 8 integrated records (6 verified local proofs, 1 accepted refutation, 1 source-qualified periodic synthesis), 3 roadmap records, 13 reviewed research families, 314 curated local links, frozen 45/42 PR snapshot preserved.\nRUN -X utf8 -B tools/check_review_integration.py\nOK: 4 qualified assemblies, 9 namespaces, 14 exact blob pins, 8 exact subtree pins, 374 local links, 2 optimized guards; no mathematical verification\nRUN -X utf8 -B tools/check_review_integration.py --self-test\nSELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed\nRUN -X utf8 -B tools/test_integrity_portability.py\nPASS: 11 real-Git mode/content/coverage controls; Windows metadata selection simulated on non-Windows; no complete repository scan\nRUN -X utf8 -B reports/prepublic-2026-09-05/integration-d/check_followup.py --self-test\nPASS scoped D follow-up: 7 active files / 7 exact archived originals / 8 dispositions\n{\"overlap_band_cases\": 64, \"quotient_cases\": 81, \"scope\": \"finite edge cases only; not universal Collatz proof checking\", \"signed_residues\": 1584, \"strict_strip_counterexamples\": 2}\nInvalid scoped fixtures rejected: 8\nPASS checkout validation; not mathematical verification\n",
+  "stderr": "",
+  "passed": true
+}

@@ -1,0 +1,249 @@
+{
+  "maximum_grade": 11,
+  "rows": [
+    {
+      "grade": 0,
+      "extreme": "1",
+      "last_clock_tested": 0,
+      "small_odd_cutoff": 2,
+      "target_menu_size": 1,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 0,
+          "sources": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 1,
+      "extreme": "3/10",
+      "last_clock_tested": 5,
+      "small_odd_cutoff": 5,
+      "target_menu_size": 3,
+      "maximizers": [
+        {
+          "target": 5,
+          "clock": 1,
+          "sources": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 2,
+      "extreme": "9/32",
+      "last_clock_tested": 10,
+      "small_odd_cutoff": 6,
+      "target_menu_size": 3,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 5,
+          "sources": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "extreme": "27/208",
+      "last_clock_tested": 17,
+      "small_odd_cutoff": 16,
+      "target_menu_size": 12,
+      "maximizers": [
+        {
+          "target": 13,
+          "clock": 4,
+          "sources": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 4,
+      "extreme": "81/640",
+      "last_clock_tested": 22,
+      "small_odd_cutoff": 19,
+      "target_menu_size": 14,
+      "maximizers": [
+        {
+          "target": 5,
+          "clock": 7,
+          "sources": [
+            7
+          ]
+        },
+        {
+          "target": 5,
+          "clock": 8,
+          "sources": [
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "extreme": "243/2048",
+      "last_clock_tested": 27,
+      "small_odd_cutoff": 23,
+      "target_menu_size": 15,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 11,
+          "sources": [
+            7
+          ]
+        },
+        {
+          "target": 1,
+          "clock": 12,
+          "sources": [
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "extreme": "729/8192",
+      "last_clock_tested": 33,
+      "small_odd_cutoff": 34,
+      "target_menu_size": 26,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 13,
+          "sources": [
+            9
+          ]
+        },
+        {
+          "target": 1,
+          "clock": 14,
+          "sources": [
+            18,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "extreme": "6561/131072",
+      "last_clock_tested": 39,
+      "small_odd_cutoff": 67,
+      "target_menu_size": 51,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 17,
+          "sources": [
+            49,
+            50,
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "extreme": "19683/524288",
+      "last_clock_tested": 45,
+      "small_odd_cutoff": 98,
+      "target_menu_size": 72,
+      "maximizers": [
+        {
+          "target": 1,
+          "clock": 19,
+          "sources": [
+            65,
+            66,
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 9,
+      "extreme": "19683/561152",
+      "last_clock_tested": 50,
+      "small_odd_cutoff": 115,
+      "target_menu_size": 89,
+      "maximizers": [
+        {
+          "target": 137,
+          "clock": 12,
+          "sources": [
+            27
+          ]
+        },
+        {
+          "target": 137,
+          "clock": 13,
+          "sources": [
+            54,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 10,
+      "extreme": "59049/1687552",
+      "last_clock_tested": 55,
+      "small_odd_cutoff": 124,
+      "target_menu_size": 96,
+      "maximizers": [
+        {
+          "target": 103,
+          "clock": 14,
+          "sources": [
+            27
+          ]
+        },
+        {
+          "target": 103,
+          "clock": 15,
+          "sources": [
+            54,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 11,
+      "extreme": "177147/5079040",
+      "last_clock_tested": 60,
+      "small_odd_cutoff": 134,
+      "target_menu_size": 108,
+      "maximizers": [
+        {
+          "target": 155,
+          "clock": 15,
+          "sources": [
+            27
+          ]
+        },
+        {
+          "target": 155,
+          "clock": 16,
+          "sources": [
+            54,
+            55
+          ]
+        }
+      ]
+    }
+  ]
+}

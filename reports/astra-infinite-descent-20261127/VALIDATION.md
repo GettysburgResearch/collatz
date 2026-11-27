@@ -1,3 +1,5 @@
+Latest record: [third reproducible checkpoint](CHECKPOINT_03.md), 60 modules and 2,261 declarations. Earlier exact records below remain preserved.
+
 The [second checkpoint](CHECKPOINT_02.md) adds a fresh 42-module,
 1,901-declaration replay. The first checkpoint below remains its own
 exact historical record.

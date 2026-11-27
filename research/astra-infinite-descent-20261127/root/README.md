@@ -175,6 +175,32 @@ Decay of the reserve, of the fraction of accepted residues, or of a
 random trajectory probability leaves a possible fixed ordinary atom
 uncontrolled.
 
+## Unconditional packing of a simple physical orbit
+
+[OrbitPacking.lean](OrbitPacking.lean) applies the same exact binary
+moment to an actual finite trajectory whose vertices are distinct. For
+every integer \(k\ge0\), such a trajectory has at most
+
+\[
+                  4\cdot6561^k
+\]
+
+vertices below \(8192^k\). The proof separates sources by their odd count
+in the next \(13k\) steps. The high-count part is controlled by the
+binary moment; the low-count part has distinct small forward images.
+The last \(13k\) positions are discarded before claiming injectivity,
+so a later cycle creates no hidden assumption.
+
+Finite geometric bands then bound the reciprocal occupation of high
+vertices, uniformly in the length of a simple trajectory. The escape
+packet formalizes this transfer, the resulting positive lower bound on
+each actual first-arrival mark, and the unconditional equivalence
+between boundedness of all ordinary trajectories and uniform vanishing
+of complete finite first-arrival rows at large odd targets. See
+[HIGH_TARGET_ROWS.md](../escape/HIGH_TARGET_ROWS.md) and
+[TargetExtinction.lean](../escape/TargetExtinction.lean). The target-row
+vanishing estimate remains open; boundedness also permits finite cycles.
+
 ## A separate constructive phase theorem and exact examples
 
 [PhaseNet.lean](PhaseNet.lean) proves the irrationality of
@@ -192,6 +218,14 @@ estimate. Combined with the actual inverse ladder and finite-gap routing,
 it supplies the relative-window constructions in the other two packets.
 This is a changing-source existence theorem, separate from the universal
 finite-mass problem above.
+
+[PhaseResidues.lean](PhaseResidues.lean) preserves independent requested
+residues of both exponents. [PhaseMultiples.lean](PhaseMultiples.lean)
+also restricts the ternary exponent to a prescribed positive multiple
+that is congruent to one modulo the grade modulus. The latter feeds the
+native ratio-five ladder: its physical macro groups have exactly
+\(2Q+1\) odd departures on each arm. These remain finite existence
+theorems with no quantitative irrationality-measure premise.
 
 [fast_pair_witness.py](fast_pair_witness.py) independently implements the
 finite-gap cylinder rows, the exact two-gap residue address, and a finite

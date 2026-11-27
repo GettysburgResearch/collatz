@@ -1,9 +1,9 @@
 # Actual ordinary sources, complete denominators, and prescribed clocks
 
-**Collatz remains OPEN.** This branch contains a formal completion of an
-existing equivalence, unconditional ordinary first-hit constructions,
-written sparse inverse counts, and complete-denominator results and
-counterexamples. It does not prove universal convergence or
+**Collatz remains OPEN.** This branch contains formal reciprocal-mass
+and bounded-orbit equivalences, unconditional ordinary first-hit
+constructions, written sparse inverse counts, and complete-denominator
+results and counterexamples. It does not prove universal convergence or
 exclude all nontrivial cycles.
 
 The working map is the shortcut Collatz map, halving even inputs and
@@ -65,6 +65,39 @@ no positive integer synchronizes at the same clock with all its additive
 translates: its doubled value already prevents that conclusion.
 
 ## The remaining universal step
+
+There is now an unconditional formal criterion specifically for escape.
+Let \(A_{m,d}(y)\) be the complete finite set of positive ordinary starts
+whose first visit to an odd target \(y\) occurs at shortcut clock \(m\)
+with exactly \(d\) odd departures. Then
+
+\[
+ \text{every positive ordinary orbit is bounded}
+ \quad\Longleftrightarrow\quad
+ \lim_{\substack{y\to\infty\\y\text{ odd}}}
+ \sup_{m,d}\frac{3^d}{2^m y}\,|A_{m,d}(y)|=0.
+\]
+
+The precise epsilon formulation, complete finite row definition, and
+both implications are in
+[TargetExtinction.lean](escape/TargetExtinction.lean). Elementary parity
+counting bounds the number of small vertices on any simple physical
+trajectory. Finite reciprocal bands then give a uniform first-arrival
+mark floor and show that a heavy high-target row must visit a small
+integer. This proof has no external analytic premise. It does not prove
+the displayed vanishing limit, and boundedness alone leaves nontrivial
+cycles to exclude. [HIGH_TARGET_ROWS.md](escape/HIGH_TARGET_ROWS.md)
+
+The new affine classification in
+[AffineClassification.lean](merger/AffineClassification.lean) proves
+that finite positive affine families admit the full marked relative-window
+placement precisely when their slopes share the same prime-to-six part.
+PR146 already contains the basic written classification; this packet
+formalizes it and strengthens the placement and first-arrival controls.
+Separately, [FiveWindow.lean](merger/FiveWindow.lean) constructs genuine
+joint first arrivals from \(x,5x\) to \(y,5y\), with the same bounded odd
+count, near-minimum common clock, and independent prescribed clock and
+grade residues in every sufficiently large relative window.
 
 The formal reciprocal-mass equivalence still requires its universal
 small-mass estimate. The new first-arrival construction provides chosen

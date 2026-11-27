@@ -1,0 +1,186 @@
+{
+  "schema": "collatz-coordinator-written-review/v1",
+  "reviewer": "root, independent reconstruction of agent arguments",
+  "created_utc": "2026-11-27T15:04:17.601671+00:00",
+  "scope": "Exact listed source bytes only. Strict whole-packet Lean replay and finite program controls are separate evidence. This is not a proof of Collatz.",
+  "sources": [
+    {
+      "path": "research/astra-infinite-descent-20261127/root/OrbitPacking.lean",
+      "sha256": "b9cbd69c70f6d1d292b24ea6f1f4efb4cb33736d93e2f4614a9086543cefc447",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Exact parity moment controls the high-grade part; affine image bounds control low-grade sources under finite-image injectivity.",
+        "The last h vertices are discarded before forwarding along a simple prefix. Specialization h=13k, a=8k gives at most 4*6561^k visits below 8192^k. No assertion of injectivity after the supplied finite prefix."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/root/PhaseMultiples.lean",
+      "sha256": "212abbd239028ae7b69acd000efa23f3c1bd25ca93d5b4ee88c2c4c2b1c16d59",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Applies independently marked phase theorem with grade modulus kQ and residue k(r mod Q), then divides the resulting grade by k. The exact actual exponents retain both marks."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/ReciprocalPacking.lean",
+      "sha256": "d16b647a0627c21bc1a8caf4514388286d63277136eb8e3c929536c615c37584",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Finite geometric-band summation converts the integer-base packing hypothesis into a reciprocal tail. No infinite orbit or convergence premise."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/ReciprocalTrace.lean",
+      "sha256": "004802558b30225afd3c6223c5835942a9a11fca9f76deefe12c7e5e70012d6a",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Positive physical states, logarithmic correction bound, and simple-prefix property of an actual first arrival are retained in the theorem hypotheses."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/ActualPacking.lean",
+      "sha256": "aad965fa5af6643d7d4c0797e5f5ca44098cbf1901072016c5d9b718d3e9c327",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Instantiates finite packing on actual first arrivals. Reconstructed the uniform exp(-262144) mark floor and high-vertex normalized row bound with constant 262145."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/TargetExtinction.lean",
+      "sha256": "c6f118877f913a5aa64195ec470d250dd0695e86d5bf6ff3fdd2ac0a0605931d",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Both directions of boundedness iff uniform high-odd-target row vanishing are unconditional. Boundedness gives finite bounds for the finitely many small seeds; conversely a singleton first row and its mark floor bound every odd target visited by each supplied source.",
+        "The finite completeRow definition uses the affine source ceiling; exact membership equivalence and reduction between arbitrary finite subrows and complete rows are checked. No nontrivial-cycle exclusion is asserted."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/AffineGeometry.lean",
+      "sha256": "8d0d1c51489510c748ada2214eb63a41f7c34bdfacbd3b8769c401e190916e96",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Checked independent-clock affine slope guard and finite translated-arm dyadic profile synchronization. The slope identity or explicit bounded-parameter alternative has the required fixed clock order."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/AffinePlacement.lean",
+      "sha256": "c6fbf6592d90b8283996b2e5c533fa4157f4878e5e7dc768c508d4e83b12fb3f",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Checked positivity, finite-prefix first-arrival guard, normalized arm reconstruction, common actual date and grade offsets, all parameter residue classes, and uniform window and clock estimates."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/PrimeCore.lean",
+      "sha256": "09a3733d535b502a2db43dc4f04782bc5f04558d552e8a1a7cab382993c48c22",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Checked ordCompl reconstruction, prime-to-six invariance, necessity from fixed bounded clock before arbitrarily large parameters, and sufficiency using the finite arm cylinder."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/AffineClassification.lean",
+      "sha256": "8d34b711465ecdc076c0a9ad9e33297873f63172a502090ca2693e467d0fa5da",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Window-to-bounded-clock implication uses a target proportional to parameter scale and the actual clock upper bound. Full marked window property is exactly equivalent to common prime-to-six slope part. PR146 priority is credited."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/InverseRoots.lean",
+      "sha256": "46b5cdc07d90e269947e3e429f1498fdb0c96a0841357cf506014c7155678cb0",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Checked finite off-forward prefixes, least odd-unit ancestor selection, arbitrary-high placement within each supplied target basin, and all ordinary predecessor bounds including nonunits. This is existence, not a decision procedure for unknown forward fates."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FiveRouting.lean",
+      "sha256": "902b0d95e914643a638d15c1c9096e70ec24fb0878feb6883e10163be8e794fd",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Literal two-arm A and B certificates are lifted to their exact binary cylinders. Two native A returns plus primitive-root addressing impose arbitrary ternary input classes at a supplied clock, both arms with grade four."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FiveLadder.lean",
+      "sha256": "7d519f4b4f7be555820133881459a44812bd214e666bdfe5b37a0d360ab4bbe2",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Flight includes strict height above each ultimate target at every proper clock, so both hits are first. Native macro inversions preserve units and a shifted integer affine weight, uniformly across arbitrary word length."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FiveWindow.lean",
+      "sha256": "dd3ebdc99926c68302a56aef83012134c23d74b646da82f95bee963e822f4844",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "The marked phase net and grade (2Q+1)j match the actual native ladder. Initial dyadic padding preserves joint first arrivals. Calibrated integer weight yields every relative window with bounded grade and constant additive clock overhead."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FivePlacement.lean",
+      "sha256": "8d3278075d29d064c7d341b246fb944212224f5eab517e7f944dc738755e2e3c",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Generic fixed dual-row bank is preattached using an explicit height guard. Public five_queries retains arbitrary ternary source class, actual binary class 49 modulo 64, and independently prescribed physical time and grade residues. It does not claim arbitrary binary source classes."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/FoldedCuts.lean",
+      "sha256": "379a4a563597c5214b65bdf62cdb5676c6f6d7e51e6bd79d87f7c3762db023ab",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Checked finite permutation reindexing, weighted summation by parts, positive cut criterion, cut mean identity, support budget with possible negative and zero cuts, and exact weighted native recurrence. These are finite algebra kernels only."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/HIGH_TARGET_ROWS.md",
+      "sha256": "5d96bf19e1453b2d349a2f639f523e1e7a94fc0dd608c5c79d4eea61f651662d",
+      "status": "WRITTEN ARGUMENT RECONSTRUCTED",
+      "checks": [
+        "Reconstructed elementary simple-orbit packing from distinct forward images and the exact parity count, reciprocal occupation tail, source-grid interval bound, finite small-source menu, and boundedness equivalence.",
+        "The fractional-exponent written constants and the weaker integer-base constants in Lean are distinguished. No fixed-root null-support input is used for this target-localization theorem."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/EXTREMAL_ROWS.md",
+      "sha256": "400c07593e79c577170933630f5bce02852dccb57b5815a818a3bc02267494d1",
+      "status": "VERIFIED CONDITIONAL IMPLICATION",
+      "checks": [
+        "Reconstructed finiteness of balanced escaping classes, maximum attainment from the explicitly source-qualified uniform source-tail input, and eventual exact row stabilization along an escaping component.",
+        "Checked eventual fixed finite set of maximizers, global escape height limit, and finite-horizon synchronized convergent countermodels to the proposed maximality inequalities.",
+        "The global source-tail input is not supplied by elementary target localization. An eventually decreasing sequence conditional on escape does not establish global monotonicity at all grades or eliminate escape."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/FOLDED_FAREY.md",
+      "sha256": "977df5a230e88a741007e33158cc700bff70858266d0b273d97e7417191f5b9e",
+      "status": "VERIFIED WITH STATED EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed reduced-rank aggregation, chronological lift divisibility, and positive-mean control while allowing actual zero and negative cuts.",
+        "Checked displaced support bound, positivity under the lower-Farey condition, choice of a displacement using a two-logarithm lower bound, and resulting general integer-cycle restrictions.",
+        "Reconstructed binary carry-tree control of drift width by aggregate support. Near-octave and fixed-gcd specializations are stated separately.",
+        "The baseline external exponent is nu>4.116201 from Bondareva-Luchin-Salikhov. The infinite Diophantine theorem is written, not a consequence of the finite Lean kernels alone."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/GROWING_WINDOWS.md",
+      "sha256": "efece235f3ef14780d374349f9ef7f05c5101cbb7f2280c357d3cffdb01c7b3e",
+      "status": "QUANTITATIVE COROLLARY CHECKED WITH PINNED WRITTEN INPUT",
+      "checks": [
+        "Checked propagation from PR146 whole-interval cylinder h=O(log^2 n), through terminal closure of length O(h+3^h), to n=exp(c sqrt(log log(X/y))) first-hit blocks and O(log log(X/y)) clock and grade overhead.",
+        "The stronger whole-interval source is distinguished from the earlier affine-rays polynomial bound. Its complete merger-tail analytic argument is not replayed in Lean here. The final growing-count corollary also invokes the separate counting argument."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/INVERSE_ROOTS.md",
+      "sha256": "69ba7bddaafc487bde8796d136ac93f72e73e43d09f21e6879ec7a5c61e9f5c0",
+      "status": "WRITTEN ARGUMENT RECONSTRUCTED",
+      "checks": [
+        "Checked two inverse unit children in six exponent choices, injective equal-depth ancestry below a nonperiodic off-forward point, and distinct minimum labels.",
+        "Checked exponent-sum mean at most 5h and the finite fraction with sum at most 5h, giving the written lower exponent 1/log2(32/3). This counts minima below X, not minima localized to a specified narrow interval."
+      ]
+    }
+  ]
+}

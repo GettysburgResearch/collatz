@@ -1,0 +1,121 @@
+{
+  "schema": "collatz-bounded-controls/v1",
+  "head": "1c375d38e48171b9667fa9f68e819c99261b8de7",
+  "programs": [
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_extrema.py",
+      "sha256": "6065d975b4f98c30aab13dd6c95e994c08fc2435f74a86960bd9bfb80fb1a1b5",
+      "normal_optimized_identical": true,
+      "runs": [
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/astra-infinite-descent-20261127/escape/check_extrema.py"
+          ],
+          "start_utc": "2026-11-27T15:04:55.630611+00:00",
+          "elapsed_seconds": 4.370192652000696,
+          "exit_code": 0,
+          "stdout_sha256": "e8b5c523aa0a7c7d665625ba8c9ff6217f0a81b6c6509be91bd1f890b1a0a7e1",
+          "stdout": "{\n  \"maximum_grade\": 11,\n  \"rows\": [\n    {\n      \"grade\": 0,\n      \"extreme\": \"1\",\n      \"last_clock_tested\": 0,\n      \"small_odd_cutoff\": 2,\n      \"target_menu_size\": 1,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 0,\n          \"sources\": [\n            1\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 1,\n      \"extreme\": \"3/10\",\n      \"last_clock_tested\": 5,\n      \"small_odd_cutoff\": 5,\n      \"target_menu_size\": 3,\n      \"maximizers\": [\n        {\n          \"target\": 5,\n          \"clock\": 1,\n          \"sources\": [\n            3\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 2,\n      \"extreme\": \"9/32\",\n      \"last_clock_tested\": 10,\n      \"small_odd_cutoff\": 6,\n      \"target_menu_size\": 3,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 5,\n          \"sources\": [\n            3\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 3,\n      \"extreme\": \"27/208\",\n      \"last_clock_tested\": 17,\n      \"small_odd_cutoff\": 16,\n      \"target_menu_size\": 12,\n      \"maximizers\": [\n        {\n          \"target\": 13,\n          \"clock\": 4,\n          \"sources\": [\n            7\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 4,\n      \"extreme\": \"81/640\",\n      \"last_clock_tested\": 22,\n      \"small_odd_cutoff\": 19,\n      \"target_menu_size\": 14,\n      \"maximizers\": [\n        {\n          \"target\": 5,\n          \"clock\": 7,\n          \"sources\": [\n            7\n          ]\n        },\n        {\n          \"target\": 5,\n          \"clock\": 8,\n          \"sources\": [\n            14,\n            15\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 5,\n      \"extreme\": \"243/2048\",\n      \"last_clock_tested\": 27,\n      \"small_odd_cutoff\": 23,\n      \"target_menu_size\": 15,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 11,\n          \"sources\": [\n            7\n          ]\n        },\n        {\n          \"target\": 1,\n          \"clock\": 12,\n          \"sources\": [\n            14,\n            15\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 6,\n      \"extreme\": \"729/8192\",\n      \"last_clock_tested\": 33,\n      \"small_odd_cutoff\": 34,\n      \"target_menu_size\": 26,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 13,\n          \"sources\": [\n            9\n          ]\n        },\n        {\n          \"target\": 1,\n          \"clock\": 14,\n          \"sources\": [\n            18,\n            19\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 7,\n      \"extreme\": \"6561/131072\",\n      \"last_clock_tested\": 39,\n      \"small_odd_cutoff\": 67,\n      \"target_menu_size\": 51,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 17,\n          \"sources\": [\n            49,\n            50,\n            51\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 8,\n      \"extreme\": \"19683/524288\",\n      \"last_clock_tested\": 45,\n      \"small_odd_cutoff\": 98,\n      \"target_menu_size\": 72,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 19,\n          \"sources\": [\n            65,\n            66,\n            67\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 9,\n      \"extreme\": \"19683/561152\",\n      \"last_clock_tested\": 50,\n      \"small_odd_cutoff\": 115,\n      \"target_menu_size\": 89,\n      \"maximizers\": [\n        {\n          \"target\": 137,\n          \"clock\": 12,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 137,\n          \"clock\": 13,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 10,\n      \"extreme\": \"59049/1687552\",\n      \"last_clock_tested\": 55,\n      \"small_odd_cutoff\": 124,\n      \"target_menu_size\": 96,\n      \"maximizers\": [\n        {\n          \"target\": 103,\n          \"clock\": 14,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 103,\n          \"clock\": 15,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 11,\n      \"extreme\": \"177147/5079040\",\n      \"last_clock_tested\": 60,\n      \"small_odd_cutoff\": 134,\n      \"target_menu_size\": 108,\n      \"maximizers\": [\n        {\n          \"target\": 155,\n          \"clock\": 15,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 155,\n          \"clock\": 16,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/astra-infinite-descent-20261127/escape/check_extrema.py"
+          ],
+          "start_utc": "2026-11-27T15:05:00.000857+00:00",
+          "elapsed_seconds": 4.155983061998995,
+          "exit_code": 0,
+          "stdout_sha256": "e8b5c523aa0a7c7d665625ba8c9ff6217f0a81b6c6509be91bd1f890b1a0a7e1",
+          "stdout": "{\n  \"maximum_grade\": 11,\n  \"rows\": [\n    {\n      \"grade\": 0,\n      \"extreme\": \"1\",\n      \"last_clock_tested\": 0,\n      \"small_odd_cutoff\": 2,\n      \"target_menu_size\": 1,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 0,\n          \"sources\": [\n            1\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 1,\n      \"extreme\": \"3/10\",\n      \"last_clock_tested\": 5,\n      \"small_odd_cutoff\": 5,\n      \"target_menu_size\": 3,\n      \"maximizers\": [\n        {\n          \"target\": 5,\n          \"clock\": 1,\n          \"sources\": [\n            3\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 2,\n      \"extreme\": \"9/32\",\n      \"last_clock_tested\": 10,\n      \"small_odd_cutoff\": 6,\n      \"target_menu_size\": 3,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 5,\n          \"sources\": [\n            3\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 3,\n      \"extreme\": \"27/208\",\n      \"last_clock_tested\": 17,\n      \"small_odd_cutoff\": 16,\n      \"target_menu_size\": 12,\n      \"maximizers\": [\n        {\n          \"target\": 13,\n          \"clock\": 4,\n          \"sources\": [\n            7\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 4,\n      \"extreme\": \"81/640\",\n      \"last_clock_tested\": 22,\n      \"small_odd_cutoff\": 19,\n      \"target_menu_size\": 14,\n      \"maximizers\": [\n        {\n          \"target\": 5,\n          \"clock\": 7,\n          \"sources\": [\n            7\n          ]\n        },\n        {\n          \"target\": 5,\n          \"clock\": 8,\n          \"sources\": [\n            14,\n            15\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 5,\n      \"extreme\": \"243/2048\",\n      \"last_clock_tested\": 27,\n      \"small_odd_cutoff\": 23,\n      \"target_menu_size\": 15,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 11,\n          \"sources\": [\n            7\n          ]\n        },\n        {\n          \"target\": 1,\n          \"clock\": 12,\n          \"sources\": [\n            14,\n            15\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 6,\n      \"extreme\": \"729/8192\",\n      \"last_clock_tested\": 33,\n      \"small_odd_cutoff\": 34,\n      \"target_menu_size\": 26,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 13,\n          \"sources\": [\n            9\n          ]\n        },\n        {\n          \"target\": 1,\n          \"clock\": 14,\n          \"sources\": [\n            18,\n            19\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 7,\n      \"extreme\": \"6561/131072\",\n      \"last_clock_tested\": 39,\n      \"small_odd_cutoff\": 67,\n      \"target_menu_size\": 51,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 17,\n          \"sources\": [\n            49,\n            50,\n            51\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 8,\n      \"extreme\": \"19683/524288\",\n      \"last_clock_tested\": 45,\n      \"small_odd_cutoff\": 98,\n      \"target_menu_size\": 72,\n      \"maximizers\": [\n        {\n          \"target\": 1,\n          \"clock\": 19,\n          \"sources\": [\n            65,\n            66,\n            67\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 9,\n      \"extreme\": \"19683/561152\",\n      \"last_clock_tested\": 50,\n      \"small_odd_cutoff\": 115,\n      \"target_menu_size\": 89,\n      \"maximizers\": [\n        {\n          \"target\": 137,\n          \"clock\": 12,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 137,\n          \"clock\": 13,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 10,\n      \"extreme\": \"59049/1687552\",\n      \"last_clock_tested\": 55,\n      \"small_odd_cutoff\": 124,\n      \"target_menu_size\": 96,\n      \"maximizers\": [\n        {\n          \"target\": 103,\n          \"clock\": 14,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 103,\n          \"clock\": 15,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    },\n    {\n      \"grade\": 11,\n      \"extreme\": \"177147/5079040\",\n      \"last_clock_tested\": 60,\n      \"small_odd_cutoff\": 134,\n      \"target_menu_size\": 108,\n      \"maximizers\": [\n        {\n          \"target\": 155,\n          \"clock\": 15,\n          \"sources\": [\n            27\n          ]\n        },\n        {\n          \"target\": 155,\n          \"clock\": 16,\n          \"sources\": [\n            54,\n            55\n          ]\n        }\n      ]\n    }\n  ]\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_affine_windows.py",
+      "sha256": "85d8923c43977e6f02b5c7c9450d90c41d829250547d55ea8a05a6493bbb270e",
+      "normal_optimized_identical": true,
+      "runs": [
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/astra-infinite-descent-20261127/merger/check_affine_windows.py"
+          ],
+          "start_utc": "2026-11-27T15:05:04.157094+00:00",
+          "elapsed_seconds": 0.02904580999893369,
+          "exit_code": 0,
+          "stdout_sha256": "7cfcc7d0bf7fac9455ad3b3bcdf17a2f69fe5557152a128607edf3e6edee8566",
+          "stdout": "PASS 6 affine arms on 4 ordinary cylinder lifts\nPASS 24 independent complete first-arrival traces\nPASS 30 finite incompatible-slope guards\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/astra-infinite-descent-20261127/merger/check_affine_windows.py"
+          ],
+          "start_utc": "2026-11-27T15:05:04.186174+00:00",
+          "elapsed_seconds": 0.11246280299928912,
+          "exit_code": 0,
+          "stdout_sha256": "7cfcc7d0bf7fac9455ad3b3bcdf17a2f69fe5557152a128607edf3e6edee8566",
+          "stdout": "PASS 6 affine arms on 4 ordinary cylinder lifts\nPASS 24 independent complete first-arrival traces\nPASS 30 finite incompatible-slope guards\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_folded_farey.py",
+      "sha256": "3ee588ea7ab432c7899572cb6fc5c72d8fb7240e81d17b39a2e74232d3ca5171",
+      "normal_optimized_identical": true,
+      "runs": [
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "research/astra-infinite-descent-20261127/cycles/check_folded_farey.py"
+          ],
+          "start_utc": "2026-11-27T15:05:04.298843+00:00",
+          "elapsed_seconds": 4.557714508999197,
+          "exit_code": 0,
+          "stdout_sha256": "75fa13b6367ec4d2376f4282bc3d9103b17dbbff13c9281457d0805086f6ccba",
+          "stdout": "{\n  \"Farey_positive_rank_steps\": 107276,\n  \"K_equal_to_one\": 182,\n  \"columns_hidden_by_equal_sums\": 7383,\n  \"cycles_with_negative_cut\": 14920,\n  \"cycles_with_zero_cut\": 16,\n  \"different_multisets_hidden_by_equal_sums\": 603,\n  \"distinct_native_cycles\": 53141,\n  \"signed_rank_steps\": 214447,\n  \"symbolic_mean_checks\": 3877\n}\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "research/astra-infinite-descent-20261127/cycles/check_folded_farey.py"
+          ],
+          "start_utc": "2026-11-27T15:05:08.856669+00:00",
+          "elapsed_seconds": 4.18567787900065,
+          "exit_code": 0,
+          "stdout_sha256": "75fa13b6367ec4d2376f4282bc3d9103b17dbbff13c9281457d0805086f6ccba",
+          "stdout": "{\n  \"Farey_positive_rank_steps\": 107276,\n  \"K_equal_to_one\": 182,\n  \"columns_hidden_by_equal_sums\": 7383,\n  \"cycles_with_negative_cut\": 14920,\n  \"cycles_with_zero_cut\": 16,\n  \"different_multisets_hidden_by_equal_sums\": 603,\n  \"distinct_native_cycles\": 53141,\n  \"signed_rank_steps\": 214447,\n  \"symbolic_mean_checks\": 3877\n}\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "scope": "Only finite program controls. Replays new controls since the prior published checkpoint; unchanged earlier controls retained in earlier receipts."
+}
