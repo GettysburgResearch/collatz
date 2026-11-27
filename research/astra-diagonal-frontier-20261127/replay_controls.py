@@ -29,9 +29,12 @@ CASES = [
     ("arithmetic/check_dual_cuts.py", "arithmetic/dual_cut_controls.json"),
     ("arithmetic/check_full_step_chart.py", "arithmetic/full_step_chart_controls.json"),
     ("arithmetic/check_full_circuit_inversions.py", "arithmetic/full_circuit_inversion_controls.json"),
+    ("arithmetic/check_farey_tile.py", "arithmetic/farey_tile_controls.json"),
+    ("arithmetic/check_width_three.py", "arithmetic/width_three_controls.json"),
     ("linear/check_controls.py", None),
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),
+    ("linear/check_source_suffix.py", None),
     ("inverse/check_retained_trees.py", None),
     ("inverse/check_frozen_root.py", None),
 ]

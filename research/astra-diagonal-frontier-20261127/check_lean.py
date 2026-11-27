@@ -28,6 +28,7 @@ MODULES = [
     ("NativePersistence", "NativePersistence.lean", "Collatz.NativeGate"),
     ("NativeResidue", "NativeResidue.lean", "Collatz.NativeGate"),
     ("SeedSpread", "mass/SeedSpread.lean", "SeedSpread"),
+    ("FirstArrivalLap", "mass/FirstArrivalLap.lean", "FirstArrivalLap"),
     ("ComponentLoss", "mass/ComponentLoss.lean", "ComponentLoss"),
     ("FirstEntryRecord", "mass/FirstEntryRecord.lean", "FirstEntryRecord"),
     ("SelectedBlockBarrier", "mass/SelectedBlockBarrier.lean", "SelectedBlockBarrier"),
@@ -35,6 +36,7 @@ MODULES = [
     ("HigherDifference", "arithmetic/HigherDifference.lean", "Collatz.HigherDifference"),
     ("RotationCuts", "arithmetic/RotationCuts.lean", "Collatz.RotationCuts"),
     ("OrdinaryMerge", "arithmetic/OrdinaryMerge.lean", "Collatz.OrdinaryMerge"),
+    ("WidthThree", "arithmetic/WidthThree.lean", "Collatz.WidthThree"),
     ("GradePressure", "arithmetic/GradePressure.lean", "Collatz.GradePressure"),
     ("ShortProbe", "linear/ShortProbe.lean", "CollatzShortProbe"),
     ("UnitWindowLift", "linear/UnitWindowLift.lean", "CollatzWindowLift"),
@@ -137,7 +139,7 @@ def main():
         "selection": {"mode": "subset" if args.only else "all",
                       "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
                       "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
-        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. GradePressure checks the finite all-grade partition identities and free-first-grade upper bound, not the asymptotic cycle occupation argument. No universal mass extinction or hazard divergence is proved.",
+        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. GradePressure checks the finite all-grade partition identities and free-first-grade upper bound, not the asymptotic cycle occupation argument. FirstArrivalLap checks exact finite primitive-lap removal in a general deterministic map. WidthThree checks the nine polynomial, divisibility and scalar excursion lemmas, not the full asymptotic width theorem. No universal mass extinction or hazard divergence is proved.",
         "modules": [],
     }
     started = time.monotonic()
