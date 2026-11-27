@@ -1,0 +1,78 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T15:03:09.733063+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "e9614b7ce816d580bf64b1c17f91151aba70e0f9cc0303ac9a65588f8e7d8806",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 16,
+    "executed_cases": 2,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_native_shells.py",
+      "source_sha256": "40adc4315ba44fdf3ec3e2f038b57f4383a390564979014828f96b80a684f26f",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.324,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.63,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"scope\": \"Exact finite source and congruence checks; shell counts are diagnostic, not an asymptotic test.\",\n  \"rows\": [\n    {\n      \"horizon\": 7,\n      \"accepted\": 20,\n      \"exchange_checks\": 6,\n      \"selected_shell_counts\": {\n        \"4\": {\n          \"sources\": 1,\n          \"survive_seven\": 0\n        },\n        \"3\": {\n          \"sources\": 1,\n          \"survive_seven\": 0\n        },\n        \"2\": {\n          \"sources\": 2,\n          \"survive_seven\": 2\n        },\n        \"1\": {\n          \"sources\": 6,\n          \"survive_seven\": 3\n        },\n        \"0\": {\n          \"sources\": 10,\n          \"survive_seven\": 7\n        }\n      }\n    },\n    {\n      \"horizon\": 11,\n      \"accepted\": 196,\n      \"exchange_checks\": 73,\n      \"selected_shell_counts\": {\n        \"4\": {\n          \"sources\": 7,\n          \"survive_seven\": 6\n        },\n        \"3\": {\n          \"sources\": 16,\n          \"survive_seven\": 11\n        },\n        \"2\": {\n          \"sources\": 24,\n          \"survive_seven\": 15\n        },\n        \"1\": {\n          \"sources\": 45,\n          \"survive_seven\": 29\n        },\n        \"0\": {\n          \"sources\": 99,\n          \"survive_seven\": 62\n        }\n      }\n    },\n    {\n      \"horizon\": 14,\n      \"accepted\": 1416,\n      \"exchange_checks\": 664,\n      \"selected_shell_counts\": {\n        \"4\": {\n          \"sources\": 41,\n          \"survive_seven\": 25\n        },\n        \"3\": {\n          \"sources\": 89,\n          \"survive_seven\": 57\n        },\n        \"2\": {\n          \"sources\": 176,\n          \"survive_seven\": 118\n        },\n        \"1\": {\n          \"sources\": 355,\n          \"survive_seven\": 239\n        },\n        \"0\": {\n          \"sources\": 708,\n          \"survive_seven\": 469\n        }\n      }\n    },\n    {\n      \"horizon\": 17,\n      \"accepted\": 8990,\n      \"exchange_checks\": 5016,\n      \"selected_shell_counts\": {\n        \"4\": {\n          \"sources\": 282,\n          \"survive_seven\": 205\n        },\n        \"3\": {\n          \"sources\": 561,\n          \"survive_seven\": 382\n        },\n        \"2\": {\n          \"sources\": 1129,\n          \"survive_seven\": 799\n        },\n        \"1\": {\n          \"sources\": 2246,\n          \"survive_seven\": 1602\n        },\n        \"0\": {\n          \"sources\": 4495,\n          \"survive_seven\": 3151\n        }\n      }\n    }\n  ]\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_shifted_clocks.py",
+      "source_sha256": "314d81613455dfc5971311e350be15bc19802d4eabe003df1cfee390807c33ef",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.297,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.356,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"delayed_third_edges\": 2047,\n  \"finite_positive_window_realizations\": 12,\n  \"literal_shifted_cutoff_edges\": 12389,\n  \"maximum_realizing_start_bits\": 250,\n  \"minus_unit_edges\": 1035,\n  \"offset_candidates\": {\n    \"1\": [\n      [\n        0,\n        0,\n        0\n      ]\n    ],\n    \"10\": [],\n    \"11\": [\n      [\n        -1,\n        -2,\n        1\n      ]\n    ],\n    \"12\": [],\n    \"2\": [\n      [\n        -1,\n        -1,\n        -1\n      ],\n      [\n        1,\n        1,\n        1\n      ]\n    ],\n    \"3\": [\n      [\n        -1,\n        -2,\n        -1\n      ]\n    ],\n    \"4\": [],\n    \"5\": [],\n    \"6\": [],\n    \"7\": [\n      [\n        -1,\n        -2,\n        0\n      ]\n    ],\n    \"8\": [],\n    \"9\": []\n  },\n  \"ordinary_binary_edges\": 3071,\n  \"plus_unit_edges\": 692\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T15:03:11.344337+00:00"
+}

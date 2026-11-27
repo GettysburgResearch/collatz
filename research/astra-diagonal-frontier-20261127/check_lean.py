@@ -35,6 +35,7 @@ MODULES = [
     ("HigherDifference", "arithmetic/HigherDifference.lean", "Collatz.HigherDifference"),
     ("RotationCuts", "arithmetic/RotationCuts.lean", "Collatz.RotationCuts"),
     ("OrdinaryMerge", "arithmetic/OrdinaryMerge.lean", "Collatz.OrdinaryMerge"),
+    ("GradePressure", "arithmetic/GradePressure.lean", "Collatz.GradePressure"),
     ("ShortProbe", "linear/ShortProbe.lean", "CollatzShortProbe"),
     ("UnitWindowLift", "linear/UnitWindowLift.lean", "CollatzWindowLift"),
 ]
@@ -84,11 +85,26 @@ def main():
     parser.add_argument("--lean", required=True, type=Path)
     parser.add_argument("--mathlib", required=True, type=Path)
     parser.add_argument("--receipt", required=True, type=Path)
+    parser.add_argument("--only", action="append", choices=[name for name, _, _ in MODULES],
+                        help="compile only named modules and their packet import dependencies; repeat as needed")
     parser.add_argument("--timeout-seconds", type=int, default=1800,
                         help="wall-time limit for each compiler invocation")
     parser.add_argument("--cache-overlay", type=Path,
                         help="optional read-only dependency cache; only verified matches to pinned cache files are used")
     args = parser.parse_args()
+    requested = set(args.only or [name for name, _, _ in MODULES])
+    required = set(requested)
+    by_name = {name: rel for name, rel, _ in MODULES}
+    pending = list(required)
+    while pending:
+        name = pending.pop()
+        source = (ROOT / PACKET / by_name[name]).read_text()
+        imports = {token for line in re.findall(r"^import\s+([^\n]+)", source, re.MULTILINE)
+                   for token in line.split() if token in by_name}
+        for imported in imports - required:
+            required.add(imported)
+            pending.append(imported)
+    selected_modules = [row for row in MODULES if row[0] in required]
     if args.timeout_seconds <= 0:
         parser.error("--timeout-seconds must be positive")
     lean, mathlib, receipt = args.lean.resolve(), args.mathlib.resolve(), args.receipt.resolve()
@@ -117,8 +133,11 @@ def main():
         "compiler": version.stdout.strip(), "mathlib_source_commit": MATHLIB_PIN,
         "dependency_manifest_sha256": sha((mathlib / "lake-manifest.json").read_bytes()),
         "cache_overlay": overlay_record,
-        "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every packet module; no cold dependency rebuild or independent LeanChecker run.",
-        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. No universal mass extinction or hazard divergence is proved.",
+        "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+        "selection": {"mode": "subset" if args.only else "all",
+                      "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
+                      "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
+        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. GradePressure checks the finite all-grade partition identities and free-first-grade upper bound, not the asymptotic cycle occupation argument. No universal mass extinction or hazard divergence is proved.",
         "modules": [],
     }
     started = time.monotonic()
@@ -134,7 +153,7 @@ def main():
         env = os.environ.copy()
         env["LEAN_PATH"] = os.pathsep.join(map(str,
             [obj, *([verified_overlay] if overlay else []), cache, *package_caches]))
-        for name, rel, namespace in MODULES:
+        for name, rel, namespace in selected_modules:
             path = PACKET / rel
             source = ROOT / path
             before_bytes = source.read_bytes()
@@ -167,7 +186,7 @@ def main():
             if compiled.returncode:
                 print(compiled.stdout+compiled.stderr)
                 raise SystemExit(1)
-        audit = "\n".join([*("import "+name for name, _, _ in MODULES), "",
+        audit = "\n".join([*("import "+name for name, _, _ in selected_modules), "",
                              *("#print axioms "+name for name in public), ""])
         audit_path = obj/"Audit.lean"
         audit_path.write_text(audit)

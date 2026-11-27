@@ -15,12 +15,15 @@ CASES = [
     ("check_native_gate.py", "native_gate_controls.json"),
     ("mass/check_seed_spread.py", "mass/seed_spread_controls.json"),
     ("mass/check_first_entry_law.py", "mass/first_entry_controls.json"),
+    ("mass/check_native_shells.py", "mass/native_shell_checks.json"),
     ("arithmetic/check_polynomial_rank.py", "arithmetic/polynomial_rank_controls.json"),
     ("arithmetic/check_higher_differences.py", "arithmetic/higher_difference_controls.json"),
     ("arithmetic/check_rotation_cuts.py", "arithmetic/rotation_cut_controls.json"),
     ("arithmetic/check_weighted_clock.py", "arithmetic/weighted_clock_controls.json"),
     ("arithmetic/check_sparse_rational_clock.py", "arithmetic/sparse_rational_clock_controls.json"),
     ("arithmetic/check_homogeneous_meetings.py", "arithmetic/homogeneous_meeting_controls.json"),
+    ("arithmetic/check_shifted_clocks.py", "arithmetic/shifted_clock_controls.json"),
+    ("arithmetic/check_odd_height_pressure.py", "arithmetic/odd_height_pressure_controls.json"),
     ("linear/check_controls.py", None),
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),
@@ -32,14 +35,23 @@ CASES = [
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--receipt", required=True, type=Path)
+    parser.add_argument("--only", action="append", choices=[source for source, _ in CASES],
+                        help="run only this declared checker; repeat for several; omit for the full packet")
     args = parser.parse_args()
+    selected = [(source, record) for source, record in CASES
+                if not args.only or source in args.only]
     receipt = args.receipt.resolve()
     receipt.parent.mkdir(parents=True, exist_ok=True)
     result = {"schema": "collatz-astra-diagonal-controls/v1", "success": False,
               "started_utc": datetime.now(timezone.utc).isoformat(),
               "python": sys.version, "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+              "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+              "selection": {"mode": "subset" if args.only else "all",
+                            "declared_cases": len(CASES), "executed_cases": len(selected),
+                            "not_executed": [source for source, record in CASES
+                                             if (source, record) not in selected]},
               "cases": []}
-    for rel, record in CASES:
+    for rel, record in selected:
         source = PACKET/rel
         before_bytes = source.read_bytes()
         outputs, rows = [], []

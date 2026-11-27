@@ -1,0 +1,113 @@
+{
+  "scope": "Exact finite source and congruence checks; shell counts are diagnostic, not an asymptotic test.",
+  "rows": [
+    {
+      "horizon": 7,
+      "accepted": 20,
+      "exchange_checks": 6,
+      "selected_shell_counts": {
+        "4": {
+          "sources": 1,
+          "survive_seven": 0
+        },
+        "3": {
+          "sources": 1,
+          "survive_seven": 0
+        },
+        "2": {
+          "sources": 2,
+          "survive_seven": 2
+        },
+        "1": {
+          "sources": 6,
+          "survive_seven": 3
+        },
+        "0": {
+          "sources": 10,
+          "survive_seven": 7
+        }
+      }
+    },
+    {
+      "horizon": 11,
+      "accepted": 196,
+      "exchange_checks": 73,
+      "selected_shell_counts": {
+        "4": {
+          "sources": 7,
+          "survive_seven": 6
+        },
+        "3": {
+          "sources": 16,
+          "survive_seven": 11
+        },
+        "2": {
+          "sources": 24,
+          "survive_seven": 15
+        },
+        "1": {
+          "sources": 45,
+          "survive_seven": 29
+        },
+        "0": {
+          "sources": 99,
+          "survive_seven": 62
+        }
+      }
+    },
+    {
+      "horizon": 14,
+      "accepted": 1416,
+      "exchange_checks": 664,
+      "selected_shell_counts": {
+        "4": {
+          "sources": 41,
+          "survive_seven": 25
+        },
+        "3": {
+          "sources": 89,
+          "survive_seven": 57
+        },
+        "2": {
+          "sources": 176,
+          "survive_seven": 118
+        },
+        "1": {
+          "sources": 355,
+          "survive_seven": 239
+        },
+        "0": {
+          "sources": 708,
+          "survive_seven": 469
+        }
+      }
+    },
+    {
+      "horizon": 17,
+      "accepted": 8990,
+      "exchange_checks": 5016,
+      "selected_shell_counts": {
+        "4": {
+          "sources": 282,
+          "survive_seven": 205
+        },
+        "3": {
+          "sources": 561,
+          "survive_seven": 382
+        },
+        "2": {
+          "sources": 1129,
+          "survive_seven": 799
+        },
+        "1": {
+          "sources": 2246,
+          "survive_seven": 1602
+        },
+        "0": {
+          "sources": 4495,
+          "survive_seven": 3151
+        }
+      }
+    }
+  ]
+}

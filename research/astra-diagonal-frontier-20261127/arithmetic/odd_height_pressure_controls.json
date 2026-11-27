@@ -1,0 +1,35 @@
+{
+  "angle_weight_bins": 64,
+  "block_length": 32,
+  "literal_grade_calendars": 254,
+  "lower_loss_target": "263/10000",
+  "max_norm_numerator": 2335098109,
+  "mean_norm": "209707481425/34359738368",
+  "occupation_profile": [
+    [
+      "2",
+      "51/500",
+      "6649/100000"
+    ],
+    [
+      "9/4",
+      "9/200",
+      "119/5000"
+    ],
+    [
+      "7/3",
+      "27/1000",
+      "131/10000"
+    ],
+    [
+      "12/5",
+      "13/1000",
+      "3/500"
+    ]
+  ],
+  "ordinary_edges": 9207,
+  "phase_cells": 1024,
+  "rounding_denominator": 268435456,
+  "tail_cut": 12,
+  "upper_balanced_ratio": "96355/100000"
+}

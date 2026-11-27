@@ -171,7 +171,7 @@ An explicit sufficient target is a nonnegative sequence \(h_k\) satisfying
 
 Zero values can leave unused native clocks out of the target. `loss_hazard_implies_collatz` proves that (7) implies universal convergence, using (4) and the actual-source finite criterion. The formal divergence hypothesis is stated with arbitrarily large finite rational partial sums. **No such sequence is constructed here.** In particular a loss estimate for recent sources alone cannot replace the factor \(J_k\) in (7).
 
-The separate mass packet obtains a relative loss only for recent odd-clock cohorts and identifies an obstruction to bounded-weight reanchoring inside a hypothetical bad component. Converting one of those estimates into (1) or (7) is not a formalization task: it is the missing mathematical assertion about old ordinary sources.
+The separate mass packet obtains recent odd-clock loss, [native source-shell loss](mass/NATIVE_SOURCE_SHELL_LOSS.md), and a source-qualified [linear-age relative loss](mass/LINEAR_AGE_DEATH_CLOCK.md) on each original bounded-ratio interval. That last result compares the same population at two positive linear ages, but its age range is a small fixed fraction of the original source bit length. A fixed integer eventually has age far beyond that range. The component argument also obstructs bounded-weight reanchoring inside a hypothetical bad component. Extending these estimates to (1) or (7) requires a new mathematical assertion about arbitrarily old ordinary sources.
 
 ## Finite controls
 
