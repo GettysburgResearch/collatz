@@ -1,0 +1,52 @@
+{
+  "all_words_up_to_length_eight": {
+    "exact_contacts": 496,
+    "partitions": 11770,
+    "piece_cuts": 31214,
+    "words": 510
+  },
+  "one_run_minima": [
+    {
+      "least": 15,
+      "length": 8,
+      "odd_length": 4,
+      "odd_start": 0,
+      "words": 37
+    },
+    {
+      "least": 1887,
+      "length": 16,
+      "odd_length": 5,
+      "odd_start": 0,
+      "words": 137
+    },
+    {
+      "least": 53024286,
+      "length": 32,
+      "odd_length": 4,
+      "odd_start": 1,
+      "words": 529
+    },
+    {
+      "least": 27091966508384256,
+      "length": 64,
+      "odd_length": 32,
+      "odd_start": 14,
+      "words": 2081
+    },
+    {
+      "least": 406845894109281856753388828802154496,
+      "length": 128,
+      "odd_length": 70,
+      "odd_start": 23,
+      "words": 8257
+    },
+    {
+      "least": 17994598706604298414606227277928546856543015847508693416257758985533259775,
+      "length": 256,
+      "odd_length": 32,
+      "odd_start": 0,
+      "words": 32897
+    }
+  ]
+}

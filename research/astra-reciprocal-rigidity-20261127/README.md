@@ -57,6 +57,20 @@ operators has the same essential norms on every ordinary component.
 The latter identifies a limitation of those tests; it does not identify
 all components with the known basin or settle the exact kernel at 1.
 
+## Third checkpoint
+
+[The third checkpoint](THIRD_CHECKPOINT.md) gives a finite executable
+decision for bounded odd-step smaller visitors at every lower clock,
+including the exact scale-sensitive postpeak consumer. It proves the
+sharp six-even residual threshold, full-denominator restrictions for
+two-swap rotations and boundedly many odd runs, and an exact cyclotomic
+formula for symbol-dilation denominator exponents. Its ordinary clock
+bound sums the largest fibers across every component. A separate
+small-anchor theorem forces a physical return under a bounded-piece
+decomposition, with the corresponding rational denominator cost retained.
+The new decision procedure, structural hypotheses, and averaged clock
+estimate do not themselves supply universal convergence.
+
 ## Source intake and credit
 
 The branch starts from main at

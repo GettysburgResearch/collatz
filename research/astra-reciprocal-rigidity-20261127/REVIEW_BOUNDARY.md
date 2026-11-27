@@ -3,7 +3,10 @@
 The project remains unsolved. These notes give the review boundary of the
 first checkpoint. The [second checkpoint](SECOND_CHECKPOINT.md) records
 the subsequent mathematical reconstruction and its remaining gaps;
-exact artifact identities and build executions belong
+the [third checkpoint](THIRD_CHECKPOINT.md) adds the finite all-clock
+selector, whole-denominator structured-word restrictions, ordinary
+clock dispersion, and the small-anchor source-height alternative.
+Exact artifact identities and build executions belong
 in the separate receipt archive. A verdict applies to the stated claim
 and frozen file, never automatically to neighboring work or a later head.
 
@@ -127,3 +130,33 @@ The root and all three research lanes rejected duplicate directions before
 turning to the narrower results above. The next round is aimed at the
 unresolved ordinary selection or arithmetic restriction, not at declaring
 an equivalent formulation to be a completed proof.
+
+## Third-checkpoint review boundary
+
+The root independently reconstructed the finite selector's physical
+first crossing and both directions of its postpeak transfer. The Boolean
+reference implementation now has a Lean specification against the actual
+positive-source arbitrary-clock assertion. This verifies a bounded budget
+decision; it does not prove that every source has a successful budget.
+The common protected-class count is a written theorem, with Weaver 178's
+earlier signed-origin and Kraft mechanism explicitly credited.
+
+The cycle review retained the cancelled factor throughout. For opposite
+swaps an entire geometric quotient divides the reduced denominator; for
+bounded runs the surviving homogeneous factor is shown prime to six and
+its remaining gcd is controlled before taking logarithms. The exact
+symbol-dilation formula separately identifies symbolic cancellation and
+uses the outside-S theorem only on coprime cofactors. The root and the
+rigidity lane independently reviewed the rational-piece denominator
+extension. The source-height proof uses a second denominator clearing
+that contains only the small-anchor endpoint coordinates, so it does
+not silently pay another source denominator.
+
+For clocks, the root reconstructed the common positive error measure,
+the finite-support disappearance, and the simultaneous treatment of
+cycle cuts. The normalization is by the ambient ordinary prefix. A
+selected sparse subset cannot inherit a relative estimate without an
+additional argument. In the small-anchor theorem, chronological
+projection produces an actual physical state equal to the anchor;
+the finite Lean consumer does not certify the imported Subspace Theorem
+or manufacture the assumed bounded-piece decomposition.
