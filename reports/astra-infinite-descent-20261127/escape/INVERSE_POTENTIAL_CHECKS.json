@@ -1,0 +1,56 @@
+{
+  "scope": "every ternary-unit class, independently searched legal positive inverse witness",
+  "trits_in_potential": 12,
+  "quotient": 531441,
+  "classes_checked": 1062882,
+  "potential_min": 0,
+  "potential_max": 48,
+  "uncompressed_sha256": "ca7c5f953992887eceb13b181e5db946b0959ddc6f23c66db3a609377bb30562",
+  "compressed_sha256": "62e169c1d97002dafb71e83bff9f333eb11f80975d4fd6fc3d88cf880d018151",
+  "smallest_witness_gap_histogram": {
+    "1": 289870,
+    "2": 289870,
+    "3": 177147,
+    "4": 177147,
+    "5": 64424,
+    "6": 64424
+  },
+  "certified_inequality": "6*e + V(next) <= 13 + V(current)",
+  "ordinary_paths": [
+    {
+      "target": "1",
+      "grade": 512,
+      "physical_clock": 1024,
+      "source_bits": 1,
+      "source_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "target": "5",
+      "grade": 512,
+      "physical_clock": 933,
+      "source_bits": 124,
+      "source_sha256": "c1927e58b9692429bbc0a80929aeee1f63942ba52c581e4d0ddebd0bf574ef14"
+    },
+    {
+      "target": "7",
+      "grade": 512,
+      "physical_clock": 961,
+      "source_bits": 153,
+      "source_sha256": "ddd10554af5a4f2cc49ad806a1c3368aefc535d905fe4f2d176117f67c270ecd"
+    },
+    {
+      "target": "19",
+      "grade": 512,
+      "physical_clock": 932,
+      "source_bits": 125,
+      "source_sha256": "b2ebfc6fe9a2b118d3b9217af7954e03107887e41ffe6bd404d42730f6ba2f66"
+    },
+    {
+      "target": "1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794687",
+      "grade": 512,
+      "physical_clock": 932,
+      "source_bits": 620,
+      "source_sha256": "7fff5ee6ced03d478fe08b69ebca160b5ce6b1a48ccc4928a0d8bee0655d3c8e"
+    }
+  ]
+}

@@ -3,15 +3,73 @@
 **Collatz remains OPEN.** This branch contains formal reciprocal-mass
 and bounded-orbit equivalences, unconditional ordinary first-hit
 constructions, written sparse inverse counts, and complete-denominator
-results and counterexamples. New written results give a uniform
-first-arrival source cutoff and a dyadic mean bound for the original
-stopped-trace rate statistic. It does not prove universal convergence or
-exclude all nontrivial cycles.
+results and counterexamples. The final pass gives exponential complete
+denominator growth for arbitrary rotations with at most six odd-valuation
+mismatches, whole ordinary families with sharp earlier-peak merger times,
+and explicit finite certificates for controlled inverse clocks and mass.
+It does not prove universal convergence or exclude all nontrivial cycles.
 
 The working map is the shortcut Collatz map, halving even inputs and
 taking odd inputs to \((3n+1)/2\). An odd departure count and a shortcut
 clock are kept separate throughout. Source inputs are positive ordinary
 integers whenever an ordinary conclusion is stated.
+
+## Strongest results of the final pass
+
+**Arbitrary rotations through six mismatches.** If a primitive positive
+rational cycle has odd period \(p\), complete reduced denominator \(q\),
+and a proper rotation of its odd-valuation word differing in at most six
+positions, then \(q>2^{p/4096}\) for all sufficiently large \(p\).
+There is no bound assumed on individual valuations, clock error, physical
+spread, or rotation order. In full shortcut period \(h\), the same class
+has \(\liminf\log_2q/h>1/21600\). Thus only finitely many primitive
+positive integer cycles can have such a rotation. The onset is
+ineffective and the exceptional set is not explicitly excluded. The
+[written proof](cycles/ROTATION_DENOMINATORS.md) uses Evertse's theorem
+and the classical minimum bound. Lean proves the new physical charge
+inequalities and all 29 finite branches, including real interpolation;
+it does not formalize Evertse's theorem or the entire infinite deduction.
+An [independent review](cycles/INDEPENDENT_DENOMINATOR_REVIEW.md) rebuilds
+the affine evaluator separately and checks native cyclic identities.
+
+**Sharp whole classes of ordinary supplied sources.** Thirteen complete
+canonical valuation classes have their first possible earlier-peak
+meeting exactly one step past their valuation. Every pair of independent
+earlier clocks is excluded before that deadline, and a strictly smaller
+canonical parent is supplied at it. The proved height saving reaches
+17,026 bits. These are infinite classes of the original ordinary inputs,
+with [kernel proofs](merger/ValuationDictionary.lean). Their lower
+canonical partners are not proved to reach one. The
+[exact release census](merger/RELEASE_CENSUS.md) separately shows that
+all 192 original cofactor-one inputs miss every earlier peak through
+nine steps past their valuation, despite their eventual formal returns.
+Its complete ordinary integer verifier determines both global earliest
+dates for every supplied input, with and without the prescribed canonical
+price condition. Every exact row persists on a specified infinite
+cofactor progression. The sharp dates are finite integer evidence; the
+existing all-192 paid existence theorem is separately kernel checked.
+
+**Controlled inverse paths and the signed-rate boundary.** A finite
+potential gives actual positive unit inverse paths with every gap at most
+six and total clock \(6m\le13d+48\) at every requested odd grade \(d\).
+Together with the ordinary pattern router, this gives first arrivals of
+arbitrary finite patterns at every sufficiently large prescribed grade
+and every prescribed clock above slope \(13/6\). The large potential's
+1,062,882 local cases are checked by exact integer arithmetic; its
+universal physical lift is in Lean. A separate small table is entirely
+kernel checked and gives total capped inverse multiplier mass at least
+\(0.052(3/4)^d\). The latter rules out the required faster exponential
+bound for a raw positive-row replacement of the original signed test.
+[Inverse certificates and precise scope](escape/SIX_GAP_POTENTIAL.md).
+
+For the original signed statistic itself,
+[finite rational tables](escape/FINITE_ORIGINAL_RATE.md) approximate
+\(Q_j^*\) within \((12j+18)(2/3)^j\), using total clocks at most
+\(8(j+1)\) and targets at most \(\lceil(3/2)^j\rceil\).
+The required smallness of those tables on an unbounded sequence remains
+open. The narrow marked component is proved empty at every positive odd
+target greater than one through grade 92,274,687, by a formal transfer
+from an independently checked finite convergence prefix.
 
 ## Read the mathematical results
 
@@ -77,6 +135,12 @@ source and checks the lift in Lean; it does not prove that \(Y\) or
 \(z\) itself reaches 1. The
 [case table and scope](merger/FIXED_MERSENNE.md) distinguish this finite
 result from the still-open statement for every positive parameter.
+
+Concurrent PR201 supplies physical earlier-peak contacts for 512 inputs,
+and the updated PR206 supplies infinite pre-ascent return classes. These
+are credited in the [late frontier comparison](../../reports/astra-infinite-descent-20261127/LATE_FRONTIER.md).
+Formal canonical returns, their prescribed price condition, and global
+earliest physical meeting times are separate assertions.
 
 ## The remaining universal step
 
@@ -170,6 +234,8 @@ and a PR-description inspection. The new work sits on an isolated branch;
 it does not merge or rewrite the existing research PRs.
 
 - [Source intake and review scope](../../reports/astra-infinite-descent-20261127/SOURCE_INTAKE.md)
+- [Final checkpoint and proof boundaries](../../reports/astra-infinite-descent-20261127/CHECKPOINT_05.md)
+- [Concurrent frontier and attribution](../../reports/astra-infinite-descent-20261127/LATE_FRONTIER.md)
 - [Pinned imported Lean sources](imports/pr201/SOURCES.json)
 - [Portable strict Lean rebuild](replay_lean.py)
 

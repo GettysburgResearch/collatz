@@ -53,7 +53,7 @@ Choose $a=\max(d,\lceil\sqrt p\rceil)$. Then $a\to\infty$, $a=o(p)$, and $m<2^a<
 \[
                      P_w(a)\le 2d+3s_0(a+1)\le (2+6s_0)a.
 \]
-Use Paper 173/v1's theorem at this **actual intermediate integer** $z$, with $n=\lfloor\log_2z\rfloor=a$, $b=0$, $\eta=1/2$, and fixed $A=3+6s_0$. This contradicts the necessary local factor count. The fixed $K$ supplied by that paper is independent of $d,p$ and $z$. The argument proves the stated unbounded-order exclusion. It does not exclude an unbounded ordinary family with a bounded-order odd rotation, such as order two, having bounded mismatch count.
+Use Paper 173/v1's theorem at this **actual intermediate integer** $z$, with $n=\lfloor\log_2z\rfloor=a$, $b=0$, $\eta=1/2$, and fixed $A=3+6s_0$. This contradicts the necessary local factor count. The fixed $K$ supplied by that paper is independent of $d,p$ and $z$. The argument proves the stated unbounded-order exclusion. For bounded orders the [separate denominator theorem](ROTATION_DENOMINATORS.md) covers mismatch counts through six. Whether the count must grow for all bounded-order rotations remains open.
 
 
 The finite replay checks the four track charges and exact factor preservation on 19,658 native cycle-and-length cases, plus eight tall-roof cases with an original valuation up to 1,501. [Control script](check_cycle_rotations.py) · [Archived counts](../../../reports/astra-infinite-descent-20261127/cycles/ROTATION_CONTROLS.json)

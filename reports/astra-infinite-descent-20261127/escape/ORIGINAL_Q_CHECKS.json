@@ -1,0 +1,119 @@
+{
+  "scope": "full infinite original statistic at each listed grade, using verified marked emptiness",
+  "fixed_point_bits": 40,
+  "summation_extra_bits": 24,
+  "exactly_rechecked_full_levels": 5,
+  "all_target_marked_empty_via_inclusive_verified_prefix": 8,
+  "rows": [
+    {
+      "grade": 1,
+      "ternary_period": 27,
+      "strict_positive_sites_in_first_odd_period": 8,
+      "lower": "122108288794405593/18446744073709551616",
+      "upper": "9557071715516284723/747093134985236840448",
+      "remaining_target_upper": "1/162",
+      "lower_scaled_1e9": 6619503,
+      "upper_scaled_1e9": 12792344
+    },
+    {
+      "grade": 2,
+      "ternary_period": 81,
+      "strict_positive_sites_in_first_odd_period": 22,
+      "lower": "35705975492150945/4611686018427387904",
+      "upper": "10982395057275585443/1120639702477855260672",
+      "remaining_target_upper": "1/486",
+      "lower_scaled_1e9": 7742499,
+      "upper_scaled_1e9": 9800113
+    },
+    {
+      "grade": 3,
+      "ternary_period": 243,
+      "strict_positive_sites_in_first_odd_period": 65,
+      "lower": "8172481515408357/9223372036854775808",
+      "upper": "10569425068863574771/6723838214867131564032",
+      "remaining_target_upper": "1/1458",
+      "lower_scaled_1e9": 886062,
+      "upper_scaled_1e9": 1571934
+    },
+    {
+      "grade": 4,
+      "ternary_period": 729,
+      "strict_positive_sites_in_first_odd_period": 200,
+      "lower": "13647202539386535/18446744073709551616",
+      "upper": "39069804331542651479/40343029289202789384192",
+      "remaining_target_upper": "1/4374",
+      "lower_scaled_1e9": 739816,
+      "upper_scaled_1e9": 968441
+    },
+    {
+      "grade": 5,
+      "ternary_period": 2187,
+      "strict_positive_sites_in_first_odd_period": 592,
+      "lower": "2472218972657323/4611686018427387904",
+      "upper": "74104288847071270181/121029087867608368152576",
+      "remaining_target_upper": "1/13122",
+      "lower_scaled_1e9": 536077,
+      "upper_scaled_1e9": 612285
+    },
+    {
+      "grade": 6,
+      "ternary_period": 6561,
+      "strict_positive_sites_in_first_odd_period": 1808,
+      "lower": "1594385688138021/2305843009213693952",
+      "upper": "130140867525771881425/181543631801412552228864",
+      "remaining_target_upper": "1/39366",
+      "lower_scaled_1e9": 691454,
+      "upper_scaled_1e9": 716858
+    },
+    {
+      "grade": 7,
+      "ternary_period": 19683,
+      "strict_positive_sites_in_first_odd_period": 5464,
+      "lower": "11245906458932909/18446744073709551616",
+      "upper": "336641506849415959087/544630895404237656686592",
+      "remaining_target_upper": "1/118098",
+      "lower_scaled_1e9": 609641,
+      "upper_scaled_1e9": 618110
+    },
+    {
+      "grade": 8,
+      "ternary_period": 59049,
+      "strict_positive_sites_in_first_odd_period": 16644,
+      "lower": "1285305427451477/2305843009213693952",
+      "upper": "1830727838152503264221/3267785372425425940119552",
+      "remaining_target_upper": "1/354294",
+      "lower_scaled_1e9": 557412,
+      "upper_scaled_1e9": 560236
+    },
+    {
+      "grade": 9,
+      "ternary_period": 177147,
+      "strict_positive_sites_in_first_odd_period": 50904,
+      "lower": "11668147325272355/18446744073709551616",
+      "upper": "1552539572331268711151/2450839029319069455089664",
+      "remaining_target_upper": "1/1062882",
+      "lower_scaled_1e9": 632531,
+      "upper_scaled_1e9": 633473
+    },
+    {
+      "grade": 10,
+      "ternary_period": 531441,
+      "strict_positive_sites_in_first_odd_period": 154374,
+      "lower": "7162489153543321/9223372036854775808",
+      "upper": "22847891926888084244147/29410068351828833461075968",
+      "remaining_target_upper": "1/3188646",
+      "lower_scaled_1e9": 776558,
+      "upper_scaled_1e9": 776874
+    },
+    {
+      "grade": 11,
+      "ternary_period": 1594323,
+      "strict_positive_sites_in_first_odd_period": 468572,
+      "lower": "2776234360818273/4611686018427387904",
+      "upper": "53123919922606387961753/88230205055486500383227904",
+      "remaining_target_upper": "1/9565938",
+      "lower_scaled_1e9": 601999,
+      "upper_scaled_1e9": 602106
+    }
+  ]
+}

@@ -60,6 +60,14 @@ private theorem pad (r y : ℕ) (unit : y%3≠0) :
     rw [rz,oz,ow] at oa
     exact ⟨z,L+e,zu,ra,oa,by omega⟩
 
+/-- Every fixed unit target and prescribed grade have an ordinary unit
+predecessor with a physical clock at most three times the grade plus three. -/
+theorem unit_budget (r y : ℕ) (unit : y%3≠0) :
+    ∃z L, z%3≠0 ∧ run L z=y ∧ odds L z=r ∧ L≤3*r+3 := by
+  obtain ⟨z,L,zu,runs,grade,budget⟩:=pad r y unit
+  have := pot_le y
+  exact ⟨z,L,zu,runs,grade,by omega⟩
+
 def Twin (s d D g y c : ℕ) : Prop :=
   ∃ x, 0<x ∧ x ≡ c [MOD 3^s] ∧ run D x=y ∧ run D (x+d)=y ∧
     odds D x=g ∧ odds D (x+d)=g

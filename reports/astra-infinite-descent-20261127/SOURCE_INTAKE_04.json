@@ -1,0 +1,86 @@
+{
+  "schema": "collatz-source-intake/v4",
+  "created_utc": "2026-11-27T17:21:10.370648+00:00",
+  "scope": "Additional exact prior sources consumed in the final pass. Source review, finite replay, fresh Lean checking and written infinite deductions remain distinct. Earlier intake receipts continue to identify classical and prior manuscript inputs.",
+  "repository_sources": [
+    {
+      "repository": "stgoa/collatz",
+      "head": "d99505da4bc51849169cce0a7a46f0fce302afd0",
+      "path": "areas/cycles/questions/rotation-distance-finite-exceptions.md",
+      "review": "Full pinned question and known-progress section read. It explicitly leaves arbitrary-order five and six mismatches open, while recording four-mismatch finiteness and half-period six-mismatch finiteness. Used for precise attribution, not as a proof input.",
+      "sha256": "b07aadd228e53e590d6d2401683973fed9212961d7ea8a8b6d3611e18c096632",
+      "git_blob": "783ab2296f71ec205b1540a38da557671f9640c6"
+    },
+    {
+      "repository": "stgoa/collatz",
+      "head": "d99505da4bc51849169cce0a7a46f0fce302afd0",
+      "path": "areas/cycles/results/shared-background-denominator-law/README.md",
+      "review": "Full statement, proof summary, Fourier modes, numerical cancellation controls, fixed-marker-total restriction and scope read. The prior exact factorization/resultant law is credited; the moving-marker asymptotic is separately reconstructed.",
+      "sha256": "d5d9bc4f81af8acafecaac93b9c439ed4fa7b52942ee3296301237fe9d89892f",
+      "git_blob": "3891c23bf9d61afcb7f518c1dd5279db4129d124"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/PREFIX_COMPRESSION.md",
+      "review": "Complete constructive pair proof read and reconstructed: level-zero contraction charged to logarithmic gap decrease; arbitrary positive-level forced descent in at most7s/2 steps; normalized-offset growth and O(h+log gap) successful refinement of every prescribed class.",
+      "sha256": "eda057668ae31ca2d22d14b207da873b2d248a3fdfb08820c3de5b469786c09a",
+      "git_blob": "0f393fe3bf462a4782c8ae22f2ae7ee7894a48a0"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/AFFINE_RAYS.md",
+      "review": "Read the affine-pair classification and its quantitative O(1+h+log coefficient/offset size) extension proof, including exact clock and grade differences. Later counting and density consequences in this source are not needed for the new fixed-valuation construction.",
+      "sha256": "fd54ecba93d35359f04977984c496e18f15a68ab2c333efd4da79e5799d6a548",
+      "git_blob": "e24351905864ee6b9acde1f8ec99e1e7a5203b58"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/THREE_RAY_UPPER.md",
+      "sha256": "d978ba404d97224c4b3c17bd20b3df4c8f92dbd3237d16b266cc40a2ed50ae5a",
+      "git_blob": "e7be1addad96aca971e4ecc1aea09a1d1086ed75",
+      "review": "Complete general-state square-root proof independently read and reconstructed."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/MERSENNE_EXPONENT_DESCENT.md",
+      "sha256": "202a7143a21c3ca16b1b05821dcbeef399bbebd3c61a5e8533b5e95bc014dd75",
+      "git_blob": "225fd2b0e0496be8fed8e701c701d01c613a1b84",
+      "review": "Read the exact ordinary peak lifting, original exponent convention and unequal-clock source reductions; later unrelated inverse-predecessor arguments are not claimed independently rebuilt."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "ed7a6fe30b8602407f77855ceb74ce0489ce9c10",
+      "files": [
+        {
+          "path": "research/astra-unconventional-20261126/descent/Portal.lean",
+          "local": "Portal.lean",
+          "git_blob": "cd74b20f90eef5bf5a52ead577e70e2954486425",
+          "sha256": "7a0a65dbc67f6cf52d28099a7cdaf83eeda2fe88e5684bdfc102bffbc377cc14"
+        },
+        {
+          "path": "research/astra-unconventional-20261126/descent/SignedDelay.lean",
+          "local": "SignedDelay.lean",
+          "git_blob": "4c3acddc493159c42c5b47633c1d4cdecbf0c552",
+          "sha256": "501d0b5d353defbddea9c4c401221f379a320e8f0b6160cabf27292fcd828045"
+        }
+      ],
+      "review": "Both vendored files byte-compared to exact pinned GitHub source by root. Root read shortcut-map interfaces, SignedPeakDelay.all_earlier and full private base_width induction reused in the new cofactor lift. Full module/dependency and private-declaration checking occurs in the final clean Lean replay; no claim of line-by-line review of every prior theorem."
+    }
+  ],
+  "primary_manuscripts": [
+    {
+      "authors": "Jan-Hendrik Evertse",
+      "title": "On sums of S-units and linear recurrences",
+      "year": 1984,
+      "url": "https://www.numdam.org/item/CM_1984__53_2_225_0.pdf",
+      "download_sha256": "5b02e0e31c546f7f8c6c34071b2caa4d7137be24f16d11d483cdcc65377b2f6d",
+      "review": "Root downloaded the primary PDF, rendered and visually inspected printed pages227 and228. Checked Corollary1 equation12 and, principally, Theorem2 equation14 with its S,T norms, exponent sign and all nonempty RHS subsum condition. The original Subspace Theorem proof is an external mathematical input."
+    }
+  ],
+  "independent_review": "The escape agent independently reconstructed the final cycle denominator argument and reimplemented the entire affine evaluator without importing production row definitions. Exact source and control receipts accompany the result.",
+  "boundary": "No result resolves the universal Collatz conjecture."
+}

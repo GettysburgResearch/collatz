@@ -1,4 +1,4 @@
-Latest record: [fourth reproducible checkpoint](CHECKPOINT_04.md), 74 modules and 3,117 declarations, including 1,486 private declarations. Earlier exact records below remain preserved.
+Latest record: [fifth reproducible checkpoint](CHECKPOINT_05.md), 93 modules and 3,958 declarations, including 1,733 private declarations. All 26 final finite controls also passed in normal and optimized mode. Earlier exact records below remain preserved.
 
 The [second checkpoint](CHECKPOINT_02.md) adds a fresh 42-module,
 1,901-declaration replay. The first checkpoint below remains its own
