@@ -11,10 +11,10 @@ Konieczny previously constructed a binary sequence invariant under the adjacent 
 
 ## Balanced waves on logarithmic shells
 
-Write \(\alpha=\log_2 3\), \(\mathbb T=\mathbb R/\mathbb Z\), and let \(\lambda\) denote normalized circle length. Take increasing integers \(q_k\to\infty\) so that \(q_{k+1}/q_k\) is odd and \(\|q_k\alpha\|\to0\), where \(\|\cdot\|\) is distance to an integer. Given \(q_k\), the odd multiples of \(q_k\alpha\) are dense on the circle, by irrationality; choose a larger such multiple sufficiently close to zero. Choose increasing integer stage starts \(J_k\) with
+Write \(\alpha=\log_2 3\), \(\mathbb T=\mathbb R/\mathbb Z\), and let \(\lambda\) denote normalized circle length. Take increasing integers \(q_k\to\infty\) so that \(q_{k+1}/q_k\) is odd and \(\|q_k\alpha\|\to0\), where \(\|\cdot\|\) is distance to an integer. Given \(q_k\), the odd multiples of \(q_k\alpha\) are dense on the circle, by irrationality; choose a larger such multiple sufficiently close to zero. Choose increasing integer stage starts \(J_k\), with \(J_1\ge4\), such that
 \(J_{k+1}-J_k\to\infty\) and \(q_{k+1}/2^{J_k}\to0\), possible after choosing the frequencies.
 
-Put \(f_q(u)=\mathbf1_{\{\{qu\}<1/2\}}\). At an integer shell index \(J_k\le j<J_{k+1}\), let \(s=(j-J_k)/(J_{k+1}-J_k)\) and define \(F_j(u)\) to be \(f_{q_{k+1}}(u)\) if \(\{2q_ku\}<s\), and \(f_{q_k}(u)\) otherwise. The finitely many earlier indices can use \(f_1\).
+Put \(f_q(u)=\mathbf1_{\{\{qu\}<1/2\}}\). At an integer shell index \(J_k\le j<J_{k+1}\), let \(s=(j-J_k)/(J_{k+1}-J_k)\) and define \(F_j(u)\) to be \(f_{q_{k+1}}(u)\) if \(\{2q_ku\}<s\), and \(f_{q_k}(u)\) otherwise. The finitely many earlier indices use \(f_1\). In the final six-free-core coloring below, this ensures \(c(7)=0\) and \(c(11)=1\): both numbers are six-free, \(7^2>2^5\), and \(11^2<2^7\). Since \(T(7)=11\), the exact affine Collatz identity fails at this explicit input.
 
 1. Each mixed wave has period \(1/q_k\), with mean \(1/2\) on that period. Shifting by \(1/(2q_k)\) preserves the gate and reverses both binary waves, because the frequency ratio is odd.
 2. It has \(O(q_{k+1})\) discontinuities. A shift by \(\alpha\) changes its value on circle measure

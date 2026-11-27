@@ -110,7 +110,8 @@ reciprocal-height correction. Future minima of the corrected partial
 sums produce nonnegative cyclic charges. Their total dominates the
 cycle gap. At every phase carrying a positive charge, all future
 prefixes satisfy a lower bound on odd frequency close to \(p\).
-The charge is at most a constant times the reciprocal phase height.
+At phase height \(y\), the charge is at most \((B+1/2)/y\), where
+\(B\) is the chosen correction parameter.
 Paper 217 is credited for the future-minimum charging architecture.
 
 A different witness handles a cycle that dips below \(M\). Its least
@@ -152,7 +153,8 @@ a denominator cost:
 \]
 where \(P\) is the resulting least physical period and \(c>0\) is
 absolute. As the parent period grows, the lower bound exceeds every
-fixed power of the full macro-word length. Pure repetition instead
+fixed power of \(nk\), where \(n\) is the parent period and \(k\)
+is the least dictionary period of the mixed word. Pure repetition instead
 preserves the parent's least period and denominator.
 
 The elementary step uses strict same-side convexity of affine anchors
@@ -161,7 +163,7 @@ use the cited logarithm-separation bound. The argument explicitly keeps
 the least dictionary period separate from the least physical period.
 PR200's prior compact-shadow divisibility argument receives credit.
 
-At the minimum of an ordinary cycle of length \(N\), every proper prefix
+At the minimum of an ordinary cycle of least period \(N\), every proper prefix
 of length \(N-o(N)\) has cyclic denominator \(2^{N+o(N)}\). The exact
 full return has denominator one. The proper-prefix displacement is
 nonzero; at the full return it is zero. The two endpoint congruences
@@ -308,7 +310,7 @@ using them implicitly.
 | Arbitrarily long positive lifts give one positive infinite exceptional source. | The signed ray from \(-5\) has maximal, expanding prefixes and arbitrarily large positive finite lifts. The unique source realizing the entire ray remains \(-5\). |
 | Many predecessors of a bad minimum amplify the number of bad minima. | No smaller visitor anywhere on a complete future is exactly the property of being the minimum of one's orbit component. There is one such minimum per component. |
 | Population estimates and preserved finite traces exclude escape. | A sparse changed-map construction plants an escaping spine while preserving the specified trace and population properties. It is explicitly a changed map. |
-| Complete smaller-meeting clocks above a finite cutoff determine convergence. | Changing one arbitrarily high known-convergent odd gate into a fixed point preserves every such clock above its finite future, while two positive-density basins force separated long-time odd frequencies. |
+| Complete smaller-meeting clocks above a finite cutoff determine convergence. | Changing one arbitrarily high known-convergent odd gate into a fixed point preserves every such clock above its finite future, while two positive-lower-density basins force separated long-time odd frequencies. |
 | Positive color densities, negligible adjacent boundary and dilation identities force one component. | A generic coloring has both colors of density one half, exact invariance under multiplication by two and three, and adjacent boundary of density zero. The exact affine Collatz relation is still a separate requirement. |
 | The other predecessor branch always has a uniform inverse-logarithmic relative share. | Weaver Paper 202 already gives counterexamples in the tree of one. The source check prevented use of this false unrestricted estimate. |
 
@@ -321,7 +323,7 @@ The underlying proofs and exact scopes are in
 Konieczny's related asymptotic-automaticity construction is credited
 beside the generic coloring.
 
-For the true map, an escaping odd seed \(s\) would force the full
+For the true map, an escaping odd seed \(s\) prime to three would force the full
 other-parent shares along its successive odd states \(x_j\) to satisfy
 \[
  \sum_j\frac{d(3x_j+1)}{d(Tx_j)}
@@ -349,7 +351,7 @@ is credited.
 For a positive source \(y\), let \(F_t(y)\) count odd departures in its
 first \(t\) shortcut steps. Define the finite quantities
 \[
- L_X=\left\lceil(\log_2(2X))^2\right\rceil,\qquad
+ L_X=\left\lceil\log_2(2X)\right\rceil^2,\qquad
  V_X=\operatorname{Var}_{1\le y\le X}\!\left(\frac{F_{L_X}(y)}{L_X}\right).
 \]
 The [source-variance reduction](descent/postpeak/stopped/SOURCE_VARIANCE.md)
@@ -369,8 +371,8 @@ retained in the manuscript. They were read, not rebuilt in this sprint.
 The new diagonal argument fixes a target \(a\). The maximum first
 arrival time from its basin members below any fixed bound is finite.
 Choose a diverging threshold so slowly that this maximum is at most
-\(\sqrt{\log n}\). The July theorem then makes almost every source
-in that basin reach \(a\) in \(O(\log n)\) raw steps. If Collatz holds,
+\(\sqrt{\log n}\). The July theorem then makes all but \(o(X)\) members of that basin
+below \(X\) reach \(a\) in \(O(\log n)\) raw steps. If Collatz holds,
 almost every source below \(X\) therefore spends all but \(o(L_X)\)
 of its counted steps alternating on \(1,2\), and the variance vanishes.
 

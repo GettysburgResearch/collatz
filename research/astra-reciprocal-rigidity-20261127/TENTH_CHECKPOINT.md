@@ -27,7 +27,7 @@ In particular \(\lambda=11/38\) is permitted. Both signs and every
 word shape are included. The conclusion concerns the complete reduced
 denominator, with the actual numerator cancellation retained.
 
-Two reduced rational phases with denominators at most \(D\), magnitudes
+Two reduced rational phases of the same sign, with denominators at most \(D\), magnitudes
 in an interval of width \(X\), and the same \(t\) parity bits satisfy
 \(2^t\mid ae-bd\). Once \(2^t>D^2X\), distinct phases cannot share
 that word. This counts the entire denominator range in one step.
@@ -43,7 +43,7 @@ Set the floor and reciprocal correction parameter to \(100L(D)\),
 rounded upward. The earlier finite future-minimum charges now give a
 total high-minimum cycle gap at most
 \(CD^{2h_*}L(D)^{h_*-3/2}\). For a low-minimum cycle of period in
-\([N,2N]\), its \(N\) distinct phase numerators force a maximum at
+\([N,2N]\), its at least \(N\) distinct phase numerators force a maximum at
 least \(N/D\). Use the entire above-floor excursion, including its
 descent. The excursion has length at least
 \((8/3)\log_2(N/(2MD))\), which contains the needed parity word
@@ -98,7 +98,7 @@ positive source with no smaller visitor anywhere on its future.
 
 [SOURCE_VARIANCE.md](descent/postpeak/stopped/SOURCE_VARIANCE.md) defines
 \[
- L_X=\lceil(\log_2(2X))^2\rceil,\quad
+ L_X=\lceil\log_2(2X)\rceil^2,\quad
  V_X=\operatorname{Var}_{1\le n\le X}(F_{L_X}(n)/L_X),
 \]
 where \(F_t\) counts odd departures. Using Mazur's July arbitrary-
@@ -141,7 +141,7 @@ a sharper boundary test. Change the map at one arbitrarily high known
 convergent odd gate to make that gate fixed. Every complete
 first-smaller-meeting clock above the maximum of its finite original
 future is unchanged, pointwise. The change can avoid any prescribed
-finite set of verified traces. Two disjoint positive-density genuine
+finite set of verified traces. Two disjoint positive-lower-density genuine
 predecessor basins force separated long-clock odd frequencies under the
 modified map. This is a changed-map construction, not an ordinary
 counterexample. Its additional density claims concern fixed horizons.

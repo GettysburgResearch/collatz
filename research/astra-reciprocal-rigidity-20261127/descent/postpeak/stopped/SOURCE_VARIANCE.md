@@ -2,7 +2,7 @@
 
 For the shortcut map \(T\), write \(F_t(y)\) for the number of odd departures among the first \(t\) steps from \(y\). For each positive integer \(X\), set
 \[
- L_X=\left\lceil(\log_2(2X))^2\right\rceil,\qquad
+ L_X=\left\lceil\log_2(2X)\right\rceil^2,\qquad
  Z_X(y)=F_{L_X}(y)/L_X,\qquad
  V_X=\operatorname{Var}_{1\le y\le X} Z_X(y)
 \]
