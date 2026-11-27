@@ -41,3 +41,12 @@ The evidence archive is a separate commit from its source tree. See
 [TENTH_CHECKPOINT.md](../../../research/astra-reciprocal-rigidity-20261127/TENTH_CHECKPOINT.md)
 and [SIX_HOUR_REPORT.md](../../../research/astra-reciprocal-rigidity-20261127/SIX_HOUR_REPORT.md)
 for the actual conclusions and remaining obligations.
+
+## Final synthesis correction
+
+The subsequent [precision correction](synthesis-correction/README.md)
+retains all original execution records and separately validates corrected
+science commit `021fc652becb89d1fe62ed3896ca320c7df83ae9`, with tree
+`70802e8fb8203914026c7ab461ac6872a76588ec`. It restores omitted summary
+qualifications and gives a directly integer-computable variance clock.
+The principal exponents, proof status and cumulative counts are unchanged.
