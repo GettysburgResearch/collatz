@@ -1,0 +1,25 @@
+All minima through K=120. Largest source cap scanned: 103131
+K, e_K, b_K, minimizing source, sufficient cap
+1 2 1 1 1
+2 4 2 1 1
+3 6 3 1 2
+4 8 3 1 3
+5 10 4 1 4
+6 12 5 1 5
+7 14 5 1 7
+10 20 8 1 17
+20 40 15 1 315
+30 55 13 155 174
+40 69 10 31 48
+50 88 15 27 431
+60 106 19 1215 1913
+70 123 21 871 4248
+80 139 21 2919 4714
+90 156 23 3711 10465
+100 173 25 6171 23230
+110 191 29 48927 103131
+120 206 28 35655 57230
+Independent inverse compositions tested: 4706
+Ordinary ramp contacts, n<=512 and e<=72: 2401
+Physical Mersenne lifts (K,E,b,u,h): [(1, 2, 1, 1, 11), (2, 4, 2, 1, 13), (3, 6, 3, 1, 253), (4, 8, 3, 1, 919)]
+Second-halving explicit witnesses, bounded contacts, residual routes: (96, 858, 90)

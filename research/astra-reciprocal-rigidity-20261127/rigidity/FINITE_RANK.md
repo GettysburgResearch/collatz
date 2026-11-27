@@ -1,0 +1,21 @@
+# Linear complexity at finite ordinary height
+
+For a rational sequence `u(0),...,u(N)` let `L_N(u)` denote the smallest `d>=0` for which rational constants `c_0,...,c_(d-1)` give `u(j+d)=sum_{i<d} c_i u(j+i)` at every `j>=0` with `j+d<=N`. Order zero requires all terms to vanish. The indexing includes position zero.
+
+**Finite gap.** If `4u(2j)=u(j)` whenever `2j<=N`, then either all `N+1` terms are zero or `4 L_N(u) > N+2`. For `N=0` the only allowed value is zero. No archimedean bound, integrality, positivity or assumption about the odd-indexed entries is used. This theorem concerns the linear complexity of a chronological coefficient prefix, not the rank of an arbitrarily chosen square Hankel section.
+
+Suppose a nonzero prefix has a recurrence of order `d` with `4d-2<=N`; the case `d=0` is immediate. Extend the first `d` initial conditions using that recurrence to a sequence `v` on all nonnegative integers. The extension agrees on `0,...,N`. With `S` the left shift on sequences, choose an integer characteristic polynomial `p` of degree `d` and nonzero leading coefficient by clearing denominators. Then `p(S)v=0`. There is a degree-`d` integer polynomial `q` such that `p(X)p(-X)=q(X²)`: the product is even and its top coefficient is nonzero. It follows that `q(S)` kills `v(2j)` as a function of `j`. The product `p(S)q(S)` thus kills `4v(2j)-v(j)`. Its first `2d` terms vanish using indices through `4d-2`; uniqueness of finite-order recurrence extension gives `4v(2j)=v(j)` at every `j`.
+
+Here is an elementary arithmetic proof that a rational recurrence with this exact nonzero dyadic eigenvalue has only the zero solution over `Q`. Take a primitive integer annihilator `p` of minimal degree. Its reflection `p(-X)` is primitive and their product is primitive by Gauss's lemma. Therefore `q` is primitive: a common nonunit divisor of every coefficient of `q` would divide every coefficient of its expansion `q(X²)`. The dyadic identity implies that `q` kills `v` as well. The two integer polynomials have the same degree. The combination `lc(p)q - lc(q)p` either vanishes or would be a smaller annihilator. Thus they are proportional over `Q`, and primitiveness makes the proportionality factor a sign. Since `|lc(q)|=|lc(p)|²`, we get `|lc(p)|=1`. An integer recurrence with leading coefficient `±1` keeps a common denominator for its entire rational sequence, obtained by clearing its first `deg p` values. For a nonzero term `v(n)`, the values `v(2^j n)=4^{-j}v(n)` cannot share any finite denominator. This contradiction proves the assertion. This also gives a direct elementary proof of the needed special case of the Hecke-operator spectrum on rational power series.
+
+In particular, the same lower bound holds for the infinite stabilized ordinary coefficient array from [the ordinary spectrum](ORDINARY_SPECTRUM.md) on every prefix containing a bad start. It also holds for the computed finite graph `a_H` on `0,...,N` if `H>=N`, since every dyadic edge is retained. In fact at each pair `H>=N`,
+
+\[
+   4 L_N(a_H)\le N+2\quad\Longleftrightarrow\quad L_N(a_H)=0
+     \quad\Longleftrightarrow\quad
+     \text{every }1\le n\le N\text{ hits 1 before leaving }[1,H].
+\]
+
+For the last equivalence a finite functional component contains 1 precisely when the forward path of any member reaches 1 before its first edge leaving the cutoff. With `H>=2`, such a component contains the `1,2` cycle and hence has no exit. At `H=1` its only vertex already is 1. This equivalence means that a low rank at these cutoffs is as strong as directly certifying all the corresponding positive ordinary starts. No upper bound on rank has been established.
+
+In particular, if `k>=2`, `2^k-1<=N<=H<3^k-1`, the finite prefix must have the high rank. Its source `2^k-1` has successive ordinary states `3^j 2^(k-j)-1` through `0<=j<=k`; all are greater than 1 and the last exceeds `H`. Taking `k=floor(log_2(N+1))` rules out a low rank uniformly on an explicit superlinear range of diagonal cutoffs, even if every positive integer eventually converges. The fixed-`N`, increasing-`H` order of limits is essential. For fixed `N` the actual exact array `a_H|_[0,N]`, and hence its rational prefix order, eventually stabilizes.
