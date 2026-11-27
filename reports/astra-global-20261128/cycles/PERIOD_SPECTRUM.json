@@ -1,0 +1,17 @@
+{
+  "explicit_separation_period_exponent": "2527/2917",
+  "exponent_three_limit": "38/77",
+  "native_cycles": {
+    "charged_prefixes": 35321,
+    "negative_cycles": 97,
+    "positive_charged_cuts": 3561,
+    "positive_cycles": 314
+  },
+  "scope": "Exact finite arithmetic and native trace controls, not an asymptotic proof.",
+  "three_logarithm_period_exponent": "26069273/39069273",
+  "translated_strips": {
+    "affine_line": 296,
+    "line_where_one_sided_minimum_bound_fails": 207,
+    "noncollinear": 1365
+  }
+}

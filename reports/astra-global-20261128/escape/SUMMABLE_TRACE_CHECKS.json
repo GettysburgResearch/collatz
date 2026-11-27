@@ -1,0 +1,68 @@
+{
+  "flux_checks": [
+    {
+      "exterior_residue_pairs": 22,
+      "grade": 0,
+      "maximum_fixed_exponent_fraction_of_mean": "9810/53599",
+      "moving_cutoff_inequality": true,
+      "physical_edges": 27
+    },
+    {
+      "exterior_residue_pairs": 67,
+      "grade": 1,
+      "maximum_fixed_exponent_fraction_of_mean": "10675771893/64860234530",
+      "moving_cutoff_inequality": true,
+      "physical_edges": 81
+    },
+    {
+      "exterior_residue_pairs": 202,
+      "grade": 2,
+      "maximum_fixed_exponent_fraction_of_mean": "4325748430126310428575762027695869395733539/22492803197687261389931018050151146870762900",
+      "moving_cutoff_inequality": true,
+      "physical_edges": 243
+    },
+    {
+      "exterior_residue_pairs": 609,
+      "grade": 3,
+      "maximum_fixed_exponent_fraction_of_mean": "3762338990512592716049197891752022070672017934125809148237200462019949038000201464986380533/20353798345651583522140833042806545878160022675915029316899011815581892908425674990197913675",
+      "moving_cutoff_inequality": true,
+      "physical_edges": 729
+    }
+  ],
+  "gap_cap": 6,
+  "residue_checks": [
+    {
+      "frozen_average": "89/192",
+      "frozen_average_upper": "89/192",
+      "grade": 0,
+      "odd_representatives": 9,
+      "period_average_marked_norm": "217/192",
+      "spacing_pairs": 0
+    },
+    {
+      "frozen_average": "1655/4096",
+      "frozen_average_upper": "1655/4096",
+      "grade": 1,
+      "odd_representatives": 27,
+      "period_average_marked_norm": "2821/3072",
+      "spacing_pairs": 0
+    },
+    {
+      "frozen_average": "23295/65536",
+      "frozen_average_upper": "104265/262144",
+      "grade": 2,
+      "odd_representatives": 81,
+      "period_average_marked_norm": "37543/49152",
+      "spacing_pairs": 52
+    },
+    {
+      "frozen_average": "5139555/16777216",
+      "frozen_average_upper": "5640705/16777216",
+      "grade": 3,
+      "odd_representatives": 243,
+      "period_average_marked_norm": "515431/786432",
+      "spacing_pairs": 1006
+    }
+  ],
+  "scope": "per-gap capped original inverse words with exact terminal selector; all checks use fractions"
+}
