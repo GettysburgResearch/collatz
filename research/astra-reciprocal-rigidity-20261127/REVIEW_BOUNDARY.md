@@ -221,3 +221,32 @@ first-hit injection are separate from the probabilistic calculation.
 The finite Lean transport assumes valuations at least two; it is not
 described as a formalization of the valuation-one pressure argument.
 No fixed-excess limiting rate or untilted inverse-tree theorem is claimed.
+
+## Sixth-checkpoint review boundary
+
+The signed finite-state moment proof charges low activity before any
+conditioning on specified sum bits. Canonical chunk contributions retain
+their actual exterior coefficients; the local numerator length differs
+from its ambient modulus. The fixed-place separation uses integer vectors
+without a primitive-vector assumption. Exact-composition and bad-chunk
+costs are paid explicitly. The root and rigidity lane reconstructed both
+ordinary interval recursions and the concrete gain. The exponents remain
+positive and do not exclude a single exceptional orbit.
+
+The sixfold calculation is a full exact energy certificate, beyond the
+local motifs recorded in checkpoint four. The Bonferroni compression is
+valid after averaging incoming flag orbits, with boundary multiplicities
+preserved. All 446 ordinary motif consumers now have kernel proofs at
+every positive native lift. Sparse high observations, ambiguous cutting
+points, and neighboring blocks are charged before using independent
+product families. The first-exit and occupation statements remain written
+consumers of named external Diophantine inputs. Upward escape is allowed.
+
+The two-clock comparison retains landing labels and nonarrival, and sums
+its error over the entire distribution. The matching lower bound uses a
+finite ordinary parity population below its digit cutoff. The extra one
+in the continued-fraction scale is necessary for counting integer windows.
+The optional prescribed-target block conclusion pays an error smaller
+than a single residue-pair mass and retains its external predecessor
+density premise. None of these steps supplies relative mixing in an
+arbitrary zero-density cohort or convergence of the chosen target.

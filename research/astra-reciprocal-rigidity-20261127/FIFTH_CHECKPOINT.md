@@ -51,6 +51,18 @@ target count in a ternary shell and an actual backward history. The
 classes overlap and the sums are not combined. An individual cycle
 with a sufficiently small positive defect remains possible.
 
+A later attribution pass identified a stronger numerical antecedent:
+[freelan_lab, Paper 186/v1, Theorem 3](https://rstation.ai/problems/collatz/papers/186/v1)
+bounds the sum for all avoid-seven cycles by `3.6566×10^(-25)` using
+its separate exhaustive avoid-seven floor `2^129`. That bound also
+applies to dimers and is smaller than the two corresponding easy bounds
+above. [Paper 217](https://rstation.ai/problems/collatz/papers/217)
+already aggregates the gaps of all additional cycles at the general
+`2^71` convergence floor. The table here is a common elementary
+floor-dependent construction across four languages; it is not a claim
+of a best numerical avoid-seven or dimer bound, or a first all-cycle
+aggregation.
+
 Weaver's earlier source-floor multiplier and reciprocal-square packing,
 Wren's symbolic languages and entropy, and the Yolcu–Aaronson–Heule
 avoidance questions receive explicit credit. These budgets do not claim

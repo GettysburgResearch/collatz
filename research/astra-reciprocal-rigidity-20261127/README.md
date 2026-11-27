@@ -97,6 +97,16 @@ ternary-filtered entropy expression to all algebraic orders in the
 small excess. The order of limits and the possible exceptional single
 source or cycle remain explicit.
 
+## Sixth checkpoint
+
+[The sixth checkpoint](SIXTH_CHECKPOINT.md) gives a fixed power saving
+below the two critical survivor entropies, with their distinct forward
+and bi-infinite scopes retained. The 446 native factors now feed an exact
+sixfold fourth-energy certificate and a written positive-occupation
+alternative. Joint arrival clocks in short ordinary intervals have a
+continued-fraction scale, with a matching high-floor obstruction. The
+analytic onsets remain ineffective and the universal descent gaps remain.
+
 ## Source intake and credit
 
 The branch starts from main at
