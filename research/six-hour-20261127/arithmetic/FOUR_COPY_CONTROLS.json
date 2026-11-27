@@ -1,0 +1,58 @@
+{
+  "literal_energy_sum": 409,
+  "wide_band": {
+    "family": "bounded_binary",
+    "odd_block": 256,
+    "carry_modulus": 27,
+    "strip_width_millionths": 2420000,
+    "maximum_gap": 2,
+    "intercepts_tested": 1028,
+    "different_row_schedules": 514,
+    "maximum_quadruple_count": 96315818532117907289421706695450703086847810239208346605155052993955632063592368520349064001037356682149424229298401837872538788459153028,
+    "strict_source_exponent": [
+      3,
+      8
+    ]
+  },
+  "sparse_binary_band": {
+    "physical_ratio": "3959/1000",
+    "width": "4963/2500",
+    "return_limit": 147,
+    "longest_initial_delay": 146,
+    "cells_including_boundaries": 592,
+    "returns": [
+      {
+        "length": 53,
+        "energy": 17778623164916750424132973,
+        "upper_log3_times_1000": 52922,
+        "phase_measure_at_slope_endpoints": [
+          "943/80000",
+          "1178697/100000000"
+        ]
+      },
+      {
+        "length": 94,
+        "energy": 814142973180663320799016177501290226148687690,
+        "upper_log3_times_1000": 94129,
+        "phase_measure_at_slope_endpoints": [
+          "51/40000",
+          "63797/50000000"
+        ]
+      },
+      {
+        "length": 147,
+        "energy": 21492223200414094275800099834565366836969886189515023336083934482791192,
+        "upper_log3_times_1000": 147410,
+        "phase_measure_at_slope_endpoints": [
+          "139/80000",
+          "173709/100000000"
+        ]
+      }
+    ],
+    "mean_log3_upper_at_slope_endpoints": [
+      "39998297/40000000",
+      "1999914839/2000000000"
+    ],
+    "strict_log3_energy_exponent": "99999/100000"
+  }
+}

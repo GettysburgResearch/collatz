@@ -1,0 +1,394 @@
+{
+  "scope": "finite exact binary-prefix sums, actual residues, and harmonic birth reserve",
+  "scale": 1208925819614629174706176,
+  "depth_zero_formal_mass": 0,
+  "small_input_first_clocks_1_through_32": [
+    0,
+    1,
+    5,
+    2,
+    4,
+    6,
+    11,
+    3,
+    13,
+    5,
+    10,
+    7,
+    7,
+    12,
+    12,
+    4,
+    9,
+    14,
+    14,
+    6,
+    6,
+    11,
+    11,
+    8,
+    16,
+    8,
+    70,
+    13,
+    13,
+    13,
+    67,
+    5
+  ],
+  "direct_residue_crosscheck_through_binary_clock": 11,
+  "rows": [
+    {
+      "binary_clock": 1,
+      "accepted_words": 1,
+      "smallest_principal_source": 1,
+      "harmonic_enclosure_scaled": [
+        1208925819614629174706176,
+        1208925819614629174706177
+      ],
+      "new_sources": 1,
+      "birth_enclosure_scaled": [
+        1208925819614629174706176,
+        1208925819614629174706177
+      ],
+      "gate_probability": "1/2",
+      "rational_reserve": "4"
+    },
+    {
+      "binary_clock": 2,
+      "accepted_words": 1,
+      "smallest_principal_source": 3,
+      "harmonic_enclosure_scaled": [
+        402975273204876391568725,
+        402975273204876391568726
+      ],
+      "new_sources": 1,
+      "birth_enclosure_scaled": [
+        402975273204876391568725,
+        402975273204876391568726
+      ],
+      "gate_probability": "1/4",
+      "rational_reserve": "11/4"
+    },
+    {
+      "binary_clock": 3,
+      "accepted_words": 2,
+      "smallest_principal_source": 3,
+      "harmonic_enclosure_scaled": [
+        575678961721251987955321,
+        575678961721251987955323
+      ],
+      "new_sources": 1,
+      "birth_enclosure_scaled": [
+        172703688516375596386596,
+        172703688516375596386597
+      ],
+      "gate_probability": "1/4",
+      "rational_reserve": "5/2"
+    },
+    {
+      "binary_clock": 4,
+      "accepted_words": 3,
+      "smallest_principal_source": 7,
+      "harmonic_enclosure_scaled": [
+        363201090395044436037266,
+        363201090395044436037269
+      ],
+      "new_sources": 2,
+      "birth_enclosure_scaled": [
+        190497401878668839650670,
+        190497401878668839650672
+      ],
+      "gate_probability": "3/16",
+      "rational_reserve": "35/16"
+    },
+    {
+      "binary_clock": 5,
+      "accepted_words": 4,
+      "smallest_principal_source": 7,
+      "harmonic_enclosure_scaled": [
+        337071380597791128144735,
+        337071380597791128144739
+      ],
+      "new_sources": 2,
+      "birth_enclosure_scaled": [
+        83772637440440253444394,
+        83772637440440253444396
+      ],
+      "gate_probability": "1/8",
+      "rational_reserve": "7/4"
+    },
+    {
+      "binary_clock": 6,
+      "accepted_words": 8,
+      "smallest_principal_source": 7,
+      "harmonic_enclosure_scaled": [
+        433470871338978447266629,
+        433470871338978447266637
+      ],
+      "new_sources": 4,
+      "birth_enclosure_scaled": [
+        96399490741187319121894,
+        96399490741187319121898
+      ],
+      "gate_probability": "1/8",
+      "rational_reserve": "13/8"
+    },
+    {
+      "binary_clock": 7,
+      "accepted_words": 13,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        259998410430433010784702,
+        259998410430433010784715
+      ],
+      "new_sources": 8,
+      "birth_enclosure_scaled": [
+        100316550377866949654111,
+        100316550377866949654119
+      ],
+      "gate_probability": "13/128",
+      "rational_reserve": "93/64"
+    },
+    {
+      "binary_clock": 8,
+      "accepted_words": 26,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        338583579684023614913990,
+        338583579684023614914016
+      ],
+      "new_sources": 13,
+      "birth_enclosure_scaled": [
+        78585169253590604129288,
+        78585169253590604129301
+      ],
+      "gate_probability": "13/128",
+      "rational_reserve": "173/128"
+    },
+    {
+      "binary_clock": 9,
+      "accepted_words": 45,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        349422053529217599601888,
+        349422053529217599601933
+      ],
+      "new_sources": 23,
+      "birth_enclosure_scaled": [
+        73043099578950591353032,
+        73043099578950591353055
+      ],
+      "gate_probability": "45/512",
+      "rational_reserve": "5/4"
+    },
+    {
+      "binary_clock": 10,
+      "accepted_words": 71,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        373208296043258475976792,
+        373208296043258475976863
+      ],
+      "new_sources": 35,
+      "birth_enclosure_scaled": [
+        55484009774688565720305,
+        55484009774688565720340
+      ],
+      "gate_probability": "71/1024",
+      "rational_reserve": "1133/1024"
+    },
+    {
+      "binary_clock": 11,
+      "accepted_words": 142,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        431276211914218452277797,
+        431276211914218452277939
+      ],
+      "new_sources": 71,
+      "birth_enclosure_scaled": [
+        58067915870959976301005,
+        58067915870959976301076
+      ],
+      "gate_probability": "71/1024",
+      "rational_reserve": "531/512"
+    },
+    {
+      "binary_clock": 12,
+      "accepted_words": 247,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        455929865207590390644188,
+        455929865207590390644435
+      ],
+      "new_sources": 124,
+      "birth_enclosure_scaled": [
+        50746583827759909296789,
+        50746583827759909296913
+      ],
+      "gate_probability": "247/4096",
+      "rational_reserve": "3927/4096"
+    },
+    {
+      "binary_clock": 13,
+      "accepted_words": 395,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        440284135753916868898721,
+        440284135753916868899116
+      ],
+      "new_sources": 196,
+      "birth_enclosure_scaled": [
+        40206932251322139171436,
+        40206932251322139171632
+      ],
+      "gate_probability": "395/8192",
+      "rational_reserve": "1741/2048"
+    },
+    {
+      "binary_clock": 14,
+      "accepted_words": 790,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        480781849231305421790595,
+        480781849231305421791385
+      ],
+      "new_sources": 395,
+      "birth_enclosure_scaled": [
+        40497713477388552891874,
+        40497713477388552892269
+      ],
+      "gate_probability": "395/8192",
+      "rational_reserve": "6569/8192"
+    },
+    {
+      "binary_clock": 15,
+      "accepted_words": 1386,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        477281778220160279554491,
+        477281778220160279555877
+      ],
+      "new_sources": 695,
+      "birth_enclosure_scaled": [
+        35615367692029823157855,
+        35615367692029823158550
+      ],
+      "gate_probability": "693/16384",
+      "rational_reserve": "6077/8192"
+    },
+    {
+      "binary_clock": 16,
+      "accepted_words": 2772,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        512734555076388680374278,
+        512734555076388680377050
+      ],
+      "new_sources": 1386,
+      "birth_enclosure_scaled": [
+        35452776856228400819787,
+        35452776856228400821173
+      ],
+      "gate_probability": "693/16384",
+      "rational_reserve": "11461/16384"
+    },
+    {
+      "binary_clock": 17,
+      "accepted_words": 5019,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        520165449551211409189313,
+        520165449551211409194332
+      ],
+      "new_sources": 2509,
+      "birth_enclosure_scaled": [
+        32100516682016989453344,
+        32100516682016989455853
+      ],
+      "gate_probability": "5019/131072",
+      "rational_reserve": "673/1024"
+    },
+    {
+      "binary_clock": 18,
+      "accepted_words": 8468,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        498159288303400727831439,
+        498159288303400727839907
+      ],
+      "new_sources": 4250,
+      "birth_enclosure_scaled": [
+        27206446993367454931163,
+        27206446993367454935413
+      ],
+      "gate_probability": "2117/65536",
+      "rational_reserve": "39385/65536"
+    },
+    {
+      "binary_clock": 19,
+      "accepted_words": 16936,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        525215824900009120940894,
+        525215824900009120957830
+      ],
+      "new_sources": 8468,
+      "birth_enclosure_scaled": [
+        27056536596608393109455,
+        27056536596608393117923
+      ],
+      "gate_probability": "2117/65536",
+      "rational_reserve": "9317/16384"
+    },
+    {
+      "binary_clock": 20,
+      "accepted_words": 30485,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        510522078916791443881756,
+        510522078916791443912241
+      ],
+      "new_sources": 15272,
+      "birth_enclosure_scaled": [
+        24395291930868373838676,
+        24395291930868373853948
+      ],
+      "gate_probability": "30485/1048576",
+      "rational_reserve": "559029/1048576"
+    },
+    {
+      "binary_clock": 21,
+      "accepted_words": 51280,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        476835633733840633268869,
+        476835633733840633320149
+      ],
+      "new_sources": 25625,
+      "birth_enclosure_scaled": [
+        20463098354059685996411,
+        20463098354059686022036
+      ],
+      "gate_probability": "3205/131072",
+      "rational_reserve": "127291/262144"
+    },
+    {
+      "binary_clock": 22,
+      "accepted_words": 102560,
+      "smallest_principal_source": 27,
+      "harmonic_enclosure_scaled": [
+        497320406952767705336559,
+        497320406952767705439119
+      ],
+      "new_sources": 51280,
+      "birth_enclosure_scaled": [
+        20484773218927072067690,
+        20484773218927072118970
+      ],
+      "gate_probability": "3205/131072",
+      "rational_reserve": "120881/262144"
+    }
+  ]
+}
