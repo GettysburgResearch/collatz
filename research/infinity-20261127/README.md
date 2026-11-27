@@ -20,6 +20,9 @@ continually changing population disposes of one fixed positive integer.
    old-source first-failure clock, ordinary Pell return packing, an
    all-period rank-31 exclusion with named published inputs, a weighted
    height/rank bound, and the corrected joint-target obstruction.
+2. [Second checkpoint](SECOND_CHECKPOINT.md): full-denominator Pell and
+   cubeclass bounds, the physical upper-clock barrier, exact positive-mass
+   critical source translations, and the conditional support-energy route.
 
 Work beyond the checkpoints remains in progress. A file's presence does
 not imply that every argument in it is formalized or has passed root review.

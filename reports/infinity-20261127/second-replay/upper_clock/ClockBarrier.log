@@ -1,0 +1,6 @@
+'ClockBarrier.hard_first_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockBarrier.hard_prefixes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockBarrier.lower_native' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockBarrier.upper_native' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockBarrier.short_upper_tail_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockBarrier.paired_clock_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]

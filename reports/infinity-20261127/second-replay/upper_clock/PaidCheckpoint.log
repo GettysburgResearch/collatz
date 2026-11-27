@@ -1,0 +1,4 @@
+'PaidCheckpoint.positive_turns' depends on axioms: [propext, Quot.sound]
+'PaidCheckpoint.seed_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaidCheckpoint.delayed_address' depends on axioms: [propext, Quot.sound]
+'PaidCheckpoint.paid_parent' depends on axioms: [propext, Classical.choice, Quot.sound]

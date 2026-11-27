@@ -1,0 +1,64 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "driver_sha256": "bc7dd6c6cb484da513c167ec664f5165f1a5f8a18d3fab82b4ed36df14fe5e96",
+  "started_utc": "2026-11-27T12:55:25Z",
+  "repo_head": "ccee2c9ef352a0fe2606f058c13caf4c80db5a2e",
+  "repo_tree": "53edf2ed6b23736d78cd02f54852e069855655f1",
+  "working_status": "?? reports/infinity-20261127/CRITICAL_PAIR_CONTROL_MODULES.json\n?? reports/infinity-20261127/CRITICAL_PAIR_MODULES.json\n?? reports/infinity-20261127/FIRST_LOCAL_VALIDATION.json\n?? reports/infinity-20261127/FIRST_PUBLISHED_VALIDATION.json\n?? reports/infinity-20261127/FULL_DENOMINATOR_MODULES.json\n?? reports/infinity-20261127/SECOND_CONTROL_MODULES.json\n?? reports/infinity-20261127/UPPER_CLOCK_MODULES.json\n?? research/infinity-20261127/arithmetic/CENTERED_LOCAL_TRACE.md\n?? research/infinity-20261127/arithmetic/CENTERED_LOCAL_TRACE_CONTROLS.json\n?? research/infinity-20261127/arithmetic/CenteredLocalTrace.lean\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CONTROLS.json\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CUBES.md\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_PELL.md\n?? research/infinity-20261127/arithmetic/FullDenominatorPacking.lean\n?? research/infinity-20261127/arithmetic/ORDINARY_PERIOD_SPECTRUM.md\n?? research/infinity-20261127/arithmetic/check_centered_trace.py\n?? research/infinity-20261127/arithmetic/check_full_denominator.py\n?? research/infinity-20261127/coupling/ClockBarrier.lean\n?? research/infinity-20261127/coupling/UPPER_CLOCK_BARRIER.md\n?? research/infinity-20261127/coupling/UPPER_CLOCK_CONTROLS.json\n?? research/infinity-20261127/coupling/UpperClock.lean\n?? research/infinity-20261127/coupling/check_upper_clock.py\n?? research/infinity-20261127/mass/CRITICAL_PAIRED_TRANSLATION.md\n?? research/infinity-20261127/mass/CRITICAL_PAIR_CONTROLS.json\n?? research/infinity-20261127/mass/CriticalPairTransport.lean\n?? research/infinity-20261127/mass/check_critical_pairs.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "6bf69f111c9e655fa5d562d7a2e2cfb3625adf0ed5e1865e1a1c6ec295800b3f",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/infinity-20261127/mass/CriticalPairTransport.lean",
+      "source_sha256": "4ebb791380b3d5f8526fc0c8d525231d2e8b4f819d28cd760ab29e48a4282bc6",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-critical-pair-replay/build/CriticalPairTransport.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/CriticalPairTransport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.846,
+      "output_sha256": "63624d230684bf095a67c9f026c9c8e424050dab62e8cd3053662f0d4f09c932",
+      "declarations": {
+        "CriticalPairTransport.physical_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CriticalPairTransport.common_middle_translation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CriticalPairTransport.physical_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CriticalPairTransport.carry_digit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "59159420ca35ae75a1d0eb6816b818ba15237c2366adc2170976735370f67277"
+    }
+  ],
+  "finished_utc": "2026-11-27T12:55:35Z",
+  "complete": true
+}

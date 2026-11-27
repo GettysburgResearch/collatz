@@ -1,0 +1,337 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "driver_sha256": "bc7dd6c6cb484da513c167ec664f5165f1a5f8a18d3fab82b4ed36df14fe5e96",
+  "started_utc": "2026-11-27T12:40:26Z",
+  "repo_head": "ccee2c9ef352a0fe2606f058c13caf4c80db5a2e",
+  "repo_tree": "53edf2ed6b23736d78cd02f54852e069855655f1",
+  "working_status": "?? reports/infinity-20261127/FIRST_LOCAL_VALIDATION.json\n?? reports/infinity-20261127/FIRST_PUBLISHED_VALIDATION.json\n?? reports/infinity-20261127/FULL_DENOMINATOR_MODULES.json\n?? reports/infinity-20261127/SECOND_CONTROL_MODULES.json\n?? reports/infinity-20261127/UPPER_CLOCK_MODULES.json\n?? research/infinity-20261127/arithmetic/CENTERED_LOCAL_TRACE.md\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CONTROLS.json\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CUBES.md\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_PELL.md\n?? research/infinity-20261127/arithmetic/FullDenominatorPacking.lean\n?? research/infinity-20261127/arithmetic/ORDINARY_PERIOD_SPECTRUM.md\n?? research/infinity-20261127/arithmetic/check_full_denominator.py\n?? research/infinity-20261127/coupling/ClockBarrier.lean\n?? research/infinity-20261127/coupling/UPPER_CLOCK_BARRIER.md\n?? research/infinity-20261127/coupling/UPPER_CLOCK_CONTROLS.json\n?? research/infinity-20261127/coupling/UpperClock.lean\n?? research/infinity-20261127/coupling/check_upper_clock.py\n?? research/infinity-20261127/mass/check_critical_pairs.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "08639456b2de7ab5cce1cd44d386e860504e7fba00c03095812d2aa932c023fd",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.768,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "48d1c5da07af5e5ed13b30dad21b2e70570fbad616f07b09b5c71ea53618cb5c"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.202,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "f686fefed346f7df6e45a254455943a24c8dfb4beff556e749d6ac9f12116e06"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.918,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "a6b6f44ef95fc52b9129d17fb639c0c8edc69f38b30e3b0b6f14cfb72aad7a7e"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/PaidCheckpoint.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.87,
+      "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+      "declarations": {
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "bb664a6879f0546cd7eb916a0bee8a5416806cbd3fb0be436ba8de7886b31487"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/EarlierOffsets.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.298,
+      "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+      "declarations": {
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "09f35e18e050ab40dd60bd32753e1c305677dfe2eeb5e249ff282b13130f96ee"
+    },
+    {
+      "path": "research/infinity-20261127/coupling/UpperClock.lean",
+      "source_sha256": "bab93e1bf0949e62e13ca76e6c27999411b21c32b9ead991ce432d79f307c93c",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/UpperClock.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/coupling/UpperClock.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.222,
+      "output_sha256": "42bd7765dc1ea34e79a6baae12d4d8bdbca3faeaa7398bd5a688a4998e67f172",
+      "declarations": {
+        "UpperClock.affine": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UpperClock.word_extension": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UpperClock.canonical_hit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpperClock.shorter_forces_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "51857001ded580544313194e9ea4674281b242e44d43c24a9697e7049496ccb6"
+    },
+    {
+      "path": "research/infinity-20261127/coupling/ClockBarrier.lean",
+      "source_sha256": "38b14ac232d35d612853405060b5ea5a42f0505e308452dcaef9d40a4b3fc647",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-upper-clock-replay/build/ClockBarrier.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/coupling/ClockBarrier.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.236,
+      "output_sha256": "7015cda2d498f6b3750e587ba289b7441a53fca53742eb5e76ba7d68e4eb4b23",
+      "declarations": {
+        "ClockBarrier.hard_first_hit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockBarrier.hard_prefixes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockBarrier.lower_native": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockBarrier.upper_native": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockBarrier.short_upper_tail_barrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockBarrier.paired_clock_barrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "46354975a0a1b6244a44d965824533d7373603965e1bc9568675f370a95b2585"
+    }
+  ],
+  "finished_utc": "2026-11-27T12:41:23Z",
+  "complete": true
+}

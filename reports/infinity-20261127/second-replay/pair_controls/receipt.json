@@ -1,0 +1,46 @@
+{
+  "scope": "Bounded exact arithmetic controls; no universal mathematical conclusion",
+  "started_utc": "2026-11-27T12:55:26Z",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "driver_sha256": "b06dd27f15c38fd5beb44af053fbd4bb9be187eda580e36436eb2782f3909e78",
+  "manifest_sha256": "b3c0a399ec544f0dea7f0ac4e678e395704609252efd5c9e6a9e7a8c8182f63f",
+  "inputs": {
+    "research/infinity-20261127/mass/CRITICAL_PAIR_CONTROLS.json": "a937b7ca1cadb71d418b9720f04da8ca7908185959e8987964154a27cc061575",
+    "research/infinity-20261127/mass/check_critical_pairs.py": "4d49b44900baa78fef2262ef5119add6e1b60c2b4ae09e55019fe182a26e8d53"
+  },
+  "controls": [
+    {
+      "script": "research/infinity-20261127/mass/check_critical_pairs.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_critical_pairs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.667,
+      "stdout_sha256": "a937b7ca1cadb71d418b9720f04da8ca7908185959e8987964154a27cc061575",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/mass/check_critical_pairs.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_critical_pairs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.573,
+      "stdout_sha256": "a937b7ca1cadb71d418b9720f04da8ca7908185959e8987964154a27cc061575",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    }
+  ],
+  "finished_utc": "2026-11-27T12:55:29Z",
+  "complete": true
+}

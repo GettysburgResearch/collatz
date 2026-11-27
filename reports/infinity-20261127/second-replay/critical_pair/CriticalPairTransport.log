@@ -1,0 +1,4 @@
+'CriticalPairTransport.physical_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CriticalPairTransport.common_middle_translation' depends on axioms: [propext, Quot.sound]
+'CriticalPairTransport.physical_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CriticalPairTransport.carry_digit' depends on axioms: [propext, Classical.choice, Quot.sound]

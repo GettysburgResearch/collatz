@@ -1,0 +1,75 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "driver_sha256": "bc7dd6c6cb484da513c167ec664f5165f1a5f8a18d3fab82b4ed36df14fe5e96",
+  "started_utc": "2026-11-27T12:37:33Z",
+  "repo_head": "ccee2c9ef352a0fe2606f058c13caf4c80db5a2e",
+  "repo_tree": "53edf2ed6b23736d78cd02f54852e069855655f1",
+  "working_status": "?? reports/infinity-20261127/FIRST_LOCAL_VALIDATION.json\n?? reports/infinity-20261127/FIRST_PUBLISHED_VALIDATION.json\n?? reports/infinity-20261127/FULL_DENOMINATOR_MODULES.json\n?? reports/infinity-20261127/SECOND_CONTROL_MODULES.json\n?? reports/infinity-20261127/UPPER_CLOCK_MODULES.json\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CONTROLS.json\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CUBES.md\n?? research/infinity-20261127/arithmetic/FULL_DENOMINATOR_PELL.md\n?? research/infinity-20261127/arithmetic/FullDenominatorPacking.lean\n?? research/infinity-20261127/arithmetic/ORDINARY_PERIOD_SPECTRUM.md\n?? research/infinity-20261127/arithmetic/check_full_denominator.py\n?? research/infinity-20261127/coupling/ClockBarrier.lean\n?? research/infinity-20261127/coupling/UPPER_CLOCK_BARRIER.md\n?? research/infinity-20261127/coupling/UPPER_CLOCK_CONTROLS.json\n?? research/infinity-20261127/coupling/UpperClock.lean\n?? research/infinity-20261127/coupling/check_upper_clock.py\n?? research/infinity-20261127/mass/check_critical_pairs.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "6d4fe18953c9233e4a43774aeedeb19cb4071cf4d992ab0341cb0484d1912fb7",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/infinity-20261127/arithmetic/FullDenominatorPacking.lean",
+      "source_sha256": "f679aef001311c3b9497f9a2cb7e209e31a51009ffbb86f0ea43766a62d0958d",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-full-denominator-replay/build/FullDenominatorPacking.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/arithmetic/FullDenominatorPacking.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.01,
+      "output_sha256": "56f27cc945095895badd7ab8a1e531902cdf1dc1bd626b42151e414c332e8110",
+      "declarations": {
+        "Collatz.FullDenominatorPacking.taggedQuotient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullDenominatorPacking.quotientUnit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullDenominatorPacking.normalizedReturn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullDenominatorPacking.oddNormalizedNorm": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.FullDenominatorPacking.cubicLift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullDenominatorPacking.cubesModNine": [
+          "propext"
+        ],
+        "Collatz.FullDenominatorPacking.cubicRankFloor": [
+          "propext"
+        ]
+      },
+      "object_sha256": "b81c7579b3e9fc7274efee7dbb820f7380e626df5de3618b5af995e7542d5d37"
+    }
+  ],
+  "finished_utc": "2026-11-27T12:37:38Z",
+  "complete": true
+}

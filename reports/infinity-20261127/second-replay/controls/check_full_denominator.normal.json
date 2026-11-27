@@ -1,0 +1,34 @@
+{
+  "physical_controls": {
+    "matching_example": {
+      "D": 42,
+      "absolute_second_coordinate": 2,
+      "common_full_root": 523273,
+      "d": 1661,
+      "edge_exponent": 11,
+      "normalized_return_norm": 4034569,
+      "primitive_odd_period": 200,
+      "quotient_trace": 13,
+      "source_numerator": 4225,
+      "target_numerator": 7,
+      "total_shortcut_clock": 390
+    },
+    "untagged_counterexample": {
+      "D": 330,
+      "d": 7,
+      "different_full_roots": [
+        43,
+        6
+      ],
+      "numerators": [
+        5,
+        11
+      ]
+    }
+  },
+  "short_words": {
+    "largest_reduced_denominator": 524045,
+    "primitive_cycles": 284,
+    "replayed_odd_edges": 1298
+  }
+}
