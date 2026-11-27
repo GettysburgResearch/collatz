@@ -86,6 +86,20 @@ If \(a\) is eventually periodic, choose a fixed odd cycle point \(b\), extend th
 
 At a detecting clock the terminal state and grade are fixed, and each parity word has at most one source. This proves the stated polynomial count even for a hypothetical escaping or nontrivially periodic reference. The closure of all aligned \(x/2^j\) is also countable and compact. At the detecting clock the correction from \(x\) is a product of exactly \(g_a\) elements of the countable compact set \(\{1\}\cup\{3v/(3v+1):v\ge1\}\), and the reference correction is fixed. Every open subinterval of \((a,a+1)\) therefore contains a closed binary interval avoiding the normalized aligned starts at every depth. The proof gives an existence statement for \(h_a\). At \(a=1\) the sharp single clock is three. Ordinary convergence only requires an eventual visit to one.
 
+### The exact boundary for wider intervals
+
+For any finite real \(B>a\), consider all integers \(a2^j\le x<B2^j\). A single reference clock detects every marked alignment on this whole range **if and only if**
+\[
+\exists t\ge0,\qquad A_t=\frac{2^t T^t(a)}{3^{u_t}}> B,
+\]
+where \(u_t\) counts the odd departures from \(a\). This is a written extension of the preceding argument. At any length, \(A_t=a/\beta_t\) is nondecreasing. On an eventually periodic orbit the lap correction is strictly below one, so \(A_t\to\infty\). Bounded lap differences give a detecting clock on every finite range by replacing the ratio bound 2 with \(B/a\). On a nonrepeating orbit \(A_t\uparrow A=a/\beta_\infty(a)<\infty\). If \(B<A\), then every aligned source has \(\beta_\infty(x)<B/A<1\). The same finite collection of small odd vertices gives one clock.
+
+The converse is constructive. If all \(A_t\le B\), challenge any proposed clock \(H\). Choose \(h>H\) with \(g=u_h>u_H\), which is possible since a positive trajectory has infinitely many odd departures. Set \(y=T^h(a)\). Take arbitrarily large \(j\) with \(3^g\mid 2^j-1\), and put
+\[
+x=a+2^h y(2^j-1)/3^g .
+\]
+The first \(h\) parity bits agree with those of \(a\). Ordinary affine transport gives \(T^h(x)=2^j y\). After \(j\) halvings \(x\) aligns at \(h\). For \(j+H\ge h\), its odd count at \(j+H\) is still \(g>u_H\), so the test at \(H\) fails. Finally \(x/2^j=A_h+(a-A_h)/2^j\) lies in \([a,B)\), since \(a<A_h\le B\). This includes the exact boundary \(B=A\). Thus a nonrepeating ordinary reference would have an exact finite boundary in window width, while an eventually periodic reference admits a detector in every finite window. [Affine transport identity](TowerFrontierAffine.lean)
+
 ## Remaining pointwise implications
 
 * Specific prescribed Mersenne sources have strictly smaller canonical visitors which physically meet both designated trajectories. The proof covers 33 disjoint progressions in the delayed family and attains the lower bound of eleven upper odd steps for its synchronized return. A separate theorem produces arbitrarily late delayed parameters at which any smaller canonical visitor would exceed a supplied lower odd-step budget. Its existence at those parameters remains open. [Fixed-source descent](PassageDescent.md) · [Unbounded cost](PassageDescentAnchor.lean)
