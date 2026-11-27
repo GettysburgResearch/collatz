@@ -7,14 +7,16 @@ read arithmetic proofs, fresh Lean builds, exact finite controls, and
 clearly identified external analytic inputs. None of those evidence levels
 is silently promoted to a proof of universal convergence.
 
-The [eighth checkpoint](EIGHTH_CHECKPOINT.md) gives the strongest
-population conclusions: a full reduced-denominator exponent above `0.5128`
-at density-one least periods for every signed rational word; sharp
-source-preserving first-smaller-meeting tails after an odd ascent; and an
-exact positive-defect cost for ordinary escaping components. These are
-written research results with finite formal consumers and explicit gaps.
+Start with the [six-hour report](SIX_HOUR_REPORT.md) for the final results,
+proof status, source credits and remaining obligations. The
+[tenth checkpoint](TENTH_CHECKPOINT.md) reaches a full reduced-denominator
+exponent `0.5263404293…`, with a logarithmic factor, at density-one least
+periods for every nonzero signed rational word. It proves an all-clock
+finite-sample law for first meetings with smaller ordinary orbits and a
+source-qualified finite-source variance criterion equivalent to Collatz.
+The variance-collapse premise remains unproved.
 
-The final [ninth checkpoint](NINTH_CHECKPOINT.md) tests the remaining
+The [ninth checkpoint](NINTH_CHECKPOINT.md) tests the remaining
 pointwise bridges. It proves denominator costs for rotation splices and
 almost-full proper prefixes, an exact lower-record splitting criterion,
 and structural obstructions to source amplification. A sparse changed-map
@@ -22,6 +24,11 @@ example separates population laws from the exact Collatz update. A genuine
 escaping path would have summable relative predecessor-branch growth;
 the sufficient positive-mass-floor comparison remains unproved, and the
 unrestricted comparison is already refuted by cited prior work.
+
+Across ten checkpoints, 57 distinct local Lean modules were independently
+rebuilt and 39 distinct finite Python programs were replayed in normal and
+optimized modes. The final asymptotic arguments are written proofs with
+explicit source dependencies; these counts do not certify the conjecture.
 
 ## Initial checkpoint results
 

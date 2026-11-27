@@ -1,5 +1,15 @@
 # Lower bounds for every rational cycle at almost every period
 
+The final [joint denominator census](FAREY_CENSUS.md) improves the exponent
+to `1/(2 H₂(log₃ 2)) = 0.5263404293…` and includes the factor
+`(1+log n)^(11/38)`. It counts all reduced denominators together using
+native parity separation and the entire high excursion. Its uniform
+all-prefix ballot estimate is proved in [ENDPOINT_CENSUS.md](ENDPOINT_CENSUS.md).
+Both files are written proofs with independent root and rigidity reviews.
+The exceptional period set can still contain an ordinary integer cycle.
+
+## Earlier ascent census
+
 For a density-one set of physical least periods \(n\), **every** nonzero signed rational shortcut cycle of that period has full reduced denominator exceeding \(n^{20/39}\). More generally the conclusion holds for each fixed exponent below \(1/(1+H_2(\log_3 2))=0.5128322087\ldots\). All word shapes and both signs are covered. Positive rational cycles of every period \(n\ge2\) exist. The exceptional set of periods can still contain an individual ordinary nontrivial cycle. [Ascent and charge census](ASCENT_CENSUS.md)
 
 The proof splits true cycles according to their real minimum. On every high-minimum cycle a rational future-minimum construction assigns its gap to phases whose forward words have high odd counts at **every** horizon. Each low-minimum cycle of large least period and limited denominator supplies a bounded-height witness just before an ascent lasting at least a logarithmic number of steps. The resulting large-gap count includes multiplicities. The small-gap argument counts possible period values by irrational equidistribution. These steps use neither a quantitative irrationality estimate nor any finite convergence-verification floor.

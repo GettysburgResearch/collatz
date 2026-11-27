@@ -387,3 +387,67 @@ the source theorem and its transfer to the full other-parent branch.
 This checkpoint adds written arguments and one dual-mode bounded checker.
 It introduces no new Lean proof and does not alter the mathematical status
 of the external inputs or the cumulative 57 checked local modules.
+
+## Tenth-checkpoint review boundary
+
+The final denominator proof uses simultaneous separation of all reduced
+denominators up to D in one native parity cylinder. The nonzero cross
+difference is divisible by 2^t and bounded by D squared times the real
+interval width. This replaces the previous separate-denominator sum.
+The low-minimum witness includes the whole above-floor excursion, both
+ascent and descent. Its length leaves a strict logarithmic margin for
+D at most N^(11/20). The uniform ballot bound retains every prefix and
+a bounded intercept, including the reverse-terminal survival estimate.
+Root and rigidity independently reconstructed the two complete final
+manuscripts. Their asymptotic conclusions remain written mathematics.
+The density-one least-period conclusion still allows exceptional periods
+and does not exclude one ordinary cycle.
+
+The complete-shell clock law pays rounding errors inside each thin binary
+subcylinder and controls both directions of the finite inverse-word test.
+Its physical long-arrival and Haar inverse-word tails are separate. The
+extension from a stopped clock to the entire law uses tail mass, including
+any infinite empirical value. Full finite-H density-law moments use the
+named unconditional first-smaller-meeting tail in Weaver 178; growing-shell
+moment statements retain an explicit cap. No finite-sample untruncated
+moment assertion is inferred from total variation. Root and cycles
+independently read the complete supplement.
+
+The source-variance criterion imports precisely the stated arbitrary-
+diverging-threshold logarithmic-arrival and positive predecessor-density
+theorems. Its diagonal threshold may depend on noncomputable basin
+membership. Every fixed finite basin height has a finite first-arrival
+maximum, which is enough for the written argument. The two separated
+populations share one actual finite source cutoff. No independent parity
+model is substituted after the binary coding horizon. Root and rigidity
+read the proof and source statements; the external formalizations were
+not rebuilt. The variance-collapse premise is open.
+
+The generic coloring satisfies the multiplication identities exactly,
+but its adjacent and affine identities hold only outside sets of density
+zero. It therefore does not define true Collatz components. Its two
+colors have ordinary natural density one half, with no upper-Banach
+density claim. The related Konieczny construction is explicitly credited.
+Root and rigidity checked the wave interpolation, weighted shell counts,
+valuation tails and six-free-core transport.
+
+The one-site mutant violates the genuine odd update at exactly one
+arbitrarily high known-convergent gate. Its exact first-smaller-clock
+identity holds above the maximum of that gate's finite original future.
+The two chosen odd gate basins are disjoint and have positive lower
+density under the stated external theorem. Only fixed-horizon local-test
+densities are asserted; there is no automatic growing-cylinder comparison.
+Root and rigidity reconstructed this changed-map example independently.
+
+The finite-seed reduction concerns a fixed positive predecessor-mass
+floor. The source's no-small-ancestor bound is uniform in the target;
+the resulting finite seed pool depends on that floor. If all orbits are
+bounded, the high-mass sector is finite, so the proposed lower-share
+comparison is eventually vacuous there. The equivalence concerns absence
+of escape and does not exclude bounded nontrivial cycles. The earlier
+Valbuena/Wren equivalence and Weaver's quantitative input are retained.
+
+This checkpoint adds no new finite program or Lean module. The cumulative
+counts remain 39 dual-mode Python programs and 57 strict local Lean
+rebuilds. Its ten-checkpoint synthesis distinguishes those evidence levels
+from the written arguments and their cited external inputs throughout.
