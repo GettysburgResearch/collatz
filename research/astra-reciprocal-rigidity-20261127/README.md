@@ -71,6 +71,19 @@ decomposition, with the corresponding rational denominator cost retained.
 The new decision procedure, structural hypotheses, and averaged clock
 estimate do not themselves supply universal convergence.
 
+## Fourth checkpoint
+
+[The fourth checkpoint](FOURTH_CHECKPOINT.md) proves an all-modulus
+numerator estimate and a total-variation law for the complete reduced
+denominator, with the fixed-dictionary congruence obstruction retained.
+A corrected signed quadratic energy strengthens the kernel-checked
+postpeak height from `21q+9K+3` to `6q+3K+3`. The wider-band theorem
+forces a smaller ordinary merger or a matching physical exit through
+ratio `2^(51/20)`. Elementary inverse banks give uniform moving-target
+families and a two-term count near the fastest first-hit clocks. The
+rare integer denominator atom, upward exits, and future of an arbitrary
+target remain explicit gaps.
+
 ## Source intake and credit
 
 The branch starts from main at

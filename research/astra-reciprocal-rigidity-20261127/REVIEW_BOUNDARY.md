@@ -160,3 +160,38 @@ additional argument. In the small-anchor theorem, chronological
 projection produces an actual physical state equal to the anchor;
 the finite Lean consumer does not certify the imported Subspace Theorem
 or manufacture the assumed bounded-piece decomposition.
+
+## Fourth-checkpoint review boundary
+
+The all-modulus proof was reconstructed independently by the root and
+the rigidity lane. Its large-modulus step fixes the original word weight;
+its truncated sieve controls the whole gcd histogram. An additive
+stretched-exponential error is not turned into a relative estimate at
+`d=1`. The block-alphabet version retains the commutator gcd obstruction,
+including a prime-seven control and a deterministic commuting stratum.
+
+The energy and stronger cones are fresh kernel proofs. Their ordinary
+word transport reuses the previously credited architecture. The factor
+two at an odd signed edge is sharp on the negative-five cycle, while the
+specific integer coefficients in the resulting sufficient cone are not
+claimed optimal. The exact selector retains its separate source cutoff.
+The final priority scan also found the same optimal odd gain in PR146's
+negative-five checkpoint, using `W(7)=50` and `W(x)=x²` on its reflected
+basin. The new energy extends that mechanism to all nonterminal-`−1`
+signed walks with exact dyadic homogeneity. The source note now gives
+the precise prior path and head pin; the optimal gain itself is credited.
+
+The root reconstructed the band's arbitrary entry phase, supportwise
+four-copy cancellation, exact phase partition, and the located-window
+extension of the cited external argument. The closed physical boundary
+at `81/16` requires a half-open homogeneous comparison. Sixfold local
+motifs are finite certificates; they do not establish a sixfold global
+exit estimate. A smaller merger and an upward exit are distinct outcomes.
+
+For predecessor clocks, the source bank's prefix positivity and exact
+first-hit injection were checked separately from the probability law.
+Its stopped family has its own relative atom bound; this does not transfer
+to an arbitrary cohort. The near-fastest-clock proof retains the terminal
+nonunit inverse child and the physical dyadic clock cancellation. The
+threshold is a first odd landing when a general `M≥y` is used. Source
+counts near a target's past do not decide its future.
