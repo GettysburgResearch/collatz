@@ -284,3 +284,50 @@ has an infinite iid parity sequence. Fair tail bits only avoid a specified
 power-sparse set. The positive-density version uses finitely many centers
 and an actual expanding arithmetic progression. Arbitrary nonlocal
 functions remain outside this obstruction.
+
+## Eighth-checkpoint review boundary
+
+The full-denominator census counts actual least-period signed rational
+cycles, with their common reduced denominator. Its future-minimum charges
+are nonnegative, sum to a rational majorant of the true logarithmic gap,
+and imply all future prefix inequalities only at positively charged
+phases. The charge bound is integrated over real height at fixed integer
+denominator. For a low-minimum cycle, its least period supplies distinct
+numerators and a large maximum; the last crossing at a fixed real floor
+gives a long true prefix. The horizon uses the factor `(3+1/M)/2`, rather
+than the coarser factor two. Distinct cycles cannot share that witness.
+The small-gap conclusion counts possible periods by equidistribution;
+it does not multiply a small probability by the number of parity words.
+Root and rigidity independently reconstructed the proof. No quantitative
+irrationality result or external verification floor enters this exponent.
+
+The stopped law retains the separate low-grade cone requirement. Exact
+minus-one stops are indexed by first-hit reflected origins, and the
+single-origin injection counts other stops without an extra tail-word
+factor. All-clock ordinary densities follow from a finite-deadline
+comparison and the least-ancestor tail. Extra fixed outgoing binary bits
+remain independent of those finite ternary tests before the deadline is
+removed. The joint probability law is a model for a source-density limit,
+with a separately proved growing finite-shell comparison.
+
+The sharp meeting upper bound is a consumer of the existing counted-pair
+tail, credited to Said Duran and Leen through Weaver 124. The exact
+complete-sibling reduction discards periodic targets only after proving
+their zero ordinary density and retaining each finite affine source
+cylinder. The full-dimensional two-adic exception removes all rational
+inputs and therefore contains no claimed positive-integer counterexample.
+Root and cycles independently reconstructed these arguments.
+
+The escape-flux lower bound imports the main repository's finite simple
+path reciprocal theorem at its written proof status. The marked-gate
+functions are total computable only under the stated coverage guarantees.
+For the integer-budget family, totality is equivalent to the proposed
+budget dominating the unknown number of escaping components; it is not
+an unconditional termination assertion for every guessed budget. At the
+correct finite budget the minimum is attained, but its value remains
+unknown. The all-delayed-gate sequence is unconditional and can have
+vanishing weighted defects while losing positivity at escaping sources.
+The separate total-cost functional detects nontrivial cycles as well,
+using true height ratios; no claim establishes that its minimum is zero.
+The finite Lean path comparisons do not certify the variational minimum,
+the asymptotic edge counts, or the full Collatz conjecture.

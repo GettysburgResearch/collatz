@@ -1,0 +1,11 @@
+# Positive defect on the ordinary Collatz graph
+
+[ESCAPE_FLUX.md](ESCAPE_FLUX.md) identifies the normalized logarithmic defect budget with the number of escaping components. A separate, unconditional, total-computable gate construction has positive bounded rational weights, a fixed upper bound on every one-step loss, and at most a slowly growing multiple of logarithmically many violating sites below each height. Its weighted defects can tend to zero at every positive Dirichlet exponent while the limiting weight vanishes on any escaping component. The integer value of the variational minimum remains unknown.
+
+[CYCLE_AND_ESCAPE_COST.md](CYCLE_AND_ESCAPE_COST.md) uses a different rational edge weight. Its minimum global positive defect is infinite if some ordinary trajectory escapes. Otherwise it equals an explicit summable charge on periodic vertices outside the standard cycle. Its vanishing is equivalent to Collatz convergence. The proof gives a variational characterization and does not demonstrate that the minimum vanishes.
+
+[PREFIX_MAXIMUM.md](PREFIX_MAXIMUM.md) gives a short-horizon computable alternative. Its violation count and the count attaining its maximum loss both have the critical entropy order with the ballot power correction. Explicit ordinary increasing paths have unbounded accumulated signed defect even while their entire odd reciprocal sum tends to zero.
+
+[OrdinaryDefect.lean](OrdinaryDefect.lean) checks ordinary finite stopped-maximum dominance and the multiplicative one-edge and path comparisons. All three printed inventories contain only the three standard Lean axioms. Its local dependency is [FiniteTrace.lean](../FiniteTrace.lean). The asymptotic, variational and gate-coverage arguments are written proofs.
+
+[defect_controls.py](defect_controls.py) checks exact native-horizon defects and their maximal-loss lifts in eight ordinary dyadic shells, Bellman properties over 1,024 ordinary starts at eight gate cutoffs, finite first-crossing coalescence, and eight Mersenne continuations. A separately identified positive rational cycle tests the cycle-maximum algebra. Both normal and optimized Python runs reproduce [DEFECT_CONTROLS.json](DEFECT_CONTROLS.json).

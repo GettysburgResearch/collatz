@@ -7,7 +7,14 @@ read arithmetic proofs, fresh Lean builds, exact finite controls, and
 clearly identified external analytic inputs. None of those evidence levels
 is silently promoted to a proof of universal convergence.
 
-## Results worth carrying forward
+The latest [eighth checkpoint](EIGHTH_CHECKPOINT.md) gives the strongest
+current conclusions: a full reduced-denominator exponent above `0.5128`
+at density-one least periods for every signed rational word; sharp
+source-preserving first-smaller-meeting tails after an odd ascent; and an
+exact positive-defect cost for ordinary escaping components. These are
+written research results with finite formal consumers and explicit gaps.
+
+## Initial checkpoint results
 
 | Result | Exact scope | Evidence |
 |---|---|---|
@@ -120,6 +127,13 @@ results, and unsupported bootstrap steps remain explicit.
 
 ## Source intake and credit
 
+The [eighth checkpoint](EIGHTH_CHECKPOINT.md) records the subsequent
+denominator census, stopped first-meeting profile and nonlocal defect
+construction. Its all-word denominator bound needs no quantitative
+irrationality estimate or Subspace Theorem. Its meeting upper bound
+explicitly imports the known adjacent-pair tail. The escape-cost minimum
+and the ordinary exceptional-source question remain undetermined.
+
 The branch starts from main at
 `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.
 [INTAKE.json](INTAKE.json) freezes the complete 146-open-PR metadata
@@ -164,10 +178,13 @@ regressions; it does not validate the mathematical conclusions here.
 ## First unsupported steps
 
 For descent, we still need a smaller physical merger for every fixed
-residual source. For cycles, a word with many mismatches at every lag can
-still pass the new restrictions. For analytic rigidity, no argument
+residual source. A source-frequency tail does not exclude an exceptional
+integer. For cycles, an exceptional least period can still carry a cycle
+of denominator one. For analytic rigidity, no argument
 forces the homogeneous ordinary mass series to continue through an arc;
 the forced ordinary example shows why broad regularity claims fail.
 The same-source first-moment extinction target in PR200/201 remains
-unproved. Each of these is an explicit mathematical obligation, not an
+unproved. The explicit small-defect limits can become zero at precisely
+an escaping source; their required positivity has not been recovered.
+Each of these is an explicit mathematical obligation, not an
 assumption inserted into a purported final proof.
