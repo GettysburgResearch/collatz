@@ -144,3 +144,15 @@
 'Collatz.SixHour.RationalEnergy.energy_criterion_implies_collatz' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'Collatz.SixHour.RankDivision.window_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.RankDivision.adjacent_coefficient_integral' depends on axioms: [propext, Quot.sound]
+'Collatz.SixHour.RankDivision.complete_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SixHour.OrdinaryRelations.root_dvd_first_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.OrdinaryRelations.root_bounded_by_first_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.SixHour.OrdinaryRelations.zero_polynomial_of_small_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -31,6 +31,8 @@ MODULES = [
     ("RationalGreen", PACKET / "root/RationalGreen.lean", "Collatz.SixHour.RationalGreen"),
     ("AdaptiveGreen", PACKET / "global/AdaptiveGreen.lean", "Collatz.SixHour.AdaptiveGreen"),
     ("RationalEnergy", PACKET / "root/RationalEnergy.lean", "Collatz.SixHour.RationalEnergy"),
+    ("RankDivision", PACKET / "arithmetic/RankDivision.lean", "Collatz.SixHour.RankDivision"),
+    ("OrdinaryRelations", PACKET / "global/OrdinaryRelations.lean", "Collatz.SixHour.OrdinaryRelations"),
 ]
 
 

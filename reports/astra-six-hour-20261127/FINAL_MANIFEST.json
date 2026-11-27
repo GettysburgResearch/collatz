@@ -1,0 +1,423 @@
+{
+  "schema": "collatz-six-hour-final-manifest/v1",
+  "frozen_utc": "2026-11-27T04:31:03.747607+00:00",
+  "requested_window": {
+    "start_utc": "2026-11-26T22:44:49Z",
+    "deadline_utc": "2026-11-27T04:44:49Z",
+    "seconds": 21600
+  },
+  "parent_commit": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+  "scope": "Source identity and recorded check scope, not a full Collatz proof. No verification of analytic notes is implied by the Lean audit.",
+  "lean": {
+    "receipt": "reports/astra-six-hour-20261127/LEAN_FINAL.json",
+    "modules": 17,
+    "public_declarations": 136,
+    "success": true,
+    "source_hash_mismatches": []
+  },
+  "new_root_replays": [
+    {
+      "program": "research/astra-six-hour-20261127/arithmetic/check_rank_division.py",
+      "mode": "normal Python; assertions enabled",
+      "outcome": "8190 calendars and three complete rational cycles passed"
+    },
+    {
+      "program": "research/astra-six-hour-20261127/arithmetic/check_binary_past_cube.py",
+      "mode": "normal Python; assertions enabled",
+      "outcome": "all exact energies 46656; common actual ordinary trajectory and separate integer endpoints passed"
+    },
+    {
+      "program": "research/astra-six-hour-20261127/escape/check_first_return.py",
+      "arguments": [
+        "--depth",
+        "13"
+      ],
+      "mode": "normal Python; assertions enabled",
+      "outcome": "exact outward finite-loss enclosures on opposite sides of log(4/3)/2; independent wrapped and forward controls passed",
+      "archived_table_note": "The author table also includes depth 14; root replay covered through depth 13."
+    }
+  ],
+  "files": [
+    {
+      "path": "research/astra-six-hour-20261127/FINAL_PROPOSAL.md",
+      "sha256": "4142f11e6506ed2ad6474c8c3129787c9b4e4758271aff032248ebce40022353",
+      "bytes": 16435
+    },
+    {
+      "path": "research/astra-six-hour-20261127/README.md",
+      "sha256": "bfc751ee78f192a3194015a3c35cd04a617293897f880cb51c31bf93bcaf20dd",
+      "bytes": 26803
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/BINARY_PAST_CUBES.md",
+      "sha256": "4b61f7c259289ce10cbeeba2045a75710470d48b5d15709f6bea4314620be474",
+      "bytes": 7499
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/BRIDGE_PRESSURE_THRESHOLD.md",
+      "sha256": "20b6dddc7fa02fdb85b683163376294ec29cc9b0dfc00639426cea3db1fefef8",
+      "bytes": 9828
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/COLOR_WORDS.md",
+      "sha256": "b9e42980d70894ba5a9a08edbee2d2607d163f8aba58f130762e3ba218c35bd7",
+      "bytes": 7419
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/COMPLETE_DIVISORS.md",
+      "sha256": "7aa4131431630f81dcc7aca71ef4ee65a3dff315e9480ead10445cdb6e5489d9",
+      "bytes": 5873
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/CYCLE_SURGERY.md",
+      "sha256": "d7c6e9a0dd04099faba3e0649792da52e545367427fa4b120d8a6401bdeb2eb9",
+      "bytes": 2980
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/ColorWords.lean",
+      "sha256": "b86516afb0508f254d8835a2b6d846f025b289211409104a7c945ba35185a566",
+      "bytes": 2706
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/CycleSurgery.lean",
+      "sha256": "d4181fab4f2da4a17fde4201906b30b49fd29e0e56e7e0fe7a035c40ccc451b8",
+      "bytes": 1820
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/HANKEL_RANK.md",
+      "sha256": "d08b7459a702ee82520f736fc06761c370f721805661d4749bba485a3acca427",
+      "bytes": 4165
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/MELLIN_RANK_SPACING.md",
+      "sha256": "65174464710c3ddf164c05059defa830dd3a0534b647b086d9e2756f2d42c722",
+      "bytes": 8140
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/MinimumCode.lean",
+      "sha256": "b9691a79f155907e849d789371ed0e3b15662b79dccdb796d187fc857a558d19",
+      "bytes": 3806
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/PERIODIC_TRACE.md",
+      "sha256": "74e00a9c6d54da6835f03773359d6a5380948c2f4e909c559ad97bc9a03451c4",
+      "bytes": 4102
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/PeriodicSiblings.lean",
+      "sha256": "c5661a95879ec45cbc6324582eb9a138cf1ab92ca9b17d4955a0a7becc5916c0",
+      "bytes": 4151
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/RANK_DIVISION.md",
+      "sha256": "67dc61167077f9067d58ec1da322c75fe4a5d76dc115532e540142030dac6efd",
+      "bytes": 7396
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/RANK_DIVISION_TAGS.md",
+      "sha256": "f963a2c2cacc99247dea7006700e3ed67bf3f9d61040b1994cce9f0de166df1c",
+      "bytes": 5891
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/RankDivision.lean",
+      "sha256": "766e64f45272581ffff62b593bd2a5e771f811d8a9ae66398a34238820dfee2f",
+      "bytes": 1383
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/TERNARY_QUOTIENT.md",
+      "sha256": "071cc39fdf708f66a37da259d307a2f5a43dabf280c248c4107126544bff803d",
+      "bytes": 3136
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/TernaryQuotient.lean",
+      "sha256": "a250270083e63eeabdd39ad90ae65c739e205be33ac0663a4532daba7efc5b6e",
+      "bytes": 2393
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/check_binary_past_cube.py",
+      "sha256": "e9a1d892a44fdb8e690415d9eb754730c4b6548a0b61018fc7d4a65577d8f847",
+      "bytes": 4867
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/check_bridge_pressure.py",
+      "sha256": "11e50279fe1aa69d34afb2a913e958307ef1e58d68cd9b7b00ab48ffb69ac73a",
+      "bytes": 6420
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/check_rank_division.py",
+      "sha256": "9c2e4240eece06bf80df56ea04ae91cc5762bbaffd5387a6525e27715fbbbfe9",
+      "bytes": 3506
+    },
+    {
+      "path": "research/astra-six-hour-20261127/check_lean.py",
+      "sha256": "4861dff884c71f69eeaa1cf777322caf691a701b4d382617e999666598c0c9e1",
+      "bytes": 10068
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/CANONICAL_INVERSE_PATHS.md",
+      "sha256": "8c63a9b812b4408b9fda5902ca0f004cfd42a691079552b82ba61df0c1bf295d",
+      "bytes": 14323
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/CLOSED_CORRECTION_SUPPORT.md",
+      "sha256": "56b8922e66787d3522a960291675871a4633464d98491a01a87d1c2f10cf5ae7",
+      "bytes": 9007
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/CRITICAL_POISSON_PROFILE.md",
+      "sha256": "45cb55aa77b2e58de147e07926fb358e0652b0928a54d1d7625d235888e67517",
+      "bytes": 12178
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/CRITICAL_SUPPORT_NEIGHBORHOODS.md",
+      "sha256": "68f2ee4afd286cc560c56bbf840af3f4f250fd9e7d884fe757b1929a76eab5e8",
+      "bytes": 3894
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/ENDPOINT_RATE_TEST.md",
+      "sha256": "22f8dd284b6dbb5f0a1c2922a21955f225f4c65a7305487ddc0197388fb9641f",
+      "bytes": 8134
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/EXPONENTIAL_DUST.md",
+      "sha256": "5c8b2e78aa302bed6b4e5b0de35b1d17c06de76e827edead538fc53d51e1ccac",
+      "bytes": 17995
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/FIRST_RETURN_POISSON.md",
+      "sha256": "3a3e696def252f7790fdae8cd01a76b4a953ec18f57a91edec6e59a666894010",
+      "bytes": 6688
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/GRADED_CORRECTION_SETS.md",
+      "sha256": "7ad28bcc74da855a2756a4f380df461f421cb2b040d51ae85ea027b5d93214e5",
+      "bytes": 6518
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/MARKED_SOLENOID.md",
+      "sha256": "2f9e9832752b11de52ce9563d6382d4d0276f0e6d639468e69d5b744689ca4be",
+      "bytes": 5185
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/POISSON_CLOCK_SPECTRUM.md",
+      "sha256": "bf5bbe923a54c934c009ac0ca983430dfb0e824899d31816e498473a296fc6ea",
+      "bytes": 8289
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/POISSON_SOURCE_PROBE.md",
+      "sha256": "669afdacbd05e7de7f408d26e9e031f7ff6a06539ffb690717161794d193fb65",
+      "bytes": 11118
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/POSITIVE_TRACE_BUDGET.md",
+      "sha256": "f5b5be930767e68499dd47a4a414121062ae5eaf1a75b915dc620b51bc9ebd25",
+      "bytes": 11073
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/RATIONAL_WINDOW_SHADOWS.md",
+      "sha256": "81e2745ef65f8511f0ac5df528ec53698b9f94eeab6f89affefbe07ffea5ae9b",
+      "bytes": 9134
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/REAL_FIBRE_AND_FRONT.md",
+      "sha256": "26098bd4d288b860eb869d52a2dc35affbe91723347389ac8466e10e085285f7",
+      "bytes": 13677
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/STATIONARY_SELECTION.md",
+      "sha256": "529cb886397ab1fd77da6f1c91a3a99eb7e82d36f07d26b9ab3f449904793b23",
+      "bytes": 3733
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/STOPPED_RATE_TEST.md",
+      "sha256": "bb8f42cb67f22bee802baeb132e594edf60b6f979ceb53fb141be9c4ba315c20",
+      "bytes": 6252
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/check_first_return.py",
+      "sha256": "4172f936e832798d3a9ef8ec0bda7a4dbc089e2ecf96bb86684b3f9474c2767b",
+      "bytes": 4592
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/check_linear_trace.py",
+      "sha256": "a5321a6bfd15f238a1d3c108af1cd9b68ddbb2bfdb995961e563f01b1cb4ccba",
+      "bytes": 4648
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/check_poisson_probe.py",
+      "sha256": "c43241b526684c6b07b165ae0c1b5ec6a21a5c672380192a294609a0deeded63",
+      "bytes": 3560
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/ADAPTIVE_GREEN.md",
+      "sha256": "d8ba6b18cc09eb58555a7f7b94f2f914ec44226c34b1076fa9d1cac1f40fdbfa",
+      "bytes": 9224
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/ALL_HEIGHT_TRANSFER.md",
+      "sha256": "ad65d8c1ba294a8c19fd0a0d45c4f45a61b5f97be10ce81c6b655c08d2658ff8",
+      "bytes": 3742
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/AdaptiveGreen.lean",
+      "sha256": "138fb0768b2922afe42048bf6c4f8b8054ecbd8eb763279812f7661d9535830b",
+      "bytes": 3777
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/CANONICAL_BIRTHS.md",
+      "sha256": "234a0269070bcde9395071d3adb23f94f4adfd3120f2157dd26d5890361daf24",
+      "bytes": 13531
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/CONFORMAL_ATOMS.md",
+      "sha256": "d2afc2a3c99fec47152d4926f01b0d587a64ab66308aad6ecc4565ef9d8c547e",
+      "bytes": 11043
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/CanonicalBirths.lean",
+      "sha256": "68f5c33238b163a9cdcf93599bd647b32f8433b540718b9354475fb274f57e18",
+      "bytes": 4077
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/ELLIPTIC_MARKERS.md",
+      "sha256": "69b500c6bdd83dc80fc7adac8348101172a983d006ee1d6facba77f63211ad3a",
+      "bytes": 5105
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/EllipticMarkers.lean",
+      "sha256": "4a5cedb92b896ab05fbe2d6998a8f2c4d0a2c0b32a762ff63cc49aa9dd6a82dc",
+      "bytes": 2635
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/FAREY_CURRENT.md",
+      "sha256": "391aed58cfd61751d10aa40096acd4d3a5cbf4c5654fdad689c0ff99d75e0a17",
+      "bytes": 6509
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/FareyCurrent.lean",
+      "sha256": "e6679a40c1ce995d2714e4eb84a1a91f40785957bc047b650ae49b7e70f21016",
+      "bytes": 3464
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/HEIGHT_SHADOWS.md",
+      "sha256": "5ff8558b41c0adbc3228aefea8bb5da0115b03363b3c40de63b512d8307a8829",
+      "bytes": 9001
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/ORDINARY_RELATIONS.md",
+      "sha256": "25532aebf4ceffbe0620c9ee6f9f11252a242ff73c7c719c7bb456daf62c837d",
+      "bytes": 6949
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/OrdinaryRelations.lean",
+      "sha256": "436fcab33a45d69bca93be7903e830782ed475dcb8ab481d7619b77cde0a4f0f",
+      "bytes": 1539
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/POSITIVE_SUNIT_SHADOWS.md",
+      "sha256": "e916c9fb68efd7b96f07485a520d3994673c1aafa06f0a992d21a859074c6cda",
+      "bytes": 7684
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/PRIMITIVE_CHARACTERS.md",
+      "sha256": "2d3dd61d72a5e6daf959151e50b8cec1c0ffc1af29e92f8a6f1d31c1bd7671c5",
+      "bytes": 6922
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/SPARSE_SHADOWS.md",
+      "sha256": "83537215d806d4ddbc68575b36c5fed9f7aaeb4b8c2a2ceb1a4402beee63b096",
+      "bytes": 9096
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/TILTED_GREEN.md",
+      "sha256": "684372abd71626eb3a7d87392c8f9bdba90b841328025bb07eabcba4179301a6",
+      "bytes": 8655
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/TiltedGreen.lean",
+      "sha256": "c778d1b8f36f9f3c03737eafeeefcde53b0ddf8f5c8da9dace0eb0ec80dbfae1",
+      "bytes": 1750
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/check_primitive.py",
+      "sha256": "86edf30dddbfc56c6ea44c8cb5696194326bce08fe29b560329adb9382e65d79",
+      "bytes": 4767
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/ADELIC_CLOCK.md",
+      "sha256": "9cda8aebc59815aff11eb57037f9d451674d7cb2a3423954b75cbd95fd396f94",
+      "bytes": 4072
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/ClosedSupport.lean",
+      "sha256": "6e659acac5636b77b305b8811af640cbda2187b73069780db51e4fd78bcb2ec3",
+      "bytes": 6300
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/DIRICHLET_TRACE.md",
+      "sha256": "ee9f38ad35de43d0830f65d3bc0a4a10aa5c9e07fe7b4a28b501fe7a0b7a10d7",
+      "bytes": 6448
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/FormalTransport.lean",
+      "sha256": "635dde5062a95b08b47a45ccda6ed77d23da401c34b35c3b5b3d280c965d2f0b",
+      "bytes": 6232
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/PotentialAssembly.lean",
+      "sha256": "5128113babff8767b875bda6418a01c37031a2974bf27dfe4d4cdac7950a1266",
+      "bytes": 6378
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RATIONAL_ENERGY.md",
+      "sha256": "873b76f4bb4932748d4ddd2591a993395a66c807d4c34ff8b4fb45ec7964bbae",
+      "bytes": 5770
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RATIONAL_GREEN.md",
+      "sha256": "cbe8e411a9f487eb3e5b0ef451876d06fdb7a7b57d06ed7a5648f5d0aa141bab",
+      "bytes": 5772
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RationalEnergy.lean",
+      "sha256": "c7ffb1519201f41131f8ecdf7e30c6db588eb035c2a8ccc190adc5824dbfac67",
+      "bytes": 6745
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/RationalGreen.lean",
+      "sha256": "7f69ed73b083f3263543fef939ca4690a9599f486250a565d7e10930642d1248",
+      "bytes": 8865
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/arithmetic/RANK_DIVISION.json",
+      "sha256": "7c878fbad245ef3d5714b7596fbbfcdb522db9928a02987cc30d31c75aa3f0c6",
+      "bytes": 1305
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/arithmetic/BINARY_PAST_CUBES.json",
+      "sha256": "9c1037ee59c55ac34e892491addc1b17e7825d6a2ee1e0e33d830fafdb156eec",
+      "bytes": 615
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/escape/first_return_budget.tsv",
+      "sha256": "31657ee97d017afdbeace242e539bb6d29ee543eb28b334b7a7bcc13955d5ec2",
+      "bytes": 733
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/LEAN_FINAL.json",
+      "sha256": "416541937365f786cfc0a90084f9f6b21795728c36a80ad9675dfbe7567a6a07",
+      "bytes": 15133
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/FINAL_REVIEW.md",
+      "sha256": "f10d36edc903b8a1f82e4cba565b400ef862c4bd612081e1ce49282f92cfbbb9",
+      "bytes": 11906
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/FINAL_INTAKE.json",
+      "sha256": "4a7f386e63386ed7c8badca73d6cd376cde06ce0efc4a4bdbe7e45e8358c7efd",
+      "bytes": 7310
+    }
+  ],
+  "full_collatz_proof": false
+}

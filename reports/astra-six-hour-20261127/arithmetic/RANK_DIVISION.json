@@ -1,0 +1,65 @@
+{
+  "binary_calendars_through_length_12": 8190,
+  "ordered_rational_controls": [
+    {
+      "period": 5,
+      "denominator": 13,
+      "minimum_numerator": 283,
+      "window": 5,
+      "coefficients": [
+        -2,
+        0,
+        0,
+        1,
+        -2,
+        3
+      ],
+      "different_images": 5,
+      "minimum_image": "120/13",
+      "maximum_image": "196/13",
+      "minimum_signed_defect": -4,
+      "maximum_signed_defect": 4
+    },
+    {
+      "period": 8,
+      "denominator": 1631,
+      "minimum_numerator": 10865,
+      "window": 4,
+      "coefficients": [
+        -2,
+        -1,
+        2,
+        0,
+        1
+      ],
+      "different_images": 8,
+      "minimum_image": "8422/1631",
+      "maximum_image": "23860/1631",
+      "minimum_signed_defect": -6,
+      "maximum_signed_defect": 8
+    },
+    {
+      "period": 41,
+      "denominator": 44835377399,
+      "minimum_numerator": 29340952507853,
+      "window": 9,
+      "coefficients": [
+        -2,
+        0,
+        1,
+        0,
+        0,
+        -2,
+        3,
+        0,
+        -2,
+        3
+      ],
+      "different_images": 41,
+      "minimum_image": "395099775194/44835377399",
+      "maximum_image": "1130405345264/44835377399",
+      "minimum_signed_defect": -14,
+      "maximum_signed_defect": 16
+    }
+  ]
+}

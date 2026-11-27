@@ -13,6 +13,8 @@ import PotentialAssembly
 import RationalGreen
 import AdaptiveGreen
 import RationalEnergy
+import RankDivision
+import OrdinaryRelations
 
 #print axioms Collatz.SixHour.MinimumCode.trace_affine
 #print axioms Collatz.SixHour.MinimumCode.suffix_fits_at_minimum
@@ -144,3 +146,9 @@ import RationalEnergy
 #print axioms Collatz.SixHour.RationalEnergy.bounded_additive_growth_impossible
 #print axioms Collatz.SixHour.RationalEnergy.criterion_reaches_small
 #print axioms Collatz.SixHour.RationalEnergy.energy_criterion_implies_collatz
+#print axioms Collatz.SixHour.RankDivision.window_identity
+#print axioms Collatz.SixHour.RankDivision.adjacent_coefficient_integral
+#print axioms Collatz.SixHour.RankDivision.complete_denominator
+#print axioms Collatz.SixHour.OrdinaryRelations.root_dvd_first_coefficient
+#print axioms Collatz.SixHour.OrdinaryRelations.root_bounded_by_first_coefficient
+#print axioms Collatz.SixHour.OrdinaryRelations.zero_polynomial_of_small_coefficients

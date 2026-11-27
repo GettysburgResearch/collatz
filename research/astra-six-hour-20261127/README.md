@@ -7,6 +7,10 @@ cycle denominators, and global component colorings. It builds on the preceding
 five changed research heads recorded below. It does not replay earlier bulk
 verification or import their branch histories.
 
+Start with [the full-problem proposal and synthesis](FINAL_PROPOSAL.md) for
+the exact final Lean implication, the remaining estimates, and the combined
+results of this six-hour pass.
+
 The odd map is `U(x) = (3*x+1)/2^v₂(3*x+1)` on positive odd integers. The
 shortcut map is `T(x)=x/2` on even integers and `(3*x+1)/2` on odd integers.
 The density `rho_k` has mean one on `Z/(3^k)`, and its defining independent
@@ -218,6 +222,84 @@ executions of the rational certificate agree byte for byte.
 records the statement-level scope. [LEAN_FOURTH.json](../../reports/astra-six-hour-20261127/LEAN_FOURTH.json)
 records fifteen fresh module builds and 130 public axiom inventories.
 
+## Final checkpoint: actual-source limits and arithmetic relations
+
+[The critical Poisson profile](escape/CRITICAL_POISSON_PROFILE.md) proves a
+source-qualified Gaussian transition at the first jump, retaining the two
+first-hit clocks and the real correction. The width is independent of the
+power of the smoothing scale. Its amplitude remains the basin density of 1.
+[Critical support neighborhoods](escape/CRITICAL_SUPPORT_NEIGHBORHOODS.md)
+uses the exact odd-integer mesh to give a lower bound of order
+`1/sqrt(log(1/epsilon))` on neighborhoods of the entire closed correction
+support. These are written deductions with their analytic inputs retained.
+
+[The positive trace budget](escape/POSITIVE_TRACE_BUDGET.md) gives
+componentwise actual-tree formulas and a power-decaying tail for all
+nonperiodic stationary loss terms. The total budget and its exact
+finite-depth difference are credited to Weaver 176, where they already
+appear. Rational outward enclosures show that its finite increments have
+both signs. [Stationary selection](escape/STATIONARY_SELECTION.md) shows
+that harmonicity, finite point data and finitely many exit moments alone
+cannot replace the individual-depth selection of the genuine law.
+
+[Stopped-row decay](escape/STOPPED_RATE_TEST.md) and the
+[finite endpoint mark](escape/ENDPOINT_RATE_TEST.md) combine into one
+nonnegative original-law statistic. A polynomial prefactor times `(2/3)^j`
+on one unbounded subsequence would exclude both escape and extra cycles.
+The upper estimate is open; the lower detections retain the actual ordinary
+source and avoid signed cancellation. [Marked solenoid mixing](escape/MARKED_SOLENOID.md)
+extends Haar mixing to integer-labelled covers with an explicit range,
+without asserting control at a fixed arithmetic fibre.
+
+[Positive rank division](arithmetic/RANK_DIVISION.md) forms short bounded
+positive combinations of a candidate cycle's own phases while retaining
+every prime power of its complete denominator. The
+[tagged version](arithmetic/RANK_DIVISION_TAGS.md) can preserve both finite
+native digit windows at all phases simultaneously. Its output still has
+signed forcing and many spatial reversals. Three Lean identities check the
+finite cancellation, integrality and denominator argument.
+[Local Hankel rank](arithmetic/HANKEL_RANK.md) excludes a fixed rational
+linear dependence across a whole explicit consecutive window, including
+all rank-boundary doublings. It does not bound the sizes of the minors.
+[Binary-past cubes](arithmetic/BINARY_PAST_CUBES.md) attain the sharp
+four-sum energy on genuine fixed-total words, all realizable on one finite
+ordinary path of ratio below `8/3`. This rules out a proposed stronger
+local energy estimate, without supplying any periodic path.
+
+[Positive S-unit shadows](global/POSITIVE_SUNIT_SHADOWS.md) uses the
+finite-rank equation theorem to exclude persistent bounded-term positive
+representations on an escaping ray. [Physical-height shadows](global/HEIGHT_SHADOWS.md)
+gives simultaneous clean blocks at polynomial target precision within
+`O(log(a+1))` steps, including all positive rational anchors of a small
+polynomial height. [An all-height date](global/ALL_HEIGHT_TRANSFER.md)
+combines PR200's fixed-height clock with an optimized cutoff and a
+height-drop restart, obtaining a pointwise square-root-logarithmic bound
+in the returned target's own height.
+
+[Ordinary polynomial relations](global/ORDINARY_RELATIONS.md) bounds every
+independent integer relation on a consecutive or branching family of actual
+states. On an escaping ray its consecutive-state implication holds at a
+density-one set of dates simultaneously over all permitted lengths, degrees
+and coefficients. Three Lean kernels check the underlying integer-root
+argument. The existing inverse laws do not force one of the excluded
+independent relations. [The adelic clock test](root/ADELIC_CLOCK.md) also
+keeps the real and 2-adic capacity factors in balance: an additional analytic
+continuation estimate is needed before the strict algebraicity theorem can
+apply.
+
+[Critical conformal atoms](global/CONFORMAL_ATOMS.md) constructs finite
+atomic eigenmeasures of the squared inverse operator on ternary irrational
+points. The examples have positive real branches, coherent odd binary
+branches and ordinary realizations of every finite diagram. They do not
+give an infinite orbit of one positive integer. The construction identifies
+the arithmetic condition missing from a general operator-uniqueness proof.
+
+[The final synthesis](FINAL_PROPOSAL.md) retains the two open finite-energy
+estimates explicitly. [LEAN_FINAL.json](../../reports/astra-six-hour-20261127/LEAN_FINAL.json)
+records seventeen fresh module builds and 136 public axiom inventories.
+[The final review](../../reports/astra-six-hour-20261127/FINAL_REVIEW.md)
+records proof scopes, source attribution and the three new exact replays.
+
 ## The cycle and global attacks
 
 | Result | What it controls | Remaining pointwise obligation |
@@ -236,7 +318,7 @@ a constant coloring.
 
 ## Lean and reproducible checks
 
-Fifteen new Lean modules check finite arithmetic, exact orbit kernels, and
+Seventeen new Lean modules check finite arithmetic, exact orbit kernels, and
 the explicit conditional topological and full-problem reductions:
 
 * [MinimumCode.lean](arithmetic/MinimumCode.lean): physical minimum, carry cap,
@@ -271,6 +353,11 @@ the explicit conditional topological and full-problem reductions:
 * [RationalEnergy.lean](root/RationalEnergy.lean): the finite rational energy,
   its actual-path lower bound, and full convergence conditional on the stated
   uniform bound and target decay.
+* [RankDivision.lean](arithmetic/RankDivision.lean): common finite window
+  cancellation, integral adjacent coefficients, and the complete denominator.
+* [OrdinaryRelations.lean](global/OrdinaryRelations.lean): divisibility and
+  coefficient bounds at a nonzero integer root, and the resulting zero
+  polynomial criterion.
 
 [check_lean.py](check_lean.py) compiles into fresh project objects, using Lean
 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, and prints and
@@ -320,3 +407,19 @@ PR201 at `807d67ab049f1646398d8ca8c20948cdc1d87742`, PR192 at
 `2346db2d49030ef385b73e1ee3e27dcbff86d2d9`. The new Mellin, physical-source,
 graded transport, and bridge arguments were read where they bear on these
 attacks. [Exact delta inventory](../../reports/astra-six-hour-20261127/THIRD_INTAKE.json).
+
+A fourth intake froze PR200 at `8fd938eb3ef7898a427d8a6c0e501a7777c4a6ec`
+and PR201 at `662a3dee736ccbca038377fbb4b2d9439374db16`; a later intake
+advanced PR201 to `860a67dedc860adcd82b964958d91b9e21d610f1`. Their relevant
+new arguments were read without replaying bulk certificates. PR200's fifth
+absolute moment extends the width range beyond this packet's earlier
+fourth-energy calculation; that earlier threshold is method-specific.
+[Fourth delta inventory](../../reports/astra-six-hour-20261127/FOURTH_INTAKE.json).
+
+The closing intake froze PR200 at `7af83b786636abba2f44fe8c81441153331377fc`,
+PR201 at `6795369ac4e604eec342c0b6c08b9a14cd2ca4ec`, and PR192 at
+`ae48a04cca29abe5fc8273bcda45e7eee0874896`. Their new guides and the relevant
+proofs were read without rerunning archived bulk work. They add the
+restricted adjacent-gap period exclusion, critical first-clearance source
+laws, canonical source paths, full-mask moment bounds and a fixed-terminal
+escape functional. [Final intake](../../reports/astra-six-hour-20261127/FINAL_INTAKE.json).

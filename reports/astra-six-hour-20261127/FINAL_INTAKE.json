@@ -1,0 +1,136 @@
+{
+  "schema": "collatz-six-hour-final-intake/v1",
+  "metadata_retrieved_not_after_utc": "2026-11-27T04:28:00Z",
+  "scope": "Closing GitHub metadata and selective reading of newly advanced mathematical guides and pertinent proofs; no inherited bulk replay.",
+  "repository": "GettysburgResearch/collatz",
+  "selected_open_pull_requests": [
+    {
+      "pr": 192,
+      "title": "Collatz: complete denominators, marked ordinary traces and original-source descent",
+      "head": "ae48a04cca29abe5fc8273bcda45e7eee0874896",
+      "branch": "research/astra-central-closure-20261124",
+      "updated_at": "2026-11-27T04:21:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "pr": 193,
+      "title": "Collatz: adaptive rational energy, signed source isolation, and RH-assisted cycle bounds",
+      "head": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+      "branch": "research/astra-universal-descent-20261124",
+      "updated_at": "2026-11-27T03:15:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 195,
+      "title": "Collatz: actual witness minima and original-law clock limits",
+      "head": "3fa7ef4a0011b35447a70f587b400878d5ea8ebe",
+      "branch": "research/astra-global-closure-20261124",
+      "updated_at": "2026-11-27T01:49:29Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "pr": 197,
+      "title": "Collatz: ordinary wall exclusions, all-source clocks, and fixed-source bridge tests",
+      "head": "1f0f496fbea37792439feada6106eaaff596bcd1",
+      "branch": "research/ayh-resource-reset-20261124",
+      "updated_at": "2026-11-26T21:42:55Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "pr": 200,
+      "title": "Collatz: finite height-one period census and physical residue sources",
+      "head": "7af83b786636abba2f44fe8c81441153331377fc",
+      "branch": "research/gpt62-regularity-rigidity-20261124",
+      "updated_at": "2026-11-27T03:47:26Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 201,
+      "title": "Collatz: finite-mass criterion, canonical localization, and source laws",
+      "head": "6795369ac4e604eec342c0b6c08b9a14cd2ca4ec",
+      "branch": "gpt62/killed-green-head-closure-20261124",
+      "updated_at": "2026-11-27T04:23:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 206,
+      "title": "Prove sharp Collatz pair and triple clocks and strengthen fixed-source tests",
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "branch": "research/lean-clock-packing-20261124",
+      "updated_at": "2026-11-26T23:35:16Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206"
+    }
+  ],
+  "new_intake": [
+    {
+      "pr": 192,
+      "previous_head": "75eac0cbc744469ae2886bc2f140685c484e9fe7",
+      "head": "ae48a04cca29abe5fc8273bcda45e7eee0874896",
+      "reader": "global agent; root read closing status",
+      "paths": [
+        "research/astra-sixhour-20261127/CLOSURE_STATUS.md",
+        "research/astra-sixhour-20261127/synthesis/FULL_MASK_MOMENTS.md",
+        "research/astra-sixhour-20261127/transport/ORIGINAL_CURRENT.md",
+        "research/astra-sixhour-20261127/transport/SUSCEPTIBILITY.md",
+        "research/astra-sixhour-20261127/transport/RESIDUAL_CURRENT.md"
+      ],
+      "findings": [
+        "Full-mask individual absolute moment obstruction for every fixed real q>1, leaving joint-frequency products open.",
+        "Original-source current has a concrete first loss but no joint upper bound for later current and boundary.",
+        "Actual fixed-terminal signed susceptibility is strictly positive exactly when positive escape exists, under its retained inputs.",
+        "Closure status retains the actual canonical source and explicitly leaves the universal return unproved."
+      ]
+    },
+    {
+      "pr": 200,
+      "previous_head": "8fd938eb3ef7898a427d8a6c0e501a7777c4a6ec",
+      "head": "7af83b786636abba2f44fe8c81441153331377fc",
+      "reader": "cycle agent; root read convex counterconstruction",
+      "paths": [
+        "research/six-hour-20261127/SIXTH_CHECKPOINT.md",
+        "research/six-hour-20261127/cycles/ADJACENT_GAP_PERIOD_EXCLUSION.md",
+        "research/six-hour-20261127/cycles/ADJACENT_PERIOD_LEAN_CERTIFICATE.md",
+        "research/six-hour-20261127/cycles/EXACT_RESIDUE_SUPPORT_AND_UNCAPPED_DIVERSITY.md",
+        "research/six-hour-20261127/cycles/RESIDUE_FIBRE_PHYSICAL_SOURCE.md",
+        "research/six-hour-20261127/cycles/CONVEX_TERNARY_CAP_OBSTRUCTION.md"
+      ],
+      "findings": [
+        "Excludes primitive ordinary cycles with canonical width W<2, minimum at least 2^71, and odd period at most 10^1000. Published finite trajectory verification supplies the minimum input for nontrivial cycles.",
+        "959 candidate upper convergents are excluded by exact finite inequalities; finite Lean arithmetic is distinct from the written real-logarithm, continued-fraction and Collatz reductions.",
+        "Proper rational cycles with one occupied fractional part are singletons; general residue diversity does not exclude denominator-one ordinary cycles.",
+        "Abstract convex subcubic labels satisfy binary ternary-tree restrictions and the lowbit hypotheses of our local Hankel-rank theorem, but not the actual chronological affine recurrence.",
+        "No effective overlap between finite period exclusion and asymptotic finiteness is supplied."
+      ]
+    },
+    {
+      "pr": 201,
+      "previous_head": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "head": "6795369ac4e604eec342c0b6c08b9a14cd2ca4ec",
+      "reader": "escape agent; root read final synthesis",
+      "paths": [
+        "research/six-hour-20261127/FINAL_SYNTHESIS.md",
+        "research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md",
+        "research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md"
+      ],
+      "findings": [
+        "Critical first-clearance census has actual ordinary endpoint weights proportional to (1+log y)*y^(-log_3(2)) with stated clock and residue hypotheses.",
+        "Permanent critical survival equals a weighted escaping-source quantity up to stated comparisons, and excludes cycle contributions; its extinction is unproved.",
+        "Canonical augmented return and outward paths give explicit source/clock bounds while retaining an unproved ordinary basin implication.",
+        "Final synthesis reports the full physical source exponent 37/100 and conditional microscopic joining entropy, with their external inputs and weak-limit scope.",
+        "No upper bound for our stopped-row or finite-energy criterion follows from these new source laws."
+      ]
+    }
+  ],
+  "intermediate_pr201_head": "860a67dedc860adcd82b964958d91b9e21d610f1",
+  "intermediate_pr201_paths_read": [
+    "research/six-hour-20261127/EIGHTH_CHECKPOINT.md",
+    "research/six-hour-20261127/arithmetic/TERNARY_PAST_ENTROPY.md",
+    "research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md"
+  ],
+  "publication_target": {
+    "pr": 193,
+    "branch": "research/astra-universal-descent-20261124",
+    "expected_parent": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd"
+  },
+  "full_collatz_proof": false
+}
