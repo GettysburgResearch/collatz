@@ -1,0 +1,43 @@
+{
+  "schema": "astra-phase2-finite-replay-v1",
+  "finished_utc": "2026-11-27T14:04:00.114345+00:00",
+  "rows": [
+    {
+      "program": "cycles/spectrum/check_spectrum.py",
+      "optimized": false,
+      "source_sha256": "7b188d10238c229dd29f756303748aaf09e15116ef238f714d1aa3487e12a885",
+      "returncode": 0,
+      "seconds": 0.38,
+      "stdout": "minimum mechanical edits certified 369788 at period floor 217000000000\nminimum geometric grid crossings 522498 at period floor 217000000000\nminimum mechanical edits certified 894200757095011 at period floor 1267650600228229401496703205376\nminimum geometric grid crossings 1264590838166868 at period floor 1267650600228229401496703205376\nprimitive rational necklaces 585 subgroup cutoffs 1633 optimal alignments 1755\nblock 5 3 rows 9 period 45 changed rows 1 complete reduced denominator bit length 44\nblock 8 5 rows 31 period 248 changed rows 1 complete reduced denominator bit length 247\nblock 19 12 rows 121 period 2299 changed rows 2 complete reduced denominator bit length 2298\nblock 46 29 rows 65 period 2990 changed rows 1 complete reduced denominator bit length 2987\nblock 65 41 rows 143 period 9295 changed rows 1 complete reduced denominator bit length 9294\n",
+      "stderr": ""
+    },
+    {
+      "program": "cycles/spectrum/check_spectrum.py",
+      "optimized": true,
+      "source_sha256": "7b188d10238c229dd29f756303748aaf09e15116ef238f714d1aa3487e12a885",
+      "returncode": 0,
+      "seconds": 0.485,
+      "stdout": "minimum mechanical edits certified 369788 at period floor 217000000000\nminimum geometric grid crossings 522498 at period floor 217000000000\nminimum mechanical edits certified 894200757095011 at period floor 1267650600228229401496703205376\nminimum geometric grid crossings 1264590838166868 at period floor 1267650600228229401496703205376\nprimitive rational necklaces 585 subgroup cutoffs 1633 optimal alignments 1755\nblock 5 3 rows 9 period 45 changed rows 1 complete reduced denominator bit length 44\nblock 8 5 rows 31 period 248 changed rows 1 complete reduced denominator bit length 247\nblock 19 12 rows 121 period 2299 changed rows 2 complete reduced denominator bit length 2298\nblock 46 29 rows 65 period 2990 changed rows 1 complete reduced denominator bit length 2987\nblock 65 41 rows 143 period 9295 changed rows 1 complete reduced denominator bit length 9294\n",
+      "stderr": ""
+    },
+    {
+      "program": "rigidity/phase2/reflected_controls.py",
+      "optimized": false,
+      "source_sha256": "84c918fb7fcfce556e7c3f64404b1b3d5809ae45ed9836bd9660598b54949a7d",
+      "returncode": 0,
+      "seconds": 0.067,
+      "stdout": "{\n  \"reflected_first_hit_counts_by_even_count\": [\n    1,\n    1,\n    2,\n    2,\n    3,\n    4,\n    6,\n    8,\n    13,\n    20,\n    30,\n    44,\n    66,\n    102,\n    156,\n    226,\n    331,\n    489,\n    740,\n    1116,\n    1676,\n    2504,\n    3757,\n    5613,\n    8435,\n    12623,\n    18952\n  ],\n  \"p1_normalized_limit_rational_bounds\": [\n    \"7359716732026528428719416/6461081889226673298932241\",\n    \"17172672374728566378417880/15075857741528904364175229\"\n  ],\n  \"p1_normalized_limit_decimal_approximations\": [\n    \"1.1390842676515608607555633053337794\",\n    \"1.1390842676515608637231717448473163\"\n  ],\n  \"maxima_scaled_by_9_to_pk_depths_1_to_10\": {\n    \"1\": [\n      10,\n      91,\n      829,\n      7471,\n      67258,\n      605341,\n      5448178,\n      49033792,\n      441304408,\n      3971740762\n    ],\n    \"2\": [\n      82,\n      6643,\n      538165,\n      43591447,\n      3530907370,\n      286003497133,\n      23166283274578,\n      1876468945254184,\n      151993984565608912,\n      12311512749814879882\n    ]\n  },\n  \"known_terminating_all_odd_excursions\": [\n    {\n      \"k\": 1,\n      \"q_bit_length\": 3,\n      \"x_bit_length\": 2,\n      \"q_to_one_steps\": 4,\n      \"amplification\": \"9/4\"\n    },\n    {\n      \"k\": 2,\n      \"q_bit_length\": 9,\n      \"x_bit_length\": 8,\n      \"q_to_one_steps\": 10,\n      \"amplification\": \"81/16\"\n    },\n    {\n      \"k\": 3,\n      \"q_bit_length\": 27,\n      \"x_bit_length\": 25,\n      \"q_to_one_steps\": 28,\n      \"amplification\": \"729/64\"\n    },\n    {\n      \"k\": 4,\n      \"q_bit_length\": 81,\n      \"x_bit_length\": 79,\n      \"q_to_one_steps\": 82,\n      \"amplification\": \"6561/256\"\n    },\n    {\n      \"k\": 5,\n      \"q_bit_length\": 243,\n      \"x_bit_length\": 240,\n      \"q_to_one_steps\": 244,\n      \"amplification\": \"59049/1024\"\n    },\n    {\n      \"k\": 6,\n      \"q_bit_length\": 729,\n      \"x_bit_length\": 725,\n      \"q_to_one_steps\": 730,\n      \"amplification\": \"531441/4096\"\n    },\n    {\n      \"k\": 7,\n      \"q_bit_length\": 2187,\n      \"x_bit_length\": 2183,\n      \"q_to_one_steps\": 2188,\n      \"amplification\": \"4782969/16384\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "program": "rigidity/phase2/reflected_controls.py",
+      "optimized": true,
+      "source_sha256": "84c918fb7fcfce556e7c3f64404b1b3d5809ae45ed9836bd9660598b54949a7d",
+      "returncode": 0,
+      "seconds": 0.117,
+      "stdout": "{\n  \"reflected_first_hit_counts_by_even_count\": [\n    1,\n    1,\n    2,\n    2,\n    3,\n    4,\n    6,\n    8,\n    13,\n    20,\n    30,\n    44,\n    66,\n    102,\n    156,\n    226,\n    331,\n    489,\n    740,\n    1116,\n    1676,\n    2504,\n    3757,\n    5613,\n    8435,\n    12623,\n    18952\n  ],\n  \"p1_normalized_limit_rational_bounds\": [\n    \"7359716732026528428719416/6461081889226673298932241\",\n    \"17172672374728566378417880/15075857741528904364175229\"\n  ],\n  \"p1_normalized_limit_decimal_approximations\": [\n    \"1.1390842676515608607555633053337794\",\n    \"1.1390842676515608637231717448473163\"\n  ],\n  \"maxima_scaled_by_9_to_pk_depths_1_to_10\": {\n    \"1\": [\n      10,\n      91,\n      829,\n      7471,\n      67258,\n      605341,\n      5448178,\n      49033792,\n      441304408,\n      3971740762\n    ],\n    \"2\": [\n      82,\n      6643,\n      538165,\n      43591447,\n      3530907370,\n      286003497133,\n      23166283274578,\n      1876468945254184,\n      151993984565608912,\n      12311512749814879882\n    ]\n  },\n  \"known_terminating_all_odd_excursions\": [\n    {\n      \"k\": 1,\n      \"q_bit_length\": 3,\n      \"x_bit_length\": 2,\n      \"q_to_one_steps\": 4,\n      \"amplification\": \"9/4\"\n    },\n    {\n      \"k\": 2,\n      \"q_bit_length\": 9,\n      \"x_bit_length\": 8,\n      \"q_to_one_steps\": 10,\n      \"amplification\": \"81/16\"\n    },\n    {\n      \"k\": 3,\n      \"q_bit_length\": 27,\n      \"x_bit_length\": 25,\n      \"q_to_one_steps\": 28,\n      \"amplification\": \"729/64\"\n    },\n    {\n      \"k\": 4,\n      \"q_bit_length\": 81,\n      \"x_bit_length\": 79,\n      \"q_to_one_steps\": 82,\n      \"amplification\": \"6561/256\"\n    },\n    {\n      \"k\": 5,\n      \"q_bit_length\": 243,\n      \"x_bit_length\": 240,\n      \"q_to_one_steps\": 244,\n      \"amplification\": \"59049/1024\"\n    },\n    {\n      \"k\": 6,\n      \"q_bit_length\": 729,\n      \"x_bit_length\": 725,\n      \"q_to_one_steps\": 730,\n      \"amplification\": \"531441/4096\"\n    },\n    {\n      \"k\": 7,\n      \"q_bit_length\": 2187,\n      \"x_bit_length\": 2183,\n      \"q_to_one_steps\": 2188,\n      \"amplification\": \"4782969/16384\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "identical_outputs": true
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "astra-checkpoint-receipts/v1",
+  "files": [
+    {
+      "file": "DESCENT_AUTHOR_REPLAY.txt",
+      "sha256": "b57d4e586593136230f83c99fdb67a378ccba38ac8047ba35a91898d7a4d5229",
+      "bytes": 1058
+    },
+    {
+      "file": "FINITE_REPLAY.json",
+      "sha256": "c0758ea3bf5da0dc7ff93ea3d58c80c540583933be67fb8ca1bde077ae497d24",
+      "bytes": 7528
+    },
+    {
+      "file": "LEAN_CACHE_FAILURE.json",
+      "sha256": "9b673cac606c785b0e4463023a3349b5705424b394da3af43bf74ee71f8011e3",
+      "bytes": 12999
+    },
+    {
+      "file": "LEAN_REPLAY.json",
+      "sha256": "e44fa0bbd27855c252c68df1ea351ede56425279565166e9a0e860879812f9f2",
+      "bytes": 18176
+    },
+    {
+      "file": "LOCAL_REGRESSIONS.json",
+      "sha256": "6c179e073b5f1f1ab96d050607c7de8bd59ffa0b2ec1a68d37287ae35ff7586f",
+      "bytes": 13836
+    },
+    {
+      "file": "PUBLISHED_REGRESSIONS.json",
+      "sha256": "bbb24fe64dd23ae8c1b439b6ead89b534781ce8e160766fb649345a0a98264a4",
+      "bytes": 13836
+    },
+    {
+      "file": "SCIENCE_MANIFEST.json",
+      "sha256": "b2bc02106dfa5e5088e4f2142c9d31f9e69129f1b4a8aaf5126d0f127dc3a7da",
+      "bytes": 7139
+    }
+  ]
+}
