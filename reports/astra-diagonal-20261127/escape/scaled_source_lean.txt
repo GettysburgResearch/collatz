@@ -1,0 +1,8 @@
+Lean 4.34.1, mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
+strict warning-as-error build and axiom print on source SHA256 abc557b5189dd40683eae6c132a106f6732085251702f3f6d831543ecd113bfc
+'Collatz.Diagonal.ScaledSource.scaled_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.ScaledSource.scaled_iterate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.ScaledSource.dvd_step_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.ScaledSource.dvd_iterate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.ScaledSource.fixed_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.ScaledSource.scaled_never_reaches_one' depends on axioms: [propext, Classical.choice, Quot.sound]

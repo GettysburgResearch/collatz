@@ -1,0 +1,162 @@
+{
+  "schema": "collatz-astra-global-resolution-sources/v1",
+  "date": "2026-11-24",
+  "repository": "GettysburgResearch/collatz",
+  "base_head": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+  "scope": "Pins specify source material and theorem interfaces, not blanket verification of upstream PRs. New infinite results are written mathematics; the Lean audit covers its printed theorem types.",
+  "repository_sources": [
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "pr": 182,
+      "head": "4f226f3b278ffe4559110a6ca952ff4a7c56ceba",
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "pr": 192,
+      "head": "3868f83ed8fab67ea1bcb28312a288ca96c7dc5f",
+      "title": "Collatz: fixed-source closure audit and Lean first-meeting certificate",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/192"
+    },
+    {
+      "pr": 193,
+      "head": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "title": "Collatz: full cycle divisors, finite meeting windows, and Lean checkpoints",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 195,
+      "head": "b69ec87d28f539233a32b7c07964f5605320eb71",
+      "title": "Collatz: translated prime witnesses, cyclotomic denominators and directed head reduction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "pr": 197,
+      "head": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "title": "Collatz: triple first-fusion moments and joint landing weights",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/197"
+    },
+    {
+      "pr": 200,
+      "head": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "title": "Collatz: infinite harmonic renewal, automata and Fourier rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 201,
+      "head": "084b983fbec6f3d2120ef101946754431f82874e",
+      "title": "Collatz: killed Green head closure, exact odd-grade spreading, and branching phase sparsity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 202,
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/202"
+    }
+  ],
+  "external_sources": [
+    {
+      "id": "CZ2004",
+      "url": "https://arxiv.org/pdf/math/0311030",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "statement": "Proposition 2, inequality (2.8), rational S-units; exceptional one-dimensional subgroups through the identity.",
+      "status": "Primary theorem statement and required exception/place normalization checked; full original proof not replayed.",
+      "consumer": "arithmetic/CLOCK_FIBERS.md, raw two-divisor gcd"
+    },
+    {
+      "id": "Lagarias2008",
+      "url": "https://arxiv.org/pdf/math/0512006",
+      "title": "Ternary Expansions of Powers of 2",
+      "statement": "Lemma 2.2(1): |log_3(2)-p/q| >= 1/(1200 q^14.3).",
+      "status": "Primary PDF statement checked.",
+      "consumer": "arithmetic/CLOCK_FIBERS.md, polynomial phase-height bound"
+    },
+    {
+      "id": "AYH",
+      "url": "https://emreyolcu.com/research/rewriting-collatz.pdf",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "statement": "Section 4.5, equation (10), Proposition 4.15; rewriting and partial map antecedents.",
+      "status": "Primary author manuscript inspected. Prior comparison, not imported global termination.",
+      "consumer": "rewriting/SEVEN_RETURN.md"
+    },
+    {
+      "id": "ApplegateLagarias",
+      "url": "https://websites.umich.edu/lagarias/doc/3x%2B1semigroup.pdf",
+      "title": "The 3x+1 semigroup",
+      "statement": "Theorem 1.1 and section 2; multiplicative semigroup generation.",
+      "status": "Literature lead and prior comparison only; no transfer from semigroup membership to ordinary component membership.",
+      "consumer": "rewriting/SEVEN_RETURN.md"
+    },
+    {
+      "id": "FirstLanding",
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "title": "First-landing bounds and canonical inverse laws for Collatz",
+      "statement": "Equation (15), Theorem 11, bounded landing tests and all-log-power miss bound.",
+      "status": "Source-qualified written input, exact consuming argument independently reviewed.",
+      "consumer": "collision/README.md"
+    },
+    {
+      "id": "OrbitSparsity",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "statement": "Equation (24), uniform distinct-orbit-value count with exponent below .97.",
+      "status": "Source-qualified written input; primary consuming paper opened by independent reviewer.",
+      "consumer": "collision/README.md"
+    },
+    {
+      "id": "Router",
+      "url": "https://rstation.ai/problems/collatz/papers/37",
+      "title": "Almost linear valuation budgets for pointwise modular routing in Collatz inverse trees",
+      "statement": "Theorem D, common length b and total valuation 2b for all prescribed unit residues.",
+      "status": "Source-qualified written input through frozen PR202; no formal-proof verification of the analytic chain claimed.",
+      "consumer": "collision/README.md section 4"
+    },
+    {
+      "id": "GaussianG",
+      "url": "https://doi.org/10.5281/zenodo.23269488",
+      "title": "Brownian motion in Collatz orbits, version 2",
+      "statement": "The precise product minimum/normalized shortcut-clock law G is stated in collision/README.md.",
+      "status": "Primary document retrieval failed. G remains an explicitly additional unverified assumption; not needed for the main postcritical collision conclusions.",
+      "consumer": "collision/README.md optional Gaussian refinements"
+    },
+    {
+      "id": "Tao2022",
+      "url": "https://doi.org/10.1017/fmp.2022.8",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "statement": "Syracuse fine-scale mixing; Proposition 1.14 in the PR200 return-law comparison.",
+      "status": "Published background used in literature investigation; no new pointwise ordinary-target consequence claimed.",
+      "consumer": "LATEST_CONNECTIONS.md"
+    }
+  ],
+  "late_refresh": [
+    {
+      "pr": 182,
+      "previous": "4f226f3b278ffe4559110a6ca952ff4a7c56ceba",
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "new_path": "research/direct-universal-attempt-20261124/README.md",
+      "effect": "Adds direct closing attempts and their unproved steps. The dyadic-companion and periodic-merger inputs used by this packet are byte-unchanged."
+    },
+    {
+      "pr": 197,
+      "previous": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "new_path": "research/ayh-resource-reset-20261124/two-class-descent/",
+      "effect": "Adds actual head incidence and dependent paired-source projection. Inspected for the explicit 9k+2,81k+20 specialization; does not establish pointwise cross-meeting or supersede the collision energy law."
+    }
+  ],
+  "late_refresh_scope": "Later additions were inspected as recorded in LATEST_CONNECTIONS.md. Original exact input pins remain unchanged."
+}

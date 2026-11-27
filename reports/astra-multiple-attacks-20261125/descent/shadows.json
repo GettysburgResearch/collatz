@@ -1,0 +1,43 @@
+{
+  "finite_unrestricted_endpoint_check": {
+    "D": 8,
+    "seed_count_including_zero": 6561,
+    "ratio_ceiling": 13122,
+    "maximum_odd_grade": 100,
+    "maximizing_seed_clock_endpoint": [
+      6171,
+      172,
+      2
+    ],
+    "positive_seed_clock_pairs_checked": 454255
+  },
+  "later_certificates": [
+    {
+      "h": 2,
+      "m": 6,
+      "upper_source_bits": 6,
+      "four_odd_partner_grade_when_applicable": null,
+      "smaller_triple_bits": 5,
+      "upper_grade": 6,
+      "smaller_grade": 8
+    },
+    {
+      "h": 4,
+      "m": 54,
+      "upper_source_bits": 54,
+      "four_odd_partner_grade_when_applicable": null,
+      "smaller_triple_bits": 52,
+      "upper_grade": 54,
+      "smaller_grade": 58
+    },
+    {
+      "h": 6,
+      "m": 486,
+      "upper_source_bits": 486,
+      "four_odd_partner_grade_when_applicable": 490,
+      "smaller_triple_bits": 483,
+      "upper_grade": 486,
+      "smaller_grade": 492
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schema": "collatz-astra-global-resolution-late-refresh/v1",
+  "recorded_utc": "2026-11-24 10:02:47 UTC",
+  "scope": "Last metadata refresh before publication. The two changed priority scientific heads were inspected by diff; no upstream Lean rebuild is claimed.",
+  "pull_requests": [
+    {
+      "number": 182,
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "title": "Collatz: dyadic companion, Lean consumers, and cross-level mergers",
+      "state": "open",
+      "updated_at": "2026-11-24T09:44:42Z"
+    },
+    {
+      "number": 197,
+      "head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "title": "Collatz: actual head descent, source projection and finite-floor selection",
+      "state": "open",
+      "updated_at": "2026-11-24T09:42:18Z"
+    },
+    {
+      "number": 195,
+      "head": "b69ec87d28f539233a32b7c07964f5605320eb71",
+      "title": "Collatz: translated prime witnesses, cyclotomic denominators and directed head reduction",
+      "state": "open",
+      "updated_at": "2026-11-24T09:18:23Z"
+    },
+    {
+      "number": 192,
+      "head": "3868f83ed8fab67ea1bcb28312a288ca96c7dc5f",
+      "title": "Collatz: fixed-source closure audit and Lean first-meeting certificate",
+      "state": "open",
+      "updated_at": "2026-11-24T09:17:37Z"
+    },
+    {
+      "number": 193,
+      "head": "5f160a843750f209ea1251dfb01ea0b23e532fd6",
+      "title": "Collatz: full cycle divisors, finite meeting windows, and Lean checkpoints",
+      "state": "open",
+      "updated_at": "2026-11-24T09:09:57Z"
+    },
+    {
+      "number": 201,
+      "head": "084b983fbec6f3d2120ef101946754431f82874e",
+      "title": "Collatz: killed Green head closure, exact odd-grade spreading, and branching phase sparsity",
+      "state": "open",
+      "updated_at": "2026-11-24T08:50:38Z"
+    },
+    {
+      "number": 202,
+      "head": "3b10b24d12d4b349cb20f4cbc83086c8a09f807e",
+      "title": "Long synchronized basin blocks from near-linear fixed-clock modular routing",
+      "state": "open",
+      "updated_at": "2026-11-24T08:49:53Z"
+    },
+    {
+      "number": 200,
+      "head": "39918be724038ac550d77c7fc95d17e05251dfc6",
+      "title": "Collatz: infinite harmonic renewal, automata and Fourier rigidity",
+      "state": "open",
+      "updated_at": "2026-11-24T08:45:07Z"
+    },
+    {
+      "number": 199,
+      "head": "d868f8e8405c08b8c501236853bea495ca593824",
+      "title": "Optimal sparse critical ancestor sections and a joint first-passage closure criterion",
+      "state": "open",
+      "updated_at": "2026-11-24T07:10:44Z"
+    },
+    {
+      "number": 188,
+      "head": "f0e3cd96bab2d23791998bb92a86bf7ff2d51d4d",
+      "title": "Collatz: Lean persistent descent, all-rotation cycle bounds, and residue rigidity",
+      "state": "open",
+      "updated_at": "2026-11-24T06:48:33Z"
+    },
+    {
+      "number": 198,
+      "head": "c76acf99ba3fb05e7cc07ca7db7e467954c2d950",
+      "title": "Collatz: minimum-arc bounds, merger costs, and ten-module Lean audit",
+      "state": "open",
+      "updated_at": "2026-11-24T04:33:32Z"
+    },
+    {
+      "number": 196,
+      "head": "27d03cfe902660e06604eb55bb28ca3d2754ff48",
+      "title": "Collatz: orbit separation, cycle denominators, ordinary mergers, and Lean audit",
+      "state": "open",
+      "updated_at": "2026-11-24T04:32:50Z"
+    },
+    {
+      "number": 194,
+      "head": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+      "title": "Collatz: bounded carry births, binary substitution rigidity, and verified finite kernels",
+      "state": "open",
+      "updated_at": "2026-11-24T04:16:49Z"
+    },
+    {
+      "number": 189,
+      "head": "a390a1a4c75ee95db98b4b683d17c503f4e4a118",
+      "title": "Stationary critical collision rigidity and rational-scalar carry compression",
+      "state": "open",
+      "updated_at": "2026-11-24T04:01:31Z"
+    },
+    {
+      "number": 191,
+      "head": "37b3916633cd32a0c173b20bb18ec3a7ec290a63",
+      "title": "Collatz: two-sided full-denominator packing, noncoprime norm, and smaller scalar shadow",
+      "state": "open",
+      "updated_at": "2026-11-24T03:33:36Z"
+    },
+    {
+      "number": 190,
+      "head": "ba58227c5a047ff3859a148a5fdaac4fd1451e4c",
+      "title": "Collatz: p-adic Mahler rigidity for binary uniform and primitive substitution scripts",
+      "state": "open",
+      "updated_at": "2026-11-24T03:32:38Z"
+    },
+    {
+      "number": 187,
+      "head": "099058f3f2602a48e109c964899f0a9a2a223338",
+      "title": "Collatz: exclude all finite digit-weight carry scripts via fixed-source factor arithmetic",
+      "state": "open",
+      "updated_at": "2026-11-24T03:25:22Z"
+    },
+    {
+      "number": 177,
+      "head": "25bf9b95a9404998e8e55aa401773488cd3dd4b8",
+      "title": "Collatz: all-template bounds, witness charge, and density-free germs",
+      "state": "open",
+      "updated_at": "2026-11-23T07:15:29Z"
+    },
+    {
+      "number": 175,
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "title": "Collatz: unconditional cycle budgets and fixed-source arithmetic",
+      "state": "open",
+      "updated_at": "2026-11-23T05:42:14Z"
+    },
+    {
+      "number": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "state": "open",
+      "updated_at": "2026-11-23T05:27:44Z"
+    }
+  ],
+  "changed_priority_heads": [
+    {
+      "pr": 182,
+      "previous": "4f226f3b278ffe4559110a6ca952ff4a7c56ceba",
+      "head": "234fd2ece3a17c8950dce452291198705b4e6e60",
+      "new_path": "research/direct-universal-attempt-20261124/README.md",
+      "effect": "Adds direct closing attempts and their unproved steps. The dyadic-companion and periodic-merger inputs used by this packet are byte-unchanged."
+    },
+    {
+      "pr": 197,
+      "previous": "9ab91d964b38fc870d1034bac628d62f59488467",
+      "head": "6eb986b0ce0b1836a356474d25d709ed4e948b67",
+      "new_path": "research/ayh-resource-reset-20261124/two-class-descent/",
+      "effect": "Adds actual head incidence and dependent paired-source projection. Inspected for the explicit 9k+2,81k+20 specialization; does not establish pointwise cross-meeting or supersede the collision energy law."
+    }
+  ]
+}

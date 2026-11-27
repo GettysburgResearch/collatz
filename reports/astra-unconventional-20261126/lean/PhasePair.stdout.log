@@ -1,0 +1,4 @@
+'Collatz.Unconventional.PhasePair.lifted_edge' depends on axioms: [propext, Quot.sound]
+'Collatz.Unconventional.PhasePair.endpoint' depends on axioms: [propext]
+'Collatz.Unconventional.PhasePair.arbitrary_groups' depends on axioms: [propext, Quot.sound]
+'Collatz.Unconventional.PhasePair.grouped_endpoint' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,28 @@
+{
+  "schema": "collatz-head-refresh/v1",
+  "recorded_utc": "2026-11-24 10:43:58 UTC",
+  "scope": "Late metadata and new-interface inspection only; no upstream rebuild. Earlier consumed source pins remain unchanged.",
+  "changed": [
+    {
+      "pr": 200,
+      "head": "abf36c63b4d0181541d7e029d390d6f636940750",
+      "title": "Collatz: pointwise harmonic fibers, polynomial rigidity and exact-edge obstruction",
+      "updated_at": "2026-11-24T10:37:07Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 201,
+      "head": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+      "title": "Collatz: positive-density synchronized blocks, ordinary antichains and head closure",
+      "updated_at": "2026-11-24T10:30:45Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 203,
+      "head": "3f2c89f12b057b8bb8655bd6fc794c772aa8b65d",
+      "title": "Mixed-adic basin density and phase-marked critical blocks from a fixed-target inverse depth bank",
+      "updated_at": "2026-11-24T10:29:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/203"
+    }
+  ]
+}

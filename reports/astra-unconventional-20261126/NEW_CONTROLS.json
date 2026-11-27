@@ -1,0 +1,28 @@
+{
+  "schema": "collatz-unconventional-new-controls/v1",
+  "scope": "Independent coordinator replay of the two newly added exact finite controls; no infinite conclusion and no historical regression bundle.",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/astra-unconventional-20261126/arithmetic/check_sections.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"ordinary_coordinates\": {\n    \"odd_starts\": 50000,\n    \"largest_exponent\": 18\n  },\n  \"signed_section_expansions\": [\n    {\n      \"ceiling\": 2,\n      \"depth\": 5,\n      \"comparisons\": 1944,\n      \"largest_leaf_count\": 1\n    },\n    {\n      \"ceiling\": 5,\n      \"depth\": 4,\n      \"comparisons\": 1620,\n      \"largest_leaf_count\": 18\n    },\n    {\n      \"ceiling\": 8,\n      \"depth\": 4,\n      \"comparisons\": 2592,\n      \"largest_leaf_count\": 88\n    }\n  ],\n  \"affine_shadow_words\": [\n    {\n      \"word_length\": 12,\n      \"contractions\": 7,\n      \"expansions\": 5,\n      \"input\": 999425,\n      \"minimum\": 133408,\n      \"output\": 1013067,\n      \"cleared_carry\": 3449871,\n      \"denominator\": 524288\n    },\n    {\n      \"word_length\": 24,\n      \"contractions\": 14,\n      \"expansions\": 10,\n      \"input\": 358361333761,\n      \"minimum\": 6385263616,\n      \"output\": 368206475841,\n      \"cleared_carry\": 15568415704863,\n      \"denominator\": 274877906944\n    },\n    {\n      \"word_length\": 48,\n      \"contractions\": 28,\n      \"expansions\": 20,\n      \"input\": 129979145450277283299329,\n      \"minimum\": 41265684396485115904,\n      \"output\": 137218994760754968035454,\n      \"cleared_carry\": 251169528421960857097062975,\n      \"denominator\": 75557863725914323419136\n    },\n    {\n      \"word_length\": 96,\n      \"contractions\": 56,\n      \"expansions\": 40,\n      \"input\": 8281939507797037548807231214457559160226578433,\n      \"minimum\": 834762255774496212758888667538058641408,\n      \"output\": 9230243671076130261395840756745560198849432733,\n      \"cleared_carry\": 63126201807493233306554194028690605557287234440168575,\n      \"denominator\": 5708990770823839524233143877797980545530986496\n    }\n  ]\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/astra-unconventional-20261126/boundary/check_paired_boundary.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Positive paired coalescences: 2325\n01010111 entry 21 period 100 odd departures 56\n10101110 entry 22 period 100 odd departures 56\n01011101 entry 23 period 100 odd departures 56\n10111010 entry 24 period 100 odd departures 56\n01110101 entry 25 period 100 odd departures 56\n11101010 entry 26 period 100 odd departures 56\n11010101 entry 27 period 100 odd departures 56\n10101011 entry 20 period 100 odd departures 56\nSix exact two-level ordinary lifts checked.\nAll 32 cosets have counted fusion by precision 24.\nExplicit forbidden repetitions after a breaking bit: 819188\n"
+    }
+  ]
+}

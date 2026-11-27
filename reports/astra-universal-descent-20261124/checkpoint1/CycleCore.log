@@ -1,0 +1,8 @@
+'CycleCore.endpointDefect' depends on axioms: [propext, Quot.sound]
+'CycleCore.exactShadow' depends on axioms: [propext, Quot.sound]
+'CycleCore.smallShadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleCore.excludeOneByParity' depends on axioms: [propext, Quot.sound]
+'CycleCore.dropLeadingOnes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleCore.residueSpacing' depends on axioms: [propext, Quot.sound]
+'CycleCore.sharedDvd' depends on axioms: [propext, Quot.sound]
+'CycleCore.scaledWindowBound' depends on axioms: [propext, Quot.sound]

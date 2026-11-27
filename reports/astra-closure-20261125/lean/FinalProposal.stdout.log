@@ -1,0 +1,6 @@
+'FinalProposal.collatz_of_source_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.source_closure_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.final_lean_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.exclude_nineteen_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.no_uniform_tower_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.collatz_iff_eventually_periodic_convergence' depends on axioms: [propext, Classical.choice, Quot.sound]

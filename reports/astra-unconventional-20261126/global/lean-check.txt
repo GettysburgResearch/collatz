@@ -1,0 +1,28 @@
+Pinned Lean checks for the atomic eigenmeasure arithmetic kernels
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
+$ lean -DwarningAsError=true research/astra-unconventional-20261126/global/NegativeShadow.lean
+'NegativeShadow.unique_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NegativeShadow.reflected_gain_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+SHA256 0d16eec2c475de177d4f953f946c11f0c483981c5a0ca372ccd5e424b101a978  NegativeShadow.lean
+$ lean -DwarningAsError=true research/astra-unconventional-20261126/global/OrdinaryFibers.lean
+'OrdinaryFibers.shifted_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryFibers.positive_fiber_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+SHA256 ac674e6b8cfea7eaf1999e12377c47a33b1f00f5dcebdf1628e1ef2d72869330  OrdinaryFibers.lean
+The Lean files check finite arithmetic and binary-fiber recognition. The Green measure construction, independent prime-coordinate lifts and ordinary classification are written proofs.
+$ lean -DwarningAsError=true research/astra-unconventional-20261126/global/OddPosterior.lean
+'OddPosterior.disjoint_predecessors' depends on axioms: [propext, Quot.sound]
+'OddPosterior.persist' depends on axioms: [propext, Quot.sound]
+'OddPosterior.relative_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+05908831d1d15ff862e6ec6ba37f6a6d93f6688c96d48b09d2b5dff972a51ce1  research/astra-unconventional-20261126/global/OddPosterior.lean
+
+DyadicBoundary.lean, Lean 4.34.1 with the same pinned dependencies and warnings as errors, checked 2026-11-26.
+'DyadicBoundary.childColors' depends on axioms: [propext]
+'DyadicBoundary.forbidden100' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.liftEvenBoundary' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.digitTransitions' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.tripledSeven' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.shiftedPowers' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.plusPowers' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.evenDepthRightResidueTwo' depends on axioms: [propext, Quot.sound]
+'DyadicBoundary.magnifiedEndpoint' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,243 @@
+{
+  "scope": "Exact bindings for the principal reused source files; not a full audit of these branches.",
+  "sources": [
+    {
+      "pr": 192,
+      "commit": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/README.md",
+      "git_blob": "1308d0d3559fb0c3c499bc1a2beade12e81e25bc",
+      "sha256": "35dba29d35d40e4670d884c8bfa998327616aa211b79048da93ef3a9288d10f7"
+    },
+    {
+      "pr": 192,
+      "commit": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/bridge/README.md",
+      "git_blob": "21a17733d5bc5d3e4792a639ae06d3a08330c159",
+      "sha256": "1fbf3332348bb473f7e1124cd5e61fad67db4e5cb65775550fcc11c1a9b1941f"
+    },
+    {
+      "pr": 192,
+      "commit": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/cycle/README.md",
+      "git_blob": "324adb440b8d61df76a2f7e5bed941355473d1c1",
+      "sha256": "1cad9b91cb357c5d6b74a3101b33840a08d80ca7b9322e1841694ed8d6dfed5e"
+    },
+    {
+      "pr": 192,
+      "commit": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/cycle/RATIONAL_ORDERS.md",
+      "git_blob": "eb00939fda1b66bbcfde56710fbd314aabfe6ce5",
+      "sha256": "db31ba3c0eb3e96e01c8bb665abb35e085071ee3720760c173f07372594db73e"
+    },
+    {
+      "pr": 192,
+      "commit": "570476be82f706122cdd23ebd7a00f3d4ff90cd8",
+      "path": "research/astra-ultra-closure-20261125/intake/MinimumClosure.lean",
+      "git_blob": "4b38ae26c3f4687fc644ebd4a24a8c92df65ea0b",
+      "sha256": "bc96bafaf34d992f6cc0c7aea30e2eff1b6e4f84c7ce57fe868e4592c976d603"
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/README.md",
+      "git_blob": "27b3ea18aca0d29e0c814ba9e1551f69b59e84bd",
+      "sha256": "93116ae9b8faa8758c129d3f86a0f6e8ce82b372b3ee7e11b6a31b88ea091d7c"
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/closure/README.md",
+      "git_blob": "9060d4e9bc1723fce99691da38e815fc42a6e4d6",
+      "sha256": "046f949f226ed3df9716076ae7674a65b967062592c733ede1056697534034bd"
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/arithmetic/EXTENDED_SHIFTS.md",
+      "git_blob": "08a1f45ab64232df8fdc1b075e86ff6a63be4c1e",
+      "sha256": "4934dd94c0dd5f83add064ac0764fc642f376316033ae5041304862b208fcb2d"
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round10/rows/README.md",
+      "git_blob": "c8375a741b4baefbafe993ac31e7c24e80d5406d",
+      "sha256": "da3ccead0a15908da81941a790a9a2b384d1dfb7c1e215139ffb21e4ae46b2a1"
+    },
+    {
+      "pr": 195,
+      "commit": "5b2bdcb6e4e60da15c29eadff8bd08b3991c5b57",
+      "path": "research/astra-global-closure-20261124/round9/critical/SHALLOW_ANCESTORS.md",
+      "git_blob": "aa30771604e2909fd6e266a8e3dda140742ce74f",
+      "sha256": "c32fb1db5f925a01a905824c92797b92848ac2b694f2561cb22213de611e282a"
+    },
+    {
+      "pr": 197,
+      "commit": "156652e03fe7a78f9cd4442039779cc622fdf3de",
+      "path": "research/ayh-resource-reset-20261124/source-progress/README.md",
+      "git_blob": "373822cf024b82b1ecde863b1e1e83b722420c23",
+      "sha256": "d265f7280207b177e1b57f5627021fbd49e692969599d1b356b3de2404fe2fff"
+    },
+    {
+      "pr": 206,
+      "commit": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/Proposal.md",
+      "git_blob": "0c40720288643824d8349afce66e6569fc7356a1",
+      "sha256": "bbd23de876af6a9e2c832bfc47d7b04fedd25365dc871fd1e425a7126059c2cb"
+    },
+    {
+      "pr": 206,
+      "commit": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/FinalProposal.lean",
+      "git_blob": "0a66e24e51cad95228a7e151c041071e0b74cdf3",
+      "sha256": "04a116f373db188abf17acfc2c561600d478bc8945898ee6f33a88bd69fa9d30"
+    },
+    {
+      "pr": 206,
+      "commit": "b2b56b94175174a680a296478f16c619a8828972",
+      "path": "research/clock-itineraries/ClockRecurrence.lean",
+      "git_blob": "aec0ec0655d7e97e80285f6b9ae98da13365edee",
+      "sha256": "57d6418641b0a69de9dd10e0589a7888eb22ce820bc4f78b7b38c97f329af615"
+    },
+    {
+      "pr": 207,
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/README.md",
+      "git_blob": "39317a73963712c014f42ad09e336c60e7020d8b",
+      "sha256": "6ee24648dea08ec941b989aa602cfd5646938575760c1107c2afcf243651a6da"
+    },
+    {
+      "pr": 208,
+      "commit": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/SOURCES.md",
+      "git_blob": "ed19bb0cd87dd5e2a2399a06f2cd234e3c20ff78",
+      "sha256": "fc2eb1aa33a75e393e95fb854e0d31f16f2341a44b4e869d5172edae0931fd8b"
+    },
+    {
+      "pr": 208,
+      "commit": "72635b2a3af2f5b6cbf4eeff7ce1c89b6e6a5f7f",
+      "path": "research/openai-machinery-20261125/clock/README.md",
+      "git_blob": "4cf56a88f393efbf07120bf19ebd78c9d7c45433",
+      "sha256": "375c2befc4ec18bbd5a13c4c968bf392828984eb2ff14209284101f897d0aa74"
+    },
+    {
+      "pr": 209,
+      "commit": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/README.md",
+      "git_blob": "99dbd202c41f13a30f3a4cdca90312b2d9331a79",
+      "sha256": "f9b76b3bbbeed5462c862bba3cef1ed201b3d05100bee4841fab3b757e4bfa73"
+    },
+    {
+      "pr": 209,
+      "commit": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/machinery/README.md",
+      "git_blob": "0b300814bf125f19ebc77d1e42b557316bddb857",
+      "sha256": "c055a1b1fdfb2763c7fe3ca1f05d0b9873bbf05b7d94f86bd98a6e09119823a0"
+    },
+    {
+      "pr": 209,
+      "commit": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/arithmetic/README.md",
+      "git_blob": "56b756459a71b7fce31cbfab35fe55a891b577a4",
+      "sha256": "b0856510fab45e1c99dc0b3583c81b8172c409ac2a995753eb0a2978aa576b21"
+    },
+    {
+      "pr": 209,
+      "commit": "2d0230aa52d85732dbc85b5df20e30108dc1396f",
+      "path": "research/astra-ultra-closure-20261125/fixed_source/README.md",
+      "git_blob": "81789e7e86dcdea0fc1e1bd0cc3ebeca81043508",
+      "sha256": "3a4331db17fc7f6a3dcf6ac66a2ea70e1a7cc82ac206bca0c72f7ea93dab1f2c"
+    },
+    {
+      "pr": 192,
+      "commit": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "path": "research/astra-full-proof-20261125/README.md",
+      "git_blob": "e9880fa6c19047dc1c853f34847883d80b877f02",
+      "sha256": "5c4589c0a8bc5dbe051cf3318ccfe33609d2ca5c8b8c428afd1511d14b19904e"
+    },
+    {
+      "pr": 192,
+      "commit": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "path": "research/astra-full-proof-20261125/global/README.md",
+      "git_blob": "22019ebeaa056f501d5f2f2616a3ffdb35cb150e",
+      "sha256": "4c2ceed65fbf6ac12068465c1a9c27199ae521cc137b9096cef65cbbb3246d22"
+    },
+    {
+      "pr": 192,
+      "commit": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "path": "research/astra-full-proof-20261125/cycle/README.md",
+      "git_blob": "be784e90fe1edf8e797849993483016d4a4640ec",
+      "sha256": "2313a419c35700485e4e289c7325e00ad8fc2e69b670d4c137a73367fe0c7ecb"
+    },
+    {
+      "pr": 192,
+      "commit": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "path": "research/astra-full-proof-20261125/transport/README.md",
+      "git_blob": "7b027a082e3dfeef661a2aef1687c7d392191381",
+      "sha256": "edcd3312e48fa027c79718f441e799020a95640e77275753a254c4bb65c88d4f"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/NovemberProposal.lean",
+      "git_blob": "5f3bea94f335cca19c3d8bcbd9b6f908bd0d53bc",
+      "sha256": "cb32ff1c2038d10c5c961c074dec56047042cdd30b06e76afd113d69fe1fa90b"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/TowerFrontier.md",
+      "git_blob": "5e4a7ba2be67054c20f7d477b7908001d262006a",
+      "sha256": "09ce69a8c5d312abd92c6738702f634666eb66475b751f31b6103f5d1ba61e67"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/TowerFrontierRotation.lean",
+      "git_blob": "e4dc51522172bcfa3f2236b2e3153e8d6f36ed0b",
+      "sha256": "17613e8ba16c641d78e958f241d0656cac6a7c655c93d3df36fa63387be8ec0e"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/TowerRecurrence.lean",
+      "git_blob": "a6b6737fdc671ba298da3b7c74523cecc1b4a6e7",
+      "sha256": "e246069b78fb1d004b855fc15b19a2b61cb2d3474b626eddf1104310ff82b1fc"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/EscapeRecords.md",
+      "git_blob": "3936d7f144372a1139fb480b9d40dacd6f74d35e",
+      "sha256": "7e708bdf7f1211ef76e4037c9f2b82c5bee98f74ae13edc876d0ecd2862e5435"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/EscapeFrontier.md",
+      "git_blob": "210cd0c785faf9cada4818e12bb9da2839483ec3",
+      "sha256": "a638fca3dbdb9a6d12995be1c7275a501d3b30cf6dc17997a7f649647a0bda64"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/CycleFrontier.md",
+      "git_blob": "1ff11178c0887bc0c79571334c0509b8a5c04fbc",
+      "sha256": "09308e5aed9c25ace68b92e1a9fd3f23ebe38e42d5a81a586637b8e840ff91f2"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/WindowCapture.md",
+      "git_blob": "cb34e616ca8c733b435d9fd46209778fdc4a9561",
+      "sha256": "6b3e0e8a93ea08ab253300f3573816ea121e4764618d55a92d18ff2c92b048db"
+    },
+    {
+      "pr": 206,
+      "commit": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "path": "research/clock-itineraries/BasinWindows.md",
+      "git_blob": "6215b29a984e9fcc35b1c0602230162a5f20d628",
+      "sha256": "b7fbe6513fa57d721a046a30ab106e2adca86ff7bd941e64e6ff03eee3348ca0"
+    }
+  ]
+}

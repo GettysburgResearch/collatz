@@ -1,0 +1,7 @@
+'Collatz.Unconventional.Arithmetic.incoming_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.Arithmetic.residue_near_wrap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.Arithmetic.physical_fold' depends on axioms: [propext, Quot.sound]
+'Collatz.Unconventional.Arithmetic.coord_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.Arithmetic.amplitude_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.Arithmetic.amplitude_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.Arithmetic.freeze' depends on axioms: [propext, Classical.choice, Quot.sound]

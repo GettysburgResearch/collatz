@@ -1,0 +1,247 @@
+{
+  "scope": "Finite exact controls. Model pair counts do not establish an asymptotic bound.",
+  "cycles": [
+    {
+      "odd_period": 1,
+      "shortcut_period": 2,
+      "minimum": "1",
+      "determinant": 1,
+      "reduced_denominator": 1,
+      "incoming_k_words_residues": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          7,
+          1,
+          1
+        ],
+        [
+          16,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "odd_period": 5,
+      "shortcut_period": 8,
+      "minimum": "283/13",
+      "determinant": 13,
+      "reduced_denominator": 13,
+      "incoming_k_words_residues": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          7,
+          5,
+          5
+        ],
+        [
+          16,
+          5,
+          5
+        ],
+        [
+          11,
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "odd_period": 41,
+      "shortcut_period": 65,
+      "minimum": "29340952507853/44835377399",
+      "determinant": 420491770248316829,
+      "reduced_denominator": 44835377399,
+      "incoming_k_words_residues": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          4,
+          13,
+          15
+        ],
+        [
+          7,
+          28,
+          32
+        ],
+        [
+          16,
+          41,
+          41
+        ],
+        [
+          83,
+          41,
+          41
+        ]
+      ]
+    }
+  ],
+  "spacing": [
+    {
+      "p": 41,
+      "K": 1,
+      "trials": [
+        {
+          "R": "1",
+          "pairs_upper": 85,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "3",
+          "pairs_upper": 95,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "7",
+          "pairs_upper": 107,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "41/3",
+          "pairs_upper": 101,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "41",
+          "pairs_upper": 129,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "1681",
+          "pairs_upper": 133,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "68921",
+          "pairs_upper": 113,
+          "uncertain_pairs": 0
+        }
+      ]
+    },
+    {
+      "p": 97,
+      "K": 1,
+      "trials": [
+        {
+          "R": "1",
+          "pairs_upper": 199,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "3",
+          "pairs_upper": 225,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "7",
+          "pairs_upper": 259,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "97/3",
+          "pairs_upper": 285,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "97",
+          "pairs_upper": 271,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "9409",
+          "pairs_upper": 305,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "912673",
+          "pairs_upper": 293,
+          "uncertain_pairs": 0
+        }
+      ]
+    },
+    {
+      "p": 211,
+      "K": 1,
+      "trials": [
+        {
+          "R": "1",
+          "pairs_upper": 435,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "3",
+          "pairs_upper": 481,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "7",
+          "pairs_upper": 583,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "211/3",
+          "pairs_upper": 605,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "211",
+          "pairs_upper": 681,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "44521",
+          "pairs_upper": 635,
+          "uncertain_pairs": 0
+        },
+        {
+          "R": "9393931",
+          "pairs_upper": 627,
+          "uncertain_pairs": 0
+        }
+      ]
+    }
+  ]
+}

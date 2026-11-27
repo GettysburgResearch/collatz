@@ -1,0 +1,384 @@
+{
+  "schema": "collatz-astra-global-synthesis-aggregate/v1",
+  "scope": "All public declarations in six new Std-only Lean modules, and four bounded exact control scripts in normal/optimized Python. Written analytic and Diophantine proofs are not upgraded by these checks.",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "public_theorem_count": 32,
+  "module_count": 6,
+  "formal": [
+    {
+      "source": "section/ForwardAnchors.lean",
+      "sha256": "5608981fc9829363af6b7677a77de242d107d138edaa981b57e921cd0164680b",
+      "audited_copy_sha256": "126c2843df41d72b78f14a590573ad59367f00e362b42d161d33ce5b97b75d5f",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-checks/ForwardAnchors.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.754,
+      "public_theorems": [
+        "ForwardAnchors.criticalLift",
+        "ForwardAnchors.liftMarked",
+        "ForwardAnchors.iterAdd",
+        "ForwardAnchors.nextAnchor",
+        "ForwardAnchors.splicedTransversal",
+        "ForwardAnchors.physicalProduct",
+        "ForwardAnchors.mergeProduct",
+        "ForwardAnchors.smallUnitInverse",
+        "ForwardAnchors.extremalSandwich"
+      ],
+      "axioms": {
+        "ForwardAnchors.criticalLift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.liftMarked": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.iterAdd": [],
+        "ForwardAnchors.nextAnchor": [],
+        "ForwardAnchors.splicedTransversal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.physicalProduct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.mergeProduct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.smallUnitInverse": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ForwardAnchors.extremalSandwich": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "arithmetic/OctaveProfiles.lean",
+      "sha256": "e17c1c0f2b12a35e1f4ae9f4ecbed1d8e08faeaba0652aa378cb6e7594e60ad4",
+      "audited_copy_sha256": "030aa599e6ea8ce2c1d95f2ecceb8c97a4c9daa2c085e78c70d0651ab307471c",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-checks/OctaveProfiles.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.569,
+      "public_theorems": [
+        "Collatz.OctaveProfiles.mass_mono",
+        "Collatz.OctaveProfiles.mass_strict",
+        "Collatz.OctaveProfiles.mass_span",
+        "Collatz.OctaveProfiles.profile_count",
+        "Collatz.OctaveProfiles.odd_cylinder",
+        "Collatz.OctaveProfiles.unit_forcing",
+        "Collatz.OctaveProfiles.crossing_iff",
+        "Collatz.OctaveProfiles.crossing_requires_three_levels",
+        "Collatz.OctaveProfiles.triadic_crossing_iff"
+      ],
+      "axioms": {
+        "Collatz.OctaveProfiles.mass_mono": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.mass_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.mass_span": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.profile_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.odd_cylinder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.unit_forcing": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.crossing_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.crossing_requires_three_levels": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveProfiles.triadic_crossing_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "merger/PaidPairs.lean",
+      "sha256": "628f7dabe95789898351a9e7c850fa2078ec4c77e978a03f5cbbf1dbaa2d3bbe",
+      "audited_copy_sha256": "96e909ddbf77f240a3cd584366d40ddd1a114230e82c38167cf5d452971750be",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-checks/PaidPairs.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 34.542,
+      "public_theorems": [
+        "Collatz.PaidPairs.integral",
+        "Collatz.PaidPairs.shadow_edge",
+        "Collatz.PaidPairs.smaller_boundary",
+        "Collatz.PaidPairs.bad_preimage",
+        "Collatz.PaidPairs.smaller_both",
+        "Collatz.PaidPairs.paired_descent"
+      ],
+      "axioms": {
+        "Collatz.PaidPairs.integral": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PaidPairs.shadow_edge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PaidPairs.smaller_boundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PaidPairs.bad_preimage": [],
+        "Collatz.PaidPairs.smaller_both": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PaidPairs.paired_descent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "arithmetic/OptimalReset.lean",
+      "sha256": "cd99b2e96efddccc46a34fd265a069df415ac472fc34d57915a16b4fa01a00d7",
+      "audited_copy_sha256": "50c5c924aae9e1fad09f4d62f261de368ee37d557fd124ceb161804e3fb14bed",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-optimal-checks/OptimalReset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.968,
+      "public_theorems": [
+        "Collatz.OptimalReset.paid_edge",
+        "Collatz.OptimalReset.one_edge_next",
+        "Collatz.OptimalReset.inverse_one_eight"
+      ],
+      "axioms": {
+        "Collatz.OptimalReset.paid_edge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OptimalReset.one_edge_next": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OptimalReset.inverse_one_eight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "merger/MixedPaid.lean",
+      "sha256": "d3205cb9f56de0f69f5603372954986202aa03fa28293926c80cb38ebda75ce6",
+      "audited_copy_sha256": "96ed8fa40a6a5dce16cb25022f9a0ef5d85d54f634c22afdf505553c8c4ce2ff",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-mixed-checks/MixedPaid.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 17.247,
+      "public_theorems": [
+        "Collatz.MixedPaid.integral",
+        "Collatz.MixedPaid.shadow_edge",
+        "Collatz.MixedPaid.mixed_descent"
+      ],
+      "axioms": {
+        "Collatz.MixedPaid.integral": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.MixedPaid.shadow_edge": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.MixedPaid.mixed_descent": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    },
+    {
+      "source": "arithmetic/WindowControl.lean",
+      "sha256": "7b94232ab925d67520a84cfd73705cd2fee2933734b2a784290575238ccb0f40",
+      "audited_copy_sha256": "df7a87ee952911c4eb3da030f0fc64ae40218e3e00da525f4404e9dfb4b22733",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/global-window-checks/WindowControl.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.47,
+      "public_theorems": [
+        "Collatz.WindowControl.inverse_transfer",
+        "Collatz.WindowControl.larger_source"
+      ],
+      "axioms": {
+        "Collatz.WindowControl.inverse_transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.WindowControl.larger_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "077007a01902bf0972daf978d24df73851a96cea9b7a04c511fd40c7ed3c2a00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "moving profile groups, source occurrences, maximum word count: (9774, 16368, 5)\nprimitive rational cycles, octave confined, nonintegral confined, dyadic crossings, triadic crossings, noncoprime clocks, wide controls: (941, 30, 29, 5627, 32459, 506, [((1, 1, 1, 2, 1, 4), 295, 59), ((1, 1, 1, 3, 1, 3), 295, 59)])\nordinary source checks, longest internal trajectory (edges, source): (49999, (10, 89083))\n",
+      "stderr": ""
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "077007a01902bf0972daf978d24df73851a96cea9b7a04c511fd40c7ed3c2a00",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "moving profile groups, source occurrences, maximum word count: (9774, 16368, 5)\nprimitive rational cycles, octave confined, nonintegral confined, dyadic crossings, triadic crossings, noncoprime clocks, wide controls: (941, 30, 29, 5627, 32459, 506, [((1, 1, 1, 2, 1, 4), 295, 59), ((1, 1, 1, 3, 1, 3), 295, 59)])\nordinary source checks, longest internal trajectory (edges, source): (49999, (10, 89083))\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/check.py",
+      "sha256": "c605c70503a6f06a05770c392ae9bc6c128c2ec5e38622c52823bf2934260de6",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/merger/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "paired phase paths 92; literal edges 1840\nfinite asynchronous resets 72\nsurviving small common odd seeds 2\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/check.py",
+      "sha256": "c605c70503a6f06a05770c392ae9bc6c128c2ec5e38622c52823bf2934260de6",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/merger/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "paired phase paths 92; literal edges 1840\nfinite asynchronous resets 72\nsurviving small common odd seeds 2\n",
+      "stderr": ""
+    },
+    {
+      "source": "arithmetic/window_control.py",
+      "sha256": "3ae7c57f8d0d264fb09ac708e25bcebf8899ce884d4a98dcf83fb57825187ba2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/arithmetic/window_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "all finite windows and short-clock inverse words tested: 910 392210\n",
+      "stderr": ""
+    },
+    {
+      "source": "arithmetic/window_control.py",
+      "sha256": "3ae7c57f8d0d264fb09ac708e25bcebf8899ce884d4a98dcf83fb57825187ba2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/arithmetic/window_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "all finite windows and short-clock inverse words tested: 910 392210\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/mixed_check.py",
+      "sha256": "c3922dcede1de3533078f55c3ae14ac53cddfbe2a526f8bb3eec3aebfd002386",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/merger/mixed_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "581 phase paths, 233 with both singleton and pair\n12782 literal mixed shadow edges, 12782 simultaneous floor comparisons\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/mixed_check.py",
+      "sha256": "c3922dcede1de3533078f55c3ae14ac53cddfbe2a526f8bb3eec3aebfd002386",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-synthesis-20261124/merger/mixed_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "581 phase paths, 233 with both singleton and pair\n12782 literal mixed shadow edges, 12782 simultaneous floor comparisons\n",
+      "stderr": ""
+    }
+  ],
+  "source_audit_copies_match_final_sources": true,
+  "success": true
+}

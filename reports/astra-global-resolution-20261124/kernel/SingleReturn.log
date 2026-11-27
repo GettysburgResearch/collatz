@@ -1,0 +1,3 @@
+'SingleReturn.singleReturnCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SingleReturn.collatzIffSingleReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SingleReturn.collatzIffEvenChild' depends on axioms: [propext, Classical.choice, Quot.sound]

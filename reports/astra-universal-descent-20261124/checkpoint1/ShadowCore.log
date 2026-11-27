@@ -1,0 +1,20 @@
+'ShadowCore.step_even' depends on axioms: [propext]
+'ShadowCore.step_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.run_add' does not depend on any axioms
+'ShadowCore.run_first' does not depend on any axioms
+'ShadowCore.ones' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.guarded_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.guarded_meet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.guarded_smaller' depends on axioms: [propext, Quot.sound]
+'ShadowCore.step_even' depends on axioms: [propext]
+'ShadowCore.step_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.run_add' does not depend on any axioms
+'ShadowCore.run_first' does not depend on any axioms
+'ShadowCore.ones' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.guarded_meet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowCore.guarded_smaller' depends on axioms: [propext, Quot.sound]
+'ShadowCore.guarded_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

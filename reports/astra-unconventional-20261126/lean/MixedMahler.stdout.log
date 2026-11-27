@@ -1,0 +1,5 @@
+'Collatz.Unconventional.MixedMahler.rules_of_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.MixedMahler.missing_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Unconventional.MixedMahler.first_sections' depends on axioms: [propext, Quot.sound]
+'Collatz.Unconventional.MixedMahler.ternary_closure' depends on axioms: [propext, Quot.sound]
+'Collatz.Unconventional.MixedMahler.ternary_iterates' depends on axioms: [propext, Quot.sound]

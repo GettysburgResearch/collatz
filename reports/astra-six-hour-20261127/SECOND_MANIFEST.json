@@ -1,0 +1,138 @@
+{
+  "schema": "collatz-astra-six-hour-checkpoint2/v1",
+  "parent": "795cfa38fbd6a2436285edfe82580680df4f9b0d",
+  "created_utc": "2026-11-27T00:42:58.172491+00:00",
+  "scope": "Exact frozen changed-file boundary, excluding this self-referential manifest. See SECOND_REVIEW.md for narrow scientific verdicts and retained analytic inputs.",
+  "files": [
+    {
+      "path": "reports/astra-six-hour-20261127/CHECKPOINT1.json",
+      "bytes": 4338,
+      "sha256": "e2a6d6813212745abcf204793466951fa61f4d97ffe8802a2caf2f147aab8e9d"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/LEAN_SECOND.json",
+      "bytes": 8034,
+      "sha256": "a7d3692ff966b7c953023bba5bd010959ea64cdf3d4b6a2fdd7ec6a52efcfba4"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/SECOND_INTAKE.json",
+      "bytes": 14755,
+      "sha256": "0035619fa0af55354bad0a1684fedf4ad0435d78d4cab91b385aa40fd6db4fe9"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/SECOND_REVIEW.md",
+      "bytes": 8722,
+      "sha256": "0e049fc52faa0c9353bc13d9bbbeb623b07712736952cebc25a841bb976833c2"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/global/primitive_checks.json",
+      "bytes": 485,
+      "sha256": "beab7451a1eb65c7e08c525d6cfe54477bca3cac698d3e2a1400118d4cfecd92"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/global/primitive_root_replay.json",
+      "bytes": 799,
+      "sha256": "e5da17e363f574dab6dc2beae8955eae3b83a39d6e651215330cf7e52339e715"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Audit.lean",
+      "bytes": 4449,
+      "sha256": "23fe20230739728b9627cb700c663c291b7f853db59b1e48488ee4a7032707c3"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/Audit.stdout.log",
+      "bytes": 7116,
+      "sha256": "e71685468346fa7ef9e8a0baedf190ed00f13e1a720213b238cd3e31884c8c3b"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/CanonicalBirths.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/CanonicalBirths.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/ClosedSupport.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/ClosedSupport.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/TernaryQuotient.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-six-hour-20261127/lean/TernaryQuotient.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/README.md",
+      "bytes": 11945,
+      "sha256": "ca75905aefda31c5f0506df5887e673b5540d2f0ca71990a89b6e085955fa03c"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/COLOR_WORDS.md",
+      "bytes": 7419,
+      "sha256": "b9e42980d70894ba5a9a08edbee2d2607d163f8aba58f130762e3ba218c35bd7"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/TERNARY_QUOTIENT.md",
+      "bytes": 3136,
+      "sha256": "071cc39fdf708f66a37da259d307a2f5a43dabf280c248c4107126544bff803d"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/arithmetic/TernaryQuotient.lean",
+      "bytes": 2393,
+      "sha256": "a250270083e63eeabdd39ad90ae65c739e205be33ac0663a4532daba7efc5b6e"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/check_lean.py",
+      "bytes": 7154,
+      "sha256": "fdbb98dd936e9b386e0ab0f50042f88eb9516398220ce2a8384d55d3a89030cd"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/CLOSED_CORRECTION_SUPPORT.md",
+      "bytes": 9007,
+      "sha256": "56b8922e66787d3522a960291675871a4633464d98491a01a87d1c2f10cf5ae7"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/escape/GRADED_CORRECTION_SETS.md",
+      "bytes": 6518,
+      "sha256": "7ad28bcc74da855a2756a4f380df461f421cb2b040d51ae85ea027b5d93214e5"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/CANONICAL_BIRTHS.md",
+      "bytes": 13531,
+      "sha256": "234a0269070bcde9395071d3adb23f94f4adfd3120f2157dd26d5890361daf24"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/CanonicalBirths.lean",
+      "bytes": 4077,
+      "sha256": "68f5c33238b163a9cdcf93599bd647b32f8433b540718b9354475fb274f57e18"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/PRIMITIVE_CHARACTERS.md",
+      "bytes": 6922,
+      "sha256": "2d3dd61d72a5e6daf959151e50b8cec1c0ffc1af29e92f8a6f1d31c1bd7671c5"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/global/check_primitive.py",
+      "bytes": 4767,
+      "sha256": "86edf30dddbfc56c6ea44c8cb5696194326bce08fe29b560329adb9382e65d79"
+    },
+    {
+      "path": "research/astra-six-hour-20261127/root/ClosedSupport.lean",
+      "bytes": 6300,
+      "sha256": "6e659acac5636b77b305b8811af640cbda2187b73069780db51e4fd78bcb2ec3"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "collatz-astra-global-sources/v1",
+  "publication_base": "c6cb5e66516a86c33a757154983bbddc822510de",
+  "sources": [
+    {
+      "path": "research/astra-global-synthesis-20261124/README.md",
+      "sha256": "d96de9582cef5642428b759dcabb123a75c03a47d66e5614182f451d041eb154",
+      "bytes": 10782
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/OctaveProfiles.lean",
+      "sha256": "e17c1c0f2b12a35e1f4ae9f4ecbed1d8e08faeaba0652aa378cb6e7594e60ad4",
+      "bytes": 4932
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/OptimalReset.lean",
+      "sha256": "cd99b2e96efddccc46a34fd265a069df415ac472fc34d57915a16b4fa01a00d7",
+      "bytes": 1416
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/REVIEW_SECTION.md",
+      "sha256": "75c095971235b36aa072b00be28fa006e60cfa46c0cfc3a35d7e7823a822fba8",
+      "bytes": 6334
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/WindowControl.lean",
+      "sha256": "7b94232ab925d67520a84cfd73705cd2fee2933734b2a784290575238ccb0f40",
+      "bytes": 941
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/check.py",
+      "sha256": "077007a01902bf0972daf978d24df73851a96cea9b7a04c511fd40c7ed3c2a00",
+      "bytes": 8837
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/optimality.md",
+      "sha256": "73516d04b396e5258f366340de5051504bef26de4b305b359edc688296320b9a",
+      "bytes": 5942
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/proof.md",
+      "sha256": "716dd2fc0d26e09c8bcf499403976a76ccaea6d2df0d094dc3b2a70f62996305",
+      "bytes": 14862
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/window-control.md",
+      "sha256": "1addd52b77e6fe9663d5b902ad4542757fd77024914fe1d6991d782ea1fa4dfe",
+      "bytes": 5917
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/arithmetic/window_control.py",
+      "sha256": "3ae7c57f8d0d264fb09ac708e25bcebf8899ce884d4a98dcf83fb57825187ba2",
+      "bytes": 2439
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/check.py",
+      "sha256": "e71fdd4dfd919d8e465063ae5c9e381d9590271fd867c5a1f841d6c7ea75ca64",
+      "bytes": 4671
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/MixedPaid.lean",
+      "sha256": "d3205cb9f56de0f69f5603372954986202aa03fa28293926c80cb38ebda75ce6",
+      "bytes": 15309
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/PaidPairs.lean",
+      "sha256": "628f7dabe95789898351a9e7c850fa2078ec4c77e978a03f5cbbf1dbaa2d3bbe",
+      "bytes": 12053
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/check.py",
+      "sha256": "c605c70503a6f06a05770c392ae9bc6c128c2ec5e38622c52823bf2934260de6",
+      "bytes": 3859
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/mixed.md",
+      "sha256": "156eb0ce487d1c95a208d6d74e196e7a96b89e554aca6d3c96abba89d704d3aa",
+      "bytes": 9317
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/mixed_check.py",
+      "sha256": "c3922dcede1de3533078f55c3ae14ac53cddfbe2a526f8bb3eec3aebfd002386",
+      "bytes": 2665
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/merger/proof.md",
+      "sha256": "9561d5c229aefa50e4a2c3e3f2e3ded1d98d6a90f3fc42bfd52ba7d6e87d970f",
+      "bytes": 11843
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/DISTINCT_COMPONENTS.md",
+      "sha256": "7d215cfb78cdca8f851d3e401993bc1e6a09aaa7e62f153abd5272bdf10e0b53",
+      "bytes": 5128
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/ForwardAnchors.lean",
+      "sha256": "5608981fc9829363af6b7677a77de242d107d138edaa981b57e921cd0164680b",
+      "bytes": 7636
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/REVIEW_ARITHMETIC.md",
+      "sha256": "6102118b6d470ec591933db2b738bc0174985e6cd0d69a8aab3543febc675734",
+      "bytes": 6391
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/REVIEW_MERGER.md",
+      "sha256": "8a053304c3fc6077655a156647663e9de773d5c6f4913b25c21a4ee65b6af44e",
+      "bytes": 6378
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/REVIEW_MIXED.md",
+      "sha256": "6b5760deb7ad8cc427e7e87abe494825f7c71852de13537cbb695a19d3505288",
+      "bytes": 3816
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/REVIEW_OPTIMALITY.md",
+      "sha256": "73db3868f06e650aa9b7950b4a46731fe63c4cd385dc6ee1ada58f709d977fc5",
+      "bytes": 4829
+    },
+    {
+      "path": "research/astra-global-synthesis-20261124/section/proof.md",
+      "sha256": "cbe95e8adf39ccf90253573005350260ee6ea0d67cb10c206108cbb624c59a02",
+      "bytes": 16344
+    }
+  ]
+}

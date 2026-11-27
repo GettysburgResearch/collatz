@@ -1,0 +1,10 @@
+'UniversalProposal.converges_one' does not depend on any axioms
+'UniversalProposal.converges_three' does not depend on any axioms
+'UniversalProposal.converges_step' does not depend on any axioms
+'UniversalProposal.converges_run' does not depend on any axioms
+'UniversalProposal.converges_of_meets' does not depend on any axioms
+'UniversalProposal.multiple_ancestor' depends on axioms: [propext, Quot.sound]
+'UniversalProposal.collatz_of_triple_descent' depends on axioms: [propext, Quot.sound]
+'UniversalProposal.collatz_iff_triple_descent' depends on axioms: [propext, Quot.sound]
+'UniversalProposal.check_sound' does not depend on any axioms
+'UniversalProposal.certified_collatz' depends on axioms: [propext, Quot.sound]

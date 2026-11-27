@@ -1,0 +1,25 @@
+{
+  "scope": "Exact small-level finite-field Gauss and frame identities, and rational cyclic Gram entries only; not an analytic sign proof. Checks remain active under optimized Python.",
+  "script_sha256": "86edf30dddbfc56c6ea44c8cb5696194326bce08fe29b560329adb9382e65d79",
+  "record_sha256": "beab7451a1eb65c7e08c525d6cfe54477bca3cac698d3e2a1400118d4cfecd92",
+  "runs": [
+    {
+      "flags": [
+        "-B"
+      ],
+      "exit_code": 0,
+      "matches_record": true,
+      "stdout_sha256": "beab7451a1eb65c7e08c525d6cfe54477bca3cac698d3e2a1400118d4cfecd92"
+    },
+    {
+      "flags": [
+        "-B",
+        "-O"
+      ],
+      "exit_code": 0,
+      "matches_record": true,
+      "stdout_sha256": "beab7451a1eb65c7e08c525d6cfe54477bca3cac698d3e2a1400118d4cfecd92"
+    }
+  ],
+  "success": true
+}

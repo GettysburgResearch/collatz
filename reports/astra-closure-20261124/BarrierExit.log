@@ -1,0 +1,6 @@
+'Collatz.BarrierExit.ascent' depends on axioms: [propext, Quot.sound]
+'Collatz.BarrierExit.three_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BarrierExit.halvings' depends on axioms: [propext, Quot.sound]
+'Collatz.BarrierExit.ascent' depends on axioms: [propext, Quot.sound]
+'Collatz.BarrierExit.three_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BarrierExit.halvings' depends on axioms: [propext, Quot.sound]

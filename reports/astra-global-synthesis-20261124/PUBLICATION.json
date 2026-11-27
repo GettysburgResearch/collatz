@@ -1,0 +1,17 @@
+{
+  "schema": "collatz-astra-global-publication/v1",
+  "pull_request": "https://github.com/GettysburgResearch/collatz/pull/193",
+  "branch": "research/astra-universal-descent-20261124",
+  "parent": "c6cb5e66516a86c33a757154983bbddc822510de",
+  "scientific_checkpoint": "d35bdfd9d0c75effda50bbb8040c136482431e24",
+  "scientific_tree": "65ddce803ff9301ff88bb45c8f00442ad2c43c25",
+  "local_prepublication_commit": "6022becf1e1fa151fdcedf07a7d84f881d2d8989",
+  "local_and_remote_trees_identical": true,
+  "remote_ref_readback_confirmed": true,
+  "remote_clean_complete_checkout_validation": true,
+  "new_public_Lean_theorems": 32,
+  "new_Lean_modules": 6,
+  "finite_control_scripts": 4,
+  "finite_control_runs": 8,
+  "receipt_commit_scope": "Adds publication and clean-checkout receipts only; no scientific source changes."
+}

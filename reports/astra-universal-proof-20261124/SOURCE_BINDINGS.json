@@ -1,0 +1,195 @@
+{
+  "status": "source pins, not blanket validation",
+  "count": 26,
+  "files": [
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-global-synthesis-20261124/arithmetic/proof.md",
+      "git_blob": "c46faf3dcefc768a984b99eb66aa62ef398f9a8c",
+      "sha256": "716dd2fc0d26e09c8bcf499403976a76ccaea6d2df0d094dc3b2a70f62996305"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-global-synthesis-20261124/arithmetic/OctaveProfiles.lean",
+      "git_blob": "66b4c571443e5ac4d0e51cbd58bf272f9b6cdfa9",
+      "sha256": "e17c1c0f2b12a35e1f4ae9f4ecbed1d8e08faeaba0652aa378cb6e7594e60ad4"
+    },
+    {
+      "pr": 193,
+      "commit": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+      "path": "research/astra-global-resolution-20261124/arithmetic/RESIDUAL_GHOST.md",
+      "git_blob": "080c704f50886cc032a4ed127e7a0d1082e71515",
+      "sha256": "f5258e750f83ea5c1874fb81ebac95365996395dec317d1b4853b6f60de2a47d"
+    },
+    {
+      "pr": 192,
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-minimum-source-20261124/minimal/MinimumFailure.lean",
+      "git_blob": "745aca9d3aa325a7b5be6cc695a15f0a6a879804",
+      "sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4"
+    },
+    {
+      "pr": 192,
+      "commit": "26f070c38ad9edd21ed7dac6efaab6554550c2a3",
+      "path": "research/astra-minimum-source-20261124/second/README.md",
+      "git_blob": "ff19964e104ccc0b1ef99b40932920e743446e3e",
+      "sha256": "816235c2a2104d03a799b093f908ba115ac4dd32eb81e637d180ef5778d6377c"
+    },
+    {
+      "pr": 195,
+      "commit": "ef3496b577ed7525d5e0c82a9b782819457403d5",
+      "path": "research/astra-global-closure-20261124/round8/unit/CRITICAL_PROFILES.md",
+      "git_blob": "d9faef95c95a33027c7c65fc9f77bab754187708",
+      "sha256": "b6160f6b67a13a0d23bde86f2780f6ff5daf201af9ef1a7380f18bbeb43a01d2"
+    },
+    {
+      "pr": 197,
+      "commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+      "path": "research/ayh-resource-reset-20261124/directed-return/FIXED_TRIT_PATTERNS.md",
+      "git_blob": "5aebf408b001a8a8b2557234e79b50a7e204f1e2",
+      "sha256": "44e942fda19002fd074a84ff200b05bd2665b7059e58707b534716e2b7652902"
+    },
+    {
+      "pr": 197,
+      "commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+      "path": "research/ayh-resource-reset-20261124/directed-return/SELECTED_COLOR_VARIATION.md",
+      "git_blob": "acac5ff080c5bdb9f57318f63917489577a86516",
+      "sha256": "7b9df30805410b7a90e0266fc47444a3bacdf689bcb717f3ff63113e9c64e0a2"
+    },
+    {
+      "pr": 197,
+      "commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+      "path": "research/ayh-resource-reset-20261124/directed-return/Residue17Closure.lean",
+      "git_blob": "9bc475eb51207357b8c432be0324f60ea4e204bf",
+      "sha256": "59305b3ef5f0a8706ab7dd3bc3ab48317f630e86c4119ce812fd5634bb5e5d37"
+    },
+    {
+      "pr": 197,
+      "commit": "7ad81ec56947146fac854d2586651ca0c934a536",
+      "path": "research/ayh-resource-reset-20261124/unit-exit/RESIDUE17_ESCAPE.md",
+      "git_blob": "f5e3fdea838dc38e5b67edce7d412fc0cab481ac",
+      "sha256": "febcff1066ef3e6973c708046af45d7e283c33f61367951a8f37897328b328d0"
+    },
+    {
+      "pr": 200,
+      "commit": "9fc000d840f365340539e426c9beb05a34edbd82",
+      "path": "research/regularity-rigidity-20261124/refinement/README.md",
+      "git_blob": "e83a3d6f41a1342aa9108f802af8640074f78664",
+      "sha256": "48be6b2c0c52e7a1f15a47bbc16c4cd1b0fe929c9131134aa72185b06e8b9a3c"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/two-end-bridge/README.md",
+      "git_blob": "d7ce88173738b5e5a256915c5dd05fc28a638857",
+      "sha256": "fcc6c393bfde585ea726a3b441fb44a44cce0d931aaa035f25931d08857a64e7"
+    },
+    {
+      "pr": 201,
+      "commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+      "path": "research/killed-green-head-closure-20261124/verified/ExactClockRouter.lean",
+      "git_blob": "1914c6710327c9f04bb119dd200a68f270307eab",
+      "sha256": "691a97e9435784582fadf85718fbb86fb81a76b3c0b362680a7105601ee50ca2"
+    },
+    {
+      "pr": 204,
+      "commit": "5d4698b692ec102b44cf77a59930a2a80b4104fd",
+      "path": "research/astra-joint-closure-20261124/pressure/WEIGHTED_POINTWISE_ROWS.md",
+      "git_blob": "db1d7a9d70d1bb0cec5d77030b24f9898792f1ff",
+      "sha256": "66317debdf47470d618879250e56204901a39fbe4204165d33b7cd4c0e33896b"
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/README.md",
+      "git_blob": "6f6367a51770ad4830b5fd7c35e503dfadbc28e3",
+      "sha256": "ed2f484f44dcf58ceb8bcd0ba0c4675ff9561ab57372ff958776a27aed547c97"
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/ordinary/HEIGHT_STRIP.md",
+      "git_blob": "90aea2475ec8a791f460efc248a7935cb28e65bc",
+      "sha256": "e816dc32482325e0507073cfe53f749a5f2d5f39adc786cbf11e703b824b9d42"
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/arithmetic/README.md",
+      "git_blob": "75947f046effa7591948f15c02c12ec5068e6034",
+      "sha256": "a977d6e4d5839cbfbafca18dffb9b4f80ecd568768f6b5a7772072ee27967286"
+    },
+    {
+      "pr": 205,
+      "commit": "32d722c5d5597846da5dad842c8ea15742abc176",
+      "path": "research/astra-fixed-target-closure-20261124/analytic/JOINT_REAL_FLOOR.md",
+      "git_blob": "f305ea82b5f23efca80e7e49441f6adedf7ff34e",
+      "sha256": "0664b27279cff0ecabd87055b1bf09072ea2c2299e9bfc019ebfd5c03747b590"
+    },
+    {
+      "pr": 206,
+      "commit": "37d2b5d644664a746891042c199e58cfb06f1176",
+      "path": "research/clock-itineraries/SparseDefects.md",
+      "git_blob": "47b10ea9b5cf87f5d749aeb0d2e1393c58b7d2a3",
+      "sha256": "693e92b56f1e3c28e45d087d5f4d9d91ced72c2071fa82c7291ff484ba5c7bb7"
+    },
+    {
+      "pr": 200,
+      "commit": "81ea4c1754d73c98d1451447527e6b2ba56977cc",
+      "path": "research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md",
+      "git_blob": "341039e2f7683b6c52e2425f2786e3ced5a70809",
+      "sha256": "8da2b2f26154b4aacb7fa71e4693d12cdf535dbe6774ed9729896fff281765b0",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 206,
+      "commit": "9deba695050366b48eb0a0e95fc6cba3f78dedc0",
+      "path": "research/clock-itineraries/FixedGate.md",
+      "git_blob": "b07d283db7c428bf311ff977d125e17ead1dc4f6",
+      "sha256": "26b66fc2ac55abbca77dfb417fab6d4ff7f4637f1e06754bab087e58dfb04bca",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 206,
+      "commit": "9deba695050366b48eb0a0e95fc6cba3f78dedc0",
+      "path": "research/clock-itineraries/MinimumDescent.md",
+      "git_blob": "28e5719b78ffc22cbcb1de31a2a1b32f85c254e4",
+      "sha256": "2f8ff67dfe804f375f6d39221524564e43a50310587de62b5814c64d8d9d1035",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 206,
+      "commit": "9deba695050366b48eb0a0e95fc6cba3f78dedc0",
+      "path": "research/clock-itineraries/OrbitAttack.md",
+      "git_blob": "c525ae4fceacd80cfd63df4a677e86565cce171b",
+      "sha256": "431f78e46ef0d872eb2733fa5d01babb813b6fc29a04c379c95e5869b65ce612",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 206,
+      "commit": "9deba695050366b48eb0a0e95fc6cba3f78dedc0",
+      "path": "research/clock-itineraries/SynchronousShadow.md",
+      "git_blob": "1a7a588955e43e26e50d37b718045063e4a7c390",
+      "sha256": "a6f20e0e9ab5afa2d1cbb34f51b59ac6f3a7ad60f6d4ba5f240d7b9d4085f22d",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 207,
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/README.md",
+      "git_blob": "39317a73963712c014f42ad09e336c60e7020d8b",
+      "sha256": "6ee24648dea08ec941b989aa602cfd5646938575760c1107c2afcf243651a6da",
+      "intake": "late refresh"
+    },
+    {
+      "pr": 207,
+      "commit": "b56c4dc2c28a184cf55638bb80c49a9d4662fc81",
+      "path": "research/diffusive-central-row-closure-20261124/NEAR_DIAGONAL.md",
+      "git_blob": "20873f1181ac90862381f60c06d70c45e4b25981",
+      "sha256": "c147b6df2710e5fd3747f2895b7f88ad2600622447d839a7f8ca06926059c283",
+      "intake": "late refresh"
+    }
+  ]
+}

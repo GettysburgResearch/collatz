@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "threads": 1,
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "Fresh compilation and public-theorem axiom inventory of the listed finite kernels. The infinite analytic, probabilistic and arithmetic arguments in the companion notes are written proposals or retained external inputs. This receipt does not prove Collatz or discharge a missing estimate.",
+  "modules": [
+    {
+      "module": "CurvatureCone",
+      "source": "research/astra-diagonal-20261127/arithmetic/CurvatureCone.lean",
+      "sha256": "35669d9c5187da4a2da42b63bbc8c406dd18a05a6c9338242de868dafcfe5d9f",
+      "exit_code": 0,
+      "seconds": 32.646,
+      "public_theorems": [
+        "Collatz.Diagonal.CurvatureCone.physicalRowTables",
+        "Collatz.Diagonal.CurvatureCone.ordinaryCone",
+        "Collatz.Diagonal.CurvatureCone.splitCone",
+        "Collatz.Diagonal.CurvatureCone.negativeCone",
+        "Collatz.Diagonal.CurvatureCone.diagonalEntry",
+        "Collatz.Diagonal.CurvatureCone.outsideStage1",
+        "Collatz.Diagonal.CurvatureCone.outsideStage2",
+        "Collatz.Diagonal.CurvatureCone.outsideStage3",
+        "Collatz.Diagonal.CurvatureCone.outsideStage4",
+        "Collatz.Diagonal.CurvatureCone.outsideStage5"
+      ]
+    },
+    {
+      "module": "ThreeGradeCurvature",
+      "source": "research/astra-diagonal-20261127/arithmetic/ThreeGradeCurvature.lean",
+      "sha256": "b6ea82c1d40f50476978da46396c1fa0585a21b6a48d83b4434ddc81c966be96",
+      "exit_code": 0,
+      "seconds": 4.106,
+      "public_theorems": [
+        "Collatz.Diagonal.ThreeGradeCurvature.commonSlope",
+        "Collatz.Diagonal.ThreeGradeCurvature.phiPositive",
+        "Collatz.Diagonal.ThreeGradeCurvature.liftedSingle",
+        "Collatz.Diagonal.ThreeGradeCurvature.twoMixed",
+        "Collatz.Diagonal.ThreeGradeCurvature.scalarBound",
+        "Collatz.Diagonal.ThreeGradeCurvature.reverseCutoff",
+        "Collatz.Diagonal.ThreeGradeCurvature.largeBlock",
+        "Collatz.Diagonal.ThreeGradeCurvature.strictGap",
+        "Collatz.Diagonal.ThreeGradeCurvature.octaveGap"
+      ]
+    },
+    {
+      "module": "RecordAffine",
+      "source": "research/astra-diagonal-20261127/escape/RecordAffine.lean",
+      "sha256": "eafb6a5a64ed62d7bf9cded65b3a6b9d3f879b989c538f5e7c0ed8c0cb33b975",
+      "exit_code": 0,
+      "seconds": 2.379,
+      "public_theorems": [
+        "Collatz.Diagonal.RecordAffine.gain_pos",
+        "Collatz.Diagonal.RecordAffine.forward_ge_linear",
+        "Collatz.Diagonal.RecordAffine.forward_ge_gain_add_third",
+        "Collatz.Diagonal.RecordAffine.record_drop",
+        "Collatz.Diagonal.RecordAffine.chain_budget"
+      ]
+    },
+    {
+      "module": "MesoscopicMinorization",
+      "source": "research/astra-diagonal-20261127/global/MesoscopicMinorization.lean",
+      "sha256": "1a8dc8fe6452539840d9d2ec2fb4e25baff0cba267327a6d47470c9e87c770b6",
+      "exit_code": 0,
+      "seconds": 1.649,
+      "public_theorems": [
+        "Collatz.Diagonal.MesoscopicMinorization.one_block",
+        "Collatz.Diagonal.MesoscopicMinorization.regeneration"
+      ]
+    },
+    {
+      "module": "WordSeparation",
+      "source": "research/astra-diagonal-20261127/global/WordSeparation.lean",
+      "sha256": "c7d9555f13c047c3c8df66a3e80836e577706ff78f0b029fd7089a44f17fe569",
+      "exit_code": 0,
+      "seconds": 1.728,
+      "public_theorems": [
+        "Collatz.Diagonal.WordSeparation.common_word_divisibility",
+        "Collatz.Diagonal.WordSeparation.terminal_tail_cost",
+        "Collatz.Diagonal.WordSeparation.disagreement_clock"
+      ]
+    }
+  ],
+  "success": true,
+  "public_theorems": 29,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 29,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 43.6
+}

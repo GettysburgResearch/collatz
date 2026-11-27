@@ -1,0 +1,8 @@
+'ClockCollision.trace_through_floor' depends on axioms: [propext, Quot.sound]
+'ClockCollision.unique_offset' depends on axioms: [propext, Quot.sound]
+'ClockCollision.disjoint_routed_blocks' does not depend on any axioms
+'ClockCollision.predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockCollision.pushforward_bucket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockCollision.only_two_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockCollision.branch_energy' depends on axioms: [propext, Quot.sound]
+'ClockCollision.accumulate_flux' depends on axioms: [propext]

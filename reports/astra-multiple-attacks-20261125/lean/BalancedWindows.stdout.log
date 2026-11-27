@@ -1,0 +1,6 @@
+'BalancedWindows.physical_trace' depends on axioms: [propext, Quot.sound]
+'BalancedWindows.line_divisibility' depends on axioms: [propext, Quot.sound]
+'BalancedWindows.trace_identity' depends on axioms: [propext]
+'BalancedWindows.all_word_divisibility' depends on axioms: [propext, Quot.sound]
+'BalancedWindows.paired_identity' depends on axioms: [propext, Quot.sound]
+'BalancedWindows.dyadic_divisibility' depends on axioms: [propext, Quot.sound]

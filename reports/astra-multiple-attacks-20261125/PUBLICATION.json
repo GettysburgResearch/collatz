@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-multiple-attacks-publication/v1",
+  "recorded_utc": "2026-11-25T18:40:50.848969+00:00",
+  "pull_request": "https://github.com/GettysburgResearch/collatz/pull/193",
+  "branch": "research/astra-universal-descent-20261124",
+  "base_commit": "aa0b01234735683b413098b81afdf764de503730",
+  "local_science_commit": "cb1ad788163a61e9236ada2f7fb7cdc3c6d72da9",
+  "published_science_commit": "632cb06b6770c2e0cb1c95fcdcfd022638c488bb",
+  "identical_science_tree": "12e8335a085d313110dea597f774e9087c916325",
+  "published_complete_checkout_files": 744,
+  "manifest_files_verified": 56,
+  "compiled_source_hashes_verified": 10,
+  "new_public_theorems": 29,
+  "imported_public_theorems": 31,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 60,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "published_validation_success": true,
+  "published_validation_commands": 5,
+  "publication_method": "GitHub connector Git data API, preserving all unchanged files and using an expected-head lease. Remote PR head read back, published science commit fetched into a separate complete checkout and validated.",
+  "receipt_commit_scope": "These three publication receipts only; the scientific tree identified above has no subsequent science edits in this receipt commit.",
+  "proof_status": "Collatz remains OPEN. Lean checks the recorded declarations; source-qualified analytic deductions and external results are not formalized by this build."
+}

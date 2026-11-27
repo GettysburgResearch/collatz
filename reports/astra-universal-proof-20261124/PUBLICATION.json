@@ -1,0 +1,22 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 193,
+  "branch": "research/astra-universal-descent-20261124",
+  "base_head": "fbe870ec44239e6b6c753bab9d1c7537acfff701",
+  "published_science_head": "36936db19c69488af5a68ab8515960d983d09971",
+  "published_science_tree": "24193f468bf01aa811bec140ac5f464f758a85e9",
+  "local_validated_head": "67ab0f49c20d03408e162092f283e58c1f27cb27",
+  "remote_tree_equals_local_validated_tree": true,
+  "published_complete_checkout_files": 619,
+  "new_lean_modules": 5,
+  "new_public_theorem_audits": 31,
+  "published_science_manifest_files_verified": 29,
+  "frozen_source_files": 26,
+  "followup_changes": [
+    "Archive local and published-science validation receipts",
+    "Label the intake time as the session start, not an exact retrieval time",
+    "Refresh the corresponding manifest binding"
+  ],
+  "proof_status": "Collatz OPEN; universal certificate coverage not established",
+  "verification_boundary": "The five new Std modules are compiled and axiom-audited. The full asymptotic cycle results and external analytic statements remain written mathematics."
+}

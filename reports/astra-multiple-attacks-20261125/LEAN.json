@@ -1,0 +1,182 @@
+{
+  "schema": "collatz-astra-multiple-attacks-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "All seven new modules and three resident imports, with fresh project objects and cached pinned Mathlib dependencies. The Subspace Theorem, symbolic applications, analytic Fourier estimate, and density imports are not formalized by this build.",
+  "modules": [
+    {
+      "module": "EscapeCore",
+      "source": "research/astra-universal-descent-20261124/EscapeCore.lean",
+      "new": false,
+      "sha256": "2d2b01135ab765c58001edd00c3ebea6598ebb13dd0e36fe97297acee2f4244d",
+      "exit_code": 0,
+      "seconds": 3.198,
+      "public_theorems": [
+        "EscapeCore.affine",
+        "EscapeCore.translated_interval",
+        "EscapeCore.forward_add",
+        "EscapeCore.residual_distinct",
+        "EscapeCore.inverse_transversal",
+        "EscapeCore.core_double",
+        "EscapeCore.core_step",
+        "EscapeCore.odd_transport"
+      ]
+    },
+    {
+      "module": "UniversalProposal",
+      "source": "research/astra-universal-proof-20261124/UniversalProposal.lean",
+      "new": false,
+      "sha256": "2f5377e2231af4cfc048f0948c7885fe6244bfe1818072cb91f8ccf6507c132a",
+      "exit_code": 0,
+      "seconds": 7.28,
+      "public_theorems": [
+        "UniversalProposal.converges_one",
+        "UniversalProposal.converges_three",
+        "UniversalProposal.converges_step",
+        "UniversalProposal.converges_run",
+        "UniversalProposal.converges_of_meets",
+        "UniversalProposal.multiple_ancestor",
+        "UniversalProposal.collatz_of_triple_descent",
+        "UniversalProposal.collatz_iff_triple_descent",
+        "UniversalProposal.check_sound",
+        "UniversalProposal.certified_collatz"
+      ]
+    },
+    {
+      "module": "GateVisits",
+      "source": "research/astra-closure-20261125/escape/GateVisits.lean",
+      "new": false,
+      "sha256": "b1b8e2e4eb682e2ea882c6871c40371f8c16c6131c8be6ab830d41e4932a087a",
+      "exit_code": 0,
+      "seconds": 3.091,
+      "public_theorems": [
+        "GateVisits.marked_distortion",
+        "GateVisits.gate_budget",
+        "GateVisits.marks_mono",
+        "GateVisits.marked_visits_distinct",
+        "GateVisits.visit_rank_injective",
+        "GateVisits.dyadic_budget",
+        "GateVisits.bounded_code",
+        "GateVisits.code_injective_on_visits",
+        "GateVisits.state_add",
+        "GateVisits.ones_add",
+        "GateVisits.common_gate_all_tests",
+        "GateVisits.suffix_of_last_cross",
+        "GateVisits.suffix_misses"
+      ]
+    },
+    {
+      "module": "MersenneAncestors",
+      "source": "research/astra-multiple-attacks-20261125/descent/MersenneAncestors.lean",
+      "new": true,
+      "sha256": "49fbff939a92e4c5b93a4e46dd7a85d128f6fbfd3dfa903a1a22360ed3791a0f",
+      "exit_code": 0,
+      "seconds": 14.987,
+      "public_theorems": [
+        "MersenneAncestors.threshold",
+        "MersenneAncestors.staircase",
+        "MersenneAncestors.excess_grade",
+        "MersenneAncestors.bounded_shadow"
+      ]
+    },
+    {
+      "module": "SurplusProperness",
+      "source": "research/astra-multiple-attacks-20261125/descent/SurplusProperness.lean",
+      "new": true,
+      "sha256": "eb53bfbb68fb1a4ab2a8d840395153679f13887c5aedb8c217d9bd73a4b7fdf7",
+      "exit_code": 0,
+      "seconds": 8.294,
+      "public_theorems": [
+        "SurplusProperness.fixed_target",
+        "SurplusProperness.finite_windows",
+        "SurplusProperness.source_free_gate",
+        "SurplusProperness.unbounded_extra"
+      ]
+    },
+    {
+      "module": "MersenneCertificates",
+      "source": "research/astra-multiple-attacks-20261125/descent/MersenneCertificates.lean",
+      "new": true,
+      "sha256": "ec129ad5d555b4a09ba4afc8633de7aecf9cc6f390bfcb75244d6cbbfbb926ee",
+      "exit_code": 0,
+      "seconds": 16.291,
+      "public_theorems": [
+        "MersenneCertificates.mersenne_unit",
+        "MersenneCertificates.good_quotient",
+        "MersenneCertificates.neighbor",
+        "MersenneCertificates.terminal_certificate",
+        "MersenneCertificates.cofinal_certificates",
+        "MersenneCertificates.adjacent_checker",
+        "MersenneCertificates.four_odd_partner",
+        "MersenneCertificates.four_odd_checker",
+        "MersenneCertificates.four_odd_exit",
+        "MersenneCertificates.next_site"
+      ]
+    },
+    {
+      "module": "BalancedWindows",
+      "source": "research/astra-multiple-attacks-20261125/arithmetic/BalancedWindows.lean",
+      "new": true,
+      "sha256": "4832a32f4864ed2b5e3d4e378bd5e66fc0512c18771c66c662e1024cad166f8a",
+      "exit_code": 0,
+      "seconds": 7.769,
+      "public_theorems": [
+        "BalancedWindows.physical_trace",
+        "BalancedWindows.trace_identity",
+        "BalancedWindows.line_divisibility",
+        "BalancedWindows.all_word_divisibility",
+        "BalancedWindows.paired_identity",
+        "BalancedWindows.dyadic_divisibility"
+      ]
+    },
+    {
+      "module": "DilationRows",
+      "source": "research/astra-multiple-attacks-20261125/global/DilationRows.lean",
+      "new": true,
+      "sha256": "6ece48cb9d2dc2f4e32707e5b0eeadee7236b60df3f671100125c5166ba120d2",
+      "exit_code": 0,
+      "seconds": 2.476,
+      "public_theorems": [
+        "DilationRows.binaryCount",
+        "DilationRows.ternaryCount"
+      ]
+    },
+    {
+      "module": "TargetDiagonal",
+      "source": "research/astra-multiple-attacks-20261125/global/TargetDiagonal.lean",
+      "new": true,
+      "sha256": "45d32f81d255ee43ea2ee6744b14cd432a0d747f290baf654f96b158610fa64c",
+      "exit_code": 0,
+      "seconds": 2.355,
+      "public_theorems": [
+        "TargetDiagonal.incompatible",
+        "TargetDiagonal.diagonal"
+      ]
+    },
+    {
+      "module": "ComponentGram",
+      "source": "research/astra-multiple-attacks-20261125/global/ComponentGram.lean",
+      "new": true,
+      "sha256": "95f1df5e7428b26a951aa7199f16384301ef8a88383b00ce317fbaaf0ea952ca",
+      "exit_code": 0,
+      "seconds": 1.755,
+      "public_theorems": [
+        "ComponentGram.anchored"
+      ]
+    }
+  ],
+  "success": true,
+  "new_public_theorems": 29,
+  "imported_public_theorems": 31,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 60,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 73.0
+}

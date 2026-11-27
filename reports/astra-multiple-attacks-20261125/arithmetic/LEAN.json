@@ -1,0 +1,16 @@
+{
+  "module": "research/astra-multiple-attacks-20261125/arithmetic/BalancedWindows.lean",
+  "source_sha256": "4832a32f4864ed2b5e3d4e378bd5e66fc0512c18771c66c662e1024cad166f8a",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "exit_code": 0,
+  "stdout": [
+    "'BalancedWindows.physical_trace' depends on axioms: [propext, Quot.sound]",
+    "'BalancedWindows.line_divisibility' depends on axioms: [propext, Quot.sound]",
+    "'BalancedWindows.trace_identity' depends on axioms: [propext]",
+    "'BalancedWindows.all_word_divisibility' depends on axioms: [propext, Quot.sound]",
+    "'BalancedWindows.paired_identity' depends on axioms: [propext, Quot.sound]",
+    "'BalancedWindows.dyadic_divisibility' depends on axioms: [propext, Quot.sound]"
+  ],
+  "stderr": []
+}

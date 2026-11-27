@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_path": "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "module_count": 5,
+  "public_theorem_count": 31,
+  "modules": [
+    {
+      "source": "UniversalProposal.lean",
+      "sha256": "2f5377e2231af4cfc048f0948c7885fe6244bfe1818072cb91f8ccf6507c132a",
+      "harness_sha256": "70bfc89cc455471de6ba1c0cf2b84cdfc964607e84eccdb2ecdeb5a49beba31c",
+      "flags": [
+        "warningAsError=true",
+        "autoImplicit=false"
+      ],
+      "exit_code": 0,
+      "seconds": 2.286,
+      "public_theorems": 10,
+      "axioms": {
+        "UniversalProposal.multiple_ancestor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UniversalProposal.collatz_of_triple_descent": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UniversalProposal.collatz_iff_triple_descent": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UniversalProposal.certified_collatz": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UniversalProposal.converges_one": [],
+        "UniversalProposal.converges_three": [],
+        "UniversalProposal.converges_step": [],
+        "UniversalProposal.converges_run": [],
+        "UniversalProposal.converges_of_meets": [],
+        "UniversalProposal.check_sound": []
+      },
+      "log": "UniversalProposal.log",
+      "log_sha256": "901cdd2e9f5322adef7089094ce1bc46a48ff6c57fef71415855233e3a87be1f",
+      "pass": true
+    },
+    {
+      "source": "minimum/MovingOctaveOrder.lean",
+      "sha256": "7541675b4f597dbf94c49232a85c56fddfb84dd84b1fcaa6b325ee7234fd97ac",
+      "harness_sha256": "b33bd40d34db53c3f7f4cf92374accdf4367297fa243357529bc15e5311f09c6",
+      "flags": [
+        "warningAsError=true",
+        "autoImplicit=false"
+      ],
+      "exit_code": 0,
+      "seconds": 0.919,
+      "public_theorems": 4,
+      "axioms": {
+        "MovingOctaveOrder.lift_step": [
+          "propext"
+        ],
+        "MovingOctaveOrder.moving_clock_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MovingOctaveOrder.words_differ": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MovingOctaveOrder.capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": "MovingOctaveOrder.log",
+      "log_sha256": "cdc07e4dfef20f278afb4c644ea7d9b56eb7ae530202c621e697d6e22d536c84",
+      "pass": true
+    },
+    {
+      "source": "critical/OctaveOccupation.lean",
+      "sha256": "67dc83cf4dea5e2cd003e1c64d6e868d2d72e57301770402791f49137d4599de",
+      "harness_sha256": "003ae6a3537c317c7dec15fd70155f5195d7f0929374ffe0c0d4c02ca1006971",
+      "flags": [
+        "warningAsError=true",
+        "autoImplicit=false"
+      ],
+      "exit_code": 0,
+      "seconds": 0.573,
+      "public_theorems": 6,
+      "axioms": {
+        "Collatz.OctaveOccupation.drop_balance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveOccupation.recover_left": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveOccupation.encode_length": [
+          "propext"
+        ],
+        "Collatz.OctaveOccupation.encode_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveOccupation.encode_injective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OctaveOccupation.entropy_margin": []
+      },
+      "log": "OctaveOccupation.log",
+      "log_sha256": "cf0a9b131a0adc02447ebda88f473f725f63c3648089f581fd8a3406afc59d42",
+      "pass": true
+    },
+    {
+      "source": "minimum/RunClock.lean",
+      "sha256": "4ecf880e923700c4f41a0db32e1c2e73f6f63d875e92150316b64d446acdb1d2",
+      "harness_sha256": "e061af852391ddb45bb2fc46c190800f680220c76d0fda92afabd21381bae7aa",
+      "flags": [
+        "warningAsError=true",
+        "autoImplicit=false"
+      ],
+      "exit_code": 0,
+      "seconds": 1.125,
+      "public_theorems": 5,
+      "axioms": {
+        "MinimumRunClock.block": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MinimumRunClock.runs_of_dvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MinimumRunClock.dvd_of_runs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MinimumRunClock.clock_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MinimumRunClock.each_source_exits": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "log": "RunClock.log",
+      "log_sha256": "c5141f5d636d093641c6dc1f35097da59172d1b01deceb058ec55650ca33a515",
+      "pass": true
+    },
+    {
+      "source": "interior/OrdinaryStationary.lean",
+      "sha256": "df3a5a4384151d2ec42d7c4b8d2a5df77c9e99a53875e8578533d0b24e79cfeb",
+      "harness_sha256": "d6b66a655bc0cf656de35bbfaabad2655e35a5edbbaf5b2f39b5533f411dc8fa",
+      "flags": [
+        "warningAsError=true",
+        "autoImplicit=false"
+      ],
+      "exit_code": 0,
+      "seconds": 0.966,
+      "public_theorems": 6,
+      "axioms": {
+        "OrdinaryStationary.coboundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryStationary.empirical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryStationary.nonreturn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryStationary.after_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryStationary.exit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OrdinaryStationary.visits_from_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": "OrdinaryStationary.log",
+      "log_sha256": "8959104ea62358d168af5bc6a4c88ceefc333f5c4eed69a40fa4ca5d65797cc6",
+      "pass": true
+    }
+  ],
+  "ordinary_controls": [
+    {
+      "flags": [],
+      "exit_code": 0,
+      "log": "ordinary_normal.log",
+      "log_sha256": "1954e45457947a5ac516d94ea5947d4a8199b3e29c567aab7642f1af476cc270"
+    },
+    {
+      "flags": [
+        "-O"
+      ],
+      "exit_code": 0,
+      "log": "ordinary_optimized.log",
+      "log_sha256": "1954e45457947a5ac516d94ea5947d4a8199b3e29c567aab7642f1af476cc270"
+    }
+  ],
+  "scope": "New finite kernels and conditional universal theorem only. No formalization of the asymptotic cycle theorem, the external logarithmic-form theorem, or universal certificate coverage."
+}

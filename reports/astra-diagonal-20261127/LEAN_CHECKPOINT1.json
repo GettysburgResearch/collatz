@@ -1,0 +1,103 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "Fresh compilation and public-theorem axiom inventory of the listed finite kernels. The infinite analytic, probabilistic and arithmetic arguments in the companion notes are written proposals or retained external inputs. This receipt does not prove Collatz or discharge a missing estimate.",
+  "modules": [
+    {
+      "module": "AmusicalReturn",
+      "source": "research/astra-diagonal-20261127/arithmetic/AmusicalReturn.lean",
+      "sha256": "1789937c061223f4610d128dee7321b1b59c558aaf0a159036d511f694f0f0f0",
+      "exit_code": 0,
+      "seconds": 5.712,
+      "public_theorems": [
+        "Collatz.Diagonal.Amusical.perm_back",
+        "Collatz.Diagonal.Amusical.back_perm",
+        "Collatz.Diagonal.Amusical.slow_formula",
+        "Collatz.Diagonal.Amusical.slow_pos",
+        "Collatz.Diagonal.Amusical.back_hole",
+        "Collatz.Diagonal.Amusical.reaches_trans",
+        "Collatz.Diagonal.Amusical.reaches_step",
+        "Collatz.Diagonal.Amusical.basin_step",
+        "Collatz.Diagonal.Amusical.basin_transport",
+        "Collatz.Diagonal.Amusical.accel_edges",
+        "Collatz.Diagonal.Amusical.reaches_accel",
+        "Collatz.Diagonal.Amusical.slow_basin_iff_accel_basin",
+        "Collatz.Diagonal.Amusical.follows_until_hole",
+        "Collatz.Diagonal.Amusical.first_hole_fold",
+        "Collatz.Diagonal.Amusical.halving_run",
+        "Collatz.Diagonal.Amusical.full_to_part",
+        "Collatz.Diagonal.Amusical.full_to_accel",
+        "Collatz.Diagonal.Amusical.ordinary_basin_iff"
+      ]
+    },
+    {
+      "module": "RunCofactors",
+      "source": "research/astra-diagonal-20261127/arithmetic/RunCofactors.lean",
+      "sha256": "d1592847a2ea87fe8976e950c4d05ae6dc56d762e0898a252bb179afa9d389c1",
+      "exit_code": 0,
+      "seconds": 1.905,
+      "public_theorems": [
+        "Collatz.Diagonal.RunCofactors.equal_letter",
+        "Collatz.Diagonal.RunCofactors.mixed_incoming",
+        "Collatz.Diagonal.RunCofactors.mixed_outgoing",
+        "Collatz.Diagonal.RunCofactors.matched_prefix",
+        "Collatz.Diagonal.RunCofactors.one_signed_core"
+      ]
+    },
+    {
+      "module": "CompensatedOccupation",
+      "source": "research/astra-diagonal-20261127/escape/CompensatedOccupation.lean",
+      "sha256": "2c5fb5a47bde582c4e8f6c613bc70506fcd9bdd4e3e7ecf8f510ce2d5054c28a",
+      "exit_code": 0,
+      "seconds": 1.843,
+      "public_theorems": [
+        "Collatz.Diagonal.CompensatedOccupation.released_sum",
+        "Collatz.Diagonal.CompensatedOccupation.retained_endpoint",
+        "Collatz.Diagonal.CompensatedOccupation.finite_occupation"
+      ]
+    },
+    {
+      "module": "ScaledSource",
+      "source": "research/astra-diagonal-20261127/escape/ScaledSource.lean",
+      "sha256": "abc557b5189dd40683eae6c132a106f6732085251702f3f6d831543ecd113bfc",
+      "exit_code": 0,
+      "seconds": 1.413,
+      "public_theorems": [
+        "Collatz.Diagonal.ScaledSource.scaled_step",
+        "Collatz.Diagonal.ScaledSource.scaled_iterate",
+        "Collatz.Diagonal.ScaledSource.dvd_step_iff",
+        "Collatz.Diagonal.ScaledSource.dvd_iterate_iff",
+        "Collatz.Diagonal.ScaledSource.fixed_points",
+        "Collatz.Diagonal.ScaledSource.scaled_never_reaches_one"
+      ]
+    },
+    {
+      "module": "OrdinaryHardy",
+      "source": "research/astra-diagonal-20261127/global/OrdinaryHardy.lean",
+      "sha256": "91f5955c87bf7a5b7768e111d59c61ce6bdf3d5b3116f2500442d4b12ad49b72",
+      "exit_code": 0,
+      "seconds": 1.911,
+      "public_theorems": [
+        "Collatz.Diagonal.OrdinaryHardy.compressed_of_edge_law",
+        "Collatz.Diagonal.OrdinaryHardy.edge_law_of_compressed",
+        "Collatz.Diagonal.OrdinaryHardy.edge_law_iff_compressed",
+        "Collatz.Diagonal.OrdinaryHardy.normalized_edge",
+        "Collatz.Diagonal.OrdinaryHardy.normalized_edge_strict"
+      ]
+    }
+  ],
+  "success": true,
+  "public_theorems": 37,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 37,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 13.824
+}

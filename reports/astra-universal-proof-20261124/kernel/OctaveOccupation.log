@@ -1,0 +1,6 @@
+'Collatz.OctaveOccupation.drop_balance' depends on axioms: [propext, Quot.sound]
+'Collatz.OctaveOccupation.recover_left' depends on axioms: [propext, Quot.sound]
+'Collatz.OctaveOccupation.encode_length' depends on axioms: [propext]
+'Collatz.OctaveOccupation.encode_mass' depends on axioms: [propext, Quot.sound]
+'Collatz.OctaveOccupation.encode_injective' depends on axioms: [propext, Quot.sound]
+'Collatz.OctaveOccupation.entropy_margin' does not depend on any axioms

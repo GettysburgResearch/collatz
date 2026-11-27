@@ -1,0 +1,106 @@
+{
+  "schema": "collatz-checkpoint-sources/v1",
+  "scope": "Scientific sources, written reviews, source intake and final new-module audit before the publication receipt follow-up. Excludes this manifest and later publication receipts.",
+  "files": [
+    {
+      "path": "reports/astra-prescribed-closure-20261124/HEAD_REFRESH.json",
+      "bytes": 956,
+      "sha256": "cc17cd4f1fb39783dc133efd001286cbf6ae2a41f42158154703cd5344955e83"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/PR_INTAKE.json",
+      "bytes": 70360,
+      "sha256": "ea0e65a9a414783c5b0d43cae95586127719473e63f6b4990f47876afb8cd2a0"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/ROOT_REVIEW.md",
+      "bytes": 7247,
+      "sha256": "2ffa49c9f74a3e61ea75eaac7115a4ebee17c904ddfc16c96d1fd432263c5b12"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/kernel/CHECKS.json",
+      "bytes": 7039,
+      "sha256": "5c83265677c28492ad110d058cad0cb66296d8cb789202e99f7a3dc4c3394e85"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/kernel/OrderedLanding.log",
+      "bytes": 1367,
+      "sha256": "a471286db6ef257cb2bff69c06a6acede179d7997d97c76b3fdb8004a8fb02f6"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/kernel/PatternTransfer.log",
+      "bytes": 900,
+      "sha256": "d8c9bb3422a48a269444d443b3c9196fdbdbab8cce06fc900691e332995c7783"
+    },
+    {
+      "path": "reports/astra-prescribed-closure-20261124/kernel/PrescribedReturns.log",
+      "bytes": 1179,
+      "sha256": "02b5e0bfc28765b23bd2dcab6bdf47b86b635a820546b692cd6e1876f314ad81"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/README.md",
+      "bytes": 6866,
+      "sha256": "91eff1e9be04bc0bf99820af3bc7307565a200d5722f2a6353b01b5a0e6c8ba3"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/SOURCES.json",
+      "bytes": 6054,
+      "sha256": "552a843cd2ffd49e50a100b25e3c32ae55bf278935d41b6fe49a77550093097f"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/head/FROZEN_CYLINDERS.md",
+      "bytes": 5405,
+      "sha256": "0cae02c5c510ba0127cc21146a1e0dc938f93cc4703ddd47db2aa55ddf4486f9"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/head/OrderedLanding.lean",
+      "bytes": 5864,
+      "sha256": "3c6df11b05bde8a555c5c0c8276b2cf8ab0d0003e0a67385e60e044efab53865"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/head/PRESCRIBED_RESIDUES.md",
+      "bytes": 7324,
+      "sha256": "0d5d9d0a892c8094b577ac458e833996343666bf2511992e0e98ac9c4017fd14"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/head/README.md",
+      "bytes": 13597,
+      "sha256": "78977a273b4e3dff70d602d69b0ce30c36ce235694cc108d055e7cd727f4ac1f"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/head/TERNARY_TRANSFER.md",
+      "bytes": 5929,
+      "sha256": "4f18654c93c5a1cb921a9d8bc9b96fe2d23621d9d9a7f354d52c0c2445db840f"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/orbit/LATE_PR201.md",
+      "bytes": 2797,
+      "sha256": "9c4a54bf186093c2f065e06c9aa11ed13e18954617f6bb2e9fc1d4ff06d4aaac"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/orbit/PrescribedReturns.lean",
+      "bytes": 8835,
+      "sha256": "9179e9ad4a5209e08ba11bc785394a51def7e2167287add3c475eca73f26a535"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/orbit/README.md",
+      "bytes": 8618,
+      "sha256": "54002784178312111909dc9ff26293a2ffa4703b53375cd2f11194b10baa25af"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/paired/PatternTransfer.lean",
+      "bytes": 4157,
+      "sha256": "8034f7cba01b666d4137400c0096e0df5eff65a177186df51756b26ea3eb0e7c"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/paired/README.md",
+      "bytes": 13828,
+      "sha256": "2cdc402e7f15f2a9fed9886fed9377098db9edf170e7a30cf73a135305524257"
+    },
+    {
+      "path": "research/astra-prescribed-closure-20261124/paired/REVIEW_HEAD.md",
+      "bytes": 5493,
+      "sha256": "4eac0228abd8eac2b20aaa0e4f78a5b9d20df7badb4cf534deae8bd030def55c"
+    }
+  ]
+}

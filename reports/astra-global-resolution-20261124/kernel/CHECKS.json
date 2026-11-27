@@ -1,0 +1,264 @@
+{
+  "schema": "collatz-astra-global-resolution/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "All public theorems in the four new Std-only modules; bounded exact ordinary controls. External analytic results and written infinite proofs are not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "arithmetic/CompanionPacking.lean",
+      "sha256": "32daedba1e463f9b8ce6e77f17fa418a1a5fd647bd588a67192a823bb2e120f0",
+      "audited_copy_sha256": "2baf41ec3abbe912b55eadc0cfb477e63fe274861b9a15bc43276f5d4fc833b8",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/publish/reports/astra-global-resolution-20261124/kernel/CompanionPacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.869,
+      "public_theorems": [
+        "CompanionPacking.companion_affine",
+        "CompanionPacking.bounded_past_unique",
+        "CompanionPacking.past_weight_test",
+        "CompanionPacking.repeated_trial_budget"
+      ],
+      "axioms": {
+        "CompanionPacking.companion_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CompanionPacking.bounded_past_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CompanionPacking.past_weight_test": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CompanionPacking.repeated_trial_budget": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "collision/ClockCollision.lean",
+      "sha256": "d2219f33b80acffc5e1e35849c7c7095113a77f81d8944cf1d37f48c922e7ed8",
+      "audited_copy_sha256": "168e7f2eb88b48c600f65391769c00fe0b04aae07228a2dc6164c8fabd65f5de",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/publish/reports/astra-global-resolution-20261124/kernel/ClockCollision.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.414,
+      "public_theorems": [
+        "ClockCollision.run_add",
+        "ClockCollision.trace_through_floor",
+        "ClockCollision.unique_offset",
+        "ClockCollision.disjoint_routed_blocks",
+        "ClockCollision.predecessor",
+        "ClockCollision.pushforward_bucket",
+        "ClockCollision.only_two_cycle",
+        "ClockCollision.branch_energy",
+        "ClockCollision.accumulate_flux"
+      ],
+      "axioms": {
+        "ClockCollision.run_add": [
+          "propext"
+        ],
+        "ClockCollision.trace_through_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClockCollision.unique_offset": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClockCollision.disjoint_routed_blocks": [],
+        "ClockCollision.predecessor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockCollision.pushforward_bucket": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockCollision.only_two_cycle": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockCollision.branch_energy": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClockCollision.accumulate_flux": [
+          "propext"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "rewriting/SevenReturn.lean",
+      "sha256": "baa0a598792994d2b96be5eae6952adf99a2a3bf749f061ae09abf64e18101b8",
+      "audited_copy_sha256": "ef799baf8876aad99e3b3622f5ab509875da56ac86cf2fcc87290f9d7ea4e04e",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/publish/reports/astra-global-resolution-20261124/kernel/SevenReturn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.261,
+      "public_theorems": [
+        "SevenReturn.half",
+        "SevenReturn.fourOne",
+        "SevenReturn.sixteenThree",
+        "SevenReturn.thirtyTwoEleven",
+        "SevenReturn.reverseOdd",
+        "SevenReturn.firstReturnA",
+        "SevenReturn.firstReturnB",
+        "SevenReturn.cover"
+      ],
+      "axioms": {
+        "SevenReturn.half": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.fourOne": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.sixteenThree": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.thirtyTwoEleven": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.reverseOdd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.firstReturnA": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.firstReturnB": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenReturn.cover": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "rewriting/SingleReturn.lean",
+      "sha256": "12890afd898231aa543a9818f61164c03afd903b4c7835fdaf9fb02c8e7f91f7",
+      "audited_copy_sha256": "f0e247dae35a907f38586ee589784d15c3726ae46f69c72c56e46bdfb7c7618a",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/publish/reports/astra-global-resolution-20261124/kernel/SingleReturn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 12.615,
+      "public_theorems": [
+        "SingleReturn.singleReturnCover",
+        "SingleReturn.collatzIffSingleReturn",
+        "SingleReturn.collatzIffEvenChild"
+      ],
+      "axioms": {
+        "SingleReturn.singleReturnCover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SingleReturn.collatzIffSingleReturn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SingleReturn.collatzIffEvenChild": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "1c0e340199dc79b238d419a3f2f967d7c84142af342766cb0d040de2339b94d8",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-resolution-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"bounded_companion_phases\": 1320, \"companion_stopping_codes\": 973, \"companion_ternary_codes\": 1241, \"dyadic_minimum_codes\": 2256, \"negative\": 169, \"positive\": 608, \"positive_companion_necklaces\": 200, \"ternary_minimum_codes\": 417, \"trial_steps\": 50814}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "1c0e340199dc79b238d419a3f2f967d7c84142af342766cb0d040de2339b94d8",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-resolution-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"bounded_companion_phases\": 1320, \"companion_stopping_codes\": 973, \"companion_ternary_codes\": 1241, \"dyadic_minimum_codes\": 2256, \"negative\": 169, \"positive\": 608, \"positive_companion_necklaces\": 200, \"ternary_minimum_codes\": 417, \"trial_steps\": 50814}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "rewriting/check.py",
+      "sha256": "b0e2d2b1711acf333d90e7c021e1d2581ff29c347b17dcdf550ee80fc93315c2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-resolution-20261124/rewriting/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"complete_residue_period\": 995328,\n  \"distinct_words\": 52,\n  \"largest_quotient_jump_source_ratio\": \"20970919/122875\",\n  \"largest_quotient_jump_source_witness\": {\n    \"base\": 122875,\n    \"jump_base\": 20970919,\n    \"jump_slope\": 169869312,\n    \"letter\": 26,\n    \"modulus\": 995328,\n    \"ratio_at\": \"base\"\n  },\n  \"largest_terminal_ratio\": \"118/123\",\n  \"leaves\": 291,\n  \"leaves_by_modulus\": {\n    \"32\": 31,\n    \"576\": 13,\n    \"6912\": 49,\n    \"82944\": 126,\n    \"995328\": 72\n  },\n  \"leaves_with_jump_above_source\": 156,\n  \"letters\": {\n    \"D\": 496,\n    \"S\": 189,\n    \"h\": 1019,\n    \"i\": 593,\n    \"t\": 1186\n  },\n  \"longest_word\": 38,\n  \"total_letters\": 3483,\n  \"total_quotient_jumps\": 189\n}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "rewriting/check.py",
+      "sha256": "b0e2d2b1711acf333d90e7c021e1d2581ff29c347b17dcdf550ee80fc93315c2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-global-resolution-20261124/rewriting/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"complete_residue_period\": 995328,\n  \"distinct_words\": 52,\n  \"largest_quotient_jump_source_ratio\": \"20970919/122875\",\n  \"largest_quotient_jump_source_witness\": {\n    \"base\": 122875,\n    \"jump_base\": 20970919,\n    \"jump_slope\": 169869312,\n    \"letter\": 26,\n    \"modulus\": 995328,\n    \"ratio_at\": \"base\"\n  },\n  \"largest_terminal_ratio\": \"118/123\",\n  \"leaves\": 291,\n  \"leaves_by_modulus\": {\n    \"32\": 31,\n    \"576\": 13,\n    \"6912\": 49,\n    \"82944\": 126,\n    \"995328\": 72\n  },\n  \"leaves_with_jump_above_source\": 156,\n  \"letters\": {\n    \"D\": 496,\n    \"S\": 189,\n    \"h\": 1019,\n    \"i\": 593,\n    \"t\": 1186\n  },\n  \"longest_word\": 38,\n  \"total_letters\": 3483,\n  \"total_quotient_jumps\": 189\n}\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

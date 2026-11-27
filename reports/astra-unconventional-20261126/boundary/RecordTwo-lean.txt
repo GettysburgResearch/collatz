@@ -1,0 +1,7 @@
+'Collatz.RecordTwo.one_exact' depends on axioms: [propext, Quot.sound]
+'Collatz.RecordTwo.two_one_exact' depends on axioms: [propext, Quot.sound]
+'Collatz.RecordTwo.directed_disjoint' depends on axioms: [propext, Quot.sound]
+'Collatz.RecordTwo.inverse_disjoint' depends on axioms: [propext, Quot.sound]
+'Collatz.RecordTwo.expansion' depends on axioms: [propext, Quot.sound]
+'Collatz.RecordTwo.iter_a' depends on axioms: [propext]
+'Collatz.RecordTwo.iter_b' depends on axioms: [propext]

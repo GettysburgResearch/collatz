@@ -1,0 +1,4 @@
+'TowerDeadline.no_earlier_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TowerDeadline.lift_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TowerDeadline.deadline_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TowerDeadline.cofinal_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]

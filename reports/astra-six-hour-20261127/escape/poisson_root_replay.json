@@ -1,0 +1,8 @@
+{
+  "schema": "collatz-poisson-probe-replay/v1",
+  "cases": 20,
+  "normal_and_optimized_match": true,
+  "retained_table_matches": true,
+  "sha256": "113b900425395cabc84ba793c5460a85c2220e9a12da9e4e8ae8c1c4c5ef8457",
+  "scope": "Exact integer replay of each enumerated binary source class; independent floating-point orbit and Fourier sums, with analytic truncation estimates and an empirical floating-point allowance. This is a numerical formula check, not a rigorous roundoff certificate or an asymptotic proof."
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "collatz-astra-closure/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "All public theorems in the four new Std-only modules; bounded exact ordinary controls. External analytic results and written infinite proofs are not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "arithmetic/MountainReturns.lean",
+      "sha256": "09ecd045fa5bbb51bf77754d3b99c1cf91e38539b6181d38bf41e2e99ca9f618",
+      "audited_copy_sha256": "f688fe076b91dddc666ca19121f8bb908ca23a6d0e4af4cef64ef63f663bff5e",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/closure-audit/MountainReturns.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.061,
+      "public_theorems": [
+        "MountainReturns.full_carry",
+        "MountainReturns.separated_sum_ne_zero",
+        "MountainReturns.ternary_square",
+        "MountainReturns.common_carry",
+        "MountainReturns.primitive_target",
+        "MountainReturns.exceptional_rounding"
+      ],
+      "axioms": {
+        "MountainReturns.full_carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MountainReturns.separated_sum_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MountainReturns.ternary_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MountainReturns.common_carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MountainReturns.primitive_target": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MountainReturns.exceptional_rounding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "descent/Repayment.lean",
+      "sha256": "198ab92b752bfefae439b79de0b8d05691b7382e416905fd5a5b56395b06a9f9",
+      "audited_copy_sha256": "73ce4041d0a805b31a6248bd10842248a894d329e37ae2037717aebfd085c567",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/closure-audit/Repayment.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.918,
+      "public_theorems": [
+        "Repayment.late_visitor_factor",
+        "Repayment.inverse_length_bound",
+        "Repayment.merger_source_scale",
+        "Repayment.ones_floor",
+        "Repayment.no_same_precision_repayment"
+      ],
+      "axioms": {
+        "Repayment.late_visitor_factor": [
+          "propext"
+        ],
+        "Repayment.inverse_length_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Repayment.merger_source_scale": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Repayment.ones_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Repayment.no_same_precision_repayment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "transfer/PhysicalReturn.lean",
+      "sha256": "e30fd7e01748006724854b36b09df28ead58a8ee877a96ff2f8a7c62840b6fe2",
+      "audited_copy_sha256": "61f221d2d7dc4b822d83673dfeb95bad64f5f529a023423ee55cb2ff33e9b1a4",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/closure-audit/PhysicalReturn.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.991,
+      "public_theorems": [
+        "Collatz.PhysicalReturn.affine_lift",
+        "Collatz.PhysicalReturn.unique_affine_collision",
+        "Collatz.PhysicalReturn.escaping_suffix",
+        "Collatz.PhysicalReturn.finite_bounded_root_cap",
+        "Collatz.PhysicalReturn.product_relation_count"
+      ],
+      "axioms": {
+        "Collatz.PhysicalReturn.affine_lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.PhysicalReturn.unique_affine_collision": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhysicalReturn.escaping_suffix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhysicalReturn.finite_bounded_root_cap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PhysicalReturn.product_relation_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "boundary/BarrierExit.lean",
+      "sha256": "8d6936497188e4a0d52acb3918e540f635a773bbf217cd3c9d0855f02c0ad48b",
+      "audited_copy_sha256": "a4f6804ab316e558c47bc7ee3df79ea02886ac7a0d55aafa015edb17018992e0",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/closure-audit/BarrierExit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.299,
+      "public_theorems": [
+        "Collatz.BarrierExit.ascent",
+        "Collatz.BarrierExit.three_steps",
+        "Collatz.BarrierExit.halvings"
+      ],
+      "axioms": {
+        "Collatz.BarrierExit.ascent": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.BarrierExit.three_steps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.BarrierExit.halvings": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "d4e1fe0c6fe8afbb2ebaacd843e7fe79260620c4a36f0758f9c7f333991f9eb9",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "5000 exact windows, 4571 nondegenerate high-entry tuples, 294 of them with a low terminal value\n5215 ordinary power starts checked\n4095 candidate exponents excluded by the exact rounding filter\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "arithmetic/check.py",
+      "sha256": "d4e1fe0c6fe8afbb2ebaacd843e7fe79260620c4a36f0758f9c7f333991f9eb9",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/arithmetic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "5000 exact windows, 4571 nondegenerate high-entry tuples, 294 of them with a low terminal value\n5215 ordinary power starts checked\n4095 candidate exponents excluded by the exact rounding filter\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "descent/check.py",
+      "sha256": "61265bd9afa6a51985a3dc7c4660036e9557fb76712431ed56141a06e9d31886",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"finite_law_cases\": 16, \"distinct_targets_per_case\": [39, 63, 72, 243, 45, 135, 81, 243, 396, 603, 657, 2187, 450, 1215, 729, 2187]}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "descent/check.py",
+      "sha256": "61265bd9afa6a51985a3dc7c4660036e9557fb76712431ed56141a06e9d31886",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/descent/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"finite_law_cases\": 16, \"distinct_targets_per_case\": [39, 63, 72, 243, 45, 135, 81, 243, 396, 603, 657, 2187, 450, 1215, 729, 2187]}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "transfer/controls.py",
+      "sha256": "9ac7fbd381e7d2600866db1dd585236b2f4bee9c060c4968477ca81fa5ba942a",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/transfer/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "binary head residues checked: 165726\nclock pairs uniquely recovered: 81\nequal first roots among checked pairs: 43\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "transfer/controls.py",
+      "sha256": "9ac7fbd381e7d2600866db1dd585236b2f4bee9c060c4968477ca81fa5ba942a",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-closure-20261124/transfer/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "binary head residues checked: 165726\nclock pairs uniquely recovered: 81\nequal first roots among checked pairs: 43\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,233 @@
+{
+  "schema": "collatz-astra-heavy-machinery/v1",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "All public theorems in the three new Std-only modules; bounded exact ordinary controls. External analytic results and written infinite proofs are not part of this Lean audit.",
+  "formal": [
+    {
+      "source": "ergodic/ErgodicWindow.lean",
+      "sha256": "37dfcebc4df16dc34fc687a3438105cee4646ad4ddafa403a23499691d779e5b",
+      "audited_copy_sha256": "f0f65c8041e7d7c5e5f78d606a1e8c5e10a6588d2ea68132263defed1fae24b4",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/heavy-root-audit/ErgodicWindow.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.122,
+      "public_theorems": [
+        "ErgodicWindow.rounded_edge",
+        "ErgodicWindow.exact_run_divides",
+        "ErgodicWindow.no_small_grid_run",
+        "ErgodicWindow.replay_word",
+        "ErgodicWindow.variable_denominator_divides",
+        "ErgodicWindow.no_small_variable_denominator_run"
+      ],
+      "axioms": {
+        "ErgodicWindow.rounded_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ErgodicWindow.exact_run_divides": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ErgodicWindow.no_small_grid_run": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ErgodicWindow.replay_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ErgodicWindow.variable_denominator_divides": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ErgodicWindow.no_small_variable_denominator_run": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "diophantine/MahlerCore.lean",
+      "sha256": "9c0286f79656b4182b53862f7c573e7eab8c51bff932cfe729eebc697ca836de",
+      "audited_copy_sha256": "5b438c4e6db09890df3465f86861fe67d8c5a6c0728101c97b137a6db124deb1",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/heavy-root-audit/MahlerCore.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.545,
+      "public_theorems": [
+        "WeightedOddClock.weighted_step",
+        "WeightedOddClock.normalized_block_defect",
+        "WeightedOddClock.inverse_ones_step"
+      ],
+      "axioms": {
+        "WeightedOddClock.weighted_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "WeightedOddClock.normalized_block_defect": [
+          "propext",
+          "Quot.sound"
+        ],
+        "WeightedOddClock.inverse_ones_step": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    },
+    {
+      "source": "dynamics/KernelTransfer.lean",
+      "sha256": "d2ed9ca61927ea4c14d2cb033f29924558e6eff08eb0b69b2b45bb44f2fd51cb",
+      "audited_copy_sha256": "3df3b5b4d56f66aeb46c2a09c28ce457118b44aa019f2d4dff198464b2b2be5a",
+      "command": [
+        "/workspace/scratch/cf806951b2d5/runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/workspace/scratch/cf806951b2d5/heavy-root-audit/KernelTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.702,
+      "public_theorems": [
+        "Collatz.KernelTransfer.inverse_digit",
+        "Collatz.KernelTransfer.ternary_row"
+      ],
+      "axioms": {
+        "Collatz.KernelTransfer.inverse_digit": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.KernelTransfer.ternary_row": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_and_audit_stable": true,
+      "success": true
+    }
+  ],
+  "finite_controls": [
+    {
+      "source": "ergodic/check.py",
+      "sha256": "a7f4a26565544207686f03f4f6378bae24ae7e3bcd3bd78c7c0c50f685af37e8",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/ergodic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "9009 physical E2 replays passed; largest witness has 4433 bits\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "ergodic/check.py",
+      "sha256": "a7f4a26565544207686f03f4f6378bae24ae7e3bcd3bd78c7c0c50f685af37e8",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/ergodic/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "9009 physical E2 replays passed; largest witness has 4433 bits\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "diophantine/check.py",
+      "sha256": "ca4840f3c2c4f277af7984f5feb672ef7d72e3a30748d77dde38a43864ff9e18",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/diophantine/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "250 rational starts x 40 steps, 1364 full cycle words, 7 explicit convergent sources, 100 dyadic and 372 mixed rows passed\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "diophantine/check.py",
+      "sha256": "ca4840f3c2c4f277af7984f5feb672ef7d72e3a30748d77dde38a43864ff9e18",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/diophantine/check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "250 rational starts x 40 steps, 1364 full cycle words, 7 explicit convergent sources, 100 dyadic and 372 mixed rows passed\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "diophantine/mixed_check.py",
+      "sha256": "ca788b182ca88330d2b4a32a8c29e9308f28e6e70002789b1b67dd1dfc85c003",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/diophantine/mixed_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "260 positive witnesses separate one time/source translate from five competitors\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "diophantine/mixed_check.py",
+      "sha256": "ca788b182ca88330d2b4a32a8c29e9308f28e6e70002789b1b67dd1dfc85c003",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/diophantine/mixed_check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "260 positive witnesses separate one time/source translate from five competitors\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "dynamics/controls.py",
+      "sha256": "7b05a1c9998d79a5d61fcd00a5e04ce313b9ee4a87e92980cd58c7c511046a99",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/dynamics/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "ternary-unit rows verified through depth 7: 2186\nfinite true hits exceeding the cutoff by target: {1: 3313, 5: 2575}\n",
+      "stderr": "",
+      "source_stable": true
+    },
+    {
+      "source": "dynamics/controls.py",
+      "sha256": "7b05a1c9998d79a5d61fcd00a5e04ce313b9ee4a87e92980cd58c7c511046a99",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/scratch/cf806951b2d5/publish/research/astra-heavy-machinery-20261124/dynamics/controls.py"
+      ],
+      "exit_code": 0,
+      "stdout": "ternary-unit rows verified through depth 7: 2186\nfinite true hits exceeding the cutoff by target: {1: 3313, 5: 2575}\n",
+      "stderr": "",
+      "source_stable": true
+    }
+  ],
+  "success": true
+}

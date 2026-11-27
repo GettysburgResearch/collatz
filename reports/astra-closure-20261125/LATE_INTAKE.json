@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-late-intake/v1",
+  "session_date": "2026-11-25",
+  "scope": "Late refreshed heads read after the initial 168-PR inventory. This is source inspection and mathematical reconstruction, not a replay of upstream Lean.",
+  "heads": [
+    {
+      "pr": 192,
+      "head": "07d494324c7ea440d45845d725f5cebad8a67124",
+      "title": "Collatz: certificate transport, cycle bounds and escape rigidity",
+      "html_url": "https://github.com/GettysburgResearch/collatz/pull/192",
+      "updated_at": "2026-11-25T16:55:12Z"
+    },
+    {
+      "pr": 206,
+      "head": "45a6a111321f947a8482c9e96e898435b57cee09",
+      "title": "A forward-clock criterion and an executable nontrivial-cycle test in Lean",
+      "html_url": "https://github.com/GettysburgResearch/collatz/pull/206",
+      "updated_at": "2026-11-25T16:55:52Z"
+    }
+  ],
+  "findings": {
+    "192": "New rational-model and scalar Mahler equivalences for one fixed orbit; neither representation is supplied for every ordinary source. The Fourier basin criterion in this packet uses a different index.",
+    "206": "New bounded-clock, cycle-test, window capture and tower recurrence equivalences; simultaneous finite tower mergers are established, but the full recurrence/capture premises remain open."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "collatz-astra-closure-finite/v1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Only the new finite exact controls, not universal Collatz verification or the asymptotic theorems.",
+  "runs": [
+    {
+      "source": "research/astra-closure-20261125/escape/check_rows.py",
+      "sha256": "21c07339fba042bd855666a8ebadb95336032d953eb292f0ed84472fe94cdb71",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-closure-20261125/escape/check_rows.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.278,
+      "stdout": "63 complete ordinary-row and fixed-prefix comparisons passed\nrho=0.946504577 kappa=0.073005443\nn=8 H=13 log2(normalized ratio)=1.85070\nn=32 H=51 log2(normalized ratio)=2.94663\nn=128 H=204 log2(normalized ratio)=3.58861\nn=512 H=813 log2(normalized ratio)=3.84061\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/escape/check_rows.py",
+      "sha256": "21c07339fba042bd855666a8ebadb95336032d953eb292f0ed84472fe94cdb71",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-closure-20261125/escape/check_rows.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.277,
+      "stdout": "63 complete ordinary-row and fixed-prefix comparisons passed\nrho=0.946504577 kappa=0.073005443\nn=8 H=13 log2(normalized ratio)=1.85070\nn=32 H=51 log2(normalized ratio)=2.94663\nn=128 H=204 log2(normalized ratio)=3.58861\nn=512 H=813 log2(normalized ratio)=3.84061\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check.py",
+      "sha256": "92273fc3248a1e89f0d0b85284df5c21af23d4131e0401ff8c5e47cd555bc8fe",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-closure-20261125/cycles/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.092,
+      "stdout": "Synthetic single-digit targets reached: 300\nPhysical p=306, h=485, full tested factor=929, remaining denominator bits=466, minimum shift mismatches=20.\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check.py",
+      "sha256": "92273fc3248a1e89f0d0b85284df5c21af23d4131e0401ff8c5e47cd555bc8fe",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-closure-20261125/cycles/check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.147,
+      "stdout": "Synthetic single-digit targets reached: 300\nPhysical p=306, h=485, full tested factor=929, remaining denominator bits=466, minimum shift mismatches=20.\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check_joint.py",
+      "sha256": "8c033ded1c58a16571260acb9cb9a8aa400cba998601025267147235d2d6c495",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-closure-20261125/cycles/check_joint.py"
+      ],
+      "exit_code": 0,
+      "seconds": 18.476,
+      "stdout": "Depth 17: 3168 generic interval-pattern pairs, margin 8/5, strict anchor slack 4/3, 12 matched boundary totals.\nBoundary totals (terminal time, extra ternary digit, depth, total, ancestor intercept):\n5 1 5 7 1\n6 1 6 9 1\n7 1 7 11 1\n8 1 8 12 1\n9 1 9 14 1\n10 1 10 15 1\n11 1 11 17 1\n12 1 12 19 1\n13 1 13 20 1\n14 1 14 22 1\n15 1 15 23 1\n16 1 16 25 1\nJoint physical p=306, h=485, canceled factor 929, reduced denominator bits 466, 12 matched finite-height boundary cases.\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check_joint.py",
+      "sha256": "8c033ded1c58a16571260acb9cb9a8aa400cba998601025267147235d2d6c495",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-closure-20261125/cycles/check_joint.py"
+      ],
+      "exit_code": 0,
+      "seconds": 18.671,
+      "stdout": "Depth 17: 3168 generic interval-pattern pairs, margin 8/5, strict anchor slack 4/3, 12 matched boundary totals.\nBoundary totals (terminal time, extra ternary digit, depth, total, ancestor intercept):\n5 1 5 7 1\n6 1 6 9 1\n7 1 7 11 1\n8 1 8 12 1\n9 1 9 14 1\n10 1 10 15 1\n11 1 11 17 1\n12 1 12 19 1\n13 1 13 20 1\n14 1 14 22 1\n15 1 15 23 1\n16 1 16 25 1\nJoint physical p=306, h=485, canceled factor 929, reduced denominator bits 466, 12 matched finite-height boundary cases.\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check_basin.py",
+      "sha256": "d30517ee44653a1bbccb68f8b69eaedb65f3348bb1c114f666376bee2e360247",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "research/astra-closure-20261125/cycles/check_basin.py"
+      ],
+      "exit_code": 0,
+      "seconds": 31.553,
+      "stdout": "K=17, H=90, 112 phase intervals, minimum capped count=411782264189298, cube-root threshold=205891132094649\n",
+      "stderr": ""
+    },
+    {
+      "source": "research/astra-closure-20261125/cycles/check_basin.py",
+      "sha256": "d30517ee44653a1bbccb68f8b69eaedb65f3348bb1c114f666376bee2e360247",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "research/astra-closure-20261125/cycles/check_basin.py"
+      ],
+      "exit_code": 0,
+      "seconds": 29.161,
+      "stdout": "K=17, H=90, 112 phase intervals, minimum capped count=411782264189298, cube-root threshold=205891132094649\n",
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_stdout_identical": true,
+  "seconds": 50.401,
+  "success": true
+}

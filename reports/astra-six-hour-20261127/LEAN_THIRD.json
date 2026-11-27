@@ -1,0 +1,272 @@
+{
+  "schema": "collatz-astra-six-hour-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "All 13 packet modules, with fresh project objects and pinned Mathlib dependencies. The absent cached Mathlib.Tactic.Field object is built from the pinned source in a temporary overlay. This checks finite word, modular, Farey, sibling, orbit transport, representative-window kernels, conditional finite-crossing/countability, cycle surgery, Green arithmetic, and the conditional implication from an explicit rational finite-sum bound to ordinary Collatz convergence. No witness for that bound or for the positive bounded potential is supplied. The divisor counting, interval-complexity estimates, inverse-path laws, analytic singularity and local-mass inputs, closed-support measure-zero application, harmonic trace asymptotics, character analysis, birth-current limits, Green integrals and ordinary upper bounds, and other infinite analytic arguments are written proofs and retained inputs, not formalized by this build.",
+  "modules": [
+    {
+      "module": "MinimumCode",
+      "source": "research/astra-six-hour-20261127/arithmetic/MinimumCode.lean",
+      "new": true,
+      "sha256": "b9691a79f155907e849d789371ed0e3b15662b79dccdb796d187fc857a558d19",
+      "exit_code": 0,
+      "seconds": 1.706,
+      "public_theorems": [
+        "Collatz.SixHour.MinimumCode.trace_affine",
+        "Collatz.SixHour.MinimumCode.suffix_fits_at_minimum",
+        "Collatz.SixHour.MinimumCode.minimum_carry_cap",
+        "Collatz.SixHour.MinimumCode.minimum_numerator_cap",
+        "Collatz.SixHour.MinimumCode.same_prefix_same_residue",
+        "Collatz.SixHour.MinimumCode.decode_bounded_prefix"
+      ]
+    },
+    {
+      "module": "PeriodicSiblings",
+      "source": "research/astra-six-hour-20261127/arithmetic/PeriodicSiblings.lean",
+      "new": true,
+      "sha256": "c5661a95879ec45cbc6324582eb9a138cf1ab92ca9b17d4955a0a7becc5916c0",
+      "exit_code": 0,
+      "seconds": 1.642,
+      "public_theorems": [
+        "Collatz.SixHour.PeriodicSiblings.sibling_properties",
+        "Collatz.SixHour.PeriodicSiblings.sibling_next",
+        "Collatz.SixHour.PeriodicSiblings.sibling_is_transient",
+        "Collatz.SixHour.PeriodicSiblings.entry_branches_unique",
+        "Collatz.SixHour.PeriodicSiblings.sibling_basins_disjoint",
+        "Collatz.SixHour.PeriodicSiblings.sibling_transfer_floor",
+        "Collatz.SixHour.PeriodicSiblings.iterated_transfer_floor"
+      ]
+    },
+    {
+      "module": "ColorWords",
+      "source": "research/astra-six-hour-20261127/arithmetic/ColorWords.lean",
+      "new": true,
+      "sha256": "b86516afb0508f254d8835a2b6d846f025b289211409104a7c945ba35185a566",
+      "exit_code": 0,
+      "seconds": 1.283,
+      "public_theorems": [
+        "Collatz.SixHour.ColorWords.bit_lift",
+        "Collatz.SixHour.ColorWords.step_lift",
+        "Collatz.SixHour.ColorWords.endpoint_grade_lift",
+        "Collatz.SixHour.ColorWords.labelled_lift_iff",
+        "Collatz.SixHour.ColorWords.color_endpoint",
+        "Collatz.SixHour.ColorWords.block_factor"
+      ]
+    },
+    {
+      "module": "FareyCurrent",
+      "source": "research/astra-six-hour-20261127/global/FareyCurrent.lean",
+      "new": true,
+      "sha256": "e6679a40c1ce995d2714e4eb84a1a91f40785957bc047b650ae49b7e70f21016",
+      "exit_code": 0,
+      "seconds": 1.474,
+      "public_theorems": [
+        "Collatz.SixHour.Farey.inverse_first",
+        "Collatz.SixHour.Farey.inverse_second",
+        "Collatz.SixHour.Farey.forward_first",
+        "Collatz.SixHour.Farey.forward_second",
+        "Collatz.SixHour.Farey.no_point_before_source",
+        "Collatz.SixHour.Farey.point_at_source_unique",
+        "Collatz.SixHour.Farey.point_at_source",
+        "Collatz.SixHour.Farey.arc_identity",
+        "Collatz.SixHour.Farey.arc_square_bound"
+      ]
+    },
+    {
+      "module": "EllipticMarkers",
+      "source": "research/astra-six-hour-20261127/global/EllipticMarkers.lean",
+      "new": true,
+      "sha256": "4a5cedb92b896ab05fbe2d6998a8f2c4d0a2c0b32a762ff63cc49aa9dd6a82dc",
+      "exit_code": 0,
+      "seconds": 1.509,
+      "public_theorems": [
+        "Collatz.SixHour.Markers.primitive_column",
+        "Collatz.SixHour.Markers.integral_marker_iff",
+        "Collatz.SixHour.Markers.two_even_cuts",
+        "Collatz.SixHour.Markers.two_traces",
+        "Collatz.SixHour.Markers.trace_alignment"
+      ]
+    },
+    {
+      "module": "FormalTransport",
+      "source": "research/astra-six-hour-20261127/root/FormalTransport.lean",
+      "new": true,
+      "sha256": "635dde5062a95b08b47a45ccda6ed77d23da401c34b35c3b5b3d280c965d2f0b",
+      "exit_code": 0,
+      "seconds": 2.147,
+      "public_theorems": [
+        "Collatz.SixHour.FormalTransport.core_double",
+        "Collatz.SixHour.FormalTransport.core_power_two",
+        "Collatz.SixHour.FormalTransport.core_odd",
+        "Collatz.SixHour.FormalTransport.edge_odd_step",
+        "Collatz.SixHour.FormalTransport.trace_root_pos",
+        "Collatz.SixHour.FormalTransport.trace_source_pos",
+        "Collatz.SixHour.FormalTransport.trace_source_odd",
+        "Collatz.SixHour.FormalTransport.trace_actual_iterate",
+        "Collatz.SixHour.FormalTransport.scale_pos",
+        "Collatz.SixHour.FormalTransport.offset_nonneg",
+        "Collatz.SixHour.FormalTransport.offset_pos",
+        "Collatz.SixHour.FormalTransport.trace_affine",
+        "Collatz.SixHour.FormalTransport.offset_lt_root",
+        "Collatz.SixHour.FormalTransport.trace_complement",
+        "Collatz.SixHour.FormalTransport.exact_mark_transport",
+        "Collatz.SixHour.FormalTransport.mark_pos_iff",
+        "Collatz.SixHour.FormalTransport.mark_neg_iff",
+        "Collatz.SixHour.FormalTransport.return_scale_lt_one"
+      ]
+    },
+    {
+      "module": "TernaryQuotient",
+      "source": "research/astra-six-hour-20261127/arithmetic/TernaryQuotient.lean",
+      "new": true,
+      "sha256": "a250270083e63eeabdd39ad90ae65c739e205be33ac0663a4532daba7efc5b6e",
+      "exit_code": 0,
+      "seconds": 1.833,
+      "public_theorems": [
+        "Collatz.SixHour.TernaryQuotient.exact_quotient",
+        "Collatz.SixHour.TernaryQuotient.centered_edge",
+        "Collatz.SixHour.TernaryQuotient.centered_below_floor",
+        "Collatz.SixHour.TernaryQuotient.switch_odd",
+        "Collatz.SixHour.TernaryQuotient.homogeneous_run",
+        "Collatz.SixHour.TernaryQuotient.switch_run"
+      ]
+    },
+    {
+      "module": "CanonicalBirths",
+      "source": "research/astra-six-hour-20261127/global/CanonicalBirths.lean",
+      "new": true,
+      "sha256": "68f5c33238b163a9cdcf93599bd647b32f8433b540718b9354475fb274f57e18",
+      "exit_code": 0,
+      "seconds": 1.375,
+      "public_theorems": [
+        "CanonicalBirths.bit_shift",
+        "CanonicalBirths.step_shift",
+        "CanonicalBirths.translate",
+        "CanonicalBirths.step_sign",
+        "CanonicalBirths.endpoint_sign",
+        "CanonicalBirths.same_threshold",
+        "CanonicalBirths.same_strict_threshold",
+        "CanonicalBirths.same_quotient",
+        "CanonicalBirths.row_window"
+      ]
+    },
+    {
+      "module": "ClosedSupport",
+      "source": "research/astra-six-hour-20261127/root/ClosedSupport.lean",
+      "new": true,
+      "sha256": "6e659acac5636b77b305b8811af640cbda2187b73069780db51e4fd78bcb2ec3",
+      "exit_code": 0,
+      "seconds": 1.383,
+      "public_theorems": [
+        "Collatz.SixHour.ClosedSupport.finite_crossings_of_vanishing_mass",
+        "Collatz.SixHour.ClosedSupport.exists_crossing",
+        "Collatz.SixHour.ClosedSupport.finite_crossing_gap",
+        "Collatz.SixHour.ClosedSupport.closure_gap",
+        "Collatz.SixHour.ClosedSupport.finite_crossing_isolated_left",
+        "Collatz.SixHour.ClosedSupport.closed_range_countable_outside",
+        "Collatz.SixHour.ClosedSupport.closed_range_of_singular_current"
+      ]
+    },
+    {
+      "module": "CycleSurgery",
+      "source": "research/astra-six-hour-20261127/arithmetic/CycleSurgery.lean",
+      "new": true,
+      "sha256": "d4181fab4f2da4a17fde4201906b30b49fd29e0e56e7e0fe7a035c40ccc451b8",
+      "exit_code": 0,
+      "seconds": 1.286,
+      "public_theorems": [
+        "Collatz.SixHour.CycleSurgery.eliminated_suffix",
+        "Collatz.SixHour.CycleSurgery.all_multiples",
+        "Collatz.SixHour.CycleSurgery.delete_initial_odd"
+      ]
+    },
+    {
+      "module": "TiltedGreen",
+      "source": "research/astra-six-hour-20261127/global/TiltedGreen.lean",
+      "new": true,
+      "sha256": "c778d1b8f36f9f3c03737eafeeefcde53b0ddf8f5c8da9dace0eb0ec80dbfae1",
+      "exit_code": 0,
+      "seconds": 1.395,
+      "public_theorems": [
+        "Collatz.SixHour.TiltedGreen.cycle_weight_floor",
+        "Collatz.SixHour.TiltedGreen.certain_cycle_weight",
+        "Collatz.SixHour.TiltedGreen.haar_ratio_squared_control",
+        "Collatz.SixHour.TiltedGreen.affine_ghost_exit",
+        "Collatz.SixHour.TiltedGreen.one_steps",
+        "Collatz.SixHour.TiltedGreen.dense_family_formula",
+        "Collatz.SixHour.TiltedGreen.ghost_numerator_odd",
+        "Collatz.SixHour.TiltedGreen.negative_shadow_cost"
+      ]
+    },
+    {
+      "module": "PotentialAssembly",
+      "source": "research/astra-six-hour-20261127/root/PotentialAssembly.lean",
+      "new": true,
+      "sha256": "5128113babff8767b875bda6418a01c37031a2974bf27dfe4d4cdac7950a1266",
+      "exit_code": 0,
+      "seconds": 1.719,
+      "public_theorems": [
+        "Collatz.SixHour.PotentialAssembly.reaches_trans",
+        "Collatz.SixHour.PotentialAssembly.full_even",
+        "Collatz.SixHour.PotentialAssembly.halving_run",
+        "Collatz.SixHour.PotentialAssembly.reaches_oddPart",
+        "Collatz.SixHour.PotentialAssembly.oddPart_positive",
+        "Collatz.SixHour.PotentialAssembly.oddPart_odd",
+        "Collatz.SixHour.PotentialAssembly.syr_positive",
+        "Collatz.SixHour.PotentialAssembly.syr_odd",
+        "Collatz.SixHour.PotentialAssembly.reaches_syr",
+        "Collatz.SixHour.PotentialAssembly.reaches_syr_iterate",
+        "Collatz.SixHour.PotentialAssembly.small_odds_reach_one",
+        "Collatz.SixHour.PotentialAssembly.high_edge_margin",
+        "Collatz.SixHour.PotentialAssembly.bounded_growth_not_infinite",
+        "Collatz.SixHour.PotentialAssembly.potential_reaches_small",
+        "Collatz.SixHour.PotentialAssembly.ordinary_potential_implies_collatz"
+      ]
+    },
+    {
+      "module": "RationalGreen",
+      "source": "research/astra-six-hour-20261127/root/RationalGreen.lean",
+      "new": true,
+      "sha256": "7f69ed73b083f3263543fef939ca4690a9599f486250a565d7e10930642d1248",
+      "exit_code": 0,
+      "seconds": 2.651,
+      "public_theorems": [
+        "Collatz.SixHour.RationalGreen.exact_mean",
+        "Collatz.SixHour.RationalGreen.exact_integral_value",
+        "Collatz.SixHour.RationalGreen.coefficient_positive",
+        "Collatz.SixHour.RationalGreen.coefficient_scaled",
+        "Collatz.SixHour.RationalGreen.coefficient_dominates",
+        "Collatz.SixHour.RationalGreen.gap_positive",
+        "Collatz.SixHour.RationalGreen.actual_edge",
+        "Collatz.SixHour.RationalGreen.pathWeight_positive",
+        "Collatz.SixHour.RationalGreen.pathWeight_succ_last",
+        "Collatz.SixHour.RationalGreen.normalized_edge",
+        "Collatz.SixHour.RationalGreen.path_in_finiteGreen",
+        "Collatz.SixHour.RationalGreen.bounded_path_reaches_small",
+        "Collatz.SixHour.RationalGreen.finite_green_bound_implies_collatz"
+      ]
+    }
+  ],
+  "success": true,
+  "rebuilt_dependencies": [
+    {
+      "module": "Mathlib.Tactic.Field",
+      "source_sha256": "cda593bd3101d7b59b6242e65a8b9966fdb34af1221c91dde5bf9080de2c1978",
+      "exit_code": 0,
+      "source_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    }
+  ],
+  "new_public_theorems": 112,
+  "imported_public_theorems": 0,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 112,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 23.849
+}

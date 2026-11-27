@@ -1,0 +1,5 @@
+'Collatz.BoundaryKernel.Edge.retention' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryKernel.retention_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryKernel.address_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryKernel.address_injective_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryKernel.square_atom_weight' depends on axioms: [propext, Classical.choice, Quot.sound]

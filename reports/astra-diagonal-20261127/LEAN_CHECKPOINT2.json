@@ -1,0 +1,105 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "Fresh compilation and public-theorem axiom inventory of the listed finite kernels. The infinite analytic, probabilistic and arithmetic arguments in the companion notes are written proposals or retained external inputs. This receipt does not prove Collatz or discharge a missing estimate.",
+  "modules": [
+    {
+      "module": "PinnedRivals",
+      "source": "research/astra-diagonal-20261127/arithmetic/PinnedRivals.lean",
+      "sha256": "bdbc2762deda13a311268acc0799bd2c3b7bfc62123664be9a90920f48c6255e",
+      "exit_code": 0,
+      "seconds": 8.068,
+      "public_theorems": [
+        "Collatz.Diagonal.PinnedRivals.transport",
+        "Collatz.Diagonal.PinnedRivals.actual_parent",
+        "Collatz.Diagonal.PinnedRivals.triple_test",
+        "Collatz.Diagonal.PinnedRivals.empty_under_triple_floor",
+        "Collatz.Diagonal.PinnedRivals.replay_sound",
+        "Collatz.Diagonal.PinnedRivals.upper_neighbor_cylinder",
+        "Collatz.Diagonal.PinnedRivals.shift_four_cylinder",
+        "Collatz.Diagonal.PinnedRivals.one_eighth_cylinder"
+      ]
+    },
+    {
+      "module": "OrdinaryCurrent",
+      "source": "research/astra-diagonal-20261127/escape/OrdinaryCurrent.lean",
+      "sha256": "1bf9de9868df12a12099ad6a22e3fe2afe31061ecdca75f9d3709f568bc6dfaa",
+      "exit_code": 0,
+      "seconds": 6.091,
+      "public_theorems": [
+        "Collatz.Diagonal.OrdinaryCurrent.harmonic_succ",
+        "Collatz.Diagonal.OrdinaryCurrent.odd_harmonic",
+        "Collatz.Diagonal.OrdinaryCurrent.odd_edge_identity",
+        "Collatz.Diagonal.OrdinaryCurrent.finite_current"
+      ]
+    },
+    {
+      "module": "CriticalSibling",
+      "source": "research/astra-diagonal-20261127/global/CriticalSibling.lean",
+      "sha256": "54fbfcdfb4ea2d0939d23971af9f6833e8a961419428b1be00ffeca2a8d51afa",
+      "exit_code": 0,
+      "seconds": 2.312,
+      "public_theorems": [
+        "Collatz.Diagonal.CriticalSibling.sibling_unit",
+        "Collatz.Diagonal.CriticalSibling.sibling_gt",
+        "Collatz.Diagonal.CriticalSibling.sibling_step",
+        "Collatz.Diagonal.CriticalSibling.row_side_step",
+        "Collatz.Diagonal.CriticalSibling.side_budget",
+        "Collatz.Diagonal.CriticalSibling.side_budget_total"
+      ]
+    },
+    {
+      "module": "MovingScenery",
+      "source": "research/astra-diagonal-20261127/global/MovingScenery.lean",
+      "sha256": "072a65264d4e76713e300881136d9f9aeb13bef1fbd7c18552a89385fa724a1f",
+      "exit_code": 0,
+      "seconds": 2.088,
+      "public_theorems": [
+        "Collatz.Diagonal.MovingScenery.affine_section",
+        "Collatz.Diagonal.MovingScenery.path_affine",
+        "Collatz.Diagonal.MovingScenery.path_centered",
+        "Collatz.Diagonal.MovingScenery.lift_path",
+        "Collatz.Diagonal.MovingScenery.all_ones",
+        "Collatz.Diagonal.MovingScenery.path_lyapunov"
+      ]
+    },
+    {
+      "module": "InvariantCone",
+      "source": "research/astra-diagonal-20261127/operator/InvariantCone.lean",
+      "sha256": "6d25d1680b1bb3ab41720d810350f5a13bf019a034c01209f7677e7d8457d482",
+      "exit_code": 0,
+      "seconds": 2.164,
+      "public_theorems": [
+        "CollatzInvariantCone.zero_mass",
+        "CollatzInvariantCone.unique_of_uniform_minorization",
+        "CollatzInvariantCone.normalized_unique"
+      ]
+    },
+    {
+      "module": "ReciprocalGrowth",
+      "source": "research/astra-diagonal-20261127/operator/ReciprocalGrowth.lean",
+      "sha256": "791655ff495d3f44d7c6b71f4f5f92334da6e6601db9e7c6fc90e0d9abe9ac39",
+      "exit_code": 0,
+      "seconds": 2.324,
+      "public_theorems": [
+        "CollatzReciprocalGrowth.reciprocal_decrease",
+        "CollatzReciprocalGrowth.reciprocal_horizon",
+        "CollatzReciprocalGrowth.quadratic_gain_lifespan"
+      ]
+    }
+  ],
+  "success": true,
+  "public_theorems": 30,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 30,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 24.827
+}

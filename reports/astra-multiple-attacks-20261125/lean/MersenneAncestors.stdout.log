@@ -1,0 +1,4 @@
+'MersenneAncestors.threshold' depends on axioms: [propext, Quot.sound]
+'MersenneAncestors.staircase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MersenneAncestors.excess_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MersenneAncestors.bounded_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,15 @@
+research/astra-closure-20261125/FinalProposal.lean:85:34: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+research/astra-closure-20261125/FinalProposal.lean:74:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'FinalProposal.collatz_of_source_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.source_closure_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.final_lean_proposal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalProposal.exclude_nineteen_residue' does not depend on any axioms
+'FinalProposal.no_uniform_tower_deadline' depends on axioms: [propext, Classical.choice, Quot.sound]

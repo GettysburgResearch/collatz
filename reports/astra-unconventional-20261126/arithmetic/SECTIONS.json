@@ -1,0 +1,68 @@
+{
+  "ordinary_coordinates": {
+    "odd_starts": 50000,
+    "largest_exponent": 18
+  },
+  "signed_section_expansions": [
+    {
+      "ceiling": 2,
+      "depth": 5,
+      "comparisons": 1944,
+      "largest_leaf_count": 1
+    },
+    {
+      "ceiling": 5,
+      "depth": 4,
+      "comparisons": 1620,
+      "largest_leaf_count": 18
+    },
+    {
+      "ceiling": 8,
+      "depth": 4,
+      "comparisons": 2592,
+      "largest_leaf_count": 88
+    }
+  ],
+  "affine_shadow_words": [
+    {
+      "word_length": 12,
+      "contractions": 7,
+      "expansions": 5,
+      "input": 999425,
+      "minimum": 133408,
+      "output": 1013067,
+      "cleared_carry": 3449871,
+      "denominator": 524288
+    },
+    {
+      "word_length": 24,
+      "contractions": 14,
+      "expansions": 10,
+      "input": 358361333761,
+      "minimum": 6385263616,
+      "output": 368206475841,
+      "cleared_carry": 15568415704863,
+      "denominator": 274877906944
+    },
+    {
+      "word_length": 48,
+      "contractions": 28,
+      "expansions": 20,
+      "input": 129979145450277283299329,
+      "minimum": 41265684396485115904,
+      "output": 137218994760754968035454,
+      "cleared_carry": 251169528421960857097062975,
+      "denominator": 75557863725914323419136
+    },
+    {
+      "word_length": 96,
+      "contractions": 56,
+      "expansions": 40,
+      "input": 8281939507797037548807231214457559160226578433,
+      "minimum": 834762255774496212758888667538058641408,
+      "output": 9230243671076130261395840756745560198849432733,
+      "cleared_carry": 63126201807493233306554194028690605557287234440168575,
+      "denominator": 5708990770823839524233143877797980545530986496
+    }
+  ]
+}

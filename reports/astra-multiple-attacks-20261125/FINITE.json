@@ -1,0 +1,91 @@
+{
+  "schema": "collatz-astra-multiple-attacks-finite/v1",
+  "scope": "Only the two new explicit finite controls; not a test of universal convergence or the Subspace Theorem.",
+  "success": true,
+  "checks": [
+    {
+      "path": "research/astra-multiple-attacks-20261125/arithmetic/check.py",
+      "sha256": "70f7e6f7ee876c43de1eec0923b387358c742cf726a2f7946eb55565eca3e06e",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "seconds": 1.79,
+      "result": {
+        "ordinary_pairs": 2560,
+        "rotation": [
+          {
+            "symbol_shift": 5,
+            "native_shift": 49,
+            "charged_native_length": 20
+          },
+          {
+            "symbol_shift": 29,
+            "native_shift": 285,
+            "charged_native_length": 20
+          },
+          {
+            "symbol_shift": 169,
+            "native_shift": 1661,
+            "charged_native_length": 20
+          },
+          {
+            "symbol_shift": 985,
+            "native_shift": 9681,
+            "charged_native_length": 20
+          }
+        ]
+      }
+    },
+    {
+      "path": "research/astra-multiple-attacks-20261125/descent/check_shadows.py",
+      "sha256": "43b1d80c55f68a153e547dea6fd85ed7542c3d97cd693868158ac47495669dcd",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "seconds": 1.096,
+      "result": {
+        "finite_unrestricted_endpoint_check": {
+          "D": 8,
+          "seed_count_including_zero": 6561,
+          "ratio_ceiling": 13122,
+          "maximum_odd_grade": 100,
+          "maximizing_seed_clock_endpoint": [
+            6171,
+            172,
+            2
+          ],
+          "positive_seed_clock_pairs_checked": 454255
+        },
+        "later_certificates": [
+          {
+            "h": 2,
+            "m": 6,
+            "upper_source_bits": 6,
+            "four_odd_partner_grade_when_applicable": null,
+            "smaller_triple_bits": 5,
+            "upper_grade": 6,
+            "smaller_grade": 8
+          },
+          {
+            "h": 4,
+            "m": 54,
+            "upper_source_bits": 54,
+            "four_odd_partner_grade_when_applicable": null,
+            "smaller_triple_bits": 52,
+            "upper_grade": 54,
+            "smaller_grade": 58
+          },
+          {
+            "h": 6,
+            "m": 486,
+            "upper_source_bits": 486,
+            "four_odd_partner_grade_when_applicable": 490,
+            "smaller_triple_bits": 483,
+            "upper_grade": 486,
+            "smaller_grade": 492
+          }
+        ]
+      }
+    }
+  ]
+}

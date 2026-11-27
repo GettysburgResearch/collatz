@@ -1,0 +1,86 @@
+{
+  "schema": "collatz-source-hashes/v1",
+  "scope": "All research files in this new packet; source hashes are not a mathematical verdict.",
+  "files": [
+    {
+      "path": "research/astra-deep-closure-20261124/README.md",
+      "bytes": 8688,
+      "sha256": "e520257d03e235241e7a51b4f04b8241713df1f7a4a48c6c3c7db7fd329d1bf7"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/SOURCES.json",
+      "bytes": 9466,
+      "sha256": "d583b4dc7d7f1d674bd7bce63fb439969ec40b490c3a49f93b3287401a308775"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/GLOBAL_ORDERING.md",
+      "bytes": 3367,
+      "sha256": "2df169cbcf74f8d44ea215c9be95616d4e0312dd705132129c34422cab577b6a"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/HEADS.md",
+      "bytes": 3865,
+      "sha256": "bbb57a1e462f310b718ce10fa0be7ff5117bead69e9f1b66aaa4dd8241ae6cb3"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/README.md",
+      "bytes": 13205,
+      "sha256": "37b7fd54c1b81ddfc608dc653d7955afc102e0847e3f17f59e2741b6d51fa7ec"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/REVIEW_PRESSURE.md",
+      "bytes": 3568,
+      "sha256": "2ae8c7f33fc36efe50842e756062c6b3e379fcff32795b635344ec4cc9969868"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/RankWindows.lean",
+      "bytes": 5715,
+      "sha256": "6d4d41ab5f31cf950ee106df83cc2d611feb85114ec19a968117fa45b4149875"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/WINDOWS.md",
+      "bytes": 3681,
+      "sha256": "5ad98db783e87f1112cce73cd9f7e84805bff2aaae3efd80c879af80e00a73d6"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/arithmetic/check.py",
+      "bytes": 6263,
+      "sha256": "76a0b1e9d02260ca93e46b9913c004b2778f60d1a51e0b008d355ae6e42b5787"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/descent/HeadSampling.lean",
+      "bytes": 8858,
+      "sha256": "3d3bb83b3d8c9441094bb51e9e4e16df11e4b8e56226d9dced5a457072e12503"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/descent/RANK_AND_RAYS.md",
+      "bytes": 8725,
+      "sha256": "96d1d9052be8ff97fa5b462514696e1ebd63a1e0bf765159a1fca43cab1af7dc"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/descent/README.md",
+      "bytes": 15564,
+      "sha256": "4dc5f1108a447b19268b8d2c09f76ab616628703ac1984d1b720a5b4ce2d170e"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/pressure/ClockTransfer.lean",
+      "bytes": 4926,
+      "sha256": "2839d6f9cf4623e09730930540ce6082ff71f2f14463bb89d02db110c16cd7f2"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/pressure/INVERSE_RAYS.md",
+      "bytes": 7565,
+      "sha256": "4a7b81460091ad42935558233ddafb469967d4285e7a32eef63c7e23ffce90f5"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/pressure/LATE_PR201.md",
+      "bytes": 3737,
+      "sha256": "28b5275710fcea8e0bfefe19ad4e08dc8ba632615974e1a37fd0c4b29595293d"
+    },
+    {
+      "path": "research/astra-deep-closure-20261124/pressure/README.md",
+      "bytes": 14011,
+      "sha256": "7a2935bba7e17b8bf9a379932c24be15c64d8c856d58c742b09599d4b4c081ca"
+    }
+  ]
+}
