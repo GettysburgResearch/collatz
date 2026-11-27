@@ -1,0 +1,27 @@
+{
+  "scope": "Tenth scientific checkpoint and actual root evidence; excludes this manifest. Analytic claims retain their stated inputs. Collatz remains open.",
+  "base_commit": "860a67dedc860adcd82b964958d91b9e21d610f1",
+  "file_count_excluding_manifest": 20,
+  "sha256": {
+    "reports/six-hour-20261127/ROOT_TENTH_REVIEW.md": "f53786dbdce802e061e0cdcc358ef3758957948f8bd23a53a973179adb2640d5",
+    "reports/six-hour-20261127/TENTH_REPLAY.json": "fd636f52a8d1cf1a926d5aefe096dda7ff812c0328f1a7d64948afd8ef13f34d",
+    "reports/six-hour-20261127/replay_tenth.py": "5dbe76ebbe722a4cdb989e0eb11c2e6fced748a7fc89a432d006b4cde7e78cab",
+    "research/six-hour-20261127/TENTH_CHECKPOINT.md": "968661bc4a143b886819e4ae1837da78714467cb8e0e9e27074710897ff477c3",
+    "research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE.md": "c79b4bbb4cdb1826ff66ab6befdcfdb633a457cad75aa4e50b07680502971e3a",
+    "research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json": "2d5bdeffb0580434044beeebc87b92f7220f3914b4ba4da4c3e1d3ca111cceaf",
+    "research/six-hour-20261127/arithmetic/FullRankCurvature.lean": "c6e0e188bc4185839dfa89de212ee3b6913995e95487ddda904475da7ffc7a42",
+    "research/six-hour-20261127/arithmetic/check_full_rank_curvature.py": "ed20a223802b3004506d6a85b724d17b8876b48cef5b36e012e54063a79bdac5",
+    "research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md": "09be5144dd2668b477a47654e2c147d3cc397d57203d1cb8fe66e9eb31b13f25",
+    "research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json": "e65fd52d1e4d9080fa1e97b789762bcd2cb93a6eaca893fef31c62da41d609d5",
+    "research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json": "23a365b1f8932ba75be07b7065c359f87e0e032299a5291ca6838e75ec457a4f",
+    "research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md": "58c9a3d95f70a7cdcb6aad75a6b2981cf1f2637c902f2451a743a4f8e28cba27",
+    "research/six-hour-20261127/escape/CriticalFirstClear.lean": "c45e289871df0fd4590eaf0d22f9ab882227a73cadce1bc8cce258bb2dcd5bdb",
+    "research/six-hour-20261127/escape/CriticalSourceSector.lean": "2cfd98bdc53d9d9467b017de804e96d66900eb44643a5359610c5ad74d7133b7",
+    "research/six-hour-20261127/escape/FAIR_FIRST_CLEAR.md": "1aa045083fa6256de510f0ceb14f1da047d3176ed30da38983f9701bfd876c53",
+    "research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json": "620981d176e51603e26f7ccb5c19ecab336a5f1c6fbfe90fadda1c322fc42071",
+    "research/six-hour-20261127/escape/FairFirstClear.lean": "bc175c6dbe2f9b0bd4dfc9b35bc6596e096cf2f2355de80f386684b7ad52bc66",
+    "research/six-hour-20261127/escape/check_critical_first_clear.py": "4954d6c460a351064e3b346a7d1cef8a3ed59a8438c8ae6d512cfd9f507481de",
+    "research/six-hour-20261127/escape/check_critical_source_sector.py": "446bcef33ade165fd16a522f10920df898c19bb2aae984f1fdc765ada892b77e",
+    "research/six-hour-20261127/escape/check_fair_first_clear.py": "6f026e8bfb5e483b17aaaa18349aa4939f4ffd85fa5739e9a6cc85d0e9129081"
+  }
+}

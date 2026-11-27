@@ -1,0 +1,86 @@
+{
+  "ballot_total_only": {
+    "32": 1832624140942590534,
+    "64": 23951146041928082866135587776380551750,
+    "128": 5768658823449206338089748357862286887740211701975162032608436567264518750790
+  },
+  "complete_fair_sectors": [
+    {
+      "all_sources": 24,
+      "clock_histogram": {
+        "1": 8,
+        "2": 16
+      },
+      "largest_conditional_tv": "1/8",
+      "n": 4,
+      "prefixes": 2,
+      "survival_at_critical_continuation_ticks": {
+        "1": 20,
+        "4": 10,
+        "8": 3,
+        "16": 1,
+        "24": 1
+      }
+    },
+    {
+      "all_sources": 80,
+      "clock_histogram": {
+        "1": 16,
+        "2": 32,
+        "3": 32
+      },
+      "largest_conditional_tv": "1/8",
+      "n": 6,
+      "prefixes": 5,
+      "survival_at_critical_continuation_ticks": {
+        "1": 70,
+        "4": 42,
+        "8": 18,
+        "16": 5,
+        "24": 5
+      }
+    },
+    {
+      "all_sources": 1008,
+      "clock_histogram": {
+        "1": 112,
+        "2": 224,
+        "3": 288,
+        "4": 256,
+        "5": 128
+      },
+      "largest_conditional_tv": "1/8",
+      "n": 10,
+      "prefixes": 42,
+      "survival_at_critical_continuation_ticks": {
+        "1": 924,
+        "4": 665,
+        "8": 361,
+        "16": 145,
+        "24": 125
+      }
+    },
+    {
+      "all_sources": 13728,
+      "clock_histogram": {
+        "1": 1056,
+        "2": 2112,
+        "3": 2880,
+        "4": 3072,
+        "5": 2560,
+        "6": 1536,
+        "7": 512
+      },
+      "largest_conditional_tv": "1/8",
+      "n": 14,
+      "prefixes": 429,
+      "survival_at_critical_continuation_ticks": {
+        "1": 12870,
+        "4": 10060,
+        "8": 6174,
+        "16": 3036,
+        "24": 2423
+      }
+    }
+  ]
+}

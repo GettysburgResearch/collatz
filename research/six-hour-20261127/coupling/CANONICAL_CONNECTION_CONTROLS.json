@@ -1,0 +1,68 @@
+{
+  "coefficient_per_ceiling_log2": 690144,
+  "first_stage_contraction": "1405/1479",
+  "first_stage_height": "66752/43",
+  "first_stage_source_ceiling": "9889/43",
+  "global_canonical_source_ceiling": "40505344/43",
+  "global_vertex_ceiling": "102325187227157840/9440091",
+  "leaf_distribution_by_number_of_reverse_charges": {
+    "0": 7,
+    "1": 8,
+    "13": 1,
+    "2": 4,
+    "3": 2,
+    "4": 3,
+    "5": 2,
+    "6": 3,
+    "7": 1
+  },
+  "literal_paths": [
+    {
+      "canonical_arrows": 0,
+      "edges": 0,
+      "maximum": "1",
+      "target": "1"
+    },
+    {
+      "canonical_arrows": 0,
+      "edges": 1,
+      "maximum": "2",
+      "target": "2"
+    },
+    {
+      "canonical_arrows": 3,
+      "edges": 76,
+      "maximum": "12428",
+      "target": "27"
+    },
+    {
+      "canonical_arrows": 7,
+      "edges": 211,
+      "maximum": "3000356",
+      "target": "43"
+    },
+    {
+      "canonical_arrows": 4,
+      "edges": 131,
+      "maximum": "568412",
+      "target": "1479"
+    },
+    {
+      "canonical_arrows": 3,
+      "edges": 196,
+      "maximum": "21880296226912195438745795230929092",
+      "target": "633825300114114700748351602687"
+    },
+    {
+      "canonical_arrows": 105,
+      "edges": 3054,
+      "maximum": "249800180540660221595317125320434570424",
+      "target": "55511151231257827021181583404541015627"
+    }
+  ],
+  "max_first_stage_edges": 169,
+  "max_reverse_charges": 13,
+  "odd_leaf_mass": "1",
+  "odd_leaves": 31,
+  "single_expanded_descent_edges": 49296
+}

@@ -1,0 +1,1595 @@
+{
+  "all_receipt_sources_match_current_files": true,
+  "controls": {
+    "research/six-hour-20261127/arithmetic/check_anchor_carries.py": {
+      "expected": "research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json",
+      "expected_sha256": "b108b44b1ace7d7cc0d130e0a85de30172e43690a7ba9fec322698201fa440ac",
+      "source_sha256": "7983c1c4a99fad8c01593b6364a3c9cfb86ae403f573ad04cd46fd1cdea69e96"
+    },
+    "research/six-hour-20261127/arithmetic/check_completions.py": {
+      "expected": "research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json",
+      "expected_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+      "source_sha256": "40051628a7a167ff02c11e6604f39e71bbebf2e88930e13abf4fd45b740a5da1"
+    },
+    "research/six-hour-20261127/arithmetic/check_crt_histograms.py": {
+      "expected": "research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json",
+      "expected_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+      "source_sha256": "36b6117dadd75335b43c647f7c13ecef827a558d29ba8a7e243eb857b207f8b6"
+    },
+    "research/six-hour-20261127/arithmetic/check_cubic.py": {
+      "expected": "reports/six-hour-20261127/CUBIC_CONTROLS.json",
+      "expected_sha256": "d9ab59adbe718d32a4d25e8dfede8bc49620dc00e6bb7c57b3b9dee0f07a4e00",
+      "source_sha256": "f904d6e13ea21deed86d408eba664d54f982de6ca4e3a78655a95eb93d5f3143"
+    },
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": {
+      "expected": "research/six-hour-20261127/arithmetic/FOUR_COPY_CONTROLS.json",
+      "expected_sha256": "3570f7894511a635edfe7eaaff04aff254e7df57371933ac3598261a876f0b98",
+      "source_sha256": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a"
+    },
+    "research/six-hour-20261127/arithmetic/check_full_anchor.py": {
+      "expected": "research/six-hour-20261127/arithmetic/FULL_ANCHOR_CONTROLS.json",
+      "expected_sha256": "efb38765b75ac34930f14a8887c0fc54e0b14e227e754b6194f291345f1da6dd",
+      "source_sha256": "975be86a75f5bfc40be5248c0432056566c486e04f19b07801456cc09953eb93"
+    },
+    "research/six-hour-20261127/arithmetic/check_full_rank_curvature.py": {
+      "expected": "research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json",
+      "expected_sha256": "2d5bdeffb0580434044beeebc87b92f7220f3914b4ba4da4c3e1d3ca111cceaf",
+      "source_sha256": "ed20a223802b3004506d6a85b724d17b8876b48cef5b36e012e54063a79bdac5"
+    },
+    "research/six-hour-20261127/arithmetic/check_microscopic_joining.py": {
+      "expected": "research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json",
+      "expected_sha256": "0ae5c644447e7763d4acd4c4a8e58c2e8c3bdf526a5cdb283360ea087df18f5d",
+      "source_sha256": "6549a71e86b029b30d7f6458052556f42adc1e00e1e022d88273764dd73f30ac"
+    },
+    "research/six-hour-20261127/arithmetic/check_minimum_census.py": {
+      "expected": "research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json",
+      "expected_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+      "source_sha256": "2421baf042ad0856a782e3f6832142cd8f653123d2379b538afce0f726261a53"
+    },
+    "research/six-hour-20261127/arithmetic/check_period_gap.py": {
+      "expected": "research/six-hour-20261127/arithmetic/PERIOD_CONTROLS.json",
+      "expected_sha256": "3678bc0d2f44231652e1a117dc6e064fae31c3c040ccaa5c8de82ed990c01bfa",
+      "source_sha256": "f502fa6e2365b636c4e3f155f12448ecc0e802e8d85a6825d30e2e84b06aefcb"
+    },
+    "research/six-hour-20261127/arithmetic/check_rival_pressure.py": {
+      "expected": "research/six-hour-20261127/arithmetic/RIVAL_PRESSURE_CONTROLS.json",
+      "expected_sha256": "f7a9478806441e84341eac35f7b67babc5a2894d98ea5bbd81dfb5f3147aa670",
+      "source_sha256": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0"
+    },
+    "research/six-hour-20261127/arithmetic/check_ternary_past.py": {
+      "expected": "research/six-hour-20261127/arithmetic/TERNARY_PAST_CONTROLS.json",
+      "expected_sha256": "28ec0d0a545d0dd5c648340efc18b16d6b0b39fca100d85e58b71122c4e4e354",
+      "source_sha256": "9247fdc925d62ac47bc95341f6a53158e1efb105023c71128fec1e6eea5e6e1d"
+    },
+    "research/six-hour-20261127/check_binary_prefix.py": {
+      "expected": "research/six-hour-20261127/BINARY_PREFIX_CONTROLS.json",
+      "expected_sha256": "e2697dc5abdbbbbb1168686c543f5d986b2bc790c21aec33ef95e276c98d4edc",
+      "source_sha256": "800bc32347a2351dad753a266d8f170577cd80714fdab4708ff7f5f59652fe75"
+    },
+    "research/six-hour-20261127/coupling/check_anchor_overhead.py": {
+      "expected": "research/six-hour-20261127/coupling/ANCHOR_OVERHEAD_CONTROLS.json",
+      "expected_sha256": "bf9f56a2fcc634d0ef9e1d48e60505aed8353128261300c9bdaa99d8db732562",
+      "source_sha256": "73dc7a1f64be4fef3b7f4a07e04ab0addf1b836b849bb841f95474bb71322b4e"
+    },
+    "research/six-hour-20261127/coupling/check_canonical_connections.py": {
+      "expected": "research/six-hour-20261127/coupling/CANONICAL_CONNECTION_CONTROLS.json",
+      "expected_sha256": "80d09837f5c8510fc563274d29dd45991fc35b014c77ec06fcaff228a736bf44",
+      "source_sha256": "889b516dc197ff92f67d5f11b7551dd9b5e2197bcae0be9f6e995e7763456c8d"
+    },
+    "research/six-hour-20261127/coupling/check_canonical_paths.py": {
+      "expected": "research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json",
+      "expected_sha256": "a0b2ef62c2d7d869f86142498a40a4d0ff7d1287cd63145f70e2282a9124f354",
+      "source_sha256": "d11d8e71623c1d242891157816b5994616ce88c5129cd0f920f5d3e7f14a188d"
+    },
+    "research/six-hour-20261127/coupling/check_delayed_batch.py": {
+      "expected": "research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json",
+      "expected_sha256": "b581ba5b21b8be9993d422565ee9654dd6861479ff5b5446c3510ac2e120c45f",
+      "source_sha256": "51cf5a2ce6abd1372606dd27dbe7155fb1046c173b83134bc852540649701c96"
+    },
+    "research/six-hour-20261127/coupling/check_delayed_unit.py": {
+      "expected": "research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json",
+      "expected_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+      "source_sha256": "3b9ba76c06d562c660944684be2d7651a6d7e879a3a802879138bd6b1bb2ec21"
+    },
+    "research/six-hour-20261127/coupling/check_global_return.py": {
+      "expected": "research/six-hour-20261127/coupling/GLOBAL_RETURN_CONTROLS.json",
+      "expected_sha256": "772690e389ac78b85a03ad273864d4c0d3419c4b679ddf9660617d3f7f7a4f7a",
+      "source_sha256": "78e0b90c53cfc6e5ad7368b5e81492d53694e0941608e9000ffef9f20cc47a47"
+    },
+    "research/six-hour-20261127/coupling/check_native_shadow.py": {
+      "expected": "research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json",
+      "expected_sha256": "cb97d95de0a27418fbfec7519d6173cfd3b311eec26c08ddb67cc9d841a8fe59",
+      "source_sha256": "43c245f12ee9593826821ee92edfc65772b26f0203bba978588b5366b72a5ca3"
+    },
+    "research/six-hour-20261127/coupling/check_nested_cover.py": {
+      "expected": "research/six-hour-20261127/coupling/NESTED_COVER_CONTROLS.json",
+      "expected_sha256": "4f141e7ec07cddeb9b4f422044ae1733dd12868b45e3616b50fc5ba0844a8a4c",
+      "source_sha256": "16829f6c821a9ad83169a4ebcf04b8f4c79c651d276e1eb0bccd5a77dd18baff"
+    },
+    "research/six-hour-20261127/coupling/check_offset_four.py": {
+      "expected": "research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json",
+      "expected_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+      "source_sha256": "bf830d9f4fac7e3b77d8033717e8a64d56df91eb4adf044c16bd344a29a54abc"
+    },
+    "research/six-hour-20261127/coupling/check_offsets.py": {
+      "expected": "research/six-hour-20261127/coupling/OFFSET_CONTROLS.json",
+      "expected_sha256": "0becf1f036157235d1b49b58a696e056ec46726d4a49fa20f2a32ee7d2c47c67",
+      "source_sha256": "4ddb317b4d9632f37563464fd67ef9a41040e1d16c77388535480c446f3e42ff"
+    },
+    "research/six-hour-20261127/coupling/check_optimized_bank.py": {
+      "expected": "research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json",
+      "expected_sha256": "0454e87594c421c5dc2e395eeb397f9981836f5c0a366b352062648b5622f710",
+      "source_sha256": "73e3c7c4f206baf93192f48c53c1d2d9325c4b21cbd52c7b32ce1754d4844224"
+    },
+    "research/six-hour-20261127/coupling/check_paid.py": {
+      "expected": "research/six-hour-20261127/coupling/PAID_CONTROLS.json",
+      "expected_sha256": "4c5711ea184b89b72b3def5c7ef810c1844238a649a704915c390cc510547620",
+      "source_sha256": "15a2f2827bef9468ba46c2eef5bf08df28bce45af27d08d1a3d15cff196799c8"
+    },
+    "research/six-hour-20261127/coupling/check_peak.py": {
+      "expected": "research/six-hour-20261127/coupling/PEAK_CONTROLS.json",
+      "expected_sha256": "c645ef443394a8e21cf0f56d8cb4cd9b73aef27400d127223965e72414221d91",
+      "source_sha256": "79c909f26ca6ea403209234fdeba95f6d7f2f100ae801d194c3bb93672492226"
+    },
+    "research/six-hour-20261127/coupling/check_ternary_pump.py": {
+      "expected": "research/six-hour-20261127/coupling/TERNARY_PUMP_CONTROLS.json",
+      "expected_sha256": "ee0b6f862c0d252af4a8c0470a3e8961c82d8bcf1b3f7b130ddb3fc05e7831f2",
+      "source_sha256": "a267f66801a8bd62f45faafcbd26d925e3977445969b6b34fe6d6e460a0725bb"
+    },
+    "research/six-hour-20261127/coupling/check_valuation_cover.py": {
+      "expected": "research/six-hour-20261127/coupling/VALUATION_COVER_CONTROLS.json",
+      "expected_sha256": "875cddfb32a66bd475b48dd77aa3ede1564890392ab9ef400d88c51f3dbc89aa",
+      "source_sha256": "24541a699619f30a3de79fb7bfcce929170c5b811e6b37ee5d97b1d47e7dbdb9"
+    },
+    "research/six-hour-20261127/coupling/floor_bound.py": {
+      "expected": "research/six-hour-20261127/coupling/FLOOR_CONTROLS.json",
+      "expected_sha256": "4f11266e0599f72d6471621c94d1cd8d3c0d94b6241a2f8b25e5dd879f1f2ac8",
+      "source_sha256": "0649236941d52adb00e46323fdeb41ec8a97457e36882f964c8aea13b3181bea"
+    },
+    "research/six-hour-20261127/escape/check_comparable_ancestors.py": {
+      "expected": "research/six-hour-20261127/escape/COMPARABLE_CONTROLS.json",
+      "expected_sha256": "6d53f9c350e6e42f62d663c9d803429387d731ba373615131aacae6539b4af34",
+      "source_sha256": "655c4f8149cd6ea408378a97b843840d9a9890930022bc58f2c09df02e59a9f5"
+    },
+    "research/six-hour-20261127/escape/check_critical_first_clear.py": {
+      "expected": "research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json",
+      "expected_sha256": "e65fd52d1e4d9080fa1e97b789762bcd2cb93a6eaca893fef31c62da41d609d5",
+      "source_sha256": "4954d6c460a351064e3b346a7d1cef8a3ed59a8438c8ae6d512cfd9f507481de"
+    },
+    "research/six-hour-20261127/escape/check_critical_source_sector.py": {
+      "expected": "research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json",
+      "expected_sha256": "23a365b1f8932ba75be07b7065c359f87e0e032299a5291ca6838e75ec457a4f",
+      "source_sha256": "446bcef33ade165fd16a522f10920df898c19bb2aae984f1fdc765ada892b77e"
+    },
+    "research/six-hour-20261127/escape/check_dyadic_sibling_flux.py": {
+      "expected": "research/six-hour-20261127/escape/DYADIC_FLUX_CONTROLS.json",
+      "expected_sha256": "29a422fa8baed9f7339d71b35aa8d2420aaceb8af2edb52e4ad3b29808fb46f4",
+      "source_sha256": "01beaf6fe616b7c693d33eb458b5a2536da5ef9c4023ca28036303e565a50f46"
+    },
+    "research/six-hour-20261127/escape/check_escape.py": {
+      "expected": "research/six-hour-20261127/escape/CONTROLS.json",
+      "expected_sha256": "c7e750cd6efbfd61f69da8ece52a3e7b609dfaf71b261e1885d6ab3dd6b6a614",
+      "source_sha256": "d446f0e9598732f88c4fab06c0cca0f9f37c1e7cecc3f6d6fa5f1ee579293b25"
+    },
+    "research/six-hour-20261127/escape/check_fair_first_clear.py": {
+      "expected": "research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json",
+      "expected_sha256": "620981d176e51603e26f7ccb5c19ecab336a5f1c6fbfe90fadda1c322fc42071",
+      "source_sha256": "6f026e8bfb5e483b17aaaa18349aa4939f4ffd85fa5739e9a6cc85d0e9129081"
+    },
+    "research/six-hour-20261127/escape/check_geodesic.py": {
+      "expected": "research/six-hour-20261127/escape/GEODESIC_CONTROLS.json",
+      "expected_sha256": "433acb0b922105b366a659ae3dc48effbe2f94f324bd91ccfef3ed999318869e",
+      "source_sha256": "24d33e79483a60b77d9ed16c028d2897e8c2c33f2f30d62a1cc798526728d9f1"
+    },
+    "research/six-hour-20261127/escape/check_global_prefix.py": {
+      "expected": "research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json",
+      "expected_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+      "source_sha256": "8207c48a33c573c487369e6866961a69440ed9e048c4cfb2fb279039ca659151"
+    },
+    "research/six-hour-20261127/escape/check_rational_sector.py": {
+      "expected": "research/six-hour-20261127/escape/RATIONAL_SECTOR_CONTROLS.json",
+      "expected_sha256": "ad9de08f58b133e395aff81b4c94b48d383cee51b253389dc24f552a380f9653",
+      "source_sha256": "0c7143de55b5b0be6b8e30f92fe56b6545654f2c7334cddb3c1c3388a093b1d0"
+    },
+    "research/six-hour-20261127/escape/check_safe_diagonal.py": {
+      "expected": "research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json",
+      "expected_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+      "source_sha256": "e5f4648d34d8cfb6bafafae8896090293a42e31f25b03202f37c542f8b96a9f4"
+    },
+    "research/six-hour-20261127/escape/check_signed_heights.py": {
+      "expected": "research/six-hour-20261127/escape/SIGNED_HEIGHT_CONTROLS.json",
+      "expected_sha256": "b8f50836a7c840691c02c20aa72b26e81037af86e58636350e061fb06228fcc5",
+      "source_sha256": "8eb0537714f1d7200aa56507b9f31505793c780e8e5a9d0ab5ddc8083635e650"
+    },
+    "research/six-hour-20261127/escape/check_signed_piece_mass.py": {
+      "expected": "research/six-hour-20261127/escape/SIGNED_PIECE_CONTROLS.json",
+      "expected_sha256": "265c7366866acb33d9a3c73f35f4c4cd25b4f9e8998ff8b15a8f22b5b7fbb049",
+      "source_sha256": "664ea9f6482725c4ec08f2a8f7265b5ca48ed3676ac23baaa4ddffd6d1d56e2b"
+    },
+    "research/six-hour-20261127/escape/check_tropical.py": {
+      "expected": "research/six-hour-20261127/escape/TROPICAL_CONTROLS.json",
+      "expected_sha256": "c19211d634f5ab8553df7697181b01cf052458d348c4ea2baefa13217340459a",
+      "source_sha256": "e868d8d897df01a5d678c31e6d49d6e55e8fa8b1f89195066e60f26e7c18f0eb"
+    },
+    "research/six-hour-20261127/escape/check_visitor_anchor.py": {
+      "expected": "research/six-hour-20261127/escape/VISITOR_ANCHOR_CONTROLS.json",
+      "expected_sha256": "ba77cc3b3d446b4ec31ce02631f80965ea03d5c0b536b7f344ac84c4528fedac",
+      "source_sha256": "b63b7f08fafefb7fadaf40570c2d553039cd38d957ad9752b9e445a0874a9a85"
+    }
+  },
+  "dependency_modules": {
+    "research/six-hour-20261127/coupling/pr197-floor/DirectedEleven.lean": {
+      "declarations": {
+        "DirectedEleven.all_midpoints_located": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DirectedEleven.all_routes_checked": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DirectedEleven.checkedSound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DirectedEleven.hit_at_ten": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677"
+    },
+    "research/six-hour-20261127/coupling/pr197-floor/NonunitExit.lean": {
+      "declarations": {
+        "NonunitExit.denom_iter": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NonunitExit.directed_successor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NonunitExit.physical_chain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NonunitExit.shadow_certifies": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NonunitExit.shadow_lift": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0"
+    },
+    "research/six-hour-20261127/coupling/pr197-floor/QuantitativeReturn.lean": {
+      "declarations": {
+        "CollatzQuantitativeReturn.bounded_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07"
+    },
+    "research/six-hour-20261127/coupling/pr197-floor/ReverseBasin.lean": {
+      "declarations": {},
+      "source_sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65"
+    },
+    "research/six-hour-20261127/coupling/pr197-floor/TwoOddCertificate.lean": {
+      "declarations": {
+        "CollatzTwoOdd.least_defect_not_two_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CollatzTwoOdd.two_odd_progress": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CollatzTwoOdd.two_odd_unbounded": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda"
+    },
+    "research/six-hour-20261127/coupling/pr197-floor/UnitResidueExchange.lean": {
+      "declarations": {
+        "UnitResidueExchange.residue17_descends": [
+          "propext"
+        ],
+        "UnitResidueExchange.unit_one_exchange": [
+          "propext"
+        ]
+      },
+      "source_sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8"
+    },
+    "research/unconventional-20261126/CoreBranching.lean": {
+      "declarations": {
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05"
+    }
+  },
+  "new_modules": {
+    "research/six-hour-20261127/BinaryPrefixCriterion.lean": {
+      "declarations": {
+        "BinaryPrefixCriterion.collatz_of_small_finite_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.debt_reserve_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.finite_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.least_bad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.member_reciprocal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.minimum_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.principal_member": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5"
+    },
+    "research/six-hour-20261127/OrdinaryGeodesic.lean": {
+      "declarations": {
+        "SixHour.OrdinaryGeodesic.coefficient_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.residue_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.residue_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.OrdinaryGeodesic.shorter_same_grade_is_smaller": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "4eea6b101ba63b2d6e1c7f53c4ed6b3eae0b5d9e18d8eb01de24f84f9f00c21c"
+    },
+    "research/six-hour-20261127/arithmetic/CRTAddress.lean": {
+      "declarations": {
+        "SixHour.CRTAddress.address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SixHour.CRTAddress.centered_peak": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CRTAddress.word_rounding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "6d5ccc815a2381fd5fc00251830621e16185cab2315dc2aba6d5f160de9c5396"
+    },
+    "research/six-hour-20261127/arithmetic/CompletionOrder.lean": {
+      "declarations": {
+        "SixHour.CompletionOrder.correction_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CompletionOrder.node_mono": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SixHour.CompletionOrder.periodic_slopes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "f0349ed21fe99003e25d8fb5ffd834fa07845342ba3e9ec81a7f3da6819e53d6"
+    },
+    "research/six-hour-20261127/arithmetic/CubicHeight.lean": {
+      "declarations": {
+        "SixHour.CubicHeight.endpoint_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CubicHeight.fixed_multiplier_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CubicHeight.internal_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CubicHeight.jumpSum_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "984e6e228bb6f83f9295e1cb499257370ccc984e4634e42840cd0403cf976ee2"
+    },
+    "research/six-hour-20261127/arithmetic/FullRankCurvature.lean": {
+      "declarations": {
+        "Collatz.FullRankCurvature.carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullRankCurvature.no_seam_predecessor": []
+      },
+      "source_sha256": "c6e0e188bc4185839dfa89de212ee3b6913995e95487ddda904475da7ffc7a42"
+    },
+    "research/six-hour-20261127/arithmetic/MinimumCensus.lean": {
+      "declarations": {
+        "SixHour.MinimumCensus.only_two_runs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.MinimumCensus.orbit_stays": []
+      },
+      "source_sha256": "ca8964b8b8e45611617c60953973c1038c5cd861c8fedef9ae14e6c717192051"
+    },
+    "research/six-hour-20261127/arithmetic/PeriodPacking.lean": {
+      "declarations": {
+        "SixHour.PeriodPacking.equal_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SixHour.PeriodPacking.located_packing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.PeriodPacking.two_sided_spacing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "6591aa951f2ee4ad9500165c87d24daf5b0680d439b5e3f909cd7fd870495cbd"
+    },
+    "research/six-hour-20261127/arithmetic/ResetFront.lean": {
+      "declarations": {
+        "SixHour.ResetFront.exact_dyadic_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.ResetFront.prefix_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "add34999cc3be3d7559c0ab941e494452028144655bcdbd21e05f52a71ea22d5"
+    },
+    "research/six-hour-20261127/arithmetic/ReverseEnergy.lean": {
+      "declarations": {
+        "Collatz.ReverseEnergy.integral_cut": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.next_trit": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.reverse_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.two_rows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "43308a5c8ab7ae02c94d0f0a235799a9e9cbd6978d5e0cb8da67b7c77a72eb0e"
+    },
+    "research/six-hour-20261127/arithmetic/RivalPressure.lean": {
+      "declarations": {
+        "Collatz.RivalPressure.affine_reverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.RivalPressure.complement_ways": [],
+        "Collatz.RivalPressure.weighted_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "33626087bcc0b4e86ba9db1d333a2c9c500e4e4e5e2f79828ccb5a6612429a99"
+    },
+    "research/six-hour-20261127/arithmetic/TernaryPast.lean": {
+      "declarations": {
+        "Collatz.TernaryPast.no_progression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TernaryPast.pair_sums_split": [],
+        "Collatz.TernaryPast.progression_spacing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "9dc790323893486e5a7d5019c9f57e7733c6cf3866186605d50d04b9812ac507"
+    },
+    "research/six-hour-20261127/coupling/AnchorLookup.lean": {
+      "declarations": {
+        "AnchorLookup.only_anchor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "df212e7cf44f58e1d5820411c5c93c55bac9581a6c2e37c2fec878fbb32980f8"
+    },
+    "research/six-hour-20261127/coupling/AnchorRoute.lean": {
+      "declarations": {
+        "AnchorRoute.adjusted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.canonical_start": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.ones": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.slope": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "d0010a307aeadc84aa3fea17dc759695ca25020d0f9f277ff7f734e1f184ec43"
+    },
+    "research/six-hour-20261127/coupling/DeepFifteen.lean": {
+      "declarations": {
+        "DeepFifteen.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DeepFifteen.paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "542a445982e7124c075dcde5dc6c2a85468a0d394c11ccf12efd3a4ad4184ad3"
+    },
+    "research/six-hour-20261127/coupling/DefectBank.lean": {
+      "declarations": {
+        "DefectBank.localize": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DefectBank.sound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "15505f876be87947084c49292ca2243deb5126caf71563af3974f87a21ad9f42"
+    },
+    "research/six-hour-20261127/coupling/DelayedBatch.lean": {
+      "declarations": {
+        "DelayedBatch.lift_peak_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedBatch.paid_record": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "60ba2bfc12122ff7eb72cba95135661d1296d4d8214ac38ff8f6f4366df612ea"
+    },
+    "research/six-hour-20261127/coupling/DelayedTurns.lean": {
+      "declarations": {
+        "DelayedTurns.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.long_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.paid_delayed_merger": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "3c349bae3d33bc5ac1acb4b7040ae76580a34a18131f67414ab397300f378771"
+    },
+    "research/six-hour-20261127/coupling/DelayedUnit.lean": {
+      "declarations": {
+        "DelayedUnit.actual_sources": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedUnit.all_earlier_of_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedUnit.unit_factor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "DelayedUnit.unit_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "DelayedUnit.unit_stable": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "63f083a18a4866f9da6b3bed0b7ecf944f29e35bd9a9f93f929e6ac0aad34759"
+    },
+    "research/six-hour-20261127/coupling/EarlierOffsets.lean": {
+      "declarations": {
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f"
+    },
+    "research/six-hour-20261127/coupling/FloorCertificate.lean": {
+      "declarations": {
+        "FloorCertificate.even_reciprocal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.geometric_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.reciprocal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCertificate.shell_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "5688f1929acdd887c41ea02c3177736cae5bed4f45a4f3ff3f1e4c28bf6ba519"
+    },
+    "research/six-hour-20261127/coupling/FloorCounting.lean": {
+      "declarations": {
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372"
+    },
+    "research/six-hour-20261127/coupling/GlobalReturnBudget.lean": {
+      "declarations": {
+        "GlobalReturnBudget.basin": [],
+        "GlobalReturnBudget.bounded_defect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GlobalReturnBudget.hits": [],
+        "GlobalReturnBudget.least_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "bacf00d41e700cf49a3c5074883fd1d72bf7430f44494fef158a0ab3d55b2ddc"
+    },
+    "research/six-hour-20261127/coupling/NativeClassification.lean": {
+      "declarations": {
+        "NativeClassification.classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.extra_row": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.native_openings": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.protected_cut": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.realize_row": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeClassification.shell_slack": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "a651ff19493c5a21861397f521cb2812f7eb9fb5286c8ef4afc0af428a3f24a5"
+    },
+    "research/six-hour-20261127/coupling/NativeShadow.lean": {
+      "declarations": {
+        "NativeShadow.cap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.center_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.funded_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.marked_of_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeShadow.spectral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "0236909a7d2d76be55d0043ede745bff28c339009321d86e5020f461459196f5"
+    },
+    "research/six-hour-20261127/coupling/NativeVisitors.lean": {
+      "declarations": {
+        "NativeVisitors.native_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NativeVisitors.shift_growth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NativeVisitors.split": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "ddf36562ec2a64211b75644a3767972b8762888ad353660e0722ca9be62f9a2d"
+    },
+    "research/six-hour-20261127/coupling/NestedCharts.lean": {
+      "declarations": {
+        "NestedCharts.original": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NestedCharts.physical": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NestedCharts.sound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "a9b63ddf0734a9986f42ffdb2755f2f3382f93a8439507c1409807cdafe20e6e"
+    },
+    "research/six-hour-20261127/coupling/NestedCover.lean": {
+      "declarations": {
+        "NestedCover.address": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NestedCover.checked": [
+          "propext"
+        ],
+        "NestedCover.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NestedCover.plan_exists": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "f9d79dfd4bc23c93766dc765e3f1a722b9194c9c04770fc3c920604f7b29b623"
+    },
+    "research/six-hour-20261127/coupling/OffsetFour.lean": {
+      "declarations": {
+        "OffsetFour.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OffsetFour.earlier_good_delayed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OffsetFour.paid_chart": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "bd82e9d4d5fa257dd5e8d7dc1ae1b65be139d44a3a75a2348b2a5f4ccfc9c4e7"
+    },
+    "research/six-hour-20261127/coupling/OptimizedBank.lean": {
+      "declarations": {
+        "OptimizedBank.binary_to_canonical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OptimizedBank.bounded_defect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OptimizedBank.checked": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OptimizedBank.least_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "0178a3611656701059fc3afdc4c7a44be2d20cfdaf89646417729212d10a8d7f"
+    },
+    "research/six-hour-20261127/coupling/PaidCheckpoint.lean": {
+      "declarations": {
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d"
+    },
+    "research/six-hour-20261127/coupling/PeakRigidity.lean": {
+      "declarations": {
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12"
+    },
+    "research/six-hour-20261127/coupling/ReturnAtlas.lean": {
+      "declarations": {
+        "ReturnAtlas.bounded_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnAtlas.realizes_run": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReturnAtlas.tree_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReturnAtlas.word_sound": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "8a11b8e0d3fe01c73cafd31360b1b3acbabc73146227e5312df0b6ba0993d830"
+    },
+    "research/six-hour-20261127/coupling/ReturnTwentyFour.lean": {
+      "declarations": {
+        "ReturnTwentyFour.binary_defect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReturnTwentyFour.checked": [
+          "propext"
+        ]
+      },
+      "source_sha256": "b413f1ddcbd1dc6109dec2b4f7ad10bb0249af1de207d29c5f5a6e5527757203"
+    },
+    "research/six-hour-20261127/coupling/TernaryPump.lean": {
+      "declarations": {
+        "TernaryPump.deep_shift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.paid_valuation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.pumped_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.valuation_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "b5253ff43d2a1a39380b21e85bb9e7ffd71d30341d5415635f65b45a94145280"
+    },
+    "research/six-hour-20261127/coupling/ValuationAddress.lean": {
+      "declarations": {
+        "ValuationAddress.power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationAddress.root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "5c4537ba68cf5b510be28bcf79c47c085d62b26e5f9c57ace0e0a041daae5135"
+    },
+    "research/six-hour-20261127/coupling/ValuationCharts.lean": {
+      "declarations": {
+        "ValuationCharts.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.physical": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.profile_spec": [
+          "propext"
+        ],
+        "ValuationCharts.row_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCharts.select": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.selectWith": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.terminal_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "1de66bb162bf2200eb3f1498ce306ff9e19a7bb51aa8c5e5ec12851debbe130e"
+    },
+    "research/six-hour-20261127/coupling/ValuationCover.lean": {
+      "declarations": {
+        "ValuationCover.address": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCover.checked": [
+          "propext"
+        ],
+        "ValuationCover.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCover.witnesses": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "ab6dc4bfc156301716305d6a2339d6662da74ea8e423d2d341eb1218061e6881"
+    },
+    "research/six-hour-20261127/escape/ComparableAncestors.lean": {
+      "declarations": {
+        "EscapeComparableAncestors.crowded_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.shift_disagreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.terminal_mass_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.terminal_stride": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.union_image_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.unit_anchor_failure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "51db54e07591bbe94bffb56abb2c50bdacf807256447881f132f2220176ef33d"
+    },
+    "research/six-hour-20261127/escape/CriticalFirstClear.lean": {
+      "declarations": {
+        "EscapeCriticalFirstClear.automatic_to_census": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.compact_window": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.full_input_last_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.terminal_mod_three": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "c45e289871df0fd4590eaf0d22f9ab882227a73cadce1bc8cce258bb2dcd5bdb"
+    },
+    "research/six-hour-20261127/escape/CriticalSourceSector.lean": {
+      "declarations": {
+        "EscapeCriticalSourceSector.criticalDen_interval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.criticalGrade_spec": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.critical_slack_join": [
+          "propext"
+        ],
+        "EscapeCriticalSourceSector.gate_after_minimum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.laps_exhaust_slack": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.strict_cycle_gain": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "2cfd98bdc53d9d9467b017de804e96d66900eb44643a5359610c5ad74d7133b7"
+    },
+    "research/six-hour-20261127/escape/DyadicSiblingFlux.lean": {
+      "declarations": {
+        "EscapeDyadicSiblingFlux.binary_change_square": [
+          "propext"
+        ],
+        "EscapeDyadicSiblingFlux.fair_children_mean": [
+          "propext"
+        ],
+        "EscapeDyadicSiblingFlux.fair_children_square": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeDyadicSiblingFlux.next_opportunity_sign": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeDyadicSiblingFlux.opportunity_sign": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeDyadicSiblingFlux.split_change": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "a22941f116052c890158c2d52073543b4c101bdd22c4c09cdeec0255d4998f46"
+    },
+    "research/six-hour-20261127/escape/FairFirstClear.lean": {
+      "declarations": {
+        "EscapeFairFirstClear.automatic_tail": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeFairFirstClear.tail_atom": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeFairFirstClear.tail_recurrence": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "bc175c6dbe2f9b0bd4dfc9b35bc6596e096cf2f2355de80f386684b7ad52bc66"
+    },
+    "research/six-hour-20261127/escape/GeodesicPosterior.lean": {
+      "declarations": {
+        "EscapeGeodesicPosterior.center_telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.exact_center_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.normalized_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeGeodesicPosterior.split_center_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "27e3c36fa2f5a9542e7f95723133cb8ad99bb75d094e0a48a8bc0c26cace3b5a"
+    },
+    "research/six-hour-20261127/escape/HarmonicBirth.lean": {
+      "declarations": {
+        "EscapeHarmonicBirth.augmented_monotone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.centered_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.exact_reserve_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.minimum_gate_comparison": [
+          "propext"
+        ],
+        "EscapeHarmonicBirth.rational_chernoff_comparison": [
+          "propext"
+        ],
+        "EscapeHarmonicBirth.sibling_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "9cd780b5a0be2331331d9996c372ad3f7c1e096b43e98ad2e1af139b097d80d1"
+    },
+    "research/six-hour-20261127/escape/PermanentSieve.lean": {
+      "declarations": {
+        "EscapePermanentSieve.affine_lower_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapePermanentSieve.floor_rise": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapePermanentSieve.tail_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapePermanentSieve.whole_future_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "440a260c217d158d30adc14b50d74fcc3193b55d41f60afa6f6f1716114bc308"
+    },
+    "research/six-hour-20261127/escape/RationalSourceSector.lean": {
+      "declarations": {
+        "EscapeRationalSector.denominator_clears": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.exact_affine": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.native_suffix_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.numerical_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.shifted_floor_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeRationalSector.triple_residues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "abe7dd620db87bf46fdaea0eecc25634aa43151c4ef2896fcfaac89f4ba5b698"
+    },
+    "research/six-hour-20261127/escape/SafeDiagonal.lean": {
+      "declarations": {
+        "EscapeSafeDiagonal.a_domain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.a_range": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.b_domain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.b_range": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.finite_source_compactness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.half_height_at_jump": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.parameter_stabilizes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.word_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "5a539471cecc3d3e0d4e5991e603a2d68cb9ccba347daeb73f665c2231c35189"
+    },
+    "research/six-hour-20261127/escape/SignedHeightGauge.lean": {
+      "declarations": {
+        "EscapeSignedHeightGauge.aspect_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.aspect_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.determinant_congruence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSignedHeightGauge.select_denominator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "ae05aace52200eaee708ac9065f8335fc1b9ad9871f5bee26c0f8196cc86c190"
+    },
+    "research/six-hour-20261127/escape/SignedPieceHeight.lean": {
+      "declarations": {
+        "EscapeSignedPieceHeight.binary_one_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedPieceHeight.binary_shifted_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSignedPieceHeight.cleared_gap": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSignedPieceHeight.one_hit_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSignedPieceHeight.segment_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSignedPieceHeight.shifted_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_sha256": "9096444b0ca5839cad76e70768e6454ec74d242f5b87613fc0dddcbb9528d70e"
+    },
+    "research/six-hour-20261127/escape/VisitorAnchor.lean": {
+      "declarations": {
+        "EscapeVisitorAnchor.anchored_square_loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeVisitorAnchor.core_excludes_targets": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeVisitorAnchor.core_iterates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeVisitorAnchor.failure_below_one_percent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeVisitorAnchor.fates_through_4095": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeVisitorAnchor.walk_succ": [
+          "propext"
+        ]
+      },
+      "source_sha256": "dcab025c772f6a6d0b9b08577bdadab5062ef32e79a124389736c215221d78d6"
+    }
+  },
+  "quantitative_return_provenance": "Pinned agent source build, root transitive axiom audit, and independent root leanchecker kernel replay into retained imports. Other modules use completed root source builds.",
+  "receipts": {
+    "reports/six-hour-20261127/EIGHTH_REPLAY.json": "58a48194bf54b4e3cf9159a4a3cacc73c3a8c916b362ef2957cc8ba85a6489e1",
+    "reports/six-hour-20261127/FIFTH_REPLAY.json": "a0e655d481719152d43556c08abd9d457cee076265cc447ddd700ba703380ac8",
+    "reports/six-hour-20261127/FINAL_SUPPLEMENTS_REPLAY.json": "69e74370f4312b422e85b53f51f6443ef4f1e573bca3acc68d2d7910e7c9b4cf",
+    "reports/six-hour-20261127/FIRST_REPLAY.json": "d9159440b35fb086af09538fae4581ca29016ccc8337f3d2c85a2a70ec17b23b",
+    "reports/six-hour-20261127/FOURTH_REPLAY.json": "811bd31b7dba857abc271f3c29d0c80cfae01959c995c4381bf40f9e0d0e3c01",
+    "reports/six-hour-20261127/NINTH_REPLAY.json": "50e140b3a9e47bedddd61646a25d518ba729ee60e0f3ad93ea8f996e6fa67acc",
+    "reports/six-hour-20261127/SECOND_REPLAY.json": "7146b48fecbecd76cf26d10fc21dcd543a3e2dc4fc7def81a75d90f5f4b38ad0",
+    "reports/six-hour-20261127/SEVENTH_REPLAY.json": "81dea3157ffb8ed5ad17989a6f87265e89d41121de62e5e60c80dc41d55c7e7b",
+    "reports/six-hour-20261127/SIXTH_REPLAY.json": "0bc3ec78f437b0676350b4a105ffdbde3cbc2379b60d2344dd1ec68195c817b9",
+    "reports/six-hour-20261127/TENTH_REPLAY.json": "fd636f52a8d1cf1a926d5aefe096dda7ff812c0328f1a7d64948afd8ef13f34d",
+    "reports/six-hour-20261127/THIRD_REPLAY.json": "d30740e7cb372bf8056f40e3fefc7bca90bbd0264278817407ffcdee70c920ce"
+  },
+  "scope": "Distinct source modules, printed declaration audits, and exact finite control scripts; repeated dependencies counted once. Written analytic claims are not counted as formal proofs.",
+  "unique_control_script_count": 43,
+  "unique_dependency_module_count": 7,
+  "unique_dependency_printed_declaration_audit_count": 27,
+  "unique_new_lean_module_count": 51,
+  "unique_new_printed_declaration_audit_count": 208
+}

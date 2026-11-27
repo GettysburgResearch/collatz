@@ -1,0 +1,14 @@
+{
+  "scope": "Kernel replay of every QuantitativeReturn declaration into its imported environment; imported mathlib and the rebuilt project dependencies are retained",
+  "command": [
+    "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/leanchecker",
+    "-v",
+    "QuantitativeReturn"
+  ],
+  "object_sha256": "2938e4e007c5d20edefd622f56ac68e658302c9bdd1abc4b7e8ede490e681bc7",
+  "exit_code": 0,
+  "elapsed_seconds": 444.007,
+  "stdout": "replaying QuantitativeReturn\n",
+  "stderr": "",
+  "olean_directory": "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-serial-replay/build"
+}

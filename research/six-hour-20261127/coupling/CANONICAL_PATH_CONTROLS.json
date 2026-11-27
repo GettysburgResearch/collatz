@@ -1,0 +1,56 @@
+{
+  "edge_bound_per_ceiling_log2_of_input": 425138,
+  "global_canonical_source_factor": 98304,
+  "global_height_factor": "82778996644480/73179",
+  "global_integer_height_factor": 1131185131,
+  "literal_paths": [
+    {
+      "canonical_charges": 0,
+      "edges": 0,
+      "input": "1",
+      "maximum": "1"
+    },
+    {
+      "canonical_charges": 0,
+      "edges": 1,
+      "input": "2",
+      "maximum": "2"
+    },
+    {
+      "canonical_charges": 8,
+      "edges": 208,
+      "input": "27",
+      "maximum": "499400"
+    },
+    {
+      "canonical_charges": 6,
+      "edges": 193,
+      "input": "871",
+      "maximum": "7133300"
+    },
+    {
+      "canonical_charges": 22,
+      "edges": 676,
+      "input": "1215655",
+      "maximum": "100831207112"
+    },
+    {
+      "canonical_charges": 7,
+      "edges": 358,
+      "input": "170141183460469231731687303715884105727",
+      "maximum": "825953525871504560797619195283272648360588"
+    },
+    {
+      "canonical_charges": 76,
+      "edges": 2321,
+      "input": "969773729787523602876821942164080815560163",
+      "maximum": "5579596480031178871935069656113268615949587636"
+    }
+  ],
+  "local_tripling_edge_bound": 3780,
+  "max_first_stage_contraction": "725/763",
+  "max_first_stage_physical_height_factor": "162",
+  "max_initial_charges_in_one_descent": 8,
+  "max_initial_descent_edges_before_charge_replacement": 135,
+  "single_descent_edge_bound": 30367
+}
