@@ -1,0 +1,82 @@
+{
+  "duality": {
+    "all_component_pairs": 326,
+    "cut_pairs": 180,
+    "literal_grid_returns": 48870,
+    "local_order_comparisons": 1569750
+  },
+  "winding": {
+    "circuit_edges_compared": 2217,
+    "ordinary_and_reduced_numerator_circuits": 3,
+    "periodic_components": 745,
+    "positive_witnesses": 5296,
+    "trivial_cycle_examples": [
+      [
+        2,
+        1,
+        2,
+        0
+      ],
+      [
+        4,
+        1,
+        2,
+        0
+      ],
+      [
+        5,
+        1,
+        2,
+        0
+      ],
+      [
+        12,
+        3,
+        5,
+        1
+      ],
+      [
+        13,
+        3,
+        5,
+        1
+      ],
+      [
+        14,
+        3,
+        5,
+        1
+      ],
+      [
+        27,
+        8,
+        13,
+        3
+      ],
+      [
+        80,
+        5,
+        8,
+        2
+      ],
+      [
+        80,
+        5,
+        8,
+        2
+      ],
+      [
+        80,
+        5,
+        8,
+        2
+      ],
+      [
+        160,
+        22,
+        35,
+        9
+      ]
+    ]
+  }
+}

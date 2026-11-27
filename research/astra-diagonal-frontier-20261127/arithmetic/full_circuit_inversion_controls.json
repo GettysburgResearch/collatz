@@ -1,0 +1,100 @@
+{
+  "affine_sort": {
+    "transitive_affine_permutations": 3488,
+    "with_seam_inversions": 3485
+  },
+  "complete_circuits": {
+    "different_if_denominator_assumed_one": 918,
+    "examples": [
+      {
+        "denominator": 6719515981,
+        "full_states": 55,
+        "inversions": 10,
+        "strict_arc_splits": 10,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          2,
+          6,
+          3
+        ]
+      },
+      {
+        "denominator": 6719515981,
+        "full_states": 55,
+        "inversions": 14,
+        "strict_arc_splits": 12,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          2,
+          1,
+          6,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "denominator": 149450423,
+        "full_states": 47,
+        "inversions": 6,
+        "strict_arc_splits": 6,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          4,
+          1,
+          2,
+          1,
+          1,
+          5
+        ]
+      }
+    ],
+    "largest_crossed_scale_exponent_magnitude": 3,
+    "largest_inversion_count": 140,
+    "primitive_positive_circuits": 932,
+    "strict_arc_splits_for_applicable_ratio": 488,
+    "with_nonzero_inversions": 918
+  }
+}

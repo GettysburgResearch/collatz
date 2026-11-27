@@ -1,0 +1,82 @@
+{
+  "ordinary_local_control": {
+    "designated_integer_floor": 545709081523,
+    "independent_ordinary_sources": [
+      1099587966023,
+      1104527209193,
+      1115007650569,
+      1119946893739
+    ],
+    "ordinary_edges": 24,
+    "patched_integer_labels": 28,
+    "same_ideal_tetrad_integer_heights": [
+      0,
+      0,
+      -1,
+      -2,
+      -1,
+      0,
+      0
+    ],
+    "whole_integer_array": {
+      "exact_integer_transitions": 45971,
+      "least_adjacent_integer_curvature": 8,
+      "maximum_absolute_successor_error": 26,
+      "maximum_ordinary_source": 2795834498273,
+      "repaired_rank_intervals": 481,
+      "true_odd_valuations": 190537
+    }
+  },
+  "periodic_rational_countermodel": {
+    "actual_minimum_rank_in_initial_octave": 0,
+    "complete_gcd": "1",
+    "denominator_bits": 301971,
+    "denominator_sha256_big_endian": "e23f0f6dc6aad3ff6a59cb45edd6c1edf72fdccd0566cb835974e12e60f36829",
+    "determinant_bits": 301971,
+    "full_native_edges": 190537,
+    "period": 190537,
+    "profile_scale": 1420491705477,
+    "source_numerator_sha256_big_endian": "84ede90c10bc37958c077ade3bccf975d95e59a7f846234ad7bdea54f25f8f16",
+    "strict_width_16_over_3": true,
+    "tetrad_intervals_in_units_1_over_65536": [
+      [
+        20800,
+        20804
+      ],
+      [
+        31199,
+        31203
+      ],
+      [
+        -42136,
+        -42132
+      ],
+      [
+        -95971,
+        -95967
+      ],
+      [
+        -39211,
+        -39207
+      ],
+      [
+        39489,
+        39493
+      ],
+      [
+        29616,
+        29620
+      ]
+    ],
+    "total_clock": 301994
+  },
+  "shared_comparisons": {
+    "all_midpoint_scaled_lower": "0.48",
+    "minimizing_midpoint": [
+      1,
+      2
+    ],
+    "positive_ideal_scaled_tetrad": "(0.0031,0.0032)",
+    "unequal_midpoint_scaled_lower": "5.5"
+  }
+}

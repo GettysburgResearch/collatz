@@ -1,0 +1,62 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T16:11:41.154625+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "262566b4d01d45875f5db365d078d03d87b9d8eb08694927e7aa813a5715a962",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 22,
+    "executed_cases": 1,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "arithmetic/check_tetrad_rank.py",
+      "arithmetic/check_dual_cuts.py",
+      "arithmetic/check_full_step_chart.py",
+      "arithmetic/check_full_circuit_inversions.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_first_arrival_energy.py",
+      "source_sha256": "2de374f34a1041ad39b18b278fc0afdc77c6931930b334f06e4856f1c0eca2bb",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.12,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.175,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "[\n  {\n    \"canonical_odd_targets_below\": 2,\n    \"cubic_denominator\": \"1\",\n    \"cubic_numerator\": \"1\",\n    \"exact_first_sources\": 1,\n    \"first_arrival_rows\": 1,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 0,\n    \"rows_with_positive_lap_subtraction\": 0,\n    \"unrestricted_rows\": 1\n  },\n  {\n    \"canonical_odd_targets_below\": 6,\n    \"cubic_denominator\": \"68719476736000\",\n    \"cubic_numerator\": \"2345052143187\",\n    \"exact_first_sources\": 12,\n    \"first_arrival_rows\": 12,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 1,\n    \"rows_with_positive_lap_subtraction\": 1,\n    \"unrestricted_rows\": 13\n  },\n  {\n    \"canonical_odd_targets_below\": 18,\n    \"cubic_denominator\": \"10582270586423947034624000\",\n    \"cubic_numerator\": \"286259056447736877661917\",\n    \"exact_first_sources\": 73,\n    \"first_arrival_rows\": 54,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 2,\n    \"rows_with_positive_lap_subtraction\": 5,\n    \"unrestricted_rows\": 57\n  },\n  {\n    \"canonical_odd_targets_below\": 54,\n    \"cubic_denominator\": \"528686481278109101905510241464487596115023773499297325230587904000000\",\n    \"cubic_numerator\": \"2488536526311220164699227970597012412815419636705726608355234170671\",\n    \"exact_first_sources\": 276,\n    \"first_arrival_rows\": 138,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 3,\n    \"rows_with_positive_lap_subtraction\": 8,\n    \"unrestricted_rows\": 141\n  },\n  {\n    \"canonical_odd_targets_below\": 162,\n    \"cubic_denominator\": \"803718152648648899187933326595713179451508925554651829548881706599275831029928529063980130699599041427085810655639430571732617012711593778557881371462504827602904064246595997861640673936946495488000000000\",\n    \"cubic_numerator\": \"3434135520599214678284361920494631837625714165890730603693512593537735917849925380957772384050144445466226825434730599174367954046532148598376244414915095687358654279002326812165565568472729606603582009\",\n    \"exact_first_sources\": 705,\n    \"first_arrival_rows\": 323,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 4,\n    \"rows_with_positive_lap_subtraction\": 6,\n    \"unrestricted_rows\": 325\n  },\n  {\n    \"canonical_odd_targets_below\": 486,\n    \"cubic_denominator\": \"419679442065001077886241473531652667444518596575712159193675822351209713283975267146992937607995361508334332101293194584498301373364391283466302665469253574444200144431190165333647311303247745783804593458802436192407166824991244019254387110783173521711222724259054127375454118194360718669782743249858951454493012835399425329099467968106690967401684020290753211860476889593315922560131961073174547154265107539237384842724630120576781994236589945426993361559626141068371904097442882176076233913418653560930699637981716448182221532728723256343822046021179966284030849290604861200569737393178740085224122133471255592960000000\",\n    \"cubic_numerator\": \"1359247946234949973925608984150318283107930307500402684538729121411290552732952203219407750593595665557104062674242226536275289860301461305926588527711653461408447507674645065002887909446725360858645972918451247920175628442039248805499657432174192504040138115343677677838035265009823214841851235922356580994202031084596536988737864929610561192233477754634097972991436511188353170589763046067830839949946574493660394101948726953572222424364373855518514378852043776741249122807821566319910228252631289040854047232125271494562830336002319633124494296819409744043381098131905607882212949467562988008588762071577642731786121\",\n    \"exact_first_sources\": 1280,\n    \"first_arrival_rows\": 674,\n    \"native_clock_at_most\": 13,\n    \"odd_depth\": 5,\n    \"rows_with_positive_lap_subtraction\": 4,\n    \"unrestricted_rows\": 675\n  }\n]\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T16:11:41.450543+00:00"
+}

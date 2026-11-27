@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T15:59:59.752433+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "455e6e5a44d6e0f53b2df95fb57d50cf63303f17c7aea2e235893cdea5a89298",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 20,
+    "executed_cases": 2,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "arithmetic/check_tetrad_rank.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_dual_cuts.py",
+      "source_sha256": "44a911dcb4bc14afc384976dfacb0aaac6a638a8930729f06bcb3619bec01e9a",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 2.458,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 2.506,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"duality\": {\n    \"all_component_pairs\": 326,\n    \"cut_pairs\": 180,\n    \"literal_grid_returns\": 48870,\n    \"local_order_comparisons\": 1569750\n  },\n  \"winding\": {\n    \"circuit_edges_compared\": 2217,\n    \"ordinary_and_reduced_numerator_circuits\": 3,\n    \"periodic_components\": 745,\n    \"positive_witnesses\": 5296,\n    \"trivial_cycle_examples\": [\n      [\n        2,\n        1,\n        2,\n        0\n      ],\n      [\n        4,\n        1,\n        2,\n        0\n      ],\n      [\n        5,\n        1,\n        2,\n        0\n      ],\n      [\n        12,\n        3,\n        5,\n        1\n      ],\n      [\n        13,\n        3,\n        5,\n        1\n      ],\n      [\n        14,\n        3,\n        5,\n        1\n      ],\n      [\n        27,\n        8,\n        13,\n        3\n      ],\n      [\n        80,\n        5,\n        8,\n        2\n      ],\n      [\n        80,\n        5,\n        8,\n        2\n      ],\n      [\n        80,\n        5,\n        8,\n        2\n      ],\n      [\n        160,\n        22,\n        35,\n        9\n      ]\n    ]\n  }\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_full_step_chart.py",
+      "source_sha256": "c5b89f754bc9f1c8cd744ca1a6133c805a86ecf952bfb30a0979b5a7cebc63e3",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.34,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.331,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"completions_agree\": 95,\n  \"completions_split\": 25,\n  \"cutoffs_checked\": 120,\n  \"first_split\": [\n    22,\n    \"35/57\",\n    \"43/70\"\n  ],\n  \"literal_native_edges\": 54125,\n  \"ordinary_base_six_rotation\": \"2/3\",\n  \"ordinary_full_cycle\": [\n    1,\n    4,\n    2\n  ],\n  \"rational_denominator\": 7,\n  \"rational_numerators\": [\n    5,\n    11\n  ],\n  \"rational_period_clock_gcd\": 2\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T16:00:05.391004+00:00"
+}
