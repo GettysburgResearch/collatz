@@ -1,0 +1,109 @@
+{
+  "finished_utc": "2026-11-27T15:47:43.301884+00:00",
+  "fixtures": {
+    "rigidity/phase6/PRESSURE_CONTROLS.json": "947d0d122bed46eb17204baee66dad9c082eaa7eb78ca6fdd1a26bc81a7915c2"
+  },
+  "fixtures_unchanged": true,
+  "passed": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rows": [
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase5/check_dimer.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.335,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "factor grammar 8358 words up to 16 ones\nfixed physical lag inversions 187742 floor controls 9\nverified floor 2^71, odd threshold 45, rational log upper bound 58640620148053/1547425049106725343623905280\nreverse ternary word replays 2046\nfour positive-entropy all-period budget powers [17, 26, 12, 44]\nmoving-interval images 567 and inverse cylinders 762\n",
+          "output_sha256": "8ac08bce080d62786d5cca994b392c68307f7844c227378a29b5473308713557"
+        },
+        {
+          "elapsed_seconds": 0.459,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "factor grammar 8358 words up to 16 ones\nfixed physical lag inversions 187742 floor controls 9\nverified floor 2^71, odd threshold 45, rational log upper bound 58640620148053/1547425049106725343623905280\nreverse ternary word replays 2046\nfour positive-entropy all-period budget powers [17, 26, 12, 44]\nmoving-interval images 567 and inverse cylinders 762\n",
+          "output_sha256": "8ac08bce080d62786d5cca994b392c68307f7844c227378a29b5473308713557"
+        }
+      ],
+      "sha256": "cd1a7bb5c50b290cb632f4b0bdfef0339cce0f4d7c2fe9a3ee9047e9f93de51c",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "cycles/phase5/check_entropy_tail.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.361,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "binary canonical words 18722 divisor lists 193 strata 49\ndimer canonical words 2211 divisor lists 150 strata 30\n",
+          "output_sha256": "289470beb10a304559170b5d82a1f5965fd43addcbe0d54bd6acfb67b604e127"
+        },
+        {
+          "elapsed_seconds": 0.386,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "binary canonical words 18722 divisor lists 193 strata 49\ndimer canonical words 2211 divisor lists 150 strata 30\n",
+          "output_sha256": "289470beb10a304559170b5d82a1f5965fd43addcbe0d54bd6acfb67b604e127"
+        }
+      ],
+      "sha256": "0f21f5169544556bbbc636f725afbba4dbba5e013143c58d06ebb40d83085a21",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [
+        "--check"
+      ],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "rigidity/phase6/pressure_controls.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.454,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "{\n  \"exact_jet_cancellations\": [\n    {\n      \"correction_depth\": 0,\n      \"leading_supremum\": \"3/2\",\n      \"root_classes\": 6,\n      \"zero_jet_through_order\": 0\n    },\n    {\n      \"correction_depth\": 1,\n      \"leading_supremum\": \"4\",\n      \"root_classes\": 18,\n      \"zero_jet_through_order\": 1\n    },\n    {\n      \"correction_depth\": 2,\n      \"leading_supremum\": \"9\",\n      \"root_classes\": 54,\n      \"zero_jet_through_order\": 2\n    },\n    {\n      \"correction_depth\": 3,\n      \"leading_supremum\": \"36\",\n      \"root_classes\": 162,\n      \"zero_jet_through_order\": 3\n    }\n  ],\n  \"finite_positive_bounds\": [\n    {\n      \"correction_depth\": 0,\n      \"parent_classes\": 6,\n      \"ratio_sha256\": \"a044781ed0468b11219584bc19422dc93d804717c1add79738c4205116e0172e\",\n      \"relative_error_below\": \"1/66\",\n      \"two_step_children\": 18\n    },\n    {\n      \"correction_depth\": 1,\n      \"parent_classes\": 18,\n      \"ratio_sha256\": \"62db4c2a84a7dfd58f2a018046d4be344c9ec2c0cae934c861962690348997f0\",\n      \"relative_error_below\": \"1/2479\",\n      \"two_step_children\": 54\n    },\n    {\n      \"correction_depth\": 2,\n      \"parent_classes\": 54,\n      \"ratio_sha256\": \"d6b860df31350f0360a205c9de07e3322b5304876d5cbd89de4fe767689a5aa1\",\n      \"relative_error_below\": \"1/108172\",\n      \"two_step_children\": 162\n    }\n  ],\n  \"parameter_for_rational_action\": \"1/100\"\n}\n",
+          "output_sha256": "947d0d122bed46eb17204baee66dad9c082eaa7eb78ca6fdd1a26bc81a7915c2"
+        },
+        {
+          "elapsed_seconds": 0.515,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "{\n  \"exact_jet_cancellations\": [\n    {\n      \"correction_depth\": 0,\n      \"leading_supremum\": \"3/2\",\n      \"root_classes\": 6,\n      \"zero_jet_through_order\": 0\n    },\n    {\n      \"correction_depth\": 1,\n      \"leading_supremum\": \"4\",\n      \"root_classes\": 18,\n      \"zero_jet_through_order\": 1\n    },\n    {\n      \"correction_depth\": 2,\n      \"leading_supremum\": \"9\",\n      \"root_classes\": 54,\n      \"zero_jet_through_order\": 2\n    },\n    {\n      \"correction_depth\": 3,\n      \"leading_supremum\": \"36\",\n      \"root_classes\": 162,\n      \"zero_jet_through_order\": 3\n    }\n  ],\n  \"finite_positive_bounds\": [\n    {\n      \"correction_depth\": 0,\n      \"parent_classes\": 6,\n      \"ratio_sha256\": \"a044781ed0468b11219584bc19422dc93d804717c1add79738c4205116e0172e\",\n      \"relative_error_below\": \"1/66\",\n      \"two_step_children\": 18\n    },\n    {\n      \"correction_depth\": 1,\n      \"parent_classes\": 18,\n      \"ratio_sha256\": \"62db4c2a84a7dfd58f2a018046d4be344c9ec2c0cae934c861962690348997f0\",\n      \"relative_error_below\": \"1/2479\",\n      \"two_step_children\": 54\n    },\n    {\n      \"correction_depth\": 2,\n      \"parent_classes\": 54,\n      \"ratio_sha256\": \"d6b860df31350f0360a205c9de07e3322b5304876d5cbd89de4fe767689a5aa1\",\n      \"relative_error_below\": \"1/108172\",\n      \"two_step_children\": 162\n    }\n  ],\n  \"parameter_for_rational_action\": \"1/100\"\n}\n",
+          "output_sha256": "947d0d122bed46eb17204baee66dad9c082eaa7eb78ca6fdd1a26bc81a7915c2"
+        }
+      ],
+      "sha256": "12eb7e7670bf06a1c8ed910c73483f5d2ccef3ef761af02afc8f966eb0bab986",
+      "source_unchanged": true
+    },
+    {
+      "arguments": [],
+      "identical_outputs": true,
+      "passed": true,
+      "path": "root/phase5/check_protection.py",
+      "runs": [
+        {
+          "elapsed_seconds": 0.091,
+          "exit_code": 0,
+          "mode": "normal",
+          "output": "ordinary mirror origins checked: 16384 even budgets: 0 through 14\nodd origin table through seven evens: [[1], [], [3], [], [11], [15], [29, 43], [39, 59]]\nfull-space protected lower bounds: joint 284051/829440 zero class 1041139/4147200\nstrict crossing cylinders: n=4 mod9; n=60 mod81\n",
+          "output_sha256": "3740f19c4a1c8ddcb4a4eb850a22a7d416ce639f46a182a66e0fab51f41026ac"
+        },
+        {
+          "elapsed_seconds": 0.141,
+          "exit_code": 0,
+          "mode": "optimized",
+          "output": "ordinary mirror origins checked: 16384 even budgets: 0 through 14\nodd origin table through seven evens: [[1], [], [3], [], [11], [15], [29, 43], [39, 59]]\nfull-space protected lower bounds: joint 284051/829440 zero class 1041139/4147200\nstrict crossing cylinders: n=4 mod9; n=60 mod81\n",
+          "output_sha256": "3740f19c4a1c8ddcb4a4eb850a22a7d416ce639f46a182a66e0fab51f41026ac"
+        }
+      ],
+      "sha256": "00064c260cc14b4e8848433dd27d64d31170792cb595c7378120f305d916bc28",
+      "source_unchanged": true
+    }
+  ]
+}
