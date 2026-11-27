@@ -1,0 +1,109 @@
+{
+  "schema": "collatz-bounded-controls/v1",
+  "created_utc": "2026-11-27T14:25:06.413681+00:00",
+  "commit": "9a7fb6b7f2b84fe2e4d0a9a5059d172039d3a589",
+  "scope": "Four new finite programs from the frozen second scientific checkpoint, normal and optimized runs; not an infinite theorem check. Earlier unchanged controls were already replayed at checkpoint one.",
+  "passed": true,
+  "programs": [
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_finite_patterns.py",
+      "source_sha256": "9e26d8d1117829cd3bfb52f6e4e4197012b6924a9cfcb16d79fbb52c3ba5a5d7",
+      "runs": [
+        {
+          "flags": [],
+          "seconds": 1.1990871439993498,
+          "exit_code": 0,
+          "stdout_sha256": "d0af1a65166458318178395d4866dafce56d6363616ac6f2520201ed8416578d",
+          "stderr": ""
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "seconds": 1.1233271389992296,
+          "exit_code": 0,
+          "stdout_sha256": "d0af1a65166458318178395d4866dafce56d6363616ac6f2520201ed8416578d",
+          "stderr": ""
+        }
+      ],
+      "outputs_identical": true,
+      "passed": true,
+      "stdout": "PASS 1024 consecutive first arrivals to 1, clock 1903, grade 930\nPASS 1948672 ordinary steps in separate first-hit traces\n"
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_coprime_steering.py",
+      "source_sha256": "2bb6b5b4a73c8a58a2c21f5371676cca57b0fc67ae5c367d61cadd47a5fab950",
+      "runs": [
+        {
+          "flags": [],
+          "seconds": 1.4586296920006134,
+          "exit_code": 0,
+          "stdout_sha256": "b68f9b572c1257f96f969cdfb0f2c207e4bc4b30b578e9c432bb3d4eebb7e1b2",
+          "stderr": ""
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "seconds": 1.4043134340008692,
+          "exit_code": 0,
+          "stdout_sha256": "b68f9b572c1257f96f969cdfb0f2c207e4bc4b30b578e9c432bb3d4eebb7e1b2",
+          "stderr": ""
+        }
+      ],
+      "outputs_identical": true,
+      "passed": true,
+      "stdout": "PASS 768 ordinary coprime-steering routes\n"
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_near_octave.py",
+      "source_sha256": "8ec6663b35f87c1957d76fd081d39eb9df196621b92310b1aead9dedb793c7d5",
+      "runs": [
+        {
+          "flags": [],
+          "seconds": 9.271610501000396,
+          "exit_code": 0,
+          "stdout_sha256": "06a85bb9f8e9004f419d76c4098687c536cd2b2c4a11be965d0de1ffb70eaafb",
+          "stderr": ""
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "seconds": 8.250133803001518,
+          "exit_code": 0,
+          "stdout_sha256": "06a85bb9f8e9004f419d76c4098687c536cd2b2c4a11be965d0de1ffb70eaafb",
+          "stderr": ""
+        }
+      ],
+      "outputs_identical": true,
+      "passed": true,
+      "stdout": "{\n  \"arbitrary_rooted_both_signs\": 163,\n  \"maximum_minimum_rooted_mask_degree\": 15,\n  \"maximum_packing_window\": 305,\n  \"minimum_rooted_coprime_words\": 268,\n  \"minimum_rooted_negative_mask\": 0,\n  \"minimum_rooted_nontrivial_cancellations\": 21,\n  \"minimum_rooted_positive_mask\": 223,\n  \"noncoprime_primitive_words\": 29,\n  \"positive_packing_windows\": 297,\n  \"primitive_near_octave_words\": 297\n}\n"
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_spectral.py",
+      "source_sha256": "eaf5ca7416ecc03f4fe0a81c6d924c1b4ca3ff33f3c88d0b0ef4d428f3cd3283",
+      "runs": [
+        {
+          "flags": [],
+          "seconds": 7.126287802000661,
+          "exit_code": 0,
+          "stdout_sha256": "85d11a17c5c1c2ad8b54073479be4b1557336c380791911c5e10e8f6ac49e106",
+          "stderr": ""
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "seconds": 7.032223418000285,
+          "exit_code": 0,
+          "stdout_sha256": "85d11a17c5c1c2ad8b54073479be4b1557336c380791911c5e10e8f6ac49e106",
+          "stderr": ""
+        }
+      ],
+      "outputs_identical": true,
+      "passed": true,
+      "stdout": "{\n  \"controls\": [\n    {\n      \"g\": 1,\n      \"h\": 485,\n      \"active\": [\n        1\n      ],\n      \"degree\": 1,\n      \"q_bits\": 476,\n      \"active_product_bits\": 476\n    },\n    {\n      \"g\": 2,\n      \"h\": 970,\n      \"active\": [\n        1,\n        2\n      ],\n      \"degree\": 2,\n      \"q_bits\": 962,\n      \"active_product_bits\": 962\n    },\n    {\n      \"g\": 3,\n      \"h\": 1455,\n      \"active\": [\n        1,\n        3\n      ],\n      \"degree\": 3,\n      \"q_bits\": 1447,\n      \"active_product_bits\": 1447\n    },\n    {\n      \"g\": 4,\n      \"h\": 1940,\n      \"active\": [\n        1,\n        4\n      ],\n      \"degree\": 3,\n      \"q_bits\": 1447,\n      \"active_product_bits\": 1447\n    },\n    {\n      \"g\": 5,\n      \"h\": 2425,\n      \"active\": [\n        1,\n        5\n      ],\n      \"degree\": 5,\n      \"q_bits\": 2418,\n      \"active_product_bits\": 2418\n    },\n    {\n      \"g\": 6,\n      \"h\": 2910,\n      \"active\": [\n        1,\n        2,\n        3\n      ],\n      \"degree\": 4,\n      \"q_bits\": 1933,\n      \"active_product_bits\": 1933\n    },\n    {\n      \"g\": 8,\n      \"h\": 3880,\n      \"active\": [\n        1,\n        8\n      ],\n      \"degree\": 5,\n      \"q_bits\": 2417,\n      \"active_product_bits\": 2417\n    },\n    {\n      \"g\": 9,\n      \"h\": 4365,\n      \"active\": [\n        1,\n        9\n      ],\n      \"degree\": 7,\n      \"q_bits\": 3387,\n      \"active_product_bits\": 3387\n    },\n    {\n      \"g\": 10,\n      \"h\": 4850,\n      \"active\": [\n        1,\n        2,\n        5\n      ],\n      \"degree\": 6,\n      \"q_bits\": 2904,\n      \"active_product_bits\": 2904\n    },\n    {\n      \"g\": 12,\n      \"h\": 5820,\n      \"active\": [\n        1,\n        3,\n        4\n      ],\n      \"degree\": 5,\n      \"q_bits\": 2418,\n      \"active_product_bits\": 2418\n    },\n    {\n      \"g\": 15,\n      \"h\": 7275,\n      \"active\": [\n        1,\n        3,\n        5\n      ],\n      \"degree\": 7,\n      \"q_bits\": 3389,\n      \"active_product_bits\": 3389\n    },\n    {\n      \"g\": 18,\n      \"h\": 8730,\n      \"active\": [\n        1,\n        2,\n        9\n      ],\n      \"degree\": 8,\n      \"q_bits\": 3873,\n      \"active_product_bits\": 3873\n    },\n    {\n      \"g\": 30,\n      \"h\": 14550,\n      \"active\": [\n        1,\n        2,\n        3,\n        5\n      ],\n      \"degree\": 8,\n      \"q_bits\": 3875,\n      \"active_product_bits\": 3875\n    },\n    {\n      \"g\": 4,\n      \"h\": 1940,\n      \"active\": [\n        1,\n        2,\n        4\n      ],\n      \"degree\": 4,\n      \"q_bits\": 1933,\n      \"active_product_bits\": 1933\n    },\n    {\n      \"g\": 6,\n      \"h\": 2910,\n      \"active\": [\n        1,\n        2,\n        3,\n        6\n      ],\n      \"degree\": 6,\n      \"q_bits\": 2903,\n      \"active_product_bits\": 2903\n    },\n    {\n      \"g\": 12,\n      \"h\": 5820,\n      \"active\": [\n        1,\n        2,\n        3,\n        4,\n        6,\n        12\n      ],\n      \"degree\": 12,\n      \"q_bits\": 5814,\n      \"active_product_bits\": 5814\n    }\n  ],\n  \"exhaustive_binary_spaces\": [\n    {\n      \"g\": 1,\n      \"minimum_degree\": 1,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 2\n    },\n    {\n      \"g\": 2,\n      \"minimum_degree\": 2,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 4\n    },\n    {\n      \"g\": 3,\n      \"minimum_degree\": 3,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 8\n    },\n    {\n      \"g\": 4,\n      \"minimum_degree\": 3,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 6\n    },\n    {\n      \"g\": 5,\n      \"minimum_degree\": 5,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 32\n    },\n    {\n      \"g\": 6,\n      \"minimum_degree\": 4,\n      \"smaller_candidate_subspaces\": 1,\n      \"binary_rows_in_smaller_subspaces\": 2,\n      \"binary_rows_in_sharp_subspace\": 10\n    },\n    {\n      \"g\": 7,\n      \"minimum_degree\": 7,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 128\n    },\n    {\n      \"g\": 8,\n      \"minimum_degree\": 5,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 18\n    },\n    {\n      \"g\": 9,\n      \"minimum_degree\": 7,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 56\n    },\n    {\n      \"g\": 10,\n      \"minimum_degree\": 6,\n      \"smaller_candidate_subspaces\": 1,\n      \"binary_rows_in_smaller_subspaces\": 2,\n      \"binary_rows_in_sharp_subspace\": 34\n    },\n    {\n      \"g\": 11,\n      \"minimum_degree\": 11,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 2048\n    },\n    {\n      \"g\": 12,\n      \"minimum_degree\": 5,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 12\n    },\n    {\n      \"g\": 13,\n      \"minimum_degree\": 13,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 8192\n    },\n    {\n      \"g\": 14,\n      \"minimum_degree\": 8,\n      \"smaller_candidate_subspaces\": 1,\n      \"binary_rows_in_smaller_subspaces\": 2,\n      \"binary_rows_in_sharp_subspace\": 130\n    },\n    {\n      \"g\": 15,\n      \"minimum_degree\": 7,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 38\n    },\n    {\n      \"g\": 16,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 258\n    },\n    {\n      \"g\": 17,\n      \"minimum_degree\": 17,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 131072\n    },\n    {\n      \"g\": 18,\n      \"minimum_degree\": 8,\n      \"smaller_candidate_subspaces\": 1,\n      \"binary_rows_in_smaller_subspaces\": 2,\n      \"binary_rows_in_sharp_subspace\": 58\n    },\n    {\n      \"g\": 20,\n      \"minimum_degree\": 7,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 36\n    },\n    {\n      \"g\": 21,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 134\n    },\n    {\n      \"g\": 22,\n      \"minimum_degree\": 12,\n      \"smaller_candidate_subspaces\": 1,\n      \"binary_rows_in_smaller_subspaces\": 2,\n      \"binary_rows_in_sharp_subspace\": 2050\n    },\n    {\n      \"g\": 24,\n      \"minimum_degree\": 7,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 24\n    },\n    {\n      \"g\": 28,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 132\n    },\n    {\n      \"g\": 30,\n      \"minimum_degree\": 8,\n      \"smaller_candidate_subspaces\": 3,\n      \"binary_rows_in_smaller_subspaces\": 42,\n      \"binary_rows_in_sharp_subspace\": 40\n    },\n    {\n      \"g\": 36,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 60\n    },\n    {\n      \"g\": 40,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 48\n    },\n    {\n      \"g\": 42,\n      \"minimum_degree\": 10,\n      \"smaller_candidate_subspaces\": 3,\n      \"binary_rows_in_smaller_subspaces\": 138,\n      \"binary_rows_in_sharp_subspace\": 136\n    },\n    {\n      \"g\": 60,\n      \"minimum_degree\": 9,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 42\n    },\n    {\n      \"g\": 70,\n      \"minimum_degree\": 12,\n      \"smaller_candidate_subspaces\": 3,\n      \"binary_rows_in_smaller_subspaces\": 162,\n      \"binary_rows_in_sharp_subspace\": 160\n    },\n    {\n      \"g\": 84,\n      \"minimum_degree\": 11,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 138\n    },\n    {\n      \"g\": 90,\n      \"minimum_degree\": 12,\n      \"smaller_candidate_subspaces\": 3,\n      \"binary_rows_in_smaller_subspaces\": 90,\n      \"binary_rows_in_sharp_subspace\": 88\n    },\n    {\n      \"g\": 105,\n      \"minimum_degree\": 13,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 164\n    },\n    {\n      \"g\": 120,\n      \"minimum_degree\": 11,\n      \"smaller_candidate_subspaces\": 0,\n      \"binary_rows_in_smaller_subspaces\": 0,\n      \"binary_rows_in_sharp_subspace\": 54\n    },\n    {\n      \"g\": 210,\n      \"minimum_degree\": 14,\n      \"smaller_candidate_subspaces\": 7,\n      \"binary_rows_in_smaller_subspaces\": 500,\n      \"binary_rows_in_sharp_subspace\": 166\n    }\n  ],\n  \"direct_all_binary_unions\": [\n    {\n      \"g\": 1,\n      \"words\": 2,\n      \"realized_supports\": 1,\n      \"joint_supports\": 1,\n      \"minimum_degree\": 1\n    },\n    {\n      \"g\": 2,\n      \"words\": 4,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 2\n    },\n    {\n      \"g\": 3,\n      \"words\": 8,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 3\n    },\n    {\n      \"g\": 4,\n      \"words\": 16,\n      \"realized_supports\": 4,\n      \"joint_supports\": 4,\n      \"minimum_degree\": 3\n    },\n    {\n      \"g\": 5,\n      \"words\": 32,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 5\n    },\n    {\n      \"g\": 6,\n      \"words\": 64,\n      \"realized_supports\": 6,\n      \"joint_supports\": 7,\n      \"minimum_degree\": 4\n    },\n    {\n      \"g\": 7,\n      \"words\": 128,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 7\n    },\n    {\n      \"g\": 8,\n      \"words\": 256,\n      \"realized_supports\": 8,\n      \"joint_supports\": 8,\n      \"minimum_degree\": 5\n    },\n    {\n      \"g\": 9,\n      \"words\": 512,\n      \"realized_supports\": 4,\n      \"joint_supports\": 4,\n      \"minimum_degree\": 7\n    },\n    {\n      \"g\": 10,\n      \"words\": 1024,\n      \"realized_supports\": 6,\n      \"joint_supports\": 7,\n      \"minimum_degree\": 6\n    },\n    {\n      \"g\": 11,\n      \"words\": 2048,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 11\n    },\n    {\n      \"g\": 12,\n      \"words\": 4096,\n      \"realized_supports\": 21,\n      \"joint_supports\": 27,\n      \"minimum_degree\": 5\n    },\n    {\n      \"g\": 13,\n      \"words\": 8192,\n      \"realized_supports\": 2,\n      \"joint_supports\": 2,\n      \"minimum_degree\": 13\n    },\n    {\n      \"g\": 14,\n      \"words\": 16384,\n      \"realized_supports\": 6,\n      \"joint_supports\": 7,\n      \"minimum_degree\": 8\n    },\n    {\n      \"g\": 15,\n      \"words\": 32768,\n      \"realized_supports\": 6,\n      \"joint_supports\": 7,\n      \"minimum_degree\": 7\n    },\n    {\n      \"g\": 16,\n      \"words\": 65536,\n      \"realized_supports\": 16,\n      \"joint_supports\": 16,\n      \"minimum_degree\": 9\n    }\n  ]\n}\n"
+    }
+  ]
+}

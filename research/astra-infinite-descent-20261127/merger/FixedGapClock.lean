@@ -13,7 +13,7 @@ private theorem half_class (s b : ℕ) : ∃ t, 2*t ≡ b [MOD 3^s] := by
     rw [show 2*((b+3^s)/2)=b+3^s by omega]
     simp [Nat.ModEq]
 
-private theorem dyadic_class (s h i c : ℕ) : ∃ t, 2^h*t+i ≡ c [MOD 3^s] := by
+theorem dyadic_class (s h i c : ℕ) : ∃ t, 2^h*t+i ≡ c [MOD 3^s] := by
   have all (b : ℕ) : ∃ t, 2^h*t ≡ b [MOD 3^s] := by
     induction h generalizing b with
     | zero => exact ⟨b,by simp [Nat.ModEq]⟩

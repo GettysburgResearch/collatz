@@ -1,3 +1,7 @@
+The [second checkpoint](CHECKPOINT_02.md) adds a fresh 42-module,
+1,901-declaration replay. The first checkpoint below remains its own
+exact historical record.
+
 # First reproducible checkpoint
 
 The fresh strict rebuild passed all **32 Lean modules** and audited **1,655

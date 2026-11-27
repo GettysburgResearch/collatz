@@ -1,6 +1,6 @@
 # Counting disjoint first-hit patterns near the minimum possible clock
 
-**PROPOSED written theorem.** Let $F$ be a fixed finite set of nonnegative offsets containing zero, fix a relative width $\delta>0$, and fix the source congruence data of a [relative-window placement theorem](FAST_FIRST_HIT_PAIRS.md). For pairs, one can take $F=\{0,d\}$ and any prescribed ternary source class. The [finite-profile extension](FINITE_BLOCKS.md) gives arbitrary fixed finite $F$ and prescribed mixed binary and ternary residues. Write
+**PROPOSED written theorem.** Let $F$ be a fixed finite set of nonnegative offsets containing zero, fix a relative width $\delta>0$, and fix the source congruence data of a [relative-window placement theorem](FAST_FIRST_HIT_PAIRS.md). For pairs, one can take $F=\{0,d\}$ and any prescribed ternary source class. The [Lean-checked finite-profile extension](FastBlocks.lean) gives arbitrary fixed finite $F$ and prescribed mixed binary and ternary residues. Write
 $$
                       L=\log_2(X/y),\qquad a=\log_2 3.
 $$

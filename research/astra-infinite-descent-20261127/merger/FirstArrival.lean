@@ -95,7 +95,7 @@ theorem branch (y : ℕ) (unit : y%3≠0) : ∃ z e, z%2=1 ∧ z%3≠0 ∧
     exact ⟨w,e+6,wo,by dsimp [w]; omega,by omega,by omega,out,first_gap _ _ _ (by omega) unit eqw out,ow⟩
   · exact ⟨z,e,odd,zu,ep,by omega,inside,first_gap _ _ _ ep unit eq inside,oz⟩
 
-private theorem join {h e x z y : ℕ} (meet : run h x=z) (away : ¬ Future y z) (leg : First e z y) :
+theorem join {h e x z y : ℕ} (meet : run h x=z) (away : ¬ Future y z) (leg : First e z y) :
     First (h+e) x y := by
   have all:=(append h e x).1
   rw [meet,leg.1] at all

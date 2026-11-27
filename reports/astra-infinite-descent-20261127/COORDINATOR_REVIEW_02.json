@@ -1,0 +1,55 @@
+{
+  "schema": "collatz-coordinator-review/v2",
+  "reviewer": "root coordinator",
+  "scope": "Second-checkpoint additions, narrow mathematical reconstruction, not universal Collatz",
+  "sources": [
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/AffineProfiles.lean",
+      "sha256": "a496396e57c3a9f74a7b7e0c4f05608e97e87074c57c7dd8952ab3f14f81112f",
+      "evidence": "formal source inspected",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/BlockClock.lean",
+      "sha256": "b878867d71b1b71d13850609220b8099fe8c43681f80f58bfe18428579f2235f",
+      "evidence": "formal source inspected",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/IndependentClocks.lean",
+      "sha256": "d6103f0f507724f757eede812cc9366e78af3e6a3c72f848b1437a71b40f6342",
+      "evidence": "formal source inspected",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/NativeInversion.lean",
+      "sha256": "354e6be62315b9ecf8711d37ec7d4b6680a5452bf5fcb1b50ddd61177e405040",
+      "evidence": "formal source inspected",
+      "boundary": "NativeInversion encodes actual integer step equations; full periodic-lag alignment is written"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/COPRIME_NEAR_OCTAVE.md",
+      "sha256": "e6a9c903b7cdfb47525c0d3f1f76036b3626c78873348e19abf71ee94c03345e",
+      "evidence": "written proof independently reconstructed",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/NEAR_OCTAVE_PACKING.md",
+      "sha256": "e808f2f0a807e208c33da3ea4606fcc7ce77cf21a70752a6bb3e5f0d96ff671a",
+      "evidence": "written proof independently reconstructed",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/escape/MAXIMAL_ASCENTS.md",
+      "sha256": "cbd0590baa12a475daa55a4da9b2f6e2d901b1c7acb3c88c4491a2b99bf7683b",
+      "evidence": "written proof independently reconstructed",
+      "boundary": "MAXIMAL_ASCENTS restates a prior stronger forward restriction; this packet credits it"
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/escape/TILTED_HEIGHT.md",
+      "sha256": "cff14ef8f2563e89be9ecdb2788ec04dde506018e7e80ea21910437cdc11684f",
+      "evidence": "written proof independently reconstructed",
+      "boundary": "full asymptotic/source scope remains as stated in the linked note"
+    }
+  ]
+}

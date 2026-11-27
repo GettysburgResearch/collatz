@@ -65,6 +65,27 @@ Wu and Wang's Theorem 1 on three-term linear forms in $1,\log2,\log3$ implies $\
 
 PR205 and its PR201/203 inputs already give linearly many first-hit sources in thinner-than-fixed relative windows, with mixed digits and prescribed clock residues. Its fixed-target, all-location width exponent at fixed clock modulus is $1/(2\cdot4.1163051)$, and its favorable bands have $\log X$ of order $q_m^2$. Their construction counts central total-valuation histories. Here the tradeoff concerns one near-fastest actual source, a number of odd departures chosen across a range of order $\log(Z/y)$, and constants uniform over all odd unit targets. The rank-one phase argument with the all-prefix upper inclusion also identifies the worst moving-target mesh. Finite fixed-length rotation nets in other Collatz orbit-placement constructions appear in Weaver's paper 222. [Weaver, *The order of odd Collatz states within a factor of two*](https://rstation.ai/problems/collatz/papers/222)
 
+
+## Optimal clock cost for a fixed synchronized pattern
+
+Fix any finite set of nonnegative offsets \(E\) containing zero, and fix any binary cylinder and ternary precision as in the [finite-pattern theorem](../merger/FINITE_BLOCKS.md). For \(0<w<1\) let \(C_E(w)\) be the infimum of the additive clock budgets that place all of \(x+E\) in each sufficiently large interval \([Z,2^wZ)\), with the prescribed source residues and a common first visit to the supplied odd unit target \(y\) at a common grade and clock \(t\). The onset \(Z/y\) may depend on the fixed data and on \(w\), but is uniform in the odd unit target. Measure the additive budget as \(t-\log_2(x/y)\). Put
+\[
+   J_\le(w)=\min\{j:\Delta_j\le w\},\qquad
+   J_<(w)=\min\{j:\Delta_j<w\}.
+\]
+For a constant \(g_E\) depending only on the prescribed finite pattern and source cylinders,
+\[
+ \alpha J_\le(w)\ \le C_E(w)\
+      \le \alpha\big(J_<(w)+g_E+1\big)+\log_2(4/3).                  \tag{4}
+\]
+In particular away from the exact gap lengths the optimal cost differs from \(\alpha J_<(w)\) by a bounded amount independent of the width.
+
+For the lower bound the single arm \(x\) already forces \(t-\log_2(x/y)\ge\alpha q\) at grade \(q\). If a budget permits at most \(j<J_\le(w)\), its ideal phases have a gap strictly larger than \(w\). At arbitrarily large odd unit \(y\), the all-prefix phase error \(\nu_*\) in (3) is arbitrarily small. An arc of length \(w\) then avoids every realized phase at *all* heights, and a suitable arbitrarily large \(Z\) places its full window in that arc.
+
+For the upper bound use the fixed physical routing prefix of length \(H\) and grade \(g_E\) from the finite-pattern theorem. For every positive target \(z\) prime to three it supplies a start \(x\) in the required source classes with every arm at \(z\) after \(H\) steps. Its affine error satisfies \(0\le Az-x\le 2^H\), \(A=2^H/3^{g_E}\). Choose an odd unit predecessor \(b\) of the supplied \(y\) lying outside the forward orbit of \(y\), as in that theorem. It hits \(y\) after one odd departure at a uniformly bounded clock \(e\), with \(3b+1=2^e y\) and \(b/y\) bounded above and below absolutely. Any route first reaches \(y\) after its visit to this \(b\).
+
+Apply the phase ladder at \(b\) with \(D=J_<(w)\). Multiplication by \(A\) and changing the basepoint from \(b\) to \(y\) translate its common circular phase. The positive slack \(w-\Delta_D\) accommodates the ladder defects by increasing \(L\), and accommodates all block offsets and the affine error \(2^H\) by increasing \(Z/y\). In detail choose a strictly smaller interior arc of log length between \(\Delta_D\) and \(w\). Target \(Az\) in this arc, so that moving the finite distance from \(Az\) to any \(x+i\) preserves the outer interval uniformly. Lift its dyadic phase with the corresponding octave as in (1). For the arm \(x\), the first prefix correction \(x/(Az)\) tends uniformly to one with \(Z/y\). The ladder correction can be made uniformly as close to one as desired by increasing \(L\). The last single edge has correction \(3b/(3b+1)\ge3/4\). All arms first reach \(y\), and the total common grade is at most \(D+g_E+1\). The full clock excess is this grade times \(\alpha\) minus the logarithm to base two of the product of the three corrections. Taking the infimum over budgets gives (4). The two definitions of \(J\) retain the possible exact-gap boundary without assuming a strict inequality there.
+
 ## Distance from the forward problem
 
 An actual predecessor at some point of every specified source interval does not select the integer at that interval's endpoint. At $Z=2^J$ even the favorable guaranteed width in this result is of order $2^J/J$. This exceeds the available all-member synchronization lengths. No density input is needed for this gap statement, and no averaging across starting values makes the actual designated pair meet.

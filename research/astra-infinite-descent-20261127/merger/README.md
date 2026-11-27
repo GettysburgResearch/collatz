@@ -4,6 +4,8 @@
 
 The [first-arrival construction](FirstArrival.lean) also makes every sufficiently large supplied clock the *first* visit to the target for both sources, including periodic targets. Combining it with the ordinary inverse phase ladder places such a pair entirely inside every sufficiently large interval $[X,(1+\delta)X]$, with a common first clock at most $\log_2(X/y)+O_{d,s,\delta}(1)$. [FastPairs.lean](FastPairs.lean) proves the pair assertion with no extra hypotheses. The accompanying written analysis also treats simultaneous congruences on time and odd count. [First-hit pairs in every relative interval](FAST_FIRST_HIT_PAIRS.md)
 
+The [finite-family theorem](FINITE_BLOCKS.md) extends the all-clock first-arrival conclusion to every prescribed finite list of offsets and every initial binary cylinder. [BlockClock.lean](BlockClock.lean) proves the mixed binary and ternary endpoint claim; the [additional coprime steering extension](COPRIME_STEERING.md) treats arbitrary arithmetic progressions in writing. The [near-minimum-time counting theorem](FAST_COUNTING.md) quantifies the number of distinct disjoint first-hit patterns in a single window.
+
 ## A fixed separation, endpoint, source residue and clock
 
 For every $d,s\ge 0$, there are natural numbers $B,g$ depending only on $d,s$ such that for **every** $D\ge B$, every natural $y$ prime to three and every residue $c\bmod 3^s$, there exists an ordinary positive $x\equiv c\bmod 3^s$ satisfying

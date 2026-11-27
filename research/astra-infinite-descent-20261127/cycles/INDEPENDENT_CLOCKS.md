@@ -96,3 +96,5 @@ Lagarias' Theorem 3.2 proves that infinitely many fixed candidate denominators \
 
 
 [Exact replay](check_independent_clocks.py) checks the complete reduced fraction, not merely its cyclotomic upper bound. Four small cases replay every true parity and certify the least period through \(25{,}025\). Two factored cases compute (5) without expanding the full word, including a period \(2{,}103{,}896{,}795\) instance of full denominator bit length \(1{,}211{,}624\). The small physical ratios are diagnostic values. [Archived integer-arithmetic output](../../../reports/astra-infinite-descent-20261127/cycles/INDEPENDENT_CLOCKS.json)
+
+[Lean affine kernel](IndependentClocks.lean) proves carry concatenation, additive superposition, the division-free periodic-denominator identity for arbitrary repeated cell forcings, and addition of rational coordinates over a common denominator. Formula (5), native primitivity, and the growing parameter estimates are written proofs.
