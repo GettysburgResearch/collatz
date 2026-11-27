@@ -1,0 +1,15 @@
+# Ordinary operator spectra, arithmetic replication, and height certificates
+
+| File | Result and verification scope |
+| --- | --- |
+| [BasinBlocks.lean](BasinBlocks.lean), [TernarySteering.lean](TernarySteering.lean) | Kernel-checked. For every width, positive target coprime to 3, and arbitrary lower bound, a consecutive block above that bound all reaches the target at the same shortcut time. This formalizes the qualitative PR146 result used in the first checkpoint. |
+| [FiberInterval.lean](FiberInterval.lean) | Kernel-checked. The entire ordinary time-k fiber with exactly j even inputs fits between common rational endpoints separated by `2^j−1`; its cardinality is at most `2^j`. |
+| [OPERATOR_SPECTRUM.md](OPERATOR_SPECTRUM.md) | Proposed mathematical proofs of exact squared-slope composition power norms, their signed-reflected limiting constant, the full spectral disk on the positive graph and the known basin, and the continuous annulus on the latter. The exact finite fiber bound above is the formal operator input. |
+| [LOCAL_OPERATOR_ALGEBRA.md](LOCAL_OPERATOR_ALGEBRA.md) | Proposed proofs of essential-norm equality for *-polynomials in composition, its adjoint and periodic arithmetic multipliers across every component and the full graph. Includes explicit disjoint adjoint test vectors proving the full disk is essential. |
+| [HEIGHT_OBSERVABLES.md](HEIGHT_OBSERVABLES.md) | Proposed stronger Calkin-algebra comparison allowing every bounded uniformly continuous function of `log n`. Each fixed AP meets each component in every sufficiently large multiplicative interval of fixed relative width. The argument gives explicit finite-radius norm localization. |
+| [DUAL_HEIGHT.md](DUAL_HEIGHT.md) | Proposed density and reciprocal-moment restrictions on any positive polynomially bounded subquadratic dual height satisfying the stated one-edge inequality. Includes a finite-scale tilted-prefix bound and the exact remaining little-o height target for boundedness. |
+| [reflected_controls.py](reflected_controls.py), [REFLECTED_CONTROLS.json](REFLECTED_CONTROLS.json) | Exact reflected first-hit counts through 26 even steps, two independent depth-norm computations through 10 steps for two exponents, rational bounds for the p=1 limit, and seven explicit physical terminating excitation paths. Both Python optimization modes produced the same controls. |
+
+Run `python3 verify_phase2.py --lean /path/to/lean --mathlib /path/to/mathlib4` with Lean 4.34.1, mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`, and a populated dependency cache. The optional `--extra-cache` takes a supplemental dependency build. The replay puts all freshly compiled local modules first, compiles sequentially with warnings as errors, prints and checks the public axiom inventories, and checks the exact controls both normally and under `-O`.
+
+The analytic and operator conclusions in the manuscripts are written proofs. The exact-kernel question at 1 still depends on the existence of an actual escaping positive integer, and neither escape nor a further positive cycle has been excluded.

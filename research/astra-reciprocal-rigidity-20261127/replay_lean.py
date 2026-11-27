@@ -71,8 +71,29 @@ def main() -> None:
     success = True
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     with tempfile.TemporaryDirectory(prefix="collatz-lean-replay-") as build:
-        overlay = [args.dependency_overlay.resolve()] if args.dependency_overlay else []
-        cache = [Path(build), *overlay, mathlib / ".lake/build/lib/lean", *sorted((mathlib / ".lake/packages").glob("*/.lake/build/lib/lean"))]
+        primary_cache = mathlib / ".lake/build/lib/lean"
+        dependency_cache = primary_cache
+        if args.dependency_overlay:
+            # Lean resolves a namespace at its first directory on LEAN_PATH.
+            # A partial Mathlib directory therefore shadows the later complete
+            # cache instead of falling through for each missing module. Merge
+            # the pinned caches by symlink, preferring the primary cache and
+            # admitting only Mathlib files from the supplemental directory.
+            dependency_cache = Path(build) / "dependencies"
+            dependency_cache.mkdir()
+            for source, mathlib_only in ((primary_cache, False),
+                                         (args.dependency_overlay.resolve(), True)):
+                for file in source.rglob("*"):
+                    relative = file.relative_to(source)
+                    if mathlib_only and relative.parts[0] != "Mathlib":
+                        continue
+                    if not file.is_file():
+                        continue
+                    target = dependency_cache / relative
+                    if not target.exists():
+                        target.parent.mkdir(parents=True, exist_ok=True)
+                        target.symlink_to(file.resolve())
+        cache = [Path(build), dependency_cache, *sorted((mathlib / ".lake/packages").glob("*/.lake/build/lib/lean"))]
         env = dict(os.environ, LEAN_PATH=os.pathsep.join(map(str, cache)))
         for name in ordered:
             path = by_name[name]
@@ -99,6 +120,7 @@ def main() -> None:
     receipt = {"schema": "collatz-lean-packet-replay/v1", "started_utc": started,
                "finished_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                "lean_version": version, "mathlib_revision": pin, "requested_modules": ordered,
+               "dependency_cache": "merged pinned Mathlib symlinks" if args.dependency_overlay else "primary pinned Mathlib cache",
                "fresh_local_output_directory": True, "source_hashes": source_hashes,
                "all_sources_unchanged": all_unchanged, "modules": rows, "passed": success,
                "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources."}

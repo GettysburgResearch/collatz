@@ -1,7 +1,9 @@
 # Independent reconstruction and the unresolved universal step
 
 The project remains unsolved. These notes give the review boundary of the
-first checkpoint; exact artifact identities and build executions belong
+first checkpoint. The [second checkpoint](SECOND_CHECKPOINT.md) records
+the subsequent mathematical reconstruction and its remaining gaps;
+exact artifact identities and build executions belong
 in the separate receipt archive. A verdict applies to the stated claim
 and frozen file, never automatically to neighboring work or a later head.
 

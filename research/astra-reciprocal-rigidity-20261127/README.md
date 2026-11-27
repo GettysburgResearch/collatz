@@ -45,6 +45,18 @@ Those external proofs and large computations have not been rebuilt here.
   these results relate to the current frontier and why their combination
   still stops short of universal convergence.
 
+## Second checkpoint
+
+[The second checkpoint](SECOND_CHECKPOINT.md) adds an exact finite-word
+criterion for discounted postpeak mergers at all lower clocks, the scaled
+and postpeak consumers of the twelve-extra-odds certificate, and the
+complete cyclic assembly of the all-shift kernel proof. It also develops
+collective lag and edit-distance restrictions with explicit predecessor
+credit, and proves that a broad algebra of local arithmetic and log-height
+operators has the same essential norms on every ordinary component.
+The latter identifies a limitation of those tests; it does not identify
+all components with the known basin or settle the exact kernel at 1.
+
 ## Source intake and credit
 
 The branch starts from main at
