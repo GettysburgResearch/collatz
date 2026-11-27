@@ -1,0 +1,93 @@
+{
+  "census": {
+    "height at most two": 32629,
+    "inverted pairs": 1,
+    "nontrivial exact order": 13462,
+    "physical band at most eight": 30737,
+    "positive primitive necklaces": 42336,
+    "proper order divisor": 1
+  },
+  "domains": {
+    "binary_max_period": 18,
+    "quaternary_max_period": 8,
+    "ternary_max_period": 11
+  },
+  "examples": {
+    "nontrivial exact order": {
+      "canonical_height": 1,
+      "denominator": 7,
+      "gcd": 2,
+      "inversions": [],
+      "odd_numerators": [
+        5,
+        11
+      ],
+      "order": 2,
+      "word": [
+        1,
+        3
+      ]
+    },
+    "physical band above height two": {
+      "canonical_height": 3,
+      "denominator": 893,
+      "gcd": 2,
+      "inversions": [],
+      "odd_numerators": [
+        1379,
+        2515,
+        4219,
+        6775,
+        10609,
+        2045,
+        1757,
+        1541
+      ],
+      "order": 2,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    "proper order divisor": {
+      "canonical_height": 4,
+      "denominator": 431,
+      "gcd": 2,
+      "inversions": [
+        [
+          53,
+          1279,
+          4,
+          1
+        ]
+      ],
+      "odd_numerators": [
+        329,
+        709,
+        1279,
+        1067,
+        227,
+        139,
+        53,
+        295
+      ],
+      "order": 1,
+      "word": [
+        1,
+        1,
+        2,
+        4,
+        3,
+        4,
+        1,
+        2
+      ]
+    }
+  }
+}

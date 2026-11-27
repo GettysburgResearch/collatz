@@ -1,0 +1,39 @@
+# Independent review of the averaged-return and sparse-real-depth extensions
+
+I reviewed the frozen auditor-authored AVERAGED_BINARY_RETURN_BOUND.md (SHA-256 508ad8640d17c0c71d1295dbabe93b5a8e3131bc3ab71c5bfc79652cf5116e1b) and SPARSE_REAL_DEPTH_ALTERNATIVE.md (c123f80919d61d283222967d63a1389fb2ab7e1075bd09bcdde7a9f35a8514ed). Both written arguments check out within the stated sourced Subspace-Theorem and irrationality-exponent dependencies. The conclusion is ineffective. I did not establish either deep input or kernel-check either extension.
+
+## Weighted width 397/200
+
+I reconstructed the return frequencies without relying on the author's full-cell enumeration. Write h=3/200, c=1−h, u=53α−31 and v=55−94α. Throughout the stated rational slope bracket the only k≤147 for which a return to (c,1) is possible are 53,94,106,147. This follows by checking the integers flanking kα at the two bracket endpoints against ±h; no integer or threshold lies inside. The shifts at these times are u, −v, 2u, u−v. Exact inequalities are 0<u<v<h<u+v and 2u<h. A first return at 53 begins at f∈(c,1−u) and a first return at 94 at f∈(c+v,1). Every point of the remaining interval [1−u,c+v] returns at 147. Time 106 cannot be a first return because retaining f+2u in the forced interval entails f+u also remained. This gives masses h−u, h−v, and u+v−h, including the strict-cap convention. They satisfy 53(h−u)+94(h−v)+147(u+v−h)=94u+53v=1 identically.
+
+Within each of those intervals the mechanical word to its return is fixed: an earlier wrap crossing requires a positive shift smaller than h, and its only candidates here are u and 2u; the transitions at their endpoints are already accounted for in the preceding interval convention. The three-state aggregate independently reproduces every return energy and the ceiling exponents −80,132,420 at scale 1024 by exact integer powers. A separate modular enumeration gives all 592 endpoint or open phases at the midpoint slope and maximum initial wait 146. The upper endpoint of the weighted estimate is 2559703623999/2560000000000<9999/10000. I also checked the author's positive logarithm series bracket: truncating the positive atanh expansion at k terms and replacing all subsequent denominators by 2k+1 gives their valid upper geometric remainder.
+
+For variable rational slopes converging to irrational α₀, the fixed nonzero Fourier mode estimate is uniform in phase, both for each fixed interval and, by a mesh, all moving intervals. Thus the finitely many moving return types have frequencies tending to their Lebesgue lengths. Individual equality points have zero asymptotic frequency. Initial and terminal incomplete renewals have bounded cost, and the strict weighted margin absorbs o(1). This verifies uniformity for the array of actual conditioned segment families. The full denominator-to-fixed-d conclusion and its finite-exception distinction follow through the already checked source transfer.
+
+## Sparse large real depth
+
+At an unmarked start the maximizing reference ensures E^loc_k−kθ≤1+c for every cyclic prefix; summation in the positive fixed-point identity gives the claimed cap on that particular state, even if other phases are unbounded relative to it. Distinct unmarked numerators give Y≥(1−δ)P. Paired with d≤P^δ this forces θ→λ; it does not require the marked phases to lie in the same interval. The cyclic incidence count excludes endpoints independently and leaves the stated positive density of starts, including when b exceeds P.
+
+On entry to each marked run the preceding grade is a genuine bit. In the binary case this bit plus all ℓ actual gap choices reconstructs the ℓ marked grades. In the unrestricted case v_j=1+z_j−z_{j+1}≥0 follows from e_j≥1 and m_j≤2; their telescoping sum is ≤ℓ+1. Stars and bars yields binom(2ℓ+1,ℓ), and even after the bit cost this is at most 2^{4ℓ}. An exit jump need not be recorded because the next grade is an unmarked bit and every marked coordinate has already been specified. In particular max z≤q+1 follows by tracking the maximum single-step upward increment from 0 or 1. The cost does not silently assume an upper bound on an actual positive valuation.
+
+The binary projection preserves both monotone directions by clipping and then zeroing the phases f>c. Such a phase has incoming mechanical one and outgoing mechanical two, so setting it to zero is admissible. In the all-valuations row only the mechanical-one inequality remains. On each record all altered values and their projected replacements are fixed. At a segment entrance ℓ, after fixing its actual grade, the projected entrance is fixed too. For every relative position i one has r_i−r̃_i=Δ_ℓ−Δ_{ℓ+i}. Whenever Δ_{ℓ+i}=0, the two ordinary powers have common factor 2^{Δ_ℓ}; at the other positions both dates are constants. Consequently B_actual−2^{Δ_ℓ}B_projected is a fixed integer. The scale is positive, is independent of each selected path, and cancels exactly in balanced four-copy equalities. The record restores each raw path, so counting the projected allowed set is a valid upper bound. This is where reversing the scale or using projected dates in the actual source congruence would break the proof.
+
+I checked all placement inequalities from actual dates, including a highly marked internal cut. The upper E_i≤iθ+2 provides m and the last free binary margin; the ternary exponent depends on odd index j+a, not the perturbed date. Internally r_i≤iθ+z_j+1 and B≤2a2^{aθ+z_j}, with z_j≤q+1. Thus s₀=η−δ(3+η)−τ(4+η)/(19/12) pays both log d and the marked entrance grade. The exact margins (retained fraction, separation slack, exponent deficit) are
+
+| Row | Retained fraction | Separation slack | 1−(3+δ)C |
+|---|---:|---:|---:|
+| Binary | 9999/50000 | 364983/9500000000 | 172067559557/1140038000000000 |
+| All positive | 2999999/5000000 | 12999951/190000000000000 | 8680484776499483/285000095000000000000 |
+
+The local single/pair count in the all-valuations row also checks: mechanical ones cannot be consecutive; the positive-transition restriction only couples a free pair when f∈[0,c−α], costs precisely 15 instead of 36 ordered four-bit choices, and their asymptotic density is c−α₀. Free sites outside these pairs cost at most 6. This reproduces Q(c)=c log(5/2)+α₀log(12/5), whose clean form agrees with the earlier Paper 181 §4 curve. At c=16/25 its exact integer inequality reduces to 5^{55037}2^{529926}<3^{414987}. For general c<c* first take c>α₀ or use inclusion from such a larger cap. Choose γ strictly above Q(c)/log3 but below 1, then η, τ, δ in that order. The three strict margins can all be met; τ log(1/τ) tends to zero.
+
+I independently enumerated raw paths on rational mechanical clocks (including both sides of the cap and exact endpoints) and tested affine numerator scaling and its effect on actual pair-sum fibres. The binary control contains 16,129 complete paths, 5,159 fixed segment groups and 13,559 pair-sum checks; all 192 nontrivial marked-entrance groups refute reversed scaling. The unrestricted control contains 395,203 paths, 177,703 groups and 375,744 pair-sum checks; all 31,317 nontrivial marked-entrance groups refute reversed scaling. These controls verify finite interfaces only; source conditions and asymptotic growth follow by the written arguments above. Normal and optimized Python give identical outputs.
+
+## Independent artifacts
+
+| File | SHA-256 |
+|---|---|
+| averaged_return_crosscheck.py | 2249ac6f102efb71bb9f2f92c654eaf7b40ca85d126f082e274da7d20a3ad916 |
+| AVERAGED_RETURN_CROSSCHECK.json | 2aa7e489ad10feb0b07dcd609635c1ad15f5a243c8058b7ce731ef07032abe0a |
+| sparse_projection_crosscheck.py | 65e286b02a2dad774dcb5163fcd967416789573635fb2f0b077cc168fb6654cc |
+| SPARSE_PROJECTION_CROSSCHECK.json | 58ef00d9fd636fdcfb737c3e8c15b76dbefeeb559d60b1173755dcc6e9fc5ef4 |

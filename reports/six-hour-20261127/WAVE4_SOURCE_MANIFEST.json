@@ -1,0 +1,694 @@
+{
+  "parent_commit": "2346db2d49030ef385b73e1ee3e27dcbff86d2d9",
+  "claim_scope": "Frozen source identities and exact integration transformations; mathematical review and execution scopes are separate. The original all-height review bytes are encoded losslessly in a JSON wrapper.",
+  "entries": [
+    {
+      "source": "sixhour-moving-shadow-review/ALL_HEIGHT_ORDINARY_CENSUS.md",
+      "source_sha256": "83c8661eaec0630bca1aec8db5d81a3e9fbacb2ef98cc6a9a37947ffb7173872",
+      "path": "research/six-hour-20261127/pointwise/ALL_HEIGHT_ORDINARY_CENSUS.md",
+      "integrated_sha256": "83c8661eaec0630bca1aec8db5d81a3e9fbacb2ef98cc6a9a37947ffb7173872",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/ALL_HEIGHT_LOGARITHMIC_WINDOWS.md",
+      "source_sha256": "3299dffc969f750b50199fdab541b6c425add9008fa79e4b3fd7d6ecedd3df2b",
+      "path": "research/six-hour-20261127/pointwise/ALL_HEIGHT_LOGARITHMIC_WINDOWS.md",
+      "integrated_sha256": "3299dffc969f750b50199fdab541b6c425add9008fa79e4b3fd7d6ecedd3df2b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/check_height_census.py",
+      "source_sha256": "823327db2a728b290a7101dddda10a21b503822d42100278510482f3cf5579ae",
+      "path": "research/six-hour-20261127/pointwise/check_height_census.py",
+      "integrated_sha256": "823327db2a728b290a7101dddda10a21b503822d42100278510482f3cf5579ae",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/HEIGHT_CENSUS_CONTROLS.json",
+      "source_sha256": "e59d810eb3e9326f3a1ed365ccdcbfcfbb8b901988551deda450cb3fa5903e0e",
+      "path": "research/six-hour-20261127/pointwise/HEIGHT_CENSUS_CONTROLS.json",
+      "integrated_sha256": "e59d810eb3e9326f3a1ed365ccdcbfcfbb8b901988551deda450cb3fa5903e0e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/FROZEN_REVIEW_HANDOFF.json",
+      "source_sha256": "4f04f6aced6e672d316e1d100d8039da93b452a5dd6468bd19286e6c65324b7b",
+      "path": "reports/six-hour-20261127/ALL_HEIGHT_AUTHOR_HANDOFF.json",
+      "integrated_sha256": "4f04f6aced6e672d316e1d100d8039da93b452a5dd6468bd19286e6c65324b7b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ALL_HEIGHT_INDEPENDENT_REVIEW.md",
+      "source_sha256": "ce95b4149772291064ad657fd7336d85967b3c1b9a6d2102d0a80c8d00cd7568",
+      "path": "reports/six-hour-20261127/source-originals/ALL_HEIGHT_INDEPENDENT_REVIEW.original.json",
+      "integrated_sha256": "b8dc71bc237acf186fa563f726570a0ad5b2f77e11d4b8098056359ce62a92cd",
+      "modified": true
+    },
+    {
+      "source": "sixhour-all-height-audit/ALL_HEIGHT_INDEPENDENT_REVIEW.md",
+      "source_sha256": "ce95b4149772291064ad657fd7336d85967b3c1b9a6d2102d0a80c8d00cd7568",
+      "path": "reports/six-hour-20261127/ALL_HEIGHT_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "50f3faf58d3748b1356f9bb37db8e658b87c58145a4f56c096eef5d88cb9b28a",
+      "modified": true
+    },
+    {
+      "source": "sixhour-all-height-audit/SHARP_OCTAVE_TAIL_REFINEMENT.md",
+      "source_sha256": "c9edafebd243958997e1de24fa440285136176046e8c7c8acc28c92188e841df",
+      "path": "research/six-hour-20261127/pointwise/SHARP_OCTAVE_TAIL_REFINEMENT.md",
+      "integrated_sha256": "c9edafebd243958997e1de24fa440285136176046e8c7c8acc28c92188e841df",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_all_height_audit.py",
+      "source_sha256": "ba7a2f2a9779df4d46749d4875c04341dfdc065816fbc85a7e6dc006aadbbb98",
+      "path": "research/six-hour-20261127/pointwise/check_all_height_audit.py",
+      "integrated_sha256": "ba7a2f2a9779df4d46749d4875c04341dfdc065816fbc85a7e6dc006aadbbb98",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ALL_HEIGHT_INDEPENDENT_CONTROLS.json",
+      "source_sha256": "6f9811e4badb90f683efab171f314f564af5279205e3ad479afa8af987099003",
+      "path": "research/six-hour-20261127/pointwise/ALL_HEIGHT_INDEPENDENT_CONTROLS.json",
+      "integrated_sha256": "6f9811e4badb90f683efab171f314f564af5279205e3ad479afa8af987099003",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_ALL_HEIGHT_AUDIT.json",
+      "source_sha256": "9d9c78a50a25e2f95a9913eae23ceaeec38e1559d0f01e5e7906ffa9dc8ceab9",
+      "path": "reports/six-hour-20261127/FROZEN_ALL_HEIGHT_AUDIT.json",
+      "integrated_sha256": "9d9c78a50a25e2f95a9913eae23ceaeec38e1559d0f01e5e7906ffa9dc8ceab9",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CANONICAL_BIRTH_RAY_PROFILE.md",
+      "source_sha256": "fa5a37f490fc7c6c8a58c7ae4cae326750d0014122f1575906ecb8b6c062859c",
+      "path": "research/six-hour-20261127/pointwise/CANONICAL_BIRTH_RAY_PROFILE.md",
+      "integrated_sha256": "fa5a37f490fc7c6c8a58c7ae4cae326750d0014122f1575906ecb8b6c062859c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_canonical_birth_profile.py",
+      "source_sha256": "32c1b987c1ec4d38ef8b453ad11d2bb52cdfa0f3526b78011ffd2557b20c5052",
+      "path": "research/six-hour-20261127/pointwise/check_canonical_birth_profile.py",
+      "integrated_sha256": "32c1b987c1ec4d38ef8b453ad11d2bb52cdfa0f3526b78011ffd2557b20c5052",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CANONICAL_BIRTH_PROFILE_CONTROLS.json",
+      "source_sha256": "84cb125b866823c009e25b54a693b534a112bb2bd169cc8c42bfb9f2bf7ddda9",
+      "path": "research/six-hour-20261127/pointwise/CANONICAL_BIRTH_PROFILE_CONTROLS.json",
+      "integrated_sha256": "84cb125b866823c009e25b54a693b534a112bb2bd169cc8c42bfb9f2bf7ddda9",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_BIRTH_RAY_PROFILE.json",
+      "source_sha256": "11819854b39286cc5d83f7e331f3af2e6dd54e62eb6af5ca054d4a50615cb54e",
+      "path": "reports/six-hour-20261127/FROZEN_BIRTH_RAY_PROFILE.json",
+      "integrated_sha256": "11819854b39286cc5d83f7e331f3af2e6dd54e62eb6af5ca054d4a50615cb54e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/EARLY_WINDOWS_WITHOUT_SMALL_VISITORS.md",
+      "source_sha256": "e5da9faa5f06cf11b4af673c68c470a815f7eebd443310325498ba77fa26d67e",
+      "path": "research/six-hour-20261127/pointwise/EARLY_WINDOWS_WITHOUT_SMALL_VISITORS.md",
+      "integrated_sha256": "e5da9faa5f06cf11b4af673c68c470a815f7eebd443310325498ba77fa26d67e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_early_small_visitors.py",
+      "source_sha256": "67e3094c4f627854d3a9f8fecfebb37565748b8b88eaa9da1b23369142e10f1a",
+      "path": "research/six-hour-20261127/pointwise/check_early_small_visitors.py",
+      "integrated_sha256": "67e3094c4f627854d3a9f8fecfebb37565748b8b88eaa9da1b23369142e10f1a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/EARLY_SMALL_VISITORS_CONTROLS.json",
+      "source_sha256": "fd052a89f56cbd899805ddf315bd232815f785f025c6308fb2e8d6ba50aa8fea",
+      "path": "research/six-hour-20261127/pointwise/EARLY_SMALL_VISITORS_CONTROLS.json",
+      "integrated_sha256": "fd052a89f56cbd899805ddf315bd232815f785f025c6308fb2e8d6ba50aa8fea",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_EARLY_SMALL_VISITORS.json",
+      "source_sha256": "b04e86731cda2a2d06872030634fc5a7e6dd447b206a936db9e5c478225ab8fe",
+      "path": "reports/six-hour-20261127/FROZEN_EARLY_SMALL_VISITORS.json",
+      "integrated_sha256": "b04e86731cda2a2d06872030634fc5a7e6dd447b206a936db9e5c478225ab8fe",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/THREE_GRADE_INDEPENDENT_REVIEW.md",
+      "source_sha256": "39696960f996166048c67c09d3b6a5ff54f263f05ab99e31a560d427ab6608a4",
+      "path": "reports/six-hour-20261127/THREE_GRADE_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "39696960f996166048c67c09d3b6a5ff54f263f05ab99e31a560d427ab6608a4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_three_grade_audit.py",
+      "source_sha256": "565900b1cc0f733b8e941227dda16c5a83d21f5ec53ab6bac15e3cbf4cd2caa0",
+      "path": "research/six-hour-20261127/cycles/check_three_grade_audit.py",
+      "integrated_sha256": "565900b1cc0f733b8e941227dda16c5a83d21f5ec53ab6bac15e3cbf4cd2caa0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/THREE_GRADE_AUDIT_CONTROLS.json",
+      "source_sha256": "1a4da2c5ad93c2bbf45bb160bdad6ac3726b1082ddb947ca6e2374f23c239ef0",
+      "path": "research/six-hour-20261127/cycles/THREE_GRADE_AUDIT_CONTROLS.json",
+      "integrated_sha256": "1a4da2c5ad93c2bbf45bb160bdad6ac3726b1082ddb947ca6e2374f23c239ef0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_THREE_GRADE_AUDIT.json",
+      "source_sha256": "14e0bee0c3a667dd8664497005a62db7971e7f61b5ce709f3cbcf153a8112d8f",
+      "path": "reports/six-hour-20261127/FROZEN_THREE_GRADE_AUDIT.json",
+      "integrated_sha256": "14e0bee0c3a667dd8664497005a62db7971e7f61b5ce709f3cbcf153a8112d8f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/THIRD_LAYER_FIFTH_INDEPENDENT_REVIEW.md",
+      "source_sha256": "cc59fb9e9c9865afca65a5fd1a893078082b136e6089954df5cabfde3afd3bf5",
+      "path": "reports/six-hour-20261127/THIRD_LAYER_FIFTH_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "cc59fb9e9c9865afca65a5fd1a893078082b136e6089954df5cabfde3afd3bf5",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_third_layer_fifth_audit.py",
+      "source_sha256": "f978cb473a281fea9a4fdf8f946d825f86dfaa982ac33042156c8c26e3b0b455",
+      "path": "research/six-hour-20261127/cycles/check_third_layer_fifth_audit.py",
+      "integrated_sha256": "f978cb473a281fea9a4fdf8f946d825f86dfaa982ac33042156c8c26e3b0b455",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/THIRD_LAYER_FIFTH_AUDIT_CONTROLS.json",
+      "source_sha256": "2e59ce5d547dc5601f3d12e4e953abdb7f29315e77a8550fcea4e70f16587149",
+      "path": "research/six-hour-20261127/cycles/THIRD_LAYER_FIFTH_AUDIT_CONTROLS.json",
+      "integrated_sha256": "2e59ce5d547dc5601f3d12e4e953abdb7f29315e77a8550fcea4e70f16587149",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_THIRD_LAYER_FIFTH_AUDIT.json",
+      "source_sha256": "b48c4500b57a910e4ecdd8dcfd54cdf4cb3ccc48f53813afc700f0d662650c3d",
+      "path": "reports/six-hour-20261127/FROZEN_THIRD_LAYER_FIFTH_AUDIT.json",
+      "integrated_sha256": "b48c4500b57a910e4ecdd8dcfd54cdf4cb3ccc48f53813afc700f0d662650c3d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ModularZeroAtom.lean",
+      "source_sha256": "0753844986fde90410acf64d5a210a92022f8bca7a3949e48ad016386d42dff7",
+      "path": "research/six-hour-20261127/cycles/ModularZeroAtom.lean",
+      "integrated_sha256": "0753844986fde90410acf64d5a210a92022f8bca7a3949e48ad016386d42dff7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/MODULAR_ZERO_ATOM_LEAN_RECEIPT.json",
+      "source_sha256": "c1ece7c7b041861b57f86ceada13b87e1ff3c7e0383da5ae65b39ed4b5d2f633",
+      "path": "reports/six-hour-20261127/MODULAR_ZERO_ATOM_AUTHOR_LEAN.json",
+      "integrated_sha256": "c1ece7c7b041861b57f86ceada13b87e1ff3c7e0383da5ae65b39ed4b5d2f633",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/AVERAGED_BINARY_RETURN_BOUND.md",
+      "source_sha256": "508ad8640d17c0c71d1295dbabe93b5a8e3131bc3ab71c5bfc79652cf5116e1b",
+      "path": "research/six-hour-20261127/cycles/AVERAGED_BINARY_RETURN_BOUND.md",
+      "integrated_sha256": "508ad8640d17c0c71d1295dbabe93b5a8e3131bc3ab71c5bfc79652cf5116e1b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/averaged_energy_certificate.py",
+      "source_sha256": "fcc145c33dceb491722304e6ac8470931bfb38f20191a877fcb1f896a0931f79",
+      "path": "research/six-hour-20261127/cycles/averaged_energy_certificate.py",
+      "integrated_sha256": "fcc145c33dceb491722304e6ac8470931bfb38f20191a877fcb1f896a0931f79",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/AVERAGED_ENERGY_CHECK.json",
+      "source_sha256": "4e1d5420d2318284f426feb25f6d1cc5a1e91353928fb452a6ef9f6ac6791e61",
+      "path": "research/six-hour-20261127/cycles/AVERAGED_ENERGY_CHECK.json",
+      "integrated_sha256": "4e1d5420d2318284f426feb25f6d1cc5a1e91353928fb452a6ef9f6ac6791e61",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_REAL_DEPTH_ALTERNATIVE.md",
+      "source_sha256": "c123f80919d61d283222967d63a1389fb2ab7e1075bd09bcdde7a9f35a8514ed",
+      "path": "research/six-hour-20261127/cycles/SPARSE_REAL_DEPTH_ALTERNATIVE.md",
+      "integrated_sha256": "c123f80919d61d283222967d63a1389fb2ab7e1075bd09bcdde7a9f35a8514ed",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/sparse_grade_certificate.py",
+      "source_sha256": "bfe3e6cca1889defe33b500692a79252eae1b8e32b32d83aab0cfdd6c454f141",
+      "path": "research/six-hour-20261127/cycles/sparse_grade_certificate.py",
+      "integrated_sha256": "bfe3e6cca1889defe33b500692a79252eae1b8e32b32d83aab0cfdd6c454f141",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_GRADE_CHECK.json",
+      "source_sha256": "651a3e6861816a3d7108f8c35ec0b4a04fb80b57a8b8d6fd07aee68096d65142",
+      "path": "research/six-hour-20261127/cycles/SPARSE_GRADE_CHECK.json",
+      "integrated_sha256": "651a3e6861816a3d7108f8c35ec0b4a04fb80b57a8b8d6fd07aee68096d65142",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/EXTENSIONS_MANIFEST.json",
+      "source_sha256": "24d3df4588c866dfe7233c4422574204cdf06dea4d800a4476401fc796bfd7dc",
+      "path": "reports/six-hour-20261127/WAVE4_EXTENSIONS_MANIFEST.json",
+      "integrated_sha256": "24d3df4588c866dfe7233c4422574204cdf06dea4d800a4476401fc796bfd7dc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_INPUT_DEPTH_BOUNDS.md",
+      "source_sha256": "aae08e078a342debfb7b5bd3af78d3b2419b225ae91303a1627cc523baf48685",
+      "path": "research/six-hour-20261127/cycles/CLASSICAL_INPUT_DEPTH_BOUNDS.md",
+      "integrated_sha256": "aae08e078a342debfb7b5bd3af78d3b2419b225ae91303a1627cc523baf48685",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_DEPTH_CHECK.json",
+      "source_sha256": "7611335212cfcbc35790ab787a01a4052f2faad452438e968a18606e70eb9672",
+      "path": "research/six-hour-20261127/cycles/CLASSICAL_DEPTH_CHECK.json",
+      "integrated_sha256": "7611335212cfcbc35790ab787a01a4052f2faad452438e968a18606e70eb9672",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_DEPTH_MANIFEST.json",
+      "source_sha256": "f8e80c8e09823920c22ce2bca54cf914eba8ee44450319b943854e9ddac88449",
+      "path": "reports/six-hour-20261127/WAVE4_CLASSICAL_DEPTH_MANIFEST.json",
+      "integrated_sha256": "f8e80c8e09823920c22ce2bca54cf914eba8ee44450319b943854e9ddac88449",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_NONBINARY_STEP_EXTENSION.md",
+      "source_sha256": "b2cd87919c3823f55694d5adfa10fa20c43e383ea7cbf86160a2f34379948494",
+      "path": "research/six-hour-20261127/cycles/SPARSE_NONBINARY_STEP_EXTENSION.md",
+      "integrated_sha256": "b2cd87919c3823f55694d5adfa10fa20c43e383ea7cbf86160a2f34379948494",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/sparse_nonbinary_certificate.py",
+      "source_sha256": "2cfd98493f74ed1b1065ac743282000a01afd2110229e3b05183c82403d52f70",
+      "path": "research/six-hour-20261127/cycles/sparse_nonbinary_certificate.py",
+      "integrated_sha256": "2cfd98493f74ed1b1065ac743282000a01afd2110229e3b05183c82403d52f70",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_NONBINARY_CHECK.json",
+      "source_sha256": "4336d0be142c3fcb95579401191e409a337e9d0f886a7cc17739236350acc74e",
+      "path": "research/six-hour-20261127/cycles/SPARSE_NONBINARY_CHECK.json",
+      "integrated_sha256": "4336d0be142c3fcb95579401191e409a337e9d0f886a7cc17739236350acc74e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/NONBINARY_EXTENSION_MANIFEST.json",
+      "source_sha256": "16d92b3cd534ba9970ef20105ef255966b9225f69454fc1fffc3f70dc1afbf2d",
+      "path": "reports/six-hour-20261127/WAVE4_NONBINARY_EXTENSION_MANIFEST.json",
+      "integrated_sha256": "16d92b3cd534ba9970ef20105ef255966b9225f69454fc1fffc3f70dc1afbf2d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/ALL_LAG_TWO_ORIENTATIONS.md",
+      "source_sha256": "e13f93a6d49901754bce022d71c34af42e216b5c21c3889461071a7898353a70",
+      "path": "research/six-hour-20261127/cycles/ALL_LAG_TWO_ORIENTATIONS.md",
+      "integrated_sha256": "e13f93a6d49901754bce022d71c34af42e216b5c21c3889461071a7898353a70",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/all_lag_orientation_certificate.py",
+      "source_sha256": "51cdf58022d25a1341896cf6e418e7f84380f706506c06899247d0cf3ac8a6dd",
+      "path": "research/six-hour-20261127/cycles/all_lag_orientation_certificate.py",
+      "integrated_sha256": "51cdf58022d25a1341896cf6e418e7f84380f706506c06899247d0cf3ac8a6dd",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/ALL_LAG_ORIENTATION_CHECK.json",
+      "source_sha256": "5368ef89f023a6ce9ec6dbef4490a70a5bcd9fe3658272f768080e964a61e25b",
+      "path": "research/six-hour-20261127/cycles/ALL_LAG_ORIENTATION_CHECK.json",
+      "integrated_sha256": "5368ef89f023a6ce9ec6dbef4490a70a5bcd9fe3658272f768080e964a61e25b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/ALL_LAG_ORIENTATION_MANIFEST.json",
+      "source_sha256": "25d6f827e781a3e8c3f73a9d43398a499e3e04be4c9078acc16ffbdf7be6d351",
+      "path": "reports/six-hour-20261127/WAVE4_ALL_LAG_ORIENTATION_MANIFEST.json",
+      "integrated_sha256": "25d6f827e781a3e8c3f73a9d43398a499e3e04be4c9078acc16ffbdf7be6d351",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLOCK_GCD_DENOMINATOR_ORDER.md",
+      "source_sha256": "f5d6456d3fbeea35f91cc98271d189824f03c979d50815c9cb614a6e32b353c3",
+      "path": "research/six-hour-20261127/cycles/CLOCK_GCD_DENOMINATOR_ORDER.md",
+      "integrated_sha256": "f5d6456d3fbeea35f91cc98271d189824f03c979d50815c9cb614a6e32b353c3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/clock_order_certificate.py",
+      "source_sha256": "b20d1fcb82cf9cd3478929073d2a100533b12eeae9bc3029b071583aabcf485b",
+      "path": "research/six-hour-20261127/cycles/clock_order_certificate.py",
+      "integrated_sha256": "b20d1fcb82cf9cd3478929073d2a100533b12eeae9bc3029b071583aabcf485b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLOCK_ORDER_CHECK.json",
+      "source_sha256": "bcff1bd48b91ad642ca8a070cbe0068ac48a625f21eb1de761f350d18c8345e4",
+      "path": "research/six-hour-20261127/cycles/CLOCK_ORDER_CHECK.json",
+      "integrated_sha256": "bcff1bd48b91ad642ca8a070cbe0068ac48a625f21eb1de761f350d18c8345e4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLOCK_ORDER_MANIFEST.json",
+      "source_sha256": "cba018dfc7446b3ae614c1aa783475592e2c5870181b6bbc4e19582f9fa8cd7a",
+      "path": "reports/six-hour-20261127/WAVE4_CLOCK_ORDER_MANIFEST.json",
+      "integrated_sha256": "cba018dfc7446b3ae614c1aa783475592e2c5870181b6bbc4e19582f9fa8cd7a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THREE_GRADE_MODULAR_BAND.md",
+      "source_sha256": "cc3066ba2a295d184e16362ef327e55068b9ec4abc7f88d85c33abcc9a2a45af",
+      "path": "research/six-hour-20261127/cycles/THREE_GRADE_MODULAR_BAND.md",
+      "integrated_sha256": "cc3066ba2a295d184e16362ef327e55068b9ec4abc7f88d85c33abcc9a2a45af",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/three_grade_modular_certificate.py",
+      "source_sha256": "0ae5cb4302eda54ba0a0071437eb9a8379e4d2c6fcd84457ab1c2e3378bdbebc",
+      "path": "research/six-hour-20261127/cycles/three_grade_modular_certificate.py",
+      "integrated_sha256": "0ae5cb4302eda54ba0a0071437eb9a8379e4d2c6fcd84457ab1c2e3378bdbebc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THREE_GRADE_MODULAR_CHECK.json",
+      "source_sha256": "8401b1cdad12bcd2644fb0f2df7ef4ee9b674aa855ee9d748fd50a639890a1eb",
+      "path": "research/six-hour-20261127/cycles/THREE_GRADE_MODULAR_CHECK.json",
+      "integrated_sha256": "8401b1cdad12bcd2644fb0f2df7ef4ee9b674aa855ee9d748fd50a639890a1eb",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THREE_GRADE_MODULAR_MANIFEST.json",
+      "source_sha256": "e9b0c44070f229bd4b632b514a1c7386effae236b32c1fcf0e163536d3908524",
+      "path": "reports/six-hour-20261127/WAVE4_THREE_GRADE_MODULAR_MANIFEST.json",
+      "integrated_sha256": "e9b0c44070f229bd4b632b514a1c7386effae236b32c1fcf0e163536d3908524",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THIRD_LAYER_FIFTH_EXTENSION.md",
+      "source_sha256": "e320fe8119938de67ce2a2d93d6c12bf23693f84d9ba60c3631886987a5a498d",
+      "path": "research/six-hour-20261127/cycles/THIRD_LAYER_FIFTH_EXTENSION.md",
+      "integrated_sha256": "e320fe8119938de67ce2a2d93d6c12bf23693f84d9ba60c3631886987a5a498d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/third_layer_fifth_check.py",
+      "source_sha256": "60e02321d3589870a7c1d7f85addfc0a1feab4863a21db6b0127436d0f71ca87",
+      "path": "research/six-hour-20261127/cycles/third_layer_fifth_check.py",
+      "integrated_sha256": "60e02321d3589870a7c1d7f85addfc0a1feab4863a21db6b0127436d0f71ca87",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THIRD_LAYER_FIFTH_CHECK.json",
+      "source_sha256": "57b936e205aee65de4afd92faca317b519dd7c32c85367e3cecd4cb7ebf6b62d",
+      "path": "research/six-hour-20261127/cycles/THIRD_LAYER_FIFTH_CHECK.json",
+      "integrated_sha256": "57b936e205aee65de4afd92faca317b519dd7c32c85367e3cecd4cb7ebf6b62d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/THIRD_LAYER_FIFTH_MANIFEST.json",
+      "source_sha256": "ba1f43d5735ed1ef7438cfde3fef462238eda76bd58120deb26c6a289296faaf",
+      "path": "reports/six-hour-20261127/WAVE4_THIRD_LAYER_FIFTH_MANIFEST.json",
+      "integrated_sha256": "ba1f43d5735ed1ef7438cfde3fef462238eda76bd58120deb26c6a289296faaf",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_FIFTH_MOMENT_AUDIT.md",
+      "source_sha256": "46afae31a8e72bb3024513ac12873ae41d0e969f861b68686fbd72b918c66ba2",
+      "path": "reports/six-hour-20261127/INDEPENDENT_FIFTH_MOMENT_AUDIT.md",
+      "integrated_sha256": "46afae31a8e72bb3024513ac12873ae41d0e969f861b68686fbd72b918c66ba2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_fifth_setup.py",
+      "source_sha256": "ece33339ec6f06edea5550de3e4ed543384af8e8141c558a724b40b7328c1234",
+      "path": "reports/six-hour-20261127/source-originals/independent_fifth_setup.py.original.txt",
+      "integrated_sha256": "ece33339ec6f06edea5550de3e4ed543384af8e8141c558a724b40b7328c1234",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_fifth_setup.py",
+      "source_sha256": "ece33339ec6f06edea5550de3e4ed543384af8e8141c558a724b40b7328c1234",
+      "path": "research/six-hour-20261127/cycles/independent_fifth_setup.py",
+      "integrated_sha256": "f3e828334ec9e2d569ef0818fe67b5ab3ac0d33324985b7fe75d9d4a51967f24",
+      "modified": true
+    },
+    {
+      "source": "sixhour-binary-energy-review/FIFTH_INDEPENDENT_SETUP.json",
+      "source_sha256": "e9ec4ae33e24e4e7066b764ef5ca4a86e1324293f295804a2ba4b17a7abf3b5b",
+      "path": "research/six-hour-20261127/cycles/FIFTH_INDEPENDENT_SETUP.json",
+      "integrated_sha256": "e9ec4ae33e24e4e7066b764ef5ca4a86e1324293f295804a2ba4b17a7abf3b5b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_fifth_law_controls.py",
+      "source_sha256": "68f040fd025e1c98a184c1f3089d92b0ab4f06b7a54707fcdb785160a9fdb20b",
+      "path": "research/six-hour-20261127/cycles/independent_fifth_law_controls.py",
+      "integrated_sha256": "68f040fd025e1c98a184c1f3089d92b0ab4f06b7a54707fcdb785160a9fdb20b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/FIFTH_LAW_CONTROLS.json",
+      "source_sha256": "3c0d6f709ce499a48bc85979bc8274befb13a3f58b88092c5d4877d3519a52f2",
+      "path": "research/six-hour-20261127/cycles/FIFTH_LAW_CONTROLS.json",
+      "integrated_sha256": "3c0d6f709ce499a48bc85979bc8274befb13a3f58b88092c5d4877d3519a52f2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_FIFTH_MANIFEST.json",
+      "source_sha256": "b7f03a2c9801e3192332614d7f513337b29a98062c04b9f103e493b8e8c57d43",
+      "path": "reports/six-hour-20261127/WAVE4_INDEPENDENT_FIFTH_MANIFEST.json",
+      "integrated_sha256": "b7f03a2c9801e3192332614d7f513337b29a98062c04b9f103e493b8e8c57d43",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_GLOBAL_FIFTH_SPARSE_REVIEW.md",
+      "source_sha256": "d27fe7ae94f5d83e97c2299691bc22dc01d18c6340bd9261c3476b719ea167b6",
+      "path": "reports/six-hour-20261127/INDEPENDENT_GLOBAL_FIFTH_SPARSE_REVIEW.md",
+      "integrated_sha256": "d27fe7ae94f5d83e97c2299691bc22dc01d18c6340bd9261c3476b719ea167b6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_global_fifth_sparse.py",
+      "source_sha256": "4058c6e159e1c4345362b2c4ef31f6d2bb878899f3e6e7b2e0c908856106fd90",
+      "path": "research/six-hour-20261127/cycles/independent_global_fifth_sparse.py",
+      "integrated_sha256": "4058c6e159e1c4345362b2c4ef31f6d2bb878899f3e6e7b2e0c908856106fd90",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/GLOBAL_FIFTH_SPARSE_REVIEW_CHECK.json",
+      "source_sha256": "5da51c28b75ebc551b6d979a70ca8cd5a3d41b47eda0c7e4726aaaadbc9c9a7f",
+      "path": "research/six-hour-20261127/cycles/GLOBAL_FIFTH_SPARSE_REVIEW_CHECK.json",
+      "integrated_sha256": "5da51c28b75ebc551b6d979a70ca8cd5a3d41b47eda0c7e4726aaaadbc9c9a7f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/GLOBAL_FIFTH_SPARSE_REVIEW_MANIFEST.json",
+      "source_sha256": "bd9621d994e9fb397a4fed60acb777c39d24d035662c1f5228a3ade866963a2d",
+      "path": "reports/six-hour-20261127/WAVE4_GLOBAL_FIFTH_SPARSE_REVIEW_MANIFEST.json",
+      "integrated_sha256": "bd9621d994e9fb397a4fed60acb777c39d24d035662c1f5228a3ade866963a2d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SparseGradeProjection.lean",
+      "source_sha256": "4197fee990f9537998c4a10caa31038bc44ba8eb5b7cdc9f7e080c887f5cba9e",
+      "path": "reports/six-hour-20261127/source-originals/SparseGradeProjection.original.lean.txt",
+      "integrated_sha256": "4197fee990f9537998c4a10caa31038bc44ba8eb5b7cdc9f7e080c887f5cba9e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SparseGradeProjection.lean",
+      "source_sha256": "4197fee990f9537998c4a10caa31038bc44ba8eb5b7cdc9f7e080c887f5cba9e",
+      "path": "research/six-hour-20261127/cycles/SparseGradeProjection.lean",
+      "integrated_sha256": "f7c3bf3368f28466409f5fb9d6b459e992b46981fd624bc4ed36f9fb15bc858d",
+      "modified": true
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_LEAN_MANIFEST.json",
+      "source_sha256": "bd1879cc0dc0778e67e23b03e96a9e7059df82c31b675b90a175a5211c7f5e1a",
+      "path": "reports/six-hour-20261127/SPARSE_GRADE_AUTHOR_LEAN_MANIFEST.json",
+      "integrated_sha256": "bd1879cc0dc0778e67e23b03e96a9e7059df82c31b675b90a175a5211c7f5e1a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/ALL_LAG_LINEAR_DEFECTS.md",
+      "source_sha256": "653130a5285263d59c982fdd0a084c33d8ad0b9b5b62a82e917a7eaed7818527",
+      "path": "research/six-hour-20261127/cycles/ALL_LAG_LINEAR_DEFECTS.md",
+      "integrated_sha256": "653130a5285263d59c982fdd0a084c33d8ad0b9b5b62a82e917a7eaed7818527",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_EXTENSION_REVIEW.md",
+      "source_sha256": "1328d4920f5af0af86847236e04d10a34c8379c9b5fd197a3e92c1d177e3a358",
+      "path": "reports/six-hour-20261127/INDEPENDENT_EXTENSION_REVIEW.md",
+      "integrated_sha256": "1328d4920f5af0af86847236e04d10a34c8379c9b5fd197a3e92c1d177e3a358",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/averaged_return_crosscheck.py",
+      "source_sha256": "2249ac6f102efb71bb9f2f92c654eaf7b40ca85d126f082e274da7d20a3ad916",
+      "path": "research/six-hour-20261127/cycles/averaged_return_crosscheck.py",
+      "integrated_sha256": "2249ac6f102efb71bb9f2f92c654eaf7b40ca85d126f082e274da7d20a3ad916",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/AVERAGED_RETURN_CROSSCHECK.json",
+      "source_sha256": "2aa7e489ad10feb0b07dcd609635c1ad15f5a243c8058b7ce731ef07032abe0a",
+      "path": "research/six-hour-20261127/cycles/AVERAGED_RETURN_CROSSCHECK.json",
+      "integrated_sha256": "2aa7e489ad10feb0b07dcd609635c1ad15f5a243c8058b7ce731ef07032abe0a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/sparse_projection_crosscheck.py",
+      "source_sha256": "65e286b02a2dad774dcb5163fcd967416789573635fb2f0b077cc168fb6654cc",
+      "path": "research/six-hour-20261127/cycles/sparse_projection_crosscheck.py",
+      "integrated_sha256": "65e286b02a2dad774dcb5163fcd967416789573635fb2f0b077cc168fb6654cc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/SPARSE_PROJECTION_CROSSCHECK.json",
+      "source_sha256": "58ef00d9fd636fdcfb737c3e8c15b76dbefeeb559d60b1173755dcc6e9fc5ef4",
+      "path": "research/six-hour-20261127/cycles/SPARSE_PROJECTION_CROSSCHECK.json",
+      "integrated_sha256": "58ef00d9fd636fdcfb737c3e8c15b76dbefeeb559d60b1173755dcc6e9fc5ef4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FRONTIER_HANDOFF_0108.sha256",
+      "source_sha256": "9e451e64dfe595c83bb74deb1a42af1f40aa68544bc201afeeb55dabc1ac2840",
+      "path": "reports/six-hour-20261127/FRONTIER_AUTHOR_HANDOFF_0108.sha256",
+      "integrated_sha256": "9e451e64dfe595c83bb74deb1a42af1f40aa68544bc201afeeb55dabc1ac2840",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_TWO_ORIENTATION_REVIEW.md",
+      "source_sha256": "b95062b32ef118cd61bb6071b668a541bb92a07e0a42e0021c8ea92a7197e752",
+      "path": "reports/six-hour-20261127/INDEPENDENT_TWO_ORIENTATION_REVIEW.md",
+      "integrated_sha256": "b95062b32ef118cd61bb6071b668a541bb92a07e0a42e0021c8ea92a7197e752",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/ALL_EVEN_MOMENT_BARRIER.md",
+      "source_sha256": "8fefc8c842e8f6cac0fd31da9cadbc0af73a1334f66b45c437e3031091d4f117",
+      "path": "reports/six-hour-20261127/source-originals/ALL_EVEN_MOMENT_BARRIER.original.md",
+      "integrated_sha256": "8fefc8c842e8f6cac0fd31da9cadbc0af73a1334f66b45c437e3031091d4f117",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/ALL_EVEN_MOMENT_BARRIER.md",
+      "source_sha256": "8fefc8c842e8f6cac0fd31da9cadbc0af73a1334f66b45c437e3031091d4f117",
+      "path": "research/six-hour-20261127/cycles/ALL_EVEN_MOMENT_BARRIER.md",
+      "integrated_sha256": "37b165e668bd3fcfb56540dac648ffae595ed61b553e535af577c83dd779c702",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/higher_moment_barrier.py",
+      "source_sha256": "4c8baa14d1f3fcd966fbf9c2c37cc917922f1ff5dc80023b2816085721e6ae50",
+      "path": "research/six-hour-20261127/cycles/higher_moment_barrier.py",
+      "integrated_sha256": "4c8baa14d1f3fcd966fbf9c2c37cc917922f1ff5dc80023b2816085721e6ae50",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/HIGHER_MOMENT_BARRIER.json",
+      "source_sha256": "891b680bb54519cf2855cbadb1a928817c2e16601f60cead24ae91316c660d51",
+      "path": "research/six-hour-20261127/cycles/HIGHER_MOMENT_BARRIER.json",
+      "integrated_sha256": "891b680bb54519cf2855cbadb1a928817c2e16601f60cead24ae91316c660d51",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/GLOBAL_SPARSE_BINARY_ALTERNATIVE.md",
+      "source_sha256": "e46e9839effcc7fed56730ba8473813a21b9c5fa27cdcee1cb00bddb7928bf3e",
+      "path": "research/six-hour-20261127/cycles/GLOBAL_SPARSE_BINARY_ALTERNATIVE.md",
+      "integrated_sha256": "e46e9839effcc7fed56730ba8473813a21b9c5fa27cdcee1cb00bddb7928bf3e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/sparse_binary_global_check.py",
+      "source_sha256": "9fb61483ff5b0333278dd32c525fe8508e62f45c92e7cb3f41ef87e862cf8316",
+      "path": "research/six-hour-20261127/cycles/sparse_binary_global_check.py",
+      "integrated_sha256": "9fb61483ff5b0333278dd32c525fe8508e62f45c92e7cb3f41ef87e862cf8316",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/SPARSE_BINARY_GLOBAL_CONTROLS.json",
+      "source_sha256": "dcb38377ac1cf46bcea7034f7f6f7c6288fa9d10eaeef5f177eeaa0ade4d5d2f",
+      "path": "research/six-hour-20261127/cycles/SPARSE_BINARY_GLOBAL_CONTROLS.json",
+      "integrated_sha256": "dcb38377ac1cf46bcea7034f7f6f7c6288fa9d10eaeef5f177eeaa0ade4d5d2f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_MOMENT_SOURCE_REDUCTION.md",
+      "source_sha256": "a1f94e92d0baabc6aa8e5d0e108d9d65bacf99c77c201900c098836d2eaf163c",
+      "path": "research/six-hour-20261127/cycles/FIFTH_MOMENT_SOURCE_REDUCTION.md",
+      "integrated_sha256": "a1f94e92d0baabc6aa8e5d0e108d9d65bacf99c77c201900c098836d2eaf163c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_POSITIVE_CERTIFICATE.md",
+      "source_sha256": "d8ed06d112ad257b3515bca7957060b3f9f0e2c53fdf4080dec2ac26b79764dc",
+      "path": "research/six-hour-20261127/cycles/FIFTH_POSITIVE_CERTIFICATE.md",
+      "integrated_sha256": "d8ed06d112ad257b3515bca7957060b3f9f0e2c53fdf4080dec2ac26b79764dc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_WITNESSES.txt.gz",
+      "source_sha256": "bca88393d4efe84cb88c80f119bb626eb0c601d0cde0aaac4ae8d4463b39d496",
+      "path": "research/six-hour-20261127/cycles/FIFTH_WITNESSES.txt.gz",
+      "integrated_sha256": "bca88393d4efe84cb88c80f119bb626eb0c601d0cde0aaac4ae8d4463b39d496",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/fifth_grid_integer.cpp",
+      "source_sha256": "0f489f2e96324380d88582c2d8b75d626572bac4ff144dab88db8aa569ba2573",
+      "path": "research/six-hour-20261127/cycles/fifth_grid_integer.cpp",
+      "integrated_sha256": "0f489f2e96324380d88582c2d8b75d626572bac4ff144dab88db8aa569ba2573",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/fifth_verify.py",
+      "source_sha256": "011454fcfd001d5a5b0084088a8da10c8a7b58dd733ccd2f6404677ead4f70c0",
+      "path": "research/six-hour-20261127/cycles/fifth_verify.py",
+      "integrated_sha256": "011454fcfd001d5a5b0084088a8da10c8a7b58dd733ccd2f6404677ead4f70c0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_INTEGER_GRID_ROWS.txt",
+      "source_sha256": "0edb572acf25cec643ac9c7787c9f32532f359cb062faf35eca6d58e4bb66ecf",
+      "path": "research/six-hour-20261127/cycles/FIFTH_INTEGER_GRID_ROWS.txt",
+      "integrated_sha256": "0edb572acf25cec643ac9c7787c9f32532f359cb062faf35eca6d58e4bb66ecf",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_CERTIFICATE_RESULT.json",
+      "source_sha256": "1b316bad647784952fced9413290efba74df5ff06adb6cefe7d2fe5a998cdc6e",
+      "path": "research/six-hour-20261127/cycles/FIFTH_CERTIFICATE_RESULT.json",
+      "integrated_sha256": "1b316bad647784952fced9413290efba74df5ff06adb6cefe7d2fe5a998cdc6e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIFTH_WAVE_FREEZE.sha256",
+      "source_sha256": "32cb368cb1ab6ee3338d11ecedd221fa8678d15297488e6bf7f7f794fc363c8e",
+      "path": "reports/six-hour-20261127/FIFTH_AUTHOR_HANDOFF.sha256",
+      "integrated_sha256": "32cb368cb1ab6ee3338d11ecedd221fa8678d15297488e6bf7f7f794fc363c8e",
+      "modified": false
+    },
+    {
+      "source": "./sixhour-root-fifth-rebuild.json",
+      "source_sha256": "1b316bad647784952fced9413290efba74df5ff06adb6cefe7d2fe5a998cdc6e",
+      "path": "reports/six-hour-20261127/ROOT_FIFTH_REBUILD_WAVE4.json",
+      "integrated_sha256": "1b316bad647784952fced9413290efba74df5ff06adb6cefe7d2fe5a998cdc6e",
+      "modified": false
+    }
+  ],
+  "integration_artifacts_sha256": {
+    "research/six-hour-20261127/README.md": "ad27aeb509ea1350b1c7bc1f800675490073ab9e5dc787c6d165e558eab1d1b9",
+    "research/six-hour-20261127/FOURTH_CHECKPOINT.md": "50d50d831e3cc6f72b103cf0067d4aea60dccf2bc52967b5a7912fe96cc035d8",
+    "research/six-hour-20261127/cycles/FifthMomentBudgets.lean": "70a56d23711ade6cf5754eafc531c02655edd6d9a9a4745fbb94df386f5cd372",
+    "research/six-hour-20261127/replay_controls.py": "4b7cfc8689ceac3f9a158599fcad8e960ec8ffc8e0375fe81edb3a0d3f7078ae",
+    "reports/six-hour-20261127/ROOT_REVIEW_WAVE4.md": "578f7bdff9d4f0ad76e1b463a2818a186483620b764204942809cf852bb5d4a7",
+    "reports/six-hour-20261127/ROOT_LEAN_WAVE4.json": "003fb69cb454dbb66a6b1987a2d08b2dae6f969cea9b4c5fbe6240bd7f4995ca",
+    "reports/six-hour-20261127/ROOT_CONTROLS_WAVE4.json": "c13eeb4960dae240e0cb2f6fadf9f194e376d8c0f77c557db36a58a26e9e618b"
+  }
+}

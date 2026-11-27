@@ -1,0 +1,51 @@
+{
+  "CRT_states": 2943,
+  "all_height_cutoffs": 1008,
+  "completed_early_barrier_hits": 5941,
+  "exact_geometric_residues": 3280,
+  "finite_martingale_maximal_checks": 240,
+  "full_word_progressions": 764,
+  "marker_moment_cases": 31,
+  "ordinary_sources": 8176,
+  "physical_marked_endpoints": 7436,
+  "qualifying_reduced_pairs": 239,
+  "reflected_first_hit": [
+    {
+      "normalized_mass_millionths": 1333333,
+      "s": 1,
+      "starts": 2
+    },
+    {
+      "normalized_mass_millionths": 1396825,
+      "s": 2,
+      "starts": 6
+    },
+    {
+      "normalized_mass_millionths": 1421209,
+      "s": 3,
+      "starts": 27
+    },
+    {
+      "normalized_mass_millionths": 1435760,
+      "s": 4,
+      "starts": 114
+    },
+    {
+      "normalized_mass_millionths": 1445633,
+      "s": 5,
+      "starts": 512
+    },
+    {
+      "normalized_mass_millionths": 1450928,
+      "s": 6,
+      "starts": 2332
+    },
+    {
+      "normalized_mass_millionths": 1454330,
+      "s": 7,
+      "starts": 10765
+    }
+  ],
+  "stopped_residue_comparisons": 108240,
+  "stopping_laws": 33
+}

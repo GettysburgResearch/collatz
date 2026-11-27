@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Replay frozen finite controls in both Python modes; no mathematical extrapolation."""
+import ast
 import hashlib
 import json
 from pathlib import Path
@@ -36,6 +37,27 @@ CONTROLS = [
     ("cycles/check_binary_energy_independent.py", [], "cycles/BINARY_ENERGY_INDEPENDENT_CONTROLS.json"),
     ("cycles/full_bridge_pressure.py", [], "cycles/FULL_BRIDGE_PRESSURE.json"),
     ("cycles/check_free_bridge_review.py", [], "cycles/FREE_BRIDGE_REVIEW_CONTROLS.json"),
+    ("pointwise/check_height_census.py", [], "pointwise/HEIGHT_CENSUS_CONTROLS.json"),
+    ("pointwise/check_all_height_audit.py", [], "pointwise/ALL_HEIGHT_INDEPENDENT_CONTROLS.json"),
+    ("pointwise/check_canonical_birth_profile.py", [], "pointwise/CANONICAL_BIRTH_PROFILE_CONTROLS.json"),
+    ("pointwise/check_early_small_visitors.py", [], "pointwise/EARLY_SMALL_VISITORS_CONTROLS.json"),
+    ("cycles/averaged_energy_certificate.py", [], "cycles/AVERAGED_ENERGY_CHECK.json"),
+    ("cycles/averaged_return_crosscheck.py", [], "cycles/AVERAGED_RETURN_CROSSCHECK.json"),
+    ("cycles/sparse_grade_certificate.py", [], "cycles/SPARSE_GRADE_CHECK.json"),
+    ("cycles/sparse_projection_crosscheck.py", [], "cycles/SPARSE_PROJECTION_CROSSCHECK.json"),
+    ("cycles/sparse_nonbinary_certificate.py", [], "cycles/SPARSE_NONBINARY_CHECK.json"),
+    ("cycles/all_lag_orientation_certificate.py", [], "cycles/ALL_LAG_ORIENTATION_CHECK.json"),
+    ("cycles/clock_order_certificate.py", [], "cycles/CLOCK_ORDER_CHECK.json"),
+    ("cycles/three_grade_modular_certificate.py", [], "cycles/THREE_GRADE_MODULAR_CHECK.json"),
+    ("cycles/check_three_grade_audit.py", [], "cycles/THREE_GRADE_AUDIT_CONTROLS.json"),
+    ("cycles/higher_moment_barrier.py", [], "cycles/HIGHER_MOMENT_BARRIER.json"),
+    ("cycles/fifth_verify.py", [], "cycles/FIFTH_CERTIFICATE_RESULT.json"),
+    ("cycles/independent_fifth_setup.py", [], "cycles/FIFTH_INDEPENDENT_SETUP.json"),
+    ("cycles/independent_fifth_law_controls.py", [], "cycles/FIFTH_LAW_CONTROLS.json"),
+    ("cycles/third_layer_fifth_check.py", [], "cycles/THIRD_LAYER_FIFTH_CHECK.json"),
+    ("cycles/check_third_layer_fifth_audit.py", [], "cycles/THIRD_LAYER_FIFTH_AUDIT_CONTROLS.json"),
+    ("cycles/sparse_binary_global_check.py", [], "cycles/SPARSE_BINARY_GLOBAL_CONTROLS.json"),
+    ("cycles/independent_global_fifth_sparse.py", [], "cycles/GLOBAL_FIFTH_SPARSE_REVIEW_CHECK.json"),
 ]
 DEPENDENCIES = {
     "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
@@ -43,6 +65,14 @@ DEPENDENCIES = {
     "pointwise/check_overhead_spectrum.py": [
         "pointwise/check_extra_budget.py", "pointwise/check_positive_anchors.py"],
     "cycles/full_bridge_pressure.py": ["cycles/bridge_energy_certificate.py"],
+    "pointwise/check_canonical_birth_profile.py": ["pointwise/check_all_height_audit.py"],
+    "pointwise/check_early_small_visitors.py": ["pointwise/check_all_height_audit.py"],
+    "cycles/sparse_nonbinary_certificate.py": ["cycles/sparse_grade_certificate.py"],
+    "cycles/higher_moment_barrier.py": ["cycles/bridge_energy_certificate.py"],
+    "cycles/fifth_verify.py": ["cycles/FIFTH_WITNESSES.txt.gz", "cycles/FIFTH_INTEGER_GRID_ROWS.txt",
+                              "cycles/fifth_grid_integer.cpp"],
+    "cycles/independent_fifth_setup.py": ["cycles/FIFTH_WITNESSES.txt.gz", "cycles/FIFTH_INTEGER_GRID_ROWS.txt"],
+    "cycles/independent_fifth_law_controls.py": ["cycles/independent_fifth_setup.py", "cycles/FIFTH_WITNESSES.txt.gz"],
 }
 
 
@@ -73,6 +103,12 @@ def main():
             "normal_exit_code": 0,
             "optimized_exit_code": 0,
             "byte_identical": True,
+            "python_assertions_present": any(isinstance(node, ast.Assert)
+                for node in ast.walk(ast.parse((ROOT / script).read_text(encoding="utf-8")))),
+            "optimized_scope": "whole-output reproduction; Python -O removes assert statements",
+            "fifth_grid_scope": ("saved integer rows and rational analytic inequalities; "
+                                  "use fifth_verify.py --rebuild for fresh C++ grid execution"
+                                  if script == "cycles/fifth_verify.py" else None),
         })
         print(f"{script}: both modes reproduce the frozen output", file=sys.stderr, flush=True)
     print(json.dumps(receipt, indent=2))

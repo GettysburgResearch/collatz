@@ -1,0 +1,71 @@
+"""Independent exact portable-witness, face, arithmetic and grid-stability review."""
+from fractions import Fraction as Q
+from collections import defaultdict
+from math import factorial, ceil
+from pathlib import Path
+import gzip,json,hashlib,sys
+
+BASE=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent/'sixhour-cycle-frontier-review'
+
+def ln_bounds(x, n):
+    x=Q(x); t=(x-1)/(x+1)
+    s=2*sum(t**(2*j+1)/(2*j+1) for j in range(n))
+    err=2*abs(t)**(2*n+1)/((2*n+1)*(1-t*t))
+    return s-err,s+err
+
+def rows():
+    with gzip.open(BASE/'FIFTH_WITNESSES.txt.gz','rt') as f:
+        it=iter(f.read().split());take=lambda: int(next(it)); n,L,K,cp,rp,nw,ne=[take() for _ in range(7)]
+        mask=[]; coeff=[]
+        for _ in range(nw):
+            mask.append(next(it)); cnt=take(); d={}
+            for j in range(cnt):
+                k,s,t,c=take(),take(),take(),take();assert (k,s,t) not in d;d[k,s,t]=c
+            coeff.append(d)
+        edges=[tuple(take() for j in range(4)) for _ in range(ne)]
+        assert next(it,None) is None
+        return (n,L,K,cp,rp),mask,coeff,edges
+
+def cells(a,num):
+    points=sorted(((Q(-j*a)%1,j) for j in range(num+1)))
+    assert len({f for f,j in points})==num+1
+    cuts=[f for f,j in points]+[1]
+    def seq(f):return ''.join(str(1+((f+(j+1)*a)//1-(f+j*a)//1)) for j in range(num))
+    words=[seq((x+y)/2) for x,y in zip(cuts,cuts[1:])]; assert words==[seq(x) for x in cuts[:-1]]
+    return [j for f,j in points],words,[y-x for x,y in zip(cuts,cuts[1:])]
+
+def rational_tail(l):
+    r=Q(56,125); J=80-l; v=Q(5,2)-l
+    co=Q(1); absolute=Q(1)
+    for j in range(1,J+1):co*=abs(v-j+1)*r/j;absolute+=co
+    first=co*abs(v-J)*r/(J+1)
+    tail=first/(1-r*(1+(abs(v)+1)/(J+2)))
+    return Q(2619,1000)**l * Q(5,4)**ceil(v)*(2*absolute+tail)*tail
+
+def run():
+    (n,L,K,cp,rp),mask,coeff,edges=rows();assert (n,L,K,cp,rp,len(mask),len(edges))==(75,12,14,43,33,76,77)
+    for d in coeff:assert all(d.get((-k,-s,j))==v for (k,s,j),v in d.items())
+    lo,hi=Q(58496250072115,10**14),Q(58496250072116,10**14)
+    l2,u2=ln_bounds(2,90);l3,u3=ln_bounds(3,100);assert lo<l3/u2-1<=u3/l2-1<hi
+    lp,ls,lw=cells(lo,n+1);hp,hs,hw=cells(hi,n+1);assert lp==hp and ls==hs
+    assert set(mask)==set(w[:-1] for w in ls)|set(w[1:] for w in ls)
+    for (i,j,m,R),w in zip(edges,ls):assert mask[i]==w[:-1] and mask[j]==w[1:] and m==int(w[0]);assert 2< Q(R,2**rp)<6
+    logs=[2*u2+ln_bounds(Q(R,4*2**rp),24)[1] for _,_,_,R in edges]
+    avg=max(sum(f*x for f,x in zip(weights,logs)) for weights in (lw,hw));critical=4*l3/3
+    assert critical-avg>Q(346,10**6)
+    l1=max(sum(abs(v) for v in d.values()) for d in coeff)/Q(2**cp);assert l1<3
+    pi=Q(22,7); spread=max(sum(abs(c)*(abs(s)+j+abs(s))**2 for (k,s,j),c in d.items()) for d in coeff)*pi**2/(2*252**2*2**cp)
+    assert spread < Q(7,10000)
+    tails=[rational_tail(l) for l in range(13)];tail=max(sum(Q(abs(v),2**cp)*tails[abs(s)+j] for (k,s,j),v in coeff[new].items())/(Q(R,2**rp)) for old,new,m,R in edges)
+    assert tail<Q(7,10**10)
+    mag=(1-(pi*80/252)**2/2)**-2;assert mag<4
+    grid_path=BASE/'FIFTH_INTEGER_GRID_ROWS.txt'
+    header,*raw=grid_path.read_text().splitlines();assert [int(t) for t in header.split()]==[77,252,2**50]
+    bounds=[[int(v) for v in row.split()] for row in raw];assert len(bounds)==77 and all(len(row)==138 for row in bounds)
+    lower=Q(min(row[0] for row in bounds),2**50)-spread-Q(1,2**28);assert lower>Q(94,1000)
+    sample=Q(max(sum(row[1:]) for row in bounds),2**50)+Q(137,2**30);assert sample<Q(31,10**7)
+    assert (mag*sample+(mag+1)*tail)/lower<Q(1,7000)
+    assert critical-avg-Q(1,7000)>Q(1,5000)
+    return {'uniform_row_ratio_upper':'1/7000','mean_natural_log_gap_lower':'1/5000','masks':len(mask),'edges':len(edges),'faces':len(ls),'exact_hermitian':True,'normalized_coefficient_l1_upper':'3','positivity_grid_global_loss_upper':'7/10000','degree80_total_residual_frequency_tail_upper':'7/10000000000','two_axis_Bernstein_factor_upper':'4','base_log_margin_lower':'346/1000000','lohi_phase_stability':True,'witness_sha256':hashlib.sha256((BASE/'FIFTH_WITNESSES.txt.gz').read_bytes()).hexdigest()}
+
+if __name__=='__main__':print(json.dumps(run(),sort_keys=True,indent=2))

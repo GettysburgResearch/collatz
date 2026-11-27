@@ -1,0 +1,63 @@
+{
+  "baseline_head": "bf7d52e78631954a9fd35e4ce973acd27738fc80",
+  "baseline_pr": 200,
+  "limits": "The new all-height census is an ordinary starting-integer and pre-exit ensemble theorem. The all-start pointwise O(log n) all-height clock is open; the long-one obstruction rules out natural-log time constants below 1/log(2). W2 uses external, same-ray tropical sibling summability. No universal Collatz conclusion.",
+  "receipt_checks": {
+    "author_compression_original_receipt_reproduced": "11fc312708d93a57c1def0ce9b08f49c96217698ae23ce711eec812fe646a484",
+    "author_unrestricted_pressure_receipt_reproduced": "e259dcadb6c8de1384b15404cbea1d056726f9c79ff85d0be3819560b5372e61",
+    "normal_optimized_identical": [
+      [
+        "MOVING_REVIEW_CONTROLS.json",
+        "MOVING_REVIEW_OPTIMIZED.json"
+      ],
+      [
+        "FREE_BRIDGE_REVIEW_CONTROLS.json",
+        "FREE_BRIDGE_REVIEW_OPTIMIZED.json"
+      ],
+      [
+        "HEIGHT_CENSUS_CONTROLS.json",
+        "HEIGHT_CENSUS_OPTIMIZED.json"
+      ],
+      [
+        "author-shadow-replay.json",
+        "author-shadow-optimized-replay.json"
+      ]
+    ]
+  },
+  "record_groups": {
+    "independent_review": [
+      "MOVING_SHADOW_INDEPENDENT_REVIEW.md",
+      "check_moving_review.py",
+      "MOVING_REVIEW_CONTROLS.json",
+      "BINARY_EXCURSION_PRESSURE_REVIEW.md",
+      "check_free_bridge_review.py",
+      "FREE_BRIDGE_REVIEW_CONTROLS.json"
+    ],
+    "new_all_height_ordinary_start_census_for_fresh_review": [
+      "ALL_HEIGHT_ORDINARY_CENSUS.md",
+      "ALL_HEIGHT_LOGARITHMIC_WINDOWS.md",
+      "check_height_census.py",
+      "HEIGHT_CENSUS_CONTROLS.json"
+    ],
+    "same_ordinary_source_consequences": [
+      "MULTISCALE_SHALLOW_CLOCKS.md",
+      "SHALLOW_TROPICAL_ISOLATION.md"
+    ]
+  },
+  "reviewed_anchor_handoff": "eb64268c17422e6477c610cc96519c28d783f3f079e5fff5947e596855e31edd",
+  "sha256": {
+    "ALL_HEIGHT_LOGARITHMIC_WINDOWS.md": "3299dffc969f750b50199fdab541b6c425add9008fa79e4b3fd7d6ecedd3df2b",
+    "ALL_HEIGHT_ORDINARY_CENSUS.md": "83c8661eaec0630bca1aec8db5d81a3e9fbacb2ef98cc6a9a37947ffb7173872",
+    "BINARY_EXCURSION_PRESSURE_REVIEW.md": "a2dd96953b02a6a8af260bcd2b3649998d632e43f06fe9a19a387248e2500f05",
+    "FREE_BRIDGE_REVIEW_CONTROLS.json": "3e1dfd2204f4bc453a20466feb986313d51c49b025bd53243225720adf6a5dd5",
+    "HEIGHT_CENSUS_CONTROLS.json": "e59d810eb3e9326f3a1ed365ccdcbfcfbb8b901988551deda450cb3fa5903e0e",
+    "MOVING_REVIEW_CONTROLS.json": "f5d6c661a2148b3a8e8e9718dd109a4f46fe206b8731e654ea786aaa08d5741a",
+    "MOVING_SHADOW_INDEPENDENT_REVIEW.md": "a5e5ba55338ea9ac0ceb92ab597bc782ed47d578d238a5c00682cd22b678a8db",
+    "MULTISCALE_SHALLOW_CLOCKS.md": "488bfb986a5508b28a83886ee873ee00d0521afffde7b8ad08aa0d6fb8d04aa9",
+    "SHALLOW_TROPICAL_ISOLATION.md": "985e62247034fbffafeac959aceb379f26632ea999b0b0f4bc357d26b94ade16",
+    "check_free_bridge_review.py": "999be50e5df4a0613726cb6749be376ed4efc2c81a9f3fb8076b802e7e88168c",
+    "check_height_census.py": "823327db2a728b290a7101dddda10a21b503822d42100278510482f3cf5579ae",
+    "check_moving_review.py": "cd5577ac8def5f4fdb1f7c8c72798627ca7a2286c0810b02a5d724721873b709"
+  },
+  "tropical_input_pr201_head": "4c36876ebbe8d3cca69b2c4867aeee34f5700470"
+}
