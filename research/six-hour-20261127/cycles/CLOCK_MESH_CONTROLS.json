@@ -1,0 +1,30 @@
+{
+  "mesh": {
+    "common_clock_choices": 14471,
+    "lags": 4923,
+    "mesh_intervals": 159930
+  },
+  "actual_prefixes": [
+    {
+      "source": 27,
+      "odd_edges": 25,
+      "native_clock": 35,
+      "actual_endpoint": 719,
+      "largest_state": 719
+    },
+    {
+      "source": 31,
+      "odd_edges": 30,
+      "native_clock": 41,
+      "actual_endpoint": 3077,
+      "largest_state": 3077
+    },
+    {
+      "source": 6171,
+      "odd_edges": 40,
+      "native_clock": 65,
+      "actual_endpoint": 2035,
+      "largest_state": 325133
+    }
+  ]
+}

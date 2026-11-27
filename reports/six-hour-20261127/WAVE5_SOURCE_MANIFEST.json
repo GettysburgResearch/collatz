@@ -1,0 +1,529 @@
+{
+  "parent_commit": "df2f17a117bea06bb34040a5a97e7dc9711d9871",
+  "claim_scope": "Frozen source identities; two prose copies have trailing whitespace removed with lossless originals retained. Historical author Lean runners are preserved as text. Mathematical review and execution scopes are separate.",
+  "entries": [
+    {
+      "source": "sixhour-root-wave5/PermanentSafeDebt.lean",
+      "source_sha256": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552",
+      "path": "research/six-hour-20261127/pointwise/PermanentSafeDebt.lean",
+      "integrated_sha256": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552",
+      "modified": false
+    },
+    {
+      "source": "sixhour-root-wave5/PermanentSafeOrdinary.lean",
+      "source_sha256": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f",
+      "path": "research/six-hour-20261127/pointwise/PermanentSafeOrdinary.lean",
+      "integrated_sha256": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-root-wave5/RankConvexityInterfaces.lean",
+      "source_sha256": "e79788a9d2069974fd2a845460575d36089d05744d3febf83d19b2ba2a637d4f",
+      "path": "research/six-hour-20261127/cycles/RankConvexityInterfaces.lean",
+      "integrated_sha256": "e79788a9d2069974fd2a845460575d36089d05744d3febf83d19b2ba2a637d4f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CRITICAL_SAFE_ENTRY.md",
+      "source_sha256": "5736d7e7823138afcb2c5518fb221c179dcd8a7a5f06a26ae75c4dd56aa975c4",
+      "path": "research/six-hour-20261127/pointwise/CRITICAL_SAFE_ENTRY.md",
+      "integrated_sha256": "5736d7e7823138afcb2c5518fb221c179dcd8a7a5f06a26ae75c4dd56aa975c4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CRITICAL_SAFE_ENTRY_CONTROLS.json",
+      "source_sha256": "01f85db919366b2c05afcf07f6e9510a128882a311a50c84b5ff1398356b8f49",
+      "path": "research/six-hour-20261127/pointwise/CRITICAL_SAFE_ENTRY_CONTROLS.json",
+      "integrated_sha256": "01f85db919366b2c05afcf07f6e9510a128882a311a50c84b5ff1398356b8f49",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_critical_safe_entry.py",
+      "source_sha256": "7b10673404f6db606223074b83d47e1be0f9b3a1561b7fdcf0b25ed7159e18a2",
+      "path": "research/six-hour-20261127/pointwise/check_critical_safe_entry.py",
+      "integrated_sha256": "7b10673404f6db606223074b83d47e1be0f9b3a1561b7fdcf0b25ed7159e18a2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_CRITICAL_SAFE_ENTRY.json",
+      "source_sha256": "53ec76f7398be1aef5647bbc08e8f8191b63d23f66a890b8577a858918b5271e",
+      "path": "reports/six-hour-20261127/FROZEN_CRITICAL_SAFE_ENTRY.json",
+      "integrated_sha256": "53ec76f7398be1aef5647bbc08e8f8191b63d23f66a890b8577a858918b5271e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ORDINARY_SAFE_LEAN_AUDIT_LOG.jsonl",
+      "source_sha256": "dca8c0010b57e1241b61051d1aaf43a2c60debfc5d51c3b868e42099a9fd99a8",
+      "path": "reports/six-hour-20261127/ORDINARY_SAFE_LEAN_AUDIT_LOG.jsonl",
+      "integrated_sha256": "dca8c0010b57e1241b61051d1aaf43a2c60debfc5d51c3b868e42099a9fd99a8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ORDINARY_SAFE_LEAN_BUILD.json",
+      "source_sha256": "048724b388ec7114d9e431045f8f26513e8c9d79f21629790dd19c373e742964",
+      "path": "reports/six-hour-20261127/ORDINARY_SAFE_LEAN_BUILD.json",
+      "integrated_sha256": "048724b388ec7114d9e431045f8f26513e8c9d79f21629790dd19c373e742964",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ORDINARY_SAFE_LEAN_INDEPENDENT_REVIEW.md",
+      "source_sha256": "cac12d535c0e93b492a11dc768e9263368da5e5a4a0e7828929728e695051847",
+      "path": "reports/six-hour-20261127/ORDINARY_SAFE_LEAN_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "cac12d535c0e93b492a11dc768e9263368da5e5a4a0e7828929728e695051847",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/verify_ordinary_safe_modules.py",
+      "source_sha256": "ad9c51e237c70121128c4eb69ec137bc3d9837d2f91d73674f4caed8e7480c91",
+      "path": "reports/six-hour-20261127/source-originals/verify_ordinary_safe_modules.py.original.txt",
+      "integrated_sha256": "ad9c51e237c70121128c4eb69ec137bc3d9837d2f91d73674f4caed8e7480c91",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_ORDINARY_SAFE_LEAN_AUDIT.json",
+      "source_sha256": "cd8d2dc65d9de4f1e141fe4f47d1bd02ec8e2fdadadcf59c7ca1112308ee5822",
+      "path": "reports/six-hour-20261127/FROZEN_ORDINARY_SAFE_LEAN_AUDIT.json",
+      "integrated_sha256": "cd8d2dc65d9de4f1e141fe4f47d1bd02ec8e2fdadadcf59c7ca1112308ee5822",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PermanentSafeBitClock.lean",
+      "source_sha256": "c753b14612353a370f2fc4bcfce267787ae51dcd78b43907a0f89437d5d799b7",
+      "path": "research/six-hour-20261127/pointwise/PermanentSafeBitClock.lean",
+      "integrated_sha256": "c753b14612353a370f2fc4bcfce267787ae51dcd78b43907a0f89437d5d799b7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/SAFE_BIT_CLOCK.md",
+      "source_sha256": "f5a3bac54fa58ce32fa68da3b6ea91b84b29b1aa1b961f51f112f9560d499cbb",
+      "path": "research/six-hour-20261127/pointwise/SAFE_BIT_CLOCK.md",
+      "integrated_sha256": "d15b144cb28cf50c5ac11f80c90f7d6ecc4d35c262ab293a5ef32a6a18bfde4b",
+      "modified": true,
+      "transformation": "trailing whitespace removal only; exact original retained as JSON"
+    },
+    {
+      "source": "sixhour-all-height-audit/SAFE_BIT_CLOCK_AXIOMS.jsonl",
+      "source_sha256": "29feaa03bf6ef12689b7f113480dc395c7c264ea0a8f53922c05917dc931b4f2",
+      "path": "reports/six-hour-20261127/SAFE_BIT_CLOCK_AXIOMS.jsonl",
+      "integrated_sha256": "29feaa03bf6ef12689b7f113480dc395c7c264ea0a8f53922c05917dc931b4f2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/SAFE_BIT_CLOCK_BUILD.json",
+      "source_sha256": "21c996f8059eafce214fcfedd1a8acd6d6f7eedc52d8451220b23b41a49f2435",
+      "path": "reports/six-hour-20261127/SAFE_BIT_CLOCK_BUILD.json",
+      "integrated_sha256": "21c996f8059eafce214fcfedd1a8acd6d6f7eedc52d8451220b23b41a49f2435",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/verify_safe_bit_clock.py",
+      "source_sha256": "841c55f0b0676864dfdb18293fe5ed00796a1547a3ac86db572851da41446631",
+      "path": "reports/six-hour-20261127/source-originals/verify_safe_bit_clock.py.original.txt",
+      "integrated_sha256": "841c55f0b0676864dfdb18293fe5ed00796a1547a3ac86db572851da41446631",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_SAFE_BIT_CLOCK.json",
+      "source_sha256": "7ab98ce92bb13e7d360fd3f04ee31e638f3e0402d426bf99371aea9d2d87cf96",
+      "path": "reports/six-hour-20261127/FROZEN_SAFE_BIT_CLOCK.json",
+      "integrated_sha256": "7ab98ce92bb13e7d360fd3f04ee31e638f3e0402d426bf99371aea9d2d87cf96",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PHYSICAL_BAND_AUDIT_CONTROLS.json",
+      "source_sha256": "020146608c88196a1fca4e82400a46ade13dd5665abd157f4fd0bb95ed241ab0",
+      "path": "research/six-hour-20261127/cycles/PHYSICAL_BAND_AUDIT_CONTROLS.json",
+      "integrated_sha256": "020146608c88196a1fca4e82400a46ade13dd5665abd157f4fd0bb95ed241ab0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PHYSICAL_BAND_INDEPENDENT_REVIEW.md",
+      "source_sha256": "e1f81cdf613b178832de4fc97e65b7e668905be70abd56ba005f1730071bbfa2",
+      "path": "reports/six-hour-20261127/PHYSICAL_BAND_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "e1f81cdf613b178832de4fc97e65b7e668905be70abd56ba005f1730071bbfa2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_physical_band_audit.py",
+      "source_sha256": "fe1010432810e733622e9b78c8c56e13e3997563450f017d7dba7fa062265f3e",
+      "path": "research/six-hour-20261127/cycles/check_physical_band_audit.py",
+      "integrated_sha256": "fe1010432810e733622e9b78c8c56e13e3997563450f017d7dba7fa062265f3e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_PHYSICAL_BAND_AUDIT.json",
+      "source_sha256": "651e0896168e4e3ac71847c3f096401e5aeb1cc434d546e78d0667f9ab92ed4d",
+      "path": "reports/six-hour-20261127/FROZEN_PHYSICAL_BAND_AUDIT.json",
+      "integrated_sha256": "651e0896168e4e3ac71847c3f096401e5aeb1cc434d546e78d0667f9ab92ed4d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CLASSICAL_GAP_AUDIT_CONTROLS.json",
+      "source_sha256": "32e109f27bcbd506751ffa8751e522102e3b781c2ce1169448a93b7321916dab",
+      "path": "research/six-hour-20261127/cycles/CLASSICAL_GAP_AUDIT_CONTROLS.json",
+      "integrated_sha256": "32e109f27bcbd506751ffa8751e522102e3b781c2ce1169448a93b7321916dab",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CLASSICAL_GAP_INDEPENDENT_REVIEW.md",
+      "source_sha256": "683f1d11c751a08fef53ab44478c53593b93ed2b87e14725df83dd2f9e910d5f",
+      "path": "reports/six-hour-20261127/CLASSICAL_GAP_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "683f1d11c751a08fef53ab44478c53593b93ed2b87e14725df83dd2f9e910d5f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_classical_gap_audit.py",
+      "source_sha256": "4b1a72365413d7ed0ffc0c2d295d4a67d5943d960e25847f050194f8d153eb22",
+      "path": "research/six-hour-20261127/cycles/check_classical_gap_audit.py",
+      "integrated_sha256": "4b1a72365413d7ed0ffc0c2d295d4a67d5943d960e25847f050194f8d153eb22",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_CLASSICAL_GAP_AUDIT.json",
+      "source_sha256": "119d7ccb41b45d29483ca73a72b657025c468ca7de533af317fc2cec436729b9",
+      "path": "reports/six-hour-20261127/FROZEN_CLASSICAL_GAP_AUDIT.json",
+      "integrated_sha256": "119d7ccb41b45d29483ca73a72b657025c468ca7de533af317fc2cec436729b9",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CONVEX_RANK_AUDIT_CONTROLS.json",
+      "source_sha256": "e26ccbfe15f5ca03b602634945b0662f5e2baa990931ed37c02cfef9da8fd7c4",
+      "path": "research/six-hour-20261127/cycles/CONVEX_RANK_AUDIT_CONTROLS.json",
+      "integrated_sha256": "e26ccbfe15f5ca03b602634945b0662f5e2baa990931ed37c02cfef9da8fd7c4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CONVEX_RANK_INDEPENDENT_REVIEW.md",
+      "source_sha256": "1b6cb796c2f57d29cf3d8edb6cb2e830704af705e31efb43e5481302d4b5aba6",
+      "path": "reports/six-hour-20261127/CONVEX_RANK_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "1b6cb796c2f57d29cf3d8edb6cb2e830704af705e31efb43e5481302d4b5aba6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_convex_rank_audit.py",
+      "source_sha256": "e90e39bdb375aa12440aa88873f83347a6d46bd8bdcdb8e13e3d64ed8bead2f4",
+      "path": "research/six-hour-20261127/cycles/check_convex_rank_audit.py",
+      "integrated_sha256": "e90e39bdb375aa12440aa88873f83347a6d46bd8bdcdb8e13e3d64ed8bead2f4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_CONVEX_RANK_AUDIT.json",
+      "source_sha256": "87c1d329697eece5cdefc12582e1169e557cd5c5e5c9a862b9812ef03a326e9c",
+      "path": "reports/six-hour-20261127/FROZEN_CONVEX_RANK_AUDIT.json",
+      "integrated_sha256": "87c1d329697eece5cdefc12582e1169e557cd5c5e5c9a862b9812ef03a326e9c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/UNRESTRICTED_THREE_GRADE_AUDIT_CONTROLS.json",
+      "source_sha256": "bd3539b25abd7ecfde6e1d863497e6fae08f75d0f1b2a68648a29eb69ba485db",
+      "path": "research/six-hour-20261127/cycles/UNRESTRICTED_THREE_GRADE_AUDIT_CONTROLS.json",
+      "integrated_sha256": "bd3539b25abd7ecfde6e1d863497e6fae08f75d0f1b2a68648a29eb69ba485db",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/UNRESTRICTED_THREE_GRADE_INDEPENDENT_REVIEW.md",
+      "source_sha256": "a757fc3db50a2aa0163a1cbf7726c6ea528d5fbfd9329bc7d1c5852d98bc1981",
+      "path": "reports/six-hour-20261127/UNRESTRICTED_THREE_GRADE_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "a757fc3db50a2aa0163a1cbf7726c6ea528d5fbfd9329bc7d1c5852d98bc1981",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_unrestricted_three_grade_audit.py",
+      "source_sha256": "270dd372b18ffaf6d61f522aa0f95f8c3911c5f0271f67553aa760cfc64bdf43",
+      "path": "research/six-hour-20261127/cycles/check_unrestricted_three_grade_audit.py",
+      "integrated_sha256": "270dd372b18ffaf6d61f522aa0f95f8c3911c5f0271f67553aa760cfc64bdf43",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_UNRESTRICTED_THREE_GRADE_AUDIT.json",
+      "source_sha256": "71c7fe79d53365971a570ddd4fba60b3648ef88f92dbe41275a6c596f28889de",
+      "path": "reports/six-hour-20261127/FROZEN_UNRESTRICTED_THREE_GRADE_AUDIT.json",
+      "integrated_sha256": "71c7fe79d53365971a570ddd4fba60b3648ef88f92dbe41275a6c596f28889de",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/CONVEX_GAP_CONSUMER_CONTROLS.json",
+      "source_sha256": "dc57372791792d7edee9cb771b76f24c3323ab995256fc0d08fb1b124ba44198",
+      "path": "research/six-hour-20261127/cycles/CONVEX_GAP_CONSUMER_CONTROLS.json",
+      "integrated_sha256": "dc57372791792d7edee9cb771b76f24c3323ab995256fc0d08fb1b124ba44198",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/MICROSCOPIC_CONVEX_LAG_BOUND.md",
+      "source_sha256": "cc9cf5758ba45a1e5c38d4d3bb30160d9c68294e302f291ebcdf4d2ef1a4f8c8",
+      "path": "research/six-hour-20261127/cycles/MICROSCOPIC_CONVEX_LAG_BOUND.md",
+      "integrated_sha256": "cc9cf5758ba45a1e5c38d4d3bb30160d9c68294e302f291ebcdf4d2ef1a4f8c8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_convex_gap_consumers.py",
+      "source_sha256": "6754ef98906581249e8d72ac276a070bcd0e67e159b51add9e8532f17f87bf8e",
+      "path": "research/six-hour-20261127/cycles/check_convex_gap_consumers.py",
+      "integrated_sha256": "6754ef98906581249e8d72ac276a070bcd0e67e159b51add9e8532f17f87bf8e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_MICROSCOPIC_CONVEX_LAG.json",
+      "source_sha256": "ee08e257b6c0721c6d5666c8ad525e5471c751e9401073b70ba9ddfbc6facdf2",
+      "path": "reports/six-hour-20261127/FROZEN_MICROSCOPIC_CONVEX_LAG.json",
+      "integrated_sha256": "ee08e257b6c0721c6d5666c8ad525e5471c751e9401073b70ba9ddfbc6facdf2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/RANK_INTERFACES_LEAN_AUDIT.json",
+      "source_sha256": "431098189d20f880822ed4282ff3f86e1198bc3f9b167f09ed995429811c51ed",
+      "path": "reports/six-hour-20261127/RANK_INTERFACES_LEAN_AUDIT.json",
+      "integrated_sha256": "431098189d20f880822ed4282ff3f86e1198bc3f9b167f09ed995429811c51ed",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/RANK_INTERFACES_LEAN_INDEPENDENT_REVIEW.md",
+      "source_sha256": "af9056c701b06ec09a523c007f6c2e9f4fe6a38937713c8085c1a8abd078d28f",
+      "path": "reports/six-hour-20261127/RANK_INTERFACES_LEAN_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "af9056c701b06ec09a523c007f6c2e9f4fe6a38937713c8085c1a8abd078d28f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/verify_rank_interfaces.py",
+      "source_sha256": "e983ad6f31bb60115b6ab5cd6c258dd1c7d3c68763f2370d21b2722c620db321",
+      "path": "reports/six-hour-20261127/source-originals/verify_rank_interfaces.py.original.txt",
+      "integrated_sha256": "e983ad6f31bb60115b6ab5cd6c258dd1c7d3c68763f2370d21b2722c620db321",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_RANK_INTERFACES_LEAN_AUDIT.json",
+      "source_sha256": "8a0ad2ebc7d9cdf5fcae8c66ed3365a114c956d5f0d95c943513b7683a4bc5db",
+      "path": "reports/six-hour-20261127/FROZEN_RANK_INTERFACES_LEAN_AUDIT.json",
+      "integrated_sha256": "8a0ad2ebc7d9cdf5fcae8c66ed3365a114c956d5f0d95c943513b7683a4bc5db",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/PHYSICAL_BAND_CHECK.json",
+      "source_sha256": "ca25aa76a97f6903561edf2957756faaba89064b0727269b6caf0b23581a166f",
+      "path": "research/six-hour-20261127/cycles/PHYSICAL_BAND_CHECK.json",
+      "integrated_sha256": "ca25aa76a97f6903561edf2957756faaba89064b0727269b6caf0b23581a166f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/PHYSICAL_BAND_WINDOWS_AND_OCCUPATION.md",
+      "source_sha256": "af9ec03f56f3eee635387d444d31000888c2245d8309892e5169833f610b1ace",
+      "path": "research/six-hour-20261127/cycles/PHYSICAL_BAND_WINDOWS_AND_OCCUPATION.md",
+      "integrated_sha256": "af9ec03f56f3eee635387d444d31000888c2245d8309892e5169833f610b1ace",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/physical_band_certificate.py",
+      "source_sha256": "7bb262d6942216dc17091c3e995c6a3843993446c8fa1c864b56789c878ab610",
+      "path": "research/six-hour-20261127/cycles/physical_band_certificate.py",
+      "integrated_sha256": "7bb262d6942216dc17091c3e995c6a3843993446c8fa1c864b56789c878ab610",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/PHYSICAL_BAND_MANIFEST.json",
+      "source_sha256": "3cb90e1da722657e8f888cd40cd5e6433d24e20463a6043743c512978e327ea3",
+      "path": "reports/six-hour-20261127/PHYSICAL_BAND_MANIFEST.json",
+      "integrated_sha256": "3cb90e1da722657e8f888cd40cd5e6433d24e20463a6043743c512978e327ea3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_FULL_BAND_ALL_LAG.md",
+      "source_sha256": "f93dcd554931d8fed5da71670f7cfa407d5ef44a26ec1cdeb4e5e63e46403da1",
+      "path": "research/six-hour-20261127/cycles/CLASSICAL_FULL_BAND_ALL_LAG.md",
+      "integrated_sha256": "65e23b3703a23a65f7c2ef6852aac8d05f0b38dccefa833d45cdcd8f94319d77",
+      "modified": true,
+      "transformation": "trailing whitespace removal only; exact original retained as JSON"
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_SIGNED_GAP_CHECK.json",
+      "source_sha256": "290ab86aa33f925f0a013690f2794628107a89d88cab405c201c75f11d814750",
+      "path": "research/six-hour-20261127/cycles/CLASSICAL_SIGNED_GAP_CHECK.json",
+      "integrated_sha256": "290ab86aa33f925f0a013690f2794628107a89d88cab405c201c75f11d814750",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/classical_signed_gap_certificate.py",
+      "source_sha256": "1bfd3bba52a94cf8fbfac89a4483f39b98eb12228b00bd08b8d77ebe63e164d6",
+      "path": "research/six-hour-20261127/cycles/classical_signed_gap_certificate.py",
+      "integrated_sha256": "1bfd3bba52a94cf8fbfac89a4483f39b98eb12228b00bd08b8d77ebe63e164d6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_SIGNED_GAP_MANIFEST.json",
+      "source_sha256": "91fe79d2fdb7f197a1da233d947661074b362f3026c3a3af8f560895caeccfdb",
+      "path": "reports/six-hour-20261127/CLASSICAL_SIGNED_GAP_MANIFEST.json",
+      "integrated_sha256": "91fe79d2fdb7f197a1da233d947661074b362f3026c3a3af8f560895caeccfdb",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/UNRESTRICTED_THREE_GRADE_ALL_LAG.md",
+      "source_sha256": "706a35d7adeddb6f54a19b6cbd5140983c0e162c036a98170b05098df4901f23",
+      "path": "research/six-hour-20261127/cycles/UNRESTRICTED_THREE_GRADE_ALL_LAG.md",
+      "integrated_sha256": "706a35d7adeddb6f54a19b6cbd5140983c0e162c036a98170b05098df4901f23",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/UNRESTRICTED_THREE_GRADE_CHECK.json",
+      "source_sha256": "2919ce2288f62ac2155b8c9261dfa77bd81f3d5e24801b6b12e8baf7cb2f8d48",
+      "path": "research/six-hour-20261127/cycles/UNRESTRICTED_THREE_GRADE_CHECK.json",
+      "integrated_sha256": "2919ce2288f62ac2155b8c9261dfa77bd81f3d5e24801b6b12e8baf7cb2f8d48",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/unrestricted_three_grade_certificate.py",
+      "source_sha256": "752b735afcf998b814f2063a5638a2aef31d207f2822599930c82438004dab80",
+      "path": "research/six-hour-20261127/cycles/unrestricted_three_grade_certificate.py",
+      "integrated_sha256": "752b735afcf998b814f2063a5638a2aef31d207f2822599930c82438004dab80",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/UNRESTRICTED_THREE_GRADE_MANIFEST.json",
+      "source_sha256": "c07616d0f063303b3dadfbc502a7a9616dbffce5b3f7e42d6b7f87ef8e0b39df",
+      "path": "reports/six-hour-20261127/UNRESTRICTED_THREE_GRADE_MANIFEST.json",
+      "integrated_sha256": "c07616d0f063303b3dadfbc502a7a9616dbffce5b3f7e42d6b7f87ef8e0b39df",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/PHYSICAL_DEPTH_TRANSFER_CHECK.json",
+      "source_sha256": "c290d164b5bde35c164fd311aae4a122b2a9a48c442d5c65251da85322183718",
+      "path": "research/six-hour-20261127/cycles/PHYSICAL_DEPTH_TRANSFER_CHECK.json",
+      "integrated_sha256": "c290d164b5bde35c164fd311aae4a122b2a9a48c442d5c65251da85322183718",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/UNRESTRICTED_PHYSICAL_ODD_OCCUPATION.md",
+      "source_sha256": "7862197b6a4d82a979ac7bb3cccf0a2716876554ed52edc8885df6e5ef31b166",
+      "path": "research/six-hour-20261127/cycles/UNRESTRICTED_PHYSICAL_ODD_OCCUPATION.md",
+      "integrated_sha256": "7862197b6a4d82a979ac7bb3cccf0a2716876554ed52edc8885df6e5ef31b166",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/physical_depth_transfer_certificate.py",
+      "source_sha256": "8c2978902103d7507fd1daf26b9c79d9da608b12099d2f07417ad0915c0bb473",
+      "path": "research/six-hour-20261127/cycles/physical_depth_transfer_certificate.py",
+      "integrated_sha256": "8c2978902103d7507fd1daf26b9c79d9da608b12099d2f07417ad0915c0bb473",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/PHYSICAL_DEPTH_TRANSFER_MANIFEST.json",
+      "source_sha256": "d369391320c6677a5864a1ceb2ab547b7f2d85e52bde0a51afcbe2ce8fa1db91",
+      "path": "reports/six-hour-20261127/PHYSICAL_DEPTH_TRANSFER_MANIFEST.json",
+      "integrated_sha256": "d369391320c6677a5864a1ceb2ab547b7f2d85e52bde0a51afcbe2ce8fa1db91",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/STRICT_CONVEX_RANKS.md",
+      "source_sha256": "862fdcc5b23f3467df65345dc7c267d4a384a845f664c69b94cf936b67b4bc94",
+      "path": "research/six-hour-20261127/cycles/STRICT_CONVEX_RANKS.md",
+      "integrated_sha256": "862fdcc5b23f3467df65345dc7c267d4a384a845f664c69b94cf936b67b4bc94",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/strict_rank_convexity_check.py",
+      "source_sha256": "9c3b3a535e85c847b86c1b1a7d97058c8938310a7840637defcd29ff5418fa75",
+      "path": "research/six-hour-20261127/cycles/strict_rank_convexity_check.py",
+      "integrated_sha256": "9c3b3a535e85c847b86c1b1a7d97058c8938310a7840637defcd29ff5418fa75",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/STRICT_RANK_CONVEXITY_CONTROLS.json",
+      "source_sha256": "f1e5a3d911517e54e5f8e8dbc9ec4c267f6248d1ea4d9477d958fd6a851397b6",
+      "path": "research/six-hour-20261127/cycles/STRICT_RANK_CONVEXITY_CONTROLS.json",
+      "integrated_sha256": "f1e5a3d911517e54e5f8e8dbc9ec4c267f6248d1ea4d9477d958fd6a851397b6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/CONVEX_RANK_CONSUMERS.md",
+      "source_sha256": "c9cac812d35845b40ca10f8a9a24e9c45a6918e8b96c8aa81ed7b2a260a0c56c",
+      "path": "research/six-hour-20261127/cycles/CONVEX_RANK_CONSUMERS.md",
+      "integrated_sha256": "c9cac812d35845b40ca10f8a9a24e9c45a6918e8b96c8aa81ed7b2a260a0c56c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/convex_rank_consumer_check.py",
+      "source_sha256": "83edaf1d8f6337df7432e02be51d56b0a5097b9a4da50565d74c9b600b568cfd",
+      "path": "research/six-hour-20261127/cycles/convex_rank_consumer_check.py",
+      "integrated_sha256": "83edaf1d8f6337df7432e02be51d56b0a5097b9a4da50565d74c9b600b568cfd",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/CONVEX_RANK_CONSUMER_CONTROLS.json",
+      "source_sha256": "ede18768f3e3cfbb28f096ee98eff8d00c3d44e1b06ab2831937b381525d4360",
+      "path": "research/six-hour-20261127/cycles/CONVEX_RANK_CONSUMER_CONTROLS.json",
+      "integrated_sha256": "ede18768f3e3cfbb28f096ee98eff8d00c3d44e1b06ab2831937b381525d4360",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_PHYSICAL_ODD_TRANSFER_REVIEW.md",
+      "source_sha256": "768708dd9cdb1f6aec86bd051d3ff89426b8b47e6f7d68cd74aad9c6b0737012",
+      "path": "reports/six-hour-20261127/INDEPENDENT_PHYSICAL_ODD_TRANSFER_REVIEW.md",
+      "integrated_sha256": "768708dd9cdb1f6aec86bd051d3ff89426b8b47e6f7d68cd74aad9c6b0737012",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/review_physical_odd_transfer.py",
+      "source_sha256": "986122c8faa40c2c48507b8350a69e234f7b11e719f0e2c411a7dd11551e60e1",
+      "path": "research/six-hour-20261127/cycles/review_physical_odd_transfer.py",
+      "integrated_sha256": "986122c8faa40c2c48507b8350a69e234f7b11e719f0e2c411a7dd11551e60e1",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/PHYSICAL_ODD_TRANSFER_REVIEW_CONTROLS.json",
+      "source_sha256": "5329bc5b1640b3d2735760393a53da1395cbde4483eeaa240cd73d386e5028bb",
+      "path": "research/six-hour-20261127/cycles/PHYSICAL_ODD_TRANSFER_REVIEW_CONTROLS.json",
+      "integrated_sha256": "5329bc5b1640b3d2735760393a53da1395cbde4483eeaa240cd73d386e5028bb",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/CONVEX_AND_PHYSICAL_WAVE5.sha256",
+      "source_sha256": "db797547614ec86867ad9239c3269f54334a8e965cfff22ae2f9df2e9d03721f",
+      "path": "reports/six-hour-20261127/CONVEX_AND_PHYSICAL_WAVE5.sha256",
+      "integrated_sha256": "db797547614ec86867ad9239c3269f54334a8e965cfff22ae2f9df2e9d03721f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_CRITICAL_SAFE_ENTRY_REVIEW.md",
+      "source_sha256": "cbb9cc557d5e2a956321ff289f28b359f32c9b46465a242e9bd3c9534053bc68",
+      "path": "reports/six-hour-20261127/INDEPENDENT_CRITICAL_SAFE_ENTRY_REVIEW.md",
+      "integrated_sha256": "cbb9cc557d5e2a956321ff289f28b359f32c9b46465a242e9bd3c9534053bc68",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/critical_safe_crosscheck.py",
+      "source_sha256": "be91da595f7cdd81e035f3f0f1fb4eaf5fd7a655d9b0330ad3f3b2e51f86ddc8",
+      "path": "research/six-hour-20261127/pointwise/critical_safe_crosscheck.py",
+      "integrated_sha256": "be91da595f7cdd81e035f3f0f1fb4eaf5fd7a655d9b0330ad3f3b2e51f86ddc8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/CRITICAL_SAFE_CROSSCHECK.json",
+      "source_sha256": "ec257cf6e41d7c86dbc8be19ca8260af4a0129b58bf6900f99cf9f63ceccbe0d",
+      "path": "research/six-hour-20261127/pointwise/CRITICAL_SAFE_CROSSCHECK.json",
+      "integrated_sha256": "ec257cf6e41d7c86dbc8be19ca8260af4a0129b58bf6900f99cf9f63ceccbe0d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/CLASSICAL_FULL_BAND_ALL_LAG.md",
+      "source_sha256": "f93dcd554931d8fed5da71670f7cfa407d5ef44a26ec1cdeb4e5e63e46403da1",
+      "path": "reports/six-hour-20261127/source-originals/CLASSICAL_FULL_BAND_ALL_LAG.original.json",
+      "integrated_sha256": "cb2e50368c3fe351c867c650d6780158ece4e4f818c686b311fafdfea3e64009",
+      "modified": true,
+      "transformation": "lossless JSON encoding of original prose bytes"
+    },
+    {
+      "source": "sixhour-all-height-audit/SAFE_BIT_CLOCK.md",
+      "source_sha256": "f5a3bac54fa58ce32fa68da3b6ea91b84b29b1aa1b961f51f112f9560d499cbb",
+      "path": "reports/six-hour-20261127/source-originals/SAFE_BIT_CLOCK.original.json",
+      "integrated_sha256": "662deea1902bfbdccfb9e74265492acf7daedc5d6d7488e01d0f1f7117225ba1",
+      "modified": true,
+      "transformation": "lossless JSON encoding of original prose bytes"
+    }
+  ],
+  "integration_artifacts_sha256": {
+    "research/six-hour-20261127/README.md": "24184bc50a6a045f15c32d20d2269161d61307296997d1472be72ee87e353946",
+    "research/six-hour-20261127/FIFTH_CHECKPOINT.md": "da7ba151018d062b60bd4765383e5e08830c345a9476eb7eba2cfb0747eacd1d",
+    "research/six-hour-20261127/replay_controls.py": "ebd25a45e56c89ada45ffd60ca359ea809cdaa1d039d7bfebc0079488e4be0bd",
+    "reports/six-hour-20261127/ROOT_REVIEW_WAVE5.md": "7e593d13c83f8c5897fe9ff665f1f8301bc5346fc705694626fa2c61e5d58a4a",
+    "reports/six-hour-20261127/ROOT_LEAN_WAVE5.json": "8a1d274af702576cf1b675b7fc67131db47beefe6613d922e2e597f6f78b434d",
+    "reports/six-hour-20261127/ROOT_CONTROLS_WAVE5.json": "c6e56cab6394d8d2c5fef65508cd59db6e9be3a0ddd59aac3142ea6cb255f370"
+  }
+}

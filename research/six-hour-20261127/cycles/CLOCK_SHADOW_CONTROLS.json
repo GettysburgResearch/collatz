@@ -1,0 +1,39 @@
+{
+  "integer_checks": {
+    "good_starts": 23974,
+    "primitive_words": 929,
+    "windows": 12862
+  },
+  "arbitrary_patch_words": [
+    {
+      "odd_period": 41,
+      "native_clock": 65,
+      "microcluster_size": 6,
+      "largest_patch_width": 12,
+      "global_minimum_defect_count": 7,
+      "whole_determinant_bits": 59,
+      "reduced_denominator_bits": 59,
+      "denominator_sha256": "6271694a82dab7ca9d5c3a1df0a14158d55aec368f9ecb96b5ed35312d65f73a"
+    },
+    {
+      "odd_period": 306,
+      "native_clock": 485,
+      "microcluster_size": 17,
+      "largest_patch_width": 38,
+      "global_minimum_defect_count": 18,
+      "whole_determinant_bits": 476,
+      "reduced_denominator_bits": 476,
+      "denominator_sha256": "beadb9fab85c474d6bed9abb5c595477ddc87ca4aec378d00f684fe1a53be3a7"
+    },
+    {
+      "odd_period": 15601,
+      "native_clock": 24727,
+      "microcluster_size": 124,
+      "largest_patch_width": 298,
+      "global_minimum_defect_count": null,
+      "whole_determinant_bits": 24712,
+      "reduced_denominator_bits": 24712,
+      "denominator_sha256": "761b1ce62beece33389c26dfc948d96e1f330aae6399e40eeed13451fec1d2c4"
+    }
+  ]
+}

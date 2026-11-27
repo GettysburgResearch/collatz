@@ -1,0 +1,274 @@
+{
+  "scope": "abstract smooth ranks; no chronological Collatz recurrence",
+  "populations": 33,
+  "labels": 1341,
+  "occupied_prefixes": 14328,
+  "modular_midpoint_pairs": 120376,
+  "records_sha256": "4f9afa380018c11d9bf852d70ac15593f5501ecc3521a335e53abcf50b5825be",
+  "records": [
+    {
+      "period": 4,
+      "mask": 0,
+      "colors": 2,
+      "scale": 3,
+      "levels": 10,
+      "minimum_curvature": 2088
+    },
+    {
+      "period": 4,
+      "mask": 1,
+      "colors": 2,
+      "scale": 3,
+      "levels": 10,
+      "minimum_curvature": 2089
+    },
+    {
+      "period": 4,
+      "mask": 2,
+      "colors": 2,
+      "scale": 3,
+      "levels": 10,
+      "minimum_curvature": 2087
+    },
+    {
+      "period": 5,
+      "mask": 0,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 2016
+    },
+    {
+      "period": 5,
+      "mask": 1,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 2017
+    },
+    {
+      "period": 5,
+      "mask": 2,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 2015
+    },
+    {
+      "period": 7,
+      "mask": 0,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 1908
+    },
+    {
+      "period": 7,
+      "mask": 1,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 1909
+    },
+    {
+      "period": 7,
+      "mask": 2,
+      "colors": 2,
+      "scale": 3,
+      "levels": 11,
+      "minimum_curvature": 1907
+    },
+    {
+      "period": 11,
+      "mask": 0,
+      "colors": 2,
+      "scale": 3,
+      "levels": 12,
+      "minimum_curvature": 1908
+    },
+    {
+      "period": 11,
+      "mask": 1,
+      "colors": 2,
+      "scale": 3,
+      "levels": 12,
+      "minimum_curvature": 1909
+    },
+    {
+      "period": 11,
+      "mask": 2,
+      "colors": 2,
+      "scale": 3,
+      "levels": 12,
+      "minimum_curvature": 1909
+    },
+    {
+      "period": 17,
+      "mask": 0,
+      "colors": 3,
+      "scale": 9,
+      "levels": 14,
+      "minimum_curvature": 5520
+    },
+    {
+      "period": 17,
+      "mask": 1,
+      "colors": 3,
+      "scale": 9,
+      "levels": 14,
+      "minimum_curvature": 5521
+    },
+    {
+      "period": 17,
+      "mask": 2,
+      "colors": 3,
+      "scale": 9,
+      "levels": 14,
+      "minimum_curvature": 5519
+    },
+    {
+      "period": 23,
+      "mask": 0,
+      "colors": 3,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5412
+    },
+    {
+      "period": 23,
+      "mask": 1,
+      "colors": 3,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5413
+    },
+    {
+      "period": 23,
+      "mask": 2,
+      "colors": 3,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5411
+    },
+    {
+      "period": 32,
+      "mask": 0,
+      "colors": 4,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5292
+    },
+    {
+      "period": 32,
+      "mask": 1,
+      "colors": 4,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5293
+    },
+    {
+      "period": 32,
+      "mask": 2,
+      "colors": 4,
+      "scale": 9,
+      "levels": 15,
+      "minimum_curvature": 5291
+    },
+    {
+      "period": 47,
+      "mask": 0,
+      "colors": 4,
+      "scale": 9,
+      "levels": 16,
+      "minimum_curvature": 5268
+    },
+    {
+      "period": 47,
+      "mask": 1,
+      "colors": 4,
+      "scale": 9,
+      "levels": 16,
+      "minimum_curvature": 5269
+    },
+    {
+      "period": 47,
+      "mask": 2,
+      "colors": 4,
+      "scale": 9,
+      "levels": 16,
+      "minimum_curvature": 5269
+    },
+    {
+      "period": 67,
+      "mask": 0,
+      "colors": 5,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15648
+    },
+    {
+      "period": 67,
+      "mask": 1,
+      "colors": 5,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15649
+    },
+    {
+      "period": 67,
+      "mask": 2,
+      "colors": 5,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15647
+    },
+    {
+      "period": 97,
+      "mask": 0,
+      "colors": 6,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15840
+    },
+    {
+      "period": 97,
+      "mask": 1,
+      "colors": 6,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15841
+    },
+    {
+      "period": 97,
+      "mask": 2,
+      "colors": 6,
+      "scale": 27,
+      "levels": 18,
+      "minimum_curvature": 15838
+    },
+    {
+      "period": 137,
+      "mask": 0,
+      "colors": 7,
+      "scale": 27,
+      "levels": 19,
+      "minimum_curvature": 15612
+    },
+    {
+      "period": 137,
+      "mask": 1,
+      "colors": 7,
+      "scale": 27,
+      "levels": 19,
+      "minimum_curvature": 15613
+    },
+    {
+      "period": 137,
+      "mask": 2,
+      "colors": 7,
+      "scale": 27,
+      "levels": 19,
+      "minimum_curvature": 15611
+    }
+  ]
+}

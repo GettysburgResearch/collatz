@@ -1,0 +1,19 @@
+{
+  "maximizing_fibers": [
+    4,
+    8,
+    11,
+    15,
+    22,
+    29,
+    37,
+    51
+  ],
+  "finite_subshift_tests": 72,
+  "interior_window_tests": 141,
+  "strict_conditioning_savings": 19,
+  "common_full_state_counterexample_endpoints": [
+    "-1",
+    "1/5"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "author_inputs": {
+    "STRICT_CONVEX_RANKS.md": "862fdcc5b23f3467df65345dc7c267d4a384a845f664c69b94cf936b67b4bc94",
+    "STRICT_RANK_CONVEXITY_CONTROLS.json": "f1e5a3d911517e54e5f8e8dbc9ec4c267f6248d1ea4d9477d958fd6a851397b6",
+    "strict_rank_convexity_check.py": "9c3b3a535e85c847b86c1b1a7d97058c8938310a7840637defcd29ff5418fa75"
+  },
+  "independent_outputs": {
+    "CONVEX_RANK_AUDIT_CONTROLS.json": "e26ccbfe15f5ca03b602634945b0662f5e2baa990931ed37c02cfef9da8fd7c4",
+    "CONVEX_RANK_AUDIT_OPTIMIZED.json": "e26ccbfe15f5ca03b602634945b0662f5e2baa990931ed37c02cfef9da8fd7c4",
+    "CONVEX_RANK_AUTHOR_REPLAY.json": "f1e5a3d911517e54e5f8e8dbc9ec4c267f6248d1ea4d9477d958fd6a851397b6",
+    "CONVEX_RANK_INDEPENDENT_REVIEW.md": "1b6cb796c2f57d29cf3d8edb6cb2e830704af705e31efb43e5481302d4b5aba6",
+    "check_convex_rank_audit.py": "e90e39bdb375aa12440aa88873f83347a6d46bd8bdcdb8e13e3d64ed8bead2f4"
+  },
+  "scope": "ordinary unit-drift height-one strict scaled rank convexity, including seam and finite irrationality control"
+}

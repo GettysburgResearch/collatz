@@ -1,0 +1,11 @@
+# Independent review of the joint-gate fractional pressure
+
+I accept the all-height reviewer's JOINT_GATE_FRACTIONAL_PRESSURE.md, SHA-256 85b05a2755d155feb09ba1924127284cae595e220053cc602e032c613bbeb80f, for every fixed real 1<a<2 and the stated powers and tilts. This is stronger than the separate total-count argument of the binary-energy reviewer.
+
+For a fixed total A and a physical source octave with k complete shortcut bits, each possible bit pattern selects at most one principal integer. A stop at the first odd-clock date covering those k positions counts at least k/a odd departures, including when the last valuation overruns the cutoff. At the same time, the entire A-date word has exactly A−n even departures, furnishing the second simultaneous cutoff. Neither conditional independence nor slack at a partially observed valuation is needed.
+
+Writing b=A−n, the two binomial bounds meet at k₀=ab/(a−1), which lies in [0,A]. Before k₀ the entropy exponent for inverse p-power mass is increasing for p≤d. After k₀ the derivative is −log₂(1−b/k)−p and is nonpositive when p≥log₂a. The b=0 row has exponent −pk. Thus all shells have the stated common upper bound in the intermediate p-range. Multiplying by the actual original source weight contributes 2^((p−1)A). Its exponent is linear in A after this bound, so its two endpoints give precisely the maximum in (4). At p≥d the direct dyadic shell count suffices. The inequalities log₂a<p_c<d are strict throughout 1<a<2; the algebraic identities in the manuscript give both without numerical approximation.
+
+At p_c the endpoint exponents coincide, and dividing by the cyclic-composition lower bound on the actual gate costs only a polynomial. The pointwise all-tilt lower payoff floor and conditional power mean prove all smaller nonnegative powers; conditional Jensen of the convex negative power with the same polynomial moment gives the negative branch. Thus the exact exponent is log γ for every real p≤1+log₂γ. At p=1 the upper exponential rate alone does not control the harmonic atom. For a=7/4 the sharp certified endpoint is about 0.97415, with no assertion that a larger exact-rate interval is impossible.
+
+Prepared by the binary-energy reviewer, 27 November 2026 UTC. No repairs are required.

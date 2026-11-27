@@ -1,0 +1,91 @@
+{
+  "switching": {
+    "rational_affine_words": 7904,
+    "positive_primitive_cycles": 2432,
+    "complete_modular_images": 88
+  },
+  "resets": {
+    "ordinary_blocks": 10000,
+    "blocks_finishing_above_shifted_source": 2862,
+    "sharp_profile_examples": [
+      {
+        "reset_extra_exponent": 3,
+        "block_steps": 7,
+        "source_bits": 15,
+        "retained_bits": 3,
+        "source_sha256": "473d4b8fb3bdfb81dd7b8a642fd2d1ed3219e8de137a87cc847ac43831b60ee0"
+      },
+      {
+        "reset_extra_exponent": 13,
+        "block_steps": 24,
+        "source_bits": 53,
+        "retained_bits": 13,
+        "source_sha256": "2e38d4c8a1a10611bf13122da2c64a4dee9606cc4d6de0cac646eff543eb9775"
+      },
+      {
+        "reset_extra_exponent": 23,
+        "block_steps": 41,
+        "source_bits": 90,
+        "retained_bits": 23,
+        "source_sha256": "e71bb95eb2e98c5deeedb69c5ea5f673a287792fddcffd7cb075428c6caa03f2"
+      },
+      {
+        "reset_extra_exponent": 33,
+        "block_steps": 58,
+        "source_bits": 127,
+        "retained_bits": 33,
+        "source_sha256": "dd4e34e80503a12250c17e4c76ff4ba29ac119322df69f7a213865daa7508909"
+      },
+      {
+        "reset_extra_exponent": 43,
+        "block_steps": 75,
+        "source_bits": 163,
+        "retained_bits": 43,
+        "source_sha256": "b47364001ea19b8289b9fbc03637e971296bd3e66b55ef2ec7fa8ebb6bf09c25"
+      },
+      {
+        "reset_extra_exponent": 53,
+        "block_steps": 92,
+        "source_bits": 201,
+        "retained_bits": 53,
+        "source_sha256": "e67f9af727f5205c12386f7de5446708d295ab8bb73de6471186703577706777"
+      },
+      {
+        "reset_extra_exponent": 63,
+        "block_steps": 109,
+        "source_bits": 237,
+        "retained_bits": 63,
+        "source_sha256": "ffbea7c5f34dd8a608a85952f68f3fbaf2f5703d39178b0223e653321628d954"
+      },
+      {
+        "reset_extra_exponent": 73,
+        "block_steps": 126,
+        "source_bits": 275,
+        "retained_bits": 73,
+        "source_sha256": "1159d5c1a4e621665b3def741dd937d250a1ae665ffed248efd38e7a2a15be8f"
+      },
+      {
+        "reset_extra_exponent": 83,
+        "block_steps": 143,
+        "source_bits": 312,
+        "retained_bits": 83,
+        "source_sha256": "630438f1a6c18c8ad7050011d3cde567b84fed22775ae5611346c743c34230b5"
+      },
+      {
+        "reset_extra_exponent": 93,
+        "block_steps": 160,
+        "source_bits": 349,
+        "retained_bits": 93,
+        "source_sha256": "1c18009cb7ace1bbf78a93e26fe2e753016a24a0e0e8bdcd68a1c64782cb9b76"
+      },
+      {
+        "reset_extra_exponent": 103,
+        "block_steps": 178,
+        "source_bits": 387,
+        "retained_bits": 103,
+        "source_sha256": "bebe7dfee4b0a67fd1b35430823a9c51bfd7714f72508482996f67030f342523"
+      }
+    ]
+  },
+  "scope": "finite interfaces and examples; no asymptotic theorem verification"
+}

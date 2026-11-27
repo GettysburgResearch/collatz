@@ -1,0 +1,16 @@
+{
+  "minimum_threshold_comparisons": {
+    "12/5": "2^(13/10)",
+    "3": "2^(8/5)",
+    "31/10": "2^(41/25)",
+    "5/2": "2^(27/20)"
+  },
+  "near_minimum_count_exponent": "24/25",
+  "parity_control_states": 49140,
+  "retained_proportion": "44999/50000",
+  "small_denominator_ceiling_exponent": "1/24 (strict)",
+  "threefold_row_ST_separation_slack": "210977/300000000",
+  "threefold_row_delta": "1/100000",
+  "threefold_row_margin": "474076539/37512500000",
+  "threefold_row_source_exponent": "123461/375125"
+}

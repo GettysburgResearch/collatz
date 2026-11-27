@@ -1,0 +1,17 @@
+{
+  "window": 10,
+  "modulus": 59049,
+  "ordinary_words": 4111,
+  "graph_vertices": 1921,
+  "attained_residues": 2696,
+  "ambiguous_residues": 14,
+  "override_with_three": [
+    34445,
+    52589
+  ],
+  "decoder_byte_sha256": "0dd70843cf7a7dfe147b7731258c7adc861f5640b7fbc841f3ab8db25692b045",
+  "potential_byte_sha256": "9c262f829eee45ebeeaa1905817574b77bff24cbd571c5f085cbeb65d828b59b",
+  "minimum_potential": 0,
+  "maximum_potential": 10,
+  "all_length_bound": "9 * mistakes <= n + 82"
+}

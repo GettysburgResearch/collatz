@@ -1,0 +1,17 @@
+{
+  "exact_interval_samples": 910,
+  "one_orbit_third_differences": [
+    -1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "rates": {
+    "conditional_all_lags": "1/36",
+    "conditional_subpower_offset": "5/32",
+    "published_all_lags": "1/1000",
+    "published_subpower_offset": "1/17"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "frozen, written results source-qualified, global upper bound open",
+  "files": {
+    "ANNULAR_ESCAPE_CURRENT.md": "0f1baccdf808bca39bc45b11d5daef6d306fe75d17b9edffae49e960b8d26513",
+    "ENTRANCE_AND_INDEX.md": "83a17d847d1d88207a7495d06d1528b5d376bf6c5c11fd9bccfa3fe86c1c4a9a",
+    "FINITE_ANNULAR_MAXIMUM.md": "8ff89855e9b06bbff38e6f8579df9d5985962cb1f31852d05929e385f89452f9",
+    "AnnularCut.lean": "f390a1910d9016927cfd2785361258d3c2e5f009d9d8e5b0f0b15421d517f847",
+    "DIRICHLET_CHARGE.md": "96296e4613d886e5745e05102fa98ff381407f742ccec4f40b7cd11aefe58633",
+    "HARMONIC_PRESSURE_CONTROL.md": "06a8c796512e9c32b4185968e16ede3d94cae791a39b82e1d864f824d14a0832",
+    "REFLECTED_PRESSURE.md": "a8af48180458eb51e07d1b7c625e2bcb32fa87bee017e623f070ac8ff706605c",
+    "WEIGHTED_RESIDUE_OBSERVATION.md": "dd848b1806f6588ef57d92333075515a68b44ce33691346f648dd40641976d0c",
+    "CRITICAL_EXIT_GATES.md": "7d193a0a7cb9d1c865f2f2c88fa8b1fd00d6ddb2382d57190f7cc090dc774770",
+    "PR201_TRACE_CROSSCHECK.md": "2217739190cb867a323f7330812c5a5acf896b405d9c55a0218c6e57280cd43e",
+    "check_dirichlet_current.py": "62266700878d45547d4f8ea3503cbe6fd92f34b82e0ee12561bc5efe538759e4",
+    "DIRICHLET_CONTROL.json": "ff1db84a360de858d1fb0cc525b14e6ffdf82db1a1e348dd53b5c6684577e903",
+    "check_critical_gates.py": "87b659c769e377b114b612a6728423eb8e7556158daba3a3b23a420cb2b782e5",
+    "CRITICAL_GATE_CONTROLS.json": "ca493cb0affc6afdf14519824b37f3faaa34b3f060456e2c7f1c2688ae4bf3bc"
+  },
+  "lean": "AnnularCut.lean: pinned aggregate imports, exit 0, zero warnings; finite equalities only",
+  "checks": [
+    "check_dirichlet_current.py normal and -O exit 0, identical output",
+    "check_critical_gates.py normal and -O exit 0, identical output"
+  ],
+  "first_missing_step": "Prove a subsequence of finite normalized positive critical gate masses tending to zero, or a sharp upper harmonic-head coefficient."
+}

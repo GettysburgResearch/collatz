@@ -1,0 +1,20 @@
+{
+  "compiler": {
+    "branching_vertices": 488,
+    "decoded_grade_boundary_letters": 3384,
+    "decoded_same_grade_segments": 4253,
+    "graphs": 15,
+    "largest_terminal_path_count": 16,
+    "nonempty_terminal_paths": 2123,
+    "terminal_paths": 8769,
+    "three_radix_storage_sum": 5425
+  },
+  "local": {
+    "defects_with_infinite_endpoint": 648,
+    "discrepancies": 5277,
+    "dyadic_terminal_factor_witness": 1,
+    "exact": 6723,
+    "fully_funded_windows": 761
+  },
+  "yu_unrounded_coefficient": 1020837342673
+}

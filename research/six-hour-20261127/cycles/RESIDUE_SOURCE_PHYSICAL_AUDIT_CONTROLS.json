@@ -1,0 +1,34 @@
+{
+  "margins": {
+    "12/5": "150800773/9500000000",
+    "3": "3790599/300100000",
+    "31/10": "17322968961/570000190000000",
+    "5/2": "10164002281/1800600000000",
+    "global canonical": "13545966849/400000100000000",
+    "mixed": "979994421999/40000010000000000"
+  },
+  "parity": {
+    "complete_fixed_fibre_parity_tables": 66,
+    "parity_cylinders": 12848
+  },
+  "physical_source": {
+    "counts": {
+      "both_centres_nonzero": 13743,
+      "omitting_repair_changes_located_point": 10330,
+      "single_record_repairs": 10330,
+      "start_J_zero": 8165,
+      "true_primitive_cycles": 115,
+      "two_prime_power_windows": 14544,
+      "winding_windows": 5831
+    },
+    "multiply_populated_actual_examples": [
+      {
+        "P": 3,
+        "d": 5,
+        "fibres": 2,
+        "max_fibre": 2
+      }
+    ],
+    "populated_actual_fibres_total": 2913
+  }
+}

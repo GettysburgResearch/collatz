@@ -1,0 +1,807 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "dependency_scope": "precompiled pinned Mathlib; every project module rebuilt",
+  "rebuilt_dependencies": [
+    {
+      "path": "Mathlib/Algebra/Order/GroupWithZero/Action/Synonym.lean",
+      "sha256": "a7feddfa16c309f742ffe3d4c71e5504244d7962c288801ffff78a634c1b3049",
+      "exit_code": 0
+    },
+    {
+      "path": "Mathlib/Topology/Connected/TotallyDisconnected.lean",
+      "sha256": "7eac4d645d77e3f6efb72d3c1cebcedc986e5878d6f4fc7c4c96717f67ae1d6c",
+      "exit_code": 0
+    }
+  ],
+  "modules": [
+    {
+      "path": "cycles/ClockMesh.lean",
+      "sha256": "cff26b21a3828a3348608807e62287bb5a881847707372ac7eb5af86a7edc1b2",
+      "axioms": {
+        "ClockMesh.periodic_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockMesh.shiftCost_add": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockMesh.shiftCost_multiple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockMesh.forward_slope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockMesh.finite_mesh": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "cycles/ClockShadow.lean",
+      "sha256": "0d67c39c9273e133a4ab5a469dbf2293e4bc890a3e1f054438577724732598e5",
+      "axioms": {
+        "ClockShadow.shared_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.shared_segment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.same_clock_relation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.ClockShadow.0.ClockShadow.coprime_two_three": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClockShadow.integer_pair_parameter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.odd_pair_parameter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.shared_middle": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.positive_match_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.forward_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClockShadow.geometric_chain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "cycles/ResonantPulse.lean",
+      "sha256": "82eaffa83deb1a9e92f9accb18369f2ee18fa6db4961650b82e557076f95648e",
+      "axioms": {
+        "ResonantPulse.pulse_at_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ResonantPulse.weighted_at_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ResonantPulse.activeWeight_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ResonantPulse.residual_at_order": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "cycles/ToricWindow.lean",
+      "sha256": "b003889375b87b75ac7bd268b21daf9e099fa841a61f9cc670f64037cf535368",
+      "axioms": {
+        "ToricWindow.clear_ternary_weight": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ToricWindow.cleared_sparse_window": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.supportWidth_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.supportWidth_monomial_shift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.specialized_degree_le_width": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.window_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.term_advance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.term_periodic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.rotated_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.sparse_window": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.difference_factor": [
+          "propext"
+        ],
+        "ToricWindow.core_mod_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.prefix_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.firstClock_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.firstClock_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.row_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.inverse_power": [
+          "propext"
+        ],
+        "ToricWindow.cutResidual_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.cutResidual_mod_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ToricWindow.cutResidual_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "gates/GateDyadicMoment.lean",
+      "sha256": "5a5cc0a00acdf85d9cb34baf6573c58ed52c9905c43a8c5bfdca8b24bf9c2d20",
+      "axioms": {
+        "Collatz.GateDyadicMoment.shortcut_twice": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.shortcut_translate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.full_period": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.complementary_last": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.moment_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.moment_shell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.GateDyadicMoment.affine_carry_bound": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/AnchorPathCode.lean",
+      "sha256": "07d93c11637d729c59589ef11b26be31ec8ed5882bb23507a3e060d61225d7fc",
+      "axioms": {
+        "AnchorPathCode.positive_tail": [],
+        "AnchorPathCode.code_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.AnchorPathCode.0.AnchorPathCode.unique_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorPathCode.injective_at_length": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorPathCode.transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorPathCode.endpoints_length_budget_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/MultiBlockCompensation.lean",
+      "sha256": "83e91b580da2e897bd03d7f41cb6e792f654bd63e9159a373b36d2d1eb0a8b41",
+      "axioms": {
+        "MultiBlockCompensation.endpoint": [],
+        "_private.MultiBlockCompensation.0.MultiBlockCompensation.even_lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.MultiBlockCompensation.0.MultiBlockCompensation.odd_lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.lift_word": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.protected_six_blocks": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.same_clock": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.MultiBlockCompensation.0.MultiBlockCompensation.three_odd": [
+          "propext"
+        ],
+        "MultiBlockCompensation.affine_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.smaller_triple_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.run_identity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.shifted_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.MultiBlockCompensation.0.MultiBlockCompensation.realizes_take": [
+          "propext"
+        ],
+        "MultiBlockCompensation.all_prefixes_protected": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.nine_block_merger": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.nine_block_strict_rise": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MultiBlockCompensation.terminal_decode": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/RationalAnchorDiscrepancy.lean",
+      "sha256": "64458782e42648610c1ebc108e1a1cf7c105c86c71c630886dc5dadb7db2dbc7",
+      "axioms": {
+        "RationalAnchorDiscrepancy.discrepancy_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.discrepancy_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.exact_step": [
+          "propext"
+        ],
+        "RationalAnchorDiscrepancy.run_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.RationalAnchorDiscrepancy.0.RationalAnchorDiscrepancy.count_le_total": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.dyadic_run_guard": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.dyadic_odd_guard": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.closed_power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.ordinary_edge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.forced_discrepancy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RationalAnchorDiscrepancy.signed_transport": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "gates/GateMergeCarry.lean",
+      "sha256": "63d31472d54d91fb3c2967095cac46cd9acf0ff7d11098796d73f55577799a34",
+      "axioms": {
+        "Collatz.GateMergeCarry.word_affine": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.GateMergeCarry.balanced_carry": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/OrdinaryCountedBarrier.lean",
+      "sha256": "96cfd84b3b3be705070af314a2f2cf62926bd57246002c5a397ebf57c3cd3c63",
+      "axioms": {
+        "_private.OrdinaryCountedBarrier.0.OrdinaryCountedBarrier.shortcut_pos": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryCountedBarrier.0.OrdinaryCountedBarrier.power_step": [
+          "propext"
+        ],
+        "OrdinaryCountedBarrier.maximum_growth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrdinaryCountedBarrier.exact_on_power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryCountedBarrier.0.OrdinaryCountedBarrier.first_power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrdinaryCountedBarrier.counted_extremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.OrdinaryCountedBarrier.0.OrdinaryCountedBarrier.return_one": [],
+        "OrdinaryCountedBarrier.converges_of_common": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrdinaryCountedBarrier.six_block_convergence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OrdinaryCountedBarrier.nine_block_convergence": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/ReflectedCycleMinimum.lean",
+      "sha256": "9e78964fec3ea9cc549f08291d2b1bc3bbdcbdb283364b38d6aa53ab78d4e3a6",
+      "axioms": {
+        "_private.ReflectedCycleMinimum.0.ReflectedCycleMinimum.trapped_closed": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReflectedCycleMinimum.potential_floor": [
+          "propext"
+        ],
+        "_private.ReflectedCycleMinimum.0.ReflectedCycleMinimum.odd_large_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReflectedCycleMinimum.potential_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReflectedCycleMinimum.path_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReflectedCycleMinimum.phases_calibrated": [
+          "propext"
+        ],
+        "ReflectedCycleMinimum.period": [],
+        "ReflectedCycleMinimum.slope_comparisons": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/SevenPhaseMinimum.lean",
+      "sha256": "db030a2c0a3e065c7cfab0905ed227d7df1828764f9a36fad7683a87b1517511",
+      "axioms": {
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.reflected_pos": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.growth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.dual_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenPhaseMinimum.dual_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SevenPhaseMinimum.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.count_add": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.iter_append": [],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.cycle": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.row_path": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.row_bounds": [],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.phase_lookup": [],
+        "SevenPhaseMinimum.rigid_cycle": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.calibration": [
+          "propext"
+        ],
+        "SevenPhaseMinimum.slope_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.transfer_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.small_reflected": [],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.not_trapped": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.cost_at_cycle": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.precise_displacement": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.displacement_large": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.phase_target": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.positive_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SevenPhaseMinimum.exact_minimum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/PositiveBudget.lean",
+      "sha256": "dd7ad47b67f124438add530a9c1a2a50d8637d74fd3d4d0bc086da75c7ebc251",
+      "axioms": {
+        "_private.PositiveBudget.0.PositiveBudget.count_join": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.PositiveBudget.0.PositiveBudget.scale_mono": [
+          "propext"
+        ],
+        "_private.PositiveBudget.0.PositiveBudget.one_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.PositiveBudget.0.PositiveBudget.ones_path": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PositiveBudget.suffix_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PositiveBudget.extension_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PositiveBudget.sharp_extension": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/SevenPhaseOddMap.lean",
+      "sha256": "283b522e648cb64a20de903bc9cc16e3393a1ebfe0326e56070f4b3c20c233c6",
+      "axioms": {
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.oddPart_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.oddPart_double": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.accelerated_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.one_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.all_clocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.double_prefix": [
+          "propext"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.one_odd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.count_add": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SevenPhaseOddMap.ancestor_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SevenPhaseOddMap.exact_accelerated_minimum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/PositiveAnchorProjection.lean",
+      "sha256": "21bf7e563d107508d5f17084540d5676dfb3e36c93774661a6eb69ce330dd233",
+      "axioms": {
+        "_private.PositiveAnchorProjection.0.PositiveAnchorProjection.arrival_growth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.PositiveAnchorProjection.0.PositiveAnchorProjection.project_core": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.PositiveAnchorProjection.0.PositiveAnchorProjection.transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PositiveAnchorProjection.positive_projection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PositiveAnchorProjection.positive_lift": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/TernaryAnchorEscape.lean",
+      "sha256": "577bc77a46e3a1ebeb98059bdee295ad62db2abc7cccc9d4e00937518ba29fa1",
+      "axioms": {
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.phase_facts": [],
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.odd_iter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.hit_of_dvd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.growth_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.minimum_power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.source_guard": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.marked_growth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.iter_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.suffix_escape": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "_private.TernaryAnchorEscape.0.TernaryAnchorEscape.compose": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.packing_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryAnchorEscape.exclude_full_rank": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "pointwise/PositiveApplications.lean",
+      "sha256": "87292ce54de9e292f05c270a02e8d29fb2551326a84f193c4de429bf3f7f1446",
+      "axioms": {
+        "PositiveApplications.bounded_anchor_query": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PositiveApplications.seven_phase_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ]
+}

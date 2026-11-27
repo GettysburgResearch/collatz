@@ -1,0 +1,17 @@
+{
+  "conclusion": "Both frozen theorems A/B including thresholds, physical source, and weighted gate statements are proved as written. No repair required.",
+  "frozen_source_A_sha256": "83c8661eaec0630bca1aec8db5d81a3e9fbacb2ef98cc6a9a37947ffb7173872",
+  "frozen_source_B_sha256": "3299dffc969f750b50199fdab541b6c425add9008fa79e4b3fd7d6ecedd3df2b",
+  "frozen_source_handoff_sha256": "4f04f6aced6e672d316e1d100d8039da93b452a5dd6468bd19286e6c65324b7b",
+  "limits": "An ordinary-octave probability law, a positive-mass dominated gate transfer, and a quantified all-start obstruction for C<1/log(2). Collatz escape and nontrivial cycles remain open.",
+  "separate_extension": "The reflected normalized cylinder mass has an exponential-error limiting constant; ordinary octave upper tails have sharp two-sided power order; scaled deviations are tight.",
+  "sha256": {
+    "ALL_HEIGHT_INDEPENDENT_CONTROLS.json": "6f9811e4badb90f683efab171f314f564af5279205e3ad479afa8af987099003",
+    "ALL_HEIGHT_INDEPENDENT_OPTIMIZED.json": "6f9811e4badb90f683efab171f314f564af5279205e3ad479afa8af987099003",
+    "ALL_HEIGHT_INDEPENDENT_REVIEW.md": "ce95b4149772291064ad657fd7336d85967b3c1b9a6d2102d0a80c8d00cd7568",
+    "AUTHOR_HEIGHT_NORMAL_REPLAY.json": "e59d810eb3e9326f3a1ed365ccdcbfcfbb8b901988551deda450cb3fa5903e0e",
+    "AUTHOR_HEIGHT_OPTIMIZED_REPLAY.json": "e59d810eb3e9326f3a1ed365ccdcbfcfbb8b901988551deda450cb3fa5903e0e",
+    "SHARP_OCTAVE_TAIL_REFINEMENT.md": "c9edafebd243958997e1de24fa440285136176046e8c7c8acc28c92188e841df",
+    "check_all_height_audit.py": "ba7a2f2a9779df4d46749d4875c04341dfdc065816fbc85a7e6dc006aadbbb98"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ordinary_prior": "Inselmann arXiv:2402.03276v3 Theorem 3.8",
+  "outputs": {
+    "CRITICAL_SAFE_ENTRY.md": "5736d7e7823138afcb2c5518fb221c179dcd8a7a5f06a26ae75c4dd56aa975c4",
+    "CRITICAL_SAFE_ENTRY_CONTROLS.json": "01f85db919366b2c05afcf07f6e9510a128882a311a50c84b5ff1398356b8f49",
+    "CRITICAL_SAFE_ENTRY_OPTIMIZED.json": "01f85db919366b2c05afcf07f6e9510a128882a311a50c84b5ff1398356b8f49",
+    "check_critical_safe_entry.py": "7b10673404f6db606223074b83d47e1be0f9b3a1561b7fdcf0b25ed7159e18a2"
+  },
+  "scope": "individual physical bad seeds, unconditional ordinary-octave concentration, polynomially sparse deterministic visitors; full Collatz open",
+  "source_trace_commit": "807d67ab049f1646398d8ca8c20948cdc1d87742",
+  "visitor_packing_commit": "bf7d52e78631954a9fd35e4ce973acd27738fc80"
+}

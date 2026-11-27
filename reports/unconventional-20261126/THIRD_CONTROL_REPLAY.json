@@ -1,0 +1,186 @@
+{
+  "scope": "third-wave complete finite records only",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runs": [
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_modular_carry.py",
+      "source_sha256": "00bd4203ab0f3d4fabe7ff1d15353fb03b59db4591d99b3d9f079c0197203373",
+      "record": "MODULAR_CARRY_CONTROLS.txt",
+      "record_sha256": "34046ed7c3a2b84720bca01cc55dbbd42ed884a8bdf03c0b5d4515d8246c4ad8",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/arithmetic/check_modular_carry.py",
+      "source_sha256": "00bd4203ab0f3d4fabe7ff1d15353fb03b59db4591d99b3d9f079c0197203373",
+      "record": "MODULAR_CARRY_CONTROLS.txt",
+      "record_sha256": "34046ed7c3a2b84720bca01cc55dbbd42ed884a8bdf03c0b5d4515d8246c4ad8",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_reset_rigidity.py",
+      "source_sha256": "4b27f03f5724fed1b6df890410acc8df4f348afb6a5d074dab907b803fce0a73",
+      "record": "RESET_RIGIDITY_CONTROLS.json",
+      "record_sha256": "ba13ade0881bbd570e3c7f3f612c46f7d8861f14284a2a9d674bacaf9ab43119",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_reset_rigidity.py",
+      "source_sha256": "4b27f03f5724fed1b6df890410acc8df4f348afb6a5d074dab907b803fce0a73",
+      "record": "RESET_RIGIDITY_CONTROLS.json",
+      "record_sha256": "ba13ade0881bbd570e3c7f3f612c46f7d8861f14284a2a9d674bacaf9ab43119",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_persistent_divisor.py",
+      "source_sha256": "56744453940618ddc468473227e009b68327572280d1735b03bfedad6322f9fe",
+      "record": "PERSISTENT_DIVISOR_CONTROLS.json",
+      "record_sha256": "cec20419f972025bfecbc6366056b7c384dec1bab513114b75c3bcd2854eed52",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_persistent_divisor.py",
+      "source_sha256": "56744453940618ddc468473227e009b68327572280d1735b03bfedad6322f9fe",
+      "record": "PERSISTENT_DIVISOR_CONTROLS.json",
+      "record_sha256": "cec20419f972025bfecbc6366056b7c384dec1bab513114b75c3bcd2854eed52",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_depth_ratios.py",
+      "source_sha256": "0c644328b1968e1b4b0ad464b19db84f66ea465a9bc343651da53ca4e6a8e970",
+      "record": "DEPTH_RATIO_CONTROLS.txt",
+      "record_sha256": "0e28459cbfaaa1392d75fde3ff45cdc5cb1c3c7a1e41b0c249386e97db8ae1a5",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_depth_ratios.py",
+      "source_sha256": "0c644328b1968e1b4b0ad464b19db84f66ea465a9bc343651da53ca4e6a8e970",
+      "record": "DEPTH_RATIO_CONTROLS.txt",
+      "record_sha256": "0e28459cbfaaa1392d75fde3ff45cdc5cb1c3c7a1e41b0c249386e97db8ae1a5",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_two_block_swap.py",
+      "source_sha256": "ee348bebfed8506063097439f0909641c307c1b7bfde2315dc220406e710f097",
+      "record": "TWO_BLOCK_SWAP_CONTROLS.json",
+      "record_sha256": "4ec191aa88a3eeb743b124c0af19bfe62b487aa8641644b95243d7d25c581e46",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_two_block_swap.py",
+      "source_sha256": "ee348bebfed8506063097439f0909641c307c1b7bfde2315dc220406e710f097",
+      "record": "TWO_BLOCK_SWAP_CONTROLS.json",
+      "record_sha256": "4ec191aa88a3eeb743b124c0af19bfe62b487aa8641644b95243d7d25c581e46",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_prefix_swap.py",
+      "source_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+      "record": "PREFIX_SWAP_CONTROLS.json",
+      "record_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/defects/check_prefix_swap.py",
+      "source_sha256": "faade8209462854d9a68264bc01e6b4d3faa5fc5bec98c1438ec769e0adbf4e9",
+      "record": "PREFIX_SWAP_CONTROLS.json",
+      "record_sha256": "f233fc4d8c7f71b55bcfa8e6d2ecbe0daf4f86e076f781c69516366bd1421408",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_dirichlet_current.py",
+      "source_sha256": "62266700878d45547d4f8ea3503cbe6fd92f34b82e0ee12561bc5efe538759e4",
+      "record": "DIRICHLET_CONTROL.json",
+      "record_sha256": "ff1db84a360de858d1fb0cc525b14e6ffdf82db1a1e348dd53b5c6684577e903",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_dirichlet_current.py",
+      "source_sha256": "62266700878d45547d4f8ea3503cbe6fd92f34b82e0ee12561bc5efe538759e4",
+      "record": "DIRICHLET_CONTROL.json",
+      "record_sha256": "ff1db84a360de858d1fb0cc525b14e6ffdf82db1a1e348dd53b5c6684577e903",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_critical_gates.py",
+      "source_sha256": "87b659c769e377b114b612a6728423eb8e7556158daba3a3b23a420cb2b782e5",
+      "record": "CRITICAL_GATE_CONTROLS.json",
+      "record_sha256": "ca493cb0affc6afdf14519824b37f3faaa34b3f060456e2c7f1c2688ae4bf3bc",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "research/unconventional-20261126/trace/check_critical_gates.py",
+      "source_sha256": "87b659c769e377b114b612a6728423eb8e7556158daba3a3b23a420cb2b782e5",
+      "record": "CRITICAL_GATE_CONTROLS.json",
+      "record_sha256": "ca493cb0affc6afdf14519824b37f3faaa34b3f060456e2c7f1c2688ae4bf3bc",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_final_arithmetic.py",
+      "source_sha256": "d17262b144ffab12d17d0014843a68df6678c67375780d6eb34c7eca4fd1bb06",
+      "record": "FINAL_ARITHMETIC_REVIEW_CONTROLS.json",
+      "record_sha256": "9cc96fb60ad1d72a282b99e45f402442b206942c10a1300036f07792ac4c1fad",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_final_arithmetic.py",
+      "source_sha256": "d17262b144ffab12d17d0014843a68df6678c67375780d6eb34c7eca4fd1bb06",
+      "record": "FINAL_ARITHMETIC_REVIEW_CONTROLS.json",
+      "record_sha256": "9cc96fb60ad1d72a282b99e45f402442b206942c10a1300036f07792ac4c1fad",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_annular_current.py",
+      "source_sha256": "d7af6b486858ec79e253defe462b23a58c0ee5262e93af5a6f37676b2bba703c",
+      "record": "ANNULAR_REVIEW_CONTROLS.json",
+      "record_sha256": "0d1a05d9d91e299c4d8f4a472c66cfedbefd98d3c58e26d5658074d9f3735b0a",
+      "optimized": false,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    },
+    {
+      "path": "reports/unconventional-20261126/reviews/review_annular_current.py",
+      "source_sha256": "d7af6b486858ec79e253defe462b23a58c0ee5262e93af5a6f37676b2bba703c",
+      "record": "ANNULAR_REVIEW_CONTROLS.json",
+      "record_sha256": "0d1a05d9d91e299c4d8f4a472c66cfedbefd98d3c58e26d5658074d9f3735b0a",
+      "optimized": true,
+      "exit_code": 0,
+      "complete_payload_equal": true
+    }
+  ]
+}

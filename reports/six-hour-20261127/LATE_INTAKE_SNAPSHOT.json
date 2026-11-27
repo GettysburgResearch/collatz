@@ -1,0 +1,69 @@
+{
+  "snapshot_scope": "Three advanced pull-request heads observed during the six-hour session. Source inspection is not branch integration or proof-chain validation. PR201 has the same packet directory name on its distinct head.",
+  "sources": [
+    {
+      "pr": 193,
+      "head": "795cfa38fbd6a2436285edfe82580680df4f9b0d",
+      "path": "research/astra-six-hour-20261127/root/DIRICHLET_TRACE.md",
+      "blob": "1e9d802e56418144f00e800670f53612adf66c8a",
+      "sha256": "ee9f38ad35de43d0830f65d3bc0a4a10aa5c9e07fe7b4a28b501fe7a0b7a10d7",
+      "scope": "root: complete written argument, reconstructed completion and Mellin transfer"
+    },
+    {
+      "pr": 193,
+      "head": "795cfa38fbd6a2436285edfe82580680df4f9b0d",
+      "path": "research/astra-six-hour-20261127/escape/REAL_FIBRE_AND_FRONT.md",
+      "blob": "c1ff4a47af005d97af3ef399856b1a4041d8d8b9",
+      "sha256": "26098bd4d288b860eb869d52a2dc35affbe91723347389ac8466e10e085285f7",
+      "scope": "root: fixed-root dimension, common coupling and information interfaces inspected; imported synchronization not rebuilt"
+    },
+    {
+      "pr": 201,
+      "head": "3376695869fcf7d2e34f676a876d2b78a391d799",
+      "path": "research/six-hour-20261127/coupling/PEAK_RIGIDITY.md",
+      "blob": "773023bbbfa34a4b33324322b68e37930da5eb22",
+      "sha256": "8a5b52f46121ec449202e3fc30dda4ad115cbbe5cb100a29ec243d7ea931feb1",
+      "scope": "root: complete written comparison; no replay of other-branch Lean"
+    },
+    {
+      "pr": 201,
+      "head": "3376695869fcf7d2e34f676a876d2b78a391d799",
+      "path": "research/six-hour-20261127/escape/PERMANENT_SIEVE.md",
+      "blob": "4c5a6176a30695678330a734763bf4153a2789ca",
+      "sha256": "95642b16cb20e7b24957df270c6850b02745852add7b3c331c5076effd845e9a",
+      "scope": "root: complete written argument; charge inputs remain source-qualified"
+    },
+    {
+      "pr": 201,
+      "head": "3376695869fcf7d2e34f676a876d2b78a391d799",
+      "path": "research/six-hour-20261127/escape/TERNARY_DECODER.md",
+      "blob": "0ff521765b8ffe414ee415ab9dde7677e839665a",
+      "sha256": "e096e81b3d3aa8c07cdb006d1cf9c3eb70ca4d7552651c21b9a9426266c6fce4",
+      "scope": "root: complete written entropy/decoder argument and actual-law distinction"
+    },
+    {
+      "pr": 206,
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "path": "research/clock-itineraries/ReturnOrbit.md",
+      "blob": "28617a53607d56b8e5db54e091b90dac9d2df55c",
+      "sha256": "7a5894bba336bf691d1c4944618e2632be64692459e47bc44bb82da5e0eb772c",
+      "scope": "root: complete written statement/proof interfaces; not external Lean execution"
+    },
+    {
+      "pr": 206,
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "path": "research/clock-itineraries/ReturnDescent.md",
+      "blob": "7bb4a33daeaa720d271f53ef0279572b9914cfe7",
+      "sha256": "ce0d34356e2669a9e224fac0381a0ac509f304f26b0e8e9377d5c6fb5186f7c1",
+      "scope": "root: complete written construction; long numerical/Lean trajectory not replayed"
+    },
+    {
+      "pr": 206,
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "path": "research/clock-itineraries/November27.md",
+      "blob": "c69ee0b4bd97be9fcae5659c76e95aa3373e5051",
+      "sha256": "e8df0835d0e441570f99580b32d807114834e745b52dd7a5f332dd37dd2bff0f",
+      "scope": "root: overview inspected in part, not a complete scientific review"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "script": "gates/gate_background_controls.py",
+    "sha256": "3890c0a7998e24204b972a125ad9472d416a48343988c96d5d16b21d5b863133",
+    "inputs": {},
+    "expected": "gates/GATE_BACKGROUND_CONTROLS.json",
+    "output_sha256": "51b95f912f1b6f06b552916fc732bef710982722e9879eba5d989af5c62c67d7",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_toric_windows.py",
+    "sha256": "4384fde4cde9ba123fa521fc482a883542662c9cfd3cf1c7b440045d9c12c76d",
+    "inputs": {},
+    "expected": "cycles/TORIC_WINDOW_CONTROLS.json",
+    "output_sha256": "f12f4ed76f2390c93b543ac78d7a2cee45d204197bc2e8c06d4b39415131bf4b",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_multi_block.py",
+    "sha256": "684d8ea68e4b8ca569626a744b7065f505b8f3cb027cc728b593f17295c68f30",
+    "inputs": {},
+    "expected": "pointwise/MULTI_BLOCK_CONTROLS.json",
+    "output_sha256": "be5875ab1a8014d21fa0a9be78af234fbc2b5200bf8e6f99a6e3f4f5c49d9b84",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_negative17_minimum.py",
+    "sha256": "98e2f10e62100ff462d32e80b67568ddf4d318dcbda8618aa71427f9d1ecaa74",
+    "inputs": {},
+    "expected": "pointwise/NEGATIVE17_CONTROLS.json",
+    "output_sha256": "33f56524935ff7a8b6bce35cf18b3341609a247f5b6e3b0f44d609daa3395e3f",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/independent_audit.py",
+    "sha256": "a4ee5a995776969af3e469c044add98bcefca68b7de9576d0f0545b6a8ffa008",
+    "inputs": {
+      "pointwise/NEGATIVE17_EXACT_MINIMA.md": "1d036bb16dd0623a95d09124d8e88ec06d071a8981ba5d126ff92eaa175fed60"
+    },
+    "expected": "pointwise/INDEPENDENT_MINIMUM_CONTROLS.json",
+    "output_sha256": "a8ad0ebf1a779e07d810ea55da31fdaec56bc44fd46aec4f5c3f985a1117c913",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  }
+]

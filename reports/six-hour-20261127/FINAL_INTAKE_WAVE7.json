@@ -1,0 +1,41 @@
+{
+  "observed_at": "2026-11-27 04:20 UTC",
+  "scope": "Metadata refresh of the active comparison branches. Selected source files were read; foreign Lean projects were not rebuilt. Initial full open-PR inventory is preserved separately.",
+  "pull_requests": [
+    {
+      "pr": 193,
+      "title": "Collatz: adaptive rational energy, signed source isolation, and RH-assisted cycle bounds",
+      "head": "research/astra-universal-descent-20261124",
+      "head_sha": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 195,
+      "title": "Collatz: actual witness minima and original-law clock limits",
+      "head": "research/astra-global-closure-20261124",
+      "head_sha": "3fa7ef4a0011b35447a70f587b400878d5ea8ebe",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/195"
+    },
+    {
+      "pr": 200,
+      "title": "Collatz: finite height-one period census and physical residue sources",
+      "head": "research/gpt62-regularity-rigidity-20261124",
+      "head_sha": "7af83b786636abba2f44fe8c81441153331377fc",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/200"
+    },
+    {
+      "pr": 201,
+      "title": "Collatz: formal finite-mass criterion and ordinary-source advances",
+      "head": "gpt62/killed-green-head-closure-20261124",
+      "head_sha": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 206,
+      "title": "Prove sharp Collatz pair and triple clocks and strengthen fixed-source tests",
+      "head": "research/lean-clock-packing-20261124",
+      "head_sha": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206"
+    }
+  ]
+}

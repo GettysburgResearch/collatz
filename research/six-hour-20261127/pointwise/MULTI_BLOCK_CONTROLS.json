@@ -1,0 +1,53 @@
+{
+  "reverse_decoding": {
+    "depth": 8,
+    "distinct_multiset_residue_pairs": 256
+  },
+  "rows": [
+    {
+      "base_terminal": 4933001,
+      "base_upper_boundaries": [
+        12977607,
+        21899713,
+        16424785,
+        12318589,
+        4619471,
+        5846519,
+        4933001
+      ],
+      "block_count": 6,
+      "clock": 22,
+      "minimum_nonempty_prefix_gain": "729/2048",
+      "odd_departures": 13,
+      "shifted_carries": [
+        11101224,
+        20667162
+      ],
+      "terminal_increment": 9565938
+    },
+    {
+      "base_terminal": 404800088233,
+      "base_upper_boundaries": [
+        73870594215,
+        124656627739,
+        140238706207,
+        532468837633,
+        399351628225,
+        299513721169,
+        224635290877,
+        84238234079,
+        159921022511,
+        404800088233
+      ],
+      "block_count": 9,
+      "clock": 34,
+      "minimum_nonempty_prefix_gain": "4782969/4194304",
+      "odd_departures": 23,
+      "shifted_carries": [
+        198137716424,
+        762996789386
+      ],
+      "terminal_increment": 564859072962
+    }
+  ]
+}

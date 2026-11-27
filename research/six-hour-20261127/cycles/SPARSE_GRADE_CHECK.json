@@ -1,0 +1,32 @@
+{
+  "any_valuation_constants": {
+    "count_upper": "9499713500517/28500009500000",
+    "period_contradiction": "8680484776499483/285000095000000000000",
+    "retention": "2999999/5000000",
+    "separation": "12999951/190000000000000"
+  },
+  "binary": {
+    "deep_paths": 1580,
+    "high_phase_nonzero_resets": 380,
+    "largest_gap": 2,
+    "largest_grade": 8,
+    "paths": 1756,
+    "records": 1376,
+    "with_gap_at_least_three": 0
+  },
+  "binary_constants": {
+    "count_upper": "3799540443/11400380000",
+    "period_contradiction": "172067559557/1140038000000000",
+    "retention": "9999/50000",
+    "separation": "364983/9500000000"
+  },
+  "unrestricted": {
+    "deep_paths": 19195,
+    "high_phase_nonzero_resets": 19093,
+    "largest_gap": 9,
+    "largest_grade": 8,
+    "paths": 19663,
+    "records": 13977,
+    "with_gap_at_least_three": 17941
+  }
+}

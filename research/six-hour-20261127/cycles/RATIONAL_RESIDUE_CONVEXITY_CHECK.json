@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "abstract_seam_interfaces": 182,
+    "exact_drift_AP_interfaces": 63680,
+    "finite_group_offset_faces": 6600,
+    "genuine_arbitrary_offset_interfaces": 1257958,
+    "genuine_compatible_modular_offsets": 3768,
+    "genuine_wrapped_interfaces": 976236,
+    "height_at_most_two_cycles": 7363
+  },
+  "examples": {},
+  "seam_drift_sets": [
+    [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  ]
+}

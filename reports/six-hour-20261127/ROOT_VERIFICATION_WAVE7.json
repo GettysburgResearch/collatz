@@ -1,0 +1,49 @@
+{
+  "parent_commit": "7af83b786636abba2f44fe8c81441153331377fc",
+  "frozen_author_entries": 90,
+  "every_author_and_integrated_identity_rechecked": true,
+  "controls": {
+    "total": 94,
+    "reused_unchanged_checkpoint6": 77,
+    "freshly_executed_in_checkpoint7": 17,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "complete_output_byte_identical": true,
+    "scope": "Composed checkpoint evidence, not a fresh simultaneous rerun of all programs. All script, input, dependency and expected-output hashes were rechecked.",
+    "prior_receipt": {
+      "path": "reports/six-hour-20261127/ROOT_CONTROLS_WAVE6.json",
+      "sha256": "30313f0059954f4977d525a62f29d8ce82c13496c5540e4abf2a4e5c8e999c2c"
+    },
+    "new_groups": [
+      {
+        "programs": 9,
+        "sha256": "558c920dbc6a24391e9aa09058bfaca7ae0924d7082de5d62701fe707b58f0c6"
+      },
+      {
+        "programs": 7,
+        "sha256": "c01fc521a495c513866ed136d3f0a1b5745f4ace36ead4c6083f584c9512a672"
+      },
+      {
+        "programs": 1,
+        "sha256": "145147b5cf14c3ef3085261bfc30c70ba9e89be923f458dbcb9567c1d5167c74"
+      }
+    ],
+    "cpp_scope": "The new pressure control freshly rebuilt and executed the independent C++ 200,000,000-pair enumeration in both modes. The earlier fifth-moment grid has its separate checkpoint4 rebuild receipt."
+  },
+  "lean": {
+    "modules": 30,
+    "audited_declarations": 285,
+    "source_hashes_unchanged": true,
+    "new_lean_modules_in_checkpoint7": 0,
+    "prior_receipt": {
+      "path": "reports/six-hour-20261127/ROOT_LEAN_WAVE6.json",
+      "sha256": "81cfe8dfef198530c4133792d721351ff785432859d4fe6b928a273556d6998c"
+    },
+    "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "scope": "The prior fresh root build and axiom audit are reused only for byte-identical Lean modules. New infinite arguments are written proofs, not Lean theorems."
+  },
+  "universal_termination_proved": false
+}

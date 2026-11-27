@@ -1,0 +1,9 @@
+# Global trace onset, all-depth rational minima, and Fourier rigidity — 25 Nov 2026
+
+Three attacks on the actual remaining obstruction, with exact hypothesis boundaries.
+
+1. TRACE_ONSET.md: from the canonical integer inverse trace and the sharp Haar collision-energy upper bound, prove an octave-by-octave moment gap if ANY ordinary ray escapes. A sublinear normalized second moment of the limiting trace along one unbounded sequence of octaves would exclude every escaping ray. For the bounded least-bad cycle, fixed-fraction trace onset requires linear rather than logarithmic depth. These are explicit transfer targets; not proofs of the required uniformity or of cycle exclusion.
+2. RATIONAL_MINIMA.md: exact finite certificates for six rational denominator models with actual least tripling disagreement and no smaller multiple anywhere in the full distinguished basin. Pairwise-coprime denominators yield a finite-place no-go test. The distinction from actual ordinary integrality and from reaching 1 is essential. The checker and its actual output were committed immediately before this written synthesis.
+3. FOURIER_RIGIDITY.md: improve the PR200 additive cancellation exponent using Diophantine separation of Fourier modes and the continued-fraction rotation grid. This yields a quantitative lower bound on PR193's Fejer norm and approximate Fourier-Stieltjes representations under nonconvergence, conditional on the named inputs. The separate triangular-array argument derives divergence from whole-interval synchronization alone, without the density input.
+
+FinalProposal.lean records candidate finite arithmetic kernels and an explicit conditional closing theorem. It is NOT a completed Lean proof, and it has not been compiled here. The genuine blockers are an integer-trace uniformity estimate (or another escape exclusion) and a full ordinary cycle exclusion. See SOURCES.md for exact revisions and what was and was not verified.

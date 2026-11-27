@@ -1,0 +1,51 @@
+{
+  "axioms": {
+    "correlation_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "fourfoldAtom_inherited_carry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "fourfoldAtom_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nat_correlation_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "orderedAtom_eq_correlation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "orderedAtom_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rat_correlation_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "fresh_object_import": true,
+  "fresh_source_build": true,
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Generic finite additive group, translated finite correlation for ordered semiring weights including Nat and Rat, literal ordered pair/fourfold counts, and every signed incoming carry modulo 2^bits. No numerical energy, finite-grid, segment separation, or Collatz asymptotic is asserted by this Lean module.",
+  "source_sha256": "0753844986fde90410acf64d5a210a92022f8bca7a3949e48ad016386d42dff7"
+}

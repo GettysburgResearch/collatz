@@ -1,0 +1,23 @@
+{
+  "artifacts_sha256": {
+    "CLASSICAL_DEPTH_MANIFEST.json": "f8e80c8e09823920c22ce2bca54cf914eba8ee44450319b943854e9ddac88449",
+    "EXTENSIONS_MANIFEST.json": "24d3df4588c866dfe7233c4422574204cdf06dea4d800a4476401fc796bfd7dc",
+    "NONBINARY_EXTENSION_MANIFEST.json": "16d92b3cd534ba9970ef20105ef255966b9225f69454fc1fffc3f70dc1afbf2d",
+    "SparseGradeProjection.lean": "4197fee990f9537998c4a10caa31038bc44ba8eb5b7cdc9f7e080c887f5cba9e",
+    "SparseGradeScope.lean": "8890f4fcd4065e3928e84d311639493e7d3cbd1d498e4762fe9fa8b03afe987b",
+    "sparse_grade_axioms.jsonl": "fd9d5dcffb9ad3efbdb6d1cf738d75f1dd1a13b6d4ad1231f5ea800fd3dcbb9d",
+    "sparse_grade_lean_build.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "endpoints": 15,
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "imports": [
+    "Std"
+  ],
+  "lean": "4.34.1 commit 5045d0056413266e57c625dcd7c365b10e377c52",
+  "scope": "Rotation flag, clipped edge, excursion run-code sum, conditional affine numerator, pair-sum equivalence, local repair and finite budget arithmetic. No asymptotic theorem."
+}

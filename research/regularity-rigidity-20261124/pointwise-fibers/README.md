@@ -1,0 +1,23 @@
+# Pointwise harmonic fibers and the limit of averaged rigidity
+
+**Current continuation:** [central rows with polynomial losses and common-clock
+coarse localization](../refinement/README.md) strengthen PF2 and add an exact
+ordinary carry-intersection test. The unrestricted-menu reading of FS is
+[refuted with an attainable state](../refinement/PAIRED_FIBER_AUDIT.md).
+The conditional common-suffix implication survives. The current finite
+Lean modules have actually compiled; their
+[formal scope and receipt](../../../reports/regularity-rigidity-20261124/LEAN_REPLAY.md)
+supersede the original uncompiled-status descriptions below. PT at every
+fixed ordinary target and Collatz remain open.
+
+24 November 2026. **Collatz remains OPEN.** This continues PR200 at 39918be724038ac550d77c7fc95d17e05251dfc6. It develops a sharp fixed-clock inverse-fiber theorem, a literature-based analytic rigidity extension, and an explicit countermodel to relying only on approximate invariance.
+
+- [PAIRED_FIBERS.md](PAIRED_FIBERS.md) (PF1/PF2): For the infinite marked ratio-five law, the bounded-real-offset submeasure beta<=1/2 has full ternary support. On almost every point under that submeasure, near-optimal numbers G^(1-o(1)) of distinct exact legal paired inverse words exist along balanced cumulative clocks, with G=2^e/3^p. The proof is a summable low-incidence bound (2 G^(-epsilon)) for the original prefix law, not a product of independent endpoint distributions. Combining with the prior Tao-qualified thin-cell avoidance gives 3^(p-o(p)) favorable fine residue classes at common clocks with multiplicity G^(1-o(1)). On any FIXED positive ordinary unit in the good set, these are literal positive paired ancestors in [qG/2,qG]. The good set is dense G_delta and has full local Hausdorff dimension, but may miss every ordinary integer. The pointwise PT obligation and need for an opposing failed-pair estimate are explicit.
+- [POLYNOMIAL_RIGIDITY.md](POLYNOMIAL_RIGIDITY.md): Using Green–Tao's quantitative inverse Weyl theorem, dilation averaging proves uniform cancellation against all real polynomial phases of any fixed degree, even coefficients varying with cutoff, at rate O_d(1/sqrt(log log X)). A resonant pair of dilated phases forces simultaneous bounded-denominator coefficient approximation; these major arcs are controlled by the existing exact ordinary variation and macroscopic discrepancy estimates. This is not an all-nilsequence/Gowers theorem. A sparse polynomial-phase approximation of the actual label would be a new closure route, conditional on M, but is not constructed.
+- [APPROXIMATE_COLORING.md](APPROXIMATE_COLORING.md): An explicit binary coloring, not an invariant basin, has exact doubling, both colors of natural density 1/2, O(X/sqrt(log X)) adjacent/tripling/shortcut defects, and the same macroscopic and spectral screens. It can agree with arbitrary finite convergence verification. Slowly drifting resonant log-scale waves demonstrate why the exact odd-edge constraints cannot be replaced by these averaged estimates alone.
+
+[controls.js](controls.js) and [CONTROLS.json](CONTROLS.json) are executed exact finite evidence. [PointwiseFiber.lean](PointwiseFiber.lean) is **uncompiled candidate** Lean arithmetic, not formal verification of the written theorems. [SOURCES.md](SOURCES.md) gives exact inputs and scope, including the recent PRs and literature. The principal advancement is the same-law, same-clock, real-and-ternary branching theorem; the remaining gap is pointwise membership or source-preserving routing at the required precision for each actual ordinary failed comparison, followed by a genuine opposing estimate.
+
+## Further fixed-target reduction
+
+[COMMON_SUFFIX.md](COMMON_SUFFIX.md) proves a finite-menu common-suffix theorem, conditional on the pinned PR146 control results, and reduces paired pointwise pressure to the fixed-target finite-state-filtered one-arm count FS. [Exact finite control](COMMON_SUFFIX_CONTROL.js): 16 states, common 83-step suffix, 544 literal positive path checks. FS remains unproved; this is a reduction, not a proof of PT or Collatz.

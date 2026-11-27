@@ -1,0 +1,64 @@
+{
+  "inverse_lower_table": {
+    "allowed_letters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "blocks": 8,
+    "cubed_four_thirds_growth_floor": "20461327280451/20000000000000",
+    "declared_single_letter_lower": "2369/10000",
+    "exact_minimum_ratio": "375482519645015079/37778931862957161709568",
+    "gate_block_length": 512,
+    "gate_probability_floor": "(19/20)^512",
+    "minimum_total": 13,
+    "most_adverse_ternary_unit": 10121,
+    "subeigenvector": [
+      1,
+      2
+    ],
+    "unit_states_by_low_digit": {
+      "1": 6561,
+      "2": 6561
+    }
+  },
+  "sources": {
+    "counts": {
+      "exact_physical_words": 5460,
+      "joint_adic_high_original_windows": 24
+    },
+    "first_joint_shadow_examples": [
+      {
+        "initial": 43,
+        "laps": 1,
+        "terminal": 37,
+        "u": 3
+      },
+      {
+        "initial": 1643,
+        "laps": 2,
+        "terminal": 1171,
+        "u": 4
+      },
+      {
+        "initial": 26219,
+        "laps": 3,
+        "terminal": 15751,
+        "u": 2
+      },
+      {
+        "initial": 419435,
+        "laps": 4,
+        "terminal": 212581,
+        "u": 1
+      }
+    ]
+  }
+}

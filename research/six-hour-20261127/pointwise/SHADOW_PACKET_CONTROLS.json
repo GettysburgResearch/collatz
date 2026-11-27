@@ -1,0 +1,16 @@
+{
+  "decoder": {
+    "principal_realizations": 510,
+    "terminating_realizations": 14,
+    "two_sided_finite_boundaries": 4096
+  },
+  "packets": {
+    "all_one_packets": 9,
+    "checked_shadow_clocks": 1960,
+    "deleted_zero_subsums": 656,
+    "even_clearings": 714,
+    "nontrivial_prime_to_six_clearings": 413,
+    "nontrivial_rough_scalings": 20,
+    "primitive_packets": 711
+  }
+}

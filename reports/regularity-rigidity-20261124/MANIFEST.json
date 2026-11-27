@@ -1,0 +1,343 @@
+{
+  "schema": "collatz-scientific-evidence-manifest/v1",
+  "date": "2026-11-24",
+  "repository": "GettysburgResearch/collatz",
+  "baseline_pr": 200,
+  "baseline_commit": "abf36c63b4d0181541d7e029d390d6f636940750",
+  "status": "Collatz OPEN; written theorems retain named inputs; Lean checks only the listed algebraic and finite statements.",
+  "scope": "All scientific packet files and the listed review/replay reports, excluding this manifest and later publication receipts.",
+  "lean_modules": 7,
+  "lean_theorem_declarations": 46,
+  "files": [
+    {
+      "path": "research/regularity-rigidity-20261124/AUTOMATA.md",
+      "bytes": 6654,
+      "sha256": "4eb0975c2efc2df84b510bf3f9ac4e2a13a6a9914839a161ba4caa07559c4732",
+      "git_blob": "b7565429d577b9211213fc875ecc26b590353218"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/LOCAL_BLOCKS.md",
+      "bytes": 10480,
+      "sha256": "c8a703350880b6c28ffa876c33d6a24910501b2e4c4cc34f1aec8c30936b4acc",
+      "git_blob": "f2f7f985921b8e11aa3511ac5407c167538a2906"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/LeanCore.lean",
+      "bytes": 3065,
+      "sha256": "81c6bcfde5d09085e03509a02691d3d1dfdcd43ea11c2be5d8a798dd1ae9ac11",
+      "git_blob": "06aa3410786e9f3fb29a522871cc047e86e73654"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/PHASE_CONTROLS.json",
+      "bytes": 131,
+      "sha256": "8a596b68de847502ac1b3ab16a9953218fa807ea1731eca753de38c94c875ed8",
+      "git_blob": "0800e5c7c9e7ab2c9a348e4e7e98a373d5a50c9d"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/RATIO_CONTROLS.json",
+      "bytes": 435,
+      "sha256": "5dce939b5042176426a3fb1675bb4c87ec1106e10d7dc901f68e9831eac7b469",
+      "git_blob": "8e813edb9f110fafebbb6a8866abaf7912fe1ac9"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/RATIO_PRESSURE.md",
+      "bytes": 11370,
+      "sha256": "89d0a72940bce925d982bc21d77a1ae9539fe87c80d055b031c565dd807ae716",
+      "git_blob": "3dc8080948785fb780aade553d3205f982252442"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/README.md",
+      "bytes": 3647,
+      "sha256": "f4c32c6c1524e29d44d879f453ec3063c344f2eb6ff414428c8f9f58c5769646",
+      "git_blob": "63ec952d2794d28b83ba001e103760259f5bb364"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/SOURCES.md",
+      "bytes": 3990,
+      "sha256": "3db380ec4547aa1c14d8c6805917efecb739e82f78fcc05265a9aca94e84e8b8",
+      "git_blob": "fecf1a46ce6556786792152cb85642a00a31af99"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/CONTROLS.json",
+      "bytes": 301,
+      "sha256": "eb8b6e281b517cdec43c567ca59469f1ab32a424c9ad8b3803f4900eaabad611",
+      "git_blob": "cc710790621a868d5b2ec8209a5b10fbd849abd1"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/FOURIER_UNIFORMITY.md",
+      "bytes": 5058,
+      "sha256": "5a70f3aca69db0069c2605bb622b559e230ee211ba9c84cc621d09a473027d18",
+      "git_blob": "c2de757a3658ac869bda95c960160d92a365f88d"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/MACROSCOPIC_RIGIDITY.md",
+      "bytes": 11274,
+      "sha256": "f0919d8389fe2f2265e1ed4aa99a3482b3c11bb98d5d0095ef3996c9cd00b513",
+      "git_blob": "55686b131b504c4efd0a39e938438a0f5ede0f0b"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/README.md",
+      "bytes": 3074,
+      "sha256": "3ae553e120f2d7dfafd6e6fc012ef7f7aa0622504b9c9208e32f09077f81704b",
+      "git_blob": "537de99540476aea43caacbbe1967816b3cb2d37"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/REVERSE_RENEWAL.md",
+      "bytes": 12358,
+      "sha256": "06eda30d81f843f4a11ab218fed58a7c9caebd23aa35ebd0aed0e91d29b65cd8",
+      "git_blob": "562757fb4c91c9931b363abfafc948af0381682c"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/ReturnRigidity.lean",
+      "bytes": 2689,
+      "sha256": "1a7da3c43332ee3b4939ccdbdd0a7dcc5b43c634fc1aa98e36d3909aee4676da",
+      "git_blob": "ab242213952c5278ac292598dbfdedbc442d1876"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/SOURCES.md",
+      "bytes": 4352,
+      "sha256": "036629d2106d5794eb8375ed2d1aa960482c26257bfa5b72ffc389af7b472a0d",
+      "git_blob": "812667d8c62c11d23ae838306d6514bf1fe04c10"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/continuation/controls.js",
+      "bytes": 4927,
+      "sha256": "44d69b680e19c08eb32259586ef56acd035cb9482499ca48ee51ec525b1f9131",
+      "git_blob": "ddf2357a4591132bb1b7bea019ff873b19695a0c"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/phase_controls.js",
+      "bytes": 3188,
+      "sha256": "0d7bfc57c05dec0207e399b0a3a2b8eb2f7f4f8df41761dcd3841e2475163110",
+      "git_blob": "bcc024d220738c8d7a36443beaf481fd6c1afc7e"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/APPROXIMATE_COLORING.md",
+      "bytes": 8778,
+      "sha256": "1bd977f4f6d1a4aaaf5b3df65a592e1a28c84f070ec55dd7b4dd779fa92c7cad",
+      "git_blob": "c674daac6c067f5a63490ef4fca85152282fd673"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX.md",
+      "bytes": 7508,
+      "sha256": "a99cb8b7b230e134c1b126bffe9567d2983ec6e8da900f96201a0b6bf34f313a",
+      "git_blob": "f56d08cb940271e9b10af8165d2d374f7ebe2963"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/COMMON_SUFFIX_CONTROL.js",
+      "bytes": 2118,
+      "sha256": "d9f7459628ea51e3fe5d8a5d353257db1f6c7e52dd161454229d92eb8135870c",
+      "git_blob": "788f1bc007daaf9e6c0ff7fbbca780b5a0285488"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/CONTROLS.json",
+      "bytes": 376,
+      "sha256": "242696c2c5476e479059bd7302e461d0aa105a80c9b2922a26784bf44d71936f",
+      "git_blob": "6b0b4558dce97f1ae9cd0744c4ccf711e150f612"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/FinitePressure.lean",
+      "bytes": 3635,
+      "sha256": "300c9cfa5ab71f6d75c36303290e1d5b664127c3c6e1007dd4c31263a2952254",
+      "git_blob": "7a9a90de6a4e00022952f8b47341626f84195166"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/OrdinaryFiber.lean",
+      "bytes": 13702,
+      "sha256": "036c897866b491f3d2ec3b452b18893785989cfcdee9877483bd8f2916bb25e5",
+      "git_blob": "b39287b77a7c5c8b1bd4268ecfc59b1dc0e78b56"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/PAIRED_FIBERS.md",
+      "bytes": 17029,
+      "sha256": "0421980da56e34d93599fea5bd9570f4954b7392e2a7d0de73adcbbee3706719",
+      "git_blob": "3d733dbc962da7d7ae22b88aac316ae18f6cf846"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/POLYNOMIAL_RIGIDITY.md",
+      "bytes": 9413,
+      "sha256": "8b12687154b369887685da0d27ead47094c4600e76974f31a921e136c1307ef7",
+      "git_blob": "d9cda5af28a09a82906820945195c9e532a54910"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/PointwiseFiber.lean",
+      "bytes": 2966,
+      "sha256": "9e73041211096fd9654f5db7b8520f325a6eb157ef8780372cfb521bc81a8ca1",
+      "git_blob": "c9d842b29ea16ad6e9b7a56b5214eca5c20d74ba"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/README.md",
+      "bytes": 4118,
+      "sha256": "8afff40593d7c2056434a19a23c4eaa2bcf7171f703e2d680676ac85f9bcf5da",
+      "git_blob": "b1e1be4e38bb3fda57be283e3812eb505a277cab"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/RelativeState.lean",
+      "bytes": 3919,
+      "sha256": "5b708593a40185a77a3c9f0b80dbf639e96ccf92cca36b2b1d9fe410a8fd0179",
+      "git_blob": "1909b6ecfc96146457d92336b167f2dc110bb9be"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/SOURCES.md",
+      "bytes": 4955,
+      "sha256": "b9d580973fbed3c85ccb11d680f5d969eee16b382d7aa2a6865193ba3640d58c",
+      "git_blob": "214bcfb1b6f6c0952d3cdc8d1ff6e07aa75b8e7a"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/TwoBlockRouter.lean",
+      "bytes": 6306,
+      "sha256": "6bcbf87f234e7078fdab97df73e6e9deb47001c3b5a2173699efa3909fbac1de",
+      "git_blob": "3e5fe02c51c58970c7abe028df7e295ea7d53c33"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/pointwise-fibers/controls.js",
+      "bytes": 4614,
+      "sha256": "90e79e770e5e36a9bed574561cf71a5c205724c1fa92a4bbf91e5a612b8a0530",
+      "git_blob": "3af96b9aa79f21dbb36e3619873cbef34e35e2fe"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/ratio_pressure.js",
+      "bytes": 3629,
+      "sha256": "bd1a025faa8cd17b006caf7b6f16f183f73a2eeeb7f0446b5ac46af7a9746770",
+      "git_blob": "da5b8cc0b3f01d826b255587062e5aa06ebb129a"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/AUTOMATON_COUPLING.md",
+      "bytes": 8127,
+      "sha256": "2e945982c044166eb7caf5031145b41af788dfe281fb22638c5faf028b61d6cb",
+      "git_blob": "34f076b7ced166e2546bb16d23841da166e45585"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/FIBER_CONTROLS.json",
+      "bytes": 2775,
+      "sha256": "88ffc1bad1d2a8d15b0d0ef07b0f646932dcac816668385eef31adafd7489b94",
+      "git_blob": "ab60f401faa888ac2232e9d3ed65240f2bd26a38"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/FIXED_CLOCK_ROUTER.md",
+      "bytes": 6511,
+      "sha256": "633cfe9ee6d43dac42ab9c77a02165ae381a263e234ec275bd846f13586ef2a8",
+      "git_blob": "ba141bc4138b73bdbae85cef9b913abca6d778e1"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/LOCAL_FIBER_ROWS.md",
+      "bytes": 12014,
+      "sha256": "3eff91e40bfd684c92849732c24ac16dd54440a1f5cf55642fef3c547f43a567",
+      "git_blob": "8b4a05f7c8c45fcf9b920289a0759ed3004dc99f"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/PAIRED_FIBER_AUDIT.md",
+      "bytes": 10925,
+      "sha256": "55a7533c2e52c9fd6bfcb7b68938b00daae99cf82d519fbbdb07a76e44ecb0a6",
+      "git_blob": "a18ac2320c832ae147aa177b284b4138485a30ab"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/README.md",
+      "bytes": 7590,
+      "sha256": "48be6b2c0c52e7a1f15a47bbc16c4cd1b0fe929c9131134aa72185b06e8b9a3c",
+      "git_blob": "e83a3d6f41a1342aa9108f802af8640074f78664"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/STATIONARY_CYLINDER_BOUNDS.md",
+      "bytes": 4277,
+      "sha256": "2722feb48c404951e5268b132426b0e1a44385b8e1bed19d5b23cf9f5dc8fa36",
+      "git_blob": "eda2b866a38483902c0cc41a518331cc9e7bf925"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/check_automaton_coupling.py",
+      "bytes": 5103,
+      "sha256": "fc7277c7526ff16a16303120d2de82c99c9acd85d11b0749ebf74fe9973b37bb",
+      "git_blob": "370e3846bfad6548fd22059fd2e15cbec09afda3"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/check_fixed_clock_router.py",
+      "bytes": 5475,
+      "sha256": "a0c0efa24a365f5328ba9a87dacf8d62f48fca40994ca14ffe33ffa999ac21ea",
+      "git_blob": "9fc43b6162c224bfb6f15ff989d5d44300684878"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/fiber_controls.py",
+      "bytes": 7221,
+      "sha256": "748e2d5000764da16a3b01353e8e321ef6a8f5e0793a6221d2fa416ff355268e",
+      "git_blob": "282ad0864d42e3363639ded92b1976a830887239"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/refinement/replay_controls.py",
+      "bytes": 3927,
+      "sha256": "a32586cbc37ebf47cb5664e3359d4036c63fb3ba8a30d5f85b6e6e3ca909ea01",
+      "git_blob": "9f372e9c9b7e43b63bd12e45611b1d789ae9527e"
+    },
+    {
+      "path": "research/regularity-rigidity-20261124/replay_lean.py",
+      "bytes": 5592,
+      "sha256": "7815f780b5b31537d5c3437dabaa0626f4a7033675cb400cdda4b9fc3a3e4e0a",
+      "git_blob": "546a70985ec12594308a0b3dbb99d4557bc751a5"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/BASE_CONTROLS_REPLAY.json",
+      "bytes": 5007,
+      "sha256": "eaa83705c2b4cb50aaaf1dba4a6fc47cf6d08487fc8e8ebcd86364ddbd033a85",
+      "git_blob": "4737b28c7958217bd9733ef6439a731586c6afdd"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/FOUR_A_CROSS_REVIEW.md",
+      "bytes": 3753,
+      "sha256": "973cb5026c7756018b6a336decff7d516fbe58496ff935d63b8a19c530ab362c",
+      "git_blob": "18ccf8a226dc459f2bbdbe4c636f786b6d4e5842"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/INDEPENDENT_CONTROLS_REPLAY.json",
+      "bytes": 5667,
+      "sha256": "6514b59ebef2a9b05ae87184e714c6018fc229013d922cb811d458705cd75206",
+      "git_blob": "03fef5e9f9fc967a3f951e8591928fde06d3230b"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/LATEST_INTAKE.md",
+      "bytes": 5864,
+      "sha256": "3458ff4811dcfac60a7cc06c184be1d12dbe42c15eedc91bbf3ce1e726d29f36",
+      "git_blob": "0176aa4597c377d5b390be58852867b5354ee999"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/LEAN_RECEIPT.json",
+      "bytes": 7034,
+      "sha256": "a62449f3fc16dc6a0c0a94f6e9483d8458f6839ad9f1c7cc189f71578d14fc45",
+      "git_blob": "804879212a8f81383cf7c901430701742c4b4069"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/LEAN_REPLAY.md",
+      "bytes": 7518,
+      "sha256": "b1cd29478f1df936a5d23eff449fbfa0dd09f2b3dbb3da84e9228589f49319ab",
+      "git_blob": "a1138ee7563a947835fce115ba397cb56a2247a8"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/LOCAL_FIBER_CROSSREVIEW.md",
+      "bytes": 5786,
+      "sha256": "dd7bf748a209dda119021c3ea65bd49f846355eac41e4760a7d043432c10e1ec",
+      "git_blob": "ac0d06b894d67663b34dff300b2427c8e7a519c2"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/REVERSE_AND_RIGIDITY_REVIEW.md",
+      "bytes": 15602,
+      "sha256": "11240d248f8812cb55940cc39ed8f05ecb015350daea65772091919750d5e96b",
+      "git_blob": "a3f4c3fa228a1b1e9534f1968f4b2cd73627ece8"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/ROOT_REVIEW.md",
+      "bytes": 8262,
+      "sha256": "8377cc90dea2e15268ec044c4e14ca7e64ff677f6081844c4bc75936c016c89e",
+      "git_blob": "c45b258b8928cd3d0283253896667d39fe78e92e"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/ROUTER_REPLAY.json",
+      "bytes": 743,
+      "sha256": "a9474c1e4bf073620161c43795762d700597ef7074f5d562055637326da27c73",
+      "git_blob": "ebde0c6815bd016a746c2eceb484b4eb3411acb2"
+    },
+    {
+      "path": "reports/regularity-rigidity-20261124/SOURCES.json",
+      "bytes": 9414,
+      "sha256": "187f5ecc8430fff3cc755eb8fe387feaa189d1d92aad3b2a4b5cbc6d8f59005c",
+      "git_blob": "60063ad8853d51b825d577b5bb50cf7cc23bed12"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "files_sha256": {
+    "ADAPTIVE_ANCHOR_REVIEW.md": "43ab2ca2ec55463ba79e6eecce171ec16e825a98ca915d9fb26f46cccb629173",
+    "ALL_SIGNED_ANCHOR_COMPILER.md": "811e9c3cb1360decf749a17b21b5b5d5d7b818ebe91fcd3068716d7e1b395f08",
+    "AnchorPathCode.lean": "07d93c11637d729c59589ef11b26be31ec8ed5882bb23507a3e060d61225d7fc",
+    "DECODER_AND_ORDINARY_LIFTS.md": "f2ddc458a94859784e1b3b055e9176ebb8cc5745ec1dd774c8999fcab3ab3487",
+    "HEIGHT_FREE_ANCHOR_CLOCK.md": "12512e6f63049b04ee5625d06354cadcd6127fc6b4ee35717f78d2881390c279",
+    "MOVING_RATIONAL_SHADOWS.md": "bc230fce311bc225284bc33ce859ccbccb214154a3fa1f89cf9744d365daaa60",
+    "SHADOW_PACKET_CONTROLS.json": "11fc312708d93a57c1def0ce9b08f49c96217698ae23ce711eec812fe646a484",
+    "SHORT_LAG_DEFECTS.md": "f45eba21681d45060363c5061f9dd26d53fb32c10c8e7c8887057eaa79cb1c83",
+    "SIGNED_ANCHOR_CONTROLS.json": "0cec2f8df2fd40921aaba22f937c0dc118fd639d59eac9b9dd7b141dd0076b52",
+    "TernaryEndpointBudget.lean": "7282ad567d910648554cb61276e983ac0bfa8bd686cb2459c5b034f453bea518",
+    "check_shadow_packets.py": "b0d30233cb07179aa9e2e38140fd2f2b83f6cfd37826b7a8c82d6349dbeee4ff",
+    "check_signed_anchor.py": "a5fec6103201661e1dc9fd915c085048fc4571fa2cd57235ba05b95f2a9ea51a",
+    "originals/MOVING_RATIONAL_SHADOWS.original.md": "6426fbd21f7a39131bc0a0fcdcfd2b20103a0f93cf060cf55fc332449656caba"
+  },
+  "formal_own_local_declarations": {
+    "AnchorPathCode.lean": 6,
+    "TernaryEndpointBudget.lean": 3
+  },
+  "global_status": "No universal descent or cycle exclusion. M1 is a new written analytic theorem awaiting separate review. The original M1 draft singleton placement superseded by its corrected source.",
+  "independently_recompiled_frozen": {
+    "RationalAnchorDiscrepancy.lean": 11
+  },
+  "python_receipts": {
+    "regular_and_optimized_byte_equal": [
+      "SIGNED_ANCHOR_CONTROLS.json",
+      "SHADOW_PACKET_CONTROLS.json"
+    ]
+  }
+}

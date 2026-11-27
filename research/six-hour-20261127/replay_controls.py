@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+"""Replay frozen finite controls in both Python modes; no mathematical extrapolation."""
+import argparse
+import ast
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parent
+CONTROLS = [
+    ("gates/gate_background_controls.py", [], "gates/GATE_BACKGROUND_CONTROLS.json"),
+    ("cycles/check_toric_windows.py", [], "cycles/TORIC_WINDOW_CONTROLS.json"),
+    ("pointwise/check_multi_block.py", [], "pointwise/MULTI_BLOCK_CONTROLS.json"),
+    ("pointwise/check_negative17_minimum.py", [], "pointwise/NEGATIVE17_CONTROLS.json"),
+    ("pointwise/independent_audit.py", ["pointwise/NEGATIVE17_EXACT_MINIMA.md"],
+     "pointwise/INDEPENDENT_MINIMUM_CONTROLS.json"),
+    ("pointwise/check_adaptive_anchors.py", [], "pointwise/ADAPTIVE_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_signed_anchor.py", [], "pointwise/SIGNED_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_extra_budget.py", [], "pointwise/EXTRA_BUDGET_CONTROLS.json"),
+    ("pointwise/check_positive_anchors.py", [], "pointwise/POSITIVE_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_fourth.py", [], "pointwise/FOURTH_EXTRA_CONTROLS.json"),
+    ("pointwise/check_overhead_spectrum.py", [], "pointwise/ORDINARY_OVERHEAD_CONTROLS.json"),
+    ("pointwise/check_positive_cone_independent.py", [], "pointwise/POSITIVE_CONE_INDEPENDENT.json"),
+    ("pointwise/check_inverse_extensions_independent.py", [], "pointwise/INDEPENDENT_EXTENSIONS.json"),
+    ("cycles/check_clock_shadows.py", [], "cycles/CLOCK_SHADOW_CONTROLS.json"),
+    ("cycles/check_clock_mesh.py", [], "cycles/CLOCK_MESH_CONTROLS.json"),
+    ("cycles/check_resonant_interval.py", [], "cycles/RESONANT_INTERVAL_CONTROLS.json"),
+    ("cycles/check_dense_denominators.py", [], "cycles/DENSE_DENOMINATOR_CONTROLS.json"),
+    ("cycles/check_cycles_independent.py", [], "cycles/INDEPENDENT_CYCLES.json"),
+    ("pointwise/check_shadow_packets.py", [], "pointwise/SHADOW_PACKET_CONTROLS.json"),
+    ("pointwise/check_moving_review.py", [], "pointwise/MOVING_REVIEW_CONTROLS.json"),
+    ("pointwise/check_grade_split.py", [], "pointwise/GRADE_SPLIT_CONTROLS.json"),
+    ("pointwise/check_grade_digits.py", [], "pointwise/GRADE_DIGITS_CONTROLS.json"),
+    ("pointwise/check_signed_grade_independent.py", [], "pointwise/SIGNED_GRADE_INDEPENDENT_CONTROLS.json"),
+    ("cycles/bridge_energy_certificate.py", [], "cycles/BRIDGE_ENERGY_CHECK.json"),
+    ("cycles/check_binary_energy_independent.py", [], "cycles/BINARY_ENERGY_INDEPENDENT_CONTROLS.json"),
+    ("cycles/full_bridge_pressure.py", [], "cycles/FULL_BRIDGE_PRESSURE.json"),
+    ("cycles/check_free_bridge_review.py", [], "cycles/FREE_BRIDGE_REVIEW_CONTROLS.json"),
+    ("pointwise/check_height_census.py", [], "pointwise/HEIGHT_CENSUS_CONTROLS.json"),
+    ("pointwise/check_all_height_audit.py", [], "pointwise/ALL_HEIGHT_INDEPENDENT_CONTROLS.json"),
+    ("pointwise/check_canonical_birth_profile.py", [], "pointwise/CANONICAL_BIRTH_PROFILE_CONTROLS.json"),
+    ("pointwise/check_early_small_visitors.py", [], "pointwise/EARLY_SMALL_VISITORS_CONTROLS.json"),
+    ("cycles/averaged_energy_certificate.py", [], "cycles/AVERAGED_ENERGY_CHECK.json"),
+    ("cycles/averaged_return_crosscheck.py", [], "cycles/AVERAGED_RETURN_CROSSCHECK.json"),
+    ("cycles/sparse_grade_certificate.py", [], "cycles/SPARSE_GRADE_CHECK.json"),
+    ("cycles/sparse_projection_crosscheck.py", [], "cycles/SPARSE_PROJECTION_CROSSCHECK.json"),
+    ("cycles/sparse_nonbinary_certificate.py", [], "cycles/SPARSE_NONBINARY_CHECK.json"),
+    ("cycles/all_lag_orientation_certificate.py", [], "cycles/ALL_LAG_ORIENTATION_CHECK.json"),
+    ("cycles/clock_order_certificate.py", [], "cycles/CLOCK_ORDER_CHECK.json"),
+    ("cycles/three_grade_modular_certificate.py", [], "cycles/THREE_GRADE_MODULAR_CHECK.json"),
+    ("cycles/check_three_grade_audit.py", [], "cycles/THREE_GRADE_AUDIT_CONTROLS.json"),
+    ("cycles/higher_moment_barrier.py", [], "cycles/HIGHER_MOMENT_BARRIER.json"),
+    ("cycles/fifth_verify.py", [], "cycles/FIFTH_CERTIFICATE_RESULT.json"),
+    ("cycles/independent_fifth_setup.py", [], "cycles/FIFTH_INDEPENDENT_SETUP.json"),
+    ("cycles/independent_fifth_law_controls.py", [], "cycles/FIFTH_LAW_CONTROLS.json"),
+    ("cycles/third_layer_fifth_check.py", [], "cycles/THIRD_LAYER_FIFTH_CHECK.json"),
+    ("cycles/check_third_layer_fifth_audit.py", [], "cycles/THIRD_LAYER_FIFTH_AUDIT_CONTROLS.json"),
+    ("cycles/sparse_binary_global_check.py", [], "cycles/SPARSE_BINARY_GLOBAL_CONTROLS.json"),
+    ("cycles/independent_global_fifth_sparse.py", [], "cycles/GLOBAL_FIFTH_SPARSE_REVIEW_CHECK.json"),
+    ("pointwise/check_critical_safe_entry.py", [], "pointwise/CRITICAL_SAFE_ENTRY_CONTROLS.json"),
+    ("pointwise/critical_safe_crosscheck.py", [], "pointwise/CRITICAL_SAFE_CROSSCHECK.json"),
+    ("cycles/physical_band_certificate.py", [], "cycles/PHYSICAL_BAND_CHECK.json"),
+    ("cycles/check_physical_band_audit.py", [], "cycles/PHYSICAL_BAND_AUDIT_CONTROLS.json"),
+    ("cycles/classical_signed_gap_certificate.py", [], "cycles/CLASSICAL_SIGNED_GAP_CHECK.json"),
+    ("cycles/check_classical_gap_audit.py", [], "cycles/CLASSICAL_GAP_AUDIT_CONTROLS.json"),
+    ("cycles/strict_rank_convexity_check.py", [], "cycles/STRICT_RANK_CONVEXITY_CONTROLS.json"),
+    ("cycles/check_convex_rank_audit.py", [], "cycles/CONVEX_RANK_AUDIT_CONTROLS.json"),
+    ("cycles/convex_rank_consumer_check.py", [], "cycles/CONVEX_RANK_CONSUMER_CONTROLS.json"),
+    ("cycles/check_convex_gap_consumers.py", [], "cycles/CONVEX_GAP_CONSUMER_CONTROLS.json"),
+    ("cycles/unrestricted_three_grade_certificate.py", [], "cycles/UNRESTRICTED_THREE_GRADE_CHECK.json"),
+    ("cycles/check_unrestricted_three_grade_audit.py", [], "cycles/UNRESTRICTED_THREE_GRADE_AUDIT_CONTROLS.json"),
+    ("cycles/physical_depth_transfer_certificate.py", [], "cycles/PHYSICAL_DEPTH_TRANSFER_CHECK.json"),
+    ("cycles/review_physical_odd_transfer.py", [], "cycles/PHYSICAL_ODD_TRANSFER_REVIEW_CONTROLS.json"),
+    ("cycles/rational_residue_convexity_certificate.py", [], "cycles/RATIONAL_RESIDUE_CONVEXITY_CHECK.json"),
+    ("cycles/check_rational_rank_lanes.py", [], "cycles/RATIONAL_RANK_LANES_CONTROLS.json"),
+    ("cycles/residue_fibre_source_certificate.py", [], "cycles/RESIDUE_FIBRE_SOURCE_CHECK.json"),
+    ("cycles/check_residue_source_physical.py", [], "cycles/RESIDUE_SOURCE_PHYSICAL_AUDIT_CONTROLS.json"),
+    ("cycles/rational_rank_lag_consumer_check.py", [], "cycles/RATIONAL_RANK_LAG_CONSUMER_CHECK.json"),
+    ("cycles/rational_lag_review_check.py", [], "cycles/RATIONAL_LAG_REVIEW_CONTROLS.json"),
+    ("cycles/rank_cap_obstruction.py", [], "cycles/RANK_CAP_OBSTRUCTION_CONTROLS.json"),
+    ("cycles/check_rank_cap_independent.py", [], "cycles/ROOT_RANK_CAP_CONTROLS.json"),
+    ("cycles/adjacent_gap_period_certificate.py", [], "cycles/ADJACENT_GAP_PERIOD_CERTIFICATE.json"),
+    ("cycles/certify_adjacent_gap_exclusion_independent.py", [], "cycles/ADJACENT_PERIOD_INDEPENDENT_CONTROLS.json"),
+    ("cycles/generate_adjacent_period_lean.py", [], "cycles/ADJACENT_PERIOD_DATA_REPLAY.txt"),
+    ("cycles/independent_rational_gap_census_review.py", [], "cycles/INDEPENDENT_RATIONAL_GAP_CENSUS_CHECK.json"),
+    ("cycles/check_residue_support_and_diversity.py", [], "cycles/RESIDUE_SUPPORT_DIVERSITY_CONTROLS.json"),
+    ("cycles/parity_lag_energy_certificate.py", [], "cycles/PARITY_LAG_ENERGY_CHECK.json"),
+    ("cycles/ternary_parity_review_check.py", [], "cycles/TERNARY_PARITY_REVIEW_CONTROLS.json"),
+    ("pointwise/inverse_gain_spectrum_check.py", [], "pointwise/INVERSE_GAIN_SPECTRUM_CHECK.json"),
+    ("pointwise/check_inverse_gain_graph.py", [], "pointwise/INVERSE_GAIN_GRAPH_CONTROLS.json"),
+    ("pointwise/check_principal_pressure_obstruction.py", [], "pointwise/PRINCIPAL_PRESSURE_CONTROLS.json"),
+    ("pointwise/rebuild_pressure_forward.py", [], "pointwise/INDEPENDENT_PRESSURE_FORWARD.json"),
+    ("pointwise/independent_pressure_audit.py", [], "pointwise/INDEPENDENT_PRESSURE_AUDIT_CONTROLS.json"),
+    ("pointwise/transient_entropy_certificate.py", [], "pointwise/TRANSIENT_ENTROPY_CONTROLS.json"),
+    ("pointwise/transient_parity_review_check.py", [], "pointwise/TRANSIENT_PARITY_REVIEW_CHECK.json"),
+    ("pointwise/sharp_correlation_controls.py", [], "pointwise/SHARP_CORRELATION_CONTROLS.json"),
+    ("pointwise/check_adaptive_green_component.py", [], "pointwise/ADAPTIVE_GREEN_COMPONENT_CONTROLS.json"),
+    ("pointwise/independent_green_cell_controls.py", [], "pointwise/INDEPENDENT_GREEN_CELL_CONTROLS.json"),
+    ("pointwise/high_floor_pressure_controls.py", [], "pointwise/HIGH_FLOOR_PRESSURE_CONTROLS.json"),
+    ("pointwise/compact_shadow_check.py", [], "pointwise/COMPACT_SHADOW_CHECK.json"),
+    ("pointwise/check_rare_gate_profile.py", [], "pointwise/RARE_GATE_PROFILE_CONTROLS.json"),
+    ("pointwise/rare_gate_joint_review_check.py", [], "pointwise/RARE_GATE_JOINT_REVIEW_CHECK.json"),
+    ("pointwise/check_final_phase_audits.py", [], "pointwise/FINAL_PHASE_INDEPENDENT_CONTROLS.json"),
+    ("pointwise/independent_all_place_controls.py", [], "pointwise/INDEPENDENT_ALL_PLACE_CONTROLS.json"),
+    ("pointwise/check_short_closure_interfaces.py", [], "pointwise/SHORT_CLOSURE_INTERFACE_CONTROLS.json"),
+]
+DEPENDENCIES = {
+    "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
+    "pointwise/check_fourth.py": ["pointwise/check_extra_budget.py"],
+    "pointwise/check_overhead_spectrum.py": [
+        "pointwise/check_extra_budget.py", "pointwise/check_positive_anchors.py"],
+    "cycles/full_bridge_pressure.py": ["cycles/bridge_energy_certificate.py"],
+    "pointwise/check_canonical_birth_profile.py": ["pointwise/check_all_height_audit.py"],
+    "pointwise/check_early_small_visitors.py": ["pointwise/check_all_height_audit.py"],
+    "cycles/sparse_nonbinary_certificate.py": ["cycles/sparse_grade_certificate.py"],
+    "cycles/higher_moment_barrier.py": ["cycles/bridge_energy_certificate.py"],
+    "cycles/fifth_verify.py": ["cycles/FIFTH_WITNESSES.txt.gz", "cycles/FIFTH_INTEGER_GRID_ROWS.txt",
+                              "cycles/fifth_grid_integer.cpp"],
+    "cycles/independent_fifth_setup.py": ["cycles/FIFTH_WITNESSES.txt.gz", "cycles/FIFTH_INTEGER_GRID_ROWS.txt"],
+    "cycles/independent_fifth_law_controls.py": ["cycles/independent_fifth_setup.py", "cycles/FIFTH_WITNESSES.txt.gz"],
+    "cycles/rational_residue_convexity_certificate.py": ["cycles/clock_order_certificate.py"],
+    "cycles/residue_fibre_source_certificate.py": ["cycles/clock_order_certificate.py"],
+    "cycles/rational_rank_lag_consumer_check.py": ["cycles/clock_order_certificate.py"],
+    "cycles/rational_lag_review_check.py": ["cycles/review_physical_odd_transfer.py"],
+    "cycles/generate_adjacent_period_lean.py": ["cycles/AdjacentPeriodCensus.lean", "cycles/certify_adjacent_gap_exclusion_independent.py"],
+    "cycles/check_residue_support_and_diversity.py": ["cycles/check_residue_source_physical.py"],
+    "pointwise/rebuild_pressure_forward.py": ["pointwise/independent_pressure_forward.cpp"],
+    "pointwise/independent_pressure_audit.py": ["pointwise/INDEPENDENT_PRESSURE_FORWARD.json"],
+}
+WORKING_DIRECTORIES = {"pointwise/independent_pressure_audit.py": "pointwise"}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--start-index', type=int, default=0,
+                        help='zero-based first control; default replays the entire packet')
+    args = parser.parse_args()
+    if not 0 <= args.start_index <= len(CONTROLS):
+        parser.error('start index is outside the control list')
+    receipt = []
+    for script, inputs, expected in CONTROLS[args.start_index:]:
+        outputs = []
+        for mode in ([], ["-O"]):
+            result = subprocess.run(
+                [sys.executable, *mode, "-B", str(ROOT / script),
+                 *(str(ROOT / value) for value in inputs)],
+                cwd=ROOT / WORKING_DIRECTORIES.get(script, '.'), capture_output=True)
+            if result.returncode or result.stderr:
+                sys.stderr.buffer.write(result.stdout + result.stderr)
+                raise SystemExit(result.returncode or 1)
+            outputs.append(result.stdout)
+        frozen = (ROOT / expected).read_bytes()
+        if outputs[0] != outputs[1] or outputs[0] != frozen:
+            raise SystemExit(f"complete output differs: {script}")
+        receipt.append({
+            "script": script,
+            "sha256": hashlib.sha256((ROOT / script).read_bytes()).hexdigest(),
+            "inputs": {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in inputs},
+            "dependencies": {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest()
+                             for p in DEPENDENCIES.get(script, [])},
+            "expected": expected,
+            "output_sha256": hashlib.sha256(frozen).hexdigest(),
+            "normal_exit_code": 0,
+            "optimized_exit_code": 0,
+            "byte_identical": True,
+            "python_assertions_present": any(isinstance(node, ast.Assert)
+                for node in ast.walk(ast.parse((ROOT / script).read_text(encoding="utf-8")))),
+            "optimized_scope": "whole-output reproduction; Python -O removes assert statements",
+            "fifth_grid_scope": ("saved integer rows and rational analytic inequalities; "
+                                  "use fifth_verify.py --rebuild for fresh C++ grid execution"
+                                  if script == "cycles/fifth_verify.py" else None),
+        })
+        print(f"{script}: both modes reproduce the frozen output", file=sys.stderr, flush=True)
+    print(json.dumps(receipt, indent=2))
+
+
+if __name__ == "__main__":
+    main()

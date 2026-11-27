@@ -1,0 +1,129 @@
+{
+  "sample_size": 779,
+  "sampled_cut_types": {
+    "nonzero": 17020,
+    "zero": 3241
+  },
+  "known_disjoint_pairs": [
+    {
+      "numerator": 17,
+      "denominator": 5,
+      "odd_cardinalities": [
+        7,
+        6
+      ],
+      "joint_cuts": 10
+    },
+    {
+      "numerator": 83,
+      "denominator": 47,
+      "odd_cardinalities": [
+        8,
+        7
+      ],
+      "joint_cuts": 11
+    },
+    {
+      "numerator": 217,
+      "denominator": 13,
+      "odd_cardinalities": [
+        17,
+        8
+      ],
+      "joint_cuts": 22
+    },
+    {
+      "numerator": 4033,
+      "denominator": 1909,
+      "odd_cardinalities": [
+        11,
+        10
+      ],
+      "joint_cuts": 15
+    },
+    {
+      "numerator": 10211,
+      "denominator": 1631,
+      "odd_cardinalities": [
+        18,
+        11
+      ],
+      "joint_cuts": 24
+    },
+    {
+      "numerator": 414961,
+      "denominator": 84997,
+      "odd_cardinalities": [
+        23,
+        14
+      ],
+      "joint_cuts": 30
+    }
+  ],
+  "delayed_merger_dates": [
+    8,
+    17,
+    83,
+    257,
+    1024,
+    4096
+  ],
+  "symbolic_certificates": [
+    {
+      "K": 1,
+      "nodes": 1,
+      "terminal_cylinders": 2,
+      "pruned_synchronized_cylinders": 0,
+      "maximum_nonpruned_clock": 1
+    },
+    {
+      "K": 2,
+      "nodes": 6,
+      "terminal_cylinders": 7,
+      "pruned_synchronized_cylinders": 0,
+      "maximum_nonpruned_clock": 4
+    },
+    {
+      "K": 3,
+      "nodes": 27,
+      "terminal_cylinders": 26,
+      "pruned_synchronized_cylinders": 1,
+      "maximum_nonpruned_clock": 7
+    },
+    {
+      "K": 4,
+      "nodes": 112,
+      "terminal_cylinders": 105,
+      "pruned_synchronized_cylinders": 4,
+      "maximum_nonpruned_clock": 12
+    },
+    {
+      "K": 5,
+      "nodes": 493,
+      "terminal_cylinders": 466,
+      "pruned_synchronized_cylinders": 14,
+      "maximum_nonpruned_clock": 17
+    },
+    {
+      "K": 6,
+      "nodes": 2193,
+      "terminal_cylinders": 2088,
+      "pruned_synchronized_cylinders": 53,
+      "maximum_nonpruned_clock": 22
+    },
+    {
+      "K": 7,
+      "nodes": 10123,
+      "terminal_cylinders": 9696,
+      "pruned_synchronized_cylinders": 214,
+      "maximum_nonpruned_clock": 28
+    },
+    {
+      "K": 8,
+      "nodes": 47633,
+      "terminal_cylinders": 45796,
+      "pruned_synchronized_cylinders": 919,
+      "maximum_nonpruned_clock": 33
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Independent review of moving-lag critical countermodels
+
+I accept the frozen manuscript MOVING_LAG_CRITICAL_COUNTERMODELS.md (85cdf780817e0a9c0aa3882e6f092b068a27b4cd0f560c017eb12bfa8839abae), for the stated polylogarithmic calendars and every real B>1.
+
+The endpoint ceilings telescope to the required logarithmic cumulative surplus; rounding error within a late block is at most its length plus a constant, which is negligible on that scale. Ones-first ordering at the finitely many early blocks protects the initial coefficient test. Real branch growth follows from the convergent correction series. When the square-site bit is forced against the actual next parity of the current least ordinary seed, the other dyadic lift costs exactly the preceding modulus. Monotonicity of the least sources between these sites and the relative spacing of successive square times protect the claimed lower exponent at every depth.
+
+For an unedited fixed-weight random block, any bounded sample of its distinct coordinates is hypergeometric. Different blocks are independent. The mean of the moving-pattern frequency is therefore its limiting Bernoulli value uniformly after omitting a vanishing boundary near the origin. For a tested interval of length L the individual independent-block changes have squared ranges with sum at most r²L times the maximum block length. Their exponential tail is summable after the union over all offsets, calendars and patterns at the manuscript's L≥(ln n)². Counting square blocks on each translated interval makes the sparse fully adaptive edits harmless. A countable intersection allows every finite pattern order.
+
+A cylinder specifies in full all observed, completely unedited reference permutations. These independent coordinates alone give the needed cylinder upper mass bound even after conditioning would create dependencies at the edited sites. Complete unedited blocks cover n−o(n) sites, giving the H₂(log₃2) exponent. The ordinary critical parity-frequency cover provides the matching upper dimension bound, and cylinder isometry passes it to the dyadic integer sources. Removing the countably many algebraic elements retains full measure.
+
+The positive integer lifts belong to each finite prefix separately, while the compatible infinite source is transcendental and the polynomial growth is computed in the real branch model. No fixed ordinary source or Collatz counterexample follows. The separate sharp-calendar addendum proves a smaller sufficient scale and its necessary converse; neither strengthening was needed to accept the frozen manuscript.
+
+Prepared by the binary-energy reviewer, 27 November 2026 UTC.

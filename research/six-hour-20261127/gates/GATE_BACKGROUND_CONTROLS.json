@@ -1,0 +1,170 @@
+{
+  "dyadic_shell_depths": [
+    0,
+    10
+  ],
+  "ladder": {
+    "clock": 1250,
+    "first_ladder_probability": {
+      "lower_units": 713684603469,
+      "scale": 1000000000000,
+      "upper_units": 713684603470
+    },
+    "harmonic_background": {
+      "lower_units": 822733887331,
+      "scale": 1000000000000,
+      "upper_units": 822733887332
+    },
+    "tail_bound": {
+      "lower_units": 0,
+      "scale": 1000000000000000,
+      "upper_units": 1
+    }
+  },
+  "physical": [
+    {
+      "X": 128,
+      "grade_cap": 4,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 56065186561569,
+          "sources": 44,
+          "upper_units": 56065186561613
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 87159743847837,
+          "sources": 41,
+          "upper_units": 87159743847878
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 26626121217318,
+          "sources": 24,
+          "upper_units": 26626121217342
+        }
+      },
+      "native_depth": 7,
+      "native_sieve_size": 8,
+      "scale": 100000000000000
+    },
+    {
+      "X": 511,
+      "grade_cap": 5,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 56452523786667,
+          "sources": 174,
+          "upper_units": 56452523786841
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 95986760136345,
+          "sources": 167,
+          "upper_units": 95986760136512
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 27826897691270,
+          "sources": 102,
+          "upper_units": 27826897691372
+        }
+      },
+      "native_depth": 8,
+      "native_sieve_size": 23,
+      "scale": 100000000000000
+    },
+    {
+      "X": 4096,
+      "grade_cap": 7,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 63934637320777,
+          "sources": 1479,
+          "upper_units": 63934637322256
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 136248200139423,
+          "sources": 1443,
+          "upper_units": 136248200140866
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 35767703391877,
+          "sources": 1007,
+          "upper_units": 35767703392884
+        }
+      },
+      "native_depth": 12,
+      "native_sieve_size": 84,
+      "scale": 100000000000000
+    },
+    {
+      "X": 10001,
+      "grade_cap": 8,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 64068132298525,
+          "sources": 3644,
+          "upper_units": 64068132302169
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 146779128977858,
+          "sources": 3583,
+          "upper_units": 146779128981441
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 39006974919711,
+          "sources": 2617,
+          "upper_units": 39006974922328
+        }
+      },
+      "native_depth": 13,
+      "native_sieve_size": 165,
+      "scale": 100000000000000
+    },
+    {
+      "X": 32768,
+      "grade_cap": 9,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 68717722101607,
+          "sources": 12285,
+          "upper_units": 68717722113892
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 168188641684040,
+          "sources": 12012,
+          "upper_units": 168188641696052
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 42376386182527,
+          "sources": 9159,
+          "upper_units": 42376386191686
+        }
+      },
+      "native_depth": 15,
+      "native_sieve_size": 393,
+      "scale": 100000000000000
+    },
+    {
+      "X": 131072,
+      "grade_cap": 10,
+      "intervals": {
+        "early_harmonic": {
+          "lower_units": 69574632767049,
+          "sources": 49574,
+          "upper_units": 69574632816623
+        },
+        "grade_capped_squared_times_X": {
+          "lower_units": 177993765930711,
+          "sources": 48655,
+          "upper_units": 177993765979366
+        },
+        "off_sieve_harmonic": {
+          "lower_units": 47916094512487,
+          "sources": 39962,
+          "upper_units": 47916094552449
+        }
+      },
+      "native_depth": 17,
+      "native_sieve_size": 934,
+      "scale": 100000000000000
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+[
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/PRODUCT_SEQUENCE_SHIFT.md",
+    "path": "research/unconventional-20261126/operator/PRODUCT_SEQUENCE_SHIFT.md",
+    "source_sha256": "2af5650916dd1e3be8472d59da3ca35a4cef81e8603796d5cae95c3649dc7268",
+    "integrated_sha256": "2af5650916dd1e3be8472d59da3ca35a4cef81e8603796d5cae95c3649dc7268",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/BERGMAN_DISK.md",
+    "path": "research/unconventional-20261126/operator/BERGMAN_DISK.md",
+    "source_sha256": "2b5f8b6ad06bdbc497d201b71ea266e4454542a4d954d55e7164ae243dd8d4c2",
+    "integrated_sha256": "2b5f8b6ad06bdbc497d201b71ea266e4454542a4d954d55e7164ae243dd8d4c2",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/BIASED_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/BIASED_PRESSURE.md",
+    "source_sha256": "f04842f5f5ad4c7f78b80cb11a37b76d67e18792e3cb9ce464310c1a7a61fcdd",
+    "integrated_sha256": "f04842f5f5ad4c7f78b80cb11a37b76d67e18792e3cb9ce464310c1a7a61fcdd",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/BERGMAN_POINT_DISK.md",
+    "path": "research/unconventional-20261126/operator/BERGMAN_POINT_DISK.md",
+    "source_sha256": "0b9e1d7b8e7cd3f9bc3bd2ef5ab1868ad0d98c486d1feb6b81cc0597b434aa69",
+    "integrated_sha256": "0b9e1d7b8e7cd3f9bc3bd2ef5ab1868ad0d98c486d1feb6b81cc0597b434aa69",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/check_pressure.py",
+    "path": "research/unconventional-20261126/operator/check_pressure.py",
+    "source_sha256": "46bb684b250fa24a6b5e3634a3e2f01d5c6e8cf19797baa84cc1369e9125e0c8",
+    "integrated_sha256": "46bb684b250fa24a6b5e3634a3e2f01d5c6e8cf19797baa84cc1369e9125e0c8",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/PRESSURE_CONTROLS.json",
+    "path": "reports/unconventional-20261126/PRESSURE_CONTROLS.json",
+    "source_sha256": "cc309d3793ef7174261c57dcf8db17bb3e0774b9efcc3216d3e3ebf47a91799d",
+    "integrated_sha256": "cc309d3793ef7174261c57dcf8db17bb3e0774b9efcc3216d3e3ebf47a91799d",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/SequencePivot.lean",
+    "path": "research/unconventional-20261126/operator/SequencePivot.lean",
+    "source_sha256": "68c47e1ec8ef0a084286f528862f85cc22ff9bb8d6e539c67009d2b556d9810e",
+    "integrated_sha256": "68c47e1ec8ef0a084286f528862f85cc22ff9bb8d6e539c67009d2b556d9810e",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/SECOND_WAVE_FREEZE.json",
+    "path": "reports/unconventional-20261126/SPECTRAL_SECOND_FREEZE.json",
+    "source_sha256": "3ca74d2ffddc3786b3124ccde5acc56699ee8b6fd9dc7bf051679601edd8b354",
+    "integrated_sha256": "3ca74d2ffddc3786b3124ccde5acc56699ee8b6fd9dc7bf051679601edd8b354",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/REFERENCE_BARRIER.md",
+    "path": "research/unconventional-20261126/arithmetic/REFERENCE_BARRIER.md",
+    "source_sha256": "eb199ed35beec4322fb6be74df17dc4e10e62ef3cb26ad8519e700de4d2f78e1",
+    "integrated_sha256": "eb199ed35beec4322fb6be74df17dc4e10e62ef3cb26ad8519e700de4d2f78e1",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/ReferenceBarrier.lean",
+    "path": "research/unconventional-20261126/arithmetic/ReferenceBarrier.lean",
+    "source_sha256": "ff886174636c1f9de1dfaa671503fedc1a4a37de112977e61debca78c136d89b",
+    "integrated_sha256": "7588a3a1793cab36bce802ffc9b7bf868feb52436a8ee2a030463152728f5154",
+    "integration_change": "Add missing local theorem axiom audits; statements and proofs unchanged."
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/check_reference.py",
+    "path": "research/unconventional-20261126/arithmetic/check_reference.py",
+    "source_sha256": "04984269e729074a8766f7e3cd914097c1dc52e1184e68dcb44378e481f3525b",
+    "integrated_sha256": "04984269e729074a8766f7e3cd914097c1dc52e1184e68dcb44378e481f3525b",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/REFERENCE_CONTROLS.json",
+    "path": "reports/unconventional-20261126/REFERENCE_CONTROLS.json",
+    "source_sha256": "8d442c8332903f8d1df93c57a0a36dd6bf7cbbe34770bcba4179ad2e97c21dd6",
+    "integrated_sha256": "8d442c8332903f8d1df93c57a0a36dd6bf7cbbe34770bcba4179ad2e97c21dd6",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/ESCAPE_TRACE_PROFILE.md",
+    "path": "research/unconventional-20261126/trace/ESCAPE_TRACE_PROFILE.md",
+    "source_sha256": "66148a2ad0e8032007ac0f6ecf392daa13014781ca45345c4a72a112c5d306cc",
+    "integrated_sha256": "66148a2ad0e8032007ac0f6ecf392daa13014781ca45345c4a72a112c5d306cc",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/FIRST_HIT_SPECTRUM.md",
+    "path": "research/unconventional-20261126/trace/FIRST_HIT_SPECTRUM.md",
+    "source_sha256": "ec2bb0b865c4ea15d4167c1aa265dbd5c56448652adac4f53271afdc14218c85",
+    "integrated_sha256": "ec2bb0b865c4ea15d4167c1aa265dbd5c56448652adac4f53271afdc14218c85",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/TraceFront.lean",
+    "path": "research/unconventional-20261126/trace/TraceFront.lean",
+    "source_sha256": "004d26b30f9f003cf00d7d1221812e975fcc5f20827ef4febe17094d42db5889",
+    "integrated_sha256": "ede97ff0f04e2b1f817a0911f36a82c067c23e8e642b1ea1e75e679fee36e042",
+    "integration_change": "Add all local theorem axiom audits; proof bodies unchanged."
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/check_trace.py",
+    "path": "research/unconventional-20261126/trace/check_trace.py",
+    "source_sha256": "5d4756916d212dfcf7351ca2294535c9db9635dc4e463ccb9520dea989a0fa9c",
+    "integrated_sha256": "5d4756916d212dfcf7351ca2294535c9db9635dc4e463ccb9520dea989a0fa9c",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/TRACE_CONTROLS.json",
+    "path": "reports/unconventional-20261126/TRACE_CONTROLS.json",
+    "source_sha256": "75157365b67ee55e6d2a1f6bfa8bcaea342f77a83b38f563525013f71c06049b",
+    "integrated_sha256": "75157365b67ee55e6d2a1f6bfa8bcaea342f77a83b38f563525013f71c06049b",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/EXACT_BERGMAN_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/EXACT_BERGMAN_PRESSURE.md",
+    "source_sha256": "5e93fc264fdbf9fe287c90531bab5875d1d7f9745f2ecd4419e9be9edcf5194c",
+    "integrated_sha256": "5e93fc264fdbf9fe287c90531bab5875d1d7f9745f2ecd4419e9be9edcf5194c",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/ARITHMETIC_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/ARITHMETIC_PRESSURE.md",
+    "source_sha256": "70fd2a202921d52b0e995f91a04d55557a4ddc505ae51c6624411a7beda31648",
+    "integrated_sha256": "70fd2a202921d52b0e995f91a04d55557a4ddc505ae51c6624411a7beda31648",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/FINITE_LOCAL_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/FINITE_LOCAL_PRESSURE.md",
+    "source_sha256": "dbdd34c90a53aae0c4c731e238bbab00b1a838c3d2d5d6cdfaf8529b2b3a1a32",
+    "integrated_sha256": "dbdd34c90a53aae0c4c731e238bbab00b1a838c3d2d5d6cdfaf8529b2b3a1a32",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/PRESSURE_VARIATIONAL_REVIEW.md",
+    "path": "reports/unconventional-20261126/reviews/PRESSURE_VARIATIONAL_REVIEW.md",
+    "source_sha256": "a756fd413f547bd9c2fab5eaead9651ac24c68e0a1d98f9ff1cf67066b757b46",
+    "integrated_sha256": "a756fd413f547bd9c2fab5eaead9651ac24c68e0a1d98f9ff1cf67066b757b46",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/PRESSURE_ENTROPY_REVIEW.md",
+    "path": "reports/unconventional-20261126/reviews/PRESSURE_ENTROPY_REVIEW.md",
+    "source_sha256": "57d07e5f7a6906d32ff45754eef5f01e298a5d072a15111aa7320adcf599f2d0",
+    "integrated_sha256": "57d07e5f7a6906d32ff45754eef5f01e298a5d072a15111aa7320adcf599f2d0",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/review_pressure_entropy.py",
+    "path": "reports/unconventional-20261126/reviews/review_pressure_entropy.py",
+    "source_sha256": "22255746b3d199a7a953b09c080040c8341d6ce1da6ff7f2b3e29b2851a2ddd9",
+    "integrated_sha256": "22255746b3d199a7a953b09c080040c8341d6ce1da6ff7f2b3e29b2851a2ddd9",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/PRESSURE_REVIEW_CONTROLS.json",
+    "path": "reports/unconventional-20261126/PRESSURE_REVIEW_CONTROLS.json",
+    "source_sha256": "45725ceff45c7561c8f894f2b64adfdf46d30457cc79886a95d75e4a9ab6d535",
+    "integrated_sha256": "45725ceff45c7561c8f894f2b64adfdf46d30457cc79886a95d75e4a9ab6d535",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/LOCALIZED_SURVIVOR_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/LOCALIZED_SURVIVOR_PRESSURE.md",
+    "source_sha256": "07aaa763d404b5b034e4b5db0337ad65a99408fdd592179164332959fbc8b58d",
+    "integrated_sha256": "07aaa763d404b5b034e4b5db0337ad65a99408fdd592179164332959fbc8b58d",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/WEIGHTED_SHORTCUT_PRESSURE.md",
+    "path": "research/unconventional-20261126/operator/WEIGHTED_SHORTCUT_PRESSURE.md",
+    "source_sha256": "522f38875d35236142e9dd2360876c6123aad07abd9afe6e229a4c614d83c77a",
+    "integrated_sha256": "522f38875d35236142e9dd2360876c6123aad07abd9afe6e229a4c614d83c77a",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/PressureWindows.lean",
+    "path": "research/unconventional-20261126/operator/PressureWindows.lean",
+    "source_sha256": "b3f09cb83531f1056bdfa363de85edc26e91a511b4bb7d2aa89cf0386e431846",
+    "integrated_sha256": "b3f09cb83531f1056bdfa363de85edc26e91a511b4bb7d2aa89cf0386e431846",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/UNIFORM_DECODER.md",
+    "path": "research/unconventional-20261126/trace/UNIFORM_DECODER.md",
+    "source_sha256": "05970948ccf4bd8f1cde79d2ce63fa21cad3875bd96739ea4c681d959f11e24b",
+    "integrated_sha256": "05970948ccf4bd8f1cde79d2ce63fa21cad3875bd96739ea4c681d959f11e24b",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/EFFECTIVE_DECODER.md",
+    "path": "research/unconventional-20261126/trace/EFFECTIVE_DECODER.md",
+    "source_sha256": "48a714673c1c55376cf8e106d54ab7a06458bcebafe997478e42293eb118a35c",
+    "integrated_sha256": "b355dcc2779f50ef1ee51893fd2d979e763109e50be0e41b545657c61b24af47",
+    "integration_change": "Repair local control-record link for the integrated directory layout; proof unchanged."
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/check_decoder.py",
+    "path": "research/unconventional-20261126/trace/check_decoder.py",
+    "source_sha256": "48c26e07a89dd25dd1fbe0e6aa9113017e540fedd4f2f5f47a8a9a4f870aee7e",
+    "integrated_sha256": "48c26e07a89dd25dd1fbe0e6aa9113017e540fedd4f2f5f47a8a9a4f870aee7e",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/SURVIVOR_REVIEW.md",
+    "path": "reports/unconventional-20261126/reviews/SURVIVOR_REVIEW.md",
+    "source_sha256": "9af4564cc6e48a54cbe16ebe1815e845bfb687ca9b5a5d14c584942149a0eb99",
+    "integrated_sha256": "9af4564cc6e48a54cbe16ebe1815e845bfb687ca9b5a5d14c584942149a0eb99",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/review_survivor.py",
+    "path": "reports/unconventional-20261126/reviews/review_survivor.py",
+    "source_sha256": "8d3439fe51e2bea699d9d1ba1fc9c0f62225c17f57e95fee1b99a8c39d9830d8",
+    "integrated_sha256": "8d3439fe51e2bea699d9d1ba1fc9c0f62225c17f57e95fee1b99a8c39d9830d8",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/SURVIVOR_REVIEW_CONTROLS.json",
+    "path": "reports/unconventional-20261126/SURVIVOR_REVIEW_CONTROLS.json",
+    "source_sha256": "d1f6e5d5e20e2cdce93bb17377331a84fc101d3d4ac36c0773e6df175219f2f6",
+    "integrated_sha256": "d1f6e5d5e20e2cdce93bb17377331a84fc101d3d4ac36c0773e6df175219f2f6",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/DECODER_CONTROLS.json",
+    "path": "reports/unconventional-20261126/DECODER_CONTROLS.json",
+    "source_sha256": "010064c5a682e7f44072451a9d5c14fea55877d8748659f94853f3dd50973f1f",
+    "integrated_sha256": "010064c5a682e7f44072451a9d5c14fea55877d8748659f94853f3dd50973f1f",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/ORDINARY_STATIONARY_EXCURSIONS.md",
+    "path": "research/unconventional-20261126/arithmetic/ORDINARY_STATIONARY_EXCURSIONS.md",
+    "source_sha256": "845c68e57b8fc0dcd80ac24bba64921b373f0c937bc9f705a855e88207bf63de",
+    "integrated_sha256": "845c68e57b8fc0dcd80ac24bba64921b373f0c937bc9f705a855e88207bf63de",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/FusionControl.lean",
+    "path": "research/unconventional-20261126/arithmetic/FusionControl.lean",
+    "source_sha256": "893f6ca82bae5ec3ffc6c48f4ffadd18646ea27aa21338e489be0663401e91e3",
+    "integrated_sha256": "6ada3c333de75f7f390740d273c482cee1c81d24a8a5dde857767deddaeeaeea",
+    "integration_change": "Add missing private theorem axiom requests; proofs unchanged."
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/check_excursions.py",
+    "path": "research/unconventional-20261126/arithmetic/check_excursions.py",
+    "source_sha256": "3d066381613cfdd6bfd29d058b24db97da34cdf57fa08b03d5f0764d196070e3",
+    "integrated_sha256": "3d066381613cfdd6bfd29d058b24db97da34cdf57fa08b03d5f0764d196070e3",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/EXCURSION_CONTROLS.json",
+    "path": "reports/unconventional-20261126/EXCURSION_CONTROLS.json",
+    "source_sha256": "bea5a17991aab455a01183455804844208bbcb042dc56e5bb4770d5adaf36fa9",
+    "integrated_sha256": "bea5a17991aab455a01183455804844208bbcb042dc56e5bb4770d5adaf36fa9",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/integer-coupling-second-wave/FINAL_SHA256.txt",
+    "path": "reports/unconventional-20261126/ARITHMETIC_SECOND_FREEZE.txt",
+    "source_sha256": "d461a3d0040603f8dd7d35e52d1950429bb3b3cd9f93937ebd9c71bab881d859",
+    "integrated_sha256": "d461a3d0040603f8dd7d35e52d1950429bb3b3cd9f93937ebd9c71bab881d859",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/FirstDescentFloor.lean",
+    "path": "research/unconventional-20261126/arithmetic/FirstDescentFloor.lean",
+    "source_sha256": "82615f3843df529dd9e227325d49778c04f7c2ddc537611bee80196e6f741f90",
+    "integrated_sha256": "82615f3843df529dd9e227325d49778c04f7c2ddc537611bee80196e6f741f90",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/EXCURSION_INDEPENDENT_REVIEW.md",
+    "path": "reports/unconventional-20261126/reviews/EXCURSION_INDEPENDENT_REVIEW.md",
+    "source_sha256": "a3bad58e0925865b165ade38828b852524913194c63851a09da76aa90322e4f5",
+    "integrated_sha256": "a3bad58e0925865b165ade38828b852524913194c63851a09da76aa90322e4f5",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/check_excursion_review.py",
+    "path": "reports/unconventional-20261126/reviews/review_excursion.py",
+    "source_sha256": "05c227296ec87bdc51fad8ad2f3623bb565d023b9bd15b56bb93893344e6fdd8",
+    "integrated_sha256": "05c227296ec87bdc51fad8ad2f3623bb565d023b9bd15b56bb93893344e6fdd8",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/EXCURSION_REVIEW_CONTROLS.json",
+    "path": "reports/unconventional-20261126/EXCURSION_REVIEW_CONTROLS.json",
+    "source_sha256": "07ca7564a3030765d5f2c7a7a0dc225c0f8c51e7e5f93627c2fad00e5186e22d",
+    "integrated_sha256": "07ca7564a3030765d5f2c7a7a0dc225c0f8c51e7e5f93627c2fad00e5186e22d",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/spectral-pressure-second-wave/SPECTRAL_SECOND_WAVE_FINAL.json",
+    "path": "reports/unconventional-20261126/SPECTRAL_SECOND_FINAL.json",
+    "source_sha256": "54d189806a90059677d215af34230a21e3c85e8b4b9ec10c4156a67d7fe12f36",
+    "integrated_sha256": "54d189806a90059677d215af34230a21e3c85e8b4b9ec10c4156a67d7fe12f36",
+    "integration_change": null
+  },
+  {
+    "source": "/workspace/scratch/440f31b72de6/global-trace-second-wave/SECOND_WAVE_HANDOFF.json",
+    "path": "reports/unconventional-20261126/TRACE_SECOND_FREEZE.json",
+    "source_sha256": "3c35ff0acb7740d95eacd76944db9a9caaaf3c255d4e54b9a252692cff06f6d5",
+    "integrated_sha256": "3c35ff0acb7740d95eacd76944db9a9caaaf3c255d4e54b9a252692cff06f6d5",
+    "integration_change": null
+  }
+]

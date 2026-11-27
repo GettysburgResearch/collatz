@@ -1,0 +1,166 @@
+import Std
+
+/-! Finite combinatorial and affine components of the sparse centered-depth argument.
+This module does not assert the analytic cycle alternative. -/
+namespace SparseGradeProjection
+
+def binaryEdge (up : Bool) (x y : Nat) : Prop :=
+  if up then x ≤ y ∧ y ≤ x + 1 else y ≤ x ∧ x ≤ y + 1
+
+def positiveEdge (up : Bool) (x y : Nat) : Prop :=
+  if up then y ≤ x + 1 else y ≤ x
+
+/-- Crossing down from a high fractional phase wraps the rotation.
+Crossing up into a high fractional phase does not wrap it. -/
+def compatible (up highLeft highRight : Bool) : Prop :=
+  (highLeft = true ∧ highRight = false → up = true) ∧
+  (highLeft = false ∧ highRight = true → up = false)
+
+def nextPhase (x alpha : Rat) : Rat :=
+  if 1 ≤ x+alpha then x+alpha-1 else x+alpha
+
+theorem rotation_flags (x alpha c : Rat) (ha : 0 ≤ alpha) (hb : alpha ≤ 1) :
+    compatible (decide (1 ≤ x+alpha)) (decide (c < x)) (decide (c < nextPhase x alpha)) := by
+  by_cases wrap : 1 ≤ x+alpha
+  · simp [compatible, nextPhase, wrap]
+    grind
+  · simp [compatible, nextPhase, wrap]
+    grind
+
+def project (high : Bool) (z : Nat) : Nat := if high then 0 else min z 1
+
+theorem binary_edge_project {up highLeft highRight : Bool} {x y : Nat}
+    (loc : compatible up highLeft highRight) (step : binaryEdge up x y) :
+    binaryEdge up (project highLeft x) (project highRight y) := by
+  cases up <;> cases highLeft <;> cases highRight <;>
+    simp_all [compatible, binaryEdge, project] <;> omega
+
+theorem positive_edge_project {up highLeft highRight : Bool} {x y : Nat}
+    (loc : compatible up highLeft highRight) (step : positiveEdge up x y) :
+    positiveEdge up (project highLeft x) (project highRight y) := by
+  cases up <;> cases highLeft <;> cases highRight <;>
+    simp_all [compatible, positiveEdge, project] <;> omega
+
+/-- Weighted powers of two on a segment. Taking weights as powers of three gives
+the ordinary finite Collatz numerator. -/
+def numerator {ι : Type} (sites : List ι) (weight : ι → Int) (date : ι → Nat) : Int :=
+  (sites.map (fun i => weight i * (2 : Int)^(date i))).sum
+
+/-- On each varying coordinate the raw dates share the same additive entrance
+offset from the projected dates. At every other coordinate both dates have
+been recorded and hence agree between any two paths of the conditioned family. -/
+def sameRecord {ι : Type} (offset : Nat) (raw projected rawRef projectedRef : ι → Nat)
+    (i : ι) : Prop :=
+  (raw i = offset + projected i ∧ rawRef i = offset + projectedRef i) ∨
+  (raw i = rawRef i ∧ projected i = projectedRef i)
+
+private theorem term_translation {ι : Type} {offset : Nat}
+    {raw projected rawRef projectedRef : ι → Nat} (weight : ι → Int) (i : ι)
+    (hi : sameRecord offset raw projected rawRef projectedRef i) :
+    weight i * (2 : Int)^(raw i) - 2^offset * (weight i * 2^(projected i)) =
+    weight i * (2 : Int)^(rawRef i) - 2^offset * (weight i * 2^(projectedRef i)) := by
+  rcases hi with ⟨hr, hs⟩ | ⟨hr, hs⟩
+  · rw [hr, hs, Int.pow_add, Int.pow_add]
+    grind
+  · rw [hr, hs]
+
+theorem numerator_translation {ι : Type} {offset : Nat} (sites : List ι)
+    (weight : ι → Int) {raw projected rawRef projectedRef : ι → Nat}
+    (record : ∀ i ∈ sites, sameRecord offset raw projected rawRef projectedRef i) :
+    numerator sites weight raw - (2 : Int)^offset * numerator sites weight projected =
+    numerator sites weight rawRef - (2 : Int)^offset * numerator sites weight projectedRef := by
+  induction sites with
+  | nil => simp [numerator]
+  | cons s ss ih =>
+    have a := term_translation weight s (record s (by simp))
+    have b := ih (fun i hi => record i (by simp [hi]))
+    simp only [numerator, List.map_cons, List.sum_cons] at b ⊢
+    grind
+
+/-- An affine translation with positive common scale preserves balanced pair sums. -/
+theorem balanced_four_iff {a b c d u v w x shift scale : Int} (hs : scale > 0)
+    (ha : a = scale*u + shift) (hb : b = scale*v + shift)
+    (hc : c = scale*w + shift) (hd : d = scale*x + shift) :
+    a+b=c+d ↔ u+v=w+x := by
+  rw [ha,hb,hc,hd]
+  constructor
+  · intro h
+    have h' : scale*(u+v) = scale*(w+x) := by grind
+    exact Int.eq_of_mul_eq_mul_left (Int.ne_of_gt hs) h'
+  · intro h
+    have h' := congrArg (fun t : Int => scale*t) h
+    grind
+
+/-- Cumulative budget used in the weak-composition encoding of a marked run. -/
+def runCost (entry : Nat) : List Nat → Nat
+  | [] => 0
+  | y :: ys => 1 + entry - y + runCost y ys
+
+def endGrade (entry : Nat) : List Nat → Nat
+  | [] => entry
+  | y :: ys => endGrade y ys
+
+def riseBound (entry : Nat) : List Nat → Prop
+  | [] => True
+  | y :: ys => y ≤ entry + 1 ∧ riseBound y ys
+
+theorem run_cost_exact (entry : Nat) (ys : List Nat) (h : riseBound entry ys) :
+    runCost entry ys + endGrade entry ys = ys.length + entry := by
+  induction ys generalizing entry with
+  | nil => simp [runCost, endGrade]
+  | cons y ys ih =>
+    have hr : y ≤ entry + 1 ∧ riseBound y ys := h
+    have hrest := ih y hr.2
+    simp only [runCost, endGrade, List.length_cons]
+    omega
+
+theorem marked_run_budget (entry : Nat) (ys : List Nat) (h : riseBound entry ys)
+    (clean : entry ≤ 1) : runCost entry ys ≤ ys.length + 1 := by
+  have hsum := run_cost_exact entry ys h
+  omega
+
+/-- A two-edge mechanical-up run. Complementary mechanical-down edges at
+both sides still hold after lowering each nonfinal value to its suffix minimum. -/
+theorem repair_two_edges (left x y z right : Nat) (hL : left ≤ 1) (hx : x ≤ 1)
+    (hy : y ≤ 1) (hz : z ≤ 1)
+    (enter : binaryEdge false left x) (leave : binaryEdge false z right) :
+    binaryEdge false left (min x (min y z)) ∧
+    binaryEdge true (min x (min y z)) (min y z) ∧
+    binaryEdge true (min y z) z ∧ binaryEdge false z right := by
+  simp [binaryEdge] at * <;> omega
+
+theorem repair_one_edge (left x y right : Nat) (hL : left ≤ 1) (hx : x ≤ 1)
+    (hy : y ≤ 1)
+    (enter : binaryEdge false left x) (leave : binaryEdge false y right) :
+    binaryEdge false left (min x y) ∧ binaryEdge true (min x y) y ∧
+    binaryEdge false y right := by
+  simp [binaryEdge] at * <;> omega
+
+/-- Rational budget after the geometric and entropy estimates have been supplied.
+Here the lower bound for log₂ 3 is 19/12. -/
+def budget (M eta tau delta gamma code : Rat) : Prop :=
+  (0 < 1 - 2*delta - delta/tau) ∧
+  (0 < eta - delta*(3+eta) - (4+eta)*tau/(19/12)) ∧
+  ((M+delta) * ((5*eta/(19/12) + gamma*(1-eta) +
+    (4+eta)*code*tau/(19/12))/(3+eta)) < 1)
+
+instance (M e t d g c : Rat) : Decidable (budget M e t d g c) :=
+  inferInstanceAs (Decidable (_ ∧ _ ∧ _))
+
+theorem binary_mixed_budget : budget 3 (1/10000) (1/80000) (1/100000)
+    (999/1000) 24 := by decide +kernel
+
+theorem any_gap_budget : budget 3 (1/1000000) (1/4000000) (1/10000000)
+    (19999/20000) 28 := by decide +kernel
+
+theorem classical_four_budget : budget (5116201/1000000) (1/1000) (1/9000)
+    (1/10000) (23/40) 20 := by decide +kernel
+
+theorem classical_terminal_budget :
+    ((5116201/1000000+1/5000 : Rat)*(3/10+18/4000)/(19/12)) < 1 := by decide +kernel
+
+theorem any_gap_log_comparison : (5 : Nat)^55037*2^529926 < 3^414987 := by decide +kernel
+
+theorem classical_log_comparison : (2 : Nat)^14 < 3^9 := by decide +kernel
+
+end SparseGradeProjection

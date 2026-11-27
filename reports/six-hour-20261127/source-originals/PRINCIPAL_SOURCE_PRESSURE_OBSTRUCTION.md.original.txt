@@ -1,0 +1,89 @@
+# The principal-source moments and a fixed-floor obstruction to separating the gate
+
+For the ordinary positive Syracuse map $U(x)=(3x+1)/2^{v_2(3x+1)}$, let $w$ be a length-$n$ word of independent positive geometric letters, with original probability $2^{-A}$ for total $A$. Write $m=m(w)$ for its least positive odd dyadic seed, $x_j=U^jm$ and $y=x_n$. Put $G=\sum_{j<n}2^{A_j}/3^{j+1}$. For $z\ge0$ define
+$$
+ Z_n(z)=\frac{2^A}{m+zG},\qquad
+ W_n=\{4A_j\le7j\text{ for every }1\le j\le n\}.
+$$
+Then the global principal trace is exactly $\mathbb E[\mathbf1_{W_n}Z_n(z)]$. This note gives an exact unconditional moment exponent and an obstruction on genuine positive ordinary trajectories to multiplying an independent rare-gate estimate by a source norm. It gives no upper bound for the needed joint gate-and-source tail.
+
+## Exact unfiltered moments
+
+The dyadic cylinder identity and positive product give
+$$
+ \frac12<Z_n(0)
+  =\frac{3^n}{y}\prod_{j<n}\left(1+\frac1{3x_j}\right)\le4^n .
+$$
+The left side uses $m<2^{A+1}$. Equality at the upper bound requires $x_j=y=1$ and is attained on the all-two word of probability $4^{-n}$.
+
+Moreover $\mathbb E Z_n(0)=\sum_w1/m(w)\le n+1$, without any gate. Indeed a parent of total $A$ retains its own least seed in at most one child. Its other distinct children have least seeds $m+2^{A+1}j$ at positive indices $j$ whose reciprocal sum is at most two, by the exact sibling lemma in **Global prefix trace**. Their total reciprocal cost is therefore at most $2^{-A}$. The unfiltered parent probabilities sum to one at each level, proving the bound from the initial value one.
+
+For every real $p$,
+$$
+ \lim_{n\to\infty}\frac1n\log\mathbb E[Z_n(0)^p]
+  =\max(0,p-1)\log4. \tag{1}
+$$
+For $p>1$, the lower and upper bounds on the moment are respectively $4^{(p-1)n}$ and $(n+1)4^{(p-1)n}$. For $0\le p\le1$, use $Z_n(0)>1/2$ and concavity of the $p$th power. For $p<0$, Jensen gives the lower bound $(n+1)^p$ and the pointwise floor gives the upper bound $2^{-p}$.
+
+Removing any fixed finite set of starting integers preserves the exponent in (1). The measure of each removed cylinder is at most $2^{-n}$. For $p>1$ choose $a=(4^j-1)/3$ outside that set: its true word begins with $2j$, and its next state is one. The word consisting of this initial letter and $n-1$ twos has principal seed $a$ for all sufficiently large $n$, probability a fixed positive multiple of $4^{-n}$ and payoff a fixed positive multiple of $4^n$. The other $p$ follow by the same bounds after conditioning on the retained event of probability tending to one.
+
+In particular $\Pr(W_n)\ge2^{-n}$ from the all-one word, so for every $p>1$,
+$$
+ \Pr(W_n)^{1-1/p}\|Z_n(0)\|_p\ge2^{\,n(1-1/p)}.
+$$
+Even allowing $p$ to depend on $n$ cannot make this two-factor Hölder upper estimate vanish. The exact gate is unchanged in this comparison.
+
+## Removing every small site from a full physical window
+
+Fix a physical cutoff $H\ge1$ and let $F_{H,n}$ require $x_j>H$ for $0\le j\le n$ on the *actual principal* trajectory of $w$. For each fixed $z\ge0$ and $p\ge4/3$, the separated expression
+$$
+ \Pr(W_n)^{\,1-1/p}
+ \left(\mathbb E[\mathbf1_{F_{H,n}} Z_n(z)^p]\right)^{1/p}
+$$
+grows exponentially in $n$. This includes $z=1$, the escape trace. All the windows furnishing the lower bound can be chosen to reach one on the very next odd step after the measured window. Their existence therefore holds regardless of the outcome of the Collatz conjecture.
+
+Here is an exact eight-edge inverse construction with the original word weights. From a positive ternary unit $y$ use a reverse letter $1\le e\le10$ if $x=(2^e y-1)/3$ is an integral ternary unit. Its weight is $2^{-e}$. Group eight such steps and retain totals $A\ge13$. For $v(y)=1$ at $y\equiv1\bmod3$ and $v(y)=2$ at $y\equiv2\bmod3$, the finite calculation proves at every unit $y\bmod3^9$
+$$
+ \sum_{\rm retained\ blocks}2^{-A}v(x_{\rm end})
+   \ge c^8 v(y),\qquad c=2369/10000. \tag{2}
+$$
+With $t$ steps remaining the recursion knows $y\bmod3^{t+1}$ and the still-needed total $k$. For each $e$, compute $s=(2^ey-1)\bmod3^{t+1}$ and retain $3\mid s$, $9\nmid s$. Recurse on $(t-1,s/3,\max(0,k-e))$ with exact integer multiplier $2^{10-e}$. At $t=0$ give weight $v(y)$ when $k=0$ and zero otherwise. The initial sum divided by $2^{80}v(y)$ has exactly computed minimum
+$$
+ \frac{375482519645015079}{37778931862957161709568}>c^8
+$$
+over all 13,122 units, attained at $y=10121$ among the tested representatives.
+
+Choose an odd unit $y_0>256+32(H+1)$ of the form $(4^j-1)/3$ with $3\nmid j$, so $U(y_0)=1$. Every reverse letter gives $x+1\ge(2/3)(y+1)$. Since $(3/2)^8<32$, the intermediate states in a block beginning at $y\ge y_0$ all exceed $H$. At the end of a block
+$$
+ x_{\rm end}=\frac{2^A}{3^8}(y-C),\qquad
+ 0<C=\sum_{l=1}^8\frac{3^{l-1}}{2^{e_1+\cdots+e_l}}
+       \le (3/2)^8-1<25.
+$$
+Since $2^A\ge8192>6561=3^8$ and $(1-6561/8192)256>25$, every block increases its physical end state. Iterating (2) at the actual integer endpoints gives total original word weight at least $c^{8L}v(y_0)/2$ for $L$ complete blocks. For up to seven leftover inverse steps choose $e\in\{2,4\}$ at a class-one unit or $e\in\{3,5\}$ at a class-two unit. Both choices in the appropriate pair give integers and at most one is divisible by three; the chosen step keeps the physical predecessor at least as large. The total weight for all lengths $n$ is consequently at least a positive fixed constant times $c^n$. Distinct sequences of reverse letters give distinct forward words at this common terminal.
+
+Every such actual positive start $x$ satisfies $x<(2^Ay_0)/3^n$. At all sufficiently large $n$ this puts it below $2^{A+1}$, so it is precisely the principal dyadic representative. The affine identity $2^Ay_0=3^n(m+G)$ then gives
+$$
+ Z_n(z)\ge\frac{3^n}{y_0\max(1,z)}.
+$$
+These are estimates on the unfiltered physical source, including its full original probabilities.
+
+For the exact gate probability take length $512$ and total $896$. Each composition has a cyclic rotation satisfying all $4A_j\le7j$, by starting at a maximum of the zero-total debt $4A_j-7j$. Each such orbit has at most $512$ elements. Concatenating these accepted zero-debt blocks and filling the remaining letters with ones gives $\Pr(W_n)\ge C_0(19/20)^n$, because
+$$
+ \binom{895}{511}/(512\cdot2^{896})>(19/20)^{512}.
+$$
+Thus the $p$th power of the separated expression has exponential base at least $c\,3^p(19/20)^{p-1}$. At $p=4/3$ the cube of this base equals $20461327280451/20000000000000>1$, and the base increases with $p$. This proves the all-floor claim. The inverse blocks are deliberately used in an unconditional source norm. They need not individually pass $W_n$. This distinction is exactly the limitation of the separated estimate.
+
+## Two compatible completions of genuinely gated positive windows
+
+The following compactness example uses only actual positive $3x+1$ paths over every measured finite window. Let $w=(1,2,2)^k$, $n=3k$, $A=5k$. It satisfies every gate prefix. The rational starting point $23/5$ has the three-cycle $23/5,37/5,29/5$ with these valuations. Let $u_k\in\{1,2,3,4\}$ be the unique coefficient making $23+u_k2^{5k+1}$ divisible by five. Then
+$$
+ m_k=\frac{23+u_k2^{5k+1}}5,\qquad
+ U^{3k}(m_k)=y_k=\frac{23+2u_k27^k}{5}.
+$$
+Indeed $m_k$ is odd and lies strictly below $2^{5k+1}$. Its difference from the rational seed has dyadic valuation $5k+1$; after any partial string of letters the offset is multiplied by $3^j2^{-A_j}$ and has enough further powers of two for every prescribed ordinary valuation. After $3k$ dates this gives the displayed terminal. All intermediate physical offsets are at least $2u_k27^k/5$: over a complete lap they shrink by $27/32$, and within a lap the partial multipliers $1,3/2,9/8$ are at least one.
+
+The positive integer starts therefore form nested original dyadic source cylinders converging to $23/5$ in $\mathbb Z_2$, while their actual principal terminals form nested ternary residue cylinders converging to the same $23/5$ in $\mathbb Z_3$. The ratio $3^{3k}/y_k$ stays between two positive constants, all physical heights in the windows tend uniformly to infinity, and the reciprocal principal contributions tend to zero. The compatible finite words have no single ordinary positive start extending them all, since their common dyadic completion is $23/5$. Thus compatible source and terminal projections, the full prefix gate, uniformly high genuine positive finite trajectories and a positive normalized terminal scale do not by themselves supply the fixed ordinary mass required in the global trace.
+
+The sibling input is from PR201 **Global prefix trace**, equations (4), (7), (8), with the all-word specialization used only for (1). The new calculations establish failure of marginal-moment and compactness arguments. They leave the all-depth centered and escaping principal traces open. [PR201 global prefix trace](https://github.com/GettysburgResearch/collatz/blob/807d67ab049f1646398d8ca8c20948cdc1d87742/research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md)
+
+Prepared by the independent all-height reviewer on 27 November 2026 UTC.

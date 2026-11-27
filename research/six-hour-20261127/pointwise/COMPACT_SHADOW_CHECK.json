@@ -1,0 +1,24 @@
+{
+  "critical_prefixes": 2903,
+  "certified_primitive_by_horizon": {
+    "1": 0,
+    "2": 0,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 8,
+    "7": 13,
+    "8": 19,
+    "9": 38,
+    "10": 64,
+    "11": 128,
+    "12": 226,
+    "13": 367,
+    "14": 734,
+    "15": 1295
+  },
+  "ordinary_lift_checks": 5806,
+  "nontrivial_reductions": 227,
+  "largest_removed_factor": 893,
+  "prefix_at_largest": "111010111001"
+}

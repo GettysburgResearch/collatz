@@ -1,0 +1,54 @@
+{
+  "exact_exponent_comparisons": 3,
+  "grade_scans": [
+    {
+      "even_at_split": 1477,
+      "genuine_grade_splits": 3257,
+      "input_cutoff": 19999,
+      "mark": 1,
+      "maximum_D": 59,
+      "maximum_lap_count": 78,
+      "odd_clock_cap": 240,
+      "odd_period": 1,
+      "outcomes": {
+        "mark": 3258,
+        "open": 0,
+        "repeat": 6742
+      },
+      "period_divisions": 1
+    },
+    {
+      "even_at_split": 790,
+      "genuine_grade_splits": 1630,
+      "input_cutoff": 19999,
+      "mark": 5,
+      "maximum_D": 21,
+      "maximum_lap_count": 55,
+      "odd_clock_cap": 240,
+      "odd_period": 2,
+      "outcomes": {
+        "mark": 3238,
+        "open": 0,
+        "repeat": 6762
+      },
+      "period_divisions": 3
+    },
+    {
+      "even_at_split": 247,
+      "genuine_grade_splits": 491,
+      "input_cutoff": 19999,
+      "mark": 17,
+      "maximum_D": 11,
+      "maximum_lap_count": 12,
+      "odd_clock_cap": 240,
+      "odd_period": 7,
+      "outcomes": {
+        "mark": 3504,
+        "open": 0,
+        "repeat": 6496
+      },
+      "period_divisions": 11
+    }
+  ],
+  "one_lap_varying_D_family_instances": 128
+}

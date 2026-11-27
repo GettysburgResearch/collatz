@@ -1,0 +1,95 @@
+{
+  "abstract_convex_multisheet_controls": {
+    "counts": {
+      "chronological_lags_enumerated": 27242,
+      "compatible_lags_on_artificial_convex_labels": 1492,
+      "genuine_modular_clock_schedules": 84,
+      "nonempty_multicover_schedules": 76,
+      "wide_fibre_telescope_interfaces": 542804
+    },
+    "examples_of_modular_convex_chains_only": [
+      {
+        "P": 92,
+        "T": 1,
+        "chains": 4,
+        "d": 5,
+        "g": 4,
+        "h": 39,
+        "q": 23
+      },
+      {
+        "P": 148,
+        "T": 1,
+        "chains": 4,
+        "d": 5,
+        "g": 4,
+        "h": 67,
+        "q": 37
+      },
+      {
+        "P": 172,
+        "T": 1,
+        "chains": 4,
+        "d": 5,
+        "g": 4,
+        "h": 31,
+        "q": 43
+      },
+      {
+        "P": 188,
+        "T": 1,
+        "chains": 4,
+        "d": 5,
+        "g": 4,
+        "h": 101,
+        "q": 47
+      },
+      {
+        "P": 102,
+        "T": 1,
+        "chains": 6,
+        "d": 7,
+        "g": 6,
+        "h": 80,
+        "q": 17
+      },
+      {
+        "P": 138,
+        "T": 1,
+        "chains": 6,
+        "d": 7,
+        "g": 6,
+        "h": 62,
+        "q": 23
+      },
+      {
+        "P": 186,
+        "T": 1,
+        "chains": 6,
+        "d": 7,
+        "g": 6,
+        "h": 50,
+        "q": 31
+      },
+      {
+        "P": 222,
+        "T": 1,
+        "chains": 6,
+        "d": 7,
+        "g": 6,
+        "h": 104,
+        "q": 37
+      }
+    ]
+  },
+  "physical_nonasymptotic_controls": {
+    "real_triple_interfaces": 177360,
+    "real_wrapped_triples": 135570,
+    "true_multisheet_orbits": 75,
+    "true_rational_orbits": 105
+  },
+  "signed_seam_and_AP_controls": {
+    "explicit_physical_divisor_AP_steps": 21168,
+    "integral_seam_transfers": 410
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-11-27",
+  "review_artifacts_scope": "Frozen initial peer review; author inputs unmodified.",
+  "review_artifacts_sha256": {
+    "INDEPENDENT_BINARY_ENERGY_REVIEW.md": "750e9228c968bbd37ab728137850318597fec3f14d977887ba500ac80a56c16d",
+    "REVIEWER_CONTROLS.json": "cbfbecd46255d8b5b5a9fcac467c614b8ad578592532b081560dbee502e95c60",
+    "reviewer_controls.py": "7838b87d7f2d7831a368f0f947dc1a91a15e4bffacbc8c37e971f5c7d4159e41"
+  },
+  "reviewed_author_inputs_sha256": {
+    "BINARY_CORRIDOR_DENOMINATORS.md": "5591fe26e124bdc38c57f8869d4618e607370edd7ddccb8d526d9de9810a1dcc",
+    "BRIDGE_ENERGY_CHECK.json": "ac949b5d7cb2e46f4cbb50995102da7b3ba590dda1678458d13ee6686db90414",
+    "FOUR_BRIDGE_BINARY_CYCLE_BOUND.md": "22c03623f8edf8c841d6b548b1721b20d35fe8bacf7a803d218119a9939ab831",
+    "TWO_ENDED_LOCAL_INTEGER_CONTROLS.md": "a80f0e86a37b154ae7b14be68c9fee1993780a7a4529c95eeb2081d36ce63785",
+    "bridge_energy_certificate.py": "c14bccd5005390f8d52ecab130cb17da4018bc95e65b46b454a72ef055e51dc3"
+  },
+  "reviewer": "GPT-6.2 Astra independent binary-energy reviewer"
+}

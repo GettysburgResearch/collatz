@@ -1,0 +1,21 @@
+{
+  "N": 64,
+  "cap": "21/50",
+  "direct_short_schedule_tests": 14,
+  "exact_power_bound": "E^5 < 3^(6 N)",
+  "faces_at_each_slope": 260,
+  "height_exponent": "5/2",
+  "max_exact_modular_energy": 448804760794336774447153725940272863,
+  "maximizing_midpoint_faces": [
+    "33203/80000",
+    "33281/80000",
+    "33359/80000"
+  ],
+  "min_exact_modular_energy": 83133837143170356031542203543319368,
+  "slope_interval": [
+    "584961/1000000",
+    "146241/250000"
+  ],
+  "source_count_exponent": "2/5",
+  "unique_full_schedules": 130
+}

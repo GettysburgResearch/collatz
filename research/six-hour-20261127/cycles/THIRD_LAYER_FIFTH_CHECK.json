@@ -1,0 +1,54 @@
+{
+  "above_two_positive_rational_word": {
+    "clock": 301994,
+    "grade_two_site": 111202,
+    "period": 190537,
+    "period_primitive_by_coprime_clocks": true,
+    "real_width": "381075/190537"
+  },
+  "base_three_gap": "1/20000",
+  "eligible_arc": "1/100000",
+  "entrywise_absolute_composite": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "mechanical_bracket": [
+    "584961/1000000",
+    "146241/250000"
+  ],
+  "remaining_natural_gap_lower": "1/16000",
+  "single_site_natural_log_cost_upper": 8,
+  "three_to_two": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "two_edge_cost_ratio": 2025,
+  "two_to_three": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ]
+}

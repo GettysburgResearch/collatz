@@ -1,0 +1,36 @@
+{
+  "critical_shadow": {
+    "B": 2,
+    "K": 64,
+    "authorized_square_flips": 59,
+    "last_four_flips": [
+      [
+        3721,
+        14356
+      ],
+      [
+        3844,
+        14848
+      ],
+      [
+        3969,
+        15348
+      ],
+      [
+        4096,
+        15856
+      ]
+    ],
+    "least_source_bit_length": 15859,
+    "number_blocks": 4096,
+    "ones": 10017,
+    "shortcut_dates": 15860,
+    "word_sha256": "a4257becc8cae833e9eb9b01d62e653ebb94f613ddf418c83b4fd437b884694c"
+  },
+  "finite_physical": {
+    "all_shortcut_words_with_known_good_lift": 1023,
+    "conditional_pair_rows": 10098,
+    "higher_order_rows": 10098
+  },
+  "largest_half_exit_exponent": 9842
+}

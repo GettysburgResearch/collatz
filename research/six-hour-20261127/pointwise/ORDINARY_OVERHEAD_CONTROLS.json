@@ -1,0 +1,138 @@
+{
+  "h_range": [
+    0,
+    6
+  ],
+  "rows_in_h_order": [
+    {
+      "actual_CRT_witnesses_replayed": 0,
+      "last_inspected_rank": 6,
+      "ordinary_pool_cutoff": 16,
+      "ordinary_prefixes": 25,
+      "source_rank_set": []
+    },
+    {
+      "actual_CRT_witnesses_replayed": 0,
+      "last_inspected_rank": 7,
+      "ordinary_pool_cutoff": 25,
+      "ordinary_prefixes": 46,
+      "source_rank_set": []
+    },
+    {
+      "actual_CRT_witnesses_replayed": 0,
+      "last_inspected_rank": 41,
+      "ordinary_pool_cutoff": 38,
+      "ordinary_prefixes": 149,
+      "source_rank_set": []
+    },
+    {
+      "actual_CRT_witnesses_replayed": 7,
+      "last_inspected_rank": 41,
+      "last_rank_example_at_17": {
+        "D": 1,
+        "E": 2,
+        "R": 7,
+        "c": 1,
+        "m": 33,
+        "n": 57327,
+        "odd_signed_clock": 7,
+        "physical_signed_clock": 12,
+        "rank": 1,
+        "visitor": 45295,
+        "w": 1,
+        "z": 14
+      },
+      "ordinary_pool_cutoff": 57,
+      "ordinary_prefixes": 319,
+      "source_rank_set": [
+        1
+      ]
+    },
+    {
+      "actual_CRT_witnesses_replayed": 21,
+      "last_inspected_rank": 42,
+      "last_rank_example_at_17": {
+        "D": 1,
+        "E": 6,
+        "R": 7,
+        "c": 1,
+        "m": 33,
+        "n": 2133999,
+        "odd_signed_clock": 7,
+        "physical_signed_clock": 12,
+        "rank": 3,
+        "visitor": 1998367,
+        "w": 1,
+        "z": 521
+      },
+      "ordinary_pool_cutoff": 86,
+      "ordinary_prefixes": 540,
+      "source_rank_set": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "actual_CRT_witnesses_replayed": 42,
+      "last_inspected_rank": 44,
+      "last_rank_example_at_17": {
+        "D": 5,
+        "E": 12,
+        "R": 35,
+        "c": 137,
+        "m": 407,
+        "n": 96403044817176306384879,
+        "odd_signed_clock": 35,
+        "physical_signed_clock": 60,
+        "rank": 9,
+        "visitor": 84538218100276596100735,
+        "w": 27,
+        "z": 1337861
+      },
+      "ordinary_pool_cutoff": 129,
+      "ordinary_prefixes": 1010,
+      "source_rank_set": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9
+      ]
+    },
+    {
+      "actual_CRT_witnesses_replayed": 77,
+      "last_inspected_rank": 45,
+      "last_rank_example_at_17": {
+        "D": 9,
+        "E": 37,
+        "R": 28,
+        "c": 1619,
+        "m": 7085,
+        "n": 156242856158448409148716482543,
+        "odd_signed_clock": 28,
+        "physical_signed_clock": 53,
+        "rank": 27,
+        "visitor": 126578090011795928556638166783,
+        "w": 27,
+        "z": 4440689058311830
+      },
+      "ordinary_pool_cutoff": 193,
+      "ordinary_prefixes": 1671,
+      "source_rank_set": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        25,
+        27
+      ]
+    }
+  ]
+}

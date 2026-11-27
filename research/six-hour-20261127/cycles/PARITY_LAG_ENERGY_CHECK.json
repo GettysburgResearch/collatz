@@ -1,0 +1,62 @@
+{
+  "distinct_five_site_exact_controls": 68,
+  "length": 64,
+  "orientation_bound": "99/100",
+  "parameter_phase_faces": 45382,
+  "sector_bounds": [
+    {
+      "max_energy": [
+        1417176000000,
+        524931238244739851973619089408
+      ],
+      "region": [
+        "0",
+        "1/4"
+      ],
+      "schedule_digest": "c462f7c334aeb5f9bc08f422306713f6ee7b0a109f138ed06e329d7f03520ba0",
+      "schedules": 1176,
+      "strict_exponent_bounds": [
+        "9/20",
+        "99/100"
+      ]
+    },
+    {
+      "max_energy": [
+        251837957326338790560,
+        415063872948556374880798998967824
+      ],
+      "region": [
+        "1/4",
+        "1/2"
+      ],
+      "schedule_digest": "243c4370ce8239ff376801347df5ea3471efa556b7120ffa6016bf02f092da8a",
+      "schedules": 1164,
+      "strict_exponent_bounds": [
+        "7/10",
+        "109/100"
+      ]
+    },
+    {
+      "max_energy": [
+        46954506354665610240000000,
+        2203089518537269978250495925000000000
+      ],
+      "region": [
+        "1/2",
+        "3/4"
+      ],
+      "schedule_digest": "ec07dc3cc112b42e2c4252a714ec886ccd1c556f322b6f386320961b197a700f",
+      "schedules": 1164,
+      "strict_exponent_bounds": [
+        "87/100",
+        "123/100"
+      ]
+    }
+  ],
+  "slope_endpoints": [
+    "584961/1000000",
+    "46797/80000",
+    "146241/250000"
+  ],
+  "u_faces": 199
+}

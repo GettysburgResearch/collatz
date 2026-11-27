@@ -1,0 +1,33 @@
+{
+  "status": "Frozen second-wave written deductions, exact finite controls and limited Lean proof. Universal termination and nontrivial-cycle exclusion remain open.",
+  "lean": "TraceFront.lean proves the abstract moving-row uniform limit under explicit hypotheses; other global analytic theorems are written and source-qualified.",
+  "sources": {
+    "Weaver paper 12": "https://rstation.ai/problems/collatz/papers/12/v1",
+    "Valbuena repository": "https://github.com/x1xhlol/collatz-two-coordinate-obstruction/tree/a7275d5a73814d3d9a400c6fe6577de9542b03a3",
+    "reviewed O15 SHA256": "5e93fc264fdbf9fe287c90531bab5875d1d7f9745f2ecd4419e9be9edcf5194c",
+    "reviewed O18 SHA256": "07aaa763d404b5b034e4b5db0337ad65a99408fdd592179164332959fbc8b58d"
+  },
+  "files": {
+    "trace": {
+      "ESCAPE_TRACE_PROFILE.md": "66148a2ad0e8032007ac0f6ecf392daa13014781ca45345c4a72a112c5d306cc",
+      "FIRST_HIT_SPECTRUM.md": "ec2bb0b865c4ea15d4167c1aa265dbd5c56448652adac4f53271afdc14218c85",
+      "TraceFront.lean": "004d26b30f9f003cf00d7d1221812e975fcc5f20827ef4febe17094d42db5889",
+      "check_trace.py": "5d4756916d212dfcf7351ca2294535c9db9635dc4e463ccb9520dea989a0fa9c",
+      "TRACE_CONTROLS.json": "75157365b67ee55e6d2a1f6bfa8bcaea342f77a83b38f563525013f71c06049b"
+    },
+    "decoder": {
+      "UNIFORM_DECODER.md": "05970948ccf4bd8f1cde79d2ce63fa21cad3875bd96739ea4c681d959f11e24b",
+      "EFFECTIVE_DECODER.md": "48a714673c1c55376cf8e106d54ab7a06458bcebafe997478e42293eb118a35c",
+      "check_decoder.py": "48c26e07a89dd25dd1fbe0e6aa9113017e540fedd4f2f5f47a8a9a4f870aee7e",
+      "DECODER_CONTROLS.json": "010064c5a682e7f44072451a9d5c14fea55877d8748659f94853f3dd50973f1f"
+    },
+    "review": {
+      "PRESSURE_ENTROPY_REVIEW.md": "57d07e5f7a6906d32ff45754eef5f01e298a5d072a15111aa7320adcf599f2d0",
+      "review_pressure_entropy.py": "22255746b3d199a7a953b09c080040c8341d6ce1da6ff7f2b3e29b2851a2ddd9",
+      "PRESSURE_REVIEW_CONTROLS.json": "45725ceff45c7561c8f894f2b64adfdf46d30457cc79886a95d75e4a9ab6d535",
+      "SURVIVOR_REVIEW.md": "9af4564cc6e48a54cbe16ebe1815e845bfb687ca9b5a5d14c584942149a0eb99",
+      "review_survivor.py": "8d3439fe51e2bea699d9d1ba1fc9c0f62225c17f57e95fee1b99a8c39d9830d8",
+      "SURVIVOR_REVIEW_CONTROLS.json": "d1f6e5d5e20e2cdce93bb17377331a84fc101d3d4ac36c0773e6df175219f2f6"
+    }
+  }
+}

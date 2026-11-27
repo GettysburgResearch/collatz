@@ -1,0 +1,269 @@
+{
+  "all_small_blocks": {
+    "complete_blocks_landing_at_least_start_plus_one": 9381,
+    "largest_retained_divisor_in_those_blocks_and_witness": [
+      15,
+      55679,
+      59459
+    ],
+    "max_start": 65535,
+    "positive_odd_starts": 32768
+  },
+  "prefixes": {
+    "actual_prefixes": 32768,
+    "positive_defect_prefixes": 31745
+  },
+  "scope": "Finite exact controls. The asymptotic Subspace and logarithmic-forms conclusions are written arguments.",
+  "sharpness": [
+    {
+      "b": 3,
+      "gcd_bits": 3,
+      "landing_bits": 31,
+      "sigma": "0",
+      "source_bits": 24,
+      "t": 16
+    },
+    {
+      "b": 11,
+      "gcd_bits": 11,
+      "landing_bits": 40,
+      "sigma": "0",
+      "source_bits": 41,
+      "t": 16
+    },
+    {
+      "b": 31,
+      "gcd_bits": 31,
+      "landing_bits": 59,
+      "sigma": "0",
+      "source_bits": 81,
+      "t": 16
+    },
+    {
+      "b": 127,
+      "gcd_bits": 127,
+      "landing_bits": 154,
+      "sigma": "0",
+      "source_bits": 272,
+      "t": 16
+    },
+    {
+      "b": 511,
+      "gcd_bits": 511,
+      "landing_bits": 538,
+      "sigma": "0",
+      "source_bits": 1040,
+      "t": 16
+    },
+    {
+      "b": 3,
+      "gcd_bits": 3,
+      "landing_bits": 31,
+      "sigma": "1/2",
+      "source_bits": 24,
+      "t": 16
+    },
+    {
+      "b": 11,
+      "gcd_bits": 11,
+      "landing_bits": 40,
+      "sigma": "1/2",
+      "source_bits": 41,
+      "t": 16
+    },
+    {
+      "b": 31,
+      "gcd_bits": 31,
+      "landing_bits": 59,
+      "sigma": "1/2",
+      "source_bits": 81,
+      "t": 16
+    },
+    {
+      "b": 127,
+      "gcd_bits": 127,
+      "landing_bits": 154,
+      "sigma": "1/2",
+      "source_bits": 272,
+      "t": 16
+    },
+    {
+      "b": 511,
+      "gcd_bits": 511,
+      "landing_bits": 538,
+      "sigma": "1/2",
+      "source_bits": 1040,
+      "t": 16
+    },
+    {
+      "b": 3,
+      "gcd_bits": 3,
+      "landing_bits": 35,
+      "sigma": "3/4",
+      "source_bits": 27,
+      "t": 18
+    },
+    {
+      "b": 11,
+      "gcd_bits": 11,
+      "landing_bits": 50,
+      "sigma": "3/4",
+      "source_bits": 48,
+      "t": 23
+    },
+    {
+      "b": 31,
+      "gcd_bits": 31,
+      "landing_bits": 89,
+      "sigma": "3/4",
+      "source_bits": 100,
+      "t": 35
+    },
+    {
+      "b": 127,
+      "gcd_bits": 127,
+      "landing_bits": 276,
+      "sigma": "3/4",
+      "source_bits": 349,
+      "t": 93
+    },
+    {
+      "b": 511,
+      "gcd_bits": 511,
+      "landing_bits": 1024,
+      "sigma": "3/4",
+      "source_bits": 1346,
+      "t": 323
+    },
+    {
+      "b": 3,
+      "first_one_shortcut_cofactor": 45,
+      "first_one_shortcut_triple": 267,
+      "gcd_bits": 3,
+      "landing_bits": 41,
+      "sigma": "1",
+      "source_bits": 31,
+      "t": 22
+    },
+    {
+      "b": 11,
+      "first_one_shortcut_cofactor": 154,
+      "first_one_shortcut_triple": 349,
+      "gcd_bits": 11,
+      "landing_bits": 69,
+      "sigma": "1",
+      "source_bits": 59,
+      "t": 35
+    },
+    {
+      "b": 31,
+      "first_one_shortcut_cofactor": 409,
+      "first_one_shortcut_triple": 707,
+      "gcd_bits": 31,
+      "landing_bits": 143,
+      "sigma": "1",
+      "source_bits": 133,
+      "t": 69
+    },
+    {
+      "b": 127,
+      "first_one_shortcut_cofactor": 1508,
+      "first_one_shortcut_triple": 2879,
+      "gcd_bits": 127,
+      "landing_bits": 501,
+      "sigma": "1",
+      "source_bits": 491,
+      "t": 234
+    },
+    {
+      "b": 511,
+      "first_one_shortcut_cofactor": 5720,
+      "first_one_shortcut_triple": 10188,
+      "gcd_bits": 511,
+      "landing_bits": 1924,
+      "sigma": "1",
+      "source_bits": 1915,
+      "t": 890
+    },
+    {
+      "b": 3,
+      "gcd_bits": 3,
+      "landing_bits": 54,
+      "sigma": "5/4",
+      "source_bits": 39,
+      "t": 30
+    },
+    {
+      "b": 11,
+      "gcd_bits": 11,
+      "landing_bits": 119,
+      "sigma": "5/4",
+      "source_bits": 91,
+      "t": 66
+    },
+    {
+      "b": 31,
+      "gcd_bits": 31,
+      "landing_bits": 280,
+      "sigma": "5/4",
+      "source_bits": 220,
+      "t": 155
+    },
+    {
+      "b": 127,
+      "gcd_bits": 127,
+      "landing_bits": 1056,
+      "sigma": "5/4",
+      "source_bits": 841,
+      "t": 585
+    },
+    {
+      "b": 511,
+      "gcd_bits": 511,
+      "landing_bits": 4168,
+      "sigma": "5/4",
+      "source_bits": 3330,
+      "t": 2305
+    },
+    {
+      "b": 3,
+      "gcd_bits": 3,
+      "landing_bits": 143,
+      "sigma": "3/2",
+      "source_bits": 95,
+      "t": 87
+    },
+    {
+      "b": 11,
+      "gcd_bits": 11,
+      "landing_bits": 449,
+      "sigma": "3/2",
+      "source_bits": 299,
+      "t": 275
+    },
+    {
+      "b": 31,
+      "gcd_bits": 31,
+      "landing_bits": 1216,
+      "sigma": "3/2",
+      "source_bits": 810,
+      "t": 746
+    },
+    {
+      "b": 127,
+      "gcd_bits": 127,
+      "landing_bits": 4894,
+      "sigma": "3/2",
+      "source_bits": 3263,
+      "t": 3006
+    },
+    {
+      "b": 511,
+      "gcd_bits": 511,
+      "landing_bits": 19605,
+      "sigma": "3/2",
+      "source_bits": 13070,
+      "t": 12045
+    }
+  ]
+}

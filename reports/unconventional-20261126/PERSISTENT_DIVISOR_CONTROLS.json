@@ -1,0 +1,514 @@
+{
+  "all_small_shifted_paths": 14336,
+  "full_gcd_families": [
+    {
+      "T": 270,
+      "c": 7,
+      "initial_bits": 283,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 439
+    },
+    {
+      "T": 270,
+      "c": 7,
+      "initial_bits": 283,
+      "r": 2,
+      "sigma": "4/3",
+      "terminal_bits": 439
+    },
+    {
+      "T": 298,
+      "c": 7,
+      "initial_bits": 311,
+      "r": 2,
+      "sigma": "3/2",
+      "terminal_bits": 483
+    },
+    {
+      "T": 318,
+      "c": 31,
+      "initial_bits": 355,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 539
+    },
+    {
+      "T": 318,
+      "c": 31,
+      "initial_bits": 355,
+      "r": 2,
+      "sigma": "4/3",
+      "terminal_bits": 539
+    },
+    {
+      "T": 439,
+      "c": 31,
+      "initial_bits": 476,
+      "r": 2,
+      "sigma": "3/2",
+      "terminal_bits": 731
+    },
+    {
+      "T": 510,
+      "c": 127,
+      "initial_bits": 642,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 939
+    },
+    {
+      "T": 510,
+      "c": 127,
+      "initial_bits": 642,
+      "r": 2,
+      "sigma": "4/3",
+      "terminal_bits": 939
+    },
+    {
+      "T": 1004,
+      "c": 127,
+      "initial_bits": 1137,
+      "r": 2,
+      "sigma": "3/2",
+      "terminal_bits": 1722
+    },
+    {
+      "T": 675,
+      "c": 7,
+      "initial_bits": 691,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 1081
+    },
+    {
+      "T": 675,
+      "c": 7,
+      "initial_bits": 691,
+      "r": 5,
+      "sigma": "4/3",
+      "terminal_bits": 1081
+    },
+    {
+      "T": 682,
+      "c": 7,
+      "initial_bits": 697,
+      "r": 5,
+      "sigma": "3/2",
+      "terminal_bits": 1091
+    },
+    {
+      "T": 795,
+      "c": 31,
+      "initial_bits": 835,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 1295
+    },
+    {
+      "T": 795,
+      "c": 31,
+      "initial_bits": 835,
+      "r": 5,
+      "sigma": "4/3",
+      "terminal_bits": 1295
+    },
+    {
+      "T": 823,
+      "c": 31,
+      "initial_bits": 863,
+      "r": 5,
+      "sigma": "3/2",
+      "terminal_bits": 1339
+    },
+    {
+      "T": 1275,
+      "c": 127,
+      "initial_bits": 1411,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 2152
+    },
+    {
+      "T": 1275,
+      "c": 127,
+      "initial_bits": 1411,
+      "r": 5,
+      "sigma": "4/3",
+      "terminal_bits": 2152
+    },
+    {
+      "T": 1388,
+      "c": 127,
+      "initial_bits": 1524,
+      "r": 5,
+      "sigma": "3/2",
+      "terminal_bits": 2331
+    }
+  ],
+  "largest_full_gcd_among_tested_windows": 64,
+  "scope": "Exact integer algebra and physical trajectories. No finite test proves the asymptotic Subspace estimate.",
+  "sharp_families": [
+    {
+      "T": 32,
+      "b": 7,
+      "initial_bits": 57,
+      "odd_gcd_bits": 7,
+      "r": 2,
+      "sigma": "1/3",
+      "terminal_bits": 62
+    },
+    {
+      "T": 56,
+      "b": 7,
+      "checked_protected_shortcuts": 70,
+      "first_one_shortcut_cofactor": 283,
+      "first_one_shortcut_triple": 413,
+      "initial_bits": 80,
+      "odd_gcd_bits": 7,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 99
+    },
+    {
+      "T": 90,
+      "b": 7,
+      "initial_bits": 115,
+      "odd_gcd_bits": 7,
+      "r": 2,
+      "sigma": "5/4",
+      "terminal_bits": 153
+    },
+    {
+      "T": 32,
+      "b": 31,
+      "initial_bits": 128,
+      "odd_gcd_bits": 31,
+      "r": 2,
+      "sigma": "1/3",
+      "terminal_bits": 85
+    },
+    {
+      "T": 138,
+      "b": 31,
+      "checked_protected_shortcuts": 200,
+      "first_one_shortcut_cofactor": 1036,
+      "first_one_shortcut_triple": 1204,
+      "initial_bits": 234,
+      "odd_gcd_bits": 31,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 253
+    },
+    {
+      "T": 287,
+      "b": 31,
+      "initial_bits": 384,
+      "odd_gcd_bits": 31,
+      "r": 2,
+      "sigma": "5/4",
+      "terminal_bits": 490
+    },
+    {
+      "T": 32,
+      "b": 127,
+      "initial_bits": 417,
+      "odd_gcd_bits": 127,
+      "r": 2,
+      "sigma": "1/3",
+      "terminal_bits": 181
+    },
+    {
+      "T": 467,
+      "b": 127,
+      "checked_protected_shortcuts": 721,
+      "first_one_shortcut_cofactor": 3359,
+      "first_one_shortcut_triple": 4933,
+      "initial_bits": 852,
+      "odd_gcd_bits": 127,
+      "r": 2,
+      "sigma": "1",
+      "terminal_bits": 871
+    },
+    {
+      "T": 1075,
+      "b": 127,
+      "initial_bits": 1459,
+      "odd_gcd_bits": 127,
+      "r": 2,
+      "sigma": "5/4",
+      "terminal_bits": 1834
+    },
+    {
+      "T": 48,
+      "b": 7,
+      "initial_bits": 80,
+      "odd_gcd_bits": 7,
+      "r": 3,
+      "sigma": "1/4",
+      "terminal_bits": 87
+    },
+    {
+      "T": 84,
+      "b": 7,
+      "checked_protected_shortcuts": 105,
+      "first_one_shortcut_cofactor": 437,
+      "first_one_shortcut_triple": 670,
+      "initial_bits": 115,
+      "odd_gcd_bits": 7,
+      "r": 3,
+      "sigma": "1",
+      "terminal_bits": 144
+    },
+    {
+      "T": 132,
+      "b": 7,
+      "initial_bits": 163,
+      "odd_gcd_bits": 7,
+      "r": 3,
+      "sigma": "5/4",
+      "terminal_bits": 220
+    },
+    {
+      "T": 48,
+      "b": 31,
+      "initial_bits": 176,
+      "odd_gcd_bits": 31,
+      "r": 3,
+      "sigma": "1/4",
+      "terminal_bits": 111
+    },
+    {
+      "T": 207,
+      "b": 31,
+      "checked_protected_shortcuts": 300,
+      "first_one_shortcut_cofactor": 1274,
+      "first_one_shortcut_triple": 2366,
+      "initial_bits": 334,
+      "odd_gcd_bits": 31,
+      "r": 3,
+      "sigma": "1",
+      "terminal_bits": 362
+    },
+    {
+      "T": 419,
+      "b": 31,
+      "initial_bits": 547,
+      "odd_gcd_bits": 31,
+      "r": 3,
+      "sigma": "5/4",
+      "terminal_bits": 699
+    },
+    {
+      "T": 48,
+      "b": 127,
+      "initial_bits": 559,
+      "odd_gcd_bits": 127,
+      "r": 3,
+      "sigma": "1/4",
+      "terminal_bits": 207
+    },
+    {
+      "T": 700,
+      "b": 127,
+      "checked_protected_shortcuts": 1081,
+      "first_one_shortcut_cofactor": 4841,
+      "first_one_shortcut_triple": 7003,
+      "initial_bits": 1212,
+      "odd_gcd_bits": 127,
+      "r": 3,
+      "sigma": "1",
+      "terminal_bits": 1240
+    },
+    {
+      "T": 1565,
+      "b": 127,
+      "initial_bits": 2076,
+      "odd_gcd_bits": 127,
+      "r": 3,
+      "sigma": "5/4",
+      "terminal_bits": 2611
+    },
+    {
+      "T": 80,
+      "b": 7,
+      "initial_bits": 126,
+      "odd_gcd_bits": 7,
+      "r": 5,
+      "sigma": "1/6",
+      "terminal_bits": 138
+    },
+    {
+      "T": 140,
+      "b": 7,
+      "checked_protected_shortcuts": 175,
+      "first_one_shortcut_cofactor": 618,
+      "first_one_shortcut_triple": 1276,
+      "initial_bits": 186,
+      "odd_gcd_bits": 7,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 233
+    },
+    {
+      "T": 216,
+      "b": 7,
+      "initial_bits": 262,
+      "odd_gcd_bits": 7,
+      "r": 5,
+      "sigma": "5/4",
+      "terminal_bits": 353
+    },
+    {
+      "T": 80,
+      "b": 31,
+      "initial_bits": 269,
+      "odd_gcd_bits": 31,
+      "r": 5,
+      "sigma": "1/6",
+      "terminal_bits": 161
+    },
+    {
+      "T": 345,
+      "b": 31,
+      "checked_protected_shortcuts": 500,
+      "first_one_shortcut_cofactor": 2620,
+      "first_one_shortcut_triple": 2989,
+      "initial_bits": 534,
+      "odd_gcd_bits": 31,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 581
+    },
+    {
+      "T": 682,
+      "b": 31,
+      "initial_bits": 871,
+      "odd_gcd_bits": 31,
+      "r": 5,
+      "sigma": "5/4",
+      "terminal_bits": 1115
+    },
+    {
+      "T": 80,
+      "b": 127,
+      "initial_bits": 846,
+      "odd_gcd_bits": 127,
+      "r": 5,
+      "sigma": "1/6",
+      "terminal_bits": 257
+    },
+    {
+      "T": 1166,
+      "b": 127,
+      "checked_protected_shortcuts": 1801,
+      "first_one_shortcut_cofactor": 8770,
+      "first_one_shortcut_triple": 10805,
+      "initial_bits": 1931,
+      "odd_gcd_bits": 127,
+      "r": 5,
+      "sigma": "1",
+      "terminal_bits": 1978
+    },
+    {
+      "T": 2545,
+      "b": 127,
+      "initial_bits": 3311,
+      "odd_gcd_bits": 127,
+      "r": 5,
+      "sigma": "5/4",
+      "terminal_bits": 4164
+    },
+    {
+      "T": 128,
+      "b": 7,
+      "initial_bits": 195,
+      "odd_gcd_bits": 7,
+      "r": 8,
+      "sigma": "1/9",
+      "terminal_bits": 214
+    },
+    {
+      "T": 224,
+      "b": 7,
+      "checked_protected_shortcuts": 280,
+      "first_one_shortcut_cofactor": 1386,
+      "first_one_shortcut_triple": 1993,
+      "initial_bits": 291,
+      "odd_gcd_bits": 7,
+      "r": 8,
+      "sigma": "1",
+      "terminal_bits": 366
+    },
+    {
+      "T": 343,
+      "b": 7,
+      "initial_bits": 410,
+      "odd_gcd_bits": 7,
+      "r": 8,
+      "sigma": "5/4",
+      "terminal_bits": 555
+    },
+    {
+      "T": 128,
+      "b": 31,
+      "initial_bits": 411,
+      "odd_gcd_bits": 31,
+      "r": 8,
+      "sigma": "1/9",
+      "terminal_bits": 238
+    },
+    {
+      "T": 552,
+      "b": 31,
+      "checked_protected_shortcuts": 800,
+      "first_one_shortcut_cofactor": 3900,
+      "first_one_shortcut_triple": 5152,
+      "initial_bits": 835,
+      "odd_gcd_bits": 31,
+      "r": 8,
+      "sigma": "1",
+      "terminal_bits": 910
+    },
+    {
+      "T": 1077,
+      "b": 31,
+      "initial_bits": 1360,
+      "odd_gcd_bits": 31,
+      "r": 8,
+      "sigma": "5/4",
+      "terminal_bits": 1742
+    },
+    {
+      "T": 128,
+      "b": 127,
+      "initial_bits": 1275,
+      "odd_gcd_bits": 127,
+      "r": 8,
+      "sigma": "1/9",
+      "terminal_bits": 334
+    },
+    {
+      "T": 1865,
+      "b": 127,
+      "checked_protected_shortcuts": 2881,
+      "first_one_shortcut_cofactor": 13689,
+      "first_one_shortcut_triple": 17160,
+      "initial_bits": 3011,
+      "odd_gcd_bits": 127,
+      "r": 8,
+      "sigma": "1",
+      "terminal_bits": 3086
+    },
+    {
+      "T": 4015,
+      "b": 127,
+      "initial_bits": 5162,
+      "odd_gcd_bits": 127,
+      "r": 8,
+      "sigma": "5/4",
+      "terminal_bits": 6494
+    }
+  ],
+  "small_start_bound": 4095
+}

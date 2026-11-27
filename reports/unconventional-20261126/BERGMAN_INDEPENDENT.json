@@ -1,0 +1,14 @@
+{
+  "scope": "all lifted residue inequalities for the stated Bergman upper bound",
+  "entries": 59049,
+  "lifted_rows_checked": 177147,
+  "vector_sha256": "91170eb02223527b842d0e06d8370ba6e8278f71f5a108f33075660de54dae88",
+  "upper_squared": "5516102802/2482245023",
+  "mutations_rejected": [
+    "zero_entry",
+    "lowered_branch_entry",
+    "claimed_radius_sqrt_two"
+  ],
+  "analytic_bridge": "BERGMAN_RADIUS.md, positive supersolution and published norm identity",
+  "not_claimed": "exact radius, all operator-theorem formalization, or Collatz convergence"
+}

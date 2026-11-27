@@ -1,0 +1,81 @@
+{
+  "admitted_paths_in_tests": 125,
+  "certified_average_energy": "23/40",
+  "critical_margin": "2327377/40000000",
+  "orientation_duals": [
+    {
+      "largest_intercept": "45121/80000",
+      "linear_tilt": "137/1000",
+      "orientation_weight": "469/1000",
+      "u_range": [
+        "0",
+        "1/16"
+      ]
+    },
+    {
+      "largest_intercept": "4343/8000",
+      "linear_tilt": "1/20",
+      "orientation_weight": "91/200",
+      "u_range": [
+        "1/16",
+        "1/8"
+      ]
+    },
+    {
+      "largest_intercept": "42669/80000",
+      "linear_tilt": "-7/200",
+      "orientation_weight": "439/1000",
+      "u_range": [
+        "1/8",
+        "3/16"
+      ]
+    },
+    {
+      "largest_intercept": "1031/2000",
+      "linear_tilt": "-51/500",
+      "orientation_weight": "51/125",
+      "u_range": [
+        "3/16",
+        "1/4"
+      ]
+    },
+    {
+      "largest_intercept": "2431/4800",
+      "linear_tilt": "-17/100",
+      "orientation_weight": "377/1000",
+      "u_range": [
+        "1/4",
+        "5/16"
+      ]
+    },
+    {
+      "largest_intercept": "2037/4000",
+      "linear_tilt": "-107/500",
+      "orientation_weight": "357/1000",
+      "u_range": [
+        "5/16",
+        "3/8"
+      ]
+    },
+    {
+      "largest_intercept": "4181/8000",
+      "linear_tilt": "-107/500",
+      "orientation_weight": "357/1000",
+      "u_range": [
+        "3/8",
+        "7/16"
+      ]
+    },
+    {
+      "largest_intercept": "67/125",
+      "linear_tilt": "-107/500",
+      "orientation_weight": "357/1000",
+      "u_range": [
+        "7/16",
+        "1/2"
+      ]
+    }
+  ],
+  "translated_chart_configurations": 21,
+  "worst_dual": "45121/80000"
+}

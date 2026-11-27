@@ -1,0 +1,42 @@
+{
+  "bridge": {
+    "bridge_composite": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "bridge_factor": 2025
+  },
+  "fine_law": {
+    "full_past_fibres": 23160,
+    "noninitial_fibres": 22860
+  },
+  "fixed_cuts": {
+    "actual_paths": 17463,
+    "eligible_endpoints": [
+      54,
+      54
+    ],
+    "endpoint_cap_patterns": {
+      "(1, 1)": 552,
+      "(1, 2)": 108,
+      "(2, 1)": 162
+    },
+    "fixed_cut_tests": 1752
+  },
+  "physical_witness": {
+    "affine_gcd_bits": 1,
+    "denominator_bits": 301971,
+    "numerator_bits": 302010,
+    "period": 190537,
+    "positive": true,
+    "total_gap": 301994,
+    "width": "381075/190537",
+    "word_sha256": "9d78efd05a23d250e5db2685d9dce71a2045775b707c61c4e829099f673cdcc7"
+  }
+}
