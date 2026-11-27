@@ -1,0 +1,61 @@
+{
+  "every_public_or_private_theorem": {
+    "RankConvexityInterfaces.even_spacing_lowbits": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.lower_seam_negative_exit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.lower_seam_positive_persists": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.nonnegative_triple_spacing_even": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.odd_triple_lowbits": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.quadruple_lowbit_rigidity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.quadruple_spacing_even": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.regular_signs": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.same_lowbit_progression_step": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.upper_seam_negative_persists": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RankConvexityInterfaces.upper_seam_positive_exit": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "fresh_import_confirmed": true,
+  "fresh_object_sha256": "a714123504da270b594a6dd7ad5316e97036b503f0f0c76f655fcf0f8f7e9dab",
+  "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_clean": true,
+  "source_sha256": "e79788a9d2069974fd2a845460575d36089d05744d3febf83d19b2ba2a637d4f"
+}

@@ -1,0 +1,24 @@
+{
+  "abstract": {
+    "changed_windows": 12708,
+    "matched_endpoint_windows": 4526,
+    "maximum_observed_repair_radius": 1,
+    "nontrivial_matched_translations": 3886,
+    "path_windows": 13348,
+    "raw_maximum_grade": 25
+  },
+  "constants": {
+    "positive_slack": "4899985443494999737/200000050000000000000000",
+    "source_exponent": "6666505000263/20000005000000"
+  },
+  "physical": {
+    "actual_fixed_endpoint_translations": 71,
+    "changed_windows": 366,
+    "matched_endpoint_windows": 71,
+    "maximum_observed_repair_radius": 1,
+    "nontrivial_matched_translations": 65,
+    "path_windows": 372,
+    "raw_maximum_grade": 11,
+    "retained_physical_windows": 372
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "budgets": {
+    "exact_peripheral_samples": 2004,
+    "macroscopic_surplus": "883799/10232402",
+    "microscopic_surplus": "5/558"
+  },
+  "energy": {
+    "closed_slope_interior_crossings": 0,
+    "full_distinct_schedules": 130,
+    "full_intercept_faces": 260,
+    "maximum_modular_mass": 65708062937184128375077207308760259061743616,
+    "minimum_modular_mass": 5864401924157260816033815232179085061521408,
+    "nonzero_inherited_carry_comparisons": 270,
+    "short_direct_schedules": 54,
+    "short_fourfold_residue_atoms": 8195,
+    "short_single_paths": 2103
+  },
+  "rational_ranks": {
+    "actual_clock_gcds": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "cycles_with_a_nonbinary_valuation": 378,
+    "cycles_with_grade_two": 213,
+    "nonresonant_signed_rank_lags": 14760,
+    "physical_signed_copy_interfaces": 813648,
+    "resonant_excluded_lags": 957,
+    "true_primitive_rational_cycles_with_multiple_rank_copies": 381
+  }
+}

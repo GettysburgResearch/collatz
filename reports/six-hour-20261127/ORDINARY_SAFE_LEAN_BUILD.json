@@ -1,0 +1,31 @@
+{
+  "audit_log": "dca8c0010b57e1241b61051d1aaf43a2c60debfc5d51c3b868e42099a9fd99a8",
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_clean": true,
+  "modules_rebuilt_in_order": {
+    "PermanentSafeDebt": {
+      "object_sha256": "9c76be65b34b0162df2002e49dce5a67542f5be1c0784add984deb93208be547",
+      "source_sha256": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552",
+      "theorems": 9
+    },
+    "PermanentSafeOrdinary": {
+      "object_sha256": "29cbc81e17924f7f7721735d21b8b1f8c2f0fe2fcd2d042f91a00c387b049ebd",
+      "source_sha256": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f",
+      "theorems": 21
+    }
+  },
+  "separate_fresh_import": true,
+  "theorem_count": 30
+}

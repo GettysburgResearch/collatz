@@ -1,0 +1,30 @@
+{
+  "all_observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "--json"
+  ],
+  "fresh_object_sha256": {
+    "PermanentSafeBitClock": "5def5f627a5f4dae5ac43544dcc9b1e03e3a9a1728c37e45bce0da5e9876a34e",
+    "PermanentSafeDebt": "9c76be65b34b0162df2002e49dce5a67542f5be1c0784add984deb93208be547",
+    "PermanentSafeOrdinary": "29cbc81e17924f7f7721735d21b8b1f8c2f0fe2fcd2d042f91a00c387b049ebd"
+  },
+  "input_reviewer_script_sha256": "ad9c51e237c70121128c4eb69ec137bc3d9837d2f91d73674f4caed8e7480c91",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_theorems": 10,
+  "pinned_mathlib_clean": true,
+  "source_and_separate_import_theorems": 40,
+  "source_sha256": {
+    "PermanentSafeBitClock": "c753b14612353a370f2fc4bcfce267787ae51dcd78b43907a0f89437d5d799b7",
+    "PermanentSafeDebt": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552",
+    "PermanentSafeOrdinary": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f"
+  },
+  "theorem_log_sha256": "29feaa03bf6ef12689b7f113480dc395c7c264ea0a8f53922c05917dc931b4f2"
+}

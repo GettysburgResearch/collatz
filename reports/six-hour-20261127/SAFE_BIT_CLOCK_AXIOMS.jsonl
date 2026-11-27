@@ -1,0 +1,80 @@
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.bounded_safe_suffix", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.eventually_two_not_safe", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.finite_prefix_minimum", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.global_minimum_of_integer_lower_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.global_minimum_of_nonnegative_tail", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safeAt_iff_tail_minimum", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safeAt_shift", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safe_suffix_clock_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.safe_suffix_of_integer_debt_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.all_odd_converge_iff_no_safe_source", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.all_odd_converge_iff_prefix_gate_fails", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_has_safe_suffix", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_iff_safe_suffix", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_state_lower", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.clock_add", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.clock_one", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.cumulative_clock_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.exact_step", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeOrdinary.fourth_power_step_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.fourth_power_trajectory_bound", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.not_safe_iff_prefix_failure", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.oddMap_odd", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.oddMap_one", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.safe_is_bad", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.safe_suffix_implies_bad", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_add", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_eq_iterate", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_odd", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_one", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.valuation_one", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.bad_iff_bounded_safe_suffix", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.bounded_bad_suffix", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_bits", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_minimal", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_safe", "stage": "source_build"}
+{"axioms": ["propext"], "name": "PermanentSafeBitClock.group_gain", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.physical_tail", "stage": "source_build"}
+{"axioms": ["propext"], "name": "PermanentSafeBitClock.twenty_step_gain", "stage": "source_build"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeBitClock.weighted_step", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.weighted_trajectory", "stage": "source_build"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.bad_iff_bounded_safe_suffix", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.bounded_bad_suffix", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_bits", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_minimal", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.first_bad_suffix_safe", "stage": "object_import"}
+{"axioms": ["propext"], "name": "PermanentSafeBitClock.group_gain", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.physical_tail", "stage": "object_import"}
+{"axioms": ["propext"], "name": "PermanentSafeBitClock.twenty_step_gain", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeBitClock.weighted_step", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeBitClock.weighted_trajectory", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.bounded_safe_suffix", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.eventually_two_not_safe", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.finite_prefix_minimum", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.global_minimum_of_integer_lower_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.global_minimum_of_nonnegative_tail", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safeAt_iff_tail_minimum", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safeAt_shift", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeDebt.safe_suffix_clock_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeDebt.safe_suffix_of_integer_debt_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.all_odd_converge_iff_no_safe_source", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.all_odd_converge_iff_prefix_gate_fails", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_has_safe_suffix", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_iff_safe_suffix", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.bad_state_lower", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.clock_add", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.clock_one", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.cumulative_clock_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.exact_step", "stage": "object_import"}
+{"axioms": ["Quot.sound", "propext"], "name": "PermanentSafeOrdinary.fourth_power_step_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.fourth_power_trajectory_bound", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.not_safe_iff_prefix_failure", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.oddMap_odd", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.oddMap_one", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.safe_is_bad", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.safe_suffix_implies_bad", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_add", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_eq_iterate", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_odd", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.state_one", "stage": "object_import"}
+{"axioms": ["Classical.choice", "Quot.sound", "propext"], "name": "PermanentSafeOrdinary.valuation_one", "stage": "object_import"}

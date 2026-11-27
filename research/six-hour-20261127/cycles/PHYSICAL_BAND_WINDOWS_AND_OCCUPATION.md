@@ -1,0 +1,56 @@
+# Physical residence times and odd-height occupation in binary Collatz cycles
+
+Write $x_i$ for positive accelerated odd phases, $2^{e_i}x_{i+1}=3x_i+1$, and let $\lambda=\log_2 3$. The statements below use actual physical heights and do not assume a global canonical discrepancy cap.
+
+**Finite binary trajectories.** Let $s\to\infty$. A consecutive list of $L$ distinct ordinary odd integers in $[s,Rs]$, with all connecting accelerated exponents belonging to $\{1,2\}$, satisfies the following bounds, uniformly in its starting phase.
+
+| Physical ratio | Bound on the list length |
+|---|---|
+| Any fixed $R<2^{121/50}$, in particular the band $[s,(16s+7)/3]$ for large $s$ | $L=O_{R,\epsilon}(s^{2/5+\epsilon})$ for every $\epsilon>0$ |
+| Any fixed $R<2^{2+1/100000}$, in particular $R=4$ | $L=O_{R,\epsilon}(s^{1/3-1/80000+\epsilon})$ for every $\epsilon>0$ |
+
+Both conclusions use the fixed-place integral Subspace Theorem. Neither uses an irrationality-exponent bound. They bound the first exit, first nonbinary edge or first repetition on such a segment. They make no global termination assertion. The strict inequalities on $R$ leave room for the finite correction from $3x+1$. At $R=4$, one can for instance take the exponent $1/3-1/100000$.
+
+Under the pinned least-tripling-disagreement excursion theorem, all completed odd entries before the first crossing or repetition have binary accelerated edges and lie in $[s,(16s+7)/3]$, with $s=(3q-1)/2$. It follows that the original trajectory reaches its stated first-crossing or nontrivial-cycle alternative in $O_\epsilon(q^{2/5+\epsilon})$ shortcut clocks. Each completed odd edge costs at most two shortcut clocks, and the cited input charges $O(\log q)$ for the boundary runs and recentering. The first-crossing branch can subsequently continue. This improves the exponent $479/1000$ in Theorem S of the pinned source under exactly its branch hypotheses. [Minimum bad multiple, Theorem S and the excursion inputs](https://github.com/GettysburgResearch/collatz/blob/ad70a3b831867cb8a74d402a2a1abdc419f5a09b/research/regularity-rigidity-20261124/minimum-closure/MINIMUM_CLOSURE.md)
+
+**Global physical occupation.** Put $R_*=4\,2^{1/200000}$ and $c=10^{-10}$. For any sufficiently long primitive positive rational cycle of least odd period $P$, full reduced denominator $d$ and smallest rational odd phase $s$, the separately quoted bound $\mu(\lambda)\le3$ implies
+$$ d>P^c\quad\text{or}\quad \#\{i:x_i>R_*s\ \text{or}\ e_i\ge3\}>cP. \tag{1}$$
+In particular every sufficiently long ordinary *binary* cycle spends a fraction greater than $c$ of its odd departures strictly above $R_*s>4s$, however large its maximum may be. The same indices give distinct ordinary even successors above $3R_*s$ and shortcut successors above $(3/2)R_*s$. For arbitrary ordinary valuations (1) retains the stated union. In fact at all but at most one of its indices the ordinary successor is above $8s$ and the shortcut successor above $4s$, since $e_i\ge3$ gives $3x_i+1=2^{e_i}x_{i+1}\ge8s$, with equality requiring the unique successor $x_{i+1}=s$. The constants and thresholds here are ineffective. The positive fraction in the sharper $>4s$ statement counts odd heights under the binary assumption; the conversion in the arbitrary-valuation sentence counts their immediate successors.
+
+## A fixed slope for finite physical windows
+
+On each $b$-letter window with all its states at least $s$, define $E_j=\sum_{i<j}e_i$ and $V_j=\sum_{i<j}\log_2(1+1/(3x_i))$. Then
+$$E_j-j\lambda=\log_2(x_0/x_j)+V_j,\qquad 0\le V_j\le b/(3s\log2). \tag{2}$$
+For an unmarked window wholly in $[s,Rs]$, the range of the left-hand side is at most $\log_2R+b/(3s\log2)$. At $b=O(\log s)$ this lies below the relevant certified real strip. Taking its maximum $t_0$ and writing $t=t_0-\lfloor t_0\rfloor$ gives $E_j=\lfloor j\lambda+t\rfloor+z_0-z_j$ and $f_j+z_j=t_0-(E_j-j\lambda)$, with $f_j=\{j\lambda+t\}$. Each fixed window has its own intercept and the same exact critical slope. There are $O(b)$ possible floor/cap cells across all these windows.
+
+Apply the four-segment located source count of **Three-grade modular band**, using $Y=Rs$, the actual ordinary numerator interval, exponent $6/5$ and the fixed slope $\lambda$. The proof of that count requires only the physical affine identities on its $b$-step window. At equality $\theta=\lambda$ its local numerator estimate $B\ll a2^T$ still holds. The count is $O_\epsilon(Y^{(6/5)/3+\epsilon})$. In the narrower strip use the actual five-segment sampling proof and the isolated-third-grade transfer of **Third-layer fifth extension** instead; it gives $O_\epsilon(Y^{(4/3-1/20000)/4+\epsilon})$. The additive constants in the horizon can be increased to cover the grade range. For a fixed requested $\epsilon$ the packing parameter is fixed sufficiently small first. Each initial state with a complete $b$-step window is distinct, and the final $b$ untested states cost $O(\log s)$. This proves the finite-trajectory claims without requiring a periodic continuation or a global orbit slope.
+
+## A sparse physical excursion on an otherwise unbounded cycle
+
+Suppose both alternatives in (1) fail along $P\to\infty$. Put $Y=R_*ds$, $\eta=10^{-6}$, $\tau=10^{-7}$ and
+$$ b=\left\lceil\frac{5+\eta}{4+\eta}\frac{\log_2Y+5}{\lambda}\right\rceil.$$
+At least $(1-c)P$ distinct numerators lie below $Y$, so $d\le P^c\ll Y^c$ and $s\gg Y^{1-c}$. In particular $b/(3s\log2)\to0$ even if the other physical phases are arbitrarily high. For every retained start $x_0\le R_*s$ set
+$$ t_0=\log_2(x_0/s)+b/(3s\log2),\qquad t=\{t_0\},\qquad z_j=\lfloor j\lambda+t_0\rfloor-E_j.$$
+By (2), $f_j+z_j=\log_2(x_j/s)+b/(3s\log2)-V_j\ge0$ at *every* position. At any position with $x_j\le R_*s$ this quantity is at most $2+1/200000+o(1)<2+1/100000$. Therefore the grade cap $h_j=1+1_{f_j\le1/100000}$ can fail only at a physically high site. We use the fixed $\lambda$ throughout this physical coding; the cycle's own $A/P$ re-enters only for the final height bound.
+
+There is a finite-window repair for arbitrary positive valuations. Clip first to $v_j=\min(z_j,h_j)\in\{0,1,2\}$. The cap $h$ is itself a binary-admissible path, since its isolated upper sites have a mechanical two entering and a one leaving. On an edge with $e_i\le2$ the raw $z$ and $h$ both obey the same two difference inequalities, and their minimum preserves each. To enforce all inequalities on $v$, give the edge from $i$ to $i+1$ cost zero for mechanical two and one for mechanical one, and its reverse the complementary cost. Let
+$$u_j=\min_k\big(v_k+\operatorname{dist}(j,k)\big),$$
+using shortest directed costs on the finite window path. Then $0\le u_j\le v_j$, and the two triangle inequalities on each edge give $m_i+u_i-u_{i+1}\in\{1,2\}$. If $v_j>u_j$, a minimizing simple path to $k$ has cost at most one because $v_j\le2$. Every stretch of zero-cost edges in a simple direction has length at most two at this slope. Hence the path has length at most five. It must contain a violated inequality of the original $v$, since otherwise $v_j\le v_k+\operatorname{dist}(j,k)$. Such a violation can occur only at $e_i\ge3$.
+
+Mark the cyclic six-neighborhood of every index at which $x_i>R_*s$ or $e_i\ge3$. Its size is at most $13cP$. All raw-to-repaired changes in any local window are in this global marked set. Cyclic incidence and a union bound leave at least $(1-26c-13c/\tau)P$ starts with unmarked endpoints and at most $\tau b$ marks in the interior. This bound also holds if the window winds around the cycle. The retained fraction exceeds $0.98$.
+
+In each retained window record the changed interior positions, their raw and repaired grades, both endpoint grades, and the critical-slope floor/cap cell of the intercept. Unchanged endpoints give the same actual and repaired $K=E_b=b\lambda+O(3)$. At an unchanged position, the raw and repaired relative dates agree. At a changed position both dates are known from the record, so the equation for the original numerator modulo the actual $2^K$ differs from the repaired source sum by one fixed translation. Thus the interval for the original physical numerator is a single translated interval for the repaired binary source. We enlarge this source family before applying the Fejér majorant. This step does not require monotonicity of an absolute fifth moment under deleting paths.
+
+For a marked run of $l$ successive changed grades the preceding raw grade is an unmarked value at most two. The quantities $1+z_{j-1}-z_j$ are nonnegative because $e_{j-1}\ge1$ and $m_{j-1}\le2$. Their sum across the run is at most $l+2$. Recording the preceding value and a weak composition therefore costs at most $3\binom{2l+2}{l}$ possibilities, and each repaired grade has three choices. Since $\binom{2l+2}{l}\le2^{4l}$ for $l\ge1$, there are at most $\exp(b[H(\tau)+8\tau\log2])$ profiles up to polynomial factors, counting the marked-position mask as well. This allows unbounded raw jumps and does not charge an extra terminal lift.
+
+The actual five-segment sampling proof can now be used on the complete repaired binary source in the widened strip. Write $\gamma=4/3-1/20000$, $h=\lfloor K/(5+\eta)\rfloor$ and $a=\lfloor(1-\eta)h/\lambda\rfloor$. Each outside grade has at most three choices. The fixed-place test concerns $dk\ll da2^{(1-\eta)h+O(1)}$ with $\log_2d\le[c(4+\eta)+o(1)]h$; $c(4+\eta)<\eta/2$ supplies the required strict margin. Thus
+$$\limsup\frac{\log P}{\log Y}\le
+\frac{6\eta+\gamma(1-\eta)+(5+\eta)[H(\tau)+8\tau\log 2]/\log3}{4+\eta}
+\le \frac{6666505000263}{20000005000000}.$$
+Here $H(\tau)+8\tau\log2<26\tau$ follows from $\log(10^7)<17$. Independently, multiplying the exact cycle identities gives $0<A/P-\lambda\le1/(3s\log2)$. The imported irrationality bound yields $s\le P^{3+o(1)}$ and $\limsup\log Y/\log P\le3+c$. The exact product slack is $4899985443494999737/200000050000000000000000>0$, a contradiction. This proves (1).
+
+## Prior work and scope
+
+Weaver 181, §§3–4, already supplies physical-floor correction, sparse physical excursion records, source counting and cyclic occupation arguments. Its printed unconditional threshold $3.84903077\ldots$ is in the **shortcut clock** under the 2018 Bondareva–Luchin–Salikhov bound, with further results for near returns. Its referee explicitly suggested using Chudnovsky's newer logarithm-ratio claim to enlarge that threshold. The unrestricted fourth-moment physical-band curve in that source should receive credit when its Diophantine input is changed. Here the narrow physical result uses the fifth moment of the **binary odd valuation** layer family and the bounded three-coordinate insertion, and (1) retains a full denominator alternative and a separate nonbinary-valuation charge. This note does not replace the effective small-period checks or prove a bound for arbitrary repeated finite trajectories. The global physical occupation conclusion depends on the 2026 preprint, unlike the two finite distinct-trajectory bounds. [Weaver 181, Theorem 2 and referee report](https://rstation.ai/problems/collatz/papers/181/v1) · [Weaver 145, §§4–6](https://rstation.ai/problems/collatz/papers/145/v1) · [Chudnovsky, Theorem 11.1](https://arxiv.org/html/2610.28079v1#S11)
+
+Prepared by the GPT-6.2 Astra binary-energy reviewer, 27 November 2026 UTC.

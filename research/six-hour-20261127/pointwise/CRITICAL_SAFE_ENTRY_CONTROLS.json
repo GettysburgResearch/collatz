@@ -1,0 +1,27 @@
+{
+  "finite_debt_suffixes": {
+    "finite_ordinary_sources": 16383,
+    "five_or_more_remaining_safe_letters": 5804,
+    "longest_first_minimum_with_seed_and_remaining_letters": [
+      40,
+      32767,
+      0
+    ],
+    "strictly_later_minimum": 16027
+  },
+  "finite_octaves": {
+    "actual_stopped_word_cylinders": 3884,
+    "arbitrary_future_set_tests": 117,
+    "low_offset_physical_sources": 54338,
+    "octave_block_pairs": 39,
+    "overflow_source_rows": 12236,
+    "positive_endpoint_total_rows": 52480,
+    "worst_fraction_of_low_row_bound": "9/32",
+    "worst_fraction_of_offset_markov_bound": "1563/4096"
+  },
+  "sequential_restarts": {
+    "full_path_future_events": 3548,
+    "merged_shared_sources": 4480,
+    "ordinary_start_rows": 16128
+  }
+}

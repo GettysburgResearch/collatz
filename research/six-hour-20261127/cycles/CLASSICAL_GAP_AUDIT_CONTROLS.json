@@ -1,0 +1,67 @@
+{
+  "orientation_primal": {
+    "margin": "226654317/1922500000",
+    "vertices": [
+      {
+        "bin": 0,
+        "feasible_vertices_including_ties": 41,
+        "max_charge": "2166/3845"
+      },
+      {
+        "bin": 1,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "826957/1524480"
+      },
+      {
+        "bin": 2,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "5799/10880"
+      },
+      {
+        "bin": 3,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "2803/5440"
+      },
+      {
+        "bin": 4,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "8257/16320"
+      },
+      {
+        "bin": 5,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "57/112"
+      },
+      {
+        "bin": 6,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "117/224"
+      },
+      {
+        "bin": 7,
+        "feasible_vertices_including_ties": 38,
+        "max_charge": "15/28"
+      }
+    ],
+    "worst_optimum": "2166/3845"
+  },
+  "physical_cycles": {
+    "observed_profiles": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "positive_primitive_physical_cycles": 63,
+    "rank_pair_identities": 22330,
+    "signed_cycle_source_residues": 1022
+  },
+  "signed_words": {
+    "actual_distinct_drifts": 545,
+    "exact_grade_paths": 1889,
+    "nonempty_pointed_languages": 92,
+    "signed_carry_targets": 1748
+  }
+}
