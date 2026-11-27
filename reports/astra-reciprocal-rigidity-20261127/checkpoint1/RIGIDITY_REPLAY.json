@@ -1,0 +1,81 @@
+{
+  "all_sources_unchanged": true,
+  "finished_utc": "2026-11-27T13:34:19Z",
+  "fresh_local_output_directory": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "elapsed_seconds": 3.021,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FiniteTrace",
+      "output": "",
+      "passed": true,
+      "path": "rigidity/FiniteTrace.lean",
+      "printed_axioms": [],
+      "sha256": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 7.659,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "HeckeRank",
+      "output": "",
+      "passed": true,
+      "path": "rigidity/HeckeRank.lean",
+      "printed_axioms": [],
+      "sha256": "6a44555c6187f8e938eb1ddeff159588ebaf41a2a4e456979bda7e044221b3db",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.072,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CutoffRank",
+      "output": "'Collatz.ReciprocalRigidity.FiniteTrace.odd_run' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.FiniteTrace.cutoff_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.HeckeRank.recurrent_dyadic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.HeckeRank.finite_recurrence_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.cutoff_rank_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "rigidity/CutoffRank.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "44b32fbab35682070a67ff4cd7cebd16259cb51bfd9e5957666c8e5a51d0fc89",
+      "source_unchanged_during_build": true
+    }
+  ],
+  "passed": true,
+  "requested_modules": [
+    "FiniteTrace",
+    "HeckeRank",
+    "CutoffRank"
+  ],
+  "schema": "collatz-lean-packet-replay/v1",
+  "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources.",
+  "source_hashes": {
+    "CutoffRank": "44b32fbab35682070a67ff4cd7cebd16259cb51bfd9e5957666c8e5a51d0fc89",
+    "FiniteTrace": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+    "HeckeRank": "6a44555c6187f8e938eb1ddeff159588ebaf41a2a4e456979bda7e044221b3db"
+  },
+  "started_utc": "2026-11-27T13:34:06Z"
+}
