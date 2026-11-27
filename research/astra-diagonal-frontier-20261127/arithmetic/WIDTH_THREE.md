@@ -66,3 +66,7 @@ The earlier full-band second-curvature argument treats all three grades under a 
 [Finite excursion and polynomial replay](check_width_three.py) · [Recorded controls](width_three_controls.json) · [Lean arithmetic kernel](WidthThree.lean)
 
 A separate [quantitative refinement](WIDTH_THREE_RATE.md) proves a height-dependent approach to the same lower bound, with an unevaluated absolute constant.
+
+## Formal propagation through the calendar
+
+[WidthThreeCalendar.lean](WidthThreeCalendar.lean) adds six public theorems connecting the scalar cases above. The calendar has three phases: a one, the first two following it, and an optional second two. Starting at zero, its exact integer recurrence preserves bounds of three in the first and third phases and four in the middle phase. A second-two state divisible by four is therefore zero. On a path with no zeros, every step preserves the strict sign, so the complete nonzero chronological circuit has one sign. The actual rank embedding supplies the calendar and divisibility hypotheses in the written argument above. This module formalizes their propagation, not the embedding, angular discrepancy, or final linear-form comparison.

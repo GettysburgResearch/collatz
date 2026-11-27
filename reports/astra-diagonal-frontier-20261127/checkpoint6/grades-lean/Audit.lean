@@ -1,0 +1,64 @@
+import NativeGate
+import NativeTransfer
+import NativeTightness
+import TerminatingGrades
+
+#print axioms Collatz.NativeGate.step_positive
+#print axioms Collatz.NativeGate.orbit_positive
+#print axioms Collatz.NativeGate.orbit_add
+#print axioms Collatz.NativeGate.reaches_of_orbit
+#print axioms Collatz.NativeGate.even_step
+#print axioms Collatz.NativeGate.odd_step
+#print axioms Collatz.NativeGate.fourth_margin
+#print axioms Collatz.NativeGate.protected_bound
+#print axioms Collatz.NativeGate.least_source_gate
+#print axioms Collatz.NativeGate.atom_le_mass
+#print axioms Collatz.NativeGate.extinction_implies_collatz
+#print axioms Collatz.NativeGate.finite_certificate
+#print axioms Collatz.NativeGate.loss_budget_excludes_atom
+#print axioms Collatz.NativeGate.reserve_high
+#print axioms Collatz.NativeGate.reserve_low
+#print axioms Collatz.NativeGate.orbit_succ_first
+#print axioms Collatz.NativeGate.odds_succ_first
+#print axioms Collatz.NativeGate.step_lift
+#print axioms Collatz.NativeGate.cylinder_lift
+#print axioms Collatz.NativeGate.gate_lift
+#print axioms Collatz.NativeGate.gate_succ
+#print axioms Collatz.NativeGate.candidate_bounds
+#print axioms Collatz.NativeGate.candidate_children
+#print axioms Collatz.NativeGate.children_disjoint
+#print axioms Collatz.NativeGate.sum_children
+#print axioms Collatz.NativeGate.mass_identity
+#print axioms Collatz.NativeGate.births_le_budget
+#print axioms Collatz.NativeGate.debt_nonnegative_iff
+#print axioms Collatz.NativeGate.next_gate_iff
+#print axioms Collatz.NativeGate.debt_next
+#print axioms Collatz.NativeGate.sibling_parity
+#print axioms Collatz.NativeGate.reserve_children
+#print axioms Collatz.NativeGate.reserve_decreases
+#print axioms Collatz.NativeGate.mass_nonnegative
+#print axioms Collatz.NativeGate.deaths_nonnegative
+#print axioms Collatz.NativeGate.reserve_nonnegative
+#print axioms Collatz.NativeGate.envelope_step
+#print axioms Collatz.NativeGate.initial_envelope
+#print axioms Collatz.NativeGate.envelope_budget
+#print axioms Collatz.NativeGate.total_loss_budget
+#print axioms Collatz.NativeGate.tail_loss_budget
+#print axioms Collatz.NativeGate.native_cutoff
+#print axioms Collatz.NativeGate.loss_hazard_implies_collatz
+#print axioms Collatz.NativeGate.highMass_nonnegative
+#print axioms Collatz.NativeGate.highMass_step
+#print axioms Collatz.NativeGate.highMass_reserve_step
+#print axioms Collatz.NativeGate.highMass_initial
+#print axioms Collatz.NativeGate.future_highMass_budget
+#print axioms Collatz.NativeGate.future_highMass
+#print axioms Collatz.NativeGate.gate_mono
+#print axioms Collatz.NativeGate.odds_add
+#print axioms Collatz.NativeGate.one_even_clock
+#print axioms Collatz.NativeGate.reachesOne_fails_gate
+#print axioms Collatz.NativeGate.finite_gate_failure
+#print axioms Collatz.NativeGate.low_sources_exhausted
+#print axioms Collatz.NativeGate.covered_eventual_mass
+#print axioms Collatz.NativeGate.universal_eventual_mass
+#print axioms Collatz.NativeGate.visit_grade_of_synchronized
+#print axioms Collatz.NativeGate.synchronized_of_visit_grade

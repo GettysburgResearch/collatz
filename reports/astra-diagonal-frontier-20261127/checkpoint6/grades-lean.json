@@ -1,0 +1,152 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-27T17:37:58.718443+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": null,
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "subset",
+    "requested": [
+      "TerminatingGrades"
+    ],
+    "compiled": [
+      "NativeGate",
+      "NativeTransfer",
+      "NativeTightness",
+      "TerminatingGrades"
+    ],
+    "not_compiled": [
+      "NativeDecay",
+      "NativeCriterion",
+      "NativePersistence",
+      "NativeResidue",
+      "SeedSpread",
+      "FirstArrivalLap",
+      "ComponentLoss",
+      "FirstEntryRecord",
+      "SelectedBlockBarrier",
+      "PolynomialRank",
+      "HigherDifference",
+      "RotationCuts",
+      "OrdinaryMerge",
+      "WidthThree",
+      "WidthThreeCalendar",
+      "GradePressure",
+      "ShortProbe",
+      "UnitWindowLift"
+    ]
+  },
+  "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. GradePressure checks the finite all-grade partition identities and free-first-grade upper bound, not the asymptotic cycle occupation argument. FirstArrivalLap checks exact finite primitive-lap removal in a general deterministic map. WidthThree checks the nine polynomial, divisibility and scalar excursion lemmas, not the full asymptotic width theorem. WidthThreeCalendar propagates the bounded integer state from a zero and preserves sign on every nonzero calendar path; the actual rank embedding and global height contradiction remain written. TerminatingGrades classifies synchronized actual inputs with furnished finite visits to one by the exact difference between the native clock and twice the odd count. It does not prove those visits for other inputs. No universal mass extinction or hazard divergence is proved.",
+  "modules": [
+    {
+      "module": "NativeGate",
+      "source": "research/astra-diagonal-frontier-20261127/NativeGate.lean",
+      "source_sha256": "2990f536523b9333f7f38dfea8bfb4fc7d208d747377b243acbb21a5a8efe237",
+      "exit_code": 0,
+      "seconds": 3.801,
+      "public_theorems": [
+        "Collatz.NativeGate.step_positive",
+        "Collatz.NativeGate.orbit_positive",
+        "Collatz.NativeGate.orbit_add",
+        "Collatz.NativeGate.reaches_of_orbit",
+        "Collatz.NativeGate.even_step",
+        "Collatz.NativeGate.odd_step",
+        "Collatz.NativeGate.fourth_margin",
+        "Collatz.NativeGate.protected_bound",
+        "Collatz.NativeGate.least_source_gate",
+        "Collatz.NativeGate.atom_le_mass",
+        "Collatz.NativeGate.extinction_implies_collatz",
+        "Collatz.NativeGate.finite_certificate",
+        "Collatz.NativeGate.loss_budget_excludes_atom",
+        "Collatz.NativeGate.reserve_high",
+        "Collatz.NativeGate.reserve_low"
+      ]
+    },
+    {
+      "module": "NativeTransfer",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTransfer.lean",
+      "source_sha256": "b9aad6e65dbbba47aa462d1d4e3076e2942eea84993742edff2fb91afe86e946",
+      "exit_code": 0,
+      "seconds": 3.4,
+      "public_theorems": [
+        "Collatz.NativeGate.orbit_succ_first",
+        "Collatz.NativeGate.odds_succ_first",
+        "Collatz.NativeGate.step_lift",
+        "Collatz.NativeGate.cylinder_lift",
+        "Collatz.NativeGate.gate_lift",
+        "Collatz.NativeGate.gate_succ",
+        "Collatz.NativeGate.candidate_bounds",
+        "Collatz.NativeGate.candidate_children",
+        "Collatz.NativeGate.children_disjoint",
+        "Collatz.NativeGate.sum_children",
+        "Collatz.NativeGate.mass_identity",
+        "Collatz.NativeGate.births_le_budget",
+        "Collatz.NativeGate.debt_nonnegative_iff",
+        "Collatz.NativeGate.next_gate_iff",
+        "Collatz.NativeGate.debt_next",
+        "Collatz.NativeGate.sibling_parity",
+        "Collatz.NativeGate.reserve_children",
+        "Collatz.NativeGate.reserve_decreases",
+        "Collatz.NativeGate.mass_nonnegative",
+        "Collatz.NativeGate.deaths_nonnegative",
+        "Collatz.NativeGate.reserve_nonnegative",
+        "Collatz.NativeGate.envelope_step",
+        "Collatz.NativeGate.initial_envelope",
+        "Collatz.NativeGate.envelope_budget",
+        "Collatz.NativeGate.total_loss_budget",
+        "Collatz.NativeGate.tail_loss_budget",
+        "Collatz.NativeGate.native_cutoff",
+        "Collatz.NativeGate.loss_hazard_implies_collatz"
+      ]
+    },
+    {
+      "module": "NativeTightness",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTightness.lean",
+      "source_sha256": "0fa16037d015eb62b09d586a40f3fad7495e57b39970f9c71e19faf907e240a6",
+      "exit_code": 0,
+      "seconds": 2.029,
+      "public_theorems": [
+        "Collatz.NativeGate.highMass_nonnegative",
+        "Collatz.NativeGate.highMass_step",
+        "Collatz.NativeGate.highMass_reserve_step",
+        "Collatz.NativeGate.highMass_initial",
+        "Collatz.NativeGate.future_highMass_budget",
+        "Collatz.NativeGate.future_highMass",
+        "Collatz.NativeGate.gate_mono",
+        "Collatz.NativeGate.odds_add",
+        "Collatz.NativeGate.one_even_clock",
+        "Collatz.NativeGate.reachesOne_fails_gate",
+        "Collatz.NativeGate.finite_gate_failure",
+        "Collatz.NativeGate.low_sources_exhausted",
+        "Collatz.NativeGate.covered_eventual_mass",
+        "Collatz.NativeGate.universal_eventual_mass"
+      ]
+    },
+    {
+      "module": "TerminatingGrades",
+      "source": "research/astra-diagonal-frontier-20261127/linear/TerminatingGrades.lean",
+      "source_sha256": "1d94628bfc9679713013d7a5552c8f94064c5044647f610760924498714cb568",
+      "exit_code": 0,
+      "seconds": 1.379,
+      "public_theorems": [
+        "Collatz.NativeGate.visit_grade_of_synchronized",
+        "Collatz.NativeGate.synchronized_of_visit_grade"
+      ]
+    }
+  ],
+  "public_theorems": 59,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 59,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 11.736,
+  "finished_utc": "2026-11-27T17:38:10.454749+00:00"
+}

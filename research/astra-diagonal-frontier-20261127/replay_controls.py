@@ -31,6 +31,8 @@ CASES = [
     ("arithmetic/check_full_circuit_inversions.py", "arithmetic/full_circuit_inversion_controls.json"),
     ("arithmetic/check_farey_tile.py", "arithmetic/farey_tile_controls.json"),
     ("arithmetic/check_width_three.py", "arithmetic/width_three_controls.json"),
+    ("arithmetic/check_upper_bundle.py", "arithmetic/upper_bundle_controls.json"),
+    ("arithmetic/check_plateau_components.py", "arithmetic/plateau_components_controls.json"),
     ("linear/check_controls.py", None),
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),

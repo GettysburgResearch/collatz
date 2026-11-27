@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T17:34:20.267596+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "7a80f71841e10c32ab8dcc702ca182d050096bb45d8ccdd9f76db5373e7807f9",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 27,
+    "executed_cases": 1,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "mass/check_first_arrival_energy.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "arithmetic/check_tetrad_rank.py",
+      "arithmetic/check_dual_cuts.py",
+      "arithmetic/check_full_step_chart.py",
+      "arithmetic/check_full_circuit_inversions.py",
+      "arithmetic/check_farey_tile.py",
+      "arithmetic/check_width_three.py",
+      "arithmetic/check_upper_bundle.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "linear/check_source_suffix.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_plateau_components.py",
+      "source_sha256": "f0c8c64121a8f19adfefc41cc068fedfb53a06126f5114e7bd4fb23d4fafa096",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.15,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.186,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"curvature_invariant_edges\": 38,\n  \"distinct_components\": 70,\n  \"exact_product_caps\": 5,\n  \"joint_environment_checks\": 4961,\n  \"lifetime_incidence_checks\": 551,\n  \"literal_cutoff_maximum\": 801,\n  \"long_interval_nonempty_checks\": 5,\n  \"maximal_plateau_examples\": [\n    [\n      21,\n      79,\n      \"8/5\"\n    ],\n    [\n      117,\n      291,\n      \"27/17\"\n    ],\n    [\n      1341,\n      2155,\n      \"65/41\"\n    ],\n    [\n      17217,\n      20491,\n      \"317/200\"\n    ],\n    [\n      126573,\n      157323,\n      \"485/306\"\n    ]\n  ],\n  \"multiple_survivor_checks\": 0,\n  \"persistent_component_cases\": 5,\n  \"window_origins_checked\": 16010\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T17:34:20.604000+00:00"
+}

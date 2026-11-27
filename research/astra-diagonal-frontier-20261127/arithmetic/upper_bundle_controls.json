@@ -1,0 +1,30 @@
+{
+  "generic_cut_77": "two components to one at 8/5",
+  "literal_bundle_images": 17106,
+  "local_critical_incoming_valuations": {
+    "2": 60,
+    "3": 60
+  },
+  "local_minimum_candidates": 120,
+  "ordinary_edges": 14966,
+  "plus_only_checks": 10693,
+  "rational_control": {
+    "ceiling_clock": "13/8",
+    "cutoff": 17,
+    "full_denominator": 5,
+    "native_clock": "5/3",
+    "numerators": [
+      23,
+      37,
+      29
+    ]
+  },
+  "two_choice_sources": 2140,
+  "unit_cycle_critical_drop": "2 to 5/3",
+  "valuations": [
+    1,
+    2,
+    3,
+    4
+  ]
+}
