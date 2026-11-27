@@ -1,0 +1,138 @@
+{
+  "5/4": [
+    {
+      "depth": 4,
+      "words": 2,
+      "probability": "3/32",
+      "auxiliary_gate": "1536/3125",
+      "individual_Z_tests": 6,
+      "largest_terminal": 161
+    },
+    {
+      "depth": 6,
+      "words": 4,
+      "probability": "5/128",
+      "auxiliary_gate": "32768/78125",
+      "individual_Z_tests": 12,
+      "largest_terminal": 1457
+    },
+    {
+      "depth": 8,
+      "words": 11,
+      "probability": "19/1024",
+      "auxiliary_gate": "720896/1953125",
+      "individual_Z_tests": 33,
+      "largest_terminal": 13121
+    },
+    {
+      "depth": 9,
+      "words": 18,
+      "probability": "27/2048",
+      "auxiliary_gate": "17301504/48828125",
+      "individual_Z_tests": 54,
+      "largest_terminal": 39365
+    }
+  ],
+  "3/2": [
+    {
+      "depth": 4,
+      "words": 7,
+      "probability": "13/64",
+      "auxiliary_gate": "112/243",
+      "individual_Z_tests": 21,
+      "largest_terminal": 161
+    },
+    {
+      "depth": 6,
+      "words": 30,
+      "probability": "1/8",
+      "auxiliary_gate": "2560/6561",
+      "individual_Z_tests": 90,
+      "largest_terminal": 1457
+    },
+    {
+      "depth": 8,
+      "words": 143,
+      "probability": "337/4096",
+      "auxiliary_gate": "183040/531441",
+      "individual_Z_tests": 429,
+      "largest_terminal": 13121
+    },
+    {
+      "depth": 9,
+      "words": 273,
+      "probability": "531/8192",
+      "auxiliary_gate": "512512/1594323",
+      "individual_Z_tests": 819,
+      "largest_terminal": 39365
+    }
+  ],
+  "7/4": [
+    {
+      "depth": 4,
+      "words": 14,
+      "probability": "35/128",
+      "auxiliary_gate": "315904/823543",
+      "individual_Z_tests": 42,
+      "largest_terminal": 161
+    },
+    {
+      "depth": 6,
+      "words": 76,
+      "probability": "49/256",
+      "auxiliary_gate": "12451840/40353607",
+      "individual_Z_tests": 228,
+      "largest_terminal": 1457
+    },
+    {
+      "depth": 8,
+      "words": 715,
+      "probability": "2605/16384",
+      "auxiliary_gate": "190024450048/678223072849",
+      "individual_Z_tests": 2145,
+      "largest_terminal": 13121
+    },
+    {
+      "depth": 9,
+      "words": 1618,
+      "probability": "4495/32768",
+      "auxiliary_gate": "1227692179456/4747561509943",
+      "individual_Z_tests": 4854,
+      "largest_terminal": 39365
+    }
+  ],
+  "19/10": [
+    {
+      "depth": 4,
+      "words": 14,
+      "probability": "35/128",
+      "auxiliary_gate": "279460000/893871739",
+      "individual_Z_tests": 42,
+      "largest_terminal": 161
+    },
+    {
+      "depth": 6,
+      "words": 132,
+      "probability": "231/1024",
+      "auxiliary_gate": "31203118000000/116490258898219",
+      "individual_Z_tests": 396,
+      "largest_terminal": 1457
+    },
+    {
+      "depth": 8,
+      "words": 1430,
+      "probability": "6435/32768",
+      "auxiliary_gate": "3653833069000000000/15181127029874798299",
+      "individual_Z_tests": 4290,
+      "largest_terminal": 13121
+    },
+    {
+      "depth": 9,
+      "words": 4862,
+      "probability": "12155/65536",
+      "auxiliary_gate": "1263632607982000000000/5480386857784802185939",
+      "individual_Z_tests": 14586,
+      "largest_terminal": 39365
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Replay frozen finite controls in both Python modes; no mathematical extrapolation."""
+import argparse
 import ast
 import hashlib
 import json
@@ -87,6 +88,23 @@ CONTROLS = [
     ("cycles/check_residue_support_and_diversity.py", [], "cycles/RESIDUE_SUPPORT_DIVERSITY_CONTROLS.json"),
     ("cycles/parity_lag_energy_certificate.py", [], "cycles/PARITY_LAG_ENERGY_CHECK.json"),
     ("cycles/ternary_parity_review_check.py", [], "cycles/TERNARY_PARITY_REVIEW_CONTROLS.json"),
+    ("pointwise/inverse_gain_spectrum_check.py", [], "pointwise/INVERSE_GAIN_SPECTRUM_CHECK.json"),
+    ("pointwise/check_inverse_gain_graph.py", [], "pointwise/INVERSE_GAIN_GRAPH_CONTROLS.json"),
+    ("pointwise/check_principal_pressure_obstruction.py", [], "pointwise/PRINCIPAL_PRESSURE_CONTROLS.json"),
+    ("pointwise/rebuild_pressure_forward.py", [], "pointwise/INDEPENDENT_PRESSURE_FORWARD.json"),
+    ("pointwise/independent_pressure_audit.py", [], "pointwise/INDEPENDENT_PRESSURE_AUDIT_CONTROLS.json"),
+    ("pointwise/transient_entropy_certificate.py", [], "pointwise/TRANSIENT_ENTROPY_CONTROLS.json"),
+    ("pointwise/transient_parity_review_check.py", [], "pointwise/TRANSIENT_PARITY_REVIEW_CHECK.json"),
+    ("pointwise/sharp_correlation_controls.py", [], "pointwise/SHARP_CORRELATION_CONTROLS.json"),
+    ("pointwise/check_adaptive_green_component.py", [], "pointwise/ADAPTIVE_GREEN_COMPONENT_CONTROLS.json"),
+    ("pointwise/independent_green_cell_controls.py", [], "pointwise/INDEPENDENT_GREEN_CELL_CONTROLS.json"),
+    ("pointwise/high_floor_pressure_controls.py", [], "pointwise/HIGH_FLOOR_PRESSURE_CONTROLS.json"),
+    ("pointwise/compact_shadow_check.py", [], "pointwise/COMPACT_SHADOW_CHECK.json"),
+    ("pointwise/check_rare_gate_profile.py", [], "pointwise/RARE_GATE_PROFILE_CONTROLS.json"),
+    ("pointwise/rare_gate_joint_review_check.py", [], "pointwise/RARE_GATE_JOINT_REVIEW_CHECK.json"),
+    ("pointwise/check_final_phase_audits.py", [], "pointwise/FINAL_PHASE_INDEPENDENT_CONTROLS.json"),
+    ("pointwise/independent_all_place_controls.py", [], "pointwise/INDEPENDENT_ALL_PLACE_CONTROLS.json"),
+    ("pointwise/check_short_closure_interfaces.py", [], "pointwise/SHORT_CLOSURE_INTERFACE_CONTROLS.json"),
 ]
 DEPENDENCIES = {
     "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
@@ -108,18 +126,27 @@ DEPENDENCIES = {
     "cycles/rational_lag_review_check.py": ["cycles/review_physical_odd_transfer.py"],
     "cycles/generate_adjacent_period_lean.py": ["cycles/AdjacentPeriodCensus.lean", "cycles/certify_adjacent_gap_exclusion_independent.py"],
     "cycles/check_residue_support_and_diversity.py": ["cycles/check_residue_source_physical.py"],
+    "pointwise/rebuild_pressure_forward.py": ["pointwise/independent_pressure_forward.cpp"],
+    "pointwise/independent_pressure_audit.py": ["pointwise/INDEPENDENT_PRESSURE_FORWARD.json"],
 }
+WORKING_DIRECTORIES = {"pointwise/independent_pressure_audit.py": "pointwise"}
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--start-index', type=int, default=0,
+                        help='zero-based first control; default replays the entire packet')
+    args = parser.parse_args()
+    if not 0 <= args.start_index <= len(CONTROLS):
+        parser.error('start index is outside the control list')
     receipt = []
-    for script, inputs, expected in CONTROLS:
+    for script, inputs, expected in CONTROLS[args.start_index:]:
         outputs = []
         for mode in ([], ["-O"]):
             result = subprocess.run(
                 [sys.executable, *mode, "-B", str(ROOT / script),
                  *(str(ROOT / value) for value in inputs)],
-                cwd=ROOT, capture_output=True)
+                cwd=ROOT / WORKING_DIRECTORIES.get(script, '.'), capture_output=True)
             if result.returncode or result.stderr:
                 sys.stderr.buffer.write(result.stdout + result.stderr)
                 raise SystemExit(result.returncode or 1)

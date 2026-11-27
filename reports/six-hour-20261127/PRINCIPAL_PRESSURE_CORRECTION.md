@@ -1,0 +1,3 @@
+# Dyadic valuation in the rational shadow example
+
+The original final example asserted that the initial difference from $23/5$ has valuation $5k+1$. Its exact formula is $u_k2^{5k+1}/5$, so its valuation is $5k+1+v_2(u_k)$. At $k=2$, $u_k=4$ and the valuation is $13$, two more than $11$. The proof needs only the lower bound $5k+1$. All prescribed ordinary valuations, the least dyadic representative, the ternary terminal, both nested completions and the moment inequalities are unchanged. The independent reviewer identified this literal error; the original manuscript and manifest are preserved. The corrected manuscript changes this one sentence only.

@@ -1,0 +1,93 @@
+{
+  "selected_repository_sources": [
+    {
+      "commit": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+      "path": "reports/astra-six-hour-20261127/FOURTH_REVIEW.md",
+      "sha256": "75b41afa7a508f886801a83e3d569a6153253ce432986d66cc59ccc3e5889212",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    },
+    {
+      "commit": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+      "path": "research/astra-six-hour-20261127/global/ADAPTIVE_GREEN.md",
+      "sha256": "d8ba6b18cc09eb58555a7f7b94f2f914ec44226c34b1076fa9d1cac1f40fdbfa",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    },
+    {
+      "commit": "67e5cdb3c1689836bf1dc01a57a7e46b85449dcd",
+      "path": "research/astra-six-hour-20261127/root/RATIONAL_ENERGY.md",
+      "sha256": "873b76f4bb4932748d4ddd2591a993395a66c807d4c34ff8b4fb45ec7964bbae",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    },
+    {
+      "commit": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "path": "research/six-hour-20261127/arithmetic/TERNARY_PAST_ENTROPY.md",
+      "sha256": "6f5d6a4959c95cd1c83e83242d82d1cfa9133e7af6c7991806d72e68aeea2ebd",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    },
+    {
+      "commit": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "path": "research/six-hour-20261127/coupling/NESTED_COVER.md",
+      "sha256": "1c99ea722a11ac2f94f04cbc2ed3225a0bdc2bf56304bd4070e2af0b9e9db2d2",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    },
+    {
+      "commit": "807d67ab049f1646398d8ca8c20948cdc1d87742",
+      "path": "research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md",
+      "sha256": "a26705dbf044807e2b0a72ded8b30847f3d000d318ab9f3a9d8ef5a2417b63b4",
+      "scope": "Selected written source read and reconstructed; foreign Lean not rebuilt."
+    }
+  ],
+  "primary_sources": [
+    {
+      "name": "Inselmann, Theorem 3.8",
+      "url": "https://arxiv.org/html/2402.03276v3",
+      "scope": "Full odd-clock density envelope directly reopened and time/source ranges checked; imported published theorem."
+    },
+    {
+      "name": "Weaver Paper 170",
+      "url": "https://rstation.ai/problems/collatz/papers/170",
+      "scope": "Theorem 2 and Corollary 3 read, including odd-weighted entropy and time-before-height order; source theorem not rebuilt."
+    },
+    {
+      "name": "Weaver Paper 176",
+      "url": "https://rstation.ai/problems/collatz/papers/176",
+      "scope": "Theorem 1 and introduction to tilted terminal moments read as prior work; no new priority claim for harmonic terminal moments."
+    },
+    {
+      "name": "Weaver Paper 177",
+      "url": "https://rstation.ai/problems/collatz/papers/177",
+      "scope": "Prior inverse gain inspected."
+    },
+    {
+      "name": "Weaver Paper 178",
+      "url": "https://rstation.ai/problems/collatz/papers/178",
+      "scope": "Prior inverse gain and negative-five barrier inspected."
+    },
+    {
+      "name": "Weaver Paper 207",
+      "url": "https://rstation.ai/problems/collatz/papers/207",
+      "scope": "Prior corrected height and minimizer inspected."
+    },
+    {
+      "name": "Alon rank bounds",
+      "url": "https://web.stanford.edu/class/cs114/readings/JL-Alon.pdf",
+      "scope": "Primary finite rank lemmas read for the sharp calendar converse."
+    },
+    {
+      "name": "Barina 2025",
+      "url": "https://link.springer.com/article/10.1007/s11227-025-07337-0",
+      "scope": "Published 2^71 verification floor is a source input to the earlier cycle exclusion, not a claim to the latest record."
+    },
+    {
+      "name": "MIT RH/Dirichlet-GRH verification report",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "scope": "Source page directly inspected: reports completion of kernel and comparator checks for RH and Dirichlet GRH. Not rebuilt here and not generalized to all automorphic L-functions."
+    },
+    {
+      "name": "November logarithmic-forms preprint",
+      "url": "https://arxiv.org/html/2611.30820v1",
+      "scope": "Theorem 1.1 and Corollary 1.2 inspected as source-qualified input to comparison branches; not independently proved or formalized here."
+    }
+  ],
+  "universal_proof": false
+}

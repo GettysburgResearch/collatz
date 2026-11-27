@@ -1,0 +1,86 @@
+[
+  {
+    "B": 1,
+    "odd_sources": 1,
+    "distinct_global_superlevel_targets": 1,
+    "targets_above_B": 0,
+    "true_largest_superlevel_target": 1,
+    "maximizing_source_at_largest": 1,
+    "exact_G_at_largest": "1",
+    "threshold_search_final_causes": {
+      "repetition": 1
+    },
+    "longest_stopped_seed_search": 1,
+    "complete_search_visits_including_endpoints": 1,
+    "complete_search_largest_odd_height": 1,
+    "table_sha256": "d2fab2a33b1c3438929311540f8d922ff51b334207b3641d30db80625f777acb"
+  },
+  {
+    "B": 31,
+    "odd_sources": 16,
+    "distinct_global_superlevel_targets": 53,
+    "targets_above_B": 37,
+    "true_largest_superlevel_target": 3077,
+    "maximizing_source_at_largest": 27,
+    "exact_G_at_largest": "1853020188851841/17592186044416",
+    "threshold_search_final_causes": {
+      "repetition": 13,
+      "below_threshold": 3
+    },
+    "longest_stopped_seed_search": 41,
+    "complete_search_visits_including_endpoints": 147,
+    "complete_search_largest_odd_height": 3077,
+    "table_sha256": "f2097bb4604ba9dc0c66b5ec28eacf29464067a50d67ab23c5157ceeedf053f7"
+  },
+  {
+    "B": 511,
+    "odd_sources": 256,
+    "distinct_global_superlevel_targets": 399,
+    "targets_above_B": 143,
+    "true_largest_superlevel_target": 13121,
+    "maximizing_source_at_largest": 447,
+    "exact_G_at_largest": "31381059609/1073741824",
+    "threshold_search_final_causes": {
+      "repetition": 222,
+      "below_threshold": 34
+    },
+    "longest_stopped_seed_search": 53,
+    "complete_search_visits_including_endpoints": 5345,
+    "complete_search_largest_odd_height": 13121,
+    "table_sha256": "b63617b8244f8a1581a2f1b8378e5012354b5e68bf5a34df5a53c752b0f67c9a"
+  },
+  {
+    "B": 4095,
+    "odd_sources": 2048,
+    "distinct_global_superlevel_targets": 3225,
+    "targets_above_B": 1177,
+    "true_largest_superlevel_target": 425645,
+    "maximizing_source_at_largest": 1819,
+    "exact_G_at_largest": "31381059609/134217728",
+    "threshold_search_final_causes": {
+      "repetition": 1776,
+      "below_threshold": 272
+    },
+    "longest_stopped_seed_search": 85,
+    "complete_search_visits_including_endpoints": 58346,
+    "complete_search_largest_odd_height": 425645,
+    "table_sha256": "33459218f9a66cbdbce5fc03a502a5a721ab8c10f1271d01dcaf83f94203c17f"
+  },
+  {
+    "B": 65535,
+    "odd_sources": 32768,
+    "distinct_global_superlevel_targets": 52048,
+    "targets_above_B": 19280,
+    "true_largest_superlevel_target": 197759717,
+    "maximizing_source_at_largest": 60975,
+    "exact_G_at_largest": "239299329230617529590083/73786976294838206464",
+    "threshold_search_final_causes": {
+      "repetition": 28320,
+      "below_threshold": 4448
+    },
+    "longest_stopped_seed_search": 126,
+    "complete_search_visits_including_endpoints": 1228333,
+    "complete_search_largest_odd_height": 197759717,
+    "table_sha256": "accfb338c7cda16bfb27d53bfc8b39cec32a460df5c152c93a5553d37b4bb394"
+  }
+]

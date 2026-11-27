@@ -1,0 +1,52 @@
+[
+  {
+    "above_bound": 0,
+    "argmax_source": 1,
+    "bound": 1,
+    "full_DAG_nodes": 1,
+    "full_output_hash": "d2fab2a33b1c3438929311540f8d922ff51b334207b3641d30db80625f777acb",
+    "largest": 1,
+    "targets": 1,
+    "visits": 1
+  },
+  {
+    "above_bound": 37,
+    "argmax_source": 27,
+    "bound": 31,
+    "full_DAG_nodes": 53,
+    "full_output_hash": "f2097bb4604ba9dc0c66b5ec28eacf29464067a50d67ab23c5157ceeedf053f7",
+    "largest": 3077,
+    "targets": 53,
+    "visits": 147
+  },
+  {
+    "above_bound": 143,
+    "argmax_source": 447,
+    "bound": 511,
+    "full_DAG_nodes": 399,
+    "full_output_hash": "b63617b8244f8a1581a2f1b8378e5012354b5e68bf5a34df5a53c752b0f67c9a",
+    "largest": 13121,
+    "targets": 399,
+    "visits": 5345
+  },
+  {
+    "above_bound": 1177,
+    "argmax_source": 1819,
+    "bound": 4095,
+    "full_DAG_nodes": 3236,
+    "full_output_hash": "33459218f9a66cbdbce5fc03a502a5a721ab8c10f1271d01dcaf83f94203c17f",
+    "largest": 425645,
+    "targets": 3225,
+    "visits": 58346
+  },
+  {
+    "above_bound": 19280,
+    "argmax_source": 60975,
+    "bound": 65535,
+    "full_DAG_nodes": 52063,
+    "full_output_hash": "accfb338c7cda16bfb27d53bfc8b39cec32a460df5c152c93a5553d37b4bb394",
+    "largest": 197759717,
+    "targets": 52048,
+    "visits": 1228333
+  }
+]

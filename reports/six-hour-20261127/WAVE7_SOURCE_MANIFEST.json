@@ -1,0 +1,636 @@
+{
+  "parent_commit": "7af83b786636abba2f44fe8c81441153331377fc",
+  "scope": "Frozen written results and finite controls; the corrected pressure manuscript is active and the exact original is preserved as historical text. No new universal termination assertion.",
+  "entries": [
+    {
+      "source": "sixhour-cycle-frontier-review/INVERSE_GAIN_ESCAPE_SPECTRUM.md",
+      "source_sha256": "c75d046300078cf11c2c5eecaf60a4ba7f53506514ecb1c128be2ac5085f66b2",
+      "path": "research/six-hour-20261127/pointwise/INVERSE_GAIN_ESCAPE_SPECTRUM.md",
+      "integrated_sha256": "c75d046300078cf11c2c5eecaf60a4ba7f53506514ecb1c128be2ac5085f66b2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/inverse_gain_spectrum_check.py",
+      "source_sha256": "a024f1c549b2d93bd3c32ad03d83a31f816ed2d03053d8c2fab8f0d615ac67c5",
+      "path": "research/six-hour-20261127/pointwise/inverse_gain_spectrum_check.py",
+      "integrated_sha256": "a024f1c549b2d93bd3c32ad03d83a31f816ed2d03053d8c2fab8f0d615ac67c5",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INVERSE_GAIN_SPECTRUM_CHECK.json",
+      "source_sha256": "6a066e327bc0f28943c45efe87e4bedf76f2e7edf82585e2472d16f3e126d13d",
+      "path": "research/six-hour-20261127/pointwise/INVERSE_GAIN_SPECTRUM_CHECK.json",
+      "integrated_sha256": "6a066e327bc0f28943c45efe87e4bedf76f2e7edf82585e2472d16f3e126d13d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INVERSE_GAIN_SPECTRUM_FREEZE.sha256",
+      "source_sha256": "f0ccb2a7dc7f264b993f479c44eb7d29475ff4cb454d0343ad6072a7b6b6e74a",
+      "path": "reports/six-hour-20261127/INVERSE_GAIN_SPECTRUM_FREEZE.sha256",
+      "integrated_sha256": "f0ccb2a7dc7f264b993f479c44eb7d29475ff4cb454d0343ad6072a7b6b6e74a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_TRANSIENT_ENTROPY_REVIEW.md",
+      "source_sha256": "d1a77646ae1d376dd7190c33ab0da9d8623926763bfe8b3a664c93fcc3f4c76c",
+      "path": "reports/six-hour-20261127/INDEPENDENT_TRANSIENT_ENTROPY_REVIEW.md",
+      "integrated_sha256": "d1a77646ae1d376dd7190c33ab0da9d8623926763bfe8b3a664c93fcc3f4c76c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/transient_parity_review_check.py",
+      "source_sha256": "b6d5f880061585ef8880964d04babc85418b851650af5f573930504990431c08",
+      "path": "research/six-hour-20261127/pointwise/transient_parity_review_check.py",
+      "integrated_sha256": "b6d5f880061585ef8880964d04babc85418b851650af5f573930504990431c08",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/TRANSIENT_PARITY_REVIEW_CHECK.json",
+      "source_sha256": "5b384c5f8671cba1509fcac620865edd06270b91f42baa2d938d358159587c8b",
+      "path": "research/six-hour-20261127/pointwise/TRANSIENT_PARITY_REVIEW_CHECK.json",
+      "integrated_sha256": "5b384c5f8671cba1509fcac620865edd06270b91f42baa2d938d358159587c8b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/TRANSIENT_PARITY_REVIEW_FREEZE.sha256",
+      "source_sha256": "a8fafa1b175fc38bb868b580849e23d1bf3cbdcd0303a901d6c16207918f2cb8",
+      "path": "reports/six-hour-20261127/TRANSIENT_PARITY_REVIEW_FREEZE.sha256",
+      "integrated_sha256": "a8fafa1b175fc38bb868b580849e23d1bf3cbdcd0303a901d6c16207918f2cb8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/MOVING_LAG_CRITICAL_COUNTERMODELS.md",
+      "source_sha256": "85cdf780817e0a9c0aa3882e6f092b068a27b4cd0f560c017eb12bfa8839abae",
+      "path": "research/six-hour-20261127/pointwise/MOVING_LAG_CRITICAL_COUNTERMODELS.md",
+      "integrated_sha256": "85cdf780817e0a9c0aa3882e6f092b068a27b4cd0f560c017eb12bfa8839abae",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/PHYSICAL_CELL_ENTROPY.md",
+      "source_sha256": "7c12ea31e53b0aa25fa77b7c9a1464f67cfb1388582768ffbba92ae268f00e68",
+      "path": "research/six-hour-20261127/pointwise/PHYSICAL_CELL_ENTROPY.md",
+      "integrated_sha256": "7c12ea31e53b0aa25fa77b7c9a1464f67cfb1388582768ffbba92ae268f00e68",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_SHARP_CALENDAR_REVIEW.md",
+      "source_sha256": "315f36d2bad8e90115cfe9aa2e0aeb805db6cf80a0dbe04f2326e19adb095b56",
+      "path": "reports/six-hour-20261127/INDEPENDENT_SHARP_CALENDAR_REVIEW.md",
+      "integrated_sha256": "315f36d2bad8e90115cfe9aa2e0aeb805db6cf80a0dbe04f2326e19adb095b56",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FINAL_FRONTIER_WAVE.sha256",
+      "source_sha256": "bf01dcb615e26d3a1720e21e9ce5ddb0f84f3ff1f40fdd069923c73f9a59495f",
+      "path": "reports/six-hour-20261127/FINAL_FRONTIER_WAVE.sha256",
+      "integrated_sha256": "bf01dcb615e26d3a1720e21e9ce5ddb0f84f3ff1f40fdd069923c73f9a59495f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PRINCIPAL_SOURCE_PRESSURE_OBSTRUCTION_CORRECTED.md",
+      "source_sha256": "d23dca8e009901b7eaf722bb58269adcd57e64ecce4426771e23ca87d77babd9",
+      "path": "research/six-hour-20261127/pointwise/PRINCIPAL_SOURCE_PRESSURE_OBSTRUCTION_CORRECTED.md",
+      "integrated_sha256": "d23dca8e009901b7eaf722bb58269adcd57e64ecce4426771e23ca87d77babd9",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PRINCIPAL_PRESSURE_CORRECTION.md",
+      "source_sha256": "212f05d76a2a74362e1f93ce01cd53e45bd044e428d2fbb1ad225f58f0335556",
+      "path": "reports/six-hour-20261127/PRINCIPAL_PRESSURE_CORRECTION.md",
+      "integrated_sha256": "212f05d76a2a74362e1f93ce01cd53e45bd044e428d2fbb1ad225f58f0335556",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PRINCIPAL_PRESSURE_CONTROLS.json",
+      "source_sha256": "87945df427aff014a06864db16a5da7e3b37259fd05dec7f0b3749faece979a7",
+      "path": "research/six-hour-20261127/pointwise/PRINCIPAL_PRESSURE_CONTROLS.json",
+      "integrated_sha256": "87945df427aff014a06864db16a5da7e3b37259fd05dec7f0b3749faece979a7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/PRINCIPAL_SOURCE_PRESSURE_OBSTRUCTION.md",
+      "source_sha256": "a47625d1e0c4dea5137f22ad49cfc99925b308d108cc52054c3edf6348bcd8e7",
+      "path": "reports/six-hour-20261127/source-originals/PRINCIPAL_SOURCE_PRESSURE_OBSTRUCTION.md.original.txt",
+      "integrated_sha256": "a47625d1e0c4dea5137f22ad49cfc99925b308d108cc52054c3edf6348bcd8e7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_principal_pressure_obstruction.py",
+      "source_sha256": "0f8ecab0bd267b328e47c95d54ff6ee1f4ccc13e44f5973e6bb64f9707f1e765",
+      "path": "research/six-hour-20261127/pointwise/check_principal_pressure_obstruction.py",
+      "integrated_sha256": "0f8ecab0bd267b328e47c95d54ff6ee1f4ccc13e44f5973e6bb64f9707f1e765",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_PRINCIPAL_PRESSURE_CORRECTION.json",
+      "source_sha256": "84f686d62103b0a7c2ad87db29e996a66ca38e5177e9e0b3002c2b9aec17b11c",
+      "path": "reports/six-hour-20261127/FROZEN_PRINCIPAL_PRESSURE_CORRECTION.json",
+      "integrated_sha256": "84f686d62103b0a7c2ad87db29e996a66ca38e5177e9e0b3002c2b9aec17b11c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_PRINCIPAL_PRESSURE_OBSTRUCTION.json",
+      "source_sha256": "f75b540224f2205c62401c72b823c458773cf7832f4262d811cc6c4742ba322a",
+      "path": "reports/six-hour-20261127/FROZEN_PRINCIPAL_PRESSURE_OBSTRUCTION.json",
+      "integrated_sha256": "f75b540224f2205c62401c72b823c458773cf7832f4262d811cc6c4742ba322a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/INVERSE_GAIN_GRAPH_CONTROLS.json",
+      "source_sha256": "d3cf7dfe8e218f45b8595ae3f47a43fd3453fc1c46e38b506a7daabce12406d3",
+      "path": "research/six-hour-20261127/pointwise/INVERSE_GAIN_GRAPH_CONTROLS.json",
+      "integrated_sha256": "d3cf7dfe8e218f45b8595ae3f47a43fd3453fc1c46e38b506a7daabce12406d3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/INVERSE_GAIN_SPECTRUM_INDEPENDENT_REVIEW.md",
+      "source_sha256": "033cb830d22af17310f3fb847e267baec3bfad26d6e85aa90ebb3af9d3db1993",
+      "path": "reports/six-hour-20261127/INVERSE_GAIN_SPECTRUM_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "033cb830d22af17310f3fb847e267baec3bfad26d6e85aa90ebb3af9d3db1993",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_inverse_gain_graph.py",
+      "source_sha256": "818667db40788b1a7ecd77036623b4be46f259c09fe2521bf1a41fa4026a7d4e",
+      "path": "research/six-hour-20261127/pointwise/check_inverse_gain_graph.py",
+      "integrated_sha256": "818667db40788b1a7ecd77036623b4be46f259c09fe2521bf1a41fa4026a7d4e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_INVERSE_GAIN_SPECTRUM_AUDIT.json",
+      "source_sha256": "9e48da5a1d105e2d4d808b4405c59c6d571010f1191eb3575ce96181ee5d6c68",
+      "path": "reports/six-hour-20261127/FROZEN_INVERSE_GAIN_SPECTRUM_AUDIT.json",
+      "integrated_sha256": "9e48da5a1d105e2d4d808b4405c59c6d571010f1191eb3575ce96181ee5d6c68",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ADAPTIVE_GREEN_COMPONENT_CONTROLS.json",
+      "source_sha256": "c06bf64ac5905301f38a6f5cf81d811abeaa13323b47c47a8f36106abde84c18",
+      "path": "research/six-hour-20261127/pointwise/ADAPTIVE_GREEN_COMPONENT_CONTROLS.json",
+      "integrated_sha256": "c06bf64ac5905301f38a6f5cf81d811abeaa13323b47c47a8f36106abde84c18",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/ADAPTIVE_GREEN_COMPONENT_SPECTRUM.md",
+      "source_sha256": "5871a024d93d6ce947d74cb732271da46462b03f0db024c2f8c9d68d91140134",
+      "path": "research/six-hour-20261127/pointwise/ADAPTIVE_GREEN_COMPONENT_SPECTRUM.md",
+      "integrated_sha256": "5871a024d93d6ce947d74cb732271da46462b03f0db024c2f8c9d68d91140134",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_adaptive_green_component.py",
+      "source_sha256": "11ebc27ad7f14709de58aa865b6809be324a88c39a2e4f0b7d39b94e8c253913",
+      "path": "research/six-hour-20261127/pointwise/check_adaptive_green_component.py",
+      "integrated_sha256": "11ebc27ad7f14709de58aa865b6809be324a88c39a2e4f0b7d39b94e8c253913",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_ADAPTIVE_GREEN_COMPONENT_SPECTRUM.json",
+      "source_sha256": "04f4a2033175f3bdd5af000ddd45cda784bd77183c5341d3969384060b694b0a",
+      "path": "reports/six-hour-20261127/FROZEN_ADAPTIVE_GREEN_COMPONENT_SPECTRUM.json",
+      "integrated_sha256": "04f4a2033175f3bdd5af000ddd45cda784bd77183c5341d3969384060b694b0a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_PRESSURE_AUDIT_CONTROLS.json",
+      "source_sha256": "d55d9da9fe3c54c2a6b91d3d8c90e1a3b7e071b9e34a4b35a3570246ff2d9501",
+      "path": "research/six-hour-20261127/pointwise/INDEPENDENT_PRESSURE_AUDIT_CONTROLS.json",
+      "integrated_sha256": "d55d9da9fe3c54c2a6b91d3d8c90e1a3b7e071b9e34a4b35a3570246ff2d9501",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_PRESSURE_FORWARD.json",
+      "source_sha256": "f34f8bf23af6fb69b46e840de9ca07839b3c73bd6a816fa6a88a31075059ef4d",
+      "path": "research/six-hour-20261127/pointwise/INDEPENDENT_PRESSURE_FORWARD.json",
+      "integrated_sha256": "f34f8bf23af6fb69b46e840de9ca07839b3c73bd6a816fa6a88a31075059ef4d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_PRINCIPAL_PRESSURE_REVIEW.md",
+      "source_sha256": "06efdedd28f0fc5ab32530d0287cd80063a2c4e334432b45bbf10e7fc976056d",
+      "path": "reports/six-hour-20261127/INDEPENDENT_PRINCIPAL_PRESSURE_REVIEW.md",
+      "integrated_sha256": "06efdedd28f0fc5ab32530d0287cd80063a2c4e334432b45bbf10e7fc976056d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_pressure_audit.py",
+      "source_sha256": "79257a2ecfe997b0fed4602693bc0aaead552d01c6e613a1fc3f1f221f6fe35f",
+      "path": "research/six-hour-20261127/pointwise/independent_pressure_audit.py",
+      "integrated_sha256": "79257a2ecfe997b0fed4602693bc0aaead552d01c6e613a1fc3f1f221f6fe35f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_pressure_forward.cpp",
+      "source_sha256": "40aef38790b007062ccf4cab29abe60f03b44c0d4e900caf1681dc2889da5d4b",
+      "path": "research/six-hour-20261127/pointwise/independent_pressure_forward.cpp",
+      "integrated_sha256": "40aef38790b007062ccf4cab29abe60f03b44c0d4e900caf1681dc2889da5d4b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_PRINCIPAL_PRESSURE_MANIFEST.json",
+      "source_sha256": "fa2e648340ffe510d56a2c774f799f4d16d5fa7de45a2eb5ab5717fe9a4640e1",
+      "path": "reports/six-hour-20261127/INDEPENDENT_PRINCIPAL_PRESSURE_MANIFEST.json",
+      "integrated_sha256": "fa2e648340ffe510d56a2c774f799f4d16d5fa7de45a2eb5ab5717fe9a4640e1",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/TRANSIENT_ENTROPY_AND_CRITICAL_TRACE.md",
+      "source_sha256": "960aa9089c4c23c63f76cd6e1182528753642994093c63e084876e5280f1078f",
+      "path": "research/six-hour-20261127/pointwise/TRANSIENT_ENTROPY_AND_CRITICAL_TRACE.md",
+      "integrated_sha256": "960aa9089c4c23c63f76cd6e1182528753642994093c63e084876e5280f1078f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/TRANSIENT_ENTROPY_CONTROLS.json",
+      "source_sha256": "927d1621da6aceb65f846f80401aeb0df3c2a36cbab8f8568012993ff096a0c5",
+      "path": "research/six-hour-20261127/pointwise/TRANSIENT_ENTROPY_CONTROLS.json",
+      "integrated_sha256": "927d1621da6aceb65f846f80401aeb0df3c2a36cbab8f8568012993ff096a0c5",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/transient_entropy_certificate.py",
+      "source_sha256": "81ea0d7835b64bfb3e52c78cb49286a8a0b32257ba1b1b0699f68509fd432a84",
+      "path": "research/six-hour-20261127/pointwise/transient_entropy_certificate.py",
+      "integrated_sha256": "81ea0d7835b64bfb3e52c78cb49286a8a0b32257ba1b1b0699f68509fd432a84",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/TRANSIENT_ENTROPY_MANIFEST.json",
+      "source_sha256": "51f2bff68410765f8d2718479bcb0e581afa10307111131cb401b9090295cad8",
+      "path": "reports/six-hour-20261127/TRANSIENT_ENTROPY_MANIFEST.json",
+      "integrated_sha256": "51f2bff68410765f8d2718479bcb0e581afa10307111131cb401b9090295cad8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SHARP_CORRELATION_CONTROLS.json",
+      "source_sha256": "3baf6ad7a2848fe2cca2d29527479c9512a2a69bf15cf6b08cd8238a4961ad6c",
+      "path": "research/six-hour-20261127/pointwise/SHARP_CORRELATION_CONTROLS.json",
+      "integrated_sha256": "3baf6ad7a2848fe2cca2d29527479c9512a2a69bf15cf6b08cd8238a4961ad6c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SHARP_MOVING_CORRELATION_SCALE.md",
+      "source_sha256": "c2d4e7cc8b1ad5501ab4264ec287581f7eeda1b07fcce8ba3ea7c303e390cab8",
+      "path": "research/six-hour-20261127/pointwise/SHARP_MOVING_CORRELATION_SCALE.md",
+      "integrated_sha256": "c2d4e7cc8b1ad5501ab4264ec287581f7eeda1b07fcce8ba3ea7c303e390cab8",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/sharp_correlation_controls.py",
+      "source_sha256": "2be7af40d50e041d900e3fe33054b0e858dea0fc96b3504077ae9d43ab87f21c",
+      "path": "research/six-hour-20261127/pointwise/sharp_correlation_controls.py",
+      "integrated_sha256": "2be7af40d50e041d900e3fe33054b0e858dea0fc96b3504077ae9d43ab87f21c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SHARP_CORRELATION_MANIFEST.json",
+      "source_sha256": "6ea57271f3765fe0bd8d9da9a39c2228925a5e2c4e1be93743f8c03428ccc149",
+      "path": "reports/six-hour-20261127/SHARP_CORRELATION_MANIFEST.json",
+      "integrated_sha256": "6ea57271f3765fe0bd8d9da9a39c2228925a5e2c4e1be93743f8c03428ccc149",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_MOVING_LAG_DIMENSION_REVIEW.md",
+      "source_sha256": "367f3a33176e55f2e29b728bff103654f5fceb2b787bc9734f3d45e0b191c49d",
+      "path": "reports/six-hour-20261127/INDEPENDENT_MOVING_LAG_DIMENSION_REVIEW.md",
+      "integrated_sha256": "367f3a33176e55f2e29b728bff103654f5fceb2b787bc9734f3d45e0b191c49d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/RARE_GATE_PHYSICAL_PROFILE.md",
+      "source_sha256": "df9fa6f1870cf335370fec9ad59fb07bf3c77c4ccc89989d64960e44be929119",
+      "path": "research/six-hour-20261127/pointwise/RARE_GATE_PHYSICAL_PROFILE.md",
+      "integrated_sha256": "df9fa6f1870cf335370fec9ad59fb07bf3c77c4ccc89989d64960e44be929119",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/RARE_GATE_PROFILE_CONTROLS.json",
+      "source_sha256": "e29e27c33c1f408f1e04825ee7b7fe8f02393231ed0826e7a2c3a36f18cd45f6",
+      "path": "research/six-hour-20261127/pointwise/RARE_GATE_PROFILE_CONTROLS.json",
+      "integrated_sha256": "e29e27c33c1f408f1e04825ee7b7fe8f02393231ed0826e7a2c3a36f18cd45f6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_rare_gate_profile.py",
+      "source_sha256": "65963fb664710de038d7d10a3e588c77f3fe3ef291f3ccb1957494578effd321",
+      "path": "research/six-hour-20261127/pointwise/check_rare_gate_profile.py",
+      "integrated_sha256": "65963fb664710de038d7d10a3e588c77f3fe3ef291f3ccb1957494578effd321",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_RARE_GATE_PROFILE.json",
+      "source_sha256": "b6b7c2d7fa3405466c764cf1c0a08e40e611d01c06757816e26cf284cc96d855",
+      "path": "reports/six-hour-20261127/FROZEN_RARE_GATE_PROFILE.json",
+      "integrated_sha256": "b6b7c2d7fa3405466c764cf1c0a08e40e611d01c06757816e26cf284cc96d855",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FINAL_PHASE_INDEPENDENT_CONTROLS.json",
+      "source_sha256": "c222180f140ecce0eaa00e6e3034f332d04d05524022e58429aaf229f464f1b6",
+      "path": "research/six-hour-20261127/pointwise/FINAL_PHASE_INDEPENDENT_CONTROLS.json",
+      "integrated_sha256": "c222180f140ecce0eaa00e6e3034f332d04d05524022e58429aaf229f464f1b6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/JOINT_GATE_FRACTIONAL_PRESSURE.md",
+      "source_sha256": "85b05a2755d155feb09ba1924127284cae595e220053cc602e032c613bbeb80f",
+      "path": "research/six-hour-20261127/pointwise/JOINT_GATE_FRACTIONAL_PRESSURE.md",
+      "integrated_sha256": "85b05a2755d155feb09ba1924127284cae595e220053cc602e032c613bbeb80f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_final_phase_audits.py",
+      "source_sha256": "07e7e22c06a5f9d3535116d8dab195869946d84100367e3c757d1d97669a53a0",
+      "path": "research/six-hour-20261127/pointwise/check_final_phase_audits.py",
+      "integrated_sha256": "07e7e22c06a5f9d3535116d8dab195869946d84100367e3c757d1d97669a53a0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_JOINT_FRACTIONAL_PRESSURE.json",
+      "source_sha256": "e0f4c22a6b16bc34235da6a4ee82472a1b885b4c5c59bfefe1a8ef3e8326d9c5",
+      "path": "reports/six-hour-20261127/FROZEN_JOINT_FRACTIONAL_PRESSURE.json",
+      "integrated_sha256": "e0f4c22a6b16bc34235da6a4ee82472a1b885b4c5c59bfefe1a8ef3e8326d9c5",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/COMPACT_RATIONAL_SHADOW_INDEPENDENT_AUDIT.md",
+      "source_sha256": "00e06744f10b0a5690dd5f3c7eb8b2c5a472e0922d011c63a14dc13606fc4cf3",
+      "path": "reports/six-hour-20261127/COMPACT_RATIONAL_SHADOW_INDEPENDENT_AUDIT.md",
+      "integrated_sha256": "00e06744f10b0a5690dd5f3c7eb8b2c5a472e0922d011c63a14dc13606fc4cf3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/HIGH_FLOOR_PRESSURES_INDEPENDENT_AUDIT.md",
+      "source_sha256": "57aaf73a6ae98484f1471df4c3173125e4063f3d9b276fc21d8d9861251951ed",
+      "path": "reports/six-hour-20261127/HIGH_FLOOR_PRESSURES_INDEPENDENT_AUDIT.md",
+      "integrated_sha256": "57aaf73a6ae98484f1471df4c3173125e4063f3d9b276fc21d8d9861251951ed",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_COMPACT_SHADOW_AND_FLOOR_AUDITS.json",
+      "source_sha256": "676350c8b8546ff4ad06da2de20d0ce7c7344347dd27918d76898b864e64754e",
+      "path": "reports/six-hour-20261127/FROZEN_COMPACT_SHADOW_AND_FLOOR_AUDITS.json",
+      "integrated_sha256": "676350c8b8546ff4ad06da2de20d0ce7c7344347dd27918d76898b864e64754e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/HIGH_FLOOR_PRESSURE_CONTROLS.json",
+      "source_sha256": "692682dd3efdf28d1b85acc1c6853061b5239bc5c0c878610dcff516a96bd4f6",
+      "path": "research/six-hour-20261127/pointwise/HIGH_FLOOR_PRESSURE_CONTROLS.json",
+      "integrated_sha256": "692682dd3efdf28d1b85acc1c6853061b5239bc5c0c878610dcff516a96bd4f6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/HIGH_FLOOR_PRINCIPAL_PRESSURE.md",
+      "source_sha256": "5aa2ded620dc9dc513caad4a804c42efa625baef102154de76196276fdf49eb1",
+      "path": "research/six-hour-20261127/pointwise/HIGH_FLOOR_PRINCIPAL_PRESSURE.md",
+      "integrated_sha256": "5aa2ded620dc9dc513caad4a804c42efa625baef102154de76196276fdf49eb1",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/HIGH_FLOOR_REMAINING_POWERS.md",
+      "source_sha256": "21b9a75d795ad4f8fcbbbddcb06c46671520631e8b02dd83151f782d3528b2bd",
+      "path": "research/six-hour-20261127/pointwise/HIGH_FLOOR_REMAINING_POWERS.md",
+      "integrated_sha256": "21b9a75d795ad4f8fcbbbddcb06c46671520631e8b02dd83151f782d3528b2bd",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/high_floor_pressure_controls.py",
+      "source_sha256": "b76c1e02feb48767d47cf576e1a9006021457f3946fadf27781f5abe36574af6",
+      "path": "research/six-hour-20261127/pointwise/high_floor_pressure_controls.py",
+      "integrated_sha256": "b76c1e02feb48767d47cf576e1a9006021457f3946fadf27781f5abe36574af6",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/HIGH_FLOOR_PRESSURE_MANIFEST.json",
+      "source_sha256": "6b37c3e94a89c2563673b72e3226c86cbe0ac80619f0346d91f71249db20b9b2",
+      "path": "reports/six-hour-20261127/HIGH_FLOOR_PRESSURE_MANIFEST.json",
+      "integrated_sha256": "6b37c3e94a89c2563673b72e3226c86cbe0ac80619f0346d91f71249db20b9b2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_ADAPTIVE_GREEN_REVIEW.md",
+      "source_sha256": "5a0830aab7186e365812e33a88e6f4e3881b1b6783b6735f6995a197eedd40c2",
+      "path": "reports/six-hour-20261127/INDEPENDENT_ADAPTIVE_GREEN_REVIEW.md",
+      "integrated_sha256": "5a0830aab7186e365812e33a88e6f4e3881b1b6783b6735f6995a197eedd40c2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_GREEN_CELL_CONTROLS.json",
+      "source_sha256": "5d82c6b81032af0c2703e62ff1cc3c7e426e2a7fc571f81ad2ff6cdfd1a5210a",
+      "path": "research/six-hour-20261127/pointwise/INDEPENDENT_GREEN_CELL_CONTROLS.json",
+      "integrated_sha256": "5d82c6b81032af0c2703e62ff1cc3c7e426e2a7fc571f81ad2ff6cdfd1a5210a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_PHYSICAL_CELL_ENTROPY_REVIEW.md",
+      "source_sha256": "82d337b4045d33cf4e0f5fa71d12096432723d7cfbb5ea56eacd6c9e4eb5030f",
+      "path": "reports/six-hour-20261127/INDEPENDENT_PHYSICAL_CELL_ENTROPY_REVIEW.md",
+      "integrated_sha256": "82d337b4045d33cf4e0f5fa71d12096432723d7cfbb5ea56eacd6c9e4eb5030f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_green_cell_controls.py",
+      "source_sha256": "46f2ee44a2488a86453d15cf1124129728ae50d585581ceb17f61c5e80bc7d41",
+      "path": "research/six-hour-20261127/pointwise/independent_green_cell_controls.py",
+      "integrated_sha256": "46f2ee44a2488a86453d15cf1124129728ae50d585581ceb17f61c5e80bc7d41",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_GREEN_CELL_MANIFEST.json",
+      "source_sha256": "25e728ee1085b4edff115773c02b4c67991df4b5d9056bb5c7a47ae5d370028a",
+      "path": "reports/six-hour-20261127/INDEPENDENT_GREEN_CELL_MANIFEST.json",
+      "integrated_sha256": "25e728ee1085b4edff115773c02b4c67991df4b5d9056bb5c7a47ae5d370028a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/MOVING_FLOOR_PRINCIPAL_PRESSURE.md",
+      "source_sha256": "cac7fba8c90b8263236cd761affba402e05c325919646855334668f0d3d8defe",
+      "path": "research/six-hour-20261127/pointwise/MOVING_FLOOR_PRINCIPAL_PRESSURE.md",
+      "integrated_sha256": "cac7fba8c90b8263236cd761affba402e05c325919646855334668f0d3d8defe",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/JOINT_GATE_UPPER_TAIL.md",
+      "source_sha256": "053f5ad9e58dbee949e346791b0f00f51f011e17918dad64d6df2fb65d0ef51c",
+      "path": "research/six-hour-20261127/pointwise/JOINT_GATE_UPPER_TAIL.md",
+      "integrated_sha256": "053f5ad9e58dbee949e346791b0f00f51f011e17918dad64d6df2fb65d0ef51c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/SPARSE_EVEN_GATE_REMAINDER.md",
+      "source_sha256": "f98eeb1732b2d6c6d637a5c432b63f0508b2911d83515b5963fce6c1a86d5575",
+      "path": "research/six-hour-20261127/pointwise/SPARSE_EVEN_GATE_REMAINDER.md",
+      "integrated_sha256": "f98eeb1732b2d6c6d637a5c432b63f0508b2911d83515b5963fce6c1a86d5575",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/FIRST_POWER_BOUNDARY_LAYER.md",
+      "source_sha256": "a12192de035919b4bd94aa2b961905c3ed5d672f6bf341982f044ebf1d29cfc4",
+      "path": "research/six-hour-20261127/pointwise/FIRST_POWER_BOUNDARY_LAYER.md",
+      "integrated_sha256": "a12192de035919b4bd94aa2b961905c3ed5d672f6bf341982f044ebf1d29cfc4",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_SHARP_GATE_MOMENT_REVIEW.md",
+      "source_sha256": "94c9406e20b8ca43ba573b1329c72b75693717fce401d705ae37ed18148b5556",
+      "path": "reports/six-hour-20261127/INDEPENDENT_SHARP_GATE_MOMENT_REVIEW.md",
+      "integrated_sha256": "94c9406e20b8ca43ba573b1329c72b75693717fce401d705ae37ed18148b5556",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_RARE_GATE_PROFILE_REVIEW.md",
+      "source_sha256": "063808ebeafbe87e1c6bb82cd34a48a6b3c62075ab20c74ae9269295f7baf857",
+      "path": "reports/six-hour-20261127/INDEPENDENT_RARE_GATE_PROFILE_REVIEW.md",
+      "integrated_sha256": "063808ebeafbe87e1c6bb82cd34a48a6b3c62075ab20c74ae9269295f7baf857",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/JOINT_GATE_FRACTIONAL_PRESSURE.md",
+      "source_sha256": "bd3390746f772cc3529cee5c388871d0921a049088013686795c892522a3c868",
+      "path": "research/six-hour-20261127/pointwise/JOINT_GATE_FRACTIONAL_PRESSURE_SIMPLE.md",
+      "integrated_sha256": "bd3390746f772cc3529cee5c388871d0921a049088013686795c892522a3c868",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/COMPACT_POSITIVE_PERIODIC_SHADOWS.md",
+      "source_sha256": "b33f4e6ab8b433121c62662a44e0bf3f61e82c6fd6fdc386ad6569964a0f6f5e",
+      "path": "research/six-hour-20261127/pointwise/COMPACT_POSITIVE_PERIODIC_SHADOWS.md",
+      "integrated_sha256": "b33f4e6ab8b433121c62662a44e0bf3f61e82c6fd6fdc386ad6569964a0f6f5e",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/compact_shadow_check.py",
+      "source_sha256": "fca5d83196d7c3fcc7ff0b20dbcb88693658c4acaf4f4386ffb944f1d97af189",
+      "path": "research/six-hour-20261127/pointwise/compact_shadow_check.py",
+      "integrated_sha256": "fca5d83196d7c3fcc7ff0b20dbcb88693658c4acaf4f4386ffb944f1d97af189",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/COMPACT_SHADOW_CHECK.json",
+      "source_sha256": "01786fa4f79fa6b9903a5ae5206ae7062c9325bc6cb35e845cb3e68bb7ade2fc",
+      "path": "research/six-hour-20261127/pointwise/COMPACT_SHADOW_CHECK.json",
+      "integrated_sha256": "01786fa4f79fa6b9903a5ae5206ae7062c9325bc6cb35e845cb3e68bb7ade2fc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/COMPACT_SHADOW_FREEZE.sha256",
+      "source_sha256": "f53e6e16ce63d8babbb07bc9b9bcbe462beeebac872cf103333e175e340b3da7",
+      "path": "reports/six-hour-20261127/COMPACT_SHADOW_FREEZE.sha256",
+      "integrated_sha256": "f53e6e16ce63d8babbb07bc9b9bcbe462beeebac872cf103333e175e340b3da7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FULL_DENOMINATOR_SHORT_CLOSURES.md",
+      "source_sha256": "3138a2b8a9acdf78b6fc46f73ada49de288b37132f7150dc6923ce178ff8aeda",
+      "path": "research/six-hour-20261127/pointwise/FULL_DENOMINATOR_SHORT_CLOSURES.md",
+      "integrated_sha256": "3138a2b8a9acdf78b6fc46f73ada49de288b37132f7150dc6923ce178ff8aeda",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/ALL_PLACE_PRIMITIVE_CYCLE_APPROXIMATION.md",
+      "source_sha256": "34829fa7317f50b8da204cb31ba65af33ccb39b6ecf6e2e3b4e2aef4bf665601",
+      "path": "research/six-hour-20261127/pointwise/ALL_PLACE_PRIMITIVE_CYCLE_APPROXIMATION.md",
+      "integrated_sha256": "34829fa7317f50b8da204cb31ba65af33ccb39b6ecf6e2e3b4e2aef4bf665601",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_RARE_GATE_PHYSICAL_REVIEW.md",
+      "source_sha256": "247545b0b47c7a2c035d44e17c3bd945f10612d11d51f6342d18360269622344",
+      "path": "reports/six-hour-20261127/INDEPENDENT_RARE_GATE_PHYSICAL_REVIEW.md",
+      "integrated_sha256": "247545b0b47c7a2c035d44e17c3bd945f10612d11d51f6342d18360269622344",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/rare_gate_joint_review_check.py",
+      "source_sha256": "75391ab2ee103f0eedbfcec80da8c8b3fcf63f6b5c6292a2630651761c15dcd1",
+      "path": "research/six-hour-20261127/pointwise/rare_gate_joint_review_check.py",
+      "integrated_sha256": "75391ab2ee103f0eedbfcec80da8c8b3fcf63f6b5c6292a2630651761c15dcd1",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/RARE_GATE_JOINT_REVIEW_CHECK.json",
+      "source_sha256": "32cae04e5d4bbf617936f8a305042ca051b6a2d2dc87ddfe1862f8b3543ac1b2",
+      "path": "research/six-hour-20261127/pointwise/RARE_GATE_JOINT_REVIEW_CHECK.json",
+      "integrated_sha256": "32cae04e5d4bbf617936f8a305042ca051b6a2d2dc87ddfe1862f8b3543ac1b2",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/RARE_GATE_JOINT_REVIEW_FREEZE.sha256",
+      "source_sha256": "32af41f5331937bf2d73db8d3de5aa9a1383ef9e6c7f44e2cffa92e93dd7bbef",
+      "path": "reports/six-hour-20261127/RARE_GATE_JOINT_REVIEW_FREEZE.sha256",
+      "integrated_sha256": "32af41f5331937bf2d73db8d3de5aa9a1383ef9e6c7f44e2cffa92e93dd7bbef",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FINAL_CLOSURE_AND_JOINT_REVIEW.sha256",
+      "source_sha256": "5a2aa76ed339c591ea78e59cc8e0eea78e0f5cffb5f5f3693939c95f92e4029b",
+      "path": "reports/six-hour-20261127/FINAL_CLOSURE_AND_JOINT_REVIEW.sha256",
+      "integrated_sha256": "5a2aa76ed339c591ea78e59cc8e0eea78e0f5cffb5f5f3693939c95f92e4029b",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_ALL_PLACE_CLOSURE_REVIEW.md",
+      "source_sha256": "db5f5ebf9e1909309ef9525d720e798b1f62c90dff2a118654353171c79d480f",
+      "path": "reports/six-hour-20261127/INDEPENDENT_ALL_PLACE_CLOSURE_REVIEW.md",
+      "integrated_sha256": "db5f5ebf9e1909309ef9525d720e798b1f62c90dff2a118654353171c79d480f",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_ALL_PLACE_CONTROLS.json",
+      "source_sha256": "9c4a319d19dfba2f08ac73add402da68b618b198c01b4b211ac27a543bec38d7",
+      "path": "research/six-hour-20261127/pointwise/INDEPENDENT_ALL_PLACE_CONTROLS.json",
+      "integrated_sha256": "9c4a319d19dfba2f08ac73add402da68b618b198c01b4b211ac27a543bec38d7",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/independent_all_place_controls.py",
+      "source_sha256": "a17b6f384870bfb03653de25cb3624ae9aced5e0b0e783727d879c7edae6b091",
+      "path": "research/six-hour-20261127/pointwise/independent_all_place_controls.py",
+      "integrated_sha256": "a17b6f384870bfb03653de25cb3624ae9aced5e0b0e783727d879c7edae6b091",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/FINAL_REVIEWER_WAVE_MANIFEST.json",
+      "source_sha256": "4935c959f2954d1ce24e28debf0777273a04a91bcd0a37a218266d8f143eba77",
+      "path": "reports/six-hour-20261127/FINAL_REVIEWER_WAVE_MANIFEST.json",
+      "integrated_sha256": "4935c959f2954d1ce24e28debf0777273a04a91bcd0a37a218266d8f143eba77",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_FIRST_POWER_LAYER_REVIEW.md",
+      "source_sha256": "d5f3cc7908f2c7ce77bf30ce5ec2dc26ad6ccb8060b879c46c4ef259c49577af",
+      "path": "reports/six-hour-20261127/INDEPENDENT_FIRST_POWER_LAYER_REVIEW.md",
+      "integrated_sha256": "d5f3cc7908f2c7ce77bf30ce5ec2dc26ad6ccb8060b879c46c4ef259c49577af",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FINAL_SHORT_CLOSURES_AND_BOUNDARY_AUDIT.md",
+      "source_sha256": "bd60ab2173dc33fd47545ced8fa46436d1c111fcde8b98ab6154ca97ea7d1688",
+      "path": "reports/six-hour-20261127/FINAL_SHORT_CLOSURES_AND_BOUNDARY_AUDIT.md",
+      "integrated_sha256": "bd60ab2173dc33fd47545ced8fa46436d1c111fcde8b98ab6154ca97ea7d1688",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/SHORT_CLOSURE_INTERFACE_CONTROLS.json",
+      "source_sha256": "52eced96e7fb39eab714e0133ac887fb239f2b22e9732275fd860568b285c887",
+      "path": "research/six-hour-20261127/pointwise/SHORT_CLOSURE_INTERFACE_CONTROLS.json",
+      "integrated_sha256": "52eced96e7fb39eab714e0133ac887fb239f2b22e9732275fd860568b285c887",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/check_short_closure_interfaces.py",
+      "source_sha256": "ee856ced10d7f6eccb5384af08df1a2b19dbc0a2d0ec2e9ada1732b90aa4f929",
+      "path": "research/six-hour-20261127/pointwise/check_short_closure_interfaces.py",
+      "integrated_sha256": "ee856ced10d7f6eccb5384af08df1a2b19dbc0a2d0ec2e9ada1732b90aa4f929",
+      "modified": false
+    },
+    {
+      "source": "sixhour-all-height-audit/FROZEN_FINAL_SHORT_CLOSURES_BOUNDARY_AUDIT.json",
+      "source_sha256": "83190218de5ddfd660aebe37ba92e51dfc57ec2a2c54d9344c0dac4504bc6c81",
+      "path": "reports/six-hour-20261127/FROZEN_FINAL_SHORT_CLOSURES_BOUNDARY_AUDIT.json",
+      "integrated_sha256": "83190218de5ddfd660aebe37ba92e51dfc57ec2a2c54d9344c0dac4504bc6c81",
+      "modified": false
+    }
+  ]
+}

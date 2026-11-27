@@ -1,0 +1,29 @@
+{
+  "windows": {
+    "trials": 2298,
+    "at_least_two": 1947,
+    "largest": 50
+  },
+  "basin": {
+    "by_length": {
+      "0": 1,
+      "1": 2,
+      "2": 4,
+      "3": 8,
+      "4": 16,
+      "5": 32,
+      "6": 64,
+      "7": 128,
+      "8": 256
+    },
+    "largest_terminal_exponent": 3281
+  },
+  "birth": {
+    "blocks": 1299,
+    "bits": 4672,
+    "ones": 2957,
+    "forced_square_births": 32,
+    "last_forced_at": 4656,
+    "canonical_seed_bits": 4672
+  }
+}

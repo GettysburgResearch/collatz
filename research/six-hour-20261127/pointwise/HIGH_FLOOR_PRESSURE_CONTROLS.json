@@ -1,0 +1,39 @@
+{
+  "gate": {
+    "rational_depths": 80
+  },
+  "native": {
+    "exact_tilt_word_rows": 87376,
+    "excluded_physical_floors": 1867
+  },
+  "ordinary_octaves": [
+    {
+      "initial_bits": 6,
+      "kept": 20,
+      "least_observed_floor": 5,
+      "odd_depth": 6,
+      "sampled": 32
+    },
+    {
+      "initial_bits": 9,
+      "kept": 183,
+      "least_observed_floor": 5,
+      "odd_depth": 9,
+      "sampled": 256
+    },
+    {
+      "initial_bits": 12,
+      "kept": 1606,
+      "least_observed_floor": 5,
+      "odd_depth": 12,
+      "sampled": 2048
+    },
+    {
+      "initial_bits": 15,
+      "kept": 13998,
+      "least_observed_floor": 5,
+      "odd_depth": 15,
+      "sampled": 16384
+    }
+  ]
+}

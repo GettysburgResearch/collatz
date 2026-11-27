@@ -1,0 +1,1308 @@
+{
+  "3/2": [
+    {
+      "gate_probability": "1/2",
+      "max_seed": 3,
+      "max_terminal": 5,
+      "mean_seed_bit_deficit": "0",
+      "mean_terminal_bit_deficit": "-1",
+      "mean_total_gap_deficit": "0",
+      "minimum_height_histogram_bit_bins": [
+        [
+          1,
+          1
+        ]
+      ],
+      "n": 1,
+      "words": 1
+    },
+    {
+      "gate_probability": "3/8",
+      "max_seed": 11,
+      "max_terminal": 17,
+      "mean_seed_bit_deficit": "2/3",
+      "mean_terminal_bit_deficit": "-2/3",
+      "mean_total_gap_deficit": "2/3",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "n": 2,
+      "words": 2
+    },
+    {
+      "gate_probability": "1/4",
+      "max_seed": 27,
+      "max_terminal": 53,
+      "mean_seed_bit_deficit": "1",
+      "mean_terminal_bit_deficit": "-1/2",
+      "mean_total_gap_deficit": "1/2",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "n": 3,
+      "words": 3
+    },
+    {
+      "gate_probability": "13/64",
+      "max_seed": 123,
+      "max_terminal": 161,
+      "mean_seed_bit_deficit": "16/13",
+      "mean_terminal_bit_deficit": "-5/13",
+      "mean_total_gap_deficit": "14/13",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "n": 4,
+      "words": 7
+    },
+    {
+      "gate_probability": "19/128",
+      "max_seed": 251,
+      "max_terminal": 485,
+      "mean_seed_bit_deficit": "28/19",
+      "mean_terminal_bit_deficit": "-7/19",
+      "mean_total_gap_deficit": "16/19",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "n": 5,
+      "words": 12
+    },
+    {
+      "gate_probability": "1/8",
+      "max_seed": 1019,
+      "max_terminal": 1457,
+      "mean_seed_bit_deficit": "149/64",
+      "mean_terminal_bit_deficit": "11/64",
+      "mean_total_gap_deficit": "11/8",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          23
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "n": 6,
+      "words": 30
+    },
+    {
+      "gate_probability": "49/512",
+      "max_seed": 2043,
+      "max_terminal": 4373,
+      "mean_seed_bit_deficit": "213/98",
+      "mean_terminal_bit_deficit": "37/49",
+      "mean_total_gap_deficit": "54/49",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          22
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          10,
+          14
+        ]
+      ],
+      "n": 7,
+      "words": 55
+    },
+    {
+      "gate_probability": "337/4096",
+      "max_seed": 8187,
+      "max_terminal": 13121,
+      "mean_seed_bit_deficit": "879/337",
+      "mean_terminal_bit_deficit": "53/337",
+      "mean_total_gap_deficit": "542/337",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          26
+        ],
+        [
+          8,
+          48
+        ],
+        [
+          9,
+          69
+        ],
+        [
+          10,
+          76
+        ],
+        [
+          11,
+          73
+        ],
+        [
+          12,
+          26
+        ]
+      ],
+      "n": 8,
+      "words": 143
+    },
+    {
+      "gate_probability": "531/8192",
+      "max_seed": 16379,
+      "max_terminal": 39365,
+      "mean_seed_bit_deficit": "412/177",
+      "mean_terminal_bit_deficit": "2/3",
+      "mean_total_gap_deficit": "232/177",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          9,
+          56
+        ],
+        [
+          10,
+          100
+        ],
+        [
+          11,
+          126
+        ],
+        [
+          12,
+          120
+        ],
+        [
+          13,
+          73
+        ]
+      ],
+      "n": 9,
+      "words": 273
+    },
+    {
+      "gate_probability": "1851/32768",
+      "max_seed": 65531,
+      "max_terminal": 118097,
+      "mean_seed_bit_deficit": "1717/617",
+      "mean_terminal_bit_deficit": "184/1851",
+      "mean_total_gap_deficit": "1110/617",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          9,
+          55
+        ],
+        [
+          10,
+          178
+        ],
+        [
+          11,
+          268
+        ],
+        [
+          12,
+          373
+        ],
+        [
+          13,
+          443
+        ],
+        [
+          14,
+          334
+        ],
+        [
+          15,
+          137
+        ]
+      ],
+      "n": 10,
+      "words": 728
+    },
+    {
+      "gate_probability": "1487/32768",
+      "max_seed": 131067,
+      "max_terminal": 354293,
+      "mean_seed_bit_deficit": "3670/1487",
+      "mean_terminal_bit_deficit": "1403/2974",
+      "mean_total_gap_deficit": "2207/1487",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          43
+        ],
+        [
+          10,
+          108
+        ],
+        [
+          11,
+          202
+        ],
+        [
+          12,
+          321
+        ],
+        [
+          13,
+          574
+        ],
+        [
+          14,
+          686
+        ],
+        [
+          15,
+          641
+        ],
+        [
+          16,
+          361
+        ]
+      ],
+      "n": 11,
+      "words": 1428
+    }
+  ],
+  "7/4": [
+    {
+      "gate_probability": "1/2",
+      "max_seed": 3,
+      "max_terminal": 5,
+      "mean_seed_bit_deficit": "0",
+      "mean_terminal_bit_deficit": "-1",
+      "mean_total_gap_deficit": "0",
+      "minimum_height_histogram_bit_bins": [
+        [
+          1,
+          1
+        ]
+      ],
+      "n": 1,
+      "words": 1
+    },
+    {
+      "gate_probability": "3/8",
+      "max_seed": 11,
+      "max_terminal": 17,
+      "mean_seed_bit_deficit": "2/3",
+      "mean_terminal_bit_deficit": "-2/3",
+      "mean_total_gap_deficit": "2/3",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "n": 2,
+      "words": 2
+    },
+    {
+      "gate_probability": "5/16",
+      "max_seed": 55,
+      "max_terminal": 53,
+      "mean_seed_bit_deficit": "8/5",
+      "mean_terminal_bit_deficit": "-3/5",
+      "mean_total_gap_deficit": "6/5",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "n": 3,
+      "words": 5
+    },
+    {
+      "gate_probability": "35/128",
+      "max_seed": 247,
+      "max_terminal": 161,
+      "mean_seed_bit_deficit": "69/35",
+      "mean_terminal_bit_deficit": "-9/35",
+      "mean_total_gap_deficit": "58/35",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "n": 4,
+      "words": 14
+    },
+    {
+      "gate_probability": "7/32",
+      "max_seed": 503,
+      "max_terminal": 485,
+      "mean_seed_bit_deficit": "111/56",
+      "mean_terminal_bit_deficit": "-9/28",
+      "mean_total_gap_deficit": "37/28",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "n": 5,
+      "words": 28
+    },
+    {
+      "gate_probability": "49/256",
+      "max_seed": 2039,
+      "max_terminal": 1457,
+      "mean_seed_bit_deficit": "545/196",
+      "mean_terminal_bit_deficit": "3/14",
+      "mean_total_gap_deficit": "88/49",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          41
+        ],
+        [
+          7,
+          57
+        ],
+        [
+          8,
+          39
+        ],
+        [
+          9,
+          24
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "n": 6,
+      "words": 76
+    },
+    {
+      "gate_probability": "177/1024",
+      "max_seed": 8159,
+      "max_terminal": 4373,
+      "mean_seed_bit_deficit": "2299/708",
+      "mean_terminal_bit_deficit": "185/236",
+      "mean_total_gap_deficit": "130/59",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          53
+        ],
+        [
+          7,
+          108
+        ],
+        [
+          8,
+          137
+        ],
+        [
+          9,
+          139
+        ],
+        [
+          10,
+          143
+        ],
+        [
+          11,
+          92
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "n": 7,
+      "words": 227
+    },
+    {
+      "gate_probability": "2605/16384",
+      "max_seed": 32679,
+      "max_terminal": 13121,
+      "mean_seed_bit_deficit": "9233/2605",
+      "mean_terminal_bit_deficit": "472/2605",
+      "mean_total_gap_deficit": "6694/2605",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          63
+        ],
+        [
+          7,
+          131
+        ],
+        [
+          8,
+          243
+        ],
+        [
+          9,
+          361
+        ],
+        [
+          10,
+          488
+        ],
+        [
+          11,
+          571
+        ],
+        [
+          12,
+          517
+        ],
+        [
+          13,
+          199
+        ]
+      ],
+      "n": 8,
+      "words": 715
+    },
+    {
+      "gate_probability": "4495/32768",
+      "max_seed": 65435,
+      "max_terminal": 39365,
+      "mean_seed_bit_deficit": "488/155",
+      "mean_terminal_bit_deficit": "3011/4495",
+      "mean_total_gap_deficit": "9608/4495",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          45
+        ],
+        [
+          7,
+          95
+        ],
+        [
+          8,
+          139
+        ],
+        [
+          9,
+          283
+        ],
+        [
+          10,
+          529
+        ],
+        [
+          11,
+          740
+        ],
+        [
+          12,
+          959
+        ],
+        [
+          13,
+          958
+        ],
+        [
+          14,
+          642
+        ],
+        [
+          15,
+          73
+        ]
+      ],
+      "n": 9,
+      "words": 1618
+    },
+    {
+      "gate_probability": "8181/65536",
+      "max_seed": 262047,
+      "max_terminal": 118097,
+      "mean_seed_bit_deficit": "29029/8181",
+      "mean_terminal_bit_deficit": "904/8181",
+      "mean_total_gap_deficit": "20834/8181",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          24
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          6,
+          72
+        ],
+        [
+          7,
+          90
+        ],
+        [
+          8,
+          159
+        ],
+        [
+          9,
+          309
+        ],
+        [
+          10,
+          914
+        ],
+        [
+          11,
+          1425
+        ],
+        [
+          12,
+          2288
+        ],
+        [
+          13,
+          3034
+        ],
+        [
+          14,
+          3423
+        ],
+        [
+          15,
+          3098
+        ],
+        [
+          16,
+          1506
+        ]
+      ],
+      "n": 10,
+      "words": 4762
+    },
+    {
+      "gate_probability": "30343/262144",
+      "max_seed": 1048447,
+      "max_terminal": 354293,
+      "mean_seed_bit_deficit": "118265/30343",
+      "mean_terminal_bit_deficit": "28967/60686",
+      "mean_total_gap_deficit": "88098/30343",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          32
+        ],
+        [
+          5,
+          32
+        ],
+        [
+          6,
+          133
+        ],
+        [
+          7,
+          114
+        ],
+        [
+          8,
+          162
+        ],
+        [
+          9,
+          489
+        ],
+        [
+          10,
+          1128
+        ],
+        [
+          11,
+          2133
+        ],
+        [
+          12,
+          3840
+        ],
+        [
+          13,
+          6587
+        ],
+        [
+          14,
+          9251
+        ],
+        [
+          15,
+          11938
+        ],
+        [
+          16,
+          12449
+        ],
+        [
+          17,
+          9826
+        ],
+        [
+          18,
+          2572
+        ]
+      ],
+      "n": 11,
+      "words": 15090
+    }
+  ],
+  "log2(3)": [
+    {
+      "gate_probability": "1/2",
+      "max_seed": 3,
+      "max_terminal": 5,
+      "mean_seed_bit_deficit": "0",
+      "mean_terminal_bit_deficit": "-1",
+      "mean_total_gap_deficit": "0",
+      "minimum_height_histogram_bit_bins": [
+        [
+          1,
+          1
+        ]
+      ],
+      "n": 1,
+      "words": 1
+    },
+    {
+      "gate_probability": "3/8",
+      "max_seed": 11,
+      "max_terminal": 17,
+      "mean_seed_bit_deficit": "2/3",
+      "mean_terminal_bit_deficit": "-2/3",
+      "mean_total_gap_deficit": "2/3",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "n": 2,
+      "words": 2
+    },
+    {
+      "gate_probability": "1/4",
+      "max_seed": 27,
+      "max_terminal": 53,
+      "mean_seed_bit_deficit": "1",
+      "mean_terminal_bit_deficit": "-1/2",
+      "mean_total_gap_deficit": "1/2",
+      "minimum_height_histogram_bit_bins": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "n": 3,
+      "words": 3
+    },
+    {
+      "gate_probability": "13/64",
+      "max_seed": 123,
+      "max_terminal": 161,
+      "mean_seed_bit_deficit": "16/13",
+      "mean_terminal_bit_deficit": "-5/13",
+      "mean_total_gap_deficit": "14/13",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "n": 4,
+      "words": 7
+    },
+    {
+      "gate_probability": "19/128",
+      "max_seed": 251,
+      "max_terminal": 485,
+      "mean_seed_bit_deficit": "28/19",
+      "mean_terminal_bit_deficit": "-7/19",
+      "mean_total_gap_deficit": "16/19",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "n": 5,
+      "words": 12
+    },
+    {
+      "gate_probability": "1/8",
+      "max_seed": 1019,
+      "max_terminal": 1457,
+      "mean_seed_bit_deficit": "149/64",
+      "mean_terminal_bit_deficit": "11/64",
+      "mean_total_gap_deficit": "11/8",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          23
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "n": 6,
+      "words": 30
+    },
+    {
+      "gate_probability": "113/1024",
+      "max_seed": 4079,
+      "max_terminal": 4373,
+      "mean_seed_bit_deficit": "324/113",
+      "mean_terminal_bit_deficit": "169/226",
+      "mean_total_gap_deficit": "206/113",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          22
+        ],
+        [
+          7,
+          46
+        ],
+        [
+          8,
+          49
+        ],
+        [
+          9,
+          46
+        ],
+        [
+          10,
+          35
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "n": 7,
+      "words": 85
+    },
+    {
+      "gate_probability": "367/4096",
+      "max_seed": 8187,
+      "max_terminal": 13121,
+      "mean_seed_bit_deficit": "906/367",
+      "mean_terminal_bit_deficit": "58/367",
+      "mean_total_gap_deficit": "542/367",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          27
+        ],
+        [
+          8,
+          48
+        ],
+        [
+          9,
+          71
+        ],
+        [
+          10,
+          80
+        ],
+        [
+          11,
+          81
+        ],
+        [
+          12,
+          41
+        ]
+      ],
+      "n": 8,
+      "words": 173
+    },
+    {
+      "gate_probability": "1295/16384",
+      "max_seed": 32671,
+      "max_terminal": 39365,
+      "mean_seed_bit_deficit": "3819/1295",
+      "mean_terminal_bit_deficit": "848/1295",
+      "mean_total_gap_deficit": "2514/1295",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          40
+        ],
+        [
+          8,
+          47
+        ],
+        [
+          9,
+          117
+        ],
+        [
+          10,
+          208
+        ],
+        [
+          11,
+          269
+        ],
+        [
+          12,
+          278
+        ],
+        [
+          13,
+          215
+        ],
+        [
+          14,
+          91
+        ]
+      ],
+      "n": 9,
+      "words": 476
+    },
+    {
+      "gate_probability": "1057/16384",
+      "max_seed": 65531,
+      "max_terminal": 118097,
+      "mean_seed_bit_deficit": "781/302",
+      "mean_terminal_bit_deficit": "101/1057",
+      "mean_total_gap_deficit": "1695/1057",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          9,
+          58
+        ],
+        [
+          10,
+          183
+        ],
+        [
+          11,
+          276
+        ],
+        [
+          12,
+          396
+        ],
+        [
+          13,
+          478
+        ],
+        [
+          14,
+          421
+        ],
+        [
+          15,
+          237
+        ]
+      ],
+      "n": 10,
+      "words": 961
+    },
+    {
+      "gate_probability": "7495/131072",
+      "max_seed": 261871,
+      "max_terminal": 354293,
+      "mean_seed_bit_deficit": "22838/7495",
+      "mean_terminal_bit_deficit": "3508/7495",
+      "mean_total_gap_deficit": "15482/7495",
+      "minimum_height_histogram_bit_bins": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          9,
+          92
+        ],
+        [
+          10,
+          224
+        ],
+        [
+          11,
+          421
+        ],
+        [
+          12,
+          679
+        ],
+        [
+          13,
+          1208
+        ],
+        [
+          14,
+          1539
+        ],
+        [
+          15,
+          1566
+        ],
+        [
+          16,
+          1184
+        ],
+        [
+          17,
+          501
+        ]
+      ],
+      "n": 11,
+      "words": 2652
+    }
+  ]
+}
