@@ -1,0 +1,436 @@
+{
+  "schema": "collatz-astra-cumulative-verification/v1",
+  "checked_utc": "2026-11-27T17:56:07.188076+00:00",
+  "scope": "Cumulative successful evidence at unchanged byte hashes; old proofs and controls were not rerun at this checkpoint. This manifest itself only verifies provenance and coverage. No universal Collatz conclusion.",
+  "success": true,
+  "lean_modules": 22,
+  "public_theorem_roots": 172,
+  "finite_checkers": 29,
+  "axiom_inventory": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean": [
+    {
+      "module": "NativeGate",
+      "source": "research/astra-diagonal-frontier-20261127/NativeGate.lean",
+      "source_sha256": "2990f536523b9333f7f38dfea8bfb4fc7d208d747377b243acbb21a5a8efe237",
+      "public_roots": 15,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/grades-lean.json",
+      "receipt_sha256": "74448755f0deeaa77ce1dca400497ceb05b5697361c65a9c47e2428e50af5fcc"
+    },
+    {
+      "module": "NativeTransfer",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTransfer.lean",
+      "source_sha256": "b9aad6e65dbbba47aa462d1d4e3076e2942eea84993742edff2fb91afe86e946",
+      "public_roots": 28,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/grades-lean.json",
+      "receipt_sha256": "74448755f0deeaa77ce1dca400497ceb05b5697361c65a9c47e2428e50af5fcc"
+    },
+    {
+      "module": "NativeDecay",
+      "source": "research/astra-diagonal-frontier-20261127/NativeDecay.lean",
+      "source_sha256": "58b8ad6dc9ae5d65071ed22f2a717fd607dab02758d6d592232f60dd6b135e3d",
+      "public_roots": 11,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "NativeTightness",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTightness.lean",
+      "source_sha256": "0fa16037d015eb62b09d586a40f3fad7495e57b39970f9c71e19faf907e240a6",
+      "public_roots": 14,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/grades-lean.json",
+      "receipt_sha256": "74448755f0deeaa77ce1dca400497ceb05b5697361c65a9c47e2428e50af5fcc"
+    },
+    {
+      "module": "NativeCriterion",
+      "source": "research/astra-diagonal-frontier-20261127/NativeCriterion.lean",
+      "source_sha256": "a55129bff5a6385f5b3cf5960949981ad99bac109c422a8fa209905a7e5d3289",
+      "public_roots": 5,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "NativePersistence",
+      "source": "research/astra-diagonal-frontier-20261127/NativePersistence.lean",
+      "source_sha256": "b7f4fa899f0c61ce6457416bbdf4da22c4b004de97a5ddcfba8dfe73afabc57b",
+      "public_roots": 14,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "NativeResidue",
+      "source": "research/astra-diagonal-frontier-20261127/NativeResidue.lean",
+      "source_sha256": "5f19bc796aaa0cbeef8772896eb5512bbd60ff4acf946126d49fd03b044f1d93",
+      "public_roots": 11,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "SeedSpread",
+      "source": "research/astra-diagonal-frontier-20261127/mass/SeedSpread.lean",
+      "source_sha256": "1a5b5d523d42cd4014b8ce5578fe29296b37969ad53361e7026b9aadc53b7474",
+      "public_roots": 6,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "FirstArrivalLap",
+      "source": "research/astra-diagonal-frontier-20261127/mass/FirstArrivalLap.lean",
+      "source_sha256": "a522e1904520d5af1e24a36fdfd9879856a6063c987ca106122f5cf5d037fa70",
+      "public_roots": 5,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint5/lean.json",
+      "receipt_sha256": "da22693ebfb37a4600dd01e5b858ccf85a88a94cb46ac634d341911308751d60"
+    },
+    {
+      "module": "ComponentLoss",
+      "source": "research/astra-diagonal-frontier-20261127/mass/ComponentLoss.lean",
+      "source_sha256": "9acdcf83b32519beba0e27eff5013e3823e9971075ccdcf386889532d2c1c6f5",
+      "public_roots": 4,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "FirstEntryRecord",
+      "source": "research/astra-diagonal-frontier-20261127/mass/FirstEntryRecord.lean",
+      "source_sha256": "3fdbe51ffcddfecc24d443ed1bd3b3fe3691e70bf849c59daf5c6d949682cecc",
+      "public_roots": 3,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "SelectedBlockBarrier",
+      "source": "research/astra-diagonal-frontier-20261127/mass/SelectedBlockBarrier.lean",
+      "source_sha256": "591df6982b7059db00bb484040fb9a8c24bd636ece9f4a889ce45a41b6351270",
+      "public_roots": 4,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "PolynomialRank",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/PolynomialRank.lean",
+      "source_sha256": "f52bd84f15bd8f0744cc847094d33c1d7f690d7a6e83af8ba7ba8dd59a9b30d7",
+      "public_roots": 13,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "HigherDifference",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/HigherDifference.lean",
+      "source_sha256": "ccffcd6f7ba04e405a05a9db7e05efe2bd17a092027c164fbf80f9e176ea61c8",
+      "public_roots": 6,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "RotationCuts",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/RotationCuts.lean",
+      "source_sha256": "59595c1e0113be31565dab754d0940ddd58fad1ec9fe20e72b6761c7b25d69a5",
+      "public_roots": 5,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "OrdinaryMerge",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/OrdinaryMerge.lean",
+      "source_sha256": "e6abce86209cab8bfbe333a2d7a51e04d322c83b0d9fa99d5f6cb5c73062b75b",
+      "public_roots": 2,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "WidthThree",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/WidthThree.lean",
+      "source_sha256": "df5e182880104a5e8f1f1a15797f0da9f4b6a8bdbb819f36dda5afe31178c821",
+      "public_roots": 9,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/calendar-lean.json",
+      "receipt_sha256": "e9bec6cdb7431feaf02e9dc08415bd501d1f5ce30eea9c93e6c96a7182ff3166"
+    },
+    {
+      "module": "WidthThreeCalendar",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/WidthThreeCalendar.lean",
+      "source_sha256": "481c056b5817c62392e89ea31cbfb935a4e2ab067280907c6884ef78b935e999",
+      "public_roots": 6,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/calendar-lean.json",
+      "receipt_sha256": "e9bec6cdb7431feaf02e9dc08415bd501d1f5ce30eea9c93e6c96a7182ff3166"
+    },
+    {
+      "module": "GradePressure",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/GradePressure.lean",
+      "source_sha256": "6bf6c9474ff6a2370d82510d34c0093acba22dd3a6854289f5176f22e02e5967",
+      "public_roots": 3,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint3/grade-lean.json",
+      "receipt_sha256": "f03b98936baad3c9817b14938d9549209ab1958f6780078222917a297904198d"
+    },
+    {
+      "module": "ShortProbe",
+      "source": "research/astra-diagonal-frontier-20261127/linear/ShortProbe.lean",
+      "source_sha256": "c7bf1f51edf6302d1a3effe5038e5c382bcab0d7b3c8b3eedfa348b25b179788",
+      "public_roots": 2,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "UnitWindowLift",
+      "source": "research/astra-diagonal-frontier-20261127/linear/UnitWindowLift.lean",
+      "source_sha256": "c2063669d25cf1a3e0d0f32b08069dce4d41017c79127e3b473015cf93575583",
+      "public_roots": 4,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/lean.json",
+      "receipt_sha256": "8707a9eb80d7f2a6457bdcb4296c6188244315d3b5688fc9c56e27826979ab08"
+    },
+    {
+      "module": "TerminatingGrades",
+      "source": "research/astra-diagonal-frontier-20261127/linear/TerminatingGrades.lean",
+      "source_sha256": "1d94628bfc9679713013d7a5552c8f94064c5044647f610760924498714cb568",
+      "public_roots": 2,
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/grades-lean.json",
+      "receipt_sha256": "74448755f0deeaa77ce1dca400497ceb05b5697361c65a9c47e2428e50af5fcc"
+    }
+  ],
+  "controls": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/check_native_gate.py",
+      "source_sha256": "6e1c3bacd4b44a4127a369aa60fba6f7c19b5305da05316d432ede609813024a",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "543e55ad82cdf0b030e6d268711354b403a87fbfd722fc6ac9a3676ab7c47b47",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_seed_spread.py",
+      "source_sha256": "e41a0b910b6d7f427e0e8d9502daebe1062184daf5038c87cc195f924918e663",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "7bc3dd583130084bdfffc5e918869c508b8d1931cef744a690d9c7f969a38463",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_first_entry_law.py",
+      "source_sha256": "8a4be1de9ddf383c0b0aa665361018ddf60bbdf7bf6d409618a9e2ce62ba095d",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "56ce311a7b021132c689f02c93a0c79d0557ba9e75c4870a94e0d2ff2db7496f",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_native_shells.py",
+      "source_sha256": "40adc4315ba44fdf3ec3e2f038b57f4383a390564979014828f96b80a684f26f",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint3/new-controls.json",
+      "receipt_sha256": "95854f028a3abca4ebd23de99422b2b1937993662b695c945f456d98de856855",
+      "frozen_output_sha256": "fc132991034e0ead26c433dbd855d9db6b563452babd82043e92d515cb8979fd",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_first_arrival_energy.py",
+      "source_sha256": "2de374f34a1041ad39b18b278fc0afdc77c6931930b334f06e4856f1c0eca2bb",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint4/energy-controls.json",
+      "receipt_sha256": "9a2566dd6b066fbc2f74df16c80398e717b5bfd60d23803de9696652420decd2",
+      "frozen_output_sha256": "b592524821fe0a1596c2281845953a74c3f6db6e640f28de9b96206b4a237ac6",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_polynomial_rank.py",
+      "source_sha256": "03ec6e4c516955f0b832ecc765b4544d8124bfafe81ed3ad2cfd209cd82c9d4d",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "d79a10dd32c3f3c4a76a09ca35811a7eca814876eeb95426df3f5af774ea0cd9",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_higher_differences.py",
+      "source_sha256": "af970bfbefad7ff599832159d772e601259f56403a4592629ef7a2f22fa799f7",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "66b1cf507dbb526b59ec83fe30010ef4ad066f47ac2a199755c827cd6be40b74",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_rotation_cuts.py",
+      "source_sha256": "f5fef9abb24160a1efb64ddab0c7fda7c2e17cc995ccdee73393540356ab70a9",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "87543f37f93c42cb589e8a82ea8920bfbdd751afeb7bc246a0ebc7eb09ef97d6",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_weighted_clock.py",
+      "source_sha256": "ab084ee1bce6138ea63f3cdfbc1c3942880a8138aecf86d77af141171e476bd3",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "f56c42ffe5a08caefa259046b7025cb0c57ecf641e0981fafee56d5c9aa49539",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_sparse_rational_clock.py",
+      "source_sha256": "aa919da4f1b75b9a59d5204d138c7ec51018fee609240b039c47acdbc9203e83",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "e9b133517fbd0f327563788575e5f642f6da5ac15df065a4e0e4361f8840555a",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_homogeneous_meetings.py",
+      "source_sha256": "8f74b4b04e86e5f4b9b94b8d59891e76feb038ff9182daa290c2e902a1aa2804",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": "99d639f6d663efb2149758eff2492c6d88b57ea81a091037d5ff4b7dd77aa9b8",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_shifted_clocks.py",
+      "source_sha256": "314d81613455dfc5971311e350be15bc19802d4eabe003df1cfee390807c33ef",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint3/new-controls.json",
+      "receipt_sha256": "95854f028a3abca4ebd23de99422b2b1937993662b695c945f456d98de856855",
+      "frozen_output_sha256": "ec3e42d9776eac8d13bd6e9a8f77057b2f9d012fd15ccdf09a6b63f447c3434c",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_odd_height_pressure.py",
+      "source_sha256": "883088e40409ab48d16d1b282d7e98fbf8c8ccf7b357b1528c5592066fa7156e",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint3/grade-controls.json",
+      "receipt_sha256": "e32ce05a8dd4ea760f24e875e28491c45a2b319bd174238041303bf1d8bda27b",
+      "frozen_output_sha256": "98e0649a62eba5baafd82c0071f7455128ca032e5b0c65ad642dd7e7cb3b3ce5",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_tetrad_rank.py",
+      "source_sha256": "c83f100a48a55017033cc4bd4538be4f7f8db1cdcdbf3756b79f8a0d34310441",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint4/tetrad-controls.json",
+      "receipt_sha256": "f48908ec2332a35acebecd6c97b45464d89b56aa5a7e0d76553f93f0130f4248",
+      "frozen_output_sha256": "823697e067aa947abb4304522a1832476687acdecc05b37f7e1f3e5863ea28b4",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_dual_cuts.py",
+      "source_sha256": "44a911dcb4bc14afc384976dfacb0aaac6a638a8930729f06bcb3619bec01e9a",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint4/cut-chart-controls.json",
+      "receipt_sha256": "c5eecd32eb98aa248a4f08e5046a537689f3ff3d5dd3a8e0185df8ead52cbcf5",
+      "frozen_output_sha256": "6d165ad8519e350e8915bec2ab54739b9cb3535e73d88fc7de04494b59cfb310",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_full_step_chart.py",
+      "source_sha256": "c5b89f754bc9f1c8cd744ca1a6133c805a86ecf952bfb30a0979b5a7cebc63e3",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint4/cut-chart-controls.json",
+      "receipt_sha256": "c5eecd32eb98aa248a4f08e5046a537689f3ff3d5dd3a8e0185df8ead52cbcf5",
+      "frozen_output_sha256": "abb55503c2f17c9d446a0c797ba50f46cad082fc6104f15d9390ea59519f902c",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_full_circuit_inversions.py",
+      "source_sha256": "d754adb5ce2cf837c559936471385ea55ba3967adb1d5ea1ddf62da7e5e53c2a",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint4/inversion-controls.json",
+      "receipt_sha256": "d26f47489773a0a6b12d008e22f2dff06d84e2629852d5c004194f66b17b900c",
+      "frozen_output_sha256": "92158fba72aeaf6c2d436230c9e3e9b28f2c932b0f4ad8ca16faad78aaec31b2",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_farey_tile.py",
+      "source_sha256": "e92582fe157612256ae657a502f8322c2187abb9dfae2a60dc0cf6edcea34da3",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint5/controls.json",
+      "receipt_sha256": "8fc202786e7783d39cd41e31f13bb913636b4b72acf72c1c1082aac654661d59",
+      "frozen_output_sha256": "62342c17a01ad531095223fbdc59eb6c5f1d465e28dfb8b8fcd36cfc2fa14649",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_width_three.py",
+      "source_sha256": "18d41ef49225c47411bb682b893afa6f03b2cbfa6377c19a7b0abc21e4761f81",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint5/controls.json",
+      "receipt_sha256": "8fc202786e7783d39cd41e31f13bb913636b4b72acf72c1c1082aac654661d59",
+      "frozen_output_sha256": "f5bd45a723ef9688924823f81583a6531ef80d2867a4310bb7ae202cb013cf42",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_upper_bundle.py",
+      "source_sha256": "a2efe585f4e8091a6b396fd3584de3f281b8c8cce843b49015980390831fbbff",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/upper-bundle-controls.json",
+      "receipt_sha256": "29db8ffbce51eb3cd6d1f2cc3496b701294bffee6675c1f2644f49401b91e4a2",
+      "frozen_output_sha256": "b0ee48c3d075c394393e38b2c049f02c47aaa15da3d1e450d7bfa801b1219b6d",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_plateau_components.py",
+      "source_sha256": "f0c8c64121a8f19adfefc41cc068fedfb53a06126f5114e7bd4fb23d4fafa096",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint6/plateau-controls.json",
+      "receipt_sha256": "de22dadb44ee9ac39509d9fcd26f32f01137b719fcf5b75ca3b20cd5f8c732d4",
+      "frozen_output_sha256": "bc52de98b4968bbbc5a644c255581c14cedf5b3ed5ecc06b540b5029ace24f9a",
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_controls.py",
+      "source_sha256": "841ab9174f18bd447a2ecadc5485ebc23019344d61b0034c9dc54c9de12f6346",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_automata.py",
+      "source_sha256": "39c113a6b2c6ca63743550d622fbac332c5ee3501a2fac3d93046ef2d4bc5215",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_local_landing.py",
+      "source_sha256": "dc5e1d7e364685eb9b0206c8c5967411e4c279a282a7eb88c6b2d7c64c03c567",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_source_suffix.py",
+      "source_sha256": "6e22dfaa2365c48a8766a493e9aba9107350d398d3faab7be1d535b6ff0bf2b5",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint5/source-controls.json",
+      "receipt_sha256": "bfa77ddef75359f6c369e39237500bc5d87617614391e68c06c3838539c2fb68",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/inverse/check_retained_trees.py",
+      "source_sha256": "d495ab5d3b67913d50d1111a2e7dd970aad5c7f8a124dcd5f6a6ed7dd05c7063",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/inverse/check_frozen_root.py",
+      "source_sha256": "474be02e73ce5fa5be89ed15c7839763b4f64651e99f54b4433b21adf85590c4",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint2/controls.json",
+      "receipt_sha256": "9b5f51c8e6a9345d0df441db3c0bea33ea8f9096508eb8afcfe0c1055eb2737e",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_unequal_clock_shield.py",
+      "source_sha256": "773604b52591a490273e404b1d81e9c5a3d4fc8662a8bcdaf4d21361f87d4171",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint7/shield-controls.json",
+      "receipt_sha256": "d37cca7dd802e744b91e1288e8058f72f37148da28ac301ee40a6ba624329c0b",
+      "frozen_output_sha256": null,
+      "normal_optimized_identical": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_periodic_grid_density.py",
+      "source_sha256": "e2eaca01bf34e02ad29373d7f5b97d5fe0d0fc0afc18fb91347b83e9939997f6",
+      "receipt": "reports/astra-diagonal-frontier-20261127/checkpoint8/density-controls.json",
+      "receipt_sha256": "af3746feb77724f18c4e1e68f6a85a10f2d80e9c056081d6e9af69067daf0d9b",
+      "frozen_output_sha256": "70741a8b795d666af0fafa270e388efd0f5baa44f8f31cc8c77381ed56b415df",
+      "normal_optimized_identical": true
+    }
+  ],
+  "current_control_runner_sha256": "f8cb7d2d4d43d567fde192991bf05093d573713691cf066b0c1b4464f6d3556d",
+  "current_lean_runner_sha256": "e0ea2c86cfec01ed29e416c4286338d92c1cc1616f86f0a9f3397b1c39042b4d",
+  "metadata_correction": {
+    "previous_manifest": "reports/astra-diagonal-frontier-20261127/checkpoint5/CUMULATIVE_VERIFICATION.json",
+    "previous_module_counts": {
+      "top_level": 18,
+      "actual_entries": 20
+    },
+    "note": "The old top-level field was stale; its module entries and root sum were complete. All current totals are derived from verified rows."
+  }
+}

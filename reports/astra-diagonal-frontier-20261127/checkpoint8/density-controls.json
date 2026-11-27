@@ -1,0 +1,69 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T17:55:31.382193+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "f8cb7d2d4d43d567fde192991bf05093d573713691cf066b0c1b4464f6d3556d",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 29,
+    "executed_cases": 1,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "mass/check_first_arrival_energy.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "arithmetic/check_tetrad_rank.py",
+      "arithmetic/check_dual_cuts.py",
+      "arithmetic/check_full_step_chart.py",
+      "arithmetic/check_full_circuit_inversions.py",
+      "arithmetic/check_farey_tile.py",
+      "arithmetic/check_width_three.py",
+      "arithmetic/check_upper_bundle.py",
+      "arithmetic/check_plateau_components.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "linear/check_source_suffix.py",
+      "linear/check_unequal_clock_shield.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_periodic_grid_density.py",
+      "source_sha256": "e2eaca01bf34e02ad29373d7f5b97d5fe0d0fc0afc18fb91347b83e9939997f6",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.44,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.49,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"conditional_gap_transitions\": 1840,\n  \"contiguous_spatial_cells\": 5157,\n  \"exhaustive_dyadic_sources\": 55986,\n  \"independent_calendars\": 126,\n  \"periodic_start_checks\": 37749,\n  \"pooled_calendar_checks\": 1053\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T17:55:32.312671+00:00"
+}

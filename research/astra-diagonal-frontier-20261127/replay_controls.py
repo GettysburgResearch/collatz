@@ -33,6 +33,7 @@ CASES = [
     ("arithmetic/check_width_three.py", "arithmetic/width_three_controls.json"),
     ("arithmetic/check_upper_bundle.py", "arithmetic/upper_bundle_controls.json"),
     ("arithmetic/check_plateau_components.py", "arithmetic/plateau_components_controls.json"),
+    ("arithmetic/check_periodic_grid_density.py", "arithmetic/periodic_grid_density_controls.json"),
     ("linear/check_controls.py", None),
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),
