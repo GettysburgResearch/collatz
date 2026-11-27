@@ -1,0 +1,266 @@
+{
+  "all_sources_unchanged": true,
+  "dependency_cache": "merged pinned Mathlib symlinks",
+  "finished_utc": "2026-11-27T16:36:21Z",
+  "fresh_local_output_directory": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "elapsed_seconds": 16.494,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "RampShadow",
+      "output": "'RampShadow.ramp_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.native_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.post_barrier_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.sharp_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.one_fibre_price' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.decode_one_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/RampShadow.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.808,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "PostWords",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/PostWords.lean",
+      "printed_axioms": [],
+      "sha256": "a6cc98e63a862282aa87a76ca4ddbb25b0d67145aa23701c9b7aca713318d349",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.2,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "SignedEscape",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/SignedEscape.lean",
+      "printed_axioms": [],
+      "sha256": "5a62ea12542d48454de383543dccfdd163ee30709a336d064cb3ef2dcf054388",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.7,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "MirrorEnergy",
+      "output": "'RampShadow.Postpeak.MirrorEnergy.odd_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.energy_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.squared_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.MirrorEnergy.sharp_trap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "root/phase4/MirrorEnergy.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "7e48872bd10ec5cec67874dd5e349c10f3d3a7864e94ecb91640ab9580841dc6",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 5.074,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ConeBounds",
+      "output": "",
+      "passed": true,
+      "path": "descent/postpeak/ConeBounds.lean",
+      "printed_axioms": [],
+      "sha256": "bcd45917ee711629f2d9a49cc7faaa643806ddbb275025c57eabbb84a4f2e3e3",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.85,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "CollisionCone",
+      "output": "'RampShadow.Postpeak.cone_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/CollisionCone.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "aeb25c437b9c5714b890d0a48abcc37778b9db36f64ab5bb7efe6a38fdd228a0",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.512,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ScaledRamp",
+      "output": "'RampShadow.Postpeak.scaled_ramp' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/ScaledRamp.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "70cf396e7bf75dbc14e97d12c51235125e1b98865f9d7933d2328a1c51e9116d",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 3.024,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "ProtectedCone",
+      "output": "'RampShadow.Postpeak.paid_peak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.protected_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/ProtectedCone.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "f4f3a8dc8ad5e2b8662ab453aff645dc7a3bc980d3a4d09375605b48bf58ef1b",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 2.648,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "StoppedOrigins",
+      "output": "'RampShadow.Postpeak.Stopped.frame_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Stopped.Frame.scaled_stop' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RampShadow.Postpeak.Stopped.Frame.origin_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "descent/postpeak/stopped/StoppedOrigins.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "266b35b5ff82ef3d289a015ea49046def6a24c69729cf0bc7171d145e639fb67",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1.657,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "FiniteTrace",
+      "output": "",
+      "passed": true,
+      "path": "rigidity/FiniteTrace.lean",
+      "printed_axioms": [],
+      "sha256": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+      "source_unchanged_during_build": true
+    },
+    {
+      "elapsed_seconds": 1.492,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "OrdinaryDefect",
+      "output": "'Collatz.ReciprocalRigidity.OrdinaryDefect.prefix_le_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.OrdinaryDefect.edge_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ReciprocalRigidity.OrdinaryDefect.path_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "passed": true,
+      "path": "rigidity/phase9/OrdinaryDefect.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "467e6eed4d9573d35e636e00eadb747848ccdc55a384adf6f9c22cddfadfaedb",
+      "source_unchanged_during_build": true
+    }
+  ],
+  "passed": true,
+  "requested_modules": [
+    "RampShadow",
+    "PostWords",
+    "SignedEscape",
+    "MirrorEnergy",
+    "ConeBounds",
+    "CollisionCone",
+    "ScaledRamp",
+    "ProtectedCone",
+    "StoppedOrigins",
+    "FiniteTrace",
+    "OrdinaryDefect"
+  ],
+  "schema": "collatz-lean-packet-replay/v1",
+  "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources.",
+  "source_hashes": {
+    "CollisionCone": "aeb25c437b9c5714b890d0a48abcc37778b9db36f64ab5bb7efe6a38fdd228a0",
+    "ConeBounds": "bcd45917ee711629f2d9a49cc7faaa643806ddbb275025c57eabbb84a4f2e3e3",
+    "FiniteTrace": "54d0784a8e38036e0b88046db0288b78ebf433b373c166434d6f9238c56ff343",
+    "MirrorEnergy": "7e48872bd10ec5cec67874dd5e349c10f3d3a7864e94ecb91640ab9580841dc6",
+    "OrdinaryDefect": "467e6eed4d9573d35e636e00eadb747848ccdc55a384adf6f9c22cddfadfaedb",
+    "PostWords": "a6cc98e63a862282aa87a76ca4ddbb25b0d67145aa23701c9b7aca713318d349",
+    "ProtectedCone": "f4f3a8dc8ad5e2b8662ab453aff645dc7a3bc980d3a4d09375605b48bf58ef1b",
+    "RampShadow": "1bed6981ab636dec83ec348f6334ac2ba71118daa15103545056a3014bf38b03",
+    "ScaledRamp": "70cf396e7bf75dbc14e97d12c51235125e1b98865f9d7933d2328a1c51e9116d",
+    "SignedEscape": "5a62ea12542d48454de383543dccfdd163ee30709a336d064cb3ef2dcf054388",
+    "StoppedOrigins": "266b35b5ff82ef3d289a015ea49046def6a24c69729cf0bc7171d145e639fb67"
+  },
+  "started_utc": "2026-11-27T16:35:23Z"
+}

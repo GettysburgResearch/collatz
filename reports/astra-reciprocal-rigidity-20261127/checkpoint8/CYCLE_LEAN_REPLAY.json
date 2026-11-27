@@ -1,0 +1,42 @@
+{
+  "all_sources_unchanged": true,
+  "dependency_cache": "merged pinned Mathlib symlinks",
+  "finished_utc": "2026-11-27T16:52:29Z",
+  "fresh_local_output_directory": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "elapsed_seconds": 1.792,
+      "exit_code": 0,
+      "flags": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-DElab.async=false"
+      ],
+      "forbidden_axioms": [],
+      "module": "RationalCycleCharges",
+      "output": "'CollatzResearch.RationalCycleCharges.floorPrefix_last' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzResearch.RationalCycleCharges.charge_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzResearch.RationalCycleCharges.lap_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzResearch.RationalCycleCharges.reciprocal_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzResearch.RationalCycleCharges.charged_reciprocal_growth' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "passed": true,
+      "path": "cycles/phase8/RationalCycleCharges.lean",
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "sha256": "7d855d991d09429cac63652f1828f9d5c3b2819ba42228d3848c4748a1774013",
+      "source_unchanged_during_build": true
+    }
+  ],
+  "passed": true,
+  "requested_modules": [
+    "RationalCycleCharges"
+  ],
+  "schema": "collatz-lean-packet-replay/v1",
+  "scope": "Kernel compilation of the listed finite declarations and their explicit hypotheses; not a proof of Collatz or a replay of external mathematical sources.",
+  "source_hashes": {
+    "RationalCycleCharges": "7d855d991d09429cac63652f1828f9d5c3b2819ba42228d3848c4748a1774013"
+  },
+  "started_utc": "2026-11-27T16:52:15Z"
+}

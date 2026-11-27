@@ -1,0 +1,87 @@
+{
+  "started_utc": "2026-11-27T16:43:55.419543+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rows": [
+    {
+      "path": "rigidity/phase9/defect_controls.py",
+      "arguments": [],
+      "sha256": "daa1941713360df52819265349d02aff9ce2f0b05cd47954a9159e889180aa6d",
+      "runs": [
+        {
+          "mode": "normal",
+          "exit_code": 0,
+          "elapsed_seconds": 0.629,
+          "output": "{\n  \"gates\": {\n    \"cutoff_rows_level_gates_observed_violations\": [\n      [\n        1,\n        50,\n        41\n      ],\n      [\n        3,\n        48,\n        40\n      ],\n      [\n        5,\n        44,\n        37\n      ],\n      [\n        7,\n        38,\n        32\n      ],\n      [\n        9,\n        30,\n        24\n      ],\n      [\n        11,\n        19,\n        14\n      ],\n      [\n        13,\n        8,\n        5\n      ],\n      [\n        15,\n        2,\n        1\n      ]\n    ],\n    \"distinct_first_crossings_for_fixed_seeds\": [\n      6,\n      6,\n      5,\n      3,\n      3,\n      1,\n      1,\n      0,\n      0,\n      0\n    ],\n    \"tested_ordinary_starts_per_cutoff\": 1024\n  },\n  \"monotone_mersenne_segments_L_h\": [\n    [\n      5,\n      11\n    ],\n    [\n      6,\n      11\n    ],\n    [\n      7,\n      11\n    ],\n    [\n      8,\n      75\n    ],\n    [\n      9,\n      139\n    ],\n    [\n      10,\n      267\n    ],\n    [\n      11,\n      267\n    ],\n    [\n      12,\n      267\n    ]\n  ],\n  \"native\": {\n    \"shell_rows_m_violating_maximal_constructed\": [\n      [\n        5,\n        5,\n        2,\n        1\n      ],\n      [\n        6,\n        10,\n        2,\n        1\n      ],\n      [\n        7,\n        13,\n        3,\n        2\n      ],\n      [\n        8,\n        24,\n        4,\n        3\n      ],\n      [\n        9,\n        39,\n        5,\n        4\n      ],\n      [\n        10,\n        60,\n        12,\n        8\n      ],\n      [\n        11,\n        101,\n        17,\n        13\n      ],\n      [\n        12,\n        186,\n        26,\n        19\n      ]\n    ],\n    \"total_maximal_witnesses\": 51\n  },\n  \"separate_rational_cycle_test\": {\n    \"rational_comparison_cycle\": [\n      \"1/5\",\n      \"4/5\",\n      \"2/5\"\n    ],\n    \"unit_free_total_charge\": \"15457/32\"\n  }\n}\n",
+          "output_sha256": "c267ef95884026b2eb26a1acfc9ae6eca0cdffe68627dc238f1d4962d70675a0"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "elapsed_seconds": 0.632,
+          "output": "{\n  \"gates\": {\n    \"cutoff_rows_level_gates_observed_violations\": [\n      [\n        1,\n        50,\n        41\n      ],\n      [\n        3,\n        48,\n        40\n      ],\n      [\n        5,\n        44,\n        37\n      ],\n      [\n        7,\n        38,\n        32\n      ],\n      [\n        9,\n        30,\n        24\n      ],\n      [\n        11,\n        19,\n        14\n      ],\n      [\n        13,\n        8,\n        5\n      ],\n      [\n        15,\n        2,\n        1\n      ]\n    ],\n    \"distinct_first_crossings_for_fixed_seeds\": [\n      6,\n      6,\n      5,\n      3,\n      3,\n      1,\n      1,\n      0,\n      0,\n      0\n    ],\n    \"tested_ordinary_starts_per_cutoff\": 1024\n  },\n  \"monotone_mersenne_segments_L_h\": [\n    [\n      5,\n      11\n    ],\n    [\n      6,\n      11\n    ],\n    [\n      7,\n      11\n    ],\n    [\n      8,\n      75\n    ],\n    [\n      9,\n      139\n    ],\n    [\n      10,\n      267\n    ],\n    [\n      11,\n      267\n    ],\n    [\n      12,\n      267\n    ]\n  ],\n  \"native\": {\n    \"shell_rows_m_violating_maximal_constructed\": [\n      [\n        5,\n        5,\n        2,\n        1\n      ],\n      [\n        6,\n        10,\n        2,\n        1\n      ],\n      [\n        7,\n        13,\n        3,\n        2\n      ],\n      [\n        8,\n        24,\n        4,\n        3\n      ],\n      [\n        9,\n        39,\n        5,\n        4\n      ],\n      [\n        10,\n        60,\n        12,\n        8\n      ],\n      [\n        11,\n        101,\n        17,\n        13\n      ],\n      [\n        12,\n        186,\n        26,\n        19\n      ]\n    ],\n    \"total_maximal_witnesses\": 51\n  },\n  \"separate_rational_cycle_test\": {\n    \"rational_comparison_cycle\": [\n      \"1/5\",\n      \"4/5\",\n      \"2/5\"\n    ],\n    \"unit_free_total_charge\": \"15457/32\"\n  }\n}\n",
+          "output_sha256": "c267ef95884026b2eb26a1acfc9ae6eca0cdffe68627dc238f1d4962d70675a0"
+        }
+      ],
+      "source_unchanged": true,
+      "identical_outputs": true,
+      "fixture_matches": true,
+      "passed": true
+    },
+    {
+      "path": "descent/postpeak/stopped/check_stopped.py",
+      "arguments": [],
+      "sha256": "be0c4c8aacbf9ea727420a78bc3bc8a6d20f26b56fe177448dbd7f23b29c47ea",
+      "runs": [
+        {
+          "mode": "normal",
+          "exit_code": 0,
+          "elapsed_seconds": 0.026,
+          "output": "N = 60 mod 81; deficit-one target 2N+1; reverse EOOOO gain 81/32\nell 0: origins [1]; conditional charge 0.000000000000\nell 1: origins []; conditional charge 0.000000000000\nell 2: origins [3]; conditional charge 0.000171335941\nell 3: origins []; conditional charge 0.000000000000\nell 4: origins [11]; conditional charge 0.008492129143\nell 5: origins [15]; conditional charge 0.002123032286\nell 6: origins [29, 43]; conditional charge 0.000002596569\nell 7: origins [39, 59]; conditional charge 0.000132689518\nfinite charge 700112863303929083383818509967/64102430352281822574450571965680\ntail charge 81/625\ngap lower bound 6886830314415271160677244916120109/649037107316853453566312041152510000\ndecimal lower bound 0.010610842180\nexact margin over 1/100 396459241246736625014124504595009/649037107316853453566312041152510000\n",
+          "output_sha256": "59bf722456e58d28f7029be3a79cd5f6a72c549ca6c552f2f5db08fcd0543bb1"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "elapsed_seconds": 0.062,
+          "output": "N = 60 mod 81; deficit-one target 2N+1; reverse EOOOO gain 81/32\nell 0: origins [1]; conditional charge 0.000000000000\nell 1: origins []; conditional charge 0.000000000000\nell 2: origins [3]; conditional charge 0.000171335941\nell 3: origins []; conditional charge 0.000000000000\nell 4: origins [11]; conditional charge 0.008492129143\nell 5: origins [15]; conditional charge 0.002123032286\nell 6: origins [29, 43]; conditional charge 0.000002596569\nell 7: origins [39, 59]; conditional charge 0.000132689518\nfinite charge 700112863303929083383818509967/64102430352281822574450571965680\ntail charge 81/625\ngap lower bound 6886830314415271160677244916120109/649037107316853453566312041152510000\ndecimal lower bound 0.010610842180\nexact margin over 1/100 396459241246736625014124504595009/649037107316853453566312041152510000\n",
+          "output_sha256": "59bf722456e58d28f7029be3a79cd5f6a72c549ca6c552f2f5db08fcd0543bb1"
+        }
+      ],
+      "source_unchanged": true,
+      "identical_outputs": true,
+      "fixture_matches": true,
+      "passed": true
+    },
+    {
+      "path": "cycles/phase8/check_denominators.py",
+      "arguments": [],
+      "sha256": "9feaef02e7c1a37834792dea2cfa06c0f2cbf4739b15a95b7f1a646cd749ad34",
+      "runs": [
+        {
+          "mode": "normal",
+          "exit_code": 0,
+          "elapsed_seconds": 0.116,
+          "output": "PASS: 411 least-period signed necklaces (314 positive, 97 negative), 203 rational charged phases, 3940 exact prefix inequalities, 324 last-ascent witnesses, 7 scalar comparisons\n",
+          "output_sha256": "460e7ee93d4b045022fd82f38c6f345dc9b1d300b98a7c0253fa9cc79071df13"
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "elapsed_seconds": 0.159,
+          "output": "PASS: 411 least-period signed necklaces (314 positive, 97 negative), 203 rational charged phases, 3940 exact prefix inequalities, 324 last-ascent witnesses, 7 scalar comparisons\n",
+          "output_sha256": "460e7ee93d4b045022fd82f38c6f345dc9b1d300b98a7c0253fa9cc79071df13"
+        }
+      ],
+      "source_unchanged": true,
+      "identical_outputs": true,
+      "passed": true
+    }
+  ],
+  "fixtures": {
+    "rigidity/phase9/DEFECT_CONTROLS.json": "c267ef95884026b2eb26a1acfc9ae6eca0cdffe68627dc238f1d4962d70675a0",
+    "descent/postpeak/stopped/CONTROLS.txt": "59bf722456e58d28f7029be3a79cd5f6a72c549ca6c552f2f5db08fcd0543bb1"
+  },
+  "fixtures_unchanged": true,
+  "passed": true,
+  "finished_utc": "2026-11-27T16:52:27.775332+00:00"
+}
