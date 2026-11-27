@@ -1,0 +1,72 @@
+{
+  "branches": [
+    {
+      "B": 11,
+      "d": -3,
+      "first_hit": null,
+      "v": -3
+    },
+    {
+      "B": 31,
+      "d": -2,
+      "first_hit": [
+        2,
+        4
+      ],
+      "v": -2
+    },
+    {
+      "B": 41,
+      "d": -1,
+      "first_hit": [
+        3,
+        6
+      ],
+      "v": -1
+    },
+    {
+      "B": 23,
+      "d": 0,
+      "first_hit": [
+        1,
+        2
+      ],
+      "v": 1
+    },
+    {
+      "B": 97,
+      "d": 1,
+      "first_hit": null,
+      "v": 0
+    },
+    {
+      "B": 199,
+      "d": 2,
+      "first_hit": null,
+      "v": 0
+    },
+    {
+      "B": 403,
+      "d": 3,
+      "first_hit": null,
+      "v": 0
+    }
+  ],
+  "counts": {
+    "all_positive_splits": 21387,
+    "large_five_family_branches": 48,
+    "large_one_family": 7,
+    "marked_1": 44,
+    "marked_17": 342,
+    "marked_5": 189,
+    "ternary_residues_per_family": 9841
+  },
+  "exact_margins": {
+    "(2187/2048)^128 > 3^7": true,
+    "(2187/2048)^16 > 2": true,
+    "(2187/2048)^32 > 8": true,
+    "19^7 < 2^30": true,
+    "3^28 < 2^45": true,
+    "5/48 < 153/1009": true
+  }
+}

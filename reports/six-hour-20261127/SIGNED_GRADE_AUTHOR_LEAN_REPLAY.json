@@ -1,0 +1,545 @@
+{
+  "toolchain": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DwarningAsError=true",
+    "--json"
+  ],
+  "local_module_resolution": "fresh temporary recompilation of all six sources in listed order",
+  "mathlib_dependencies": "pinned cached library and its package caches",
+  "modules": [
+    {
+      "module": "MultiBlockCompensation",
+      "source_sha256": "83e91b580da2e897bd03d7f41cb6e792f654bd63e9159a373b36d2d1eb0a8b41",
+      "declarations": [
+        {
+          "name": "MultiBlockCompensation.endpoint",
+          "axioms": []
+        },
+        {
+          "name": "_private.MultiBlockCompensation.0.MultiBlockCompensation.even_lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.MultiBlockCompensation.0.MultiBlockCompensation.odd_lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.lift_word",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.protected_six_blocks",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.same_clock",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.MultiBlockCompensation.0.MultiBlockCompensation.three_odd",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.affine_iff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.smaller_triple_iff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.run_identity",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.shifted_floor",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.MultiBlockCompensation.0.MultiBlockCompensation.realizes_take",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.all_prefixes_protected",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.nine_block_merger",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.nine_block_strict_rise",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MultiBlockCompensation.terminal_decode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ReflectedCycleMinimum",
+      "source_sha256": "9e78964fec3ea9cc549f08291d2b1bc3bbdcbdb283364b38d6aa53ab78d4e3a6",
+      "declarations": [
+        {
+          "name": "_private.ReflectedCycleMinimum.0.ReflectedCycleMinimum.trapped_closed",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "ReflectedCycleMinimum.potential_floor",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "_private.ReflectedCycleMinimum.0.ReflectedCycleMinimum.odd_large_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "ReflectedCycleMinimum.potential_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "ReflectedCycleMinimum.path_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "ReflectedCycleMinimum.phases_calibrated",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "ReflectedCycleMinimum.period",
+          "axioms": []
+        },
+        {
+          "name": "ReflectedCycleMinimum.slope_comparisons",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SevenPhaseMinimum",
+      "source_sha256": "db030a2c0a3e065c7cfab0905ed227d7df1828764f9a36fad7683a87b1517511",
+      "declarations": [
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.reflected_pos",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.growth",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.dual_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SevenPhaseMinimum.dual_transport",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SevenPhaseMinimum.project",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.count_add",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.iter_append",
+          "axioms": []
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.cycle",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.row_path",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.row_bounds",
+          "axioms": []
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.phase_lookup",
+          "axioms": []
+        },
+        {
+          "name": "SevenPhaseMinimum.rigid_cycle",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.calibration",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SevenPhaseMinimum.slope_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.transfer_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.small_reflected",
+          "axioms": []
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.not_trapped",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.cost_at_cycle",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.precise_displacement",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.displacement_large",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.phase_target",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseMinimum.0.SevenPhaseMinimum.positive_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SevenPhaseMinimum.exact_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SevenPhaseOddMap",
+      "source_sha256": "283b522e648cb64a20de903bc9cc16e3393a1ebfe0326e56070f4b3c20c233c6",
+      "declarations": [
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.oddPart_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.oddPart_double",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.accelerated_odd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.one_clock",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.all_clocks",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.double_prefix",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.one_odd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.count_add",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SevenPhaseOddMap.0.SevenPhaseOddMap.physical",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SevenPhaseOddMap.ancestor_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SevenPhaseOddMap.exact_accelerated_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SignedGradeSplit",
+      "source_sha256": "9f7b01e8460143f9e192a2e743161557c52282e930e2088cf98feb6af64cd628",
+      "declarations": [
+        {
+          "name": "_private.SignedGradeSplit.0.SignedGradeSplit.count_prefix",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SignedGradeSplit.0.SignedGradeSplit.positive_iter",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SignedGradeSplit.0.SignedGradeSplit.even_suffix",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SignedGradeSplit.0.SignedGradeSplit.count_join",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeSplit.split_physical",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeSplit.small_odd_future",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeSplit.matched_grade_future",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SignedGradeDigits",
+      "source_sha256": "42b3748c66eae8b64402aec3813dfb2790b2ac99edc83cd366e8f95e240fa999",
+      "declarations": [
+        {
+          "name": "_private.SignedGradeDigits.0.SignedGradeDigits.jump",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeDigits.one_exact_word",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SignedGradeDigits.0.SignedGradeDigits.guard",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "_private.SignedGradeDigits.0.SignedGradeDigits.bad_grade_after",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeDigits.five_first_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "SignedGradeDigits.five_no_seven",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "all_supported_family5_pairs": 703,
+  "family1_checked": 100,
+  "family5_branches": [
+    {
+      "D_minus_e": -3,
+      "cycle": [
+        1
+      ],
+      "positive_odd_B": 11,
+      "v": -3
+    },
+    {
+      "D_minus_e": -2,
+      "arrival": [
+        2,
+        4
+      ],
+      "positive_odd_B": 31,
+      "v": -2
+    },
+    {
+      "D_minus_e": -1,
+      "arrival": [
+        3,
+        6
+      ],
+      "positive_odd_B": 41,
+      "v": -1
+    },
+    {
+      "D_minus_e": 0,
+      "arrival": [
+        1,
+        2
+      ],
+      "positive_odd_B": 23,
+      "v": 1
+    },
+    {
+      "D_minus_e": 1,
+      "cycle": [
+        1
+      ],
+      "positive_odd_B": 97,
+      "v": 0
+    },
+    {
+      "D_minus_e": 2,
+      "cycle": [
+        7,
+        5
+      ],
+      "positive_odd_B": 199,
+      "v": 0
+    },
+    {
+      "D_minus_e": 3,
+      "cycle": [
+        1
+      ],
+      "positive_odd_B": 403,
+      "v": 0
+    }
+  ],
+  "family5_checked": 101,
+  "residues_checked_per_family": 3280
+}

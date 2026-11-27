@@ -27,12 +27,22 @@ CONTROLS = [
     ("cycles/check_resonant_interval.py", [], "cycles/RESONANT_INTERVAL_CONTROLS.json"),
     ("cycles/check_dense_denominators.py", [], "cycles/DENSE_DENOMINATOR_CONTROLS.json"),
     ("cycles/check_cycles_independent.py", [], "cycles/INDEPENDENT_CYCLES.json"),
+    ("pointwise/check_shadow_packets.py", [], "pointwise/SHADOW_PACKET_CONTROLS.json"),
+    ("pointwise/check_moving_review.py", [], "pointwise/MOVING_REVIEW_CONTROLS.json"),
+    ("pointwise/check_grade_split.py", [], "pointwise/GRADE_SPLIT_CONTROLS.json"),
+    ("pointwise/check_grade_digits.py", [], "pointwise/GRADE_DIGITS_CONTROLS.json"),
+    ("pointwise/check_signed_grade_independent.py", [], "pointwise/SIGNED_GRADE_INDEPENDENT_CONTROLS.json"),
+    ("cycles/bridge_energy_certificate.py", [], "cycles/BRIDGE_ENERGY_CHECK.json"),
+    ("cycles/check_binary_energy_independent.py", [], "cycles/BINARY_ENERGY_INDEPENDENT_CONTROLS.json"),
+    ("cycles/full_bridge_pressure.py", [], "cycles/FULL_BRIDGE_PRESSURE.json"),
+    ("cycles/check_free_bridge_review.py", [], "cycles/FREE_BRIDGE_REVIEW_CONTROLS.json"),
 ]
 DEPENDENCIES = {
     "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
     "pointwise/check_fourth.py": ["pointwise/check_extra_budget.py"],
     "pointwise/check_overhead_spectrum.py": [
         "pointwise/check_extra_budget.py", "pointwise/check_positive_anchors.py"],
+    "cycles/full_bridge_pressure.py": ["cycles/bridge_energy_certificate.py"],
 }
 
 

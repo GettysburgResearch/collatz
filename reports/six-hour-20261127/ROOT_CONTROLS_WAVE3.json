@@ -1,0 +1,310 @@
+[
+  {
+    "script": "gates/gate_background_controls.py",
+    "sha256": "3890c0a7998e24204b972a125ad9472d416a48343988c96d5d16b21d5b863133",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "gates/GATE_BACKGROUND_CONTROLS.json",
+    "output_sha256": "51b95f912f1b6f06b552916fc732bef710982722e9879eba5d989af5c62c67d7",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_toric_windows.py",
+    "sha256": "4384fde4cde9ba123fa521fc482a883542662c9cfd3cf1c7b440045d9c12c76d",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/TORIC_WINDOW_CONTROLS.json",
+    "output_sha256": "f12f4ed76f2390c93b543ac78d7a2cee45d204197bc2e8c06d4b39415131bf4b",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_multi_block.py",
+    "sha256": "684d8ea68e4b8ca569626a744b7065f505b8f3cb027cc728b593f17295c68f30",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/MULTI_BLOCK_CONTROLS.json",
+    "output_sha256": "be5875ab1a8014d21fa0a9be78af234fbc2b5200bf8e6f99a6e3f4f5c49d9b84",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_negative17_minimum.py",
+    "sha256": "98e2f10e62100ff462d32e80b67568ddf4d318dcbda8618aa71427f9d1ecaa74",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/NEGATIVE17_CONTROLS.json",
+    "output_sha256": "33f56524935ff7a8b6bce35cf18b3341609a247f5b6e3b0f44d609daa3395e3f",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/independent_audit.py",
+    "sha256": "a4ee5a995776969af3e469c044add98bcefca68b7de9576d0f0545b6a8ffa008",
+    "inputs": {
+      "pointwise/NEGATIVE17_EXACT_MINIMA.md": "1d036bb16dd0623a95d09124d8e88ec06d071a8981ba5d126ff92eaa175fed60"
+    },
+    "dependencies": {},
+    "expected": "pointwise/INDEPENDENT_MINIMUM_CONTROLS.json",
+    "output_sha256": "a8ad0ebf1a779e07d810ea55da31fdaec56bc44fd46aec4f5c3f985a1117c913",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_adaptive_anchors.py",
+    "sha256": "e817d623124914762b628d571ea08fe043139719f87ac9475c989fdc7bf256cc",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/ADAPTIVE_ANCHOR_CONTROLS.json",
+    "output_sha256": "8c48a341864c46db37b330f20ffe699325d723733b8eaeac1b901a2de273c156",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_signed_anchor.py",
+    "sha256": "a5fec6103201661e1dc9fd915c085048fc4571fa2cd57235ba05b95f2a9ea51a",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/SIGNED_ANCHOR_CONTROLS.json",
+    "output_sha256": "0cec2f8df2fd40921aaba22f937c0dc118fd639d59eac9b9dd7b141dd0076b52",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_extra_budget.py",
+    "sha256": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/EXTRA_BUDGET_CONTROLS.json",
+    "output_sha256": "7c7c6b16cc63acdc9d3980fbf0938608a67f74b8458ff1d31fae799e001bf49b",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_positive_anchors.py",
+    "sha256": "0ada19b4ad13d14cd7f96cc563dd7a1153bf9556a69adc8dcafa7685af00c8d2",
+    "inputs": {},
+    "dependencies": {
+      "pointwise/check_extra_budget.py": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377"
+    },
+    "expected": "pointwise/POSITIVE_ANCHOR_CONTROLS.json",
+    "output_sha256": "c1f7f59f1c49582dbe7e40a36f7c2dc822cf0639685fd028c4e1892e7e6587be",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_fourth.py",
+    "sha256": "aeca34c111223f4e051fd910db22d28a643d99fa54a62f8ab85771cebdfa112a",
+    "inputs": {},
+    "dependencies": {
+      "pointwise/check_extra_budget.py": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377"
+    },
+    "expected": "pointwise/FOURTH_EXTRA_CONTROLS.json",
+    "output_sha256": "36c806bbc7aebd6e2fc0efacc5a2e174b5f70811d7d42c3c003bf964abcb8f24",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_overhead_spectrum.py",
+    "sha256": "68e9392b850e1339429a4eba37f7218e158fd5b29d608a2d48f6c7413a108f4d",
+    "inputs": {},
+    "dependencies": {
+      "pointwise/check_extra_budget.py": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377",
+      "pointwise/check_positive_anchors.py": "0ada19b4ad13d14cd7f96cc563dd7a1153bf9556a69adc8dcafa7685af00c8d2"
+    },
+    "expected": "pointwise/ORDINARY_OVERHEAD_CONTROLS.json",
+    "output_sha256": "3b7adc260b9e8f2d00b3a0264195fcec59684d3112a71d22fbde74088df263a1",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_positive_cone_independent.py",
+    "sha256": "70047ae2b979186840611417dc19626ab9eadfde38343e8cc5138bc7c93381e2",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/POSITIVE_CONE_INDEPENDENT.json",
+    "output_sha256": "25293c32448aaa615b757067349e0a24a25fa2b8fbfddc38fee53932ccc25c70",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_inverse_extensions_independent.py",
+    "sha256": "409834e2f3f065f23a70cf45349216e0df44fcb36a0d2a596b8045a236bf229d",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/INDEPENDENT_EXTENSIONS.json",
+    "output_sha256": "24792ee2b4a200bad7ebb08d6664c3deac31ea9bc583c66e8835aac403c36e4b",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_clock_shadows.py",
+    "sha256": "0f7adfcbf69a3548b4199e1853936949837643700589c056df4a89f0d3c7e9f6",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/CLOCK_SHADOW_CONTROLS.json",
+    "output_sha256": "37003944235049f5d046da74259c532512c1f81b3245c6344bb463e8b522f192",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_clock_mesh.py",
+    "sha256": "6f6327fe57ecd042f8d2f19c12fdcfa75fdab7dd384a3c73884b1914c7cb0a0e",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/CLOCK_MESH_CONTROLS.json",
+    "output_sha256": "b5d373acbe7db80b91ea5d461e18643676e21d3ba44196478ca2c1cc6bbd82ad",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_resonant_interval.py",
+    "sha256": "2dcd474f60326dfca6afe18af53c083edfa52c10d030cf617eddc59ee029ab79",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/RESONANT_INTERVAL_CONTROLS.json",
+    "output_sha256": "372bcf44271f4c14ac6c02ba97da1bcef054333fdf97f033ce52f18353cc3c38",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_dense_denominators.py",
+    "sha256": "cc4fdfcf0f67a2a4a5b3e4f0bcc8ae9648c3eab425ae6a3bb2fb71c6968aec7c",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/DENSE_DENOMINATOR_CONTROLS.json",
+    "output_sha256": "29b9ad3697ed7ee73140606f9275f3a19278eac4f1b29c37c978538df5ecd47f",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_cycles_independent.py",
+    "sha256": "d9f3175eaa513ab5af6b16c9253a0a5e53e6daa477b2186387c4bbdf1d343d16",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/INDEPENDENT_CYCLES.json",
+    "output_sha256": "cae7557fd000edd0bfeb2ad628ff2060eb986ba17502bd7b7223aac347393e7f",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_shadow_packets.py",
+    "sha256": "b0d30233cb07179aa9e2e38140fd2f2b83f6cfd37826b7a8c82d6349dbeee4ff",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/SHADOW_PACKET_CONTROLS.json",
+    "output_sha256": "11fc312708d93a57c1def0ce9b08f49c96217698ae23ce711eec812fe646a484",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_moving_review.py",
+    "sha256": "cd5577ac8def5f4fdb1f7c8c72798627ca7a2286c0810b02a5d724721873b709",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/MOVING_REVIEW_CONTROLS.json",
+    "output_sha256": "f5d6c661a2148b3a8e8e9718dd109a4f46fe206b8731e654ea786aaa08d5741a",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_grade_split.py",
+    "sha256": "3b3068ebb820591dd6f63c1579f7e6471566fd701fa80bec97c1e1e8847940d3",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/GRADE_SPLIT_CONTROLS.json",
+    "output_sha256": "fcdbd9abe4ec3d13b5d814e67e30e447eac9bc4357eef8f85548f28f71651898",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_grade_digits.py",
+    "sha256": "ebb883869b7c93120943f1baf6473fe1957e3d70512b95538220dcea6f76acbc",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/GRADE_DIGITS_CONTROLS.json",
+    "output_sha256": "848870079c239f8822e0b2314c2019fc015cc98acfdb8ca5ba2cb7ae68b916da",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "pointwise/check_signed_grade_independent.py",
+    "sha256": "be1805b90b80592831b1c25aa5ae08547f1be66b5d1bf749d2d65a2cae137b06",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "pointwise/SIGNED_GRADE_INDEPENDENT_CONTROLS.json",
+    "output_sha256": "3d83bb9705da07b62fa1d1c6e21eea58c86b1e09065b588fb584b5bda89791da",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/bridge_energy_certificate.py",
+    "sha256": "c14bccd5005390f8d52ecab130cb17da4018bc95e65b46b454a72ef055e51dc3",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/BRIDGE_ENERGY_CHECK.json",
+    "output_sha256": "ac949b5d7cb2e46f4cbb50995102da7b3ba590dda1678458d13ee6686db90414",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_binary_energy_independent.py",
+    "sha256": "7838b87d7f2d7831a368f0f947dc1a91a15e4bffacbc8c37e971f5c7d4159e41",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/BINARY_ENERGY_INDEPENDENT_CONTROLS.json",
+    "output_sha256": "cbfbecd46255d8b5b5a9fcac467c614b8ad578592532b081560dbee502e95c60",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/full_bridge_pressure.py",
+    "sha256": "6a8b115a14e8239ded6d85716c554cfe71ef041cdb628f326dc74d0bdde604b0",
+    "inputs": {},
+    "dependencies": {
+      "cycles/bridge_energy_certificate.py": "c14bccd5005390f8d52ecab130cb17da4018bc95e65b46b454a72ef055e51dc3"
+    },
+    "expected": "cycles/FULL_BRIDGE_PRESSURE.json",
+    "output_sha256": "e259dcadb6c8de1384b15404cbea1d056726f9c79ff85d0be3819560b5372e61",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  },
+  {
+    "script": "cycles/check_free_bridge_review.py",
+    "sha256": "999be50e5df4a0613726cb6749be376ed4efc2c81a9f3fb8076b802e7e88168c",
+    "inputs": {},
+    "dependencies": {},
+    "expected": "cycles/FREE_BRIDGE_REVIEW_CONTROLS.json",
+    "output_sha256": "3e1dfd2204f4bc453a20466feb986313d51c49b025bd53243225720adf6a5dd5",
+    "normal_exit_code": 0,
+    "optimized_exit_code": 0,
+    "byte_identical": true
+  }
+]

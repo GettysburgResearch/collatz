@@ -1,0 +1,358 @@
+{
+  "parent_commit": "bf7d52e78631954a9fd35e4ce973acd27738fc80",
+  "claim_scope": "Source identities and integration transformations; mathematical review and actual replays are separate.",
+  "entries": [
+    {
+      "source": "sixhour-adaptive-anchor-audit/MOVING_RATIONAL_SHADOWS.md",
+      "source_sha256": "bc230fce311bc225284bc33ce859ccbccb214154a3fa1f89cf9744d365daaa60",
+      "path": "research/six-hour-20261127/pointwise/MOVING_RATIONAL_SHADOWS.md",
+      "integrated_sha256": "bc230fce311bc225284bc33ce859ccbccb214154a3fa1f89cf9744d365daaa60",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/HEIGHT_FREE_ANCHOR_CLOCK.md",
+      "source_sha256": "12512e6f63049b04ee5625d06354cadcd6127fc6b4ee35717f78d2881390c279",
+      "path": "research/six-hour-20261127/pointwise/HEIGHT_FREE_ANCHOR_CLOCK.md",
+      "integrated_sha256": "12512e6f63049b04ee5625d06354cadcd6127fc6b4ee35717f78d2881390c279",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/SHORT_LAG_DEFECTS.md",
+      "source_sha256": "f45eba21681d45060363c5061f9dd26d53fb32c10c8e7c8887057eaa79cb1c83",
+      "path": "research/six-hour-20261127/pointwise/SHORT_LAG_DEFECTS.md",
+      "integrated_sha256": "f45eba21681d45060363c5061f9dd26d53fb32c10c8e7c8887057eaa79cb1c83",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/DECODER_AND_ORDINARY_LIFTS.md",
+      "source_sha256": "f2ddc458a94859784e1b3b055e9176ebb8cc5745ec1dd774c8999fcab3ab3487",
+      "path": "research/six-hour-20261127/pointwise/DECODER_AND_ORDINARY_LIFTS.md",
+      "integrated_sha256": "f2ddc458a94859784e1b3b055e9176ebb8cc5745ec1dd774c8999fcab3ab3487",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/TernaryEndpointBudget.lean",
+      "source_sha256": "7282ad567d910648554cb61276e983ac0bfa8bd686cb2459c5b034f453bea518",
+      "path": "research/six-hour-20261127/pointwise/TernaryEndpointBudget.lean",
+      "integrated_sha256": "7282ad567d910648554cb61276e983ac0bfa8bd686cb2459c5b034f453bea518",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/check_shadow_packets.py",
+      "source_sha256": "b0d30233cb07179aa9e2e38140fd2f2b83f6cfd37826b7a8c82d6349dbeee4ff",
+      "path": "research/six-hour-20261127/pointwise/check_shadow_packets.py",
+      "integrated_sha256": "b0d30233cb07179aa9e2e38140fd2f2b83f6cfd37826b7a8c82d6349dbeee4ff",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/SHADOW_PACKET_CONTROLS.json",
+      "source_sha256": "11fc312708d93a57c1def0ce9b08f49c96217698ae23ce711eec812fe646a484",
+      "path": "research/six-hour-20261127/pointwise/SHADOW_PACKET_CONTROLS.json",
+      "integrated_sha256": "11fc312708d93a57c1def0ce9b08f49c96217698ae23ce711eec812fe646a484",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/originals/MOVING_RATIONAL_SHADOWS.original.md",
+      "source_sha256": "6426fbd21f7a39131bc0a0fcdcfd2b20103a0f93cf060cf55fc332449656caba",
+      "path": "reports/six-hour-20261127/source-originals/MOVING_RATIONAL_SHADOWS.original.md",
+      "integrated_sha256": "6426fbd21f7a39131bc0a0fcdcfd2b20103a0f93cf060cf55fc332449656caba",
+      "modified": false
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/HANDOFF_MANIFEST.json",
+      "source_sha256": "eb64268c17422e6477c610cc96519c28d783f3f079e5fff5947e596855e31edd",
+      "path": "reports/six-hour-20261127/MOVING_SHADOW_AUTHOR_MANIFEST.json",
+      "integrated_sha256": "eb64268c17422e6477c610cc96519c28d783f3f079e5fff5947e596855e31edd",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/SIGNED_GRADE_SPARSITY.md",
+      "source_sha256": "837c2f0cf9eafc4a5129fcb26565a40d062b85bf645a65cceb836af2d0a8c191",
+      "path": "research/six-hour-20261127/pointwise/SIGNED_GRADE_SPARSITY.md",
+      "integrated_sha256": "837c2f0cf9eafc4a5129fcb26565a40d062b85bf645a65cceb836af2d0a8c191",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/SIGNED_GRADE_DIGITS.md",
+      "source_sha256": "f7b62b847cc3cb8dd9613ffcd686af07d850892051720188c2cee43fbebabf74",
+      "path": "research/six-hour-20261127/pointwise/SIGNED_GRADE_DIGITS.md",
+      "integrated_sha256": "f7b62b847cc3cb8dd9613ffcd686af07d850892051720188c2cee43fbebabf74",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/SignedGradeSplit.lean",
+      "source_sha256": "9f7b01e8460143f9e192a2e743161557c52282e930e2088cf98feb6af64cd628",
+      "path": "research/six-hour-20261127/pointwise/SignedGradeSplit.lean",
+      "integrated_sha256": "9f7b01e8460143f9e192a2e743161557c52282e930e2088cf98feb6af64cd628",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/SignedGradeDigits.lean",
+      "source_sha256": "42b3748c66eae8b64402aec3813dfb2790b2ac99edc83cd366e8f95e240fa999",
+      "path": "research/six-hour-20261127/pointwise/SignedGradeDigits.lean",
+      "integrated_sha256": "42b3748c66eae8b64402aec3813dfb2790b2ac99edc83cd366e8f95e240fa999",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/check_grade_split.py",
+      "source_sha256": "3b3068ebb820591dd6f63c1579f7e6471566fd701fa80bec97c1e1e8847940d3",
+      "path": "research/six-hour-20261127/pointwise/check_grade_split.py",
+      "integrated_sha256": "3b3068ebb820591dd6f63c1579f7e6471566fd701fa80bec97c1e1e8847940d3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/GRADE_SPLIT_CONTROLS.json",
+      "source_sha256": "fcdbd9abe4ec3d13b5d814e67e30e447eac9bc4357eef8f85548f28f71651898",
+      "path": "research/six-hour-20261127/pointwise/GRADE_SPLIT_CONTROLS.json",
+      "integrated_sha256": "fcdbd9abe4ec3d13b5d814e67e30e447eac9bc4357eef8f85548f28f71651898",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/check_grade_digits.py",
+      "source_sha256": "ebb883869b7c93120943f1baf6473fe1957e3d70512b95538220dcea6f76acbc",
+      "path": "research/six-hour-20261127/pointwise/check_grade_digits.py",
+      "integrated_sha256": "ebb883869b7c93120943f1baf6473fe1957e3d70512b95538220dcea6f76acbc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/GRADE_DIGITS_CONTROLS.json",
+      "source_sha256": "848870079c239f8822e0b2314c2019fc015cc98acfdb8ca5ba2cb7ae68b916da",
+      "path": "research/six-hour-20261127/pointwise/GRADE_DIGITS_CONTROLS.json",
+      "integrated_sha256": "848870079c239f8822e0b2314c2019fc015cc98acfdb8ca5ba2cb7ae68b916da",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/GRADE_LEAN_FRESH_REPLAY.json",
+      "source_sha256": "e61e93e77c7859d0f5508f8cccd5e26818933f776cc4f5bed1637f35742f1f56",
+      "path": "reports/six-hour-20261127/SIGNED_GRADE_AUTHOR_LEAN_REPLAY.json",
+      "integrated_sha256": "e61e93e77c7859d0f5508f8cccd5e26818933f776cc4f5bed1637f35742f1f56",
+      "modified": false
+    },
+    {
+      "source": "sixhour-positive-frontier-review/FRONTIER_HANDOFF.md",
+      "source_sha256": "6927a6e406abd83befd234bc568af163ed1024e18ed34e3fd6bfc572bdd39f55",
+      "path": "reports/six-hour-20261127/SIGNED_GRADE_AUTHOR_HANDOFF.md",
+      "integrated_sha256": "6927a6e406abd83befd234bc568af163ed1024e18ed34e3fd6bfc572bdd39f55",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/MOVING_SHADOW_INDEPENDENT_REVIEW.md",
+      "source_sha256": "a5e5ba55338ea9ac0ceb92ab597bc782ed47d578d238a5c00682cd22b678a8db",
+      "path": "reports/six-hour-20261127/MOVING_SHADOW_INDEPENDENT_REVIEW.md",
+      "integrated_sha256": "a5e5ba55338ea9ac0ceb92ab597bc782ed47d578d238a5c00682cd22b678a8db",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/MULTISCALE_SHALLOW_CLOCKS.md",
+      "source_sha256": "488bfb986a5508b28a83886ee873ee00d0521afffde7b8ad08aa0d6fb8d04aa9",
+      "path": "research/six-hour-20261127/pointwise/MULTISCALE_SHALLOW_CLOCKS.md",
+      "integrated_sha256": "488bfb986a5508b28a83886ee873ee00d0521afffde7b8ad08aa0d6fb8d04aa9",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/SHALLOW_TROPICAL_ISOLATION.md",
+      "source_sha256": "985e62247034fbffafeac959aceb379f26632ea999b0b0f4bc357d26b94ade16",
+      "path": "research/six-hour-20261127/pointwise/SHALLOW_TROPICAL_ISOLATION.md",
+      "integrated_sha256": "985e62247034fbffafeac959aceb379f26632ea999b0b0f4bc357d26b94ade16",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/check_moving_review.py",
+      "source_sha256": "cd5577ac8def5f4fdb1f7c8c72798627ca7a2286c0810b02a5d724721873b709",
+      "path": "research/six-hour-20261127/pointwise/check_moving_review.py",
+      "integrated_sha256": "cd5577ac8def5f4fdb1f7c8c72798627ca7a2286c0810b02a5d724721873b709",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/MOVING_REVIEW_CONTROLS.json",
+      "source_sha256": "f5d6c661a2148b3a8e8e9718dd109a4f46fe206b8731e654ea786aaa08d5741a",
+      "path": "research/six-hour-20261127/pointwise/MOVING_REVIEW_CONTROLS.json",
+      "integrated_sha256": "f5d6c661a2148b3a8e8e9718dd109a4f46fe206b8731e654ea786aaa08d5741a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/BINARY_EXCURSION_PRESSURE_REVIEW.md",
+      "source_sha256": "a2dd96953b02a6a8af260bcd2b3649998d632e43f06fe9a19a387248e2500f05",
+      "path": "reports/six-hour-20261127/BINARY_EXCURSION_PRESSURE_REVIEW.md",
+      "integrated_sha256": "a2dd96953b02a6a8af260bcd2b3649998d632e43f06fe9a19a387248e2500f05",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/check_free_bridge_review.py",
+      "source_sha256": "999be50e5df4a0613726cb6749be376ed4efc2c81a9f3fb8076b802e7e88168c",
+      "path": "research/six-hour-20261127/cycles/check_free_bridge_review.py",
+      "integrated_sha256": "999be50e5df4a0613726cb6749be376ed4efc2c81a9f3fb8076b802e7e88168c",
+      "modified": false
+    },
+    {
+      "source": "sixhour-moving-shadow-review/FREE_BRIDGE_REVIEW_CONTROLS.json",
+      "source_sha256": "3e1dfd2204f4bc453a20466feb986313d51c49b025bd53243225720adf6a5dd5",
+      "path": "research/six-hour-20261127/cycles/FREE_BRIDGE_REVIEW_CONTROLS.json",
+      "integrated_sha256": "3e1dfd2204f4bc453a20466feb986313d51c49b025bd53243225720adf6a5dd5",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/BINARY_CORRIDOR_DENOMINATORS.md",
+      "source_sha256": "5591fe26e124bdc38c57f8869d4618e607370edd7ddccb8d526d9de9810a1dcc",
+      "path": "research/six-hour-20261127/cycles/BINARY_CORRIDOR_DENOMINATORS.md",
+      "integrated_sha256": "5591fe26e124bdc38c57f8869d4618e607370edd7ddccb8d526d9de9810a1dcc",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/TWO_ENDED_LOCAL_INTEGER_CONTROLS.md",
+      "source_sha256": "a80f0e86a37b154ae7b14be68c9fee1993780a7a4529c95eeb2081d36ce63785",
+      "path": "reports/six-hour-20261127/source-originals/TWO_ENDED_LOCAL_INTEGER_CONTROLS.original.md",
+      "integrated_sha256": "a80f0e86a37b154ae7b14be68c9fee1993780a7a4529c95eeb2081d36ce63785",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/TWO_ENDED_LOCAL_INTEGER_CONTROLS.md",
+      "source_sha256": "a80f0e86a37b154ae7b14be68c9fee1993780a7a4529c95eeb2081d36ce63785",
+      "path": "research/six-hour-20261127/cycles/TWO_ENDED_LOCAL_INTEGER_CONTROLS.md",
+      "integrated_sha256": "3850ce3a244d4300f0dd1321e04de209ad8a12b26dc3b29af3f05b15c7008203",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FOUR_BRIDGE_BINARY_CYCLE_BOUND.md",
+      "source_sha256": "22c03623f8edf8c841d6b548b1721b20d35fe8bacf7a803d218119a9939ab831",
+      "path": "reports/six-hour-20261127/source-originals/FOUR_BRIDGE_BINARY_CYCLE_BOUND.original.md",
+      "integrated_sha256": "22c03623f8edf8c841d6b548b1721b20d35fe8bacf7a803d218119a9939ab831",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FOUR_BRIDGE_BINARY_CYCLE_BOUND.md",
+      "source_sha256": "22c03623f8edf8c841d6b548b1721b20d35fe8bacf7a803d218119a9939ab831",
+      "path": "research/six-hour-20261127/cycles/FOUR_BRIDGE_BINARY_CYCLE_BOUND.md",
+      "integrated_sha256": "64cae68229ab4a3facd59433f8f4fb20c067b15d3b8ec17d8606f30f86416a84",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIXED_SOURCE_BINARY_EXCURSION.md",
+      "source_sha256": "6bc12a372340f2b377bab18131452dd1834a3a1d30328c6ac4833fd8d1484a67",
+      "path": "reports/six-hour-20261127/source-originals/FIXED_SOURCE_BINARY_EXCURSION.original.md",
+      "integrated_sha256": "6bc12a372340f2b377bab18131452dd1834a3a1d30328c6ac4833fd8d1484a67",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FIXED_SOURCE_BINARY_EXCURSION.md",
+      "source_sha256": "6bc12a372340f2b377bab18131452dd1834a3a1d30328c6ac4833fd8d1484a67",
+      "path": "research/six-hour-20261127/cycles/FIXED_SOURCE_BINARY_EXCURSION.md",
+      "integrated_sha256": "dca141aa74c579c5c6d37c901ad889f1de0e83de6993bc9e139ef0117a0be561",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/UNRESTRICTED_BINARY_FOURTH_MOMENT.md",
+      "source_sha256": "3c8d545ba78d019180351928af27b866f8b65aeae8bf01a1fe19c4337cb34a4a",
+      "path": "reports/six-hour-20261127/source-originals/UNRESTRICTED_BINARY_FOURTH_MOMENT.original.md",
+      "integrated_sha256": "3c8d545ba78d019180351928af27b866f8b65aeae8bf01a1fe19c4337cb34a4a",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/UNRESTRICTED_BINARY_FOURTH_MOMENT.md",
+      "source_sha256": "3c8d545ba78d019180351928af27b866f8b65aeae8bf01a1fe19c4337cb34a4a",
+      "path": "research/six-hour-20261127/cycles/UNRESTRICTED_BINARY_FOURTH_MOMENT.md",
+      "integrated_sha256": "7cf4698b57321ea7f2f48fcc10a7e5377f90a9bb8d0316dca79e080ccb677ba1",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/BinaryBridgeEnergy.lean",
+      "source_sha256": "816f1c521283d3fcce695c89f6c0c6c691776a091700c0397b60824efabeafff",
+      "path": "reports/six-hour-20261127/source-originals/BinaryBridgeEnergy.original.lean.txt",
+      "integrated_sha256": "816f1c521283d3fcce695c89f6c0c6c691776a091700c0397b60824efabeafff",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/BinaryBridgeEnergy.lean",
+      "source_sha256": "816f1c521283d3fcce695c89f6c0c6c691776a091700c0397b60824efabeafff",
+      "path": "research/six-hour-20261127/cycles/BinaryBridgeEnergy.lean",
+      "integrated_sha256": "e3a9b79aa7fe7c776b21d8c22d726b00de1489b1b0537d152a76ff5999786379",
+      "modified": true
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/bridge_energy_certificate.py",
+      "source_sha256": "c14bccd5005390f8d52ecab130cb17da4018bc95e65b46b454a72ef055e51dc3",
+      "path": "research/six-hour-20261127/cycles/bridge_energy_certificate.py",
+      "integrated_sha256": "c14bccd5005390f8d52ecab130cb17da4018bc95e65b46b454a72ef055e51dc3",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/BRIDGE_ENERGY_CHECK.json",
+      "source_sha256": "ac949b5d7cb2e46f4cbb50995102da7b3ba590dda1678458d13ee6686db90414",
+      "path": "research/six-hour-20261127/cycles/BRIDGE_ENERGY_CHECK.json",
+      "integrated_sha256": "ac949b5d7cb2e46f4cbb50995102da7b3ba590dda1678458d13ee6686db90414",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/full_bridge_pressure.py",
+      "source_sha256": "6a8b115a14e8239ded6d85716c554cfe71ef041cdb628f326dc74d0bdde604b0",
+      "path": "research/six-hour-20261127/cycles/full_bridge_pressure.py",
+      "integrated_sha256": "6a8b115a14e8239ded6d85716c554cfe71ef041cdb628f326dc74d0bdde604b0",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/FULL_BRIDGE_PRESSURE.json",
+      "source_sha256": "e259dcadb6c8de1384b15404cbea1d056726f9c79ff85d0be3819560b5372e61",
+      "path": "research/six-hour-20261127/cycles/FULL_BRIDGE_PRESSURE.json",
+      "integrated_sha256": "e259dcadb6c8de1384b15404cbea1d056726f9c79ff85d0be3819560b5372e61",
+      "modified": false
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/lean_bridge_axioms.jsonl",
+      "source_sha256": "be682f09537fced21d8a09a8be7ee4736c7147b9b5e8476be0df130bb5c86601",
+      "path": "reports/six-hour-20261127/BINARY_ENERGY_AUTHOR_AXIOMS.jsonl",
+      "integrated_sha256": "be682f09537fced21d8a09a8be7ee4736c7147b9b5e8476be0df130bb5c86601",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INDEPENDENT_BINARY_ENERGY_REVIEW.md",
+      "source_sha256": "750e9228c968bbd37ab728137850318597fec3f14d977887ba500ac80a56c16d",
+      "path": "reports/six-hour-20261127/INDEPENDENT_BINARY_ENERGY_REVIEW.md",
+      "integrated_sha256": "750e9228c968bbd37ab728137850318597fec3f14d977887ba500ac80a56c16d",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/REVIEWER_CONTROLS.json",
+      "source_sha256": "cbfbecd46255d8b5b5a9fcac467c614b8ad578592532b081560dbee502e95c60",
+      "path": "research/six-hour-20261127/cycles/BINARY_ENERGY_INDEPENDENT_CONTROLS.json",
+      "integrated_sha256": "cbfbecd46255d8b5b5a9fcac467c614b8ad578592532b081560dbee502e95c60",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/reviewer_controls.py",
+      "source_sha256": "7838b87d7f2d7831a368f0f947dc1a91a15e4bffacbc8c37e971f5c7d4159e41",
+      "path": "research/six-hour-20261127/cycles/check_binary_energy_independent.py",
+      "integrated_sha256": "7838b87d7f2d7831a368f0f947dc1a91a15e4bffacbc8c37e971f5c7d4159e41",
+      "modified": false
+    },
+    {
+      "source": "sixhour-binary-energy-review/INITIAL_REVIEW_MANIFEST.json",
+      "source_sha256": "a619b4acdfa2027a288fb72233823dafb1c8655d2bf6fc08e1fd422e38704830",
+      "path": "reports/six-hour-20261127/BINARY_ENERGY_REVIEW_MANIFEST.json",
+      "integrated_sha256": "a619b4acdfa2027a288fb72233823dafb1c8655d2bf6fc08e1fd422e38704830",
+      "modified": false
+    },
+    {
+      "source": "sixhour-root-review/check_signed_grade_independent.py",
+      "source_sha256": "be1805b90b80592831b1c25aa5ae08547f1be66b5d1bf749d2d65a2cae137b06",
+      "path": "research/six-hour-20261127/pointwise/check_signed_grade_independent.py",
+      "integrated_sha256": "be1805b90b80592831b1c25aa5ae08547f1be66b5d1bf749d2d65a2cae137b06",
+      "modified": false
+    },
+    {
+      "source": "sixhour-root-review/SIGNED_GRADE_INDEPENDENT_CONTROLS.json",
+      "source_sha256": "3d83bb9705da07b62fa1d1c6e21eea58c86b1e09065b588fb584b5bda89791da",
+      "path": "research/six-hour-20261127/pointwise/SIGNED_GRADE_INDEPENDENT_CONTROLS.json",
+      "integrated_sha256": "3d83bb9705da07b62fa1d1c6e21eea58c86b1e09065b588fb584b5bda89791da",
+      "modified": false
+    }
+  ],
+  "integration_artifacts_sha256": {
+    "research/six-hour-20261127/README.md": "789f6b1310fe2dc6410a92af5b2a10d24f5295561d9f95a620d183f853b6af9d",
+    "research/six-hour-20261127/THIRD_CHECKPOINT.md": "4937778835ce7913b515f1230ea701de2dcf1be5ff3f6c7353aeba95df1a8044",
+    "research/six-hour-20261127/replay_lean.py": "be9339a7fe6c78bffc69ebd26d63d9aed8cb3ca169ff8822088eb936e918fa06",
+    "research/six-hour-20261127/replay_controls.py": "0c92b9f290d6505ba8d01b20d53bac07c4c837802c9f87ac46e84b0231ae3d93",
+    "reports/six-hour-20261127/ROOT_REVIEW_WAVE3.md": "694e265c512f2797a7bcd03e6c8d14818493f7e3f27b1e0f171258439ed25276",
+    "reports/six-hour-20261127/ROOT_LEAN_WAVE3.json": "6ff531136fd605751c598b2a82e22cd99805ef9b5398fa32751fe67bec3a2577",
+    "reports/six-hour-20261127/ROOT_CONTROLS_WAVE3.json": "bd282ecaae321e50a7a52a0771dcabb5a74df54404ecf86d1b48386e9368ac67"
+  }
+}
