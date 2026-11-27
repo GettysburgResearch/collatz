@@ -1,0 +1,3 @@
+'CriticalStrip.terminal_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CriticalStrip.sparse_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CriticalStrip.no_rational_strip' depends on axioms: [propext, Classical.choice, Quot.sound]

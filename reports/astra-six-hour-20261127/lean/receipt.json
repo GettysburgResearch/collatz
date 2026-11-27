@@ -1,0 +1,1814 @@
+{
+  "status": "PASS",
+  "scope": "All current Lean files and transitive project dependencies rebuilt from visible source. Selected declaration axiom inventories checked against the standard logical axioms. The retained universal convergence consumers still have OPEN FrontierMerger, or RecordLock and CycleExclusion, premises. The full critical-strip compactness, entropy, Pad\u00e9 asymptotics, potential obstructions and literature-dependent arguments are written mathematics except for the exact kernels identified in each lane. The separate K=15 enumeration is independently replayed computation, not a Lean kernel proof.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "runtime_library_sha256": "6b30cc963d065fc9d2f87f7e9cbe0682b23000ae5425bccd769c5d477fa74f13",
+  "runner_sha256": "1870e62254186b7da4c1cbdb0c27420a616db5f29bc175f103b5d49c46143f63",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "dependency_cache_policy": "Reuse the supplied Mathlib and external package oleans; the checkout revision is recorded, but no fresh dependency rebuild is claimed.",
+  "package_cache_entries": [
+    "LeanSearchClient",
+    "Qq",
+    "aesop",
+    "batteries",
+    "importGraph",
+    "plausible",
+    "proofwidgets"
+  ],
+  "modules": [
+    {
+      "source": "research/astra-six-hour-20261127/cycles/CriticalStrip.lean",
+      "dependency": false,
+      "source_sha256": "2c5fdf431bfb6d20c5d9c7de8418082828c07b74d6fff8028b55603fab150393",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/CriticalStrip.log",
+      "log_sha256": "8903770c7321e6a3c1970bd5b5c379497885b40dbcd37ec02cf9e1c0bc246239",
+      "axiom_inventories": [
+        {
+          "declaration": "CriticalStrip.terminal_dvd",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalStrip.sparse_not_linear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalStrip.no_rational_strip",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "terminal_dvd",
+        "sparse_not_linear",
+        "no_rational_strip"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/cycles/FourMarks.lean",
+      "dependency": false,
+      "source_sha256": "7ed02aa9d3ac22bd6b8698d6df389f118935b743af53ab4ce5b79453384098d4",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/FourMarks.log",
+      "log_sha256": "792c4d8cb10c5f11bdb9d6b725ff44823dd6441940371bd8c3f01b0c9a205df4",
+      "axiom_inventories": [
+        {
+          "declaration": "FourMarks.source_power",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "FourMarks.four_hits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "source_power",
+        "four_hits"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/escape/StaircaseAffine.lean",
+      "dependency": false,
+      "source_sha256": "eb3fa06cf489b8f9736e9f7e8aa6f16ad5cec35727d80fc33b7a14d28f7c78f7",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/StaircaseAffine.log",
+      "log_sha256": "bc3132050e9531b98e79e7456d97c0a0fc9379fc410c7b97188ad0b21525646d",
+      "axiom_inventories": [
+        {
+          "declaration": "StaircaseAffine.inverse_ordinary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircaseAffine.inverse_append",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircaseAffine.centered",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircaseAffine.copies_at_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircaseAffine.finite_tschakaloff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircaseAffine.ordinary_finite_tschakaloff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "StaircaseAffine.inverse_ordinary",
+        "StaircaseAffine.inverse_append",
+        "StaircaseAffine.centered",
+        "StaircaseAffine.copies_at_fixed",
+        "StaircaseAffine.finite_tschakaloff",
+        "StaircaseAffine.ordinary_finite_tschakaloff"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/escape/StaircasePade.lean",
+      "dependency": false,
+      "source_sha256": "4a8e8da20d8c2c89dd0ee6345e90a75476a8093b3defa02d26096c6403da135e",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/StaircasePade.log",
+      "log_sha256": "810f5375712312cacd4bd9ab82c54bd5f16e304a716a57c317923241f2ba82b5",
+      "axiom_inventories": [
+        {
+          "declaration": "StaircasePade.tri_add",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.shifted_term",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.filter_at_root",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.block_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.initial_remainder_vanishes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.finite_remainder",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.uniform_exponent_gap",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "StaircasePade.fixed_template_exponent_gap",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "StaircasePade.tri_add",
+        "StaircasePade.shifted_term",
+        "StaircasePade.filter_at_root",
+        "StaircasePade.block_eq",
+        "StaircasePade.initial_remainder_vanishes",
+        "StaircasePade.finite_remainder",
+        "StaircasePade.uniform_exponent_gap",
+        "StaircasePade.fixed_template_exponent_gap"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/escape/StaircasePrecision.lean",
+      "dependency": false,
+      "source_sha256": "8ec625c2576bd58edea7830328543cce4a243d765934c59f21865ea918da1cc6",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/StaircasePrecision.log",
+      "log_sha256": "496b2e7cf62062d18fffd2555d0c4619354ea7995c36da90cb62048a85f8df49",
+      "axiom_inventories": [
+        {
+          "declaration": "StaircasePrecision.exact_nonzero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePrecision.surviving_filter_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePrecision.surviving_block_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePrecision.remainder_order",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "StaircasePrecision.native_parameter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "StaircasePrecision.exact_nonzero",
+        "StaircasePrecision.surviving_filter_unit",
+        "StaircasePrecision.surviving_block_exact",
+        "StaircasePrecision.remainder_order",
+        "StaircasePrecision.native_parameter"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round9/vendor/SourceDeletion.lean",
+      "dependency": true,
+      "source_sha256": "21227f38df7f95b29613ec322a1e48f3fc0e423155fb12867c9dfcf546699af0",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/SourceDeletion.log",
+      "log_sha256": "406dfdef6d2a9e6b77370ccbd0b3a351189efb886c4d15d92c9fa3d7f339c281",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.SourceDeletion.lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.swapped_paths",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.swapped_row",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.delete_digit",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.lower_representative",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.all_below",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.all_below_cutoff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SourceDeletion.seven_mod_eight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "lift",
+        "swapped_paths",
+        "swapped_row",
+        "delete_digit",
+        "lower_representative",
+        "all_below",
+        "all_below_cutoff",
+        "seven_mod_eight"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-unconventional-20261126/renormalization/SignedBudget.lean",
+      "dependency": true,
+      "source_sha256": "5f659872df4a3e915d272bdd9d55a24abab55cc3a6d64c8d1953fe7a0c0c1b65",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/SignedBudget.log",
+      "log_sha256": "7a627f40edaa55c5452cd5252d4b3eafff54a182e87930e5d7c97bb0ce1969d5",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.SignedBudget.physical",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SignedBudget.signed_lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SignedBudget.negative_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SignedBudget.negative_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SignedBudget.sharp_lap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "physical",
+        "signed_lift",
+        "negative_step",
+        "negative_budget",
+        "sharp_lap"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-unconventional-20261126/renormalization/ShadowBarrier.lean",
+      "dependency": true,
+      "source_sha256": "558c43120f85133001807aed9b000955d7180e4e20a455897943a2798cd8a41b",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/ShadowBarrier.log",
+      "log_sha256": "3d0f7df80e665101a2f3608273a85c43105d38aca72bf7afd79ddbd48a5416b5",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.ShadowBarrier.shadow_coeff",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.ShadowBarrier.shadow",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.ShadowBarrier.negative_magnitude",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.ShadowBarrier.positive_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.ShadowBarrier.negative_floor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "shadow_coeff",
+        "shadow",
+        "negative_magnitude",
+        "positive_floor",
+        "negative_floor"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-unconventional-20261126/renormalization/PhysicalWindow.lean",
+      "dependency": true,
+      "source_sha256": "93c727c4fdb35eaba437ce839ef5ddfa6677b24951edc7f8267e14df6f3e47e7",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/PhysicalWindow.log",
+      "log_sha256": "a1ef0028b274f59567c15ccf68cded4c0ea45b46e0d2d0f30bc2cd9e0ba74a61",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.PhysicalWindow.affine",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.offset_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.cut",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.split_odds",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.rise",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.positive_cost",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.PhysicalWindow.negative_cost",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "affine",
+        "offset_bound",
+        "cut",
+        "split_odds",
+        "rise",
+        "positive_cost",
+        "negative_cost"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/ordinary/ClockSeparation.lean",
+      "dependency": false,
+      "source_sha256": "96c486e36ac8bc251d3ea5b804b824790b6de0418e2bb32310acbfab72414958",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/ClockSeparation.log",
+      "log_sha256": "9b0a5fb7b167c3b59f978f98e27f82c2eddaa593e5199536dc0098f7dc872bf2",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.ClockSeparation.high_meeting",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "high_meeting"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-unconventional-20261126/renormalization/RankTwoControl.lean",
+      "dependency": true,
+      "source_sha256": "bd55b8a7a64c8c43e1d706baf686481cfa32ceba2e5bf4b431974eaee0742d43",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/RankTwoControl.log",
+      "log_sha256": "ddf348cb7e5cfa42c793849ce5d658e913d002c173a8d72bdc0ff7d08c992265",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.RankTwoControl.terminal_charge",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.RankTwoControl.no_augmented_plus",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.RankTwoControl.before_upper_hit",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "terminal_charge",
+        "no_augmented_plus",
+        "before_upper_hit"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/ordinary/FrozenOffset.lean",
+      "dependency": false,
+      "source_sha256": "90b39b5de329e545577b862c20cd6b590d2f63e60ce65d9f3672e8c582563df5",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/FrozenOffset.log",
+      "log_sha256": "b422f636c6b3e14c24102ef629839d0edb1c716bbb3191e9c72d7ebe3dbec14c",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.FrozenOffset.frozen_suffix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.FrozenOffset.native498",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "Collatz.FrozenOffset.third_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.FrozenOffset.residue_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.FrozenOffset.finite_scan",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "frozen_suffix",
+        "native498",
+        "third_spec",
+        "residue_spec",
+        "finite_scan"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-unconventional-20261126/renormalization/AscentMerger.lean",
+      "dependency": true,
+      "source_sha256": "01bea0681435d4339c34515cd36ef3f7a3f99eead1291312d6d04b0154e2d40c",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/AscentMerger.log",
+      "log_sha256": "ae4ccb41abaa52de692352b26f65ab3c735b6c2f3bdbe0f28b8b984b74a1f25a",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.AscentMerger.ramp",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AscentMerger.other_predecessor",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AscentMerger.lower_witness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AscentMerger.sharp_word",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "ramp",
+        "other_predecessor",
+        "lower_witness",
+        "sharp_word"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round9/vendor/MinimumFailure.lean",
+      "dependency": true,
+      "source_sha256": "988435d6a6e986d20293593037765775e951a73f1f74e712690ba6ddfc4334c4",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/MinimumFailure.log",
+      "log_sha256": "c694cf8d90772d379b03f7e1cd534dd901aa892496849e84984ca09fc7f7fb85",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.MinimumFailure.good_one",
+          "axioms": []
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.good_step",
+          "axioms": []
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.good_run",
+          "axioms": []
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.label_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.label_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.label_eq_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.exists_least_discordance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.good_below",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.good_cutoff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.upper_bad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.smaller_triples_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.smaller_multiples_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.counterexample_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.exclude_seven_mod_eight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.MinimumFailure.counterexample_reduction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "good_one",
+        "good_step",
+        "good_run",
+        "label_step",
+        "label_one",
+        "label_eq_one",
+        "exists_least_discordance",
+        "good_below",
+        "good_cutoff",
+        "upper_bad",
+        "smaller_triples_good",
+        "smaller_multiples_good",
+        "counterexample_bound",
+        "exclude_seven_mod_eight",
+        "counterexample_reduction"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/ordinary/OrdinaryDerivative.lean",
+      "dependency": false,
+      "source_sha256": "ea2363ee14cbc30b905dcb9284dbba410f9949ae00191b656abefad1d3a1dedd",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/OrdinaryDerivative.log",
+      "log_sha256": "c3490dee4918ae41acf4b6b9d1b89d6fe3c24ef556f6e9621283df7d43412966",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.OrdinaryDerivative.peak_lift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.log_phases",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.derivative_merger",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.physical_log_meeting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.negative_merger",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.negative_log_meeting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.odd_anchor_meeting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryDerivative.floor_return",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "peak_lift",
+        "log_phases",
+        "derivative_merger",
+        "physical_log_meeting",
+        "negative_merger",
+        "negative_log_meeting",
+        "odd_anchor_meeting",
+        "floor_return"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-six-hour-20261127/ordinary/OrdinaryPower.lean",
+      "dependency": false,
+      "source_sha256": "ef4e9775cf63ae7d5b41de037844d178dae32aba89c2fb8e6392eb1146894e2b",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/OrdinaryPower.log",
+      "log_sha256": "204e484c290671c29b5e79a478861114ef5554b3ecadb79dbdbb48fd0666b66b",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.OrdinaryPower.normalized_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.all_in_band",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.negative_band",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.even_signed_multiple",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.even_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.odd_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.odd_degree_meeting",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.OrdinaryPower.power_parent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "normalized_unit",
+        "all_in_band",
+        "negative_band",
+        "even_signed_multiple",
+        "even_power",
+        "odd_power",
+        "odd_degree_meeting",
+        "power_parent"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round10/vendor/SmoothCore.lean",
+      "dependency": true,
+      "source_sha256": "488bd1d4081e92cfe836d85dd1b27201b4787c46ee395b9196508294684613db",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/SmoothCore.log",
+      "log_sha256": "7123e91ba50de2e77827b62871aa4aaf809a277a5d8874d0971cf6eabc95e88f",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.SmoothCore.exists_first_tower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.base_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.base_is_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.strict_base_of_clock",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.smooth_reservoir",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.odd_run_end",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.same_three",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.higher_three",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.same_four",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.lower_four",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.forbid_small_base_exit",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.forbid_two_power_return",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.next_base_good",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.SmoothCore.universal_iff_frontier_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "exists_first_tower",
+        "base_good",
+        "base_is_unit",
+        "strict_base_of_clock",
+        "smooth_reservoir",
+        "odd_run_end",
+        "same_three",
+        "higher_three",
+        "same_four",
+        "lower_four",
+        "forbid_small_base_exit",
+        "forbid_two_power_return",
+        "next_base_good",
+        "universal_iff_frontier_merger"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/closure/AnchorDescent.lean",
+      "dependency": true,
+      "source_sha256": "19ef9332bccc3d77b3c0a723b2fb536a5c5b85c3a13201042ea5578c5bccb77c",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/AnchorDescent.log",
+      "log_sha256": "d010c193c7af4fec76126479188dc6ae55afabc1063e80adf89f6fd4cc7f1690",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.AnchorDescent.positive_meeting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.grade_gain",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.all_exponents",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.exclude_first_tower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.anchor_contraction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.grade_gain_native",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.positive_anchor_native",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.positive_anchor_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.negative_meeting",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.negative_anchor_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorDescent.anchor_control",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "positive_meeting",
+        "grade_gain",
+        "all_exponents",
+        "exclude_first_tower",
+        "anchor_contraction",
+        "grade_gain_native",
+        "positive_anchor_native",
+        "positive_anchor_scale",
+        "negative_meeting",
+        "negative_anchor_scale",
+        "anchor_control"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/closure/AnchorControl.lean",
+      "dependency": true,
+      "source_sha256": "c14fa1aa9b009945899bc5d1e62f0220e637bec1594012f17c7adcca0c0478ca",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/AnchorControl.log",
+      "log_sha256": "914226005774b65a5f767f4df2be90d7f89770f4e68dc76ceb63104d0b7de8cf",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.AnchorControl.short_miss",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorControl.no_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorControl.no_negative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.AnchorControl.control_good",
+          "axioms": []
+        }
+      ],
+      "expected_inventories": [
+        "short_miss",
+        "no_positive",
+        "no_negative",
+        "control_good"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round10/closure/TowerClock.lean",
+      "dependency": true,
+      "source_sha256": "c2853e37c091990d049dd8ecbba37fb12ac75f2377a8b35d53bde9b118ff2222",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/TowerClock.log",
+      "log_sha256": "d2e31a99ee1922888963c7a7784046f19a3759d515e12d1d98eaa06b7876cf11",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.TowerClock.word_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.carry_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.lower_power_meeting",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.short_meeting_rigid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.short_cone_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.all_odd_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.all_odd_no_short_cone",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.all_odd_no_short_smooth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.fifteen_no_affine_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.two_run_drop",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TowerClock.delayed_linear_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "word_iff",
+        "carry_bound",
+        "lower_power_meeting",
+        "short_meeting_rigid",
+        "short_cone_iff",
+        "all_odd_weight",
+        "all_odd_no_short_cone",
+        "all_odd_no_short_smooth",
+        "fifteen_no_affine_return",
+        "two_run_drop",
+        "delayed_linear_return"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/formal/TemplateChain.lean",
+      "dependency": true,
+      "source_sha256": "d66528f21e07a62ed43b9b334a04a266d31783b00cbc89b41076b16bd9f90f3b",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/TemplateChain.log",
+      "log_sha256": "39be1c19ec56cebd6ebb28d97234fd6a054fe155412adb27cb57df1a90e962b8",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.TemplateChain.physical_center",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TemplateChain.centered_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TemplateChain.chain_identity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TemplateChain.endpoint_equation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "physical_center",
+        "centered_power",
+        "chain_identity",
+        "endpoint_equation"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/diagonal/TraceCensus.lean",
+      "dependency": true,
+      "source_sha256": "4cc87b0f0d385074858c107e963b86e7403c122d0b6815551118feb30e6ba349",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/TraceCensus.log",
+      "log_sha256": "48acecfad8bc1658766b57ebd4549325dff0d47d8045c34b189b45703693d8d5",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.TraceCensus.image_envelope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TraceCensus.shifted_census",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TraceCensus.log_threshold_arithmetic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TraceCensus.record_height_bits",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "Collatz.TraceCensus.residual_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.TraceCensus.fifth_cutoff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "image_envelope",
+        "shifted_census",
+        "log_threshold_arithmetic",
+        "record_height_bits",
+        "residual_bounds",
+        "fifth_cutoff"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/cycle/LocalDenominator.lean",
+      "dependency": true,
+      "source_sha256": "350b30d3df873f68c25c95be09416baf0ad8099a7165c7aee23ad3f6a9203530",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/LocalDenominator.log",
+      "log_sha256": "8ef2e1a45546f28cabb5fc58c524525cf8c94cb744205b5015da4b9c776539e7",
+      "axiom_inventories": [
+        {
+          "declaration": "LocalDenominator.seam_coprime",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.recover_from_two_differences",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.unroll",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.small_edge",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.lap_rigid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.overlap",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "LocalDenominator.decode_lap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "seam_coprime",
+        "recover_from_two_differences",
+        "unroll",
+        "small_edge",
+        "lap_rigid",
+        "overlap",
+        "decode_lap"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round11/formal/FinalProposal.lean",
+      "dependency": true,
+      "source_sha256": "a45ac3ad1d7a35e9e6867e2df2b0003a1bb6be4d836998d21b53b07eaf672a12",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/FinalProposal.log",
+      "log_sha256": "85dacf0e85ecc0c9d19fcb74bc4e3c0c73d96bfae2d26fc775fe6debd8f867c3",
+      "axiom_inventories": [
+        {
+          "declaration": "Collatz.RoundEleven.convergent_control_outside_anchors",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.RoundEleven.all_exponents_have_descent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "Collatz.RoundEleven.final_proposal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "convergent_control_outside_anchors",
+        "all_exponents_have_descent",
+        "final_proposal"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    },
+    {
+      "source": "research/astra-global-closure-20261124/round13/critical/CriticalRecordRigidity.lean",
+      "dependency": true,
+      "source_sha256": "728740b9cfa0f51bbf759d6c7084ad7ab8d97c885866e03d9a772ce26ee9eb0e",
+      "compiler_exit": 0,
+      "source_unchanged": true,
+      "log": "reports/astra-six-hour-20261127/lean/CriticalRecordRigidity.log",
+      "log_sha256": "8f0792b55bfe457ac2a28122c26455fb3aac4c6a18711affdadca934bdd8a701",
+      "axiom_inventories": [
+        {
+          "declaration": "CriticalRecordRigidity.run_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.step_pos",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.run_pos",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.even_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.odd_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.cancel_three",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.matching_divisibility",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.pow_two_gt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.no_infinite_negative_match",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.signed_inverse_difference",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.negative_cycle_multiplier",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.positive_cycle_multiplier",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "CriticalRecordRigidity.collatz_of_record_lock_and_cycles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "expected_inventories": [
+        "CriticalRecordRigidity.run_add",
+        "CriticalRecordRigidity.step_pos",
+        "CriticalRecordRigidity.run_pos",
+        "CriticalRecordRigidity.even_step",
+        "CriticalRecordRigidity.odd_step",
+        "CriticalRecordRigidity.cancel_three",
+        "CriticalRecordRigidity.matching_divisibility",
+        "CriticalRecordRigidity.pow_two_gt",
+        "CriticalRecordRigidity.no_infinite_negative_match",
+        "CriticalRecordRigidity.signed_inverse_difference",
+        "CriticalRecordRigidity.negative_cycle_multiplier",
+        "CriticalRecordRigidity.positive_cycle_multiplier",
+        "CriticalRecordRigidity.collatz_of_record_lock_and_cycles"
+      ],
+      "unexpected_axioms": [],
+      "passed": true
+    }
+  ],
+  "module_count": 25,
+  "new_module_count": 9,
+  "selected_axiom_report_count": 166,
+  "new_selected_axiom_report_count": 46,
+  "all_sources_unchanged": true
+}

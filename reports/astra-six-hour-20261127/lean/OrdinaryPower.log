@@ -1,0 +1,8 @@
+'Collatz.OrdinaryPower.normalized_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.all_in_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.negative_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.even_signed_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.even_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.odd_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.odd_degree_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrdinaryPower.power_parent' depends on axioms: [propext, Classical.choice, Quot.sound]

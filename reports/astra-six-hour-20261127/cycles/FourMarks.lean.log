@@ -1,0 +1,2 @@
+'FourMarks.source_power' depends on axioms: [propext, Quot.sound]
+'FourMarks.four_hits' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+'Collatz.FrozenOffset.frozen_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenOffset.native498' depends on axioms: [propext]
+'Collatz.FrozenOffset.third_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenOffset.residue_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FrozenOffset.finite_scan' depends on axioms: [propext]

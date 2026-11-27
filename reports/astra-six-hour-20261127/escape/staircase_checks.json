@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "finite exact arithmetic checks",
+  "noncommuting_pairs": 842,
+  "commuting_pairs": 88,
+  "positive_cylinder_tests": 2790,
+  "pade_parameter_tests": 270,
+  "matching_term_checks": 1080,
+  "integer_threshold_checks": 2,
+  "multiphase_template_count": 5,
+  "total_active_phases": 14,
+  "exact_leading_order_checks": 75,
+  "positive_multiphase_prefix_tests": 10
+}

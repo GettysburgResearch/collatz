@@ -1,0 +1,5 @@
+'Collatz.SignedBudget.physical' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedBudget.signed_lift' depends on axioms: [propext, Quot.sound]
+'Collatz.SignedBudget.negative_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedBudget.negative_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SignedBudget.sharp_lap' depends on axioms: [propext, Classical.choice, Quot.sound]

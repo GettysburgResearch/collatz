@@ -1,0 +1,5 @@
+'StaircasePrecision.exact_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePrecision.surviving_filter_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePrecision.surviving_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePrecision.remainder_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StaircasePrecision.native_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]

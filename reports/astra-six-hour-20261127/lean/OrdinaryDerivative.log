@@ -1,0 +1,8 @@
+'Collatz.OrdinaryDerivative.peak_lift' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.log_phases' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.derivative_merger' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.physical_log_meeting' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.negative_merger' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.negative_log_meeting' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.odd_anchor_meeting' depends on axioms: [propext, Quot.sound]
+'Collatz.OrdinaryDerivative.floor_return' depends on axioms: [propext, Quot.sound]

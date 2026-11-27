@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Independent root replay and mathematical-review boundary; no full Collatz proof",
+  "lean": {
+    "receipt": "lean/receipt.json",
+    "modules": 25,
+    "new_modules": 9,
+    "selected_axiom_reports": 166,
+    "new_selected_axiom_reports": 46,
+    "all_source_hashes_match": true
+  },
+  "upper_affine": {
+    "independent_engine": "research/astra-six-hour-20261127/check_upper_affine.cpp",
+    "integer_engine": "GMP mpz_class",
+    "nodes": 128545757,
+    "all_data_match_python": true,
+    "receipt": "upper-affine-independent.json",
+    "scope": "Exact computation; complete tree not formalized in Lean"
+  },
+  "ordinary": {
+    "root_reran": [
+      "check_ordinary.py",
+      "check_threshold.py"
+    ],
+    "all_frozen_census_fields_match": true
+  },
+  "escape": {
+    "root_reran": "check_staircase.py",
+    "word_pairs": 930,
+    "positive_lifts": 2790,
+    "pade_parameters": 270,
+    "individual_term_identities": 1080,
+    "result": "PASS"
+  },
+  "local_document_links": {
+    "checked": 77,
+    "missing": 0
+  }
+}

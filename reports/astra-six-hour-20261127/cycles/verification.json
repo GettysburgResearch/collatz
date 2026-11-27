@@ -1,0 +1,31 @@
+{
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "lean_version": "4.34.1",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": {
+    "CriticalStrip.lean": {
+      "sha256": "2c5fdf431bfb6d20c5d9c7de8418082828c07b74d6fff8028b55603fab150393",
+      "stdout_sha256": "8903770c7321e6a3c1970bd5b5c379497885b40dbcd37ec02cf9e1c0bc246239"
+    },
+    "FourMarks.lean": {
+      "sha256": "7ed02aa9d3ac22bd6b8698d6df389f118935b743af53ab4ce5b79453384098d4",
+      "stdout_sha256": "792c4d8cb10c5f11bdb9d6b725ff44823dd6441940371bd8c3f01b0c9a205df4"
+    }
+  },
+  "scope": "local modules compiled against existing mathlib build; no upstream result or whole census formalized",
+  "upper_languages": {
+    "json_sha256": "b580bc42f8ed61e4cb3a522cbe76af5a0da8e19049b8cd23949de56d6c66a34e",
+    "normal_optimized_identical": true,
+    "optimized_stdout": "All four parity trees, ordinary first hits and the small floor agree.",
+    "script_sha256": "5878638493e6910c0502085ac16bb45382015d7720bf003aaf9526deb7bbfc60"
+  },
+  "window_controls": {
+    "json_sha256": "c03f49ad7895778c82bc03a1736a107f9f725cf3efac4dc1fb561bd589d1389e",
+    "normal_optimized_identical": true,
+    "script_sha256": "25dbd1aa7fef63d1e8cf48c4db02c7c2bfb9bf54f9a5c8042be5dd2a3fa14b13"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false"
+  ],
+  "modules": [
+    {
+      "name": "StaircaseAffine",
+      "source_sha256": "eb3fa06cf489b8f9736e9f7e8aa6f16ad5cec35727d80fc33b7a14d28f7c78f7",
+      "exit_code": 0,
+      "audit_output": [
+        "'StaircaseAffine.inverse_ordinary' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircaseAffine.inverse_append' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircaseAffine.centered' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircaseAffine.copies_at_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircaseAffine.finite_tschakaloff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircaseAffine.ordinary_finite_tschakaloff' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "name": "StaircasePade",
+      "source_sha256": "4a8e8da20d8c2c89dd0ee6345e90a75476a8093b3defa02d26096c6403da135e",
+      "exit_code": 0,
+      "audit_output": [
+        "'StaircasePade.tri_add' depends on axioms: [propext, Quot.sound]",
+        "'StaircasePade.shifted_term' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePade.filter_at_root' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePade.block_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePade.initial_remainder_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePade.finite_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePade.uniform_exponent_gap' depends on axioms: [propext]",
+        "'StaircasePade.fixed_template_exponent_gap' depends on axioms: [propext]"
+      ]
+    },
+    {
+      "name": "StaircasePrecision",
+      "source_sha256": "8ec625c2576bd58edea7830328543cce4a243d765934c59f21865ea918da1cc6",
+      "exit_code": 0,
+      "audit_output": [
+        "'StaircasePrecision.exact_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePrecision.surviving_filter_unit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePrecision.surviving_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePrecision.remainder_order' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'StaircasePrecision.native_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "status": "PASS"
+}
