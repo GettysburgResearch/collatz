@@ -1,0 +1,150 @@
+{
+  "dense": {
+    "assignments": 128,
+    "clock": [
+      66,
+      108
+    ],
+    "min_distance_histogram": {
+      "0": 56,
+      "8": 72
+    },
+    "simultaneous_hamming_event": 72,
+    "smallest_denominator_in_event": "497410714571464361741",
+    "worst_mean_hamming": "6"
+  },
+  "resonance": [
+    {
+      "clocks": [
+        510,
+        810
+      ],
+      "denominator_bits": 432,
+      "inactive_joint_overlap": 0,
+      "mixed_activity_overlap": 0,
+      "overlapping_orders": [
+        [
+          1,
+          5,
+          5
+        ]
+      ],
+      "prime_set": [
+        5
+      ],
+      "residual_gcd_bits": 539
+    },
+    {
+      "clocks": [
+        570,
+        930
+      ],
+      "denominator_bits": 497,
+      "inactive_joint_overlap": 0,
+      "mixed_activity_overlap": 1,
+      "overlapping_orders": [
+        [
+          2,
+          10,
+          5
+        ]
+      ],
+      "prime_set": [
+        5
+      ],
+      "residual_gcd_bits": 620
+    },
+    {
+      "clocks": [
+        966,
+        1554
+      ],
+      "denominator_bits": 815,
+      "inactive_joint_overlap": 0,
+      "mixed_activity_overlap": 1,
+      "overlapping_orders": [
+        [
+          2,
+          14,
+          7
+        ]
+      ],
+      "prime_set": [
+        7
+      ],
+      "residual_gcd_bits": 1036
+    },
+    {
+      "clocks": [
+        798,
+        1302
+      ],
+      "denominator_bits": 683,
+      "inactive_joint_overlap": 1,
+      "mixed_activity_overlap": 0,
+      "overlapping_orders": [
+        [
+          6,
+          42,
+          7
+        ]
+      ],
+      "prime_set": [
+        7
+      ],
+      "residual_gcd_bits": 868
+    },
+    {
+      "clocks": [
+        3990,
+        6510
+      ],
+      "denominator_bits": 3596,
+      "inactive_joint_overlap": 1,
+      "mixed_activity_overlap": 0,
+      "overlapping_orders": [
+        [
+          2,
+          10,
+          5
+        ],
+        [
+          6,
+          42,
+          7
+        ]
+      ],
+      "prime_set": [
+        5,
+        7
+      ],
+      "residual_gcd_bits": 4340
+    },
+    {
+      "clocks": [
+        3570,
+        5670
+      ],
+      "denominator_bits": 3133,
+      "inactive_joint_overlap": 1,
+      "mixed_activity_overlap": 0,
+      "overlapping_orders": [
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          6,
+          42,
+          7
+        ]
+      ],
+      "prime_set": [
+        5,
+        7
+      ],
+      "residual_gcd_bits": 3780
+    }
+  ]
+}

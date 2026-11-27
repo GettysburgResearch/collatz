@@ -1,0 +1,386 @@
+{
+  "base_commit": "07ae08382588992c1b7f7a60cd331a6647177495",
+  "scope": "Wave 2 author-frozen source identities. Integration and independent reviews are recorded separately.",
+  "files": [
+    {
+      "source": "sixhour-pointwise-bridge/TernaryAnchorEscape.lean",
+      "source_sha256": "577bc77a46e3a1ebeb98059bdee295ad62db2abc7cccc9d4e00937518ba29fa1",
+      "path": "research/six-hour-20261127/pointwise/TernaryAnchorEscape.lean",
+      "sha256": "577bc77a46e3a1ebeb98059bdee295ad62db2abc7cccc9d4e00937518ba29fa1",
+      "repair": null
+    },
+    {
+      "source": "sixhour-pointwise-bridge/FIXED_SOURCE_ANCHOR_ESCAPE.md",
+      "source_sha256": "e70d62543965042b5ac096c4505e883ca9b3725a898e9631bd8b734501d79015",
+      "path": "research/six-hour-20261127/pointwise/FIXED_SOURCE_ANCHOR_ESCAPE.md",
+      "sha256": "e70d62543965042b5ac096c4505e883ca9b3725a898e9631bd8b734501d79015",
+      "repair": null
+    },
+    {
+      "source": "sixhour-pointwise-bridge/ADAPTIVE_TERNARY_ANCHORS.md",
+      "source_sha256": "157c633d00ed128e5b870dfdaa0591ff5d81710062baeb20e387f7696204f5cc",
+      "path": "research/six-hour-20261127/pointwise/ADAPTIVE_TERNARY_ANCHORS.md",
+      "sha256": "5334bbacc71d3564b19f00490483edc6e588772ccc0f3008540112f5cdf5f086",
+      "repair": {
+        "original": "reports/six-hour-20261127/source-originals/ADAPTIVE_TERNARY_ANCHORS.original.md",
+        "description": "Theorem 1(1): restrict A to exactly the height ball. The source wording allowed unbounded extra anchors."
+      }
+    },
+    {
+      "source": "sixhour-pointwise-bridge/RationalAnchorDiscrepancy.lean",
+      "source_sha256": "64458782e42648610c1ebc108e1a1cf7c105c86c71c630886dc5dadb7db2dbc7",
+      "path": "research/six-hour-20261127/pointwise/RationalAnchorDiscrepancy.lean",
+      "sha256": "64458782e42648610c1ebc108e1a1cf7c105c86c71c630886dc5dadb7db2dbc7",
+      "repair": null
+    },
+    {
+      "source": "sixhour-pointwise-bridge/check_adaptive_anchors.py",
+      "source_sha256": "e817d623124914762b628d571ea08fe043139719f87ac9475c989fdc7bf256cc",
+      "path": "research/six-hour-20261127/pointwise/check_adaptive_anchors.py",
+      "sha256": "e817d623124914762b628d571ea08fe043139719f87ac9475c989fdc7bf256cc",
+      "repair": null
+    },
+    {
+      "source": "sixhour-pointwise-bridge/ADAPTIVE_ANCHOR_CONTROLS.json",
+      "source_sha256": "8c48a341864c46db37b330f20ffe699325d723733b8eaeac1b901a2de273c156",
+      "path": "research/six-hour-20261127/pointwise/ADAPTIVE_ANCHOR_CONTROLS.json",
+      "sha256": "8c48a341864c46db37b330f20ffe699325d723733b8eaeac1b901a2de273c156",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/EXTRA_BUDGET.md",
+      "source_sha256": "00f71f0dbbbf1889fc9d8ecd2bf9affb88d690efb8b38060050cabb06f70b4f6",
+      "path": "research/six-hour-20261127/pointwise/EXTRA_BUDGET.md",
+      "sha256": "00f71f0dbbbf1889fc9d8ecd2bf9affb88d690efb8b38060050cabb06f70b4f6",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/ADAPTIVE_POSITIVE_ANCHORS.md",
+      "source_sha256": "a8492f3ac3f859a7a2b2ff6fe8ee864287da8a933b8d55bedcd542643407685d",
+      "path": "research/six-hour-20261127/pointwise/ADAPTIVE_POSITIVE_ANCHORS.md",
+      "sha256": "4855c23fcbd0cf4a0637fd43b0257edf4c378fa102006355d0e4965c37d9ed9e",
+      "repair": {
+        "original": "reports/six-hour-20261127/source-originals/ADAPTIVE_POSITIVE_ANCHORS.original.md",
+        "description": "Conversely each such actual positive hit lifts with the displayed formula, provided its cut $m=17\\cdot2^D-c$ actually realizes the required reflected $R$-step word of physical length $H+D$. Retain exactly the lifts with $y\\le n$ as candidates."
+      }
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/check_extra_budget.py",
+      "source_sha256": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377",
+      "path": "research/six-hour-20261127/pointwise/check_extra_budget.py",
+      "sha256": "bcce891088d615f970fc391ef3bdcfa5e9ba8ae19f12bd4cc8c869c9867e1377",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/check_positive_anchors.py",
+      "source_sha256": "0ada19b4ad13d14cd7f96cc563dd7a1153bf9556a69adc8dcafa7685af00c8d2",
+      "path": "research/six-hour-20261127/pointwise/check_positive_anchors.py",
+      "sha256": "0ada19b4ad13d14cd7f96cc563dd7a1153bf9556a69adc8dcafa7685af00c8d2",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/EXTRA_BUDGET_CONTROLS.json",
+      "source_sha256": "7c7c6b16cc63acdc9d3980fbf0938608a67f74b8458ff1d31fae799e001bf49b",
+      "path": "research/six-hour-20261127/pointwise/EXTRA_BUDGET_CONTROLS.json",
+      "sha256": "7c7c6b16cc63acdc9d3980fbf0938608a67f74b8458ff1d31fae799e001bf49b",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/POSITIVE_ANCHOR_CONTROLS.json",
+      "source_sha256": "c1f7f59f1c49582dbe7e40a36f7c2dc822cf0639685fd028c4e1892e7e6587be",
+      "path": "research/six-hour-20261127/pointwise/POSITIVE_ANCHOR_CONTROLS.json",
+      "sha256": "c1f7f59f1c49582dbe7e40a36f7c2dc822cf0639685fd028c4e1892e7e6587be",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/PositiveBudget.lean",
+      "source_sha256": "dd7ad47b67f124438add530a9c1a2a50d8637d74fd3d4d0bc086da75c7ebc251",
+      "path": "research/six-hour-20261127/pointwise/PositiveBudget.lean",
+      "sha256": "dd7ad47b67f124438add530a9c1a2a50d8637d74fd3d4d0bc086da75c7ebc251",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/PositiveAnchorProjection.lean",
+      "source_sha256": "21bf7e563d107508d5f17084540d5676dfb3e36c93774661a6eb69ce330dd233",
+      "path": "research/six-hour-20261127/pointwise/PositiveAnchorProjection.lean",
+      "sha256": "21bf7e563d107508d5f17084540d5676dfb3e36c93774661a6eb69ce330dd233",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/PositiveApplications.lean",
+      "source_sha256": "87292ce54de9e292f05c270a02e8d29fb2551326a84f193c4de429bf3f7f1446",
+      "path": "research/six-hour-20261127/pointwise/PositiveApplications.lean",
+      "sha256": "87292ce54de9e292f05c270a02e8d29fb2551326a84f193c4de429bf3f7f1446",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/FIXED_SOURCE_DELAY.md",
+      "source_sha256": "b5fd026967049a6d543cd22d30b98193efbd4b8afbca4c83a9d18dda698997cf",
+      "path": "research/six-hour-20261127/pointwise/FIXED_SOURCE_DELAY.md",
+      "sha256": "b5fd026967049a6d543cd22d30b98193efbd4b8afbca4c83a9d18dda698997cf",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/FOURTH_EXTRA_CLASSIFICATION.md",
+      "source_sha256": "855e289221e81c259e3759d32f556d94473e9a5e6fcf542b9fc15425e1ffe0eb",
+      "path": "research/six-hour-20261127/pointwise/FOURTH_EXTRA_CLASSIFICATION.md",
+      "sha256": "855e289221e81c259e3759d32f556d94473e9a5e6fcf542b9fc15425e1ffe0eb",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/check_fourth.py",
+      "source_sha256": "aeca34c111223f4e051fd910db22d28a643d99fa54a62f8ab85771cebdfa112a",
+      "path": "research/six-hour-20261127/pointwise/check_fourth.py",
+      "sha256": "aeca34c111223f4e051fd910db22d28a643d99fa54a62f8ab85771cebdfa112a",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/FOURTH_EXTRA_CONTROLS.json",
+      "source_sha256": "36c806bbc7aebd6e2fc0efacc5a2e174b5f70811d7d42c3c003bf964abcb8f24",
+      "path": "research/six-hour-20261127/pointwise/FOURTH_EXTRA_CONTROLS.json",
+      "sha256": "36c806bbc7aebd6e2fc0efacc5a2e174b5f70811d7d42c3c003bf964abcb8f24",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/ORDINARY_OVERHEAD_SPECTRUM.md",
+      "source_sha256": "dfc7faa9fc2c3be43e3ffdbdee627823b4003e6ebfa4bf0484ba6399c364aa6c",
+      "path": "research/six-hour-20261127/pointwise/ORDINARY_OVERHEAD_SPECTRUM.md",
+      "sha256": "ee28a8f5067f991ee1d9e8aaad10a14cdb8d0c3a7aac700b596805f7437814f9",
+      "repair": {
+        "original": "reports/six-hour-20261127/source-originals/ORDINARY_OVERHEAD_SPECTRUM.original.md",
+        "description": "The test enumerates all successful triples internally. Its frozen JSON records the successful ranks and selected actual CRT witnesses for the last permitted rank of each nonempty row; the separate independent replay checks every successful tuple on every marked phase."
+      }
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/check_overhead_spectrum.py",
+      "source_sha256": "68e9392b850e1339429a4eba37f7218e158fd5b29d608a2d48f6c7413a108f4d",
+      "path": "research/six-hour-20261127/pointwise/check_overhead_spectrum.py",
+      "sha256": "68e9392b850e1339429a4eba37f7218e158fd5b29d608a2d48f6c7413a108f4d",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/ORDINARY_OVERHEAD_CONTROLS.json",
+      "source_sha256": "3b7adc260b9e8f2d00b3a0264195fcec59684d3112a71d22fbde74088df263a1",
+      "path": "research/six-hour-20261127/pointwise/ORDINARY_OVERHEAD_CONTROLS.json",
+      "sha256": "3b7adc260b9e8f2d00b3a0264195fcec59684d3112a71d22fbde74088df263a1",
+      "repair": null
+    },
+    {
+      "source": "sixhour-inverse-minimum-audit/STOPPING_TIME_TRANSFER.md",
+      "source_sha256": "4c00a58eafe285bda46baee69c2133c0a09463762d00de8dbdfe4105dd85a4b1",
+      "path": "research/six-hour-20261127/pointwise/STOPPING_TIME_TRANSFER.md",
+      "sha256": "4c00a58eafe285bda46baee69c2133c0a09463762d00de8dbdfe4105dd85a4b1",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/MOVING_CLUSTER_DENOMINATORS.md",
+      "source_sha256": "ef05b3a4f9bdfa5d8fd8f88d574dc7e647362825d01c88041b9efa4f51aaf89a",
+      "path": "research/six-hour-20261127/cycles/MOVING_CLUSTER_DENOMINATORS.md",
+      "sha256": "ef05b3a4f9bdfa5d8fd8f88d574dc7e647362825d01c88041b9efa4f51aaf89a",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/ORDINARY_CLOCK_SHADOWS.md",
+      "source_sha256": "dbb9ea79bd6011e96d9d596bef371f2a597fa0a50c7a8bc1a13564d7ac007f2d",
+      "path": "research/six-hour-20261127/cycles/ORDINARY_CLOCK_SHADOWS.md",
+      "sha256": "dbb9ea79bd6011e96d9d596bef371f2a597fa0a50c7a8bc1a13564d7ac007f2d",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/FIXED_SOURCE_CLOCK_PROFILE.md",
+      "source_sha256": "4253960bfe6985727b5f96b3176ebcdc8ce2f2b725909c8e451d70dd3f8bbf87",
+      "path": "research/six-hour-20261127/cycles/FIXED_SOURCE_CLOCK_PROFILE.md",
+      "sha256": "4253960bfe6985727b5f96b3176ebcdc8ce2f2b725909c8e451d70dd3f8bbf87",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/RESONANT_DENOMINATOR_INTERVAL.md",
+      "source_sha256": "f78072250738dd121b827df0d06f6cec277bef726d7d21a17283159955f500c3",
+      "path": "research/six-hour-20261127/cycles/RESONANT_DENOMINATOR_INTERVAL.md",
+      "sha256": "f78072250738dd121b827df0d06f6cec277bef726d7d21a17283159955f500c3",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/DENSE_SUBEXPONENTIAL_DENOMINATORS.md",
+      "source_sha256": "18f4ca045e98c3531e2f194f277324b99ac4d4a84ac314ef7d6514dc6956c04e",
+      "path": "research/six-hour-20261127/cycles/DENSE_SUBEXPONENTIAL_DENOMINATORS.md",
+      "sha256": "18f4ca045e98c3531e2f194f277324b99ac4d4a84ac314ef7d6514dc6956c04e",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/ClockShadow.lean",
+      "source_sha256": "0d67c39c9273e133a4ab5a469dbf2293e4bc890a3e1f054438577724732598e5",
+      "path": "research/six-hour-20261127/cycles/ClockShadow.lean",
+      "sha256": "0d67c39c9273e133a4ab5a469dbf2293e4bc890a3e1f054438577724732598e5",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/ClockMesh.lean",
+      "source_sha256": "cff26b21a3828a3348608807e62287bb5a881847707372ac7eb5af86a7edc1b2",
+      "path": "research/six-hour-20261127/cycles/ClockMesh.lean",
+      "sha256": "cff26b21a3828a3348608807e62287bb5a881847707372ac7eb5af86a7edc1b2",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/ResonantPulse.lean",
+      "source_sha256": "82eaffa83deb1a9e92f9accb18369f2ee18fa6db4961650b82e557076f95648e",
+      "path": "research/six-hour-20261127/cycles/ResonantPulse.lean",
+      "sha256": "82eaffa83deb1a9e92f9accb18369f2ee18fa6db4961650b82e557076f95648e",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/check_clock_shadows.py",
+      "source_sha256": "0f7adfcbf69a3548b4199e1853936949837643700589c056df4a89f0d3c7e9f6",
+      "path": "research/six-hour-20261127/cycles/check_clock_shadows.py",
+      "sha256": "0f7adfcbf69a3548b4199e1853936949837643700589c056df4a89f0d3c7e9f6",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/check_clock_mesh.py",
+      "source_sha256": "6f6327fe57ecd042f8d2f19c12fdcfa75fdab7dd384a3c73884b1914c7cb0a0e",
+      "path": "research/six-hour-20261127/cycles/check_clock_mesh.py",
+      "sha256": "6f6327fe57ecd042f8d2f19c12fdcfa75fdab7dd384a3c73884b1914c7cb0a0e",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/check_resonant_interval.py",
+      "source_sha256": "2dcd474f60326dfca6afe18af53c083edfa52c10d030cf617eddc59ee029ab79",
+      "path": "research/six-hour-20261127/cycles/check_resonant_interval.py",
+      "sha256": "2dcd474f60326dfca6afe18af53c083edfa52c10d030cf617eddc59ee029ab79",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/check_dense_denominators.py",
+      "source_sha256": "cc4fdfcf0f67a2a4a5b3e4f0bcc8ae9648c3eab425ae6a3bb2fb71c6968aec7c",
+      "path": "research/six-hour-20261127/cycles/check_dense_denominators.py",
+      "sha256": "cc4fdfcf0f67a2a4a5b3e4f0bcc8ae9648c3eab425ae6a3bb2fb71c6968aec7c",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/CLOCK_SHADOW_CONTROLS.json",
+      "source_sha256": "37003944235049f5d046da74259c532512c1f81b3245c6344bb463e8b522f192",
+      "path": "research/six-hour-20261127/cycles/CLOCK_SHADOW_CONTROLS.json",
+      "sha256": "37003944235049f5d046da74259c532512c1f81b3245c6344bb463e8b522f192",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/CLOCK_MESH_CONTROLS.json",
+      "source_sha256": "b5d373acbe7db80b91ea5d461e18643676e21d3ba44196478ca2c1cc6bbd82ad",
+      "path": "research/six-hour-20261127/cycles/CLOCK_MESH_CONTROLS.json",
+      "sha256": "b5d373acbe7db80b91ea5d461e18643676e21d3ba44196478ca2c1cc6bbd82ad",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/RESONANT_INTERVAL_CONTROLS.json",
+      "source_sha256": "372bcf44271f4c14ac6c02ba97da1bcef054333fdf97f033ce52f18353cc3c38",
+      "path": "research/six-hour-20261127/cycles/RESONANT_INTERVAL_CONTROLS.json",
+      "sha256": "372bcf44271f4c14ac6c02ba97da1bcef054333fdf97f033ce52f18353cc3c38",
+      "repair": null
+    },
+    {
+      "source": "sixhour-toric-audit-global/DENSE_DENOMINATOR_CONTROLS.json",
+      "source_sha256": "29b9ad3697ed7ee73140606f9275f3a19278eac4f1b29c37c978538df5ecd47f",
+      "path": "research/six-hour-20261127/cycles/DENSE_DENOMINATOR_CONTROLS.json",
+      "sha256": "29b9ad3697ed7ee73140606f9275f3a19278eac4f1b29c37c978538df5ecd47f",
+      "repair": null
+    },
+    {
+      "source": "sixhour-root-review/check_positive_cone_independent.py",
+      "source_sha256": "70047ae2b979186840611417dc19626ab9eadfde38343e8cc5138bc7c93381e2",
+      "path": "research/six-hour-20261127/pointwise/check_positive_cone_independent.py",
+      "sha256": "70047ae2b979186840611417dc19626ab9eadfde38343e8cc5138bc7c93381e2",
+      "repair": null
+    },
+    {
+      "source": "sixhour-root-review/POSITIVE_CONE_INDEPENDENT.json",
+      "source_sha256": "25293c32448aaa615b757067349e0a24a25fa2b8fbfddc38fee53932ccc25c70",
+      "path": "research/six-hour-20261127/pointwise/POSITIVE_CONE_INDEPENDENT.json",
+      "sha256": "25293c32448aaa615b757067349e0a24a25fa2b8fbfddc38fee53932ccc25c70",
+      "repair": null
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/ALL_SIGNED_ANCHOR_COMPILER.md",
+      "source_sha256": "811e9c3cb1360decf749a17b21b5b5d5d7b818ebe91fcd3068716d7e1b395f08",
+      "path": "research/six-hour-20261127/pointwise/ALL_SIGNED_ANCHOR_COMPILER.md",
+      "sha256": "811e9c3cb1360decf749a17b21b5b5d5d7b818ebe91fcd3068716d7e1b395f08",
+      "repair": null
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/AnchorPathCode.lean",
+      "source_sha256": "07d93c11637d729c59589ef11b26be31ec8ed5882bb23507a3e060d61225d7fc",
+      "path": "research/six-hour-20261127/pointwise/AnchorPathCode.lean",
+      "sha256": "07d93c11637d729c59589ef11b26be31ec8ed5882bb23507a3e060d61225d7fc",
+      "repair": null
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/check_signed_anchor.py",
+      "source_sha256": "a5fec6103201661e1dc9fd915c085048fc4571fa2cd57235ba05b95f2a9ea51a",
+      "path": "research/six-hour-20261127/pointwise/check_signed_anchor.py",
+      "sha256": "a5fec6103201661e1dc9fd915c085048fc4571fa2cd57235ba05b95f2a9ea51a",
+      "repair": null
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/SIGNED_ANCHOR_CONTROLS.json",
+      "source_sha256": "0cec2f8df2fd40921aaba22f937c0dc118fd639d59eac9b9dd7b141dd0076b52",
+      "path": "research/six-hour-20261127/pointwise/SIGNED_ANCHOR_CONTROLS.json",
+      "sha256": "0cec2f8df2fd40921aaba22f937c0dc118fd639d59eac9b9dd7b141dd0076b52",
+      "repair": null
+    },
+    {
+      "source": "sixhour-adaptive-anchor-audit/ADAPTIVE_ANCHOR_REVIEW.md",
+      "source_sha256": "43ab2ca2ec55463ba79e6eecce171ec16e825a98ca915d9fb26f46cccb629173",
+      "path": "reports/six-hour-20261127/ADAPTIVE_ANCHOR_REVIEW.md",
+      "sha256": "43ab2ca2ec55463ba79e6eecce171ec16e825a98ca915d9fb26f46cccb629173",
+      "repair": null
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/WAVE2_INDEPENDENT_REVIEW.md",
+      "source_sha256": "18e0eb6cd7a72d050731cbda26f1924f31b2778fa762a78ae2132c71bf788083",
+      "path": "reports/six-hour-20261127/CYCLE_WAVE2_INDEPENDENT_REVIEW.md",
+      "sha256": "18e0eb6cd7a72d050731cbda26f1924f31b2778fa762a78ae2132c71bf788083",
+      "repair": null
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/independent_cycle_controls.py",
+      "source_sha256": "d9f3175eaa513ab5af6b16c9253a0a5e53e6daa477b2186387c4bbdf1d343d16",
+      "path": "research/six-hour-20261127/cycles/check_cycles_independent.py",
+      "sha256": "d9f3175eaa513ab5af6b16c9253a0a5e53e6daa477b2186387c4bbdf1d343d16",
+      "repair": null
+    },
+    {
+      "source": "sixhour-cycle-frontier-review/INDEPENDENT_CYCLES.json",
+      "source_sha256": "cae7557fd000edd0bfeb2ad628ff2060eb986ba17502bd7b7223aac347393e7f",
+      "path": "research/six-hour-20261127/cycles/INDEPENDENT_CYCLES.json",
+      "sha256": "cae7557fd000edd0bfeb2ad628ff2060eb986ba17502bd7b7223aac347393e7f",
+      "repair": null
+    },
+    {
+      "source": "sixhour-positive-frontier-review/FROZEN_REVIEW.md",
+      "source_sha256": "b347057aaa80dd86515a04e2509e6bc64ab6f8779a3180a996e7f260b835a6b5",
+      "path": "reports/six-hour-20261127/INVERSE_WAVE2_INDEPENDENT_REVIEW.md",
+      "sha256": "b347057aaa80dd86515a04e2509e6bc64ab6f8779a3180a996e7f260b835a6b5",
+      "repair": null
+    },
+    {
+      "source": "sixhour-positive-frontier-review/proof_controls.py",
+      "source_sha256": "ece23e6a12cca175b5f572c45e94cd7ddc437d22d363b5026fac3976964b91c6",
+      "path": "research/six-hour-20261127/pointwise/check_inverse_extensions_independent.py",
+      "sha256": "409834e2f3f065f23a70cf45349216e0df44fcb36a0d2a596b8045a236bf229d",
+      "repair": {
+        "original": "reports/six-hour-20261127/source-originals/positive_review_controls.original.py",
+        "description": "Removed only the original author-directory hash check and its two receipt fields; the independent arithmetic is unchanged. Original execution evidence is retained separately."
+      }
+    }
+  ],
+  "integration_files": {
+    "research/six-hour-20261127/README.md": "5ea2b15659fbda20259afeac766d88f8ed98b29a5be7a9556b4f050036c12022",
+    "research/six-hour-20261127/replay_controls.py": "231da4c081ab585c63019249c69dc79fef03d7e3a8b0ef101ab7e61749f093f7",
+    "research/six-hour-20261127/replay_lean.py": "be9339a7fe6c78bffc69ebd26d63d9aed8cb3ca169ff8822088eb936e918fa06",
+    "research/six-hour-20261127/pointwise/INDEPENDENT_EXTENSIONS.json": "24792ee2b4a200bad7ebb08d6664c3deac31ea9bc583c66e8835aac403c36e4b",
+    "reports/six-hour-20261127/ROOT_REVIEW_WAVE2.md": "e34231393503a7e759efe2cc9cc9b553491a06a18cd7021cea879e514ba4f700",
+    "reports/six-hour-20261127/CONTROLS_WAVE2_RECEIPT.json": "094c753cbb0b1f137f6373aea00ceb5f419dd48ccf0844d641170d935da0c521",
+    "reports/six-hour-20261127/LEAN_WAVE2_RECEIPT.json": "1bc2d07b6048eba5a1edceb113e02f7e06c10fe6f3abdf029cd77a4c2b5b680e",
+    "reports/six-hour-20261127/LATE_INTAKE_SNAPSHOT.json": "706fe244cc5317b921b49ec6c36ca44b04b5a472cab602c2925555ac61e6c643",
+    "reports/six-hour-20261127/INVERSE_EXTENSIONS_SOURCE_CONTROLS.json": "4cf9b8406c343c485ca48e24fd5c704888c172e0f12f50c3a1e2b64ba7615ba2"
+  }
+}

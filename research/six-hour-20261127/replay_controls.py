@@ -14,7 +14,26 @@ CONTROLS = [
     ("pointwise/check_negative17_minimum.py", [], "pointwise/NEGATIVE17_CONTROLS.json"),
     ("pointwise/independent_audit.py", ["pointwise/NEGATIVE17_EXACT_MINIMA.md"],
      "pointwise/INDEPENDENT_MINIMUM_CONTROLS.json"),
+    ("pointwise/check_adaptive_anchors.py", [], "pointwise/ADAPTIVE_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_signed_anchor.py", [], "pointwise/SIGNED_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_extra_budget.py", [], "pointwise/EXTRA_BUDGET_CONTROLS.json"),
+    ("pointwise/check_positive_anchors.py", [], "pointwise/POSITIVE_ANCHOR_CONTROLS.json"),
+    ("pointwise/check_fourth.py", [], "pointwise/FOURTH_EXTRA_CONTROLS.json"),
+    ("pointwise/check_overhead_spectrum.py", [], "pointwise/ORDINARY_OVERHEAD_CONTROLS.json"),
+    ("pointwise/check_positive_cone_independent.py", [], "pointwise/POSITIVE_CONE_INDEPENDENT.json"),
+    ("pointwise/check_inverse_extensions_independent.py", [], "pointwise/INDEPENDENT_EXTENSIONS.json"),
+    ("cycles/check_clock_shadows.py", [], "cycles/CLOCK_SHADOW_CONTROLS.json"),
+    ("cycles/check_clock_mesh.py", [], "cycles/CLOCK_MESH_CONTROLS.json"),
+    ("cycles/check_resonant_interval.py", [], "cycles/RESONANT_INTERVAL_CONTROLS.json"),
+    ("cycles/check_dense_denominators.py", [], "cycles/DENSE_DENOMINATOR_CONTROLS.json"),
+    ("cycles/check_cycles_independent.py", [], "cycles/INDEPENDENT_CYCLES.json"),
 ]
+DEPENDENCIES = {
+    "pointwise/check_positive_anchors.py": ["pointwise/check_extra_budget.py"],
+    "pointwise/check_fourth.py": ["pointwise/check_extra_budget.py"],
+    "pointwise/check_overhead_spectrum.py": [
+        "pointwise/check_extra_budget.py", "pointwise/check_positive_anchors.py"],
+}
 
 
 def main():
@@ -37,6 +56,8 @@ def main():
             "script": script,
             "sha256": hashlib.sha256((ROOT / script).read_bytes()).hexdigest(),
             "inputs": {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in inputs},
+            "dependencies": {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest()
+                             for p in DEPENDENCIES.get(script, [])},
             "expected": expected,
             "output_sha256": hashlib.sha256(frozen).hexdigest(),
             "normal_exit_code": 0,
