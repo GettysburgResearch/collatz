@@ -1,0 +1,35 @@
+{
+  "schema": "collatz-astra-final-source-refresh/v1",
+  "observed_utc": "2026-11-27T17:47:38Z",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Read-only final metadata and selected-file comparison; no external formal evidence imported.",
+  "sources": [
+    {
+      "pr": 211,
+      "head": "46da133cff8eb10bfd936656dad23f39b347c168",
+      "updated_at": "2026-11-27T17:26:39Z",
+      "read": [
+        "research/astra-reciprocal-rigidity-20261127/README.md",
+        "research/astra-reciprocal-rigidity-20261127/descent/README.md"
+      ],
+      "review_scope": "Full front-door guide read; newest reported theorems not independently reconstructed or counted as packet verification. Full descent guide and exact prior barrier attribution read."
+    },
+    {
+      "pr": 212,
+      "head": "c2d515a45f5b622e5523696fec74bf16c192bae8",
+      "updated_at": "2026-11-27T17:45:05Z",
+      "read": [
+        "research/astra-infinite-descent-20261127/README.md"
+      ],
+      "review_scope": "Full front-door guide read; newest reported theorems not independently reconstructed or counted as packet verification."
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "read": [
+        "research/upper-bit-mergers/ADJACENT_DESCENT.md"
+      ],
+      "review_scope": "Full proof read. The unit all-clock K+j barrier and existence of terminating examples are prior results. This packet's final shield note is an alternative proof and explicit control, not a novelty claim."
+    }
+  ]
+}

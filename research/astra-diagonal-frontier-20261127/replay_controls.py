@@ -37,6 +37,7 @@ CASES = [
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),
     ("linear/check_source_suffix.py", None),
+    ("linear/check_unequal_clock_shield.py", None),
     ("inverse/check_retained_trees.py", None),
     ("inverse/check_frozen_root.py", None),
 ]
