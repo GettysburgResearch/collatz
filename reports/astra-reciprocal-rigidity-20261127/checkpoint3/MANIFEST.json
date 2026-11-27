@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "bytes": 1472,
+      "path": "DESCENT_AUTHOR_REPLAY.txt",
+      "sha256": "8e838a2d05501a2c4876133d8838da91111e0c5e37bbbda147ea68e97f1a10e0"
+    },
+    {
+      "bytes": 20487,
+      "path": "FINITE_REPLAY.json",
+      "sha256": "5cdf6d2d59ed58dfcb9dbc89894873124bc5d6821a7b8cb6da66a6114d6d4b80"
+    },
+    {
+      "bytes": 18157,
+      "path": "LEAN_REPLAY.json",
+      "sha256": "63c3a8a2f81ae6b87390aa9f6aef9004d0c0abe7aa15312e844f5ae0445ef041"
+    },
+    {
+      "bytes": 13836,
+      "path": "LOCAL_REGRESSIONS.json",
+      "sha256": "b1be40cbdd1d266f9bf282df00612c3342420433fc6983aa7a0f3db8a069152a"
+    },
+    {
+      "bytes": 13836,
+      "path": "PUBLISHED_REGRESSIONS.json",
+      "sha256": "b09910c72823ba04e831f028866d5a5b138096b1cb1884af82ee4871e2997f66"
+    },
+    {
+      "bytes": 13900,
+      "path": "SCIENCE_MANIFEST.json",
+      "sha256": "e590c28608addbac63eb816586002725a43af097afb5323e2ad652e4db7c5b96"
+    }
+  ],
+  "schema": "collatz-evidence-archive/v1",
+  "science_commit": "6a22fb0404b1a8cd6d51a0924a800563851d5788",
+  "science_tree": "36a1286976527717e7d9c5949f7064f5e96c5b4e"
+}
