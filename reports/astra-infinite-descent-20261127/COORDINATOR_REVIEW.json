@@ -1,0 +1,85 @@
+{
+  "schema": "collatz-coordinator-review/v1",
+  "reviewer": "root coordinator",
+  "scope": "Narrow source reconstructions, not universal Collatz or an audit of all historical PRs",
+  "records": [
+    {
+      "source": "research/astra-infinite-descent-20261127/root/FiniteExtinction.lean",
+      "sha256": "53c11ace85ea754c0338aefafd980d1e50fcf30d4008039aabda47c4951de9ed",
+      "claim": "Full equivalence with actual finite reciprocal sums; converse retains all later births.",
+      "status": "Formal source reconstructed; exact aggregate replay recorded separately."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/root/HitClock.lean",
+      "sha256": "0a86f05539b804c38d73e9a4e13ae422f1e1aef5ca8e8d6a591245db0ac96516",
+      "claim": "19/12 affine grade bound and the finite post-hit clock E(H).",
+      "status": "Formal source reconstructed; no universal finite hit budget assumed."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/root/PotentialBoundary.lean",
+      "sha256": "830d8c436aea45f365fbda05f40a84bcbef09f51c2ebb0fa6c56ccdaf33434a9",
+      "claim": "Actual monotone potential and reserve-only cutoff obstruction.",
+      "status": "Formal source reconstructed; obstruction concerns the named reserve bound only."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/root/PhaseNet.lean",
+      "sha256": "8ab54bfbe83d53b69f70786206b2eb4b0c7f179ce24c053635e30ff0bfc5c236",
+      "claim": "Unconditional finite positive-index multiplicative phase cover.",
+      "status": "Formal source reconstructed; only irrationality and compactness."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/FastPairs.lean",
+      "sha256": "ab66272980f97597566b1ebcf0eaa6dfc80d53761b008f4b102e0df9275760e1",
+      "claim": "Uniform relative-window pair first arrivals and bounded additive clock overhead.",
+      "status": "Formal source reconstructed; every conclusion uses one ordinary source pair."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/FINITE_BLOCKS.md",
+      "sha256": "4d782925dbc1d35487ddd246cfb2204c2664681fa764506b517ec873738f5dc5",
+      "claim": "Finite affine-profile equalization and exact-clock block closure.",
+      "status": "Written argument independently reconstructed; not yet Lean-certified as a whole."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/COPRIME_STEERING.md",
+      "sha256": "e086395f56f99fdc75591e8e910b9d3041fe9b8a4f8163e65bc18b446b09c823",
+      "claim": "All-residue EO/OE bank and compatible two-gap exponent CRT.",
+      "status": "Written argument independently reconstructed; no efficiency claim."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/merger/FAST_COUNTING.md",
+      "sha256": "a2da1dd1c77d211db65e622e3a8a7088be0c8823118cb7c9d128abcd5728f1e3",
+      "claim": "Disjoint branch labels, fixed-overhead polynomial counts and two-term sparse entropy bounds.",
+      "status": "Written argument independently reconstructed; lower bounds use changing ordinary witnesses."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/escape/CLOCK_POLES.md",
+      "sha256": "a4d01f93ee4f11c9c4668ab35b4b238554d32f348d283f109183d369496b2874",
+      "claim": "Finite Fourier transfer normalization and simple nontrivial poles.",
+      "status": "Written algebra independently reconstructed, including exact m >= 1 domain."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/escape/SPARSE_TILT.md",
+      "sha256": "df818467635f65d93e0c6efb3bcadb28c8a676993d3dc985d4a02500bf1b78c1",
+      "claim": "Mean preservation, positive approximate eigenfunction, growing-conductor resonance bounds, first-hit removal and physical defect law.",
+      "status": "Written argument independently reconstructed through the explicitly restricted quasi-polynomial sparse horizon; no fair-law extension."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/INDEPENDENT_CLOCKS.md",
+      "sha256": "d5b9533aa8c962c216682ce930f2be92719ace767206e298f7c9ff446737d7ff",
+      "claim": "Primitive positive rational cycle construction, exact full reduced denominator and near-octave physical bounds.",
+      "status": "Written construction independently reconstructed; denominator is greater than one."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/MOVING_ARCS.md",
+      "sha256": "b98196d12f9e1cbf010b5e55340624de8a91e7b4d464a8c682999edf86c823ca",
+      "claim": "Fixed-r moving references, exceptional slow characters, residual gcd and noncancellation.",
+      "status": "Source-qualified written argument reconstructed; analytic dependencies not formalized."
+    },
+    {
+      "source": "research/astra-infinite-descent-20261127/cycles/ARC_HEIGHT.md",
+      "sha256": "d3895958688a6e2a3c0532f9a43a64617a1c3e5bb91a88ec93ff779b46e9feb8",
+      "claim": "Effective closed-trace transport/divisibility inequality.",
+      "status": "Written argument and finite formal structure reviewed; native cycle-to-structure interface remains written."
+    }
+  ]
+}

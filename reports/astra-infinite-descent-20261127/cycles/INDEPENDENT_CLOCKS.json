@@ -1,0 +1,77 @@
+{
+  "compact_denominator_certificates": [
+    {
+      "cell_primes": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "clock_gcd": 5005,
+      "divisor_bits": 16008,
+      "full_q_bits": 16008,
+      "odd_count": 1531530,
+      "period": 2427425
+    },
+    {
+      "cell_primes": [
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "clock_gcd": 85085,
+      "divisor_bits": 1211624,
+      "full_q_bits": 1211624,
+      "odd_count": 1327411085,
+      "period": 2103896795
+    }
+  ],
+  "physical_cycles": [
+    {
+      "cycle_denominator_bits": 89,
+      "odd_count": 175,
+      "odd_ratio_millionth_floor": 2686872,
+      "period": 280,
+      "primes": [
+        5,
+        7
+      ],
+      "smallest_odd_floor": 17
+    },
+    {
+      "cycle_denominator_bits": 321,
+      "odd_count": 205,
+      "odd_ratio_millionth_floor": 2034399,
+      "period": 325,
+      "primes": [
+        5
+      ],
+      "smallest_odd_floor": 841
+    },
+    {
+      "cycle_denominator_bits": 714,
+      "odd_count": 1435,
+      "odd_ratio_millionth_floor": 2069478,
+      "period": 2275,
+      "primes": [
+        5,
+        7
+      ],
+      "smallest_odd_floor": 829
+    },
+    {
+      "cycle_denominator_bits": 1367,
+      "odd_count": 15785,
+      "odd_ratio_millionth_floor": 2105271,
+      "period": 25025,
+      "primes": [
+        5,
+        7,
+        11
+      ],
+      "smallest_odd_floor": 816
+    }
+  ]
+}

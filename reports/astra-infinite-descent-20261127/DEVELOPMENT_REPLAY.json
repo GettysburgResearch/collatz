@@ -1,0 +1,240 @@
+{
+  "schema": "collatz-infinite-descent-lean/v1",
+  "started_utc": "2026-11-27T12:42:53.827325+00:00",
+  "scope": "Fresh strict compilation of this packet and transitive axiom audit; not a fresh Mathlib build or proof of Collatz",
+  "passed": false,
+  "modules": [
+    {
+      "source": "imports/pr201/CoreBranching.lean",
+      "sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "exit_code": 0,
+      "seconds": 4.7694,
+      "stdout": "'CoreBranching.step_double' depends on axioms: [propext]\n'CoreBranching.step_odd' depends on axioms: [propext, Quot.sound]\n'CoreBranching.run_add' depends on axioms: [propext]\n'CoreBranching.four_double' depends on axioms: [propext, Quot.sound]\n'CoreBranching.six_rows' depends on axioms: [propext, Quot.sound]\n'CoreBranching.alternate_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_injective_bit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_injective_at_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PeakRigidity.lean",
+      "sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "exit_code": 0,
+      "seconds": 5.7669,
+      "stdout": "'PeakRigidity.shifted' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.meeting_grade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.postpeak_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.prepeak_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/AsynchronousGuard.lean",
+      "sha256": "56ddfd6d0a75efc6289a6ceb723e760b87436ea125e0a5354fdf34eebbc78f6b",
+      "exit_code": 0,
+      "seconds": 3.6317,
+      "stdout": "'AsynchronousGuard.affine' depends on axioms: [propext, Quot.sound]\n'AsynchronousGuard.meeting_is_aligned' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AsynchronousGuard.no_meeting_from_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/FloorCounting.lean",
+      "sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "exit_code": 0,
+      "seconds": 4.3145,
+      "stdout": "'FloorCounting.sharp' depends on axioms: [propext, Quot.sound]\n'FloorCounting.bits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.native_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.visit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PaidCheckpoint.lean",
+      "sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "exit_code": 0,
+      "seconds": 2.7969,
+      "stdout": "'PaidCheckpoint.positive_turns' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.seed_paths' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PaidCheckpoint.delayed_address' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.paid_parent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/EarlierOffsets.lean",
+      "sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "exit_code": 0,
+      "seconds": 12.0384,
+      "stdout": "'EarlierOffsets.even_index' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.actual_decrease' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.earlier_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.gap_five_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/BinaryPrefixCriterion.lean",
+      "sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+      "exit_code": 0,
+      "seconds": 2.992,
+      "stdout": "'BinaryPrefixCriterion.least_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.debt_reserve_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.minimum_gate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.principal_member' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.member_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.finite_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.collatz_of_small_finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/BinaryCylinder.lean",
+      "sha256": "51eabc7f513c18c20006219cef8756d715ed784204bf601e2b8f0735f5c298ed",
+      "exit_code": 0,
+      "seconds": 2.3852,
+      "stdout": "'BinaryCylinder.grade_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryCylinder.accepted_card_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/BirthReserve.lean",
+      "sha256": "c21e89bea2b84dd669726aefce0fcdb676598a8c99c8736dc1e21d9b86943889",
+      "exit_code": 0,
+      "seconds": 4.4861,
+      "stdout": "'BirthReserve.reserve_drift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BirthReserve.tail_drift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BirthReserve.tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "exit_code": 0,
+      "seconds": 4.5917,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TwoGapRouting.lean",
+      "sha256": "5b837b60625c42efbdfaff1f220fd687acb2c3d1093cd33a9f444ad5ba2f4fad",
+      "exit_code": 0,
+      "seconds": 13.3599,
+      "stdout": "'Collatz.TwoGapRouting.address' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.route' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FixedGapClock.lean",
+      "sha256": "7a2a22332e29b0672d5822971125a84f2b8a17861a21c57fbe4af24c5dae1be6",
+      "exit_code": 0,
+      "seconds": 17.1535,
+      "stdout": "'Collatz.FixedGapClock.cover_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedGapClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/ClockCone.lean",
+      "sha256": "5a95abd9d379d24f299adacb3506b8f547e71126392b327e7a8c008ff5301cba",
+      "exit_code": 0,
+      "seconds": 5.8479,
+      "stdout": "'Collatz.ClockCone.elementary_cone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ClockCone.discounted_cone' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/CubicPulse.lean",
+      "sha256": "045c03d6afa7799feb271d25c390d853fd67b342b148652f760fd7d6595047b8",
+      "exit_code": 0,
+      "seconds": 1.5411,
+      "stdout": "'Collatz.InfiniteDescent.CubicPulse.ten_edges' does not depend on any axioms\n'Collatz.InfiniteDescent.CubicPulse.position' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.CubicPulse.quadratic_completion' depends on axioms: [propext]\n'Collatz.InfiniteDescent.CubicPulse.backwards_fourth' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/DyadicBoundary.lean",
+      "sha256": "e32a9d9e329b842f02cf94819bf84c888997886bec0b1cef7fd7cfba28ee4dcd",
+      "exit_code": 0,
+      "seconds": 2.0488,
+      "stdout": "'DyadicBoundary.signed_increment' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicBoundary.finite_boundary_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/FiniteExtinction.lean",
+      "sha256": "53c11ace85ea754c0338aefafd980d1e50fcf30d4008039aabda47c4951de9ed",
+      "exit_code": 0,
+      "seconds": 2.3975,
+      "stdout": "'FiniteExtinction.gate_fails_after_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.finite_verification_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.finite_verification_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.small_mass_of_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.collatz_iff_small_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/FourierSupport.lean",
+      "sha256": "9fc7d56918129a4fc58290c40cab7571e6a920cd68e3307d21da980bffa311c5",
+      "exit_code": 0,
+      "seconds": 1.7141,
+      "stdout": "'Collatz.InfiniteDescent.FourierSupport.coefficients_of_zero_block' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.InfiniteDescent.FourierSupport.nonzero_on_every_block' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/PoweredBlocks.lean",
+      "sha256": "5c95387cd27397ca6c7b283dad73d0464fbc8005cdd4b93ec9e417fed4c27b9c",
+      "exit_code": 0,
+      "seconds": 2.0262,
+      "stdout": "'Collatz.InfiniteDescent.PoweredBlocks.centered_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.across_connector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.closed_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.zero_defects' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/SharpClock.lean",
+      "sha256": "bfbd7f1f130f311ea33467b9ecd4b0fdade4f6692fec893843f718cf36f1f5ca",
+      "exit_code": 0,
+      "seconds": 4.6118,
+      "stdout": "'Collatz.SharpClock.physical_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.one_two_never_fuse' depends on axioms: [propext, Quot.sound]\n'Collatz.SharpClock.period_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.height' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/SparseCarry.lean",
+      "sha256": "5fe135e625e59454bcfc53ee2ce6b1b75f6766d8180196cbd0f47344cfffdaa6",
+      "exit_code": 0,
+      "seconds": 1.8246,
+      "stdout": "'Collatz.InfiniteDescent.SparseCarry.literal_run_sum' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.SparseCarry.two_swap_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.SparseCarry.clearing_edit_iff' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/Threshold.lean",
+      "sha256": "753368afe203c33e7891581752fe1f698a24b9601a4b412dd974f33aa77b3a33",
+      "exit_code": 1,
+      "seconds": 45.8969,
+      "stdout": "/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:24:4: error: linarith failed to find a contradiction\ncase succ\nh : \u2115\nih : \u2200 (n : \u2115), 3 ^ odds h n * n + odds h n \u2264 2 ^ h * run h n\nn : \u2115\neq : 2 * step n = 3 ^ (n % 2) * n + n % 2\nv : 2 * (3 ^ odds h (step n) * step n + odds h (step n)) \u2264 2 * (2 ^ h * run h (step n))\nu : 3 ^ odds h (step n) * (2 * step n) \u2264 3 ^ odds h (step n) * (3 ^ (n % 2) * n + n % 2)\nw : 1 * (n % 2) \u2264 3 ^ odds h (step n) * (n % 2)\na\u271d : 2 ^ h * 2 * run h (step n) < 3 ^ (n % 2) * 3 ^ odds h (step n) * n + (n % 2 + odds h (step n))\n\u22a2 False\nfailed\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 0))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 1))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 2))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 3))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 4))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 5))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 6))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 8))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:62:8: error(lean.unknownIdentifier): Unknown constant `Nat.add_pow`\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:58:50: error: unsolved goals\nk : \u2115\nterm :\n  5 ^ (5 * k) * 3 ^ (8 * k - 5 * k) * (8 * k).choose (5 * k) \u2264\n    \u2211 x \u2208 Finset.range (8 * k + 1), 5 ^ x * 3 ^ (8 * k - x) * (8 * k).choose x\n\u22a2 (8 * k).choose (5 * k) * (5 ^ 5 * 3 ^ 3) ^ k \u2264 (8 ^ 8) ^ k\n'Collatz.MergerThreshold.forward_lower' depends on axioms: [propext, sorryAx]\n'Collatz.MergerThreshold.seven_floor' depends on axioms: [propext, sorryAx, Quot.sound]\n'Collatz.MergerThreshold.seven_growth' depends on axioms: [propext, sorryAx, Quot.sound]\n'Collatz.MergerThreshold.cheap_entropy' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.base_strict' depends on axioms: [propext]\n",
+      "stderr": ""
+    }
+  ],
+  "lean": {
+    "path": "/tmp/collatz-diagonal-lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "mathlib": {
+    "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4",
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_clean": true
+  },
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependencies": [
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/plausible",
+      "head": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/LeanSearchClient",
+      "head": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/importGraph",
+      "head": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/proofwidgets",
+      "head": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/aesop",
+      "head": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Qq",
+      "head": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/batteries",
+      "head": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Cli",
+      "head": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "build_directory": "/tmp/collatz-infinite-descent-ilofj6jp",
+  "flags": [
+    "-j1",
+    "-DElab.async=false",
+    "-DwarningAsError=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "error": "Lean failed: merger/Threshold.lean\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:24:4: error: linarith failed to find a contradiction\ncase succ\nh : \u2115\nih : \u2200 (n : \u2115), 3 ^ odds h n * n + odds h n \u2264 2 ^ h * run h n\nn : \u2115\neq : 2 * step n = 3 ^ (n % 2) * n + n % 2\nv : 2 * (3 ^ odds h (step n) * step n + odds h (step n)) \u2264 2 * (2 ^ h * run h (step n))\nu : 3 ^ odds h (step n) * (2 * step n) \u2264 3 ^ odds h (step n) * (3 ^ (n % 2) * n + n % 2)\nw : 1 * (n % 2) \u2264 3 ^ odds h (step n) * (n % 2)\na\u271d : 2 ^ h * 2 * run h (step n) < 3 ^ (n % 2) * 3 ^ odds h (step n) * n + (n % 2 + odds h (step n))\n\u22a2 False\nfailed\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 0))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 1))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 2))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 3))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 4))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 5))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 6))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:28:48: error: failed to synthesize\n  Decidable (small (step 8))\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:62:8: error(lean.unknownIdentifier): Unknown constant `Nat.add_pow`\n/workspace/scratch/ab55ab15f58b/collatz/research/astra-infinite-descent-20261127/merger/Threshold.lean:58:50: error: unsolved goals\nk : \u2115\nterm :\n  5 ^ (5 * k) * 3 ^ (8 * k - 5 * k) * (8 * k).choose (5 * k) \u2264\n    \u2211 x \u2208 Finset.range (8 * k + 1), 5 ^ x * 3 ^ (8 * k - x) * (8 * k).choose x\n\u22a2 (8 * k).choose (5 * k) * (5 ^ 5 * 3 ^ 3) ^ k \u2264 (8 ^ 8) ^ k\n'Collatz.MergerThreshold.forward_lower' depends on axioms: [propext, sorryAx]\n'Collatz.MergerThreshold.seven_floor' depends on axioms: [propext, sorryAx, Quot.sound]\n'Collatz.MergerThreshold.seven_growth' depends on axioms: [propext, sorryAx, Quot.sound]\n'Collatz.MergerThreshold.cheap_entropy' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.base_strict' depends on axioms: [propext]\n\n",
+  "finished_utc": "2026-11-27T12:45:20.321895+00:00",
+  "frozen_source_replay": false,
+  "development_note": "This first aggregate run overlapped active development; it failed in the then-unfinished Threshold.lean. It is not the final or a frozen replay."
+}

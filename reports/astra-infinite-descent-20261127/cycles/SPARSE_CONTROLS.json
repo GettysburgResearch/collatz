@@ -1,0 +1,64 @@
+{
+  "arc_height": {
+    "arcs": 10108,
+    "changing_references": 4925,
+    "largest_observed_fraction_of_bound": "5/18",
+    "matching_interfaces": 677,
+    "negative_starts": 4006,
+    "partitions": 1914,
+    "zero_starts": 1269
+  },
+  "native_pulse": [
+    {
+      "distinct_physical_states": 44,
+      "largest_odd_bits": 61,
+      "odd_steps": 10,
+      "padding": 0
+    },
+    {
+      "distinct_physical_states": 52,
+      "largest_odd_bits": 64,
+      "odd_steps": 12,
+      "padding": 1
+    },
+    {
+      "distinct_physical_states": 100,
+      "largest_odd_bits": 83,
+      "odd_steps": 24,
+      "padding": 7
+    },
+    {
+      "distinct_physical_states": 244,
+      "largest_odd_bits": 140,
+      "odd_steps": 60,
+      "padding": 25
+    },
+    {
+      "distinct_physical_states": 556,
+      "largest_odd_bits": 264,
+      "odd_steps": 138,
+      "padding": 64
+    }
+  ],
+  "powered": {
+    "connector_chains": 1378,
+    "different_slopes": 2234,
+    "equal_centers": 76,
+    "equal_slopes": 356,
+    "nonzero_defect_chains": 1297,
+    "sharp_context_free_cases": 50,
+    "two_block_cases": 2590,
+    "zero_defect_chains": 81
+  },
+  "scope": "finite carry, adjacently edited cycles and ordinary four-path controls",
+  "sparse": {
+    "disjoint_double_edits": 63524,
+    "primitive_four_run_tests": 98,
+    "resonant_equal_even": 2610,
+    "resonant_equal_odd": 1504,
+    "resonant_opposite": 4114,
+    "sharp_repeated_tests": 80,
+    "single_edits": 33122,
+    "words": 6411
+  }
+}
