@@ -1,0 +1,28 @@
+{
+  "scope": "Seventh checkpoint files; this manifest excludes itself. No full Collatz proof.",
+  "base_commit": "a577c1f19a00b8219dcde9744814813ddd636e66",
+  "file_count_excluding_manifest": 21,
+  "sha256": {
+    "reports/six-hour-20261127/ROOT_SEVENTH_REVIEW.md": "51f8987c3e4becaf6cb5868c8f1097bdb38f1fe536952c9e9b7ff8dd99aeb8a9",
+    "reports/six-hour-20261127/SEVENTH_REPLAY.json": "81dea3157ffb8ed5ad17989a6f87265e89d41121de62e5e60c80dc41d55c7e7b",
+    "reports/six-hour-20261127/replay_seventh.py": "c32a0191e4e394d739f49394c8ca950aebd6067904556a3d662d5632117a8432",
+    "research/six-hour-20261127/SEVENTH_CHECKPOINT.md": "f9ea21104c363d8e988bbbde406c7be4e0e3d673234a10bf41ebde8e000eb8dc",
+    "research/six-hour-20261127/coupling/DeepFifteen.lean": "542a445982e7124c075dcde5dc6c2a85468a0d394c11ccf12efd3a4ad4184ad3",
+    "research/six-hour-20261127/coupling/NESTED_COVER.md": "1c99ea722a11ac2f94f04cbc2ed3225a0bdc2bf56304bd4070e2af0b9e9db2d2",
+    "research/six-hour-20261127/coupling/NESTED_COVER_CONTROLS.json": "4f141e7ec07cddeb9b4f422044ae1733dd12868b45e3616b50fc5ba0844a8a4c",
+    "research/six-hour-20261127/coupling/NestedCharts.lean": "a9b63ddf0734a9986f42ffdb2755f2f3382f93a8439507c1409807cdafe20e6e",
+    "research/six-hour-20261127/coupling/NestedCover.lean": "f9d79dfd4bc23c93766dc765e3f1a722b9194c9c04770fc3c920604f7b29b623",
+    "research/six-hour-20261127/coupling/VALUATION_COVER.md": "4977caa804c09148ba17e3878c5c46375a0b46caf8af8c6d90542079d8958858",
+    "research/six-hour-20261127/coupling/VALUATION_COVER_CONTROLS.json": "875cddfb32a66bd475b48dd77aa3ede1564890392ab9ef400d88c51f3dbc89aa",
+    "research/six-hour-20261127/coupling/ValuationAddress.lean": "5c4537ba68cf5b510be28bcf79c47c085d62b26e5f9c57ace0e0a041daae5135",
+    "research/six-hour-20261127/coupling/ValuationCharts.lean": "1de66bb162bf2200eb3f1498ce306ff9e19a7bb51aa8c5e5ec12851debbe130e",
+    "research/six-hour-20261127/coupling/ValuationCover.lean": "ab6dc4bfc156301716305d6a2339d6662da74ea8e423d2d341eb1218061e6881",
+    "research/six-hour-20261127/coupling/check_nested_cover.py": "16829f6c821a9ad83169a4ebcf04b8f4c79c651d276e1eb0bccd5a77dd18baff",
+    "research/six-hour-20261127/coupling/check_valuation_cover.py": "24541a699619f30a3de79fb7bfcce929170c5b811e6b37ee5d97b1d47e7dbdb9",
+    "research/six-hour-20261127/escape/COMPARABLE_ANCESTORS.md": "14454fe9090a0010c22e661abb805d434badf497b5c4003bbc44f5b5a5add3f7",
+    "research/six-hour-20261127/escape/COMPARABLE_CONTROLS.json": "6d53f9c350e6e42f62d663c9d803429387d731ba373615131aacae6539b4af34",
+    "research/six-hour-20261127/escape/ComparableAncestors.lean": "51db54e07591bbe94bffb56abb2c50bdacf807256447881f132f2220176ef33d",
+    "research/six-hour-20261127/escape/PROTECTED_COMPONENT_WINDOWS.md": "2ff9a286c087879b509fb7f7796db4440cbe5996ca35e14e0b8ab490206b9902",
+    "research/six-hour-20261127/escape/check_comparable_ancestors.py": "655c4f8149cd6ea408378a97b843840d9a9890930022bc58f2c09df02e59a9f5"
+  }
+}
