@@ -1,0 +1,87 @@
+{
+  "all_cut_unit_cycle_controls": 96,
+  "changed_edge_residues": {
+    "3": 250,
+    "5": 250,
+    "9": 250,
+    "11": 250
+  },
+  "cutoff_insertions": 1500,
+  "drop_residues": {
+    "5": 13,
+    "9": 6
+  },
+  "eligible_output_controls": 2411,
+  "first_drops": [
+    [
+      5,
+      "2",
+      "5/3"
+    ],
+    [
+      17,
+      "5/3",
+      "13/8"
+    ],
+    [
+      21,
+      "13/8",
+      "8/5"
+    ],
+    [
+      81,
+      "8/5",
+      "43/27"
+    ],
+    [
+      101,
+      "43/27",
+      "35/22"
+    ],
+    [
+      117,
+      "35/22",
+      "27/17"
+    ],
+    [
+      293,
+      "27/17",
+      "100/63"
+    ],
+    [
+      341,
+      "100/63",
+      "73/46"
+    ]
+  ],
+  "genuine_native_winding_controls": 4,
+  "last_drops": [
+    [
+      2417,
+      "409/258",
+      "344/217"
+    ],
+    [
+      2561,
+      "344/217",
+      "279/176"
+    ],
+    [
+      2957,
+      "279/176",
+      "214/135"
+    ]
+  ],
+  "negative_high_child_controls": 111,
+  "negative_high_parent_controls": 122,
+  "odd_grid_maximum": 3001,
+  "ordinary_local_step_controls": 4096,
+  "paired_winding_controls": 164,
+  "rotation_drops": 19,
+  "strict_input_positive_controls": 564,
+  "upper_convergents_seen": [
+    "2",
+    "8/5",
+    "65/41"
+  ]
+}

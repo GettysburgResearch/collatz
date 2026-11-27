@@ -1,0 +1,4 @@
+'SelectedBlockBarrier.extendBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelectedBlockBarrier.prefixDebt' depends on axioms: [propext, Quot.sound]
+'SelectedBlockBarrier.bridgePays' depends on axioms: [propext, Quot.sound]
+'SelectedBlockBarrier.failedSuffixPrecludesGate' depends on axioms: [propext, Quot.sound]

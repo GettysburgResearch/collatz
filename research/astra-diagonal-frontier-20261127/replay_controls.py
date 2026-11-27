@@ -18,9 +18,14 @@ CASES = [
     ("arithmetic/check_polynomial_rank.py", "arithmetic/polynomial_rank_controls.json"),
     ("arithmetic/check_higher_differences.py", "arithmetic/higher_difference_controls.json"),
     ("arithmetic/check_rotation_cuts.py", "arithmetic/rotation_cut_controls.json"),
+    ("arithmetic/check_weighted_clock.py", "arithmetic/weighted_clock_controls.json"),
+    ("arithmetic/check_sparse_rational_clock.py", "arithmetic/sparse_rational_clock_controls.json"),
+    ("arithmetic/check_homogeneous_meetings.py", "arithmetic/homogeneous_meeting_controls.json"),
     ("linear/check_controls.py", None),
     ("linear/check_automata.py", None),
     ("linear/check_local_landing.py", None),
+    ("inverse/check_retained_trees.py", None),
+    ("inverse/check_frozen_root.py", None),
 ]
 
 

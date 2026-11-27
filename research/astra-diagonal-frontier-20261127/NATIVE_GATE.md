@@ -131,6 +131,35 @@ If an old source reaches 1, the eventual native orbit alternates 1 and 2 and its
 
 No limit theorem or real-valued analytic axiom is needed for this formal converse. The proof uses the elementary rational bound \((99/100)^k\le100/(k+100)\), hence \(V_{4800L}<1/L\). That deliberately coarse index supplies the quantifier in the equivalence; it is not a practical search recommendation.
 
+## Unconditional convergence and the permanent remainder
+
+Let \(\mathcal P\) be the set of positive ordinary integers passing every native gate, and define
+\[
+ P_k=\sum_{\substack{x\in\mathcal P\\x\le2^k}}\frac1x,
+ \qquad R=\sup_k P_k.
+\]
+These are mathematical definitions: membership in \(\mathcal P\) is not supplied by a decidable test. In particular a bound involving \(P_k\) is not presented as an executable finite certificate.
+
+For each fixed \(k\), every nonpermanent source in the finite set \(C_k\) eventually fails. Taking the maximum of those finitely many failure clocks gives an onset \(N_k\) such that
+\[
+              P_k\le J_n\le P_k+V_k\qquad(n\ge N_k).
+\]
+The old-source identities are retained throughout. The right side follows from (6), and does not assume convergence to 1 of a source that is merely nonpermanent. The onset exists by finite exhaustion; no effective bound for it is proved.
+
+[NativePersistence.lean](NativePersistence.lean) proves this sandwich and the unconditional Cauchy property of the actual rational masses. [NativeResidue.lean](NativeResidue.lean) proves the real limit and its identification:
+\[
+ \boxed{\quad J_n\longrightarrow R=\sum_{x\in\mathcal P}\frac1x,\qquad
+ 0\le R-P_k\le V_k\le48(99/100)^k.\quad}                  \tag{6a}
+\]
+The displayed infinite sum means the increasing supremum of its finite positive-source sums, which is the definition formalized in Lean. Thus its source-cutoff error is explicit even though its finite partial sums contain an undecided infinite gate predicate. This is not a convergence-rate bound for \(J_n\) in the native time \(n\).
+
+Every native row gives a computable upper bound \(R\le J_k+V_k\). A positive permanent source \(x\) gives the lower bound \(R\ge1/x\). Combining these facts with the finite criterion yields the connected formal equivalence
+\[
+                \text{every positive integer reaches 1}
+                       \quad\Longleftrightarrow\quad R=0.          \tag{6b}
+\]
+The new limit theorem identifies precisely what a nonzero mass would represent. It does not prove (6b)'s right side.
+
 ## The decay statement still needed
 
 An explicit sufficient target is a nonnegative sequence \(h_k\) satisfying
@@ -150,4 +179,4 @@ The separate mass packet obtains a relative loss only for recent odd-clock cohor
 
 The source 27 passes all native gates through clock 85 and first fails at 86. This is a finite lifetime control, not an exceptional orbit. The finite mass itself can rise: \(J_{13}\approx0.56025\) and \(J_{14}\approx0.62016\), whereas \(J_k+V_k\) decreases. The reserve is therefore material to the accounting.
 
-The checker is not a proof of (1) or (7). The universal reserve estimate (5) is a formal theorem, separate from those open mass assertions. The source strategy, gate slope and equivalence to extinction precede this packet; the new formal contribution is the connected native-map realization, complete finite loss budget, exponential reserve estimate, fixed-source tightness and both directions of the criterion.
+The checker is not a proof of (1) or (7). The universal reserve estimate (5) and the limit identification (6a) are formal theorems, separate from those open mass assertions. The source strategy, gate slope and equivalence to extinction precede this packet; the formal contribution is the connected native-map realization, complete finite loss budget, exponential reserve estimate, fixed-source tightness, identification of the permanent remainder and both directions of the criterion.

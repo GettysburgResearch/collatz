@@ -25,6 +25,8 @@ MODULES = [
     ("NativeDecay", "NativeDecay.lean", "Collatz.NativeGate"),
     ("NativeTightness", "NativeTightness.lean", "Collatz.NativeGate"),
     ("NativeCriterion", "NativeCriterion.lean", "Collatz.NativeGate"),
+    ("NativePersistence", "NativePersistence.lean", "Collatz.NativeGate"),
+    ("NativeResidue", "NativeResidue.lean", "Collatz.NativeGate"),
     ("SeedSpread", "mass/SeedSpread.lean", "SeedSpread"),
     ("ComponentLoss", "mass/ComponentLoss.lean", "ComponentLoss"),
     ("FirstEntryRecord", "mass/FirstEntryRecord.lean", "FirstEntryRecord"),
@@ -32,6 +34,7 @@ MODULES = [
     ("PolynomialRank", "arithmetic/PolynomialRank.lean", "Collatz.PolynomialRank"),
     ("HigherDifference", "arithmetic/HigherDifference.lean", "Collatz.HigherDifference"),
     ("RotationCuts", "arithmetic/RotationCuts.lean", "Collatz.RotationCuts"),
+    ("OrdinaryMerge", "arithmetic/OrdinaryMerge.lean", "Collatz.OrdinaryMerge"),
     ("ShortProbe", "linear/ShortProbe.lean", "CollatzShortProbe"),
     ("UnitWindowLift", "linear/UnitWindowLift.lean", "CollatzWindowLift"),
 ]
@@ -115,7 +118,7 @@ def main():
         "dependency_manifest_sha256": sha((mathlib / "lake-manifest.json").read_bytes()),
         "cache_overlay": overlay_record,
         "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every packet module; no cold dependency rebuild or independent LeanChecker run.",
-        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness and equivalence of the finite extinction criterion to Collatz are connected formal proofs. The source-qualified density laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation construction, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. No universal mass extinction or hazard divergence is proved.",
+        "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. No universal mass extinction or hazard divergence is proved.",
         "modules": [],
     }
     started = time.monotonic()

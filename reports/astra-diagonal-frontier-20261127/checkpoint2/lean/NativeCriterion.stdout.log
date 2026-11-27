@@ -1,0 +1,4 @@
+'Collatz.NativeGate.reserve_exponential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.future_highMass_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.covered_finite_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.collatz_iff_extinction' depends on axioms: [propext, Classical.choice, Quot.sound]
