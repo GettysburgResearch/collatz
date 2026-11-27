@@ -1,0 +1,5 @@
+'RenewalArithmetic.bridge_identity' depends on axioms: [propext, Quot.sound]
+'RenewalArithmetic.joint_precision' depends on axioms: [propext, Quot.sound]
+'RenewalArithmetic.carry_telescope' depends on axioms: [propext]
+'RenewalArithmetic.carry_string_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalArithmetic.centered_carry_string_injective' depends on axioms: [propext, Classical.choice, Quot.sound]

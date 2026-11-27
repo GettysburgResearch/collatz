@@ -1,0 +1,69 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "started_utc": "2026-11-27T12:12:13Z",
+  "repo_head": "d21bac748e705a64b6b57a7996a8ad6282f0bcbf",
+  "repo_tree": "9345cdaca91f380ae98240b14f0f5146eb5525a2",
+  "working_status": "?? reports/infinity-20261127/\n?? research/infinity-20261127/",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "badfc710debdd72e086c20067deb5670c5b3e7b1d48809e23f2737f4c0567aa9",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/infinity-20261127/arithmetic/PellReturnPacking.lean",
+      "source_sha256": "c475231f483e3eeac91edf032952f58064d532e5f0199e3bce842d4fba595363",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-pell-replay/build/PellReturnPacking.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/arithmetic/PellReturnPacking.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.541,
+      "output_sha256": "aea3caf3299c0257c9c72d95997ea878f20a5eb36669bb8ae9233b87b941d6db",
+      "declarations": {
+        "Collatz.PellReturnPacking.returnNormOdd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PellReturnPacking.returnCarry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PellReturnPacking.pellOfKernel": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PellReturnPacking.conjugateGap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.PellReturnPacking.returnHeight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "73af520bd47207ae8c4349fc09fd019b3095df1dadd20d2f6821d48f806ec332"
+    }
+  ],
+  "finished_utc": "2026-11-27T12:12:17Z",
+  "complete": true
+}

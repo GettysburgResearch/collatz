@@ -1,0 +1,134 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "all",
+  "repo_head_at_start": "662a3dee736ccbca038377fbb4b2d9439374db16",
+  "repo_tree_at_start": "110291d76e62a4c86f01a6ddee297d3266dc8f21",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_eighth.py\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/TERNARY_PAST_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/TERNARY_PAST_ENTROPY.md\n?? research/six-hour-20261127/arithmetic/TernaryPast.lean\n?? research/six-hour-20261127/arithmetic/check_anchor_carries.py\n?? research/six-hour-20261127/arithmetic/check_ternary_past.py\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {
+    "research/six-hour-20261127/arithmetic/check_rival_pressure.py": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0",
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a",
+    "research/six-hour-20261127/arithmetic/rival_pressure.cpp": "1553df402b2cbca33cdd1cde0d1cd72d84c8f957ef13d724f2b0ba99306a9510"
+  },
+  "lean": [
+    {
+      "path": "research/six-hour-20261127/arithmetic/TernaryPast.lean",
+      "source_sha256": "9dc790323893486e5a7d5019c9f57e7733c6cf3866186605d50d04b9812ac507",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-eighth-replay/build/TernaryPast.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/TernaryPast.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.66,
+      "output_sha256": "da2142841e15d19106bc670fab0c64bc24da89c8cf132304c5a1f465080299ac",
+      "declarations": {
+        "Collatz.TernaryPast.progression_spacing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TernaryPast.no_progression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TernaryPast.pair_sums_split": []
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_anchor_carries.py",
+      "source_sha256": "7983c1c4a99fad8c01593b6364a3c9cfb86ae403f573ad04cd46fd1cdea69e96",
+      "expected": "research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json",
+      "expected_sha256": "b108b44b1ace7d7cc0d130e0a85de30172e43690a7ba9fec322698201fa440ac",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_anchor_carries.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 36.916,
+          "stdout_sha256": "b108b44b1ace7d7cc0d130e0a85de30172e43690a7ba9fec322698201fa440ac",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_anchor_carries.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 32.807,
+          "stdout_sha256": "b108b44b1ace7d7cc0d130e0a85de30172e43690a7ba9fec322698201fa440ac",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_ternary_past.py",
+      "source_sha256": "9247fdc925d62ac47bc95341f6a53158e1efb105023c71128fec1e6eea5e6e1d",
+      "expected": "research/six-hour-20261127/arithmetic/TERNARY_PAST_CONTROLS.json",
+      "expected_sha256": "28ec0d0a545d0dd5c648340efc18b16d6b0b39fca100d85e58b71122c4e4e354",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_ternary_past.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.267,
+          "stdout_sha256": "28ec0d0a545d0dd5c648340efc18b16d6b0b39fca100d85e58b71122c4e4e354",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_ternary_past.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.325,
+          "stdout_sha256": "28ec0d0a545d0dd5c648340efc18b16d6b0b39fca100d85e58b71122c4e4e354",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_eighth.py\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/TERNARY_PAST_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/TERNARY_PAST_ENTROPY.md\n?? research/six-hour-20261127/arithmetic/TernaryPast.lean\n?? research/six-hour-20261127/arithmetic/check_anchor_carries.py\n?? research/six-hour-20261127/arithmetic/check_ternary_past.py\n?? research/six-hour-20261127/coupling/GlobalReturnBudget.lean\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/ReturnTwentyFour.lean\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean"
+}

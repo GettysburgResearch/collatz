@@ -1,0 +1,4 @@
+'DyadicPins.pinned_neighbors' depends on axioms: [propext, Quot.sound]
+'DyadicPins.signed_pin' depends on axioms: [propext, Quot.sound]
+'DyadicPins.good_pin_exclusive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DyadicPins.four_collar_window' depends on axioms: [propext, Classical.choice, Quot.sound]

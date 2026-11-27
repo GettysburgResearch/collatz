@@ -1,0 +1,68 @@
+{
+  "checked_at_utc": "2026-11-26T21:46:06.456735+00:00",
+  "scope": "Source identity against successful executed receipts, unique declaration/axiom aggregation, control payload identity, and relative local Markdown destinations",
+  "lean_files": 12,
+  "unique_declarations": 64,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "control_programs": 9,
+  "control_executions": 18,
+  "lean_sources": {
+    "research/unconventional-20261126/adelic/PeriodicWindows.lean": "34a2c97678731e2bf933655c623f18e5c92c9a400789faf41bc1a85869d2efb7",
+    "research/unconventional-20261126/PhysicalShadow.lean": "994cd7c29d53b090fc0f4ebf303c97856eaa8c19ba75188f7ff132da06910bfe",
+    "research/unconventional-20261126/CoreBranching.lean": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+    "research/unconventional-20261126/adelic/PatchRigidity.lean": "3f1335773792ee9dc16538d66fb679276cb434bd903e73f2afbbd39a7849792e",
+    "research/unconventional-20261126/CoprimeCancellation.lean": "7073e4ed0679c6d031608775860412af072728dfa08e660169a56b97f1c40b57",
+    "research/unconventional-20261126/AlignedCycles.lean": "de0c0d1834c254aaefdd5b9f7897d94e419a6d77c36d4d8cfd012eb21fbef25f",
+    "research/unconventional-20261126/FinalProposal.lean": "585a101642a3e7b3f1dff925827c0fea51d3fe379a653e1fd5a7af8669c0718a",
+    "research/unconventional-20261126/renewal/RenewalArithmetic.lean": "91dd985253915415acf255d888da1b8b63f6879a35be6233c8d3ef83f65692ef",
+    "research/unconventional-20261126/adelic/PrimitiveTracks.lean": "118bce73149b91ca88b63c858786d8e280b63870c2541daf3e23855f4570a892",
+    "research/unconventional-20261126/operator/HybridRoot.lean": "70ddc9a79528d3864e41360026cb02de20b5f2e85e4685e4a99ec8d818e20d51",
+    "research/unconventional-20261126/FiniteExit.lean": "f1b7d6fc3de17d5ed9aa4f87801c0f44c5be8b782b8bd0134d3261ad00ab82f2",
+    "research/unconventional-20261126/adelic/OrderReversals.lean": "bcda52040991362840141b410728417381c95e1faab1adcbffc7f0d9e3754631"
+  },
+  "controls": {
+    "research/unconventional-20261126/adelic/controls.py": {
+      "source_sha256": "3cb50a0d8fbb2eb684fddd30b0d7a799e45a74fc948e680eca60cfafd2f670b2",
+      "expected_sha256": "b1de55a2254d8c53ad7c9fc2d84679b07293d774c5a6895e0e4cb739103823e6"
+    },
+    "research/unconventional-20261126/adelic/cycle_controls.py": {
+      "source_sha256": "9eed79ed97b4bdf6621dc2bc91f46aef537bdbfff68d4ec7e577e925d7c7cb2b",
+      "expected_sha256": "710f3b8aa0024b296e4b76883ad72eecc5240a808ba111fede0a47b41074038c"
+    },
+    "research/unconventional-20261126/adelic/primitive_controls.py": {
+      "source_sha256": "d5463207873704057e1c198ddaaa39dc5ce09f01409ac4d81ecf583475324a27",
+      "expected_sha256": "96427e335040d44e73ff8380724536567615bb7d49014d3e3ab6fb018000f043"
+    },
+    "research/unconventional-20261126/adelic/coherent_controls.py": {
+      "source_sha256": "021f58b8b0a4622b219a00fb6729fb7b7960acd0ddddf7d867024da34b5aef57",
+      "expected_sha256": "921ebe2e8b4bd03ff40c772f8adf5ecf599ceac49bcadc3c208a20017eb7bf12"
+    },
+    "research/unconventional-20261126/operator/controls.py": {
+      "source_sha256": "a42cc3f4e0fce399ac9f5c61171efdbe2c3d2cf75e1a16712ef86fdf5fc7f9a1",
+      "expected_sha256": "77a752c7969ee0b3311fc8b051e9c73558d611f4130dd9912acf62319f5c28a4"
+    },
+    "research/unconventional-20261126/operator/hybrid_controls.py": {
+      "source_sha256": "7049a305545ad32e66316eeab07932f33430a60d88d06807028ab10df545377a",
+      "expected_sha256": "b0de5caab19950b7f777c32e5616ac100a6bdf412c566c338c8d32378dee24c5"
+    },
+    "research/unconventional-20261126/renewal/controls.py": {
+      "source_sha256": "306d681fe0aaaf79dfd79c6e89f3d80eda182963ae9f2583baf617a9daf51d8e",
+      "expected_sha256": "97a4a12b4ef7871b11c24bddbf7e2faacf403fe597e6330318a1f56d5d58bf36"
+    },
+    "research/unconventional-20261126/operator/gate_controls.py": {
+      "source_sha256": "9863355e211a4d934699405017d89573590505d3a5edf7820bd5ebf65b5467f1",
+      "expected_sha256": "f52485e74a1b8ad9ecaee31641592f093b3e6bade44302f3779800381f156d01"
+    },
+    "research/unconventional-20261126/adelic/order_controls.py": {
+      "source_sha256": "b9ddab394c144d8a1f0c48b79a418c2d80e84bfa97800d784cbb483c3386ad7a",
+      "expected_sha256": "c374eb305aed4dbc838ca552d77b49c8788e426a12727bf993d2bf1a7bbcf48e"
+    }
+  },
+  "missing_relative_links": [],
+  "all_checks_passed": true,
+  "local_markdown_files_checked": 92
+}

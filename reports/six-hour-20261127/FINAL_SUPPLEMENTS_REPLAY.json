@@ -1,0 +1,150 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "controls",
+  "repo_head_at_start": "860a67dedc860adcd82b964958d91b9e21d610f1",
+  "repo_tree_at_start": "4e131444465a2ecd4b1ac07567e9f0103ec3e2b0",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log\n?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.py\n?? reports/six-hour-20261127/NINTH_BUILD_INTERRUPTS.json\n?? reports/six-hour-20261127/NINTH_QUANTITATIVE_KERNEL_REPLAY.json\n?? reports/six-hour-20261127/ROOT_NINTH_REVIEW.md\n?? reports/six-hour-20261127/TENTH_REPLAY.json\n?? reports/six-hour-20261127/replay_final_supplements.py\n?? reports/six-hour-20261127/replay_ninth.py\n?? reports/six-hour-20261127/replay_tenth.py\n?? research/six-hour-20261127/NINTH_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_ENERGY.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FullRankCurvature.lean\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING.md\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/check_full_anchor.py\n?? research/six-hour-20261127/arithmetic/check_full_rank_curvature.py\n?? research/six-hour-20261127/arithmetic/check_microscopic_joining.py\n?? research/six-hour-20261127/coupling/CANONICAL_CONNECTIONS.md\n?? research/six-hour-20261127/coupling/CANONICAL_CONNECTION_CONTROLS.json\n?? research/six-hour-20261127/coupling/CANONICAL_PATHS.md\n?? research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DefectBank.lean\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_BUDGET.md\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_CONTROLS.json\n?? research/six-hour-20261127/coupling/GlobalReturnBudget.lean\n?? research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json\n?? research/six-hour-20261127/coupling/OPTIMIZED_GLOBAL_RETURN.md\n?? research/six-hour-20261127/coupling/OptimizedBank.lean\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/ReturnTwentyFour.lean\n?? research/six-hour-20261127/coupling/check_canonical_connections.py\n?? research/six-hour-20261127/coupling/check_canonical_paths.py\n?? research/six-hour-20261127/coupling/check_global_return.py\n?? research/six-hour-20261127/coupling/check_optimized_bank.py\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/CriticalFirstClear.lean\n?? research/six-hour-20261127/escape/CriticalSourceSector.lean\n?? research/six-hour-20261127/escape/DYADIC_FLUX_CONTROLS.json\n?? research/six-hour-20261127/escape/DYADIC_SIBLING_FLUX.md\n?? research/six-hour-20261127/escape/DyadicSiblingFlux.lean\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/FairFirstClear.lean\n?? research/six-hour-20261127/escape/SIGNED_PIECE_CONTROLS.json\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_critical_first_clear.py\n?? research/six-hour-20261127/escape/check_critical_source_sector.py\n?? research/six-hour-20261127/escape/check_dyadic_sibling_flux.py\n?? research/six-hour-20261127/escape/check_fair_first_clear.py\n?? research/six-hour-20261127/escape/check_signed_piece_mass.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {
+    "research/six-hour-20261127/arithmetic/check_anchor_carries.py": "7983c1c4a99fad8c01593b6364a3c9cfb86ae403f573ad04cd46fd1cdea69e96",
+    "research/six-hour-20261127/arithmetic/check_rival_pressure.py": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0",
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a",
+    "research/six-hour-20261127/coupling/check_global_return.py": "78e0b90c53cfc6e5ad7368b5e81492d53694e0941608e9000ffef9f20cc47a47",
+    "research/six-hour-20261127/coupling/check_optimized_bank.py": "73e3c7c4f206baf93192f48c53c1d2d9325c4b21cbd52c7b32ce1754d4844224",
+    "research/six-hour-20261127/coupling/check_canonical_paths.py": "d11d8e71623c1d242891157816b5994616ce88c5129cd0f920f5d3e7f14a188d",
+    "research/six-hour-20261127/coupling/ReturnTwentyFour.lean": "b413f1ddcbd1dc6109dec2b4f7ad10bb0249af1de207d29c5f5a6e5527757203",
+    "research/six-hour-20261127/coupling/OptimizedBank.lean": "0178a3611656701059fc3afdc4c7a44be2d20cfdaf89646417729212d10a8d7f",
+    "research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json": "0454e87594c421c5dc2e395eeb397f9981836f5c0a366b352062648b5622f710"
+  },
+  "lean": [],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/coupling/check_canonical_paths.py",
+      "source_sha256": "d11d8e71623c1d242891157816b5994616ce88c5129cd0f920f5d3e7f14a188d",
+      "expected": "research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json",
+      "expected_sha256": "a0b2ef62c2d7d869f86142498a40a4d0ff7d1287cd63145f70e2282a9124f354",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_canonical_paths.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.721,
+          "stdout_sha256": "a0b2ef62c2d7d869f86142498a40a4d0ff7d1287cd63145f70e2282a9124f354",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_canonical_paths.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.709,
+          "stdout_sha256": "a0b2ef62c2d7d869f86142498a40a4d0ff7d1287cd63145f70e2282a9124f354",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_canonical_connections.py",
+      "source_sha256": "889b516dc197ff92f67d5f11b7551dd9b5e2197bcae0be9f6e995e7763456c8d",
+      "expected": "research/six-hour-20261127/coupling/CANONICAL_CONNECTION_CONTROLS.json",
+      "expected_sha256": "80d09837f5c8510fc563274d29dd45991fc35b014c77ec06fcaff228a736bf44",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_canonical_connections.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.701,
+          "stdout_sha256": "80d09837f5c8510fc563274d29dd45991fc35b014c77ec06fcaff228a736bf44",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_canonical_connections.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.748,
+          "stdout_sha256": "80d09837f5c8510fc563274d29dd45991fc35b014c77ec06fcaff228a736bf44",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_microscopic_joining.py",
+      "source_sha256": "6549a71e86b029b30d7f6458052556f42adc1e00e1e022d88273764dd73f30ac",
+      "expected": "research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json",
+      "expected_sha256": "0ae5c644447e7763d4acd4c4a8e58c2e8c3bdf526a5cdb283360ea087df18f5d",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_microscopic_joining.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.182,
+          "stdout_sha256": "0ae5c644447e7763d4acd4c4a8e58c2e8c3bdf526a5cdb283360ea087df18f5d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_microscopic_joining.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.597,
+          "stdout_sha256": "0ae5c644447e7763d4acd4c4a8e58c2e8c3bdf526a5cdb283360ea087df18f5d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log\n?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.py\n?? reports/six-hour-20261127/NINTH_BUILD_INTERRUPTS.json\n?? reports/six-hour-20261127/NINTH_QUANTITATIVE_KERNEL_REPLAY.json\n?? reports/six-hour-20261127/ROOT_NINTH_REVIEW.md\n?? reports/six-hour-20261127/TENTH_REPLAY.json\n?? reports/six-hour-20261127/replay_final_supplements.py\n?? reports/six-hour-20261127/replay_ninth.py\n?? reports/six-hour-20261127/replay_tenth.py\n?? research/six-hour-20261127/NINTH_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_ENERGY.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FullRankCurvature.lean\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING.md\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/check_full_anchor.py\n?? research/six-hour-20261127/arithmetic/check_full_rank_curvature.py\n?? research/six-hour-20261127/arithmetic/check_microscopic_joining.py\n?? research/six-hour-20261127/coupling/CANONICAL_CONNECTIONS.md\n?? research/six-hour-20261127/coupling/CANONICAL_CONNECTION_CONTROLS.json\n?? research/six-hour-20261127/coupling/CANONICAL_PATHS.md\n?? research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DefectBank.lean\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_BUDGET.md\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_CONTROLS.json\n?? research/six-hour-20261127/coupling/GlobalReturnBudget.lean\n?? research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json\n?? research/six-hour-20261127/coupling/OPTIMIZED_GLOBAL_RETURN.md\n?? research/six-hour-20261127/coupling/OptimizedBank.lean\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/ReturnTwentyFour.lean\n?? research/six-hour-20261127/coupling/check_canonical_connections.py\n?? research/six-hour-20261127/coupling/check_canonical_paths.py\n?? research/six-hour-20261127/coupling/check_global_return.py\n?? research/six-hour-20261127/coupling/check_optimized_bank.py\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/CriticalFirstClear.lean\n?? research/six-hour-20261127/escape/CriticalSourceSector.lean\n?? research/six-hour-20261127/escape/DYADIC_FLUX_CONTROLS.json\n?? research/six-hour-20261127/escape/DYADIC_SIBLING_FLUX.md\n?? research/six-hour-20261127/escape/DyadicSiblingFlux.lean\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/FairFirstClear.lean\n?? research/six-hour-20261127/escape/SIGNED_PIECE_CONTROLS.json\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_critical_first_clear.py\n?? research/six-hour-20261127/escape/check_critical_source_sector.py\n?? research/six-hour-20261127/escape/check_dyadic_sibling_flux.py\n?? research/six-hour-20261127/escape/check_fair_first_clear.py\n?? research/six-hour-20261127/escape/check_signed_piece_mass.py"
+}

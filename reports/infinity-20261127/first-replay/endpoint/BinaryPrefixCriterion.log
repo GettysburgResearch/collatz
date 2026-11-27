@@ -1,0 +1,7 @@
+'BinaryPrefixCriterion.least_bad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.debt_reserve_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.minimum_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.principal_member' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.member_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.finite_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPrefixCriterion.collatz_of_small_finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]

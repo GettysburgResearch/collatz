@@ -1,0 +1,213 @@
+[
+  {
+    "cutoff": 10,
+    "number_of_gates": 2,
+    "exiting_starts": 2,
+    "total_flux_floor_1e15": 30074633159048,
+    "largest": [
+      {
+        "gate": 11,
+        "flux_floor_1e15": 18595041322314,
+        "exiting_starts": 1
+      },
+      {
+        "gate": 14,
+        "flux_floor_1e15": 11479591836734,
+        "exiting_starts": 1
+      }
+    ],
+    "all_exact_gate_weights_sha256": "d0a9f568d52a9e358eaad7618c4fad06eceffbc4e74049c13b30c7aa09c5bc5e"
+  },
+  {
+    "cutoff": 30,
+    "number_of_gates": 5,
+    "exiting_starts": 7,
+    "total_flux_floor_1e15": 14840431888495,
+    "largest": [
+      {
+        "gate": 35,
+        "flux_floor_1e15": 5969387755102,
+        "exiting_starts": 2
+      },
+      {
+        "gate": 44,
+        "flux_floor_1e15": 3777117768595,
+        "exiting_starts": 2
+      },
+      {
+        "gate": 32,
+        "flux_floor_1e15": 2197265625000,
+        "exiting_starts": 1
+      }
+    ],
+    "all_exact_gate_weights_sha256": "ea35d58bf3749df94aac161ebb889f56b1dcf42056e141315e729027facf7424"
+  },
+  {
+    "cutoff": 100,
+    "number_of_gates": 17,
+    "exiting_starts": 31,
+    "total_flux_floor_1e15": 8646434862619,
+    "largest": [
+      {
+        "gate": 107,
+        "flux_floor_1e15": 4266378212958,
+        "exiting_starts": 9
+      },
+      {
+        "gate": 134,
+        "flux_floor_1e15": 1200199445867,
+        "exiting_starts": 4
+      },
+      {
+        "gate": 116,
+        "flux_floor_1e15": 543437871581,
+        "exiting_starts": 2
+      }
+    ],
+    "all_exact_gate_weights_sha256": "cadc924042954b414cfb732ef396c21f2489826516647d938a5fe48bb39a17ca"
+  },
+  {
+    "cutoff": 300,
+    "number_of_gates": 50,
+    "exiting_starts": 139,
+    "total_flux_floor_1e15": 8899907195423,
+    "largest": [
+      {
+        "gate": 350,
+        "flux_floor_1e15": 6272856523788,
+        "exiting_starts": 51
+      },
+      {
+        "gate": 323,
+        "flux_floor_1e15": 541118439773,
+        "exiting_starts": 8
+      },
+      {
+        "gate": 404,
+        "flux_floor_1e15": 438726832966,
+        "exiting_starts": 8
+      }
+    ],
+    "all_exact_gate_weights_sha256": "f9fdd2f1637c91c777a35a61b216925796229372ea0f99f8f0b94e0f1ec9eff1"
+  },
+  {
+    "cutoff": 1000,
+    "number_of_gates": 167,
+    "exiting_starts": 560,
+    "total_flux_floor_1e15": 8787790525450,
+    "largest": [
+      {
+        "gate": 1079,
+        "flux_floor_1e15": 7640881092372,
+        "exiting_starts": 220
+      },
+      {
+        "gate": 1457,
+        "flux_floor_1e15": 226182469503,
+        "exiting_starts": 21
+      },
+      {
+        "gate": 1214,
+        "flux_floor_1e15": 91246108290,
+        "exiting_starts": 11
+      }
+    ],
+    "all_exact_gate_weights_sha256": "a466cfb6edeedc4843a2e9442b20bb0edfb0e90617995b7504d2e8648dd523fe"
+  },
+  {
+    "cutoff": 3000,
+    "number_of_gates": 500,
+    "exiting_starts": 1776,
+    "total_flux_floor_1e15": 8592737641846,
+    "largest": [
+      {
+        "gate": 3644,
+        "flux_floor_1e15": 8073155487490,
+        "exiting_starts": 697
+      },
+      {
+        "gate": 3077,
+        "flux_floor_1e15": 104488970198,
+        "exiting_starts": 35
+      },
+      {
+        "gate": 3158,
+        "flux_floor_1e15": 45095074484,
+        "exiting_starts": 39
+      }
+    ],
+    "all_exact_gate_weights_sha256": "64ecd074f23bd098bc766fbdfc940d3eb96006c68750f8dacf7ea4c1e53e8c4c"
+  },
+  {
+    "cutoff": 10000,
+    "number_of_gates": 1667,
+    "exiting_starts": 3886,
+    "total_flux_floor_1e15": 200941997160,
+    "largest": [
+      {
+        "gate": 13121,
+        "flux_floor_1e15": 33172610512,
+        "exiting_starts": 121
+      },
+      {
+        "gate": 10844,
+        "flux_floor_1e15": 14732492506,
+        "exiting_starts": 78
+      },
+      {
+        "gate": 10151,
+        "flux_floor_1e15": 9340852519,
+        "exiting_starts": 60
+      }
+    ],
+    "all_exact_gate_weights_sha256": "a570e7bbea5d47322b698f381cc2f1c90d0a61892d7a01c4d2f353b4a676c0c6"
+  },
+  {
+    "cutoff": 30000,
+    "number_of_gates": 5000,
+    "exiting_starts": 12145,
+    "total_flux_floor_1e15": 89959186297,
+    "largest": [
+      {
+        "gate": 34262,
+        "flux_floor_1e15": 12061176276,
+        "exiting_starts": 232
+      },
+      {
+        "gate": 42443,
+        "flux_floor_1e15": 6897212140,
+        "exiting_starts": 146
+      },
+      {
+        "gate": 31985,
+        "flux_floor_1e15": 5625472379,
+        "exiting_starts": 213
+      }
+    ],
+    "all_exact_gate_weights_sha256": "e4cabfc4d84c1156976a81262170e93871b028194c26a9fba28f283dfad3a2ea"
+  },
+  {
+    "cutoff": 100000,
+    "number_of_gates": 16667,
+    "exiting_starts": 41038,
+    "total_flux_floor_1e15": 42248369791,
+    "largest": [
+      {
+        "gate": 125252,
+        "flux_floor_1e15": 14168856108,
+        "exiting_starts": 1033
+      },
+      {
+        "gate": 118097,
+        "flux_floor_1e15": 3668488866,
+        "exiting_starts": 410
+      },
+      {
+        "gate": 115181,
+        "flux_floor_1e15": 1728297005,
+        "exiting_starts": 309
+      }
+    ],
+    "all_exact_gate_weights_sha256": "a5b10da6912a03db8d59eaf993eb18364ab76314587ec7d51725300437f2aa1b"
+  }
+]

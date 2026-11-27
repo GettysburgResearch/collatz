@@ -1,0 +1,20 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "pr": 200,
+  "commit": "eb91086951b66923787f696801f0c3ca52a0077d",
+  "scope": "Exact unchanged dependency source bytes; dependency theorem audits are counted separately from new modules.",
+  "files": [
+    {
+      "source_path": "research/six-hour-20261127/pointwise/PermanentSafeDebt.lean",
+      "vendored_path": "research/infinity-20261127/mass/pr200-pointwise/PermanentSafeDebt.lean",
+      "git_blob": "96fa5a379681aef9aea1d29f7fa7825938c28239",
+      "sha256": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552"
+    },
+    {
+      "source_path": "research/six-hour-20261127/pointwise/PermanentSafeOrdinary.lean",
+      "vendored_path": "research/infinity-20261127/mass/pr200-pointwise/PermanentSafeOrdinary.lean",
+      "git_blob": "fca8c6bda1a632a1f9a7f1fa00567a50fb4b69f2",
+      "sha256": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f"
+    }
+  ]
+}

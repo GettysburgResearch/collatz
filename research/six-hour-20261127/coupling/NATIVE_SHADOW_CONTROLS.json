@@ -1,0 +1,225 @@
+{
+  "positive_start_cutoff": 932,
+  "maximum_odd_visited": 83501,
+  "higher_bands": [
+    {
+      "ell": 1,
+      "hits": []
+    },
+    {
+      "ell": 2,
+      "hits": []
+    },
+    {
+      "ell": 3,
+      "hits": []
+    },
+    {
+      "ell": 4,
+      "hits": []
+    },
+    {
+      "ell": 5,
+      "hits": [
+        18863
+      ]
+    },
+    {
+      "ell": 6,
+      "hits": []
+    },
+    {
+      "ell": 7,
+      "hits": []
+    }
+  ],
+  "reflected_cycle": [
+    17,
+    25,
+    37,
+    55,
+    41,
+    61,
+    91
+  ],
+  "positive_589_forms": [
+    {
+      "anchor_start": 523,
+      "odd_rank": 2,
+      "divisions": 3,
+      "slope": [
+        8,
+        9
+      ],
+      "subtracted": [
+        13,
+        9
+      ],
+      "mod_16": 11
+    },
+    {
+      "anchor_start": 589,
+      "odd_rank": 0,
+      "divisions": 0,
+      "slope": [
+        1,
+        1
+      ],
+      "subtracted": [
+        1,
+        1
+      ],
+      "mod_16": 15
+    },
+    {
+      "anchor_start": 619,
+      "odd_rank": 5,
+      "divisions": 8,
+      "slope": [
+        256,
+        243
+      ],
+      "subtracted": [
+        623,
+        243
+      ],
+      "mod_16": 11
+    },
+    {
+      "anchor_start": 697,
+      "odd_rank": 3,
+      "divisions": 5,
+      "slope": [
+        32,
+        27
+      ],
+      "subtracted": [
+        61,
+        27
+      ],
+      "mod_16": 9
+    },
+    {
+      "anchor_start": 785,
+      "odd_rank": 1,
+      "divisions": 2,
+      "slope": [
+        4,
+        3
+      ],
+      "subtracted": [
+        5,
+        3
+      ],
+      "mod_16": 9
+    },
+    {
+      "anchor_start": 825,
+      "odd_rank": 6,
+      "divisions": 10,
+      "slope": [
+        1024,
+        729
+      ],
+      "subtracted": [
+        2735,
+        729
+      ],
+      "mod_16": 9
+    },
+    {
+      "anchor_start": 929,
+      "odd_rank": 4,
+      "divisions": 7,
+      "slope": [
+        128,
+        81
+      ],
+      "subtracted": [
+        271,
+        81
+      ],
+      "mod_16": 1
+    }
+  ],
+  "ordinary_controls": [
+    {
+      "m": 11,
+      "H": 4,
+      "R": 6,
+      "visitors": 8,
+      "maximum_odd_rank": 18,
+      "exhaustive_starts": 3233,
+      "small_start_grade_pairs": [
+        [
+          1819,
+          14
+        ],
+        [
+          2047,
+          12
+        ],
+        [
+          2155,
+          17
+        ],
+        [
+          2425,
+          15
+        ],
+        [
+          2729,
+          13
+        ],
+        [
+          2873,
+          18
+        ],
+        [
+          3071,
+          11
+        ],
+        [
+          3233,
+          16
+        ]
+      ]
+    },
+    {
+      "m": 173,
+      "H": 3,
+      "R": 5,
+      "visitors": 7,
+      "maximum_odd_rank": 179,
+      "exhaustive_starts": 0,
+      "small_start_grade_pairs": []
+    },
+    {
+      "m": 335,
+      "H": 6,
+      "R": 5,
+      "visitors": 7,
+      "maximum_odd_rank": 341,
+      "exhaustive_starts": 0,
+      "small_start_grade_pairs": []
+    },
+    {
+      "m": 497,
+      "H": 3,
+      "R": 6,
+      "visitors": 8,
+      "maximum_odd_rank": 504,
+      "exhaustive_starts": 0,
+      "small_start_grade_pairs": []
+    },
+    {
+      "m": 659,
+      "H": 4,
+      "R": 5,
+      "visitors": 7,
+      "maximum_odd_rank": 665,
+      "exhaustive_starts": 0,
+      "small_start_grade_pairs": []
+    }
+  ]
+}

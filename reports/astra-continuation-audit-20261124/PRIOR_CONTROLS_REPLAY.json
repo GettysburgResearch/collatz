@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "counts": {
+        "depth": 10,
+        "head_residues": 81,
+        "killedTransitions": 1194,
+        "offsetChecks": 829440,
+        "rational_contraction_certificate": true,
+        "trajectories": 82944,
+        "transitions": 829440,
+        "words": 82944
+      },
+      "exit_code": 0,
+      "path": "research/killed-green-head-closure-20261124/controls.js",
+      "published_receipt_matched": true,
+      "source_sha256": "9a0dea98ffa7500a79c803cfdadc6444ab2a609cbc6d15d75737f79ae7dcc0fc"
+    },
+    {
+      "counts": {
+        "budgets": 8166,
+        "edges": 40962,
+        "exact_constant_certificates": 6,
+        "largeBudget": 7854,
+        "prefixes": 8188,
+        "reconstructions": 40962,
+        "scalar_cache_entries": 6509,
+        "variations": 256
+      },
+      "exit_code": 0,
+      "path": "research/killed-green-head-closure-20261124/continuation/controls.js",
+      "published_receipt_matched": true,
+      "source_sha256": "8a747ae47aa2bbe38c9baa52edc02992d16f63ca29c7ff0dc113cd12da2517b7"
+    },
+    {
+      "counts": {
+        "antichainPairs": 338,
+        "antichains": 40,
+        "clockInequalities": 27426,
+        "comparisonChecks": 5,
+        "distinctDepths": 81,
+        "firstHits": 81,
+        "gradeChecks": 11500,
+        "legal": 81,
+        "prefixLifts": 2875,
+        "unitCongruences": 2106,
+        "words": 19845
+      },
+      "exit_code": 0,
+      "path": "research/killed-green-head-closure-20261124/prefix-density/controls.js",
+      "published_receipt_matched": true,
+      "source_sha256": "5ba6fcda7adeded879b7e895747e44de148372c1631f3601e604334bd49bd68c"
+    },
+    {
+      "counts": {
+        "candidate_words": 120632,
+        "central_clock_weight_checks": 8190,
+        "legal_unit_paths": 132,
+        "marked_prefix_lift_checks": 616,
+        "mixed_residue_checks": 16380,
+        "suffix_relative_offset_checks": 843,
+        "three_piece_splits": 2730
+      },
+      "exit_code": 0,
+      "path": "research/killed-green-head-closure-20261124/two-end-bridge/controls.js",
+      "published_receipt_matched": true,
+      "source_sha256": "c18aa8f71b0e8d89fee107857cbbb2fd6fb7164c49af870b0a13db765455be0a"
+    }
+  ],
+  "independent_simple_path_constants": {
+    "log_slack": true,
+    "rho_lower": true,
+    "rho_upper": true,
+    "sigma_below_rho": true
+  },
+  "node_version": "v24.22.3",
+  "published_input_head": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+  "python_version": "3.12.14",
+  "scope": "Finite exact arithmetic only; not an analytic or global Collatz proof."
+}

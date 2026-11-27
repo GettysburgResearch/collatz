@@ -1,0 +1,134 @@
+{
+  "scope": "finite affine and cylinder checks only",
+  "maximum_checked_excess": 12,
+  "rows": [
+    {
+      "depth": 1,
+      "scripts": 2,
+      "checked_competitors": 14,
+      "maximum_truncated_relative_mass": "5461/4096",
+      "affine_shells_sha256": "be7a60ae26c7ca5ec417680c99b77afe334f8b66088d3652980508c526379b33"
+    },
+    {
+      "depth": 2,
+      "scripts": 3,
+      "checked_competitors": 55,
+      "maximum_truncated_relative_mass": "8319/4096",
+      "affine_shells_sha256": "e249bbace51c17b2b687ebd00f3e3cf8ae758885ef5f20e50ba7debec8eafadc"
+    },
+    {
+      "depth": 3,
+      "scripts": 5,
+      "checked_competitors": 176,
+      "maximum_truncated_relative_mass": "8623/4096",
+      "affine_shells_sha256": "4de18c867b6d5a25a5bc7dfadf2da88b7d15988c59eb50abfd4a9273832d49b2"
+    },
+    {
+      "depth": 4,
+      "scripts": 8,
+      "checked_competitors": 457,
+      "maximum_truncated_relative_mass": "1249/512",
+      "affine_shells_sha256": "a855842601fcc3e9dc0132d700533e7efe0a01e195e75d49c783b8ca423610f4"
+    },
+    {
+      "depth": 5,
+      "scripts": 13,
+      "checked_competitors": 1064,
+      "maximum_truncated_relative_mass": "10141/4096",
+      "affine_shells_sha256": "f79b080b75efd3a22aa607bce131f1a1910e46b3c8e63d2f93bd31c8cc2f3640"
+    },
+    {
+      "depth": 6,
+      "scripts": 21,
+      "checked_competitors": 2289,
+      "maximum_truncated_relative_mass": "11219/4096",
+      "affine_shells_sha256": "a9523a93f6f6c5a9846f0c0d53cd0e509664010cb08b90d8d1f2740586c83506"
+    },
+    {
+      "depth": 7,
+      "scripts": 34,
+      "checked_competitors": 4647,
+      "maximum_truncated_relative_mass": "1419/512",
+      "affine_shells_sha256": "d7cff5be8fb8c2095b00d15e3ca6209e4b32813c985ba5c2d3d235b0a844d133"
+    },
+    {
+      "depth": 8,
+      "scripts": 55,
+      "checked_competitors": 8976,
+      "maximum_truncated_relative_mass": "12179/4096",
+      "affine_shells_sha256": "6c40a1b57f21e967b78ff0c95b666ddc3b01cc4633a43d0e23aaae86cd77573f"
+    }
+  ],
+  "exceptional_odd_cylinder_counts": [
+    [
+      4,
+      1,
+      8
+    ],
+    [
+      5,
+      2,
+      16
+    ],
+    [
+      6,
+      2,
+      32
+    ],
+    [
+      7,
+      2,
+      64
+    ],
+    [
+      8,
+      14,
+      128
+    ],
+    [
+      9,
+      28,
+      256
+    ],
+    [
+      10,
+      32,
+      512
+    ],
+    [
+      11,
+      36,
+      1024
+    ],
+    [
+      12,
+      184,
+      2048
+    ],
+    [
+      13,
+      368,
+      4096
+    ],
+    [
+      14,
+      448,
+      8192
+    ],
+    [
+      15,
+      536,
+      16384
+    ],
+    [
+      16,
+      2392,
+      32768
+    ],
+    [
+      17,
+      4784,
+      65536
+    ]
+  ]
+}

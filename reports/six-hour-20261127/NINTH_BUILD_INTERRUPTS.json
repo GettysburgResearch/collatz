@@ -1,0 +1,87 @@
+{
+  "scope": "Two root process kills, with no Lean diagnostic; successful separate agent source build is archived. Cause not determined by these receipts.",
+  "attempts": [
+    {
+      "receipt_path": "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-replay/receipt.json",
+      "repo_head": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "passed_modules": [
+        "research/unconventional-20261126/CoreBranching.lean",
+        "research/six-hour-20261127/coupling/PeakRigidity.lean",
+        "research/six-hour-20261127/coupling/FloorCounting.lean",
+        "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+        "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/ReverseBasin.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/DirectedEleven.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/UnitResidueExchange.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/NonunitExit.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/TwoOddCertificate.lean"
+      ],
+      "failed_module": {
+        "path": "research/six-hour-20261127/coupling/pr197-floor/QuantitativeReturn.lean",
+        "source_sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+        "command": [
+          "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+          "-DwarningAsError=true",
+          "-o",
+          "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-replay/build/QuantitativeReturn.olean",
+          "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/pr197-floor/QuantitativeReturn.lean"
+        ],
+        "exit_code": -9,
+        "elapsed_seconds": 401.712,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "declarations": {}
+      },
+      "diagnostics": ""
+    },
+    {
+      "receipt_path": "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-final-replay/receipt.json",
+      "repo_head": "860a67dedc860adcd82b964958d91b9e21d610f1",
+      "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "passed_modules": [
+        "research/unconventional-20261126/CoreBranching.lean",
+        "research/six-hour-20261127/coupling/PeakRigidity.lean",
+        "research/six-hour-20261127/coupling/FloorCounting.lean",
+        "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+        "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/ReverseBasin.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/DirectedEleven.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/UnitResidueExchange.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/NonunitExit.lean",
+        "research/six-hour-20261127/coupling/pr197-floor/TwoOddCertificate.lean"
+      ],
+      "failed_module": {
+        "path": "research/six-hour-20261127/coupling/pr197-floor/QuantitativeReturn.lean",
+        "source_sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07",
+        "command": [
+          "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+          "-j1",
+          "-DwarningAsError=true",
+          "-o",
+          "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-final-replay/build/QuantitativeReturn.olean",
+          "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/pr197-floor/QuantitativeReturn.lean"
+        ],
+        "exit_code": -9,
+        "elapsed_seconds": 127.977,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "declarations": {}
+      },
+      "diagnostics": ""
+    }
+  ],
+  "deliberate_interruption": {
+    "receipt_path": "/workspace/scratch/ad48b85f0ea2/sixhour-ninth-verified-replay/receipt.json",
+    "process_exit_code": 130,
+    "reason": "Root intentionally stopped this attempt to disable asynchronous elaboration before the final replay.",
+    "completed_modules": [
+      "research/unconventional-20261126/CoreBranching.lean",
+      "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "research/six-hour-20261127/coupling/pr197-floor/ReverseBasin.lean"
+    ]
+  }
+}

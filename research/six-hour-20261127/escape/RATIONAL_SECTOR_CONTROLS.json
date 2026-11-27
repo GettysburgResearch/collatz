@@ -1,0 +1,177 @@
+{
+  "scope": "finite source and word populations; no infinite survivor search",
+  "censuses": [
+    {
+      "j": 1,
+      "n": 8,
+      "source_denominator": 243,
+      "Q": 256,
+      "accepted_words_by_excess": {
+        "0": 7,
+        "1": 12,
+        "2": 6,
+        "3": 1
+      },
+      "reduced_sources": 52,
+      "distinct_endpoint_excess_pairs": 19,
+      "max_C_by_excess": {
+        "0": 319,
+        "1": 1085,
+        "2": 2903,
+        "3": 6305
+      },
+      "max_endpoint_by_excess": {
+        "0": 4,
+        "1": 14,
+        "2": 38,
+        "3": 107
+      },
+      "conditional_numerators": {
+        "0": 52,
+        "1": 45,
+        "4": 27,
+        "8": 25,
+        "16": 2,
+        "32": 2,
+        "64": 1,
+        "128": 0,
+        "256": 0
+      }
+    },
+    {
+      "j": 2,
+      "n": 16,
+      "source_denominator": 59049,
+      "Q": 65536,
+      "accepted_words_by_excess": {
+        "0": 525,
+        "1": 1045,
+        "2": 772,
+        "3": 327,
+        "4": 88,
+        "5": 14,
+        "6": 1
+      },
+      "reduced_sources": 5544,
+      "distinct_endpoint_excess_pairs": 111,
+      "max_C_by_excess": {
+        "0": 159181,
+        "1": 510311,
+        "2": 1440821,
+        "3": 3707039,
+        "4": 8732765,
+        "5": 20660663,
+        "6": 42981185
+      },
+      "max_endpoint_by_excess": {
+        "0": 5,
+        "1": 17,
+        "2": 49,
+        "3": 134,
+        "4": 404,
+        "5": 971,
+        "6": 2915
+      },
+      "conditional_numerators": {
+        "0": 5544,
+        "1": 5179,
+        "4": 3795,
+        "8": 3321,
+        "16": 767,
+        "32": 537,
+        "64": 289,
+        "128": 0,
+        "256": 0
+      }
+    },
+    {
+      "j": 3,
+      "n": 24,
+      "source_denominator": 14348907,
+      "Q": 16777216,
+      "accepted_words_by_excess": {
+        "0": 58040,
+        "1": 121977,
+        "2": 102815,
+        "3": 55785,
+        "4": 22341,
+        "5": 6706,
+        "6": 1479,
+        "7": 228,
+        "8": 22,
+        "9": 1
+      },
+      "reduced_sources": 738788,
+      "distinct_endpoint_excess_pairs": 684,
+      "max_C_by_excess": {
+        "0": 59586967,
+        "1": 187149509,
+        "2": 538379855,
+        "3": 1457591021,
+        "4": 3761354951,
+        "5": 9866431061,
+        "6": 24735087359,
+        "7": 57708875645,
+        "8": 135967814423,
+        "9": 282412759265
+      },
+      "max_endpoint_by_excess": {
+        "0": 6,
+        "1": 20,
+        "2": 62,
+        "3": 161,
+        "4": 476,
+        "5": 1336,
+        "6": 3644,
+        "7": 10934,
+        "8": 28430,
+        "9": 78731
+      },
+      "conditional_numerators": {
+        "0": 738788,
+        "1": 700733,
+        "4": 540038,
+        "8": 461753,
+        "16": 157389,
+        "32": 98305,
+        "64": 52811,
+        "128": 0,
+        "256": 0
+      }
+    }
+  ],
+  "long_target_controls": [
+    {
+      "target": 1023,
+      "j": 350,
+      "landing_clock": 2791,
+      "gate_credit": 45,
+      "source_numerator_bits": 2801,
+      "source_denominator_bits": 2774,
+      "normalized_numerator_floor_times_1024": 1977,
+      "actual_reduced_denominator": true
+    },
+    {
+      "target": 1024,
+      "j": 350,
+      "landing_clock": 2790,
+      "gate_credit": 50,
+      "source_numerator_bits": 2800,
+      "source_denominator_bits": 2774,
+      "normalized_numerator_floor_times_1024": 987,
+      "actual_reduced_denominator": true
+    },
+    {
+      "target": 1025,
+      "j": 350,
+      "landing_clock": 2790,
+      "gate_credit": 50,
+      "source_numerator_bits": 2800,
+      "source_denominator_bits": 2774,
+      "normalized_numerator_floor_times_1024": 988,
+      "actual_reduced_denominator": true
+    }
+  ],
+  "verified_range_tail_upper": "614497042962573409317744/9094947017729282379150390625",
+  "max_endpoint_for_excess_41": 1057716894937952805687
+}

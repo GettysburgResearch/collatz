@@ -1,0 +1,96 @@
+{
+  "root_progression": [
+    2,
+    3
+  ],
+  "leaves": 140,
+  "leaf_mass_within_odd_inputs": [
+    1,
+    1
+  ],
+  "leaves_by_number_of_directed_charges": {
+    "0": 40,
+    "1": 42,
+    "2": 19,
+    "3": 22,
+    "4": 7,
+    "5": 1,
+    "6": 6,
+    "7": 2,
+    "8": 1
+  },
+  "leaves_by_tree_depth": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 13,
+    "10": 22,
+    "11": 17,
+    "12": 6,
+    "13": 8,
+    "14": 9,
+    "15": 12,
+    "16": 8,
+    "17": 11,
+    "18": 6,
+    "19": 7,
+    "20": 2
+  },
+  "total_charge_positions": 237,
+  "max_word_blocks": 64,
+  "max_individual_ordinary_clock": 10,
+  "largest_charge_to_original": [
+    24,
+    1
+  ],
+  "maximizing_original_affine_row": [
+    5038848,
+    1215655
+  ],
+  "maximizing_charged_affine_row": [
+    120932352,
+    29175697
+  ],
+  "literal_input_check": {
+    "first": 3,
+    "last": 20001,
+    "stride": 2,
+    "inputs": 10000
+  },
+  "binary_defect_factor": 24,
+  "pr197_from16_factor": 8388608,
+  "new_global_canonical_factor": 201326592,
+  "previous_global_factor": 1099511627776,
+  "upstream_pr197_commit": "1f0f496fbea37792439feada6106eaaff596bcd1",
+  "upstream_sources": {
+    "ReverseBasin.lean": {
+      "path": "research/ayh-resource-reset-20261124/directed-return/vendor/ReverseBasin.lean",
+      "sha256": "633af7b92dc57e2296036d4d3e2a71d74b16207ed7e23a325c11c301be5cdf65"
+    },
+    "TwoOddCertificate.lean": {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/TwoOddCertificate.lean",
+      "sha256": "2b5770fa878514a304fe6f6d9fa87152515bdf57612319e0f8d7a805fef55cda"
+    },
+    "DirectedEleven.lean": {
+      "path": "research/ayh-resource-reset-20261124/directed-return/DirectedEleven.lean",
+      "sha256": "7527fb54500831c6cebac3376a3195984d4f414c3df97241a7aa48f91225b677"
+    },
+    "UnitResidueExchange.lean": {
+      "path": "research/ayh-resource-reset-20261124/unit-exit/UnitResidueExchange.lean",
+      "sha256": "fb2c73495ee942286568deac0fc44fc94151bde3a3451dc2f60ff927d04aebb8"
+    },
+    "NonunitExit.lean": {
+      "path": "research/ayh-resource-reset-20261124/unit-exit/NonunitExit.lean",
+      "sha256": "0c4e82f09326eacbf9c4517215129d4ac087934474b73cdc42c220b3a75039d0"
+    },
+    "QuantitativeReturn.lean": {
+      "path": "research/ayh-resource-reset-20261124/closing-proposal/QuantitativeReturn.lean",
+      "sha256": "29385e0b50688db4a09ada4175fdd9a8b335e1a4c1191c112c31fa68e23f7e07"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "script": "research/infinity-20261127/arithmetic/check_full_denominator.py",
+    "expected": "research/infinity-20261127/arithmetic/FULL_DENOMINATOR_CONTROLS.json",
+    "local_imports": [
+      "research/infinity-20261127/arithmetic/check_pell_returns.py"
+    ]
+  },
+  {
+    "script": "research/infinity-20261127/coupling/check_upper_clock.py",
+    "expected": "research/infinity-20261127/coupling/UPPER_CLOCK_CONTROLS.json",
+    "local_imports": []
+  }
+]

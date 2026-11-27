@@ -1,0 +1,156 @@
+{
+  "graph": {
+    "first_doubling_offsets": {
+      "1": {
+        "attachment": 5,
+        "branch": 1
+      },
+      "2": {
+        "attachment": 4,
+        "branch": 0
+      },
+      "4": {
+        "attachment": 3,
+        "branch": 1
+      },
+      "5": {
+        "attachment": 0,
+        "branch": 2
+      },
+      "7": {
+        "attachment": 1,
+        "branch": 3
+      },
+      "8": {
+        "attachment": 2,
+        "branch": 0
+      }
+    },
+    "unit_inverse_levels": [
+      {
+        "depth": 4,
+        "maximum": 6,
+        "minimum": 2,
+        "modulus": 243,
+        "roots": 162
+      },
+      {
+        "depth": 5,
+        "maximum": 8,
+        "minimum": 2,
+        "modulus": 729,
+        "roots": 486
+      },
+      {
+        "depth": 6,
+        "maximum": 10,
+        "minimum": 3,
+        "modulus": 2187,
+        "roots": 1458
+      },
+      {
+        "depth": 7,
+        "maximum": 14,
+        "minimum": 4,
+        "modulus": 6561,
+        "roots": 4374
+      },
+      {
+        "depth": 8,
+        "maximum": 18,
+        "minimum": 5,
+        "modulus": 19683,
+        "roots": 13122
+      }
+    ]
+  },
+  "green_dyadic_exponent": {
+    "cylinders": 1458,
+    "exponent_denominator": 1000000,
+    "exponent_lower": 387648,
+    "exponent_upper": 387892,
+    "fixed_point_scale": 1000000000,
+    "h_max_upper": 846944473,
+    "h_min_lower": 672118826,
+    "height_supervector": {
+      "even_upper_numerator": 1308251578800,
+      "exponent_denominator": 25000,
+      "exponent_numerator": 9691,
+      "iterations": 972,
+      "max_weight": 1379275763162,
+      "min_weight": 1000000000000,
+      "odd_upper_numerator": 854554930666,
+      "rational_multiplier_denominator": 1000000000000,
+      "row_count": 1458
+    },
+    "iterations_at_most": 80,
+    "modulus": 2187,
+    "oscillation_supervectors": {
+      "sum_lambda": "29/25",
+      "total": {
+        "max_ratio_ceiling_ppm": 999702,
+        "normalized_rounds": 160,
+        "rows": 1458
+      },
+      "uniform": {
+        "max_ratio_ceiling_ppm": 989946,
+        "normalized_rounds": 160,
+        "rows": 1458
+      },
+      "uniform_q": "19/40"
+    },
+    "widest_h_cell": 1596871
+  },
+  "half_line": {
+    "decaying_root": "1/2",
+    "internal_equations": 22,
+    "z": "1/2"
+  },
+  "ordinary_ball_copies": [
+    {
+      "copied_root_bit_length": 194030,
+      "modulus": 6,
+      "prefix_steps": 6,
+      "radius": 4,
+      "source": 27,
+      "target_power_of_two": 194031,
+      "vertices": 15
+    },
+    {
+      "copied_root_bit_length": 6831,
+      "modulus": 12,
+      "prefix_steps": 6,
+      "radius": 3,
+      "source": 45,
+      "target_power_of_two": 6829,
+      "vertices": 9
+    },
+    {
+      "copied_root_bit_length": 2228,
+      "modulus": 18,
+      "prefix_steps": 4,
+      "radius": 2,
+      "source": 19,
+      "target_power_of_two": 2227,
+      "vertices": 7
+    },
+    {
+      "copied_root_bit_length": 60,
+      "modulus": 4,
+      "prefix_steps": 5,
+      "radius": 2,
+      "source": 40,
+      "target_power_of_two": 56,
+      "vertices": 7
+    },
+    {
+      "copied_root_bit_length": 20258,
+      "modulus": 9,
+      "prefix_steps": 4,
+      "radius": 3,
+      "source": 7,
+      "target_power_of_two": 20258,
+      "vertices": 12
+    }
+  ]
+}

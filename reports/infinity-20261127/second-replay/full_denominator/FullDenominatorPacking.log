@@ -1,0 +1,7 @@
+'Collatz.FullDenominatorPacking.taggedQuotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FullDenominatorPacking.quotientUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FullDenominatorPacking.normalizedReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FullDenominatorPacking.oddNormalizedNorm' depends on axioms: [propext, Quot.sound]
+'Collatz.FullDenominatorPacking.cubicLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.FullDenominatorPacking.cubesModNine' depends on axioms: [propext]
+'Collatz.FullDenominatorPacking.cubicRankFloor' depends on axioms: [propext]

@@ -1,0 +1,17 @@
+{
+  "status": "executed exact BigInt finite controls",
+  "base_commit": "b68cf8f0fd565c4bb2151afc3ce7668f8801770d",
+  "checks": {
+    "candidate_words": 120632,
+    "legal_unit_paths": 132,
+    "three_piece_splits": 2730,
+    "mixed_residue_checks": 16380,
+    "marked_prefix_lift_checks": 616,
+    "central_clock_weight_checks": 8190,
+    "suffix_relative_offset_checks": 843
+  },
+  "lean_compiled": false,
+  "independent_review": false,
+  "full_checkout_validated": false,
+  "notes": "Finite ordinary arithmetic only; F, R, S and all asymptotic conclusions not certified."
+}

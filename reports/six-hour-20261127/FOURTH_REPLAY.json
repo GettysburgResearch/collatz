@@ -1,0 +1,1668 @@
+{
+  "scope": "Root fresh Lean arithmetic kernels and seven exact deterministic controls; written infinite arguments separately reviewed",
+  "parent_commit": "093e75d9fc31294b42519339be3b601ad7e37d42",
+  "all_listed_checks_passed": true,
+  "new_declaration_audits": 30,
+  "dependency_declaration_audits": 31,
+  "total_declaration_audits": 61,
+  "control_count": 7,
+  "assembly_note": "Successful full dependency group and original five controls, plus independently completed minimum and global supplements. The initial missing-PaidCheckpoint setup attempt is excluded and disclosed in ROOT_FOURTH_REVIEW.md. Individual successful rows are unchanged.",
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.258,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.321,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.548,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/PaidCheckpoint.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.064,
+      "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+      "declarations": {
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/DelayedTurns.lean",
+      "source_sha256": "3c349bae3d33bc5ac1acb4b7040ae76580a34a18131f67414ab397300f378771",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/DelayedTurns.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedTurns.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 35.737,
+      "output_sha256": "624ea7dcde4555ae7e59d34c2a7ccd03118ceea5bcf1e9db5cb943535409e929",
+      "declarations": {
+        "DelayedTurns.long_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.paid_delayed_merger": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/EarlierOffsets.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.48,
+      "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+      "declarations": {
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/OffsetFour.lean",
+      "source_sha256": "bd82e9d4d5fa257dd5e8d7dc1ae1b65be139d44a3a75a2348b2a5f4ccfc9c4e7",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/OffsetFour.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/OffsetFour.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.695,
+      "output_sha256": "14a601165f2355d62986a9a21c03abcb68c00f33e65c4908a4ad2ad7ad7f08ab",
+      "declarations": {
+        "OffsetFour.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OffsetFour.paid_chart": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OffsetFour.earlier_good_delayed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/DelayedUnit.lean",
+      "source_sha256": "63f083a18a4866f9da6b3bed0b7ecf944f29e35bd9a9f93f929e6ac0aad34759",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/DelayedUnit.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedUnit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.711,
+      "output_sha256": "876a506d50b2d1dc9323c663fd6ba92f76c8ba4fe6604802026afb93034b633c",
+      "declarations": {
+        "DelayedUnit.unit_factor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "DelayedUnit.unit_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "DelayedUnit.unit_stable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "DelayedUnit.actual_sources": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedUnit.all_earlier_of_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/CompletionOrder.lean",
+      "source_sha256": "f0349ed21fe99003e25d8fb5ffd834fa07845342ba3e9ec81a7f3da6819e53d6",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CompletionOrder.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/CompletionOrder.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.534,
+      "output_sha256": "a49ca96ed9360d3b50deff2548c9860a21b3877eb3cdd5f7a42fe5a06a62429e",
+      "declarations": {
+        "SixHour.CompletionOrder.node_mono": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SixHour.CompletionOrder.periodic_slopes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CompletionOrder.correction_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/CRTAddress.lean",
+      "source_sha256": "6d5ccc815a2381fd5fc00251830621e16185cab2315dc2aba6d5f160de9c5396",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CRTAddress.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/CRTAddress.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.673,
+      "output_sha256": "ca6496125c875d94f00ffda3322640f5fb4c30eef2b11664976f769b78cf8acb",
+      "declarations": {
+        "SixHour.CRTAddress.address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SixHour.CRTAddress.word_rounding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.CRTAddress.centered_peak": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/SafeDiagonal.lean",
+      "source_sha256": "5a539471cecc3d3e0d4e5991e603a2d68cb9ccba347daeb73f665c2231c35189",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/SafeDiagonal.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/SafeDiagonal.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.685,
+      "output_sha256": "ed988239784b44fcecd9311fea8b5636385858981ba2c5e526d9bb863b08750a",
+      "declarations": {
+        "EscapeSafeDiagonal.a_domain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.b_domain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.a_range": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.b_range": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.word_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.finite_source_compactness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.half_height_at_jump": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeSafeDiagonal.parameter_stabilizes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/MinimumCensus.lean",
+      "source_sha256": "ca8964b8b8e45611617c60953973c1038c5cd861c8fedef9ae14e6c717192051",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-minimum/build/MinimumCensus.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/MinimumCensus.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 57.357,
+      "output_sha256": "f1103b156e7bbd5d74aeefad55d0725815fd55e4119987b84ce5603cc870134f",
+      "declarations": {
+        "SixHour.MinimumCensus.only_two_runs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SixHour.MinimumCensus.orbit_stays": []
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/HarmonicBirth.lean",
+      "source_sha256": "9cd780b5a0be2331331d9996c372ad3f7c1e096b43e98ad2e1af139b097d80d1",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-global/build/HarmonicBirth.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/HarmonicBirth.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.795,
+      "output_sha256": "8a20fbbb00689ef5588b0c565d41063a32e3b356e866a443ccfb79fb47e8b908",
+      "declarations": {
+        "EscapeHarmonicBirth.sibling_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.exact_reserve_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.augmented_monotone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.centered_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeHarmonicBirth.minimum_gate_comparison": [
+          "propext"
+        ],
+        "EscapeHarmonicBirth.rational_chernoff_comparison": [
+          "propext"
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/coupling/check_offset_four.py",
+      "source_sha256": "bf830d9f4fac7e3b77d8033717e8a64d56df91eb4adf044c16bd344a29a54abc",
+      "expected": "research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json",
+      "expected_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_offset_four.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.069,
+          "stdout_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_offset_four.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.247,
+          "stdout_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_delayed_unit.py",
+      "source_sha256": "3b9ba76c06d562c660944684be2d7651a6d7e879a3a802879138bd6b1bb2ec21",
+      "expected": "research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json",
+      "expected_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_unit.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.106,
+          "stdout_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_unit.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.352,
+          "stdout_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_completions.py",
+      "source_sha256": "40051628a7a167ff02c11e6604f39e71bbebf2e88930e13abf4fd45b740a5da1",
+      "expected": "research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json",
+      "expected_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_completions.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.457,
+          "stdout_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_completions.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.349,
+          "stdout_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_crt_histograms.py",
+      "source_sha256": "36b6117dadd75335b43c647f7c13ecef827a558d29ba8a7e243eb857b207f8b6",
+      "expected": "research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json",
+      "expected_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_crt_histograms.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.784,
+          "stdout_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_crt_histograms.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.141,
+          "stdout_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_safe_diagonal.py",
+      "source_sha256": "e5f4648d34d8cfb6bafafae8896090293a42e31f25b03202f37c542f8b96a9f4",
+      "expected": "research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json",
+      "expected_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_safe_diagonal.py",
+            "--ternary-depth",
+            "42"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.048,
+          "stdout_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_safe_diagonal.py",
+            "--ternary-depth",
+            "42"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.393,
+          "stdout_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_minimum_census.py",
+      "source_sha256": "2421baf042ad0856a782e3f6832142cd8f653123d2379b538afce0f726261a53",
+      "expected": "research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json",
+      "expected_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_minimum_census.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 22.885,
+          "stdout_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_minimum_census.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.896,
+          "stdout_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_global_prefix.py",
+      "source_sha256": "8207c48a33c573c487369e6866961a69440ed9e048c4cfb2fb279039ca659151",
+      "expected": "research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json",
+      "expected_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_global_prefix.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.26,
+          "stdout_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_global_prefix.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.309,
+          "stdout_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "successful_execution_groups": [
+    {
+      "directory": "sixhour-fourth-lean-complete",
+      "receipt_sha256": "aca1fb5827eb72e00da3031a2ee6b8373a1864f2cb585162dce6fcb5d9863082",
+      "receipt": {
+        "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+        "repo_head_at_start": "093e75d9fc31294b42519339be3b601ad7e37d42",
+        "repo_tree_at_start": "13ccd7fde8f140e334bc265b066a1c1fefb3c3bb",
+        "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp",
+        "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+        "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+        "dependency_revisions": {
+          "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+          "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+        },
+        "extra_input_sha256": {
+          "research/six-hour-20261127/coupling/check_offsets.py": "4ddb317b4d9632f37563464fd67ef9a41040e1d16c77388535480c446f3e42ff",
+          "research/six-hour-20261127/arithmetic/check_period_gap.py": "f502fa6e2365b636c4e3f155f12448ecc0e802e8d85a6825d30e2e84b06aefcb",
+          "research/six-hour-20261127/arithmetic/PERIOD_CONTROLS.json": "3678bc0d2f44231652e1a117dc6e064fae31c3c040ccaa5c8de82ed990c01bfa",
+          "research/six-hour-20261127/escape/safe_diagonal.cpp": "0e78672b7c31b0239e73160da86a212cfb063f750cbbfee7e578eb04e6ca2159"
+        },
+        "lean": [
+          {
+            "path": "research/unconventional-20261126/CoreBranching.lean",
+            "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CoreBranching.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 3.258,
+            "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+            "declarations": {
+              "CoreBranching.step_double": [
+                "propext"
+              ],
+              "CoreBranching.step_odd": [
+                "propext",
+                "Quot.sound"
+              ],
+              "CoreBranching.run_add": [
+                "propext"
+              ],
+              "CoreBranching.four_double": [
+                "propext",
+                "Quot.sound"
+              ],
+              "CoreBranching.six_rows": [
+                "propext",
+                "Quot.sound"
+              ],
+              "CoreBranching.alternate_properties": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.child_properties": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.child_injective_bit": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.ancestor_unit": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.ancestor_clock": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.ancestor_height": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "CoreBranching.ancestor_injective_at_depth": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+            "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/PeakRigidity.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 3.321,
+            "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+            "declarations": {
+              "PeakRigidity.shifted": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "PeakRigidity.meeting_grade": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "PeakRigidity.postpeak_rigidity": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "PeakRigidity.prepeak_disjoint": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+            "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/FloorCounting.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCounting.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 2.548,
+            "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+            "declarations": {
+              "FloorCounting.sharp": [
+                "propext",
+                "Quot.sound"
+              ],
+              "FloorCounting.bits_injective": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "FloorCounting.native_word": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "FloorCounting.visit_bound": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+            "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/PaidCheckpoint.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 2.064,
+            "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+            "declarations": {
+              "PaidCheckpoint.positive_turns": [
+                "propext",
+                "Quot.sound"
+              ],
+              "PaidCheckpoint.seed_paths": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "PaidCheckpoint.delayed_address": [
+                "propext",
+                "Quot.sound"
+              ],
+              "PaidCheckpoint.paid_parent": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/DelayedTurns.lean",
+            "source_sha256": "3c349bae3d33bc5ac1acb4b7040ae76580a34a18131f67414ab397300f378771",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/DelayedTurns.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedTurns.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 35.737,
+            "output_sha256": "624ea7dcde4555ae7e59d34c2a7ccd03118ceea5bcf1e9db5cb943535409e929",
+            "declarations": {
+              "DelayedTurns.long_turns": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "DelayedTurns.earlier_after_turns": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "DelayedTurns.paid_delayed_merger": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+            "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/EarlierOffsets.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 6.48,
+            "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+            "declarations": {
+              "EarlierOffsets.even_index": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EarlierOffsets.actual_decrease": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EarlierOffsets.earlier_good": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EarlierOffsets.gap_five_return": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/OffsetFour.lean",
+            "source_sha256": "bd82e9d4d5fa257dd5e8d7dc1ae1b65be139d44a3a75a2348b2a5f4ccfc9c4e7",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/OffsetFour.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/OffsetFour.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 5.695,
+            "output_sha256": "14a601165f2355d62986a9a21c03abcb68c00f33e65c4908a4ad2ad7ad7f08ab",
+            "declarations": {
+              "OffsetFour.earlier_after_turns": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "OffsetFour.paid_chart": [
+                "propext",
+                "Quot.sound"
+              ],
+              "OffsetFour.earlier_good_delayed": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/coupling/DelayedUnit.lean",
+            "source_sha256": "63f083a18a4866f9da6b3bed0b7ecf944f29e35bd9a9f93f929e6ac0aad34759",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/DelayedUnit.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedUnit.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 2.711,
+            "output_sha256": "876a506d50b2d1dc9323c663fd6ba92f76c8ba4fe6604802026afb93034b633c",
+            "declarations": {
+              "DelayedUnit.unit_factor": [
+                "propext",
+                "Quot.sound"
+              ],
+              "DelayedUnit.unit_odd": [
+                "propext",
+                "Quot.sound"
+              ],
+              "DelayedUnit.unit_stable": [
+                "propext",
+                "Quot.sound"
+              ],
+              "DelayedUnit.actual_sources": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "DelayedUnit.all_earlier_of_pair": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/arithmetic/CompletionOrder.lean",
+            "source_sha256": "f0349ed21fe99003e25d8fb5ffd834fa07845342ba3e9ec81a7f3da6819e53d6",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CompletionOrder.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/CompletionOrder.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 2.534,
+            "output_sha256": "a49ca96ed9360d3b50deff2548c9860a21b3877eb3cdd5f7a42fe5a06a62429e",
+            "declarations": {
+              "SixHour.CompletionOrder.node_mono": [
+                "propext",
+                "Quot.sound"
+              ],
+              "SixHour.CompletionOrder.periodic_slopes": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "SixHour.CompletionOrder.correction_cost": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/arithmetic/CRTAddress.lean",
+            "source_sha256": "6d5ccc815a2381fd5fc00251830621e16185cab2315dc2aba6d5f160de9c5396",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/CRTAddress.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/CRTAddress.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.673,
+            "output_sha256": "ca6496125c875d94f00ffda3322640f5fb4c30eef2b11664976f769b78cf8acb",
+            "declarations": {
+              "SixHour.CRTAddress.address": [
+                "propext",
+                "Quot.sound"
+              ],
+              "SixHour.CRTAddress.word_rounding": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "SixHour.CRTAddress.centered_peak": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          {
+            "path": "research/six-hour-20261127/escape/SafeDiagonal.lean",
+            "source_sha256": "5a539471cecc3d3e0d4e5991e603a2d68cb9ccba347daeb73f665c2231c35189",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-lean-complete/build/SafeDiagonal.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/SafeDiagonal.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.685,
+            "output_sha256": "ed988239784b44fcecd9311fea8b5636385858981ba2c5e526d9bb863b08750a",
+            "declarations": {
+              "EscapeSafeDiagonal.a_domain": [
+                "propext",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.b_domain": [
+                "propext",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.a_range": [
+                "propext",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.b_range": [
+                "propext",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.word_height": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.finite_source_compactness": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.half_height_at_jump": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeSafeDiagonal.parameter_stabilizes": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          }
+        ],
+        "controls": [],
+        "all_requested_checks_passed": true,
+        "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/MinimumCensus.lean\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp"
+      }
+    },
+    {
+      "directory": "sixhour-fourth-controls",
+      "receipt_sha256": "a6f2d9d8779cd5a3e5c442adac02249e1eae6694644c975257bd0e56c9c12d47",
+      "receipt": {
+        "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+        "repo_head_at_start": "093e75d9fc31294b42519339be3b601ad7e37d42",
+        "repo_tree_at_start": "13ccd7fde8f140e334bc265b066a1c1fefb3c3bb",
+        "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp",
+        "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+        "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+        "dependency_revisions": {
+          "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+          "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+        },
+        "extra_input_sha256": {
+          "research/six-hour-20261127/coupling/check_offsets.py": "4ddb317b4d9632f37563464fd67ef9a41040e1d16c77388535480c446f3e42ff",
+          "research/six-hour-20261127/arithmetic/check_period_gap.py": "f502fa6e2365b636c4e3f155f12448ecc0e802e8d85a6825d30e2e84b06aefcb",
+          "research/six-hour-20261127/arithmetic/PERIOD_CONTROLS.json": "3678bc0d2f44231652e1a117dc6e064fae31c3c040ccaa5c8de82ed990c01bfa",
+          "research/six-hour-20261127/escape/safe_diagonal.cpp": "0e78672b7c31b0239e73160da86a212cfb063f750cbbfee7e578eb04e6ca2159"
+        },
+        "lean": [],
+        "controls": [
+          {
+            "script": "research/six-hour-20261127/coupling/check_offset_four.py",
+            "source_sha256": "bf830d9f4fac7e3b77d8033717e8a64d56df91eb4adf044c16bd344a29a54abc",
+            "expected": "research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json",
+            "expected_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_offset_four.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.069,
+                "stdout_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_offset_four.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.247,
+                "stdout_sha256": "b0f54dfcccbefde06dd08418c3fb34a0bc2cead29c1f337b2f445db11943d436",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          },
+          {
+            "script": "research/six-hour-20261127/coupling/check_delayed_unit.py",
+            "source_sha256": "3b9ba76c06d562c660944684be2d7651a6d7e879a3a802879138bd6b1bb2ec21",
+            "expected": "research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json",
+            "expected_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_unit.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.106,
+                "stdout_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_unit.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.352,
+                "stdout_sha256": "4ac3efca0f2e8e81880d17076755e4ebb7d13faac97440a9e4d7a4506c631a39",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          },
+          {
+            "script": "research/six-hour-20261127/arithmetic/check_completions.py",
+            "source_sha256": "40051628a7a167ff02c11e6604f39e71bbebf2e88930e13abf4fd45b740a5da1",
+            "expected": "research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json",
+            "expected_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_completions.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 1.457,
+                "stdout_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_completions.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 1.349,
+                "stdout_sha256": "518e051dd7ff3420beb6555927e34d20946747b9af897451171ee97852a2482d",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          },
+          {
+            "script": "research/six-hour-20261127/arithmetic/check_crt_histograms.py",
+            "source_sha256": "36b6117dadd75335b43c647f7c13ecef827a558d29ba8a7e243eb857b207f8b6",
+            "expected": "research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json",
+            "expected_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_crt_histograms.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 2.784,
+                "stdout_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_crt_histograms.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 2.141,
+                "stdout_sha256": "d89cd70e724db99ff8f8fc0ce8b1d1964effd5ff278667540420ec9c9976f204",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          },
+          {
+            "script": "research/six-hour-20261127/escape/check_safe_diagonal.py",
+            "source_sha256": "e5f4648d34d8cfb6bafafae8896090293a42e31f25b03202f37c542f8b96a9f4",
+            "expected": "research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json",
+            "expected_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_safe_diagonal.py",
+                  "--ternary-depth",
+                  "42"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 21.048,
+                "stdout_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_safe_diagonal.py",
+                  "--ternary-depth",
+                  "42"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 21.393,
+                "stdout_sha256": "709f519d18ff7cb33a5bf0bba37e827cd356c7213e240397f9bf7c0e77733f27",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          }
+        ],
+        "all_requested_checks_passed": true,
+        "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp"
+      }
+    },
+    {
+      "directory": "sixhour-fourth-minimum",
+      "receipt_sha256": "12f2bbb26155415016a7cb1ec5be5ff8383257b03d650b92380536143bde7f00",
+      "receipt": {
+        "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+        "requested_group": "minimum",
+        "requested_kind": "all",
+        "repo_head_at_start": "093e75d9fc31294b42519339be3b601ad7e37d42",
+        "repo_tree_at_start": "13ccd7fde8f140e334bc265b066a1c1fefb3c3bb",
+        "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CENSUS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/MinimumCensus.lean\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md\n?? research/six-hour-20261127/escape/HarmonicBirth.lean\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp",
+        "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+        "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+        "dependency_revisions": {
+          "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+          "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+        },
+        "extra_input_sha256": {
+          "research/six-hour-20261127/coupling/check_offsets.py": "4ddb317b4d9632f37563464fd67ef9a41040e1d16c77388535480c446f3e42ff",
+          "research/six-hour-20261127/arithmetic/check_period_gap.py": "f502fa6e2365b636c4e3f155f12448ecc0e802e8d85a6825d30e2e84b06aefcb",
+          "research/six-hour-20261127/arithmetic/PERIOD_CONTROLS.json": "3678bc0d2f44231652e1a117dc6e064fae31c3c040ccaa5c8de82ed990c01bfa",
+          "research/six-hour-20261127/escape/safe_diagonal.cpp": "0e78672b7c31b0239e73160da86a212cfb063f750cbbfee7e578eb04e6ca2159"
+        },
+        "lean": [
+          {
+            "path": "research/six-hour-20261127/arithmetic/MinimumCensus.lean",
+            "source_sha256": "ca8964b8b8e45611617c60953973c1038c5cd861c8fedef9ae14e6c717192051",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-minimum/build/MinimumCensus.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/MinimumCensus.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 57.357,
+            "output_sha256": "f1103b156e7bbd5d74aeefad55d0725815fd55e4119987b84ce5603cc870134f",
+            "declarations": {
+              "SixHour.MinimumCensus.only_two_runs": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "SixHour.MinimumCensus.orbit_stays": []
+            }
+          }
+        ],
+        "controls": [
+          {
+            "script": "research/six-hour-20261127/arithmetic/check_minimum_census.py",
+            "source_sha256": "2421baf042ad0856a782e3f6832142cd8f653123d2379b538afce0f726261a53",
+            "expected": "research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json",
+            "expected_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_minimum_census.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 22.885,
+                "stdout_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_minimum_census.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 21.896,
+                "stdout_sha256": "1d634bd7cb0efb1e3555b790d96655f256756956e8cb7c6a3e044bcf39de9da3",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          }
+        ],
+        "all_requested_checks_passed": true,
+        "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CENSUS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/MinimumCensus.lean\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md\n?? research/six-hour-20261127/escape/HarmonicBirth.lean\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_global_prefix.py\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp"
+      }
+    },
+    {
+      "directory": "sixhour-fourth-global",
+      "receipt_sha256": "1cd37d08c9e754633edd4b79ff6a2c9bd19ddf21ae3595f2310dcb62654ae40b",
+      "receipt": {
+        "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+        "requested_group": "global",
+        "requested_kind": "all",
+        "repo_head_at_start": "093e75d9fc31294b42519339be3b601ad7e37d42",
+        "repo_tree_at_start": "13ccd7fde8f140e334bc265b066a1c1fefb3c3bb",
+        "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CENSUS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/MinimumCensus.lean\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_BATCH.md\n?? research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedBatch.lean\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/TernaryPump.lean\n?? research/six-hour-20261127/coupling/check_delayed_batch.py\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md\n?? research/six-hour-20261127/escape/HarmonicBirth.lean\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_global_prefix.py\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp",
+        "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+        "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+        "dependency_revisions": {
+          "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+          "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+        },
+        "extra_input_sha256": {
+          "research/six-hour-20261127/coupling/check_offsets.py": "4ddb317b4d9632f37563464fd67ef9a41040e1d16c77388535480c446f3e42ff",
+          "research/six-hour-20261127/arithmetic/check_period_gap.py": "f502fa6e2365b636c4e3f155f12448ecc0e802e8d85a6825d30e2e84b06aefcb",
+          "research/six-hour-20261127/arithmetic/PERIOD_CONTROLS.json": "3678bc0d2f44231652e1a117dc6e064fae31c3c040ccaa5c8de82ed990c01bfa",
+          "research/six-hour-20261127/escape/safe_diagonal.cpp": "0e78672b7c31b0239e73160da86a212cfb063f750cbbfee7e578eb04e6ca2159"
+        },
+        "lean": [
+          {
+            "path": "research/six-hour-20261127/escape/HarmonicBirth.lean",
+            "source_sha256": "9cd780b5a0be2331331d9996c372ad3f7c1e096b43e98ad2e1af139b097d80d1",
+            "command": [
+              "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+              "-DwarningAsError=true",
+              "-o",
+              "/workspace/scratch/ad48b85f0ea2/sixhour-fourth-global/build/HarmonicBirth.olean",
+              "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/HarmonicBirth.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.795,
+            "output_sha256": "8a20fbbb00689ef5588b0c565d41063a32e3b356e866a443ccfb79fb47e8b908",
+            "declarations": {
+              "EscapeHarmonicBirth.sibling_bounds": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeHarmonicBirth.exact_reserve_drift": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeHarmonicBirth.augmented_monotone": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeHarmonicBirth.centered_cutoff": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ],
+              "EscapeHarmonicBirth.minimum_gate_comparison": [
+                "propext"
+              ],
+              "EscapeHarmonicBirth.rational_chernoff_comparison": [
+                "propext"
+              ]
+            }
+          }
+        ],
+        "controls": [
+          {
+            "script": "research/six-hour-20261127/escape/check_global_prefix.py",
+            "source_sha256": "8207c48a33c573c487369e6866961a69440ed9e048c4cfb2fb279039ca659151",
+            "expected": "research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json",
+            "expected_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+            "runs": [
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_global_prefix.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.26,
+                "stdout_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              },
+              {
+                "command": [
+                  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+                  "-X",
+                  "utf8",
+                  "-B",
+                  "-O",
+                  "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_global_prefix.py"
+                ],
+                "exit_code": 0,
+                "elapsed_seconds": 0.309,
+                "stdout_sha256": "97dfe49ecacb310831d4ae136d2c1e6cbd4543df4904ed5a1a5915480ecfed91",
+                "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "complete_json_matches": true
+              }
+            ],
+            "normal_optimized_bytes_equal": true
+          }
+        ],
+        "all_requested_checks_passed": true,
+        "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_fourth.py\n?? research/six-hour-20261127/MELLIN_CANCELLATION.md\n?? research/six-hour-20261127/arithmetic/COMPLETION_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRTAddress.lean\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/CRT_PERIOD_EXCLUSION.md\n?? research/six-hour-20261127/arithmetic/CompletionOrder.lean\n?? research/six-hour-20261127/arithmetic/EXTREME_COMPLETIONS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CENSUS.md\n?? research/six-hour-20261127/arithmetic/MINIMUM_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/MinimumCensus.lean\n?? research/six-hour-20261127/arithmetic/check_completions.py\n?? research/six-hour-20261127/arithmetic/check_crt_histograms.py\n?? research/six-hour-20261127/arithmetic/check_minimum_census.py\n?? research/six-hour-20261127/coupling/DELAYED_BATCH.md\n?? research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DELAYED_UNIT.md\n?? research/six-hour-20261127/coupling/DELAYED_UNIT_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedBatch.lean\n?? research/six-hour-20261127/coupling/DelayedUnit.lean\n?? research/six-hour-20261127/coupling/OFFSET_FOUR.md\n?? research/six-hour-20261127/coupling/OFFSET_FOUR_CONTROLS.json\n?? research/six-hour-20261127/coupling/OffsetFour.lean\n?? research/six-hour-20261127/coupling/POST_VALUATION_WINDOW.md\n?? research/six-hour-20261127/coupling/TernaryPump.lean\n?? research/six-hour-20261127/coupling/check_delayed_batch.py\n?? research/six-hour-20261127/coupling/check_delayed_unit.py\n?? research/six-hour-20261127/coupling/check_offset_four.py\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_CONTROLS.json\n?? research/six-hour-20261127/escape/GLOBAL_PREFIX_TRACE.md\n?? research/six-hour-20261127/escape/HarmonicBirth.lean\n?? research/six-hour-20261127/escape/PRINCIPAL_SAFE_TRACE.md\n?? research/six-hour-20261127/escape/SAFE_DIAGONAL_CONTROLS.json\n?? research/six-hour-20261127/escape/SafeDiagonal.lean\n?? research/six-hour-20261127/escape/TWO_PLACE_DIAGONAL.md\n?? research/six-hour-20261127/escape/check_global_prefix.py\n?? research/six-hour-20261127/escape/check_safe_diagonal.py\n?? research/six-hour-20261127/escape/safe_diagonal.cpp"
+      }
+    }
+  ]
+}

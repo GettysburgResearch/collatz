@@ -1,0 +1,27 @@
+{
+  "pr": "https://github.com/GettysburgResearch/collatz/pull/201",
+  "branch": "gpt62/killed-green-head-closure-20261124",
+  "parent_head": "73a145ca99448a78219bd149e273f33b6e3fda4b",
+  "published_science_head": "1e19e9d1a6ca78649c516efc647259b069697ecb",
+  "published_science_tree": "c0c9ab919a1ec2b441caf1ebfaf5943713c6d55d",
+  "local_construction_head": "cbce7647fc7cdf665ed467430977d7492e6fc809",
+  "remote_branch_readback_confirmed": true,
+  "science_tree_matched_local": true,
+  "clean_complete_published_checkout": {
+    "commit": "1e19e9d1a6ca78649c516efc647259b069697ecb",
+    "tree": "c0c9ab919a1ec2b441caf1ebfaf5943713c6d55d",
+    "tracked_files": 363
+  },
+  "checkout_receipt_sha256": "a823178cb4c967228d5fe465bf35e4cb3ad044b59475e2d7abb798e5d822d454",
+  "source_manifest_sha256": "ab24ffe6738a348666934e630bf0f063a7ec7c8c467c25bd1c62f5060e32f313",
+  "source_bindings_checked": 32,
+  "lean_receipt_sha256": "d08f6621c59ff586fd0588fdcf7fe89991e3fb741eb3769fdc2069be1fb2b313",
+  "lean_processes_passed": 13,
+  "distinct_theorems": 46,
+  "new_theorems": 24,
+  "distinct_axiom_audited_declarations": 70,
+  "required_checkout_commands_passed": 5,
+  "optional_regressions_run": false,
+  "receipt_followup_scope": "Only this publication record and the published science checkout receipt; no scientific source or proof change.",
+  "mathematical_status": "Collatz OPEN; finite kernel proofs and separately reviewed written reductions, with explicit missing upper bound and directed implication."
+}

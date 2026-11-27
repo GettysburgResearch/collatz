@@ -1,0 +1,19 @@
+{
+  "status": "executed finite exact controls in JavaScript Code Mode",
+  "base_commit": "2978d84f8a1fda9083593b26c6bf724d5976d859",
+  "checks": {
+    "bands": 3,
+    "cells": 16,
+    "paths": 48,
+    "actual_shortcut_steps": 192000,
+    "band_separations": 3,
+    "carry_checks": 1023,
+    "central_identities": 456
+  },
+  "scope": "three sampled inverse tree choices per cell; finite all-odd climb, not a counterexample; central normalization algebra, not F",
+  "larger_initial_attempt": "timed out; not counted",
+  "lean_compiled": false,
+  "axiom_audited": false,
+  "independent_subagents": false,
+  "full_checkout_validated": false
+}

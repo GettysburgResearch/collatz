@@ -1,0 +1,7 @@
+'JointVisits.visits_comparable' depends on axioms: [propext, Quot.sound]
+'JointVisits.lower_run' depends on axioms: [propext, Quot.sound]
+'JointVisits.simultaneous_gate_clock' depends on axioms: [propext, Quot.sound]
+'JointVisits.joint_same_source' depends on axioms: [propext, Quot.sound]
+'JointVisits.incomparable_miss' depends on axioms: [propext, Quot.sound]
+'JointVisits.incomparable_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointVisits.canonical_113_control' depends on axioms: [propext, Quot.sound]

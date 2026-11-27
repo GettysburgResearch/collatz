@@ -1,0 +1,146 @@
+[
+  {
+    "J": 1000,
+    "K": 1871,
+    "P": 1324,
+    "dyadic_agreement_bits": 16,
+    "heads": [
+      {
+        "L": 235,
+        "M": 55
+      },
+      {
+        "L": 192,
+        "M": 227
+      }
+    ],
+    "middle_length": 1378,
+    "n": 2964,
+    "paired_source_digests": [
+      [
+        "20d18ce3bdae492c",
+        "a6cc6a8d087e58f6"
+      ],
+      [
+        "6525c6846617afe3",
+        "3054e34d5fe65efb"
+      ],
+      [
+        "fae54bab83691bee",
+        "626a6deaf92506e6"
+      ],
+      [
+        "a6de742254615e71",
+        "bc9c3cd116a02ec9"
+      ],
+      [
+        "3ec3220bd3b0285b",
+        "1e19738560c49236"
+      ]
+    ],
+    "phase_search": false,
+    "r": 3,
+    "real_distance_bits_floor": 260,
+    "targets": [
+      17,
+      51
+    ],
+    "translation_digest": "36c84e07bdc65d15"
+  },
+  {
+    "J": 1200,
+    "K": 1995,
+    "P": 1608,
+    "dyadic_agreement_bits": 8,
+    "heads": [
+      {
+        "L": 277,
+        "M": 87
+      },
+      {
+        "L": 217,
+        "M": 327
+      }
+    ],
+    "middle_length": 1258,
+    "n": 3161,
+    "paired_source_digests": [
+      [
+        "a3b88b01db9f58d0",
+        "69ca04d97bfad7ef"
+      ],
+      [
+        "7018f228aa9ef835",
+        "6f60c0e7a63041ea"
+      ],
+      [
+        "9bdb9bbfbaad4a7a",
+        "4c90e1ef279ff5d2"
+      ],
+      [
+        "2d224c3c7d895a13",
+        "a65022983a2a2e32"
+      ],
+      [
+        "4f0b86212a69c480",
+        "5fd1a7fc61936b4a"
+      ]
+    ],
+    "phase_search": true,
+    "r": 3,
+    "real_distance_bits_floor": 8,
+    "targets": [
+      17,
+      51
+    ],
+    "translation_digest": "99ad3659332e918d"
+  },
+  {
+    "J": 4600,
+    "K": 5320,
+    "P": 6934,
+    "dyadic_agreement_bits": 21,
+    "heads": [
+      {
+        "L": 958,
+        "M": 763
+      },
+      {
+        "L": 264,
+        "M": 3539
+      }
+    ],
+    "middle_length": 1139,
+    "n": 8431,
+    "paired_source_digests": [
+      [
+        "6b0e189ddc017532",
+        "bf5030ddef5d71e6"
+      ],
+      [
+        "931b0d2068cae4aa",
+        "c1a52daeac5ce61a"
+      ],
+      [
+        "e268dd583e6e711b",
+        "fd4aecd83a486766"
+      ],
+      [
+        "bd6b946325ba8c83",
+        "7ad80bb84fc20b0a"
+      ],
+      [
+        "e18f669b742f9094",
+        "7172c75a55e81038"
+      ]
+    ],
+    "phase_search": true,
+    "r": 3,
+    "real_distance_bits_floor": 3,
+    "targets": [
+      113,
+      509
+    ],
+    "translation_digest": "8aa77a808a7001ef"
+  }
+]

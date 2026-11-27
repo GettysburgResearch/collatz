@@ -1,0 +1,591 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "all",
+  "repo_head_at_start": "a577c1f19a00b8219dcde9744814813ddd636e66",
+  "repo_tree_at_start": "288f0dc645b969a50b36014eb5bdb43449a35c02",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_seventh.py\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md\n?? research/six-hour-20261127/arithmetic/TernaryPast.lean\n?? research/six-hour-20261127/arithmetic/check_anchor_carries.py\n?? research/six-hour-20261127/coupling/DeepFifteen.lean\n?? research/six-hour-20261127/coupling/NESTED_COVER.md\n?? research/six-hour-20261127/coupling/NESTED_COVER_CONTROLS.json\n?? research/six-hour-20261127/coupling/NestedCharts.lean\n?? research/six-hour-20261127/coupling/NestedCover.lean\n?? research/six-hour-20261127/coupling/VALUATION_COVER.md\n?? research/six-hour-20261127/coupling/VALUATION_COVER_CONTROLS.json\n?? research/six-hour-20261127/coupling/ValuationAddress.lean\n?? research/six-hour-20261127/coupling/ValuationCharts.lean\n?? research/six-hour-20261127/coupling/ValuationCover.lean\n?? research/six-hour-20261127/coupling/check_nested_cover.py\n?? research/six-hour-20261127/coupling/check_valuation_cover.py\n?? research/six-hour-20261127/escape/COMPARABLE_ANCESTORS.md\n?? research/six-hour-20261127/escape/COMPARABLE_CONTROLS.json\n?? research/six-hour-20261127/escape/ComparableAncestors.lean\n?? research/six-hour-20261127/escape/PROTECTED_COMPONENT_WINDOWS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_comparable_ancestors.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {
+    "research/six-hour-20261127/coupling/check_ternary_pump.py": "a267f66801a8bd62f45faafcbd26d925e3977445969b6b34fe6d6e460a0725bb"
+  },
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.49,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.214,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.518,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/PaidCheckpoint.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.067,
+      "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+      "declarations": {
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/EarlierOffsets.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.146,
+      "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+      "declarations": {
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/DeepFifteen.lean",
+      "source_sha256": "542a445982e7124c075dcde5dc6c2a85468a0d394c11ccf12efd3a4ad4184ad3",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/DeepFifteen.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DeepFifteen.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.33,
+      "output_sha256": "71023e18b76bad16e55c553b820e7d2bd6f0f9e7d55ccfb30a28c87fc4ce0810",
+      "declarations": {
+        "DeepFifteen.paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DeepFifteen.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/ValuationAddress.lean",
+      "source_sha256": "5c4537ba68cf5b510be28bcf79c47c085d62b26e5f9c57ace0e0a041daae5135",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/ValuationAddress.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/ValuationAddress.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.513,
+      "output_sha256": "b294614c706eb6ba54cfe40ad8b86346b31e940801ece7fb222dcc4d2f23d1a2",
+      "declarations": {
+        "ValuationAddress.power": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationAddress.root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/ValuationCharts.lean",
+      "source_sha256": "1de66bb162bf2200eb3f1498ce306ff9e19a7bb51aa8c5e5ec12851debbe130e",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/ValuationCharts.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/ValuationCharts.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.568,
+      "output_sha256": "6687ef3473805df2b4dfadde4fa29471507c00d6db835efcbf4629d6bc466039",
+      "declarations": {
+        "ValuationCharts.profile_spec": [
+          "propext"
+        ],
+        "ValuationCharts.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.physical": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.selectWith": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.terminal_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCharts.select": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ValuationCharts.row_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/ValuationCover.lean",
+      "source_sha256": "ab6dc4bfc156301716305d6a2339d6662da74ea8e423d2d341eb1218061e6881",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/ValuationCover.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/ValuationCover.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.723,
+      "output_sha256": "91ffd95219ded8e7fe68c491bb92165f1414e78689fb007df88d35df163aeb35",
+      "declarations": {
+        "ValuationCover.checked": [
+          "propext"
+        ],
+        "ValuationCover.address": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCover.witnesses": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ValuationCover.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/NestedCharts.lean",
+      "source_sha256": "a9b63ddf0734a9986f42ffdb2755f2f3382f93a8439507c1409807cdafe20e6e",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/NestedCharts.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/NestedCharts.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.598,
+      "output_sha256": "87a5808ca5c56069d3eb536653778bfda08e56fe1c58ac42ac05781ca8b1e4f5",
+      "declarations": {
+        "NestedCharts.physical": [
+          "propext",
+          "Quot.sound"
+        ],
+        "NestedCharts.sound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NestedCharts.original": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/NestedCover.lean",
+      "source_sha256": "f9d79dfd4bc23c93766dc765e3f1a722b9194c9c04770fc3c920604f7b29b623",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/NestedCover.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/NestedCover.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.379,
+      "output_sha256": "1a34c74ac620938e0d24e8ee80df4ed9ab83dc530808a4349a70486bfc1090d7",
+      "declarations": {
+        "NestedCover.checked": [
+          "propext"
+        ],
+        "NestedCover.address": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NestedCover.plan_exists": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "NestedCover.good_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/ComparableAncestors.lean",
+      "source_sha256": "51db54e07591bbe94bffb56abb2c50bdacf807256447881f132f2220176ef33d",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-seventh-replay/build/ComparableAncestors.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/ComparableAncestors.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.521,
+      "output_sha256": "549e83859100d81f5be87aa78b4c1e1e34391060d3fd7cbaedc0c1252662ed51",
+      "declarations": {
+        "EscapeComparableAncestors.union_image_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.terminal_stride": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.terminal_mass_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.crowded_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.shift_disagreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeComparableAncestors.unit_anchor_failure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/coupling/check_valuation_cover.py",
+      "source_sha256": "24541a699619f30a3de79fb7bfcce929170c5b811e6b37ee5d97b1d47e7dbdb9",
+      "expected": "research/six-hour-20261127/coupling/VALUATION_COVER_CONTROLS.json",
+      "expected_sha256": "875cddfb32a66bd475b48dd77aa3ede1564890392ab9ef400d88c51f3dbc89aa",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_valuation_cover.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.915,
+          "stdout_sha256": "875cddfb32a66bd475b48dd77aa3ede1564890392ab9ef400d88c51f3dbc89aa",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_valuation_cover.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.864,
+          "stdout_sha256": "875cddfb32a66bd475b48dd77aa3ede1564890392ab9ef400d88c51f3dbc89aa",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_nested_cover.py",
+      "source_sha256": "16829f6c821a9ad83169a4ebcf04b8f4c79c651d276e1eb0bccd5a77dd18baff",
+      "expected": "research/six-hour-20261127/coupling/NESTED_COVER_CONTROLS.json",
+      "expected_sha256": "4f141e7ec07cddeb9b4f422044ae1733dd12868b45e3616b50fc5ba0844a8a4c",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_nested_cover.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.677,
+          "stdout_sha256": "4f141e7ec07cddeb9b4f422044ae1733dd12868b45e3616b50fc5ba0844a8a4c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_nested_cover.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.57,
+          "stdout_sha256": "4f141e7ec07cddeb9b4f422044ae1733dd12868b45e3616b50fc5ba0844a8a4c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_comparable_ancestors.py",
+      "source_sha256": "655c4f8149cd6ea408378a97b843840d9a9890930022bc58f2c09df02e59a9f5",
+      "expected": "research/six-hour-20261127/escape/COMPARABLE_CONTROLS.json",
+      "expected_sha256": "6d53f9c350e6e42f62d663c9d803429387d731ba373615131aacae6539b4af34",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_comparable_ancestors.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.359,
+          "stdout_sha256": "6d53f9c350e6e42f62d663c9d803429387d731ba373615131aacae6539b4af34",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_comparable_ancestors.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.484,
+          "stdout_sha256": "6d53f9c350e6e42f62d663c9d803429387d731ba373615131aacae6539b4af34",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_seventh.py\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md\n?? research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/TernaryPast.lean\n?? research/six-hour-20261127/arithmetic/check_anchor_carries.py\n?? research/six-hour-20261127/coupling/DeepFifteen.lean\n?? research/six-hour-20261127/coupling/NESTED_COVER.md\n?? research/six-hour-20261127/coupling/NESTED_COVER_CONTROLS.json\n?? research/six-hour-20261127/coupling/NestedCharts.lean\n?? research/six-hour-20261127/coupling/NestedCover.lean\n?? research/six-hour-20261127/coupling/VALUATION_COVER.md\n?? research/six-hour-20261127/coupling/VALUATION_COVER_CONTROLS.json\n?? research/six-hour-20261127/coupling/ValuationAddress.lean\n?? research/six-hour-20261127/coupling/ValuationCharts.lean\n?? research/six-hour-20261127/coupling/ValuationCover.lean\n?? research/six-hour-20261127/coupling/check_nested_cover.py\n?? research/six-hour-20261127/coupling/check_valuation_cover.py\n?? research/six-hour-20261127/escape/COMPARABLE_ANCESTORS.md\n?? research/six-hour-20261127/escape/COMPARABLE_CONTROLS.json\n?? research/six-hour-20261127/escape/ComparableAncestors.lean\n?? research/six-hour-20261127/escape/PROTECTED_COMPONENT_WINDOWS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_comparable_ancestors.py"
+}

@@ -1,0 +1,106 @@
+{
+  "maximum_odd_context": 22,
+  "retained_affine_states": 2649,
+  "explored_native_prefixes": 42651,
+  "forbidden_contexts": 584,
+  "contexts_sha256": "95798892ab4aa100a6c0bc412a51b2f6bf804ee9077846eb85be1edc07e039d9",
+  "actual_ordinary_two_lift_checks": 1168,
+  "minimized_veto_states": 786,
+  "anchor_length": "1/400",
+  "fixed_point_scale": 281474976710656,
+  "weights": [
+    2,
+    5,
+    20
+  ],
+  "literal_toy_matrices": [
+    [
+      10,
+      20,
+      1,
+      8,
+      16,
+      1,
+      10,
+      20,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      4,
+      0,
+      0,
+      19
+    ]
+  ],
+  "returns": [
+    {
+      "length": 306,
+      "word_sha256": "f6b101de5824e312637d79d9845377c97edb18535852929d04cb2262b2156716",
+      "normalized_integer_upper_matrix": [
+        [
+          4908745741694,
+          28771639589853,
+          15566067091703
+        ],
+        [
+          12242129955895,
+          71754816688093,
+          38820877300908
+        ],
+        [
+          50564824664235,
+          296375690955191,
+          160345533055360
+        ]
+      ]
+    },
+    {
+      "length": 359,
+      "word_sha256": "3f78aae09ed91abcf376992536fa0b098785bb45ff347042320f127297e2f4f4",
+      "normalized_integer_upper_matrix": [
+        [
+          4667738914883,
+          27359025874765,
+          14801813119268
+        ],
+        [
+          11641072686805,
+          68231838716621,
+          36914871518334
+        ],
+        [
+          48082220925234,
+          281824401528550,
+          152472976935298
+        ]
+      ]
+    },
+    {
+      "length": 665,
+      "word_sha256": "1cc258c61abf9c8eedaf48c5f7fa98fae4b373777f498bf2f262094438eb899b",
+      "normalized_integer_upper_matrix": [
+        [
+          3443339460108,
+          20182451313179,
+          10919134112155
+        ],
+        [
+          8587490353334,
+          50333871503839,
+          27231691754546
+        ],
+        [
+          35469720774734,
+          207898733407810,
+          112477622990382
+        ]
+      ]
+    }
+  ],
+  "strict_log3_energy_exponent": "9999/10000"
+}

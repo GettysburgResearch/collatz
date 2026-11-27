@@ -1,0 +1,7 @@
+'OldHeadBudget.nontrivial_lap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.first_failure_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.cleared_later' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.first_failure_after_clearance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.after_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.first_failure_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadBudget.terminal_test' depends on axioms: [propext, Classical.choice, Quot.sound]

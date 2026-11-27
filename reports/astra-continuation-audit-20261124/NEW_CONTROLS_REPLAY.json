@@ -1,0 +1,103 @@
+{
+  "python_version": "3.12.14",
+  "replays": [
+    {
+      "ast_assert_nodes": 0,
+      "checks": {
+        "large_literal_rows": [
+          {
+            "clock": 104,
+            "distinct_sources": 16,
+            "odd_depth": 52,
+            "ternary_digits": 1,
+            "tree_depth": 3
+          },
+          {
+            "clock": 210,
+            "distinct_sources": 384,
+            "odd_depth": 105,
+            "ternary_digits": 2,
+            "tree_depth": 6
+          },
+          {
+            "clock": 294,
+            "distinct_sources": 3072,
+            "odd_depth": 147,
+            "ternary_digits": 2,
+            "tree_depth": 9
+          },
+          {
+            "clock": 448,
+            "distinct_sources": 36864,
+            "odd_depth": 224,
+            "ternary_digits": 3,
+            "tree_depth": 11
+          }
+        ],
+        "literal_padded_sources": 40336,
+        "sharp_cutoff_failures_expected": 3,
+        "small_row_comparisons": 480,
+        "small_row_sources": 64,
+        "two_gap_cases": 6760
+      },
+      "identical_outputs": true,
+      "normal_exit": 0,
+      "optimized_exit": 0,
+      "output_sha256": "b24581bff08881816697cf0fad6159052288a8e70ed28dc21e1300232606e517",
+      "sources_sha256": {
+        "research/killed-green-head-closure-20261124/escape-analysis/controls.py": "91c7fa2f2ee92a82e536867a12ffdc91c9bd4f48ba9010f0a23706d9400ad9f0"
+      }
+    },
+    {
+      "ast_assert_nodes": 0,
+      "checks": [
+        {
+          "dictionary_words": 261,
+          "forward_query_positions": 2325,
+          "full_progression_leaves": 948,
+          "longest_word": 63,
+          "maximum_modulus": 17915904,
+          "maximum_query_to_input": "26406895/30563",
+          "minimum_query_to_input": "27145/732923",
+          "residue_modulo_6": 1,
+          "shortest_example_from_multiple_of_three": [
+            13,
+            1728,
+            219,
+            "tthAthhiDDiDi"
+          ],
+          "total_path_letters": 35627,
+          "tree_nodes": 1606
+        },
+        {
+          "dictionary_words": 312,
+          "forward_query_positions": 2701,
+          "full_progression_leaves": 1263,
+          "longest_word": 62,
+          "maximum_modulus": 71663616,
+          "maximum_query_to_input": "4614215/6759",
+          "minimum_query_to_input": "65/4167",
+          "residue_modulo_6": 5,
+          "shortest_example_from_multiple_of_three": [
+            9,
+            144,
+            63,
+            "tAthhiDDi"
+          ],
+          "total_path_letters": 49015,
+          "tree_nodes": 2130
+        }
+      ],
+      "identical_outputs": true,
+      "normal_exit": 0,
+      "optimized_exit": 0,
+      "output_sha256": "62ffc3064da23d7f504507270ba3916c9a7922fd30bf511fbd12cdf6e3615516",
+      "sources_sha256": {
+        "research/killed-green-head-closure-20261124/global-bridge/check.py": "8b7e4e0f8b11d1499ba1954c077007aade3228e4239eddd888167645fb7bc27c",
+        "research/killed-green-head-closure-20261124/global-bridge/cover1.txt": "03fe44cd5c3d01e2a89b7ce6f5c95d6456e9c5526cc43d7e4de26e0e6deb96e0",
+        "research/killed-green-head-closure-20261124/global-bridge/cover5.txt": "062bc68e7dc2e34b24a0aa2e155a6ffc7b832b2bf6d6b0d228cba3d1ab283815"
+      }
+    }
+  ],
+  "scope": "Exact finite arithmetic, not a proof of the missing universal upper bound."
+}

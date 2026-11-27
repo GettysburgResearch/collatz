@@ -1,0 +1,4 @@
+'UpperClock.affine' depends on axioms: [propext, Quot.sound]
+'UpperClock.word_extension' depends on axioms: [propext, Quot.sound]
+'UpperClock.canonical_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UpperClock.shorter_forces_half' depends on axioms: [propext, Classical.choice, Quot.sound]

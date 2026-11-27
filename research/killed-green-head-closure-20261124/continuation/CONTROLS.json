@@ -1,0 +1,30 @@
+{
+  "status": "executed finite exact BigInt controls; written proofs proposed",
+  "runtime": "JavaScript Code Mode",
+  "result": {
+    "prefixes": 8188,
+    "edges": 40962,
+    "budgets": 8166,
+    "largeBudget": 7854,
+    "reconstructions": 40962,
+    "variations": 256,
+    "exact_constant_certificates": 6,
+    "scalar_cache_entries": 6509
+  },
+  "lean": {
+    "compiled": false,
+    "axiom_audit": false,
+    "reason": "No lean/lake executable or elan toolchain in local environment"
+  },
+  "full_checkout_validated": false,
+  "independent_review": false,
+  "sources": {
+    "PR201": "3c9e444e3f2f2e457b25cd827dc9a29f981e9de2",
+    "PR197": "9ab91d964b38fc870d1034bac628d62f59488467",
+    "PR146": "f431078244e868dc699fad011044f0d5e7f76437",
+    "PR194": "b1bf1f151a2da8936f80d229f132d0b7539ba42c",
+    "PR182": "f94a2ae1caba9a1857feda892ee1779695eea9d2",
+    "PR193": "ebeec2cda24b1deafff17cb2a9ce6e1bed7d9784",
+    "PR200": "39918be724038ac550d77c7fc95d17e05251dfc6"
+  }
+}

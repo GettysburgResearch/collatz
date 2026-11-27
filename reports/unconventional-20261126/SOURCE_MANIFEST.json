@@ -1,0 +1,762 @@
+{
+  "scope": "Complete continuation sources, reports, and the two owned baseline navigation/correction files; manifest excludes itself",
+  "starting_pr_head": "94ce06ccbd312ccd0ce4450b567cc514a2f0b54a",
+  "published_checkpoint": "3eb251fae9082fef33c047079a511d1c3f4c5969",
+  "files": [
+    {
+      "path": "reports/unconventional-20261126/BASELINE_CONTROLS.json",
+      "bytes": 2707,
+      "sha256": "e587a6c5a6cf1d06ba06e740ec5385a8e26bfe20dfbd77b50465eb77d0560dc1"
+    },
+    {
+      "path": "reports/unconventional-20261126/BASELINE_LEAN.json",
+      "bytes": 5844,
+      "sha256": "3f44fc243258e32d162da1c938c57d3ab1b8adca515b7e4fc1cbac8e4c2e21a0"
+    },
+    {
+      "path": "reports/unconventional-20261126/BASELINE_VALIDATION.json",
+      "bytes": 3266,
+      "sha256": "282384663c420d368e312870e2313a654c026c8441ffc3833269559fd237d349"
+    },
+    {
+      "path": "reports/unconventional-20261126/CHECKPOINT_PUBLICATION.json",
+      "bytes": 846,
+      "sha256": "b89909e7bcf979fa31c122fd30d0c4d233cbc46b3931f439a41770824bf2a853"
+    },
+    {
+      "path": "reports/unconventional-20261126/CHECKPOINT_VALIDATION.json",
+      "bytes": 3266,
+      "sha256": "dc1357718af3470178ac5b89f018a82c3f03eff1d0f6e827182440431b6050e3"
+    },
+    {
+      "path": "reports/unconventional-20261126/ERRATUM.md",
+      "bytes": 1907,
+      "sha256": "648fb3e835963175cf2f092756f8a5bf028f0a14d71e6388582b97f6c799da03"
+    },
+    {
+      "path": "reports/unconventional-20261126/FINAL_REVIEW.md",
+      "bytes": 18186,
+      "sha256": "6ce16532f5c8a765c94f9778fe3203010ad6eb8b6d445cdbb32025ed0f33ff4d"
+    },
+    {
+      "path": "reports/unconventional-20261126/FINAL_SOURCE_CHECK.json",
+      "bytes": 4448,
+      "sha256": "72af70510a1b8895169712e24d15b9f36b83957a00b5bdde8767347b173e0ca4"
+    },
+    {
+      "path": "reports/unconventional-20261126/GATE_REPLAY.json",
+      "bytes": 1480,
+      "sha256": "8c6c258217ac07797a1fd4760a648e01ec2cafe2c81ccb6eb1421d4ba42f9678"
+    },
+    {
+      "path": "reports/unconventional-20261126/ORDER_LEAN_REPLAY.json",
+      "bytes": 3500,
+      "sha256": "79a728d2ba3f4773385ef96505c2b662d57d813d9c80a12cbfb797d41449465e"
+    },
+    {
+      "path": "reports/unconventional-20261126/ORDER_REPLAY.json",
+      "bytes": 1655,
+      "sha256": "29eea2bb8d40b8b07a13650249499010865e7280cc24d8d987179c202e567f34"
+    },
+    {
+      "path": "reports/unconventional-20261126/PREVIOUS_PR.json",
+      "bytes": 14935,
+      "sha256": "3c6fbd7ccb8ea3536507133241bf80f4169e4da3eb56e9e5b5ed7112afabc344"
+    },
+    {
+      "path": "reports/unconventional-20261126/README.md",
+      "bytes": 7907,
+      "sha256": "0833821e75c3e41f7c7b4ec535dc86fd3d141aa47cbd8f911b98ed2c0ffb118c"
+    },
+    {
+      "path": "reports/unconventional-20261126/REPLAY_RECEIPT.json",
+      "bytes": 25831,
+      "sha256": "b0f58a8814741902ea96083c4ab446041de5cb381f644ba930b89d5a1f46bc7b"
+    },
+    {
+      "path": "reports/unconventional-20261126/ROOT_REVIEW.md",
+      "bytes": 14210,
+      "sha256": "590ec2a359301cf369a584c066796a88e849ea579fd153e50a7f7a0f30d19104"
+    },
+    {
+      "path": "reports/unconventional-20261126/SOURCE_INTAKE.json",
+      "bytes": 7689,
+      "sha256": "a29f7216ee7b3f192ae1dd60a97f8e16382995e8922e51650a83fdbe4b0bb47f"
+    },
+    {
+      "path": "reports/unconventional-20261126/TRAPPING_LEAN_REPLAY.json",
+      "bytes": 17050,
+      "sha256": "382cd7fb1050fc51c3c2a0f8d8110cd5cc53233e671f9037fbfa7fcb2160194f"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/AlignedCycles.log",
+      "bytes": 303,
+      "sha256": "f1da44576d898a8589cd51cbe0d2d301c0e4f1cba60322d6cb4929611c58e7b1"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/CoprimeCancellation.log",
+      "bytes": 347,
+      "sha256": "44fc98da5e24371c42a4b59e6d3c8f06bc85c1aaa58f568c7c21e65868623c1e"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/CoreBranching.log",
+      "bytes": 967,
+      "sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/FinalProposal.log",
+      "bytes": 478,
+      "sha256": "6cf1a9b839ad30602f8026d888a28bead9360b521d7838b784eb82da09424f5d"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/FiniteExit.log",
+      "bytes": 640,
+      "sha256": "1fcbde7001258eb2d8eb5e4898b61688f3817aadff3972180eb660ada0c4f8b0"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/HybridRoot.log",
+      "bytes": 180,
+      "sha256": "bd0558dcbdcb0ae55ae33a257023d5e10dba6526f6a13af23c61fba6dabe2fc7"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/OrderReversals.log",
+      "bytes": 273,
+      "sha256": "ddee0db7d0b8835cd4b6cc88f37217f8036cce85ee1bf698092c8686abaf5c2e"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/PatchRigidity.log",
+      "bytes": 246,
+      "sha256": "2e76ef82b1086c3de5335fd8fdf95cac045a895a56620c8f329ed6375c7aabbc"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/PeriodicWindows.log",
+      "bytes": 448,
+      "sha256": "28e6d7b8720426de573ac219a0ecbcf8922a4fdb256a0b2136c958e4c8bf7ace"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/PhysicalShadow.log",
+      "bytes": 615,
+      "sha256": "68268a78f641dc6b34b7c8de6395ff57fc605c1e96ff5825905baecd902e4e09"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/PrimitiveTracks.log",
+      "bytes": 283,
+      "sha256": "706e821032c1366228535d0643a3350bb0fa53c7489eb602f7f20bc90278a6bb"
+    },
+    {
+      "path": "reports/unconventional-20261126/lean-logs/RenewalArithmetic.log",
+      "bytes": 430,
+      "sha256": "b9e796e366f521e39cd47af46493339aed366e0044958c3062fd0dd779e2cbbc"
+    },
+    {
+      "path": "reports/unconventional-20261126/replay.py",
+      "bytes": 8932,
+      "sha256": "8832784ae3b6b99a563228893a129509cd724202b07e5a92d44181b7ff9af049"
+    },
+    {
+      "path": "reports/unconventional-20261126/verify_manifest.py",
+      "bytes": 717,
+      "sha256": "493f76e24698c0f25482df56ed62da9a49d3f09d25e9176b5ce02b931148d844"
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/FINITE_CLOSURE.md",
+      "bytes": 8572,
+      "sha256": "aa6d3753f49b64238107058cb357d16a150e62085d57a4b6ba324877d742c6fb"
+    },
+    {
+      "path": "research/killed-green-head-closure-20261124/record-renewal/README.md",
+      "bytes": 28334,
+      "sha256": "4d9e9853204dc7ed54e695cf6383c3f5ac3e84f493c8e7d6d0f20cbdc23b0077"
+    },
+    {
+      "path": "research/unconventional-20261126/AlignedCycles.lean",
+      "bytes": 3075,
+      "sha256": "de0c0d1834c254aaefdd5b9f7897d94e419a6d77c36d4d8cfd012eb21fbef25f"
+    },
+    {
+      "path": "research/unconventional-20261126/CLOSING_AUDIT.md",
+      "bytes": 8345,
+      "sha256": "f3fd299cde3847b010afddbcbd3c6ac4c24660f789a2ec2bee505df305ca9ce8"
+    },
+    {
+      "path": "research/unconventional-20261126/CoprimeCancellation.lean",
+      "bytes": 2382,
+      "sha256": "7073e4ed0679c6d031608775860412af072728dfa08e660169a56b97f1c40b57"
+    },
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "bytes": 7152,
+      "sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05"
+    },
+    {
+      "path": "research/unconventional-20261126/FINAL_PROPOSAL.md",
+      "bytes": 7098,
+      "sha256": "5dda00e220fc934dd99e5907c3608cd2e2f43196e315e33e0e4a133d5a8c0a2b"
+    },
+    {
+      "path": "research/unconventional-20261126/FinalProposal.lean",
+      "bytes": 2375,
+      "sha256": "585a101642a3e7b3f1dff925827c0fea51d3fe379a653e1fd5a7af8669c0718a"
+    },
+    {
+      "path": "research/unconventional-20261126/FiniteExit.lean",
+      "bytes": 3531,
+      "sha256": "f1b7d6fc3de17d5ed9aa4f87801c0f44c5be8b782b8bd0134d3261ad00ab82f2"
+    },
+    {
+      "path": "research/unconventional-20261126/PhysicalShadow.lean",
+      "bytes": 3525,
+      "sha256": "994cd7c29d53b090fc0f4ebf303c97856eaa8c19ba75188f7ff132da06910bfe"
+    },
+    {
+      "path": "research/unconventional-20261126/README.md",
+      "bytes": 22941,
+      "sha256": "63c438544eb04828e34ac9cdd05f0fe4a70c47eba1a85e932258d1c6cae43a7c"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/COHERENT_CONTROLS.json",
+      "bytes": 1490,
+      "sha256": "921ebe2e8b4bd03ff40c772f8adf5ecf599ceac49bcadc3c208a20017eb7bf12"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/COHERENT_SWITCHES.md",
+      "bytes": 15175,
+      "sha256": "2fb70576cb865169e86eaceaed46f7b6f066ca86acc8931c7b665e9851d44767"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/CONTRACTING_REVERSAL.md",
+      "bytes": 2771,
+      "sha256": "aaa8a8384ed0790b502531dbd9562fb46b6f71df87f8eb00c9dc7e91e5a8e60c"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/CONTROLS.json",
+      "bytes": 272,
+      "sha256": "b1de55a2254d8c53ad7c9fc2d84679b07293d774c5a6895e0e4cb739103823e6"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/CYCLE_CONTROLS.json",
+      "bytes": 1051,
+      "sha256": "710f3b8aa0024b296e4b76883ad72eecc5240a808ba111fede0a47b41074038c"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/CYCLE_INDEX.md",
+      "bytes": 18165,
+      "sha256": "2fa0db4b7221dd782f4e28cd9c548a1c045092600061bb6c93e4e51fbf0fe1ec"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/DYADIC_CYCLE_CONTROLS.md",
+      "bytes": 4715,
+      "sha256": "c8e0a110a8ccdec8b933887bc5f37316029d2c918e7adff8e96709758df4ae5f"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/DYADIC_CYCLE_ORDER.md",
+      "bytes": 6093,
+      "sha256": "75d634920ffef0d37f7589833d85ecbebe0044b9e36e0d33f96deab8f3c7b915"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/FIXED_SOURCE_TOPOLOGY.md",
+      "bytes": 6833,
+      "sha256": "97720745ee0e42520c29c3a194c9e18433416d09dd1170cb583242f23ec8aec0"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/LEVEL_FRONTS.md",
+      "bytes": 8784,
+      "sha256": "e1eaca725e3fddf110313ef0e4729b0f58178aa03373a27dc28361e1a9587386"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/ORDER_CONTROLS.json",
+      "bytes": 1713,
+      "sha256": "c374eb305aed4dbc838ca552d77b49c8788e426a12727bf993d2bf1a7bbcf48e"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/ORDER_REVERSALS.md",
+      "bytes": 10808,
+      "sha256": "f3f219255ba0587203cffe12a689c087c1c19722db02f7e92858f7985c49ac34"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/OrderReversals.lean",
+      "bytes": 1677,
+      "sha256": "bcda52040991362840141b410728417381c95e1faab1adcbffc7f0d9e3754631"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PRIMITIVE_CONTROLS.json",
+      "bytes": 1498,
+      "sha256": "96427e335040d44e73ff8380724536567615bb7d49014d3e3ab6fb018000f043"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PRIMITIVE_PRESSURE.md",
+      "bytes": 8691,
+      "sha256": "c533c36aad9c50abdd0190d06f0010440d1bc908a38bf5bd597429fd4d7b2031"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PatchRigidity.lean",
+      "bytes": 2503,
+      "sha256": "3f1335773792ee9dc16538d66fb679276cb434bd903e73f2afbbd39a7849792e"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PeriodicWindows.lean",
+      "bytes": 5018,
+      "sha256": "34a2c97678731e2bf933655c623f18e5c92c9a400789faf41bc1a85869d2efb7"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/PrimitiveTracks.lean",
+      "bytes": 2451,
+      "sha256": "118bce73149b91ca88b63c858786d8e280b63870c2541daf3e23855f4570a892"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/README.md",
+      "bytes": 30144,
+      "sha256": "329a824a5f8fada4c7d989d145c32fa2ee34039075692165816f5ec7fb9eff1f"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_ANNULAR_TRANSPLANT.md",
+      "bytes": 3278,
+      "sha256": "1c84cfbe03d0ccc3be10fee566e300ab16b275df49faacb87f5f5ed618f9968a"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_CYCLE_COFACTORS.md",
+      "bytes": 1232,
+      "sha256": "378e4d7e4a9f5d9c5a344ed33609a4a19e3cfc95d3dfa82f24252e10add22eb5"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_MONOTONE_RECORDS.md",
+      "bytes": 3766,
+      "sha256": "ed46dfefccaf9c75edf26b27fbac21684328a1ece7e9140f68347e24d68fcf07"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_OPERATOR_SECOND.md",
+      "bytes": 11950,
+      "sha256": "2db3ea66cf2ff6704a55b7e5d00f1993df43564161e94665d604a100cd1c00e5"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_POLYNOMIAL_COFACTORS.md",
+      "bytes": 3139,
+      "sha256": "f721355f098de221b88b5f0e5ec0ee69305df02e9c0d0a3c39363ebedeadd41b"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_RATIONAL_DIAGONAL.md",
+      "bytes": 3894,
+      "sha256": "b61b0d0d598619bf29394317d4b193a68daa8dbacbce02382b79957022d2947f"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_RENEWAL.md",
+      "bytes": 9134,
+      "sha256": "86f81bbeab45c4c6dd747a680fbcbce527001abf0ce070783cbd15cac950ccc2"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_RENEWAL_PRESSURE.md",
+      "bytes": 7359,
+      "sha256": "35d20d544058856298a1d8af2e223abb353c156f76e47f1ffa8968bc4aa454d4"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/REVIEW_SHIFTED_COFACTORS.md",
+      "bytes": 3639,
+      "sha256": "a5b7eabe2f8a279f10d84de57d68f30c29be5e21907384573292f36fdbcb187b"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/coherent_controls.py",
+      "bytes": 5608,
+      "sha256": "021f58b8b0a4622b219a00fb6729fb7b7960acd0ddddf7d867024da34b5aef57"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/controls.py",
+      "bytes": 6472,
+      "sha256": "3cb50a0d8fbb2eb684fddd30b0d7a799e45a74fc948e680eca60cfafd2f670b2"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/cycle_controls.py",
+      "bytes": 6249,
+      "sha256": "9eed79ed97b4bdf6621dc2bc91f46aef537bdbfff68d4ec7e577e925d7c7cb2b"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/order_controls.py",
+      "bytes": 5875,
+      "sha256": "b9ddab394c144d8a1f0c48b79a418c2d80e84bfa97800d784cbb483c3386ad7a"
+    },
+    {
+      "path": "research/unconventional-20261126/adelic/primitive_controls.py",
+      "bytes": 3762,
+      "sha256": "d5463207873704057e1c198ddaaa39dc5ce09f01409ac4d81ecf583475324a27"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/ANNULAR_TRANSPLANT.md",
+      "bytes": 7260,
+      "sha256": "910c93932d200fb1c1514088c008f8f76285962616c919a7a9fd9fdb2fc3b09f"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/CONTROLS.json",
+      "bytes": 3261,
+      "sha256": "77a752c7969ee0b3311fc8b051e9c73558d611f4130dd9912acf62319f5c28a4"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/CORE_HEAT.md",
+      "bytes": 8600,
+      "sha256": "4c858682a8ab270d937b02f6036819cd6ba0936986e14e2abbff325d89c87d99"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/ESCAPE_SHIFT.md",
+      "bytes": 6398,
+      "sha256": "2e3ca27630c6da2ca99d2594cf4da35ffa18ddec63c67381fa00cbd0e88268ce"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/EXIT_GATES.md",
+      "bytes": 7141,
+      "sha256": "a5fc2c44d8e33ad808c7fe5e9b9dae14918df5f28f0f8792051d7bd3f058963e"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/GATE_ARITHMETIC.md",
+      "bytes": 9750,
+      "sha256": "0c2c0e70ec194484a806158ce7ae046ed26ba32b7bd99c39c66e01620e19198d"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/GATE_CONTROLS.json",
+      "bytes": 5118,
+      "sha256": "f52485e74a1b8ad9ecaee31641592f093b3e6bade44302f3779800381f156d01"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/GATE_LOWER.md",
+      "bytes": 3114,
+      "sha256": "51c7131e3afbcb7d67bcf28a1bb2e7c0fb844ff8929d1023e8b49a451da7b433"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/GATE_SUSPENSION.md",
+      "bytes": 8304,
+      "sha256": "aa703d7a73d3e51341c37f1a614613813749b03eee31b89c051b679cf7454609"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/GROWING_PRIME_POOLS.md",
+      "bytes": 6963,
+      "sha256": "fdde266803da529be1a6ebe48afb38bcfafba0f438a72990b8502a6cd990a42d"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/HEIGHT.md",
+      "bytes": 9399,
+      "sha256": "f3a48e9fe0ecbfb5ba1fb920ac64bf0639570b1ab9adec5fafe57ad39798af92"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/HYBRID_CONTROLS.json",
+      "bytes": 2086,
+      "sha256": "b0de5caab19950b7f777c32e5616ac100a6bdf412c566c338c8d32378dee24c5"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/HYBRID_DESCENT.md",
+      "bytes": 5657,
+      "sha256": "37a5d08f5f37b9a80ed12503573e123b2e10d6abdde488612add6039444ed34c"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/HybridRoot.lean",
+      "bytes": 2863,
+      "sha256": "70ddc9a79528d3864e41360026cb02de20b5f2e85e4685e4a99ec8d818e20d51"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/IMPEDANCE.md",
+      "bytes": 13258,
+      "sha256": "b7984a940c641f3b67fb7ae327a8ba665b1c65f689d0dbecf17f949b0abaa8a9"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/LOCAL_SPECTRUM.md",
+      "bytes": 10863,
+      "sha256": "18d958621d9065518ca00dffe4d45d3b15789bca7a55c7f3e5825154f174f22e"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/MIXED_EIGENSTATES.md",
+      "bytes": 6792,
+      "sha256": "f956d7efedb3d45b36f9d8d233d35925aa7785d1662cebd379862c04d5340cae"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/POSITIVE_REALIZATION.md",
+      "bytes": 5827,
+      "sha256": "29dea646155e1ed9570743237fb5b875c8ffd7a246e02d8a83182ce0eece5de0"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/README.md",
+      "bytes": 6175,
+      "sha256": "71f77ee9f75ded59003559a6fca484fc152fb99091afe169bdb4ad0d9b244602"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REGULAR_OCCUPATION.md",
+      "bytes": 9811,
+      "sha256": "016949d85c512c229043fbe7be50188deb140b84c15d01cc72315845e720ba43"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_ADELIC.md",
+      "bytes": 9089,
+      "sha256": "3bf326675595e0b394786342560960a7f9908fad3fc7f34ee01cd550669032ac"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_COHERENT_SWITCHES.md",
+      "bytes": 6869,
+      "sha256": "c0c77152ca6c41d3d71b9869d12697bc05d57ff2cfd26ec3055c2ff2fb83aba7"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_CRITICAL_ENDPOINT.md",
+      "bytes": 2569,
+      "sha256": "0b5d3f082897b11f149a29282315c2303288d2a92da881b4f02e13cc3c54b643"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_ENTROPY_FIBERS.md",
+      "bytes": 4622,
+      "sha256": "d5d6268ca91e9a07ece55ef0f6c11b140301e46659d03e7dedf1f1a04d8caa65"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_GATE_PROXIMITY.md",
+      "bytes": 2732,
+      "sha256": "0ebc4313623a68053c5a567776e31624e33e206dc29e5189d3487c8051280acc"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_INCOMING_GAUGE.md",
+      "bytes": 3333,
+      "sha256": "8cbb1743e582ccb6e6ffb5c87544a7e62284cb75dfc43cf6d21d91fbbaf16635"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_LOG_HEIGHT_MODEL.md",
+      "bytes": 3168,
+      "sha256": "7c0a7070d52ecfcb85563a9e82bfea83a761df993f5ecc05a1e605d37a2cbc28"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_RATIONAL_DIAGONAL.md",
+      "bytes": 3188,
+      "sha256": "533e3fc3d9828d23240315b7880ad48e6b4d89dff0f28490cf5499d7a837993f"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_SHARP_GAUGE.md",
+      "bytes": 5349,
+      "sha256": "b9f18bb0a1df834348fa197dae9324006626a1f483d66da8d85738995738e7b6"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/REVIEW_SHIFTED_COFACTORS.md",
+      "bytes": 4355,
+      "sha256": "9d220b9f6a74c740054594964d53da757e1fd53e76ea46db83810d89feaeef97"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/ROUGH_LOG_GATES.md",
+      "bytes": 7991,
+      "sha256": "119009343083c886caa5e465c08c9bcce47aa13dff76772ca0afa25d697e1a7a"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/SIGNED_TARGETS.md",
+      "bytes": 5226,
+      "sha256": "dde76e500ecaa9db841c12992c83edb9bb0f7a0add2fae6f07fd1a40da0d3dd3"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/TERNARY_BARRIER.md",
+      "bytes": 5588,
+      "sha256": "0d480c5b713f9df6c095168c74979b4381a688d30cf8b6d1a8691137216d3b18"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/TERNARY_TRANSFER.md",
+      "bytes": 5065,
+      "sha256": "5ea649baa30f668db5e0f121f9e8aba0f5705e71447036f51c9534259778126c"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/UNRESTRICTED_GAUGE.md",
+      "bytes": 9150,
+      "sha256": "74e455ba41cda2453b4d21a6cc1ef14b3aa04278f6a705f97d2fcf639e5c30c6"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/WEIGHTED_BOUNDARY.md",
+      "bytes": 14971,
+      "sha256": "a09dcc4c8e1c1af0be1b97b1c6b86490b4fc99331b71c02c634c8d6779b1524d"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/controls.py",
+      "bytes": 11262,
+      "sha256": "a42cc3f4e0fce399ac9f5c61171efdbe2c3d2cf75e1a16712ef86fdf5fc7f9a1"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/gate_controls.py",
+      "bytes": 4035,
+      "sha256": "9863355e211a4d934699405017d89573590505d3a5edf7820bd5ebf65b5467f1"
+    },
+    {
+      "path": "research/unconventional-20261126/operator/hybrid_controls.py",
+      "bytes": 3973,
+      "sha256": "7049a305545ad32e66316eeab07932f33430a60d88d06807028ab10df545377a"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/AUDIT.md",
+      "bytes": 5344,
+      "sha256": "43f2a26f96706954c926f3d82653bbe7d68685a0a3168f4714335eaeb88f78af"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/BRIDGE.md",
+      "bytes": 5429,
+      "sha256": "f8f4349e6c22940831fb2029b6c70917b347e3f43e4e8895ae645fd61db8c256"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/CONTROLS.json",
+      "bytes": 2140,
+      "sha256": "97a4a12b4ef7871b11c24bddbf7e2faacf403fe597e6330318a1f56d5d58bf36"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/CRITICAL_GAUGE_ENDPOINT.md",
+      "bytes": 7396,
+      "sha256": "9e55dc5e81e9617b0ced6ef55ebaea135bc9e81b1676aa1ccc19fa2ce5871a50"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/CRITICAL_GAUGE_REFINEMENT.md",
+      "bytes": 5507,
+      "sha256": "1a5b3ab8081ff1182caf1a4a51f79bd9ef03abe2a01b00a0443de4b3b7d961f3"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/CYCLE_COFACTORS.md",
+      "bytes": 3385,
+      "sha256": "aaef2037495e50a1b8e34a0f3efd75e180da0e232e6e407d967681cc044d5c71"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/CYCLE_SIEVE_REVIEW.md",
+      "bytes": 5518,
+      "sha256": "8f8567b2b26a63eb37048431ce2ab63d8228ade57d8143ca4f854059f25b99ab"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/DENSITY_SPECTRUM.md",
+      "bytes": 10599,
+      "sha256": "78997d899ecdae00a765cc38080aa1bf6079cdfdb55981a652eb50a5c779f0fe"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/ENTROPY_FIBERS.md",
+      "bytes": 8358,
+      "sha256": "53d3416b6ec5f1ce95cdabbe7e7c7186c0eb0bff0c164e6fe3d43fa3af7cfd29"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/ESCAPE_OF_MASS.md",
+      "bytes": 8245,
+      "sha256": "a58e6162ee652f749d21b47b616fdd1e41f65b9af3afa1c0d7c361b794201137"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/GATE_PROXIMITY.md",
+      "bytes": 8420,
+      "sha256": "3a8df7c90b246382843b115c5e628c6468a719844d02903c6421b50f688181d3"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/GAUGE.md",
+      "bytes": 9301,
+      "sha256": "e879112329551798561be0124dba34fe080ea6b94136a46b4914bed72bf4c629"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/HEIGHT.md",
+      "bytes": 12144,
+      "sha256": "6883b00babf7ea4b51ca7c358b8002e960a364e9e8c2d4d6fb00c4dc59c3e676"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/INCOMING_GAUGE_TEST.md",
+      "bytes": 8325,
+      "sha256": "8469f7f6fb26fcad6a83b59735c440106b94553d1a021f856f3d3357ac479678"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/LOG_HEIGHT_MODEL.md",
+      "bytes": 8864,
+      "sha256": "bf13ef7aac53937df40c8ad7dda1e486ddb9c5d63a019b9eedb595cc4b820d0e"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/LONG_GAPS.md",
+      "bytes": 8048,
+      "sha256": "561506a199daf069027263cabf5967ecb1c4cf71adc14aab48d489e3664e19ab"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/MONOTONE_RECORDS.md",
+      "bytes": 7780,
+      "sha256": "9d4deafdcaf39c987f1349da02c0a2e278d5ce8f5c4ecd34d4eacc2c9f4fc547"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/OCCUPATION.md",
+      "bytes": 6710,
+      "sha256": "a3866caf4d3636eb1ce068be9a7230fd631084345163003f0906be7b94ff5f64"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/POLYNOMIAL_COFACTORS.md",
+      "bytes": 7042,
+      "sha256": "726cd84a3663023bd48f4eb2ae71f675f1132f3b4962b47f050286ba3ad0327b"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/PRESSURE.md",
+      "bytes": 7661,
+      "sha256": "478fb986123f0b36ed7bab565a4ee72a8edb642e9bf8355a5b9c1e87d00f37c1"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RATIONAL.md",
+      "bytes": 9354,
+      "sha256": "545b23ed6f62a0633647bffef02846d433a03c3d380bd49d95887114d437543f"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RATIONAL_DIAGONAL.md",
+      "bytes": 8475,
+      "sha256": "3b823138448df4579e404f8d145fdbde35ce2f0416cf6352d80b2994a447be90"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/README.md",
+      "bytes": 15245,
+      "sha256": "a78adda12d44f317b2c76952d57495442706af2f4d11db915bbf7c32ac98502a"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RECORD_FLOW.md",
+      "bytes": 7757,
+      "sha256": "3c9c327eb291a14ac3cb5eedbe90f69c2cd85cad70860908572648ad576ff952"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RECORD_TEMPLATE_COST.md",
+      "bytes": 5328,
+      "sha256": "15c6e2420745561fb2d3028f118845a76eedc1be68cbe6f04ddd34df54821d76"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_CYCLE_INDEX.md",
+      "bytes": 7768,
+      "sha256": "48286e202899f242758a2e65c52b2c610cf0155f7a2ecda6ead14a9b41907077"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_GATE_ARITHMETIC.md",
+      "bytes": 5325,
+      "sha256": "4dafb6e43aeb413cf855396fb0470265341f86a48545354444da4742326e8648"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_LEVEL_AND_ORDER.md",
+      "bytes": 5136,
+      "sha256": "0f604bfae3c6f74fb20a0266fc777d42014848a302ce88946539636cedacacaf"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_OPERATOR.md",
+      "bytes": 8898,
+      "sha256": "ff0ff5cff0d3a807d9ed264b0d3a62283cd383526348828dc41488f9c253716e"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_PRIMITIVE.md",
+      "bytes": 3572,
+      "sha256": "77d1f334f46c73644705df94b6fc8b2df20a61dbd2a4a24b176c02ef3bc798d4"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_REGULAR_OCCUPATION.md",
+      "bytes": 6550,
+      "sha256": "11eb483bc45f1169508c079b72907fe14afa98d2a2ff92d77bf0c4007aac3755"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_ROUGH_GATES.md",
+      "bytes": 3988,
+      "sha256": "17c6f782e4c16951f58e86ef72a3f38deeff85a5526e42a3576ce1895d43d73c"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/REVIEW_UNRESTRICTED.md",
+      "bytes": 5856,
+      "sha256": "503c4002267d08fe902ce4740da232d2126c95e0fb6a9daf9725f2832c03b427"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/RenewalArithmetic.lean",
+      "bytes": 4452,
+      "sha256": "91dd985253915415acf255d888da1b8b63f6879a35be6233c8d3ef83f65692ef"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/SHARP_GAUGE.md",
+      "bytes": 9725,
+      "sha256": "0dc36211f63059e5be36ea8ddf136602b062032553993ef6c796fa8ac4dea899"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/SHIFTED_COFACTORS.md",
+      "bytes": 9747,
+      "sha256": "1bc18fa536bac5133648b0ee1ef27696decd7abacb9aed7a38908a58197d23e6"
+    },
+    {
+      "path": "research/unconventional-20261126/renewal/controls.py",
+      "bytes": 8580,
+      "sha256": "306d681fe0aaaf79dfd79c6e89f3d80eda182963ae9f2583baf617a9daf51d8e"
+    }
+  ]
+}

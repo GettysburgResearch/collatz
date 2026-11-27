@@ -1,0 +1,40 @@
+{
+  "scope": "Root replay of the exact finite order controls; not a proof of the infinite written theorems",
+  "script": "research/unconventional-20261126/adelic/order_controls.py",
+  "source_sha256": "b9ddab394c144d8a1f0c48b79a418c2d80e84bfa97800d784cbb483c3386ad7a",
+  "expected": "research/unconventional-20261126/adelic/ORDER_CONTROLS.json",
+  "expected_sha256": "c374eb305aed4dbc838ca552d77b49c8788e426a12727bf993d2bf1a7bbcf48e",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/order_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2525,
+      "stdout_sha256": "c374eb305aed4dbc838ca552d77b49c8788e426a12727bf993d2bf1a7bbcf48e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete_json_matches": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/adelic/order_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2858,
+      "stdout_sha256": "c374eb305aed4dbc838ca552d77b49c8788e426a12727bf993d2bf1a7bbcf48e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete_json_matches": true
+    }
+  ],
+  "normal_optimized_bytes_equal": true,
+  "all_requested_checks_passed": true
+}

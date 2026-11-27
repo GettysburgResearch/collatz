@@ -1,0 +1,31 @@
+{
+  "scope": "Fifth checkpoint files; this manifest excludes itself. No full Collatz proof.",
+  "base_commit": "807d67ab049f1646398d8ca8c20948cdc1d87742",
+  "file_count_excluding_manifest": 24,
+  "sha256": {
+    "reports/six-hour-20261127/FIFTH_REPLAY.json": "a0e655d481719152d43556c08abd9d457cee076265cc447ddd700ba703380ac8",
+    "reports/six-hour-20261127/ROOT_FIFTH_REVIEW.md": "cdb597c0fdb62a51b1504a6f9da846b83fea1b5b50d0507dcb077c55b3a88177",
+    "reports/six-hour-20261127/replay_fifth.py": "c93f67cd38414a5aeb14f6361100448e22e8914321cff9e16a2611d35b488698",
+    "research/six-hour-20261127/BINARY_PREFIX_CONTROLS.json": "e2697dc5abdbbbbb1168686c543f5d986b2bc790c21aec33ef95e276c98d4edc",
+    "research/six-hour-20261127/BINARY_PREFIX_CRITERION.md": "bd2e73b384ecd6b887b1e01e01096837e7d4f57c7ccad10e79117de26e94d4c5",
+    "research/six-hour-20261127/BinaryPrefixCriterion.lean": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+    "research/six-hour-20261127/FIFTH_CHECKPOINT.md": "6617a6568419b87c7a7e95f81cd056fbf7e685e9b7775bf3f5ed3c8c71646657",
+    "research/six-hour-20261127/arithmetic/FOUR_COPY_CONTROLS.json": "3570f7894511a635edfe7eaaff04aff254e7df57371933ac3598261a876f0b98",
+    "research/six-hour-20261127/arithmetic/FOUR_COPY_TAILS.md": "abe036877dec580d955063ff9c30a49ae6040844d16f4488b8eb6a1882a25d2a",
+    "research/six-hour-20261127/arithmetic/ReverseEnergy.lean": "43308a5c8ab7ae02c94d0f0a235799a9e9cbd6978d5e0cb8da67b7c77a72eb0e",
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a",
+    "research/six-hour-20261127/check_binary_prefix.py": "800bc32347a2351dad753a266d8f170577cd80714fdab4708ff7f5f59652fe75",
+    "research/six-hour-20261127/coupling/ANCHOR_OVERHEAD.md": "08e12d55dfb501ca6e41845b08898eea00539b15a582278a8b838cdb8cedac7c",
+    "research/six-hour-20261127/coupling/ANCHOR_OVERHEAD_CONTROLS.json": "bf9f56a2fcc634d0ef9e1d48e60505aed8353128261300c9bdaa99d8db732562",
+    "research/six-hour-20261127/coupling/AnchorRoute.lean": "d0010a307aeadc84aa3fea17dc759695ca25020d0f9f277ff7f734e1f184ec43",
+    "research/six-hour-20261127/coupling/DELAYED_BATCH.md": "e6b82e66b916023a1ea0664150509a3876b8cee5e521432ec82d27e68cc6231c",
+    "research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json": "b581ba5b21b8be9993d422565ee9654dd6861479ff5b5446c3510ac2e120c45f",
+    "research/six-hour-20261127/coupling/DelayedBatch.lean": "60ba2bfc12122ff7eb72cba95135661d1296d4d8214ac38ff8f6f4366df612ea",
+    "research/six-hour-20261127/coupling/TERNARY_PUMP.md": "4a05bbff826ca9b08f4b2408c95fc29d11354f15fe8f39497d8ab538014835ec",
+    "research/six-hour-20261127/coupling/TERNARY_PUMP_CONTROLS.json": "ee0b6f862c0d252af4a8c0470a3e8961c82d8bcf1b3f7b130ddb3fc05e7831f2",
+    "research/six-hour-20261127/coupling/TernaryPump.lean": "b5253ff43d2a1a39380b21e85bb9e7ffd71d30341d5415635f65b45a94145280",
+    "research/six-hour-20261127/coupling/check_anchor_overhead.py": "73dc7a1f64be4fef3b7f4a07e04ab0addf1b836b849bb841f95474bb71322b4e",
+    "research/six-hour-20261127/coupling/check_delayed_batch.py": "51cf5a2ce6abd1372606dd27dbe7155fb1046c173b83134bc852540649701c96",
+    "research/six-hour-20261127/coupling/check_ternary_pump.py": "a267f66801a8bd62f45faafcbd26d925e3977445969b6b34fe6d6e460a0725bb"
+  }
+}

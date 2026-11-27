@@ -1,0 +1,40 @@
+{
+  "scope": "Additional eighth finite control; no infinite escape claim",
+  "script": "research/unconventional-20261126/operator/gate_controls.py",
+  "source_sha256": "9863355e211a4d934699405017d89573590505d3a5edf7820bd5ebf65b5467f1",
+  "expected": "research/unconventional-20261126/operator/GATE_CONTROLS.json",
+  "expected_sha256": "f52485e74a1b8ad9ecaee31641592f093b3e6bade44302f3779800381f156d01",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/gate_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.73,
+      "stdout_sha256": "f52485e74a1b8ad9ecaee31641592f093b3e6bade44302f3779800381f156d01",
+      "stderr": "",
+      "complete_json_matches": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/operator/gate_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.716,
+      "stdout_sha256": "f52485e74a1b8ad9ecaee31641592f093b3e6bade44302f3779800381f156d01",
+      "stderr": "",
+      "complete_json_matches": true
+    }
+  ],
+  "normal_optimized_bytes_equal": true,
+  "all_requested_checks_passed": true
+}

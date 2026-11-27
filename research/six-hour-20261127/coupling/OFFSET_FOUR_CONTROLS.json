@@ -1,0 +1,210 @@
+{
+  "source": "27*2^(m-5)-17",
+  "turn_clocks": 11,
+  "turn_grade": 7,
+  "canonical_samples": [
+    {
+      "j": 0,
+      "m": 11,
+      "w_mod_24576": 1601
+    },
+    {
+      "j": 1,
+      "m": 173,
+      "w_mod_24576": 1601
+    },
+    {
+      "j": 2,
+      "m": 335,
+      "w_mod_24576": 1601
+    },
+    {
+      "j": 5,
+      "m": 821,
+      "w_mod_24576": 1601
+    },
+    {
+      "j": 10,
+      "m": 1631,
+      "w_mod_24576": 1601
+    }
+  ],
+  "rows": [
+    {
+      "k": 1,
+      "periodic": false,
+      "remainder": 8,
+      "turn_grade": 7,
+      "signed": -136,
+      "left_power": 0,
+      "right_power": 7,
+      "clocks": 80,
+      "unit_mod_2h": 478383465533037361011921,
+      "word_grades": [
+        45,
+        38
+      ],
+      "common_residue_endpoint": 1169049686835700733681
+    },
+    {
+      "k": 2,
+      "periodic": false,
+      "remainder": 3,
+      "turn_grade": 3,
+      "signed": -55,
+      "left_power": 0,
+      "right_power": 2,
+      "clocks": 31,
+      "unit_mod_2h": 925119843,
+      "word_grades": [
+        16,
+        14
+      ],
+      "common_residue_endpoint": 18544205
+    },
+    {
+      "k": 3,
+      "periodic": false,
+      "remainder": 10,
+      "turn_grade": 7,
+      "signed": -34,
+      "left_power": 0,
+      "right_power": 1,
+      "clocks": 205,
+      "unit_mod_2h": 7548976411468858440705357527827992136827202867336784063302761,
+      "word_grades": [
+        110,
+        109
+      ],
+      "common_residue_endpoint": 4467627714374040388643480368384415430343185526355450
+    },
+    {
+      "k": 4,
+      "periodic": false,
+      "remainder": 9,
+      "turn_grade": 7,
+      "signed": -68,
+      "left_power": 1,
+      "right_power": 0,
+      "clocks": 36,
+      "unit_mod_2h": 10536291833,
+      "word_grades": [
+        17,
+        18
+      ],
+      "common_residue_endpoint": 59400560
+    },
+    {
+      "k": 5,
+      "periodic": false,
+      "remainder": 6,
+      "turn_grade": 5,
+      "signed": -61,
+      "left_power": 0,
+      "right_power": 1,
+      "clocks": 64,
+      "unit_mod_2h": 8188362496081743345,
+      "word_grades": [
+        28,
+        27
+      ],
+      "common_residue_endpoint": 10154825622362
+    },
+    {
+      "k": 6,
+      "periodic": false,
+      "remainder": 8,
+      "turn_grade": 7,
+      "signed": -136,
+      "left_power": 0,
+      "right_power": 3,
+      "clocks": 55,
+      "unit_mod_2h": 7559879358717137,
+      "word_grades": [
+        26,
+        23
+      ],
+      "common_residue_endpoint": 533356664618
+    },
+    {
+      "k": 7,
+      "periodic": true,
+      "remainder": 3,
+      "turn_grade": 3,
+      "signed": -55,
+      "left_power": 0,
+      "right_power": 2,
+      "clocks": 31,
+      "unit_mod_2h": 925119843,
+      "word_grades": [
+        16,
+        14
+      ],
+      "common_residue_endpoint": 18544205
+    },
+    {
+      "k": 8,
+      "periodic": true,
+      "remainder": 10,
+      "turn_grade": 7,
+      "signed": -34,
+      "left_power": 0,
+      "right_power": 1,
+      "clocks": 109,
+      "unit_mod_2h": 280482343164554633297535667604585,
+      "word_grades": [
+        57,
+        56
+      ],
+      "common_residue_endpoint": 678496354428667081028896064
+    },
+    {
+      "k": 9,
+      "periodic": true,
+      "remainder": 9,
+      "turn_grade": 7,
+      "signed": -68,
+      "left_power": 1,
+      "right_power": 0,
+      "clocks": 36,
+      "unit_mod_2h": 10536291833,
+      "word_grades": [
+        17,
+        18
+      ],
+      "common_residue_endpoint": 59400560
+    },
+    {
+      "k": 10,
+      "periodic": true,
+      "remainder": 6,
+      "turn_grade": 5,
+      "signed": -61,
+      "left_power": 0,
+      "right_power": 1,
+      "clocks": 64,
+      "unit_mod_2h": 8188362496081743345,
+      "word_grades": [
+        28,
+        27
+      ],
+      "common_residue_endpoint": 10154825622362
+    },
+    {
+      "k": 11,
+      "periodic": true,
+      "remainder": 8,
+      "turn_grade": 7,
+      "signed": -136,
+      "left_power": 0,
+      "right_power": 3,
+      "clocks": 55,
+      "unit_mod_2h": 7559879358717137,
+      "word_grades": [
+        26,
+        23
+      ],
+      "common_residue_endpoint": 533356664618
+    }
+  ]
+}

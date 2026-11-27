@@ -1,0 +1,3 @@
+'OldHeadOrdinary.same_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadOrdinary.actual_terminal_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OldHeadOrdinary.actual_first_failure_entry' depends on axioms: [propext, Classical.choice, Quot.sound]

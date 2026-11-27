@@ -1,0 +1,5 @@
+'ResonantOrdinary.concatenate_passes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResonantOrdinary.concatenate_path' depends on axioms: [propext]
+'ResonantOrdinary.suffix_data' depends on axioms: [propext]
+'ResonantOrdinary.dyadic_resonance' depends on axioms: [propext, Quot.sound]
+'ResonantOrdinary.true_principal_death' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,18 @@
+{
+  "scope": "Eighth checkpoint files; excludes this manifest. Written analytic claims retain their named inputs. No full Collatz proof.",
+  "base_commit": "662a3dee736ccbca038377fbb4b2d9439374db16",
+  "file_count_excluding_manifest": 11,
+  "sha256": {
+    "reports/six-hour-20261127/EIGHTH_REPLAY.json": "58a48194bf54b4e3cf9159a4a3cacc73c3a8c916b362ef2957cc8ba85a6489e1",
+    "reports/six-hour-20261127/ROOT_EIGHTH_REVIEW.md": "b2a4445abff3a609cb3c222e08cb6b7010a5d98c1a19d7112a8b1a51c694ff31",
+    "reports/six-hour-20261127/replay_eighth.py": "cbce67697e24f33350168263118f2bd68afd175dac2d64ebcef1226d08ea9583",
+    "research/six-hour-20261127/EIGHTH_CHECKPOINT.md": "e4fd65a90c8f09dd44dbcb82c968262506c88d972e68c5921cfd0aff25738e79",
+    "research/six-hour-20261127/arithmetic/ANCHOR_CARRIES.md": "531e6c6c1fb413f89d8a7dd9bee809fcd4d8c36ebb7741dbcb027106219057ab",
+    "research/six-hour-20261127/arithmetic/ANCHOR_CARRY_CONTROLS.json": "b108b44b1ace7d7cc0d130e0a85de30172e43690a7ba9fec322698201fa440ac",
+    "research/six-hour-20261127/arithmetic/TERNARY_PAST_CONTROLS.json": "28ec0d0a545d0dd5c648340efc18b16d6b0b39fca100d85e58b71122c4e4e354",
+    "research/six-hour-20261127/arithmetic/TERNARY_PAST_ENTROPY.md": "6f5d6a4959c95cd1c83e83242d82d1cfa9133e7af6c7991806d72e68aeea2ebd",
+    "research/six-hour-20261127/arithmetic/TernaryPast.lean": "9dc790323893486e5a7d5019c9f57e7733c6cf3866186605d50d04b9812ac507",
+    "research/six-hour-20261127/arithmetic/check_anchor_carries.py": "7983c1c4a99fad8c01593b6364a3c9cfb86ae403f573ad04cd46fd1cdea69e96",
+    "research/six-hour-20261127/arithmetic/check_ternary_past.py": "9247fdc925d62ac47bc95341f6a53158e1efb105023c71128fec1e6eea5e6e1d"
+  }
+}

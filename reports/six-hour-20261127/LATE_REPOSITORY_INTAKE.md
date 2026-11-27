@@ -1,0 +1,22 @@
+# Late repository intake at exact heads
+
+This is a scoped scientific intake, not a claim to have proved or rebuilt every source on every branch. PR201 owns the work published in this packet. No other PR was modified.
+
+| Source | Frozen head | Inspection and useful boundary |
+|---|---|---|
+| PR193 | `67e5cdb3c1689836bf1dc01a57a7e46b85449dcd` | Root read the rational-energy, adaptive-Green, Mellin rank-spacing, and bridge-pressure notes. The escape agent also inspected the first-return, Poisson-spectrum, rational-window, and sparse-shadow arguments. |
+| PR200, preceding head | `8fd938eb3ef7898a427d8a6c0e501a7777c4a6ec` | Root read the ordinary critical-safe entry, classical full-band all-lag, physical-window occupation, and unrestricted odd-occupation notes. Their source populations and external Diophantine inputs remain qualified. |
+| PR200, final intake | `7af83b786636abba2f44fe8c81441153331377fc` | Root read the sixth-checkpoint report, adjacent-gap finite period proof, physical fractional-part source reduction, and abstract convex ternary obstruction. Arithmetic agent read the exact residue-support, ternary-lag, rational-lag, and convex-cap notes at this same commit. Their new Lean modules were not recompiled by PR201. |
+| PR195 | `3fa7ef4a0011b35447a70f587b400878d5ea8ebe` | The earlier intake and source pins remain in the corresponding checkpoint reviews; no new proof scope is assigned here. |
+| PR197 | `1f0f496fbea37792439feada6106eaaff596bcd1` | Six exact files vendored, byte-compared to the frozen commit, source-built by the coupling agent, and re-audited as detailed in the ninth checkpoint. |
+| PR206 | `640bf7e511831a0ffc4f00462f12df81f8a8a619` | Root read the all-Mersenne canonical return and the dated return-descent note. Their all-source operator obligation remains open; their Lean proof was not part of PR201's replay. |
+
+PR193's rational energy separates a uniform finite bound from a uniform target tail. The nonperiodic-target estimate does not dispose of an escaping target carrying a fixed ordinary atom. Its adaptive Green construction gives a bounded source potential with a nonnegative summable remainder and decay away from finitely many selected small-source orbits; the same ordinary-atom obstruction remains. The written Mellin-rank improvement has explicit additional analytic assumptions. Its two-layer pressure result is an obstruction for that finite-moment architecture and is not transplanted to the different three-grade physical language.
+
+The preceding PR200 ordinary safe-entry theorem supplies a bounded route to a permanently safe suffix from any bad input. Its almost-all source statement is not an exclusion of the exceptional fixed bad integer. The occupation results force portions of a hypothetical cycle outside several specified bands; none bounds the maximum width of every cycle.
+
+The final PR200 intake gives a complementary finite exclusion: canonical width below two and minimum at least `2^71` force odd period greater than `10^1000`, allowing valuation three. Its archived compressed Lean census concerns the finite integer comparisons; the physical reduction remains written. This differs from PR201's own binary/full-physical-band located-CRT proof and its independent restricted minimum census. The external verification below `2^71` used by PR200 was read as a published input, not rerun here.
+
+The rational source reduction fixes an actual fractional part before counting. The full denominator becomes a known prime-power translation and the counted interval has physical height, without treating the integer parts as a new Collatz orbit. At denominator one the residue-diversity alternatives specialize to the ordinary case and do not remove the remaining large-period or wide-cycle possibilities.
+
+The abstract convex ternary construction is a useful negative test for PR201's entropy attack. It gives strictly convex octave-doubling integer ranks, arbitrary lowbit masks, distinct odd parts, every-depth two-child ternary structure, and a smooth profile below cubic height. These objects do not obey the chronological Collatz affine recurrence. Therefore smoothness, convexity, and progression-free populations alone cannot produce a decoder contradicting the positive conditional entropy proved in our final supplement. Any further argument must use the actual chronological weights or another genuine orbit constraint.

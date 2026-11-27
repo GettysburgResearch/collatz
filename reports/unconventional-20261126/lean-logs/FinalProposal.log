@@ -1,0 +1,6 @@
+'FinalProposal.step_positive' depends on axioms: [propext, Quot.sound]
+'FinalProposal.run_positive' depends on axioms: [propext, Quot.sound]
+'FinalProposal.convergence_from_two_obligations' depends on axioms: [propext, Quot.sound]
+'FinalProposal.convergence_implies_no_escape' depends on axioms: [propext, Quot.sound]
+'FinalProposal.convergence_implies_cycle_unique' does not depend on any axioms
+'FinalProposal.exact_final_obligations' depends on axioms: [propext, Quot.sound]

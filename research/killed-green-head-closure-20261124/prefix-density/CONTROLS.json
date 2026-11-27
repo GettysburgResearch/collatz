@@ -1,0 +1,32 @@
+{
+  "status": "PROPOSED",
+  "parent": "084b983fbec6f3d2120ef101946754431f82874e",
+  "external_inputs": {
+    "F": "rStation paper 37 v4 Lemma 10, Lemma 11 spreading",
+    "S": "PR146 f431078244e868dc699fad011044f0d5e7f76437 WHOLE_INTERVAL_SYNCHRONIZATION.md (4)",
+    "D": "Rhin phase gap as in Simons-de Weger 2005 Lemma 12"
+  },
+  "execution": {
+    "runtime": "JavaScript exact BigInt",
+    "result": {
+      "words": 19845,
+      "legal": 81,
+      "unitCongruences": 2106,
+      "firstHits": 81,
+      "distinctDepths": 81,
+      "comparisonChecks": 5,
+      "antichainPairs": 338,
+      "antichains": 40,
+      "prefixLifts": 2875,
+      "gradeChecks": 11500,
+      "clockInequalities": 27426
+    }
+  },
+  "lean": {
+    "compiled": false,
+    "axiom_audit": false,
+    "reason": "No lean/lake or ~/.elan/toolchains executable in local environment"
+  },
+  "independent_subagents": false,
+  "full_checkout_validated": false
+}

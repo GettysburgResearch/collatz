@@ -1,0 +1,157 @@
+{
+  "scope": "Fresh Lean source compilation, annotated declaration axiom audits only",
+  "started_utc": "2026-11-27T11:58:22Z",
+  "repo_head": "d21bac748e705a64b6b57a7996a8ad6282f0bcbf",
+  "repo_tree": "9345cdaca91f380ae98240b14f0f5146eb5525a2",
+  "working_status": "?? reports/infinity-20261127/\n?? research/infinity-20261127/",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "manifest_sha256": "87edae02d01b09daadba6d9aaf1d53efed7c570d8baba350e6341b03999da530",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "modules": [
+    {
+      "path": "research/killed-green-head-closure-20261124/verified/OrdinaryGapWord.lean",
+      "source_sha256": "1ce2a6eefa0f2174f7b4dd6af395c365d2cf618cdefb8ea9bf31892242625776",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-resonant-replay/build/OrdinaryGapWord.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/killed-green-head-closure-20261124/verified/OrdinaryGapWord.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.072,
+      "output_sha256": "e76cd2f2499f8286f5988f8046e4f3f6eb07c4cbbd79db6b9755ce05ec47d174",
+      "declarations": {
+        "Collatz.OrdinaryGapWord.Path.endpoints": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.Path.affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.path_of_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.even_run": [
+          "propext"
+        ],
+        "Collatz.OrdinaryGapWord.Path.shortcut_iterate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.odd_part_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Path.unique_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.source_class_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.Path.unique_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.unit_after_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.OrdinaryGapWord.unit_source_class_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "d5c2c6c7811779be462fe5559f5b2d65907f26b8ed41fc1aa1c9ffcdebbb5c21"
+    },
+    {
+      "path": "research/infinity-20261127/mass/ResonantPhase.lean",
+      "source_sha256": "0a6d0c5525556d2de8f3a6707c1329fc1425cec18f8dee0f7b3a02a9f7447f77",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-resonant-replay/build/ResonantPhase.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/ResonantPhase.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.944,
+      "output_sha256": "1a0976428e7474363e798ba7fa5d553e63c64b14e399f5d7545c4020ab7b25c8",
+      "declarations": {
+        "ResonantPhase.phase_selector": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "b82c63edb4fe6314db5db08804d079930fe7f024f13b1b314b03828a4253215f"
+    },
+    {
+      "path": "research/infinity-20261127/mass/ResonantOrdinary.lean",
+      "source_sha256": "5e9d44dfe7416009ef51f46d1ce98ec37b276207a5eebb7e87fff1c7ab1de82d",
+      "command": [
+        "/workspace/scratch/ad48b85f0ea2/toolchain-pass2/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/infinity-resonant-replay/build/ResonantOrdinary.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/ResonantOrdinary.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.924,
+      "output_sha256": "2295fa0c7826bc260fd7c441a785996ce5207dc35747b2f2f4a8623c1bc8011f",
+      "declarations": {
+        "ResonantOrdinary.concatenate_passes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ResonantOrdinary.concatenate_path": [
+          "propext"
+        ],
+        "ResonantOrdinary.suffix_data": [
+          "propext"
+        ],
+        "ResonantOrdinary.dyadic_resonance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ResonantOrdinary.true_principal_death": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "object_sha256": "92ab0d31dcf4a2dc7dc91cc3ad6a1b6140c125317272a3b004f588f722e0dbb2"
+    }
+  ],
+  "finished_utc": "2026-11-27T11:58:32Z",
+  "complete": true
+}

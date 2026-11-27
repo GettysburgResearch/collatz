@@ -1,0 +1,297 @@
+{
+  "scope": "finite prefix laws and rational outward enclosures only",
+  "scale": 18446744073709551616,
+  "depth_zero_centered": 1,
+  "depth_zero_debt_reserve": 8,
+  "sibling_max_through_ten_bits": "1023/512",
+  "rows": [
+    {
+      "depth": 1,
+      "words": 1,
+      "new_seeds": 1,
+      "departed_seeds": 1,
+      "gate_probability": "1/2",
+      "debt_reserve": "11/2",
+      "centered": [
+        6148914691236517205,
+        6148914691236517206
+      ],
+      "uncentered": [
+        5534023222112865484,
+        5534023222112865485
+      ],
+      "centered_minus_parameter_1_over_n": [
+        614891469123651720,
+        614891469123651721
+      ],
+      "birth_reciprocals": [
+        6148914691236517205,
+        6148914691236517206
+      ]
+    },
+    {
+      "depth": 2,
+      "words": 2,
+      "new_seeds": 2,
+      "departed_seeds": 1,
+      "gate_probability": "3/8",
+      "debt_reserve": "19/4",
+      "centered": [
+        4312225887360674403,
+        4312225887360674405
+      ],
+      "uncentered": [
+        4037833685817645064,
+        4037833685817645066
+      ],
+      "centered_minus_parameter_1_over_n": [
+        141886874419606290,
+        141886874419606292
+      ],
+      "birth_reciprocals": [
+        4312225887360674403,
+        4312225887360674405
+      ]
+    },
+    {
+      "depth": 3,
+      "words": 5,
+      "new_seeds": 4,
+      "departed_seeds": 1,
+      "gate_probability": "5/16",
+      "debt_reserve": "69/16",
+      "centered": [
+        5312634230125629021,
+        5312634230125629026
+      ],
+      "uncentered": [
+        4983339481864033069,
+        4983339481864033074
+      ],
+      "centered_minus_parameter_1_over_n": [
+        115727282847919487,
+        115727282847919492
+      ],
+      "birth_reciprocals": [
+        2677385076738550219,
+        2677385076738550223
+      ]
+    },
+    {
+      "depth": 4,
+      "words": 14,
+      "new_seeds": 11,
+      "departed_seeds": 2,
+      "gate_probability": "35/128",
+      "debt_reserve": "4",
+      "centered": [
+        6340283022340843698,
+        6340283022340843712
+      ],
+      "uncentered": [
+        5964042181998964594,
+        5964042181998964608
+      ],
+      "centered_minus_parameter_1_over_n": [
+        101459689811567391,
+        101459689811567405
+      ],
+      "birth_reciprocals": [
+        2686425778688321643,
+        2686425778688321654
+      ]
+    },
+    {
+      "depth": 5,
+      "words": 28,
+      "new_seeds": 20,
+      "departed_seeds": 6,
+      "gate_probability": "7/32",
+      "debt_reserve": "57/16",
+      "centered": [
+        4782532685443896194,
+        4782532685443896222
+      ],
+      "uncentered": [
+        4696388132037352253,
+        4696388132037352281
+      ],
+      "centered_minus_parameter_1_over_n": [
+        17601370318922607,
+        17601370318922635
+      ],
+      "birth_reciprocals": [
+        2116527743597702953,
+        2116527743597702973
+      ]
+    },
+    {
+      "depth": 6,
+      "words": 76,
+      "new_seeds": 48,
+      "departed_seeds": 0,
+      "gate_probability": "49/256",
+      "debt_reserve": "421/128",
+      "centered": [
+        6467134207653670543,
+        6467134207653670619
+      ],
+      "uncentered": [
+        6364087165472096318,
+        6364087165472096394
+      ],
+      "centered_minus_parameter_1_over_n": [
+        17571785959574603,
+        17571785959574679
+      ],
+      "birth_reciprocals": [
+        1684601522209774349,
+        1684601522209774397
+      ]
+    },
+    {
+      "depth": 7,
+      "words": 227,
+      "new_seeds": 163,
+      "departed_seeds": 12,
+      "gate_probability": "177/1024",
+      "debt_reserve": "3153/1024",
+      "centered": [
+        7898229788651808703,
+        7898229788651808930
+      ],
+      "uncentered": [
+        7783583512242025101,
+        7783583512242025328
+      ],
+      "centered_minus_parameter_1_over_n": [
+        16789263277648078,
+        16789263277648305
+      ],
+      "birth_reciprocals": [
+        1857278757705620338,
+        1857278757705620501
+      ]
+    },
+    {
+      "depth": 8,
+      "words": 715,
+      "new_seeds": 523,
+      "departed_seeds": 35,
+      "gate_probability": "2605/16384",
+      "debt_reserve": "93/32",
+      "centered": [
+        9094158642706482595,
+        9094158642706483310
+      ],
+      "uncentered": [
+        8970743348736522896,
+        8970743348736523611
+      ],
+      "centered_minus_parameter_1_over_n": [
+        15851567810072087,
+        15851567810072802
+      ],
+      "birth_reciprocals": [
+        1773501387792414914,
+        1773501387792415437
+      ]
+    },
+    {
+      "depth": 9,
+      "words": 1618,
+      "new_seeds": 1103,
+      "departed_seeds": 200,
+      "gate_probability": "4495/32768",
+      "debt_reserve": "87877/32768",
+      "centered": [
+        9630120097344010291,
+        9630120097344011909
+      ],
+      "uncentered": [
+        9497186462497640814,
+        9497186462497642432
+      ],
+      "centered_minus_parameter_1_over_n": [
+        15220742228103769,
+        15220742228105387
+      ],
+      "birth_reciprocals": [
+        1433803635368210957,
+        1433803635368212060
+      ]
+    },
+    {
+      "depth": 10,
+      "words": 4762,
+      "new_seeds": 3401,
+      "departed_seeds": 257,
+      "gate_probability": "8181/65536",
+      "debt_reserve": "82573/32768",
+      "centered": [
+        10342359931357484233,
+        10342359931357488995
+      ],
+      "uncentered": [
+        10203546397401458541,
+        10203546397401463303
+      ],
+      "centered_minus_parameter_1_over_n": [
+        14336236846106623,
+        14336236846111385
+      ],
+      "birth_reciprocals": [
+        1366059088793702689,
+        1366059088793706090
+      ]
+    },
+    {
+      "depth": 11,
+      "words": 15090,
+      "new_seeds": 11002,
+      "departed_seeds": 674,
+      "gate_probability": "30343/262144",
+      "debt_reserve": "625479/262144",
+      "centered": [
+        11099438037816996742,
+        11099438037817011832
+      ],
+      "uncentered": [
+        10953046502385347947,
+        10953046502385363037
+      ],
+      "centered_minus_parameter_1_over_n": [
+        13774339973918656,
+        13774339973933746
+      ],
+      "birth_reciprocals": [
+        1291528335465729328,
+        1291528335465740330
+      ]
+    },
+    {
+      "depth": 12,
+      "words": 49742,
+      "new_seeds": 36734,
+      "departed_seeds": 2082,
+      "gate_probability": "113827/1048576",
+      "debt_reserve": "9299/4096",
+      "centered": [
+        11693795766448385791,
+        11693795766448435533
+      ],
+      "uncentered": [
+        11542259705534392416,
+        11542259705534442158
+      ],
+      "centered_minus_parameter_1_over_n": [
+        13094689656646549,
+        13094689656696291
+      ],
+      "birth_reciprocals": [
+        1238722904279739497,
+        1238722904279776231
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "checked": [
+    {
+      "m": 1,
+      "smaller_starts": 0,
+      "prepeak_clock_pairs": 0,
+      "postpeak_clock_pairs": 0,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 2,
+      "smaller_starts": 2,
+      "prepeak_clock_pairs": 1,
+      "postpeak_clock_pairs": 4,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 3,
+      "smaller_starts": 6,
+      "prepeak_clock_pairs": 4,
+      "postpeak_clock_pairs": 18,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 4,
+      "smaller_starts": 14,
+      "prepeak_clock_pairs": 22,
+      "postpeak_clock_pairs": 84,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 5,
+      "smaller_starts": 30,
+      "prepeak_clock_pairs": 52,
+      "postpeak_clock_pairs": 240,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 6,
+      "smaller_starts": 62,
+      "prepeak_clock_pairs": 114,
+      "postpeak_clock_pairs": 620,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 7,
+      "smaller_starts": 126,
+      "prepeak_clock_pairs": 360,
+      "postpeak_clock_pairs": 1890,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 8,
+      "smaller_starts": 254,
+      "prepeak_clock_pairs": 741,
+      "postpeak_clock_pairs": 4572,
+      "meeting_tuples": 2,
+      "distinct_visitors": 2,
+      "earlier_peak_time_pairs": [
+        [
+          7,
+          2
+        ]
+      ]
+    },
+    {
+      "m": 9,
+      "smaller_starts": 510,
+      "prepeak_clock_pairs": 1506,
+      "postpeak_clock_pairs": 10710,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 10,
+      "smaller_starts": 1022,
+      "prepeak_clock_pairs": 4052,
+      "postpeak_clock_pairs": 28616,
+      "meeting_tuples": 4,
+      "distinct_visitors": 2,
+      "earlier_peak_time_pairs": [
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          3
+        ]
+      ]
+    },
+    {
+      "m": 11,
+      "smaller_starts": 2046,
+      "prepeak_clock_pairs": 8144,
+      "postpeak_clock_pairs": 65472,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 12,
+      "smaller_starts": 4094,
+      "prepeak_clock_pairs": 16332,
+      "postpeak_clock_pairs": 147384,
+      "meeting_tuples": 4,
+      "distinct_visitors": 2,
+      "earlier_peak_time_pairs": [
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          3
+        ]
+      ]
+    },
+    {
+      "m": 13,
+      "smaller_starts": 8190,
+      "prepeak_clock_pairs": 40890,
+      "postpeak_clock_pairs": 368550,
+      "meeting_tuples": 0,
+      "distinct_visitors": 0,
+      "earlier_peak_time_pairs": []
+    },
+    {
+      "m": 14,
+      "smaller_starts": 16382,
+      "prepeak_clock_pairs": 81845,
+      "postpeak_clock_pairs": 819100,
+      "meeting_tuples": 6,
+      "distinct_visitors": 2,
+      "earlier_peak_time_pairs": [
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          4
+        ]
+      ]
+    }
+  ],
+  "unrestricted_control": {
+    "m": 3,
+    "x": 4,
+    "n": 0,
+    "b": 5,
+    "i": 6,
+    "l": 0,
+    "meeting": 4
+  }
+}

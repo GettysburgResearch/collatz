@@ -1,0 +1,145 @@
+{
+  "scope": "Bounded exact arithmetic controls; no universal mathematical conclusion",
+  "started_utc": "2026-11-27T12:21:06Z",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "driver_sha256": "b06dd27f15c38fd5beb44af053fbd4bb9be187eda580e36436eb2782f3909e78",
+  "manifest_sha256": "55bbbbe6c1135024977e132ab5ce43c870336aa55aa8aebbedd972220a164567",
+  "inputs": {
+    "research/infinity-20261127/arithmetic/PELL_CONTROLS.json": "c4a4ee87cf9d8e8b94233c5521100b7973818e574ae8aa9f41309002cc9924d4",
+    "research/infinity-20261127/arithmetic/check_pell_returns.py": "b9d787a06e140cad77c03c6ae3381d778086f88cf399421ccbd5ed1af816526a",
+    "research/infinity-20261127/coupling/PINNED_TARGET_CONTROLS.json": "89e70d9bf2684269fa3020bafa22460544781086198d00adfc59678776dc71af",
+    "research/infinity-20261127/coupling/check_pinned_targets.py": "92b7d53d03a1b154a301576fd00715d3bb386b16ad3dd02ee2c617581733b7b6",
+    "research/infinity-20261127/mass/OLD_HEAD_CONTROLS.json": "6ac2504999f7a7d7cb8f482bca48aecaa4746e3b29c43773c983efd33818aa83",
+    "research/infinity-20261127/mass/RESONANT_CONTROLS.json": "9a251d213fc4c4499e6e5ecedf43c2ce42e9cc2706d7ab4ba71b88b48aa3416c",
+    "research/infinity-20261127/mass/check_old_head.py": "445a57c846f96e43003492a4d2b438808d45da1311c49c14d75b50b0707895fa",
+    "research/infinity-20261127/mass/check_resonant_loss.py": "0af161b0f3668c94a55902757fc424c3422f0f88dbfc445e3bbf6039324ec937"
+  },
+  "controls": [
+    {
+      "script": "research/infinity-20261127/mass/check_resonant_loss.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_resonant_loss.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.041,
+      "stdout_sha256": "9a251d213fc4c4499e6e5ecedf43c2ce42e9cc2706d7ab4ba71b88b48aa3416c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/mass/check_resonant_loss.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_resonant_loss.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.081,
+      "stdout_sha256": "9a251d213fc4c4499e6e5ecedf43c2ce42e9cc2706d7ab4ba71b88b48aa3416c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/mass/check_old_head.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_old_head.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.063,
+      "stdout_sha256": "6ac2504999f7a7d7cb8f482bca48aecaa4746e3b29c43773c983efd33818aa83",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/mass/check_old_head.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/mass/check_old_head.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.096,
+      "stdout_sha256": "6ac2504999f7a7d7cb8f482bca48aecaa4746e3b29c43773c983efd33818aa83",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/arithmetic/check_pell_returns.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/arithmetic/check_pell_returns.py"
+      ],
+      "exit_code": 0,
+      "seconds": 31.813,
+      "stdout_sha256": "c4a4ee87cf9d8e8b94233c5521100b7973818e574ae8aa9f41309002cc9924d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/arithmetic/check_pell_returns.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/arithmetic/check_pell_returns.py"
+      ],
+      "exit_code": 0,
+      "seconds": 33.294,
+      "stdout_sha256": "c4a4ee87cf9d8e8b94233c5521100b7973818e574ae8aa9f41309002cc9924d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/coupling/check_pinned_targets.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/coupling/check_pinned_targets.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02,
+      "stdout_sha256": "89e70d9bf2684269fa3020bafa22460544781086198d00adfc59678776dc71af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    },
+    {
+      "script": "research/infinity-20261127/coupling/check_pinned_targets.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/ad48b85f0ea2/collatz-pass2/research/infinity-20261127/coupling/check_pinned_targets.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.062,
+      "stdout_sha256": "89e70d9bf2684269fa3020bafa22460544781086198d00adfc59678776dc71af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_json_matches": true
+    }
+  ],
+  "finished_utc": "2026-11-27T12:22:11Z",
+  "complete": true
+}

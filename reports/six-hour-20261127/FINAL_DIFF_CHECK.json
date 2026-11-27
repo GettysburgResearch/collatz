@@ -1,0 +1,9 @@
+{
+  "scope": "Staged whitespace inspection. These two frozen archival/source inputs are preserved byte-for-byte; no additional whitespace findings.",
+  "exit_code": 2,
+  "output": "reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:1: trailing whitespace.\n+ReverseBasin 0  \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:4: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:10: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:15: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:19: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:21: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:26: trailing whitespace.\n+ \nreports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log:26: new blank line at EOF.\nresearch/six-hour-20261127/escape/SIGNED_PIECE_MASS.md:44: new blank line at EOF.\n",
+  "preserved_files": [
+    "reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log",
+    "research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md"
+  ]
+}

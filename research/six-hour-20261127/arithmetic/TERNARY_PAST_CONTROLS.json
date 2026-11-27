@@ -1,0 +1,99 @@
+{
+  "literal_depths": [
+    {
+      "depth": 1,
+      "endpoints": 2,
+      "energy": 6,
+      "subset_size": 1,
+      "subset_energy": 1
+    },
+    {
+      "depth": 2,
+      "endpoints": 4,
+      "energy": 36,
+      "subset_size": 2,
+      "subset_energy": 6
+    },
+    {
+      "depth": 3,
+      "endpoints": 8,
+      "energy": 208,
+      "subset_size": 3,
+      "subset_energy": 15
+    },
+    {
+      "depth": 4,
+      "endpoints": 16,
+      "energy": 1184,
+      "subset_size": 6,
+      "subset_energy": 74
+    },
+    {
+      "depth": 5,
+      "endpoints": 32,
+      "energy": 6624,
+      "subset_size": 11,
+      "subset_energy": 271
+    },
+    {
+      "depth": 6,
+      "endpoints": 64,
+      "energy": 36720,
+      "subset_size": 22,
+      "subset_energy": 1314
+    },
+    {
+      "depth": 7,
+      "endpoints": 128,
+      "energy": 201760,
+      "subset_size": 43,
+      "subset_energy": 5471
+    },
+    {
+      "depth": 8,
+      "endpoints": 256,
+      "energy": 1102528,
+      "subset_size": 86,
+      "subset_energy": 26234
+    }
+  ],
+  "abstract_depth_three_trees": 2187,
+  "abstract_mod27_energy_range": [
+    208,
+    216
+  ],
+  "sharp_cap_on_lengths_0_to_27": [
+    0,
+    1,
+    2,
+    2,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    6,
+    6,
+    7,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "no222_composition_classes": 101,
+  "canonical_residues_mod384": [
+    257
+  ]
+}

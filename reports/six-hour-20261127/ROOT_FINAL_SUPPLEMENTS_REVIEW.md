@@ -1,0 +1,31 @@
+# Root review of the final path and entropy supplements
+
+These are written proofs with independent exact integer controls. They introduce no additional Lean theorem. Collatz is open. The root read the complete three notes and their three checkers, reconstructed the implications below, and replayed every control in both normal and optimized Python.
+
+## Canonical directed paths in both endpoint directions
+
+The graph has both directions of every ordinary shortcut edge and forward tripling arrows only at positive sources `17 mod 48`. The original root-to-triple localization argument can be realized as a finite directed graph. At a radix split retain the unique actual residue branch; at a nonunit exchange retain both label branches. Include every ordinary merger edge used by those exchanges. Let `G(v)` mean reachability **to the fixed target** `3w` in this finite graph. The ordered bad/good induction uses invariance only on included ordinary edges. If `w` failed to reach `3w`, a terminal ordered defect would contradict that terminal's included path. This is a finite-graph proof of a path, not an assumption of ordinary Collatz convergence.
+
+The root checked how historical labels persist, why both nonunit branches must be retained, how a source `11 mod 32` normalizes to `17 mod 48`, and why a shortest path uses at most the computed number of edge occurrences. The complete recursion gives at most 3780 edges, canonical sources at most `4096w`, and the separately recorded maximum vertex ratio. The Python construction uses actual integer vertices, preserves every edge's direction, and finds paths by breadth-first search.
+
+The 140 first-stage rows contract every odd input by at most `725/763`; the physical even step contracts by one half. Replacing their at most eight temporary arrows by the finite canonical paths gives at most 30367 edges per descent and canonical sources below `98304n`. The integer inequality `2*725^14 <= 763^14` yields the stated `425138*ceil(log_2 n)` return length. The root checked both affine coefficients in every ratio, and the independent checker expands every ordinary physical edge.
+
+The outward construction uses a different complete 31-row mixed-radix tree. Its descending temporary arrows run from `3w` to `w`, so reversing the whole descending path gives precisely the direction `w` to `3w` already constructed above. Every row contracts by at most `1405/1479`. Its raw source and vertex caps, edge counts, and substitutions are checked on complete affine rows. Since `2*1405^14 <= 1479^14`, the outward path from one has length at most `690144*ceil(log_2 n)`, canonical sources below `(40505344/43)n`, and vertices below `(102325187227157840/9440091)n`. These paths compose to give strong connectivity of the augmented graph. They are not bounds for the ordinary stopping time.
+
+A bad ordinary input consequently produces both orientations of canonical basin disagreement: a bad source with a good triple from the return path, and a good source with a bad triple from the outward path. Either **universal** one-way basin implication on that single residue class would therefore suffice. Neither implication has been established. Finite examples, including inputs far beyond machine integers, test the actual constructor; the all-input proof uses the complete row trees and the finite-graph argument, not those examples.
+
+The notes correctly attribute earlier odd/unit-cofactor path and dilution results to Papers 228 and 232. The present restriction to a single canonical class has much larger height constants. No claim of having invented the general sufficient-cofactor method is made.
+
+## Positive conditional entropy for a microscopic rank neighbor
+
+Under the full physical binary-cycle hypotheses and the quoted `mu(log_2 3)<=3`, the strict-curvature result gives `P` distinct terminal rank gaps. A pair of actual valuation blocks, the two starting grades, and the common phase/wrap calendar determine the signed drift and therefore the terminal gap modulo a power of three larger than every gap. The side information costs `O(log b)` for block length `b`; it is not proportional to the period. Hence the joint block entropy is at least `log_2 P-O(log b)`.
+
+For rank offsets with `v=limsup(log t/log P)`, the height bound gives `b <= (2+v+o(1))*log_3 P`. Crucially, the proof passes to a stationary weak limit by applying block subadditivity at each fixed block size **before** taking the limit. It does not assert that the finite periodic processes have positive entropy rate. The resulting joining has joint rate at least `log_2(3)/(2+v)`.
+
+The one-copy upper bound counts the actual three-grade language conditional on its terminal grade at each of the three reverse rotation returns. All nine integer counts satisfy `N^250 < 2^(189*r)`. Phase changes, the optional inclusive-boundary exception, and the bounded partial returns cost only sublinear information. This gives each marginal of the same limiting joining entropy at most `189/250`. The root checked the three-state recurrence, all exact comparisons, and the use of a uniform marginal bound on the same limit as the joint lower bound.
+
+Subtracting yields conditional rate at least `log_2(3)/(2+v)-189/250` in both directions. It exceeds `1/30` when `v=0` and `1/250` for `v<=1/12`. If a stationary measurable decoder, with any stationary zero-entropy side process, predicted the second present bit with error `q`, the disagreement process would have entropy at most `H_2(q)`. The exact inequality `300^300 < 2^10*299^299` gives the reported error lower bound greater than `1/300` in the microscopic case. Thus deterministic local or measurable decoding is excluded in such a limiting joining. Positive conditional entropy is compatible with other stationary processes and does not itself exclude an ordinary cycle sequence.
+
+## Replay
+
+`FINAL_SUPPLEMENTS_REPLAY.json` records three complete normal/optimized controls, full JSON equality, equal output bytes, and pinned imported Python and Lean-data dependencies. There are no new Lean modules or declaration audits in this supplement. The local graph proof and the analytic entropy argument remain written proofs with the stated scope and inputs.

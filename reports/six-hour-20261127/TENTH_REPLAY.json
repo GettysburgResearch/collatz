@@ -1,0 +1,346 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "all",
+  "repo_head_at_start": "860a67dedc860adcd82b964958d91b9e21d610f1",
+  "repo_tree_at_start": "4e131444465a2ecd4b1ac07567e9f0103ec3e2b0",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log\n?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.py\n?? reports/six-hour-20261127/NINTH_BUILD_INTERRUPTS.json\n?? reports/six-hour-20261127/ROOT_NINTH_REVIEW.md\n?? reports/six-hour-20261127/replay_ninth.py\n?? reports/six-hour-20261127/replay_tenth.py\n?? research/six-hour-20261127/NINTH_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_ENERGY.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FullRankCurvature.lean\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/check_full_anchor.py\n?? research/six-hour-20261127/arithmetic/check_full_rank_curvature.py\n?? research/six-hour-20261127/arithmetic/check_microscopic_joining.py\n?? research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DefectBank.lean\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_BUDGET.md\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_CONTROLS.json\n?? research/six-hour-20261127/coupling/GlobalReturnBudget.lean\n?? research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json\n?? research/six-hour-20261127/coupling/OPTIMIZED_GLOBAL_RETURN.md\n?? research/six-hour-20261127/coupling/OptimizedBank.lean\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/ReturnTwentyFour.lean\n?? research/six-hour-20261127/coupling/check_canonical_paths.py\n?? research/six-hour-20261127/coupling/check_global_return.py\n?? research/six-hour-20261127/coupling/check_optimized_bank.py\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/CriticalFirstClear.lean\n?? research/six-hour-20261127/escape/CriticalSourceSector.lean\n?? research/six-hour-20261127/escape/DYADIC_FLUX_CONTROLS.json\n?? research/six-hour-20261127/escape/DYADIC_SIBLING_FLUX.md\n?? research/six-hour-20261127/escape/DyadicSiblingFlux.lean\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/FairFirstClear.lean\n?? research/six-hour-20261127/escape/SIGNED_PIECE_CONTROLS.json\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_critical_first_clear.py\n?? research/six-hour-20261127/escape/check_critical_source_sector.py\n?? research/six-hour-20261127/escape/check_dyadic_sibling_flux.py\n?? research/six-hour-20261127/escape/check_fair_first_clear.py\n?? research/six-hour-20261127/escape/check_signed_piece_mass.py",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {
+    "research/six-hour-20261127/arithmetic/check_anchor_carries.py": "7983c1c4a99fad8c01593b6364a3c9cfb86ae403f573ad04cd46fd1cdea69e96",
+    "research/six-hour-20261127/arithmetic/check_rival_pressure.py": "4abd900411ba42f3e456f71144db37985ec69e4a9d4c576d27a55695862613d0",
+    "research/six-hour-20261127/arithmetic/check_four_copy_tails.py": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a"
+  },
+  "lean": [
+    {
+      "path": "research/six-hour-20261127/arithmetic/TernaryPast.lean",
+      "source_sha256": "9dc790323893486e5a7d5019c9f57e7733c6cf3866186605d50d04b9812ac507",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-tenth-replay/build/TernaryPast.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/TernaryPast.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.572,
+      "output_sha256": "da2142841e15d19106bc670fab0c64bc24da89c8cf132304c5a1f465080299ac",
+      "declarations": {
+        "Collatz.TernaryPast.progression_spacing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TernaryPast.no_progression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.TernaryPast.pair_sums_split": []
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/CriticalSourceSector.lean",
+      "source_sha256": "2cfd98bdc53d9d9467b017de804e96d66900eb44643a5359610c5ad74d7133b7",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-tenth-replay/build/CriticalSourceSector.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/CriticalSourceSector.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.285,
+      "output_sha256": "38a7ff9b2c814e77c1877ed23fd90d40822c71115b832b36e692ae77b752bba6",
+      "declarations": {
+        "EscapeCriticalSourceSector.criticalGrade_spec": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.criticalDen_interval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.gate_after_minimum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.strict_cycle_gain": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.laps_exhaust_slack": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalSourceSector.critical_slack_join": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/CriticalFirstClear.lean",
+      "source_sha256": "c45e289871df0fd4590eaf0d22f9ab882227a73cadce1bc8cce258bb2dcd5bdb",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-tenth-replay/build/CriticalFirstClear.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/CriticalFirstClear.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.974,
+      "output_sha256": "c286aa7b592e2bab6e1a0e42d0af310f9bb81d7bb550d546ddff05d308d955af",
+      "declarations": {
+        "EscapeCriticalFirstClear.terminal_mod_three": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.full_input_last_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.compact_window": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EscapeCriticalFirstClear.automatic_to_census": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/escape/FairFirstClear.lean",
+      "source_sha256": "bc175c6dbe2f9b0bd4dfc9b35bc6596e096cf2f2355de80f386684b7ad52bc66",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-tenth-replay/build/FairFirstClear.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/FairFirstClear.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.471,
+      "output_sha256": "3826fe1b216801a0250b1fd976d99d1c9e394b8705efc1d79f93223630ce09a8",
+      "declarations": {
+        "EscapeFairFirstClear.tail_recurrence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeFairFirstClear.tail_atom": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EscapeFairFirstClear.automatic_tail": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/FullRankCurvature.lean",
+      "source_sha256": "c6e0e188bc4185839dfa89de212ee3b6913995e95487ddda904475da7ffc7a42",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-tenth-replay/build/FullRankCurvature.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/FullRankCurvature.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.246,
+      "output_sha256": "1ae3220f6655fef0a7b01028744119c38d09da658c2776bbf4309dfefc4eedd1",
+      "declarations": {
+        "Collatz.FullRankCurvature.carry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.FullRankCurvature.no_seam_predecessor": []
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/escape/check_critical_source_sector.py",
+      "source_sha256": "446bcef33ade165fd16a522f10920df898c19bb2aae984f1fdc765ada892b77e",
+      "expected": "research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json",
+      "expected_sha256": "23a365b1f8932ba75be07b7065c359f87e0e032299a5291ca6838e75ec457a4f",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_critical_source_sector.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.129,
+          "stdout_sha256": "23a365b1f8932ba75be07b7065c359f87e0e032299a5291ca6838e75ec457a4f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_critical_source_sector.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.225,
+          "stdout_sha256": "23a365b1f8932ba75be07b7065c359f87e0e032299a5291ca6838e75ec457a4f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_critical_first_clear.py",
+      "source_sha256": "4954d6c460a351064e3b346a7d1cef8a3ed59a8438c8ae6d512cfd9f507481de",
+      "expected": "research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json",
+      "expected_sha256": "e65fd52d1e4d9080fa1e97b789762bcd2cb93a6eaca893fef31c62da41d609d5",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_critical_first_clear.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.043,
+          "stdout_sha256": "e65fd52d1e4d9080fa1e97b789762bcd2cb93a6eaca893fef31c62da41d609d5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_critical_first_clear.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.079,
+          "stdout_sha256": "e65fd52d1e4d9080fa1e97b789762bcd2cb93a6eaca893fef31c62da41d609d5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/escape/check_fair_first_clear.py",
+      "source_sha256": "6f026e8bfb5e483b17aaaa18349aa4939f4ffd85fa5739e9a6cc85d0e9129081",
+      "expected": "research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json",
+      "expected_sha256": "620981d176e51603e26f7ccb5c19ecab336a5f1c6fbfe90fadda1c322fc42071",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_fair_first_clear.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.153,
+          "stdout_sha256": "620981d176e51603e26f7ccb5c19ecab336a5f1c6fbfe90fadda1c322fc42071",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/escape/check_fair_first_clear.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.214,
+          "stdout_sha256": "620981d176e51603e26f7ccb5c19ecab336a5f1c6fbfe90fadda1c322fc42071",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_full_rank_curvature.py",
+      "source_sha256": "ed20a223802b3004506d6a85b724d17b8876b48cef5b36e012e54063a79bdac5",
+      "expected": "research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json",
+      "expected_sha256": "2d5bdeffb0580434044beeebc87b92f7220f3914b4ba4da4c3e1d3ca111cceaf",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_full_rank_curvature.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.297,
+          "stdout_sha256": "2d5bdeffb0580434044beeebc87b92f7220f3914b4ba4da4c3e1d3ca111cceaf",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_full_rank_curvature.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.797,
+          "stdout_sha256": "2d5bdeffb0580434044beeebc87b92f7220f3914b4ba4da4c3e1d3ca111cceaf",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.log\n?? reports/six-hour-20261127/NINTH_AGENT_UPSTREAM_BUILD.py\n?? reports/six-hour-20261127/NINTH_BUILD_INTERRUPTS.json\n?? reports/six-hour-20261127/ROOT_NINTH_REVIEW.md\n?? reports/six-hour-20261127/replay_ninth.py\n?? reports/six-hour-20261127/replay_tenth.py\n?? research/six-hour-20261127/NINTH_CHECKPOINT.md\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FULL_ANCHOR_ENERGY.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE.md\n?? research/six-hour-20261127/arithmetic/FULL_RANK_CURVATURE_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FullRankCurvature.lean\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING.md\n?? research/six-hour-20261127/arithmetic/MICROSCOPIC_JOINING_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/check_full_anchor.py\n?? research/six-hour-20261127/arithmetic/check_full_rank_curvature.py\n?? research/six-hour-20261127/arithmetic/check_microscopic_joining.py\n?? research/six-hour-20261127/coupling/CANONICAL_PATHS.md\n?? research/six-hour-20261127/coupling/CANONICAL_PATH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DefectBank.lean\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_BUDGET.md\n?? research/six-hour-20261127/coupling/GLOBAL_RETURN_CONTROLS.json\n?? research/six-hour-20261127/coupling/GlobalReturnBudget.lean\n?? research/six-hour-20261127/coupling/OPTIMIZED_BANK_CONTROLS.json\n?? research/six-hour-20261127/coupling/OPTIMIZED_GLOBAL_RETURN.md\n?? research/six-hour-20261127/coupling/OptimizedBank.lean\n?? research/six-hour-20261127/coupling/ReturnAtlas.lean\n?? research/six-hour-20261127/coupling/ReturnTwentyFour.lean\n?? research/six-hour-20261127/coupling/check_canonical_paths.py\n?? research/six-hour-20261127/coupling/check_global_return.py\n?? research/six-hour-20261127/coupling/check_optimized_bank.py\n?? research/six-hour-20261127/coupling/pr197-floor/\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/CRITICAL_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SECTOR_CONTROLS.json\n?? research/six-hour-20261127/escape/CRITICAL_SOURCE_SECTOR.md\n?? research/six-hour-20261127/escape/CriticalFirstClear.lean\n?? research/six-hour-20261127/escape/CriticalSourceSector.lean\n?? research/six-hour-20261127/escape/DYADIC_FLUX_CONTROLS.json\n?? research/six-hour-20261127/escape/DYADIC_SIBLING_FLUX.md\n?? research/six-hour-20261127/escape/DyadicSiblingFlux.lean\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR.md\n?? research/six-hour-20261127/escape/FAIR_FIRST_CLEAR_CONTROLS.json\n?? research/six-hour-20261127/escape/FairFirstClear.lean\n?? research/six-hour-20261127/escape/SIGNED_PIECE_CONTROLS.json\n?? research/six-hour-20261127/escape/SIGNED_PIECE_MASS.md\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/check_critical_first_clear.py\n?? research/six-hour-20261127/escape/check_critical_source_sector.py\n?? research/six-hour-20261127/escape/check_dyadic_sibling_flux.py\n?? research/six-hour-20261127/escape/check_fair_first_clear.py\n?? research/six-hour-20261127/escape/check_signed_piece_mass.py"
+}

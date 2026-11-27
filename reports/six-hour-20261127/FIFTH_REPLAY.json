@@ -1,0 +1,688 @@
+{
+  "scope": "Exact new finite Lean statements and listed deterministic finite controls only",
+  "requested_kind": "all",
+  "repo_head_at_start": "807d67ab049f1646398d8ca8c20948cdc1d87742",
+  "repo_tree_at_start": "99d0117fe2e897bde7f963223ce317e038c823c4",
+  "working_tree_status_at_start": "?? reports/six-hour-20261127/replay_fifth.py\n?? research/six-hour-20261127/BINARY_PREFIX_CONTROLS.json\n?? research/six-hour-20261127/BINARY_PREFIX_CRITERION.md\n?? research/six-hour-20261127/BinaryPrefixCriterion.lean\n?? research/six-hour-20261127/arithmetic/FOUR_COPY_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FOUR_COPY_TAILS.md\n?? research/six-hour-20261127/arithmetic/ReverseEnergy.lean\n?? research/six-hour-20261127/arithmetic/check_four_copy_tails.py\n?? research/six-hour-20261127/check_binary_prefix.py\n?? research/six-hour-20261127/coupling/ANCHOR_OVERHEAD.md\n?? research/six-hour-20261127/coupling/ANCHOR_OVERHEAD_CONTROLS.json\n?? research/six-hour-20261127/coupling/AnchorRoute.lean\n?? research/six-hour-20261127/coupling/DELAYED_BATCH.md\n?? research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedBatch.lean\n?? research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json\n?? research/six-hour-20261127/coupling/NativeShadow.lean\n?? research/six-hour-20261127/coupling/NativeVisitors.lean\n?? research/six-hour-20261127/coupling/TERNARY_PUMP.md\n?? research/six-hour-20261127/coupling/TERNARY_PUMP_CONTROLS.json\n?? research/six-hour-20261127/coupling/TernaryPump.lean\n?? research/six-hour-20261127/coupling/check_anchor_overhead.py\n?? research/six-hour-20261127/coupling/check_delayed_batch.py\n?? research/six-hour-20261127/coupling/check_native_shadow.py\n?? research/six-hour-20261127/coupling/check_ternary_pump.py\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/TWO_SIGNED_HEIGHTS.md",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "extra_input_sha256": {},
+  "lean": [
+    {
+      "path": "research/unconventional-20261126/CoreBranching.lean",
+      "source_sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/CoreBranching.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/unconventional-20261126/CoreBranching.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.196,
+      "output_sha256": "0131106905fd325d80b6287abbc8a25afcead4438569baab7879a5412cc25974",
+      "declarations": {
+        "CoreBranching.step_double": [
+          "propext"
+        ],
+        "CoreBranching.step_odd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.run_add": [
+          "propext"
+        ],
+        "CoreBranching.four_double": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.six_rows": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CoreBranching.alternate_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_properties": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.child_injective_bit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_clock": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_height": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CoreBranching.ancestor_injective_at_depth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PeakRigidity.lean",
+      "source_sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/PeakRigidity.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PeakRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.106,
+      "output_sha256": "68ebbe036940932f3e823a1f59910deefff52eced8d95f1e7c95695e3eaee1e8",
+      "declarations": {
+        "PeakRigidity.shifted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.meeting_grade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.postpeak_rigidity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PeakRigidity.prepeak_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "source_sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/FloorCounting.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/FloorCounting.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.393,
+      "output_sha256": "004c3223f3421200d6ee3328e5cd3bc9bde5e25fbd3d07888cf3dbcd649bff3e",
+      "declarations": {
+        "FloorCounting.sharp": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FloorCounting.bits_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.native_word": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FloorCounting.visit_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/PaidCheckpoint.lean",
+      "source_sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/PaidCheckpoint.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/PaidCheckpoint.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.64,
+      "output_sha256": "23f099acaa8f36d1fb595449b1b3b007976e188f14ea1f7f5a2a861e01a6127c",
+      "declarations": {
+        "PaidCheckpoint.positive_turns": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.seed_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.delayed_address": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PaidCheckpoint.paid_parent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/DelayedTurns.lean",
+      "source_sha256": "3c349bae3d33bc5ac1acb4b7040ae76580a34a18131f67414ab397300f378771",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/DelayedTurns.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedTurns.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 44.504,
+      "output_sha256": "624ea7dcde4555ae7e59d34c2a7ccd03118ceea5bcf1e9db5cb943535409e929",
+      "declarations": {
+        "DelayedTurns.long_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedTurns.paid_delayed_merger": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/EarlierOffsets.lean",
+      "source_sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/EarlierOffsets.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/EarlierOffsets.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.484,
+      "output_sha256": "6782b1ba82e30e86f6f6e43fc50bdd47fc8681ee22d74ac0652772c323851f58",
+      "declarations": {
+        "EarlierOffsets.even_index": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.actual_decrease": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.earlier_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EarlierOffsets.gap_five_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/OffsetFour.lean",
+      "source_sha256": "bd82e9d4d5fa257dd5e8d7dc1ae1b65be139d44a3a75a2348b2a5f4ccfc9c4e7",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/OffsetFour.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/OffsetFour.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.622,
+      "output_sha256": "14a601165f2355d62986a9a21c03abcb68c00f33e65c4908a4ad2ad7ad7f08ab",
+      "declarations": {
+        "OffsetFour.earlier_after_turns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OffsetFour.paid_chart": [
+          "propext",
+          "Quot.sound"
+        ],
+        "OffsetFour.earlier_good_delayed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/BinaryPrefixCriterion.lean",
+      "source_sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/BinaryPrefixCriterion.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/BinaryPrefixCriterion.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.608,
+      "output_sha256": "b60b7c98cf9b43de8d88ef3d3c7d921c69bda2196442df61881ef8b4a9038dff",
+      "declarations": {
+        "BinaryPrefixCriterion.least_bad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.debt_reserve_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.minimum_gate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.principal_member": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.member_reciprocal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.finite_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BinaryPrefixCriterion.collatz_of_small_finite_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/DelayedBatch.lean",
+      "source_sha256": "60ba2bfc12122ff7eb72cba95135661d1296d4d8214ac38ff8f6f4366df612ea",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/DelayedBatch.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/DelayedBatch.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.42,
+      "output_sha256": "1624c418bfa5a16478e83e237ef3eabf6c20293e6a1401bc3b1198d70bbe440b",
+      "declarations": {
+        "DelayedBatch.lift_peak_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DelayedBatch.paid_record": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/TernaryPump.lean",
+      "source_sha256": "b5253ff43d2a1a39380b21e85bb9e7ffd71d30341d5415635f65b45a94145280",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/TernaryPump.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/TernaryPump.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.829,
+      "output_sha256": "9b28d99ae0079e5b2dc2b4bca698d1e8f6be39f7ad716aefc74b19c921e03486",
+      "declarations": {
+        "TernaryPump.pumped_paths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.paid_valuation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.deep_shift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TernaryPump.valuation_return": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/AnchorRoute.lean",
+      "source_sha256": "d0010a307aeadc84aa3fea17dc759695ca25020d0f9f277ff7f734e1f184ec43",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/AnchorRoute.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/AnchorRoute.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.919,
+      "output_sha256": "a9a726c45131032ec165600f3e91b39c721d0c67ec336b0e153846b2277c691c",
+      "declarations": {
+        "AnchorRoute.physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.slope": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.lift": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.project": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.adjusted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AnchorRoute.ones": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AnchorRoute.canonical_start": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/ReverseEnergy.lean",
+      "source_sha256": "43308a5c8ab7ae02c94d0f0a235799a9e9cbd6978d5e0cb8da67b7c77a72eb0e",
+      "command": [
+        "/workspace/scratch/9067acf67ee8/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/ad48b85f0ea2/sixhour-fifth-replay/build/ReverseEnergy.olean",
+        "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/ReverseEnergy.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.595,
+      "output_sha256": "b6baa38f1751b6b8fbddc8f9a3bd6531728044eb83dfd3dc4e1f8aeda88cf709",
+      "declarations": {
+        "Collatz.ReverseEnergy.integral_cut": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.reverse_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.two_rows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Collatz.ReverseEnergy.next_trit": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "controls": [
+    {
+      "script": "research/six-hour-20261127/check_binary_prefix.py",
+      "source_sha256": "800bc32347a2351dad753a266d8f170577cd80714fdab4708ff7f5f59652fe75",
+      "expected": "research/six-hour-20261127/BINARY_PREFIX_CONTROLS.json",
+      "expected_sha256": "e2697dc5abdbbbbb1168686c543f5d986b2bc790c21aec33ef95e276c98d4edc",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/check_binary_prefix.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.437,
+          "stdout_sha256": "e2697dc5abdbbbbb1168686c543f5d986b2bc790c21aec33ef95e276c98d4edc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/check_binary_prefix.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.478,
+          "stdout_sha256": "e2697dc5abdbbbbb1168686c543f5d986b2bc790c21aec33ef95e276c98d4edc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_delayed_batch.py",
+      "source_sha256": "51cf5a2ce6abd1372606dd27dbe7155fb1046c173b83134bc852540649701c96",
+      "expected": "research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json",
+      "expected_sha256": "b581ba5b21b8be9993d422565ee9654dd6861479ff5b5446c3510ac2e120c45f",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_batch.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 16.344,
+          "stdout_sha256": "b581ba5b21b8be9993d422565ee9654dd6861479ff5b5446c3510ac2e120c45f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_delayed_batch.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 16.89,
+          "stdout_sha256": "b581ba5b21b8be9993d422565ee9654dd6861479ff5b5446c3510ac2e120c45f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_ternary_pump.py",
+      "source_sha256": "a267f66801a8bd62f45faafcbd26d925e3977445969b6b34fe6d6e460a0725bb",
+      "expected": "research/six-hour-20261127/coupling/TERNARY_PUMP_CONTROLS.json",
+      "expected_sha256": "ee0b6f862c0d252af4a8c0470a3e8961c82d8bcf1b3f7b130ddb3fc05e7831f2",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_ternary_pump.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.126,
+          "stdout_sha256": "ee0b6f862c0d252af4a8c0470a3e8961c82d8bcf1b3f7b130ddb3fc05e7831f2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_ternary_pump.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.226,
+          "stdout_sha256": "ee0b6f862c0d252af4a8c0470a3e8961c82d8bcf1b3f7b130ddb3fc05e7831f2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/coupling/check_anchor_overhead.py",
+      "source_sha256": "73dc7a1f64be4fef3b7f4a07e04ab0addf1b836b849bb841f95474bb71322b4e",
+      "expected": "research/six-hour-20261127/coupling/ANCHOR_OVERHEAD_CONTROLS.json",
+      "expected_sha256": "bf9f56a2fcc634d0ef9e1d48e60505aed8353128261300c9bdaa99d8db732562",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_anchor_overhead.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.689,
+          "stdout_sha256": "bf9f56a2fcc634d0ef9e1d48e60505aed8353128261300c9bdaa99d8db732562",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/coupling/check_anchor_overhead.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 0.583,
+          "stdout_sha256": "bf9f56a2fcc634d0ef9e1d48e60505aed8353128261300c9bdaa99d8db732562",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    },
+    {
+      "script": "research/six-hour-20261127/arithmetic/check_four_copy_tails.py",
+      "source_sha256": "d52856216ee7e0fa96b24aa6ce0db710b0748af096aa499cc6885ff95e20fc3a",
+      "expected": "research/six-hour-20261127/arithmetic/FOUR_COPY_CONTROLS.json",
+      "expected_sha256": "3570f7894511a635edfe7eaaff04aff254e7df57371933ac3598261a876f0b98",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_four_copy_tails.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 53.096,
+          "stdout_sha256": "3570f7894511a635edfe7eaaff04aff254e7df57371933ac3598261a876f0b98",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/ad48b85f0ea2/collatz-201/research/six-hour-20261127/arithmetic/check_four_copy_tails.py"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 51.352,
+          "stdout_sha256": "3570f7894511a635edfe7eaaff04aff254e7df57371933ac3598261a876f0b98",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "complete_json_matches": true
+        }
+      ],
+      "normal_optimized_bytes_equal": true
+    }
+  ],
+  "all_requested_checks_passed": true,
+  "working_tree_status_at_end": "?? reports/six-hour-20261127/replay_fifth.py\n?? research/six-hour-20261127/BINARY_PREFIX_CONTROLS.json\n?? research/six-hour-20261127/BINARY_PREFIX_CRITERION.md\n?? research/six-hour-20261127/BinaryPrefixCriterion.lean\n?? research/six-hour-20261127/arithmetic/FOUR_COPY_CONTROLS.json\n?? research/six-hour-20261127/arithmetic/FOUR_COPY_TAILS.md\n?? research/six-hour-20261127/arithmetic/ReverseEnergy.lean\n?? research/six-hour-20261127/arithmetic/check_four_copy_tails.py\n?? research/six-hour-20261127/check_binary_prefix.py\n?? research/six-hour-20261127/coupling/ANCHOR_OVERHEAD.md\n?? research/six-hour-20261127/coupling/ANCHOR_OVERHEAD_CONTROLS.json\n?? research/six-hour-20261127/coupling/AnchorLookup.lean\n?? research/six-hour-20261127/coupling/AnchorRoute.lean\n?? research/six-hour-20261127/coupling/DELAYED_BATCH.md\n?? research/six-hour-20261127/coupling/DELAYED_BATCH_CONTROLS.json\n?? research/six-hour-20261127/coupling/DelayedBatch.lean\n?? research/six-hour-20261127/coupling/NATIVE_SHADOW_CONTROLS.json\n?? research/six-hour-20261127/coupling/NativeClassification.lean\n?? research/six-hour-20261127/coupling/NativeShadow.lean\n?? research/six-hour-20261127/coupling/NativeVisitors.lean\n?? research/six-hour-20261127/coupling/TERNARY_PUMP.md\n?? research/six-hour-20261127/coupling/TERNARY_PUMP_CONTROLS.json\n?? research/six-hour-20261127/coupling/TernaryPump.lean\n?? research/six-hour-20261127/coupling/check_anchor_overhead.py\n?? research/six-hour-20261127/coupling/check_delayed_batch.py\n?? research/six-hour-20261127/coupling/check_native_shadow.py\n?? research/six-hour-20261127/coupling/check_ternary_pump.py\n?? research/six-hour-20261127/escape/SignedPieceHeight.lean\n?? research/six-hour-20261127/escape/TWO_SIGNED_HEIGHTS.md"
+}

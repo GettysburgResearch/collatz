@@ -1,0 +1,34 @@
+# Finite-place closure at one prescribed ordinary source
+
+**Status.** Proposed corollary of [COHERENT_SWITCHES.md](COHERENT_SWITCHES.md), addressing the difference between local contact with a fixed integer and equality to that integer. It constructs different rational periodic points as the finite accuracy increases.
+
+Fix a **single** positive integer $x_*$ prime to 3, a phase $\tau\in\mathbb R/\mathbb Z$, and $0<a<1/2$. There are marked positive rational periodic points $z_i$ of least periods $n_i\to\infty$ with the following simultaneous properties:
+
+1. $z_i\to x_*$ in $\mathbb Q_p$ for **every individual prime** $p$, and $\log_2 z_i\bmod1\to\tau$. The native future scripts of $z_i$ agree with arbitrarily long prefixes of the genuine future of this same $x_*$.
+2. For every $5\le p\le n_i^a$ prime, $v_p(z_i-x_*)\ge\lfloor n_i^a\rfloor$. The exact denominators $d_i>1$ obey $\log d_i\ll n_i^{1-\eta}$ with an $\eta>0$ depending only on $a$.
+3. The least real phase and the smallest real gap between distinct physical phases both tend to infinity. The minimum pairwise gap can still be taken at least $n_i^{\kappa'}$ for some $\kappa'>0$ depending only on $a$.
+
+The restriction $3\nmid x_*$ is necessary: after the first odd step every rational cycle phase is a 3-adic unit, and even steps preserve this property. These are coordinatewise finite-place limits. The finite-adèle neighborhood $x_*+\widehat{\mathbb Z}$ contains no $z_i$; membership there would require $z_i-x_*$ to be an ordinary integer.
+
+## Prescribing the two exceptional places
+
+First fix an integer accuracy $k$. Prepend to every macro the actual first $k$ shortcut parity digits of $x_*$. This enforces $z_i\equiv x_*\bmod2^k$ by the affine parity-word bijection. At the last native positions of each macro put a prescribed backward predecessor word of $x_*$ containing $k$ odd steps. It exists while keeping every predecessor positive and prime to three. From a target integer $u$ prime to 3 choose an exponent $h\ge1$ with $2^h u\equiv4\bmod9$ and $2^h u>1$; this uses that 2 generates the units modulo 9. The integer $(2^h u-1)/3$ is positive and a 3-unit; its first odd step followed by $h-1$ even steps reaches $u$. Iterating gives the word. If its starting predecessor is even, the displayed path would not have the required parity; in fact $2^h u-1$ and its quotient by the odd integer 3 are both odd. Every mark just after that word is congruent to $x_*$ modulo $3^k$, because the word multiplies differences of integral 3-adic inputs by $3^k/2^s$.
+
+The macro order is now the fixed prefix, the two adjacent coherent motifs, one free common remainder, and the fixed suffix. Subtract the lengths and grades of the two fixed words before prescribing the remainder's grade. At each fixed $k$ these insertions cost a constant; they keep all prefix-discrepancy, multiplier and positive-offset bounds uniform in $m,r,t,L$ with constants allowed to depend on $k,x_*$. The motifs remain adjacent, with unchanged gain ratio $3^Q/2^L$. The common-slope, native least-period proof and all three cases of physical separation in [COHERENT_SWITCHES.md](COHERENT_SWITCHES.md) therefore apply. The upper bound $c_1\ll_{k,x_*}2^m L$ used to certify nonintegrality also persists.
+
+## Prescribing all other small primes
+
+In the notation of the coherent construction put
+\[
+ M=\prod_{5\le p\le n^a,\ p\ {\rm prime}}p^{\lfloor n^a\rfloor},\qquad
+ Y=\prod_{5\le p\le n^a,\ p\ {\rm prime}}p^{v_p(B^{rt}-A^{rt})},\qquad V=MY.
+\]
+An elementary sum gives $\log M\ll n^{2a}\log(2n)$. The existing Yu bound for $Y$ shows that the carry patch for $V$ still has length $P\ll n^{2a}(\log n)^{O(1)}=o(L)$ for the power choices in section 6 of that proof. Use the inner motif patch to impose $c_1\equiv c_2\equiv0\pmod V$. After the real choice described below, use the free common remainder patch to impose $C_0\equiv(B-A)x_*\pmod V$. Its carry coefficient in $C_0$ is a product of powers of 2 and 3, hence a unit modulo $V$ despite the added prefix and suffix. Every macro now has carry congruent to $(B-A)x_*$ modulo $V$. The full carry is therefore congruent to $(B^{rt}-A^{rt})x_*$ modulo $V$ by the geometric sum. Dividing by that full determinant proves assertion 2 at all tested primes with their specified powers. The independent large factor surviving in (4) of the coherent proof still gives $d_i>1$ for sufficiently large $m$.
+
+## Prescribing the real circle coordinate
+
+Keep a contiguous set of $O(P)$ full width-eight blocks for the pending remainder patch. In the other full remainder blocks of grade $u\in\{1,\dots,7\}$ select either $1^u0^{8-u}$ or $0^{8-u}1^u$. For large $m$ the graded remainder slopes tend to $\beta$, so $u\in\{5,6\}$, or $u\in\{4,5,6\}$ without restricting the initial range. The normalized carries of these two choices have ratio exactly $2^{8-u}\ge4$, and the smaller is bounded below by a positive absolute constant. All outer multiplier weights of the blocks are positive and fixed because their grades are fixed; their values lie in $[c_{k,x_*},C_{k,x_*}]$. The sum of the low-choice contributions is $\gg_{k,x_*}m$. The prescribed exterior words, the two motifs, the reserved patch and the last incomplete block contribute $O_{k,x_*}(1+L+P)=o(m)$ normalized carry. The two single-pulse corrections to $(1-\lambda)z_i$ are $O_{k,x_*}(L)$ by (4) of the coherent proof. Consequently the two all-low and all-high choices for $(1-\lambda)z_i$ have ratio greater than two for large $m$.
+
+Temporarily fix the reserved patch to any valid initial pattern. Changing free blocks to their high choices one at a time increases $(1-\lambda)z_i$ in increments $O_{k,x_*}(1)$. One stopping choice thus puts $\log_2 z_i\bmod1$ within $O_{k,x_*}(1/m)$ of $\tau$. Finally repair the desired residue in the reserved patch, changing the normalized total by $O_{k,x_*}(P)$ and the log phase by $o(1)$ at this fixed $k$. No assumption on the distribution of the full macro convergents in residue classes or on the distribution of $\log_2(m/\delta)$ is needed.
+
+Choose $k\to\infty$ diagonally, taking $m$ large enough at stage $k$ that all bounds hold, the log-phase error is below $1/k$, and the minimum and the least gap exceed $k$. The positive exponent $\kappa$ of coherent separation is independent of fixed exterior words; by enlarging $m$ at each stage the fixed constants can be absorbed using any $0<\kappa'<\kappa$. This proves the assertions. For every fixed subsequent time $h$, the common-prefix affine identity gives $T^h z_i\to T^h x_*$ at each individual finite prime. Its real log phase tends to $\tau+p_h\log_2 3$ modulo 1, where $p_h$ is the odd count in that true prefix and the bounded affine offset is negligible at $z_i\to+\infty$. No single rational point is asserted to have the whole infinite ordinary parity sequence of $x_*$.

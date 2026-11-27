@@ -1,0 +1,125 @@
+{
+  "scope": "Second six-hour checkpoint: exact source identity, not mathematical acceptance of unstated claims",
+  "base_head": "3376695869fcf7d2e34f676a876d2b78a391d799",
+  "files": [
+    {
+      "path": "reports/six-hour-20261127/ROOT_SECOND_REVIEW.md",
+      "bytes": 9797,
+      "sha256": "4612b7203913cb229a8cd6b23ed3d8c14021313d785cc094b8514c23aac2bffc"
+    },
+    {
+      "path": "reports/six-hour-20261127/SECOND_REPLAY.json",
+      "bytes": 18967,
+      "sha256": "7146b48fecbecd76cf26d10fc21dcd543a3e2dc4fc7def81a75d90f5f4b38ad0"
+    },
+    {
+      "path": "reports/six-hour-20261127/replay_second.py",
+      "bytes": 8713,
+      "sha256": "11c8121a84f17a0e50af48a388e9ab9f322ee9c3c8740b907c39e9e7f0150baa"
+    },
+    {
+      "path": "research/six-hour-20261127/OrdinaryGeodesic.lean",
+      "bytes": 5456,
+      "sha256": "4eea6b101ba63b2d6e1c7f53c4ed6b3eae0b5d9e18d8eb01de24f84f9f00c21c"
+    },
+    {
+      "path": "research/six-hour-20261127/SECOND_CHECKPOINT.md",
+      "bytes": 6826,
+      "sha256": "f0e7c9164502b66d1d7bac43b5a0be75ef73876aa1f3f862d33e0e14b3fbd5ac"
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/HAAR_MODULUS.md",
+      "bytes": 3422,
+      "sha256": "3e44896314a782caf19dfdb1499d8d18cf844ff4a4e17d69ff2ba6df3117b407"
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/RESET_FRONT.md",
+      "bytes": 7310,
+      "sha256": "024da423e80da1c8e5a53bcba520bdf22d51409c26913ec87231b8778ceefe58"
+    },
+    {
+      "path": "research/six-hour-20261127/arithmetic/ResetFront.lean",
+      "bytes": 2268,
+      "sha256": "add34999cc3be3d7559c0ab941e494452028144655bcdbd21e05f52a71ea22d5"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/CROSS_CLASS_FLOOR.md",
+      "bytes": 4386,
+      "sha256": "eecf05dc287e4204403aeb958e8454893034fdafd75bc8faaaee1543486294c6"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FINITE_FLOOR.md",
+      "bytes": 7404,
+      "sha256": "d234b8f5e42b87334e3ea544c108f88255a169789d02ddaa9b009166d168ab8f"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FLOOR_CONTROLS.json",
+      "bytes": 463,
+      "sha256": "4f11266e0599f72d6471621c94d1cd8d3c0d94b6241a2f8b25e5dd879f1f2ac8"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCertificate.lean",
+      "bytes": 13151,
+      "sha256": "5688f1929acdd887c41ea02c3177736cae5bed4f45a4f3ff3f1e4c28bf6ba519"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/FloorCounting.lean",
+      "bytes": 14561,
+      "sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372"
+    },
+    {
+      "path": "research/six-hour-20261127/coupling/floor_bound.py",
+      "bytes": 4121,
+      "sha256": "0649236941d52adb00e46323fdeb41ec8a97457e36882f964c8aea13b3181bea"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/FINITE_DECODER_ENTROPY.md",
+      "bytes": 9114,
+      "sha256": "0dbed970f5cbc272a5ec3d4bbc59da7374f0c1cb281e86ab92c7c3e8208cd3e4"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/GEODESIC_CONTROLS.json",
+      "bytes": 2647,
+      "sha256": "433acb0b922105b366a659ae3dc48effbe2f94f324bd91ccfef3ed999318869e"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/GEODESIC_POSTERIOR.md",
+      "bytes": 8952,
+      "sha256": "61919acbb4648358080af44261b20d09c27e48ebc539e895ab73d9e860698ef8"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/GeodesicPosterior.lean",
+      "bytes": 3407,
+      "sha256": "27e3c36fa2f5a9542e7f95723133cb8ad99bb75d094e0a48a8bc0c26cace3b5a"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/TROPICAL_CONTROLS.json",
+      "bytes": 22122,
+      "sha256": "c19211d634f5ab8553df7697181b01cf052458d348c4ea2baefa13217340459a"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/TROPICAL_SIBLINGS.md",
+      "bytes": 9681,
+      "sha256": "ca0cc59fef5404b383850fb0f96fcd7992d193f12f07c54b5e9129ae0c974f17"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/UNIVERSAL_TABLE.md",
+      "bytes": 6420,
+      "sha256": "3c7475404c7e711f389c92f41fc869199a517cfca4d364ff296ae658928d5729"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/check_geodesic.py",
+      "bytes": 5414,
+      "sha256": "24d33e79483a60b77d9ed16c028d2897e8c2c33f2f30d62a1cc798526728d9f1"
+    },
+    {
+      "path": "research/six-hour-20261127/escape/check_tropical.py",
+      "bytes": 3582,
+      "sha256": "e868d8d897df01a5d678c31e6d49d6e55e8fa8b1f89195066e60f26e7c18f0eb"
+    }
+  ],
+  "manifest_excludes_itself": true,
+  "lean_new_declarations": 18,
+  "lean_rebuilt_dependency_declarations": 16,
+  "normal_optimized_control_pairs": 3
+}

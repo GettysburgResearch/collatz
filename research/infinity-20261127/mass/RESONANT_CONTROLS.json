@@ -1,0 +1,34 @@
+{
+  "local": {
+    "carries": [
+      1853015893884545,
+      58710943741132417,
+      150865148058652885
+    ],
+    "circular_gaps": [
+      56857927847247872,
+      92154204317520468,
+      139218243986943404
+    ],
+    "literal_small_prefix_suffix_paths": 150,
+    "modulus": 72057594037927936,
+    "odd_phases": 32
+  },
+  "original_gate": [
+    {
+      "boundary_words": 5,
+      "odd_depth": 4,
+      "probability": "35/128"
+    },
+    {
+      "boundary_words": 227,
+      "odd_depth": 8,
+      "probability": "2605/16384"
+    },
+    {
+      "boundary_words": 15090,
+      "odd_depth": 12,
+      "probability": "113827/1048576"
+    }
+  ]
+}

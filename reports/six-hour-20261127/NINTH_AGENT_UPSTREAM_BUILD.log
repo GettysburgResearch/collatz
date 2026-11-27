@@ -1,0 +1,26 @@
+ReverseBasin 0  
+UnitResidueExchange 0 'UnitResidueExchange.unit_one_exchange' depends on axioms: [propext]
+'UnitResidueExchange.residue17_descends' depends on axioms: [propext]
+ 
+NonunitExit 0 'NonunitExit.physical_chain' depends on axioms: [propext, Quot.sound]
+'NonunitExit.directed_successor' depends on axioms: [propext, Quot.sound]
+'NonunitExit.shadow_lift' depends on axioms: [propext, Quot.sound]
+'NonunitExit.denom_iter' depends on axioms: [propext, Quot.sound]
+'NonunitExit.shadow_certifies' depends on axioms: [propext, Quot.sound]
+ 
+DirectedEleven 0 'DirectedEleven.all_routes_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DirectedEleven.all_midpoints_located' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DirectedEleven.hit_at_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DirectedEleven.checkedSound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ 
+TwoOddCertificate 0 'CollatzTwoOdd.two_odd_unbounded' depends on axioms: [propext, Quot.sound]
+'CollatzTwoOdd.two_odd_progress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTwoOdd.least_defect_not_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+ 
+QuantitativeReturn 0 'CollatzQuantitativeReturn.bounded_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+ 
+GlobalReturnBudget 0 'GlobalReturnBudget.hits' does not depend on any axioms
+'GlobalReturnBudget.basin' does not depend on any axioms
+'GlobalReturnBudget.bounded_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalReturnBudget.least_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+ 

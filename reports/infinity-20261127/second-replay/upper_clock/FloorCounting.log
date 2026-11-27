@@ -1,0 +1,4 @@
+'FloorCounting.sharp' depends on axioms: [propext, Quot.sound]
+'FloorCounting.bits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FloorCounting.native_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FloorCounting.visit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

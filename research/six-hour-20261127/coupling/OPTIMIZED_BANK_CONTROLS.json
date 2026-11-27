@@ -1,0 +1,46 @@
+{
+  "binary_to_canonical_budget": 4096,
+  "distinct_nonempty_words": 344,
+  "global_budget_with_first_factor_24": 98304,
+  "max_historical_defects_on_branch": 11,
+  "max_radix_splits_on_branch": 15,
+  "max_word_length": 192,
+  "nodes": {
+    "direct_endpoints": 174,
+    "nonunit": 251,
+    "split2": 138,
+    "split3": 383,
+    "unit": 251,
+    "use": 1156
+  },
+  "selected_history_index_from_newest": {
+    "0": 276,
+    "1": 2,
+    "10": 1,
+    "2": 26,
+    "3": 143,
+    "4": 228,
+    "5": 140,
+    "6": 166,
+    "7": 102,
+    "8": 62,
+    "9": 10
+  },
+  "suprema_over_physical_rows_relative_to_original_1mod16_source": {
+    "canonical_sources": "71562209/18657",
+    "canonical_triples": "71562209/6219",
+    "charged_sources": "15902713/6219",
+    "charged_triples": "15902713/2073",
+    "directed_word_vertices": "2083119305552/58929",
+    "historical_defect_sources": "1532944382305/219537",
+    "historical_defect_triples": "1532944382305/73179",
+    "ordinary_merger_vertices": "10347374580560/219537"
+  },
+  "word_operations_with_repetitions": {
+    "D": 17296,
+    "E": 18027,
+    "I": 16274,
+    "M": 1713,
+    "O": 15543
+  }
+}

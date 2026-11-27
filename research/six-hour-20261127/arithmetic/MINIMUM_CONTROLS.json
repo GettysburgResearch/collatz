@@ -1,0 +1,27 @@
+{
+  "small_literal_candidates": 16,
+  "small_minima_directly_traced": 524287,
+  "last_small_exit": 24,
+  "middle_height_floor": 1048576,
+  "exclusive_height_ceiling": 2361183241434822606848,
+  "past_odd_depth": 30,
+  "future_odd_depth": 30,
+  "past_words": 2510811,
+  "future_grades": [
+    {
+      "future_grade": 46,
+      "future_words": 2714175,
+      "physical_candidates": 555231,
+      "latest_exit": 53,
+      "sum_of_sources_mod_2^61_minus_1": 959280228478010551
+    },
+    {
+      "future_grade": 47,
+      "future_words": 1339481,
+      "physical_candidates": 136825,
+      "latest_exit": 52,
+      "sum_of_sources_mod_2^61_minus_1": 154919017997659373
+    }
+  ],
+  "all_middle_candidates": 692056
+}

@@ -1,0 +1,37 @@
+{
+  "two_gap_cases": 6760,
+  "sharp_cutoff_failures_expected": 3,
+  "small_row_comparisons": 480,
+  "small_row_sources": 64,
+  "literal_padded_sources": 40336,
+  "large_literal_rows": [
+    {
+      "odd_depth": 52,
+      "clock": 104,
+      "tree_depth": 3,
+      "ternary_digits": 1,
+      "distinct_sources": 16
+    },
+    {
+      "odd_depth": 105,
+      "clock": 210,
+      "tree_depth": 6,
+      "ternary_digits": 2,
+      "distinct_sources": 384
+    },
+    {
+      "odd_depth": 147,
+      "clock": 294,
+      "tree_depth": 9,
+      "ternary_digits": 2,
+      "distinct_sources": 3072
+    },
+    {
+      "odd_depth": 224,
+      "clock": 448,
+      "tree_depth": 11,
+      "ternary_digits": 3,
+      "distinct_sources": 36864
+    }
+  ]
+}

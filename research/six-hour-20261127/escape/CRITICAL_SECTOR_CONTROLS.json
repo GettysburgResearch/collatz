@@ -1,0 +1,153 @@
+{
+  "compact_lifts": [
+    {
+      "denominator_exponent": 324,
+      "depth": 512,
+      "earlier_landing_by": 55,
+      "numerator_bits": 514,
+      "ones_prelude": 30,
+      "target": 180143985094819840
+    },
+    {
+      "denominator_exponent": 324,
+      "depth": 512,
+      "earlier_landing_by": 55,
+      "numerator_bits": 514,
+      "ones_prelude": 30,
+      "target": 180143985094819841
+    },
+    {
+      "denominator_exponent": 324,
+      "depth": 512,
+      "earlier_landing_by": 55,
+      "numerator_bits": 514,
+      "ones_prelude": 30,
+      "target": 180143985094819842
+    }
+  ],
+  "finite_sectors": [
+    {
+      "critical_grade": 4,
+      "critical_word_counts_by_excess": {
+        "0": 3,
+        "1": 1
+      },
+      "distinct_endpoints": 11,
+      "full_rational_scan": true,
+      "max_ordinary_endpoint_by_excess": {
+        "0": 9,
+        "1": 23
+      },
+      "n": 5,
+      "reduced_sources": 16
+    },
+    {
+      "critical_grade": 6,
+      "critical_word_counts_by_excess": {
+        "0": 12,
+        "1": 6,
+        "2": 1
+      },
+      "distinct_endpoints": 21,
+      "full_rational_scan": true,
+      "max_ordinary_endpoint_by_excess": {
+        "0": 10,
+        "1": 29,
+        "2": 71
+      },
+      "n": 8,
+      "reduced_sources": 76
+    },
+    {
+      "critical_grade": 8,
+      "critical_word_counts_by_excess": {
+        "0": 85,
+        "1": 88,
+        "2": 42,
+        "3": 10,
+        "4": 1
+      },
+      "distinct_endpoints": 59,
+      "full_rational_scan": true,
+      "max_ordinary_endpoint_by_excess": {
+        "0": 9,
+        "1": 29,
+        "2": 76,
+        "3": 215,
+        "4": 647
+      },
+      "n": 12,
+      "reduced_sources": 904
+    },
+    {
+      "critical_grade": 11,
+      "critical_word_counts_by_excess": {
+        "0": 961,
+        "1": 730,
+        "2": 320,
+        "3": 88,
+        "4": 14,
+        "5": 1
+      },
+      "distinct_endpoints": 120,
+      "full_rational_scan": false,
+      "max_ordinary_endpoint_by_excess": {
+        "0": 13,
+        "1": 38,
+        "2": 98,
+        "3": 296,
+        "4": 809,
+        "5": 1943
+      },
+      "n": 16,
+      "reduced_sources": 8456
+    },
+    {
+      "critical_grade": 13,
+      "critical_word_counts_by_excess": {
+        "0": 8045,
+        "1": 9592,
+        "2": 6167,
+        "3": 2595,
+        "4": 760,
+        "5": 150,
+        "6": 18,
+        "7": 1
+      },
+      "distinct_endpoints": 328,
+      "full_rational_scan": false,
+      "max_ordinary_endpoint_by_excess": {
+        "0": 11,
+        "1": 32,
+        "2": 98,
+        "3": 269,
+        "4": 749,
+        "5": 2105,
+        "6": 5831,
+        "7": 17495
+      },
+      "n": 20,
+      "reduced_sources": 109312
+    }
+  ],
+  "mechanical_words": [
+    {
+      "critical_den_to_binary_ratio_floor": 2,
+      "depth": 32,
+      "grade": 21,
+      "offset_floor": 12
+    },
+    {
+      "critical_den_to_binary_ratio_floor": 1,
+      "depth": 256,
+      "grade": 162,
+      "offset_floor": 66
+    },
+    {
+      "critical_den_to_binary_ratio_floor": 2,
+      "depth": 2048,
+      "grade": 1293,
+      "offset_floor": 796
+    }
+  ]
+}
