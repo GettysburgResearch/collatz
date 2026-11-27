@@ -5,7 +5,7 @@ Use the notation and the explicit source-qualified hypotheses of the [universal 
  B_{d,m}(y)=3^d2^{-m}|A_{d,m}(y)|/y,\qquad
  D(y)=\sup_{d,m} B_{d,m}(y),\qquad W_d=\sup_{y,m} B_{d,m}(y).
 \]
-The established cutoff bounds every row restricted to sources \(z>R\) by \(\tau(R)=|K_{1/R}|\to0\). The uniform lower bound on simple corrections is denoted by \(c>0\).
+The established cutoff bounds every row restricted to sources \(z>R\) by \(\tau(R)=|K_{1/R}|\to0\). The uniform lower bound on simple corrections is denoted by \(c>0\). All source-cutoff uses in this note also follow from the [independent uniform first-arrival argument](CLOCK_ANTICONCENTRATION.md), with \(\tau(R)\ll1/\sqrt{\log R}\). This provides a self-contained written proof of the maximizer statements below, while the stronger closed-support theorem retains its separate assumptions.
 
 ## Exact stabilization on every putative escaping component
 

@@ -1,0 +1,749 @@
+{
+  "schema": "collatz-infinite-descent-lean/v1",
+  "started_utc": "2026-11-27T16:15:49.890049+00:00",
+  "scope": "Fresh strict compilation of this packet and transitive axiom audit; not a fresh Mathlib build or proof of Collatz",
+  "passed": false,
+  "modules": [
+    {
+      "source": "imports/pr201/CoreBranching.lean",
+      "sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "exit_code": 0,
+      "seconds": 5.3351,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'CoreBranching.step_double' depends on axioms: [propext]\n'CoreBranching.step_odd' depends on axioms: [propext, Quot.sound]\n'CoreBranching.run_add' depends on axioms: [propext]\n'CoreBranching.four_double' depends on axioms: [propext, Quot.sound]\n'CoreBranching.six_rows' depends on axioms: [propext, Quot.sound]\n'CoreBranching.alternate_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_injective_bit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_injective_at_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PeakRigidity.lean",
+      "sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "exit_code": 0,
+      "seconds": 4.9535,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'PeakRigidity.shifted' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.meeting_grade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.postpeak_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.prepeak_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/AsynchronousGuard.lean",
+      "sha256": "56ddfd6d0a75efc6289a6ceb723e760b87436ea125e0a5354fdf34eebbc78f6b",
+      "exit_code": 0,
+      "seconds": 2.5069,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'AsynchronousGuard.affine' depends on axioms: [propext, Quot.sound]\n'AsynchronousGuard.meeting_is_aligned' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AsynchronousGuard.no_meeting_from_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/FairGrid.lean",
+      "sha256": "e94025ba343e68ea2fc3c17d429525d0eb5176c9e48cd8a13469b3fa81397a63",
+      "exit_code": 0,
+      "seconds": 1.8709,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'FairGrid.mark_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.interval_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.cover_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.ordinary_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ReciprocalPacking.lean",
+      "sha256": "d16b647a0627c21bc1a8caf4514388286d63277136eb8e3c929536c615c37584",
+      "exit_code": 0,
+      "seconds": 1.8509,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'ReciprocalPacking.finite_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ReciprocalTrace.lean",
+      "sha256": "004802558b30225afd3c6223c5835942a9a11fca9f76deefe12c7e5e70012d6a",
+      "exit_code": 0,
+      "seconds": 2.8193,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'ReciprocalTrace.log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReciprocalTrace.mark_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReciprocalTrace.first_simple' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/FloorCounting.lean",
+      "sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "exit_code": 0,
+      "seconds": 3.7743,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'FloorCounting.sharp' depends on axioms: [propext, Quot.sound]\n'FloorCounting.bits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.native_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.visit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PaidCheckpoint.lean",
+      "sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "exit_code": 0,
+      "seconds": 2.5623,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'PaidCheckpoint.positive_turns' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.seed_paths' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PaidCheckpoint.delayed_address' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.paid_parent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/EarlierOffsets.lean",
+      "sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "exit_code": 0,
+      "seconds": 10.4754,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'EarlierOffsets.even_index' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.actual_decrease' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.earlier_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.gap_five_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/BinaryPrefixCriterion.lean",
+      "sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+      "exit_code": 0,
+      "seconds": 2.373,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr201",
+      "stdout": "'BinaryPrefixCriterion.least_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.debt_reserve_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.minimum_gate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.principal_member' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.member_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.finite_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.collatz_of_small_finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/BinaryCylinder.lean",
+      "sha256": "51eabc7f513c18c20006219cef8756d715ed784204bf601e2b8f0735f5c298ed",
+      "exit_code": 0,
+      "seconds": 2.0177,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'BinaryCylinder.grade_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryCylinder.accepted_card_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "exit_code": 0,
+      "seconds": 3.5168,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TwoGapRouting.lean",
+      "sha256": "a25c07958adbee6abe72d0ff57a347ce386b0f919e616db33aea8181199daa6b",
+      "exit_code": 0,
+      "seconds": 4.4787,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.TwoGapRouting.address' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.route' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FixedGapClock.lean",
+      "sha256": "a3a59749d8c3d7b5e37362601a2c2b706dab49302fa42e7835bfb2a46104244e",
+      "exit_code": 0,
+      "seconds": 11.8966,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FixedGapClock.cover_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedGapClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/Threshold.lean",
+      "sha256": "643c650836d43f10da37ce99bee573cb49f39a61f0e944d46c36b91628ca68bb",
+      "exit_code": 0,
+      "seconds": 2.0171,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.MergerThreshold.forward_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.seven_floor' depends on axioms: [propext, Quot.sound]\n'Collatz.MergerThreshold.seven_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.cheap_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.base_strict' depends on axioms: [propext]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FirstArrival.lean",
+      "sha256": "52cafda6b1bfbbe94cb86cc64433dff63265353c5f04bc8caae4a8452fe8c3ec",
+      "exit_code": 0,
+      "seconds": 3.6635,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FirstArrival.affine_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.attach' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.branch' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.first_twins' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/OrbitPacking.lean",
+      "sha256": "b9cbd69c70f6d1d292b24ea6f1f4efb4cb33736d93e2f4614a9086543cefc447",
+      "exit_code": 0,
+      "seconds": 1.8975,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'OrbitPacking.grade_tail_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.injective_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.simple_prefix_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.simple_block_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ActualPacking.lean",
+      "sha256": "aad965fa5af6643d7d4c0797e5f5ca44098cbf1901072016c5d9b718d3e9c327",
+      "exit_code": 0,
+      "seconds": 1.9102,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'ActualPacking.simple_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.high_occupation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.first_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.row_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/SharpClock.lean",
+      "sha256": "bfbd7f1f130f311ea33467b9ecd4b0fdade4f6692fec893843f718cf36f1f5ca",
+      "exit_code": 0,
+      "seconds": 2.4628,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.SharpClock.physical_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.one_two_never_fuse' depends on axioms: [propext, Quot.sound]\n'Collatz.SharpClock.period_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.height' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineProfiles.lean",
+      "sha256": "a496396e57c3a9f74a7b7e0c4f05608e97e87074c57c7dd8952ab3f14f81112f",
+      "exit_code": 0,
+      "seconds": 2.988,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.AffineProfiles.no_positive_double_sync' depends on axioms: [propext, Quot.sound]\n'Collatz.AffineProfiles.drop_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.finite_coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineGeometry.lean",
+      "sha256": "8d0d1c51489510c748ada2214eb63a41f7c34bdfacbd3b8769c401e190916e96",
+      "exit_code": 0,
+      "seconds": 2.4111,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.AffineGeometry.slope_or_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineGeometry.rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/PrimeCore.lean",
+      "sha256": "09a3733d535b502a2db43dc4f04782bc5f04558d552e8a1a7cab382993c48c22",
+      "exit_code": 0,
+      "seconds": 1.8146,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.PrimeCore.reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.necessary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.sufficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.characterization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/BlockClock.lean",
+      "sha256": "b878867d71b1b71d13850609220b8099fe8c43681f80f58bfe18428579f2235f",
+      "exit_code": 0,
+      "seconds": 1.9024,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.BlockClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.BlockClock.first_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/InverseSpreading.lean",
+      "sha256": "cfcc9c92fd3e25f61f7dd7a2d50485e980ddca79bf3c01036a97be153f76b753",
+      "exit_code": 0,
+      "seconds": 2.4597,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'InverseSpreading.grade_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'InverseSpreading.bounded_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'InverseSpreading.spread_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/WindowMesh.lean",
+      "sha256": "8f430bb19365663e636e5642840f12febdab7fda1c03b22fcb1b0c2e6a9af1af",
+      "exit_code": 0,
+      "seconds": 2.5024,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'FastWindow.visit_from_mesh_with' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FastWindow.visit_from_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PhaseNet.lean",
+      "sha256": "8ab54bfbe83d53b69f70786206b2eb4b0c7f179ce24c053635e30ff0bfc5c236",
+      "exit_code": 0,
+      "seconds": 2.7283,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'PhaseNet.irrational_logs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhaseNet.additive_net' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhaseNet.pow_ratio_net' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/FastWindow.lean",
+      "sha256": "3967ec25c1bbc66859ebf7dc951f5d031f6b2b2fac3fe22823e0ddb134589cdd",
+      "exit_code": 0,
+      "seconds": 1.9532,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'FastWindow.visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FastPairs.lean",
+      "sha256": "a33b618c9b3b426cd6bc0924fa6230871338be8e027141d4062de77c110e252c",
+      "exit_code": 0,
+      "seconds": 4.2522,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FastPairs.rows_of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastPairs.fast_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastPairs.pairs_of_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FastBlocks.lean",
+      "sha256": "5c27567c7ecb92e0acbfd748c8a7419d756cb8960ddaf44380c6253b59c9cc0b",
+      "exit_code": 0,
+      "seconds": 2.0305,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FastBlocks.of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastBlocks.fast_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AllProgressions.lean",
+      "sha256": "d032c9632fac880da7a523d8776c4635de5aec645351ee6aa97b7ac0e2d942e1",
+      "exit_code": 0,
+      "seconds": 1.7955,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.AllProgressions.all_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllProgressions.of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllProgressions.fast_progressions' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PhaseResidues.lean",
+      "sha256": "c5b470957823e98f5efec221c18a6973b288d3d7291df2aca567b3448090d586",
+      "exit_code": 0,
+      "seconds": 2.744,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'PhaseNet.pow_ratio_net_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/MarkedWindow.lean",
+      "sha256": "cdd84e20f6cef506b1acbe3de0586efc706cd200b584dbf2b9c354e41b411ca3",
+      "exit_code": 0,
+      "seconds": 2.2371,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'FastWindow.visitors_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/MarkedProgressions.lean",
+      "sha256": "264be9f39ddf0807cd6f3be6eb7dd442242da7d6870e2bc362b789b0a8968031",
+      "exit_code": 0,
+      "seconds": 1.8411,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.MarkedProgressions.mixed_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MarkedProgressions.all_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffinePlacement.lean",
+      "sha256": "c6fbf6592d90b8283996b2e5c533fa4157f4878e5e7dc768c508d4e83b12fb3f",
+      "exit_code": 0,
+      "seconds": 3.2282,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.AffinePlacement.first_of_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffinePlacement.marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineClassification.lean",
+      "sha256": "8d34b711465ecdc076c0a9ad9e33297873f63172a502090ca2693e467d0fa5da",
+      "exit_code": 0,
+      "seconds": 2.1042,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.AffineClassification.iff_common' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ArcHeight.lean",
+      "sha256": "0503d3e804925acdcd90fa14c637942de0c8211f96530e0f38644fd54c7cdb9f",
+      "exit_code": 0,
+      "seconds": 2.253,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.ArcHeight.dyadic_center_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.centered_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.telescoping' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.weighted_variation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/TernaryItinerary.lean",
+      "sha256": "b6a2bce0e51455a8c5177a473b751219da82021086e158698564cb4c920b6b56",
+      "exit_code": 0,
+      "seconds": 9.6793,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "'Collatz.Itinerary.Gap.follow' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.Route.follow' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.Route.parity' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.exact_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.Route.readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.free_marks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.carry_through_gate' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.rows_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.empty_of_convergence' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.universal_iff_missing_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/BasinTransport.lean",
+      "sha256": "945e71462ce0b3d9499d6e326d4afe1d923ffdef8eb484207e4f61f1cb4de05f",
+      "exit_code": 0,
+      "seconds": 0.7707,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "'Collatz.Itinerary.BasinTransport.affine_rays' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.BasinTransport.double_tile' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.BasinTransport.three_four_tile' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/BirthReserve.lean",
+      "sha256": "c21e89bea2b84dd669726aefce0fcdb676598a8c99c8736dc1e21d9b86943889",
+      "exit_code": 0,
+      "seconds": 3.1753,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'BirthReserve.reserve_drift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BirthReserve.tail_drift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BirthReserve.tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/ClockCone.lean",
+      "sha256": "5a95abd9d379d24f299adacb3506b8f547e71126392b327e7a8c008ff5301cba",
+      "exit_code": 0,
+      "seconds": 2.1787,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.ClockCone.elementary_cone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ClockCone.discounted_cone' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ClockFloor.lean",
+      "sha256": "b257aef7d17f4a8dc41533824d2742177d79fe902cfc82747ec4b401ff62a379",
+      "exit_code": 0,
+      "seconds": 1.8139,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.ClockFloor.trace_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ClockFloor.slope_floor' depends on axioms: [propext]\n'Collatz.InfiniteDescent.ClockFloor.enlarged_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ClockFloor.actual_minimum_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/CubicPulse.lean",
+      "sha256": "045c03d6afa7799feb271d25c390d853fd67b342b148652f760fd7d6595047b8",
+      "exit_code": 0,
+      "seconds": 1.2664,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.CubicPulse.ten_edges' does not depend on any axioms\n'Collatz.InfiniteDescent.CubicPulse.position' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.CubicPulse.quadratic_completion' depends on axioms: [propext]\n'Collatz.InfiniteDescent.CubicPulse.backwards_fourth' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/CycleOccupation.lean",
+      "sha256": "b954f452255d3d1bb0e9196b52d30aba43457a804a6c6d14e64ad712e76580c1",
+      "exit_code": 0,
+      "seconds": 1.5928,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'CycleOccupation.occupation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CycleOccupation.logarithmic_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CycleOccupation.power_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/TargetExtinction.lean",
+      "sha256": "c6f118877f913a5aa64195ec470d250dd0695e86d5bf6ff3fdd2ac0a0605931d",
+      "exit_code": 0,
+      "seconds": 2.1515,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'TargetExtinction.mem_completeRow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetExtinction.bounded_iff_complete_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetExtinction.vanishing_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetExtinction.bounded_of_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetExtinction.bounded_iff_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/DampedRows.lean",
+      "sha256": "d54b198d39d62808e48c70d7c278a98dd4e1900c1c0ec30239dcab97f5ab19f6",
+      "exit_code": 0,
+      "seconds": 2.2492,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'DampedRows.mass_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DampedRows.damped_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DampedRows.reciprocal_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DampedRows.first_clock_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DampedRows.bounded_iff_grade_vanishing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DampedRows.bounded_iff_complete_damped' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/DyadicBoundary.lean",
+      "sha256": "e32a9d9e329b842f02cf94819bf84c888997886bec0b1cef7fd7cfba28ee4dcd",
+      "exit_code": 0,
+      "seconds": 1.4884,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'DyadicBoundary.signed_increment' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicBoundary.finite_boundary_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/EndpointCount.lean",
+      "sha256": "006ded3ddb0a12d02f03959863d50bf93ec625136f355b159ae087618f5b220d",
+      "exit_code": 0,
+      "seconds": 1.8726,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.EndpointCount.card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/FiniteExtinction.lean",
+      "sha256": "53c11ace85ea754c0338aefafd980d1e50fcf30d4008039aabda47c4951de9ed",
+      "exit_code": 0,
+      "seconds": 1.9004,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'FiniteExtinction.gate_fails_after_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.finite_verification_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.finite_verification_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.small_mass_of_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteExtinction.collatz_iff_small_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/MantissaFlow.lean",
+      "sha256": "1c3bfbfcf1a51e821d478e88ae226bb651125211760d035a21701598ab774281",
+      "exit_code": 0,
+      "seconds": 3.4654,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'MantissaFlow.outgoing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MantissaFlow.incoming' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MantissaFlow.atom_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/FirstHitFlux.lean",
+      "sha256": "89b82dfa2925814557be7135400c784b8c157043e5d25224403dea12015851f8",
+      "exit_code": 0,
+      "seconds": 2.0653,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'FirstHitFlux.first_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FirstHitFlux.first_atom' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FiveRouting.lean",
+      "sha256": "902b0d95e914643a638d15c1c9096e70ec24fb0878feb6883e10163be8e794fd",
+      "exit_code": 0,
+      "seconds": 4.416,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FiveRouting.macroA' depends on axioms: [propext, Quot.sound]\n'Collatz.FiveRouting.macroB' depends on axioms: [propext, Quot.sound]\n'Collatz.FiveRouting.scaled_address' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FiveRouting.route' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FiveLadder.lean",
+      "sha256": "7d519f4b4f7be555820133881459a44812bd214e666bdfe5b37a0d360ab4bbe2",
+      "exit_code": 0,
+      "seconds": 3.7559,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FiveLadder.flight_halves' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FiveLadder.preattach' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FiveLadder.seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PhaseMultiples.lean",
+      "sha256": "212abbd239028ae7b69acd000efa23f3c1bd25ca93d5b4ee88c2c4c2b1c16d59",
+      "exit_code": 0,
+      "seconds": 2.2931,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'PhaseNet.pow_ratio_net_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FiveWindow.lean",
+      "sha256": "dd3ebdc99926c68302a56aef83012134c23d74b646da82f95bee963e822f4844",
+      "exit_code": 0,
+      "seconds": 4.4978,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FiveWindow.visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FivePlacement.lean",
+      "sha256": "8d3278075d29d064c7d341b246fb944212224f5eab517e7f944dc738755e2e3c",
+      "exit_code": 0,
+      "seconds": 6.0853,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.FivePlacement.of_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FivePlacement.five_queries' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/TowerFrontierAffine.lean",
+      "sha256": "00950705ebc4f9855e6ec6e0585d3161791a09ba99f5e672f99489c43826f8e0",
+      "exit_code": 0,
+      "seconds": 0.9849,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/ReturnDescent.lean",
+      "sha256": "35103cb9ea28fe2d677c3d70ffface2575821ad94e5eb781a5bf8591ebe7a2c1",
+      "exit_code": 0,
+      "seconds": 4.0845,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "'Collatz.Itinerary.ReturnDescent.transfer_upper_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/ReturnDescentRows.lean",
+      "sha256": "c9a230e606436c88d3529322ad369fd4f5830238c14e20d1df240a2f2d0d93c2",
+      "exit_code": 0,
+      "seconds": 31.7461,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "'Collatz.Itinerary.ReturnDescent.mersenne_representative' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.ReturnDescent.bad_mersenne_witness' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/ReturnDescentFixed.lean",
+      "sha256": "1885a3e1ce566c11dd8e16ace19e5e160cb09014b099ffd483a89879571cc8ca",
+      "exit_code": 0,
+      "seconds": 102.4166,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/imports/pr206",
+      "stdout": "'Collatz.Itinerary.ReturnDescent.fixed_canonical_returns' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FixedMersenneRows.lean",
+      "sha256": "f3031e28f98ca1013740632a641930499e51fc12082f9f1a630b22b5c757ba14",
+      "exit_code": 0,
+      "seconds": 36.7373,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.Itinerary.ReturnDescent.Supplied.all_192' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/FoldedCuts.lean",
+      "sha256": "379a4a563597c5214b65bdf62cdb5676c6f6d7e51e6bd79d87f7c3762db023ab",
+      "exit_code": 0,
+      "seconds": 3.3084,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.FoldedCuts.weighted_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.FoldedCuts.positive_cut' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.FoldedCuts.cut_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.FoldedCuts.average_support_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.FoldedCuts.physical_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/FourierSupport.lean",
+      "sha256": "9fc7d56918129a4fc58290c40cab7571e6a920cd68e3307d21da980bffa311c5",
+      "exit_code": 0,
+      "seconds": 1.2999,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.FourierSupport.coefficients_of_zero_block' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.InfiniteDescent.FourierSupport.nonzero_on_every_block' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/HighRows.lean",
+      "sha256": "36a9408fe352d7560fd38c7be7efabe34fed182bf8f418616b035975cb8be7e7",
+      "exit_code": 0,
+      "seconds": 3.2181,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'HighRows.offset_of_high_odds' depends on axioms: [propext, Quot.sound]\n'HighRows.mark_of_high_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HighRows.high_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/HitClock.lean",
+      "sha256": "0a86f05539b804c38d73e9a4e13ae422f1e1aef5ca8e8d6a591245db0ac96516",
+      "exit_code": 0,
+      "seconds": 2.078,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'HitClock.hit_grade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HitClock.gate_fails' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HitClock.finite_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HitClock.finite_transfer_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/IndependentClocks.lean",
+      "sha256": "d6103f0f507724f757eede812cc9366e78af3e6a3c72f848b1437a71b40f6342",
+      "exit_code": 0,
+      "seconds": 1.3845,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.IndependentClocks.carry_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.IndependentClocks.carry_append' depends on axioms: [propext]\n'Collatz.InfiniteDescent.IndependentClocks.periodic_denominator' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.InfiniteDescent.IndependentClocks.add_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/InverseRoots.lean",
+      "sha256": "46b5cdc07d90e269947e3e429f1498fdb0c96a0841357cf506014c7155678cb0",
+      "exit_code": 0,
+      "seconds": 3.04,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.InverseRoots.roots_before' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InverseRoots.unbounded_roots' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InverseRoots.all_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InverseRoots.charge_roots' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/NativeBank.lean",
+      "sha256": "e979b6216ef91b0ff5e212d9032f289519da01d54f1eb77d66394cfe6a81d1fb",
+      "exit_code": 0,
+      "seconds": 3.7854,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/merger",
+      "stdout": "'Collatz.NativeBank.even_in_record' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NativeBank.window_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.NativeBank.fixed_target_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/NativeInversion.lean",
+      "sha256": "354e6be62315b9ecf8711d37ec7d4b6680a5452bf5fcb1b50ddd61177e405040",
+      "exit_code": 0,
+      "seconds": 3.1933,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.NativeInversion.cylinder_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.positive_source' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.cylinder_translate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.aligned' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.crossing_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.even_partner_predecessor' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.InfiniteDescent.NativeInversion.first_reversal' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/OriginalLoss.lean",
+      "sha256": "d06d56ad45a640ff7322dc83c8f40ab2b8a84622dac511476fd037a01b3353a8",
+      "exit_code": 0,
+      "seconds": 5.3291,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'OriginalLoss.one_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OriginalLoss.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OriginalLoss.endpoint_band' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OriginalLoss.tail_scale' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PotentialBoundary.lean",
+      "sha256": "830d8c436aea45f365fbda05f40a84bcbef09f51c2ebb0fa6c56ccdaf33434a9",
+      "exit_code": 0,
+      "seconds": 3.3804,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/root",
+      "stdout": "'PotentialBoundary.potential_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PotentialBoundary.potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PotentialBoundary.reserve_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PotentialBoundary.no_cutoff_bootstrap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/PoweredBlocks.lean",
+      "sha256": "5c95387cd27397ca6c7b283dad73d0464fbc8005cdd4b93ec9e417fed4c27b9c",
+      "exit_code": 0,
+      "seconds": 1.4526,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.PoweredBlocks.centered_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.across_connector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.closed_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.PoweredBlocks.zero_defects' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ShiftHeights.lean",
+      "sha256": "708a132af489fb033a18b5328a14f989f280ba87b37bc5609e2d288ae5abe16d",
+      "exit_code": 0,
+      "seconds": 2.9774,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.ShiftHeights.grade_bound' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.ShiftHeights.carry_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ShiftHeights.periodic_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ShiftHeights.shared_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/SparseCarry.lean",
+      "sha256": "5fe135e625e59454bcfc53ee2ce6b1b75f6766d8180196cbd0f47344cfffdaa6",
+      "exit_code": 0,
+      "seconds": 1.9007,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/cycles",
+      "stdout": "'Collatz.InfiniteDescent.SparseCarry.literal_run_sum' depends on axioms: [propext, Quot.sound]\n'Collatz.InfiniteDescent.SparseCarry.two_swap_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.SparseCarry.clearing_edit_iff' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/SparseResonance.lean",
+      "sha256": "9b19fc0828329bd2f359ddeb1bbb164f99363098817b73c0b300adfca3dceaef",
+      "exit_code": 0,
+      "seconds": 1.9406,
+      "module_root": "/workspace/scratch/ab55ab15f58b/checkpoint-07b/research/astra-infinite-descent-20261127/escape",
+      "stdout": "'SparseResonance.conductor_orthogonality' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SparseResonance.mobius_val' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SparseResonance.numerator_val' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SparseResonance.mobius_character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SparseResonance.project_twice' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "lean": {
+    "path": "/tmp/collatz-diagonal-lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "mathlib": {
+    "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4",
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_clean": true
+  },
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependencies": [
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/plausible",
+      "head": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/LeanSearchClient",
+      "head": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/importGraph",
+      "head": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/proofwidgets",
+      "head": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/aesop",
+      "head": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Qq",
+      "head": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/batteries",
+      "head": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Cli",
+      "head": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "build_directory": "/tmp/collatz-infinite-descent-93e8kyj2",
+  "flags": [
+    "-j1",
+    "-DElab.async=false",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "audit_command": {
+    "source": "<generated-all-declaration-audit>",
+    "sha256": "e3dfadf4bfea98eb7cc038f89864d8d77f407e8b6634d60071c7459d0bea39f8",
+    "exit_code": 1,
+    "seconds": 0.0437,
+    "module_root": "/tmp/collatz-infinite-descent-93e8kyj2",
+    "stdout": "/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:1:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:2:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:3:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:4:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:5:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:6:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:7:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:8:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:9:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:10:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:11:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:12:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:13:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:14:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:15:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:16:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:17:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:18:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:19:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:20:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:21:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:22:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:23:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:24:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:25:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:26:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:27:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:28:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:29:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:30:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:31:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:32:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:33:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:34:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:35:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:36:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:37:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:38:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:39:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:40:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:41:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:42:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:43:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:44:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:45:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:46:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:47:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:48:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:49:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:50:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:51:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:52:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:53:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:54:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:55:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:56:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:57:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:58:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:59:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:60:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:61:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:62:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:63:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:64:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:65:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:66:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:67:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:68:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:69:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:70:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:71:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:72:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:73:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:74:7: error: cannot use `import all` without `module`\n",
+    "stderr": ""
+  },
+  "error": "Axiom audit failed\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:1:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:2:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:3:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:4:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:5:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:6:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:7:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:8:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:9:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:10:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:11:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:12:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:13:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:14:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:15:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:16:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:17:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:18:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:19:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:20:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:21:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:22:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:23:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:24:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:25:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:26:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:27:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:28:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:29:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:30:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:31:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:32:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:33:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:34:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:35:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:36:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:37:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:38:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:39:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:40:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:41:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:42:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:43:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:44:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:45:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:46:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:47:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:48:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:49:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:50:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:51:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:52:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:53:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:54:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:55:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:56:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:57:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:58:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:59:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:60:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:61:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:62:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:63:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:64:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:65:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:66:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:67:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:68:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:69:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:70:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:71:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:72:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:73:7: error: cannot use `import all` without `module`\n/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:74:7: error: cannot use `import all` without `module`\n\n",
+  "finished_utc": "2026-11-27T16:22:14.782069+00:00",
+  "source_commit": "2e18f7c764fabc9890aad872a30804acc342eb30",
+  "resolution": "All 74 mathematical modules compiled. The generated audit must be a legacy root with ordinary imports, which loads private declarations transitively and permits the mix of module styles. Explicit import-all requires module, but module roots cannot import the older module style. The script now uses ordinary imports and requires every packet module to appear in the audit.",
+  "intermediate_module_header_attempt": "/tmp/collatz-infinite-descent-93e8kyj2/PacketAxiomAudit.lean:1:0: error: cannot import non-`module` CoreBranching from `module`\n\n"
+}

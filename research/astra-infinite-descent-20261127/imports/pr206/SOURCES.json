@@ -1,0 +1,43 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 206,
+  "commit": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+  "files": [
+    {
+      "path": "research/clock-itineraries/TernaryItinerary.lean",
+      "local": "TernaryItinerary.lean",
+      "git_blob": "c1dcb03003f6ca3146a3dbc9ca3f9e4e90a9f00d",
+      "sha256": "b6a2bce0e51455a8c5177a473b751219da82021086e158698564cb4c920b6b56"
+    },
+    {
+      "path": "research/clock-itineraries/BasinTransport.lean",
+      "local": "BasinTransport.lean",
+      "git_blob": "64c5e9b948916ba34d1fafd6fdc106c30141a185",
+      "sha256": "945e71462ce0b3d9499d6e326d4afe1d923ffdef8eb484207e4f61f1cb4de05f"
+    },
+    {
+      "path": "research/clock-itineraries/TowerFrontierAffine.lean",
+      "local": "TowerFrontierAffine.lean",
+      "git_blob": "ecd3e87162c2774a6b016511fa781a5ad9d44f5b",
+      "sha256": "00950705ebc4f9855e6ec6e0585d3161791a09ba99f5e672f99489c43826f8e0"
+    },
+    {
+      "path": "research/clock-itineraries/ReturnDescent.lean",
+      "local": "ReturnDescent.lean",
+      "git_blob": "7b6d6ca93764e0d6401f571738f9f625e22cddf0",
+      "sha256": "35103cb9ea28fe2d677c3d70ffface2575821ad94e5eb781a5bf8591ebe7a2c1"
+    },
+    {
+      "path": "research/clock-itineraries/ReturnDescentRows.lean",
+      "local": "ReturnDescentRows.lean",
+      "git_blob": "852311d94d1a437cf6666bbb93ab845939ea3b8d",
+      "sha256": "c9a230e606436c88d3529322ad369fd4f5830238c14e20d1df240a2f2d0d93c2"
+    },
+    {
+      "path": "research/clock-itineraries/ReturnDescentFixed.lean",
+      "local": "ReturnDescentFixed.lean",
+      "git_blob": "b7c8a8a4f4dac2f63075003544ebc78295f3eb90",
+      "sha256": "1885a3e1ce566c11dd8e16ace19e5e160cb09014b099ffd483a89879571cc8ca"
+    }
+  ]
+}

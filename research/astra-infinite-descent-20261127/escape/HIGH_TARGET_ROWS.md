@@ -12,7 +12,7 @@ All positive integer starts are counted, including initial even terms and nonuni
   \quad\Longleftrightarrow\quad
   \text{every positive Collatz orbit is bounded}.                         \tag{1}
 \]
-This equivalence at the fair **first-moment exact-clock** weight follows from elementary parity-word packing and the finite affine grid bound. Fixed-root closed-support, stationary trace, synchronization and predecessor-density inputs are unnecessary here. The [stronger source cutoff and exact limiting extremal-class formula](FAIR_CLOCK_DIFFUSION.md) use additional written hypotheses. Finite cycles of any number and length fall on the bounded side of (1).
+This equivalence at the fair **first-moment exact-clock** weight follows from elementary parity-word packing and the finite affine grid bound. Fixed-root closed-support, stationary trace, synchronization and predecessor-density inputs are unnecessary here. The [closed-support approach to the source cutoff](FAIR_CLOCK_DIFFUSION.md) uses additional written hypotheses. The [independent first-arrival argument](CLOCK_ANTICONCENTRATION.md) gives a quantitative source cutoff and the same limiting extremal-class formula without these hypotheses. Finite cycles of any number and length fall on the bounded side of (1).
 
 ## Kernel-checked complete-row theorem
 

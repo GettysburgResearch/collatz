@@ -15,6 +15,50 @@ def unit_residues(modulus):
     return [v for v in range(1, modulus) if v % 3]
 
 
+
+def first_counts_check(rows, moduli, index, highest_grade):
+    tests = 0
+    for y in (1, 5, 7, 11, 13):
+        for d in range(highest_grade + 1):
+            lap = None
+            x, g = y, 0
+            for h in range(1, 2*d+1):
+                odd = x % 2
+                g += odd
+                x = (3*x+1)//2 if odd else x//2
+                if x == y:
+                    lap = (h, g)
+                    break
+            def odd_first(m):
+                answer = rows[d][m][index[d][y % moduli[d]]]
+                if lap is not None:
+                    H, C = lap
+                    if C <= d and H <= m:
+                        answer -= rows[d-C][m-H][index[d-C][y % moduli[d-C]]]
+                return answer
+            for m in range(11):
+                odd_actual, all_actual = 0, 0
+                for z in range(1, (2**m*y)//3**d + 1):
+                    if z % 3 == 0:
+                        continue
+                    w, grade = z, 0
+                    for _ in range(m):
+                        if w == y:
+                            break
+                        odd = w % 2
+                        grade += odd
+                        w = (3*w+1)//2 if odd else w//2
+                    else:
+                        if w == y and grade == d:
+                            all_actual += 1
+                            odd_actual += z % 2
+                require(odd_actual == odd_first(m), "odd first-arrival lap subtraction")
+                require(all_actual == sum(odd_first(k) for k in range(m+1)),
+                        "all-parity first arrival and initial halving coast")
+                tests += 2
+    return tests
+
+
 def run_checks(max_grade, extra):
     moduli = [3 ** (d + 1) for d in range(max_grade + 1)]
     units = [unit_residues(n) for n in moduli]
@@ -65,6 +109,7 @@ def run_checks(max_grade, extra):
                       "finite_difference_checks": tested, "example_clock": example_m,
                       "min_odd_sources": min(row), "max_odd_sources": max(row)})
     return {"exact_haar_identities": haar_identities, "ordinary_cross_checks": direct_words,
+            "first_arrival_forward_checks": first_counts_check(rows, moduli, index, max_grade),
             "highest_clock": highest_clock, "rows": cases}
 
 

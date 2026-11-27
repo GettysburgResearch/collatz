@@ -64,7 +64,12 @@ def ordered_sources() -> list[Path]:
         require(name not in visiting, f"Cyclic local import: {name}")
         visiting.add(name)
         source = by_name[name]
-        for match in re.finditer(r"^import\s+([^\n]+)", source.read_text(), re.M):
+        # Lean's module system also permits `public import` and `import all`.
+        # Both carry the same local build dependency, while `all` controls
+        # visibility rather than naming another module.
+        for match in re.finditer(
+                r"^[ \t]*(?:public\s+)?import\s+(?:all\s+)?([^\n]+)",
+                source.read_text(), re.M):
             for imported in match.group(1).split("--")[0].split():
                 if imported in by_name:
                     visit(imported)
@@ -83,6 +88,9 @@ def ordered_sources() -> list[Path]:
 
 def audit_source(modules: list[str]) -> str:
     quoted = ", ".join("`" + name for name in modules)
+    # A legacy (non-`module`) root loads the private level transitively for
+    # both legacy and new module files. See Lean.Environment.importModules.
+    # This also permits the packet's deliberate mix of the two file styles.
     return "\n".join("import " + name for name in modules) + r'''
 import Lean.Util.CollectAxioms
 import Lean.Elab.Command
@@ -162,7 +170,11 @@ def main() -> int:
 
         def compile_file(source: Path, relative: str) -> dict:
             started = time.monotonic()
-            command = [str(args.lean), *flags, "-o", str(build / (source.stem + ".olean")),
+            # Every packet import uses a flat module name. Set the compiler's
+            # package root to this source's parent so that private declaration
+            # names agree with that import, including nested pinned sources.
+            command = [str(args.lean), *flags, "-R", str(source.parent),
+                       "-o", str(build / (source.stem + ".olean")),
                        str(source)]
             # Lean requires the input file to lie inside its selected root.
             # The generated audit intentionally lives in the fresh build
@@ -173,6 +185,7 @@ def main() -> int:
             row = {"source": relative, "sha256": digest(source),
                    "exit_code": result.returncode,
                    "seconds": round(time.monotonic() - started, 4),
+                   "module_root": str(source.parent),
                    "stdout": result.stdout, "stderr": result.stderr}
             print(f"{source.stem}: exit {result.returncode}, {row['seconds']}s", flush=True)
             return row
@@ -192,7 +205,15 @@ def main() -> int:
         audited = [json.loads(line.split("AXIOM_ROW ", 1)[1])
                    for line in row["stdout"].splitlines() if "AXIOM_ROW " in line]
         require(bool(audited), "No machine-readable axiom audit rows")
+        require({item["module"] for item in audited} == {p.stem for p in sources},
+                "A packet module has no declarations in the aggregate audit")
         receipt["declarations"] = sorted(audited, key=lambda item: item["declaration"])
+        receipt["module_declaration_counts"] = {
+            source.stem: sum(item["module"] == source.stem for item in audited)
+            for source in sources
+        }
+        receipt["private_declaration_count"] = sum(
+            item["declaration"].startswith("_private.") for item in audited)
         # Preserve all decoded rows once, rather than duplicating the same
         # declaration list in one very large escaped stdout string.
         audit_stdout = receipt["audit_command"].pop("stdout")

@@ -1,0 +1,842 @@
+{
+  "exhaustive_levels": [
+    {
+      "g": 2,
+      "rows": 9,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "g": 3,
+      "rows": 27,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "g": 4,
+      "rows": 81,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "g": 5,
+      "rows": 243,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "g": 6,
+      "rows": 729,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "g": 7,
+      "rows": 2187,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          7
+        ]
+      ]
+    },
+    {
+      "g": 8,
+      "rows": 6561,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          8
+        ]
+      ]
+    },
+    {
+      "g": 9,
+      "rows": 19683,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          9
+        ]
+      ]
+    },
+    {
+      "g": 10,
+      "rows": 59049,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "g": 12,
+      "rows": 531441,
+      "alphabet": [
+        1,
+        2,
+        4
+      ],
+      "optimal_spectra": [
+        [
+          1,
+          3,
+          4
+        ]
+      ]
+    }
+  ],
+  "native": [
+    {
+      "g": 6,
+      "twisted": [],
+      "W": 1,
+      "h": 186,
+      "q_bits": 125,
+      "active_orders": [
+        1,
+        2,
+        3
+      ],
+      "rectangle_labels": 114,
+      "valuation_comparisons": 76,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 6,
+      "twisted": [],
+      "W": 4,
+      "h": 186,
+      "q_bits": 125,
+      "active_orders": [
+        1,
+        2,
+        3
+      ],
+      "rectangle_labels": 114,
+      "valuation_comparisons": 76,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 6,
+      "twisted": [
+        3
+      ],
+      "W": 1,
+      "h": 186,
+      "q_bits": 119,
+      "active_orders": [
+        1,
+        2,
+        6
+      ],
+      "rectangle_labels": 114,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 6,
+      "twisted": [
+        3
+      ],
+      "W": 4,
+      "h": 186,
+      "q_bits": 124,
+      "active_orders": [
+        1,
+        2,
+        6
+      ],
+      "rectangle_labels": 114,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 10,
+      "twisted": [],
+      "W": 1,
+      "h": 310,
+      "q_bits": 187,
+      "active_orders": [
+        1,
+        2,
+        5
+      ],
+      "rectangle_labels": 190,
+      "valuation_comparisons": 152,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 10,
+      "twisted": [],
+      "W": 4,
+      "h": 310,
+      "q_bits": 187,
+      "active_orders": [
+        1,
+        2,
+        5
+      ],
+      "rectangle_labels": 190,
+      "valuation_comparisons": 152,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 10,
+      "twisted": [
+        5
+      ],
+      "W": 1,
+      "h": 310,
+      "q_bits": 181,
+      "active_orders": [
+        1,
+        2,
+        10
+      ],
+      "rectangle_labels": 190,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 10,
+      "twisted": [
+        5
+      ],
+      "W": 4,
+      "h": 310,
+      "q_bits": 185,
+      "active_orders": [
+        1,
+        2,
+        10
+      ],
+      "rectangle_labels": 190,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 12,
+      "twisted": [],
+      "W": 1,
+      "h": 372,
+      "q_bits": 156,
+      "active_orders": [
+        1,
+        3,
+        4
+      ],
+      "rectangle_labels": 228,
+      "valuation_comparisons": 152,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 12,
+      "twisted": [],
+      "W": 4,
+      "h": 372,
+      "q_bits": 156,
+      "active_orders": [
+        1,
+        3,
+        4
+      ],
+      "rectangle_labels": 228,
+      "valuation_comparisons": 152,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 15,
+      "twisted": [],
+      "W": 1,
+      "h": 465,
+      "q_bits": 218,
+      "active_orders": [
+        1,
+        3,
+        5
+      ],
+      "rectangle_labels": 285,
+      "valuation_comparisons": 304,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 15,
+      "twisted": [],
+      "W": 4,
+      "h": 465,
+      "q_bits": 218,
+      "active_orders": [
+        1,
+        3,
+        5
+      ],
+      "rectangle_labels": 285,
+      "valuation_comparisons": 304,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 18,
+      "twisted": [],
+      "W": 1,
+      "h": 558,
+      "q_bits": 248,
+      "active_orders": [
+        1,
+        2,
+        9
+      ],
+      "rectangle_labels": 342,
+      "valuation_comparisons": 228,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 18,
+      "twisted": [],
+      "W": 4,
+      "h": 558,
+      "q_bits": 248,
+      "active_orders": [
+        1,
+        2,
+        9
+      ],
+      "rectangle_labels": 342,
+      "valuation_comparisons": 228,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 18,
+      "twisted": [
+        9
+      ],
+      "W": 1,
+      "h": 558,
+      "q_bits": 243,
+      "active_orders": [
+        1,
+        2,
+        18
+      ],
+      "rectangle_labels": 342,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 18,
+      "twisted": [
+        9
+      ],
+      "W": 4,
+      "h": 558,
+      "q_bits": 248,
+      "active_orders": [
+        1,
+        2,
+        18
+      ],
+      "rectangle_labels": 342,
+      "valuation_comparisons": 0,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 24,
+      "twisted": [],
+      "W": 1,
+      "h": 744,
+      "q_bits": 217,
+      "active_orders": [
+        1,
+        3,
+        8
+      ],
+      "rectangle_labels": 456,
+      "valuation_comparisons": 304,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 24,
+      "twisted": [],
+      "W": 4,
+      "h": 744,
+      "q_bits": 217,
+      "active_orders": [
+        1,
+        3,
+        8
+      ],
+      "rectangle_labels": 456,
+      "valuation_comparisons": 304,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 30,
+      "twisted": [],
+      "W": 1,
+      "h": 930,
+      "q_bits": 250,
+      "active_orders": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 532,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 30,
+      "twisted": [],
+      "W": 4,
+      "h": 930,
+      "q_bits": 250,
+      "active_orders": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 532,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 30,
+      "twisted": [
+        3
+      ],
+      "W": 1,
+      "h": 930,
+      "q_bits": 249,
+      "active_orders": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 30,
+      "twisted": [
+        3
+      ],
+      "W": 4,
+      "h": 930,
+      "q_bits": 249,
+      "active_orders": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 30,
+      "twisted": [
+        5
+      ],
+      "W": 1,
+      "h": 930,
+      "q_bits": 248,
+      "active_orders": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 30,
+      "twisted": [
+        5
+      ],
+      "W": 4,
+      "h": 930,
+      "q_bits": 248,
+      "active_orders": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 30,
+      "twisted": [
+        3,
+        5
+      ],
+      "W": 1,
+      "h": 930,
+      "q_bits": 247,
+      "active_orders": [
+        1,
+        2,
+        6,
+        10
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 30,
+      "twisted": [
+        3,
+        5
+      ],
+      "W": 4,
+      "h": 930,
+      "q_bits": 247,
+      "active_orders": [
+        1,
+        2,
+        6,
+        10
+      ],
+      "rectangle_labels": 570,
+      "valuation_comparisons": 608,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [],
+      "W": 1,
+      "h": 1302,
+      "q_bits": 312,
+      "active_orders": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 760,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 42,
+      "twisted": [],
+      "W": 4,
+      "h": 1302,
+      "q_bits": 312,
+      "active_orders": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 760,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 42,
+      "twisted": [
+        3
+      ],
+      "W": 1,
+      "h": 1302,
+      "q_bits": 311,
+      "active_orders": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [
+        3
+      ],
+      "W": 4,
+      "h": 1302,
+      "q_bits": 311,
+      "active_orders": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [
+        7
+      ],
+      "W": 1,
+      "h": 1302,
+      "q_bits": 308,
+      "active_orders": [
+        1,
+        2,
+        3,
+        14
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [
+        7
+      ],
+      "W": 4,
+      "h": 1302,
+      "q_bits": 308,
+      "active_orders": [
+        1,
+        2,
+        3,
+        14
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [
+        3,
+        7
+      ],
+      "W": 1,
+      "h": 1302,
+      "q_bits": 309,
+      "active_orders": [
+        1,
+        2,
+        6,
+        14
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 42,
+      "twisted": [
+        3,
+        7
+      ],
+      "W": 4,
+      "h": 1302,
+      "q_bits": 309,
+      "active_orders": [
+        1,
+        2,
+        6,
+        14
+      ],
+      "rectangle_labels": 798,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 38
+    },
+    {
+      "g": 45,
+      "twisted": [],
+      "W": 1,
+      "h": 1395,
+      "q_bits": 342,
+      "active_orders": [
+        1,
+        5,
+        9
+      ],
+      "rectangle_labels": 855,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 45,
+      "twisted": [],
+      "W": 4,
+      "h": 1395,
+      "q_bits": 342,
+      "active_orders": [
+        1,
+        5,
+        9
+      ],
+      "rectangle_labels": 855,
+      "valuation_comparisons": 912,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 60,
+      "twisted": [],
+      "W": 1,
+      "h": 1860,
+      "q_bits": 281,
+      "active_orders": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "rectangle_labels": 1140,
+      "valuation_comparisons": 760,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    },
+    {
+      "g": 60,
+      "twisted": [],
+      "W": 4,
+      "h": 1860,
+      "q_bits": 281,
+      "active_orders": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "rectangle_labels": 1140,
+      "valuation_comparisons": 760,
+      "ternary_unit_test": true,
+      "exact_entropy_checks": 19
+    }
+  ],
+  "width_three": {
+    "length": 256,
+    "lower": "1054/665",
+    "upper": "24727/15601",
+    "max_words": 30013844518446162257479163335820425359071383513610694141189298339493379000104270721076884405485568,
+    "four_fifths_certificate": "max_words**5 < 3**(4*length)"
+  }
+}

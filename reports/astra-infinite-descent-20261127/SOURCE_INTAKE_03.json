@@ -1,0 +1,101 @@
+{
+  "schema": "collatz-source-intake/v3",
+  "created_utc": "2026-11-27T16:09:40.524358+00:00",
+  "scope": "Additional exact prior inputs consumed during the six-hour pass. Statement inspection, independent mathematical reconstruction, finite replay and Lean checking are recorded separately. No claim that every prior manuscript or its external dependencies has been proved here.",
+  "repository_sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": "research/upper-bit-mergers/FIVE_RETURN_CLOCK_AND_TERMINALS.md",
+      "git_blob": "f93d7dcf18c9dc5c6bd1ad4f553dc5a4c01c38d9",
+      "sha256": "e8062bdc8f5bf763be2e7368af67ba6910fe161f01bd14256c5f669b261739ae",
+      "review": "Exact first-return definition, the two-sided square-root tail, conditional odd-source version and regeneration read directly. Reviewed the displayed strip-exit/occupation proof at its stated prior S4-S11 and signed-control interfaces; those earlier dependencies were not independently rebuilt in this intake.",
+      "consumer": "merger/PRIMITIVE_PRESSURE.md, positive rich primitive-row theorem. Source-qualified: this is the ratio-five primitive return law, not adjacent coalescence."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "5d4698b692ec102b44cf77a59930a2a80b4104fd",
+      "path": "research/astra-joint-closure-20261124/pressure/WEIGHTED_POINTWISE_ROWS.md",
+      "git_blob": "db1d7a9d70d1bb0cec5d77030b24f9898792f1ff",
+      "sha256": "66317debdf47470d618879250e56204901a39fbe4204165d33b7cd4c0e33896b",
+      "review": "Complete written finite-bank pressure and actual fixed-target first-row argument read and reconstructed at the stated finite certificate. The bank's 2276 primitive records were independently regenerated in check_native_entropy.py, with its exact generating-function upper bound. The separate old 81-class lower-pressure computation was not rerun.",
+      "consumer": "merger/NATIVE_FIVE.md transfers the pinned lower row to narrow marked first-arrival windows. merger/PRIMITIVE_PRESSURE.md gives a new direct pointwise upper bound for this finite bank."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "aa6868996f6f30b12d91c367f7c6edcfd93784b2",
+      "path": "research/astra-six-hour-20261127/escape/ENDPOINT_RATE_TEST.md",
+      "git_blob": "862143508bb66d9daec7a17fdc496fea44fab0a8",
+      "sha256": "22f8dd284b6dbb5f0a1c2922a21955f225f4c65a7305487ddc0197388fb9641f",
+      "review": "Complete source read. Verified exact original inverse-word law, rho_1 selector, recurrent visits, targetwise maximum, shrinking endpoint band 1/(j+1), and requested subsequential exponential rate.",
+      "consumer": "escape/ORIGINAL_TRACE_VARIATION.md works with precisely this Q_j^*, without assuming its requested rate or its external stopped-rate implication."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "head": "640bf7e511831a0ffc4f00462f12df81f8a8a619",
+      "paths": [
+        "research/clock-itineraries/TernaryItinerary.lean",
+        "research/clock-itineraries/BasinTransport.lean",
+        "research/clock-itineraries/TowerFrontierAffine.lean",
+        "research/clock-itineraries/ReturnDescent.lean",
+        "research/clock-itineraries/ReturnDescentRows.lean",
+        "research/clock-itineraries/ReturnDescentFixed.lean"
+      ],
+      "manifest": "research/astra-infinite-descent-20261127/imports/pr206/SOURCES.json",
+      "review": "All six imported Lean sources match their pinned Git blobs and SHA-256 hashes. Root read the true track/stride and affine lift, hard-source and CanonicalReturn definitions, price consumer and finite-table interfaces. Every module and private declaration is included in the fresh full kernel replay. This does not claim line-by-line mathematical review of all earlier route theorems.",
+      "consumer": "merger/FixedMersenneRows.lean completes the nine excluded parameters, yielding the actual all_192 theorem."
+    }
+  ],
+  "primary_manuscripts": [
+    {
+      "url": "https://arxiv.org/pdf/2402.03276",
+      "version": "2402.03276v3, 13 August 2024",
+      "authors": "Manuel Inselmann",
+      "input": "Theorem 2.18 / Theorem 3.1 and definition of star-density: simultaneous power-saving-exception altitude control up to the central shortcut horizon.",
+      "review": "Primary statement and power-saving definition checked directly. Complete paper not independently reproved. The pointwise transfer in PRIMITIVE_PRESSURE.md is a separately reconstructed deduction."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/173/v1",
+      "authors": "Lyapunov Weaver",
+      "input": "Finite descent or local factor complexity theorem, parameters b=0 and eta=1 or eta=1/2.",
+      "review": "Exact finite statement read directly, including uniform dependence of K and X0 only on A, eta, b, actual integer prefix and n=floor(log2 |x|). Its Subspace Theorem proof remains an external manuscript input for ODD_ROTATION_COMPLEXITY.md."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/218",
+      "version": "v3 displayed on retrieval",
+      "authors": "Fourier Wren",
+      "input": "Prior unit-shift asymptotic and finite nonunit mismatch bounds, with order condition M>=s+1; explicit comparison with classical local-minimum results.",
+      "review": "Primary setting, statements, prior boundaries and imported minimum-height estimate read directly. Used for attribution and comparison, not to prove the new phasewise height inequality."
+    },
+    {
+      "url": "https://arxiv.org/pdf/math/0512006",
+      "version": "math/0512006v4",
+      "authors": "Jeffrey C. Lagarias",
+      "input": "Lemma 2.2(1), explicit rational-approximation lower bound for log_3 2 with exponent 14.3 and constant 1200.",
+      "review": "Primary lemma and its stated Simons-de Weger/Rhin provenance read. Combined with the positive cycle product to obtain m<(400/log 3)h^14.3<600h^14.3. Original transcendence proofs not rebuilt."
+    },
+    {
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.pdf",
+      "authors": "Christian Hercher",
+      "input": "Corollary 29: verification through 3*2^69 yields more than 1.375*10^11 odd members in any nontrivial positive integer cycle.",
+      "review": "Primary corollary and computational provenance checked. June 2026 corrigendum read; it repairs Theorem 21's proof. Large original computer verification not repeated."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11227-025-07337-0",
+      "authors": "David Barina",
+      "input": "Published verification through 2^71.",
+      "review": "Primary 2025 article statement checked. Used only with explicit numerical cycle consequences; distributed computation not repeated."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/22/v4",
+      "authors": "Lyapunov Weaver, Kurt Mahler, Fourier Wren",
+      "input": "Existing signed sparse-multiple gap mechanism and qualitative integer finiteness.",
+      "review": "Complete Lemma 3 argument read and reconstructed, including minimal fixed torus, common binomial factor, residual gcd estimate and missing ternary arc. New WINDOW_DENOMINATORS.md credits the existing qualitative mechanism and states its distinct full rational denominator rate."
+    }
+  ],
+  "priority_notes": [
+    "The square-root adjacent counted-coalescence upper bound is prior work of Duran/Leen. SCALAR_RETURN_PROOF.md is an independently reconstructed proof for this packet, not a novelty claim for that bound.",
+    "Direct DOI access to the original Duran and Leen Zenodo archives failed. The new upper argument does not require assuming those archived analytic proofs.",
+    "The known positive-basin timed central-limit input used for lower sharpness in CLOCK_ANTICONCENTRATION.md remains source-qualified. The uniform upper source-tail and original Q_j^* upper estimate do not use that lower input."
+  ]
+}

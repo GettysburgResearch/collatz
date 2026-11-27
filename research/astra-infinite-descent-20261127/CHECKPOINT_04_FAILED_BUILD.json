@@ -1,0 +1,377 @@
+{
+  "schema": "collatz-infinite-descent-lean/v1",
+  "started_utc": "2026-11-27T16:10:21.977053+00:00",
+  "scope": "Fresh strict compilation of this packet and transitive axiom audit; not a fresh Mathlib build or proof of Collatz",
+  "passed": false,
+  "modules": [
+    {
+      "source": "imports/pr201/CoreBranching.lean",
+      "sha256": "819694f708f069c5221f9bf9a3143d982caeb81e60e7baeccbe2f482ad89cb05",
+      "exit_code": 0,
+      "seconds": 4.675,
+      "stdout": "'CoreBranching.step_double' depends on axioms: [propext]\n'CoreBranching.step_odd' depends on axioms: [propext, Quot.sound]\n'CoreBranching.run_add' depends on axioms: [propext]\n'CoreBranching.four_double' depends on axioms: [propext, Quot.sound]\n'CoreBranching.six_rows' depends on axioms: [propext, Quot.sound]\n'CoreBranching.alternate_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_properties' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.child_injective_bit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CoreBranching.ancestor_injective_at_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PeakRigidity.lean",
+      "sha256": "19bd8f32e0b1e0773fe915f8af818ec3bac2f5afc47451607ed519df5485ac12",
+      "exit_code": 0,
+      "seconds": 4.9653,
+      "stdout": "'PeakRigidity.shifted' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.meeting_grade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.postpeak_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeakRigidity.prepeak_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/AsynchronousGuard.lean",
+      "sha256": "56ddfd6d0a75efc6289a6ceb723e760b87436ea125e0a5354fdf34eebbc78f6b",
+      "exit_code": 0,
+      "seconds": 3.0123,
+      "stdout": "'AsynchronousGuard.affine' depends on axioms: [propext, Quot.sound]\n'AsynchronousGuard.meeting_is_aligned' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AsynchronousGuard.no_meeting_from_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/FairGrid.lean",
+      "sha256": "e94025ba343e68ea2fc3c17d429525d0eb5176c9e48cd8a13469b3fa81397a63",
+      "exit_code": 0,
+      "seconds": 2.2604,
+      "stdout": "'FairGrid.mark_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.interval_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.cover_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FairGrid.ordinary_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ReciprocalPacking.lean",
+      "sha256": "d16b647a0627c21bc1a8caf4514388286d63277136eb8e3c929536c615c37584",
+      "exit_code": 0,
+      "seconds": 1.6508,
+      "stdout": "'ReciprocalPacking.finite_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ReciprocalTrace.lean",
+      "sha256": "004802558b30225afd3c6223c5835942a9a11fca9f76deefe12c7e5e70012d6a",
+      "exit_code": 0,
+      "seconds": 5.0132,
+      "stdout": "'ReciprocalTrace.log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReciprocalTrace.mark_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReciprocalTrace.first_simple' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/FloorCounting.lean",
+      "sha256": "dfa3791066b428c6bdc8153af1dd072023076349413841e4b46806dddd549372",
+      "exit_code": 0,
+      "seconds": 4.3172,
+      "stdout": "'FloorCounting.sharp' depends on axioms: [propext, Quot.sound]\n'FloorCounting.bits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.native_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FloorCounting.visit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/PaidCheckpoint.lean",
+      "sha256": "7ab08e7b63913e394c54a4488f918b0067021b3b5fe44613d58610ea05e36a4d",
+      "exit_code": 0,
+      "seconds": 2.8236,
+      "stdout": "'PaidCheckpoint.positive_turns' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.seed_paths' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PaidCheckpoint.delayed_address' depends on axioms: [propext, Quot.sound]\n'PaidCheckpoint.paid_parent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/EarlierOffsets.lean",
+      "sha256": "8630c6a40b03b4c03af1e8fdce18e84d65c51cb82001fe96c900bb832ff62b3f",
+      "exit_code": 0,
+      "seconds": 10.654,
+      "stdout": "'EarlierOffsets.even_index' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.actual_decrease' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.earlier_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarlierOffsets.gap_five_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr201/BinaryPrefixCriterion.lean",
+      "sha256": "d890190f48de1db11e5b259213ba976ee46d7e41ad0312935b549fcb8e8f76d5",
+      "exit_code": 0,
+      "seconds": 2.3885,
+      "stdout": "'BinaryPrefixCriterion.least_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.debt_reserve_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.minimum_gate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.principal_member' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.member_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.finite_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryPrefixCriterion.collatz_of_small_finite_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/BinaryCylinder.lean",
+      "sha256": "51eabc7f513c18c20006219cef8756d715ed784204bf601e2b8f0735f5c298ed",
+      "exit_code": 0,
+      "seconds": 2.2704,
+      "stdout": "'BinaryCylinder.grade_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'BinaryCylinder.accepted_card_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TernaryPowerLift.lean",
+      "sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "exit_code": 0,
+      "seconds": 3.7363,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "merger/TwoGapRouting.lean",
+      "sha256": "a25c07958adbee6abe72d0ff57a347ce386b0f919e616db33aea8181199daa6b",
+      "exit_code": 0,
+      "seconds": 4.0656,
+      "stdout": "'Collatz.TwoGapRouting.address' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.route' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FixedGapClock.lean",
+      "sha256": "a3a59749d8c3d7b5e37362601a2c2b706dab49302fa42e7835bfb2a46104244e",
+      "exit_code": 0,
+      "seconds": 12.0956,
+      "stdout": "'Collatz.FixedGapClock.cover_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedGapClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/Threshold.lean",
+      "sha256": "643c650836d43f10da37ce99bee573cb49f39a61f0e944d46c36b91628ca68bb",
+      "exit_code": 0,
+      "seconds": 1.9386,
+      "stdout": "'Collatz.MergerThreshold.forward_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.seven_floor' depends on axioms: [propext, Quot.sound]\n'Collatz.MergerThreshold.seven_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.cheap_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.base_strict' depends on axioms: [propext]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FirstArrival.lean",
+      "sha256": "52cafda6b1bfbbe94cb86cc64433dff63265353c5f04bc8caae4a8452fe8c3ec",
+      "exit_code": 0,
+      "seconds": 3.7498,
+      "stdout": "'Collatz.FirstArrival.affine_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.attach' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.branch' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.first_twins' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/OrbitPacking.lean",
+      "sha256": "b9cbd69c70f6d1d292b24ea6f1f4efb4cb33736d93e2f4614a9086543cefc447",
+      "exit_code": 0,
+      "seconds": 1.9005,
+      "stdout": "'OrbitPacking.grade_tail_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.injective_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.simple_prefix_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitPacking.simple_block_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/ActualPacking.lean",
+      "sha256": "aad965fa5af6643d7d4c0797e5f5ca44098cbf1901072016c5d9b718d3e9c327",
+      "exit_code": 0,
+      "seconds": 1.9524,
+      "stdout": "'ActualPacking.simple_tail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.high_occupation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.first_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualPacking.row_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/SharpClock.lean",
+      "sha256": "bfbd7f1f130f311ea33467b9ecd4b0fdade4f6692fec893843f718cf36f1f5ca",
+      "exit_code": 0,
+      "seconds": 2.3811,
+      "stdout": "'Collatz.SharpClock.physical_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.one_two_never_fuse' depends on axioms: [propext, Quot.sound]\n'Collatz.SharpClock.period_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.height' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineProfiles.lean",
+      "sha256": "a496396e57c3a9f74a7b7e0c4f05608e97e87074c57c7dd8952ab3f14f81112f",
+      "exit_code": 0,
+      "seconds": 2.8765,
+      "stdout": "'Collatz.AffineProfiles.no_positive_double_sync' depends on axioms: [propext, Quot.sound]\n'Collatz.AffineProfiles.drop_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.finite_coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineGeometry.lean",
+      "sha256": "8d0d1c51489510c748ada2214eb63a41f7c34bdfacbd3b8769c401e190916e96",
+      "exit_code": 0,
+      "seconds": 2.3554,
+      "stdout": "'Collatz.AffineGeometry.slope_or_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineGeometry.rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/PrimeCore.lean",
+      "sha256": "09a3733d535b502a2db43dc4f04782bc5f04558d552e8a1a7cab382993c48c22",
+      "exit_code": 0,
+      "seconds": 1.4775,
+      "stdout": "'Collatz.PrimeCore.reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.necessary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.sufficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.PrimeCore.characterization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/BlockClock.lean",
+      "sha256": "b878867d71b1b71d13850609220b8099fe8c43681f80f58bfe18428579f2235f",
+      "exit_code": 0,
+      "seconds": 1.823,
+      "stdout": "'Collatz.BlockClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.BlockClock.first_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/InverseSpreading.lean",
+      "sha256": "cfcc9c92fd3e25f61f7dd7a2d50485e980ddca79bf3c01036a97be153f76b753",
+      "exit_code": 0,
+      "seconds": 2.3703,
+      "stdout": "'InverseSpreading.grade_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'InverseSpreading.bounded_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'InverseSpreading.spread_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/WindowMesh.lean",
+      "sha256": "8f430bb19365663e636e5642840f12febdab7fda1c03b22fcb1b0c2e6a9af1af",
+      "exit_code": 0,
+      "seconds": 2.3952,
+      "stdout": "'FastWindow.visit_from_mesh_with' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FastWindow.visit_from_mesh' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PhaseNet.lean",
+      "sha256": "8ab54bfbe83d53b69f70786206b2eb4b0c7f179ce24c053635e30ff0bfc5c236",
+      "exit_code": 0,
+      "seconds": 3.1617,
+      "stdout": "'PhaseNet.irrational_logs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhaseNet.additive_net' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PhaseNet.pow_ratio_net' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/FastWindow.lean",
+      "sha256": "3967ec25c1bbc66859ebf7dc951f5d031f6b2b2fac3fe22823e0ddb134589cdd",
+      "exit_code": 0,
+      "seconds": 2.3944,
+      "stdout": "'FastWindow.visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FastPairs.lean",
+      "sha256": "a33b618c9b3b426cd6bc0924fa6230871338be8e027141d4062de77c110e252c",
+      "exit_code": 0,
+      "seconds": 5.2956,
+      "stdout": "'Collatz.FastPairs.rows_of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastPairs.fast_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastPairs.pairs_of_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/FastBlocks.lean",
+      "sha256": "5c27567c7ecb92e0acbfd748c8a7419d756cb8960ddaf44380c6253b59c9cc0b",
+      "exit_code": 0,
+      "seconds": 1.9751,
+      "stdout": "'Collatz.FastBlocks.of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FastBlocks.fast_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AllProgressions.lean",
+      "sha256": "d032c9632fac880da7a523d8776c4635de5aec645351ee6aa97b7ac0e2d942e1",
+      "exit_code": 0,
+      "seconds": 1.7667,
+      "stdout": "'Collatz.AllProgressions.all_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllProgressions.of_marked_visitors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AllProgressions.fast_progressions' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "root/PhaseResidues.lean",
+      "sha256": "c5b470957823e98f5efec221c18a6973b288d3d7291df2aca567b3448090d586",
+      "exit_code": 0,
+      "seconds": 2.8343,
+      "stdout": "'PhaseNet.pow_ratio_net_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/MarkedWindow.lean",
+      "sha256": "cdd84e20f6cef506b1acbe3de0586efc706cd200b584dbf2b9c354e41b411ca3",
+      "exit_code": 0,
+      "seconds": 2.4268,
+      "stdout": "'FastWindow.visitors_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/MarkedProgressions.lean",
+      "sha256": "264be9f39ddf0807cd6f3be6eb7dd442242da7d6870e2bc362b789b0a8968031",
+      "exit_code": 0,
+      "seconds": 1.7447,
+      "stdout": "'Collatz.MarkedProgressions.mixed_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MarkedProgressions.all_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffinePlacement.lean",
+      "sha256": "c6fbf6592d90b8283996b2e5c533fa4157f4878e5e7dc768c508d4e83b12fb3f",
+      "exit_code": 0,
+      "seconds": 3.5915,
+      "stdout": "'Collatz.AffinePlacement.first_of_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffinePlacement.marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "merger/AffineClassification.lean",
+      "sha256": "8d34b711465ecdc076c0a9ad9e33297873f63172a502090ca2693e467d0fa5da",
+      "exit_code": 0,
+      "seconds": 2.0694,
+      "stdout": "'Collatz.AffineClassification.iff_common' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ArcHeight.lean",
+      "sha256": "0503d3e804925acdcd90fa14c637942de0c8211f96530e0f38644fd54c7cdb9f",
+      "exit_code": 0,
+      "seconds": 2.3739,
+      "stdout": "'Collatz.InfiniteDescent.ArcHeight.dyadic_center_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.centered_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.telescoping' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.InfiniteDescent.ArcHeight.weighted_variation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/TernaryItinerary.lean",
+      "sha256": "b6a2bce0e51455a8c5177a473b751219da82021086e158698564cb4c920b6b56",
+      "exit_code": 0,
+      "seconds": 9.9196,
+      "stdout": "'Collatz.Itinerary.Gap.follow' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.Route.follow' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.Route.parity' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.exact_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.Route.readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.free_marks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.carry_through_gate' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.rows_of_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Itinerary.empty_of_convergence' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.universal_iff_missing_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "imports/pr206/BasinTransport.lean",
+      "sha256": "945e71462ce0b3d9499d6e326d4afe1d923ffdef8eb484207e4f61f1cb4de05f",
+      "exit_code": 1,
+      "seconds": 0.7829,
+      "stdout": "/workspace/scratch/ab55ab15f58b/checkpoint-07/research/astra-infinite-descent-20261127/imports/pr206/BasinTransport.lean:30:14: error(lean.unknownIdentifier): Unknown identifier `halve`\n/workspace/scratch/ab55ab15f58b/checkpoint-07/research/astra-infinite-descent-20261127/imports/pr206/BasinTransport.lean:29:57: error: unsolved goals\nb d e m : Nat\npos : 0 < m\n\u22a2 run b (run d (2 ^ d * (2 ^ b * m - 1))) = run e (2 ^ e * (3 ^ b * m - 1))\n'Collatz.Itinerary.BasinTransport.affine_rays' depends on axioms: [propext, sorryAx]\n'Collatz.Itinerary.BasinTransport.double_tile' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.BasinTransport.three_four_tile' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "lean": {
+    "path": "/tmp/collatz-diagonal-lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "mathlib": {
+    "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4",
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_clean": true
+  },
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependencies": [
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/plausible",
+      "head": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/LeanSearchClient",
+      "head": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/importGraph",
+      "head": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/proofwidgets",
+      "head": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/aesop",
+      "head": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Qq",
+      "head": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/batteries",
+      "head": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/440f31b72de6/toolchain/mathlib4/.lake/packages/Cli",
+      "head": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "build_directory": "/tmp/collatz-infinite-descent-mjq2q0nq",
+  "flags": [
+    "-j1",
+    "-DElab.async=false",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "error": "Lean failed: imports/pr206/BasinTransport.lean\n/workspace/scratch/ab55ab15f58b/checkpoint-07/research/astra-infinite-descent-20261127/imports/pr206/BasinTransport.lean:30:14: error(lean.unknownIdentifier): Unknown identifier `halve`\n/workspace/scratch/ab55ab15f58b/checkpoint-07/research/astra-infinite-descent-20261127/imports/pr206/BasinTransport.lean:29:57: error: unsolved goals\nb d e m : Nat\npos : 0 < m\n\u22a2 run b (run d (2 ^ d * (2 ^ b * m - 1))) = run e (2 ^ e * (3 ^ b * m - 1))\n'Collatz.Itinerary.BasinTransport.affine_rays' depends on axioms: [propext, sorryAx]\n'Collatz.Itinerary.BasinTransport.double_tile' depends on axioms: [propext, Quot.sound]\n'Collatz.Itinerary.BasinTransport.three_four_tile' depends on axioms: [propext, Quot.sound]\n\n",
+  "finished_utc": "2026-11-27T16:12:31.682918+00:00",
+  "source_commit": "3104ffab7beaed8789548d84188d260cb81ffb36",
+  "resolution": "The flat output name and import name did not match the logical module name inferred from a nested source path. replay_lean.py now passes -R source.parent for every file. No pinned proof source changed. A fresh full rebuild is required; this failed receipt is retained as evidence."
+}

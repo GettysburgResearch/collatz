@@ -201,6 +201,60 @@ of complete finite first-arrival rows at large odd targets. See
 [TargetExtinction.lean](../escape/TargetExtinction.lean). The target-row
 vanishing estimate remains open; boundedness also permits finite cycles.
 
+[CycleOccupation.lean](CycleOccupation.lean) handles the once-around
+prefix of a positive cycle separately, so its repeated endpoint is never
+mistaken for a new vertex. If its least period is \(P>0\), odd count is \(d\),
+and every state before the first return is at least \(8192^K\), then
+
+\[
+ P\log 2-d\log 3
+ \le262144\left(\frac{6561}{8192}\right)^K.
+\]
+
+This upper bound is independent of the period. It is a consequence of
+the actual finite occupation estimate, not a logarithmic-form assumption.
+The cycle packet uses it to sharpen the written clock restrictions.
+
+## A second boundedness criterion with an elementary source cutoff
+
+[DampedRows.lean](DampedRows.lean) gives a grade-indexed criterion that
+uses reciprocal source weights. Let \(A_{m,d}(y)\) be the complete finite
+row of positive sources first reaching \(y>0\) at clock \(m\), with
+\(d\) odd departures, and put \(h=3^d/(2^m y)\). Then
+
+\[
+ \text{every positive orbit is bounded}
+ \quad\Longleftrightarrow\quad
+ \lim_{d\to\infty}\sup_{m,\,y>0}
+       h\sum_{z\in A_{m,d}(y)}\frac1z=0.
+\]
+
+Both implications, with the explicit finite row definition, are proved
+in `bounded_iff_complete_damped`. The vanishing assertion remains open.
+Here the source tail has a direct finite bound, independent of clock,
+grade, target, and any first-visit condition:
+
+\[
+ h\sum_{\substack{z\in A\\z>R}}\frac1z\le\frac1{R+1}
+\]
+
+for every finite actual row \(A\). The proof uses the exact source-grid
+mass bound \(h|A|\le1\). If all orbits are bounded, the finitely many
+sources at most \(R\) have a common finite height bound; a first visit
+along any of those orbits has at most that many distinct positive states.
+These sources disappear from all sufficiently high-grade first rows,
+leaving only the displayed tail. Conversely, the positive uniform
+first-arrival mark floor prevents a fixed source from making new first
+visits at arbitrarily high grades when the damped rows vanish. The
+elementary affine height bound then bounds its entire orbit. This
+argument permits periodic orbits and supplies no cycle exclusion.
+
+The [written damping analysis](../escape/DAMPED_EXTREMA.md) treats other
+positive weights tending to zero, their extremal escaping classes, and
+finite convergent examples that pass the proposed maximality tests.
+Its general-weight classification is separate from the reciprocal
+criterion formalized here.
+
 ## A separate constructive phase theorem and exact examples
 
 [PhaseNet.lean](PhaseNet.lean) proves the irrationality of
