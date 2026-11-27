@@ -1,0 +1,55 @@
+{
+  "scope": "Full unweighted physical mask; individual absolute moments only",
+  "literal_eight_step_cut_checks": 57,
+  "odd_steps": 512,
+  "phase_schedules": 514,
+  "fixed_cut_cases": 2908,
+  "minimum_fixed_cut_population": 40147753876380311573194241879795457186244128421394423838115747841191113008228631422917890827637213580303644006980629,
+  "minimum_fixed_cut_coordinate_pair_energy": 23533249183800008423443746217722129485866705158238321409183032547063269145213677706199582199833979106580725697241364487866520105157360004590009947308628459672831157871612755451678634821121522640130383841103765583866332486086898230958604405926120218925769198327338871317,
+  "certified_population_lower_base3": "47/100",
+  "certified_pair_energy_lower_base3": "109/100",
+  "population_upper_input": "../arithmetic/check_rank_support.py: 12/25 per native binary clock",
+  "moment_rate_per_q_minus_one": "10001/30000",
+  "affine_budgets": [
+    {
+      "left": "1",
+      "right": "2",
+      "slope": "47/100",
+      "intercept": "-47/100",
+      "left_margin": "0",
+      "right_margin": "4099/30000"
+    },
+    {
+      "left": "2",
+      "right": "61/18",
+      "slope": "47/200",
+      "intercept": "0",
+      "left_margin": "4099/30000",
+      "right_margin": "7/540000"
+    },
+    {
+      "left": "61/18",
+      "right": "4",
+      "slope": "12/25",
+      "intercept": "-83/100",
+      "left_margin": "157/540000",
+      "right_margin": "899/10000"
+    },
+    {
+      "left": "4",
+      "right": "5",
+      "slope": "109/400",
+      "intercept": "0",
+      "left_margin": "899/10000",
+      "right_margin": "871/30000"
+    },
+    {
+      "left": "5",
+      "right": null,
+      "slope": "47/100",
+      "intercept": "-1",
+      "left_margin": "31/1875",
+      "right_margin": null
+    }
+  ]
+}

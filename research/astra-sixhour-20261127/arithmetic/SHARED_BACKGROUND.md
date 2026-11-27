@@ -1,6 +1,6 @@
 # Unbounded markers between a fixed number of copies of one odd-step background
 
-**Status.** Proposed written denominator theorem. It uses a published multivariable greatest-common-divisor estimate for $S$-units. The resulting threshold is ineffective. The number of copies is fixed. All dyadic exponents in the background and all markers can grow independently.
+**Status.** Independently reviewed written denominator theorem. It uses a published multivariable greatest-common-divisor estimate for $S$-units. The resulting threshold is ineffective. The number of copies is fixed. All dyadic exponents in the background and all markers can grow independently.
 
 Let $U$ be any word of $n$ positive integer valuations with total $s$. Fix $r\ge2$ and form the cyclic odd-step word
 \[

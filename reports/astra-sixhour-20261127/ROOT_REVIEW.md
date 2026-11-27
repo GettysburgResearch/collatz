@@ -284,5 +284,564 @@ finiteness statement follows from the positive affine formula and the
 strictly expanding inverse multiplier of any actual positive cycle.
 It does not provide a rule generating new words under the same cap.
 
-Later closure experiments are not covered by these checkpoint reviews.
-The fresh-checkout Lean and finite-control replay is a separate pending gate.
+The first checkpoint subsequently passed its immutable-checkout replay:
+14 new modules, 49 new public theorem audits, the rebuilt `Portal`
+dependency with nine additional audits, ten exact controls in both Python
+modes, and all eleven repository validation commands. The exact science
+tree is `994d15152f99a8cf7499d7752f96fde9b774d7fd`; the published science
+commit is `95c572c0af668be6ada185d35a7ff1041e4e7588`. See
+[the checkpoint receipt](CHECKPOINT_VERIFICATION.md). The reviews below
+concern subsequent work and have their own final replay gate.
+
+## Post-checkpoint review: integral filters and actual rank spacing
+
+The root reconstructed the common small-filter calculation in
+`arithmetic/SMALL_FILTER.md`. The coefficients are chosen by the stated
+modulo-three recursion; they are not chosen independently at each rank.
+The relation between the mechanical quotient and the actual rank shift
+telescopes with the displayed factors of two. Thus each filtered value
+has the same full odd reduced denominator as its input. In the
+denominator-one case the positive variant produces small positive
+ordinary integers. The transferred inhomogeneous term, however, need
+not be the low bit of that integer. The rational controls and the
+one-state control test this exact branch obstruction. Goodness of the
+small filtered integer has not been transferred to the original source.
+
+For `arithmetic/RANK_SPACING.md`, the root checked that the longer
+mechanical schedules include every phase cell, including the terminal
+mask. The support count concerns actual possible binary residues of a
+rank value. It yields the stated many close pairs at the one supplied
+scale after the pigeonhole argument and the rank approximation are
+combined. The averaging estimate in the scale parameter is a different
+statement: it excludes most real scales but supplies no bound at the
+particular scale belonging to the hypothetical integer cycle. Rotating
+the anchor does not turn this into independent samples of that scale.
+The new exact population certificate is included in the final replay.
+
+The root also considered an additive-energy estimate from convex
+subsequences of the approximately exponential rank values. It cannot
+replace the short-bridge energy certificate as presently used. An equal
+bridge carry permits nonzero endpoint co-differences of the form
+`t (2^S,3^L)`; equality of the actual starting pair sums only treats
+`t=0`. No improved cycle exponent is claimed from this observation.
+
+## Post-checkpoint review: finitely many missing physical blocks
+
+The root independently checked `arithmetic/PUNCTURED_WINDOWS.md`.
+Each missing block has its actual odd count fixed in both words.
+Unrolling gives the displayed integer coordinates `Z_0,Z_i`, and the
+local product at the places infinity, two and three is bounded by a
+polynomial in the length times `D 2^(-A)`. The two-adic replacement form
+is the full sum of the coordinates; its divisibility comes from the
+two actual integer endpoints. The other local forms are coordinates,
+so all three matrices are nonsingular.
+
+Passing to primitive vectors is legitimate. The product of the local
+absolute values of their common integer divisor is at least one, so
+division does not increase the relevant product. Height is at most
+exponential in the length, and the assumed saving is exponential.
+The fixed-place Subspace Theorem therefore confines a hypothetical
+infinite family to finitely many proper rational subspaces. In a fixed
+relation the initial coordinate dominates at the real place because
+`D/K` tends to infinity. After its coefficient vanishes, the first
+remaining hole has a strictly smaller two-adic valuation than all
+later holes, even after the fixed coefficients are included. It cannot
+cancel. Removing a zero hole is justified by fixed-grade carry
+injectivity, which is also part of the Lean kernel.
+
+This is a written argument using Schlickewei's Subspace Theorem. The
+root read the original theorem's bibliographic record and Evertse's
+author notes, *The p-adic Subspace Theorem* (May 2011), Theorem 1.1 and
+its primitive-vector formulation. The theorem itself is not imported
+as a proved Lean result. The number of holes and the margins must be
+fixed; the onset is ineffective. Counting retained patterns by this
+decoder alone does not reach the cycle-exclusion exponent.
+
+## Post-checkpoint review: actual carry alignment and distortion records
+
+The root checked the actual-prefix inequality in
+`descent/CARRY_ALIGNMENT.md`. If the same parity word starts at the
+small control and at the supplied source, its positive affine
+correction gives the displayed comparison with the actual lower
+floor. In the bounded canonical interval the full good control can
+only be the stated source one. In a restricted cycle the parity pair
+before arrival at one is incompatible with the restricted valuations.
+This excludes the proposed universal alignment mechanism; it is not
+a nonconvergence argument.
+
+For `descent/DISTORTION_RECORDS.md`, the root reconstructed the first
+crossing of the two actual multiplicative corrections. At the first
+lower crossing the final lower odd step yields the strict half-unit
+interval. When both residual exponents are nonnegative, integrality
+forces equality; reduction modulo three then removes the remaining
+ternary factor and gives an actual synchronized merger. Both the
+native time and the counted odd inputs matter.
+
+When the lower crossing occurs later, clearing its binary denominator
+gives a small positive integer residual. A residual which is an actual
+word carry decodes to an ordinary ancestor, but its height is larger
+than twice the last lower odd input. It therefore supplies no smaller
+source under the original minimum. The `161` example demonstrates this
+size direction, and `164513` demonstrates that an arbitrary residual
+need not be an actual word carry. The complete-word charge identity
+at good controls shows why forcing such a record for every good pair
+would be too strong. The replay tests actual paths and carries, not
+only their homogeneous multipliers.
+
+## Post-checkpoint review: the original canonical minimum
+
+The root checked the interval theorem in
+`descent/ORIGINAL_CANONICAL_FLOOR.md` directly. Write
+`y=1+2^d u`, with odd `u` and `d>=4`. For even `d=2l`, the
+successive two-clock identities and one more shortcut merge `y` with
+the stated smaller positive multiple `3^(l-1)u`. For odd `d=2l+1`,
+the actual five parities of `3,5,8,4,2,1`, followed by the two-clock
+identities, merge `3y` with `3^l u`. The inequalities
+`3(y-1)/16` and `9(y-1)/32` are in the correct direction. The
+hypothesis that every positive multiple of three below `M` is good
+therefore certifies one of the two orientations throughout the whole
+specified interval, including off-cycle integers.
+
+The pinned bound `243(z-1)<=1024(s-1)` places every smaller
+canonical integer in that interval at `M=2s+1`. An earlier bad
+canonical integer would have a good triple and contradict the
+original leastness. Thus the same original `z` is the least bad
+integer in the class `17 mod 48`. No new minimizer is substituted.
+Its two-adic valuation `v_2(z-1)` is odd. The four actual shortcuts
+send the whole canonical row bijectively to `10 mod 27`, proving
+the equivalent row minimum. At the length-two capture case this
+row minimum is the original global minimum `s`, so the added
+inequality need not have a positive margin.
+
+The subsequent inverse-path calculation keeps the original ceiling.
+The only first nonnative odd predecessor that could stay below `z`
+is `4v+1`, with `v<(256/243)s`. Its own only possible further
+predecessor below the ceiling is the stated multiple of three,
+which has no odd predecessor. The alternatives of larger exponent
+already exceed the ceiling. These possibilities contain no canonical
+integer. Consequently a smaller off-cycle canonical ancestor, if
+one is forced by the original hypotheses, must be obtained through
+an intermediate overshoot. The theorem has not established such
+an ancestor. It also has not assumed that the original `z` lies
+on the distinguished bounded cycle.
+
+## Post-checkpoint review: a scalar physical flux and large real strips
+
+The root checked the local identities in
+`transport/SUSCEPTIBILITY.md`, including the squared edge weight
+and the positive source term in the Green recurrence. The quadratic
+test function gives the displayed positive escape contribution when
+the named ordinary-trace and first-passage results are supplied.
+The infinite undamped sum need not be finite; cancelling its incoming
+and outgoing terms would remove exactly the possible escape flux.
+The proposed absolute-continuity conclusion for the threshold function
+is an open sufficient condition, not a consequence of the finite
+recurrence. Its known derivative is allowed to be singular.
+
+The root reconstructed the exact finite-cylinder submeasure in
+`transport/UNIT_STRIPS.md`. Along an escape, a fixed ordinary
+source measure is transported by the actual affine prefix, with
+mass multiplier equal to its real dilation. Differentiating Lebesgue
+measure relative to the singular source measure gives divergence
+of the mass in the resulting fixed-width strips. The stronger
+limsup statement uses the cited Hausdorff gauge and the bound of
+three halves on each upward dilation step. Neither step averages
+over moving integer terminals.
+
+The long-interval improvement is also valid under the named
+full-dimension and singularity inputs. At any fixed child depth,
+the mean conditional entropy deficit has Cesaro mean tending to
+zero. Fatou gives infinitely many parent cells at almost every
+source point with every child having a fixed positive fraction
+of the uniform conditional mass. Singular dyadic density tends
+to infinity at the same point. First crossing of the required
+affine dilation makes every transported child have length between
+one quarter and three eighths. Every contained unit interval
+therefore contains a whole child of large mass. A diagonal choice
+of child depths yields intervals of diverging length with large
+mass in every unit subinterval. The argument does not claim a
+uniform logarithmic rate simultaneously on all those subintervals.
+
+The exact-transport statement on any fixed interior relative band
+uses the uniform reciprocal tail to force a visit to a finite
+floor. Every relevant member of that floor has joined the escape
+ray by one common finite date. Beyond that date all mass in the
+band is inherited from one fixed earlier fibre. This identifies
+why new high-suffix mixing does not itself control its fine real
+concentration. The cited stationary product-ball bound has a
+resolution-dependent logarithmic loss and is not the needed
+ordinary unit-strip upper bound.
+
+## Post-checkpoint review: a common closed correction set
+
+The root read the new PR193 fixed-root closed-support proof at
+`2796977d3f02ad57daeb7510f16da29527f9afde`, together with the deduction
+in `transport/GLOBAL_CORRECTION_GAPS.md`. On any band away from
+correction one, the uniform simple-path reciprocal tail forces a
+visit to one of finitely many small odd vertices. Splitting there
+places the correction in a compact null first-hit set times a
+countable compact set from one deterministic future. This product
+is compact and null. Taking the wider preliminary band handles
+limits at the band endpoint; a countable exhaustion and the point
+one give one compact null set for all simple segments.
+
+The deduction uses PR193's written closed-null theorem and its
+named analytic hypotheses. This pass has not replayed every
+dependency of that external branch in Lean. For nonperiodic
+ordinary targets, all finite inverse prefixes are simple, so the
+result gives the claimed exact zero strips on compact sets of
+relative positions outside the reflected correction set. The
+escape's amplified strips lie in the exceptional set, so these
+two conclusions are compatible.
+
+The all-segment dichotomy is also consistent. With finitely many
+cycles, removing whole laps gives a finite union of geometrically
+scaled copies of the simple correction set, with zero as the
+only added limit from unbounded lap counts. With infinitely many
+cycles, their minima tend to infinity, their one-lap corrections
+tend to one, and their repeated corrections approximate every
+point of `[0,1]`. This does not establish finiteness of the set
+of cycles. The one-sided linear lower mass bound at intermediate
+scales is compatible with singular dimension one; it is not a
+porosity or absolute-continuity theorem.
+
+## Post-checkpoint review: exact ordinary parent rows
+
+The root checked the endpoint formula and reverse decoding in
+`transport/PARENT_ROWS.md`. At fixed total binary cost the actual
+compositions have one endpoint in every odd residue modulo that
+power of two. The last gap can be recovered from `v_2(3v+1)`
+unless it exhausts the total cost, in which case the composition
+is unique. The endpoint bands then force the displayed complete
+integer subinterval, rather than only a limiting density there.
+
+For the limiting row, conditioning the fair renewal bits to renew
+at the last date gives the uniform compositions. A bounded initial
+part of the infinite code is independent of that sufficiently late
+bit. Approximation by those initial parts and the exact odd grids
+prove that the limiting fractional part is Haar. Its compact
+real support has positive measure and lies in the two stated
+bands. The iterated similarities have total contraction one, so
+their support images overlap only on a null set and normalized
+Lebesgue measure is stationary. Uniqueness of the contracting
+stationary law, followed by the Haar fractional part, makes the
+support a one-fold integer tile of measure one. These steps give
+the row convergence for a bounded label only when its ordinary
+mean exists. A whole escaping component has not silently been
+assigned such a mean.
+
+The boundary estimate uses a cylinder of exponent five lying
+strictly in the support's interval. A boundary point cannot have
+a code containing that cylinder. The weighted count of codes
+avoiding this exponent has growth rate strictly below two, giving
+the claimed geometric approximation error for the row sets.
+
+For a fixed root in an escaping component the strict corrected
+height margin forces a same-grade row endpoint to have exactly
+the displayed corrected-height dilation, not an arbitrary nearby
+power of two. A fixed positive distortion forces a visit to a
+finite floor. Fixing the grade bounds the native odd depth of
+that visit, and its native exponents are at most the row cost
+plus a constant. This proves the polynomial count of same-grade
+endpoints against the exponentially large complete row. It does
+not turn the other endpoints into smaller witnesses. Intermediate
+ordinary-parent nodes may leave and reenter the component.
+
+Finally, the growing-translation estimate in
+`transport/ORDINARY_TRANSLATES.md` retains a burn-in depending
+on the translation size. The equal-rank square-root-logarithm
+bound is explicitly credited to Paper 13/v1; the extended statement
+and its marked application preserve this cost. Subexponential
+translations at a large depth do not supply a pointwise merger
+at the original source or its original height budget.
+
+## Root synthesis: the full-mask boundary for every fixed real moment
+
+The root constructed `synthesis/FULL_MASK_MOMENTS.md` after reading the
+new PR200 fifth-moment source reduction, its narrow third-layer extension,
+and its separate even-moment obstruction at
+`df2f17a117bea06bb34040a5a97e7dc9711d9871`. The new certificate concerns
+our wider complete physical mask. It does not contradict that branch's
+fifth-moment result for a smaller family.
+
+At 512 odd departures, all 514 phase schedules and 2,908 fixed-cut cases
+have population greater than `3^(47*512/100)` and coordinatewise
+unordered-pair collision count greater than `3^(109*512/100)`. The
+root executed the exact transfers, checked their integer inequalities,
+and compared both with literal path and ordered-pair-signature
+enumeration at eight steps. The retained checker has no removable
+Python assertions. Its final immutable replay is separate.
+
+Fixed entrance and exit layers fix the full native duration. Peeling
+the least dyadic term of the ordinary numerator recovers its odd
+positions, so there is no last-layer ambiguity in Parseval's identity.
+All-cut positivity gives uniform block concatenation, and a bounded
+initial remainder can be chosen identically in the four copies.
+The existing population upper rate is `12/25` per native binary clock.
+In the joint critical-slope limit these three rates are therefore
+`0.47`, `0.48`, and `1.09` in base three per odd departure.
+
+Elementary supremum and probability-space norm inequalities, together
+with the near-zero arc of the ordinary one-variable polynomial, give
+five affine lower bounds for its logarithmic moment rate. Switching
+at `q=2,61/18,4,5` covers every real `q>1` and yields the uniform
+rate `(q-1)(1/3+1/30000)`. The finite rational piecewise envelope
+and its strict cubic separation also pass strict local Lean checking.
+This does not formalize the Fourier or asymptotic steps.
+
+The arithmetic agent independently read the proof and checker, confirmed
+the fixed-cut injectivity, concatenation, ordinary fourth-moment
+orthogonality, degree bound and the joining inequalities, and reported
+no gap in the stated scope. The conclusion concerns the cost of
+individual unweighted segment norms in the stated Holder architecture.
+It does not lower-bound the actual joint convolution atom and does not
+apply after a genuinely smaller source family is specified.
+
+The root then read the new PR201 carried inverse-rival argument at
+`a577c1f19a00b8219dcde9744814813ddd636e66`. Temporary single-history
+probes of its 584-context bank, and a 796-context extension to layer
+two and the full width, still had sampled population rates around
+`0.475` in base three per odd departure at 2,000 steps. The extension
+also passed 1,592 literal ordinary-lift checks. These are exploratory
+finite entropy probes with numerical phase sampling, not uniform
+asymptotic bounds or new source-counting theorems. They guided the
+ongoing search toward joint actual histories and stronger source
+conditions; they are not included in the final theorem count.
+
+## Actual bilateral histories and original upper gaps
+
+The root reconstructed the two-modulus graph argument in
+`arithmetic/HISTORY_TRADES.md`. A future word fixes a residue modulo a
+power of two; a past word fixes a residue modulo a power of three.
+Only pairs actually occupied by one of the same cycle's integer phases
+become edges. An alternating graph sum is divisible by the product of
+the two moduli. The complete ordinary height bound then makes sufficiently
+short alternating sums zero. The common-clock recurrence transports that
+zero through the entire matched bilateral window. The full reduced odd
+denominator is retained in the rational control, where the corresponding
+signed sum is nonzero. The finite Lean statements prove the divisibility,
+height-to-equality and synchronous transport implications, not the graph
+population or imported logarithm estimate.
+
+For equal windows the exponents are 49/32 for each modulus, 147/200 for
+the vertex count, and 49/50 for the four-or-six-cycle extremal threshold.
+Successive pivot deletion gives the stated independent relations. For
+the longer window, the product dominates every graph cycle's possible
+sum. Integer past and future potentials follow from a spanning tree;
+their existence by itself is compatible with a hypothetical cycle.
+The root subsequently proposed unequal windows to force four-edge
+relations alone. The final strengthened version is reviewed separately
+below when its source is frozen.
+
+The root read `descent/ORIGINAL_UPPER_GAPS.md` after the odd ceiling was
+weakened to 8s and the no-consecutive-evens assumption was removed.
+Its upper is the same actual first-hit suffix throughout. The original
+source's native two-edges yield L=2a+1 and the supplied upper meets T(a);
+the stated first-hit cost shift follows because the entire finite prefix
+stays above one. At each later upper gap the signed rational centre is
+determined by the preceding odd positions, not by that new gap.
+
+The actual physical product, with floor s and total ceiling 13s, bounds
+every segment's clocks by less than twice its odd count plus four.
+After the necessary lower odd departures the rational centre is an
+integer c with -13*2^(t_q) <= c <= 13+5q. For negative c, the exact
+ratio decrement bounds the number of matching odd departures. For
+0<c<s, the good control's pre-hit odd sites are distinct, and all but
+possibly the first are ternary units. Counting those sites in the
+derived interval gives n<=24c+27. Eight subsequent trivial-cycle laps
+would cross the bad floor. These estimates fit the displayed recursion
+with constant 1000. The endpoint t_(r+1)=H is the actual first hit,
+not an additional odd departure.
+
+Thus for each fixed odd rank of this original upper, either the floor
+is explicitly bounded or the original lower has a large physical peak
+before that certificate's endpoint. The bounded-cycle case supplies
+the peak bound; the off-cycle original does not automatically do so.
+The estimate does not supply a uniform bound over all possible ranks.
+The packing, induction and infinite-rank discussion are written proofs;
+Lean checks the finite prefix, exit and affine-remainder kernels.
+
+## Current balance and inverse certificates at the original floor
+
+The root read `transport/ORIGINAL_CURRENT.md`, its six-theorem Lean
+module, `RESIDUAL_CURRENT.md`, `ORIGINAL_FLOOR_SIEVE.md` and the full
+original-floor checker. The current's earliest negative charge follows
+from the absolute bad floor and the actual shortcut identities. The
+reciprocal sum retains its nonnegative outgoing boundary term. Neither
+later signed current nor that boundary is set to zero.
+
+For the residual Radon measure the root checked the factors in each
+pushforward: division by the residual removes the coefficients two and
+three in the retained-layer identity. Summing gives a balance between
+the full measure and its odd sector. The Mellin equation has the
+displayed factors 1-2^(-sigma) and 1-3^(-sigma). The component floor
+gives local finiteness, while the discounted trace input supplies the
+asserted moments. The fixed-grade rotation calculation is compatible
+with singularity at every one grade and Haar Cesaro averages over many
+grades. The explicit two-geometric-ray singular control satisfies the
+balance and has a positive floor, so the argument does not infer
+separate dilation invariance.
+
+The inverse-floor enumeration retains the supplied original source,
+the native forced prefix, all intermediate integrality, and each of
+the three stated strict floor tests. Its finite tables cover only the
+declared depth and height ceiling. The separate all-depth statement
+is a written proof about the countable union of asymptotically valid
+fixed-word cylinders. It uses a positive virtual ternary control at
+two, with the original dyadic residue retained independently.
+
+The root checked the countable-union step. After binary clearing, a
+fixed ordinary virtual endpoint has uniformly bounded multiplicity at
+each depth: its ordinary forward orbit determines the clearing value
+and exponent for each of finitely many short prefixes. Infinitely
+many occurrences of that fixed endpoint force a periodic terminal;
+positive inverse cycle multipliers then tend to infinity. Summable
+x^(-sigma) domination proves convergence of the prefix weights. The
+tail union bound converges for 1<sigma<2. Its t=0 term accounts for
+the as-yet-unfixed final ternary digit at depth R+n. This does address
+all fixed-word cylinders, not just any one finite list.
+
+The resulting Haar density-one survivor does not classify ordinary
+integer counterexamples: those form a countable, Haar-null set.
+Finite-source affine crossovers, more forward steps of the supplied
+lower, and the complete good upper are separate information. Additional
+ordinary controls and the later fixed-source depth consequences are
+kept with their own stated scope in the final source note.
+
+## Last external frontier intake
+
+The final metadata snapshot records the heads observed at 04:01 UTC.
+The root read PR201's eighth-checkpoint guide and full ternary-past
+entropy proof at `860a67dedc860adcd82b964958d91b9e21d610f1`. Its
+hereditary four-sum bound uses the actual binary ternary-past tree;
+its entropy transfer retains fixed-place separation. The root also
+read PR200's sixth-checkpoint guide and full abstract rank-cap
+construction at `7af83b786636abba2f44fe8c81441153331377fc`.
+The latter deliberately omits chronological Collatz equations.
+These comparisons reinforce the need to retain those equations in
+our bilateral history argument. Their bulk numerical and Lean
+certificates were not rebuilt in this packet, and their new finite
+cycle-period exclusion is not included in our verification counts.
+
+PR193's guide at `67e5cdb3c1689836bf1dc01a57a7e46b85449dcd` describes
+its adaptive rational-energy criterion. Its two uniform estimates
+remain explicit open premises. The root did not import those premises,
+or the guide's externally assisted Mellin estimate, into a closure.
+
+## Strengthened four-phase core
+
+The root read the completed asymmetric and ranked-core sections of
+`HISTORY_TRADES.md` at 04:05 UTC and re-read the pinned physical-mask
+prerequisite. The latter supplies the coprime rotation pair, actual
+dyadic lifts and uniform logarithmic rank error for this bounded branch.
+In particular the wrapped digit bound is eight, since the fundamental
+digits are one, two or four.
+
+With future and past modulus exponents 25/24 and 49/24, the part sizes
+are p^(1/2+o(1)) and p^(49/50+o(1)). Counting pairs of neighbors gives
+the four-cycle-free edge bound b+f*sqrt(b)=p^(99/100+o(1)). The product
+modulus is p^(37/12+o(1)), large enough to turn every four-cycle into
+an exact ordinary rectangle. Pivot deletion therefore gives at least
+p-ceil(p^(199/200)) independent four-phase identities.
+
+The root checked why the asymmetric choice eliminates the small-area
+alternative. The physical rank error and s/p^2 tending to infinity give
+a minimum true gap of constant times s/p. The long past side is a
+nonzero multiple of 3^(L_P), asymptotically larger than p^2. Their area
+therefore exceeds any constant times ps. The integer rank-log cross
+difference forces the remaining area bound of constant times s^2/p.
+This argument uses true ordinary phases, not a freely selected rank grid.
+
+For the further refinement choose any fixed delta<1/25, record rank
+modulo floor(p^delta) at the past vertex, and use modulus exponents
+1+epsilon and 2+epsilon. Both four-cycle-free edge exponents remain
+strictly below one for sufficiently small epsilon. Greedy increasing-rank
+insertion produces one sublinear retained set. Every discarded edge
+has its own four-corner identity with three earlier retained edges.
+The rank cross is a nonzero multiple of the recorded modulus, giving
+the stronger area floor of constant times s^2*p^(-1+delta).
+The relations are independent because no discarded edge enters any
+other relation's retained corners. A negative coefficient remains in
+the reconstruction; these additive identities are not physical mergers.
+
+Finally the longer digit-matrix bound is a direct lattice count.
+Small integral digit dependencies must annihilate the state by dyadic
+divisibility and height. The irreducibility of X^p-2, together with
+gcd(p,h)=1, makes the first L+1 twisted state shifts independent.
+The elementary Gaussian image count bounds the codimension from above
+by L+O(log p). This is compatible with the required lower bound L+1.
+It does not make the finite-window relation space invariant under all
+chronological shifts. That is an exact remaining obstruction to the
+linear-algebra closure attempted here.
+
+The final packing variant is consistent with these bounds. Averaging
+common-past-neighbor counts produces K_(2,t) with t>=floor(p^tau) whenever
+tau+delta<2/25 and the remaining edge count exceeds the chosen sublinear
+threshold. Removing all its edges gives disjoint actual source families.
+Their common positive gap follows from the already proved four-cycle
+balances. The distinct decreasing rank displacements then give the stated
+area bound between the extreme anchors. None of these estimates bounds
+the common gap tightly enough to force a contradiction.
+
+After completing its own lane, the descent agent independently reviewed
+the asymmetric graph, rank-color core and repeated-gap packing. It
+recomputed the modulus orientations, all extremal exponents, the
+strict rank-log sign, and the permanent earlier-core argument. It
+reported no gap in these sections under the stated physical-mask and
+quoted logarithm-ratio inputs. This second mathematical review is
+separate from the finite Lean replay.
+
+## Final ordinary controls and finite-source consequences
+
+The root checked the final source-specific additions to the transport
+note. When v_3(z-2)=R, the rational separation between two distinct
+comparison slopes is at least 1/(4^r*3^max(d-n,0)). At reverse depth
+d<=R+n-8 it defeats every possible finite-source crossover. The explicit
+Mersenne family has the claimed ternary period lifting because
+v_3(2^162-1)=5. It supplies actual good upper arms of fixed odd rank,
+without assigning a bad lower label to any constructed source.
+
+At 353 the new Lean proof is an all-time predecessor exclusion, not just
+a bounded trajectory test. Its finite table reaches the known 1/2 loop
+without visiting 199; the proof then excludes a later visit at every time.
+It also checks attainment of all three minima and convergence of both
+original arms. This control concerns inverse paths from the forced
+initial block. Further lower forward targets are not covered by it.
+
+For the polynomial-height progression application the root read Weaver
+Paper 13's Proposition 1, its underlying counted-fusion estimate, and the
+even-prefix discussion, as well as Paper 12 section 8 equations (23) and
+(24). The new application uses only the fixed target 5's positive lower
+ordinary density. The initial-block proof averages over a complete
+progression period; it does not assume a natural mean for the entire
+good set or a relative estimate for a moving rare basin. Choosing a
+sufficiently large fixed power of the modulus gives the claimed actual
+good-upper control with logarithmic necessary lower inverse depth.
+Those analytic results remain imported inputs, not Lean theorems here.
+
+The current's final twelve-phase argument also checks directly. The
+19/12 and 27/17 rational fences for log_2(3), together with the tiny
+positive edge correction at the verified floor, place each twelve-block
+within a one-sided displacement less than 11*(1/204+1/10000) of a
+permuted twelve-grid. Its maximal circular gap is below 3/20. The high
+shell fits in an arc shorter than 17/20, so every twelve-block has a low
+phase. Counting all cyclic starts gives L_s>=P/(36s), without an
+asymptotic rank-grid assumption. The larger P/30 constant retains its
+own asymptotic premise. Both versions keep the same outgoing flux.
+
+The final descent note's averaging recurrence permits actual sign
+recovery. A nonpositive-to-positive centre change has new centre strictly
+between zero and one half; its exact dyadic denominator then forces the
+same good upper to reach at least 4s-1. The ordinary numerical example
+tests this possibility with genuine first-hit paths. It does not assert
+that the example is a hypothetical bad source or that a bounded initial
+prefix extends to an entire bounded orbit.
+
+The transport agent performed a final independent adversarial review of
+the complete upper-gap proof. It checked the arbitrary-gap centre and
+ratio recurrences, the loss of one ternary denominator factor per actual
+lower odd departure, the positive-control packing constant, the finite
+trivial-cycle tail, and the negative-centre bound. It reported no gap.
+The no-consecutive-evens assumption is confined to the more specific
+first-unpaid description on the distinguished cycle; it is not a hidden
+premise of the final 8s peak/rank tradeoff.

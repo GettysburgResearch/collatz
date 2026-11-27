@@ -1,6 +1,6 @@
 # Complete denominators from every rotation of a shortcut parity word
 
-**Status.** Proposed written theorem for genuine positive rational cycles. A kernel-checked comparison of the closed coordinates supports the proof. All logarithms labeled by a subscript use that base. The complete positive integer cycle exclusion is open.
+**Status.** Independently reviewed written theorem for genuine positive rational cycles. A kernel-checked comparison of the closed coordinates supports the proof. All logarithms labeled by a subscript use that base. The complete positive integer cycle exclusion is open.
 
 ## The two-cycle theorem
 

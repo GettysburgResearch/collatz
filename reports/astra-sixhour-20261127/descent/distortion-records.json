@@ -1,0 +1,53 @@
+[
+  {
+    "z": 161,
+    "upper_clock": 10,
+    "upper": 13,
+    "lower_clock": 13,
+    "lower": 395,
+    "lag": 3,
+    "grade_difference": 5,
+    "residual": 1,
+    "offset_grades": [
+      1
+    ],
+    "actual_decodes": [
+      1053
+    ],
+    "lower_hit": 63,
+    "upper_hit": 17
+  },
+  {
+    "z": 164513,
+    "upper_clock": 10,
+    "upper": 39041,
+    "lower_clock": 17,
+    "lower": 74117,
+    "lag": 7,
+    "grade_difference": 5,
+    "residual": 13,
+    "offset_grades": [],
+    "actual_decodes": [],
+    "lower_hit": 111,
+    "upper_hit": 92
+  },
+  {
+    "reduced_source": 314071486163623,
+    "canonical": 558349308735329,
+    "upper_neighbor": 157035743081811,
+    "neighbor_hit": 198,
+    "lower_hit": 199,
+    "first_unpaid_rank": 10,
+    "upper_at_first_unpaid": 2263868064755369,
+    "recovered_rank_and_center": [
+      [
+        27,
+        3
+      ],
+      [
+        28,
+        4
+      ]
+    ]
+  }
+]

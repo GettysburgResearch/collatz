@@ -1,6 +1,6 @@
 # A located-source count for the bounded least-disagreement branch
 
-**PROPOSED pending independent proof review and replay.** Let a least-disagreement cycle satisfy the bounded alternative of the pinned PR195 results. Write $s$ for its ordinary odd minimum, $p$ for its least odd period, $h$ for its total halving count, and $\lambda=h/p$. For every fixed $\theta>23/60$ there is a constant $C_\theta$ such that
+**Written theorem.** The root independently reviewed the reduction to Weaver’s Subspace-Theorem separation and replayed the exact finite transfer at the science checkpoint. The analytic conclusion uses that external theorem. Let a least-disagreement cycle satisfy the bounded alternative of the pinned PR195 results. Write $s$ for its ordinary odd minimum, $p$ for its least odd period, $h$ for its total halving count, and $\lambda=h/p$. For every fixed $\theta>23/60$ there is a constant $C_\theta$ such that
 $$p\le C_\theta s^\theta.$$
 In particular these cycles satisfy $0<\lambda-\log_2 3\ll_\theta p^{-1/\theta}$. The bound $23/60=0.38333\ldots$ is above the $1/3$ threshold for an asymptotic finiteness argument using irrationality exponent three. Only the finite transfer has a local exact replay. The written argument uses the ineffective Subspace-Theorem separation in Paper 145.
 

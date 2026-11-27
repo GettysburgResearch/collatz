@@ -1,6 +1,6 @@
 # Positive prime flows and an integer rounding control
 
-**Status.** Proposed written results. The first proposition applies to a genuine positive integer cycle. The construction shows which of its arithmetic restrictions can hold for integer flows whose tripling commands fail the ordinary parity condition.
+**Status.** Written results with a Lean arithmetic interface and exact finite controls. The first proposition applies to a genuine positive integer cycle. The construction shows which of its arithmetic restrictions can hold for integer flows whose tripling commands fail the ordinary parity condition.
 
 ## The flow of a genuine cycle
 

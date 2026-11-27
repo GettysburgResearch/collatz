@@ -16,18 +16,45 @@ import time
 
 ROOT = Path(__file__).resolve().parents[2]
 NEW_PACKET = ROOT / 'research/astra-sixhour-20261127'
+REPORT_PACKET = ROOT / 'reports/astra-sixhour-20261127'
 PACKETS = (NEW_PACKET,)
 DEPENDENCIES = [ROOT / 'research/astra-unconventional-20261126/descent/Portal.lean']
 REVIEW_CONTROLS = []
-REVIEW_SOURCES = []
 CONTROL_NAMES = [
     'arithmetic/check_shifts.py', 'arithmetic/check_shared_background.py',
     'arithmetic/check_core_rounding.py', 'descent/check_pairs.py',
     'descent/check_cut_walk.py', 'descent/check_upper.py',
     'descent/check_cut_depth.py', 'descent/check_distortion.py',
     'transport/check_hellinger.py', 'arithmetic/check_strip_energy.py',
+    'arithmetic/check_small_filter.py', 'arithmetic/check_rank_support.py',
+    'descent/check_records.py', 'transport/check_parent_rows.py',
+    'synthesis/check_moment_barrier.py',
+    'arithmetic/check_history_trades.py', 'transport/check_original_floor.py',
+    'transport/audit_original_floor.py',
 ]
 CONTROL_ARGS = {'arithmetic/check_strip_energy.py': ['8', '64']}
+CONTROL_REPORTS = {
+    'arithmetic/check_shifts.py': 'arithmetic/shifts.json',
+    'arithmetic/check_shared_background.py': 'arithmetic/shared_background.json',
+    'arithmetic/check_core_rounding.py': 'arithmetic/core_rounding.json',
+    'arithmetic/check_strip_energy.py': 'arithmetic/strip_energy.json',
+    'arithmetic/check_small_filter.py': 'arithmetic/small_filter.json',
+    'arithmetic/check_rank_support.py': 'arithmetic/rank_support.json',
+    'descent/check_pairs.py': 'descent/paired-finite.json',
+    'descent/check_cut_walk.py': 'descent/cut-walk-finite.json',
+    'descent/check_upper.py': 'descent/upper-finite.json',
+    'descent/check_cut_depth.py': 'descent/cut-depth-finite.json',
+    'descent/check_distortion.py': 'descent/distortion-finite.json',
+    'descent/check_records.py': 'descent/distortion-records.json',
+    'transport/check_hellinger.py': 'transport/hellinger_grid.json',
+    'transport/check_parent_rows.py': 'transport/parent-rows.json',
+    'synthesis/check_moment_barrier.py': 'synthesis/moment_barrier.json',
+    'arithmetic/check_history_trades.py': 'arithmetic/history_trades.json',
+    'transport/check_original_floor.py': 'transport/original-floor.json',
+    'transport/audit_original_floor.py': 'transport/original-floor-direct.json',
+}
+REVIEW_SOURCES = [Path(__file__).resolve()] + [
+    REPORT_PACKET / name for name in CONTROL_REPORTS.values()]
 CPP_NAMES = []
 ALLOWED_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
 
@@ -75,7 +102,7 @@ def main() -> None:
     receipt = {
         'schema': 'collatz-astra-sixhour-replay/v1',
         'started_utc': datetime.now(timezone.utc).isoformat(),
-        'scope': 'All new public Lean declarations, one rebuilt project dependency, and ten specified finite controls; not the infinite written arguments or imported analytic and large verification results',
+        'scope': 'All new public Lean declarations, one rebuilt project dependency, and all explicitly listed finite controls; not the infinite written arguments or imported analytic and large verification results',
         'commit': git('rev-parse', 'HEAD'), 'tree': git('rev-parse', 'HEAD^{tree}'),
         'tracked_file_count': len(git('ls-files').splitlines()),
         'sources_before': manifest(), 'python': sys.version,
@@ -176,6 +203,8 @@ def main() -> None:
 
         controls = [NEW_PACKET / name for name in CONTROL_NAMES] + REVIEW_CONTROLS
         demand(bool(controls), 'no finite controls')
+        demand(set(CONTROL_NAMES) == set(CONTROL_REPORTS),
+               'every new finite control needs one complete retained report')
         for source in controls:
             tree = ast.parse(source.read_text())
             assertions = sum(isinstance(n, ast.Assert) for n in ast.walk(tree))
@@ -191,8 +220,17 @@ def main() -> None:
             demand(outputs[0]['stdout'] == outputs[1]['stdout'] and
                    outputs[0]['stderr'] == outputs[1]['stderr'],
                    'normal/optimized output differs: ' + source.name)
-            receipt['python_pairs'].append({'source': str(source.relative_to(ROOT)),
-                'identical_output': True, 'assert_nodes': assertions})
+            pair = {'source': str(source.relative_to(ROOT)),
+                    'identical_output': True, 'assert_nodes': assertions}
+            if source.is_relative_to(NEW_PACKET):
+                retained = REPORT_PACKET / CONTROL_REPORTS[str(source.relative_to(NEW_PACKET))]
+                retained_bytes = retained.read_bytes()
+                demand(json.loads(outputs[0]['stdout']) == json.loads(retained_bytes),
+                       'complete retained JSON differs: ' + source.name)
+                pair.update({'retained_report': str(retained.relative_to(ROOT)),
+                             'retained_sha256': digest(retained_bytes),
+                             'complete_retained_json_equal': True})
+            receipt['python_pairs'].append(pair)
 
         if CPP_NAMES:
             compiler = run('cpp-version', [args.cxx, '--version'])
