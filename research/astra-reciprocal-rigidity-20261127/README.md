@@ -107,6 +107,17 @@ alternative. Joint arrival clocks in short ordinary intervals have a
 continued-fraction scale, with a matching high-floor obstruction. The
 analytic onsets remain ineffective and the universal descent gaps remain.
 
+## Seventh checkpoint
+
+[The seventh checkpoint](SEVENTH_CHECKPOINT.md) removes the visitor clock
+bound for growing scaled-target families and classifies complete smaller
+visits through long-ascent postpeak cylinders. A finite-state theorem
+extends the strict ordinary counts, and a fractional-gap argument gives
+a global census of period vectors with an explicit rational-ray exception.
+Local finite-prime energy functions face full-exponent or positive-density
+violation obstructions. The hypotheses, limiting orders, prior aggregation
+results, and unsupported bootstrap steps remain explicit.
+
 ## Source intake and credit
 
 The branch starts from main at

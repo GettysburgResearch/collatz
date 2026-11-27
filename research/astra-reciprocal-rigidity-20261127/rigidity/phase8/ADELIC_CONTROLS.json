@@ -1,0 +1,44 @@
+{
+  "bias": "3/4",
+  "ordinary_samples": [
+    {
+      "actual_sources": 3840,
+      "fair_tail_pointwise_bound": "1/8",
+      "j": 2,
+      "joint_cells": 120,
+      "k": 7,
+      "maximum_site_masses": [
+        "1107/232960",
+        "1107/232960",
+        "1107/232960"
+      ],
+      "r": 2
+    },
+    {
+      "actual_sources": 7680,
+      "fair_tail_pointwise_bound": "1/8",
+      "j": 3,
+      "joint_cells": 120,
+      "k": 8,
+      "maximum_site_masses": [
+        "3321/931840",
+        "3321/931840",
+        "3321/931840",
+        "3321/931840"
+      ],
+      "r": 2
+    }
+  ],
+  "periodic_class": {
+    "integer_returns": 512,
+    "rational_root": "-19/11",
+    "word": "1110"
+  },
+  "stationary_ternary_cells_by_depth": [
+    2,
+    6,
+    18,
+    54,
+    162
+  ]
+}

@@ -250,3 +250,37 @@ The optional prescribed-target block conclusion pays an error smaller
 than a single residue-pair mass and retains its external predecessor
 density premise. None of these steps supplies relative mixing in an
 arbitrary zero-density cohort or convergence of the chosen target.
+
+## Seventh-checkpoint review boundary
+
+The complete visitor-clock results choose the least positive ancestor
+only after a smaller visitor is assumed. Its first path stays above that
+ancestor. The long-arrival bound counts targets and is transferred through
+an injective affine source map. The uniform shell theorem pays its error
+relative to each thin dyadic cylinder. Ternary closed-set Haar measure is
+not directly identified with natural density of ordinary representatives.
+The root and cycle lane independently reconstructed these transfers.
+
+The general finite-state proof conditions all bridge endpoints and local
+counts, and charges rare local types before that conditioning. Its
+ordinary conclusion requires uniform fixed-time multiplicity; it applies
+to the cycle union and to individual divergent trajectories, not their
+arbitrary union. The joint reverse mask includes a finite canonical carry.
+Internal checks inherited from one backward history are not multiplied
+as fresh constraints. The Fourier support obstruction is limited to the
+specific even-moment Hölder certificate, not every possible analytic method.
+
+Cycle gaps are summed over disjoint ordinary state sets. Distinct vectors,
+reduced slopes, period values, and cycles with repeated vectors have
+separate counts. The rank-one case is retained instead of hidden in an
+area estimate. Rhin and the stronger quoted Chudnovsky input are kept
+separate; the elementary reduced-slope result uses neither. Prior Papers
+186, 217, and 145 are credited in their exact aggregation and height scopes.
+
+The local energy obstruction explicitly assumes a representation and
+summable approximation along geometric depth scales. Its CRT samples are
+actual integers at each finite level, not a claim that an ordinary integer
+has an infinite iid parity sequence. Fair tail bits only avoid a specified
+power-sparse set. The positive-density version uses finitely many centers
+and an actual expanding arithmetic progression. Arbitrary nonlocal
+functions remain outside this obstruction.
