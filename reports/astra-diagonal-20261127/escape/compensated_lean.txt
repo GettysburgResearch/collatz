@@ -1,0 +1,5 @@
+Lean 4.34.1, mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
+strict warning-as-error build and axiom print on source SHA256 2c5fb5a47bde582c4e8f6c613bc70506fcd9bdd4e3e7ecf8f510ce2d5054c28a
+'Collatz.Diagonal.CompensatedOccupation.released_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.CompensatedOccupation.retained_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.Diagonal.CompensatedOccupation.finite_occupation' depends on axioms: [propext, Classical.choice, Quot.sound]
