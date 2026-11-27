@@ -193,3 +193,5 @@ Its complementary permanent-safe predicate is defined on the actual orbit, and e
 [Ordinary equivalence](pointwise/PermanentSafeOrdinary.lean) · [bounded suffix clock](pointwise/PermanentSafeBitClock.lean) · [formal replay receipt](../../reports/six-hour-20261127/ROOT_LEAN_WAVE6.json).
 
 The [root review](../../reports/six-hour-20261127/ROOT_REVIEW_WAVE7.md) records the source identities, mathematical reconstructions, independent checks, subsequent extensions and current repository intake. Each criterion leaves its required vanishing or extinction estimate explicit.
+
+The final [first-moment proposal](NEXT_FIRST_MOMENT_TARGET.md) makes a quantitative finite continuation-loss estimate explicit, proves its sufficiency while leaving its arithmetic bound open, and records a verified terminating-source obstruction to widening the gate toward slope two. It also states the separate numerator-discrepancy target for rational closures. These are proposed next obligations, not added universal conclusions.
