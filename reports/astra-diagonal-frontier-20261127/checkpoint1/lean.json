@@ -1,0 +1,271 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-27T13:54:47.400131+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": null,
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness and equivalence of the finite extinction criterion to Collatz are connected formal proofs. The source-qualified density laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation construction, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. No universal mass extinction or hazard divergence is proved.",
+  "modules": [
+    {
+      "module": "NativeGate",
+      "source": "research/astra-diagonal-frontier-20261127/NativeGate.lean",
+      "source_sha256": "2990f536523b9333f7f38dfea8bfb4fc7d208d747377b243acbb21a5a8efe237",
+      "exit_code": 0,
+      "seconds": 4.01,
+      "public_theorems": [
+        "Collatz.NativeGate.step_positive",
+        "Collatz.NativeGate.orbit_positive",
+        "Collatz.NativeGate.orbit_add",
+        "Collatz.NativeGate.reaches_of_orbit",
+        "Collatz.NativeGate.even_step",
+        "Collatz.NativeGate.odd_step",
+        "Collatz.NativeGate.fourth_margin",
+        "Collatz.NativeGate.protected_bound",
+        "Collatz.NativeGate.least_source_gate",
+        "Collatz.NativeGate.atom_le_mass",
+        "Collatz.NativeGate.extinction_implies_collatz",
+        "Collatz.NativeGate.finite_certificate",
+        "Collatz.NativeGate.loss_budget_excludes_atom",
+        "Collatz.NativeGate.reserve_high",
+        "Collatz.NativeGate.reserve_low"
+      ]
+    },
+    {
+      "module": "NativeTransfer",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTransfer.lean",
+      "source_sha256": "b9aad6e65dbbba47aa462d1d4e3076e2942eea84993742edff2fb91afe86e946",
+      "exit_code": 0,
+      "seconds": 3.737,
+      "public_theorems": [
+        "Collatz.NativeGate.orbit_succ_first",
+        "Collatz.NativeGate.odds_succ_first",
+        "Collatz.NativeGate.step_lift",
+        "Collatz.NativeGate.cylinder_lift",
+        "Collatz.NativeGate.gate_lift",
+        "Collatz.NativeGate.gate_succ",
+        "Collatz.NativeGate.candidate_bounds",
+        "Collatz.NativeGate.candidate_children",
+        "Collatz.NativeGate.children_disjoint",
+        "Collatz.NativeGate.sum_children",
+        "Collatz.NativeGate.mass_identity",
+        "Collatz.NativeGate.births_le_budget",
+        "Collatz.NativeGate.debt_nonnegative_iff",
+        "Collatz.NativeGate.next_gate_iff",
+        "Collatz.NativeGate.debt_next",
+        "Collatz.NativeGate.sibling_parity",
+        "Collatz.NativeGate.reserve_children",
+        "Collatz.NativeGate.reserve_decreases",
+        "Collatz.NativeGate.mass_nonnegative",
+        "Collatz.NativeGate.deaths_nonnegative",
+        "Collatz.NativeGate.reserve_nonnegative",
+        "Collatz.NativeGate.envelope_step",
+        "Collatz.NativeGate.initial_envelope",
+        "Collatz.NativeGate.envelope_budget",
+        "Collatz.NativeGate.total_loss_budget",
+        "Collatz.NativeGate.tail_loss_budget",
+        "Collatz.NativeGate.native_cutoff",
+        "Collatz.NativeGate.loss_hazard_implies_collatz"
+      ]
+    },
+    {
+      "module": "NativeDecay",
+      "source": "research/astra-diagonal-frontier-20261127/NativeDecay.lean",
+      "source_sha256": "58b8ad6dc9ae5d65071ed22f2a717fd607dab02758d6d592232f60dd6b135e3d",
+      "exit_code": 0,
+      "seconds": 2.724,
+      "public_theorems": [
+        "Collatz.NativeGate.tilt_positive",
+        "Collatz.NativeGate.decayRatio_range",
+        "Collatz.NativeGate.exponentialWeight_positive",
+        "Collatz.NativeGate.exponentialWeight_lift",
+        "Collatz.NativeGate.exponentialWeight_next",
+        "Collatz.NativeGate.exponential_children",
+        "Collatz.NativeGate.exponentialReserve_step",
+        "Collatz.NativeGate.exponentialReserve_bound",
+        "Collatz.NativeGate.linear_le_tilt",
+        "Collatz.NativeGate.reserveWeight_le_exponential",
+        "Collatz.NativeGate.reserve_exponential_bound"
+      ]
+    },
+    {
+      "module": "NativeTightness",
+      "source": "research/astra-diagonal-frontier-20261127/NativeTightness.lean",
+      "source_sha256": "0fa16037d015eb62b09d586a40f3fad7495e57b39970f9c71e19faf907e240a6",
+      "exit_code": 0,
+      "seconds": 2.264,
+      "public_theorems": [
+        "Collatz.NativeGate.highMass_nonnegative",
+        "Collatz.NativeGate.highMass_step",
+        "Collatz.NativeGate.highMass_reserve_step",
+        "Collatz.NativeGate.highMass_initial",
+        "Collatz.NativeGate.future_highMass_budget",
+        "Collatz.NativeGate.future_highMass",
+        "Collatz.NativeGate.gate_mono",
+        "Collatz.NativeGate.odds_add",
+        "Collatz.NativeGate.one_even_clock",
+        "Collatz.NativeGate.reachesOne_fails_gate",
+        "Collatz.NativeGate.finite_gate_failure",
+        "Collatz.NativeGate.low_sources_exhausted",
+        "Collatz.NativeGate.covered_eventual_mass",
+        "Collatz.NativeGate.universal_eventual_mass"
+      ]
+    },
+    {
+      "module": "NativeCriterion",
+      "source": "research/astra-diagonal-frontier-20261127/NativeCriterion.lean",
+      "source_sha256": "a55129bff5a6385f5b3cf5960949981ad99bac109c422a8fa209905a7e5d3289",
+      "exit_code": 0,
+      "seconds": 1.871,
+      "public_theorems": [
+        "Collatz.NativeGate.decayRatio_polynomial_bound",
+        "Collatz.NativeGate.reserve_small",
+        "Collatz.NativeGate.covered_finite_certificate",
+        "Collatz.NativeGate.universal_implies_extinction",
+        "Collatz.NativeGate.collatz_iff_extinction"
+      ]
+    },
+    {
+      "module": "SeedSpread",
+      "source": "research/astra-diagonal-frontier-20261127/mass/SeedSpread.lean",
+      "source_sha256": "1a5b5d523d42cd4014b8ce5578fe29296b37969ad53361e7026b9aadc53b7474",
+      "exit_code": 0,
+      "seconds": 30.247,
+      "public_theorems": [
+        "SeedSpread.selected_words",
+        "SeedSpread.rows_first_half",
+        "SeedSpread.row_at",
+        "SeedSpread.next_even_terminal_fails",
+        "SeedSpread.block_pairs",
+        "SeedSpread.no_wrap"
+      ]
+    },
+    {
+      "module": "ComponentLoss",
+      "source": "research/astra-diagonal-frontier-20261127/mass/ComponentLoss.lean",
+      "source_sha256": "9acdcf83b32519beba0e27eff5013e3823e9971075ccdcf386889532d2c1c6f5",
+      "exit_code": 0,
+      "seconds": 2.331,
+      "public_theorems": [
+        "ComponentLoss.edge_bound",
+        "ComponentLoss.path_bound",
+        "ComponentLoss.uniform_base",
+        "ComponentLoss.floor_three_strict"
+      ]
+    },
+    {
+      "module": "FirstEntryRecord",
+      "source": "research/astra-diagonal-frontier-20261127/mass/FirstEntryRecord.lean",
+      "source_sha256": "3fdbe51ffcddfecc24d443ed1bd3b3fe3691e70bf849c59daf5c6d949682cecc",
+      "exit_code": 0,
+      "seconds": 0.783,
+      "public_theorems": [
+        "FirstEntryRecord.safe_iff_record",
+        "FirstEntryRecord.no_more_records_iff",
+        "FirstEntryRecord.first_entry_iff"
+      ]
+    },
+    {
+      "module": "SelectedBlockBarrier",
+      "source": "research/astra-diagonal-frontier-20261127/mass/SelectedBlockBarrier.lean",
+      "source_sha256": "591df6982b7059db00bb484040fb9a8c24bd636ece9f4a889ce45a41b6351270",
+      "exit_code": 0,
+      "seconds": 1.058,
+      "public_theorems": [
+        "SelectedBlockBarrier.extendBlocks",
+        "SelectedBlockBarrier.prefixDebt",
+        "SelectedBlockBarrier.bridgePays",
+        "SelectedBlockBarrier.failedSuffixPrecludesGate"
+      ]
+    },
+    {
+      "module": "PolynomialRank",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/PolynomialRank.lean",
+      "source_sha256": "f52bd84f15bd8f0744cc847094d33c1d7f690d7a6e83af8ba7ba8dd59a9b30d7",
+      "exit_code": 0,
+      "seconds": 19.222,
+      "public_theorems": [
+        "Collatz.PolynomialRank.treeBudget",
+        "Collatz.PolynomialRank.sumCredits",
+        "Collatz.PolynomialRank.liveStep",
+        "Collatz.PolynomialRank.tagBudget",
+        "Collatz.PolynomialRank.signedLinearDominance",
+        "Collatz.PolynomialRank.differencesUnique",
+        "Collatz.PolynomialRank.tritRootCredits",
+        "Collatz.PolynomialRank.childCoefficientOrder",
+        "Collatz.PolynomialRank.boxSub",
+        "Collatz.PolynomialRank.boxShift",
+        "Collatz.PolynomialRank.unitTelescoping",
+        "Collatz.PolynomialRank.largeStride",
+        "Collatz.PolynomialRank.strideUpper"
+      ]
+    },
+    {
+      "module": "HigherDifference",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/HigherDifference.lean",
+      "source_sha256": "ccffcd6f7ba04e405a05a9db7e05efe2bd17a092027c164fbf80f9e176ea61c8",
+      "exit_code": 0,
+      "seconds": 3.317,
+      "public_theorems": [
+        "Collatz.HigherDifference.thirdTable",
+        "Collatz.HigherDifference.fourthTable",
+        "Collatz.HigherDifference.nativeEdge",
+        "Collatz.HigherDifference.closeLast",
+        "Collatz.HigherDifference.cubicLift",
+        "Collatz.HigherDifference.quadraticLift"
+      ]
+    },
+    {
+      "module": "RotationCuts",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/RotationCuts.lean",
+      "source_sha256": "59595c1e0113be31565dab754d0940ddd58fad1ec9fe20e72b6761c7b25d69a5",
+      "exit_code": 0,
+      "seconds": 4.119,
+      "public_theorems": [
+        "Collatz.RotationCuts.noInversion",
+        "Collatz.RotationCuts.multiTranslate",
+        "Collatz.RotationCuts.iterateTranslate",
+        "Collatz.RotationCuts.repeatClock",
+        "Collatz.RotationCuts.commonClock"
+      ]
+    },
+    {
+      "module": "ShortProbe",
+      "source": "research/astra-diagonal-frontier-20261127/linear/ShortProbe.lean",
+      "source_sha256": "c7bf1f51edf6302d1a3effe5038e5c382bcab0d7b3c8b3eedfa348b25b179788",
+      "exit_code": 0,
+      "seconds": 3.335,
+      "public_theorems": [
+        "CollatzShortProbe.probe_band",
+        "CollatzShortProbe.finite_edge_band"
+      ]
+    },
+    {
+      "module": "UnitWindowLift",
+      "source": "research/astra-diagonal-frontier-20261127/linear/UnitWindowLift.lean",
+      "source_sha256": "c2063669d25cf1a3e0d0f32b08069dce4d41017c79127e3b473015cf93575583",
+      "exit_code": 0,
+      "seconds": 2.274,
+      "public_theorems": [
+        "CollatzWindowLift.visits_of_physical",
+        "CollatzWindowLift.physical_of_row",
+        "CollatzWindowLift.mobile_info",
+        "CollatzWindowLift.prescribed_lift"
+      ]
+    }
+  ],
+  "public_theorems": 120,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 120,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 84.624,
+  "finished_utc": "2026-11-27T13:56:12.024347+00:00"
+}

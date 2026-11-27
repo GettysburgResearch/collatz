@@ -1,0 +1,171 @@
+{
+  "cylinder_lift_checks": 2640,
+  "direct_tree_max_clock": 14,
+  "exponential_reserve_clocks": 15,
+  "fixed_cutoff_checks": 120,
+  "rows": [
+    {
+      "clock": 0,
+      "count": 1,
+      "mass": "1/1",
+      "reserve": "8/1"
+    },
+    {
+      "birth_float": 0.0,
+      "clock": 1,
+      "count": 1,
+      "cumulative_loss_float": 0.0,
+      "death_float": 0.0,
+      "envelope_float": 8.0,
+      "mass_float": 1.0,
+      "mass_sha256_hex": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+      "reserve": "7/1"
+    },
+    {
+      "birth_float": 0.3333333333333333,
+      "clock": 2,
+      "count": 1,
+      "cumulative_loss_float": 1.0,
+      "death_float": 1.0,
+      "envelope_float": 5.333333333333333,
+      "mass_float": 0.3333333333333333,
+      "mass_sha256_hex": "0d7f0e336166042f8cc9e4c20ae427ba367c279d6e3dfd1bd7247b0fbce61d50",
+      "reserve": "5/1"
+    },
+    {
+      "birth_float": 0.14285714285714285,
+      "clock": 3,
+      "count": 2,
+      "cumulative_loss_float": 1.0,
+      "death_float": 0.0,
+      "envelope_float": 5.226190476190476,
+      "mass_float": 0.47619047619047616,
+      "mass_sha256_hex": "ed6dada6c2169ca3ddeb73b2ceb17842b5abc939090910e0508516a574ab74db",
+      "reserve": "19/4"
+    },
+    {
+      "birth_float": 0.15757575757575756,
+      "clock": 4,
+      "count": 3,
+      "cumulative_loss_float": 1.3333333333333333,
+      "death_float": 0.3333333333333333,
+      "envelope_float": 4.5504329004329005,
+      "mass_float": 0.30043290043290044,
+      "mass_sha256_hex": "4743cf31a1c35816fa3e34585e8e5df6f24da2a6583ba12544d5db94356bfb4c",
+      "reserve": "17/4"
+    },
+    {
+      "birth_float": 0.11277336242273128,
+      "clock": 5,
+      "count": 6,
+      "cumulative_loss_float": 1.3333333333333333,
+      "death_float": 0.0,
+      "envelope_float": 4.475706262855632,
+      "mass_float": 0.4132062628556317,
+      "mass_sha256_hex": "5ef2727a532c5b0f2f54f245f989ce8dc144f9a89b9a1f8e9d127a35efef9f64",
+      "reserve": "65/16"
+    },
+    {
+      "birth_float": 0.1211774219364018,
+      "clock": 6,
+      "count": 10,
+      "cumulative_loss_float": 1.4677206851119895,
+      "death_float": 0.13438735177865613,
+      "envelope_float": 4.212496333013378,
+      "mass_float": 0.3999963330133774,
+      "mass_sha256_hex": "7c593060b443aeab6232d1db095f41b645a7cab00f608e8a8a02316c6a433df4",
+      "reserve": "61/16"
+    },
+    {
+      "birth_float": 0.10072906132783183,
+      "clock": 7,
+      "count": 20,
+      "cumulative_loss_float": 1.4677206851119895,
+      "death_float": 0.0,
+      "envelope_float": 4.1569753943412096,
+      "mass_float": 0.5007253943412092,
+      "mass_sha256_hex": "b509abf19c3cf822b837f4f618e54ebad79d581cd5956b0c28f0e88335fc3732",
+      "reserve": "117/32"
+    },
+    {
+      "birth_float": 0.09696106525224192,
+      "clock": 8,
+      "count": 35,
+      "cumulative_loss_float": 1.5829956796190552,
+      "death_float": 0.11527499450706573,
+      "envelope_float": 3.9824114650863853,
+      "mass_float": 0.4824114650863854,
+      "mass_sha256_hex": "bb02ecc5ed14e47b5419f896278690978a5fb2e83a05555776e5cdc094fc9e7d",
+      "reserve": "7/2"
+    },
+    {
+      "birth_float": 0.07380420312799493,
+      "clock": 9,
+      "count": 56,
+      "cumulative_loss_float": 1.7872038191066044,
+      "death_float": 0.20420813948754915,
+      "envelope_float": 3.551226278726831,
+      "mass_float": 0.35200752872683116,
+      "mass_sha256_hex": "53045713405d10f911e98c842ab74d54755a0d5c680ba27b8af621f96a9a2c02",
+      "reserve": "819/256"
+    },
+    {
+      "birth_float": 0.07399761512679592,
+      "clock": 10,
+      "count": 112,
+      "cumulative_loss_float": 1.7872038191066044,
+      "death_float": 0.0,
+      "envelope_float": 3.515848893853627,
+      "mass_float": 0.4260051438536271,
+      "mass_sha256_hex": "43620122b668dcd501402243d530cc9c9a96193424426918c76bc953be71fddc",
+      "reserve": "791/256"
+    },
+    {
+      "birth_float": 0.06646563244983436,
+      "clock": 11,
+      "count": 196,
+      "cumulative_loss_float": 1.8117870608745832,
+      "death_float": 0.02458324176797882,
+      "envelope_float": 3.3936687845354827,
+      "mass_float": 0.46788753453548265,
+      "mass_sha256_hex": "12cc0075e04c9f19b686a34e3174f914c20fcfb126d72d2e4a05cf75b9218d16",
+      "reserve": "749/256"
+    },
+    {
+      "birth_float": 0.06625543561026442,
+      "clock": 12,
+      "count": 392,
+      "cumulative_loss_float": 1.8117870608745832,
+      "death_float": 0.0,
+      "envelope_float": 3.364221095145747,
+      "mass_float": 0.5341429701457471,
+      "mass_sha256_hex": "9694e54aff2afd039a987166ebf4b30b034a59778a96f29e7c12114d773bb2d4",
+      "reserve": "1449/512"
+    },
+    {
+      "birth_float": 0.06011439969114248,
+      "clock": 13,
+      "count": 708,
+      "cumulative_loss_float": 1.8457985400816457,
+      "death_float": 0.03401147920706252,
+      "envelope_float": 3.276066203129827,
+      "mass_float": 0.560245890629827,
+      "mass_sha256_hex": "e5baa9d1ae259c3c8f11a0ffb695611c781ba205194217fc8bef08520ee6632a",
+      "reserve": "2781/1024"
+    },
+    {
+      "birth_float": 0.0599106749579663,
+      "clock": 14,
+      "count": 1416,
+      "cumulative_loss_float": 1.8457985400816457,
+      "death_float": 0.0,
+      "envelope_float": 3.249551096837793,
+      "mass_float": 0.6201565655877933,
+      "mass_sha256_hex": "118da65a77055a7232070a1e74e2223cbb9a4d6f53c12592b62926f21cfa0a70",
+      "reserve": "5385/2048"
+    }
+  ],
+  "scope": "finite exact controls, not universal extinction",
+  "source27_first_gate_failure": 86,
+  "status": "PASS"
+}

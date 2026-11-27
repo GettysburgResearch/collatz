@@ -1,0 +1,220 @@
+[
+  {
+    "order": 3,
+    "past_padding": 0,
+    "future_padding": 0,
+    "literal_odd_edges": 28,
+    "distinct_odd_states": 32,
+    "minimum_bits": 21,
+    "maximum_bits": 23,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true,
+    "source_tuple": [
+      2917447,
+      2949355,
+      3020041,
+      3129505
+    ]
+  },
+  {
+    "order": 3,
+    "past_padding": 4,
+    "future_padding": 9,
+    "literal_odd_edges": 80,
+    "distinct_odd_states": 84,
+    "minimum_bits": 68,
+    "maximum_bits": 70,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 3,
+    "past_padding": 31,
+    "future_padding": 23,
+    "literal_odd_edges": 244,
+    "distinct_odd_states": 248,
+    "minimum_bits": 192,
+    "maximum_bits": 194,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 3,
+    "past_padding": 128,
+    "future_padding": 128,
+    "literal_odd_edges": 1052,
+    "distinct_odd_states": 1056,
+    "minimum_bits": 838,
+    "maximum_bits": 840,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 3,
+    "past_padding": 511,
+    "future_padding": 257,
+    "literal_odd_edges": 3100,
+    "distinct_odd_states": 3104,
+    "minimum_bits": 2449,
+    "maximum_bits": 2451,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      0,
+      2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 4,
+    "past_padding": 0,
+    "future_padding": 0,
+    "literal_odd_edges": 30,
+    "distinct_odd_states": 35,
+    "minimum_bits": 20,
+    "maximum_bits": 23,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      -2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true,
+    "source_tuple": [
+      1502635,
+      1525513,
+      1582201,
+      1697545,
+      1896391
+    ]
+  },
+  {
+    "order": 4,
+    "past_padding": 4,
+    "future_padding": 9,
+    "literal_odd_edges": 95,
+    "distinct_odd_states": 100,
+    "minimum_bits": 63,
+    "maximum_bits": 65,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      -2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 4,
+    "past_padding": 31,
+    "future_padding": 23,
+    "literal_odd_edges": 300,
+    "distinct_odd_states": 305,
+    "minimum_bits": 198,
+    "maximum_bits": 200,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      -2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 4,
+    "past_padding": 128,
+    "future_padding": 128,
+    "literal_odd_edges": 1310,
+    "distinct_odd_states": 1315,
+    "minimum_bits": 832,
+    "maximum_bits": 834,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      -2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  },
+  {
+    "order": 4,
+    "past_padding": 511,
+    "future_padding": 257,
+    "literal_odd_edges": 3870,
+    "distinct_odd_states": 3875,
+    "minimum_bits": 2461,
+    "maximum_bits": 2462,
+    "central_signed_differences": [
+      0,
+      0,
+      -1,
+      -2,
+      2,
+      2,
+      0
+    ],
+    "all_lower_differences_positive": true,
+    "strict_ratio_16_over_3": true
+  }
+]
