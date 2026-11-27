@@ -235,6 +235,7 @@ it does not merge or rewrite the existing research PRs.
 
 - [Source intake and review scope](../../reports/astra-infinite-descent-20261127/SOURCE_INTAKE.md)
 - [Final checkpoint and proof boundaries](../../reports/astra-infinite-descent-20261127/CHECKPOINT_05.md)
+- [Last-pass written deductions and exact remaining targets](../../reports/astra-infinite-descent-20261127/FINAL_FRONTIER.md)
 - [Concurrent frontier and attribution](../../reports/astra-infinite-descent-20261127/LATE_FRONTIER.md)
 - [Pinned imported Lean sources](imports/pr201/SOURCES.json)
 - [Portable strict Lean rebuild](replay_lean.py)
