@@ -1,0 +1,25 @@
+{
+  "native": {
+    "native_segments": 62500,
+    "nonunit_promotions": 20825,
+    "repeated_target_splits": 14779
+  },
+  "nested": {
+    "balanced_lengths": [
+      1,
+      64
+    ],
+    "direct_parent_residue_checks": 7,
+    "exits": 65,
+    "family_weights": [
+      "9/512",
+      "2083125201275257321461227284509099/166153499473114484112975882535043072"
+    ],
+    "first_exponents": [
+      5,
+      11
+    ],
+    "largest_intercept": "19/512",
+    "target": "18121446883289685577498568712197"
+  }
+}
