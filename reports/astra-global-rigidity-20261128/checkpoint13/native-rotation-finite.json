@@ -1,0 +1,19 @@
+{
+  "path": "research/astra-global-rigidity-20261128/cycles/check_native_rotation_separation.py",
+  "sha256": "039b3bf05894828831e08800246c2763ed16a1598e8a0088f27429e11aca9d98",
+  "success": true,
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "stdout": "23566 exact adjacent native path checks, 800 full local-form products, 11900 synthetic circle covers (1488 coincident starts)\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "stdout": "23566 exact adjacent native path checks, 800 full local-form products, 11900 synthetic circle covers (1488 coincident starts)\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -36,6 +36,7 @@ CHECKERS = [
     "cycles/check_balanced_routing.py",
     "cycles/check_repeated_block_drawdown.py",
     "cycles/check_independent_block_stops.py",
+    "cycles/check_native_rotation_separation.py",
     "mass/check_clock_rectangle.py",
     "mass/check_protected_prime_transport.py",
     "mass/check_small_sibling_density.py",

@@ -46,6 +46,7 @@ MODULES = [
     ("GlobalParityMinimum", "cycles/GlobalParityMinimum.lean", "Collatz.GlobalParityMinimum"),
     ("SharedBlockTails", "cycles/SharedBlockTails.lean", "CollatzResearch.SharedBlockTails"),
     ("ClockRectangle", "mass/ClockRectangle.lean", "Collatz.ClockRectangle"),
+    ("NativeRotationCover", "cycles/NativeRotationCover.lean", "CollatzResearch.NativeRotationCover"),
 ]
 
 
