@@ -1,0 +1,139 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:53:18.388437+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_multiscale_targets.py": "84c13adad693310ff10ed66d5a503a635771afcd4b686b01e1576c60acefeb08",
+    "research/astra-critical-rigidity-20261128/literature/ALL_HIGH_TARGETS.md": "bb2cc35ed885914a4b50d07f211d64ca59d8b6100acc40ac6508a37ecde7626d",
+    "research/astra-critical-rigidity-20261128/literature/SHARP_MULTISCALE_TARGETS.md": "70fe51a6dc53e294ec02b088a3735d38520249cfb4c721c60c969cb44e400923",
+    "research/astra-critical-rigidity-20261128/ordinary/SHARP_SPARSE_TARGET_EXPONENT.md": "6b930b1f2c9705ddca31aba8e69f8dc7a7fe1d8d78a06a7636b410eca4b32486",
+    "research/astra-critical-rigidity-20261128/ordinary/SPARSE_HIGH_TARGETS.md": "5b76d41622664d483313ab7a5cb0beec27362425ade03347c0613e1e11889835"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.484,
+      "stdout_sha256": "d8f10114f0ab2d6369eb9c90d9e48799818bd3027ff27ee8698a0e0facd3f4dd",
+      "result": {
+        "checks": {
+          "depth": {
+            "exact_octave_pairs": 504,
+            "largest_depth_difference": 6
+          },
+          "gates": {
+            "double_gate_overshoots": 7196,
+            "native_even_observations": 51787,
+            "odd_octave_sources": 2048,
+            "piecewise_mask_identities": 8192,
+            "positive_full_tests": 2938
+          },
+          "parity": {
+            "complete_three_gap_marks": 6144,
+            "native_bits": 14,
+            "parity_words": 16384
+          },
+          "words": [
+            {
+              "different_residues": 3,
+              "grade": 3,
+              "total": 4,
+              "words_replayed": 3
+            },
+            {
+              "different_residues": 21,
+              "grade": 6,
+              "total": 8,
+              "words_replayed": 21
+            },
+            {
+              "different_residues": 165,
+              "grade": 9,
+              "total": 12,
+              "words_replayed": 165
+            },
+            {
+              "different_residues": 1355,
+              "grade": 12,
+              "total": 16,
+              "words_replayed": 1365
+            },
+            {
+              "different_residues": 11451,
+              "grade": 15,
+              "total": 20,
+              "words_replayed": 11628
+            }
+          ]
+        },
+        "summary_sha256": "000e2086da5a3e1cbd92d52f2da1923791a0caea602739d6fa0fcb879a27b948"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.509,
+      "stdout_sha256": "d8f10114f0ab2d6369eb9c90d9e48799818bd3027ff27ee8698a0e0facd3f4dd",
+      "result": {
+        "checks": {
+          "depth": {
+            "exact_octave_pairs": 504,
+            "largest_depth_difference": 6
+          },
+          "gates": {
+            "double_gate_overshoots": 7196,
+            "native_even_observations": 51787,
+            "odd_octave_sources": 2048,
+            "piecewise_mask_identities": 8192,
+            "positive_full_tests": 2938
+          },
+          "parity": {
+            "complete_three_gap_marks": 6144,
+            "native_bits": 14,
+            "parity_words": 16384
+          },
+          "words": [
+            {
+              "different_residues": 3,
+              "grade": 3,
+              "total": 4,
+              "words_replayed": 3
+            },
+            {
+              "different_residues": 21,
+              "grade": 6,
+              "total": 8,
+              "words_replayed": 21
+            },
+            {
+              "different_residues": 165,
+              "grade": 9,
+              "total": 12,
+              "words_replayed": 165
+            },
+            {
+              "different_residues": 1355,
+              "grade": 12,
+              "total": 16,
+              "words_replayed": 1365
+            },
+            {
+              "different_residues": 11451,
+              "grade": 15,
+              "total": 20,
+              "words_replayed": 11628
+            }
+          ]
+        },
+        "summary_sha256": "000e2086da5a3e1cbd92d52f2da1923791a0caea602739d6fa0fcb879a27b948"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact tilted word residues including collisions, native parity words, genuine first-entrance gate identities and double overshoots, even-target ancestors and computable octave depths. Uniform all-height avoidance uses identified analytic inputs; the explicit sparse-mask hitting construction uses finite parity and elementary concentration.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:53:19.381581+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "depth": {
+      "exact_octave_pairs": 504,
+      "largest_depth_difference": 6
+    },
+    "gates": {
+      "double_gate_overshoots": 7196,
+      "native_even_observations": 51787,
+      "odd_octave_sources": 2048,
+      "piecewise_mask_identities": 8192,
+      "positive_full_tests": 2938
+    },
+    "parity": {
+      "complete_three_gap_marks": 6144,
+      "native_bits": 14,
+      "parity_words": 16384
+    },
+    "words": [
+      {
+        "different_residues": 3,
+        "grade": 3,
+        "total": 4,
+        "words_replayed": 3
+      },
+      {
+        "different_residues": 21,
+        "grade": 6,
+        "total": 8,
+        "words_replayed": 21
+      },
+      {
+        "different_residues": 165,
+        "grade": 9,
+        "total": 12,
+        "words_replayed": 165
+      },
+      {
+        "different_residues": 1355,
+        "grade": 12,
+        "total": 16,
+        "words_replayed": 1365
+      },
+      {
+        "different_residues": 11451,
+        "grade": 15,
+        "total": 20,
+        "words_replayed": 11628
+      }
+    ]
+  },
+  "summary_sha256": "000e2086da5a3e1cbd92d52f2da1923791a0caea602739d6fa0fcb879a27b948"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:53:19.382201+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_collision_windows.py": "2789bb34a099c5230e53598ad0b8fe94bccef1a61b865ce8fc594850e66d4ced",
+    "research/astra-critical-rigidity-20261128/ordinary/ORDINARY_COLLISIONS_IN_TIME_WINDOWS.md": "38eb03ea9f805596b4106c1d6a985b5034e565215d84874924ffe28db3b7906b",
+    "research/astra-critical-rigidity-20261128/literature/ALL_HIGH_TARGETS.md": "bb2cc35ed885914a4b50d07f211d64ca59d8b6100acc40ac6508a37ecde7626d",
+    "research/astra-critical-rigidity-20261128/ordinary/SYNCHRONOUS_PHASE_DISPERSION.md": "bd9da43d81cc04abe9ced69692eeeb67ddbb72611606ae14006ced3c2642d70b"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.166,
+      "stdout_sha256": "17fa1e28a74c9ff72e2b333bfce81f75e72d0b5dec966f05844b98f7e82ea14e",
+      "result": {
+        "manuscript_sha256": "38eb03ea9f805596b4106c1d6a985b5034e565215d84874924ffe28db3b7906b",
+        "ordinary_events": {
+          "full": 6598,
+          "full_without_terminal": 1140,
+          "terminal": 5458
+        },
+        "ordinary_pairs": 9216,
+        "scope": "finite native checks and deterministic models only",
+        "synthetic_injective_spine_cases": 15552,
+        "synthetic_periodic_phase_tuples": 40068
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.197,
+      "stdout_sha256": "17fa1e28a74c9ff72e2b333bfce81f75e72d0b5dec966f05844b98f7e82ea14e",
+      "result": {
+        "manuscript_sha256": "38eb03ea9f805596b4106c1d6a985b5034e565215d84874924ffe28db3b7906b",
+        "ordinary_events": {
+          "full": 6598,
+          "full_without_terminal": 1140,
+          "terminal": 5458
+        },
+        "ordinary_pairs": 9216,
+        "scope": "finite native checks and deterministic models only",
+        "synthetic_injective_spine_cases": 15552,
+        "synthetic_periodic_phase_tuples": 40068
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual ordinary finite-window intersections and nested event differences, separately labelled synthetic injective tail windows and cyclic phase enumerations, and exact period-moment inversion. No true divergent source or limiting threshold is inferred.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:53:19.745523+00:00"
+}

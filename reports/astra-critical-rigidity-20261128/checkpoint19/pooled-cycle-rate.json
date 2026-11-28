@@ -1,0 +1,156 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:53:18.336614+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_pooled_cyclic_denominator.py": "6909dd6b2e61feebb21c14f26c56a84a80535b03e434d7753b04593e13cad00f",
+    "research/astra-critical-rigidity-20261128/cycles/POOLED_CYCLIC_DENOMINATOR.md": "79f6d59a6c1892bfc4246eb021f159c38b17930a7a6a6afdf7e5eef2208e560b",
+    "research/astra-critical-rigidity-20261128/cycles/POOLED_CYCLIC_DENOMINATOR_RATE.md": "047a591fb51a15a3590d9a210cc0c0304aecd2a939bfa56fbef46b7692a7e040",
+    "research/astra-critical-rigidity-20261128/cycles/NEAR_OCTAVE_CYCLE_DENOMINATORS.md": "8ad5ba84f227ddea3658e9c170ae0ab16faa1a7ada7b42ddebf480b3c1c7597e",
+    "research/astra-critical-rigidity-20261128/cycles/check_near_octave_cycle_denominators.py": "7ac3c33da8adac7448514627ef39d44e406b47f86d387de8cb7724723882444d",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 4.724,
+      "stdout_sha256": "e6eb7fffac17abb0abcac5db0f6c4073dd68f9e0daffb83281ee9d1e4cdec25b",
+      "result": {
+        "scope": "Every native base and full chronological shift checked for the calibrated rational slope. Four-view multiplicity tests are finite choices, not exhaustive full-order multiset enumerations.",
+        "source_sha256": {
+          "POOLED_CYCLIC_DENOMINATOR.md": "79f6d59a6c1892bfc4246eb021f159c38b17930a7a6a6afdf7e5eef2208e560b",
+          "POOLED_CYCLIC_DENOMINATOR_RATE.md": "047a591fb51a15a3590d9a210cc0c0304aecd2a939bfa56fbef46b7692a7e040"
+        },
+        "true_cycle_controls": [
+          {
+            "actual_active_cell_counts_per_lap": {
+              "0": 13,
+              "1": 28
+            },
+            "all_chronological_offsets": 41,
+            "cell_size_range": [
+              3,
+              4
+            ],
+            "coding_edges": 130,
+            "complete_denominator_bit_length": 59,
+            "max_uniform_log_drift_upper": "1/1024",
+            "minimum_wrap_guard_gap": 12,
+            "nonreference_multiplicity_cap_tested": 4,
+            "occupied_cells": 13,
+            "padded_vectors_checked_four_views": 2100,
+            "padded_vectors_per_cell_range": [
+              25,
+              125
+            ],
+            "primitive_odd_period": 41,
+            "test_order_h": 1681,
+            "total_active_coordinates": 89,
+            "total_valuation": 65
+          },
+          {
+            "actual_active_cell_counts_per_lap": {
+              "0": 46,
+              "1": 260
+            },
+            "all_chronological_offsets": 306,
+            "cell_size_range": [
+              6,
+              7
+            ],
+            "coding_edges": 925,
+            "complete_denominator_bit_length": 476,
+            "max_uniform_log_drift_upper": "1/1024",
+            "minimum_wrap_guard_gap": 41,
+            "nonreference_multiplicity_cap_tested": 2,
+            "occupied_cells": 46,
+            "padded_vectors_checked_four_views": 103032,
+            "padded_vectors_per_cell_range": [
+              243,
+              729
+            ],
+            "primitive_odd_period": 306,
+            "test_order_h": 93636,
+            "total_active_coordinates": 785,
+            "total_valuation": 485
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 6.141,
+      "stdout_sha256": "e6eb7fffac17abb0abcac5db0f6c4073dd68f9e0daffb83281ee9d1e4cdec25b",
+      "result": {
+        "scope": "Every native base and full chronological shift checked for the calibrated rational slope. Four-view multiplicity tests are finite choices, not exhaustive full-order multiset enumerations.",
+        "source_sha256": {
+          "POOLED_CYCLIC_DENOMINATOR.md": "79f6d59a6c1892bfc4246eb021f159c38b17930a7a6a6afdf7e5eef2208e560b",
+          "POOLED_CYCLIC_DENOMINATOR_RATE.md": "047a591fb51a15a3590d9a210cc0c0304aecd2a939bfa56fbef46b7692a7e040"
+        },
+        "true_cycle_controls": [
+          {
+            "actual_active_cell_counts_per_lap": {
+              "0": 13,
+              "1": 28
+            },
+            "all_chronological_offsets": 41,
+            "cell_size_range": [
+              3,
+              4
+            ],
+            "coding_edges": 130,
+            "complete_denominator_bit_length": 59,
+            "max_uniform_log_drift_upper": "1/1024",
+            "minimum_wrap_guard_gap": 12,
+            "nonreference_multiplicity_cap_tested": 4,
+            "occupied_cells": 13,
+            "padded_vectors_checked_four_views": 2100,
+            "padded_vectors_per_cell_range": [
+              25,
+              125
+            ],
+            "primitive_odd_period": 41,
+            "test_order_h": 1681,
+            "total_active_coordinates": 89,
+            "total_valuation": 65
+          },
+          {
+            "actual_active_cell_counts_per_lap": {
+              "0": 46,
+              "1": 260
+            },
+            "all_chronological_offsets": 306,
+            "cell_size_range": [
+              6,
+              7
+            ],
+            "coding_edges": 925,
+            "complete_denominator_bit_length": 476,
+            "max_uniform_log_drift_upper": "1/1024",
+            "minimum_wrap_guard_gap": 41,
+            "nonreference_multiplicity_cap_tested": 2,
+            "occupied_cells": 46,
+            "padded_vectors_checked_four_views": 103032,
+            "padded_vectors_per_cell_range": [
+              243,
+              729
+            ],
+            "primitive_odd_period": 306,
+            "test_order_h": 93636,
+            "total_active_coordinates": 785,
+            "total_valuation": 485
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual all-offset cyclic cells, complete-denominator edge identities, padded multiset counts and coordinate injection across true laps. The sharp asymptotic leading constant uses the separately reconstructed uniform physical drift and seam discrepancy arguments, not the finite census.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:53:29.202035+00:00"
+}
