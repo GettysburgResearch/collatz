@@ -1,0 +1,131 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:43:21.634713+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_translated_landing.py": "70001b852994b77a5d06cfadd416969253f7bcb7b37bd38f2d480aced80bb159",
+    "research/astra-critical-rigidity-20261128/ordinary/TRANSLATED_LANDING_INTERVALS.md": "9b9236c91c4a16954635daf6b8ad6b19fd4da938882f04fbfa3a32752688795e",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.34,
+      "stdout_sha256": "43f58af6545da98999c82742b328455429079aa6607db9a75373b0c96bdd31c0",
+      "result": {
+        "cohorts": [
+          {
+            "coast": 17,
+            "cohort": 2,
+            "grade": 3,
+            "grid_units": 18,
+            "shared_date": 6,
+            "shared_numerator": 2,
+            "shift_bits": 24
+          },
+          {
+            "coast": 64,
+            "cohort": 9,
+            "grade": 5,
+            "grid_units": 162,
+            "shared_date": 8,
+            "shared_numerator": 5,
+            "shift_bits": 73
+          },
+          {
+            "coast": 121,
+            "cohort": 39,
+            "grade": 7,
+            "grid_units": 1458,
+            "shared_date": 15,
+            "shared_numerator": 2,
+            "shift_bits": 137
+          },
+          {
+            "coast": 257,
+            "cohort": 243,
+            "grade": 9,
+            "grid_units": 13122,
+            "shared_date": 17,
+            "shared_numerator": 5,
+            "shift_bits": 275
+          }
+        ],
+        "counts": {
+          "above_one_segments": 632,
+          "coast_source_dates": 67780,
+          "large_terminal": 170,
+          "late_landing": 1,
+          "lifted_cohort_sources": 293,
+          "residual_dates": 6061,
+          "translated_sources": 430
+        },
+        "scope": "Finite exact native controls; no asymptotic tail tested"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.287,
+      "stdout_sha256": "43f58af6545da98999c82742b328455429079aa6607db9a75373b0c96bdd31c0",
+      "result": {
+        "cohorts": [
+          {
+            "coast": 17,
+            "cohort": 2,
+            "grade": 3,
+            "grid_units": 18,
+            "shared_date": 6,
+            "shared_numerator": 2,
+            "shift_bits": 24
+          },
+          {
+            "coast": 64,
+            "cohort": 9,
+            "grade": 5,
+            "grid_units": 162,
+            "shared_date": 8,
+            "shared_numerator": 5,
+            "shift_bits": 73
+          },
+          {
+            "coast": 121,
+            "cohort": 39,
+            "grade": 7,
+            "grid_units": 1458,
+            "shared_date": 15,
+            "shared_numerator": 2,
+            "shift_bits": 137
+          },
+          {
+            "coast": 257,
+            "cohort": 243,
+            "grade": 9,
+            "grid_units": 13122,
+            "shared_date": 17,
+            "shared_numerator": 5,
+            "shift_bits": 275
+          }
+        ],
+        "counts": {
+          "above_one_segments": 632,
+          "coast_source_dates": 67780,
+          "large_terminal": 170,
+          "late_landing": 1,
+          "lifted_cohort_sources": 293,
+          "residual_dates": 6061,
+          "translated_sources": 430
+        },
+        "scope": "Finite exact native controls; no asymptotic tail tested"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact actual translated numerator recursions, residuals, full carry, joint tail time-height inequalities and many-source common high-translate coast constructions. The asymptotic distributional law remains written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:43:22.262450+00:00"
+}

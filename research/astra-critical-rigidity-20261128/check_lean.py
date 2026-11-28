@@ -23,6 +23,8 @@ MATHLIB = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 MODULES = {
     "AffineOrbit": ("formal/AffineOrbit.lean", "Collatz.PoweredAffine",
         "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."),
+    "TernaryLanding": ("ordinary/TernaryLanding.lean", "Collatz.TernaryLanding",
+        "Actual odd-denominator numerator recursion consumes exactly the odd grade, has the full native prefix carry, reaches displayed ternary height zero for positive starts, and preserves ternary units at positive levels. Its rational word value and complete dyadic numerator translation are proved. For pure-three unit sources this supplies first integer landing semantics; all quantitative landing and probability bounds remain written."),
     "AdjacentWordClosure": ("ordinary/AdjacentWordClosure.lean", "Collatz.AdjacentWordClosure",
         "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."),
     "PairedClock": ("ordinary/PairedClock.lean", "Collatz.PairedClock",
@@ -53,6 +55,8 @@ MODULES = {
         "A periodic ordered lift with an equivariant group-valued residue, strict order preservation on each residue fiber and a full cyclic phase has residue multiplier of exactly the full period. The finite-order monotonicity and phase obstruction are proved. The physical dyadic lift construction, inversion count and width-nine sufficient condition remain written arguments."),
     "IntegerMinorConcentration": ("literature/IntegerMinorConcentration.lean", "Collatz.IntegerMinorConcentration",
         "An exact integer row congruence implies divisibility of the determinant times every coefficient; a columnwise Leibniz bound and a nonzero coefficient force a minor to vanish below its modulus. Coefficient heights are unrestricted. The physical packet selection, Cramer basis step, valuation-level counting and effective asymptotic landing bounds remain written."),
+    "FullDenominatorPairZero": ("cycles/FullDenominatorPairZero.lean", "Collatz.FullDenominatorPairZero",
+        "For a scaled integer pair comparison on a transitive native cycle, one zero forces divisibility by the entire denominator coprime to two. Dividing by that denominator yields an integer recurrence with forcing between minus two and two; persistence of a nonzero sign then forces every comparison to be zero. The physical chart and sparse-recurrence exclusion remain written."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 

@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 13,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint13/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_NUMERATOR_LANDING_COMPLEXITY.md": "938c9016f3cc87f8a6eaf823b98ff6d3ac31fe3ae8fa3c4f6615623e25effd8a",
+    "research/astra-critical-rigidity-20261128/ordinary/COPRIME_ENDPOINT_PRODUCTS.md": "00e5e9397741153e89e4c71c81af75d87b86679ea060a1cb4325208fa4c19026",
+    "research/astra-critical-rigidity-20261128/ordinary/LOCAL_INTEGER_LANDING.md": "89145af9f95d2dac797c2215f57085fa18014e85caae34d867c26e9a52164603",
+    "research/astra-critical-rigidity-20261128/ordinary/TRANSLATED_LANDING_INTERVALS.md": "9b9236c91c4a16954635daf6b8ad6b19fd4da938882f04fbfa3a32752688795e",
+    "research/astra-critical-rigidity-20261128/literature/TERNARY_TOWER_SYNCHRONIZATION.md": "cc219bf2281e205ddde2bcb8d89bb2ab883ac0c7db61628b1ddfa312bb18679e",
+    "research/astra-critical-rigidity-20261128/literature/DISTINCT_TOWER_ENDPOINTS.md": "27ff8e9629be0a056a46b48921d001340cbb8fd80a488557367838c80d6245e1",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_TOWER_ENDPOINT_PROFILE.md": "0747fbe74b1f8fa52bdc7dc2745c39e01f0aee195a1f9e9f9f53324655959cb2",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_TOWER_FAMILIES.md": "4e42f3c6763847b6b45176d3fcdb94405d7b0a15a7f60014c3cfda0a67080f39",
+    "research/astra-critical-rigidity-20261128/ordinary/check_fixed_numerator_landing.py": "badf527c78d9e20360690f69708eeb4f601b5aaf18424d00e67d43402426cb38",
+    "research/astra-critical-rigidity-20261128/ordinary/check_local_landing.py": "fff7a10fcb21a2b1cfed37b858487ab403be487628315a1d5bf41038ce100e66",
+    "research/astra-critical-rigidity-20261128/ordinary/check_translated_landing.py": "70001b852994b77a5d06cfadd416969253f7bcb7b37bd38f2d480aced80bb159",
+    "research/astra-critical-rigidity-20261128/literature/check_ternary_tower_synchronization.py": "062942be2c234f1ba548feab16afd4a305a560cb3c8d906073f4710e76acc8a4",
+    "research/astra-critical-rigidity-20261128/literature/check_critical_tower_profiles.py": "07daf6b507ec9db304a3d37f912866573368a7794161ebcb456944c2310df6d8",
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_NUMERATOR_LANDING_CONTROLS.json": "ddd86d2d430d4002549cffe7132f460373ac221ef13daa95ca49f940ea56170b",
+    "research/astra-critical-rigidity-20261128/ordinary/LOCAL_LANDING_CONTROLS.json": "97adfe88589f84daf7dd948ed006070d4f7ad851a42fc69dbb4ac21469104608",
+    "research/astra-critical-rigidity-20261128/ordinary/TRANSLATED_LANDING_CONTROLS.json": "43f58af6545da98999c82742b328455429079aa6607db9a75373b0c96bdd31c0",
+    "research/astra-critical-rigidity-20261128/literature/TERNARY_TOWER_CONTROLS.json": "d0a3fa37aec6a99997318ce113410e4b3ae933bd641d0f7cf509aa656f5b2b88",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_TOWER_CONTROLS.json": "c606ff7c1a84f1504f66d0ed938dba0ffc9977b6f4049eac34f478e5fd821b5a",
+    "research/astra-critical-rigidity-20261128/ordinary/TernaryLanding.lean": "f495ac18824742c64bd0d073beacdc16b08480fbb9f6c0ebf530e1ebe40529d9",
+    "research/astra-critical-rigidity-20261128/cycles/FullDenominatorPairZero.lean": "4b1714b691ef6561aa5ddf686d8b7b68ca8e9f8d3a0e983e104d342266c946d9",
+    "research/astra-critical-rigidity-20261128/check_lean.py": "0b45b55e52af1d9a5fcde29b3cb606180add3e02426f5c011b477df32c5128f3",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58",
+    "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1"
+  },
+  "scope": "Eight independently reconstructed written notes, five exact controls and eight freshly compiled connected landing and full-denominator roots. Thirteen existing affine dependency roots were rebuilt and audited, not counted again. Mathematical asymptotics remain proposed written theorems with identified original analytic inputs."
+}

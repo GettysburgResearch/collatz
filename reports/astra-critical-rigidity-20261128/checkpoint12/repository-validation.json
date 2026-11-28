@@ -1,0 +1,20 @@
+{
+  "schema": "collatz-critical-rigidity-repository-validation/v1",
+  "success": true,
+  "validated_local_commit": "f20a6c8d92df54a696ec0aeef534f7ff54f4d237",
+  "validated_tree": "0f425a748c84942e8ac651c5d5f767b18bedd422",
+  "tracked_files": 899,
+  "all_tracked_files_present": true,
+  "clean_before_validation": true,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.628,
+  "finished_utc": "2026-11-28T04:19:23.296929+00:00",
+  "scope": "Complete repository integrity check in a clean detached checkout. This does not prove the mathematics."
+}

@@ -1,0 +1,245 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:37:51.320960+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_fixed_numerator_landing.py": "badf527c78d9e20360690f69708eeb4f601b5aaf18424d00e67d43402426cb38",
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_NUMERATOR_LANDING_COMPLEXITY.md": "938c9016f3cc87f8a6eaf823b98ff6d3ac31fe3ae8fa3c4f6615623e25effd8a",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.761,
+      "stdout_sha256": "ddd86d2d430d4002549cffe7132f460373ac221ef13daa95ca49f940ea56170b",
+      "result": {
+        "counts": {
+          "even_insertions": 3989,
+          "full_grid_sources": 19682,
+          "full_landing_words": 872,
+          "native_dates": 7913,
+          "negative_center": 653,
+          "negative_shifted_entries": 761,
+          "nonconstant_repeated_pieces": 185,
+          "positive_center": 995,
+          "powered_pieces": 1659,
+          "prescribed_fast_cylinders": 2001,
+          "zero_center": 11
+        },
+        "fast_sources": [
+          {
+            "minimum_by_excess": {
+              "0": 1,
+              "1": 2,
+              "2": 4,
+              "3": 8,
+              "4": 16
+            },
+            "n": 1
+          },
+          {
+            "minimum_by_excess": {
+              "0": 7,
+              "1": 1,
+              "2": 2,
+              "3": 4,
+              "4": 8
+            },
+            "n": 2
+          },
+          {
+            "minimum_by_excess": {
+              "0": 5,
+              "1": 10,
+              "2": 1,
+              "3": 2,
+              "4": 4
+            },
+            "n": 3
+          },
+          {
+            "minimum_by_excess": {
+              "0": 31,
+              "1": 11,
+              "2": 13,
+              "3": 7,
+              "4": 14
+            },
+            "n": 4
+          },
+          {
+            "minimum_by_excess": {
+              "0": 13,
+              "1": 5,
+              "2": 10,
+              "3": 7,
+              "4": 1
+            },
+            "n": 5
+          },
+          {
+            "minimum_by_excess": {
+              "0": 103,
+              "1": 23,
+              "2": 7,
+              "3": 14,
+              "4": 19
+            },
+            "n": 6
+          },
+          {
+            "minimum_by_excess": {
+              "0": 245,
+              "1": 85,
+              "2": 17,
+              "3": 11,
+              "4": 22
+            },
+            "n": 7
+          },
+          {
+            "minimum_by_excess": {
+              "0": 95,
+              "1": 31,
+              "2": 7,
+              "3": 14,
+              "4": 23
+            },
+            "n": 8
+          },
+          {
+            "minimum_by_excess": {
+              "0": 797,
+              "1": 29,
+              "2": 58,
+              "3": 91,
+              "4": 25
+            },
+            "n": 9
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.863,
+      "stdout_sha256": "ddd86d2d430d4002549cffe7132f460373ac221ef13daa95ca49f940ea56170b",
+      "result": {
+        "counts": {
+          "even_insertions": 3989,
+          "full_grid_sources": 19682,
+          "full_landing_words": 872,
+          "native_dates": 7913,
+          "negative_center": 653,
+          "negative_shifted_entries": 761,
+          "nonconstant_repeated_pieces": 185,
+          "positive_center": 995,
+          "powered_pieces": 1659,
+          "prescribed_fast_cylinders": 2001,
+          "zero_center": 11
+        },
+        "fast_sources": [
+          {
+            "minimum_by_excess": {
+              "0": 1,
+              "1": 2,
+              "2": 4,
+              "3": 8,
+              "4": 16
+            },
+            "n": 1
+          },
+          {
+            "minimum_by_excess": {
+              "0": 7,
+              "1": 1,
+              "2": 2,
+              "3": 4,
+              "4": 8
+            },
+            "n": 2
+          },
+          {
+            "minimum_by_excess": {
+              "0": 5,
+              "1": 10,
+              "2": 1,
+              "3": 2,
+              "4": 4
+            },
+            "n": 3
+          },
+          {
+            "minimum_by_excess": {
+              "0": 31,
+              "1": 11,
+              "2": 13,
+              "3": 7,
+              "4": 14
+            },
+            "n": 4
+          },
+          {
+            "minimum_by_excess": {
+              "0": 13,
+              "1": 5,
+              "2": 10,
+              "3": 7,
+              "4": 1
+            },
+            "n": 5
+          },
+          {
+            "minimum_by_excess": {
+              "0": 103,
+              "1": 23,
+              "2": 7,
+              "3": 14,
+              "4": 19
+            },
+            "n": 6
+          },
+          {
+            "minimum_by_excess": {
+              "0": 245,
+              "1": 85,
+              "2": 17,
+              "3": 11,
+              "4": 22
+            },
+            "n": 7
+          },
+          {
+            "minimum_by_excess": {
+              "0": 95,
+              "1": 31,
+              "2": 7,
+              "3": 14,
+              "4": 23
+            },
+            "n": 8
+          },
+          {
+            "minimum_by_excess": {
+              "0": 797,
+              "1": 29,
+              "2": 58,
+              "3": 91,
+              "4": 25
+            },
+            "n": 9
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact actual landing words, rational block centers and prescribed fast cylinders. The Subspace Theorem and Yu-based infinite complexity bounds remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:37:52.945106+00:00"
+}

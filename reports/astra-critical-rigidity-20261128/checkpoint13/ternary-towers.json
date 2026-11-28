@@ -1,0 +1,51 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:37:52.066053+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_ternary_tower_synchronization.py": "062942be2c234f1ba548feab16afd4a305a560cb3c8d906073f4710e76acc8a4",
+    "research/astra-critical-rigidity-20261128/literature/TERNARY_TOWER_SYNCHRONIZATION.md": "cc219bf2281e205ddde2bcb8d89bb2ab883ac0c7db61628b1ddfa312bb18679e",
+    "research/astra-critical-rigidity-20261128/literature/DISTINCT_TOWER_ENDPOINTS.md": "27ff8e9629be0a056a46b48921d001340cbb8fd80a488557367838c80d6245e1"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.769,
+      "stdout_sha256": "d0a3fa37aec6a99997318ce113410e4b3ae933bd641d0f7cf509aa656f5b2b88",
+      "result": {
+        "actual_endpoint_pairs": 17600,
+        "complete_periods": 400,
+        "largest_positive_landing_jump": 49,
+        "partial_exponent_visits": 344784,
+        "residue_visits": 36640,
+        "unequal_slope_meetings": 172,
+        "verified_common_landings": 238,
+        "verified_landing_blocks": 212
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.829,
+      "stdout_sha256": "d0a3fa37aec6a99997318ce113410e4b3ae933bd641d0f7cf509aa656f5b2b88",
+      "result": {
+        "actual_endpoint_pairs": 17600,
+        "complete_periods": 400,
+        "largest_positive_landing_jump": 49,
+        "partial_exponent_visits": 344784,
+        "residue_visits": 36640,
+        "unequal_slope_meetings": 172,
+        "verified_common_landings": 238,
+        "verified_landing_blocks": 212
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual Fraction endpoint comparisons and whole first-landing blocks, exact two-coset periods and native word carries. Limiting tower laws use the cited written Leen inputs.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:37:53.665162+00:00"
+}
