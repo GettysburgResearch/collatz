@@ -1,0 +1,61 @@
+{
+  "denominator_only_parameters": [
+    0,
+    1,
+    7,
+    31,
+    127
+  ],
+  "largest_tested_start": 131071,
+  "odd_starts_per_pool": 65536,
+  "pools_by_largest_prime": {
+    "19": {
+      "both": 58236,
+      "common_above_one": 75,
+      "denominator": 4448,
+      "neither": 273,
+      "numerator": 2579
+    },
+    "3": {
+      "both": 64987,
+      "common_above_one": 2300,
+      "denominator": 452,
+      "neither": 7,
+      "numerator": 90
+    },
+    "7": {
+      "both": 63532,
+      "common_above_one": 96,
+      "denominator": 1381,
+      "neither": 41,
+      "numerator": 582
+    }
+  },
+  "telescoping_paths": [
+    [
+      27,
+      18,
+      1
+    ],
+    [
+      97,
+      20,
+      1
+    ],
+    [
+      871,
+      28,
+      1
+    ],
+    [
+      6171,
+      43,
+      1
+    ],
+    [
+      170141183460469231731687303715884105727,
+      227,
+      1
+    ]
+  ]
+}

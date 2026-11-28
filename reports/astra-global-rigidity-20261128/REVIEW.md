@@ -1,4 +1,4 @@
-# Review boundary — fifth nine-hour checkpoint
+# Review boundary — sixth nine-hour checkpoint
 
 The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is planned through 2026-11-28 07:59:19 UTC. This is an intermediate checkpoint. Source intake: `INTAKE.json`; inherited packet head: `5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128`.
 
@@ -16,7 +16,7 @@ The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is
 
 ## Formal and finite verification boundary
 
-**Checkpoint 5: twelve modules and 68 public roots passed a fresh serial compilation and axiom audit.** `checkpoint5/lean.json` identifies their exact bytes. Earlier audits remain preserved. The new `AbsoluteOffsetBudget` module proves finite denominator/product identities and count bounds with repeated departures allowed. `ShiftedRampCores` proves the genuine shortcut ascent, even descent and adjacent shifted-core identity. Neither module imports the analytic conclusions as axioms. Initial development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; the failed receipts are preserved alongside the successful full run. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
+**Checkpoint 6: fourteen modules and 78 public roots passed a fresh serial compilation and axiom audit.** `checkpoint6/lean.json` identifies their exact bytes. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
 
 The checkpoint receipts identify exact source hashes, compiler version, Mathlib pin, imported module closure, public declarations and axiom output. They distinguish fresh packet compilation from reuse of compiled dependencies. The only accepted theorem axioms are the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom mathematical interface axiom, or `native_decide` shortcut is accepted by the replay.
 
@@ -296,6 +296,100 @@ before applying two-logarithm p-adic bounds; the multiplicatively dependent
 case is treated separately by LTE. The summed small-prime valuation estimate
 has its explicit `2 gamma + eta < 1` range and its genuine ordinary next
 shifted state. No random-exponent or RH premise is inserted.
+
+## Checkpoint 6 review
+
+**Full-determinant sparse sums — VERIFIED AS A SOURCE-QUALIFIED DEDUCTION.**
+Root reconstructed the minimal translated-torus reduction, the proper exponent
+gap that forbids nonzero whole-clock differences inside a remainder class,
+and the finite Fourier support inequality. The rational field norm bounds
+the degree of every nonempty complementary root orbit. Homogenizing both
+factors of the entire binomial retains the original numerical determinant;
+their fixed coefficient denominators and two/three-parts are controlled,
+and the coprime residual gcd is subexponential by the stated Levin--Wang
+input. Root opened Weaver 22/v3, Lemma 3 and equations (3), (6), (17)--(21):
+the exceptional-torus mechanism and qualitative nondivisibility are prior
+work, explicitly credited. The new quantitative surviving fraction is
+`1/min(k,g)` for fixed sparse support. The signed-swap application retains
+arbitrary unedited words. Root also read PR212's exact independent-clock
+construction and checked that any repetition multiplicity divides the
+clock gcd, so a purported smaller period must be a whole-cell shift.
+This verifies the sharp rational examples' least-period argument without
+assuming alignment. No bound with growing sparse support is asserted.
+
+**Unrestricted core transport and retention — VERIFIED AS SOURCE-QUALIFIED
+DEDUCTIONS.** Root checked the raw S-adic Subspace Theorem normalization in
+Varju's chapter of *Analysis at Large*, printed page 379, Theorem 5. On the
+primitive pair `(R/g,N/g)`, the chosen local forms have product
+`(v−1) U V/R`; on `(N,1)` they give `B/v`. Their exceptional rational lines
+contain only finitely many primitive points, yielding the two ineffective
+lower bounds used to obtain `U V³ ≫ N^(1−ε)`. For `(N,v,1)` the local
+three-dimensional product is `B B′/R`. Root checked the independent forms
+and separately resolved each exceptional plane: a fixed `v` uses the first
+pair estimate, while a fixed rational comparison of `N` and `v` uses the
+second. The gcd-retention bound and telescoping consequences follow by
+explicit algebra. The constructed actual ramps attain retention exponent
+one half; their fixed-extra-prime losses are only logarithmic in the
+parameter by LTE. Large incoming factors can be higher valuations of old
+primes. No new distinct prime at every step, effective constant, or
+contradictory total transport budget is inferred.
+
+**Fixed-root half-log cell law — VERIFIED AS A SOURCE-QUALIFIED DEDUCTION.**
+Root reconstructed the uniform all-subsegment negative-drift estimate by
+summable local stage errors and bounded passage tests. Selecting a last
+scale crossing and a future minimum produces a bounded real tail without
+requiring a stopping-time assertion. For fixed depth and total, ordinary
+endpoints give exact lattice spacing of the real prefixes. The critical
+trace-tail step uses a bounded event of hitting the entire high-trace set:
+the good-site sparse bound controls its unweighted size and includes the
+whole omitted hull, then a short-clock column moment bounds its local
+reference hit probability. This event, rather than an unbounded trace
+amplitude, transfers through ordinary stage total variation and the bounded
+change of measure. Thus no raw uniform integrability is silently assumed.
+Weaver 175's covers give the matching lower cell-mass exponent. A countable
+geometric cycle-exit mixture extends the written result to periodic roots.
+All pinned passage, harmonic-law and cover inputs remain explicit premises.
+
+**Solenoid sections of an actual escaping component — VERIFIED AS A
+SOURCE-QUALIFIED DEDUCTION.** The late ordinary fibre is coupled to a dilation
+of the fixed bilateral component law through the actual grade label. Root
+checked the exact grid encoding by `floor(3^k s) mod 3^(2k)`, the entropy
+deficit comparison with coarse/fine dyadic cells, and the averaged overlap
+count for entropy increments. Polynomial logarithmic Frostman losses give
+`k=o(j/log j)` for ordinary dyadic-window averaging; weighting by `1/j`
+gives the larger `k=o(j)` range. The high-resolution singularity assertion
+comes from covers of a finite high-mass collection of fixed affine pieces.
+It is compatible with those lower-resolution limits and is not an estimate
+for quadratic moving-root energy or for the missing source mass.
+
+**Recent rational-logarithm input and geometric returns — CONDITIONALLY
+VERIFIED as stated.** Root read Chudnovsky's November 23 primary preprint,
+Theorem 1.1, Corollary 1.2, the prior-work statement and Appendix A. The
+homogeneous exponent used is `r+ε`, not `r−1+ε`. The full proof and ancillary
+Lean project have not been independently rebuilt. The exact shifted
+identity gives a strictly positive linear form bounded above by `d/(2M)`;
+each coefficient is `O_b(d)`. Root checked the resulting return spacing,
+the main-parent density telescoping, and the whole-ray entropy premise in
+the frozen PR213 packet. Growing information about an externally chosen
+ray index does not contradict small conditional parent entropy. A theorem
+forcing quick returns of the required labels remains missing.
+
+**Forced-divergence priority and automatic dynamics — VERIFIED at the
+written arithmetic/construction level, with the listed finite Lean core.**
+Before publication, root found and read trureturing's earlier Question 7.7
+refutation and blueprint, last changed November 20. Its separated-hole
+answer is credited explicitly; this packet does not claim to be the first
+negative answer. Its reported external formalization was not rebuilt.
+Vasilyev's periodic two-forced-up example is also credited. The automatic
+hole construction is the concrete binary language with odd length at
+least seven and prefix `100`. Root checked the all-band guard exclusion,
+the exact return alternatives, the irrational-rotation chain frequency,
+and summable rounding errors in the phase telescope. The latter gives
+bounded discrepancy in down counts and logarithmic height. The universal
+superset theorem is the three-step lower bound, while the exact rate belongs
+to the set's own map. The finite checker tests 262143 binary inputs and
+21840 actual hole returns, as well as all 16 permitted gates in its finite
+sparse-hole crop. These constructions concern unrestricted modified maps.
 
 ## Questions kept open
 

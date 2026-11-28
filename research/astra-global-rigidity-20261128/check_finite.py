@@ -17,12 +17,14 @@ CHECKERS = [
     "cycles/check_complete_modulus_trace.py", "cycles/check_random_direction.py",
     "cycles/check_primitive_clock_expressions.py",
     "cycles/check_semimodule_denominator.py",
+    "cycles/check_sparse_full_modulus.py", "cycles/check_guarded_holes.py",
     "mass/check_critical_native.py", "mersenne/check_mersenne.py",
     "mersenne/check_direct_ancestors.py", "mersenne/check_ascent.py",
     "mersenne/check_factor_certificates.py", "mersenne/check_semiprime_cancellation.py",
     "mersenne/check_prime_midpoint.py",
     "mersenne/check_ramp_ancestors.py",
     "mersenne/check_adjacent_cores.py",
+    "mersenne/check_reduced_core_transport.py", "mersenne/check_core_retention.py",
 ]
 
 
