@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/literature/check_algebraic_growth_deficit.py",
+  "sha256": "a5bfc803022d66c358f2bcf526e4edb68441739b6be3c3b084c1b80b58a3c511",
+  "started_utc": "2026-11-28T01:44:11.024934+00:00",
+  "scope": "Finite actual odd-orbit partial sums, strict-increase dates, artificial truncated endpoints, exact dyadic divisibility, and single-prefix real-tail bounds. This does not assert an exponentially growing ordinary orbit or verify algebraicity of its corrected real limit.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.543,
+      "stdout": "{\"artificial_quiet_ends\": 420, \"multi_slip_ends\": 4827, \"neighbor_pairs\": 50966, \"physical_steps\": 14256, \"sources\": 132, \"widest_common_run\": 101}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.606,
+      "stdout": "{\"artificial_quiet_ends\": 420, \"multi_slip_ends\": 4827, \"neighbor_pairs\": 50966, \"physical_steps\": 14256, \"sources\": 132, \"widest_common_run\": 101}\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

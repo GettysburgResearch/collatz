@@ -23,6 +23,8 @@ MATHLIB = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 MODULES = {
     "AffineOrbit": ("formal/AffineOrbit.lean", "Collatz.PoweredAffine",
         "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."),
+    "AdjacentWordClosure": ("ordinary/AdjacentWordClosure.lean", "Collatz.AdjacentWordClosure",
+        "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse forward-closing algorithm and asymptotic clock equivalence remain written proofs."),
     "PairedClock": ("ordinary/PairedClock.lean", "Collatz.PairedClock",
         "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification is formalized separately in JointTargets."),
     "CrossGrade": ("ordinary/CrossGrade.lean", "Collatz.PairedClock",

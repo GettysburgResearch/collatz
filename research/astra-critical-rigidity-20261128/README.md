@@ -133,6 +133,33 @@ All these written proofs were independently reconstructed by the coordinator; th
 
 The new [EventFactorRank.lean](cycles/EventFactorRank.lean) proves the weighted valuation-row independence criterion, the shared-point gap, and its finite-dimensional overlap obstruction. Its three public roots passed a strict fresh-object compilation and separate import/axiom audit. The cumulative formal inventory is now **45 central public roots, or 46 including the separately rebuilt local motif specialization**. The analytic counting, limiting and full routing arguments remain written proofs. See the [sixth coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint6/REVIEW.md) for exact scope, attribution and source hashes.
 
+## Seventh mathematical checkpoint
+
+**The full paired survivor has an exact finite positive Hausdorff gauge.** For a fixed nonabsorbed integer pair state \(z\), let \(E_z\) be the set of two-adic bases whose adjusted affine pair never merges, and let \(h(z)\) be Leen's harmonic capacity. At dyadic depth \(t\), put
+
+\[
+\psi(2^{-t})=2^{-t}\sqrt{t\log\log t}.
+\]
+
+The [full-set gauge theorem](literature/EXACT_MERGER_GAUGE.md) proves
+
+\[
+c h(z)\le\mathcal H^\psi(E_z)\le C h(z)
+\]
+
+with absolute positive constants. The upper bound covers every surviving path, including the null remainder under the capacity law. The [critical gauge](literature/CRITICAL_MERGER_HAUSDORFF.md) \(2^{-t}\sqrt t\) gives zero measure. The positive-excursion [lower gauge](ordinary/SURVIVOR_LOWER_GAUGE.md) and [uniform clock estimate](ordinary/IMMORTAL_EXCURSION_CLOCK.md) explain the iterated logarithm. These are new deductions from explicitly cited written pair-process results of Leen; the prior almost-everywhere coalescence theorem is not a new claim. No assertion that every positive integer merges follows from a Hausdorff statement about the two-adic exceptional set.
+
+| Claim | Statement | Evidence and boundary |
+|---|---|---|
+| P15: actual ordinary lifts in Lean | The equal-grade static carry equation produces arbitrarily large positive odd sources \(s,3s\) realizing both supplied words and remaining unequal at every date through their loop. | [AdjacentWordClosure.lean](ordinary/AdjacentWordClosure.lean). Four new public roots include the exact affine divisibility criterion and actual replay. The converse closing construction is still a written proof at this checkpoint. |
+| P16: bounded motifs require a much larger merger gap | For two positive rational periodic phases related by \(w=3^jz-a\), with fixed bounded odd grades and a noncollapsed integer affine relation, their clock ratios eventually agree and their maximum native period is \(o(j)\). | [Bounded-grade paired periods](ordinary/BOUNDED_GRADE_PAIRED_PERIODS.md). The two phases can belong to different cycles. The argument keeps the full reduced denominator and uses the outside-S version of Levin–Wang's theorem. Its onset is ineffective and the grades must stay bounded. |
+| C12: window counts must develop large defects | For ordinary cycles, \(\min_h s_h(n_v+\Delta+\log p)/p\to\infty\), where \(v=\lfloor hA/p\rfloor+1\), \(\Delta=pv-hA\), and \(n_v\) counts non-v windows. Positive polynomial-height occupation forces large count deviations on both sides of the mean at every cheap lag. | [Block-sum defects](cycles/BLOCK_SUM_DEFECTS.md). This gives \(n_v/\sqrt p\to\infty\) for bounded \(\Delta/\sqrt p\), and rules out cheap two-value windows. The canonical-root width input is credited to Paper 22 v4; this does not exclude all cycles. |
+| C13: the local sixth-difference method stops at width three | For every \(R>3\), arbitrarily long parallel trajectories of actual positive odd integers fit in a band of width less than \(R\), have all spatial differences of orders one through five positive, and exhibit both signs of PR213's exact sixth-difference stencil. | [Local width barrier](cycles/WIDTH_THREE_LOCAL_BARRIER.md). The exact three-step carry \(2\cdot9+1\cdot6-3\cdot8=0\) supplies the signs. These are finite ordinary paths, not the phases of a closed ordinary cycle; a further global constraint remains possible. |
+| O11: exact size of the full paired exceptional set | \(0<c h(z)\le\mathcal H^\psi(E_z)\le C h(z)<\infty\), with \(\psi(2^{-t})=2^{-t}\sqrt{t\log\log t}\). The conclusion holds locally in every live cylinder and after removing unequal-slope physical coincidences. | [Exact gauge](literature/EXACT_MERGER_GAUGE.md). A quantitative excursion estimate pays the entire remaining finite-level cover. The lower bound sums disjoint forever-positive excursions. This imports the precise written Leen inputs and is not a Lean formalization. |
+| O12: algebraicity forces a logarithmic growth deficit | On a fixed positive odd orbit with positive lower exponential growth, if its corrected real limit \(P\) is algebraic of degree \(d\), then the cumulative extra divisions satisfy \(S_N\gg (\log N)^{3/2}/\sqrt{\log(6d)\log\log N}\). | [Algebraic growth deficit](literature/ALGEBRAIC_GROWTH_DEFICIT.md). A two-place gap argument uses Bugeaud–Evertse's original quantitative theorem. Algebraicity of \(P\) is an explicit additional hypothesis, not a consequence of growth. |
+
+The three new exact programs passed central normal and optimized replays. The local width controls include 52,672 actual odd edges and 230,900 strict spatial differences. The fresh `AdjacentWordClosure` replay audits four new roots and thirteen existing dependency roots; it raises the cumulative count to **49 distinct central public roots, or 50 with the separately rebuilt motif specialization**. The [seventh coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint7/REVIEW.md) records the full-set covering argument, primary inputs, independent reviews and proof boundaries.
+
 ## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.
