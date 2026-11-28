@@ -1,0 +1,163 @@
+{
+  "scope": "Five new Python finite controls in ordinary and optimized mode, plus exact C++ Bellman certificates with and without undefined-behavior sanitization. Written infinite claims are not established by these finite runs.",
+  "started_utc": "2026-11-28T02:25:23.618916+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "research/astra-nine-hour-20261128/phase5/check_binary_witness.py",
+      "sha256": "4db1887ed1ff5c00b8256d84eb131fad27f53be367a386916247384efa09a959",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.07,
+          "stdout": "{\"accepted_pairs\": 192, \"exponent_pairs\": 32895, \"least_target_exponents\": [[2, 3], [3, 9], [4, 27], [5, 81], [6, 243], [7, 729], [8, 2187]], \"odd_prefix_cases\": 32768, \"power_two_endpoints\": 11, \"scope\": \"finite exact identities; not an infinite automata proof\"}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.122,
+          "stdout": "{\"accepted_pairs\": 192, \"exponent_pairs\": 32895, \"least_target_exponents\": [[2, 3], [3, 9], [4, 27], [5, 81], [6, 243], [7, 729], [8, 2187]], \"odd_prefix_cases\": 32768, \"power_two_endpoints\": 11, \"scope\": \"finite exact identities; not an infinite automata proof\"}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase5/scheduled_floor_controls.py",
+      "sha256": "9834c7f4ee2e1ae7bef87930feef7aa560c9d86f59638eb48edc994030795f95",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.271,
+          "stdout": "1068 coprime positive necklaces through n=14 matched all native odd phases; 295 had W<=1.\n54065 candidate integer coefficients tested at 3/2<n/u<2 through n=120.\nn=5, u=3, k0=13, holes=(1, 2), normalized=True, downward_closed=False\nn=8, u=5, k0=61, holes=(2, 3), normalized=True, downward_closed=False\nn=8, u=5, k0=70, holes=(0, 3, 4), normalized=False, downward_closed=False\nn=2,u=1 recovers the ordinary anchor k0=1.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.329,
+          "stdout": "1068 coprime positive necklaces through n=14 matched all native odd phases; 295 had W<=1.\n54065 candidate integer coefficients tested at 3/2<n/u<2 through n=120.\nn=5, u=3, k0=13, holes=(1, 2), normalized=True, downward_closed=False\nn=8, u=5, k0=61, holes=(2, 3), normalized=True, downward_closed=False\nn=8, u=5, k0=70, holes=(0, 3, 4), normalized=False, downward_closed=False\nn=2,u=1 recovers the ordinary anchor k0=1.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase5/lag_ratio_controls.py",
+      "sha256": "2aa517b881b12e5500f6842fa18061efd5256019526d1834586a345d473d5d2c",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 1.229,
+          "stdout": "3885 positive primitive necklaces through n=15 passed all-lag tests.\n7 two-sided best clocks; 9 one-sided best clocks passed every proper edge subset.\n0 ratio classes had multiple (lag,time) pairs across the tested necklaces.\nFive exact odd edges at (8,5) form a minimal balanced product but no orbit.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.32,
+          "stdout": "3885 positive primitive necklaces through n=15 passed all-lag tests.\n7 two-sided best clocks; 9 one-sided best clocks passed every proper edge subset.\n0 ratio classes had multiple (lag,time) pairs across the tested necklaces.\nFive exact odd edges at (8,5) form a minimal balanced product but no orbit.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/escape/phase5/check_native_spectrum.py",
+      "sha256": "5d4d03d7acda330834f28707d8954678795eb25d3b30a405d28be020a49cebb0",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.512,
+          "stdout": "PASS 1931795 native meeting comparisons, 14080 source-recurrence coordinates, 3520 integrated flux coordinates, 257 binomial shift identities\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.627,
+          "stdout": "PASS 1931795 native meeting comparisons, 14080 source-recurrence coordinates, 3520 integrated flux coordinates, 257 binomial shift identities\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase5/check_cyclic_transport.py",
+      "sha256": "839bd39233d1bdf70258da8162f89fe1a53d231608951588729f7f776fde6a02",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.855,
+          "stdout": "physical assignment / current / cut-rank controls 144\npositive full-turn control and 259 exact score products passed\nexact primitive-character autocorrelation checks 6552\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.029,
+          "stdout": "physical assignment / current / cut-rank controls 144\npositive full-turn control and 259 exact score products passed\nexact primitive-character autocorrelation checks 6552\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase5/check_bellman_lifts.cpp",
+      "sha256": "fd613c7ebdaa266ea5b1c9fb746d3e590663a1080eb99e898e77bc4fbeb7043d",
+      "runs": [
+        {
+          "sanitized": false,
+          "compile_argv": [
+            "g++",
+            "-O2",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-std=c++17",
+            "/workspace/scratch/f139035b63c2/checkpoint5-frozen/machinery/phase5/check_bellman_lifts.cpp",
+            "-o",
+            "/workspace/scratch/f139035b63c2/checkpoint5-bellman"
+          ],
+          "compiler_exit_code": 0,
+          "compiler_stdout": "",
+          "compiler_stderr": "",
+          "exit_code": 0,
+          "seconds": 1.387,
+          "stdout": "2 exact cost interval [7000000000,7000000000]/3000000000, exact max top span 3000000000/1000000000, approximate critical RMS 3, drift 0.84860744, digit KL 0.2831338\n3 exact cost interval [6333333333,6333333334]/3000000000, exact max top span 2666666667/1000000000, approximate critical RMS 2.3346944, drift 0.60363393, digit KL 0.23559456\n4 exact cost interval [5974358973,5974358976]/3000000000, exact max top span 2487179487/1000000000, approximate critical RMS 1.9449258, drift 0.47047181, digit KL 0.20214282\n5 exact cost interval [5801524292,5801524294]/3000000000, exact max top span 2393775802/1000000000, approximate critical RMS 1.7430864, drift 0.39996281, digit KL 0.17700454\n6 exact cost interval [5690289574,5690289578]/3000000000, exact max top span 2303900730/1000000000, approximate critical RMS 1.6053194, drift 0.35404531, digit KL 0.15859537\n7 exact cost interval [5615500491,5615500494]/3000000000, exact max top span 2245683735/1000000000, approximate critical RMS 1.5117265, drift 0.32221286, digit KL 0.14461763\n8 exact cost interval [5562628943,5562628947]/3000000000, exact max top span 2206996048/1000000000, approximate critical RMS 1.4462592, drift 0.29885358, digit KL 0.13378638\n9 exact cost interval [5518746116,5518746120]/3000000000, exact max top span 2175104737/1000000000, approximate critical RMS 1.3899621, drift 0.27950429, digit KL 0.12508009\n10 exact cost interval [5484378447,5484378451]/3000000000, exact max top span 2150108185/1000000000, approximate critical RMS 1.3452829, drift 0.26383051, digit KL 0.11795168\n11 exact cost interval [5454208037,5454208042]/3000000000, exact max top span 2128053021/1000000000, approximate critical RMS 1.3052945, drift 0.25010846, digit KL 0.11191636\n12 exact cost interval [5427808034,5427808039]/3000000000, exact max top span 2107022429/1000000000, approximate critical RMS 1.2696406, drift 0.2380773, digit KL 0.10674313\n",
+          "stderr": ""
+        },
+        {
+          "sanitized": true,
+          "compile_argv": [
+            "g++",
+            "-O2",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-std=c++17",
+            "-fsanitize=undefined",
+            "-fno-sanitize-recover=undefined",
+            "/workspace/scratch/f139035b63c2/checkpoint5-frozen/machinery/phase5/check_bellman_lifts.cpp",
+            "-o",
+            "/workspace/scratch/f139035b63c2/checkpoint5-bellman-sanitized"
+          ],
+          "compiler_exit_code": 0,
+          "compiler_stdout": "",
+          "compiler_stderr": "",
+          "exit_code": 0,
+          "seconds": 1.717,
+          "stdout": "2 exact cost interval [7000000000,7000000000]/3000000000, exact max top span 3000000000/1000000000, approximate critical RMS 3, drift 0.84860744, digit KL 0.2831338\n3 exact cost interval [6333333333,6333333334]/3000000000, exact max top span 2666666667/1000000000, approximate critical RMS 2.3346944, drift 0.60363393, digit KL 0.23559456\n4 exact cost interval [5974358973,5974358976]/3000000000, exact max top span 2487179487/1000000000, approximate critical RMS 1.9449258, drift 0.47047181, digit KL 0.20214282\n5 exact cost interval [5801524292,5801524294]/3000000000, exact max top span 2393775802/1000000000, approximate critical RMS 1.7430864, drift 0.39996281, digit KL 0.17700454\n6 exact cost interval [5690289574,5690289578]/3000000000, exact max top span 2303900730/1000000000, approximate critical RMS 1.6053194, drift 0.35404531, digit KL 0.15859537\n7 exact cost interval [5615500491,5615500494]/3000000000, exact max top span 2245683735/1000000000, approximate critical RMS 1.5117265, drift 0.32221286, digit KL 0.14461763\n8 exact cost interval [5562628943,5562628947]/3000000000, exact max top span 2206996048/1000000000, approximate critical RMS 1.4462592, drift 0.29885358, digit KL 0.13378638\n9 exact cost interval [5518746116,5518746120]/3000000000, exact max top span 2175104737/1000000000, approximate critical RMS 1.3899621, drift 0.27950429, digit KL 0.12508009\n10 exact cost interval [5484378447,5484378451]/3000000000, exact max top span 2150108185/1000000000, approximate critical RMS 1.3452829, drift 0.26383051, digit KL 0.11795168\n11 exact cost interval [5454208037,5454208042]/3000000000, exact max top span 2128053021/1000000000, approximate critical RMS 1.3052945, drift 0.25010846, digit KL 0.11191636\n12 exact cost interval [5427808034,5427808039]/3000000000, exact max top span 2107022429/1000000000, approximate critical RMS 1.2696406, drift 0.2380773, digit KL 0.10674313\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "finished_utc": "2026-11-28T02:25:33.088712+00:00"
+}

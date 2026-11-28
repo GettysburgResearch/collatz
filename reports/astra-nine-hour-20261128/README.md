@@ -51,3 +51,16 @@ are preserved with it. The fourth snapshot includes the source-qualified
 tilted regularity extension certified by 2,900 rational interval cells;
 the scalar computation and its imported analytic criterion are reviewed
 separately.
+
+The fifth publication adds the [critical-pressure and ordinary-clock review](CHECKPOINT_05_REVIEW.md),
+[complete twenty-one-module replay](CHECKPOINT_05_LEAN.json),
+[new finite controls](CHECKPOINT_05_CONTROLS.json), and
+[scientific-source manifest](CHECKPOINT_05_SOURCES.json). The replay
+audits 441 declarations, including 47 private declarations. Five Python
+programs pass normally and with optimization; the complete finite
+Bellman C++ certificate passes both its normal and undefined-behavior
+sanitized builds. The fourth publication's exact [record](CHECKPOINT_04_PUBLICATION.json)
+and [integrity receipt](CHECKPOINT_04_PUBLISHED_INTEGRITY.json) are retained.
+The critical inverse pressure, arithmetic transport formula and actual
+clock-group law have separate written reviews; their unresolved
+endpoints are not promoted by the finite certificates.

@@ -116,6 +116,26 @@ has an [ordinary terminating-pair obstruction](escape/phase4/ORDINARY_PAIR_RECUR
 to its infinite-time transfer, so that route cannot be closed by changing
 the order of the quantifiers.
 
+## Fifth checkpoint: pressure, transport, and ordinary clock groups
+
+The [fifth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_05_REVIEW.md)
+records the complete reconstruction and the current critical gaps.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Uniform inverse pressure](machinery/phase5/UNIFORM_INVERSE_PRESSURE.md) | The worst supplied integer's weighted inverse-row rate equals a finite-policy entropy–cost variational principle. Reverse entropy per digit has an exact limit equal to the pressure deficit. | Equality at the critical parameter is unproved; its equivalent linear pressure branch is explicit. |
+| [Critical Bellman lifts](machinery/phase5/CRITICAL_BELLMAN_LIFTS.md) | A bound on one precise last-trit oscillation would close the endpoint. Exact finite certificates through W=12 have last-trit spread at most three. | No bound uniform in the window size has been established. The rolling controller sees fresh digits, so a stored-word repair does not prove it. |
+| [Cyclic transport](machinery/phase5/CYCLIC_TRANSPORT.md) | The finite optimum is an exact directed transport problem in discrete-log order. A flat primitive-character identity supplies a family of bounded-density marginals requiring cost of order sqrt(N). | The optimal marginal remains free; neither generic smoothing nor prescribing the critical marginal solves its cumulative discrepancy. |
+| [Uniform conditional entropy counterexample](machinery/phase5/CONDITIONAL_ENTROPY_COUNTEREXAMPLE.md) | A uniformly elliptic ternary measure has sublinear forward entropy after every cylinder but positive reverse entropy rate. | Any successful critical proof needs additional arithmetic structure. This example is not a Collatz orbit. |
+| [Native Mellin rigidity](escape/phase5/NATIVE_MELLIN_RIGIDITY.md) and [growing clock groups](escape/phase5/SMOOTH_SOURCE_CLOCK_GROUPS.md) | Exact bounded branch eigenfunctions have only the stated real-size resonances. Genuine ordinary component/clock distributions become Haar on their finite quotients through moduli (log X)^(1/11), with rapid inverse-log error for smooth windows. | A hypothetical escape concentrates on only O(sqrt(log X)) pairs. Crossing the modulus exponent 1/4 would exclude it; 1/11 does not. |
+| [Fixed-place sparse valuations](cycles/phase5/SPARSE_LOCAL_VALUATIONS.md) and [physical loop arms](cycles/phase5/PHYSICAL_LOOP_ARMS.md) | Bounded signed charts have exact limiting valuation groups. Actual full-lap arm domains and the exponential doubling cost of entering a low reverse arm remain explicit. | Arbitrary cycle words need not have bounded charts or short entry routes. |
+| [Scheduled floor reconstruction](cycles/phase5/SCHEDULED_FLOOR.md) and [all-origin ratio lags](cycles/phase5/LAG_RATIO_SPECTRUM.md) | Integral Apéry coefficients recover actual odd phases. Reduced ratios occupy sparse lag classes; best clocks impose exact product restrictions. Controls reject two tempting relaxations. | Legal arbitrary-height cycle closure and a forced conflicting factor relation remain open. |
+
+The [binary reachability witness](phase5/BINARY_REACHABILITY_WITNESS.md)
+uses only explicit terminating odd runs and a sparse nonregular language.
+It gives an elementary alternate proof of the already known
+nonautomaticity result, with Wren and Dhiman–Pandey credited.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -148,14 +168,16 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [fourth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_04_LEAN.json)
-passed **17 modules and 403 declarations, including 45 private
+The [fifth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_05_LEAN.json)
+passed **21 modules and 441 declarations, including 47 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
 legality, complete word decoding, nonresonant merger inequalities,
 physical inverse budgets, exact positive-lift minimization, simple mixed
-arcs and the generic finite-orbit whitelist. The
+arcs, the generic finite-orbit whitelist, occupation flows, last-trit
+repairs and transport duals, integral odd numerator recovery, and
+meeting-clock independence. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.
