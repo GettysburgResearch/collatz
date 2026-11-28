@@ -1,0 +1,98 @@
+{
+  "scope": "Exact bounded controls for checkpoint seven; not proofs of the infinite written conclusions",
+  "started_utc": "2026-11-28T03:49:16.605330+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "cycles/phase7/closure_controls.py",
+      "sha256": "9c59fc82699f8d4d4c719bedc4d6eb57f5da6a5dcfe9cc50646027183fd50275",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/cycles/phase7/closure_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "Certified .50671 < d_* < .50673 and 1 - 3d_*/gamma > .04088 > 1/25.\nFourteen disjoint degree-two native edges, modulus 6 and equal type frequencies.\nSeparate five-source multiplicative mass 84702475 is exact.\n24 generalized Prouhet partitions passed.\nThree-grade four-column register with common windings 2,2 has heights 3,1,0.\n",
+          "stderr": "",
+          "seconds": 0.056
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/cycles/phase7/closure_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "Certified .50671 < d_* < .50673 and 1 - 3d_*/gamma > .04088 > 1/25.\nFourteen disjoint degree-two native edges, modulus 6 and equal type frequencies.\nSeparate five-source multiplicative mass 84702475 is exact.\n24 generalized Prouhet partitions passed.\nThree-grade four-column register with common windings 2,2 has heights 3,1,0.\n",
+          "stderr": "",
+          "seconds": 0.257
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "escape/phase7/check_first_clock_centres.py",
+      "sha256": "0cc180cd453b45df92408f968c81c964b95c9dad21249565c0ce4eafeaaa50e0",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/escape/phase7/check_first_clock_centres.py"
+          ],
+          "exit_code": 0,
+          "stdout": "two-order checks {'at or after': 55373, 'before': 41635}\nexact marked source visits 16168\nnonempty physical clock/grade/mark cells 2783\n",
+          "stderr": "",
+          "seconds": 0.254
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/escape/phase7/check_first_clock_centres.py"
+          ],
+          "exit_code": 0,
+          "stdout": "two-order checks {'at or after': 55373, 'before': 41635}\nexact marked source visits 16168\nnonempty physical clock/grade/mark cells 2783\n",
+          "stderr": "",
+          "seconds": 0.319
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "machinery/phase7/check_affine_overlap.py",
+      "sha256": "fb429c52f573a7d52e0ec21f8af40176f0b86a2304d12f20c277516c4821a205",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/machinery/phase7/check_affine_overlap.py"
+          ],
+          "exit_code": 0,
+          "stdout": "4096 word pairs, 1571 affine maps, 726 rejected controls, 8 ordinary unequal-clock/translated fusions passed\n",
+          "stderr": "",
+          "seconds": 0.643
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint7-frozen/machinery/phase7/check_affine_overlap.py"
+          ],
+          "exit_code": 0,
+          "stdout": "4096 word pairs, 1571 affine maps, 726 rejected controls, 8 ordinary unequal-clock/translated fusions passed\n",
+          "stderr": "",
+          "seconds": 0.9
+        }
+      ],
+      "same_output": true
+    }
+  ],
+  "finished_utc": "2026-11-28T03:49:19.036768+00:00"
+}

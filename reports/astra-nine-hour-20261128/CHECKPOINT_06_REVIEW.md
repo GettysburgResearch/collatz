@@ -214,7 +214,7 @@ not claimed to converge in total variation.
 
 [MIDPOINT_VARIATION.md](../../research/astra-nine-hour-20261128/escape/phase6/MIDPOINT_VARIATION.md)
 quantifies how a nontrivial invariant binary coloring accumulates sibling
-variation in each sufficiently long dyadic range. Weaver's Paper 212
+variation in each sufficiently long dyadic range. lean_assurance_lab's Paper 212
 already proves divergence by the same strong/weak limit principle and is
 credited. The new block estimate follows from a uniform prefix rate and
 the exact midpoint identity. Its very long ranges do not contradict the

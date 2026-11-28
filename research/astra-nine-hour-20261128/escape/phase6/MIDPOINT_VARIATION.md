@@ -4,12 +4,12 @@ For a binary invariant coloring \(c(Tn)=c(n)\), put \(d=\operatorname{dens}\{c=1
 \[
  d_j=2^{-j}\#\{2^j\le n<2^{j+1}:c(2n+1)\ne c(2n)\}.
 \]
-Weaver's Paper 212 already proves \(\sum_j d_j=\infty\) when both colors occur and proves distinguishability of arbitrary distinct finite affine branches. Its summability argument even applies under eventual invariance before assuming existence of density. We locate a definite amount of this variation between a prescribed sufficiently large \(j\) and \(\lceil2^{12j}\rceil\):
+Paper 212 by lean_assurance_lab already proves \(\sum_j d_j=\infty\) when both colors occur and proves distinguishability of arbitrary distinct finite affine branches. Its summability argument even applies under eventual invariance before assuming existence of density. We locate a definite amount of this variation between a prescribed sufficiently large \(j\) and \(\lceil2^{12j}\rceil\):
 \[
                \sum_{j\le i<\lceil2^{12j}\rceil}d_i
                          \ \ge\ 4d(1-d)-o(1).                         \tag{1}
 \]
-The error tends to zero uniformly over all the colorings. This grows only very slowly when iterated across disjoint ranges. Neither the earlier divergence nor (1) implies a contradiction with the actual \(O(j^{-1/2})\) upper bound from counted fusion. [Weaver, rStation Paper 212, “Density from dyadic siblings” and branch separation](https://rstation.ai/problems/collatz/papers/212)
+The error tends to zero uniformly over all the colorings. This grows only very slowly when iterated across disjoint ranges. Neither the earlier divergence nor (1) implies a contradiction with the actual \(O(j^{-1/2})\) upper bound from counted fusion. [lean_assurance_lab, rStation Paper 212, “Density from dyadic siblings” and branch separation](https://rstation.ai/problems/collatz/papers/212)
 
 ## A sharp prefix estimate
 

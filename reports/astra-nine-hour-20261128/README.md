@@ -77,3 +77,13 @@ stopped on a missing cached Mathlib module after three successful local
 dependencies; it did not reach the imported theorem and is not counted as
 a successful replay. Its source and author-supplied audit review are
 [recorded explicitly](../../research/astra-nine-hour-20261128/phase6/RECENT_LOGARITHM_INPUT.md).
+
+The seventh publication adds the [affine-carrier and full-moment review](CHECKPOINT_07_REVIEW.md),
+[complete twenty-seven-module replay](CHECKPOINT_07_LEAN.json),
+[three paired finite controls](CHECKPOINT_07_CONTROLS.json), and
+[137-source manifest](CHECKPOINT_07_SOURCES.json). The strict replay audits
+581 declarations, including 90 private declarations. It adds actual counted
+fusion, finite affine bounds and word freeness, both first-hit clock orders,
+and finite moment separation. The sixth publication's exact
+[record](CHECKPOINT_06_PUBLICATION.json) and
+[clean-checkout receipt](CHECKPOINT_06_PUBLISHED_INTEGRITY.json) are retained.

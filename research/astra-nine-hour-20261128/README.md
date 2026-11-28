@@ -157,6 +157,20 @@ lower bound, even with exact stabilization of the relative measures.
 The [dyadic variation estimate](escape/phase6/MIDPOINT_VARIATION.md) quantifies
 an earlier divergence criterion and credits its source.
 
+## Seventh checkpoint: exact affine carriers and full moment bounds
+
+The [seventh claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_07_REVIEW.md)
+records the independent mathematical reconstruction and prior-work comparison.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Exact critical affine overlaps](machinery/phase7/CRITICAL_AFFINE_OVERLAPS.md) and [finite rational kernel](phase7/FINITE_AFFINE_TRANSPORTER.md) | At and below the ternary entropy ceiling, overlap in the positive 2,3 affine group occurs exactly for a quotient of two positive-gap words. A finite exact search computes the shared mass and total variation. Every nonzero integer translate is singular. | These measure statements do not bound the mass at a specified ordinary integer address. |
+| [Actual counted fusion](machinery/phase7/DETERMINISTIC_COUNTED_FUSION.md) and [growing jitter](machinery/phase7/GROWING_INTEGER_JITTER.md) | The prior canonical steering is connected to positive integer progressions in Lean. Explicit logarithmic witness costs recover a growing number of translated labels at the critical law. | Recovery of random labels does not supply a worst-cylinder density floor. |
+| [Moving fourfold boundary](cycles/phase7/MOVING_FOURFOLD_BOUNDARY.md) | For every fixed C>0, only finitely many primitive cycles satisfy X/m ≤ 4−C p^(−1/25), using the named recent logarithm-ratio input. Improved mixed-code entropy supports a shrinking angular margin. | No effective cutoff or exclusion of each isolated additional cycle is obtained. |
+| [Distinct finite moment paths](cycles/phase7/DISTINCT_MOMENT_PATHS.md) | Genuine odd-unit paths of any fixed length can have all vertices distinct while matching polynomial moments, local congruences and compatible word frequencies on every layer. | Finite local closure tests alone do not enforce return of the same integer state. |
+| [Timed floors](escape/phase7/TIMED_FLOOR_AND_CLOCK_CENTRES.md) and [untrimmed Rényi energy](escape/phase7/UNTRIMMED_RENYI_ENERGY.md) | Uniform timed floors and finitely many first-target clock centers independently recover the concurrent PR212 sharp full moments for 1<q<1+g, g≈0.05289, and second-order Shannon entropy log T−½log log T+o(log log T). | The full quadratic moment and an arithmetic contradiction to hypothetical escape remain open. |
+| [Posterior Bellman losses](machinery/phase7/POSTERIOR_EDGE_LOSS.md) | Exact slack decomposes into posterior surprise and reverse conditional entropy; one explicit potential has bounded last-trit span. | Its projected source is not stationary and its gain is not the finite-window optimum. |
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -189,8 +203,8 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [sixth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_06_LEAN.json)
-passed **23 modules and 471 declarations, including 50 private
+The [seventh complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_07_LEAN.json)
+passed **27 modules and 581 declarations, including 90 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
@@ -199,7 +213,9 @@ physical inverse budgets, exact positive-lift minimization, simple mixed
 arcs, the generic finite-orbit whitelist, occupation flows, last-trit
 repairs and transport duals, integral odd numerator recovery, and
 meeting-clock independence, finite mixed-alphabet shortening and exact
-dyadic midpoint accounting. The
+dyadic midpoint accounting, actual counted fusion, finite affine-transporter
+bounds and word freeness, first-hit clock ordering, and finite moment
+separation. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.
