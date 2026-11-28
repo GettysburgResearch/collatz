@@ -78,3 +78,40 @@ This proves $\lim_{r\to\infty}(q_{3,r}-\alpha)^{1/(2r)}=1/3$ and gives a width-d
 
 
 The [independent integer checker](check_sharp_digit_price.py) verifies the width-seven staircase potential on all 1,458 labelled leading transitions, follows the rounded orbit at widths three through eleven in the opening list, and tests the exact critical-power comparisons. Its [receipt](../../../reports/astra-global-20261128/escape/SHARP_DIGIT_PRICE_CHECKS.json) records the 19-cycle and its sorted cuts.
+
+## The width rate for all radices and an explicit width-seven dual
+
+There is also a matching exponential width rate for each $p$, with a uniform logarithmic loss in the lower margin. Use the full radix-$p$ grid and round-down $Q$ as before. On the finite grid band $M\le x<3M$ choose $e=1_{\{x<2M\}}$ and take the legal lower successor $x'=Q(3^e x/2)$. All these grid points are integers: the octave index on the band is nonnegative. The band is preserved, including when $p=2$ and the local grid spacing changes within it. The eventual cycle closes in the lifted grid itself, so its leading graph flows have zero total length change. Let $f$ be its odd frequency. Telescoping the true real logarithms of the grid representatives gives
+\[
+ (f-\alpha)\log3=\operatorname{average}_{\rm cycle}\log(3^e x/(2x')).
+\]
+Any positive rounding error loses at least $1/2$ in ordinary height, since the unrounded value is a half-integer and the rounded one is an integer. Its logarithmic cost is at least $\log(1+1/(6M))$. Each zero-error step requires an even $x$ and consumes exactly one of its factors of two. Thus there is at least one positive rounding error per $1+\lfloor\log_2(3M)\rfloor$ consecutive cyclic states. The finite graph dual gives $q_{p,r}\ge f$. Combining with (1) proves
+\[
+    \frac{\log(1+1/(6M))}{(1+\lfloor\log_2(3M)\rfloor)\log3}
+    \le q_{p,r}-\alpha\le\frac{\log(1+1/M)}{\log3},
+    \qquad \lim_{r\to\infty}(q_{p,r}-\alpha)^{1/(2r)}=1/p.             \tag{8}
+\]
+
+For the ternary exact solution, a particularly simple monotone dual comes from the cycle itself. Order all degree-three translates of its mantissas on the positive line. Give them successive integer indices, with multiplication by three adding $t$. The map $R$ acts bijectively and monotonically on these indexed points, hence by a fixed integer shift. Its $t$-fold iterate multiplies each by $3^{-s}$, so its single-step shift is $-s$. For a general cell endpoint $x$ let $A(x)$ denote the index of the greatest cycle point at most $x$. Since $R$ is monotone, $A(Rx)\ge A(x)-s$. Every higher even successor has at least this index. The score $-A(x)/t$ therefore gives (3) at $q=s/t$. The arbitrary additive origin of the index has no effect on the inequalities.
+
+At width seven the sorted cuts in ordinary leading-mantissa units are
+\[
+ 246,261,276,293,310,329,348,369,391,414,439,465,493,522,553,586,621,658,697.
+\]
+Write $N(h)$ for their cumulative count through $h$. The score uses $\gamma=-1$, $V(h)=-N(h)/19$. The [independent integer checker](check_sharp_digit_price.py) verifies this score on all 1,458 labelled ternary leading transitions at this width. It also follows the integer rounded orbit for every width through eleven in the opening list, checks the exact cycle prices and tests $3^s>2^t$ without logarithms. [Exact receipt](../../../reports/astra-global-20261128/escape/SHARP_DIGIT_PRICE_CHECKS.json).
+
+## A universally verified ordinary-input price
+
+At width seven the 19 cuts $c_i$ also give an integer formula independent of a leading-digit convention:
+\[
+ H(n)=\sum_{i=0}^{18}\left\lfloor\log_3\left\lfloor
+                              \frac{729n}{c_i}\right\rfloor\right\rfloor,
+ \qquad n\ge1.                                                        \tag{9}
+\]
+The inner integer is at least one. Writing $n=3^j x$ with $243\le x<729$, the $i$th term is $5+j+1_{\{x\ge c_i\}}$, so $H(n)=19\lfloor\log_3 n\rfloor+N(\lfloor x\rfloor)$. This formula includes short numerals with zeros appended to their leading tuple. The bare price is $F=-H/19$ up to its irrelevant constant.
+
+For seven cut pairs the integer comparisons are $2c_i\le c_{i+12}$; in the twelve remaining pairs they are $2c_i\le3c_{i-7}$. Summing their log-level comparisons gives $H(2n)\le H(n)+12$. The same formula is nondecreasing and satisfies $H(3n)=H(n)+19$. On a genuine odd step, $2Tn=3n+1$ implies $H(Tn)\ge H(n)+7$. The even step is the doubling inequality. Hence at every ordinary $n\ge1$,
+\[
+                    H(n)+19e(n)\le H(Tn)+12 .                          \tag{10}
+\]
+The [native Lean module](TernaryWidthSevenNative.lean) proves (10) with the repository's actual shortcut map, including the sufficient tripling inequality and every integer threshold comparison. The [finite graph module](TernaryWidthSevenPrice.lean) independently checks that the 19-step rounded cycle from 246 returns with 12 decrements and that each allowed width-seven leading edge satisfies the integer dual inequality. Both pass the strict compiler, including the kernel's ordinary decisions on the finite tables. The analytic implication from general digit potentials to the finite graph is the written cohomological argument.

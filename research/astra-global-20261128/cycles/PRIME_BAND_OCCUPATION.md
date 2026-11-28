@@ -8,7 +8,7 @@ Use the independent geometric valuations, signatures $S_z$, history $\mathcal A_
       \frac{1}{\max(1,\omega(n))}\sum_{j=1}^{\omega(n)} F(s_j)
                     \longrightarrow d
    \]
-   in natural probability. With the full ordinary component-TV input, the empirical probability measure of components at these individual prime additions converges in total variation in natural probability to the ordinary component law. In particular an additional positive-density basin would occupy its own ordinary density of the full prime-factor chain on typical integers. This strengthens the earlier mean occupancy calculation. It gives no independence formula for immediately consecutive links. Prescribing a word of consecutive one-prime additions with positive lower frequency in the preceding paper still uses its single-prime estimate under RH.
+   in natural probability. With the full ordinary component-TV input, the empirical probability measure of components at these individual prime additions converges in total variation in natural probability to the ordinary component law. In particular an additional positive-density basin would occupy its own ordinary density of the full prime-factor chain on typical integers. This strengthens the earlier mean occupancy calculation. It gives no independence formula for immediately consecutive links. The [rough-integer reservoir theorem](ROUGH_PRIME_WORDS.md) separately proves positive lower frequency for each prescribed word of consecutive exponent-one additions without RH.
 
 ## Smoothing with one smaller prime factor
 

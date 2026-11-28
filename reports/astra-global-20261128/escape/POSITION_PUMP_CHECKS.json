@@ -1,0 +1,54 @@
+{
+  "seeds": [
+    {
+      "digits": 10,
+      "largest": 59048,
+      "literal_reconstructions": [
+        {
+          "digits": 11,
+          "position_window_cells": 225,
+          "sources": 202
+        },
+        {
+          "digits": 12,
+          "position_window_cells": 252,
+          "sources": 233
+        }
+      ],
+      "odd_fraction": "1132203/1790170",
+      "odd_weight": "1132203",
+      "position_window_cells": 198,
+      "positive_repeated_arcs": 68,
+      "repeated_layer": 5,
+      "smallest": 19801,
+      "sources": 170,
+      "total_weight": "1790170",
+      "width": 3
+    },
+    {
+      "digits": 16,
+      "largest": 42876134,
+      "literal_reconstructions": [
+        {
+          "digits": 17,
+          "position_window_cells": 2634,
+          "sources": 2088
+        },
+        {
+          "digits": 18,
+          "position_window_cells": 2875,
+          "sources": 2356
+        }
+      ],
+      "odd_fraction": "160681138885642518752824520956448583294976942825721687/254478872673344227832204140442397827003658231711827181",
+      "odd_weight": "321362277771285037505649041912897166589953885651443374",
+      "position_window_cells": 2393,
+      "positive_repeated_arcs": 558,
+      "repeated_layer": 9,
+      "smallest": 14351215,
+      "sources": 1822,
+      "total_weight": "508957745346688455664408280884795654007316463423654362",
+      "width": 5
+    }
+  ]
+}
