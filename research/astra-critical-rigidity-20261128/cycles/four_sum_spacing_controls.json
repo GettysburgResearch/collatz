@@ -1,0 +1,239 @@
+{
+  "calendar": [
+    {
+      "moment": 4,
+      "period": 41,
+      "one_step_offset": 24,
+      "high_threshold": 25,
+      "rows_by_region": [
+        10,
+        7,
+        9,
+        8,
+        7
+      ],
+      "checked_predecessors": [
+        1002,
+        861,
+        675,
+        72,
+        77
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 41,
+      "one_step_offset": 24,
+      "high_threshold": 26,
+      "rows_by_region": [
+        10,
+        7,
+        10,
+        7,
+        7
+      ],
+      "checked_predecessors": [
+        1008,
+        861,
+        750,
+        63,
+        77
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 306,
+      "one_step_offset": 179,
+      "high_threshold": 183,
+      "rows_by_region": [
+        75,
+        52,
+        57,
+        70,
+        52
+      ],
+      "checked_predecessors": [
+        7455,
+        6396,
+        4275,
+        630,
+        572
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 306,
+      "one_step_offset": 179,
+      "high_threshold": 198,
+      "rows_by_region": [
+        75,
+        52,
+        72,
+        55,
+        52
+      ],
+      "checked_predecessors": [
+        7545,
+        6396,
+        5400,
+        495,
+        572
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 665,
+      "one_step_offset": 389,
+      "high_threshold": 399,
+      "rows_by_region": [
+        163,
+        113,
+        124,
+        152,
+        113
+      ],
+      "checked_predecessors": [
+        16203,
+        13899,
+        9300,
+        1368,
+        1243
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 665,
+      "one_step_offset": 389,
+      "high_threshold": 432,
+      "rows_by_region": [
+        163,
+        113,
+        157,
+        119,
+        113
+      ],
+      "checked_predecessors": [
+        16401,
+        13899,
+        11775,
+        1071,
+        1243
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 15601,
+      "one_step_offset": 9126,
+      "high_threshold": 9360,
+      "rows_by_region": [
+        3824,
+        2651,
+        2886,
+        3589,
+        2651
+      ],
+      "checked_predecessors": [
+        379986,
+        326073,
+        216450,
+        32301,
+        29161
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    },
+    {
+      "moment": 4,
+      "period": 15601,
+      "one_step_offset": 9126,
+      "high_threshold": 10140,
+      "rows_by_region": [
+        3824,
+        2651,
+        3666,
+        2809,
+        2651
+      ],
+      "checked_predecessors": [
+        384666,
+        326073,
+        274950,
+        25281,
+        29161
+      ],
+      "largest_attained_predecessor_by_region": [
+        12,
+        14,
+        17,
+        16,
+        20
+      ]
+    }
+  ],
+  "cube": [
+    {
+      "length": 1,
+      "nonempty_uniform_sets": 3
+    },
+    {
+      "length": 2,
+      "nonempty_uniform_sets": 15
+    },
+    {
+      "length": 3,
+      "nonempty_uniform_sets": 255
+    }
+  ],
+  "collision_fiber": {
+    "source_size": 8,
+    "true_distinct_triples": 120,
+    "eight_distinct_unordered_pairs": 1
+  }
+}

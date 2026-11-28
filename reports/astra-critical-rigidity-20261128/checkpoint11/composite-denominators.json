@@ -1,0 +1,77 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "finished_utc": "2026-11-28T03:24:48.469572+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_composite_denominators.py": "e78fa078cc67790e1997d67dbc41af50ccae2c5b66c69d604fdaeda70e2ef646",
+    "research/astra-critical-rigidity-20261128/ordinary/COMPOSITE_DENOMINATOR_SCALE.md": "faae0f7ff98e1e4ab9866ecd6e49932137dc5e03d2c82140313e2fa256673fe7",
+    "research/astra-critical-rigidity-20261128/ordinary/check_prime_grade_denominators.py": "aae6f0098ff1df708fff72f41006264f6f0748b3da9a2c6d9487221c6044c8c9"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.367,
+      "stdout_sha256": "eb8a6d81844b87d24aaeb4ebb5e7b7cbdaf1a571e415a4c5d6bd87b0b6d975f6",
+      "result": {
+        "address_data": [
+          {
+            "cyclic_support": 14,
+            "p": 30
+          },
+          {
+            "cyclic_support": 33,
+            "p": 105
+          },
+          {
+            "cyclic_support": 85,
+            "p": 385
+          }
+        ],
+        "counts": {
+          "address_families": 3,
+          "motif_tests": 128,
+          "negative_shifts": 32,
+          "nontrivial_losses": 10,
+          "primitive_words": 9,
+          "true_rational_native_steps": 8320
+        }
+      }
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 1.766,
+      "stdout_sha256": "eb8a6d81844b87d24aaeb4ebb5e7b7cbdaf1a571e415a4c5d6bd87b0b6d975f6",
+      "result": {
+        "address_data": [
+          {
+            "cyclic_support": 14,
+            "p": 30
+          },
+          {
+            "cyclic_support": 33,
+            "p": 105
+          },
+          {
+            "cyclic_support": 85,
+            "p": 385
+          }
+        ],
+        "counts": {
+          "address_families": 3,
+          "motif_tests": 128,
+          "negative_shifts": 32,
+          "nontrivial_losses": 10,
+          "primitive_words": 9,
+          "true_rational_native_steps": 8320
+        }
+      }
+    }
+  ],
+  "normal_optimized_same": true,
+  "seconds": 2.134,
+  "scope": "Exact finite controls of the formulas and actual calendars named in the coordinating review. No asymptotic onset or external analytic theorem is certified by these computations."
+}

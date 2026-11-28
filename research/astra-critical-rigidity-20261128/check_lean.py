@@ -49,6 +49,8 @@ MODULES = {
         "Cleared odd traces, an exact partial unequal final edge, the complete two-sided divisor at an interior date, and elementary spacing/counting kernels. The global rotation-occupation and limiting pressure theorems remain written proofs."),
     "TwoGradePairOrder": ("cycles/TwoGradePairOrder.lean", "Collatz.TwoGradePairOrder",
         "The pair-order and pair-sum injectivity kernel for an integer octave with exact doubling, two-valued affine tags and a transitive physical shift. The cyclic integer sign propagation, weighted identity and Eisenstein separation are proved. Construction of this input structure from an ordinary Collatz cycle remains a written argument."),
+    "ResidueFiberOrder": ("cycles/ResidueFiberOrder.lean", "Collatz.ResidueFiberOrder",
+        "A periodic ordered lift with an equivariant group-valued residue, strict order preservation on each residue fiber and a full cyclic phase has residue multiplier of exactly the full period. The finite-order monotonicity and phase obstruction are proved. The physical dyadic lift construction, inversion count and width-nine sufficient condition remain written arguments."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 

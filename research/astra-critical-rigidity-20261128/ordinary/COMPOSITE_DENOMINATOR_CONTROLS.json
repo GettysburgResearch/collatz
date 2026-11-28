@@ -1,0 +1,24 @@
+{
+  "address_data": [
+    {
+      "cyclic_support": 14,
+      "p": 30
+    },
+    {
+      "cyclic_support": 33,
+      "p": 105
+    },
+    {
+      "cyclic_support": 85,
+      "p": 385
+    }
+  ],
+  "counts": {
+    "address_families": 3,
+    "motif_tests": 128,
+    "negative_shifts": 32,
+    "nontrivial_losses": 10,
+    "primitive_words": 9,
+    "true_rational_native_steps": 8320
+  }
+}
