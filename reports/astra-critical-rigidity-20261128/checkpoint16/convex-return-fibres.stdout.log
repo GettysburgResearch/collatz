@@ -1,0 +1,44 @@
+{
+  "filter": {
+    "ordered_pair_of_pair_moment_tests": 14280,
+    "pointwise_convex_non_Sidon_witness": [
+      1,
+      4,
+      7,
+      8
+    ],
+    "positive_filter_degree": 5,
+    "weighted_second_difference": 320
+  },
+  "mixed": {
+    "arithmetic_cross_fiber_equalities": 2,
+    "eleventh_power_mixed_area_tests": 280,
+    "equalities_with_different_sheet_separations": 1
+  },
+  "native": [
+    {
+      "coarse_fibers": 3,
+      "convergent": [
+        84,
+        53
+      ],
+      "fiber_pair_sums": 35,
+      "local_samples": 13,
+      "next_denominator": 306,
+      "true_odd_states": 303,
+      "vertical_strict_triples": 7
+    },
+    {
+      "coarse_fibers": 27,
+      "convergent": [
+        1054,
+        665
+      ],
+      "fiber_pair_sums": 574,
+      "local_samples": 163,
+      "next_denominator": 15601,
+      "true_odd_states": 8001,
+      "vertical_strict_triples": 109
+    }
+  ]
+}

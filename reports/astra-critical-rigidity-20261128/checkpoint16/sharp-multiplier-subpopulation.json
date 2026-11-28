@@ -1,0 +1,161 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:52:27.292755+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_sharp_multiplier_subpopulation.py": "cfc828dcd63763de25da7ce8c4959d55f8600a0d6010a5441a3bdde156a9a28e",
+    "research/astra-critical-rigidity-20261128/cycles/SHARP_MULTIPLIER_SUBPOPULATION.md": "231021583491c2eea3170e8519a3fd1e04ac2227a2db461749833aacd25a028a",
+    "research/astra-critical-rigidity-20261128/literature/TRANSLATED_MULTIPLIER_POPULATIONS.md": "6609a0f2ae36180cea8c6849c48d8053f0c86ae374f90f898b17940e6cfb2c9f"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.039,
+      "stdout_sha256": "e170d52c93e792b2b1cf92c2d14b9931cfd125f6fac29dc7cb73beb7afd42366",
+      "result": {
+        "deep_precision_examples": [
+          {
+            "arbitrary_edge_pair_identities": 4624,
+            "binary_precision": 62,
+            "computed_center": "-1/2",
+            "discarded_residue_mod_3": 1,
+            "indices": 135,
+            "oriented_edges": 68,
+            "source_A": "1",
+            "step_D": "2",
+            "surviving_indices": 90
+          },
+          {
+            "arbitrary_edge_pair_identities": 324,
+            "binary_precision": 90,
+            "computed_center": "3/8",
+            "discarded_residue_mod_3": 0,
+            "indices": 147,
+            "oriented_edges": 18,
+            "source_A": "1461501637330902918203684832716283019655932542973",
+            "step_D": "8",
+            "surviving_indices": 98
+          },
+          {
+            "arbitrary_edge_pair_identities": 5184,
+            "binary_precision": 88,
+            "computed_center": "-1/2",
+            "discarded_residue_mod_3": 1,
+            "indices": 143,
+            "oriented_edges": 72,
+            "source_A": "43556142965880123323311949751266331066373",
+            "step_D": "10",
+            "surviving_indices": 95
+          }
+        ],
+        "low_precision_center_count": 541,
+        "sharp_examples": [
+          {
+            "exact_power_pairs": 30,
+            "indices": 60,
+            "largest_independent_set": 40
+          },
+          {
+            "exact_power_pairs": 58,
+            "indices": 121,
+            "largest_independent_set": 81
+          },
+          {
+            "exact_power_pairs": 200,
+            "indices": 399,
+            "largest_independent_set": 266
+          },
+          {
+            "exact_power_pairs": 511,
+            "indices": 1024,
+            "largest_independent_set": 683
+          },
+          {
+            "exact_power_pairs": 5001,
+            "indices": 10001,
+            "largest_independent_set": 6667
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.103,
+      "stdout_sha256": "e170d52c93e792b2b1cf92c2d14b9931cfd125f6fac29dc7cb73beb7afd42366",
+      "result": {
+        "deep_precision_examples": [
+          {
+            "arbitrary_edge_pair_identities": 4624,
+            "binary_precision": 62,
+            "computed_center": "-1/2",
+            "discarded_residue_mod_3": 1,
+            "indices": 135,
+            "oriented_edges": 68,
+            "source_A": "1",
+            "step_D": "2",
+            "surviving_indices": 90
+          },
+          {
+            "arbitrary_edge_pair_identities": 324,
+            "binary_precision": 90,
+            "computed_center": "3/8",
+            "discarded_residue_mod_3": 0,
+            "indices": 147,
+            "oriented_edges": 18,
+            "source_A": "1461501637330902918203684832716283019655932542973",
+            "step_D": "8",
+            "surviving_indices": 98
+          },
+          {
+            "arbitrary_edge_pair_identities": 5184,
+            "binary_precision": 88,
+            "computed_center": "-1/2",
+            "discarded_residue_mod_3": 1,
+            "indices": 143,
+            "oriented_edges": 72,
+            "source_A": "43556142965880123323311949751266331066373",
+            "step_D": "10",
+            "surviving_indices": 95
+          }
+        ],
+        "low_precision_center_count": 541,
+        "sharp_examples": [
+          {
+            "exact_power_pairs": 30,
+            "indices": 60,
+            "largest_independent_set": 40
+          },
+          {
+            "exact_power_pairs": 58,
+            "indices": 121,
+            "largest_independent_set": 81
+          },
+          {
+            "exact_power_pairs": 200,
+            "indices": 399,
+            "largest_independent_set": 266
+          },
+          {
+            "exact_power_pairs": 511,
+            "indices": 1024,
+            "largest_independent_set": 683
+          },
+          {
+            "exact_power_pairs": 5001,
+            "indices": 10001,
+            "largest_independent_set": 6667
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact arbitrary-edge elimination and common rational centers in deep binary cylinders, a low-precision incompatible-center control, single-residue independent subsets and exact three-ray sharpness counts. The uniform Subspace-Theorem onset and Brownian conclusions remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:52:27.435047+00:00"
+}

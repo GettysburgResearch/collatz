@@ -1,0 +1,52 @@
+{
+  "complete_square_resonance_units": 18725,
+  "physical_runs": [
+    {
+      "Q": 25,
+      "Q_s": 5,
+      "checked_retained_pair_sums": 94,
+      "d": 4,
+      "discarded_sources": 135,
+      "kept_sources": 46,
+      "linear_residue_mod_Q": 16,
+      "reduced_ranks": 15,
+      "retained_exact_integral_curvatures": 16,
+      "true_states": 8001,
+      "unthinned_nonintegral_curvatures": 151
+    },
+    {
+      "Q": 49,
+      "Q_s": 7,
+      "checked_retained_pair_sums": 322,
+      "d": 2,
+      "discarded_sources": 90,
+      "kept_sources": 91,
+      "linear_residue_mod_Q": 15,
+      "reduced_ranks": 15,
+      "retained_exact_integral_curvatures": 61,
+      "true_states": 8001,
+      "unthinned_nonintegral_curvatures": 151
+    }
+  ],
+  "rate_crossings": {
+    "complete_q_threshold": "0.04262954189919833221029858323985406412588373243157513022532",
+    "limiting_open_exponent": "0.412643781760700243467242694018146727587318864095852602094657",
+    "matched_width_three_rate": "0.212326112770340536436642051118609680521448381232129189846012",
+    "threshold_crossings": [
+      {
+        "mu": "3",
+        "width_bracket": [
+          "3.28052",
+          "3.28053"
+        ]
+      },
+      {
+        "mu": "5.116201",
+        "width_bracket": [
+          "2.73292",
+          "2.73293"
+        ]
+      }
+    ]
+  }
+}

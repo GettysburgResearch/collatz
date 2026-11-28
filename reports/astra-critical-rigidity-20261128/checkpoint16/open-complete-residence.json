@@ -1,0 +1,138 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:51:25.132648+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_open_complete_residence.py": "319f271556ba2e78102fe3196cad3055a6a1118a57219553df219bc642841a0f",
+    "research/astra-critical-rigidity-20261128/cycles/OPEN_MATCHED_WIDTH_RATES.md": "fd444aa6b4e403fb854f3e2ba2a7b1bdb8d3f364362fc0ae069fe7894ba5b1e6",
+    "research/astra-critical-rigidity-20261128/cycles/OPEN_COMPLETE_DENOMINATOR_RESIDENCE.md": "fcb4dbb44b6f612f91d33daa3ef8fd27a7ed64a7ef2d08480d4b2ab22e4bb801",
+    "research/astra-critical-rigidity-20261128/cycles/CONVEX_RETURN_FIBERS.md": "d870e93c1d7184e91787cd5a8e0972b9a4354fe5c87f563eea296c8a1f0bb140",
+    "research/astra-critical-rigidity-20261128/cycles/UNIFORM_SUBFOUR_RESIDENCE.md": "047376d0baf46af2f6a92af75bda2cc2d5f1fdf411dae7468098713b10bef617",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.623,
+      "stdout_sha256": "d07707d8d9ef167a0902c1ec7b4cdb4db4b67185c2ffbaea9e500f59e5fc078d",
+      "result": {
+        "complete_square_resonance_units": 18725,
+        "physical_runs": [
+          {
+            "Q": 25,
+            "Q_s": 5,
+            "checked_retained_pair_sums": 94,
+            "d": 4,
+            "discarded_sources": 135,
+            "kept_sources": 46,
+            "linear_residue_mod_Q": 16,
+            "reduced_ranks": 15,
+            "retained_exact_integral_curvatures": 16,
+            "true_states": 8001,
+            "unthinned_nonintegral_curvatures": 151
+          },
+          {
+            "Q": 49,
+            "Q_s": 7,
+            "checked_retained_pair_sums": 322,
+            "d": 2,
+            "discarded_sources": 90,
+            "kept_sources": 91,
+            "linear_residue_mod_Q": 15,
+            "reduced_ranks": 15,
+            "retained_exact_integral_curvatures": 61,
+            "true_states": 8001,
+            "unthinned_nonintegral_curvatures": 151
+          }
+        ],
+        "rate_crossings": {
+          "complete_q_threshold": "0.04262954189919833221029858323985406412588373243157513022532",
+          "limiting_open_exponent": "0.412643781760700243467242694018146727587318864095852602094657",
+          "matched_width_three_rate": "0.212326112770340536436642051118609680521448381232129189846012",
+          "threshold_crossings": [
+            {
+              "mu": "3",
+              "width_bracket": [
+                "3.28052",
+                "3.28053"
+              ]
+            },
+            {
+              "mu": "5.116201",
+              "width_bracket": [
+                "2.73292",
+                "2.73293"
+              ]
+            }
+          ]
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.457,
+      "stdout_sha256": "d07707d8d9ef167a0902c1ec7b4cdb4db4b67185c2ffbaea9e500f59e5fc078d",
+      "result": {
+        "complete_square_resonance_units": 18725,
+        "physical_runs": [
+          {
+            "Q": 25,
+            "Q_s": 5,
+            "checked_retained_pair_sums": 94,
+            "d": 4,
+            "discarded_sources": 135,
+            "kept_sources": 46,
+            "linear_residue_mod_Q": 16,
+            "reduced_ranks": 15,
+            "retained_exact_integral_curvatures": 16,
+            "true_states": 8001,
+            "unthinned_nonintegral_curvatures": 151
+          },
+          {
+            "Q": 49,
+            "Q_s": 7,
+            "checked_retained_pair_sums": 322,
+            "d": 2,
+            "discarded_sources": 90,
+            "kept_sources": 91,
+            "linear_residue_mod_Q": 15,
+            "reduced_ranks": 15,
+            "retained_exact_integral_curvatures": 61,
+            "true_states": 8001,
+            "unthinned_nonintegral_curvatures": 151
+          }
+        ],
+        "rate_crossings": {
+          "complete_q_threshold": "0.04262954189919833221029858323985406412588373243157513022532",
+          "limiting_open_exponent": "0.412643781760700243467242694018146727587318864095852602094657",
+          "matched_width_three_rate": "0.212326112770340536436642051118609680521448381232129189846012",
+          "threshold_crossings": [
+            {
+              "mu": "3",
+              "width_bracket": [
+                "3.28052",
+                "3.28053"
+              ]
+            },
+            {
+              "mu": "5.116201",
+              "width_bracket": [
+                "2.73292",
+                "2.73293"
+              ]
+            }
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact complete-denominator square-resonance orders and two genuine 8001-state rational runs; retained vertical sectors are integral, curved and Sidon while unthinned sectors fail integrality. Width thresholds are explicitly 60-digit decimal evaluations, not formal real-number certificates. Infinite residence bounds remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:51:26.212745+00:00"
+}
