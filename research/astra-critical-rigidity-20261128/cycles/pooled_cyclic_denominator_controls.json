@@ -1,0 +1,61 @@
+{
+  "scope": "Every native base and full chronological shift checked for the calibrated rational slope. Four-view multiplicity tests are finite choices, not exhaustive full-order multiset enumerations.",
+  "source_sha256": {
+    "POOLED_CYCLIC_DENOMINATOR.md": "79f6d59a6c1892bfc4246eb021f159c38b17930a7a6a6afdf7e5eef2208e560b",
+    "POOLED_CYCLIC_DENOMINATOR_RATE.md": "047a591fb51a15a3590d9a210cc0c0304aecd2a939bfa56fbef46b7692a7e040"
+  },
+  "true_cycle_controls": [
+    {
+      "actual_active_cell_counts_per_lap": {
+        "0": 13,
+        "1": 28
+      },
+      "all_chronological_offsets": 41,
+      "cell_size_range": [
+        3,
+        4
+      ],
+      "coding_edges": 130,
+      "complete_denominator_bit_length": 59,
+      "max_uniform_log_drift_upper": "1/1024",
+      "minimum_wrap_guard_gap": 12,
+      "nonreference_multiplicity_cap_tested": 4,
+      "occupied_cells": 13,
+      "padded_vectors_checked_four_views": 2100,
+      "padded_vectors_per_cell_range": [
+        25,
+        125
+      ],
+      "primitive_odd_period": 41,
+      "test_order_h": 1681,
+      "total_active_coordinates": 89,
+      "total_valuation": 65
+    },
+    {
+      "actual_active_cell_counts_per_lap": {
+        "0": 46,
+        "1": 260
+      },
+      "all_chronological_offsets": 306,
+      "cell_size_range": [
+        6,
+        7
+      ],
+      "coding_edges": 925,
+      "complete_denominator_bit_length": 476,
+      "max_uniform_log_drift_upper": "1/1024",
+      "minimum_wrap_guard_gap": 41,
+      "nonreference_multiplicity_cap_tested": 2,
+      "occupied_cells": 46,
+      "padded_vectors_checked_four_views": 103032,
+      "padded_vectors_per_cell_range": [
+        243,
+        729
+      ],
+      "primitive_odd_period": 306,
+      "test_order_h": 93636,
+      "total_active_coordinates": 785,
+      "total_valuation": 485
+    }
+  ]
+}

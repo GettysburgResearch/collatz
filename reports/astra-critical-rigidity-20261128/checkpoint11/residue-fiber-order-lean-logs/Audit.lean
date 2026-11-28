@@ -1,0 +1,3 @@
+import ResidueFiberOrder
+
+#print axioms Collatz.ResidueFiberOrder.residue_order_eq_period

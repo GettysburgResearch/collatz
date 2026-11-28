@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-critical-rigidity-repository-validation/v1",
+  "success": true,
+  "started_utc": "2026-11-28T03:38:23.051171+00:00",
+  "finished_utc": "2026-11-28T03:38:23.771297+00:00",
+  "seconds": 0.712,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "cwd": "/workspace/scratch/ba4979751b0f/checkpoint1-validation",
+  "local_commit": "1acc34fd6880c1119a2aecc2d47c37943c817d60",
+  "validated_tree": "a4871e82dfc1ae96b9eb78c5a7a8b2f4b6c6941d",
+  "tracked_files": 832,
+  "complete_checkout": true,
+  "clean_before": true,
+  "clean_after": true,
+  "exit_code": 0,
+  "scope": "Repository integrity validation of every tracked file in a clean complete checkout; not mathematical verification."
+}

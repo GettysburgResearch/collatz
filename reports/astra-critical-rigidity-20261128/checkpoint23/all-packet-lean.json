@@ -1,0 +1,535 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:40:54.609568+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "AdjacentWordClosure",
+    "AffineOrbit",
+    "BoundaryRanks",
+    "ClockCarryEquivalence",
+    "ConditionalParitySuffix",
+    "CrossGrade",
+    "EventFactorRank",
+    "FiniteBranchCapture",
+    "FullDenominatorPairZero",
+    "GuardedTernaryTube",
+    "IntegerMinorConcentration",
+    "InverseSuffixTransport",
+    "JointTargets",
+    "MarkedLandingWord",
+    "NativeMinimumClock",
+    "NativeTubeZero",
+    "OneSparseOrbit",
+    "OrderedMismatchWindows",
+    "PairedClock",
+    "PooledMultiplicityCapacity",
+    "PrefixCarryClosure",
+    "ReferenceDivisibility",
+    "ResidueFiberOrder",
+    "RotationOccupation",
+    "RotationRecurrenceRank",
+    "RoundedOrbitCapture",
+    "SignedReturnRouter",
+    "SparseNativeTargets",
+    "SynchronousPhase",
+    "TernaryLanding",
+    "TwoGradePairOrder"
+  ],
+  "compiled": [
+    "AffineOrbit",
+    "TernaryLanding",
+    "MarkedLandingWord",
+    "AdjacentWordClosure",
+    "ConditionalParitySuffix",
+    "SynchronousPhase",
+    "FiniteBranchCapture",
+    "OneSparseOrbit",
+    "RoundedOrbitCapture",
+    "SparseNativeTargets",
+    "InverseSuffixTransport",
+    "NativeMinimumClock",
+    "PairedClock",
+    "SignedReturnRouter",
+    "PrefixCarryClosure",
+    "ClockCarryEquivalence",
+    "CrossGrade",
+    "JointTargets",
+    "BoundaryRanks",
+    "OrderedMismatchWindows",
+    "EventFactorRank",
+    "ReferenceDivisibility",
+    "RotationOccupation",
+    "TwoGradePairOrder",
+    "ResidueFiberOrder",
+    "IntegerMinorConcentration",
+    "FullDenominatorPairZero",
+    "NativeTubeZero",
+    "PooledMultiplicityCapacity",
+    "RotationRecurrenceRank",
+    "GuardedTernaryTube"
+  ],
+  "modules": [
+    {
+      "module": "AffineOrbit",
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "source_sha256": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+      "exit_code": 0,
+      "seconds": 4.287,
+      "public_roots": [
+        "Collatz.PoweredAffine.step_positive",
+        "Collatz.PoweredAffine.orbit_positive",
+        "Collatz.PoweredAffine.even_step",
+        "Collatz.PoweredAffine.odd_step",
+        "Collatz.PoweredAffine.letter_actual",
+        "Collatz.PoweredAffine.evalWord_actual",
+        "Collatz.PoweredAffine.evalWord_append",
+        "Collatz.PoweredAffine.word_affine",
+        "Collatz.PoweredAffine.actual_word_affine",
+        "Collatz.PoweredAffine.word_centered",
+        "Collatz.PoweredAffine.repeated_centered",
+        "Collatz.PoweredAffine.center_telescope",
+        "Collatz.PoweredAffine.reference_telescope"
+      ],
+      "mathematical_scope": "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."
+    },
+    {
+      "module": "TernaryLanding",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/TernaryLanding.lean",
+      "source_sha256": "f495ac18824742c64bd0d073beacdc16b08480fbb9f6c0ebf530e1ebe40529d9",
+      "exit_code": 0,
+      "seconds": 2.41,
+      "public_roots": [
+        "Collatz.TernaryLanding.consumed_grade",
+        "Collatz.TernaryLanding.prefix_carry",
+        "Collatz.TernaryLanding.exists_landing",
+        "Collatz.TernaryLanding.positive_level_unit",
+        "Collatz.TernaryLanding.rational_value",
+        "Collatz.TernaryLanding.dyadic_translation"
+      ],
+      "mathematical_scope": "Actual odd-denominator numerator recursion consumes exactly the odd grade, has the full native prefix carry, reaches displayed ternary height zero for positive starts, and preserves ternary units at positive levels. Its rational word value and complete dyadic numerator translation are proved. For pure-three unit sources this supplies first integer landing semantics; all quantitative landing and probability bounds remain written."
+    },
+    {
+      "module": "MarkedLandingWord",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/MarkedLandingWord.lean",
+      "source_sha256": "bbbb5c87640e12dc0f91b7d9add23df2b7c4ad82008cccfa817d2a98323c8f93",
+      "exit_code": 0,
+      "seconds": 2.387,
+      "public_roots": [
+        "Collatz.MarkedLandingWord.physical_of_carry",
+        "Collatz.MarkedLandingWord.last_odd_carry",
+        "Collatz.MarkedLandingWord.first_mark_iff"
+      ],
+      "mathematical_scope": "The exact carry equation is sufficient for every actual positive-level parity departure; appending a last odd departure has the stated carry; a prescribed last-odd word has a positive ternary-unit first preimage exactly when the target residue is eligible and exceeds the zero-source affine endpoint. Quantitative real/dyadic routing and reciprocal renewal laws remain written."
+    },
+    {
+      "module": "AdjacentWordClosure",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/AdjacentWordClosure.lean",
+      "source_sha256": "af23e23b6969b76b1447c2d98007e02e718183e744395ca8bb16bb73b04dad9a",
+      "exit_code": 0,
+      "seconds": 3.343,
+      "public_roots": [
+        "Collatz.AdjacentWordClosure.realizes_iff_dvd",
+        "Collatz.AdjacentWordClosure.progression_realizes",
+        "Collatz.AdjacentWordClosure.adjacent_replay",
+        "Collatz.AdjacentWordClosure.ordinary_lifts_arbitrarily_large"
+      ],
+      "mathematical_scope": "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."
+    },
+    {
+      "module": "ConditionalParitySuffix",
+      "source": "research/astra-critical-rigidity-20261128/literature/ConditionalParitySuffix.lean",
+      "source_sha256": "b0e142f600be944cf7dd26a075bc8421aba485c3f995827f79b2c13ca1d4821b",
+      "exit_code": 0,
+      "seconds": 1.746,
+      "public_roots": [
+        "Collatz.ConditionalParitySuffix.unique_progression_word",
+        "Collatz.ConditionalParitySuffix.translate_word_endpoint",
+        "Collatz.ConditionalParitySuffix.unique_multiplier_suffix"
+      ],
+      "mathematical_scope": "Every odd-step progression has precisely one parameter residue realizing a supplied ordinary parity word; a full modulus shift preserves the actual prefix and translates its endpoint; conditional on an odd input and a realized multiplier prefix, exactly one coefficient residue realizes each prescribed physical suffix. Quenched coefficient selection, Brownian release laws and population limits remain written."
+    },
+    {
+      "module": "SynchronousPhase",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SynchronousPhase.lean",
+      "source_sha256": "a3b0d52ffec50ce4455e840f61fb030bd377f558764d3b83820b97c455aec2b1",
+      "exit_code": 0,
+      "seconds": 1.825,
+      "public_roots": [
+        "Collatz.SynchronousPhase.phase_eq_iff",
+        "Collatz.SynchronousPhase.shift_phase",
+        "Collatz.SynchronousPhase.inverse_shift_phase",
+        "Collatz.SynchronousPhase.odd_triple_phase",
+        "Collatz.SynchronousPhase.phase_return_iff",
+        "Collatz.SynchronousPhase.family_meeting_iff",
+        "Collatz.SynchronousPhase.equal_on_periodic_locus",
+        "Collatz.SynchronousPhase.same_future_entry",
+        "Collatz.SynchronousPhase.collision_at_clock_iff"
+      ],
+      "mathematical_scope": "Actual same-date meeting on positive integers is an equivalence; shortcut and doubling induce an invertible quotient shift; phase return is equivalent to a genuine periodic tail; a finite equal-phase family has one common actual date. On the periodic locus phase equality is physical equality, and any off-locus collision forces the exact same later first-entry date. The quotient shift construction is additionally audited but is not counted as another theorem root. All density, Gaussian and limiting collision criteria remain written."
+    },
+    {
+      "module": "FiniteBranchCapture",
+      "source": "research/astra-critical-rigidity-20261128/literature/FiniteBranchCapture.lean",
+      "source_sha256": "00dd01f7cf1497b1bee46a9d7289ab5d7224bd4d2ad9c0786a4309a4a29c0b65",
+      "exit_code": 0,
+      "seconds": 1.472,
+      "public_roots": [
+        "Collatz.FiniteBranchCapture.attained_minimum",
+        "Collatz.FiniteBranchCapture.minimum_passes_guard",
+        "Collatz.FiniteBranchCapture.first_disagreement_by_minimum",
+        "Collatz.FiniteBranchCapture.first_capture_window"
+      ],
+      "mathematical_scope": "Every actual positive shortcut trajectory attains a global minimum, which passes every finite no-smaller-state guard. Any modified rule changing all guarded vertices has a first physical disagreement by that minimum, with an exactly shared prefix. Explicit local routing and forced-change assumptions give the first designated-set entrance between one date before and three dates after disagreement. The analytic shadowing, phase construction, computability margins and probability laws remain written."
+    },
+    {
+      "module": "OneSparseOrbit",
+      "source": "research/astra-critical-rigidity-20261128/literature/OneSparseOrbit.lean",
+      "source_sha256": "cf33a8e076e51b1a81299e7c6fb3613ff1f6e388153166dbec5de9f17d6e65dd",
+      "exit_code": 0,
+      "seconds": 1.703,
+      "public_roots": [
+        "Collatz.OneSparseOrbit.after_odd_departure",
+        "Collatz.OneSparseOrbit.three_multiple_predecessors",
+        "Collatz.OneSparseOrbit.bounded_spine_step",
+        "Collatz.OneSparseOrbit.modified_spine_orbit",
+        "Collatz.OneSparseOrbit.exact_shared_prefix"
+      ],
+      "mathematical_scope": "After one true odd departure all subsequent states are ternary units; the entire predecessor set of every ternary multiple is its dyadic halving ray. Explicit selected odd multiples grow under an additive change of at most two; the actual modified iteration diverges, and all sources outside selected dyadic rays retain their whole true prefix until the anchor. Density estimates, statistical limits and the conditional unit-change converse remain written."
+    },
+    {
+      "module": "RoundedOrbitCapture",
+      "source": "research/astra-critical-rigidity-20261128/literature/RoundedOrbitCapture.lean",
+      "source_sha256": "cb8479d9fe25984f9f3db9366ac69fd3cebb0c9ac5f26aa85a1651b44c99abb1",
+      "exit_code": 0,
+      "seconds": 1.796,
+      "public_roots": [
+        "Collatz.RoundedOrbitCapture.rounded_arithmetic",
+        "Collatz.RoundedOrbitCapture.rounded_native_error",
+        "Collatz.RoundedOrbitCapture.rounded_odd_injective",
+        "Collatz.RoundedOrbitCapture.rounded_iterate_bounds",
+        "Collatz.RoundedOrbitCapture.inClosure_iff",
+        "Collatz.RoundedOrbitCapture.modified_native_rule",
+        "Collatz.RoundedOrbitCapture.closure_orbit",
+        "Collatz.RoundedOrbitCapture.true_hit_forces_escape"
+      ],
+      "mathematical_scope": "The actual least-odd rounding has error zero or one on every odd departure, is injective there and has exact geometric iterate bounds. A bounded decidable search equals the whole forward closure of Boolean seeds. The constructed map preserves all even edges and every edge through the seed barrier; any genuine hit forces its actual modified trajectory into the growing closure, including earlier capture. Seed sparsity, capture densities and probabilistic comparisons remain written."
+    },
+    {
+      "module": "SparseNativeTargets",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SparseNativeTargets.lean",
+      "source_sha256": "07397517feb684e5730187c31da70679dcac7b5ab91a813fd70bc02d40c580c0",
+      "exit_code": 0,
+      "seconds": 2.241,
+      "public_roots": [
+        "Collatz.SparseNativeTargets.native_balance_iff",
+        "Collatz.SparseNativeTargets.target_exists_iff",
+        "Collatz.SparseNativeTargets.gapWord_counts",
+        "Collatz.SparseNativeTargets.actual_suffix_gap_residue",
+        "Collatz.SparseNativeTargets.finite_visits_le"
+      ],
+      "mathematical_scope": "The native affine balance exactly characterizes actual parity and endpoint; the full ternary divisor and height characterize attainable integer targets. Odd-gap calendars have exact grade, clock and carry, and their suffix fixes the actual target residue independently of all earlier steps. A finite union of genuine visiting sources is bounded by the sum of eligible target-residue counts. Stationary densities, transport and asymptotic sparse-target bounds remain written."
+    },
+    {
+      "module": "InverseSuffixTransport",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/InverseSuffixTransport.lean",
+      "source_sha256": "97a87351a17e900b17d45eb00a42e0f126312dbb4b74728368168637d6073e54",
+      "exit_code": 0,
+      "seconds": 1.562,
+      "public_roots": [
+        "Collatz.InverseSuffixTransport.source_le_dyadic_endpoint",
+        "Collatz.InverseSuffixTransport.prior_target_coast",
+        "Collatz.InverseSuffixTransport.read_incoming_from",
+        "Collatz.InverseSuffixTransport.large_entrance_reads_incoming"
+      ],
+      "mathematical_scope": "An actual source is at most its endpoint times the full dyadic inverse factor. A target below the threshold reached before the first odd entrance lies on its exact halving coast. A sufficiently large genuine odd entrance precedes the entire k-step suffix, and the ordered integer suffix read there equals the original incoming list. Distributional transport, Brownian limits and inverse-density estimates remain written."
+    },
+    {
+      "module": "NativeMinimumClock",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/NativeMinimumClock.lean",
+      "source_sha256": "0616d2dfcbc1aec462d4e619caa2dd8dd22573e38e35e3ab52ab2481c9ddce06",
+      "exit_code": 0,
+      "seconds": 2.066,
+      "public_roots": [
+        "Collatz.NativeMinimumClock.minimumDate_spec",
+        "Collatz.NativeMinimumClock.strict_record_of_firstOddBelow",
+        "Collatz.NativeMinimumClock.minimumDate_at_record",
+        "Collatz.NativeMinimumClock.minimumDate_at_firstOddBelow",
+        "Collatz.NativeMinimumClock.minimumDate_unit_embedding"
+      ],
+      "mathematical_scope": "The least value attained on the entire actual native orbit and its first attaining date are defined by two Nat.find constructions, without assumed convergence. Every genuine first odd entrance is a strict native record; the complete first-minimum clock adds exactly across every record and every first odd gate. For odd inputs with a later minimum, the actual 4*x+1 unit embedding adds exactly two dates. Uniform predecessor populations, moment bounds and all moderate-deviation statements remain written."
+    },
+    {
+      "module": "PairedClock",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean",
+      "source_sha256": "3efb5ce8f4571bbc9497558a381e46053741310316ef8a53f8b2cff695fea0d3",
+      "exit_code": 0,
+      "seconds": 3.813,
+      "public_roots": [
+        "Collatz.PairedClock.affine",
+        "Collatz.PairedClock.discrepancy_bound",
+        "Collatz.PairedClock.discrepancy_positive",
+        "Collatz.PairedClock.even_discrepancy",
+        "Collatz.PairedClock.unmatched_ternary_power"
+      ],
+      "mathematical_scope": "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification is formalized separately in JointTargets."
+    },
+    {
+      "module": "SignedReturnRouter",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SignedReturnRouter.lean",
+      "source_sha256": "bd44fba71f618516bde1f5950e5709f00173316298c619705ac94a5bdc985512",
+      "exit_code": 0,
+      "seconds": 4.213,
+      "public_roots": [
+        "Collatz.SignedReturnRouter.Route.stay_cost",
+        "Collatz.SignedReturnRouter.Route.then_cost",
+        "Collatz.SignedReturnRouter.Route.swap_cost",
+        "Collatz.SignedReturnRouter.descend_to_translation",
+        "Collatz.SignedReturnRouter.positive_to_one",
+        "Collatz.SignedReturnRouter.signed_to_one",
+        "Collatz.SignedReturnRouter.reset_to_adjacent",
+        "Collatz.SignedReturnRouter.reset_to_reverse"
+      ],
+      "mathematical_scope": "Constructive signed affine calendar routes: descent to a nonzero translation with the exceptional detour, positive contraction, both signs and reset to either adjacent orientation with linear combined-grade bounds. Includes three public cost identities. Physical replay is proved in PrefixCarryClosure."
+    },
+    {
+      "module": "PrefixCarryClosure",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PrefixCarryClosure.lean",
+      "source_sha256": "03af4a074ca77c362123379e0d693cd137c66ec724f33ecbd74e5cca0e4c9ffc",
+      "exit_code": 0,
+      "seconds": 4.844,
+      "public_roots": [
+        "Collatz.PrefixCarryClosure.route_replays",
+        "Collatz.PrefixCarryClosure.complete_adjacent_prefix",
+        "Collatz.PrefixCarryClosure.return_carry",
+        "Collatz.PrefixCarryClosure.close_positive_source_suffix"
+      ],
+      "mathematical_scope": "Integral affine routes force every upper physical parity when the lower word is realized. Every actual nonmerged adjacent prefix with ternary-unit endpoints closes at linear grade cost. Every ordinary odd source/triple suffix yields equal-grade ordered carry words extending its actual calendars after the explicit first-step substitution."
+    },
+    {
+      "module": "ClockCarryEquivalence",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/ClockCarryEquivalence.lean",
+      "source_sha256": "8e221622fbb397223db61be639c3851240899befadc4de3ccadb1181a550b17c",
+      "exit_code": 0,
+      "seconds": 2.587,
+      "public_roots": [
+        "Collatz.ClockCarryEquivalence.carry_to_clock",
+        "Collatz.ClockCarryEquivalence.clock_to_carry",
+        "Collatz.ClockCarryEquivalence.maximum_sandwich",
+        "Collatz.ClockCarryEquivalence.logarithmic_clock_iff_ordered_carry"
+      ],
+      "mathematical_scope": "Connected two-way reduction between actual ordinary unmatched horizons and ordered carry words; existence and the exact sandwich for both finite maxima; equivalence of the global logarithmic clock bound and the bound at each word pair's actual common grade. The truth of the remaining logarithmic arithmetic bound is not assumed or proved."
+    },
+    {
+      "module": "CrossGrade",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/CrossGrade.lean",
+      "source_sha256": "c59823ac72625a8190400af83e0b72fc3bc2c56242110d8a2865f9454fe543be",
+      "exit_code": 0,
+      "seconds": 2.843,
+      "public_roots": [
+        "Collatz.PairedClock.crossCost_add_joint",
+        "Collatz.PairedClock.discrepancy_one_step_charge",
+        "Collatz.PairedClock.unmatched_cross_grade"
+      ],
+      "mathematical_scope": "Actual two-grade exponential native-clock bound, including the exact discount for simultaneous odd departures. The associated logarithmic estimate is a written corollary."
+    },
+    {
+      "module": "JointTargets",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/JointTargets.lean",
+      "source_sha256": "a6d3fe780199fad9a0fc708e3ca72117087724e3e7cb93a9be971e0ad75a8b03",
+      "exit_code": 0,
+      "seconds": 3.37,
+      "public_roots": [
+        "Collatz.PairedClock.orbit_add",
+        "Collatz.PairedClock.grade_add",
+        "Collatz.PairedClock.incomparable_height",
+        "Collatz.PairedClock.unbounded_odd_joint_iff"
+      ],
+      "mathematical_scope": "Full classification of fixed positive targets admitting unbounded odd joint predecessors of uniformly bounded total grade: exactly the forward-comparable ternary-unit pairs. Includes the explicit incomparable-source height bound."
+    },
+    {
+      "module": "BoundaryRanks",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/BoundaryRanks.lean",
+      "source_sha256": "4db55437baac744a29686ef671a6f19ff0807a93f39eba166a14ddfae97cf9b9",
+      "exit_code": 0,
+      "seconds": 3.472,
+      "public_roots": [
+        "Collatz.BoundaryRanks.shared_directions_bound",
+        "Collatz.BoundaryRanks.chronological_rank_identity"
+      ],
+      "mathematical_scope": "Calendar-weighted prefix/suffix identities for actual finite-dimensional submodule ranks with arbitrary endpoint dimensions, and the dimension bound from shared independent directions. The analytic endpoint estimate remains a written proof."
+    },
+    {
+      "module": "OrderedMismatchWindows",
+      "source": "research/astra-critical-rigidity-20261128/cycles/OrderedMismatchWindows.lean",
+      "source_sha256": "d4c904630365bef543766be3871eed3ec409982a80bdbf72eff6b8dde36c96e9",
+      "exit_code": 0,
+      "seconds": 1.357,
+      "public_roots": [
+        "Collatz.OrderedMismatchWindows.totalWindows",
+        "Collatz.OrderedMismatchWindows.shiftedCosts",
+        "Collatz.OrderedMismatchWindows.clusteredWindowCosts"
+      ],
+      "mathematical_scope": "Exact total length of wrapped fixed-budget mismatch windows, permutation of terminal costs, and the summed finite endpoint inequality. No limiting mismatch or denominator theorem is formalized."
+    },
+    {
+      "module": "EventFactorRank",
+      "source": "research/astra-critical-rigidity-20261128/cycles/EventFactorRank.lean",
+      "source_sha256": "51905a9f399041c68bc0feeb46673fb8802b2e5c34863ce6ba91ecd648185fe8",
+      "exit_code": 0,
+      "seconds": 2.145,
+      "public_roots": [
+        "Collatz.EventFactorRank.independent_of_overlap",
+        "Collatz.EventFactorRank.shared_point_gap",
+        "Collatz.EventFactorRank.common_overlap_rank"
+      ],
+      "mathematical_scope": "Independence of nonnegative weighted prime-valuation rows from strict pairwise overlap bounds, the common-point interval gap estimate, and the resulting finite-dimensional rank obstruction. The full Collatz gcd inputs and integrated height estimates remain written proofs."
+    },
+    {
+      "module": "ReferenceDivisibility",
+      "source": "research/astra-critical-rigidity-20261128/formal/ReferenceDivisibility.lean",
+      "source_sha256": "385837f7c37fb899a147511b0475840fdbaa1f2b728c37786707d2e04cb5de84",
+      "exit_code": 0,
+      "seconds": 1.487,
+      "public_roots": [
+        "Collatz.ReferenceDivisibility.two_three_coprime",
+        "Collatz.ReferenceDivisibility.complete_dyadic_divisor",
+        "Collatz.ReferenceDivisibility.nonzero_residual_height",
+        "Collatz.ReferenceDivisibility.reference_integer_law",
+        "Collatz.ReferenceDivisibility.reference_source_divisor",
+        "Collatz.ReferenceDivisibility.reference_source_height"
+      ],
+      "mathematical_scope": "Integer-cleared actual and reference affine laws imply a complete dyadic divisor and its nonzero height cost. No asymptotic height statement or Subspace Theorem is formalized."
+    },
+    {
+      "module": "RotationOccupation",
+      "source": "research/astra-critical-rigidity-20261128/cycles/RotationOccupation.lean",
+      "source_sha256": "f9ba51c24175e4cd53dd7f78fcc7c5c6e2b1e3b6c84d44b9be081ded179f0dc7",
+      "exit_code": 0,
+      "seconds": 1.7,
+      "public_roots": [
+        "Collatz.RotationOccupation.subtractAlong",
+        "Collatz.RotationOccupation.partialLast",
+        "Collatz.RotationOccupation.interiorLattice",
+        "Collatz.RotationOccupation.shellGap",
+        "Collatz.RotationOccupation.fullLengthFloor",
+        "Collatz.RotationOccupation.multiplicityCost"
+      ],
+      "mathematical_scope": "Cleared odd traces, an exact partial unequal final edge, the complete two-sided divisor at an interior date, and elementary spacing/counting kernels. The global rotation-occupation and limiting pressure theorems remain written proofs."
+    },
+    {
+      "module": "TwoGradePairOrder",
+      "source": "research/astra-critical-rigidity-20261128/cycles/TwoGradePairOrder.lean",
+      "source_sha256": "3e39022eedf446f9e62c49771d1ceb3a770695b84a0da8cf94ea53ca07c6f348",
+      "exit_code": 0,
+      "seconds": 13.389,
+      "public_roots": [
+        "Collatz.TwoGradePairOrder.comparison_sign",
+        "Collatz.TwoGradePairOrder.pair_sum_injective"
+      ],
+      "mathematical_scope": "The pair-order and pair-sum injectivity kernel for an integer octave with exact doubling, two-valued affine tags and a transitive physical shift. The cyclic integer sign propagation, weighted identity and Eisenstein separation are proved. Construction of this input structure from an ordinary Collatz cycle remains a written argument."
+    },
+    {
+      "module": "ResidueFiberOrder",
+      "source": "research/astra-critical-rigidity-20261128/cycles/ResidueFiberOrder.lean",
+      "source_sha256": "fe81900e37b03c3ab18a224d72031feb2ffc91f8d090d10bd5365a66b941646f",
+      "exit_code": 0,
+      "seconds": 2.644,
+      "public_roots": [
+        "Collatz.ResidueFiberOrder.residue_order_eq_period"
+      ],
+      "mathematical_scope": "A periodic ordered lift with an equivariant group-valued residue, strict order preservation on each residue fiber and a full cyclic phase has residue multiplier of exactly the full period. The finite-order monotonicity and phase obstruction are proved. The physical dyadic lift construction, inversion count and width-nine sufficient condition remain written arguments."
+    },
+    {
+      "module": "IntegerMinorConcentration",
+      "source": "research/astra-critical-rigidity-20261128/literature/IntegerMinorConcentration.lean",
+      "source_sha256": "453fd107dfd19bbf9975439e4c5e4939e631354efd39b09fa2d59e7f01a1d922",
+      "exit_code": 0,
+      "seconds": 2.453,
+      "public_roots": [
+        "Collatz.IntegerMinorConcentration.modulus_dvd_det_mul_coefficient",
+        "Collatz.IntegerMinorConcentration.abs_det_le_column_product",
+        "Collatz.IntegerMinorConcentration.det_eq_zero_of_large_row_modulus"
+      ],
+      "mathematical_scope": "An exact integer row congruence implies divisibility of the determinant times every coefficient; a columnwise Leibniz bound and a nonzero coefficient force a minor to vanish below its modulus. Coefficient heights are unrestricted. The physical packet selection, Cramer basis step, valuation-level counting and effective asymptotic landing bounds remain written."
+    },
+    {
+      "module": "FullDenominatorPairZero",
+      "source": "research/astra-critical-rigidity-20261128/cycles/FullDenominatorPairZero.lean",
+      "source_sha256": "4b1714b691ef6561aa5ddf686d8b7b68ca8e9f8d3a0e983e104d342266c946d9",
+      "exit_code": 0,
+      "seconds": 1.599,
+      "public_roots": [
+        "Collatz.FullDenominatorPairZero.full_denominator_divides_of_zero",
+        "Collatz.FullDenominatorPairZero.one_zero_forces_all_zero"
+      ],
+      "mathematical_scope": "For a scaled integer pair comparison on a transitive native cycle, one zero forces divisibility by the entire denominator coprime to two. Dividing by that denominator yields an integer recurrence with forcing between minus two and two; persistence of a nonzero sign then forces every comparison to be zero. The physical chart and sparse-recurrence exclusion remain written."
+    },
+    {
+      "module": "NativeTubeZero",
+      "source": "research/astra-critical-rigidity-20261128/cycles/NativeTubeZero.lean",
+      "source_sha256": "4e15bcafec9f4e19abbfe2b17894d8dfbe8841e902e30ff0dbe46182787ff34d",
+      "exit_code": 0,
+      "seconds": 1.366,
+      "public_roots": [
+        "Collatz.NativeTubeZero.backward_zero",
+        "Collatz.NativeTubeZero.zero_tube"
+      ],
+      "mathematical_scope": "On a finite native comparison tube scaled by its complete denominator coprime to three, a terminal zero forces every preceding comparison and every integer forcing in [-2,2] to vanish. No cyclic closure, transitivity, spatial ordering or denominator-size premise is used. Construction of the actual binary tube, prime dilation, entropy and asymptotic band-exit applications remain written."
+    },
+    {
+      "module": "PooledMultiplicityCapacity",
+      "source": "research/astra-critical-rigidity-20261128/cycles/PooledMultiplicityCapacity.lean",
+      "source_sha256": "dc43744b585283bccfba33943808945016ca9deb3abee04338fffec193f9a0d2",
+      "exit_code": 0,
+      "seconds": 1.694,
+      "public_roots": [
+        "Collatz.PooledMultiplicityCapacity.padded_binary_capacity"
+      ],
+      "mathematical_scope": "For a literal binary coordinate array separating every pair of h-multisets, k independent multiplicities up to cap can be padded by a reference when k*cap <= h. Their exact finite injection gives (cap+1)^k <= (h+1)^n. The actual cyclic code, pooled active-row count and sharp asymptotic denominator rate remain written."
+    },
+    {
+      "module": "RotationRecurrenceRank",
+      "source": "research/astra-critical-rigidity-20261128/cycles/RotationRecurrenceRank.lean",
+      "source_sha256": "504a6122ad55f00e4c0b9ca001f1ff536ea773d7b6df41281d7c1b396bca3799",
+      "exit_code": 0,
+      "seconds": 1.849,
+      "public_roots": [
+        "Collatz.RotationRecurrenceRank.native_run_lt",
+        "Collatz.RotationRecurrenceRank.native_budget_rank"
+      ],
+      "mathematical_scope": "For the actual dyadic cumulative input and physical affine recurrence, any constant shifted-input ratio run is shorter than a supplied monic recurrence degree. Literal valuation agreement on a supplied circular partition gives p <= u*(d-1). Constructing the physical minimal recurrence and partition, the exact equality family and all denominator asymptotics remain written."
+    },
+    {
+      "module": "GuardedTernaryTube",
+      "source": "research/astra-critical-rigidity-20261128/cycles/GuardedTernaryTube.lean",
+      "source_sha256": "fa43f0135caaf13e9429a5b2696f5e9f47bb13b080c66b2a6cc4f682d5816a86",
+      "exit_code": 0,
+      "seconds": 1.683,
+      "public_roots": [
+        "Collatz.GuardedTernaryTube.homogeneous_guard",
+        "Collatz.GuardedTernaryTube.guarded_backward",
+        "Collatz.GuardedTernaryTube.guarded_zero_tube"
+      ],
+      "mathematical_scope": "Genuine varying dyadic windings accumulate the complete ternary guard divisor. With full denominator coprime to three, one terminal zero forces every comparison and forcing to vanish when nonzero forcings have g preceding zero dates and absolute value below 3^(g+1). The supplied guard is inside the finite edge interval. Actual chart construction, prime dilation, generalized Vandermonde bounds and residence estimates remain written."
+    }
+  ],
+  "public_roots": 133,
+  "additional_audited_definitions": [
+    "Collatz.SynchronousPhase.shift"
+  ],
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 134,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T07:42:23.342476+00:00",
+  "seconds": 88.733
+}

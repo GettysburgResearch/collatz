@@ -1,0 +1,31 @@
+QuadraticPi.rationalLogRatio_finite_good (a b : ℚ) (ha : 0 < ↑a) (hb : 0 < ↑b) (hlogb : Real.log ↑b ≠ 0)
+  (hindependent : QuadraticPi.TwoLogCharacterCenters.NoPowerRelation ↑a ↑b) (nu : ℝ) (hnu : 3 < nu) :
+  (QuadraticPi.GoodRationalApproximations (Real.log ↑a / Real.log ↑b) nu).Finite
+'QuadraticPi.rationalLogRatio_finite_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuadraticPi.rationalLogRatio_irrationalityExponent_bounds (a b : ℚ) (ha : 0 < ↑a) (hb : 0 < ↑b)
+  (hlogb : Real.log ↑b ≠ 0) (hindependent : QuadraticPi.TwoLogCharacterCenters.NoPowerRelation ↑a ↑b) :
+  2 ≤ QuadraticPi.irrationalityExponent (Real.log ↑a / Real.log ↑b) ∧
+    QuadraticPi.irrationalityExponent (Real.log ↑a / Real.log ↑b) ≤ 3
+'QuadraticPi.rationalLogRatio_irrationalityExponent_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuadraticPi.log_two_div_log_three_irrationalityExponent_bounds :
+  2 ≤ QuadraticPi.irrationalityExponent (Real.log 2 / Real.log 3) ∧
+    QuadraticPi.irrationalityExponent (Real.log 2 / Real.log 3) ≤ 3
+'QuadraticPi.log_two_div_log_three_irrationalityExponent_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuadraticPi.rationalTwoLog_linearForm_lowerBound (a b : ℚ) (ha : 0 < ↑a) (hb : 0 < ↑b) (hlogb : Real.log ↑b ≠ 0)
+  (hindependent : QuadraticPi.TwoLogCharacterCenters.NoPowerRelation ↑a ↑b) (epsilon : ℝ) (hepsilon : 0 < epsilon) :
+  ∃ C,
+    0 < C ∧
+      ∀ (p q : ℤ), (p, q) ≠ (0, 0) → C * max 1 (max |↑p| |↑q|) ^ (-2 - epsilon) ≤ |↑p * Real.log ↑a + ↑q * Real.log ↑b|
+'QuadraticPi.rationalTwoLog_linearForm_lowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Collatz.ChudnovskyLog32.exponent_bounds :
+  2 ≤ QuadraticPi.irrationalityExponent (Real.log 3 / Real.log 2) ∧
+    QuadraticPi.irrationalityExponent (Real.log 3 / Real.log 2) ≤ 3
+'Collatz.ChudnovskyLog32.exponent_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Collatz.ChudnovskyLog32.finite_good (ν : ℝ) (hν : 3 < ν) :
+  (QuadraticPi.GoodRationalApproximations (Real.log 3 / Real.log 2) ν).Finite
+'Collatz.ChudnovskyLog32.finite_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+Collatz.ChudnovskyLog32.uniform_linear_form (ε : ℝ) (hε : 0 < ε) :
+  ∃ C, 0 < C ∧ ∀ (p q : ℤ), (p, q) ≠ (0, 0) → C * max 1 (max |↑p| |↑q|) ^ (-2 - ε) ≤ |↑p * Real.log 3 + ↑q * Real.log 2|
+'Collatz.ChudnovskyLog32.uniform_linear_form' depends on axioms: [propext, Classical.choice, Quot.sound]

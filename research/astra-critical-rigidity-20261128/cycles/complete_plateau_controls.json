@@ -1,0 +1,15 @@
+{
+  "native": {
+    "equal_cutoff_steps": 498,
+    "max_odd_cutoff": 1023,
+    "origins": 21055,
+    "strict_cutoff_switches": 12
+  },
+  "pressure": {
+    "directed_scale": 1000000000000,
+    "drift_lower": "3227093020657183629047/62867877888000000000000",
+    "pressure_upper": "248780987952353/4096000000000000",
+    "quadrature_bins": 8192,
+    "ratio_upper": "122508662755342816370953/3227093020657183629047"
+  }
+}

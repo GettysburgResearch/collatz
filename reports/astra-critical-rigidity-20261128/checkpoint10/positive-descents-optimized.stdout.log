@@ -1,0 +1,52 @@
+{
+  "bounded_landings": [
+    {
+      "exponent": 1,
+      "largest_time": 2,
+      "tested": 2
+    },
+    {
+      "exponent": 2,
+      "largest_time": 6,
+      "tested": 6
+    },
+    {
+      "exponent": 3,
+      "largest_time": 9,
+      "tested": 18
+    },
+    {
+      "exponent": 4,
+      "largest_time": 15,
+      "tested": 54
+    },
+    {
+      "exponent": 5,
+      "largest_time": 18,
+      "tested": 162
+    },
+    {
+      "exponent": 6,
+      "largest_time": 22,
+      "tested": 486
+    },
+    {
+      "exponent": 7,
+      "largest_time": 27,
+      "tested": 1458
+    }
+  ],
+  "counts": {
+    "distinct_exact_exponents": 7,
+    "landing_one": 902,
+    "lifted_native_steps": 1159,
+    "marked_even": 814,
+    "native_rational_steps": 28442,
+    "native_steps": 31543,
+    "negative_or_balanced": 4084,
+    "ordinary_lifts": 122,
+    "ordinary_sources": 512,
+    "other_landing": 1284,
+    "ternary_blocks": 4687
+  }
+}

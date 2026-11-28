@@ -1,0 +1,50 @@
+{
+  "cohorts": [
+    {
+      "coast": 17,
+      "cohort": 2,
+      "grade": 3,
+      "grid_units": 18,
+      "shared_date": 6,
+      "shared_numerator": 2,
+      "shift_bits": 24
+    },
+    {
+      "coast": 64,
+      "cohort": 9,
+      "grade": 5,
+      "grid_units": 162,
+      "shared_date": 8,
+      "shared_numerator": 5,
+      "shift_bits": 73
+    },
+    {
+      "coast": 121,
+      "cohort": 39,
+      "grade": 7,
+      "grid_units": 1458,
+      "shared_date": 15,
+      "shared_numerator": 2,
+      "shift_bits": 137
+    },
+    {
+      "coast": 257,
+      "cohort": 243,
+      "grade": 9,
+      "grid_units": 13122,
+      "shared_date": 17,
+      "shared_numerator": 5,
+      "shift_bits": 275
+    }
+  ],
+  "counts": {
+    "above_one_segments": 632,
+    "coast_source_dates": 67780,
+    "large_terminal": 170,
+    "late_landing": 1,
+    "lifted_cohort_sources": 293,
+    "residual_dates": 6061,
+    "translated_sources": 430
+  },
+  "scope": "Finite exact native controls; no asymptotic tail tested"
+}

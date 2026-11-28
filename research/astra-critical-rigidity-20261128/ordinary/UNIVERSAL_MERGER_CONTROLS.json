@@ -1,0 +1,220 @@
+{
+  "words": 2002,
+  "residues": 19683,
+  "missing": {
+    "38739": [
+      626,
+      19057
+    ],
+    "38740": []
+  },
+  "base_paths": [
+    "D",
+    "UDOODE",
+    "UDOODEO",
+    "UDOOD",
+    "UUUDOOEODDDE",
+    "UDOODO",
+    "UDOODOOUD",
+    "UUUDOOODDDE",
+    "UDOODOO",
+    "UUUDOOEODDD",
+    "UUDUUODUDODOODEODE"
+  ],
+  "one_odd_cycles": [
+    {
+      "center": [
+        1,
+        5
+      ],
+      "level": 4,
+      "entry_clock": 246,
+      "entry_grades": [
+        152,
+        155
+      ],
+      "first_rational_merger": 244,
+      "ordinary_source_bits": 306,
+      "unmerged_ordinary_clock": 306,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        13
+      ],
+      "level": 3,
+      "entry_clock": 283,
+      "entry_grades": [
+        174,
+        176
+      ],
+      "first_rational_merger": 278,
+      "ordinary_source_bits": 363,
+      "unmerged_ordinary_clock": 363,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        29
+      ],
+      "level": 28,
+      "entry_clock": 7010,
+      "entry_grades": [
+        4418,
+        4445
+      ],
+      "first_rational_merger": 7006,
+      "ordinary_source_bits": 7110,
+      "unmerged_ordinary_clock": 7110,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        61
+      ],
+      "level": 10,
+      "entry_clock": 763,
+      "entry_grades": [
+        476,
+        485
+      ],
+      "first_rational_merger": 762,
+      "ordinary_source_bits": 880,
+      "unmerged_ordinary_clock": 883,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        125
+      ],
+      "level": 100,
+      "entry_clock": 16284,
+      "entry_grades": [
+        10268,
+        10367
+      ],
+      "first_rational_merger": 16284,
+      "ordinary_source_bits": 16423,
+      "unmerged_ordinary_clock": 16424,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        253
+      ],
+      "level": 55,
+      "entry_clock": 8468,
+      "entry_grades": [
+        5336,
+        5390
+      ],
+      "first_rational_merger": 8465,
+      "ordinary_source_bits": 8628,
+      "unmerged_ordinary_clock": 8628,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        509
+      ],
+      "level": 508,
+      "entry_clock": 81932,
+      "entry_grades": [
+        51686,
+        52193
+      ],
+      "first_rational_merger": 81930,
+      "ordinary_source_bits": 82112,
+      "unmerged_ordinary_clock": 82112,
+      "combined_future_grade": 40
+    },
+    {
+      "center": [
+        1,
+        1021
+      ],
+      "level": 34,
+      "entry_clock": 4205,
+      "entry_grades": [
+        2645,
+        2678
+      ],
+      "first_rational_merger": 4200,
+      "ordinary_source_bits": 4405,
+      "unmerged_ordinary_clock": 4405,
+      "combined_future_grade": 40
+    }
+  ],
+  "signed_centers": [
+    {
+      "center": [
+        -1,
+        1
+      ],
+      "level": 1,
+      "entry_clock": 27,
+      "entry_grades": [
+        12,
+        12
+      ],
+      "first_rational_merger": 25,
+      "ordinary_source_bits": 148,
+      "unmerged_ordinary_clock": 154,
+      "combined_future_grade": 254
+    },
+    {
+      "center": [
+        -2,
+        5
+      ],
+      "level": 4,
+      "entry_clock": 420,
+      "entry_grades": [
+        259,
+        262
+      ],
+      "first_rational_merger": 416,
+      "ordinary_source_bits": 545,
+      "unmerged_ordinary_clock": 547,
+      "combined_future_grade": 86
+    },
+    {
+      "center": [
+        23,
+        7
+      ],
+      "level": 6,
+      "entry_clock": 463,
+      "entry_grades": [
+        291,
+        296
+      ],
+      "first_rational_merger": 461,
+      "ordinary_source_bits": 589,
+      "unmerged_ordinary_clock": 590,
+      "combined_future_grade": 126
+    },
+    {
+      "center": [
+        5,
+        1
+      ],
+      "level": 3,
+      "entry_clock": 441,
+      "entry_grades": [
+        278,
+        280
+      ],
+      "first_rational_merger": 437,
+      "ordinary_source_bits": 567,
+      "unmerged_ordinary_clock": 568,
+      "combined_future_grade": 126
+    }
+  ]
+}

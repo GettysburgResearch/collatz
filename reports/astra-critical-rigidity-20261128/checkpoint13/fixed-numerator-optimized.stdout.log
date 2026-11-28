@@ -1,0 +1,107 @@
+{
+  "counts": {
+    "even_insertions": 3989,
+    "full_grid_sources": 19682,
+    "full_landing_words": 872,
+    "native_dates": 7913,
+    "negative_center": 653,
+    "negative_shifted_entries": 761,
+    "nonconstant_repeated_pieces": 185,
+    "positive_center": 995,
+    "powered_pieces": 1659,
+    "prescribed_fast_cylinders": 2001,
+    "zero_center": 11
+  },
+  "fast_sources": [
+    {
+      "minimum_by_excess": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8,
+        "4": 16
+      },
+      "n": 1
+    },
+    {
+      "minimum_by_excess": {
+        "0": 7,
+        "1": 1,
+        "2": 2,
+        "3": 4,
+        "4": 8
+      },
+      "n": 2
+    },
+    {
+      "minimum_by_excess": {
+        "0": 5,
+        "1": 10,
+        "2": 1,
+        "3": 2,
+        "4": 4
+      },
+      "n": 3
+    },
+    {
+      "minimum_by_excess": {
+        "0": 31,
+        "1": 11,
+        "2": 13,
+        "3": 7,
+        "4": 14
+      },
+      "n": 4
+    },
+    {
+      "minimum_by_excess": {
+        "0": 13,
+        "1": 5,
+        "2": 10,
+        "3": 7,
+        "4": 1
+      },
+      "n": 5
+    },
+    {
+      "minimum_by_excess": {
+        "0": 103,
+        "1": 23,
+        "2": 7,
+        "3": 14,
+        "4": 19
+      },
+      "n": 6
+    },
+    {
+      "minimum_by_excess": {
+        "0": 245,
+        "1": 85,
+        "2": 17,
+        "3": 11,
+        "4": 22
+      },
+      "n": 7
+    },
+    {
+      "minimum_by_excess": {
+        "0": 95,
+        "1": 31,
+        "2": 7,
+        "3": 14,
+        "4": 23
+      },
+      "n": 8
+    },
+    {
+      "minimum_by_excess": {
+        "0": 797,
+        "1": 29,
+        "2": 58,
+        "3": 91,
+        "4": 25
+      },
+      "n": 9
+    }
+  ]
+}

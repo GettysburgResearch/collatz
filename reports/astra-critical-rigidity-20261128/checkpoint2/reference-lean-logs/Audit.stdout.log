@@ -1,0 +1,6 @@
+'Collatz.ReferenceDivisibility.two_three_coprime' depends on axioms: [propext, Quot.sound]
+'Collatz.ReferenceDivisibility.complete_dyadic_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReferenceDivisibility.nonzero_residual_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReferenceDivisibility.reference_integer_law' depends on axioms: [propext, Quot.sound]
+'Collatz.ReferenceDivisibility.reference_source_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ReferenceDivisibility.reference_source_height' depends on axioms: [propext, Classical.choice, Quot.sound]

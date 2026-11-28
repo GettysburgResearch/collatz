@@ -1,0 +1,102 @@
+{
+  "November_scope": "Archive content and recorded author axioms only. The independent kernel run is the October theorem.",
+  "author_modules_with_nonempty_stdout_stderr": 23,
+  "author_source_manifest_sha256": "0ae40e19bcada8f1dbd3dfb35294e1bd25e5fe430dc56e9e160866c9a47d4aa2",
+  "axioms_for_each_of_seven_roots": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiled_author_roots": [
+    "QuadraticPi.rationalLogRatio_finite_good",
+    "QuadraticPi.rationalLogRatio_irrationalityExponent_bounds",
+    "QuadraticPi.log_two_div_log_three_irrationalityExponent_bounds",
+    "QuadraticPi.rationalTwoLog_linearForm_lowerBound"
+  ],
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "external_dependencies": "Exact Lake manifest, two independently located Git dependency trees checked against each revision. Existing external build objects supplemented from the official Mathlib cache. No OAI or QuadraticPi namespace in the external cache.",
+  "external_dependency_commits": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "failed_attempt_resolution": "One initial compile of CollisionCombinatorics encountered an incomplete external Mathlib cache. The cache was supplemented at the original pin and the unchanged source compiled successfully. Its successful source/object/log digests are in the ledger.",
+  "full_module_ledger_gzip_sha256": "a3b0f70d8de17e1dae98ec18a2c664e2bcd9ac0c3d1769509d9ddb7a66f900d0",
+  "full_module_ledger_uncompressed_sha256": "e27127bcdfd0fca577a3ef9cf821f4a112794980ad2a9e8c7bb84920e4d99c47",
+  "local_specialization_roots": [
+    "Collatz.ChudnovskyLog32.exponent_bounds",
+    "Collatz.ChudnovskyLog32.finite_good",
+    "Collatz.ChudnovskyLog32.uniform_linear_form"
+  ],
+  "maximum_concurrent_compilers": 2,
+  "module_count": 1002,
+  "original_lake_manifest_sha256": "6a7d50a074074a6d8ac82a86b37abfc853f10e4328b36c2550a007a8bfacf147",
+  "pinned_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "project_compile_argv": [
+    "lean",
+    "-j",
+    "2",
+    "[-DautoImplicit=false for OAI.*]",
+    "-o",
+    "<empty author object root>/<module-path>.olean",
+    "<module-path>.lean"
+  ],
+  "project_compile_lean_path": [
+    "<author object root>",
+    "<external cache union>"
+  ],
+  "project_compile_working_directory": "Extracted October archive anc/lean",
+  "proof_source": "arXiv:2610.28079v1",
+  "rebuilt_project_modules": {
+    "OAI": 840,
+    "QuadraticPi": 162
+  },
+  "retained_failed_attempts": [
+    {
+      "exit": 1,
+      "log_sha256": "4f8c221fa7b6e48e9231ec094fa7ab686040b541dfc091f8a2d3fef464aefae4",
+      "module": "OAI.NumberTheory.PiExponent.Analysis.CollisionCombinatorics"
+    }
+  ],
+  "scope": "Fresh original author project closure and specialization; pinned precompiled external Mathlib/packages and Lean core.",
+  "separate_reimport_argv": [
+    "lean",
+    "-DwarningAsError=true",
+    "-j",
+    "2",
+    "PublicEndpointAudit.lean"
+  ],
+  "separate_reimport_audit_source_sha256": "b7253c85f53015f50daa18b769035238ffa79953445d3baae795512e3b8c24dc",
+  "separate_reimport_audit_stdout_sha256": "7074263d42a7ebcb27e10433fd9c299a448e64e33abc6fbd8099ff84bab15d3c",
+  "source_archive_sha256": "2b37bfa6f04a1316eead45f1b6ba2ad660eef6a02f00b31476d603a7e55de69e",
+  "successful_module_scheduling": {
+    "bounded-dag-2": 866,
+    "sequential": 136
+  },
+  "supplementary_compile_argv": [
+    "lean",
+    "-DwarningAsError=true",
+    "-j",
+    "2",
+    "-o",
+    "ChudnovskyLog32.olean",
+    "ChudnovskyLog32.lean"
+  ],
+  "supplementary_lean_path": [
+    "<fresh wrapper object directory>",
+    "<author object root>",
+    "<external cache union>"
+  ],
+  "warning_handling": "Unchanged author-source options; no sorry warning in any successful author compile. Local wrapper and separate import use warnings as errors.",
+  "wrapper_compiler_stdout_sha256": "41f85a21db6194451afef0b8730d358a2a826cc8ac8fc81491deedc942e576b8",
+  "wrapper_olean_sha256": "e743a115c1357e0740b8bf7f50690b96dfe8c25ac3334fee86b6c9d2e02607aa",
+  "wrapper_schedule": "Separate processes after all 1,002 modules passed. Each project object was retained across scheduler pauses only after the release-source and prior build object digests matched.",
+  "wrapper_source_sha256": "14b6027fabae574382cd1dd7070374c2c442d3f9a7d8c35eaf09da75ae107730"
+}

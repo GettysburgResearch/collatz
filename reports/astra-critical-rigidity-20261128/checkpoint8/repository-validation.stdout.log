@@ -1,0 +1,14 @@
+CHECKOUT {"commit": "10af4870f7bac5c2b09092dd359033e2f9165383", "tracked_files": 685, "tree": "a8f732119b9f48c1cff23b0fbe94affa61e7364a"}
+RUN -X utf8 -B tools/check_integration_state.py
+OK: durable front door and lifecycle practice; 8 integrated records (6 verified local proofs, 1 accepted refutation, 1 source-qualified periodic synthesis), 3 roadmap records, 13 reviewed research families, 314 curated local links, frozen 45/42 PR snapshot preserved.
+RUN -X utf8 -B tools/check_review_integration.py
+OK: 4 qualified assemblies, 9 namespaces, 14 exact blob pins, 8 exact subtree pins, 374 local links, 2 optimized guards; no mathematical verification
+RUN -X utf8 -B tools/check_review_integration.py --self-test
+SELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed
+RUN -X utf8 -B tools/test_integrity_portability.py
+PASS: 11 real-Git mode/content/coverage controls; Windows metadata selection simulated on non-Windows; no complete repository scan
+RUN -X utf8 -B reports/prepublic-2026-09-05/integration-d/check_followup.py --self-test
+PASS scoped D follow-up: 7 active files / 7 exact archived originals / 8 dispositions
+{"overlap_band_cases": 64, "quotient_cases": 81, "scope": "finite edge cases only; not universal Collatz proof checking", "signed_residues": 1584, "strict_strip_counterexamples": 2}
+Invalid scoped fixtures rejected: 8
+PASS checkout validation; not mathematical verification

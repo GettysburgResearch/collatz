@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/literature/check_quantitative_reference.py",
+  "source_sha256": "62690640c391401e05216a77ad473824b0d537093048e36bb3677ba0ac4162f7",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.316
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.394
+    }
+  ],
+  "finite_coverage": {
+    "all_ordinary_boundaries_above_dominance_threshold": 397,
+    "claim": "finite normalization and height identities only",
+    "common_reference_scales_divisible_by_six": 450,
+    "deleted_nonzero_coordinates_in_proper_zero_subsums": 440,
+    "nontrivial_prime_to_six_primitive_gcd": 304,
+    "ordinary_packets": 560,
+    "positive_rational_packets": 168,
+    "rational_packets_with_reduced_denominator_loss": 96
+  },
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 21,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint21/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/MINIMAL_RECURRENCE_DENOMINATOR.md": "f228c8c0f377b049c6750f094855f0b41fd1c724b5ac9a38cb8d430dd481020b",
+    "research/astra-critical-rigidity-20261128/cycles/NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+    "research/astra-critical-rigidity-20261128/cycles/SPARSE_PHYSICAL_INVERSIONS.md": "9b6a690010f76a4d4e487585306214dbabd98b947a896dffa0bf6c5b89b5fa47",
+    "research/astra-critical-rigidity-20261128/cycles/SYNCHRONIZED_NEARCRITICAL_SPECTRA.md": "29eeb3e05c3a23310b7cbae1e368a0e122fcec93442b54bb9495dc0822e4639f",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90",
+    "research/astra-critical-rigidity-20261128/cycles/check_near_octave_cycle_denominators.py": "7ac3c33da8adac7448514627ef39d44e406b47f86d387de8cb7724723882444d",
+    "research/astra-critical-rigidity-20261128/cycles/check_nearcritical_denominator_spectrum.py": "a429f39c495a29c0afdb5cf01f7c0fbcede7ee58eea0fed8eeb390d44d196dd9",
+    "research/astra-critical-rigidity-20261128/cycles/nearcritical_denominator_spectrum_controls.json": "e70b118e94835510c423e1a5572bfe1a75e1b6f547278fb8c93f2c3356f1158a",
+    "research/astra-critical-rigidity-20261128/literature/CHRONOLOGICAL_RECOVERY_CONTROLS.json": "239dc13d69f49beee092e80570eb1bde3dba0916409e576945dfe31b28f29d84",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_LOG_SQUARE_MASKS.md": "10db00ec9f950893d658b4f267a5312f6449bcb126924b7ac3b4454a27f1ba4f",
+    "research/astra-critical-rigidity-20261128/literature/EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+    "research/astra-critical-rigidity-20261128/literature/FIXED_ROOT_MAXIMUM_RECOVERY.md": "034c73c8c86043799ef2cf0f26a8e0ff201c20aaaa6e1f09256d13afca488b2f",
+    "research/astra-critical-rigidity-20261128/literature/MAXIMUM_PREMINIMUM_RECOVERY.md": "769c3747fa9350ec540e9124e7293197bd4f7d2acd6861a617b7ea81d240e30b",
+    "research/astra-critical-rigidity-20261128/literature/ORDINARY_AFFINE_INTERVAL_PROFILE.md": "850472e903b199d307019f17d957b5ef9d140bbc542df062db80bdd86efcb49e",
+    "research/astra-critical-rigidity-20261128/literature/check_chronological_recovery.py": "f504452d3541cf52b34bcf90a294809bc91d3d9e93a657567dcf28c0b272a9ed",
+    "research/astra-critical-rigidity-20261128/ordinary/CAPPED_CLOCK_CONTROLS.json": "4c208025ea737c7832106ce0faa2d162bd2fe5629d6d93b5b08da865f2c7e4f4",
+    "research/astra-critical-rigidity-20261128/ordinary/CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_ROOT_ITERATED_LOGARITHM.md": "0534cacb0d68c6f1af439ad612fbeb835de7f9bcd56911f3635a426f8e657107",
+    "research/astra-critical-rigidity-20261128/ordinary/INVERSE_RAY_CYLINDER_INFORMATION.md": "156b2fc7a7c6ee2346aee54ce7b8b0f0051c89c805716633b95877fd0026c530",
+    "research/astra-critical-rigidity-20261128/ordinary/NATURAL_INVERSE_RAY_EQUIDISTRIBUTION.md": "36d84557bffa6b998697f4a3e17912d36103330a36c9bfd51aef4ad7a30b7398",
+    "research/astra-critical-rigidity-20261128/ordinary/check_capped_clock.py": "29b477fdea8f66d11a9f08ccd8439719519edc5ac595e2edbcd9a1406283c437"
+  },
+  "scope": "Seven centrally reconstructed and twice independently reviewed proposed written notes; three centrally replayed exact finite controls. Functional moderate deviations, sharp inverse iterated logarithms and exact critical sparse capture retain their identified original analytic inputs. The actual nearcritical rational cycle spectrum retains whole denominators and common clocks. No new formal Lean limit is asserted."
+}

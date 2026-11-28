@@ -1,0 +1,333 @@
+{
+  "source": "research/astra-critical-rigidity-20261128/ordinary/check_grade_spectrum.py",
+  "source_sha256": "febf97d7b74462cc43e24d238a7a543e5b52eb664c6cefe36bf2c9a505b4dae0",
+  "normal_and_optimized_equal": true,
+  "seconds": 1.046,
+  "completed_utc": "2026-11-27T23:44:22.118009+00:00",
+  "scope": "Finite exact controls; no asymptotic or universal claim follows from this execution.",
+  "results": {
+    "bounded_physical_comparison": {
+      "source_limit": 4096,
+      "individual_target_source_limit": 12288,
+      "individual_first_grade_comparisons": 98304,
+      "pairs": [
+        {
+          "targets": [
+            1,
+            1
+          ],
+          "full_source_grade_histogram": {
+            "2": 13,
+            "5": 5,
+            "6": 20,
+            "7": 9,
+            "8": 11,
+            "9": 15
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              1,
+              4,
+              6
+            ],
+            "256": [
+              2,
+              5,
+              7
+            ],
+            "1024": [
+              2,
+              5,
+              9
+            ],
+            "2048": [
+              2,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "targets": [
+            1,
+            2
+          ],
+          "full_source_grade_histogram": {
+            "2": 13,
+            "5": 5,
+            "6": 20,
+            "7": 9,
+            "8": 11,
+            "9": 15
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              1,
+              4,
+              6
+            ],
+            "256": [
+              2,
+              5,
+              7
+            ],
+            "1024": [
+              2,
+              5,
+              9
+            ],
+            "2048": [
+              2,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "targets": [
+            8,
+            2
+          ],
+          "full_source_grade_histogram": {
+            "2": 10,
+            "5": 5,
+            "6": 20,
+            "7": 9,
+            "8": 11,
+            "9": 15
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              1,
+              4,
+              6
+            ],
+            "256": [
+              2,
+              5,
+              7
+            ],
+            "1024": [
+              2,
+              5,
+              9
+            ],
+            "2048": [
+              2,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "targets": [
+            5,
+            8
+          ],
+          "full_source_grade_histogram": {
+            "5": 20,
+            "6": 8,
+            "7": 11,
+            "8": 9,
+            "9": 16
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              2,
+              4,
+              7
+            ],
+            "256": [
+              2,
+              4,
+              7
+            ],
+            "1024": [
+              2,
+              4,
+              7
+            ],
+            "2048": [
+              2,
+              4,
+              7
+            ]
+          }
+        },
+        {
+          "targets": [
+            2,
+            5
+          ],
+          "full_source_grade_histogram": {
+            "1": 12,
+            "2": 1,
+            "5": 10,
+            "6": 8,
+            "7": 11,
+            "8": 9,
+            "9": 8
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              2,
+              4,
+              6
+            ],
+            "256": [
+              2,
+              4,
+              6
+            ],
+            "1024": [
+              2,
+              4,
+              6
+            ],
+            "2048": [
+              2,
+              4,
+              6
+            ]
+          }
+        },
+        {
+          "targets": [
+            113,
+            509
+          ],
+          "full_source_grade_histogram": {
+            "1": 6
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              1,
+              1,
+              1
+            ],
+            "256": [
+              1,
+              1,
+              1
+            ],
+            "1024": [
+              1,
+              1,
+              1
+            ],
+            "2048": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "targets": [
+            3,
+            9
+          ],
+          "full_source_grade_histogram": {
+            "0": 11
+          },
+          "octaves_at_budgets_5_7_9": {
+            "64": [
+              1,
+              1,
+              1
+            ],
+            "256": [
+              1,
+              1,
+              1
+            ],
+            "1024": [
+              1,
+              1,
+              1
+            ],
+            "2048": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    },
+    "leading_simplex": [
+      {
+        "common_odd_count": 0,
+        "native_sum_cutoff": 36,
+        "calendar_count": 2,
+        "ratio_to_leading_term": "1"
+      },
+      {
+        "common_odd_count": 0,
+        "native_sum_cutoff": 144,
+        "calendar_count": 8,
+        "ratio_to_leading_term": "1"
+      },
+      {
+        "common_odd_count": 0,
+        "native_sum_cutoff": 576,
+        "calendar_count": 32,
+        "ratio_to_leading_term": "1"
+      },
+      {
+        "common_odd_count": 0,
+        "native_sum_cutoff": 2304,
+        "calendar_count": 128,
+        "ratio_to_leading_term": "1"
+      },
+      {
+        "common_odd_count": 1,
+        "native_sum_cutoff": 36,
+        "calendar_count": 12,
+        "ratio_to_leading_term": "1"
+      },
+      {
+        "common_odd_count": 1,
+        "native_sum_cutoff": 144,
+        "calendar_count": 194,
+        "ratio_to_leading_term": "97/96"
+      },
+      {
+        "common_odd_count": 1,
+        "native_sum_cutoff": 576,
+        "calendar_count": 3082,
+        "ratio_to_leading_term": "1541/1536"
+      },
+      {
+        "common_odd_count": 1,
+        "native_sum_cutoff": 2304,
+        "calendar_count": 49194,
+        "ratio_to_leading_term": "8199/8192"
+      },
+      {
+        "common_odd_count": 2,
+        "native_sum_cutoff": 36,
+        "calendar_count": 50,
+        "ratio_to_leading_term": "25/24"
+      },
+      {
+        "common_odd_count": 2,
+        "native_sum_cutoff": 144,
+        "calendar_count": 3103,
+        "ratio_to_leading_term": "3103/3072"
+      },
+      {
+        "common_odd_count": 2,
+        "native_sum_cutoff": 576,
+        "calendar_count": 197108,
+        "ratio_to_leading_term": "49277/49152"
+      },
+      {
+        "common_odd_count": 2,
+        "native_sum_cutoff": 2304,
+        "calendar_count": 12591083,
+        "ratio_to_leading_term": "12591083/12582912"
+      }
+    ]
+  }
+}

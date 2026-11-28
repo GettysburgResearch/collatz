@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/ordinary/check_open_arcs.py",
+  "source_sha256": "1fff1ad799f41ef8800874d06127ce4f77d7b6abc99d16db329c6009feee3f75",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.623
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.642
+    }
+  ],
+  "finite_coverage": {
+    "different_high_tracks_at_exit": 11562,
+    "different_total_divisions": 970,
+    "first_or_last_scale_decreased": 554,
+    "open_mesh_partitions": 3138,
+    "open_paths": 1046,
+    "same_ordinary_orbit_comparisons": 54,
+    "true_high_prefixes": 53682,
+    "truncated_meeting_controls": 251
+  },
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

@@ -1,0 +1,363 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "finished_utc": "2026-11-28T03:24:48.805368+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_residue_fiber_inversions.py": "2bca138b2f868f1fae9ab3f5796f3742802d903fc834bd93620abbe357ad5d95",
+    "research/astra-critical-rigidity-20261128/cycles/RESIDUE_FIBER_INVERSIONS.md": "4abe8b0fad1a6e779c23a79cb85c2c8a83d65072e2ab2c8e0cccb1e35b9c6136",
+    "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.119,
+      "stdout_sha256": "666353e4be0646e9b87e7997b2df62fd7a2c2bb04ab39ef9797afed7fa4d125a",
+      "result": {
+        "exhaustive": {
+          "primitive_cycles": 819,
+          "physical_odd_phases": 3827,
+          "actual_inversions": 0,
+          "clock_gcd_exceeds_one": 210,
+          "unsorted_extra_cycles": 0
+        },
+        "examples": [
+          {
+            "q": 1,
+            "p": 1,
+            "A": 2,
+            "g": 1,
+            "h": 1,
+            "minimum_numerator": 1,
+            "maximum_numerator": 1,
+            "inversions": 0,
+            "sorted_ray_period": 1,
+            "splits": 0,
+            "joins": 0
+          },
+          {
+            "q": 7,
+            "p": 2,
+            "A": 4,
+            "g": 2,
+            "h": 2,
+            "minimum_numerator": 5,
+            "maximum_numerator": 11,
+            "inversions": 0,
+            "sorted_ray_period": 2,
+            "splits": 0,
+            "joins": 0
+          },
+          {
+            "q": 13,
+            "p": 15,
+            "A": 24,
+            "g": 3,
+            "h": 1,
+            "minimum_numerator": 131,
+            "maximum_numerator": 1853,
+            "inversions": 2,
+            "sorted_ray_period": 5,
+            "splits": 2,
+            "joins": 0
+          },
+          {
+            "q": 25,
+            "p": 8,
+            "A": 16,
+            "g": 8,
+            "h": 4,
+            "minimum_numerator": 7,
+            "maximum_numerator": 137,
+            "inversions": 1,
+            "sorted_ray_period": 4,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 41,
+            "p": 8,
+            "A": 20,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 1,
+            "maximum_numerator": 157,
+            "inversions": 1,
+            "sorted_ray_period": 4,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 47,
+            "p": 16,
+            "A": 28,
+            "g": 4,
+            "h": 1,
+            "minimum_numerator": 25,
+            "maximum_numerator": 643,
+            "inversions": 3,
+            "sorted_ray_period": 4,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 55,
+            "p": 4,
+            "A": 12,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 1,
+            "maximum_numerator": 71,
+            "inversions": 1,
+            "sorted_ray_period": 2,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 73,
+            "p": 32,
+            "A": 60,
+            "g": 4,
+            "h": 1,
+            "minimum_numerator": 19,
+            "maximum_numerator": 2105,
+            "inversions": 3,
+            "sorted_ray_period": 8,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 83,
+            "p": 14,
+            "A": 24,
+            "g": 2,
+            "h": 1,
+            "minimum_numerator": 65,
+            "maximum_numerator": 2167,
+            "inversions": 1,
+            "sorted_ray_period": 7,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 91,
+            "p": 24,
+            "A": 48,
+            "g": 24,
+            "h": 6,
+            "minimum_numerator": 1,
+            "maximum_numerator": 1739,
+            "inversions": 3,
+            "sorted_ray_period": 6,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 233,
+            "p": 16,
+            "A": 26,
+            "g": 2,
+            "h": 1,
+            "minimum_numerator": 1015,
+            "maximum_numerator": 11005,
+            "inversions": 1,
+            "sorted_ray_period": 8,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 295,
+            "p": 12,
+            "A": 20,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 737,
+            "maximum_numerator": 7763,
+            "inversions": 1,
+            "sorted_ray_period": 6,
+            "splits": 1,
+            "joins": 0
+          }
+        ]
+      }
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.214,
+      "stdout_sha256": "666353e4be0646e9b87e7997b2df62fd7a2c2bb04ab39ef9797afed7fa4d125a",
+      "result": {
+        "exhaustive": {
+          "primitive_cycles": 819,
+          "physical_odd_phases": 3827,
+          "actual_inversions": 0,
+          "clock_gcd_exceeds_one": 210,
+          "unsorted_extra_cycles": 0
+        },
+        "examples": [
+          {
+            "q": 1,
+            "p": 1,
+            "A": 2,
+            "g": 1,
+            "h": 1,
+            "minimum_numerator": 1,
+            "maximum_numerator": 1,
+            "inversions": 0,
+            "sorted_ray_period": 1,
+            "splits": 0,
+            "joins": 0
+          },
+          {
+            "q": 7,
+            "p": 2,
+            "A": 4,
+            "g": 2,
+            "h": 2,
+            "minimum_numerator": 5,
+            "maximum_numerator": 11,
+            "inversions": 0,
+            "sorted_ray_period": 2,
+            "splits": 0,
+            "joins": 0
+          },
+          {
+            "q": 13,
+            "p": 15,
+            "A": 24,
+            "g": 3,
+            "h": 1,
+            "minimum_numerator": 131,
+            "maximum_numerator": 1853,
+            "inversions": 2,
+            "sorted_ray_period": 5,
+            "splits": 2,
+            "joins": 0
+          },
+          {
+            "q": 25,
+            "p": 8,
+            "A": 16,
+            "g": 8,
+            "h": 4,
+            "minimum_numerator": 7,
+            "maximum_numerator": 137,
+            "inversions": 1,
+            "sorted_ray_period": 4,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 41,
+            "p": 8,
+            "A": 20,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 1,
+            "maximum_numerator": 157,
+            "inversions": 1,
+            "sorted_ray_period": 4,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 47,
+            "p": 16,
+            "A": 28,
+            "g": 4,
+            "h": 1,
+            "minimum_numerator": 25,
+            "maximum_numerator": 643,
+            "inversions": 3,
+            "sorted_ray_period": 4,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 55,
+            "p": 4,
+            "A": 12,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 1,
+            "maximum_numerator": 71,
+            "inversions": 1,
+            "sorted_ray_period": 2,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 73,
+            "p": 32,
+            "A": 60,
+            "g": 4,
+            "h": 1,
+            "minimum_numerator": 19,
+            "maximum_numerator": 2105,
+            "inversions": 3,
+            "sorted_ray_period": 8,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 83,
+            "p": 14,
+            "A": 24,
+            "g": 2,
+            "h": 1,
+            "minimum_numerator": 65,
+            "maximum_numerator": 2167,
+            "inversions": 1,
+            "sorted_ray_period": 7,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 91,
+            "p": 24,
+            "A": 48,
+            "g": 24,
+            "h": 6,
+            "minimum_numerator": 1,
+            "maximum_numerator": 1739,
+            "inversions": 3,
+            "sorted_ray_period": 6,
+            "splits": 3,
+            "joins": 0
+          },
+          {
+            "q": 233,
+            "p": 16,
+            "A": 26,
+            "g": 2,
+            "h": 1,
+            "minimum_numerator": 1015,
+            "maximum_numerator": 11005,
+            "inversions": 1,
+            "sorted_ray_period": 8,
+            "splits": 1,
+            "joins": 0
+          },
+          {
+            "q": 295,
+            "p": 12,
+            "A": 20,
+            "g": 4,
+            "h": 2,
+            "minimum_numerator": 737,
+            "maximum_numerator": 7763,
+            "inversions": 1,
+            "sorted_ray_period": 6,
+            "splits": 1,
+            "joins": 0
+          }
+        ]
+      }
+    }
+  ],
+  "normal_optimized_same": true,
+  "seconds": 0.334,
+  "scope": "Exact finite controls of the formulas and actual calendars named in the coordinating review. No asymptotic onset or external analytic theorem is certified by these computations."
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:43:43.987727+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "ConditionalParitySuffix",
+    "MarkedLandingWord"
+  ],
+  "compiled": [
+    "AffineOrbit",
+    "TernaryLanding",
+    "MarkedLandingWord",
+    "AdjacentWordClosure",
+    "ConditionalParitySuffix"
+  ],
+  "modules": [
+    {
+      "module": "AffineOrbit",
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "source_sha256": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+      "exit_code": 0,
+      "seconds": 8.018,
+      "public_roots": [
+        "Collatz.PoweredAffine.step_positive",
+        "Collatz.PoweredAffine.orbit_positive",
+        "Collatz.PoweredAffine.even_step",
+        "Collatz.PoweredAffine.odd_step",
+        "Collatz.PoweredAffine.letter_actual",
+        "Collatz.PoweredAffine.evalWord_actual",
+        "Collatz.PoweredAffine.evalWord_append",
+        "Collatz.PoweredAffine.word_affine",
+        "Collatz.PoweredAffine.actual_word_affine",
+        "Collatz.PoweredAffine.word_centered",
+        "Collatz.PoweredAffine.repeated_centered",
+        "Collatz.PoweredAffine.center_telescope",
+        "Collatz.PoweredAffine.reference_telescope"
+      ],
+      "mathematical_scope": "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."
+    },
+    {
+      "module": "TernaryLanding",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/TernaryLanding.lean",
+      "source_sha256": "f495ac18824742c64bd0d073beacdc16b08480fbb9f6c0ebf530e1ebe40529d9",
+      "exit_code": 0,
+      "seconds": 2.321,
+      "public_roots": [
+        "Collatz.TernaryLanding.consumed_grade",
+        "Collatz.TernaryLanding.prefix_carry",
+        "Collatz.TernaryLanding.exists_landing",
+        "Collatz.TernaryLanding.positive_level_unit",
+        "Collatz.TernaryLanding.rational_value",
+        "Collatz.TernaryLanding.dyadic_translation"
+      ],
+      "mathematical_scope": "Actual odd-denominator numerator recursion consumes exactly the odd grade, has the full native prefix carry, reaches displayed ternary height zero for positive starts, and preserves ternary units at positive levels. Its rational word value and complete dyadic numerator translation are proved. For pure-three unit sources this supplies first integer landing semantics; all quantitative landing and probability bounds remain written."
+    },
+    {
+      "module": "MarkedLandingWord",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/MarkedLandingWord.lean",
+      "source_sha256": "bbbb5c87640e12dc0f91b7d9add23df2b7c4ad82008cccfa817d2a98323c8f93",
+      "exit_code": 0,
+      "seconds": 2.363,
+      "public_roots": [
+        "Collatz.MarkedLandingWord.physical_of_carry",
+        "Collatz.MarkedLandingWord.last_odd_carry",
+        "Collatz.MarkedLandingWord.first_mark_iff"
+      ],
+      "mathematical_scope": "The exact carry equation is sufficient for every actual positive-level parity departure; appending a last odd departure has the stated carry; a prescribed last-odd word has a positive ternary-unit first preimage exactly when the target residue is eligible and exceeds the zero-source affine endpoint. Quantitative real/dyadic routing and reciprocal renewal laws remain written."
+    },
+    {
+      "module": "AdjacentWordClosure",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/AdjacentWordClosure.lean",
+      "source_sha256": "af23e23b6969b76b1447c2d98007e02e718183e744395ca8bb16bb73b04dad9a",
+      "exit_code": 0,
+      "seconds": 3.327,
+      "public_roots": [
+        "Collatz.AdjacentWordClosure.realizes_iff_dvd",
+        "Collatz.AdjacentWordClosure.progression_realizes",
+        "Collatz.AdjacentWordClosure.adjacent_replay",
+        "Collatz.AdjacentWordClosure.ordinary_lifts_arbitrarily_large"
+      ],
+      "mathematical_scope": "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."
+    },
+    {
+      "module": "ConditionalParitySuffix",
+      "source": "research/astra-critical-rigidity-20261128/literature/ConditionalParitySuffix.lean",
+      "source_sha256": "b0e142f600be944cf7dd26a075bc8421aba485c3f995827f79b2c13ca1d4821b",
+      "exit_code": 0,
+      "seconds": 1.693,
+      "public_roots": [
+        "Collatz.ConditionalParitySuffix.unique_progression_word",
+        "Collatz.ConditionalParitySuffix.translate_word_endpoint",
+        "Collatz.ConditionalParitySuffix.unique_multiplier_suffix"
+      ],
+      "mathematical_scope": "Every odd-step progression has precisely one parameter residue realizing a supplied ordinary parity word; a full modulus shift preserves the actual prefix and translates its endpoint; conditional on an odd input and a realized multiplier prefix, exactly one coefficient residue realizes each prescribed physical suffix. Quenched coefficient selection, Brownian release laws and population limits remain written."
+    }
+  ],
+  "public_roots": 29,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 29,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T05:44:02.838311+00:00",
+  "seconds": 18.85
+}

@@ -1,0 +1,38 @@
+{
+  "convergent_controls": [
+    {
+      "exact_rectangles": 26,
+      "next_q": 53,
+      "q": 41,
+      "rational_approximant_numerator": 65,
+      "sampled_offsets": 9,
+      "unrestricted_time_wrap_failures": 1789,
+      "with_negative_time": 23,
+      "with_repeated_inner_rank": 7
+    },
+    {
+      "exact_rectangles": 52,
+      "next_q": 306,
+      "q": 53,
+      "rational_approximant_numerator": 84,
+      "sampled_offsets": 11,
+      "unrestricted_time_wrap_failures": 3921,
+      "with_negative_time": 52,
+      "with_repeated_inner_rank": 10
+    },
+    {
+      "exact_rectangles": 12462,
+      "next_q": 665,
+      "q": 306,
+      "rational_approximant_numerator": 485,
+      "sampled_offsets": 62,
+      "unrestricted_time_wrap_failures": 0,
+      "with_negative_time": 12242,
+      "with_repeated_inner_rank": 450
+    }
+  ],
+  "ordinary": {
+    "distinct_confined_eight_step_segments": 329,
+    "true_lift_ratios": 2303
+  }
+}

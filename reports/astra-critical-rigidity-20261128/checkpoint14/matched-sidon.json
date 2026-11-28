@@ -1,0 +1,403 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:50:54.877892+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_matched_sidon_codes.py": "d0cff4e760af47a687a5150f78e2d9c78e7128156b4996d2963d197aafccf2d8",
+    "research/astra-critical-rigidity-20261128/cycles/MATCHED_SIDON_CODES.md": "9d4afd308f87ae10bc088270a9d7d52282a06e40c8a7d560aff9b6b434a9c000",
+    "research/astra-critical-rigidity-20261128/cycles/MATCHED_RATIONAL_DENOMINATORS.md": "05ad9f9fb0461fb1e50288155fb8dd71132975257704de8e8ba6f02ab604ed1b"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.046,
+      "stdout_sha256": "5b2feb04a3d6892b5f1f09e2815b8b2a17683e8e1e2238a3e2361048e40adbae",
+      "result": {
+        "codes": [
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 7,
+            "ordered_pairs_across_prefixes": 107
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 7,
+            "ordered_pairs_across_prefixes": 107
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 9,
+            "ordered_pairs_across_prefixes": 145
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 13,
+            "ordered_pairs_across_prefixes": 303
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 13,
+            "ordered_pairs_across_prefixes": 303
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 14,
+            "ordered_pairs_across_prefixes": 324
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 16,
+            "ordered_pairs_across_prefixes": 446
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 16,
+            "ordered_pairs_across_prefixes": 446
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 17,
+            "ordered_pairs_across_prefixes": 482
+          }
+        ],
+        "calendars": [
+          {
+            "P": 41,
+            "B": 65,
+            "interval": [
+              1,
+              15,
+              16
+            ],
+            "rows": 124,
+            "pairs": 36,
+            "singles": 36
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              1,
+              31,
+              32
+            ],
+            "rows": 919,
+            "pairs": 324,
+            "singles": 213
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              9,
+              23,
+              32
+            ],
+            "rows": 919,
+            "pairs": 0,
+            "singles": 399
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              9,
+              91,
+              100
+            ],
+            "rows": 919,
+            "pairs": 216,
+            "singles": 321
+          },
+          {
+            "P": 41,
+            "B": 65,
+            "interval": [
+              20,
+              80,
+              100
+            ],
+            "rows": 124,
+            "pairs": 0,
+            "singles": 72
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.096,
+      "stdout_sha256": "5b2feb04a3d6892b5f1f09e2815b8b2a17683e8e1e2238a3e2361048e40adbae",
+      "result": {
+        "codes": [
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2
+            ],
+            "words": 8,
+            "ordered_pairs_across_prefixes": 106
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 7,
+            "ordered_pairs_across_prefixes": 107
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 7,
+            "ordered_pairs_across_prefixes": 107
+          },
+          {
+            "alphabets": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 9,
+            "ordered_pairs_across_prefixes": 145
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 13,
+            "ordered_pairs_across_prefixes": 303
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 13,
+            "ordered_pairs_across_prefixes": 303
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              3,
+              2
+            ],
+            "words": 14,
+            "ordered_pairs_across_prefixes": 324
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 16,
+            "ordered_pairs_across_prefixes": 446
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 16,
+            "ordered_pairs_across_prefixes": 446
+          },
+          {
+            "alphabets": [
+              3,
+              3,
+              2,
+              2,
+              2
+            ],
+            "words": 17,
+            "ordered_pairs_across_prefixes": 482
+          }
+        ],
+        "calendars": [
+          {
+            "P": 41,
+            "B": 65,
+            "interval": [
+              1,
+              15,
+              16
+            ],
+            "rows": 124,
+            "pairs": 36,
+            "singles": 36
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              1,
+              31,
+              32
+            ],
+            "rows": 919,
+            "pairs": 324,
+            "singles": 213
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              9,
+              23,
+              32
+            ],
+            "rows": 919,
+            "pairs": 0,
+            "singles": 399
+          },
+          {
+            "P": 306,
+            "B": 485,
+            "interval": [
+              9,
+              91,
+              100
+            ],
+            "rows": 919,
+            "pairs": 216,
+            "singles": 321
+          },
+          {
+            "P": 41,
+            "B": 65,
+            "interval": [
+              20,
+              80,
+              100
+            ],
+            "rows": 124,
+            "pairs": 0,
+            "singles": 72
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite mixed-alphabet Sidon codes, exact local component sums, ordered-difference entropy controls and actual native calendars. Infinite rates and rational denominator deductions remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:50:55.019947+00:00"
+}

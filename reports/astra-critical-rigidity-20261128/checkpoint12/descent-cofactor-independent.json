@@ -1,0 +1,46 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:15:22.547399+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_descent_cofactor_crt.py": "11e02194afda8db6d1e9cb7b93d482c1c50f9172425d7486f41b612b1aeac390",
+    "research/astra-critical-rigidity-20261128/literature/DESCENT_COFACTOR_OBSTRUCTION.md": "352470e881c5d7fdc7211f3d08a193b42916c75d012fc55bc9de82419a4e6dce"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.051,
+      "stdout_sha256": "f1b1738d42b05fa361ac3d4ff9b5356f34398faa05f237cc09f9e678438ccc81",
+      "result": {
+        "complete_moving_five_descents": 3,
+        "crt_witnesses": 516,
+        "marked_numerator_tests": 1864,
+        "maximum_source_denominator_bits": 12781,
+        "pure_three_sources": 513,
+        "true_fraction_steps": 5765
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.094,
+      "stdout_sha256": "f1b1738d42b05fa361ac3d4ff9b5356f34398faa05f237cc09f9e678438ccc81",
+      "result": {
+        "complete_moving_five_descents": 3,
+        "crt_witnesses": 516,
+        "marked_numerator_tests": 1864,
+        "maximum_source_denominator_bits": 12781,
+        "pure_three_sources": 513,
+        "true_fraction_steps": 5765
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Separately authored coordinating CRT constructor, exhaustive short parity words and independent Fraction replay of actual positive sources; same written precision cost is retained.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:15:22.693049+00:00"
+}

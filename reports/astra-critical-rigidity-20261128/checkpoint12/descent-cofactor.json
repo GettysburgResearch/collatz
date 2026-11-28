@@ -1,0 +1,46 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:15:22.312951+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_descent_cofactor_obstruction.py": "6a672f43425e6cf24f6452ab7ee504ed2605c16f0bbfef26fcd7c80977481349",
+    "research/astra-critical-rigidity-20261128/literature/DESCENT_COFACTOR_OBSTRUCTION.md": "352470e881c5d7fdc7211f3d08a193b42916c75d012fc55bc9de82419a4e6dce"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.103,
+      "stdout_sha256": "d5519e5e4fa2b24acbc268c4deebfe137f2b7cb7562e921b97ce639bf5ba2974",
+      "result": {
+        "actual_sources": 114,
+        "actual_steps": 11751,
+        "complete_paths": 54,
+        "largest_residual_denominator_bits": 41073,
+        "marked_full_cofactors": 930,
+        "unit_residual_denominator_sources": 60
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.131,
+      "stdout_sha256": "d5519e5e4fa2b24acbc268c4deebfe137f2b7cb7562e921b97ce639bf5ba2974",
+      "result": {
+        "actual_sources": 114,
+        "actual_steps": 11751,
+        "complete_paths": 54,
+        "largest_residual_denominator_bits": 41073,
+        "marked_full_cofactors": 930,
+        "unit_residual_denominator_sources": 60
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact CRT sources, actual native parity and complete reduced denominator throughout all marked cofactor tests. Finite prefix and large residual-denominator examples do not bound the pure-three full landing clock.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:15:22.546826+00:00"
+}

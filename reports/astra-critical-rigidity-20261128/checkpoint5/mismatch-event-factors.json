@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_mismatch_event_factors.py",
+  "sha256": "d1b241ab02bc8a519ab17453477811509702e832b97251565f80c96443174adb",
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.155,
+      "stdout": "{\n  \"filtered_rank_systems\": 12261,\n  \"full_reduced_denominator_rank_bounds\": 172,\n  \"intervals_wrapping_true_cyclic_seam\": 2412,\n  \"ordinary_open_paths\": 10,\n  \"physical_pair_gcd_returns\": 6814,\n  \"positive_rank_zero_controls\": 2469,\n  \"proper_complete_cancellations\": 15,\n  \"rank_one_groups_with_composite_support\": 169,\n  \"systems_attaining_overlap_at_least_two\": 74\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.214,
+      "stdout": "{\n  \"filtered_rank_systems\": 12261,\n  \"full_reduced_denominator_rank_bounds\": 172,\n  \"intervals_wrapping_true_cyclic_seam\": 2412,\n  \"ordinary_open_paths\": 10,\n  \"physical_pair_gcd_returns\": 6814,\n  \"positive_rank_zero_controls\": 2469,\n  \"proper_complete_cancellations\": 15,\n  \"rank_one_groups_with_composite_support\": 169,\n  \"systems_attaining_overlap_at_least_two\": 74\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact finite arithmetic controls, with the universal mathematical argument separately reviewed."
+}

@@ -1,0 +1,16 @@
+{
+  "checked_commit": "57e0f2363f22a5c3cedd7322c2db09926c20d09a",
+  "checked_tree": "4505006c07eaf4f442e766da2958db9b89efd149",
+  "clean_complete_checkout": true,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.779,
+  "completed_utc": "2026-11-28T00:00:38.572564+00:00",
+  "scope": "Repository integrity only. The public commit may have different author metadata but must use this exact validated tree."
+}

@@ -1,0 +1,65 @@
+{
+  "deep_precision_examples": [
+    {
+      "arbitrary_edge_pair_identities": 4624,
+      "binary_precision": 62,
+      "computed_center": "-1/2",
+      "discarded_residue_mod_3": 1,
+      "indices": 135,
+      "oriented_edges": 68,
+      "source_A": "1",
+      "step_D": "2",
+      "surviving_indices": 90
+    },
+    {
+      "arbitrary_edge_pair_identities": 324,
+      "binary_precision": 90,
+      "computed_center": "3/8",
+      "discarded_residue_mod_3": 0,
+      "indices": 147,
+      "oriented_edges": 18,
+      "source_A": "1461501637330902918203684832716283019655932542973",
+      "step_D": "8",
+      "surviving_indices": 98
+    },
+    {
+      "arbitrary_edge_pair_identities": 5184,
+      "binary_precision": 88,
+      "computed_center": "-1/2",
+      "discarded_residue_mod_3": 1,
+      "indices": 143,
+      "oriented_edges": 72,
+      "source_A": "43556142965880123323311949751266331066373",
+      "step_D": "10",
+      "surviving_indices": 95
+    }
+  ],
+  "low_precision_center_count": 541,
+  "sharp_examples": [
+    {
+      "exact_power_pairs": 30,
+      "indices": 60,
+      "largest_independent_set": 40
+    },
+    {
+      "exact_power_pairs": 58,
+      "indices": 121,
+      "largest_independent_set": 81
+    },
+    {
+      "exact_power_pairs": 200,
+      "indices": 399,
+      "largest_independent_set": 266
+    },
+    {
+      "exact_power_pairs": 511,
+      "indices": 1024,
+      "largest_independent_set": 683
+    },
+    {
+      "exact_power_pairs": 5001,
+      "indices": 10001,
+      "largest_independent_set": 6667
+    }
+  ]
+}

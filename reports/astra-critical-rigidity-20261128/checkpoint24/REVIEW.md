@@ -1,0 +1,9 @@
+# Closing source comparison and durable checkpoint receipt
+
+This is a documentation and source-verification checkpoint, following the 23 mathematical and integrated-build checkpoints. It introduces no new mathematical theorem, Lean declaration or empirical claim.
+
+The coordinator read original Weaver Paper191/v1 and v2 Theorems1–2 and Proposition3, its endpoint obstruction and its own comparison with Leen, including v2's explicit statement that its Gaussian rate constant is undetermined. The closing note distinguishes scalar moderate-tail bounds and arbitrary translated-interval uniformity from the present natural-density functional path claim. No priority inference is based on search absence. Leen's October25 version2 assembly was checked in its original TeX at PartI and the closing questions: its fixed-fraction moderate-tail result is scalar and its stated functional result is a Brownian weak limit; the slow-side upper bound remains open there. Wren's original November27 audit was read in full; its explicit unchecked sections prevent its use as a blanket certificate for the analytic inputs. Chudnovsky's original Theorem11.1, formal endpoint paragraph and AppendixA statement correspondence were revisited against the already retained local build record.
+
+The prior checkpoint's clean full-repository validation receipt is now included in the published tree. The final 31-module packet build and its 133 roots, three earlier logarithm specializations and one motif specialization remain unchanged. No extra compile is necessary for these documentation-only changes. Local Markdown destinations and exact source hashes are checked before the usual clean complete-checkout publication gate.
+
+The final PR description records the current final-tree validation independently of this preceding-tree receipt. The original research handoff, formal inventory and all historical proof boundaries remain available.

@@ -1,0 +1,41 @@
+{
+  "scenarios": {
+    "2": {
+      "capture_minus_discrepancy": {
+        "-1": 19,
+        "0": 2,
+        "1": 4075
+      },
+      "exact_pattern_translations": 32640,
+      "ordered_pairs": 9216,
+      "prefixes": 4096,
+      "seam_equalities": 10800,
+      "trace_sha256": "fff8018a53af806ca5194e7d10bc7c26529afe451616938360d785212a1dbcd8"
+    },
+    "3": {
+      "capture_minus_discrepancy": {
+        "-1": 28,
+        "0": 3,
+        "1": 4065
+      },
+      "exact_pattern_translations": 91392,
+      "ordered_pairs": 9216,
+      "prefixes": 4096,
+      "seam_equalities": 31752,
+      "trace_sha256": "3ffd82042f967ecec9c1fae2aeb05cf42a00c89fab93dc4c4cebc96b84bab1d4"
+    },
+    "4": {
+      "capture_minus_discrepancy": {
+        "-1": 36,
+        "0": 4,
+        "1": 4056
+      },
+      "exact_pattern_translations": 195840,
+      "ordered_pairs": 9216,
+      "prefixes": 4096,
+      "seam_equalities": 71280,
+      "trace_sha256": "8bf221f3103bf88474527cf4d7b8ccb24a8e3f940e45ccab820ae5fa8d299e8e"
+    }
+  },
+  "scope": "Finite complete positive paths, local first-drop tests, exact selectors and seam identities. Finite schedules do not verify the asymptotic Fourier selection or Brownian estimate."
+}

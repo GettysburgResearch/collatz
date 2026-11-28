@@ -1,0 +1,61 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:51:46.581861+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_dyadic_multiplier_release.py": "3d52ef6bafca881155f28c691ac60d73842cca5b02064799f17017c2a1f51c90",
+    "research/astra-critical-rigidity-20261128/literature/DYADIC_MULTIPLIER_RELEASE.md": "99fbee6d9d37f66d32272ef9842418b5aac35db95b479320879834590e644ddb",
+    "research/astra-critical-rigidity-20261128/literature/MOVING_MULTIPLIER_PATHS.md": "c2f72b7d6551875ca4bbf3168e3a8876d3ed3b97c7d8e478d0a2d1c9f63b9893",
+    "research/astra-critical-rigidity-20261128/literature/TRANSLATED_MULTIPLIER_POPULATIONS.md": "6609a0f2ae36180cea8c6849c48d8053f0c86ae374f90f898b17940e6cfb2c9f",
+    "research/astra-critical-rigidity-20261128/literature/ConditionalParitySuffix.lean": "b0e142f600be944cf7dd26a075bc8421aba485c3f995827f79b2c13ca1d4821b"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.206,
+      "stdout_sha256": "ab50a7eb5a0991e17e31d5c70781fb52ef6d8d78a09f8e41da02910f118d038a",
+      "result": {
+        "counts": {
+          "actual_numerical_separations": 4254,
+          "conditional_endpoint_signed_moments": 11860,
+          "conditional_suffix_permutations": 11860,
+          "exact_prefix_checks": 150384,
+          "joint_word_pairs": 150384,
+          "selected_slope_residues": 98,
+          "slope_cylinders": 98
+        },
+        "maximum_word_length": 8,
+        "scope": "Exact finite 2-adic cylinders and positive integer paths; asymptotic laws are written proofs.",
+        "selection_table_sha256": "a0da7c117f99b3958c346c66f562547ff554315b9c23a119863c5e3cb101d0ca"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.304,
+      "stdout_sha256": "ab50a7eb5a0991e17e31d5c70781fb52ef6d8d78a09f8e41da02910f118d038a",
+      "result": {
+        "counts": {
+          "actual_numerical_separations": 4254,
+          "conditional_endpoint_signed_moments": 11860,
+          "conditional_suffix_permutations": 11860,
+          "exact_prefix_checks": 150384,
+          "joint_word_pairs": 150384,
+          "selected_slope_residues": 98,
+          "slope_cylinders": 98
+        },
+        "maximum_word_length": 8,
+        "scope": "Exact finite 2-adic cylinders and positive integer paths; asymptotic laws are written proofs.",
+        "selection_table_sha256": "a0da7c117f99b3958c346c66f562547ff554315b9c23a119863c5e3cb101d0ca"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact finite prefix and conditional suffix permutations, signed bracket means and variances, deterministic quenched residue selection and genuine positive ordinary state separation through the full deadline. Brownian release, exceptional parameter dimension and population convergence remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:51:47.092163+00:00"
+}

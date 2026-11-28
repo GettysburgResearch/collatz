@@ -1,0 +1,40 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T03:22:24.027371+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "ResidueFiberOrder"
+  ],
+  "compiled": [
+    "ResidueFiberOrder"
+  ],
+  "modules": [
+    {
+      "module": "ResidueFiberOrder",
+      "source": "research/astra-critical-rigidity-20261128/cycles/ResidueFiberOrder.lean",
+      "source_sha256": "fe81900e37b03c3ab18a224d72031feb2ffc91f8d090d10bd5365a66b941646f",
+      "exit_code": 0,
+      "seconds": 7.07,
+      "public_roots": [
+        "Collatz.ResidueFiberOrder.residue_order_eq_period"
+      ],
+      "mathematical_scope": "A periodic ordered lift with an equivariant group-valued residue, strict order preservation on each residue fiber and a full cyclic phase has residue multiplier of exactly the full period. The finite-order monotonicity and phase obstruction are proved. The physical dyadic lift construction, inversion count and width-nine sufficient condition remain written arguments."
+    }
+  ],
+  "public_roots": 1,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T03:22:32.569110+00:00",
+  "seconds": 8.542
+}

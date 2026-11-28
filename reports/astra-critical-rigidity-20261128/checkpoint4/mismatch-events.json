@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/cycles/check_mismatch_events.py",
+  "source_sha256": "b56576782cca1200e84aab8f5aee531a0cb2e0fcf97171ad09192dbb2417553e",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.091
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.133
+    }
+  ],
+  "finite_coverage_text": "{\n  \"actual_open_windows\": 16620,\n  \"paired_rotations\": 757,\n  \"primitive_rational_cycles\": 172,\n  \"proper_nontrivial_denominator_cancellations\": 15,\n  \"summed_window_systems\": 4152,\n  \"windows_longer_than_one_lap\": 5836\n}\n",
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

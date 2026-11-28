@@ -1,0 +1,144 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "finished_utc": "2026-11-28T03:34:05.837448+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_reduced_clock_six_sum.py": "05d9708a526eab68ec6b3c062e8ee75e5cc6c1ce2bc0d50ee2ce67197697752a",
+    "research/astra-critical-rigidity-20261128/cycles/REDUCED_CLOCK_SIX_SUMS.md": "4a6d3372c506f5ecd86114630c4fb836bbe6bc91900bb729e43cf520a7c7bef0",
+    "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.129,
+      "stdout_sha256": "58d7a53508cbe3592777017318bf136a3c5a86037399c4aa53541e0080b20767",
+      "result": [
+        {
+          "B": 65,
+          "P": 41,
+          "p": 82,
+          "A": 130,
+          "sheets": 2,
+          "full_denominator_bits": 125,
+          "floor_over_period_millionths": 9391834,
+          "native_inverse_stride": 12,
+          "k": 19,
+          "period_span_in_signed_samples": 30,
+          "exact_interior_starts": 37,
+          "full_period_grid_edge_tests": 205
+        },
+        {
+          "B": 65,
+          "P": 41,
+          "p": 123,
+          "A": 195,
+          "sheets": 3,
+          "full_denominator_bits": 191,
+          "floor_over_period_millionths": 6155463,
+          "native_inverse_stride": 12,
+          "k": 19,
+          "period_span_in_signed_samples": 20,
+          "exact_interior_starts": 37,
+          "full_period_grid_edge_tests": 205
+        },
+        {
+          "B": 485,
+          "P": 306,
+          "p": 612,
+          "A": 970,
+          "sheets": 2,
+          "full_denominator_bits": 962,
+          "floor_over_period_millionths": 103514231,
+          "native_inverse_stride": 53,
+          "k": 84,
+          "period_span_in_signed_samples": 133,
+          "exact_interior_starts": 302,
+          "full_period_grid_edge_tests": 1530
+        },
+        {
+          "B": 485,
+          "P": 306,
+          "p": 918,
+          "A": 1455,
+          "sheets": 3,
+          "full_denominator_bits": 1447,
+          "floor_over_period_millionths": 68333727,
+          "native_inverse_stride": 53,
+          "k": 84,
+          "period_span_in_signed_samples": 88,
+          "exact_interior_starts": 302,
+          "full_period_grid_edge_tests": 1530
+        }
+      ]
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.18,
+      "stdout_sha256": "58d7a53508cbe3592777017318bf136a3c5a86037399c4aa53541e0080b20767",
+      "result": [
+        {
+          "B": 65,
+          "P": 41,
+          "p": 82,
+          "A": 130,
+          "sheets": 2,
+          "full_denominator_bits": 125,
+          "floor_over_period_millionths": 9391834,
+          "native_inverse_stride": 12,
+          "k": 19,
+          "period_span_in_signed_samples": 30,
+          "exact_interior_starts": 37,
+          "full_period_grid_edge_tests": 205
+        },
+        {
+          "B": 65,
+          "P": 41,
+          "p": 123,
+          "A": 195,
+          "sheets": 3,
+          "full_denominator_bits": 191,
+          "floor_over_period_millionths": 6155463,
+          "native_inverse_stride": 12,
+          "k": 19,
+          "period_span_in_signed_samples": 20,
+          "exact_interior_starts": 37,
+          "full_period_grid_edge_tests": 205
+        },
+        {
+          "B": 485,
+          "P": 306,
+          "p": 612,
+          "A": 970,
+          "sheets": 2,
+          "full_denominator_bits": 962,
+          "floor_over_period_millionths": 103514231,
+          "native_inverse_stride": 53,
+          "k": 84,
+          "period_span_in_signed_samples": 133,
+          "exact_interior_starts": 302,
+          "full_period_grid_edge_tests": 1530
+        },
+        {
+          "B": 485,
+          "P": 306,
+          "p": 918,
+          "A": 1455,
+          "sheets": 3,
+          "full_denominator_bits": 1447,
+          "floor_over_period_millionths": 68333727,
+          "native_inverse_stride": 53,
+          "k": 84,
+          "period_span_in_signed_samples": 88,
+          "exact_interior_starts": 302,
+          "full_period_grid_edge_tests": 1530
+        }
+      ]
+    }
+  ],
+  "normal_optimized_same": true,
+  "seconds": 0.31,
+  "scope": "Exact full-denominator, many-lap modular-inverse grids on four actual rational cycles. This does not certify an asymptotic onset or the external irrationality measure."
+}

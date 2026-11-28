@@ -1,0 +1,16 @@
+{
+  "source": "research/astra-critical-rigidity-20261128/cycles/check_balanced_envelopes.py",
+  "source_sha256": "01a9b777285f8ae82bf71bcfba597f97b14e5ceee81e77f74271c91ba2b1b69e",
+  "normal_and_optimized_equal": true,
+  "seconds": 0.207,
+  "completed_utc": "2026-11-27T23:48:08.158646+00:00",
+  "scope": "Finite exact controls only; no Subspace Theorem, asymptotic or universal cycle inference is checked by enumeration.",
+  "results": {
+    "balanced_clocks": 175,
+    "envelope_rotations": 783,
+    "imprimitive_balanced_displays": 80,
+    "physical_envelope_windows": 1774,
+    "physical_join_switches": 825,
+    "reciprocal_mass_caps": 3679
+  }
+}

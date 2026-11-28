@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/cycles/check_separated_rotations.py",
+  "source_sha256": "10fe3e086330878f04c9a0c4b41ac7910f7a10797520c6e53af03f787ecfb8b1",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.149
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.223
+    }
+  ],
+  "finite_coverage": {
+    "interior_artificial_cuts": 653,
+    "negative_translation_exponents": 47,
+    "nontrivial_proper_cancellations": 15,
+    "overlapping_carry_boxes": 669,
+    "paired_full_laps": 2379,
+    "primitive_cycles": 176,
+    "shared_blocks": 10279,
+    "translated_products": 176,
+    "unequal_last_divisions": 9626
+  },
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

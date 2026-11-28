@@ -1,0 +1,333 @@
+{
+  "scope": "Finite normalized dimensions and true complete denominators on two upper convergents. The continuum and diagonal assertions are written theorems.",
+  "source_sha256": {
+    "NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+    "SYNCHRONIZED_NEARCRITICAL_SPECTRA.md": "29eeb3e05c3a23310b7cbae1e368a0e122fcec93442b54bb9495dc0822e4639f"
+  },
+  "true_cycles": [
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        8
+      ],
+      "binary_level_selector": 0,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 1,
+      "predicted_normalized_dimension": "5/8",
+      "real_width_approx": 2.0695781,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 205,
+      "true_minimum_approx": 845.681,
+      "true_period": 328,
+      "whole_q_bits": 320
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        4,
+        8
+      ],
+      "binary_level_selector": 2,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 1,
+      "predicted_normalized_dimension": "7/8",
+      "real_width_approx": 2.1046664,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 287,
+      "true_minimum_approx": 838.821,
+      "true_period": 328,
+      "whole_q_bits": 451
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "binary_level_selector": 3,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 1,
+      "predicted_normalized_dimension": "1",
+      "real_width_approx": 2.1411903,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 328,
+      "true_minimum_approx": 832.012,
+      "true_period": 328,
+      "whole_q_bits": 517
+    },
+    {
+      "a": 2,
+      "active_orders": [
+        1,
+        3,
+        4
+      ],
+      "binary_level_selector": 0,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "5/12",
+      "real_width_approx": 2.0695544,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 205,
+      "true_minimum_approx": 855.215,
+      "true_period": 492,
+      "whole_q_bits": 322
+    },
+    {
+      "a": 2,
+      "active_orders": [
+        1,
+        4,
+        5
+      ],
+      "binary_level_selector": 0,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 5,
+      "predicted_normalized_dimension": "7/20",
+      "real_width_approx": 2.0696272,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 287,
+      "true_minimum_approx": 857.106,
+      "true_period": 820,
+      "whole_q_bits": 452
+    },
+    {
+      "a": 2,
+      "active_orders": [
+        1,
+        2,
+        4,
+        5,
+        10
+      ],
+      "binary_level_selector": 1,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 5,
+      "predicted_normalized_dimension": "3/5",
+      "real_width_approx": 2.104394,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 492,
+      "true_minimum_approx": 855.695,
+      "true_period": 820,
+      "whole_q_bits": 778
+    },
+    {
+      "a": 2,
+      "active_orders": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "binary_level_selector": 1,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "2/3",
+      "real_width_approx": 2.013642,
+      "reduced_grade": 485,
+      "reduced_period": 306,
+      "true_dimension": 2448,
+      "true_minimum_approx": 71895.606,
+      "true_period": 3672,
+      "whole_q_bits": 3874
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        3,
+        8
+      ],
+      "binary_level_selector": 0,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "7/24",
+      "real_width_approx": 2.0699432,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 287,
+      "true_minimum_approx": 855.135,
+      "true_period": 984,
+      "whole_q_bits": 452
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        3,
+        8,
+        24
+      ],
+      "binary_level_selector": 0,
+      "crossed_top_level": true,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "5/8",
+      "real_width_approx": 2.0693464,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 615,
+      "true_minimum_approx": 859.876,
+      "true_period": 984,
+      "whole_q_bits": 972
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "binary_level_selector": 1,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "5/12",
+      "real_width_approx": 2.1047134,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 410,
+      "true_minimum_approx": 852.834,
+      "true_period": 984,
+      "whole_q_bits": 648
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        24
+      ],
+      "binary_level_selector": 1,
+      "crossed_top_level": true,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "3/4",
+      "real_width_approx": 2.1043368,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 738,
+      "true_minimum_approx": 857.576,
+      "true_period": 984,
+      "whole_q_bits": 1167
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        3,
+        4,
+        8,
+        12
+      ],
+      "binary_level_selector": 2,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "13/24",
+      "real_width_approx": 2.1047042,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 533,
+      "true_minimum_approx": 852.796,
+      "true_period": 984,
+      "whole_q_bits": 843
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        3,
+        4,
+        8,
+        12,
+        24
+      ],
+      "binary_level_selector": 2,
+      "crossed_top_level": true,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "7/8",
+      "real_width_approx": 2.1047208,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 861,
+      "true_minimum_approx": 857.536,
+      "true_period": 984,
+      "whole_q_bits": 1362
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        12
+      ],
+      "binary_level_selector": 3,
+      "crossed_top_level": false,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "2/3",
+      "real_width_approx": 2.1416018,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 656,
+      "true_minimum_approx": 850.476,
+      "true_period": 984,
+      "whole_q_bits": 1039
+    },
+    {
+      "a": 3,
+      "active_orders": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        12,
+        24
+      ],
+      "binary_level_selector": 3,
+      "crossed_top_level": true,
+      "numerical_cancel_after_spectral_bits": 1,
+      "odd_factor": 3,
+      "predicted_normalized_dimension": "1",
+      "real_width_approx": 2.1413055,
+      "reduced_grade": 65,
+      "reduced_period": 41,
+      "true_dimension": 984,
+      "true_minimum_approx": 855.215,
+      "true_period": 984,
+      "whole_q_bits": 1558
+    }
+  ]
+}

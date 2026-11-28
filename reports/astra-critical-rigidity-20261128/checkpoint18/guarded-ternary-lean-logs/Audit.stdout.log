@@ -1,0 +1,3 @@
+'Collatz.GuardedTernaryTube.homogeneous_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GuardedTernaryTube.guarded_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GuardedTernaryTube.guarded_zero_tube' depends on axioms: [propext, Classical.choice, Quot.sound]

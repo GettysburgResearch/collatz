@@ -1,0 +1,18 @@
+{
+  "source": "research/astra-critical-rigidity-20261128/cycles/check_rotation_occupation.py",
+  "source_sha256": "b9f5173559651d626201b6be6d1129437c3ead295cb8afbc1c3fb439e27f73ba",
+  "normal_and_optimized_equal": true,
+  "seconds": 0.351,
+  "completed_utc": "2026-11-27T23:44:21.422183+00:00",
+  "scope": "Finite exact controls; no asymptotic or universal claim follows from this execution.",
+  "results": {
+    "both_final_excesses_positive": 2550,
+    "geometric_mean_pairs": 792,
+    "high_track_corrections": 10635,
+    "interior_lattices": 12299,
+    "primitive_rational_cycles": 176,
+    "proper_cancelled_denominators": 15,
+    "translated_quantiles": 20830,
+    "unequal_final_pairs": 8493
+  }
+}

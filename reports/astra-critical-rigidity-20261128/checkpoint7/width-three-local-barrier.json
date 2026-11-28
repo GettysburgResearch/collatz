@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_width_three_local_barrier.py",
+  "sha256": "ba8b1d44aaf3825ec0ec11c5ceb2d1f8f2dc09ff397fe1f0fb2c7fb4225f65be",
+  "started_utc": "2026-11-28T01:52:42.917903+00:00",
+  "scope": "Literal positive odd native trajectories, exact division exponents, sixth-difference sign reversal, all spatial differences through order five and strict widths above three. These are parallel finite trajectories, not a closed ordinary cycle.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.181,
+      "stdout": "{\n  \"both_sign_gadgets\": 6,\n  \"distinct_phases_across_fixtures_counted_separately\": 52741,\n  \"fixtures\": 3,\n  \"largest_minimum_bit_length\": 2217,\n  \"longest_calendar\": 1338,\n  \"ordinary_odd_edges\": 52672,\n  \"positive_spatial_differences\": 230900\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.349,
+      "stdout": "{\n  \"both_sign_gadgets\": 6,\n  \"distinct_phases_across_fixtures_counted_separately\": 52741,\n  \"fixtures\": 3,\n  \"largest_minimum_bit_length\": 2217,\n  \"longest_calendar\": 1338,\n  \"ordinary_odd_edges\": 52672,\n  \"positive_spatial_differences\": 230900\n}\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

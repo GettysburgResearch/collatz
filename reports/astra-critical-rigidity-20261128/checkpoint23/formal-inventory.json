@@ -1,0 +1,392 @@
+{
+  "schema": "collatz-final-local-formal-inventory/v1",
+  "success": true,
+  "checked_utc": "2026-11-28T07:49:59.997130+00:00",
+  "packet_modules": 31,
+  "packet_roots": 133,
+  "logarithm_specializations": 3,
+  "motif_specializations": 1,
+  "total_distinct_local_roots": 137,
+  "additional_definitions": [
+    "Collatz.SynchronousPhase.shift"
+  ],
+  "allowed_reported_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+    "research/astra-critical-rigidity-20261128/ordinary/TernaryLanding.lean": "f495ac18824742c64bd0d073beacdc16b08480fbb9f6c0ebf530e1ebe40529d9",
+    "research/astra-critical-rigidity-20261128/ordinary/MarkedLandingWord.lean": "bbbb5c87640e12dc0f91b7d9add23df2b7c4ad82008cccfa817d2a98323c8f93",
+    "research/astra-critical-rigidity-20261128/ordinary/AdjacentWordClosure.lean": "af23e23b6969b76b1447c2d98007e02e718183e744395ca8bb16bb73b04dad9a",
+    "research/astra-critical-rigidity-20261128/literature/ConditionalParitySuffix.lean": "b0e142f600be944cf7dd26a075bc8421aba485c3f995827f79b2c13ca1d4821b",
+    "research/astra-critical-rigidity-20261128/ordinary/SynchronousPhase.lean": "a3b0d52ffec50ce4455e840f61fb030bd377f558764d3b83820b97c455aec2b1",
+    "research/astra-critical-rigidity-20261128/literature/FiniteBranchCapture.lean": "00dd01f7cf1497b1bee46a9d7289ab5d7224bd4d2ad9c0786a4309a4a29c0b65",
+    "research/astra-critical-rigidity-20261128/literature/OneSparseOrbit.lean": "cf33a8e076e51b1a81299e7c6fb3613ff1f6e388153166dbec5de9f17d6e65dd",
+    "research/astra-critical-rigidity-20261128/literature/RoundedOrbitCapture.lean": "cb8479d9fe25984f9f3db9366ac69fd3cebb0c9ac5f26aa85a1651b44c99abb1",
+    "research/astra-critical-rigidity-20261128/ordinary/SparseNativeTargets.lean": "07397517feb684e5730187c31da70679dcac7b5ab91a813fd70bc02d40c580c0",
+    "research/astra-critical-rigidity-20261128/ordinary/InverseSuffixTransport.lean": "97a87351a17e900b17d45eb00a42e0f126312dbb4b74728368168637d6073e54",
+    "research/astra-critical-rigidity-20261128/ordinary/NativeMinimumClock.lean": "0616d2dfcbc1aec462d4e619caa2dd8dd22573e38e35e3ab52ab2481c9ddce06",
+    "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean": "3efb5ce8f4571bbc9497558a381e46053741310316ef8a53f8b2cff695fea0d3",
+    "research/astra-critical-rigidity-20261128/ordinary/SignedReturnRouter.lean": "bd44fba71f618516bde1f5950e5709f00173316298c619705ac94a5bdc985512",
+    "research/astra-critical-rigidity-20261128/ordinary/PrefixCarryClosure.lean": "03af4a074ca77c362123379e0d693cd137c66ec724f33ecbd74e5cca0e4c9ffc",
+    "research/astra-critical-rigidity-20261128/ordinary/ClockCarryEquivalence.lean": "8e221622fbb397223db61be639c3851240899befadc4de3ccadb1181a550b17c",
+    "research/astra-critical-rigidity-20261128/ordinary/CrossGrade.lean": "c59823ac72625a8190400af83e0b72fc3bc2c56242110d8a2865f9454fe543be",
+    "research/astra-critical-rigidity-20261128/ordinary/JointTargets.lean": "a6d3fe780199fad9a0fc708e3ca72117087724e3e7cb93a9be971e0ad75a8b03",
+    "research/astra-critical-rigidity-20261128/ordinary/BoundaryRanks.lean": "4db55437baac744a29686ef671a6f19ff0807a93f39eba166a14ddfae97cf9b9",
+    "research/astra-critical-rigidity-20261128/cycles/OrderedMismatchWindows.lean": "d4c904630365bef543766be3871eed3ec409982a80bdbf72eff6b8dde36c96e9",
+    "research/astra-critical-rigidity-20261128/cycles/EventFactorRank.lean": "51905a9f399041c68bc0feeb46673fb8802b2e5c34863ce6ba91ecd648185fe8",
+    "research/astra-critical-rigidity-20261128/formal/ReferenceDivisibility.lean": "385837f7c37fb899a147511b0475840fdbaa1f2b728c37786707d2e04cb5de84",
+    "research/astra-critical-rigidity-20261128/cycles/RotationOccupation.lean": "f9ba51c24175e4cd53dd7f78fcc7c5c6e2b1e3b6c84d44b9be081ded179f0dc7",
+    "research/astra-critical-rigidity-20261128/cycles/TwoGradePairOrder.lean": "3e39022eedf446f9e62c49771d1ceb3a770695b84a0da8cf94ea53ca07c6f348",
+    "research/astra-critical-rigidity-20261128/cycles/ResidueFiberOrder.lean": "fe81900e37b03c3ab18a224d72031feb2ffc91f8d090d10bd5365a66b941646f",
+    "research/astra-critical-rigidity-20261128/literature/IntegerMinorConcentration.lean": "453fd107dfd19bbf9975439e4c5e4939e631354efd39b09fa2d59e7f01a1d922",
+    "research/astra-critical-rigidity-20261128/cycles/FullDenominatorPairZero.lean": "4b1714b691ef6561aa5ddf686d8b7b68ca8e9f8d3a0e983e104d342266c946d9",
+    "research/astra-critical-rigidity-20261128/cycles/NativeTubeZero.lean": "4e15bcafec9f4e19abbfe2b17894d8dfbe8841e902e30ff0dbe46182787ff34d",
+    "research/astra-critical-rigidity-20261128/cycles/PooledMultiplicityCapacity.lean": "dc43744b585283bccfba33943808945016ca9deb3abee04338fffec193f9a0d2",
+    "research/astra-critical-rigidity-20261128/cycles/RotationRecurrenceRank.lean": "504a6122ad55f00e4c0b9ca001f1ff536ea773d7b6df41281d7c1b396bca3799",
+    "research/astra-critical-rigidity-20261128/cycles/GuardedTernaryTube.lean": "fa43f0135caaf13e9429a5b2696f5e9f47bb13b080c66b2a6cc4f682d5816a86",
+    "research/astra-critical-rigidity-20261128/literature/ChudnovskyLog32.lean": "14b6027fabae574382cd1dd7070374c2c442d3f9a7d8c35eaf09da75ae107730",
+    "research/astra-critical-rigidity-20261128/literature/SharpMotifInput.lean": "996c6922414b97eb2118a7d761e02472a0016cf0e6f8a4b50a8bbcce2868290d",
+    "research/astra-critical-rigidity-20261128/check_lean.py": "49028a18fe38290ebb127f8b57bbd01d1538f4e6eec855fb81f0f27afcb716ad"
+  },
+  "groups": [
+    {
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "roots": [
+        "Collatz.PoweredAffine.step_positive",
+        "Collatz.PoweredAffine.orbit_positive",
+        "Collatz.PoweredAffine.even_step",
+        "Collatz.PoweredAffine.odd_step",
+        "Collatz.PoweredAffine.letter_actual",
+        "Collatz.PoweredAffine.evalWord_actual",
+        "Collatz.PoweredAffine.evalWord_append",
+        "Collatz.PoweredAffine.word_affine",
+        "Collatz.PoweredAffine.actual_word_affine",
+        "Collatz.PoweredAffine.word_centered",
+        "Collatz.PoweredAffine.repeated_centered",
+        "Collatz.PoweredAffine.center_telescope",
+        "Collatz.PoweredAffine.reference_telescope"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/TernaryLanding.lean",
+      "roots": [
+        "Collatz.TernaryLanding.consumed_grade",
+        "Collatz.TernaryLanding.prefix_carry",
+        "Collatz.TernaryLanding.exists_landing",
+        "Collatz.TernaryLanding.positive_level_unit",
+        "Collatz.TernaryLanding.rational_value",
+        "Collatz.TernaryLanding.dyadic_translation"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/MarkedLandingWord.lean",
+      "roots": [
+        "Collatz.MarkedLandingWord.physical_of_carry",
+        "Collatz.MarkedLandingWord.last_odd_carry",
+        "Collatz.MarkedLandingWord.first_mark_iff"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/AdjacentWordClosure.lean",
+      "roots": [
+        "Collatz.AdjacentWordClosure.realizes_iff_dvd",
+        "Collatz.AdjacentWordClosure.progression_realizes",
+        "Collatz.AdjacentWordClosure.adjacent_replay",
+        "Collatz.AdjacentWordClosure.ordinary_lifts_arbitrarily_large"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/ConditionalParitySuffix.lean",
+      "roots": [
+        "Collatz.ConditionalParitySuffix.unique_progression_word",
+        "Collatz.ConditionalParitySuffix.translate_word_endpoint",
+        "Collatz.ConditionalParitySuffix.unique_multiplier_suffix"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SynchronousPhase.lean",
+      "roots": [
+        "Collatz.SynchronousPhase.phase_eq_iff",
+        "Collatz.SynchronousPhase.shift_phase",
+        "Collatz.SynchronousPhase.inverse_shift_phase",
+        "Collatz.SynchronousPhase.odd_triple_phase",
+        "Collatz.SynchronousPhase.phase_return_iff",
+        "Collatz.SynchronousPhase.family_meeting_iff",
+        "Collatz.SynchronousPhase.equal_on_periodic_locus",
+        "Collatz.SynchronousPhase.same_future_entry",
+        "Collatz.SynchronousPhase.collision_at_clock_iff"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/FiniteBranchCapture.lean",
+      "roots": [
+        "Collatz.FiniteBranchCapture.attained_minimum",
+        "Collatz.FiniteBranchCapture.minimum_passes_guard",
+        "Collatz.FiniteBranchCapture.first_disagreement_by_minimum",
+        "Collatz.FiniteBranchCapture.first_capture_window"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/OneSparseOrbit.lean",
+      "roots": [
+        "Collatz.OneSparseOrbit.after_odd_departure",
+        "Collatz.OneSparseOrbit.three_multiple_predecessors",
+        "Collatz.OneSparseOrbit.bounded_spine_step",
+        "Collatz.OneSparseOrbit.modified_spine_orbit",
+        "Collatz.OneSparseOrbit.exact_shared_prefix"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/RoundedOrbitCapture.lean",
+      "roots": [
+        "Collatz.RoundedOrbitCapture.rounded_arithmetic",
+        "Collatz.RoundedOrbitCapture.rounded_native_error",
+        "Collatz.RoundedOrbitCapture.rounded_odd_injective",
+        "Collatz.RoundedOrbitCapture.rounded_iterate_bounds",
+        "Collatz.RoundedOrbitCapture.inClosure_iff",
+        "Collatz.RoundedOrbitCapture.modified_native_rule",
+        "Collatz.RoundedOrbitCapture.closure_orbit",
+        "Collatz.RoundedOrbitCapture.true_hit_forces_escape"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SparseNativeTargets.lean",
+      "roots": [
+        "Collatz.SparseNativeTargets.native_balance_iff",
+        "Collatz.SparseNativeTargets.target_exists_iff",
+        "Collatz.SparseNativeTargets.gapWord_counts",
+        "Collatz.SparseNativeTargets.actual_suffix_gap_residue",
+        "Collatz.SparseNativeTargets.finite_visits_le"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/InverseSuffixTransport.lean",
+      "roots": [
+        "Collatz.InverseSuffixTransport.source_le_dyadic_endpoint",
+        "Collatz.InverseSuffixTransport.prior_target_coast",
+        "Collatz.InverseSuffixTransport.read_incoming_from",
+        "Collatz.InverseSuffixTransport.large_entrance_reads_incoming"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/NativeMinimumClock.lean",
+      "roots": [
+        "Collatz.NativeMinimumClock.minimumDate_spec",
+        "Collatz.NativeMinimumClock.strict_record_of_firstOddBelow",
+        "Collatz.NativeMinimumClock.minimumDate_at_record",
+        "Collatz.NativeMinimumClock.minimumDate_at_firstOddBelow",
+        "Collatz.NativeMinimumClock.minimumDate_unit_embedding"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean",
+      "roots": [
+        "Collatz.PairedClock.affine",
+        "Collatz.PairedClock.discrepancy_bound",
+        "Collatz.PairedClock.discrepancy_positive",
+        "Collatz.PairedClock.even_discrepancy",
+        "Collatz.PairedClock.unmatched_ternary_power"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SignedReturnRouter.lean",
+      "roots": [
+        "Collatz.SignedReturnRouter.Route.stay_cost",
+        "Collatz.SignedReturnRouter.Route.then_cost",
+        "Collatz.SignedReturnRouter.Route.swap_cost",
+        "Collatz.SignedReturnRouter.descend_to_translation",
+        "Collatz.SignedReturnRouter.positive_to_one",
+        "Collatz.SignedReturnRouter.signed_to_one",
+        "Collatz.SignedReturnRouter.reset_to_adjacent",
+        "Collatz.SignedReturnRouter.reset_to_reverse"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PrefixCarryClosure.lean",
+      "roots": [
+        "Collatz.PrefixCarryClosure.route_replays",
+        "Collatz.PrefixCarryClosure.complete_adjacent_prefix",
+        "Collatz.PrefixCarryClosure.return_carry",
+        "Collatz.PrefixCarryClosure.close_positive_source_suffix"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/ClockCarryEquivalence.lean",
+      "roots": [
+        "Collatz.ClockCarryEquivalence.carry_to_clock",
+        "Collatz.ClockCarryEquivalence.clock_to_carry",
+        "Collatz.ClockCarryEquivalence.maximum_sandwich",
+        "Collatz.ClockCarryEquivalence.logarithmic_clock_iff_ordered_carry"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/CrossGrade.lean",
+      "roots": [
+        "Collatz.PairedClock.crossCost_add_joint",
+        "Collatz.PairedClock.discrepancy_one_step_charge",
+        "Collatz.PairedClock.unmatched_cross_grade"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/JointTargets.lean",
+      "roots": [
+        "Collatz.PairedClock.orbit_add",
+        "Collatz.PairedClock.grade_add",
+        "Collatz.PairedClock.incomparable_height",
+        "Collatz.PairedClock.unbounded_odd_joint_iff"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/ordinary/BoundaryRanks.lean",
+      "roots": [
+        "Collatz.BoundaryRanks.shared_directions_bound",
+        "Collatz.BoundaryRanks.chronological_rank_identity"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/OrderedMismatchWindows.lean",
+      "roots": [
+        "Collatz.OrderedMismatchWindows.totalWindows",
+        "Collatz.OrderedMismatchWindows.shiftedCosts",
+        "Collatz.OrderedMismatchWindows.clusteredWindowCosts"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/EventFactorRank.lean",
+      "roots": [
+        "Collatz.EventFactorRank.independent_of_overlap",
+        "Collatz.EventFactorRank.shared_point_gap",
+        "Collatz.EventFactorRank.common_overlap_rank"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/formal/ReferenceDivisibility.lean",
+      "roots": [
+        "Collatz.ReferenceDivisibility.two_three_coprime",
+        "Collatz.ReferenceDivisibility.complete_dyadic_divisor",
+        "Collatz.ReferenceDivisibility.nonzero_residual_height",
+        "Collatz.ReferenceDivisibility.reference_integer_law",
+        "Collatz.ReferenceDivisibility.reference_source_divisor",
+        "Collatz.ReferenceDivisibility.reference_source_height"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/RotationOccupation.lean",
+      "roots": [
+        "Collatz.RotationOccupation.subtractAlong",
+        "Collatz.RotationOccupation.partialLast",
+        "Collatz.RotationOccupation.interiorLattice",
+        "Collatz.RotationOccupation.shellGap",
+        "Collatz.RotationOccupation.fullLengthFloor",
+        "Collatz.RotationOccupation.multiplicityCost"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/TwoGradePairOrder.lean",
+      "roots": [
+        "Collatz.TwoGradePairOrder.comparison_sign",
+        "Collatz.TwoGradePairOrder.pair_sum_injective"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/ResidueFiberOrder.lean",
+      "roots": [
+        "Collatz.ResidueFiberOrder.residue_order_eq_period"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/IntegerMinorConcentration.lean",
+      "roots": [
+        "Collatz.IntegerMinorConcentration.modulus_dvd_det_mul_coefficient",
+        "Collatz.IntegerMinorConcentration.abs_det_le_column_product",
+        "Collatz.IntegerMinorConcentration.det_eq_zero_of_large_row_modulus"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/FullDenominatorPairZero.lean",
+      "roots": [
+        "Collatz.FullDenominatorPairZero.full_denominator_divides_of_zero",
+        "Collatz.FullDenominatorPairZero.one_zero_forces_all_zero"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/NativeTubeZero.lean",
+      "roots": [
+        "Collatz.NativeTubeZero.backward_zero",
+        "Collatz.NativeTubeZero.zero_tube"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/PooledMultiplicityCapacity.lean",
+      "roots": [
+        "Collatz.PooledMultiplicityCapacity.padded_binary_capacity"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/RotationRecurrenceRank.lean",
+      "roots": [
+        "Collatz.RotationRecurrenceRank.native_run_lt",
+        "Collatz.RotationRecurrenceRank.native_budget_rank"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/cycles/GuardedTernaryTube.lean",
+      "roots": [
+        "Collatz.GuardedTernaryTube.homogeneous_guard",
+        "Collatz.GuardedTernaryTube.guarded_backward",
+        "Collatz.GuardedTernaryTube.guarded_zero_tube"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/ChudnovskyLog32.lean",
+      "roots": [
+        "Collatz.ChudnovskyLog32.exponent_bounds",
+        "Collatz.ChudnovskyLog32.finite_good",
+        "Collatz.ChudnovskyLog32.uniform_linear_form"
+      ],
+      "evidence": "reports/astra-critical-rigidity-20261128/checkpoint15/logarithm-root-reimport.json"
+    },
+    {
+      "source": "research/astra-critical-rigidity-20261128/literature/SharpMotifInput.lean",
+      "roots": [
+        "Collatz.SharpMotif.consecutive_subcritical_motifs"
+      ],
+      "evidence": "research/astra-critical-rigidity-20261128/literature/ROUTER_FRESH_LEAN.json"
+    }
+  ],
+  "scope": "All 31 packet modules freshly compiled and separately imported together at checkpoint23. Three logarithm specializations and one motif specialization retain earlier fresh build/import evidence and current matching source hashes. The imported 1002-module project is not counted as new local roots. Cached pinned third-party objects reused; no cold dependency build or LeanChecker claim."
+}

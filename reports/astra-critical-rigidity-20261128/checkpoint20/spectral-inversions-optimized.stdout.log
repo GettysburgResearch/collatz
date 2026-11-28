@@ -1,0 +1,174 @@
+{
+  "minimal_divisor": {
+    "counts": {
+      "proper": 44,
+      "total": 3221
+    },
+    "proper_rank_residual_gcd": {
+      "p": 8,
+      "q": 1685,
+      "rank": 7,
+      "value": 8425,
+      "word": [
+        1,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2
+      ]
+    }
+  },
+  "source_sha256": {
+    "MINIMAL_RECURRENCE_DENOMINATOR.md": "f228c8c0f377b049c6750f094855f0b41fd1c724b5ac9a38cb8d430dd481020b",
+    "SPARSE_PHYSICAL_INVERSIONS.md": "9b6a690010f76a4d4e487585306214dbabd98b947a896dffa0bf6c5b89b5fa47"
+  },
+  "true_clock_components": [
+    {
+      "A": 130,
+      "I": 1,
+      "K": 4,
+      "active_orders": [
+        1,
+        2
+      ],
+      "cyclotomic_components": [
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 1,
+          "norm_resultant_bits": 100
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 2,
+          "norm_resultant_bits": 191
+        }
+      ],
+      "g": 2,
+      "max_absolute_full_lap_rank_error": 1,
+      "p": 82,
+      "rank": 82,
+      "rotation_to_true_minimum": 41,
+      "upper_remainder_bits": 1,
+      "whole_q_bits": 125
+    },
+    {
+      "A": 195,
+      "I": 2,
+      "K": 15,
+      "active_orders": [
+        1,
+        3
+      ],
+      "cyclotomic_components": [
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 1,
+          "norm_resultant_bits": 176
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 3,
+          "norm_resultant_bits": 1035
+        }
+      ],
+      "g": 3,
+      "max_absolute_full_lap_rank_error": 2,
+      "p": 123,
+      "rank": 123,
+      "rotation_to_true_minimum": 41,
+      "upper_remainder_bits": 1,
+      "whole_q_bits": 191
+    },
+    {
+      "A": 390,
+      "I": 13,
+      "K": 30,
+      "active_orders": [
+        1,
+        2,
+        3
+      ],
+      "cyclotomic_components": [
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 1,
+          "norm_resultant_bits": 234
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 2,
+          "norm_resultant_bits": 346
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 3,
+          "norm_resultant_bits": 1383
+        },
+        {
+          "G_bits": 130,
+          "active": false,
+          "d": 6
+        }
+      ],
+      "g": 6,
+      "max_absolute_full_lap_rank_error": 5,
+      "p": 246,
+      "rank": 164,
+      "rotation_to_true_minimum": 41,
+      "upper_remainder_bits": 1,
+      "whole_q_bits": 257
+    },
+    {
+      "A": 696,
+      "I": 13,
+      "K": 30,
+      "active_orders": [
+        1,
+        2,
+        3
+      ],
+      "cyclotomic_components": [
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 1,
+          "norm_resultant_bits": 330
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 2,
+          "norm_resultant_bits": 492
+        },
+        {
+          "G_bits": 1,
+          "active": true,
+          "d": 3,
+          "norm_resultant_bits": 1962
+        },
+        {
+          "G_bits": 232,
+          "active": false,
+          "d": 6
+        }
+      ],
+      "g": 6,
+      "max_absolute_full_lap_rank_error": 5,
+      "p": 438,
+      "rank": 292,
+      "rotation_to_true_minimum": 73,
+      "upper_remainder_bits": 1,
+      "whole_q_bits": 464
+    }
+  ]
+}

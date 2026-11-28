@@ -1,0 +1,34 @@
+# Every short three-sum comparison has its geometric sign below odd width \(27/8\)
+
+**Proposed written theorem using the cited inputs.** Fix \(2<R<27/8\). Along any sequence of positive ordinary cycles with primitive odd period \(p\to\infty\) and width \(X/m\le R\), for all sufficiently large \(p\) choose the two-grade folded chart below and \(W=\lfloor p/(\log p)^5\rfloor\). At **every** spatial origin, all unordered triples in the next \(W+1\) ranks, including repetitions, have distinct label sums, in exactly the order of the corresponding sums of \(2^{j/p}\). This gives a binary \(B_3\) code of size \(p^{1-o(1)}\) from the actual ordinary cycle. In particular, with \(\eta=\log_2(R/2)\) and \(\gamma=\log_23\),
+\[
+ \limsup\frac{\log p}{\log m}\le
+     \frac{\eta}{\gamma}\,\frac{\log_2(16/5)}{3},\qquad
+ 0<A/p-\gamma\le p^{-3\gamma/(\eta\log_2(16/5))+o(1)}.              \tag{1}
+\]
+At a width limit of three the required clock exponent exceeds \(4.84\). The published irrationality exponent \(5.116201\) still permits these clocks. A fourth independent summand would change the coding threshold substantially; the scalar proof here treats three.
+
+## A collision of triples vanishes on a common spatial arc
+
+Write \(\alpha=\gamma-1\), so \(\eta<3\alpha-1=\log_2(27/16)\). We may slightly increase \(R\) below \(27/8\) to assume \(\eta\ge\alpha\). Choose a fixed \(v>0\) small enough that \(v+\eta<\min(1,2-2\alpha,\,0.85)\). Fold to \([L,2L)\) with \(L=2^{1-v}m\), as in the [two-grade pair theorem](TWO_GRADE_SIDON.md). The sorted labels \(Z\), unwrapped tags \(c\), uniform angles, common rotation \(\rho=A/p\), and windings \(b\) have the same properties. Let \(\alpha_p=\rho-1\). Uniformly for origin \(r\), the moving offsets \(0\le j\le W=o(p)\) all have unwrapped tags in \(\{1,2\}\). Their tags are all one for \(r/p<v-o(1)\) and all two for \(r/p>v+\eta+o(1)\), including the seam. The variable interval therefore lies within \([v-o(1),v+\eta+o(1)]\).
+
+For two different triple multisets use \(P(T)=\sum_{i=1}^3 T^{a_i}-\sum_{i=1}^3 T^{b_i}\), all exponents between \(0\) and \(W\). At all fundamental bases
+\[
+        2^{b(r)} H_{(r+A)\bmod p}=3H_r+d_r,\qquad
+             H=P(E)Z,\quad d=P(E)c,\quad |d_r|\le3.                     \tag{2}
+\]
+Whenever every tag equals two, every unwrapped \(Z\) is congruent to two modulo four and \(4\mid H\). If the tags are all one, all labels are odd and \(2\mid H\).
+
+Consider a departure from a zero \(H\) to a nonzero successor. This requires \(b=1\), \(d=\pm2\) and successor \(H=\pm1\). Both the departure and its successor then require variable rows: on the departure \(d\ne0\), and on the successor a constant-tag row would have even \(H\). If \(f=r/p\) is the departure rank fraction, the next fraction is \(f+\alpha_p\) with no wrap, so
+\[
+              v-o(1)\ \le f\ \le v+\eta-\alpha+o(1).                    \tag{3}
+\]
+The following three rank fractions are \(f+\alpha_p,\ f+2\alpha_p-1,\ f+3\alpha_p-1\). Their first winding is two since \(\alpha>1/2\); their second winding is one since \(v+\eta<2-2\alpha\). The third row is forced two: its fraction is at least \(v+3\alpha-1-o(1)>v+\eta+o(1)\). Thus the birth has calendar letters \(1,2,1\) and its next three heights are respectively \(\pm1\), either zero or the same \(\pm1\), and zero. The middle assertion follows directly from \(4H''=3(\pm1)+d'\); in the last step \(|2H'''|\le6\) while \(4\mid H'''\).
+
+If a zero occurs anywhere on the closed chronological circuit, every ensuing nonzero therefore lies at the first or second successor of such a birth. These fractions are at most \(v+\eta+o(1)\) and \(v+\eta+\alpha-1+o(1)\), respectively, by (3). Consequently \(P(E)Z_r=0\) on the entire fixed spatial interval \(0.90<r/p<0.95\). The [sparse rank recurrence theorem](SPARSE_RANK_RECURRENCES.md) rules this out, since \(P\ne0\) has at most six terms and bounded coefficients, and the folded integer array has polynomial height and uniform exponential shape. Thus \(H\) never vanishes. A nonzero integer sign cannot reverse in (2) when \(|d|\le3\). Primitivity of the rank rotation now gives one strict sign throughout. As in the pair case, summing \(\xi^{-r}H_r\), with \(\xi=2^{1/p}\) and exact doubling at every seam, identifies the sign as \({\rm sign}\,P(\xi)\). This proves the triple assertion, even though genuine finite integer windows admit the signed three-edge excursions in (2). [Ordinary finite-window controls just above width three](WIDTH_THREE_LOCAL_BARRIER.md)
+
+## The binary triple code and its collision entropy
+
+Use starts \(0\le j\le W\) and the same \(n=\lceil\log_3(8L)\rceil+2\) chronological edges from base zero as in the pair proof. Retain dates at which the tags across the columns vary. Their number \(k\) is at most \((\eta+o(1))n\), by the moving-rotation Fourier average and enclosing the switching interval in a fixed enlargement before shrinking it. If two triple sums of the resulting binary vectors coincide coordinatewise over the integers, all the corresponding aggregate tags agree on the whole interval. The difference of initial integer triple sums is divisible by \(2^{\lfloor n\rho\rfloor}>4L\), and has absolute size less than \(3L\). Hence it is zero, and the strict triple order identifies the original multiset. Thus the code is \(B_3\), with \(M=W+1=p^{1-o(1)}\) distinct words.
+
+For completeness, the collision probability of the sum of three iid samples from any distribution on the \(k\)-cube is at least \((20/64)^k\). This is Polyanskiy's convexity and symmetrization argument: that probability is the sixth power of the \(L^6\)-norm of the characteristic polynomial on the \(k\)-torus. It is convex as a function of the source distribution and invariant under flipping any subset of coordinates in every word. Averaging over flips therefore minimizes it at the uniform distribution. There the single coordinate equality probability is \(\binom63/2^6\) and the coordinates are independent. For the uniform law on a \(B_3\) code, equality of independent ordered triple sums permits only the at most \(3!\) permutations of the first sample. Hence \((20/64)^k\le6/M^3\), which gives (1) since \(n=(\log_2m)/\gamma+O_R(1)\). The same argument yields a hereditary triple energy bound of \(6|S|^3\) on each short rank interval. Splitting all ranks and physical branches into \(O_R((\log p)^5)\) Sidon-of-order-three pieces, then applying Fourier \(L^6\) triangle and Hölder as in the pair theorem, gives \(E_3(S)\ll_R(\log p)^{15}|S|^3\) and \(|S+S+S|\gg_R |S|^3/(\log p)^{15}\) for each subset of the cycle's full ordinary state set. [Y. Gu, *Zero-error communication over adder MAC*, Proposition 3.8 (Polyanskiy), September 2018 version](https://arxiv.org/abs/1809.07364) · [D'yachkov and Rykov, earlier odd \(B_s\) code bound, formula (3)](https://www.mathnet.ru/eng/ppi1208)

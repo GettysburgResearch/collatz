@@ -1,0 +1,165 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:06:54.906869+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_coalescing_height_fibres.py": "c2812abb3fb621e951d06ef403bd352dd805993bf3cc63ac69d93cdc012d5ec7",
+    "research/astra-critical-rigidity-20261128/literature/COALESCING_ORDINARY_HEIGHTS.md": "8d41f108e3869956bcffddb3e29a10ac3d9ea99ddc77cd884c3c8008f8a416d2",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_POPULATION_FIBRES.md": "e227a734d1b27328da779db94a3ce572e02f8fbf5c65f47383769668d1ffc42c",
+    "research/astra-critical-rigidity-20261128/literature/ORDINARY_AFFINE_INTERVAL_PROFILE.md": "850472e903b199d307019f17d957b5ef9d140bbc542df062db80bdd86efcb49e",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_TOWER_ENDPOINT_PROFILE.md": "0747fbe74b1f8fa52bdc7dc2745c39e01f0aee195a1f9e9f9f53324655959cb2"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.681,
+      "stdout_sha256": "36f5a8955b54834c8e5cab4310f47c8d6ea15d7f396c8b6713824749935a21f7",
+      "result": {
+        "fibres": {
+          "coarse_boundary_loss_sum": 3158,
+          "families_with_coarse_boundary_loss": 1286,
+          "independent_label_moments": 2576,
+          "integer_families": 1288,
+          "outer_equal_interior_unequal_triples": 6
+        },
+        "filtration": {
+          "joint_cells": 3069,
+          "pair_child_checks": 12276,
+          "unequal_slope_leaf_hits": 39
+        },
+        "finite_scope": "exact source, martingale-step and fibre identities; asymptotic laws are proved in the manuscripts",
+        "source_sha256": "c2812abb3fb621e951d06ef403bd352dd805993bf3cc63ac69d93cdc012d5ec7",
+        "towers": {
+          "adjacent_tower_lifts": 12282,
+          "exact_mean_absolute_ranks": [
+            [
+              4,
+              "1"
+            ],
+            [
+              5,
+              "5/4"
+            ],
+            [
+              6,
+              "11/8"
+            ],
+            [
+              7,
+              "23/16"
+            ],
+            [
+              8,
+              "49/32"
+            ],
+            [
+              9,
+              "13/8"
+            ],
+            [
+              10,
+              "107/64"
+            ],
+            [
+              11,
+              "7/4"
+            ],
+            [
+              12,
+              "925/512"
+            ],
+            [
+              13,
+              "477/256"
+            ],
+            [
+              14,
+              "3925/2048"
+            ]
+          ],
+          "signed_rational_pair_controls": 120
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.695,
+      "stdout_sha256": "36f5a8955b54834c8e5cab4310f47c8d6ea15d7f396c8b6713824749935a21f7",
+      "result": {
+        "fibres": {
+          "coarse_boundary_loss_sum": 3158,
+          "families_with_coarse_boundary_loss": 1286,
+          "independent_label_moments": 2576,
+          "integer_families": 1288,
+          "outer_equal_interior_unequal_triples": 6
+        },
+        "filtration": {
+          "joint_cells": 3069,
+          "pair_child_checks": 12276,
+          "unequal_slope_leaf_hits": 39
+        },
+        "finite_scope": "exact source, martingale-step and fibre identities; asymptotic laws are proved in the manuscripts",
+        "source_sha256": "c2812abb3fb621e951d06ef403bd352dd805993bf3cc63ac69d93cdc012d5ec7",
+        "towers": {
+          "adjacent_tower_lifts": 12282,
+          "exact_mean_absolute_ranks": [
+            [
+              4,
+              "1"
+            ],
+            [
+              5,
+              "5/4"
+            ],
+            [
+              6,
+              "11/8"
+            ],
+            [
+              7,
+              "23/16"
+            ],
+            [
+              8,
+              "49/32"
+            ],
+            [
+              9,
+              "13/8"
+            ],
+            [
+              10,
+              "107/64"
+            ],
+            [
+              11,
+              "7/4"
+            ],
+            [
+              12,
+              "925/512"
+            ],
+            [
+              13,
+              "477/256"
+            ],
+            [
+              14,
+              "3925/2048"
+            ]
+          ],
+          "signed_rational_pair_controls": 120
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact joint fair-bit filtration, predictable cross brackets, actual numerical fibres, independent label moments, interleaved-hole countercontrols and adjacent-tower signed-rank drift. Coalescing Brownian and growing-population limits remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:06:56.286997+00:00"
+}

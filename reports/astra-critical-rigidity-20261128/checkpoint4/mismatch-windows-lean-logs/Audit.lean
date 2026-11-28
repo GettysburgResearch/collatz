@@ -1,0 +1,5 @@
+import OrderedMismatchWindows
+
+#print axioms Collatz.OrderedMismatchWindows.totalWindows
+#print axioms Collatz.OrderedMismatchWindows.shiftedCosts
+#print axioms Collatz.OrderedMismatchWindows.clusteredWindowCosts

@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "all_short_word_controls": 2104,
+    "exact_crossing_cases": 166,
+    "forbidden_column_cases": 85,
+    "half_window_physical_sources": 29524,
+    "positive_crossings": 162,
+    "row_physical_sources": 14889
+  },
+  "cumulative_marks_through_grade_10": {
+    "1": "243428270567/274877906944",
+    "3": "2177853653/4294967296",
+    "4": "3433268601/8589934592",
+    "6": "35354343/134217728",
+    "7": "236522659/1073741824"
+  },
+  "scope": "Finite exact arithmetic; no asymptotic fitting",
+  "selected_rows": [
+    {
+      "asymptotic_scale": "160/243",
+      "grade": 4,
+      "raw_mass": "19029/32768",
+      "width": 80
+    },
+    {
+      "asymptotic_scale": "262/729",
+      "grade": 5,
+      "raw_mass": "44725/131072",
+      "width": 131
+    },
+    {
+      "asymptotic_scale": "1220/729",
+      "grade": 5,
+      "raw_mass": "970997410186657793/576460752303423488",
+      "width": 610
+    },
+    {
+      "asymptotic_scale": "1456/2187",
+      "grade": 6,
+      "raw_mass": "2759643/4194304",
+      "width": 728
+    },
+    {
+      "asymptotic_scale": "2200/6561",
+      "grade": 7,
+      "raw_mass": "21964103/67108864",
+      "width": 1100
+    },
+    {
+      "asymptotic_scale": "39364/59049",
+      "grade": 9,
+      "raw_mass": "22832172711/34359738368",
+      "width": 19682
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "collatz-original-logarithm-central-reimport/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:26:18.377759+00:00",
+  "finished_utc": "2026-11-28T05:26:27.748695+00:00",
+  "seconds": 9.371,
+  "command": [
+    "/workspace/scratch/31f829b7b808/nine_runtime/lean-4.34.1-linux/bin/lean",
+    "-DwarningAsError=true",
+    "-j",
+    "2",
+    "PublicEndpointAudit.lean"
+  ],
+  "exit_code": 0,
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/ChudnovskyLog32.lean": "14b6027fabae574382cd1dd7070374c2c442d3f9a7d8c35eaf09da75ae107730"
+  },
+  "audit_source_sha256": "b7253c85f53015f50daa18b769035238ffa79953445d3baae795512e3b8c24dc",
+  "stdout_sha256": "7074263d42a7ebcb27e10433fd9c299a448e64e33abc6fbd8099ff84bab15d3c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "verified_roots": {
+    "QuadraticPi.rationalLogRatio_finite_good": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuadraticPi.rationalLogRatio_irrationalityExponent_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuadraticPi.log_two_div_log_three_irrationalityExponent_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuadraticPi.rationalTwoLog_linearForm_lowerBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.ChudnovskyLog32.exponent_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.ChudnovskyLog32.finite_good": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Collatz.ChudnovskyLog32.uniform_linear_form": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "scope": "Independent central fresh imported-root axiom audit after the separate original 1002-module fresh build. Four original roots and three local specializations; only the latter are newly counted. This does not formalize the written Collatz applications or rebuild November extensions, Mathlib, or LeanChecker."
+}

@@ -1,0 +1,701 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:21:25.029587+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_nearcritical_denominator_spectrum.py": "a429f39c495a29c0afdb5cf01f7c0fbcede7ee58eea0fed8eeb390d44d196dd9",
+    "research/astra-critical-rigidity-20261128/cycles/NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+    "research/astra-critical-rigidity-20261128/cycles/SYNCHRONIZED_NEARCRITICAL_SPECTRA.md": "29eeb3e05c3a23310b7cbae1e368a0e122fcec93442b54bb9495dc0822e4639f",
+    "research/astra-critical-rigidity-20261128/cycles/SPARSE_PHYSICAL_INVERSIONS.md": "9b6a690010f76a4d4e487585306214dbabd98b947a896dffa0bf6c5b89b5fa47",
+    "research/astra-critical-rigidity-20261128/cycles/MINIMAL_RECURRENCE_DENOMINATOR.md": "f228c8c0f377b049c6750f094855f0b41fd1c724b5ac9a38cb8d430dd481020b",
+    "research/astra-critical-rigidity-20261128/cycles/check_near_octave_cycle_denominators.py": "7ac3c33da8adac7448514627ef39d44e406b47f86d387de8cb7724723882444d",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 13.08,
+      "stdout_sha256": "e70b118e94835510c423e1a5572bfe1a75e1b6f547278fb8c93f2c3356f1158a",
+      "result": {
+        "scope": "Finite normalized dimensions and true complete denominators on two upper convergents. The continuum and diagonal assertions are written theorems.",
+        "source_sha256": {
+          "NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+          "SYNCHRONIZED_NEARCRITICAL_SPECTRA.md": "29eeb3e05c3a23310b7cbae1e368a0e122fcec93442b54bb9495dc0822e4639f"
+        },
+        "true_cycles": [
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              8
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "5/8",
+            "real_width_approx": 2.0695781,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 205,
+            "true_minimum_approx": 845.681,
+            "true_period": 328,
+            "whole_q_bits": 320
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              4,
+              8
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "7/8",
+            "real_width_approx": 2.1046664,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 838.821,
+            "true_period": 328,
+            "whole_q_bits": 451
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "1",
+            "real_width_approx": 2.1411903,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 328,
+            "true_minimum_approx": 832.012,
+            "true_period": 328,
+            "whole_q_bits": 517
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              3,
+              4
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/12",
+            "real_width_approx": 2.0695544,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 205,
+            "true_minimum_approx": 855.215,
+            "true_period": 492,
+            "whole_q_bits": 322
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              4,
+              5
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 5,
+            "predicted_normalized_dimension": "7/20",
+            "real_width_approx": 2.0696272,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 857.106,
+            "true_period": 820,
+            "whole_q_bits": 452
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              2,
+              4,
+              5,
+              10
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 5,
+            "predicted_normalized_dimension": "3/5",
+            "real_width_approx": 2.104394,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 492,
+            "true_minimum_approx": 855.695,
+            "true_period": 820,
+            "whole_q_bits": 778
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "2/3",
+            "real_width_approx": 2.013642,
+            "reduced_grade": 485,
+            "reduced_period": 306,
+            "true_dimension": 2448,
+            "true_minimum_approx": 71895.606,
+            "true_period": 3672,
+            "whole_q_bits": 3874
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              8
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "7/24",
+            "real_width_approx": 2.0699432,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 855.135,
+            "true_period": 984,
+            "whole_q_bits": 452
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              8,
+              24
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/8",
+            "real_width_approx": 2.0693464,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 615,
+            "true_minimum_approx": 859.876,
+            "true_period": 984,
+            "whole_q_bits": 972
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              6,
+              8
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/12",
+            "real_width_approx": 2.1047134,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 410,
+            "true_minimum_approx": 852.834,
+            "true_period": 984,
+            "whole_q_bits": 648
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              6,
+              8,
+              24
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "3/4",
+            "real_width_approx": 2.1043368,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 738,
+            "true_minimum_approx": 857.576,
+            "true_period": 984,
+            "whole_q_bits": 1167
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              4,
+              8,
+              12
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "13/24",
+            "real_width_approx": 2.1047042,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 533,
+            "true_minimum_approx": 852.796,
+            "true_period": 984,
+            "whole_q_bits": 843
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              4,
+              8,
+              12,
+              24
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "7/8",
+            "real_width_approx": 2.1047208,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 861,
+            "true_minimum_approx": 857.536,
+            "true_period": 984,
+            "whole_q_bits": 1362
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              12
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "2/3",
+            "real_width_approx": 2.1416018,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 656,
+            "true_minimum_approx": 850.476,
+            "true_period": 984,
+            "whole_q_bits": 1039
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              12,
+              24
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "1",
+            "real_width_approx": 2.1413055,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 984,
+            "true_minimum_approx": 855.215,
+            "true_period": 984,
+            "whole_q_bits": 1558
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 14.031,
+      "stdout_sha256": "e70b118e94835510c423e1a5572bfe1a75e1b6f547278fb8c93f2c3356f1158a",
+      "result": {
+        "scope": "Finite normalized dimensions and true complete denominators on two upper convergents. The continuum and diagonal assertions are written theorems.",
+        "source_sha256": {
+          "NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+          "SYNCHRONIZED_NEARCRITICAL_SPECTRA.md": "29eeb3e05c3a23310b7cbae1e368a0e122fcec93442b54bb9495dc0822e4639f"
+        },
+        "true_cycles": [
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              8
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "5/8",
+            "real_width_approx": 2.0695781,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 205,
+            "true_minimum_approx": 845.681,
+            "true_period": 328,
+            "whole_q_bits": 320
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              4,
+              8
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "7/8",
+            "real_width_approx": 2.1046664,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 838.821,
+            "true_period": 328,
+            "whole_q_bits": 451
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 1,
+            "predicted_normalized_dimension": "1",
+            "real_width_approx": 2.1411903,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 328,
+            "true_minimum_approx": 832.012,
+            "true_period": 328,
+            "whole_q_bits": 517
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              3,
+              4
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/12",
+            "real_width_approx": 2.0695544,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 205,
+            "true_minimum_approx": 855.215,
+            "true_period": 492,
+            "whole_q_bits": 322
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              4,
+              5
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 5,
+            "predicted_normalized_dimension": "7/20",
+            "real_width_approx": 2.0696272,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 857.106,
+            "true_period": 820,
+            "whole_q_bits": 452
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              2,
+              4,
+              5,
+              10
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 5,
+            "predicted_normalized_dimension": "3/5",
+            "real_width_approx": 2.104394,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 492,
+            "true_minimum_approx": 855.695,
+            "true_period": 820,
+            "whole_q_bits": 778
+          },
+          {
+            "a": 2,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "2/3",
+            "real_width_approx": 2.013642,
+            "reduced_grade": 485,
+            "reduced_period": 306,
+            "true_dimension": 2448,
+            "true_minimum_approx": 71895.606,
+            "true_period": 3672,
+            "whole_q_bits": 3874
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              8
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "7/24",
+            "real_width_approx": 2.0699432,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 287,
+            "true_minimum_approx": 855.135,
+            "true_period": 984,
+            "whole_q_bits": 452
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              8,
+              24
+            ],
+            "binary_level_selector": 0,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/8",
+            "real_width_approx": 2.0693464,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 615,
+            "true_minimum_approx": 859.876,
+            "true_period": 984,
+            "whole_q_bits": 972
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              6,
+              8
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "5/12",
+            "real_width_approx": 2.1047134,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 410,
+            "true_minimum_approx": 852.834,
+            "true_period": 984,
+            "whole_q_bits": 648
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              6,
+              8,
+              24
+            ],
+            "binary_level_selector": 1,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "3/4",
+            "real_width_approx": 2.1043368,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 738,
+            "true_minimum_approx": 857.576,
+            "true_period": 984,
+            "whole_q_bits": 1167
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              4,
+              8,
+              12
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "13/24",
+            "real_width_approx": 2.1047042,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 533,
+            "true_minimum_approx": 852.796,
+            "true_period": 984,
+            "whole_q_bits": 843
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              3,
+              4,
+              8,
+              12,
+              24
+            ],
+            "binary_level_selector": 2,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "7/8",
+            "real_width_approx": 2.1047208,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 861,
+            "true_minimum_approx": 857.536,
+            "true_period": 984,
+            "whole_q_bits": 1362
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              12
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": false,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "2/3",
+            "real_width_approx": 2.1416018,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 656,
+            "true_minimum_approx": 850.476,
+            "true_period": 984,
+            "whole_q_bits": 1039
+          },
+          {
+            "a": 3,
+            "active_orders": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              12,
+              24
+            ],
+            "binary_level_selector": 3,
+            "crossed_top_level": true,
+            "numerical_cancel_after_spectral_bits": 1,
+            "odd_factor": 3,
+            "predicted_normalized_dimension": "1",
+            "real_width_approx": 2.1413055,
+            "reduced_grade": 65,
+            "reduced_period": 41,
+            "true_dimension": 984,
+            "true_minimum_approx": 855.215,
+            "true_period": 984,
+            "whole_q_bits": 1558
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact positive primitive nearcritical rational cycles, binary sheet stabilizers, complete native cumulative Fourier factors and full denominators, exact rational width bounds and all eight mask choices at one native clock pair. Continuum spectra and diagonal asymptotics remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:21:52.141901+00:00"
+}

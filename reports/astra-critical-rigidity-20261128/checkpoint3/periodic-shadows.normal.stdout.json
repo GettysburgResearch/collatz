@@ -1,0 +1,209 @@
+{
+  "rows": [
+    {
+      "period": 3,
+      "q": 5,
+      "seed_numerator": -7,
+      "entry_clock": 17,
+      "common_numerator": 1,
+      "entry_grades": [
+        6,
+        9
+      ],
+      "slope_gap": 4,
+      "two_lifts_each": [
+        {
+          "repeats": 1,
+          "native_length": 20,
+          "combined_grade": 17
+        },
+        {
+          "repeats": 4,
+          "native_length": 29,
+          "combined_grade": 23
+        },
+        {
+          "repeats": 16,
+          "native_length": 65,
+          "combined_grade": 47
+        },
+        {
+          "repeats": 64,
+          "native_length": 209,
+          "combined_grade": 143
+        },
+        {
+          "repeats": 256,
+          "native_length": 785,
+          "combined_grade": 527
+        }
+      ]
+    },
+    {
+      "period": 4,
+      "q": 13,
+      "seed_numerator": 1,
+      "entry_clock": 9,
+      "common_numerator": 8,
+      "entry_grades": [
+        3,
+        5
+      ],
+      "slope_gap": 3,
+      "two_lifts_each": [
+        {
+          "repeats": 1,
+          "native_length": 13,
+          "combined_grade": 10
+        },
+        {
+          "repeats": 4,
+          "native_length": 25,
+          "combined_grade": 16
+        },
+        {
+          "repeats": 16,
+          "native_length": 73,
+          "combined_grade": 40
+        },
+        {
+          "repeats": 64,
+          "native_length": 265,
+          "combined_grade": 136
+        },
+        {
+          "repeats": 256,
+          "native_length": 1033,
+          "combined_grade": 520
+        }
+      ]
+    },
+    {
+      "period": 5,
+      "q": 29,
+      "seed_numerator": -1481,
+      "entry_clock": 80,
+      "common_numerator": 4,
+      "entry_grades": [
+        19,
+        46
+      ],
+      "slope_gap": 28,
+      "two_lifts_each": [
+        {
+          "repeats": 1,
+          "native_length": 85,
+          "combined_grade": 67
+        },
+        {
+          "repeats": 4,
+          "native_length": 100,
+          "combined_grade": 73
+        },
+        {
+          "repeats": 16,
+          "native_length": 160,
+          "combined_grade": 97
+        },
+        {
+          "repeats": 64,
+          "native_length": 400,
+          "combined_grade": 193
+        },
+        {
+          "repeats": 256,
+          "native_length": 1360,
+          "combined_grade": 577
+        }
+      ]
+    },
+    {
+      "period": 6,
+      "q": 61,
+      "seed_numerator": 1,
+      "entry_clock": 31,
+      "common_numerator": 32,
+      "entry_grades": [
+        6,
+        15
+      ],
+      "slope_gap": 10,
+      "two_lifts_each": [
+        {
+          "repeats": 1,
+          "native_length": 37,
+          "combined_grade": 23
+        },
+        {
+          "repeats": 4,
+          "native_length": 55,
+          "combined_grade": 29
+        },
+        {
+          "repeats": 16,
+          "native_length": 127,
+          "combined_grade": 53
+        },
+        {
+          "repeats": 64,
+          "native_length": 415,
+          "combined_grade": 149
+        },
+        {
+          "repeats": 256,
+          "native_length": 1567,
+          "combined_grade": 533
+        }
+      ]
+    },
+    {
+      "period": 10,
+      "q": 1021,
+      "seed_numerator": 343,
+      "entry_clock": 74,
+      "common_numerator": 512,
+      "entry_grades": [
+        9,
+        42
+      ],
+      "slope_gap": 34,
+      "two_lifts_each": [
+        {
+          "repeats": 1,
+          "native_length": 84,
+          "combined_grade": 53
+        },
+        {
+          "repeats": 4,
+          "native_length": 114,
+          "combined_grade": 59
+        },
+        {
+          "repeats": 16,
+          "native_length": 234,
+          "combined_grade": 83
+        },
+        {
+          "repeats": 64,
+          "native_length": 714,
+          "combined_grade": 179
+        },
+        {
+          "repeats": 256,
+          "native_length": 2634,
+          "combined_grade": 563
+        }
+      ]
+    }
+  ],
+  "noncenter": {
+    "source": 9,
+    "entry_clock": 21,
+    "word": [
+      1,
+      0
+    ],
+    "repeats": 2,
+    "obstruction": 34957008
+  }
+}

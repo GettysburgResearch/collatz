@@ -1,0 +1,24 @@
+{
+  "schema": "collatz-critical-rigidity-repository-validation/v1",
+  "success": true,
+  "validated_local_commit": "a8ce44b8de88faa44dd160f09b6c3939397f588b",
+  "validated_tree": "6ca2472ee847f6f9af6e85fd3bdbb988ba17da52",
+  "tracked_files": 645,
+  "all_tracked_files_present": true,
+  "clean_before_validation": true,
+  "clean_after_validation": true,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "started_utc": "2026-11-28T01:56:07.592604+00:00",
+  "finished_utc": "2026-11-28T01:56:08.374313+00:00",
+  "seconds": 0.776,
+  "stdout_sha256": "7d3bd24a7567c7b06dc4181f07cc921db4dc3fbaaf549326b20e7f46672e1e52",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Complete clean-checkout integrity gate; this is not a mathematical proof. The published commit may have a different commit object with this exact validated tree."
+}

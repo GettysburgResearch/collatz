@@ -1,0 +1,133 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:53:15.708405+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_one_sparse_orbit.py": "7d14df51affa41731dd48d859cf000b85abc57faa5dc578096bd16c99e2f6d5d",
+    "research/astra-critical-rigidity-20261128/literature/ONE_SPARSE_DIVERGENT_ORBIT.md": "988a3768ba9de0f295228267915b00364475daf26d30f5e9373f1d5856c94732",
+    "research/astra-critical-rigidity-20261128/literature/UNIT_PERTURBATION_ON_MULTIPLES_OF_THREE.md": "d6e49f6b52ed92c69dd980b2a54e1baeafa0db7cd324160d9ecbf1984880facf"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 1.256,
+      "stdout_sha256": "53684d0e18b0a5be082ffe65898e333e09af977094283a5b8f57e59cee46d7bc",
+      "result": {
+        "scenarios": [
+          {
+            "anchor": 1,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 126,
+              "initial_dyadic_ray": 126,
+              "modified_captured": 16384,
+              "true_predecessors": 16384
+            },
+            "trace_sha256": "a29ec975763fbd84a7afec710819a316a19a1c44cf54040d9dfd010e7efd6c9e"
+          },
+          {
+            "anchor": 5,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 15404,
+              "initial_dyadic_ray": 113,
+              "modified_captured": 15404,
+              "true_predecessors": 15386
+            },
+            "trace_sha256": "78b38035f3911c8aed11dc476d539e09d70587823a8c058163ac7b1deb146253"
+          },
+          {
+            "anchor": 85,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 451,
+              "initial_dyadic_ray": 51,
+              "modified_captured": 451,
+              "true_predecessors": 400
+            },
+            "trace_sha256": "79faeaeb9a216d53e351bccd1685484408e1af4b7378d9aa74032fd0b6c1936d"
+          },
+          {
+            "anchor": 341,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 592,
+              "initial_dyadic_ray": 28,
+              "modified_captured": 592,
+              "true_predecessors": 564
+            },
+            "trace_sha256": "fadca4851fe3170fd11fcf3e53a0e9e25325d6ab657301a13cf876d2ee8c98a2"
+          }
+        ],
+        "scope": "Exact finite ordinary paths certified through 1, modifications up to the first growing spine, all one-unit ternary candidates at 32768 inputs. No limiting density or divergent original orbit is inferred.",
+        "sources_per_scenario": 16384,
+        "unit_comparisons": 32768
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 1.372,
+      "stdout_sha256": "53684d0e18b0a5be082ffe65898e333e09af977094283a5b8f57e59cee46d7bc",
+      "result": {
+        "scenarios": [
+          {
+            "anchor": 1,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 126,
+              "initial_dyadic_ray": 126,
+              "modified_captured": 16384,
+              "true_predecessors": 16384
+            },
+            "trace_sha256": "a29ec975763fbd84a7afec710819a316a19a1c44cf54040d9dfd010e7efd6c9e"
+          },
+          {
+            "anchor": 5,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 15404,
+              "initial_dyadic_ray": 113,
+              "modified_captured": 15404,
+              "true_predecessors": 15386
+            },
+            "trace_sha256": "78b38035f3911c8aed11dc476d539e09d70587823a8c058163ac7b1deb146253"
+          },
+          {
+            "anchor": 85,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 451,
+              "initial_dyadic_ray": 51,
+              "modified_captured": 451,
+              "true_predecessors": 400
+            },
+            "trace_sha256": "79faeaeb9a216d53e351bccd1685484408e1af4b7378d9aa74032fd0b6c1936d"
+          },
+          {
+            "anchor": 341,
+            "counts": {
+              "complete_sources": 16384,
+              "different_stopped_paths": 592,
+              "initial_dyadic_ray": 28,
+              "modified_captured": 592,
+              "true_predecessors": 564
+            },
+            "trace_sha256": "fadca4851fe3170fd11fcf3e53a0e9e25325d6ab657301a13cf876d2ee8c98a2"
+          }
+        ],
+        "scope": "Exact finite ordinary paths certified through 1, modifications up to the first growing spine, all one-unit ternary candidates at 32768 inputs. No limiting density or divergent original orbit is inferred.",
+        "sources_per_scenario": 16384,
+        "unit_comparisons": 32768
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Four finite families of complete actual paths through one, exact ternary-multiple predecessor rays, modified capture and shared stopped prefixes, bounded edge changes, and the exact unit perturbation conjugacy. Limiting densities and statistical comparison remain written; modified trajectories are not Collatz counterexamples.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:53:18.336106+00:00"
+}

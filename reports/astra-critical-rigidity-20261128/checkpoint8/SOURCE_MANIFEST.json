@@ -1,0 +1,170 @@
+{
+  "scope": "Eighth checkpoint: full connected Lean router, actual-prefix closure and exact finite-maximum/logarithmic equivalence; global two-grade Sidon and binary-code restriction; signed ordinary-prefix cross-error rigidity; fixed irrational clock envelope. The new cyclic-order Lean prototype, higher-collision arguments, and line-cycle/shadow manuscript are excluded.",
+  "prior_public_commit": "8f6da3ef960a8274891714689778f3a6c0ab22c2",
+  "files": [
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint7/repository-validation.json",
+      "sha256": "4a5197ccec5af20c8aa887be488daccbc91d0439832f0bcc3695a508d776684b"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint7/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint7/repository-validation.stdout.log",
+      "sha256": "7d3bd24a7567c7b06dc4181f07cc921db4dc3fbaaf549326b20e7f46672e1e52"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/REVIEW.md",
+      "sha256": "909873d2472b643c815250adf4ca8893354ef11426636258e2450213239bbdd5"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/AdjacentWordClosure.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/AdjacentWordClosure.stdout.log",
+      "sha256": "b915d656d4c1f99e05d432d1c6c73f9af117a31237a271196fd6447d01090fde"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/AffineOrbit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/AffineOrbit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/Audit.lean",
+      "sha256": "8f3fe87e4b5e254b0ec2ab9a416ecfd9f1f301014ca5fa2d0423a32f3f758f82"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/Audit.stdout.log",
+      "sha256": "4b73925e155731126ddfd43ddc7ff7de0ec30b701f208cde21d4f9760ab28a5a"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/ClockCarryEquivalence.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/ClockCarryEquivalence.stdout.log",
+      "sha256": "1e5175c5a4ed558d46bfb7c24196323eec0c36aea081660e77808c3c301f8926"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/PairedClock.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/PairedClock.stdout.log",
+      "sha256": "1f8df896cc7981507e6746616890357ed8a6650a8e3268fe0428e52b05e61c37"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/PrefixCarryClosure.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/PrefixCarryClosure.stdout.log",
+      "sha256": "0318e0ee965a89b035b7ea1956b2c50829251395dbee2b540527a7f1752b13c0"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/SignedReturnRouter.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean-logs/SignedReturnRouter.stdout.log",
+      "sha256": "3d1c8edf70e1817bd5135598d0b228fa7ba145c493cf09b341a366c9a4f625b0"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/clock-carry-lean.json",
+      "sha256": "9e7ac1a6ebdd118326fd569091571742d77af5dbe57589b42f48ce6e8de672fb"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/small-residue-phases-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/small-residue-phases-optimized.stdout.log",
+      "sha256": "c6e855c05a79be634cfeb424e467f9385ccaaefdc4ef3b02de58bbe9a66e95f7"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/small-residue-phases.json",
+      "sha256": "6647a35ff1ea635b00910fe9ac315152b361ecd20620c3d86f08bbfa33ad8458"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/small-residue-phases.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/small-residue-phases.stdout.log",
+      "sha256": "c6e855c05a79be634cfeb424e467f9385ccaaefdc4ef3b02de58bbe9a66e95f7"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/two-grade-sidon-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/two-grade-sidon-optimized.stdout.log",
+      "sha256": "768d076a764fea7cc5a50372240f61ca89d51597526acf33ee52014c6b0e64ca"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/two-grade-sidon.json",
+      "sha256": "01ee1d287487df3d3cb6018dd1d1b440ff1556afb8617a45719738baef71cd85"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/two-grade-sidon.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint8/two-grade-sidon.stdout.log",
+      "sha256": "768d076a764fea7cc5a50372240f61ca89d51597526acf33ee52014c6b0e64ca"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/README.md",
+      "sha256": "040f499bce5e585d5d44bc17bc47e0c22202374b2f6e67d120e7531d38c51ade"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/check_lean.py",
+      "sha256": "6f1ebdff7da202ddf7fd6ee92a9824ee97e446b652f935e3450e9a756ea0d607"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/TWO_GRADE_SIDON.md",
+      "sha256": "2f2d59e0a72661001acee3edc77c99b3ab6b39bc1226c8e6b6e882c2d698db14"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_two_grade_sidon.py",
+      "sha256": "6c7afa334ef3f1f015f23df4115ad066d37e80852b8a0e2a2c5d3ba25521a1e1"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/two_grade_sidon_controls.json",
+      "sha256": "768d076a764fea7cc5a50372240f61ca89d51597526acf33ee52014c6b0e64ca"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/SMALL_RESIDUE_PHASES.md",
+      "sha256": "12aac35f3bb64efcb009e75ff8300437ad62097653a5dc3731a224cbbd00c2e4"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_small_residue_phases.py",
+      "sha256": "e0ddef766d01304ec3951e5b04ffec8773bab160466e6b58f80fc0d9fc2ffa1b"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/ClockCarryEquivalence.lean",
+      "sha256": "8e221622fbb397223db61be639c3851240899befadc4de3ccadb1181a550b17c"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/FIXED_IRRATIONAL_CLOCK_ENVELOPE.md",
+      "sha256": "126d1ed7d5a78c203f3b271ea2ad0604f6809ea4ed904466bd5a1d6e25bc632d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/PrefixCarryClosure.lean",
+      "sha256": "03af4a074ca77c362123379e0d693cd137c66ec724f33ecbd74e5cca0e4c9ffc"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/SignedReturnRouter.lean",
+      "sha256": "bd44fba71f618516bde1f5950e5709f00173316298c619705ac94a5bdc985512"
+    }
+  ]
+}

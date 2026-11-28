@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_two_grade_sidon.py",
+  "sha256": "6c7afa334ef3f1f015f23df4115ad066d37e80852b8a0e2a2c5d3ba25521a1e1",
+  "started_utc": "2026-11-28T02:04:49.278412+00:00",
+  "scope": "Finite actual integer pair-order preservation and equal-sum splitting, punctured binary aggregate code after explicit Sidon selection, and a complete rational-cycle negative control. The global ordinary-cycle Sidon theorem and coding asymptotics are written arguments.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.32,
+      "stdout": "{\n  \"integer_paths\": [\n    {\n      \"floor\": 4096,\n      \"edges\": 12,\n      \"columns\": 8,\n      \"pairs\": 36,\n      \"strict_comparison_dates\": 12,\n      \"equal_source_splits\": 0,\n      \"equal_aggregate_repetitions\": 0,\n      \"sidon_columns\": 4,\n      \"retained_positions\": 8,\n      \"distinct_binary_pair_sums\": 10\n    },\n    {\n      \"floor\": 16384,\n      \"edges\": 13,\n      \"columns\": 15,\n      \"pairs\": 120,\n      \"strict_comparison_dates\": 13,\n      \"equal_source_splits\": 2,\n      \"equal_aggregate_repetitions\": 2,\n      \"sidon_columns\": 8,\n      \"retained_positions\": 11,\n      \"distinct_binary_pair_sums\": 36\n    },\n    {\n      \"floor\": 65536,\n      \"edges\": 14,\n      \"columns\": 45,\n      \"pairs\": 1035,\n      \"strict_comparison_dates\": 14,\n      \"equal_source_splits\": 23,\n      \"equal_aggregate_repetitions\": 96,\n      \"sidon_columns\": 16,\n      \"retained_positions\": 12,\n      \"distinct_binary_pair_sums\": 136\n    },\n    {\n      \"floor\": 262144,\n      \"edges\": 16,\n      \"columns\": 49,\n      \"pairs\": 1225,\n      \"strict_comparison_dates\": 16,\n      \"equal_source_splits\": 8,\n      \"equal_aggregate_repetitions\": 22,\n      \"sidon_columns\": 20,\n      \"retained_positions\": 14,\n      \"distinct_binary_pair_sums\": 210\n    }\n  ],\n  \"rational\": {\n    \"period\": 7,\n    \"A\": 12,\n    \"denominator\": 1909,\n    \"odd_numerators\": [\n      4663,\n      7949,\n      6439,\n      10613,\n      8437,\n      6805,\n      5581\n    ],\n    \"four_times_fold_floor_numerator\": 29265,\n    \"signed_heights\": [\n      -401,\n      -398,\n      738,\n      -1167,\n      984,\n      -1556,\n      1312\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.391,
+      "stdout": "{\n  \"integer_paths\": [\n    {\n      \"floor\": 4096,\n      \"edges\": 12,\n      \"columns\": 8,\n      \"pairs\": 36,\n      \"strict_comparison_dates\": 12,\n      \"equal_source_splits\": 0,\n      \"equal_aggregate_repetitions\": 0,\n      \"sidon_columns\": 4,\n      \"retained_positions\": 8,\n      \"distinct_binary_pair_sums\": 10\n    },\n    {\n      \"floor\": 16384,\n      \"edges\": 13,\n      \"columns\": 15,\n      \"pairs\": 120,\n      \"strict_comparison_dates\": 13,\n      \"equal_source_splits\": 2,\n      \"equal_aggregate_repetitions\": 2,\n      \"sidon_columns\": 8,\n      \"retained_positions\": 11,\n      \"distinct_binary_pair_sums\": 36\n    },\n    {\n      \"floor\": 65536,\n      \"edges\": 14,\n      \"columns\": 45,\n      \"pairs\": 1035,\n      \"strict_comparison_dates\": 14,\n      \"equal_source_splits\": 23,\n      \"equal_aggregate_repetitions\": 96,\n      \"sidon_columns\": 16,\n      \"retained_positions\": 12,\n      \"distinct_binary_pair_sums\": 136\n    },\n    {\n      \"floor\": 262144,\n      \"edges\": 16,\n      \"columns\": 49,\n      \"pairs\": 1225,\n      \"strict_comparison_dates\": 16,\n      \"equal_source_splits\": 8,\n      \"equal_aggregate_repetitions\": 22,\n      \"sidon_columns\": 20,\n      \"retained_positions\": 14,\n      \"distinct_binary_pair_sums\": 210\n    }\n  ],\n  \"rational\": {\n    \"period\": 7,\n    \"A\": 12,\n    \"denominator\": 1909,\n    \"odd_numerators\": [\n      4663,\n      7949,\n      6439,\n      10613,\n      8437,\n      6805,\n      5581\n    ],\n    \"four_times_fold_floor_numerator\": 29265,\n    \"signed_heights\": [\n      -401,\n      -398,\n      738,\n      -1167,\n      984,\n      -1556,\n      1312\n    ]\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

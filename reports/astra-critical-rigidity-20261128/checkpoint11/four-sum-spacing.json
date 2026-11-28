@@ -1,0 +1,506 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "finished_utc": "2026-11-28T03:24:50.711886+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_four_sum_spacing.py": "ab16043986f62277de0eaa3f05c124558fed79094a55d318640765117a737d78",
+    "research/astra-critical-rigidity-20261128/cycles/FOUR_SUM_GEOMETRIC_SPACING.md": "6e2572323631e561d4111201bc499daecaeb912f6d2ddeb85db709555de5fb53"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.9,
+      "stdout_sha256": "1eeeca76067cde37a719b37e168e5285759066f4ce342f08a8d8050ec390f6f5",
+      "result": {
+        "calendar": [
+          {
+            "moment": 4,
+            "period": 41,
+            "one_step_offset": 24,
+            "high_threshold": 25,
+            "rows_by_region": [
+              10,
+              7,
+              9,
+              8,
+              7
+            ],
+            "checked_predecessors": [
+              1002,
+              861,
+              675,
+              72,
+              77
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 41,
+            "one_step_offset": 24,
+            "high_threshold": 26,
+            "rows_by_region": [
+              10,
+              7,
+              10,
+              7,
+              7
+            ],
+            "checked_predecessors": [
+              1008,
+              861,
+              750,
+              63,
+              77
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 306,
+            "one_step_offset": 179,
+            "high_threshold": 183,
+            "rows_by_region": [
+              75,
+              52,
+              57,
+              70,
+              52
+            ],
+            "checked_predecessors": [
+              7455,
+              6396,
+              4275,
+              630,
+              572
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 306,
+            "one_step_offset": 179,
+            "high_threshold": 198,
+            "rows_by_region": [
+              75,
+              52,
+              72,
+              55,
+              52
+            ],
+            "checked_predecessors": [
+              7545,
+              6396,
+              5400,
+              495,
+              572
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 665,
+            "one_step_offset": 389,
+            "high_threshold": 399,
+            "rows_by_region": [
+              163,
+              113,
+              124,
+              152,
+              113
+            ],
+            "checked_predecessors": [
+              16203,
+              13899,
+              9300,
+              1368,
+              1243
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 665,
+            "one_step_offset": 389,
+            "high_threshold": 432,
+            "rows_by_region": [
+              163,
+              113,
+              157,
+              119,
+              113
+            ],
+            "checked_predecessors": [
+              16401,
+              13899,
+              11775,
+              1071,
+              1243
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 15601,
+            "one_step_offset": 9126,
+            "high_threshold": 9360,
+            "rows_by_region": [
+              3824,
+              2651,
+              2886,
+              3589,
+              2651
+            ],
+            "checked_predecessors": [
+              379986,
+              326073,
+              216450,
+              32301,
+              29161
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 15601,
+            "one_step_offset": 9126,
+            "high_threshold": 10140,
+            "rows_by_region": [
+              3824,
+              2651,
+              3666,
+              2809,
+              2651
+            ],
+            "checked_predecessors": [
+              384666,
+              326073,
+              274950,
+              25281,
+              29161
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          }
+        ],
+        "cube": [
+          {
+            "length": 1,
+            "nonempty_uniform_sets": 3
+          },
+          {
+            "length": 2,
+            "nonempty_uniform_sets": 15
+          },
+          {
+            "length": 3,
+            "nonempty_uniform_sets": 255
+          }
+        ],
+        "collision_fiber": {
+          "source_size": 8,
+          "true_distinct_triples": 120,
+          "eight_distinct_unordered_pairs": 1
+        }
+      }
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 1.004,
+      "stdout_sha256": "1eeeca76067cde37a719b37e168e5285759066f4ce342f08a8d8050ec390f6f5",
+      "result": {
+        "calendar": [
+          {
+            "moment": 4,
+            "period": 41,
+            "one_step_offset": 24,
+            "high_threshold": 25,
+            "rows_by_region": [
+              10,
+              7,
+              9,
+              8,
+              7
+            ],
+            "checked_predecessors": [
+              1002,
+              861,
+              675,
+              72,
+              77
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 41,
+            "one_step_offset": 24,
+            "high_threshold": 26,
+            "rows_by_region": [
+              10,
+              7,
+              10,
+              7,
+              7
+            ],
+            "checked_predecessors": [
+              1008,
+              861,
+              750,
+              63,
+              77
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 306,
+            "one_step_offset": 179,
+            "high_threshold": 183,
+            "rows_by_region": [
+              75,
+              52,
+              57,
+              70,
+              52
+            ],
+            "checked_predecessors": [
+              7455,
+              6396,
+              4275,
+              630,
+              572
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 306,
+            "one_step_offset": 179,
+            "high_threshold": 198,
+            "rows_by_region": [
+              75,
+              52,
+              72,
+              55,
+              52
+            ],
+            "checked_predecessors": [
+              7545,
+              6396,
+              5400,
+              495,
+              572
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 665,
+            "one_step_offset": 389,
+            "high_threshold": 399,
+            "rows_by_region": [
+              163,
+              113,
+              124,
+              152,
+              113
+            ],
+            "checked_predecessors": [
+              16203,
+              13899,
+              9300,
+              1368,
+              1243
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 665,
+            "one_step_offset": 389,
+            "high_threshold": 432,
+            "rows_by_region": [
+              163,
+              113,
+              157,
+              119,
+              113
+            ],
+            "checked_predecessors": [
+              16401,
+              13899,
+              11775,
+              1071,
+              1243
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 15601,
+            "one_step_offset": 9126,
+            "high_threshold": 9360,
+            "rows_by_region": [
+              3824,
+              2651,
+              2886,
+              3589,
+              2651
+            ],
+            "checked_predecessors": [
+              379986,
+              326073,
+              216450,
+              32301,
+              29161
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          },
+          {
+            "moment": 4,
+            "period": 15601,
+            "one_step_offset": 9126,
+            "high_threshold": 10140,
+            "rows_by_region": [
+              3824,
+              2651,
+              3666,
+              2809,
+              2651
+            ],
+            "checked_predecessors": [
+              384666,
+              326073,
+              274950,
+              25281,
+              29161
+            ],
+            "largest_attained_predecessor_by_region": [
+              12,
+              14,
+              17,
+              16,
+              20
+            ]
+          }
+        ],
+        "cube": [
+          {
+            "length": 1,
+            "nonempty_uniform_sets": 3
+          },
+          {
+            "length": 2,
+            "nonempty_uniform_sets": 15
+          },
+          {
+            "length": 3,
+            "nonempty_uniform_sets": 255
+          }
+        ],
+        "collision_fiber": {
+          "source_size": 8,
+          "true_distinct_triples": 120,
+          "eight_distinct_unordered_pairs": 1
+        }
+      }
+    }
+  ],
+  "normal_optimized_same": true,
+  "seconds": 1.905,
+  "scope": "Exact finite controls of the formulas and actual calendars named in the coordinating review. No asymptotic onset or external analytic theorem is certified by these computations."
+}

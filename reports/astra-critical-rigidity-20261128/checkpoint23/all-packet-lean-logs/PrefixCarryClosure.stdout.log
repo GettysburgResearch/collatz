@@ -1,0 +1,4 @@
+'Collatz.PrefixCarryClosure.route_replays' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PrefixCarryClosure.complete_adjacent_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PrefixCarryClosure.return_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PrefixCarryClosure.close_positive_source_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]

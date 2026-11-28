@@ -1,0 +1,85 @@
+{
+  "native_runs": [
+    {
+      "distinct_H_denominators": [
+        1
+      ],
+      "h": 8,
+      "interior_origins": 130,
+      "interior_signs": [
+        1
+      ],
+      "linear_resonant": true,
+      "q": 1,
+      "square_resonant": true,
+      "states": 145,
+      "stride": 5
+    },
+    {
+      "distinct_H_denominators": [
+        1
+      ],
+      "h": 8,
+      "interior_origins": 130,
+      "interior_signs": [
+        1
+      ],
+      "linear_resonant": false,
+      "q": 169,
+      "square_resonant": true,
+      "states": 145,
+      "stride": 5
+    },
+    {
+      "distinct_H_denominators": [
+        17
+      ],
+      "h": 8,
+      "interior_origins": 130,
+      "interior_signs": [
+        1
+      ],
+      "linear_resonant": false,
+      "q": 17,
+      "square_resonant": false,
+      "states": 145,
+      "stride": 5
+    },
+    {
+      "distinct_H_denominators": [
+        1
+      ],
+      "h": 19,
+      "interior_origins": 109,
+      "interior_signs": [
+        1
+      ],
+      "linear_resonant": true,
+      "q": 1,
+      "square_resonant": true,
+      "states": 145,
+      "stride": 12
+    },
+    {
+      "distinct_H_denominators": [
+        1
+      ],
+      "h": 19,
+      "interior_origins": 109,
+      "interior_signs": [
+        1
+      ],
+      "linear_resonant": false,
+      "q": 51165409,
+      "square_resonant": true,
+      "states": 145,
+      "stride": 12
+    }
+  ],
+  "transported_positive_quartet": {
+    "center_date": 35,
+    "left_edges": 35,
+    "nonrepeated_true_equalities": 71,
+    "right_edges": 35
+  }
+}

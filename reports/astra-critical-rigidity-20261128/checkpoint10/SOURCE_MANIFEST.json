@@ -1,0 +1,186 @@
+{
+  "scope": "Tenth checkpoint: fully proved integer pair-order kernel, chronological rational six-sum denominator powers, positive descending intervals, prime-grade denominator classification and the complete fixed-grade decision theorem with exact grade 1\u20135 solver execution. Later prime-power, composite-scale and residue-fiber proposals excluded.",
+  "prior_public_commit": "f769b0c79059cc18b0be89e880ed6ea6a279e1c0",
+  "files": [
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/REVIEW.md",
+      "sha256": "bf7457fc6451c13a7e44e62944461eed500ec463ce9876ee682d08780e527ade"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/fixed-grade-spectrum-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/fixed-grade-spectrum-optimized.stdout.log",
+      "sha256": "71fdcd429c86111f5aff70a9b9397657e9926eef974f50a5632f94bada079b1b"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/fixed-grade-spectrum.json",
+      "sha256": "716ac5beb9f2be01b7b16dd1fef9ff692e7c7eaa5723b65f1b73353bb914ba27"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/fixed-grade-spectrum.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/fixed-grade-spectrum.stdout.log",
+      "sha256": "71fdcd429c86111f5aff70a9b9397657e9926eef974f50a5632f94bada079b1b"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/positive-descents-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/positive-descents-optimized.stdout.log",
+      "sha256": "8cc06db54d50650b937a56429ea3085732293eb56abcc07e5676313d51c275bc"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/positive-descents.json",
+      "sha256": "06973641e29faf7bb11bdf78ec44d8d24128e6e31aac99687a09acd0d36e2c32"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/positive-descents.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/positive-descents.stdout.log",
+      "sha256": "8cc06db54d50650b937a56429ea3085732293eb56abcc07e5676313d51c275bc"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/prime-grade-denominators-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/prime-grade-denominators-optimized.stdout.log",
+      "sha256": "b97acb882fbaa5d81f4883c3cec44c4272aaa8c1bb8e2027dd8975dc018d1f4f"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/prime-grade-denominators.json",
+      "sha256": "f9daa2caea12f6741c0cfe50c2011b233a856d87997c6c1b83b1d8d9602b72a1"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/prime-grade-denominators.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/prime-grade-denominators.stdout.log",
+      "sha256": "b97acb882fbaa5d81f4883c3cec44c4272aaa8c1bb8e2027dd8975dc018d1f4f"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/rational-six-sum-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/rational-six-sum-optimized.stdout.log",
+      "sha256": "11178ca14bc600c392a07eb08d9b382183c966099d7c247eed48c59b28549543"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/rational-six-sum.json",
+      "sha256": "63b0f751a42db604f3924c2091c3d4fe2a6311f94e905ed209cfefba538976f5"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/rational-six-sum.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/rational-six-sum.stdout.log",
+      "sha256": "11178ca14bc600c392a07eb08d9b382183c966099d7c247eed48c59b28549543"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean-logs/Audit.lean",
+      "sha256": "b5205c1cab8b46e8f43a6fde8e737b9ff72a199364981029184b8be75fa4e750"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean-logs/Audit.stdout.log",
+      "sha256": "73a951f7366f30ca45f36938e4cd1176406f0e3f3929a6be28957027c5afd077"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean-logs/TwoGradePairOrder.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean-logs/TwoGradePairOrder.stdout.log",
+      "sha256": "73a951f7366f30ca45f36938e4cd1176406f0e3f3929a6be28957027c5afd077"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint10/two-grade-pair-order-lean.json",
+      "sha256": "76e7e2e0c9e2f748dfbcb594b7d936a82f5a56e6c7644bbac4ecd7e1fe5698b8"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint9/repository-validation.json",
+      "sha256": "578d496fdd635f61dd1435f8ec2d38c9dc8cb1ed5076cee852579a3c02c194cb"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint9/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint9/repository-validation.stdout.log",
+      "sha256": "dc205409adea95506f432aa4d4740ca1ef20188acdeac0de0d2528896da259c7"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/README.md",
+      "sha256": "97a0664f0e1d01bbb762fa8a9426b9d378baf15d6009d702e761d5d2846c074e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/check_lean.py",
+      "sha256": "eb144c685a855127e9a827d989de3383e323a1d0555b0654d0344a96d0e9de90"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/RATIONAL_SIX_SUM_DENOMINATORS.md",
+      "sha256": "9ffdb055b5709a8344152d317ebfe424071706b740f63e8144c51be9c12b0c0c"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/TwoGradePairOrder.lean",
+      "sha256": "3e39022eedf446f9e62c49771d1ceb3a770695b84a0da8cf94ea53ca07c6f348"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py",
+      "sha256": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/rational_six_sum_controls.json",
+      "sha256": "11178ca14bc600c392a07eb08d9b382183c966099d7c247eed48c59b28549543"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/DECIDABLE_FIXED_GRADE_SPECTRUM.md",
+      "sha256": "d67456ec3ffb8a579313e4ee9540d636741e1fbdd1f3f36721fabc6a4e073224"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/FIXED_GRADE_SPECTRUM_SOLVER.jsonl",
+      "sha256": "71fdcd429c86111f5aff70a9b9397657e9926eef974f50a5632f94bada079b1b"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/POSITIVE_DESCENDING_INTERVALS.md",
+      "sha256": "eb412a8e0f627464c16fec971ce2dd65fdc38fabc4c3aedc744d6ac9471c9f91"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/POSITIVE_DESCENT_CONTROLS.json",
+      "sha256": "8cc06db54d50650b937a56429ea3085732293eb56abcc07e5676313d51c275bc"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/PRIME_GRADE_DENOMINATORS.md",
+      "sha256": "fc929253520f9c559a77e847d4b77b0b4450af0bcf85701d4022393a1dbb214c"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/PRIME_GRADE_DENOMINATOR_CONTROLS.json",
+      "sha256": "b97acb882fbaa5d81f4883c3cec44c4272aaa8c1bb8e2027dd8975dc018d1f4f"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_positive_descents.py",
+      "sha256": "602ca318fc92daeab542afb2385b2d662c12497ed233bda21aa5dbee3a5d2648"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_prime_grade_denominators.py",
+      "sha256": "aae6f0098ff1df708fff72f41006264f6f0748b3da9a2c6d9487221c6044c8c9"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/solve_denominator_spectrum.py",
+      "sha256": "6c93b4f209c98170956d1833d6c3ea3efb13fe484514f1204e09f16fd499f51f"
+    }
+  ]
+}

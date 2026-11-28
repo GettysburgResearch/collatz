@@ -1,0 +1,185 @@
+{
+  "counts": {
+    "largest_observed_extra_common_factor": 5,
+    "primitive_words": 36,
+    "true_rational_native_steps": 4968
+  },
+  "sharp_families": [
+    {
+      "grade": 2,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          23,
+          46
+        ]
+      ],
+      "prime": 2
+    },
+    {
+      "grade": 3,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          11,
+          33
+        ],
+        [
+          23,
+          69
+        ]
+      ],
+      "prime": 3
+    },
+    {
+      "grade": 4,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          11,
+          33
+        ],
+        [
+          23,
+          69
+        ]
+      ],
+      "prime": 2
+    },
+    {
+      "grade": 5,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          15
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          11,
+          55
+        ],
+        [
+          23,
+          115
+        ]
+      ],
+      "prime": 5
+    },
+    {
+      "grade": 7,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          35
+        ],
+        [
+          11,
+          77
+        ],
+        [
+          23,
+          161
+        ]
+      ],
+      "prime": 7
+    },
+    {
+      "grade": 19,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          55
+        ],
+        [
+          5,
+          95
+        ],
+        [
+          11,
+          207
+        ],
+        [
+          23,
+          435
+        ]
+      ],
+      "prime": 19
+    },
+    {
+      "grade": 25,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          63
+        ],
+        [
+          5,
+          105
+        ],
+        [
+          11,
+          231
+        ],
+        [
+          23,
+          483
+        ]
+      ],
+      "prime": 5
+    },
+    {
+      "grade": 49,
+      "n_and_denominator_bit_length": [
+        [
+          3,
+          129
+        ],
+        [
+          5,
+          215
+        ],
+        [
+          11,
+          473
+        ],
+        [
+          23,
+          989
+        ]
+      ],
+      "prime": 7
+    }
+  ]
+}

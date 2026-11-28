@@ -1,0 +1,4 @@
+import FullDenominatorPairZero
+
+#print axioms Collatz.FullDenominatorPairZero.full_denominator_divides_of_zero
+#print axioms Collatz.FullDenominatorPairZero.one_zero_forces_all_zero

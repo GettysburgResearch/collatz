@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/literature/check_open_arc_height.py",
+  "source_sha256": "d9f2fac9879c6e0227380f24ba53e350f34e2ee2b4f13cf2f7a4b70cccc9e963",
+  "normal_and_optimized_match": true,
+  "finished_utc": "2026-11-27T23:21:50.014556+00:00",
+  "scope": "Exact finite controls only; no asymptotic theorem inferred from enumeration.",
+  "result": {
+    "arcs_cases": 1750,
+    "center_or_reference_hits": 63,
+    "custom_reference_cases": 875,
+    "depth_12_smallest_seeds_for_at_most_k_runs": {
+      "1": 4095,
+      "2": 151,
+      "3": 151,
+      "4": 15
+    },
+    "of_those_starting_odd": 699,
+    "primitive_positive_rational_cycle_words_to_length_10": 1578,
+    "sharp_sources_length_12": [
+      4095,
+      4096
+    ],
+    "trivial_cycle_control_steps": 100
+  }
+}

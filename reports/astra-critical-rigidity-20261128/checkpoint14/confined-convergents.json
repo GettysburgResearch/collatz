@@ -1,0 +1,109 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:10:39.895900+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_confined_convergent_gaps.py": "439bab70ca522be4c106afdc3ba950d33cff0104ef8764990972cc05d0309fd1",
+    "research/astra-critical-rigidity-20261128/cycles/CONFINED_CONVERGENT_GAPS.md": "13045c9135febb852042895786ffdc9548aa619e99154e768366624419f8a913",
+    "research/astra-critical-rigidity-20261128/cycles/FROBENIUS_BAND_EXITS.md": "83432d8a0b7f1d47b7dc2eb7ab6c9b7c5018205483368b7dd6439e0674358840",
+    "research/astra-critical-rigidity-20261128/cycles/check_frobenius_band_exits.py": "63a6099e13a2e32a8288e2e22e54e574936bb8148a1e917ec4a7eb06c370d3c3",
+    "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.326,
+      "stdout_sha256": "66a12fe3311b6427ed9817b1c7165af099bdf3f993c3c734e242648b648aca87",
+      "result": {
+        "convergent_controls": [
+          {
+            "exact_rectangles": 26,
+            "next_q": 53,
+            "q": 41,
+            "rational_approximant_numerator": 65,
+            "sampled_offsets": 9,
+            "unrestricted_time_wrap_failures": 1789,
+            "with_negative_time": 23,
+            "with_repeated_inner_rank": 7
+          },
+          {
+            "exact_rectangles": 52,
+            "next_q": 306,
+            "q": 53,
+            "rational_approximant_numerator": 84,
+            "sampled_offsets": 11,
+            "unrestricted_time_wrap_failures": 3921,
+            "with_negative_time": 52,
+            "with_repeated_inner_rank": 10
+          },
+          {
+            "exact_rectangles": 12462,
+            "next_q": 665,
+            "q": 306,
+            "rational_approximant_numerator": 485,
+            "sampled_offsets": 62,
+            "unrestricted_time_wrap_failures": 0,
+            "with_negative_time": 12242,
+            "with_repeated_inner_rank": 450
+          }
+        ],
+        "ordinary": {
+          "distinct_confined_eight_step_segments": 329,
+          "true_lift_ratios": 2303
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.422,
+      "stdout_sha256": "66a12fe3311b6427ed9817b1c7165af099bdf3f993c3c734e242648b648aca87",
+      "result": {
+        "convergent_controls": [
+          {
+            "exact_rectangles": 26,
+            "next_q": 53,
+            "q": 41,
+            "rational_approximant_numerator": 65,
+            "sampled_offsets": 9,
+            "unrestricted_time_wrap_failures": 1789,
+            "with_negative_time": 23,
+            "with_repeated_inner_rank": 7
+          },
+          {
+            "exact_rectangles": 52,
+            "next_q": 306,
+            "q": 53,
+            "rational_approximant_numerator": 84,
+            "sampled_offsets": 11,
+            "unrestricted_time_wrap_failures": 3921,
+            "with_negative_time": 52,
+            "with_repeated_inner_rank": 10
+          },
+          {
+            "exact_rectangles": 12462,
+            "next_q": 665,
+            "q": 306,
+            "rational_approximant_numerator": 485,
+            "sampled_offsets": 62,
+            "unrestricted_time_wrap_failures": 0,
+            "with_negative_time": 12242,
+            "with_repeated_inner_rank": 450
+          }
+        ],
+        "ordinary": {
+          "distinct_confined_eight_step_segments": 329,
+          "true_lift_ratios": 2303
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact signed native representatives, genuine confined ordinary segments, multiplicative rank rectangles and a wrap countercontrol. The infinite continued-fraction alternative is a written theorem.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:10:40.643730+00:00"
+}

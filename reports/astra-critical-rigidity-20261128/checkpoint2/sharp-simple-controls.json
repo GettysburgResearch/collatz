@@ -1,0 +1,15 @@
+{
+  "source": "research/astra-critical-rigidity-20261128/literature/check_sharp_simple_arcs.py",
+  "source_sha256": "45b4947336487eb8aadca7a194829c34dc827582227284dc13c96b8d1a512255",
+  "normal_and_optimized_equal": true,
+  "seconds": 0.984,
+  "completed_utc": "2026-11-27T23:44:22.055937+00:00",
+  "scope": "Finite exact controls; no asymptotic or universal claim follows from this execution.",
+  "results": {
+    "charged_simple_prefixes": 68,
+    "charged_vertices_replayed": 147398,
+    "largest_exact_denominator_bit_length": 646,
+    "largest_piece_count": 13,
+    "simple_two_run_vertices": 3400
+  }
+}

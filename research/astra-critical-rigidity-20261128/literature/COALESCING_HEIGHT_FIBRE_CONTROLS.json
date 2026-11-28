@@ -1,0 +1,66 @@
+{
+  "fibres": {
+    "coarse_boundary_loss_sum": 3158,
+    "families_with_coarse_boundary_loss": 1286,
+    "independent_label_moments": 2576,
+    "integer_families": 1288,
+    "outer_equal_interior_unequal_triples": 6
+  },
+  "filtration": {
+    "joint_cells": 3069,
+    "pair_child_checks": 12276,
+    "unequal_slope_leaf_hits": 39
+  },
+  "finite_scope": "exact source, martingale-step and fibre identities; asymptotic laws are proved in the manuscripts",
+  "source_sha256": "c2812abb3fb621e951d06ef403bd352dd805993bf3cc63ac69d93cdc012d5ec7",
+  "towers": {
+    "adjacent_tower_lifts": 12282,
+    "exact_mean_absolute_ranks": [
+      [
+        4,
+        "1"
+      ],
+      [
+        5,
+        "5/4"
+      ],
+      [
+        6,
+        "11/8"
+      ],
+      [
+        7,
+        "23/16"
+      ],
+      [
+        8,
+        "49/32"
+      ],
+      [
+        9,
+        "13/8"
+      ],
+      [
+        10,
+        "107/64"
+      ],
+      [
+        11,
+        "7/4"
+      ],
+      [
+        12,
+        "925/512"
+      ],
+      [
+        13,
+        "477/256"
+      ],
+      [
+        14,
+        "3925/2048"
+      ]
+    ],
+    "signed_rational_pair_controls": 120
+  }
+}

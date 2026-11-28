@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-original-source-review/v1",
+  "success": true,
+  "primary_sources": [
+    {
+      "filename": "23269488.tex",
+      "sha256": "211bc4fe107b3821e510486be28cf53f69751f71394582822faf385d09561e37",
+      "url": "https://doi.org/10.5281/zenodo.23269488",
+      "sections_read": "Transport; Terminal data; Arithmetic progressions; Height process; Appendix A general source exponents and cross-exponent source swap"
+    },
+    {
+      "filename": "23269488-md.tex",
+      "sha256": "7eea688a2b485165973fb5114279242ddfd05722e15f9104543921926e041212",
+      "url": "https://zenodo.org/api/records/23269488/files/collatz-brownian-motion-md.tex/content",
+      "sections_read": "Relative landing law; Joint relative passage; Shell sums; Kernel tails; Moderate deviations with clock-landing independence; original functional moderate-deviation conjecture"
+    },
+    {
+      "filename": "23268751.tex",
+      "sha256": "d2f961635d339a4b215c82b1f2f8b9ca53143043f4c58b9aa67290f46056996e",
+      "url": "https://doi.org/10.5281/zenodo.23268751",
+      "sections_read": "Uniform physical return domination; Raw and coasted return moments; Uniform pair absorption"
+    }
+  ],
+  "additional_primary_source": {
+    "url": "https://arxiv.org/pdf/1708.02470",
+    "sections_read": "Discrete random-walk introduction and equations (1.1)-(1.3)"
+  },
+  "scope": "Relevant original statements and their stated ranges read centrally; these source manuscripts are written inputs. This receipt does not certify their entire proofs or unpublished formalizations."
+}

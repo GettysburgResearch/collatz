@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/ordinary/check_mismatch_partitions.py",
+  "source_sha256": "acf34169ab12dde6fd9a7cfeacdbd56aa32bfa572e678a28fdfc99603e07476e",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.47
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.602
+    }
+  ],
+  "finite_coverage_text": "{\n  \"arbitrary_rank_cuts\": 7,\n  \"arbitrary_open_partitions\": 6132,\n  \"arbitrary_partition_segments\": 42978,\n  \"true_single_orbit_pairs\": 363,\n  \"true_single_orbit_partition_segments\": 30956,\n  \"moving_grid_templates\": 1602,\n  \"exact_grid_mismatches\": 10010,\n  \"prescribed_template_corruptions\": 11592\n}\n",
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_block_sum_defects.py",
+  "sha256": "9340a8f3abd6279690189693757be60c80b05aa8204f4137072ebfc1d158bcbe",
+  "started_utc": "2026-11-28T01:44:11.024829+00:00",
+  "scope": "Exact positive rational windows, canonical discrepancy, cyclic derivatives, full rational height, both count-error signs, and two-value jumps. The asymptotic cycle restrictions use separately reviewed written theorems.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.376,
+      "stdout": "{\n  \"cycles_with_noncoprime_clocks\": 124,\n  \"cycles_with_proper_denominator_cancellation\": 36,\n  \"factor_two_low_ends\": 4110,\n  \"factor_two_low_starts\": 4110,\n  \"farey_parent_windows\": 351,\n  \"nontrivial_bounded_order_windows\": 490,\n  \"physical_windows_with_both_error_bounds\": 23330,\n  \"primitive_positive_rational_cycles\": 475,\n  \"two_value_windows\": 318,\n  \"two_value_windows_with_gap_above_one\": 84,\n  \"upper_windows\": 3062\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.387,
+      "stdout": "{\n  \"cycles_with_noncoprime_clocks\": 124,\n  \"cycles_with_proper_denominator_cancellation\": 36,\n  \"factor_two_low_ends\": 4110,\n  \"factor_two_low_starts\": 4110,\n  \"farey_parent_windows\": 351,\n  \"nontrivial_bounded_order_windows\": 490,\n  \"physical_windows_with_both_error_bounds\": 23330,\n  \"primitive_positive_rational_cycles\": 475,\n  \"two_value_windows\": 318,\n  \"two_value_windows_with_gap_above_one\": 84,\n  \"upper_windows\": 3062\n}\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

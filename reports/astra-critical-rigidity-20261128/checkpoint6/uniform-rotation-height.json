@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:31:26.582681+00:00",
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_uniform_rotation_height.py",
+  "sha256": "09d75f5f8f1154836ffc8bc6fc4e4970cac52b5f2ca9c5ac6d8435c9c5d6091a",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.404,
+      "stdout": "{\n  \"all_origin_lengths\": 14812,\n  \"genuine_rational_cycles\": 456,\n  \"join_buffer_ledgers\": 4617,\n  \"lengths_longer_than_a_full_lap\": 4942,\n  \"nonempty_high_buffers\": 799,\n  \"nonempty_low_buffers\": 3992,\n  \"positive_retained_pressure_windows\": 197,\n  \"threshold_and_good_origin_ledgers\": 54424\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.362,
+      "stdout": "{\n  \"all_origin_lengths\": 14812,\n  \"genuine_rational_cycles\": 456,\n  \"join_buffer_ledgers\": 4617,\n  \"lengths_longer_than_a_full_lap\": 4942,\n  \"nonempty_high_buffers\": 799,\n  \"nonempty_low_buffers\": 3992,\n  \"positive_retained_pressure_windows\": 197,\n  \"threshold_and_good_origin_ledgers\": 54424\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite signed rational cycle windows, wrapped budgets, and join buffers. The limiting ordinary rotation and balanced-minimum theorems remain written proofs.",
+  "source_stable": true,
+  "optimized_output_identical": true
+}

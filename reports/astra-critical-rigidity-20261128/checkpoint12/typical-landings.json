@@ -1,0 +1,318 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:15:20.390568+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_typical_integer_landing.py": "2b32403daffbfd45b5e0cbcdd334ebe9981d7e2c2664932fa7193b2807ca2462",
+    "research/astra-critical-rigidity-20261128/ordinary/TYPICAL_INTEGER_LANDING.md": "ce32a2a2d10564dfca118726a814e85062f2f2e9f86d8b75de793bce6aa81320"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.259,
+      "stdout_sha256": "e2bb32c4c25250a5cd9f455fbe8319a88bc493e2bf91ce33a3311d24ae3714a7",
+      "result": {
+        "cells": {
+          "grid_tables": 640,
+          "occupied_word_cells": 24384,
+          "tables_beyond_one_ternary_interval_of_dyadic_classes": 304
+        },
+        "complete_grids": [
+          {
+            "dates": 3,
+            "exact_fraction_steps": 3,
+            "high_excursion_prefixes": 0,
+            "max": 2,
+            "min": 1,
+            "n": 1,
+            "quantiles_per_mille": {
+              "10": 1,
+              "500": 1,
+              "990": 2
+            },
+            "sources": 2,
+            "stopped_block_ledgers": 0
+          },
+          {
+            "dates": 24,
+            "exact_fraction_steps": 24,
+            "high_excursion_prefixes": 1,
+            "max": 6,
+            "min": 2,
+            "n": 2,
+            "quantiles_per_mille": {
+              "10": 2,
+              "500": 4,
+              "990": 6
+            },
+            "sources": 6,
+            "stopped_block_ledgers": 0
+          },
+          {
+            "dates": 104,
+            "exact_fraction_steps": 104,
+            "high_excursion_prefixes": 11,
+            "max": 9,
+            "min": 3,
+            "n": 3,
+            "quantiles_per_mille": {
+              "10": 3,
+              "500": 6,
+              "990": 9
+            },
+            "sources": 18,
+            "stopped_block_ledgers": 20
+          },
+          {
+            "dates": 458,
+            "exact_fraction_steps": 458,
+            "high_excursion_prefixes": 53,
+            "max": 15,
+            "min": 4,
+            "n": 4,
+            "quantiles_per_mille": {
+              "10": 4,
+              "500": 8,
+              "990": 15
+            },
+            "sources": 54,
+            "stopped_block_ledgers": 77
+          },
+          {
+            "dates": 1575,
+            "exact_fraction_steps": 1575,
+            "high_excursion_prefixes": 301,
+            "max": 18,
+            "min": 5,
+            "n": 5,
+            "quantiles_per_mille": {
+              "10": 5,
+              "500": 9,
+              "990": 17
+            },
+            "sources": 162,
+            "stopped_block_ledgers": 257
+          },
+          {
+            "dates": 5843,
+            "exact_fraction_steps": 11,
+            "high_excursion_prefixes": 1238,
+            "max": 22,
+            "min": 6,
+            "n": 6,
+            "quantiles_per_mille": {
+              "10": 6,
+              "500": 12,
+              "990": 20
+            },
+            "sources": 486,
+            "stopped_block_ledgers": 897
+          },
+          {
+            "dates": 20435,
+            "exact_fraction_steps": 24,
+            "high_excursion_prefixes": 4853,
+            "max": 27,
+            "min": 7,
+            "n": 7,
+            "quantiles_per_mille": {
+              "10": 8,
+              "500": 14,
+              "990": 23
+            },
+            "sources": 1458,
+            "stopped_block_ledgers": 3026
+          },
+          {
+            "dates": 70200,
+            "exact_fraction_steps": 77,
+            "high_excursion_prefixes": 18179,
+            "max": 32,
+            "min": 8,
+            "n": 8,
+            "quantiles_per_mille": {
+              "10": 9,
+              "500": 16,
+              "990": 26
+            },
+            "sources": 4374,
+            "stopped_block_ledgers": 9893
+          },
+          {
+            "dates": 236244,
+            "exact_fraction_steps": 262,
+            "high_excursion_prefixes": 66076,
+            "max": 36,
+            "min": 9,
+            "n": 9,
+            "quantiles_per_mille": {
+              "10": 10,
+              "500": 18,
+              "990": 29
+            },
+            "sources": 13122,
+            "stopped_block_ledgers": 31709
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.296,
+      "stdout_sha256": "e2bb32c4c25250a5cd9f455fbe8319a88bc493e2bf91ce33a3311d24ae3714a7",
+      "result": {
+        "cells": {
+          "grid_tables": 640,
+          "occupied_word_cells": 24384,
+          "tables_beyond_one_ternary_interval_of_dyadic_classes": 304
+        },
+        "complete_grids": [
+          {
+            "dates": 3,
+            "exact_fraction_steps": 3,
+            "high_excursion_prefixes": 0,
+            "max": 2,
+            "min": 1,
+            "n": 1,
+            "quantiles_per_mille": {
+              "10": 1,
+              "500": 1,
+              "990": 2
+            },
+            "sources": 2,
+            "stopped_block_ledgers": 0
+          },
+          {
+            "dates": 24,
+            "exact_fraction_steps": 24,
+            "high_excursion_prefixes": 1,
+            "max": 6,
+            "min": 2,
+            "n": 2,
+            "quantiles_per_mille": {
+              "10": 2,
+              "500": 4,
+              "990": 6
+            },
+            "sources": 6,
+            "stopped_block_ledgers": 0
+          },
+          {
+            "dates": 104,
+            "exact_fraction_steps": 104,
+            "high_excursion_prefixes": 11,
+            "max": 9,
+            "min": 3,
+            "n": 3,
+            "quantiles_per_mille": {
+              "10": 3,
+              "500": 6,
+              "990": 9
+            },
+            "sources": 18,
+            "stopped_block_ledgers": 20
+          },
+          {
+            "dates": 458,
+            "exact_fraction_steps": 458,
+            "high_excursion_prefixes": 53,
+            "max": 15,
+            "min": 4,
+            "n": 4,
+            "quantiles_per_mille": {
+              "10": 4,
+              "500": 8,
+              "990": 15
+            },
+            "sources": 54,
+            "stopped_block_ledgers": 77
+          },
+          {
+            "dates": 1575,
+            "exact_fraction_steps": 1575,
+            "high_excursion_prefixes": 301,
+            "max": 18,
+            "min": 5,
+            "n": 5,
+            "quantiles_per_mille": {
+              "10": 5,
+              "500": 9,
+              "990": 17
+            },
+            "sources": 162,
+            "stopped_block_ledgers": 257
+          },
+          {
+            "dates": 5843,
+            "exact_fraction_steps": 11,
+            "high_excursion_prefixes": 1238,
+            "max": 22,
+            "min": 6,
+            "n": 6,
+            "quantiles_per_mille": {
+              "10": 6,
+              "500": 12,
+              "990": 20
+            },
+            "sources": 486,
+            "stopped_block_ledgers": 897
+          },
+          {
+            "dates": 20435,
+            "exact_fraction_steps": 24,
+            "high_excursion_prefixes": 4853,
+            "max": 27,
+            "min": 7,
+            "n": 7,
+            "quantiles_per_mille": {
+              "10": 8,
+              "500": 14,
+              "990": 23
+            },
+            "sources": 1458,
+            "stopped_block_ledgers": 3026
+          },
+          {
+            "dates": 70200,
+            "exact_fraction_steps": 77,
+            "high_excursion_prefixes": 18179,
+            "max": 32,
+            "min": 8,
+            "n": 8,
+            "quantiles_per_mille": {
+              "10": 9,
+              "500": 16,
+              "990": 26
+            },
+            "sources": 4374,
+            "stopped_block_ledgers": 9893
+          },
+          {
+            "dates": 236244,
+            "exact_fraction_steps": 262,
+            "high_excursion_prefixes": 66076,
+            "max": 36,
+            "min": 9,
+            "n": 9,
+            "quantiles_per_mille": {
+              "10": 10,
+              "500": 18,
+              "990": 29
+            },
+            "sources": 13122,
+            "stopped_block_ledgers": 31709
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual finite pure-three sources and stopping words, rational replay and unconditional residue-fiber counts. Asymptotic probability, tails and almost-everywhere laws remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:15:20.946449+00:00"
+}

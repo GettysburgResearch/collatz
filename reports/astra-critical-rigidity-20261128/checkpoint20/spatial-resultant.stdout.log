@@ -1,0 +1,230 @@
+{
+  "genuine_cycles": [
+    {
+      "A": 13,
+      "G": 5,
+      "complete_q_bits": 11,
+      "marked_ranks": [
+        3,
+        4
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 7,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        10,
+        10
+      ],
+      "true_m_approx": 1.0749,
+      "width_approx": 3.024787
+    },
+    {
+      "A": 13,
+      "G": 7,
+      "complete_q_bits": 8,
+      "marked_ranks": [
+        1
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 8,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        6,
+        8
+      ],
+      "true_m_approx": 8.1845,
+      "width_approx": 2.202937
+    },
+    {
+      "A": 17,
+      "G": 167,
+      "complete_q_bits": 10,
+      "marked_ranks": [
+        3,
+        4
+      ],
+      "ordered_at_furnished_cut": false,
+      "p": 9,
+      "physical_reversal_pairs": 6,
+      "three_resultant_bit_lengths": [
+        10,
+        10
+      ],
+      "true_m_approx": 0.952,
+      "width_approx": 2.738583
+    },
+    {
+      "A": 17,
+      "G": 29,
+      "complete_q_bits": 12,
+      "marked_ranks": [
+        2,
+        5
+      ],
+      "ordered_at_furnished_cut": false,
+      "p": 9,
+      "physical_reversal_pairs": 4,
+      "three_resultant_bit_lengths": [
+        12,
+        12
+      ],
+      "true_m_approx": 0.9479,
+      "width_approx": 2.947817
+    },
+    {
+      "A": 33,
+      "G": 125,
+      "complete_q_bits": 26,
+      "marked_ranks": [
+        10
+      ],
+      "ordered_at_furnished_cut": false,
+      "p": 19,
+      "physical_reversal_pairs": 2,
+      "three_resultant_bit_lengths": [
+        18,
+        18,
+        77
+      ],
+      "true_m_approx": 2.1115,
+      "width_approx": 2.976726
+    },
+    {
+      "A": 33,
+      "G": 25,
+      "complete_q_bits": 29,
+      "marked_ranks": [
+        3,
+        4
+      ],
+      "ordered_at_furnished_cut": false,
+      "p": 19,
+      "physical_reversal_pairs": 6,
+      "three_resultant_bit_lengths": [
+        14,
+        14,
+        35
+      ],
+      "true_m_approx": 2.1271,
+      "width_approx": 2.373656
+    },
+    {
+      "A": 33,
+      "G": 25,
+      "complete_q_bits": 29,
+      "marked_ranks": [
+        1,
+        3,
+        6
+      ],
+      "ordered_at_furnished_cut": false,
+      "p": 19,
+      "physical_reversal_pairs": 6,
+      "three_resultant_bit_lengths": [
+        18,
+        18,
+        49
+      ],
+      "true_m_approx": 1.9577,
+      "width_approx": 2.572245
+    },
+    {
+      "A": 65,
+      "G": 1,
+      "complete_q_bits": 59,
+      "marked_ranks": [
+        1,
+        2,
+        4
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 41,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        17,
+        44,
+        96
+      ],
+      "true_m_approx": 825.27,
+      "width_approx": 2.1402
+    },
+    {
+      "A": 85,
+      "G": 1,
+      "complete_q_bits": 84,
+      "marked_ranks": [
+        1,
+        2,
+        4
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 53,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        18,
+        40,
+        40
+      ],
+      "true_m_approx": 17.7264,
+      "width_approx": 2.111597
+    },
+    {
+      "A": 116,
+      "G": 1,
+      "complete_q_bits": 114,
+      "marked_ranks": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 73,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        40,
+        75,
+        243
+      ],
+      "true_m_approx": 82.0957,
+      "width_approx": 2.16238
+    },
+    {
+      "A": 485,
+      "G": 1,
+      "complete_q_bits": 476,
+      "marked_ranks": [
+        1,
+        2,
+        4
+      ],
+      "ordered_at_furnished_cut": true,
+      "p": 306,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        64,
+        329,
+        421
+      ],
+      "true_m_approx": 71571.5672,
+      "width_approx": 2.018205
+    },
+    {
+      "A": 65,
+      "G": 1,
+      "complete_q_bits": 59,
+      "marked_ranks": [],
+      "ordered_at_furnished_cut": true,
+      "p": 41,
+      "physical_reversal_pairs": 0,
+      "three_resultant_bit_lengths": [
+        1,
+        1,
+        1
+      ],
+      "true_m_approx": 867.1395,
+      "width_approx": 1.966657
+    }
+  ],
+  "source_sha256": "5ae61620d7ce7d10683641e968a77543dee68da8a3c512d50b471e03d4cb13d4"
+}

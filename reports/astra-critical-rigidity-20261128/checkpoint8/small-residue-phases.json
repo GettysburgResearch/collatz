@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/literature/check_small_residue_phases.py",
+  "sha256": "e0ddef766d01304ec3951e5b04ffec8773bab160466e6b58f80fc0d9fc2ffa1b",
+  "started_utc": "2026-11-28T02:11:26.097296+00:00",
+  "scope": "Exact signed small-residue lifting controls, actual ordinary signed prefix-closure identities, full denominators, valuation guards and nonzero neighboring-lap aliases. The uniform large-modulus threshold is imported from Varju and is not established by this finite replay.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.57,
+      "stdout": "collinear_signed_returns=8250\nshort_power_lifts=8026\nsigned_single_lifts=7938\nnecessary_sign_ambiguities=64\nordinary_nonreturns=538\nnegative_closures=346\nguarded_exact_aliases=40604\nnonzero_lap_aliases=10042\nclassified_reference_candidates=7141\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.562,
+      "stdout": "collinear_signed_returns=8250\nshort_power_lifts=8026\nsigned_single_lifts=7938\nnecessary_sign_ambiguities=64\nordinary_nonreturns=538\nnegative_closures=346\nguarded_exact_aliases=40604\nnonzero_lap_aliases=10042\nclassified_reference_candidates=7141\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

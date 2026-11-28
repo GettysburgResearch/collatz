@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "complete_odd_word_cells": 4095,
+    "delayed_odd_gates": 7484,
+    "fixed_root_gate_differences": 26268,
+    "odd_native_grid_checks": 16657,
+    "overshot_grid_gates": 10491,
+    "positive_odd_sources": 1024,
+    "shared_landing_root_suffixes": 25918
+  },
+  "manuscript_hashes": {
+    "CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+    "FIXED_ROOT_ITERATED_LOGARITHM.md": "0534cacb0d68c6f1af439ad612fbeb835de7f9bcd56911f3635a426f8e657107"
+  },
+  "scope": "finite exact path comparisons, no statistical limit test"
+}

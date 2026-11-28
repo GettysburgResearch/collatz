@@ -1,0 +1,44 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 12,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint12/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/POWER_VALUATION_LEVELS.md": "276b8f49a7f15a8622b3978a0b3819db22d13396e18e8549322a2a07c1d7fff6",
+    "research/astra-critical-rigidity-20261128/literature/EFFECTIVE_WORST_LANDING.md": "2042abc3c2c501e15a1fb58a2ace3e124aa27afcd9a68104b80ee4eb99b5dc21",
+    "research/astra-critical-rigidity-20261128/ordinary/EFFECTIVE_PAIRED_RUNS.md": "8002820594ff58fdc7f1cf2b25a922f8147faa5edc6bb416656b40e5866bcc9a",
+    "research/astra-critical-rigidity-20261128/ordinary/TYPICAL_INTEGER_LANDING.md": "ce32a2a2d10564dfca118726a814e85062f2f2e9f86d8b75de793bce6aa81320",
+    "research/astra-critical-rigidity-20261128/ordinary/COHERENT_LANDING_SPECTRUM.md": "3ab583a91da676d848c191bd1e71db600b4c0939e40686ea4af6e76cf4a55145",
+    "research/astra-critical-rigidity-20261128/ordinary/SHORT_CLOCK_FACTOR_ERASURE.md": "b066aa5f8528fe1c7b4c3b11dc9f1762a928ac042b5c03525bd6afbe01199727",
+    "research/astra-critical-rigidity-20261128/literature/DESCENT_COFACTOR_OBSTRUCTION.md": "352470e881c5d7fdc7211f3d08a193b42916c75d012fc55bc9de82419a4e6dce",
+    "research/astra-critical-rigidity-20261128/literature/IntegerMinorConcentration.lean": "453fd107dfd19bbf9975439e4c5e4939e631354efd39b09fa2d59e7f01a1d922",
+    "research/astra-critical-rigidity-20261128/check_lean.py": "e8aa4b13d2f175f9d6434c80f9e2b0da6cc56bd381e016cb00e54240e383ddd5",
+    "research/astra-critical-rigidity-20261128/ordinary/check_short_clock_erasure.py": "dd7d55ef13d519e8c8705e9136327ade209912b917279ba52431103537f358aa",
+    "research/astra-critical-rigidity-20261128/ordinary/SHORT_CLOCK_ERASURE_CONTROLS.json": "b16623c83d583458adb4b11048f6a30cbd5dbba1e44ad6c52e7f6538901e0525",
+    "research/astra-critical-rigidity-20261128/ordinary/check_typical_integer_landing.py": "2b32403daffbfd45b5e0cbcdd334ebe9981d7e2c2664932fa7193b2807ca2462",
+    "research/astra-critical-rigidity-20261128/ordinary/TYPICAL_LANDING_CONTROLS.json": "e2bb32c4c25250a5cd9f455fbe8319a88bc493e2bf91ce33a3311d24ae3714a7",
+    "research/astra-critical-rigidity-20261128/ordinary/check_coherent_landing.py": "d53b79a79b1340bff73bf22c34def3353f02081e67219b1828b30ad67b9de16e",
+    "research/astra-critical-rigidity-20261128/ordinary/COHERENT_LANDING_CONTROLS.json": "953e1f2f3ec407695c35e826494814e32caf7bfa120d7628bdc5b4fbec4832c9",
+    "research/astra-critical-rigidity-20261128/literature/check_effective_landings.py": "8091556c8cd55558f279c1976f0b74fa200441ca0d397de40828d7b580dd3c97",
+    "research/astra-critical-rigidity-20261128/literature/EFFECTIVE_LANDING_CONTROLS.json": "a1b62024a662829d545a2bb9fe7eb52a33ec4fb88a444853cea59d7300305d78",
+    "research/astra-critical-rigidity-20261128/ordinary/check_effective_runs.py": "0c59d68965baa5388836458c0cfb8fab7fce9b137dd809d278ac86e2fabbea94",
+    "research/astra-critical-rigidity-20261128/ordinary/EFFECTIVE_RUN_CONTROLS.json": "3e314c0afdd257469fdd99a52f63d8b5fe56756aa65dc699fe8b9edc6e76348f",
+    "research/astra-critical-rigidity-20261128/literature/check_descent_cofactor_obstruction.py": "6a672f43425e6cf24f6452ab7ee504ed2605c16f0bbfef26fcd7c80977481349",
+    "research/astra-critical-rigidity-20261128/literature/DESCENT_COFACTOR_CONTROLS.json": "d5519e5e4fa2b24acbc268c4deebfe137f2b7cb7562e921b97ce639bf5ba2974",
+    "research/astra-critical-rigidity-20261128/literature/check_descent_cofactor_crt.py": "11e02194afda8db6d1e9cb7b93d482c1c50f9172425d7486f41b612b1aeac390"
+  },
+  "scope": "Seven independently reconstructed written notes, seven exact controls and three freshly compiled integer determinant roots. Mathematical asymptotics remain proposed written theorems; source-qualified support obstruction is identified separately.",
+  "publication_whitespace_changes": [
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/EFFECTIVE_WORST_LANDING.md",
+      "reviewed_original_sha256": "fc08af2f7750aec21e9534c79106a5163b1402b3a1c6818c9cc32aefff4bd789",
+      "final_sha256": "2042abc3c2c501e15a1fb58a2ace3e124aa27afcd9a68104b80ee4eb99b5dc21",
+      "change": "Removed an extra blank line at end of file; mathematical content unchanged."
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/POWER_VALUATION_LEVELS.md",
+      "reviewed_original_sha256": "2d49287b9deb140a54148be32005f244a3b2c50dd7ace707cf48aab5cbed7230",
+      "final_sha256": "276b8f49a7f15a8622b3978a0b3819db22d13396e18e8549322a2a07c1d7fff6",
+      "change": "Removed an extra blank line at end of file; mathematical content unchanged."
+    }
+  ]
+}

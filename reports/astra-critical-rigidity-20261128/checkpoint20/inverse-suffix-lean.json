@@ -1,0 +1,68 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:06:50.526001+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "InverseSuffixTransport"
+  ],
+  "compiled": [
+    "AffineOrbit",
+    "InverseSuffixTransport"
+  ],
+  "modules": [
+    {
+      "module": "AffineOrbit",
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "source_sha256": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+      "exit_code": 0,
+      "seconds": 7.678,
+      "public_roots": [
+        "Collatz.PoweredAffine.step_positive",
+        "Collatz.PoweredAffine.orbit_positive",
+        "Collatz.PoweredAffine.even_step",
+        "Collatz.PoweredAffine.odd_step",
+        "Collatz.PoweredAffine.letter_actual",
+        "Collatz.PoweredAffine.evalWord_actual",
+        "Collatz.PoweredAffine.evalWord_append",
+        "Collatz.PoweredAffine.word_affine",
+        "Collatz.PoweredAffine.actual_word_affine",
+        "Collatz.PoweredAffine.word_centered",
+        "Collatz.PoweredAffine.repeated_centered",
+        "Collatz.PoweredAffine.center_telescope",
+        "Collatz.PoweredAffine.reference_telescope"
+      ],
+      "mathematical_scope": "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."
+    },
+    {
+      "module": "InverseSuffixTransport",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/InverseSuffixTransport.lean",
+      "source_sha256": "97a87351a17e900b17d45eb00a42e0f126312dbb4b74728368168637d6073e54",
+      "exit_code": 0,
+      "seconds": 1.943,
+      "public_roots": [
+        "Collatz.InverseSuffixTransport.source_le_dyadic_endpoint",
+        "Collatz.InverseSuffixTransport.prior_target_coast",
+        "Collatz.InverseSuffixTransport.read_incoming_from",
+        "Collatz.InverseSuffixTransport.large_entrance_reads_incoming"
+      ],
+      "mathematical_scope": "An actual source is at most its endpoint times the full dyadic inverse factor. A target below the threshold reached before the first odd entrance lies on its exact halving coast. A sufficiently large genuine odd entrance precedes the entire k-step suffix, and the ordered integer suffix read there equals the original incoming list. Distributional transport, Brownian limits and inverse-density estimates remain written."
+    }
+  ],
+  "public_roots": 17,
+  "additional_audited_definitions": [],
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 17,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T07:07:01.369968+00:00",
+  "seconds": 10.844
+}

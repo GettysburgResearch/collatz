@@ -1,0 +1,33 @@
+{
+  "source": "research/astra-critical-rigidity-20261128/ordinary/check_discrepancy_blocks.py",
+  "source_sha256": "e18dbb549b3737705bae2a0a767c6b1e70deee429714dfc8741dd55ee5875f12",
+  "normal_and_optimized_equal": true,
+  "seconds": 0.493,
+  "completed_utc": "2026-11-27T23:48:08.444400+00:00",
+  "scope": "Finite exact controls only; no Subspace Theorem, asymptotic or universal cycle inference is checked by enumeration.",
+  "results": {
+    "odd_source_range": [
+      1,
+      513
+    ],
+    "three_power_exponents": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "pairs": 1285,
+    "native_horizon": 40,
+    "signed_recurrence_steps": 51400,
+    "unmatched_blocks": 14848,
+    "strict_nonzero_cuts": 87952,
+    "two_odd_dates_over_tested_blocks": 21722,
+    "merged_control": {
+      "odd_source": 2732850973882896535,
+      "first_common_clock": 5,
+      "fixed_total_grade": 5,
+      "zero_cuts_after_first_merge": 61
+    }
+  }
+}

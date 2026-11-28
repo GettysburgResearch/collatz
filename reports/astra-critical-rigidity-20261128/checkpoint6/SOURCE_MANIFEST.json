@@ -1,0 +1,226 @@
+{
+  "scope": "Sixth checkpoint exact source snapshot: complete ordered-carry reduction, primitive sparse pair constructions, uniform rotation heights and occupation, signed prefix denominator/rank, effective pathwise exception count, and the three-root event-factor formal kernel. Later adjacent-word Lean and Hausdorff or algebraic-height developments are excluded.",
+  "prior_public_commit": "a837e10caac769b5b6344bac07d740f77531b978",
+  "files": [
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint5/repository-validation.json",
+      "sha256": "fdf3cf6b5a4ad8fa1fb680ab2b2dd7249097c8d8bb23e4bffee4d58c79fe942c"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint5/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint5/repository-validation.stdout.log",
+      "sha256": "a005e1b3991694cb8b6778a9b699bc63928557984997793c3a59ff02839e655e"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/REVIEW.md",
+      "sha256": "099ef9935a0dc1b1e5cc938a3d6116b3fdb7727ffbdc22c3058c29f231537f7b"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/adjacent-closure-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/adjacent-closure-optimized.stdout.log",
+      "sha256": "5707691e598966c45508f7973a6f9a7e52b1a062f1c5f6c2e69a90d211333eec"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/adjacent-closure.json",
+      "sha256": "d4c1e6b71e7db0c5d9d266f83a15ac6570933cb55639d1077d9189177728ec9c"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/adjacent-closure.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/adjacent-closure.stdout.log",
+      "sha256": "5707691e598966c45508f7973a6f9a7e52b1a062f1c5f6c2e69a90d211333eec"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/counted-clock-relations-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/counted-clock-relations-optimized.stdout.log",
+      "sha256": "11cd76bb274356e3fd7b3d566256534e68c46c8aa7fb236068409e69f86c3cd7"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/counted-clock-relations.json",
+      "sha256": "7b46feea8462a20562706639ba2d8c5dd431fcf379f4a097f8d70d9db89bd6ec"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/counted-clock-relations.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/counted-clock-relations.stdout.log",
+      "sha256": "11cd76bb274356e3fd7b3d566256534e68c46c8aa7fb236068409e69f86c3cd7"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean-logs/Audit.lean",
+      "sha256": "13d902b7c0713fd85601d15fbca2915645ad62d534c31e8a4fd22bae43ed8125"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean-logs/Audit.stdout.log",
+      "sha256": "57c04077acc4ba5235822c0ff51bac358495dfdc5f296c3d276d73344169b143"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean-logs/EventFactorRank.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean-logs/EventFactorRank.stdout.log",
+      "sha256": "57c04077acc4ba5235822c0ff51bac358495dfdc5f296c3d276d73344169b143"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/event-factor-rank-lean.json",
+      "sha256": "45dbeb5eb1578fd50ec3483bf13f618af95ae72925c653ff485585be71ce6120"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-denominators-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-denominators-optimized.stdout.log",
+      "sha256": "2f24c0ce50e993196482eda0f131d4386e90f1bb72bfb13597793525e7944099"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-denominators.json",
+      "sha256": "3f59a004ffef259b88a2870e1f71d7c25fb88dd55ee98d0896795f96304b5372"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-denominators.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-denominators.stdout.log",
+      "sha256": "2f24c0ce50e993196482eda0f131d4386e90f1bb72bfb13597793525e7944099"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-rank-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-rank-optimized.stdout.log",
+      "sha256": "f8df3b77a44e7875cb21a47eae83c462ed707a65e0c81cd81263db2dc0452646"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-rank.json",
+      "sha256": "5233e8c0ede42835c8ef6ceca8777395e264faa45d4a3244a15db71b255cf549"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-rank.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/prefix-closure-rank.stdout.log",
+      "sha256": "f8df3b77a44e7875cb21a47eae83c462ed707a65e0c81cd81263db2dc0452646"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/uniform-rotation-height-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/uniform-rotation-height-optimized.stdout.log",
+      "sha256": "6912af886c26db57e067a069139d6c5e96222139c7ee8e1f529fe76354426fc8"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/uniform-rotation-height.json",
+      "sha256": "38c5dc8e47afe30160b696b3635c2af7cc9312062326ca27a775cd8ed5879849"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/uniform-rotation-height.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-critical-rigidity-20261128/checkpoint6/uniform-rotation-height.stdout.log",
+      "sha256": "6912af886c26db57e067a069139d6c5e96222139c7ee8e1f529fe76354426fc8"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/README.md",
+      "sha256": "0719c791882c2efa4073d6b77e5422b3cfcbdd503bb731efb14fc74c03c634ed"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/check_lean.py",
+      "sha256": "f87964d3479f50f8681ef451dc81df0839a10b7547ee92f9af317e7a8251f4ac"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/APPROXIMATE_ROTATION_SUBGROUP.md",
+      "sha256": "9af526c1252fb065f1547ffbbe58a6a17bd24bb1f8b1afed1ccf6760339bb5e5"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/BALANCED_MINIMUM_GROWING_BUDGET.md",
+      "sha256": "3ae35a199093e05c14a18659965cf0b923a86cdb8f81443dc4f7ad32feb80a5d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/EventFactorRank.lean",
+      "sha256": "51905a9f399041c68bc0feeb46673fb8802b2e5c34863ce6ba91ecd648185fe8"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/PREFIX_CLOSURE_NUMERATOR_RANK.md",
+      "sha256": "1f6e84d7ea004b335b8a00fee8eb23b2af62191e4fb3fac794c1c50f952e57d6"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/ROTATION_RANK_TRADEOFF.md",
+      "sha256": "23dccce1d00923b621d6d4dae52a56475357ee94ba4e19fca26a824a48fe6314"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/UNIFORM_ROTATION_HEIGHT.md",
+      "sha256": "9b23547ea8aa1d259c130f5863ddfc322f015666254b7363869d71c71e19042d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_prefix_closure_rank.py",
+      "sha256": "9b7fd9b1d36316a125ee33cc41ea07797fd62bd51e9f86d276b7ca55c5516ae4"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_uniform_rotation_height.py",
+      "sha256": "09d75f5f8f1154836ffc8bc6fc4e4970cac52b5f2ca9c5ac6d8435c9c5d6091a"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/prefix_closure_rank_controls.json",
+      "sha256": "f8df3b77a44e7875cb21a47eae83c462ed707a65e0c81cd81263db2dc0452646"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/uniform_rotation_height_controls.json",
+      "sha256": "6912af886c26db57e067a069139d6c5e96222139c7ee8e1f529fe76354426fc8"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/COUNTED_CLOCK_RELATIONS.md",
+      "sha256": "b74731e0a5452a8e5d93ed71104d6b6ee729597c694ce64516d34495513e974e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/PREFIX_CLOSURE_DENOMINATORS.md",
+      "sha256": "3656fff52b7fb633d9d91c65a489c738c8b6f8185608c6cd2d85b3645acf02a7"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_counted_clock_relations.py",
+      "sha256": "2b78d12b4bd130752b40fce893ae80c044faf1c91282b6813ae497c9ac378b9d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_prefix_closure_denominators.py",
+      "sha256": "b55404b71494e4f5383584253b4394dc66eca7d918f704d2a8568f3def272810"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/ADJACENT_CLOSURE_CONTROLS.json",
+      "sha256": "5707691e598966c45508f7973a6f9a7e52b1a062f1c5f6c2e69a90d211333eec"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/ADJACENT_CYCLE_CLOSURE.md",
+      "sha256": "d86f967053f387126af19e3ec0d748edf1d47a5fd26c088303cea058c55e8088"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/PRIMITIVE_SPARSE_PAIR_CLOSURES.md",
+      "sha256": "9d883ff4d8c6effb227dac8b88bb691d64c26e57d2a3840ab68848c031c749c1"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_adjacent_closure.py",
+      "sha256": "ad0b0ec3d566d7f12575261fcadf397a0797b27a9b90f9658c71b128e66227bd"
+    }
+  ]
+}

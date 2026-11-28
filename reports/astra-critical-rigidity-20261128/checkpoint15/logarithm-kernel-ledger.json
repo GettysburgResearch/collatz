@@ -1,0 +1,46 @@
+{
+  "schema": "collatz-original-logarithm-central-ledger-audit/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:30:56.814898+00:00",
+  "finished_utc": "2026-11-28T05:31:10.884867+00:00",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_logarithm_kernel_receipt.py": "585b86d39b31487c89ca251f48b17b9903c02568da629db79bdd828462653d0c",
+    "research/astra-critical-rigidity-20261128/literature/CHUDNOVSKY_KERNEL_RECEIPT.json": "27ada5d5b25e80ed81a918914feb6bbe84b35dd3eb60710fe472fcd5adc4f1a6",
+    "research/astra-critical-rigidity-20261128/literature/CHUDNOVSKY_KERNEL_MODULES.jsonl.gz": "a3b0f70d8de17e1dae98ec18a2c664e2bcd9ac0c3d1769509d9ddb7a66f900d0",
+    "research/astra-critical-rigidity-20261128/literature/CHUDNOVSKY_KERNEL_AUDIT.txt": "7074263d42a7ebcb27e10433fd9c299a448e64e33abc6fbd8099ff84bab15d3c",
+    "research/astra-critical-rigidity-20261128/literature/audit_logarithm_sources.py": "e9862f3fa2cc2c4ad9b8665004560b6a019b6b9992bc1d016f5e47601d8a3295",
+    "research/astra-critical-rigidity-20261128/literature/replay_logarithm_endpoint.py": "1d5651ec7743b6514fcb0f9ddb81ce71154f18718230c3a381272659524b1686",
+    "research/astra-critical-rigidity-20261128/literature/ChudnovskyLog32.lean": "14b6027fabae574382cd1dd7070374c2c442d3f9a7d8c35eaf09da75ae107730",
+    "research/astra-critical-rigidity-20261128/literature/CHUDNOVSKY_LOGARITHM_IMPORT.md": "e175992975c0843cb47c3c5bc19027487614e41fdadc33efb5977849a77aaf1c"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 6.756,
+      "stdout_sha256": "cd789c22eb36017eb17eed270f117692c666a1d74cedff100cfd51697f5b47b8",
+      "result": {
+        "printed_root_types_and_axioms": 7,
+        "release_module_sources": 1002,
+        "retained_compiler_logs_rehashed": 1002,
+        "retained_objects_rehashed": 1002
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 7.311,
+      "stdout_sha256": "cd789c22eb36017eb17eed270f117692c666a1d74cedff100cfd51697f5b47b8",
+      "result": {
+        "printed_root_types_and_axioms": 7,
+        "release_module_sources": 1002,
+        "retained_compiler_logs_rehashed": 1002,
+        "retained_objects_rehashed": 1002
+      },
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_same": true,
+  "scope": "Independent rehash of the full original 1002-module import closure against the source archive, retained project objects and compiler logs, plus exact seven-root printed theorem and axiom audit. Fresh compilation is the separately recorded execution, not this integrity check."
+}

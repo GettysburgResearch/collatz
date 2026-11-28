@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:31:26.582227+00:00",
+  "script": "research/astra-critical-rigidity-20261128/ordinary/check_adjacent_closure.py",
+  "sha256": "ad0b0ec3d566d7f12575261fcadf397a0797b27a9b90f9658c71b128e66227bd",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.254,
+      "stdout": "{\n  \"counts\": {\n    \"exceptional_detours\": 613,\n    \"level_common_evens\": 16057,\n    \"positive_adjacent_loops\": 7927,\n    \"prefixes\": 7927,\n    \"sign_flips\": 1801,\n    \"swapped\": 1791\n  },\n  \"longest\": {\n    \"source\": 71,\n    \"prefix_clock\": 40,\n    \"closed_clock\": 77,\n    \"joint_odd_grade\": 64\n  },\n  \"negative_adjacent_control\": {\n    \"clock\": 38,\n    \"grades\": [\n      24,\n      24\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.268,
+      "stdout": "{\n  \"counts\": {\n    \"exceptional_detours\": 613,\n    \"level_common_evens\": 16057,\n    \"positive_adjacent_loops\": 7927,\n    \"prefixes\": 7927,\n    \"sign_flips\": 1801,\n    \"swapped\": 1791\n  },\n  \"longest\": {\n    \"source\": 71,\n    \"prefix_clock\": 40,\n    \"closed_clock\": 77,\n    \"joint_odd_grade\": 64\n  },\n  \"negative_adjacent_control\": {\n    \"clock\": 38,\n    \"grades\": [\n      24,\n      24\n    ]\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite actual-source replay of the forward closure, exceptional routing, signed periodic lifts, and static carry identity. The global asymptotic reduction uses the separate written proof.",
+  "source_stable": true,
+  "optimized_output_identical": true
+}

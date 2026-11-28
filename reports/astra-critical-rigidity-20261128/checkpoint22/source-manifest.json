@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 22,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint22/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/ALL_FIXED_ROTATION_DENOMINATORS.md": "109e0efaeff05cdae362c3e918a6d84287d61581f442ba696432a07257a27c5e",
+    "research/astra-critical-rigidity-20261128/cycles/EXACT_ROTATION_RANK_EQUALITY.md": "dc1757ed7504ef91ea917ca8983412812daa6fd4a8df9c3a43fd1c30cbc3d80f",
+    "research/astra-critical-rigidity-20261128/cycles/MISMATCH_EVENT_HEIGHT.md": "8d9bd1d503747b0048465b321c8466e0b5492b3a65339dd432e9c48c54252559",
+    "research/astra-critical-rigidity-20261128/cycles/NEARCRITICAL_DENOMINATOR_SPECTRUM.md": "f5edfd67d321029c5908df8c147beeb624aeaffb1fdbef7a7619029ff2e38dc7",
+    "research/astra-critical-rigidity-20261128/cycles/OPTIMAL_ROTATION_DENOMINATOR_ORDER.md": "9c7ff25bf40985337921f6b7de4cfbb9bd8ebbca51aadbb93b771c5a2f18634a",
+    "research/astra-critical-rigidity-20261128/cycles/RotationRecurrenceRank.lean": "504a6122ad55f00e4c0b9ca001f1ff536ea773d7b6df41281d7c1b396bca3799",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90",
+    "research/astra-critical-rigidity-20261128/cycles/check_near_octave_cycle_denominators.py": "7ac3c33da8adac7448514627ef39d44e406b47f86d387de8cb7724723882444d",
+    "research/astra-critical-rigidity-20261128/cycles/check_nearcritical_denominator_spectrum.py": "a429f39c495a29c0afdb5cf01f7c0fbcede7ee58eea0fed8eeb390d44d196dd9",
+    "research/astra-critical-rigidity-20261128/cycles/check_optimal_rotation_denominators.py": "9f3ae568d07c16c9d8ebc2727ab30befc1a8dc0f3b38b8302fedfca5f215fc7f",
+    "research/astra-critical-rigidity-20261128/cycles/optimal_rotation_denominator_controls.json": "c6bf6bcc880df97a07130865fed1ab7dd7c72eecfa63503e2202aadaac7a72b9",
+    "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+    "research/astra-critical-rigidity-20261128/literature/EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+    "research/astra-critical-rigidity-20261128/literature/ORDINARY_AFFINE_INTERVAL_PROFILE.md": "850472e903b199d307019f17d957b5ef9d140bbc542df062db80bdd86efcb49e",
+    "research/astra-critical-rigidity-20261128/literature/RELATIVE_PARITY_WORD_CONTROLS.json": "3b85f27f4959bb980d98c326b64b9112929bebf147159ab9a3cf3cdbd38fcb91",
+    "research/astra-critical-rigidity-20261128/literature/RELATIVE_PARITY_WORD_EQUIPARTITION.md": "41a07206522240b990cc0bf2ad110df7dc0c8796aa6368e90316ccd7e980320b",
+    "research/astra-critical-rigidity-20261128/literature/RoundedOrbitCapture.lean": "cb8479d9fe25984f9f3db9366ac69fd3cebb0c9ac5f26aa85a1651b44c99abb1",
+    "research/astra-critical-rigidity-20261128/literature/check_relative_parity_words.py": "3dae0e7bc7b7c13334d0f7b6e590b53c5937851477e3bfa91171c9480c87fd4a",
+    "research/astra-critical-rigidity-20261128/ordinary/CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+    "research/astra-critical-rigidity-20261128/ordinary/MINIMUM_CLOCK_MOMENT_INDEX.md": "28b6c87ae40571592bb1801cc40d964f4a637d0d25ff7e6008429a71b30e3d4e",
+    "research/astra-critical-rigidity-20261128/ordinary/MINIMUM_MOMENT_FRONTIER_CONTROLS.json": "e4bbed6ca011dc406ef6d7aebb3210defdbe556bfa83938ccb416186c6e010c7",
+    "research/astra-critical-rigidity-20261128/ordinary/MODERATE_DEVIATIONS_AT_THE_MINIMUM.md": "e16a7854bee6e6fcd681df6d8cc0853960dc0bdf4fd9b7cdee79dbfeb10b2479",
+    "research/astra-critical-rigidity-20261128/ordinary/check_minimum_moment_frontier.py": "ed60a03461a7b1081929c83a4a5cd38d8f6e4be4bcad55ad3627574caa48ad2b"
+  },
+  "scope": "Five centrally reconstructed and twice independently reviewed written notes; three exact normal/optimized controls; ten new centrally compiled and separately audited Lean roots. Endpoint and relative parity laws retain original analytic inputs. No positive moment index or Collatz convergence is asserted."
+}

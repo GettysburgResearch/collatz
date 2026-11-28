@@ -1,0 +1,34 @@
+{
+  "finite_fixed_grade_fixture": [
+    {
+      "captured": 7617,
+      "changed": 1954,
+      "cutoff": 2,
+      "different_stopped_paths": 7617,
+      "in_closure": 3893,
+      "later_smaller_witnesses": 3094,
+      "seeds": 1667,
+      "starts": 8000
+    },
+    {
+      "captured": 6851,
+      "changed": 1928,
+      "cutoff": 100,
+      "different_stopped_paths": 6851,
+      "in_closure": 3838,
+      "later_smaller_witnesses": 2980,
+      "seeds": 1662,
+      "starts": 8000
+    },
+    {
+      "captured": 5868,
+      "changed": 1718,
+      "cutoff": 1000,
+      "different_stopped_paths": 5868,
+      "in_closure": 3445,
+      "later_smaller_witnesses": 2355,
+      "seeds": 1611,
+      "starts": 8000
+    }
+  ]
+}

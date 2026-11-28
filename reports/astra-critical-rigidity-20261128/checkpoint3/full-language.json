@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/literature/check_full_language_exclusion.py",
+  "source_sha256": "f7e1ca31b9c7feca3eb5c045d0aafa03d8a5e2653ace3ab2d28345625b1b5ed7",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.176
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.238
+    }
+  ],
+  "finite_coverage_text": "m, period, reduced denominator bit length, minimum period-at-most-7 pieces\n2 42 33 5\n3 84 49 8\n4 140 65 12\n5 210 81 16\n7 392 113 24\n8 504 128 28\n11 924 176 40\n16 1904 255 60\n24 4200 382 92\n32 7392 509 124\nnative negative rational vertices 15792\nsix finite groups 12 stages, 78241 letters\n",
+  "harness_note": "The checker returns plain text. An initial coordinator wrapper incorrectly attempted JSON decoding after a successful normal run; the corrected wrapper compares the text outputs.",
+  "scope": "Finite exact arithmetic controls; not a proof of infinite word properties or the quantitative Subspace Theorem."
+}

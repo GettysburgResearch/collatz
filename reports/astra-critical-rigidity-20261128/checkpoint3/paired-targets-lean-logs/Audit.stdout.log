@@ -1,0 +1,12 @@
+'Collatz.PairedClock.affine' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedClock.discrepancy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedClock.discrepancy_positive' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedClock.even_discrepancy' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedClock.unmatched_ternary_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedClock.crossCost_add_joint' depends on axioms: [propext]
+'Collatz.PairedClock.discrepancy_one_step_charge' depends on axioms: [propext, Quot.sound]
+'Collatz.PairedClock.unmatched_cross_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedClock.orbit_add' does not depend on any axioms
+'Collatz.PairedClock.grade_add' depends on axioms: [propext]
+'Collatz.PairedClock.incomparable_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.PairedClock.unbounded_odd_joint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

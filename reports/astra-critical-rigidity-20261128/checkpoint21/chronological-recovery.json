@@ -1,0 +1,90 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:21:25.029946+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_chronological_recovery.py": "f504452d3541cf52b34bcf90a294809bc91d3d9e93a657567dcf28c0b272a9ed",
+    "research/astra-critical-rigidity-20261128/literature/MAXIMUM_PREMINIMUM_RECOVERY.md": "769c3747fa9350ec540e9124e7293197bd4f7d2acd6861a617b7ea81d240e30b",
+    "research/astra-critical-rigidity-20261128/literature/FIXED_ROOT_MAXIMUM_RECOVERY.md": "034c73c8c86043799ef2cf0f26a8e0ff201c20aaaa6e1f09256d13afca488b2f",
+    "research/astra-critical-rigidity-20261128/literature/EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+    "research/astra-critical-rigidity-20261128/literature/ORDINARY_AFFINE_INTERVAL_PROFILE.md": "850472e903b199d307019f17d957b5ef9d140bbc542df062db80bdd86efcb49e",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_LOG_SQUARE_MASKS.md": "10db00ec9f950893d658b4f267a5312f6449bcb126924b7ac3b4454a27f1ba4f"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.181,
+      "stdout_sha256": "239dc13d69f49beee092e80570eb1bde3dba0916409e576945dfe31b28f29d84",
+      "result": {
+        "conditioned_fibres": {
+          "canonical_absorptions": 556,
+          "comparison_bits": 6,
+          "comparisons": 16384,
+          "conditioned_residues": 8,
+          "independent_arm_avoidance": "537/1024",
+          "prefix_bits": 6
+        },
+        "inverse_paths": {
+          "depth": 14,
+          "largest_ratio": "26/7",
+          "root": 13,
+          "unit_leaves": 58
+        },
+        "record_gates": {
+          "first_odd_records": 1961,
+          "gain_at_least_three": 403,
+          "largest_ratio": "125252/703",
+          "positive_odd_sources": 511
+        },
+        "scope": "exact finite native fixtures; no asymptotic estimate is tested",
+        "source_sha256": {
+          "EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+          "FIXED_ROOT_MAXIMUM_RECOVERY.md": "034c73c8c86043799ef2cf0f26a8e0ff201c20aaaa6e1f09256d13afca488b2f",
+          "MAXIMUM_PREMINIMUM_RECOVERY.md": "769c3747fa9350ec540e9124e7293197bd4f7d2acd6861a617b7ea81d240e30b"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.23,
+      "stdout_sha256": "239dc13d69f49beee092e80570eb1bde3dba0916409e576945dfe31b28f29d84",
+      "result": {
+        "conditioned_fibres": {
+          "canonical_absorptions": 556,
+          "comparison_bits": 6,
+          "comparisons": 16384,
+          "conditioned_residues": 8,
+          "independent_arm_avoidance": "537/1024",
+          "prefix_bits": 6
+        },
+        "inverse_paths": {
+          "depth": 14,
+          "largest_ratio": "26/7",
+          "root": 13,
+          "unit_leaves": 58
+        },
+        "record_gates": {
+          "first_odd_records": 1961,
+          "gain_at_least_three": 403,
+          "largest_ratio": "125252/703",
+          "positive_odd_sources": 511
+        },
+        "scope": "exact finite native fixtures; no asymptotic estimate is tested",
+        "source_sha256": {
+          "EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+          "FIXED_ROOT_MAXIMUM_RECOVERY.md": "034c73c8c86043799ef2cf0f26a8e0ff201c20aaaa6e1f09256d13afca488b2f",
+          "MAXIMUM_PREMINIMUM_RECOVERY.md": "769c3747fa9350ec540e9124e7293197bd4f7d2acd6861a617b7ea81d240e30b"
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Genuine record-low odd gates, exact forward and inverse recovery ratios, independent low-bit resampling with a common high quotient, actual balanced affine absorption and equality of finite preminimum labels. Limiting recovery distributions and critical density-one capture remain written and source-qualified.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:21:25.440969+00:00"
+}
