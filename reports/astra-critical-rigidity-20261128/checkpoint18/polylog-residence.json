@@ -1,0 +1,148 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:36:42.056339+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_polylog_residence.py": "3f1e4ed0ffed1bc2543546616add2b0784a45e26adf56aa9f2032345a1ef517e",
+    "research/astra-critical-rigidity-20261128/cycles/POLYLOGARITHMIC_NEAR_OCTAVE_RESIDENCE.md": "a7daad9f2009f20136f8163de24aa5fb5f652ae604f34e4cf04a804af2b9238c",
+    "research/astra-critical-rigidity-20261128/cycles/check_high_order_native_residence.py": "8d575a449969724286edab9165af7dc7fd3ba9f6f6621a6ee343d8b6db72a2fd",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.063,
+      "stdout_sha256": "ddde83b30202af97a6b49575fd41da34024f90d9ed10b7cf79d26142e81f4b8b",
+      "result": {
+        "exact_inverse_matrices": [
+          {
+            "dimension": 1,
+            "entries_checked": 1,
+            "largest_degree": 3,
+            "name": "one surviving signed coefficient"
+          },
+          {
+            "dimension": 3,
+            "entries_checked": 9,
+            "largest_degree": 17,
+            "name": "actual native homogeneous factors"
+          },
+          {
+            "dimension": 7,
+            "entries_checked": 49,
+            "largest_degree": 31,
+            "name": "mixed side of one and skipped prime exponents"
+          },
+          {
+            "dimension": 4,
+            "entries_checked": 16,
+            "largest_degree": 31,
+            "name": "nearly coincident distinct roots"
+          }
+        ],
+        "moving_order_budgets": [
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 0,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 1000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "27759988",
+            "t": 100000000
+          },
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 1,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 100000000000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "27759988",
+            "t": 100000000
+          },
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 2,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 100000000000000000000000000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "3697599988",
+            "t": 10000000000
+          }
+        ],
+        "source_sha256": "a7daad9f2009f20136f8163de24aa5fb5f652ae604f34e4cf04a804af2b9238c"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.144,
+      "stdout_sha256": "ddde83b30202af97a6b49575fd41da34024f90d9ed10b7cf79d26142e81f4b8b",
+      "result": {
+        "exact_inverse_matrices": [
+          {
+            "dimension": 1,
+            "entries_checked": 1,
+            "largest_degree": 3,
+            "name": "one surviving signed coefficient"
+          },
+          {
+            "dimension": 3,
+            "entries_checked": 9,
+            "largest_degree": 17,
+            "name": "actual native homogeneous factors"
+          },
+          {
+            "dimension": 7,
+            "entries_checked": 49,
+            "largest_degree": 31,
+            "name": "mixed side of one and skipped prime exponents"
+          },
+          {
+            "dimension": 4,
+            "entries_checked": 16,
+            "largest_degree": 31,
+            "name": "nearly coincident distinct roots"
+          }
+        ],
+        "moving_order_budgets": [
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 0,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 1000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "27759988",
+            "t": 100000000
+          },
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 1,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 100000000000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "27759988",
+            "t": 100000000
+          },
+          {
+            "T_symbolic": "2^(4t)",
+            "beta": 2,
+            "example_type": "finite parameter inequalities, without an effective logarithm onset",
+            "guard_length": 100000000000000000000000000000000000,
+            "log_M_symbolic": "2^t",
+            "population_minus_capacity_lower": "3697599988",
+            "t": 10000000000
+          }
+        ],
+        "source_sha256": "a7daad9f2009f20136f8163de24aa5fb5f652ae604f34e4cf04a804af2b9238c"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact generalized Vandermonde matrices and every cofactor, positive Schur envelopes, Weyl dimension ratios, and explicit moving-order integer budgets. The matrices include genuine homogeneous native factors and nearly coincident nodes. No effective irrationality onset is inferred from the finite examples.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:36:42.263172+00:00"
+}

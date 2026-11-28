@@ -1,0 +1,97 @@
+{
+  "finite_native_controls": [
+    {
+      "B_orders_on_actual_three_distinct_sampled_labels": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q": 1,
+      "dilations": [
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "odd_states": 2700,
+      "reduced_stride": 53,
+      "repeated_middle_full_Q_nonzero_comparisons": 15,
+      "tested_25_edge_divisor_before_size_cutoff": true
+    },
+    {
+      "B_orders_on_actual_three_distinct_sampled_labels": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q": 35,
+      "dilations": [
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "odd_states": 2700,
+      "reduced_stride": 53,
+      "repeated_middle_full_Q_nonzero_comparisons": 15,
+      "tested_25_edge_divisor_before_size_cutoff": true
+    }
+  ],
+  "interval_certified_rates": [
+    {
+      "L": 12,
+      "bootstrap_upper_rounded_up_6dp": 0.991211,
+      "h": 531440,
+      "mu_upper": "5116201/1000000",
+      "r_h_strict_upper": "89/200000000",
+      "width": "41/20"
+    },
+    {
+      "L": 12,
+      "bootstrap_upper_rounded_up_6dp": 0.955373,
+      "h": 531440,
+      "mu_upper": "3",
+      "r_h_strict_upper": "879/1000000000",
+      "width": "21/10"
+    },
+    {
+      "L": 2,
+      "bootstrap_upper_rounded_up_6dp": 0.908915,
+      "h": 8,
+      "mu_upper": "3",
+      "r_h_strict_upper": "13/250",
+      "width": "12/5"
+    }
+  ],
+  "source_sha256": "3f98fbe51772b4dbb475b4650d9668f920aa966108b48a0a5248f44c2ffa1ffa",
+  "symmetric_coordinates": {
+    "jacobian_dimensions_verified": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "unequal_repeated_root_lists_with_equal_first_two_moments": [
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ]
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "exact_inverse_matrices": [
+    {
+      "dimension": 1,
+      "entries_checked": 1,
+      "largest_degree": 3,
+      "name": "one surviving signed coefficient"
+    },
+    {
+      "dimension": 3,
+      "entries_checked": 9,
+      "largest_degree": 17,
+      "name": "actual native homogeneous factors"
+    },
+    {
+      "dimension": 7,
+      "entries_checked": 49,
+      "largest_degree": 31,
+      "name": "mixed side of one and skipped prime exponents"
+    },
+    {
+      "dimension": 4,
+      "entries_checked": 16,
+      "largest_degree": 31,
+      "name": "nearly coincident distinct roots"
+    }
+  ],
+  "moving_order_budgets": [
+    {
+      "T_symbolic": "2^(4t)",
+      "beta": 0,
+      "example_type": "finite parameter inequalities, without an effective logarithm onset",
+      "guard_length": 1000000000000,
+      "log_M_symbolic": "2^t",
+      "population_minus_capacity_lower": "27759988",
+      "t": 100000000
+    },
+    {
+      "T_symbolic": "2^(4t)",
+      "beta": 1,
+      "example_type": "finite parameter inequalities, without an effective logarithm onset",
+      "guard_length": 100000000000000000000,
+      "log_M_symbolic": "2^t",
+      "population_minus_capacity_lower": "27759988",
+      "t": 100000000
+    },
+    {
+      "T_symbolic": "2^(4t)",
+      "beta": 2,
+      "example_type": "finite parameter inequalities, without an effective logarithm onset",
+      "guard_length": 100000000000000000000000000000000000,
+      "log_M_symbolic": "2^t",
+      "population_minus_capacity_lower": "3697599988",
+      "t": 10000000000
+    }
+  ],
+  "source_sha256": "a7daad9f2009f20136f8163de24aa5fb5f652ae604f34e4cf04a804af2b9238c"
+}

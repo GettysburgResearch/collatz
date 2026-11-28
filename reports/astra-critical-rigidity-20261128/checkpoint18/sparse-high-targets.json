@@ -1,0 +1,509 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:40:14.400182+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_sparse_high_targets.py": "9f34bb4cc5dbbc3b4d0c9dc71f0f4481a3c03debe7353d473d67e4e329c2d5d3",
+    "research/astra-critical-rigidity-20261128/ordinary/SPARSE_HIGH_TARGETS.md": "5b76d41622664d483313ab7a5cb0beec27362425ade03347c0613e1e11889835",
+    "research/astra-critical-rigidity-20261128/ordinary/FINITE_HIGH_ORBIT_INTERSECTIONS.md": "0127f494a4ade7b4695171491bdc95d9487e2baaf7805c05b617821907c1a470"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.377,
+      "stdout_sha256": "e4ce4650f5834d6b25212d2ef10e77040a23479e22fd8dd0bd4aa30013fea09c",
+      "result": {
+        "actual_paths": {
+          "finite_trace_probes": [
+            [
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              13,
+              9,
+              23,
+              640
+            ],
+            [
+              13,
+              34,
+              18,
+              795
+            ],
+            [
+              13,
+              55,
+              86,
+              2190
+            ],
+            [
+              47,
+              0,
+              0,
+              0
+            ],
+            [
+              47,
+              9,
+              23,
+              317
+            ],
+            [
+              47,
+              34,
+              18,
+              372
+            ],
+            [
+              47,
+              55,
+              86,
+              645
+            ],
+            [
+              97,
+              0,
+              0,
+              0
+            ],
+            [
+              97,
+              9,
+              23,
+              281
+            ],
+            [
+              97,
+              34,
+              18,
+              354
+            ],
+            [
+              97,
+              55,
+              86,
+              438
+            ],
+            [
+              131,
+              0,
+              0,
+              0
+            ],
+            [
+              131,
+              9,
+              23,
+              247
+            ],
+            [
+              131,
+              34,
+              18,
+              322
+            ],
+            [
+              131,
+              55,
+              86,
+              409
+            ],
+            [
+              239,
+              0,
+              0,
+              0
+            ],
+            [
+              239,
+              9,
+              23,
+              144
+            ],
+            [
+              239,
+              34,
+              18,
+              252
+            ],
+            [
+              239,
+              55,
+              86,
+              363
+            ]
+          ],
+          "high_even_lifts": 7062,
+          "pairs_per_probe": 3408,
+          "sources": 1536
+        },
+        "scope": "Finite reversed-word and physical trace identities only",
+        "sha256": {
+          "FINITE_HIGH_ORBIT_INTERSECTIONS.md": "0127f494a4ade7b4695171491bdc95d9487e2baaf7805c05b617821907c1a470",
+          "SPARSE_HIGH_TARGETS.md": "5b76d41622664d483313ab7a5cb0beec27362425ade03347c0613e1e11889835",
+          "check_sparse_high_targets.py": "9f34bb4cc5dbbc3b4d0c9dc71f0f4481a3c03debe7353d473d67e4e329c2d5d3"
+        },
+        "word_grids": [
+          {
+            "masks": [
+              [
+                47,
+                24,
+                204,
+                [
+                  3367,
+                  65536
+                ]
+              ],
+              [
+                341,
+                339,
+                2388,
+                [
+                  73307,
+                  131072
+                ]
+              ],
+              [
+                3073,
+                1491,
+                13089,
+                [
+                  54161,
+                  16384
+                ]
+              ]
+            ],
+            "native_budget": 6,
+            "source": 4096,
+            "target": 2048
+          },
+          {
+            "masks": [
+              [
+                138,
+                118,
+                912,
+                [
+                  108003,
+                  1536256
+                ]
+              ],
+              [
+                1000,
+                1589,
+                12815,
+                [
+                  93673,
+                  96016
+                ]
+              ],
+              [
+                9003,
+                7190,
+                59763,
+                [
+                  1775865,
+                  384064
+                ]
+              ]
+            ],
+            "native_budget": 8,
+            "source": 10009,
+            "target": 6001
+          },
+          {
+            "masks": [
+              [
+                415,
+                271,
+                2154,
+                [
+                  104845,
+                  1152064
+                ]
+              ],
+              [
+                3001,
+                3289,
+                28564,
+                [
+                  2451593,
+                  2304128
+                ]
+              ],
+              [
+                27003,
+                17718,
+                140021,
+                [
+                  1707969,
+                  288016
+                ]
+              ]
+            ],
+            "native_budget": 7,
+            "source": 12008,
+            "target": 18001
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.397,
+      "stdout_sha256": "e4ce4650f5834d6b25212d2ef10e77040a23479e22fd8dd0bd4aa30013fea09c",
+      "result": {
+        "actual_paths": {
+          "finite_trace_probes": [
+            [
+              13,
+              0,
+              0,
+              0
+            ],
+            [
+              13,
+              9,
+              23,
+              640
+            ],
+            [
+              13,
+              34,
+              18,
+              795
+            ],
+            [
+              13,
+              55,
+              86,
+              2190
+            ],
+            [
+              47,
+              0,
+              0,
+              0
+            ],
+            [
+              47,
+              9,
+              23,
+              317
+            ],
+            [
+              47,
+              34,
+              18,
+              372
+            ],
+            [
+              47,
+              55,
+              86,
+              645
+            ],
+            [
+              97,
+              0,
+              0,
+              0
+            ],
+            [
+              97,
+              9,
+              23,
+              281
+            ],
+            [
+              97,
+              34,
+              18,
+              354
+            ],
+            [
+              97,
+              55,
+              86,
+              438
+            ],
+            [
+              131,
+              0,
+              0,
+              0
+            ],
+            [
+              131,
+              9,
+              23,
+              247
+            ],
+            [
+              131,
+              34,
+              18,
+              322
+            ],
+            [
+              131,
+              55,
+              86,
+              409
+            ],
+            [
+              239,
+              0,
+              0,
+              0
+            ],
+            [
+              239,
+              9,
+              23,
+              144
+            ],
+            [
+              239,
+              34,
+              18,
+              252
+            ],
+            [
+              239,
+              55,
+              86,
+              363
+            ]
+          ],
+          "high_even_lifts": 7062,
+          "pairs_per_probe": 3408,
+          "sources": 1536
+        },
+        "scope": "Finite reversed-word and physical trace identities only",
+        "sha256": {
+          "FINITE_HIGH_ORBIT_INTERSECTIONS.md": "0127f494a4ade7b4695171491bdc95d9487e2baaf7805c05b617821907c1a470",
+          "SPARSE_HIGH_TARGETS.md": "5b76d41622664d483313ab7a5cb0beec27362425ade03347c0613e1e11889835",
+          "check_sparse_high_targets.py": "9f34bb4cc5dbbc3b4d0c9dc71f0f4481a3c03debe7353d473d67e4e329c2d5d3"
+        },
+        "word_grids": [
+          {
+            "masks": [
+              [
+                47,
+                24,
+                204,
+                [
+                  3367,
+                  65536
+                ]
+              ],
+              [
+                341,
+                339,
+                2388,
+                [
+                  73307,
+                  131072
+                ]
+              ],
+              [
+                3073,
+                1491,
+                13089,
+                [
+                  54161,
+                  16384
+                ]
+              ]
+            ],
+            "native_budget": 6,
+            "source": 4096,
+            "target": 2048
+          },
+          {
+            "masks": [
+              [
+                138,
+                118,
+                912,
+                [
+                  108003,
+                  1536256
+                ]
+              ],
+              [
+                1000,
+                1589,
+                12815,
+                [
+                  93673,
+                  96016
+                ]
+              ],
+              [
+                9003,
+                7190,
+                59763,
+                [
+                  1775865,
+                  384064
+                ]
+              ]
+            ],
+            "native_budget": 8,
+            "source": 10009,
+            "target": 6001
+          },
+          {
+            "masks": [
+              [
+                415,
+                271,
+                2154,
+                [
+                  104845,
+                  1152064
+                ]
+              ],
+              [
+                3001,
+                3289,
+                28564,
+                [
+                  2451593,
+                  2304128
+                ]
+              ],
+              [
+                27003,
+                17718,
+                140021,
+                [
+                  1707969,
+                  288016
+                ]
+              ]
+            ],
+            "native_budget": 7,
+            "source": 12008,
+            "target": 18001
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact chronological and reversed-word target congruences, relaxed weighted residue counts, unique true sources, finite target-grid conditional means and last-odd lifts. Complete actual ordinary paths supply independent finite pre/postminimum trace decompositions and ordered-pair tests. The uniform sparse-target estimate, natural component densities and Gaussian trace limits remain source-qualified written mathematics.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:40:15.175040+00:00"
+}

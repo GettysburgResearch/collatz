@@ -1,0 +1,28 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 18,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint18/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/check_lean.py": "ccc3b8f5161c4e3cf1b8c29f44bf8e76468de46e4bf039addeba8d512cabda4b",
+    "research/astra-critical-rigidity-20261128/cycles/FROBENIUS_BAND_EXITS.md": "83432d8a0b7f1d47b7dc2eb7ab6c9b7c5018205483368b7dd6439e0674358840",
+    "research/astra-critical-rigidity-20261128/cycles/GuardedTernaryTube.lean": "fa43f0135caaf13e9429a5b2696f5e9f47bb13b080c66b2a6cc4f682d5816a86",
+    "research/astra-critical-rigidity-20261128/cycles/HIGH_ORDER_NATIVE_RESIDENCE.md": "3f98fbe51772b4dbb475b4650d9668f920aa966108b48a0a5248f44c2ffa1ffa",
+    "research/astra-critical-rigidity-20261128/cycles/POLYLOGARITHMIC_NEAR_OCTAVE_RESIDENCE.md": "a7daad9f2009f20136f8163de24aa5fb5f652ae604f34e4cf04a804af2b9238c",
+    "research/astra-critical-rigidity-20261128/cycles/POOLED_PAST_SUMSETS.md": "508942858e62ba62e2de451a49137d952b5b27b54d7defbe912b075e6fd31fb8",
+    "research/astra-critical-rigidity-20261128/cycles/check_high_order_native_residence.py": "8d575a449969724286edab9165af7dc7fd3ba9f6f6621a6ee343d8b6db72a2fd",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90",
+    "research/astra-critical-rigidity-20261128/cycles/check_polylog_residence.py": "3f1e4ed0ffed1bc2543546616add2b0784a45e26adf56aa9f2032345a1ef517e",
+    "research/astra-critical-rigidity-20261128/cycles/high_order_native_residence_controls.json": "8251b6cac466319ee71669c103ada29685a94269f964daafc25bfd704deb861e",
+    "research/astra-critical-rigidity-20261128/cycles/polylog_residence_controls.json": "ddde83b30202af97a6b49575fd41da34024f90d9ed10b7cf79d26142e81f4b8b",
+    "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+    "research/astra-critical-rigidity-20261128/literature/FiniteBranchCapture.lean": "00dd01f7cf1497b1bee46a9d7289ab5d7224bd4d2ad9c0786a4309a4a29c0b65",
+    "research/astra-critical-rigidity-20261128/ordinary/FINITE_HIGH_ORBIT_INTERSECTIONS.md": "0127f494a4ade7b4695171491bdc95d9487e2baaf7805c05b617821907c1a470",
+    "research/astra-critical-rigidity-20261128/ordinary/SHARP_SPARSE_TARGET_CONTROLS.json": "e5cc2f594a11355c9bbe4b3f67174a15d837b4bb66e28c9c86ab5ad6bc2d32c4",
+    "research/astra-critical-rigidity-20261128/ordinary/SHARP_SPARSE_TARGET_EXPONENT.md": "6b930b1f2c9705ddca31aba8e69f8dc7a7fe1d8d78a06a7636b410eca4b32486",
+    "research/astra-critical-rigidity-20261128/ordinary/SPARSE_HIGH_TARGETS.md": "5b76d41622664d483313ab7a5cb0beec27362425ade03347c0613e1e11889835",
+    "research/astra-critical-rigidity-20261128/ordinary/SPARSE_HIGH_TARGET_CONTROLS.json": "e4ce4650f5834d6b25212d2ef10e77040a23479e22fd8dd0bd4aa30013fea09c",
+    "research/astra-critical-rigidity-20261128/ordinary/check_sharp_sparse_targets.py": "9b1381b4759d9f830770ecc0204d1c52c0148155c9b7e660dedba0457f40dd78",
+    "research/astra-critical-rigidity-20261128/ordinary/check_sparse_high_targets.py": "9f34bb4cc5dbbc3b4d0c9dc71f0f4481a3c03debe7353d473d67e4e329c2d5d3"
+  },
+  "scope": "Five independently reconstructed proposed written notes; four centrally replayed exact finite controls; seven new connected Lean roots freshly compiled with thirteen existing dependency roots. Stationary endpoint attribution belongs to Weaver original Paper146/v1. The actual physical square-root transfer is written, not formal probability. No Collatz threshold is evaluated."
+}
