@@ -6,6 +6,17 @@ This pass uses three GPT-6.2 Astra researchers at ultra reasoning effort and a c
 
 The requested working interval began at 12:31:15 UTC on 28 November 2026 and targets 21:31:15 UTC. This entry records the start, not completion of that interval.
 
+## Checkpoint 3
+
+[Independent reconstruction](../../reports/astra-global-pursuit-20261128/CHECKPOINT_03_REVIEW.md) · [exact replay receipt](../../reports/astra-global-pursuit-20261128/CHECKPOINT_03_EVIDENCE.json).
+
+- [Sparse affine families](dynamics/MIXED_AFFINE_FAMILIES.md): one Haar anchor now controls arbitrary finite families with signed offsets and a real center. An ordinary consequence simultaneously joins every start in all mixed dyadic and ternary descendant intervals through depths `o(sqrt(log X))` for density-one anchors.
+- [Local tripling witness](arithmetic/LOCAL_TRIPLING_WITNESS.md): one adjacent change of an invariant binary coloring yields a tripling failure through a bounded local address and recoverable arithmetic anchors. Stronger global directed supply and tripling-sufficiency results are explicitly credited to earlier external papers.
+- [Shifted harmonic flux](wild/REAL_SHIFTED_HARMONIC_FLUX.md): the nearest odd representative above the stationary real coordinate has a singular-moment excess equal to the **unweighted** ordinary escape density. Its needed upper evaluation remains open.
+- [Fixed escape gain spectrum](dynamics/ESCAPE_GAIN_SPECTRUM.md): one minimizing ordinary source wins all future inverse-gain competitions in an escaping component. The entire normalized spectrum stabilizes, while skipped sibling gains have summable relative sizes. The missing comparison is being pursued without changing the source at successive deadlines.
+
+These are reviewed written arguments with exact finite controls where applicable. No new analytic Lean verification is claimed in this checkpoint.
+
 ## Checkpoint 2
 
 [Independent reconstruction](../../reports/astra-global-pursuit-20261128/CHECKPOINT_02_REVIEW.md) · [exact replay and local Lean receipt](../../reports/astra-global-pursuit-20261128/CHECKPOINT_02_EVIDENCE.json).
