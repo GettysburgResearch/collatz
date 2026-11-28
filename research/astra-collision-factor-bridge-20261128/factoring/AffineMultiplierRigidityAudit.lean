@@ -1,0 +1,4 @@
+import AffineMultiplierRigidity
+#print axioms Collatz.FactoringBridge.two_point_word_slope
+#print axioms Collatz.FactoringBridge.actual_two_point_slope
+#print axioms Collatz.FactoringBridge.prime_multiplier_cell_unique

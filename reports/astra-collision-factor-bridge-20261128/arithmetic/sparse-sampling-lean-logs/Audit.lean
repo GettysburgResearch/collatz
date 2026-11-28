@@ -1,0 +1,12 @@
+import SparseSampling
+
+#check Collatz.SparseSampling.mass_le_marked_add_failure
+#check Collatz.SparseSampling.sparse_sampling_budget
+#check Collatz.SparseSampling.sparse_sampling_budget_of_bounds
+#check Collatz.SparseSampling.iterate_eq_of_meeting
+#check Collatz.SparseSampling.visit_iff_after_meeting
+#print axioms Collatz.SparseSampling.mass_le_marked_add_failure
+#print axioms Collatz.SparseSampling.sparse_sampling_budget
+#print axioms Collatz.SparseSampling.sparse_sampling_budget_of_bounds
+#print axioms Collatz.SparseSampling.iterate_eq_of_meeting
+#print axioms Collatz.SparseSampling.visit_iff_after_meeting

@@ -1,0 +1,80 @@
+{
+  "schema": "collatz-factoring-pointwise-intake/v1",
+  "date_utc": "2026-11-28",
+  "repository": "gfreund123/factoring-in-p",
+  "scope": "Selected complete source files read at immutable heads for pointwise estimates, uniformity, and Collatz consumer compatibility. No independent replay of the factoring repository's formal or numerical checks, and no validation claim for every cited external analytic input.",
+  "sources": [
+    {
+      "key": "factor_focus_source_234",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/global_geometry_2026_11_27.md",
+      "sha": "f392e45b11a135e99006d2c4bbea5349cff60906",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/global_geometry_2026_11_27.md",
+      "content_length": 23590
+    },
+    {
+      "key": "factor_focus_source_294",
+      "ref": "9a8f091b1f1a4c957aed1132e8312e37a66b496d",
+      "path": "research/powered-moment-recovery/MOMENTS.md",
+      "sha": "249d36fef00e46a1a63890cb3c9bb85dcca78bd5",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/9a8f091b1f1a4c957aed1132e8312e37a66b496d/research/powered-moment-recovery/MOMENTS.md",
+      "content_length": 12287
+    },
+    {
+      "key": "factor_focus_source_310",
+      "ref": "f0b23444dcdbaf48475919f3c903c5c1924913e9",
+      "path": "notes/cm-quaternion-mass-2026-11-27.md",
+      "sha": "42c18dc44e12de403a1b7d6131b14958e0035487",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/f0b23444dcdbaf48475919f3c903c5c1924913e9/notes/cm-quaternion-mass-2026-11-27.md",
+      "content_length": 13346
+    },
+    {
+      "key": "factor_focus_source_313",
+      "ref": "deef3316388f54912624f99e51c2a8202e9d1b5e",
+      "path": "research/analytic-weil-branches/ANALYTIC.md",
+      "sha": "1aca60562ecdfc0f98c12de3e8e0d74a73f6635d",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/deef3316388f54912624f99e51c2a8202e9d1b5e/research/analytic-weil-branches/ANALYTIC.md",
+      "content_length": 11856
+    },
+    {
+      "key": "factor_focus_234_uniform_simultaneous_weil_lattice.md",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_simultaneous_weil_lattice.md",
+      "sha": "1b7a24239959e06636b5337e8cee0c0de60f3760",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_simultaneous_weil_lattice.md",
+      "content_length": 14428
+    },
+    {
+      "key": "factor_focus_234_uniform_primary_digits.md",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_primary_digits.md",
+      "sha": "1f2adbfdb940dc4616219c946a72c23d1e9e5c58",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_primary_digits.md",
+      "content_length": 11019
+    },
+    {
+      "key": "factor_focus_234_uniform_unfactored_ordered_primary.md",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_unfactored_ordered_primary.md",
+      "sha": "eccaa4dcc86d8ee89e359b648e616e8ab5c94836",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_unfactored_ordered_primary.md",
+      "content_length": 21423
+    },
+    {
+      "key": "factor_focus_234_uniform_multivariate_content.md",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_multivariate_content.md",
+      "sha": "d01d94ef45a0e98ab7a94db34b30c78e9a4d76a0",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_multivariate_content.md",
+      "content_length": 22272
+    },
+    {
+      "key": "factor_focus_234_uniform_elliptic_exponent_dichotomy.md",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_elliptic_exponent_dichotomy.md",
+      "sha": "7e4445cbd1cbaff4cb18925daeb00194b4afea0f",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_elliptic_exponent_dichotomy.md",
+      "content_length": 8447
+    }
+  ]
+}

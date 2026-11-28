@@ -1,0 +1,155 @@
+{
+  "creation_identity_checks": 131071,
+  "halving_checks": 131072,
+  "maximum_integer_evaluated": 262144,
+  "rows": [
+    {
+      "boundary_count": 0,
+      "even_boundary_count": 0,
+      "ones": 0,
+      "shell": 0,
+      "start": 1,
+      "stop_exclusive": 2
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 1,
+      "ones": 1,
+      "shell": 1,
+      "start": 2,
+      "stop_exclusive": 4
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 2,
+      "shell": 2,
+      "start": 4,
+      "stop_exclusive": 8
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 4,
+      "shell": 3,
+      "start": 8,
+      "stop_exclusive": 16
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 8,
+      "shell": 4,
+      "start": 16,
+      "stop_exclusive": 32
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 2,
+      "ones": 16,
+      "shell": 5,
+      "start": 32,
+      "stop_exclusive": 64
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 32,
+      "shell": 6,
+      "start": 64,
+      "stop_exclusive": 128
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 64,
+      "shell": 7,
+      "start": 128,
+      "stop_exclusive": 256
+    },
+    {
+      "boundary_count": 2,
+      "even_boundary_count": 0,
+      "ones": 128,
+      "shell": 8,
+      "start": 256,
+      "stop_exclusive": 512
+    },
+    {
+      "boundary_count": 62,
+      "even_boundary_count": 32,
+      "ones": 256,
+      "shell": 9,
+      "start": 512,
+      "stop_exclusive": 1024
+    },
+    {
+      "boundary_count": 62,
+      "even_boundary_count": 0,
+      "ones": 512,
+      "shell": 10,
+      "start": 1024,
+      "stop_exclusive": 2048
+    },
+    {
+      "boundary_count": 62,
+      "even_boundary_count": 0,
+      "ones": 1024,
+      "shell": 11,
+      "start": 2048,
+      "stop_exclusive": 4096
+    },
+    {
+      "boundary_count": 62,
+      "even_boundary_count": 0,
+      "ones": 2048,
+      "shell": 12,
+      "start": 4096,
+      "stop_exclusive": 8192
+    },
+    {
+      "boundary_count": 62,
+      "even_boundary_count": 0,
+      "ones": 4096,
+      "shell": 13,
+      "start": 8192,
+      "stop_exclusive": 16384
+    },
+    {
+      "boundary_count": 962,
+      "even_boundary_count": 512,
+      "ones": 8192,
+      "shell": 14,
+      "start": 16384,
+      "stop_exclusive": 32768
+    },
+    {
+      "boundary_count": 962,
+      "even_boundary_count": 0,
+      "ones": 16384,
+      "shell": 15,
+      "start": 32768,
+      "stop_exclusive": 65536
+    },
+    {
+      "boundary_count": 962,
+      "even_boundary_count": 0,
+      "ones": 32768,
+      "shell": 16,
+      "start": 65536,
+      "stop_exclusive": 131072
+    },
+    {
+      "boundary_count": 962,
+      "even_boundary_count": 0,
+      "ones": 65536,
+      "shell": 17,
+      "start": 131072,
+      "stop_exclusive": 262144
+    }
+  ],
+  "schema": "collatz-binary-boundary-finite/v1",
+  "scope": "Exact finite counts and algebra only; natural density one-half and weighted-boundary divergence remain written infinite proofs. This label is not Collatz invariant.",
+  "source_sha256": "5a1a7e3eaebab83dd2ad162a6e0b62fe7b83ac1e3914a3f713951d2ed2c6b772",
+  "success": true
+}

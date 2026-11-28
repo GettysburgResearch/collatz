@@ -1,0 +1,266 @@
+{
+  "schema": "collatz-bounded-affine-gap-check/v1",
+  "utc": "2026-11-28T09:40:19.671809+00:00",
+  "scope": "Finite floating-point sanity checks of exact written formulas; no claimed spectral-gap lower bound or formal proof.",
+  "script_sha256": "b45843ec1150bcf220acc4f933f99c1907ab0d597b4e4bac44cd259e16ab4e1c",
+  "charts": [
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      -2,
+      0
+    ],
+    [
+      1,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      -1,
+      -2,
+      1
+    ],
+    [
+      -1,
+      0,
+      2,
+      1
+    ]
+  ],
+  "packet_cases": 26,
+  "individual_chart_checks": 182,
+  "multiplier_character_checks": 80,
+  "largest_absolute_mean_error": 2.6760820122373463e-16,
+  "largest_absolute_norm_error": 1.5543122344752192e-15,
+  "cases": [
+    {
+      "w": 8,
+      "Q": 256,
+      "packet_length": 1,
+      "rayleigh": 0.5746930748378951,
+      "refined_bound": 0.7540237318842856,
+      "uniform_bound": 1.4758624745281326
+    },
+    {
+      "w": 8,
+      "Q": 256,
+      "packet_length": 2,
+      "rayleigh": 0.3033816719802883,
+      "refined_bound": 0.44636353764769865,
+      "uniform_bound": 1.1085367030900197
+    },
+    {
+      "w": 10,
+      "Q": 1024,
+      "packet_length": 1,
+      "rayleigh": 0.5716329327120223,
+      "refined_bound": 0.7162988798568063,
+      "uniform_bound": 1.2922079553763923
+    },
+    {
+      "w": 10,
+      "Q": 1024,
+      "packet_length": 2,
+      "rayleigh": 0.28683210251531405,
+      "refined_bound": 0.3381587225509167,
+      "uniform_bound": 0.6700700097646464
+    },
+    {
+      "w": 10,
+      "Q": 1024,
+      "packet_length": 3,
+      "rayleigh": 0.17312421561348437,
+      "refined_bound": 0.2510794899268305,
+      "uniform_bound": 0.623551895488136
+    },
+    {
+      "w": 10,
+      "Q": 1024,
+      "packet_length": 4,
+      "rayleigh": 0.1389386188313975,
+      "refined_bound": 0.4591735171516683,
+      "uniform_bound": 1.315990424965931
+    },
+    {
+      "w": 12,
+      "Q": 4096,
+      "packet_length": 1,
+      "rayleigh": 0.5714413452980709,
+      "refined_bound": 0.7077450358956997,
+      "uniform_bound": 1.248200334205115
+    },
+    {
+      "w": 12,
+      "Q": 4096,
+      "packet_length": 2,
+      "rayleigh": 0.28578420274573196,
+      "refined_bound": 0.3190038401885893,
+      "uniform_bound": 0.5776074139832235
+    },
+    {
+      "w": 12,
+      "Q": 4096,
+      "packet_length": 3,
+      "rayleigh": 0.16772954132260334,
+      "refined_bound": 0.19021428143489066,
+      "uniform_bound": 0.3769143804926136
+    },
+    {
+      "w": 12,
+      "Q": 4096,
+      "packet_length": 4,
+      "rayleigh": 0.1110924412370534,
+      "refined_bound": 0.15674985281602366,
+      "uniform_bound": 0.38440965348825284
+    },
+    {
+      "w": 12,
+      "Q": 4096,
+      "packet_length": 5,
+      "rayleigh": 0.0875123355864819,
+      "refined_bound": 0.28060308904437403,
+      "uniform_bound": 0.8053244599042523
+    },
+    {
+      "w": 14,
+      "Q": 16384,
+      "packet_length": 1,
+      "rayleigh": 0.5714293698004517,
+      "refined_bound": 0.7056614104707831,
+      "uniform_bound": 1.2373175544508366
+    },
+    {
+      "w": 14,
+      "Q": 16384,
+      "packet_length": 2,
+      "rayleigh": 0.2857186557377452,
+      "refined_bound": 0.31470863968624924,
+      "uniform_bound": 0.5555638948847378
+    },
+    {
+      "w": 14,
+      "Q": 16384,
+      "packet_length": 3,
+      "rayleigh": 0.16739018644934825,
+      "refined_bound": 0.1794396601060815,
+      "uniform_bound": 0.3249041703655632
+    },
+    {
+      "w": 14,
+      "Q": 16384,
+      "packet_length": 4,
+      "rayleigh": 0.10925599070403842,
+      "refined_bound": 0.12111906387969491,
+      "uniform_bound": 0.23835697821530544
+    },
+    {
+      "w": 14,
+      "Q": 16384,
+      "packet_length": 5,
+      "rayleigh": 0.07726041451019487,
+      "refined_bound": 0.10491334121712355,
+      "uniform_bound": 0.25203398359619383
+    },
+    {
+      "w": 16,
+      "Q": 65536,
+      "packet_length": 1,
+      "rayleigh": 0.5714286213268336,
+      "refined_bound": 0.7051439313373891,
+      "uniform_bound": 1.2346043048584259
+    },
+    {
+      "w": 16,
+      "Q": 65536,
+      "packet_length": 2,
+      "rayleigh": 0.28571455884156843,
+      "refined_bound": 0.3136656845661793,
+      "uniform_bound": 0.5501200232255458
+    },
+    {
+      "w": 16,
+      "Q": 65536,
+      "packet_length": 3,
+      "rayleigh": 0.16736896819392913,
+      "refined_bound": 0.1770236098235152,
+      "uniform_bound": 0.31250469087266497
+    },
+    {
+      "w": 16,
+      "Q": 65536,
+      "packet_length": 4,
+      "rayleigh": 0.10914082538225486,
+      "refined_bound": 0.11470981209233663,
+      "uniform_bound": 0.20727146674684807
+    },
+    {
+      "w": 16,
+      "Q": 65536,
+      "packet_length": 5,
+      "rayleigh": 0.07660095570471515,
+      "refined_bound": 0.08347691328082606,
+      "uniform_bound": 0.1625602806671949
+    },
+    {
+      "w": 18,
+      "Q": 262144,
+      "packet_length": 1,
+      "rayleigh": 0.5714285745472129,
+      "refined_bound": 0.7050147757554678,
+      "uniform_bound": 1.233926457794458
+    },
+    {
+      "w": 18,
+      "Q": 262144,
+      "packet_length": 2,
+      "rayleigh": 0.2857143027847441,
+      "refined_bound": 0.31340687359900654,
+      "uniform_bound": 0.5487632433179619
+    },
+    {
+      "w": 18,
+      "Q": 262144,
+      "packet_length": 3,
+      "rayleigh": 0.16736764201945872,
+      "refined_bound": 0.1764369475684759,
+      "uniform_bound": 0.3094425130643695
+    },
+    {
+      "w": 18,
+      "Q": 262144,
+      "packet_length": 4,
+      "rayleigh": 0.10913362603432657,
+      "refined_bound": 0.1132636519859173,
+      "uniform_bound": 0.19983931746409497
+    },
+    {
+      "w": 18,
+      "Q": 262144,
+      "packet_length": 5,
+      "rayleigh": 0.07655966513907002,
+      "refined_bound": 0.07952318186053386,
+      "uniform_bound": 0.1432449121941961
+    }
+  ],
+  "success": true
+}
