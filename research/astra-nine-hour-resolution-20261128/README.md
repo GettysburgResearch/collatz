@@ -36,3 +36,18 @@ The [first checkpoint reconstruction](../../reports/astra-nine-hour-resolution-2
 records the exact source commits and what was independently checked. These are
 intermediate contributions. The team remains active toward full closure through
 the requested nine-hour interval.
+
+## Second checkpoint: further global attacks
+
+| Contribution | Statement and role in the ongoing search |
+|---|---|
+| [Corrected-height moments](arithmetic/HIGH_CORRECTED_HEIGHT_MOMENTS.md) | On a hypothetical escaping component, bounded-intercept predecessor words transfer high corrected-height moments to actual large sources, uniformly in moving ternary classes. The inequalities use the true ordinary normalizer; an upper relative comparison remains open. |
+| [Balanced class extrema](wild/BALANCED_CLASS_EXTREMA.md) | The real corrected height is the limit of scaled maxima of actual equal-clock, equal-grade merger classes. Escape gives finite classes and a global minimum of corrected height over the whole component, constraining every undirected walk. |
+| [Translated windows](analysis/TRANSLATED_WINDOWS.md) | Natural orbit-label means persist in every interval whose height-to-width ratio is a small power of its logarithmic width. A separate signed estimate retains the complete actual endpoint and halving total. |
+| [Rational envelope classification](analysis/RATIONAL_ENVELOPE_CLASSIFICATION.md) | Infinite values at rational ternary points are classified by formal images of negative periodic rational points. Positive dyadic grids contain many such poles, while every fixed positive integer value is finite. |
+| [Outside spectral audit](SPECTRAL_OPERATOR_AUDIT.md) | The literal reciprocal-state transfer operator in Hateley v6 has spectral radius exactly one half on its weighted sequence spaces, contradicting the printed nonzero fixed-vector input. This is a source audit, not a termination theorem. |
+
+The [second checkpoint review](../../reports/astra-nine-hour-resolution-20261128/CHECKPOINT_02_REVIEW.md)
+pins the independently reconstructed claims. No full proof is asserted. The
+agents continue with the global minimum, coherent orbit phases, and relative
+physical transport, and remain free to replace these routes.
