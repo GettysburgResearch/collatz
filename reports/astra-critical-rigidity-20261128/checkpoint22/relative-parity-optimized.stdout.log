@@ -1,0 +1,138 @@
+{
+  "finite_intervals": [
+    {
+      "length": 95,
+      "start": 1,
+      "trimmed_joint_tv": "37/88",
+      "word_families": [
+        {
+          "actual_word_count": 11,
+          "label_tv_from_interval": "664/1045",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 12,
+          "label_tv_from_interval": "601/1140",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 95,
+          "label_tv_from_interval": "0",
+          "residues": 8
+        },
+        {
+          "actual_word_count": 36,
+          "label_tv_from_interval": "91/285",
+          "residues": 3
+        },
+        {
+          "actual_word_count": 24,
+          "label_tv_from_interval": "197/456",
+          "residues": 2
+        }
+      ],
+      "word_length": 3
+    },
+    {
+      "length": 771,
+      "start": 417,
+      "trimmed_joint_tv": "181/1504",
+      "word_families": [
+        {
+          "actual_word_count": 48,
+          "label_tv_from_interval": "2939/12336",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 48,
+          "label_tv_from_interval": "2299/12336",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 771,
+          "label_tv_from_interval": "0",
+          "residues": 16
+        },
+        {
+          "actual_word_count": 291,
+          "label_tv_from_interval": "1143/24929",
+          "residues": 6
+        },
+        {
+          "actual_word_count": 192,
+          "label_tv_from_interval": "2975/49344",
+          "residues": 4
+        }
+      ],
+      "word_length": 4
+    },
+    {
+      "length": 1053,
+      "start": 17003,
+      "trimmed_joint_tv": "4049/32768",
+      "word_families": [
+        {
+          "actual_word_count": 33,
+          "label_tv_from_interval": "2960/11583",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 33,
+          "label_tv_from_interval": "1259/11583",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 1053,
+          "label_tv_from_interval": "0",
+          "residues": 32
+        },
+        {
+          "actual_word_count": 330,
+          "label_tv_from_interval": "383/8910",
+          "residues": 10
+        },
+        {
+          "actual_word_count": 263,
+          "label_tv_from_interval": "1064/21303",
+          "residues": 8
+        }
+      ],
+      "word_length": 5
+    },
+    {
+      "length": 2319,
+      "start": 518713,
+      "trimmed_joint_tv": "9833/73728",
+      "word_families": [
+        {
+          "actual_word_count": 37,
+          "label_tv_from_interval": "15422/85803",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 37,
+          "label_tv_from_interval": "14996/85803",
+          "residues": 1
+        },
+        {
+          "actual_word_count": 2319,
+          "label_tv_from_interval": "0",
+          "residues": 64
+        },
+        {
+          "actual_word_count": 724,
+          "label_tv_from_interval": "58465/1678956",
+          "residues": 20
+        },
+        {
+          "actual_word_count": 580,
+          "label_tv_from_interval": "43271/672510",
+          "residues": 16
+        }
+      ],
+      "word_length": 6
+    }
+  ],
+  "scope": "exact counts, empirical baselines and coupling inequalities only",
+  "source_sha256": "41a07206522240b990cc0bf2ad110df7dc0c8796aa6368e90316ccd7e980320b"
+}

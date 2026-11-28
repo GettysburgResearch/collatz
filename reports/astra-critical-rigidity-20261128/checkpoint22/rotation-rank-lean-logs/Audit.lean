@@ -1,0 +1,4 @@
+import RotationRecurrenceRank
+
+#print axioms Collatz.RotationRecurrenceRank.native_run_lt
+#print axioms Collatz.RotationRecurrenceRank.native_budget_rank

@@ -1,0 +1,27 @@
+{
+  "schema": "collatz-original-source-review/v1",
+  "success": true,
+  "primary_sources": [
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "sections_read": "Original version 1, Lemma13 selected-word input and Theorem14 uniform clocked first-entry floor, equations (40)-(41), including the proof of the absolute X>=C*M onset",
+      "scope": "Written primary input, including the stated selected-word and joint-mixing inputs. The coordinator checked target uniformity and true first-entry semantics."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/124/v1",
+      "sections_read": "Theorem7, rare conditioned prefixes followed by fresh high bits",
+      "scope": "Prior coupling construction credited; not cited as already proving the new moving relative terminal-basin law."
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23268751",
+      "sections_read": "Uniform return domination and uniform pair absorption",
+      "sha256": "d2f961635d339a4b215c82b1f2f8b9ca53143043f4c58b9aa67290f46056996e"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23269488",
+      "sections_read": "Uniform transport, true minimum clock and Brownian process; supplement relative clock-landing law, moderate tails and stated capped conjecture",
+      "prior_source_record": "../checkpoint21/original-source-review.json"
+    }
+  ],
+  "scope": "Relevant original statements and proof ranges read centrally. This records written dependencies and attribution, not independent formal certification of complete source manuscripts."
+}

@@ -1,0 +1,34 @@
+# Relative parity-word frequencies inside a genuine terminal class
+
+**Proposed, source-qualified written theorem.** Let \(T\) be the positive native shortcut. Let \(\zeta\) be any label satisfying \(\zeta(Tn)=\zeta(n)\) whenever \(n>R\), for one fixed \(R\). Let \(I\) be any interval of \(N\) consecutive positive integers and choose \(n\) uniformly from it. Write \(W_t(n)\) for its first \(t\) native parity bits, \(U_t\) for a uniform binary word, and \(d_I\) for the **actual** distribution of \(\zeta(n)\) on this interval. Distances below are total variation. Put \(j=\lfloor\log_2 N\rfloor\). Uniformly in the location of \(I\), for \(1\le t\le j/4\) and any nonempty family \(D\) of length-\(t\) words of fair mass \(p=|D|2^{-t}\),
+\[
+ \begin{split}
+ \big|\Pr_I(W_t\in D)/p-1\big|&\ll 2^t/N,\\
+ d_{\rm TV}(\mathcal L_I(\zeta\mid W_t\in D),d_I)
+ &\ll \frac{1+\sqrt t+\mathbb E[|g(U_t)-t/2|\mid U_t\in D]}{\sqrt j}
+                    +(1+R)N^{-1/4},                                   \tag{1}\\
+ d_{\rm TV}(\mathcal L_I(W_t,\zeta),\mathcal L(U_t)\otimes d_I)
+ &\ll\sqrt{(t+1)/j}+(1+R)N^{-1/4}.                                   \tag{2}
+ \end{split}
+\]
+Here \(g(w)\) counts the ones. The constants are absolute. The formulas apply for all sufficiently large \(N\); \(d_I\) need not have a limit as the interval moves.
+
+For the natural cutoff \([1,X]\) and a fixed terminal class of positive natural density, the conditional frequency of \(D\) is \((1+o(1))p\) whenever \(t(1+\log(1/p))=o(\log X)\). In particular **every prescribed moving parity word** of length \(o(\sqrt{\log X})\) has relative frequency \((1+o(1))2^{-t}\) in that class. The same holds on any longer scale \(t=o(\log X)\) for each prescribed word with \(|g(w)-t/2|=o(\sqrt{\log X})\), regardless of the order of its bits. At the scale \(t=o(\log X)\), the full word and the terminal label are asymptotically independent in total variation. These statements also hold relative to moving interval classes whose actual \(d_I\)-mass stays bounded below. For labels invariant under the ordinary map above a cutoff, Leen's terminal-data and arithmetic-progression theorem gives the natural class densities and fixed-modulus independence. The moving moduli, relative estimates down to individual words and arbitrary-interval baseline above follow from the coupling. [Leen, terminal data and arithmetic progressions](https://doi.org/10.5281/zenodo.23269488)
+
+Weaver’s Paper 124, Lemma 2 and Theorem 7, already uses the scalar fusion bound and fresh common high bits on each individually conditioned low cylinder, even under rare prefix weights, to compare selected physical-survival experiments. Paper 12, §5, obtains fixed-modulus independence in a positive predecessor class. Here a second independently resampled low residue preserves the interval’s original terminal-label distribution under the first-arm word condition, giving the grade-sensitive and whole-product bounds above. [Weaver, Paper 124, v1](https://rstation.ai/problems/collatz/papers/124/v1) · [Weaver, Paper 12, v1](https://rstation.ai/problems/collatz/papers/12/v1)
+
+## A uniform conditional coupling
+
+Keep the complete blocks of \(2^t\) consecutive integers aligned at multiples of \(2^t\) in \(I\). There are \(M=N/2^t+O(1)\) such blocks. Every block supports each native word once by the parity-residue bijection. Each of the two incomplete blocks contains at most \(p2^t\) selected residues. This proves the first estimate of (1); the discrepancy between the full and trimmed source laws **conditional on** \(D\) is \(O(2^t/N)\), uniformly even at \(p=2^{-t}\). The original unconditioned law incurs at most the same order of error.
+
+Write the trimmed integer as \(2^tm+r\), where \(m\) is uniform on \(M\) consecutive nonnegative integers, independent of the uniform low residue \(r\). Take a second, independent low residue \(r'\) and compare with \(n'=2^tm+r'\). The second integer is independent of the first word, including after conditioning on \(D\). The actual date-\(t\) states are \(3^{g_r}m+T^t(r)\) and \(3^{g_{r'}}m+T^t(r')\), with the harmless residue convention \(T(0)=0\). Ordering by grade, this is a pair \(x,3^u x+d\), \(u=|g_r-g_{r'}|\), with \(\log(2+|d|)\ll t+1\): each intercept lies between zero and \(2^{2t}\). Conditional on **both** residues, the lower-grade state \(x\) is an odd-slope affine function of the still-uniform \(m\).
+
+Put \(h=\lfloor j/2\rfloor\). Leen's native positive-excursion first-return bound is \(\Pr(R_0>h/2)\ll u/\sqrt h\) when \(u>0\). At return, his raw offset moment and uniform level-zero absorption bound give additional delay tail \(O(\sqrt{(1+\log(2+|d|))/h})\), also directly at \(u=0\). The estimates and the two Jensen steps for the normalized incoming offset are given in [Ordinary affine interval profile](ORDINARY_AFFINE_INTERVAL_PROFILE.md). Canonical absorption by \(h\) is a union of complete residues modulo \(2^h\) and implies actual equality. Thus for fixed \(r,r'\), the physical probability of failing to merge by date \(t+h\) is at most
+\[
+         C (1+|g_r-g_{r'}|+\sqrt t)/\sqrt j+O(2^h/M).
+\]
+There is also the event that one of the two paths comes down to \(R\) by then. Every state on either path through that date is at least \(2^{-h}m\), so this exception costs at most \((1+2^hR)/M\), uniformly in the two residues even on intervals near the origin. Since \(t\le j/4\), their total empirical error is \(O((1+R)N^{-1/4})\). On the remaining successful merger event both terminal labels coincide. [Leen, original uniform positive return and absorption](https://doi.org/10.5281/zenodo.23268751) · [Exact native cylinders](https://doi.org/10.5281/zenodo.23268755)
+
+Conditional on \(D\), the triangle inequality bounds the mean grade difference by \(\mathbb E(|g(U_t)-t/2|\mid D)+\sqrt t/2\), since the other grade has the unconditioned binomial law. Compare the two labels in this coupling and restore the trimmed boundaries to obtain (1). Without conditioning, keep the first word itself in the observations. The pair \((W_t(n),\zeta(n'))\) has the product of the fair word law and the trimmed label law, exactly, while the mean grade difference is \(O(\sqrt t)\). Comparing this pair with \((W_t(n),\zeta(n))\) before restoring the boundaries proves (2). The average needed for (2) is taken before any conditioning on an individual exceptional word.
+
+Finally Hoeffding gives \(\Pr(|g-t/2|>v\mid D)\le\min(1,2e^{-2v^2/t}/p)\). Integrating at the cutoff \(v=\sqrt{t\log(2/p)}\) bounds the mean in (1) by \(O(\sqrt{t(1+\log(1/p))})\). For one word the conditional grade is exactly its own. Bayes' formula and the first, relative estimate of (1) now give the stated frequencies in every class of mass bounded below. The proof is a quantitative version of the physical low-residue resampling used for [exact log-square capture](EXACT_LOG_SQUARE_CAPTURE.md).
