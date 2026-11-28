@@ -1,0 +1,65 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:21:25.441688+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_capped_clock.py": "29b477fdea8f66d11a9f08ccd8439719519edc5ac595e2edbcd9a1406283c437",
+    "research/astra-critical-rigidity-20261128/ordinary/CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_ROOT_ITERATED_LOGARITHM.md": "0534cacb0d68c6f1af439ad612fbeb835de7f9bcd56911f3635a426f8e657107",
+    "research/astra-critical-rigidity-20261128/ordinary/NATURAL_INVERSE_RAY_EQUIDISTRIBUTION.md": "36d84557bffa6b998697f4a3e17912d36103330a36c9bfd51aef4ad7a30b7398",
+    "research/astra-critical-rigidity-20261128/ordinary/INVERSE_RAY_CYLINDER_INFORMATION.md": "156b2fc7a7c6ee2346aee54ce7b8b0f0051c89c805716633b95877fd0026c530"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.33,
+      "stdout_sha256": "4c208025ea737c7832106ce0faa2d162bd2fe5629d6d93b5b08da865f2c7e4f4",
+      "result": {
+        "counts": {
+          "complete_odd_word_cells": 4095,
+          "delayed_odd_gates": 7484,
+          "fixed_root_gate_differences": 26268,
+          "odd_native_grid_checks": 16657,
+          "overshot_grid_gates": 10491,
+          "positive_odd_sources": 1024,
+          "shared_landing_root_suffixes": 25918
+        },
+        "manuscript_hashes": {
+          "CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+          "FIXED_ROOT_ITERATED_LOGARITHM.md": "0534cacb0d68c6f1af439ad612fbeb835de7f9bcd56911f3635a426f8e657107"
+        },
+        "scope": "finite exact path comparisons, no statistical limit test"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.365,
+      "stdout_sha256": "4c208025ea737c7832106ce0faa2d162bd2fe5629d6d93b5b08da865f2c7e4f4",
+      "result": {
+        "counts": {
+          "complete_odd_word_cells": 4095,
+          "delayed_odd_gates": 7484,
+          "fixed_root_gate_differences": 26268,
+          "odd_native_grid_checks": 16657,
+          "overshot_grid_gates": 10491,
+          "positive_odd_sources": 1024,
+          "shared_landing_root_suffixes": 25918
+        },
+        "manuscript_hashes": {
+          "CAPPED_FUNCTIONAL_MODERATE_DEVIATIONS.md": "75c17e59c37584f7ca09f1494b892e6429e6e52c18c64b52779dd21276f774d6",
+          "FIXED_ROOT_ITERATED_LOGARITHM.md": "0534cacb0d68c6f1af439ad612fbeb835de7f9bcd56911f3635a426f8e657107"
+        },
+        "scope": "finite exact path comparisons, no statistical limit test"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact native and odd gate clocks, delayed entrances and repeated overshot thresholds, full carry and true segment products, shared fixed-root integer suffixes and complete odd-source parity dictionaries. The functional moderate-deviation principle and sharp iterated-logarithm law are proposed written results using identified original analytic inputs.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:21:26.136591+00:00"
+}

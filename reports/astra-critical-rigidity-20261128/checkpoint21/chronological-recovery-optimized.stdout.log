@@ -1,0 +1,28 @@
+{
+  "conditioned_fibres": {
+    "canonical_absorptions": 556,
+    "comparison_bits": 6,
+    "comparisons": 16384,
+    "conditioned_residues": 8,
+    "independent_arm_avoidance": "537/1024",
+    "prefix_bits": 6
+  },
+  "inverse_paths": {
+    "depth": 14,
+    "largest_ratio": "26/7",
+    "root": 13,
+    "unit_leaves": 58
+  },
+  "record_gates": {
+    "first_odd_records": 1961,
+    "gain_at_least_three": 403,
+    "largest_ratio": "125252/703",
+    "positive_odd_sources": 511
+  },
+  "scope": "exact finite native fixtures; no asymptotic estimate is tested",
+  "source_sha256": {
+    "EXACT_LOG_SQUARE_CAPTURE.md": "fd5f6e86181d1bdc65e308045a6e03c93210506be021d56f7f4359ce4f2ef89a",
+    "FIXED_ROOT_MAXIMUM_RECOVERY.md": "034c73c8c86043799ef2cf0f26a8e0ff201c20aaaa6e1f09256d13afca488b2f",
+    "MAXIMUM_PREMINIMUM_RECOVERY.md": "769c3747fa9350ec540e9124e7293197bd4f7d2acd6861a617b7ea81d240e30b"
+  }
+}
