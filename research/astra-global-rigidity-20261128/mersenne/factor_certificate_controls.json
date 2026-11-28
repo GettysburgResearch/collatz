@@ -1,0 +1,68 @@
+[
+  {
+    "product": 85,
+    "factors": [
+      {
+        "prime": 5,
+        "first_target": 0,
+        "first_one": 4,
+        "deadline": 15
+      },
+      {
+        "prime": 17,
+        "first_target": 5,
+        "first_one": 9,
+        "deadline": 25
+      }
+    ],
+    "factor_target": 5,
+    "product_target": 85,
+    "first_product_target": 0,
+    "product_first_one": 8,
+    "product_deadline": 35
+  },
+  {
+    "product": 36489,
+    "factors": [
+      {
+        "prime": 3,
+        "first_target": 1,
+        "first_one": 5,
+        "deadline": 10
+      },
+      {
+        "prime": 12163,
+        "first_target": 40,
+        "first_one": 44,
+        "deadline": 70
+      }
+    ],
+    "factor_target": 5,
+    "product_target": 85,
+    "first_product_target": 88,
+    "product_first_one": 96,
+    "product_deadline": 80
+  },
+  {
+    "product": 45313,
+    "factors": [
+      {
+        "prime": 113,
+        "first_target": 2,
+        "first_one": 10,
+        "deadline": 35
+      },
+      {
+        "prime": 401,
+        "first_target": 7,
+        "first_one": 15,
+        "deadline": 45
+      }
+    ],
+    "factor_target": 85,
+    "product_target": 5,
+    "first_product_target": 56,
+    "product_first_one": 60,
+    "product_deadline": 80
+  }
+]

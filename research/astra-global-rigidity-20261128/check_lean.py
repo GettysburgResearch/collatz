@@ -26,6 +26,10 @@ MODULES = [
     ("MersenneCrests", "mersenne/MersenneCrests.lean", "Collatz.MersenneCrests"),
     ("ProtectedDescent", "cycles/ProtectedDescent.lean", "CollatzResearch.ProtectedDescent"),
     ("RampReference", "mersenne/RampReference.lean", "Collatz.RampReference"),
+    ("UpDownCounterexample", "cycles/UpDownCounterexample.lean", "CollatzResearch.UpDownCounterexample"),
+    ("UpDownRayBand", "cycles/UpDownRayBand.lean", "CollatzResearch.UpDownRayBand"),
+    ("RandomDirectionLoops", "cycles/RandomDirectionLoops.lean", "CollatzResearch.RandomDirectionLoops"),
+    ("MovingFloorAntichain", "mass/MovingFloorAntichain.lean", "Collatz.MovingFloor"),
 ]
 
 
@@ -125,7 +129,7 @@ def main():
         "selection": {"mode": "subset" if args.only else "all",
                       "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
                       "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
-        "mathematical_scope": "The stated finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crest theorems, convergence of the explicit protected-descent modification, and rational inverse-word comparison identities only. No analytic Gaussian law, density or sharp modification asymptotic, component-density theorem, prime-distribution theorem, global no-gap theorem, general cycle exclusion or original Collatz conclusion is formalized here.",
+        "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, and the first-floor antichain only. The random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
         "modules": [],
     }
     started = time.monotonic()

@@ -13,8 +13,11 @@ CHECKERS = [
     "cycles/check_height_entropy.py", "cycles/check_width_entropy.py",
     "cycles/check_four_copy_width.py", "cycles/check_mesoscopic_complexity.py",
     "cycles/check_sharp_periodic_removals.py", "cycles/check_periodic_removal_patch.py",
+    "cycles/check_updown_counterexample.py", "cycles/check_infinite_cycles_and_ray.py",
+    "cycles/check_complete_modulus_trace.py", "cycles/check_random_direction.py",
     "mass/check_critical_native.py", "mersenne/check_mersenne.py",
     "mersenne/check_direct_ancestors.py", "mersenne/check_ascent.py",
+    "mersenne/check_factor_certificates.py", "mersenne/check_semiprime_cancellation.py",
     "mersenne/check_prime_midpoint.py",
     "mersenne/check_ramp_ancestors.py",
 ]
