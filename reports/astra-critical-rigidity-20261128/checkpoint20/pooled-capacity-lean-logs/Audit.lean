@@ -1,0 +1,3 @@
+import PooledMultiplicityCapacity
+
+#print axioms Collatz.PooledMultiplicityCapacity.padded_binary_capacity

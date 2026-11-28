@@ -1,0 +1,113 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:11:48.530221+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_first_passage_masks.py": "740cecf12ffb217e65b313ffd2dd4a925b16b1539f6a32e15e6860fc38dee981",
+    "research/astra-critical-rigidity-20261128/literature/CRITICAL_LOG_SQUARE_MASKS.md": "10db00ec9f950893d658b4f267a5312f6449bcb126924b7ac3b4454a27f1ba4f",
+    "research/astra-critical-rigidity-20261128/literature/ALL_HIGH_TARGETS.md": "bb2cc35ed885914a4b50d07f211d64ca59d8b6100acc40ac6508a37ecde7626d"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.03,
+      "stdout_sha256": "9029db21112424b4263a3d8aa3bc51dfb26cddc71ec4b56a59a99ce63be9b561",
+      "result": {
+        "finite_prefix_free_stopping_trees": [
+          {
+            "L": "3/2",
+            "depth_cap": 6,
+            "fair_mass": "1/2",
+            "residue_digest": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+            "sum_cylinder_volumes": "1/3",
+            "tilted_mass": "3/4",
+            "words": 1
+          },
+          {
+            "L": "2",
+            "depth_cap": 8,
+            "fair_mass": "293/1024",
+            "residue_digest": "7f81e2d75cf55821602b17195af00d7d12818e6a9fc7bf92c762cdaeb658fd51",
+            "sum_cylinder_volumes": "274/2187",
+            "tilted_mass": "686619/1048576",
+            "words": 4
+          },
+          {
+            "L": "3",
+            "depth_cap": 10,
+            "fair_mass": "173/1024",
+            "residue_digest": "7f23619519628de5ecf93c94a8b7d9a9bde790cf5e2b2b5e875b41cc305dd4ac",
+            "sum_cylinder_volumes": "2869/59049",
+            "tilted_mass": "9897417/16777216",
+            "words": 31
+          },
+          {
+            "L": "7/2",
+            "depth_cap": 12,
+            "fair_mass": "2077/16384",
+            "residue_digest": "44e2e1120f249d3498afd8078fdc7bc9dd2770fbf8186a920bdbbae583fbc857",
+            "sum_cylinder_volumes": "1700/59049",
+            "tilted_mass": "1221200793/2147483648",
+            "words": 130
+          }
+        ],
+        "neighbor_comparisons": 2088
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.075,
+      "stdout_sha256": "9029db21112424b4263a3d8aa3bc51dfb26cddc71ec4b56a59a99ce63be9b561",
+      "result": {
+        "finite_prefix_free_stopping_trees": [
+          {
+            "L": "3/2",
+            "depth_cap": 6,
+            "fair_mass": "1/2",
+            "residue_digest": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+            "sum_cylinder_volumes": "1/3",
+            "tilted_mass": "3/4",
+            "words": 1
+          },
+          {
+            "L": "2",
+            "depth_cap": 8,
+            "fair_mass": "293/1024",
+            "residue_digest": "7f81e2d75cf55821602b17195af00d7d12818e6a9fc7bf92c762cdaeb658fd51",
+            "sum_cylinder_volumes": "274/2187",
+            "tilted_mass": "686619/1048576",
+            "words": 4
+          },
+          {
+            "L": "3",
+            "depth_cap": 10,
+            "fair_mass": "173/1024",
+            "residue_digest": "7f23619519628de5ecf93c94a8b7d9a9bde790cf5e2b2b5e875b41cc305dd4ac",
+            "sum_cylinder_volumes": "2869/59049",
+            "tilted_mass": "9897417/16777216",
+            "words": 31
+          },
+          {
+            "L": "7/2",
+            "depth_cap": 12,
+            "fair_mass": "2077/16384",
+            "residue_digest": "44e2e1120f249d3498afd8078fdc7bc9dd2770fbf8186a920bdbbae583fbc857",
+            "sum_cylinder_volumes": "1700/59049",
+            "tilted_mass": "1221200793/2147483648",
+            "words": 130
+          }
+        ],
+        "neighbor_comparisons": 2088
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact prefix-free excursion stopping probabilities, tilted masses, physical ternary residues and actual odd valuations, plus neighboring-scale envelope controls. Infinite sparse-mask hitting and the critical converse remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:11:48.634749+00:00"
+}

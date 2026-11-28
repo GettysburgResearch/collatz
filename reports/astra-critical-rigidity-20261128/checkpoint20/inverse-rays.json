@@ -1,0 +1,66 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:11:46.359277+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_inverse_ray.py": "75d1ab7f540ec2d3455bc801dddc28d1b8e06b864ac59877f517d313058fec3d",
+    "research/astra-critical-rigidity-20261128/ordinary/NATURAL_INVERSE_RAY_EQUIDISTRIBUTION.md": "36d84557bffa6b998697f4a3e17912d36103330a36c9bfd51aef4ad7a30b7398",
+    "research/astra-critical-rigidity-20261128/ordinary/INVERSE_RAY_BROWNIAN_MOTION.md": "9e815c10778c1150dfa2dc65360649655161b6eece049cbc0b01698a3a1a6772",
+    "research/astra-critical-rigidity-20261128/ordinary/INVERSE_RAY_CYLINDER_INFORMATION.md": "156b2fc7a7c6ee2346aee54ce7b8b0f0051c89c805716633b95877fd0026c530"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.241,
+      "stdout_sha256": "f83e829dca7885a36cdbd63db39cab42cd49c420e2428600e824f1df70deda23",
+      "result": {
+        "manuscript_hashes": {
+          "INVERSE_RAY_BROWNIAN_MOTION.md": "9e815c10778c1150dfa2dc65360649655161b6eece049cbc0b01698a3a1a6772",
+          "INVERSE_RAY_CYLINDER_INFORMATION.md": "156b2fc7a7c6ee2346aee54ce7b8b0f0051c89c805716633b95877fd0026c530",
+          "NATURAL_INVERSE_RAY_EQUIDISTRIBUTION.md": "36d84557bffa6b998697f4a3e17912d36103330a36c9bfd51aef4ad7a30b7398"
+        },
+        "native_crt_cells": 14478,
+        "physical": {
+          "depth_fibres": 204,
+          "even_target_before_odd_entrance": 10661,
+          "high_readable_suffixes": 17126,
+          "small_missed_suffixes": 30436,
+          "source_target_depth_threshold_checks": 93072
+        },
+        "scope": "exact finite arithmetic and genuine suffix tests only",
+        "stationary_residues": 2360
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.336,
+      "stdout_sha256": "f83e829dca7885a36cdbd63db39cab42cd49c420e2428600e824f1df70deda23",
+      "result": {
+        "manuscript_hashes": {
+          "INVERSE_RAY_BROWNIAN_MOTION.md": "9e815c10778c1150dfa2dc65360649655161b6eece049cbc0b01698a3a1a6772",
+          "INVERSE_RAY_CYLINDER_INFORMATION.md": "156b2fc7a7c6ee2346aee54ce7b8b0f0051c89c805716633b95877fd0026c530",
+          "NATURAL_INVERSE_RAY_EQUIDISTRIBUTION.md": "36d84557bffa6b998697f4a3e17912d36103330a36c9bfd51aef4ad7a30b7398"
+        },
+        "native_crt_cells": 14478,
+        "physical": {
+          "depth_fibres": 204,
+          "even_target_before_odd_entrance": 10661,
+          "high_readable_suffixes": 17126,
+          "small_missed_suffixes": 30436,
+          "source_target_depth_threshold_checks": 93072
+        },
+        "scope": "exact finite arithmetic and genuine suffix tests only",
+        "stationary_residues": 2360
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual finite incoming suffixes for transient integer targets, complete depth fibres, even-target halving coasts, exact multiplicative corrections, finite stationary residue laws and exhaustive parity-CRT cells. Fixed-root limiting measures, Brownian laws and information estimates remain written with identified original analytic inputs.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:11:46.936158+00:00"
+}

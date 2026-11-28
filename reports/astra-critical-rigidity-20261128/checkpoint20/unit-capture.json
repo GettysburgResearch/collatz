@@ -1,0 +1,99 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T07:11:46.937100+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_unit_capture.py": "0d238e35e3c43520a3b8f71dca8d22d172451cf2abc3f98ead41d4b12ad49e75",
+    "research/astra-critical-rigidity-20261128/literature/DENSITY_ONE_UNIT_PERTURBATION.md": "a2a563511730068f666de700f07fe185b114d31166fa7a34eb16eb1c8b0944a0",
+    "research/astra-critical-rigidity-20261128/literature/SHARP_MULTISCALE_TARGETS.md": "70fe51a6dc53e294ec02b088a3735d38520249cfb4c721c60c969cb44e400923"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.793,
+      "stdout_sha256": "80a14e677fbb750b0a36875a54e1b849bdbe9c4c07c9fa212f188609ab3009c5",
+      "result": {
+        "finite_fixed_grade_fixture": [
+          {
+            "captured": 7617,
+            "changed": 1954,
+            "cutoff": 2,
+            "different_stopped_paths": 7617,
+            "in_closure": 3893,
+            "later_smaller_witnesses": 3094,
+            "seeds": 1667,
+            "starts": 8000
+          },
+          {
+            "captured": 6851,
+            "changed": 1928,
+            "cutoff": 100,
+            "different_stopped_paths": 6851,
+            "in_closure": 3838,
+            "later_smaller_witnesses": 2980,
+            "seeds": 1662,
+            "starts": 8000
+          },
+          {
+            "captured": 5868,
+            "changed": 1718,
+            "cutoff": 1000,
+            "different_stopped_paths": 5868,
+            "in_closure": 3445,
+            "later_smaller_witnesses": 2355,
+            "seeds": 1611,
+            "starts": 8000
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.806,
+      "stdout_sha256": "80a14e677fbb750b0a36875a54e1b849bdbe9c4c07c9fa212f188609ab3009c5",
+      "result": {
+        "finite_fixed_grade_fixture": [
+          {
+            "captured": 7617,
+            "changed": 1954,
+            "cutoff": 2,
+            "different_stopped_paths": 7617,
+            "in_closure": 3893,
+            "later_smaller_witnesses": 3094,
+            "seeds": 1667,
+            "starts": 8000
+          },
+          {
+            "captured": 6851,
+            "changed": 1928,
+            "cutoff": 100,
+            "different_stopped_paths": 6851,
+            "in_closure": 3838,
+            "later_smaller_witnesses": 2980,
+            "seeds": 1662,
+            "starts": 8000
+          },
+          {
+            "captured": 5868,
+            "changed": 1718,
+            "cutoff": 1000,
+            "different_stopped_paths": 5868,
+            "in_closure": 3445,
+            "later_smaller_witnesses": 2355,
+            "seeds": 1611,
+            "starts": 8000
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite fixed-grade fixtures for the computable rounded-odd closure, independent inverse-membership algorithm, exact edge budget, protected cutoff and actual stopped-prefix witnesses. Density-one capture is a written construction for a modified rule, not a Collatz counterexample.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T07:11:48.536132+00:00"
+}
