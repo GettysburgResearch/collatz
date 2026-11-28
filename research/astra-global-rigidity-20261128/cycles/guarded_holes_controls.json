@@ -1,0 +1,71 @@
+{
+  "all_gate_subsets": 16,
+  "automatic_first_return_native_counts": {
+    "3": 9698,
+    "6": 12142
+  },
+  "automatic_holes_in_crop": 21840,
+  "binary_classifier_inputs": 262143,
+  "first_eight_scheduler_rows": [
+    [
+      1,
+      1,
+      5,
+      12
+    ],
+    [
+      2,
+      2,
+      6,
+      27
+    ],
+    [
+      3,
+      1,
+      15,
+      710
+    ],
+    [
+      4,
+      3,
+      25,
+      92169
+    ],
+    [
+      5,
+      1,
+      42,
+      40360464
+    ],
+    [
+      6,
+      2,
+      60,
+      89472603353
+    ],
+    [
+      7,
+      1,
+      83,
+      669418597033307
+    ],
+    [
+      8,
+      4,
+      106,
+      19570166747166572978
+    ]
+  ],
+  "largest_hole_bits": 1025,
+  "scheduler_rows": 32,
+  "scheduler_sha256": "86afbbc1c60d2c0364607c7fafe60354d3cc6b4b6ae499afe6d21a499a0b51bd",
+  "scope": "Exact finite scheduler, binary classifier and three-step arithmetic controls; no infinite chain-hitting claim is inferred from enumeration.",
+  "starts_per_gate_subset": 65536,
+  "success": true,
+  "three_step_branch_words": [
+    "DUU",
+    "UDU",
+    "UUD",
+    "UUU"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "carries": {
+    "nontrivial_gcds": 2002,
+    "windows": 13312
+  },
+  "real_relation": {
+    "last": 1,
+    "native_distance": 7,
+    "ratio_of_exponents": 3,
+    "source": 13
+  },
+  "terminating_branches": [
+    {
+      "f": 9,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 8,
+      "s": 3,
+      "siblings": 1
+    },
+    {
+      "f": 27,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 26,
+      "s": 3,
+      "siblings": 1
+    },
+    {
+      "f": 45,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 44,
+      "s": 3,
+      "siblings": 1
+    },
+    {
+      "f": 27,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 25,
+      "s": 4,
+      "siblings": 2
+    },
+    {
+      "f": 81,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 79,
+      "s": 4,
+      "siblings": 2
+    },
+    {
+      "f": 135,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 133,
+      "s": 4,
+      "siblings": 2
+    },
+    {
+      "f": 81,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 79,
+      "s": 5,
+      "siblings": 3
+    },
+    {
+      "f": 243,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 241,
+      "s": 5,
+      "siblings": 3
+    },
+    {
+      "f": 243,
+      "maximum_gcd_product_bits": 1,
+      "n_bits": 240,
+      "s": 6,
+      "siblings": 4
+    },
+    {
+      "f": 729,
+      "maximum_gcd_product_bits": 3,
+      "n_bits": 726,
+      "s": 6,
+      "siblings": 4
+    },
+    {
+      "f": 729,
+      "maximum_gcd_product_bits": 3,
+      "n_bits": 725,
+      "s": 7,
+      "siblings": 5
+    }
+  ]
+}

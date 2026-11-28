@@ -1,0 +1,75 @@
+{
+  "schema": "collatz-astra-repository-refresh/v1",
+  "observed_utc": "2026-11-27T17:04:31Z",
+  "scope": "Pinned active-frontier metadata and claim-scoped source review; no imported external verification counts.",
+  "pull_requests": [
+    {
+      "pr": 193,
+      "head": "100ba857239a180840930765047d65ede92abeec",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "draft": true,
+      "updated_at": "2026-11-27T14:31:13Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193"
+    },
+    {
+      "pr": 201,
+      "head": "dac732467c6ed5307d1b78eaa8534653aeeb7a4c",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "draft": true,
+      "updated_at": "2026-11-27T13:04:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201"
+    },
+    {
+      "pr": 206,
+      "head": "6bcf4f0b32d15678ab6775bdcc6e20d83736512d",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "draft": true,
+      "updated_at": "2026-11-27T14:54:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206"
+    },
+    {
+      "pr": 211,
+      "head": "21ee3984c9e39cf83faa70214a56b9e4bd0e1d2c",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "draft": true,
+      "updated_at": "2026-11-27T17:02:48Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/211"
+    },
+    {
+      "pr": 212,
+      "head": "ba64d4c68c3a6541df1939be8711892087535813",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "state": "open",
+      "draft": true,
+      "updated_at": "2026-11-27T16:53:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/212"
+    }
+  ],
+  "reviewed": [
+    {
+      "pr": 211,
+      "head": "21ee3984c9e39cf83faa70214a56b9e4bd0e1d2c",
+      "path": "research/astra-reciprocal-rigidity-20261127/EIGHTH_CHECKPOINT.md",
+      "scope": "Checkpoint guide read; reports stronger density-one period results and escape-component defect counts, with exceptional periods and pointwise extinction still open."
+    },
+    {
+      "pr": 212,
+      "head": "ba64d4c68c3a6541df1939be8711892087535813",
+      "scope": "Checkpoint and front-door guides read; claimed new scalar return and original trace bounds treated as external reported results, not independently audited here.",
+      "paths": [
+        "reports/astra-infinite-descent-20261127/CHECKPOINT_04.md",
+        "research/astra-infinite-descent-20261127/README.md"
+      ]
+    },
+    {
+      "pr": 193,
+      "head": "100ba857239a180840930765047d65ede92abeec",
+      "path": "research/astra-six-hour-20261127/escape/REAL_FIBRE_AND_FRONT.md",
+      "scope": "Full fixed-root real fibre, common-path coupling and dimension-one spacing argument read for the collision-source marks. Lebesgue singularity requires a separate synchronization input and is not used for atomlessness."
+    }
+  ]
+}

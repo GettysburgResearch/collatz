@@ -1,0 +1,20 @@
+{
+  "schema": "collatz-written-proof-review/v1",
+  "checkpoint": 13,
+  "reviewed_utc": "2026-11-28T05:23:45.989239+00:00",
+  "status": "independent internal written-proof reconstructions passed; not external peer review",
+  "files": {
+    "cycles/NATIVE_ROTATION_SEPARATION.md": "1ff430406a3da8fe5b730ddfea73803e33c25537df8a4ac9185598b53b8b77d6",
+    "cycles/NATIVE_ROTATION_COEFFICIENT.md": "9a7281f45bc7c02e2c37f5668d833e6b1ed3eea1ea0a27e3a6963c85b9a2026e",
+    "cycles/NativeRotationCover.lean": "071b3c3f8a38dba8a086206ad56e82cf37dcdf5d0ab306c7399e5c5c3dde684d",
+    "cycles/check_native_rotation_separation.py": "039b3bf05894828831e08800246c2763ed16a1598e8a0088f27429e11aca9d98"
+  },
+  "reviewers": [
+    "root",
+    "ordinary_extinction"
+  ],
+  "independent_review_original_source_sha256": "6060abbcd740fa941ab006a34b4cab9e638845df1e02ec631a8478c7bfed0d68",
+  "changes_after_independent_review": "Attribution corrected; linked coefficient refinement, exact qualitative finite-exceptions question and finite verification boundary added. Root reconstructed both the full final argument and coefficient refinement.",
+  "formal_boundary": "Five finite cover/transport roots only; classical Subspace Theorem and limiting arguments are written mathematics.",
+  "remaining_gap": "Arbitrary high-complexity denominator-one cycles and all escaping rays remain unexcluded."
+}

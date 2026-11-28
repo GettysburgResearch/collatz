@@ -1,0 +1,11 @@
+{
+  "schema": "external-source-manifest-audit/v1",
+  "checked_utc": "2026-11-28T04:40:17.206941+00:00",
+  "source": "https://zenodo.org/records/24286141",
+  "archive_sha256": "ee65de371b380cf53556852cfa849a5dead0d4d9e946c306800524f1174e6896",
+  "files_checked": 128,
+  "manifest_sha256": "26ef6c98b2280ec5255bbe8118132bc16d6eb63dd5ffa5bd786d94fd9e97a23e",
+  "failures": [],
+  "success": true,
+  "scope": "Archive and supplied source manifest integrity only. No Lean rebuild, no independent theorem verification, no check against the external upstream Git repository."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "collatz-written-proof-review/v1",
+  "checkpoint": 15,
+  "reviewed_utc": "2026-11-28T05:57:27.156120+00:00",
+  "status": "root independently reconstructed all new arguments; separate internal reviews on optimal denominator and four gate-law developments",
+  "files": {
+    "cycles/OPTIMAL_NATIVE_DENOMINATOR_RATE.md": "8a105dceb1d7a1e78348f9edceebc28b2168e31c452287929b074e14eb0f1bea",
+    "cycles/DIFFUSE_SMALL_DENOMINATORS.md": "888242986f0692e49508248df2f1c943aa2788eaac8630106c7b48def28b7843",
+    "cycles/check_diffuse_small_denominators.py": "7442a2be026acf8a778438ecf8ba485078659ac4421bc7a9bbda35b576f0ac25",
+    "mass/TRUE_GATE_SOURCE_LAW.md": "a46552ef988d4240e4a49d3135803f10767ebddf74f7b4163542448d68c69a01",
+    "mass/SHARP_TRUE_GATE_SAMPLING.md": "ddd196024264fc72f3a900428e33fa7b1528b74f4c90f966e85e1df54e52db02",
+    "mass/TRUE_GATE_PALM_WORDS.md": "4b5c200a8aab4844a2b3f8d12ea8b3a815c909518c303395ef91ba80a02aa9d5",
+    "mass/SUPERCRITICAL_TRUE_GATE_RETURNS.md": "700ad170ae754e5f045b891de291fdec9b75ccc5aea2e4f0509676d4a93ac222",
+    "mass/GATE_SOURCE_DEPENDENCIES.md": "4a86f93b3dd218001886644009f72370f255ea22d5bed59be48c99d080b78d6a",
+    "mass/StrictGateCocycle.lean": "f2b3a747da7ba01b892d79719768e96397bd8b821cf825aa578de6b4f91d2262",
+    "mass/GateReturnBudget.lean": "e4e988f596d2031fa4a27686237529f63d06460788e2a92694276e4a5802fa11",
+    "mass/check_strict_gate_ballot.py": "41b8f49d31c32d0a3342a5244711b697650aba2ae5e14f9433025425584d78b1",
+    "mass/check_gate_return_budget.py": "83950fa934c9fa466f62a8399935a14a3b1528aea7ea84a4b90d45a23e219a0d"
+  },
+  "independent_reviews": {
+    "optimal-denominator-independent-review.md": "4fa6457d37097a43f88ef7c95308a5a05f35dfe72e0201395f41b10a4f618c19",
+    "true-gate-independent-review.md": "68af4da018aa1c5cb3e799735cf03c67b2488d289f8f6c3cbf356c3e0309f3c8",
+    "sharp-gate-independent-review.md": "426eca53716c243e72be06edc25853586dd9db31039231105f06f11bac61dfa9",
+    "palm-words-independent-review.md": "a7343ebe1cd899b12b5b73161b55fa9b0d0e5abf7d386a2240ac94d20f36da6e",
+    "supercritical-returns-independent-review.md": "af8f535a018580d9fa787d005114252728eef5a1f3ae321e5005a238ded595e7"
+  },
+  "presentation_changes_after_agent_reviews": [
+    "Optimal denominator v2 explicitly defines P as exponent-one count, not all numerical increases on small rationals.",
+    "True-gate source v2 corrects one relative link.",
+    "Sharp-gate sampling makes the already required even choice of k explicit."
+  ],
+  "source_boundary": "Native finite budget and supercritical total-variation lower are elementary. Ordinary gate limits retain the prior density, first-hit bridge, coalescence and analytic inputs identified in GATE_SOURCE_DEPENDENCIES.md.",
+  "formal_scope": "Four lifetime-floor/cocycle roots and two finite native height-budget roots; no analytic input introduced as an axiom.",
+  "remaining_gap": "No zero upper for true survival, no effective diverging mismatch rate, and no exclusion of every denominator-one cycle."
+}

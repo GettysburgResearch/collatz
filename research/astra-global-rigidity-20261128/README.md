@@ -1,0 +1,366 @@
+# Global rigidity and the critical ordinary clock
+
+**Collatz remains open.** This is the sixteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
+
+We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes one to `Q_k`; the clock counts shortcut steps. The odd map removes the complete power of two in `3x+1`. These clocks are distinguished throughout.
+
+## New at checkpoint 16
+
+**A finite native deadline separates escaping trajectories from every periodic basin.** Let `D=ln(4/3)`, `μ=2/D`, `λ=ln3/D`, and let `S_a` be the shortcut date of the `a`-th subsequent true gate. The [deadline theorem](mass/NATIVE_GATE_ESCAPE_DEADLINE.md) uses
+
+\[
+ H(X,a)=\left\lceil\mu\log(2X)+\lambda a+70000\right\rceil.
+\]
+
+Every individual escaping gate in `[X,2X)` passes this deadline for every `a`. This implication is elementary: the exact native height identity, the gate cocycle and a uniform bound for the reciprocal sum on a simple path supply the explicit additive constant. The full experiment, including all future gate-membership lookaheads, uses `O(log X+a)` shortcuts.
+
+With the retained ordinary-source inputs, if `d∞` is the ordinary density of escaping components and `ℓ_X=√(2log X/D)`, then
+
+\[
+ \Pr(S_a\le H(X,a))\longrightarrow
+ d_\infty+(1-d_\infty)e^{-t^2/2}
+ \quad(a/\ell_X\to t),
+ \qquad d_\infty\quad(a/\ell_X\to\infty).
+\]
+
+There is no upper restriction on `a` in the latter regime. The difference from checkpoint 15's eventual-return probability measures nontrivial-cycle mass separately. The argument retains the joint future-floor and first-hit endpoint mark when conditioning on the rare gate. Each nontrivial cycle has a strictly slower asymptotic gate rate than `1/λ`. Countable component exhaustion then handles all cycles without a uniform cycle-period bound. A vanishing upper bound for the deadline event would exclude every escape under component positivity; that upper bound is still missing. Root and the ordinary-source lane independently reconstructed the argument.
+
+**Every product order now has a two-sided arithmetic obstruction.** On any hypothetical unbounded-minimum family of fixed-length native product collisions, the [new theorem](cycles/TWO_SIDED_PRODUCT_FACES.md) constructs a Laurent polynomial from the squarefree collision equation, its coefficient denominators and discriminant. Both the maximum and minimum exponent faces in the normalized native-clock direction must contain at least two monomials. A singleton at either end gives a contradiction.
+
+Consequently, at every fixed product order, a counterexample family must have an unbounded integer character of its valuation vector that grows sublinearly relative to the largest exponent. All orders are separated on arbitrary-rank families without such a slower character, including exact affine one-clock profiles. This is stronger than a bounded-order computation, but it does not remove the tied faces. The proof constructs finite algebraic root approximations through complex monodromy, transfers their finite polynomial identity to the real or dyadic place, and uses fixed algebraic forms in the rational Subspace Theorem. Dyadic integrality recovers a rational Laurent expression, whose positive real arc is impossible. Root and the machinery lane reconstructed every step. Varying number fields on a slow face are explicitly outside that application.
+
+**A complete-period pressure law for the rounded dyadic grid.** If the grid's pooled periodic population has size `P_K≥K^(ρ−o(1))`, the [pressure inequality](cycles/GRID_PERIOD_PRESSURE.md) confines its scaled rounding coefficient to an explicit symmetric interval. The forward varying dyadic alphabets have exactly the same integrated pressure as a three-letter alphabet. At full exponent `ρ=1`, the coefficient is exactly `1/[6(ln2)²]`. The classical two-logarithm lower bound supplies a positive unconditional population exponent and a strict improvement over the extreme-residual interval. The unrestricted sharp coefficient for sparse periodic sets remains open. PR215's exact grid geometry and PR213's earlier pooled-rank entropy are credited.
+
+**A broad fair-coin extension fails on genuine terminating sources.** The [elementary counterexample](mass/LOCAL_PARITY_BUDGET_OBSTRUCTION.md) uses the count of disagreements between parity digits two dates apart. Under independent fair digits this count is exactly binomial. Yet for every `κ>1`, at `κ log₂N` dates there are polynomially many actual sources in `(N/2,N]` whose lower-tail count exceeds the fair prediction by a fixed positive counting exponent. Both populations are polynomial. Two legal inverse children at each odd unit, followed by binary padding, give the cohort. This refutes a local-word-statistics strengthening of R6, while preserving the stated single-letter question. A [separate fixed-ray test](mass/FIXED_RAY_ENTROPY_ENVELOPE.md) shows that even fair upper bounds restricted to positive population exponents impose a specific tail-frequency cap; the cap remains above the frequency required for escape.
+
+**A precise tilted criterion reaches the classical extremal constant.** The [stopping-pressure theorem](mass/TILTED_REPRESENTATIVE_STOPPING_PRESSURE.md) changes the geometric gap law and reciprocal exponent together. A subexponential bound on one raw finite-quotient moment would give a convergent exponential stopping-time Dirichlet series, an explicit finite-cycle minimum bound, and a pointwise logarithmic native stopping bound. At the optimum tilt its coefficient is the Lagarias–Weiss value `41.677647…`. At either that tilt or the separately covered parameter `s=9/8`, the small-cycle bound also forces the known cycle. A complementary inverse-cost hypothesis would give the matching lower coefficient. Both new finite-quotient hypotheses remain open. The exact all-exponent moment identity and prior quadratic pressure classification are credited to Weaver176; the stochastic value itself is classical.
+
+Seven new finite Lean roots prove [native cycle power and grade inequalities](mass/NativeCycleGrade.lean), and [the two inverse branches with target uniqueness](mass/UnitInverseFork.lean). Exact controls cover whole periodic pools, two-place root truncations, actual inverse cohorts and the integer certificates excluding small additional cycles under the tilted premise. None of these finite roots imports the infinite conclusions as axioms.
+
+## Retained from checkpoint 15
+
+**The optimal denominator exponent has inverse-mismatch order.** For a primitive positive rational odd cycle of period `p`, complete reduced denominator `q`, and at most a fixed `s≥1` native mismatches at some proper rotation, the [sharper theorem](cycles/OPTIMAL_NATIVE_DENOMINATOR_RATE.md) proves
+
+\[
+ (\log_2 3)p\le 2\log_2(3/2)P+2s\log_2q+o_s(p),
+ \qquad
+ \liminf\frac{\log_2q}{p}\ge\frac{\log_2(4/3)}{2s}.
+\]
+
+Here `P` counts native exponents equal to one; on small positive rationals this is different from counting all numerical increases. A two-marker parameter choice in PR212's exact independent-clock construction supplies matching positive rational families with denominator exponent `O(1/s)` for every sufficiently large fixed cutoff. Thus the infimum asymptotic exponent has order `Θ(1/s)`. The proof retains the complete denominator and actual primitivity. It improves the earlier `16^(−s)/s` coefficient by repeating a fixed number of actual laps before taking limits. The ordinary finite-exceptions conclusion remains qualitative: an effective period onset and explicit diverging mismatch function are still open. Root and a separate lane reconstructed both bounds.
+
+**Small denominators can coexist with diffuse heights and arbitrarily slow mismatch growth.** The [shaped rational construction](cycles/DIFFUSE_SMALL_DENOMINATORS.md) has `q>1`, `log q=o(p)`, nearcritical clocks, almost quadratic real minimum, and native exponents only one or two. Its height mass escapes every fixed multiplicative band, uniformly over the band's location. Every fixed collection of matching runs has vanishing relative length, yet an order-five rotation has mismatch count growing more slowly than any prescribed diverging function along a chosen family. This removes the width-concentration caveat from the earlier rational comparison and shows why the next arithmetic step must distinguish denominator one. Exact controls replay complete physical cycles of 104,335 and 32,249 odd steps, including all selected prime-order distances and the full reduced fraction. They do not certify the growing asymptotic construction by numerical extrapolation.
+
+**The computable true gate has an exact ordinary sampling law.** Let `Pgate` consist of starts whose shortcut grade `2Q_t−t` is strictly positive for every positive future date, and let `A` be a union of true components or a fixed-unit first-hit basin, of ordinary density `d(A)`. Under the explicitly retained [source dependencies](mass/GATE_SOURCE_DEPENDENCIES.md), the [sharp source law](mass/SHARP_TRUE_GATE_SAMPLING.md) is
+
+\[
+ \#\bigl(P_{\rm gate}\cap A\cap[X,2X)\bigr)
+ \sim \frac{\sqrt{\log(4/3)}}{2\sqrt\pi}\,
+       d(A)\frac{X}{\sqrt{\log X}}.
+\]
+
+For `d(A)=0`, the statement means the corresponding normalized count tends to zero. Sampling this sparse decidable set recovers the full component distribution in total variation. The [preceding source theorem](mass/TRUE_GATE_SOURCE_LAW.md) also identifies the incoming gate-count measure with the increase of the future minimum of Brownian motion, and gives the arcsine first-gate location. These are statements about the actual future of the sampled integer. The new analytic step retains a path minimum in the ternary mixing argument; the ordinary density and physical bridge inputs remain source-qualified.
+
+**Actual gate-return words have a sharp scale boundary.** The [return-word theorem](mass/TRUE_GATE_PALM_WORDS.md) preserves the sharp source law uniformly in every ternary class through a small positive multiple of `log X`. For any `a=o(√log X)`, the first `a` genuine gate-return words, including the possibility of a missing return, converge in total variation to `a` independent Catalan excursion words. The whole word and its unbounded length are retained. Each specified word of shortcut length `t` has probability `2^(−t)` in the limiting law.
+
+Above that scale, [a deterministic finite-height argument](mass/SUPERCRITICAL_TRUE_GATE_RETURNS.md) gives the opposite conclusion for every distribution on gate starts through `2X`:
+
+\[
+ \operatorname{TV}(\text{actual return words},\text{independent words})
+ \ge 1-2\exp\!\left[-c\frac{a^2}{\log(2X)+a}\right].
+\]
+
+Completed returns with `q` odd steps satisfy `6^q≤n·2^a·5^q`. The experiment that stops after `a` returns or a visit to one takes `O(log X+a)` actual shortcut steps, including a common finite lookahead for gate tests. This deterministic boundary needs no density or mixing input.
+
+**The same finite experiment detects all counterexample mass.** Write `d₁` for the ordinary density of the basin of one. With the source-qualified physical laws, the probability of completing `a` returns from a uniformly sampled gate in `[X,2X)` tends to
+
+\[
+ 1-d_1(1-e^{-t^2/2})
+ \quad\text{if }a/\sqrt{2\log X/\log(4/3)}\to t,
+ \qquad 1-d_1\quad\text{if }a/\sqrt{\log X}\to\infty.
+\]
+
+The proof derives a Rayleigh law for the total gate count before the first visit to one by retaining the terminal mark jointly with the future deficit before conditioning on the rare gate. Other components have infinitely many gates. This identifies a finite observable for the remaining mass; it does not prove an independent zero upper bound for survival.
+
+Two new Lean modules connect the actual finite record theorem to [attained suffix minima and their cocycle](mass/StrictGateCocycle.lean), and prove [the complete native height budget](mass/GateReturnBudget.lean). The separate [ballot control](mass/check_strict_gate_ballot.py) includes the actual odd endpoint bit; [the return-budget control](mass/check_gate_return_budget.py) checks 4,313 completed prefixes from 762 genuine gates, with killed paths retained. The review records the analytic boundary, failed development builds and corrected runs.
+
+## Retained from checkpoint 14
+
+**Every fixed algebraic irrational has superlinear shortcut-parity complexity.** The [written theorem](cycles/ALGEBRAIC_PARITY_COMPLEXITY.md) proves that for every algebraic irrational `z` in the 2-adic integers and every fixed `A`, some `K` and `n₀` satisfy `p_{w_z(Kn)}(n)>An` for all `n≥n₀`. Combining this with Weaver173's prior signed rational theorem, every aperiodic binary word with finite lower linear factor-complexity ratio has transcendental Collatz parity conjugate. No frequency, recurrence or substitution hypothesis is imposed. The conjugate is the 2-adic state realizing the word as its parity sequence; it is not the number whose binary digits are that word.
+
+This proof adapts Weaver173's marked finite factor graph and slope-field construction. Liouville bounds replace the rational descent requirement, and a surviving irrational coefficient permits a pivot ordered by its normalized dyadic valuation. The fixed algebraic-coefficient Subspace Theorem then discharges the exceptional subspaces. Weaver's earlier all-Sturmian conclusion and frequency-sensitive finite-complexity bounds are credited; the extension removes the finite constant and frequency restrictions together. Root and the cycle lane independently reconstructed the proof. It does not give a uniform approximation measure for arbitrary moving low-complexity words.
+
+**Uniform algebraic approximation bounds for every intercept of a primitive uniform substitution.** For a primitive aperiodic binary substitution `σ` of constant length, its entire one-sided subshift `Xσ`, and every fixed degree `d`, the [second theorem](cycles/SUBSTITUTION_SUBSHIFT_MEASURE.md) gives
+
+\[
+ v_2\bigl(\Phi(w)-\alpha\bigr)\le C_{\sigma,d}\bigl(1+h(\alpha)\bigr)
+ \quad(w\in X_\sigma,\ [\mathbb Q(\alpha):\mathbb Q]\le d).
+\]
+
+The embedding at two is fixed for each approximant. The constant is uniform over all origins and all approximants of that degree. In particular all these conjugates are transcendental, and a positive integer can match such a parity word for at most `Oσ(1+log n)` letters. A separate [effectivity argument](cycles/SUBSTITUTION_EFFECTIVITY.md) gives a terminating procedure to compute a bound from the substitution and degree; no practical numerical constant is claimed. The proof uses a scalar substitution identity, finite-prefix auxiliary polynomials, compactness of the subshift, Christol–Cobham formal transcendence and elementary height comparison. Classical nonautonomous Mahler methods and prior Collatz substitution exclusions are credited. Root and the ordinary-source lane independently reconstructed it.
+
+**Any fixed list of native matching runs leaves a positive fraction uncovered.** In an ordinary odd cycle of least period `p`, let `P` count exponent-one departures and `L_k(r)` be the total length of its `k` longest exact matching runs against a proper native rotation. The [matching-mass theorem](cycles/NATIVE_MATCHING_MASS.md) proves, for fixed `k`,
+
+\[
+ \max_{0<r<p}(\log_2 3)L_k(r)
+ \le 2\log_2(3/2)P+o_k(p).
+\]
+
+Thus at least about 26.18% of the cycle lies outside any fixed number of matching runs, uniformly in the lag; this remainder can itself consist of many shorter matches. No positive Hamming mismatch density is inferred. The proof extends the prior translated forms to selected intervals and uses a fixed number of repeated actual laps before taking limits. A [rational comparison](cycles/RATIONAL_MATCHING_BARRIER.md) shows why fragmentation and a polynomial real minimum alone do not distinguish denominator one. Its narrow rational examples are already excluded by separate ordinary-width restrictions, so that comparison does not claim to meet every ordinary necessary condition.
+
+Six new [Lean roots](cycles/SubstitutionMass.lean) prove finite weighted sums, substitution composition and the scalar identity with its complete terminal correction. The first semiring proof attempt and its corrected compilation are preserved. The [substitution control](cycles/check_substitution_mass.py) checks actual inverse parity congruences, coefficient supports and first-mismatch valuations; the [matching control](cycles/check_native_matching_mass.py) checks repeated-lap lifting and chronological rise charges. The infinite transcendence, approximation and matching-mass theorems remain written mathematics. Neither high-complexity escaping integer orbits nor arbitrary integer cycles have been eliminated.
+
+## Retained from checkpoint 13
+
+**Every fixed native rotation-mismatch bound forces an exponential complete denominator.** The [new written theorem](cycles/NATIVE_ROTATION_SEPARATION.md) treats every proper shift of a primitive positive rational odd cycle, with arbitrary native division counts, width and number of extrema. If its length is `p`, its complete reduced denominator is `q`, and one proper rotation disagrees at at most a fixed `s` positions, then `q ≥ 2^(c_s p)` for all sufficiently large `p`. In an ordinary integer cycle `q=1`, so the least mismatch count must tend to infinity with period.
+
+This answers the **qualitative** assertion in Armstrong's separately stated [finite-exceptions question](https://github.com/stgoa/collatz/blob/d99505da4bc51849169cce0a7a46f0fce302afd0/areas/cycles/questions/rotation-distance-finite-exceptions.md): for each fixed bound, only finitely many positive integer cycles can satisfy it. The proof retains an ineffective threshold. The separate question asking for an explicit diverging mismatch rate remains open. PR212's earlier all-profile theorem through six mismatches, its near-circuit result through eight, and its unbounded-order argument are expressly credited.
+
+The [coefficient refinement](cycles/NATIVE_ROTATION_COEFFICIENT.md) gives the explicit limiting lower bound
+
+\[
+ \liminf_{p\to\infty}\frac{\log_2 q}{p}
+ \ge \frac{\log_2(4/3)}{8(s+1)16^{s+1}}.
+\]
+
+At the local level, two adjacent length-`r` native division words with at most `s` discrepancies on an actual path of distinct departures obey
+
+\[
+ \liminf_{r\to\infty}
+ \frac{\log_2(y_0+q)+(2s+1)\log_2q}{r}\ge\log_2(4/3).
+\]
+
+For ordinary paths the leading source-height coefficient is independent of the fixed mismatch bound. The proof combines exact paired differences, a cover by intervals enlarged by their actual ternary valuation, a field of slope sequences, and fixed rational forms in the classical Subspace Theorem. A large finite box of translates retains nearly all ternary savings while the real cost is charged only once along chronological intervals. It discharges every exceptional rational subspace using independence established before the final theorem application. An elementary short-lag argument completes the cycle theorem.
+
+Root and a second agent independently reconstructed the written proof. Five [Lean roots](cycles/NativeRotationCover.lean) check the finite cover and cofactor kernels; the infinite Diophantine argument remains written. The [exact control](cycles/check_native_rotation_separation.py) checks 23,566 adjacent native paths, 800 full local-form products and 11,900 circle covers, including coincident effective starts. Arbitrary high-complexity cycles remain possible under these restrictions; this is not a Collatz resolution.
+
+## Retained from checkpoint 12
+
+**Every lifetime parity minimum has an explicit finite deadline.** For every positive integer `n`, the first minimum over all future dates of `2Q_t−t` occurs before `ceil(4.81884… log₂(2n))`. The [elementary proof](cycles/EXACT_PARITY_RECORD_HORIZON.md) gives the exact integer stopping test `4^K ≥ 4n²3^K`, optimal affine correction bounds, and a finite algorithm regardless of the orbit's fate. The strict-record inequality and coverage of every future date are checked in [ParityRecordHorizon](cycles/ParityRecordHorizon.lean) and [GlobalParityMinimum](cycles/GlobalParityMinimum.lean). A [balanced inverse construction](cycles/BALANCED_RECORD_ROUTING.md) makes the leading constant sharp on at least `X^η` terminating starts in every sufficiently large octave for each fixed `η<1`. That population bound uses the explicitly cited finite-policy and tilted absolute-continuity inputs; it does not use (J). The universal upper bound is elementary.
+
+**A computable rare set carries every possible persistent ascent.** The [rare-ascent identity](cycles/RARE_ODD_ASCENTS.md) constructs a finite-computable weight `W(n)=n·2^(−g(n))`, where `g` is the deepest parity deficit. Its odd-step multiplier contracts off an explicit set of size `O(N/√log N)`. Escape would force the number of visits to that set, minus `(2−log₂3)` times the odd clock, to diverge to positive infinity. A bounded orbit gives negative linear drift instead. The proof includes an elementary uniform reciprocal-sum bound on every simple path. This exact classifier does not yet bound the rare-set occupation from above.
+
+**Long repeated native blocks force a large internal fall or a large denominator.** The [drawdown theorem](cycles/REPEATED_BLOCK_DRAWDOWN.md) retains the complete rational denominator and all signed native tails. The [independently stopped version](cycles/INDEPENDENT_BLOCK_STOPS.md) permits the two paths to stop at different later valleys. It excludes every fixed number of rotational mismatches in cycles with a bounded number of macroscopic ascents and sublinear internal drawdown between their low cuts, including arbitrarily many small oscillations. The written proof uses the classical S-adic Subspace Theorem and discharges its exceptional subspaces separately. [SharedBlockTails](cycles/SharedBlockTails.lean) formalizes the native affine, full dyadic quotient and signed-tail identities. That checkpoint did not assert an unrestricted all-profile rotation theorem; checkpoint 13 now supplies it.
+
+**The two native clocks detect escaping mass at an intermediate modulus.** Under the stated ordinary density and marked-row inputs, the [critical-modulus theorem](mass/CRITICAL_CLOCK_MODULI.md) identifies total escaping mass as the average total-variation discrepancy of the actual component clocks when `(log X)^(1/4) ≪ m ≪ (log X)^(1/2)`. Bounded components are quotiented by their own primitive lap. At the critical fourth-root scale every escaping component retains a positive discrepancy; a computable growing modulus selection gives the same full limit. This supplies an exact source-qualified diagnostic, not the independent upper bound needed to force its limit to zero.
+
+**Actual multiplicative rectangles obstruct an independence shortcut.** The [rectangle theorem](mass/MULTIPLICATIVE_CLOCK_RECTANGLES.md), with its stated first-hit inputs, gives exact four-way clock and corrected-product collisions of order at least `1/√log B` among independent multiplier/cofactor choices. All four sources and corrected products are distinct. The literal starts `81,135,69,115` all first hit `5`; their opposite source products, odd-clock sums, halving-clock sums and corrected products agree. [ClockRectangle](mass/ClockRectangle.lean) checks this actual-source fixture. Independent convolution smoothing therefore cannot simply be applied to those correlated native marks.
+
+The four new Lean modules add seventeen public roots. The asymptotic counting, Subspace Theorem and ordinary density conclusions remain written mathematics with their dependencies stated. The [review](../../reports/astra-global-rigidity-20261128/REVIEW.md) records the precise reconstruction and [source refresh](../../reports/astra-global-rigidity-20261128/EXTERNAL_REFRESH.md) credits concurrent full-measure results from PR212/215.
+
+## Retained from checkpoint 11
+
+**Long actual parity words cannot remain simply compressed.** The [compressed-parity theorem](cycles/REGULAR_PARITY_HORIZON.md) concerns an actual word `V₁^a₁ … Vⱼ^aⱼ`, with a fixed number of blocks and arbitrary moving base words. Beyond `(1+η) log₂ n`, sufficiently small total base length forces entry into an actual positive periodic rational center. It follows that every fixed regular language of subexponential word growth captures long accepted ordinary prefixes in a finite, computable list of genuine cycles. A bounded expression tree built from concatenation and powers cannot describe arbitrarily long simple ordinary paths in that range. The onset is ineffective because the proof uses the classical S-adic Subspace Theorem. The finite native affine and periodic-center identities are in [Lean](cycles/RegularParityCenters.lean); the Subspace Theorem argument is not.
+
+**Cycle arithmetic at every reduced sublap and every upper subclock.** [Weaver114's prior crossing theorem](https://rstation.ai/problems/collatz/papers/114/v1) already supplies a near-dyadic pair at every separation between repeated reduced clocks. The [physical consequences](cycles/EVERY_SUBLAP.md), [adjacent residue analysis](cycles/SUBLAP_RESIDUES.md), and [upper-subclock theorem](cycles/UPPER_SUBCLOCKS.md) retain both neighboring actual arcs and their complete padded denominators. The least common multiple of those denominators is `2^(n−o(n))`; narrow cycles force the complete denominator on each side. Every upper rational subclock has two eligible neighboring arcs, including cycles whose total clock is coprime. The Farey-parent analysis also supplies polynomial minimum-height restrictions in the smaller parent length. The common-divisor/carry core is in [Lean](cycles/SublapDefects.lean). The crossing itself is credited as prior work, and the asymptotic gcd and logarithmic-form arguments remain written mathematics with explicit external inputs. Large denominators of these padded rational arcs do not exclude a complete integer cycle.
+
+**The entire lifetime lower parity tail has a Gaussian bound.** For `A₀√log₂N ≤ a ≤ (log₂N)/2`, the number of starts up to `N` whose odd count ever falls at least `a` below half the native time is at most `C N (log₂N)^3 exp(−c a²/log₂N)`, with an explicit positive `c`. The [proof](cycles/LIFETIME_LOWER_DEFICIT.md) retains Weaver191's genuine initial record-block comparison and then uses positive integer height for every subsequent date, without assuming termination. It yields the fair-coin upper bound throughout the lower half of the native type range when the clock multiplier is at least 8192. The upper half and the critical clock remain open.
+
+**Full mark laws smooth under sufficiently many independent convolutions.** Combining the full small-order moment bound from checkpoint10 with the pinned PR215 uniform Fourier-decay theorem gives a finite number of independent target/escape correction laws whose convolution has a uniformly bounded continuous density. [The deduction](mass/FINITE_CONVOLUTION_SMOOTHING.md) retains arbitrary shifts, reflections, component mixtures and positive integer targets. Independence is a hypothesis; it is not supplied by membership in a common orbit.
+
+**Smoothing survives resolution into every exact native row.** The [row-resolved theorem](mass/ROW_RESOLVED_MARK_SMOOTHING.md) retains the actual target/component, odd count and halving count as separate labels at a finite physical source cutoff. It bounds the sum of separately tested row oscillations by `(log T)^(-1/2+ε)` and gives an untrimmed histogram comparison after smoothing across `exp((log T)^γ)` neighboring bins. This is stronger than cancellation after rows are summed, but it does not give relative control of rare bins or the missing square-energy endpoint. Its genuine-source comparison inputs are identified at exact earlier commits.
+
+**An escape-specific collision distinction is explicit.** On a hypothetical escaping ray, [corrected triple products](mass/RAW_AND_CORRECTED_PRODUCT_COLLISIONS.md) have collision mass of order at least `L^(-2)`, whereas sufficiently high raw triples have only the trivial exact collisions, of order at most `L^(-3)`. Corrected equality implies an extremely close raw product relation, not raw equality. No independent upper bound for those near-collisions is asserted.
+
+## Retained from checkpoint 10
+
+**Original parity counts beyond the seed.** The [lower-edge theorem](cycles/NATIVE_LOWER_TYPE.md) proves the fair-coin upper bound on explicit nonempty sectors for every fixed clock multiplier `kappa>1`, including certified intervals at `kappa=2` and the book's literal `4.82`. It counts the full deterministic orbit, including the suffix after a small state is visited. If `p=p0+D r/kappa`, where `p0=(1-1/kappa)/2` and `D=1-log_2(3)/2`, the [full sparse expansion](cycles/FLAT_NATIVE_EDGE.md) locates both the upper and lower counting exponents within
+
+\[
+Cr\exp[-c\log^2(1/r)]
+\quad\text{of}\quad
+(1+\theta r)H_2\!\left(\frac{r}{1+\theta r}\right)-r\log_2 3,
+\qquad \theta=\log_2 3.
+\]
+
+The lower family consists of actual starts that reach one. The error is smaller than every fixed power of `r`; equality of the two exponents at a fixed positive `r` is not asserted. At the opposite extreme, a [fixed even-step budget](cycles/BOUNDED_EVEN_TYPE.md) permits only `(1+o(1))log_2 N` steps from any start through `N`, using the rational Subspace Theorem. These results leave the remaining upper-tail and full R6 budget open.
+
+**Unrestricted product separation through order sixteen.** For each fixed odd-segment length `L`, a finite height threshold excludes every nontrivial equality of products of at most sixteen vertices, with repetitions and unrestricted division counts. The [proof](cycles/FIXED_LENGTH_PRODUCT_RIGIDITY.md) combines scale extraction, integer recovery from a rational approximation, and two endpoint congruences. Any unbounded collision family would require terminal multiplicity divisible by nine and at least eight other positive factors. The threshold is not explicit; checkpoint 9 retains the explicit order-five bound.
+
+**The full real correction measure now has uniform power and small-order moment bounds.** The [untrimmed theorem](mass/UNTRIMMED_FIRST_HIT_MARK.md) controls every interval at every positive odd unit target, all first-hit mass, periodic laps with their exact normalization, and complete escaping flux with separately chosen translations for every component. With `g=1-H_2(log_3 2)+1/351`, approximately `0.0528935`, every interval of length `r` has unnormalized mass `O_c(r^c)` for `c<g`. The [stronger moment theorem](mass/UNTRIMMED_LOG_MOMENTS_AND_CLOCKS.md) gives full Renyi dimension one and only a polynomial logarithmic loss in the rescaled bin moments for `1<p<1/(1-g)`, approximately `1.0558474`. It also proves that a power-sized spike would require polynomially dispersed actual first-hit clocks, and supplies a genuine stopped-law obstruction to treating every uncertified continuation as an arbitrary constant. The square-moment upper remains far above the bound needed to exclude escape.
+
+**True basin density along ordinary orbits.** The [physical-depth ternary-share law](mass/ORDINARY_CRITICAL_TERNARY_SHARE.md) compares the true density with its own finite ternary atom for almost every ordinary site, with all finite logarithmic moments. The [mass-acquisition theorem](mass/TRUE_BASIN_MASS_ACQUISITION.md) gives the unscaled local acquisition profile and a sharp bound on the number of fixed-mass entrance gates. The [density cutoff](mass/TRUE_BASIN_DENSITY_CUTOFF.md) gives a Brownian precritical log-density process and a clipped Gaussian critical profile for the full infinite predecessor density. These are source-qualified deductions; their stated ordinary first-passage, density and bridge premises remain explicit. They allow a hypothetical escaping component.
+
+The new finite Lean modules are [OffsetMoments](cycles/OffsetMoments.lean) and [NativeLowerType](cycles/NativeLowerType.lean). They prove the moment congruences, residue choices, exact inverse arrows and the full alternating suffix after an actual hit. The asymptotic theorems above remain written mathematics.
+
+## Retained from checkpoint 9
+
+**The full correction-word questions R8 and R9 now have written proofs.**
+[All-phase pressure and all-threshold entropy](cycles/FULL_CORRECTION_WORD_ENTROPY.md)
+establishes the untruncated limit at every rotation phase and every real
+tilt, and proves the proposed Legendre formula for the count rate at every
+`0<c<1`. A pointwise minimum of cumulative exponents compares different
+phases with a controlled multiplicity and reward cost; this upgrades the
+scalar ergodic theorem's almost-everywhere conclusion to uniform convergence.
+Pinned concatenation supplies the lower count even at a possible pressure
+corner. The word model and proposed formula are credited to Polson–Sokolov.
+
+[The remaining differentiability argument](cycles/DEPTH_PRESSURE_DIFFERENTIABILITY.md)
+proves a positive, finite critical tilt. The pressure is constant below it,
+has zero right derivative at the transition, and is locally `C^{1,1}` above
+it. Positive excursions have half the interior tilt. Their exponential
+suppression above the transition permits a replica exchange argument that
+bounds the reward variance. At the critical point, a hypothesized positive
+contact density contradicts an induced pressure inequality and Kac's return
+time identity. No random environment, finite-depth truncation or supplied
+Collatz density theorem enters these proofs. The near-one expansion from
+checkpoint 8 is retained. These results count valuation words and do not
+remove denominator-one exceptions.
+
+**Actual high odd segments now have unique products through order five,
+without a division budget.** If every vertex of an `L`-step positive odd
+Collatz segment exceeds `2^(8(L+1)^2)`, its unordered products of five
+vertices are all distinct, even with repeated factors. This also gives
+orders below five. The [triple-product proof](cycles/UNRESTRICTED_TRIPLE_PRODUCTS.md)
+normalizes away the final division count and uses a dyadic-gap argument.
+The [four-product extension](cycles/UNRESTRICTED_FOUR_PRODUCTS.md) supplies
+a convex sign test; the [five-product extension](cycles/UNRESTRICTED_FIVE_PRODUCTS.md)
+settles the remaining two-crossing case by parity. Weaver 160's prior
+unrestricted pair theorem and Weaver 163's bounded-cost all-order theorem
+are explicitly credited. A genuine order-six zero-prefix control shows
+why this particular proof cannot simply be extended to every order.
+
+The finite cores of the phase comparison and depth-bridge exchange add
+[20 Lean theorem roots](cycles/PhaseClamping.lean), split between that module
+and [DepthBridge](cycles/DepthBridge.lean). The full analytic proofs and the
+unrestricted product theorem remain written mathematics. A concurrent-source
+refresh also credits PR215's earlier overlapping moving-coefficient method
+and Paper137's elementary maximal-coefficient gcd criterion.
+
+## Retained from checkpoint 8
+
+[The near-maximal correction-word rate](cycles/NEAR_MAXIMAL_CORRECTION_ENTROPY.md) now has a written proof in the regime asked for by Polson–Sokolov's R9. For `epsilon -> 0`, its rate in base-ten logarithms is
+
+\[
+\rho(1-\epsilon)=\frac{3\epsilon}{2\log2\log10}
+\left(\log\frac1\epsilon-\log\log\frac1\epsilon
++1-\log\frac32+o(1)\right).
+\]
+
+The proof first establishes the untruncated depth pressure, uniformly over every initial rotation phase, and its analyticity at sufficiently large positive tilt. It then matches the lower count by exponential tilting. Thus the rate limit exists throughout a neighborhood below one; the large-tilt portion of R8 is also established. The full R8 range and all thresholds are now handled in checkpoint 9 above. The leading factor comes from the one-third cost of entering a positive-depth block; its phase distribution creates the negative double-logarithmic correction. This is an elementary analytic counting argument, with no supplied Collatz density or recent logarithmic-form premise. It counts rational cycle words too and does not eliminate denominator-one exceptions.
+
+The book's original depth model, observable and suggested leading order are explicitly credited at an exact source commit. Root and an independent agent reconstructed the analytic proof. [Six finite loss lemmas](cycles/DepthDeficits.lean) compile in Lean; the analytic theorem is written mathematics. The new exact checker compares the entire rational deficit polynomial from direct words with an independent block renewal: 52 cases, 97,914 words and 177,192 positive blocks, in both Python modes.
+
+## Retained from checkpoint 7
+
+[Polynomially small whole-ascent basin gains](mass/POWER_SMALL_SIBLING_DENSITY.md) now hold throughout `2^s 3^k ≤ Y^ε` for an absolute positive `ε`. In every sufficiently large octave, a positive fraction of the prescribed starts in any supplied unit target basin have `x d(x) = (3/2)^k exp(O(sqrt(log Y)))`, with a matching constant-factor lower bound, while the entire added mass across `s` expanding odd steps has `x [d(U^s x)−d(x)]` between a positive constant and `exp(O(sqrt(log Y)))`. Taking `k,s ≍ log Y` makes the relative gain a negative power of height, over an ascent whose height ratio is itself a positive power. A large subfamily has disjoint basins and synchronized first-arrival clocks. **Weaver 202 already refuted every fixed inverse-logarithmic comparison** in a smaller polylogarithmic parameter range, with stronger constant-factor upper bounds there; that original refutation is credited. The new transfer uses Weaver 102's uniform landing-set majorant and exact finite signed-column projections. The [superlogarithmic intermediate argument](mass/SMALL_SIBLING_DENSITY.md) retains a different smooth-scale proof. These examples can all terminate, and their main densities vanish polynomially. The fixed-positive-mass case along an escaping ray remains open.
+
+[Moving sparse coefficients and native gluing](cycles/MOVING_FULL_MODULUS.md) extend the complete-denominator theorem to coefficients of logarithmic height `o(n)`. The native consequences allow arbitrary repairs inside a fixed number of short equal-weight windows, and concatenate a fixed number of arbitrarily complicated macroscopic orbit pieces whose endpoints have subexponential height. A failed junction forces `log₂ q ≥ n/min(s,gcd(n,u))−o(n)` for the complete rational denominator, with `s` the number of surviving junction discrepancies. Short pieces can repair mismatches; the proof keeps that exact genuine-cycle exception. A singleton rational-spacing class forces the full exponent even at noncoprime clocks. Grieve–Wang's moving gcd theorem is an explicit external premise. This does not bound growing support or exclude an arbitrary integer cycle.
+
+[Independent actual siblings](mersenne/INDEPENDENT_SIBLING_DESCENT.md) connect short positive carry identities to multiplicative independence of the shifted heights and of genuine unit siblings sharing each odd successor. There are explicit terminating ascents with arbitrarily many such independent siblings whose total basin mass tends to zero; a separate relative statement uses Paper 200. [Protected prime transport](mass/PROTECTED_PRIME_TRANSPORT.md) gives actual rising prefixes with outside-prime lcm log-height of order at least `log² x`, and terminating subfamilies with order at least `log^(3/2) x`, conditional on the pinned affine-coupling inputs for the latter supply. A slower family has every protected core pairwise coprime. These controls show why algebraic independence or repeated new prime-power transport alone cannot provide the missing mass or finite budget.
+
+The new [ShiftedSiblingCarries](mersenne/ShiftedSiblingCarries.lean) module verifies eight finite carry, gcd and same-successor declarations. Its analytic consequences remain written mathematics. The source refresh also distinguishes Elsenhans's recent fast verification algorithm for individual enormous inputs from a universal termination proof, and records the parity limitation of Paper 170's binary-window equidistribution. See the [source review](../../reports/astra-global-rigidity-20261128/EXTERNAL_REFRESH.md).
+
+## Retained from checkpoint 6
+
+[Sparse full-modulus rigidity](cycles/SPARSE_FULL_MODULUS.md) now allows the unedited portions of two cycle words to have arbitrary complexity. If two words with clocks `(n,u)` differ by a fixed number `k` of disjoint adjacent parity swaps, then their complete denominators satisfy `log₂ lcm(q,q′) ≥ (1/min(k,gcd(n,u))−o(1))n`. At coprime clocks a subexponential denominator is therefore sent to the full exponential scale by those edits. The underlying theorem applies to signed sparse sums with a proper gap in either exponent coordinate. Its proof quantifies Weaver 22's prior full-binomial exceptional-torus argument; the finite Fourier support inequality and rational field norm give the surviving fraction. Actual primitive rational words with valuations only one and two attain exponent `1/k`. This proves a sharp arithmetic restriction on sparse comparisons, while leaving arbitrary denominator-one words unresolved.
+
+[Reduced core transport](mersenne/REDUCED_CORE_TRANSPORT.md) concerns **every actual consecutive shifted ramp**, without a bounded-cofactor hypothesis. For a fixed finite prime set `S` containing 2 and 3, let `B,B′` be its incoming and outgoing outside-`S` core parts, `G=gcd(B,B′)`, `U=B′/G`, `V=B/G`, and `N` the shifted crest. The S-adic Subspace Theorem gives `U V³ ≫ N^(1−ε)`. The stronger [retention and product bounds](mersenne/CORE_RETENTION.md) give `B B′ ≫ N^(1−ε)` and `G ≪ N^ε sqrt(B)`. The square-root retention exponent is attained by actual ramps. Along an escaping orbit, cumulative incoming outside-prime transport must carry at least one quarter of the accumulated crest log-height, and the outside-prime cores carry at least one half. These are ineffective, source-qualified Diophantine bounds. They do not supply an upper budget contradicting such turnover. [CoreTransport.lean](mersenne/CoreTransport.lean) proves the finite product and telescoping implications with explicit hypotheses, not the Subspace Theorem.
+
+[Fixed-root real cell mass](mass/FIXED_FIBRE_CELL_MASS.md) has a sharp logarithmic correction: for every positive odd unit root and a point `R` sampled from its canonical measure, `log(μ(I_r(R))/r)/log log(1/r) → 1/2` in probability, for every deterministic translated grid. The proof retains the pinned ordinary first-passage and sparse-trace inputs and includes periodic roots by their geometric cycle-exit decomposition. [Actual solenoid sections](mass/ORDINARY_SOLENOID_SECTIONS.md) then give ordinary equidistribution at ternary depths `k_j=o(j/log j)` on dyadic windows of height-crossing index, and logarithmically averaged equidistribution throughout `k_j=o(j)`. At resolutions with `3^k sqrt(log y)/y → ∞`, the sections instead have total-variation distance tending to one from the uniform grid law. These are compatible ranges. No moving-root quadratic uniform integrability or source-extinction conclusion is claimed.
+
+[Repeated multiplicative classes](mersenne/GEOMETRIC_RETURN_DESCENT.md) give a new physical descent test **conditional on the stated recent rational-logarithm estimate**. Remove all whole factors of a fixed base `b` from `2z+1`. Two equal labels at native distance `d` on an interval staying above `M` must satisfy `d ≫ M^(1/(r+1+ε))`, where `r` is the multiplicative rank of `2,3,b`. For `b=5`, the threshold exponent is arbitrarily close to `1/4`. The November 23 Chudnovsky preprint and its reported formal endpoint were read; its ancillary Lean project was not rebuilt here. The actual occurrence of suitably quick returns remains unproved.
+
+There is also an explicit [binary-automatic force-divergent set](cycles/AUTOMATIC_FORCED_DIVERGENCE.md) for the unrestricted up/down family. Its holes are exactly the sufficiently long odd-length binary strings beginning `100`. Every permitted superset grows by at least `9/8` every three steps; the map of the set itself has an exact asymptotic factor about `1.2082736441` per step with bounded logarithmic discrepancy. Every pure upward chain visits its holes with the same positive frequency. **The negative answer to Vasilyev's Question 7.7 was already published by trureturing on November 20.** The [sparse-hole reconstruction](cycles/FORCED_DIVERGENCE_WITHOUT_CHAINS.md) credits that prior solution. The present additions are the explicit automatic rule, its return law and its growth calculation; the local guards and three-or-six-step return arithmetic are in [Lean](cycles/GuardedHoles.lean).
+
+## Retained from checkpoint 5
+
+The main new target is an ordinary, moving-root real-fibre energy. [Exact stabilization on each macroscopic strip](mass/MACROSCOPIC_REAL_ENERGY.md) identifies the late fibres of any hypothetical escaping component with one fixed bilateral component measure. Weaver 175's shrinking covers then force its unit-bin energy to be at least `c sqrt(log y)` at **every sufficiently late site of that ray**, on a suitable fixed strip. If all ordinary orbits are bounded, the same strip is eventually empty at every high nonperiodic target. An independently established smaller upper bound along an unbounded subsequence of each putative ray would therefore exclude escape. That upper bound is still missing.
+
+[The reference unit-bin energy](mass/UNIT_OFFSET_ENERGY.md) is now understood more precisely. The stationary real-and-ternary law has finite summed unit-bin moments of every finite order. At finite depth the second moment is uniformly bounded but has an **exact extra unit in its limit**. That unit travels to exponentially growing real offsets, with an explicit Gaussian location under its energy weighting. The first moments through every exponent below two converge strongly; exponents above two grow at an explicit exponential rate. Exact positive-integer columns inherit a bound for convex clock averages, including arbitrary clocks after a fixed source crop. Their actual all-clock sum is a different quantity, and no uniform bound for it is asserted.
+
+[Ordinary trace with its complete real mark](mass/REAL_OFFSET_ORDINARY_TRACE.md) converges against compact real tests on every proportional physical interval and every fixed ternary cylinder, with all ordinary sites, the full trace and all cycle laps retained. [Growing offset windows](mass/TRACE_POWER_SETS_AND_OFFSET_WINDOW.md) extend the normalized first-mean statement to every cutoff tending to infinity below `y^s`, `s < 1/64`, and give uniform sparse-set estimates on the explicit good sites. These are restrictions on the real offset, not caps on the trace amplitude. The raw mass at offsets comparable to the target is exactly where an escaping component can remain. The finite departure-count and earlier-low-state inequalities are in [Lean](mass/AbsoluteOffsetBudget.lean).
+
+The cycle track now has an [exact semimodule expression for the complete denominator](cycles/SEMIMODULE_DENOMINATOR.md), including clocks with arbitrary gcd. In the coprime case an Apéry polynomial suffices; in the general case two torsion charts recover every prime power of the original denominator. Using just one chart can introduce a spurious factor, and an explicit control detects it. [Bounded nested concatenation-and-power expressions](cycles/PRIMITIVE_CLOCK_EXPRESSIONS.md) at coprime, nearcritical clocks have exponentially large reduced denominators, even with unbounded run lengths. Neither representation proves that arbitrary cycle words have bounded expression complexity. A new [actual-affine obstruction](cycles/COMPLETE_MODULUS_TRACE.md) also shows that replacing the complete modulus by a divisor only a subexponential factor smaller can already create the entire resonant trace exponent in nonintegral rational cycles.
+
+[Consecutive shifted ramp cores](mersenne/ADJACENT_RAMP_CORES.md) are classified **for all exponents** when both prime-to-six cofactors are at most 1000: exactly 2857 starting odds occur, and every one reaches one. The finite replay follows an explicit analytic reduction to a bounded search; it is not a scan presented as an unbounded proof. The underlying ordinary ramp identities are in [Lean](mersenne/ShiftedRampCores.lean). For any fixed finite multiplicative prime group, the S-unit theorem bounds the number of distinct consecutive crests; every nonperiodic orbit must therefore generate cofactors of infinite multiplicative rank. [The postcrest prime part](mersenne/POSTCREST_PRIME_PART.md) further proves that primes larger than `A^gamma` carry asymptotically all shifted log-height when the incoming cofactor has `log beta ≤ A^eta` and `gamma < (1−eta)/2`. These restrictions do not exclude unrestricted escape or cycles.
+
+## Retained from checkpoint 4
+
+Three recent questions about unrestricted up/down maps now have written answers, with their finite arithmetic cores checked separately. These maps choose between `ceil(3x/2)` and `ceil(x/2)` at every integer; their choices may differ from ordinary Collatz.
+
+- [Question 7.1 is false](cycles/UPDOWN_CYCLE_GAP.md): an explicit simple cycle has length 298 and 187 up edges, with `2^298 > 3^188`. A second exact certificate gives a ratio larger than six. The 298-vertex witness, cyclic edges, distinctness and inequality are in Lean. The unrestricted supremum is still open here.
+- [Question 7.3 has a constructive positive answer](cycles/INFINITE_CYCLES_AND_RAY.md): one computable rule has infinitely many finite cycles and exactly one divergent component under eventual coalescence. A 64-residue record certificate and the finite trapping-band closure are in Lean; the infinite assembly is a written proof.
+- [Question 7.8 has a positive answer, with the critical case settled too](cycles/RANDOM_DIRECTION_PHASE.md): for independent spatial membership with probability `p`, almost surely all orbits are bounded when `p ≤ log₃2`, while a density-one set of starts escapes when `p > log₃2`. Each supercritical bounded-orbit probability is at most `C_p x^(-c_p)`. The earlier strict subcritical theorem is credited to Vasilyev. The proof couples fresh bits only until the first repeat; Lean proves the every-word loop bounds, not the infinite probability argument.
+
+For the original map, [the complete-modulus trace](cycles/COMPLETE_MODULUS_TRACE.md) isolates all integer cycles at one resonant clock. On `D=2^n−3^u`, every independently sloped clock has subexponential trace contribution by the full S-unit gcd theorem, while the resonant contribution is exactly the weighted number of actual integer cycles. The full modulus and its fixed-power covers are retained. A slowly increasing window of neighboring powers remains quiet, but this does not bound the unresolved resonance itself.
+
+[Ordinary sampling of the stationary trace](mass/POWER_CAPPED_ORDINARY_TRACE.md) now has a sharp first-mean theorem on every fixed proportional interval, with any diverging site cap bounded by `n^s`, `s < 1/64`. The true integer trace and ternary position jointly approach the lower-semicontinuous stationary envelope. Uncapped moments through `p < 1/128` also converge. On the complement of an explicitly sparse forward hull and slow-passage set, the **uncapped** first mean is already sharp. The proof retains Weaver 102's stopped-set comparison and Valbuena's trace/envelope inputs. A separate [subpower proof](mass/SUBPOWER_ORDINARY_TRACE.md) uses Inselmann's native trajectory estimate and an exact [first-floor antichain](mass/MovingFloorAntichain.lean). The omitted forward hull can still contain an entire hypothetical escaping ray; none of these statements establishes raw uniform integrability.
+
+The number-theory track adds three different conclusions. [Every real bounded multiplicative function](mersenne/REAL_MULTIPLICATIVE_OBSERVABLES.md) decorrelates from an admissible ordinary future mark, uniformly even when the function changes with scale. This gives an explicit subpower smoothness cutoff without RH. [Sparse multiplicative supports](mersenne/MULTIPLICATIVE_SOURCES.md) preserve the relative density of each fixed predecessor basin; under ordinary RH, every supplied component has squarefree ancestors all of whose prime factors individually pass the same finite termination test, with no fixed bound on the number of factors. [Restricted semiprime cofactors](mersenne/SEMIPRIME_CANCELLATION.md) remove RH from a different conclusion: every prescribed integer has polynomially bounded, coprime semiprime multipliers producing many fast products. A finite four-distinct-prime mismatch test has zero limiting frequency exactly under universal convergence, retaining its stated ordinary basin and clock inputs. That is an equivalent test, not an independently established zero limit.
+
+## Results and their exact limits
+
+| Result | Evidence and dependency boundary | Next missing step |
+| --- | --- | --- |
+| [Sharp sparse modifications](cycles/SHARP_PERIODIC_REMOVALS.md): the least fraction of residue changes producing uniform homogeneous descent at modulus `2^k` has order `k^(-3/2) 2^(-(1-H₂(log₃2))k)`. A computable zero-density odd-removal set makes every modified orbit reach one. | Written proofs; exhaustive residue controls; the explicit adaptive modification's convergence is also in Lean. This answers the two alternatives in Vasilyev's Question 7.12 for **modified** dynamics. | The modifications may be essential. Neither their sparsity nor their modified convergence proves original Collatz. |
+| [Periodic convergence patches](cycles/PERIODIC_REMOVAL_PATCH.md): periodic odd-removal rules with global convergence to `1 ↔ 2` can have arbitrarily small density. | Written constructive proof with exact optional-path and finite-graph controls. The patch handles paths that miss some intended switches. | No sharp modulus-versus-density rate is proved for the stronger globally convergent periodic rule. |
+| [Exact width-language entropy](cycles/EXACT_WIDTH_ENTROPY.md): for `2 ≤ R ≤ 4`, putting `η=log₂(R/2)`, `a=log₂3−1`, the entropy in nats per odd step is `η log 2 + (η−a)₊ log(3/4)`. | Reconstructed written proof; exact finite language and rational-realization controls. Weaver 181 already contains the full entropy and availability profiles after clock conversion; the initial checkpoint-2 novelty attribution is corrected below. Typical rational realizations have exponentially large complete denominators. | Exclude the exceptional **denominator-one** atoms, which the typical-denominator estimate allows. |
+| [Height forces entropy](cycles/HEIGHT_ENTROPY.md): sufficiently many distinct polynomial-height phases force a positive entropy floor; bounded-width ordinary cycles stay a positive edit distance from locally subexponential languages. | Written finite counting proof and exact integer controls; the polynomial-height conclusion uses the published two-logarithm estimate. The cycle may have arbitrary collisions from phases outside the selected low-height set. | A global arithmetic restriction that contradicts this entropy floor, beyond a low-complexity model of a restricted family. |
+| [Finite component partition](mass/FINITE_COMPONENT_PARTITION.md): a bounded observation and restart algorithm asymptotically recovers the full component-mass spectrum. | Source-qualified deduction from the indicated Mazur descent/tightness input; density statements retain their additional inputs. No unresolved labels are falsely merged. | Force the computed pair energy to one, or the escape energy to zero. The algorithm identifies these quantities but does not force their endpoints. |
+| [Critical native odd count](mass/CRITICAL_NATIVE_COUNT.md): a bounded statistic of ordinary counts at `L=(2/log(4/3)) log X + z sqrt(log X)` detects any bad component, for every fixed real `z`. | Source-qualified written deduction, including the actual-source crop and first-hit [window argument](mass/FIXED_BASIN_NATIVE_WINDOW.md). Its fixed-root bridge premise includes joint mixing (J). The finite post-hit count identities and drift are formalized separately. | Establish the centered Gaussian comparison for the **unstopped ordinary counts** without assuming the fate of the small state visited. |
+| [Protected prime Mersenne sources with later mergers](mersenne/PRIME_MERSENNE.md): explicit prime progressions give long protection against cheaper visitors yet later mergers with many smaller Mersenne sources. | Source-qualified asymptotic theorem; stated Dirichlet-GRH input; exact compressed certificates for supplied ordinary sources. Lean gives an all-time weighted obstruction at exponent 19, connected to its actual original ramp. | Replace typical prime-progressions conclusions by a theorem resolving each fixed source or the least counterexample. |
+
+## Lean source and current build status
+
+**Checkpoint 16: thirty-two modules and all 175 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint16/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Seven new roots prove native cycle power and grade inequalities, and two legal inverse branches with exact target uniqueness. The previous lifetime-floor, strict-gate cocycle and finite return-budget roots remain in the full audit. Earlier successful and failed development receipts remain preserved. Infinite Diophantine, approximation, source-counting and probability limits are not formalized by these modules. All [58 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint16/finite.json) passed in normal and optimized modes with matching output.
+
+The [first timeout](../../reports/astra-global-rigidity-20261128/checkpoint1/lean-timeout.json) remains as historical evidence. The old dependency-heavy `CriticalCount.lean` was replaced by `mass/CriticalCountStandalone.lean`, using the same actual-map recurrences with a small dependency closure. It proves signed count additivity, the alternating count after a true visit to one, and a uniform rational drift after a true visit to a fixed nonconvergent anchor.
+
+`mass/BasinDefects.lean` proves actual orbit comparability, the single exceptional edge for the visit set of 5, and disjointness of the visit sets of 5 and 85. `cycles/WidthCarry.lean` proves the four-copy no-carry step, the two local energy counts, and an explicit six-copy collision. It does not formalize the Subspace Theorem or the global counting argument.
+
+`mersenne/MersenneCrests.lean` contains the actual Mersenne ramp, a finite-cut criterion that excludes all future augmented meetings, and its supplied exponent-19 instance. An augmented state includes the actual height and accumulated odd count; an obstruction for those states must not be restated as an obstruction to unweighted orbit intersection.
+
+`cycles/ProtectedDescent.lean` proves both the generic protected-suffix theorem and convergence of the explicit modified shortcut map: at input `x`, retain the ordinary branch if it has a true descent within `floor(log₂ x)` steps, and otherwise take the allowed down branch. It preserves the ordinary branch at one. The density estimate for its changed inputs is written mathematics, not part of this Lean theorem. `mersenne/RampReference.lean` proves the exact affine inverse-word identity, the even-step carry bounds, the ternary translated cut, and its narrow mixed-power boundary interval.
+
+The analytic limit laws, ordinary density inputs, asymptotic prime distribution, and full entropy arguments are written mathematics. The Lean audit does not certify them by proximity. Run `check_lean.py --help` for the exact pinned compiler and Mathlib interface. Compiled dependencies are reused; packet objects and public-theorem axiom audits are fresh.
+
+## Larger restrictions added at checkpoint 2
+
+### Cycles of arbitrary width
+
+[Mesoscopic complexity](cycles/MESOSCOPIC_COMPLEXITY.md) deduces a finite-scale theorem from Weaver 173: at each sufficiently large scale compatible with the actual rational input height and denominator, a long simple trajectory must have more than `A k` length-`k` factors. A cycle with uniformly linear factor complexity therefore has period `O_A(1+log q)`, where `q` is its complete denominator. Its maximum height is at most `(2q)^{O_A(1)}`. This covers arbitrary width and native valuations. It does not prove that an arbitrary cycle has linear complexity.
+
+[Four-copy width bounds](cycles/FOUR_COPY_WIDTH.md) track the available grade sites as width varies between 2 and 4. They retain the full denominator in the physical source count. **Priority correction at checkpoint 3:** Weaver 145 has the width-4 exponent and the `6^a 15^h` energy, and Weaver 181 §4 has the entire variable-width entropy and four-copy profiles. Under the conversion from odd width `R` to shortcut width `3R/2`, the formulas agree. The earlier description claiming the width-dependent availability as new was incorrect and is withdrawn. The packet retains the reconstruction, complete-denominator-uniform count, rational realizations, and the precisely scoped moment limitation. Combining the cited irrationality-exponent input with Weaver 181's occupation argument strengthens the asymptotic cutoff, but does not remove the ineffective finite range or prove general cycle exclusion.
+
+### Ordinary basins, source trits, and endpoint atoms
+
+[Ordinary basin windows](mass/ORDINARY_BASIN_WINDOWS.md) shows why local overlap cannot be assumed from positive basin densities. The actual, disjoint visit sets of 5 and 85 remain segregated on subpolynomial windows, even though both converge to one. The same argument forces substantial low-frequency Fourier coefficients and gives nonconstant fixed vectors modulo density-zero defects.
+
+[Weighted basin cuts](mass/WEIGHTED_BASIN_CUTS.md) constructs disjoint cuts entirely in the known convergent component. For every positive decreasing summable vertex weight, their normalized defects tend to zero. This rules out uniform coercivity of the indicated operator, including after removing finitely many directions. It does not rule out strong extinction, which is a weaker and still relevant target. The underlying gates, long ramps, and prior weighted spectral constructions are credited to PR211.
+
+[Translated ternary sources](mass/TRANSLATED_TERNARY_SOURCE.md) proves a uniform joint mixing statement for source trits and the actual future endpoint, native clock, and initial halvings, on arbitrary translated intervals. It uses the precise joint offset-total input of Weaver–Wren 48. This compatibility with segregated basins identifies why source-trit uniformity alone does not imply physical mixing.
+
+[Native endpoint atoms](mass/NATIVE_ENDPOINT_ATOMS.md) gives an all-clock bound `O(1/sqrt(log X))` for every nonperiodic endpoint, from the frozen uniform first-arrival theorem. At the critical clock it derives the actual cycle-phase mixture, retaining each period. An escaping ray attains the possible normalized collision scale; an independently proved smaller order above the critical clock would exclude escape and is still missing.
+
+### All-clock ascent costs and actual prime representatives
+
+[Ascent logarithms](mersenne/ASCENT_LOGARITHMS.md) uses Matveev's weighted coefficient parameter to bound the odd count of every smaller visitor, at every site of an entire ascent, in terms of the actual reduced cofactor ratio. A substantially cheaper visitor must have a large part supported outside every prescribed finite prime set. The physical carry inequalities are checked independently of the analytic bound.
+
+[Direct ancestors](mersenne/DIRECT_ANCESTORS.md) determines the first attainable all-clock cost for a supplied `N ≡ 1 (mod 3^K)` above an explicit threshold. The optimum is characterized by finitely many reference endpoints and exact ternary classes. The extra cost tends to infinity. Checkpoint 2 certified costs 50 and 171 as optimal at the supplied original sites and cost 402 only as feasible. The [new ramp theorem](mersenne/RAMP_ANCESTORS.md) and complete reference scan now prove all three costs optimal at **every** site along their supplied ascents, after adding the site's odd index.
+
+[Prime progressions](mersenne/PRIME_PROGRESSIONS.md) combines Shao's recent narrow-progression theorem with counted fusion: every fixed ordinary unit target has many narrow prime progressions whose entire intervening integer block shares an actual first hit. [Prime midpoints](mersenne/PRIME_MIDPOINTS.md) constructs protected prime arithmetic progressions with certified convergent exterior entries and a middle entry in any supplied component. These are source-qualified existence and transfer results. They retain, rather than solve, the fixed-component convergence question; the finite examples explicitly disprove a stronger finite-deadline inference.
+
+## Global questions addressed at checkpoint 3
+
+[Sparse removals](cycles/SHARP_PERIODIC_REMOVALS.md) use a protected prefix: change an odd residue only if none of its first `k` ordinary homogeneous prefixes contracts. Every other residue keeps its original first contracting block. This supplies a finite graph in which all cycles contract. Disjoint expanding parity necklaces give the matching lower bound, while the strict-survival generating function gives the upper order. The separate adaptive rule tests true descent at a logarithmic lookahead and changes at most `O(N^H₂(log₃2)/sqrt(log N))` inputs through `N`. A strong-induction proof establishes convergence for every input under that explicit modification. The [periodic patch](cycles/PERIODIC_REMOVAL_PATCH.md) further replaces the finite nontrivial traps of a bounded periodic rule, with arbitrarily small additional removal density, without assuming that a lifted path makes every intended switch.
+
+[Whole-ascent ancestry](mersenne/RAMP_ANCESTORS.md) extracts a small **positive ordinary** reference from every hypothetical cheap visitor, at any ascent site and any incoming clock. A monotone correction product and a rotation discrepancy bound show that, in every interval of `R` ternary depths, all but `O(R^0.96)` force an additional `M=floor(0.25 log R)` odd cost beyond the prior unit barrier, for every source with `N+1 ≥ 6^(K+M)`. This count is uniform in the interval's location and allows hypothetical unbounded or periodic reference orbits. The finite screens give exact prices 50, 171 and 402 on the supplied ramps; the last uses every odd reference up to 111,955,488 and checks the unique length-592 minimizer 63,728,127.
+
+[Unrestricted ramp protection](mersenne/UNRESTRICTED_RAMPS.md) discards the visitor budget completely after a small relative fraction of inputs is removed. At the same good depths, the fraction admitting any smaller visitor to a prescribed entire ascent is `O(R^-0.10)`, uniformly in its fixed length after the source-density limit. It also gives simultaneous finite-shell bounds, a prime-start transfer using the **unconditional** Theorem E of Paper 209, and a maximal-postcrest extension. The latter preserves prescribed later mergers and component-marked prime progressions, with their separate Paper 221 dependency. It does not resolve any supplied component from its prime representatives.
+
+[Ternary anchor dichotomy](mersenne/TERNARY_FLOORS.md) separates every supplied positive integer anchor by whether its actual inverse graph has a contracting word. A word gives eventual full density of smaller direct ancestors in the corresponding nested classes. Without such a word, the all-clock ancestor fractions are summable over the canonical depths. At one their sum is at most `2π²/7`. Weaver 177 §7 already proves qualitative vanishing near one using the same positive reference graph; the new claim here is the summability and all-anchor extension, not the original vanishing mechanism. An infinite unsuccessful word search is not a decision procedure.
+
+## Finite replay
+
+Run `python -X utf8 -B research/astra-global-rigidity-20261128/check_finite.py --receipt /tmp/collatz-global-finite.json` from the repository root. It replays each checker in ordinary and optimized Python, retains output and source hashes, and requires the paired outputs to agree. These are bounded mathematical controls, not a proof of any infinite assertion.
+
+The cycle controls enumerate genuine rational cycles, all endpoints and cells in the tested width-language bands, and exact integer entropy inequalities. The Mersenne checker uses modular affine certificates with matching augmented counts. Its very large exponents are **not** claims to have explicitly expanded or iterated billion-bit starting integers; the written affine argument explains why the compressed certificates concern those fixed ordinary integers.
+
+Checkpoint 11's [finite receipt](../../reports/astra-global-rigidity-20261128/checkpoint11/finite.json) records all forty-three Python controls in both modes. The five additions check actual compressed blocks, all same-phase sublaps, adjacent signed residues, Farey-parent subclocks and the lifetime-deficit constants against genuine forward histories. The new controls add fixed-length scale-group fixtures, exactly enclosed lower-tail table margins, normalized finite ternary kernels, and actual sparse carries. The retained controls check phase clamping and pinned concatenation, the exact half-tilt reward polynomial and replica exchanges, and the unrestricted triple/four/five-product finite interfaces. The earlier exact deficit-polynomial comparison remains included. The new controls exercise actual macroscopic gluing and short-cluster repair, arbitrary equal-weight window edits, independent siblings and explicit terminating controls, protected prime cores, and exact signed-column projections with prescribed climbs. Earlier controls remain in the paired replay. The larger one-thread exhaustive scan is separate: `python research/astra-global-rigidity-20261128/mersenne/run_large_ramp.py --receipt /tmp/collatz-large-ramp.json`. Its [receipt](../../reports/astra-global-rigidity-20261128/checkpoint3/large-ramp.json) retains compiler identity, source hashes, exact cutoffs and result. It uses checked 64-bit orbit multiplication and a fixed 4 MiB cache. Neither finite replay proves the analytic discrepancy or density estimates.
+
+## Prior work and review
+
+The entropy language is credited to Sven Witteveen, *Entropy barriers for bounded-amplitude Collatz cycles*, [exact source](https://github.com/kulltc/collatz-entropy-barriers/blob/fc0854799b094fa04250ce8309279609276f3c58/paper/main.tex), §5. The physical-height argument credits Weaver's earlier injection. The all-low-height full-cycle entropy bound is already stated in [PR195 at 3fa7ef4a, final paragraph](https://github.com/GettysburgResearch/collatz/blob/3fa7ef4a0011b35447a70f587b400878d5ea8ebe/research/astra-six-hour-20261127/cycles/PHASE_POPULATION.md). The new extensions retain a positive selected fraction, translated progressions, and quantitative Hamming/Levenshtein distance. The Mersenne ramp protections are credited to PR146, PR201 and PR211 as specified in the paper; they are inputs to the new combination. The fixed-target Gaussian is prior work, and the unavailable primary Leen file is not represented as independently read. The supplied derivation instead spells out the frozen PR213 inputs used here.
+
+The [review](../../reports/astra-global-rigidity-20261128/REVIEW.md) states the narrow claim boundaries and failed strengthenings. The [intake](../../reports/astra-global-rigidity-20261128/INTAKE.json) freezes all 149 open-PR heads visible at the start. Reading their metadata is not a mathematical review of all those heads. No neighboring claim inherits a verdict from this packet.

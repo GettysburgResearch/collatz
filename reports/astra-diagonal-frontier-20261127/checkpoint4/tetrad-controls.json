@@ -1,0 +1,58 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T15:38:44.672179+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "af2ac1d8fd0bf75d3da8e46a5ee4c36a3d251856139c28dd27cd90443392beaf",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 18,
+    "executed_cases": 1,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_tetrad_rank.py",
+      "source_sha256": "c83f100a48a55017033cc4bd4538be4f7f8db1cdcdbf3756b79f8a0d34310441",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 44.197,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 44.401,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"ordinary_local_control\": {\n    \"designated_integer_floor\": 545709081523,\n    \"independent_ordinary_sources\": [\n      1099587966023,\n      1104527209193,\n      1115007650569,\n      1119946893739\n    ],\n    \"ordinary_edges\": 24,\n    \"patched_integer_labels\": 28,\n    \"same_ideal_tetrad_integer_heights\": [\n      0,\n      0,\n      -1,\n      -2,\n      -1,\n      0,\n      0\n    ],\n    \"whole_integer_array\": {\n      \"exact_integer_transitions\": 45971,\n      \"least_adjacent_integer_curvature\": 8,\n      \"maximum_absolute_successor_error\": 26,\n      \"maximum_ordinary_source\": 2795834498273,\n      \"repaired_rank_intervals\": 481,\n      \"true_odd_valuations\": 190537\n    }\n  },\n  \"periodic_rational_countermodel\": {\n    \"actual_minimum_rank_in_initial_octave\": 0,\n    \"complete_gcd\": \"1\",\n    \"denominator_bits\": 301971,\n    \"denominator_sha256_big_endian\": \"e23f0f6dc6aad3ff6a59cb45edd6c1edf72fdccd0566cb835974e12e60f36829\",\n    \"determinant_bits\": 301971,\n    \"full_native_edges\": 190537,\n    \"period\": 190537,\n    \"profile_scale\": 1420491705477,\n    \"source_numerator_sha256_big_endian\": \"84ede90c10bc37958c077ade3bccf975d95e59a7f846234ad7bdea54f25f8f16\",\n    \"strict_width_16_over_3\": true,\n    \"tetrad_intervals_in_units_1_over_65536\": [\n      [\n        20800,\n        20804\n      ],\n      [\n        31199,\n        31203\n      ],\n      [\n        -42136,\n        -42132\n      ],\n      [\n        -95971,\n        -95967\n      ],\n      [\n        -39211,\n        -39207\n      ],\n      [\n        39489,\n        39493\n      ],\n      [\n        29616,\n        29620\n      ]\n    ],\n    \"total_clock\": 301994\n  },\n  \"shared_comparisons\": {\n    \"all_midpoint_scaled_lower\": \"0.48\",\n    \"minimizing_midpoint\": [\n      1,\n      2\n    ],\n    \"positive_ideal_scaled_tetrad\": \"(0.0031,0.0032)\",\n    \"unequal_midpoint_scaled_lower\": \"5.5\"\n  }\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T15:40:13.271902+00:00"
+}

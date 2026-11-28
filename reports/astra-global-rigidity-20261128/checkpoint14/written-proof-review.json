@@ -1,0 +1,24 @@
+{
+  "schema": "collatz-written-proof-review/v1",
+  "checkpoint": 14,
+  "reviewed_utc": "2026-11-28T05:34:35.947583+00:00",
+  "files": {
+    "cycles/ALGEBRAIC_PARITY_COMPLEXITY.md": "0ab4b34aa0cb80584ef0fa57c11aa96c473914e80f7fad6fed3a6ecc8190cbcb",
+    "cycles/SUBSTITUTION_SUBSHIFT_MEASURE.md": "1dd565da4fd043d2c0289974491263833bab0d0a408827370b3c3a8959023d55",
+    "cycles/SUBSTITUTION_EFFECTIVITY.md": "03cfa2421bd67e08f378f26dedf824f1f15a5444b176901cb52d07a62a6d3574",
+    "cycles/SubstitutionMass.lean": "a2ff6ae79db7572835e63a88dd493166c2252730c744ea88e3f2e607f94f1ee0",
+    "cycles/check_substitution_mass.py": "f9af69e8512f057bdcd745ad28c0d000c3946b9369d13282e729f82863ebacb3",
+    "cycles/NATIVE_MATCHING_MASS.md": "06e3b7192256f020996fcb7d80835fee981de51eb7d5a717a58d64f720583f33",
+    "cycles/RATIONAL_MATCHING_BARRIER.md": "5b8a9cc70604d0c0180ea0cfc854fb1acfd44e55413686aae1bd3140550b775c",
+    "cycles/check_native_matching_mass.py": "141f65aa4434f003bf6cbe53d94f161b7d72a66bfcdbee45bd26d62ddbb6bf5f"
+  },
+  "status": "root independent reconstruction passed; additional separate internal reviews for both transcendence/approximation theorems",
+  "independent_reviews": {
+    "algebraic-parity-independent-review.md": "7845bf7e8ab765da1a995be2e08c52830c66fc18fec61ed1658159993f044509",
+    "substitution-independent-review.md": "b4ef31fc4738e0bea20e64d3237c2cb464c977cadcdbfaf9f721f4e5317a4093"
+  },
+  "formal_scope": "Six finite weighted-sum and substitution roots; the new infinite theorems remain written mathematics.",
+  "initial_lean_failure": "linear_combination required additive cancellation beyond the semiring declaration; corrected with congrArg and ring without weakening statement",
+  "novelty_boundary": "All-Sturmian and frequency-sensitive complexity conclusions are prior work; the broad finite-liminf extension and full-intercept bounded-degree measure are distinguished.",
+  "remaining_gap": "No symbolic restriction proved for arbitrary positive integer trajectories; no arbitrary denominator-one cycle or escaping ray excluded."
+}

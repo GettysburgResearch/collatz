@@ -1,0 +1,4 @@
+'ComponentLoss.edge_bound' depends on axioms: [propext]
+'ComponentLoss.path_bound' depends on axioms: [propext, Quot.sound]
+'ComponentLoss.uniform_base' depends on axioms: [propext, Quot.sound]
+'ComponentLoss.floor_three_strict' does not depend on any axioms

@@ -1,0 +1,5 @@
+'Collatz.RotationCuts.noInversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.RotationCuts.multiTranslate' depends on axioms: [propext]
+'Collatz.RotationCuts.iterateTranslate' depends on axioms: [propext, Quot.sound]
+'Collatz.RotationCuts.repeatClock' depends on axioms: [propext, Quot.sound]
+'Collatz.RotationCuts.commonClock' depends on axioms: [propext, Classical.choice, Quot.sound]

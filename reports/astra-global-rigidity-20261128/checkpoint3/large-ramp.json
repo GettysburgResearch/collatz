@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-large-ramp/v1",
+  "success": true,
+  "started_utc": "2026-11-28T00:24:45.970900+00:00",
+  "source_sha256": "e3f39d6335f07d03e2423bcb928b1dc0aad718b0350fe2edf90ed19708ec90f8",
+  "driver_sha256": "f229a9ae3d2c7f2618d9f698af5e1d6b81577808917414a13c5a890e59bee9f3",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "scope": "One-thread exhaustive finite scan, checked uint64 orbit multiplication, fixed 4 MiB odd cache; no infinite Collatz conclusion.",
+  "compile_flags": [
+    "-std=c++20",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "compile_exit_code": 0,
+  "run_exit_code": 0,
+  "result": {
+    "K": 357,
+    "extra_budget": 44,
+    "small_odd_upper": 111955488,
+    "reference_cutoff": 75417042,
+    "maximum_inverse_evens": 234,
+    "boundary_candidates": [],
+    "minimum_reference_clock": 592,
+    "minimizers": [
+      63728127
+    ],
+    "slow_supplied_odds": 0
+  },
+  "seconds": 4.868,
+  "finished_utc": "2026-11-28T00:24:50.839057+00:00"
+}

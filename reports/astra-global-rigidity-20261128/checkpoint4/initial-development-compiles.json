@@ -1,0 +1,18 @@
+[
+  {
+    "module": "UpDownCounterexample",
+    "sha256": "be0fb517c20511f8b08ebe456b2267dd25c6000bb01e7dd2a2673e153ba25aaf",
+    "exit_code": 1,
+    "stdout": "/workspace/scratch/31f829b7b808/nine_cycle/UpDownCounterexample.lean:49:52: error: maximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics true` to get diagnostic information\n/workspace/scratch/31f829b7b808/nine_cycle/UpDownCounterexample.lean:55:68: error: exponent 298 exceeds the threshold 256, exponentiation operation was not evaluated, use `set_option exponentiation.threshold <num>` to set a new threshold\n",
+    "stderr": "",
+    "seconds": 18.155
+  },
+  {
+    "module": "MovingFloorAntichain",
+    "sha256": "bf935f2b06e14598541e38036d455e19072efab72c7f70ad20db7bc8f0ee81d3",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "seconds": 1.598
+  }
+]

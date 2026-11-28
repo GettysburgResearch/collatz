@@ -1,0 +1,36 @@
+{
+  "odd_sources_checked_through": 1999,
+  "source_count": 1000,
+  "joint_local_margin_lower_bound": "0.0003007",
+  "log_series_terms": 96,
+  "finite_gates": {
+    "4": {
+      "finite_landings": 477,
+      "distinct_finite_landings": 14
+    },
+    "8": {
+      "finite_landings": 520,
+      "distinct_finite_landings": 149
+    },
+    "16": {
+      "finite_landings": 407,
+      "distinct_finite_landings": 71
+    },
+    "32": {
+      "finite_landings": 297,
+      "distinct_finite_landings": 28
+    },
+    "64": {
+      "finite_landings": 8,
+      "distinct_finite_landings": 4
+    },
+    "128": {
+      "finite_landings": 0,
+      "distinct_finite_landings": 0
+    },
+    "256": {
+      "finite_landings": 0,
+      "distinct_finite_landings": 0
+    }
+  }
+}

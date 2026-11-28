@@ -1,0 +1,6 @@
+'Collatz.HigherDifference.thirdTable' depends on axioms: [propext]
+'Collatz.HigherDifference.fourthTable' depends on axioms: [propext]
+'Collatz.HigherDifference.nativeEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.HigherDifference.closeLast' depends on axioms: [propext]
+'Collatz.HigherDifference.cubicLift' depends on axioms: [propext]
+'Collatz.HigherDifference.quadraticLift' depends on axioms: [propext]

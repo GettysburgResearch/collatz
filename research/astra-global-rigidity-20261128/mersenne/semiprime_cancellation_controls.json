@@ -1,0 +1,78 @@
+[
+  {
+    "k": 9,
+    "prefix": 553,
+    "prefix_primes": [
+      7,
+      79
+    ],
+    "prefix_first_one": 87,
+    "prefix_deadline": 50,
+    "cofactor_rows": [
+      {
+        "target": 5,
+        "small_prime": 71,
+        "power_of_two": 39,
+        "coefficient": 61944317087,
+        "pocklington_witness": 3,
+        "large_prime": 34054248455900030304257,
+        "cofactor": 2417851640368902151602247,
+        "product": 1337071957124002889836042591,
+        "first_target": 305,
+        "first_one": 309,
+        "deadline": 455
+      },
+      {
+        "target": 85,
+        "small_prime": 71,
+        "power_of_two": 39,
+        "coefficient": 61944320231,
+        "pocklington_witness": 3,
+        "large_prime": 34054250184332309168129,
+        "cofactor": 2417851763087593950937159,
+        "product": 1337072024987439454868248927,
+        "first_target": 285,
+        "first_one": 293,
+        "deadline": 455
+      }
+    ]
+  },
+  {
+    "k": 14,
+    "prefix": 16423,
+    "prefix_primes": [
+      11,
+      1493
+    ],
+    "prefix_first_one": 103,
+    "prefix_deadline": 75,
+    "cofactor_rows": [
+      {
+        "target": 5,
+        "small_prime": 179,
+        "power_of_two": 96,
+        "coefficient": 7081846928649326265344710785,
+        "pocklington_witness": 41,
+        "large_prime": 561081719364172582242305210966700782702395921092323573761,
+        "cofactor": 100433627766186892221372632763039440103728869875525919703219,
+        "product": 1649421468804087330951602747867396724823539229965762179285965637,
+        "first_target": 1013,
+        "first_one": 1017,
+        "deadline": 1055
+      },
+      {
+        "target": 85,
+        "small_prime": 179,
+        "power_of_two": 96,
+        "coefficient": 7081846928649326265344711437,
+        "pocklington_witness": 3,
+        "large_prime": 561081719364172582242305262623462742002744032082979192833,
+        "cofactor": 100433627766186892221372642009599830818491181742853275517107,
+        "product": 1649421468804087330951602899723658021532080677762879343817448261,
+        "first_target": 836,
+        "first_one": 844,
+        "deadline": 1055
+      }
+    ]
+  }
+]

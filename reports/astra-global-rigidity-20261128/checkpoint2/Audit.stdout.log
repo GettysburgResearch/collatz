@@ -1,0 +1,32 @@
+'CollatzResearch.WidthCarry.lastDigit' depends on axioms: [propext, Quot.sound]
+'CollatzResearch.WidthCarry.noCarry' depends on axioms: [propext, Quot.sound]
+'CollatzResearch.WidthCarry.singletonEnergy' does not depend on any axioms
+'CollatzResearch.WidthCarry.matchingEnergy' does not depend on any axioms
+'CollatzResearch.WidthCarry.sixCopyCarry' does not depend on any axioms
+'Collatz.CriticalCount.orbit_positive' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.orbit_add' does not depend on any axioms
+'Collatz.CriticalCount.odds_add' does not depend on any axioms
+'Collatz.CriticalCount.one_even_clock' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.twiceCentered_add' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.one_score' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.centered_after_one' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.fourth_margin' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.protected_bound' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.protected_fixed_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CriticalCount.nonconvergent_floor' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.centered_after_nonconvergent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CriticalCount.visits_after_step' does not depend on any axioms
+'Collatz.CriticalCount.visits_step_iff_of_ne' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.common_source_forces_comparability' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.five_nonreturn' depends on axioms: [propext]
+'Collatz.CriticalCount.five_single_defect' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.five_not_eightyFive' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.eightyFive_not_five' depends on axioms: [propext, Quot.sound]
+'Collatz.CriticalCount.five_eightyFive_disjoint' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.run_add' does not depend on any axioms
+'Collatz.MersenneCrests.initial_ramp' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.original_to_crest' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.no_meeting_after_cut' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.prime19_no_shortening' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.original19_no_shortening' depends on axioms: [propext, Quot.sound]
+'Collatz.MersenneCrests.crest19_reaches_one' does not depend on any axioms

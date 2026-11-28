@@ -1,0 +1,83 @@
+{
+  "schema": "collatz-astra-global-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:28:34.094360+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": {
+    "files": 25766,
+    "bytes": 1529949895,
+    "unused_extra_files": 0,
+    "verified_manifest_sha256": "2ba07241b3d78a1ddbc27f5eaa1f60ed38420003a25687f98f607bad9fe927fc",
+    "scope": "Only byte-hashed Mathlib matches to the pinned cache are linked into a private directory. Compiler and third-party package objects retain their original import locations. Extra files are not placed on LEAN_PATH. No dependency was rebuilt."
+  },
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "subset",
+    "requested": [
+      "SubstitutionMass"
+    ],
+    "compiled": [
+      "SubstitutionMass"
+    ],
+    "not_compiled": [
+      "WidthCarry",
+      "CriticalCountStandalone",
+      "BasinDefects",
+      "MersenneCrests",
+      "ProtectedDescent",
+      "RampReference",
+      "UpDownCounterexample",
+      "UpDownRayBand",
+      "RandomDirectionLoops",
+      "MovingFloorAntichain",
+      "AbsoluteOffsetBudget",
+      "ShiftedRampCores",
+      "GuardedHoles",
+      "ShiftedSiblingCarries",
+      "CoreTransport",
+      "DepthDeficits",
+      "PhaseClamping",
+      "DepthBridge",
+      "OffsetMoments",
+      "NativeLowerType",
+      "SublapDefects",
+      "RegularParityCenters",
+      "ParityRecordHorizon",
+      "GlobalParityMinimum",
+      "SharedBlockTails",
+      "ClockRectangle",
+      "NativeRotationCover"
+    ]
+  },
+  "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, the first-floor antichain, the finite absolute-offset occupation/floor inequalities, actual consecutive shifted-ramp identities, finite reduced-core transport inequalities, shifted sibling carry and gcd identities, finite depth-entry and block-deficit inequalities, phase-clamping legality and reward bounds, finite depth-bridge lattice and swap kernels, integer Newton moment and endpoint congruence identities, actual inverse residue and full alternating-suffix clock identities, finite signed adjacent-sublap defects and odd common-divisor implications, actual native affine block centers and their finite repetitions, reflected parity-record corrections, the strict native record clock and finite cutoff coverage of every future native grade, actual shared-block integer quotients and signed independently stopped tails, a literal four-distinct-source first-hit clock rectangle, separated and automatic hole guards, and the automatic three-or-six-step return arithmetic only. The word-pressure existence and differentiability, full entropy limits and near-maximal asymptotics, unrestricted higher-product theorems, Subspace-Theorem compressed-parity horizon, all-sublap crossing and large-denominator asymptotics, sparse-sum gcd bound, infinite hole scheduling, automatic-chain frequency and growth rates, core transport and retention asymptotics, fixed-root cell laws, solenoid averaging, recent rational-logarithm estimate, random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
+  "modules": [
+    {
+      "module": "SubstitutionMass",
+      "source": "research/astra-global-rigidity-20261128/cycles/SubstitutionMass.lean",
+      "source_sha256": "a2ff6ae79db7572835e63a88dd493166c2252730c744ea88e3f2e607f94f1ee0",
+      "exit_code": 0,
+      "seconds": 4.347,
+      "public_theorems": [
+        "Collatz.SubstitutionMass.scale_append",
+        "Collatz.SubstitutionMass.mass_append",
+        "Collatz.SubstitutionMass.mass_linear",
+        "Collatz.SubstitutionMass.mass_substitution",
+        "Collatz.SubstitutionMass.weighted_telescope",
+        "Collatz.SubstitutionMass.scalar_substitution"
+      ]
+    }
+  ],
+  "public_theorems": 6,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 6,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 6.255,
+  "finished_utc": "2026-11-28T05:28:40.350174+00:00"
+}

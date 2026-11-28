@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "checkers": [
+    {
+      "path": "check_upper_subclocks.py",
+      "sha256": "08168750b681a1eba619de8173d6538d73acdb0c593520a35f3a8dbada00415d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "476 determinant-one parents, 2634 ordered upper clocks, 81 mixed upper clocks, 12016 exact adjacent carry divisors\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "476 determinant-one parents, 2634 ordered upper clocks, 81 mixed upper clocks, 12016 exact adjacent carry divisors\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "check_lifetime_deficit.py",
+      "sha256": "bc774e0d85271c13b43fae443e9bb6e79b8cac5a7e222a8931007ba7c7bab1bd",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"constants\": {\n    \"absorbed_lifetime_fraction\": \"7894171996/8063574975\",\n    \"geometric_sum_upper\": \"330200000/322542999\",\n    \"quadratic_exponent_margin\": \"7439/236719900\",\n    \"record_constant_bracket\": [\n      \"82500/5490757\",\n      \"206375/13725234\"\n    ]\n  },\n  \"native\": {\n    \"endpoint_and_record_sha256\": \"527da73831a8746c05dff6d2792ebd22bcb6ebc14bb90d5156df7496936c8811\",\n    \"fixed_horizon\": 192,\n    \"largest_doubled_deficit_and_first_source_clock\": [\n      12,\n      4096,\n      12\n    ],\n    \"positive_native_steps\": 786432,\n    \"starts\": 4096,\n    \"strict_negative_records\": 16601\n  },\n  \"scope\": \"Finite constants and ordinary prefix cap; the infinite lifetime bound uses the written record proof.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"constants\": {\n    \"absorbed_lifetime_fraction\": \"7894171996/8063574975\",\n    \"geometric_sum_upper\": \"330200000/322542999\",\n    \"quadratic_exponent_margin\": \"7439/236719900\",\n    \"record_constant_bracket\": [\n      \"82500/5490757\",\n      \"206375/13725234\"\n    ]\n  },\n  \"native\": {\n    \"endpoint_and_record_sha256\": \"527da73831a8746c05dff6d2792ebd22bcb6ebc14bb90d5156df7496936c8811\",\n    \"fixed_horizon\": 192,\n    \"largest_doubled_deficit_and_first_source_clock\": [\n      12,\n      4096,\n      12\n    ],\n    \"positive_native_steps\": 786432,\n    \"starts\": 4096,\n    \"strict_negative_records\": 16601\n  },\n  \"scope\": \"Finite constants and ordinary prefix cap; the infinite lifetime bound uses the written record proof.\"\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    }
+  ],
+  "scope": "Finite exact constants, native prefixes and rational controls; no infinite theorem verification."
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T16:47:20.348328+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "runner_sha256": "2159037ea7aaa8e81687e8262115257d46e53bb8ad479fa9ce713efe75696c94",
+  "selection": {
+    "mode": "subset",
+    "declared_cases": 24,
+    "executed_cases": 2,
+    "not_executed": [
+      "check_native_gate.py",
+      "mass/check_seed_spread.py",
+      "mass/check_first_entry_law.py",
+      "mass/check_native_shells.py",
+      "mass/check_first_arrival_energy.py",
+      "arithmetic/check_polynomial_rank.py",
+      "arithmetic/check_higher_differences.py",
+      "arithmetic/check_rotation_cuts.py",
+      "arithmetic/check_weighted_clock.py",
+      "arithmetic/check_sparse_rational_clock.py",
+      "arithmetic/check_homogeneous_meetings.py",
+      "arithmetic/check_shifted_clocks.py",
+      "arithmetic/check_odd_height_pressure.py",
+      "arithmetic/check_tetrad_rank.py",
+      "arithmetic/check_dual_cuts.py",
+      "arithmetic/check_full_step_chart.py",
+      "arithmetic/check_full_circuit_inversions.py",
+      "linear/check_controls.py",
+      "linear/check_automata.py",
+      "linear/check_local_landing.py",
+      "inverse/check_retained_trees.py",
+      "inverse/check_frozen_root.py"
+    ]
+  },
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_farey_tile.py",
+      "source_sha256": "e92582fe157612256ae657a502f8322c2187abb9dfae2a60dc0cf6edcea34da3",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 2.334,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 2.575,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"angular_tiles_sorted\": 130470,\n  \"mechanical_controls\": 6,\n  \"nonmechanical_controls\": 87,\n  \"nonmechanical_example\": {\n    \"clock\": [\n      5,\n      3\n    ],\n    \"complete_denominator\": 5,\n    \"lower_parent\": [\n      3,\n      2\n    ],\n    \"ordinary_numerators\": [\n      19,\n      31,\n      49\n    ],\n    \"tiles\": 9,\n    \"word\": [\n      1,\n      1,\n      3\n    ]\n  },\n  \"primitive_closed_rational_circuits\": 93\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_width_three.py",
+      "source_sha256": "18d41ef49225c47411bb682b893afa6f03b2cbfa6377c19a7b0abc21e4761f81",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.092,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.238,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"finite_stress\": {\n    \"finite_ordinary_edges\": 10,\n    \"pure_fourth_heights\": [\n      0,\n      -4,\n      -3\n    ]\n  },\n  \"polynomial\": {\n    \"binary_masks\": 512,\n    \"positive_mass\": 6,\n    \"quotient_coefficient_norm\": 120,\n    \"stencil\": [\n      1,\n      -2,\n      0,\n      1,\n      0,\n      1,\n      0,\n      0,\n      -2,\n      0,\n      0,\n      1,\n      0,\n      1,\n      0,\n      -2,\n      1\n    ],\n    \"stride_sixty_quotient_degree\": 344\n  },\n  \"scalar\": {\n    \"distinct_seven_letter_calendars\": 12,\n    \"positive_birth_scalar_pairs\": 1,\n    \"positive_long_return_choices\": 9,\n    \"positive_short_return_choices\": 3\n  }\n}\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T16:47:25.600547+00:00"
+}

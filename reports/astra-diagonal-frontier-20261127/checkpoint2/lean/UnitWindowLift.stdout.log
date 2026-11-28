@@ -1,0 +1,4 @@
+'CollatzWindowLift.physical_of_row' depends on axioms: [propext, Quot.sound]
+'CollatzWindowLift.mobile_info' depends on axioms: [propext, Quot.sound]
+'CollatzWindowLift.prescribed_lift' depends on axioms: [propext, Quot.sound]
+'CollatzWindowLift.visits_of_physical' depends on axioms: [propext]

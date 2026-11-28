@@ -1,0 +1,39 @@
+{
+  "curvature_invariant_edges": 38,
+  "distinct_components": 70,
+  "exact_product_caps": 5,
+  "joint_environment_checks": 4961,
+  "lifetime_incidence_checks": 551,
+  "literal_cutoff_maximum": 801,
+  "long_interval_nonempty_checks": 5,
+  "maximal_plateau_examples": [
+    [
+      21,
+      79,
+      "8/5"
+    ],
+    [
+      117,
+      291,
+      "27/17"
+    ],
+    [
+      1341,
+      2155,
+      "65/41"
+    ],
+    [
+      17217,
+      20491,
+      "317/200"
+    ],
+    [
+      126573,
+      157323,
+      "485/306"
+    ]
+  ],
+  "multiple_survivor_checks": 0,
+  "persistent_component_cases": 5,
+  "window_origins_checked": 16010
+}

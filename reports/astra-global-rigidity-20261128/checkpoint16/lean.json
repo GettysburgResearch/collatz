@@ -1,0 +1,566 @@
+{
+  "schema": "collatz-astra-global-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:21:32.937132+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": {
+    "files": 25766,
+    "bytes": 1529949895,
+    "unused_extra_files": 0,
+    "verified_manifest_sha256": "2ba07241b3d78a1ddbc27f5eaa1f60ed38420003a25687f98f607bad9fe927fc",
+    "scope": "Only byte-hashed Mathlib matches to the pinned cache are linked into a private directory. Compiler and third-party package objects retain their original import locations. Extra files are not placed on LEAN_PATH. No dependency was rebuilt."
+  },
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "all",
+    "requested": [
+      "AbsoluteOffsetBudget",
+      "BasinDefects",
+      "ClockRectangle",
+      "CoreTransport",
+      "CriticalCountStandalone",
+      "DepthBridge",
+      "DepthDeficits",
+      "GateReturnBudget",
+      "GlobalParityMinimum",
+      "GuardedHoles",
+      "MersenneCrests",
+      "MovingFloorAntichain",
+      "NativeCycleGrade",
+      "NativeLowerType",
+      "NativeRotationCover",
+      "OffsetMoments",
+      "ParityRecordHorizon",
+      "PhaseClamping",
+      "ProtectedDescent",
+      "RampReference",
+      "RandomDirectionLoops",
+      "RegularParityCenters",
+      "SharedBlockTails",
+      "ShiftedRampCores",
+      "ShiftedSiblingCarries",
+      "StrictGateCocycle",
+      "SublapDefects",
+      "SubstitutionMass",
+      "UnitInverseFork",
+      "UpDownCounterexample",
+      "UpDownRayBand",
+      "WidthCarry"
+    ],
+    "compiled": [
+      "WidthCarry",
+      "CriticalCountStandalone",
+      "BasinDefects",
+      "MersenneCrests",
+      "ProtectedDescent",
+      "RampReference",
+      "UpDownCounterexample",
+      "UpDownRayBand",
+      "RandomDirectionLoops",
+      "MovingFloorAntichain",
+      "AbsoluteOffsetBudget",
+      "ShiftedRampCores",
+      "GuardedHoles",
+      "ShiftedSiblingCarries",
+      "CoreTransport",
+      "DepthDeficits",
+      "PhaseClamping",
+      "DepthBridge",
+      "OffsetMoments",
+      "NativeLowerType",
+      "SublapDefects",
+      "RegularParityCenters",
+      "ParityRecordHorizon",
+      "GlobalParityMinimum",
+      "SharedBlockTails",
+      "ClockRectangle",
+      "NativeRotationCover",
+      "SubstitutionMass",
+      "StrictGateCocycle",
+      "GateReturnBudget",
+      "NativeCycleGrade",
+      "UnitInverseFork"
+    ],
+    "not_compiled": []
+  },
+  "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, the first-floor antichain, the finite absolute-offset occupation/floor inequalities, actual consecutive shifted-ramp identities, finite reduced-core transport inequalities, shifted sibling carry and gcd identities, finite depth-entry and block-deficit inequalities, phase-clamping legality and reward bounds, finite depth-bridge lattice and swap kernels, integer Newton moment and endpoint congruence identities, actual inverse residue and full alternating-suffix clock identities, finite signed adjacent-sublap defects and odd common-divisor implications, actual native affine block centers and their finite repetitions, reflected parity-record corrections, the strict native record clock and finite cutoff coverage of every future native grade, actual shared-block integer quotients and signed independently stopped tails, a literal four-distinct-source first-hit clock rectangle, finite native circle covers and exact paired transport, finite weighted substitution identities with the terminal boundary, attained actual lifetime grade floors and the strict-gate cocycle, the complete native return height budget, the native cycle power gap and positive grade, two exact unit inverse branches and bounded-exponent target uniqueness, separated and automatic hole guards, and the automatic three-or-six-step return arithmetic only. The algebraic parity-complexity and uniform substitution-approximation theorems, native rotation and matching-mass limits, sharp rare-gate source and return-word laws, finite-deadline escape limits, the all-order two-face obstruction, full-period grid pressure, the asymptotic local-statistic counterexample and conditional tilted stopping criterion, word-pressure existence and differentiability, full entropy limits and near-maximal asymptotics, unrestricted higher-product theorems, Subspace-Theorem compressed-parity horizon, all-sublap crossing and large-denominator asymptotics, sparse-sum gcd bound, infinite hole scheduling, automatic-chain frequency and growth rates, core transport and retention asymptotics, fixed-root cell laws, solenoid averaging, recent rational-logarithm estimate, random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
+  "modules": [
+    {
+      "module": "WidthCarry",
+      "source": "research/astra-global-rigidity-20261128/cycles/WidthCarry.lean",
+      "source_sha256": "530230297041bdb5319f27ed4e4d76036c841c0d80f8d87c6ab659273133e51b",
+      "exit_code": 0,
+      "seconds": 0.723,
+      "public_theorems": [
+        "CollatzResearch.WidthCarry.lastDigit",
+        "CollatzResearch.WidthCarry.noCarry",
+        "CollatzResearch.WidthCarry.singletonEnergy",
+        "CollatzResearch.WidthCarry.matchingEnergy",
+        "CollatzResearch.WidthCarry.sixCopyCarry"
+      ]
+    },
+    {
+      "module": "CriticalCountStandalone",
+      "source": "research/astra-global-rigidity-20261128/mass/CriticalCountStandalone.lean",
+      "source_sha256": "0e683a17e4caa95370391943c73e7bbf3cb1c7b3cf3f4d08a60513ed76246ddc",
+      "exit_code": 0,
+      "seconds": 1.637,
+      "public_theorems": [
+        "Collatz.CriticalCount.orbit_positive",
+        "Collatz.CriticalCount.orbit_add",
+        "Collatz.CriticalCount.odds_add",
+        "Collatz.CriticalCount.one_even_clock",
+        "Collatz.CriticalCount.twiceCentered_add",
+        "Collatz.CriticalCount.one_score",
+        "Collatz.CriticalCount.centered_after_one",
+        "Collatz.CriticalCount.fourth_margin",
+        "Collatz.CriticalCount.protected_bound",
+        "Collatz.CriticalCount.protected_fixed_start",
+        "Collatz.CriticalCount.nonconvergent_floor",
+        "Collatz.CriticalCount.centered_after_nonconvergent"
+      ]
+    },
+    {
+      "module": "BasinDefects",
+      "source": "research/astra-global-rigidity-20261128/mass/BasinDefects.lean",
+      "source_sha256": "815c937c11bdd19976cbebd4687e30657b571033a59249ffa5c5d9cf1f023368",
+      "exit_code": 0,
+      "seconds": 0.979,
+      "public_theorems": [
+        "Collatz.CriticalCount.visits_after_step",
+        "Collatz.CriticalCount.visits_step_iff_of_ne",
+        "Collatz.CriticalCount.common_source_forces_comparability",
+        "Collatz.CriticalCount.five_nonreturn",
+        "Collatz.CriticalCount.five_single_defect",
+        "Collatz.CriticalCount.five_not_eightyFive",
+        "Collatz.CriticalCount.eightyFive_not_five",
+        "Collatz.CriticalCount.five_eightyFive_disjoint"
+      ]
+    },
+    {
+      "module": "MersenneCrests",
+      "source": "research/astra-global-rigidity-20261128/mersenne/MersenneCrests.lean",
+      "source_sha256": "a53b9398595fc7b60bba2e9e7e07056c8100b9a191823a77c61daf8425c2c7ba",
+      "exit_code": 0,
+      "seconds": 1.786,
+      "public_theorems": [
+        "Collatz.MersenneCrests.run_add",
+        "Collatz.MersenneCrests.initial_ramp",
+        "Collatz.MersenneCrests.original_to_crest",
+        "Collatz.MersenneCrests.no_meeting_after_cut",
+        "Collatz.MersenneCrests.prime19_no_shortening",
+        "Collatz.MersenneCrests.original19_no_shortening",
+        "Collatz.MersenneCrests.crest19_reaches_one"
+      ]
+    },
+    {
+      "module": "ProtectedDescent",
+      "source": "research/astra-global-rigidity-20261128/cycles/ProtectedDescent.lean",
+      "source_sha256": "4bc9c789949397407275ec0426dcc03274ae1a1239c4eb1e9365c88dfbbc90a9",
+      "exit_code": 0,
+      "seconds": 1.045,
+      "public_theorems": [
+        "CollatzResearch.ProtectedDescent.run_add",
+        "CollatzResearch.ProtectedDescent.run_pos",
+        "CollatzResearch.ProtectedDescent.protectedSuffix",
+        "CollatzResearch.ProtectedDescent.modified_reaches_one",
+        "CollatzResearch.ProtectedDescent.keepStep_spec",
+        "CollatzResearch.ProtectedDescent.explicit_reaches_one"
+      ]
+    },
+    {
+      "module": "RampReference",
+      "source": "research/astra-global-rigidity-20261128/mersenne/RampReference.lean",
+      "source_sha256": "96bb5912d3163334285a0dd79b1305b4030fc74709127ae93a359bcd403142b0",
+      "exit_code": 0,
+      "seconds": 2.291,
+      "public_theorems": [
+        "Collatz.RampReference.affine",
+        "Collatz.RampReference.slope_nonneg",
+        "Collatz.RampReference.slope_le",
+        "Collatz.RampReference.loss_bounds",
+        "Collatz.RampReference.translated_cut",
+        "Collatz.RampReference.boundary_interval"
+      ]
+    },
+    {
+      "module": "UpDownCounterexample",
+      "source": "research/astra-global-rigidity-20261128/cycles/UpDownCounterexample.lean",
+      "source_sha256": "9e1723d20e030b737f039b14c16753940a723c3aa25fccdfbafb4bd340d1461c",
+      "exit_code": 0,
+      "seconds": 15.023,
+      "public_theorems": [
+        "CollatzResearch.UpDownCounterexample.witness_simple",
+        "CollatzResearch.UpDownCounterexample.witness_length",
+        "CollatzResearch.UpDownCounterexample.witness_upCount",
+        "CollatzResearch.UpDownCounterexample.ratio_exceeds_three",
+        "CollatzResearch.UpDownCounterexample.exists_above_three"
+      ]
+    },
+    {
+      "module": "UpDownRayBand",
+      "source": "research/astra-global-rigidity-20261128/cycles/UpDownRayBand.lean",
+      "source_sha256": "28679f4fa6c5bdb096d29168056c23cacc87ae2b70d6bbd46c9ccaff9bed70a2",
+      "exit_code": 0,
+      "seconds": 1.528,
+      "public_theorems": [
+        "CollatzResearch.UpDownRayBand.bandStart",
+        "CollatzResearch.UpDownRayBand.bandClosed",
+        "CollatzResearch.UpDownRayBand.residueScripts"
+      ]
+    },
+    {
+      "module": "RandomDirectionLoops",
+      "source": "research/astra-global-rigidity-20261128/cycles/RandomDirectionLoops.lean",
+      "source_sha256": "a9ee37279ee49b2d90153c3d1645842aab238f5c3d069cb5ac25b64a4a5e6f01",
+      "exit_code": 0,
+      "seconds": 3.61,
+      "public_theorems": [
+        "CollatzResearch.RandomDirectionLoops.affine",
+        "CollatzResearch.RandomDirectionLoops.error_bound",
+        "CollatzResearch.RandomDirectionLoops.loop_contracts",
+        "CollatzResearch.RandomDirectionLoops.loop_height"
+      ]
+    },
+    {
+      "module": "MovingFloorAntichain",
+      "source": "research/astra-global-rigidity-20261128/mass/MovingFloorAntichain.lean",
+      "source_sha256": "bf935f2b06e14598541e38036d455e19072efab72c7f70ad20db7bc8f0ee81d3",
+      "exit_code": 0,
+      "seconds": 0.581,
+      "public_theorems": [
+        "Collatz.MovingFloor.run_add",
+        "Collatz.MovingFloor.comparable_same_grade",
+        "Collatz.MovingFloor.common_predecessor_same_grade"
+      ]
+    },
+    {
+      "module": "AbsoluteOffsetBudget",
+      "source": "research/astra-global-rigidity-20261128/mass/AbsoluteOffsetBudget.lean",
+      "source_sha256": "526a9cd0c4863a61a1f21589b284fdb6c8be185734ab38c07ebf0c0973aac647",
+      "exit_code": 0,
+      "seconds": 2.059,
+      "public_theorems": [
+        "Collatz.AbsoluteOffsetBudget.top_add_loss",
+        "Collatz.AbsoluteOffsetBudget.denominator_positive",
+        "Collatz.AbsoluteOffsetBudget.count_times_survival",
+        "Collatz.AbsoluteOffsetBudget.previous_low_floor",
+        "Collatz.AbsoluteOffsetBudget.few_earlier_visits"
+      ]
+    },
+    {
+      "module": "ShiftedRampCores",
+      "source": "research/astra-global-rigidity-20261128/mersenne/ShiftedRampCores.lean",
+      "source_sha256": "1fd4c9a28e2da9f86d880d4f7b6aa7fc71118c00e42a014718040e8cf4a9f869",
+      "exit_code": 0,
+      "seconds": 0.882,
+      "public_theorems": [
+        "Collatz.ShiftedRampCores.halving_run",
+        "Collatz.ShiftedRampCores.shifted_crest",
+        "Collatz.ShiftedRampCores.crest_return",
+        "Collatz.ShiftedRampCores.adjacent_shifted_identity"
+      ]
+    },
+    {
+      "module": "GuardedHoles",
+      "source": "research/astra-global-rigidity-20261128/cycles/GuardedHoles.lean",
+      "source_sha256": "8edead4479eeefb9f0df62d787f27b9bdb7d05cc202350d867a69e15eb660b22",
+      "exit_code": 0,
+      "seconds": 1.144,
+      "public_theorems": [
+        "CollatzResearch.GuardedHoles.separated_guards",
+        "CollatzResearch.GuardedHoles.guarded_growth",
+        "CollatzResearch.GuardedHoles.separated_growth",
+        "CollatzResearch.GuardedHoles.band_guards",
+        "CollatzResearch.GuardedHoles.band_exclusion",
+        "CollatzResearch.GuardedHoles.band_growth",
+        "CollatzResearch.GuardedHoles.band_return"
+      ]
+    },
+    {
+      "module": "ShiftedSiblingCarries",
+      "source": "research/astra-global-rigidity-20261128/mersenne/ShiftedSiblingCarries.lean",
+      "source_sha256": "6b726dece39e7757d86fd89c9fd5960915feba27e2bf2f16e000f6bc42974ee2",
+      "exit_code": 0,
+      "seconds": 1.249,
+      "public_theorems": [
+        "Collatz.ShiftedSiblingCarries.small_shift_step",
+        "Collatz.ShiftedSiblingCarries.sibling_shift_step",
+        "Collatz.ShiftedSiblingCarries.carry_identity",
+        "Collatz.ShiftedSiblingCarries.positive_carry",
+        "Collatz.ShiftedSiblingCarries.carry_bound",
+        "Collatz.ShiftedSiblingCarries.gcd_divides_carry",
+        "Collatz.ShiftedSiblingCarries.sibling_unit",
+        "Collatz.ShiftedSiblingCarries.sibling_merge"
+      ]
+    },
+    {
+      "module": "CoreTransport",
+      "source": "research/astra-global-rigidity-20261128/mersenne/CoreTransport.lean",
+      "source_sha256": "7ca6ca301fe4c0a1572ab77e6e6b50989e76edd80f9e8f5683a41c3a52831be8",
+      "exit_code": 0,
+      "seconds": 0.809,
+      "public_theorems": [
+        "Collatz.CoreTransport.uncancelled_bound",
+        "Collatz.CoreTransport.core_telescope",
+        "Collatz.CoreTransport.inserted_product"
+      ]
+    },
+    {
+      "module": "DepthDeficits",
+      "source": "research/astra-global-rigidity-20261128/cycles/DepthDeficits.lean",
+      "source_sha256": "162bbea15ffce518eefcb45013846a8991105879335c01b636d286823a6e879f",
+      "exit_code": 0,
+      "seconds": 2.085,
+      "public_theorems": [
+        "Collatz.DepthDeficits.zero_loss",
+        "Collatz.DepthDeficits.half_power_bound",
+        "Collatz.DepthDeficits.positive_site_loss",
+        "Collatz.DepthDeficits.positive_entry",
+        "Collatz.DepthDeficits.entry_loss",
+        "Collatz.DepthDeficits.block_loss"
+      ]
+    },
+    {
+      "module": "PhaseClamping",
+      "source": "research/astra-global-rigidity-20261128/cycles/PhaseClamping.lean",
+      "source_sha256": "7d3b9c32197250d0fe36abf29457fd8b3a877c14f80f94a2881289242079a115",
+      "exit_code": 0,
+      "seconds": 1.951,
+      "public_theorems": [
+        "Collatz.PhaseClamping.min_strict_step",
+        "Collatz.PhaseClamping.clamp_strict",
+        "Collatz.PhaseClamping.clamp_below",
+        "Collatz.PhaseClamping.clamp_start",
+        "Collatz.PhaseClamping.clamp_endpoint",
+        "Collatz.PhaseClamping.clamp_fibre_bit",
+        "Collatz.PhaseClamping.clamp_bit_injective",
+        "Collatz.PhaseClamping.clamp_reward",
+        "Collatz.PhaseClamping.clamp_correction_bound",
+        "Collatz.PhaseClamping.corrected_sum_bound"
+      ]
+    },
+    {
+      "module": "DepthBridge",
+      "source": "research/astra-global-rigidity-20261128/cycles/DepthBridge.lean",
+      "source_sha256": "70963cfd7d24d884d3486c354770108ee26cb9080d1ad7dbbb05d860ecdaf164",
+      "exit_code": 0,
+      "seconds": 1.418,
+      "public_theorems": [
+        "Collatz.DepthBridge.min_step",
+        "Collatz.DepthBridge.max_step",
+        "Collatz.DepthBridge.swap_step",
+        "Collatz.DepthBridge.swap_invariant",
+        "Collatz.DepthBridge.crossing_usable",
+        "Collatz.DepthBridge.no_swap_order",
+        "Collatz.DepthBridge.opposite_zeros_force_swap",
+        "Collatz.DepthBridge.lattice_reward",
+        "Collatz.DepthBridge.shifted_positive_step",
+        "Collatz.DepthBridge.half_tilt_reward"
+      ]
+    },
+    {
+      "module": "OffsetMoments",
+      "source": "research/astra-global-rigidity-20261128/cycles/OffsetMoments.lean",
+      "source_sha256": "31f8fc464dc29434e32451c34107f25f5417dfb7b88ad4617c3a2da6c2a87b1f",
+      "exit_code": 0,
+      "seconds": 1.728,
+      "public_theorems": [
+        "CollatzResearch.OffsetMoments.newtonTwo",
+        "CollatzResearch.OffsetMoments.equalSquareMoments",
+        "CollatzResearch.OffsetMoments.nineAtTerminal",
+        "CollatzResearch.OffsetMoments.eightAtLastLump"
+      ]
+    },
+    {
+      "module": "NativeLowerType",
+      "source": "research/astra-global-rigidity-20261128/cycles/NativeLowerType.lean",
+      "source_sha256": "ef6f84dcf405f798361b73b0e04627b7d8042993c318a8ec4c08afcd0abc15c9",
+      "exit_code": 0,
+      "seconds": 1.064,
+      "public_theorems": [
+        "Collatz.NativeLowerType.six_unit_choices",
+        "Collatz.NativeLowerType.residue_period",
+        "Collatz.NativeLowerType.residue_reduce",
+        "Collatz.NativeLowerType.arithmetic_unit_child",
+        "Collatz.NativeLowerType.inverse_residue",
+        "Collatz.NativeLowerType.inverse_edge",
+        "Collatz.NativeLowerType.alternating_two",
+        "Collatz.NativeLowerType.alternating_even",
+        "Collatz.NativeLowerType.alternating_odd",
+        "Collatz.NativeLowerType.arrived_full_count"
+      ]
+    },
+    {
+      "module": "SublapDefects",
+      "source": "research/astra-global-rigidity-20261128/cycles/SublapDefects.lean",
+      "source_sha256": "1f371c32baba38ca911b1caab6216909725c1f03ce9a9fc031d8086b8aa2cc30",
+      "exit_code": 0,
+      "seconds": 1.251,
+      "public_theorems": [
+        "CollatzResearch.SublapDefects.signedDefectStep",
+        "CollatzResearch.SublapDefects.carryLossDividesDefect",
+        "CollatzResearch.SublapDefects.commonCarryLoss"
+      ]
+    },
+    {
+      "module": "RegularParityCenters",
+      "source": "research/astra-global-rigidity-20261128/cycles/RegularParityCenters.lean",
+      "source_sha256": "ab06e4022647308b31ea208fa75c74199b1456f4819f31bc9b70ca53def45bc4",
+      "exit_code": 0,
+      "seconds": 1.403,
+      "public_theorems": [
+        "Collatz.RegularParityCenters.native_step",
+        "Collatz.RegularParityCenters.native_affine",
+        "Collatz.RegularParityCenters.center_transport",
+        "Collatz.RegularParityCenters.center_repeat",
+        "Collatz.RegularParityCenters.native_repeated_center"
+      ]
+    },
+    {
+      "module": "ParityRecordHorizon",
+      "source": "research/astra-global-rigidity-20261128/cycles/ParityRecordHorizon.lean",
+      "source_sha256": "72f591aa474552f2e477e5e7084dbb23901cc0968ffb2d2fa7b250883cf81918",
+      "exit_code": 0,
+      "seconds": 2.412,
+      "public_theorems": [
+        "Collatz.ParityRecordHorizon.reflected_witness",
+        "Collatz.ParityRecordHorizon.weak_record_reflected_zero",
+        "Collatz.ParityRecordHorizon.correction_envelope",
+        "Collatz.ParityRecordHorizon.weak_record_correction",
+        "Collatz.ParityRecordHorizon.strict_record_correction",
+        "Collatz.ParityRecordHorizon.observed_affine",
+        "Collatz.ParityRecordHorizon.strict_record_clock"
+      ]
+    },
+    {
+      "module": "GlobalParityMinimum",
+      "source": "research/astra-global-rigidity-20261128/cycles/GlobalParityMinimum.lean",
+      "source_sha256": "d9208c268ebb3a6d43ce9870825913b4a7461ebd1c88c2176b5bc8e272fd71ff",
+      "exit_code": 0,
+      "seconds": 1.716,
+      "public_theorems": [
+        "Collatz.GlobalParityMinimum.cutoff_monotone",
+        "Collatz.GlobalParityMinimum.cutoff_covers_all"
+      ]
+    },
+    {
+      "module": "SharedBlockTails",
+      "source": "research/astra-global-rigidity-20261128/cycles/SharedBlockTails.lean",
+      "source_sha256": "7ed84130c5c9d9cbcd8412220487c07fde275d94ccb0096553b6c657dc25a83d",
+      "exit_code": 0,
+      "seconds": 1.592,
+      "public_theorems": [
+        "CollatzResearch.SharedBlockTails.nativeAffine",
+        "CollatzResearch.SharedBlockTails.sharedQuotient",
+        "CollatzResearch.SharedBlockTails.signedTwoTails",
+        "CollatzResearch.SharedBlockTails.nativeSource"
+      ]
+    },
+    {
+      "module": "ClockRectangle",
+      "source": "research/astra-global-rigidity-20261128/mass/ClockRectangle.lean",
+      "source_sha256": "89311cc9522b77137ea0b9ce2e50ad380022d8521850230fcfe75d399a742b24",
+      "exit_code": 0,
+      "seconds": 1.351,
+      "public_theorems": [
+        "Collatz.ClockRectangle.firstHits",
+        "Collatz.ClockRectangle.literalRectangle",
+        "Collatz.ClockRectangle.clockRectangle",
+        "Collatz.ClockRectangle.correctedValuesDistinct"
+      ]
+    },
+    {
+      "module": "NativeRotationCover",
+      "source": "research/astra-global-rigidity-20261128/cycles/NativeRotationCover.lean",
+      "source_sha256": "071b3c3f8a38dba8a086206ad56e82cf37dcdf5d0ab306c7399e5c5c3dde684d",
+      "exit_code": 0,
+      "seconds": 1.315,
+      "public_theorems": [
+        "CollatzResearch.NativeRotationCover.arc_nested",
+        "CollatzResearch.NativeRotationCover.arc_card_le",
+        "CollatzResearch.NativeRotationCover.groupLength_attained",
+        "CollatzResearch.NativeRotationCover.grouped_cover",
+        "CollatzResearch.NativeRotationCover.exactTransport"
+      ]
+    },
+    {
+      "module": "SubstitutionMass",
+      "source": "research/astra-global-rigidity-20261128/cycles/SubstitutionMass.lean",
+      "source_sha256": "a2ff6ae79db7572835e63a88dd493166c2252730c744ea88e3f2e607f94f1ee0",
+      "exit_code": 0,
+      "seconds": 1.764,
+      "public_theorems": [
+        "Collatz.SubstitutionMass.scale_append",
+        "Collatz.SubstitutionMass.mass_append",
+        "Collatz.SubstitutionMass.mass_linear",
+        "Collatz.SubstitutionMass.mass_substitution",
+        "Collatz.SubstitutionMass.weighted_telescope",
+        "Collatz.SubstitutionMass.scalar_substitution"
+      ]
+    },
+    {
+      "module": "StrictGateCocycle",
+      "source": "research/astra-global-rigidity-20261128/mass/StrictGateCocycle.lean",
+      "source_sha256": "f2b3a747da7ba01b892d79719768e96397bd8b821cf825aa578de6b4f91d2262",
+      "exit_code": 0,
+      "seconds": 1.428,
+      "public_theorems": [
+        "Collatz.StrictGateCocycle.grade_floors_exist",
+        "Collatz.StrictGateCocycle.grade_step_upper",
+        "Collatz.StrictGateCocycle.floor_jump",
+        "Collatz.StrictGateCocycle.native_cocycle"
+      ]
+    },
+    {
+      "module": "GateReturnBudget",
+      "source": "research/astra-global-rigidity-20261128/mass/GateReturnBudget.lean",
+      "source_sha256": "e4e988f596d2031fa4a27686237529f63d06460788e2a92694276e4a5802fa11",
+      "exit_code": 0,
+      "seconds": 1.283,
+      "public_theorems": [
+        "Collatz.GateReturnBudget.native_height_product",
+        "Collatz.GateReturnBudget.completed_clock_budget"
+      ]
+    },
+    {
+      "module": "NativeCycleGrade",
+      "source": "research/astra-global-rigidity-20261128/mass/NativeCycleGrade.lean",
+      "source_sha256": "c244e0f36092a7bb9c7247ff4d89cac69c777f34d353aebdd1a0359d521c6a2d",
+      "exit_code": 0,
+      "seconds": 1.723,
+      "public_theorems": [
+        "Collatz.NativeCycleGrade.native_power_lower",
+        "Collatz.NativeCycleGrade.cycle_power_gap",
+        "Collatz.NativeCycleGrade.cycle_positive_grade"
+      ]
+    },
+    {
+      "module": "UnitInverseFork",
+      "source": "research/astra-global-rigidity-20261128/mass/UnitInverseFork.lean",
+      "source_sha256": "bf1e9facfeef2ccc01770e995eb74db1afca7700f1174736a59ca1d6d53364ca",
+      "exit_code": 0,
+      "seconds": 7.886,
+      "public_theorems": [
+        "Collatz.UnitInverseFork.first_branch",
+        "Collatz.UnitInverseFork.second_branch",
+        "Collatz.UnitInverseFork.target_unique",
+        "Collatz.UnitInverseFork.distinct_exponents"
+      ]
+    }
+  ],
+  "public_theorems": 175,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 175,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 70.975,
+  "finished_utc": "2026-11-28T06:22:43.912158+00:00"
+}

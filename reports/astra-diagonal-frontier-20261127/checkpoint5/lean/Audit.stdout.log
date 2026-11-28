@@ -1,0 +1,14 @@
+'FirstArrivalLap.walk_add' does not depend on any axioms
+'FirstArrivalLap.nativeClock_add' does not depend on any axioms
+'FirstArrivalLap.predecessor_at_lap' depends on axioms: [propext, Quot.sound]
+'FirstArrivalLap.rejected_iff_shorter' depends on axioms: [propext, Quot.sound]
+'FirstArrivalLap.no_earlier_below_lap' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.polynomialIdentity' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.stencilMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WidthThree.forcedDivisibility' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.noBirthAtOne' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.birthAtTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WidthThree.firstTwoState' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.afterFirstTwo' depends on axioms: [propext, Quot.sound]
+'Collatz.WidthThree.longReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.WidthThree.forcedSecondTwoExcludes' depends on axioms: [propext, Classical.choice, Quot.sound]

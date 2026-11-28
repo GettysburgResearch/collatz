@@ -1,0 +1,6 @@
+'SeedSpread.block_pairs' does not depend on any axioms
+'SeedSpread.no_wrap' depends on axioms: [propext, Quot.sound]
+'SeedSpread.selected_words' does not depend on any axioms
+'SeedSpread.rows_first_half' does not depend on any axioms
+'SeedSpread.row_at' depends on axioms: [propext, Quot.sound]
+'SeedSpread.next_even_terminal_fails' depends on axioms: [propext, Quot.sound]

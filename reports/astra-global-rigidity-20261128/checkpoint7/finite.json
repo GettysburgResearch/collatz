@@ -1,0 +1,561 @@
+{
+  "schema": "collatz-global-finite/v1",
+  "success": true,
+  "started_utc": "2026-11-28T02:38:37.868867+00:00",
+  "scope": "Bounded controls only, including labeled empirical floating diagnostics; no infinite theorem or Collatz proof.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checkers": [
+    {
+      "path": "cycles/check_height_entropy.py",
+      "sha256": "b3baae13d44c41998bc0c7d27962da587fc33f86153408e981f6be5f3e37b93c",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"cycles\": 314, \"entropy_rows\": 8728, \"hamming_rows\": 139056, \"selections_with_outside_collisions\": 3037}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"cycles\": 314, \"entropy_rows\": 8728, \"hamming_rows\": 139056, \"selections_with_outside_collisions\": 3037}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_width_entropy.py",
+      "sha256": "589c0271cfa74115d392ac3830277a7cfa8b930a604fa299a514b4f33d9e9ae4",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"circular_grade_arrays\": 3977, \"circular_models\": 29, \"distinct_rational_roots_summed_over_models\": 3972, \"exact_phase_cells_and_endpoints\": 770, \"finite_words_summed_over_bands_and_lengths\": 1543}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"circular_grade_arrays\": 3977, \"circular_models\": 29, \"distinct_rational_roots_summed_over_models\": 3972, \"exact_phase_cells_and_endpoints\": 770, \"finite_words_summed_over_bands_and_lengths\": 1543}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_four_copy_width.py",
+      "sha256": "5e95b45be945b33281cb9f941ff4281c74ecf85a767e1df0ce8d9887d3be9d68",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"admissible_grade_arrays\": 3901, \"finite_energy_models\": 336, \"integer_four_collisions\": 1712421, \"rational_source_decompositions\": 12432, \"six_copy_integral_trace\": [0, 1, 1, 1, 0]}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"admissible_grade_arrays\": 3901, \"finite_energy_models\": 336, \"integer_four_collisions\": 1712421, \"rational_source_decompositions\": 12432, \"six_copy_integral_trace\": [0, 1, 1, 1, 0]}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_mesoscopic_complexity.py",
+      "sha256": "5e7813a03238c05989d9fdfd1e7c0309d3edc37633ae4f18240f3162aa69035d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"complete_k_words_at_low_dates\": 248734, \"finite_path_scale_windows\": 15974, \"low_dates\": 405972, \"truncated_high_components\": 2896, \"with_high_crossings\": 6910, \"with_separate_high_excursions\": 566}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"complete_k_words_at_low_dates\": 248734, \"finite_path_scale_windows\": 15974, \"low_dates\": 405972, \"truncated_high_components\": 2896, \"with_high_crossings\": 6910, \"with_separate_high_excursions\": 566}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_sharp_periodic_removals.py",
+      "sha256": "3d56d999212ec3b4979305d15205203689720f407d8ca7353ba7094cbbd1f0c0",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"adaptive_inputs\": 11999, \"adaptive_switches\": 680, \"changed_choices_on_wren_negative_cycle\": 2, \"protected_true_steps\": 25707, \"residue_levels\": [[1, 1, 1], [2, 1, 1], [3, 2, 1], [4, 3, 1], [5, 4, 1], [6, 8, 3], [7, 13, 3], [8, 19, 4], [9, 38, 10], [10, 64, 12], [11, 128, 30], [12, 226, 43], [13, 367, 55], [14, 734, 143]], \"strict_ballot_coefficients\": 128}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"adaptive_inputs\": 11999, \"adaptive_switches\": 680, \"changed_choices_on_wren_negative_cycle\": 2, \"protected_true_steps\": 25707, \"residue_levels\": [[1, 1, 1], [2, 1, 1], [3, 2, 1], [4, 3, 1], [5, 4, 1], [6, 8, 3], [7, 13, 3], [8, 19, 4], [9, 38, 10], [10, 64, 12], [11, 128, 30], [12, 226, 43], [13, 367, 55], [14, 734, 143]], \"strict_ballot_coefficients\": 128}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_periodic_removal_patch.py",
+      "sha256": "5420f1ece7614d2bc925a25d55030b835c5f122f77e815f8595f306593607a1d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"base_horizon_maximum_ups_cutoff\": [16, 10, 6626], \"checked_shadow_dates\": 23184, \"exact_periodic_convergence_rows\": [[8, 7, 4, 44], [9, 7, 4, 44], [10, 8, 5, 486], [11, 8, 5, 486], [12, 8, 5, 486]], \"large_modulus_bits\": 1113, \"missed_intended_switches\": 1326, \"no_descent_starts\": [3, 7, 27], \"optional_graph_size\": 19, \"uniform_optional_shadow_length\": 1104}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"base_horizon_maximum_ups_cutoff\": [16, 10, 6626], \"checked_shadow_dates\": 23184, \"exact_periodic_convergence_rows\": [[8, 7, 4, 44], [9, 7, 4, 44], [10, 8, 5, 486], [11, 8, 5, 486], [12, 8, 5, 486]], \"large_modulus_bits\": 1113, \"missed_intended_switches\": 1326, \"no_descent_starts\": [3, 7, 27], \"optional_graph_size\": 19, \"uniform_optional_shadow_length\": 1104}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_updown_counterexample.py",
+      "sha256": "e942f34ed568c35b46f50f0747efe98b5f7c109747269d9c614b2b80e35032e6",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "6471 distinct states verify a ratio larger than six\n298 distinct positive states; 187 up edges; 4 -> 4; maximum 998; 2^298 > 3^188\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "6471 distinct states verify a ratio larger than six\n298 distinct positive states; 187 up edges; 4 -> 4; maximum 998; 2^298 > 3^188\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_infinite_cycles_and_ray.py",
+      "sha256": "ac8d371a259a18e7dfd157c12db7cb155437f17768d1c04f1fc1906389503e5a",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "64 affine residue certificates and three disjoint cycle/ray stages checked\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "64 affine residue certificates and three disjoint cycle/ray stages checked\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_complete_modulus_trace.py",
+      "sha256": "ce049a536b64c97cec5fc9b2dd0ff56c21ce4a3731d2e2b067cf3bca05f0781f",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "all exact traces, square covers, resonant word counts, and competing clocks agree\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "all exact traces, square covers, resonant word counts, and competing clocks agree\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_random_direction.py",
+      "sha256": "5363cbeda451422d5a20a718e21bd154a99b878c7e77637bb236edcd1fc0b383",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\"closed_cases\": 2085, \"coupling\": [{\"deadline\": 2, \"probability\": [5, 9], \"spatial_vertices\": 2, \"start\": 1}, {\"deadline\": 3, \"probability\": [19, 27], \"spatial_vertices\": 3, \"start\": 1}, {\"deadline\": 4, \"probability\": [65, 81], \"spatial_vertices\": 4, \"start\": 1}, {\"deadline\": 2, \"probability\": [5, 9], \"spatial_vertices\": 3, \"start\": 2}, {\"deadline\": 3, \"probability\": [19, 27], \"spatial_vertices\": 4, \"start\": 2}, {\"deadline\": 4, \"probability\": [19, 27], \"spatial_vertices\": 5, \"start\": 2}, {\"deadline\": 2, \"probability\": [4, 9], \"spatial_vertices\": 3, \"start\": 3}, {\"deadline\": 3, \"probability\": [5, 9], \"spatial_vertices\": 5, \"start\": 3}, {\"deadline\": 4, \"probability\": [5, 9], \"spatial_vertices\": 7, \"start\": 3}], \"coupling_at_p\": [2, 3], \"scope\": \"Exact finite identities and first-repeat probabilities only; no asymptotic probability theorem is inferred from this enumeration.\", \"success\": true, \"word_lengths\": [1, 9], \"word_residue_cases\": 349524, \"words\": 1022}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\"closed_cases\": 2085, \"coupling\": [{\"deadline\": 2, \"probability\": [5, 9], \"spatial_vertices\": 2, \"start\": 1}, {\"deadline\": 3, \"probability\": [19, 27], \"spatial_vertices\": 3, \"start\": 1}, {\"deadline\": 4, \"probability\": [65, 81], \"spatial_vertices\": 4, \"start\": 1}, {\"deadline\": 2, \"probability\": [5, 9], \"spatial_vertices\": 3, \"start\": 2}, {\"deadline\": 3, \"probability\": [19, 27], \"spatial_vertices\": 4, \"start\": 2}, {\"deadline\": 4, \"probability\": [19, 27], \"spatial_vertices\": 5, \"start\": 2}, {\"deadline\": 2, \"probability\": [4, 9], \"spatial_vertices\": 3, \"start\": 3}, {\"deadline\": 3, \"probability\": [5, 9], \"spatial_vertices\": 5, \"start\": 3}, {\"deadline\": 4, \"probability\": [5, 9], \"spatial_vertices\": 7, \"start\": 3}], \"coupling_at_p\": [2, 3], \"scope\": \"Exact finite identities and first-repeat probabilities only; no asymptotic probability theorem is inferred from this enumeration.\", \"success\": true, \"word_lengths\": [1, 9], \"word_residue_cases\": 349524, \"words\": 1022}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_primitive_clock_expressions.py",
+      "sha256": "ba59b7b1a077843ce4f134e177d86a7c9d86d9bd10c1924f24bb3f088a901a87",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "16 coprime nearcritical nested-power expressions verified\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "16 coprime nearcritical nested-power expressions verified\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_semimodule_denominator.py",
+      "sha256": "5970e28c31d4a76f9e47ae3c95d9ffbaa91b5b8840f91a48ac99f877331c14b2",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "3109 rooted words checked; 1 have an extra factor in chart zero alone\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "3109 rooted words checked; 1 have an extra factor in chart zero alone\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_sparse_full_modulus.py",
+      "sha256": "cced4f99561dd1376e385fc22424ba967e10ad6fd051a3a91afb5fd804ba14e3",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "signed swap configurations 22386\nk, length, base bits, edited bits, lcm bits 2 4550 776 2340 2340\nk, length, base bits, edited bits, lcm bits 3 6825 846 2405 2405\nk, length, base bits, edited bits, lcm bits 4 9100 906 2471 2471\nk, length, base bits, edited bits, lcm bits 5 25025 1367 5267 5267\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "signed swap configurations 22386\nk, length, base bits, edited bits, lcm bits 2 4550 776 2340 2340\nk, length, base bits, edited bits, lcm bits 3 6825 846 2405 2405\nk, length, base bits, edited bits, lcm bits 4 9100 906 2471 2471\nk, length, base bits, edited bits, lcm bits 5 25025 1367 5267 5267\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_guarded_holes.py",
+      "sha256": "a1639661c1c33f3eb606db1db352ee710368968468caba57e55ffdaffcb5271b",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"all_gate_subsets\": 16,\n  \"automatic_first_return_native_counts\": {\n    \"3\": 9698,\n    \"6\": 12142\n  },\n  \"automatic_holes_in_crop\": 21840,\n  \"binary_classifier_inputs\": 262143,\n  \"first_eight_scheduler_rows\": [\n    [\n      1,\n      1,\n      5,\n      12\n    ],\n    [\n      2,\n      2,\n      6,\n      27\n    ],\n    [\n      3,\n      1,\n      15,\n      710\n    ],\n    [\n      4,\n      3,\n      25,\n      92169\n    ],\n    [\n      5,\n      1,\n      42,\n      40360464\n    ],\n    [\n      6,\n      2,\n      60,\n      89472603353\n    ],\n    [\n      7,\n      1,\n      83,\n      669418597033307\n    ],\n    [\n      8,\n      4,\n      106,\n      19570166747166572978\n    ]\n  ],\n  \"largest_hole_bits\": 1025,\n  \"scheduler_rows\": 32,\n  \"scheduler_sha256\": \"86afbbc1c60d2c0364607c7fafe60354d3cc6b4b6ae499afe6d21a499a0b51bd\",\n  \"scope\": \"Exact finite scheduler, binary classifier and three-step arithmetic controls; no infinite chain-hitting claim is inferred from enumeration.\",\n  \"starts_per_gate_subset\": 65536,\n  \"success\": true,\n  \"three_step_branch_words\": [\n    \"DUU\",\n    \"UDU\",\n    \"UUD\",\n    \"UUU\"\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"all_gate_subsets\": 16,\n  \"automatic_first_return_native_counts\": {\n    \"3\": 9698,\n    \"6\": 12142\n  },\n  \"automatic_holes_in_crop\": 21840,\n  \"binary_classifier_inputs\": 262143,\n  \"first_eight_scheduler_rows\": [\n    [\n      1,\n      1,\n      5,\n      12\n    ],\n    [\n      2,\n      2,\n      6,\n      27\n    ],\n    [\n      3,\n      1,\n      15,\n      710\n    ],\n    [\n      4,\n      3,\n      25,\n      92169\n    ],\n    [\n      5,\n      1,\n      42,\n      40360464\n    ],\n    [\n      6,\n      2,\n      60,\n      89472603353\n    ],\n    [\n      7,\n      1,\n      83,\n      669418597033307\n    ],\n    [\n      8,\n      4,\n      106,\n      19570166747166572978\n    ]\n  ],\n  \"largest_hole_bits\": 1025,\n  \"scheduler_rows\": 32,\n  \"scheduler_sha256\": \"86afbbc1c60d2c0364607c7fafe60354d3cc6b4b6ae499afe6d21a499a0b51bd\",\n  \"scope\": \"Exact finite scheduler, binary classifier and three-step arithmetic controls; no infinite chain-hitting claim is inferred from enumeration.\",\n  \"starts_per_gate_subset\": 65536,\n  \"success\": true,\n  \"three_step_branch_words\": [\n    \"DUU\",\n    \"UDU\",\n    \"UUD\",\n    \"UUU\"\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "cycles/check_moving_full_modulus.py",
+      "sha256": "419a6d636cf2c324729c2c07c11088d30616049ae6c6719345317473a549d9d4",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "864 path gluings, 5008 window repairs, one exact short-cluster cancellation\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "864 path gluings, 5008 window repairs, one exact short-cluster cancellation\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mass/check_protected_prime_transport.py",
+      "sha256": "f877c11702899318047b8770494b49d73401588832587f14569e45b88ac63604",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "130 ordinary blocks and 12 mutually coprime constructions passed\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "130 ordinary blocks and 12 mutually coprime constructions passed\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mass/check_small_sibling_density.py",
+      "sha256": "14f7229de9c16ee2eefb45c0307688641c74ba591e7fa4ebf821f26dd1ee5031",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "Exact signed columns and bypass prefixes through depth 5; 280 ordinary climbs passed\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "Exact signed columns and bypass prefixes through depth 5; 280 ordinary climbs passed\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_independent_siblings.py",
+      "sha256": "98151da27beba6e95db20fe2525be4f250f875ef5db861af5c898fc733051737",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"carries\": {\n    \"nontrivial_gcds\": 2002,\n    \"windows\": 13312\n  },\n  \"real_relation\": {\n    \"last\": 1,\n    \"native_distance\": 7,\n    \"ratio_of_exponents\": 3,\n    \"source\": 13\n  },\n  \"terminating_branches\": [\n    {\n      \"f\": 9,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 8,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 27,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 26,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 45,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 44,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 27,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 25,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 81,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 79,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 135,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 133,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 81,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 79,\n      \"s\": 5,\n      \"siblings\": 3\n    },\n    {\n      \"f\": 243,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 241,\n      \"s\": 5,\n      \"siblings\": 3\n    },\n    {\n      \"f\": 243,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 240,\n      \"s\": 6,\n      \"siblings\": 4\n    },\n    {\n      \"f\": 729,\n      \"maximum_gcd_product_bits\": 3,\n      \"n_bits\": 726,\n      \"s\": 6,\n      \"siblings\": 4\n    },\n    {\n      \"f\": 729,\n      \"maximum_gcd_product_bits\": 3,\n      \"n_bits\": 725,\n      \"s\": 7,\n      \"siblings\": 5\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"carries\": {\n    \"nontrivial_gcds\": 2002,\n    \"windows\": 13312\n  },\n  \"real_relation\": {\n    \"last\": 1,\n    \"native_distance\": 7,\n    \"ratio_of_exponents\": 3,\n    \"source\": 13\n  },\n  \"terminating_branches\": [\n    {\n      \"f\": 9,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 8,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 27,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 26,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 45,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 44,\n      \"s\": 3,\n      \"siblings\": 1\n    },\n    {\n      \"f\": 27,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 25,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 81,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 79,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 135,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 133,\n      \"s\": 4,\n      \"siblings\": 2\n    },\n    {\n      \"f\": 81,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 79,\n      \"s\": 5,\n      \"siblings\": 3\n    },\n    {\n      \"f\": 243,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 241,\n      \"s\": 5,\n      \"siblings\": 3\n    },\n    {\n      \"f\": 243,\n      \"maximum_gcd_product_bits\": 1,\n      \"n_bits\": 240,\n      \"s\": 6,\n      \"siblings\": 4\n    },\n    {\n      \"f\": 729,\n      \"maximum_gcd_product_bits\": 3,\n      \"n_bits\": 726,\n      \"s\": 6,\n      \"siblings\": 4\n    },\n    {\n      \"f\": 729,\n      \"maximum_gcd_product_bits\": 3,\n      \"n_bits\": 725,\n      \"s\": 7,\n      \"siblings\": 5\n    }\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mass/check_critical_native.py",
+      "sha256": "2aec829578e365e7937831f2886bf9a83814d7eb3ee42342b64b805ff617a7c5",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "prefix=0 cap=4 labeled sources={'cycle': 3, 'exit': 1, 'unresolved': 1020}\nprefix=4 cap=10 labeled sources={'cycle': 27, 'exit': 11, 'unresolved': 986}\nprefix=12 cap=50 labeled sources={'cycle': 382, 'exit': 166, 'unresolved': 476}\nprefix=4796 cap=2 labeled sources={'cycle': 1024}\nX=256 diagnostic mean bounded score z=(-2,0,2)=(-0.09437, -0.086935, -0.086539)\nX=4096 diagnostic mean bounded score z=(-2,0,2)=(-0.003946, -0.007711, -0.014245)\nX=16384 diagnostic mean bounded score z=(-2,0,2)=(0.013106, 0.004337, -0.002979)\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "prefix=0 cap=4 labeled sources={'cycle': 3, 'exit': 1, 'unresolved': 1020}\nprefix=4 cap=10 labeled sources={'cycle': 27, 'exit': 11, 'unresolved': 986}\nprefix=12 cap=50 labeled sources={'cycle': 382, 'exit': 166, 'unresolved': 476}\nprefix=4796 cap=2 labeled sources={'cycle': 1024}\nX=256 diagnostic mean bounded score z=(-2,0,2)=(-0.09437, -0.086935, -0.086539)\nX=4096 diagnostic mean bounded score z=(-2,0,2)=(-0.003946, -0.007711, -0.014245)\nX=16384 diagnostic mean bounded score z=(-2,0,2)=(0.013106, 0.004337, -0.002979)\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_mersenne.py",
+      "sha256": "c88ca0f997caa247ccb76a7d2b4cc2e7eb109b5491890fa5636cfc6cc0550457",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"first_nineteen_first_hit_grades\": [\n    1,\n    1,\n    2,\n    2,\n    16,\n    16,\n    6,\n    6,\n    8,\n    8,\n    23,\n    23,\n    23,\n    23,\n    18,\n    18,\n    33,\n    33,\n    25\n  ],\n  \"positive_return_certificates\": [\n    {\n      \"prime_exponent\": 25759,\n      \"ternary_precision\": 3,\n      \"protected_postcrest\": 7,\n      \"lower_sources\": 4,\n      \"first_simultaneous_clock\": 24,\n      \"full_odd_count\": 25767\n    },\n    {\n      \"prime_exponent\": 7436287,\n      \"ternary_precision\": 5,\n      \"protected_postcrest\": 12,\n      \"lower_sources\": 8,\n      \"first_simultaneous_clock\": 103,\n      \"full_odd_count\": 7436328\n    },\n    {\n      \"prime_exponent\": 878845951,\n      \"ternary_precision\": 8,\n      \"protected_postcrest\": 14,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 422,\n      \"full_odd_count\": 878846153\n    },\n    {\n      \"prime_exponent\": 48768057343,\n      \"ternary_precision\": 10,\n      \"protected_postcrest\": 17,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 748,\n      \"full_odd_count\": 48768057709\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"first_nineteen_first_hit_grades\": [\n    1,\n    1,\n    2,\n    2,\n    16,\n    16,\n    6,\n    6,\n    8,\n    8,\n    23,\n    23,\n    23,\n    23,\n    18,\n    18,\n    33,\n    33,\n    25\n  ],\n  \"positive_return_certificates\": [\n    {\n      \"prime_exponent\": 25759,\n      \"ternary_precision\": 3,\n      \"protected_postcrest\": 7,\n      \"lower_sources\": 4,\n      \"first_simultaneous_clock\": 24,\n      \"full_odd_count\": 25767\n    },\n    {\n      \"prime_exponent\": 7436287,\n      \"ternary_precision\": 5,\n      \"protected_postcrest\": 12,\n      \"lower_sources\": 8,\n      \"first_simultaneous_clock\": 103,\n      \"full_odd_count\": 7436328\n    },\n    {\n      \"prime_exponent\": 878845951,\n      \"ternary_precision\": 8,\n      \"protected_postcrest\": 14,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 422,\n      \"full_odd_count\": 878846153\n    },\n    {\n      \"prime_exponent\": 48768057343,\n      \"ternary_precision\": 10,\n      \"protected_postcrest\": 17,\n      \"lower_sources\": 12,\n      \"first_simultaneous_clock\": 748,\n      \"full_odd_count\": 48768057709\n    }\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_direct_ancestors.py",
+      "sha256": "84ae451cc1ef63aac4f521036310da5cc778208e9433b88849f37ca607453b00",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"reference\": 27,\n    \"K\": 41,\n    \"reference_clock\": 70,\n    \"extra_odd_run\": 9,\n    \"input_prime_exponent\": 685977866821782195406220287,\n    \"prime_digits\": 27,\n    \"primality_base\": 2,\n    \"J\": 11,\n    \"odd_cost\": 50,\n    \"shortcut_cost\": 79,\n    \"residual_u_mod_3_to_m\": 6071,\n    \"minimum_proved\": true,\n    \"all_minimizers\": [\n      27\n    ],\n    \"checked_reference_cutoff\": 32\n  },\n  {\n    \"reference\": 156159,\n    \"K\": 141,\n    \"reference_clock\": 241,\n    \"extra_odd_run\": 30,\n    \"input_prime_exponent\": 1922907455821840273706387443029921972856266266204523817399735911449945003753984238362623,\n    \"prime_digits\": 88,\n    \"primality_base\": 2,\n    \"J\": 15,\n    \"odd_cost\": 171,\n    \"shortcut_cost\": 271,\n    \"residual_u_mod_3_to_m\": 116961110278555,\n    \"minimum_proved\": true,\n    \"all_minimizers\": [\n      156159\n    ],\n    \"checked_reference_cutoff\": 187988\n  },\n  {\n    \"reference\": 63728127,\n    \"K\": 357,\n    \"reference_clock\": 592,\n    \"extra_odd_run\": 45,\n    \"input_prime_exponent\": 950649762832521245991274269012877607271393242840065713661870504861713332692786041213186545645781109525513906800949598604639001044203344167963209142688281231718501822893631113872614952258588182937599,\n    \"prime_digits\": 198,\n    \"primality_base\": 2,\n    \"J\": 17,\n    \"odd_cost\": 402,\n    \"shortcut_cost\": 637,\n    \"residual_u_mod_3_to_m\": 2318843034866698951793,\n    \"minimum_proved\": false\n  }\n]\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"reference\": 27,\n    \"K\": 41,\n    \"reference_clock\": 70,\n    \"extra_odd_run\": 9,\n    \"input_prime_exponent\": 685977866821782195406220287,\n    \"prime_digits\": 27,\n    \"primality_base\": 2,\n    \"J\": 11,\n    \"odd_cost\": 50,\n    \"shortcut_cost\": 79,\n    \"residual_u_mod_3_to_m\": 6071,\n    \"minimum_proved\": true,\n    \"all_minimizers\": [\n      27\n    ],\n    \"checked_reference_cutoff\": 32\n  },\n  {\n    \"reference\": 156159,\n    \"K\": 141,\n    \"reference_clock\": 241,\n    \"extra_odd_run\": 30,\n    \"input_prime_exponent\": 1922907455821840273706387443029921972856266266204523817399735911449945003753984238362623,\n    \"prime_digits\": 88,\n    \"primality_base\": 2,\n    \"J\": 15,\n    \"odd_cost\": 171,\n    \"shortcut_cost\": 271,\n    \"residual_u_mod_3_to_m\": 116961110278555,\n    \"minimum_proved\": true,\n    \"all_minimizers\": [\n      156159\n    ],\n    \"checked_reference_cutoff\": 187988\n  },\n  {\n    \"reference\": 63728127,\n    \"K\": 357,\n    \"reference_clock\": 592,\n    \"extra_odd_run\": 45,\n    \"input_prime_exponent\": 950649762832521245991274269012877607271393242840065713661870504861713332692786041213186545645781109525513906800949598604639001044203344167963209142688281231718501822893631113872614952258588182937599,\n    \"prime_digits\": 198,\n    \"primality_base\": 2,\n    \"J\": 17,\n    \"odd_cost\": 402,\n    \"shortcut_cost\": 637,\n    \"residual_u_mod_3_to_m\": 2318843034866698951793,\n    \"minimum_proved\": false\n  }\n]\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_ascent.py",
+      "sha256": "ba6f9d5c723d736388e984cf6db8fd870568c8c615635e6798c0a4ed2b7d9b42",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"counts\": {\n    \"all_visits\": 8934,\n    \"even_lower\": 3306,\n    \"negative_postcrest_surplus\": 41,\n    \"nonmaximal_upper_ramp\": 4883,\n    \"ratio_with_nontrivial_reduced_numerator_and_denominator\": 8479,\n    \"upper_divisible_by_five\": 2808\n  },\n  \"deadline\": 128,\n  \"first_examples\": {\n    \"even_lower\": {\n      \"a\": 61,\n      \"b\": 55,\n      \"lower_clock\": 10,\n      \"n\": 0,\n      \"p\": 1,\n      \"postcrest_odds\": 7,\n      \"upper\": 121,\n      \"upper_clock\": 0,\n      \"x\": 54\n    },\n    \"negative_postcrest_surplus\": {\n      \"a\": 61,\n      \"b\": 1,\n      \"lower_clock\": 8,\n      \"n\": 6,\n      \"p\": 1,\n      \"postcrest_odds\": 0,\n      \"upper\": 121,\n      \"upper_clock\": 1,\n      \"x\": 63\n    },\n    \"nonmaximal_upper_ramp\": {\n      \"a\": 16,\n      \"b\": 7,\n      \"lower_clock\": 3,\n      \"n\": 2,\n      \"p\": 1,\n      \"postcrest_odds\": 0,\n      \"upper\": 31,\n      \"upper_clock\": 0,\n      \"x\": 27\n    },\n    \"ratio_with_nontrivial_reduced_numerator_and_denominator\": {\n      \"a\": 7,\n      \"b\": 5,\n      \"lower_clock\": 6,\n      \"n\": 1,\n      \"p\": 1,\n      \"postcrest_odds\": 3,\n      \"upper\": 13,\n      \"upper_clock\": 0,\n      \"x\": 9\n    },\n    \"upper_divisible_by_five\": {\n      \"a\": 160,\n      \"b\": 7,\n      \"lower_clock\": 33,\n      \"n\": 2,\n      \"p\": 1,\n      \"postcrest_odds\": 21,\n      \"upper\": 319,\n      \"upper_clock\": 0,\n      \"x\": 27\n    }\n  },\n  \"limit\": 1024\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"counts\": {\n    \"all_visits\": 8934,\n    \"even_lower\": 3306,\n    \"negative_postcrest_surplus\": 41,\n    \"nonmaximal_upper_ramp\": 4883,\n    \"ratio_with_nontrivial_reduced_numerator_and_denominator\": 8479,\n    \"upper_divisible_by_five\": 2808\n  },\n  \"deadline\": 128,\n  \"first_examples\": {\n    \"even_lower\": {\n      \"a\": 61,\n      \"b\": 55,\n      \"lower_clock\": 10,\n      \"n\": 0,\n      \"p\": 1,\n      \"postcrest_odds\": 7,\n      \"upper\": 121,\n      \"upper_clock\": 0,\n      \"x\": 54\n    },\n    \"negative_postcrest_surplus\": {\n      \"a\": 61,\n      \"b\": 1,\n      \"lower_clock\": 8,\n      \"n\": 6,\n      \"p\": 1,\n      \"postcrest_odds\": 0,\n      \"upper\": 121,\n      \"upper_clock\": 1,\n      \"x\": 63\n    },\n    \"nonmaximal_upper_ramp\": {\n      \"a\": 16,\n      \"b\": 7,\n      \"lower_clock\": 3,\n      \"n\": 2,\n      \"p\": 1,\n      \"postcrest_odds\": 0,\n      \"upper\": 31,\n      \"upper_clock\": 0,\n      \"x\": 27\n    },\n    \"ratio_with_nontrivial_reduced_numerator_and_denominator\": {\n      \"a\": 7,\n      \"b\": 5,\n      \"lower_clock\": 6,\n      \"n\": 1,\n      \"p\": 1,\n      \"postcrest_odds\": 3,\n      \"upper\": 13,\n      \"upper_clock\": 0,\n      \"x\": 9\n    },\n    \"upper_divisible_by_five\": {\n      \"a\": 160,\n      \"b\": 7,\n      \"lower_clock\": 33,\n      \"n\": 2,\n      \"p\": 1,\n      \"postcrest_odds\": 21,\n      \"upper\": 319,\n      \"upper_clock\": 0,\n      \"x\": 27\n    }\n  },\n  \"limit\": 1024\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_factor_certificates.py",
+      "sha256": "a9b88d0a9efca8d903167812de478402e8b97f832d9ffa3a835dc3dd91cdc1f6",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"product\": 85,\n    \"factors\": [\n      {\n        \"prime\": 5,\n        \"first_target\": 0,\n        \"first_one\": 4,\n        \"deadline\": 15\n      },\n      {\n        \"prime\": 17,\n        \"first_target\": 5,\n        \"first_one\": 9,\n        \"deadline\": 25\n      }\n    ],\n    \"factor_target\": 5,\n    \"product_target\": 85,\n    \"first_product_target\": 0,\n    \"product_first_one\": 8,\n    \"product_deadline\": 35\n  },\n  {\n    \"product\": 36489,\n    \"factors\": [\n      {\n        \"prime\": 3,\n        \"first_target\": 1,\n        \"first_one\": 5,\n        \"deadline\": 10\n      },\n      {\n        \"prime\": 12163,\n        \"first_target\": 40,\n        \"first_one\": 44,\n        \"deadline\": 70\n      }\n    ],\n    \"factor_target\": 5,\n    \"product_target\": 85,\n    \"first_product_target\": 88,\n    \"product_first_one\": 96,\n    \"product_deadline\": 80\n  },\n  {\n    \"product\": 45313,\n    \"factors\": [\n      {\n        \"prime\": 113,\n        \"first_target\": 2,\n        \"first_one\": 10,\n        \"deadline\": 35\n      },\n      {\n        \"prime\": 401,\n        \"first_target\": 7,\n        \"first_one\": 15,\n        \"deadline\": 45\n      }\n    ],\n    \"factor_target\": 85,\n    \"product_target\": 5,\n    \"first_product_target\": 56,\n    \"product_first_one\": 60,\n    \"product_deadline\": 80\n  }\n]\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"product\": 85,\n    \"factors\": [\n      {\n        \"prime\": 5,\n        \"first_target\": 0,\n        \"first_one\": 4,\n        \"deadline\": 15\n      },\n      {\n        \"prime\": 17,\n        \"first_target\": 5,\n        \"first_one\": 9,\n        \"deadline\": 25\n      }\n    ],\n    \"factor_target\": 5,\n    \"product_target\": 85,\n    \"first_product_target\": 0,\n    \"product_first_one\": 8,\n    \"product_deadline\": 35\n  },\n  {\n    \"product\": 36489,\n    \"factors\": [\n      {\n        \"prime\": 3,\n        \"first_target\": 1,\n        \"first_one\": 5,\n        \"deadline\": 10\n      },\n      {\n        \"prime\": 12163,\n        \"first_target\": 40,\n        \"first_one\": 44,\n        \"deadline\": 70\n      }\n    ],\n    \"factor_target\": 5,\n    \"product_target\": 85,\n    \"first_product_target\": 88,\n    \"product_first_one\": 96,\n    \"product_deadline\": 80\n  },\n  {\n    \"product\": 45313,\n    \"factors\": [\n      {\n        \"prime\": 113,\n        \"first_target\": 2,\n        \"first_one\": 10,\n        \"deadline\": 35\n      },\n      {\n        \"prime\": 401,\n        \"first_target\": 7,\n        \"first_one\": 15,\n        \"deadline\": 45\n      }\n    ],\n    \"factor_target\": 85,\n    \"product_target\": 5,\n    \"first_product_target\": 56,\n    \"product_first_one\": 60,\n    \"product_deadline\": 80\n  }\n]\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_semiprime_cancellation.py",
+      "sha256": "6e01e6108c3fc46320122f32626100ee62582be87d585a2a152a5ac3f7d4ea70",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"k\": 9,\n    \"prefix\": 553,\n    \"prefix_primes\": [\n      7,\n      79\n    ],\n    \"prefix_first_one\": 87,\n    \"prefix_deadline\": 50,\n    \"cofactor_rows\": [\n      {\n        \"target\": 5,\n        \"small_prime\": 71,\n        \"power_of_two\": 39,\n        \"coefficient\": 61944317087,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 34054248455900030304257,\n        \"cofactor\": 2417851640368902151602247,\n        \"product\": 1337071957124002889836042591,\n        \"first_target\": 305,\n        \"first_one\": 309,\n        \"deadline\": 455\n      },\n      {\n        \"target\": 85,\n        \"small_prime\": 71,\n        \"power_of_two\": 39,\n        \"coefficient\": 61944320231,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 34054250184332309168129,\n        \"cofactor\": 2417851763087593950937159,\n        \"product\": 1337072024987439454868248927,\n        \"first_target\": 285,\n        \"first_one\": 293,\n        \"deadline\": 455\n      }\n    ]\n  },\n  {\n    \"k\": 14,\n    \"prefix\": 16423,\n    \"prefix_primes\": [\n      11,\n      1493\n    ],\n    \"prefix_first_one\": 103,\n    \"prefix_deadline\": 75,\n    \"cofactor_rows\": [\n      {\n        \"target\": 5,\n        \"small_prime\": 179,\n        \"power_of_two\": 96,\n        \"coefficient\": 7081846928649326265344710785,\n        \"pocklington_witness\": 41,\n        \"large_prime\": 561081719364172582242305210966700782702395921092323573761,\n        \"cofactor\": 100433627766186892221372632763039440103728869875525919703219,\n        \"product\": 1649421468804087330951602747867396724823539229965762179285965637,\n        \"first_target\": 1013,\n        \"first_one\": 1017,\n        \"deadline\": 1055\n      },\n      {\n        \"target\": 85,\n        \"small_prime\": 179,\n        \"power_of_two\": 96,\n        \"coefficient\": 7081846928649326265344711437,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 561081719364172582242305262623462742002744032082979192833,\n        \"cofactor\": 100433627766186892221372642009599830818491181742853275517107,\n        \"product\": 1649421468804087330951602899723658021532080677762879343817448261,\n        \"first_target\": 836,\n        \"first_one\": 844,\n        \"deadline\": 1055\n      }\n    ]\n  }\n]\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"k\": 9,\n    \"prefix\": 553,\n    \"prefix_primes\": [\n      7,\n      79\n    ],\n    \"prefix_first_one\": 87,\n    \"prefix_deadline\": 50,\n    \"cofactor_rows\": [\n      {\n        \"target\": 5,\n        \"small_prime\": 71,\n        \"power_of_two\": 39,\n        \"coefficient\": 61944317087,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 34054248455900030304257,\n        \"cofactor\": 2417851640368902151602247,\n        \"product\": 1337071957124002889836042591,\n        \"first_target\": 305,\n        \"first_one\": 309,\n        \"deadline\": 455\n      },\n      {\n        \"target\": 85,\n        \"small_prime\": 71,\n        \"power_of_two\": 39,\n        \"coefficient\": 61944320231,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 34054250184332309168129,\n        \"cofactor\": 2417851763087593950937159,\n        \"product\": 1337072024987439454868248927,\n        \"first_target\": 285,\n        \"first_one\": 293,\n        \"deadline\": 455\n      }\n    ]\n  },\n  {\n    \"k\": 14,\n    \"prefix\": 16423,\n    \"prefix_primes\": [\n      11,\n      1493\n    ],\n    \"prefix_first_one\": 103,\n    \"prefix_deadline\": 75,\n    \"cofactor_rows\": [\n      {\n        \"target\": 5,\n        \"small_prime\": 179,\n        \"power_of_two\": 96,\n        \"coefficient\": 7081846928649326265344710785,\n        \"pocklington_witness\": 41,\n        \"large_prime\": 561081719364172582242305210966700782702395921092323573761,\n        \"cofactor\": 100433627766186892221372632763039440103728869875525919703219,\n        \"product\": 1649421468804087330951602747867396724823539229965762179285965637,\n        \"first_target\": 1013,\n        \"first_one\": 1017,\n        \"deadline\": 1055\n      },\n      {\n        \"target\": 85,\n        \"small_prime\": 179,\n        \"power_of_two\": 96,\n        \"coefficient\": 7081846928649326265344711437,\n        \"pocklington_witness\": 3,\n        \"large_prime\": 561081719364172582242305262623462742002744032082979192833,\n        \"cofactor\": 100433627766186892221372642009599830818491181742853275517107,\n        \"product\": 1649421468804087330951602899723658021532080677762879343817448261,\n        \"first_target\": 836,\n        \"first_one\": 844,\n        \"deadline\": 1055\n      }\n    ]\n  }\n]\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_prime_midpoint.py",
+      "sha256": "a643ca12cd9bf7ecca99fc5826a7129d938ce49979d31cb2efdc016da728d370",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"H\": 56,\n  \"J\": 2,\n  \"K\": 1,\n  \"extra_power_of_five\": 200,\n  \"rows\": [\n    {\n      \"input_source\": 27,\n      \"target\": 41,\n      \"indices\": [\n        94109,\n        108314,\n        122519\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 541,\n          \"target\": 5,\n          \"first_target\": 2659,\n          \"first_one\": 2663,\n          \"five_bit_deadline\": 2705\n        },\n        {\n          \"primality_witness\": 3,\n          \"bits\": 541,\n          \"target\": 41,\n          \"first_target\": 2786,\n          \"first_one\": 2855,\n          \"five_bit_deadline\": 2705\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 541,\n          \"target\": 85,\n          \"first_target\": 2671,\n          \"first_one\": 2679,\n          \"five_bit_deadline\": 2705\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": false\n    },\n    {\n      \"input_source\": 61,\n      \"target\": 61,\n      \"indices\": [\n        239087,\n        242264,\n        245441\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 5,\n          \"first_target\": 2662,\n          \"first_one\": 2666,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 61,\n          \"first_target\": 2812,\n          \"first_one\": 2826,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 85,\n          \"first_target\": 2588,\n          \"first_one\": 2596,\n          \"five_bit_deadline\": 2710\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": false\n    },\n    {\n      \"input_source\": 7,\n      \"target\": 7,\n      \"indices\": [\n        235917,\n        242602,\n        249287\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 5,\n          \"first_target\": 2581,\n          \"first_one\": 2585,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 3,\n          \"bits\": 542,\n          \"target\": 7,\n          \"first_target\": 2636,\n          \"first_one\": 2647,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 85,\n          \"first_target\": 2485,\n          \"first_one\": 2493,\n          \"five_bit_deadline\": 2710\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"H\": 56,\n  \"J\": 2,\n  \"K\": 1,\n  \"extra_power_of_five\": 200,\n  \"rows\": [\n    {\n      \"input_source\": 27,\n      \"target\": 41,\n      \"indices\": [\n        94109,\n        108314,\n        122519\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 541,\n          \"target\": 5,\n          \"first_target\": 2659,\n          \"first_one\": 2663,\n          \"five_bit_deadline\": 2705\n        },\n        {\n          \"primality_witness\": 3,\n          \"bits\": 541,\n          \"target\": 41,\n          \"first_target\": 2786,\n          \"first_one\": 2855,\n          \"five_bit_deadline\": 2705\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 541,\n          \"target\": 85,\n          \"first_target\": 2671,\n          \"first_one\": 2679,\n          \"five_bit_deadline\": 2705\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": false\n    },\n    {\n      \"input_source\": 61,\n      \"target\": 61,\n      \"indices\": [\n        239087,\n        242264,\n        245441\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 5,\n          \"first_target\": 2662,\n          \"first_one\": 2666,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 61,\n          \"first_target\": 2812,\n          \"first_one\": 2826,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 85,\n          \"first_target\": 2588,\n          \"first_one\": 2596,\n          \"five_bit_deadline\": 2710\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": false\n    },\n    {\n      \"input_source\": 7,\n      \"target\": 7,\n      \"indices\": [\n        235917,\n        242602,\n        249287\n      ],\n      \"checks\": [\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 5,\n          \"first_target\": 2581,\n          \"first_one\": 2585,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 3,\n          \"bits\": 542,\n          \"target\": 7,\n          \"first_target\": 2636,\n          \"first_one\": 2647,\n          \"five_bit_deadline\": 2710\n        },\n        {\n          \"primality_witness\": 2,\n          \"bits\": 542,\n          \"target\": 85,\n          \"first_target\": 2485,\n          \"first_one\": 2493,\n          \"five_bit_deadline\": 2710\n        }\n      ],\n      \"independent_no_meeting_through\": 270,\n      \"midpoint_fast\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_ramp_ancestors.py",
+      "sha256": "5d03e74cb79d0aff3aa05493070a506df11ee21bec85ff8cbe3172e2b92fc76b",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"K\": 41,\n    \"extra_budget\": 8,\n    \"small_odd_upper\": 50,\n    \"maximum_inverse_evens\": 28,\n    \"slow_supplied_odds\": 0,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 41,\n    \"extra_budget\": 9,\n    \"small_odd_upper\": 75,\n    \"maximum_inverse_evens\": 29,\n    \"slow_supplied_odds\": 1,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 141,\n    \"extra_budget\": 29,\n    \"small_odd_upper\": 255667,\n    \"maximum_inverse_evens\": 99,\n    \"slow_supplied_odds\": 2,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 141,\n    \"extra_budget\": 30,\n    \"small_odd_upper\": 383501,\n    \"maximum_inverse_evens\": 100,\n    \"slow_supplied_odds\": 12,\n    \"virtual_boundary_candidates\": [\n      [\n        216367,\n        242,\n        0,\n        2\n      ],\n      [\n        277615,\n        242,\n        1,\n        8\n      ],\n      [\n        288489,\n        242,\n        1,\n        8\n      ],\n      [\n        288615,\n        242,\n        1,\n        8\n      ],\n      [\n        345947,\n        242,\n        5,\n        719\n      ]\n    ]\n  }\n]\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "[\n  {\n    \"K\": 41,\n    \"extra_budget\": 8,\n    \"small_odd_upper\": 50,\n    \"maximum_inverse_evens\": 28,\n    \"slow_supplied_odds\": 0,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 41,\n    \"extra_budget\": 9,\n    \"small_odd_upper\": 75,\n    \"maximum_inverse_evens\": 29,\n    \"slow_supplied_odds\": 1,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 141,\n    \"extra_budget\": 29,\n    \"small_odd_upper\": 255667,\n    \"maximum_inverse_evens\": 99,\n    \"slow_supplied_odds\": 2,\n    \"virtual_boundary_candidates\": []\n  },\n  {\n    \"K\": 141,\n    \"extra_budget\": 30,\n    \"small_odd_upper\": 383501,\n    \"maximum_inverse_evens\": 100,\n    \"slow_supplied_odds\": 12,\n    \"virtual_boundary_candidates\": [\n      [\n        216367,\n        242,\n        0,\n        2\n      ],\n      [\n        277615,\n        242,\n        1,\n        8\n      ],\n      [\n        288489,\n        242,\n        1,\n        8\n      ],\n      [\n        288615,\n        242,\n        1,\n        8\n      ],\n      [\n        345947,\n        242,\n        5,\n        719\n      ]\n    ]\n  }\n]\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_adjacent_cores.py",
+      "sha256": "40c226698e2f74d04e14e899482599804ccd17865ada605700c68f35cdde114b",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"core_limit\": 1000,\n  \"global_exponent_limit\": 10000000000000000000000000000000000000000,\n  \"first_bits\": 200,\n  \"second_bits\": 300,\n  \"reduced_bases\": 333,\n  \"first_solvable_classes\": 166,\n  \"first_minimum_positive_exponent\": 1913929083992519399788387058367936934097934560655273226398,\n  \"second_solvable_classes\": 33036,\n  \"second_minimum_positive_exponent\": 33606232515882102960245582197982188956962591848146435144119896018907535386819666748898,\n  \"finite_exponents_checked\": 510,\n  \"transition_rows\": 1094,\n  \"rows_by_A\": {\n    \"1\": 333,\n    \"2\": 282,\n    \"3\": 212,\n    \"4\": 130,\n    \"5\": 70,\n    \"6\": 36,\n    \"7\": 17,\n    \"8\": 10,\n    \"9\": 3,\n    \"12\": 1\n  },\n  \"core_one_to_core_one_exponents\": [\n    1,\n    2,\n    4\n  ],\n  \"physical_odd_starts\": 2857,\n  \"largest_start_with_A_and_beta\": [\n    9382229,\n    9,\n    715\n  ],\n  \"largest_next_odd\": 362495,\n  \"max_certified_shortcut_length_via_next_odd\": 163,\n  \"sorted_transition_rows_sha256\": \"e49eb9b4247fa9eb3634e1c14f3429d1c40edddee0c58aa63ee6b7db6cdc5865\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"core_limit\": 1000,\n  \"global_exponent_limit\": 10000000000000000000000000000000000000000,\n  \"first_bits\": 200,\n  \"second_bits\": 300,\n  \"reduced_bases\": 333,\n  \"first_solvable_classes\": 166,\n  \"first_minimum_positive_exponent\": 1913929083992519399788387058367936934097934560655273226398,\n  \"second_solvable_classes\": 33036,\n  \"second_minimum_positive_exponent\": 33606232515882102960245582197982188956962591848146435144119896018907535386819666748898,\n  \"finite_exponents_checked\": 510,\n  \"transition_rows\": 1094,\n  \"rows_by_A\": {\n    \"1\": 333,\n    \"2\": 282,\n    \"3\": 212,\n    \"4\": 130,\n    \"5\": 70,\n    \"6\": 36,\n    \"7\": 17,\n    \"8\": 10,\n    \"9\": 3,\n    \"12\": 1\n  },\n  \"core_one_to_core_one_exponents\": [\n    1,\n    2,\n    4\n  ],\n  \"physical_odd_starts\": 2857,\n  \"largest_start_with_A_and_beta\": [\n    9382229,\n    9,\n    715\n  ],\n  \"largest_next_odd\": 362495,\n  \"max_certified_shortcut_length_via_next_odd\": 163,\n  \"sorted_transition_rows_sha256\": \"e49eb9b4247fa9eb3634e1c14f3429d1c40edddee0c58aa63ee6b7db6cdc5865\"\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_reduced_core_transport.py",
+      "sha256": "756e88aa0031dc56258e8356a764858c6ee8313cf9fd7e8829c55d3231c97364",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"denominator_only_parameters\": [\n    0,\n    1,\n    7,\n    31,\n    127\n  ],\n  \"largest_tested_start\": 131071,\n  \"odd_starts_per_pool\": 65536,\n  \"pools_by_largest_prime\": {\n    \"19\": {\n      \"both\": 58236,\n      \"common_above_one\": 75,\n      \"denominator\": 4448,\n      \"neither\": 273,\n      \"numerator\": 2579\n    },\n    \"3\": {\n      \"both\": 64987,\n      \"common_above_one\": 2300,\n      \"denominator\": 452,\n      \"neither\": 7,\n      \"numerator\": 90\n    },\n    \"7\": {\n      \"both\": 63532,\n      \"common_above_one\": 96,\n      \"denominator\": 1381,\n      \"neither\": 41,\n      \"numerator\": 582\n    }\n  },\n  \"telescoping_paths\": [\n    [\n      27,\n      18,\n      1\n    ],\n    [\n      97,\n      20,\n      1\n    ],\n    [\n      871,\n      28,\n      1\n    ],\n    [\n      6171,\n      43,\n      1\n    ],\n    [\n      170141183460469231731687303715884105727,\n      227,\n      1\n    ]\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"denominator_only_parameters\": [\n    0,\n    1,\n    7,\n    31,\n    127\n  ],\n  \"largest_tested_start\": 131071,\n  \"odd_starts_per_pool\": 65536,\n  \"pools_by_largest_prime\": {\n    \"19\": {\n      \"both\": 58236,\n      \"common_above_one\": 75,\n      \"denominator\": 4448,\n      \"neither\": 273,\n      \"numerator\": 2579\n    },\n    \"3\": {\n      \"both\": 64987,\n      \"common_above_one\": 2300,\n      \"denominator\": 452,\n      \"neither\": 7,\n      \"numerator\": 90\n    },\n    \"7\": {\n      \"both\": 63532,\n      \"common_above_one\": 96,\n      \"denominator\": 1381,\n      \"neither\": 41,\n      \"numerator\": 582\n    }\n  },\n  \"telescoping_paths\": [\n    [\n      27,\n      18,\n      1\n    ],\n    [\n      97,\n      20,\n      1\n    ],\n    [\n      871,\n      28,\n      1\n    ],\n    [\n      6171,\n      43,\n      1\n    ],\n    [\n      170141183460469231731687303715884105727,\n      227,\n      1\n    ]\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "mersenne/check_core_retention.py",
+      "sha256": "e35aad4135408ebfe22b05f5df44ba63d2bacaa83d8ca13b15857e5cad791c9d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"odd_starts_per_pool\": 65536,\n  \"pools\": [\n    [\n      2,\n      3\n    ],\n    [\n      2,\n      3,\n      5,\n      7\n    ],\n    [\n      2,\n      3,\n      5,\n      7,\n      11,\n      13,\n      17,\n      19\n    ]\n  ],\n  \"retention_family_exponent_and_bit_lengths\": [\n    [\n      2,\n      5,\n      3,\n      1\n    ],\n    [\n      8,\n      17,\n      16,\n      7\n    ],\n    [\n      44,\n      89,\n      88,\n      43\n    ],\n    [\n      188,\n      377,\n      376,\n      187\n    ],\n    [\n      764,\n      1529,\n      1528,\n      763\n    ]\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"odd_starts_per_pool\": 65536,\n  \"pools\": [\n    [\n      2,\n      3\n    ],\n    [\n      2,\n      3,\n      5,\n      7\n    ],\n    [\n      2,\n      3,\n      5,\n      7,\n      11,\n      13,\n      17,\n      19\n    ]\n  ],\n  \"retention_family_exponent_and_bit_lengths\": [\n    [\n      2,\n      5,\n      3,\n      1\n    ],\n    [\n      8,\n      17,\n      16,\n      7\n    ],\n    [\n      44,\n      89,\n      88,\n      43\n    ],\n    [\n      188,\n      377,\n      376,\n      187\n    ],\n    [\n      764,\n      1529,\n      1528,\n      763\n    ]\n  ]\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-28T02:39:16.840252+00:00"
+}

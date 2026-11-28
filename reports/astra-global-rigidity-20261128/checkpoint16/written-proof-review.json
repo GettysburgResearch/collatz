@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-written-review/v1",
+  "checkpoint": 16,
+  "reviewed_utc": "2026-11-28T06:24:18Z",
+  "reviewer": "root, with separate independently authored reviews for the two-face, grid-pressure and gate-deadline papers",
+  "status": "All listed written arguments reconstructed; source qualifications and open hypotheses retained",
+  "review_depth": "Full proofs read and independently reconstructed; primary-source boundaries recorded in EXTERNAL_REFRESH.md. Internal review is not external peer review or complete Lean formalization.",
+  "files": {
+    "cycles/GRID_PERIOD_PRESSURE.md": "f10e73d9c1b79605faf66196762e8f59386954afc8a0b2ab322b80061b0e0854",
+    "cycles/TWO_SIDED_PRODUCT_FACES.md": "7f52a8e5696f408f9e8c7de0084f342baaab66c1369a117d81ec325273825740",
+    "mass/NATIVE_GATE_ESCAPE_DEADLINE.md": "8da0db608483c83b702f6471569ffe96ad8a4c97901f82ffe6064b1b2e31c3e4",
+    "mass/FIXED_RAY_ENTROPY_ENVELOPE.md": "13b7ba51eb4c580c939ff3248e5f2bf5ee6dec05dce603a6ed60e5a8fda761a5",
+    "mass/LOCAL_PARITY_BUDGET_OBSTRUCTION.md": "c3562cd6b22caa9fb1b300e855ced8f360d7cdebd816948a2ef1c010ce7e69ca",
+    "mass/TILTED_REPRESENTATIVE_STOPPING_PRESSURE.md": "924a5f98769154077db5240018bea7bb593a7018e4dc8bb07e4ff1661c598dc2",
+    "mass/NativeCycleGrade.lean": "c244e0f36092a7bb9c7247ff4d89cac69c777f34d353aebdd1a0359d521c6a2d",
+    "mass/UnitInverseFork.lean": "bf1e9facfeef2ccc01770e995eb74db1afca7700f1174736a59ca1d6d53364ca",
+    "cycles/check_grid_period_pressure.py": "503fc014e01d69b20e1940eac864ebf863e18521e7213a47db1dec1831688883",
+    "cycles/check_two_sided_product_faces.py": "ef1a160c03104982162cd0b66e66fc4caa506a8b8a019cc040c88c369ac7f9da",
+    "mass/check_inverse_population.py": "8f5a18322eab459ca90e8e6246fd4e9571ee1e9d414f9c0ad104879f5ff0c44c",
+    "mass/check_tilted_stopping_caps.py": "e83cdf68c9bffb343800f25074b95a155a05132a141c90167d34b67f6fe984db"
+  },
+  "independent_reviews": {
+    "gate-deadline-independent-review.md": "1f8bbd19601cc15bacd89a4ccd4861939bd8165fc04557bb98d55d3082f47099",
+    "grid-pressure-independent-review.md": "617b1cf47b07c3113d6f3e55d8daad458435ed11c57d85ec7ecb915108bf862e",
+    "product-faces-independent-review.md": "ea1c9ecc36a48e8d81ca3073570899bd15697b55b922bfa62e5038150097bb9a"
+  },
+  "lean": {
+    "modules": 32,
+    "public_roots": 175,
+    "success": true
+  },
+  "finite": {
+    "paired_controls": 58,
+    "success": true
+  },
+  "remaining": [
+    "Arbitrary denominator-one cycles",
+    "The two slow Newton faces in unrestricted all-order product rigidity",
+    "Vanishing upper bound for the finite true-gate escape deadline",
+    "The raw tilted representative exponential bound and optimal inverse-cost equality"
+  ]
+}

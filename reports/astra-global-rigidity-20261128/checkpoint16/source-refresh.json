@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-source-refresh/v1",
+  "captured_utc": "2026-11-28T06:19:34Z",
+  "scope": "Read-only PR metadata and opening reports; targeted primary-source and full-note reads are separately recorded in EXTERNAL_REFRESH.md",
+  "pull_requests": [
+    {
+      "number": 211,
+      "head": "4b44cded44af5bb7c3ce67fb16a70c898ad505d5",
+      "updated": "2026-11-27T18:12:18Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/211",
+      "title": "Research: full denominator census, complete merger laws and source variance",
+      "body_named_head": null
+    },
+    {
+      "number": 212,
+      "head": "36c64bdf5d3e7f13a0bd949a01c3a9d6371681ed",
+      "updated": "2026-11-28T05:51:00Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/212",
+      "title": "Collatz: independent clocks, position certificates and inverse-cost spectrum",
+      "body_named_head": null
+    },
+    {
+      "number": 214,
+      "head": "28f28d4985b397e7fae773502c4609a317205fc8",
+      "updated": "2026-11-28T06:17:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/214",
+      "title": "Research: formal clocks, open residence and ordinary meeting criteria",
+      "body_named_head": null
+    },
+    {
+      "number": 215,
+      "head": "4f33ecc2de6f0ccf605a68c28da5abea0348e47b",
+      "updated": "2026-11-28T05:38:57Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/215",
+      "title": "Nine-hour frontier pass: critical ordinary parity, complete returns, and mixed congruence ancestors",
+      "body_named_head": "5845a208956bce43b80cf6b4adbadb849d35c15d"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "collatz-research-proof-review/v1",
+  "checkpoint": 11,
+  "reviewed_utc": "2026-11-28T04:36:31.048145+00:00",
+  "reviewer": "root; independent reconstruction of agent deductions and named primary input statements",
+  "scope": "Written proof review, not external peer review or complete Lean formalization. All-sublap crossing explicitly credited to Weaver114. Source-qualified full-measure and finite-source inputs retained.",
+  "claims": [
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/REGULAR_PARITY_HORIZON.md",
+      "sha256": "2334fb152fdfdad6c2d23e47940f8228129f59bcc7c45c1a7cd0a6e3f786d10f"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/EVERY_SUBLAP.md",
+      "sha256": "ac146590defc4f66fac03b93396705ee0ba7cb60bdbcc32d5fe8d48eedfd4ddb"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/SUBLAP_RESIDUES.md",
+      "sha256": "54e2650ebf27d881f9c5d8bccba0e8716bdeefa03b3062a9dbe614bd5a4ed954"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/UPPER_SUBCLOCKS.md",
+      "sha256": "233f96c92e623e9fb1ba0e9eafbac136303cc57dd64e99ce7d8093ea3cc675f6"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/LIFETIME_LOWER_DEFICIT.md",
+      "sha256": "420bdf40498cd7ddd0da17588d20ceaf94e155cb840b0e0a47dc62956dc87a36"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/FINITE_CONVOLUTION_SMOOTHING.md",
+      "sha256": "4127ad8e400e483b24ce5f2a9011d8ad3a87cfad54c2105b9e60438c70f7a360"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/ROW_RESOLVED_MARK_SMOOTHING.md",
+      "sha256": "5b75be0d4721b205f28054b24bbdc46dd827fae2ce4c182edd4a8100d4d0a98d"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/RAW_AND_CORRECTED_PRODUCT_COLLISIONS.md",
+      "sha256": "a7262e72f7ffa81b8ee3a772ebb0299dcbab9730d7fe11eb8f3192fc538d4bd2"
+    }
+  ],
+  "lean": {
+    "success": true,
+    "public_roots": 134,
+    "modules": 22
+  },
+  "finite": {
+    "success": true,
+    "controls": 43,
+    "modes": [
+      "normal",
+      "optimized"
+    ]
+  },
+  "remaining_global_obstructions": [
+    "denominator-one complete cycle exceptions",
+    "native upper parity tail at the critical clock",
+    "ordinary escape-energy upper endpoint",
+    "correlated small-ball or near-product control"
+  ]
+}

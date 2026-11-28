@@ -1,0 +1,62 @@
+{
+  "complete_finite_list_of_locks": [
+    [
+      1,
+      "2"
+    ],
+    [
+      9,
+      "8/5"
+    ],
+    [
+      11,
+      "8/5"
+    ]
+  ],
+  "direct_orbit_interval_checks": 3968,
+  "genuine_integer_controls": [
+    {
+      "maximum": 1,
+      "minimum": 1,
+      "sign": 1,
+      "slope": "2",
+      "tested_cells_and_endpoints": 8
+    },
+    {
+      "maximum": 7,
+      "minimum": 5,
+      "sign": -1,
+      "slope": "3/2",
+      "tested_cells_and_endpoints": 16
+    }
+  ],
+  "genuine_nonintegral_controls": [
+    {
+      "h": 8,
+      "lower": "27/17",
+      "ordinary_scale": 23,
+      "p": 5,
+      "q_bits": 4,
+      "upper": "43/27"
+    },
+    {
+      "h": 65,
+      "lower": "233/147",
+      "ordinary_scale": 867,
+      "p": 41,
+      "q_bits": 59,
+      "upper": "214/135"
+    },
+    {
+      "h": 485,
+      "lower": "4132/2607",
+      "ordinary_scale": 72057,
+      "p": 306,
+      "q_bits": 476,
+      "upper": "2509/1583"
+    }
+  ],
+  "integer_period_five_words_excluded": 35,
+  "odd_scales_checked": 50000,
+  "paired_independent_algorithms": 201
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "collatz-targeted-intake/v1",
+  "recorded_utc": "2026-11-28",
+  "scope": "Targeted refresh after initial 149-head intake; does not replace initial inventory.",
+  "pull_requests": [
+    {
+      "number": 212,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/212",
+      "title": "Collatz: global traces, unrestricted cycles, and Lean-checked arithmetic criteria",
+      "head": "31311116eac06e87320c84e11de6c105292a6f78",
+      "branch": "research/astra-infinite-descent-20261127",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-27T23:55:03Z",
+      "read_scope": "PR body and packet README; targeted overlap review by assigned agent. No complete mathematical verification."
+    },
+    {
+      "number": 214,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/214",
+      "title": "Research: source rigidity, subquadratic paired clocks, and cycle occupation",
+      "head": "7c381c5b53afec65fc473c598c5ed61762e9419f",
+      "branch": "research/astra-critical-rigidity-20261128",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-28T00:01:41Z",
+      "read_scope": "PR body and packet README; targeted overlap review by assigned agent. No complete mathematical verification."
+    },
+    {
+      "number": 215,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/215",
+      "title": "Nine-hour frontier pass: critical ordinary parity, complete returns, and mixed congruence ancestors",
+      "head": "8a50018b6a861e810b18512fdd59aaf45214bba1",
+      "branch": "research/astra-nine-hour-20261128",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-27T23:55:40Z",
+      "read_scope": "PR body and packet README; targeted overlap review by assigned agent. No complete mathematical verification."
+    }
+  ]
+}

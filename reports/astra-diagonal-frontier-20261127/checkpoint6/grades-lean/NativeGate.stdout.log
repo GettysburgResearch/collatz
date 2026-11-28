@@ -1,0 +1,8 @@
+'Collatz.NativeGate.protected_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.least_source_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.atom_le_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.extinction_implies_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.finite_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.loss_budget_excludes_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.reserve_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.reserve_low' depends on axioms: [propext, Classical.choice, Quot.sound]

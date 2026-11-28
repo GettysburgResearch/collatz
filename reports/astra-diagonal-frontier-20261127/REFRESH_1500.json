@@ -1,0 +1,81 @@
+{
+  "schema": "collatz-astra-concurrent-intake/v1",
+  "scope": "Concurrent branch refresh during the active six-hour pass. Earlier scientific pins remain frozen unless a manuscript explicitly changes its dependency.",
+  "pull_requests": [
+    {
+      "number": 211,
+      "title": "Propose ordinary merger costs, all-shift cycle bounds, and spectral rigidity",
+      "head": "c683c28c82f182c3c97f82deb337643f552486b2",
+      "updated_at": "2026-11-27T14:54:22Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/211",
+      "evidence": "PR description read at this pinned head; separately listed guides read. No imported Lean audit is counted as this packet's verification."
+    },
+    {
+      "number": 206,
+      "title": "Prove sharp Collatz pair and triple clocks and strengthen fixed-source tests",
+      "head": "6bcf4f0b32d15678ab6775bdcc6e20d83736512d",
+      "updated_at": "2026-11-27T14:54:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/206",
+      "evidence": "PR description read at this pinned head; separately listed guides read. No imported Lean audit is counted as this packet's verification."
+    },
+    {
+      "number": 193,
+      "title": "Collatz: exact rank midpoint order and ordinary ancestor geometry",
+      "head": "100ba857239a180840930765047d65ede92abeec",
+      "updated_at": "2026-11-27T14:31:13Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/193",
+      "evidence": "PR description read at this pinned head; separately listed guides read. No imported Lean audit is counted as this packet's verification."
+    },
+    {
+      "number": 212,
+      "title": "Collatz: Lean marked finite patterns, mass equivalence, and sharp spectral cycle bounds",
+      "head": "e082b95a503d622bbbd121801f6bcadcab50df05",
+      "updated_at": "2026-11-27T14:30:27Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/212",
+      "evidence": "PR description read at this pinned head; separately listed guides read. No imported Lean audit is counted as this packet's verification."
+    },
+    {
+      "number": 201,
+      "title": "Collatz: fixed sources, denominator packing and critical paired paths",
+      "head": "dac732467c6ed5307d1b78eaa8534653aeeb7a4c",
+      "updated_at": "2026-11-27T13:04:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/201",
+      "evidence": "PR description read at this pinned head; separately listed guides read. No imported Lean audit is counted as this packet's verification."
+    }
+  ],
+  "guides": [
+    {
+      "pr": 193,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/100ba857239a180840930765047d65ede92abeec/research/astra-diagonal-20261127/README.md",
+      "scope": "Complete guide/checkpoint text read; constituent proofs are not thereby independently verified."
+    },
+    {
+      "pr": 212,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/e082b95a503d622bbbd121801f6bcadcab50df05/research/astra-infinite-descent-20261127/README.md",
+      "scope": "Complete guide/checkpoint text read; constituent proofs are not thereby independently verified."
+    },
+    {
+      "pr": 211,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c683c28c82f182c3c97f82deb337643f552486b2/research/astra-reciprocal-rigidity-20261127/THIRD_CHECKPOINT.md",
+      "scope": "Complete guide/checkpoint text read; constituent proofs are not thereby independently verified."
+    },
+    {
+      "pr": 201,
+      "url": "https://github.com/GettysburgResearch/collatz/blob/dac732467c6ed5307d1b78eaa8534653aeeb7a4c/research/infinity-20261127/SECOND_CHECKPOINT.md",
+      "scope": "Complete guide/checkpoint text read; constituent proofs are not thereby independently verified."
+    }
+  ],
+  "refresh_label": "15:00 UTC intake; rounded label, not an exact observation timestamp",
+  "additional_proofs_read": [
+    {
+      "head": "100ba857239a180840930765047d65ede92abeec",
+      "path": "research/astra-diagonal-20261127/escape/FINITE_RECORD_CURRENT.md",
+      "scope": "Complete written proof reconstructed; its cited analytic inputs remain source-qualified."
+    },
+    {
+      "head": "e082b95a503d622bbbd121801f6bcadcab50df05",
+      "path": "research/astra-infinite-descent-20261127/escape/FAIR_CLOCK_DIFFUSION.md",
+      "scope": "Complete written proof reconstructed; fixed-root nullity and trace inputs remain source-qualified."
+    }
+  ]
+}

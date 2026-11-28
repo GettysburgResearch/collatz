@@ -1,0 +1,88 @@
+{
+  "schema": "collatz-astra-diagonal-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-27T16:47:16.100787+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": null,
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "subset",
+    "requested": [
+      "FirstArrivalLap",
+      "WidthThree"
+    ],
+    "compiled": [
+      "FirstArrivalLap",
+      "WidthThree"
+    ],
+    "not_compiled": [
+      "NativeGate",
+      "NativeTransfer",
+      "NativeDecay",
+      "NativeTightness",
+      "NativeCriterion",
+      "NativePersistence",
+      "NativeResidue",
+      "SeedSpread",
+      "ComponentLoss",
+      "FirstEntryRecord",
+      "SelectedBlockBarrier",
+      "PolynomialRank",
+      "HigherDifference",
+      "RotationCuts",
+      "OrdinaryMerge",
+      "GradePressure",
+      "ShortProbe",
+      "UnitWindowLift"
+    ]
+  },
+  "mathematical_scope": "The named formal declarations only. The native actual-source loss budget, exponential reserve bound, old-source tightness, convergence to the permanent reciprocal mass and equivalence of its vanishing to Collatz are connected formal proofs. The source-qualified density laws, inverse fluctuation laws, polynomial p-adic similarity/coloring, arbitrary-padding realization, global rotation/winding constructions, asymptotic moving-window selection and complexity applications remain written arguments or explicit external inputs. OrdinaryMerge checks only the stated exact integer sibling and no-negative-meeting kernels. GradePressure checks the finite all-grade partition identities and free-first-grade upper bound, not the asymptotic cycle occupation argument. FirstArrivalLap checks exact finite primitive-lap removal in a general deterministic map. WidthThree checks the nine polynomial, divisibility and scalar excursion lemmas, not the full asymptotic width theorem. No universal mass extinction or hazard divergence is proved.",
+  "modules": [
+    {
+      "module": "FirstArrivalLap",
+      "source": "research/astra-diagonal-frontier-20261127/mass/FirstArrivalLap.lean",
+      "source_sha256": "a522e1904520d5af1e24a36fdfd9879856a6063c987ca106122f5cf5d037fa70",
+      "exit_code": 0,
+      "seconds": 2.973,
+      "public_theorems": [
+        "FirstArrivalLap.walk_add",
+        "FirstArrivalLap.nativeClock_add",
+        "FirstArrivalLap.predecessor_at_lap",
+        "FirstArrivalLap.rejected_iff_shorter",
+        "FirstArrivalLap.no_earlier_below_lap"
+      ]
+    },
+    {
+      "module": "WidthThree",
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/WidthThree.lean",
+      "source_sha256": "df5e182880104a5e8f1f1a15797f0da9f4b6a8bdbb819f36dda5afe31178c821",
+      "exit_code": 0,
+      "seconds": 14.278,
+      "public_theorems": [
+        "Collatz.WidthThree.polynomialIdentity",
+        "Collatz.WidthThree.stencilMass",
+        "Collatz.WidthThree.forcedDivisibility",
+        "Collatz.WidthThree.noBirthAtOne",
+        "Collatz.WidthThree.birthAtTwo",
+        "Collatz.WidthThree.firstTwoState",
+        "Collatz.WidthThree.afterFirstTwo",
+        "Collatz.WidthThree.longReturn",
+        "Collatz.WidthThree.forcedSecondTwoExcludes"
+      ]
+    }
+  ],
+  "public_theorems": 14,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 14,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 27.467,
+  "finished_utc": "2026-11-27T16:47:43.567700+00:00"
+}

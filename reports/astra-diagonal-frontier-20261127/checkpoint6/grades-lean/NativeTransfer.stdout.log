@@ -1,0 +1,8 @@
+'Collatz.NativeGate.cylinder_lift' depends on axioms: [propext, Quot.sound]
+'Collatz.NativeGate.gate_lift' depends on axioms: [propext, Quot.sound]
+'Collatz.NativeGate.candidate_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.mass_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.reserve_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.envelope_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.total_loss_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.NativeGate.loss_hazard_implies_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-checkpoint-publication/v1",
+  "checkpoint": 15,
+  "verified_utc": "2026-11-28T06:02:48Z",
+  "repository": "GettysburgResearch/collatz",
+  "branch": "research/astra-diagonal-frontier-20261127",
+  "pull_request": 213,
+  "draft": true,
+  "local_commit": "eb6abd7d5d5045e0fb12eb2980583e214f741db8",
+  "remote_commit": "3d1f38b7740b34e196fca7f145e4e1e872bbdaea",
+  "tree": "2aadf15f3cd0fe5f135bf0ea4bdf6d83c58e64c5",
+  "parent": "321222a861cf8ba7475443f56ec690a3bf845971",
+  "main_unchanged": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "checks": [
+    "Exact local and remote trees agree",
+    "Guarded non-force branch update",
+    "Draft PR head and full body read back exactly",
+    "Historical six-hour PR body preserved",
+    "Local and remote clean checkout structural validation passed"
+  ],
+  "mathematical_scope": "Internal written review and disclosed source-qualified arguments; 30 Lean modules / 168 public roots and 54 paired finite controls; not a proof of Collatz"
+}

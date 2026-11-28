@@ -1,0 +1,139 @@
+{
+  "all": {
+    "dilations": 4374,
+    "residues": 227,
+    "max_gap": 2860,
+    "witness": 2465,
+    "min_half_interval_count": 4
+  },
+  "selected": {
+    "dilations": 4374,
+    "residues": 14,
+    "max_gap": 2982,
+    "witness": 364,
+    "min_half_interval_count": 1
+  },
+  "physical": [
+    {
+      "suffix_length": 0,
+      "suffixes": 1,
+      "root_replays": 14,
+      "min_kills": 8,
+      "max_kills": 8
+    },
+    {
+      "suffix_length": 4,
+      "suffixes": 5,
+      "root_replays": 70,
+      "min_kills": 5,
+      "max_kills": 9
+    },
+    {
+      "suffix_length": 8,
+      "suffixes": 227,
+      "root_replays": 3178,
+      "min_kills": 5,
+      "max_kills": 9
+    }
+  ],
+  "selected_tight_prefixes": 14,
+  "total_tight_prefixes": 227,
+  "pair_carries": [
+    5,
+    7,
+    5,
+    7
+  ],
+  "switched": [
+    {
+      "switch_rounds": 1,
+      "root_replays": 4,
+      "source_quartile_by_terminal_odd_class_mod8": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "switch_rounds": 3,
+      "root_replays": 64,
+      "source_quartile_by_terminal_odd_class_mod8": [
+        [
+          2,
+          3,
+          3,
+          1
+        ],
+        [
+          5,
+          5,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          6,
+          7
+        ],
+        [
+          4,
+          3,
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "switch_rounds": 6,
+      "root_replays": 4096,
+      "source_quartile_by_terminal_odd_class_mod8": [
+        [
+          255,
+          261,
+          262,
+          250
+        ],
+        [
+          262,
+          250,
+          250,
+          262
+        ],
+        [
+          248,
+          260,
+          260,
+          249
+        ],
+        [
+          265,
+          254,
+          252,
+          256
+        ]
+      ]
+    }
+  ]
+}

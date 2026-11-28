@@ -1,0 +1,115 @@
+{
+  "schema": "collatz-astra-global-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-27T23:59:13.034646+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": {
+    "files": 25766,
+    "bytes": 1529949895,
+    "unused_extra_files": 0,
+    "verified_manifest_sha256": "2ba07241b3d78a1ddbc27f5eaa1f60ed38420003a25687f98f607bad9fe927fc",
+    "scope": "Only byte-hashed Mathlib matches to the pinned cache are linked into a private directory. Compiler and third-party package objects retain their original import locations. Extra files are not placed on LEAN_PATH. No dependency was rebuilt."
+  },
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "all",
+    "requested": [
+      "BasinDefects",
+      "CriticalCountStandalone",
+      "MersenneCrests",
+      "WidthCarry"
+    ],
+    "compiled": [
+      "WidthCarry",
+      "CriticalCountStandalone",
+      "BasinDefects",
+      "MersenneCrests"
+    ],
+    "not_compiled": []
+  },
+  "mathematical_scope": "The stated finite carry identities, actual-orbit centered counts, literal basin defects, and Mersenne crest theorems only. No analytic Gaussian law, component-density theorem, prime-distribution theorem, global no-gap theorem, general cycle exclusion or Collatz conclusion is formalized here.",
+  "modules": [
+    {
+      "module": "WidthCarry",
+      "source": "research/astra-global-rigidity-20261128/cycles/WidthCarry.lean",
+      "source_sha256": "530230297041bdb5319f27ed4e4d76036c841c0d80f8d87c6ab659273133e51b",
+      "exit_code": 0,
+      "seconds": 4.724,
+      "public_theorems": [
+        "CollatzResearch.WidthCarry.lastDigit",
+        "CollatzResearch.WidthCarry.noCarry",
+        "CollatzResearch.WidthCarry.singletonEnergy",
+        "CollatzResearch.WidthCarry.matchingEnergy",
+        "CollatzResearch.WidthCarry.sixCopyCarry"
+      ]
+    },
+    {
+      "module": "CriticalCountStandalone",
+      "source": "research/astra-global-rigidity-20261128/mass/CriticalCountStandalone.lean",
+      "source_sha256": "0e683a17e4caa95370391943c73e7bbf3cb1c7b3cf3f4d08a60513ed76246ddc",
+      "exit_code": 0,
+      "seconds": 1.969,
+      "public_theorems": [
+        "Collatz.CriticalCount.orbit_positive",
+        "Collatz.CriticalCount.orbit_add",
+        "Collatz.CriticalCount.odds_add",
+        "Collatz.CriticalCount.one_even_clock",
+        "Collatz.CriticalCount.twiceCentered_add",
+        "Collatz.CriticalCount.one_score",
+        "Collatz.CriticalCount.centered_after_one",
+        "Collatz.CriticalCount.fourth_margin",
+        "Collatz.CriticalCount.protected_bound",
+        "Collatz.CriticalCount.protected_fixed_start",
+        "Collatz.CriticalCount.nonconvergent_floor",
+        "Collatz.CriticalCount.centered_after_nonconvergent"
+      ]
+    },
+    {
+      "module": "BasinDefects",
+      "source": "research/astra-global-rigidity-20261128/mass/BasinDefects.lean",
+      "source_sha256": "815c937c11bdd19976cbebd4687e30657b571033a59249ffa5c5d9cf1f023368",
+      "exit_code": 0,
+      "seconds": 1.371,
+      "public_theorems": [
+        "Collatz.CriticalCount.visits_after_step",
+        "Collatz.CriticalCount.visits_step_iff_of_ne",
+        "Collatz.CriticalCount.common_source_forces_comparability",
+        "Collatz.CriticalCount.five_nonreturn",
+        "Collatz.CriticalCount.five_single_defect",
+        "Collatz.CriticalCount.five_not_eightyFive",
+        "Collatz.CriticalCount.eightyFive_not_five",
+        "Collatz.CriticalCount.five_eightyFive_disjoint"
+      ]
+    },
+    {
+      "module": "MersenneCrests",
+      "source": "research/astra-global-rigidity-20261128/mersenne/MersenneCrests.lean",
+      "source_sha256": "a53b9398595fc7b60bba2e9e7e07056c8100b9a191823a77c61daf8425c2c7ba",
+      "exit_code": 0,
+      "seconds": 2.206,
+      "public_theorems": [
+        "Collatz.MersenneCrests.run_add",
+        "Collatz.MersenneCrests.initial_ramp",
+        "Collatz.MersenneCrests.original_to_crest",
+        "Collatz.MersenneCrests.no_meeting_after_cut",
+        "Collatz.MersenneCrests.prime19_no_shortening",
+        "Collatz.MersenneCrests.original19_no_shortening",
+        "Collatz.MersenneCrests.crest19_reaches_one"
+      ]
+    }
+  ],
+  "public_theorems": 32,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 32,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "seconds": 11.505,
+  "finished_utc": "2026-11-27T23:59:24.540285+00:00"
+}

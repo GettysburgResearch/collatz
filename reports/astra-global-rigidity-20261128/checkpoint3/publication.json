@@ -1,0 +1,18 @@
+{
+  "schema": "collatz-publication/v1",
+  "checkpoint": 3,
+  "published_verified_utc": "2026-11-28 00:38:06 UTC",
+  "remote_commit": "5136b7fe70176172405a0de168a2de2ed26429b8",
+  "tree": "73e016e279a3b7283949431366039632f5ab5417",
+  "parent": "a743bd04d33945b15a1ec91deaca4a82c0261a07",
+  "local_science_commit": "0dfabec1d70abe100a148101fef357d77448ff3e",
+  "branch": "research/astra-diagonal-frontier-20261127",
+  "pull_request": "https://github.com/GettysburgResearch/collatz/pull/213",
+  "tree_matches_local": true,
+  "branch_requeried": true,
+  "pr_head_requeried": true,
+  "pr_body_exact_match": true,
+  "local_clean_validation": "local-checkout.json",
+  "remote_clean_validation": "remote-checkout.json",
+  "scope": "Research checkpoint only; original Collatz remains unresolved; ongoing nine-hour pass."
+}

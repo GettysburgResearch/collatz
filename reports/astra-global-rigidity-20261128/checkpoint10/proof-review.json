@@ -1,0 +1,70 @@
+{
+  "schema": "collatz-proof-review/v1",
+  "checkpoint": 10,
+  "parent": "b710ae3c0bf5c764b8ee575c7c2898156d5f7451",
+  "scope": "Independent internal reconstruction of the specified written arguments; no external peer review or complete analytic formalization. Source-qualified deductions retain named external premises.",
+  "files": [
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/FIXED_LENGTH_PRODUCT_RIGIDITY.md",
+      "sha256": "b33d9a8661827cc5a421b99bfe1cc2212e22a768b9a38893923f347ea099d922"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/OffsetMoments.lean",
+      "sha256": "31f8fc464dc29434e32451c34107f25f5417dfb7b88ad4617c3a2da6c2a87b1f"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/NATIVE_LOWER_TYPE.md",
+      "sha256": "8cbf109cb0aadb51f3281e97aa51bbefd1a3e3f62835ec78524c585e8329906a"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/FLAT_NATIVE_EDGE.md",
+      "sha256": "0ba383f02cfc0c1a33bb85b5038e112a2db38a7f41dbc1bfef5b73427563b2da"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/BOUNDED_EVEN_TYPE.md",
+      "sha256": "23a68da91b3d68f57e1fb473b2ca03bd94b7290d9bc8d82a9c3cd78269187e9d"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/NativeLowerType.lean",
+      "sha256": "ef6f84dcf405f798361b73b0e04627b7d8042993c318a8ec4c08afcd0abc15c9"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/check_fixed_length_product_rigidity.py",
+      "sha256": "30da6b22f690c8eed8726c9c0941cad1f1886c45f0d0b0f639831488cfa9390d"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/check_native_lower_type.py",
+      "sha256": "e4ac04ae6ed189f930c13c2bb8ab2d1235de2e48640ff845c623e3875b59a276"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/check_sparse_edges.py",
+      "sha256": "901dadbe226ce1285df41e214cbe4fad45279aa5254f2b76f1682d062812ad00"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/ORDINARY_CRITICAL_TERNARY_SHARE.md",
+      "sha256": "b2493facd79c0007d5b0f9e0d32a4f00390a0db721bdd45a6f52b4ffa17d1344"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/TRUE_BASIN_MASS_ACQUISITION.md",
+      "sha256": "48711cdf4a5a5c397dee64125c7d60a20c3548e667935d6056cfa29fcee9d6f4"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/TRUE_BASIN_DENSITY_CUTOFF.md",
+      "sha256": "a24be43735f6cd20b6cc500463444a561826b8c0493a63ae63cb7e6cac2befc3"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/UNTRIMMED_FIRST_HIT_MARK.md",
+      "sha256": "f4b0cdf3ef253e3f4764c913d285b8d2d8cea41c214c1081b0ab8659c32e95b4"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/UNTRIMMED_LOG_MOMENTS_AND_CLOCKS.md",
+      "sha256": "76a84ae4720bbc871e1af142ada266324c5fba9059f80ad496fbfafa3b672c88"
+    }
+  ],
+  "lean_modules": 20,
+  "lean_public_roots": 126,
+  "paired_finite_checkers": 38,
+  "development_failures_preserved": true,
+  "review": "reports/astra-global-rigidity-20261128/REVIEW.md",
+  "external_premises": "reports/astra-global-rigidity-20261128/EXTERNAL_REFRESH.md"
+}

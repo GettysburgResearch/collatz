@@ -1,0 +1,5 @@
+research/astra-diagonal-frontier-20261127/arithmetic/GradePressure.lean:50:8: error: `if_pos` has been deprecated: Use `ite_eq_left` instead
+research/astra-diagonal-frontier-20261127/arithmetic/GradePressure.lean:56:34: error: `if_false` has been deprecated: Use `ite_false` instead
+'Collatz.GradePressure.gradeMassEq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GradePressure.pathMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.GradePressure.freeFirstGrade' depends on axioms: [propext, Classical.choice, Quot.sound]

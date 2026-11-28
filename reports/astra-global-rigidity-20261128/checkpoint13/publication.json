@@ -1,0 +1,16 @@
+{
+  "schema": "collatz-checkpoint-publication/v1",
+  "checkpoint": 13,
+  "verified_utc": "2026-11-28T05:26:00.410933+00:00",
+  "branch": "research/astra-diagonal-frontier-20261127",
+  "pr": 213,
+  "draft": true,
+  "published_commit": "7a6782d71dd8af728bbe9f18c96b99173ad315a4",
+  "tree": "9d38742070bf55490bde01c7923416b23ae55a5d",
+  "parent": "2c871ba103c62603709a9af63099387738f31311",
+  "local_equivalent_commit": "e510df7df3eed3d0ab635bb4fea4c4b6a57194c8",
+  "guarded_fast_forward": true,
+  "branch_and_pr_head_readback": true,
+  "exact_pr_body_readback": true,
+  "main_unchanged": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a"
+}

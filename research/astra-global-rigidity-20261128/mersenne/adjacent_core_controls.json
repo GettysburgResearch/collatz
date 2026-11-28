@@ -1,0 +1,39 @@
+{
+  "core_limit": 1000,
+  "global_exponent_limit": 10000000000000000000000000000000000000000,
+  "first_bits": 200,
+  "second_bits": 300,
+  "reduced_bases": 333,
+  "first_solvable_classes": 166,
+  "first_minimum_positive_exponent": 1913929083992519399788387058367936934097934560655273226398,
+  "second_solvable_classes": 33036,
+  "second_minimum_positive_exponent": 33606232515882102960245582197982188956962591848146435144119896018907535386819666748898,
+  "finite_exponents_checked": 510,
+  "transition_rows": 1094,
+  "rows_by_A": {
+    "1": 333,
+    "2": 282,
+    "3": 212,
+    "4": 130,
+    "5": 70,
+    "6": 36,
+    "7": 17,
+    "8": 10,
+    "9": 3,
+    "12": 1
+  },
+  "core_one_to_core_one_exponents": [
+    1,
+    2,
+    4
+  ],
+  "physical_odd_starts": 2857,
+  "largest_start_with_A_and_beta": [
+    9382229,
+    9,
+    715
+  ],
+  "largest_next_odd": 362495,
+  "max_certified_shortcut_length_via_next_odd": 163,
+  "sorted_transition_rows_sha256": "e49eb9b4247fa9eb3634e1c14f3429d1c40edddee0c58aa63ee6b7db6cdc5865"
+}

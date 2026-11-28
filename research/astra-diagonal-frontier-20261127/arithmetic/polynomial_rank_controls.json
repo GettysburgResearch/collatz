@@ -1,0 +1,52 @@
+{
+  "certified_derivative_trees": 324,
+  "finite_color_allocations": 3059,
+  "finite_difference_windows": 431,
+  "frobenius_cubic": {
+    "first_trits_dedup": [
+      0,
+      1,
+      2
+    ],
+    "one_representative_per_residue_classes": 64,
+    "sample_signed_inputs": [
+      -1,
+      0,
+      1,
+      5,
+      7
+    ]
+  },
+  "nonlinear_over_linear_max_count": 1957,
+  "optimal_target_polynomials_and_intervals": 2392,
+  "rational_cycles": [
+    {
+      "h": 8,
+      "p": 5,
+      "q_bits": 4,
+      "second_difference_sign_runs": [
+        3,
+        0
+      ]
+    },
+    {
+      "h": 65,
+      "p": 41,
+      "q_bits": 59,
+      "second_difference_sign_runs": [
+        39,
+        0
+      ]
+    },
+    {
+      "h": 485,
+      "p": 306,
+      "q_bits": 476,
+      "second_difference_sign_runs": [
+        304,
+        0
+      ]
+    }
+  ],
+  "verified_scaled_isometry_children": 4802
+}

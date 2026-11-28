@@ -1,0 +1,332 @@
+{
+  "schema": "collatz-astra-diagonal-controls/v1",
+  "success": true,
+  "started_utc": "2026-11-27T14:37:57.359893+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Finite exact controls only; no asymptotic or universal conclusion.",
+  "cases": [
+    {
+      "source": "research/astra-diagonal-frontier-20261127/check_native_gate.py",
+      "source_sha256": "6e1c3bacd4b44a4127a369aa60fba6f7c19b5305da05316d432ede609813024a",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.152,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.201,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"cylinder_lift_checks\": 2640,\n  \"direct_tree_max_clock\": 14,\n  \"exponential_reserve_clocks\": 15,\n  \"fixed_cutoff_checks\": 120,\n  \"rows\": [\n    {\n      \"clock\": 0,\n      \"count\": 1,\n      \"mass\": \"1/1\",\n      \"reserve\": \"8/1\"\n    },\n    {\n      \"birth_float\": 0.0,\n      \"clock\": 1,\n      \"count\": 1,\n      \"cumulative_loss_float\": 0.0,\n      \"death_float\": 0.0,\n      \"envelope_float\": 8.0,\n      \"mass_float\": 1.0,\n      \"mass_sha256_hex\": \"253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290\",\n      \"reserve\": \"7/1\"\n    },\n    {\n      \"birth_float\": 0.3333333333333333,\n      \"clock\": 2,\n      \"count\": 1,\n      \"cumulative_loss_float\": 1.0,\n      \"death_float\": 1.0,\n      \"envelope_float\": 5.333333333333333,\n      \"mass_float\": 0.3333333333333333,\n      \"mass_sha256_hex\": \"0d7f0e336166042f8cc9e4c20ae427ba367c279d6e3dfd1bd7247b0fbce61d50\",\n      \"reserve\": \"5/1\"\n    },\n    {\n      \"birth_float\": 0.14285714285714285,\n      \"clock\": 3,\n      \"count\": 2,\n      \"cumulative_loss_float\": 1.0,\n      \"death_float\": 0.0,\n      \"envelope_float\": 5.226190476190476,\n      \"mass_float\": 0.47619047619047616,\n      \"mass_sha256_hex\": \"ed6dada6c2169ca3ddeb73b2ceb17842b5abc939090910e0508516a574ab74db\",\n      \"reserve\": \"19/4\"\n    },\n    {\n      \"birth_float\": 0.15757575757575756,\n      \"clock\": 4,\n      \"count\": 3,\n      \"cumulative_loss_float\": 1.3333333333333333,\n      \"death_float\": 0.3333333333333333,\n      \"envelope_float\": 4.5504329004329005,\n      \"mass_float\": 0.30043290043290044,\n      \"mass_sha256_hex\": \"4743cf31a1c35816fa3e34585e8e5df6f24da2a6583ba12544d5db94356bfb4c\",\n      \"reserve\": \"17/4\"\n    },\n    {\n      \"birth_float\": 0.11277336242273128,\n      \"clock\": 5,\n      \"count\": 6,\n      \"cumulative_loss_float\": 1.3333333333333333,\n      \"death_float\": 0.0,\n      \"envelope_float\": 4.475706262855632,\n      \"mass_float\": 0.4132062628556317,\n      \"mass_sha256_hex\": \"5ef2727a532c5b0f2f54f245f989ce8dc144f9a89b9a1f8e9d127a35efef9f64\",\n      \"reserve\": \"65/16\"\n    },\n    {\n      \"birth_float\": 0.1211774219364018,\n      \"clock\": 6,\n      \"count\": 10,\n      \"cumulative_loss_float\": 1.4677206851119895,\n      \"death_float\": 0.13438735177865613,\n      \"envelope_float\": 4.212496333013378,\n      \"mass_float\": 0.3999963330133774,\n      \"mass_sha256_hex\": \"7c593060b443aeab6232d1db095f41b645a7cab00f608e8a8a02316c6a433df4\",\n      \"reserve\": \"61/16\"\n    },\n    {\n      \"birth_float\": 0.10072906132783183,\n      \"clock\": 7,\n      \"count\": 20,\n      \"cumulative_loss_float\": 1.4677206851119895,\n      \"death_float\": 0.0,\n      \"envelope_float\": 4.1569753943412096,\n      \"mass_float\": 0.5007253943412092,\n      \"mass_sha256_hex\": \"b509abf19c3cf822b837f4f618e54ebad79d581cd5956b0c28f0e88335fc3732\",\n      \"reserve\": \"117/32\"\n    },\n    {\n      \"birth_float\": 0.09696106525224192,\n      \"clock\": 8,\n      \"count\": 35,\n      \"cumulative_loss_float\": 1.5829956796190552,\n      \"death_float\": 0.11527499450706573,\n      \"envelope_float\": 3.9824114650863853,\n      \"mass_float\": 0.4824114650863854,\n      \"mass_sha256_hex\": \"bb02ecc5ed14e47b5419f896278690978a5fb2e83a05555776e5cdc094fc9e7d\",\n      \"reserve\": \"7/2\"\n    },\n    {\n      \"birth_float\": 0.07380420312799493,\n      \"clock\": 9,\n      \"count\": 56,\n      \"cumulative_loss_float\": 1.7872038191066044,\n      \"death_float\": 0.20420813948754915,\n      \"envelope_float\": 3.551226278726831,\n      \"mass_float\": 0.35200752872683116,\n      \"mass_sha256_hex\": \"53045713405d10f911e98c842ab74d54755a0d5c680ba27b8af621f96a9a2c02\",\n      \"reserve\": \"819/256\"\n    },\n    {\n      \"birth_float\": 0.07399761512679592,\n      \"clock\": 10,\n      \"count\": 112,\n      \"cumulative_loss_float\": 1.7872038191066044,\n      \"death_float\": 0.0,\n      \"envelope_float\": 3.515848893853627,\n      \"mass_float\": 0.4260051438536271,\n      \"mass_sha256_hex\": \"43620122b668dcd501402243d530cc9c9a96193424426918c76bc953be71fddc\",\n      \"reserve\": \"791/256\"\n    },\n    {\n      \"birth_float\": 0.06646563244983436,\n      \"clock\": 11,\n      \"count\": 196,\n      \"cumulative_loss_float\": 1.8117870608745832,\n      \"death_float\": 0.02458324176797882,\n      \"envelope_float\": 3.3936687845354827,\n      \"mass_float\": 0.46788753453548265,\n      \"mass_sha256_hex\": \"12cc0075e04c9f19b686a34e3174f914c20fcfb126d72d2e4a05cf75b9218d16\",\n      \"reserve\": \"749/256\"\n    },\n    {\n      \"birth_float\": 0.06625543561026442,\n      \"clock\": 12,\n      \"count\": 392,\n      \"cumulative_loss_float\": 1.8117870608745832,\n      \"death_float\": 0.0,\n      \"envelope_float\": 3.364221095145747,\n      \"mass_float\": 0.5341429701457471,\n      \"mass_sha256_hex\": \"9694e54aff2afd039a987166ebf4b30b034a59778a96f29e7c12114d773bb2d4\",\n      \"reserve\": \"1449/512\"\n    },\n    {\n      \"birth_float\": 0.06011439969114248,\n      \"clock\": 13,\n      \"count\": 708,\n      \"cumulative_loss_float\": 1.8457985400816457,\n      \"death_float\": 0.03401147920706252,\n      \"envelope_float\": 3.276066203129827,\n      \"mass_float\": 0.560245890629827,\n      \"mass_sha256_hex\": \"e5baa9d1ae259c3c8f11a0ffb695611c781ba205194217fc8bef08520ee6632a\",\n      \"reserve\": \"2781/1024\"\n    },\n    {\n      \"birth_float\": 0.0599106749579663,\n      \"clock\": 14,\n      \"count\": 1416,\n      \"cumulative_loss_float\": 1.8457985400816457,\n      \"death_float\": 0.0,\n      \"envelope_float\": 3.249551096837793,\n      \"mass_float\": 0.6201565655877933,\n      \"mass_sha256_hex\": \"118da65a77055a7232070a1e74e2223cbb9a4d6f53c12592b62926f21cfa0a70\",\n      \"reserve\": \"5385/2048\"\n    }\n  ],\n  \"scope\": \"finite exact controls, not universal extinction\",\n  \"source27_first_gate_failure\": 86,\n  \"status\": \"PASS\"\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_seed_spread.py",
+      "source_sha256": "e41a0b910b6d7f427e0e8d9502daebe1062184daf5038c87cc195f924918e663",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.671,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.946,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"all\": {\n    \"dilations\": 4374,\n    \"residues\": 227,\n    \"max_gap\": 2860,\n    \"witness\": 2465,\n    \"min_half_interval_count\": 4\n  },\n  \"selected\": {\n    \"dilations\": 4374,\n    \"residues\": 14,\n    \"max_gap\": 2982,\n    \"witness\": 364,\n    \"min_half_interval_count\": 1\n  },\n  \"physical\": [\n    {\n      \"suffix_length\": 0,\n      \"suffixes\": 1,\n      \"root_replays\": 14,\n      \"min_kills\": 8,\n      \"max_kills\": 8\n    },\n    {\n      \"suffix_length\": 4,\n      \"suffixes\": 5,\n      \"root_replays\": 70,\n      \"min_kills\": 5,\n      \"max_kills\": 9\n    },\n    {\n      \"suffix_length\": 8,\n      \"suffixes\": 227,\n      \"root_replays\": 3178,\n      \"min_kills\": 5,\n      \"max_kills\": 9\n    }\n  ],\n  \"selected_tight_prefixes\": 14,\n  \"total_tight_prefixes\": 227,\n  \"pair_carries\": [\n    5,\n    7,\n    5,\n    7\n  ],\n  \"switched\": [\n    {\n      \"switch_rounds\": 1,\n      \"root_replays\": 4,\n      \"source_quartile_by_terminal_odd_class_mod8\": [\n        [\n          1,\n          0,\n          1,\n          0\n        ],\n        [\n          0,\n          0,\n          0,\n          0\n        ],\n        [\n          0,\n          0,\n          0,\n          0\n        ],\n        [\n          1,\n          0,\n          1,\n          0\n        ]\n      ]\n    },\n    {\n      \"switch_rounds\": 3,\n      \"root_replays\": 64,\n      \"source_quartile_by_terminal_odd_class_mod8\": [\n        [\n          2,\n          3,\n          3,\n          1\n        ],\n        [\n          5,\n          5,\n          3,\n          4\n        ],\n        [\n          5,\n          6,\n          6,\n          7\n        ],\n        [\n          4,\n          3,\n          3,\n          4\n        ]\n      ]\n    },\n    {\n      \"switch_rounds\": 6,\n      \"root_replays\": 4096,\n      \"source_quartile_by_terminal_odd_class_mod8\": [\n        [\n          255,\n          261,\n          262,\n          250\n        ],\n        [\n          262,\n          250,\n          250,\n          262\n        ],\n        [\n          248,\n          260,\n          260,\n          249\n        ],\n        [\n          265,\n          254,\n          252,\n          256\n        ]\n      ]\n    }\n  ]\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/mass/check_first_entry_law.py",
+      "source_sha256": "8a4be1de9ddf383c0b0aa665361018ddf60bbdf7bf6d409618a9e2ce62ba095d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.05,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.15,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"odd_sources_checked_through\": 1999,\n  \"source_count\": 1000,\n  \"joint_local_margin_lower_bound\": \"0.0003007\",\n  \"log_series_terms\": 96,\n  \"finite_gates\": {\n    \"4\": {\n      \"finite_landings\": 477,\n      \"distinct_finite_landings\": 14\n    },\n    \"8\": {\n      \"finite_landings\": 520,\n      \"distinct_finite_landings\": 149\n    },\n    \"16\": {\n      \"finite_landings\": 407,\n      \"distinct_finite_landings\": 71\n    },\n    \"32\": {\n      \"finite_landings\": 297,\n      \"distinct_finite_landings\": 28\n    },\n    \"64\": {\n      \"finite_landings\": 8,\n      \"distinct_finite_landings\": 4\n    },\n    \"128\": {\n      \"finite_landings\": 0,\n      \"distinct_finite_landings\": 0\n    },\n    \"256\": {\n      \"finite_landings\": 0,\n      \"distinct_finite_landings\": 0\n    }\n  }\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_polynomial_rank.py",
+      "source_sha256": "03ec6e4c516955f0b832ecc765b4544d8124bfafe81ed3ad2cfd209cd82c9d4d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 1.053,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.306,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"certified_derivative_trees\": 324,\n  \"finite_color_allocations\": 3059,\n  \"finite_difference_windows\": 431,\n  \"frobenius_cubic\": {\n    \"first_trits_dedup\": [\n      0,\n      1,\n      2\n    ],\n    \"one_representative_per_residue_classes\": 64,\n    \"sample_signed_inputs\": [\n      -1,\n      0,\n      1,\n      5,\n      7\n    ]\n  },\n  \"nonlinear_over_linear_max_count\": 1957,\n  \"optimal_target_polynomials_and_intervals\": 2392,\n  \"rational_cycles\": [\n    {\n      \"h\": 8,\n      \"p\": 5,\n      \"q_bits\": 4,\n      \"second_difference_sign_runs\": [\n        3,\n        0\n      ]\n    },\n    {\n      \"h\": 65,\n      \"p\": 41,\n      \"q_bits\": 59,\n      \"second_difference_sign_runs\": [\n        39,\n        0\n      ]\n    },\n    {\n      \"h\": 485,\n      \"p\": 306,\n      \"q_bits\": 476,\n      \"second_difference_sign_runs\": [\n        304,\n        0\n      ]\n    }\n  ],\n  \"verified_scaled_isometry_children\": 4802\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_higher_differences.py",
+      "source_sha256": "af970bfbefad7ff599832159d772e601259f56403a4592629ef7a2f22fa799f7",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.13,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.207,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "[\n  {\n    \"order\": 3,\n    \"past_padding\": 0,\n    \"future_padding\": 0,\n    \"literal_odd_edges\": 28,\n    \"distinct_odd_states\": 32,\n    \"minimum_bits\": 21,\n    \"maximum_bits\": 23,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      0,\n      2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true,\n    \"source_tuple\": [\n      2917447,\n      2949355,\n      3020041,\n      3129505\n    ]\n  },\n  {\n    \"order\": 3,\n    \"past_padding\": 4,\n    \"future_padding\": 9,\n    \"literal_odd_edges\": 80,\n    \"distinct_odd_states\": 84,\n    \"minimum_bits\": 68,\n    \"maximum_bits\": 70,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      0,\n      2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 3,\n    \"past_padding\": 31,\n    \"future_padding\": 23,\n    \"literal_odd_edges\": 244,\n    \"distinct_odd_states\": 248,\n    \"minimum_bits\": 192,\n    \"maximum_bits\": 194,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      0,\n      2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 3,\n    \"past_padding\": 128,\n    \"future_padding\": 128,\n    \"literal_odd_edges\": 1052,\n    \"distinct_odd_states\": 1056,\n    \"minimum_bits\": 838,\n    \"maximum_bits\": 840,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      0,\n      2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 3,\n    \"past_padding\": 511,\n    \"future_padding\": 257,\n    \"literal_odd_edges\": 3100,\n    \"distinct_odd_states\": 3104,\n    \"minimum_bits\": 2449,\n    \"maximum_bits\": 2451,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      0,\n      2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 4,\n    \"past_padding\": 0,\n    \"future_padding\": 0,\n    \"literal_odd_edges\": 30,\n    \"distinct_odd_states\": 35,\n    \"minimum_bits\": 20,\n    \"maximum_bits\": 23,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      -2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true,\n    \"source_tuple\": [\n      1502635,\n      1525513,\n      1582201,\n      1697545,\n      1896391\n    ]\n  },\n  {\n    \"order\": 4,\n    \"past_padding\": 4,\n    \"future_padding\": 9,\n    \"literal_odd_edges\": 95,\n    \"distinct_odd_states\": 100,\n    \"minimum_bits\": 63,\n    \"maximum_bits\": 65,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      -2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 4,\n    \"past_padding\": 31,\n    \"future_padding\": 23,\n    \"literal_odd_edges\": 300,\n    \"distinct_odd_states\": 305,\n    \"minimum_bits\": 198,\n    \"maximum_bits\": 200,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      -2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 4,\n    \"past_padding\": 128,\n    \"future_padding\": 128,\n    \"literal_odd_edges\": 1310,\n    \"distinct_odd_states\": 1315,\n    \"minimum_bits\": 832,\n    \"maximum_bits\": 834,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      -2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  },\n  {\n    \"order\": 4,\n    \"past_padding\": 511,\n    \"future_padding\": 257,\n    \"literal_odd_edges\": 3870,\n    \"distinct_odd_states\": 3875,\n    \"minimum_bits\": 2461,\n    \"maximum_bits\": 2462,\n    \"central_signed_differences\": [\n      0,\n      0,\n      -1,\n      -2,\n      2,\n      2,\n      0\n    ],\n    \"all_lower_differences_positive\": true,\n    \"strict_ratio_16_over_3\": true\n  }\n]\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_rotation_cuts.py",
+      "source_sha256": "f5fef9abb24160a1efb64ddab0c7fda7c2e17cc995ccdee73393540356ab70a9",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 247.563,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 226.546,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"complete_finite_list_of_locks\": [\n    [\n      1,\n      \"2\"\n    ],\n    [\n      9,\n      \"8/5\"\n    ],\n    [\n      11,\n      \"8/5\"\n    ]\n  ],\n  \"direct_orbit_interval_checks\": 3968,\n  \"genuine_integer_controls\": [\n    {\n      \"maximum\": 1,\n      \"minimum\": 1,\n      \"sign\": 1,\n      \"slope\": \"2\",\n      \"tested_cells_and_endpoints\": 8\n    },\n    {\n      \"maximum\": 7,\n      \"minimum\": 5,\n      \"sign\": -1,\n      \"slope\": \"3/2\",\n      \"tested_cells_and_endpoints\": 16\n    }\n  ],\n  \"genuine_nonintegral_controls\": [\n    {\n      \"h\": 8,\n      \"lower\": \"27/17\",\n      \"ordinary_scale\": 23,\n      \"p\": 5,\n      \"q_bits\": 4,\n      \"upper\": \"43/27\"\n    },\n    {\n      \"h\": 65,\n      \"lower\": \"233/147\",\n      \"ordinary_scale\": 867,\n      \"p\": 41,\n      \"q_bits\": 59,\n      \"upper\": \"214/135\"\n    },\n    {\n      \"h\": 485,\n      \"lower\": \"4132/2607\",\n      \"ordinary_scale\": 72057,\n      \"p\": 306,\n      \"q_bits\": 476,\n      \"upper\": \"2509/1583\"\n    }\n  ],\n  \"integer_period_five_words_excluded\": 35,\n  \"odd_scales_checked\": 50000,\n  \"paired_independent_algorithms\": 201\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_weighted_clock.py",
+      "source_sha256": "ab084ee1bce6138ea63f3cdfbc1c3942880a8138aecf86d77af141171e476bd3",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 11.862,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 9.209,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"angular_cells\": 513,\n  \"angular_weight_ticks\": 4096,\n  \"block_length\": 512,\n  \"certificate\": \"4*maximum < 3*state_denominator\",\n  \"known_carry_modulus\": 27,\n  \"largest_block_terminal_scaled_entry\": 714173637,\n  \"largest_intermediate_scaled_entry\": 7333941099,\n  \"largest_terminal_cell_index\": 32,\n  \"literal_weighted_bridge_classes\": 27,\n  \"literal_weighted_energy_sum\": 8509530,\n  \"outward_state_denominator\": 1073741824,\n  \"outward_weight_denominator\": 2097152,\n  \"trit_tag_states\": 972\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_sparse_rational_clock.py",
+      "source_sha256": "aa919da4f1b75b9a59d5204d138c7ec51018fee609240b039c47acdbc9203e83",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.165,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.201,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "[\n  {\n    \"clock\": 65,\n    \"clock_observable_millionths_lower\": 1806507,\n    \"clock_observable_millionths_upper\": 1806508,\n    \"determinant_bits\": 59,\n    \"edited_edges\": 4,\n    \"gap_two_adic_valuation\": 36,\n    \"gcd_bits\": 1,\n    \"integer_part_of_minimum\": 388,\n    \"period\": 41,\n    \"physical_ratio_millionths_floor\": 5241598,\n    \"reduced_denominator_bits\": 59,\n    \"repeated_native_clock\": 25,\n    \"repeated_word_length\": 16,\n    \"two_clean_origins\": [\n      3,\n      15\n    ]\n  },\n  {\n    \"clock\": 485,\n    \"clock_observable_millionths_lower\": 1541070,\n    \"clock_observable_millionths_upper\": 1541071,\n    \"determinant_bits\": 476,\n    \"edited_edges\": 4,\n    \"gap_two_adic_valuation\": 391,\n    \"gcd_bits\": 1,\n    \"integer_part_of_minimum\": 27730,\n    \"period\": 306,\n    \"physical_ratio_millionths_floor\": 5321216,\n    \"reduced_denominator_bits\": 476,\n    \"repeated_native_clock\": 236,\n    \"repeated_word_length\": 149,\n    \"two_clean_origins\": [\n      3,\n      56\n    ]\n  },\n  {\n    \"clock\": 24727,\n    \"clock_observable_millionths_lower\": 1500805,\n    \"clock_observable_millionths_upper\": 1500806,\n    \"determinant_bits\": 24712,\n    \"edited_edges\": 4,\n    \"gap_two_adic_valuation\": 23663,\n    \"gcd_bits\": 3,\n    \"integer_part_of_minimum\": 77356700,\n    \"period\": 15601,\n    \"physical_ratio_millionths_floor\": 5333096,\n    \"reduced_denominator_bits\": 24709,\n    \"repeated_native_clock\": 12356,\n    \"repeated_word_length\": 7796,\n    \"two_clean_origins\": [\n      3,\n      668\n    ]\n  }\n]\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/arithmetic/check_homogeneous_meetings.py",
+      "source_sha256": "8f74b4b04e86e5f4b9b94b8d59891e76feb038ff9182daa290c2e902a1aa2804",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 3.911,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 4.26,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{\n  \"all_cut_unit_cycle_controls\": 96,\n  \"changed_edge_residues\": {\n    \"3\": 250,\n    \"5\": 250,\n    \"9\": 250,\n    \"11\": 250\n  },\n  \"cutoff_insertions\": 1500,\n  \"drop_residues\": {\n    \"5\": 13,\n    \"9\": 6\n  },\n  \"eligible_output_controls\": 2411,\n  \"first_drops\": [\n    [\n      5,\n      \"2\",\n      \"5/3\"\n    ],\n    [\n      17,\n      \"5/3\",\n      \"13/8\"\n    ],\n    [\n      21,\n      \"13/8\",\n      \"8/5\"\n    ],\n    [\n      81,\n      \"8/5\",\n      \"43/27\"\n    ],\n    [\n      101,\n      \"43/27\",\n      \"35/22\"\n    ],\n    [\n      117,\n      \"35/22\",\n      \"27/17\"\n    ],\n    [\n      293,\n      \"27/17\",\n      \"100/63\"\n    ],\n    [\n      341,\n      \"100/63\",\n      \"73/46\"\n    ]\n  ],\n  \"genuine_native_winding_controls\": 4,\n  \"last_drops\": [\n    [\n      2417,\n      \"409/258\",\n      \"344/217\"\n    ],\n    [\n      2561,\n      \"344/217\",\n      \"279/176\"\n    ],\n    [\n      2957,\n      \"279/176\",\n      \"214/135\"\n    ]\n  ],\n  \"negative_high_child_controls\": 111,\n  \"negative_high_parent_controls\": 122,\n  \"odd_grid_maximum\": 3001,\n  \"ordinary_local_step_controls\": 4096,\n  \"paired_winding_controls\": 164,\n  \"rotation_drops\": 19,\n  \"strict_input_positive_controls\": 564,\n  \"upper_convergents_seen\": [\n    \"2\",\n    \"8/5\",\n    \"65/41\"\n  ]\n}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_controls.py",
+      "source_sha256": "841ab9174f18bd447a2ecadc5485ebc23019344d61b0034c9dc54c9de12f6346",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.859,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.138,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "linear models, defects, maximum observed rank: 520 431 8\nphysical lifts: 2268\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_automata.py",
+      "source_sha256": "39c113a6b2c6ca63743550d622fbac332c5ee3501a2fac3d93046ef2d4bc5215",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.397,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.424,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "canonical DFAs and exact edge-test comparisons: 66 101376\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/linear/check_local_landing.py",
+      "source_sha256": "dc5e1d7e364685eb9b0206c8c5967411e4c279a282a7eb88c6b2d7c64c03c567",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.406,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.526,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "{'actual_landings': 2372, 'all_even_native': 1032, 'nonunit_terminal': 336, 'periodic_landings': 740, 'unit_embeddings': 5640, 'words_compared': 228501}\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/inverse/check_retained_trees.py",
+      "source_sha256": "d495ab5d3b67913d50d1111a2e7dd970aad5c7f8a124dcd5f6a6ed7dd05c7063",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.127,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.371,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "58 nonzero records, 57 proper cuts, 2 tied maxima\n38 selected two-gap choices, 162 balanced lifted rows, 72 illegal pairs\n340 single-word ternary Haar counts\n",
+      "success": true
+    },
+    {
+      "source": "research/astra-diagonal-frontier-20261127/inverse/check_frozen_root.py",
+      "source_sha256": "474be02e73ce5fa5be89ed15c7839763b4f64651e99f54b4433b21adf85590c4",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 2.264,
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.989,
+          "stderr": ""
+        }
+      ],
+      "normal_optimized_identical": true,
+      "recorded_output_matches": true,
+      "source_unchanged": true,
+      "stdout": "All positive odd unit sources through 588693 at depths 1\u201389: [(88, 586223, 154, True), (88, 588103, 154, True), (89, 390815, 155, True)]\n",
+      "success": true
+    }
+  ],
+  "finished_utc": "2026-11-27T14:46:34.513694+00:00"
+}
