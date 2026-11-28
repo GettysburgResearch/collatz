@@ -11,7 +11,7 @@ Both bounds are simultaneous at each supplied ordinary $x$. The first shows that
 
 Apply the rational $S$-adic subspace theorem to $(N,v,1)$. Use $(X,Y,Z)$ at infinity. At every prime in $S$ use $(X,Y,X+Y-Z)$, whose determinant is $-1$. Every evaluated factor is positive as a rational number. The maximum norm is $N$, since $2\le v\le N-1$. The product of the normalized absolute values is
 $$
-    \frac{Nv}{N_S\,v\,R_S}=\frac{N}{N_S R_S}=rac{BB'}{R},
+    \frac{Nv}{N_S\,v\,R_S}=\frac{N}{N_S R_S}=\frac{BB'}{R},
 $$
 where $M_S=M/M_{S^c}$ and $R_{S^c}=W_{S^c}=B'$. The product is at least $N^{-\epsilon}$ off a finite union of proper rational subspaces. Thus $BB'\ge R N^{-\epsilon}>N^{1-\epsilon}$ off that union. The exceptional subspaces here can contain infinitely many primitive vectors, so the following argument is needed. [Varjú, *Times 2, 3 mod Q*, Theorem 5](https://publications.hse.ru/pubs/share/direct/809451625.pdf)
 

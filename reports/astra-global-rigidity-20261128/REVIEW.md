@@ -1,4 +1,4 @@
-# Review boundary — sixth nine-hour checkpoint
+# Review boundary — seventh nine-hour checkpoint
 
 The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is planned through 2026-11-28 07:59:19 UTC. This is an intermediate checkpoint. Source intake: `INTAKE.json`; inherited packet head: `5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128`.
 
@@ -16,7 +16,7 @@ The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is
 
 ## Formal and finite verification boundary
 
-**Checkpoint 6: fourteen modules and 78 public roots passed a fresh serial compilation and axiom audit.** `checkpoint6/lean.json` identifies their exact bytes. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
+**Checkpoint 7: fifteen modules and 86 public roots passed a fresh serial compilation and axiom audit.** `checkpoint7/lean.json` identifies their exact bytes. The new `ShiftedSiblingCarries` module adds eight finite carry, gcd and same-successor declarations; the full analytic mass and moving-gcd arguments remain written mathematics. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
 
 The checkpoint receipts identify exact source hashes, compiler version, Mathlib pin, imported module closure, public declarations and axiom output. They distinguish fresh packet compilation from reuse of compiled dependencies. The only accepted theorem axioms are the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom mathematical interface axiom, or `native_decide` shortcut is accepted by the replay.
 
@@ -390,6 +390,90 @@ superset theorem is the three-step lower bound, while the exact rate belongs
 to the set's own map. The finite checker tests 262143 binary inputs and
 21840 actual hole returns, as well as all 16 permitted gates in its finite
 sparse-hole crop. These constructions concern unrestricted modified maps.
+
+## Checkpoint 7 independent reconstruction
+
+**Polynomially small gain on logarithmically long ascents — VERIFIED AS A
+SOURCE-QUALIFIED DEDUCTION, with two independent agent reviews and root
+reconstruction.** The inverse-logarithmic refutation is already Weaver
+202/v1's Theorem 1 and Corollary 2, and is explicitly credited. Root opened
+that paper's complete proof and checked its smaller polylogarithmic parameter
+range and sharper constant factors. The present extension admits
+`2^s 3^k ≤ Y^ε`. Root re-read Weaver 102's Theorem 1: the limiting landing-law
+majorant is uniform over entire sets, so layer cake costs one error per
+bounded test level, independent of the number of endpoints. Both the full
+visit test and the bypass test are measurable after the first landing,
+because every endpoint and its specified predecessor lie below that threshold.
+The forward hull omission and short-passage count leave a positive proportion
+of the sampled physical endpoint rows for a sufficiently small absolute ε.
+
+The finite signed columns are treated separately at depths below the climb,
+between the climb and the prescribed ternary depth, and beyond that depth.
+Nonnegative projection through a complete residue period controls incomplete
+physical periods without assuming independence of position and word.
+Root replaced an unnecessary long-simple-path premise with the elementary
+product bound: all contributing earlier states exceed the chosen floor,
+and the clock is at most half the logarithm of the endpoint scale, so the
+actual affine multiplier is bounded below by an absolute positive constant.
+This correctly charges unweighted source counts to weighted columns.
+Root and the second reviewer checked all four parameter inequalities, the
+`k−1`-step unit ancestor, the physical fixed-total sampling at linear ternary
+precision, and the three common first-arrival clocks. The resulting main
+basin densities vanish at a power rate, also by the retained landing-atom
+bound. No estimate for a fixed positive main density along an escaping ray
+is obtained. The finite checker tests exact signed rows, arbitrary removed
+all-one prefixes, projections and genuine climbs; it estimates no basin
+probability numerically.
+
+**Superlogarithmic intermediate transfer — VERIFIED AS A SOURCE-QUALIFIED
+DEDUCTION.** The incoming exponent at the first landing can be counted as
+non-one because its exponent-one parent would lie below the threshold.
+The whole marked count is a bounded finite landing test. Root checked the
+uniform stopped-set estimate in Weaver 102 Lemma 5 and its scale ladder,
+then the source-log averaging interval that absorbs the correlation between
+the height walk and the final ternary word. The early short words require a
+large deviation. The candidate count and the final-endpoint comparison in
+pinned PR146 avoid a growing binary-progression penalty. This proof gives
+`k,s` of order `(log log Y)^2`. It is retained as a distinct argument and does
+not claim priority for the already known inverse-log refutation.
+
+**Moving sparse coefficients and native gluing — VERIFIED AS A
+SOURCE-QUALIFIED DEDUCTION.** Root reopened Grieve–Wang Theorem 1.2 and the
+small-character alternative in its proof. The lattice of characters whose
+limiting prime exponents vanish is saturated; its complement has no fixed
+nonzero character of sublinear height, excluding the exceptional alternative.
+The fixed-degree polynomial factors have sublinear coefficient heights;
+the proper gap forbids a whole-clock collision. The finite Fourier support
+and rational norm arguments retain the fraction `1/min(k,g)` in the full
+modulus. Fixed support is essential. Root checked the exact macroscopic
+junction residual, its distinct dyadic valuations, and the effective
+cluster discrepancy for short repairs. A vanishing effective discrepancy
+replays the intervening native word because its output is integral at two.
+A genuine positive closed path cannot lose a factor of three from its reduced
+odd denominator, so that denominator stays constant. This branch is retained
+as an actual exception, not treated as an impossible gluing. The formal
+endpoint-elimination ideal records only unrestricted symbolic endpoint
+relations and supplies no additional native arithmetic theorem.
+
+**Shifted sibling independence and protected prime controls — VERIFIED AS
+WRITTEN ARITHMETIC; the supplied density and affine-coupling inputs remain
+SOURCE-QUALIFIED.** Root checked the positive carry bound and maximal-exponent
+argument in a multiplicative relation, the exact siblings `64z+21`, and the
+no-descent control of their physical native clocks. The explicit terminating
+family has increasingly many independent siblings with arbitrarily small
+total basin mass. Paper 200 gives the separate relative-density version;
+Paper 202's stronger prior rate is credited. Root also checked the literal
+`110` rising paths, the identities `8 beta_next = 9 beta + 1`, and each
+prime-power occurrence class that bounds product/lcm loss. The terminating
+supply uses a fixed base multiplier for its growing affine comparison.
+When the multiplier is instead enlarged to make every core pairwise coprime,
+the proof pays its full progression cost and reduces the parameter range
+accordingly. These examples preclude the stated overly small transport
+budgets; they do not prove that every actual trajectory has no finite budget.
+
+A single malformed LaTeX escape in `CORE_RETENTION.md` was corrected during
+integration; its mathematics is unchanged. The source refresh and exact
+priority distinctions are recorded separately in `EXTERNAL_REFRESH.md`.
 
 ## Questions kept open
 
