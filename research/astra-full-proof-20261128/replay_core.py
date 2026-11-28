@@ -1,6 +1,7 @@
-"""Compile this pass's independent closure consumer and external-claim checks.
+"""Compile this pass's eight self-contained local Lean modules from fresh objects.
 
 The density premise and upper-tail premise in ClosureConsumer remain explicit.
+SignedDeathClock has a separate receipt including its two pinned PR200 parents.
 This command does not rebuild any external claimed proof.
 """
 import argparse
@@ -31,6 +32,11 @@ def main():
         "ParityTail": here / "parity/ParityTail.lean",
         "ClosureConsumer": here / "ClosureConsumer.lean",
         "ExternalClaimChecks": here / "arithmetic/ExternalClaimChecks.lean",
+        "CountedDeadline": here / "CountedDeadline.lean",
+        "Resonance": here / "descent/Resonance.lean",
+        "SignedFloor": here / "descent/SignedFloor.lean",
+        "EndpointFlux": here / "descent/EndpointFlux.lean",
+        "RationalControl": here / "parity/RationalControl.lean",
     }
     data = {
         "scope": "Local new modules only; no external full-proof rebuild",

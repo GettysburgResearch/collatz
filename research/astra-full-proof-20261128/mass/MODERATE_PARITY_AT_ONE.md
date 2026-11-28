@@ -51,6 +51,14 @@ $$
 
 This proves (1) at every fixed $a<b$. All inequalities concern the original positive source, including both sides of its own first passage. Finite nonrepeating paths, arbitrary periodic behavior and very late hits of 1 all satisfy the same bound under $\tau_1>m$.
 
+**Signed first moment.** The suffix product allows the factor $4$ at every positive odd state, including 1. The same calculation with $\beta=1/2$ therefore gives $Q_m-m/2\ge-O_A(\sqrt{k\log k})$ for every retained source. Combining this with (3) and using $Q_m-m/2\ge-m/2$ on the exceptional set gives, for fixed $A>2$,
+
+$$
+\mathbb E(Q_m-m/2)\ \ge\ b g\Pr(\tau_1>m)-O_A(\sqrt{k\log k}). \tag{4}
+$$
+
+Consequently even $\liminf_k\mathbb E(Q_m-m/2)/g\le0$ suffices under through-$2^k$ sampling. This estimate uses ordinary signed means and does not ask for an upper-tail concentration theorem. The needed upper bound on that signed mean remains open.
+
 ## Passage from density to every source
 
 An orbit avoiding 1 has an odd departure. Its successor is prime to 3 and every predecessor of that successor also avoids 1. The positive lower-density theorem for the ordinary predecessors of each fixed unit target then forces positive lower density for the nonconvergent set. The ordinary predecessor set of this chosen target, when it is even, may include inserted even states that are skipped by the shortcut map. This causes no difficulty for avoidance of 1: the ordinary and shortcut basins of 1 agree, and all ordinary predecessors of a bad target are bad. If the tail in (1) tends to zero, that positive lower density is impossible. For octaves, average the consecutive octave densities with their lengths to pass to all cutoffs. For through-$2^k$ sampling, a single subsequence with vanishing tail contradicts positive lower density. [Mazur, original manuscript, Theorem 1.1 and Corollary 1.2](https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf) · [External Lean proof audit](https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html)

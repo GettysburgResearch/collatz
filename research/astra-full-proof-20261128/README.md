@@ -2,12 +2,16 @@
 
 **Status: OPEN research, 28 November 2026. No proof of Collatz is claimed.**
 
-**Current focus:** the [finite-date near-critical parity consumer](mass/MODERATE_PARITY_AT_ONE.md)
-reduces full convergence to a vanishing upper tail on the original positive
-integer interval at `m = floor(kappa*k + k^(3/5))`, where
-`kappa = 1/(1-log_2(3)/2)`, with threshold `m/2 + k^(3/5)/16`.
+**Current focus:** the [signed first-moment consumer](descent/FIRST_MOMENT.md)
+reduces full convergence to one upper bound on the original positive integer
+interval. At `M = floor(kappa*k)` and an even `g ~ k^(3/5)`, it suffices that
+`liminf E[Q_(M+g) - Q_M - g/2]/g <= 0`, where
+`kappa = 1/(1-log_2(3)/2)` and the average is over `1 <= n <= 2^k`.
+The same quantity is an exact signed flux between ordinary endpoint residues
+`3 mod 4` and `0 mod 4`. Its required upper bound is open.
 The deduction uses an outside written first-passage theorem and the qualified
-positive-predecessor theorem. The required upper-tail estimate is open.
+positive-predecessor theorem. The earlier
+[near-critical upper-tail test](mass/MODERATE_PARITY_AT_ONE.md) remains sufficient.
 
 This packet pursues statements that would rule out every positive counterexample,
 including both escape and a nonstandard cycle. It deliberately does not target a
@@ -110,6 +114,16 @@ rebuild of the three core Lean modules and nine printed roots is recorded in
 [CORE_LEAN.json](../../reports/astra-full-proof-20261128/CORE_LEAN.json).
 
 ## Evidence policy
+
+The [fourth coordinator review](../../reports/astra-full-proof-20261128/CHECKPOINT_04_REVIEW.md)
+checks the signed first moment, the fixed-frequency reflected control, and the
+[exact denominator ladder](parity/MODERATE_DENOMINATOR_LADDER.md).
+The ladder removes all low denominator levels with the pinned signed starting-trit
+input; a band of order `g` around the critical level remains open.
+The fresh rebuild of eight local Lean modules and their 24 printed roots is in
+[ALL_LOCAL_LEAN.json](../../reports/astra-full-proof-20261128/ALL_LOCAL_LEAN.json).
+The separate [signed death-clock receipt](mass/signed_death_lean.json) includes its
+two pinned PR200 parents. These local compiles do not formalize the analytic inputs.
 
 The [third coordinator review](../../reports/astra-full-proof-20261128/CHECKPOINT_03_REVIEW.md)
 checks this consumer, the [95 positive rational arcs](parity/POSITIVE_RATIONAL_ARCS.md),
