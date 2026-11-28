@@ -93,6 +93,29 @@ fixed-shell result has a shorter proof using the finite correction ceiling
 and the late periodic-phase law; it does not require the additional
 compact-null support hypothesis in the infinitesimal variation identity.
 
+## Fourth checkpoint: sharp clocks and moving period arithmetic
+
+The [fourth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_04_REVIEW.md)
+records the independently reconstructed proofs and the exact boundaries
+of the computational checks.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Sharp moderate-deviation rows](machinery/phase4/SHARP_MODERATE_DEVIATIONS.md) | At every actual odd unit target, a fixed real-correction window retains the sharp worst-target quadratic constant −1/4 for fixed odd depth and physical clock. The square-root prefactor remains valid even for very slow moderate deviations. | The row theorem does not provide a matching upper bound at each individual target or at the exceptional original grade of a ray. |
+| [Tilted entropy transfer](machinery/phase4/TILTED_ENTROPY_TRANSFER.md) and [extended regularity interval](machinery/phase4/EXTENDED_TILTED_INTERVAL.md) | Absolute continuity gives the full combinatorial exponential rate uniformly at supplied integer targets. An exact-integer scalar certificate extends the source-qualified regularity range to [0.21, 0.550024]. Optimizing these rows raises the universal lower counting exponent of an escaping grade to log₂(3/2). | The upper regularity frontier near the entropy threshold and the needed strict upper grade-dimension bound remain open. |
+| [Reverse entropy and optimal inverse cost](machinery/phase4/CRITICAL_REVERSE_ENTROPY.md) | The optimal inverse slope reaches its entropy ceiling exactly when critical reverse entropy per digit vanishes, equivalently when every unit cell has a uniform subexponential density floor. The proof quantifies both directions. | The reverse-entropy question itself is prior work. Exact one-trit and dense-set controls defeat two generic shortcuts to the missing upper bound. |
+| [Moving sparse sums](cycles/phase4/MOVING_SPARSE_SUMS.md) and [moving powered words](cycles/phase4/MOVING_POWERED_WORDS.md) | A fixed r moving terms gives complete denominator rate at least 1/r, with rational quantization; a positive sum has full rate when the clock gcd has no prime at most r. This extends to any fixed number of arbitrary moving templates and sublinear connectors on a primitive rational cycle. | The number of terms is fixed. Arbitrary high-complexity periods are not covered. |
+| [Moving residues and proper arcs](cycles/phase4/MOVING_RESIDUES.md) | Between subexponential-height cycle endpoints, every genuinely mixed proper arc has only subexponential gcd with the full determinant, including noncoprime clocks and all prime powers. | Full cancellation can coexist with small gcd for all proper pieces. No argument forces the conflicting proper cancellation. |
+| [Finite shell test](escape/phase4/FINITE_SHELL_DETECTOR.md) and [harmonic source phase](escape/phase4/HARMONIC_SOURCE_PHASE.md) | A finite monotone two-date test and a single source–endpoint phase statistic have explicit profiles through the entire critical window, uniformly in the physical date. A finite whitelist controls every common transient endpoint. | Proving the relevant late-time cancellation or homogenization is still the decisive escape question. |
+| [Affine word membership](phase4/AFFINE_MEMBERSHIP.md) | A complete polynomial-time decoder recognizes a supplied rational affine word, with soundness and completeness in Lean. The direct flat-rational matrix interface and base-dependent reachability obstruction are checked separately. | The unknown word in vector reachability has unbounded length. Decoding a supplied word does not find it. |
+
+The [slow-tail rigidity theorem](machinery/phase4/STOPPING_TIME_TAIL_RIGIDITY.md)
+shows why a power saving for the full slow population would already be a
+global logarithmic stopping theorem. The [dyadic affine-pair recurrence](escape/phase4/AFFINE_PAIR_RETURNS.md)
+has an [ordinary terminating-pair obstruction](escape/phase4/ORDINARY_PAIR_RECURRENCE_BARRIER.md)
+to its infinite-time transfer, so that route cannot be closed by changing
+the order of the quantifiers.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -125,12 +148,14 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [third complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_03_LEAN.json)
-passed **13 modules and 353 declarations, including 39 private
+The [fourth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_04_LEAN.json)
+passed **17 modules and 403 declarations, including 45 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
-legality, nonresonant merger inequalities and physical inverse budgets. The
+legality, complete word decoding, nonresonant merger inequalities,
+physical inverse budgets, exact positive-lift minimization, simple mixed
+arcs and the generic finite-orbit whitelist. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.

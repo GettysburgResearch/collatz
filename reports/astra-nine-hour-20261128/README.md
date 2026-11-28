@@ -39,3 +39,15 @@ The third publication adds the [ordinary-observable and cycle review](CHECKPOINT
 second published commit's exact [integrity receipt](CHECKPOINT_02_PUBLISHED_INTEGRITY.json)
 and [publication record](CHECKPOINT_02_PUBLICATION.json). The third Lean
 replay audits 353 declarations, including 39 private declarations.
+
+The fourth publication adds the [sharp-clock and moving-period review](CHECKPOINT_04_REVIEW.md),
+[complete seventeen-module replay](CHECKPOINT_04_LEAN.json),
+[five paired finite controls](CHECKPOINT_04_CONTROLS.json), and
+[scientific-source manifest](CHECKPOINT_04_SOURCES.json). Its replay
+audits 403 declarations, including 45 private declarations. The exact
+third publication [record](CHECKPOINT_03_PUBLICATION.json) and
+[clean-checkout integrity receipt](CHECKPOINT_03_PUBLISHED_INTEGRITY.json)
+are preserved with it. The fourth snapshot includes the source-qualified
+tilted regularity extension certified by 2,900 rational interval cells;
+the scalar computation and its imported analytic criterion are reviewed
+separately.
