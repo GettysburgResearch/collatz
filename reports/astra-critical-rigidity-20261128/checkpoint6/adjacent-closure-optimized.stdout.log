@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "exceptional_detours": 613,
+    "level_common_evens": 16057,
+    "positive_adjacent_loops": 7927,
+    "prefixes": 7927,
+    "sign_flips": 1801,
+    "swapped": 1791
+  },
+  "longest": {
+    "source": 71,
+    "prefix_clock": 40,
+    "closed_clock": 77,
+    "joint_odd_grade": 64
+  },
+  "negative_adjacent_control": {
+    "clock": 38,
+    "grades": [
+      24,
+      24
+    ]
+  }
+}

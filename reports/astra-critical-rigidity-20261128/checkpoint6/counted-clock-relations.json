@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:31:26.583929+00:00",
+  "script": "research/astra-critical-rigidity-20261128/literature/check_counted_clock_relations.py",
+  "sha256": "2b78d12b4bd130752b40fce893ae80c044faf1c91282b6813ae497c9ac378b9d",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.06,
+      "stdout": "{\"distinct_place_pivots\": 72, \"eligible_members\": 1373, \"full_size_margin_parameters\": 512, \"negative_secondary_exponents\": 36, \"nontrivial_projective_content\": 72, \"pair_difference_forms\": 2376, \"rectangles\": 72, \"shared_divisor_packs\": 286}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.139,
+      "stdout": "{\"distinct_place_pivots\": 72, \"eligible_members\": 1373, \"full_size_margin_parameters\": 512, \"negative_secondary_exponents\": 36, \"nontrivial_projective_content\": 72, \"pair_difference_forms\": 2376, \"rectangles\": 72, \"shared_divisor_packs\": 286}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact rectangular monomial local products, projective content, parameter margins, and chronological divisor packs. The effective count uses separately reviewed published Diophantine theorems.",
+  "source_stable": true,
+  "optimized_output_identical": true
+}

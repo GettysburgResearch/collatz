@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-clean-checkout-validation/v1",
+  "started_utc": "2026-11-28T01:09:27.061293+00:00",
+  "local_validation_commit": "8e2dfc6dc2a9814d096c7d3e6f1b7407817999d9",
+  "tree": "7641e768552993b4548090db0a5465193a0d5381",
+  "tracked_files": 549,
+  "missing_tracked_files": [],
+  "initial_status": "clean",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.754,
+  "stdout_sha256": "a005e1b3991694cb8b6778a9b699bc63928557984997793c3a59ff02839e655e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Complete selected tree in a clean checkout; integrity validation is not mathematical proof. API publication uses the identical tree with different commit metadata."
+}

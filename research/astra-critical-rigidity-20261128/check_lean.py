@@ -33,6 +33,8 @@ MODULES = {
         "Calendar-weighted prefix/suffix identities for actual finite-dimensional submodule ranks with arbitrary endpoint dimensions, and the dimension bound from shared independent directions. The analytic endpoint estimate remains a written proof."),
     "OrderedMismatchWindows": ("cycles/OrderedMismatchWindows.lean", "Collatz.OrderedMismatchWindows",
         "Exact total length of wrapped fixed-budget mismatch windows, permutation of terminal costs, and the summed finite endpoint inequality. No limiting mismatch or denominator theorem is formalized."),
+    "EventFactorRank": ("cycles/EventFactorRank.lean", "Collatz.EventFactorRank",
+        "Independence of nonnegative weighted prime-valuation rows from strict pairwise overlap bounds, the common-point interval gap estimate, and the resulting finite-dimensional rank obstruction. The full Collatz gcd inputs and integrated height estimates remain written proofs."),
     "ReferenceDivisibility": ("formal/ReferenceDivisibility.lean", "Collatz.ReferenceDivisibility",
         "Integer-cleared actual and reference affine laws imply a complete dyadic divisor and its nonzero height cost. No asymptotic height statement or Subspace Theorem is formalized."),
     "RotationOccupation": ("cycles/RotationOccupation.lean", "Collatz.RotationOccupation",

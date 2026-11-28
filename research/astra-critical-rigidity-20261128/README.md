@@ -102,6 +102,37 @@ This is a statement about the worst source at each budget; the sources vary. The
 
 The [fifth coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint5/REVIEW.md) independently reconstructs all five arguments. The universal translation certificate passed two different exact computations and central normal/optimized replays, including actual positive lifts of one-odd periods 3 through 10 and signed rational centers. These written constructions and asymptotic consequences are not represented as additional Lean roots. The accumulated formal inventory remains the 43 roots described above.
 
+## Sixth mathematical checkpoint
+
+**The complete unmatched-clock problem now has an exact static arithmetic formulation.** For two increasing odd calendars of the same grade, consider
+
+\[
+\sum_{i=1}^{p}3^{p-i}(2^{u_i}-2^{v_i})=2^L-3^p,
+\qquad 0\le u_1<\cdots<u_p<L,\quad 0\le v_1<\cdots<v_p<L.
+\]
+
+Let \(M(P)\) be the largest such \(L\) with \(1\le p\le P\). The [actual forward closure](ordinary/ADJACENT_CYCLE_CLOSURE.md) proves
+
+\[
+M(P)+2\le K(2P+3),\qquad K(G)\le M(16(G+1)).
+\]
+
+Consequently the proposed \(O(G\log G)\) law for **all** unmatched schedules is equivalent to \(L=O(p\log p)\) for this one ordered carry equation. Every ordinary prefix can be closed at a linear extra odd-grade cost. This is stronger in scope than the preceding equivalence restricted to a supplied periodic tail. It does not decide the remaining arithmetic bound.
+
+| Claim | Statement | Evidence and boundary |
+|---|---|---|
+| P14: exact-grade primitive obstructions | For every sufficiently large exact grade \(p\), there are positive adjacent rational phases with joint primitive period \(L\ge(1-o(1))p\log_2p\), each arm having grade \(p\), and only \(O(p/(\log p)^2)\) mismatch dates. | [Primitive pair construction](ordinary/PRIMITIVE_SPARSE_PAIR_CLOSURES.md). A long common-odd event run and a forced mismatch prove genuine joint primitivity. Arbitrarily thin primitive periodic pairs are also dense in every surviving source cylinder. |
+| C8: all origins pay for a near rotation | Uniformly over proper lags, the fraction of ordinary origins with paired logarithmic height at most \(Kp/s\) tends to zero for every fixed \(K\). In particular \(\min_\ell s_\ell\overline{Z}/p\to\infty\). Rational cycles with bounded \(s\overline{Z}/p\) have \(\liminf s\log_2q/p\ge1/4\). | [Uniform rotation height](cycles/UNIFORM_ROTATION_HEIGHT.md). Wrapped windows may span multiple laps; the denominator condition uses mean height rather than only the mismatch locations. |
+| C9: balanced minima force increasing mismatch cost | Above balanced-minimum ratio \(0.96355/2+\varepsilon\), ordinary cycles satisfy \(\min_\ell s_\ell\log p/p\to\infty\). | [Growing-budget pressure](cycles/BALANCED_MINIMUM_GROWING_BUDGET.md). The sparse actual-window pressure input is source-qualified at the exact PR213 commit. Low and high artificial joins are charged separately. |
+| C10: rank, occupation and simultaneous near periods | Ordinary cycles have \(\min_\ell s_\ell(r_*+1)^2/p\to\infty\). Moving divisor groups with \(r^2s=O(p)\) capture vanishing logarithmic mass and negligible paired-date density. Positive occupation confines all low-cost shifts to one bounded-order subgroup. | [Rank tradeoff](cycles/ROTATION_RANK_TRADEOFF.md) and [approximate rotation subgroup](cycles/APPROXIMATE_ROTATION_SUBGROUP.md). These statements allow a postselected group. A bounded-order near period is not itself a contradiction. |
+| O9: every actual nonreturn has a large full closure denominator | The periodic closure of the first \(t\) actual parities from a fixed positive integer \(n\) has \(q_t\ge2^t/(4800M(n,t)t^{14})\) unless the source itself returns. Its modular \(2,3\)-group has order \(\omega(t^2)\); short bands have an effective superlinear log-lcm bound. | [Prefix closure denominators](literature/PREFIX_CLOSURE_DENOMINATORS.md). \(M(n,t)\) is read from the prefix and bounded for each fixed source. Individual last-exception locations remain ineffective. The result holds on convergent sources too. |
+| O10: an effective count of short extra modular relations | For any one binary itinerary and arbitrary chosen divisors \(q_t\mid\lvert2^t-3^{g_t}\rvert\) with \(q_t\ge2^{t/2}\), at most \(\exp(CB^3\ln(2B))\) dates admit an off-clock relation of sup norm at most \(Bt\). | [Counted clock relations](literature/COUNTED_CLOCK_RELATIONS.md). The count is uniform and effective over the entire itinerary; the locations need not be. It uses published Evertse–Ferretti and Evertse theorems, with the recent Noubissie preprint supplying motivation only. |
+| C11: growing arithmetic in signed prefix closures | On every fixed ordinary source, nonreturn closures have odd-numerator rank at least \((1/\sqrt3-o(1))\sqrt t\). If the source eventually has native period \(P\), the stronger bound is \((1/(2P)-o(1))t\). | [Signed prefix rank](cycles/PREFIX_CLOSURE_NUMERATOR_RANK.md). The objects of growing rank are rational periodic closures. The original ordinary source may already have converged; the Lucas-factorial mechanism is credited to Weaver Paper 161. |
+
+All these written proofs were independently reconstructed by the coordinator; the primary quantitative inputs were read in their original sources. Five exact programs passed central normal and optimized replays with identical output. Their finite tests include 7,927 actual pair closures, 9,504 actual prefix closures, 337,392 chronological gcd comparisons, and signed numerator-rank controls.
+
+The new [EventFactorRank.lean](cycles/EventFactorRank.lean) proves the weighted valuation-row independence criterion, the shared-point gap, and its finite-dimensional overlap obstruction. Its three public roots passed a strict fresh-object compilation and separate import/axiom audit. The cumulative formal inventory is now **45 central public roots, or 46 including the separately rebuilt local motif specialization**. The analytic counting, limiting and full routing arguments remain written proofs. See the [sixth coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint6/REVIEW.md) for exact scope, attribution and source hashes.
+
 ## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.

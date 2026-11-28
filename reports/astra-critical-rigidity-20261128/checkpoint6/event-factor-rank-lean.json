@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:13:52.610556+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "EventFactorRank"
+  ],
+  "compiled": [
+    "EventFactorRank"
+  ],
+  "modules": [
+    {
+      "module": "EventFactorRank",
+      "source": "research/astra-critical-rigidity-20261128/cycles/EventFactorRank.lean",
+      "source_sha256": "51905a9f399041c68bc0feeb46673fb8802b2e5c34863ce6ba91ecd648185fe8",
+      "exit_code": 0,
+      "seconds": 91.92,
+      "public_roots": [
+        "Collatz.EventFactorRank.independent_of_overlap",
+        "Collatz.EventFactorRank.shared_point_gap",
+        "Collatz.EventFactorRank.common_overlap_rank"
+      ],
+      "mathematical_scope": "Independence of nonnegative weighted prime-valuation rows from strict pairwise overlap bounds, the common-point interval gap estimate, and the resulting finite-dimensional rank obstruction. The full Collatz gcd inputs and integrated height estimates remain written proofs."
+    }
+  ],
+  "public_roots": 3,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 3,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T01:21:39.621680+00:00",
+  "seconds": 467.01
+}

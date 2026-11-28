@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:31:26.582868+00:00",
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_prefix_closure_rank.py",
+  "sha256": "9b7fd9b1d36316a125ee33cc41ea07797fd62bd51e9f86d276b7ca55c5516ae4",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.406,
+      "stdout": "{\n  \"actual_repeated_boundary_systems\": 442,\n  \"negative_signed_prefixes\": 120,\n  \"nonreturn_prefixes_with_complete_cancellation\": 31,\n  \"positive_signed_prefixes\": 314,\n  \"prefixes_at_ordinary_returns\": 28,\n  \"repeated_systems_with_nonunit_lcm_surplus\": 147,\n  \"repeated_systems_with_removed_nonunit_gcd\": 31\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.428,
+      "stdout": "{\n  \"actual_repeated_boundary_systems\": 442,\n  \"negative_signed_prefixes\": 120,\n  \"nonreturn_prefixes_with_complete_cancellation\": 31,\n  \"positive_signed_prefixes\": 314,\n  \"prefixes_at_ordinary_returns\": 28,\n  \"repeated_systems_with_nonunit_lcm_surplus\": 147,\n  \"repeated_systems_with_removed_nonunit_gcd\": 31\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact signed rational prefix closures, numerator ranks, Lucas divisibilities, and gcd normalization. The asymptotic rank bounds use separate written arguments.",
+  "source_stable": true,
+  "optimized_output_identical": true
+}

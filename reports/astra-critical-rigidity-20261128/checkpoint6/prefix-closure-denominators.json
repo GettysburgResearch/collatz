@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T01:31:26.583764+00:00",
+  "script": "research/astra-critical-rigidity-20261128/literature/check_prefix_closure_denominators.py",
+  "sha256": "b55404b71494e4f5383584253b4394dc66eca7d918f704d2a8568f3def272810",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.962,
+      "stdout": "{\"closed_prefixes\": 9504, \"lcm_bands\": 528, \"negative_centers\": 1730, \"nonreturns_after_repetition\": 5912, \"nontrivial_overlap_gcds\": 30918, \"overlap_pairs\": 337392, \"physical_returns\": 72, \"proper_reduced_gcds\": 998, \"rational_departures\": 346896, \"small_modulus_group_checks\": 924}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.944,
+      "stdout": "{\"closed_prefixes\": 9504, \"lcm_bands\": 528, \"negative_centers\": 1730, \"nonreturns_after_repetition\": 5912, \"nontrivial_overlap_gcds\": 30918, \"overlap_pairs\": 337392, \"physical_returns\": 72, \"proper_reduced_gcds\": 998, \"rational_departures\": 346896, \"small_modulus_group_checks\": 924}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact reduced denominators of actual prefix closures, signed physical realization, chronological gcds and lcm bands. Published logarithmic-form and Subspace-Theorem inputs are checked separately in the written proof.",
+  "source_stable": true,
+  "optimized_output_identical": true
+}
