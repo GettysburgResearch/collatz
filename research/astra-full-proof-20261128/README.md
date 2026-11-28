@@ -73,6 +73,35 @@ not fully formalized theorems. The local Lean boundaries and printed axiom
 lists are recorded with each packet. The next work targets the unresolved
 global steps, rather than enlarging the finite checks above.
 
+## Second checkpoint: actual terminal arithmetic
+
+[The finite upper-certificate shadow](descent/UPPER_CERTIFICATE_SHADOW.md)
+works at arbitrary odd rank. Every nonnegative signed release excludes the
+corresponding sufficiently long terminal tails from being a least reverse
+defect. A negative release persists under every added upper cycle; its exact
+physical recurrence is the lower integer's own Collatz trajectory. A
+hypothetical bad source, including one on a nonstandard cycle, enters this
+negative chart after an explicit amount of padding. The remaining step is
+therefore an ordinary merger or descent beyond that chart, not an extension
+of the same padding argument.
+
+[The positive sampling calculation](parity/POSITIVE_SAMPLING.md) identifies
+the exact ordinary inverse graph inside a contracting ternary pole transfer.
+Pointwise Green finiteness is proved even under hypothetical escape, so it
+cannot serve as the missing extinction estimate. A global tilted bound is a
+strictly stronger proposed condition.
+
+The mass lane records [concentration of true first-entry cones](mass/FUNNEL_CONCENTRATION.md),
+[uniqueness of a rooted low-mean necklace cut](mass/ROOTED_ROTATION.md), and
+[actual positive controls against a paired predecessor floor](mass/PAIR_FLOOR_TEST.md).
+These retain original integers and distinguish whole components from
+incomparable branches that eventually join the same component.
+
+[The coordinator review](../../reports/astra-full-proof-20261128/CHECKPOINT_02_REVIEW.md)
+reconstructs the arguments and records independent checks. The fresh local
+rebuild of the three core Lean modules and nine printed roots is recorded in
+[CORE_LEAN.json](../../reports/astra-full-proof-20261128/CORE_LEAN.json).
+
 ## Evidence policy
 
 - **LOCALLY COMPILED:** a named Lean file was actually compiled in this pass,
