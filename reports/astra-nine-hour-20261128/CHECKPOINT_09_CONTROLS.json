@@ -1,0 +1,98 @@
+{
+  "scope": "Exact bounded controls for checkpoint nine; infinite conclusions and analytic inputs have a separate review.",
+  "started_utc": "2026-11-28T04:45:20.109062+00:00",
+  "programs": [
+    {
+      "source": "escape/phase9/check_collision_genealogy.py",
+      "sha256": "d8be60235913242b94f383300315c75d7ea7d656aef38d6e5ee4812f9d48f7fa",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/escape/phase9/check_collision_genealogy.py"
+          ],
+          "exit_code": 0,
+          "stdout": "distinct-letter root cell identities 120\nliteral common-prefix angular projections 178\ngrouped-action equality errors rejected 4\n",
+          "stderr": "",
+          "seconds": 0.115
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/escape/phase9/check_collision_genealogy.py"
+          ],
+          "exit_code": 0,
+          "stdout": "distinct-letter root cell identities 120\nliteral common-prefix angular projections 178\ngrouped-action equality errors rejected 4\n",
+          "stderr": "",
+          "seconds": 0.157
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "cycles/phase9/staircase_controls.py",
+      "sha256": "84f190afc2eb19b0ce2286f9b1c5b98b72a43167d7d006cc4441c74852ca2ab0",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/cycles/phase9/staircase_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "544 reduced rational thresholds, including missed clocks; three plateau endpoints.\n51 nonmechanical or mechanical schedules, 47410 complete prefix checks.\nTwo true grid controls keep the clock after breaking the adjacent upper orbit.\n",
+          "stderr": "",
+          "seconds": 0.161
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/cycles/phase9/staircase_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "544 reduced rational thresholds, including missed clocks; three plateau endpoints.\n51 nonmechanical or mechanical schedules, 47410 complete prefix checks.\nTwo true grid controls keep the clock after breaking the adjacent upper orbit.\n",
+          "stderr": "",
+          "seconds": 0.209
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "machinery/phase10/check_fusion_multiplicity.py",
+      "sha256": "c5f1bf9fd47e01a4d0dad48a5ff14388c8ff91d6b34c8a0c1a8f355612d05e4b",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/machinery/phase10/check_fusion_multiplicity.py"
+          ],
+          "exit_code": 0,
+          "stdout": "words, ordered matches, nontrivial cells: 16383 33451 2727\npressure Latin triples: 88572\n",
+          "stderr": "",
+          "seconds": 0.661
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint9-frozen/machinery/phase10/check_fusion_multiplicity.py"
+          ],
+          "exit_code": 0,
+          "stdout": "words, ordered matches, nontrivial cells: 16383 33451 2727\npressure Latin triples: 88572\n",
+          "stderr": "",
+          "seconds": 0.95
+        }
+      ],
+      "same_output": true
+    }
+  ],
+  "finished_utc": "2026-11-28T04:45:22.364545+00:00",
+  "passed": true
+}

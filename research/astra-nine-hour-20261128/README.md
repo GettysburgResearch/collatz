@@ -212,6 +212,21 @@ The pass is testing these remaining statements directly, including new
 tools from the current primary literature. Failed bridges and their
 controls are retained with the exact premise that failed.
 
+## Ninth checkpoint: exact limits and complete threshold inversion
+
+The [ninth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_09_REVIEW.md)
+records the independently reconstructed arguments and their analytic inputs.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Exact collision-energy slope](escape/phase9/EXACT_COLLISION_ENERGY_SLOPE.md) and [individual increments](escape/phase9/INDIVIDUAL_COLLISION_INCREMENTS.md) | The previously open normalized energy limit equals the published cross-branch constant. With the published unit floor, every energy increment converges to that constant. Collision ancestry has a uniform split time, an exact tilted common prefix, and a limiting split law. | These are Haar and stationary collision laws; a specified ordinary integer can remain exceptional. |
+| [Maximum-gain angular tail](escape/phase9/MAXIMUM_GAIN_ANGULAR_TAIL.md) | The prior reciprocal-square order becomes an exact positive tail constant and a tilted angular weak limit. The same gain divided by the ordinary target tends to zero exactly when no positive escape exists. | The ordinary pointwise criterion does not follow from the Haar limit. |
+| [Atomic conformal laws](escape/phase9/ATOMIC_ADELIC_CONFORMAL_LAWS.md) and [actual word kernel](phase9/CONFORMAL_TREE_KERNEL.md) | Uncountably many finite atomic stationary laws exist for the true weighted ternary inverse operator. They lift to compatible binary parity and arbitrarily large positive escaping real coordinates, even agreeing with one integer through any prescribed finite precisions. | The three coordinates are not the same ordinary integer. Exact diagonal integrality remains indispensable. |
+| [Staircase inversion](cycles/phase9/STAIRCASE_INVERSION.md) and [dual Apéry sets](cycles/phase9/DUAL_APERY_CLOCK.md) | Every rational clock threshold is exactly the greatest integer fixed point of its mechanical ceiling schedule. Binary and ternary Apéry boxes interlace in every class modulo the full determinant, and enumerate all schedule fixed points. | The extremal zero-class point need not be near the digit-box average. |
+| [Paired physical grid orbits](cycles/phase9/PAIRED_PHYSICAL_ORBITS.md) | Genuine low bits give adjacent upper/lower orbits from every cycle of odd width below four. The specific upper orbit breaks at the next resolution. | Another orbit can preserve the clock; exact controls isolate the arithmetic conditions still needed for strictness. |
+| [Integer fusion populations](machinery/phase10/INTEGER_FUSION_POPULATIONS.md) | Exact synchronously counted integer classes have almost-sure entropy growth rate, are infinite at the entropy threshold, and are finite above the real drift threshold. The next undisclosed trit's limiting entropy is an explicit fusion-invariant conditional entropy. | Class growth does not prove that the invariant field is independent of the first gap. An intermediate finiteness range also remains open. |
+| [Every extra trit improves positive-temperature pressure](machinery/phase10/ONE_TRIT_PRESSURE.md) | For every positive temperature parameter and every width at least two, the next width has strictly larger optimal entropy-minus-cost pressure. | No gain uniform in width or unresolved limiting-pressure identity is obtained. |
+
 ## Verification and checkpoints
 
 The [replay driver](replay_lean.py) is adapted, with attribution, from
@@ -222,8 +237,8 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [eighth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_08_LEAN.json)
-passed **33 modules and 657 declarations, including 96 private
+The [ninth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_09_LEAN.json)
+passed **35 modules and 725 declarations, including 105 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
@@ -235,8 +250,9 @@ meeting-clock independence, finite mixed-alphabet shortening and exact
 dyadic midpoint accounting, actual counted fusion, finite affine-transporter
 bounds and word freeness, first-hit clock ordering, and finite moment
 separation, rational negative-gap exclusion, finite block savings, grid
-clock and Farey determinants, tilted trace products, and binary affine
-likelihoods. The
+clock and Farey determinants, tilted trace products, binary affine
+likelihoods, actual conformal entrance words, and clock-inversion seams
+and progression interlacing. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.

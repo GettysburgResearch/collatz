@@ -100,3 +100,13 @@ rotation and boundary theorems retain the separate written review.
 
 The eighth replay audits **657 declarations**, including **96 private
 declarations**, under the same strict flags and dependency pins.
+
+The ninth publication adds the [exact-collision, conformal and threshold review](CHECKPOINT_09_REVIEW.md),
+[complete thirty-five-module replay](CHECKPOINT_09_LEAN.json),
+[three paired exact controls](CHECKPOINT_09_CONTROLS.json), and
+[172-source manifest](CHECKPOINT_09_SOURCES.json). It preserves the eighth
+publication's exact [record](CHECKPOINT_08_PUBLICATION.json) and
+[clean-checkout receipt](CHECKPOINT_08_PUBLISHED_INTEGRITY.json). The new
+formal kernels check the actual entrance-word algebra, the seam needed
+for strict rational threshold inversion, and finite Apéry interlacing.
+The replay audits **725 declarations**, including **105 private declarations**.
