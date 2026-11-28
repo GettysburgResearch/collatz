@@ -1,10 +1,57 @@
 # Global rigidity and the critical ordinary clock
 
-**Collatz remains open.** This is the fourteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
+**Collatz remains open.** This is the fifteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
 
 We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes one to `Q_k`; the clock counts shortcut steps. The odd map removes the complete power of two in `3x+1`. These clocks are distinguished throughout.
 
-## New at checkpoint 14
+## New at checkpoint 15
+
+**The optimal denominator exponent has inverse-mismatch order.** For a primitive positive rational odd cycle of period `p`, complete reduced denominator `q`, and at most a fixed `s≥1` native mismatches at some proper rotation, the [sharper theorem](cycles/OPTIMAL_NATIVE_DENOMINATOR_RATE.md) proves
+
+\[
+ (\log_2 3)p\le 2\log_2(3/2)P+2s\log_2q+o_s(p),
+ \qquad
+ \liminf\frac{\log_2q}{p}\ge\frac{\log_2(4/3)}{2s}.
+\]
+
+Here `P` counts native exponents equal to one; on small positive rationals this is different from counting all numerical increases. A two-marker parameter choice in PR212's exact independent-clock construction supplies matching positive rational families with denominator exponent `O(1/s)` for every sufficiently large fixed cutoff. Thus the infimum asymptotic exponent has order `Θ(1/s)`. The proof retains the complete denominator and actual primitivity. It improves the earlier `16^(−s)/s` coefficient by repeating a fixed number of actual laps before taking limits. The ordinary finite-exceptions conclusion remains qualitative: an effective period onset and explicit diverging mismatch function are still open. Root and a separate lane reconstructed both bounds.
+
+**Small denominators can coexist with diffuse heights and arbitrarily slow mismatch growth.** The [shaped rational construction](cycles/DIFFUSE_SMALL_DENOMINATORS.md) has `q>1`, `log q=o(p)`, nearcritical clocks, almost quadratic real minimum, and native exponents only one or two. Its height mass escapes every fixed multiplicative band, uniformly over the band's location. Every fixed collection of matching runs has vanishing relative length, yet an order-five rotation has mismatch count growing more slowly than any prescribed diverging function along a chosen family. This removes the width-concentration caveat from the earlier rational comparison and shows why the next arithmetic step must distinguish denominator one. Exact controls replay complete physical cycles of 104,335 and 32,249 odd steps, including all selected prime-order distances and the full reduced fraction. They do not certify the growing asymptotic construction by numerical extrapolation.
+
+**The computable true gate has an exact ordinary sampling law.** Let `Pgate` consist of starts whose shortcut grade `2Q_t−t` is strictly positive for every positive future date, and let `A` be a union of true components or a fixed-unit first-hit basin, of ordinary density `d(A)`. Under the explicitly retained [source dependencies](mass/GATE_SOURCE_DEPENDENCIES.md), the [sharp source law](mass/SHARP_TRUE_GATE_SAMPLING.md) is
+
+\[
+ \#\bigl(P_{\rm gate}\cap A\cap[X,2X)\bigr)
+ \sim \frac{\sqrt{\log(4/3)}}{2\sqrt\pi}\,
+       d(A)\frac{X}{\sqrt{\log X}}.
+\]
+
+For `d(A)=0`, the statement means the corresponding normalized count tends to zero. Sampling this sparse decidable set recovers the full component distribution in total variation. The [preceding source theorem](mass/TRUE_GATE_SOURCE_LAW.md) also identifies the incoming gate-count measure with the increase of the future minimum of Brownian motion, and gives the arcsine first-gate location. These are statements about the actual future of the sampled integer. The new analytic step retains a path minimum in the ternary mixing argument; the ordinary density and physical bridge inputs remain source-qualified.
+
+**Actual gate-return words have a sharp scale boundary.** The [return-word theorem](mass/TRUE_GATE_PALM_WORDS.md) preserves the sharp source law uniformly in every ternary class through a small positive multiple of `log X`. For any `a=o(√log X)`, the first `a` genuine gate-return words, including the possibility of a missing return, converge in total variation to `a` independent Catalan excursion words. The whole word and its unbounded length are retained. Each specified word of shortcut length `t` has probability `2^(−t)` in the limiting law.
+
+Above that scale, [a deterministic finite-height argument](mass/SUPERCRITICAL_TRUE_GATE_RETURNS.md) gives the opposite conclusion for every distribution on gate starts through `2X`:
+
+\[
+ \operatorname{TV}(\text{actual return words},\text{independent words})
+ \ge 1-2\exp\!\left[-c\frac{a^2}{\log(2X)+a}\right].
+\]
+
+Completed returns with `q` odd steps satisfy `6^q≤n·2^a·5^q`. The experiment that stops after `a` returns or a visit to one takes `O(log X+a)` actual shortcut steps, including a common finite lookahead for gate tests. This deterministic boundary needs no density or mixing input.
+
+**The same finite experiment detects all counterexample mass.** Write `d₁` for the ordinary density of the basin of one. With the source-qualified physical laws, the probability of completing `a` returns from a uniformly sampled gate in `[X,2X)` tends to
+
+\[
+ 1-d_1(1-e^{-t^2/2})
+ \quad\text{if }a/\sqrt{2\log X/\log(4/3)}\to t,
+ \qquad 1-d_1\quad\text{if }a/\sqrt{\log X}\to\infty.
+\]
+
+The proof derives a Rayleigh law for the total gate count before the first visit to one by retaining the terminal mark jointly with the future deficit before conditioning on the rare gate. Other components have infinitely many gates. This identifies a finite observable for the remaining mass; it does not prove an independent zero upper bound for survival.
+
+Two new Lean modules connect the actual finite record theorem to [attained suffix minima and their cocycle](mass/StrictGateCocycle.lean), and prove [the complete native height budget](mass/GateReturnBudget.lean). The separate [ballot control](mass/check_strict_gate_ballot.py) includes the actual odd endpoint bit; [the return-budget control](mass/check_gate_return_budget.py) checks 4,313 completed prefixes from 762 genuine gates, with killed paths retained. The review records the analytic boundary, failed development builds and corrected runs.
+
+## Retained from checkpoint 14
 
 **Every fixed algebraic irrational has superlinear shortcut-parity complexity.** The [written theorem](cycles/ALGEBRAIC_PARITY_COMPLEXITY.md) proves that for every algebraic irrational `z` in the 2-adic integers and every fixed `A`, some `K` and `n₀` satisfy `p_{w_z(Kn)}(n)>An` for all `n≥n₀`. Combining this with Weaver173's prior signed rational theorem, every aperiodic binary word with finite lower linear factor-complexity ratio has transcendental Collatz parity conjugate. No frequency, recurrence or substitution hypothesis is imposed. The conjugate is the 2-adic state realizing the word as its parity sequence; it is not the number whose binary digits are that word.
 
@@ -223,7 +270,7 @@ The number-theory track adds three different conclusions. [Every real bounded mu
 
 ## Lean source and current build status
 
-**Checkpoint 14: twenty-eight modules and all 162 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint14/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Six new roots check weighted sums, finite substitution and the complete scalar boundary identity. Earlier successful and failed development receipts remain preserved. The infinite Diophantine, automata, approximation, counting and measure conclusions are not formalized by these modules. All [51 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint14/finite.json) passed in normal and optimized modes with matching output.
+**Checkpoint 15: thirty modules and all 168 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint15/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Six new roots connect attained actual lifetime floors and strict gate jumps to a native cocycle, and prove the complete finite return height budget. Earlier successful and failed development receipts remain preserved. Infinite Diophantine, approximation, source-counting and probability limits are not formalized by these modules. All [54 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint15/finite.json) passed in normal and optimized modes with matching output.
 
 The [first timeout](../../reports/astra-global-rigidity-20261128/checkpoint1/lean-timeout.json) remains as historical evidence. The old dependency-heavy `CriticalCount.lean` was replaced by `mass/CriticalCountStandalone.lean`, using the same actual-map recurrences with a small dependency closure. It proves signed count additivity, the alternating count after a true visit to one, and a uniform rational drift after a true visit to a fixed nonconvergent anchor.
 
