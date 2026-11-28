@@ -1,10 +1,36 @@
 # Global rigidity and the critical ordinary clock
 
-**Collatz remains open.** This is the thirteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
+**Collatz remains open.** This is the fourteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
 
 We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes one to `Q_k`; the clock counts shortcut steps. The odd map removes the complete power of two in `3x+1`. These clocks are distinguished throughout.
 
-## New at checkpoint 13
+## New at checkpoint 14
+
+**Every fixed algebraic irrational has superlinear shortcut-parity complexity.** The [written theorem](cycles/ALGEBRAIC_PARITY_COMPLEXITY.md) proves that for every algebraic irrational `z` in the 2-adic integers and every fixed `A`, some `K` and `n₀` satisfy `p_{w_z(Kn)}(n)>An` for all `n≥n₀`. Combining this with Weaver173's prior signed rational theorem, every aperiodic binary word with finite lower linear factor-complexity ratio has transcendental Collatz parity conjugate. No frequency, recurrence or substitution hypothesis is imposed. The conjugate is the 2-adic state realizing the word as its parity sequence; it is not the number whose binary digits are that word.
+
+This proof adapts Weaver173's marked finite factor graph and slope-field construction. Liouville bounds replace the rational descent requirement, and a surviving irrational coefficient permits a pivot ordered by its normalized dyadic valuation. The fixed algebraic-coefficient Subspace Theorem then discharges the exceptional subspaces. Weaver's earlier all-Sturmian conclusion and frequency-sensitive finite-complexity bounds are credited; the extension removes the finite constant and frequency restrictions together. Root and the cycle lane independently reconstructed the proof. It does not give a uniform approximation measure for arbitrary moving low-complexity words.
+
+**Uniform algebraic approximation bounds for every intercept of a primitive uniform substitution.** For a primitive aperiodic binary substitution `σ` of constant length, its entire one-sided subshift `Xσ`, and every fixed degree `d`, the [second theorem](cycles/SUBSTITUTION_SUBSHIFT_MEASURE.md) gives
+
+\[
+ v_2\bigl(\Phi(w)-\alpha\bigr)\le C_{\sigma,d}\bigl(1+h(\alpha)\bigr)
+ \quad(w\in X_\sigma,\ [\mathbb Q(\alpha):\mathbb Q]\le d).
+\]
+
+The embedding at two is fixed for each approximant. The constant is uniform over all origins and all approximants of that degree. In particular all these conjugates are transcendental, and a positive integer can match such a parity word for at most `Oσ(1+log n)` letters. A separate [effectivity argument](cycles/SUBSTITUTION_EFFECTIVITY.md) gives a terminating procedure to compute a bound from the substitution and degree; no practical numerical constant is claimed. The proof uses a scalar substitution identity, finite-prefix auxiliary polynomials, compactness of the subshift, Christol–Cobham formal transcendence and elementary height comparison. Classical nonautonomous Mahler methods and prior Collatz substitution exclusions are credited. Root and the ordinary-source lane independently reconstructed it.
+
+**Any fixed list of native matching runs leaves a positive fraction uncovered.** In an ordinary odd cycle of least period `p`, let `P` count exponent-one departures and `L_k(r)` be the total length of its `k` longest exact matching runs against a proper native rotation. The [matching-mass theorem](cycles/NATIVE_MATCHING_MASS.md) proves, for fixed `k`,
+
+\[
+ \max_{0<r<p}(\log_2 3)L_k(r)
+ \le 2\log_2(3/2)P+o_k(p).
+\]
+
+Thus at least about 26.18% of the cycle lies outside any fixed number of matching runs, uniformly in the lag; this remainder can itself consist of many shorter matches. No positive Hamming mismatch density is inferred. The proof extends the prior translated forms to selected intervals and uses a fixed number of repeated actual laps before taking limits. A [rational comparison](cycles/RATIONAL_MATCHING_BARRIER.md) shows why fragmentation and a polynomial real minimum alone do not distinguish denominator one. Its narrow rational examples are already excluded by separate ordinary-width restrictions, so that comparison does not claim to meet every ordinary necessary condition.
+
+Six new [Lean roots](cycles/SubstitutionMass.lean) prove finite weighted sums, substitution composition and the scalar identity with its complete terminal correction. The first semiring proof attempt and its corrected compilation are preserved. The [substitution control](cycles/check_substitution_mass.py) checks actual inverse parity congruences, coefficient supports and first-mismatch valuations; the [matching control](cycles/check_native_matching_mass.py) checks repeated-lap lifting and chronological rise charges. The infinite transcendence, approximation and matching-mass theorems remain written mathematics. Neither high-complexity escaping integer orbits nor arbitrary integer cycles have been eliminated.
+
+## Retained from checkpoint 13
 
 **Every fixed native rotation-mismatch bound forces an exponential complete denominator.** The [new written theorem](cycles/NATIVE_ROTATION_SEPARATION.md) treats every proper shift of a primitive positive rational odd cycle, with arbitrary native division counts, width and number of extrema. If its length is `p`, its complete reduced denominator is `q`, and one proper rotation disagrees at at most a fixed `s` positions, then `q ≥ 2^(c_s p)` for all sufficiently large `p`. In an ordinary integer cycle `q=1`, so the least mismatch count must tend to infinity with period.
 
@@ -197,7 +223,7 @@ The number-theory track adds three different conclusions. [Every real bounded mu
 
 ## Lean source and current build status
 
-**Checkpoint 13: twenty-seven modules and all 156 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint13/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Five new roots check the native-rotation finite cover and exact transport. Earlier successful and failed development receipts remain preserved. The analytic inputs, infinite constructions, Subspace Theorem arguments, equidistribution and asymptotic growth rates are not formalized by these modules. All [49 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint13/finite.json) passed in normal and optimized modes with matching output.
+**Checkpoint 14: twenty-eight modules and all 162 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint14/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Six new roots check weighted sums, finite substitution and the complete scalar boundary identity. Earlier successful and failed development receipts remain preserved. The infinite Diophantine, automata, approximation, counting and measure conclusions are not formalized by these modules. All [51 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint14/finite.json) passed in normal and optimized modes with matching output.
 
 The [first timeout](../../reports/astra-global-rigidity-20261128/checkpoint1/lean-timeout.json) remains as historical evidence. The old dependency-heavy `CriticalCount.lean` was replaced by `mass/CriticalCountStandalone.lean`, using the same actual-map recurrences with a small dependency closure. It proves signed count additivity, the alternating count after a true visit to one, and a uniform rational drift after a true visit to a fixed nonconvergent anchor.
 

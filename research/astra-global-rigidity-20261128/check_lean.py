@@ -47,6 +47,7 @@ MODULES = [
     ("SharedBlockTails", "cycles/SharedBlockTails.lean", "CollatzResearch.SharedBlockTails"),
     ("ClockRectangle", "mass/ClockRectangle.lean", "Collatz.ClockRectangle"),
     ("NativeRotationCover", "cycles/NativeRotationCover.lean", "CollatzResearch.NativeRotationCover"),
+    ("SubstitutionMass", "cycles/SubstitutionMass.lean", "Collatz.SubstitutionMass"),
 ]
 
 
