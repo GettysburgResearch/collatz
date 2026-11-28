@@ -82,6 +82,26 @@ The moving-template consequences are quantitative. Weaver Paper 173 already excl
 
 The central fresh Lean inventory is now **42 distinct locally authored public roots**, with the separate fresh motif specialization giving **43 in total**. The five new roots establish the variable-rank identity and finite wrapped-window aggregation, not the analytic limiting theorems. All five passed the strict fresh-object build and public-root axiom audit. The [fourth coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint4/REVIEW.md) records the independent mathematical reconstruction, exact finite controls, attribution and source hashes.
 
+## Fifth mathematical checkpoint
+
+**A uniform linear bound for the unmatched clock is false.** Let \(K(G)\) be the largest same-date unmatched clock for actual positive odd sources \(s,3s\), with at most \(G\) combined odd departures. The new constructive lower bound and the earlier written upper bound give
+
+\[
+(\tfrac12-o(1))G\log_2G\ \le K(G)=o(G^2).
+\]
+
+This is a statement about the worst source at each budget; the sources vary. The construction does not produce a fixed divergent integer orbit.
+
+| Claim | Statement | Evidence and boundary |
+|---|---|---|
+| P11: universal rational mergers and long ordinary lifts | Every rational \(z=u/q\) with odd \(q>0\) and \(3\nmid uq\), of either sign, is an actual unequal-slope merger of an odd rational source and its triple. These are exactly the possible centers. Positive integer lifts copy any finite part of its future while remaining unmatched. | [Universal construction](ordinary/UNIVERSAL_RATIONAL_MERGERS.md). A complete 19,683-residue native-word certificate contracts every positive translation; all base cases are explicit. One-odd cycles of every prescribed period imply the displayed lower bound. |
+| P12: bounded real witnesses do not solve integrality | All the rational merger sources can be chosen with absolute value below \(2^{40}\) and exact denominator \(q3^d\). Infinitely many already-convergent positive integer targets necessarily require \(d>0\) under any fixed real source bound. | [Bounded witnesses](ordinary/BOUNDED_REAL_WITNESSES.md). The source may have either sign. Real boundedness supplies no smaller ordinary integer witness. |
+| P13: an exact arithmetic frontier for periodic tails | Exactly centered common periodic tails obey an \(O(G\log G)\) bound precisely when every positive rational cycle satisfies \(L/p=O(\log(2+p+\operatorname{ord}_q3))\). In the one-odd subclass this is equivalent to a uniform exponential lower bound for \(\operatorname{ord}_{2^L-3}(3)\). | [Periodic-tail equivalence](ordinary/PERIODIC_PUMP_FRONTIER.md). Both implications use actual cylinders and charge the complete entry grade. It is not an equivalence for arbitrary unmatched schedules. |
+| C7: sparse event height escapes low-rank arithmetic | If \(E\) is the actual postmismatch logarithmic height sum, then a postselected multiplicative group of rank \(o(\sqrt{E/p})\) supplies a vanishing fraction of \(E\), even through freely chosen divisors of those states. For rational cycles, full numerator rank \(r\) satisfies \(p\log_2q\le A+r(r+2)(2A-p)\). | [Weighted divisor-rank theorem](cycles/MISMATCH_EVENT_FACTORS.md). Exact affine gcd estimates and a circle-overlap proof permit arbitrary sparse samples and moving groups. Earlier rank, visit and chronological inventory results are credited. |
+| O8: actual nearby copies construct their own references | If \(K\) pieces of one aperiodic signed rational itinerary each have a second actual copy within displacement \(B\), then \(P\le\exp(C(K+1)/\ln(K+2))[1+\log_2H(x)+B]\). A separated edit return gives the corresponding effective error lower bound. | [Self-copied reference construction](literature/SELF_COPIED_REFERENCE_COVERS.md). It includes overlapping copies, both displacement signs and full cancellation at each phase. It supplies a cover from a given return, not a reason that every orbit must return cheaply. |
+
+The [fifth coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint5/REVIEW.md) independently reconstructs all five arguments. The universal translation certificate passed two different exact computations and central normal/optimized replays, including actual positive lifts of one-odd periods 3 through 10 and signed rational centers. These written constructions and asymptotic consequences are not represented as additional Lean roots. The accumulated formal inventory remains the 43 roots described above.
+
 ## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.

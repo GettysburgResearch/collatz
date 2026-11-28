@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "script": "research/astra-critical-rigidity-20261128/literature/check_self_copied_covers.py",
+  "sha256": "7e3e177c878d5d88a4b0c2f7eaa3c9acd250ade7ad55665e697a9881488e9558",
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.279,
+      "stdout": "complete_alignments 728\ndiscarded_zero_displacement 115\ndisjoint_copies 8618\ninteger_gcd_windows 8048\nmatched_bits 15853\noverlapping_copies 443\nperiodic_hits 0\nproper_cancellations 468\nseparated_runs 9061\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.361,
+      "stdout": "complete_alignments 728\ndiscarded_zero_displacement 115\ndisjoint_copies 8618\ninteger_gcd_windows 8048\nmatched_bits 15853\noverlapping_copies 443\nperiodic_hits 0\nproper_cancellations 468\nseparated_runs 9061\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Exact finite arithmetic controls, with the universal mathematical argument separately reviewed."
+}
