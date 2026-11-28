@@ -64,3 +64,16 @@ and [integrity receipt](CHECKPOINT_04_PUBLISHED_INTEGRITY.json) are retained.
 The critical inverse pressure, arithmetic transport formula and actual
 clock-group law have separate written reviews; their unresolved
 endpoints are not promoted by the finite certificates.
+
+The sixth publication adds the [fourfold-cycle and terminal-mass review](CHECKPOINT_06_REVIEW.md),
+[complete twenty-three-module replay](CHECKPOINT_06_LEAN.json),
+[paired finite controls](CHECKPOINT_06_CONTROLS.json), and
+[scientific-source manifest](CHECKPOINT_06_SOURCES.json). Its strict replay
+audits 471 declarations, including 50 private declarations. The fifth
+publication's exact [record](CHECKPOINT_05_PUBLICATION.json) and
+[clean-checkout receipt](CHECKPOINT_05_PUBLISHED_INTEGRITY.json) are retained.
+The separate [external logarithm replay attempt](EXTERNAL_LOG_RATIO_REPLAY_ATTEMPT.json)
+stopped on a missing cached Mathlib module after three successful local
+dependencies; it did not reach the imported theorem and is not counted as
+a successful replay. Its source and author-supplied audit review are
+[recorded explicitly](../../research/astra-nine-hour-20261128/phase6/RECENT_LOGARITHM_INPUT.md).

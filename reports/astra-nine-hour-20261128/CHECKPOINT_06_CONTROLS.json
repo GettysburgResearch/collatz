@@ -1,0 +1,68 @@
+{
+  "scope": "Exact bounded controls for checkpoint six; not proofs of the asymptotic written theorems",
+  "started_utc": "2026-11-28T03:13:26.847594+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "cycles/phase6/mixed_code_controls.py",
+      "sha256": "14be440bbf576d5475231c8c15971082c149809438df2bc28ee8271b101d6614",
+      "runs": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint6-frozen/cycles/phase6/mixed_code_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "Exact rational brackets: .5248 < d < .5249; 3.0196 < log_2(3)/d < 3.0198.\n542 reduced clock slopes and 21634 full-offset windows passed pairing checks.\nAll 31444 Sidon subsets of two paired and one singleton block passed 251552 projections.\n",
+          "stderr": "",
+          "seconds": 1.326
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint6-frozen/cycles/phase6/mixed_code_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "Exact rational brackets: .5248 < d < .5249; 3.0196 < log_2(3)/d < 3.0198.\n542 reduced clock slopes and 21634 full-offset windows passed pairing checks.\nAll 31444 Sidon subsets of two paired and one singleton block passed 251552 projections.\n",
+          "stderr": "",
+          "seconds": 1.355
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "escape/phase6/check_frequency_blocks.py",
+      "sha256": "aaa8dc4d4b7f05d6c6843424066676998ffdca6b6e6ee584bb0bd89c30e58180",
+      "runs": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint6-frozen/escape/phase6/check_frequency_blocks.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 12264 lifted fusion cylinders, 2679 first-hit marks, 7544 literal early hits, 3770 dyadic midpoint identities\n",
+          "stderr": "",
+          "seconds": 0.229
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint6-frozen/escape/phase6/check_frequency_blocks.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 12264 lifted fusion cylinders, 2679 first-hit marks, 7544 literal early hits, 3770 dyadic midpoint identities\n",
+          "stderr": "",
+          "seconds": 0.344
+        }
+      ],
+      "same_output": true
+    }
+  ],
+  "finished_utc": "2026-11-28T03:13:30.104160+00:00"
+}

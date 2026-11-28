@@ -136,6 +136,27 @@ uses only explicit terminating odd runs and a sparse nonregular language.
 It gives an elementary alternate proof of the already known
 nonautomaticity result, with Wren and Dhiman–Pandey credited.
 
+## Sixth checkpoint: cycle width and critical terminal mass
+
+The [sixth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_06_REVIEW.md)
+records the independent reconstruction, prior-work comparison and external
+source audit.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Fourfold odd spread](cycles/phase6/FOURFOLD_ODD_SPREAD.md) | Every fixed odd width below four permits only finitely many primitive positive cycles, using the recent logarithm-ratio theorem. A mixed physical tag alphabet forces approximation exponent greater than 3.0196. | No effective exceptional-period bound or exclusion of an isolated additional cycle is obtained. The [external theorem and incomplete independent replay](phase6/RECENT_LOGARITHM_INPUT.md) have a separate audit boundary. |
+| [Terminal Fourier decay](escape/phase6/LOCAL_TRIT_AND_RAJCHMAN.md) | Genuine fixed-target, minimum-cell and escaping-component correction laws have Fourier decay of order at most (log frequency)^(−1/2+epsilon), with a target-uniform unnormalized bound. | The nonzero fixed resonant escape amplitude survives this high-frequency estimate. |
+| [Sharp quantile covering](escape/phase6/CRITICAL_QUANTILE_COVER.md) | Every fixed mass quantile occupies Θ(T/√log T) cells at mesh 1/T. Along an actual escaping ray, fixed-discard physical collision energy is Θ(√log y). | Untrimmed moving spikes and the critical Hausdorff measure are not determined by these estimates. |
+| [Complete reciprocal clock heat law](escape/phase6/SIGNED_RECIPROCAL_HEAT.md) | Every full signed physical-clock row has an exact absolutely summable boundary expansion and a joint binomial limit, including its real cross section. | The limit permits nonzero escape mass and an arbitrary aggregate shape. |
+| [Thirty-three correction sets](machinery/phase6/POSITIVE_CORRECTION_SUMS.md) | The sum of the closed first-hit real correction sets at any 33 supplied odd unit roots contains [0,33/64], by an elementary positive inverse construction. | Support thickness supplies no probability or convolution-density lower bound. |
+| [Prescribed-speed real marks](machinery/phase6/PRESCRIBED_SPEED_MARKS.md) | At every supplied root, infinite first-hit rays realize every speed in the certified tilted interval with an explicit Hausdorff lower bound and finite interval sums. | This does not establish the critical ternary reverse-entropy endpoint. |
+
+The [energy crossover model](escape/phase6/ENERGY_CROSSOVER.md) verifies that
+the new Fourier decay is compatible with the existing moving-root energy
+lower bound, even with exact stabilization of the relative measures.
+The [dyadic variation estimate](escape/phase6/MIDPOINT_VARIATION.md) quantifies
+an earlier divergence criterion and credits its source.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -168,8 +189,8 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [fifth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_05_LEAN.json)
-passed **21 modules and 441 declarations, including 47 private
+The [sixth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_06_LEAN.json)
+passed **23 modules and 471 declarations, including 50 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
@@ -177,7 +198,8 @@ legality, complete word decoding, nonresonant merger inequalities,
 physical inverse budgets, exact positive-lift minimization, simple mixed
 arcs, the generic finite-orbit whitelist, occupation flows, last-trit
 repairs and transport duals, integral odd numerator recovery, and
-meeting-clock independence. The
+meeting-clock independence, finite mixed-alphabet shortening and exact
+dyadic midpoint accounting. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.
