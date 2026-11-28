@@ -1,0 +1,53 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:29:11.167929+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_fixed_ordinary_fibres.py": "3dfcf0b2bc2cd1e20b23ae9f38fbe15df3bca159ae1138a64f75ac10b9cd41ff",
+    "research/astra-critical-rigidity-20261128/ordinary/FIXED_ORDINARY_LANDING_FIBRES.md": "1ea14d6ec9d9978035136d39befc055126cc320e85e4411e3d72b2c8f57f60f0",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.38,
+      "stdout_sha256": "00db93ceb251c45a02663a65b27d0bac180ebc4f6611e95aa547511c9ac5d518",
+      "result": {
+        "counts": {
+          "distinct_source_terminal_checks": 877,
+          "empty_fibres": 142,
+          "integer_window_fibres": 420,
+          "negative_rational_inputs": 451,
+          "ordinary_nonmerger_dates": 40830,
+          "signed_preimages": 945
+        },
+        "scope": "Finite first-landing, mask, signed-preimage and nonmerger checks"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.416,
+      "stdout_sha256": "00db93ceb251c45a02663a65b27d0bac180ebc4f6611e95aa547511c9ac5d518",
+      "result": {
+        "counts": {
+          "distinct_source_terminal_checks": 877,
+          "empty_fibres": 142,
+          "integer_window_fibres": 420,
+          "negative_rational_inputs": 451,
+          "ordinary_nonmerger_dates": 40830,
+          "signed_preimages": 945
+        },
+        "scope": "Finite first-landing, mask, signed-preimage and nonmerger checks"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual ordinary prefix fibres, signed reduced first preimages, terminal residue mask and true long nonmerger controls. Infinite fixed-source correction and density assertions remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:29:11.964197+00:00"
+}

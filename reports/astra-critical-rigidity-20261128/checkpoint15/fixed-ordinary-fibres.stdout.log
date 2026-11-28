@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "distinct_source_terminal_checks": 877,
+    "empty_fibres": 142,
+    "integer_window_fibres": 420,
+    "negative_rational_inputs": 451,
+    "ordinary_nonmerger_dates": 40830,
+    "signed_preimages": 945
+  },
+  "scope": "Finite first-landing, mask, signed-preimage and nonmerger checks"
+}

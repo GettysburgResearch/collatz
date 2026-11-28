@@ -1,0 +1,59 @@
+{
+  "arithmetic": {
+    "integer_subsets": 2048,
+    "maximal_forbidden_edge_rounds": 6144,
+    "weak_Sidon_subsets": 594
+  },
+  "code": {
+    "largest_individual_preimage": 8,
+    "off_diagonal_coincidences": 5308,
+    "prefix_tests": 16
+  },
+  "native": {
+    "genuine_ordinary_sources": 129,
+    "native_edges_per_source": 11,
+    "nontrivial_pair_word_collisions": 73,
+    "realized_matched_symbols": [
+      {
+        "instances": 20,
+        "symbol": [
+          1,
+          2
+        ]
+      },
+      {
+        "instances": 19,
+        "symbol": [
+          1,
+          4
+        ]
+      },
+      {
+        "instances": 206,
+        "symbol": [
+          2,
+          2
+        ]
+      },
+      {
+        "instances": 210,
+        "symbol": [
+          2,
+          4
+        ]
+      },
+      {
+        "instances": 159,
+        "symbol": [
+          4,
+          4
+        ]
+      }
+    ]
+  },
+  "rates": {
+    "limiting_width_four_theta": 0.31970447789744294,
+    "width_four_round_exponent": 0.16354626523068472,
+    "width_threshold_numerical": 4.1321644097656005
+  }
+}

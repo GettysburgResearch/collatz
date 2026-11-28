@@ -1,0 +1,144 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:29:11.965432+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_reciprocal_landing.py": "40183387395027277bdbb81f6e43bc2563312602b4ba358f476f7faf74e37bc1",
+    "research/astra-critical-rigidity-20261128/ordinary/RECIPROCAL_LANDING_WORDS.md": "885ef03a8d6a5e3cf110090bfeee5e79145bf11c179ef98338cd137522fc6c9a",
+    "research/astra-critical-rigidity-20261128/ordinary/RECIPROCAL_FIXED_TARGETS.md": "e925489d5bbd847cc889cbf5f53223e255fd01dd63c242e3aa53f13a61e1fc3e",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 1.236,
+      "stdout_sha256": "ce51c415026d7ae2f6f9a40a5d75196492ebf036195e8a00b9e2dbb4672a784e",
+      "result": {
+        "counts": {
+          "all_short_word_controls": 2104,
+          "exact_crossing_cases": 166,
+          "forbidden_column_cases": 85,
+          "half_window_physical_sources": 29524,
+          "positive_crossings": 162,
+          "row_physical_sources": 14889
+        },
+        "cumulative_marks_through_grade_10": {
+          "1": "243428270567/274877906944",
+          "3": "2177853653/4294967296",
+          "4": "3433268601/8589934592",
+          "6": "35354343/134217728",
+          "7": "236522659/1073741824"
+        },
+        "scope": "Finite exact arithmetic; no asymptotic fitting",
+        "selected_rows": [
+          {
+            "asymptotic_scale": "160/243",
+            "grade": 4,
+            "raw_mass": "19029/32768",
+            "width": 80
+          },
+          {
+            "asymptotic_scale": "262/729",
+            "grade": 5,
+            "raw_mass": "44725/131072",
+            "width": 131
+          },
+          {
+            "asymptotic_scale": "1220/729",
+            "grade": 5,
+            "raw_mass": "970997410186657793/576460752303423488",
+            "width": 610
+          },
+          {
+            "asymptotic_scale": "1456/2187",
+            "grade": 6,
+            "raw_mass": "2759643/4194304",
+            "width": 728
+          },
+          {
+            "asymptotic_scale": "2200/6561",
+            "grade": 7,
+            "raw_mass": "21964103/67108864",
+            "width": 1100
+          },
+          {
+            "asymptotic_scale": "39364/59049",
+            "grade": 9,
+            "raw_mass": "22832172711/34359738368",
+            "width": 19682
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 1.449,
+      "stdout_sha256": "ce51c415026d7ae2f6f9a40a5d75196492ebf036195e8a00b9e2dbb4672a784e",
+      "result": {
+        "counts": {
+          "all_short_word_controls": 2104,
+          "exact_crossing_cases": 166,
+          "forbidden_column_cases": 85,
+          "half_window_physical_sources": 29524,
+          "positive_crossings": 162,
+          "row_physical_sources": 14889
+        },
+        "cumulative_marks_through_grade_10": {
+          "1": "243428270567/274877906944",
+          "3": "2177853653/4294967296",
+          "4": "3433268601/8589934592",
+          "6": "35354343/134217728",
+          "7": "236522659/1073741824"
+        },
+        "scope": "Finite exact arithmetic; no asymptotic fitting",
+        "selected_rows": [
+          {
+            "asymptotic_scale": "160/243",
+            "grade": 4,
+            "raw_mass": "19029/32768",
+            "width": 80
+          },
+          {
+            "asymptotic_scale": "262/729",
+            "grade": 5,
+            "raw_mass": "44725/131072",
+            "width": 131
+          },
+          {
+            "asymptotic_scale": "1220/729",
+            "grade": 5,
+            "raw_mass": "970997410186657793/576460752303423488",
+            "width": 610
+          },
+          {
+            "asymptotic_scale": "1456/2187",
+            "grade": 6,
+            "raw_mass": "2759643/4194304",
+            "width": 728
+          },
+          {
+            "asymptotic_scale": "2200/6561",
+            "grade": 7,
+            "raw_mass": "21964103/67108864",
+            "width": 1100
+          },
+          {
+            "asymptotic_scale": "39364/59049",
+            "grade": 9,
+            "raw_mass": "22832172711/34359738368",
+            "width": 19682
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual physical numerator-grid reciprocal weights, all short native-word cylinders, weighted long-word majorants and exact per-mark crossing identities from an independent finite geometric recursion. Asymptotic total variation and perpetuity tails remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:29:14.650323+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T05:29:13.347056+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/ordinary/check_real_dyadic_routing.py": "a497f513f03f95361c1430f9d7b71464c6071ed4ec416336c636e5cf4fbf7a10",
+    "research/astra-critical-rigidity-20261128/ordinary/QUANTITATIVE_REAL_DYADIC_ROUTING.md": "6c5efd4d25ec863b14bcd337761c79d383df29f555bd47f27f2159d09a271cfa",
+    "research/astra-critical-rigidity-20261128/ordinary/check_target_renewal.py": "3bf16f0f6c492ba430ac5881940acc5f6fb38981de14fa59def0d108b735eb8b",
+    "research/astra-critical-rigidity-20261128/ordinary/check_reciprocal_landing.py": "40183387395027277bdbb81f6e43bc2563312602b4ba358f476f7faf74e37bc1",
+    "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.272,
+      "stdout_sha256": "00c59c364ac8b74fb095002ef5c8ffbafbc84032fa98c92ba7a1012284473414",
+      "result": {
+        "counts": {
+          "full_binary_word_mark_windows": 372,
+          "high_carry_motifs": 16107,
+          "low_carry_motifs": 2773,
+          "true_native_dates": 67506
+        },
+        "extreme_routes": [
+          {
+            "adjust": 1,
+            "block10": 732,
+            "block5": 31,
+            "clock": 2392,
+            "grade": 1527,
+            "prefix": 75
+          },
+          {
+            "adjust": 5,
+            "block10": 116,
+            "block5": 9,
+            "clock": 513,
+            "grade": 311,
+            "prefix": 60
+          },
+          {
+            "adjust": 6,
+            "block10": 700,
+            "block5": 30,
+            "clock": 2258,
+            "grade": 1500,
+            "prefix": 52
+          }
+        ],
+        "scope": "Exact finite backwards constructions and genuine forward first landings"
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.301,
+      "stdout_sha256": "00c59c364ac8b74fb095002ef5c8ffbafbc84032fa98c92ba7a1012284473414",
+      "result": {
+        "counts": {
+          "full_binary_word_mark_windows": 372,
+          "high_carry_motifs": 16107,
+          "low_carry_motifs": 2773,
+          "true_native_dates": 67506
+        },
+        "extreme_routes": [
+          {
+            "adjust": 1,
+            "block10": 732,
+            "block5": 31,
+            "clock": 2392,
+            "grade": 1527,
+            "prefix": 75
+          },
+          {
+            "adjust": 5,
+            "block10": 116,
+            "block5": 9,
+            "clock": 513,
+            "grade": 311,
+            "prefix": 60
+          },
+          {
+            "adjust": 6,
+            "block10": 700,
+            "block5": 30,
+            "clock": 2258,
+            "grade": 1500,
+            "prefix": 52
+          }
+        ],
+        "scope": "Exact finite backwards constructions and genuine forward first landings"
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Constructive real-window and dyadic-word routes to prescribed first ordinary marks, independently replayed under the true forward numerator map, including very small windows and large marks. The arbitrary-parameter construction and fixed-orbit optimal costs remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T05:29:13.920451+00:00"
+}

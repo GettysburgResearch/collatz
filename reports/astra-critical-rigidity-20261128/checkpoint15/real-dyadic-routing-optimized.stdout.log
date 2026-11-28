@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "full_binary_word_mark_windows": 372,
+    "high_carry_motifs": 16107,
+    "low_carry_motifs": 2773,
+    "true_native_dates": 67506
+  },
+  "extreme_routes": [
+    {
+      "adjust": 1,
+      "block10": 732,
+      "block5": 31,
+      "clock": 2392,
+      "grade": 1527,
+      "prefix": 75
+    },
+    {
+      "adjust": 5,
+      "block10": 116,
+      "block5": 9,
+      "clock": 513,
+      "grade": 311,
+      "prefix": 60
+    },
+    {
+      "adjust": 6,
+      "block10": 700,
+      "block5": 30,
+      "clock": 2258,
+      "grade": 1500,
+      "prefix": 52
+    }
+  ],
+  "scope": "Exact finite backwards constructions and genuine forward first landings"
+}
