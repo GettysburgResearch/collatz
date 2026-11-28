@@ -1,0 +1,5 @@
+import IntegerMinorConcentration
+
+#print axioms Collatz.IntegerMinorConcentration.modulus_dvd_det_mul_coefficient
+#print axioms Collatz.IntegerMinorConcentration.abs_det_le_column_product
+#print axioms Collatz.IntegerMinorConcentration.det_eq_zero_of_large_row_modulus

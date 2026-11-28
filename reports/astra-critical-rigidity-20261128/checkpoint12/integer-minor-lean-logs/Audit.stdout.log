@@ -1,0 +1,7 @@
+'Collatz.IntegerMinorConcentration.modulus_dvd_det_mul_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.IntegerMinorConcentration.abs_det_le_column_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.IntegerMinorConcentration.det_eq_zero_of_large_row_modulus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

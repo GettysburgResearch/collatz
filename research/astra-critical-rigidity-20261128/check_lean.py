@@ -51,6 +51,8 @@ MODULES = {
         "The pair-order and pair-sum injectivity kernel for an integer octave with exact doubling, two-valued affine tags and a transitive physical shift. The cyclic integer sign propagation, weighted identity and Eisenstein separation are proved. Construction of this input structure from an ordinary Collatz cycle remains a written argument."),
     "ResidueFiberOrder": ("cycles/ResidueFiberOrder.lean", "Collatz.ResidueFiberOrder",
         "A periodic ordered lift with an equivariant group-valued residue, strict order preservation on each residue fiber and a full cyclic phase has residue multiplier of exactly the full period. The finite-order monotonicity and phase obstruction are proved. The physical dyadic lift construction, inversion count and width-nine sufficient condition remain written arguments."),
+    "IntegerMinorConcentration": ("literature/IntegerMinorConcentration.lean", "Collatz.IntegerMinorConcentration",
+        "An exact integer row congruence implies divisibility of the determinant times every coefficient; a columnwise Leibniz bound and a nonzero coefficient force a minor to vanish below its modulus. Coefficient heights are unrestricted. The physical packet selection, Cramer basis step, valuation-level counting and effective asymptotic landing bounds remain written."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 
