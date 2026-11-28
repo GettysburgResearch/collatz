@@ -1,0 +1,32 @@
+{
+  "status": "finite_examples_pass",
+  "completed_utc": "2026-11-28T11:36:17.222713+00:00",
+  "ledger_sha256": "5221a3e4836da6f34d0ad533ee5d46b862a1bb94ba9b7af11ecd3313ff5d1def",
+  "finite_examples": [
+    {
+      "X": 7,
+      "h": 3,
+      "grade_counts": {
+        "1": 3,
+        "2": 3,
+        "3": 1
+      }
+    },
+    {
+      "X": 9,
+      "h": 3,
+      "grade_counts": {
+        "0": 1,
+        "1": 3,
+        "2": 4,
+        "3": 1
+      }
+    }
+  ],
+  "primary_source": {
+    "url": "https://zenodo.org/api/records/23268832/files/tilted-syracuse-laws.tex/content",
+    "sha256": "3855fc67c0c30c0e8e78af3de93fd85279d4376f2cb7c1e5d63d24433ce70afc",
+    "bytes": 109199
+  },
+  "scope": "Finite examples replayed exactly. Analytic tilt transfer is written; the critical closing sign remains unproved."
+}

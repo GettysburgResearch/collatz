@@ -1,0 +1,14 @@
+Collatz.DyadicAnchor.dyadic_numerator_odd (p : ℤ) (d : ℕ) (hp : Odd p) (hd : 0 < d) : Odd (3 * p + 2 ^ d)
+Collatz.DyadicAnchor.dyadic_step_formula (p : ℤ) (d e : ℕ) :
+  Collatz.DyadicAnchor.affine e (↑p / 2 ^ d) = ↑(3 * p + 2 ^ d) / 2 ^ (d + e)
+Collatz.DyadicAnchor.dyadic_step_denominator (p : ℤ) (d e : ℕ) (hp : Odd p) (hd : 0 < d) :
+  (Collatz.DyadicAnchor.affine e (↑p / 2 ^ d)).den = 2 ^ (d + e)
+Collatz.DyadicAnchor.dyadic_step_denominator_grows (p : ℤ) (d e : ℕ) (hp : Odd p) (hd : 0 < d) (he : 0 < e) :
+  (↑p / 2 ^ d).den < (Collatz.DyadicAnchor.affine e (↑p / 2 ^ d)).den
+Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch (z : ℤ) :
+  ∃ e, 0 < e ∧ (Collatz.DyadicAnchor.affine e ↑z).den ≠ 1
+'Collatz.DyadicAnchor.dyadic_numerator_odd' depends on axioms: [propext]
+'Collatz.DyadicAnchor.dyadic_step_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicAnchor.dyadic_step_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicAnchor.dyadic_step_denominator_grows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch' depends on axioms: [propext, Classical.choice, Quot.sound]

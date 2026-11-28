@@ -1,0 +1,38 @@
+Collatz.CollisionThreshold.term_bound.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i) (i : ι) :
+  0 ≤ w i ^ 2 / (4 * P i) ∧ w i ^ 2 / (4 * P i) ≤ (1 - b) * w i / 8
+Collatz.CollisionThreshold.summable_cycle_contributions.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i) :
+  Summable fun i => w i ^ 2 / (4 * P i)
+Collatz.CollisionThreshold.median_le_two_mass_bound.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ) (_hb : 0 ≤ b)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i) :
+  Collatz.CollisionThreshold.median b w P ≤ (b ^ 2 + (1 - b) ^ 2) / 8
+Collatz.CollisionThreshold.deficit_lower_bound.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ) (hb : 0 ≤ b)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i) :
+  b * (1 - b) / 4 ≤ 1 / 8 - Collatz.CollisionThreshold.median b w P
+Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ)
+  (hb : 0 < b) (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i)
+  (hlower : 1 / 8 ≤ Collatz.CollisionThreshold.median b w P) : b = 1
+Collatz.CollisionThreshold.near_maximal_collision_mass.{u_1} {ι : Type u_1} (b c ε : ℝ) (w P : ι → ℝ) (hc : 0 < c)
+  (hcb : c ≤ b) (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i)
+  (hlower : 1 / 8 - ε ≤ Collatz.CollisionThreshold.median b w P) : c * (1 - b) ≤ 4 * ε
+Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision.{u_1} {ι : Type u_1} (w P : ι → ℝ)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : 1 + ∑' (i : ι), w i ≤ 1) :
+  Collatz.CollisionThreshold.median 1 w P = 1 / 8
+Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass.{u_1} {ι : Type u_1} (b : ℝ) (w P : ι → ℝ) (hb : 0 < b)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hs : Summable w) (hm : b + ∑' (i : ι), w i ≤ 1) (hP : ∀ (i : ι), 2 ≤ P i) :
+  1 / 8 ≤ Collatz.CollisionThreshold.median b w P ↔ b = 1
+'Collatz.CollisionThreshold.term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CollisionThreshold.summable_cycle_contributions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CollisionThreshold.median_le_two_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CollisionThreshold.deficit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.CollisionThreshold.near_maximal_collision_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

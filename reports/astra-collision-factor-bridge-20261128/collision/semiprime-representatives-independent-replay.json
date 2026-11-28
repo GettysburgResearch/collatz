@@ -1,0 +1,113 @@
+{
+  "schema": "collatz-independent-semiprime-representative-review/v1",
+  "success": true,
+  "time_utc": "2026-11-28T10:03:40.143333+00:00",
+  "source_sha256": {
+    "research/astra-collision-factor-bridge-20261128/SEMIPRIME_REPRESENTATIVES.md": "fc7e34ce599ccbcb73c9fd85ab4116b282640e2ef2932a95b282db0f699af51f",
+    "research/astra-collision-factor-bridge-20261128/semiprime_representative.py": "43e2af9c7c647ff139343e9f1c552f9e134d0870f7cc6840d8c296fc3d34dab3",
+    "reports/astra-collision-factor-bridge-20261128/semiprime-representatives.json": "2402c22eaa5d751b82d6c2a119b4dacf73241121c583d0d750fcdd6e86095fe1"
+  },
+  "certificates_replayed": 7,
+  "actual_edges_replayed": 214,
+  "rows": [
+    {
+      "start": 3,
+      "representative": 143,
+      "factors": [
+        11,
+        13
+      ],
+      "bit_length": 8,
+      "meeting_value": 5,
+      "native_clocks": [
+        1,
+        62
+      ]
+    },
+    {
+      "start": 6,
+      "representative": 143,
+      "factors": [
+        11,
+        13
+      ],
+      "bit_length": 8,
+      "meeting_value": 5,
+      "native_clocks": [
+        2,
+        62
+      ]
+    },
+    {
+      "start": 1,
+      "representative": 143,
+      "factors": [
+        11,
+        13
+      ],
+      "bit_length": 8,
+      "meeting_value": 1,
+      "native_clocks": [
+        0,
+        66
+      ]
+    },
+    {
+      "start": 27,
+      "representative": 437,
+      "factors": [
+        19,
+        23
+      ],
+      "bit_length": 9,
+      "meeting_value": 41,
+      "native_clocks": [
+        1,
+        5
+      ]
+    },
+    {
+      "start": 97,
+      "representative": 517,
+      "factors": [
+        11,
+        47
+      ],
+      "bit_length": 10,
+      "meeting_value": 97,
+      "native_clocks": [
+        0,
+        4
+      ]
+    },
+    {
+      "start": 85,
+      "representative": 713,
+      "factors": [
+        23,
+        31
+      ],
+      "bit_length": 10,
+      "meeting_value": 85,
+      "native_clocks": [
+        0,
+        11
+      ]
+    },
+    {
+      "start": 871,
+      "representative": 871,
+      "factors": [
+        13,
+        67
+      ],
+      "bit_length": 10,
+      "meeting_value": 871,
+      "native_clocks": [
+        0,
+        0
+      ]
+    }
+  ],
+  "scope": "Independent exact-integer replay of the existing bounded certificate output; no import or call of the producer/checker, no new search, no verification of the imported analytic existence theorem."
+}

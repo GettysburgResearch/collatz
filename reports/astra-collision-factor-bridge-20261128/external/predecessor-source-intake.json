@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-predecessor-source-intake-and-attempt/v1",
+  "recorded_utc": "2026-11-28T09:51:30.642392+00:00",
+  "source_identity_checks_passed": true,
+  "fresh_theorem_rebuild_completed": false,
+  "archives": [
+    {
+      "url": "https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/positive-lower-density-collatz-predecessors-v1.1-source.zip",
+      "bytes": 55103,
+      "sha256": "55ceb4df0cca17ae728dc65b30bf5077000e1b47f2dc322454eea9f637ac75b3"
+    },
+    {
+      "url": "https://www.proofatlas.ai/papers/positive-density-log-time-collatz/positive-density-log-time-collatz-v2.1-source.zip",
+      "bytes": 914975,
+      "sha256": "23f5cac4d66e696401144658752cf180a13ce70373a122f00693e1e1fe969c1f"
+    }
+  ],
+  "original_compiler": "leanprover/lean4:v4.30.0-rc2",
+  "original_mathlib_commit": "5450b53e5ddc75d46418fabb605edbf36bd0beb6",
+  "baseline_source_commit": "830b9d3f38f2a8da8cd921bf6a9310dd69336fd0",
+  "assembled_lean_files": 389,
+  "public_interface_import_closure_files": 388,
+  "assembly_manifest_sha256": "9da50833f18f8427523da5cd89ff4a0dbf1198fe09a9a4acccf4583898ac2ec3",
+  "public_roots": [
+    "CollatzPredecessorDensity.predecessors_positive_lower_density",
+    "CollatzPredecessorDensity.nonconvergence_positive_lower_density_of_counterexample",
+    "CollatzPredecessorDensity.universal_reaches_one_of_arbitrarily_dense_convergence"
+  ],
+  "compatibility_probe": {
+    "compiler": "Lean4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "proof_sources_modified": false,
+    "passed_project_source_compilations": [
+      {
+        "module": "FormalConjectures.Wikipedia.CollatzConjecture",
+        "code": 0,
+        "seconds": 1.492,
+        "source_sha256": "12eebf530f2ceae6d458c8eaf681d67c2d4757dd7a9bc67e86677bea62691d5a"
+      },
+      {
+        "module": "Erdos1135.Basic",
+        "code": 0,
+        "seconds": 45.07,
+        "source_sha256": "550df54592aaa699633dba72ae59af98fdbd694c395cb35d839d769dd5617f38"
+      },
+      {
+        "module": "Erdos1135.CollatzStep",
+        "code": 0,
+        "seconds": 90.32,
+        "source_sha256": "184ca72cc9ded302abba16d303dc6f6c878f5d88368897d072a67e200ac936d7"
+      },
+      {
+        "module": "Erdos1135.Terras.Core.Defs",
+        "code": 0,
+        "seconds": 43.544,
+        "source_sha256": "3873e6919732d9de23477ac5fded933090c9cd8ddbf35df8edbc2efa94167fe3"
+      },
+      {
+        "module": "Erdos1135.Tao.Syracuse.Defs",
+        "code": 0,
+        "seconds": 34.28,
+        "source_sha256": "b375da400df822eacd367816678bbc6811a60c10ef1081e963ba82faca4945c7"
+      },
+      {
+        "module": "Erdos1135.Tao.Syracuse.Basic",
+        "code": 0,
+        "seconds": 36.599,
+        "source_sha256": "1e352d2ab64ba74bfb6604a9260bf8d00f65de9a7e6107105daf75f7df4319f2"
+      },
+      {
+        "module": "Erdos1135.Tao.Syracuse.CollatzBridge",
+        "code": 0,
+        "seconds": 45.532,
+        "source_sha256": "14ec13769614971e20c75ee51599f767ffaeea37476d37a30db2a0f0d4acd5f7"
+      }
+    ],
+    "stopped_module": "Erdos1135.StoppingTime",
+    "stopped_reason": "Per-module wall-time limit180seconds; no completed theorem-root compilation or audit.",
+    "scope": "Compatibility experiment in an available newer environment, not a replay of the original pinned release."
+  },
+  "scope": "All archived and assembled file hashes checked. Author-reported historical verification remains external evidence. Seven completed source compilations and a timeout do not certify any announced predecessor theorem."
+}

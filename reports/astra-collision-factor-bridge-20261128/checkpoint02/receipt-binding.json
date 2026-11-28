@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "checked_utc": "2026-11-28T09:42:54.687468+00:00",
+  "new_public_roots": 24,
+  "checks": [
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean.json",
+      "source_sha256": "dc5cb6697547896c061bad0459dc4e874ab2d64f923a565a59db7444fd52de64",
+      "roots": 8
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean.json",
+      "source_sha256": "0cd185d7ae80b2d9bbedcecbd64be418f30fa7f6a0e091729d151ac1af2f1875",
+      "roots": 5
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean.json",
+      "source_sha256": "8e84ddabc1a772821322359f63f036415b817f046c786e56a2edb816e6b528b5",
+      "roots": 8
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt.json",
+      "source_sha256": "1e42f0e2da56dd410fb197f7653662c99fb04b978a9f168993dcce1b6511060f",
+      "roots": 3
+    }
+  ],
+  "binary_controls_bound": true,
+  "scope": "Read and recompute all listed source, runner and completed-log digests; not a second compilation or mathematical certification.",
+  "affine_finite_guard_bound": true
+}

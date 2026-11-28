@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-factoring-source-intake/v1",
+  "date_utc": "2026-11-28",
+  "repository": "gfreund123/factoring-in-p",
+  "scope": "Selected complete Markdown source files read at immutable heads. API metadata for 100 most recently updated PRs inspected. No claim of full repository review, formal replay, or validation of all external analytic inputs.",
+  "sources": [
+    {
+      "key": "296rank2",
+      "ref": "2d451e192641f62531aca378f0dc34bcccb81adb",
+      "path": "notes/coverage-frontier-2026-11-27.md",
+      "sha": "6ea20e2ddf4e12df118d9b14e3a9637feb8ea335",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/2d451e192641f62531aca378f0dc34bcccb81adb/notes/coverage-frontier-2026-11-27.md",
+      "content_length": 15427
+    },
+    {
+      "key": "282",
+      "ref": "1a0a7c640b734c72f79f870dcb97d52dc1b0c8a3",
+      "path": "research/all-semiprime-scales/PROOF.md",
+      "sha": "2ea31fc880ac4736180b8b3e35d58f55564c8426",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/1a0a7c640b734c72f79f870dcb97d52dc1b0c8a3/research/all-semiprime-scales/PROOF.md",
+      "content_length": 4998
+    },
+    {
+      "key": "355",
+      "ref": "17bbd7a645ce721fe3a4284975952b904865e47f",
+      "path": "research/abundance-frontier/turnpike/RESIDUE_LATTICE.md",
+      "sha": "d0df68396a3237f369b61c5eeac8a64fc9b0a82b",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/17bbd7a645ce721fe3a4284975952b904865e47f/research/abundance-frontier/turnpike/RESIDUE_LATTICE.md",
+      "content_length": 13750
+    },
+    {
+      "key": "355digits",
+      "ref": "17bbd7a645ce721fe3a4284975952b904865e47f",
+      "path": "research/abundance-frontier/turnpike/DENSE_TAILS.md",
+      "sha": "acc1f8dc19ad030a1667c5f1976190fd24b9de63",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/17bbd7a645ce721fe3a4284975952b904865e47f/research/abundance-frontier/turnpike/DENSE_TAILS.md",
+      "content_length": 5668
+    },
+    {
+      "key": "359balanced",
+      "ref": "ed5f35db43d346f26a28218c7f8088c5755aa4f3",
+      "path": "research/fast-factor-phase-2026-11-27/notes/balanced-cubic-spectrum.md",
+      "sha": "c55d5051cd54a9dd284c04ebf548d2d643687d1c",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/ed5f35db43d346f26a28218c7f8088c5755aa4f3/research/fast-factor-phase-2026-11-27/notes/balanced-cubic-spectrum.md",
+      "content_length": 10887
+    },
+    {
+      "key": "359critical",
+      "ref": "ed5f35db43d346f26a28218c7f8088c5755aa4f3",
+      "path": "research/fast-factor-phase-2026-11-27/notes/critical-mask-tempering.md",
+      "sha": "ac2e165e0d11b01cd59eecde4b96831012e187d8",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/ed5f35db43d346f26a28218c7f8088c5755aa4f3/research/fast-factor-phase-2026-11-27/notes/critical-mask-tempering.md",
+      "content_length": 3099
+    },
+    {
+      "key": "359acquisition",
+      "ref": "ed5f35db43d346f26a28218c7f8088c5755aa4f3",
+      "path": "research/fast-factor-phase-2026-11-27/notes/critical-acquisition-audit.md",
+      "sha": "ff03e87b4ac9fee0e0b65289c36ee369987a0205",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/ed5f35db43d346f26a28218c7f8088c5755aa4f3/research/fast-factor-phase-2026-11-27/notes/critical-acquisition-audit.md",
+      "content_length": 3891
+    },
+    {
+      "key": "30",
+      "ref": "34fd3aa1bc805f7df524385de6cf9c9eb3b69cc2",
+      "path": "docs/cubic-constant-precision.md",
+      "sha": "c0635ea6024f35b8f72aa15f3f353d80d553508e",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/34fd3aa1bc805f7df524385de6cf9c9eb3b69cc2/docs/cubic-constant-precision.md",
+      "content_length": 6944
+    },
+    {
+      "key": "31",
+      "ref": "7541f06ef7b80d949e443c713aee7256d114f0d0",
+      "path": "research/semiprime-collision-2026-11-26/notes/collision-extraction.md",
+      "sha": "c0d77ac8eccee18dd7a901cef7e31c324dd63371",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/7541f06ef7b80d949e443c713aee7256d114f0d0/research/semiprime-collision-2026-11-26/notes/collision-extraction.md",
+      "content_length": 6472
+    },
+    {
+      "key": "35",
+      "ref": "41c80c3716454659cb0f984947c8ac4682cb4bb9",
+      "path": "notes/joint-cf-2026-11-26.md",
+      "sha": "0099f0acd34f26db3c69aca1631d22c56dff1cc1",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/41c80c3716454659cb0f984947c8ac4682cb4bb9/notes/joint-cf-2026-11-26.md",
+      "content_length": 8179
+    },
+    {
+      "key": "21",
+      "ref": "a9d77718c6648899e45d53db1206212425af6da0",
+      "path": "research/sparse-overflow/carry-and-certificates.md",
+      "sha": "83cbcaf8d78be640aaa1d9bf3b052ea3cc48d09f",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/a9d77718c6648899e45d53db1206212425af6da0/research/sparse-overflow/carry-and-certificates.md",
+      "content_length": 14288
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "collatz-checkpoint-receipt-binding/v1",
+  "success": true,
+  "recorded_utc": "2026-11-28T11:03:03.516308+00:00",
+  "additional_audited_roots": 23,
+  "total_pass_audited_roots": 65,
+  "checks": [
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean.json",
+      "roots": 7,
+      "source_sha256": "fc0f9f17c6c1d239d820045e156866c51399363d4b335755441d7bd3b3d5d85e",
+      "runner_sha256": "144537e33a81bd2d6a17dd480554f7cd378fea7bc84574affd4bc95431c800be",
+      "all_completed_logs_bound": true
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean.json",
+      "roots": 5,
+      "source_sha256": "bb7ca871ba215bba5d4d02ee01149df85cd55c9bf71f97b80dac27119eff5474",
+      "runner_sha256": "475e9da33e9240ff2f6d988e8d67ad95e625f8f8f12712b1fd6fc4edad689508",
+      "all_completed_logs_bound": true
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt.json",
+      "roots": 8,
+      "current_reproduction_runner_sha256": "bc241911a3021ba91a5b2d10b3c1de8b2d602f5a99b29337954a57f0f5afc1ed",
+      "all_compiled_sources_and_completed_logs_bound": true,
+      "runner_binding_scope": "Current reproducible runner independently hashed here; original receipt records exact compiler commands and source digests."
+    },
+    {
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt.json",
+      "roots": 3,
+      "current_reproduction_runner_sha256": "38d5da17571175191a3b897696c9272d1c27abe81d8ffcef3376957b6808dbae",
+      "all_compiled_sources_and_completed_logs_bound": true,
+      "runner_binding_scope": "Current reproducible runner independently hashed here; original receipt records exact compiler commands and source digests."
+    }
+  ],
+  "primary_cartier_exact_checks": 544,
+  "general_matrix_cases": 108,
+  "native_cylinder_checks": 6132,
+  "full_fibre_terms": 1124,
+  "ordinary_window_comparisons": 4050,
+  "normal_optimized_substantive_outputs_identical": true,
+  "scope": "Independently recomputed current source and successful log hashes, complete root inventories and finite output bindings. Not a second Lean compilation or mathematical certification of analytic proofs."
+}

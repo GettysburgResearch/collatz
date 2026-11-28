@@ -1,0 +1,45 @@
+{
+  "schema": "collatz-boundary-energy-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T09:17:30.656906+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "source_sha256": "8e84ddabc1a772821322359f63f036415b817f046c786e56a2edb816e6b528b5",
+  "runner_sha256": "5457543d86a7912593ba16b12986472bc77dd3914e9ff9bb87eb1c2c9bb7753f",
+  "public_roots": [
+    "Collatz.BoundaryEnergy.basin_label_doubles",
+    "Collatz.BoundaryEnergy.basin_label_odd",
+    "Collatz.BoundaryEnergy.boundary_creation",
+    "Collatz.BoundaryEnergy.paired_boundary_bound",
+    "Collatz.BoundaryEnergy.finite_shell_bound",
+    "Collatz.BoundaryEnergy.even_boundary_affine",
+    "Collatz.BoundaryEnergy.affine_merger_unique",
+    "Collatz.BoundaryEnergy.two_mergers_equal_slope"
+  ],
+  "scope": "Eight finite roots for the actual basin-label equations, exact dyadic boundary creation, finite shell variation, affine discrepancy, and prescribed unequal-slope merger uniqueness. The infinite summability/zero-one theorem, irrational-dilation step, sharp binary-label construction and imported positive-predecessor implication remain written. Cached pinned dependencies reused; no cold rebuild or independent LeanChecker run.",
+  "steps": [
+    {
+      "name": "BoundaryEnergy",
+      "exit_code": 0,
+      "elapsed_seconds": 1.831,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "elapsed_seconds": 1.384,
+      "stdout_sha256": "7986d8981253456932c4756bce1fc0c3a7594d79951addb87418fa87ebe9ec97",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_unchanged": true,
+  "audited_roots": 8,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-28T09:17:33.874282+00:00"
+}

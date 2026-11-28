@@ -1,0 +1,43 @@
+{
+  "schema": "collatz-latest-factoring-intake/v1",
+  "inspected_utc": "2026-11-28 11:11:07 UTC",
+  "purpose": "Evaluate actual recent primary source for prescribed full-conductor coefficients and strong Fourier/rare-event estimates.",
+  "sources": [
+    {
+      "repository": "gfreund123/factoring-in-p",
+      "pull_request": 361,
+      "head_commit": "a376fed33a238b4eb61fe222007851a9b4e85d76",
+      "path": "research/factoring-nine-hour-2026-11-28/constructive/circuit-content.md",
+      "git_blob_sha": "d13532b9973be9b3291fb38f49a20a865ff62085",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/a376fed33a238b4eb61fe222007851a9b4e85d76/research/factoring-nine-hour-2026-11-28/constructive/circuit-content.md",
+      "read_scope": "Complete file read; written mathematical arguments inspected; external implementation and Lean claims not independently rebuilt in this lane."
+    },
+    {
+      "repository": "gfreund123/factoring-in-p",
+      "pull_request": 361,
+      "head_commit": "a376fed33a238b4eb61fe222007851a9b4e85d76",
+      "path": "research/factoring-nine-hour-2026-11-28/quantum/prime-power-newton-shifts.md",
+      "git_blob_sha": "d02f87dc9700eba33553fab2ba082735dadc3a5c",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/a376fed33a238b4eb61fe222007851a9b4e85d76/research/factoring-nine-hour-2026-11-28/quantum/prime-power-newton-shifts.md",
+      "read_scope": "Complete file read; written mathematical arguments inspected; external implementation and Lean claims not independently rebuilt in this lane."
+    },
+    {
+      "repository": "gfreund123/factoring-in-p",
+      "pull_request": 365,
+      "head_commit": "10a5d69497a931061a14b21860f1ebcd45fe0161",
+      "path": "research/astra-load-bearing-2026-11-28/transforms/notes/isotropic-fourier.md",
+      "git_blob_sha": "62d95bfe861f11bc67b7d13f044e17d03121fee1",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/10a5d69497a931061a14b21860f1ebcd45fe0161/research/astra-load-bearing-2026-11-28/transforms/notes/isotropic-fourier.md",
+      "read_scope": "Complete file read; written mathematical arguments inspected; external implementation and Lean claims not independently rebuilt in this lane."
+    },
+    {
+      "repository": "gfreund123/factoring-in-p",
+      "pull_request": 365,
+      "head_commit": "10a5d69497a931061a14b21860f1ebcd45fe0161",
+      "path": "research/astra-load-bearing-2026-11-28/README.md",
+      "git_blob_sha": "e3c50e6669b4afd9de8deb8b00bb9ea8256f195b",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/10a5d69497a931061a14b21860f1ebcd45fe0161/research/astra-load-bearing-2026-11-28/README.md",
+      "read_scope": "Complete file read; written mathematical arguments inspected; external implementation and Lean claims not independently rebuilt in this lane."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "collatz-single-edge-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T09:57:57.864997+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "source_sha256": {
+    "SingleEdgeSplit": "4c9aabf3b20510f277c11d6ebd903f5053b076ed20a04e5f9b46962681b13d79"
+  },
+  "runner_sha256": "7eb9a670170ccd9abb5e3f3da5d455693b15a5f9ab369fdf7176151e99126b7e",
+  "public_roots": [
+    "Collatz.SingleEdgeSplit.splitAt_unchanged",
+    "Collatz.SingleEdgeSplit.splitAt_even",
+    "Collatz.SingleEdgeSplit.iterate_eq_before_hit",
+    "Collatz.SingleEdgeSplit.splitAt_hit_iff",
+    "Collatz.SingleEdgeSplit.splitAt_two_cycle",
+    "Collatz.SingleEdgeSplit.splitAt_scaled_cycle",
+    "Collatz.SingleEdgeSplit.five_genuine_tail",
+    "Collatz.SingleEdgeSplit.five_modified_return",
+    "Collatz.SingleEdgeSplit.five_eventual_rescaling",
+    "Collatz.SingleEdgeSplit.finite_table_preserved",
+    "Collatz.SingleEdgeSplit.unitFive_unchanged",
+    "Collatz.SingleEdgeSplit.unitFive_unit_change",
+    "Collatz.SingleEdgeSplit.unitFive_period",
+    "Collatz.SingleEdgeSplit.unitFive_least_period",
+    "Collatz.SingleEdgeSplit.unitFive_hit_iff"
+  ],
+  "scope": "Fifteen finite roots: unchanged branches, exact even halving, generic preservation of prefixes and first-hit sets, the q-to-2q cycle and phase scaling, genuine and modified five tails, eventual rescaling after actual first hit, any prescribed finite branch table, and the single-unit five-to-nine edit with least period ten. Infinite-density, Brownian, minimum-clock and limiting-collision claims remain written and source-qualified. Cached pinned dependencies reused; no cold rebuild or independent LeanChecker run.",
+  "steps": [
+    {
+      "name": "SingleEdgeSplit",
+      "exit_code": 0,
+      "elapsed_seconds": 398.182,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "elapsed_seconds": 519.02,
+      "stdout_sha256": "02e010f2aa71e3f57f89df7d389a3c10d4a05675ccddcfbfff54d63a273818cb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_unchanged": true,
+  "audited_roots": 15,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-28T10:13:15.072780+00:00"
+}

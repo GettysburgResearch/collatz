@@ -1,0 +1,22 @@
+Collatz.SparseSampling.mass_le_marked_add_failure.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DecidableEq β]
+  (w e : α → β → ℕ) (s : Finset α) (t b : Finset β) (transfer : ∀ x ∈ s, ∀ y ∈ t, y ∉ b → w x y ≤ e x y) :
+  Collatz.SparseSampling.mass w s t ≤ Collatz.SparseSampling.mass w s (t ∩ b) + Collatz.SparseSampling.mass e s t
+Collatz.SparseSampling.sparse_sampling_budget.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DecidableEq β] [DecidableEq α]
+  (w e : α → β → ℕ) (s bad : Finset α) (t b : Finset β) (L H : ℕ) (row_lower : ∀ x ∈ s, x ∉ bad → L ≤ ∑ y ∈ t, w x y)
+  (column_upper : ∀ y ∈ t ∩ b, ∑ x ∈ s, w x y ≤ H) (transfer : ∀ x ∈ s, ∀ y ∈ t, y ∉ b → w x y ≤ e x y) :
+  L * s.card ≤ H * (t ∩ b).card + L * (s ∩ bad).card + Collatz.SparseSampling.mass e s t
+Collatz.SparseSampling.sparse_sampling_budget_of_bounds.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DecidableEq β]
+  [DecidableEq α] (w e : α → β → ℕ) (s bad : Finset α) (t b : Finset β) (L H E R : ℕ)
+  (row_lower : ∀ x ∈ s, x ∉ bad → L ≤ ∑ y ∈ t, w x y) (column_upper : ∀ y ∈ t ∩ b, ∑ x ∈ s, w x y ≤ H)
+  (transfer : ∀ x ∈ s, ∀ y ∈ t, y ∉ b → w x y ≤ e x y) (exception_bound : (s ∩ bad).card ≤ E)
+  (failure_bound : Collatz.SparseSampling.mass e s t ≤ R) : L * s.card ≤ H * (t ∩ b).card + L * E + R
+Collatz.SparseSampling.iterate_eq_of_meeting.{u_3} {γ : Type u_3} (F : γ → γ) (x y : γ) (t k : ℕ)
+  (h : F^[t] x = F^[t] y) : F^[t + k] x = F^[t + k] y
+Collatz.SparseSampling.visit_iff_after_meeting.{u_3} {γ : Type u_3} (F : γ → γ) (x y v : γ) (t L : ℕ)
+  (h : F^[t] x = F^[t] y) (no_x : ∀ i < t, F^[i] x ≠ v) (no_y : ∀ i < t, F^[i] y ≠ v) :
+  (∃ i ≤ L, F^[i] x = v) ↔ ∃ i ≤ L, F^[i] y = v
+'Collatz.SparseSampling.mass_le_marked_add_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SparseSampling.sparse_sampling_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SparseSampling.sparse_sampling_budget_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SparseSampling.iterate_eq_of_meeting' does not depend on any axioms
+'Collatz.SparseSampling.visit_iff_after_meeting' depends on axioms: [propext]

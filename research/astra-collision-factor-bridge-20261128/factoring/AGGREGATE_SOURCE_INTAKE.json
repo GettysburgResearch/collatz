@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-factoring-aggregate-source/v1",
+  "date_utc": "2026-11-28",
+  "repository": "gfreund123/factoring-in-p",
+  "scope": "Exact source attribution for the positive primary-Cartier aggregate transfer. The imported coefficient transition is independently reproved and implemented in this packet; no claim to replay the factoring repository's complete codebase.",
+  "sources": [
+    {
+      "key": "primary_cartier_formula",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_frobenius_descent.md",
+      "sha": "ac983ecbe346866cd4d92a434daf95dab036da18",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_frobenius_descent.md",
+      "content_length": 25481,
+      "read_scope": "Read the complete general numerical-characteristic primary algorithm section, including the B^(2e) transition identity and stable numerator box; surrounding squarefree theorem read through this section. The later portions of this long file were not audited."
+    },
+    {
+      "key": "known_primary_matrix_scope",
+      "ref": "5006ac6547cc0106909c31cea730de06baf2405a",
+      "path": "research/semiprime-relations-2026-11-26/notes/uniform_primary_matrix_cartier.md",
+      "sha": "b5dc67bba6bbc13d3039bce737278a9ddad0a94e",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/5006ac6547cc0106909c31cea730de06baf2405a/research/semiprime-relations-2026-11-26/notes/uniform_primary_matrix_cartier.md",
+      "content_length": 20075,
+      "read_scope": "Complete file read: theorem scope at every supplied prime power, numerical-characteristic rational-series branch and stated verification limits."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "collatz-native-minimum-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T10:39:59.746465+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "source_sha256": {
+    "NativeMinimum": "bb7ca871ba215bba5d4d02ee01149df85cd55c9bf71f97b80dac27119eff5474"
+  },
+  "runner_sha256": "475e9da33e9240ff2f6d988e8d67ad95e625f8f8f12712b1fd6fc4edad689508",
+  "public_roots": [
+    "Collatz.NativeMinimum.minimum_is_odd",
+    "Collatz.NativeMinimum.two_step_non_descent_iff",
+    "Collatz.NativeMinimum.minimum_second_parity",
+    "Collatz.NativeMinimum.postminimum_orbit",
+    "Collatz.NativeMinimum.second_parity_zero_iff_reaches_one"
+  ],
+  "scope": "Five roots for the genuine shortcut: oddness under first-step non-descent, exact two-step non-descent classification, the next parity of a true minimum, deterministic continuation from an attained minimum, and second-postminimum parity zero iff the original source reaches one under an explicit all-time lower-bound premise. This does not compute or certify a global minimum. Entropy and limiting-distribution statements remain written and source-qualified. Cached pinned dependencies reused; no cold rebuild or independent LeanChecker run.",
+  "steps": [
+    {
+      "name": "NativeMinimum",
+      "exit_code": 0,
+      "elapsed_seconds": 1.501,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "elapsed_seconds": 0.602,
+      "stdout_sha256": "ebbb5f5795511d1e9787407ab740b5128a1c011bc0fc83a571938f66d08c5efb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_unchanged": true,
+  "audited_roots": 5,
+  "axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-28T10:40:01.853678+00:00"
+}

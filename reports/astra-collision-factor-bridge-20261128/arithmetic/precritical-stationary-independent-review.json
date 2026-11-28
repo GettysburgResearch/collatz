@@ -1,0 +1,29 @@
+{
+  "status": "pass_at_stated_source_qualified_scope",
+  "reviewed_utc": "2026-11-28T11:29:10.894924+00:00",
+  "reviewer": "arithmetic_proof_attack (independent lane)",
+  "target": "research/astra-collision-factor-bridge-20261128/factoring/PRECRITICAL_STATIONARY_EVALUATION.md",
+  "target_sha256": "4e1fc963c781356a477c2a002a34446d528e5041967cfeb2ed2ddc10a7c5c4e4",
+  "primary_source": {
+    "url": "https://doi.org/10.5281/zenodo.23269488",
+    "local_path": "/tmp/astra-lane-a-20261128/23269488.tex",
+    "sha256": "211bc4fe107b3821e510486be28cf53f69751f71394582822faf385d09561e37",
+    "directly_read": "The complete Height process proposition (prop:height) and proof, including the entire [0,1] uniform topology, common Brownian endpoint, and negligible tau=0 case."
+  },
+  "independent_checks": [
+    "The all-time-minimum prefix contains distinct states, so the finite correction is bounded by one third of the harmonic sum through the prefix length; no future parity renewal is assumed.",
+    "For every deterministic divergent w_X=o(sqrt(log X)), the clock lies before tau with probability tending to one and its ratio to tau tends to one. Uniform topology and continuity justify the random evaluation.",
+    "The constants satisfy 2c_*/(log3 sqrt(mu))=1, giving the claimed standard normal odd-count scaling.",
+    "The all-clock full-law TV estimate transfers the ordinary CDF uniformly to the actual same-path stationary selector after division by its exact mass X/2^h. The result is relative at that rare-event scale.",
+    "At fixed critical u, the survivor event converges jointly to {Z>u}; the grade observation converges to the same Z there, giving exactly (Phi(t)-Phi(u))_+.",
+    "The fixed-window extension retains the exact sqrt(h/(mu log X)) coefficient for uniform nonperiodic exclusion at t<u. The distinct-orbit product bounds exclude all escaping and pre-entry sources.",
+    "On each entered cycle G=u+r_C(Z-u)+o_P(1); the threshold is below the entry boundary. Proper minimum-law tightness justifies summing the countable cyclic component mixture.",
+    "The nonstandard-cycle coefficient r_*<1 gives a strictly positive deficit from the Gaussian coefficient, and positive predecessors are used only for the universal-convergence upgrade."
+  ],
+  "scope_limits": [
+    "The median closing lower bound is not established.",
+    "The moving precritical convergence has no uniform convergence rate over choices of w_X.",
+    "Uniform CDF convergence does not imply relative Gaussian-tail estimates for growing thresholds.",
+    "The analytic external development is a named written input, not freshly Lean rebuilt here."
+  ]
+}

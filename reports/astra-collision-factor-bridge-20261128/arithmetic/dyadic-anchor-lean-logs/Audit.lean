@@ -1,0 +1,12 @@
+import DyadicAnchor
+
+#check Collatz.DyadicAnchor.dyadic_numerator_odd
+#check Collatz.DyadicAnchor.dyadic_step_formula
+#check Collatz.DyadicAnchor.dyadic_step_denominator
+#check Collatz.DyadicAnchor.dyadic_step_denominator_grows
+#check Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch
+#print axioms Collatz.DyadicAnchor.dyadic_numerator_odd
+#print axioms Collatz.DyadicAnchor.dyadic_step_formula
+#print axioms Collatz.DyadicAnchor.dyadic_step_denominator
+#print axioms Collatz.DyadicAnchor.dyadic_step_denominator_grows
+#print axioms Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch

@@ -1,0 +1,98 @@
+{
+  "schema": "collatz-normalized-matrix-independent-check/v1",
+  "success": true,
+  "recorded_utc": "2026-11-28T10:31:47.173281+00:00",
+  "script_sha256": "2cd8dceee19b3d6ebeed510cda972bce9ce07a428b1e8737ff2722f8e7a4a107",
+  "matrix_cases": 108,
+  "native_cylinder_checks": 6132,
+  "full_fibre_terms_checked": 1124,
+  "successive_lattice_spacings_checked": 501,
+  "ordinary_window_comparisons": 4050,
+  "rows": [
+    {
+      "k": 1,
+      "d": 0,
+      "h": 8,
+      "nonzero_entries": 16,
+      "entries_sha256": "d8e3db2377c847e86b9d489d7bb4b90f3ab2c169f66d1f2d82ff25a0cacb4364"
+    },
+    {
+      "k": 1,
+      "d": 1,
+      "h": 8,
+      "nonzero_entries": 31,
+      "entries_sha256": "71be3b34e549ae1ebbf4e7e1ee183f8b6e3b3027092baf2aff53de3df0d41e26"
+    },
+    {
+      "k": 1,
+      "d": 2,
+      "h": 8,
+      "nonzero_entries": 46,
+      "entries_sha256": "c1ce7532a6e181159556070722e6186d072c4cea837475d15167bc8fd9a9829e"
+    },
+    {
+      "k": 1,
+      "d": 3,
+      "h": 8,
+      "nonzero_entries": 61,
+      "entries_sha256": "c98e5c60eb9c13de0b905b54e0e0cf6e644f142ea1d40ed71f7fdd7aa232c6da"
+    },
+    {
+      "k": 2,
+      "d": 0,
+      "h": 8,
+      "nonzero_entries": 38,
+      "entries_sha256": "d663d46a487ddf61c77fa3f4b828c1220b084b42c9f66b4c5cd0df4f41276fd8"
+    },
+    {
+      "k": 2,
+      "d": 1,
+      "h": 8,
+      "nonzero_entries": 75,
+      "entries_sha256": "513fe203c723cc34c5c42331656ed2245f9fa95f4c8d22fd3dd583f7a81732c6"
+    },
+    {
+      "k": 2,
+      "d": 2,
+      "h": 8,
+      "nonzero_entries": 112,
+      "entries_sha256": "aee4fbfc67b7b515aae0ecf535067811bb1516e015ec3b65bc3ca3b4106d308e"
+    },
+    {
+      "k": 2,
+      "d": 3,
+      "h": 8,
+      "nonzero_entries": 149,
+      "entries_sha256": "ff27829631151348f4bd1a164145091c51e9dce9c54669c6dec016cf63b4a5ac"
+    },
+    {
+      "k": 3,
+      "d": 0,
+      "h": 8,
+      "nonzero_entries": 82,
+      "entries_sha256": "27e3eb7baf02806a286cad70913b9fac384f90ecb87f443ffa4e471f47a3eef8"
+    },
+    {
+      "k": 3,
+      "d": 1,
+      "h": 8,
+      "nonzero_entries": 163,
+      "entries_sha256": "64074fb0d03898ded765f17d623bc5b70dc7ece3de4e631e06dac5605adb6126"
+    },
+    {
+      "k": 3,
+      "d": 2,
+      "h": 8,
+      "nonzero_entries": 244,
+      "entries_sha256": "dd792488a768a67e48fd50f8501febd169267993083f4a4fceefea81cad0dfdd"
+    },
+    {
+      "k": 3,
+      "d": 3,
+      "h": 8,
+      "nonzero_entries": 325,
+      "entries_sha256": "d6d2ad6e8065acc4184403e87635f026711fbb852480f5031e9ce4c96b7d1265"
+    }
+  ],
+  "scope": "Exact finite checks for k=1..3, moments0..3, clocks0..8; full-conductor positive endpoint/lattice/window checks for y=1..30 and X=1,7,64. No approximation, convergence or asymptotic complexity claim."
+}

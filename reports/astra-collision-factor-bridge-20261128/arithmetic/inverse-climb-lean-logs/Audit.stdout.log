@@ -1,0 +1,8 @@
+Collatz.InverseClimb.residue_exponent_table (r : Fin 162) : ↑r % 6 = 5 → ∃ j, (2 ^ (2 * ↑j + 5) * ↑r + 2) % 162 = 0
+Collatz.InverseClimb.block_from_parameter (a e m : ℕ) (ha : 5 ≤ a) (he : 5 ≤ e) (he' : e ≤ 57)
+  (hmul : 2 ^ e * a + 2 = 162 * m) : Collatz.InverseClimb.HasDoublingBlock a
+Collatz.InverseClimb.exists_doubling_block (a : ℕ) (ha : 5 ≤ a) (hmod : a % 6 = 5) :
+  Collatz.InverseClimb.HasDoublingBlock a
+'Collatz.InverseClimb.residue_exponent_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.InverseClimb.block_from_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.InverseClimb.exists_doubling_block' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,316 @@
+{
+  "schema": "collatz-collision-checkpoint-source/v1",
+  "previous_public_head": "a2d3f9c44c798c1956d29f88d12ccb2904cb0eb4",
+  "files": [
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean-logs/Audit.lean",
+      "sha256": "34f1584107ce33deec12e1017527e625d05a043ec9d74f77f1542121b4023575",
+      "bytes": 616
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean-logs/Audit.stdout.log",
+      "sha256": "23bc147316cb53f8716f3d427185768ce3f6d06cebb34f69f9ad9f81d45d7b49",
+      "bytes": 2331
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean-logs/SparseSampling.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean-logs/SparseSampling.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean.json",
+      "sha256": "e5edf4e99f03cbdb5dee0cd6400ed2f5b29d3d70f1ba20f58ab033a06e341058",
+      "bytes": 1938
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint01/repository-validation.json",
+      "sha256": "e1dcd09cd66e86fec6fef6c04d7d44872bf0e5f93afe3e77488f03071ebae931",
+      "bytes": 803
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint01/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint01/repository-validation.stdout.log",
+      "sha256": "8e12c6fde1c2d2f77cfb548ef094bab3148f9a792c830ce4215e18d442a3d5ee",
+      "bytes": 1448
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint02/REVIEW.md",
+      "sha256": "800a216a6d792605552ad2f8267d1f12f899f271cf30ee3fa280c2f92fdded47",
+      "bytes": 3830
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint02/receipt-binding.json",
+      "sha256": "0e6eb3c38fd09a8ab28e48db2204cd02f86f24bf0f671f3dc7e9d87ea31cfa08",
+      "bytes": 1221
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean-logs/Audit.lean",
+      "sha256": "1f01b709a0254bf22e4cb426bd418173828dfc2e4eb80f3e2d463df35a684f2c",
+      "bytes": 1091
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean-logs/Audit.stdout.log",
+      "sha256": "47898adf048d8d5fd1bbdaab1b9899ffeece6a63d2a2d7319572e2678b4d89ff",
+      "bytes": 3345
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean-logs/CollisionThreshold.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean-logs/CollisionThreshold.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean.json",
+      "sha256": "293a1866d6f75461fe6a0684cda08a304e00c19cbacdd9390b98eb6ca3e3a23c",
+      "bytes": 2248
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/SEMIPRIME_INDEPENDENT_REVIEW.md",
+      "sha256": "63656a1d72ac766a9617c68cb2651927f2a20399936b31191923a501730a1a9e",
+      "bytes": 3324
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-controls.json",
+      "sha256": "a93a8eef59742a0bfe36319126f967af8f9e3f018f02c1b09c5b108ffa068475",
+      "bytes": 3314
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-normal.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-normal.stdout.log",
+      "sha256": "a93a8eef59742a0bfe36319126f967af8f9e3f018f02c1b09c5b108ffa068475",
+      "bytes": 3314
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-optimized.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-optimized.stdout.log",
+      "sha256": "a93a8eef59742a0bfe36319126f967af8f9e3f018f02c1b09c5b108ffa068475",
+      "bytes": 3314
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/binary-boundary-replay.json",
+      "sha256": "2dd239455b903b6ad671c388585df44bcad2292b5eb450cf76d0d47c886389c7",
+      "bytes": 808
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean-logs/Audit.lean",
+      "sha256": "fcb361e90effc57b6146af7a166fd356b22b4f774f0df56c358f53244d299464",
+      "bytes": 881
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean-logs/Audit.stdout.log",
+      "sha256": "7986d8981253456932c4756bce1fc0c3a7594d79951addb87418fa87ebe9ec97",
+      "bytes": 2535
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean-logs/BoundaryEnergy.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean-logs/BoundaryEnergy.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean.json",
+      "sha256": "f5f430823e4eeba79fa060ad1f3389a15c8b9ff880b8bdeedb262e6d562f5886",
+      "bytes": 2203
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/SEMIPRIME_REVIEW.md",
+      "sha256": "e31fef609d4fcc176315b15554be9913870ee8d60b7f1f16b3abc2f53673bcf0",
+      "bytes": 3011
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/affine-gap-check.json",
+      "sha256": "1b96a34be1d75a5b25ca6a728089c1160c2d3a03af0dd0301639a582c1b44b04",
+      "bytes": 6005
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineMultiplierRigidity.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineMultiplierRigidity.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineMultiplierRigidityAudit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineMultiplierRigidityAudit.stdout.log",
+      "sha256": "45b1bdfdc439f9ce9a1eba9ead8d46e50fbacde76c1dd5c8b53e9d2312d4d6ba",
+      "bytes": 328
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineOrbit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt-logs/AffineOrbit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt.json",
+      "sha256": "3b47935756e6064f8e73e4bead567f4d3eee2e330ed2049a2745e73c4d7bbfef",
+      "bytes": 4064
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/COLLISION_THRESHOLD.md",
+      "sha256": "5260d0574d2eae53d4fc9cc8dc88b6c35e5ec80cc55f73a59cc5b9d9108f1f3e",
+      "bytes": 5651
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/CollisionThreshold.lean",
+      "sha256": "dc5cb6697547896c061bad0459dc4e874ab2d64f923a565a59db7444fd52de64",
+      "bytes": 5869
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/README.md",
+      "sha256": "79acbad19d2c63dc07c8ce44ec91bbac0fd32218fbb41159f7e7f84ba8eef9a6",
+      "bytes": 6370
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/HIGH_STATE_AND_PROFILE_OBSTRUCTIONS.md",
+      "sha256": "b9bec222f8295d5264262e9a72b7b66efd57234fb74aec0f3f29512a01ccb17f",
+      "bytes": 10467
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/INDEPENDENT_RECONSTRUCTION.md",
+      "sha256": "48fcf859fa582dcd11fc7c1242f86566d20cc3fb948323e01f13cba62b019ac4",
+      "bytes": 12356
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/SparseSampling.lean",
+      "sha256": "0cd185d7ae80b2d9bbedcecbd64be418f30fa7f6a0e091729d151ac1af2f1875",
+      "bytes": 5370
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/check_sparse_sampling.py",
+      "sha256": "09ebc2915bfcf064471477252770a570b1f4f2f86585594e45102cbfa4080865",
+      "bytes": 5760
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/check_collision_threshold.py",
+      "sha256": "d5dc361ebb5c6e2873e748e7821c2d74e8a27510992de49112b1c31a5da5daad",
+      "bytes": 5982
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/BoundaryEnergy.lean",
+      "sha256": "8e84ddabc1a772821322359f63f036415b817f046c786e56a2edb816e6b528b5",
+      "bytes": 3994
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/DYADIC_BOUNDARY_ZERO_ONE.md",
+      "sha256": "62d1d118c10a29aefd7b3a02674e4462128f2808465c61d54c525a51e2173a73",
+      "bytes": 11212
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/SHARP_HALVING_BOUNDARY.md",
+      "sha256": "a9830320aee5242716740f9b00d4b72afb205a585eef49a886affffac414d059",
+      "bytes": 5765
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/check_binary_boundary.py",
+      "sha256": "5a1a7e3eaebab83dd2ad162a6e0b62fe7b83ac1e3914a3f713951d2ed2c6b772",
+      "bytes": 3409
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/check_boundary_energy.py",
+      "sha256": "5457543d86a7912593ba16b12986472bc77dd3914e9ff9bb87eb1c2c9bb7753f",
+      "bytes": 5962
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidity.lean",
+      "sha256": "1e42f0e2da56dd410fb197f7653662c99fb04b978a9f168993dcce1b6511060f",
+      "bytes": 3724
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidityAudit.lean",
+      "sha256": "ae93c3052b79bf0b093a973a065979f17088b72292719ea2579795947bdf5843",
+      "bytes": 219
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/FACTORING_BRIDGE.md",
+      "sha256": "4ac02e232c140b03e38f75c170b13b65d91cdf5f6bfa14a8374b7492cf45540d",
+      "bytes": 11116
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/FINITE_AFFINE_GAP.md",
+      "sha256": "59b8ed901617b5605c9718165217291380ae3298477a0fdc04632e1d896a9523",
+      "bytes": 10729
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/MULTIPLIER_CERTIFICATE_RIGIDITY.md",
+      "sha256": "ea6ec105e517681133253e9664f3f34a9c75b8aeb918a340e7b285fbadf75c5f",
+      "bytes": 8911
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/POINTWISE_IMPORT_AUDIT.md",
+      "sha256": "f56dde0dc1eb1864f7bb88e1bbe78bce644e0ea575451545f7566177d526237c",
+      "bytes": 16128
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/POINTWISE_SOURCE_INTAKE.json",
+      "sha256": "b2bda73ba9625b5fd5edabcf7ab55bbfb5532efc9109036f6fe5dc305050c3fa",
+      "bytes": 4670
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/SOURCE_INTAKE.json",
+      "sha256": "f653c29924efcef9baa06af674f363050fae6cd250938cc2d23570821c606f7f",
+      "bytes": 4886
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/check_affine_gap.py",
+      "sha256": "b45843ec1150bcf220acc4f933f99c1907ab0d597b4e4bac44cd259e16ab4e1c",
+      "bytes": 5752
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/check_lean.py",
+      "sha256": "a5784d3fa85f4ab2c7299bfcf64256737ccd4b1b65647f5786477f84e9ba2ce2",
+      "bytes": 6347
+    }
+  ]
+}

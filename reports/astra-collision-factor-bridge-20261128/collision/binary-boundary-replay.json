@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "checked_at_utc": "2026-11-28T09:18:25.978014+00:00",
+  "source_sha256": "5a1a7e3eaebab83dd2ad162a6e0b62fe7b83ac1e3914a3f713951d2ed2c6b772",
+  "source_unchanged": true,
+  "normal_optimized_outputs_identical": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "stdout_sha256": "a93a8eef59742a0bfe36319126f967af8f9e3f018f02c1b09c5b108ffa068475",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout_sha256": "a93a8eef59742a0bfe36319126f967af8f9e3f018f02c1b09c5b108ffa068475",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Finite integer replay, not the infinite zero-one proof."
+}

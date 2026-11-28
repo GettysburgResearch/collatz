@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-external-compatibility-retry/v1",
+  "recorded_utc": "2026-11-28T10:54:24.992531+00:00",
+  "source_modified": false,
+  "module": "Erdos1135.StoppingTime",
+  "source_sha256": "d5a5c09281d2b53c648bb4f4233f77f3156109d99e711799cc6ad0c16fea575f",
+  "exit_code": 0,
+  "elapsed_seconds": 30.625,
+  "compiler": "Lean4.34.1",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false"
+  ],
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "completed_project_modules_across_attempts": 8,
+  "announced_theorem_roots_compiled": 0,
+  "fresh_theorem_rebuild_completed": false,
+  "scope": "One unchanged source module retried successfully in the available newer environment. The complete388-module external theorem closure is not rebuilt; no public predecessor root is freshly audited."
+}

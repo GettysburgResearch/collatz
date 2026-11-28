@@ -1,0 +1,18 @@
+{
+  "schema": "collatz-checkpoint-receipt-binding/v1",
+  "success": true,
+  "recorded_utc": "2026-11-28T11:16:29.465083+00:00",
+  "additional_audited_roots": 5,
+  "total_pass_audited_roots": 70,
+  "modules": 11,
+  "formal_receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/dyadic-anchor-lean.json",
+  "source_sha256": "f8875dfd4edf6591c5758c210e46c16e5a570cdd213c81608e6fba0427876b52",
+  "runner_sha256": "9ab5f807301b3a931d6200a7dc88419bec95fba373e7da33084584611c9c7b28",
+  "complete_audit_and_all_success_logs_bound": true,
+  "joint_shifted_law_checks": 130,
+  "complete_two_copy_checks": 650,
+  "arithmetic_cell_intersections": 545975,
+  "indicator_regime_checks": 409425,
+  "normal_optimized_substantive_outputs_identical": true,
+  "scope": "Current finite source/log and written review bindings. Not a second Lean compilation or formal certification of the analytic theorems."
+}

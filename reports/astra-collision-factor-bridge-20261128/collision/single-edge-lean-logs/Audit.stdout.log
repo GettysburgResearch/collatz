@@ -1,0 +1,45 @@
+Collatz.SingleEdgeSplit.splitAt_unchanged {q n : ℕ} (hn : n ≠ q) :
+  Collatz.SingleEdgeSplit.splitAt q n = Collatz.SingleEdgeSplit.shortcut n
+Collatz.SingleEdgeSplit.splitAt_even {q : ℕ} (hq : q % 2 = 1) (n : ℕ) : Collatz.SingleEdgeSplit.splitAt q (2 * n) = n
+Collatz.SingleEdgeSplit.iterate_eq_before_hit.{u_1} {α : Type u_1} (F G : α → α) (q x : α)
+  (same : ∀ (y : α), y ≠ q → G y = F y) (t : ℕ) (avoid : ∀ (i : ℕ), i < t → F^[i] x ≠ q) : G^[t] x = F^[t] x
+Collatz.SingleEdgeSplit.splitAt_hit_iff (q x : ℕ) :
+  (∃ t, (Collatz.SingleEdgeSplit.splitAt q)^[t] x = q) ↔ ∃ t, Collatz.SingleEdgeSplit.shortcut^[t] x = q
+Collatz.SingleEdgeSplit.splitAt_two_cycle {q : ℕ} (hq : q % 2 = 1) :
+  Collatz.SingleEdgeSplit.splitAt q q = 2 * q ∧ Collatz.SingleEdgeSplit.splitAt q (2 * q) = q
+Collatz.SingleEdgeSplit.splitAt_scaled_cycle {q : ℕ} (hq : q % 2 = 1) (t : ℕ) :
+  (Collatz.SingleEdgeSplit.splitAt q)^[t] q = q * Collatz.SingleEdgeSplit.shortcut^[t] 1
+Collatz.SingleEdgeSplit.five_genuine_tail :
+  Collatz.SingleEdgeSplit.shortcut 5 = 8 ∧
+    Collatz.SingleEdgeSplit.shortcut 8 = 4 ∧
+      Collatz.SingleEdgeSplit.shortcut 4 = 2 ∧
+        Collatz.SingleEdgeSplit.shortcut 2 = 1 ∧ Collatz.SingleEdgeSplit.shortcut^[4] 5 = 1
+Collatz.SingleEdgeSplit.five_modified_return : (Collatz.SingleEdgeSplit.splitAt 5)^[4] 5 = 5
+Collatz.SingleEdgeSplit.five_eventual_rescaling (n a t : ℕ) (hit : Collatz.SingleEdgeSplit.shortcut^[a] n = 5)
+  (avoid : ∀ (i : ℕ), i < a → Collatz.SingleEdgeSplit.shortcut^[i] n ≠ 5) :
+  (Collatz.SingleEdgeSplit.splitAt 5)^[4 + t + a] n = 5 * Collatz.SingleEdgeSplit.shortcut^[4 + t + a] n
+Collatz.SingleEdgeSplit.finite_table_preserved {q R n : ℕ} (hq : R < q) (hn : n ≤ R) :
+  Collatz.SingleEdgeSplit.splitAt q n = Collatz.SingleEdgeSplit.shortcut n
+Collatz.SingleEdgeSplit.unitFive_unchanged {n : ℕ} (hn : n ≠ 5) :
+  Collatz.SingleEdgeSplit.unitFive n = Collatz.SingleEdgeSplit.shortcut n
+Collatz.SingleEdgeSplit.unitFive_unit_change :
+  Collatz.SingleEdgeSplit.unitFive 5 = Collatz.SingleEdgeSplit.shortcut 5 + 1
+Collatz.SingleEdgeSplit.unitFive_period : Collatz.SingleEdgeSplit.unitFive^[10] 5 = 5
+Collatz.SingleEdgeSplit.unitFive_least_period (t : Fin 10) : ↑t ≠ 0 → Collatz.SingleEdgeSplit.unitFive^[↑t] 5 ≠ 5
+Collatz.SingleEdgeSplit.unitFive_hit_iff (x : ℕ) :
+  (∃ t, Collatz.SingleEdgeSplit.unitFive^[t] x = 5) ↔ ∃ t, Collatz.SingleEdgeSplit.shortcut^[t] x = 5
+'Collatz.SingleEdgeSplit.splitAt_unchanged' depends on axioms: [propext]
+'Collatz.SingleEdgeSplit.splitAt_even' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.iterate_eq_before_hit' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.splitAt_hit_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SingleEdgeSplit.splitAt_two_cycle' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.splitAt_scaled_cycle' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.five_genuine_tail' does not depend on any axioms
+'Collatz.SingleEdgeSplit.five_modified_return' does not depend on any axioms
+'Collatz.SingleEdgeSplit.five_eventual_rescaling' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.finite_table_preserved' depends on axioms: [propext, Quot.sound]
+'Collatz.SingleEdgeSplit.unitFive_unchanged' depends on axioms: [propext]
+'Collatz.SingleEdgeSplit.unitFive_unit_change' does not depend on any axioms
+'Collatz.SingleEdgeSplit.unitFive_period' does not depend on any axioms
+'Collatz.SingleEdgeSplit.unitFive_least_period' does not depend on any axioms
+'Collatz.SingleEdgeSplit.unitFive_hit_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

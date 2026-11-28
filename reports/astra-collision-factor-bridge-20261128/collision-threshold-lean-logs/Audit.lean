@@ -1,0 +1,18 @@
+import CollisionThreshold
+
+#check Collatz.CollisionThreshold.term_bound
+#check Collatz.CollisionThreshold.summable_cycle_contributions
+#check Collatz.CollisionThreshold.median_le_two_mass_bound
+#check Collatz.CollisionThreshold.deficit_lower_bound
+#check Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass
+#check Collatz.CollisionThreshold.near_maximal_collision_mass
+#check Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision
+#check Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass
+#print axioms Collatz.CollisionThreshold.term_bound
+#print axioms Collatz.CollisionThreshold.summable_cycle_contributions
+#print axioms Collatz.CollisionThreshold.median_le_two_mass_bound
+#print axioms Collatz.CollisionThreshold.deficit_lower_bound
+#print axioms Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass
+#print axioms Collatz.CollisionThreshold.near_maximal_collision_mass
+#print axioms Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision
+#print axioms Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass

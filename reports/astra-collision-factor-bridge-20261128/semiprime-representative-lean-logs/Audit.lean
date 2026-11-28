@@ -1,0 +1,16 @@
+import SemiprimeRepresentative
+
+#check Collatz.SemiprimeRepresentative.convergence_step
+#check Collatz.SemiprimeRepresentative.convergence_iterate
+#check Collatz.SemiprimeRepresentative.merger_transfers_convergence
+#check Collatz.SemiprimeRepresentative.family_positive
+#check Collatz.SemiprimeRepresentative.universal_iff_family
+#check Collatz.SemiprimeRepresentative.sample_family_members
+#check Collatz.SemiprimeRepresentative.sample_actual_mergers
+#print axioms Collatz.SemiprimeRepresentative.convergence_step
+#print axioms Collatz.SemiprimeRepresentative.convergence_iterate
+#print axioms Collatz.SemiprimeRepresentative.merger_transfers_convergence
+#print axioms Collatz.SemiprimeRepresentative.family_positive
+#print axioms Collatz.SemiprimeRepresentative.universal_iff_family
+#print axioms Collatz.SemiprimeRepresentative.sample_family_members
+#print axioms Collatz.SemiprimeRepresentative.sample_actual_mergers

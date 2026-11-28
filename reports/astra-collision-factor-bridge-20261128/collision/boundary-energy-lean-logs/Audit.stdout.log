@@ -1,0 +1,29 @@
+Collatz.BoundaryEnergy.basin_label_doubles {f : ℕ → Bool} (hf : Collatz.BoundaryEnergy.BasinLabel f) (n : ℕ) :
+  f (2 * n) = f n
+Collatz.BoundaryEnergy.basin_label_odd {f : ℕ → Bool} (hf : Collatz.BoundaryEnergy.BasinLabel f) (n : ℕ) :
+  f (2 * n + 1) = f (3 * n + 2)
+Collatz.BoundaryEnergy.boundary_creation {f : ℕ → Bool} (hf : ∀ (n : ℕ), f (2 * n) = f n) (n : ℕ) :
+  Collatz.BoundaryEnergy.boundary f (2 * n) + Collatz.BoundaryEnergy.boundary f (2 * n + 1) =
+    Collatz.BoundaryEnergy.boundary f n + 2 * Collatz.BoundaryEnergy.birth f n
+Collatz.BoundaryEnergy.paired_boundary_bound {f : ℕ → Bool} (hf : ∀ (n : ℕ), f (2 * n) = f n) (n : ℕ) :
+  Collatz.BoundaryEnergy.boundary f (2 * n) + Collatz.BoundaryEnergy.boundary f (2 * n + 1) ≤
+    Collatz.BoundaryEnergy.boundary f n + 2 * Collatz.BoundaryEnergy.boundary f (2 * n)
+Collatz.BoundaryEnergy.finite_shell_bound {f : ℕ → Bool} (hf : ∀ (n : ℕ), f (2 * n) = f n) (m N : ℕ) :
+  ∑ i ∈ Finset.range N,
+      (Collatz.BoundaryEnergy.boundary f (2 * (m + i)) + Collatz.BoundaryEnergy.boundary f (2 * (m + i) + 1)) ≤
+    ∑ i ∈ Finset.range N, Collatz.BoundaryEnergy.boundary f (m + i) +
+      2 * ∑ i ∈ Finset.range N, Collatz.BoundaryEnergy.boundary f (2 * (m + i))
+Collatz.BoundaryEnergy.even_boundary_affine {f : ℕ → Bool} (hf : Collatz.BoundaryEnergy.BasinLabel f) (n : ℕ) :
+  Collatz.BoundaryEnergy.boundary f (2 * n) = if f n = f (3 * n + 2) then 0 else 1
+Collatz.BoundaryEnergy.affine_merger_unique {a b c d x y : ℚ} (hab : a ≠ b) (hx : a * x + c = b * (x + 1) + d)
+  (hy : a * y + c = b * (y + 1) + d) : x = y
+Collatz.BoundaryEnergy.two_mergers_equal_slope {a b c d x y : ℚ} (hxy : x ≠ y) (hx : a * x + c = b * (x + 1) + d)
+  (hy : a * y + c = b * (y + 1) + d) : a = b
+'Collatz.BoundaryEnergy.basin_label_doubles' depends on axioms: [propext]
+'Collatz.BoundaryEnergy.basin_label_odd' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundaryEnergy.boundary_creation' depends on axioms: [propext]
+'Collatz.BoundaryEnergy.paired_boundary_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryEnergy.finite_shell_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryEnergy.even_boundary_affine' depends on axioms: [propext, Quot.sound]
+'Collatz.BoundaryEnergy.affine_merger_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.BoundaryEnergy.two_mergers_equal_slope' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,51 @@
+{
+  "schema": "collatz-collision-factor-pass/v1",
+  "started_utc": "2026-11-28T08:52:20Z",
+  "requested_duration_hours": 3,
+  "deadline_utc": "2026-11-28T11:52:20Z",
+  "base_pr": 214,
+  "base_head": "504d29d399efa941a62006d1ea4635385ce6bb5f",
+  "base_tree": "3de3ad652f529a26f208aac976b57a7d1d4baff0",
+  "latest_read_heads": {
+    "collatz_pr216": "1917b07ae5cc8f5d27c79f34cc43a4bcf25efff8",
+    "collatz_pr215": "4f33ecc2de6f0ccf605a68c28da5abea0348e47b"
+  },
+  "original_inputs": [
+    {
+      "url": "https://arxiv.org/pdf/2207.05038v2",
+      "title": "Almost primes in almost all short intervals II",
+      "authors": [
+        "Kaisa Matomäki",
+        "Joni Teräväinen"
+      ],
+      "version": "v2, 2023-02-01",
+      "clause": "Theorem 1.1; the lower count and exceptional-set rate, not a full asymptotic",
+      "sha256": "93aa865f7699da179305dbf14935016b4e092d75a5d7cb1ecac651c59067380d"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23268751",
+      "clauses": [
+        "pair:cylinders",
+        "pair:dictionary",
+        "pair:uniform-tail"
+      ],
+      "sha256": "d2f961635d339a4b215c82b1f2f8b9ca53143043f4c58b9aa67290f46056996e"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/233",
+      "version": "v1, 2026-11-26",
+      "scope": "Comparison only: ordinary RH retained for the original prime sampling; not an input to the RH-free semiprime reduction."
+    },
+    {
+      "url": "https://doi.org/10.1112/S0025579300004708",
+      "clause": "Brun–Titchmarsh upper bound",
+      "scope": "Classical named number-theory input."
+    },
+    {
+      "url": "https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf",
+      "clause": "Theorem 1.1 and Corollary 1.2",
+      "scope": "External written input; ordinary target 2v transfers to shortcut target v."
+    }
+  ],
+  "scope": "Exact source and head pins for a new three-hour pass. No mathematical acceptance is inferred from retrieval."
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "collatz-affine-multiplier-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T09:37:33.241720+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "scope": "Fresh complete project dependency closure and separate import/type/axiom audit. Pinned compiled third-party dependencies reused. No cold Mathlib rebuild or independent LeanChecker run. Three finite algebraic theorem roots; no analytic or asymptotic claim formalized.",
+  "public_roots": [
+    "Collatz.FactoringBridge.two_point_word_slope",
+    "Collatz.FactoringBridge.actual_two_point_slope",
+    "Collatz.FactoringBridge.prime_multiplier_cell_unique"
+  ],
+  "steps": [
+    {
+      "module": "AffineOrbit",
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "source_sha256": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-factor-lean-j6gyzq_j/AffineOrbit.olean",
+        "/workspace/scratch/ba4979751b0f/collatz/research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 83.896,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "AffineMultiplierRigidity",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidity.lean",
+      "source_sha256": "1e42f0e2da56dd410fb197f7653662c99fb04b978a9f168993dcce1b6511060f",
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-factor-lean-j6gyzq_j/AffineMultiplierRigidity.olean",
+        "/workspace/scratch/ba4979751b0f/collatz/research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 41.9759,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "AffineMultiplierRigidityAudit",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidityAudit.lean",
+      "source_sha256": "ae93c3052b79bf0b093a973a065979f17088b72292719ea2579795947bdf5843",
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-factor-lean-j6gyzq_j/AffineMultiplierRigidityAudit.olean",
+        "/workspace/scratch/ba4979751b0f/collatz/research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidityAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 37.6023,
+      "source_unchanged": true,
+      "stdout_sha256": "45b1bdfdc439f9ce9a1eba9ead8d46e50fbacde76c1dd5c8b53e9d2312d4d6ba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "axiom_audit": {
+    "roots": [
+      "Collatz.FactoringBridge.two_point_word_slope",
+      "Collatz.FactoringBridge.actual_two_point_slope",
+      "Collatz.FactoringBridge.prime_multiplier_cell_unique"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T09:40:16.726055+00:00",
+  "elapsed_seconds": 163.4833
+}

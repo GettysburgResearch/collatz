@@ -1,0 +1,45 @@
+{
+  "schema": "collatz-collision-threshold-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T09:28:45.159344+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "source_sha256": "dc5cb6697547896c061bad0459dc4e874ab2d64f923a565a59db7444fd52de64",
+  "runner_sha256": "d5dc361ebb5c6e2873e748e7821c2d74e8a27510992de49112b1c31a5da5daad",
+  "public_roots": [
+    "Collatz.CollisionThreshold.term_bound",
+    "Collatz.CollisionThreshold.summable_cycle_contributions",
+    "Collatz.CollisionThreshold.median_le_two_mass_bound",
+    "Collatz.CollisionThreshold.deficit_lower_bound",
+    "Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass",
+    "Collatz.CollisionThreshold.near_maximal_collision_mass",
+    "Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision",
+    "Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass"
+  ],
+  "scope": "Eight roots for the full summable cycle series, its extremal endpoint and quantified deficit. The ordinary median collision law, existence of cycle densities and positive-predecessor input remain external written dependencies. No positive lower bound of one eighth is proved. Cached pinned dependencies reused; no cold rebuild or independent LeanChecker run.",
+  "steps": [
+    {
+      "name": "CollisionThreshold",
+      "exit_code": 0,
+      "elapsed_seconds": 52.127,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "elapsed_seconds": 84.806,
+      "stdout_sha256": "47898adf048d8d5fd1bbdaab1b9899ffeece6a63d2a2d7319572e2678b4d89ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_unchanged": true,
+  "audited_roots": 8,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-28T09:31:02.095295+00:00"
+}

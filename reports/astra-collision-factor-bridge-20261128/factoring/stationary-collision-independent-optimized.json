@@ -1,0 +1,176 @@
+{
+  "schema": "collatz-stationary-collision-independent-check/v1",
+  "success": true,
+  "recorded_utc": "2026-11-28T11:08:12.198644+00:00",
+  "script_sha256": "701f8fba12fc9e2777911acbd17ad7c1903dd52a3efbf7fc8807fd889d528c71",
+  "joint_shifted_law_checks": 130,
+  "complete_two_copy_checks": 650,
+  "arithmetic_cell_intersections": 545975,
+  "indicator_regime_checks": 409425,
+  "real_seeds": [
+    "0",
+    "1/2",
+    "1",
+    "11/3",
+    "898/7"
+  ],
+  "rows": [
+    {
+      "h": 0,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "7/25"
+    },
+    {
+      "h": 0,
+      "X": 2,
+      "actual_energy": "1/2",
+      "mixed_energy": "9/50"
+    },
+    {
+      "h": 0,
+      "X": 3,
+      "actual_energy": "1/3",
+      "mixed_energy": "31/225"
+    },
+    {
+      "h": 1,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 1,
+      "X": 2,
+      "actual_energy": "1/2",
+      "mixed_energy": "11/50"
+    },
+    {
+      "h": 1,
+      "X": 3,
+      "actual_energy": "1/3",
+      "mixed_energy": "13/75"
+    },
+    {
+      "h": 2,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 2,
+      "X": 3,
+      "actual_energy": "1/3",
+      "mixed_energy": "13/75"
+    },
+    {
+      "h": 2,
+      "X": 4,
+      "actual_energy": "3/8",
+      "mixed_energy": "4/25"
+    },
+    {
+      "h": 2,
+      "X": 5,
+      "actual_energy": "7/25",
+      "mixed_energy": "87/625"
+    },
+    {
+      "h": 3,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 3,
+      "X": 3,
+      "actual_energy": "1/3",
+      "mixed_energy": "47/225"
+    },
+    {
+      "h": 3,
+      "X": 8,
+      "actual_energy": "1/4",
+      "mixed_energy": "53/400"
+    },
+    {
+      "h": 3,
+      "X": 9,
+      "actual_energy": "17/81",
+      "mixed_energy": "47/405"
+    },
+    {
+      "h": 4,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 4,
+      "X": 3,
+      "actual_energy": "5/9",
+      "mixed_energy": "67/225"
+    },
+    {
+      "h": 4,
+      "X": 16,
+      "actual_energy": "21/128",
+      "mixed_energy": "77/800"
+    },
+    {
+      "h": 4,
+      "X": 17,
+      "actual_energy": "43/289",
+      "mixed_energy": "643/7225"
+    },
+    {
+      "h": 5,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 5,
+      "X": 3,
+      "actual_energy": "5/9",
+      "mixed_energy": "77/225"
+    },
+    {
+      "h": 5,
+      "X": 32,
+      "actual_energy": "7/64",
+      "mixed_energy": "173/2560"
+    },
+    {
+      "h": 5,
+      "X": 33,
+      "actual_energy": "113/1089",
+      "mixed_energy": "1757/27225"
+    },
+    {
+      "h": 6,
+      "X": 1,
+      "actual_energy": "1",
+      "mixed_energy": "11/25"
+    },
+    {
+      "h": 6,
+      "X": 3,
+      "actual_energy": "5/9",
+      "mixed_energy": "77/225"
+    },
+    {
+      "h": 6,
+      "X": 64,
+      "actual_energy": "67/1024",
+      "mixed_energy": "95/2048"
+    },
+    {
+      "h": 6,
+      "X": 65,
+      "actual_energy": "269/4225",
+      "mixed_energy": "4793/105625"
+    }
+  ],
+  "scope": "Exact rational finite checks at clocks 0..6, including grade 0, integer and noninteger source shifts, shifted windows beyond X, negative ternary seeds, and X both below and above 2^h. No stationary sampler, rare-event estimate, or Collatz proof."
+}

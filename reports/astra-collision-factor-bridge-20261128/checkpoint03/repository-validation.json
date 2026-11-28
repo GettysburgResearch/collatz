@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-complete-checkout-validation/v1",
+  "success": true,
+  "started_utc": "2026-11-28T10:23:13.851131+00:00",
+  "finished_utc": "2026-11-28T10:23:14.665404+00:00",
+  "seconds": 0.814,
+  "local_commit": "b6e166b75592a8995d1dd5ea43ca25529af48efa",
+  "tree_sha": "e7d53afc487669972c4c7ad2e08cae1acff6e213",
+  "tracked_files": 1716,
+  "missing_tracked_files": [],
+  "clean_before": true,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "stdout_sha256": "16cc342d46e8eebdc01ab15bf3dddb8f802a709870fbeca17abfca5dccad0f64",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Complete repository integrity validation in a clean detached checkout; not mathematical certification."
+}

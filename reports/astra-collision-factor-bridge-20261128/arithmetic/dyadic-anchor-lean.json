@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-dyadic-anchor-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T10:57:30.478629+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "source_sha256": "f8875dfd4edf6591c5758c210e46c16e5a570cdd213c81608e6fba0427876b52",
+  "runner_sha256": "9ab5f807301b3a931d6200a7dc88419bec95fba373e7da33084584611c9c7b28",
+  "public_roots": [
+    "Collatz.DyadicAnchor.dyadic_numerator_odd",
+    "Collatz.DyadicAnchor.dyadic_step_formula",
+    "Collatz.DyadicAnchor.dyadic_step_denominator",
+    "Collatz.DyadicAnchor.dyadic_step_denominator_grows",
+    "Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch"
+  ],
+  "scope": "Five finite actual-rational anchor roots: odd numerator, exact affine formula, exact reduced denominator, strict denominator growth, and an escaping branch from every integer anchor. The stationary-measure contradiction, signed-kernel positivity, ordinary/Haar averages and full majorant obstruction remain written. Cached pinned dependencies reused; no cold rebuild or independent LeanChecker run.",
+  "steps": [
+    {
+      "name": "DyadicAnchor",
+      "exit_code": 0,
+      "elapsed_seconds": 4.92,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "Audit",
+      "exit_code": 0,
+      "elapsed_seconds": 1.418,
+      "stdout_sha256": "89a777172b34a511d1084476f2b092d95b465eb10e2e89c8000e0dc2e19e8d70",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_unchanged": true,
+  "audited_roots": 5,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-28T10:57:36.821332+00:00"
+}
