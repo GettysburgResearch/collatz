@@ -1,0 +1,44 @@
+{
+  "scope": "Finite arithmetic replays and one fresh local Lean compilation. Infinite probabilistic and Diophantine arguments remain written.",
+  "checks": {
+    "block_compression": {
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_outputs": true,
+      "stdout_sha256": "ad49b63d3aabf2f707d4d606a965c58ecaddc93622fda91ac3fa0a37384ab397",
+      "stdout": "{\n  \"counts\": {\n    \"ordinary_lifts\": 395901,\n    \"packing_controls\": 221208,\n    \"residual_refinements\": 263934,\n    \"sorted_pair_offsets\": 65936,\n    \"source_prefixes\": 8184,\n    \"within_grade_pairs\": 43793\n  },\n  \"coverage\": {\n    \"block_sizes\": [\n      1,\n      2,\n      3,\n      5,\n      8,\n      13,\n      32,\n      65\n    ],\n    \"positive_high_lifts\": [\n      1,\n      3,\n      7\n    ],\n    \"prefix_depths\": [\n      0,\n      9\n    ]\n  },\n  \"scope\": \"finite exact integer interfaces only\",\n  \"script_sha256\": \"d7c1cefe513e5da41f7808aa8b99aebb38ea38528c36cfcb1c36bb20775fbaf4\",\n  \"semantic_sha256\": \"273b45266a9f30660be266272458d2acfc8f888b11f821367b11df5f21fbc6a2\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    "centered": {
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_outputs": true,
+      "stdout_sha256": "f123d85ffc1aabef68e581efddcb382ad3a472a93f646cc6ddb4164dbbdb8f3b",
+      "stdout": "verified 288 signed coefficients against all 65535 native residues\nverified 672 exact two-arm inverses through clock 120\ne=0 compressed skeletons by number of free runs [(0, 1)]\n  exact terms [((0, 0, 1), 1)]\ne=1 compressed skeletons by number of free runs [(0, 1)]\n  exact terms [((2, 0, 1), 1)]\ne=2 compressed skeletons by number of free runs [(0, 1)]\n  exact terms [((4, 0, 1), 1)]\ne=3 compressed skeletons by number of free runs [(0, 2)]\n  exact terms [((5, 0, 1), 1), ((6, 0, 1), 1)]\ne=4 compressed skeletons by number of free runs [(0, 5), (1, 2)]\n  exact terms [((6, 1, -1), 1), ((7, 0, 1), 3), ((7, 1, -1), 1), ((8, 0, 1), 2)]\ne=5 compressed skeletons by number of free runs [(0, 15), (1, 6)]\ne=6 compressed skeletons by number of free runs [(0, 49), (1, 18)]\ne=7 compressed skeletons by number of free runs [(0, 172), (1, 63)]\ne=8 compressed skeletons by number of free runs [(0, 649), (1, 246), (2, 8)]\n"
+    },
+    "growing": {
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_outputs": true,
+      "stdout_sha256": "252c73cb4076f1ab4d920f974bec6a9598fbb792e5f397e14980c237a0f87eca",
+      "stdout": "{\n  \"arm_digit_residual_updates\": 60556,\n  \"complete_child_label_sets\": 6132,\n  \"grade_lists\": 11543,\n  \"grade_telescopes\": 3066,\n  \"integer_packing_bounds\": 12264,\n  \"ordinary_whole_block_lifts\": 9198,\n  \"sorted_offset_identities\": 27212,\n  \"two_child_rounded_drifts\": 3066\n}\n"
+    },
+    "window": {
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_outputs": true,
+      "stdout_sha256": "f2b5e793d86420328cd98ef474003ad0835ae68b754a02638ddeffc37b2333f0",
+      "stdout": "{\n  \"largest_test_location_bits\": 3828,\n  \"ordinary_translated_windows\": 45,\n  \"prescribed_paths\": 1920,\n  \"rotation_approximants\": 3,\n  \"shortcut_edges\": 340420,\n  \"spine_edges\": 480\n}\n"
+    }
+  },
+  "lean": {
+    "version": "4.34.1",
+    "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "source": "research/astra-global-pursuit-20261128/dynamics/BlockResidual.lean",
+    "source_sha256": "3fb86a1105cb88f895e17aa31190e1f92cf02e1dd82be473530fbeb7c36f5e71",
+    "command": "lean -DwarningAsError=true -o TEMP/BlockResidual.olean research/astra-global-pursuit-20261128/dynamics/BlockResidual.lean",
+    "exit_code": 0,
+    "stdout": "'Collatz.BlockResidual.twiceStep' depends on axioms: [propext, Quot.sound]\n'Collatz.BlockResidual.distinctDigitParities' depends on axioms: [propext, Quot.sound]\n'Collatz.BlockResidual.residualTransport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.BlockResidual.sortedOffsetCancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.BlockResidual.sameGradeSpacing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "mathlib_used": false,
+    "outside_formal_rebuilds": []
+  }
+}
