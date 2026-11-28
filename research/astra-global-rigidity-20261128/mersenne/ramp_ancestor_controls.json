@@ -1,0 +1,65 @@
+[
+  {
+    "K": 41,
+    "extra_budget": 8,
+    "small_odd_upper": 50,
+    "maximum_inverse_evens": 28,
+    "slow_supplied_odds": 0,
+    "virtual_boundary_candidates": []
+  },
+  {
+    "K": 41,
+    "extra_budget": 9,
+    "small_odd_upper": 75,
+    "maximum_inverse_evens": 29,
+    "slow_supplied_odds": 1,
+    "virtual_boundary_candidates": []
+  },
+  {
+    "K": 141,
+    "extra_budget": 29,
+    "small_odd_upper": 255667,
+    "maximum_inverse_evens": 99,
+    "slow_supplied_odds": 2,
+    "virtual_boundary_candidates": []
+  },
+  {
+    "K": 141,
+    "extra_budget": 30,
+    "small_odd_upper": 383501,
+    "maximum_inverse_evens": 100,
+    "slow_supplied_odds": 12,
+    "virtual_boundary_candidates": [
+      [
+        216367,
+        242,
+        0,
+        2
+      ],
+      [
+        277615,
+        242,
+        1,
+        8
+      ],
+      [
+        288489,
+        242,
+        1,
+        8
+      ],
+      [
+        288615,
+        242,
+        1,
+        8
+      ],
+      [
+        345947,
+        242,
+        5,
+        719
+      ]
+    ]
+  }
+]

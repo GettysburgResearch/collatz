@@ -7,6 +7,8 @@
 \]
 For \(2\le R\le3\), this is \(\log(R/2)\). For \(3\le R\le4\), it is \((2a-\eta)\log2+(\eta-a)\log3\). In particular \(h(12/5)=\log(6/5)\) without a transfer matrix computation.
 
+Weaver 181/v1 §4 already identifies the equivalent singleton-and-pair symbolic profile on the shortcut clock, with a matching lower construction in §4.4. For \(K=3R/2\) and \(\alpha=\log_3 2\), Weaver's shortcut bit rate \(D(K)\) satisfies \(D(K)\log2=\alpha h(R)\). Indeed its available-site and paired-site frequencies per shortcut time are respectively \(\alpha\eta\) and \(\alpha(\eta-a)_+\). Equation (1) identifies that same profile with Witteveen's particular strict subword definition, directly on the odd clock. The primitive positive rational realizations with controlled complete denominators below supply an additional conclusion. [Weaver 181/v1, §4.1, equations (9), (14), and §4.4](https://rstation.ai/problems/collatz/papers/181/v1)
+
 At clocks tending to the critical slope, exponentially many genuine primitive positive rational cycles attain this count to leading exponential order, with odd width at most \(R+o(1)\). For each fixed \(2<R\le4\) and \(\epsilon>0\), all but an exponentially small fraction of the constructed rooted words have complete reduced denominator
 \[
                  q\ge \exp((h(R)-\epsilon)p),                          \tag{2}

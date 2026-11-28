@@ -24,6 +24,8 @@ MODULES = [
     ("CriticalCountStandalone", "mass/CriticalCountStandalone.lean", "Collatz.CriticalCount"),
     ("BasinDefects", "mass/BasinDefects.lean", "Collatz.CriticalCount"),
     ("MersenneCrests", "mersenne/MersenneCrests.lean", "Collatz.MersenneCrests"),
+    ("ProtectedDescent", "cycles/ProtectedDescent.lean", "CollatzResearch.ProtectedDescent"),
+    ("RampReference", "mersenne/RampReference.lean", "Collatz.RampReference"),
 ]
 
 
@@ -123,7 +125,7 @@ def main():
         "selection": {"mode": "subset" if args.only else "all",
                       "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
                       "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
-        "mathematical_scope": "The stated finite carry identities, actual-orbit centered counts, literal basin defects, and Mersenne crest theorems only. No analytic Gaussian law, component-density theorem, prime-distribution theorem, global no-gap theorem, general cycle exclusion or Collatz conclusion is formalized here.",
+        "mathematical_scope": "The stated finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crest theorems, convergence of the explicit protected-descent modification, and rational inverse-word comparison identities only. No analytic Gaussian law, density or sharp modification asymptotic, component-density theorem, prime-distribution theorem, global no-gap theorem, general cycle exclusion or original Collatz conclusion is formalized here.",
         "modules": [],
     }
     started = time.monotonic()
