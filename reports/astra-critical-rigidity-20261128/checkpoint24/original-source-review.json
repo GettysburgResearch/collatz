@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-original-source-review/v1",
+  "success": true,
+  "checked_utc": "2026-11-28T07:57:03.483563+00:00",
+  "primary_sources": [
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/191/v1",
+      "publication": "2026-11-21T17:09Z",
+      "current_version_url": "https://rstation.ai/problems/collatz/papers/191/v2",
+      "current_version_publication": "2026-11-21T21:05Z",
+      "sections_read": "Both versions: Theorems1-2 and Proposition3; endpoint obstruction; Section7 original comparison with Leen, including v2 Gaussian-rate limitation",
+      "scope": "Original statement-level and endpoint-proof comparison, not a fresh reconstruction of the whole paper."
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23652463",
+      "publication": "2026-10-25",
+      "filename": "collatz-structure.tex",
+      "sha256": "cb16df22654a8e30126c81363c5e9f19624aaf1437044bddc6bfde0ae48bbcee",
+      "sections_read": "Original PartI(a)-(e), paragraph following PartI and closing questions",
+      "scope": "Scalar fixed-fraction moderate tails, functional Brownian weak limit, and explicit open minimum slow-side bound; not used as a new input."
+    },
+    {
+      "url": "https://rstation.ai/r/collatz/posts/124",
+      "publication": "2026-11-27",
+      "sections_read": "Entire checked, reading-level and not-checked lists, manuscript-record identifier and scope",
+      "scope": "The author explicitly excludes the moderate-deviation section and several transfers; this external audit is not used as a certificate of the present path theorem."
+    },
+    {
+      "url": "https://arxiv.org/html/2610.28079v1#S11",
+      "publication": "2026-10-20",
+      "sections_read": "Theorem11.1, formal endpoint paragraph and AppendixA Review19",
+      "scope": "Revisited against the retained independent 1002-module rebuild and local endpoint specialization, whose detailed evidence was already published."
+    }
+  ],
+  "scope": "Closing primary attribution and scope comparison; no new mathematical or formal result."
+}

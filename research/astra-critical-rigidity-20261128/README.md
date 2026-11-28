@@ -442,7 +442,11 @@ The [twenty-second coordinating review](../../reports/astra-critical-rigidity-20
 +
 +The [final coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint23/REVIEW.md), [complete build receipt](../../reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json) and [deduplicated inventory](../../reports/astra-critical-rigidity-20261128/checkpoint23/formal-inventory.json) document the closing audit. The [handoff](FINAL_HANDOFF.md) prioritizes the cutoff-clock conjecture, the exact endpoint moment frontier, the common-clock denominator spectrum, genuine ordinary collision statistics and the sparse-rule barrier, with their original-source dependencies and remaining gaps.
 +
-+## Attribution and proof boundaries
++## Closing source-verification checkpoint
+
+The [closing primary comparison](literature/CLOSING_PRIMARY_COMPARISON.md) distinguishes the new natural-density functional claim from recent arbitrary-translation passage bounds and the limited scope of an external analytic audit. [Checkpoint24](../../reports/astra-critical-rigidity-20261128/checkpoint24/REVIEW.md) also preserves checkpoint23's complete publication validation. It adds no mathematical claim or Lean root; the final inventory remains **137**.
+
+## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.
 

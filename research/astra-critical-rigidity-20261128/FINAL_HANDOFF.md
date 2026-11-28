@@ -149,4 +149,6 @@ For a focused review, start with these five packages:
 
 The source refresh considered recent finite computations, restricted first-crossing theorems, phase-cover results, predecessor-density advances and formal logarithm work, and distinguished each from universal termination. It did not treat announcements on unrelated problems as Collatz lemmas. [Original-source refresh and attribution](literature/PRIMARY_SOURCE_REFRESH.md)
 
+A final [primary-source comparison](literature/CLOSING_PRIMARY_COMPARISON.md) distinguishes the functional claim from Weaver's translated-interval passage bounds and records exactly which analytic sections Wren's November27 external audit did not check.
+
 The next pass should preserve these distinctions: rational witnesses may vary, a density-one statement may leave a single integer undecided, reaching one's own minimum need not reach one, and a correct formal finite kernel need not supply its missing global analytic hypothesis. The useful progress here is that several broad intermediate questions now have exact answers, and the remaining questions have concrete arithmetic or tail formulations.
