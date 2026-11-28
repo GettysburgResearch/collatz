@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-critical-rigidity-reviewed-sources/v1",
+  "checkpoint": 17,
+  "review": "reports/astra-critical-rigidity-20261128/checkpoint17/REVIEW.md",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/check_lean.py": "eba896860d8ea1765bdacfc7d7424ad20a8b171bfeca2542405f4cbcde32edac",
+    "research/astra-critical-rigidity-20261128/cycles/POOLED_PAST_SUMSETS.md": "508942858e62ba62e2de451a49137d952b5b27b54d7defbe912b075e6fd31fb8",
+    "research/astra-critical-rigidity-20261128/cycles/check_native_return_curvature.py": "9f71ee63bd680fb885b6e4c2e8e6e57b5f4a79a549c3d39ec68491ff59c65f90",
+    "research/astra-critical-rigidity-20261128/cycles/check_pooled_past_sumsets.py": "23cca67db4fa203885215931bd736d9f3f8b95feca51ac414e0e7fc4c33181ff",
+    "research/astra-critical-rigidity-20261128/cycles/pooled_past_sumset_controls.json": "2b330828eb36ed4db8bb18b375e19a6fb66293f2edbd5d301b051974c2f4f7db",
+    "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+    "research/astra-critical-rigidity-20261128/literature/COMPUTABLE_SHADOWING_MAP.md": "46522b875f53a2a5af60f6131eb1a0bd69c27e9a07aefd19af0516d5110307f7",
+    "research/astra-critical-rigidity-20261128/literature/DENSITY_ZERO_BRANCH_PERTURBATIONS.md": "253ad9fb4d90185b42d553bb36854c31d70815f07e97d0e8c437bad412af03db",
+    "research/astra-critical-rigidity-20261128/literature/SHADOWING_PHASE_CONTROLS.json": "ad272f1975d06264c04c6328452e6e4ad5d29a06ab78a2dc8110379197cf27af",
+    "research/astra-critical-rigidity-20261128/literature/SHADOWING_TO_THE_MINIMUM.md": "506ad3763cc7a887d5e75e2699697b6e5435589746ad857f803ed6897e750d62",
+    "research/astra-critical-rigidity-20261128/literature/SHADOWING_WITH_INDEPENDENT_PHASES.md": "08910b7037e715a422b13cc2681b47b63c7beab60d634b4fe28bd52bcb051963",
+    "research/astra-critical-rigidity-20261128/literature/check_shadowing_phases.py": "72d4c5c690b24004d76fb77d958aa557696c402e4183bd90ad63da187df1e205",
+    "research/astra-critical-rigidity-20261128/ordinary/ORDINARY_PREDECESSORS_IN_SHORT_WINDOWS.md": "7b09286351732f5d256d2e280551b562aaadc9263044c6cd18677a3b4c91829f",
+    "research/astra-critical-rigidity-20261128/ordinary/RECIPROCAL_LANDING_WORDS.md": "885ef03a8d6a5e3cf110090bfeee5e79145bf11c179ef98338cd137522fc6c9a",
+    "research/astra-critical-rigidity-20261128/ordinary/SHORT_WINDOW_CONTROLS.json": "6a93f82c3c3dc2a25f0891b8d19cb17964fe7333b99ef163367f34c7a53968a6",
+    "research/astra-critical-rigidity-20261128/ordinary/SINGLE_GRADE_FUTURE_CONTROLS.json": "765ecc1904946d5df564752fadc62e5d6e91c6e134903765e182269b5db7fcde",
+    "research/astra-critical-rigidity-20261128/ordinary/SINGLE_GRADE_MARKS_AND_ORDINARY_FUTURES.md": "7be106416401c80357d6947b670b4f1982e2c50b5710846eb491d4e7b5b64d92",
+    "research/astra-critical-rigidity-20261128/ordinary/SYNCHRONOUS_PHASE_DISPERSION.md": "bd9da43d81cc04abe9ced69692eeeb67ddbb72611606ae14006ced3c2642d70b",
+    "research/astra-critical-rigidity-20261128/ordinary/SynchronousPhase.lean": "a3b0d52ffec50ce4455e840f61fb030bd377f558764d3b83820b97c455aec2b1",
+    "research/astra-critical-rigidity-20261128/ordinary/check_short_window_predecessors.py": "1293d6f49327815a146fccc9a21fa22685f1e9bc3ff0f82b28982412c70f1a65",
+    "research/astra-critical-rigidity-20261128/ordinary/check_single_grade_futures.py": "34dd2c3a074aa42308447b4782b336b8948a77db348c9cd3c750ea8d0cae31ba"
+  },
+  "scope": "Seven independently reconstructed proposed written notes; four centrally replayed exact finite controls; nine new connected Lean theorem roots freshly compiled with thirteen existing dependency roots, plus a separately audited quotient permutation definition. Original probability inputs remain source-qualified written imports. Countermodels have a modified odd branch; no Collatz counterexample or genuine threshold evaluation is asserted."
+}

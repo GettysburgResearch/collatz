@@ -31,6 +31,8 @@ MODULES = {
         "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."),
     "ConditionalParitySuffix": ("literature/ConditionalParitySuffix.lean", "Collatz.ConditionalParitySuffix",
         "Every odd-step progression has precisely one parameter residue realizing a supplied ordinary parity word; a full modulus shift preserves the actual prefix and translates its endpoint; conditional on an odd input and a realized multiplier prefix, exactly one coefficient residue realizes each prescribed physical suffix. Quenched coefficient selection, Brownian release laws and population limits remain written."),
+    "SynchronousPhase": ("ordinary/SynchronousPhase.lean", "Collatz.SynchronousPhase",
+        "Actual same-date meeting on positive integers is an equivalence; shortcut and doubling induce an invertible quotient shift; phase return is equivalent to a genuine periodic tail; a finite equal-phase family has one common actual date. On the periodic locus phase equality is physical equality, and any off-locus collision forces the exact same later first-entry date. The quotient shift construction is additionally audited but is not counted as another theorem root. All density, Gaussian and limiting collision criteria remain written."),
     "PairedClock": ("ordinary/PairedClock.lean", "Collatz.PairedClock",
         "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification is formalized separately in JointTargets."),
     "SignedReturnRouter": ("ordinary/SignedReturnRouter.lean", "Collatz.SignedReturnRouter",
@@ -65,6 +67,7 @@ MODULES = {
         "On a finite native comparison tube scaled by its complete denominator coprime to three, a terminal zero forces every preceding comparison and every integer forcing in [-2,2] to vanish. No cyclic closure, transitivity, spatial ordering or denominator-size premise is used. Construction of the actual binary tube, prime dilation, entropy and asymptotic band-exit applications remain written."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
+ADDITIONAL_DEFINITIONS = {"SynchronousPhase": ["Collatz.SynchronousPhase.shift"]}
 
 
 def digest(data: bytes) -> str:
@@ -158,8 +161,9 @@ def main() -> None:
             if check.returncode:
                 print(check.stdout + check.stderr)
                 raise SystemExit(1)
+        extra = [root for module in selected for root in ADDITIONAL_DEFINITIONS.get(module, [])]
         audit_text = "\n".join([*("import " + n for n in selected), "",
-                                *("#print axioms " + n for n in public), ""])
+                                *("#print axioms " + n for n in public + extra), ""])
         audit_path = obj / "Audit.lean"
         audit_path.write_text(audit_text)
         audit = run([str(lean), "-j1", "-DautoImplicit=false", "-DwarningAsError=true",
@@ -170,8 +174,9 @@ def main() -> None:
         rows = re.findall(r"depends on axioms:\s*\[([^\]]*)\]", audit.stdout)
         seen = {a.strip() for row in rows for a in row.split(",") if a.strip()}
         count = len(rows) + audit.stdout.count("does not depend on any axioms")
-        success = audit.returncode == 0 and count == len(public) and not (seen - ALLOWED_AXIOMS)
+        success = audit.returncode == 0 and count == len(public) + len(extra) and not (seen - ALLOWED_AXIOMS)
         result.update({"success": success, "public_roots": len(public),
+            "additional_audited_definitions": extra,
             "axiom_audit": {"exit_code": audit.returncode, "audited": count,
                             "axioms": sorted(seen)},
             "finished_utc": datetime.now(timezone.utc).isoformat(),

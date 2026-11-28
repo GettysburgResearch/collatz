@@ -1,0 +1,138 @@
+{
+  "pooled": [
+    {
+      "L": 1,
+      "M": 32768,
+      "Q": 1,
+      "R": "19/5",
+      "active_rows": 403,
+      "all_distinct_genuine_endpoints": 298,
+      "bins": 77,
+      "encoded_rows": 9,
+      "endpoints": 197,
+      "h": 2,
+      "largest_bin": 6,
+      "repeated_physical_sum_representations": 1,
+      "signed_multisets": 378
+    },
+    {
+      "L": 1,
+      "M": 8192,
+      "Q": 7,
+      "R": "3",
+      "active_rows": 132,
+      "all_distinct_genuine_endpoints": 183,
+      "bins": 41,
+      "encoded_rows": 8,
+      "endpoints": 88,
+      "h": 2,
+      "largest_bin": 3,
+      "repeated_physical_sum_representations": 0,
+      "signed_multisets": 141
+    },
+    {
+      "L": 2,
+      "M": 131072,
+      "Q": 5,
+      "R": "21/8",
+      "active_rows": 15,
+      "all_distinct_genuine_endpoints": 585,
+      "bins": 5,
+      "encoded_rows": 7,
+      "endpoints": 10,
+      "h": 8,
+      "largest_bin": 2,
+      "repeated_physical_sum_representations": 0,
+      "signed_multisets": 45
+    }
+  ],
+  "scalar_threshold": [
+    {
+      "L": 1,
+      "first_allowed_abs_forcing": 3
+    },
+    {
+      "L": 2,
+      "first_allowed_abs_forcing": 9
+    },
+    {
+      "L": 5,
+      "first_allowed_abs_forcing": 243
+    }
+  ],
+  "sharp": [
+    {
+      "Q": 1,
+      "n": 1,
+      "true_histories": 3,
+      "v3_Qd": 1
+    },
+    {
+      "Q": 1,
+      "n": 6,
+      "true_histories": 3,
+      "v3_Qd": 6
+    },
+    {
+      "Q": 1,
+      "n": 17,
+      "true_histories": 3,
+      "v3_Qd": 17
+    },
+    {
+      "Q": 1,
+      "n": 65,
+      "true_histories": 3,
+      "v3_Qd": 65
+    },
+    {
+      "Q": 5,
+      "n": 1,
+      "true_histories": 3,
+      "v3_Qd": 1
+    },
+    {
+      "Q": 5,
+      "n": 6,
+      "true_histories": 3,
+      "v3_Qd": 6
+    },
+    {
+      "Q": 5,
+      "n": 17,
+      "true_histories": 3,
+      "v3_Qd": 17
+    },
+    {
+      "Q": 5,
+      "n": 65,
+      "true_histories": 3,
+      "v3_Qd": 65
+    },
+    {
+      "Q": 35,
+      "n": 1,
+      "true_histories": 3,
+      "v3_Qd": 1
+    },
+    {
+      "Q": 35,
+      "n": 6,
+      "true_histories": 3,
+      "v3_Qd": 6
+    },
+    {
+      "Q": 35,
+      "n": 17,
+      "true_histories": 3,
+      "v3_Qd": 17
+    },
+    {
+      "Q": 35,
+      "n": 65,
+      "true_histories": 3,
+      "v3_Qd": 65
+    }
+  ],
+  "source_sha256": "508942858e62ba62e2de451a49137d952b5b27b54d7defbe912b075e6fd31fb8"
+}

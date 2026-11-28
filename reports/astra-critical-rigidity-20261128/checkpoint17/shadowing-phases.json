@@ -1,0 +1,115 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T06:12:36.737431+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_shadowing_phases.py": "72d4c5c690b24004d76fb77d958aa557696c402e4183bd90ad63da187df1e205",
+    "research/astra-critical-rigidity-20261128/literature/DENSITY_ZERO_BRANCH_PERTURBATIONS.md": "253ad9fb4d90185b42d553bb36854c31d70815f07e97d0e8c437bad412af03db",
+    "research/astra-critical-rigidity-20261128/literature/SHADOWING_TO_THE_MINIMUM.md": "506ad3763cc7a887d5e75e2699697b6e5435589746ad857f803ed6897e750d62",
+    "research/astra-critical-rigidity-20261128/literature/SHADOWING_WITH_INDEPENDENT_PHASES.md": "08910b7037e715a422b13cc2681b47b63c7beab60d634b4fe28bd52bcb051963",
+    "research/astra-critical-rigidity-20261128/literature/COMPUTABLE_SHADOWING_MAP.md": "46522b875f53a2a5af60f6131eb1a0bd69c27e9a07aefd19af0516d5110307f7"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.411,
+      "stdout_sha256": "ad272f1975d06264c04c6328452e6e4ad5d29a06ab78a2dc8110379197cf27af",
+      "result": {
+        "scenarios": {
+          "2": {
+            "capture_minus_discrepancy": {
+              "-1": 19,
+              "0": 2,
+              "1": 4075
+            },
+            "exact_pattern_translations": 32640,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 10800,
+            "trace_sha256": "fff8018a53af806ca5194e7d10bc7c26529afe451616938360d785212a1dbcd8"
+          },
+          "3": {
+            "capture_minus_discrepancy": {
+              "-1": 28,
+              "0": 3,
+              "1": 4065
+            },
+            "exact_pattern_translations": 91392,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 31752,
+            "trace_sha256": "3ffd82042f967ecec9c1fae2aeb05cf42a00c89fab93dc4c4cebc96b84bab1d4"
+          },
+          "4": {
+            "capture_minus_discrepancy": {
+              "-1": 36,
+              "0": 4,
+              "1": 4056
+            },
+            "exact_pattern_translations": 195840,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 71280,
+            "trace_sha256": "8bf221f3103bf88474527cf4d7b8ccb24a8e3f940e45ccab820ae5fa8d299e8e"
+          }
+        },
+        "scope": "Finite complete positive paths, local first-drop tests, exact selectors and seam identities. Finite schedules do not verify the asymptotic Fourier selection or Brownian estimate."
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.46,
+      "stdout_sha256": "ad272f1975d06264c04c6328452e6e4ad5d29a06ab78a2dc8110379197cf27af",
+      "result": {
+        "scenarios": {
+          "2": {
+            "capture_minus_discrepancy": {
+              "-1": 19,
+              "0": 2,
+              "1": 4075
+            },
+            "exact_pattern_translations": 32640,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 10800,
+            "trace_sha256": "fff8018a53af806ca5194e7d10bc7c26529afe451616938360d785212a1dbcd8"
+          },
+          "3": {
+            "capture_minus_discrepancy": {
+              "-1": 28,
+              "0": 3,
+              "1": 4065
+            },
+            "exact_pattern_translations": 91392,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 31752,
+            "trace_sha256": "3ffd82042f967ecec9c1fae2aeb05cf42a00c89fab93dc4c4cebc96b84bab1d4"
+          },
+          "4": {
+            "capture_minus_discrepancy": {
+              "-1": 36,
+              "0": 4,
+              "1": 4056
+            },
+            "exact_pattern_translations": 195840,
+            "ordered_pairs": 9216,
+            "prefixes": 4096,
+            "seam_equalities": 71280,
+            "trace_sha256": "8bf221f3103bf88474527cf4d7b8ccb24a8e3f940e45ccab820ae5fa8d299e8e"
+          }
+        },
+        "scope": "Finite complete positive paths, local first-drop tests, exact selectors and seam identities. Finite schedules do not verify the asymptotic Fourier selection or Brownian estimate."
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Complete finite true paths and computable modified paths, exact first-discrepancy and capture dates, real integer power comparisons for rational selectors, synchronous classes and two-stage seam identities. This finite schedule does not instantiate the huge frequency selection or verify the asymptotic Brownian, density or critical collision laws; these concern a modified map, not a Collatz counterexample.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T06:12:37.608600+00:00"
+}
