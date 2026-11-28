@@ -1,0 +1,52 @@
+# A single-exponential finite table at the original convergence-test precision
+
+For the positive-component statistic \(Q_j^*\) of [PR193's pinned original-word test](https://github.com/GettysburgResearch/collatz/blob/aa6868996f6f30b12d91c367f7c6edcfd93784b2/research/astra-six-hour-20261127/escape/ENDPOINT_RATE_TEST.md), take
+\[
+ Y_j=\lceil(3/2)^j\rceil,\qquad M_j=8(j+1).
+\]
+Form the exact finite rational \(V_j\) with the original convention, keeping all positive odd targets \(1<y\le Y_j\) and all words of grades \(j,j+1\) whose **total physical gap clock** is at most \(M_j\). For every \(j\ge1\),
+\[
+             |Q_j^*-V_j|\le(12j+18)(2/3)^j.                            \tag{1}
+\]
+Accordingly the polynomial-times-\((2/3)^j\) subsequence criterion can equally be tested on these tables, allowing the polynomial exponent to increase to at least one. The same subsequence works in both directions. This does not establish such a subsequence.
+
+The unmarked term also gives a positive lower bound at every individual grade. Take the ordinary odd unit \(y=2\cdot3^{j+2}-1\) and its exponent-one predecessor \(z=(2y-1)/3\). Then \(z\equiv y\equiv-1\pmod{3^{j+1}}\). The function \(\rho_{j+1}\) has period \(3^{j+1}\), since each inverse gap loses one ternary digit. The true exponent-one term therefore gives \(\rho_{j+2}(y)\ge(3/2)\rho_{j+1}(y)\). Taking exponent one another \(j\) times from \(y\) is legal and ends at a source congruent to two modulo three, hence \(\rho_{j+1}(y)\ge2(3/2)^j\). Finally \(y<18\cdot3^j\) and \(3y+1<54\cdot3^j\). Retaining this single target proves
+\[
+             Q_j^*\ge (1/972)(1/6)^j .
+\]
+The witness target grows with the grade. The lower base is below the convergence-test base.
+
+## Uniform target and clock tails
+
+Let \(\pi(y)=1/[y(3y+1)]\), and count the original positive unit source weights \(\rho_1\) in the all-visit row \(\rho_{d+1}\). For an integer \(Y\ge1\),
+\[
+              \sum_{y\ge Y\ {\rm odd}}\pi(y)\rho_{d+1}(y)
+                                      \le (12d+4)/Y.                    \tag{2}
+\]
+At targets \(B\le y<2B\) initially keep clocks \(m\le8d\). Any such positive odd source \(x\) satisfies \(B 2^{-d}\le x\le 2^{8d+1}B\): each odd step grows by at most two, while the affine inverse formula gives \(x\le2^m y/3^d\). At a given grade each source has exactly one actual target, repeats included. Its weighted contribution is at most \(2/(3Bx)\), by the [true mark bound](OriginalLoss.lean). The harmonic sum on this source range is at most \(1+(9d+1)\log 2\le9d+2\), including when the lower endpoint is less than one. For clocks above \(8d\), remove integrality and take independent positive geometric gaps \(\Pr(G=e)=2^{-e}\). Since \(\mathbb E(4/3)^G=2\) and \(\rho_1\le2\), at each target their undivided mass is at most \(2\eta^d\), with \(\eta=6(3/4)^8<2/3\). The sum of the kernel on that target band is at most \(1/(3B)\). The total band bound is consequently \((6d+2)/B\), including the empty-word case \(d=0\). Summing \(B=Y,2Y,4Y,\dots\) proves (2).
+
+At each omitted target the whole original positive maximum is at most \(\rho_{j+2}\). At a retained target, discarding long words perturbs either signed component by at most the omitted masses at the two grades, uniformly in the threshold. Positive part, maximum and supremum preserve this absolute error. The sum of \(\pi(y)\) over positive odd \(y>1\) is at most \(1/3\). Thus the clock error is at most \((2/3)(\eta^j+\eta^{j+1})\), and the omitted targets cost at most \((12j+16)/Y_j\), giving (1). The older bound at fixed target cutoff was exponential in \(d\); (2) uses the physical height of actual sources.
+
+For each target and each required grade \(d\), at most \(\binom{M_j}{d}\) compositions need to be examined, by the count of positive tuples with total at most \(M_j\). The finite CDF tests use zero and the rational breakpoints in the prescribed band. Their numerators and denominators have \(O(j)\) bits prior to the final cross-target sum. The global rational sum may have exponentially many bits, still within single-exponential bit complexity. In particular one need not enumerate independent per-letter cutoffs of size proportional to \(j\) at every letter.
+
+The signed gap-three representation also gives the stronger absolute-constant upper bound \(C\sqrt{d+1}/Y\) for the original positive variation restricted to targets above \(Y\). In one target octave keep all-parity clocks \(m\le8d\). The same source range applies to the all-parity starting points, since initial halvings cannot increase the target. Only \(O(d+1)\) source octaves meet the range. On the source octave of binary exponent \(s\), counted merger by clock \(L=\min(d,\lfloor s/2\rfloor)\) cancels the positive paired term at every original threshold. The residual harmonic weight costs \(O((1+L)^{-1/2}+2^{L-s})\), as in [the marked calculation](MARKED_GAP_THREE.md). This sums to \(O(\sqrt{d+1})\) over *any* interval of \(O(d+1)\) consecutive nonnegative exponents. Divide by \(3B\). The narrow strips cost \(O(1/B)\), since any active source has weight at most \(2/[(d+1)3Bx]\). In the high-clock tail the initial nonnegative halving count contributes an extra factor \(\sum_{r\ge0}(2/3)^r=3\) to the moment bound. When cutting paired terms retain the positive member's full share and charge high-clock positive members by this same geometric bound; synchronized members have exactly equal clocks. Summing target octaves proves the claimed improvement. Bound (1) already follows from the explicit simpler (2).
+
+## The rational endpoint band and finite verification
+
+PR193 proved eventual marked emptiness at nonperiodic targets from a uniform simple-path product floor. For its explicit band \(1/(j+1)\), emptiness actually holds at **every positive grade** on such targets. A finite path with \(k\) distinct positive odd departures has normalized endpoint mark at least \(3/(k+3)\). Sort their heights \(u_1<\cdots<u_k\). Each \(u_i\ge i\), so \(3u_i/(3u_i+1)\ge(i+2)/(i+3)\). Multiply the inequalities. Initial halvings have factor one. Both rows at grade \(j\) use \(k\le j+1\), and \(3/(j+4)>1/(j+1)\) for \(j\ge1\). Any repeated odd departure forces the endpoint onto the resulting cycle. In particular a positive marked contribution at any odd \(y>1\) and any positive grade certifies a nontrivial positive cycle.
+
+More specifically, at \(j\ge2\) such a cycle has minimum \(s<(j+1)/(2\log(j+1))\). All departed odd states are greater than one. The distinct ones ordered increasingly satisfy \(u_i\ge2i+1\); their total logarithmic inverse correction is strictly less than \(\sum_{i=1}^k1/[3(2i+1)]\le\log(2k+1)/6\) for \(k\ge1\), by a decreasing integral. Every remaining departure is a repeat on the cycle and costs at most \(1/(3s)\). If the band is occupied,
+\[
+ \log(j+1)<\tfrac16\log(2j+3)+(j+1)/(3s).
+\]
+Use \(2j+3\le(j+1)^2\) for \(j\ge2\). At \(j=1\) even the two smallest possible factors have product at least \((3/4)^2>1/2\).
+
+There is a direct finite-verification transfer. If every positive start through \(B=2^b\) reaches one, both narrow rows vanish at **all positive odd targets greater than one** whenever \(1\le j\) and \(j+1\le b B\). If the path contains a low odd departure, it eventually reaches one. Its prefix to an odd target greater than one has distinct states because a repeated pair would already put that target on the known cycle. Otherwise all odd departures have height at least \(B\), so the mark is at least \(p^k\) for \(p=3B/(3B+1)\). By Bernoulli, \(p^B\ge1-B/(3B+1)>1/2\). When \(j+1\le B\), this exceeds \(1/(j+1)\) already. When \(B<j+1\le bB\), the mark is at least \((p^B)^b>2^{-b}=1/B\). This proof needs no conjecture about starts above the verified prefix.
+
+The separate [integer first-drop replay](check_marked_prefix.py) certifies the premise at \(b=22\): all 4,194,303 starts above one and at most 4,194,304 reach a smaller positive value, in 14,630,287 shortcut steps combined. Strong induction supplies convergence to one on this finite prefix. Hence the actual marked half is zero for **every positive odd target greater than one through grade 92,274,687**, inclusive. The [computed receipt](../../../reports/astra-infinite-descent-20261127/escape/MARKED_PREFIX.json) records the canonical witness stream digest. The certificate was checked by Python integer arithmetic; it is separate from the general [Lean transfer](NarrowBand.lean).
+
+## Full original-statistic enclosures at small depths
+
+The [original-statistic checker](check_original_q.py) encloses the infinite-target \(Q_j^*\), rather than only a truncated sample. Through the checked grades the marked half is zero from the tiny prefix \(B=8\), verified again by the checker. It computes lower integer approximants \(a_k/2^{40}\) to \(\rho_k\) over their complete periods \(q=3^k\), using the geometric doubling sweep of [PR193's fixed-point trace checker](https://github.com/GettysburgResearch/collatz/blob/aa6868996f6f30b12d91c367f7c6edcfd93784b2/research/astra-six-hour-20261127/escape/check_linear_trace.py). On the single unit doubling orbit, a backward step adds three times the compatible previous-level entry when the residue is two modulo three, then halves. Each floor contributes less than one lattice unit. The propagated previous-level error is at most twice its previous supremum, by the one-letter row bound. At least \(40+k+2\) warm steps suppress the unknown initial scaled value \(\le2^{40+k}\) below one further unit. Thus \(0\le2^{40}\rho_k-a_k\le3(2^k-1)\), by induction. The first five complete levels are independently checked using exact rational full-period sums.
+
+For \(k=j+2\), the true density over all \(q\) residues sums to \(q\), since every predecessor residue has one target lift at each positive exponent, and the total lifted weight is three. The first \(q\) positive odd representatives cover every residue once. In each subsequent real band \([2q h,2q(h+1))\), \(h\ge1\), the positive derivative is at most \(\rho_k\), so its weighted total is at most \(1/(12q h^2)\). The total omitted contribution after that first period is less than \(1/(6q)\). The first period is summed with one-sided integer rounding, omitting the actual target one. The [rational receipt](../../../reports/astra-infinite-descent-20261127/escape/ORIGINAL_Q_CHECKS.json) records every enclosure. Finite increases and decreases are both present; the data establish no asymptotic bound.

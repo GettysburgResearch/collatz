@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "all_rotation_checks": 7908,
+    "nonzero_native_discrepancy_rows": 29235,
+    "primitive_binary_column_cycles": 1664,
+    "proper_whole_cell_lags": 783
+  },
+  "two_prime_examples": [
+    {
+      "active_degree": 11,
+      "displayed_mismatches": 20,
+      "full_denominator_bits": 714,
+      "minimum_mismatches": 20,
+      "odd_period": 1435,
+      "primes": [
+        5,
+        7
+      ]
+    },
+    {
+      "active_degree": 15,
+      "displayed_mismatches": 20,
+      "full_denominator_bits": 975,
+      "minimum_mismatches": 20,
+      "odd_period": 2255,
+      "primes": [
+        5,
+        11
+      ]
+    },
+    {
+      "active_degree": 17,
+      "displayed_mismatches": 28,
+      "full_denominator_bits": 1105,
+      "minimum_mismatches": 28,
+      "odd_period": 3157,
+      "primes": [
+        7,
+        11
+      ]
+    },
+    {
+      "active_degree": 21,
+      "displayed_mismatches": 20,
+      "full_denominator_bits": 1365,
+      "minimum_mismatches": 20,
+      "odd_period": 3485,
+      "primes": [
+        5,
+        17
+      ]
+    }
+  ]
+}

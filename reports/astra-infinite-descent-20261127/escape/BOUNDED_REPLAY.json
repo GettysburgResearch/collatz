@@ -1,0 +1,79 @@
+{
+  "two_clock_octaves": [
+    {
+      "J": 4,
+      "extended_deadline": 6,
+      "sources": 16,
+      "native_counted_unmet": 9,
+      "native_two_clock_unmet": 9,
+      "extended_two_clock_unmet": 9,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 31,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 2
+    },
+    {
+      "J": 6,
+      "extended_deadline": 8,
+      "sources": 64,
+      "native_counted_unmet": 33,
+      "native_two_clock_unmet": 33,
+      "extended_two_clock_unmet": 33,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 191,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 12
+    },
+    {
+      "J": 8,
+      "extended_deadline": 10,
+      "sources": 256,
+      "native_counted_unmet": 128,
+      "native_two_clock_unmet": 128,
+      "extended_two_clock_unmet": 125,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 1030,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 48
+    },
+    {
+      "J": 10,
+      "extended_deadline": 13,
+      "sources": 1024,
+      "native_counted_unmet": 497,
+      "native_two_clock_unmet": 497,
+      "extended_two_clock_unmet": 478,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 5746,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 107
+    },
+    {
+      "J": 12,
+      "extended_deadline": 15,
+      "sources": 4096,
+      "native_counted_unmet": 1939,
+      "native_two_clock_unmet": 1939,
+      "extended_two_clock_unmet": 1881,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 27390,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 487
+    },
+    {
+      "J": 14,
+      "extended_deadline": 17,
+      "sources": 16384,
+      "native_counted_unmet": 7605,
+      "native_two_clock_unmet": 7605,
+      "extended_two_clock_unmet": 7417,
+      "sources_with_some_unaligned_crossing": 0,
+      "equal_slope_crossings": 127399,
+      "unequal_slope_crossings": 0,
+      "high_gap_sources_certified_unmet": 2139
+    }
+  ],
+  "inverse_ladders": 96,
+  "checked_first_hits": 864,
+  "maximum_replayed_first_hit_time": 159
+}

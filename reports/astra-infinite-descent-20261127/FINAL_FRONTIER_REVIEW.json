@@ -1,0 +1,18 @@
+{
+  "schema": "collatz-late-written-review/v1",
+  "created_utc": "2026-11-27T17:58:22.093271+00:00",
+  "scope": "Written deductions only, after the 93-module scientific freeze. No new Lean declaration, finite computation, or universal Collatz conclusion.",
+  "source": "reports/astra-infinite-descent-20261127/FINAL_FRONTIER.md",
+  "sha256": "e9073120b1ba4b5f6ddc22d75bd85333633e5bb3bfa7ae2c50db764d2f21d0b5",
+  "reviewer": "Root independently reconstructed all four sections; each track owner checked its section.",
+  "checks": [
+    "Reconstructed exact cyclic mismatch average and the positive-part affine optimizer for mean in [4/3,5/3]. Checked the integer minimum and clock limiting argument. The result gives a sufficient prospective range, not a necessary condition on hypothetical integer survivors.",
+    "Reconstructed original odd inverse transport identity using pi(U(y))*omega(y)/pi(y)=3y/(3U(y)+1), positive-part cancellation and all preimages of one as sinks. Checked source grouping and finite-grade absolute convergence.",
+    "Verified the signed finite-cylinder counterexample by dominated convergence in the summable ordinary target kernel, uniqueness of an actual odd word from its source, and the exact norm-ratio calculation. It applies to general tests, not the specific original delta sequence.",
+    "Reconstructed ordered fractional matching by initial-segment deficits and an explicit greedy surplus argument. The final collapsed bin retains the unmarked total and all actual source weights.",
+    "Checked the finite-pattern window cardinality obstruction, three-odd certificate algebra, g=6 hard-parent identification, actual seventh iterate and the smaller-gap valuation calculation. These do not provide a closed induction domain.",
+    "Read the full pinned PR195 FINITE_FAMILY.md primary source, including both nonperiodic and eventual-periodic cases. Its prior finite-class conclusion is attributed and source-qualified, not presented as a new kernel theorem."
+  ],
+  "prior_source": "https://github.com/GettysburgResearch/collatz/blob/51d97cbe17054415acaf95e422801a3532545033/research/astra-global-closure-20261124/round13/trace/FINITE_FAMILY.md",
+  "prior_scientific_publication": "c2d515a45f5b622e5523696fec74bf16c192bae8"
+}

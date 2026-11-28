@@ -1,0 +1,493 @@
+{
+  "schema": "collatz-coordinator-written-review/v1",
+  "reviewer": "root; independent reconstruction of agent arguments",
+  "created_utc": "2026-11-27T17:18:03.437888+00:00",
+  "scope": "Exact listed source bytes. Separate receipts record finite arithmetic and a complete fresh Lean replay. Explicit external premises and written infinite arguments remain distinct. Collatz remains open.",
+  "sources": [
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/NEAR_CIRCUIT_FIVE.md",
+      "sha256": "72550044b8b87a62f5c8ac59f59c82781251657e000831e0fe79585f336ce877",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Checked Evertse Theorem 2 (equation 14) on the primary printed page 228, including nonempty-subsums and S/T choices. Reconstructed the compact local three-term and split four-term equations, complete denominators and uniform logarithmic error.",
+        "For arbitrary consecutive native chains, increasing binary prefix exponents exclude every nonempty compact RHS subsum. Splitting only the final payload preserves nondegeneracy: a separated vanishing subsum can be complemented to omit the terminal quotient, leaving one ternary unit against terms divisible by three. Full-lap chains remain valid.",
+        "Checked all-minimum interior costs and the final min of the compact and split costs. Infinite asymptotic conclusions remain written applications of the external theorem."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/MISMATCH_CHAINS.md",
+      "sha256": "adf3fe4367a307363147ec53015384bbcf814fb198b5ef16a25ebb3d4d5b70fc",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Checked Evertse Theorem 2 (equation 14) on the primary printed page 228, including nonempty-subsums and S/T choices. Reconstructed the compact local three-term and split four-term equations, complete denominators and uniform logarithmic error.",
+        "For arbitrary consecutive native chains, increasing binary prefix exponents exclude every nonempty compact RHS subsum. Splitting only the final payload preserves nondegeneracy: a separated vanishing subsum can be complemented to omit the terminal quotient, leaving one ternary unit against terms divisible by three. Full-lap chains remain valid.",
+        "Checked all-minimum interior costs and the final min of the compact and split costs. Infinite asymptotic conclusions remain written applications of the external theorem."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/FIVE_ROTATIONS.md",
+      "sha256": "0cc528dd5421cfc4653189cf5791cec18813101481d0dcc935d691098c10f2da",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Both chronological cut lists are rooted at the actual cycle minimum, treated separately, and use time one at an exact cyclic seam. No charge is doubled merely because two physical cuts coincide.",
+        "Reconstructed actual common-clock and positive-correction rows, selected excesses, prefix and consecutive rows, all wrap counts and the unit-cube relaxation.",
+        "For six mismatches, included all consecutive native chains with B=min(U,V) and E=min(u+v,U,V). The exact rational dual margins exceed the physical small-clock-error charges. Distinct positive odd numerator bounds give the linear denominator consequence."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/SIX_ROTATIONS.md",
+      "sha256": "d555aee7c0c7d4cb96ee7a00c58c968d7a758e51c8e297cab5c91576d80fb287",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Both chronological cut lists are rooted at the actual cycle minimum, treated separately, and use time one at an exact cyclic seam. No charge is doubled merely because two physical cuts coincide.",
+        "Reconstructed actual common-clock and positive-correction rows, selected excesses, prefix and consecutive rows, all wrap counts and the unit-cube relaxation.",
+        "For six mismatches, included all consecutive native chains with B=min(U,V) and E=min(u+v,U,V). The exact rational dual margins exceed the physical small-clock-error charges. Distinct positive odd numerator bounds give the linear denominator consequence."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/ROTATION_DENOMINATORS.md",
+      "sha256": "a5fc3469bff1c62e8e128d33355f86e9184ae7cb27d74e236fb9e0705774d7ec",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Checked the no-clock-error argument: shifted ordinary steps cost at most 3/2, each selected excess costs log2(q+1), chronological prefix charges are j+2 and consecutive charges are two.",
+        "A crude h=O(p^2) bound under log2(q)<=p/4096 precedes use of the polynomial rational minimum bound; this avoids circularity. Native separation 2^A divides a nonzero starting numerator difference, putting actual A and all other coordinates in the cube and then giving h=O_s(p).",
+        "On the higher starting side only, C/(3^L Y)<1/2 follows from Y>=2^A and all carry-prefix divisions F_j<A. Its whole log correction costs at most log2(1+q/2). The lower side is not assigned this bound.",
+        "Checked 25 geometric types and the complete 29-leaf higher-side tree, all row-specific error charges and both exact slope endpoints. Independent formula-level evaluation agrees with the production rational matrices.",
+        "The full-clock corollary uses two laps: h=sum A_i+one-half sum D_i <=(3s/2)[log2q+log2(m+1)+(log2 3-1)p]+s log2 3/2. Both bounded and unbounded odd-period subsequences give liminf log2q/h>=1/(9(1+4096(log2 3-1)))>1/21600.",
+        "The onset is ineffective. At most six mismatches is essential to these certificates; no all-cycle exclusion is claimed."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/ONE_VARIABLE_RANK.md",
+      "sha256": "94cb439b274b737b975c355c19f589e686976dbeaa719caaa5cea12ddd751fca",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Rebuilt the repeated-background factorization, carry height loss, fixed-torus residual denominator law, and rank lower bound at least 2/M for primitive marker patterns. Marker total is not held fixed.",
+        "Within transverse character groups, exact ternary valuations force ratios of character exponents to match marker indices. Vandermonde counting or a nonconstant positive Fourier mean retains at least two modes.",
+        "Read the fuller Fourier-support refinement and prime/coprime full-support cases. Laurent, Levin and two-logarithm separation remain explicit external inputs, with Armstrong prior factorization and fixed-marker-resultant boundary credited."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/PACKED_RANKS.md",
+      "sha256": "6b6751096a1a29e804dee3ad25802d2a50b98e58541d5448d1a2e29bee9fe5fa",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed occupation-to-gap transfer, two-logarithm lower bound, physical excursion counting and the stronger exact length-window injection. The width-three matrix exponent is retained as a finite input; unrestricted packing prior work is credited."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/CubeDual.lean",
+      "sha256": "f07e3983e645262024c5115dbc8064ae5e462e8bbd77522009fa6164d667628c",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read recursive integer affine cap and real cube inequality, nonnegative weighted lower bound, strict endpoint-to-interior interpolation, and actual carry/shifted-step arithmetic. No theorem identifies the external Diophantine premise with a Lean axiom."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/RotationInterpolation.lean",
+      "sha256": "7a605fb29a957210fb42b4f9b87ea0e61de5641ad8b5ce4e7c25a91c950da633",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read recursive integer affine cap and real cube inequality, nonnegative weighted lower bound, strict endpoint-to-interior interpolation, and actual carry/shifted-step arithmetic. No theorem identifies the external Diophantine premise with a Lean axiom."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/PhysicalCharges.lean",
+      "sha256": "f2334a307080f21ade9f98e1c9e54f09f5b9a1d1c01a85b4803ec93d4cd67051",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read recursive integer affine cap and real cube inequality, nonnegative weighted lower bound, strict endpoint-to-interior interpolation, and actual carry/shifted-step arithmetic. No theorem identifies the external Diophantine premise with a Lean axiom."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/RotationDuals.lean",
+      "sha256": "0435b2980806952dae191a6fd2c504f049b3f0bb516597d0cd67e88965ed758f",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read the certificate structures, tree selector, total coverage and real interpolation consumers. The full numerical tables are independently regenerated byte-for-byte by their deterministic exporters, then checked by decide +kernel in the full replay."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/DenominatorDuals.lean",
+      "sha256": "a168e1941557f0db99dbba2ab70e67c7ef34c25cd4853748dd1bbb8e45f9a182",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read the certificate structures, tree selector, total coverage and real interpolation consumers. The full numerical tables are independently regenerated byte-for-byte by their deterministic exporters, then checked by decide +kernel in the full replay."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/NarrowBand.lean",
+      "sha256": "fe2c9d04d245d7b7ab8874aebaf8f4b3892ff142ceb148d9adfe0d701369214a",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs: distinct odd departure product, finite verified-prefix transfer, exact finite dyadic cancellation, potential lifting to positive physical paths and arbitrary-grade telescoping.",
+        "The large 531441-byte inverse potential remains an explicit Local premise, independently checked over 1062882 unit residues. It is not claimed kernel-evaluated.",
+        "The smaller packed 243-entry mass table has all 729 inequalities and its range evaluated in the kernel; positive transfer, exact clock coefficient sum and finite pigeonhole bound are proved. The physical inverse-gap theorem is explicit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/FractionalTrace.lean",
+      "sha256": "8e5f06e3ec755813bbf3d32afff9f36b14666779604b09a6f31fc032dbb2074f",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs: distinct odd departure product, finite verified-prefix transfer, exact finite dyadic cancellation, potential lifting to positive physical paths and arbitrary-grade telescoping.",
+        "The large 531441-byte inverse potential remains an explicit Local premise, independently checked over 1062882 unit residues. It is not claimed kernel-evaluated.",
+        "The smaller packed 243-entry mass table has all 729 inequalities and its range evaluated in the kernel; positive transfer, exact clock coefficient sum and finite pigeonhole bound are proved. The physical inverse-gap theorem is explicit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/InversePotential.lean",
+      "sha256": "c0829855e9b1c746164af94a3f6e815dc1a27bbd930d7c85b64210c24adebd66",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs: distinct odd departure product, finite verified-prefix transfer, exact finite dyadic cancellation, potential lifting to positive physical paths and arbitrary-grade telescoping.",
+        "The large 531441-byte inverse potential remains an explicit Local premise, independently checked over 1062882 unit residues. It is not claimed kernel-evaluated.",
+        "The smaller packed 243-entry mass table has all 729 inequalities and its range evaluated in the kernel; positive transfer, exact clock coefficient sum and finite pigeonhole bound are proved. The physical inverse-gap theorem is explicit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/CappedMass.lean",
+      "sha256": "2b912f026921c070ac30fd94d9d56d3c5ea4d79d0d47cea23f5956c960915326",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs: distinct odd departure product, finite verified-prefix transfer, exact finite dyadic cancellation, potential lifting to positive physical paths and arbitrary-grade telescoping.",
+        "The large 531441-byte inverse potential remains an explicit Local premise, independently checked over 1062882 unit residues. It is not claimed kernel-evaluated.",
+        "The smaller packed 243-entry mass table has all 729 inequalities and its range evaluated in the kernel; positive transfer, exact clock coefficient sum and finite pigeonhole bound are proved. The physical inverse-gap theorem is explicit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/CappedClock.lean",
+      "sha256": "70fb3b6b5bf84e384eb02b16319f56aa44378095addf8e03be430bece7ec0cc8",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs: distinct odd departure product, finite verified-prefix transfer, exact finite dyadic cancellation, potential lifting to positive physical paths and arbitrary-grade telescoping.",
+        "The large 531441-byte inverse potential remains an explicit Local premise, independently checked over 1062882 unit residues. It is not claimed kernel-evaluated.",
+        "The smaller packed 243-entry mass table has all 729 inequalities and its range evaluated in the kernel; positive transfer, exact clock coefficient sum and finite pigeonhole bound are proved. The physical inverse-gap theorem is explicit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/MARKED_GAP_THREE.md",
+      "sha256": "969ddccdcc5e49d0d64586df53e7c08ea68dc49b545a14377ec522c7a3aff213",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed original signed dyadic cancellation and the surviving 9k+2,9k+5,9k+8 classes with original marks and all visits retained.",
+        "Half-unit strips contain at most one source per physical clock; geometric summation, selected-source injectivity and square-summable tails give o(1/d). Synchronized gap-three contributions cancel at every targetwise threshold.",
+        "The remaining positive failure term only gives polynomial upper control. An exponentially small subsequence for the actual signed statistic is not established."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/FINITE_ORIGINAL_RATE.md",
+      "sha256": "936d7fb0e377455d91acc140629cd427f715b6a0091fc32885364dcb3c0af86a",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed complete target tail (12d+4)/Y and total-clock moment tail with eta=6(3/4)^8<2/3. These yield |Q_j^*-V_j|<=(12j+18)(2/3)^j with actual total clock 8(j+1), not independent per-letter cutoffs.",
+        "Checked simple-path narrow-band emptiness at every grade, the nontrivial-cycle witness and minimum bound, and finite-prefix transfer through grade b*2^b-1.",
+        "Read exact first-drop checker and original-Q encloser, including integer floor error recurrence, exact first five rational periods, tail 1/(6q), omission of target one and outward rounding.",
+        "Checked the new original positive lower witness y=2*3^(j+2)-1, ternary periodicity and repeated exponent-one term, giving Q_j^*>=(1/972)(1/6)^j. This lower scale does not contradict the requested upper criterion."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/TERMINAL_RESIDUES.md",
+      "sha256": "2ee7e71fbbc5a2d68edb7ec771391b0602df810feb8742b081696fb9b2ddefd5",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed finite terminal-label transport with arbitrary label-dependent thresholds, periodic selector boundary, synchronized first-mark strips, dyadic sum and growing-modulus density-one consequence.",
+        "Consecutive full mark supports have disjoint exact ternary valuations. The locally verified inverse path supplies an atom too large for unrestricted two-sided CDF exponential decay at every grade. This obstruction is not asserted for the original one-sided narrow statistic.",
+        "Classical Applegate-Lagarias comparisons are source-qualified; their large computation is not replayed."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/SIX_GAP_POTENTIAL.md",
+      "sha256": "5775b9ce63221f3a52ababe32c2367e9875d3cb0b8583cb70a0953631601f4e1",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed actual lift z=u+2^e*q*j and potential telescoping to 6m<=13d+48. Cap-five sharpness uses positive targets shadowing 1/13 and the uniquely forced exponent four.",
+        "Checked six-gap total multiplier lower bound 0.052*(3/4)^d from the smaller table, unique ordinary words, first arrivals at nonperiodic target five and the exact-clock positive-row obstruction.",
+        "Checked branching every4096 steps, surplus71 and exact critical-slope comparison. Fixed-clock pattern routing plus an off-orbit last leg gives both specified grade and specified clock, including disjoint certificates under branching. No arbitrary real window is asserted at fixed grade and clock."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/ExponentCylinders.lean",
+      "sha256": "e30b5e0dd870b42b3e33360bc78d77a3ddc8587d619c3e1c9fb96e4b9eb04058",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/HardParentBlocks.lean",
+      "sha256": "f46964f38df0eafdb92ee646cbb6e3edcaf4bd9f95a897e9f4adf3214c252dc9",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/ValuationReturns.lean",
+      "sha256": "0424149186cb7bca8d69175ab2dc054069af46d4f18c12b7c67d089b46737e08",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/ValuationSharp.lean",
+      "sha256": "849afd770e9a4933b9cfc1903d24f1b9b27effcf6de6c51ea584544548b64a41",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/ValuationDictionary.lean",
+      "sha256": "4b9525e7a37c6fda501d5ad3e086557cc0def1c13f66fdc1a78518aa593fb152",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FixedGradeCone.lean",
+      "sha256": "0d2a4cc805f98909cd57cceecc384f2624bea4be956ae79c464271d65d178e5d",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read full new proofs and ordinary consumers, including binary normalized-power cylinder surjectivity, actual hard-parent decrease and counted first clocks, supplied exponent lifting, periodic canonical price, and all-positive-cofactor width.",
+        "Thirteen finite ordinary residue/grade certificates are lifted to complete cofactor progressions and combined with the exact pinned independent-clock exclusion. SharpPaidPeak asserts a smaller meeting partner whose triple reaches one, not convergence of that partner.",
+        "FixedGradeCone.of_strategy composes actual unit paths with the existing fixed-clock finite-pattern router and an off-future terminal leg. Both grade and clock are fixed in the conclusion. The unconditional slope-three instance and finite-potential slope13/6 interface are distinguished."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/ValuationRows.lean",
+      "sha256": "4677a5b1881e1002cf2f6a3fb4540a30bb66b10c672fd7da126b5aafb853465c",
+      "status": "STATEMENT AND PROOF STRUCTURE READ; FRESH COMPLETE KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read Checked, entry schema, full listed parameter table and universal checked_all consumer. Large residue numerals are replayed by the kernel and independently cross-checked by the separate scalar signed/ordinary checker; no mental verification of the numeral arithmetic is claimed."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/HARD_ROW_CHAINS.md",
+      "sha256": "747fcf51b9912e3ab390dba65b48af222722cb435cef78305f96c8efec8c9d9d",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed translated-interval two-adic exponent sampling, true grade-equal earlier chains, union-bound square-root lower depth and marginal Hoeffding upper depth without independence of different arms.",
+        "Read the pinned THREE_RAY_UPPER proof, including arbitrary-level contraction and physical holding times. Uniform interval sparse-retained-source reduction does not replace a prescribed lacunary supplied subsequence."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FIXED_VALUATION.md",
+      "sha256": "1d6713b8414f2dc8696641163043bf7ba74cf8e3b9cdac0f66df1db46d6c0013",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed complete signed-center exclusion for each of192 fixed valuations, nonnegative even-step credit and necessary negative integer size test, including all58 surviving terminal cases.",
+        "Binary quotient permutation and CRT give whole positive cofactor progressions. Large ordinary height makes every independent-clock collision synchronous with equal augmented grades. Constructive affine refinement on the same cylinder yields a paid earlier source within O(H+162), while preserving fixed valuation.",
+        "The quantitative affine extension proof was read at the exact pinned PREFIX_COMPRESSION and AFFINE_RAYS source; its forced downward transitions and logarithmic level-zero contraction justify the linear clock bound."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/SHARP_VALUATION_RETURNS.md",
+      "sha256": "cd932c0470b0f103ddf0e799d63d715eb7b1da1a3b621b94232b6463ebe82e9a",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed signed release endpoint1 with grade d+2, actual upper U and lower3U+1, and synchronous merge one step later for every cofactor.",
+        "Complete canonical valuation classes are exactly the displayed odd residues modulo54. All-cofactor width excludes every earlier exponent at every pair of clocks throughJ. The13 paid classes and2 unpriced examples are distinct from the192 original J=18k+4 sources."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/RELEASE_CENSUS.md",
+      "sha256": "5f88952ffdf2386c04c2bfd366d019a7fddcbdec8e4a25c73053085e3fd1694a",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED; EXTERNAL INPUTS RETAINED WHERE IDENTIFIED",
+      "checks": [
+        "Reconstructed the exact postrelease affine pair for positive and negative credit, lift-independence under augmented grade equality, and completeness over all earlier gaps d<H.",
+        "In coordinate x+1, the remainder bound0<=C_h<3^h and m>=4H+4 force equality of independent clocks and augmented counts. The binary quotient is an isometry on odd cofactor classes; CRT preserves all classes with the canonical residue restriction.",
+        "Read the complete signed-profile and ordinary-residue program. Equal weighting of the192 valuations is explicitly distinguished from density in the unrestricted exponent index. Fixed cofactor one is evaluated at its actual modular power.",
+        "Read and reconstructed the new full192 global-minima ordinary engine: exact inverse-three modular descent, common high-part lift, terminal-grade cutoff,16-step affine word table with literal first-hit recovery, and equal-state dedup preserving greatest saving and least gap. Root separately reran the full192 verifier normally and with optimized Python.",
+        "Every exact row extends to r congruent1 modulo27*2^L, whereL is its earliest paid extra, by the already proved quotient isometry and preserved canonical prices. This is a specified progression, not all cofactors.",
+        "Final publication adds primary pinned PR201 release-architecture and 512-witness attribution. Mathematical body, verifiers, minimum table and formal sources remain unchanged from the frozen science commit."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_rotation_denominators.py",
+      "sha256": "73bd735a0633895ccb82ca51da16d9f9380cd50286e7404c386609a4bd2b86ba",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_rotation_charge.py",
+      "sha256": "8262186535f8711fcc7dcfbd5f9d8da308539b38e1b87b6fc2ac84a6a9568f87",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_denominator_independent.py",
+      "sha256": "72a56a707786ffd5015de5dd2a4e211a5194e113e9ce8a6cded772ed58e1e663",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_denominator_native.py",
+      "sha256": "d1a9daeb3902c2fa15fa7e00a35fdea27595c1601dca1816401b102f93717ad6",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/export_rotation_duals.py",
+      "sha256": "e3afc5884954de193cceac6ff4ffcbc1199c1d39e9f0f0e2f44a74c2ca872edb",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/export_denominator_duals.py",
+      "sha256": "120d121b5d3eb141d2a826b37be2d013c3a7f548f0f30f6ce835d58a2591a6b6",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_canonical_chain.py",
+      "sha256": "f54265fdf271e130f17ad36ebf2c2d32a4e34dba1e05012b792a908c8e5a54f6",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_fixed_valuation.py",
+      "sha256": "612cbb337f02c49a5e1719bb0b78c7b6467824404524165ca8aea8ef844b7fd2",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_valuation_returns.py",
+      "sha256": "c29e848483443155c40abed97e767b432e35a9b63cd34041748d2d65f9964c92",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_release_census.py",
+      "sha256": "dec8e6fbd97462820c2d6189ea60ac9332d7299a7dc445c1987d6ce55f9b4b3f",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_inverse_potential.py",
+      "sha256": "d8102f9518a2b80139d09e8aa7c4045b69cf15ceac21b3f93d5f50ce5c2a82b7",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_capped_mass.py",
+      "sha256": "97773c8d7bab07a4a609e7cc2be4b98361d888a36dbc5989856f3b03d8363470",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_original_q.py",
+      "sha256": "f6c31fb718664d05a0d9b4c5c7514c69a20417ff39720a243546ea5693d287f2",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_marked_prefix.py",
+      "sha256": "e8c22d11e5e3e437796879860ee94716aa6af8684dd2ba4ec1984e79826304be",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/check_fractional_trace.py",
+      "sha256": "dc46b997d7d6f4935858c0e45225a9f2e725356d32aa3b223f69d335454d3dbc",
+      "status": "FINITE ARITHMETIC SOURCE READ; INDEPENDENT NORMAL AND OPTIMIZED REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Read source and matched its actual enumeration, explicit failure checks and dependence on exact integers/rationals to the associated mathematical statement. Finite controls do not themselves certify the separate infinite deductions."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/SPECTRAL_ROTATIONS.md",
+      "sha256": "1cf17afba10de95505728f209b72954e0f45451bad71eabeed4c2d2b53576c63",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED FROM PREVIOUSLY REVIEWED SPECTRAL THEOREM",
+      "checks": [
+        "At most two height levels in each reduced-rank column makes the integer discrepancy affine in its positive exponential. Native adjacent exponents and arbitrary cyclic shifts preserve the union of Fourier supports. Exact finite uncertainty gives sJ>=g and the summed nonzero-column refinement.",
+        "Checked removal of frequencies fixed by a whole-cell lag and uniform passage to the physical complete denominator law. Two independent prime marker cells have exactly4Q mismatches at the Q-cell shift and spectral rate(P+Q-1)/(PQ), giving limiting product4. High-minimum near-octave assumptions remain essential."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/check_spectral_rotations.py",
+      "sha256": "ed3cd2c3edab43ee7114407a50a5cc84b73392aa3d265c52564fefa8cb99b6de",
+      "status": "FINITE ARITHMETIC SOURCE READ AND REPLAYED",
+      "checks": [
+        "Read exact cyclotomic support, all-proper-rotation checks and literal two-marker fixtures. Normal and optimized replay passed separately."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_peak_minima.py",
+      "sha256": "85ae3c31763de38d2370227229bbf4365193155c7f425faf83d32c2cfb81ae5c",
+      "status": "FINITE ARITHMETIC SOURCE READ AND REPLAYED",
+      "checks": [
+        "Reads all192 fixed supplied rows and the exact pinned81-row prices, compiles a fresh ordinary GMP engine in a temporary directory and checks every earliest date, saving and gap. No stochastic input or bounded extrapolation is used."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/verify_peak_minima.cpp",
+      "sha256": "e79a5f784b8e1c1814b2187aca7cdb12fa8762a04dd539d76ef2aaeca3af793b",
+      "status": "COMPLETE INTEGER ENUMERATION AND PRUNING LOGIC RECONSTRUCTED",
+      "checks": [
+        "All16-bit word entries are constructed by scalar arithmetic with safe64-bit intermediates. Exact GMP coefficients realize common physical prefix lifts. Every allowable gap up toH minus the true terminal grade is covered.",
+        "The binary modulus modulo3 is self-inverse; each successive division preserves the least positive representative of3^(m-d). Original exponent and independent-clock size guards are checked.",
+        "An equality detected at a block endpoint persists and is recovered one scalar step at a time. Terminal-grade pruning is valid by persistence toH; equal endpoint/augmented-grade lower arms have identical future hit times; sorting preserves maximum saving and least gap. A paid deadline bounds both searches, and the strict peak-gap theorem justifies remaining cutoff pruning."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/VALUATION_SCALE.md",
+      "sha256": "a219c9cb686d42d5deda3ffc4ea9fe8f946bea13461fe06e4e71134cbe1bbd53",
+      "status": "WRITTEN PROBABILITY TRANSFER RECONSTRUCTED WITH PINNED PRIOR INPUT",
+      "checks": [
+        "The signed seed3^(-163)-1 has the literal357-step endpoint1 and grade163, yielding exact postrelease states U and3^s U+n with s=ceil((J-357)/2), n in{1,2}.",
+        "The general-state PR146 tail gives C(1+s)/sqrt(L) after conditioning U to be odd. Marginal binomial concentration plus the required grade difference gives the complementary exponential bound, without assuming independence of arms.",
+        "Cofactor quotient isometry gives exact odd-residue densities. Any interval has at most a1+2^(L-1)/N multiplicative event and complement discrepancy; the height-guard omissions are separately bounded. This is the prescribed gap162 and counted common-clock event, not earliest merger with any predecessor."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/check_minima_independent.py",
+      "sha256": "e6fdc484cf7159e2faa3731627ba877d19c8223dfe467e72c150f79ccbb13ada",
+      "status": "INDEPENDENT FINITE SCALAR SOURCE READ; REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Reads every published row, chooses the16 smallest absolute paid horizons deterministically, independently derives pinned prices, enumerates every gap1..H-1 by its own modular power, and runs both scalar paths throughH before selecting first time/greatest saving/least gap. It uses no group or16-step compression, terminal pruning or lower-arm deduplication."
+      ]
+    }
+  ],
+  "updated_utc": "2026-11-27T17:39:13.326008+00:00"
+}

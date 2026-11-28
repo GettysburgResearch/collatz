@@ -1,0 +1,15 @@
+{
+  "integer_return_atoms": {
+    "maximum_odd_depth": 12,
+    "ordinary_diagonal_atoms": 12,
+    "ordinary_native_paths": 39996,
+    "ordinary_sources_through": 10000
+  },
+  "known_cycle_exact_first_moment": 3,
+  "rational_algebra": {
+    "rational_selector_tests": 1298,
+    "rational_test_cycles": 284
+  },
+  "scope": "Finite arithmetic controls; they do not sum the full unknown return trace.",
+  "strict_extra_cycle_lower_bound": "15/4"
+}

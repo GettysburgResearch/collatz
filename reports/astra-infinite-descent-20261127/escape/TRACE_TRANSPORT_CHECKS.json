@@ -1,0 +1,64 @@
+{
+  "scope": "bounded all-visit normalization and complete finite octave identities",
+  "forward_inverse": {
+    "sources_below": 257,
+    "targets_below": 129,
+    "max_grade": 8,
+    "complete_compared_rows": 576,
+    "path_matches": 513,
+    "return_visits_included": 104,
+    "endpoint_band_matches": 53
+  },
+  "signed_gap_three": {
+    "exact_period_rows": 18,
+    "finite_cone_boundaries": 504,
+    "ordinary_lift_coordinates": 5040
+  },
+  "loss": {
+    "seeds": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      11,
+      27,
+      54,
+      55,
+      97,
+      871
+    ],
+    "max_grade": 140,
+    "step_identities": 1551,
+    "band_tests": 44
+  },
+  "octaves": [
+    {
+      "N": 32,
+      "comparison_clock": 2,
+      "tested_grades_0_through": 30,
+      "bad_cells": 65,
+      "cells": 96,
+      "variation_floor_scaled_1e8": 15609839,
+      "rational_majorant": "1595/512"
+    },
+    {
+      "N": 128,
+      "comparison_clock": 3,
+      "tested_grades_0_through": 30,
+      "bad_cells": 234,
+      "cells": 384,
+      "variation_floor_scaled_1e8": 9274082,
+      "rational_majorant": "9159/4096"
+    },
+    {
+      "N": 512,
+      "comparison_clock": 4,
+      "tested_grades_0_through": 30,
+      "bad_cells": 893,
+      "cells": 1536,
+      "variation_floor_scaled_1e8": 5986606,
+      "rational_majorant": "229311/131072"
+    }
+  ]
+}

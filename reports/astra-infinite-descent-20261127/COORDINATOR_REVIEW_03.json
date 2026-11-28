@@ -1,0 +1,85 @@
+{
+  "schema": "collatz-coordinator-written-review/v1",
+  "reviewer": "root, independent reconstruction of agent arguments",
+  "created_utc": "2026-11-27T14:23:22.427491+00:00",
+  "scope": "Exact source bytes listed; does not extend to subsequent edits or adjacent claims. Fresh whole-packet Lean audit is separate.",
+  "sources": [
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/SPECTRAL_NEAR_OCTAVE.md",
+      "sha256": "51ada94646406a8b4287486ca2fc323e5cb25a3183a482c2b0bf2223804b3dcb",
+      "status": "VERIFIED WITH STATED EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed the Bezout rank identity and simultaneous inactive polynomial divisor before integer evaluation; shared prime factors do not invalidate the division.",
+        "Reconstructed short Laurent polynomial construction on each active cyclotomic component, including composite modulus units and order-one baseline.",
+        "Verified two independent reduced-lattice binomials have no common algebraic root; choosing a small linear combination gives a nonzero algebraic-integer resultant whose norm is divisible by the actual gcd.",
+        "Checked conjugate heights, uniform relative error after summing active totients, and prime-adic product inequality without assuming numerical cyclotomic factors are coprime.",
+        "Checked least native period forces the least common multiple of active orders, and re-rooting preserves the union of their supports.",
+        "Reconstructed the sharp additive-totient lower bound, including the binary parity obstruction when two exactly divides the clock gcd, and the interval-selector construction attaining it.",
+        "Uses the stated Wu-Wang two-logarithm input and separately reviewed physical construction. This is a written review, not a Lean proof or an unrestricted integer-cycle exclusion."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/FAIR_CLOCK_DIFFUSION.md",
+      "sha256": "5fb3816006bd037d5c8ce77c519fd9c77c8502124beaae0ff838a99327651c21",
+      "status": "VERIFIED CONDITIONAL IMPLICATION",
+      "checks": [
+        "Independently reconstructed low-vertex extraction in a convergent sequence of simple-path corrections. Compact products with countable deterministic suffix closures imply nullity of the global closure, conditional on the two stated inputs.",
+        "Checked normalized correction identity for initial even coasts and disjoint source-grid intervals for a uniform tail over moving target, grade, and clock.",
+        "Reconstructed finite-source projection, eventual stabilization of synchronized escape classes, existence of the limiting supremum, finiteness of each class, and attainment of a positive maximum.",
+        "Checked repeated-visit geometric convolution and the finite-cycle/null versus infinitely-many-cycles/full-interval closure dichotomy.",
+        "Requested and verified correction of the once-around cycle convention: its repeated endpoint is handled by a simple prefix plus one final departure.",
+        "The fixed-root closed-support and uniform simple-path reciprocal-tail inputs are pinned prior written results with additional dependencies. This review does not validate that entire imported analytic chain or infer absence of escaping classes."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FastPairs.lean",
+      "sha256": "a33b618c9b3b426cd6bc0924fa6230871338be8e027141d4062de77c110e252c",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Reviewed generalized member/source predicates, common off-forward first-arrival transfer, residue translations, affine window bounds and additive physical-clock overhead.",
+        "Earlier pairs_of_visitors and fast_pairs public signatures remain available; actual unconditional theorem instantiates the visitor premise."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FastBlocks.lean",
+      "sha256": "5c27567c7ecb92e0acbfd748c8a7419d756cb8960ddaf44380c6253b59c9cc0b",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Finite span bounds each translated member; BlockClock supplies actual common terminal and grade; generic transfer retains every member and source class."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/AllProgressions.lean",
+      "sha256": "d032c9632fac880da7a523d8776c4635de5aec645351ee6aa97b7ac0e2d942e1",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Packing all m translates of the finite pattern yields a common ordinary certificate. A finite shift selects each residue without CRT, with the same first clock and odd grade for every selected progression."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/MarkedProgressions.lean",
+      "sha256": "264be9f39ddf0807cd6f3be6eb7dd442242da7d6870e2bc362b789b0a8968031",
+      "status": "UNCONDITIONAL INSTANTIATION RECONSTRUCTED",
+      "checks": [
+        "Checked both the mixed binary/ternary source theorem and arbitrary-modulus theorem instantiate all visitor premises with MarkedWindow, preserving independent requested time and odd-grade congruences."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/MarkedWindow.lean",
+      "sha256": "cdd84e20f6cef506b1acbe3de0586efc706cd200b584dbf2b9c354e41b411ca3",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Reviewed phase-residue mesh substitution into visit_from_mesh_with; the marks apply to the actual resulting clock and grade, not intermediate symbolic quantities."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/SparseResonance.lean",
+      "sha256": "9b19fc0828329bd2f359ddeb1bbb164f99363098817b73c0b300adfca3dceaef",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED",
+      "checks": [
+        "Reviewed nilpotent translation and inversion permutation on ternary units; nontrivial character sum vanishes, giving exact square-zero ideal projection.",
+        "Reviewed last reduction-kernel invariance and character orthogonality. This is the finite algebraic kernel, not the complete analytic local limit."
+      ]
+    }
+  ]
+}

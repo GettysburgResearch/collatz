@@ -1,0 +1,109 @@
+[
+  {
+    "s": 2,
+    "ordinary_before_paired_giant": 0,
+    "weights": {
+      "combined_0": 1
+    },
+    "upper_bound": "-31/32"
+  },
+  {
+    "s": 3,
+    "ordinary_before_paired_giant": 0,
+    "weights": {
+      "combined_0": 4929,
+      "combined_1": 3110,
+      "combined_2": 1962
+    },
+    "upper_bound": "-95180851/200020000"
+  },
+  {
+    "s": 3,
+    "ordinary_before_paired_giant": 1,
+    "weights": {
+      "combined_0": 3110,
+      "combined_1": 1962,
+      "combined_2": 4929
+    },
+    "upper_bound": "-3807199/8000800"
+  },
+  {
+    "s": 4,
+    "ordinary_before_paired_giant": 0,
+    "weights": {
+      "combined_0": 5487,
+      "combined_1": 1666,
+      "combined_2": 2847
+    },
+    "upper_bound": "-25337103/100000000"
+  },
+  {
+    "s": 4,
+    "ordinary_before_paired_giant": 1,
+    "weights": {
+      "next_spacing_1": 369,
+      "combined_1": 631,
+      "next_spacing_3": 369,
+      "combined_3": 631
+    },
+    "upper_bound": "-70473/400000"
+  },
+  {
+    "s": 4,
+    "ordinary_before_paired_giant": 2,
+    "weights": {
+      "combined_0": 4513,
+      "combined_2": 2847,
+      "combined_3": 2640
+    },
+    "upper_bound": "-253429/1000000"
+  },
+  {
+    "s": 5,
+    "ordinary_before_paired_giant": 0,
+    "weights": {
+      "shorter_lag": 2511,
+      "combined_0": 3979,
+      "next_spacing_1": 927,
+      "combined_2": 1584,
+      "combined_4": 999
+    },
+    "upper_bound": "-40371631/200000000"
+  },
+  {
+    "s": 5,
+    "ordinary_before_paired_giant": 1,
+    "weights": {
+      "combined_0": 274,
+      "combined_1": 675,
+      "combined_2": 1154,
+      "next_spacing_4": 502,
+      "combined_4": 728
+    },
+    "upper_bound": "-493/9696"
+  },
+  {
+    "s": 5,
+    "ordinary_before_paired_giant": 2,
+    "weights": {
+      "combined_0": 1154,
+      "next_spacing_2": 502,
+      "combined_2": 728,
+      "combined_3": 274,
+      "combined_4": 675
+    },
+    "upper_bound": "-135599/2666400"
+  },
+  {
+    "s": 5,
+    "ordinary_before_paired_giant": 3,
+    "weights": {
+      "combined_0": 2587,
+      "combined_1": 1632,
+      "combined_2": 1030,
+      "combined_3": 650,
+      "combined_4": 4101
+    },
+    "upper_bound": "-136643/1000000"
+  }
+]

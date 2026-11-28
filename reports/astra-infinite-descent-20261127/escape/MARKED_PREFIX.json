@@ -1,0 +1,16 @@
+{
+  "scope": "all positive starts through 2^bits reach 1 by induction on the first strict drop",
+  "bits": 22,
+  "inclusive_prefix": 4194304,
+  "strict_drop_certificates": 4194303,
+  "shortcut_steps": 14630287,
+  "longest_first_drop_clock": 224,
+  "first_seed_attaining_longest": 1126015,
+  "largest_visited_shortcut_image": 429277584788,
+  "first_seed_reaching_largest_image": 3873535,
+  "ordered_sha256_n_clock_endpoint": "b6cadc9c3ab17d285184d23b86f084672b4a61a076af61f3cc0f5b3bf5d9fa5e",
+  "all_target_empty_marked_grades_inclusive": [
+    1,
+    92274687
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schema": "collatz-coordinator-written-review/v1",
+  "reviewer": "root, independent reconstruction of agent arguments",
+  "created_utc": "2026-11-27T16:09:40.510214+00:00",
+  "scope": "Exact listed source bytes. New Lean proofs and finite controls have separate full replay receipts. External analytic and Diophantine inputs remain explicit. This is not a proof of Collatz.",
+  "sources": [
+    {
+      "path": "research/astra-infinite-descent-20261127/root/CycleOccupation.lean",
+      "sha256": "b954f452255d3d1bb0e9196b52d30aba43457a804a6c6d14e64ad712e76580c1",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "The once-around prefix uses distinct indices below the least period; its repeated endpoint is excluded. Finite packing yields the period-independent reciprocal bound, then the positive logarithmic cycle gap and power ratio."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/root/DampedRows.lean",
+      "sha256": "d54b198d39d62808e48c70d7c278a98dd4e1900c1c0ec30239dcab97f5ab19f6",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Actual finite source-grid mass is at most one. Arbitrary bounded damping and the reciprocal tail follow without any first-arrival assumption.",
+        "A bounded orbit has at most B distinct positive states before a first hit. Uniform finite bounds for the finitely many small sources prove grade vanishing. Conversely the unconditional first-mark floor bounds the grade of every newly visited target, and the affine height estimate bounds the whole orbit.",
+        "The exact completeRow membership transfers both directions to complete computably enumerated finite rows. Neither universal boundedness nor the vanishing limit is asserted."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/MantissaFlow.lean",
+      "sha256": "1c3bfbfcf1a51e821d478e88ae226bb651125211760d035a21701598ab774281",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "The logarithmic cell weights telescope exactly over triples, pairs and quadruples. Both outgoing and incoming finite marginals agree.",
+        "A disjoint atom and strict lower set imply the integer flux inequality 3*card(atom)<=2*card(bad). Bounds use the actual finite interval [2n,4n)."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/FirstHitFlux.lean",
+      "sha256": "89b82dfa2925814557be7135400c784b8c157043e5d25224403dea12015851f8",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Protected finite merger includes its endpoints and preserves the exact first-hit relation, with positive clock shift s and grade shift one.",
+        "The finite physical deadline stays valid after shifting to an earlier hit. Every nonnegative integer linear score with positive total coefficient gives a strict lower-set transport. No analytic failure-frequency bound is assumed in this finite theorem."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/OriginalLoss.lean",
+      "sha256": "d06d56ad45a640ff7322dc83c8f40ab2b8a84622dac511476fd037a01b3353a8",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "True step weights include repeated states. Each odd departure loses exactly the source-scaled normalized mass divided by 3y+1; even steps lose zero.",
+        "The finite telescope starts from mark one. The endpoint-band estimate telescopes min(t,mark), so it requires no distinctness or infinite-orbit premise.",
+        "Counted merger tails obey the exact 2^s-to-3 scaling at every later physical clock and both parities."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/NativeBank.lean",
+      "sha256": "e979b6216ef91b0ff5e212d9032f289519da01d54f1eb77d66394cfe6a81d1fb",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Every positive equal-ratio/equal-grade dual return contains an even first-arm departure, by comparing the two all-odd affine formulas.",
+        "Parsed permits arbitrary common-even padding, bounded-length actual records, and different final clocks for different sources. Every full 2H window has a zero bit.",
+        "Actual parity compression into base 2^(2H)-1, plus residue injectivity and the physical minimum hitting clock, gives the fixed-target octave count. No probabilistic statement is substituted for ordinary source counting."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/ShiftHeights.lean",
+      "sha256": "708a132af489fb033a18b5328a14f989f280ba87b37bc5609e2d288ae5abe16d",
+      "status": "STATEMENT AND PROOF STRUCTURE RECONSTRUCTED; FRESH KERNEL REPLAY RECORDED SEPARATELY",
+      "checks": [
+        "Constant forcing after u=2x+q is derived from exact branch equations. Positive carries are compared by the number of directional bit changes.",
+        "The full-return comparison retains actual traces, equal total grades, equal lengths and a positive contracting determinant. A shared block forces a nonzero integer difference divisible by 2^length. Infinite-cycle consequences remain written."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/SCALAR_RETURN_PROOF.md",
+      "sha256": "470e65b813b2b89bbb50666f8c9015d2ae8a2cd0fe4fc752851f9d760e44cba2",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Reconstructed canonical swapped state, adapted tie rule, and fresh fair unused bit after every finite stopping prefix.",
+        "Checked the half-moment contraction, squared-gap bound, mean waiting time 4+v2(j), finite symmetric-walk Green function and resulting physical return tail.",
+        "The logarithmic terminal offset uses a union over deterministic times and does not assume independence from the stopping time. The finite-set burn is enlarged while the original Lyapunov weight is retained on all states.",
+        "FixedGapClock supplies positive absorption cylinders on the finite set. Conditional episode budgets and truncated durations yield the adjacent square-root upper bound. This reproves a credited prior rate; no leading constant or matching lower asymptotic is claimed."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/CLOCK_ANTICONCENTRATION.md",
+      "sha256": "8935eea3aa4f018169bd4bfeae5514cbc7b6e3381ef04c88c1c9e31caaea03ac",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Reconstructed finite third-cell comparator, protected first-hit flux, binary-period remainders and early target incidences, uniformly in target position.",
+        "Reduced every fixed affine comparator to finitely many translated counted-adjacent comparisons and the exact odd-anchor one-step pair. Scalar upper proof supplies the rate.",
+        "Summing dyadic source octaves with hz<=1 gives uniform O(1/sqrt(log R)) row tails. The fixed-target Gaussian lower sharpness input remains explicitly external.",
+        "Joint grade translation retains the exact continuously jittered terminal coordinate. Modulus averaging gives an absolute subprobability variation bound; integer replacement is only asserted for controlled tests, not arbitrary measurable selections."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/ORIGINAL_TRACE_VARIATION.md",
+      "sha256": "a703dcad6d363d7abd87cb86d75cf5a9dd52cfb4af27913971da3d8e9792723e",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Compared equation (2) with the complete pinned PR193 ENDPOINT_RATE_TEST source: identical all-visit law, period-six source selector, targetwise maximum, endpoint band and indices.",
+        "Reconstructed the all-grade/all-target finite-mass vector, exact loss telescope, log-measure rotation coupling, integral-to-integer conversion and periodic-selector removal by adjacent counted fusion.",
+        "Checked source cutoff X=2^(20D), target cutoff Y=2^(4D), all needed grades through 2D, positive-geometric moment 2^d, and strict exponential tail base 36*(3/4)^16<1.",
+        "The marked part costs O(1) per dyadic grade range by the mark-loss telescope; unmarked two-sided variation costs O(sqrt D). Nonnegative limits and integral exchanges are justified by finite mass.",
+        "The reflection lower bound concerns the discarded full-mass bad-cell allowance only. It is not a lower bound on Q_j^*, whose exponentially small subsequence remains open."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/GAP_THREE_TRACE.md",
+      "sha256": "e506c905e95cf780a064663d279dc4ee1f2c3cbdee9d9617497a6eece99db660",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Recomputed all six unit residues of 7*(rho2-rho1), the signed all-parity selector delta(x)-delta(2x)/2, and its exact +/-3/2 support at 8 and 5 modulo9.",
+        "Physical dyadic lifts scale v by 2^-r. The finite cone boundary telescopes and absolute convergence justifies regrouping at each fixed grade and target.",
+        "The actual grade-local pair cancellation, source/target truncation including an initial nonnegative geometric coast, and resulting exponential tail are checked. The unpaid local loss still has no sufficient exponential upper bound."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/escape/DAMPED_EXTREMA.md",
+      "sha256": "c8f3eb6ebb6076b8771ad4e3f1106e3aaa55c5783aebe371b14f15be3a3b714c",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Every positive source weight tending to zero has a uniform tail directly from h*card(A)<=1. Reconstructed finite escaping-class threshold sets, maximum attainment and eventual exact row stabilization.",
+        "Checked weighted inverse and forward maximality inequalities, zero-damping and strong-damping limits with their respective boundaries.",
+        "Finite synchronized convergent examples satisfy any fixed horizon of the power-damping tests, including all nonnegative powers simultaneously. This excludes the proposed finite-horizon implication, not all possible maximality arguments."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/NATIVE_FIVE.md",
+      "sha256": "f6d30ae3fb653421ac9b4594e8fa55d4690209a563143a14e57ffe4e13f8fc1f",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED WITH EXPLICIT EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed primitive fixed-grade finiteness and the complete grade-two and grade-three primitive classifications.",
+        "Counted maximal A/B decompositions, ternary lift densities, independent padding lattice points, and the lower-order contribution from bounded or atypical sections.",
+        "Reviewed narrow-window transfer of the pinned PR204 power lower bound, off-future terminal guard, first arrivals on both arms, residue bins, bounded multiplicities and the arbitrary small fixed final-offset refinement. PR204 original lower-pressure finite certificate is an explicit prior input."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/PRIMITIVE_PRESSURE.md",
+      "sha256": "65a496d964e2b75f829978667f373d45291c0e45188336e309e75ebea5b89d55",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED WITH EXPLICIT EXTERNAL INPUT",
+      "checks": [
+        "Finite-bank source-language generating functions count arbitrary completed and incomplete prefixes, allowing unbounded common-even padding and variable final clocks. Missing cylinders force a strict exponent below one at each actual fixed target.",
+        "Independently replayed the 2276-word PR204 bank and the exact E(17/28)<1 certificate.",
+        "Reconstructed infinite-mean renewal, finite-bit exponential upper deviations and selected-interval mask bounds without asserting independence for path-selected intervals.",
+        "The full central-clock transport uses Inselmann star-density as stated. Checked affine-offset control, ordinary preimage multiplicity and the subsequent subexponential tuple/capacity argument selecting one rich primitive fiber.",
+        "The positive rich-fiber construction uses the exact PR146 native first-return tail, not adjacent absorption. Checked suffix Chernoff control, ternary parent-class averaging, capacity bound and actual long two-A attachment. A sublinear attachment to a rich class at each fixed target remains open."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/PRIMARY_SPECTRA.md",
+      "sha256": "c422a86d60b2df83d05a59d39455eefeb0b1c6d0a683588ff5945f84b7b660ba",
+      "status": "WRITTEN ARGUMENT INDEPENDENTLY RECONSTRUCTED",
+      "checks": [
+        "Reconstructed complete equality spectra of the minimal active primary degree, including parity twists and the excluded additive order-12 tie.",
+        "Native label rectangles, disjoint difference valuations, single-coordinate sign crossings and word identification give the common entropy budget.",
+        "Checked block-local lowbit spans and the alternative finite entropy inequality from the geometric maximum-entropy law, allowing arbitrarily displaced constant rows.",
+        "Verified exact rational bracketing and intercept-cell argument for the width-three word count. The finite control independently exercises actual rational cycles, native labels and projected entropy multiplicities. These structural restrictions do not cover every integer cycle."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/ALL_SHIFT_HEIGHTS.md",
+      "sha256": "cd2088ac36ea11eee927a39bf668d6fb346d98a947206134bca461a98801ec1f",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED WITH EXPLICIT EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed positive full-return numerator comparison at any pair of phases, matched-run divisibility, and the artificial final separator giving (h+1)<(Y+1)*sum gamma^j.",
+        "No coprimality or shift-order assumption enters that finite inequality. Checked the logarithmic ordinary-cycle consequence using the direct positive-product plus Lagarias minimum bound.",
+        "Read primary Hercher Corollary29, its corrigendum and Barina verification statement; exact numerical thresholds are separately replayed, while the original large computations are not repeated. Prior Wren unit/nonunit scope is credited."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/ODD_ROTATION_COMPLEXITY.md",
+      "sha256": "ce149194c43bfdce09c6d6306efe58c6ea01d2615ea559b7a75b6f42e588cbf0",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED WITH EXPLICIT EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed the discrete roof suspension and at most 3R+1 translation pieces; adjacency counting gives linear factor complexity independent of roof magnitudes.",
+        "Capping gaps at n+1 preserves exactly all length-n shortcut factors. Complete tracks cost h/M, opening tracks cost at most s(n+1), and subsequent unequal-word edges cost at most s(2n+1).",
+        "For bounded odd mismatch and unbounded rotation order, the longest matched odd block forces an exponential physical peak. The polynomial minimum permits a last medium-height upcrossing with an arbitrarily long non-descending prefix on the chosen logarithmic scale.",
+        "The contradiction uses precisely the externally stated finite descent theorem of Weaver173 with b=0, eta=1/2 and fixed A. Bounded rotation order remains open in this result; the external Subspace Theorem proof is not formalized here."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/cycles/WINDOW_DENOMINATORS.md",
+      "sha256": "c9a9a5725064ad5890d3592fba60878e637a5d615fc1e9436262e52437ccabec",
+      "status": "WRITTEN DEDUCTION RECONSTRUCTED WITH EXPLICIT EXTERNAL INPUT",
+      "checks": [
+        "Reconstructed native signed comparison, exact denominator q/gcd(q,2^K-3^ell), nonvanishing at every cut and largest missing ternary arc.",
+        "On a minimal fixed torus, terms at one support date cannot supply distinct exponents in a common transverse group. Vandermonde counting leaves at least a 1/s proportion of binomial roots.",
+        "The residual gcd and two-logarithm inputs are explicitly external. Exact clock divisibility forces full rate at coprime clocks. Paper22 qualitative integer finiteness is prior work, not claimed as new."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FixedMersenneRows.lean",
+      "sha256": "f3031e28f98ca1013740632a641930499e51fc12082f9f1a630b22b5c757ba14",
+      "status": "STATEMENT AND ORDINARY CONSUMER RECONSTRUCTED",
+      "checks": [
+        "Checked modular exponentiation specification, positive representative, exact endpoint and augmented-grade equality, and the ordinary affine lift to the supplied astronomical peaks.",
+        "Checked the exact earlier-exponent price consumer and all_192 finite case split against the pinned prior 183-case predicate. The conclusion is CanonicalReturn, not convergence of the lower source.",
+        "Computational certificates use decide +kernel. The complete fresh replay will audit private definitions and all six exact PR206 dependencies, not only the named endpoint theorem."
+      ]
+    },
+    {
+      "path": "research/astra-infinite-descent-20261127/merger/FIXED_MERSENNE.md",
+      "sha256": "3032d3a08dd7c826e4edb953d9bf56db990de1d2bfcf2ecfef025d4c7e9967ce",
+      "status": "STATEMENT AND ORDINARY CONSUMER RECONSTRUCTED",
+      "checks": [
+        "Checked all nine supplied parameters, actual profile equality, row-specific charges, and deduction of the price margin from Y<2^H and z>2^m.",
+        "The 192 cases are preassigned ordinary sources; the arbitrary-parameter statement and convergence of the smaller canonical sources remain open."
+      ]
+    }
+  ]
+}

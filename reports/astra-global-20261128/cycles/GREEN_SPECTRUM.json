@@ -1,0 +1,22 @@
+{
+  "actual_integer_section": {
+    "distinct_ordinary_unit_sites": 96,
+    "finite_section_determinants": 6,
+    "green_matrix_entries": 9216,
+    "initial_sources_below": 160
+  },
+  "exact_resonance_kernel_tests": 594,
+  "rational_cycle_algebra": {
+    "odd_grid_exclusions": 14200,
+    "rational_cycle_characteristic_values": 852,
+    "rational_primitive_positive_cycles": 284,
+    "rational_stochastic_rows": 1298,
+    "small_loss_trace_upper_checks": 10
+  },
+  "reciprocal_shape_constants": {
+    "geometric_ratio": "333/500",
+    "second_moment_cap": "201/1000",
+    "strict_negative_squared_inverse_root_constant": "3/4000"
+  },
+  "scope": "Finite checks of the stated kernel, determinant and cycle formulas. The infinite-dimensional bounds are written proofs."
+}

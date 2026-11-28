@@ -1,0 +1,22 @@
+{
+  "schema": "collatz-source-intake-supplement/v1",
+  "scope": "Selected complete source files independently read at exact pinned revision. Earlier intake remains unchanged.",
+  "prior_sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pull_request": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "files": [
+        {
+          "path": "research/upper-bit-mergers/AFFINE_RAYS.md",
+          "review": "Read complete source. Already contains basic prime-to-six affine-family classification, clock/grade shifts, bounded-parameter obstruction and arithmetic-progression constructions."
+        },
+        {
+          "path": "research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md",
+          "git_blob": "2e10eaea1bc2f10ebd0ea379d9f7d5579b416c4e",
+          "review": "Read complete source and separated its full O(log^2 n) synchronization theorem from the earlier O(log n) compression phase. Its imported merger-tail and native root-return dependencies are not fully rebuilt here."
+        }
+      ]
+    }
+  ]
+}

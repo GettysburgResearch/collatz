@@ -1,0 +1,35 @@
+{
+  "equal_count_counterexample": {
+    "arc_length": 2,
+    "clock": [
+      7,
+      3
+    ],
+    "denominator": 101,
+    "equal_count_roots": [
+      "-75/58"
+    ],
+    "lag": 3,
+    "numerators": [
+      304,
+      152,
+      76,
+      38,
+      19,
+      79,
+      169
+    ]
+  },
+  "exhaustive_shortcut_periods_through": 11,
+  "finite_rational_controls": {
+    "coprime_native_clocks": 219,
+    "coprime_paired_arc_filters": 18023,
+    "endpoint_transport_comparisons": 27610,
+    "equal_count_crossing_witnesses": 536,
+    "paired_arc_filters": 24861,
+    "primitive_positive_rational_circles": 314,
+    "single_arc_filters": 2749
+  },
+  "noncycle_integer_crossing_checks": 10000,
+  "scope": "Exact finite controls. Rational circles may have denominator greater than one."
+}

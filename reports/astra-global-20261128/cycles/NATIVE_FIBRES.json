@@ -1,0 +1,45 @@
+{
+  "binary_quotient_lifts": 6138,
+  "conditioned_cardinality_tails": 585,
+  "depth_10_exact_pairs": {
+    "(1, 0, 1, -2)": {
+      "fused_tilted_denominator": 59049,
+      "fused_tilted_numerator": 6074,
+      "joint_native_nondecrease_cells": 43,
+      "joint_upper_grade_cells": 43
+    },
+    "(1, 0, 1, 1)": {
+      "fused_tilted_denominator": 59049,
+      "fused_tilted_numerator": 16142,
+      "joint_native_nondecrease_cells": 60,
+      "joint_upper_grade_cells": 60
+    },
+    "(1, 0, 3, 1)": {
+      "fused_tilted_denominator": 19683,
+      "fused_tilted_numerator": 13450,
+      "joint_native_nondecrease_cells": 60,
+      "joint_upper_grade_cells": 60
+    },
+    "(1, 0, 5, 2)": {
+      "fused_tilted_denominator": 1,
+      "fused_tilted_numerator": 0,
+      "joint_native_nondecrease_cells": 32,
+      "joint_upper_grade_cells": 32
+    },
+    "(3, 1, 1, 0)": {
+      "fused_tilted_denominator": 19683,
+      "fused_tilted_numerator": 6725,
+      "joint_native_nondecrease_cells": 60,
+      "joint_upper_grade_cells": 60
+    }
+  },
+  "exact_epoch_rebasings": 10080,
+  "finite_overlap_tables": 15,
+  "finite_right_rank_tails": 90,
+  "full_octave_joint_fibres": 3360,
+  "genuine_stopped_mixture_checks": 94,
+  "mixture_atoms": 33,
+  "simultaneous_terminal_lifts": 10080,
+  "tilted_fibre_roots": 18414,
+  "tilted_fusion_cylinders": 1840
+}

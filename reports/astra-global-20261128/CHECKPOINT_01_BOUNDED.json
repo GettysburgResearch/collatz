@@ -1,0 +1,81 @@
+{
+  "schema": "collatz-global-bounded-controls/v1",
+  "scope": "bounded exact controls only; no universal Collatz proof",
+  "started_utc": "2026-11-27T23:41:24.934158+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_hashes": {
+    "broad/check_pins.py": "96c13c0e2a8d2e5a6047ae013e443dcc639f18a769f31b909f9e542ba627f17f",
+    "cycles/check_cycle_trace.py": "05c0f7dadbdc6cdb254bd8b4f5f1146fb5e890dee83a9414229f69d1468228d4",
+    "cycles/check_period_spectrum.py": "83e3cce546d9f9fc92959907b44ac0d0f287d95c233efa5295459f2f5c46bb81",
+    "escape/check_summable_trace.py": "517e739bdc72c1877d85d5188e353a24afd593b727d665a39beb61349162fe38"
+  },
+  "runs": [
+    {
+      "source": "broad/check_pins.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.2269,
+      "stdout": "{\n  \"all_tuples\": {\n    \"finite_tuple_classes\": 102201,\n    \"max_depth\": 19,\n    \"source_arity_pairs\": 320\n  },\n  \"all_words\": {\n    \"parity_words\": 1023,\n    \"source_word_pairs\": 65472\n  },\n  \"periods\": {\n    \"ordinary_shadow_steps\": 1122,\n    \"periods\": 12\n  },\n  \"post_burst\": {\n    \"affine_steps\": 1785,\n    \"direct_mersenne_clocks\": 17,\n    \"lift_moduli\": 93\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "broad/check_pins.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.2803,
+      "stdout": "{\n  \"all_tuples\": {\n    \"finite_tuple_classes\": 102201,\n    \"max_depth\": 19,\n    \"source_arity_pairs\": 320\n  },\n  \"all_words\": {\n    \"parity_words\": 1023,\n    \"source_word_pairs\": 65472\n  },\n  \"periods\": {\n    \"ordinary_shadow_steps\": 1122,\n    \"periods\": 12\n  },\n  \"post_burst\": {\n    \"affine_steps\": 1785,\n    \"direct_mersenne_clocks\": 17,\n    \"lift_moduli\": 93\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/check_cycle_trace.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.6851,
+      "stdout": "{\n  \"off_cycle_ordinary_weight_floor_by_residue\": {\n    \"1\": \"17/84\",\n    \"2\": \"17/42\",\n    \"4\": \"5/84\",\n    \"5\": \"17/168\",\n    \"7\": \"17/336\",\n    \"8\": \"5/42\"\n  },\n  \"physical_integer_rows\": {\n    \"adjacent_pairs\": 250,\n    \"native_atoms\": 7056,\n    \"pooled_adjacent_pairs\": 5\n  },\n  \"rational_lap_algebra\": {\n    \"ordered_pairs\": 29758,\n    \"rational_positive_cycles\": 941\n  },\n  \"scope\": \"Bounded exact controls with inverse gaps capped at eight; written infinite estimates are separate.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/check_cycle_trace.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.736,
+      "stdout": "{\n  \"off_cycle_ordinary_weight_floor_by_residue\": {\n    \"1\": \"17/84\",\n    \"2\": \"17/42\",\n    \"4\": \"5/84\",\n    \"5\": \"17/168\",\n    \"7\": \"17/336\",\n    \"8\": \"5/42\"\n  },\n  \"physical_integer_rows\": {\n    \"adjacent_pairs\": 250,\n    \"native_atoms\": 7056,\n    \"pooled_adjacent_pairs\": 5\n  },\n  \"rational_lap_algebra\": {\n    \"ordered_pairs\": 29758,\n    \"rational_positive_cycles\": 941\n  },\n  \"scope\": \"Bounded exact controls with inverse gaps capped at eight; written infinite estimates are separate.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/check_period_spectrum.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.6894,
+      "stdout": "{\n  \"explicit_separation_period_exponent\": \"2527/2917\",\n  \"exponent_three_limit\": \"38/77\",\n  \"native_cycles\": {\n    \"charged_prefixes\": 35321,\n    \"negative_cycles\": 97,\n    \"positive_charged_cuts\": 3561,\n    \"positive_cycles\": 314\n  },\n  \"scope\": \"Exact finite arithmetic and native trace controls, not an asymptotic proof.\",\n  \"three_logarithm_period_exponent\": \"26069273/39069273\",\n  \"translated_strips\": {\n    \"affine_line\": 296,\n    \"line_where_one_sided_minimum_bound_fails\": 207,\n    \"noncollinear\": 1365\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/check_period_spectrum.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.8436,
+      "stdout": "{\n  \"explicit_separation_period_exponent\": \"2527/2917\",\n  \"exponent_three_limit\": \"38/77\",\n  \"native_cycles\": {\n    \"charged_prefixes\": 35321,\n    \"negative_cycles\": 97,\n    \"positive_charged_cuts\": 3561,\n    \"positive_cycles\": 314\n  },\n  \"scope\": \"Exact finite arithmetic and native trace controls, not an asymptotic proof.\",\n  \"three_logarithm_period_exponent\": \"26069273/39069273\",\n  \"translated_strips\": {\n    \"affine_line\": 296,\n    \"line_where_one_sided_minimum_bound_fails\": 207,\n    \"noncollinear\": 1365\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/check_summable_trace.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.7548,
+      "stdout": "{\n  \"flux_checks\": [\n    {\n      \"exterior_residue_pairs\": 22,\n      \"grade\": 0,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"9810/53599\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 27\n    },\n    {\n      \"exterior_residue_pairs\": 67,\n      \"grade\": 1,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"10675771893/64860234530\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 81\n    },\n    {\n      \"exterior_residue_pairs\": 202,\n      \"grade\": 2,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"4325748430126310428575762027695869395733539/22492803197687261389931018050151146870762900\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 243\n    },\n    {\n      \"exterior_residue_pairs\": 609,\n      \"grade\": 3,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"3762338990512592716049197891752022070672017934125809148237200462019949038000201464986380533/20353798345651583522140833042806545878160022675915029316899011815581892908425674990197913675\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 729\n    }\n  ],\n  \"gap_cap\": 6,\n  \"residue_checks\": [\n    {\n      \"frozen_average\": \"89/192\",\n      \"frozen_average_upper\": \"89/192\",\n      \"grade\": 0,\n      \"odd_representatives\": 9,\n      \"period_average_marked_norm\": \"217/192\",\n      \"spacing_pairs\": 0\n    },\n    {\n      \"frozen_average\": \"1655/4096\",\n      \"frozen_average_upper\": \"1655/4096\",\n      \"grade\": 1,\n      \"odd_representatives\": 27,\n      \"period_average_marked_norm\": \"2821/3072\",\n      \"spacing_pairs\": 0\n    },\n    {\n      \"frozen_average\": \"23295/65536\",\n      \"frozen_average_upper\": \"104265/262144\",\n      \"grade\": 2,\n      \"odd_representatives\": 81,\n      \"period_average_marked_norm\": \"37543/49152\",\n      \"spacing_pairs\": 52\n    },\n    {\n      \"frozen_average\": \"5139555/16777216\",\n      \"frozen_average_upper\": \"5640705/16777216\",\n      \"grade\": 3,\n      \"odd_representatives\": 243,\n      \"period_average_marked_norm\": \"515431/786432\",\n      \"spacing_pairs\": 1006\n    }\n  ],\n  \"scope\": \"per-gap capped original inverse words with exact terminal selector; all checks use fractions\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/check_summable_trace.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.8993,
+      "stdout": "{\n  \"flux_checks\": [\n    {\n      \"exterior_residue_pairs\": 22,\n      \"grade\": 0,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"9810/53599\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 27\n    },\n    {\n      \"exterior_residue_pairs\": 67,\n      \"grade\": 1,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"10675771893/64860234530\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 81\n    },\n    {\n      \"exterior_residue_pairs\": 202,\n      \"grade\": 2,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"4325748430126310428575762027695869395733539/22492803197687261389931018050151146870762900\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 243\n    },\n    {\n      \"exterior_residue_pairs\": 609,\n      \"grade\": 3,\n      \"maximum_fixed_exponent_fraction_of_mean\": \"3762338990512592716049197891752022070672017934125809148237200462019949038000201464986380533/20353798345651583522140833042806545878160022675915029316899011815581892908425674990197913675\",\n      \"moving_cutoff_inequality\": true,\n      \"physical_edges\": 729\n    }\n  ],\n  \"gap_cap\": 6,\n  \"residue_checks\": [\n    {\n      \"frozen_average\": \"89/192\",\n      \"frozen_average_upper\": \"89/192\",\n      \"grade\": 0,\n      \"odd_representatives\": 9,\n      \"period_average_marked_norm\": \"217/192\",\n      \"spacing_pairs\": 0\n    },\n    {\n      \"frozen_average\": \"1655/4096\",\n      \"frozen_average_upper\": \"1655/4096\",\n      \"grade\": 1,\n      \"odd_representatives\": 27,\n      \"period_average_marked_norm\": \"2821/3072\",\n      \"spacing_pairs\": 0\n    },\n    {\n      \"frozen_average\": \"23295/65536\",\n      \"frozen_average_upper\": \"104265/262144\",\n      \"grade\": 2,\n      \"odd_representatives\": 81,\n      \"period_average_marked_norm\": \"37543/49152\",\n      \"spacing_pairs\": 52\n    },\n    {\n      \"frozen_average\": \"5139555/16777216\",\n      \"frozen_average_upper\": \"5640705/16777216\",\n      \"grade\": 3,\n      \"odd_representatives\": 243,\n      \"period_average_marked_norm\": \"515431/786432\",\n      \"spacing_pairs\": 1006\n    }\n  ],\n  \"scope\": \"per-gap capped original inverse words with exact terminal selector; all checks use fractions\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "paired_control_count": 4,
+  "finished_utc": "2026-11-27T23:41:30.052217+00:00"
+}
