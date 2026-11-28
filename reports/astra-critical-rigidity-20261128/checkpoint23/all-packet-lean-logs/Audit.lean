@@ -1,0 +1,166 @@
+import AffineOrbit
+import TernaryLanding
+import MarkedLandingWord
+import AdjacentWordClosure
+import ConditionalParitySuffix
+import SynchronousPhase
+import FiniteBranchCapture
+import OneSparseOrbit
+import RoundedOrbitCapture
+import SparseNativeTargets
+import InverseSuffixTransport
+import NativeMinimumClock
+import PairedClock
+import SignedReturnRouter
+import PrefixCarryClosure
+import ClockCarryEquivalence
+import CrossGrade
+import JointTargets
+import BoundaryRanks
+import OrderedMismatchWindows
+import EventFactorRank
+import ReferenceDivisibility
+import RotationOccupation
+import TwoGradePairOrder
+import ResidueFiberOrder
+import IntegerMinorConcentration
+import FullDenominatorPairZero
+import NativeTubeZero
+import PooledMultiplicityCapacity
+import RotationRecurrenceRank
+import GuardedTernaryTube
+
+#print axioms Collatz.PoweredAffine.step_positive
+#print axioms Collatz.PoweredAffine.orbit_positive
+#print axioms Collatz.PoweredAffine.even_step
+#print axioms Collatz.PoweredAffine.odd_step
+#print axioms Collatz.PoweredAffine.letter_actual
+#print axioms Collatz.PoweredAffine.evalWord_actual
+#print axioms Collatz.PoweredAffine.evalWord_append
+#print axioms Collatz.PoweredAffine.word_affine
+#print axioms Collatz.PoweredAffine.actual_word_affine
+#print axioms Collatz.PoweredAffine.word_centered
+#print axioms Collatz.PoweredAffine.repeated_centered
+#print axioms Collatz.PoweredAffine.center_telescope
+#print axioms Collatz.PoweredAffine.reference_telescope
+#print axioms Collatz.TernaryLanding.consumed_grade
+#print axioms Collatz.TernaryLanding.prefix_carry
+#print axioms Collatz.TernaryLanding.exists_landing
+#print axioms Collatz.TernaryLanding.positive_level_unit
+#print axioms Collatz.TernaryLanding.rational_value
+#print axioms Collatz.TernaryLanding.dyadic_translation
+#print axioms Collatz.MarkedLandingWord.physical_of_carry
+#print axioms Collatz.MarkedLandingWord.last_odd_carry
+#print axioms Collatz.MarkedLandingWord.first_mark_iff
+#print axioms Collatz.AdjacentWordClosure.realizes_iff_dvd
+#print axioms Collatz.AdjacentWordClosure.progression_realizes
+#print axioms Collatz.AdjacentWordClosure.adjacent_replay
+#print axioms Collatz.AdjacentWordClosure.ordinary_lifts_arbitrarily_large
+#print axioms Collatz.ConditionalParitySuffix.unique_progression_word
+#print axioms Collatz.ConditionalParitySuffix.translate_word_endpoint
+#print axioms Collatz.ConditionalParitySuffix.unique_multiplier_suffix
+#print axioms Collatz.SynchronousPhase.phase_eq_iff
+#print axioms Collatz.SynchronousPhase.shift_phase
+#print axioms Collatz.SynchronousPhase.inverse_shift_phase
+#print axioms Collatz.SynchronousPhase.odd_triple_phase
+#print axioms Collatz.SynchronousPhase.phase_return_iff
+#print axioms Collatz.SynchronousPhase.family_meeting_iff
+#print axioms Collatz.SynchronousPhase.equal_on_periodic_locus
+#print axioms Collatz.SynchronousPhase.same_future_entry
+#print axioms Collatz.SynchronousPhase.collision_at_clock_iff
+#print axioms Collatz.FiniteBranchCapture.attained_minimum
+#print axioms Collatz.FiniteBranchCapture.minimum_passes_guard
+#print axioms Collatz.FiniteBranchCapture.first_disagreement_by_minimum
+#print axioms Collatz.FiniteBranchCapture.first_capture_window
+#print axioms Collatz.OneSparseOrbit.after_odd_departure
+#print axioms Collatz.OneSparseOrbit.three_multiple_predecessors
+#print axioms Collatz.OneSparseOrbit.bounded_spine_step
+#print axioms Collatz.OneSparseOrbit.modified_spine_orbit
+#print axioms Collatz.OneSparseOrbit.exact_shared_prefix
+#print axioms Collatz.RoundedOrbitCapture.rounded_arithmetic
+#print axioms Collatz.RoundedOrbitCapture.rounded_native_error
+#print axioms Collatz.RoundedOrbitCapture.rounded_odd_injective
+#print axioms Collatz.RoundedOrbitCapture.rounded_iterate_bounds
+#print axioms Collatz.RoundedOrbitCapture.inClosure_iff
+#print axioms Collatz.RoundedOrbitCapture.modified_native_rule
+#print axioms Collatz.RoundedOrbitCapture.closure_orbit
+#print axioms Collatz.RoundedOrbitCapture.true_hit_forces_escape
+#print axioms Collatz.SparseNativeTargets.native_balance_iff
+#print axioms Collatz.SparseNativeTargets.target_exists_iff
+#print axioms Collatz.SparseNativeTargets.gapWord_counts
+#print axioms Collatz.SparseNativeTargets.actual_suffix_gap_residue
+#print axioms Collatz.SparseNativeTargets.finite_visits_le
+#print axioms Collatz.InverseSuffixTransport.source_le_dyadic_endpoint
+#print axioms Collatz.InverseSuffixTransport.prior_target_coast
+#print axioms Collatz.InverseSuffixTransport.read_incoming_from
+#print axioms Collatz.InverseSuffixTransport.large_entrance_reads_incoming
+#print axioms Collatz.NativeMinimumClock.minimumDate_spec
+#print axioms Collatz.NativeMinimumClock.strict_record_of_firstOddBelow
+#print axioms Collatz.NativeMinimumClock.minimumDate_at_record
+#print axioms Collatz.NativeMinimumClock.minimumDate_at_firstOddBelow
+#print axioms Collatz.NativeMinimumClock.minimumDate_unit_embedding
+#print axioms Collatz.PairedClock.affine
+#print axioms Collatz.PairedClock.discrepancy_bound
+#print axioms Collatz.PairedClock.discrepancy_positive
+#print axioms Collatz.PairedClock.even_discrepancy
+#print axioms Collatz.PairedClock.unmatched_ternary_power
+#print axioms Collatz.SignedReturnRouter.Route.stay_cost
+#print axioms Collatz.SignedReturnRouter.Route.then_cost
+#print axioms Collatz.SignedReturnRouter.Route.swap_cost
+#print axioms Collatz.SignedReturnRouter.descend_to_translation
+#print axioms Collatz.SignedReturnRouter.positive_to_one
+#print axioms Collatz.SignedReturnRouter.signed_to_one
+#print axioms Collatz.SignedReturnRouter.reset_to_adjacent
+#print axioms Collatz.SignedReturnRouter.reset_to_reverse
+#print axioms Collatz.PrefixCarryClosure.route_replays
+#print axioms Collatz.PrefixCarryClosure.complete_adjacent_prefix
+#print axioms Collatz.PrefixCarryClosure.return_carry
+#print axioms Collatz.PrefixCarryClosure.close_positive_source_suffix
+#print axioms Collatz.ClockCarryEquivalence.carry_to_clock
+#print axioms Collatz.ClockCarryEquivalence.clock_to_carry
+#print axioms Collatz.ClockCarryEquivalence.maximum_sandwich
+#print axioms Collatz.ClockCarryEquivalence.logarithmic_clock_iff_ordered_carry
+#print axioms Collatz.PairedClock.crossCost_add_joint
+#print axioms Collatz.PairedClock.discrepancy_one_step_charge
+#print axioms Collatz.PairedClock.unmatched_cross_grade
+#print axioms Collatz.PairedClock.orbit_add
+#print axioms Collatz.PairedClock.grade_add
+#print axioms Collatz.PairedClock.incomparable_height
+#print axioms Collatz.PairedClock.unbounded_odd_joint_iff
+#print axioms Collatz.BoundaryRanks.shared_directions_bound
+#print axioms Collatz.BoundaryRanks.chronological_rank_identity
+#print axioms Collatz.OrderedMismatchWindows.totalWindows
+#print axioms Collatz.OrderedMismatchWindows.shiftedCosts
+#print axioms Collatz.OrderedMismatchWindows.clusteredWindowCosts
+#print axioms Collatz.EventFactorRank.independent_of_overlap
+#print axioms Collatz.EventFactorRank.shared_point_gap
+#print axioms Collatz.EventFactorRank.common_overlap_rank
+#print axioms Collatz.ReferenceDivisibility.two_three_coprime
+#print axioms Collatz.ReferenceDivisibility.complete_dyadic_divisor
+#print axioms Collatz.ReferenceDivisibility.nonzero_residual_height
+#print axioms Collatz.ReferenceDivisibility.reference_integer_law
+#print axioms Collatz.ReferenceDivisibility.reference_source_divisor
+#print axioms Collatz.ReferenceDivisibility.reference_source_height
+#print axioms Collatz.RotationOccupation.subtractAlong
+#print axioms Collatz.RotationOccupation.partialLast
+#print axioms Collatz.RotationOccupation.interiorLattice
+#print axioms Collatz.RotationOccupation.shellGap
+#print axioms Collatz.RotationOccupation.fullLengthFloor
+#print axioms Collatz.RotationOccupation.multiplicityCost
+#print axioms Collatz.TwoGradePairOrder.comparison_sign
+#print axioms Collatz.TwoGradePairOrder.pair_sum_injective
+#print axioms Collatz.ResidueFiberOrder.residue_order_eq_period
+#print axioms Collatz.IntegerMinorConcentration.modulus_dvd_det_mul_coefficient
+#print axioms Collatz.IntegerMinorConcentration.abs_det_le_column_product
+#print axioms Collatz.IntegerMinorConcentration.det_eq_zero_of_large_row_modulus
+#print axioms Collatz.FullDenominatorPairZero.full_denominator_divides_of_zero
+#print axioms Collatz.FullDenominatorPairZero.one_zero_forces_all_zero
+#print axioms Collatz.NativeTubeZero.backward_zero
+#print axioms Collatz.NativeTubeZero.zero_tube
+#print axioms Collatz.PooledMultiplicityCapacity.padded_binary_capacity
+#print axioms Collatz.RotationRecurrenceRank.native_run_lt
+#print axioms Collatz.RotationRecurrenceRank.native_budget_rank
+#print axioms Collatz.GuardedTernaryTube.homogeneous_guard
+#print axioms Collatz.GuardedTernaryTube.guarded_backward
+#print axioms Collatz.GuardedTernaryTube.guarded_zero_tube
+#print axioms Collatz.SynchronousPhase.shift

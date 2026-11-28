@@ -1,6 +1,8 @@
-# Ordinary-source rigidity and complete rotation plateaus
+# Nine-hour Collatz research: native clocks, denominator spectra and sparse capture
 
 **Collatz remains unresolved.** This exploratory packet studies actual ordinary trajectories, the cost of following several rational reference arcs, and the full rotation plateaus used to compare positive cycles. It records precise written proofs and their formal kernels. It does not claim that the remaining coverage hypotheses hold for every positive integer.
+
+**Final handoff:** [Results, evidence and the next decisive questions](FINAL_HANDOFF.md). The complete final packet replay covers 31 modules and 133 public roots; with the three logarithm specializations and one motif specialization audited earlier in the pass, the total is **137 distinct local theorem roots**. The chronological ledger below preserves the successive hypotheses, corrections and proof boundaries.
 
 The map throughout is the shortcut map
 
@@ -432,7 +434,15 @@ The full-endpoint question is now expressed by one quantitative identity between
 
 The [twenty-second coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint22/REVIEW.md) records five fully reconstructed notes, three exact normal/optimized controls and the original-source boundaries. Ten new roots passed fresh central compilation and separate import auditing. The inventory is now **128 packet-runner roots + 3 logarithm specializations + 1 motif specialization = 132 distinct local public theorem roots**.
 
-## Attribution and proof boundaries
+## Twenty-third checkpoint and final handoff
++
++[NativeMinimumClock.lean](ordinary/NativeMinimumClock.lean) defines the least value on the entire actual orbit and its first attaining date by well ordering, with no convergence assumption. Five roots prove its minimum semantics, strict record status of a true first odd landing, exact addition of the whole minimum clock across a record or gate, and the two-date cost of the genuine odd unit embedding. The definitions are noncomputable; a practical global-minimum algorithm is not supplied.
++
++The final integrated build freshly compiled all **31 packet modules** and separately imported and audited **133 theorem roots plus the quotient-shift definition**. Together with the separately audited three logarithm specializations and one motif specialization, the final local inventory is **137 distinct theorem roots**. The original 1,002-module logarithm import closure is credited separately. Cached pinned dependencies were reused; the analytic probability, asymptotic height and limiting cycle arguments retain their written status.
++
++The [final coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint23/REVIEW.md), [complete build receipt](../../reports/astra-critical-rigidity-20261128/checkpoint23/all-packet-lean.json) and [deduplicated inventory](../../reports/astra-critical-rigidity-20261128/checkpoint23/formal-inventory.json) document the closing audit. The [handoff](FINAL_HANDOFF.md) prioritizes the cutoff-clock conjecture, the exact endpoint moment frontier, the common-clock denominator spectrum, genuine ordinary collision statistics and the sparse-rule barrier, with their original-source dependencies and remaining gaps.
++
++## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.
 
@@ -457,4 +467,4 @@ At initial publication, the completed central Lean receipt covered all thirteen 
 
 ## Remaining decisive questions
 
-The new source theorem needs a reason that a hypothetical exceptional trajectory admits the required small-height reference arcs at windows longer than its starting bit length. The pair classification allows the grade to grow and does not prove the desired merger for a specified least counterexample. The full-plateau inequality still permits the short plateaus induced by surviving cycle widths. Work on these missing implications continues in later, separately reviewed checkpoints.
+The full endpoint moderate-deviation principle is equivalent to the moment index being infinite, but no positive index has been proved. The exact median synchronous collision value remains unevaluated. The native ordered-carry bound `L=O(p log p)` is open between the constructive logarithmic lower rate and the subquadratic upper rate. Rational spectra and fixed-budget denominator bounds leave unrestricted increasing-complexity ordinary cycles undecided. Finally, no theorem yet forces every hypothetical exceptional trajectory to admit the needed low-height reference covers or turns its required physical additive configurations into a contradiction. These are the concrete targets for the next pass; the [final handoff](FINAL_HANDOFF.md) gives their dependencies and review priorities.

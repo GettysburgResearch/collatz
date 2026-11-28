@@ -1,0 +1,3 @@
+'Collatz.OrderedMismatchWindows.totalWindows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrderedMismatchWindows.shiftedCosts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.OrderedMismatchWindows.clusteredWindowCosts' depends on axioms: [propext, Classical.choice, Quot.sound]

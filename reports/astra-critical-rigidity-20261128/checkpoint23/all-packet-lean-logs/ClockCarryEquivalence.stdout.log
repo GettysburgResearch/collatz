@@ -1,0 +1,6 @@
+'Collatz.ClockCarryEquivalence.carry_to_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockCarryEquivalence.clock_to_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockCarryEquivalence.maximum_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.ClockCarryEquivalence.logarithmic_clock_iff_ordered_carry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
