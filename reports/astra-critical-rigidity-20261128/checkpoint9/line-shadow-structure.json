@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/ordinary/check_line_shadow_structure.py",
+  "sha256": "dae8798e2df6a98c861dd68e0e9d2792db8097d29c371dc660fd3eed59222a58",
+  "started_utc": "2026-11-28T02:33:22.809175+00:00",
+  "scope": "Exact native signed lines, normalized occupation thresholds, scalar shadow replay and simple-cycle deletion; finite controls do not establish asymptotic theorems.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.689,
+      "stdout": "{\n  \"balanced_dates\": 2040,\n  \"native_steps\": 28964,\n  \"negative_center_pairs\": 1,\n  \"negative_level_dates\": 9476,\n  \"negative_scalar_dates\": 512,\n  \"nonbase_simple_components\": 249,\n  \"noninteger_scalar_dates\": 2245,\n  \"occupation_threshold_checks\": 4480,\n  \"ordinary_sources\": 512,\n  \"retained_scalar_dates\": 3625,\n  \"retained_scalar_runs\": 1733,\n  \"simple_components\": 468,\n  \"static_adjacent_pairs\": 128\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.585,
+      "stdout": "{\n  \"balanced_dates\": 2040,\n  \"native_steps\": 28964,\n  \"negative_center_pairs\": 1,\n  \"negative_level_dates\": 9476,\n  \"negative_scalar_dates\": 512,\n  \"nonbase_simple_components\": 249,\n  \"noninteger_scalar_dates\": 2245,\n  \"occupation_threshold_checks\": 4480,\n  \"ordinary_sources\": 512,\n  \"retained_scalar_dates\": 3625,\n  \"retained_scalar_runs\": 1733,\n  \"simple_components\": 468,\n  \"static_adjacent_pairs\": 128\n}\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}

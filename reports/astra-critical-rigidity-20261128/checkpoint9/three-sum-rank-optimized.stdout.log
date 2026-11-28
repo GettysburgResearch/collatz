@@ -1,0 +1,186 @@
+{
+  "boundary_polynomials": [
+    {
+      "length": 106,
+      "stencil_degree": 10,
+      "nonzero_coefficients": 9,
+      "roots": [
+        {
+          "root_factor": "T + 1",
+          "effective_multiplicity": 1,
+          "differentiated": 1
+        },
+        {
+          "root_factor": "T - 1",
+          "effective_multiplicity": 2,
+          "differentiated": 1
+        },
+        {
+          "root_factor": "T**2 + 1",
+          "effective_multiplicity": 1,
+          "differentiated": 1
+        }
+      ]
+    },
+    {
+      "length": 78,
+      "stencil_degree": 5,
+      "nonzero_coefficients": 6,
+      "roots": [
+        {
+          "root_factor": "T - 2",
+          "effective_multiplicity": 2,
+          "differentiated": 1
+        }
+      ]
+    },
+    {
+      "length": 78,
+      "stencil_degree": 5,
+      "nonzero_coefficients": 6,
+      "roots": [
+        {
+          "root_factor": "2*T - 1",
+          "effective_multiplicity": 2,
+          "differentiated": 1
+        }
+      ]
+    },
+    {
+      "length": 66,
+      "stencil_degree": 2,
+      "nonzero_coefficients": 3,
+      "roots": [
+        {
+          "root_factor": "T - 1",
+          "effective_multiplicity": 1,
+          "differentiated": 0
+        }
+      ]
+    }
+  ],
+  "calendar": [
+    {
+      "p": 306,
+      "h": 179,
+      "v": 3,
+      "cut": 182,
+      "span": 1,
+      "signed_births": 4,
+      "complete_traces": 8
+    },
+    {
+      "p": 306,
+      "h": 179,
+      "v": 3,
+      "cut": 185,
+      "span": 1,
+      "signed_births": 10,
+      "complete_traces": 20
+    },
+    {
+      "p": 306,
+      "h": 179,
+      "v": 3,
+      "cut": 203,
+      "span": 1,
+      "signed_births": 46,
+      "complete_traces": 92
+    },
+    {
+      "p": 306,
+      "h": 179,
+      "v": 3,
+      "cut": 227,
+      "span": 1,
+      "signed_births": 94,
+      "complete_traces": 188
+    },
+    {
+      "p": 665,
+      "h": 389,
+      "v": 6,
+      "cut": 395,
+      "span": 1,
+      "signed_births": 4,
+      "complete_traces": 8
+    },
+    {
+      "p": 665,
+      "h": 389,
+      "v": 6,
+      "cut": 401,
+      "span": 1,
+      "signed_births": 16,
+      "complete_traces": 32
+    },
+    {
+      "p": 665,
+      "h": 389,
+      "v": 6,
+      "cut": 441,
+      "span": 1,
+      "signed_births": 96,
+      "complete_traces": 192
+    },
+    {
+      "p": 665,
+      "h": 389,
+      "v": 6,
+      "cut": 494,
+      "span": 1,
+      "signed_births": 202,
+      "complete_traces": 404
+    },
+    {
+      "p": 15601,
+      "h": 9126,
+      "v": 156,
+      "cut": 9282,
+      "span": 15,
+      "signed_births": 32,
+      "complete_traces": 64
+    },
+    {
+      "p": 15601,
+      "h": 9126,
+      "v": 156,
+      "cut": 9438,
+      "span": 15,
+      "signed_births": 344,
+      "complete_traces": 688
+    },
+    {
+      "p": 15601,
+      "h": 9126,
+      "v": 156,
+      "cut": 10374,
+      "span": 15,
+      "signed_births": 2216,
+      "complete_traces": 4432
+    },
+    {
+      "p": 15601,
+      "h": 9126,
+      "v": 156,
+      "cut": 11622,
+      "span": 15,
+      "signed_births": 4712,
+      "complete_traces": 9424
+    }
+  ],
+  "cube": [
+    {
+      "coordinates": 1,
+      "nonempty_uniform_supports": 3
+    },
+    {
+      "coordinates": 2,
+      "nonempty_uniform_supports": 15
+    },
+    {
+      "coordinates": 3,
+      "nonempty_uniform_supports": 255
+    }
+  ]
+}

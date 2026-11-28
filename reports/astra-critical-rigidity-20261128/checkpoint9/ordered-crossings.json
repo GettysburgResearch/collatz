@@ -1,0 +1,26 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "script": "research/astra-critical-rigidity-20261128/literature/check_ordered_crossings.py",
+  "sha256": "804720029b887354ee12cc56d54fefeadc2d4491624fd17fc427f822974d0b71",
+  "started_utc": "2026-11-28T02:33:22.809699+00:00",
+  "scope": "Exact adjacent calendars through length 15, complete crossing ledger, signed finite cost and nonzero chronological cuts; the Subspace Theorem input is not certified by enumeration.",
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.384,
+      "stdout": "adjacent_pairs=510\nindividual_ordered_crossings=4403\nlargest_native_period_tested=15\nlow_endpoint_packets=5682\nnegative_determinants=0\npositive_determinants=510\nrank_aligned_pairs_with_some_unequal_ranks=82\ntrimmed_chronological_cuts=12545\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.361,
+      "stdout": "adjacent_pairs=510\nindividual_ordered_crossings=4403\nlargest_native_period_tested=15\nlow_endpoint_packets=5682\nnegative_determinants=0\npositive_determinants=510\nrank_aligned_pairs_with_some_unequal_ranks=82\ntrimmed_chronological_cuts=12545\n",
+      "stderr": ""
+    }
+  ],
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "success": true
+}
