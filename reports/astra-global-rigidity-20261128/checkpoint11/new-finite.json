@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "checkers": [
+    {
+      "path": "check_regular_templates.py",
+      "sha256": "5025822c3d5a33ef13365af1b3845dc3d7663e2ea0c5e2668d788b66f334c9d8",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "{\n  \"templates\": 8268,\n  \"powered_blocks\": 24804,\n  \"actual_center_returns\": 1717,\n  \"nonzero_two_power_divisors\": 23087,\n  \"nonzero_signed_ratios\": 15355,\n  \"negative_jumps\": 8529,\n  \"positive_jumps\": 7178,\n  \"zero_jumps\": 829\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "{\n  \"templates\": 8268,\n  \"powered_blocks\": 24804,\n  \"actual_center_returns\": 1717,\n  \"nonzero_two_power_divisors\": 23087,\n  \"nonzero_signed_ratios\": 15355,\n  \"negative_jumps\": 8529,\n  \"positive_jumps\": 7178,\n  \"zero_jumps\": 829\n}\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "check_every_sublap.py",
+      "sha256": "d861f0abaaf098567905c22df667b651b7132edd0d85941efddfa2fdace3e42a",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "4366 primitive rational words, 15590 individual directed sublap witnesses; literal affine-pair and padded denominator controls passed\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "4366 primitive rational words, 15590 individual directed sublap witnesses; literal affine-pair and padded denominator controls passed\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    },
+    {
+      "path": "check_sublap_residues.py",
+      "sha256": "665ce2971039e6abe7be0d58adf6bd30e67162f708971afba445ae22436dfed3",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "stdout": "27080 local two-defect tests, 107697 all-date residues, 1 native adjacent crossings\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "stdout": "27080 local two-defect tests, 107697 all-date residues, 1 native adjacent crossings\n",
+          "stderr": ""
+        }
+      ],
+      "success": true
+    }
+  ],
+  "scope": "Finite exact controls; no infinite theorem verification."
+}
