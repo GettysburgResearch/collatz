@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-finite-paired-control/v1",
+  "checked_utc": "2026-11-28T04:46:50.026690+00:00",
+  "source": "research/astra-global-rigidity-20261128/cycles/check_repeated_block_drawdown.py",
+  "source_sha256": "2e3bc3486c9a2d9a6efe090e6188f755650824e722f9a777dbf52e9e788f15b2",
+  "success": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "stdout": "21213 long-block identities at finite scale, 2192 overlaps, 4634 negative and 16579 positive signed remainders\n",
+      "stderr": ""
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout": "21213 long-block identities at finite scale, 2192 overlaps, 4634 negative and 16579 positive signed remainders\n",
+      "stderr": ""
+    }
+  ]
+}

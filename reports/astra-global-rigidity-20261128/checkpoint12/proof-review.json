@@ -1,0 +1,56 @@
+{
+  "schema": "collatz-research-proof-review/v1",
+  "checkpoint": 12,
+  "reviewed_utc": "2026-11-28T05:09:40.869199+00:00",
+  "reviewer": "root; independent reconstruction of agent deductions and named primary input statements",
+  "scope": "Written proof review, not external peer review or complete Lean formalization. Universal parity minimum is elementary; sharp populations and ordinary measure/clock laws retain explicit analytic source premises. Shared-block asymptotics use classical S-adic Subspace Theorem.",
+  "claims": [
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/EXACT_PARITY_RECORD_HORIZON.md",
+      "sha256": "21d3ab421eb4d10f26636290584c688e0161b97073582e97952478f2136aae35"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/BALANCED_RECORD_ROUTING.md",
+      "sha256": "d3147cb998db44e19d09821a85a376b5836fa215a52ee1c151e88f47913a9691"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/RARE_ODD_ASCENTS.md",
+      "sha256": "b286738cc715e2f9df2ad6425b9fad98667d503d81489dda8a14ce4219b5c7f2"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/REPEATED_BLOCK_DRAWDOWN.md",
+      "sha256": "a2e965375dfe7cc5455b170ff7197d46907e112629bada8fe6949cad25176fab"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/cycles/INDEPENDENT_BLOCK_STOPS.md",
+      "sha256": "3daa78d584a2dc6de38b227499e49bd685b5a534d76eb4c2ec6470f889059359"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/MULTIPLICATIVE_CLOCK_RECTANGLES.md",
+      "sha256": "adbedfd6d54b278a018cc9a449a0fc97390db7d0acec37bcd0060d310247df2b"
+    },
+    {
+      "path": "research/astra-global-rigidity-20261128/mass/CRITICAL_CLOCK_MODULI.md",
+      "sha256": "c6145be0fca9258d03c495df209dfc1ab845aeb0b78023863eeae4d5aab6de46"
+    }
+  ],
+  "lean": {
+    "success": true,
+    "public_roots": 151,
+    "modules": 26
+  },
+  "finite": {
+    "success": true,
+    "controls": 48,
+    "modes": [
+      "normal",
+      "optimized"
+    ]
+  },
+  "remaining_global_obstructions": [
+    "all-profile denominator-one cycle exceptions with growing complexity",
+    "independent rare-gate occupation upper",
+    "ordinary escape-energy/clock-discrepancy upper endpoint",
+    "correlated native near-product concentration"
+  ]
+}

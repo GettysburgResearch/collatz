@@ -2,6 +2,8 @@
 
 **Source-qualified written deduction.** The proof retains the supplied certified-stage counts, tagged-source transport, natural first-passage measures and canonical normalizations. Their analytic and formal dependencies were read at the cited sources; those external developments were not rebuilt in this pass.
 
+The checkpoint12 concurrent refresh also credits PR212's complete [raw landing moment](https://github.com/GettysburgResearch/collatz/blob/e55fb7cac646013f143b563014ae97b105bc7547/research/astra-global-20261128/escape/RAW_LANDING_MOMENTS.md) and [all-scale fibre-density](https://github.com/GettysburgResearch/collatz/blob/e55fb7cac646013f143b563014ae97b105bc7547/research/astra-global-20261128/escape/ALL_SCALE_FIBRE_DENSITY.md) results. Their overlapping untrimmed conclusions and sharper small-order logarithmic rate are compared explicitly in the [companion moment note](UNTRIMMED_LOG_MOMENTS_AND_CLOCKS.md).
+
 For a positive odd unit $y$, let $B_y(n)$ be the sum of $\log(1+1/(3v))$ over odd departures strictly before the first visit to $y$, on the true odd predecessor basin of $y$. Let $\lambda_y$ be its **unnormalized** relative natural source measure, of total mass $d(y)$. Leading even halvings do not change the mark, so the all-positive source normalization agrees. At a periodic target take its first hit. The existence of these measures is the original first-passage input. Put $g=1-H_2(\log_3 2)+1/351$, with $H_2$ binary entropy in bits, as in Weaver 102/v1.
 
 For every $0<c<g$ there is $C_c<\infty$ such that

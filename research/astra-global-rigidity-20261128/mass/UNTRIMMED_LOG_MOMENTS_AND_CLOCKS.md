@@ -2,6 +2,8 @@
 
 **Source-qualified written deduction.** This extends the cited first-passage and certified-stage inputs. The strict incoming mass used in the limitation example is the previously pinned ordinary no-return floor. No whole analytic statement in this note has been formalized.
 
+**Concurrent-source credit added at checkpoint12.** PR212's [all-scale fibre-density theorem](https://github.com/GettysburgResearch/collatz/blob/e55fb7cac646013f143b563014ae97b105bc7547/research/astra-global-20261128/escape/ALL_SCALE_FIBRE_DENSITY.md), using its complete first-landing law, and PR215's [untrimmed Renyi-energy theorem](https://github.com/GettysburgResearch/collatz/blob/5845a208956bce43b80cf6b4adbadb849d35c15d/research/astra-nine-hour-20261128/escape/phase7/UNTRIMMED_RENYI_ENERGY.md) obtain overlapping full-measure moment conclusions. In their range `1<p<1+g`, they identify the sharper logarithmic order `(log T)^((p−1)/2)`. The result below retains the somewhat larger range `1<p<1/(1−g)` with an unspecified polynomial logarithmic exponent. No unique priority is claimed for the shared extension to the entire correction measure. Root read both complete pinned notes.
+
 Use $g$, $\lambda_y$, the complete escaping log-mark law $\Lambda$, and the first-uncertified rank decomposition from the [all-interval power estimate](UNTRIMMED_FIRST_HIT_MARK.md). In $\Lambda$ each component may still be translated independently. For either original unnormalized measure $\nu$ and all grids of mesh $r=1/T$, put $m_I=\nu(I)$. Uniformly in the target height or component translations, for
 \[
          1<p<1/(1-g)

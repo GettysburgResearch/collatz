@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-finite-paired-control/v1",
+  "checked_utc": "2026-11-28T04:40:37.249138+00:00",
+  "source": "research/astra-global-rigidity-20261128/cycles/check_parity_records.py",
+  "source_sha256": "67e5da099c2515bfad911fd51a90b90329c6b7a9ff9f2c72b0b5a30d147608c1",
+  "success": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "stdout": "{\n  \"ordinary\": {\n    \"globally_nonnegative_sources\": 858,\n    \"largest_first_minimum_clock_and_source\": [\n      59,\n      6735\n    ],\n    \"physical_starts\": 8192,\n    \"physical_strict_records\": 34973,\n    \"strictly_positive_after_start\": 411,\n    \"transcript_sha256\": \"d6f3e5ec38950127690f712038f0358df75c84eb6c2ead50c6d46dc032c70b15\",\n    \"true_steps_to_first_one\": 452045\n  },\n  \"scope\": \"Finite exhaustive correction optima and direct positive trajectory controls.\",\n  \"words\": {\n    \"all_prefix_words\": 65535,\n    \"max_word_length\": 15,\n    \"strict_length_grade_maxima\": 64,\n    \"strict_records\": 7060,\n    \"weak_length_grade_maxima\": 72,\n    \"weak_records\": 13495\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "stdout": "{\n  \"ordinary\": {\n    \"globally_nonnegative_sources\": 858,\n    \"largest_first_minimum_clock_and_source\": [\n      59,\n      6735\n    ],\n    \"physical_starts\": 8192,\n    \"physical_strict_records\": 34973,\n    \"strictly_positive_after_start\": 411,\n    \"transcript_sha256\": \"d6f3e5ec38950127690f712038f0358df75c84eb6c2ead50c6d46dc032c70b15\",\n    \"true_steps_to_first_one\": 452045\n  },\n  \"scope\": \"Finite exhaustive correction optima and direct positive trajectory controls.\",\n  \"words\": {\n    \"all_prefix_words\": 65535,\n    \"max_word_length\": 15,\n    \"strict_length_grade_maxima\": 64,\n    \"strict_records\": 7060,\n    \"weak_length_grade_maxima\": 72,\n    \"weak_records\": 13495\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}
