@@ -1,0 +1,68 @@
+{
+  "scope": "Closing receipt-source consistency and actual root finite replay; not a new Lean compilation or proof of asymptotics",
+  "core_lean_receipt": "ALL_LOCAL_LEAN.json",
+  "core_modules": [
+    {
+      "module": "ParityTail",
+      "path": "research/astra-full-proof-20261128/parity/ParityTail.lean",
+      "source_sha256": "b11dc7cda3492885cc1204d09af415842a98fe45c96cfd38a60bad68f4dfd81b",
+      "printed_roots": 3
+    },
+    {
+      "module": "ClosureConsumer",
+      "path": "research/astra-full-proof-20261128/ClosureConsumer.lean",
+      "source_sha256": "3d25bf9bd15ffe743093b2abe020e1833b8af0b2a177e9b137bf1cca50324be8",
+      "printed_roots": 3
+    },
+    {
+      "module": "ExternalClaimChecks",
+      "path": "research/astra-full-proof-20261128/arithmetic/ExternalClaimChecks.lean",
+      "source_sha256": "169213bbe5607334b901f8d5e0ad34992e7a2f1826b2c6adae9b67eb367b0e2c",
+      "printed_roots": 3
+    },
+    {
+      "module": "CountedDeadline",
+      "path": "research/astra-full-proof-20261128/CountedDeadline.lean",
+      "source_sha256": "4bf278cb7e2ee337136104aa4bcbdb96a90224dee97e969e42dfb79c75fe7a4a",
+      "printed_roots": 2
+    },
+    {
+      "module": "Resonance",
+      "path": "research/astra-full-proof-20261128/descent/Resonance.lean",
+      "source_sha256": "3e3f9b0701c71a0462ede32bb53ee652c7c51cd1cef4c757310633125bce47fb",
+      "printed_roots": 5
+    },
+    {
+      "module": "SignedFloor",
+      "path": "research/astra-full-proof-20261128/descent/SignedFloor.lean",
+      "source_sha256": "567348e957684943316e38eedd085d41d7308792fcedb22a817da01cb17af7d7",
+      "printed_roots": 2
+    },
+    {
+      "module": "EndpointFlux",
+      "path": "research/astra-full-proof-20261128/descent/EndpointFlux.lean",
+      "source_sha256": "7ec4797b8a2a0ceea8f51e5d07c5f13f2b2b8daea2847e17ed6d54c270ded323",
+      "printed_roots": 3
+    },
+    {
+      "module": "RationalControl",
+      "path": "research/astra-full-proof-20261128/parity/RationalControl.lean",
+      "source_sha256": "cdb1ccb8cd2e01534e6ba3ff6dab8696afb4da45c7b61bb40d64a8870b56f5c1",
+      "printed_roots": 3
+    }
+  ],
+  "core_printed_roots": 24,
+  "separate_agent_local_module": {
+    "name": "SignedDeathClock",
+    "source_sha256": "37cb67f379c71da589dbdb586743883ba17aac4747e760895e7e5ca1eeec6bd1",
+    "printed_roots": 5,
+    "receipt": "research/astra-full-proof-20261128/mass/signed_death_lean.json"
+  },
+  "root_replay": {
+    "command": "python -X utf8 -B research/astra-full-proof-20261128/descent/check_survival_ladder.py",
+    "source_sha256": "6a82ea03997ca6767b5b586417f353fdd0aa30b0249cd1b1a3b9d6b1088a9737",
+    "exit_code": 0,
+    "stdout": "104 exact rational rung comparisons passed across 4552 occupied word instances\n",
+    "coverage": "Finite exact denominator rungs, floor and first-repeat marks, inverse-integrality depth, fixed-word prefix-floor cutoff"
+  }
+}

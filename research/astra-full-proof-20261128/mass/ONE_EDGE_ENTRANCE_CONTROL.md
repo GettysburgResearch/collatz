@@ -1,0 +1,36 @@
+# One departing edge changes the entrance comparison
+
+There are arbitrarily large positive targets $b$ coprime to 3 whose orbits reach 1 and whose full shortcut predecessor cones $A_b=\{n:\exists j\ge0,\ T^j(n)=b\}$ satisfy all three estimates below, with absolute constants and any fixed $0<\theta<0.05$.
+
+1. The least element of $A_b$ is $b$. Its indicator obeys $\mathbf1_{A_b}(n)=\mathbf1_{A_b}(Tn)$ for every positive integer $n$ except $b$ itself.
+2. The ordinary-source mass of $A_b$ through $N$ is at least $c/b$ for every $N\ge Cb$, while $\#(A_b\cap[1,X])\ll_\theta Xb^{-\theta}$ uniformly in $X\ge b$.
+3. There is a fixed $\varepsilon>0$ and a choice $k=\lfloor b^\varepsilon\rfloor$, $N=2^k$, and $r=\lceil k/(2-\log_2 3)+M\sqrt{k\log b}\rceil$, with $M$ fixed and sufficiently large, for which $\sum_{y\in A_b}K^r f_N(y)=o(1/b)$ as $b\to\infty$ through these targets. Here $K^r f_N$ is the genuine integer entrance from the uniform rational source mesh of denominator $3^r$.
+
+**Existence of the targets.** In Weaver's Theorem 5, the set $E$ of starts with no smaller visitor to any state before first strict descent has density at least $0.483766$. In particular, no smaller positive source ever reaches any $b\in E$. The set $E$ is approximable in upper density of symmetric difference by periodic sets. To see the latter step, cut the original first-descent time at $T_0$ and the visitor deadline at $J$. The resulting fixed binary and ternary tests on finitely many affine words stabilize on residue classes, up to finitely many inputs. For fixed $T_0$, the physical missed-arrivals estimate (3) in the paper sends the visitor error to zero as $J\to\infty$. The tail of the finite first-descent time then vanishes as $T_0\to\infty$. This is the approximation in its proofs of the density formulas. Therefore $E'=E\cap\{3\nmid b\}$ is also approximable and has density at least $0.483766-1/3>0$. [Weaver, *Source floors and the least competing peak before the first Collatz descent*, §§8–9, v1](https://rstation.ai/problems/collatz/papers/177/v1)
+
+The basin of 1 has positive lower density by the positive-predecessor theorem. Duran's density-one adjacent coalescence implies its frequencies in every fixed residue class agree up to $o(1)$, with relative class normalization. For a fixed periodic set of density $p$, its intersection with the basin consequently occupies $p$ times the basin's mass through $X$, up to $o(1)$. Approximate $E'$ by such sets and pass to the limit. The intersection contains a positive lower density of starts. Take its arbitrarily large $b$. Their future reaches 1, so $b>2$ is nonperiodic. Ancestors are closed under inverse steps, and every forward step from $A_b$ stays in $A_b$ until the departure from $b$. This proves assertion 1. [Duran, adjacent coalescence](https://doi.org/10.5281/zenodo.23003524) · [Mazur, positive predecessor density](https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html)
+
+**Cone sizes.** Choose the least $e>0$ allowing $u=(2^e b-1)/3$ to be integral. If it is divisible by 3 replace $e$ by $e+2$, so that $u$ is replaced by $4u+1$. Now $e\le4$, $u$ is an odd unit, $u<6b$, and after $e$ shortcut steps $u$ reaches $b$. All predecessors of this odd target are therefore in $A_b$. The external reciprocal predecessor count at linear source onset proves the lower floor in assertion 2. [Weaver, *First-landing bounds and canonical inverse laws*, Theorem 14 and §18](https://rstation.ai/problems/collatz/papers/12)
+
+Put $R=\lfloor b/4\rfloor$. Every odd $n\in A_b$ has all its shortcut states at least $b$ until first reaching $b$. Its first accelerated odd landing at or below $R$ is thus a *single fixed label* shared by all such $n$, determined by the future from $b$. This remains valid for even $b$, which an accelerated step can skip on the way to that same label. The uniform first-landing atom bound gives $O_\theta(Yb^{-\theta})$ such odd sources in each octave $[Y,2Y)$ with $Y\ge b/2$. Smaller octaves have no members apart from a possible single endpoint, removable with half-open intervals. Summing the octaves proves the odd cumulative bound. An even ancestor either reaches $b$ during its initial halvings, belonging to the single column $2^j b$, or its odd part also belongs to $A_b$. Summing the odd bound at $X/2^j$ proves the stated all-source bound. The column contributes $O(1+\log(X/b))\ll X/b$. [Weaver, *Power bounds for first Collatz landings and moments of ancestor labels*, Theorem 1, v1](https://rstation.ai/problems/collatz/papers/102/v1)
+
+**Mesh mass.** Apply (2) of [the rational entrance bound](RATIONAL_ENTRANCE_KERNEL.md) with $2-\theta<\beta<2$. Its first contribution is $O(k^L b^{1-\beta-\theta})$. Take $\varepsilon L<\beta+\theta-2$. The other contribution is $O(u^{-1}e^{-cM^2\log b})$, where $u^{-1}=O(\sqrt{k/\log b})$. Increase $M$ by a fixed amount to make this $o(1/b)$ as well. This proves assertion 3.
+
+**The single-edge contribution.** Write $w_d=K^d f_N$, $P_d(F)=\sum_y w_d(y)F(y)$, and $S(x)=(3\operatorname{oddpart}(x)+1)/2$, the next odd departure after initial halvings. Splitting $x$ into doubling columns gives for every bounded mark $F$ on the positive integers
+
+$$
+P_{d-1}(F)-P_d(F)=\sum_y(3\mathbf1_{y\equiv2\ (3)}-1)w_d(y)F(y)
++\sum_x w_{d-1}(x)[F(x)-F(Sx)].
+$$
+
+Indeed $3w_d((3x+1)/2)=\sum_{j\ge0}w_{d-1}(2^jx)$ for each odd $x$. For $F=\mathbf1_{A_b}$ the bracket in the second sum is one precisely at $x=2^jb$, $j\ge0$. These are exactly the initial halving runs that reach the unique departing edge before the entrance at $S(x)$. For a whole component the bracket vanishes everywhere.
+
+The summed single-edge contribution has size at least a constant times $1/b$ already on the single ordinate $b$. With $k,r$ as in assertion 3 and $\varepsilon<1/2$,
+
+$$
+\sum_{0\le d<r} w_d(b)\ \ge\ \frac{1-o(1)}{8b}. \tag{1}
+$$
+
+Take independent $E_i$ with $\Pr(E_i=e)=2^{-e}$ for $e\ge1$. Put $Y_0=N$, $B_0=0$, $Y_i=3\,2^{-E_i}Y_{i-1}$ and $B_i=3\,2^{-E_i}B_{i-1}+1/2$. Expanding the actual real affine maps gives $w_d(b)=\mathbb E[Y_d^{-1}\mathbf1_{B_d<b\le B_d+Y_d}]$. Stop at the first $\sigma$ with $Y_\sigma\le4b$. Since $\log_2Y_{r-1}$ has mean $k-(2-\log_23)(r-1)$ and variance $2(r-1)$, Chebyshev's inequality gives $\Pr(\sigma<r)=1-o(1)$. On every crossing, the event that its geometric digit takes the least value permitting the crossing has conditional probability $1/2$ by memorylessness. Then $2b<Y_\sigma\le4b$. The square-root moment recursion yields $\sup_d\mathbb E\sqrt{B_d}<\infty$, since $\mathbb E\sqrt{3\,2^{-E_i}}=\sqrt3/(2^{3/2}-1)<1$. Thus $\Pr(\max_{0\le d<r}B_d\ge b)\ll k/\sqrt b=o(1)$. The interval $(B_\sigma,B_\sigma+Y_\sigma]$ on these events contains $b$ and has inverse length at least $1/(4b)$, proving (1).
+
+The lower and upper probabilities concern different, genuine positive source populations of the same Collatz map. They establish that reciprocal-scale mass fails to transfer for inverse-closed cones even when the mark is forward invariant at every integer except one. The displayed charge identifies where that exception enters the transfer equation. This is a source-qualified written deduction and has no local Lean certification.

@@ -65,4 +65,24 @@ $$
 
 Together with (3) this proves (2).
 
-If a set $B$ of bad positive integers has least element $a$ and satisfies $\#(B\cap[1,X])\le C_\theta X a^{-\theta}$ for every $X\ge a$, partial summation gives $\sum_{y\in B}(1+y)^{-\beta}\ll a^{1-\beta-\theta}$. Summing the second term of (2) over all integers costs $O(1/u)$. Thus at $r-r_*\gg\sqrt{k\log a}$, with an arbitrarily large enough constant and $\beta>2-\theta$, this rational entrance population can be much smaller than $1/a$ while polynomial losses in $k$ are retained explicitly. The uniform fixed-barrier sparsity bound is a separate written input. At $r=0$ the sampled sources are the original positive integers. Transferring their bad mass through the critical denominator levels to the population bounded in (2) remains open.
+If a set $B$ of bad positive integers has least element $a$ and satisfies $\#(B\cap[1,X])\le C_\theta X a^{-\theta}$ for every $X\ge a$, partial summation gives $\sum_{y\in B}(1+y)^{-\beta}\ll a^{1-\beta-\theta}$. Summing the second term of (2) over all integers costs $O(1/u)$. Thus at $r-r_*\gg\sqrt{k\log a}$, with an arbitrarily large enough constant and $\beta>2-\theta$, this rational entrance population can be much smaller than $1/a$ while polynomial losses in $k$ are retained explicitly. The uniform fixed-barrier bound for the complete set avoiding 1, for example with $0<\theta<0.05$, is an externally reported written input. Every bad source stays at least $a$. The source theorem and this assembly were not rebuilt in Lean. [Wren, *Collatz orbits above a fixed barrier*, Theorem 4](https://rstation.ai/problems/collatz/papers/55)
+
+At $r=0$ the sampled sources are the original positive integers. Transferring their bad mass through the critical denominator levels to the population bounded in (2) remains open.
+
+## Affine offsets in the cumulative scalar potential
+
+For any eligible test $V$, any odd positive $x$, and $z=(3x+1)/2$, the kernel itself gives
+
+$$
+3V(z)-\sum_{j\ge0}V(2^jx)=3(I-K)V(z). \tag{4}
+$$
+
+Summing the left side over the odd roots of a whole component gives its signed starting-trit sum, when absolutely convergent. Indeed its doubling columns are disjoint and its elements congruent to $2\bmod3$ are precisely the $z$ in (4). In particular, for $V=\sum_{r=L}^R K^r f_N$, the bracket on each root is *exactly* $3(K^L f_N-K^{R+1}f_N)(z)$. A genuinely $K$-harmonic scalar potential gives zero on each individual column. A bare $1/y$ test would instead give $-2/[x(3x+1)]$ on the same column; harmonic summation at a source cutoff additionally retains the macroscopic upper boundary.
+
+The affine correction is already forced in the first asymptotic terms at large arguments. With natural logarithms, $K(y^{-p})=\rho_p(y-1/2)^{-p}$ for $y>1/2$. Thus $K(y^{-1})-y^{-1}=1/(2y^2)+O(y^{-3})$, while $\rho_2=1$ and $\rho'_2=\log3-4\log2/3>0$. Differentiating the power formula at $p=2$ gives
+
+$$
+(I-K)\left(\frac{\log y}{y^2}\right)=\frac{\rho'_2}{y^2}+O\!\left(\frac{\log y}{y^3}\right).
+$$
+
+Consequently the test $1/y+(2\rho'_2)^{-1}y^{-2}\log y$ already cancels the apparent signed order-$y^{-2}$ loss. This expansion is a calculation on the displayed test functions. Equation (4) gives the exact cancellation for a harmonic potential without an asymptotic assumption. A one-sided normalized sign estimate must still control the source boundary, the terminal boundary, or an additional native clock mark.

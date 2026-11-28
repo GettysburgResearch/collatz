@@ -2,6 +2,15 @@
 
 **Status: OPEN research, 28 November 2026. No proof of Collatz is claimed.**
 
+**Start with the [final assessment](FINAL_ASSESSMENT.md).** It gives the
+strongest deductions, the precise remaining full-proof inequalities, and five
+ranked directions for a new dispatch. The later work proves fixed-floor
+absorption for the actual rational mesh, exhibits an ordinary control against
+generic transfer, and localizes a hypothetical escaping future minimum's
+signed mass to intermediate interval widths. The
+[whole-source stationary trace](ACTUAL_SOURCE_STATIONARY_TRACE.md) is an
+alternative exact representation of the main sufficient statistic.
+
 **Current focus:** the [signed first-moment consumer](descent/FIRST_MOMENT.md)
 reduces full convergence to one upper bound on the original positive integer
 interval. At `M = floor(kappa*k)` and an even `g ~ k^(3/5)`, it suffices that
