@@ -1,10 +1,43 @@
 # Global rigidity and the critical ordinary clock
 
-**Collatz remains open.** This is the fifteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
+**Collatz remains open.** This is the sixteenth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
 
 We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes one to `Q_k`; the clock counts shortcut steps. The odd map removes the complete power of two in `3x+1`. These clocks are distinguished throughout.
 
-## New at checkpoint 15
+## New at checkpoint 16
+
+**A finite native deadline separates escaping trajectories from every periodic basin.** Let `D=ln(4/3)`, `μ=2/D`, `λ=ln3/D`, and let `S_a` be the shortcut date of the `a`-th subsequent true gate. The [deadline theorem](mass/NATIVE_GATE_ESCAPE_DEADLINE.md) uses
+
+\[
+ H(X,a)=\left\lceil\mu\log(2X)+\lambda a+70000\right\rceil.
+\]
+
+Every individual escaping gate in `[X,2X)` passes this deadline for every `a`. This implication is elementary: the exact native height identity, the gate cocycle and a uniform bound for the reciprocal sum on a simple path supply the explicit additive constant. The full experiment, including all future gate-membership lookaheads, uses `O(log X+a)` shortcuts.
+
+With the retained ordinary-source inputs, if `d∞` is the ordinary density of escaping components and `ℓ_X=√(2log X/D)`, then
+
+\[
+ \Pr(S_a\le H(X,a))\longrightarrow
+ d_\infty+(1-d_\infty)e^{-t^2/2}
+ \quad(a/\ell_X\to t),
+ \qquad d_\infty\quad(a/\ell_X\to\infty).
+\]
+
+There is no upper restriction on `a` in the latter regime. The difference from checkpoint 15's eventual-return probability measures nontrivial-cycle mass separately. The argument retains the joint future-floor and first-hit endpoint mark when conditioning on the rare gate. Each nontrivial cycle has a strictly slower asymptotic gate rate than `1/λ`. Countable component exhaustion then handles all cycles without a uniform cycle-period bound. A vanishing upper bound for the deadline event would exclude every escape under component positivity; that upper bound is still missing. Root and the ordinary-source lane independently reconstructed the argument.
+
+**Every product order now has a two-sided arithmetic obstruction.** On any hypothetical unbounded-minimum family of fixed-length native product collisions, the [new theorem](cycles/TWO_SIDED_PRODUCT_FACES.md) constructs a Laurent polynomial from the squarefree collision equation, its coefficient denominators and discriminant. Both the maximum and minimum exponent faces in the normalized native-clock direction must contain at least two monomials. A singleton at either end gives a contradiction.
+
+Consequently, at every fixed product order, a counterexample family must have an unbounded integer character of its valuation vector that grows sublinearly relative to the largest exponent. All orders are separated on arbitrary-rank families without such a slower character, including exact affine one-clock profiles. This is stronger than a bounded-order computation, but it does not remove the tied faces. The proof constructs finite algebraic root approximations through complex monodromy, transfers their finite polynomial identity to the real or dyadic place, and uses fixed algebraic forms in the rational Subspace Theorem. Dyadic integrality recovers a rational Laurent expression, whose positive real arc is impossible. Root and the machinery lane reconstructed every step. Varying number fields on a slow face are explicitly outside that application.
+
+**A complete-period pressure law for the rounded dyadic grid.** If the grid's pooled periodic population has size `P_K≥K^(ρ−o(1))`, the [pressure inequality](cycles/GRID_PERIOD_PRESSURE.md) confines its scaled rounding coefficient to an explicit symmetric interval. The forward varying dyadic alphabets have exactly the same integrated pressure as a three-letter alphabet. At full exponent `ρ=1`, the coefficient is exactly `1/[6(ln2)²]`. The classical two-logarithm lower bound supplies a positive unconditional population exponent and a strict improvement over the extreme-residual interval. The unrestricted sharp coefficient for sparse periodic sets remains open. PR215's exact grid geometry and PR213's earlier pooled-rank entropy are credited.
+
+**A broad fair-coin extension fails on genuine terminating sources.** The [elementary counterexample](mass/LOCAL_PARITY_BUDGET_OBSTRUCTION.md) uses the count of disagreements between parity digits two dates apart. Under independent fair digits this count is exactly binomial. Yet for every `κ>1`, at `κ log₂N` dates there are polynomially many actual sources in `(N/2,N]` whose lower-tail count exceeds the fair prediction by a fixed positive counting exponent. Both populations are polynomial. Two legal inverse children at each odd unit, followed by binary padding, give the cohort. This refutes a local-word-statistics strengthening of R6, while preserving the stated single-letter question. A [separate fixed-ray test](mass/FIXED_RAY_ENTROPY_ENVELOPE.md) shows that even fair upper bounds restricted to positive population exponents impose a specific tail-frequency cap; the cap remains above the frequency required for escape.
+
+**A precise tilted criterion reaches the classical extremal constant.** The [stopping-pressure theorem](mass/TILTED_REPRESENTATIVE_STOPPING_PRESSURE.md) changes the geometric gap law and reciprocal exponent together. A subexponential bound on one raw finite-quotient moment would give a convergent exponential stopping-time Dirichlet series, an explicit finite-cycle minimum bound, and a pointwise logarithmic native stopping bound. At the optimum tilt its coefficient is the Lagarias–Weiss value `41.677647…`. At either that tilt or the separately covered parameter `s=9/8`, the small-cycle bound also forces the known cycle. A complementary inverse-cost hypothesis would give the matching lower coefficient. Both new finite-quotient hypotheses remain open. The exact all-exponent moment identity and prior quadratic pressure classification are credited to Weaver176; the stochastic value itself is classical.
+
+Seven new finite Lean roots prove [native cycle power and grade inequalities](mass/NativeCycleGrade.lean), and [the two inverse branches with target uniqueness](mass/UnitInverseFork.lean). Exact controls cover whole periodic pools, two-place root truncations, actual inverse cohorts and the integer certificates excluding small additional cycles under the tilted premise. None of these finite roots imports the infinite conclusions as axioms.
+
+## Retained from checkpoint 15
 
 **The optimal denominator exponent has inverse-mismatch order.** For a primitive positive rational odd cycle of period `p`, complete reduced denominator `q`, and at most a fixed `s≥1` native mismatches at some proper rotation, the [sharper theorem](cycles/OPTIMAL_NATIVE_DENOMINATOR_RATE.md) proves
 
@@ -270,7 +303,7 @@ The number-theory track adds three different conclusions. [Every real bounded mu
 
 ## Lean source and current build status
 
-**Checkpoint 15: thirty modules and all 168 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint15/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Six new roots connect attained actual lifetime floors and strict gate jumps to a native cocycle, and prove the complete finite return height budget. Earlier successful and failed development receipts remain preserved. Infinite Diophantine, approximation, source-counting and probability limits are not formalized by these modules. All [54 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint15/finite.json) passed in normal and optimized modes with matching output.
+**Checkpoint 16: thirty-two modules and all 175 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint16/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Seven new roots prove native cycle power and grade inequalities, and two legal inverse branches with exact target uniqueness. The previous lifetime-floor, strict-gate cocycle and finite return-budget roots remain in the full audit. Earlier successful and failed development receipts remain preserved. Infinite Diophantine, approximation, source-counting and probability limits are not formalized by these modules. All [58 finite Python controls](../../reports/astra-global-rigidity-20261128/checkpoint16/finite.json) passed in normal and optimized modes with matching output.
 
 The [first timeout](../../reports/astra-global-rigidity-20261128/checkpoint1/lean-timeout.json) remains as historical evidence. The old dependency-heavy `CriticalCount.lean` was replaced by `mass/CriticalCountStandalone.lean`, using the same actual-map recurrences with a small dependency closure. It proves signed count additivity, the alternating count after a true visit to one, and a uniform rational drift after a true visit to a fixed nonconvergent anchor.
 

@@ -1,0 +1,11 @@
+# Independent check of the native return deadline
+
+Reviewed `NATIVE_GATE_ESCAPE_DEADLINE.md` at SHA-256 `bc093d063c6454615a8f88ec83cd9aca69a65dccc80e678fa5364f21b76b71ec`. The finite deadline, the limiting probability in both regimes, and the fate separation follow from the stated map and the credited physical sampling inputs.
+
+* The native affine product yields $s=(2/D)\log(n/y)+(\log3/D)b_s+(2/D)E_s$. The strict-future floor rises by one on each gate and the endpoints have zero deficit. For a simple completed path this gives the claimed upper for every index $a$.
+* The explicit reciprocal packing reserves the last $m$ departures when charging an $m$-letter low visit. Hence the charged lower state is also among the distinct departures. At most $m(F+1)$ state/offset pairs remain. The dyadic Bernoulli bound, the deterministic threshold at $m\ge16$, and $\sum m2^{-.01m}<25600$ all suffice for $E_s<10000$. The prefactor $2/D<7$ permits the displayed additive 70000. The endpoint-lookahead indices fit one extended trajectory of length $O(\log(2X)+a)$.
+* For first visit to a fixed cycle target $c$, the true floor and terminal centered surplus use one Brownian path in the incoming limit. The joint tests are carried through the initial rare ballot conditioning by the sharp sampling proof. The fixed offset $g(c)$ and the indexing of an initial or terminal gate cost at most a fixed constant. This yields the claimed Rayleigh limit on each fixed cycle component.
+* A nontrivial cycle with odd grade $p$ and native period $s$ has $3^p<2^s\le(10/3)^p$. Its successive gate delays per occurrence equal $s/(2p-s)>\log3/D$ asymptotically with bounded periodic error. Formula (5) and its two-sided event inclusion follow. The cycle of one has no further gates once reached. The continuity of the Rayleigh law handles finite scaled deadlines and tightness handles an unbounded scale.
+* Escape passes deterministically. Total-variation approximation of the countable true component labels permits separate fixed-cycle limits before exhausting all periodic components. Neither a uniform bound on cycle size nor a uniform first-hit limit across moving targets is used.
+
+The supercritical success limit is the ordinary total density of escaping starts. An independent upper bound tending to zero for this experiment remains open.
