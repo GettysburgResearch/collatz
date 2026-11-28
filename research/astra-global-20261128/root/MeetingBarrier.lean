@@ -1,0 +1,150 @@
+import CofactorDescent
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+
+/-! A uniform finite obstruction to meetings of multiplicative dilates.
+All clocks and affine coefficients belong to the actual shortcut paths.
+No logarithmic form or statistical input is assumed. -/
+set_option autoImplicit false
+set_option warningAsError true
+namespace Collatz.MeetingBarrier
+
+open CoreBranching Collatz.CofactorDescent
+
+def offset : ℕ → ℕ → ℕ
+  | 0, _ => 0
+  | r + 1, x => 3 ^ odds r (step x) * (x % 2) + 2 * offset r (step x)
+
+theorem one_step (x : ℕ) : 2 * step x = 3 ^ (x % 2) * x + x % 2 := by
+  have hm : x % 2 < 2 := Nat.mod_lt x (by decide)
+  interval_cases h : x % 2
+  · simp only [step, h, ite_true, pow_zero, one_mul, add_zero]
+    omega
+  · simp only [step, h, pow_one]
+    split <;> omega
+
+theorem odds_le (r x : ℕ) : odds r x ≤ r := by
+  induction r generalizing x with
+  | zero => simp [odds]
+  | succ r ih =>
+    have hm : x % 2 < 2 := Nat.mod_lt x (by decide)
+    have ht := ih (step x)
+    simp only [odds]
+    omega
+
+theorem affine_identity (r x : ℕ) :
+    2 ^ r * run r x = 3 ^ odds r x * x + offset r x := by
+  induction r generalizing x with
+  | zero => simp [run, odds, offset]
+  | succ r ih =>
+    calc
+      _ = 2 * (2 ^ r * run r (step x)) := by simp only [run, pow_succ]; ring
+      _ = 2 * (3 ^ odds r (step x) * step x + offset r (step x)) := by rw [ih]
+      _ = 3 ^ odds r (step x) * (2 * step x) + 2 * offset r (step x) := by ring
+      _ = 3 ^ odds r (step x) * (3 ^ (x % 2) * x + x % 2) +
+          2 * offset r (step x) := by rw [one_step]
+      _ = _ := by simp only [odds, offset, pow_add]; ring
+
+theorem offset_budget (r x : ℕ) : offset r x + 2 ^ r ≤ 3 ^ r := by
+  induction r generalizing x with
+  | zero => simp [offset]
+  | succ r ih =>
+    have hr := ih (step x)
+    have hp : 3 ^ odds r (step x) ≤ (3 : ℕ) ^ r :=
+      Nat.pow_le_pow_right (by decide) (odds_le r (step x))
+    have hm : x % 2 ≤ 1 := by omega
+    have hb : 3 ^ odds r (step x) * (x % 2) ≤ (3 : ℕ) ^ r := by
+      calc
+        _ ≤ 3 ^ odds r (step x) * 1 := Nat.mul_le_mul_left _ hm
+        _ ≤ _ := by simpa using hp
+    simp only [offset, pow_succ]
+    omega
+
+private theorem coefficient_unique {n a b e f w : ℕ}
+    (hn : w ≤ n) (he : e < w) (hf : f < w)
+    (h : a * n + e = b * n + f) : a = b := by
+  by_contra hne
+  rcases lt_or_gt_of_ne hne with hab | hab
+  · have hmul := Nat.mul_le_mul_right n (show a + 1 ≤ b by omega)
+    nlinarith
+  · have hmul := Nat.mul_le_mul_right n (show b + 1 ≤ a by omega)
+    nlinarith
+
+private theorem ordered_meeting {A B n s u : ℕ} (hu : u ≤ s)
+    (hn : 3 ^ s ≤ n) (meet : run s (A * n) = run u (B * n)) :
+    A * 3 ^ odds s (A * n) * 2 ^ u = B * 3 ^ odds u (B * n) * 2 ^ s := by
+  have hs := affine_identity s (A * n)
+  have ht := affine_identity u (B * n)
+  have hp : (2 : ℕ) ^ (s - u) * 2 ^ u = 2 ^ s := by
+    rw [← pow_add, Nat.sub_add_cancel hu]
+  have hp3 : (3 : ℕ) ^ (s - u) * 3 ^ u = 3 ^ s := by
+    rw [← pow_add, Nat.sub_add_cancel hu]
+  have scaled := congrArg (fun z : ℕ => 2 ^ (s - u) * z) ht
+  rw [← Nat.mul_assoc, hp, ← meet, hs] at scaled
+  have balance : (3 ^ odds s (A * n) * A) * n + offset s (A * n) =
+      (2 ^ (s - u) * 3 ^ odds u (B * n) * B) * n +
+        2 ^ (s - u) * offset u (B * n) := by
+    calc
+      _ = 3 ^ odds s (A * n) * (A * n) + offset s (A * n) := by ring
+      _ = 2 ^ (s - u) * (3 ^ odds u (B * n) * (B * n) + offset u (B * n)) := scaled
+      _ = _ := by ring
+  have he : offset s (A * n) < 3 ^ s := by
+    have hb := offset_budget s (A * n)
+    have hz : 0 < (2 : ℕ) ^ s := pow_pos (by decide) s
+    omega
+  have hf : 2 ^ (s - u) * offset u (B * n) < 3 ^ s := by
+    have hb := Nat.mul_le_mul_left ((2 : ℕ) ^ (s - u)) (offset_budget u (B * n))
+    have hm := Nat.mul_le_mul_right ((3 : ℕ) ^ u)
+      (Nat.pow_le_pow_left (show (2 : ℕ) ≤ 3 by decide) (s - u))
+    rw [hp3] at hm
+    rw [Nat.mul_add, hp] at hb
+    have hz : 0 < (2 : ℕ) ^ s := pow_pos (by decide) s
+    omega
+  have coeff := coefficient_unique hn he hf balance
+  have hc := congrArg (fun z : ℕ => z * 2 ^ u) coeff
+  calc
+    _ = (3 ^ odds s (A * n) * A) * 2 ^ u := by ring
+    _ = (2 ^ (s - u) * 3 ^ odds u (B * n) * B) * 2 ^ u := hc
+    _ = B * 3 ^ odds u (B * n) * (2 ^ (s - u) * 2 ^ u) := by ring
+    _ = _ := by rw [hp]
+
+/-- A meeting while the common source factor is at least the complete
+ternary clock budget forces an exact relation in the actual native powers. -/
+theorem meeting_power_relation {A B n s u : ℕ}
+    (hn : 3 ^ max s u ≤ n) (meet : run s (A * n) = run u (B * n)) :
+    A * 3 ^ odds s (A * n) * 2 ^ u = B * 3 ^ odds u (B * n) * 2 ^ s := by
+  rcases le_total u s with hu | hs
+  · apply ordered_meeting hu
+    · simpa [max_eq_left hu] using hn
+    · exact meet
+  · symm
+    apply ordered_meeting hs
+    · simpa [max_eq_right hs] using hn
+    · exact meet.symm
+
+/-- A division-free expression that the multiplier ratio belongs to the
+group generated by two and three. For positive multipliers this is exact. -/
+def TwoThreeRelated (A B : ℕ) : Prop :=
+  ∃ a b c d : ℕ, A * 2 ^ a * 3 ^ b = B * 2 ^ c * 3 ^ d
+
+theorem meeting_source_bound {A B n s u : ℕ}
+    (unrelated : ¬ TwoThreeRelated A B)
+    (meet : run s (A * n) = run u (B * n)) : n < 3 ^ max s u := by
+  by_contra hn
+  have h := meeting_power_relation (show 3 ^ max s u ≤ n by omega) meet
+  apply unrelated
+  refine ⟨u, odds s (A * n), s, odds u (B * n), ?_⟩
+  simpa only [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm] using h
+
+/-- The complete two trajectory prefixes are disjoint. Both comparison
+dates vary independently; no claim about their eventual fates is needed. -/
+theorem disjoint_prefixes {A B n h : ℕ} (unrelated : ¬ TwoThreeRelated A B)
+    (hn : 3 ^ h ≤ n) :
+    ∀ s ≤ h, ∀ u ≤ h, run s (A * n) ≠ run u (B * n) := by
+  intro s hs u hu meet
+  have hb := meeting_source_bound unrelated meet
+  have hp : (3 : ℕ) ^ max s u ≤ 3 ^ h :=
+    Nat.pow_le_pow_right (by decide) (max_le hs hu)
+  omega
+
+end Collatz.MeetingBarrier

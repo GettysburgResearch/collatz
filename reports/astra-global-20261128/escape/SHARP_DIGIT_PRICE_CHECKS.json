@@ -1,0 +1,86 @@
+{
+  "prices": [
+    {
+      "decrements": 2,
+      "period": 3,
+      "price": "2/3",
+      "transient": 0,
+      "width": 3
+    },
+    {
+      "decrements": 7,
+      "period": 11,
+      "price": "7/11",
+      "transient": 0,
+      "width": 5
+    },
+    {
+      "decrements": 12,
+      "period": 19,
+      "price": "12/19",
+      "transient": 57,
+      "width": 7
+    },
+    {
+      "decrements": 171,
+      "period": 271,
+      "price": "171/271",
+      "transient": 477,
+      "width": 9
+    },
+    {
+      "decrements": 983,
+      "period": 1558,
+      "price": "983/1558",
+      "transient": 0,
+      "width": 11
+    }
+  ],
+  "width_seven": {
+    "both_parity_edges": 1458,
+    "cycle": [
+      246,
+      369,
+      553,
+      276,
+      414,
+      621,
+      310,
+      465,
+      697,
+      348,
+      522,
+      261,
+      391,
+      586,
+      293,
+      439,
+      658,
+      329,
+      493
+    ],
+    "minimum_mantissa": 243,
+    "sorted_dual_cuts": [
+      246,
+      261,
+      276,
+      293,
+      310,
+      329,
+      348,
+      369,
+      391,
+      414,
+      439,
+      465,
+      493,
+      522,
+      553,
+      586,
+      621,
+      658,
+      697
+    ],
+    "tight_edges": 1436
+  }
+}
