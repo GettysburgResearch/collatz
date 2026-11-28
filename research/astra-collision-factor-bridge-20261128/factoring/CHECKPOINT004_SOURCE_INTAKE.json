@@ -1,0 +1,21 @@
+{
+  "date_utc": "2026-11-28",
+  "repository": "gfreund123/factoring-in-p",
+  "pull_request": 365,
+  "head": "c9034e4b6a814f624ae38a976ff49ada333158d3",
+  "sources": [
+    {
+      "path": "research/astra-load-bearing-2026-11-28/transforms/notes/arbitrary-corank-fourier.md",
+      "blob_sha": "fff6d5706f87dbe36fc89c248fb12791796d6093",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/c9034e4b6a814f624ae38a976ff49ada333158d3/research/astra-load-bearing-2026-11-28/transforms/notes/arbitrary-corank-fourier.md",
+      "inspection": "Complete source manuscript read through GitHub connector; no external implementation or finite replay executed here.",
+      "relevant_scope": "Odd squarefree N, conductor N^4; exact prime-field cubic tensor transform of cost p^r times polynomial; endogenous uniform Hankel labels amortize corank in an exact joint sampler; fixed requested labels and growing primary depth are not included for free."
+    },
+    {
+      "path": "research/astra-load-bearing-2026-11-28/README.md",
+      "blob_sha": "4d287b999e52dcbe5924c81b889afd13ceac0d5f",
+      "url": "https://github.com/gfreund123/factoring-in-p/blob/c9034e4b6a814f624ae38a976ff49ada333158d3/research/astra-load-bearing-2026-11-28/README.md",
+      "inspection": "Complete index read. The indexed Pell-power Dedekind manuscript was not inspected and is not imported as an evaluated scalar."
+    }
+  ]
+}

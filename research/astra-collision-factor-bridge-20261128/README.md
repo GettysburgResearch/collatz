@@ -1,6 +1,6 @@
 # Three-hour proof pass: the median collision threshold and semiprimes
 
-**Collatz remains unresolved. The pass is active.** The requested interval is November 28, 2026, 08:52:20–11:52:20 UTC. This packet continues PR #214 at `504d29d399efa941a62006d1ea4635385ce6bb5f` and keeps its analytic and formal dependencies explicit.
+**Collatz remains unresolved. This is the final research checkpoint of the three-hour pass.** The requested interval is November 28, 2026, 08:52:20–11:52:20 UTC (10:52:20–13:52:20 in Jerusalem). Final publication and receipt verification conclude the interval. This packet continues PR #214 at `504d29d399efa941a62006d1ea4635385ce6bb5f` and keeps its analytic and formal dependencies explicit. Start with the [final pass report](PASS_REPORT.md).
 
 The goals are to force the actual median synchronous collision probability to its maximal value \(1/8\), and to identify whether the semiprime work in `gfreund123/factoring-in-p` supplies a missing arithmetic step. Arguments, failed routes, source pins and reviews are kept here rather than in long chat updates.
 
@@ -111,7 +111,11 @@ The [critically damped atomic-anchor theorem](arithmetic/CRITICAL_DAMPED_ANCHOR_
 
 The [predecessor dependency audit](PREDECESSOR_DEPENDENCY_AUDIT.md) pins and checks the original archives and all assembled source hashes. A compatibility probe did not reach the announced theorem roots; it is explicitly not a fresh verification of that external theorem.
 
-## Work in progress
+## Final additions and research lanes
+
+The [minimum-only critical-tail proof](collision/CRITICAL_TAIL_WITHOUT_PACKING.md) retains the sufficient one-quantile criterion while removing the orbit-packing, full height-process, phase, and cycle-classification inputs. Its finite postminimum product inequality has four freshly compiled and separately audited roots in [MinimumProduct.lean](arithmetic/MinimumProduct.lean). The logarithmic and probability deductions remain written and use the specified joint minimum/clock law. The complete pass has **74 distinct audited roots across twelve modules**, with all current sources and completed logs rebound by the [final checker](check_final_lean_bindings.py).
+
+The [final factoring Fourier audit](factoring/CHECKPOINT004_FOURIER_IMPORT.md) inspects the actual arbitrary-corank evaluator and distinguishes its local squarefree precision from the growing ternary conductor. The [selected-grade ledger](collision/SELECTED_GRADE_ATTEMPT_LOG.md) records exact selector normalization and the inadequate identical-word contribution. The [near-fair tilt ledger](arithmetic/FINAL_TILT_ATTEMPT_LEDGER.md) preserves a transfer at the original rare-event scale, but leaves the ordinary exponential moment unevaluated. None supplies the missing lower bound.
 
 - `collision/`: direct attack on the \(1/8\) lower bound, exact boundary amplification and the distinction between a positive lower bound and the maximal one.
 - `factoring/`: source-level audit of the relevant factoring PRs, their reversible coverage constructions, and whether they can be implemented by actual Collatz mergers.
@@ -129,5 +133,6 @@ The separate PR #216, at `1917b07ae5cc8f5d27c79f34cc43a4bcf25efff8`, already sup
 | 4 | Actual primary-Cartier import; full-window logarithmic resolvent consumer; sparse conductor determinant and exact stationary rounding; native second-bit defect; Green-tail and atomic-majorant analyses | 23 additional freshly audited roots (65 total across ten modules); 544 exact coefficient checks in normal and optimized Python, independent general-matrix/full-fibre guards, and hash-bound mathematical reviews |
 | 5 | Uniform full-law stationary transfer and exact two-copy collision cell; one-copy critical negative-grade quantile sufficient for full convergence; critical atomic-anchor obstruction; newest factoring evaluator audit | Five additional audited rational roots (70 total across eleven modules); 130 joint-law and 650 complete two-copy native comparisons, 545,975 exact cell checks in both Python modes; independent source-qualified reviews |
 | 6 | Actual relative evaluation at moving precritical clocks; exact critical-window boundary; signed stationary consumer for concurrent PR218; factor-passage/affine-rectangle interfaces; finite failure of all-scale association | Full primary height proposition read; independent written reviews; two exact 100,000-source arithmetic methods agree in normal and optimized Python; 70 previously audited roots retained |
+| 7 | Minimum-only critical-tail gap, with no packing or cycle classification; native finite product kernel; final arbitrary-corank Fourier, selected-grade and tilt audits; consolidated final report | Four additional freshly compiled and separately audited roots (74 total across twelve modules); two independent written reviews of the simplified proof; all final source, runner, root and completed-log bindings rechecked; complete frozen repository integrity gate before publication |
 
 [Intake pins](INTAKE_PINS.json) record source versions and the exact starting heads. The [checkpoint 1 review](../../reports/astra-collision-factor-bridge-20261128/checkpoint01/REVIEW.md) states the review boundary. Repository integrity and finite Lean kernels do not certify imported analytic inputs or a full Collatz proof.

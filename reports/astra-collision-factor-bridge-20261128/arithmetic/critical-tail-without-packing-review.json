@@ -1,0 +1,29 @@
+{
+  "status": "pass_at_stated_source_qualified_scope",
+  "reviewed_utc": "2026-11-28T11:43:54.410044+00:00",
+  "reviewer": "arithmetic_proof_attack (independent lane)",
+  "target": "research/astra-collision-factor-bridge-20261128/collision/CRITICAL_TAIL_WITHOUT_PACKING.md",
+  "target_sha256": "1b8496ec2968f06fccd381725d2bb30973821f6b19564bb3c1deab557f1d8512",
+  "checks": [
+    "Every postminimum state is at least the supplied minimum, so the exact finite multiplier bound gives beta_m=log2/log(3+1/m). Bad minima are odd and at least3, so beta_m>=beta3>1/2.",
+    "Departed states through first attainment are distinct. Their correction is at most(1+log h)/3, requiring no global orbit-packing theorem.",
+    "The median floor error is bounded by delta1. Equation4 excludes every preminimum source from each fixed strictly negative grade tail for sufficiently largeX.",
+    "Splitting the grade at tau and dropping nonnegative log(X/n) and log m gives the literal sourcewise boundW>=c_X r_* Z_X-epsilon_X. The exact coefficient c_X is retained.",
+    "The event inclusion6 is deterministic and uniform over all positive n<=X; no parity distribution after the minimum is imposed.",
+    "On the known basin the genuine two-cycle gives equalityW=c_X Z_X+o_P(1), using only the finite correction and tight log(X/n).",
+    "The joint minimum/clock law and Gaussian continuity give the liminf/limsup bounds7; the result does not assert full tail-limit existence without the stronger cycle-mixture inputs.",
+    "Positive predecessors enter only when upgrading known-basin density1 to universal convergence.",
+    "Final Section5 correctly separates the four freshly audited integer roots from the written logarithmic, Gaussian and probability deductions."
+  ],
+  "formal_dependency": {
+    "source": "research/astra-collision-factor-bridge-20261128/arithmetic/MinimumProduct.lean",
+    "source_sha256": "e2874bd79b99bafef976cfbdaa20b7910ff51055c6ff7ff66abef19973da8f1a",
+    "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/minimum-product-lean.json",
+    "roots": 4,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "remaining_gap": "The matching critical one-copy relative lower bound remains unproved. This is a dependency reduction for its strict upper-gap consumer, not a Collatz proof."
+}

@@ -1,0 +1,479 @@
+{
+  "schema": "collatz-final-lean-source-bindings/v1",
+  "success": true,
+  "checked_utc": "2026-11-28T11:46:14.137361+00:00",
+  "checker_sha256": "2ecd01984be57e64153dca565612abd28148ac9089e7eecf3040e21113a9c8a3",
+  "modules": 12,
+  "distinct_public_roots": 74,
+  "records": [
+    {
+      "module": "CollisionThreshold",
+      "source": "research/astra-collision-factor-bridge-20261128/CollisionThreshold.lean",
+      "source_sha256": "dc5cb6697547896c061bad0459dc4e874ab2d64f923a565a59db7444fd52de64",
+      "runner": "research/astra-collision-factor-bridge-20261128/check_collision_threshold.py",
+      "current_runner_sha256": "d5dc361ebb5c6e2873e748e7821c2d74e8a27510992de49112b1c31a5da5daad",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision-threshold-lean.json",
+      "receipt_sha256": "293a1866d6f75461fe6a0684cda08a304e00c19cbacdd9390b98eb6ca3e3a23c",
+      "public_roots": [
+        "Collatz.CollisionThreshold.term_bound",
+        "Collatz.CollisionThreshold.summable_cycle_contributions",
+        "Collatz.CollisionThreshold.median_le_two_mass_bound",
+        "Collatz.CollisionThreshold.deficit_lower_bound",
+        "Collatz.CollisionThreshold.maximal_collision_forces_full_known_mass",
+        "Collatz.CollisionThreshold.near_maximal_collision_mass",
+        "Collatz.CollisionThreshold.full_known_mass_gives_maximal_collision",
+        "Collatz.CollisionThreshold.maximal_collision_iff_full_known_mass"
+      ],
+      "root_count": 8,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "CollisionThreshold",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "47898adf048d8d5fd1bbdaab1b9899ffeece6a63d2a2d7319572e2678b4d89ff",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "BoundaryEnergy",
+      "source": "research/astra-collision-factor-bridge-20261128/collision/BoundaryEnergy.lean",
+      "source_sha256": "8e84ddabc1a772821322359f63f036415b817f046c786e56a2edb816e6b528b5",
+      "runner": "research/astra-collision-factor-bridge-20261128/collision/check_boundary_energy.py",
+      "current_runner_sha256": "5457543d86a7912593ba16b12986472bc77dd3914e9ff9bb87eb1c2c9bb7753f",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision/boundary-energy-lean.json",
+      "receipt_sha256": "f5f430823e4eeba79fa060ad1f3389a15c8b9ff880b8bdeedb262e6d562f5886",
+      "public_roots": [
+        "Collatz.BoundaryEnergy.basin_label_doubles",
+        "Collatz.BoundaryEnergy.basin_label_odd",
+        "Collatz.BoundaryEnergy.boundary_creation",
+        "Collatz.BoundaryEnergy.paired_boundary_bound",
+        "Collatz.BoundaryEnergy.finite_shell_bound",
+        "Collatz.BoundaryEnergy.even_boundary_affine",
+        "Collatz.BoundaryEnergy.affine_merger_unique",
+        "Collatz.BoundaryEnergy.two_mergers_equal_slope"
+      ],
+      "root_count": 8,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "BoundaryEnergy",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "7986d8981253456932c4756bce1fc0c3a7594d79951addb87418fa87ebe9ec97",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "SparseSampling",
+      "source": "research/astra-collision-factor-bridge-20261128/arithmetic/SparseSampling.lean",
+      "source_sha256": "0cd185d7ae80b2d9bbedcecbd64be418f30fa7f6a0e091729d151ac1af2f1875",
+      "runner": "research/astra-collision-factor-bridge-20261128/arithmetic/check_sparse_sampling.py",
+      "current_runner_sha256": "09ebc2915bfcf064471477252770a570b1f4f2f86585594e45102cbfa4080865",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/sparse-sampling-lean.json",
+      "receipt_sha256": "e5edf4e99f03cbdb5dee0cd6400ed2f5b29d3d70f1ba20f58ab033a06e341058",
+      "public_roots": [
+        "Collatz.SparseSampling.mass_le_marked_add_failure",
+        "Collatz.SparseSampling.sparse_sampling_budget",
+        "Collatz.SparseSampling.sparse_sampling_budget_of_bounds",
+        "Collatz.SparseSampling.iterate_eq_of_meeting",
+        "Collatz.SparseSampling.visit_iff_after_meeting"
+      ],
+      "root_count": 5,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "SparseSampling",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "23bc147316cb53f8716f3d427185768ce3f6d06cebb34f69f9ad9f81d45d7b49",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "AffineMultiplierRigidity",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/AffineMultiplierRigidity.lean",
+      "source_sha256": "1e42f0e2da56dd410fb197f7653662c99fb04b978a9f168993dcce1b6511060f",
+      "runner": "research/astra-collision-factor-bridge-20261128/factoring/check_lean.py",
+      "current_runner_sha256": "a5784d3fa85f4ab2c7299bfcf64256737ccd4b1b65647f5786477f84e9ba2ce2",
+      "runner_binding_scope": "Current reproduction runner hashed; original receipt binds exact commands and source hashes.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/lean-runner-receipt.json",
+      "receipt_sha256": "3b47935756e6064f8e73e4bead567f4d3eee2e330ed2049a2745e73c4d7bbfef",
+      "public_roots": [
+        "Collatz.FactoringBridge.two_point_word_slope",
+        "Collatz.FactoringBridge.actual_two_point_slope",
+        "Collatz.FactoringBridge.prime_multiplier_cell_unique"
+      ],
+      "root_count": 3,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "AffineOrbit",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "AffineMultiplierRigidity",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "AffineMultiplierRigidityAudit",
+          "exit_code": 0,
+          "stdout_sha256": "45b1bdfdc439f9ce9a1eba9ead8d46e50fbacde76c1dd5c8b53e9d2312d4d6ba",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "SingleEdgeSplit",
+      "source": "research/astra-collision-factor-bridge-20261128/collision/SingleEdgeSplit.lean",
+      "source_sha256": "4c9aabf3b20510f277c11d6ebd903f5053b076ed20a04e5f9b46962681b13d79",
+      "runner": "research/astra-collision-factor-bridge-20261128/collision/check_single_edge.py",
+      "current_runner_sha256": "7eb9a670170ccd9abb5e3f3da5d455693b15a5f9ab369fdf7176151e99126b7e",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean.json",
+      "receipt_sha256": "a0d5256e6081ca647db37d356cf404dce9f2498cc458134da34a6c0df580c203",
+      "public_roots": [
+        "Collatz.SingleEdgeSplit.splitAt_unchanged",
+        "Collatz.SingleEdgeSplit.splitAt_even",
+        "Collatz.SingleEdgeSplit.iterate_eq_before_hit",
+        "Collatz.SingleEdgeSplit.splitAt_hit_iff",
+        "Collatz.SingleEdgeSplit.splitAt_two_cycle",
+        "Collatz.SingleEdgeSplit.splitAt_scaled_cycle",
+        "Collatz.SingleEdgeSplit.five_genuine_tail",
+        "Collatz.SingleEdgeSplit.five_modified_return",
+        "Collatz.SingleEdgeSplit.five_eventual_rescaling",
+        "Collatz.SingleEdgeSplit.finite_table_preserved",
+        "Collatz.SingleEdgeSplit.unitFive_unchanged",
+        "Collatz.SingleEdgeSplit.unitFive_unit_change",
+        "Collatz.SingleEdgeSplit.unitFive_period",
+        "Collatz.SingleEdgeSplit.unitFive_least_period",
+        "Collatz.SingleEdgeSplit.unitFive_hit_iff"
+      ],
+      "root_count": 15,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "SingleEdgeSplit",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "02e010f2aa71e3f57f89df7d389a3c10d4a05675ccddcfbfff54d63a273818cb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "InverseClimb",
+      "source": "research/astra-collision-factor-bridge-20261128/arithmetic/InverseClimb.lean",
+      "source_sha256": "2dc403b13ca6830593b2fdbd861d7cd8fa27b1a617fb853c8497fb8150715ed4",
+      "runner": "research/astra-collision-factor-bridge-20261128/arithmetic/check_inverse_climb.py",
+      "current_runner_sha256": "cb60f50982a2a7f78104723476e06526bdcc6a3b185e13223b26aeb809b1fc87",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean.json",
+      "receipt_sha256": "a96b4b0a4b29d1b4a80ef440507a0c71cdf3875d332afa0635bc3fa972026dbc",
+      "public_roots": [
+        "Collatz.InverseClimb.residue_exponent_table",
+        "Collatz.InverseClimb.block_from_parameter",
+        "Collatz.InverseClimb.exists_doubling_block"
+      ],
+      "root_count": 3,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "InverseClimb",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "5ef629603b8331a403277b016d577422fad67b429c0bce9d0921d17e3761f3f6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "SemiprimeRepresentative",
+      "source": "research/astra-collision-factor-bridge-20261128/SemiprimeRepresentative.lean",
+      "source_sha256": "fc0f9f17c6c1d239d820045e156866c51399363d4b335755441d7bd3b3d5d85e",
+      "runner": "research/astra-collision-factor-bridge-20261128/check_semiprime_representative.py",
+      "current_runner_sha256": "144537e33a81bd2d6a17dd480554f7cd378fea7bc84574affd4bc95431c800be",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean.json",
+      "receipt_sha256": "b7bf397ad7bc9b76c33a2ed783bc16e67092f045fe1355244bf98603cdf5a760",
+      "public_roots": [
+        "Collatz.SemiprimeRepresentative.convergence_step",
+        "Collatz.SemiprimeRepresentative.convergence_iterate",
+        "Collatz.SemiprimeRepresentative.merger_transfers_convergence",
+        "Collatz.SemiprimeRepresentative.family_positive",
+        "Collatz.SemiprimeRepresentative.universal_iff_family",
+        "Collatz.SemiprimeRepresentative.sample_family_members",
+        "Collatz.SemiprimeRepresentative.sample_actual_mergers"
+      ],
+      "root_count": 7,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "SemiprimeRepresentative",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "4e245cb927cfbafa095e9165f30bf5fe2fe60d2b4fd174415a71110af9f9110e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "NativeMinimum",
+      "source": "research/astra-collision-factor-bridge-20261128/collision/NativeMinimum.lean",
+      "source_sha256": "bb7ca871ba215bba5d4d02ee01149df85cd55c9bf71f97b80dac27119eff5474",
+      "runner": "research/astra-collision-factor-bridge-20261128/collision/check_native_minimum.py",
+      "current_runner_sha256": "475e9da33e9240ff2f6d988e8d67ad95e625f8f8f12712b1fd6fc4edad689508",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean.json",
+      "receipt_sha256": "e865d19c91c7c36927c89b414dad0cad6cdc0ef0b2959fa3b0abb0a8d16d3a50",
+      "public_roots": [
+        "Collatz.NativeMinimum.minimum_is_odd",
+        "Collatz.NativeMinimum.two_step_non_descent_iff",
+        "Collatz.NativeMinimum.minimum_second_parity",
+        "Collatz.NativeMinimum.postminimum_orbit",
+        "Collatz.NativeMinimum.second_parity_zero_iff_reaches_one"
+      ],
+      "root_count": 5,
+      "actual_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "NativeMinimum",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "ebbb5f5795511d1e9787407ab740b5128a1c011bc0fc83a571938f66d08c5efb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "AggregateProfile",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/AggregateProfile.lean",
+      "source_sha256": "02e8a5e363abf9ee368389754e8981e645da2a6ab0b0bd7afd9400c8417b68a2",
+      "runner": "research/astra-collision-factor-bridge-20261128/factoring/check_aggregate_lean.py",
+      "current_runner_sha256": "bc241911a3021ba91a5b2d10b3c1de8b2d602f5a99b29337954a57f0f5afc1ed",
+      "runner_binding_scope": "Current reproduction runner hashed; original receipt binds exact commands and source hashes.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt.json",
+      "receipt_sha256": "2eef582e305325eec9ee827bc045cd2458ff9d81ef57247be28ed2fe8c696697",
+      "public_roots": [
+        "Collatz.AggregateProfile.mem_words_iff",
+        "Collatz.AggregateProfile.words_nodup",
+        "Collatz.AggregateProfile.words_length",
+        "Collatz.AggregateProfile.word_determined_by_carry",
+        "Collatz.AggregateProfile.aggregate_succ_grade",
+        "Collatz.AggregateProfile.aggregate_grade_zero",
+        "Collatz.AggregateProfile.aggregate_initial",
+        "Collatz.AggregateProfile.total_word_real_value"
+      ],
+      "root_count": 8,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "AffineOrbit",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "AggregateProfile",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "AggregateProfileAudit",
+          "exit_code": 0,
+          "stdout_sha256": "6ffff6afe65b2867dba06acd3796cfcb1a96e8b52bd763af7bca4dc8391ca6a0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "StationaryWindow",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/StationaryWindow.lean",
+      "source_sha256": "821513e9c4b10aab2e248e03dbd49ab7d6a836d21e7fa9e9800e81fa8b1bc243",
+      "runner": "research/astra-collision-factor-bridge-20261128/factoring/check_stationary_lean.py",
+      "current_runner_sha256": "38d5da17571175191a3b897696c9272d1c27abe81d8ffcef3376957b6808dbae",
+      "runner_binding_scope": "Current reproduction runner hashed; original receipt binds exact commands and source hashes.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt.json",
+      "receipt_sha256": "acbe31b6c1b423ebb894c919c29768c8868a823f50cf4b58fe8c00a043822aa6",
+      "public_roots": [
+        "Collatz.StationaryWindow.window_add",
+        "Collatz.StationaryWindow.window_le",
+        "Collatz.StationaryWindow.window_shift_bound"
+      ],
+      "root_count": 3,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "StationaryWindow",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "StationaryWindowAudit",
+          "exit_code": 0,
+          "stdout_sha256": "3b83ce67ddd6b684fc53c6a567461ccee2985f9400235152bd2bb27c803ff8ef",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "DyadicAnchor",
+      "source": "research/astra-collision-factor-bridge-20261128/arithmetic/DyadicAnchor.lean",
+      "source_sha256": "f8875dfd4edf6591c5758c210e46c16e5a570cdd213c81608e6fba0427876b52",
+      "runner": "research/astra-collision-factor-bridge-20261128/arithmetic/check_dyadic_anchor.py",
+      "current_runner_sha256": "9ab5f807301b3a931d6200a7dc88419bec95fba373e7da33084584611c9c7b28",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/dyadic-anchor-lean.json",
+      "receipt_sha256": "2311d0cff0eda652a43b6a2e476c1526dfc7684154234307192e6161866fba69",
+      "public_roots": [
+        "Collatz.DyadicAnchor.dyadic_numerator_odd",
+        "Collatz.DyadicAnchor.dyadic_step_formula",
+        "Collatz.DyadicAnchor.dyadic_step_denominator",
+        "Collatz.DyadicAnchor.dyadic_step_denominator_grows",
+        "Collatz.DyadicAnchor.integer_anchor_has_nonintegral_branch"
+      ],
+      "root_count": 5,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "DyadicAnchor",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "89a777172b34a511d1084476f2b092d95b465eb10e2e89c8000e0dc2e19e8d70",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "module": "MinimumProduct",
+      "source": "research/astra-collision-factor-bridge-20261128/arithmetic/MinimumProduct.lean",
+      "source_sha256": "e2874bd79b99bafef976cfbdaa20b7910ff51055c6ff7ff66abef19973da8f1a",
+      "runner": "research/astra-collision-factor-bridge-20261128/arithmetic/check_minimum_product.py",
+      "current_runner_sha256": "e9ab1dfa3e5b88f5d5ca017a433eb0d4cd660874787b331ecc32772747972c4f",
+      "runner_binding_scope": "Runner hash also matches the original compilation receipt.",
+      "receipt": "reports/astra-collision-factor-bridge-20261128/arithmetic/minimum-product-lean.json",
+      "receipt_sha256": "6b2b86ba88e3199b4804c6a041a86d2c85a010c33c87f88f5c36934d4abfe5de",
+      "public_roots": [
+        "Collatz.MinimumProduct.native_step_cap",
+        "Collatz.MinimumProduct.finite_prefix_cap",
+        "Collatz.MinimumProduct.minimum_cap",
+        "Collatz.MinimumProduct.minimum_three_cap"
+      ],
+      "root_count": 4,
+      "actual_axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "completed_steps": [
+        {
+          "step": "MinimumProduct",
+          "exit_code": 0,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "step": "Audit",
+          "exit_code": 0,
+          "stdout_sha256": "14b455171747f904ba78cada2a464d83bdc0e3965283280c8b2f13216ef12d46",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  ],
+  "scope": "Final current-source and completed-log rebinding only. All original builds and separate import/axiom audits occurred earlier in this pass. No new compilation, cold dependency rebuild, LeanChecker run, or formal certification of written analytic statements."
+}

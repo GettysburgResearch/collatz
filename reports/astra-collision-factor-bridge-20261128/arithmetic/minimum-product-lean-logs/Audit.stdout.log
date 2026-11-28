@@ -1,0 +1,15 @@
+Collatz.MinimumProduct.native_step_cap (m n : ℕ) (h : m ≤ n) :
+  2 * Collatz.MinimumProduct.shortcut n * m ^ (n % 2) ≤ n * (3 * m + 1) ^ (n % 2)
+Collatz.MinimumProduct.finite_prefix_cap (m n s : ℕ) (lower : ∀ (j : ℕ), j < s → m ≤ Collatz.MinimumProduct.state j n) :
+  2 ^ s * m ^ Collatz.MinimumProduct.oddCount s n * Collatz.MinimumProduct.state s n ≤
+    n * (3 * m + 1) ^ Collatz.MinimumProduct.oddCount s n
+Collatz.MinimumProduct.minimum_cap (m s : ℕ) (hm : 0 < m)
+  (lower : ∀ (j : ℕ), j ≤ s → m ≤ Collatz.MinimumProduct.state j m) :
+  2 ^ s * m ^ Collatz.MinimumProduct.oddCount s m ≤ (3 * m + 1) ^ Collatz.MinimumProduct.oddCount s m
+Collatz.MinimumProduct.minimum_three_cap (m s : ℕ) (hm : 3 ≤ m)
+  (lower : ∀ (j : ℕ), j ≤ s → m ≤ Collatz.MinimumProduct.state j m) :
+  2 ^ s * 3 ^ Collatz.MinimumProduct.oddCount s m ≤ 10 ^ Collatz.MinimumProduct.oddCount s m
+'Collatz.MinimumProduct.native_step_cap' depends on axioms: [propext, Quot.sound]
+'Collatz.MinimumProduct.finite_prefix_cap' depends on axioms: [propext, Quot.sound]
+'Collatz.MinimumProduct.minimum_cap' depends on axioms: [propext, Quot.sound]
+'Collatz.MinimumProduct.minimum_three_cap' depends on axioms: [propext, Quot.sound]
