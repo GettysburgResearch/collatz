@@ -38,3 +38,13 @@ The [full profinite-law construction](outside/ALL_PROFINITE_FORWARD_LAWS.md) rea
 
 The outside lane also gives [complete short-predecessor congruence constraints](outside/CONGRUENCES_TO_SHORT_PREDECESSORS.md), [local-atom and denominator-prime classifications](outside/ATOMS_OF_ORDINARY_TIME_AVERAGES.md), and [the exact integer threshold](outside/AFFINE_APPROXIMATION_AT_THE_DENOMINATOR.md) left by Javaheri's unrestricted real approximation theorem. The [independent checkpoint review](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_02_REVIEW.md) records reconstructed arguments, prior work, verification boundaries, and the unsupported global inferences.
 
+## Checkpoint 3
+
+The [sparse-edit inverse reunion theorem](arithmetic/SPARSE_EDIT_INVERSE_REUNION.md) supplies linear lower cost bounds even when the edited trits and competing inverse paths are chosen adaptively. Its generic unequal-clock constant is approximately 2.41058 times the requested ternary precision. This limits a proposed repair of critical entropy couplings; it does not compare independently reoptimized infinite inverse costs.
+
+The [centered boundary range](dynamics/CENTRED_BOUNDARY_AMPLITUDE.md) classifies every positive amplitude and every accumulation rank of genuine trajectories to one. It gives an exact rational membership algorithm and the complete cluster set on each nontrivial binary cylinder. The remaining ordinary denominator-surjectivity question is explicit; zero is already a genuine accumulation point even if Collatz is true.
+
+The [integer shadow theorem](outside/EXPONENTIAL_INTEGER_SHADOWS.md) recovers one exact ordinary trajectory from regularly spaced exponentially accurate observations along a positive escaping real script. A [matching construction](outside/POSITIVE_LOWER_DENSITY_SHADOWS.md) shows why positive lower density and simultaneous agreement at every fixed modulus do not suffice. The fixed original source, changing rounded witnesses, full denominators, and density quantifiers are retained throughout.
+
+The [coordinator review](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_03_REVIEW.md) reconstructs all three packets. [All four included Lean modules and nine public roots now pass a fresh local compile and separate axiom audit](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_03_LEAN.json), resolving checkpoint 2's pending replay. The infinite mathematical statements remain source-qualified written proofs. The research pass continues.
+
