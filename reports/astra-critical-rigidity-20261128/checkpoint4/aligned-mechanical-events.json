@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "script": "research/astra-critical-rigidity-20261128/cycles/check_aligned_mechanical_events.py",
+  "sha256": "e4782a28c60553317f31433ff0fd111aa7de000c1e14a0051fc18af59944e2c6",
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.073,
+      "stdout": "{\n  \"comparisons_with_one_dyadic_drop_of_two_or_more\": 1054,\n  \"cycles_with_imprimitive_clock\": 265,\n  \"cycles_with_reduced_clock\": 226,\n  \"distinct_aligned_references\": 1786,\n  \"exactly_matching_references\": 7,\n  \"two_distance_mechanical_shifts\": 1483,\n  \"zero_distance_mechanical_shifts\": 303\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.09,
+      "stdout": "{\n  \"comparisons_with_one_dyadic_drop_of_two_or_more\": 1054,\n  \"cycles_with_imprimitive_clock\": 265,\n  \"cycles_with_reduced_clock\": 226,\n  \"distinct_aligned_references\": 1786,\n  \"exactly_matching_references\": 7,\n  \"two_distance_mechanical_shifts\": 1483,\n  \"zero_distance_mechanical_shifts\": 303\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "script": "research/astra-critical-rigidity-20261128/ordinary/check_translated_powers.py",
+  "sha256": "3c70a48b20972ecda0cb2cd7551d54de360ad693b66295b60314281779e15241",
+  "source_stable": true,
+  "optimized_output_identical": true,
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.048,
+      "stdout": "{\n  \"signed_cases\": [\n    [\n      -16,\n      1,\n      14,\n      0,\n      \"minus_one\"\n    ],\n    [\n      -8,\n      1,\n      8,\n      0,\n      \"equal\"\n    ],\n    [\n      -8,\n      2,\n      10,\n      1,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      1,\n      4,\n      0,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      2,\n      4,\n      1,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      3,\n      4,\n      -1,\n      \"minus_one\"\n    ],\n    [\n      0,\n      1,\n      15,\n      0,\n      \"minus_one\"\n    ],\n    [\n      0,\n      2,\n      7,\n      4,\n      \"equal\"\n    ],\n    [\n      0,\n      3,\n      7,\n      0,\n      \"minus_one\"\n    ],\n    [\n      0,\n      4,\n      7,\n      2,\n      \"minus_one\"\n    ],\n    [\n      0,\n      5,\n      7,\n      2,\n      \"minus_one\"\n    ],\n    [\n      1,\n      1,\n      3,\n      0,\n      \"minus_one\"\n    ],\n    [\n      1,\n      2,\n      2,\n      0,\n      \"minus_one\"\n    ],\n    [\n      2,\n      1,\n      5,\n      0,\n      \"minus_one\"\n    ],\n    [\n      8,\n      1,\n      11,\n      0,\n      \"minus_one\"\n    ],\n    [\n      8,\n      2,\n      10,\n      1,\n      \"minus_one\"\n    ],\n    [\n      16,\n      1,\n      12,\n      0,\n      \"minus_one\"\n    ]\n  ],\n  \"offset_tapes\": 8191,\n  \"physical\": {\n    \"height_H\": 8,\n    \"shifts\": [\n      -1000,\n      -24,\n      -16,\n      -8,\n      -1,\n      0,\n      1,\n      2,\n      4,\n      7,\n      8,\n      16,\n      24,\n      1000\n    ],\n    \"earlier_positive_pairs\": 1060,\n    \"physical_lower_dates_through_odd_budget\": 18622\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.096,
+      "stdout": "{\n  \"signed_cases\": [\n    [\n      -16,\n      1,\n      14,\n      0,\n      \"minus_one\"\n    ],\n    [\n      -8,\n      1,\n      8,\n      0,\n      \"equal\"\n    ],\n    [\n      -8,\n      2,\n      10,\n      1,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      1,\n      4,\n      0,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      2,\n      4,\n      1,\n      \"minus_one\"\n    ],\n    [\n      -1,\n      3,\n      4,\n      -1,\n      \"minus_one\"\n    ],\n    [\n      0,\n      1,\n      15,\n      0,\n      \"minus_one\"\n    ],\n    [\n      0,\n      2,\n      7,\n      4,\n      \"equal\"\n    ],\n    [\n      0,\n      3,\n      7,\n      0,\n      \"minus_one\"\n    ],\n    [\n      0,\n      4,\n      7,\n      2,\n      \"minus_one\"\n    ],\n    [\n      0,\n      5,\n      7,\n      2,\n      \"minus_one\"\n    ],\n    [\n      1,\n      1,\n      3,\n      0,\n      \"minus_one\"\n    ],\n    [\n      1,\n      2,\n      2,\n      0,\n      \"minus_one\"\n    ],\n    [\n      2,\n      1,\n      5,\n      0,\n      \"minus_one\"\n    ],\n    [\n      8,\n      1,\n      11,\n      0,\n      \"minus_one\"\n    ],\n    [\n      8,\n      2,\n      10,\n      1,\n      \"minus_one\"\n    ],\n    [\n      16,\n      1,\n      12,\n      0,\n      \"minus_one\"\n    ]\n  ],\n  \"offset_tapes\": 8191,\n  \"physical\": {\n    \"height_H\": 8,\n    \"shifts\": [\n      -1000,\n      -24,\n      -16,\n      -8,\n      -1,\n      0,\n      1,\n      2,\n      4,\n      7,\n      8,\n      16,\n      24,\n      1000\n    ],\n    \"earlier_positive_pairs\": 1060,\n    \"physical_lower_dates_through_odd_budget\": 18622\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

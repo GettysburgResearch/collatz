@@ -1,0 +1,19 @@
+{
+  "schema": "collatz-complete-checkout-validation/v1",
+  "utc": "2026-11-28T00:23:48.766571+00:00",
+  "commit_checked": "df49b11d90fbdff91080c909c148d47cccf879ed",
+  "tree_checked": "212c2bc47bbab44dd4bdaa09f7cf95be6dfb6d12",
+  "clean_before": true,
+  "tracked_files_present": 459,
+  "missing_files": [],
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.686,
+  "scope": "Repository integrity on the clean complete frozen tree; not a mathematical proof check. Public API commit may use different metadata with this identical tree."
+}
