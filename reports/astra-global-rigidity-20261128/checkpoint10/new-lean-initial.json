@@ -1,0 +1,111 @@
+{
+  "schema": "collatz-astra-global-rigidity-lean/v1",
+  "success": false,
+  "started_utc": "2026-11-28T03:55:14.649085+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "cache_overlay": {
+    "files": 25766,
+    "bytes": 1529949895,
+    "unused_extra_files": 0,
+    "verified_manifest_sha256": "2ba07241b3d78a1ddbc27f5eaa1f60ed38420003a25687f98f607bad9fe927fc",
+    "scope": "Only byte-hashed Mathlib matches to the pinned cache are linked into a private directory. Compiler and third-party package objects retain their original import locations. Extra files are not placed on LEAN_PATH. No dependency was rebuilt."
+  },
+  "dependency_scope": "Reused Mathlib and third-party compiled dependencies; fresh objects for every selected packet module; no cold dependency rebuild or independent LeanChecker run.",
+  "selection": {
+    "mode": "subset",
+    "requested": [
+      "NativeLowerType",
+      "OffsetMoments"
+    ],
+    "compiled": [
+      "MersenneCrests",
+      "ShiftedRampCores",
+      "OffsetMoments",
+      "NativeLowerType"
+    ],
+    "not_compiled": [
+      "WidthCarry",
+      "CriticalCountStandalone",
+      "BasinDefects",
+      "ProtectedDescent",
+      "RampReference",
+      "UpDownCounterexample",
+      "UpDownRayBand",
+      "RandomDirectionLoops",
+      "MovingFloorAntichain",
+      "AbsoluteOffsetBudget",
+      "GuardedHoles",
+      "ShiftedSiblingCarries",
+      "CoreTransport",
+      "DepthDeficits",
+      "PhaseClamping",
+      "DepthBridge"
+    ]
+  },
+  "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, the first-floor antichain, the finite absolute-offset occupation/floor inequalities, actual consecutive shifted-ramp identities, finite reduced-core transport inequalities, shifted sibling carry and gcd identities, finite depth-entry and block-deficit inequalities, phase-clamping legality and reward bounds, finite depth-bridge lattice and swap kernels, separated and automatic hole guards, and the automatic three-or-six-step return arithmetic only. The word-pressure existence and differentiability, full entropy limits and near-maximal asymptotics, unrestricted higher-product theorems, sparse-sum gcd bound, infinite hole scheduling, automatic-chain frequency and growth rates, core transport and retention asymptotics, fixed-root cell laws, solenoid averaging, recent rational-logarithm estimate, random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
+  "modules": [
+    {
+      "module": "MersenneCrests",
+      "source": "research/astra-global-rigidity-20261128/mersenne/MersenneCrests.lean",
+      "source_sha256": "a53b9398595fc7b60bba2e9e7e07056c8100b9a191823a77c61daf8425c2c7ba",
+      "exit_code": 0,
+      "seconds": 2.373,
+      "public_theorems": [
+        "Collatz.MersenneCrests.run_add",
+        "Collatz.MersenneCrests.initial_ramp",
+        "Collatz.MersenneCrests.original_to_crest",
+        "Collatz.MersenneCrests.no_meeting_after_cut",
+        "Collatz.MersenneCrests.prime19_no_shortening",
+        "Collatz.MersenneCrests.original19_no_shortening",
+        "Collatz.MersenneCrests.crest19_reaches_one"
+      ]
+    },
+    {
+      "module": "ShiftedRampCores",
+      "source": "research/astra-global-rigidity-20261128/mersenne/ShiftedRampCores.lean",
+      "source_sha256": "1fd4c9a28e2da9f86d880d4f7b6aa7fc71118c00e42a014718040e8cf4a9f869",
+      "exit_code": 0,
+      "seconds": 0.89,
+      "public_theorems": [
+        "Collatz.ShiftedRampCores.halving_run",
+        "Collatz.ShiftedRampCores.shifted_crest",
+        "Collatz.ShiftedRampCores.crest_return",
+        "Collatz.ShiftedRampCores.adjacent_shifted_identity"
+      ]
+    },
+    {
+      "module": "OffsetMoments",
+      "source": "research/astra-global-rigidity-20261128/cycles/OffsetMoments.lean",
+      "source_sha256": "138978c0be800767a2e4e6cb1739dd6a8de9468ca65726ac953a3743cb57bb5f",
+      "exit_code": 0,
+      "seconds": 2.612,
+      "public_theorems": [
+        "CollatzResearch.OffsetMoments.newtonTwo",
+        "CollatzResearch.OffsetMoments.equalSquareMoments",
+        "CollatzResearch.OffsetMoments.nineAtTerminal",
+        "CollatzResearch.OffsetMoments.eightAtLastLump"
+      ]
+    },
+    {
+      "module": "NativeLowerType",
+      "source": "research/astra-global-rigidity-20261128/cycles/NativeLowerType.lean",
+      "source_sha256": "a47670d76ddf476369f11dd1d4d2bc283bbc8136cb9f58a1b7572f455ac67d75",
+      "exit_code": 1,
+      "seconds": 1.528,
+      "public_theorems": [
+        "Collatz.NativeLowerType.six_unit_choices",
+        "Collatz.NativeLowerType.residue_period",
+        "Collatz.NativeLowerType.residue_reduce",
+        "Collatz.NativeLowerType.arithmetic_unit_child",
+        "Collatz.NativeLowerType.inverse_residue",
+        "Collatz.NativeLowerType.inverse_edge",
+        "Collatz.NativeLowerType.alternating_two",
+        "Collatz.NativeLowerType.alternating_even",
+        "Collatz.NativeLowerType.alternating_odd",
+        "Collatz.NativeLowerType.arrived_full_count"
+      ]
+    }
+  ]
+}
