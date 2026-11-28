@@ -1,0 +1,62 @@
+{
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "parent_commit": "eb91086951b66923787f696801f0c3ca52a0077d",
+  "modules": {
+    "PermanentSafeDebt": {
+      "source_sha256": "7ccc0c4921083b94f01c43eb604538fb257d3b40a15b8e6bec62f99d8fd91552",
+      "object_sha256": "9c76be65b34b0162df2002e49dce5a67542f5be1c0784add984deb93208be547",
+      "audit": [
+        "'PermanentSafeDebt.safeAt_iff_tail_minimum' depends on axioms: [propext, Quot.sound]",
+        "'PermanentSafeDebt.finite_prefix_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeDebt.global_minimum_of_nonnegative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeDebt.bounded_safe_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeDebt.global_minimum_of_integer_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeDebt.safe_suffix_of_integer_debt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeDebt.safe_suffix_clock_bound' depends on axioms: [propext, Quot.sound]",
+        "'PermanentSafeDebt.safeAt_shift' depends on axioms: [propext, Quot.sound]",
+        "'PermanentSafeDebt.eventually_two_not_safe' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    "PermanentSafeOrdinary": {
+      "source_sha256": "9e6b71ae0c5baca5e64d96c566ce8ba40b8210441ac2a27c066f6d8ddf74aa9f",
+      "object_sha256": "29cbc81e17924f7f7721735d21b8b1f8c2f0fe2fcd2d042f91a00c387b049ebd",
+      "audit": [
+        "'PermanentSafeOrdinary.exact_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.oddMap_odd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.state_odd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.bad_state_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.state_add' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.clock_add' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.state_eq_iterate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.fourth_power_step_bound' depends on axioms: [propext, Quot.sound]",
+        "'PermanentSafeOrdinary.fourth_power_trajectory_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.cumulative_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.bad_has_safe_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.oddMap_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.valuation_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.state_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.clock_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.safe_is_bad' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.safe_suffix_implies_bad' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.bad_iff_safe_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.not_safe_iff_prefix_failure' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.all_odd_converge_iff_no_safe_source' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PermanentSafeOrdinary.all_odd_converge_iff_prefix_gate_fails' depends on axioms: [propext,",
+        " Classical.choice,",
+        " Quot.sound]"
+      ]
+    },
+    "SignedDeathClock": {
+      "source_sha256": "37cb67f379c71da589dbdb586743883ba17aac4747e760895e7e5ca1eeec6bd1",
+      "object_sha256": "5a6cadd4535251e49f3ca1ed65626834b666dd8088be35e8c8a6dc8930982d0e",
+      "audit": [
+        "'SignedDeathClock.clock_after_hit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SignedDeathClock.pass_after_hit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SignedDeathClock.record_iff_pass' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SignedDeathClock.first_exit_after_hit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SignedDeathClock.death_grade_range' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  }
+}
