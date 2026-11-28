@@ -1,0 +1,93 @@
+{
+  "scope": "exact bounded ordinary-source parity counts; no asymptotic inference",
+  "dual": true,
+  "rows": [
+    {
+      "cutoff": 16,
+      "clock": 19,
+      "deficit_ceiling": 5,
+      "lower_count": 0,
+      "reached_one_by_clock": 16,
+      "direct_checksum_mod_2_64": 1302,
+      "block_checksum_mod_2_64": 1302
+    },
+    {
+      "cutoff": 256,
+      "clock": 38,
+      "deficit_ceiling": 7,
+      "lower_count": 1,
+      "reached_one_by_clock": 186,
+      "direct_checksum_mod_2_64": 683168,
+      "block_checksum_mod_2_64": 683168
+    },
+    {
+      "cutoff": 4096,
+      "clock": 57,
+      "deficit_ceiling": 8,
+      "lower_count": 287,
+      "reached_one_by_clock": 2544,
+      "direct_checksum_mod_2_64": 253658556,
+      "block_checksum_mod_2_64": 253658556
+    },
+    {
+      "cutoff": 65536,
+      "clock": 77,
+      "deficit_ceiling": 9,
+      "lower_count": 11372,
+      "reached_one_by_clock": 40246,
+      "direct_checksum_mod_2_64": 85975334434,
+      "block_checksum_mod_2_64": 85975334434
+    },
+    {
+      "cutoff": 262144,
+      "clock": 86,
+      "deficit_ceiling": 10,
+      "lower_count": 39222,
+      "reached_one_by_clock": 159238,
+      "direct_checksum_mod_2_64": 1529293382635,
+      "block_checksum_mod_2_64": 1529293382635
+    },
+    {
+      "cutoff": 1048576,
+      "clock": 96,
+      "deficit_ceiling": 10,
+      "lower_count": 183065,
+      "reached_one_by_clock": 641823,
+      "direct_checksum_mod_2_64": 27191025623069,
+      "block_checksum_mod_2_64": 27191025623069
+    },
+    {
+      "cutoff": 4194304,
+      "clock": 106,
+      "deficit_ceiling": 11,
+      "lower_count": 487859,
+      "reached_one_by_clock": 2584485,
+      "direct_checksum_mod_2_64": 478580118815405,
+      "block_checksum_mod_2_64": 478580118815405
+    },
+    {
+      "cutoff": 16777216,
+      "clock": 115,
+      "deficit_ceiling": 11,
+      "lower_count": 2864542,
+      "reached_one_by_clock": 10178665,
+      "direct_checksum_mod_2_64": 8281785069427478,
+      "block_checksum_mod_2_64": 8281785069427478
+    }
+  ],
+  "started_utc": "2026-11-27T23:28:42.791189+00:00",
+  "finished_utc": "2026-11-27T23:28:50.575390+00:00",
+  "cpp_sha256": "e8f0fbba3cf213770fdb43b1223c9c8aa6a3f662a3a651b07d5ca843cbed7363",
+  "driver_sha256": "817e08ccb87a66ae15ee9d458ee8b1380f31ffe2688cf8394debd7543d3b7180",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "flags": [
+    "-std=c++20",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "clock_definition": "largest t with 4^t <= X^2*3^t",
+  "literal_python_checked_through": 4096,
+  "passed": true
+}

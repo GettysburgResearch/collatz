@@ -1,0 +1,113 @@
+{
+  "scope": "New checkpoint-three bounded exact controls in normal and optimized Python; no infinite theorem verification",
+  "started_utc": "2026-11-28T01:06:35.171170+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "research/astra-nine-hour-20261128/check_affine_reachability.py",
+      "sha256": "e697d50cbecabd3f0aee0176fbac586dce3cf566ee3cb8c95f637f672bd9ae20",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 2.543,
+          "stdout": "{\"complete_word_rows\": 2047, \"convex_false_edge\": [4, 3], \"first_modulus_at_maximum\": 439, \"integer_endpoints\": 715, \"irreversible_bad_branches\": 132340, \"maximum_shortest_quotient_word\": 13, \"maximum_word_length\": 10, \"odd_moduli_tested\": 251, \"odd_moduli_through\": 501, \"quotient_states\": 63001, \"scope\": \"finite exact controls, not unrestricted Collatz verification\", \"source_sha256\": {\"AffineReachability.lean\": \"a9448159fe1f6b288610faedce4df1ae2f7496b204feb5cc3d825f1a554ed3a1\", \"check_affine_reachability.py\": \"e697d50cbecabd3f0aee0176fbac586dce3cf566ee3cb8c95f637f672bd9ae20\"}, \"source_word_cases\": 133055}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 2.474,
+          "stdout": "{\"complete_word_rows\": 2047, \"convex_false_edge\": [4, 3], \"first_modulus_at_maximum\": 439, \"integer_endpoints\": 715, \"irreversible_bad_branches\": 132340, \"maximum_shortest_quotient_word\": 13, \"maximum_word_length\": 10, \"odd_moduli_tested\": 251, \"odd_moduli_through\": 501, \"quotient_states\": 63001, \"scope\": \"finite exact controls, not unrestricted Collatz verification\", \"source_sha256\": {\"AffineReachability.lean\": \"a9448159fe1f6b288610faedce4df1ae2f7496b204feb5cc3d825f1a554ed3a1\", \"check_affine_reachability.py\": \"e697d50cbecabd3f0aee0176fbac586dce3cf566ee3cb8c95f637f672bd9ae20\"}, \"source_word_cases\": 133055}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase3/colored_selected_controls.py",
+      "sha256": "0b5ad815be48238af8de4f593fddf6f23514ff90ebf73730a3c4ea52c66be8d7",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.918,
+          "stdout": "2320 noncoprime necklaces through n=15 passed exact Fourier period.\n1918 positive rational necklaces passed both exact physical-ratio bounds.\n78 inactive components divided the actual affine numerator in full.\n5466 prime-component short-binomial remainders were nonzero.\nPrimitive (n,u)=(30,18) has support {2,3} and cancels full inactive D6=889.\n1515 g=4 family types through odd N=149 had the exact selected Aurifeuillean factor.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.055,
+          "stdout": "2320 noncoprime necklaces through n=15 passed exact Fourier period.\n1918 positive rational necklaces passed both exact physical-ratio bounds.\n78 inactive components divided the actual affine numerator in full.\n5466 prime-component short-binomial remainders were nonzero.\nPrimitive (n,u)=(30,18) has support {2,3} and cancels full inactive D6=889.\n1515 g=4 family types through odd N=149 had the exact selected Aurifeuillean factor.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase3/positive_lift_controls.py",
+      "sha256": "0cdf73ef567cf12da5d59f4c34b5fe6ec502f7a73bfeb0650807e2d54d44ad57",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.559,
+          "stdout": "608 positive necklaces and 6544 actual cuts through n=12 passed.\n288834 independent zero/one-lap mixtures dominated their physical numerator.\n352 coprime cases satisfied the exact Frobenius and effective-height formulas.\nAt n=4, u=2, D=7, an extra numerical relation gives smooth sum 4 below formal optimum 5.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.533,
+          "stdout": "608 positive necklaces and 6544 actual cuts through n=12 passed.\n288834 independent zero/one-lap mixtures dominated their physical numerator.\n352 coprime cases satisfied the exact Frobenius and effective-height formulas.\nAt n=4, u=2, D=7, an extra numerical relation gives smooth sum 4 below formal optimum 5.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/escape/phase3/check_nonresonant_merge.py",
+      "sha256": "a6a18018506c40a6fc652714a3499a2fb30c3dfb38868de3377009d73c468d33",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.871,
+          "stdout": "{\"cone\": {\"base_starts\": 128, \"distinct_source_pairs\": 16640, \"fivefold_same_clock_dates\": 3154, \"horizon\": 96, \"potential_pair_dates\": 1614080, \"same_clock_dates\": 439378, \"trajectory_product_identities\": 74496}, \"profile\": {\"integrated_rational_pieces\": 716, \"rational_marks\": 360}}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.895,
+          "stdout": "{\"cone\": {\"base_starts\": 128, \"distinct_source_pairs\": 16640, \"fivefold_same_clock_dates\": 3154, \"horizon\": 96, \"potential_pair_dates\": 1614080, \"same_clock_dates\": 439378, \"trajectory_product_identities\": 74496}, \"profile\": {\"integrated_rational_pieces\": 716, \"rational_marks\": 360}}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase3/check_minimum_clock.py",
+      "sha256": "5f6f32314313a1fa1754c18ab2646796648fc8b1b7fee31e36387c6399caccea",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.189,
+          "stdout": "all unit ternary rows=59046, independently complete positive minima=356\ndepth,min-gap,max-gap,signed-gap=[(1, -3, 3, 3), (2, -4, 4, 4), (3, -6, 5, 4), (4, -6, 6, 5), (5, -6, 7, 6), (6, -7, 8, 7), (7, -8, 9, 7), (8, -9, 10, 8), (9, -10, 10, 9)]\ncomplete all-sibling cutoffs=189, qualifying physical witnesses=600\nbounded-composition totals=224\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.195,
+          "stdout": "all unit ternary rows=59046, independently complete positive minima=356\ndepth,min-gap,max-gap,signed-gap=[(1, -3, 3, 3), (2, -4, 4, 4), (3, -6, 5, 4), (4, -6, 6, 5), (5, -6, 7, 6), (6, -7, 8, 7), (7, -8, 9, 7), (8, -9, 10, 8), (9, -10, 10, 9)]\ncomplete all-sibling cutoffs=189, qualifying physical witnesses=600\nbounded-composition totals=224\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    }
+  ],
+  "finished_utc": "2026-11-28T01:06:45.405915+00:00"
+}

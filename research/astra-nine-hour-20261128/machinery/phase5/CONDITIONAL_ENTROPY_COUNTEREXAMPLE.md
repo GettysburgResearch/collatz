@@ -1,0 +1,20 @@
+# Uniform conditional full entropy does not control reverse entropy
+
+There is a ternary-tree probability \(\nu\) and a constant \(c>0\) with the following three properties. Each conditional next-trit probability is at least \(c\). Writing \(h_m\) for uniform measure on words of length \(m\), and \(\nu_C^{(m)}\) for the next \(m\) digits after any finite cylinder \(C\),
+\[
+ \sup_C D(\nu_C^{(m)}\Vert h_m)=o(m),\qquad
+ \lim_{n\to\infty}n^{-1}D(h_n\Vert\nu^{(n)})>0.
+\]
+This distinguishes the uniform conditional forward-entropy conclusion available from Leen's absolute-entropy dimension and conditional-mixture law from the reverse-entropy question. The example tests those abstract hypotheses. It does not model the affine Syracuse digit law itself. [Leen, Theorem C and the local-law mixture in §5](https://doi.org/10.5281/zenodo.23268832) · [Arithmetic reverse entropy and pressure](UNIFORM_INVERSE_PRESSURE.md)
+
+Start a nonnegative integer score at zero. Fix the disjoint barrier pairs \(2^k,2^k+1\) for all \(k\ge3\). At a positive ordinary score \(s\), the three trits respectively increase the score, decrease it, or hold it. At a barrier the trits increase, decrease, decrease. At zero the trits increase, hold, hold. Under \(h\) the trit probabilities are all \(1/3\). Under \(\nu\) they remain uniform at zero and the barriers. At any other positive score they are
+\[
+   (1/3+b_s,\ 1/3-b_s,\ 1/3),\qquad b_s=1/(s+12).
+\]
+The smallest next-trit probability exceeds \(1/4\). In both chains the score is determined by the digit history. Thus conditioning on a prefix starts precisely the same process at the resulting score.
+
+Under \(h\) the upward probability is always \(1/3\), while the downward probability at a positive score is \(1/3\) ordinarily and \(2/3\) at a barrier. By birth–death balance the stationary weight at \(s\) relative to zero is \(2^{-B(s)}\), where \(B(s)\) counts barriers in \([1,s]\). There are two per dyadic interval, so these weights are comparable to \((s+1)^{-2}\) and normalize to a probability \(\pi\). Irreducibility and this stationary probability give positive recurrence. The local reverse divergence \(d^-(s)\) of the uniform trit against the assigned trit law is bounded, positive at every positive ordinary score, and zero at the barriers. The entropy chain rule and the ergodic theorem give \(D(h_n\Vert\nu^{(n)})/n\to\pi(d^-)>0\).
+
+Under \(\nu\), write \(p_s,q_s\) for the upward and downward probabilities. The product \(R_s=\prod_{j=1}^s(q_j/p_j)\) is comparable to \((s+1)^{-4}\). Indeed each barrier contributes a factor two. The ordinary ratio is exactly \((j+9)/(j+15)\), whose product over *all* positive \(j\le s\) is comparable to \((s+1)^{-6}\) by cancellation of six consecutive factors. Deleting the dyadic barrier terms changes this product by a bounded factor since their negative logarithms are \(O(2^{-k})\) along each sequence. Hence \(\sum_{s\ge0}R_s<\infty\), with \(R_0=1\). For completeness, the probability of hitting \(N\) before zero from 1 for the birth–death chain is \((\sum_{s=0}^{N-1}R_s)^{-1}\), obtained by solving the two-boundary harmonic equation in first differences. Its limit is positive. At zero there is a positive probability to leave for 1, so the chance of a final departure is positive at each visit. Irreducibility then gives transience of all finite scores.
+
+The local forward divergence \(d^+(s)\) is bounded and tends to zero as \(s\to\infty\). For every finite set \(F\), the expected total number of visits to \(F\) under \(\nu\) is bounded **uniformly in the starting score**. Starting outside \(F\), stop at the first entrance and apply the maximum over the finitely many starting points inside, whose expected visit counts are finite by transience. Given \(\varepsilon>0\), take \(F\) with \(d^+\le\varepsilon\) off \(F\). The expected sum of the next \(m\) local divergences from any starting point is at most \(\varepsilon m+O_F(1)\). The entropy chain rule proves the stated uniform conditional bound.

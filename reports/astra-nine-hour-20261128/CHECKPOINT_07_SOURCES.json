@@ -1,0 +1,555 @@
+{
+  "checkpoint": 7,
+  "created_utc": "2026-11-28T03:53:53.851683+00:00",
+  "scope": "Reviewed scientific packet through phase seven; excludes phase eight and drafts. Fresh strict replay and paired controls have separate receipts. README updated after replay.",
+  "sources": [
+    {
+      "path": "research/astra-nine-hour-20261128/AffineReachability.lean",
+      "sha256": "a9448159fe1f6b288610faedce4df1ae2f7496b204feb5cc3d825f1a554ed3a1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/BROAD_DECIDABILITY_SCREEN.md",
+      "sha256": "61e65db8e604cdf03071351cf2a4e32d863d65921152189ab540d70e75b4be97"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/FINITE_CRITICAL_TAIL.md",
+      "sha256": "0d01b40425401b17d9191428f4e75798a6042132d28d5632b15bf2d160b71212"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/FiniteCriticalTail.lean",
+      "sha256": "0f4f74d0c764d5402683242e63b99a344b674d5cdcd92fd1768ef5d6418f34bb"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/NativeSizeRecursion.lean",
+      "sha256": "c54e6bff6327bf09b865762964afa8c72d1c8ae4d09a31f816ce9c2367836135"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/README.md",
+      "sha256": "d6155f73e187c353d44945d31c9568639c359bcf7fdce4850df218a5bb4bd8b4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_affine_reachability.py",
+      "sha256": "e697d50cbecabd3f0aee0176fbac586dce3cf566ee3cb8c95f637f672bd9ae20"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_critical_probe.py",
+      "sha256": "817e08ccb87a66ae15ee9d458ee8b1380f31ffe2688cf8394debd7543d3b7180"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_native_size_recursion.py",
+      "sha256": "5ff3dd21c566de09d8d26e226dffc1eea4fb7a73282cec0a6eee5b9525a7e50a"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/critical_tail_probe.cpp",
+      "sha256": "e8f0fbba3cf213770fdb43b1223c9c8aa6a3f662a3a651b07d5ca843cbed7363"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/CONTRACTING_CALENDARS.md",
+      "sha256": "9bb2600b5d23f7197a655536ae60bd138129b51c9d0a393c1e3dc6689589a3d8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/ContractingCalendar.lean",
+      "sha256": "c3b0afd7686f90e4d0a2c422d3243096cf6cc458760260e44a08fc5c6da640a2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/MODULAR_QUOTIENTS.md",
+      "sha256": "d0e6c236f2ce4b2611443da5d7b2d5a3b2a6cd304495e52f98c3c3477826e576"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/ModularQuotient.lean",
+      "sha256": "7685e2492c7d7c27bb5e85656b3e7094cb9fc70e5a1cc3ddc94bb2ef8803b095"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/README.md",
+      "sha256": "a06815c3e957b8ef757a3b9c08828a72cd5578c884b5887752f721bf20a34270"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/check_block_carries.py",
+      "sha256": "4599f3ccaf60554212775c20451deb0c25b82293f5eb4cd62d687f55ccb64703"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/BOUNDARY_FAMILIES.md",
+      "sha256": "8c58eb357c3eeb32e662addd2f9a4104416895c7f9aba135638677db83d3d3a9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/ORBIT_INTERPOLATION.md",
+      "sha256": "ffc0b4ccebab21f609f67377c313f45d67c2acecebc502fe1fcd01534c27bedd"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SELECTED_ROOT.md",
+      "sha256": "e891f80abcd79e747c90e723a4ff930659b10bd64b4833d78b7b405df5498f38"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SEMIGROUP_BOUNDARY.md",
+      "sha256": "05de981ef8874c9826841e680ec1a16565746538d63bd81474c2ff4ba9ad10d7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SemigroupPhysical.lean",
+      "sha256": "334b3b247f1de30d38f325fe2808dd7845293a20dd14de0044e8744b197585e4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/semigroup_controls.py",
+      "sha256": "6fe0c508ed6fa0570207b4a8013c0c5d94dd659c16a7735361be2ae165c2eb21"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/COLORED_SELECTED_ROOT.md",
+      "sha256": "f1f48fd2cff8f060e94641f0f525ebe8cd28b88acd89e2454030ba4d4c8195f5"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/PHYSICAL_CONDUCTOR.md",
+      "sha256": "4f9d44e2af966af73fdc9e171a4e312ad8661e27907cc1a86cabc90ceecb6bb9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/POSITIVE_LIFT_OPTIMUM.md",
+      "sha256": "220e5f893025c86e48ca8d3703a607825f0e24774c63806d0d860ea794c3a9ef"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/colored_selected_controls.py",
+      "sha256": "0b5ad815be48238af8de4f593fddf6f23514ff90ebf73730a3c4ea52c66be8d7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/positive_lift_controls.py",
+      "sha256": "0cdf73ef567cf12da5d59f4c34b5fe6ec502f7a73bfeb0650807e2d54d44ad57"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/MOVING_POWERED_WORDS.md",
+      "sha256": "b7421801213d14f08adb25118f0c2606839437d78fd8a7a1d2eed493c0805ff9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/MOVING_RESIDUES.md",
+      "sha256": "e670cfaaf3b202c0b383c0338c9c19dc16d6617ab63727744f9d69634894dcb1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/MOVING_SPARSE_SUMS.md",
+      "sha256": "b2638186f5918fecbe2612a1a7f9e0f309168afff56fe4483ea30d5b902340c8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/PositiveLift.lean",
+      "sha256": "8a52c1a0bc41f87d4c06d7acf5041765a323a039982fc6b8abac7c36d9b6c0ba"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/SimpleArc.lean",
+      "sha256": "3ae67d4dcecfa5c264f187c8df9ae2c8967529946515333f0861b5691a97d897"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase4/moving_power_controls.py",
+      "sha256": "fa5b50e3c8c2528974e3794d7144532fe40729e815091826761c01afa19f04d4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/BalancedCarry.lean",
+      "sha256": "4170a1ff94a41ae7038e8640687860380c436f78a6f17622b0aca38ffdf69759"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/LAG_RATIO_SPECTRUM.md",
+      "sha256": "434e454522894a5d3a3dcef022708c4733065814bb169e96b552b980c3064e00"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/PHYSICAL_LOOP_ARMS.md",
+      "sha256": "2e5d364391492aeac35eb0e9c73aa037e9c2a66c30068608c824c272f8ac5ed2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/SCHEDULED_FLOOR.md",
+      "sha256": "9855eed826f7f383758b7abcacc8d9b577ee2aa8f59890397eca7294c3349b37"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/SPARSE_LOCAL_VALUATIONS.md",
+      "sha256": "b1d2bc1b0efc8957b435ee2477a6c0a916847c2797b77233211231605e229e2b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/lag_ratio_controls.py",
+      "sha256": "2aa517b881b12e5500f6842fa18061efd5256019526d1834586a345d473d5d2c"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase5/scheduled_floor_controls.py",
+      "sha256": "9834c7f4ee2e1ae7bef87930feef7aa560c9d86f59638eb48edc994030795f95"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase6/FOURFOLD_ODD_SPREAD.md",
+      "sha256": "a699c911ac1db1131e60dd738647a79ed4a9feb14baa3e6b9fc855b2619e3074"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase6/MixedAlphabet.lean",
+      "sha256": "7a798f50f3428e091dfa058d2591b0160f9bb34ce219d47dec0e14d482b365fb"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase6/mixed_code_controls.py",
+      "sha256": "14be440bbf576d5475231c8c15971082c149809438df2bc28ee8271b101d6614"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase7/DISTINCT_MOMENT_PATHS.md",
+      "sha256": "144886ecd85536a177166f3d825d2fc75028c61ba373825b61341e181daf90a1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase7/MOVING_FOURFOLD_BOUNDARY.md",
+      "sha256": "8232066ed39c577cfa93a526dd5cd7259bc1af290187bab26d0bc42638dcf68b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase7/MomentSeparation.lean",
+      "sha256": "c96ecfd40e790b4e2f3fb9c9a73f7149d82c4db04226c2ee7bb5fa3bfa84ed0c"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase7/closure_controls.py",
+      "sha256": "9c59fc82699f8d4d4c719bedc4d6eb57f5da6a5dcfe9cc50646027183fd50275"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/AffineCorrection.lean",
+      "sha256": "0c930f72b4bda260886fc52e422d58edbe89df176dafb4f380bcaaf4f2716065"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/CRITICAL_CORRECTION.md",
+      "sha256": "9136c9a7bfda09d388cc9e675c1c402dc5e5a13bf7986835d450348cb3cbbd3e"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/MinimumWindow.lean",
+      "sha256": "97e0c142a6020e948b4c368132709c4daa444185e168e05154cb5da249de7614"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/POSITIVE_ONE_SITE.md",
+      "sha256": "d3b8fc6ff28f133703567aefd7e52c08c1269b3e73f5972fb7c0c42905191b78"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/TERMINAL_WINDOWS.md",
+      "sha256": "6929f6a5ba91d20b9e8709ceca66b9cf59938ae3cb54f4467940854c30d435ec"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/UNIFORM_EARLY_ARRIVALS.md",
+      "sha256": "d10de43499fbb3f74e9afb39be7066ea4b7c31e0852d1f2023b4b46a50ac5cd4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/MOVING_CLOCKS.md",
+      "sha256": "146c75a024988c8a244c62c0afacc8291dd8c269f32727e82e01e9661a88be32"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/NATIVE_BINOMIAL_TRANSFER.md",
+      "sha256": "8c0038b10e8861746a82726b4854c084ceecf2c596b44fba964f63eb70a52edc"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/REVERSED_ANCESTOR_RAY.md",
+      "sha256": "35d29408c38e88f2234e7e35e4187fff6dd5f9b93df3b5cc0e9db7df1ab03513"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/SHORT_INTERVAL_PREDECESSORS.md",
+      "sha256": "8d0732ff261f5ca3070e5614580c284bda07e3c5fa46092153d289be607c2bc4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ENDPOINT_CLOCK_SPECTRUM.md",
+      "sha256": "358dbc787271804c10dcc2d0195bca9f42bff0bb27a48897a936a9367f258e00"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ESCAPE_DILATION_VARIATION.md",
+      "sha256": "6dcb42a2630df266b7ff34b5b382dc816c84a147d1292d1f67cde6b4db7a7132"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/NATIVE_CLOCK_ATOMS.md",
+      "sha256": "beca0ff81f04c5a69e08ef019f26a4337904c47f5967f57c6181df11d440273b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/NonresonantMerge.lean",
+      "sha256": "0aa4b885ccc62d5ba9992b82e8f3e37c4ffe49c24ae274ff95f583f05135f988"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ONE_ENDPOINT_CHARACTER.md",
+      "sha256": "db7b3710aa0f429317726e76bdf2905284a4265b2ea47429aaaa5e89378a4d9f"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/SEPARATED_SOURCE_SHELLS.md",
+      "sha256": "3d795a88ae60ce513bfb7dfdd36b619feb4531f0bd156c57fe95e784beaf779c"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/check_nonresonant_merge.py",
+      "sha256": "a6a18018506c40a6fc652714a3499a2fb30c3dfb38868de3377009d73c468d33"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/AFFINE_PAIR_RETURNS.md",
+      "sha256": "d938f9656f91d4bd7e56cc11c405808a8178f6a613686c503b03633feb6e2b07"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/FINITE_SHELL_DETECTOR.md",
+      "sha256": "a8561d0aef3a2b4c3533cba9b7e867032fa09e0946c1968efd943c75bd0a817b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/HARMONIC_SOURCE_PHASE.md",
+      "sha256": "11b6489a8fa5a85d21ee40c6e2983f1d7803913ae29d9429baf434648468cc8e"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/ORDINARY_PAIR_RECURRENCE_BARRIER.md",
+      "sha256": "c28e55df52fabf112587f21f1cdc9173406b955714aef61c881a5032da832a6a"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/PrefixOrbitWhitelist.lean",
+      "sha256": "e080899856e50b73f589fda1a131c0cbdcc8e52c8564f06c71724a4ecbd32d6f"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase4/check_shell_phase.py",
+      "sha256": "34193884d70b26bd6209578565700000296c7ab86ee3a94e24578df978423e29"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase5/ClockQuotient.lean",
+      "sha256": "674e7364a4a7204d07dfb61f83189b130874be4c8c733789e299c1607c2d2040"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase5/NATIVE_MELLIN_RIGIDITY.md",
+      "sha256": "ea0e3cbd3488a04a232abeec5dc10e4a8b92f53093ce2ae07644095b440eec24"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase5/SMOOTH_SOURCE_CLOCK_GROUPS.md",
+      "sha256": "793ef2ff9e59738a2dd27aa81c7c524b1525749f68b011644e385cec206bab46"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase5/check_native_spectrum.py",
+      "sha256": "5d4d03d7acda330834f28707d8954678795eb25d3b30a405d28be020a49cebb0"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/CRITICAL_QUANTILE_COVER.md",
+      "sha256": "acf45e435542292208095e8bd8d474554d218dfe670b483815d1f8cb109995f4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/DyadicMidpoint.lean",
+      "sha256": "d034c0d2dc1a7af55531a4e7c4cb32a6f78a00f16f8ae5d8404e79539a0e48d4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/ENERGY_CROSSOVER.md",
+      "sha256": "95688f8e816418096d09e11b451a028b374f2fa44ab2357a46b9ad99b82b17f1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/LOCAL_TRIT_AND_RAJCHMAN.md",
+      "sha256": "183799bdeb37299352b85d389660716ad9333f574f48cb03f0cd7cd07929513b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/MIDPOINT_VARIATION.md",
+      "sha256": "184ce6d968870de9194e14871a338ca51f8aa24b4b41b153aecfe258df6a4359"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/SIGNED_RECIPROCAL_HEAT.md",
+      "sha256": "60440b3d796bd997666b828b9168aece7d528c3fc6bd963c495dbccb29d8b20d"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase6/check_frequency_blocks.py",
+      "sha256": "aaa8dc4d4b7f05d6c6843424066676998ffdca6b6e6ee584bb0bd89c30e58180"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase7/FirstHitClockCentres.lean",
+      "sha256": "bea9c5ec5856a7c6c639d474a7e0cd20980ce944d9021fdb44ebdc6d0a03a964"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase7/TIMED_FLOOR_AND_CLOCK_CENTRES.md",
+      "sha256": "fd91a6f0e7d37fb57fd100052d5d4a148f34d1b89020e68b450ba9f72d92a648"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase7/UNTRIMMED_RENYI_ENERGY.md",
+      "sha256": "ea88fc2e5c0ad0f83cfd0efa6a89d5dc2e1f901abc0b2564c6a12634612a2c8f"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase7/check_first_clock_centres.py",
+      "sha256": "0cc180cd453b45df92408f968c81c964b95c9dad21249565c0ce4eafeaaa50e0"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/ARITHMETIC_PROGRESSION_FLOOR.md",
+      "sha256": "9f9c76c248f75f82f7c3c701b44e4fe6a797bdc67b4b7879303815c83f8d3d95"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/POINTWISE_CONGRUENCE.md",
+      "sha256": "7ca2ec0bc210a7302b4f94c871918c30779bbb23f05c99a49f1cd5d9eea78c53"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/PROFINITE_ANCESTORS.md",
+      "sha256": "13dbd65bd2034db3a5b42fa31b153136060b823d9304d053dcf381c4d612cdb1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/ProfiniteAncestors.lean",
+      "sha256": "96b399b5731ce09e95deb15b9ea2d2e72d83b9745ae6b75862424bdb71656be6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/RECENT_INPUTS.md",
+      "sha256": "819932f7823539e691ddabd0052892a0ee057c50562b70835beccc7c1176e5ba"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/check_machinery.py",
+      "sha256": "444f91a89bf2013b5464c4127c70cb5d97bd9de9b0830e7f50b7e8d65ca32a63"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/ADDITIVE_SQUARES_AT_POSITIVE_DRIFT.md",
+      "sha256": "3e17ec6ad68b73c93f414ec31734b3c5ca2e0d1fab4a663bc4656e683d904676"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/COUNTED_BLOCKS_AND_PROGRESSIONS.md",
+      "sha256": "5be675bc96df7a073de88b77dc6c9f7461965ae60951a14deaa52eaa2dc92ff1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/CountedBlockCopy.lean",
+      "sha256": "67bca9b6da0d76cb9eaf0448e6294bfa5546952b69bea9656237e5d5d844c3a8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/MATCHED_INTERCEPT_AND_SMOOTH_PARTS.md",
+      "sha256": "c128cfafbdf08fbb13583537389e97b926c202d747f23767c1156e3c5a6225d2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/PointwiseCongruence.lean",
+      "sha256": "a892cfaccd014b2ab72d09ee1c9c375952bb51ec031fb8cfe77a757958b6a7c3"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/ZERO_GRADE_SHELLS.md",
+      "sha256": "2444c9365834f2993affd72283b35e4e0e45d36908f6604e5f40ad4452aebff7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/check_matched_machinery.py",
+      "sha256": "03fc12dc107fbfc661b8cefe316b7abfa2b0a5b6ef66eb3096295da4625b2ce8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/FRACTIONAL_GRADE_CLASSIFICATION.md",
+      "sha256": "f837f14a4b9da4be1118af2a64f96f5c1135e8d8a389c7e7ccbf203c7abe046b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/PhysicalInverseBudget.lean",
+      "sha256": "629b30a7f1c1214d456fee88ed13508db2ab3e0619a9b7da3fe59152dfcb84a6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/SIBLING_MINIMUM_CLOCK.md",
+      "sha256": "c163e530112f086f9f202f763c3abe816b5ef989566bc0e5bbfa8a2a16953fb0"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/check_minimum_clock.py",
+      "sha256": "5f6f32314313a1fa1754c18ab2646796648fc8b1b7fee31e36387c6399caccea"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/CRITICAL_REVERSE_ENTROPY.md",
+      "sha256": "4dab88550840cf9d0564da49027b631097448aca0ced9b64b48e7836283b54f9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/EXTENDED_TILTED_INTERVAL.md",
+      "sha256": "062a4aeb9b91516c9b88f7d2c8b5897f3b3b3281e656f9a5142c1448cc941445"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/LINEAR_DEVIATION_ROWS.md",
+      "sha256": "240e66b21e8bde36108adb352f98be42b47b53c380ff8db17b07bc6087554a47"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/SHARP_MODERATE_DEVIATIONS.md",
+      "sha256": "c3f7efed2cce09a5527c436d4d4e9063cc862b53c7a2b95cab0e33121e5c893b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/SLOW_TERMINATING_SPECTRUM.md",
+      "sha256": "d61ac5d06107610e85c128cf45e5e61de3af401905549b26365979c5c3846b0c"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/STOPPING_TIME_TAIL_RIGIDITY.md",
+      "sha256": "0531fc1d55a661f1e74beecfdc348f5e6c6457488a46ed75926fbc782fe0bcc6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/TILTED_ENTROPY_TRANSFER.md",
+      "sha256": "39f61850b2995faa304463ec5aebc779f7c2f00f0e41d4e2116bf13af4ad8ab3"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/check_entropy_transfer.py",
+      "sha256": "fbb9a1e7a20057675d65f0fc4acbfb7663078c7c5ae9c4fa130a4fcb7fea3e82"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase4/check_tilted_interval.py",
+      "sha256": "b6a063f0f8da26a6a6027f02ece5bb9a4c109f0b856bd0aaf9ff7f663974d97d"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/CONDITIONAL_ENTROPY_COUNTEREXAMPLE.md",
+      "sha256": "369b9290e6b97a5f23c88ce0cdad4ba8b06ddb9e13d5bad351ae62662694c6c6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/CRITICAL_BELLMAN_LIFTS.md",
+      "sha256": "84d90f04ff045b083c941df93d10417b37ee5650d2ee9bea680adae325fee6b3"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/CYCLIC_TRANSPORT.md",
+      "sha256": "b94a1bd4d32654b665e25b35dd5309402ab988630f67ddaad0275688b33ac031"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/TritTransport.lean",
+      "sha256": "339664174671b1ddc5f09ee7c05b4d58bbd77e759b507edcb87f002a2fed7141"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/UNIFORM_INVERSE_PRESSURE.md",
+      "sha256": "9140a11cad9800d49e54845f2cab36b3559f89404faabda2cdcf71176869718e"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/WindowOccupation.lean",
+      "sha256": "4f8d5e6a439556510160950483ec24adfd04afd9a92f949f6d11fa35a9198cfc"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/check_bellman_lifts.cpp",
+      "sha256": "fd613c7ebdaa266ea5b1c9fb746d3e590663a1080eb99e898e77bc4fbeb7043d"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase5/check_cyclic_transport.py",
+      "sha256": "839bd39233d1bdf70258da8162f89fe1a53d231608951588729f7f776fde6a02"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase6/POSITIVE_CORRECTION_SUMS.md",
+      "sha256": "3884aa9c710a910f0fd60d63f724eba71136a05aec91c8034500374c63050cca"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase6/PRESCRIBED_SPEED_MARKS.md",
+      "sha256": "80a60ec6ce6110b04c35332ea81dc66856f0b327d1607e511325964c05b1b26e"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/CRITICAL_AFFINE_OVERLAPS.md",
+      "sha256": "961c72899474824bb381b85dc296655c9fea4617d10b75b9cfc58490831771ed"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/DETERMINISTIC_COUNTED_FUSION.md",
+      "sha256": "bdcc7d6c812e932937c91632d1d09c2212c5d3fc4c29ee08a5f328ea8d678ae1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/FusionSteering.lean",
+      "sha256": "c5836ac500922dca812301a7a6ca2bbfb404fdd669b0e0a6dbcca3d031b54963"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/GROWING_INTEGER_JITTER.md",
+      "sha256": "6da1a87290da8c65128ea0725b69a573632acd13f7037cb5e19a8acf16b2891d"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/POSTERIOR_EDGE_LOSS.md",
+      "sha256": "9db3fdf439b692e343fe4556fdb52fc4bb798e60496100d01421bf7f41b683cb"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase7/check_affine_overlap.py",
+      "sha256": "fb429c52f573a7d52e0ec21f8af40176f0b86a2304d12f20c277516c4821a205"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase4/AFFINE_MEMBERSHIP.md",
+      "sha256": "b37efc1d0e5b977feec3e7d3c126e4fb07b7b53c551470c55f1a8360c1c2a496"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase4/AffineWordDecoder.lean",
+      "sha256": "e405b52e9cd8ee560072543ce9f5cb46ba2e6fddb2c64d2dba56fd01ab3bf078"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase4/check_affine_decoder.py",
+      "sha256": "85f7b215a055def50023891e7901aa7381ecee1fe9c30ebb0be7b8ec2f239ab2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase5/BINARY_REACHABILITY_WITNESS.md",
+      "sha256": "e2204984b633cba50d568d047933b44ce5c8d7fb8ce8fe8ba196f30886edd629"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase5/check_binary_witness.py",
+      "sha256": "4db1887ed1ff5c00b8256d84eb131fad27f53be367a386916247384efa09a959"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase6/RECENT_LOGARITHM_INPUT.md",
+      "sha256": "ddfffcc847d5a60ea45119656bcd7a586ecaab933ae7d2e8cd86e4f608fc48ca"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase6/replay_log_ratio.py",
+      "sha256": "9406dd83a58c9ac4cacbfb49e9f16314d2835e233b251eff49f0ee219778a84f"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase7/AffineTransporter.lean",
+      "sha256": "2c9f7025e90150caedb43667bae0b1f51dc7b1c79d0787cfaaaa0e9dc231c342"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/phase7/FINITE_AFFINE_TRANSPORTER.md",
+      "sha256": "ce4124f2f39d1b7d766e18a0e361fa938735548929b60d03dc9fb9c3c9c336b8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/replay_lean.py",
+      "sha256": "f84653f8f96b6ae3bf45f09e88e5bf26d339f086211a4270f43fccf858ec4f1e"
+    }
+  ]
+}

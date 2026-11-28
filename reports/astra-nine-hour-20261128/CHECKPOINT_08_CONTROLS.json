@@ -1,0 +1,206 @@
+{
+  "scope": "Exact bounded controls for checkpoint eight; written infinite conclusions have a separate review.",
+  "started_utc": "2026-11-28T04:19:44.219863+00:00",
+  "programs": [
+    {
+      "source": "cycles/phase8/grid_clock_controls.py",
+      "sha256": "b29c18d3d3c36205d0830321a586c698df59508ecd1a6589d9853f788b6d4186",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/cycles/phase8/grid_clock_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "3456 actual-edge prefix identities and first positive thresholds passed.\n2048 nested adjoint clocks, 21 strict Farey jumps, all best uppers through q=41.\nDisjoint periodic supports at K=2 passed.\nExact upper-clock transitions near K=1079 and 78663 passed.\n21 prescribed integer rounding segments through 200 dates passed.\n",
+          "stderr": "",
+          "seconds": 0.378
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/cycles/phase8/grid_clock_controls.py"
+          ],
+          "exit_code": 0,
+          "stdout": "3456 actual-edge prefix identities and first positive thresholds passed.\n2048 nested adjoint clocks, 21 strict Farey jumps, all best uppers through q=41.\nDisjoint periodic supports at K=2 passed.\nExact upper-clock transitions near K=1079 and 78663 passed.\n21 prescribed integer rounding segments through 200 dates passed.\n",
+          "stderr": "",
+          "seconds": 0.266
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "escape/phase8/check_tilted_ordinary_trace.py",
+      "sha256": "64b2b8e1ee4c5905d7ba8268cc07c0aa878666d027132a42f3d9247e045ed730",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/escape/phase8/check_tilted_ordinary_trace.py"
+          ],
+          "exit_code": 0,
+          "stdout": "exact stationary quotient coordinates 364\ncomplete first-digit posterior sums over higher exponents 81\nsigned literal words, true exponent and weighted trace identities 7812\n",
+          "stderr": "",
+          "seconds": 0.381
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/escape/phase8/check_tilted_ordinary_trace.py"
+          ],
+          "exit_code": 0,
+          "stdout": "exact stationary quotient coordinates 364\ncomplete first-digit posterior sums over higher exponents 81\nsigned literal words, true exponent and weighted trace identities 7812\n",
+          "stderr": "",
+          "seconds": 0.323
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "machinery/phase8/check_binary_affine.py",
+      "sha256": "8905077f0724058d19a581c7e0e0021f4c457ea2e2c995798d03e8c7863abd45",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/machinery/phase8/check_binary_affine.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 12 affine maps, 9206 exact likelihoods, 5456 joint ranks, 294 same-total/same-trit neighbors\n",
+          "stderr": "",
+          "seconds": 0.902
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/machinery/phase8/check_binary_affine.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 12 affine maps, 9206 exact likelihoods, 5456 joint ranks, 294 same-total/same-trit neighbors\n",
+          "stderr": "",
+          "seconds": 0.934
+        }
+      ],
+      "same_output": true
+    },
+    {
+      "source": "machinery/phase9/check_strict_window.py",
+      "sha256": "450c4d26cd4c7dace27262265c5f45841fd564d8d00390d464dfd2e1ed7dd817",
+      "runs": [
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/machinery/phase9/check_strict_window.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 19531 negative-word tests, 240 signed gate classes, 240 genuine positive lift comparisons, 720 exhaustive Haar reset laws\n",
+          "stderr": "",
+          "seconds": 6.72
+        },
+        {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "-O",
+            "/workspace/scratch/f139035b63c2/checkpoint8-frozen/machinery/phase9/check_strict_window.py"
+          ],
+          "exit_code": 0,
+          "stdout": "PASS 19531 negative-word tests, 240 signed gate classes, 240 genuine positive lift comparisons, 720 exhaustive Haar reset laws\n",
+          "stderr": "",
+          "seconds": 6.685
+        }
+      ],
+      "same_output": true
+    }
+  ],
+  "cpp": {
+    "source": "cycles/phase8/replay_grid_clock.cpp",
+    "sha256": "4e86920037f6b36f8ca0125f184b9631f9d479afe6d91a2684c523b7852f14ad",
+    "runs": [
+      {
+        "kind": "normal",
+        "compile_argv": [
+          "g++",
+          "-std=c++20",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O2",
+          "/workspace/scratch/f139035b63c2/checkpoint8-frozen/cycles/phase8/replay_grid_clock.cpp",
+          "-o",
+          "/workspace/scratch/f139035b63c2/checkpoint8-grid-normal"
+        ],
+        "compile_exit": 0,
+        "compile_stdout": "",
+        "compile_stderr": "",
+        "argv": [
+          "/workspace/scratch/f139035b63c2/checkpoint8-grid-normal",
+          "1",
+          "2",
+          "1078",
+          "1080",
+          "78662",
+          "78663"
+        ],
+        "exit_code": 0,
+        "stdout": "1 2/1\n2 2/1\n1078 65/41\n1080 474/299\n78662 485/306\n78663 10754/6785\n",
+        "stderr": "",
+        "rejected_inputs": [
+          "0",
+          "-1",
+          "18446744073709551615",
+          "2x"
+        ]
+      },
+      {
+        "kind": "ubsan",
+        "compile_argv": [
+          "g++",
+          "-std=c++20",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-O1",
+          "-fsanitize=undefined",
+          "-fno-sanitize-recover=all",
+          "/workspace/scratch/f139035b63c2/checkpoint8-frozen/cycles/phase8/replay_grid_clock.cpp",
+          "-o",
+          "/workspace/scratch/f139035b63c2/checkpoint8-grid-ubsan"
+        ],
+        "compile_exit": 0,
+        "compile_stdout": "",
+        "compile_stderr": "",
+        "argv": [
+          "/workspace/scratch/f139035b63c2/checkpoint8-grid-ubsan",
+          "1",
+          "2",
+          "1078",
+          "1080",
+          "78662",
+          "78663"
+        ],
+        "exit_code": 0,
+        "stdout": "1 2/1\n2 2/1\n1078 65/41\n1080 474/299\n78662 485/306\n78663 10754/6785\n",
+        "stderr": "",
+        "rejected_inputs": [
+          "0",
+          "-1",
+          "18446744073709551615",
+          "2x"
+        ]
+      }
+    ]
+  },
+  "passed": true,
+  "finished_utc": "2026-11-28T04:19:58.802591+00:00"
+}

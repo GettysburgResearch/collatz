@@ -1,0 +1,113 @@
+{
+  "scope": "Checkpoint-four finite exact controls in normal and optimized Python; imported asymptotic theorems are not formalized by these runs",
+  "started_utc": "2026-11-28T01:44:33.844364+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "research/astra-nine-hour-20261128/phase4/check_affine_decoder.py",
+      "sha256": "85f7b215a055def50023891e7901aa7381ecee1fe9c30ebb0be7b8ec2f239ab2",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 3.137,
+          "stdout": "{\"accepted_box_codes\": 63, \"complete_coefficient_box_cases\": 57770, \"independent_forward_words\": 32767, \"malformed_matrices\": 7, \"scope\": \"bounded exact affine-code controls, not Collatz reachability\", \"sha256\": {\"AffineWordDecoder.lean\": \"e405b52e9cd8ee560072543ce9f5cb46ba2e6fddb2c64d2dba56fd01ab3bf078\", \"check_affine_decoder.py\": \"85f7b215a055def50023891e7901aa7381ecee1fe9c30ebb0be7b8ec2f239ab2\"}, \"unique_matrices\": 32767}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 2.973,
+          "stdout": "{\"accepted_box_codes\": 63, \"complete_coefficient_box_cases\": 57770, \"independent_forward_words\": 32767, \"malformed_matrices\": 7, \"scope\": \"bounded exact affine-code controls, not Collatz reachability\", \"sha256\": {\"AffineWordDecoder.lean\": \"e405b52e9cd8ee560072543ce9f5cb46ba2e6fddb2c64d2dba56fd01ab3bf078\", \"check_affine_decoder.py\": \"85f7b215a055def50023891e7901aa7381ecee1fe9c30ebb0be7b8ec2f239ab2\"}, \"unique_matrices\": 32767}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase4/moving_power_controls.py",
+      "sha256": "fa5b50e3c8c2528974e3794d7144532fe40729e815091826761c01afa19f04d4",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.285,
+          "stdout": "1398 positive three-template displays; 1382 primitive, 1376 signed jump, 151 unequal compared denominators, 9 zero centered sum.\nPrimitive (26,16) half pair has C_A=73213, C_B=14201, full C=596685085, full nonprincipal cancellation 14753, reduced q=1631.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.272,
+          "stdout": "1398 positive three-template displays; 1382 primitive, 1376 signed jump, 151 unequal compared denominators, 9 zero centered sum.\nPrimitive (26,16) half pair has C_A=73213, C_B=14201, full C=596685085, full nonprincipal cancellation 14753, reduced q=1631.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/escape/phase4/check_shell_phase.py",
+      "sha256": "34193884d70b26bd6209578565700000296c7ab86ee3a94e24578df978423e29",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 1.207,
+          "stdout": "{\"harmonic\": {\"harmonic_probabilities_floor_ppm\": [[16, 0, 1000000], [16, 1, 1000000], [16, 11, 633189], [16, 25, 262418], [16, 50, 315088], [16, 75, 331377], [16, 100, 219672], [16, 150, 335408], [64, 0, 1000000], [64, 1, 1000000], [64, 11, 908194], [64, 25, 506097], [64, 50, 433652], [64, 75, 256373], [64, 100, 259659], [64, 150, 241168], [256, 0, 1000000], [256, 1, 1000000], [256, 11, 987307], [256, 25, 729647], [256, 50, 508241], [256, 75, 372958], [256, 100, 247565], [256, 150, 265083], [1024, 0, 1000000], [1024, 1, 1000000], [1024, 11, 1000000], [1024, 25, 853240], [1024, 50, 565366], [1024, 75, 448856], [1024, 100, 277464], [1024, 150, 249129]], \"integer_phase_tests\": 21760, \"protected_high_prefixes\": 8886}, \"shell\": {\"actual_meetings\": 465736, \"candidate_pairs\": 1252368, \"finite_floor_witnesses\": 465736, \"first_zero_at\": [[20, 55], [31, 66], [64, 90], [100, 78], [159, 85], [255, 111]], \"nonzero_single_date_at_first_zero\": 5, \"tv_monotonicity_checks\": 1338}}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.019,
+          "stdout": "{\"harmonic\": {\"harmonic_probabilities_floor_ppm\": [[16, 0, 1000000], [16, 1, 1000000], [16, 11, 633189], [16, 25, 262418], [16, 50, 315088], [16, 75, 331377], [16, 100, 219672], [16, 150, 335408], [64, 0, 1000000], [64, 1, 1000000], [64, 11, 908194], [64, 25, 506097], [64, 50, 433652], [64, 75, 256373], [64, 100, 259659], [64, 150, 241168], [256, 0, 1000000], [256, 1, 1000000], [256, 11, 987307], [256, 25, 729647], [256, 50, 508241], [256, 75, 372958], [256, 100, 247565], [256, 150, 265083], [1024, 0, 1000000], [1024, 1, 1000000], [1024, 11, 1000000], [1024, 25, 853240], [1024, 50, 565366], [1024, 75, 448856], [1024, 100, 277464], [1024, 150, 249129]], \"integer_phase_tests\": 21760, \"protected_high_prefixes\": 8886}, \"shell\": {\"actual_meetings\": 465736, \"candidate_pairs\": 1252368, \"finite_floor_witnesses\": 465736, \"first_zero_at\": [[20, 55], [31, 66], [64, 90], [100, 78], [159, 85], [255, 111]], \"nonzero_single_date_at_first_zero\": 5, \"tv_monotonicity_checks\": 1338}}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase4/check_entropy_transfer.py",
+      "sha256": "fbb9a1e7a20057675d65f0fc4acbfb7663078c7c5ae9c4fa130a4fcb7fea3e82",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.104,
+          "stdout": "finite occupation nonzero state-action pairs [6, 30, 108]\nexact centered convolution cases 60\ntrue clock, affine offset and disjoint row words 2511\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.233,
+          "stdout": "finite occupation nonzero state-action pairs [6, 30, 108]\nexact centered convolution cases 60\ntrue clock, affine offset and disjoint row words 2511\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase4/check_tilted_interval.py",
+      "sha256": "b6a063f0f8da26a6a6027f02ece5bb9a4c109f0b856bd0aaf9ff7f663974d97d",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.302,
+          "stdout": "theta interval 21/100 through 1/2, rational cells 2900\nleft Riemann rectangles 8211 time grid 4096\nminimum lower gap numerator 597872500555307996517 denominator 1208925819614629174706176 at grid start 2100\nall gaps exceed 1/10000\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.347,
+          "stdout": "theta interval 21/100 through 1/2, rational cells 2900\nleft Riemann rectangles 8211 time grid 4096\nminimum lower gap numerator 597872500555307996517 denominator 1208925819614629174706176 at grid start 2100\nall gaps exceed 1/10000\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    }
+  ],
+  "finished_utc": "2026-11-28T01:44:39.956326+00:00"
+}

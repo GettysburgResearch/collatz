@@ -1,0 +1,255 @@
+{
+  "checkpoint": 3,
+  "created_utc": "2026-11-28T01:09:46.348686+00:00",
+  "scope": "Reviewed scientific sources through phase three; README updated after frozen Lean replay; phase-four and draft files excluded",
+  "sources": [
+    {
+      "path": "research/astra-nine-hour-20261128/AffineReachability.lean",
+      "sha256": "a9448159fe1f6b288610faedce4df1ae2f7496b204feb5cc3d825f1a554ed3a1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/BROAD_DECIDABILITY_SCREEN.md",
+      "sha256": "61e65db8e604cdf03071351cf2a4e32d863d65921152189ab540d70e75b4be97"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/FINITE_CRITICAL_TAIL.md",
+      "sha256": "0d01b40425401b17d9191428f4e75798a6042132d28d5632b15bf2d160b71212"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/FiniteCriticalTail.lean",
+      "sha256": "0f4f74d0c764d5402683242e63b99a344b674d5cdcd92fd1768ef5d6418f34bb"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/NativeSizeRecursion.lean",
+      "sha256": "c54e6bff6327bf09b865762964afa8c72d1c8ae4d09a31f816ce9c2367836135"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/README.md",
+      "sha256": "856f04a170a207107ddc2812b1136bf8282826478406ed9c30ae9aeaef35f9d8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_affine_reachability.py",
+      "sha256": "e697d50cbecabd3f0aee0176fbac586dce3cf566ee3cb8c95f637f672bd9ae20"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_critical_probe.py",
+      "sha256": "817e08ccb87a66ae15ee9d458ee8b1380f31ffe2688cf8394debd7543d3b7180"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/check_native_size_recursion.py",
+      "sha256": "5ff3dd21c566de09d8d26e226dffc1eea4fb7a73282cec0a6eee5b9525a7e50a"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/critical_tail_probe.cpp",
+      "sha256": "e8f0fbba3cf213770fdb43b1223c9c8aa6a3f662a3a651b07d5ca843cbed7363"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/CONTRACTING_CALENDARS.md",
+      "sha256": "9bb2600b5d23f7197a655536ae60bd138129b51c9d0a393c1e3dc6689589a3d8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/ContractingCalendar.lean",
+      "sha256": "c3b0afd7686f90e4d0a2c422d3243096cf6cc458760260e44a08fc5c6da640a2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/MODULAR_QUOTIENTS.md",
+      "sha256": "d0e6c236f2ce4b2611443da5d7b2d5a3b2a6cd304495e52f98c3c3477826e576"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/ModularQuotient.lean",
+      "sha256": "7685e2492c7d7c27bb5e85656b3e7094cb9fc70e5a1cc3ddc94bb2ef8803b095"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/README.md",
+      "sha256": "a06815c3e957b8ef757a3b9c08828a72cd5578c884b5887752f721bf20a34270"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/check_block_carries.py",
+      "sha256": "4599f3ccaf60554212775c20451deb0c25b82293f5eb4cd62d687f55ccb64703"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/BOUNDARY_FAMILIES.md",
+      "sha256": "8c58eb357c3eeb32e662addd2f9a4104416895c7f9aba135638677db83d3d3a9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/ORBIT_INTERPOLATION.md",
+      "sha256": "ffc0b4ccebab21f609f67377c313f45d67c2acecebc502fe1fcd01534c27bedd"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SELECTED_ROOT.md",
+      "sha256": "e891f80abcd79e747c90e723a4ff930659b10bd64b4833d78b7b405df5498f38"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SEMIGROUP_BOUNDARY.md",
+      "sha256": "05de981ef8874c9826841e680ec1a16565746538d63bd81474c2ff4ba9ad10d7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/SemigroupPhysical.lean",
+      "sha256": "334b3b247f1de30d38f325fe2808dd7845293a20dd14de0044e8744b197585e4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase2/semigroup_controls.py",
+      "sha256": "6fe0c508ed6fa0570207b4a8013c0c5d94dd659c16a7735361be2ae165c2eb21"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/COLORED_SELECTED_ROOT.md",
+      "sha256": "f1f48fd2cff8f060e94641f0f525ebe8cd28b88acd89e2454030ba4d4c8195f5"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/PHYSICAL_CONDUCTOR.md",
+      "sha256": "4f9d44e2af966af73fdc9e171a4e312ad8661e27907cc1a86cabc90ceecb6bb9"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/POSITIVE_LIFT_OPTIMUM.md",
+      "sha256": "220e5f893025c86e48ca8d3703a607825f0e24774c63806d0d860ea794c3a9ef"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/colored_selected_controls.py",
+      "sha256": "0b5ad815be48238af8de4f593fddf6f23514ff90ebf73730a3c4ea52c66be8d7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/cycles/phase3/positive_lift_controls.py",
+      "sha256": "0cdf73ef567cf12da5d59f4c34b5fe6ec502f7a73bfeb0650807e2d54d44ad57"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/AffineCorrection.lean",
+      "sha256": "0c930f72b4bda260886fc52e422d58edbe89df176dafb4f380bcaaf4f2716065"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/CRITICAL_CORRECTION.md",
+      "sha256": "9136c9a7bfda09d388cc9e675c1c402dc5e5a13bf7986835d450348cb3cbbd3e"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/MinimumWindow.lean",
+      "sha256": "97e0c142a6020e948b4c368132709c4daa444185e168e05154cb5da249de7614"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/POSITIVE_ONE_SITE.md",
+      "sha256": "d3b8fc6ff28f133703567aefd7e52c08c1269b3e73f5972fb7c0c42905191b78"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/TERMINAL_WINDOWS.md",
+      "sha256": "6929f6a5ba91d20b9e8709ceca66b9cf59938ae3cb54f4467940854c30d435ec"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/UNIFORM_EARLY_ARRIVALS.md",
+      "sha256": "d10de43499fbb3f74e9afb39be7066ea4b7c31e0852d1f2023b4b46a50ac5cd4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/MOVING_CLOCKS.md",
+      "sha256": "146c75a024988c8a244c62c0afacc8291dd8c269f32727e82e01e9661a88be32"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/NATIVE_BINOMIAL_TRANSFER.md",
+      "sha256": "8c0038b10e8861746a82726b4854c084ceecf2c596b44fba964f63eb70a52edc"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/REVERSED_ANCESTOR_RAY.md",
+      "sha256": "35d29408c38e88f2234e7e35e4187fff6dd5f9b93df3b5cc0e9db7df1ab03513"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase2/SHORT_INTERVAL_PREDECESSORS.md",
+      "sha256": "8d0732ff261f5ca3070e5614580c284bda07e3c5fa46092153d289be607c2bc4"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ENDPOINT_CLOCK_SPECTRUM.md",
+      "sha256": "358dbc787271804c10dcc2d0195bca9f42bff0bb27a48897a936a9367f258e00"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ESCAPE_DILATION_VARIATION.md",
+      "sha256": "6dcb42a2630df266b7ff34b5b382dc816c84a147d1292d1f67cde6b4db7a7132"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/NATIVE_CLOCK_ATOMS.md",
+      "sha256": "beca0ff81f04c5a69e08ef019f26a4337904c47f5967f57c6181df11d440273b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/NonresonantMerge.lean",
+      "sha256": "0aa4b885ccc62d5ba9992b82e8f3e37c4ffe49c24ae274ff95f583f05135f988"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/ONE_ENDPOINT_CHARACTER.md",
+      "sha256": "db7b3710aa0f429317726e76bdf2905284a4265b2ea47429aaaa5e89378a4d9f"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/SEPARATED_SOURCE_SHELLS.md",
+      "sha256": "3d795a88ae60ce513bfb7dfdd36b619feb4531f0bd156c57fe95e784beaf779c"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/escape/phase3/check_nonresonant_merge.py",
+      "sha256": "a6a18018506c40a6fc652714a3499a2fb30c3dfb38868de3377009d73c468d33"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/ARITHMETIC_PROGRESSION_FLOOR.md",
+      "sha256": "9f9c76c248f75f82f7c3c701b44e4fe6a797bdc67b4b7879303815c83f8d3d95"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/POINTWISE_CONGRUENCE.md",
+      "sha256": "7ca2ec0bc210a7302b4f94c871918c30779bbb23f05c99a49f1cd5d9eea78c53"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/PROFINITE_ANCESTORS.md",
+      "sha256": "13dbd65bd2034db3a5b42fa31b153136060b823d9304d053dcf381c4d612cdb1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/ProfiniteAncestors.lean",
+      "sha256": "96b399b5731ce09e95deb15b9ea2d2e72d83b9745ae6b75862424bdb71656be6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/RECENT_INPUTS.md",
+      "sha256": "819932f7823539e691ddabd0052892a0ee057c50562b70835beccc7c1176e5ba"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/check_machinery.py",
+      "sha256": "444f91a89bf2013b5464c4127c70cb5d97bd9de9b0830e7f50b7e8d65ca32a63"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/ADDITIVE_SQUARES_AT_POSITIVE_DRIFT.md",
+      "sha256": "3e17ec6ad68b73c93f414ec31734b3c5ca2e0d1fab4a663bc4656e683d904676"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/COUNTED_BLOCKS_AND_PROGRESSIONS.md",
+      "sha256": "5be675bc96df7a073de88b77dc6c9f7461965ae60951a14deaa52eaa2dc92ff1"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/CountedBlockCopy.lean",
+      "sha256": "67bca9b6da0d76cb9eaf0448e6294bfa5546952b69bea9656237e5d5d844c3a8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/MATCHED_INTERCEPT_AND_SMOOTH_PARTS.md",
+      "sha256": "c128cfafbdf08fbb13583537389e97b926c202d747f23767c1156e3c5a6225d2"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/PointwiseCongruence.lean",
+      "sha256": "a892cfaccd014b2ab72d09ee1c9c375952bb51ec031fb8cfe77a757958b6a7c3"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/ZERO_GRADE_SHELLS.md",
+      "sha256": "2444c9365834f2993affd72283b35e4e0e45d36908f6604e5f40ad4452aebff7"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase2/check_matched_machinery.py",
+      "sha256": "03fc12dc107fbfc661b8cefe316b7abfa2b0a5b6ef66eb3096295da4625b2ce8"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/FRACTIONAL_GRADE_CLASSIFICATION.md",
+      "sha256": "f837f14a4b9da4be1118af2a64f96f5c1135e8d8a389c7e7ccbf203c7abe046b"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/PhysicalInverseBudget.lean",
+      "sha256": "629b30a7f1c1214d456fee88ed13508db2ab3e0619a9b7da3fe59152dfcb84a6"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/SIBLING_MINIMUM_CLOCK.md",
+      "sha256": "c163e530112f086f9f202f763c3abe816b5ef989566bc0e5bbfa8a2a16953fb0"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/machinery/phase3/check_minimum_clock.py",
+      "sha256": "5f6f32314313a1fa1754c18ab2646796648fc8b1b7fee31e36387c6399caccea"
+    },
+    {
+      "path": "research/astra-nine-hour-20261128/replay_lean.py",
+      "sha256": "f84653f8f96b6ae3bf45f09e88e5bf26d339f086211a4270f43fccf858ec4f1e"
+    }
+  ]
+}
