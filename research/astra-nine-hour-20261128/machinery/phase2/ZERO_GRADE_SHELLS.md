@@ -2,6 +2,8 @@
 
 **Written deduction from the pinned ordinary posterior and the fixed-total atom floor.** If an ordinary positive odd orbit escapes, each sufficiently large dyadic corrected-height level of its synchronous class contains exponentially many distinct ordinary integers. They lie in a relative real interval shrinking to zero. With the proposed mixed-modulus floor of checkpoint one the same statement holds in every moderately growing odd arithmetic progression. The counting and growth statements without a progression use only the earlier pure ternary atom floor.
 
+**Precedence.** PR193's graded correction theorem already proves the unmodulated lower bound \(c_m(4/3)^\ell/\sqrt{\ell}\) at every sufficiently large dyadic level, including the first-hitting argument and uniform approach of the selected real marks to one. It also identifies the full fixed-grade correction accumulation sets. The additions below are the same-level count in growing odd progressions, the growth-sensitive counting exponent (4) and its fractional-moment implication (5), and the stated concentration consequences for the original zero-overshoot posterior in (6). [PR193, graded correction sets and large equal-clock classes, equation (2)](https://github.com/GettysburgResearch/collatz/blob/100ba857239a180840930765047d65ede92abeec/research/astra-six-hour-20261127/escape/GRADED_CORRECTION_SETS.md)
+
 Let \(m\) be a positive odd unit, \(a_j=U^jm\) an injective orbit, \(A_j=\sum_{i<j}v_2(3a_i+1)\), \(\Gamma_j=\{x>0:x\text{ odd},U^jx=a_j\}\), and \(\Gamma=\bigcup_j\Gamma_j\). Set \(d=\log(4/3)\) and
 \[
  P(x)=x\prod_{i\ge0}\left(1+\frac1{3U^i x}\right),\qquad

@@ -31,3 +31,11 @@ The second publication includes the [expanded written review](CHECKPOINT_02_REVI
 build before the larger snapshot. The first published commit's exact
 [integrity receipt](CHECKPOINT_01_PUBLISHED_INTEGRITY.json) and
 [publication record](CHECKPOINT_01_PUBLICATION.json) are retained here.
+
+The third publication adds the [ordinary-observable and cycle review](CHECKPOINT_03_REVIEW.md),
+[complete thirteen-module replay](CHECKPOINT_03_LEAN.json),
+[five paired finite controls](CHECKPOINT_03_CONTROLS.json) and the
+[reviewed-source manifest](CHECKPOINT_03_SOURCES.json). It preserves the
+second published commit's exact [integrity receipt](CHECKPOINT_02_PUBLISHED_INTEGRITY.json)
+and [publication record](CHECKPOINT_02_PUBLICATION.json). The third Lean
+replay audits 353 declarations, including 39 private declarations.

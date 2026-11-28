@@ -69,6 +69,30 @@ and why the recent additive-square-free construction blocks a
 [time-word repetition argument](machinery/phase2/ADDITIVE_SQUARES_AT_POSITIVE_DRIFT.md).
 Neither is an ordinary Collatz counterexample.
 
+## Third checkpoint: decisive observables and structural limits
+
+The [third claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_03_REVIEW.md)
+distinguishes new deductions, earlier results, imported analytic inputs and
+the exact Lean scope.
+
+| Result | What it establishes | What remains |
+|---|---|---|
+| [Fixed separated source shells](escape/phase3/SEPARATED_SOURCE_SHELLS.md) | At a late native clock, the total-variation distance between the endpoint laws from [X,21X/20] and its fivefold dilation tends exactly to the density of escaping sources. | Proving those two ordinary endpoint laws agree would exclude escape. No such homogenization is assumed. |
+| [One endpoint character](escape/phase3/ONE_ENDPOINT_CHARACTER.md) | A single co-rotated time-one Mellin-moment difference has limiting absolute value between one sixth and twice the escaping density. All escape components contribute coherently. | An unconditional vanishing theorem for this explicit source average is missing. |
+| [Colored selected roots](cycles/phase3/COLORED_SELECTED_ROOT.md) | Active cyclotomic characters determine the exact physical period. Finite resultant bounds retain shared prime powers. Prime-power nonresonance and an exact composite resonance are separated. | Full cancellation for arbitrary high-conductor boundaries is uncontrolled. |
+| [Physical conductor](cycles/phase3/PHYSICAL_CONDUCTOR.md) and [positive-lift optimum](cycles/phase3/POSITIVE_LIFT_OPTIMUM.md) | Thin conductors cannot occur in an infinite ordinary-cycle family. Positive complete formal lifts have exact optimum D times the physical minimum; a deep S-unit input extends the obstruction to small numerical smooth lifts at large clocks. | High conductors, signed identities and nonsmooth certificates require other arguments. |
+| [Whole-grade classification](machinery/phase3/FRACTIONAL_GRADE_CLASSIFICATION.md) | A fractional moment of one whole grade is finite exactly when all positive-grade minimum heights grow exponentially. Its correction compactum has an exact upper-box/counting dimension. | The required uniform growth is not proved on a hypothetical escape. |
+| [Minimum physical clocks](machinery/phase3/SIBLING_MINIMUM_CLOCK.md) | Exact finite cutoffs cover every synchronous side witness. Matched real shells sharpen the necessary fractional separation on fast escaping rays. | A competing small source at enough genuine ray addresses is still missing. |
+| [Broader decision methods](BROAD_DECIDABILITY_SCREEN.md) and [AffineReachability](AffineReachability.lean) | Integer affine endpoints force every branch to be legal, but every odd-modulus endpoint quotient succeeds without that legality. Recent decision theorems are screened against the actual problem's interface. | Neither modular reachability nor a convex transition relaxation resolves positive integer reachability. |
+
+The [endpoint clock spectrum](escape/phase3/ENDPOINT_CLOCK_SPECTRUM.md),
+[native clock atom bound](escape/phase3/NATIVE_CLOCK_ATOMS.md) and
+[dilation-variation identity](escape/phase3/ESCAPE_DILATION_VARIATION.md)
+record the profile calculations behind the stronger observables. The
+fixed-shell result has a shorter proof using the finite correction ceiling
+and the late periodic-phase law; it does not require the additional
+compact-null support hypothesis in the infinitesimal variation identity.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -101,11 +125,12 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [second complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_02_LEAN.json)
-passed **10 modules and 274 declarations, including 32 private
+The [third complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_03_LEAN.json)
+passed **13 modules and 353 declarations, including 39 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
-exclusion, and the exact native source-population recurrence. The
+exclusion, the exact native source-population recurrence, affine endpoint
+legality, nonresonant merger inequalities and physical inverse budgets. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.
