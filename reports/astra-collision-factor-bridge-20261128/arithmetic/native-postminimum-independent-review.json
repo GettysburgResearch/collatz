@@ -1,0 +1,18 @@
+{
+  "schema": "collatz-independent-written-review/v1",
+  "reviewer": "arithmetic_proof_attack",
+  "reviewed_utc": "2026-11-28T10:41:46.848354+00:00",
+  "status": "PASS_WITH_NAMED_EXTERNAL_INPUTS",
+  "target": "research/astra-collision-factor-bridge-20261128/collision/NATIVE_POSTMINIMUM_NO_RENEWAL.md",
+  "target_sha256": "89cc926e7f28dfc6f853a35d7cf0e1b9b0ecbb234f9255d9378f2047fc29a8fa",
+  "directly_reconstructed": [
+    "The exact iterate continuation identity, oddness of all global minima, and the two-step classification m=1 or m congruent3 mod4.",
+    "Proper minimum law gives the countable mixture of true future tapes by finite-fiber truncation, with no growing-word/source-cutoff interchange.",
+    "Countably supported limiting infinite tape law is singular to fair Bernoulli; finite empirical countability alone is not used.",
+    "Super-polylog minimum tail implies finite ElogM, and cross-entropy with 1/(zeta(2)m^2) bounds H(M).",
+    "Positive-component conditioning preserves finite logarithmic moment; every finite future word has entropy at most its conditional minimum entropy.",
+    "Second post-minimum bit mean eta=1-p1; limiting phase bound is at most1/8-eta(1-eta)/4, since all genuine cycles have period at least2.",
+    "Final five-root formal-scope paragraph retains the all-time minimum premise and explicitly does not decide it."
+  ],
+  "scope": "Independent written reconstruction. Leen minimum and tail laws, prior phase-dispersion theorem, and positive-predecessor input remain named external inputs. Finite native roots are separately compiler-audited by collision lane; this review makes no new compiler claim."
+}

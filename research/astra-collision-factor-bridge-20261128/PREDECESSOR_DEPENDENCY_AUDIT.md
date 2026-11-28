@@ -76,3 +76,7 @@ original pinned environment, or a separately documented successful migration.
 Until then, the positive-predecessor theorem remains the named external
 input in this packet. Its source identity, exact statements and map
 normalization have been checked; a fresh complete theorem rebuild has not.
+
+## Later compatibility retry
+
+The previously timed-out unchanged `Erdos1135.StoppingTime` source was retried with the same available Lean4.34.1/Mathlibd13f23 environment and the original auto-implicit settings. It compiled successfully in30.625seconds, with empty stdout and stderr. This brings the completed project-source compatibility probes to eight. The full388-module theorem closure and announced public root audit remain incomplete. The [separate retry receipt](../../reports/astra-collision-factor-bridge-20261128/external/compatibility-retry.json) preserves this limited result; it does not replace the earlier historical attempt or upgrade the external theorem to fresh verification.

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "recorded_utc": "2026-11-28T10:31:47.479711+00:00",
+  "normal_sha256": "6e2ab11e22c50805f433a11b1a932d40df9097ccc4e67afc097c3594f6c96e04",
+  "optimized_sha256": "89dd4e23146cf9a9eaf1d7dee2ab4311f5d4aa1112de889b85d09d679ceeeb76",
+  "excluded_field": "recorded_utc",
+  "substantive_outputs_identical": true,
+  "scope": "All exact guards remain active under python -O; no floating-point comparison."
+}

@@ -1,0 +1,273 @@
+{
+  "schema": "collatz-selected-source-manifest/v1",
+  "checkpoint": 4,
+  "recorded_utc": "2026-11-28T11:03:03.516585+00:00",
+  "previous_public_head": "015070fd03ef808ef3250c8a6348c7d8de1464a4",
+  "files": [
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/anchor-green-source-pins.json",
+      "sha256": "d6ac1771a59c530831ea727858a003bc8fed8c9e62dbf604178e206490f52c61"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/native-postminimum-independent-review.json",
+      "sha256": "d09365e538beac349577992a9576edc84e44123efdb57595bcd0afc9a2ef1157"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint03/repository-validation.json",
+      "sha256": "adb27c47ef6e41ea2f058244b17881b448f81346816d47b99477c28ff28a75d6"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint03/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint03/repository-validation.stdout.log",
+      "sha256": "16cc342d46e8eebdc01ab15bf3dddb8f802a709870fbeca17abfca5dccad0f64"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint04/REVIEW.md",
+      "sha256": "e5d16a6c6278a24faab2417cd5209611aff3be8c4da18c85185d0dbfa709b716"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint04/receipt-binding.json",
+      "sha256": "5eeeb0a6a4239a935931b91d10cacf13f9182eee02c611f1e8408ca95549cf8a"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/ANCHOR_GREEN_INDEPENDENT_REVIEW.md",
+      "sha256": "1b932e46bfc5fb86be0e410b50c9860778809c396c14a95fcb6a220dd1898b56"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/ATOMIC_ANCHOR_INDEPENDENT_REVIEW.md",
+      "sha256": "e8b716aa28d515534e230b38b40b5d96419dfc249391413498bb87b2177e5924"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean-logs/Audit.lean",
+      "sha256": "9d31f0da41c8d278690eda9de6f6406f303783d48e35e78f25552c6c76f6fa80"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean-logs/Audit.stdout.log",
+      "sha256": "ebbb5f5795511d1e9787407ab740b5128a1c011bc0fc83a571938f66d08c5efb"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean-logs/NativeMinimum.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean-logs/NativeMinimum.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/native-minimum-lean.json",
+      "sha256": "e865d19c91c7c36927c89b414dad0cad6cdc0ef0b2959fa3b0abb0a8d16d3a50"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/external/compatibility-retry.json",
+      "sha256": "bdc433d4f787fd38b1bbdd7ab01be3f2c50ab08b6927b2104f40d6c0f32e3ba7"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/AGGREGATE_RESOLVENT_INDEPENDENT_REVIEW.md",
+      "sha256": "af8781278ac8a47b693c7def4a7fad216808a4301e0e1c0ad3cfeaf6634e4d17"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/CONDUCTOR_STATIONARY_INDEPENDENT_REVIEW.md",
+      "sha256": "7966f248066e1c3ccbf2d094321c1cd368cbea13cc99ddc281296edcc270d711"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/CONTROLLER_INDEPENDENT_REVIEW.md",
+      "sha256": "b72f8276431b30663b57653d5758283a85fb92f1f847508cbf36cfeca703cf33"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AffineOrbit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AffineOrbit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AggregateProfile.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AggregateProfile.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AggregateProfileAudit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt-logs/AggregateProfileAudit.stdout.log",
+      "sha256": "6ffff6afe65b2867dba06acd3796cfcb1a96e8b52bd763af7bca4dc8391ca6a0"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/aggregate-lean-receipt.json",
+      "sha256": "2eef582e305325eec9ee827bc045cd2458ff9d81ef57247be28ed2fe8c696697"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/normalized-matrix-independent-optimized.json",
+      "sha256": "89dd4e23146cf9a9eaf1d7dee2ab4311f5d4aa1112de889b85d09d679ceeeb76"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/normalized-matrix-independent.json",
+      "sha256": "6e2ab11e22c50805f433a11b1a932d40df9097ccc4e67afc097c3594f6c96e04"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/normalized-matrix-optimization-check.json",
+      "sha256": "b9ea6d16f6e54abe710af4a45b79cde29a3903a1166e306aa045e5a4185b42c8"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/primary-cartier-optimization-check.json",
+      "sha256": "c35d95c1548a54d1eb13f2df0edee574003d0471530e0071872a3567ac969544"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/primary-cartier-profile-optimized.json",
+      "sha256": "eacb24341253659f0b8bcfea5c2fa9461ad55bc35049443de58358fc455b4633"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/primary-cartier-profile.json",
+      "sha256": "9c23b8436438214c6cacf5ddc2604aa5e599ea4e28b172cca3a3636caf7f7b5f"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt-logs/StationaryWindow.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt-logs/StationaryWindow.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt-logs/StationaryWindowAudit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt-logs/StationaryWindowAudit.stdout.log",
+      "sha256": "3b83ce67ddd6b684fc53c6a567461ccee2985f9400235152bd2bb27c803ff8ef"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/factoring/stationary-window-lean-receipt.json",
+      "sha256": "acbe31b6c1b423ebb894c919c29768c8868a823f50cf4b58fe8c00a043822aa6"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean-logs/Audit.lean",
+      "sha256": "c526d9b8aa1cefe75e5dbc5f1e61329e5b80cb650a903ce5574d09c3d400e853"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean-logs/Audit.stdout.log",
+      "sha256": "4e245cb927cfbafa095e9165f30bf5fe2fe60d2b4fd174415a71110af9f9110e"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean-logs/SemiprimeRepresentative.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean-logs/SemiprimeRepresentative.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representative-lean.json",
+      "sha256": "b7bf397ad7bc9b76c33a2ed783bc16e67092f045fe1355244bf98603cdf5a760"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/PREDECESSOR_DEPENDENCY_AUDIT.md",
+      "sha256": "365b2cbb600462d2453b777f6695929dfe838cc3654ad05bc2f20f22776619bc"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/README.md",
+      "sha256": "d59eafbb88374a183b9f893cf521364e1a380dbf2bc56c541148f9a2e90e3f61"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/SEMIPRIME_REPRESENTATIVES.md",
+      "sha256": "63952be90b7b45eca0a4a8d2343bb3a4e2437b615083096b453dd3be1f1cec79"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/SemiprimeRepresentative.lean",
+      "sha256": "fc0f9f17c6c1d239d820045e156866c51399363d4b335755441d7bd3b3d5d85e"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/ANCHOR_GREEN_TAIL_DEFECT.md",
+      "sha256": "333c3350e4bf767684dd303d0776b60bef891c4e3a2225e42c60c373af23eb75"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/ATOMIC_ANCHOR_MAJORANT_OBSTRUCTION.md",
+      "sha256": "f7b4a61fc92082e5c4fd28098f36272f8e5183b3750480a22541d4eb62bb2a0a"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/check_semiprime_representative.py",
+      "sha256": "144537e33a81bd2d6a17dd480554f7cd378fea7bc84574affd4bc95431c800be"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/ACTUAL_ODD_EDGE_CONTROLLER_ATTEMPT.md",
+      "sha256": "274335199c1ac72138c318404484b13e5c46802fe82cccecbeafb7fb32842534"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/NATIVE_POSTMINIMUM_NO_RENEWAL.md",
+      "sha256": "89cc926e7f28dfc6f853a35d7cf0e1b9b0ecbb234f9255d9378f2047fc29a8fa"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/NativeMinimum.lean",
+      "sha256": "bb7ca871ba215bba5d4d02ee01149df85cd55c9bf71f97b80dac27119eff5474"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/check_native_minimum.py",
+      "sha256": "475e9da33e9240ff2f6d988e8d67ad95e625f8f8f12712b1fd6fc4edad689508"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AGGREGATE_PROFILE_TRANSFER.md",
+      "sha256": "c551547c7cfdd35a9a03dabc884023c7a0e03216379696243d908fda0494ffd5"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AGGREGATE_SOURCE_INTAKE.json",
+      "sha256": "06e1f510191e71a3f056c7f484de4b114b54720faa10acee0cfc02187aa5d85f"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AggregateProfile.lean",
+      "sha256": "02e8a5e363abf9ee368389754e8981e645da2a6ab0b0bd7afd9400c8417b68a2"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/AggregateProfileAudit.lean",
+      "sha256": "0b62711eb5c9e14437a17e1225b6b68e7cd50c1dc2865b152acd2a2c5086e96b"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/CONDUCTOR_AND_STATIONARY_TRANSFER.md",
+      "sha256": "b92579470aaea25f24ed5ab5bb076e7cc1386271e6e297a0450d1bd31c31d62d"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/JOINT_RESOLVENT_WINDOW.md",
+      "sha256": "87bf09619b791cd409d5d82ca7f786bc869bed43e776a35691bb32836b10d896"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/StationaryWindow.lean",
+      "sha256": "821513e9c4b10aab2e248e03dbd49ab7d6a836d21e7fa9e9800e81fa8b1bc243"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/StationaryWindowAudit.lean",
+      "sha256": "77032533f0603fc12786d6cf81a91b1523f252c61192f3c9c828178effe410ee"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/check_aggregate_lean.py",
+      "sha256": "bc241911a3021ba91a5b2d10b3c1de8b2d602f5a99b29337954a57f0f5afc1ed"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/check_normalized_matrix.py",
+      "sha256": "2cd8dceee19b3d6ebeed510cda972bce9ce07a428b1e8737ff2722f8e7a4a107"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/check_stationary_lean.py",
+      "sha256": "38d5da17571175191a3b897696c9272d1c27abe81d8ffcef3376957b6808dbae"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/primary_cartier_profile.py",
+      "sha256": "fc5313264682315c6d3ac47325b8702d7e1bda8245cba8310f668ae63bd7f8b0"
+    }
+  ],
+  "scope": "Explicit selected files; excludes this manifest own hash. Each formal claim is limited by its separate receipt."
+}

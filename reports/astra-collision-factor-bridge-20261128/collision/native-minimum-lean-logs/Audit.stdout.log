@@ -1,0 +1,16 @@
+Collatz.NativeMinimum.minimum_is_odd {m : ℕ} (hm : 0 < m) (h : m ≤ Collatz.NativeMinimum.shortcut m) : m % 2 = 1
+Collatz.NativeMinimum.two_step_non_descent_iff {m : ℕ} (hm : 0 < m) :
+  m ≤ Collatz.NativeMinimum.shortcut m ∧ m ≤ Collatz.NativeMinimum.shortcut (Collatz.NativeMinimum.shortcut m) ↔
+    m = 1 ∨ m % 4 = 3
+Collatz.NativeMinimum.minimum_second_parity {m : ℕ} (hm : 0 < m)
+  (lower : ∀ (t : ℕ), m ≤ Collatz.NativeMinimum.shortcut^[t] m) : Collatz.NativeMinimum.shortcut m % 2 = 0 ↔ m = 1
+Collatz.NativeMinimum.postminimum_orbit {n m a : ℕ} (hit : Collatz.NativeMinimum.shortcut^[a] n = m) (j : ℕ) :
+  Collatz.NativeMinimum.shortcut^[a + j] n = Collatz.NativeMinimum.shortcut^[j] m
+Collatz.NativeMinimum.second_parity_zero_iff_reaches_one {n m a : ℕ} (hm : 0 < m)
+  (hit : Collatz.NativeMinimum.shortcut^[a] n = m) (lower : ∀ (t : ℕ), m ≤ Collatz.NativeMinimum.shortcut^[t] n) :
+  Collatz.NativeMinimum.shortcut^[a + 1] n % 2 = 0 ↔ ∃ t, Collatz.NativeMinimum.shortcut^[t] n = 1
+'Collatz.NativeMinimum.minimum_is_odd' depends on axioms: [propext, Quot.sound]
+'Collatz.NativeMinimum.two_step_non_descent_iff' depends on axioms: [propext, Quot.sound]
+'Collatz.NativeMinimum.minimum_second_parity' depends on axioms: [propext, Quot.sound]
+'Collatz.NativeMinimum.postminimum_orbit' does not depend on any axioms
+'Collatz.NativeMinimum.second_parity_zero_iff_reaches_one' depends on axioms: [propext, Quot.sound]

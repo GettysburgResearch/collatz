@@ -1,0 +1,9 @@
+{
+  "schema": "collatz-primary-cartier-optimization-check/v1",
+  "success": true,
+  "comparison": "All report fields except utc are identical; all 544 checks use explicit require and remain active under -O.",
+  "tests_per_mode": 544,
+  "substantive_sha256": "577cf856dc4e30647aba180dc130647c4680e1e3ba7e2345b8b62e06fca238b4",
+  "normal_report_sha256": "9c23b8436438214c6cacf5ddc2604aa5e599ea4e28b172cca3a3636caf7f7b5f",
+  "optimized_report_sha256": "eacb24341253659f0b8bcfea5c2fa9461ad55bc35049443de58358fc455b4633"
+}

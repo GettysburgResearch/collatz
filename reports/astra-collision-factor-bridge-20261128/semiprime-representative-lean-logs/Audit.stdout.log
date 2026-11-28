@@ -1,0 +1,31 @@
+Collatz.SemiprimeRepresentative.convergence_step {n : ℕ} (h : Collatz.SemiprimeRepresentative.Converges n) :
+  Collatz.SemiprimeRepresentative.Converges (Collatz.SemiprimeRepresentative.step n)
+Collatz.SemiprimeRepresentative.convergence_iterate (k n : ℕ) (h : Collatz.SemiprimeRepresentative.Converges n) :
+  Collatz.SemiprimeRepresentative.Converges (Collatz.SemiprimeRepresentative.orbit k n)
+Collatz.SemiprimeRepresentative.merger_transfers_convergence {n s : ℕ} (hm : Collatz.SemiprimeRepresentative.Meets n s)
+  (hs : Collatz.SemiprimeRepresentative.Converges s) : Collatz.SemiprimeRepresentative.Converges n
+Collatz.SemiprimeRepresentative.family_positive {n : ℕ} (hn : Collatz.SemiprimeRepresentative.InFamily n) : 0 < n
+Collatz.SemiprimeRepresentative.universal_iff_family
+  (representatives :
+    ∀ (n : ℕ), 0 < n → ∃ s, Collatz.SemiprimeRepresentative.InFamily s ∧ Collatz.SemiprimeRepresentative.Meets n s) :
+  (∀ (n : ℕ), 0 < n → Collatz.SemiprimeRepresentative.Converges n) ↔
+    ∀ (s : ℕ), Collatz.SemiprimeRepresentative.InFamily s → Collatz.SemiprimeRepresentative.Converges s
+Collatz.SemiprimeRepresentative.sample_family_members :
+  Collatz.SemiprimeRepresentative.InFamily 143 ∧
+    Collatz.SemiprimeRepresentative.InFamily 437 ∧
+      Collatz.SemiprimeRepresentative.InFamily 517 ∧
+        Collatz.SemiprimeRepresentative.InFamily 713 ∧ Collatz.SemiprimeRepresentative.InFamily 871
+Collatz.SemiprimeRepresentative.sample_actual_mergers :
+  Collatz.SemiprimeRepresentative.Meets 1 143 ∧
+    Collatz.SemiprimeRepresentative.Meets 3 143 ∧
+      Collatz.SemiprimeRepresentative.Meets 6 143 ∧
+        Collatz.SemiprimeRepresentative.Meets 27 437 ∧
+          Collatz.SemiprimeRepresentative.Meets 85 713 ∧
+            Collatz.SemiprimeRepresentative.Meets 97 517 ∧ Collatz.SemiprimeRepresentative.Meets 871 871
+'Collatz.SemiprimeRepresentative.convergence_step' does not depend on any axioms
+'Collatz.SemiprimeRepresentative.convergence_iterate' does not depend on any axioms
+'Collatz.SemiprimeRepresentative.merger_transfers_convergence' does not depend on any axioms
+'Collatz.SemiprimeRepresentative.family_positive' depends on axioms: [propext]
+'Collatz.SemiprimeRepresentative.universal_iff_family' depends on axioms: [propext]
+'Collatz.SemiprimeRepresentative.sample_family_members' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Collatz.SemiprimeRepresentative.sample_actual_mergers' does not depend on any axioms

@@ -1,0 +1,11 @@
+Collatz.StationaryWindow.window_add (f : Nat → Nat) (start left right : Nat) :
+  Collatz.StationaryWindow.window f start (left + right) =
+    Collatz.StationaryWindow.window f start left + Collatz.StationaryWindow.window f (start + left) right
+'Collatz.StationaryWindow.window_add' depends on axioms: [propext]
+Collatz.StationaryWindow.window_le (f : Nat → Nat) (hf : ∀ (n : Nat), f n ≤ 1) (start len : Nat) :
+  Collatz.StationaryWindow.window f start len ≤ len
+'Collatz.StationaryWindow.window_le' depends on axioms: [propext, Quot.sound]
+Collatz.StationaryWindow.window_shift_bound (f : Nat → Nat) (hf : ∀ (n : Nat), f n ≤ 1) (shift len : Nat) :
+  Collatz.StationaryWindow.window f shift len ≤ Collatz.StationaryWindow.window f 0 len + min shift len ∧
+    Collatz.StationaryWindow.window f 0 len ≤ Collatz.StationaryWindow.window f shift len + min shift len
+'Collatz.StationaryWindow.window_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,23 @@
+Collatz.AggregateProfile.mem_words_iff (h : ℕ) (w : List Bool) : w ∈ Collatz.AggregateProfile.words h ↔ w.length = h
+'Collatz.AggregateProfile.mem_words_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Collatz.AggregateProfile.words_nodup (h : ℕ) : (Collatz.AggregateProfile.words h).Nodup
+'Collatz.AggregateProfile.words_nodup' depends on axioms: [propext, Quot.sound]
+Collatz.AggregateProfile.words_length (h : ℕ) : (Collatz.AggregateProfile.words h).length = 2 ^ h
+'Collatz.AggregateProfile.words_length' depends on axioms: [propext]
+Collatz.AggregateProfile.word_determined_by_carry (w v : List Bool) (hl : w.length = v.length)
+  (hg : Collatz.PoweredAffine.ones w = Collatz.PoweredAffine.ones v)
+  (hA : Collatz.PoweredAffine.numerator w = Collatz.PoweredAffine.numerator v) : w = v
+'Collatz.AggregateProfile.word_determined_by_carry' depends on axioms: [propext, Quot.sound]
+Collatz.AggregateProfile.aggregate_succ_grade.{u_1} {R : Type u_1} [CommSemiring R] (h a : ℕ) (z : R) :
+  Collatz.AggregateProfile.aggregate (h + 1) (a + 1) z =
+    Collatz.AggregateProfile.aggregate h (a + 1) (z ^ 2) + z ^ 3 ^ a * Collatz.AggregateProfile.aggregate h a (z ^ 2)
+'Collatz.AggregateProfile.aggregate_succ_grade' depends on axioms: [propext, Quot.sound]
+Collatz.AggregateProfile.aggregate_grade_zero.{u_1} {R : Type u_1} [CommSemiring R] (h : ℕ) (z : R) :
+  Collatz.AggregateProfile.aggregate h 0 z = 1
+'Collatz.AggregateProfile.aggregate_grade_zero' depends on axioms: [propext]
+Collatz.AggregateProfile.aggregate_initial.{u_1} {R : Type u_1} [CommSemiring R] (a : ℕ) (z : R) :
+  Collatz.AggregateProfile.aggregate 0 a z = if a = 0 then 1 else 0
+'Collatz.AggregateProfile.aggregate_initial' depends on axioms: [propext, Quot.sound]
+Collatz.AggregateProfile.total_word_real_value (h : ℕ) (x : ℚ) :
+  (List.map (fun w => Collatz.PoweredAffine.evalWord w x) (Collatz.AggregateProfile.words h)).sum = 2 ^ h * (x + ↑h / 4)
+'Collatz.AggregateProfile.total_word_real_value' depends on axioms: [propext, Classical.choice, Quot.sound]

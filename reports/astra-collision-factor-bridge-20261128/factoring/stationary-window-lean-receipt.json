@@ -1,0 +1,66 @@
+{
+  "schema": "collatz-stationary-window-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T10:53:58.659766+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "scope": "Fresh complete two-module project closure and separate import/type/axiom audit. Only Lean core Omega is imported; no Mathlib objects are used. No rebuild of the Lean standard library or independent LeanChecker run. Three finite integer-window roots, with no probability or analytic statement formalized.",
+  "public_roots": [
+    "Collatz.StationaryWindow.window_add",
+    "Collatz.StationaryWindow.window_le",
+    "Collatz.StationaryWindow.window_shift_bound"
+  ],
+  "steps": [
+    {
+      "module": "StationaryWindow",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/StationaryWindow.lean",
+      "source_sha256": "821513e9c4b10aab2e248e03dbd49ab7d6a836d21e7fa9e9800e81fa8b1bc243",
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-stationary-window-lean-9hdf2e8x/StationaryWindow.olean",
+        "/workspace/scratch/ba4979751b0f/collatz/research/astra-collision-factor-bridge-20261128/factoring/StationaryWindow.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6556,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "StationaryWindowAudit",
+      "source": "research/astra-collision-factor-bridge-20261128/factoring/StationaryWindowAudit.lean",
+      "source_sha256": "77032533f0603fc12786d6cf81a91b1523f252c61192f3c9c828178effe410ee",
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-stationary-window-lean-9hdf2e8x/StationaryWindowAudit.olean",
+        "/workspace/scratch/ba4979751b0f/collatz/research/astra-collision-factor-bridge-20261128/factoring/StationaryWindowAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3924,
+      "source_unchanged": true,
+      "stdout_sha256": "3b83ce67ddd6b684fc53c6a567461ccee2985f9400235152bd2bb27c803ff8ef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "axiom_audit": {
+    "roots": [
+      "Collatz.StationaryWindow.window_add",
+      "Collatz.StationaryWindow.window_le",
+      "Collatz.StationaryWindow.window_shift_bound"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T10:53:59.709185+00:00",
+  "elapsed_seconds": 1.0494
+}

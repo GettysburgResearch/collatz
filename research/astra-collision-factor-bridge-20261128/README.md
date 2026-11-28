@@ -35,7 +35,15 @@ shows why exact halving and an \(O(X/\log X)\) boundary count alone cannot close
 
 The [single-edge calibration](collision/ONE_EDGE_COLLISION_SPLIT.md) changes only the odd transition at 5. Even a one-unit change preserves the complete limiting Brownian descent, its independence from the new minimum and a bounded minimum-clock error, while strictly lowering the median collision constant. Fifteen new audited Lean roots verify the finite actual-map interface. The limiting comparison is a separate source-qualified written proof. This isolates the exact arithmetic input that a successful one-eighth argument must use.
 
-## What the factoring work supplies, and what its import needs
+## Positive transfer from the factoring work
+
+The [aggregate coefficient theorem](factoring/AGGREGATE_PROFILE_TRANSFER.md) imports the general prime-power Cartier algorithm from factoring PR234. A single constant matrix retains joint odd grade, ternary residue and real carry moments. Selected coefficients can be computed at binary clocks with cost polynomial in the numerical modulus, moment degree and precision. Eight new Lean roots verify the finite carry algebra, enumeration, injectivity and first moment. The primary algorithm and complexity proof remain written.
+
+The [full-window resolvent theorem](factoring/JOINT_RESOLVENT_WINDOW.md) proves that a full positive-integer fibre has compact real support and multiplicity one on its exact source lattice. The entire ordinary window can be approximated, to normalized error epsilon+6/X, using O(log^2((B+1)/epsilon)) accurately specified nonreal resolvent queries. The theorem retains the full conductor and small imaginary heights.
+
+The [conductor and stationary transfer](factoring/CONDUCTOR_AND_STATIONARY_TRANSFER.md) provides a sparse exact determinant, a weighted discrete-log formula for the target numerator, and an exact rounding reduction to a biased joint stationary trace. At odd-bit probability1/8, the scaled trace differs from the actual integer count by at most1/6; the stated additional probability precision makes nearest-integer recovery exact. The trace still includes the full cylinder, real window and grade. Its required precision has O(h) bits; evaluating that rare joint event efficiently remains unproved. This is a concrete consumer for further factoring methods, not a completed full-conductor algorithm.
+
+## Other factoring imports and their arithmetic requirements
 
 The [source audit](factoring/FACTORING_BRIDGE.md) and
 [pointwise import audit](factoring/POINTWISE_IMPORT_AUDIT.md) inspect twenty
@@ -66,11 +74,15 @@ sign operations. The factoring sources' pointwise quaternionic estimate,
 ordered-product algorithms and analytic integer-zero method still need a
 representation of the full ordered Collatz carry together with its real window.
 
+The [native post-minimum analysis](collision/NATIVE_POSTMINIMUM_NO_RENEWAL.md) locates the missing mass in one exact bit: after the true global minimum, the first two parities are10 for convergence and11 for nonconvergence. Five new audited roots check the actual finite arithmetic and the explicit minimum premise. The continuation is deterministic given that minimum; a fresh fair-parity restart cannot supply the missing estimate. The [controller attempt](collision/ACTUAL_ODD_EDGE_CONTROLLER_ATTEMPT.md) separately quantifies the unbounded cost of certifying odd-count-changing affine replacements by genuine mergers.
+
 ## The moving-target escape problem
 
 The [escape-density identity](arithmetic/DENSITY_ESCAPE_PROFILE.md) identifies the exact limiting defect of predecessor-density decay: it is the largest escaping component density. The qualitative equivalence with absence of escape is prior work and is credited. A fixed-positive-density doubling-gain estimate would exclude escape, but remains unproved.
 
 The [ordinary harmonic atom](arithmetic/HARMONIC_BOUNDARY_ATOM.md) shows why positivity, exact integer inverse harmonicity and linear spikes alone cannot prove that estimate. It is constructed on the unchanged Collatz graph from integers already known to converge. The actual canonical selection excludes this added atom; Haar integral norms alone cannot detect it.
+
+The [Green-tail defect](arithmetic/ANCHOR_GREEN_TAIL_DEFECT.md) evaluates Weaver's existing joint anchor supersolution: its exact uniform normalized word-tail defect equals the largest positive escaping-component weight, with the orbit-packing input explicit. This identifies why a pointwise-to-uniform dominated-convergence exchange would already exclude escape. The [atomic-anchor obstruction](arithmetic/ATOMIC_ANCHOR_MAJORANT_OBSTRUCTION.md) independently rules out a natural countable signed valuation-pole majorant with a finite denominator-height moment; it leaves non-atomic or critical real-dependent constructions outside scope.
 
 The [predecessor dependency audit](PREDECESSOR_DEPENDENCY_AUDIT.md) pins and checks the original archives and all assembled source hashes. A compatibility probe did not reach the announced theorem roots; it is explicitly not a fresh verification of that external theorem.
 
@@ -90,5 +102,7 @@ The separate PR #216, at `1917b07ae5cc8f5d27c79f34cc43a4bcf25efff8`, already sup
 | 2 | Full collision-series endpoint, reconstruction of the prior summable-boundary equivalence and sharp halving control; cross-repository factoring audit and actual multiplier obstruction; high-state spectral and inverse-envelope obstructions | 24 new Lean roots across four modules, each freshly compiled and separately audited; exact binary controls through 262,144 in normal and optimized Python; three independent written semiprime audits |
 
 | 3 | Certifying semiprime representatives; single-edge collision split; exact escape-density defect and ordinary harmonic atom; stronger envelope obstructions; priority corrections | 18 additional freshly audited roots (42 total in this pass), independent written reviews and 214 independently replayed certificate edges; original predecessor source intake and explicit incomplete-rebuild status |
+
+| 4 | Actual primary-Cartier import; full-window logarithmic resolvent consumer; sparse conductor determinant and exact stationary rounding; native second-bit defect; Green-tail and atomic-majorant analyses | 23 additional freshly audited roots (65 total across ten modules); 544 exact coefficient checks in normal and optimized Python, independent general-matrix/full-fibre guards, and hash-bound mathematical reviews |
 
 [Intake pins](INTAKE_PINS.json) record source versions and the exact starting heads. The [checkpoint 1 review](../../reports/astra-collision-factor-bridge-20261128/checkpoint01/REVIEW.md) states the review boundary. Repository integrity and finite Lean kernels do not certify imported analytic inputs or a full Collatz proof.
