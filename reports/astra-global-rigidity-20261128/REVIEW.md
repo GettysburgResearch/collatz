@@ -1,4 +1,4 @@
-# Review boundary — seventh nine-hour checkpoint
+# Review boundary — eighth nine-hour checkpoint
 
 The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is planned through 2026-11-28 07:59:19 UTC. This is an intermediate checkpoint. Source intake: `INTAKE.json`; inherited packet head: `5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128`.
 
@@ -16,7 +16,7 @@ The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is
 
 ## Formal and finite verification boundary
 
-**Checkpoint 7: fifteen modules and 86 public roots passed a fresh serial compilation and axiom audit.** `checkpoint7/lean.json` identifies their exact bytes. The new `ShiftedSiblingCarries` module adds eight finite carry, gcd and same-successor declarations; the full analytic mass and moving-gcd arguments remain written mathematics. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
+**Checkpoint 8: sixteen modules and 92 public roots passed a fresh serial compilation and axiom audit.** `checkpoint8/lean.json` identifies their exact bytes. The new `DepthDeficits` module adds six finite loss, entrance and block-cost declarations; the full pressure and entropy theorem remains written mathematics. The earlier `ShiftedSiblingCarries` module and all earlier packet modules remain in the full run. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
 
 The checkpoint receipts identify exact source hashes, compiler version, Mathlib pin, imported module closure, public declarations and axiom output. They distinguish fresh packet compilation from reuse of compiled dependencies. The only accepted theorem axioms are the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom mathematical interface axiom, or `native_decide` shortcut is accepted by the replay.
 
@@ -474,6 +474,38 @@ budgets; they do not prove that every actual trajectory has no finite budget.
 A single malformed LaTeX escape in `CORE_RETENTION.md` was corrected during
 integration; its mathematics is unchanged. The source refresh and exact
 priority distinctions are recorded separately in `EXTERNAL_REFRESH.md`.
+
+## Checkpoint 8 independent reconstruction
+
+**Near-maximal word entropy — VERIFIED AS WRITTEN MATHEMATICS by root and
+an independent agent.** Both read the exact pinned book definitions and
+R8–R9 questions. The phase-zero paths on sites 1 through r−1 determine
+exactly one positive valuation word, including its forced final exponent.
+Every positive block begins at depth one after a two-increment ceiling
+step. Its entry costs at least one third; subsequent sites cost at least
+one quarter. The weak-composition injection bounds all its possible
+shapes, without a depth cutoff. Direct valuation enumeration and an
+independent renewal construction give the same exact deficit polynomial
+in all 52 finite cases, with 97,914 words and 177,192 checked blocks.
+
+The last-block recurrence retains its separating zero and the special
+initial value Z_(−1)=1. Explicit weighted delay coefficients give a
+uniformly contracting complex recurrence and a summable initialization
+error. Uniform limits preserve phase Riemann integrability; irrational
+rotation then gives convergence at every phase, including zero. Cauchy
+bounds control the first two derivatives of the exponentially small
+longer-block remainder. A finite exponential tilt and a d-prime-up-to-d
+squeeze give the matching microcanonical count, also for its moving
+threshold. The saddle inversion gives both the negative double logarithm
+and the constant 1−log(3/2). This answers R9 near one and R8 only at
+sufficiently large positive tilt. No full-tilt claim, integer-cycle
+exclusion, analytic Lean proof or exhaustive priority search is asserted.
+
+The finite Lean block bounds passed after correcting one missing ordered
+sum import and an explicit division-to-multiplication normalization.
+The development failures remain preserved as receipts; they were not
+mathematical counterexamples. All six new roots use only the same standard
+Lean axioms accepted for the packet.
 
 ## Questions kept open
 

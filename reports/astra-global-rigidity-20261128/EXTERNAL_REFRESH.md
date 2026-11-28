@@ -77,3 +77,29 @@ endpoint. Its full ancillary Lean project was not rebuilt here. The
 geometric-return application in checkpoint 6 consequently keeps that recent
 estimate as an explicit conditional premise; its appearance in a repository
 with separately checked Lean files does not certify the external theorem.
+
+## A sharply stated counting question
+
+Polson and Sokolov's *On the Collatz Conjecture*, edition 1, records the
+near-maximal correction-word question R9 and the untruncated cocycle
+question R8 in its [exact November 10 source](https://github.com/VadimSokolov/collatz/blob/5840497a23fc0d64127b850aea68862d7c93f2b7/book/chapters/ch10h_ratchets.tex),
+tag `v1.4.0`. Root retrieved that complete file and independently checked
+the word definition, forced last exponent, pressure normalization and
+question statements; a second agent did the same. The near-one rate in
+checkpoint 8 is a new deduction relative to that exact source. The depth
+model and proposed epsilon-log-inverse-epsilon scale belong to the book.
+A targeted search found no additional result resolving that question;
+this is not an exhaustive priority certification. The proof uses no
+unverified density or number-theory premise from other chapters.
+
+## First coefficient-crossing restrictions
+
+De Jesús's [November 25 revision](https://hexagonmath.org/2611.00459v4)
+gives restrictions on the first coefficient crossing in a putative
+non-descending orbit. Root read the primary PDF's relevant proofs and
+scope, including the finite odd-run regime, restart reductions, the
+repeated-110 family and a square-prefix restriction. These can exclude
+structured first crossings; they do not bound every crossing's complexity.
+The claimed verification status of that unrefereed source was not treated
+as an independent Lean rebuild, and none of its numerical thresholds is
+used as a premise of the near-maximal entropy proof.

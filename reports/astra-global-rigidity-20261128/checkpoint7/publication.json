@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-nine-hour-publication/v1",
+  "checkpoint": 7,
+  "published_utc": "2026-11-28 02:42:32 UTC",
+  "repository": "GettysburgResearch/collatz",
+  "branch": "research/astra-diagonal-frontier-20261127",
+  "pull_request": 213,
+  "draft": true,
+  "local_equivalent_commit": "b4f4550494fd321a20c55d32b1ecbfd3ac54066a",
+  "published_commit": "9db52a369544c4dabc92d0e2029f912efe3d32ed",
+  "tree": "21c13e0047780b3f96fd2f7879820c93da91e63d",
+  "parent": "87be3aa8837ecc64e83075d7571c6ab9e1646c2b",
+  "method": "Git Data, exact local-tree match, guarded non-force ref update",
+  "branch_head_readback": true,
+  "pr_head_readback": true,
+  "pr_body_exact_readback": true,
+  "local_clean_checkout_validation": true,
+  "published_clean_checkout_validation": true,
+  "lean_modules": 15,
+  "lean_public_roots": 86,
+  "finite_checkers_in_both_modes": 29,
+  "scope": "Checkpoint during an ongoing nine-hour pass; original Collatz conjecture unresolved. Infinite analytic and Diophantine deductions retain named source-qualified inputs."
+}

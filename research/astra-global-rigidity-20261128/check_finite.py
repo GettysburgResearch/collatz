@@ -19,6 +19,7 @@ CHECKERS = [
     "cycles/check_semimodule_denominator.py",
     "cycles/check_sparse_full_modulus.py", "cycles/check_guarded_holes.py",
     "cycles/check_moving_full_modulus.py",
+    "cycles/check_near_maximal_entropy.py",
     "mass/check_protected_prime_transport.py",
     "mass/check_small_sibling_density.py",
     "mersenne/check_independent_siblings.py",
