@@ -87,6 +87,8 @@ T^{t+i}z_H\ge (2^{H-t}-A)R_i
 \ge (2^{H-t}-A)/A,\qquad 0\le i\le H-t. \tag{2}
 $$
 
+The source-local inequality $x\le A T^k x$ whenever $2^k\mid x+A$ is also kernel checked in SignedFloor.lean. Lean 4.34.1 reports only propext and Quot.sound for the all-clock ratio and floor theorems. Its standard-library imports are sufficient.
+
 Whenever the right side is at least $z_H/K$, literal ordinary halving
 floor descent cannot close the interval from release to the upper
 endpoint. The first $t$ dates remain separately checkable.

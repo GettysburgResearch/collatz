@@ -41,6 +41,8 @@ The resulting lower bound is $c_0 e^{-1}\sum_{i=1}^k1/i\gg\log N$.
 No projection deleting unwanted interposed frequencies is used.
 [McGehee, Pigno and Smith, Annals of Mathematics, 1981](https://annals.math.princeton.edu/1981/113-3/p09)
 
+The earlier PR 217 gives the summable asynchronous-boundary criterion from the exact branches and positive predecessor densities. The dyadic proof here uses an additional native density input. [PR 217, dyadic boundary zero–one result](https://github.com/GettysburgResearch/collatz/blob/85b48ef9de755fe016166592cb048167c83fb7e8/research/astra-collision-factor-bridge-20261128/collision/DYADIC_BOUNDARY_ZERO_ONE.md)
+
 For completeness, summable $e_j$ makes
 $b(\lfloor2^j x\rfloor)$ Cauchy in $L^1[1,2)$: even children retain
 their parent's label and each changed odd child costs $2^{-j-1}$.

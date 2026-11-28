@@ -2,6 +2,13 @@
 
 **Status: OPEN research, 28 November 2026. No proof of Collatz is claimed.**
 
+**Current focus:** the [finite-date near-critical parity consumer](mass/MODERATE_PARITY_AT_ONE.md)
+reduces full convergence to a vanishing upper tail on the original positive
+integer interval at `m = floor(kappa*k + k^(3/5))`, where
+`kappa = 1/(1-log_2(3)/2)`, with threshold `m/2 + k^(3/5)/16`.
+The deduction uses an outside written first-passage theorem and the qualified
+positive-predecessor theorem. The required upper-tail estimate is open.
+
 This packet pursues statements that would rule out every positive counterexample,
 including both escape and a nonstandard cycle. It deliberately does not target a
 larger finite verification range, another bounded-period exclusion, or an improved
@@ -103,6 +110,15 @@ rebuild of the three core Lean modules and nine printed roots is recorded in
 [CORE_LEAN.json](../../reports/astra-full-proof-20261128/CORE_LEAN.json).
 
 ## Evidence policy
+
+The [third coordinator review](../../reports/astra-full-proof-20261128/CHECKPOINT_03_REVIEW.md)
+checks this consumer, the [95 positive rational arcs](parity/POSITIVE_RATIONAL_ARCS.md),
+the actual [terminal-phase calibration](mass/DYADIC_PHASE_CALIBRATION.md),
+and [internal upper prefixes](descent/INTERNAL_PREFIX.md).
+[CountedDeadline.lean](CountedDeadline.lean) locally verifies the deadline
+under its explicit matching-grade premise. It does not bound arbitrary
+stopping times. The full Fourier sum, including the large conductors, remains
+the active analytic target.
 
 - **LOCALLY COMPILED:** a named Lean file was actually compiled in this pass,
   with its toolchain and command recorded.
