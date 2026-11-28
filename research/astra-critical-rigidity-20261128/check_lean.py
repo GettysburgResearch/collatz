@@ -57,6 +57,8 @@ MODULES = {
         "An exact integer row congruence implies divisibility of the determinant times every coefficient; a columnwise Leibniz bound and a nonzero coefficient force a minor to vanish below its modulus. Coefficient heights are unrestricted. The physical packet selection, Cramer basis step, valuation-level counting and effective asymptotic landing bounds remain written."),
     "FullDenominatorPairZero": ("cycles/FullDenominatorPairZero.lean", "Collatz.FullDenominatorPairZero",
         "For a scaled integer pair comparison on a transitive native cycle, one zero forces divisibility by the entire denominator coprime to two. Dividing by that denominator yields an integer recurrence with forcing between minus two and two; persistence of a nonzero sign then forces every comparison to be zero. The physical chart and sparse-recurrence exclusion remain written."),
+    "NativeTubeZero": ("cycles/NativeTubeZero.lean", "Collatz.NativeTubeZero",
+        "On a finite native comparison tube scaled by its complete denominator coprime to three, a terminal zero forces every preceding comparison and every integer forcing in [-2,2] to vanish. No cyclic closure, transitivity, spatial ordering or denominator-size premise is used. Construction of the actual binary tube, prime dilation, entropy and asymptotic band-exit applications remain written."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 

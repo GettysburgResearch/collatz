@@ -1,0 +1,61 @@
+{
+  "frobenius": {
+    "doubled_inner_stencils": 56,
+    "exact_local_zero_cases": 933,
+    "nonzero_dilations": 1482,
+    "weighted_congruences": 3528
+  },
+  "ordinary": {
+    "confined_distinct_segments": 431,
+    "native_steps_per_segment": 7,
+    "ordinary_edges": 3017
+  },
+  "rank_rectangles": {
+    "populations": [
+      {
+        "E": 0,
+        "repeated": 0,
+        "three_or_four": 0
+      },
+      {
+        "E": 1,
+        "repeated": 26,
+        "three_or_four": 26
+      },
+      {
+        "E": 3,
+        "repeated": 26,
+        "three_or_four": 75
+      },
+      {
+        "E": 16,
+        "repeated": 92,
+        "three_or_four": 526
+      },
+      {
+        "E": 47,
+        "repeated": 126,
+        "three_or_four": 1099
+      }
+    ],
+    "positive_rational_base_inequalities": 392
+  },
+  "rational_chart": [
+    {
+      "P": 306,
+      "checked": 1225,
+      "full_q_bits": 962,
+      "negative_representatives": 525,
+      "p": 612,
+      "sheets": 2
+    },
+    {
+      "P": 306,
+      "checked": 1841,
+      "full_q_bits": 1447,
+      "negative_representatives": 526,
+      "p": 918,
+      "sheets": 3
+    }
+  ]
+}

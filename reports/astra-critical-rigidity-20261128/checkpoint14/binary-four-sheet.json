@@ -1,0 +1,133 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:50:55.021371+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_binary_four_sheet_gate.py": "f9fe369bc1e4a8625377902d963f96cb721664da6a317c62cd06d514586f1afb",
+    "research/astra-critical-rigidity-20261128/cycles/BINARY_FOUR_SHEET_GATE.md": "cf88bf1a4e29865c378e0d254366217a34835a1d36a47b0393a872c0c70980e9",
+    "research/astra-critical-rigidity-20261128/cycles/FOUR_SHEET_PAIR_COLLISIONS.md": "101086612e38546d9998616e68f32a84b7bf52a647ab76e73c72f519bc59e0bb",
+    "research/astra-critical-rigidity-20261128/cycles/check_four_sheet_pair_collisions.py": "a0f5d76e521d71c0f83c213d72b81863178348a3ab981ddf1f40afe73f765e11",
+    "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.264,
+      "stdout_sha256": "121645d7e8e1e48fd535889afe93645a891144503ab37861060bb5435a269b46",
+      "result": [
+        {
+          "primitive_odd_period": 164,
+          "reduced_odd_clock": 41,
+          "reduced_division_clock": 65,
+          "denominator_bits": 186,
+          "width_millionths": 3987954,
+          "valuations_one": 68,
+          "valuations_two": 96,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            7,
+            14,
+            24,
+            31
+          ]
+        },
+        {
+          "primitive_odd_period": 1224,
+          "reduced_odd_clock": 306,
+          "reduced_division_clock": 485,
+          "denominator_bits": 1447,
+          "width_millionths": 3998675,
+          "valuations_one": 508,
+          "valuations_two": 716,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            52,
+            104,
+            179,
+            231
+          ]
+        },
+        {
+          "primitive_odd_period": 3884,
+          "reduced_odd_clock": 971,
+          "reduced_division_clock": 1539,
+          "denominator_bits": 4609,
+          "width_millionths": 3998707,
+          "valuations_one": 1612,
+          "valuations_two": 2272,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            165,
+            330,
+            568,
+            733
+          ]
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.314,
+      "stdout_sha256": "121645d7e8e1e48fd535889afe93645a891144503ab37861060bb5435a269b46",
+      "result": [
+        {
+          "primitive_odd_period": 164,
+          "reduced_odd_clock": 41,
+          "reduced_division_clock": 65,
+          "denominator_bits": 186,
+          "width_millionths": 3987954,
+          "valuations_one": 68,
+          "valuations_two": 96,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            7,
+            14,
+            24,
+            31
+          ]
+        },
+        {
+          "primitive_odd_period": 1224,
+          "reduced_odd_clock": 306,
+          "reduced_division_clock": 485,
+          "denominator_bits": 1447,
+          "width_millionths": 3998675,
+          "valuations_one": 508,
+          "valuations_two": 716,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            52,
+            104,
+            179,
+            231
+          ]
+        },
+        {
+          "primitive_odd_period": 3884,
+          "reduced_odd_clock": 971,
+          "reduced_division_clock": 1539,
+          "denominator_bits": 4609,
+          "width_millionths": 3998707,
+          "valuations_one": 1612,
+          "valuations_two": 2272,
+          "zero_dates": 16,
+          "zero_reduced_ranks": [
+            165,
+            330,
+            568,
+            733
+          ]
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual primitive four-sheet cycles with every native valuation in {1,2}, exact zero registers and full denominator retained.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:50:55.599387+00:00"
+}

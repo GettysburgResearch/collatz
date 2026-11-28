@@ -1,0 +1,55 @@
+{
+  "november": {
+    "archive": "2611.30820v1",
+    "author_audit": {
+      "path": "anc/docs/build-reports/fresh_clone_build_2026-11-22.txt",
+      "reported_axioms": {
+        "QuadraticPi.CLogCorollaries.linear_forms_in_logarithms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "QuadraticPi.CLogMainTheorem.linear_forms_in_logarithms_with_constant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "sha256": "99b5d88cbb992a2db3c538aa08dee6a80c307b0ca8039fcc6aba4c56793cb5b7"
+    },
+    "compiler": "leanprover/lean4:v4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "paper_sha256": "1e2404f9a74869e48d07382d85757cc6a63ea004828a8651b2c101bd8931d680",
+    "release_file_checks": 1904,
+    "source_sha256": "dd44d584be74e1fe48b365f9a3b8e22f01b59eccc3cce67be3e495769712e31e"
+  },
+  "october": {
+    "archive": "2610.28079v1",
+    "author_audit": {
+      "path": "anc/lean/validation/final-review-2026-10-19/original-2145-declaration-audit.log",
+      "reported_axioms": {
+        "QuadraticPi.rationalLogRatio_irrationalityExponent_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "QuadraticPi.rationalLogRatio_irrationalityExponent_bounds_of_irrational": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "QuadraticPi.rationalTwoLog_linearForm_lowerBound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "sha256": "f00cf324e083c13fdf59b1a9c2552b47e4a6769d21cc1fcf481ff027da25668b"
+    },
+    "compiler": "leanprover/lean4:v4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "paper_sha256": "cb3edc86d9022f2de527bfe34374e6cf54f8e3ec53c256c3028d5b7b0dba5f25",
+    "release_file_checks": 1604,
+    "source_sha256": "2b37bfa6f04a1316eead45f1b6ba2ad660eef6a02f00b31476d603a7e55de69e"
+  }
+}

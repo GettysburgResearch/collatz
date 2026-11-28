@@ -1,0 +1,123 @@
+{
+  "chains": {
+    "binary_native_words": 97510,
+    "calendars_with_strict_rise": 2883,
+    "calendars_with_winding_three": 3367,
+    "feasible_winding_strings": 3975
+  },
+  "grids": [
+    {
+      "adjusted_windings": {
+        "1": 127,
+        "2": 179
+      },
+      "clock_gcd": 1,
+      "forbidden_positive_differences": [
+        3,
+        4
+      ],
+      "full_denominator_bits": 476,
+      "independent_set": [
+        0,
+        1,
+        2,
+        7,
+        8,
+        9
+      ],
+      "odd_period": 306,
+      "offset_window": 9,
+      "reduced_period": 306,
+      "tested_physical_pair_sums": 6426,
+      "width_millionths": 4091660
+    },
+    {
+      "adjusted_windings": {
+        "1": 254,
+        "2": 358
+      },
+      "clock_gcd": 2,
+      "forbidden_positive_differences": [
+        3,
+        4,
+        5
+      ],
+      "full_denominator_bits": 962,
+      "independent_set": [
+        0,
+        1,
+        2,
+        8,
+        9
+      ],
+      "odd_period": 612,
+      "offset_window": 9,
+      "reduced_period": 306,
+      "tested_physical_pair_sums": 9180,
+      "width_millionths": 4100925
+    },
+    {
+      "adjusted_windings": {
+        "1": 381,
+        "2": 537
+      },
+      "clock_gcd": 3,
+      "forbidden_positive_differences": [
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "full_denominator_bits": 1447,
+      "independent_set": [
+        0,
+        1,
+        7,
+        8
+      ],
+      "odd_period": 918,
+      "offset_window": 9,
+      "reduced_period": 306,
+      "tested_physical_pair_sums": 9180,
+      "width_millionths": 4110218
+    },
+    {
+      "adjusted_windings": {
+        "1": 403,
+        "2": 568
+      },
+      "clock_gcd": 1,
+      "forbidden_positive_differences": [
+        12,
+        13
+      ],
+      "full_denominator_bits": 1530,
+      "independent_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "odd_period": 971,
+      "offset_window": 30,
+      "reduced_period": 971,
+      "tested_physical_pair_sums": 166041,
+      "width_millionths": 4107059
+    }
+  ]
+}

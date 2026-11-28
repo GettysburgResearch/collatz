@@ -1,0 +1,49 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:50:57.942659+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/literature/check_affine_interval_profiles.py": "6bc3c4055c9f61fef647215452586717a982b102d44773ff14a1749775d25c54",
+    "research/astra-critical-rigidity-20261128/literature/ORDINARY_AFFINE_INTERVAL_PROFILE.md": "850472e903b199d307019f17d957b5ef9d140bbc542df062db80bdd86efcb49e",
+    "research/astra-critical-rigidity-20261128/literature/SHARP_AFFINE_OFFSET_ENVELOPE.md": "a95769dd782cfe78b81b75b89c179d454496013f65ac14fcc67727297380d959"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.754,
+      "stdout_sha256": "edc4643d7f7aa0267eeeb5f2cadc0f9f29504a17bd6452bd4a33cf8174f69320",
+      "result": {
+        "accidental_numerical_mergers": 66,
+        "balanced_numerical_mergers": 14681,
+        "fine_coarse_interval_checks": 168,
+        "independent_grade_cells": 77,
+        "negative_signed_ranks": 7568,
+        "protected_continuations": 88717,
+        "tested_numerical_pairs": 317520
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.931,
+      "stdout_sha256": "edc4643d7f7aa0267eeeb5f2cadc0f9f29504a17bd6452bd4a33cf8174f69320",
+      "result": {
+        "accidental_numerical_mergers": 66,
+        "balanced_numerical_mergers": 14681,
+        "fine_coarse_interval_checks": 168,
+        "independent_grade_cells": 77,
+        "negative_signed_ranks": 7568,
+        "protected_continuations": 88717,
+        "tested_numerical_pairs": 317520
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Actual ordinary numerical comparisons, accidental unequal-slope coincidences, exact independent grade counts, negative signed grade gaps and uniform-origin finite-cylinder transfer. Gaussian limits and the sharp polynomial-offset obstruction remain written.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:50:59.627443+00:00"
+}

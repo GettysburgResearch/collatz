@@ -1,0 +1,279 @@
+{
+  "schema": "collatz-critical-rigidity-control/v1",
+  "success": true,
+  "started_utc": "2026-11-28T04:50:55.568574+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/astra-critical-rigidity-20261128/cycles/check_global_dyadic_pair_abundance.py": "d9afa6e3831aaa83f59b3e95626bc6e3ef77164957fce20c2ff7f529285e837c",
+    "research/astra-critical-rigidity-20261128/cycles/GLOBAL_DYADIC_PAIR_ABUNDANCE.md": "deabf3d30b674e3531eb9de0cf651df1a204f502f217d15e435fd8f3f6fe8aee",
+    "research/astra-critical-rigidity-20261128/cycles/THREE_GRADE_SEPARATIONS.md": "eb6075542b1255941d17125fbf4439be7f3bd4a82c242f2e666db38fd80f0903",
+    "research/astra-critical-rigidity-20261128/cycles/MATCHED_RATIONAL_DENOMINATORS.md": "05ad9f9fb0461fb1e50288155fb8dd71132975257704de8e8ba6f02ab604ed1b",
+    "research/astra-critical-rigidity-20261128/cycles/check_rational_six_sum.py": "3584064c73d71db1e65fccd33906ce904a0f6ff935f848112f527eab228a1199"
+  },
+  "runs": [
+    {
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.698,
+      "stdout_sha256": "65122c9a883367239c801a6e9a1ffc33bb5e917a7751d68edbae939c6beb847d",
+      "result": {
+        "chains": {
+          "binary_native_words": 97510,
+          "calendars_with_strict_rise": 2883,
+          "calendars_with_winding_three": 3367,
+          "feasible_winding_strings": 3975
+        },
+        "grids": [
+          {
+            "adjusted_windings": {
+              "1": 127,
+              "2": 179
+            },
+            "clock_gcd": 1,
+            "forbidden_positive_differences": [
+              3,
+              4
+            ],
+            "full_denominator_bits": 476,
+            "independent_set": [
+              0,
+              1,
+              2,
+              7,
+              8,
+              9
+            ],
+            "odd_period": 306,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 6426,
+            "width_millionths": 4091660
+          },
+          {
+            "adjusted_windings": {
+              "1": 254,
+              "2": 358
+            },
+            "clock_gcd": 2,
+            "forbidden_positive_differences": [
+              3,
+              4,
+              5
+            ],
+            "full_denominator_bits": 962,
+            "independent_set": [
+              0,
+              1,
+              2,
+              8,
+              9
+            ],
+            "odd_period": 612,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 9180,
+            "width_millionths": 4100925
+          },
+          {
+            "adjusted_windings": {
+              "1": 381,
+              "2": 537
+            },
+            "clock_gcd": 3,
+            "forbidden_positive_differences": [
+              2,
+              3,
+              4,
+              5,
+              9
+            ],
+            "full_denominator_bits": 1447,
+            "independent_set": [
+              0,
+              1,
+              7,
+              8
+            ],
+            "odd_period": 918,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 9180,
+            "width_millionths": 4110218
+          },
+          {
+            "adjusted_windings": {
+              "1": 403,
+              "2": 568
+            },
+            "clock_gcd": 1,
+            "forbidden_positive_differences": [
+              12,
+              13
+            ],
+            "full_denominator_bits": 1530,
+            "independent_set": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "odd_period": 971,
+            "offset_window": 30,
+            "reduced_period": 971,
+            "tested_physical_pair_sums": 166041,
+            "width_millionths": 4107059
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.841,
+      "stdout_sha256": "65122c9a883367239c801a6e9a1ffc33bb5e917a7751d68edbae939c6beb847d",
+      "result": {
+        "chains": {
+          "binary_native_words": 97510,
+          "calendars_with_strict_rise": 2883,
+          "calendars_with_winding_three": 3367,
+          "feasible_winding_strings": 3975
+        },
+        "grids": [
+          {
+            "adjusted_windings": {
+              "1": 127,
+              "2": 179
+            },
+            "clock_gcd": 1,
+            "forbidden_positive_differences": [
+              3,
+              4
+            ],
+            "full_denominator_bits": 476,
+            "independent_set": [
+              0,
+              1,
+              2,
+              7,
+              8,
+              9
+            ],
+            "odd_period": 306,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 6426,
+            "width_millionths": 4091660
+          },
+          {
+            "adjusted_windings": {
+              "1": 254,
+              "2": 358
+            },
+            "clock_gcd": 2,
+            "forbidden_positive_differences": [
+              3,
+              4,
+              5
+            ],
+            "full_denominator_bits": 962,
+            "independent_set": [
+              0,
+              1,
+              2,
+              8,
+              9
+            ],
+            "odd_period": 612,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 9180,
+            "width_millionths": 4100925
+          },
+          {
+            "adjusted_windings": {
+              "1": 381,
+              "2": 537
+            },
+            "clock_gcd": 3,
+            "forbidden_positive_differences": [
+              2,
+              3,
+              4,
+              5,
+              9
+            ],
+            "full_denominator_bits": 1447,
+            "independent_set": [
+              0,
+              1,
+              7,
+              8
+            ],
+            "odd_period": 918,
+            "offset_window": 9,
+            "reduced_period": 306,
+            "tested_physical_pair_sums": 9180,
+            "width_millionths": 4110218
+          },
+          {
+            "adjusted_windings": {
+              "1": 403,
+              "2": 568
+            },
+            "clock_gcd": 1,
+            "forbidden_positive_differences": [
+              12,
+              13
+            ],
+            "full_denominator_bits": 1530,
+            "independent_set": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "odd_period": 971,
+            "offset_window": 30,
+            "reduced_period": 971,
+            "tested_physical_pair_sums": 166041,
+            "width_millionths": 4107059
+          }
+        ]
+      },
+      "stderr": ""
+    }
+  ],
+  "scope": "Complete actual one- and multi-sheet reduced-clock grids, true pair sums and exact native chain counts. Growing-period quantitative abundance remains a written theorem with explicit logarithm input.",
+  "source_stable": true,
+  "normal_optimized_same": true,
+  "finished_utc": "2026-11-28T04:50:57.108944+00:00"
+}
