@@ -47,6 +47,8 @@ MODULES = {
         "Integer-cleared actual and reference affine laws imply a complete dyadic divisor and its nonzero height cost. No asymptotic height statement or Subspace Theorem is formalized."),
     "RotationOccupation": ("cycles/RotationOccupation.lean", "Collatz.RotationOccupation",
         "Cleared odd traces, an exact partial unequal final edge, the complete two-sided divisor at an interior date, and elementary spacing/counting kernels. The global rotation-occupation and limiting pressure theorems remain written proofs."),
+    "TwoGradePairOrder": ("cycles/TwoGradePairOrder.lean", "Collatz.TwoGradePairOrder",
+        "The pair-order and pair-sum injectivity kernel for an integer octave with exact doubling, two-valued affine tags and a transitive physical shift. The cyclic integer sign propagation, weighted identity and Eisenstein separation are proved. Construction of this input structure from an ordinary Collatz cycle remains a written argument."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 
