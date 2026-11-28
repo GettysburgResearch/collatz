@@ -30,6 +30,8 @@ MODULES = [
     ("UpDownRayBand", "cycles/UpDownRayBand.lean", "CollatzResearch.UpDownRayBand"),
     ("RandomDirectionLoops", "cycles/RandomDirectionLoops.lean", "CollatzResearch.RandomDirectionLoops"),
     ("MovingFloorAntichain", "mass/MovingFloorAntichain.lean", "Collatz.MovingFloor"),
+    ("AbsoluteOffsetBudget", "mass/AbsoluteOffsetBudget.lean", "Collatz.AbsoluteOffsetBudget"),
+    ("ShiftedRampCores", "mersenne/ShiftedRampCores.lean", "Collatz.ShiftedRampCores"),
 ]
 
 
@@ -129,7 +131,7 @@ def main():
         "selection": {"mode": "subset" if args.only else "all",
                       "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
                       "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
-        "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, and the first-floor antichain only. The random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
+        "mathematical_scope": "Finite carry identities, actual-orbit centered counts, literal basin defects, Mersenne crests, convergence of the explicit protected-descent modification, rational inverse-word comparisons, the explicit up-down cycle counterexample, the finite record table and trapping-band closure, every-word up-down loop bounds, the first-floor antichain, the finite absolute-offset occupation/floor inequalities, and actual consecutive shifted-ramp identities only. The random-direction probability threshold, infinite ray/cycle assembly, analytic Gaussian or trace laws, multiplicative sampling, density and prime-distribution inputs, sharp modification asymptotics, and original Collatz conclusion are not formalized here.",
         "modules": [],
     }
     started = time.monotonic()

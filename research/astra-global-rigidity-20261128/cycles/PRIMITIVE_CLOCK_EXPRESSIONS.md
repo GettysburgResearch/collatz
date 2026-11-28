@@ -1,0 +1,30 @@
+# Full denominator exponent for primitive clocks and nested word powers
+
+Build a nonempty binary word with the letters \(0,1\), concatenation, and the operation \(V\mapsto V^k\) for an arbitrary positive integer \(k\). Bound the number of nodes in the expression tree, leaving all its power exponents unrestricted. Write \(n,u\) for the resulting shortcut length and weight, \(D=2^n-3^u>0\), \(C\) for its affine carry and \(q=D/\gcd(D,C)\) for its complete reduced denominator.
+
+**Theorem.** For each fixed node bound, along every sequence with \(n\to\infty\), \(\gcd(n,u)=1\) and \(\Lambda=n\log2-u\log3\to0\),
+\[
+                     \log\gcd(D,C)=o(n),\qquad \log_2 q=n-o(n).           \tag{1}
+\]
+Bounds and onset are ineffective. The word can contain an unbounded number of runs and its powered subexpressions can have unbounded lengths and exponents simultaneously. A general binary word need not have a bounded-size expression. PR 211 had the full exponent for boundedly many cyclic runs and primitive clocks, with no shrinking-gap assumption. The new case here permits fixed-depth nested powers of variable words. [PR 211, bounded runs and the torus norm argument](https://github.com/GettysburgResearch/collatz/blob/4b44cded44af5bb7c3ce67fb16a70c898ad505d5/research/astra-reciprocal-rigidity-20261127/cycles/phase3/BOUNDED_RUNS.md)
+
+**Affine expression.** Discard powers with exponent one. Pass to a subsequence with one fixed tree and fixed letter labels; the root cannot be a nontrivial power under the primitive-clock hypothesis. Index every node by \(j\), with \(r\) the root, and use variables \(X_j=2^{n_j},\ Y_j=3^{u_j}\), where \(n_j,u_j\) are its length and weight. Put \(M_j=Y_j/X_j\). The normalized translation \(B_j\) in \(F_j(x)=M_jx+B_j\) is a rational function of this fixed number of torus variables. At leaves the translations are zero and one half, respectively. At a concatenation \(ab\) use \(B_{ab}=M_bB_a+B_b\). At a power node \(j=a^k\) use
+\[
+                    B_j=B_a\frac{1-M_j}{1-M_a}.
+\]
+The genuine multiplier of any nonempty subword differs from one. Define the Laurent polynomial \(P=B_r\prod_{j=a^k}(1-M_a)\), with one factor for each occurrence of a power in the tree. At actual inputs \(B_r=C/2^n\) and all the multiplying factors are rational integers locally at every prime outside \(S=\{2,3,\infty\}\). Hence the full gcd of \(D,C\) is measured from above by the outside-\(S\) gcd of \(1-M_r,P\). This step does not divide by any part of the actual determinant.
+
+**The exceptional torus.** Suppose (1)'s first conclusion fails along an infinite sequence by a fixed positive exponential rate. Select a translate \(V=v^0H\) of a connected subtorus, of smallest dimension containing an infinite subsequence of these inputs, and choose \(v^0\) from that subsequence. The coordinate heights of all source points are \(O(n)\). The split torus coordinates on \(H\) may be taken to be Laurent characters and have height \(O_V(n)\) there as well. The character \(M_r/M_r(v^0)\) on \(H\) is nonconstant: a fixed ratio \(3^u/2^n\) fixes both integer exponents. After a unimodular change of characters it is \(t^d\) for some \(d\ge1\). Thus the root determinant on \(V\), up to a Laurent unit, is \(1-(3^{u^0}/2^{n^0})t^d\), irreducible over \(\mathbb Q\). Indeed its positive real root \(\gamma\) has \(\gamma^d=2^{n^0}/3^{u^0}\). Writing \(e=[\mathbb Q(\gamma):\mathbb Q]\) and taking the two rational prime valuations of the field norm gives \(d\mid en^0\) and \(d\mid eu^0\). Since \(\gcd(n^0,u^0)=1\), one has \(d\mid e\), hence \(e=d\). The irreducibility is preserved after adjoining the independent Laurent variables.
+
+**Positivity on its zero locus.** For each sufficiently late source in the subsequence keep every \(Y_j\) fixed and set
+\[
+         \log X'_j=n_j\log2-(n_j-n_j^0)\frac{\Lambda}{n-n^0}.
+\]
+These positive real coordinates remain on \(V\). For every character relation defining \(H\), applied to the ratio of the source and base source, uniqueness of prime factorization gives separately \(\sum_j a_j(n_j-n_j^0)=0\) and \(\sum_j b_j(u_j-u_j^0)=0\); here \(a_j,b_j\) are the exponents on the two coordinate families. Thus the displayed change preserves each character relation. At the root \(M'_r=1\). At each proper node,
+\[
+ \log M'_j = \frac{\log3}{n}(n u_j-u n_j)
+                    +O_{v^0}(\Lambda/n).
+\]
+Every proper node has \(0<n_j<n\), so coprimality makes the displayed integer nonzero. Its contribution dominates the error, since \(\Lambda\to0\) and the base source is fixed. For a power node \(j=a^k\), the two determinants \(n u_j-u n_j\) and \(n u_a-u n_a\) have the same sign, since the former is exactly \(k\) times the latter. Consequently every geometric ratio in the expression is strictly positive. The remaining multipliers are positive, and there is at least one odd leaf, so \(B_r>0\) at this point. No clearing factor vanishes. Thus \(P\) is nonzero at a real zero of \(1-M_r\) and shares no Laurent factor over \(\mathbb Q\) with the irreducible binomial on \(V\).
+
+Apply the outside-\(S\) gcd theorem to these two restricted polynomials in torus coordinates on \(H\); a constant nonzero restriction instead gives a bounded gcd directly. Laurent monomials may be cleared without introducing coordinate common factors by removing any monomial content. For every \(\epsilon>0\) the outside-\(S\) gcd is at most \(\epsilon O_V(n)\) logarithmically, off finitely many translates of proper algebraic subgroups. A violating infinite subfamily in one of those translates would lie in a lower-dimensional translate in \(V\), contradicting minimality. Taking \(\epsilon\) below the assumed rate proves the first conclusion of (1). The linear-form estimate \(\Lambda\gg n^{-4.116201}\) yields \(\log_2D=n-O(\log n)\), proving the second. [Levin and Wang, Theorem 1.13(a)](https://doi.org/10.1515/crelle-2019-0033) · [Linear form reference and statement](https://github.com/GettysburgResearch/collatz/blob/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127/arithmetic/WIDTH_THREE.md)

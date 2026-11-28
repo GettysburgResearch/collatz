@@ -1,4 +1,4 @@
-# Review boundary — fourth nine-hour checkpoint
+# Review boundary — fifth nine-hour checkpoint
 
 The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is planned through 2026-11-28 07:59:19 UTC. This is an intermediate checkpoint. Source intake: `INTAKE.json`; inherited packet head: `5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128`.
 
@@ -16,7 +16,7 @@ The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is
 
 ## Formal and finite verification boundary
 
-**Checkpoint 4: ten modules and 59 public roots passed a fresh serial compilation and axiom audit.** `checkpoint4/lean.json` identifies their exact bytes. The preceding six-module checkpoint-3 audit is preserved. The new `ProtectedDescent` module proves convergence of its explicit modified rule, while `RampReference` proves rational affine identities for every reverse word. The earlier checkpoint-2 four-module audit remains preserved. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
+**Checkpoint 5: twelve modules and 68 public roots passed a fresh serial compilation and axiom audit.** `checkpoint5/lean.json` identifies their exact bytes. Earlier audits remain preserved. The new `AbsoluteOffsetBudget` module proves finite denominator/product identities and count bounds with repeated departures allowed. `ShiftedRampCores` proves the genuine shortcut ascent, even descent and adjacent shifted-core identity. Neither module imports the analytic conclusions as axioms. Initial development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; the failed receipts are preserved alongside the successful full run. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
 
 The checkpoint receipts identify exact source hashes, compiler version, Mathlib pin, imported module closure, public declarations and axiom output. They distinguish fresh packet compilation from reuse of compiled dependencies. The only accepted theorem axioms are the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom mathematical interface axiom, or `native_decide` shortcut is accepted by the replay.
 
@@ -173,6 +173,129 @@ Pocklington, and all finite trajectories are replayed. The finite examples
 have terminating prefixes; only the asserted asymptotic test is equivalent to
 universal convergence. The pointwise identity on distinct prime triples is a
 separate unproved sufficient condition, not a claim of multiplicative closure.
+
+## Checkpoint 5 independent reconstruction
+
+**Full real-offset ordinary trace — VERIFIED AS A SOURCE-QUALIFIED DEDUCTION.**
+Root reconstructed the exact relation between the canonical integer fibre and
+the weighted all-visit occupation, including geometric repetition of a
+periodic primitive lap. A compact real offset bounds the number of earlier
+visits to the physical interval and forbids earlier low states. These two
+finite inequalities pay for reset failures without clipping the trace or
+deleting ordinary target sites. The reset uses Weaver 102's stopped-set
+comparison on a finite sequence of height scales; the subsequent local-source
+average is a renewal calculation with its real mark retained. The argument
+does not assume independence between the mark and its clock. The compact-test
+statement is vague in the real coordinate; constant-one testing requires a
+separate tail argument. The stated weighted-decay extension has its explicit
+summable shell condition. The finite departure-count algebra is formalized,
+but the ordinary transfer and stationary limits are not Lean theorems.
+
+**Growing offsets and sparse sets — VERIFIED AS SOURCE-QUALIFIED DEDUCTIONS.**
+Root checked the stopping floor at order `Y^(1-s)`, the geometric-gap failure
+exponents, the stopped landing-set entropy loss and the occupation cost
+`O(Y^s)`, leaving the stated `s<1/64` range. The matching lower bound exhausts
+fixed compact offset tests. There is no cap on the trace amplitude in this
+theorem. The lower-end estimate uses the first-passage label at a fixed low
+state and retains the periodic factor `1−omega`; a macroscopic offset at a
+nonperiodic root conversely requires an actual visit to one of finitely many
+low states. For the good-site sparse-set estimate, root checked that the
+finite intercept is below every physical target on the employed clock range:
+`R_j ≤ (3/2)^j−1 < Y`. Thus the exact positive column, rather than an
+unjustified unrestricted residue surrogate, can be used. Ternary `L^p`
+control for `p<2`, Holder and the explicit clock normalization give the sparse
+bound. It does not supply raw uncapped moments above one on all sites.
+
+**Unit real bins and the exact quadratic defect — VERIFIED AS A
+SOURCE-QUALIFIED DEDUCTION.** Root re-read Weaver 9/v2 Appendix B's tail and
+ternary refinement estimates. Freezing the entire vector of unit-bin tents
+keeps its `ell^1` Lipschitz constant bounded, so the refinement cost is paid
+once, not once per bin. Low multipliers have a per-total bounded density;
+the exceptional high part has exponentially small mass. Interpolation at a
+depth proportional to `log B` gives the all-moment stationary shell estimate.
+For finite prefixes the signed odd inverse origins give separation exceeding
+one across **different** division totals whenever both multipliers exceed
+one. Consequently their energy equals the tilted product-law moment exactly.
+The low sector converges strongly to the stationary bin vector. The high
+sector contributes a limiting unit at the quadratic exponent and escapes
+every fixed bin; under the tilt its log-offset has the stated Gaussian limit.
+Root checked the tilt probabilities `3/4^e`, drift and variance and the
+uniform fractional-moment bound for the reversed reciprocal-product sum.
+The cross term vanishes by tightness and Cauchy--Schwarz. The actual integer
+estimates concern convex clock averages. Summing all clocks with their
+canonical weights is not justified by those estimates; stationary
+continuation can also smear the exact prefix atoms across the cross-clock
+separation scale.
+
+**Macroscopic energy on an actual escaping component — VERIFIED AS A
+SOURCE-QUALIFIED DEDUCTION.** Root reconstructed the exact restricted-measure
+identity: a bilateral path with product loss at least a fixed amount must
+visit a bounded ordinary state. In the specified component, the futures of
+those finitely many states have all merged with the selected ray by a finite
+grade. The late canonical fibre therefore stabilizes exactly on that strip,
+after its specified affine normalization. Weaver 175/v1 section 7 was opened
+and its cover at mesh `2^(-8N)` and length `O(1/sqrt N)` checked; the cover is
+available at every sufficiently large depth on the selected positive-mass
+piece. Setting `N` proportional to `log y` bounds the number of physical unit
+bins containing that piece, and Cauchy--Schwarz gives the lower energy
+`c sqrt(log y)` at every sufficiently late ray site. No quantitative weak
+convergence rate is substituted for the exact stabilization. If every orbit
+is bounded, the finite set of low predecessor states instead makes the strip
+empty at every sufficiently high nonperiodic target. The required competing
+ordinary upper bound remains unproved. Weaver's analytic inputs are retained
+as source-qualified premises, including their stated unrefereed dependencies.
+
+**Complete modulus and bounded nested expressions — VERIFIED AS
+SOURCE-QUALIFIED DEDUCTIONS.** Root read PR212's independent-clock construction
+at `505d3fe782922904e86477990cc5d41e9110edda`. Its primitive rational words
+produce actual affine resonance on a divisor `D/q` with `log q=o(n)`, while
+the full modulus does not resonate for that word. The upper count retains the
+complete reduced denominators dividing `q`; their divisor sum is
+subexponential. This is an obstruction to discarding a factor of the full
+modulus, not an ordinary cycle construction. In the nested-expression
+theorem, root checked pruning of trivial powers, clearing of all geometric
+denominators, the irreducible root determinant on a minimal translated torus,
+and the positive tilt that prevents the translation numerator from sharing
+that determinant. The coprime-clock hypothesis is used in the irreducibility
+and sign argument. Root opened Levin--Wang Theorem 1.13(a): its outside-S gcd
+bound needs polynomial coprimality but not the extra origin condition in the
+different full-gcd part. This gives the complete exponential denominator only
+for a bounded expression tree, with arbitrary variable powers. The finite
+checker uses integer inequalities to accept its nearcritical examples.
+
+**All-clock semimodule denominator — VERIFIED as written finite algebra,
+with a source-qualified order corollary.** The coprime normalized Apéry-set
+representation and classical stable-module language are credited to
+Gorsky--Mazin--Vazirani, section 5, Definition 5.1. Root checked the polynomial
+identity and every modular unit used to recover the original gcd. For
+noncoprime clocks the ambient lattice quotient has an actual torsion factor;
+word primitivity is equivalent to absence of a nonzero torsion translation
+stabilizer. Both evaluation charts are needed. No prime of the complete
+modulus divides both chart multipliers, so their joint gcd retains exactly
+the original prime powers. An explicit word demonstrates the extra factor
+that chart zero alone can introduce. The finite replay covers 3109 rooted
+words, including imprimitive words and their stabilizers. The S-unit gcd
+corollary excludes a bounded-binomial-factor family, not arbitrary
+semimodule polynomials or arbitrary integer cycles.
+
+**Adjacent shifted cores and prime mass — VERIFIED AS SOURCE-QUALIFIED
+DEDUCTIONS, with complete bounded controls.** Root checked Yu's original
+1990 Corollary 2 and its constants, the real Matveev bound as quoted in the
+primary Bugeaud--Mignotte--Siksek paper, and the original Bugeaud--Laurent
+1996 Theorem 3. For cores at most 1000 the first real and p-adic estimates
+exclude `A≥10^40`; two exact discrete-log lifts then force `f<200` and the
+remaining binary exponent below 300, hence `A<510`. The replay enumerates
+the full resulting range and all actual starts, not merely sample exponents.
+It finds 2857 starts and confirms their finite termination certificates.
+The checker was changed to explicit exceptions so every condition remains
+active under optimized Python. Root also checked the rank of the three-term
+S-unit equation against Evertse--Schlickewei--Schmidt Theorem 1.1. The finite
+prime-group conclusion forces eventual periodicity; it does not exclude a
+nontrivial cycle. In the postcrest theorem the common divisor is removed
+before applying two-logarithm p-adic bounds; the multiplicatively dependent
+case is treated separately by LTE. The summed small-prime valuation estimate
+has its explicit `2 gamma + eta < 1` range and its genuine ordinary next
+shifted state. No random-exponent or RH premise is inserted.
 
 ## Questions kept open
 
