@@ -1,0 +1,19 @@
+{
+  "scope": "Local native matching-first-hit deadline; not a bound on arbitrary stopping time",
+  "command": [
+    "/workspace/scratch/f139035b63c2/toolchain/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/921bae088f07/full-proof-build/CountedDeadline.olean",
+    "research/astra-full-proof-20261128/CountedDeadline.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 30.113726030998805,
+  "source_sha256": "4bf278cb7e2ee337136104aa4bcbdb96a90224dee97e969e42dfb79c75fe7a4a",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "stdout": "'Collatz.FullProof.Deadline.native_floor_two_product' depends on axioms: [propext, Quot.sound]\n'Collatz.FullProof.Deadline.native_matching_first_hit_deadline' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "parity_source_sha256": "b11dc7cda3492885cc1204d09af415842a98fe45c96cfd38a60bad68f4dfd81b"
+}

@@ -1,0 +1,246 @@
+{
+  "scope": "Frozen final scientific sources of the three-hour pass; hashes are not mathematical verification",
+  "scientific_commit": "88242bb9b2e4dd78e05922547fddc4bc92fbcd06",
+  "scientific_tree": "537119098ef5fd03edf9806d3f064c7c57929134",
+  "validation_receipt": "FINAL_CHECKOUT.json",
+  "previous_checkpoint_receipt": "CHECKPOINT_06_CHECKOUT.json",
+  "source_count": 59,
+  "sources": [
+    {
+      "path": "research/astra-full-proof-20261128/ACTUAL_SOURCE_STATIONARY_TRACE.md",
+      "sha256": "8fa02a779f748eb29ab6fd92d51f298e31581429a0a0356d7e71a1e3bcdad826"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/ClosureConsumer.lean",
+      "sha256": "3d25bf9bd15ffe743093b2abe020e1833b8af0b2a177e9b137bf1cca50324be8"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/CountedDeadline.lean",
+      "sha256": "4bf278cb7e2ee337136104aa4bcbdb96a90224dee97e969e42dfb79c75fe7a4a"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/FINAL_ASSESSMENT.md",
+      "sha256": "23b960ac15fe9b8cf8409621c9f165ade76a6c8c84d1be25ae88257e8b990aca"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/README.md",
+      "sha256": "519010e7c631618301422219baf62fbeaea78fdee45fc307cc19e1689b42dcdc"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/SOURCE_PINS.json",
+      "sha256": "b9d777862034e4811a900eaa3aec2c6bf7412ee352a9024f3a30e8330a78a698"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/arithmetic/ExternalClaimChecks.lean",
+      "sha256": "169213bbe5607334b901f8d5e0ad34992e7a2f1826b2c6adae9b67eb367b0e2c"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/arithmetic/OUTSIDE_INPUTS.md",
+      "sha256": "700d1343422f16eab8234d8be7ad761a2b80eda66894733a85d77e0d6c87510f"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/BOUNDARY_NORM.md",
+      "sha256": "dd5f6d3005818acbbf5eecc006cdb25c07afe1dd77065a85615d0472a939c2f9"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/CLOCK_HEIGHT_MARK.md",
+      "sha256": "0095b09a8474da08fa0191d11380112045568b27897aac3fe912cbe11b04c23f"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/ENTRANCE_COMPARISON.md",
+      "sha256": "89d01f55fda6de444e792c1ab2b3dea24180a7f47733861ed1d6fec410fc4fa9"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/EndpointFlux.lean",
+      "sha256": "7ec4797b8a2a0ceea8f51e5d07c5f13f2b2b8daea2847e17ed6d54c270ded323"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/FIRST_MOMENT.md",
+      "sha256": "0d6d35fc489a5321024b773cec14ae35e42dee43a46ea3b0381cfeb7718e9c64"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/INTERMEDIATE_FLOOR_WIDTHS.md",
+      "sha256": "3a47bfe4b2064f14eecc0ba6d68416a36cbbeba903a92f9f8f82d2f2f986ee3b"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/INTERNAL_PREFIX.md",
+      "sha256": "2b220aea7fc50dfd249e6d178d94b826cb47d2a576ec5b3e6ceb9b575a07a66b"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/RESONANCE.md",
+      "sha256": "d9b06d6a3760a1a2a664cf66b690c861af1b2fca69a4f7d6933cfa3847de7c86"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/ROUTE_CONGESTION.md",
+      "sha256": "8a3dd6d6681cf7cd091614049200bc961311909687911fcf6f2c6c2ac5053907"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/Resonance.lean",
+      "sha256": "3e3f9b0701c71a0462ede32bb53ee652c7c51cd1cef4c757310633125bce47fb"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/SURVIVAL_WINDOWS.md",
+      "sha256": "9d44c0e6f5b40e83fc19642866766e6807c552e5d8300e6280b995a41bdae9cc"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/SignedFloor.lean",
+      "sha256": "567348e957684943316e38eedd085d41d7308792fcedb22a817da01cb17af7d7"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/UPPER_CERTIFICATE_SHADOW.md",
+      "sha256": "e96ab540087881826b571e3a3858bdd3c1df28cff8cc1ccb31950415d76a0be3"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/check_internal_prefix.py",
+      "sha256": "3cdc3f6fb8321b7ee026bfc25c01442482c50f8f4a3326075d74f5893d12b03a"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/check_resonance.py",
+      "sha256": "a8ed485ad5e0fc176f5776915cc596b81e3b113359c1202104eb49bff0d30f3b"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/check_survival_ladder.py",
+      "sha256": "6a82ea03997ca6767b5b586417f353fdd0aa30b0249cd1b1a3b9d6b1088a9737"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/descent/check_upper_shadow.py",
+      "sha256": "d37f63b4028dfc0c3b7779879b6099cc6d5d91549f85391b66cd389ad4a367e2"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/ABSORBING_RATIONAL_FLOOR.md",
+      "sha256": "359f6146ef993c8d2bb9030fe9e823f5adbd00b046b09254898189b6c5e19076"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/DYADIC_PHASE_CALIBRATION.md",
+      "sha256": "e3e4cd2201c5f420a9aa05089e286a42cee923f9eeaa52928f92e34949ce4d5d"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/FORCED_GRADE.md",
+      "sha256": "1ee11a22c63438d561c5a37df455a22318be03b25a55aaac472306f0bc1decd1"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/FUNNEL_CONCENTRATION.md",
+      "sha256": "fe9882ee467a695a058d0579535b82e7ef3f38d8e49c335d576166d0c74ab057"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/MARKED_TERNARY_ENVELOPE.md",
+      "sha256": "2dcb98e2c8904f9ebbb8be357b231fcfe43b0997f5e1a816941bb6fed874832d"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/MODERATE_PARITY_AT_ONE.md",
+      "sha256": "c17ae451a182df164dabdc4be7507538af8d2a342dd3ca397da65b3bb6f1030d"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/ONE_EDGE_ENTRANCE_CONTROL.md",
+      "sha256": "6415211fb571ed8468f656028b7a9cd4ccac772d95e82f2aeba377915db4ef91"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/PAIR_FLOOR_TEST.md",
+      "sha256": "39157d3117df55e01a21c90c990cc80f0df6bea3e9441a05a75154aed81acb68"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/RATIONAL_ENTRANCE_KERNEL.md",
+      "sha256": "77696edd2ff040614dcde4f27853caa979f554b0832f2801aa660fe4cb43b073"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/RECORD_FLUX.md",
+      "sha256": "ed4991202389881d6f4b43e4def421447876fa1e3cd215592dcd07ed3078e974"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md",
+      "sha256": "78bd63382331585e671f71ac6e3e11c178824200815080368e6d51b1153c22df"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/ROOTED_ROTATION.md",
+      "sha256": "25f6e7f1bb5e8088225a0ded66caa58b18c3538b0c7219e616671d850c9e7b33"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/SignedDeathClock.lean",
+      "sha256": "37cb67f379c71da589dbdb586743883ba17aac4747e760895e7e5ca1eeec6bd1"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/check_death_clock.py",
+      "sha256": "d5c56cb04ac484898cc61d812f9eaf5fa398cb774c4c506256a40f41916bdbf3"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/check_forced_grade.py",
+      "sha256": "40f20473a83937faf76bba0e56af8089033614b8c63dbbfc15093805ec8103d3"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/replay_lean.py",
+      "sha256": "3a0242934967d99ddae40f5d619d7521697f4ac816f43c75d5c4be8f8d74b24b"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/mass/signed_death_lean.json",
+      "sha256": "bd2a39fc102f73ffe89adf247d7b9f5b768ceb06697dd406ec2e611325ffe5c8"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/CONDITIONAL_SUFFIX_SUPPORT.md",
+      "sha256": "eb37eea93ff4ae9ae4c41e15552f789fc05a866ba03ba4e5a1d4ba45946c22d7"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/LITERAL_ENTRANCE_KERNEL.md",
+      "sha256": "ccb69be0ba86d6a4e92addaeee02c2c92842f553327186d5a268652b2d36036d"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/MODERATE_DENOMINATOR_LADDER.md",
+      "sha256": "105727e81893b8bd8d6caccdea8c2b9b256f373b49a25e279eaad368e9468847"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/PHYSICAL_HEIGHT_BOUNDARY.md",
+      "sha256": "a38cd060fc776ac62722367497635631a8fff6b8f4a1b46f7439b93342a371a8"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/POSITIVE_RATIONAL_ARCS.md",
+      "sha256": "7f0a6eefdf4e23cddb53c5ae1c42c3f0ddc56a570f365292b919d9edfa35a94a"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/POSITIVE_SAMPLING.md",
+      "sha256": "b411c6e5a1ab504dcd36f0e088b8ef6923cc5e8a64cc39573a117ba63647e720"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/ParityTail.lean",
+      "sha256": "b11dc7cda3492885cc1204d09af415842a98fe45c96cfd38a60bad68f4dfd81b"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/RATIONAL_ENTRANCE_CLOCK.md",
+      "sha256": "0cc7788ef6fa65df7f48205257429166dfd746f3869907de4cd2757e7d6d131a"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/README.md",
+      "sha256": "3377e8c2809b961abd921b8db621b533bb4c80307f46a150893a4e931598a613"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/RationalControl.lean",
+      "sha256": "cdb1ccb8cd2e01534e6ba3ff6dab8696afb4da45c7b61bb40d64a8870b56f5c1"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_denominator_ladder.py",
+      "sha256": "3235279400812d0e4d326f30597f09a9d06518dfe5d121a99ca7eecb95bd1885"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_entrance_kernel.py",
+      "sha256": "a013ea0e20adeaebcc31c3f5dee750feaf58aa7834cb49ec5c688562288a24d4"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_height_boundary.py",
+      "sha256": "88ce63197c83e5d460be6d72949af1a9f37da04a3e1df3e59e888b8b2a86eb86"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_parity.py",
+      "sha256": "4993e340cd94052b7ee4be56617b2cd6e41808ec5d05c6cbd1893f2f4b8b180d"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_rational_arcs.py",
+      "sha256": "ffbd4b5c6b8df35394643d7ad685200b628ddc45017e9a100386e2e099bd0215"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/check_sampling.py",
+      "sha256": "d6c96137b8700a68d823de07c8a10c80cdda786c2bccafb0ca18f90d3abeddd7"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/replay_core.py",
+      "sha256": "d463ea33f0def1c498b09455828c50810082d18ccb6087aa156e898ef82136e9"
+    }
+  ]
+}

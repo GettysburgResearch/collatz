@@ -1,0 +1,26 @@
+# First safe entries have tight physical heights
+
+**Proposed written result.** A positive-density set of actual predecessors can concentrate on a single terminal record. The ordinary inverse tree of 1 already exhibits this phenomenon. The geometric part below is elementary. The quantitative density tail uses Weaver's externally reported setwise first-landing estimate.
+
+Use the definitions of \(U,a=7/4,J_n,d=H_2(4/7)\) in [the flux calculation](RECORD_FLUX.md). A strict cone at an odd positive integer \(y\) consists of the integers \(x\) having a first path \(x\to y\) along which every reversed prefix of length \(k>0\) has total exponent \(s_k>ak\). Include \(y\) at length zero. Cone membership concerns a finite path. It makes no assumption about the subsequent orbit of \(y\).
+
+If \(y>1\), each of the \(k\) departing forward states on such a suffix is at least 3. The affine product therefore gives the successive predecessor \(z_k\) at reverse distance \(k\) the bound
+\[
+ z_k=y\,2^{s_k}\prod_{i=1}^k(3+1/z_i)^{-1}
+       >c^k y,\qquad c=2^{7/4}/(10/3)>1.
+\]
+In particular \(y\) is the genuine first landing from \(x\) at every integer threshold \(R\) with \(y\le R<cy\). The root 1 has the same bound for nonempty first-hit reverse paths, since no departing state before the hit is 1.
+
+Suppose \(\mathcal S\) is any set of odd positive labels with \(\#(\mathcal S\cap[1,R])\le K R^d\), \(K\ge1\). For every fixed \(\delta<\min(1-d,g)\), \(g=1-H_2(\log_3 2)+1/351\), there is a constant \(C_\delta\) such that the fraction of odd \(x\in[X,2X)\) belonging to at least one strict cone at some \(y\in\mathcal S\), \(y\ge Y\), is at most \(C_\delta K Y^{-\delta}\) for all \(X,Y\ge2\). The constants inherited from the landing bound are ineffective.
+
+To prove the estimate, partition sufficiently large labels into consecutive bands \((R_{i-1},R_i]\) with \(1<\theta_1\le R_i/R_{i-1}\le\theta_2<c\), using rounded geometric thresholds. Every \(x\) entering any of the band’s cones first lands in \(\mathcal S\cap(R_{i-1},R_i]\) at \(R_i\). For \(R_i\le X\), Theorem 1 including its octave extension in [Weaver 102, version 1](https://rstation.ai/problems/collatz/papers/102/v1) bounds that probability by
+\[
+ C e^{C\sqrt{\log R_i}}\bigl(KR_i^{d-1}+R_i^{-g}\bigr).
+\]
+Sum the resulting geometric series, retaining any exponent strictly below \(\min(1-d,g)\). The finitely bounded initial thresholds are absorbed in the constant. In the remaining top bands \(y>X/\theta_2\), hence \(x/y<2\theta_2\). The strict growth bound makes the length \(h<\log_c(2\theta_2)\) uniformly bounded. The exact product also gives \(2^{s_h}\le (2\theta_2)(10/3)^h\), so the number of possible words per \(y\) is absolutely bounded. Their total population is \(O(KX^d)\); if \(Y>2X\) the count is zero. These bounds give the asserted uniform tail.
+
+**Application at a hypothetical bad root.** On every positive nonterminating trajectory \(x_j\), the debt \(b(j)=7j-4A_j\) tends to \(+\infty\): \(x_j\ge3\) and the product formula gives \(A_j\le j\log_2(10/3)+\log_2(x_0/3)\). Thus an earliest globally minimizing index gives the first permanently safe state \(y\). Before that date \(b(i)>b(h)\), so the reversed prefix debts are strictly negative and \(x_0\) is in the strict cone of \(y\). All permanently safe integers are eventually principal and belong to the sparse census in PR 201. Consequently any bad component of positive lower odd density has a *single* permanently safe root whose strict cone has positive upper odd density. One can work with large octaves and select the same root from a fixed finite set along a subsequence. The external positive-predecessor-density theorem gives the component hypothesis for any bad component, by selecting a unit forward image.
+
+**Calibration inside the ordinary tree of 1.** Cut every first-hit inverse path from 1 at the *last* occurrence of its maximum debt \(b_k=7k-4s_k\), including the zero-length endpoint. This record root \(y\) belongs to the set counted by the coefficients in [the flux calculation](RECORD_FLUX.md). The remaining path lies in its strict cone. Each record root is principal and the roots have the same \(O(R^d)\) census. Positive predecessor density for 1 and the preceding tail estimate therefore imply that at least one fixed, actually terminating record root has a strict cone of positive upper odd density. This calibration makes no assumption about the conjecture. It prevents deriving extinction from a blanket assertion that such density must disperse among infinitely many record roots.
+
+The predecessor-density input is the [Mazur positive lower density theorem, external Lean audit](https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html). Relative odd-source density follows by the usual decomposition into an odd component and its power-of-two multiples; alternatively Weaver's uniform odd-source floor in [paper 12](https://rstation.ai/problems/collatz/papers/12/v1) suffices. The setwise landing bound is an external written assembly. Neither source was rebuilt here. All estimates in this note are written deductions. No comparison of two different fixed cones or proof that a permanently safe root cannot exist follows.

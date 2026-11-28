@@ -1,0 +1,83 @@
+{
+  "scope": "Local new modules only; no external full-proof rebuild",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": {
+    "ParityTail": {
+      "source_sha256": "b11dc7cda3492885cc1204d09af415842a98fe45c96cfd38a60bad68f4dfd81b",
+      "object_sha256": "76853e15f070e932d65efb946d4207a4324559159888fdb88b83952403291b40",
+      "audit": [
+        "'Collatz.FullProof.Parity.reflected_arc_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Parity.small_range' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FullProof.Parity.fifth_clock_needs_high_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "ClosureConsumer": {
+      "source_sha256": "3d25bf9bd15ffe743093b2abe020e1833b8af0b2a177e9b137bf1cca50324be8",
+      "object_sha256": "4c4b20b98b12086b887b9833d73cd50a4b502818c7aff88f9695e4f9d89e1aee",
+      "audit": [
+        "'Collatz.FullProof.Closure.bad_card_le_tail' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Closure.integer_density_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Closure.all_reach_one_of_real_density_and_upper_tail' depends on axioms: [propext,",
+        " Classical.choice,",
+        " Quot.sound]"
+      ]
+    },
+    "ExternalClaimChecks": {
+      "source_sha256": "169213bbe5607334b901f8d5e0ad34992e7a2f1826b2c6adae9b67eb367b0e2c",
+      "object_sha256": "e3377f9a2c1d701e6badc56f70c44216db24f3158c1191e28d97e80be786f4e3",
+      "audit": [
+        "'FullProofExternalChecks.false_uniform_certificate' depends on axioms: [propext, Quot.sound]",
+        "'FullProofExternalChecks.impossible_integer_bound' depends on axioms: [propext, Quot.sound]",
+        "'FullProofExternalChecks.oracle_value_has_a_name' does not depend on any axioms"
+      ]
+    },
+    "CountedDeadline": {
+      "source_sha256": "4bf278cb7e2ee337136104aa4bcbdb96a90224dee97e969e42dfb79c75fe7a4a",
+      "object_sha256": "6b7d71989a09fae0d82f0087ee143fe7ef56a6663fae519057bb57ed4a6a4ea9",
+      "audit": [
+        "'Collatz.FullProof.Deadline.native_floor_two_product' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FullProof.Deadline.native_matching_first_hit_deadline' depends on axioms: [propext,",
+        " Classical.choice,",
+        " Quot.sound]"
+      ]
+    },
+    "Resonance": {
+      "source_sha256": "3e3f9b0701c71a0462ede32bb53ee652c7c51cd1cef4c757310633125bce47fb",
+      "object_sha256": "d307f129bc577e47dade72e57597f70b117839344eb9cfe2a1bc9b6422f2cd7b",
+      "audit": [
+        "'Collatz.Sprint.Descent.double_step' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.Sprint.Descent.strict_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Sprint.Descent.strict_corridor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Sprint.Descent.odd_launch' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.Sprint.Descent.no_counted_meeting_before_overtake' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SignedFloor": {
+      "source_sha256": "567348e957684943316e38eedd085d41d7308792fcedb22a817da01cb17af7d7",
+      "object_sha256": "5ed2176003ff8d57f1be18bb873274c29438a871d4e5572d18bf530b9afc7c13",
+      "audit": [
+        "'Collatz.Sprint.SignedFloor.ratio_path' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.Sprint.SignedFloor.negative_shadow_floor' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    "EndpointFlux": {
+      "source_sha256": "7ec4797b8a2a0ceea8f51e5d07c5f13f2b2b8daea2847e17ed6d54c270ded323",
+      "object_sha256": "a5846b1487fe0ac45ea1bbf1911a0bb5ab66648f6af7af420226d0b9cf469f2d",
+      "audit": [
+        "'AstraFullProof.EndpointFlux.two_steps' depends on axioms: [propext, Quot.sound]",
+        "'AstraFullProof.EndpointFlux.paired_count' depends on axioms: [propext, Quot.sound]",
+        "'AstraFullProof.EndpointFlux.standard_pair' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "RationalControl": {
+      "source_sha256": "cdb1ccb8cd2e01534e6ba3ff6dab8696afb4da45c7b61bb40d64a8870b56f5c1",
+      "object_sha256": "b34c8a228d83bd649e094c7804094224813a621131992b5791dc50b59b2a0a63",
+      "audit": [
+        "'Collatz.FullProof.RationalControl.lap' does not depend on any axioms",
+        "'Collatz.FullProof.RationalControl.checked_blocks' depends on axioms: [propext]",
+        "'Collatz.FullProof.RationalControl.finite_basin' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  }
+}

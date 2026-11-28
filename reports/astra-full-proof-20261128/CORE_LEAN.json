@@ -1,0 +1,36 @@
+{
+  "scope": "Local new modules only; no external full-proof rebuild",
+  "lean": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": {
+    "ParityTail": {
+      "source_sha256": "b11dc7cda3492885cc1204d09af415842a98fe45c96cfd38a60bad68f4dfd81b",
+      "object_sha256": "76853e15f070e932d65efb946d4207a4324559159888fdb88b83952403291b40",
+      "audit": [
+        "'Collatz.FullProof.Parity.reflected_arc_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Parity.small_range' depends on axioms: [propext, Quot.sound]",
+        "'Collatz.FullProof.Parity.fifth_clock_needs_high_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "ClosureConsumer": {
+      "source_sha256": "3d25bf9bd15ffe743093b2abe020e1833b8af0b2a177e9b137bf1cca50324be8",
+      "object_sha256": "4c4b20b98b12086b887b9833d73cd50a4b502818c7aff88f9695e4f9d89e1aee",
+      "audit": [
+        "'Collatz.FullProof.Closure.bad_card_le_tail' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Closure.integer_density_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Collatz.FullProof.Closure.all_reach_one_of_real_density_and_upper_tail' depends on axioms: [propext,",
+        " Classical.choice,",
+        " Quot.sound]"
+      ]
+    },
+    "ExternalClaimChecks": {
+      "source_sha256": "169213bbe5607334b901f8d5e0ad34992e7a2f1826b2c6adae9b67eb367b0e2c",
+      "object_sha256": "e3377f9a2c1d701e6badc56f70c44216db24f3158c1191e28d97e80be786f4e3",
+      "audit": [
+        "'FullProofExternalChecks.false_uniform_certificate' depends on axioms: [propext, Quot.sound]",
+        "'FullProofExternalChecks.impossible_integer_bound' depends on axioms: [propext, Quot.sound]",
+        "'FullProofExternalChecks.oracle_value_has_a_name' does not depend on any axioms"
+      ]
+    }
+  }
+}
