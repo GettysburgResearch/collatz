@@ -23,4 +23,16 @@ distinct evidence. Outside works are welcome with precise attribution.
 
 The starting context and durable working record are in
 [the pass brief](../../reports/astra-nine-hour-resolution-20261128/PASS_BRIEF.md).
-Scientific contributions will be indexed here as they become reviewable.
+## First substantive checkpoint
+
+| Contribution | Proven statement and present boundary |
+|---|---|
+| [Fixed-cone trace approximation](CONE_ENVELOPES.md) | Every eligible fixed predecessor cone, after any finite deletion, has exactly the same lower trace envelope. Actual approximants exist at every prescribed ternary precision; ordinary size is uncontrolled. |
+| [Spatial trace excess](analysis/SPATIAL_ENVELOPE_EXCESS.md) | Every hypothetical escaping component creates a positive excess in every sufficiently large fixed-ratio odd shell, above the Haar baseline one. The matching ordinary upper estimate is open. |
+| [Ordinary conformal pressure](arithmetic/ORDINARY_CONFORMAL_PRESSURE.md) | Exact central inverse rows exclude a curved two-weight region. The physical slope family has no finite mass at exponents at most one and classifies escaping components above one; the excluded region does not reach that family. |
+| [Persistent component boundaries](wild/DYADIC_BOUNDARY_ADDRESSES.md) and [corner returns](wild/FIRST_CORNER_RETURN.md) | Every unlike adjacent pair has a constrained persistent address, with exact marked ternary transport and genuine multiplier defects at long returns. New boundary births prevent the unproved unmarked invariance step. |
+
+The [first checkpoint reconstruction](../../reports/astra-nine-hour-resolution-20261128/CHECKPOINT_01_REVIEW.md)
+records the exact source commits and what was independently checked. These are
+intermediate contributions. The team remains active toward full closure through
+the requested nine-hour interval.

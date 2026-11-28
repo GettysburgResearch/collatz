@@ -109,3 +109,8 @@ validation. Record remote head/tree and verify each pushed checkpoint.
 - 12:38 UTC: fresh worktrees created from PR218; current PR217/219/220 refs fetched.
 - Next: broad agent exploration, root-wide frontier/source review, first substantive
   reconstruction and checkpoint. This pass must remain active until 21:33:06 UTC.
+
+- 13:05 UTC: first substantive packet reviewed; fixed-cone envelope, spatial
+  escape excess, conformal pressure, and marked boundary transport saved. All
+  five default integrity commands passed on clean commit 8dc0003c70873091e7cd01269995a8f8ce76d572.
+  PR221 is the new pass publication; all lanes continue.
