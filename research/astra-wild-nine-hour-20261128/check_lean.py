@@ -26,6 +26,12 @@ SOURCES = {
         "Collatz.OrdinaryPhase.stepNumerator",
         "Collatz.OrdinaryPhase.sourceEnvelope",
     ],
+    "dynamics/MersenneCarry.lean": [
+        "Collatz.MersenneAnchor.Carries.length",
+        "Collatz.MersenneAnchor.Carries.ancestor",
+        "Collatz.MersenneAnchor.doubled_lower_mass",
+        "Collatz.MersenneAnchor.anchored_cone",
+    ],
     "outside/CommonPrimeAlignment.lean": [
         "AstraWild.CommonPrimeAlignment.centerDefectDvd",
         "AstraWild.CommonPrimeAlignment.centerAlignment",

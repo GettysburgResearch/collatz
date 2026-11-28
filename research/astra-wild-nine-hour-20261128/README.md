@@ -48,3 +48,13 @@ The [integer shadow theorem](outside/EXPONENTIAL_INTEGER_SHADOWS.md) recovers on
 
 The [coordinator review](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_03_REVIEW.md) reconstructs all three packets. [All four included Lean modules and nine public roots now pass a fresh local compile and separate axiom audit](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_03_LEAN.json), resolving checkpoint 2's pending replay. The infinite mathematical statements remain source-qualified written proofs. The research pass continues.
 
+## Checkpoint 4
+
+The [finite inverse-information theorem](arithmetic/TILTED_INVERSE_INFORMATION.md) constructs a parameter-independent decoder with O(n^-1/2) statistical error throughout the high-tilt interval and proves recovery of all but any diverging terminal allowance of the realized gaps. At the entropy-critical law, even exp(o(sqrt(n))) proposed prefixes fail with probability tending to one when only O(sqrt(n)) terminal gaps are omitted. A separate summable positive-integer trace retains one fixed source but applies to both cycle and noncycle targets.
+
+The [paired-Mersenne anchor theorem](dynamics/MERSENNE_ANCHOR.md) isolates the amplitude of a supplied ordinary d through all log-heights below (1-delta)k^2, using two moduli of total size about 2^(2k). Genuine three-odd-step predecessors at anchor 37 show that the leading quadratic log-height boundary is sharp. The positive lower-bound question on that anchored class remains separate.
+
+The [native affine rectangle estimate](outside/NATIVE_AFFINE_RECTANGLES.md) applies the Subspace Theorem and continued fractions to the original spatial interval while retaining each source's actual chosen word. Summing only over odd grades gives anti-concentration beyond the binary horizon. The [rational-source sieve](outside/RATIONAL_SOURCE_SIEVE.md) excludes competing rational binary sources from arbitrarily sparse exponential observations, including moving probes of subexponential height.
+
+[The independent review](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_04_REVIEW.md) records proofs, classical antecedents, and the still-missing physical consumers. [Five local Lean modules and thirteen public roots](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_04_LEAN.json) now pass fresh compilation and a separate axiom audit. All three new finite Python controls pass under normal and optimized execution with identical outputs. Work continues toward the actual global lower bounds and fixed-source constraints.
+
