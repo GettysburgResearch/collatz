@@ -24,9 +24,15 @@ MODULES = {
     "AffineOrbit": ("formal/AffineOrbit.lean", "Collatz.PoweredAffine",
         "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."),
     "AdjacentWordClosure": ("ordinary/AdjacentWordClosure.lean", "Collatz.AdjacentWordClosure",
-        "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse forward-closing algorithm and asymptotic clock equivalence remain written proofs."),
+        "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."),
     "PairedClock": ("ordinary/PairedClock.lean", "Collatz.PairedClock",
         "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification is formalized separately in JointTargets."),
+    "SignedReturnRouter": ("ordinary/SignedReturnRouter.lean", "Collatz.SignedReturnRouter",
+        "Constructive signed affine calendar routes: descent to a nonzero translation with the exceptional detour, positive contraction, both signs and reset to either adjacent orientation with linear combined-grade bounds. Includes three public cost identities. Physical replay is proved in PrefixCarryClosure."),
+    "PrefixCarryClosure": ("ordinary/PrefixCarryClosure.lean", "Collatz.PrefixCarryClosure",
+        "Integral affine routes force every upper physical parity when the lower word is realized. Every actual nonmerged adjacent prefix with ternary-unit endpoints closes at linear grade cost. Every ordinary odd source/triple suffix yields equal-grade ordered carry words extending its actual calendars after the explicit first-step substitution."),
+    "ClockCarryEquivalence": ("ordinary/ClockCarryEquivalence.lean", "Collatz.ClockCarryEquivalence",
+        "Connected two-way reduction between actual ordinary unmatched horizons and ordered carry words; existence and the exact sandwich for both finite maxima; equivalence of the global logarithmic clock bound and the bound at each word pair's actual common grade. The truth of the remaining logarithmic arithmetic bound is not assumed or proved."),
     "CrossGrade": ("ordinary/CrossGrade.lean", "Collatz.PairedClock",
         "Actual two-grade exponential native-clock bound, including the exact discount for simultaneous odd departures. The associated logarithmic estimate is a written corollary."),
     "JointTargets": ("ordinary/JointTargets.lean", "Collatz.PairedClock",
@@ -109,11 +115,13 @@ def main() -> None:
             relative, namespace, scope = MODULES[name]
             source = ROOT / PACKET / relative
             before = source.read_bytes()
-            names = re.findall(r"^(?:@\[[^\n]*\]\s*)*(?:theorem|lemma)\s+([A-Za-z_][A-Za-z0-9_']*)",
+            names = re.findall(r"^(?:@\[[^\n]*\]\s*)*(?:theorem|lemma)\s+([A-Za-z_][A-Za-z0-9_']*(?:\.[A-Za-z_][A-Za-z0-9_']*)*)",
                                before.decode(), re.MULTILINE)
             qualified = [namespace + "." + n for n in names]
             if not qualified:
                 raise SystemExit("No public theorem roots in " + str(source))
+            if len(qualified) != len(set(qualified)):
+                raise SystemExit("Duplicate public theorem roots in " + str(source))
             public.extend(qualified)
             start = time.monotonic()
             check = run(

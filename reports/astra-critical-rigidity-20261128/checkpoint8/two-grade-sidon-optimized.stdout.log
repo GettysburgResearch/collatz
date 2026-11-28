@@ -1,0 +1,76 @@
+{
+  "integer_paths": [
+    {
+      "floor": 4096,
+      "edges": 12,
+      "columns": 8,
+      "pairs": 36,
+      "strict_comparison_dates": 12,
+      "equal_source_splits": 0,
+      "equal_aggregate_repetitions": 0,
+      "sidon_columns": 4,
+      "retained_positions": 8,
+      "distinct_binary_pair_sums": 10
+    },
+    {
+      "floor": 16384,
+      "edges": 13,
+      "columns": 15,
+      "pairs": 120,
+      "strict_comparison_dates": 13,
+      "equal_source_splits": 2,
+      "equal_aggregate_repetitions": 2,
+      "sidon_columns": 8,
+      "retained_positions": 11,
+      "distinct_binary_pair_sums": 36
+    },
+    {
+      "floor": 65536,
+      "edges": 14,
+      "columns": 45,
+      "pairs": 1035,
+      "strict_comparison_dates": 14,
+      "equal_source_splits": 23,
+      "equal_aggregate_repetitions": 96,
+      "sidon_columns": 16,
+      "retained_positions": 12,
+      "distinct_binary_pair_sums": 136
+    },
+    {
+      "floor": 262144,
+      "edges": 16,
+      "columns": 49,
+      "pairs": 1225,
+      "strict_comparison_dates": 16,
+      "equal_source_splits": 8,
+      "equal_aggregate_repetitions": 22,
+      "sidon_columns": 20,
+      "retained_positions": 14,
+      "distinct_binary_pair_sums": 210
+    }
+  ],
+  "rational": {
+    "period": 7,
+    "A": 12,
+    "denominator": 1909,
+    "odd_numerators": [
+      4663,
+      7949,
+      6439,
+      10613,
+      8437,
+      6805,
+      5581
+    ],
+    "four_times_fold_floor_numerator": 29265,
+    "signed_heights": [
+      -401,
+      -398,
+      738,
+      -1167,
+      984,
+      -1556,
+      1312
+    ]
+  }
+}

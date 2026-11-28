@@ -1,0 +1,132 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T02:00:42.776713+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "ClockCarryEquivalence"
+  ],
+  "compiled": [
+    "AffineOrbit",
+    "AdjacentWordClosure",
+    "PairedClock",
+    "SignedReturnRouter",
+    "PrefixCarryClosure",
+    "ClockCarryEquivalence"
+  ],
+  "modules": [
+    {
+      "module": "AffineOrbit",
+      "source": "research/astra-critical-rigidity-20261128/formal/AffineOrbit.lean",
+      "source_sha256": "c2257cb544c30dbb4a40cbb4afd2eb48393ca47fca769d6692e0cdebe0e15ed1",
+      "exit_code": 0,
+      "seconds": 5.82,
+      "public_roots": [
+        "Collatz.PoweredAffine.step_positive",
+        "Collatz.PoweredAffine.orbit_positive",
+        "Collatz.PoweredAffine.even_step",
+        "Collatz.PoweredAffine.odd_step",
+        "Collatz.PoweredAffine.letter_actual",
+        "Collatz.PoweredAffine.evalWord_actual",
+        "Collatz.PoweredAffine.evalWord_append",
+        "Collatz.PoweredAffine.word_affine",
+        "Collatz.PoweredAffine.actual_word_affine",
+        "Collatz.PoweredAffine.word_centered",
+        "Collatz.PoweredAffine.repeated_centered",
+        "Collatz.PoweredAffine.center_telescope",
+        "Collatz.PoweredAffine.reference_telescope"
+      ],
+      "mathematical_scope": "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."
+    },
+    {
+      "module": "AdjacentWordClosure",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/AdjacentWordClosure.lean",
+      "source_sha256": "af23e23b6969b76b1447c2d98007e02e718183e744395ca8bb16bb73b04dad9a",
+      "exit_code": 0,
+      "seconds": 3.003,
+      "public_roots": [
+        "Collatz.AdjacentWordClosure.realizes_iff_dvd",
+        "Collatz.AdjacentWordClosure.progression_realizes",
+        "Collatz.AdjacentWordClosure.adjacent_replay",
+        "Collatz.AdjacentWordClosure.ordinary_lifts_arbitrarily_large"
+      ],
+      "mathematical_scope": "Final affine divisibility characterizes an actual native word; every odd-step progression realizes each word; the equal-grade ordered carry equation preserves an adjacent pair; arbitrarily large positive odd sources and their triples realize both calendars and remain unmatched through the complete supplied loop. The converse construction is supplied by the separate PrefixCarryClosure and ClockCarryEquivalence modules."
+    },
+    {
+      "module": "PairedClock",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean",
+      "source_sha256": "3efb5ce8f4571bbc9497558a381e46053741310316ef8a53f8b2cff695fea0d3",
+      "exit_code": 0,
+      "seconds": 3.699,
+      "public_roots": [
+        "Collatz.PairedClock.affine",
+        "Collatz.PairedClock.discrepancy_bound",
+        "Collatz.PairedClock.discrepancy_positive",
+        "Collatz.PairedClock.even_discrepancy",
+        "Collatz.PairedClock.unmatched_ternary_power"
+      ],
+      "mathematical_scope": "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification is formalized separately in JointTargets."
+    },
+    {
+      "module": "SignedReturnRouter",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/SignedReturnRouter.lean",
+      "source_sha256": "bd44fba71f618516bde1f5950e5709f00173316298c619705ac94a5bdc985512",
+      "exit_code": 0,
+      "seconds": 4.995,
+      "public_roots": [
+        "Collatz.SignedReturnRouter.Route.stay_cost",
+        "Collatz.SignedReturnRouter.Route.then_cost",
+        "Collatz.SignedReturnRouter.Route.swap_cost",
+        "Collatz.SignedReturnRouter.descend_to_translation",
+        "Collatz.SignedReturnRouter.positive_to_one",
+        "Collatz.SignedReturnRouter.signed_to_one",
+        "Collatz.SignedReturnRouter.reset_to_adjacent",
+        "Collatz.SignedReturnRouter.reset_to_reverse"
+      ],
+      "mathematical_scope": "Constructive signed affine calendar routes: descent to a nonzero translation with the exceptional detour, positive contraction, both signs and reset to either adjacent orientation with linear combined-grade bounds. Includes three public cost identities. Physical replay is proved in PrefixCarryClosure."
+    },
+    {
+      "module": "PrefixCarryClosure",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PrefixCarryClosure.lean",
+      "source_sha256": "03af4a074ca77c362123379e0d693cd137c66ec724f33ecbd74e5cca0e4c9ffc",
+      "exit_code": 0,
+      "seconds": 5.741,
+      "public_roots": [
+        "Collatz.PrefixCarryClosure.route_replays",
+        "Collatz.PrefixCarryClosure.complete_adjacent_prefix",
+        "Collatz.PrefixCarryClosure.return_carry",
+        "Collatz.PrefixCarryClosure.close_positive_source_suffix"
+      ],
+      "mathematical_scope": "Integral affine routes force every upper physical parity when the lower word is realized. Every actual nonmerged adjacent prefix with ternary-unit endpoints closes at linear grade cost. Every ordinary odd source/triple suffix yields equal-grade ordered carry words extending its actual calendars after the explicit first-step substitution."
+    },
+    {
+      "module": "ClockCarryEquivalence",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/ClockCarryEquivalence.lean",
+      "source_sha256": "8e221622fbb397223db61be639c3851240899befadc4de3ccadb1181a550b17c",
+      "exit_code": 0,
+      "seconds": 26.443,
+      "public_roots": [
+        "Collatz.ClockCarryEquivalence.carry_to_clock",
+        "Collatz.ClockCarryEquivalence.clock_to_carry",
+        "Collatz.ClockCarryEquivalence.maximum_sandwich",
+        "Collatz.ClockCarryEquivalence.logarithmic_clock_iff_ordered_carry"
+      ],
+      "mathematical_scope": "Connected two-way reduction between actual ordinary unmatched horizons and ordered carry words; existence and the exact sandwich for both finite maxima; equivalence of the global logarithmic clock bound and the bound at each word pair's actual common grade. The truth of the remaining logarithmic arithmetic bound is not assumed or proved."
+    }
+  ],
+  "public_roots": 38,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 38,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T02:02:05.370345+00:00",
+  "seconds": 82.593
+}
