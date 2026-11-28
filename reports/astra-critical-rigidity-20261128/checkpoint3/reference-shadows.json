@@ -1,0 +1,87 @@
+{
+  "schema": "collatz-exact-control/v1",
+  "success": true,
+  "source": "research/astra-critical-rigidity-20261128/literature/check_reference_shadows.py",
+  "source_sha256": "1c2781d50fccec1b8653a11e8bf6052d5cefa1f51768a7f0ae528da9a9a46c20",
+  "normal_and_optimized_equal": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "exit_code": 0,
+      "seconds": 0.443
+    },
+    {
+      "mode": "optimized",
+      "exit_code": 0,
+      "seconds": 0.647
+    }
+  ],
+  "finite_coverage": {
+    "pre_crossing": {
+      "first_five_height_two_costs_affine_then_physical": [
+        [
+          80,
+          83
+        ],
+        [
+          82,
+          86
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          81,
+          83
+        ]
+      ],
+      "minimum_odd_runs_observed": 78,
+      "ordinary_sources": 192,
+      "ordinary_vertices": 89792
+    },
+    "sharp_piece_counts": [
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        4,
+        5
+      ],
+      [
+        5,
+        5,
+        6
+      ],
+      [
+        6,
+        6,
+        7
+      ]
+    ],
+    "valuation_and_reconstruction": {
+      "long_words_admitting_a_reference": 98,
+      "long_words_against_exhaustive_search": 1416,
+      "nonintegral_terminals": 9717,
+      "valuation_tests": 9906
+    }
+  },
+  "scope": "Finite exact arithmetic controls; not a proof of the asymptotic written theorem."
+}

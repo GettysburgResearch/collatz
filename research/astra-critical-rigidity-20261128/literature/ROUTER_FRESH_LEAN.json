@@ -1,0 +1,155 @@
+{
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "modules": [
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "TernaryPowerLift.olean",
+        "TernaryPowerLift.lean"
+      ],
+      "exit_code": 0,
+      "module": "TernaryPowerLift",
+      "source_sha256": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "TwoGapRouting.olean",
+        "TwoGapRouting.lean"
+      ],
+      "exit_code": 0,
+      "module": "TwoGapRouting",
+      "source_sha256": "a25c07958adbee6abe72d0ff57a347ce386b0f919e616db33aea8181199daa6b",
+      "stdout": "'Collatz.TwoGapRouting.address' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.TwoGapRouting.route' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "FixedGapClock.olean",
+        "FixedGapClock.lean"
+      ],
+      "exit_code": 0,
+      "module": "FixedGapClock",
+      "source_sha256": "a3a59749d8c3d7b5e37362601a2c2b706dab49302fa42e7835bfb2a46104244e",
+      "stdout": "'Collatz.FixedGapClock.cover_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FixedGapClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "SharpClock.olean",
+        "SharpClock.lean"
+      ],
+      "exit_code": 0,
+      "module": "SharpClock",
+      "source_sha256": "bfbd7f1f130f311ea33467b9ecd4b0fdade4f6692fec893843f718cf36f1f5ca",
+      "stdout": "'Collatz.SharpClock.physical_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.one_two_never_fuse' depends on axioms: [propext, Quot.sound]\n'Collatz.SharpClock.period_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.SharpClock.height' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "AffineProfiles.olean",
+        "AffineProfiles.lean"
+      ],
+      "exit_code": 0,
+      "module": "AffineProfiles",
+      "source_sha256": "a496396e57c3a9f74a7b7e0c4f05608e97e87074c57c7dd8952ab3f14f81112f",
+      "stdout": "'Collatz.AffineProfiles.no_positive_double_sync' depends on axioms: [propext, Quot.sound]\n'Collatz.AffineProfiles.drop_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.AffineProfiles.finite_coalesce' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "Threshold.olean",
+        "Threshold.lean"
+      ],
+      "exit_code": 0,
+      "module": "Threshold",
+      "source_sha256": "643c650836d43f10da37ce99bee573cb49f39a61f0e944d46c36b91628ca68bb",
+      "stdout": "'Collatz.MergerThreshold.forward_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.seven_floor' depends on axioms: [propext, Quot.sound]\n'Collatz.MergerThreshold.seven_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.cheap_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MergerThreshold.base_strict' depends on axioms: [propext]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "FirstArrival.olean",
+        "FirstArrival.lean"
+      ],
+      "exit_code": 0,
+      "module": "FirstArrival",
+      "source_sha256": "52cafda6b1bfbbe94cb86cc64433dff63265353c5f04bc8caae4a8452fe8c3ec",
+      "stdout": "'Collatz.FirstArrival.affine_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.attach' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.branch' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.FirstArrival.first_twins' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "BlockClock.olean",
+        "BlockClock.lean"
+      ],
+      "exit_code": 0,
+      "module": "BlockClock",
+      "source_sha256": "b878867d71b1b71d13850609220b8099fe8c43681f80f58bfe18428579f2235f",
+      "stdout": "'Collatz.BlockClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.BlockClock.first_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "SharpMotifInput.olean",
+        "SharpMotifInput.lean"
+      ],
+      "exit_code": 0,
+      "module": "SharpMotifInput",
+      "source_sha256": "996c6922414b97eb2118a7d761e02472a0016cf0e6f8a4b50a8bbcce2868290d",
+      "stdout": "'Collatz.SharpMotif.consecutive_subcritical_motifs' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "command": [
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "Audit.olean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "module": "Audit",
+      "source_sha256": "9804b6f6200e0a0f439266a03f697869ffeea9914cbe94fee17ca08cabe97f0a",
+      "stdout": "Collatz.BlockClock.cover (F : List \u2115) (v r s : \u2115) : \u2203 B g, Collatz.BlockClock.Cover F v r s B g\n'Collatz.BlockClock.cover' depends on axioms: [propext, Classical.choice, Quot.sound]\nCollatz.SharpMotif.consecutive_subcritical_motifs (K : \u2115) :\n  \u2203 \u2113 g t,\n    0 < t \u2227 3 ^ g < 2 ^ \u2113 \u2227 \u2200 i \u2264 K, Collatz.TwoGapRouting.run \u2113 (t + i) = 1 \u2227 Collatz.TwoGapRouting.odds \u2113 (t + i) = g\n'Collatz.SharpMotif.consecutive_subcritical_motifs' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "prior_commit": "505d3fe782922904e86477990cc5d41e9110edda",
+  "runner_sha256": "a7feb6bec2e441814d7cd4ba8e5b34fdbd2e485093096b4f8709f0723ed68c5e",
+  "schema": "collatz-sharp-motif-lean/v1",
+  "scope": "Fresh eight-module rebuild, local application, and isolated transitive axiom audit. The open-trajectory optimality proof is written.",
+  "verified_roots": [
+    "Collatz.BlockClock.cover",
+    "Collatz.SharpMotif.consecutive_subcritical_motifs"
+  ]
+}

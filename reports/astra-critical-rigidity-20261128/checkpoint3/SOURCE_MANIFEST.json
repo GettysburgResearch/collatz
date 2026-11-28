@@ -1,0 +1,122 @@
+{
+  "scope": "Third checkpoint exact selected source snapshot; analytic claims remain proposed written proofs with the reviews recorded here. Active endpoint and growing-budget extensions are excluded.",
+  "prior_public_commit": "7c381c5b53afec65fc473c598c5ed61762e9419f",
+  "files": [
+    {
+      "path": "research/astra-critical-rigidity-20261128/README.md",
+      "sha256": "ebbef96087c2a598b68318a49cbd755a2b34367908184c6c41ef2880b4a68e6b"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/check_lean.py",
+      "sha256": "7b378d9d8ba6f04a411f39a8d12a98d35a7bbfb777d4b4c496c18a67462628cc"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/ALL_FIXED_ROTATION_DENOMINATORS.md",
+      "sha256": "109e0efaeff05cdae362c3e918a6d84287d61581f442ba696432a07257a27c5e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/SEPARATED_ROTATION_DENOMINATORS.md",
+      "sha256": "126173d23ba350bc145e4cc9c05d952cdd2f9fd1e55a1243dfcf90740e9e7de9"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_all_fixed_rotations.py",
+      "sha256": "6858353a564ea8548bafb9b2febedf75668a3480180b468f26f431ac6dad3515"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/all_fixed_rotation_controls.json",
+      "sha256": "353e9d3ecb03972f8c816b746ec1e9e4c119f31c68770af8ab795fc8e0adc2fe"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_separated_rotations.py",
+      "sha256": "10fe3e086330878f04c9a0c4b41ac7910f7a10797520c6e53af03f787ecfb8b1"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/separated_rotation_controls.json",
+      "sha256": "e643fc731197d32cfed89b317d26f48b94903811389ae3ebbecac552e936e7eb"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/CROSS_GRADE_CLOCK.md",
+      "sha256": "3b5a2c31f7468a210f915d7184e10d0f670d64a3aeef7fdc9aeed0b15a649681"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/CrossGrade.lean",
+      "sha256": "c59823ac72625a8190400af83e0b72fc3bc2c56242110d8a2865f9454fe543be"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/JointTargets.lean",
+      "sha256": "a6d3fe780199fad9a0fc708e3ca72117087724e3e7cb93a9be971e0ad75a8b03"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/OPEN_ARC_MISMATCHES.md",
+      "sha256": "0aea4768d82114c6e44244e83986ede88c363affe6d7757acbdcd4df06b66540"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_open_arcs.py",
+      "sha256": "1fff1ad799f41ef8800874d06127ce4f77d7b6abc99d16db329c6009feee3f75"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/OPEN_ARC_CONTROLS.json",
+      "sha256": "7e472c18faf832852e14bbb7afba598fe479251ab29368f20c4330143d2ea2fb"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/RATIONAL_PERIODIC_SHADOWS.md",
+      "sha256": "3c5df8e7ffa19203daf3ad6213d0f65cdb0ed95e7008d9b13205c2b5c4f47460"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_periodic_shadows.py",
+      "sha256": "7b30055a3c7091ee2c49ff70687446fcea2899dc12bb4da1b945c5f047d9fb2a"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/PERIODIC_SHADOW_CONTROLS.json",
+      "sha256": "31964b655ed7e8597c19cc0177bbaea5d50423292c68f5d6a813bd904b33c983"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/BEFORE_CROSSING.md",
+      "sha256": "6023f6dc74b58b1676743cafe658bcd918e35c790897b0ef15d3b8eb60ff3d73"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/REFERENCE_SHADOWS.md",
+      "sha256": "8cb2d3e1acb3287783ed08d461ae5fef4ea3ca1e928199e675421a244c89ecbc"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_reference_shadows.py",
+      "sha256": "1c2781d50fccec1b8653a11e8bf6052d5cefa1f51768a7f0ae528da9a9a46c20"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/GROWING_REFERENCE_COVERS.md",
+      "sha256": "cb4865912b7f8a160288b9f62071776f2c96abd7062f6f78c802dc11ebff42b5"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/QUANTITATIVE_REFERENCE_COVERS.md",
+      "sha256": "c0d485f43ab6d54f6e7540da3a1517c218fc154f033e56286c01b749621e5b09"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_quantitative_reference.py",
+      "sha256": "62690640c391401e05216a77ad473824b0d537093048e36bb3677ba0ac4162f7"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/FULL_LANGUAGE_EXCLUSION.md",
+      "sha256": "31e9d762619762b962ead99c10e754bb4e7d86fcdf8357e78fb2412bf01cdc0a"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_full_language_exclusion.py",
+      "sha256": "f7e1ca31b9c7feca3eb5c045d0aafa03d8a5e2653ace3ab2d28345625b1b5ed7"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/SHARP_SIMPLE_ARCS.md",
+      "sha256": "0e29ccf70aae8ed3541f8aa22aff8930b7981a4c747bd9037c2e5b7f4ca035af"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/SharpMotifInput.lean",
+      "sha256": "996c6922414b97eb2118a7d761e02472a0016cf0e6f8a4b50a8bbcce2868290d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/ROUTER_FRESH_LEAN.json",
+      "sha256": "9b2937351691e0d17d557e57bb74be60cfbd4bf39f05cc6f374cfc891088d336"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/replay_sharp_motif.py",
+      "sha256": "a7feb6bec2e441814d7cd4ba8e5b34fdbd2e485093096b4f8709f0723ed68c5e"
+    }
+  ]
+}

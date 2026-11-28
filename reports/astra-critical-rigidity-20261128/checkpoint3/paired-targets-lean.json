@@ -1,0 +1,74 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-28T00:10:25.498374+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "CrossGrade",
+    "JointTargets"
+  ],
+  "compiled": [
+    "PairedClock",
+    "CrossGrade",
+    "JointTargets"
+  ],
+  "modules": [
+    {
+      "module": "PairedClock",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean",
+      "source_sha256": "3efb5ce8f4571bbc9497558a381e46053741310316ef8a53f8b2cff695fea0d3",
+      "exit_code": 0,
+      "seconds": 150.9,
+      "public_roots": [
+        "Collatz.PairedClock.affine",
+        "Collatz.PairedClock.discrepancy_bound",
+        "Collatz.PairedClock.discrepancy_positive",
+        "Collatz.PairedClock.even_discrepancy",
+        "Collatz.PairedClock.unmatched_ternary_power"
+      ],
+      "mathematical_scope": "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification and unbounded-family construction are written proofs at this checkpoint."
+    },
+    {
+      "module": "CrossGrade",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/CrossGrade.lean",
+      "source_sha256": "c59823ac72625a8190400af83e0b72fc3bc2c56242110d8a2865f9454fe543be",
+      "exit_code": 0,
+      "seconds": 49.751,
+      "public_roots": [
+        "Collatz.PairedClock.crossCost_add_joint",
+        "Collatz.PairedClock.discrepancy_one_step_charge",
+        "Collatz.PairedClock.unmatched_cross_grade"
+      ],
+      "mathematical_scope": "Actual two-grade exponential native-clock bound, including the exact discount for simultaneous odd departures. The associated logarithmic estimate is a written corollary."
+    },
+    {
+      "module": "JointTargets",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/JointTargets.lean",
+      "source_sha256": "a6d3fe780199fad9a0fc708e3ca72117087724e3e7cb93a9be971e0ad75a8b03",
+      "exit_code": 0,
+      "seconds": 209.474,
+      "public_roots": [
+        "Collatz.PairedClock.orbit_add",
+        "Collatz.PairedClock.grade_add",
+        "Collatz.PairedClock.incomparable_height",
+        "Collatz.PairedClock.unbounded_odd_joint_iff"
+      ],
+      "mathematical_scope": "Full classification of fixed positive targets admitting unbounded odd joint predecessors of uniformly bounded total grade: exactly the forward-comparable ternary-unit pairs. Includes the explicit incomparable-source height bound."
+    }
+  ],
+  "public_roots": 12,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 12,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-28T00:18:17.994355+00:00",
+  "seconds": 472.495
+}
