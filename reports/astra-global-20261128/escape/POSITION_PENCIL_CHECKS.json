@@ -1,0 +1,101 @@
+{
+  "finite_pencils": [
+    {
+      "columns": 12,
+      "ranks_mod_101_at_0_1_2_minus1": [
+        6,
+        4,
+        6,
+        6
+      ],
+      "reach_from_zero_forward_backward": [
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          4
+        ]
+      ],
+      "rows": 7,
+      "window": 1
+    },
+    {
+      "columns": 36,
+      "ranks_mod_101_at_0_1_2_minus1": [
+        18,
+        16,
+        18,
+        18
+      ],
+      "reach_from_zero_forward_backward": [
+        [
+          0,
+          10,
+          14,
+          14
+        ],
+        [
+          0,
+          10,
+          14,
+          14
+        ]
+      ],
+      "rows": 21,
+      "window": 2
+    },
+    {
+      "columns": 108,
+      "ranks_mod_101_at_0_1_2_minus1": [
+        54,
+        52,
+        54,
+        54
+      ],
+      "reach_from_zero_forward_backward": [
+        [
+          0,
+          30,
+          40,
+          44,
+          44
+        ],
+        [
+          0,
+          30,
+          40,
+          44,
+          44
+        ]
+      ],
+      "rows": 63,
+      "window": 3
+    },
+    {
+      "columns": 324,
+      "ranks_mod_101_at_0_1_2_minus1": [
+        162,
+        160,
+        162,
+        162
+      ],
+      "rows": 189,
+      "window": 4
+    },
+    {
+      "columns": 972,
+      "ranks_mod_101_at_0_1_2_minus1": [
+        486,
+        484,
+        486,
+        486
+      ],
+      "rows": 567,
+      "window": 5
+    }
+  ]
+}

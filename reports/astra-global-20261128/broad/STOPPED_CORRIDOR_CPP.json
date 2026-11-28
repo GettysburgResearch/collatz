@@ -1,0 +1,43 @@
+{
+  "schema": "collatz-corridor-cpp-replay/v1",
+  "scope": "Finite integer recurrence through depth12 and independent direct action minima through7; no infinite survival or Collatz proof",
+  "source": "research/astra-global-20261128/broad/check_stopped_corridor.cpp",
+  "sha256": "88f7f488f54e117e333c775669a7221f66141e05c3540a1cab673d6090590193",
+  "started_utc": "2026-11-28T04:58:37.032865+00:00",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "runs": [
+    {
+      "compile_command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "research/astra-global-20261128/broad/check_stopped_corridor.cpp",
+        "-o",
+        "/tmp/collatz-cp8-corridor-guarded"
+      ],
+      "compile_exit": 0,
+      "binary_sha256": "d88e5ffbba409f607b475bea2aaab83432abac903dc8a9efa62c551c7cabd78f",
+      "run_exit": 0,
+      "stdout": "slope 18/11 depth 12 per-trit denominator 531441 credit 0: 0,12534 credit 1: 12534,34663 credit 2: 34663,86858\nslope 5/3 depth 12 per-trit denominator 531441 credit 0: 0,19749 credit 1: 19749,49395 credit 2: 49395,117296\nslope 7/4 depth 12 per-trit denominator 531441 credit 0: 0,34109 credit 1: 34109,77291 credit 2: 77291,170324\n",
+      "stderr": ""
+    },
+    {
+      "compile_command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-DNDEBUG",
+        "research/astra-global-20261128/broad/check_stopped_corridor.cpp",
+        "-o",
+        "/tmp/collatz-cp8-corridor-ndebug"
+      ],
+      "compile_exit": 0,
+      "binary_sha256": "d88e5ffbba409f607b475bea2aaab83432abac903dc8a9efa62c551c7cabd78f",
+      "run_exit": 0,
+      "stdout": "slope 18/11 depth 12 per-trit denominator 531441 credit 0: 0,12534 credit 1: 12534,34663 credit 2: 34663,86858\nslope 5/3 depth 12 per-trit denominator 531441 credit 0: 0,19749 credit 1: 19749,49395 credit 2: 49395,117296\nslope 7/4 depth 12 per-trit denominator 531441 credit 0: 0,34109 credit 1: 34109,77291 credit 2: 77291,170324\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "finished_utc": "2026-11-28T04:58:38.554724+00:00"
+}
