@@ -32,6 +32,21 @@ Oddness matters. Doubling an existing witness adds only even departures, so unre
 
 The plateau result applies to the **complete cutoff interval**, rather than the lifetime of one fixed component. Its angle-conditioned entropy bound is retained at both endpoints. A clock with denominator `p=L^(1−o(1))` forces the relative plateau width to tend to one. The known general lower bound on the period is much weaker, leaving the ordinary-cycle obstruction open.
 
+## Second mathematical checkpoint
+
+The next results test the sharpness of the first claims and strengthen the restrictions on actual ordinary pairs and primitive cycles. The asymptotic statements remain proposed written theorems.
+
+| Claim | Statement | Evidence and boundary |
+|---|---|---|
+| O3: simple paths attain the open bound | For every fixed K, the denominator coefficient K−1 in O2 is optimal even on positive rational paths with no repeated state and a fixed dictionary of powered words. | [Construction and simplicity proof](literature/SHARP_SIMPLE_ARCS.md). The arbitrary-K motif input is the pinned, proved `BlockClock.cover` theorem; an explicit fourteen-start example supplies K≤13 without that general input. |
+| O4: every late window has linear description cost | On any one fixed nonperiodic positive integer orbit, every sufficiently late window of length ceil(λt), λ>log₂(3/2), requires linear template cost when the number of powered pieces is fixed. | [Uniform-window corollary](literature/FIXED_SOURCE_WINDOWS.md). This excludes a restricted form of compression; it supplies no universal compression theorem. A simple two-run integer family also rules out a constant additive error in O1. |
+| P3: exact bounded-grade spectrum | For a=b=1 and G≥5, let p=floor((G−5)/2). The number of joint sources in [X,2X) is (log₂ X)^(p+1)/(18·3^p·(p+1)!)+O_G((log X)^p). Comparable fixed targets have an exact threshold and orientation factor; incomparable targets give an eventually constant octave count. | [Written count](ordinary/FIXED_GRADE_SPECTRUM.md). G is fixed before X tends to infinity. Physical first-hit comparisons and inverse-calendar residue counts are checked separately. |
+| P4: subquadratic unmatched clocks | Uniformly as G→∞, an unmatched odd pair s,3^r s has k=o(G(G+r)). For fixed r and fixed incomparable targets, every unbounded joint-source family has G/sqrt(log₂ s)→∞. | [Sparse-discrepancy proof](ordinary/SPARSE_DISCREPANCY_BLOCKS.md). A two-endpoint S-unit circuit lemma charges each endpoint once. It uses the classical Subspace Theorem and has no effective modulus. The formal elementary quadratic bound remains the explicit certificate. |
+| C2: every almost-repeating rotation has sparse low states | At a lag of order M, for 2≤J≤M, the low-state count obeys D_Y≤p/J+(J²−1)s·max(0,floor(log₂(qY)))/6. There are stronger complete-column and geometric-mean bounds. | [Exact rotation occupation](cycles/ROTATION_OCCUPATION.md). The full numerator divisor includes the shared past and future at each date. Its arithmetic kernel is checked in Lean. No maximum-height restriction is imposed. |
+| C3: a large balanced-minimum ratio forces all rotations apart | For rational cycles with growing minima and m/m_bal≥1/2+ε, every proper lag satisfies s(log₂ q+log₂ p)≫_ε p. For ordinary cycles, the pinned PR213 sparse-window estimate lowers the threshold to 0.481775+ε. | [Low-envelope proof](cycles/BALANCED_MINIMUM_ROTATIONS.md). The first threshold uses only the stated classical logarithm estimate. The sharpened ordinary threshold has a separate written dependency. Small balanced-minimum ratios remain open. |
+
+The complete formal inventory now has thirty locally authored public roots: thirteen in `AffineOrbit`, five in `PairedClock`, six in `ReferenceDivisibility`, and six in `RotationOccupation`. Each was freshly compiled and imported into a public-root axiom audit using only the standard Lean axioms. The second replay completes the previously interrupted PairedClock check. It does not formalize the Subspace Theorem, the infinite counting asymptotics, or the limiting cycle arguments. The [second coordinating review](../../reports/astra-critical-rigidity-20261128/checkpoint2/REVIEW.md) records the exact distinction and the external motif input.
+
 ## Attribution and proof boundaries
 
 PR212 already proves the closed-cycle `1/K` denominator rate for moving low-height reference arcs and stronger clock-sensitive statements. O2 recovers that result but does not claim it as new. PR213 already gives the native extinction equivalence, a width-three obstruction, pooled periodic density decay, and an asymptotic factor-two lifetime for one unchanged ceiling component. The present C1 argument addresses replacement of those components. P1 develops the fixed-target question and ordinary control from PR201; the earlier two-ray mechanism and supplied-source merger formulas remain credited in its note.
@@ -53,7 +68,7 @@ python -X utf8 -B tools/validate.py
 
 The exact checkers use explicit guards and produce the same results with optimized Python. Their finite scope is recorded in the receipts. Cached third-party objects are reused; a cold Mathlib rebuild and an independent LeanChecker replay are not claimed.
 
-At initial publication, the completed central Lean receipt covers all thirteen public roots of `AffineOrbit.lean`. The author compilation and coordinator main-root check of `PairedClock.lean` preceded shared-memory pressure; the separate central fresh replay of all five public roots is pending. The [checkpoint review](../../reports/astra-critical-rigidity-20261128/checkpoint1/REVIEW.md) keeps these evidence boundaries explicit.
+At initial publication, the completed central Lean receipt covered all thirteen public roots of `AffineOrbit.lean`; the PairedClock replay was pending and was then killed under observed shared-memory pressure. Its five-root fresh replay succeeded at the second checkpoint. The original failed receipt and the successful later receipt are both preserved.
 
 ## Remaining decisive questions
 

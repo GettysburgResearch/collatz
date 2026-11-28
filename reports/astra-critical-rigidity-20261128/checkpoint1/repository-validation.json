@@ -1,0 +1,15 @@
+{
+  "checked_commit": "f1683fa73e55c65aa0a0328da09fe18e2a65f408",
+  "clean_complete_checkout": true,
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "tools/validate.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.66,
+  "completed_utc": "2026-11-27T23:36:08.329557+00:00",
+  "scope": "Repository integrity only; no proof or mathematical conclusion follows from this check."
+}

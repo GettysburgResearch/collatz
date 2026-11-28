@@ -1,0 +1,50 @@
+{
+  "current_replay": {
+    "detail": "Native compiler exited with signal 9 at AffineProfiles. The previous eight matching source hashes and the actual theorem audit are recorded separately. No fresh kernel claim for the project-local specialization.",
+    "fresh_dependencies_compiled": [
+      "TernaryPowerLift",
+      "TwoGapRouting",
+      "FixedGapClock",
+      "SharpClock"
+    ],
+    "fresh_full_lean_replay": false,
+    "independent_integer_checker_sha256": "45b4947336487eb8aadca7a194829c34dc827582227284dc13c96b8d1a512255",
+    "normal_and_optimized_output_equal": true,
+    "python": "3.12.14",
+    "results": {
+      "charged_simple_prefixes": 68,
+      "charged_vertices_replayed": 147398,
+      "largest_exact_denominator_bit_length": 646,
+      "largest_piece_count": 13,
+      "simple_two_run_vertices": 3400
+    }
+  },
+  "prior_proof": {
+    "actual_theorem": "Collatz.BlockClock.cover",
+    "axioms_reported_in_prior_audit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "commit": "505d3fe782922904e86477990cc5d41e9110edda",
+    "compiler": {
+      "binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+      "path": "/tmp/collatz-diagonal-lean-4.34.1-linux/bin/lean",
+      "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+    },
+    "matching_source_sha256": {
+      "merger/AffineProfiles.lean": "a496396e57c3a9f74a7b7e0c4f05608e97e87074c57c7dd8952ab3f14f81112f",
+      "merger/BlockClock.lean": "b878867d71b1b71d13850609220b8099fe8c43681f80f58bfe18428579f2235f",
+      "merger/FirstArrival.lean": "52cafda6b1bfbbe94cb86cc64433dff63265353c5f04bc8caae4a8452fe8c3ec",
+      "merger/FixedGapClock.lean": "a3a59749d8c3d7b5e37362601a2c2b706dab49302fa42e7835bfb2a46104244e",
+      "merger/SharpClock.lean": "bfbd7f1f130f311ea33467b9ecd4b0fdade4f6692fec893843f718cf36f1f5ca",
+      "merger/TernaryPowerLift.lean": "5ff83d37cdb629a2b036dcaf69c518ecdd8e84f15f940edf645cedba9bbe063f",
+      "merger/Threshold.lean": "643c650836d43f10da37ce99bee573cb49f39a61f0e944d46c36b91628ca68bb",
+      "merger/TwoGapRouting.lean": "a25c07958adbee6abe72d0ff57a347ce386b0f919e616db33aea8181199daa6b"
+    },
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "receipt": "reports/astra-infinite-descent-20261127/CHECKPOINT_05_LEAN.json",
+    "receipt_sha256": "d24315dff129376ffa6b0ce18adbf38e2acc0560e6446ee00b263ddd7a4c58ff"
+  },
+  "schema": "collatz-open-sharpness-controls/v1"
+}

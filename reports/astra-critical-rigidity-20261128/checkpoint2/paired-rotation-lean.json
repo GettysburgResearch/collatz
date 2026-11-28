@@ -1,0 +1,62 @@
+{
+  "schema": "collatz-critical-rigidity-lean/v1",
+  "success": true,
+  "started_utc": "2026-11-27T23:45:41.297989+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_source_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependency_scope": "Pinned cached Mathlib and third-party objects reused; every selected packet object freshly compiled. No cold rebuild or independent LeanChecker run.",
+  "requested": [
+    "PairedClock",
+    "RotationOccupation"
+  ],
+  "compiled": [
+    "PairedClock",
+    "RotationOccupation"
+  ],
+  "modules": [
+    {
+      "module": "PairedClock",
+      "source": "research/astra-critical-rigidity-20261128/ordinary/PairedClock.lean",
+      "source_sha256": "3efb5ce8f4571bbc9497558a381e46053741310316ef8a53f8b2cff695fea0d3",
+      "exit_code": 0,
+      "seconds": 7.846,
+      "public_roots": [
+        "Collatz.PairedClock.affine",
+        "Collatz.PairedClock.discrepancy_bound",
+        "Collatz.PairedClock.discrepancy_positive",
+        "Collatz.PairedClock.even_discrepancy",
+        "Collatz.PairedClock.unmatched_ternary_power"
+      ],
+      "mathematical_scope": "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification and unbounded-family construction are written proofs at this checkpoint."
+    },
+    {
+      "module": "RotationOccupation",
+      "source": "research/astra-critical-rigidity-20261128/cycles/RotationOccupation.lean",
+      "source_sha256": "f9ba51c24175e4cd53dd7f78fcc7c5c6e2b1e3b6c84d44b9be081ded179f0dc7",
+      "exit_code": 0,
+      "seconds": 2.097,
+      "public_roots": [
+        "Collatz.RotationOccupation.subtractAlong",
+        "Collatz.RotationOccupation.partialLast",
+        "Collatz.RotationOccupation.interiorLattice",
+        "Collatz.RotationOccupation.shellGap",
+        "Collatz.RotationOccupation.fullLengthFloor",
+        "Collatz.RotationOccupation.multiplicityCost"
+      ],
+      "mathematical_scope": "Cleared odd traces, an exact partial unequal final edge, the complete two-sided divisor at an interior date, and elementary spacing/counting kernels. The global rotation-occupation and limiting pressure theorems remain written proofs."
+    }
+  ],
+  "public_roots": 11,
+  "axiom_audit": {
+    "exit_code": 0,
+    "audited": 11,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "finished_utc": "2026-11-27T23:45:52.792507+00:00",
+  "seconds": 11.494
+}

@@ -1,0 +1,90 @@
+{
+  "scope": "Second checkpoint selected source snapshot; excludes active unreviewed files. All analytic claims remain written proofs.",
+  "prior_public_commit": "8206de8f3bc41f1916775955bcce49d2d1f341ef",
+  "files": [
+    {
+      "path": "research/astra-critical-rigidity-20261128/README.md",
+      "sha256": "a59a2b22f479baf8f92a0848c8386209cf0073a3dc1e4e0b73ea7ca0f52b99af"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/check_lean.py",
+      "sha256": "e7a7b2cfe911d00c3647651d4247fd8fe49b2f9e0928d8c87fd0a074f561e8dc"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/formal/ReferenceDivisibility.lean",
+      "sha256": "385837f7c37fb899a147511b0475840fdbaa1f2b728c37786707d2e04cb5de84"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/ROTATION_OCCUPATION.md",
+      "sha256": "5ab1fbc172c12f0afd68c57577cd29c03e9e5cc7edbbe92a5efe85ede82bb31f"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/RotationOccupation.lean",
+      "sha256": "f9ba51c24175e4cd53dd7f78fcc7c5c6e2b1e3b6c84d44b9be081ded179f0dc7"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_rotation_occupation.py",
+      "sha256": "b9f5173559651d626201b6be6d1129437c3ead295cb8afbc1c3fb439e27f73ba"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/rotation_occupation_controls.json",
+      "sha256": "c57e4058735df38bb205ff7f2301b78686ba7985f1fe2063ca495899391fb097"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/BALANCED_MINIMUM_ROTATIONS.md",
+      "sha256": "325d8b4a60e9416e8f8fa7e7fddecbffcd98e1006a1f224d1fba8155b4d8d983"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/check_balanced_envelopes.py",
+      "sha256": "01a9b777285f8ae82bf71bcfba597f97b14e5ceee81e77f74271c91ba2b1b69e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/cycles/balanced_envelope_controls.json",
+      "sha256": "a0fd17bd0b79bbafe0a5c87d057038fd72b4d37316ed7b0906716ddec8b048c0"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/FIXED_GRADE_SPECTRUM.md",
+      "sha256": "1902caa79335460503576b828169b4ac4f9abd7c7a9a205964627ab4be52f81c"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_grade_spectrum.py",
+      "sha256": "febf97d7b74462cc43e24d238a7a543e5b52eb664c6cefe36bf2c9a505b4dae0"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/GRADE_SPECTRUM_CONTROLS.json",
+      "sha256": "6878b986cbfee5b1358ff0dbf069d137a81a60483e52c5d8c85ce8351595f693"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/SPARSE_DISCREPANCY_BLOCKS.md",
+      "sha256": "6aadef9870c8a81eb7e03496388aafc3cd7fdb85da06f3aef8af299ad9cb03ca"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/check_discrepancy_blocks.py",
+      "sha256": "e18dbb549b3737705bae2a0a767c6b1e70deee429714dfc8741dd55ee5875f12"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/ordinary/DISCREPANCY_BLOCK_CONTROLS.json",
+      "sha256": "535617b3d18f6b3c4c66db4238a953c56752fd7d1499cb64399361e7287ec51e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/SHARP_SIMPLE_ARCS.md",
+      "sha256": "76fae3b22d51db2fea814e5f1b28f4f1fe682e2db91d11ad7be82c9d32834403"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/FIXED_SOURCE_WINDOWS.md",
+      "sha256": "7528c1564a37f0553bf4926e22845f1841fcaffb59140c1281798df3b53047cd"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/SharpMotifInput.lean",
+      "sha256": "996c6922414b97eb2118a7d761e02472a0016cf0e6f8a4b50a8bbcce2868290d"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/ROUTER_REPLAY.json",
+      "sha256": "c0340435de6c2ef147ddc8120d56789d6c0419aeb533e060f1c91ef319476c4e"
+    },
+    {
+      "path": "research/astra-critical-rigidity-20261128/literature/check_sharp_simple_arcs.py",
+      "sha256": "45b4947336487eb8aadca7a194829c34dc827582227284dc13c96b8d1a512255"
+    }
+  ]
+}

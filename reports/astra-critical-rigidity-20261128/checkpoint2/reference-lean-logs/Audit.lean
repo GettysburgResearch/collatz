@@ -1,0 +1,8 @@
+import ReferenceDivisibility
+
+#print axioms Collatz.ReferenceDivisibility.two_three_coprime
+#print axioms Collatz.ReferenceDivisibility.complete_dyadic_divisor
+#print axioms Collatz.ReferenceDivisibility.nonzero_residual_height
+#print axioms Collatz.ReferenceDivisibility.reference_integer_law
+#print axioms Collatz.ReferenceDivisibility.reference_source_divisor
+#print axioms Collatz.ReferenceDivisibility.reference_source_height

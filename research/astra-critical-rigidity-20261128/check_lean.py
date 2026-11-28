@@ -25,6 +25,10 @@ MODULES = {
         "Actual shortcut parity-word identity, repeated affine center identity, and exact changing-center/reference telescopes. No Subspace Theorem or asymptotic height bound is formalized."),
     "PairedClock": ("ordinary/PairedClock.lean", "Collatz.PairedClock",
         "Actual two-source discrepancy, its source-independent bound and exact halving, and the quadratic native-clock bound for unmatched odd ternary-power pairs. The fixed-target classification and unbounded-family construction are written proofs at this checkpoint."),
+    "ReferenceDivisibility": ("formal/ReferenceDivisibility.lean", "Collatz.ReferenceDivisibility",
+        "Integer-cleared actual and reference affine laws imply a complete dyadic divisor and its nonzero height cost. No asymptotic height statement or Subspace Theorem is formalized."),
+    "RotationOccupation": ("cycles/RotationOccupation.lean", "Collatz.RotationOccupation",
+        "Cleared odd traces, an exact partial unequal final edge, the complete two-sided divisor at an interior date, and elementary spacing/counting kernels. The global rotation-occupation and limiting pressure theorems remain written proofs."),
 }
 ALLOWED_AXIOMS = {"Classical.choice", "Quot.sound", "propext"}
 
