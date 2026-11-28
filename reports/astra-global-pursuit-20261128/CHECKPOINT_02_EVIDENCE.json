@@ -1,0 +1,33 @@
+{
+  "scope": "Checkpoint 2 finite algebra and local Lean evidence; not full analytic or Collatz verification",
+  "replays": [
+    {
+      "script": "research/astra-global-pursuit-20261128/arithmetic/check_all_clock_targets.py",
+      "source_sha256": "a4d70b7325d89204d928b75fed28a3a1ae0db008115893c04d6ecfa9706d7925",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "outputs_byte_identical": true,
+      "stdout_sha256": "d6a9c80facef34cd0e9bed7e7932f6d8f53015701eda9fd23ad5b272631bf3b7",
+      "stdout": "gain>1, clocks through 15, tested 158 targets, 22 marked words, exact truncated Haar mass 22/19683\ngain>3/2, clocks through 15, tested 154 targets, 14 marked words, exact truncated Haar mass 22/59049\nverified 59 actual marked visits including both independent clocks\n"
+    },
+    {
+      "script": "research/astra-global-pursuit-20261128/wild/check_cycle_trace.py",
+      "source_sha256": "3410429d29916f7132fa17bee1b896c00e13cca9e32e8040b0854c0be4b26f3e",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "outputs_byte_identical": true,
+      "stdout_sha256": "f9c1c33f0e19f7d5dfbbd1259561772962dd56aad1e319087ceb22e9bd9622eb",
+      "stdout": "{\n  \"distinct_last_parents\": 4,\n  \"exact_finite_lap_calendars\": 21,\n  \"finite_odd_anchor_sources\": 2000,\n  \"finite_word_seed_root_tuples\": 22506,\n  \"first_exit_prefixes\": 60,\n  \"observed_arrivals_by_deadline\": 1119,\n  \"ordinary_padded_laps\": 480,\n  \"selected_full_congruences\": 345,\n  \"singular_test_identities\": 1035,\n  \"strict_cutoff_equalities\": 5,\n  \"tail_above_cutoff\": 78\n}\n"
+    }
+  ],
+  "lean": {
+    "source": "research/astra-global-pursuit-20261128/CenteredDeterminant.lean",
+    "source_sha256": "1a84c8929e81f6ded392ca94f1aaa09dbe9c913e167f168182347179619bfa2c",
+    "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "command": "lean -DwarningAsError=true -o <scratch>/CenteredDeterminant.olean research/astra-global-pursuit-20261128/CenteredDeterminant.lean",
+    "exit_code": 0,
+    "displayed_roots": 8,
+    "axiom_output": "'Collatz.CenteredDeterminant.centered_native' depends on axioms: [propext, Quot.sound]\n'Collatz.CenteredDeterminant.determinant_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CenteredDeterminant.backward_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CenteredDeterminant.backward_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CenteredDeterminant.odd_run_divisibility' depends on axioms: [propext, Quot.sound]\n'Collatz.CenteredDeterminant.odd_run_length' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CenteredDeterminant.native_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.CenteredDeterminant.native_adjacent_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "analytic_scope": "No probability, generating-function, density, or full Collatz claim is formalized here."
+  }
+}
