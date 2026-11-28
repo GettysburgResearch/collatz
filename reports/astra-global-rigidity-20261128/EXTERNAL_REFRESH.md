@@ -103,3 +103,30 @@ structured first crossings; they do not bound every crossing's complexity.
 The claimed verification status of that unrefereed source was not treated
 as an independent Lean rebuild, and none of its numerical thresholds is
 used as a premise of the near-maximal entropy proof.
+
+## Full word limits and concurrent arithmetic comparison
+
+The same exact Polson–Sokolov source now supplies the questions answered by
+checkpoint9: the full M4 count formula and both parts of R8, retaining the
+R9 expansion. Kingman's scalar subadditive theorem is used with explicit
+boundedness hypotheses; root read the original paper's primary statement
+and Steele's author-hosted proof. The new critical transition argument is
+proved directly and does not invoke a random-environment wetting theorem.
+
+Root opened [Weaver160/v1](https://rstation.ai/problems/collatz/papers/160)
+and [Weaver163/v1](https://rstation.ai/problems/collatz/papers/163), including
+the latter's higher-order cancellation fixture and stated unrestricted-cost
+question. Those are the precise antecedents of the new product arguments.
+The pair theorem and bounded-division all-order theorem are credited.
+Root also read [Paper137 Lemma4](https://rstation.ai/problems/collatz/papers/137)
+for the earlier maximal-coefficient gcd criterion.
+
+A GitHub refresh froze PR212 at 0172f15109b8749c14fed272e733c97a5a0f7d24,
+PR214 at be010b2874b88267e710666d3c5f963a0c994356, and PR215 at
+121054cf6569859585ede5c2d6e024eb2d97bbc5. Main remained
+ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a. Their current front-door metadata
+was read; this is not a review of all their new proofs. In addition, root
+read PR215's complete moving-sparse-sum, moving-template and moving-residue
+notes at d444e332d111115daa650c58a917dd46dacd4c1e. That prior publication
+changes the attribution of the overlapping checkpoint7 method, as now
+explained in `MOVING_FULL_MODULUS.md` and the checkpoint9 review.

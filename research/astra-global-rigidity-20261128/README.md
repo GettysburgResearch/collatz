@@ -1,10 +1,54 @@
 # Global rigidity and the critical ordinary clock
 
-**Collatz remains open.** This is the eighth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
+**Collatz remains open.** This is the ninth checkpoint of the nine-hour pass begun 2026-11-27 at 22:59:19 UTC. It continues [PR213's frozen packet](https://github.com/GettysburgResearch/collatz/tree/5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128/research/astra-diagonal-frontier-20261127). The intended end is 2026-11-28 at 07:59:19 UTC. The current material is a checkpoint, not a claim that the full pass has elapsed.
 
 We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes one to `Q_k`; the clock counts shortcut steps. The odd map removes the complete power of two in `3x+1`. These clocks are distinguished throughout.
 
-## New at checkpoint 8
+## New at checkpoint 9
+
+**The full correction-word questions R8 and R9 now have written proofs.**
+[All-phase pressure and all-threshold entropy](cycles/FULL_CORRECTION_WORD_ENTROPY.md)
+establishes the untruncated limit at every rotation phase and every real
+tilt, and proves the proposed Legendre formula for the count rate at every
+`0<c<1`. A pointwise minimum of cumulative exponents compares different
+phases with a controlled multiplicity and reward cost; this upgrades the
+scalar ergodic theorem's almost-everywhere conclusion to uniform convergence.
+Pinned concatenation supplies the lower count even at a possible pressure
+corner. The word model and proposed formula are credited to Polson–Sokolov.
+
+[The remaining differentiability argument](cycles/DEPTH_PRESSURE_DIFFERENTIABILITY.md)
+proves a positive, finite critical tilt. The pressure is constant below it,
+has zero right derivative at the transition, and is locally `C^{1,1}` above
+it. Positive excursions have half the interior tilt. Their exponential
+suppression above the transition permits a replica exchange argument that
+bounds the reward variance. At the critical point, a hypothesized positive
+contact density contradicts an induced pressure inequality and Kac's return
+time identity. No random environment, finite-depth truncation or supplied
+Collatz density theorem enters these proofs. The near-one expansion from
+checkpoint 8 is retained. These results count valuation words and do not
+remove denominator-one exceptions.
+
+**Actual high odd segments now have unique products through order five,
+without a division budget.** If every vertex of an `L`-step positive odd
+Collatz segment exceeds `2^(8(L+1)^2)`, its unordered products of five
+vertices are all distinct, even with repeated factors. This also gives
+orders below five. The [triple-product proof](cycles/UNRESTRICTED_TRIPLE_PRODUCTS.md)
+normalizes away the final division count and uses a dyadic-gap argument.
+The [four-product extension](cycles/UNRESTRICTED_FOUR_PRODUCTS.md) supplies
+a convex sign test; the [five-product extension](cycles/UNRESTRICTED_FIVE_PRODUCTS.md)
+settles the remaining two-crossing case by parity. Weaver 160's prior
+unrestricted pair theorem and Weaver 163's bounded-cost all-order theorem
+are explicitly credited. A genuine order-six zero-prefix control shows
+why this particular proof cannot simply be extended to every order.
+
+The finite cores of the phase comparison and depth-bridge exchange add
+[20 Lean theorem roots](cycles/PhaseClamping.lean), split between that module
+and [DepthBridge](cycles/DepthBridge.lean). The full analytic proofs and the
+unrestricted product theorem remain written mathematics. A concurrent-source
+refresh also credits PR215's earlier overlapping moving-coefficient method
+and Paper137's elementary maximal-coefficient gcd criterion.
+
+## Retained from checkpoint 8
 
 [The near-maximal correction-word rate](cycles/NEAR_MAXIMAL_CORRECTION_ENTROPY.md) now has a written proof in the regime asked for by Polson–Sokolov's R9. For `epsilon -> 0`, its rate in base-ten logarithms is
 
@@ -14,7 +58,7 @@ We use the shortcut map `T(2x)=x`, `T(2x+1)=3x+2`. An odd departure contributes 
 +1-\log\frac32+o(1)\right).
 \]
 
-The proof first establishes the untruncated depth pressure, uniformly over every initial rotation phase, and its analyticity at sufficiently large positive tilt. It then matches the lower count by exponential tilting. Thus the rate limit exists throughout a neighborhood below one; the large-tilt portion of R8 is also established. The complete R8 range remains open here. The leading factor comes from the one-third cost of entering a positive-depth block; its phase distribution creates the negative double-logarithmic correction. This is an elementary analytic counting argument, with no supplied Collatz density or recent logarithmic-form premise. It counts rational cycle words too and does not eliminate denominator-one exceptions.
+The proof first establishes the untruncated depth pressure, uniformly over every initial rotation phase, and its analyticity at sufficiently large positive tilt. It then matches the lower count by exponential tilting. Thus the rate limit exists throughout a neighborhood below one; the large-tilt portion of R8 is also established. The full R8 range and all thresholds are now handled in checkpoint 9 above. The leading factor comes from the one-third cost of entering a positive-depth block; its phase distribution creates the negative double-logarithmic correction. This is an elementary analytic counting argument, with no supplied Collatz density or recent logarithmic-form premise. It counts rational cycle words too and does not eliminate denominator-one exceptions.
 
 The book's original depth model, observable and suggested leading order are explicitly credited at an exact source commit. Root and an independent agent reconstructed the analytic proof. [Six finite loss lemmas](cycles/DepthDeficits.lean) compile in Lean; the analytic theorem is written mathematics. The new exact checker compares the entire rational deficit polynomial from direct words with an independent block renewal: 52 cases, 97,914 words and 177,192 positive blocks, in both Python modes.
 
@@ -80,7 +124,7 @@ The number-theory track adds three different conclusions. [Every real bounded mu
 
 ## Lean source and current build status
 
-**Checkpoint 8: sixteen modules and all 92 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint8/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Earlier checkpoint receipts remain preserved. The new `DepthDeficits` module proves finite depth-entry and block-deficit bounds. The earlier shifted-height carry, gcd and same-successor sibling formulas remain included. Earlier modules remain in the complete run. The analytic inputs, infinite constructions, equidistribution and asymptotic growth rates are not formalized by those modules.
+**Checkpoint 9: eighteen modules and all 112 public theorem roots freshly compiled and axiom-audited.** The successful [receipt](../../reports/astra-global-rigidity-20261128/checkpoint9/lean.json) pins Lean 4.34.1 and Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the public-root inventories. This is one compiler/runtime audit, with reused compiled dependencies whose optional Mathlib overlay is byte-verified against the pinned cache. Earlier checkpoint receipts remain preserved. The new `PhaseClamping` and `DepthBridge` modules prove finite phase-comparison, lattice, swap, zero-contact and half-tilt weight kernels. `DepthDeficits` retains the finite entry and block-cost bounds. The earlier shifted-height carry, gcd and same-successor sibling formulas remain included. Earlier modules remain in the complete run. The analytic inputs, infinite constructions, equidistribution and asymptotic growth rates are not formalized by those modules.
 
 The [first timeout](../../reports/astra-global-rigidity-20261128/checkpoint1/lean-timeout.json) remains as historical evidence. The old dependency-heavy `CriticalCount.lean` was replaced by `mass/CriticalCountStandalone.lean`, using the same actual-map recurrences with a small dependency closure. It proves signed count additivity, the alternating count after a true visit to one, and a uniform rational drift after a true visit to a fixed nonconvergent anchor.
 
@@ -134,7 +178,7 @@ Run `python -X utf8 -B research/astra-global-rigidity-20261128/check_finite.py -
 
 The cycle controls enumerate genuine rational cycles, all endpoints and cells in the tested width-language bands, and exact integer entropy inequalities. The Mersenne checker uses modular affine certificates with matching augmented counts. Its very large exponents are **not** claims to have explicitly expanded or iterated billion-bit starting integers; the written affine argument explains why the compressed certificates concern those fixed ordinary integers.
 
-Checkpoint 8's [finite receipt](../../reports/astra-global-rigidity-20261128/checkpoint8/finite.json) records all thirty Python controls in both modes. The new control compares the complete exact deficit polynomial from direct words and independent block renewal. The new controls exercise actual macroscopic gluing and short-cluster repair, arbitrary equal-weight window edits, independent siblings and explicit terminating controls, protected prime cores, and exact signed-column projections with prescribed climbs. Earlier controls remain in the paired replay. The larger one-thread exhaustive scan is separate: `python research/astra-global-rigidity-20261128/mersenne/run_large_ramp.py --receipt /tmp/collatz-large-ramp.json`. Its [receipt](../../reports/astra-global-rigidity-20261128/checkpoint3/large-ramp.json) retains compiler identity, source hashes, exact cutoffs and result. It uses checked 64-bit orbit multiplication and a fixed 4 MiB cache. Neither finite replay proves the analytic discrepancy or density estimates.
+Checkpoint 9's [finite receipt](../../reports/astra-global-rigidity-20261128/checkpoint9/finite.json) records all thirty-five Python controls in both modes. The new controls check phase clamping and pinned concatenation, the exact half-tilt reward polynomial and replica exchanges, and the unrestricted triple/four/five-product finite interfaces. The earlier exact deficit-polynomial comparison remains included. The new controls exercise actual macroscopic gluing and short-cluster repair, arbitrary equal-weight window edits, independent siblings and explicit terminating controls, protected prime cores, and exact signed-column projections with prescribed climbs. Earlier controls remain in the paired replay. The larger one-thread exhaustive scan is separate: `python research/astra-global-rigidity-20261128/mersenne/run_large_ramp.py --receipt /tmp/collatz-large-ramp.json`. Its [receipt](../../reports/astra-global-rigidity-20261128/checkpoint3/large-ramp.json) retains compiler identity, source hashes, exact cutoffs and result. It uses checked 64-bit orbit multiplication and a fixed 4 MiB cache. Neither finite replay proves the analytic discrepancy or density estimates.
 
 ## Prior work and review
 

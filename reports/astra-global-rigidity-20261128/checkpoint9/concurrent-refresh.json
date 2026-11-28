@@ -1,0 +1,38 @@
+{
+  "schema": "collatz-concurrent-frontier-refresh/v1",
+  "observed_utc": "2026-11-28T03:22:00Z",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "heads": [
+    {
+      "pr": 212,
+      "title": "Collatz: native meeting clocks, divisor fates and Lean obstructions",
+      "head": "0172f15109b8749c14fed272e733c97a5a0f7d24",
+      "updated": "2026-11-28T02:54:13Z",
+      "scope": "Current front-door metadata read; not complete proof review."
+    },
+    {
+      "pr": 214,
+      "title": "Research: formal clock equivalence and decidable denominator spectra",
+      "head": "be010b2874b88267e710666d3c5f963a0c994356",
+      "updated": "2026-11-28T03:10:02Z",
+      "scope": "Current front-door metadata read; not complete proof review."
+    },
+    {
+      "pr": 215,
+      "title": "Nine-hour frontier pass: critical ordinary parity, complete returns, and mixed congruence ancestors",
+      "head": "121054cf6569859585ede5c2d6e024eb2d97bbc5",
+      "updated": "2026-11-28T03:22:04Z",
+      "scope": "Current front-door metadata read; not complete proof review."
+    }
+  ],
+  "additional_proof_read": {
+    "pr": 215,
+    "commit": "d444e332d111115daa650c58a917dd46dacd4c1e",
+    "files": [
+      "MOVING_SPARSE_SUMS.md",
+      "MOVING_POWERED_WORDS.md",
+      "MOVING_RESIDUES.md"
+    ],
+    "scope": "Complete three phase4 notes read by root and cycle agent; overlap credited in MOVING_FULL_MODULUS.md."
+  }
+}

@@ -1,4 +1,4 @@
-# Review boundary — eighth nine-hour checkpoint
+# Review boundary — ninth nine-hour checkpoint
 
 The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is planned through 2026-11-28 07:59:19 UTC. This is an intermediate checkpoint. Source intake: `INTAKE.json`; inherited packet head: `5ac2b4a7ab9fee19d2e1b1c2e4aadecd08413128`.
 
@@ -16,7 +16,7 @@ The conjecture remains unresolved. The pass began 2026-11-27 22:59:19 UTC and is
 
 ## Formal and finite verification boundary
 
-**Checkpoint 8: sixteen modules and 92 public roots passed a fresh serial compilation and axiom audit.** `checkpoint8/lean.json` identifies their exact bytes. The new `DepthDeficits` module adds six finite loss, entrance and block-cost declarations; the full pressure and entropy theorem remains written mathematics. The earlier `ShiftedSiblingCarries` module and all earlier packet modules remain in the full run. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
+**Checkpoint 9: eighteen modules and 112 public roots passed a fresh serial compilation and axiom audit.** `checkpoint9/lean.json` identifies their exact bytes. The new `PhaseClamping` and `DepthBridge` modules add twenty finite phase, lattice, swap, zero-contact and reward declarations; the full pressure, entropy and product theorems remain written mathematics. The earlier `ShiftedSiblingCarries` module and all earlier packet modules remain in the full run. Earlier audits remain preserved. `CoreTransport` proves finite inequalities and telescoping under explicit arithmetic premises. `GuardedHoles` proves the separated-hole and automatic-band guards, uniform three-step expansion, and the exact three-or-six-step return arithmetic. Neither module imports the analytic or infinite conclusions as axioms. Checkpoint 5's `AbsoluteOffsetBudget` and `ShiftedRampCores` modules remain in the fresh full run. Earlier development runs exposed deprecated rewrite names and a missing explicit positivity fact for an `omega` call; those failed receipts are preserved alongside the later successful runs. The standalone actual-map count module replaced the dependency-heavy version from checkpoint 1. That earlier run stopped at a 300-second timeout in the unchanged `NativeGate` dependency; `checkpoint1/lean-timeout.json` preserves the failure. It was not retrospectively marked successful.
 
 The checkpoint receipts identify exact source hashes, compiler version, Mathlib pin, imported module closure, public declarations and axiom output. They distinguish fresh packet compilation from reuse of compiled dependencies. The only accepted theorem axioms are the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, custom mathematical interface axiom, or `native_decide` shortcut is accepted by the replay.
 
@@ -506,6 +506,79 @@ sum import and an explicit division-to-multiplication normalization.
 The development failures remain preserved as receipts; they were not
 mathematical counterexamples. All six new roots use only the same standard
 Lean axioms accepted for the packet.
+
+## Checkpoint 9 independent reconstruction
+
+**Full word-count limit — VERIFIED AS WRITTEN MATHEMATICS by root and an
+independent agent.** Pinning the last depth at zero merely changes the
+unrewarded final letter by one, so the book's rung words have exactly the
+same partition function. The pointwise minimum of the cumulative word and
+a lower phase ceiling remains strictly increasing. Every altered coordinate
+has two possible lifts and contributes a precisely bounded reward increment.
+The reverse endpoint lift is injective. Uniform rotation counts bound the
+phase discrepancy. Scalar Kingman applies to the negative log of the pinned
+partition function, with explicit linear integrability bounds; a finite
+net of good phases then gives uniform convergence at all phases. A cyclic
+composition rotation proves the unweighted entropy. Uniform finite Gibbs
+concentration and the injection from concatenating two pinned families give
+the full threshold limit even at a possible pressure corner. The proof
+therefore does not infer a lower count from an unproved differentiability
+premise. The exact checker tests the complete finite maps, multiplicities
+and rational rewards, not numerical pressure estimates.
+
+**All-tilt differentiability — VERIFIED AS WRITTEN MATHEMATICS after root's
+independent reconstruction of the agent's proof.** A centered geometric
+increment and an explicit positive supersolution give a nonempty flat
+tilt interval. Subtracting one from a strict positive excursion is an exact
+half-tilt correspondence. Above the transition the pressure gap gives
+uniform exponential contact-gap tails. The first usable edge of two
+replicas is unchanged by exchanging their tails; legality and weight are
+preserved and the reward-difference product changes sign. This bounds
+covariances and the variance per site, giving local C^{1,1} regularity.
+
+For the transition, root checked the finite heat-bath quantile construction,
+association, boundary monotonicity and the compact infinite-height limit.
+The averaged infinite-volume reward equals the derivative on the localized
+side by a finite-window sandwich. A hypothesized positive limiting reward
+leaves a stationary finite-height component. Recurrence to finite heights
+and positive finite fillings force zero-contact probability at almost every
+phase. On a positive-measure eligible set with that probability bounded
+below, induced supermultiplicativity bounds the expected log partition at
+rotation return times. The explicit unweighted cyclic-composition lower
+bound gives an n^(-3/2) strict-excursion tail. Association, Jensen and Kac
+then force an infinite mean zero-contact interval, contradicting the
+stationary point-process mass bound of one. No eigenfunction, uniform bound
+on a phase normalizer, random-disorder theorem or external unverified
+Collatz theorem is used. The original conjecture is not a consequence of
+these ensemble theorems.
+
+**Unrestricted products through order five — VERIFIED AS WRITTEN ARITHMETIC.**
+Root read Weaver160's unrestricted pair proof and Weaver163's bounded-cost
+all-order proof and explicit first-correction cancellation. The new
+normalization divides by the last affine increment before bounding all
+backward offsets. High height aligns both index and division sums. A
+nonzero dyadic prefix is either separated from the tail by its first large
+gap or has a bounded denominator; a polynomial root bound then supplies
+the explicit height cutoff. For triples the terminal multiplicity is
+nonzero modulo three. The remaining quadruple shape has one sign change;
+strict convexity at a positive product root forces every weighted prefix
+negative. For five factors, the only two-crossing shape has odd nonzero
+coefficients after its first positive value, so the last nonzero coefficient
+makes each cleared prefix odd. The known zero first-correction fixture is
+single-crossing and is not mistaken for an actual product collision. The
+order-six zero-prefix fixture correctly limits this proof. None of these
+arguments assumes a total division budget, and none excludes a general
+integer cycle of unrestricted length.
+
+**Attribution corrections after concurrent refresh.** Root read all three
+pinned PR215 phase4 cycle notes at d444e332, published before checkpoint7.
+The general moving-character quotient and moving-gcd/Fourier method, and
+the overlapping separated-junction denominator conclusion, are now explicitly
+credited there. This packet retains its arbitrary-sign proper-gap statement
+and the specified local-repair, lcm, gluing-exception and spacing formulations.
+Root also read Paper137 Lemma4 and added its direct credit for the elementary
+maximal-coefficient gcd criterion. The newer PR212/214/215 heads were frozen
+in a separate metadata refresh; only the named notes were proof-reviewed.
 
 ## Questions kept open
 

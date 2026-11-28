@@ -45,9 +45,10 @@ In particular the leading constant, the negative double-logarithmic
 correction and the next constant are determined. The tilted word pressure
 also exists and is real analytic for every sufficiently large positive
 tilt, uniformly over the initial rotation phase. This answers the
-near-one question R9 and the large-tilt portion of R8. The full
-`lambda >= 0` range of R8, and the count-rate limit for all `0<c<1`, are
-not asserted here.
+near-one question R9 and the large-tilt portion of R8. The full range is now established separately in the
+[all-threshold count theorem](FULL_CORRECTION_WORD_ENTROPY.md) and the
+[all-tilt differentiability proof](DEPTH_PRESSURE_DIFFERENTIABILITY.md).
+The near-one derivation here remains independent of those extensions.
 
 ## 1. The exact depth model
 

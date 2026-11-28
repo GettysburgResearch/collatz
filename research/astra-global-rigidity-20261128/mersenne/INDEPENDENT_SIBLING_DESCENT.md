@@ -20,7 +20,7 @@ Suppose that at native times \(t_0<\cdots<t_{k-1}\) there is a nonzero integral 
 \[
                       \prod_{i<k}W_{t_i}^{m_i}=1.
 \]
-Choose \(i\) with maximal \(|m_i|>0\). For every prime \(p\), the valuation identity and maximality give \(v_p(W_{t_i})\le\sum_{j:\,m_i m_j<0}v_p(W_{t_j})\). Truncating each summand at \(v_p(W_{t_i})\) preserves this inequality. Therefore
+The following criterion uses the maximal-coefficient proof of [Weaver, Paper 137, Lemma 4](https://rstation.ai/problems/collatz/papers/137), retaining only terms of opposite sign. Choose \(i\) with maximal \(|m_i|>0\). For every prime \(p\), the valuation identity and maximality give \(v_p(W_{t_i})\le\sum_{j:\,m_i m_j<0}v_p(W_{t_j})\). Truncating each summand at \(v_p(W_{t_i})\) preserves this inequality. Therefore
 \[
  W_{t_i}\mid\prod_{j:\,m_i m_j<0}\gcd(W_{t_i},W_{t_j})
  \quad\text{and}\quad

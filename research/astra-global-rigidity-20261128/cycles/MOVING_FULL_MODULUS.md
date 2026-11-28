@@ -22,6 +22,29 @@ $$
 
 There is no bound on the internal number of changes, runs or distinct subwords in those windows. At coprime clocks one subexponential denominator forces the other to be $2^{n-o(n)}$. On arbitrary clocks the coefficient $1/k$ is sharp even with two-bit windows, both words primitive and their common slope tending to the Collatz slope. [Optimal examples](SPARSE_FULL_MODULUS.md)
 
+## Concurrent prior work and exact overlap
+
+[PR215 at d444e332, published before this packet's checkpoint 7](https://github.com/GettysburgResearch/collatz/blob/d444e332d111115daa650c58a917dd46dacd4c1e/research/astra-nine-hour-20261128/cycles/phase4/MOVING_SPARSE_SUMS.md)
+already uses the quotient by limiting exponent relations, the moving gcd
+theorem and the finite Fourier support bound for coefficients of sublinear
+height. Its positive, adjusted-dyadic-separated and nearcritical stable-real
+cases give the sharp reciprocal-support rate and rational limit quantization.
+Its [moving-template application](https://github.com/GettysburgResearch/collatz/blob/d444e332d111115daa650c58a917dd46dacd4c1e/research/astra-nine-hour-20261128/cycles/phase4/MOVING_POWERED_WORDS.md)
+directly overlaps the separated junction application below, after its zero
+or submacroscopic pieces are handled. The general moving-coefficient method
+and that overlapping denominator conclusion are not first claims of this
+packet. Root read both complete pinned notes during checkpoint 9 and checked
+their relation to the independently developed checkpoint-7 proof.
+
+The proper-arc hypothesis here also treats arbitrary signs with equal
+adjusted dyadic dates, without positivity or a nearcritical stable evaluation.
+The short-window edit lcm, the explicit native repairs and genuine-cycle
+exception, the smallest irrational-spacing class, and the formal endpoint
+ideal are retained as the distinct formulations of this note. PR215 also
+has a stronger positive full-rate criterion when every prime in the clock
+gcd exceeds the support size, and separate [proper physical-arc results](https://github.com/GettysburgResearch/collatz/blob/d444e332d111115daa650c58a917dd46dacd4c1e/research/astra-nine-hour-20261128/cycles/phase4/MOVING_RESIDUES.md).
+No completeness claim is made for this comparison.
+
 ## Small characters and the moving gcd theorem
 
 Argue on any infinite proposed violating sequence. Retain a subsequence with all the ratios $u/n,t_i/n,s_i/n$ convergent and with either constant $g<k$ or $g\ge k$ throughout. Evaluate a character lattice $M=\mathbb Z^{k+1}$ on the rational unit coordinates $R=2^n3^{-u}$ and $Z_i=2^{t_i}3^{s_i}$. The two vectors of limiting prime exponents per $n$ give a real linear map $M\to\mathbb R^2$. Its integer kernel $L$ is saturated. Choose a direct summand complementary to $L$. Each fixed character in $L$ evaluates to a rational $\{2,3\}$-unit of height $o(n)$. Every fixed nonzero character in the complementary lattice has height bounded below by a positive constant times $n$, also along every further subsequence. Indeed the logarithmic height of $2^t3^s$ is at least $\max(|t|\log 2,|s|\log 3)$ and at most the sum of those terms.
