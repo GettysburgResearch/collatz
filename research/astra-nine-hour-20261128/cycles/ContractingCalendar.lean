@@ -26,7 +26,8 @@ theorem contracting_span {A B d K m Wlo Whi : ℚ}
   have hu : 3*Whi*((B-A)*(B-3*A)) < 3*(B-A)*(d*K) := by
     convert h₂ using 1 <;> ring
   have hl : d*K*(B-3*A) < Wlo*((B-A)*(B-3*A)) := by
-    convert h₁ using 1 <;> ring
+    convert h₁ using 1
+    ring
   apply (mul_lt_mul_iff_right₀ (by positivity : 0 < 2*B)).mp
   calc
     2*B*((m-1)*(B-A)*(B-3*A)) = 2*B*(m-1)*((B-A)*(B-3*A)) := by ring

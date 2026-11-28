@@ -1,0 +1,1172 @@
+{
+  "schema": "collatz-nine-hour-lean/v1",
+  "started_utc": "2026-11-28T00:19:18.301771+00:00",
+  "scope": "Fresh strict compilation of this packet and transitive axiom audit; not a fresh Mathlib build or proof of Collatz",
+  "passed": true,
+  "modules": [
+    {
+      "source": "escape/MinimumWindow.lean",
+      "sha256": "97e0c142a6020e948b4c368132709c4daa444185e168e05154cb5da249de7614",
+      "exit_code": 0,
+      "seconds": 7.1339,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen/escape",
+      "stdout": "'Collatz.MinimumWindow.hit_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.path_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.minimum_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/AffineCorrection.lean",
+      "sha256": "0c930f72b4bda260886fc52e422d58edbe89df176dafb4f380bcaaf4f2716065",
+      "exit_code": 0,
+      "seconds": 2.5996,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen/escape",
+      "stdout": "'Collatz.MinimumWindow.arithmetic_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.simple_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.first_hit_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ContractingCalendar.lean",
+      "sha256": "c3b0afd7686f90e4d0a2c422d3243096cf6cc458760260e44a08fc5c6da640a2",
+      "exit_code": 0,
+      "seconds": 2.3563,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen/cycles",
+      "stdout": "'Collatz.ContractingCalendar.farey_endpoints' depends on axioms: [propext]\n'Collatz.ContractingCalendar.intermediate_gap' depends on axioms: [propext, Quot.sound]\n'Collatz.ContractingCalendar.contracting_span' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ContractingCalendar.small_residual' depends on axioms: [propext, Quot.sound]\n'Collatz.ContractingCalendar.terminal_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ContractingCalendar.smallRange_true' depends on axioms: [propext]\n'Collatz.ContractingCalendar.finite_carry_comparison' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "FiniteCriticalTail.lean",
+      "sha256": "0f4f74d0c764d5402683242e63b99a344b674d5cdcd92fd1768ef5d6418f34bb",
+      "exit_code": 0,
+      "seconds": 4.4944,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen",
+      "stdout": "'Collatz.MinimumWindow.correction_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.simple_correction_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.ternary_dominates_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.critical_tail_not_simple' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.critical_tail_repeated' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.MinimumWindow.critical_tail_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/ModularQuotient.lean",
+      "sha256": "7685e2492c7d7c27bb5e85656b3e7094cb9fc70e5a1cc3ddc94bb2ef8803b095",
+      "exit_code": 0,
+      "seconds": 2.2389,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen/cycles",
+      "stdout": "'Collatz.ModularQuotient.mixed_source' depends on axioms: [propext]\n'Collatz.ModularQuotient.carry_bound' depends on axioms: [propext, Quot.sound]\n'Collatz.ModularQuotient.center_unroll' depends on axioms: [propext]\n'Collatz.ModularQuotient.critical_return' depends on axioms: [propext]\n'Collatz.ModularQuotient.window_slide' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ModularQuotient.shifted_window_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ModularQuotient.local_packing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "machinery/ProfiniteAncestors.lean",
+      "sha256": "96b399b5731ce09e95deb15b9ea2d2e72d83b9745ae6b75862424bdb71656be6",
+      "exit_code": 0,
+      "seconds": 7.1476,
+      "module_root": "/workspace/scratch/f139035b63c2/core-six-frozen/machinery",
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "lean": {
+    "path": "/workspace/scratch/f139035b63c2/toolchain/lean-4.34.1-linux/bin/lean",
+    "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "mathlib": {
+    "path": "/workspace/scratch/f139035b63c2/mathlib4",
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_clean": true
+  },
+  "mathlib_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "dependencies": [
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/plausible",
+      "head": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/LeanSearchClient",
+      "head": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/importGraph",
+      "head": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/proofwidgets",
+      "head": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/aesop",
+      "head": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/Qq",
+      "head": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/batteries",
+      "head": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "path": "/workspace/scratch/f139035b63c2/mathlib4/.lake/packages/Cli",
+      "head": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    }
+  ],
+  "build_directory": "/workspace/scratch/f139035b63c2/lean-replays/collatz-nine-hour-61c8de23",
+  "flags": [
+    "-j1",
+    "-DElab.async=false",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "audit_command": {
+    "source": "<generated-all-declaration-audit>",
+    "sha256": "ca930218370df024365e1d104771efa1c2f66f4f10e52cab10f1839d2a597b01",
+    "exit_code": 0,
+    "seconds": 15.3302,
+    "module_root": "/workspace/scratch/f139035b63c2/lean-replays/collatz-nine-hour-61c8de23",
+    "stderr": "",
+    "stdout_sha256": "a7387d0d755954ba2282b3538fbc9ff33cada1cab210ead12261a0b6e1090fb2",
+    "stdout_rows_decoded_in": "declarations",
+    "count_message": [
+      "AXIOM_COUNT 138"
+    ]
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.closed_fibre_is_all",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.every_residue",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.first",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.first._proof_1",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.second",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.second_fixes_one",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "AstraNine.ProfiniteAncestors.swap_gain",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.checkRow",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.contracting_span",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.farey_endpoints",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.farey_endpoints._proof_1",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.finite_carry_comparison",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.intermediate_gap",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.intermediate_gap._proof_1",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.smallRange",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.smallRange_true",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.smallRange_true._proof_1",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.small_residual",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ContractingCalendar.terminal_divisibility",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.testPair",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ContractingCalendar.testPair.eq_1",
+      "module": "ContractingCalendar"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.accumulated",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.accumulated.eq_1",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.accumulated_succ",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.arithmetic_product",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.correction",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.correction.eq_1",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.correction_bounds",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.correction_square_bound",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count._f",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count._sunfold",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count._unsafe_rec",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count.eq_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count.eq_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.count.eq_def",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.MinimumWindow.count_add",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.count_le",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.count_le._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.count_le._proof_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.critical_tail_cycle",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.critical_tail_not_simple",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.critical_tail_not_simple._proof_1",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.critical_tail_repeated",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.distinct_before_first",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.distinct_before_first._proof_1",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.distinct_before_first._proof_2",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.first_hit_product_bound",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.hit_window",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.hit_window._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.hit_window._proof_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.minimum_prefix",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.minimum_window",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.minimum_window._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.oddMark",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.oddMark.eq_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.one_step_product",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.one_step_product._proof_1",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.one_step_product._proof_2",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.one_step_product._proof_3",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit._f",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit._sunfold",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit._unsafe_rec",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit.eq_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit.eq_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit.eq_def",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.orbit.match_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.MinimumWindow.orbit_add",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.orbit_positive",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.path_power",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.path_power._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.path_power._proof_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.simple_correction_square",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.simple_product_bound",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.slide",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.slide._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.step",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.MinimumWindow.step.eq_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.step_positive",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.step_positive._proof_1",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.step_positive._proof_2",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.MinimumWindow.ternary_dominates_square",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace._f",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace._proof_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace._proof_2",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace._sunfold",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.CenterTrace._unsafe_rec",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.CenterTrace.match_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry._f",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry._sunfold",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry._unsafe_rec",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry.eq_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry.eq_2",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry.eq_def",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry_bound",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.carry_bound._proof_4",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.center_unroll",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.critical_return",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade._f",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade._sunfold",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade._unsafe_rec",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade.eq_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade.eq_2",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade.eq_def",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "Collatz.ModularQuotient.grade.match_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.grade_le_length",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.grade_le_length._proof_4",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.grade_le_length._proof_5",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.local_packing",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.local_packing._proof_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.local_packing._proof_2",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "declaration": "Collatz.ModularQuotient.mixed_source",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.shifted_window_le",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.window",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.window.eq_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.window_add",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.window_slide",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "Collatz.ModularQuotient.window_slide._proof_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "_private.AffineCorrection.0.Collatz.MinimumWindow.set_product_bound",
+      "module": "AffineCorrection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "_private.FiniteCriticalTail.0.Collatz.MinimumWindow.square_set_product",
+      "module": "FiniteCriticalTail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power._proof_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power._proof_3",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power._proof_4",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power._proof_5",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.local_power._proof_6",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.orbit.match_1.eq_1",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.orbit.match_1.eq_2",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.MinimumWindow.0.Collatz.MinimumWindow.orbit.match_1.splitter",
+      "module": "MinimumWindow"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.ModularQuotient.0.Collatz.ModularQuotient.grade.match_1.eq_1",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.ModularQuotient.0.Collatz.ModularQuotient.grade.match_1.eq_2",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [],
+      "declaration": "_private.ModularQuotient.0.Collatz.ModularQuotient.grade.match_1.splitter",
+      "module": "ModularQuotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.ProfiniteAncestors.0.AstraNine.ProfiniteAncestors.first_injective",
+      "module": "ProfiniteAncestors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declaration": "_private.ProfiniteAncestors.0.AstraNine.ProfiniteAncestors.second_injective",
+      "module": "ProfiniteAncestors"
+    }
+  ],
+  "module_declaration_counts": {
+    "MinimumWindow": 44,
+    "AffineCorrection": 21,
+    "ContractingCalendar": 14,
+    "FiniteCriticalTail": 8,
+    "ModularQuotient": 42,
+    "ProfiniteAncestors": 9
+  },
+  "private_declaration_count": 16,
+  "declaration_count": 138,
+  "module_count": 6,
+  "source_hashes": {
+    "escape/MinimumWindow.lean": "97e0c142a6020e948b4c368132709c4daa444185e168e05154cb5da249de7614",
+    "escape/AffineCorrection.lean": "0c930f72b4bda260886fc52e422d58edbe89df176dafb4f380bcaaf4f2716065",
+    "cycles/ContractingCalendar.lean": "c3b0afd7686f90e4d0a2c422d3243096cf6cc458760260e44a08fc5c6da640a2",
+    "FiniteCriticalTail.lean": "0f4f74d0c764d5402683242e63b99a344b674d5cdcd92fd1768ef5d6418f34bb",
+    "cycles/ModularQuotient.lean": "7685e2492c7d7c27bb5e85656b3e7094cb9fc70e5a1cc3ddc94bb2ef8803b095",
+    "machinery/ProfiniteAncestors.lean": "96b399b5731ce09e95deb15b9ea2d2e72d83b9745ae6b75862424bdb71656be6"
+  },
+  "finished_utc": "2026-11-28T00:19:59.958941+00:00"
+}

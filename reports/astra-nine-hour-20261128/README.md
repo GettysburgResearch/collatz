@@ -23,3 +23,11 @@ The first theorem-bearing publication includes the
 [initial Lean replay status](CHECKPOINT_01_LEAN_STATUS.md).
 Publication records name exact scientific and published commits and
 distinguish a passing complete replay from a development attempt.
+
+The second publication includes the [expanded written review](CHECKPOINT_02_REVIEW.md),
+[complete ten-module Lean replay](CHECKPOINT_02_LEAN.json), and
+[paired new finite controls](CHECKPOINT_02_CONTROLS.json). The separate
+[six-module frozen replay](CORE_06_LEAN.json) resolves the initial core
+build before the larger snapshot. The first published commit's exact
+[integrity receipt](CHECKPOINT_01_PUBLISHED_INTEGRITY.json) and
+[publication record](CHECKPOINT_01_PUBLICATION.json) are retained here.

@@ -1,0 +1,71 @@
+{
+  "scope": "bounded controls in normal and optimized Python; no infinite theorem verification",
+  "started_utc": "2026-11-28T00:26:12.241171+00:00",
+  "passed": true,
+  "programs": [
+    {
+      "source": "research/astra-nine-hour-20261128/check_native_size_recursion.py",
+      "sha256": "5ff3dd21c566de09d8d26e226dffc1eea4fb7a73282cec0a6eee5b9525a7e50a",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.559,
+          "stdout": "{\n  \"complete_joint_recursions\": 4257,\n  \"finite_binomial_comparisons\": [\n    {\n      \"count_binomial_tv_decimal\": 0.289333344,\n      \"count_binomial_tv_exact\": \"75847/262144\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 19,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.566739782,\n      \"count_binomial_tv_exact\": \"38946061271/68719476736\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 38,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.555852771,\n      \"count_binomial_tv_exact\": \"156458645809353/281474976710656\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 48,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.207796216,\n      \"count_binomial_tv_exact\": \"1743121/8388608\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 24,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.448256142,\n      \"count_binomial_tv_exact\": \"126172887156289/281474976710656\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 48,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.423825644,\n      \"count_binomial_tv_exact\": \"488637699350760739/1152921504606846976\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 60,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.139408931,\n      \"count_binomial_tv_exact\": \"9355575/67108864\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 28,\n      \"source_cutoff\": 4096\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.395180249,\n      \"count_binomial_tv_exact\": \"28475737945421125/72057594037927936\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 57,\n      \"source_cutoff\": 4096\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.341557525,\n      \"count_binomial_tv_exact\": \"806479904457201423675/2361183241434822606848\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 72,\n      \"source_cutoff\": 4096\n    }\n  ],\n  \"literal_affine_source_time_pairs\": 13056,\n  \"nonempty_odd_rows\": 4224,\n  \"schema\": \"collatz-native-recursion-controls/v1\",\n  \"scope\": \"bounded exact identities; no asymptotic or convergence inference\",\n  \"time_zero_count_trit_norm\": \"0\",\n  \"time_zero_joint_trit_norm\": \"4/3\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.585,
+          "stdout": "{\n  \"complete_joint_recursions\": 4257,\n  \"finite_binomial_comparisons\": [\n    {\n      \"count_binomial_tv_decimal\": 0.289333344,\n      \"count_binomial_tv_exact\": \"75847/262144\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 19,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.566739782,\n      \"count_binomial_tv_exact\": \"38946061271/68719476736\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 38,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.555852771,\n      \"count_binomial_tv_exact\": \"156458645809353/281474976710656\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 48,\n      \"source_cutoff\": 256\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.207796216,\n      \"count_binomial_tv_exact\": \"1743121/8388608\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 24,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.448256142,\n      \"count_binomial_tv_exact\": \"126172887156289/281474976710656\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 48,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.423825644,\n      \"count_binomial_tv_exact\": \"488637699350760739/1152921504606846976\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 60,\n      \"source_cutoff\": 1024\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.139408931,\n      \"count_binomial_tv_exact\": \"9355575/67108864\",\n      \"critical_multiplier\": 0.5,\n      \"shortcut_time\": 28,\n      \"source_cutoff\": 4096\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.395180249,\n      \"count_binomial_tv_exact\": \"28475737945421125/72057594037927936\",\n      \"critical_multiplier\": 1.0,\n      \"shortcut_time\": 57,\n      \"source_cutoff\": 4096\n    },\n    {\n      \"count_binomial_tv_decimal\": 0.341557525,\n      \"count_binomial_tv_exact\": \"806479904457201423675/2361183241434822606848\",\n      \"critical_multiplier\": 1.25,\n      \"shortcut_time\": 72,\n      \"source_cutoff\": 4096\n    }\n  ],\n  \"literal_affine_source_time_pairs\": 13056,\n  \"nonempty_odd_rows\": 4224,\n  \"schema\": \"collatz-native-recursion-controls/v1\",\n  \"scope\": \"bounded exact identities; no asymptotic or convergence inference\",\n  \"time_zero_count_trit_norm\": \"0\",\n  \"time_zero_joint_trit_norm\": \"4/3\"\n}\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/cycles/phase2/semigroup_controls.py",
+      "sha256": "6fe0c508ed6fa0570207b4a8013c0c5d94dd659c16a7735361be2ae165c2eb21",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 1.367,
+          "stdout": "All 16356 mixed words through length 13 passed colored Ap\u00e9ry and full gcd checks.\n518 nontrivial-modulus colored tests had a single hole height.\n830 coprime explicit-family types through n=202 passed exact gcd and all-phase Hamming checks.\nTrinomial norms: 41 at (n,u)=(8,5), 0 at (13,8). Signed -17 gives full cancellation 139.\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 1.261,
+          "stdout": "All 16356 mixed words through length 13 passed colored Ap\u00e9ry and full gcd checks.\n518 nontrivial-modulus colored tests had a single hole height.\n830 coprime explicit-family types through n=202 passed exact gcd and all-phase Hamming checks.\nTrinomial norms: 41 at (n,u)=(8,5), 0 at (13,8). Signed -17 gives full cancellation 139.\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    },
+    {
+      "source": "research/astra-nine-hour-20261128/machinery/phase2/check_matched_machinery.py",
+      "sha256": "03fc12dc107fbfc661b8cefe316b7abfa2b0a5b6ef66eb3096295da4625b2ce8",
+      "runs": [
+        {
+          "optimized": false,
+          "exit_code": 0,
+          "seconds": 0.305,
+          "stdout": "counted block copies=1891, negative displacements=184\nadelic products=10687, bounded-tail dates=60, closed signed windows=3399\navoiding seed letters=48, long adjacent-window tests=331776, true prescribed valuations at one finite source=75\n",
+          "stderr": ""
+        },
+        {
+          "optimized": true,
+          "exit_code": 0,
+          "seconds": 0.389,
+          "stdout": "counted block copies=1891, negative displacements=184\nadelic products=10687, bounded-tail dates=60, closed signed windows=3399\navoiding seed letters=48, long adjacent-window tests=331776, true prescribed valuations at one finite source=75\n",
+          "stderr": ""
+        }
+      ],
+      "paired_output_equal": true
+    }
+  ],
+  "finished_utc": "2026-11-28T00:26:16.710127+00:00"
+}

@@ -46,6 +46,29 @@ states otherwise. A Lean file beside a note checks only its displayed
 declarations and hypotheses; it does not formalize an external analytic
 source by association.
 
+## Second checkpoint: the physical boundary is explicit
+
+The [second claim-by-claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_02_REVIEW.md)
+records the reconstructed arguments and their source qualifications.
+
+| Result | What the new statement controls | Remaining obstruction |
+|---|---|---|
+| [Stopped native source transfer](escape/phase2/NATIVE_BINOMIAL_TRANSFER.md) | The joint actual odd count and endpoint are approximated in total variation by a stopped fair size walk followed by a true low-source trajectory, with error independent of the original size and elapsed time. It yields raw binomial total variation up to the edge of the critical window and reconstructs the known target Gaussian from signed native transport. | The true low-source residual can still follow a bad component; its contribution is retained explicitly. |
+| [Complete semigroup boundaries](cycles/phase2/SEMIGROUP_BOUNDARY.md) and [exact families](cycles/phase2/BOUNDARY_FAMILIES.md) | A whole physical calendar becomes a numerical-semigroup boundary, with colors retaining noncoprime clock factors. An infinite family at positive proportional distance from every mechanical schedule has exact denominator D/gcd(D,29). Its ordinary exclusion is connected end to end in Lean. | Arbitrary boundaries can have large conductor and complicated colors. |
+| [Short-binomial selected-root estimate](cycles/phase2/SELECTED_ROOT.md) | An elementary finite resultant bound controls the full cancellation for every coprime calendar. It covers moving positive-real-root-free polynomials and gives logarithmic cancellation O(sqrt(n)) for each fixed nonzero polynomial at an irrational limiting slope. | The universal bound may be too large for a high-conductor boundary; a moving clock binomial is a real exception without the positivity condition. |
+| [Exact source blocks and progressions](machinery/phase2/COUNTED_BLOCKS_AND_PROGRESSIONS.md) | Many genuine predecessors in one prescribed target/count/clock row begin long consecutive integer blocks. A recent quantitative progression theorem gives further short-spacing configurations in prescribed congruence classes. | These fair central rows can carry vanishing normalized mass at the original grade of an escaping source. |
+| [Matched correction and cofactor separation](machinery/phase2/MATCHED_INTERCEPT_AND_SMOOTH_PARTS.md) | Positive lower exponential growth forces a positive density of bounded absolute-correction dates. Comparable dates have a large product of prime-to-S cofactors, with exact signed-periodic exceptions for shifted states. | No theorem forces the conflicting small-cofactor dates or algebraicity of corrected height. |
+
+Additional notes identify the [moving-target clock envelopes](escape/phase2/MOVING_CLOCKS.md),
+[short-interval predecessor floors](escape/phase2/SHORT_INTERVAL_PREDECESSORS.md),
+[original-grade shell geometry](machinery/phase2/ZERO_GRADE_SHELLS.md), and
+[large successor-interpolation denominators](cycles/phase2/ORBIT_INTERPOLATION.md).
+Two carefully separated controls explain why absolute inverse floors
+survive an [altered-map escape construction](escape/phase2/REVERSED_ANCESTOR_RAY.md),
+and why the recent additive-square-free construction blocks a
+[time-word repetition argument](machinery/phase2/ADDITIVE_SQUARES_AT_POSITIVE_DRIFT.md).
+Neither is an ordinary Collatz counterexample.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -78,11 +101,14 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-At the first publication the complete packet replay is **pending**;
-the candidate sources must not be presented as a completed formal
-proof. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
-records successful individual compilations, repairs and the interrupted
-batch. Later exact receipts determine the verified scope.
+The [second complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_02_LEAN.json)
+passed **10 modules and 274 declarations, including 32 private
+declarations**, with unchanged source hashes. It includes the actual
+finite critical-tail cycle witness, the complete specified-calendar
+exclusion, and the exact native source-population recurrence. The
+analytic mixing, limit laws and infinite counting theorems remain
+written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
+preserves the first publication's pending replay and development history.
 
 Lean is 4.34.1 at compiler commit
 `5045d0056413266e57c625dcd7c365b10e377c52`; Mathlib is pinned to

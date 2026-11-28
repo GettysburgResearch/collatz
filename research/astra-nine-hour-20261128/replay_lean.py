@@ -138,6 +138,8 @@ def main() -> int:
                         help="Optional shared lock; serializes each compiler invocation")
     parser.add_argument("--timeout", type=int, default=300,
                         help="Seconds allowed for each compiler invocation")
+    parser.add_argument("--jobs", type=int, default=1,
+                        help="Lean worker count; packet modules still build sequentially")
     args = parser.parse_args()
     args.lean = args.lean.resolve()
     args.mathlib = args.mathlib.resolve()
@@ -173,12 +175,14 @@ def main() -> int:
         paths.extend(packages / p["name"] / ".lake/build/lib/lean"
                      for p in manifest["packages"])
         env = dict(os.environ, LEAN_PATH=os.pathsep.join(map(str, paths)))
-        flags = ["-j1", "-DElab.async=false", "-DwarningAsError=true", "-DautoImplicit=false",
+        require(args.jobs > 0, "Lean worker count must be positive")
+        flags = [f"-j{args.jobs}", "-DElab.async=false", "-DwarningAsError=true", "-DautoImplicit=false",
                  "-DmaxHeartbeats=4000000"]
         receipt["flags"] = flags
 
         def compile_file(source: Path, relative: str) -> dict:
             started = time.monotonic()
+            print(f"Building {source.stem}", flush=True)
             # Every packet import uses a flat module name. Set the compiler's
             # package root to this source's parent so that private declaration
             # names agree with that import, including nested pinned sources.
