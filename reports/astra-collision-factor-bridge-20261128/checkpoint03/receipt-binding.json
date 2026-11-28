@@ -1,0 +1,15 @@
+{
+  "schema": "collatz-checkpoint-receipt-binding/v1",
+  "success": true,
+  "checked_utc": "2026-11-28T10:23:12.321224+00:00",
+  "additional_audited_roots": 18,
+  "total_pass_audited_roots": 42,
+  "inverse_climb_source_sha256": "2dc403b13ca6830593b2fdbd861d7cd8fa27b1a617fb853c8497fb8150715ed4",
+  "inverse_climb_runner_sha256": "cb60f50982a2a7f78104723476e06526bdcc6a3b185e13223b26aeb809b1fc87",
+  "single_edge_source_sha256": "4c9aabf3b20510f277c11d6ebd903f5053b076ed20a04e5f9b46962681b13d79",
+  "single_edge_runner_sha256": "7eb9a670170ccd9abb5e3f3da5d455693b15a5f9ab369fdf7176151e99126b7e",
+  "all_completed_logs_bound": true,
+  "semiprime_certificates": 7,
+  "independently_replayed_edges": 214,
+  "scope": "Source/runner/log and inventory binding, not a second compilation or certification of external analytic inputs."
+}

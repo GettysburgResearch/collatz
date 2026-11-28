@@ -1,0 +1,28 @@
+{
+  "schema": "collatz-collision-priority-check/v1",
+  "checked_utc": "2026-11-28T10:14:56.175955+00:00",
+  "sources": [
+    {
+      "paper": 212,
+      "version": 1,
+      "url": "https://rstation.ai/api/v1/papers/collatz_212/versions/1/download",
+      "sha256": "9e965f57bdccde8ce76c225ee6cdd429db0b32b3031ab9fa51cdee7446503048",
+      "bytes": 18762
+    },
+    {
+      "paper": 225,
+      "version": 1,
+      "url": "https://rstation.ai/api/v1/papers/collatz_225/versions/1/download",
+      "sha256": "c787057d087f342c006ec0dafa13de5e8b2f10e0176d8fafe0fca48276a45225",
+      "bytes": 14180
+    },
+    {
+      "paper": 227,
+      "version": 1,
+      "url": "https://rstation.ai/api/v1/papers/collatz_227/versions/1/download",
+      "sha256": "3b070f0d060382d009fe0f06d05ad2278cf0898073d27941457a7bc813b24238",
+      "bytes": 14757
+    }
+  ],
+  "scope": "Original versioned Markdown retrieved and compared; source pins are not a new proof validation. The reconstructed dyadic zero-one argument is explicitly credited as prior Paper212."
+}

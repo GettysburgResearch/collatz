@@ -16,6 +16,8 @@ The arithmetic step combines the unconditional Matomäki–Teräväinen short-in
 
 The factors of every member of this sufficient family are already findable in polynomial time by trial division. The outstanding task is a dynamical convergence or descent theorem on the family. Factor recovery itself does not discharge it.
 
+The [certifying representative theorem](SEMIPRIME_REPRESENTATIVES.md) makes the reduction concrete: every positive source has an actual finite merger with a semiprime in a fully integer-testable subfamily. A terminating dovetail supplies both ordinary paths, with no proved uniform runtime bound. Seven finite certificates have been independently replayed edge by edge. Sparse sufficient sets themselves are prior work; the specified semiprime family and its unconditional analytic supply are the content here.
+
 ## The collision endpoint and its exact open estimate
 
 [The collision threshold](COLLISION_THRESHOLD.md) proves the full countable-series
@@ -24,12 +26,14 @@ Eight freshly checked Lean roots give the exact maximal-mass equivalence and
 its quantitative approximation. This formalizes the endpoint reduction; it
 does not prove the missing lower bound.
 
-The new [boundary zero-one theorem](collision/DYADIC_BOUNDARY_ZERO_ONE.md)
+The reconstructed [boundary zero-one criterion](collision/DYADIC_BOUNDARY_ZERO_ONE.md)
 gives a different sufficient condition: the reciprocal sum of the exact
 asynchronous component boundary is finite if and only if Collatz holds,
 using the positive-predecessor input. It uses both exact branches and avoids
-the Gaussian law. An [explicit construction](collision/SHARP_HALVING_BOUNDARY.md)
+the Gaussian law. Its dyadic stabilization and irrational-dilation proof are already in Lean Assurance Lab, Paper 212 (November 23); this packet gives an equivalent harmonic-boundary formulation and does not claim a new zero-one theorem. An [explicit construction](collision/SHARP_HALVING_BOUNDARY.md)
 shows why exact halving and an \(O(X/\log X)\) boundary count alone cannot close it.
+
+The [single-edge calibration](collision/ONE_EDGE_COLLISION_SPLIT.md) changes only the odd transition at 5. Even a one-unit change preserves the complete limiting Brownian descent, its independence from the new minimum and a bounded minimum-clock error, while strictly lowering the median collision constant. Fifteen new audited Lean roots verify the finite actual-map interface. The limiting comparison is a separate source-qualified written proof. This isolates the exact arithmetic input that a successful one-eighth argument must use.
 
 ## What the factoring work supplies, and what its import needs
 
@@ -53,8 +57,7 @@ shows that a doubly stochastic sampler certified by actual Collatz paths of
 length at most \(L\), staying above \(M\), has Poincaré gap at most
 \(C(\eta+L^2/M)\), where \(\eta\) is the remaining transition weight.
 Long-range endpoints alone do not create the required expansion. The same note
-rules out global inverse supersolutions comparable to a sublinear power by
-an explicit positive-integer all-one chain.
+rules out global inverse supersolutions comparable to a sublinear power, any eventually increasing positive sublinear supersolution, and any finite nonnegative supersolution tending to infinity at all ordinary units. Balanced certificates have the stronger gap bound C(eta + L^2/M^2).
 
 A separate [finite-residue spectral theorem](factoring/FINITE_AFFINE_GAP.md)
 tracks the exponent, denominator and translation budgets of native affine
@@ -62,6 +65,14 @@ charts. It gives an explicit vanishing-gap regime even after granting extra
 sign operations. The factoring sources' pointwise quaternionic estimate,
 ordered-product algorithms and analytic integer-zero method still need a
 representation of the full ordered Collatz carry together with its real window.
+
+## The moving-target escape problem
+
+The [escape-density identity](arithmetic/DENSITY_ESCAPE_PROFILE.md) identifies the exact limiting defect of predecessor-density decay: it is the largest escaping component density. The qualitative equivalence with absence of escape is prior work and is credited. A fixed-positive-density doubling-gain estimate would exclude escape, but remains unproved.
+
+The [ordinary harmonic atom](arithmetic/HARMONIC_BOUNDARY_ATOM.md) shows why positivity, exact integer inverse harmonicity and linear spikes alone cannot prove that estimate. It is constructed on the unchanged Collatz graph from integers already known to converge. The actual canonical selection excludes this added atom; Haar integral norms alone cannot detect it.
+
+The [predecessor dependency audit](PREDECESSOR_DEPENDENCY_AUDIT.md) pins and checks the original archives and all assembled source hashes. A compatibility probe did not reach the announced theorem roots; it is explicitly not a fresh verification of that external theorem.
 
 ## Work in progress
 
@@ -76,6 +87,8 @@ The separate PR #216, at `1917b07ae5cc8f5d27c79f34cc43a4bcf25efff8`, already sup
 | Checkpoint | Scientific content | Evidence |
 |---|---|---|
 | 1 | Uniform sparse semiprime transfer and the resulting sufficient-family theorem | Original input clauses read; independent reconstruction of the weighted failure bound and all quantifiers; complete repository integrity gate before publication |
-| 2 | Full collision-series endpoint, summable-boundary equivalence and sharp halving control; cross-repository factoring audit and actual multiplier obstruction; high-state spectral and inverse-envelope obstructions | 24 new Lean roots across four modules, each freshly compiled and separately audited; exact binary controls through 262,144 in normal and optimized Python; three independent written semiprime audits |
+| 2 | Full collision-series endpoint, reconstruction of the prior summable-boundary equivalence and sharp halving control; cross-repository factoring audit and actual multiplier obstruction; high-state spectral and inverse-envelope obstructions | 24 new Lean roots across four modules, each freshly compiled and separately audited; exact binary controls through 262,144 in normal and optimized Python; three independent written semiprime audits |
+
+| 3 | Certifying semiprime representatives; single-edge collision split; exact escape-density defect and ordinary harmonic atom; stronger envelope obstructions; priority corrections | 18 additional freshly audited roots (42 total in this pass), independent written reviews and 214 independently replayed certificate edges; original predecessor source intake and explicit incomplete-rebuild status |
 
 [Intake pins](INTAKE_PINS.json) record source versions and the exact starting heads. The [checkpoint 1 review](../../reports/astra-collision-factor-bridge-20261128/checkpoint01/REVIEW.md) states the review boundary. Repository integrity and finite Lean kernels do not certify imported analytic inputs or a full Collatz proof.

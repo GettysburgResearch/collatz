@@ -1,9 +1,11 @@
 # A summable component boundary would give the full collision endpoint
 
-**PROPOSED written theorem and a sharply identified open estimate.** The map is the genuine shortcut
+**PRIOR THEOREM, independently reconstructed in a harmonic-boundary formulation; the closing estimate remains OPEN.** The map is the genuine shortcut
 \(T(2n)=n,\ T(2n+1)=3n+2\) on positive ordinary integers. A basin label means a function
 \(f:\mathbb N_{>0}\to\{0,1\}\) satisfying \(f(Tn)=f(n)\) at **every** positive integer.
 Thus it labels entire asynchronous components, rather than the synchronous phases within a component.
+
+**Priority correction from the current literature check.** Lean Assurance Lab's [Paper 212, version 1, November 23, 2026](https://rstation.ai/problems/collatz/papers/212/v1), section *Density from dyadic siblings*, already proves the summable-sibling zero-one theorem, using the same binary interpolation limit and invariance under dilations by two and three. It also gives the positive-predecessor upgrade and permits finitely many exceptional edges. The argument below was reconstructed independently before that source was located; it is not claimed as a new zero-one theorem. Full adjacent harmonic energy and summable dyadic sibling variation are equivalent under exact halving, by the finite boundary-creation identity and its geometric shell sum. The distinct work in this lane is the [sharp halving-only counterlabel](SHARP_HALVING_BOUNDARY.md), the explicit [one-edge collision calibration](ONE_EDGE_COLLISION_SPLIT.md), and their separately scoped finite kernels.
 
 Write
 \[

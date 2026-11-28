@@ -1,0 +1,165 @@
+{
+  "schema": "collatz-selected-source-manifest/v1",
+  "recorded_utc": "2026-11-28T10:23:12.321877+00:00",
+  "checkpoint": 3,
+  "previous_public_head": "85b48ef9de755fe016166592cb048167c83fb7e8",
+  "files": [
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean-logs/Audit.lean",
+      "sha256": "d4c051fa09d2884a7c8eecd3480fe1c82325bd3094373d1796f91724256e9242"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean-logs/Audit.stdout.log",
+      "sha256": "5ef629603b8331a403277b016d577422fad67b429c0bce9d0921d17e3761f3f6"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean-logs/InverseClimb.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean-logs/InverseClimb.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/inverse-climb-lean.json",
+      "sha256": "a96b4b0a4b29d1b4a80ef440507a0c71cdf3875d332afa0635bc3fa972026dbc"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/arithmetic/one-edge-split-independent-review.json",
+      "sha256": "b602a8ee4e2813802ec6eedf1ce64756b6434d5e50a3c34538d6b73c34707c8d"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint02/repository-validation.json",
+      "sha256": "c16a33e57d8f97ee3941bd76da4481cf1915fba969aec8c3e08704f0c0417ca7"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint02/repository-validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint02/repository-validation.stdout.log",
+      "sha256": "ca705775c342ff4a2d9e021a553b5441e001cfe7863480e547263f5c988cd8e2"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint03/REVIEW.md",
+      "sha256": "da6ba00620846ff202c826bb2d097ab72c2421fc5980070d43608d14221e3cf7"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/checkpoint03/receipt-binding.json",
+      "sha256": "f16d49e3efb82f67610c80fbe3ed3c29049b85727a5a4f20a2ff1149deed89dc"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/DENSITY_ESCAPE_INDEPENDENT_REVIEW.md",
+      "sha256": "d60789ca5095948904040db5e05b1e5c16e3673888f97fc13a37838d1d6e5d48"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/HARMONIC_ATOM_INDEPENDENT_REVIEW.md",
+      "sha256": "2cd2b2c248d8f6ede74ced98acd4f37868f7cbaa249aa92ef2db8d14b8a4064c"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/SEMIPRIME_REPRESENTATIVES_INDEPENDENT_REVIEW.md",
+      "sha256": "840bce753f92609cd058e4053228f9ef957679a35cc2748639a6af347b3f1dc4"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/recent-priority-source-pins.json",
+      "sha256": "0a368a10efffc720cbd704d3a7de09949834128bdac1fec12e76263c3f830cc7"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/semiprime-representatives-independent-replay.json",
+      "sha256": "4ca44d265f0420c3f42c1434855e9596ce94510eb231c0086bc8e4854dfc5925"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean-logs/Audit.lean",
+      "sha256": "b37a66328a5087c0242bb01a22989bdfa490bd442b19ad34fb7b0b7a6ad6d8f9"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean-logs/Audit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean-logs/Audit.stdout.log",
+      "sha256": "02e010f2aa71e3f57f89df7d389a3c10d4a05675ccddcfbfff54d63a273818cb"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean-logs/SingleEdgeSplit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean-logs/SingleEdgeSplit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/collision/single-edge-lean.json",
+      "sha256": "a0d5256e6081ca647db37d356cf404dce9f2498cc458134da34a6c0df580c203"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/external/predecessor-assembled-inputs.json",
+      "sha256": "d8b31dbef901133b1fcbbf02288b78fa0bd0d9e07c12369b84e05e03054e6a9d"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/external/predecessor-source-intake.json",
+      "sha256": "08d788292557e31a4b50f67e4fc5d546f247143114ece6b38e6659e89b13eb7e"
+    },
+    {
+      "path": "reports/astra-collision-factor-bridge-20261128/semiprime-representatives.json",
+      "sha256": "2402c22eaa5d751b82d6c2a119b4dacf73241121c583d0d750fcdd6e86095fe1"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/PREDECESSOR_DEPENDENCY_AUDIT.md",
+      "sha256": "a19632034f507901bb8bd72edabca3039cd75ab75156be471fa7942f5ebea700"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/README.md",
+      "sha256": "be8cd445b40f1c2f06330273de10689db37aecee505c9e218074013c52c523a1"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/SEMIPRIME_REPRESENTATIVES.md",
+      "sha256": "80b5ffa59a65edf5f5084ad30effa4b8c3778f6a9e8f51a36d2e83229ab2cd20"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/DENSITY_ESCAPE_PROFILE.md",
+      "sha256": "3ae46fb58e43a81e4fbbbe7df74b16ec5cdee8f868ffbb3b094f9e875beacbe5"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/HARMONIC_BOUNDARY_ATOM.md",
+      "sha256": "687e05d0334886047c1d58dfde3cd918ba459a3e376087e07f56f0c90879be28"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/HIGH_STATE_AND_PROFILE_OBSTRUCTIONS.md",
+      "sha256": "693b6f77272b2e7e0d555ce21b635f7696ca0b45b204cd5760c690cf7a6b1f60"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/InverseClimb.lean",
+      "sha256": "2dc403b13ca6830593b2fdbd861d7cd8fa27b1a617fb853c8497fb8150715ed4"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/check_inverse_climb.py",
+      "sha256": "cb60f50982a2a7f78104723476e06526bdcc6a3b185e13223b26aeb809b1fc87"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/DYADIC_BOUNDARY_ZERO_ONE.md",
+      "sha256": "92fee9aff8279edf157c541cb4d84882a9dd864566d294bb8e9a1fadbce72bd4"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/ONE_EDGE_COLLISION_SPLIT.md",
+      "sha256": "09a7a73c2f1fd04d29bafe33cb8a1a3965d32de5580c0304b3f44efcebf786fc"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/SingleEdgeSplit.lean",
+      "sha256": "4c9aabf3b20510f277c11d6ebd903f5053b076ed20a04e5f9b46962681b13d79"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/check_single_edge.py",
+      "sha256": "7eb9a670170ccd9abb5e3f3da5d455693b15a5f9ab369fdf7176151e99126b7e"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/semiprime_representative.py",
+      "sha256": "43e2af9c7c647ff139343e9f1c552f9e134d0870f7cc6840d8c296fc3d34dab3"
+    }
+  ],
+  "scope": "Selected files before freezing; this manifest excludes its own hash. Formal compilation status is only as stated by the separate receipts."
+}

@@ -137,6 +137,33 @@ This estimate applies even when the endpoints of a transition are a macroscopic 
 
 For example, certificates of polylogarithmic length that remain above \(X^\epsilon\) give \(\lambda\ll\eta+X^{-\epsilon}(\log X)^{O(1)}\). A uniform positive Poincaré gap then forces a positive transition weight to be uncertified, to pass below that floor, or to exceed the permitted length. The conclusion is not that an orbit-preserving expander is impossible; it says exactly which omitted trajectories would have to support its expansion.
 
+### Balanced certificates have the stronger squared-height obstruction
+
+If every certified connection has signed odd count zero and \(X\ge100\), use (3) with \(q=1\), without Dirichlet approximation. The same variance proof gives
+
+\[
+ \lambda\le\frac{16}{15}
+       \left[2\eta+\frac{2\pi^2L^2}{9M^2(\log2)^2}\right]
+       \ll\eta+\frac{L^2}{M^2}.                                \tag{5b}
+\]
+
+This applies to certificates from two forward arms with equal odd counts, including the balanced-fusion certificates used in the semiprime argument.
+
+There is also a direct synchronous version. Suppose two starts \(x,y\in(X,2X]\) meet at the same forward date, their two prefixes have total length at most \(L\), and all their states are at least \(M\). Adding their exact logarithmic branch identities gives
+
+\[
+              \log(x/y)=k\log3+\Delta,\qquad
+              k\in\mathbb Z,\quad|\Delta|\le L/(3M).
+\]
+
+If \(L/(3M)<\log(3/2)\), then \(k=0\): otherwise the right side has absolute value greater than \(\log2\), while the left side does not. Consequently
+
+\[
+                         |\log(x/y)|\le L/(3M).
+\]
+
+Thus a same-date merger of macroscopically separated starts in one octave cannot have a short certificate staying high. This is an exact path consequence, not an assumption about a typical parity word.
+
 ## 3. An explicit positive integer obstruction to power supersolutions
 
 For odd positive integers write
@@ -203,6 +230,45 @@ More generally, if only \(g(a)\ge c a^\eta\) and \(g(a)\le C a^\theta\) are prop
 
 With a constant lower floor, this requires only \(\theta\ge\log_3(3/2)\). It does **not** refute a genuinely irregular sublinear upper bound for the actual canonical trace. The elementary exponent-one word and its negative-anchor connection are prior ingredients in inverse-profile theory; the conclusion here is the precise obstruction to the proposed envelope induction. [Weaver, Paper 12, Sections 8–11 and Corollary 10](https://rstation.ai/problems/collatz/papers/12).
 
+### No eventually increasing sublinear supersolution, even near the linear scale
+
+There is a stronger obstruction when the proposed barrier is eventually nondecreasing in ordinary height. Suppose \(g\ge0\), \(Lg\le g\), and \(g\) is nondecreasing on all sufficiently large positive odd units. If \(g(n_0)>0\) at one unit beyond that onset, then \(g\) cannot be \(o(a)\).
+
+Given such an odd unit \(n\), choose the smallest integer \(a\equiv11\pmod{18}\) with
+
+\[
+                         a\ge(3n+1)/2.
+\]
+
+Then \(a\) is an odd unit, and its exponent-one parent
+
+\[
+                         x=(2a-1)/3
+\]
+
+is an odd unit congruent to 7 modulo 12. The choice gives \(x\ge n\) and
+
+\[
+                    \tfrac32n<a\le\tfrac32n+19.
+\]
+
+By monotonicity and the actual single-edge inequality (7),
+
+\[
+                         g(a)\ge\tfrac32g(x)\ge\tfrac32g(n).
+\]
+
+Iterate this selection, writing \(n_{j+1}=a(n_j)\). The elementary recurrences yield
+
+\[
+ n_j\le(3/2)^j(n_0+38),\qquad
+ g(n_j)\ge(3/2)^j g(n_0),
+\]
+
+and hence \(g(n_j)/n_j\ge g(n_0)/(n_0+38)>0\). In fact monotonicity between successive \(n_j\) gives an eventual positive linear lower bound on all odd units.
+
+This rules out an increasing supersolution of scale \(a/\log a\), as well as the smaller powers. A successful sublinear supersolution must oscillate in ordinary height; replacing it by its increasing envelope need not preserve the inverse-superharmonic inequality. The conclusion concerns a barrier satisfying \(Lg\le g\), not every possible increasing pointwise upper bound for the actual trace.
+
 ## 4. Why the ordinary trace remains a load-bearing target
 
 The source-qualified canonical trace has the form
@@ -212,6 +278,20 @@ The source-qualified canonical trace has the form
 \]
 
 at a nonperiodic odd target, where \(\beta_a\) is the natural predecessor density with its first-hit correction weight. The cited source gives absolute comparison of this weight with the unweighted predecessor density and the exact inverse harmonic equation. The resulting trace is nonnegative, has a positive floor at units, and need not be comparable to any positive power. These are imported facts, not conclusions of (6) alone. [Canonical trace and density comparison](https://rstation.ai/problems/collatz/papers/12).
+
+These inputs give a further obstruction without a monotonicity assumption: **no pointwise finite nonnegative inverse-supersolution can tend to infinity at all large odd units.** Let \(\rho_k=L^k1\), and let \(\rho_k^{\rm unit}(5)\) retain only inverse endpoints prime to three. The total one-step inverse weight at any unit is at most 2, and a nonunit has no odd predecessor. Hence
+
+\[
+                     \rho_{k+1}(5)\le2\rho_k^{\rm unit}(5).
+\]
+
+The integer 5 is nonperiodic. Each fixed positive integer can reach it at only one odd depth; therefore its depth-\(k\) unit ancestors eventually avoid every bounded height range. If \(g(a)\to\infty\) on units and \(Lg\le g\), then for every fixed \(R>0\) and all sufficiently large \(k\), nonnegative iteration gives
+
+\[
+                     g(5)\ge L^kg(5)\ge R\rho_k^{\rm unit}(5).
+\]
+
+Since \(R\) is arbitrary, \(\rho_k^{\rm unit}(5)\to0\) and then \(\rho_k(5)\to0\). This contradicts the positive canonical Cesàro trace \(H(5)>0\). Only that fixed-root positive trace is needed; no uniform convergence rate or moving-target theorem is assumed. Thus a viable barrier of this type must retain bounded values along some arbitrarily large ordinary units.
 
 If a fixed ordinary source escapes, all sufficiently late odd states \(a_j\) on its orbit are distinct and tend to infinity. Their predecessor sets contain the predecessor set of one fixed eligible state on that orbit. Positive predecessor density consequently gives
 
