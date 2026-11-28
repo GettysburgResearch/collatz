@@ -20,10 +20,9 @@ ROOT = Path(__file__).resolve().parents[2]
 PACKET = Path("research/astra-global-rigidity-20261128")
 MATHLIB_PIN = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 MODULES = [
-    ("NativeGate", "../astra-diagonal-frontier-20261127/NativeGate.lean", "Collatz.NativeGate"),
-    ("NativeTransfer", "../astra-diagonal-frontier-20261127/NativeTransfer.lean", "Collatz.NativeGate"),
-    ("NativeTightness", "../astra-diagonal-frontier-20261127/NativeTightness.lean", "Collatz.NativeGate"),
-    ("CriticalCount", "mass/CriticalCount.lean", "Collatz.NativeGate.CriticalCount"),
+    ("WidthCarry", "cycles/WidthCarry.lean", "CollatzResearch.WidthCarry"),
+    ("CriticalCountStandalone", "mass/CriticalCountStandalone.lean", "Collatz.CriticalCount"),
+    ("BasinDefects", "mass/BasinDefects.lean", "Collatz.CriticalCount"),
     ("MersenneCrests", "mersenne/MersenneCrests.lean", "Collatz.MersenneCrests"),
 ]
 
@@ -124,7 +123,7 @@ def main():
         "selection": {"mode": "subset" if args.only else "all",
                       "requested": sorted(requested), "compiled": [row[0] for row in selected_modules],
                       "not_compiled": [row[0] for row in MODULES if row[0] not in required]},
-        "mathematical_scope": "The stated finite actual-orbit centered-count and Mersenne crest theorems only. Their three frozen native dependency modules are freshly recompiled as well. No analytic Gaussian law, component-density theorem, prime-distribution theorem, general cycle exclusion or Collatz conclusion is formalized here.",
+        "mathematical_scope": "The stated finite carry identities, actual-orbit centered counts, literal basin defects, and Mersenne crest theorems only. No analytic Gaussian law, component-density theorem, prime-distribution theorem, global no-gap theorem, general cycle exclusion or Collatz conclusion is formalized here.",
         "modules": [],
     }
     started = time.monotonic()

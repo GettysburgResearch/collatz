@@ -1,0 +1,52 @@
+[
+  {
+    "reference": 27,
+    "K": 41,
+    "reference_clock": 70,
+    "extra_odd_run": 9,
+    "input_prime_exponent": 685977866821782195406220287,
+    "prime_digits": 27,
+    "primality_base": 2,
+    "J": 11,
+    "odd_cost": 50,
+    "shortcut_cost": 79,
+    "residual_u_mod_3_to_m": 6071,
+    "minimum_proved": true,
+    "all_minimizers": [
+      27
+    ],
+    "checked_reference_cutoff": 32
+  },
+  {
+    "reference": 156159,
+    "K": 141,
+    "reference_clock": 241,
+    "extra_odd_run": 30,
+    "input_prime_exponent": 1922907455821840273706387443029921972856266266204523817399735911449945003753984238362623,
+    "prime_digits": 88,
+    "primality_base": 2,
+    "J": 15,
+    "odd_cost": 171,
+    "shortcut_cost": 271,
+    "residual_u_mod_3_to_m": 116961110278555,
+    "minimum_proved": true,
+    "all_minimizers": [
+      156159
+    ],
+    "checked_reference_cutoff": 187988
+  },
+  {
+    "reference": 63728127,
+    "K": 357,
+    "reference_clock": 592,
+    "extra_odd_run": 45,
+    "input_prime_exponent": 950649762832521245991274269012877607271393242840065713661870504861713332692786041213186545645781109525513906800949598604639001044203344167963209142688281231718501822893631113872614952258588182937599,
+    "prime_digits": 198,
+    "primality_base": 2,
+    "J": 17,
+    "odd_cost": 402,
+    "shortcut_cost": 637,
+    "residual_u_mod_3_to_m": 2318843034866698951793,
+    "minimum_proved": false
+  }
+]

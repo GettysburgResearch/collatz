@@ -1,0 +1,69 @@
+{
+  "counts": {
+    "all_visits": 8934,
+    "even_lower": 3306,
+    "negative_postcrest_surplus": 41,
+    "nonmaximal_upper_ramp": 4883,
+    "ratio_with_nontrivial_reduced_numerator_and_denominator": 8479,
+    "upper_divisible_by_five": 2808
+  },
+  "deadline": 128,
+  "first_examples": {
+    "even_lower": {
+      "a": 61,
+      "b": 55,
+      "lower_clock": 10,
+      "n": 0,
+      "p": 1,
+      "postcrest_odds": 7,
+      "upper": 121,
+      "upper_clock": 0,
+      "x": 54
+    },
+    "negative_postcrest_surplus": {
+      "a": 61,
+      "b": 1,
+      "lower_clock": 8,
+      "n": 6,
+      "p": 1,
+      "postcrest_odds": 0,
+      "upper": 121,
+      "upper_clock": 1,
+      "x": 63
+    },
+    "nonmaximal_upper_ramp": {
+      "a": 16,
+      "b": 7,
+      "lower_clock": 3,
+      "n": 2,
+      "p": 1,
+      "postcrest_odds": 0,
+      "upper": 31,
+      "upper_clock": 0,
+      "x": 27
+    },
+    "ratio_with_nontrivial_reduced_numerator_and_denominator": {
+      "a": 7,
+      "b": 5,
+      "lower_clock": 6,
+      "n": 1,
+      "p": 1,
+      "postcrest_odds": 3,
+      "upper": 13,
+      "upper_clock": 0,
+      "x": 9
+    },
+    "upper_divisible_by_five": {
+      "a": 160,
+      "b": 7,
+      "lower_clock": 33,
+      "n": 2,
+      "p": 1,
+      "postcrest_odds": 21,
+      "upper": 319,
+      "upper_clock": 0,
+      "x": 27
+    }
+  },
+  "limit": 1024
+}

@@ -39,7 +39,8 @@ private theorem run_succ_left (z : State) (h : Nat) :
 private theorem next_ramp (a q : Nat) (ha : 0 < a) :
     next (2*a-1,q) = (3*a-1,q+1) := by
   have odd : (2*a-1)%2 = 1 := by omega
-  simp [next, odd] <;> omega
+  simp [next, odd]
+  omega
 
 theorem initial_ramp (r q a : Nat) (ha : 0 < a) :
     run (2^r*a-1,q) r = (3^r*a-1,q+r) := by
@@ -51,7 +52,8 @@ theorem initial_ramp (r q a : Nat) (ha : 0 < a) :
       next_ramp _ _ (Nat.mul_pos (Nat.pow_pos (by decide)) ha),
       show 3*(2^r*a)=2^r*(3*a) by ac_rfl, ih (q+1) (3*a) (by omega),
       show 3^r*(3*a)=3^(r+1)*a by rw [Nat.pow_succ]; ac_rfl]
-    congr 1 <;> omega
+    congr 1
+    omega
 
 theorem original_to_crest (r : Nat) :
     run (2^r-1,0) r = crest r := by

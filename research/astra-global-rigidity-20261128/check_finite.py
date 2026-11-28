@@ -9,7 +9,13 @@ import subprocess
 import sys
 
 PACKET = Path(__file__).resolve().parent
-CHECKERS = ["cycles/check_height_entropy.py", "cycles/check_width_entropy.py", "mersenne/check_mersenne.py"]
+CHECKERS = [
+    "cycles/check_height_entropy.py", "cycles/check_width_entropy.py",
+    "cycles/check_four_copy_width.py", "cycles/check_mesoscopic_complexity.py",
+    "mass/check_critical_native.py", "mersenne/check_mersenne.py",
+    "mersenne/check_direct_ancestors.py", "mersenne/check_ascent.py",
+    "mersenne/check_prime_midpoint.py",
+]
 
 
 def main():
@@ -18,7 +24,7 @@ def main():
     args = parser.parse_args()
     receipt = {"schema": "collatz-global-finite/v1", "success": False,
                "started_utc": datetime.now(timezone.utc).isoformat(),
-               "scope": "Bounded exact controls only; no infinite theorem or Collatz proof.",
+               "scope": "Bounded controls only, including labeled empirical floating diagnostics; no infinite theorem or Collatz proof.",
                "python": sys.version, "checkers": []}
     for relative in CHECKERS:
         path = PACKET / relative
