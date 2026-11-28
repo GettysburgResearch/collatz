@@ -1,0 +1,55 @@
+{
+  "scope": "Checkpoint 3 finite exact identity controls and source hashes; no complete analytic or Collatz verification",
+  "replays": [
+    {
+      "script": "research/astra-global-pursuit-20261128/dynamics/check_mixed_families.py",
+      "source_sha256": "2c6cdffab2e76eb135a2851fb9148cdef6ea020acaad7d396363988cb6a04404",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "outputs_byte_identical": true,
+      "stdout_sha256": "05c32fadf70fbb1c7df9a35e3bcad1976bd10786988a6edefccbf6aab459bb0c",
+      "stdout": "{\n  \"individual_binomial_laws\": 72,\n  \"ordinary_mixed_interval_lifts\": 137592,\n  \"signed_centered_updates\": 4590,\n  \"signed_normalized_cancellations\": 1781\n}\n"
+    },
+    {
+      "script": "research/astra-global-pursuit-20261128/arithmetic/check_tripling_witness.py",
+      "source_sha256": "0b1c11e574feddbe17940f48197103a0dabda79da84bdcc0a28a0cd475e6661b",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "outputs_byte_identical": true,
+      "stdout_sha256": "e323c5097af4ca44703782b8c39224a221c62ec321e013ffeaebb443bd995901",
+      "stdout": "59048 signed ternary phases; 2050 ordinary witnesses\n{'child': 1456, 'left': 116, 'left-chain': 39, 'right': 181, 'right-chain': 258}\n"
+    },
+    {
+      "script": "research/astra-global-pursuit-20261128/wild/check_shifted_flux.py",
+      "source_sha256": "77a032cbe77bc33dd2e483ea42ef83442810abb7846d4149c3fd9b3e1aa7d0dc",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "outputs_byte_identical": true,
+      "stdout_sha256": "e729283c642babada020f0db7b882caed11ac4a097656d5f98bebe6c9ad17c0a",
+      "stdout": "{\"native_crt_means\": 18, \"nearest_representative_tail_sandwiches\": 2240}\n"
+    }
+  ],
+  "written_arguments": [
+    {
+      "source": "research/astra-global-pursuit-20261128/dynamics/MIXED_AFFINE_FAMILIES.md",
+      "source_sha256": "141eb31f904d3fdd017d95d9a3564440dd0fb5d53717f3838535257840d5dacd",
+      "review": "Coordinator read and reconstructed the argument; external inputs remain source-qualified."
+    },
+    {
+      "source": "research/astra-global-pursuit-20261128/arithmetic/LOCAL_TRIPLING_WITNESS.md",
+      "source_sha256": "108cdae4e40d9314b9a8c7a569805e1d17d262bd852abefbb5c82e229abbbc8d",
+      "review": "Coordinator read and reconstructed the argument; external inputs remain source-qualified."
+    },
+    {
+      "source": "research/astra-global-pursuit-20261128/wild/REAL_SHIFTED_HARMONIC_FLUX.md",
+      "source_sha256": "d458beb534dcf6a8cedc7d52b17140cb1b88c5a3171e93eea603cb76b8c48d74",
+      "review": "Coordinator read and reconstructed the argument; external inputs remain source-qualified."
+    },
+    {
+      "source": "research/astra-global-pursuit-20261128/dynamics/ESCAPE_GAIN_SPECTRUM.md",
+      "source_sha256": "bad63870023b54efab22c6a157afb7835750dc433cb3a41fb1414521cf6c2173",
+      "review": "Coordinator read and reconstructed the argument; external inputs remain source-qualified."
+    }
+  ],
+  "lean": "No new Lean compilation in this checkpoint. Thirteen displayed roots in the two earlier modules were locally compiled in checkpoints 1 and 2."
+}
