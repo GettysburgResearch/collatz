@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-concurrent-source-intake/v1",
+  "sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pull_request": 218,
+      "head_commit": "aea80e35b6fc23cc909252a23e1ef5c945e1ca7e",
+      "git_blob_sha": "3b91a3812f26ac0792371c5bebef8bd5b789008b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/aea80e35b6fc23cc909252a23e1ef5c945e1ca7e/research/astra-full-proof-20261128/descent/FIRST_MOMENT.md",
+      "read_scope": "Coordinator read complete primary source. Source-qualified analytic results remain external; implementations and Lean receipts from this other packet were not rebuilt or counted here."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pull_request": 220,
+      "head_commit": "330dc8f7f1f7e970ad52b2835bf151cc71e44030",
+      "git_blob_sha": "baef0f373b383f2c009a1be88a8ea2ea0112d650",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/330dc8f7f1f7e970ad52b2835bf151cc71e44030/research/semiprime-factor-clocks-20261128/README.md",
+      "read_scope": "Coordinator read complete primary source. Source-qualified analytic results remain external; implementations and Lean receipts from this other packet were not rebuilt or counted here."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "pull_request": 219,
+      "head_commit": "b1f2276c45218b0a05a6c4c0e413fec1e4e4dd46",
+      "git_blob_sha": "ff2a3f11f9e9a7a23c623df4ab79a0eec9b6a638",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b1f2276c45218b0a05a6c4c0e413fec1e4e4dd46/research/astra-wild-nine-hour-20261128/outside/NATIVE_AFFINE_RECTANGLES.md",
+      "read_scope": "Coordinator read complete primary source. Source-qualified analytic results remain external; implementations and Lean receipts from this other packet were not rebuilt or counted here."
+    }
+  ],
+  "scope": "Immutable source intake for RECENT_CONCURRENT_INTERFACES.md. No full-convergence claim."
+}

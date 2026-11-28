@@ -1,0 +1,31 @@
+{
+  "schema": "collatz-checkpoint-receipt-binding/v1",
+  "success": true,
+  "recorded_utc": "2026-11-28T11:30:53.759900+00:00",
+  "additional_audited_roots": 0,
+  "total_pass_audited_roots": 70,
+  "new_written_targets": [
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/factoring/PRECRITICAL_STATIONARY_EVALUATION.md",
+      "sha256": "4e1fc963c781356a477c2a002a34446d528e5041967cfeb2ed2ddc10a7c5c4e4"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/RECENT_CONCURRENT_INTERFACES.md",
+      "sha256": "37794ca4869a8c2f936b286bd669ce03f5cbe8eb840690245a386a2a8664f4fd"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/arithmetic/STATIONARY_GRADE_ANTICORRELATION.md",
+      "sha256": "3a5e0916fd8729c236a29aedce2c4494e3f622a122cbadf01e41c3b8c1d873ec"
+    },
+    {
+      "path": "research/astra-collision-factor-bridge-20261128/collision/ACTUAL_ODD_EDGE_CONTROLLER_ATTEMPT.md",
+      "sha256": "6abd2e0aca9861c70fc0378dcba6414259b63693af4689e743629ecc77395bfd"
+    }
+  ],
+  "finite_runner_sha256": "a8c4a2c2433e07013b784988e42c928a964b780ee5e6054d0506f5459c9b235f",
+  "native_sources_checked": 100000,
+  "native_clock": 80,
+  "both_exact_native_methods_count": 12850,
+  "normal_optimized_substantive_outputs_identical": true,
+  "scope": "Current written-review and exact finite-receipt bindings. The analytic limits are not Lean certified."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "pass_at_stated_scope",
+  "reviewed_utc": "2026-11-28T11:21:23.296881+00:00",
+  "reviewer": "arithmetic_proof_attack (independent lane)",
+  "target": "research/astra-collision-factor-bridge-20261128/factoring/STATIONARY_COLLISION_CONSUMER.md",
+  "target_sha256": "18b3dfb9ac9a0989888a486b4f629b5f75b210f9cd631612bbcdd33688a2a298",
+  "independently_reconstructed": [
+    "The shifted source intervals differ by at most min(floor(r),X) sources, so their full pushforward laws differ by at most that quantity/X uniformly over all grade/endpoint events.",
+    "The stationary seed cancels modulo the full grade conductor and shifts the ordinary source interval exactly. This uses a nonnegative real seed, a ternary integer seed, and the same future affine word in both coordinates.",
+    "Endpoint collision energies differ by at most twice the full-law TV distance by two independent couplings; no sum over target labels or grades is incurred.",
+    "The reciprocal grade weights cancel each biased word probability exactly. For fair bits these weights are the constant 2^h, yielding the stated two-copy factor4^h/X^2.",
+    "The CRT compatibility and half-open interval intersection formula cover zero grade, nonintegral real endpoints, and length exactly one residue period.",
+    "For X<=2^h the one-copy and two-copy selectors are indicators; their normalizations are exact. In particular the one-copy selector probability is X/2^h.",
+    "The final relative small-cell lower bound remains an explicit missing estimate. Stationary endpoint marginals and unconditional binomial grade do not supply the required same-path conditional law."
+  ],
+  "analytic_dependency": "The elementary stationary affine construction and fractional-moment bound are proved in CONDUCTOR_AND_STATIONARY_TRANSFER.md; external Collatz collision upper bound and full-convergence equivalence remain separately named inputs.",
+  "formal_scope": "Only the linked finite integer-window kernel is Lean-certified. Probability coupling, infinite stationary construction, and relative small-cell reduction are written proofs.",
+  "follow_on": "CRITICAL_GRADE_TAIL.md derives a one-copy cumulative-grade consumer; STATIONARY_GRADE_ANTICORRELATION.md rejects all-scale positive association without contradicting the open asymptotic consumer."
+}
