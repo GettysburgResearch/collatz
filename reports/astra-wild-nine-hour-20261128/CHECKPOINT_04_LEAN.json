@@ -1,0 +1,207 @@
+{
+  "scope": "Finite kernels only; cached third-party objects reused",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-ac222j8h/AffineBranchPadding.olean",
+        "AffineBranchPadding.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.AffineBranchPadding.grade_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.numerator_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.suffix_preserves_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source": "arithmetic/AffineBranchPadding.lean",
+      "source_sha256": "860f00d21df7d4da36a0c929574ca30d836ce29a5c624726bbdefa39556f72b7"
+    },
+    {
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-ac222j8h/OrdinaryPhaseBound.olean",
+        "OrdinaryPhaseBound.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.OrdinaryPhase.ordinaryPhaseBound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source": "dynamics/OrdinaryPhaseBound.lean",
+      "source_sha256": "304416525dacbb8be10e3bd501eda8749ab6da5d1b6205292dc2fd9f1e54930c"
+    },
+    {
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-ac222j8h/SourceEnvelope.olean",
+        "SourceEnvelope.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.OrdinaryPhase.sourceEnvelope' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source": "dynamics/SourceEnvelope.lean",
+      "source_sha256": "faca51caa4026a8d35d6b8becf1d03b0a4ed21d070a1d1567ebaa414a7815162"
+    },
+    {
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-ac222j8h/MersenneCarry.olean",
+        "MersenneCarry.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "source": "dynamics/MersenneCarry.lean",
+      "source_sha256": "f0ed05a104d29b2250c7b2bf743cac3d3155195c9b4639436df8663ccbd670a3"
+    },
+    {
+      "command": [
+        "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DElab.async=false",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-ac222j8h/CommonPrimeAlignment.olean",
+        "CommonPrimeAlignment.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "source": "outside/CommonPrimeAlignment.lean",
+      "source_sha256": "b39e3fa664a23d11b55dff728255281e9347d72f4021ca15ddbaf6838ab76ee3"
+    }
+  ],
+  "audit_roots": [
+    {
+      "declaration": "Collatz.AffineBranchPadding.grade_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.AffineBranchPadding.numerator_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.AffineBranchPadding.suffix_preserves_residue",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.oneStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.ordinaryPhaseBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.stepNumerator",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.sourceEnvelope",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.MersenneAnchor.Carries.length",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.MersenneAnchor.Carries.ancestor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.MersenneAnchor.doubled_lower_mass",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.MersenneAnchor.anchored_cone",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "AstraWild.CommonPrimeAlignment.centerDefectDvd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "AstraWild.CommonPrimeAlignment.centerAlignment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "mathlib_lake_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "audit": {
+    "command": [
+      "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+      "-j1",
+      "-DElab.async=false",
+      "-DwarningAsError=true",
+      "-DautoImplicit=false",
+      "Audit.lean"
+    ],
+    "exit_code": 0,
+    "stdout": "'Collatz.AffineBranchPadding.grade_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.numerator_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.suffix_preserves_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OrdinaryPhase.oneStep' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OrdinaryPhase.ordinaryPhaseBound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OrdinaryPhase.stepNumerator' depends on axioms: [propext, Quot.sound]\n'Collatz.OrdinaryPhase.sourceEnvelope' depends on axioms: [propext, Quot.sound]\n'Collatz.MersenneAnchor.Carries.length' depends on axioms: [propext, Quot.sound]\n'Collatz.MersenneAnchor.Carries.ancestor' depends on axioms: [propext, Quot.sound]\n'Collatz.MersenneAnchor.doubled_lower_mass' depends on axioms: [propext, Quot.sound]\n'Collatz.MersenneAnchor.anchored_cone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AstraWild.CommonPrimeAlignment.centerDefectDvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AstraWild.CommonPrimeAlignment.centerAlignment' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": ""
+  }
+}

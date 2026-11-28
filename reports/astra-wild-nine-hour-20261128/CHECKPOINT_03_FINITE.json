@@ -1,0 +1,35 @@
+{
+  "scope": "Exact finite controls, not proofs of infinite claims",
+  "runs": [
+    {
+      "source": "research/astra-wild-nine-hour-20261128/arithmetic/check_sparse_inverse_reunion.py",
+      "source_sha256": "f7d8cf615ccc52a6da40d06ba0e58724dc2bbcdc410587cd861181c55f7345cd",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "stdout_sha256": "baec294d84abc6f60fc7cd4b058851b5bbc3fd37c5bbfd1dbd517b1b9f5800bc",
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout": "{\n  \"distinct_clock_depth_pairs\": 37,\n  \"equal_clock_sparse_bounds\": 24485,\n  \"inverse_words\": 256,\n  \"legal_reunions_detected\": 683,\n  \"legal_same_endpoint_pairs\": 24485,\n  \"root_representatives_tested\": 432432,\n  \"unequal_clock_congruences\": 1296\n}\n"
+    },
+    {
+      "source": "research/astra-wild-nine-hour-20261128/dynamics/check_boundary_amplitude.py",
+      "source_sha256": "23a47dad3aacfcc399d3805c92355ec6a4a6c4e651e06ff79b566cd3830300a3",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "stdout_sha256": "00f35cab9dc19b865971f4d6a13efd2e3d40fb20c41668d394a94c1c8663fdbd",
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout": "PASS 167 odd units, five rank tests per unit, four rational exclusions, sixty explicit rank-point approaches\n"
+    },
+    {
+      "source": "research/astra-wild-nine-hour-20261128/outside/check_integer_shadows.py",
+      "source_sha256": "d0ecc60fa4aed9c44dff080ae0f194acf3d74a3f4fe3c9e1524478a4f17def3c",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "stdout_sha256": "f6f2151ec10a0eaa8109178208cd31d2e1ef8fcb56ee676b8e1e4f893be3b380",
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout": "Rounded transports and nontransports: 206 7922\nFull modular subset-sum checks: 81\nSimultaneously shadowed dates: 296 through shortcut tick 9832\n"
+    }
+  ]
+}

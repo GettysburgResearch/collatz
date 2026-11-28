@@ -1,0 +1,35 @@
+{
+  "scope": "Bounded exact controls only; no ineffective asymptotic constants verified",
+  "runs": [
+    {
+      "source": "research/astra-wild-nine-hour-20261128/arithmetic/check_tilted_inverse_information.py",
+      "source_sha256": "fb8211f7ecce93539ed7efacfdddef1775d90358815d012b6694ba58c3ecfb4a",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "79ef2d149b41375df382aaac1db63efae2e3fed73356d71aff84812851dff77a",
+      "stdout": "{\n  \"exact_infinite_gap_moments\": 30,\n  \"integer_rank_moment_bounds\": 3210,\n  \"posterior_tilt_comparisons\": 1364,\n  \"prefix_disintegrations\": 7736,\n  \"terminal_unit_comparisons\": 726\n}\n"
+    },
+    {
+      "source": "research/astra-wild-nine-hour-20261128/dynamics/check_mersenne_anchor.py",
+      "source_sha256": "699dc34edd7dc6a0d4c14e8a2c695faa90cec37dafc5e962790f700cb91bd195",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "c673655dc3306b8adf773e46cdd4da6a997ea9f6ca19ee3e2758f1646587af93",
+      "stdout": "PASS 200 ordinary carry reconstructions, 8 single-modulus and 6 paired-modulus sharp witnesses\n"
+    },
+    {
+      "source": "research/astra-wild-nine-hour-20261128/outside/check_affine_rectangles.py",
+      "source_sha256": "b37e97fa2ee604f1177e9a3793bde6e75888e0d3271c106a843f43f004d4580f",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "normal_optimized_stdout_identical": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "cec91e49b480c1bf13d6822adcb8e1db0de006321870944d01f4ebe3173854bd",
+      "stdout": "Rectangles, convergent pieces, nonempty first remainders: 952 7129 561\nTrue affine prefixes and selected arc hits: 90000 4450\n"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "scope": "Finite kernels only; cached third-party objects reused",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "command": [
+        "/workspace/scratch/f139035b63c2/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-dfyykxkj/AffineBranchPadding.olean",
+        "AffineBranchPadding.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.AffineBranchPadding.grade_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.numerator_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.suffix_preserves_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source": "arithmetic/AffineBranchPadding.lean",
+      "source_sha256": "860f00d21df7d4da36a0c929574ca30d836ce29a5c624726bbdefa39556f72b7"
+    },
+    {
+      "command": [
+        "/workspace/scratch/f139035b63c2/toolchain/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/tmp/collatz-wild-lean-dfyykxkj/OrdinaryPhaseBound.olean",
+        "OrdinaryPhaseBound.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.OrdinaryPhase.ordinaryPhaseBound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "source": "dynamics/OrdinaryPhaseBound.lean",
+      "source_sha256": "304416525dacbb8be10e3bd501eda8749ab6da5d1b6205292dc2fd9f1e54930c"
+    }
+  ],
+  "audit_roots": [
+    {
+      "declaration": "Collatz.AffineBranchPadding.grade_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.AffineBranchPadding.numerator_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.AffineBranchPadding.suffix_preserves_residue",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.oneStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.OrdinaryPhase.ordinaryPhaseBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "mathlib_lake_manifest_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+  "version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "audit": {
+    "command": [
+      "/workspace/scratch/f139035b63c2/toolchain/lean-4.34.1-linux/bin/lean",
+      "-DwarningAsError=true",
+      "-DautoImplicit=false",
+      "Audit.lean"
+    ],
+    "exit_code": 0,
+    "stdout": "'Collatz.AffineBranchPadding.grade_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.numerator_append' depends on axioms: [propext]\n'Collatz.AffineBranchPadding.suffix_preserves_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OrdinaryPhase.oneStep' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.OrdinaryPhase.ordinaryPhaseBound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": ""
+  }
+}

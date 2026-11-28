@@ -1,0 +1,122 @@
+{
+  "exact_power_sums": {
+    "global": 60,
+    "positive_low_cells": 696
+  },
+  "composition_words": 32766,
+  "corridor": {
+    "quota_words": 912,
+    "physical_chord_words": 867,
+    "rows": [
+      {
+        "k": 2,
+        "p": 2,
+        "chord_words": 1,
+        "chord_endpoints": 1,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 3,
+        "p": 2,
+        "chord_words": 1,
+        "chord_endpoints": 1,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 4,
+        "p": 3,
+        "chord_words": 1,
+        "chord_endpoints": 1,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 5,
+        "p": 4,
+        "chord_words": 1,
+        "chord_endpoints": 1,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 6,
+        "p": 4,
+        "chord_words": 3,
+        "chord_endpoints": 3,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 7,
+        "p": 5,
+        "chord_words": 3,
+        "chord_endpoints": 3,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 8,
+        "p": 6,
+        "chord_words": 4,
+        "chord_endpoints": 4,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 9,
+        "p": 6,
+        "chord_words": 12,
+        "chord_endpoints": 12,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 10,
+        "p": 7,
+        "chord_words": 12,
+        "chord_endpoints": 12,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 11,
+        "p": 7,
+        "chord_words": 30,
+        "chord_endpoints": 30,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 12,
+        "p": 8,
+        "chord_words": 55,
+        "chord_endpoints": 55,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 13,
+        "p": 9,
+        "chord_words": 55,
+        "chord_endpoints": 55,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 14,
+        "p": 9,
+        "chord_words": 143,
+        "chord_endpoints": 143,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 15,
+        "p": 10,
+        "chord_words": 273,
+        "chord_endpoints": 273,
+        "maximum_chord_multiplicity": 1
+      },
+      {
+        "k": 16,
+        "p": 11,
+        "chord_words": 273,
+        "chord_endpoints": 273,
+        "maximum_chord_multiplicity": 1
+      }
+    ]
+  },
+  "translated_intervals": {
+    "starts": 16376,
+    "floor_survivors_at_or_above_clock": 1124
+  }
+}

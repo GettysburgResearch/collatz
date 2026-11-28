@@ -1,0 +1,71 @@
+{
+  "scope": "Exact finite controls; not the infinite theorems",
+  "checks": [
+    {
+      "source": "outside/check_congruence_clocks.py",
+      "source_sha256": "479fb98c255ed6f589459302439299e30ca052185078409385930ef7688525ac",
+      "runs": [
+        {
+          "flags": [],
+          "exit_code": 0,
+          "stdout": "blocks: 1535\nintegral outputs: 287\nnonvacuous single-prime bounds: 44\npartially canceled clocks: 16\nprefixes: 10414\nrational phases: 480\nsame-prime transports: 7288\nsharp mixed errors: 196\nsimultaneous prime clocks: 153\n",
+          "stderr": "",
+          "stdout_sha256": "4c731ee78e13721df311b7e0ba5028c6ceede35c5069cd33fd1219417ec3ca67"
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "exit_code": 0,
+          "stdout": "blocks: 1535\nintegral outputs: 287\nnonvacuous single-prime bounds: 44\npartially canceled clocks: 16\nprefixes: 10414\nrational phases: 480\nsame-prime transports: 7288\nsharp mixed errors: 196\nsimultaneous prime clocks: 153\n",
+          "stderr": "",
+          "stdout_sha256": "4c731ee78e13721df311b7e0ba5028c6ceede35c5069cd33fd1219417ec3ca67"
+        }
+      ]
+    },
+    {
+      "source": "outside/check_atomic_steering.py",
+      "source_sha256": "f85437c9e1cdef26119a89b3a96bedd48bba68bf7a2034770cdb68dc2b0482f1",
+      "runs": [
+        {
+          "flags": [],
+          "exit_code": 0,
+          "stdout": "all-pair residue routes: 4325\nguarded joint phase checks: 3396\nmixed-modulus unit transports: 4758\nsingle-defect rational steps: 3876\nstage words: 6\nwhole simple ordinary prefix dates: 3888\n",
+          "stderr": "",
+          "stdout_sha256": "7782e89a7918815a2165b72dde1ed885f12c22f7b1567922f15a685865850eba"
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "exit_code": 0,
+          "stdout": "all-pair residue routes: 4325\nguarded joint phase checks: 3396\nmixed-modulus unit transports: 4758\nsingle-defect rational steps: 3876\nstage words: 6\nwhole simple ordinary prefix dates: 3888\n",
+          "stderr": "",
+          "stdout_sha256": "7782e89a7918815a2165b72dde1ed885f12c22f7b1567922f15a685865850eba"
+        }
+      ]
+    },
+    {
+      "source": "arithmetic/check_robust_fibres.py",
+      "source_sha256": "a5feff9b25f9d62ff5469d5f281a546493cb3034c8cbf47d5ba6b206130383fc",
+      "runs": [
+        {
+          "flags": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"exact_power_sums\": {\n    \"global\": 60,\n    \"positive_low_cells\": 696\n  },\n  \"composition_words\": 32766,\n  \"corridor\": {\n    \"quota_words\": 912,\n    \"physical_chord_words\": 867,\n    \"rows\": [\n      {\n        \"k\": 2,\n        \"p\": 2,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 3,\n        \"p\": 2,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 4,\n        \"p\": 3,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 5,\n        \"p\": 4,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 6,\n        \"p\": 4,\n        \"chord_words\": 3,\n        \"chord_endpoints\": 3,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 7,\n        \"p\": 5,\n        \"chord_words\": 3,\n        \"chord_endpoints\": 3,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 8,\n        \"p\": 6,\n        \"chord_words\": 4,\n        \"chord_endpoints\": 4,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 9,\n        \"p\": 6,\n        \"chord_words\": 12,\n        \"chord_endpoints\": 12,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 10,\n        \"p\": 7,\n        \"chord_words\": 12,\n        \"chord_endpoints\": 12,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 11,\n        \"p\": 7,\n        \"chord_words\": 30,\n        \"chord_endpoints\": 30,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 12,\n        \"p\": 8,\n        \"chord_words\": 55,\n        \"chord_endpoints\": 55,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 13,\n        \"p\": 9,\n        \"chord_words\": 55,\n        \"chord_endpoints\": 55,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 14,\n        \"p\": 9,\n        \"chord_words\": 143,\n        \"chord_endpoints\": 143,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 15,\n        \"p\": 10,\n        \"chord_words\": 273,\n        \"chord_endpoints\": 273,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 16,\n        \"p\": 11,\n        \"chord_words\": 273,\n        \"chord_endpoints\": 273,\n        \"maximum_chord_multiplicity\": 1\n      }\n    ]\n  },\n  \"translated_intervals\": {\n    \"starts\": 16376,\n    \"floor_survivors_at_or_above_clock\": 1124\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "e6bdc878c2e03b2280835fd48afe06dc73c84ee36bbfac88b0eadc70df5f9eaa"
+        },
+        {
+          "flags": [
+            "-O"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"exact_power_sums\": {\n    \"global\": 60,\n    \"positive_low_cells\": 696\n  },\n  \"composition_words\": 32766,\n  \"corridor\": {\n    \"quota_words\": 912,\n    \"physical_chord_words\": 867,\n    \"rows\": [\n      {\n        \"k\": 2,\n        \"p\": 2,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 3,\n        \"p\": 2,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 4,\n        \"p\": 3,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 5,\n        \"p\": 4,\n        \"chord_words\": 1,\n        \"chord_endpoints\": 1,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 6,\n        \"p\": 4,\n        \"chord_words\": 3,\n        \"chord_endpoints\": 3,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 7,\n        \"p\": 5,\n        \"chord_words\": 3,\n        \"chord_endpoints\": 3,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 8,\n        \"p\": 6,\n        \"chord_words\": 4,\n        \"chord_endpoints\": 4,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 9,\n        \"p\": 6,\n        \"chord_words\": 12,\n        \"chord_endpoints\": 12,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 10,\n        \"p\": 7,\n        \"chord_words\": 12,\n        \"chord_endpoints\": 12,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 11,\n        \"p\": 7,\n        \"chord_words\": 30,\n        \"chord_endpoints\": 30,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 12,\n        \"p\": 8,\n        \"chord_words\": 55,\n        \"chord_endpoints\": 55,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 13,\n        \"p\": 9,\n        \"chord_words\": 55,\n        \"chord_endpoints\": 55,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 14,\n        \"p\": 9,\n        \"chord_words\": 143,\n        \"chord_endpoints\": 143,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 15,\n        \"p\": 10,\n        \"chord_words\": 273,\n        \"chord_endpoints\": 273,\n        \"maximum_chord_multiplicity\": 1\n      },\n      {\n        \"k\": 16,\n        \"p\": 11,\n        \"chord_words\": 273,\n        \"chord_endpoints\": 273,\n        \"maximum_chord_multiplicity\": 1\n      }\n    ]\n  },\n  \"translated_intervals\": {\n    \"starts\": 16376,\n    \"floor_survivors_at_or_above_clock\": 1124\n  }\n}\n",
+          "stderr": "",
+          "stdout_sha256": "e6bdc878c2e03b2280835fd48afe06dc73c84ee36bbfac88b0eadc70df5f9eaa"
+        }
+      ]
+    }
+  ]
+}
