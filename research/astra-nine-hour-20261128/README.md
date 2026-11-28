@@ -171,6 +171,25 @@ records the independent mathematical reconstruction and prior-work comparison.
 | [Timed floors](escape/phase7/TIMED_FLOOR_AND_CLOCK_CENTRES.md) and [untrimmed Rényi energy](escape/phase7/UNTRIMMED_RENYI_ENERGY.md) | Uniform timed floors and finitely many first-target clock centers independently recover the concurrent PR212 sharp full moments for 1<q<1+g, g≈0.05289, and second-order Shannon entropy log T−½log log T+o(log log T). | The full quadratic moment and an arithmetic contradiction to hypothetical escape remain open. |
 | [Posterior Bellman losses](machinery/phase7/POSTERIOR_EDGE_LOSS.md) | Exact slack decomposes into posterior surprise and reverse conditional entropy; one explicit potential has bounded last-trit span. | Its projected source is not stationary and its gain is not the finite-window optimum. |
 
+## Eighth checkpoint: finite memory cannot attain the inverse optimum
+
+The [eighth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_08_REVIEW.md)
+records the independent proofs, prior inputs, and exact formal boundaries.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Strict finite-window improvement](machinery/phase9/STRICT_WINDOW_IMPROVEMENT.md) | Every finite inverse window can be improved by a larger one: for N=2·3^(W−1), n=24N+12, c_(W+n) ≤ c_W−3^(−n)/n. Thus no finite window attains the unknown Haar optimum. A certificate-dependent version also includes the former exact stopping-coefficient endpoint. | The limit may still lie below the entropy ceiling; no width-independent improvement closes that gap. |
+| [Exact digital rotation](cycles/phase8/DIGITAL_ROTATION.md) | Every ordinary cycle clock is bounded by the grid at twice its minimum. Every strict grid-clock jump is one Farey edge, and every best upper rational occurs. Actual integer segments realize both extreme rounding biases through their information horizon. | The proposed sharp coefficient requires complete integer periodicity, which finite local models do not supply. |
+| [Ordinary critical moment](escape/phase8/TILTED_ORDINARY_REPRESENTATIVE.md) | The least odd representative variable tends to zero almost surely, while its first-moment limit is exactly the surviving ordinary escape mass. Uniform integrability and a sublinear critical entropy are equivalent to no escape. A supercritical moment bound is equivalent to a uniform logarithmic entry theorem into finitely many cycles. | The critical ordinary marginal bound itself is unproved. |
+| [Successive target posteriors](escape/phase8/SUCCESSIVE_ROOT_POSTERIOR.md) and [weighted coding](escape/phase8/SIZE_BIASED_CODING.md) | On an escaping ray, all longer true reverse segments have posterior probability approaching one and the full alternative-parent budget is summable. Entry to one is distinguished by posterior growth at least 4/3. | Stationary coding already has the same direction of alternative-parent suppression; an opposing ordinary estimate is needed. |
+| [Binary affine carriers](machinery/phase8/BIASED_BINARY_FUSION.md) and [two-sided rigidity](machinery/phase8/TWO_SIDED_AFFINE_RIGIDITY.md) | Biased binary affine overlap has an exact algebraic classification. On the full contracting past and binary future, the surviving affine relations are precisely time shifts, with explicit shared word mass. | The conull classification does not have to contain any ordinary diagonal integer. |
+| [Joint real fibres](machinery/phase8/TILTED_JOINT_FIBRES.md) | The full contracting past recovers the word; typical conditional real dimension is explicit. At a specified nonperiodic integer root, finite-depth conditional laws concentrate on the actual first-hit correction set. | Typical fibres and ordinary-root fibres are different populations; no uniform ordinary ancestor rate is assumed. |
+
+The root [rational gap kernel](phase8/NEGATIVE_AFFINE_GAP.md) formalizes
+the actual negative word-image obstruction and the capped inverse entry
+used by the strict-window proof. Its positive ordinary cylinder lifts
+are also checked directly in the finite replay.
+
 ## What a decisive result must establish
 
 A full solution must exclude every additional positive cycle and every
@@ -203,8 +222,8 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [seventh complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_07_LEAN.json)
-passed **27 modules and 581 declarations, including 90 private
+The [eighth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_08_LEAN.json)
+passed **33 modules and 657 declarations, including 96 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
@@ -215,7 +234,9 @@ repairs and transport duals, integral odd numerator recovery, and
 meeting-clock independence, finite mixed-alphabet shortening and exact
 dyadic midpoint accounting, actual counted fusion, finite affine-transporter
 bounds and word freeness, first-hit clock ordering, and finite moment
-separation. The
+separation, rational negative-gap exclusion, finite block savings, grid
+clock and Farey determinants, tilted trace products, and binary affine
+likelihoods. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.

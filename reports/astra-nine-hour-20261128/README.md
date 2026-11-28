@@ -87,3 +87,16 @@ fusion, finite affine bounds and word freeness, both first-hit clock orders,
 and finite moment separation. The sixth publication's exact
 [record](CHECKPOINT_06_PUBLICATION.json) and
 [clean-checkout receipt](CHECKPOINT_06_PUBLISHED_INTEGRITY.json) are retained.
+
+The eighth publication adds the [strict-window, Farey-clock and ordinary-moment review](CHECKPOINT_08_REVIEW.md),
+[complete thirty-three-module replay](CHECKPOINT_08_LEAN.json),
+[four paired Python controls and two C++ builds](CHECKPOINT_08_CONTROLS.json),
+and [157-source manifest](CHECKPOINT_08_SOURCES.json). It preserves the
+seventh publication's exact [record](CHECKPOINT_07_PUBLICATION.json) and
+[clean-checkout receipt](CHECKPOINT_07_PUBLISHED_INTEGRITY.json). The new
+rational word gap and finite block-saving kernels connect directly to
+the written strict finite-window improvement. Complete probability,
+rotation and boundary theorems retain the separate written review.
+
+The eighth replay audits **657 declarations**, including **96 private
+declarations**, under the same strict flags and dependency pins.

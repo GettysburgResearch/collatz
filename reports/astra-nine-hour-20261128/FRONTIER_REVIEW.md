@@ -74,3 +74,33 @@ Primary interfaces:
 Full independent rebuilds of these external analytic developments are
 not claimed. Checkpoint reviews will distinguish the new deduction
 from these inputs and list the local kernels actually rebuilt.
+
+## Continuing broad refresh at checkpoint eight
+
+The coordinator read the primary theorem interfaces and proof passages
+of Weaver 127 (finite-window completeness and supplied-root transfer),
+150 (the gap to the entropy ceiling), and Wren 154 (the width-22 drift
+certificate, span and transfer). Their distinction is central to the
+strict finite-window nonattainment theorem in this checkpoint. The
+original large certificate is imported, not rebuilt here.
+
+The current concurrent PR bodies were refreshed at these exact heads:
+PR212 `e55fb7cac646013f143b563014ae97b105bc7547`, PR213
+`13e0f81c0098ce5ef78f5306fa7154cb2e3c03b3`, and PR214
+`de836de9db965697e94fb203320f6f80012b8898`. PR213's new order-sixteen
+product separation and beyond-bit-length lower-tail sectors, and PR214's
+effective worst rational landing bound, were passed to the arithmetic
+lane for comparison. Those new proofs are not mathematical premises of
+checkpoint eight. Earlier exact shared-moment priority was checked
+separately in checkpoint seven.
+
+A broad external search also led to the primary
+[Principia campaign research notes](https://github.com/PrincipiaMathOrg/collatz/blob/main/RESEARCH_NOTES.md),
+which record a hundred-approach program, its stated no-go results,
+conditional reductions and finite tests. The coordinator read that
+campaign summary; its individual underlying proofs were not replayed
+or imported. Its own status is unresolved. The newly published
+[billion-digit numerical algorithm](https://link.springer.com/article/10.1007/s40993-026-00811-5)
+was screened at its abstract and theorem-description level; the claimed
+complexity proof is conditional on a quantitative Collatz statement,
+so it supplies no universal-convergence premise here.
