@@ -22,6 +22,14 @@ SOURCES = {
         "Collatz.OrdinaryPhase.oneStep",
         "Collatz.OrdinaryPhase.ordinaryPhaseBound",
     ],
+    "dynamics/SourceEnvelope.lean": [
+        "Collatz.OrdinaryPhase.stepNumerator",
+        "Collatz.OrdinaryPhase.sourceEnvelope",
+    ],
+    "outside/CommonPrimeAlignment.lean": [
+        "AstraWild.CommonPrimeAlignment.centerDefectDvd",
+        "AstraWild.CommonPrimeAlignment.centerAlignment",
+    ],
 }
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 
@@ -67,16 +75,19 @@ def main():
             raw = source.read_bytes()
             local = build / source.name
             local.write_bytes(raw)
-            record = run([lean, "-DwarningAsError=true", "-DautoImplicit=false",
+            record = run([lean, "-j1", "-DElab.async=false",
+                          "-DwarningAsError=true", "-DautoImplicit=false",
                           "-o", str(local.with_suffix(".olean")), source.name], build, env)
             record.update({"source": relative,
                            "source_sha256": hashlib.sha256(raw).hexdigest()})
             receipt["modules"].append(record)
+            print(json.dumps({"compiled": relative}), flush=True)
             imports.append("import " + source.stem)
             roots.extend(names)
         audit = "\n".join(imports + ["#print axioms " + r for r in roots]) + "\n"
         (build / "Audit.lean").write_text(audit)
-        checked = run([lean, "-DwarningAsError=true", "-DautoImplicit=false", "Audit.lean"],
+        checked = run([lean, "-j1", "-DElab.async=false",
+                       "-DwarningAsError=true", "-DautoImplicit=false", "Audit.lean"],
                       build, env)
         printed = dict(re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", checked["stdout"]))
         for root in roots:

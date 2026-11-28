@@ -1,0 +1,59 @@
+{
+  "status": "alignment module passed fresh local type-check; source envelope pending",
+  "prior_passed": "CHECKPOINT_01_LEAN.json contains the completed first two modules and five audited roots",
+  "author_local_report": "outside/CHECKPOINT_1.md records a successful local Std check of CommonPrimeAlignment; not an outside author theorem",
+  "new_dynamics_status": "SourceEnvelope replay interrupted under host resource pressure; no successful compilation claimed at this checkpoint",
+  "root_attempts": [
+    {
+      "scope": "three-module strict Mathlib replay",
+      "toolchain": "f139035b63c2 Lean 4.34.1",
+      "outcome": "interrupted exit 130 before first compiled-module report"
+    },
+    {
+      "scope": "serialized three-module strict Mathlib replay",
+      "toolchain": "same; -j1 -DElab.async=false",
+      "outcome": "interrupted exit 130 before first compiled-module report"
+    },
+    {
+      "scope": "direct Std alignment module",
+      "toolchain": "f139035b63c2 Lean 4.34.1",
+      "outcome": "interrupted exit 130, no diagnostics"
+    },
+    {
+      "scope": "direct Std alignment module",
+      "toolchain": "102b17af18c9 Lean 4.34.1",
+      "outcome": "completed exit 0, stdout and stderr empty; the session had completed when resumed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "arithmetic/AffineBranchPadding.lean",
+      "sha256": "860f00d21df7d4da36a0c929574ca30d836ce29a5c624726bbdefa39556f72b7"
+    },
+    {
+      "source": "dynamics/OrdinaryPhaseBound.lean",
+      "sha256": "304416525dacbb8be10e3bd501eda8749ab6da5d1b6205292dc2fd9f1e54930c"
+    },
+    {
+      "source": "outside/CommonPrimeAlignment.lean",
+      "sha256": "b39e3fa664a23d11b55dff728255281e9347d72f4021ca15ddbaf6838ab76ee3"
+    },
+    {
+      "source": "dynamics/SourceEnvelope.lean",
+      "sha256": "faca51caa4026a8d35d6b8becf1d03b0a4ed21d070a1d1567ebaa414a7815162"
+    }
+  ],
+  "alignment_command": [
+    "/workspace/scratch/102b17af18c9/toolchains/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DElab.async=false",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "research/astra-wild-nine-hour-20261128/outside/CommonPrimeAlignment.lean"
+  ],
+  "alignment_axiom_audit": "No separate import/axiom audit completed at this checkpoint",
+  "minimal_runtime_probe": {
+    "source": "example : True := True.intro",
+    "status": "timed out after 20 seconds during concurrent resource pressure; not evidence of a theorem error"
+  }
+}

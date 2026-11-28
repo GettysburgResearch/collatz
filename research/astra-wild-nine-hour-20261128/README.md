@@ -28,3 +28,13 @@ The [coordinator's review](../../reports/astra-wild-nine-hour-20261128/CHECKPOIN
 
 The opening intake commit was an organizational record, not a mathematical checkpoint. The nine-hour research pass continues.
 
+## Checkpoint 2
+
+The [robust endpoint theorem](arithmetic/ROBUST_BRANCH_FIBRES.md) gives exponential information tails on every exact odd-grade row, stable under every subexponential word filter. It also evaluates the graded branch pressure below Rényi order one. A separate elementary argument bounds every full no-descent endpoint fibre by a polynomial in the clock and determines the complete corridor count and endpoint information, even under an arbitrarily slowly widening upper-height ceiling. The all-slope entropy theorem uses Leen; the physical corridor deduction does not.
+
+The [moving-band theorem](dynamics/MOVING_BAND_ENERGY.md) bounds aggregate Fourier energy uniformly over actual source shells, including unit branch twists and simultaneous component/grade cells. The true visit-to-five observable retains positive total variance despite vanishing energy in each fixed number of moving bands. A global spectral proof must use exact low-height information or another ingredient that fails for this finitely defective observable.
+
+The [full profinite-law construction](outside/ALL_PROFINITE_FORWARD_LAWS.md) realizes every stationary law with ternary-unit support and nonnegative real drift while keeping a supplied positive rational exactly equal to all its odd-prime coordinates at every time. It retains any prescribed finite true binary prefix, then changes the next bit. The theorem includes diffuse laws, zero-drift real escape, and simple genuine ordinary finite witnesses with changing initial integers. It pinpoints the missing exact binary equality; it does not supply an ordinary counterexample.
+
+The outside lane also gives [complete short-predecessor congruence constraints](outside/CONGRUENCES_TO_SHORT_PREDECESSORS.md), [local-atom and denominator-prime classifications](outside/ATOMS_OF_ORDINARY_TIME_AVERAGES.md), and [the exact integer threshold](outside/AFFINE_APPROXIMATION_AT_THE_DENOMINATOR.md) left by Javaheri's unrestricted real approximation theorem. The [independent checkpoint review](../../reports/astra-wild-nine-hour-20261128/CHECKPOINT_02_REVIEW.md) records reconstructed arguments, prior work, verification boundaries, and the unsupported global inferences.
+
