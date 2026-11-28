@@ -46,20 +46,27 @@ This one signed first moment would exclude both an additional cycle and
 an escaping orbit. It requires neither an upper bound for every starting
 integer nor convergence of the entire parity distribution.
 
-Here is the proof interface. Put
-\(b=1/\log_2(10/3)-1/2>0\) and \(W=\sqrt{k\log(k+2)}\). The written
-deduction from Weaver's actual first-passage theorem gives
-
+Here is the shortest proof interface. Put
+\(\beta=1/\log_2(10/3)\), \(b=\beta-1/2>0\),
+\(W=\sqrt{k\log(k+2)}\), and \(x=T^M n\). A pointwise positive
+product inequality gives
 \[
- \mathbb E[Q_{M+g}-(M+g)/2]
- \ge bg\,\Pr(\tau_1>M+g)-O_A(W+k^{1-A}),
+ Q_{M+g}-Q_M-g/2
+ \ge bg\,{\bf1}_{\{\tau_1>M+g\}}-\beta\log_2 x.
 \]
-
-and \(\lvert\mathbb E(Q_M-M/2)\rvert=O_A(W+k^{1-A})\).
-The first-passage theorem lands the original source at a polylogarithmic
-height near date \(M\). On a positive suffix the odd undivided
-multiplier is at most \(4\); before visiting \(1\) it is at most
-\(10/3\). Their strict difference supplies the positive gap. Thus (1)
+Weaver's actual first-passage theorem lands the original source at a
+polylogarithmic height within \(O_A(W)\) dates of \(M\), outside
+\(O_A(k^{-A})\) of the population. Each positive step changes size
+by a factor in \([1/2,2]\), so
+\(\mathbb E\log_2 x=O_A(W+k^{1-A})\). Therefore
+\[
+ \mathbb E[Q_{M+g}-Q_M-g/2]
+ \ge bg\,\Pr(\tau_1>M+g)-O_A(W+k^{1-A}).
+\]
+On a positive suffix the odd undivided multiplier is at most \(4\);
+before visiting \(1\) it is at most \(10/3\). Their strict difference
+supplies the gap. No estimate for the centered count at \(M\) is
+needed for this direct suffix proof. Thus (1)
 forces the proportion of sources not yet at \(1\) to vanish along a
 subsequence. A positive counterexample has a bad forward odd ternary
 unit, whose ordinary predecessors have positive lower density,

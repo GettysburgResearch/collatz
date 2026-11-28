@@ -69,6 +69,42 @@ Mazur's fixed-target positive lower predecessor density contradicts
 written estimates. The signed upper bound itself is open.
 [Repository source and scope of the predecessor theorem](../../external/mazur-2026/README.md)
 
+## Direct suffix proof using only the actual height
+
+The sufficient suffix criterion has a shorter proof which does not
+need the centered count at the crossing or estimate (2). Write
+\(\beta=1/\log_2(10/3)\), \(x=T^M n\), and
+\(q=Q_{M+g}(n)-Q_M(n)\). The same positive product inequalities give,
+for every positive source,
+\[
+ q-g/2\ \ge\
+ b_*g\,{\bf1}_{\{\tau_1(n)>M+g\}}-\beta\log_2 x.                 \tag{2a}
+\]
+On the indicated event every odd suffix input is at least three.
+On its complement use \(q-g/2\ge-(\log_2 x)/2\), together with
+\(\beta>1/2\) and \(\log_2 x\ge0\).
+
+The actual shortcut crossing above has
+\(u=M+O_A(W)\) and \(T^u n\le k^{O_A(1)}\), outside
+\(O_A(k^{-A})\) of the original source interval. Every positive
+shortcut step changes size by a factor between \(1/2\) and \(2\).
+Therefore in either temporal order
+\[
+ \log_2 T^M n\le\log_2 T^u n+|M-u|=O_A(W)
+\]
+on the retained set. Universally
+\(\log_2 T^M n\le k+M=O(k)\), so
+\[
+ \mathbb E_k[q-g/2]\ge
+ b_*g\,\Pr_k(\tau_1>M+g)-O_A(W+k^{1-A}).                        \tag{2b}
+\]
+This proves the full suffix consumer from just the shortcut
+first-passage location and date, plus the separate positive-predecessor
+input. The lower bound also controls sources that eventually converge
+but have not done so by the tested clock. The stronger absolute-count
+statements (1)–(2) above keep their stated additional count argument.
+The ordinary signed upper bound remains open.
+
 ## A single pair of adjacent endpoint residues
 
 Define the ordinary endpoint observable

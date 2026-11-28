@@ -8,6 +8,23 @@ formalization claim.
 
 ## Reviewed additions after checkpoint 4
 
+### Direct signed suffix consumer
+
+The closing proof review removed the date-M centering argument
+from the sufficient suffix criterion. For x=T^M n and q odd
+departures over the next g dates, the positive product gives
+q-g/2 at least b*g times the indicator of no visit to 1 by the
+final date, minus beta*log2(x). The generic branch follows
+because beta>1/2 and log2(x) is nonnegative. The actual
+polylogarithmic crossing, transported across O(sqrt(k log k))
+dates with step ratios between one half and two, bounds the
+mean height cost by O(W+k^(1-A)). The coordinator derived
+this shorter proof, and the structural lane independently
+checked both temporal orders and the exceptional-source cost.
+Only the shortcut crossing location and date are used in
+this sufficient criterion; the earlier absolute-count
+statements retain their separate count argument.
+
 ### Whole-source stationary trace
 
 The coordinator derived and checked the complete-source bijection
