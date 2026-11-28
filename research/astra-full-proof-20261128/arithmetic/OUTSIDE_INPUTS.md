@@ -26,6 +26,18 @@ independent consequence or counterexample.
   the five-times-bit-length upper-tail statement is a further assertion.
   **WRITTEN external theorem; no local Lean claim.**
   [Primary manuscript](https://arxiv.org/html/2402.03276v3#S3.Thmtheorem3.3).
+- **Valbuena, existence of predecessor natural densities**, repository
+  x1xhlol/collatz-two-coordinate-obstruction at
+  a7275d5a73814d3d9a400c6fe6577de9542b03a3. The closing native-boundary
+  note uses only the existence of each fixed target's ordinary natural
+  density to recover a mean from finite target-hit indicators.
+  The primary release reports the Lean 4.30.0-rc2 native foundation
+  and additive bundle audits, distinguishing fresh compilation from
+  authenticated dependencies. **OUTSIDER-REPORTED LEAN; not rebuilt here.**
+  The coordinator read the pinned primary README. The finite full-proof
+  consumer does not require this optional mean-existence input beyond
+  its separate positive-predecessor premise.
+  [Pinned statement and reported verification scope](https://github.com/x1xhlol/collatz-two-coordinate-obstruction/blob/a7275d5a73814d3d9a400c6fe6577de9542b03a3/README.md).
 
 ## A bounded certificate asserted by a full-proof repository is false
 

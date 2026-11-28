@@ -1,9 +1,10 @@
 {
-  "scope": "Frozen scientific sources of the three-hour pass; hashes are not mathematical verification",
-  "scientific_commit": "df53dd904b3042ecdaac3b935a3b3e6fb71273b0",
-  "scientific_tree": "a64c76476ddb296d4ae4eff489a1d9f9ad72ab54",
+  "scope": "Frozen final scientific sources of the three-hour pass; hashes are not mathematical verification",
+  "scientific_commit": "6c9e442058ba95e9fdba7a9ade0e50efb9088d2e",
+  "scientific_tree": "6d1880a5565f10628a020411c34d2af9c1430845",
   "validation_receipt": "FINAL_CHECKOUT.json",
-  "source_count": 57,
+  "previous_checkpoint_receipt": "CHECKPOINT_05_CHECKOUT.json",
+  "source_count": 59,
   "sources": [
     {
       "path": "research/astra-full-proof-20261128/ACTUAL_SOURCE_STATIONARY_TRACE.md",
@@ -19,15 +20,15 @@
     },
     {
       "path": "research/astra-full-proof-20261128/FINAL_ASSESSMENT.md",
-      "sha256": "b00b7408e4d83251c472a0b3f59b368fa8fc989f578b2c19a220878ccf71f2b9"
+      "sha256": "287153b4f902d47fdeb204017ab4d29c6f2247f071d61059ef965a903a6d383f"
     },
     {
       "path": "research/astra-full-proof-20261128/README.md",
-      "sha256": "1756b84f2abc766a146fef1444bc7109d5f1d81e1679e53626ce6a177da77017"
+      "sha256": "519010e7c631618301422219baf62fbeaea78fdee45fc307cc19e1689b42dcdc"
     },
     {
       "path": "research/astra-full-proof-20261128/SOURCE_PINS.json",
-      "sha256": "88705084d85f4be9e0aa898db2021557cbe3cde4e44dab81fe1102d43f9f7991"
+      "sha256": "b9d777862034e4811a900eaa3aec2c6bf7412ee352a9024f3a30e8330a78a698"
     },
     {
       "path": "research/astra-full-proof-20261128/arithmetic/ExternalClaimChecks.lean",
@@ -35,7 +36,7 @@
     },
     {
       "path": "research/astra-full-proof-20261128/arithmetic/OUTSIDE_INPUTS.md",
-      "sha256": "5486e9d24b51ed886585d2270de89c5c94e3a783ff5d7523de84bce6849007fc"
+      "sha256": "700d1343422f16eab8234d8be7ad761a2b80eda66894733a85d77e0d6c87510f"
     },
     {
       "path": "research/astra-full-proof-20261128/descent/BOUNDARY_NORM.md",
@@ -59,7 +60,7 @@
     },
     {
       "path": "research/astra-full-proof-20261128/descent/INTERMEDIATE_FLOOR_WIDTHS.md",
-      "sha256": "72b12b00f7765c347dc8a5bfbe2152c0e8d0b24270fd1a6c050bd3c194b84507"
+      "sha256": "3a47bfe4b2064f14eecc0ba6d68416a36cbbeba903a92f9f8f82d2f2f986ee3b"
     },
     {
       "path": "research/astra-full-proof-20261128/descent/INTERNAL_PREFIX.md",
@@ -79,7 +80,7 @@
     },
     {
       "path": "research/astra-full-proof-20261128/descent/SURVIVAL_WINDOWS.md",
-      "sha256": "e1b14142e6bec614d7d3079dd70c2ff092d813b8f84f79feda3432ee56859b25"
+      "sha256": "9d44c0e6f5b40e83fc19642866766e6807c552e5d8300e6280b995a41bdae9cc"
     },
     {
       "path": "research/astra-full-proof-20261128/descent/SignedFloor.lean",
@@ -146,6 +147,10 @@
       "sha256": "ed4991202389881d6f4b43e4def421447876fa1e3cd215592dcd07ed3078e974"
     },
     {
+      "path": "research/astra-full-proof-20261128/mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md",
+      "sha256": "78bd63382331585e671f71ac6e3e11c178824200815080368e6d51b1153c22df"
+    },
+    {
       "path": "research/astra-full-proof-20261128/mass/ROOTED_ROTATION.md",
       "sha256": "25f6e7f1bb5e8088225a0ded66caa58b18c3538b0c7219e616671d850c9e7b33"
     },
@@ -168,6 +173,10 @@
     {
       "path": "research/astra-full-proof-20261128/mass/signed_death_lean.json",
       "sha256": "bd2a39fc102f73ffe89adf247d7b9f5b768ceb06697dd406ec2e611325ffe5c8"
+    },
+    {
+      "path": "research/astra-full-proof-20261128/parity/CONDITIONAL_SUFFIX_SUPPORT.md",
+      "sha256": "eb37eea93ff4ae9ae4c41e15552f789fc05a866ba03ba4e5a1d4ba45946c22d7"
     },
     {
       "path": "research/astra-full-proof-20261128/parity/LITERAL_ENTRANCE_KERNEL.md",

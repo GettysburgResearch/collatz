@@ -134,6 +134,15 @@ marginal, an unconditional central limit theorem, or a polynomial
 absolute error cannot settle the conditional sign.
 [Exact proof, moment constant, and open conditional inequality](ACTUAL_SOURCE_STATIONARY_TRACE.md).
 
+There is also a concrete reason not to seek a fresh fair suffix.
+Outside a vanishing fraction, the actual state at date \(M\) lies
+below \(2^{O(\sqrt{k\log k})}\). Its following \(g\) parity bits
+are determined by that one integer, so their conditional entropy
+is \(o(g)\), even though an unconditioned fair suffix has entropy
+\(g\log2\). A zero signed mean is compatible with this sparse
+support; independent fair continuation is not.
+[Conditional suffix support](parity/CONDITIONAL_SUFFIX_SUPPORT.md).
+
 Priority belongs to PR217 for the fixed-fibre window lemma; this packet's
 extension is the simultaneous source injection and the single conditional
 full-proof target. The external finite formal receipt for that earlier
@@ -299,8 +308,16 @@ minimum \(a\) that is a ternary unit, however, has ordinary first-landing mass
 \(\gg1/a\). Therefore any escaping orbit would force that signed
 mass into
 \[
-                         a/2<Y<\exp(a^\epsilon).                \tag{7}
+                 L_a\le Y<\exp(a^\epsilon),\qquad
+ L_a=\frac{3a+1}{2}\exp(-R/(3a))=(3/2-o(1))a.                   \tag{7}
 \]
+The exact lower support is stronger than the all-horizon small-width
+estimate at this calibrated horizon. The last odd input is
+\((2y-1)/3\ge a\), while
+\(Y=NA_r\ge A_rx=yW_r\ge y\exp(-R/(3a))\). Thus the contribution
+below \(L_a\) is identically empty. This version of the two-tail
+localization needs no stationary anti-concentration argument on
+the lower side; the uniform all-horizon bound remains a separate result.
 An escaping trajectory supplies arbitrarily large future minima.
 A single additional cycle supplies one fixed minimum. The
 asymptotic statement (7) alone does not eliminate that cycle.
@@ -322,10 +339,36 @@ weight at least \((2R+1)^{-1/6}\), by summing the reciprocals of
 distinct odd departure states. Thus a vanishing native mean after
 multiplication by \(R^{1/6}\) is a full-proof sufficient condition
 using only this elementary path bound and the qualified predecessor
-density theorem. The stronger uniform lower bound uses the cited
-outside simple-path estimate.
+density theorem. At the closing review we also included Weaver's
+elementary distinct-orbit packing proof: one orbit has
+\(O(Y^\eta)\) distinct states through \(Y\), with
+\(\eta=H_2(3/5)<1\). Its reciprocal sum is uniformly bounded,
+so the stronger constant lower bound follows within the packet
+without a finite verification floor. This finite full-proof consumer
+needs the separate positive-predecessor theorem, but no additional
+analytic mixing hypothesis for either of its two weight bounds.
 [Clock-height separation](descent/CLOCK_HEIGHT_MARK.md) ·
-[Repeat-stopped finite consumer](descent/SURVIVAL_WINDOWS.md).
+[Repeat-stopped finite consumer](descent/SURVIVAL_WINDOWS.md) ·
+[Elementary packing and actual native boundary](mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md).
+
+Two closing identities expose what the failed final approaches leave.
+Pairing the same reduced rational origin across denominators leaves a
+geometrically discounted downward-minus-upward width current.
+An eventual upward crossing on that same origin does not cancel its
+earlier downward crossing; the actual floor-one system carries
+asymptotic current one. A successful comparison must relate different
+origins or use additional arithmetic about their crossings.
+
+For the repeat-stopped product's native limit \(L\), the exact
+one-step equation is \(L(n)-c(n)L(Tn)=g(n)\). Its source \(g\) is
+supported precisely on nonstandard cycle vertices. Iteration leaves
+a positive terminal weight on escape and the explicit cycle charge
+on an additional cycle, while the entire component of \(1\)
+contributes zero. The accompanying Abel identity preserves these
+terms. Neither positive telescoping nor scalar stationary smoothing
+has removed them.
+[Same-origin width current](descent/INTERMEDIATE_FLOOR_WIDTHS.md) ·
+[Native cycle charge and escape boundary](mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md).
 
 ## 5. Ranked directions for the next full-proof dispatch
 
@@ -385,6 +428,9 @@ inputs of that map.
 
 The retained outside Mazur and Lau density statements have
 **outsider-reported Lean evidence and were not rebuilt here**.
+The optional natural-mean corollary uses Valbuena's fixed-target
+natural-density existence theorem, with the same explicit
+outsider-reported status and no local rebuild.
 The external fixed-barrier result distinguishes its written
 assembly from the reported Lean checks of underlying parameter
 lemmas. Weaver's first-passage and real anti-concentration arguments,

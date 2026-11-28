@@ -183,6 +183,14 @@ above the cited finite verification floor. This includes the transient
 and the first lap of any additional cycle.
 [Weaver, distinct-segment estimate (23) and its finite verification input](https://rstation.ai/problems/collatz/papers/175)
 
+The closing [native boundary note](../mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md)
+includes Weaver177's elementary distinct-orbit packing argument and
+derives this uniform positive lower bound directly. Its proof removes
+the finite verification floor and stronger orbit estimate from the
+dependencies of this particular consumer. The earlier explicit
+constant and the uniform all-horizon window estimates retain their
+own stated source dependencies.
+
 In the full rational law with denominator \(3^R\), write
 \(s=\min(R,v_3(u))\). Before its first \(R-s\) odd departures the
 reduced rational denominator decreases exactly once per odd departure.

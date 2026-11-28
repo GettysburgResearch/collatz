@@ -104,5 +104,18 @@
       "reviewed_utc": "2026-11-28T11:42:26Z",
       "scope": "Closing read of STATIONARY_COLLISION_CONSUMER and AGGREGATE_PROFILE_TRANSFER; whole-law shifted-window overlap explicitly credited, rare conditional estimate remains open. No external Lean replay claimed."
     }
+  ],
+  "closing_external_inputs": [
+    {
+      "repository": "x1xhlol/collatz-two-coordinate-obstruction",
+      "sha": "a7275d5a73814d3d9a400c6fe6577de9542b03a3",
+      "path": "README.md",
+      "scope": "Primary statement of fixed-target natural-density existence and author-reported Lean verification; used only in optional repeat-stopped mean-existence corollary. Not rebuilt locally."
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/177/v1",
+      "section": "10, distinct-state count on one orbit",
+      "scope": "Primary elementary orbit-packing proof read and reconstructed; credited self-contained derivation included in native-boundary note."
+    }
   ]
 }

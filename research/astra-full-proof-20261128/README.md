@@ -10,6 +10,11 @@ generic transfer, and localizes a hypothetical escaping future minimum's
 signed mass to intermediate interval widths. The
 [whole-source stationary trace](ACTUAL_SOURCE_STATIONARY_TRACE.md) is an
 alternative exact representation of the main sufficient statistic.
+The closing [repeat-stopped native boundary](mass/REPEAT_STOPPED_NATIVE_BOUNDARY.md)
+also gives an elementary uniform positive weight on every bad ordinary
+source and separates the exact escape term from the nonstandard-cycle charge.
+The corresponding rational reference decays exponentially; its comparison
+with the original integer population is still open.
 
 **Current focus:** the [signed first-moment consumer](descent/FIRST_MOMENT.md)
 reduces full convergence to one upper bound on the original positive integer

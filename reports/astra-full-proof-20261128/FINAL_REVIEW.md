@@ -38,6 +38,15 @@ error follows by optimizing the fractional-moment parameter
 already displayed here. No exclusive priority is claimed for
 the common aggregation.
 
+The last conditional-suffix note follows directly from the
+actual small-height landing: transporting across O(sqrt(k log k))
+dates changes size by at most the corresponding power of two.
+That leaves exp(O(sqrt(k log k))) possible integer endpoints
+and hence suffix words. The root checked the two-sided transport,
+the use of one fixed word set in the whole-window comparison,
+and the entropy partition with its exceptional probability.
+Low suffix entropy does not decide its first moment.
+
 ### Positive rational kernel and fixed-floor absorption
 
 The coordinator reconstructed the kernel normalization as a
@@ -130,6 +139,45 @@ exp(-c h^2/k) reference bound. This benchmark needs neither
 the recursive entrance clock nor stationary real regularity.
 This consumer covers cycles and escape. Its required
 ordinary-to-rational comparison is OPEN.
+
+### Final simplifications and boundary controls
+
+The calibrated floor has a stronger exact lower support than the
+uniform small-width estimate: its last odd input is at least a,
+and its prefix product is at least exp(-R/(3a)), so every
+contributing width is at least
+(3a+1)exp(-R/(3a))/2. The coordinator reconstructed this
+source-by-source inequality. Consequently the lower-tail
+exclusion at that horizon is elementary and identically zero.
+
+The same-origin denominator embedding gives the exact width
+current in the final intermediate-width note. The root checked
+the telescoping sign and the sum by parts with weights 3^(-s).
+The positive coefficients sum to one. An origin entering above
+the cutoff has nonnegative net even if it later crosses back.
+The actual floor-one control has at most 2R/C error from large
+widths and vanishing final rational survival, yielding current
+one. It does not imply that cross-origin cancellation is impossible.
+
+The root also reconstructed the native repeat-stopped identity:
+the one-step source vanishes off nonstandard cycles, equals
+(1-c) times one full lap on such a cycle, and vanishes throughout
+the standard component. Iteration preserves the escape terminal
+weight or the explicit cycle charge. In its Abel identity the
+coefficient has derivative log(4/3), and the cycle source is
+absolutely summable. No native mean was assumed for that identity.
+
+The coordinator read Weaver177/v1 Section10's original elementary
+orbit-packing proof. At j=ceil(log2Y), the high odd-count words
+occupy at most 2^(H2(3/5)j) original sources; all other word
+images lie in an interval of smaller power order. On a single
+orbit the map at j is injective after removing at most j
+transient states before a cycle. Partial summation gives a
+uniform reciprocal bound on distinct orbit states. The note
+includes this credited proof, which supplies a uniform positive
+native repeat-stopped weight without an outside finite-verification
+floor. The finite consumer still separately uses positive
+predecessor density.
 
 ## Actual additional finite replay
 
