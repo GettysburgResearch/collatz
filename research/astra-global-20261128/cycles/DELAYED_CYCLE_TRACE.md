@@ -82,3 +82,23 @@ we obtain
 The first upper comparison is the triangle inequality and pointwise CDF convergence in the marked trace theorem. Unlike the finite-atom proof, this test never adapts to the cycle clock or the site. It shows why arbitrary late positive cycles impede quantitative convergence of a single marked observable even after removing target one.
 
 The [exact finite control](check_cycle_trace.py) checks the ordinary unit-parent floor, native marks and adjacent CDF jumps with per-step exponents at most eight, and the all-offset lap identities on primitive positive rational traces. [Recorded counts](../../../reports/astra-global-20261128/cycles/CYCLE_TRACE.json)
+
+## A Diophantine improvement of the sufficient decay exponent
+
+Use the logarithm-ratio hypothesis of [the period spectrum](PERIOD_SPECTRUM.md), with $\alpha=\log_3 2$ and $|\alpha-u/v|\ge c v^{-M}$ on reduced fractions. For a positive extra cycle put $h=ah_0$ and $p=ap_0$ with $a=\gcd(p,h)$. Its gap satisfies
+\[
+  g=h\log2-p\log3\ge c(\log3)a h_0^{1-M}
+       \gg_{c,M}a p_0^{1-M},
+\]
+where $1<h/p\le2$. With $D=p\lceil1/g\rceil$ and the stated uniform extra-cycle gap $g<0.024$, this gives $D\ll_{c,M} p_0^M$. By (2),
+\[
+        D^{1-1/M}\mathcal T_D\gg_{c,M}a .
+\]
+An infinite collection has arbitrarily large $D\ge p$. Hence $\mathcal T_D=o(D^{-(1-1/M)})$ suffices for finitely many positive cycles. At the critical big-$O$ rate the implication bounds the gcd of the period and division clock on all cycles. Finiteness also follows from $\sum_{d\ge1}d^{1-1/M} D_d<\infty$, by comparison with its tail. The peer-reviewed $M=5.116201$ gives critical exponent $1-1/M=0.804542\ldots$, while Lagarias's $M=14.3$ gives $133/143$. On Chudnovsky's preprint bound $\mu(\alpha)\le3$, a power-law tail with *any fixed exponent strictly greater than* $2/3$ suffices. None of those decay rates is established here.
+
+More generally, for $0\le\theta\le1$ and extra cycles only, the same proof starting at $d=p\lceil1/g\rceil$ gives by disjoint target summation
+\[
+       \sum_{d\ge1}d^\theta D_d\gg
+             \sum_{C\ne\{1\}} p_C^\theta g_C^{1-\theta}.
+\]
+Indeed $d^\theta\ge(p/g)^\theta$ from that cutoff, and (1) gives a tail $\gg g$ uniformly using $S\ge3g$, $1-e^{-g}\le g$ and $(\lceil1/g\rceil+1)g\le1+2g$. The [Lean kernels](CycleTrace.lean) cover the exact adjacent valuation obstruction, the half-jump inequality, the one-edge raw lower barrier and its lap closure, and the all-offset circular mass identity. The analytic rates above are written proofs.

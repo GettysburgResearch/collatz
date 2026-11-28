@@ -117,10 +117,10 @@ theorem actual_code (k n : ℕ) :
       rw [odd_code _ _ h, ih, pow_succ]
       ring
 
-private theorem even_twos {n : ℕ} (h : n%2=0) : twos (n+1)=0 :=
+theorem even_twos {n : ℕ} (h : n%2=0) : twos (n+1)=0 :=
   twos_odd (by omega)
 
-private theorem odd_twos {n : ℕ} (h : n%2≠0) :
+theorem odd_twos {n : ℕ} (h : n%2≠0) :
     twos (n+1)=1+twos (step n+1) := by
   have hmul : 3*(n+1)=2*(step n+1) := by have := odd_eq h; omega
   rw [←twos_triple (n+1) (by omega), hmul, twos_double _ (by omega)]
@@ -128,7 +128,7 @@ private theorem odd_twos {n : ℕ} (h : n%2≠0) :
 /-- Start immediately after the next even input. -/
 def afterEven (n : ℕ) : ℕ := step (run (twos (n+1)) n)
 
-private theorem afterEven_odd {n : ℕ} (h : n%2≠0) :
+theorem afterEven_odd {n : ℕ} (h : n%2≠0) :
     afterEven n = afterEven (step n) := by
   unfold afterEven
   rw [odd_twos h, Nat.add_comm 1, run]

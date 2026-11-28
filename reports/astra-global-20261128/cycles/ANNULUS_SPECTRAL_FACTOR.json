@@ -1,0 +1,27 @@
+{
+  "bounded_discrepancy_control": {
+    "distinct_perturbed_words": 1160,
+    "reference_periods": 3
+  },
+  "complete_parity_residue_tests": 8190,
+  "first_clock_ray": {
+    "certified_anomalous_lengths": 2000000,
+    "odd_clock_ray": "137528045312",
+    "shortcut_clock_ray": "217976794617",
+    "strict_single_cycle_cost_ceiling": 130,
+    "tested_length_ceiling": 68719476736
+  },
+  "full_parent_packet": {
+    "actual_packet_vertices": 216,
+    "disjoint_segments": 24,
+    "labelled_neighbors": 2328,
+    "local_radius": 3
+  },
+  "positive_native_rational_circles": {
+    "finite_block_bounds": 268,
+    "near_ratio_pairs": 1252,
+    "physical_cost_comparisons": 30,
+    "primitive_rational_cycles": 30
+  },
+  "scope": "Finite exact controls, with positive rational cycles and distinct ordinary shortcut starts."
+}
