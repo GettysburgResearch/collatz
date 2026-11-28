@@ -227,6 +227,22 @@ records the independently reconstructed arguments and their analytic inputs.
 | [Integer fusion populations](machinery/phase10/INTEGER_FUSION_POPULATIONS.md) | Exact synchronously counted integer classes have almost-sure entropy growth rate, are infinite at the entropy threshold, and are finite above the real drift threshold. The next undisclosed trit's limiting entropy is an explicit fusion-invariant conditional entropy. | Class growth does not prove that the invariant field is independent of the first gap. An intermediate finiteness range also remains open. |
 | [Every extra trit improves positive-temperature pressure](machinery/phase10/ONE_TRIT_PRESSURE.md) | For every positive temperature parameter and every width at least two, the next width has strictly larger optimal entropy-minus-cost pressure. | No gain uniform in width or unresolved limiting-pressure identity is obtained. |
 
+## Tenth checkpoint: critical ordinary points and exponential collision renewal
+
+The [tenth claim review](../../reports/astra-nine-hour-20261128/CHECKPOINT_10_REVIEW.md)
+records the written reconstructions, source comparisons and formal scope.
+
+| Result | New control | Remaining question |
+|---|---|---|
+| [Subcritical renewal](machinery/phase11/SUBCRITICAL_COLLISION_RENEWAL.md) and [exponential split decay](machinery/phase11/EXPONENTIAL_SPLIT_DECAY.md) | The normalized collision sum has a finite positive limit throughout the subcritical range, with exponentially small depth remainder. The proof retains the two actual physical clocks and signed integer displacement. | The decay constant is not evaluated against the separate numerical parity-trap threshold. |
+| [Physical collision clocks](machinery/phase11/COLLISION_CLOCK_LIMITS.md) | A uniform local limit retains exact totals and separation. Integer fusion classes have finite mean exactly above bias 3/4; at 3/4 they are finite almost surely but have infinite mean. | This checkpoint supplies a square-root lower bound and sublinear upper bound at that critical mean; matching is a subsequent target. |
+| [Ordinary collision energy](escape/phase10/ORDINARY_COLLISION_ENERGY.md) and [first-merger kernel](phase10/FIRST_MERGER_KERNEL.md) | Both the slope and individual increments of the actual positive first-arrival energy equal the sum of squared escape fluxes. Arbitrarily many unknown positive cycles contribute zero slope. | A sublinear bound on this ordinary energy would exclude escape; it is not proved. |
+| [Critical ordinary differentiation](escape/phase10/ORDINARY_WEAK_SQUARE_DIFFERENTIATION.md) and [joint angular law](escape/phase10/JOINT_ANGULAR_TAIL.md) | At every specified positive odd integer the density converges locally to its canonical trace in weak L², despite infinite local strong second moments. The actual source and physical clock converge jointly on every fixed finite quotient. | No uniform rate at the moving precision of a supplied escaping ray follows. |
+| [Cofinal ternary field](escape/phase10/COFINAL_TERNARY_FIELD.md) and [signed negative pole](escape/phase10/SIGNED_KERNEL_AND_NEGATIVE_POLE.md) | A hypothetical escape has an entire phase-aligned local field with exact angular tails. Signed periodic energy has one exponentially dominant negative pole at −1. | The field is compatible with known Haar tails; signed Fourier energy needs an essential one-sided cancellation. |
+| [Adaptive mechanical envelopes](cycles/phase10/ADAPTIVE_ENVELOPE.md) and [integer information horizon](cycles/phase10/INTEGER_INFORMATION_HORIZON.md) | Every native cycle, of arbitrary width, obeys an exact surplus-dependent integer envelope. Extreme rounded-grid runs, including transients, have length O(log K). | Sparse rounding defects alone do not control their global average. |
+| [Three-eighths criterion](cycles/phase10/THREE_EIGHTHS_CRITERION.md) and [interior rigidity](cycles/phase10/INTERIOR_RIGIDITY.md) | Actual width-four cycles force coefficient at least 0.3756618… under the stated recent logarithm input. Finite integer periods also force positive interior entropy and strong two-base digit statistics. | The autonomous upper bound 3/8 remains open. A physically tagged two-base countermodel shows why interior Haar windows alone cannot supply it. |
+| [Ordinary digit tails](machinery/phase11/EXTRA_DIGITS_AND_ORDINARY_TAILS.md) | The counted-fusion invariant field agrees with the remote ordinary-binary-digit tail on a conull carrier. An entropy array isolates the remaining biased conditional information. | No global translation invariance or independence of the first gap is assumed. |
+
 ## Verification and checkpoints
 
 The [replay driver](replay_lean.py) is adapted, with attribution, from
@@ -237,8 +253,8 @@ The only permitted recursive axioms are `propext`, `Classical.choice`
 and `Quot.sound`. There are no invented mathematical axioms, admitted
 proofs, or native-decision shortcuts in the claimed kernels.
 
-The [ninth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_09_LEAN.json)
-passed **35 modules and 725 declarations, including 105 private
+The [tenth complete replay](../../reports/astra-nine-hour-20261128/CHECKPOINT_10_LEAN.json)
+passed **39 modules and 766 declarations, including 108 private
 declarations**, with unchanged source hashes. It includes the actual
 finite critical-tail cycle witness, the complete specified-calendar
 exclusion, the exact native source-population recurrence, affine endpoint
@@ -252,7 +268,8 @@ bounds and word freeness, first-hit clock ordering, and finite moment
 separation, rational negative-gap exclusion, finite block savings, grid
 clock and Farey determinants, tilted trace products, binary affine
 likelihoods, actual conformal entrance words, and clock-inversion seams
-and progression interlacing. The
+and progression interlacing, unique actual first mergers, unequal-clock
+displacement spacing, common-block offsets, and adaptive native quantization. The
 analytic mixing, limit laws and infinite counting theorems remain
 written results with named inputs. The [initial status](../../reports/astra-nine-hour-20261128/CHECKPOINT_01_LEAN_STATUS.md)
 preserves the first publication's pending replay and development history.

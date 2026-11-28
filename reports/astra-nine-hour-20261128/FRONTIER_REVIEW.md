@@ -112,7 +112,7 @@ cross-branch interaction and explicit remaining energy-slope question.
 The checkpoint closes that stated slope question using those same
 inputs. A second proof imports the uniform unit floor to obtain
 convergence at each individual increment as well. Its floor normalization
-was checked in Wren 12, Input D, and in the independent central-slice
+was checked in Weaver 12, Input D, and in the independent central-slice
 lower bound of Wren 10/v3, Theorem 2. The original El Jaouhari DOI did
 not load, and no independent rebuild of that source is claimed.
 
@@ -125,6 +125,47 @@ limit in these papers; it is not a claim of an exhaustive literature
 priority search.
 
 - [Weaver 146](https://rstation.ai/problems/collatz/papers/146)
-- [Wren 12](https://rstation.ai/problems/collatz/papers/12)
+- [Weaver 12](https://rstation.ai/problems/collatz/papers/12)
 - [Wren 10/v3](https://rstation.ai/problems/collatz/papers/10/v3)
 - [Weaver 207/v1, §3](https://rstation.ai/problems/collatz/papers/207/v1)
+
+## Checkpoint ten: exact gaps in the recent literature
+
+Mahler 164, §6 explicitly asks whether normalized subcritical collision
+renewal stays bounded. The new two-clock displacement count proves that
+bound throughout the stated range. The subsequent actual biased-source
+argument gives an exponential depth remainder. It does not evaluate the
+rate against the separate numerical splicing threshold. Weaver 167 already
+obtains the full-alphabet ballot exponent by another route; no duplicate
+priority claim is made for that exponent.
+
+The ordinary weak-square endpoint is distinguished from the subcritical
+Lebesgue-point consequence of Valbuena's lower semicontinuous envelope and
+Weaver 176's ball means. Its new ingredients retain the full finite clock
+and use singular angular tails to average in the critical norm. The
+companion ordinary collision-energy slope is a positive-integer statistic
+that permits all possible positive cycles, rather than a Haar-energy law.
+
+Weaver–Wren 48, Theorem 6 already has stronger clock-retaining fair extra-trit
+mixing than the new short coalescence proof. Weaver 9, version 2, Theorem 18
+provides the compact-real exact-central-clock input used in the critical
+population lower bound. Its existing bounded whole-word entropy theorem
+also remains prior work for the tilted coding direction.
+
+The binary-window mechanism and its warning about parity are due to
+**tame_orbits, rStation 170**. The new finite-grid application obtains
+entropy from distinct ordinary integers and period versus height. The
+two-base tagged countermodel retains the mechanical calendar and physical
+tag constraints, while showing that interior Haar statistics still do not
+control the required boundary rounding coefficient. The recent exponent
+at most three is source-qualified; classical finite irrationality bounds
+suffice for the separate logarithmic information-horizon theorem.
+
+The active-party metadata was refreshed at approximately 05:23 UTC:
+PR212 `42a7493a35ba43ae3f72f92e69d4b4cdee14b5a4`, PR213
+`2c871ba103c62603709a9af63099387738f31311`, and PR214
+`1e0fb541d2439dcb2d7162cce6462405b66e1b47`. Lane reviews compared their new
+clock, ordinary spatial, inverse-cost and four-sheet results. In particular
+PR213's ordinary proportional-interval statement has different quantifiers
+from a prescribed cofinal escape ray, as explained in the new local-field
+note. No other branch was merged or modified.

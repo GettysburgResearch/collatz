@@ -110,3 +110,7 @@ publication's exact [record](CHECKPOINT_08_PUBLICATION.json) and
 formal kernels check the actual entrance-word algebra, the seam needed
 for strict rational threshold inversion, and finite Apéry interlacing.
 The replay audits **725 declarations**, including **105 private declarations**.
+
+## Checkpoint ten
+
+The [claim review](CHECKPOINT_10_REVIEW.md) covers subcritical exponential collision renewal, exact physical-clock rows, critical ordinary weak-square differentiation, ordinary collision energy, and global integer constraints. The [fresh Lean replay](CHECKPOINT_10_LEAN.json) passed 39 modules and 766 declarations, including 108 private declarations. All four [exact controls](CHECKPOINT_10_CONTROLS.json) passed normally and with optimization, with identical outputs. The [196-source manifest](CHECKPOINT_10_SOURCES.json) fixes the scientific inputs. The preceding [publication receipt](CHECKPOINT_09_PUBLICATION.json) and [published-tree integrity replay](CHECKPOINT_09_PUBLISHED_INTEGRITY.json) record checkpoint nine.

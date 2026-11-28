@@ -49,14 +49,14 @@ labels now proves the stronger assertion
  D_n\longrightarrow D,
  \qquad \sum_{e\ne f}\int|b_{e,n}b_{f,n}-b_eb_f|\longrightarrow0.
 \]
-The coordinator checked the floor's normalization in Wren 12, Input D,
+The coordinator checked the floor's normalization in Weaver 12, Input D,
 and the independent central-slice floor of Wren 10/v3, Theorem 2. Summing
 the latter over a fixed central clock window also supplies a uniform
 unit floor. The original El Jaouhari DOI was inaccessible in this pass;
 its underlying proof was not independently replayed. The density
-domination itself has prior uses in Wren 12 and is credited, rather than
+domination itself has prior uses in Weaver 12 and is credited, rather than
 presented as the main new result.
-[Wren 12](https://rstation.ai/problems/collatz/papers/12) ·
+[Weaver 12](https://rstation.ai/problems/collatz/papers/12) ·
 [Wren 10/v3](https://rstation.ai/problems/collatz/papers/10/v3)
 
 ### The ancestry of a collision

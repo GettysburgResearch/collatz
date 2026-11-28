@@ -1,0 +1,72 @@
+{
+  "checkpoint": 10,
+  "created_utc": "2026-11-28T05:34:01.542723+00:00",
+  "scope": "Exact bounded arithmetic controls; not verification of analytic limits",
+  "passed": true,
+  "runs": [
+    {
+      "source": "cycles/phase10/phase10_controls.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 2.099,
+      "stdout": "139276 true odd-step envelope inequalities; 1320 cyclic native words, 5 saturated.\n656640 complete starting labels in 513 grids for the extreme-run bound.\nTwo strict rational logarithmic inequalities certify the 3/8 threshold.\n2540 dyadic and ternary telescopes with exact signed centered phases.\n",
+      "stderr": ""
+    },
+    {
+      "source": "cycles/phase10/phase10_controls.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 2.2574,
+      "stdout": "139276 true odd-step envelope inequalities; 1320 cyclic native words, 5 saturated.\n656640 complete starting labels in 513 grids for the extreme-run bound.\nTwo strict rational logarithmic inequalities certify the 3/8 threshold.\n2540 dyadic and ternary telescopes with exact signed centered phases.\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/phase10/check_ordinary_energy.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.1028,
+      "stdout": "PASS 1763 signed simple rows, 163 longer-cycle rows, 10 infinite-gap identities, 375 physical charts, 375 missing-clock controls rejected\n",
+      "stderr": ""
+    },
+    {
+      "source": "escape/phase10/check_ordinary_energy.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.1886,
+      "stdout": "PASS 1763 signed simple rows, 163 longer-cycle rows, 10 infinite-gap identities, 375 physical charts, 375 missing-clock controls rejected\n",
+      "stderr": ""
+    },
+    {
+      "source": "machinery/phase11/check_collision_renewal.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.1022,
+      "stdout": "depth, cap: 5 4\nordered pairs, positive affine path checks, distinct last letters: 10056 6052 2724\n",
+      "stderr": ""
+    },
+    {
+      "source": "machinery/phase11/check_collision_renewal.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.1663,
+      "stdout": "depth, cap: 5 4\nordered pairs, positive affine path checks, distinct last letters: 10056 6052 2724\n",
+      "stderr": ""
+    },
+    {
+      "source": "machinery/phase11/check_scalar_endpoint.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.0318,
+      "stdout": "theta endpoints 550024419420 550024419422 denominator 1000000000000\nscaled positive lower, negative upper 429953158894 -1010136773638 scale 1208925819614629174706176\n",
+      "stderr": ""
+    },
+    {
+      "source": "machinery/phase11/check_scalar_endpoint.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.0982,
+      "stdout": "theta endpoints 550024419420 550024419422 denominator 1000000000000\nscaled positive lower, negative upper 429953158894 -1010136773638 scale 1208925819614629174706176\n",
+      "stderr": ""
+    }
+  ]
+}
